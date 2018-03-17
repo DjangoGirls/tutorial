@@ -194,7 +194,7 @@ Du hast sicher schon bemerkt, dass Python diesmal kein Ergebnis zurückgegeben h
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Hurra! Deine erste Variable :)! Nun kannst du auch stets ändern, was sie enthalten soll:
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Du kannst die Variable auch in Funktionen verwenden:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Of course, variables can be anything – numbers too! Try this:
+Das ist toll, oder? Variable können alles sein, also auch Zahlen. Versuche Folgendes:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Was aber, wenn wir für eine Variable den falschen Namen verwenden? Uns einfach vertippen. Hast du schon eine leise Ahnung, was dann passiert? Probieren wir es aus!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -236,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Ein Fehler! Wie du siehst, kennt Python verschiedene Arten von Fehlern. In unserem Fall hier ist es ein **NameError**. Python liefert diesen Fehler immer dann, wenn du versuchst, eine Variable zu verwenden, die es noch gar nicht gibt. Wenn du einen solchen Fehler erhältst, prüfe einfach in deinem Code, ob du dich irgendwo vertippt hast.
 
-Play with this for a while and see what you can do!
+Spiel einfach ein wenig rum und schaue, was alles so passiert.
 
 ## Die print-Funktion
 
-Try this:
+Gib einmal Folgendes ein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -254,15 +254,15 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Wenn du in der zweiten Zeile `name` eintippst, dann gibt der Python-Interpreter die String-*Darstellung* (engl. 'representation') der Variable 'name' aus. In unserem Beispiel die Buchstaben M-a-r-i-a, umschlossen von einfachen Anführungszeichen ('). Wenn du hingegen `print(name)` schreibst, dann gibt Python den Inhalt der Variablen ohne die Anführungszeichen zurück, was etwas schöner aussieht.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Wie wir später sehen werden, ist `print()` auch recht nützlich, wenn wir etwas aus Funktionen heraus ausgeben möchten oder auch eine Ausgabe über mehrere Zeilen darstellen wollen.
 
 ## Listen
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Außer Strings (Zeichenketten) und Integern (ganze Zahlen) hat Python noch viele andere Arten von Datentypen. Von denen wollen wir uns nun **Listen** anschauen. Listen sind genau das, was du wahrscheinlich schon vermutest: Es sind Objekte, die Listen von anderen Objekten enthalten. :)
 
-Go ahead and create a list:
+Legen wir los und erzeugen eine Liste:
 
 {% filename %}command-line{% endfilename %}
 
@@ -271,7 +271,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Ja, dies ist eine leere Liste. Für uns noch nicht sehr nützlich. Legen wir nun eine Liste von Lottozahlen an. Da wir uns nicht dauernd wiederholen wollen, ordnen wir diese Liste auch direkt einer Variablen zu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+So, nun haben wir eine Liste mit Lottozahlen! Was aber können wir damit tun? Zuerst einmal wollen wir feststellen, wie viele Zahlen in ihr enthalten sind. Hast du schon eine Idee, wie dies geht? Klar, das weißt du ja bereits!
 
 {% filename %}command-line{% endfilename %}
 
@@ -288,7 +288,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Genau! `len()` liefert die Anzahl von Objekten in einer Liste zurück. Praktisch, nicht wahr? Nun wollen wir die Liste sortieren:
 
 {% filename %}command-line{% endfilename %}
 
@@ -296,7 +296,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Diese Anweisung gibt nichts zurück. Was passiert, ist, dass die Reihenfolge der Objekte in der Liste geändert werden. Um zu sehen, was passiert ist, müssen wir die Liste ausgeben:
 
 {% filename %}command-line{% endfilename %}
 
@@ -305,9 +305,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Wie du siehst, sind die Zahlen in der Liste nun aufsteigend sortiert. Super!
 
-Maybe we want to reverse that order? Let's do that!
+Aber vielleicht wollten wir es genau andersherum haben? Nichts leichter als das!
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Einfach, oder? Du kannst auch etwas zu deiner Liste hinzufügen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Falls du nicht immer die gesamte Liste, sondern beispielsweise nur den ersten Eintrag sehen möchtest, kannst du dafür **Indizes** benützen. Ein Index gibt die Stelle innerhalb einer Liste an, die uns interessiert. Programmierer bevorzugen es, bei 0 mit dem Zählen anzufangen. Also hat das erste Objekt in deiner Liste den Index 0, das nächste die 1 und so weiter. Gib einmal Folgendes ein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -338,9 +338,9 @@ If you want to show only the first number, you can do this by using **indexes**.
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Wie Du siehst, kannst Du auf die einzelnen Objekte in Deiner Liste zugreifen, indem Du den Namen der Liste verwendest und anschließend den Index in eckigen Klammern anfügst.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Um etwas aus deiner Liste zu löschen, musst du **Indizes** und die `pop()`-Methode benutzen, wie wir es weiter oben gelernt haben (del ist eine Abkürzung für delete). Lass uns ein Beispiel versuchen und das festigen, was wir zuvor gelernt haben; wir werden die erste Nummer aus unserer Liste löschen.
 
 {% filename %}command-line{% endfilename %}
 
@@ -355,17 +355,17 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Das hat doch super geklappt!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+Probier einmal andere Indizes aus: 6, 7, 1000, -1, -6 oder -1000 und versuch dir das Ergebnis vorzustellen, bevor du den jeweiligen Index verwendest. Sind die Ergebnisse sinnvoll?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Eine Liste aller Methoden, die du auf Listen anwenden kannst, findest du in der Python-Dokumentation: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dictionaries
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Für die Leser zu Hause: Dieses Kapitel wird im Video [Installing Python Code Editor](https://www.youtube.com/watch?v=ZX1CVvZLE6c) behandelt.
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Ein Wörterbuch (von nun an mit dem englischen Begriff 'Dictionary' bezeichnet) verhält sich ähnlich wie eine Liste, jedoch greifen wir auf die enthaltenen Objekte nicht mit einem Index, sondern mit einem Schlüssel zu (auf englisch 'key', und auch hier verwenden wir im weiteren den englischen Begriff). Ein 'key' kann ein String oder eine Zahl sein. Ein leeres Dictionary legen wir wie folgt an:
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,9 +374,9 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Und schon hast du ein leeres Dictionary erstellt. Super!
 
-Now, try writing the following command (try substituting your own information, too):
+Nun gib einmal Folgendes ein (verwende statt 'Ola' usw. deine eigenen Informationen):
 
 {% filename %}command-line{% endfilename %}
 
