@@ -8,8 +8,8 @@ Cloud 9 is een hulpmiddel dat je een code editor aanbiedt en toegang tot een com
 2. Ga naar [c9.io](https://c9.io)
 3. Meld je aan voor een account
 4. Klik op *Create environment*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+5. Noem deze *django-girls*
+6. Klik op de oranje knop 'Next step'. En klik dan op de oranje knop *Create environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
