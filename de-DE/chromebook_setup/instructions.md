@@ -2,7 +2,7 @@ Du kannst diese [Section](http://tutorial.djangogirls.org/en/installation/#insta
 
 ### Cloud 9
 
-Cloud9 ist ein Tool, das dir einen Editor und Zugriff auf einen Computer im Internet zur Verfügung stellt, auf dem du Software installieren, editieren und laufen lassen kannst. Während des Tutorials wird dir Cloud 9 als dein *lokaler Rechner* dienen. Du wirst die gleichen Befehle ausführen, wie deine Klassenkameradinnin, die OS X, Ubuntu oder Windows benutzen, jedoch ist dein Terminal verbunden mit einem Computer, der von Cloud 9 gehostet wird.
+Cloud9 ist ein Tool, das dir einen Editor und Zugriff auf einen Computer im Internet zur Verfügung stellt, auf dem du Software installieren, editieren und laufen lassen kannst. Für die Übungen in diesem Tutorial wird dir Cloud 9 wie ein *lokaler Rechner* dienen. Du wirst auf diesem Cloud9 Rechner die gleichen Befehle ausführen können, wie die anderen Teilnehmer, die OS X, Ubuntu oder Windows benutzen. Jedoch ist dein Terminal für die Ein- und Ausgaben verbunden mit dem Computer, der von Cloud 9 gehostet wird.
 
 1. Installiere Cloud 9 aus dem [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Gehe auf [c9.io](https://c9.io)
@@ -18,7 +18,7 @@ Jetzt solltest du ein Interface mit Sidebar, ein grosses Fenster mit Text und am
     deinbenutzername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Im unteren Bereich siehst du dein *Terminal*, mit dem du auf deinen Cloud 9 Computer zugreifen kannst um deine Kommandos auszuführen. Dieses Terminalfenster kannst du nach deinen Wünschen vergrößern oder verkleinern.
 
 ### Virtuelle Umgebung
 
@@ -53,7 +53,7 @@ Erstelle einen [Github](https://github.com) Account.
 
 ### PythonAnywhere
 
-Das Django Girls tutorial beinhaltet einen Teil zu Deployment. Beim Deployment nimmst du den Code, der deiner Web Anwendung zu Grunde liegt und packst ihn auf einen öffentlich zugänglichen Computer (Server), damit auch andere Leute deine Arbeit betrachten können.
+Das Django Girls tutorial beinhaltet einen Teil zum Thema Deployment. Beim Deployment nimmst du den Code, der deiner Web Anwendung zu Grunde liegt und packst ihn auf einen öffentlich zugänglichen Computer (Server), damit auch andere Leute deine Arbeit betrachten können.
 
 Dieser Teil ist ein bisschen seltsam, wenn du ihn auf einem Chromebook ausführst, da er bereits nur in der Cloud ist( im Gegensatz zu einem Laptop). Es ist aber trotzdem sinnvoll mitzumachen, wir stellen uns dann einfach unseren Cloud 9 Arbeitsplatz als "work in progress" vor und Python Anywhere als Platz auf dem wir unser Projekt vorführen können.
 
