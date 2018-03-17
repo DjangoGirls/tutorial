@@ -2,9 +2,9 @@
 
 # Einführung in Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Ein Teil dieses Kapitels basiert auf dem Tutorial der Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Fangen wir an, schreiben wir Code!
 
 ## Der Python-Prompt
 
