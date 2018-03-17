@@ -2,11 +2,11 @@ Je kunt [deze sectie overslaan](http://tutorial.djangogirls.org/en/installation/
 
 ### Cloud 9
 
-Cloud 9 is een hulpmiddel dat je een code editor aanbiedt en toegang tot een computer op het Internet waarop je de programmatuur kunt installeren, schrijven, en uitvoeren. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9 is een hulpmiddel dat je een code editor aanbiedt en toegang tot een computer op het Internet waarop je de programmatuur kunt installeren, schrijven, en uitvoeren. In deze gids beschouwen we Cloud 9 dan ook als jouw *lokale machine*. Je zult opdrachten nog steeds, net als je klasgenoten met OS X, Ubuntu, of Windows, in een terminalscherm typen. Maar jouw terminal is dan verbonden met een computer ergens anders, zoals Cloud 9 dat voor jou heeft ingesteld.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
+1. Installeer Cloud 9 uit de [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Ga naar [c9.io](https://c9.io)
+3. Meld je aan voor een account
 4. Click *Create a New Workspace*
 5. Name it *django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
