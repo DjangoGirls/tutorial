@@ -10,7 +10,7 @@ Prva provjeri imaš li na računalu 32-bitnu inačicu ili 64-bitnu inačicu Wind
 
 Pripazi na jednu stvar: tijekom instalacije, u prozoru na kojem piše "Setup" mora biti kvačica pored opcije "Add Python 3.6 to PATH". Ako je nema, stavi ju, a zatim klikni na "Install Now", kao što možeš vidjeti:
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Ne zaboravi dodati Python u Path](../python_installation/images/python-installation-options.png)
 
 U nadolazećim koracima, koristit ćeš Windows naredbeni redak (o kojem ćemo ti također pričati). Za sada, ako trebaš upisati neke naredbe, idi na Start → Windows System → Command Prompt. Također možeš pritisnuti Windows tipku zajedno sa tipkom "R" sve dok se ne pojavi prozorčić "Run". Da bi se otvorio naredbeni redak, upiši "cmd" i pritisni enter u "Run" prozorčiću. (Na novijim Windowsima, možda ćeš morati potražiti "Command Prompt" pošto je ponekad skriveno.)
 
@@ -91,7 +91,7 @@ Koristi ovu naredbu u svojoj konzoli:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Provjeri da je instalacija prošla uspješno tako da otvoriš komandnu liniju i pokreneš `python3` naredbu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,8 +99,8 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+**NAPOMENA:**Ako si na Windowsima i dobiješ grešku da `python3` nije pronađen, pokušaj upisati samo `python` (bez `3`) i provjeri je li još uvijek inačica 3.6.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Ako imaš bilo kakvih sumnji, ili nešto pođe po zlu, a nemaš ideja što dalje napraviti, pitaj svoj trenera! Ponekad stvari ne prošu glatko i bolje je pitati za pomoć nekoga s više iskustva.
