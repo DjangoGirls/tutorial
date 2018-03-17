@@ -11,14 +11,14 @@ Cloud 9 is een hulpmiddel dat je een code editor aanbiedt en toegang tot een com
 5. Noem deze *django-girls*
 6. Klik op de oranje knop 'Next step'. En klik dan op de oranje knop *Create environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Je zou nu een scherm moeten zien met een zijbalk, een hoofdvenster met enkele tekstblokken erin, en een klein venster beneden dat er ongeveer zo uitziet:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    yourusername:~/workspace $
+    jouw-naam:~/environment $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Dit bodempaneel is je *terminal*, waarin je instructies geeft aan de computer die Cloud 9 voor je heeft gemaakt. Je kunt de bovenrand van het venster verslepen om het venster wat groter te maken.
 
 ### Virtual Environment
 
