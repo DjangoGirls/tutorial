@@ -22,33 +22,34 @@ Dit bodempaneel is je *terminal*, waarin je instructies geeft aan de computer di
 
 ### Virtuele omgeving
 
-Een virtuele omgeving (ook wel genoemd een virtualenv) is als een privé doosje waarin we de computer code kunnen opslaan voor het project waaraan we werken. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Een virtuele omgeving (ook wel genoemd een virtualenv) is als een privé doosje waarin we de computer code kunnen opslaan voor het project waaraan we werken. We gebruiken ze om de stukken code van diverse projecten apart te houden, zodat dingen uit verschillende projecten niet met elkaar in de war raken.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+In je terminal aan de onderkant van het Cloud 9 scherm, geef je de volgende opdracht:
 
 {% filename %}Cloud 9{% endfilename %}
 
     sudo yum update
     
 
-If this still doesn't work, ask your coach for some help.
+Als dit niet werkt, vraag je coach dan om wat hulp.
 
-Next, run:
+Dan voer je uit:
 
 {% filename %}Cloud 9{% endfilename %}
 
     mkdir djangogirls
     cd djangogirls
-    python3.6 -mvenv myvenv
+    python3 -m venv myvenv
     source myvenv/bin/activate
+    pip install --upgrade pip
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(merk op dat we op de laatste regel een tilde gevolgd door een is-teken gebruiken: ~=).
 
 ### Github
 
-Make a [Github](https://github.com) account.
+Maak een [Github](https://github.com)account aan.
 
 ### PythonAnywhere
 
