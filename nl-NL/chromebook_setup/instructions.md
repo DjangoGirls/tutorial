@@ -20,9 +20,9 @@ Je zou nu een scherm moeten zien met een zijbalk, een hoofdvenster met enkele te
 
 Dit bodempaneel is je *terminal*, waarin je instructies geeft aan de computer die Cloud 9 voor je heeft gemaakt. Je kunt de bovenrand van het venster verslepen om het venster wat groter te maken.
 
-### Virtual Environment
+### Virtuele omgeving
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Een virtuele omgeving (ook wel genoemd een virtualenv) is als een privé doosje waarin we de computer code kunnen opslaan voor het project waaraan we werken. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
