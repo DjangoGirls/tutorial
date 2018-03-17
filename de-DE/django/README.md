@@ -4,15 +4,15 @@ Django (*/ˈdʒæŋɡoʊ/ jang-goh*) ist ein freies, Open-Source Web-Anwendungs-
 
 Wenn du eine Website entwickelst, brauchst du immer wieder sehr ähnliche Elemente: Einen Weg Benutzer zu verwalten (Registrierung, Anmeldung, Abmeldung etc.), einen Administrationsbereich, Formulare, Upload von Dateien usw.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Glücklicherweise wurde schon vor einiger Zeit erkannt, dass Web-Entwickler immer wieder die gleichen Probleme zu lösen haben. Gemeinsam entstanden so verschiedene Frameworks (Django ist so eines), welche die Web-Entwicklung durch vorgefertigte Elemente erleichtern.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Frameworks sind dazu da, damit du das Rad nicht neu erfinden musst. Du kannst dich auf die konkret zu erfüllenden Anforderungen der Webseite kümmern. Die grundlegende Basis der Webseite stellt dir das Framework zur Verfügung.
 
 ## Warum brauchst du ein Framework?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Um besser zu verstehen, welche Vorteile dir Django bietet, werfen wir einen Blick auf Server im Allgemeinen. Als Erstes muss der Server wissen, dass er eine Webseite ausliefern soll.
 
-Der Server hat mehrere "Ports", vergleichbar einem Briefkasten, der auf eingehende Briefe "Anfragen"/"requests" überwacht wird. Das macht der Webserver. The web server reads the letter and then sends a response with a webpage. Um etwas ausliefern zu können, brauchen wir Inhalte. Und Django hilft dir dabei, diese Inhalte zu erstellen.
+Der Server hat mehrere "Ports", vergleichbar einem Briefkasten, der auf eingehende Briefe "Anfragen"/"requests" überwacht wird. Das macht der Webserver. Der Webserver liest die eingeworfenen Briefe (requests) und beantwortet sie mit der Webseite (response). Um etwas ausliefern zu können, brauchen wir Inhalte. Und Django hilft dir dabei, diese Inhalte zu erstellen.
 
 ## Was passiert, wenn jemand eine Webseite beim Server anfordert?
 
