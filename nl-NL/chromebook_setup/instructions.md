@@ -28,8 +28,7 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    sudo apt update
-    sudo apt install python3.6-venv
+    sudo yum update
     
 
 If this still doesn't work, ask your coach for some help.
