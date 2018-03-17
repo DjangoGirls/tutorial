@@ -1,10 +1,10 @@
-# Let’s start with Python
+# Počnimo s Pythonom
 
-We're finally here!
+Konačno smo tu!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Ali prvo, poslušaj što je točno Python. Python je vrlo popularan programski jezik koji se može koristiti za stvaranje web stranica, igara, softver u znanosti, grafici i puno puno više.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python potiče iz kasnih 1980-ih i njegov glavni cilj je da je čitljiv za ljudska bića (a ne samo strojeve!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
 # Python installation
 
