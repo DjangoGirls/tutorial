@@ -20,9 +20,10 @@ Um Bootstrap zu installieren, müssen Sie das hinzufügen, um Ihre `<head>`in Ih
 
 {% filename %}blog/templates/blog/post_list{% endfilename %}
 
-<pre><code class="html"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+```html
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-</code></pre>
+```
 
 Dies fügt deinem Projekt keine Dateien hinzu. Es verweist nur auf Dateien, die im Internet vorhanden sind. Öffne und aktualisiere deine Webseite. Da ist sie!
 
@@ -99,9 +100,10 @@ Wir laden hier nur statische Dateien. :-) Zwischen den Tags , direkt nach den Li
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<pre><code class="html"><link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```html
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
 
-</code></pre>
+```
 
 Der Browser liest die Dateien in der Reihenfolge in der sie im File stehen. Darum müssen wir sicherstellen, dass die Zeile am richtigen Ort steht. Sonst könnte der Code in unserer Datei den Code in den Bootstrap Dateien überschreiben. Wir haben unserer Vorlage gerade gesagt, wo sich die CSS-Datei befindet.
 
@@ -112,12 +114,7 @@ Deine Datei sollte jetzt so aussehen:
 ```html
 {% load staticfiles %}
 <html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
+    
     <body>
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
@@ -182,7 +179,8 @@ Im nächsten Schritt werden wir den HTML-Code einteilen. Füge eine Klasse (clas
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-```html<div class="page-header">
+```html
+<div class="page-header">
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 ```
@@ -191,14 +189,15 @@ Jetzt fügen wir noch eine Klasse `post` für den Blog-Inhalt (Post) dem `div` h
 
 {% filename %}blog/templates/blog/post_list{% endfilename %}
 
-```html<div class="post">
+```html
+<div class="post">
     <p>published: {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
 
-Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit `.` anfangen, beziehen sich auf Klassen im HTML. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Für den Anfang reicht es aus, folgenden Text in deine `blog/static/css/blog.css`-Datei zu kopieren:
+Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit `.` anfangen, beziehen sich auf Klassen im HTML. Es gibt im Internet viele gute Tutorials die dir CSS weiter erläutern und helfen können den folgenden Code besser zu verstehen. Für den Anfang reicht es aus, folgenden Text in deine `blog/static/css/blog.css`-Datei zu kopieren:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
