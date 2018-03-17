@@ -53,7 +53,7 @@ Napravi [Github](https://github.com) račun.
 
 ### Python Anywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls tutorijal uključuje dio o nečemu što se zove Postavljanje (Deployment) što je proces kopiranja koda koji pokreće tvoju novu web aplikaciju na javno dostupno računalo (zvano poslužitelj ili server) tako da i drugi ljudi mogu vidjeti tvoj rad.
 
 Ovaj je dio malo čudan kada se tutorijal radi na Chromebooku jer već koristimo računalo koje je na Internetu (a ne, na primjer, laptop). Međutim, i dalje je korisno, jer možemo razmišljati o našem Cloud 9 radnom prostoru kao mjestu našeg "u tijeku" rada i Python Anywhere-a kao mjestu gdje možemo pokazivati naš rad kako dolazi sve bliže dovršetku.
 
