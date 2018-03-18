@@ -1,12 +1,12 @@
 # Formulários
 
-Por último queremos uma forma legal de adicionar e editar as postagens do nosso blog. A `ferramenta de administração` do Django é legal, mas ela é um pouco difícil de customizar e de deixar mais bonita. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Por último, queremos uma forma legal de adicionar e editar as postagens do nosso blog. A `ferramenta de administração` do Django é legal, mas ela é um pouco difícil de customizar e de deixar mais bonita. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
-Uma coisa legal do Django é que nós podemos tanto criar um formulário do zero como podemos criar um `ModelForm` que salva o resultado do formulário para um determinado modelo.
+Uma coisa legal do Django é que nós podemos tanto criar um formulário do zero como podemos criar um `ModelForm` que salva o resultado do formulário em um determinado modelo.
 
 Isso é exatamente o que nós queremos fazer: criaremos um formulário para o nosso modelo `Post`.
 
-Assim como toda parte importante do Django, forms tem seu próprio arquivo: `forms.py`.
+Assim como toda parte importante do Django, forms têm seu próprio arquivo: `forms.py`.
 
 Precisamos criar um arquivo com este nome dentro da pasta `blog`.
 
@@ -14,7 +14,7 @@ Precisamos criar um arquivo com este nome dentro da pasta `blog`.
        └── forms.py
     
 
-OK, let's open it and type the following code:
+Agora vamos abri-lo e digitar o seguinte código:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -32,19 +32,19 @@ class PostForm(forms.ModelForm):
 
 Primeiro precisamos importar o módulo de formulários do Django (`from django import forms`) e, obviamente, nosso modelo `Post` (`from .models import Post`).
 
-`PostForm`, como você já deve suspeitar, é o nome do nosso formulário. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm`, como você já deve suspeitar, é o nome do nosso formulário. Nós precisamos dizer ao Django que esse form é um `ModelForm` (pro Django fazer algumas mágicas para nós) – `forms.ModelForm` é o responsável por essa parte.
 
-Segundo, nós temos a classe `Meta` onde dizemos ao Django qual modelo deveria ser usado para criar este formulário (`model = Post`).
+Em seguida, nós temos a `class Meta` onde dizemos ao Django qual modelo deverá ser usado para criar este formulário (`model = Post`).
 
-Finalmente, nós podemos dizer qual(is) campo(s) deveriam entrar em nosso formulário. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Por fim, nós podemos dizer qual(is) campo(s) devem entrar no nosso formulário. Neste cenário nós queremos apenas que o `title` e o `text` sejam expostos - `author` deveria ser a pessoa que está logada no sistema (nesse caso, você!) e `created_date` deveria ser setado automaticamente quando nós criamos um post (no código), correto?
 
 E é isso aí! Tudo o que precisamos fazer agora é usar o formulário em uma *view* e mostrá-lo em um template.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Novamente nós criaremos um link para a página, uma URL, uma view e um template.
 
 ## Link para a página com o formulário
 
-É hora de abrir `blog/templates/blog/base.html`. Nós iremos adicionar um link em `div` nomeado `page-header`:
+É hora de abrir `blog/templates/blog/base.html`. Nós iremos adicionar um link em `div` chamado `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -52,9 +52,9 @@ So once again we will create a link to the page, a URL, a view and a template.
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Nota que queremos chamar nossa nova vista `post_new`. A classe `"glyphicon glyphicon-plus"` é fornecida pelo tema de inicialização (bootstrap) que estamos usando, e irá exibir um sinal de mais para nós.
+Note que queremos chamar nossa nova view de `post_new`. A classe `"glyphicon glyphicon-plus"` é fornecida pelo tema (bootstrap) que estamos usando, e irá mostrar um sinal de mais para nós.
 
-After adding the line, your HTML file should now look like this:
+Após adicionar essa linha, o seu HTML vai estar assim:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -87,7 +87,7 @@ After adding the line, your HTML file should now look like this:
 
 Depois de salvar e recarregar a página `http://127.0.0.1:8000` você verá, obviamente, um erro familiar `NoReverseMatch` certo?
 
-## Url
+## URL
 
 Vamos abrir o arquivo `blog/urls.py` e escrever:
 
@@ -112,9 +112,9 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Após recarregar a página, nós veremos um `AttributeError`, já que nós não temos a view `post_new` implementada. Vamos adicioná-la agora.
 
-## post_new view
+## View post_new
 
 Hora de abrir o arquivo `blog/views.py` e adicionar as linhas seguintes com o resto das linhas `from`:
 
