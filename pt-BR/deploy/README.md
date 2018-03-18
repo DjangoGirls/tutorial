@@ -1,14 +1,14 @@
 # Deploy!
 
-> **Nota** O capítulo seguinte pode ser às vezes um pouco difícil de terminar. Persista e termine-o; Deploy é uma parte importante do processo de desenvolvimento de website. Colocar o seu site no ar é um pouco mais complicado, então esse capítulo está no meio do tutorial para que seu treinador possa lhe ajudar nessa tarefa. Isto significa que você ainda pode terminar o tutorial por conta própria se você continuar em outro momento.
+> **Nota** O capítulo seguinte pode ser às vezes um pouco difícil de terminar. Persista e termine-o; o deploy é uma parte importante do processo de desenvolvimento de um website. Colocar o seu site no ar é um pouco mais complicado, então esse capítulo está no meio do tutorial para que seu treinador possa lhe ajudar nessa tarefa. Isto significa que você ainda pode terminar o tutorial por conta própria se o tempo acabar.
 
 Até agora, seu site só estava disponível no seu computador. Agora você aprenderá como implantá-lo (fazer o 'deploy')! O deploy é o processo de publicação do seu aplicativo na Internet de tal forma que as pessoas possam, finalmente, ver seu aplicativo. :)
 
-Como você aprendeu, um website precisa estar localizado num servidor. Existe na internet muitos fornecedores de servidor disponíveis, vamos usar o [PythonAnywhere](https://www.pythonanywhere.com/). O PythonAnyWhere é grátis para pequenas aplicações que não possuem muitos visitantes, então ele será por enquanto suficiente para ti.
+Como você aprendeu, um website precisa estar em um servidor. Existem vários provedores de servidores na internet, nós vamos usar o [PythonAnywhere](https://www.pythonanywhere.com/). O PythonAnywhere é gratuito para pequenas aplicações que não recebem muitos visitantes, então definitivamente vai ser suficiente para você por enquanto.
 
 O outro serviço externo que usaremos é [GitHub](https://www.github.com), que é um serviço de hospedagem de código. Existem outros, mas quase todos os programadores possuem uma conta no GitHub atualmente e agora você também!
 
-Estes três lugares serão importantes para você. Seu computador local será o lugar onde você faz o desenvolvimento e testes. Quando você estiver feliz com as mudanças, você colocará uma cópia de seu programa no GitHub. Seu site estará na PythonAnywhere e você irá atualizá-lo, ao puxar uma nova cópia do seu código de GitHub.
+Estes três lugares serão importantes para você. Seu computador local será o lugar onde você faz o desenvolvimento e testes. Quando você estiver satisfeito com as mudanças, você colocará uma cópia de seu programa no GitHub. Seu site estará na PythonAnywhere e você irá atualizá-lo ao subir uma nova cópia do seu código para o GitHub.
 
 # Git
 
@@ -18,9 +18,9 @@ Estes três lugares serão importantes para você. Seu computador local será o 
 
 ## Começando nosso repositório no Git
 
-O Git controla as alterações para um determinado conjunto de arquivos no que chamamos de repositório de código (ou "repo"). Vamos começar um para nosso projeto. Abra o console e execute esses comandos, no diretório `djangogirls`:
+O Git controla as alterações em um determinado conjunto de arquivos no que chamamos de repositório de código (ou "repo"). Vamos criar um para o nosso projeto. Abra o seu console e execute esses comandos, no diretório `djangogirls`:
 
-> **Nota**: Verifique o seu diretório de trabalho atual com um `pwd` (OSX/Linux) ou o comando `cd` (Windows) antes de inicializar o repositório. Você deve estar na pasta `djangogirls`.
+> **Nota**: Verifique o seu diretório atual com um `pwd` (OSX/Linux) ou o comando `cd` (Windows) antes de inicializar o repositório. Você deve estar na pasta `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -32,7 +32,7 @@ O Git controla as alterações para um determinado conjunto de arquivos no que c
 
 Só necessitamos de iniciar o repositório git apenas uma vez por projeto (e não será necessário colocar novamente o nome do utilizador e email).
 
-Git irá controlar as alterações para todos os arquivos e pastas neste diretório, mas existem alguns arquivos que queremos ignorar. Fazemos isso através da criação de um arquivo chamado `.gitignore` no diretório base. Abra seu editor e crie um novo arquivo com o seguinte conteúdo:
+O Git irá controlar as alterações em todos os arquivos e pastas neste diretório, mas existem alguns arquivos que queremos ignorar. Fazemos isso através da criação de um arquivo chamado `.gitignore` no diretório base. Abra seu editor e crie um novo arquivo com o seguinte conteúdo:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -47,9 +47,9 @@ Git irá controlar as alterações para todos os arquivos e pastas neste diretó
 
 E salve-o como `.gitignore` na pasta "djangogirls".
 
-> **Nota** O ponto no início do nome do arquivo é importante! Se estás com algum tipo de dificuldade em criá-lo (por exemplo, os Macs não gostam de criar arquivos que começam com um ponto através do Finder), usa o recurso "Guardar Como" no teu editor; que nunca irá falhar.
+> **Nota** O ponto no início do nome do arquivo é importante! Se você estiver tendo alguma dificuldade em criá-lo (Macs, por exemplo, não gostam quando você tenta criar arquivos que começam com um ponto através do Finder), use a função "Salvar Como..." no seu editor; não tem como errar.
 > 
-> **Nota** Um dos arquivos que especificaste no teu `.gitignore` é `db.sqlite3`. Esse arquivo será a tua base de dados local, onde todos os teus posts estão armazenados. O teu website na PythonAnywhere irá utilizar um banco de dados diferente, assim não queremos adicionar isto ao teu repositório. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. Pense no seu banco de dados local como um bom parque de diversões onde você pode testar coisas diferentes e não ter medo de que você vai apagar os posts reais do seu blog.
+> **Nota** Um dos arquivos especificados no seu `.gitignore` é o `db.sqlite3`. Este arquivo é o seu banco de dados local, onde todos os seus posts ficarão guardados. Nós não queremos que você adicione este arquivo ao repositório porque o seu site no PythonAnywhere vai utilizar um banco de dados diferente. Esse banco poderia ser SQLite, como na sua máquina de desenvolvimento, mas normalmente você irá utilizar um chamado MySQL, que consegue lidar com bem mais visitantes ao site do que o SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. Pense no seu banco de dados local como um bom parque de diversões onde você pode testar coisas diferentes e não ter medo de que você vai apagar os posts reais do seu blog.
 
 É uma boa idéia usar um comando `git status` antes de `git add` ou sempre que você não tiver certeza do que mudou. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
 
