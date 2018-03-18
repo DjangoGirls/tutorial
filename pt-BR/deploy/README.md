@@ -84,33 +84,33 @@ E finalmente nós salvamos nossas alterações. Vá para o seu console e execute
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Subindo o seu código para o GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+Vá em [GitHub.com](https://www.github.com) e crie uma conta nova, gratuita. (Se você já fez isso em preparação para o workshop, ótimo!)
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Em seguida, crie um novo repositório chamado "my-first-blog". Deixe a caixa "Initialize with a README" desmarcada, deixe a opção do .gitignore em branco (nós já fizemos isso manualmente) e deixe a licença como "None".
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+> **Nota** O nome `my-first-blog` é importante - você poderia escolher qualquer outra coisa, mas ele vai aparecer várias vezes nas instruções abaixo, e você teria que substituir todas as vezes. É mais fácil simplesmente manter o nome `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+Na próxima tela, você verá a URL pra clonar o seu repo. Escolha a versão "HTTPS", copie-a, e nós iremos colá-la no terminal em seguida:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Agora nós precisamos conectar o repositório Git no seu computador com o que existe no GitHub.
 
-Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+Digite o seguinte no seu terminal (Substitua `<your-github-username>` pelo nome de usuário que você colocou quando criou a sua conta no GitHub, sem os sinais de menor e maior):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}linha de comando{% endfilename %}
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
     
 
-Enter your GitHub username and password and you should see something like this:
+Digite o seu nome e senha do GitHub e você deverá ver algo parecido com isso:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}linha de comando{% endfilename %}
 
     Username for 'https://github.com': ola
     Password for 'https://ola@github.com':
@@ -125,11 +125,11 @@ Enter your GitHub username and password and you should see something like this:
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+O seu código agora está no GitHub. Vai lá ver! Você perceberá que ele esta em ótima companhia - o [Django](https://github.com/django/django), o [Tutorial Django Girls](https://github.com/DjangoGirls/tutorial) e vários outros incríveis projetos open source também hospedam seu código no GitHub. :)
 
-# Setting up our blog on PythonAnywhere
+# Configurando o nosso blog no PythonAnywhere
 
-## Sign up for a PythonAnywhere account
+## Crie uma conta no PythonAnywhere
 
 > **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
 
