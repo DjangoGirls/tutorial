@@ -159,29 +159,29 @@ Agora nós vamos executar a ferramenta para configurar a nossa app do GitHub aut
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-Ao assistir a execução desse comando, você poderá ver o que está acontecendo:
+Ao assistir a execução da ferramenta, você poderá ver o que ela está fazendo:
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own PC
-- Updating your settings file with some deployment settings
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Baixando o seu código do GitHub
+- Criando um virtualenv no PythonAnywhere, igual ao que existe no seu computador
+- Atualizando o seu arquivo de configuração com algumas configurações sobre o deploy
+- Criando um banco de dados no PythonAnywhere usando o comando `manage.py migrate`
+- Criando os seus arquivos estáticos (nós aprenderemos sobre eles mais tarde)
+- E configurando o PythonAnywhere para servir a sua web app através da sua API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+No PythonAnywhere todos esses passos são automatizados, mas são os mesmos passos que você executaria ao utilizar qualquer outro provedor. O principal agora é reparar que o seu banco de dados no PythonAnywhere é na verdade completamente separado do banco de dados no seu computador — isso significa que eles têm posts e contas de admin completamente diferentes.
 
-As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Por causa disso, da mesma forma que tivemos que fazer no nosso computador, nós precisamos criar a conta de admin com `createsuperuser`. O PythonAnywhere já ativou o seu virtualenv automaticamente pra você, então tudo o que precisa fazer é rodar:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Digite as informações sobre a sua conta de admin. É mais facil usar os mesmos que você usou no seu computador pra evitar qualquer confusão, a menos que você queira criar uma senha mais segura para a conta no PythonAnywhere.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Agora, se quiser, você pode dar uma olhada no seu código no PythonAnywhere usando `ls`:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite  static
@@ -190,13 +190,13 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
     templates  tests.py  urls.py  views.py
     
 
-You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+Você também pode visitar a aba "Files" e dar uma olhada usando o gerenciador de arquivos do PythonAnywhere.
 
-## You are now live!
+## Estamos no ar!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+O seu site deve agora estar no ar, na internet! Clique na aba "Web" do PythonAnywhere para pegar o link dele. Você pode compartilhar esse link com quem quiser :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
+> **Nota** Este é um tutorial para iniciantes, e ao fazer o deploy do site desta forma nós tomamos alguns atalhos que não são ideais do ponto de vista de segurança. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
 
 ## Debugging tips
 
