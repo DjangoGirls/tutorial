@@ -139,7 +139,7 @@ O seu código agora está no GitHub. Vai lá ver! Você perceberá que ele esta 
 
 Navegue para a [Dashboard do PythonAnywhere](https://www.pythonanywhere.com/) clicando no logo, e escolha a opção de iniciar um console "Bash" - isso é a versão do PythonAnywhere da linha de comando, igual à que tem no seu computador.
 
-![Pointing at Bash in the New Console section](images/pythonanywhere_bash_console.png)
+![Mostrando o Bash na seção "New Console"](images/pythonanywhere_bash_console.png)
 
 > **Nota** O PythonAnywhere é baseado em Linux, então se você estiver no Windows, o console terá uma cara um pouco diferente do que tem no seu computador.
 
@@ -218,4 +218,4 @@ A página padrão no seu site deverá dizer "It worked!" ("Funcionou!"), igual a
 
 Depois de criar alguns posts, você pode voltar para o seu ambiente local (não o PythonAnywhere). Daqui pra frente você deve trabalhar no seu ambiente local para fazer alterações. Este workflow é comum no desenvolvimento web – fazer alteracões locais, subir essas alteracões pro GitHub, e baixar essas alterações no seu servidor web de produção. Isto permite a você desenvolver e experimentar sem quebrar o seu site que está no ar. Bem legal, né?
 
-Você merece *MUITOS* parabéns! Deploys em servidores são uma das partes mais complicadas do desenvolvimento web e não é incomum levar vários dias até conseguir fazer com que isso funcione. But you've got your site live, on the real Internet, just like that!
+Você merece *MUITOS* parabéns! Deploys em servidores são uma das partes mais complicadas do desenvolvimento web e não é incomum levar vários dias até conseguir fazer com que isso funcione. Mas você está com o seu site no ar, na internet de verdade! Simples assim!
