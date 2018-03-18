@@ -131,35 +131,35 @@ O seu código agora está no GitHub. Vai lá ver! Você perceberá que ele esta 
 
 ## Crie uma conta no PythonAnywhere
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Nota** Você talvez já tenha criado uma conta no PythonAnywhere durante os passos de instalação. Se tiver, não precisa criar outra.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## Configurando nosso site no PythonAnywhere
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+Navegue para a [Dashboard do PythonAnywhere](https://www.pythonanywhere.com/) clicando no logo, e escolha a opção de iniciar um console "Bash" - isso é a versão do PythonAnywhere da linha de comando, igual à que tem no seu computador.
 
 ![Pointing at Bash in the New Console section](images/pythonanywhere_bash_console.png)
 
-> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **Nota** O PythonAnywhere é baseado em Linux, então se você estiver no Windows, o console terá uma cara um pouco diferente do que tem no seu computador.
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+Fazer o deploy de uma aplicação web no PythonAnywhere envolve baixar o seu código do GitHub e configurar o PythonAnywhere para reconhecê-lo e começar a servi-lo como uma aplicacão web. Existem formas manuais de fazer isso, mas o PythonAnywhere fornece uma ferramenta que vai fazer tudo pra você. Vamos instalar ela primeiro:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
     $ pip3.6 install --user pythonanywhere
     
 
-That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+Isso deve mostrar na tela coisas como `Collecting pythonanywhere`, e depois de algum tempo finalizar com uma linha dizendo `Successfully installed (...) pythonanywhere (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+Agora nós vamos executar a ferramenta para configurar a nossa app do GitHub automaticamente. Digite os seguintes comandos no console do PythonAnywhere (não se esqueça de usar o seu nome de usuário no GitHub ao invés de `<your-github-username>`):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+Ao assistir a execução desse comando, você poderá ver o que está acontecendo:
 
 - Downloading your code from GitHub
 - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
