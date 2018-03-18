@@ -1,18 +1,18 @@
 # Hoe het internet werkt
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Voor thuislezers: dit hoofdstuk wordt behandeld in de [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Dit hoofdstuk is geïnspireerd door de presentatie "How the Internet works" door Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Gokje: je gebruikt het Internet zeker elke dag? Maar weet je écht wat er gebeurt als je een adres zoals https://djangogirls.org in je browser ingeeft en op de `enter` knop drukt?
 
 Het eerste wat je moet begrijpen is dat een website gewoon een stelletje opgeslagen bestanden op een harde schijf zijn. Net zoals je video's, muziek of afbeeldingen. Echter is er één dingetje dat uniek is voor websites: ze bevatten computer code genaamd HTML.
 
 Als je niet bekend bent met programmeren kan het moeilijk zijn om in eerste instantie HTML te begrijpen. Je web browsers(zoals Chrome, Safari, Firefox, etc.) zijn er anders wel gek op. Web browsers zijn ontwerpen om deze code te begrijpen. Ze volgen de instructies die omschreven staan in de code en presenteren de bestanden waar jouw website uit bestaat, precies zoals jij het wilt.
 
-Net zoals bij elk bestand, moeten we de HTML bestanden ergens op een harde schijf opslaan. Voor het Internet gebruiken we speciale, krachtige computers genaamd *servers*. Ze hebben geen scherm, muis of toetsenbord omdat hun voornaamste doel het opslaan en serveren van gegevens is. That's why they're called *servers* – because they *serve* you data.
+Net zoals bij elk bestand, moeten we de HTML bestanden ergens op een harde schijf opslaan. Voor het Internet gebruiken we speciale, krachtige computers genaamd *servers*. Ze hebben geen scherm, muis of toetsenbord omdat hun voornaamste doel het opslaan en serveren van gegevens is. Dit is waarom ze *servers* worden genoemd - omdat ze jouw data *serveren*.
 
-OK, but you want to know how the Internet looks, right?
+Ok, maar je wilt weten hoe het internet er uit ziet, niet?
 
 We hebben een plaatje voor jou getekend! Het ziet er zo uit:
 
