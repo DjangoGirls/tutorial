@@ -206,15 +206,15 @@ Se você vir um erro ao rodar o script `pa_autoconfigure_django.py`, aqui vão a
 - Digitar a URL do seu GitHub incorretamente
 - Se você vir um erro dizendo *"Could not find your settings.py"* (settings.py não encontrado), é provavelmente porque você não adicionou todos os seus arquivos ao Git, e/ou você não fez o push deles para o GitHub. Dê uma revisada na sessão sobre Git acima
 
-Se você vir um erro ao visitar o seu site, o primeiro lugar para procurar informações sobre o erro é no **log de erros**. Você vai encontrar um link para o log na aba [Web](https://www.pythonanywhere.com/web_app_setup/) do PythonAnywhere. See if there are any error messages in there; the most recent ones are at the bottom.
+Se você vir um erro ao visitar o seu site, o primeiro lugar para procurar informações sobre o erro é no **log de erros**. Você vai encontrar um link para o log na aba [Web](https://www.pythonanywhere.com/web_app_setup/) do PythonAnywhere. Verifique se há alguma mensagem de erro no log; as mais recentes estarão no final.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Há também algumas [dicas de debugging no site de ajuda da PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+E lembre-se, a sua coach está aí pra ajudar!
 
-# Check out your site!
+# Visite o seu site!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+A página padrão no seu site deverá dizer "It worked!" ("Funcionou!"), igual ao seu ambiente local. Tente adicionar `/admin` ao final da URL, e você será levada ao site de administração. Faça login com o nome de usuário e a senha, e você verá que pode adicionar novos Posts no servidor.
 
 Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
