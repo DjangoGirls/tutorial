@@ -49,11 +49,11 @@ E salve-o como `.gitignore` na pasta "djangogirls".
 
 > **Nota** O ponto no início do nome do arquivo é importante! Se você estiver tendo alguma dificuldade em criá-lo (Macs, por exemplo, não gostam quando você tenta criar arquivos que começam com um ponto através do Finder), use a função "Salvar Como..." no seu editor; não tem como errar.
 > 
-> **Nota** Um dos arquivos especificados no seu `.gitignore` é o `db.sqlite3`. Este arquivo é o seu banco de dados local, onde todos os seus posts ficarão guardados. Nós não queremos que você adicione este arquivo ao repositório porque o seu site no PythonAnywhere vai utilizar um banco de dados diferente. Esse banco poderia ser SQLite, como na sua máquina de desenvolvimento, mas normalmente você irá utilizar um chamado MySQL, que consegue lidar com bem mais visitantes ao site do que o SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. Pense no seu banco de dados local como um bom parque de diversões onde você pode testar coisas diferentes e não ter medo de que você vai apagar os posts reais do seu blog.
+> **Nota** Um dos arquivos especificados no seu `.gitignore` é o `db.sqlite3`. Este arquivo é o seu banco de dados local, onde todos os seus posts ficarão guardados. Nós não queremos que você adicione este arquivo ao repositório porque o seu site no PythonAnywhere vai utilizar um banco de dados diferente. Esse banco poderia ser SQLite, como na sua máquina de desenvolvimento, mas normalmente você irá utilizar um chamado MySQL, que consegue lidar com bem mais visitantes ao site do que o SQLite. De qualquer forma, ao ignorar o banco de dados SQLite para a cópia do GitHub, isso significa que todos os posts que você criou até agora irão estar disponíveis somente no seu ambiente local, e você terá que adicioná-los novamente em produção. Pense no seu banco de dados local como um bom parque de diversões onde você pode testar coisas diferentes e não ter medo de apagar os posts reais do seu blog.
 
-É uma boa idéia usar um comando `git status` antes de `git add` ou sempre que você não tiver certeza do que mudou. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+É uma boa idéia usar um comando `git status` antes de `git add` ou sempre que você não tiver certeza do que mudou. Isso irá evitar quaisquer surpresas, como os arquivos errados serem adicionados ou commitados. O comando `git status` mostra informações sobre arquivos que não estão sendo controlados, arquivos que foram modificados ou preparados (staged), o status do branch, e muito mais. A saída do comando deve ser parecida com o seguinte:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}linha de comando{% endfilename %}
 
     $ git status
     On branch master
@@ -73,7 +73,7 @@ E salve-o como `.gitignore` na pasta "djangogirls".
 
 E finalmente nós salvamos nossas alterações. Vá para o seu console e execute estes comandos:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}linha de comando{% endfilename %}
 
     $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
