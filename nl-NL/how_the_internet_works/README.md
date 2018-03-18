@@ -12,17 +12,17 @@ Als je niet bekend bent met programmeren kan het moeilijk zijn om in eerste inst
 
 Net zoals bij elk bestand, moeten we de HTML bestanden ergens op een harde schijf opslaan. Voor het Internet gebruiken we speciale, krachtige computers genaamd *servers*. Ze hebben geen scherm, muis of toetsenbord omdat hun voornaamste doel het opslaan en serveren van gegevens is. Dit is waarom ze *servers* worden genoemd - omdat ze jouw data *serveren*.
 
-Ok, maar je wilt weten hoe het internet er uit ziet, niet?
+Ok, maar je wilt weten hoe het internet er uit ziet, nietwaar?
 
 We hebben een plaatje voor jou getekend! Het ziet er zo uit:
 
 ![Figure 1.1](images/internet_1.png)
 
-Ziet er uit als een puinhoop, toch? In fact it is a network of connected machines (the above-mentioned *servers*). Honderden duizenden machines! Vele, vele kilometers kabels over de hele wereld! Je kunt een onderzeeër kabel kaart website bekijken (http://submarinecablemap.com) om te zien hoe ingewikkeld het net is. Hier is een screenshot van de website:
+Ziet er uit als een puinhoop, toch? In feite is het een netwerk van aaneengesloten machines (de hierboven genoemde *servers*). Honderdduizenden machines! Vele, vele kilometers kabels over de hele wereld! Je kunt een onderzeeër kabel kaart website bekijken (http://submarinecablemap.com) om te zien hoe ingewikkeld het net is. Hier is een screenshot van de website:
 
 ![Figure 1.2](images/internet_3.png)
 
-Het is fascinerend, nietwaar? Maar uiteraard is het niet mogelijk om draden te hebben per machine naar elke andere machine die verbonden is met het Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Het is fascinerend, nietwaar? Maar uiteraard is het niet mogelijk om draden te hebben per machine naar elke andere machine die verbonden is met het Internet. Dus, om een machine te bereiken (bijvoorbeeld degene waarop https://djangogirls.org staat), moeten we een verzoek versturen dat langs vele, vele verschillende machines gaat.
 
 Het ziet er zo uit:
 
