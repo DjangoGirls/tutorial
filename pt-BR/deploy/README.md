@@ -216,6 +216,6 @@ E lembre-se, a sua coach está aí pra ajudar!
 
 A página padrão no seu site deverá dizer "It worked!" ("Funcionou!"), igual ao seu ambiente local. Tente adicionar `/admin` ao final da URL, e você será levada ao site de administração. Faça login com o nome de usuário e a senha, e você verá que pode adicionar novos Posts no servidor.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Depois de criar alguns posts, você pode voltar para o seu ambiente local (não o PythonAnywhere). Daqui pra frente você deve trabalhar no seu ambiente local para fazer alterações. Este workflow é comum no desenvolvimento web – fazer alteracões locais, subir essas alteracões pro GitHub, e baixar essas alterações no seu servidor web de produção. Isto permite a você desenvolver e experimentar sem quebrar o seu site que está no ar. Bem legal, né?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+Você merece *MUITOS* parabéns! Deploys em servidores são uma das partes mais complicadas do desenvolvimento web e não é incomum levar vários dias até conseguir fazer com que isso funcione. But you've got your site live, on the real Internet, just like that!
