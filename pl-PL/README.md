@@ -28,24 +28,24 @@ Będzie to wyglądać mniej więcej tak:
 
 ![Rysunek 0.1](images/application.png)
 
-> Jeżeli przerabiasz tutorial samodzielnie i nie masz w pobliżu osoby, która pomogłaby Ci w razie problemów, zapraszamy na czat: !(https://badges. gitter. im/Join Chat. svg)![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg). Ustaliliśmy z naszymi mentorami oraz poprzednimi uczestniczkami, że od czasu do czasu będą się tam pojawiać i udzielać pomocy z tutorialem! Nie bój się pytać!</p> </blockquote> 
-> 
-> Ok, [zacznijmy od początku...](./how_the_internet_works/README.md)
-> 
-> ## Przerabiasz tutorial w domu?
-> 
-> Udział w warsztatach Django Girls to niesamowite doświadczenie, ale zdajemy sobie sprawę, że nie zawsze jest to możliwe. Z tego powodu zachęcamy Ciebie byś spróbowała przerobić tutorial w domu. Dla czytelniczek w domu, jesteśmy właśnie w trakcie przygotowywani materiałów wideo, które ułatwią samodzielne podążanie za tutorialem. Na chwilę obecną nie posiadamy wideo do wszystkich rozdziałów, ale dzień po dniu, rozdział po rozdziale kolejne materiały będą się pojawiać na kanale [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) na YouTubie.
-> 
-> W każdym rozdziale, który posiada materiał wideo, udostępniamy link, który do niego prowadzi.
-> 
-> ## Jak możesz pomóc?
-> 
-> Kurs jest prowadzony przez [DjangoGirls](https://djangogirls.org/). Jeżeli znajdziesz jakiś błąd lub chcesz dodać coś nowego, zapoznaj się proszę z [tymi informacjami](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
-> 
-> ## Chciałabyś pomóc nam tłumaczyć tutorial na inne języki?
-> 
-> Obecnie przechowujemy wersje językowe na platformie Crowdin.com:
-> 
-> https://crowdin.com/project/django-girls-tutorial
-> 
-> Jeżeli twój język nie jest wylistowany na [Crowdinie](https://crowdin.com/), [zgłoś nowe issue](https://github.com/DjangoGirls/tutorial/issues/new), dzięki któremu poinformujesz nas, by dodać język.
+> Jeżeli przerabiasz tutorial samodzielnie i nie masz w pobliżu osoby, która pomogłaby Ci w razie problemów, zapraszamy na czat: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Ustaliliśmy z naszymi mentorami oraz poprzednimi uczestniczkami, że od czasu do czasu będą się tam pojawiać i udzielać pomocy z tutorialem! Nie bój się pytać!
+
+Ok, [zacznijmy od początku...](./how_the_internet_works/README.md)
+
+## Przerabiasz tutorial w domu?
+
+Udział w warsztatach Django Girls to niesamowite doświadczenie, ale zdajemy sobie sprawę, że nie zawsze jest to możliwe. Z tego powodu zachęcamy Ciebie byś spróbowała przerobić tutorial w domu. Dla czytelniczek w domu, jesteśmy właśnie w trakcie przygotowywani materiałów wideo, które ułatwią samodzielne podążanie za tutorialem. Na chwilę obecną nie posiadamy wideo do wszystkich rozdziałów, ale dzień po dniu, rozdział po rozdziale kolejne materiały będą się pojawiać na kanale [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) na YouTubie.
+
+W każdym rozdziale, który posiada materiał wideo, udostępniamy link, który do niego prowadzi.
+
+## Jak możesz pomóc?
+
+Kurs jest prowadzony przez [DjangoGirls](https://djangogirls.org/). Jeżeli znajdziesz jakiś błąd lub chcesz dodać coś nowego, zapoznaj się proszę z [tymi informacjami](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+
+## Chciałabyś pomóc nam tłumaczyć tutorial na inne języki?
+
+Obecnie przechowujemy wersje językowe na platformie Crowdin.com:
+
+https://crowdin.com/project/django-girls-tutorial
+
+Jeżeli twój język nie jest wylistowany na [Crowdinie](https://crowdin.com/), [zgłoś nowe issue](https://github.com/DjangoGirls/tutorial/issues/new), dzięki któremu poinformujesz nas, by dodać język.
