@@ -10,9 +10,9 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
 
 ### ¿Me puedes recomendar recursos adicionales?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
+¡Claro! En primer lugar, sigue adelante y prueba nuestro otro libro llamado [Django Girls Turorial: Extensions](https://tutorial-extensions.djangogirls.org/).
 
-Luego, puedes intentar los recursos listados a continuaciòn. Todos son muy recomendados!
+Luego, puedes intentar los recursos listados a continuaciòn. ¡Todos son muy recomendados!
 
 - [Django's official tutorial (Tutorial oficial de Django)](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 - [New Coder turorials (Tutoriales de "New Coder")](http://newcoder.io/tutorials/)
