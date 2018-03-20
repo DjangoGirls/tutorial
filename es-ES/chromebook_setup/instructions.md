@@ -18,11 +18,11 @@ Ahora deberías ver una interfaz con una barra, una gran ventana principal con a
     tunombredeusuario:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Esta zona es tu *terminal*, donde la computadora Cloud9 está preparada para que le des instrucciones. Puedes cambiar el tamaño de la ventana para hacerla un poco más grande.
 
 ### Entorno Virtual
 
-Un entorno virtual (también llamado "virtualenv" o "vitual environment" en inglés) es un tipo de caja privada donde podemos introducir código para un proyecto en el que estemos trabajando. Lo usamos para mantener los diferentes trozos de código que queramos para nuestros diferentes proyectos separados de modo que no haya mezclas indeseadas entre los proyectos.
+Un entorno virtual (también llamado "virtualenv" o "vitual environment" en inglés) es un tipo de caja privada donde podemos introducir código para el proyecto en el que estemos trabajando. Lo usamos para mantener separados los diferentes trozos de código de nuestros proyectos, de modo que no haya mezclas indeseadas entre los mismos.
 
 En tu terminal en la zona inferior de la interfaz de Cloud 9, ejecuta lo siguiente:
 
@@ -45,16 +45,16 @@ Después, ejecuta:
     pip install django~=1.11.0
     
 
-(Mira que en la ultima línea usamos una virgulilla seguida por un signo de igual: ~=)
+(Presta atención que en la ultima línea usamos una virgulilla seguida por un signo de igual: ~=).
 
 ### Github
 
-Crea una cuenta de [Github](https://github.com).
+Crea una cuenta en [Github](https://github.com).
 
 ### PythonAnywhere
 
-El tutorial de las Django Girls incluye una sección en lo que se conoce como Despliegue, lo cual se refiere al proceso de tomar el código que da vida a tu nueva aplicación web y moverlo a un ordenador de acceso publico (llamado servidor) para que otras personas puedan ver tu trabajo.
+El tutorial de Django Girls incluye una sección en lo que se conoce como Despliegue, lo cual se refiere al proceso de tomar el código que da vida a tu nueva aplicación web y moverlo a un ordenador de acceso publico (llamado servidor) para que otras personas puedan ver tu trabajo.
 
-Esta parte del tutorial es algo extraña usando un Chromebook, pues ya estamos usando un computador conectado a internet (contrario a, por ejemplo, una laptop). Sin embargo, aun es útil, pues nos podemos imaginar a Cloud9 como un lugar para nuestro trabajo "en progreso" y a Python Anywhere como un lugar donde mostrar nuestro material una vez completado.
+Esta parte del tutorial es algo extraña usando un Chromebook, pues ya estamos usando un computador conectado a internet (contrario a, por ejemplo, una laptop). Sin embargo, aún es útil, pues nos podemos imaginar a Cloud9 como un lugar para nuestro trabajo "en progreso" y a Python Anywhere como un lugar donde mostrar nuestro material una vez completado.
 
-Así que, Regístrate en Python Anywhere en [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Así que, regístrate en Python Anywhere [www.pythonanywhere.com](https://www.pythonanywhere.com).
