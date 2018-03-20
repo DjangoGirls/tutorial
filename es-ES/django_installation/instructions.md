@@ -8,9 +8,9 @@ Antes de instalar Django, instalaremos una herramienta extremadamente útil que 
 
 Así que, vamos a crear un **entorno virtual** (también llamado un *virtualenv*). Virtualenv aísla tu configuración de Python/Django por cada proyecto. Esto quiere decir que cualquier cambio que hagas en un sitio web no afectará a ningún otro que estés desarrollando. Genial, ¿no?
 
-Todo lo que necesitas hacer es encontrar un directorio en el que quieras crear el `virtualenv`; tu directorio home, por ejemplo. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Todo lo que necesitas hacer es encontrar un directorio en el que quieras crear el `virtualenv`; tu directorio home, por ejemplo. En Windows, puede verse como `C:\Users\Name` (donde `Name` es el nombre de tu usuario).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **NOTA:** En Windows, asegúrate de que este directorio no contiene caracteres especiales o acentuados; si tu nombre de usuario contiene caracteres acentuados, usa un directorio distinto, por ejemplo `C:\djangogirls`.
 
 Para este tutorial usaremos un nuevo directorio `djangogirls` en tu directorio home:
 
@@ -44,22 +44,22 @@ Donde `myvenv` es el nombre de tu `virtualenv`. Puedes utilizar cualquier otro n
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Podemos crear un `virtualenv` en Linux y OS X, es tan sencillo como ejecutar `python3 -m venv myvenv`. Se verá así:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` es el nombre de tu `virtualenv`. Puedes usar cualquier otro nombre, pero sólo utiliza minúsculas y no incluyas espacios. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` es el nombre de tu `virtualenv`. Puedes usar cualquier otro nombre, pero sólo utiliza minúsculas y no incluyas espacios. También es una buena idea mantener el nombre corto. ¡Vas a referirte muchas veces a él!
 
 > **NOTA:** En algunas versiones de Debian/Ubuntu, puede que obtengas el siguiente error:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     The virtual environment was not created successfully because ensurepip is not available.  En sistemas Debian/Ubuntu, tendrás que instalar el paquete python3-venv usando el siguiente comando.
->        apt install python3-venv
->     You may need to use sudo with that command.  Después de instalar el paquete python3-venv, vuelve a crear tu entorno virtual.
+>        apt-get install python3-venv
+>     Puede que tengas que usar sudo con este comando.  Después de instalar el paquete python3-venv, vuelve a crear tu entorno virtual.
 >     
 > 
 > En este caso, sigue las instrucciones anteriores e instala el paquete `python3-venv`: {% filename %}command-line{% endfilename %}
@@ -78,7 +78,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     $ sudo apt install python-virtualenv
+>     $ sudo apt-get install python-virtualenv
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
