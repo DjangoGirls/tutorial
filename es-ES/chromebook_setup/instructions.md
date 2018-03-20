@@ -2,16 +2,16 @@ Puedes [saltarte esta sección](http://tutorial.djangogirls.org/en/installation/
 
 ### Cloud 9
 
-Cloud 9 es una herramienta que te proporciona un editor de código y acceso a una computadora funcionando en Internet donde puedes instalar, escribir y ejecutar el software. Durante el tutorial, Cloud 9 actuará como su *máquina local*. Aún así, usted estará ejecutando comandos en una terminal, tal como sus compañeros de clase en OS X, Ubuntu, o Windows, pero su terminal estará conectada a una computadora activa en algún otro lugar que Cloud 9 le establezca.
+Cloud 9 es una herramienta que te proporciona un editor de código y un acceso a una computadora funcionando en Internet donde puedes instalar, escribir y ejecutar software. Durante el tutorial, Cloud 9 actuará como tu *equipo local*. Aún así, estarás ejecutando comandos en una terminal, tal como tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal estará conectada a una computadora activa en algún otro lugar que Cloud 9 establecerá por tí.
 
-1. Instalar Cloud 9 desde la [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Ir a [c9.io](https://c9.io)
+1. Instala Cloud 9 desde la [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Ve a [c9.io](https://c9.io)
 3. Crea una cuenta
-4. Da click en *Create a New Workspace*
-5. Llamalo *django-girls*
-6. Selecciona *Blank*(en la parte inferior, el segundo desde la derecha con logo anaranjado)
+4. Haz clic en *Crear un nuevo espacio de trabajo*
+5. Nómbralo *django-girls*
+6. Selecciona *Blank*(en la parte inferior, el segundo desde la derecha con un logo anaranjado)
 
-Ahora deberías ver una interfaz con una barra, una gran ventana principal con algo de texto y, una ventana pequeña en la parte inferior que se mira así:
+Ahora deberías ver una interfaz con una barra, una gran ventana principal con algún texto y, una ventana pequeña en la parte inferior que se vería así:
 
 {% filename %}Cloud 9{% endfilename %}
 
