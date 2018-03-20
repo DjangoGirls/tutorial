@@ -33,11 +33,11 @@ Esto no añade ficheros a tu proyecto. Tan solo apunta a archivos que existen en
 
 ## Archivos estáticos en Django
 
-Finalmente nos vamos a fijar en estas cosas que hemos estado llamando **archivos estáticos**. Archivos estáticos son tus CSS y las imágenes. Su contenido no depende del contexto de la solicitud y será el mismo para todos los usuarios.
+Finalmente nos vamos a fijar en estas cosas que hemos estado llamando **archivos estáticos**. Los archivos estáticos son todos tus CSS e imágenes. Su contenido no depende del contexto de la solicitud y será el mismo para todos los usuarios.
 
-### Dónde poner los archivos estáticos para Django
+### ¿Dónde poner los archivos estáticos para Django
 
-Django ya sabe donde encontrar los archivos estáticos de la aplicación incluida "admin". Ahora solo tenemos que añadir algunos de estos archivos estáticos para nuestro `blog`.
+Django ya sabe donde encontrar los archivos estáticos dentro de la aplicación "admin" integrada. Ahora solo tenemos que añadir algunos de estos archivos estáticos a nuestro `blog`.
 
 Hacemos esto creando una carpeta llamada `static` dentro de la estructura de la aplicación que llamamos blog:
 
@@ -49,11 +49,11 @@ Hacemos esto creando una carpeta llamada `static` dentro de la estructura de la 
     └── mysite
     
 
-Django automáticamente encontrará cualquier carpeta llamada "static" que este dentro de cualquiera las carpetas de tus aplicaciones para usar su contenido archivos estáticos.
+Django automáticamente buscará cualquier carpeta nombrada "static" que esté dentro de cualquiera de las carpetas de tus aplicaciones para usar su contenido como archivos estáticos.
 
 ## ¡Tu primer archivo CSS!
 
-Creemos un archivo CSS, para añadir tu propio estilo a tu página. Crea una nueva carpeta llamada `css` dentro de tu carpeta `static`. Después crea un nuevo archivo llamado `blog.css` dentro de la carpeta `css`. ¿Listo?
+Creamos un archivo CSS, para añadir tu propio estilo a la página. Crea una nueva carpeta llamada `css` dentro de tu carpeta `static`. Luego, crea un nuevo archivo llamado `blog.css` dentro de la carpeta `css`. ¿Listo?
 
     djangogirls
     └─── blog
