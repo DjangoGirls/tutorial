@@ -140,7 +140,7 @@ Para crear un nuevo formulario `Post`, tenemos que llamar a `PostForm()` y pasar
 
 Tenemos que crear un archivo `post_edit.html` en el directorio `blog/templates/blog`. Para hacer que un formulario funcione necesitamos varias cosas:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
+* Tenemos que mostrar el formulario. Podemos hacerlo, por ejemplo, con un sencillo {% raw %}`{{ form.as_p }}`{% endraw %}.
 * La línea anterior tiene que estar dentro de una etiqueta de formuLario HTML: `<form method="POST">...</form>`.
 * Necesitamos un botón `Guardar`. Lo hacemos con un botón HTML: `<button type='submit'>Save</button>`.
 * Finalmente justo después de abrir la etiqueta `<form ...>` tenemos que añadir {% raw %}`{% csrf_token %}`{% endraw %}. ¡Esto es muy importante ya que hace que tus formularios sean seguros! Si olvidas este pedazo, Django se molestará cuando intentes guardar el formulario:
@@ -206,7 +206,7 @@ Es hora de rellenar los puntos `[...]`. Si el `método` es `POST` entonces querr
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Lo siguiente es verificar si el formulario está correcto (si todos los campos necesarios están definidos y no hay valores incorrectos). Lo hacemos con `form.is_valid()`.
 
 Comprobamos que el formulario es válido y, si es así, ¡lo podemos salvar!
 
@@ -437,13 +437,12 @@ Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegu
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
-    $ git pull
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com $ git pull
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Recuerda sustituir `<your-pythonanywhere-username>`con tu nombre de PythonAnywhere real, sin los signos de ángulo).
 
 * Finalmente, ve a la pestaña [Web](https://www.pythonanywhere.com/web_app_setup/) y haz click en **Reload**.
 
-And that should be it! Congrats :)
+¡Y eso debería ser todo! Felicidades :)
