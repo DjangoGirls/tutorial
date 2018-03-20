@@ -64,9 +64,9 @@ Creamos un archivo CSS, para añadir tu propio estilo a la página. Crea una nue
 
 ¡Es hora de escribir algo de CSS! Abre el archivo `blog/static/css/blog.css` en tu editor de código.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+No vamos a profundizar demasiado en cómo personalizar y aprender CSS aquí. Hay recomendación para un curso CSS gratuito al final de esta página por si quieres conocer más.
 
-Pero vamos a hacer al menos un poco. ¿Tal vez podremos cambiar el color de nuestro título? Los ordenadores utilizan códigos especiales para entender los colores. Estos códigos empiezan con `#` seguidos por 6 letras (A-F) y números (0-9). Por ejemplo, el código del color azul es `#0000FF`. Puedes encontrar códigos para muchos colores aquí: http://www.colorpicker.com/ y en otras páginas web. También puedes utilizar [colores predefinidos](http://www.w3schools.com/colors/colors_names.asp) utilizando su nombre en inglés, como `red` y `green`.
+Pero vamos a hacer al menos algo. ¿Tal vez podríamos cambiar el color de nuestro título? Los ordenadores utilizan códigos especiales para entender los colores. Estos códigos empiezan con `#` seguidos por 6 letras (A-F) y números (0-9). Por ejemplo, el código del color azul es `#0000FF`. Puedes encontrar los códigos para muchos colores aquí: http://www.colorpicker.com/ y en otras páginas web. También puedes utilizar [colores predefinidos](http://www.w3schools.com/colors/colors_names.asp) utilizando su nombre en inglés, como `red` y `green`.
 
 En tu archivo `blog/static/css/blog.css` deberías agregar el siguiente código:
 
@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a` es un selector CSS. Este selector significa que aplicamos nuestros estilos a cualquier elemento dentro de un elemento `h1`. Así, cuando tenemos algo como `<h1><a href="">link</a></h1>`, el estilo `h1 a` será aplicado. En este caso le estamos diciendo que cambie el color a `#FCA205`, que es naranja. Por supuesto, ¡puedes poner tu propio color aquí!
 
-En el archivo CSS se definen los estilos de los elementos que se encuentran en el archivo HTML. La primera manera de identificar los elementos será por sus nombres. Puede que te acuerdes de estos selectores de la sección sobre HTML. Cosas como `a`, `h1`, y `body` son algunos ejemplos de los nombres que se pueden usar como selectores. También podemos identificar elementos por atributos como `class` o clase, y `id`. "class" y "id" son nombres que le asignas tú misma al elemento. Las "class" definen grupos de elementos y los "id" apuntan a elementos específicos. Por ejemplo, podrías identificar esta etiqueta por su selector `a`, por la "class" `external_link`, o el "id" `link_to_wiki_page`:
+En el archivo CSS se definen los estilos de los elementos que se encuentran en el archivo HTML. La primera manera de identificar los elementos será por sus nombres. Puede que te acuerdes de estos selectores de la sección sobre HTML. Cosas como `a`, `h1`, y `body` son algunos ejemplos de los nombres que se pueden usar como selectores. También podemos identificar elementos por atributos como `class` o clase, y `id`. "class" y "id" son nombres que le asignas tú mismo al elemento. Las "class" definen grupos de elementos y los "id" apuntan a elementos específicos. Por ejemplo, podrías identificar esta etiqueta por su selector `a`, por la "class" `external_link`, o el "id" `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -88,7 +88,7 @@ En el archivo CSS se definen los estilos de los elementos que se encuentran en e
 
 Puedes leer mas acerca de [Selectores de CSS en w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-También tenemos que decirle a nuestra plantilla HTML que añadimos algo de CSS. Abre el archivo `blog/templates/blog/post_list.html` y añade esta línea al tope de todo:
+También tenemos que decirle a nuestra plantilla HTML que añadimos algo de CSS. Abre el archivo `blog/templates/blog/post_list.html` y añade esta línea al inicio de todo:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
