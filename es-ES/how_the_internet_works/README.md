@@ -34,7 +34,7 @@ Tu carta va hacia la oficina de correo más cercana. Luego va a otra que es un p
 
 ![Figura 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+Sí, es tan sencillo como eso. Enviar mensajes y esperar alguna respuesta. Por supuesto, en vez de papel y bolígrafo usas bytes de datos, ¡pero la idea es la misma!
 
 En lugar de direcciones con el nombre de la calle, ciudad, código postal y nombre del país, utilizamos direcciones IP. Tu computadora pide primero el DNS (Domain Name System - en español Sistema de Nombres de Dominio) para traducir djangogirls.org a una dirección IP. Funciona en cierta manera como los viejos directorios telefónicos donde puedes buscar el nombre de la persona que se deseas contactar y encontrar su número de teléfono y dirección.
 
