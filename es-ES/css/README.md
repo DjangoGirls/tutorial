@@ -1,22 +1,22 @@
-# CSS - Hazlo verse bien!
+# CSS - ¡Hazlo verse bien!
 
 Nuestro blog todavía se ve bastante feo, ¿verdad? ¡Es hora de hacerlo bonito! Vamos a usar CSS para eso.
 
 ## ¿Qué es CSS?
 
-Hojas de estilos en cascad (CSS por sus siglas en ingles) es un lenguaje usado para describir la apariencia de una pagina web escrita en un lenguaje de marcado (como HTML). Míralo como un maquillaje para nuestra pagina web ;)
+Las hojas de estilos en cascada (CSS por sus siglas en ingles) es un lenguaje usado para describir la apariencia de una página web escrita en un lenguaje de marcado (como HTML). Míralo como un maquillaje para nuestra página web ;)
 
-Pero no queremos empezar de cero otra vez, ¿Verdad? Una vez más, vamos a usar algo que programadores publicaron en Internet. Sabes, reinventar la rueda no es divertido.
+Pero no queremos empezar de cero otra vez, ¿verdad? Una vez más, vamos a usar algo que los programadores publicaron en Internet. Sabes, reinventar la rueda no es divertido.
 
 ## ¡Vamos a usar Bootstrap!
 
-Bootstrap es una de las frameworks mas populares de HTML y CSS, frameworks para desarrollar sitios atractivos: https://getbootstrap.com/
+Bootstrap es uno de los frameworks mas populares de HTML y CSS para desarrollar para sitios atractivos: https://getbootstrap.com/
 
-Fue escrito por programadores que trabajaban para Twitter. Ahora está siendo desarrollado por voluntarios de todo el mundo!
+Fue escrito por programadores que trabajaban para Twitter. ¡Ahora está siendo desarrollado por voluntarios de todo el mundo!
 
 ## Instalar Bootstrap
 
-Para instalar Bootstrap, tienes que esto a tu `<head>` en tu archivo `.html`:
+Para instalar Bootstrap, tienes que añadir esto a tu `<head>` tu archivo `.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ Para instalar Bootstrap, tienes que esto a tu `<head>` en tu archivo `.html`:
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Esto no añade archivos a tu proyecto. Tan solo apunta a archivos que existen en la web. Adelante, abre tu sitio web y actualiza la página. Ahí lo tienes!
+Esto no añade ficheros a tu proyecto. Tan solo apunta a archivos que existen en la web. Sigue adelante, abre tu sitio web y actualiza la página. ¡Ahí lo tienes!
 
 ![Figure 14.1](images/bootstrap1.png)
 
