@@ -44,13 +44,13 @@ Cuando te lo pida, escribe tu nombre de usuario (en minúscula, sin espacios), e
 
 Vuelve a tu navegador. Ingresa con las credenciales de super usuario que tu escogiste; verás el panel de administrador de Django.
 
-![Django admin](images/django_admin3.png)
+![Administrador de Django](images/django_admin3.png)
 
 Ve a Post y experimenta un como con él. Agrega cinco o seis posts para tu blog. No te preocupes sobre el contenido - simplemente puedes copiar y pegar algunas palabras de este tutorial para ahorrar tiempo. :)
 
 Asegúrate de que al menos dos o tres posts (pero no todos) tengan la fecha de publicación definida. Esto será muy poderoso después.
 
-![Django admin](images/edit_post3.png)
+![Administrador de Django](images/edit_post3.png)
 
 Si quieres saber mas sobre el administrador de Django, deberías ver la documentación de Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
