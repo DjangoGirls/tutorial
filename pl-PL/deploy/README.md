@@ -164,11 +164,11 @@ Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
 - Pobieranie kodu z GitHub
 - Tworzenie środowiska wirtualnego na PythonAnywhere, podobnie jak na Twóim PC
 - Aktualizowanie pliku ustawień z niektórych ustawień wdrażania
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Konfigurowanie bazy danych w PythonAnywhere za pomocą polecenia `manage.py migrate`
+- Konfigurowanie plików statycznych (dowiemy się o nich później)
+- I konfigurowanie PythonAnywhere do obsługi aplikacji internetowej za pomocą interfejsu API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+W PythonAnywhere wszystkie te kroki są zautomatyzowane, ale są to te same kroki, które trzeba wykonać z dowolnym innym dostawcą serwera. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
 
 As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
