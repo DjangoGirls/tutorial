@@ -150,20 +150,20 @@ Wdrożenie aplikacji internetowej w PythonAnywhere polega na ściągnięciu kodu
     $ pip3.6 install --user pythonanywhere
     
 
-That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+To powinno wydrukować rzeczy, takie jak `Collecting pythonanywhere`, a kończy się na linii z napisem `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHub. Wpisz następujące polecenie do konsoli w PythonAnywhere (nie zapomnij zamienić `<your-github-username>` na swoją nazwę użytkownika):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own PC
-- Updating your settings file with some deployment settings
+- Pobieranie kodu z GitHub
+- Tworzenie środowiska wirtualnego na PythonAnywhere, podobnie jak na Twóim PC
+- Aktualizowanie pliku ustawień z niektórych ustawień wdrażania
 - Setting up a database on PythonAnywhere using the `manage.py migrate` command
 - Setting up your static files (we'll learn about these later)
 - And configuring PythonAnywhere to serve your web app via its API
