@@ -198,19 +198,19 @@ Twoja strona powinna teraz być dostępna w publicznym Internecie! Przejdź do z
 
 > **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt, lub rozpocząć nowy projekt, należy przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) aby uzyskać jakieś wskazówki dotyczące zabezpieczania witryny.
 
-## Debugging tips
+## Porady dotyczące debugowania
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Jeśli widzisz błąd podczas uruchamiania skryptu `pa_autoconfigure_django.py`, oto kilka typowych przyczyn:
 
 - Zapominasz utworzyć Twój PythonAnywhere API token.
 - Robisz błąd w GitHub URL
 - Jeśli zobaczysz komunikat o błędzie *"Could not find your settings.py"*, prawdopodobnie nie udało Ci się dodać wszystkich plików do Git, i / lub nie przekazałeś ich do GitHub pomyślnie. Jeszcze raz spójrz na sekcję Git powyżej
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało jest Twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web](https://www.pythonanywhere.com/web_app_setup/) w PythonAnywhere. Sprawdź czy znajdują się tam jakieś komunikaty o błędach; te najświeższe znajdują się na samym dole.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Są tam też dostępne [generalne porady odnośnie debugowania na stronie pomocy PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+I pamiętaj, Twój mentor jest tutaj, by Ci pomóc!
 
 # Check out your site!
 
