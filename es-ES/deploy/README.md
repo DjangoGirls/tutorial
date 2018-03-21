@@ -93,7 +93,7 @@ Entonces, crea un nuevo repositorio dándole el nombre "my-first-blog". Deja el 
 
 > **Note** El nombre `my-first-blog` es importante - tu puedes escoger algo mas, pero va a ocurrir muchas veces en las instrucciones, y vas a tener que sustituirlo cada vez. Posiblemente sea más fácil quedarte con el nombre `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+En la siguiente pantalla, se te mostrarán tu enlace de clonado. Escoje la versión "HTTPS", cópialo y pégalo en tu terminal:
 
 ![](images/github_get_repo_url_screenshot.png)
 
