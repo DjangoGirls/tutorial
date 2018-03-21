@@ -177,9 +177,9 @@ W rezultacie, tak jak zrobiłyśmy to na własnym komputerze, musimy zainicjowa�
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Wpisz szczegóły dla swojego administratora. Najlepiej używać tych samych, których używasz na swoim komputerze, aby uniknąć nieporozumień, chyba że chcesz, aby hasło w PythonAnywhere było bezpieczniejsze.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Teraz, jeśli chcesz, możesz również rzucić okiem na swój kod w PythonAnywhere używając `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -190,13 +190,13 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
     templates  tests.py  urls.py  views.py
     
 
-You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudowanej przeglądarki plików w PythonAnywhere.
 
-## You are now live!
+## Jesteś na żywo!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+Twoja strona powinna teraz być dostępna w publicznym Internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym z kimkolwiek chcesz :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
+> **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
 
 ## Debugging tips
 
