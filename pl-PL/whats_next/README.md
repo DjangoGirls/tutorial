@@ -10,7 +10,7 @@ Potem, upewnij się, że śledzisz Django Girls na [Facebooku](http://facebook.c
 
 ### Czy możesz polecić kolejne materiały?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
+Tak! Najpierw wypróbuj naszą inną książkę o nazwie [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
 
 Później możesz spróbować zasobów wyszczególnionych poniżej. Są one bardzo polecane!
 
