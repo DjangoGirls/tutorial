@@ -4,7 +4,7 @@ Si estás haciendo el tutorial en casa, y no en uno de los [eventos de Django Gi
 
 Esto es porque cubrimos estas cosas en todo el tutorial de todos modos, y esto es sólo una página adicional que recoge todas las instrucciones de instalación en un solo lugar. El evento de Django Grils incluye una "noche de la instalación" en la que instalamos todo, así que no tenemos que molestar con ella durante el taller, así que esto es útil para nosotros.
 
-If you find it useful, you can follow this chapter too. Pero si quieres empezar a aprender antes de instalar un montón de cosas en tu computadora, sáltate este capítulo y te explicaremos la parte de instalación más adelante.
+Si lo encuentras útil, puedes seguir este capítulo también. Pero si quieres empezar a aprender antes de instalar un montón de cosas en tu computadora, sáltate este capítulo y te explicaremos la parte de instalación más adelante.
 
 ¡Buena suerte!
 
