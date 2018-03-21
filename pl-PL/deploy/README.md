@@ -84,11 +84,11 @@ I na końcu zapisujemy zmiany. Przejdź do konsoli i wykonaj poniższe polecenia
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Przesyłanie kodu do GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+Wejdź na stronę [GitHub.com](https://www.github.com) i utwórz nowe darmowe konto. (Jeśli już to wcześniej zrobiłaś to super!)
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Następnie utwórz nowe repozytorium i nadaj mu nazwę "my-first-blog" (ang. "mój-pierwszy-blog"). Pozostaw niezaznaczone pole wyboru "initialize with README", pozostaw opcję .gitignore pustą (zrobiłyśmy to ręcznie) i pozostaw licencję jako None.
 
 ![](images/new_github_repo.png)
 
