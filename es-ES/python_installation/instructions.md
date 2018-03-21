@@ -8,7 +8,7 @@ Django esta escrito en Python. Necesitamos Python para hacer cualquier cosa en D
 
 Primero comprueba si tu computador tiene una version de Windows de 32-bit o 64-bit, presiona tecla Windows + Pause/Break, esto abrirá tu System info (información de tu sistema), ahora busta la linea "System type". Puedes descargar Python para Windows desde el sitio web https://www.python.org/downloads/windows/. Haz click en el link "Latest Python 3 release - Python x.x.x.". Si tu computador tiene una versión de Windows de **64 bits**, descarga **Windows x86-64 executable installer**. De lo contrario, descarga **Windows x86 executable installer**. Después de descargar el instalador, debes ejecutarlo (hazle doble click) y sigue las instrucciones.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
+Algo a tener en cuenta: Durante la instalación notarás una ventana llamada "Setup". Asegúrate de seleccionar la casilla "Add Python 3.6 to Path" y luego haz click en "Install Now", como se muestra a continuación:
 
 ![No te olvides de agregar Python al Path](../python_installation/images/python-installation-options.png)
 
@@ -23,7 +23,7 @@ Nota: Si estas utilizando una versión anterior de Windows (7, Vista, o cualquie
 
 Si instalas una versión anterior de Python, la pantalla de instalación puede ser un poco diferente a la que se muestra arriba. Asegúrate de desplazarte hacia abajo para ver "Add python.exe to Path", y dar click en el botón a la izquierda y seleccionar "Will be installed on local hard drive":
 
-![Añadir Python a Path, versiones más anteriores](../python_installation/images/add_python_to_windows_path.png)
+![Añadir Python a Path, versiones más antiguas](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -60,7 +60,7 @@ Escribe este comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo apt install python3.6
+    sudo yum install python3.6
     
 
 <!--endsec-->
@@ -75,7 +75,7 @@ Usa este comando en tu consola:
     $ sudo dnf instalar python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use yum instead.
+Si usas versiones antiguas de Fedora puede que te dé un error de que no se encuentra el comando `dnf`. Si ése es tu caso, debes usar yum.
 
 <!--endsec-->
 
