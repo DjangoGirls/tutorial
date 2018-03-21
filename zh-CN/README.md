@@ -22,7 +22,7 @@
 
 ## 在本教程里你会学到什么？
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+一旦你完成此教程，你将会拥有一个小型的可用的网站应用：你的个人博客。我们将会向你展示如何推送到线上，以便人人都能看到你的网站。
 
 它将（或多或少）看起来像这个样子：
 
