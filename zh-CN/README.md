@@ -6,17 +6,17 @@
 
 ## Welcome
 
-欢迎来到Django Girls教程！ We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+欢迎来到Django Girls教程！ 很高兴您能使用本教程 :) 在本教程中，我们将带您踏上神奇的网络开发之旅，并将向您简要地传授网络开发的方方面面，以便像我们了解的那样，进行网络开发工作。
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+与所有未知的事情一样，这将是一次冒险之旅 - 但请不要担心，因为您已经鼓起勇气来到这里，您一定会成功的 :)
 
 ## 介绍
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? 你有没有想去做一个网站，但是却从未有过足够的动力去开始吗? 你有没有想过软件世界太过复杂，即使你想做一些属于自己的东西？
+你有没有觉得这个世界的的科技化程度已经(几乎)越来越难以描述？ 你有没有想去做一个网站，但是却从未有过足够的动力去开始吗? 你有没有想过软件世界太过复杂，即使你想做一些属于自己的东西？
 
 好的，我们跟你讲一个好消息！编程没有看上去那么复杂，我们将给你展示它是多么的有趣。
 
-This tutorial will not magically turn you into a programmer. 如果你想变得擅长于此，你需要数月乃至数年的时间去学习和练习。 但是我们想展示给你编程和创建网站没有看起来那么复杂。 我们试着用深入浅出的方法解释，所以你不会觉得被技术吓到。
+本教程没有让你秒变程序员的魔力。 如果你想变得擅长于此，你需要数月乃至数年的时间去学习和练习。 但是我们想展示给你编程和创建网站没有看起来那么复杂。 我们试着用深入浅出的方法解释，所以你不会觉得被技术吓到。
 
 我们希望我们可以让你变得更爱技术，像我们一样！
 
