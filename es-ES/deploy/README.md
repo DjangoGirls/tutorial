@@ -1,4 +1,4 @@
-# ¡Lanza!
+# ¡Despliega!
 
 > **Nota** El siguiente capítulo puede ser, a veces, un poco difícil de seguir. Se persistente y acábalo. El despliegue es una parte importante del proceso en el desarrollo web. Este capítulo está situado en el medio del tutorial para que tu guía pueda ayudarte a poner tu sitio web en línea, lo que puede ser un proceso algo más complicado. Esto significa que podrás acabar el tutorial por tu cuenta si se te acaba el tiempo.
 
@@ -75,7 +75,7 @@ Y finalmente guardamos nuestros cambios. Ve a tu consola y ejecuta estos comando
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
-    $ git commit -m "My Django Girls app, first commit"
+    $ git commit -m "Mi aplicación Django Girls, primer commit"
      [...]
      13 files changed, 200 insertions(+)
      create mode 100644 .gitignore
@@ -97,9 +97,9 @@ En la siguiente pantalla, se te mostrarán tu enlace de clonado. Escoje la versi
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Ahora necesitas enlazar el repositorio de Git en tu computador al repositorio de github.
 
-Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+Escribe el siguiente comando en tu consola (Reemplaza `<your-github-username>` con el nombre de usuario que ingresaste cuando creaste tu cuenta de Github, pero sin < >):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ Type the following into your console (Replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-Enter your GitHub username and password and you should see something like this:
+Ingresa tu nombre de usuario y contraseña de GitHub y deberías ver algo como:
 
 {% filename %}command-line{% endfilename %}
 
@@ -124,7 +124,7 @@ Enter your GitHub username and password and you should see something like this:
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Tu código ahora está en GitHub. ¡Ve y verificalo! Encontrarás que algunas compañias como - [Django](https://github.com/django/django)[Django Girst Tutorial](https://github.com/DjangoGirls/tutorial), y muchas otros proyectos grandes de software libre están alojados en GitHub. :)
 
 # Setting up our blog on PythonAnywhere
 
