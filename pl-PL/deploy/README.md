@@ -94,13 +94,13 @@ Następnie utwórz nowe repozytorium i nadaj mu nazwę "my-first-blog" (ang. "m�
 
 > **Uwaga** Nazwa `my-first-blog` jest ważna - mogłabyś wybrać jakąś inną, ale będziemy tej nazwy używać wiele razy i za każdym razem musiałabyś pamiętać, żeby zastępować "my-first-blog" swoją wybraną nazwą. Z tego powodu najłatwiej będzie jak użyjesz nazwy `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+Na następnej stronie wyświetli Ci się adres URL do klonowania Twojego repozytorium. Wybierz wersję "HTTPS", skopiuj go i niedługo będziemy go wklejać do terminala:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Teraz musimy podpiąć repozytorium Git na komputerze do tego na GitHubie.
 
-Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+Wpisz następujące polecenie do konsoli (Zamień `<your-github-username>` na swoją nazwę użytkownika, którą podałaś przy tworzeniu konta na GitHubie, ale bez nawiasów ostrokątnych, czyli "<" i ">"):
 
 {% filename %}command-line{% endfilename %}
 
@@ -129,13 +129,13 @@ Twój kod jest teraz na GitHubie. Możesz to sprawdzić! Zważ, że znajduje si�
 
 # Wdrażanie bloga na PythonAnywhere
 
-## Sign up for a PythonAnywhere account
+## Zakładanie konta na PythonAnywhere
 
 > **Uwaga** Możliwe, że już wcześniej utworzyłaś konto na PythonAnywhere, jeśli przeszłaś przez wszystkie kroki w rozdziale instalacyjnym - nie ma potrzeby, byś robiła to drugi raz.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## Konfigurowanie naszej strony w PythonAnywhere
 
 Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
