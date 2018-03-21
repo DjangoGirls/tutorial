@@ -298,8 +298,8 @@ Zapisz te pliki i odśwież swoją stronę.
 
 Woohoo! Wygląda to niesamowicie, prawda? Sprawdź w kodzie, który przed chwilą wkleiłyśmy i poszukaj miejsc, w których dodałyśmy klasy w HTML oraz użyłyśmy ich w CSS. Gdzie dokonałabyś zmiany, gdybyś chciała, by data była w kolorze turkusowym?
 
-Nie bój się trochę pomajstrować w CSS próbując zmienić niektóre rzeczy. Zabawa z CSS pozwoli Ci lepiej zrozumieć, co różne rzeczy robią. Niczym się nie przejmuj, jeżeli coś zepsujesz - zawsze przecież można cofnąć zmiany!
+Nie bój się trochę pomajstrować w CSS próbując zmienić niektóre rzeczy. Zabawa z CSS pozwoli Ci lepiej zrozumieć, co robią różne rzeczy. Niczym się nie przejmuj, jeżeli coś zepsujesz - zawsze przecież można cofnąć zmiany!
 
-Naprawdę zalecamy wzięcie udziału w darmowym kursie online [Codeacademy HTML & CSS](https://www.codecademy.com/tracks/web). Pomoże on Tobie nauczyć się wszystkiego, czego potrzebujesz by upiększyć twoje strony za pomocą CSS.
+Naprawdę zalecamy wzięcie udziału w darmowym kursie online [Codeacademy HTML & CSS](https://www.codecademy.com/tracks/web). Pomoże on Tobie nauczyć się wszystkiego, czego potrzebujesz, by upiększyć twoje strony za pomocą CSS.
 
 Gotowa na następny rozdział?! :)
