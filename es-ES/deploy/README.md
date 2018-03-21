@@ -85,13 +85,13 @@ Y finalmente guardamos nuestros cambios. Ve a tu consola y ejecuta estos comando
 
 ## Colocando tu código en Github
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+Ve a [GitHub.com](https://www.github.com) y registrate para una nueva cuenta gratuita. (Si ya hiciste esto en la preparación del taller, ¡esta genial!)
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Entonces, crea un nuevo repositorio dándole el nombre "my-first-blog". Deja el cuadro de chequeo "initialize with a README" sin validar, deja la opción de .gitignore vacía (ya lo hemos hecho manualmente) y deja la licencia como None.
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+> **Note** El nombre `my-first-blog` es importante - tu puedes escoger algo mas, pero va a ocurrir muchas veces en las instrucciones, y vas a tener que sustituirlo cada vez. Posiblemente sea más fácil quedarte con el nombre `my-first-blog`.
 
 On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
 
