@@ -46,12 +46,12 @@ Vuelve a tu navegador. Ingresa con las credenciales de super usuario que tu esco
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+Ve a Post y experimenta un como con él. Agrega cinco o seis posts para tu blog. No te preocupes sobre el contenido - simplemente puedes copiar y pegar algunas palabras de este tutorial para ahorrar tiempo. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Asegúrate de que al menos dos o tres posts (pero no todos) tengan la fecha de publicación definida. Esto será muy poderoso después.
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Si quieres saber mas sobre el administrador de Django, deberías ver la documentación de Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Este posiblemente sea un buen momento para tomar un café (o te) o algo para comer y re energizar tu cuerpo. Has creado tu primer modelo en Django - ¡Mereces un pequeño descanso!
