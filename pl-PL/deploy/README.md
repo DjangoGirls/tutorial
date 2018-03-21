@@ -212,10 +212,10 @@ Są tam też dostępne [generalne porady odnośnie debugowania na stronie pomocy
 
 I pamiętaj, Twój mentor jest tutaj, by Ci pomóc!
 
-# Check out your site!
+# Sprawdź swoją stronę!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+Domyślna strona Twojej witryny powinna brzmieć "It worked!", tak jak na Twoim lokalnym komputerze. Spróbuj dodać `/admin/` na koniec swojego adresu URL, powinnaś się przenieść do panelu admina. Zaloguj się przy użyciu nazwy użytkownika i hasła, a zobaczysz, że możesz dodawać nowe posty na serwerze.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Po utworzeniu kilku postów możesz wrócić do konfiguracji lokalnej (nie PythonAnywhere). From here you should work on your local setup to make changes. To częsty sposób pracy w rozwijaniu stron www - wprowadzaj zmiany lokalnie, wypychaj je na GitHuba i zaciągaj na swój internetowy serwer www. This allows you to work and experiment without breaking your live Web site. Całkiem nieźle, co nie?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+Give yourself a *HUGE* pat on the back! Wdrożenia serwerów są jednym z najtrudniejszych elementów tworzenia stron internetowych i często ludzie potrzebują kilku dni, zanim zaczną działać. But you've got your site live, on the real Internet, just like that!
