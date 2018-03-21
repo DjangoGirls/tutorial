@@ -4,7 +4,7 @@
 
 Hasta ahora, tu sitio sólo está disponible en tu computadora. ¡Ahora aprenderás como desplegarlo! El lanzamiento es el proceso de publicar tu aplicación en internet para que la gente pueda acceder y ver tu aplicación. :)
 
-Como ya has aprendido, un sitio web tiene que estar en un servidor. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Como ya has aprendido, un sitio web tiene que estar en un servidor. Existen muchos proveedores de servidores disponibles en internet, nosotros vamos a usar [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere es gratis para aplicaciones pequeñas que no tienen muchos visitantes, y eso será definitivamente suficiente para ti por ahora.
 
 El otro servicio externo que vamos a utilizar es [GitHub](https://www.github.com), un servicio de alojamiento de código. Hay otras opciones por ahí, pero hoy en día casi todas las programadoras y programadores tienen una cuenta de GitHub, ¡y ahora tú también la vas a tener!
 
@@ -83,7 +83,7 @@ Y finalmente guardamos nuestros cambios. Ve a tu consola y ejecuta estos comando
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Colocando tu código en Github
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
 
