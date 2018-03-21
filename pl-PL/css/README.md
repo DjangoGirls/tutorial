@@ -179,7 +179,7 @@ h1 a {
 
 Wspaniale!
 
-Jak napisałyśmy powyżej, w CSS istnieje koncepcja klas. Pozwalają one nazwać część naszego kodu HTML i aplikować style tylko do tej części, omijając wpływ tych stylów na inne części. To może być super użyteczne! Może masz w dwa divy, które odpowiadają za coś innego (jak nasz header lub post). Klasa pomoże nam, gdy będziemy chciały by wyglądały one inaczej.
+Jak napisałyśmy powyżej, w CSS istnieje koncepcja klas. Pozwalają one nazwać część naszego kodu HTML i aplikować style tylko do tej części, omijając wpływ tych stylów na inne części. To może być super użyteczne! Może masz dwa divy, które odpowiadają za coś innego (jak nasz header lub post). Klasa pomoże nam, gdy będziemy chciały, by wyglądały one inaczej.
 
 Śmiało! Nazwijmy kilka części Twojego kodu HTML. Dodaj klasę nazwaną `page-header` do Twojego `div` który zawiera nagłówek:
 
@@ -296,7 +296,7 @@ Zapisz te pliki i odśwież swoją stronę.
 
 ![Rysunek 14.4](images/final.png)
 
-Woohoo! Wygląda to niesamowicie, prawda? Sprawdź w kodzie, który przed chwilą wkleiłyśmy i poszukaj miejsc, w których dodałyśmy klasy w HTML oraz użyłyśmy ich w CSS. Gdzie dokonałabyś zmiany, gdybyś chciała, by data była turkusowa?
+Woohoo! Wygląda to niesamowicie, prawda? Sprawdź w kodzie, który przed chwilą wkleiłyśmy i poszukaj miejsc, w których dodałyśmy klasy w HTML oraz użyłyśmy ich w CSS. Gdzie dokonałabyś zmiany, gdybyś chciała, by data była w kolorze turkusowym?
 
 Nie bój się trochę pomajstrować w CSS próbując zmienić niektóre rzeczy. Zabawa z CSS pozwoli Ci lepiej zrozumieć, co różne rzeczy robią. Niczym się nie przejmuj, jeżeli coś zepsujesz - zawsze przecież można cofnąć zmiany!
 
