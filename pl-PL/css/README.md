@@ -104,7 +104,7 @@ Tutaj ładujemy pliki statyczne :) Pomiędzy tagami `<head>` oraz `</head>`, po 
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Przeglądarka czyta pliki w takiej kolejności, w jakiej zostały jej podane, więc musimy się upewnić, że linię dodałyśmy w odpowiednim miejscu. Inaczej kod w naszym pliku może zostać nadpisany przez pliki Bootstrapa. Właśnie pokazaliśmy naszemu szablonowi gdzie znajduje się nasz plik CSS.
+Przeglądarka czyta pliki w takiej kolejności, w jakiej zostały jej podane, więc musimy się upewnić, że linię dodałyśmy w odpowiednim miejscu. Inaczej kod w naszym pliku może zostać nadpisany przez pliki Bootstrapa. Właśnie pokazaliśmy naszemu szablonowi, gdzie znajduje się nasz plik CSS.
 
 Twój plik powinien teraz wyglądać tak:
 
