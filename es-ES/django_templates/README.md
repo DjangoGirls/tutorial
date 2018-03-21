@@ -6,13 +6,13 @@
 
 Verás, en HTML no se puede escribir código en Python porque los navegadores no lo entienden. Sólo saben HTML. Sabemos que HTML es bastante estático, mientras que Python es mucho más dinámico.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+Las **etiquetas de plantilla de Django** nos permiten insertar elementos de Python dentro del HTML, para que puedas construir sitios web dinámicos más rápida y fácilmente. ¡Genial!
 
-## Mostrar la plantilla post list
+## Mostrar la plantilla lista de posts
 
 En el capítulo anterior le dimos a nuestra plantilla una lista de entradas en la variable `posts`. Ahora la vamos a mostrar en HTML.
 
-Para imprimir una variable en una plantilla de Django, utilizamos llaves dobles con el nombre de la variable dentro, así:
+Para imprimir una variable en una plantilla de Django, utilizamos llaves dobles con el nombre de la variable dentro, algo así:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -56,7 +56,7 @@ Prueba esto en tu plantilla.
 
 ![Figura 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Estamos accediendo a los datos en cada uno de los campos definidos en nuestro modelo `Post`. También el `|linebreaksbr` está pasando el texto de los post a través de un filtro para convertir saltos de línea en párrafos.
+¿Has notado que utilizamos una notación diferente esta vez (`{{ post.title }}` o `{{ post.text }}`)? Estamos accediendo a los datos en cada uno de los campos definidos en nuestro modelo `Post`. También el `|linebreaksbr` está pasando el texto de los post a través de un filtro para convertir saltos de línea en párrafos.
 
 ## Una cosa más
 
