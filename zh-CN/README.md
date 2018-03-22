@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> 这项翻译工作的许可证书使用的是 Creative Commons Attribution-ShareAlike 4.0 International License。想查看此证书的副本，请参阅https://creativecommons.org/licenses/by-sa/4.0/
 
 ## 欢迎
 
@@ -48,4 +48,4 @@ Ok,[那让我们从头开始吧...](./how_the_internet_works/README.md)
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+如果你使用的语言没有列在 [crowdin](https://crowdin.com/)上，请[open a new issue](https://github.com/DjangoGirls/tutorial/issues/new)通知我们，我们将会添加此语言。
