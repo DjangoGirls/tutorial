@@ -4,17 +4,17 @@
 
 > Parte de este capítulo se basa en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+¡Escribamos algo de código!
 
 ## El prompt de Python
 
 > Para los lectores en casa: esta parte está cubierta en el video [conceptos básicos de Python: enteros, cadenas, listas, variables y errores](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Para empezar a jugar con Python, tenemos que abrir una *línea de comandos* en nuestra computadora. Ya deberías saber cómo hacerlo, pues lo aprendiste en el capítulo de [Introducción a la línea de comandos](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+Una vez que estés lista, sigue las siguientes instrucciones.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Queremos abrir una consola de Python, así que escribe `python` en Windows o `python3` en Mac OS/Linux y pulsa `intro`.
 
 {% filename %}command-line{% endfilename %}
 
