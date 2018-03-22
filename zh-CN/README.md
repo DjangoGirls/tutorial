@@ -30,11 +30,11 @@
 
 > If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). 我们要求我们的教练以及之前的参与者时不时到那里去，帮助其他人参与本教程！ 不要担心什么，尽管大胆地提问吧！
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+Ok,[那让我们从头开始吧...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## 在家学习本教程
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+如果能参加Django Girls实习班将是非常美妙的事情，但不一定总是有机会能参加。 所以我们鼓励你尝试在家里学习此教程。 对于在家学习本教程的那些读者，我们正在制作一些视频，以方便你能更好的自学本教程。 It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
