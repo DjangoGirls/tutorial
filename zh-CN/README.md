@@ -4,7 +4,7 @@
 
 > This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-## Welcome
+## 欢迎
 
 欢迎来到Django Girls教程！ 很高兴您能使用本教程 :) 在本教程中，我们将带您踏上神奇的网络开发之旅，并将向您简要地传授网络开发的方方面面，以便像我们了解的那样，进行网络开发工作。
 
@@ -28,23 +28,23 @@
 
 ![图0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). 我们要求我们的教练以及之前的参与者时不时到那里去，帮助其他人参与本教程！ 不要担心什么，尽管大胆地提问吧！
+> 如果你独自学习这个教程而苦于没有一位能帮你答疑解惑的的教练，我们给你提供交流的平台：[!( Chat. svg)![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)。 我们要求我们的教练以及之前的参与者时不时到那里去，帮助其他人参与本教程！ 不要担心什么，尽管大胆地提问吧！
 
 Ok,[那让我们从头开始吧...](./how_the_internet_works/README.md)
 
 ## 在家学习本教程
 
-如果能参加Django Girls实习班将是非常美妙的事情，但不一定总是有机会能参加。 所以我们鼓励你尝试在家里学习此教程。 对于在家学习本教程的那些读者，我们正在制作一些视频，以方便你能更好的自学本教程。 It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+如果能参加Django Girls实习班将是非常美妙的事情，但不一定总是有机会能参加。 所以我们鼓励你尝试在家里学习此教程。 对于在家学习本教程的那些读者，我们正在制作一些视频，以方便你能更好的自学本教程。 这项工作正在进行中，但是越来越多的内容将会添加到 [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)视频中，你可以通过YouTube频道观看。
 
-In every chapter already covered, there is a link that points to the correct video.
+在已经涵盖的每一章中, 都有一个指向正确视频的链接。
 
 ## 关于和贡献
 
 这个教程由[DjangoGirls](https://djangogirls.org/)维护。 如果你发现本网有任何错误或想更新教程，请按照 [贡献指导](https://github. com/DjangoGirls/tutorial/blob/master/Contributing. md)行动.
 
-## Would you like to help us translate the tutorial into other languages?
+## 你是否愿意帮助我们把本教程翻译成其他的语言呢？
 
-Currently, translations are being kept on crowdin.com platform at:
+现在，翻译工作正在crowdin.com 平台上进行：
 
 https://crowdin.com/project/django-girls-tutorial
 
