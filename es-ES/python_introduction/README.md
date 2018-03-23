@@ -127,24 +127,24 @@ Si quieres saber el número de letras que contiene tu nombre, ¡también hay una
 3
 ```
 
-Te preguntarás ¿por qué a veces se invoca a las funciones con un `.` al final de una cadena (como `"Ola".upper()`) y a veces se invoca a la función colocando la cadena entre paréntesis? Bueno, en algunos casos las funciones pertenecen a los objetos, como `upper()`, que sólo puede ser utilizada sobre cadenas. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Te preguntarás ¿por qué a veces se invoca a las funciones con un `.` al final de una cadena (como `"Ola".upper()`) y a veces se invoca a la función colocando la cadena entre paréntesis? Bueno, en algunos casos las funciones pertenecen a los objetos, como `upper()`, que sólo puede ser utilizada sobre cadenas. En este caso, a la función le llamamos **método**. Otra veces, las funciones no pertenecen a ningún objeto específico y pueden ser usadas en diferentes objetos, como `len()`. Esta es la razón de por qué estamos pasando `"Ola"` como un parámetro a la función `len`.
 
 ### Resumen
 
-OK, enough of strings. So far you've learned about:
+Ok, es suficiente sobre las cadenas. Hasta ahora has aprendido sobre:
 
 - **la terminal** - teclear comandos (código) en la terminal de Python resulta en respuestas de Python
 - **números y strings** - en Python los números son usados para matemáticas y strings (cadenas de caracteres) para objetos de texto
 - **operadores** - como `+` y `*`, combinan valores para producir uno nuevo
 - **funciones** - como `upper()` y `len()`, ejecutan acciones sobre los objetos.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Estos son los conocimientos básicos que puedes aprender de cualquier lenguaje de programación. ¿Lista para algo más difícil? ¡Seguro que lo estás!
 
 ## Errores
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Vamos a intentar algo nuevo. ¿Podemos obtener la longitud de un número de la misma manera que pudimos averiguar la longitud de nuestro nombre? Escribe `len(304023)` y pulsa `enter`:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+¡Pues tenemos nuestro primer error! El icono de {{ warning_icon }} es nuestra manera de darte un aviso de que el código que estás ejecutando no funciona como se espera. ¡Cometer errores (incluso algunos intencionales) son una parte importante del aprendizaje!
 
 It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
