@@ -6,7 +6,7 @@
 
 ¡Escribamos algo de código!
 
-## El prompt de Python
+## La consola de Python
 
 > Para los lectores en casa: esta parte está cubierta en el video [conceptos básicos de Python: enteros, cadenas, listas, variables y errores](https://www.youtube.com/watch?v=MO63L4s-20U).
 
@@ -26,7 +26,7 @@ Queremos abrir una consola de Python, así que escribe `python` en Windows o `py
 
 ## ¡Tu primer comando en Python!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Después de ejecutar el comando de Python, el cursor cambiará a `>>>`. Para nosotros esto significa que por ahora sólo podemos utilizar comandos del lenguaje Python. No tienes que escribir el `>>>` pues Python lo hará por ti.
 
 If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
