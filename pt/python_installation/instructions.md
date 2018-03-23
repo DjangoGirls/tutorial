@@ -104,4 +104,4 @@ Python 3.5.1
 
 ----
 
-Se você tiver qualquer dúvida, ou se alguma coisa sair errado e você não tem ideia do que fazer, por favor pergunte ao seu treinador! Algumas vezes as coisas não correm de maneira fluida e é melhor pedir ajuda a alguém com mais experiência.
+Se você tiver qualquer dúvida, ou se alguma coisa sair errada e você não tem ideia do que fazer, por favor pergunte a sua treinadora! Algumas vezes as coisas não correm de maneira fluida e é melhor pedir ajuda a alguém com mais experiência.

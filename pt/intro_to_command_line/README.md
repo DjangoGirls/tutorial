@@ -4,7 +4,7 @@
 
 **Deixe-nos apresentá-la a sua primeira nova amiga: a linha de comando!**
 
-As etapas a seguir mostrarão a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas, na verdade, é apenas um prompt esperando por comandos seus.
+As etapas a seguir mostrarão a você como usar a janela preta que todas hackers usam. Pode parecer um pouco assustador no começo, mas, na verdade, é apenas um *prompt* que espera por comandos seus.
 
 ## O que é uma linha de comando?
 
@@ -79,7 +79,7 @@ $ whoami
 ```
 <!--endsec-->
 
-Depois aperte o `Enter`. Esse é o nosso resultado:
+Depois aperte o `Enter`. Essa é a nossa saída:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -87,19 +87,7 @@ $ whoami
 seunome
 ```
 
-Como você pode ver, o computador acabou de apresentar seu nome de usuário. Elegante, não é? :)
-=======
-<!--endsec-->
-
-Depois tecle Enter. Essa é nossa saída:
-
-{% filename %}command-line{% endfilename %}
-```
-$ whoami
-seunome
-```
-
-Como você pode ver, o computador só apresentou seu nome de usuária. Elegante, né?:)
+Como você pode ver, o computador acabou de apresentar seu nome de usuária. Elegante, né? :)
 
 > Tente digitar cada comando, não copiar e colar. Você vai se lembrar mais facilmente dessa forma!
 
@@ -145,7 +133,7 @@ Provavelmente você vai ver algo parecido na sua máquina. Geralmente, uma vez q
 
 ### Listando arquivos e pastas
 
-Então o que tem nele? Seria legal descobrir. Vamos ver:
+Então o que tem ali? Seria legal descobrir. Vamos ver:
 
 <!--sec data-title="OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -408,7 +396,7 @@ Aqui vai uma lista de alguns comandos úteis:
 
 Estes são apenas alguns dos poucos comandos que você pode executar em sua linha de comando, mas você não vai usar nada além disso hoje.
 
-Se você estiver curioso, [ss64.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
+Se você estiver curiosa, [ss64.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
 
 ## Pronta?
 

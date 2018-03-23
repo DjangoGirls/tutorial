@@ -6,11 +6,11 @@ Vamos escrever um pouco de código!
 
 ## Interpretador Python
 
-> Leitores em casa: essa parte está disponível no vídeo (em inglês) [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
+> Leitoras em casa: essa parte está disponível no vídeo (em inglês) [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
 Para começar a brincar com Python nós precisamos abrir uma *linha de comando* no seu computador. Você já deve saber como fazer isso - você aprendeu no capítulo [Introdução à Linha de Comando](../intro_to_command_line/README.md).
 
-Assim que estiver pronto, siga as instruções abaixo.
+Assim que estiver pronta, siga as instruções abaixo.
 
 Nós queremos abrir o Python em um terminal, então digite `python` no Windows, `python3` no Mac OS/Linux, e tecle `Enter`.
 
@@ -24,7 +24,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 ## Seu primeiro comando Python!
 
-Depois de executar o comando Python, o prompt mudou para `>>>`. Para nós, isso significa que por enquanto só utilizaremos comandos na linguagem Python. Você não precisa digitar `>>>` - O Python fará isso por você.
+Depois de executar o comando Python, o prompt mudou para `>>>`. Para nós, isso significa que por enquanto só utilizaremos comandos na linguagem Python. Você não precisa digitar `>>>` - o próprio Python fará isso por você.
 
 Se você deseja sair do console do Python, apenas digite `exit()` ou use o atalho `Ctrl + Z` no Windows e `Ctrl + D` no Mac/Linux. Então você não vai ver mais o `>>>`.
 
@@ -129,7 +129,7 @@ OK, chega de strings. Até agora você aprendeu sobre:
 *   **operadores** - como `+` e `\*`, combinam valores para produzir um novo valor
 *   **métodos** - como `upper()` e `len()`, executam ações nos objetos.
 
-Isso é o básico sobre todas as linguagens de programação que você for aprender. Pronto para algo mais difícil? Apostamos que sim!
+Isso é o básico sobre todas as linguagens de programação que você for aprender. Pronta para algo mais difícil? Apostamos que sim!
 
 ## Erros
 
@@ -161,7 +161,7 @@ forma, o que `int('hello')` quer dizer?
 
 ## Variáveis
 
-Um conceito importante na programação é o conceito de variáveis. Uma variável não é nada mais do que um nome para alguma coisa, de tal forma que você possa usá-la mais tarde. Os programadores usam essas variáveis para guardar dados, para fazer seus códigos mais legíveis e para não ter que se lembrar sempre o que algumas coisas significam.
+Um conceito importante na programação é o conceito de variáveis. Uma variável não é nada mais do que um nome para alguma coisa, de tal forma que você possa usá-la mais tarde. As programadoras usam essas variáveis para guardar dados, para fazer seus códigos mais legíveis e para não ter que se lembrar sempre o que algumas coisas significam.
 
 Digamos que queremos criar uma nova variável chamada `nome`:
 
@@ -180,7 +180,7 @@ Como você percebeu, seu programa não retornou nada como fez anteriormente. Ent
 'Ana'
 ```
 
-Hurra! Sua primeira variável! :) Você sempre pode mudar o seu valor:
+Oba! Sua primeira variável! :) Você sempre pode mudar o seu valor:
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -336,7 +336,7 @@ Você pode encontrar uma lista de todos os métodos disponíveis neste capítulo
 
 ## Dicionários
 
-> Leitores em casa: essa parte está disponível no vídeo (em inglês) [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
+> Leitoras em casa: essa parte está disponível no vídeo (em inglês) [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
 Um dicionário é semelhante a uma lista, mas você pode acessar valores através de uma chave ao invés de um índice. Uma chave pode ser qualquer string ou número. A sintaxe para definir um dicionário vazio é:
 
@@ -346,7 +346,7 @@ Um dicionário é semelhante a uma lista, mas você pode acessar valores atravé
     {}
 ```    
 
-Isso mostra que você acabou de criar um dicionário vazio. Hurra!
+Isso mostra que você acabou de criar um dicionário vazio. Oba!
 
 Agora, tente escrever o seguinte comando (tente substituir com as suas próprias informações também):
 
@@ -424,7 +424,7 @@ Além disso você pode mudar o valor associado com uma chave já criada no dicio
 {'pais': 'Alemanha', 'linguagem_favorita': 'Python', 'nome': 'Ana'}
 ```
 
-Como você pode ver, o valor da chave `'pais'` foi alterado de `'Polonia'` para `'Alemanha'`. :) Emocionante? Hurra! Você acabou de aprender outra coisa incrível.
+Como você pode ver, o valor da chave `'pais'` foi alterado de `'Polonia'` para `'Alemanha'`. :) Emocionante? Oba! Você acabou de aprender outra coisa incrível.
 
 ### Sumário
 
@@ -439,7 +439,7 @@ Empolgada para o próximo passo? :)
 
 ## Compare coisas
 
-> Leitores em casa: essa parte está disponível no vídeo (em inglês) [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
+> Leitoras em casa: essa parte está disponível no vídeo (em inglês) [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
 Grande parte da programação consiste em comparar coisas. O que é mais fácil de comparar? Números, é claro. Vamos ver como isso funciona:
 
@@ -472,7 +472,7 @@ True
 False
 ```
 
-`>` e `<` são fáceis, mas o que `>=` e `<=` significam? Leia eles da seguinte forma:
+`>` e `<` são compreensíveis, mas o que `>=` e `<=` significam? Leia-os da seguinte forma:
 
 - x `>` y significa: x é maior que y
 - x `<` y significa: x é menor que y
@@ -549,7 +549,7 @@ Parabéns! Booleanos são um dos recursos mais interessantes na programação, e
 
 # Salvando o Código!
 
-> Leitores em casa: essa parte está disponível no vídeo (em inglês) [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
+> Leitoras em casa: essa parte está disponível no vídeo (em inglês) [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
 Até agora nós escrevemos todo nosso código em um interpretador python, o que nos limita a uma linha de código a cada momento. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até agora nós executamos nossos programas uma linha de cada vez no **interpretador** Python. Nós vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
 
@@ -575,10 +575,10 @@ Anteriormente, nós escolhemos um editor de código da seção do [editor de có
 print('Hello, Django girls!')
 ```
 
-Obviamente, você agora é uma desenvolvedora Python com alguma experiência, então sinta-se livre para escrever algum código com o que
+Obviamente, agora você é uma desenvolvedora Python com alguma experiência, então sinta-se livre para escrever algum código com o que
 aprendeu hoje.
 
-Agora, nós precisamos salvar o arquivo e nomeá-lo de forma descritiva. Vamos chamar o arquivo de **python_intro.py** e
+Então, nós precisamos salvar o arquivo e nomeá-lo de forma descritiva. Vamos chamar o arquivo de **python_intro.py** e
 salvá-lo em seu desktop. Nós podemos nomeá-lo da maneira que quisermos, mas a parte importante aqui é garantir que termine
 com __.py__. A extensão __.py__ informa ao nosso sistema operacional que o arquivo é um **arquivo Python executável** e
 o Python pode rodá-lo.
@@ -670,7 +670,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Você percebeu que identamos a próxima linha com 4 espaços? Precisamos fazer isso para que o Python saiba qual código será executado se o resultado for True. Você pode fazer com 1 espaço, mas quase todos os programadores Python fazem com 4 para deixar as coisas arrumadas. Um único `tab` também vai contar como 4 espaços.
+Você percebeu que identamos a próxima linha com 4 espaços? Precisamos fazer isso para que o Python saiba qual código será executado se o resultado for True. Você pode fazer com 1 espaço, mas quase todas as programadoras Python fazem com 4 para deixar as coisas arrumadas. Um único `tab` também vai contar como 4 espaços.
 
 Salve o arquivo e execute novamente:
 
@@ -846,10 +846,8 @@ File "python_intro.py", line 10, in <module>
 TypeError: hi() missing 1 required positional argument: 'nome'
 ```
 
-Opa, um erro. Ainda bem que o Python nos dá uma mensagem de erro clara.
-Ela nos informa que a função `hi()` (a que nós definimos) requer um argumento (chamado `nome`) e que nós nos esquecemos de
-passá-lo quando chamamos a função.
-Vamos consertar isso no final do arquivo:
+Opa! Um erro. Ainda bem que o Python sempre nos dá uma mensagem de erro clara. Ela nos informa que a função `hi()` (a que nós definimos) requer um argumento (chamado `nome`) e que nós nos esquecemos de
+passá-lo quando chamamos a função. Vamos consertar isso no final do arquivo:
 
 {% filename %}python_intro.py{% endfilename %}
 ```python
@@ -910,7 +908,7 @@ Parabéns! Você acabou de aprender como escrever funções! :)
 
 ## Laços de repetição
 
-> Leitores em casa: essa parte está disponível no vídeo (em inglês) [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
+> Leitoras em casa: essa parte está disponível no vídeo (em inglês) [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
 Essa já é a última parte. Isso foi rápido, não? :)
 

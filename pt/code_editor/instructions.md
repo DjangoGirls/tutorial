@@ -1,6 +1,6 @@
-Existem muitos editores diferentes e em grande parte se resume a preferência pessoal. A maioria dos programadores Python usa as complexas, mas extremamente poderosas IDEs (Integrated Development Environments, ou em português, Ambiente de desenvolvimento Integrado), tais como PyCharm. Para um iniciante, entretanto, estas IDE's são menos convenientes; nossas recomendações são bem mais simples, porém, igualmente poderosas.
+Existem muitos editores diferentes e em grande parte se resume a preferência pessoal. A maioria das programadoras Python usa as complexas, mas extremamente poderosas IDEs (Integrated Development Environments, ou em português, Ambiente de desenvolvimento Integrado), tais como PyCharm. Para uma iniciante, entretanto, estas IDE's são menos convenientes; nossas recomendações são bem mais simples, porém, igualmente poderosas.
 
-Nossas sugestões estão abaixo, mas sinta-se livre para perguntar à sua treinadora ou treinador quais são as suas preferências - assim vai ser mais fácil obter a ajuda deles.
+Nossas sugestões estão abaixo, mas sinta-se livre para perguntar a sua treinadora quais são as suas preferências - assim vai ser mais fácil obter a ajuda delas.
 
 ## Gedit
 
@@ -30,7 +30,7 @@ O Visual Studio Code, mais conhecido como VS Code é um novo editor de texto cri
 
 ## Atom
 
-Atom é um novo editor de código criado pelo [GitHub][5]. Ele é gratuito, open-source, fácil de instalar e fácil de usar. Está disponível para Windows, OSX e Linux.
+Atom é um novo editor de código criado pelo [GitHub][5]. Ele é software livre, gratuito, open-source, fácil de instalar e fácil de usar. Está disponível para Windows, OSX e Linux.
 
  [5]: https://github.com/
 
@@ -40,7 +40,7 @@ Atom é um novo editor de código criado pelo [GitHub][5]. Ele é gratuito, open
 
 # Por que estamos instalando um editor de código?
 
-Você deve estar se perguntando porque estamos instalando esse software editor de código especial ao invés de usar algo como Word ou Bloco de Notas.
+Você deve estar se perguntando porque estamos instalando esse software editor de código especial em vez de usar algo como Word ou Bloco de Notas.
 
 Primeiro é que código precisa ser **texto sem formatação**, e o problema com programas como Word e Textedit é que eles na verdade não produzem texto sem formatação, eles fazem "rich text" (com fontes e formatação), usando formatos personalizados como RTF.
 
