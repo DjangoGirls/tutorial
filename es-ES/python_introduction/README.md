@@ -28,9 +28,9 @@ Queremos abrir una consola de Python, así que escribe `python` en Windows o `py
 
 Después de ejecutar el comando de Python, el cursor cambiará a `>>>`. Para nosotros esto significa que por ahora sólo podemos utilizar comandos del lenguaje Python. No tienes que escribir el `>>>` pues Python lo hará por ti.
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Si deseas salir de la consola de Python en cualquier momento, simplemente escribe `exit()` o usa el atajo `Ctrl + Z` para Windows y `Ctrl + D` para Mac/Linux. Luego no verás más el `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Por ahora, no queremos salir de la consola de Python. Deseamos aprender más sobre él. Vamos a comenzar escribiendo algunas matemáticas, como `2 + 3` y oprime la tecla `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,26 +39,26 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+¡Qué bien! ¿Ves cómo salió la respuesta? ¡Python sabe matemáticas! Puedes probar otros comandos como:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Para realizar una operación exponencial, digamos 2 elevado al cubo, escribimos: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Diviértete con esto por un momento y luego vuelve aquí. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Como puedes ver, Python es una gran calculadora. Si te estás preguntando qué más puedes hacer…
 
 ## Cadena de caracteres
 
-How about your name? Type your first name in quotes like this:
+¿Qué tal tu nombre? Escribe tu nombre entre comillas, así:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+¡Has creado tu primera cadena de texto! La misma es una secuencia de caracteres que puede ser procesada por una computadora. La cadena de texto (o string, en inglés) debe comenzar y terminar con el mismo carácter. Pueden ser comillas simples (`'`) o dobles (`"`) (¡no hay ninguna diferencia!) Las comillas le dicen a Python que lo que está dentro de ellas es una cadena de texto.
 
-Strings can be strung together. Try this:
+Las cadenas pueden estar concatenadas. Prueba esto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hola Ola'
 ```
 
-You can also multiply strings with a number:
+También puedes multiplicar las cadenas por un número:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Si necesitas poner un apóstrofe dentro de una cadena, hay dos formas de hacerlo.
 
-Using double quotes:
+Usar comillas dobles:
 
 {% filename %}command-line{% endfilename %}
 
