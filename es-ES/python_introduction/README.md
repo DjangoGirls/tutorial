@@ -98,7 +98,7 @@ Usar comillas dobles:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+o escapar el apóstrofe con la diagonal inversa (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+Bien, ¿eh? Para ver tu nombre en letras mayúsculas, sencillamente escribe:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +116,9 @@ Nice, huh? To see your name in uppercase letters, simply type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+¡Acabas de usar el **método** `upper` sobre tu cadena de texto! Un método (como `upper()`) es un conjunto de instrucciones que Python tiene que realizar sobre un objeto determinado (`"Ola"`) una vez que se le invoca.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Si quieres saber el número de letras que contiene tu nombre, ¡también hay una **función** para eso!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Te preguntarás ¿por qué a veces se invoca a las funciones con un `.` al final de una cadena (como `"Ola".upper()`) y a veces se invoca a la función colocando la cadena entre paréntesis? Bueno, en algunos casos las funciones pertenecen a los objetos, como `upper()`, que sólo puede ser utilizada sobre cadenas. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Resumen
 
