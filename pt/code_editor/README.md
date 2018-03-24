@@ -1,6 +1,6 @@
 # Editor de código
 
-> Leitores em casa: este capítulo está disponível em vídeos (inglês) [Instalando o Python e um Editor de Código](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
+> Leitoras em casa: este capítulo está disponível em vídeos (inglês) [Instalando o Python e um Editor de Código](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
 
 Você está prestes a escrever sua primeira linha de código, então chegou a hora de baixar um editor de código!
 
