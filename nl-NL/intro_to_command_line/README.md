@@ -1,6 +1,6 @@
-# Introduction to the command-line interface
+# Introductie van de opdrachtregel
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Voor thuislezers: dit hoofdstuk wordt behandeld in de [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
