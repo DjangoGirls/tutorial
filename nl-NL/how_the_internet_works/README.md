@@ -30,15 +30,15 @@ Het ziet er zo uit:
 
 Stel je voor dat wanneer je naar https://djangogirls.org een brief typt waarin staat: "Beste Django Girls, ik wil de djangogirls.org website zien. Stuur die naar me, alsjeblieft! "
 
-Je brief gaat naar het dichtsbijzijnde postkantoor. Dan gaat 'ie naar een ander postkantoor iets dichter bij de bestemming, dan naar een volgend postkantoor nog wat dichterbij, en weer één daaropvolgend, totdat de brief afgeleverd kan worden op diens eindbestemming. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+Je brief gaat naar het dichtsbijzijnde postkantoor. Dan gaat 'ie naar een ander postkantoor iets dichter bij de bestemming, dan naar een volgend postkantoor nog wat dichterbij, en weer één daaropvolgend, totdat de brief afgeleverd kan worden op diens eindbestemming. Het bijzondere is nu dat als je meerdere brieven stuurt (*data pakketten*) naar dezelfde bestemming, ze via héél verschillende postkantoren (*routers*) kunnen gaan. Dit hangt er maar vanaf hoe ze verdeeld worden op ieder postkantoor.
 
 ![Figure 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+Zo gaat dat - je stuurt berichten en je verwacht een of ander antwoord. Natuurlijk gebruik je bytes met gegevens in plaats van papier en pen, maar het idee erachter is hetzelfde!
 
-Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+In plaats van adressen met een straatnaam, woonplaats, postcode en landnaam gebruiken we IP-adressen. Je computer vraagt eerst aan het DNS (Domein Naam Systeem) om 'djangogirls.org' om te zetten naar een IP-adres. Dat werkt een beetje als een ouderwets telefoonboek waarin je de naam kunt opzoeken van de persoon die je wilt bellen en dan diens telefoonnummer en adres vindt.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
+Als je een brief verstuurt, moet die brief gekenmerkt worden met een adres, een postzegel en dergelijke om goed af te kunnen leveren. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
 
 So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
 
