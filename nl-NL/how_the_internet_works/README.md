@@ -38,10 +38,10 @@ Zo gaat dat - je stuurt berichten en je verwacht een of ander antwoord. Natuurli
 
 In plaats van adressen met een straatnaam, woonplaats, postcode en landnaam gebruiken we IP-adressen. Je computer vraagt eerst aan het DNS (Domein Naam Systeem) om 'djangogirls.org' om te zetten naar een IP-adres. Dat werkt een beetje als een ouderwets telefoonboek waarin je de naam kunt opzoeken van de persoon die je wilt bellen en dan diens telefoonnummer en adres vindt.
 
-Als je een brief verstuurt, moet die brief gekenmerkt worden met een adres, een postzegel en dergelijke om goed af te kunnen leveren. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
+Als je een brief verstuurt, moet die brief gekenmerkt worden met een adres, een postzegel en dergelijke om goed af te kunnen leveren. Je gebruikt ook een taal die de ontvanger begrijpt, nietwaar? Datzelfde geldt voor de *data pakketten* die je verzendt om een website te zien. We gebruiken een werkvoorschrift dat HTTP (Hypertext Transfer Protocol) heet.
 
-So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
+In principe moet je, als je een web site hebt, een *server* (machine) hebben waarop die web site staat. Als de *server* een inkomend *verzoek* ontvangt (in een brief), verstuurt hij de web site terug (in een andere brief).
 
-Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
+Aangezien dit een Django tutorial is, vraag je je misschien af wat Django dan doet. Als je een antwoord verzendt, wil je niet altijd precies hetzelfde naar iedereen sturen. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
 
 Enough talk – time to create!
