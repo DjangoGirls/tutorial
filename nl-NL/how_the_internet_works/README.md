@@ -16,23 +16,23 @@ Ok, maar je wilt weten hoe het internet er uit ziet, nietwaar?
 
 We hebben een plaatje voor jou getekend! Het ziet er zo uit:
 
-![Figure 1.1](images/internet_1.png)
+![Figuur 1.1](images/internet_1.png)
 
 Ziet er uit als een puinhoop, toch? In feite is het een netwerk van aaneengesloten machines (de hierboven genoemde *servers*). Honderdduizenden machines! Vele, vele kilometers kabels over de hele wereld! Je kunt een onderzeeër kabel kaart website bekijken (http://submarinecablemap.com) om te zien hoe ingewikkeld het net is. Hier is een screenshot van de website:
 
-![Figure 1.2](images/internet_3.png)
+![Figuur 1.2](images/internet_3.png)
 
 Het is fascinerend, nietwaar? Maar uiteraard is het niet mogelijk om draden te hebben per machine naar elke andere machine die verbonden is met het Internet. Dus, om een machine te bereiken (bijvoorbeeld degene waarop https://djangogirls.org staat), moeten we een verzoek versturen dat langs vele, vele verschillende machines gaat.
 
 Het ziet er zo uit:
 
-![Figure 1.3](images/internet_2.png)
+![Figuur 1.3](images/internet_2.png)
 
 Stel je voor dat wanneer je naar https://djangogirls.org een brief typt waarin staat: "Beste Django Girls, ik wil de djangogirls.org website zien. Stuur die naar me, alsjeblieft! "
 
 Je brief gaat naar het dichtsbijzijnde postkantoor. Dan gaat 'ie naar een ander postkantoor iets dichter bij de bestemming, dan naar een volgend postkantoor nog wat dichterbij, en weer één daaropvolgend, totdat de brief afgeleverd kan worden op diens eindbestemming. Het bijzondere is nu dat als je meerdere brieven stuurt (*data pakketten*) naar dezelfde bestemming, ze via héél verschillende postkantoren (*routers*) kunnen gaan. Dit hangt er maar vanaf hoe ze verdeeld worden op ieder postkantoor.
 
-![Figure 1.4](images/internet_4.png)
+![Figuur 1.4](images/internet_4.png)
 
 Zo gaat dat - je stuurt berichten en je verwacht een of ander antwoord. Natuurlijk gebruik je bytes met gegevens in plaats van papier en pen, maar het idee erachter is hetzelfde!
 
@@ -42,6 +42,6 @@ Als je een brief verstuurt, moet die brief gekenmerkt worden met een adres, een 
 
 In principe moet je, als je een web site hebt, een *server* (machine) hebben waarop die web site staat. Als de *server* een inkomend *verzoek* ontvangt (in een brief), verstuurt hij de web site terug (in een andere brief).
 
-Aangezien dit een Django tutorial is, vraag je je misschien af wat Django dan doet. Als je een antwoord verzendt, wil je niet altijd precies hetzelfde naar iedereen sturen. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
+Aangezien dit een Django tutorial is, vraag je je misschien af wat Django dan doet. Als je een antwoord verzendt, wil je niet altijd precies hetzelfde naar iedereen sturen. Een persoonlijke touch toevoegen aan de brieven is veel fijner, vooral voor degene die jou net aangeschreven had, toch? Django helpt je met het opstellen van deze persoonlijke, interessante brieven. :)
 
-Enough talk – time to create!
+Genoeg gekletst nu; tijd om iets te maken!
