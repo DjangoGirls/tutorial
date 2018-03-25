@@ -381,7 +381,7 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-¡Mira, otro error! Este es un **KeyError**. Python te ayuda y te dice que la llave `'age'` no existe en este diccionario.
+¡Mira, otro error! Este es un **KeyError**. Python te ayuda y te dice que la clave `'age'` no existe en este diccionario.
 
 ¿Cuando deberías usar un diccionario o una lista? Bueno, es un buen punto para reflexionar. Simplemente ten una solución en mente antes de buscar una respuesta en la siguiente línea.
 
@@ -572,11 +572,11 @@ Anteriormente, elegimos un editor de código en la sección de [Editor de códig
 print('Hello, Django girls!')
 ```
 
-Obviamente, ahora eres una desarrolladora Python muy experimentada, asi que sintete libre de escribir algo del código que has aprendido hoy.
+Obviamente, ahora eres una desarrolladora Python muy experimentada, asi que siéntete libre de escribir algo del código que has aprendido hoy.
 
 Ahora tenemos que guardar el archivo y asignarle un nombre descriptivo. Vamos a llamar al archivo **python_intro.py** y guardarlo en tu escritorio. Podemos nombrar el archivo como queramos, pero la parte importante es asegurarse de que termina en __.py__. La extensión __.py__ le dice a nuestro sistema operativo que es un __archivo ejecutable de Python__ y que Python puede correrlo.
 
-> **Nota** Deberías notar una de las cosas más geniales de los editores de código: ¡los colores! En cla consola de Python, todo era del mismo color, ahora deberías ver que la función `print` es de un color diferente de las cadenas dentro de ella. Esto se denomina "sintaxis resaltada", y es una característica muy útil cuando se programa. El color de las cosas te dará pistas, como cadenas no cerradas o errores tipográficos en un nombre clave (como la función `def`, que veremos a continuación). Esta es una de las razones por las cuales usar un editor de código :)
+> **Nota** Deberías notar una de las cosas más geniales de los editores de código: ¡los colores! En la consola de Python, todo era del mismo color, ahora deberías ver que la función `print` es de un color diferente de las cadenas dentro de ella. Esto se denomina "sintaxis resaltada", y es una característica muy útil cuando se programa. El color de las cosas te dará pistas, como cadenas no cerradas o errores tipográficos en un nombre clave (como la función `def`, que veremos a continuación). Esta es una de las razones por las cuales usar un editor de código :)
 
 
 Con el archivo guardado, ¡es hora de ejecutarlo! Utilizando las habilidades que has aprendido en la sección de línea de comandos, utiliza la terminal para **cambiar los directorios** e ir al escritorio.
