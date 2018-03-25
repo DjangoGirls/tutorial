@@ -28,9 +28,9 @@ Het ziet er zo uit:
 
 ![Figure 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+Stel je voor dat wanneer je naar https://djangogirls.org een brief typt waarin staat: "Beste Django Girls, ik wil de djangogirls.org website zien. Stuur die naar me, alsjeblieft! "
 
-Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+Je brief gaat naar het dichtsbijzijnde postkantoor. Dan gaat 'ie naar een ander postkantoor iets dichter bij de bestemming, dan naar een volgend postkantoor nog wat dichterbij, en weer één daaropvolgend, totdat de brief afgeleverd kan worden op diens eindbestemming. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
 
 ![Figure 1.4](images/internet_4.png)
 
