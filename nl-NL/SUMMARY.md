@@ -4,7 +4,7 @@
 * [Installatie](installation/README.md)
 * [Installatie (op Chromebook)](chromebook_setup/README.md)
 * [Hoe het internet werkt](how_the_internet_works/README.md)
-* [Introductie van de Command Line](intro_to_command_line/README.md)
+* [Introductie van de opdrachtregel](intro_to_command_line/README.md)
 * [Installatie van Python](python_installation/README.md)
 * [Code editor](code_editor/README.md)
 * [Introductie Python](python_introduction/README.md)
