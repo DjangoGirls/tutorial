@@ -74,7 +74,7 @@ En el tutorial, cuando queremos escribir un comando, incluiremos el `$` o `>` y 
 
 ## Tu primer comando (¡BIEN!)
 
-Let's start by typing this command:
+Comencemos escribiendo este comando:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
