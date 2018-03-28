@@ -99,7 +99,7 @@ Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz wiersz poleceń 
     Python 3.6.1
     
 
-**Uwaga:** Jeżeli pracujesz na Windowsie i dostajesz wiadomość o błędzie, że `python3` nie został znaleziony, spróbuj użyć `python` (bez`3`) oraz sprawdź czy być może w taki sposób uruchomisz Pythona 3.6.
+**Uwaga:** Jeżeli pracujesz na Windowsie i dostajesz wiadomość o błędzie, że `python3` nie został znaleziony, spróbuj użyć `python` (bez `3`) oraz sprawdź czy być może w taki sposób uruchomisz Pythona 3.6.
 
 * * *
 
