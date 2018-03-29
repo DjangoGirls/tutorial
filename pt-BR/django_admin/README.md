@@ -23,7 +23,7 @@ Para fazer login, você precisa criar um *superusuário (superuser)* - uma conta
 
 > Lembre-se, para escrever novos comandos enquanto o servidor web está rodando, abra uma nova janela do terminal e ative seu virtualenv. Nós revisamos como escrever novos comandos no capítulo **Seu primeiro projeto Django!**, na seção **Iniciando o servidor web**.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}Mac OS X ou Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     
@@ -33,7 +33,7 @@ Para fazer login, você precisa criar um *superusuário (superuser)* - uma conta
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+When prompted, type your username (lowercase, no spaces), email address, and password. **Não se preocupe se você não consegue ver a senha que está digitando – é assim que tem ser.** Só digitá-la e pressionar `enter` para continuar. The output should look like this (where the username and email should be your own ones):
 
     Username: admin
     Email address: admin@admin.com
@@ -42,16 +42,16 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Volte ao seu navegador. Faça login com as credenciais de superusuário que você escolheu; você deverá ver o painel de controle de administração do Django.
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+Vá para Posts e experimente um pouco por lá. Adicione cinco ou seis posts. Não se preocupe com o conteúdo - você pode simplesmente copiar e colar algum texto desse tutorial para economizar tempo. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Certifique-se que pelo menos duas ou três postagens (mas não todas) têm a data de publicação definida. Isso será útil depois.
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Se você quiser saber mais sobre o Django admin, você precisa conferir a documentação do Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Esse provavelmente é um bom momento para pegar um café (ou chá) ou algo para comer para recuperar as energias. Você criou seu primeiro modelo em Django - você merece uma pausa!
