@@ -4,7 +4,7 @@
 > 
 > This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Biztosan minden nap internetezel. De tudod, igazából mi történik, mikor beírod a böngésződbe, hogy https://djangogirls.org, és `enter`t nyomsz?
 
 Az első dolog, amit fontos megérteni, hogy egy weboldal nem más, mint egy csomó fájl egy merevlemezre mentve. Olyanok, mint a filmjeid, a zenéid, vagy a képeid. De van valami, ami a weboldalakat egyedivé teszi: a HTML nevű számítógépes kód.
 
