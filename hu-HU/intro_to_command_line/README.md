@@ -66,7 +66,7 @@ A Windows-on ez egy `>` jel:
 
 Minden sornak ezzel a jellel és az azt követő space-el kell kezdődnie, de ezt nem neked kell begépelned. A számítógéped megteszi helyetted. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Csak egy gyors megjegyzés: így is kinézhet a parancssorod: `C:\Users\ola>` vagy `Olas-MacBook-Air:~ ola$`, de ez teljesen jó így. A parancssor nagyon sokféleképpen nézhet ki. Ebben a leírásban a sajátunkat mutatjuk, de a tied nem biztos, hogy ilyen.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
