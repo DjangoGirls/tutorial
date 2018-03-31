@@ -103,4 +103,4 @@ Verify the installation was successful by opening a command prompt and running t
 
 * * *
 
-Ha kétségei vannak, vagy, ha valami rosszul sikerült, s fogalmad sincs, mi a következő teendő, kérjük, az edző! Néha a dolgok nem mennek teljesen simán, és jobb megkérdezni valakit, akinek több tapasztalata van a témában.
+Ha kétségeid vannak, vagy valami elromlott, és nem tudod, mit csinálj - csak kérdezd meg a coachodat! Néha a dolgok nem mennek teljesen simán, és jobb megkérdezni valakit, akinek több tapasztalata van a témában.
