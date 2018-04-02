@@ -2,13 +2,13 @@
 
 Te estarás preguntando, ¿qué es una plantilla?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Una plantilla es un archivo que podemos reutilizar para presentar información diferente de forma consistente - por ejemplo, podrías utilizar una plantilla para ayudarte a escribir una carta, porque aunque cada carta puede contener un mensaje distinto y dirigirse a una persona diferente, compartirán el mismo formato.
 
 El formato de una plantilla de Django se describe en un lenguaje llamado HTML (el HTML que mencionamos en el primer capítulo **Cómo funciona Internet**).
 
 ## ¿Qué es HTML?
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML es un código simple que es interpretado por tu navegador web - como Chrome, Firefox o Safari - para mostrar una página web al usuario.
 
 HTML significa HyperText Markup Language - en español, Lenguaje de Marcas de HyperTexto. **HyperText** -hipertexto en español- significa que es un tipo de texto que soporta hipervínculos entre páginas. **Markup** significa que hemos tomado un documento y lo hemos marcado con código para decirle a algo (en este caso, un navegador) cómo interpretar la página. El código HTML está construido con **etiquetas**, cada una comenzando con `<` y terminando con `>`. Estas etiquetas representan **elementos** de marcado.
 
