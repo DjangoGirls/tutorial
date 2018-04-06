@@ -28,23 +28,23 @@ Acesta va arăta (mai mult sau mai puţin) astfel:
 
 ![Figura 0.1](images/application.png)
 
-> Dacă lucrezi cu tutorialul de sine stătător şi nu ai un mentor care te va ajuta în caz că apar ceva dificultăți, îți propunem un chat pentru tine, fii liberă să te familiarizezi acolo: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Dacă lucrezi cu tutorialul de sine stătător şi nu ai un mentor care te va ajuta în caz că apar ceva dificultăți, îți propunem un chat pentru tine, fii liberă să te familiarizezi acolo: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Am rugat mentorii noștri și participantele Django Girls să intre pe chat din timp în timp și să ajute pe alții cu tutorialul! Nu îți fie teamă să adresezi întrebările tale acolo!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+OK, [să începem de la început...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Dacă urmezi tutorialul de acasă
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Este fantastic să iei parte la un atelier Django Girls, dar suntem conştienţi de faptul că nu este întotdeauna posibil de a participa la unul ca acesta. De aceea, îți recomandăm să încerci acest tutorial chiar de acasă. Pentru cei care ne citesc de acasă, ne pregătim să facem videoclipuri care vor facilita urmărirea acestui tutorial. Ideea este în curs de desfăşurare, dar mai multe şi mai multe lucruri vor fi acoperite în curând pe canalul de YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-In every chapter already covered, there is a link that points to the correct video.
+În capitolele unde există un videoclip, este afișat linkul spre canalul Youtube cu video-ul concret.
 
-## About and contributing
+## Despre şi contribuții
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Acest tutorial este susținut de [DjangoGirls](https://djangogirls.org/). Dacă găsești careva greşeli sau vrei să actualizezi acest tutorial, te rugăm să [urmezi îndrumările de contribuție](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Dorești să ne ajuți să traducem tutorialul în alte limbi?
 
-Currently, translations are being kept on crowdin.com platform at:
+În prezent, traducerile sunt păstrate pe platforma crowdin.com:
 
 https://crowdin.com/project/django-girls-tutorial
 
