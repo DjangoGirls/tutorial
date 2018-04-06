@@ -1,3 +1,3 @@
 # editor de cod
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+Editorul de cod este o aplicaţie care vă permite să salvaţi codul, astfel încât să îl puteți revizui și modifica mai târziu. Puteţi afla de unde puteți downloada unul din [capitolul de editor de cod](./code_editor/README.md)
