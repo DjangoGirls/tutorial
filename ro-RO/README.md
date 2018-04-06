@@ -12,23 +12,23 @@ Plutind acum prin necunoscuta lume a dezvoltării web, aceasta va fi o aventura 
 
 ## Introducere
 
-Ai simţit vreodată că lumea este mai mult și mai mult legată de tehnologii, în care (încă) nu te pricepi? Te-ai întrebat vreodată cum poți crea un site web, dar nu ai avut niciodată suficientă motivaţie ca să începi? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Ai simţit vreodată că lumea este mai mult și mai mult legată de tehnologii, în care (încă) nu te pricepi? Te-ai întrebat vreodată cum poți crea un site web, dar nu ai avut niciodată suficientă motivaţie ca să începi? Te-ai gândit vreodată că lumea software-ului este prea complicată pentru a încerca să faci ceva de sine stătător?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Ei bine, avem o veste bună pentru tine! Programarea nu este atât de complicată pe cât pare şi vrem să-ţi arătăm cât de distractivă poate fi.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Acest tutorial nu te va transforma într-un mod magic într-un programator. Dacă vrei să fii bun în asta, ai nevoie de luni sau chiar ani de învăţare şi practică. Dar vrem să-ţi arătăm că programarea sau crearea de site-uri nu este un lucru atât de complicat cum pare. Vom încerca să-ți explicăm diferite aspecte ale programării web atât de bine cât putem, astfel încât să nu te simţi străin în acest domeniu și în noțiuni.
 
-We hope that we'll be able to make you love technology as much as we do!
+Sperăm că vom fi capabili să îți trezim iubirea și interesul pentru tehnologii și, în special, în programare!
 
-## What will you learn during the tutorial?
+## Ce vei învăţa pe parcursul acestui tutorial?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+La sfârșitul acestui tutorial, tu o să ai o mică aplicație web - blogul tău personal. Noi îți vom arăta cum să îți postezi blogul online, astfel încât și ceilalţi să poată aprecia munca ta!
 
-It will (more or less) look like this:
+Acesta va arăta (mai mult sau mai puţin) astfel:
 
 ![Figura 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Dacă lucrezi cu tutorialul de sine stătător şi nu ai un mentor care te va ajuta în caz că apar ceva dificultăți, îți propunem un chat pentru tine, fii liberă să te familiarizezi acolo: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
