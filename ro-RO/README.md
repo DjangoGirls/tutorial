@@ -48,4 +48,4 @@ Acest tutorial este susținut de [DjangoGirls](https://djangogirls.org/). Dacă 
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Dacă limba dorită nu este menționată pe [crowdin](https://crowdin.com/), te rugăm să [deschizi o nouă problemă pe website](https://github.com/DjangoGirls/tutorial/issues/new) și să ne informezi despre ce limbă merge vorba, astefel încât să o putem adăuga.
