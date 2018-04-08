@@ -102,7 +102,7 @@ W3Schools에서 [CSS 선택자](https://www.w3schools.com/cssref/css_selectors.a
 {% load staticfiles %}
 ```
 
-여기에서 동적 파일을 로딩하는 거에요. :)
+여기에서 정적 파일을 로딩하는 거에요. :)
 다음 `<head>`와 `</head>` 사이에 부트스트랩 CSS파일 링크 다음에 아래 코드를 추가하세요.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
