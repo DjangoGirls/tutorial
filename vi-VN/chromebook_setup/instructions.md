@@ -22,7 +22,7 @@ Khu vực này dưới cùng là *terminal* của bạn, nơi bạn sẽ thực 
 
 ### Môi trường ảo (Virtual Environment)
 
-Một môi trường ảo (thường gọi là một virtualenv) là giống như một môi trường riêng, các tác động vào môi trường này không bị ảnh hưởng bởi môi trường của hệ thống. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Một môi trường ảo (thường gọi là một virtualenv) là giống như một môi trường riêng, các tác động vào môi trường này không bị ảnh hưởng bởi môi trường của hệ thống. Chúng tôi sử dụng chúng để giữ cho sự khác nhau về mã nguồn của từng dự án trên cùng một môi trường.
 
 Trong thiết bị đầu cuối của bạn ở phía dưới của giao diện Cloud 9, chạy lệnh sau đây:
 
@@ -53,8 +53,8 @@ Tạo một tài khoản [Github](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Các bài hướng dẫn Django Girls bao gồm một phần được gọi là triển khai, đó là quá trình của việc đưa mã nguồn ứng dụng web của bạn đến một máy tính truy cập công cộng (gọi là một máy chủ) để mọi người có thể thấy công việc của bạn.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Phần này là một chút ngoài lề khi thực hiện các hướng dẫn trên Chromebook kể từ khi chúng tôi đang sử dụng trên một máy chủ. Tuy nhiên, đó là vẫn rất hữu ích, như chúng ta có thể nghĩ về Cloud 9 như là một môi trường phát triển và Python Anywhere như là một nơi để triển khai các công cụ của chúng tôi khi nó trở nên hoàn chỉnh hơn.
 
 Vì vậy, đăng ký cho một tài khoản Python Anywhere mới tại [www.pythonanywhere.com](https://www.pythonanywhere.com).
