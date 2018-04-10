@@ -2,20 +2,20 @@ Bạn có thể [bỏ qua phần này](http://tutorial.djangogirls.org/en/instal
 
 ### Cloud 9
 
-Cloud 9 là một công cụ cung cấp cho bạn một trình soạn thảo mã nguồn và cho phép truy cập vào một máy tính chạy trên Internet, nơi bạn có thể cài đặt, viết, và chạy các chương trình. Trong suốt bài hướng dân này, Cloud 9 được coi là một *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9 là một công cụ cung cấp cho bạn một trình soạn thảo mã nguồn và cho phép truy cập vào một máy tính chạy trên Internet, nơi bạn có thể cài đặt, viết, và chạy các chương trình. Trong suốt bài hướng dân này, Cloud 9 được coi là một *local machine*. Bạn sẽ vẫn chạy lệnh trong một giao diện thiết bị đầu cuối cũng giống như các thực hiện trên OS X, Ubuntu hay Windows, nhưng thiết bị đầu cuối của bạn sẽ được kết nối với một máy tính đang chạy ở một nơi khác mà Cloud 9 thiết lập cho bạn.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+1. Cài đặt Cloud 9 từ [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Truy cập [c9.io](https://c9.io)
+3. Đăng ký tài khoản
+4. Bấm vào *tạo mới Workspace*
+5. Đặt tên là *django-girls*
+6. Chọn *blank* (thứ hai từ bên phải vào dòng dưới cùng với biểu tượng màu da cam)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Bây giờ bạn sẽ thấy một giao diện với một sidebar, một cửa sổ chính lớn với một số văn bản, và một cửa sổ nhỏ ở phía dưới trông giống như thế này:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    yourusername:~/workspace $
+    yourusername: ~ / workspace $
     
 
 This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
@@ -32,17 +32,17 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Nếu vẫn không hoạt động, bạn nên yêu cầu huấn luyện viên trợ giúp.
 
-Next, run:
+Tiếp theo, chạy:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    mkdir djangogirls
-    cd djangogirls
-    python3.6 -mvenv myvenv
+    mkdir djangogirls 
+    cd djangogirls 
+    python3.6 - mvenv myvenv 
     source myvenv/bin/activate
-    pip install django~=1.11.0
+    pip install django ~ = 1.11.0
     
 
 (note that on the last line we use a tilde followed by an equal sign: ~=).
