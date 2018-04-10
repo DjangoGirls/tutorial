@@ -20,9 +20,9 @@ Bây giờ bạn sẽ thấy một giao diện với một sidebar, một cửa 
 
 Khu vực này dưới cùng là *terminal* của bạn, nơi bạn sẽ thực hiện các bước theo hướng dẫn của Cloud 9. Bạn có thể thay đổi kích cỡ của cửa sổ để làm cho nó lớn hơn một chút.
 
-### Virtual Environment
+### Môi trường ảo (Virtual Environment)
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Một môi trường ảo (thường gọi là một virtualenv) là giống như một môi trường riêng, các tác động vào môi trường này không bị ảnh hưởng bởi môi trường của hệ thống. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 Trong thiết bị đầu cuối của bạn ở phía dưới của giao diện Cloud 9, chạy lệnh sau đây:
 
