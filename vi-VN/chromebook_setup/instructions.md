@@ -18,17 +18,17 @@ Bây giờ bạn sẽ thấy một giao diện với một sidebar, một cửa 
     yourusername: ~ / workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Khu vực này dưới cùng là *terminal* của bạn, nơi bạn sẽ thực hiện các bước theo hướng dẫn của Cloud 9. Bạn có thể thay đổi kích cỡ của cửa sổ để làm cho nó lớn hơn một chút.
 
 ### Virtual Environment
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Trong thiết bị đầu cuối của bạn ở phía dưới của giao diện Cloud 9, chạy lệnh sau đây:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    sudo apt update
+    sudo apt update 
     sudo apt install python3.6-venv
     
 
@@ -45,11 +45,11 @@ Tiếp theo, chạy:
     pip install django ~ = 1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(Chú ý dòng cuối cùng chúng tôi sử dụng một dấu ngã theo sau là một dấu bằng: ~ =).
 
-### Github
+### GitHub
 
-Make a [Github](https://github.com) account.
+Tạo một tài khoản [Github](https://github.com).
 
 ### PythonAnywhere
 
