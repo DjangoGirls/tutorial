@@ -34,7 +34,7 @@ Ale co dalej? Aby pobrać aktualne posty na blogu z modelu `Post`, potrzebujemy 
 
 Powinnaś być już zaznajomiona z zasadą działania obiektów typu QuerySet. Rozmawiałyśmy o tym w rozdziale [ORM Django (obiekty QuerySets)](../django_orm/README.md).
 
-Więc teraz chcemy opublikować posty na blogu posortowane według daty publikacji (`published_date`), prawda? Zrobiliśmy to już w rozdziale QuerySets!
+Więc teraz chcemy opublikować posty na blogu posortowane według daty publikacji (`published_date`), prawda? Zrobiłyśmy to już w rozdziale QuerySets!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -60,7 +60,7 @@ Ostatnią częścią, której nam brakuje, jest przekazanie QuerySetu `posts` do
 
 Zauważ, że tworzymy *zmienną* dla naszego QuerySetu: `posts`. Potraktuj ją jako nazwę naszego QuerySetu. Od tej pory będziemy odnosić się do niej tylko za pomocą tej nazwy.
 
-W funkcji `render` mamy jeden parametr `request` (wszystko, co otrzymujemy od użytkownika za pośrednictwem Internetu) i inny podający plik szablonu (`'blog/post_list.html'`). Ostatni parametr, który wygląda tak: `{}` jest miejscem, w którym możemy dodać parę rzeczy do wykorzystania w szablonie. Musimy nadać im nazwy (ale póki co będziemy trzymać się nazwy `'posts'`). :) Powinno to wyglądać tak: `{'posts': posts}`. Zwróć uwagę, że ta część przed `:` jest stringiem; powinnaś go wziąć w cudzysłów:`'`.
+W funkcji `render` mamy jeden parametr `request` (wszystko, co otrzymujemy od użytkownika za pośrednictwem Internetu) i inny podający plik szablonu (`'blog/post_list.html'`). Ostatni parametr, który wygląda tak: `{}` jest miejscem, w którym możemy dodać parę rzeczy do wykorzystania w szablonie. Musimy nadać im nazwy (ale póki co będziemy trzymać się nazwy `'posts'`). :) Powinno to wyglądać tak: `{'posts': posts}`. Zwróć uwagę, że ta część przed `:` jest stringiem; powinnaś wziąć ją w cudzysłów:`'`.
 
 Zatem ostatecznie nasz plik `blog/views.py` powinien wyglądać następująco:
 
