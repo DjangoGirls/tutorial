@@ -57,4 +57,4 @@ Tutorial-ul Django Girls include o secțiune pentru așa-numitu-l Deployment, ce
 
 Această secțiune pare un pic ciudată atunci când tutorial-ul este realizat pe Chromebook, deoarece noi deja utilizăm un calculator public ce este accesibil prin intermediul Internet-ului (spre deosebire de, de exemplu, un laptop). În orice caz, asta oricum este util, noi putem considera Cloud 9 ca un spațiu de lucru, sau munca noastră ce se află în decurs de desfășurare și Python Anywhere, ca locul în care noi putem prezenta proiectul nostru odată ce acesta se apropie de finiș.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Astfel, crează-ți un cont nou pe Python Anywhere accesînd: [www.pythonanywhere.com](https://www.pythonanywhere.com).
