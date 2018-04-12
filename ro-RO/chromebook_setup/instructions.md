@@ -2,16 +2,16 @@ Poți [sări peste această secțiune](http://tutorial.djangogirls.org/en/instal
 
 ### Cloud 9
 
-Cloud 9 este un instrument care îți oferă un editor de cod şi acces la un calculator care rulează pe Internet, în care poți scrie, și unde poți instala şi executa software-ul. Pe durata acestui tutorial, Cloud 9 se va comporta ca și *calculatorul tău local *. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9 este un instrument care îți oferă un editor de cod şi acces la un calculator care rulează pe Internet, în care poți scrie, și unde poți instala şi executa software-ul. Pe durata acestui tutorial, Cloud 9 se va comporta ca și *calculatorul tău local *. Tu vei rula comenzile în interfața terminalului la fel ca și colegii ce vor folosi Os X, Ubuntu, sau Windows, dar terminalul pe care îl vei folosi tu, este conectat la un calculator care rulează în altă parte, pe care Cloud 9 ți la configurat.
 
 1. Instalează Cloud 9 din [magazinul de aplicații Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Acceasează [c9.io](https://c9.io)
 3. Creează-ți un cont
 4. Apasă pe *Create a New Workspace*
-5. Numeștel *django-girls*
+5. Numește-l *django-girls*
 6. Selectează rândul *Blank* (al doilea rând din dreapta cel cu logoo-ul portocaliu)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Acum puteți vedea o interfață cu un meniu, fereastra principală ce conține un text și o mică ferestruică în partea de jos, ce arată în felul următor:
 
 {% filename %}Cloud 9{% endfilename %}
 
