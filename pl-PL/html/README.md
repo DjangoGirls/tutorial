@@ -1,6 +1,6 @@
-# Wprowadzenie do HTMLa
+# Wprowadzenie do HTML-a
 
-Zastanawiasz się czym jest szablon?
+Zastanawiasz się, czym jest szablon?
 
 Szablon to plik, którego używamy do prezentacji informacji w zwięzłej formie. Używając analogii - do pisania listów również możesz użyć szablonu. Każdy list ma inną treść i adres, ale każdy z nich ma taką samą strukturę.
 
