@@ -18,13 +18,13 @@ Acum puteți vedea o interfață cu un meniu, fereastra principală ce conține 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Această porțiune de jos este *terminal-ul* tău, unde tu vei putea introduce instrucțiunile necesare pentru ca acestea să fie executate de calculatorul Cloud 9. Ai posibilitatea să mărești dimensiunile acestei ferestre.
 
-### Virtual Environment
+### Mediul Virtual
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Mediul virtual (eng. = Virtual Environment, prescurtat virtualenv) este ca o cutie privată în care poate fi stocat codul scris pentru proiectul la care noi vom lucra. Noi le folosim pentru a păstra diverse bucăți de cod de care avem nevoie pentru diverse proiecte, pentru a nu le mixa între acestea.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+În terminalul tău din partea de jos a interfeței Cloud 9, execută următoarea instrucțiune:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +32,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Dacă întâmpini careva obstacole, apelează la mentorul tău pentru ajutor.
 
-Next, run:
+Apoi execută:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,11 +45,11 @@ Next, run:
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(observă că ultima linie utilizată conține tildă și semnul egal: ~=).
 
 ### Github
 
-Make a [Github](https://github.com) account.
+Crează-ți un cont [Github](https://github.com).
 
 ### PythonAnywhere
 
