@@ -58,8 +58,8 @@ data-collapse=true ces-->
 > {% filename %}command-line{% endfilename %}
 > 
 >     لم يتم إنشاء البيئة الإفتراضية بنجاح لأن ensurepip غير متوفر.  على أنظمة ديبيان/أوبونتو، تحتاج إلى تثبيت حزمة python3-venv باستخدام الأمر التالي.
->        apt install python3-venv
->     You may need to use sudo with that command.  بعد تثبيت حزمة python3-venv، قم بإعادة إنشاء البيئة الإفتراضية الخاصة بك.
+>        apt-get install python3-venv
+>     غالبا ستحتاج إستعمال sudo لتنفيد الأمر.  بعد تثبيت حزمة python3-venv، قم بإعادة إنشاء البيئة الإفتراضية الخاصة بك.
 >     
 > 
 > في هذه الحالة اتبع التعليمات تحت وثبت حزمة `python3-venv` {% filename %}command-line{% endfilename %}
@@ -67,7 +67,7 @@ data-collapse=true ces-->
 >     $ sudo apt install python3-venv
 >     
 > 
-> **ملاحظة:** في بعض الإصدارات من ديبيان/أوبونتو اعداد البيئة الإفتراضية بهذه الطريقة قد يعطي هذا الخطأ:
+> **ملاحظة:** في بعض إصدارات ديبيان/أوبونتو اعداد البيئة الإفتراضية بهذه الطريقة قد يعطي هذا الخطأ:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -78,7 +78,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     $ sudo apt install python-virtualenv
+>     $ sudo apt-get install python-virtualenv
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
@@ -89,7 +89,7 @@ data-collapse=true ces-->
 >     E: Unable to locate package python3-venv
 >     
 > 
-> قم بتشغيل هذا الأمر:
+> قم بتنفيد الأمر:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
