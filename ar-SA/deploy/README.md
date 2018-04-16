@@ -90,7 +90,7 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 
 > ** * * ملاحظة * * اسم 'my-first-blog' مهم – يمكن أن تختار شيئا آخر، لكن هذا سيأخد الكثير من الوقت في الإرشادات الموجودة أدناه، وسيكون عليك استبداله كل مرة. ربما من الأسهل الإبقاء على اسم 'my-first-blog'.</p> </blockquote> 
 > 
-> On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+> في الشاشة التالية، سوف يظهر لك رابط استنساخ المستودع الخاص بك. اختر نسخة "HTTPS"،ثم قم بنسخ الرابط سنحتاجه بعد قليل:
 > 
 > ![](images/github_get_repo_url_screenshot.png)
 > 
@@ -133,11 +133,11 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > 
 > ## اعداد موقع على PythonAnywhere
 > 
-> Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+> عد الى لوحة التحكم بالنقر على شعار الموقع, وحدد خيار بدئ الطرفية (bash-console) هي نسخة الموقع من الطرفية تماما كتلك اللتي لديك بجهازك.
 > 
 > ![Pointing at Bash in the New Console section](images/pythonanywhere_bash_console.png)
 > 
-> > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> > **ملاحظة** PythonAnywhere يعتمد ومبني على اللينكس. لذا ان كنت على ويندوز فالطرفية ستظهر مختلفة قليلا.
 > 
 > Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 > 
