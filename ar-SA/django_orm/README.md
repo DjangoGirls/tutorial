@@ -143,7 +143,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **ملاحظة** هناك حرفان أسفل السطر (`_`) بين `title` و `contains`. يستخدم ORM دجانغو هذه القاعدة لفصل أسماء الحقول ("title") والعمليات أو الفلاتر ("contains"). إذا قمت باستخدام تسطير واحد فقط، سوف تحصل على خطأ مثل "FieldError: Cannot resolve keyword title_contains".
+> **ملاحظة** هناك شرطتين أسفل السطر (`_`) بين `title` و `contains`. يستخدم ORM دجانغو هذه القاعدة لفصل أسماء الحقول ("title") والعمليات أو الفلاتر ("contains"). إذا قمت باستخدام تسطير واحد فقط، سوف تحصل على خطأ مثل "FieldError: Cannot resolve keyword title_contains".
 
 يمكنك أيضا الحصول على قائمة بجميع المشاركات المنشورة. علينا القيام بذلك بتصفية جميع المشاركات التي قد `published_date` في الماضي:
 
