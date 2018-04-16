@@ -139,7 +139,7 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > 
 > > **ملاحظة** PythonAnywhere يعتمد ومبني على اللينكس. لذا ان كنت على ويندوز فالطرفية ستظهر مختلفة قليلا.
 > 
-> Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+> نشر تطبيق ويب على PythonAnywhere يتضمن سحب التطبيق من GitHub ومن ثم اعداد PythonAnywhere للتعرف عليه وبدء العمل به كتطبيق ويب. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
