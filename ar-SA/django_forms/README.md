@@ -442,7 +442,7 @@ form = PostForm(instance=post)
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(تذكر ان تستبدل `<your-pythonanywhere-username>` بحسابك الشخصي على PythonAnywhere, بدون أقواس).
 
 * وأخيرا، انتقل إلى علامة التبويب [Web tab](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload**.
 
