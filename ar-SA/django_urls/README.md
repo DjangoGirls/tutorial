@@ -8,7 +8,7 @@
 
 ![عنوان Url](images/url.png)
 
-كل صفحة على شبكة الإنترنت تحتاج إلى عنوان URL الخاص بها. وبهذه الطريقة التطبيق الخاص بك يعلم ما يجب أن يظهر للمستخدم الذي يقوم بفتح عنوان URL هذا. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+كل صفحة على شبكة الإنترنت تحتاج إلى عنوان URL الخاص بها. وبهذه الطريقة التطبيق الخاص بك يعلم ما يجب أن يظهر للمستخدم الذي يقوم بفتح عنوان URL هذا. في جانغو نستخدم ما يسمى `URLconf` (URL configuration). URLconf هو مجموعة من الأنماط التي ستحاول جانغو مطابقتها مع عنوان URL المطلوب للعثور على طريقة العرض الصحيح.
 
 ## كيف تعمل عناوين Url في جانغو؟
 
@@ -33,7 +33,7 @@ urlpatterns = [
 
 الخطوط بين علامات الاقتباس الثلاثي (`'' '` أو `"""`) تسمى docstrings – ييمكنك كتابتها في أعلى ملف أو فئة أو طريقة لوصف ما يفعله. هي لا تعمل عبر بايثون.
 
-The admin URL, which you visited in the previous chapter, is already here:
+عنوان URL المشرف، الذي زرته في الفصل السابق، موجود هنا:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,11 +41,11 @@ The admin URL, which you visited in the previous chapter, is already here:
     url(r'^admin/', admin.site.urls),
 ```
 
-هذا السطر يعني أن لكل عنوان URL الذي يبدأ ب `admin/`، سوف تجد جانغو مقابله *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+هذا السطر يعني أن لكل عنوان URL الذي يبدأ ب `admin/`، سوف تجد جانغو مقابله *view*. في هذه الحالة نحن ، نضع الكثير من روابط المدير ، لذالك هي ليست مجموعة كلها في هذا الملف الصغير ، انها اكثر قابلية للقراءة وانضف.
 
 ## Regex
 
-هل كنت تتساءل كيف تطابق جانغو عناوين Url للواجهات ؟ حسنا، هذا الجزء صعب. يستخدم جانغو `regex`، اختصار ل "التعبيرات العادية". Regex لديه الكثير (الكثير!) من القواعد التي تشكل نمط بحث. Since regexes are an advanced topic, we will not go into detail over how they work.
+هل كنت تتساءل كيف تطابق جانغو عناوين Url للواجهات ؟ حسنا، هذا الجزء صعب. يستخدم جانغو `regex`، اختصار ل "التعبيرات العادية". Regex لديه الكثير (الكثير!) من القواعد التي تشكل نمط بحث. بما ان regexes موضوع متقدم، نحن لن نذكر بالتفصيل كيفية عملها.
 
 إذا كنت لا تزال ترغب معرفة كيف قمنا بإنشاء الأنماط، هنا مثال للعملية – سوف نحتاج فقط مجموعة فرعية محدودة من القواعد للتعبير عن النمط الذي نتطلع اليه وهي:
 
@@ -61,9 +61,9 @@ The admin URL, which you visited in the previous chapter, is already here:
 
 كتابة آراء منفصلة لجميع أرقام المشاركات سيكون مزعج حقاً. مع التعابير العادية، يمكننا إنشاء الأنماط التي تتطابق مع عنوان URL واستخراج العدد لنا: `^ post/(\d+)/$`. دعونا نكسر هذا قطعة قطعة لمعرفة ما نقوم به هنا:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
+* **^post/** تخبر دجانغو عن اخد أي شيء يحتوي على `post/` في بداية عنوان url (مباشرة بعد `^`)
 * **(\d+)** يعني أنه سيكون هناك عدد (رقم واحد أو أكثر)، وأننا نريد الرقم الذي تم التقاطه واستخراجه
-* **/** tells Django that another `/` character should follow
+* الرمز **/** يخبر دجانغو أن رمز`/` آخر يجب أن يتبع
 * **$** يشير إلى نهاية عنوان url الخاص بمعنى أن السلاسل التي تنتهي مع `/` سوف تتطابق مع هذا النمط
 
 ## عنوان URL جانغو الأول!
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+جانغو سيقوم بإعادة توجيه كل شيء يأتي في 'http://127.0.0.1:8000/' إلى`blog.urls` والبحث عن مزيد من التعليمات هناك.
 
 يتم كتابة التعبيرات العادية في بايثون دائماً مع `r` أمام السلسلة. هذا تلميح مفيد لبايثون أن السلسلة قد تحتوي على الأحرف الخاصة التي ليست معنية ببايثون نفسه، ولكن للتعبير العادي بدلاً من ذلك.
 
