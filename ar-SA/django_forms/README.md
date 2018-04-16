@@ -446,4 +446,4 @@ form = PostForm(instance=post)
 
 * وأخيرا، انتقل إلى علامة التبويب [Web tab](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload**.
 
-And that should be it! Congrats :)
+هذا ينبغي ان يكون كل شيء! مبروك:)
