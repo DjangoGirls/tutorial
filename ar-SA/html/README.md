@@ -140,7 +140,7 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 لقد أنشأنا ثلاثة أقسام `div` هنا.
 
 * يحتوي العنصر `div` الأول على عنوان مدونتنا - إنه عنوان ورابط
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* هناك عنصرين `div` اخرين يحتويان على منشورات مدونتنا مأرخة.`h2`عنوان التدوينة ويمكن النقر عليه و فقرتين`p`, واحدة للتأريخ التدوينة و الاخرى لمضمون التدوينة.
 
 هو يتيح لنا هذا التأثير:
 
@@ -163,7 +163,7 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+تأكد من أنك في مجلد `djangogirls` ودعنا نخبر `git` بتضمين جميع التغييرات ضمن هذا المجلد:
 
 {% filename %}command-line{% endfilename %}
 
@@ -179,7 +179,7 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
     $ git status
     
 
-نحن تقريبا هناك، الآن حان الوقت لنقول لها ان تحفض هذه التغييرات في تاريخها. سنعطيه "رسالة التزام" حيث نصف ما قمنا بتغييره. يمكنك كتابة ما تريد في هذه الحالة ، لكن من الأفضل ان تكتب شيء يدل على ما قمت بفعله حتى تتذكر في المستقبل.
+شارفنا على الانتهاء ، الآن حان الوقت لنقول لها ان تحفض هذه التغييرات بتاريخها. سنعطيه "رسالة التزام" حيث نصف ما قمنا بتغييره. يمكنك كتابة ما تريد في هذه الحالة ، لكن من الأفضل ان تكتب شيء يدل على ما قمت بفعله حتى تتذكر في المستقبل.
 
 {% filename %}command-line{% endfilename %}
 
