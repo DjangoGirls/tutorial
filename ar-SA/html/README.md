@@ -212,4 +212,4 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 
 * وأخيرا، انتقل إلى علامة التبويب [Web tab](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload**.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+تحديثك يجب ان يكون متاح, قم بعمل تحديث صفحة الموقع في المتصفح. التغييرات يجب ان تظهر لك الان
