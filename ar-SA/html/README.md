@@ -2,7 +2,7 @@
 
 قد تسأل ما هو القالب؟
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+القالب هو ملف يمكننا إعادة استخدامه لتقديم معلومات مختلفة بتنسيق ثابت - على سبيل المثال، يمكنك استخدام قالب لمساعدتك على كتابة رسالة، على الرغم من أن كل رسالة قد تحتوي على مضمون مختلف ويتم توجيهها إلى شخص مختلف ، باستعمال القالب ستظهر بفس الشكل.
 
 تم وصف تنسيق قالب جانغو في لغة تسمى HTML (وهذا هو ال HTML التي ذكرناها في الفصل الأول،**How the Internet works**).
 
@@ -29,7 +29,7 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 
 انظر كيف يبدو موقع الويب الخاص بك الآن: http://127.0.0.1:8000/
 
-> إذا كان لا يزال لديك خطأ `TemplateDoesNotExist`,، حاول إعادة تشغيل الخادم الخاص بك. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> إذا كان لا يزال لديك خطأ `TemplateDoesNotExist`,، حاول إعادة تشغيل الخادم الخاص بك. انتقل الى سطر الأوامر حاول ايقاف الخادم (بالضغط على Ctrl+C - مفتاح التحكم و C معا) وإعادة تشغيله من خلال الأمر ` python manage.py runserver `.
 
 ![الرقم 11.1](images/step1.png)
 
