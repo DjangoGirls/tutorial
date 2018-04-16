@@ -206,9 +206,9 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(تذكر تغيير `<your-pythonanywhere-username>` بحسابك PythonAnywhere, بدون الاقواس).
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+ثم لاحظ ان برمجتك يتم ارسالها للخادم, لتتأكد أنها أرسلت بنجاح, يمكنك زيارة **Files tab** ومشاهدت برنامجك على خادم PythonAnywhere.
 
 * وأخيرا، انتقل إلى علامة التبويب [Web tab](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload**.
 
