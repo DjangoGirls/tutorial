@@ -1,4 +1,4 @@
-# Comment fonctionne l'Internet ?
+# Comment fonctionne Internet
 
 > For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
 > 
