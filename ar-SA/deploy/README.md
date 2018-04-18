@@ -146,9 +146,9 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 >     $ pip3.6 install --user pythonanywhere
 >     
 > 
-> That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+> يجب أنت ترى بعض الملاحظات ك`Collecting pythonanywhere` و تنتهي بالعبارة `Successfully installed (...) pythonanywhere- (...)`.
 > 
-> Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+> الان نستخدم الادات المساعدة, لإعداد التطبيق مباشرة من GitHub و بشكل ألي. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
