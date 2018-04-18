@@ -1,9 +1,9 @@
 # सारांश
 
 * [3](README.md)
-* [Installation](installation/README.md)
+* [स्थापना](installation/README.md)
 * [Installation (chromebook)](chromebook_setup/README.md)
-* [How the Internet works](how_the_internet_works/README.md)
+* [इंटरनेट कैसे काम करता है](how_the_internet_works/README.md)
 * [Introduction to command line](intro_to_command_line/README.md)
 * [Python installation](python_installation/README.md)
 * [कोड एडिटर](code_editor/README.md)
