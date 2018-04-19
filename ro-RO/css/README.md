@@ -12,11 +12,11 @@ Dar noi nu vrem să începem de la început, așa-i? Și iarăși vom folosi cev
 
 Bootstrap este unul din cele mai populare framework-uri HTML și CSS pentru dezvoltarea website-urilor frumoase: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+A fost scris de programatorii care au lucrat la Twitter. Acum e dezvoltat de voluntari din toată lumea!
 
 ## Instalăm Bootstrap
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+Pentru a instala Bootstrap, trebuie de adăugat următoarele în `<head>` în fișierul `.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+Aceasta nu adaugă nici un fișier la proiect, ci doar face referință la fișiere care există pe Internet. Deschide website-ul tău și actualizează pagina. Iat-o!
 
 ![Figura 14.1](images/bootstrap1.png)
 
@@ -33,7 +33,7 @@ Deja arată mai frumos!
 
 ## Fișierele statice în Django
 
-În sfârșit ne vom uita mai atent la lucrurile pe care le numim **fișiere statice**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+În sfârșit ne vom uita mai atent la lucrurile pe care le numim **fișiere statice**. Fișierele statice sunt toate imaginile și fișierele CSS. Conținutul acestora nu depinde de contextul cererii la server și va fi la fel pentru orice utilizator.
 
 ### Unde se pun fișierele statice pentru Django
 
