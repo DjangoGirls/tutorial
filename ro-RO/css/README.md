@@ -37,7 +37,7 @@ Deja arată mai frumos!
 
 ### Unde se pun fișierele statice pentru Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django deja știe unde să găsească fișierele statice pentru aplicația "admin" preconfigurată. Acum trebuie doar să adăugăm niște fișiere statice pentru aplicația noastră `blog`.
 
 Facem asta prin crearea unui dosar numit `static` înăuntrul blog-ului:
 
@@ -49,11 +49,11 @@ Facem asta prin crearea unui dosar numit `static` înăuntrul blog-ului:
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django va găsi automat orice fișiere numite "static" în orice mapă a aplicației. Apoi va putea să le folosească conținutul ca fișiere statice.
 
 ## Primul fișier CSS!
 
-Let's create a CSS file now, to add your own style to your web page. Crează un director nou numit `css` în interiorul directorului `static`. Apoi crează un nou fișier numit `blog.css` înăuntrul directorului `css`. Ready?
+Să creăm un fișier CSS acum pentru a adăuga stil propriu paginii web. Crează o mapă nouă numită `css` în interiorul mapei `static`. Apoi crează un nou fișier numit `blog.css` înăuntrul mapei `css`. Gata?
 
     djangogirls
     └─── blog
@@ -64,9 +64,9 @@ Let's create a CSS file now, to add your own style to your web page. Crează un 
 
 Timpul pentru a scrie niște CSS! Deschide fișierul `blog/static/css/blog.css` în editorul de cod.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Nu ne vom adînci prea mult în personalizarea și învățarea CSS. La sfîrșitul acestei pagini este o recomandare pentru un curs gratis de CSS dacă doriți să aflați mai multe.
 
-Dar hai să facem cel puțin ceva. Poate am putea schimba culoarea header-ului? Pentru a înțelege culorile, calculatoarele ulilizează niște coduri speciale. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Poți de asemenea utiliza [culori predefinite](http://www.w3schools.com/colors/colors_names.asp), precum `red` - roșu și `green` - verde.
+Dar hai să facem cel puțin ceva. Poate am putea schimba culoarea header-ului? Pentru a înțelege culorile, calculatoarele ulilizează niște coduri speciale. Aceste coduri încep cu `#` urmate de 6 litere (A-F) și numere (0-9). De exemplu, codul pentru culoarea albastră este `#0000FF`. Putem găsi codurile a multe culori aici: http://www.colorpicker.com/. Poți de asemenea utiliza [culori predefinite](http://www.w3schools.com/colors/colors_names.asp), precum `red` - roșu și `green` - verde.
 
 Adaugă următorul cod în fișierul `blog/static/css/blog.css`:
 
