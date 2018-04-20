@@ -4,23 +4,23 @@
 
 Pînă acum, website-ul nostru a fost valabil doar pe computer-ul nostru. Acum vom învăța cum să facem deploy! Deployment-ul este procesul de publicare a aplicației pe Internet, astfel încât aplicația să fie vizibilă pentru toți. :)
 
-Așa cum ați învățat, un website trebuie să fie localizat pe un server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+După cum am învățat, un website trebuie să fie localizat pe un server. Sunt o mulțime de furnizoare de server valabile pe internet, noi vom folosi [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere este gratuit pentru aplicații mici care nu au mulți visitatori și cu siguranță va fi suficient pentru noi acum.
 
-Celălalt serviciu extern pe care-l vom utiliza este [GitHub](https://www.github.com), un serviciu de găzduire de cod. Există și altele, însă aproape toţi programatorii au un cont de GitHub acum, așa că, acum, vei avea și tu unul!
+Celălalt serviciu extern pe care-l vom utiliza este [GitHub](https://www.github.com), un serviciu de găzduire de cod. Există și altele, însă aproape toţi programatorii au un cont de GitHub acum, așa că, acum, vom avea și noi!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Aceste trei locuri vor fi importante pentru noi. Computer-ul local va fi locul unde vom face dezvoltarea codului și testarea lui. Cînd suntem ok cu schimbările, vom plasa o copie a programului pe GitHub. Website-ul nostru va fi pe PythonAnywhere și îl vom actualiza luînd o copie nouă a codului de pe GitHub.
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Notă** Dacă deja am trecut peste pașii de instalare, nu e nevoie de a face aceasta din nou - putem trece la următoarea secțiune și începe a crea un Git repository.
 
 {% include "/deploy/install_git.md" %}
 
 ## Inițializarea repository-ului Git propriu
 
-Git depistează modificările unui anumit set de fişiere în ceea ce se numeşte un repository de cod (sau, pe scurt, "repo"). Să începem unul pentru proiectul nostru. Deschideți consola şi executaţi aceste comenzi, în directoriul `djangogirls`:
+Git depistează modificările unui anumit set de fişiere în ceea ce se numeşte un repository de cod (sau, pe scurt, "repo"). Să începem unul pentru proiectul nostru. Deschidem consola şi executăm aceste comenzi, în directoriul `djangogirls`:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. Ar trebui să fiți în mapa `djangogirls`.
+> **Notă** Putem verifica mapa curentă de lucru cu comanda `pwd` (Mac OS X/Linux) sau `cd` (Windows) înainte de a inițializa repo-ul. Ar trebui să fim în mapa `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
