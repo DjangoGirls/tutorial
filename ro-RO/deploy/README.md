@@ -1,8 +1,8 @@
-# Implementează!
+# Deploy!
 
-> **Notă**: Următorul capitol poate fi, uneori, un pic cam greu de înțeles. Persistă şi du-l până la capăt; deployment-ul este o parte importantă a procesului de dezvoltare a site-ului. Acest capitol este plasat la mijlocul tutorialului, astfel încât mentorul să te poată ajuta în procesul un pic mai complicat de a-ți duce website-ul online. Aceasta înseamnă că puteţi termina tutorialul pe cont propriu, dacă nu vă rămâne timp.
+> **Notă**: Următorul capitol poate fi, uneori, un pic cam greu de înțeles. Să persistăm şi să-l ducem până la capăt; deployment-ul este o parte importantă a procesului de dezvoltare a site-ului. Acest capitol este plasat la mijlocul tutorialului, astfel încât mentorul să poată ajuta în procesul un pic mai complicat de a duce website-ul online. Aceasta înseamnă că e posibil de terminat tutorialul pe cont propriu, dacă nu rămâne timp.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deployment-ul este procesul de publicare a aplicației tale pe Internet, astfel încât aplicația să fie vizibilă pentru toți. :)
+Pînă acum, website-ul nostru a fost valabil doar pe computer-ul nostru. Acum vom învăța cum să facem deploy! Deployment-ul este procesul de publicare a aplicației pe Internet, astfel încât aplicația să fie vizibilă pentru toți. :)
 
 Așa cum ați învățat, un website trebuie să fie localizat pe un server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
