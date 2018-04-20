@@ -78,17 +78,17 @@ h1 a {
 }
 ```
 
-`h1 a` este un Selector CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. În acest caz, noi spunem să își schimbe culoarea în `#FCA205`, care reprezintă oranjul. Desigur poți pune culoarea ta proprie aici!
+`h1 a` este un Selector CSS. Aceasta înseamnă că folosim stilul nostru la orice element `a` înăuntru la un element `h1`. Așa că atunci cînd vom avea ceva ca `<h1><a href="">link</a></h1>`, stilul `h1 a` va fi folosit. În acest caz, noi spunem să își schimbe culoarea în `#FCA205`, care reprezintă culoarea oranj. Desigur poți pune culoarea ta proprie aici!
 
-Într-un fișier CSS determinăm stilurile pentru elementele într-un fișier HTML. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Numele de clase și id le definești singur. Clasele definesc grupuri de elemente, și id-urile indică la niște elemente anumite. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Într-un fișier CSS determinăm stilurile pentru elementele într-un fișier HTML. Prima metodă de a identifica elementele e prin numele unui element. Le ținem minte ca tag-urile din secția despre HTML. Astfel de lucruri ca `a`, `h1`, și `body` sunt exemple de nume de elemente. De asemenea putem identifica elementele după atributul `class` sau atributul `id`. Numele de clase și id le definești singur. Clasele definesc grupuri de elemente, și id-urile indică la niște elemente anumite. De exemplu, ai putea identifica următorul tag folosind numele tag-ului `a`, clasa `external_link` sau id-ul id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+Poți afla mai multe despre [selectorii CSS la w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+De asemenea trebuie să-i spunem șablonului nostru HTML că am adăugat CSS. Deschidem fișierul `blog/templates/blog/post_list.html` și adăugăm această linie la începutul acestuia:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
