@@ -30,9 +30,9 @@ Git depistează modificările unui anumit set de fişiere în ceea ce se numeşt
     $ git config --global user.email tu@exemplu.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Inițializarea repo-ului git este ceva ce trebuie să facem doar odată la proiect (și nu va trebui de introdus numele de utilizator și email-ul de fiecare dată).
 
-Git va urmări modificările făcute în toate fişierele şi mapele în această directorie, dar există unele fişiere pe vrem să le ignore. Facem acest lucru prin crearea unui fişier numit `.gitignore` în directoriul de bază. Deschide editorul de cod şi creați un nou fişier cu următorul conținut:
+Git va urmări modificările făcute în toate fişierele şi mapele în această directorie, dar există unele fişiere pe vrem să le ignore. Facem acest lucru prin crearea unui fişier numit `.gitignore` în directoriul de bază. Deschidem editorul de cod şi creăm un nou fişier cu următorul conținut:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -45,7 +45,7 @@ Git va urmări modificările făcute în toate fişierele şi mapele în aceast�
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+Și îl salvăm ca `.gitignore` în mapa "djangogirls".
 
 > **Note** Punctul de la începutul numelui de fișier este important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
 > 
