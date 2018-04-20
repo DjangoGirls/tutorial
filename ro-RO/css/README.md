@@ -25,7 +25,7 @@ Pentru a instala Bootstrap, trebuie de adăugat următoarele în `<head>` în fi
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Aceasta nu adaugă nici un fișier la proiect, ci doar face referință la fișiere care există pe Internet. Deschide website-ul tău și actualizează pagina. Iat-o!
+Aceasta nu adaugă nici un fișier la proiect, ci doar face referință la fișiere care există pe Internet. Deschidem website-ul nostru și actualizăm pagina. Iat-o!
 
 ![Figura 14.1](images/bootstrap1.png)
 
@@ -53,7 +53,7 @@ Django va găsi automat orice fișiere numite "static" în orice mapă a aplica�
 
 ## Primul fișier CSS!
 
-Să creăm un fișier CSS acum pentru a adăuga stil propriu paginii web. Crează o mapă nouă numită `css` în interiorul mapei `static`. Apoi crează un nou fișier numit `blog.css` înăuntrul mapei `css`. Gata?
+Să creăm un fișier CSS acum pentru a adăuga stil propriu paginii web. Creăm o mapă nouă numită `css` în interiorul mapei `static`. Apoi creăm un nou fișier numit `blog.css` înăuntrul mapei `css`. Gata?
 
     djangogirls
     └─── blog
@@ -62,7 +62,7 @@ Să creăm un fișier CSS acum pentru a adăuga stil propriu paginii web. Creaz�
                    └─── blog.css
     
 
-Timpul pentru a scrie niște CSS! Deschide fișierul `blog/static/css/blog.css` în editorul de cod.
+E timpul pentru a scrie niște CSS! Deschidem fișierul `blog/static/css/blog.css` în editorul de cod.
 
 Nu ne vom adînci prea mult în personalizarea și învățarea CSS. La sfîrșitul acestei pagini este o recomandare pentru un curs gratis de CSS dacă doriți să aflați mai multe.
 
@@ -96,7 +96,7 @@ De asemenea trebuie să-i spunem șablonului nostru HTML că am adăugat CSS. De
 {% load staticfiles %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Noi doar încărcăm fișierele statice aici. :) Între tag-urile `<head>` și `</head>`, după referințele la fișierele CSS de Bootstrap, adaugăm această linie:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. În acest moment i-am spus șablonului unde se află fișierul nostru CSS.
+Browser-ul citește fișierele în ordinea în care sunt transmise, așa că trebuie să ne asigurăm că se află în locul potrivit. În caz contrar, codul din fișierul nostru poate fi rescris de codul din fișierele Bootstrap. În acest moment i-am spus șablonului unde se află fișierul nostru CSS.
 
-Fișierul tău trebuie să arate așa:
+Fișierul nostru trebuie să arate așa:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,7 +135,7 @@ Fișierul tău trebuie să arate așa:
 </html>
 ```
 
-Bine, salvează fișierul și actualizează pagina!
+Bine, salvăm fișierul și actualizăm pagina!
 
 ![Figura 14.2](images/color2.png)
 
