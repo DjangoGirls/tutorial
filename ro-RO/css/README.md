@@ -64,11 +64,11 @@ Să creăm un fișier CSS acum pentru a adăuga stil propriu paginii web. Creăm
 
 E timpul pentru a scrie niște CSS! Deschidem fișierul `blog/static/css/blog.css` în editorul de cod.
 
-Nu ne vom adînci prea mult în personalizarea și învățarea CSS. La sfîrșitul acestei pagini este o recomandare pentru un curs gratis de CSS dacă doriți să aflați mai multe.
+Nu ne vom adînci prea mult în personalizarea și învățarea CSS. La sfîrșitul acestei pagini este o recomandare pentru un curs gratis de CSS dacă este dorința de a afla mai multe.
 
 Dar hai să facem cel puțin ceva. Poate am putea schimba culoarea header-ului? Pentru a înțelege culorile, calculatoarele ulilizează niște coduri speciale. Aceste coduri încep cu `#` urmate de 6 litere (A-F) și numere (0-9). De exemplu, codul pentru culoarea albastră este `#0000FF`. Putem găsi codurile a multe culori aici: http://www.colorpicker.com/. Poți de asemenea utiliza [culori predefinite](http://www.w3schools.com/colors/colors_names.asp), precum `red` - roșu și `green` - verde.
 
-Adaugă următorul cod în fișierul `blog/static/css/blog.css`:
+Adaugăm următorul cod în fișierul `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,15 +78,15 @@ h1 a {
 }
 ```
 
-`h1 a` este un Selector CSS. Aceasta înseamnă că folosim stilul nostru la orice element `a` înăuntru la un element `h1`. Așa că atunci cînd vom avea ceva ca `<h1><a href="">link</a></h1>`, stilul `h1 a` va fi folosit. În acest caz, noi spunem să își schimbe culoarea în `#FCA205`, care reprezintă culoarea oranj. Desigur poți pune culoarea ta proprie aici!
+`h1 a` este un Selector CSS. Aceasta înseamnă că folosim stilul nostru la orice element `a` înăuntru la un element `h1`. Așa că atunci cînd vom avea ceva ca `<h1><a href="">link</a></h1>`, stilul `h1 a` va fi folosit. În acest caz, noi îi spunem să își schimbe culoarea în `#FCA205`, care reprezintă culoarea oranj. Desigur putem pune culoarea noastră proprie aici!
 
-Într-un fișier CSS determinăm stilurile pentru elementele într-un fișier HTML. Prima metodă de a identifica elementele e prin numele unui element. Le ținem minte ca tag-urile din secția despre HTML. Astfel de lucruri ca `a`, `h1`, și `body` sunt exemple de nume de elemente. De asemenea putem identifica elementele după atributul `class` sau atributul `id`. Numele de clase și id le definești singur. Clasele definesc grupuri de elemente, și id-urile indică la niște elemente anumite. De exemplu, ai putea identifica următorul tag folosind numele tag-ului `a`, clasa `external_link` sau id-ul id `link_to_wiki_page`:
+Într-un fișier CSS determinăm stilurile pentru elementele într-un fișier HTML. Prima metodă de a identifica elementele e prin numele unui element. Le ținem minte ca tag-urile din secția despre HTML. Astfel de lucruri ca `a`, `h1`, și `body` sunt exemple de nume de elemente. De asemenea putem identifica elementele după atributul `class` sau atributul `id`. Numele de clase și id le definim singuri. Clasele definesc grupuri de elemente, și id-urile indică la niște elemente anumite. De exemplu, am putea identifica următorul tag folosind numele tag-ului `a`, clasa `external_link` sau id-ul id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-Poți afla mai multe despre [selectorii CSS la w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+Putem afla mai multe despre [selectorii CSS la w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
 De asemenea trebuie să-i spunem șablonului nostru HTML că am adăugat CSS. Deschidem fișierul `blog/templates/blog/post_list.html` și adăugăm această linie la începutul acestuia:
 
@@ -139,7 +139,7 @@ Bine, salvăm fișierul și actualizăm pagina!
 
 ![Figura 14.2](images/color2.png)
 
-Bună treabă! Poate ai vrea să-i dai site-ului un pic de air și să mărești marginea din partea stângă? Să încercăm!
+Bună treabă! Poate am vrea să-i dăm site-ului un pic de spațiu și să mărim marginea din partea stângă? Să încercăm!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -149,11 +149,11 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Adăugăm aceasta la CSS-ul nostru, salvăm fișierul și ne uităm cum lucrează!
 
 ![Figura 14.3](images/margin2.png)
 
-Poate putem personaliza font-ul din header? Inserează aceasta în `<head>` din fișierul `blog/templates/blog/post_list.html`:
+Poate putem personaliza font-ul din header? Inserăm aceasta în `<head>` din fișierul `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -161,9 +161,9 @@ Poate putem personaliza font-ul din header? Inserează aceasta în `<head>` din 
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Ca și mai înainte, notăm ordinea și plasăm înaintea link-ului la `blog/static/css/blog.css`. Această linie va importa un font numit *Lobster* din Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Găsim declarația blocului `h1 a` (codul între parantezele `{` și `}`) în fișierul CSS `blog/static/css/blog.css`. Acum adăugăm linia `font-family: 'Lobster';` între paranteze și actualizăm pagina:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
