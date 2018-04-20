@@ -178,7 +178,7 @@ h1 a {
 
 Grozav!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Cum am menționat mai înainte, CSS are conceptul de clase. Acestea ne permit să numim o parte din codul HTML și să folosim stiluri doar pentru această parte fără a influența celelalte părți. Aceasta poate fi foarte util! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
 Numește câteva părți din codul HTML. Adaugă o clasă numită `page-headers` la `div`-ul care conține headerul:
 
