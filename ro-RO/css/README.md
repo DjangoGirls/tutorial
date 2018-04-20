@@ -178,9 +178,9 @@ h1 a {
 
 Grozav!
 
-Cum am menționat mai înainte, CSS are conceptul de clase. Acestea ne permit să numim o parte din codul HTML și să folosim stiluri doar pentru această parte fără a influența celelalte părți. Aceasta poate fi foarte util! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Cum am menționat mai înainte, CSS are conceptul de clase. Acestea ne permit să numim o parte din codul HTML și să folosim stiluri doar pentru această parte fără a influența celelalte părți. Aceasta poate fi foarte util! Poate avem două div-uri care fac ceva diferit (de exemplu header-ul nostru și postarea). O clasă poate să ne ajute să le facem să arate diferit.
 
-Numește câteva părți din codul HTML. Adaugă o clasă numită `page-headers` la `div`-ul care conține headerul:
+Hai să numim câteva părți din codul HTML. Adaugăm o clasă numită `page-headers` la `div`-ul nostru care conține headerul:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,7 +190,7 @@ Numește câteva părți din codul HTML. Adaugă o clasă numită `page-headers`
 </div>
 ```
 
-Acum adaugă o clasă `post` la `div`-ul care conține un post de blog.
+Acum adaugăm o clasă `post` la `div`-ul care conține un post de blog.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ Acum adaugă o clasă `post` la `div`-ul care conține un post de blog.
 </div>
 ```
 
-Acum vom adăuga blocuri de declarare la selectoare diferite. Selectoarele care încep cu `.` se referă la clase. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Pentru moment, doar copiază-l și inserează-l in fișierul `blog/static/css/blog.css`:
+Acum vom adăuga blocuri de declarare la selectoare diferite. Selectoarele care încep cu `.` se referă la clase. Sunt o mulțime de tutoriale și explicări a CSS pe web care ne pot ajuta să înțelegem codul următor. Pentru moment, doar îl copiem și inserăm în fișierul `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -269,7 +269,7 @@ Apoi selectează codul HTML care afișează posturile cu declarațiile de clase.
 {% endfor %}
 ```
 
-în `blog/templates/blog/post_list.html` cu asta:
+în `blog/templates/blog/post_list.html` cu acest cod:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -291,14 +291,14 @@ Apoi selectează codul HTML care afișează posturile cu declarațiile de clase.
 </div>
 ```
 
-Salvează fișierele și actualizează site-ul.
+Salvăm fișierele și actualizăm site-ul.
 
 ![Figura 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Uau! Arată super, așa-i? Hai să ne uităm la codul care l-am copiat ca să găsim locurile unde am adăugat clasele în HTML și le-am folosit în CSS. Unde am face schimbarea dacă am dori ca data să fie de culoare turcoaz?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Să nu ne temem să schimbăm acest CSS un pic și să modificăm niște lucruri. Jucîndu-ne cu CSS putem înțelege ce fac diferite lucruri. Dacă ceva se strică, fără griji - putem oricînd să anulăm schimbarea!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+Recomandăm acest curs online gratuit [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Ne poate ajuta să învățăm tot despre cum să ne facem website-ul mai frumos cu CSS.
 
 Gata pentru capitolul următor?! :)
