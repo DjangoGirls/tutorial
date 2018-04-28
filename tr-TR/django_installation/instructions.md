@@ -59,7 +59,7 @@ Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi
 > 
 >     The virtual environment was not created successfully because ensurepip is not available.  Debian/Ubuntu sistemlerinde, python3-venv paketini aşağıdaki komutu kullanarak yüklemeniz gerekiyor.
 >        apt install python3-venv
->     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+>     Burada sudo komutunu kullanmanız gerekebilir.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
 > Bu durumda,yukarıdaki yönergeleri izleyin ve `python3-venv` paketini yükleyin:
@@ -67,7 +67,7 @@ Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi
 >     $ sudo apt install python3-venv
 >     
 > 
-> Bu Şekilde Debian/Ubuntu ' nun bazı sürümlerinde sanal ortamı başlatırken o anda aşağıdaki hatayı alabilirsiniz : 
+> Bu şekilde Debian/Ubuntu'nun bazı sürümlerinde sanal ortamı başlatırken o anda aşağıdaki hatayı alabilirsiniz:
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
