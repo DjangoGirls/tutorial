@@ -1,4 +1,4 @@
-PythonAnywhere ile ücretsiz bir "Yeni Başlayan" hesabı için kaydolun:
+PythonAnywhere ile ücretsiz bir "Beginner" hesabı için kaydolun:
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
