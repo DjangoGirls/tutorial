@@ -61,9 +61,9 @@ URL tanımındaki diğer her şey tamamen ele alınacaktır.
 
 Her gönderi için ayrı bir view yazmak gerçekten can sıkıcı olurdu. Düzeni ifadelerle, URL ile eşleşen ve bizim için gönderi numarasını çıkaran bir desen yaratabiliriz: `^post/(\d+)/$`. Şimdi bunu, burada ne yaptığımızı görebilmek için parçalarına ayıralım:
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
+* **^post/** Django'ya URL'deki `post/` ile başlayan her şeyi almasını söylüyor. (`^` 'dan hemen sonra)
 * **(\d+)** ise bir sayı (birden fazla rakam) olduğunu ve bu sayıyı yakalamak ve çıkarmak istediğimizi belirtiyor
-* **/** tells Django that another `/` character should follow
+* **/** ise Django'ya arkasından bir `/` karakteri gelmesi gerektiğini söylüyor
 * **$** ise URL'nin sonuna işaret ediyor, yani sadece sonu `/` ile biten string'ler bu kalıpla eşleşecek
 
 ## İlk Django URL'niz!
@@ -124,6 +124,6 @@ Eğer şimdi http://127.0.0.1:8000/'ine gitmeyi denerseniz, 'sayfanıza ulaşıl
 
 ![Hata](images/error1.png)
 
-Konsolunuz bir hata gösteriyor, ama endişelenmeyin -aslında bu oldukça kullanışlıdır: bu **'post_list' özelliği yok** demektir. Bu Django'nun bulup kullanmaya çalıştığı *view*'un adı. Ama onu henüz oluşturmedık. At this stage, your `/admin/` will also not work. Endişeye gerek yok - o noktaya ulaşacağız.
+Konsolunuz bir hata gösteriyor, ama endişelenmeyin -aslında bu oldukça kullanışlıdır: bu **'post_list' özelliği yok** demektir. Bu Django'nun bulup kullanmaya çalıştığı *view*'un adı. Ama onu henüz oluşturmedık. Bu aşamada `/admin/` işlevi de çalışmayacaktır. Endişeye gerek yok - o noktaya ulaşacağız.
 
 > Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi dokümantasyona bakabilirsiniz: https://docs.djangoproject.com/en/1.11/topics/http/urls/
