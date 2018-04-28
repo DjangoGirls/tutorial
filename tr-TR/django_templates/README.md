@@ -74,7 +74,7 @@ Have you noticed that we used a slightly different notation this time (`{{ post.
 
 Websitenizi internette çalışır halde görmek iyi olur değilmi? PythonAnywhere tekrar çalıştıralım. Adımları hatırlayalım…
 
-* İlk önce kodumuzu Github'a push komutu ile yükleyelim
+* İlk önce kodumuzu GitHub'a push komutu ile yükleyelim
 
 {% filename %}komut-satırı{% endfilename %}
 
