@@ -33,7 +33,7 @@ Gördüğünüz gibi, Django çoktan bizim için buraya bir şey yerleştirmiş.
 
 Üçlü tırnaklar (`'''` or `"""`) arasındaki satırlara docstrings denir - bunları bir dosyanın, sınıfın ya da metodun en üstüne ne yaptıklarını anlatmak için yazabilirsiniz. Python bunları çalıştırmaz.
 
-The admin URL, which you visited in the previous chapter, is already here:
+Önceki bölümde gördüğümüz yönetici URL'si burada:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
