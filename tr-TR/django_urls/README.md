@@ -41,11 +41,11 @@ Gördüğünüz gibi Django bu dosyaya bizim için bir şeyler koymuş bile.
     url(r'^admin/', admin.site.urls),
 ```
 
-Bu satırın anlamı Django, `admin` ile başlayan her URL için ona uyan bir *view* bulur demektir. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Bu satırın anlamı Django, `admin` ile başlayan her URL için ona uyan bir *view* bulur demektir. Bu durumda bir sürü yönetici URL'lerini ekliyoruz, böylece hepsi bu küçük dosyanın içinde sıkıştırılmış bir şekilde durmuyor -- bu hali daha okunabilir ve düzenli.
 
 ## Regex (Kurallı İfade)
 
-Django'nun URL'leri view'larla nasıl eşleştirdiğini merak ediyor musunuz? Bu kısım biraz karışık. Django bunun için `regex` kullanıyor. Regex, "regular expressions"ın kısaltılmış hali ve düzenli ifadeler anlamına geliyor. Regex'in bir arama kalıbı oluşturmak için birçok (birçok!) kuralı var. Since regexes are an advanced topic, we will not go into detail over how they work.
+Django'nun URL'leri view'larla nasıl eşleştirdiğini merak ediyor musunuz? Bu kısım biraz karışık. Django bunun için `regex` kullanıyor. Regex, "regular expressions"ın kısaltılmış hali ve düzenli ifadeler anlamına geliyor. Regex'in bir arama kalıbı oluşturmak için birçok (birçok!) kuralı var. Regex'ler ileri bir konu olduğu için nasıl çalıştığının detayına girmeyeceğiz.
 
 Gene de kalıpları nasıl oluşturduğumuzu anlamak isterseniz, aşağıdaki bir örnek var - aradığımız kalıbı oluşturmak için kuralların sadece bir kısmına ihtiyacımız olacak, şöyle:
 
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Django artık 'http://127.0.0.1:8000/' adresine gelen her şeyi `blog.urls`'ya yönlendirecek ve ordaki yönergelere bakacak.
 
 Python'da düzenli ifade yazarken her zaman string (dize)'den önce `r` eklenir. Bu Python için string'in özel karakterler içerdiğini, doğrudan Python için değil düzenli ifadeler için bir string olduğu konusunda ipucu verir.
 
