@@ -1,8 +1,8 @@
 # Django Girls Tutorial
 
-[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
+[![ഗിറ്റർ](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> ഈ വർക്ക് Creative Commons Attribution-ShareAlike 4.0 International License-ൻ്റെ കീഴിലാണ് ലൈസൻസ് ചെയ്യപ്പെട്ടിട്ടുള്ളത്. ഈ ലൈസൻസിൻ്റെ ഒരു പതിപ്പ് കാണാൻ ഇവിടെ പോവുക: https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Welcome
 
