@@ -12,7 +12,7 @@ Django Girls ട്യൂട്ടോറിയലിലോട്ട് സ്വ
 
 ## ആമുഖം
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+നിങൾക്ക് തോന്നിയിട്ടുണ്ടോ ഈ ലോകത്ത് നിങൾക്ക് (ഇതുവരെ) മനസ്സിലാവാത്ത ടെക്ക്നോളജിയാണ് അതികവുമെന്ന്? എപ്പോഴെങ്കിലും ഒരു വെബ്സൈറ്റ് ഉണ്ടാക്കാൻ നിങൾക്ക് തോന്നുകയും എന്നാൽ അതിനുള്ള പ്രജോധനം ഇല്ലാതെയിരിക്കുകയും ചെയ്തിട്ടുണ്ടോ? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
 Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
 
