@@ -8,7 +8,7 @@ URL basitçe bir web adresidir. Her defasında bir web sitesini ziyaret ettiğin
 
 ![Url](images/url.png)
 
-İnternetteki her sayfanın kendi URL'si olması gerekir. Böylelikle bir URL açıldığında uygulama ne göstermesi gerektiğini bilir. Django'da `URLconf` (URL konfigürasyonu) denilen bir şey kullanıyoruz. URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+İnternetteki her sayfanın kendi URL'si olması gerekir. Böylelikle bir URL açıldığında uygulama ne göstermesi gerektiğini bilir. Django'da `URLconf` (URL konfigürasyonu) denilen bir şey kullanıyoruz. URLconf Django'nun doğru görünümü (view) bulmak için istenen URL ile eşleştirmeyi deneyeceği desenler dizinidir.
 
 ## URL'ler Django'da nasıl çalışır?
 
@@ -29,7 +29,7 @@ urlpatterns = [
 ]
 ```
 
-Gördüğünüz gibi, Django çoktan bizim için buraya bir şey yerleştirmiş.
+Gördüğünüz gibi Django bu dosyaya bizim için bir şeyler koymuş bile.
 
 Üçlü tırnaklar (`'''` or `"""`) arasındaki satırlara docstrings denir - bunları bir dosyanın, sınıfın ya da metodun en üstüne ne yaptıklarını anlatmak için yazabilirsiniz. Python bunları çalıştırmaz.
 
