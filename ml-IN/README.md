@@ -4,7 +4,7 @@
 
 > ഈ വർക്ക് Creative Commons Attribution-ShareAlike 4.0 International License-ൻ്റെ കീഴിലാണ് ലൈസൻസ് ചെയ്യപ്പെട്ടിട്ടുള്ളത്. ഈ ലൈസൻസിൻ്റെ ഒരു പതിപ്പ് കാണാൻ ഇവിടെ പോവുക: https://creativecommons.org/licenses/by-sa/4.0/
 
-## Welcome
+## സ്വാഗതം
 
 Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
