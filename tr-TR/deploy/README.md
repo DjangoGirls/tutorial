@@ -85,7 +85,7 @@ Ve son olarak değişikliklerimizi kaydediyoruz. Komut satırına gidin ve aşa�
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Kodunu GitHub'a yollama (Push)
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
 
