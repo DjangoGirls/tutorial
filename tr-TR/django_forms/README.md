@@ -446,4 +446,4 @@ Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
 
 * Nihayet, [Web tab](https://www.pythonanywhere.com/web_app_setup/) ına gidip **Reload** edelim.
 
-And that should be it! Congrats :)
+İşte bu kadar! Tebrikler :)
