@@ -442,7 +442,7 @@ Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
 
 * Nihayet, [Web tab](https://www.pythonanywhere.com/web_app_setup/) ına gidip **Reload** edelim.
 
