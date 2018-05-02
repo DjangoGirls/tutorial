@@ -10,11 +10,11 @@ Let's write some code!
 
 > Evdeki okuyucular için: Bu kısım [Python Temelleri: Tamsayılar, Dizeler, Listeler, Değişkenler ve Hatalar](https://www.youtube.com/watch?v=MO63L4s-20U) videosunda bulunabilir.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Python'la oynamaya başlamadan önce bilgisayarımızda bir *komut satırı* açmamız gerekiyor. Bunu zaten nasıl yapacağınızı artık biliyorsunuz, [Komut satırına giriş](../intro_to_command_line/README.md) bölümünde öğrenmiştiniz.
 
-Once you're ready, follow the instructions below.
+Hazır olduğunuzda, aşağıdaki talimatları takip edin.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Bir Python konsolu açmak istiyoruz; öyleyse Windows'ta `python`, Mac OS/Linux'ta `python3` yazıp, `enter`'a basın.
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,9 +26,9 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 ## İlk Python komutunuz!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Python komutunu çalıştırdıktan sonra, komut istemi `>>>` şeklinde değişti. Bizim için bu, şimdi yalnızca Python dilinde komutlar kullanabileceğimiz anlamına geliyor. `>>>` yazmanıza gerek yok - Python bunu sizin için yapacak.
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Eğer herhangi bir zamanda Python komut satırından çıkmak isterseniz, yalnızca `exit()` yazmanız ya da Windows için `Ctrl + Z`, Mac/Linux için `Ctrl + D` kısa yolunu kullanmanız yeterli. Bunu yaptığınız taktirde artık `>>>` yazısını görmeyeceksiniz.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
