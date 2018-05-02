@@ -30,7 +30,7 @@ O Git controla as alterações em um determinado conjunto de arquivos no que cha
     $ git config --global user.email voce@exemplo.com
     
 
-Só necessitamos de iniciar o repositório git apenas uma vez por projeto (e não será necessário colocar novamente o nome do utilizador e email).
+Só é necessário iniciar o repositório Git uma vez por projeto (e você não vai precisar preencher seu nome de usuário e e-mail nunca mais).
 
 O Git irá controlar as alterações em todos os arquivos e pastas neste diretório, mas existem alguns arquivos que queremos ignorar. Fazemos isso através da criação de um arquivo chamado `.gitignore` no diretório base. Abra seu editor e crie um novo arquivo com o seguinte conteúdo:
 
