@@ -1,6 +1,6 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. Tuy nhiên với những người mới bắt đầu thì các chương trình như vậy thực sự chưa cần thiết. Chúng tôi khuyễn nghị các trình viết code khác cũng mạnh mẽ không kém và dễ sử dụng hơn.
+Có rất nhiều chương trình viết code khác nhau, phần lớn thì nó tuỳ thuộc vào sơ thích của mỗi người. Hầu hết các nhà lập trình Python sử dụng IDEs (viết tắt của Integrated Development Environments - Môi trường phát triển tích hợp) phức tạp và mạnh mẽ như PyCharm. Tuy nhiên với những người mới bắt đầu thì các chương trình như vậy thực sự chưa cần thiết. Chúng tôi khuyễn nghị các trình viết code khác cũng mạnh mẽ không kém và dễ sử dụng hơn.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Dưới đây là gợi ý của chúng tôi, nhưng bạn cũng có thể tham khảo và nhờ tư vấn từ thầy/cô giáo của bạn để lựa chọn trình viết code phù hợp cho mình.
 
 ## Gedit
 
