@@ -1,16 +1,16 @@
-# CSS – make it pretty!
+# CSS - Làm đẹp nào!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Blog của chúng ta trông có vẻ chưa được đẹp lắm phải không? Chúng ta sẽ sử dụng CSS để làm cho nó đẹp và lộng lẫy hơn nhé.
 
-## What is CSS?
+## CSS là gì?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+CSS viết tắt của Cascading Style Sheets, là một ngôn ngữ được sử dụng để mô tả và định dạng website của chúng ta sau khi viết bằng HTML trông sẽ như thế nào. Hãy coi nó như việc bạn đang make-up cho trang web của mình vậy
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Nhưng chúng ta không muốn viết lại từ đầu. Một lần nữa, chúng ta sẽ sử dụng những thứ mà các lập trình viên khác đã viết trên Internet và cho chúng ta dùng miễn phí. Bạn biết đấy, chẳng ai lại đi sáng chế lại chiếc bánh xe cho vui cả.
 
-## Let's use Bootstrap!
+## Sử dụng Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap là một trong những framework HTML và CSS phổ biến dành cho việc phát triển website nhanh và đẹp. Đây là website của bootstrap: https://getbootstrap.com/
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
