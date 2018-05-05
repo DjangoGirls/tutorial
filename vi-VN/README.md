@@ -12,13 +12,13 @@ Giống nhưng những điều chưa biết khác, đây sẽ là một chuyến
 
 ## Giới thiệu
 
-Bạn đã bao giờ từng cảm thấy rằng thế giới đang càng ngày càng phát triển về công nghệ, người ta nói rất nhiều về công nghệ, mà bạn thấy mình không thể (hoặc chưa) tham gia vào không? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Bạn đã bao giờ từng cảm thấy rằng thế giới đang càng ngày càng phát triển về công nghệ, người ta nói rất nhiều về công nghệ, mà bạn thấy mình không thể (hoặc chưa) tham gia vào không? Bạn đã từng tò mò về cách để làm một website, nhưng bạn chưa bao giờ có đủ động lực để bắt đầu? Bạn đã từng cho rằng thế giới phần mềm quá phức tạp để bạn có thể thử làm điều gì đó cho riêng mình phải không?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Chà, chúng tôi có tin tốt cho bạn đây! Lập trình thực ra không khó như người ta vẫn nghĩ, và chúng tôi sẽ chứng minh cho bạn thấy nó thú vị như thế nào.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Bài hướng dẫn này không phải là ma thuật để biến bạn thành một lập trình viên thực thụ. Nếu bạn muốn giỏi lập trình, bạn cần học và thực hành trong nhiều tháng, thậm chí nhiều năm. Nhưng chúng tôi muốn chỉ cho bạn thấy rằng lập trình hoặc tạo website không phức tạp như nó được thấy. Chúng tôi sẽ cố gắng hết sức giải thích từng chút từng chúng một, để bạn không bị quá tải.
 
-We hope that we'll be able to make you love technology as much as we do!
+Chúng tôi hi vọng rằng chúng tôi sẽ đem lại cho bạn niềm yêu thích với công nghệ như chúng tôi đã và đang làm!
 
 ## What will you learn during the tutorial?
 
