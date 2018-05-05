@@ -1,11 +1,11 @@
 # Code editor
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> Dành cho các bạn đọc ở nhà: Chương này sẽ được trình bày ở video về [ Cách cài đặt trình viết code ](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
 
-You're about to write your first line of code, so it's time to download a code editor!
+Bạn sắp viết những dòng code đầu tiên rồi, vậy hãy dành thời gian để tải trình viết code về nào!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Note** Nếu bạn đang sử dụng Chromebook, hãy bỏ qua phần này và đảm bảo rằng bạn làm theo hướng dẫn ở phần [Chromebook Setup](../chromebook_setup/README.md).
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **Chú ý** Bạn có thể hoàn thành phần này ở chương cài đặt trước đó rồi - nếu vậy, hãy bỏ qua và đọc chương kế tiếp nhé!
 
 {% include "/code_editor/instructions.md" %}
