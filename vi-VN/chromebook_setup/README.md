@@ -1,4 +1,4 @@
-# Chromebook setup
+# Cài đặt cho Chromebook
 
 > **Note** Nếu bạn đã hoàn thành các bước cài đặt, bạn có thể bỏ qua và xem phần [Giới thiệu về Python](../python_introduction/README.md).
 
