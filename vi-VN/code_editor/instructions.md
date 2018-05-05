@@ -1,26 +1,26 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. Tuy nhiên với những người mới bắt đầu thì các chương trình như vậy thực sự chưa cần thiết. Chúng tôi khuyễn nghị các trình viết code khác cũng mạnh mẽ không kém và dễ sử dụng hơn.
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit là trình viết code mã nguồn mở, miễn phí và có thể hoạt động được ở tất cả các hệ điều hành.
 
 [Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text là một trình viết code khá phổ biến, bạn được dùng thử miễn phí một thời gian ngắn, và sau đó phải trả phí. Có thể chạy được trên mọi hệ điều hành.
 
-[Download it here](https://www.sublimetext.com/3)
+[Tải ở đây](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
+Atom là trình soạn thảo Code rất mới mẻ được tạo bởi [GitHub](https://github.com/). Nó mạnh mẽ, miễn phí và có sẵn trên Windows, OS X và Linux.
 
-[Download it here](https://atom.io/)
+[Tải ở đây](https://atom.io/)
 
-## Why are we installing a code editor?
+## Vì sao chúng ta cài đặt trình viết code?
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
