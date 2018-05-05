@@ -34,18 +34,18 @@ Nào, [Chúng ta cùng bắt đầu...](./how_the_internet_works/README.md)
 
 ## Theo dõi khoá học tại nhà
 
-Thật tuyệt nếu như được tham gia hội thảo Django Girl, nhưng chúng tôi hiểu rằng không phải ai cũng có thể. Đó là lý do vì sao chúng tôi khuyến khích bạn làm theo bài hướng dẫn này tại nhà. Cho những bạn đọc tại nhà, hiện tại chúng tôi đang chuẩn bị các video để các bạn có thể tự mình làm theo. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Thật tuyệt nếu như được tham gia hội thảo Django Girl, nhưng chúng tôi hiểu rằng không phải ai cũng có thể. Đó là lý do vì sao chúng tôi khuyến khích bạn làm theo bài hướng dẫn này tại nhà. Cho những bạn đọc tại nhà, hiện tại chúng tôi đang chuẩn bị các video để các bạn có thể tự mình làm theo. Dự án đang trong quá trình ghi hình, nhưng mọi thứ sẽ sớm được phát sóng hết lên kênh Youtube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-In every chapter already covered, there is a link that points to the correct video.
+Trong mỗi chương đã có trong bài hướng dẫn, sẽ có 1 đường dẫn với video tương ứng.
 
-## About and contributing
+## Giới thiệu và đóng góp
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Khoá học này được duy trì bởi [DjangoGirls](https://djangogirls.org/). Nếu bạn thấy bất kỳ lỗi nào hoặc bạn muốn cập nhật bài hướng dẫn, vui lòng làm theo [hướng dẫn](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Bạn muốn giúp chúng tôi dịch khoá học này sang ngôn ngữ khác?
 
-Currently, translations are being kept on crowdin.com platform at:
+Hiện tại, các bản dịch được lưu giữ tại website crowndin.com theo đường dẫn sau:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Nếu ngôn ngữ của bạn chưa được liệt kê tại [crowdin](https://crowdin.com/), vui lòng [mở một vấn đề](https://github.com/DjangoGirls/tutorial/issues/new) để thông báo cho chúng tôi về ngôn ngữ bạn mong muốn và chúng tôi sẽ thêm vào.
