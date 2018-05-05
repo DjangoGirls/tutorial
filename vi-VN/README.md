@@ -20,21 +20,21 @@ Bài hướng dẫn này không phải là ma thuật để biến bạn thành 
 
 Chúng tôi hi vọng rằng chúng tôi sẽ đem lại cho bạn niềm yêu thích với công nghệ như chúng tôi đã và đang làm!
 
-## What will you learn during the tutorial?
+## Bạn sẽ học được gì trong suốt bài hướng dẫn này?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Sau khi bạn kết thúc khoá học, bạn sẽ có một ứng dụng web nho nhỏ: blog của riêng bạn. Chúng tôi sẽ hướng dẫn bạn đưa nó lên trực tuyến, để những bạn bè, người thân hoặc đồng nghiệp có thể nhìn thấy sản phẩm của bạn!
 
-It will (more or less) look like this:
+Nó sẽ giống (hơn hoặc ít hơn) thế này:
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Nếu bạn tự làm theo bài hướng dẫn mà không có cố vấn để giúp bạn khi gặp vấn đề, chúng tôi có hệ thống chat dành cho bạn: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Chúng tôi sẽ hỏi các cố vấn và những người tham gia học trước đó để giúp đỡ những người khác đang học! Đừng ngại đặt câu hỏi nhé!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+Nào, [Chúng ta cùng bắt đầu...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Theo dõi khoá học tại nhà
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Thật tuyệt nếu như được tham gia hội thảo Django Girl, nhưng chúng tôi hiểu rằng không phải ai cũng có thể. Đó là lý do vì sao chúng tôi khuyến khích bạn làm theo bài hướng dẫn này tại nhà. Cho những bạn đọc tại nhà, hiện tại chúng tôi đang chuẩn bị các video để các bạn có thể tự mình làm theo. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
