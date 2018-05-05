@@ -12,9 +12,9 @@ Nhưng chúng ta không muốn viết lại từ đầu. Một lần nữa, chú
 
 Bootstrap là một trong những framework HTML và CSS phổ biến dành cho việc phát triển website nhanh và đẹp. Đây là website của bootstrap: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Thuở đầu, nó được viết bởi một lập trình viên làm việc tại Twitter. Ngày nay, nó được phát triển bởi các tình nguyện viên trên toàn thế giới!
 
-## Install Bootstrap
+## Cài đặt Bootstrap
 
 To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
 
