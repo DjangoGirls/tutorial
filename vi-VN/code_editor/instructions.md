@@ -22,10 +22,10 @@ Atom là trình soạn thảo Code rất mới mẻ được tạo bởi [GitHub
 
 ## Vì sao chúng ta cài đặt trình viết code?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Bạn có thể băn khoăn là tại sao chúng ta lại phải cài đặt những chương trình viết code kể trên, thay vì sử dụng Ms Word hoặc Notepad.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Lý do đầu tiên là các đoạn code cần được viết dưới **dạng văn bản thuần tuý**, vấn đề với các chương trình như Word hay Textedit là chúng không thực sự xuất ra văn bản thuần tuý, thay vào đó là văn bản phong phú (với các phông chữ và định dạng khác nhau).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Lý do thứ hai là các trình viết code được thiết kế riêng cho việc viết code, vì thế chúng cung cấp các chức năng hữu ích như làm nổi bật code theo từng ý nghĩa của code bằng các màu sắc khác nhau, hoặc tự động đóng các dấu ngoặc cho bạn.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Chúng ta sẽ thấy điều này khi bắt tay vào code. Sớm thôi, bạn sẽ nhận ra chúng hữu ích như thế nào. :)
