@@ -2,9 +2,9 @@
 
 另一个有趣的事情Django已经为你做好了就是**模板扩展**。这是什么意思呢？它意味着你可以使用你的HTML相同代码为你网站不同的网页共享。
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+模板帮助你，当你想使用相同的信息或者展示在多余一个地方的时候。 你不需要重复在每个文件中 并且如果你想改变内容，你不需要在每个木板中修改，只需要一次
 
-## Create a base template
+## 创建一个基本模板
 
 一个基础模板是最重要的模板，你扩展到你网站的每一页。
 
@@ -84,9 +84,9 @@ Templates help when you want to use the same information or layout in more than 
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). 我们一会儿将给你展示这个如何使用。
+But why? 你刚才创建了`block<0>  你使用template 标记<code>{% block %}` 来标记一个区域，这个区域是html格式 这个HTML将要从别的模板中扩展过来 (`base.html`). 我们一会儿将给你展示这个如何使用。
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+现在保存`base.html` ，再次打开你的 `blog/templates/blog/post_list.html` . {% raw %}你需要一掉任何在 `{% for post in posts %}`之下和 `{% endfor %}`之上的内容. When you're done, the file will look like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
