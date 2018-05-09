@@ -102,9 +102,9 @@ But why? 你刚才创建了`block<0>  你使用template 标记<code>{% block %}`
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+我们需要使用这个在你的模板中在所有的conent模块。 现在需要添加block 标记在文件中
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. 像这样:{% endraw %}
+{% raw %}你希望你的block标记和你的 `base.html` 文件中的标记匹配. 你也希望include这个代码在你的内容block中。 为了做这个，把你需要的内容写入`{% block content %}` 和`{% endblock %}`中。 像这样:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -144,4 +144,4 @@ Only one thing left. We need to connect these two templates together. This is wh
 
 好了，就是它了！检查你的网站还能正常工作. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> 如果你得到error `TemplateDoesNotExist`, 这个意味着这里没有`blog/base.html`文件，你需要运行`runserver` 在终端中。 Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
