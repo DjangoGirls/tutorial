@@ -4,25 +4,25 @@ Pots [saltar fins aquesta secció](http://tutorial.djangogirls.org/en/installati
 
 Cloud 9 és una eina que us ofereix un editor de codi i accés a un ordinador funcionant a Internet, on pots instal·lar, escriure i executar el programari. Durant la resta del tutorial, Cloud 9 actuarà com la teva *màquina local*. Estaràs executant comandes a una interfície de terminal com a les teves classes de mates amb OS X, Ubuntu o Windows, però la teva terminal estarà connectada a un ordinador funcionant a alguna altra part que Cloud 9 posa a la teva disposició.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+1. Instal·la Cloud 9 desde la [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Vés a [c9.io](https://c9.io)
+3. Registra't
+4. Fes click a *Create a New Workspace*
+5. Anomena'l *django-girls*
+6. Selecciona el *Blank* (segon per la dreta a la filera inferior amb un logo taronja)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Ara, hauries de veure una interfície amb una barra lateral, una gran finestra principal amb algun text, i una finestra petita a baix, similar a alguna cosa com aquesta:
 
 {% filename %}Cloud 9{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Aquesta àrea inferior és la teva *terminal*, on li donaràs les instruccions a l'ordinador que Cloud 9 ha preparat per tu. Pots redimensionar aquesta finestra per a fer-la una mica més gran.
 
-### Virtual Environment
+### Entorn Virtual
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un entorn virtual (també anomenat virtualenv o virtual environment) és com una caixa privada on podem posar-hi codi de programació molt útil per un projecte en el que estem treballant. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
