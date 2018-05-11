@@ -22,7 +22,7 @@ Aquesta àrea inferior és la teva *terminal*, on li donaràs les instruccions a
 
 ### Entorn Virtual
 
-Un entorn virtual (també anomenat virtualenv o virtual environment) és com una caixa privada on podem posar-hi codi de programació molt útil per un projecte en el que estem treballant. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un entorn virtual (també anomenat virtualenv o virtual environment) és com una caixa privada on podem posar-hi codi de programació molt útil per un projecte en el que estem treballant. Els usem per a mantenir separats els diversos trossos de codi que volem per a diversos projectes, així les coses no es barregen entre projectes.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
