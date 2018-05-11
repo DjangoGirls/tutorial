@@ -24,7 +24,7 @@ Aquesta àrea inferior és la teva *terminal*, on li donaràs les instruccions a
 
 Un entorn virtual (també anomenat virtualenv o virtual environment) és com una caixa privada on podem posar-hi codi de programació molt útil per un projecte en el que estem treballant. Els usem per a mantenir separats els diversos trossos de codi que volem per a diversos projectes, així les coses no es barregen entre projectes.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Al vostre terminal a la part inferior de la interfície de Cloud 9, executeu el següent:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +32,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Si això encara no funciona, demana ajuda al teu entrenador.
 
-Next, run:
+A continuació, executa:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,16 +45,16 @@ Next, run:
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(nota que a l'última línia utilitzem una titlla seguit per un signe igual: ~=).
 
 ### Github
 
-Make a [Github](https://github.com) account.
+Crea un compte a [Github](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+El tutorial de Django Girls inclou un apartat en què s'anomena Desplegament, que és el procés de prendre el codi que alimenta la seva aplicació web nova i desplaçar-lo a un ordinador accessible públicament (anomenat un servidor) així altres persones poden veure el teu treball.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Aquesta part és una mica estranya quan es fa el tutorial a un Chromebook ja que ja estem utilitzant un ordinador que és a Internet (per contra de, diguem, un portàtil). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
