@@ -32,10 +32,10 @@
             "grid-columns": 3
         },
         "sidebar-ad": {
-            "imageUrl": "https://djangogirls.org/static/img/global/tshirt.png",
+            "imageUrl": "https://cdn.shopify.com/s/files/1/0992/7712/products/codelikeagirl---mockup4_large.jpg",
             "url": "https://store.djangogirls.org/",
-            "description": "💖 Support us. Buy a T-shirt! ✨",
-            "btnText": "Buy now!"
+            "description": "💖 Support our work and buy a Django Girls t-shirt! ✨",
+            "btnText": "Get a t-shirt!"
         },
         "sectionx": {
             "tag": "b"
