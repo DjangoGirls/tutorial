@@ -11,7 +11,7 @@ Cloud 9 est un outil qui vous donne un éditeur de code et un accès à un ordin
 5. Appelez-le *django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
 
-Maintenant, vous pouvez voir une interface avec une barre latérale, une grande fenêtre principale avec certains texte, et d'une petite fenêtre en bas qui ressemble à quelque chose comme ceci:
+Maintenant, vous pouvez voir une interface avec une barre latérale, une grande fenêtre principale avec du texte et une petite fenêtre en bas qui ressemble à quelque chose comme ceci:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -22,7 +22,7 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 ### Environnement virtuel
 
-Un environnement virtuel (également appelé un virtualenv) est comme un privé de la boîte, nous pouvons des trucs utiles code informatique dans un projet que nous travaillons. Nous les utilisons pour gardez les différents morceaux de code que nous voulons pour nos différents projets distincts pour les choses ne se mélangent entre les projets.
+Un environnement virtuel (également appelé un virtualenv) est comme un privé de la boîte, nous pouvons des trucs utiles code informatique dans un projet que nous travaillons. Nous les utilisons pour garder les différents morceaux de code que nous voulons pour nos différents projets distincts ainsi les choses ne se mélangent entre les projets.
 
 Dans votre terminal, au bas de la Cloud 9 interface, exécutez la commande suivante:
 
