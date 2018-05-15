@@ -1,22 +1,22 @@
 # Qu'est-ce que Django?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. Un framework web est un ensemble de composants qui vous aide à développer des sites web plus rapidement et plus facilement.
+Django (*/ˈdʒæŋɡoʊ/ jang-goh*) est un framework web gratuit et open-source écrit en Python. Un framework web est un ensemble de composants qui vous aide à développer des sites web plus rapidement et plus facilement.
 
 Lorsque vous créez un site web, vous avez souvent besoin de la même chose : une manière de gérer l'authentification de vos utilisateurs (créer un compte, se connecter, se déconnecter), une partie dédiée à la gestion de votre site, des formulaires, une manière de mettre en ligne des fichiers, etc.
 
-Heureusement pour vous, d'autres personnes ont réalisé depuis longtemps que les développeurs web font face au même problème lors de la construction d'un nouveau site, donc ils travaillent ensemble et créent un framework (Django étant un) qui vous donne des composants prêts à l'emploi.
+Heureusement pour vous, d'autres personnes ont réalisé depuis longtemps que les développeurs web font face aux mêmes problèmes lors de la construction d'un nouveau site, donc ils travaillent ensemble et créent un framework (Django étant un) qui vous donne des composants prêts à l'emploi.
 
-Le cadre existe pour vous éviter d'avoir à réinventer la roue et aider à réduire les frais généraux lorsque vous construisez de nouveaux sites.
+Les Frameworks existent pour vous éviter d'avoir à réinventer la roue et aider à réduire les frais généraux lorsque vous construisez de nouveaux sites.
 
 ## Pourquoi est-ce que vous auriez besoin d'un framework ?
 
 Pour comprendre ce qu'est exactement Django, nous devons regarder de plus près le serveur. La première chose est que le serveur doit savoir que vous voulez vous servir une page Web.
 
-Imaginez une boîte aux lettres (un port) dont l'arrivée de lettres (une requête) serait surveillée. C'est le travail qu'effectue le serveur. Le serveur Web lit la lettre et envoie une réponse halaman avec une Web. Généralement, lorsque vous voulez envoyer quelque chose, vous avez besoin de contenu. Django est quelque chose qui va vous aider à créer ce contenu.
+Imaginez une boîte aux lettres (un port) dont l'arrivée de lettres (une requête) serait surveillée. C'est le travail qu'effectue le serveur. Le serveur Web lit la lettre et renvoie une page Web en réponse. Généralement, lorsque vous voulez envoyer quelque chose, vous avez besoin de contenu. Django est quelque chose qui va vous aider à créer ce contenu.
 
 ## Que se passe-t-il quand quelqu'un demande un site web à votre serveur ?
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. Il prend d'abord une adresse de page Web et essaie de savoir quoi faire. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). Ce n'est pas très intelligent - il faut une liste de modèles et essaie de faire correspondre l'URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Lorsqu'une requête arrive sur un serveur web, elle est transmise à Django dont le premier travail va être de comprendre ce qui est demandé. Il prend d'abord une adresse de page Web et essaie de savoir quoi faire. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). Ce n'est pas très intelligent - il faut une liste de modèles et essaie de faire correspondre l'URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
 Afin d'y voir un peu plus clair, imaginez une postière transportant une lettre. Elle descend la rue et vérifie à chaque maison si le numéro de celle-ci correspond à celui de la lettre. Si jamais les deux numéros correspondent, elle met la lettre dans la boîte aux lettres de cette maison. C'est à peu près comme cela que fonctionne l'urlresolver !
 
