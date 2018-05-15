@@ -53,7 +53,7 @@ Créez un compte [Github](https://github.com).
 
 ### PythonAnywhere
 
-Le Django Filles didacticiel comprend une section sur ce qui est appelé le Déploiement, qui est le processus de la prise du code que les pouvoirs de votre application web et de le déplacer vers un ordinateur public (appelé serveur) afin que les autres les gens peuvent voir votre travail.
+Le tutoriel Django Girls comprend une section sur ce qui est appelé le Déploiement, processus qui permet de déplacer le code de votre application web vers un ordinateur public (appelé serveur) pour que d'autres personnes puissent voir votre travail.
 
 Cette partie est un peu bizarre quand on fait le tutoriel sur un Chromebook depuis que nous sommes déjà l'utilisation d'un ordinateur sur l'Internet (par opposition, par exemple, un ordinateur portable). Cependant, il est toujours utile, comme on pourrait le penser de notre Cloud 9 l'espace de travail comme un lieu ou notre "progrès" travail et Python n'importe où comme un lieu de montrer nos trucs comme il devient de plus en plus complète.
 
