@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> Cette œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution — Partage dans les Mêmes Conditions 4.0 International. Pour obtenir une copie de cette licence, visitez https://creativecommons.org/licenses/by-sa/4.0/deed.fr
+> Cette œuvre est mise à disposition selon les termes de la Licence Creative Commons Attribution — ShareAlike 4.0 International. Pour consulter une copie de cette licence, visitez https://creativecommons.org/licenses/by-sa/4.0/deed.fr
 
 ## Bienvenue
 
