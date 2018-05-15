@@ -24,7 +24,7 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 Un environnement virtuel (également appelé un virtualenv) est comme un privé de la boîte, nous pouvons des trucs utiles code informatique dans un projet que nous travaillons. Nous les utilisons pour garder les différents morceaux de code que nous voulons pour nos différents projets distincts ainsi les choses ne se mélangent entre les projets.
 
-Dans votre terminal, au bas de la Cloud 9 interface, exécutez la commande suivante:
+Dans votre terminal, au bas de l'interface Cloud 9, exécutez la commande suivante:
 
 {% filename %}Cloud 9{% endfilename %}
 
