@@ -1,6 +1,6 @@
-Choisir un éditeur de texte parmi tous ceux qui sont disponibles est surtout une histoire de goûts personnels. La plupart des programmeurs·ses Python utilisent des IDE (Environnements de développement intégrés) complexes mais très puissants, comme Pycharm par exemple. Ce n'est pas forcément le meilleur choix pour débuter : ceux que nous vous recommandons sont tout aussi puissants, mais beaucoup plus simples à utiliser.
+Choisir un éditeur de texte parmi tous ceux qui sont disponibles est surtout une histoire de goûts personnels. La plupart des programmeurs·ses Python utilisent des IDE (Environnements de Développement Intégrés) complexes mais très puissants, comme PyCharm par exemple. Ce n'est pas forcément le meilleur choix pour débuter : ceux que nous vous recommandons sont tout aussi puissants, mais beaucoup plus simples à utiliser.
 
-Nos suggestions sont listées ci-dessous, mais n'hésitez pas à demander à vos coachs quelles sont ses préférences - il sera plus facile d'obtenir de l'aide de leur part.
+Nos suggestions sont listées ci-dessous, mais n'hésitez pas à demander à vos coachs quelles sont leurs préférences - il sera plus facile d'obtenir de l'aide de leur part.
 
 ## Gedit
 
@@ -10,7 +10,7 @@ Gedit est un éditeur libre et gratuit disponible pour tout les systèmes d'expl
 
 ## Sublime Text 3
 
-Sublime Text est un très populaire de l'éditeur avec une période d'évaluation gratuite et elle est disponible pour tous les systèmes d'exploitation.
+Sublime Text est un éditeur très populaire avec une période d'évaluation gratuite et il est disponible pour tous les systèmes d'exploitation.
 
 [Télécharger](https://www.sublimetext.com/3)
 
