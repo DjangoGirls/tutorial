@@ -10,7 +10,7 @@ Gedit 是开源、免费的编辑器，支持所有操作系统。
 
 ## Sublime Text 3编辑器
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text 是一个很受欢迎的、免费试用的编辑器，它很容易安装和使用，并且支持所有操作系统。
 
 [在这里下载](https://www.sublimetext.com/3)
 
