@@ -2,7 +2,7 @@
 
 テンプレートとは何でしょうか？
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+テンプレートは、異なる情報を統一された形式で示すために繰り返し使われるファイルです。例えば、テンプレートは手紙を書く際に役立ちます。それぞれの手紙のメッセージは様々で、宛先も別々かもしれませんが、どの手紙も同じフォーマットを共有できるのです。
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
