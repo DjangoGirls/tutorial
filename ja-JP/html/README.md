@@ -87,11 +87,11 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 ブラウザは、どうやって、"Ola's blog"があなたのウェブサイトのタイトルだと理解したのか分かりましたか？ ブラウザは、`<title>Ola's blog</title>`の意味を解釈して、あなたのブラウザのタイトルバーに文を配置したのです(この文はブックマークなどにも利用されます)。
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+各々の開始タグは*閉じタグ*とセットで、閉じタグには`/`が付いていて、タグの要素は*入れ子*になっていることに気がついたことと思います(つまり、ある特定のタグを閉じるには、その中にある全てのタグも閉じられていないとだめなのです)。
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+箱の中にものを詰め込むのと同じですね。 大きな箱、 `<html></html>`があります; その中に`<body></body>`があり、さらにもっと小さな`<p></p>`が入っているのです。
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+こうした*閉じ*タグと、*入れ子*のルールを守らくてはいけません - そうしないと、ブラウザはタグを適切に解釈することができず、あなたのウェブページが正しく表示されなくなるのです。
 
 ## テンプレートのカスタマイズ
 
