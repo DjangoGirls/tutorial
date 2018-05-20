@@ -14,7 +14,7 @@ Pythonであそぶために、*コマンドライン* を開きましょう。 �
 
 準備ができたら、次の指示に従ってやってみましょう。
 
-Pythonコンソールを開きましょう。Windowsなら `python` 、Mac OSやLinuxなら `python3` とタイプして `Enter` キーをおしてください。
+Pythonコンソールを開きましょう。Windowsなら `python` 、Mac OSやLinuxなら `python3` とタイプして `Enter` キーを押してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,7 +30,7 @@ Pythonのコマンドが走ると、プロンプト記号が `>>>` に変わり�
 
 Pythonコンソールを終わる時は、`exit()` とタイプするか、ショートカット `Ctrl + Z`（Windows）、`Ctrl + D`（Mac/Linux）で終了です。 `>>>` は現れなくなりました。
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+けど、今はまだコンソールを終了しないで、もっと動かして学びましょう。簡単な計算からはじめましょう。`2 + 3` とタイプして、`Enter` キーを押してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,7 +39,7 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+できました！答えがでてきましたね。Pythonは計算ができます。他にも、次のようなコマンドを試してみましょう：
 
 - `4 * 5`
 - `5 - 1`
@@ -52,7 +52,7 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+ちょっとの間楽しんであそんでみたら、またココに戻ってきてくださいね。:)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
