@@ -41,9 +41,9 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 
 できました！答えがでてきましたね。Pythonは計算ができます。他にも、次のようなコマンドを試してみましょう。
 
-- `4 * 5`
-- `5 - 1`
-- `40 / 2`
+- `<code>4 * 5`</code>
+- `<code>5 - 1`</code>
+- `<code>40 / 2`</code>
 
 2の3乗のような指数の計算は、次のようにタイプします。{% filename %}command-line{% endfilename %}
 
@@ -236,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-エラーになりました！ 前回とは違うエラータイプです。**NameError** という、初めてみるエラータイプですね。 作成されていない変数を使った時は、Pythonがエラーを教えてくれます。 If you encounter this error later, check your code to see if you've mistyped any names.
+エラーになりました！ 前回とは違うエラータイプです。**NameError** という、初めてみるエラータイプですね。 作成されていない変数を使った時は、Pythonがエラーを教えてくれます。 もし、このエラーに出くわしたら、記述したコードにタイプミスがないか確認してください。
 
-Play with this for a while and see what you can do!
+ちょっと遊んで、何ができるか試してみてくださいね！
 
 ## The print function
 
-Try this:
+次に挑戦してみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -254,15 +254,15 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+単に `name` とタイプした時は、Pythonインタプリタが、変数'name'の *representation* を返します。ここでは、 M-a-r-i-aという単なる文字の集まりで、シングルクォーテーション（''）に囲われています。 しかし、`print(name)`と記述した時は、Pythonは変数の中身を出力します。クォーテーションはありません。
 
 As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
 ## Lists
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+数値と文字列の他にも、すべてのオブジェクトタイプを勉強しておきましょう。 **list** というものがあります。 リストは、その名のとおり、オブジェクトの並びをもつものですね。 :)
 
-Go ahead and create a list:
+まずはリストを作りましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -271,7 +271,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+はい、このリストは空っぽです。使いにくいですよね。では、くじ引きの番号のリストを作りましょう。 この番号を何度も繰り返し書きたくはないから、同時に変数に代入してしまいましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+よし、これでリストができました！このリストで何をしましょうか？では、くじ引きの番号がいくつあるか、数えてみましょう。何の関数を使えばいいか、予想できますか？すでに知っていますよね！
 
 {% filename %}command-line{% endfilename %}
 
