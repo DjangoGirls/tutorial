@@ -10,7 +10,7 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 
 ## ブログ一覧テンプレート
 
-前の章で、posts変数でテンプレートに記事のリストを渡しました。今からHTMLで表示をしてみましょう。
+前の章で、`posts` 変数でテンプレートに記事のリストを渡しました。今からHTMLで表示をしてみましょう。
 
 Djangoテンプレートで変数を表示する為には、変数の名前を二重括弧で括ります:
 
