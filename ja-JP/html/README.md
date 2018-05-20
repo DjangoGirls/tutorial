@@ -139,14 +139,14 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 ここで3つの `div` セクションを作成しました。
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* 最初の `div` 要素には、私たちのブログのタイトルが含まれています。見出しとリンクです。
+* その他の２つの`div`要素には、このブログにポストされた記事が公開日とともに記載されています。`h2`はクリック可能な記事のタイトルです。２つの`p`(段落) は、１つが日付で、１つがブログにポストされた記事です。
 
-It gives us this effect:
+その結果、次のような結果が得られます。
 
 ![図 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+や～っ。 ところが今のところ、私たちのテンプレートは、常に完全に**同じ情報**だけしか表示できません。一方で、以前は、テンプレートを使えば、**異なる**情報を**同じ形式**で表示できるようになるとお伝えしていたのですが。
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
