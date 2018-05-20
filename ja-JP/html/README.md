@@ -10,7 +10,7 @@ Djangoのテンプレートのフォーマットは、HTML(**第1章「インタ
 
 HTMLは、ChromeやFirefox、Safariなどのウェブブラウザで解読され、利用者にウェブページを表示するためのコードです。
 
-HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。 **HyperText**とは、これが別々のウェブページ同士を関連づけるために使われるテキスト形式だ、ということを意味しています。 **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。 **HyperText**とは、これが別々のウェブページ同士を関連づけるために使われるテキスト形式だ、ということを意味しています。 **Markup**とは、一つの書類について、コードで修飾を付けて、何かに(この場合、ブラウザに) どう解釈するかを伝えることを意味します。 HTMLコードは、 `<`で始まり、 `>`で終わる**タグ**で構成されています。 これらのタグが、markup修飾を意味しているのです。
 
 ## 最初のテンプレート
 
