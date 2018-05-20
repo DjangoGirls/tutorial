@@ -114,7 +114,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 </code></pre>
   
   <p>
-    <code>h1 a</code>はCSSセレクタと呼ばれるものです。 This means we're applying our styles to any <code>a</code> element inside of an <code>h1</code> element. So when we have something like <code>&lt;h1&gt;&lt;a href=""&gt;link&lt;/a&gt;&lt;/h1&gt;</code>, the <code>h1 a</code> style will apply. この場合、その要素を<code>#FCA205</code>に、つまりオレンジ色にしようとしています。 もちろん、あなたの好きな色に変えられます！
+    <code>h1 a</code>はCSSセレクタと呼ばれるものです。 <code>h1</code> 要素の中にある <code>a</code> 要素にスタイルを適用します、という意味になります。 So when we have something like <code>&lt;h1&gt;&lt;a href=""&gt;link&lt;/a&gt;&lt;/h1&gt;</code>, the <code>h1 a</code> style will apply. この場合、その要素を<code>#FCA205</code>に、つまりオレンジ色にしようとしています。 もちろん、あなたの好きな色に変えられます！
   </p>
   
   <p>
