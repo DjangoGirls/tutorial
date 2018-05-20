@@ -1,4 +1,4 @@
-# ジャンゴってなに？
+# Djangoってなに？
 
 Django (/ˈdʒæŋɡoʊ/ *jang-goh* ジャンゴ と読みます) 無料でオープンソースとして公開されているPythonを使用したWebアプリケーションフレームワークです。 Web フレームワークは、素早く、簡単にウェブサイトを開発するのに役立つコンポーネントの一式が含まれています。
 
@@ -16,12 +16,12 @@ Djangoを本当に理解するために、サーバーの役割についても�
 
 ## 誰かがあなたのWEB サイトにリクエストを要求したときどうなりますか。
 
-Webサーバーにリクエストがあると、Djangoに伝えられ、リクエストの内容を把握しようとします。 まずWebページのアドレスを調べ、リクエストに対して何をするか決めます。 これは、Djangoの**urlresolver**が行います。（WebサイトのアドレスはURLと呼ばれます。 Uniform Resource Locator の略です。-resolverとは「解決するもの」という意味ですので、*urlresolver* というのはうなずけますよね。)。 It is not very smart – it takes a list of patterns and tries to match the URL. Djangoは上から下にURLパターンを順に調べていきます。そこで何かがマッチすると、Djangoは*ビュー*と呼ばれる関数にリクエストを送ります。
+Webサーバーにリクエストがあると、Djangoに伝えられ、リクエストの内容を把握しようとします。 まずWebページのアドレスを調べ、リクエストに対して何をするか決めます。 これは、Djangoの**urlresolver**が行います。（WebサイトのアドレスはURLと呼ばれます。 Uniform Resource Locator の略です。-resolverとは「解決するもの」という意味ですので、*urlresolver* というのはうなずけますよね。)。 パターンのリストを受け取って、URLに一致するものを探します。あまり賢いとはいえません。 Djangoは上から下にURLパターンを順に調べていきます。そこで何かがマッチすると、Djangoは*ビュー*と呼ばれる関数にリクエストを送ります。
 
-郵便配達員を思い浮かべてください。 配達員は、通りを歩き、ひとつひとつの家の番地と、手紙に書かれている番地を見比べて行きます。 マッチする番地があったら、手紙をそこに置いていきます。 これがurlresolverがどのように動いているか、です。
+郵便配達員を思い浮かべてください。 配達員は、通りを歩き、ひとつひとつの家の番地と、手紙に書かれている番地を見比べて行きます。 マッチする番地があったら、手紙をそこに置いていきます。 urlresolverも同じ仕組みです。
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. ユーザはデータにおいて何か変更するために尋ねるだろうか？ Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+*ビュー*関数では、面白いことが行われます。私たちは、データベースに情報を探しにいきます。 時に、ユーザーがデータを変更するよう求めてきますよね？ 例えば、「私の仕事内容を変えて下さい」といった手紙のように。*ビュー*は、まずあなたにその権限があるか確認します。次に、仕事内容を書き換えて、「完了しました！」というメッセージをあなたに送り返します。そして、*ビュー*が反応を返して、DjangoがユーザーのWebブラウザに情報を送ります。
 
-もちろん、上の説明は少し簡単に書きましたが、まだすべての技術的なことを知る必要はないです。一般的な考え方を持つだけで十分です。
+もちろん、上記の説明は、多少簡略化して説明しています。しかし、今ここでは、技術的なことを完璧に理解する必要はありません。概念が分かれば十分です。
 
-細部に多くの時間を費やすより、Djangoで何かを作ることをはじめましょう、そしてやり方に沿って重要な部分を学びましょう！
+れ以上詳細について深く説明するより、きっと、Djangoを使って実際に手を動かして作ってみる方がいいでしょう。重要な事はすべてその過程で学べますよ!
