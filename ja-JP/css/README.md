@@ -54,7 +54,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </h3>
   
   <p>
-    Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, <code>blog</code>.
+    Djangoは、ビルトインの "admin" アプリにより、静的ファイルをどこで探せばいいのかわかっています。私たちがやることは、<code>blog</code>アプリのための静的ファイルを追加することだけです。
   </p>
   
   <p>
