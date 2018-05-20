@@ -436,9 +436,9 @@ KeyError: 'age'
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+お分かり頂けたでしょうか。 :) では、ディクショナリを使ってもう少し練習してみましょう。準備ができたら、次の行にいってみましょう。
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+ディクショナリの要素を削除する時は、`pop()` メソッドを使います。 例えば、 キー `'favorite_numbers'` の要素を削除するには、次のように記述してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -449,9 +449,9 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+このように、`'favorite_numbers'` のキーと値が削除されます。
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+同様に、次のように記述することで、すでにあるキーの値を変更することができます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,15 +461,15 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+これで、キー `'country'` の値は、`'Poland'` から `'Germany'` に変わりました。面白くなってきましたか？その調子です！
 
-### 概要
+### Summary
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+素晴らしいです！これで、あなたはプログラミングについて沢山のことを学びました。ここまでのところをまとめましょう。
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
+- **エラー** - あなたのコマンドをPythonが理解できない時にエラーが表示されます。
+- **変数** – コードを簡単にまた読みやすくするために、文字や数値などのオブジェクトにつける名札。
+- **リスト** – 複数の値（要素）が順に並んでいるもの。
 - **dictionaries** – objects stored as key–value pairs
 
 Excited for the next part? :)
