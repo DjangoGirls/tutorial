@@ -951,9 +951,9 @@ hi("Sonja")
     Hi anonymous!
     
 
-すばらしいですね。 This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+すばらしいですね。 挨拶をする人の名前を変えるたびに繰り返しコードを書く必要がなくなりました。 これが関数を作る理由です。何度も繰り返してコードを書く必要はありません！
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+もっとスマートなやり方を試してみましょう。– ２人以上の名前があり、それぞれに対して条件をつけるのは大変ですよね。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -964,7 +964,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+では、実行してみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -972,17 +972,17 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+おめでとうございます！関数の書き方を学びましたね。:)！
 
 ## Loops
 
 > For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
 
-This is the last part already. That was quick, right? :)
+さぁ、もう最後のパートですよ。あっという間ですね。 :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+先ほどお話ししたとおり、プログラマーはめんどくさがりで、同じことを繰り返すことは好きではありません。プログラミングはすべてを自動的に処理したい。私たちはすべての人の名前ひとつひとつに対して挨拶をしたくないですよね？こういう時にループが便利です。
 
-Still remember lists? Let's do a list of girls:
+リストを覚えていますか？女の子の名前をリストにしてみましょう。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -990,7 +990,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+名前を呼んで、全員にあいさつをしてみましょう。`hi` 関数が使えますね。ループの中で使いましょう。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -998,9 +998,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+この `for` は `if` に似ています。この次に続くコードは、４つスペースを入れる必要があります。
 
-Here is the full code that will be in the file:
+ファイルに書かれるコードはこのようになります。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1014,7 +1014,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+実行してみましょう。
 
 {% filename %}command-line{% endfilename %}
 
