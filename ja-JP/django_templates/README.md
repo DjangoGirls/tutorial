@@ -1,6 +1,6 @@
 # Djangoテンプレート
 
-何かデータを表示しましょう！Djangoはそれをビルトインの **テンプレートタグ** で実現できます。
+何かデータを表示しましょう！Djangoはそれをビルトインの**テンプレートタグ**で実現できます。
 
 ## テンプレートタグとは？
 
@@ -12,7 +12,7 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 
 前の章で、`posts` 変数でテンプレートに記事のリストを渡しました。今からHTMLで表示をしてみましょう。
 
-Djangoテンプレートで変数を表示する為には、変数の名前を二重括弧で括ります:
+Djangoテンプレートで変数を表示するためには、次のように変数の名前を二重中括弧で括ります。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
