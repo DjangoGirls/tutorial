@@ -1,12 +1,12 @@
 # ジャンゴってなに？
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. Web フレームワークは、素早く、簡単にウェブサイトを開発するのに役立つコンポーネントの一式が含まれています。
+Django (/ˈdʒæŋɡoʊ/ *jang-goh* ジャンゴ と読みます) 無料でオープンソースとして公開されているPythonを使用したWebアプリケーションフレームワークです。 Web フレームワークは、素早く、簡単にウェブサイトを開発するのに役立つコンポーネントの一式が含まれています。
 
-Web サイトを構築するとき常に同じような一連のコンポーネントを必要があります: ユーザー認証 (登録、サインイン、サインアウト) を処理する方法、あなたのウェブサイト、フォーム、ファイルなどをアップロードする方法の管理パネルです。
+ほら、Webサイトを構築する時、同じような構造が毎回必要になってきますよね。ユーザー認証（サインアップ、サインイン、サインアウト）、管理者用の画面、フォーム、ファイルのアップロードなど。
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+開発者たちはサイトを構築する度に同じ問題を抱えたため、みんなで力を合わせてフレームワークを開発しました。（Djangoはフレームワークのひとつです。）幸運なことに、私たちは、開発に必要な要素がすでに含まれているフレームワークを使って開発することができます。
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+フレームワークを使うことで、私たちは開発をイチから作り直して車輪の再発明をすることを避けられます。また、新しいサイトを構築する際にかかる最初の準備に必要なコストを軽減します。
 
 ## なぜフレームワークを必要とするか。
 
