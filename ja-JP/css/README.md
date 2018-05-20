@@ -227,11 +227,11 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 </code></pre>
   
   <p>
-    まずは、このリンクが <code>blog/static/css/blog.css</code> より前にあることを確かめてください。この１行は <em>Lobster</em> というフォントをGoogle Fonts (https://www.google.com/fonts)から読み込むということを意味しています。
+    まずは、このリンクが <code>blog/static/css/blog.css</code> より前にあることを確かめましょう。この１行は <em>Lobster</em> というフォントをGoogle Fonts (https://www.google.com/fonts)から読み込むということを意味しています。
   </p>
   
   <p>
-    <code>blog/static/css/blog.css</code> ファイルの中の、 <code>h1 a</code>というのブロックを見つけてください（コードは<code>{</code> と <code>}</code>で囲まれています）。 Now add the line <code>font-family: 'Lobster';</code> between the braces, and refresh the page:
+    <code>blog/static/css/blog.css</code> ファイルの中の、 <code>h1 a</code>というのブロックを見つけてください（コードは<code>{</code> と <code>}</code>で囲まれています）。 そして、そのカッコの中に <code>font-family: 'Lobster';</code> と１行追加して、ブラウザを更新してみましょう：
   </p>
   
   <p>
@@ -253,7 +253,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </p>
   
   <p>
-    As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+    前述のように、CSS は、クラスの概念を持っています。 これらは、HTMLコードの一部の名前を指定し、他の部分に影響を与えずにこの部分にだけスタイルを適用することができます。 なんて便利なんでしょう！ 例えば、２つのdiv要素（ヘッダーと本文など）があったとして、これらのそれぞれに違うスタイルを適用することができます。 A class can help you make them look different.
   </p>
   
   <p>
