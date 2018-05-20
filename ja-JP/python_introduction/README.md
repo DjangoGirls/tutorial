@@ -871,13 +871,13 @@ hi()
     How are you?
     
 
-メモ：思ったように動かなくても慌てないで！エラーは動かない理由を掴むのに役立ちます。
+メモ：思ったように動かなくても慌てないで！画面の出力は動かない理由を掴むのに役立ちます。
 
 - `NameError` が出ている場合、おそらく何かミスタイプがあります。同じ名前を使っているかチェックしましょう。関数を定義するときは `def hi():` としていますか？関数を実行するときは `hi()` としていますか？
 - `IndentationError` が出ている場合、`print` 関数の2行が同じ数のスペースでインデントされているかチェックしましょう。関数の中のコードは同じ数のスベースでインデントされているとPythonは考えます。
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- 画面に何も表示されていない場合、最後の `hi()` がインデントされて *いない* かチェックしましょう。– もしインデントされていたら、関数の一部になってしまっています。関数が呼び出されていません。
 
-Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+次に引数（ひきすう）をつかった関数を作ってみましょう。先ほどの例を使います。'hi' という挨拶をする関数に、挨拶をする人の名前をいれてみます。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -885,7 +885,7 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+このとおり、関数に `name` という引数を足します。
 
 {% filename %}python_intro.py{% endfilename %}
 
