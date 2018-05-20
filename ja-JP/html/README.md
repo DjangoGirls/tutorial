@@ -4,13 +4,13 @@
 
 テンプレートは、異なる情報を統一された形式で示すために繰り返し使われるファイルです。例えば、テンプレートは手紙を書く際に役立ちます。それぞれの手紙のメッセージは様々で、宛先も別々かもしれませんが、どの手紙も同じフォーマットを共有できるのです。
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+Djangoのテンプレートのフォーマットは、HTML(**第1章「インターネットはどう動くのか」**で触れたHTMLのことです) と呼ばれる言語で書かれています。
 
 ## HTMLとは？
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTMLは、ChromeやFirefox、Safariなどのウェブブラウザで解読され、利用者にウェブページを表示するためのコードです。
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。 **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
 ## 最初のテンプレート
 
