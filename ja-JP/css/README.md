@@ -70,7 +70,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 </code></pre>
   
   <p>
-    Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+    Djangoは、全てのアプリのフォルダ内の "static" と名づけられた全てのフォルダを自動的に探して、その中身を静的ファイルとして使えるようにします。
   </p>
   
   <h2>
@@ -78,7 +78,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </h2>
   
   <p>
-    Let's create a CSS file now, to add your own style to your web page. <code>static</code>ディレクトリの中に<code>css</code>というディレクトリを作成しましょう。 そして、その<code>css</code>ディレクトリの中に<code>blog.css</code>という新規ファイルを作ります。 Ready?
+    CSSファイルを作って、Webサイトにあなたのスタイル設定していきましょう。 <code>static</code>ディレクトリの中に<code>css</code>というディレクトリを作成しましょう。 そして、その<code>css</code>ディレクトリの中に<code>blog.css</code>という新規ファイルを作ります。 Ready?
   </p>
   
   <pre><code>djangogirls
