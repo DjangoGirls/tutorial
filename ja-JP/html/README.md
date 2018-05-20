@@ -85,7 +85,7 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 ![図 11.3](images/step4.png)
 
-ブラウザは、どうやって、"Ola's blog"があなたのウェブサイトのタイトルだと理解したのか分かりましたか？ It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+ブラウザは、どうやって、"Ola's blog"があなたのウェブサイトのタイトルだと理解したのか分かりましたか？ ブラウザは、`<title>Ola's blog</title>`の意味を解釈して、あなたのブラウザのタイトルバーに文を配置したのです(この文はブックマークなどにも利用されます)。
 
 Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
