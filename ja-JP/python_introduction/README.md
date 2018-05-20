@@ -620,16 +620,16 @@ print('Hello, Django girls!')
 
 あなたは、すでにベテランのpython開発者です。今日学んだコードを自由に書いてみてください。
 
-コードを書いたら、わかりやすい名前をつけて保存しましょう。 **python_intro.py** と名前をつけて、デスクトップに保存してください。 We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+コードを書いたら、わかりやすい名前をつけて保存しましょう。 **python_intro.py** と名前をつけて、デスクトップに保存してください。 ファイル名は何でもかまいません。ここで重要なことは、拡張子を **.py** とすることです。 コンピュータにこのファイルは **Pythonで実行するファイルです** とおしえます。
 
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. これは「構文」と呼ばれています「ハイライトする」こと、そして、コーディングとき、それは本当に役に立つ特徴です。 The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). これが私たちがコードエディタを使う理由の１つです. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+ファイルを保存したら、実行してみましょう！コマンドラインのセクションで学んだことを思い出して、ターミナルの **ディレクトリを変更** して、デスクトップにしましょう。
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Macでは、コマンドは次のようになります。
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,7 +641,7 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+Linuxでは、次のようになります。("Desktop"のところは"デスクトップ"と表示されているかも知れません):
 
 {% filename %}command-line{% endfilename %}
 
@@ -652,7 +652,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Windowsのコマンドプロンプトでは、次のようになります。
 
 {% filename %}command-line{% endfilename %}
 
@@ -663,7 +663,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+WindowsのPowerShellでは、次のようになります。
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,9 +672,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, just ask for help.
+うまくできない時は、質問してください。
 
-Now use Python to execute the code in the file like this:
+次に、ファイルのコードを実行します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -682,7 +682,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+メモ：Windowsでファイルのコードを実行するときは、'python3' の代わりに 'python' とタイプしましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -690,9 +690,9 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+できました！これで、あなたはファイルに保存されたPythonプログラムを実行できましたね。いい気分ですね。
 
-You can now move on to an essential tool in programming:
+では、ここからプログラミングに不可欠のツールを学んでいきましょう。
 
 ## If … elif … else
 
