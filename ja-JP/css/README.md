@@ -151,7 +151,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 </code></pre>
   
   <p>
-    ブラウザは上から書いた順番でファイルを読み込むので、記述する箇所はよく確かめる必要があります。 Otherwise the code in our file may be overriden by code in Bootstrap files. このようにCSSファイルがどこにあるか示します。
+    ブラウザは上から書いた順番でファイルを読み込むので、記述する箇所はよく確かめる必要があります。 順番が逆になると、私たちが書いたファイルがBootstrapのファイルに上書きされてしまうかもしれません。 このようにCSSファイルがどこにあるか示します。
   </p>
   
   <p>
@@ -208,7 +208,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 </code></pre>
   
   <p>
-    Add that to your CSS, save the file and see how it works!
+    これをCSSに追加して、保存してください。どのように変化したか、さぁ見てみましょう！
   </p>
   
   <p>
