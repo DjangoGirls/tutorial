@@ -52,8 +52,8 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 うまく動いています！よくできました:)
 
-* どんなウェブページでも、最も基本的なタグである`<html>`から始まり、そして常に、`</html>`で終わります。 As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* どんなウェブページでも、最も基本的なタグである`<html>`から始まり、そして常に、`</html>`で終わります。 みなさん見てとれるように、ウェブサイトの全てのコンテンツは、開始タグの`<html>`と閉じタグ`</html>`の間にあります。
+* `<p>`は、段落要素のためのタグです; `</p>` でそれぞれの段落を閉じます。
 
 ## Head and body
 
@@ -65,7 +65,7 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 `<head>`でページの設定をブラウザに伝え、`<body>`でページの内容を伝えます。
 
-For example, you can put a web page title element inside the `<head>`, like this:
+例えば、ウェブページのタイトル要素は`<head>`の中に書きます。こんな感じですね。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -85,7 +85,7 @@ For example, you can put a web page title element inside the `<head>`, like this
 
 ![図 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+ブラウザは、どうやって、"Ola's blog"があなたのウェブサイトのタイトルだと理解したのか分かりましたか？ It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
 Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
