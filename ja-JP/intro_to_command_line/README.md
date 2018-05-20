@@ -22,19 +22,19 @@
 
 Go to Start menu → Windows System → Command Prompt.
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+> Windowsの古いバージョンの場合、[スタートメニュー] → [アクセサリ] → [コマンドプロンプト] です。
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+［アプリケーション］→［ユーティリティ］→［ターミナル］を選択しましょう。
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-おそらく ［アプリケーション］ー［アクセサリ］ー［ターミナル］と選択し起動できるでしょう。あなたのシステムによってはこの通りではないことがあります。見つからないときは、Google先生にきいてみましょう. :)
+おそらく ［アプリケーション］→［アクセサリ］→［ターミナル］と選択し起動できるでしょう。あなたのシステムによってはこの通りではないことがあります。見つからないときは、Google先生にきいてみましょう. :)
 
 <!--endsec-->
 
