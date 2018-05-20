@@ -74,7 +74,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## Your first command (YAY!)
 
-Let's start by typing this command:
+次のようにコマンドを入力してみましょう。:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -104,7 +104,7 @@ Let's start by typing this command:
 
 ご覧のとおり、コンピューターがあなたのユーザーネームを表示してくれましたね。面白いでしょ? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> コピー＆ペーストではなく、コマンドを入力して試してみてください。そのうち自然と覚えられるようになりますからね！
 
 ## Basics
 
