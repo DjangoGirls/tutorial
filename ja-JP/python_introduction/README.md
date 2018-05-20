@@ -69,7 +69,7 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 
 はじめてのString（文字列）が完成です！ Stringとは、文字の集合のことです。 The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
-Strings can be strung together. Try this:
+複数の文字列を結合することもできます。次のように試してみましょう：
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+文字列を繰り返すためには、演算子を使って繰り返し回数を指定することもできます：
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+アポストロフィーを文字列の中に含めたい場合は、２通りの方法があります。
 
-Using double quotes:
+まずは、ダブルクォーテーションを使う方法です：
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+あるいは、バックスラッシュ (``) を使う方法もあります：
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+できましたか？次に、あなたの名前を大文字に変えてみましょう。次のように記述してください：
 
 {% filename %}command-line{% endfilename %}
 
