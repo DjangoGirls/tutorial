@@ -163,23 +163,23 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+`djangogirls` ディレクトリにいることを確認して、 `git` に対してこのディレクトリ内の変更を全て反映させるよう指示してください:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> **ノート** `--all` をつけると、 `git` は、ファイルを削除したかどうかも判定します (これがない初期設定の状態では、新しいファイルと変更されたファイルしか認識しません)。 `.` が、今いるディレクトリを表すということも思い出してくださいね(第３章にありました)。
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+全てのファイルをアップロードする前に、`git`が何をアップロードするのかチェックしておきましょう(`git`がアップロードする全ファイルは緑で表示されます):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+ほぼ完了です。どこを変更したかを履歴に保存するよう指示してみましょう。 We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
 {% filename %}command-line{% endfilename %}
 
