@@ -395,11 +395,11 @@ h1, h2, h3, h4 {
   </p>
   
   <p>
-    Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+    CSSをいじって表示が壊れることを恐れないで、どんどん変更を加えてみてください。 CSSで遊んでみることで、何がどうなっているかを理解できてきます。 たとえ何かを壊してしまっても、心配しないで！すぐに元に戻すことができます。
   </p>
   
   <p>
-    We really recommend taking this free online <a href="https://www.codecademy.com/tracks/web">Codeacademy HTML & CSS course</a>. It can help you learn all about making your websites prettier with CSS.
+    この章の最後に、こちらの無料のオンライン講座を受講することをおすすめします：<a href="https://www.codecademy.com/tracks/web">Codeacademy HTML & CSS course</a> webサイトをCSSで美しくするために多くのことをが学べます。
   </p>
   
   <p>
