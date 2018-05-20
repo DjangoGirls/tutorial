@@ -227,11 +227,11 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 </code></pre>
   
   <p>
-    As before, check the order and place before the link to <code>blog/static/css/blog.css</code>. This line will import a font called <em>Lobster</em> from Google Fonts (https://www.google.com/fonts).
+    まずは、このリンクが <code>blog/static/css/blog.css</code> より前にあることを確かめてください。この１行は <em>Lobster</em> というフォントをGoogle Fonts (https://www.google.com/fonts)から読み込むということを意味しています。
   </p>
   
   <p>
-    Find the <code>h1 a</code> declaration block (the code between braces <code>{</code> and <code>}</code>) in the CSS file <code>blog/static/css/blog.css</code>. Now add the line <code>font-family: 'Lobster';</code> between the braces, and refresh the page:
+    <code>blog/static/css/blog.css</code> ファイルの中の、 <code>h1 a</code>というのブロックを見つけてください（コードは<code>{</code> と <code>}</code>で囲まれています）。 Now add the line <code>font-family: 'Lobster';</code> between the braces, and refresh the page:
   </p>
   
   <p>
