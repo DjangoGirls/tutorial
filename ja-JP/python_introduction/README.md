@@ -901,7 +901,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+上記のように、`print`関数の前に、インデントを２ついれる必要があります。` if の条件式`が真の時に、なにをすべきかという処理はインデントの後に記述します。 実行して、どのように動くか見てみましょう。
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -912,7 +912,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+おっと、エラーがでてしまいました。 Pythonがエラーメッセージを表示してくれています。 定義した関数 `hi()` は、`name` という引数が必要ですが、関数を呼び出す時に引数を忘れてしまっています。 最後の行を修正しましょう。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -920,7 +920,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+実行してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -928,7 +928,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+では、名前を変えてみたらどうなりますか？
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -936,7 +936,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+再度実行してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -944,14 +944,14 @@ And run it:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+では、OlaやSonja以外の名前を入れた時、どうなるかわかりますか？やってみて、予測が正しいか確認して下さい。このように出力されましたか。
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+すばらしいですね。 This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
