@@ -45,7 +45,7 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+2の3乗のような指数の計算は、次のようにタイプします：{% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
@@ -54,11 +54,11 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 
 ちょっとの間楽しんであそんでみたら、またココに戻ってきてくださいね。:)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+お分かりのとおり、Pythonはステキな計算機ですね. 他になにができるんだろう…と思ったら、次にいってみましょう。
 
 ## Strings
 
-How about your name? Type your first name in quotes like this:
+あなたのお名前を次のようにクォーテーションをつけてタイプしてください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,7 +67,7 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+はじめてのString（文字列）が完成です！ Stringとは、文字の集合のことです。 The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
