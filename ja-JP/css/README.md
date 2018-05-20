@@ -93,11 +93,11 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </p>
   
   <p>
-    We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+    ここではCSSのカスタマイズや学習方法については詳しく説明しません。さらに知りたい場合は、このページの最後に無料のCSSの学習コースを紹介していますので、そちらを参考にしてください。
   </p>
   
   <p>
-    ただ、せめて少しはここでやってみましょう。 ヘッダーの色を変えてみるのもいいかもしれませんね。 色を理解するために、コンピュータは特殊なコードを使います。 These codes start with <code>#</code> followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is <code>#0000FF</code>. You can find the color codes for many colors here: http://www.colorpicker.com/. <code>red</code>や<code>green</code>といった<a href="http://www.w3schools.com/colors/colors_names.asp">定義済みの色</a>を利用することもできます.
+    ただ、せめて少しはここでやってみましょう。 ヘッダーの色を変えてみるのもいいかもしれませんね。 色を理解するために、コンピュータは特殊なコードを使います。 コードは、<code>#</code>で始まり、6種類のアルファベット（A-F）や数字（0-9）が続きます。 たとえば、青色のコードは <code>#0000FF</code> です。 カラーコードのサンプルはこのサイトで確認できます：http://www.colorpicker.com/ <code>red</code>や<code>green</code>といった<a href="http://www.w3schools.com/colors/colors_names.asp">定義済みの色</a>を利用することもできます.
   </p>
   
   <p>
