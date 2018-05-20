@@ -20,9 +20,9 @@
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → Windows System → Command Prompt.
+［スタート］→［Windowsシステムツール］→［コマンドプロンプト］を選択しましょう
 
-> Windowsの古いバージョンの場合、[スタートメニュー] → [アクセサリ] → [コマンドプロンプト] です。
+> Windowsの古いバージョンの場合、[スタート] → [アクセサリ] → [コマンドプロンプト] です。
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Go to Start menu → Windows System → Command Prompt.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, just like this:
+MacあるいはLinuxの方は、次のように `$` と表示されているのがわかりますか？
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ If you're on Mac or Linux, you probably see `$`, just like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Windowsの方は、 > という記号が表示されていることでしょう。
+Windowsの方は、 `>` という記号が表示されていることでしょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -66,7 +66,7 @@ Windowsの方は、 > という記号が表示されていることでしょう�
 
 各コマンドの先頭には、この記号とスペースがつきます。あなたのコンピューターが表示してくれるので、自分で入力する必要はありません. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> ちょっと補足です。プロンプト記号の前に `C:\Users\ola>` や `Olas-MacBook-Air:~ ola$` のような表示がありますね。これは間違いではありません。100%正解です。このチュートリアルでは、シンプルにわかりやすくするために、その部分を省略して記述します。
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
