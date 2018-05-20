@@ -23,13 +23,13 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(なぜ、両方とも`blog`という名前の付いたディレクトリを2つ作成する必要があるのか不思議に思う人もいるかもしれません。あとで分かると思いますが、簡単に言うと、これは、もっと複雑なことをやろうとした時に、それが楽にできるようにしてくれる便利な命名法なのです。)
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+それでは、`blog/templates/blog`ディレクトリの中に、`post_list.html`ファイル(とりあえず何も書かれていないファイルにしておきます)を作成しましょう。
 
 あなたのウェブサイトを見てみてください: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> もし、`TemplateDoesNotExist`が引き続き表示されるようなら、自分のサーバーを再起動してみてください。 Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
 ![図 11.1](images/step1.png)
 
