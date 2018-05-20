@@ -46,7 +46,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </h2>
   
   <p>
-    最後に、<strong>静的ファイル</strong>と呼ばれるものを詳しく見ていきましょう。 Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+    最後に、<strong>静的ファイル</strong>と呼ばれるものを詳しく見ていきましょう。 静的ファイルとは、CSSファイルや画像ファイルといった、動的な変更が発生しないファイルのことです。 Their content doesn't depend on the request context and will be the same for every user.
   </p>
   
   <h3>
