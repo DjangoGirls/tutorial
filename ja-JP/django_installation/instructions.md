@@ -145,7 +145,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+`virtualenv` が起動すると、プロンプトの行頭に`(myvenv)`が現れます。
 
 virtual environment(仮想環境)の中で作業しているとき、`python`は自動的に正しいバージョンの`Python`を参照しますので、`python3`の代わりに<0>python</0>を使うことができます.
 
@@ -176,7 +176,7 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 もし含まれている場合は、そのディレクトリを他のスペース・アクセント・特殊文字が含まれていない場所（`C:\djangogirls`など）に移動することを検討してみてください。 Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 もし含まれている場合は、ディレクトリを他のスペース・アクセント・特殊文字が含まれていない場所（`C:\djangogirls`など）で作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境のディレクトリは、絶対パスが使われているので、移動させてもうごきません。）
 
 <!--endsec-->
 
