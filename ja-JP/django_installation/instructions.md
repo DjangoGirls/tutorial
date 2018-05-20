@@ -53,7 +53,7 @@ LnuxやOX Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実行
 
 `myvenv` は、あなたの `仮想環境(virtualenvironment)` の名前です。 どんな名前でも使うことができますが、必ず小文字で表記し、スペースは入れないでください。 短い名前にしておくのもいいアイデアですーあなたはこの名前を何度も参照しますから！
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **補足：**DebianやUbuntuのバージョンによっては、以下のエラーが出ることがあります。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -62,7 +62,7 @@ LnuxやOX Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実行
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> この場合、エラー内の指示にしたがって、`python3-venv`のパッケージをインストールしましょう。 {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
@@ -83,14 +83,14 @@ LnuxやOX Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実行
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **補足：**もし以下のようなエラーがでたら、
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> 代わりに次のコマンドを実行してください。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -147,7 +147,7 @@ data-collapse=true ces-->
 
 `virtualenv` が起動すると、プロンプトの行頭に`(myvenv)`が現れます。
 
-virtual environment(仮想環境)の中で作業しているとき、`python`は自動的に正しいバージョンの`Python`を参照しますので、`python3`の代わりに<0>python</0>を使うことができます.
+Virtual environment(仮想環境) の中で作業しているとき、`python`は自動的に正しいバージョンの`Python`を参照しますので、`python3`の代わりに`python`を使うことができます.
 
 OK,これでDjangoのインストール前に入れておきたい依存関係の準備がすべて整いました。いよいよDjangoのインストールです！
 
