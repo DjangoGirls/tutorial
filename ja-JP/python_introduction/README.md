@@ -135,14 +135,14 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 
 - **プロンプト** – Pythonプロンプトにコマンド（コード）を入力すると、答えがかえってきます。
 - **数値と文字列** – 数値は計算に、文字列はテキストに使われます。
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **演算子** – 例えば `+` や `*` のように、値を計算して新しい値を返します。
+- **関数** – `upper()` や `len()` のようにオブジェクトに対して行う機能のことです。
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+すべてのプログラミング言語に共通する基礎になります。 もう少し難易度の高いものに挑戦してみましょう。準備はいいですか？
 
 ## Errors
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+さて、新しいことをやってみましょう。あなたの名前の文字数を数えたように、数字の文字列は数えられるでしょうか？ `len(304023)` と記述して、`Enter` キーを押してみましょう。
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+はじめてのエラーがでました！ The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+オブジェクトタイプ"int" (integers, 数値) は文字数がありませんと言っています。では、どうすればよいでしょうか？この数字を文字列として扱えれば、文字数を数えられるはずですよね？
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,9 +164,9 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+うまく行きました！ `str` 関数を `len` の中に記述しました。`str()` はその中身を文字列に変換します。
 
-- `Str` 関数 は**文字列** に変換します
+- `str` 関数 は**文字列** に変換します
 - `int` 関数 は**文字整数** に変換します
 
 > Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
