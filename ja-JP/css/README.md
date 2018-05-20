@@ -66,7 +66,7 @@ CSSファイルを作って、Webサイトにあなたのスタイル設定し�
 
 ここではCSSのカスタマイズや学習方法については詳しく説明しません。さらに知りたい場合は、このページの最後に無料のCSSの学習コースを紹介していますので、そちらを参考にしてください。
 
-ただ、せめて少しはここでやってみましょう。 ヘッダーの色を変えてみるのもいいかもしれませんね。 色を理解するために、コンピュータは特殊なコードを使います。 コードは、`#`で始まり、6種類のアルファベット（A-F）や数字（0-9）が続きます。 たとえば、青色のコードは `#0000FF` です。 カラーコードのサンプルはこのサイトで確認できます：http://www.colorpicker.com/ `red` や `green` といった[定義済みの色](http://www.w3schools.com/colors/colors_names.asp)を利用することもできます.
+ただ、せめて少しはここでやってみましょう。 ヘッダーの色を変えてみるのもいいかもしれませんね。 色を理解するために、コンピュータは特殊なコードを使います。 コードは、`#` で始まり、6種類のアルファベット（A-F）や数字（0-9）が続きます。 たとえば、青色のコードは `#0000FF` です。 カラーコードのサンプルはこのサイト http://www.colorpicker.com/ で確認できます。 `red` や `green` といった[定義済みの色](http://www.w3schools.com/colors/colors_names.asp)を利用することもできます.
 
 `blog/static/css/blog.css` ファイルに、次のコードを追加しましょう。
 
@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a` はCSSセレクタと呼ばれるものです。 `h1` 要素の中にある `a` 要素にスタイルを適用します、という意味になります。 よって `<h1><a href="">link</a></h1>`となっているとき、 `h1 a` スタイルが適用されます。 この場合、その要素を `#FCA205` に、つまりオレンジ色にしようとしています。 もちろん、あなたの好きな色に変えられます！
 
-CSSファイルには、HTMLファイルの各要素のスタイルを指定していきます。 まずは要素名でもって、その要素を識別します。 HTMLのタグ名は覚えがあるでしょう。 例えば `a`, `h1`, `body` などが要素名となります。 また、`class` 属性や、`id` 属性によって要素を識別することができます。 classやidは、あなたが自分で要素につけることができる名前です。 classは要素のグループを定義して、idは特定の要素を指定します。 例えば、次のタグは、タグ名`a`、class名`external_link`、id名` link_to_wiki_page`、どれを使ってもCSSによって識別されます。
+CSSファイルには、HTMLファイルの各要素のスタイルを指定していきます。 まずは要素名でもって、その要素を識別します。 HTMLのタグ名は覚えがあるでしょう。 例えば `a`, `h1`, `body` などが要素名となります。 また、`class` 属性や、`id` 属性によって要素を識別することができます。 classやidは、あなたが自分で要素につけることができる名前です。 classは要素のグループを定義して、idは特定の要素を指定します。 例えば、次のタグは、タグ名 `a`、class名 `external_link`、id名 ` link_to_wiki_page`、どれを使ってもCSSによって識別されます。
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -88,7 +88,7 @@ CSSファイルには、HTMLファイルの各要素のスタイルを指定し�
 
 CSSセレクタについては[CSS Selectors in w3schools](http://www.w3schools.com/cssref/css_selectors.asp)を見てください。
 
-さて、CSSを追加したことをHTMLテンプレートに教えないといけません。`blog/templates/blog/post_list.html`を開いて、先頭にこの行を追加しましょう：
+さて、CSSを追加したことをHTMLテンプレートに教えないといけません。`blog/templates/blog/post_list.html` を開いて、先頭にこの行を追加しましょう：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -106,7 +106,7 @@ CSSセレクタについては[CSS Selectors in w3schools](http://www.w3schools.
 
 ブラウザは上から書いた順番でファイルを読み込むので、記述する箇所はよく確かめる必要があります。 順番が逆になると、私たちが書いたファイルがBootstrapのファイルに上書きされてしまうかもしれません。 このようにCSSファイルがどこにあるか示します。
 
-ファイルは次のようになっているはずです:
+ファイルは次のようになっているはずです：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -139,7 +139,7 @@ CSSセレクタについては[CSS Selectors in w3schools](http://www.w3schools.
 
 ![図 14.2](images/color2.png)
 
-素晴らしいですね！あとは、左サイドの余白幅を少し広げて、余裕を持たせてあげたらもっと良くなると思いませんか？やってみましょう。
+素晴らしいですね！あとは、左サイドの余白幅を少し広げて、余裕を持たせてあげたらもっと良くなると思いませんか？やってみましょう！
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -153,7 +153,7 @@ body {
 
 ![図 14.3](images/margin2.png)
 
-ヘッダーのフォントを変えてみませんか？ファイル `blog/templates/blog/post_list.html` の`<head>` タグの中に次の一行を貼り付けましょう。
+ヘッダーのフォントを変えてみませんか？ファイル `blog/templates/blog/post_list.html` の `<head>` タグの中に次の一行を貼り付けましょう。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -163,7 +163,7 @@ body {
 
 まずは、このリンクが `blog/static/css/blog.css` より前にあることを確かめましょう。この１行は *Lobster* というフォントをGoogle Fonts (https://www.google.com/fonts)から読み込むということを意味しています。
 
-`blog/static/css/blog.css` ファイルの中の、 `h1 a`という宣言ブロックを見つけてください（コードは`{` と `}`で囲まれています）。 そして、そのカッコの中に `font-family: 'Lobster';` と１行追加して、webサイトを更新してみましょう：
+`blog/static/css/blog.css` ファイルの中の、 `h1 a` という宣言ブロックを見つけてください（コードは `{` と `}` で囲まれています）。 そして、そのカッコの中に `font-family: 'Lobster';` と１行追加して、webサイトを更新してみましょう：
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -178,7 +178,7 @@ h1 a {
 
 素晴らしいです！
 
-前述のように、CSS は、クラスの概念を持っています。 これらは、HTMLコードの一部の名前を指定し、他の部分に影響を与えずにこの部分にだけスタイルを適用することができます。 なんて便利なんでしょう！ 例えば、２つのdiv要素（ヘッダーと本文など）があったとして、これらのそれぞれに違うスタイルを適用することができます。 クラスを利用すると、違う見た目にできるのです。
+前述のように、CSSはクラスの概念を持っています。 これらは、HTMLコードの一部の名前を指定し、他の部分に影響を与えずにこの部分にだけスタイルを適用することができます。 なんて便利なんでしょう！ 例えば、２つのdiv要素（ヘッダーと本文など）があったとして、これらのそれぞれに違うスタイルを適用することができます。 クラスを利用すると、違う見た目にできるのです。
 
 先に進んで、HTMLコードの一部に名前をつけましょう。ヘッダーに含まれる`div` 要素に、`page-header` というクラス名をつけましょう：
 
@@ -190,7 +190,7 @@ h1 a {
 </div>
 ```
 
-さらにブログ投稿を含む`div` 要素に`post` というクラス名をつけましょう。
+さらにブログ投稿を含む `div` 要素に `post` というクラス名をつけましょう。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ h1 a {
 </div>
 ```
 
-そして、別のセレクタに宣言ブロックを追加します。 `.`で始まるセレクタはクラスに関連します。 Web上にはCSSに関する多くのチュートリアルがあり、それらは以下に示すコードを理解する手助けになるはずです。 今のところは、`blog/static/css/blog.css`のファイルに以下の内容をコピー＆ペーストしましょう：
+そして、別のセレクタに宣言ブロックを追加します。 `.` で始まるセレクタはクラスに関連します。 Web上にはCSSに関する多くのチュートリアルがあり、それらは以下に示すコードを理解する手助けになるはずです。 今のところは、`blog/static/css/blog.css` のファイルに以下の内容をコピー＆ペーストしましょう：
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
