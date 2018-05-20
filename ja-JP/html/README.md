@@ -108,7 +108,7 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 * `<ul><li>第１の項目</li><li>第２の項目</li></ul>` でリストを作成する、こんな感じに！
 * `<div></div>`はページ内の区切りを定義
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+いろんな要素をまとめたテンプレートの例がこれです。コピーして`blog/templates/blog/post_list.html`に貼り付けてみましょう:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
