@@ -1,6 +1,6 @@
 # Introduction to the command-line interface
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> 家で１人でこのチャプターに挑戦している方へ：このチャプターは、動画（英語）もあるので参考にしてください。 [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8)
 
 さぁ、これから最初のコードを書いていきますよ。楽しんでいきましょう！:)
 
@@ -70,7 +70,7 @@ Windowsの方は、 `>` という記号が表示されていることでしょ�
 
 `$` や `>` と書かれているところまでを、 *コマンドラインプロンプト* あるいは略して*プロンプト*と呼ばれます。プロンプトは、あなたがここに何かを入力することを促しています。
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+このチュートリアルでは、コマンドを入力してほしい時は、 `$` や `>` を含めて示しています。 $や>は無視して、プロンプト以降のコマンドを入力してください。
 
 ## Your first command (YAY!)
 
@@ -173,7 +173,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> 補足：Powershellでは、lsコマンドをLinux や Mac OS X同様に使えます。 <!--endsec-->
 
 * * *
 
@@ -313,7 +313,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+`cd` の後にある`..` で、現在の親ディレクトリに移動します。（今作業しているフォルダのひとつ上のフォルダに移動するということですね。）
 
 現在の作業ディレクトリを確認しておきましょう。
 
