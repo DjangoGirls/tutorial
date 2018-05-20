@@ -231,7 +231,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </p>
   
   <p>
-    <code>blog/static/css/blog.css</code> ファイルの中の、 <code>h1 a</code>という宣言ブロックを見つけてください（コードは<code>{</code> と <code>}</code>で囲まれています）。 そして、そのカッコの中に <code>font-family: 'Lobster';</code> と１行追加して、ブラウザを更新してみましょう：
+    <code>blog/static/css/blog.css</code> ファイルの中の、 <code>h1 a</code>という宣言ブロックを見つけてください（コードは<code>{</code> と <code>}</code>で囲まれています）。 そして、そのカッコの中に <code>font-family: 'Lobster';</code> と１行追加して、webサイトを更新してみましょう：
   </p>
   
   <p>
@@ -383,7 +383,7 @@ h1, h2, h3, h4 {
 </code></pre>
   
   <p>
-    それらのファイルを保存してWebサイトを更新してみましょう。
+    それらのファイルを保存してwebサイトを更新してみましょう。
   </p>
   
   <p>
@@ -391,7 +391,7 @@ h1, h2, h3, h4 {
   </p>
   
   <p>
-    Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+    やったー！ ほら凄いでしょ？ 貼り付けたコードを見て、HTMLでクラスを追加してCSSで使用した場所を見つけてみましょう。 日付の色をターコイズブルーにするには、どこを変更すればいいでしょう？
   </p>
   
   <p>
