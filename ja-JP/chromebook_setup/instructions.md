@@ -4,7 +4,7 @@ Chromebookをお持ちでない場合は、[このセクションをスキップ
 
 Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. チュートリアルをやっている間、Cloud 9はあなたの*ローカルマシーン*のように動きます。 You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
 
-1. クラウド 9 no インストールする[Kurōmu ウェブストア](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+1. [Chrome ウェブストア](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)から Cloud 9 を インストールする
 2. [C9.io](https://c9.io) に行く
 3. アカウントにサインアップします
 4. Click *Create a New Workspace*
