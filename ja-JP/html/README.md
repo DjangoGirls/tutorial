@@ -197,7 +197,7 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 ### 新しいコードをPythonAnywhereにpullして、自分のウェブアプリを再度実行させる
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+* [PythonAnywhereのコンソールページ](https://www.pythonanywhere.com/consoles/)を開き、自分の**Bash コンソール画面**を選ぶ (または、新たにコンソール画面を作成する)。続いて、動作させる:
 
 {% filename %}command-line{% endfilename %}
 
@@ -206,10 +206,10 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+そのうえで、自分のコードがダウンロードされたことを確認しましょう。それをチェックしたい場合は、**Files tab** を押して、自分のコードをPythonAnywhereの中で見てみましょう。
 
-* Finally, hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* 最後に、 [Web tab](https://www.pythonanywhere.com/web_app_setup/) を押して、 自分のアプリの**Reload** を選択します。
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+あなたのアプリが更新され、動いています！ウェブサイトを開いて、再読込してみましょう。どう変わったのか、見えるはずです。:)
