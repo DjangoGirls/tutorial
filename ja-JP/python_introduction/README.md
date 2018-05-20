@@ -826,17 +826,17 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+コードのすべての行にコメントを書く必要はありません。コメントには、コードの動きの理由や、複雑なコードの動きのまとめを書くと役に立ちます。
 
-### 概要
+### Summary
 
-In the last few exercises you learned about:
+直近のエクササイズを通して、学んだことは、、、
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **比較** – 比較に用いる `>`, `>=`, `==`, `<=`, `<` そして`and`, `or` といった演算子があります。
+- **ブール型** – `True` と `False` ２つの値のみを持ちます。
+- **ファイルの保存** – コードはファイルに保存することで、大きなプログラムも実行できます。
+- **if … elif … else** – 条件分岐することで、特定の条件によって処理を分けて実行することができます。</0>
+- **コメント** – あなたがコードについて記述できる行。Pythonは実行しない。
 
 Time for the last part of this chapter!
 
