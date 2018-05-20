@@ -162,7 +162,7 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
     (myvenv) ~$ pip install --upgrade pip
     
 
-Then run `pip install django~=1.11.0` (note that we use a tilde followed by an equal sign: `~=`) to install Django.
+コンソールで、`pip install django~=1.11.0` を実行してDjangoをインストールします。（この時、チルダとイコール`~=`を使います。）
 
 {% filename %}command-line{% endfilename %}
 
@@ -176,14 +176,14 @@ Then run `pip install django~=1.11.0` (note that we use a tilde followed by an e
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 もし含まれている場合は、そのディレクトリを他のスペース・アクセント・特殊文字が含まれていない場所（`C:\djangogirls`など）に移動することを検討してみてください。 Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Djangoをインストールしようとしてコマンドラインがフリーズして動かなくなってしまうことがあります。その時は、以下のコマンドを代わりに入力してみてください。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
