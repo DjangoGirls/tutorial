@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-はじめてのエラーがでました！ The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+はじめてのエラーがでました！ {{ warning_icon }} アイコンのついたコードは思ったように動かないコードです。 Making mistakes (even intentional ones) are an important part of learning!
 
 オブジェクトタイプ"int" (integers, 数値) は文字数がありませんと言っています。では、どうすればよいでしょうか？この数字を文字列として扱えれば、文字数を数えられるはずですよね？
 
@@ -166,10 +166,10 @@ TypeError: object of type 'int' has no len()
 
 うまく行きました！ `str` 関数を `len` の中に記述しました。`str()` はその中身を文字列に変換します。
 
-- `str` 関数 は**文字列** に変換します
-- `int` 関数 は**文字整数** に変換します
+- `str` 関数は、**文字列** に変換します。
+- `int` 関数は、文字列や数値を **整数** に変換します。
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> 重要！: 数字は文字列にすることはできますが、全ての文字が数字に変換できるわけではありません。 例えば `int('hello')` は数字にはなりませんよね？
 
 ## Variables
 
