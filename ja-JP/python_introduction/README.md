@@ -725,9 +725,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-２行目をスペース４つでインデントしていることに気が付きましたか？ 条件式がTrueの時、どのコードを実行するかPythonに知らせる必要があります。 スペース１つでもできますが、ほぼ全員のPythonプログラマーはスペース４つとしています。 A single `tab` will also count as 4 spaces.
+２行目をスペース４つでインデントしていることに気が付きましたか？ 条件式が True の時、どのコードを実行するかPythonに知らせる必要があります。 スペース１つでもできますが、ほぼ全員のPythonプログラマーはスペース４つとしています。 タブ１つも、スペース４つと同じです。
 
-Save it and give it another run:
+保存して、もう一度実行してみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -736,11 +736,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+メモ：Windowsでは 'python3' とタイプしてもうまくいかないことを思い出してください。この後ファイルを実行するときは 'python3' の代わりに 'python' とタイプしてくださいね。
 
 ### What if a condition isn't True?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+前述の例では、if文の条件式が True の時だけ、コードが実行されました。Pythonは、`elif` や `else` といった記述もできます。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -751,7 +751,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+これを実行した場合、次のように出力されます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -759,7 +759,7 @@ When this is run it will print out:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+２が５より大きい場合、２行目のコマンドが実行されます。では、`elif` はどうなるのでしょうか？
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -773,7 +773,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+実行すると...
 
 {% filename %}command-line{% endfilename %}
 
