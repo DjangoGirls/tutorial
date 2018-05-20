@@ -257,7 +257,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 ### Exercise!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+練習をしてみましょう。先ほど作成した`practice`ディレクトリの中に、新たに`test`という名前のディレクトリを作成してください。（使うコマンドは、` cd `と `mkdir` ですよ。）
 
 #### Solution:
 
@@ -339,7 +339,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 では、practiceディレクトリを削除しましょう。
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **注意！: **　`del`や `rmdir `、`rm` のコマンドを使って削除したファイルは、復活できません。完全に消えてしまいます。 このコマンドを使う時は、よく気をつけてくださいね。
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -360,7 +360,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+できました! 本当に削除されたか、確認してみましょう。:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -408,17 +408,17 @@ Done! To be sure it's actually deleted, let's check it:
 
 ここに学んだコマンドをまとめておきます。
 
-| コマンド (Windows) | コマンド (Mac OS / Linux) | 説明                         | 例                                                 |
-| -------------- | --------------------- | -------------------------- | ------------------------------------------------- |
-| exit           | exit                  | ウインドウを閉じる                  | **exit**                                          |
-| cd             | cd                    | ディレクトリを変更                  | **cd test**                                       |
-| cd             | pwd                   | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir            | ls                    | ディレクトリ/ファイルの一覧を表示          | **dir**                                           |
-| copy           | cp                    | ファイルのコピー                   | **copy c:\test\test.txt c:\windows\test.txt** |
-| move           | mv                    | ファイルを移動                    | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir          | mkdir                 | 新しいディレクトリを作成               | **mkdir testdirectory**                           |
-| rmdir (or del) | rm                    | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S       | rm -r                 | delete a directory         | **rm -r testdirectory**                           |
+| コマンド (Windows) | コマンド (Mac OS / Linux) | 説明                | 例                                                 |
+| -------------- | --------------------- | ----------------- | ------------------------------------------------- |
+| exit           | exit                  | ウインドウを閉じる         | **exit**                                          |
+| cd             | cd                    | ディレクトリを変更         | **cd test**                                       |
+| cd             | pwd                   | 現在のディレクトリを表示      | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir            | ls                    | ディレクトリ/ファイルの一覧を表示 | **dir**                                           |
+| copy           | cp                    | ファイルのコピー          | **copy c:\test\test.txt c:\windows\test.txt** |
+| move           | mv                    | ファイルを移動           | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir          | mkdir                 | 新しいディレクトリを作成      | **mkdir testdirectory**                           |
+| rmdir (or del) | rm                    | ファイルを削除           | **del c:\test\test.txt**                        |
+| rmdir /S       | rm -r                 | ディレクトリを削除         | **rm -r testdirectory**                           |
 
 ここで勉強したのはコマンドのほんの一部でしたが、このワークショップで使うコマンドはこれだけです。
 
