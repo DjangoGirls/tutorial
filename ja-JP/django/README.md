@@ -10,9 +10,9 @@ Django (/ˈdʒæŋɡoʊ/ *jang-goh* ジャンゴ と読みます) 無料でオ�
 
 ## なぜフレームワークを必要とするか。
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Djangoを本当に理解するために、サーバーの役割についてもう少し考えてみましょう。サーバーにWebページを配信してもらうようにするには、サーバーにその設定をする必要があります。
 
-やってくるメールを監視するメール受信箱を想像してみてください。 これはWEBサーバによってです。 The web server reads the letter and then sends a response with a webpage. しかし、何かをレスポンスを返す場合は、いくつかのコンテンツを持っている必要があります。 Djangoは、コンテンツを作成することができます。
+手紙が届くポストを想像してください。手紙はユーザからWebサーバーに送られるリクエストで、ポストはWebサーバーのポートのことです。 これはWEBサーバによってです。 Webサーバーはこのポストを監視して、手紙が届くとそれを読み、Webページから返事を送ります。 返事を送ろうとする時、コンテンツが必要ですね。 Djangoは、あなたがそのコンテンツを作る手助けをするものです。
 
 ## 誰かがあなたのWEB サイトにリクエストを要求したときどうなりますか。
 
