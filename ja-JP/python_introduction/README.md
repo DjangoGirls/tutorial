@@ -10,11 +10,11 @@
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-Pythonであそぶために、*コマンドライン*を開きましょう。 You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Pythonであそぶために、*コマンドライン* を開きましょう。 やり方は、チャプター [Intro to Command Line](../intro_to_command_line/README.md) で学びましたね。
 
-Once you're ready, follow the instructions below.
+準備ができたら、次の指示に従ってやってみましょう。
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Pythonコンソールを開きましょう。Windowsなら `python` 、Mac OSやLinuxなら `python3` とタイプして `Enter` キーをおしてください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,9 +26,9 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 ## Your first Python command!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Pythonのコマンドが走ると、プロンプト記号が `>>>` に変わりました。 これは、今Pythonの言語を実行できますという意味です。 `>>>` はタイプしなくていいですよ。 – Pythonがあなたの代わりにやってくれます。
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Pythonコンソールを終わる時は、`exit()` とタイプするか、ショートカット `Ctrl + Z`（Windows）、`Ctrl + D`（Mac/Linux）で終了です。 `>>>` は現れなくなりました。
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
