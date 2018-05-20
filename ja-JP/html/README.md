@@ -29,13 +29,13 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 あなたのウェブサイトを見てみてください: http://127.0.0.1:8000/
 
-> もし、`TemplateDoesNotExist`が引き続き表示されるようなら、自分のサーバーを再起動してみてください。 Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> もし、`TemplateDoesNotExist`が引き続き表示されるようなら、自分のサーバーを再起動してみてください。 コマンドラインから、Ctrl+C(ControlとCのキーを同時に)を押してサーバーを止め、`python manage.py runserver`コマンドを動かして再度サーバーを動かします。
 
 ![図 11.1](images/step1.png)
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+もうエラーはありませんか！おめでとうございます:)。しかし、あなたのウェブサイトは実際には空白のページ以外は何も表示しなていないでしょう。テンプレートも空白だからです。それを直していく必要があります。
 
-Add the following to your template file:
+あなたのテンプレートファイルに、次の内容を書き加えます。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -46,11 +46,11 @@ Add the following to your template file:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+さあ、あなたのウェブサイトはどう見えるでしょうか？以下を開いて確認してみましょう: http://127.0.0.1:8000/
 
 ![図 11.2](images/step3.png)
 
-It worked! Nice work there :)
+うまく動いています！よくできました:)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
