@@ -67,9 +67,9 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 'Ola'
 ```
 
-はじめてのString（文字列）が完成です！ Stringとは、文字の集合のことです。 The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+はじめてのString（文字列）が完成です！ Stringとは、文字の集合のことです。 シングルクォーテーション (`'`) あるいは、ダブルクォーテーション (`"`) で囲います。 最初と最後は同じ記号にしてください。 - クォーテーションの中が文字列であることを意味しています。
 
-複数の文字列を結合することもできます。次のように試してみましょう：
+複数の文字列を結合することもできます。次のように試してみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 'Hi there Ola'
 ```
 
-文字列を繰り返すためには、演算子を使って繰り返し回数を指定することもできます：
+文字列を繰り返すためには、演算子を使って繰り返し回数を指定することもできます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -89,7 +89,7 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 
 アポストロフィーを文字列の中に含めたい場合は、２通りの方法があります。
 
-まずは、ダブルクォーテーションを使う方法です：
+まずは、ダブルクォーテーションを使う方法です。
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 "Runnin' down the hill"
 ```
 
-あるいは、バックスラッシュ (``) を使う方法もあります：
+あるいは、バックスラッシュ (``) を使う方法もあります。
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 "Runnin' down the hill"
 ```
 
-できましたか？次に、あなたの名前を大文字に変えてみましょう。次のように記述してください：
+できましたか？次に、あなたの名前を大文字に変えてみましょう。次のように記述してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -131,10 +131,10 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 
 ### 概要
 
-OK, enough of strings. So far you've learned about:
+文字列はだいじょうぶですね。ここまでに学んだことをまとめましょう。
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
+- **プロンプト** – Pythonプロンプトにコマンド（コード）を入力すると、答えがかえってきます。
+- **数値と文字列** – 数値は計算に、文字列はテキストに使われます。
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
