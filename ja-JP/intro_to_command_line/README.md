@@ -2,13 +2,13 @@
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+さぁ、これから最初のコードを書いていきますよ。楽しんでいきましょう！:)
 
 **最初にお友達になるのはコレです。: コマンドライン!**
 
 プログラマーが黒い画面に向かっている光景を見たことがありますか？ここからは、その黒い画面を触ってみます。最初はちょっとコワイと思うかもしれませんが、そんなことはありません。プロンプトと呼ばれるものがあなたの命令（コマンド）を待っています。
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **備考：** このチュートリアルでは、”ディレクトリ”や"フォルダ"という用語が出てきますが、同じ意味です。
 
 ## What is the command line?
 
