@@ -118,7 +118,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </p>
   
   <p>
-    CSSファイルには、HTMLファイルの各要素のスタイルを指定していきます。 The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like <code>a</code>, <code>h1</code>, and <code>body</code> are all examples of element names. We also identify elements by the attribute <code>class</code> or the attribute <code>id</code>. classやidは、あなたが自分で要素につけることができる名前です。 classは要素のグループを定義して、idは特定の要素を指定します。 For example, you could identify the following tag by using the tag name <code>a</code>, the class <code>external_link</code>, or the id <code>link_to_wiki_page</code>:
+    CSSファイルには、HTMLファイルの各要素のスタイルを指定していきます。 まずは要素の名前でもって、その要素を識別します。 You might remember these as tags from the HTML section. Things like <code>a</code>, <code>h1</code>, and <code>body</code> are all examples of element names. We also identify elements by the attribute <code>class</code> or the attribute <code>id</code>. classやidは、あなたが自分で要素につけることができる名前です。 classは要素のグループを定義して、idは特定の要素を指定します。 For example, you could identify the following tag by using the tag name <code>a</code>, the class <code>external_link</code>, or the id <code>link_to_wiki_page</code>:
   </p>
   
   <pre><code class="html">&lt;a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page"&gt;
