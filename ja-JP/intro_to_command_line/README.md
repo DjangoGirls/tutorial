@@ -112,7 +112,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 ### Current directory
 
-今どこのディレクトリにいるか（どのフォルダで作業をしているか）、知りたいですよね？では、このようにキーボードで入力して、Enterキーをおしてください。
+今どこのディレクトリにいるか（どのフォルダで作業をしているか）、知りたいですよね？では、このようにキーボードで入力して、`Enterキー`をおしてください。
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -134,7 +134,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> 補足: 'cd' は、'change directory' を意味しています。Powershellを使うと、LinuxやMac OS Xのようにpwdコマンドを使えます。
 
 <!--endsec-->
 
@@ -223,7 +223,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 できていますね！
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO tip: `cd D`と入力して、キーボードの`tab`ボタンを押してください。すると、Dに続く残りの部分が自動的に補完されて入力されます。 もし、Dから始まるディレクトリ名が他にもあれば、`tabボタン`を繰り返し押すと候補が次々と表示されます。入力が楽になりますね。
 
 * * *
 
