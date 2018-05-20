@@ -148,15 +148,15 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 や～っ。 ところが今のところ、私たちのテンプレートは、常に完全に**同じ情報**だけしか表示できません。一方で、以前は、テンプレートを使えば、**異なる**情報を**同じ形式**で表示できるようになるとお伝えしていたのですが。
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+本当にやりたいことは、Djangoのadminに追加された本物の記事を表示することです。そして、それが次にやるべきことなのです。
 
-## One more thing: deploy!
+## もう一つ: 実行してみる！
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+ここまでやったことを出力して、インターネットで動かしてみると楽しいですよね。PythonAnywhereでもうひとつ実行してみましょう。
 
-### Commit, and push your code up to Github
+### 自分のコードをGithubにcommitしてpushしてみましょう
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+まずは、最後に実行したときから、どのファイルを変更したか見てみましょう(以下のコマンドを、PythonAnywhereではなく、自分のパソコンで実行してください。)。
 
 {% filename %}command-line{% endfilename %}
 
