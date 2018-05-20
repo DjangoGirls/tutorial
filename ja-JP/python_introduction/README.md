@@ -838,15 +838,15 @@ if volume < 20 or volume > 80:
 - **if … elif … else** – 条件分岐することで、特定の条件によって処理を分けて実行することができます。</0>
 - **コメント** – あなたがコードについて記述できる行。Pythonは実行しない。
 
-Time for the last part of this chapter!
+では、このチャプターの最後のパートに挑戦していきましょう！
 
 ## Your own functions!
 
 > For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Pythonには `len()` のように関数があったのを覚えていますか？ ここでは、自分で関数を作る方法を学びます。
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+実行する機能をひとまとめにしたものを関数といいます。 Pythonでは、関数は `def` というキーワードからはじまり、引数を含むことができます。 簡単なものからはじめてみましょう。 **python_intro.py** の中身を下記のコードに置き換えてください。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -858,11 +858,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+あなたの最初の関数を実行する準備ができましたね！
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 これは、Pythonがファイルを読み、上から下へ実行していくからです。 関数を定義したあとに、もう一度その関数を書いて呼び出します。
 
-Let's run this now and see what happens:
+では実行して、どうなるか見てみましょう。
 
 {% filename %}command-line{% endfilename %}
 
