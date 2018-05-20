@@ -67,7 +67,7 @@ LnuxやOX Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実行
 >     $ sudo apt install python3-venv
 >     
 > 
-> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> **補足：**DebianやUbuntuのバージョンによっては、この仮想環境を実行すると、次のようなエラーがでます。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -75,7 +75,7 @@ LnuxやOX Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実行
 >     
 >     
 > 
-> このエラーを回避するために、代わりに`仮想環境(virtualenvironment)`コマンドを使います。
+> このエラーを回避するために、代わりに`virtualenv`コマンドを使います。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -113,7 +113,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls > myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **補足：**Windows 10では、`execution of scripts is disabled on this system`というエラーがWindows PowerShellに出ることがあります。 その場合は、Windows PowerShellを「管理者として開く」で、管理者権限で新しくウィンドウを開いてください。 そして、仮想環境を開始刷る前に、以下のコマンドを入力してください。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
