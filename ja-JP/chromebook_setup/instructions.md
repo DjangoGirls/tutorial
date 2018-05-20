@@ -1,4 +1,4 @@
-Chromebookをお持ちでない場合は、[このセクションをスキップ](http://tutorial.djangogirls.org/en/installation/#install-python) できます. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+Chromebookをお持ちでない場合は、[このセクションをスキップ](http://tutorial.djangogirls.org/en/installation/#install-python) できます。 If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
 
 ### Cloud 9
 
