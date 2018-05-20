@@ -12,13 +12,13 @@ Django (/ˈdʒæŋɡoʊ/ *jang-goh* ジャンゴ と読みます) 無料でオ�
 
 Djangoを本当に理解するために、サーバーの役割についてもう少し考えてみましょう。サーバーにWebページを配信してもらうようにするには、サーバーにその設定をする必要があります。
 
-手紙が届くポストを想像してください。手紙はユーザからWebサーバーに送られるリクエストで、ポストはWebサーバーのポートのことです。 これはWEBサーバによってです。 Webサーバーはこのポストを監視して、手紙が届くとそれを読み、Webページから返事を送ります。 返事を送ろうとする時、コンテンツが必要ですね。 Djangoは、あなたがそのコンテンツを作る手助けをするものです。
+手紙が届くポストを想像してください。手紙はユーザからWebサーバーに送られるリクエストのことで、ポストはWebサーバーのポートのことです。 Webサーバーが行っています。 Webサーバーはこのポストを監視して、手紙が届くとそれを読み、Webページから返事を送ります。 返事を送ろうとする時、コンテンツが必要ですね。 Djangoは、あなたがそのコンテンツを作る手助けをするものです。
 
 ## 誰かがあなたのWEB サイトにリクエストを要求したときどうなりますか。
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Webサーバーにリクエストがあると、Djangoに伝えられ、リクエストの内容を把握しようとします。 まずWebページのアドレスを調べ、リクエストに対して何をするか決めます。 これは、Djangoの**urlresolver**が行います。（WebサイトのアドレスはURLと呼ばれます。 Uniform Resource Locator の略です。-resolverとは「解決するもの」という意味ですので、*urlresolver* というのはうなずけますよね。)。 It is not very smart – it takes a list of patterns and tries to match the URL. Djangoは上から下にURLパターンを順に調べていきます。そこで何かがマッチすると、Djangoは*ビュー*と呼ばれる関数にリクエストを送ります。
 
-配達人と手紙を想像してみてください。 彼女は通りを歩き、各家の番号をチェックします。 手紙とマッチすると、手紙を配達します。 これがurlresolverがどのように動いているか、です。
+郵便配達員を思い浮かべてください。 配達員は、通りを歩き、ひとつひとつの家の番地と、手紙に書かれている番地を見比べて行きます。 マッチする番地があったら、手紙をそこに置いていきます。 これがurlresolverがどのように動いているか、です。
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. ユーザはデータにおいて何か変更するために尋ねるだろうか？ Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
