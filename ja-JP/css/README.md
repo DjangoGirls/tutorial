@@ -140,7 +140,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 </code></pre>
   
   <p>
-    We're just loading static files here. :) Between the <code>&lt;head&gt;</code> and <code>&lt;/head&gt;</code> tags, after the links to the Bootstrap CSS files, add this line:
+    これで、このテンプレートに静的ファイルを読み込むことができました^^。そして、<code>&lt;head&gt;</code> と <code>&lt;/head&gt;</code> の中にあるBootstrap CSSファイルのリンクの下に、この行を追加しましょう：
   </p>
   
   <p>
@@ -151,7 +151,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 </code></pre>
   
   <p>
-    The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. このようにCSSファイルがどこにあるか示します。
+    ブラウザは上から書いた順番でファイルを読み込むので、記述する箇所はよく確かめる必要があります。 Otherwise the code in our file may be overriden by code in Bootstrap files. このようにCSSファイルがどこにあるか示します。
   </p>
   
   <p>
