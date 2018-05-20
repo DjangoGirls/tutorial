@@ -557,9 +557,9 @@ Pythonは、数値(`int`)と文字列(`str`)の比較はできません。 **Typ
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+Pythonを記述するときは、Trueの最初は大文字のT、残りは小文字です。 **true, TRUE, tRUE は間違いです。– True と記述してください** (もちろん False についても同様です。)
 
-Booleans can be variables, too! See here:
+ブール型は、次のように変数に代入することもできます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -569,7 +569,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+このようなこともできます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -579,27 +579,27 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+ブール型を使って、練習して遊んでみましょう。次のコマンドを試してみてください。
 
-- `True and True`
-- `False and True`
-- `True or 1 == 1`
-- `1 != 2`
+- `<code>True and True`</code>
+- `<code>False and True`</code>
+- `<code>True or 1 == 1`</code>
+- `<code>1 != 2`</code>
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+おめでとうございます！ブール型を理解することは、プログラミングでとても大事です。ここまでできましたね！
 
 # Save it!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+ここまでインタプリタでPythonのコードをかいてきました。つまり、コードを１行づつしか書くことができませんでした。 普通のプログラムはファイルに保存され、**インタプリタ** あるいは **コンパイラ** でプログラミング言語を処理して実行します。 ここまで、私たちはプログラムを１行ごとにPython **インタプリタ** で実行してきました。 ここからは、１行以上のコードを実行していきましょう。次のような流れになります。
 
 - Pythonインタプリタを終了します。
 - お好きなエディタを起動します。
 - Pythonファイルとしてコードを保存します。
 - 実行します！
 
-To exit from the Python interpreter that we've been using, simply type the `exit()` function
+これまで使っていたPythonインタプリタを終了しましょう。`exit()` ファンクションを記述してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -608,9 +608,9 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-This will put you back into the command prompt.
+これで、コマンドプロンプトに戻りました。
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+前のチャプター [code editor](../code_editor/README.md) で、エディタを紹介しました。エディタを起動して、新しいファイルにコードを書いてみましょう。
 
 {% filename %}editor{% endfilename %}
 
@@ -618,9 +618,9 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+あなたは、すでにベテランのpython開発者です。今日学んだコードを自由に書いてみてください。
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+コードを書いたら、わかりやすい名前をつけて保存しましょう。 **python_intro.py** と名前をつけて、デスクトップに保存してください。 We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. これは「構文」と呼ばれています「ハイライトする」こと、そして、コーディングとき、それは本当に役に立つ特徴です。 The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). これが私たちがコードエディタを使う理由の１つです. :)
 
