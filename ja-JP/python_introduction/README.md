@@ -1031,9 +1031,9 @@ for name in girls:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+ご覧のとおり、`girls` リストのすべての要素に対して、`for` の中にインデントして書いたことが繰り返されています。
 
-You can also use `for` on numbers using the `range` function:
+`for` 文では、`range` 関数を使って指定した回数だけ繰り返すこともできます。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,7 +1042,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+これを実行すると、次のように出力されます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,16 +1053,16 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` 関数は、引数に指定した開始と終了の数値から連続する数値の値を要素として持つリスト型のオブジェクトを作成します。
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+2つ目の引数（終了の数値）は、リストに含まれないことに注意してください。 つまり、 `range(1, 6)` は、１から５のことであり、６は含まれません。
 
-## 概要
+## Summary
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+以上です！**おめでとう！頑張りました！** これは簡単ではなかったと思います。自分を褒めてあげてくださいね。ここまで進めることができたのは、本当に素晴らしいことです！
 
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+次のチャプターにうつるまえに、少し気晴らしに、ストレッチやお散歩をして、目や身体を休ませてあげてくださいね。
 
 ![Cupcake](images/cupcake.png)
