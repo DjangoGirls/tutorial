@@ -183,9 +183,9 @@ TypeError: object of type 'int' has no len()
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+name イコール（=）Ola とタイプします。
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
+見てのとおり、プログラムは、なにも返してくれませんね。では、変数がきちんとあるか、どうやって確かめたらいいのでしょうか？ `name` とタイプして、`Enter` キーを押してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+やりました！あなたのはじめての変数ができましたね！代入する値を変えることもできます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+変数には関数も使えます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Of course, variables can be anything – numbers too! Try this:
+素晴らしいですね！変数は、もちろん数値にも使えますよ。
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+もしも、間違えた変数名を使ってしまったら、どうなるでしょうか？予想できますか？やってみましょう！
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -236,7 +236,7 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+エラーになりました！ 前回とは違うエラータイプです。**NameError** という、初めてみるエラータイプですね。 作成されていない変数を使った時は、Pythonがエラーを教えてくれます。 If you encounter this error later, check your code to see if you've mistyped any names.
 
 Play with this for a while and see what you can do!
 
