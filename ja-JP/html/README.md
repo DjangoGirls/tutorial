@@ -14,9 +14,9 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 ## 最初のテンプレート
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+テンプレートを作るとは、テンプレートのファイルを作ることです。すべてはファイルですよね。皆さんは、たぶん、このことに、もう気づいていると思います。
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+テンプレートは、`blog/templates/blog`ディレクトリに保存されています。 それでは、最初に、自分のblogディレクトリの中に`templates`という名前のディレクトリを作成してください。 次に、自分のtemplatesディレクトリの中に`blog`という名前のディレクトリを作ります。
 
     blog
     └───templates
