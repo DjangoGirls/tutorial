@@ -37,21 +37,21 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. どんな名前でも使うことができますが、必ず小文字で表記し、スペース・アクセント記号・特殊文字は入れないでください。 It is also good idea to keep the name short – you'll be referencing it a lot!
+`myvenv` というところが、あなたの`virtualenv（仮想環境）` の名前です。 どんな名前でも使うことができますが、必ず小文字で表記し、スペース・アクセント記号・特殊文字は入れないでください。 短い名前にしておくのもいいアイデアですーあなたはこの名前を何度も参照しますから！
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+LnuxやOX Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実行するだけです。 たとえばこんな感じです：
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` は、あなたの `仮想環境(virtualenvironment)` の名前です。 どんな名前でも使うことができますが、必ず小文字で表記し、スペースは入れないでください。 It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` は、あなたの `仮想環境(virtualenvironment)` の名前です。 どんな名前でも使うことができますが、必ず小文字で表記し、スペースは入れないでください。 短い名前にしておくのもいいアイデアですーあなたはこの名前を何度も参照しますから！
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
@@ -153,9 +153,9 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
 
 ## Djangoのインストール
 
-Now that you have your `virtualenv` started, you can install Django.
+今度はあなたの`virtualenv`を起動したので、Djangoをインストールすることができます。
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+これを行う前に、Djangoのインストールに使用する最新バージョンの`pip`がインストールされていることを確認する必要があります。
 
 {% filename %}command-line{% endfilename %}
 
