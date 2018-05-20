@@ -622,7 +622,7 @@ print('Hello, Django girls!')
 
 コードを書いたら、わかりやすい名前をつけて保存しましょう。 **python_intro.py** と名前をつけて、デスクトップに保存してください。 ファイル名は何でもかまいません。ここで重要なことは、拡張子を **.py** とすることです。 コンピュータにこのファイルは **Pythonで実行するファイルです** とおしえます。
 
-> **メモ** コードエディタでは色に注目しましょう！これはとてもクールです。 Pythonコンソールでは、すべての文字は同じ色です。エディタでは、`print` 関数は文字列とは違う色がつきます。 これは「シンタックスハイライト」と呼ばれています。エディタは構文（シンタックス）を強調（ハイライト）します。コードを書くとき、これはとても役に立ちます。 The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). これが私たちがコードエディタを使う理由の１つです. :)
+> **メモ** コードエディタでは色に注目しましょう！これはとてもクールです。 Pythonコンソールでは、すべての文字は同じ色です。エディタでは、`print` 関数は文字列とは違う色がつきます。 これは「シンタックスハイライト」と呼ばれています。エディタは構文（シンタックス）を強調（ハイライト）します。コードを書くとき、これはとても役に立ちます。 色のおかげで、文字列の最後のクォーテーションの書き忘れや、キーワードの名前（この後学ぶ関数の `def` など）のタイポに気づくことができます。 これが私たちがコードエディタを使う理由の１つです. :)
 
 ファイルを保存したら、実行してみましょう！コマンドラインのセクションで学んだことを思い出して、ターミナルの **ディレクトリを変更** して、デスクトップにしましょう。
 
@@ -696,9 +696,9 @@ WindowsのPowerShellでは、次のようになります。
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+ある条件が成立するときに処理を行いたいという時に用いるのが、**if 条件式** です。
 
-Replace the code in your **python_intro.py** file with this:
+では、**python_intro.py** ファイルのコードを次のように書き換えてください。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,7 +706,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+これを保存して実行すると、次のようなエラーがでます。
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -716,7 +716,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+条件式 `3 > 2` が `True` の時、どのように処理をすべきかが記述されていませんね。 では、Python に “It works!” と出力してもらいましょう。 **python_intro.py** ファイルの中身を、次のとおりに書き換えてください。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -725,7 +725,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single `tab` will also count as 4 spaces.
+２行目をスペース４つでインデントしていることに気が付きましたか？ 条件式がTrueの時、どのコードを実行するかPythonに知らせる必要があります。 スペース１つでもできますが、ほぼ全員のPythonプログラマーはスペース４つとしています。 A single `tab` will also count as 4 spaces.
 
 Save it and give it another run:
 
