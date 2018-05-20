@@ -65,7 +65,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 ├── blog
 │   ├── migrations
 │   ├── static
-│   └── templates
+│   └── templates
 └── mysite
 </code></pre>
   
@@ -78,7 +78,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </h2>
   
   <p>
-    CSSファイルを作って、Webサイトにあなたのスタイル設定していきましょう。 <code>static</code>ディレクトリの中に<code>css</code>というディレクトリを作成しましょう。 そして、その<code>css</code>ディレクトリの中に<code>blog.css</code>という新規ファイルを作ります。 Ready?
+    CSSファイルを作って、Webサイトにあなたのスタイル設定していきましょう。 <code>static</code>ディレクトリの中に<code>css</code>というディレクトリを作成しましょう。 そして、その<code>css</code>ディレクトリの中に<code>blog.css</code>という新規ファイルを作ります。 準備OK？
   </p>
   
   <pre><code>djangogirls
@@ -399,7 +399,7 @@ h1, h2, h3, h4 {
   </p>
   
   <p>
-    この章の最後に、こちらの無料のオンライン講座を受講することをおすすめします：<a href="https://www.codecademy.com/tracks/web">Codeacademy HTML & CSS course</a> webサイトをCSSで美しくするために多くのことをが学べます。
+    この章の最後に、<a href="https://www.codecademy.com/tracks/web">Codeacademy HTML & CSS course</a>という無料のオンライン講座を受講することをおすすめします。 webサイトをCSSで美しくするための多くのことが学べます。
   </p>
   
   <p>
