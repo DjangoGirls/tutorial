@@ -103,10 +103,10 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 * `<p>文章の段落</p>`
 * `<em>文章</em>`で文章を強調する
 * `<strong>文章</strong>`でさらに文章を強調する
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
+* `<br>`は改行(brタグの中には何も書いてはいけません。閉じタグも無しです)
+* `<a href="https://djangogirls.org">リンク</a>` はリンクを生成します
+* `<ul><li>第１の項目</li><li>第２の項目</li></ul>` でリストを作成する、こんな感じに！
+* `<div></div>`はページ内の区切りを定義
 
 Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
 
