@@ -179,23 +179,23 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
     $ git status
     
 
-ほぼ完了です。どこを変更したかを履歴に保存するよう指示してみましょう。 We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+ほぼ完了です。どこを変更したかを履歴に保存するよう指示してみましょう。 "commit message"の中に何を変更したかを記載しましょう。 この時、どんな内容を好みで打ち込んでも構いませんが、何をしたかを具体的に書き込んでおけば、将来、作業内容を思い出すのに助かるでしょう。
 
 {% filename %}command-line{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **ノート** commit messageは、二重クォート記号を必ず使うようにしましょう。
 
-Once we've done that, we upload (push) our changes up to GitHub:
+ここまで終われば、GitHubに変更部分をアップロード(push) しましょう。
 
 {% filename %}command-line{% endfilename %}
 
     $ git push
     
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+### 新しいコードをPythonAnywhereにpullして、自分のウェブアプリを再度実行させる
 
 * Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
