@@ -95,14 +95,14 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 ## テンプレートのカスタマイズ
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+それでは、少し遊んで、テンプレートを作り変えてみましょう！次にようにいくつか便利なタグがあります。
 
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
+* `<h1>ヘッダー</h1>` 最も重要性の高い見出し
+* `<h2>サブのヘッダー</h2>` その次のレベルの見出し
+* `<h3>サブのサブのヘッダー</h3>`... など`<h6>`まで
+* `<p>文章の段落</p>`
+* `<em>文章</em>`で文章を強調する
+* `<strong>文章</strong>`でさらに文章を強調する
 * `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
 * `<a href="https://djangogirls.org">link</a>` creates a link
 * `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
