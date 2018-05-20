@@ -113,7 +113,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls > myvenv\Scripts\activate
     
 
-> **補足：**Windows 10では、`execution of scripts is disabled on this system`というエラーがWindows PowerShellに出ることがあります。 その場合は、Windows PowerShellを「管理者として開く」で、管理者権限で新しくウィンドウを開いてください。 そして、仮想環境を開始刷る前に、以下のコマンドを入力してください。
+> **補足：**Windows 10では、`execution of scripts is disabled on this system`というエラーがWindows PowerShellに出ることがあります。 その場合は、Windows PowerShellを「管理者として開く」で、管理者権限で新しくウィンドウを開いてください。 そして、仮想環境を開始する前に、以下のコマンドを入力してください。
 > 
 > {% filename %}command-line{% endfilename %}
 > 
