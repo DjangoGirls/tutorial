@@ -231,7 +231,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </p>
   
   <p>
-    <code>blog/static/css/blog.css</code> ファイルの中の、 <code>h1 a</code>というのブロックを見つけてください（コードは<code>{</code> と <code>}</code>で囲まれています）。 そして、そのカッコの中に <code>font-family: 'Lobster';</code> と１行追加して、ブラウザを更新してみましょう：
+    <code>blog/static/css/blog.css</code> ファイルの中の、 <code>h1 a</code>という宣言ブロックを見つけてください（コードは<code>{</code> と <code>}</code>で囲まれています）。 そして、そのカッコの中に <code>font-family: 'Lobster';</code> と１行追加して、ブラウザを更新してみましょう：
   </p>
   
   <p>
@@ -253,7 +253,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </p>
   
   <p>
-    前述のように、CSS は、クラスの概念を持っています。 これらは、HTMLコードの一部の名前を指定し、他の部分に影響を与えずにこの部分にだけスタイルを適用することができます。 なんて便利なんでしょう！ 例えば、２つのdiv要素（ヘッダーと本文など）があったとして、これらのそれぞれに違うスタイルを適用することができます。 A class can help you make them look different.
+    前述のように、CSS は、クラスの概念を持っています。 これらは、HTMLコードの一部の名前を指定し、他の部分に影響を与えずにこの部分にだけスタイルを適用することができます。 なんて便利なんでしょう！ 例えば、２つのdiv要素（ヘッダーと本文など）があったとして、これらのそれぞれに違うスタイルを適用することができます。 クラスを利用すると、違う見た目にできるのです。
   </p>
   
   <p>
@@ -285,7 +285,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 </code></pre>
   
   <p>
-    そして、別のセレクタに宣言ブロックを追加します。 <code>.</code>で始まるセレクタはクラスに関連します。 There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. 今のところは、<code>blog/static/css/blog.css</code>のファイルに以下の内容をコピー＆ペーストしましょう：
+    そして、別のセレクタに宣言ブロックを追加します。 <code>.</code>で始まるセレクタはクラスに関連します。 Web上にはCSSに関する多くのチュートリアルがあり、それらは以下に示すコードを理解する手助けになるはずです。 今のところは、<code>blog/static/css/blog.css</code>のファイルに以下の内容をコピー＆ペーストしましょう：
   </p>
   
   <p>
@@ -341,7 +341,7 @@ h1, h2, h3, h4 {
 </code></pre>
   
   <p>
-    そして、これをクラス宣言で投稿を表示しているHTMLコードで囲みます。 <0>blog/templates/blog/post_list.html</0> 中のこの部分を
+    そして、これをクラス宣言で投稿を表示しているHTMLコードで囲みます。 <code>blog/templates/blog/post_list.html</code> 中のこの部分を
   </p>
   
   <p>
