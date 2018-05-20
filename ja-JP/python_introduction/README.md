@@ -513,11 +513,11 @@ False
 `>` と `<`は簡単でしたね。`>=` と `<=` はどうでしょうか？それぞれの意味は、次のとおりです。
 
 - x `>` y : x は y より大きい
-- x < y : x は y　より小さい
-- x <= y : x は y　以下
-- x >= y : x は y　以上
+- x `<` y : x は y より小さい
+- x `<=` y : x は y 以下
+- x `>=` y : x は y 以上
 
-Awesome! Wanna do one more? Try this:
+すばらしい! もう少しやってみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -530,12 +530,12 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+条件式が複数あって複雑になっても、その答えを出してくれます。とても賢いですね。
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** – `and` の左辺と右辺が共にTrueの場合のみ、True。
+- **or** – `or` の左辺あるいは右辺の少なくとも１つがTrueの時、True。
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+"comparing apples to oranges"という英語の表現を聞いたことはありますか？文字通り訳すと「リンゴとオレンジを比較する」となり、「比較にならないものを比較する」という意味です。Pythonでも同じようなことをやってみましょう。
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -546,13 +546,13 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+Pythonは、数値(`int`)と文字列(`str`)の比較はできません。 **TypeError** とエラーが表示され、２つのオブジェクトタイプが比較できないことを教えてくれています。
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+偶然にも、**ブール型 (Boolean)** というあたらしいオブジェクトタイプを学びました。
 
-There are only two Boolean objects:
+ブール型は、たった２つの値を持ちます。
 
 - True
 - False
