@@ -467,18 +467,18 @@ KeyError: 'age'
 
 素晴らしいです！これで、あなたはプログラミングについて沢山のことを学びました。ここまでのところをまとめましょう。
 
-- **エラー** - あなたのコマンドをPythonが理解できない時にエラーが表示されます。
+- **エラー** – あなたのコマンドをPythonが理解できない時にエラーが表示されます。
 - **変数** – コードを簡単にまた読みやすくするために、文字や数値などのオブジェクトにつける名札。
 - **リスト** – 複数の値（要素）が順に並んでいるもの。
-- **dictionaries** – objects stored as key–value pairs
+- **dictionaries** – キーと値のペアの集合です。
 
-Excited for the next part? :)
+次に進む準備はいいですか？ :)
 
 ## Compare things
 
 > For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+比較することは、プログラミングの醍醐味の１つです。簡単に比較できるものといえば、何でしょうか？そうです、数字ですね。さっそくやってみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -495,11 +495,11 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Pythonにいくつか比較する数字をあたえてみました。数字を比較するだけでなく、演算式の答えも比較することができます。便利でしょ？
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+２つの数字がイコールであるかどうかを比べる時に、イコールの記号が２つ `==` 並んでいます。 Pythonを記述する時、イコール１つ `=`は、変数に値を代入するときに使います。 ですので、値同士が等しいかどうか比較するときは、必ず **必ず** イコール記号２つ `==` を記述してください。 等しくないことを比較するときは、 上記の例のように `!=` と記述します。
 
-Give Python two more tasks:
+次の２つはどうでしょうか。
 
 {% filename %}command-line{% endfilename %}
 
@@ -510,9 +510,9 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+`>` と `<`は簡単でしたね。`>=` と `<=` はどうでしょうか？それぞれの意味は、次のとおりです。
 
-- x > y : x は y　より大きい
+- x `>` y : x は y より大きい
 - x < y : x は y　より小さい
 - x <= y : x は y　以下
 - x >= y : x は y　以上
