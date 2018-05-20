@@ -1,18 +1,18 @@
 {% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
 
-# プログラムアプリケーション拡張
+# アプリケーションを拡張しよう
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+もう、ウェブサイトを作るのに必要な全ての章は終わりました。どのようにモデル、URL、ビュー、テンプレートを書いたら良いかわかっていますし、またウェブサイトの作り方もわかります。
 
-Time to practice!
+さあ練習しましょう！
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+ブログに最初に必要なものはおそらく、記事を表示するページですよね。
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+もう`Post`モデルが入っていますから、`models.py`は追加する必要はありません
 
 ## Create a template link to a post's detail
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+`blog/templates/blog/post_list.html`ファイルに次のようにリンクを追加しましょう： {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
