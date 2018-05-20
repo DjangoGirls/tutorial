@@ -114,7 +114,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
 </code></pre>
   
   <p>
-    <code>h1 a</code>はCSSセレクタと呼ばれるものです。 <code>h1</code> 要素の中にある <code>a</code> 要素にスタイルを適用します、という意味になります。 So when we have something like <code>&lt;h1&gt;&lt;a href=""&gt;link&lt;/a&gt;&lt;/h1&gt;</code>, the <code>h1 a</code> style will apply. この場合、その要素を<code>#FCA205</code>に、つまりオレンジ色にしようとしています。 もちろん、あなたの好きな色に変えられます！
+    <code>h1 a</code>はCSSセレクタと呼ばれるものです。 <code>h1</code> 要素の中にある <code>a</code> 要素にスタイルを適用します、という意味になります。 よって <code>&lt;h1&gt;&lt;a href=""&gt;link&lt;/a&gt;&lt;/h1&gt;</code>となっているとき、 <code>h1 a</code> スタイルが適用されます。 この場合、その要素を<code>#FCA205</code>に、つまりオレンジ色にしようとしています。 もちろん、あなたの好きな色に変えられます！
   </p>
   
   <p>
@@ -129,7 +129,7 @@ Bootstrapをインストールするには .html ファイル (blog/templates/bl
   </p>
   
   <p>
-    We also need to tell our HTML template that we added some CSS. Open the <code>blog/templates/blog/post_list.html</code> file and add this line at the very beginning of it:
+    さて、CSSを追加したことをHTMLテンプレートに教えないといけません。<code>blog/templates/blog/post_list.html</code>を開いて、先頭にこの行を追加しましょう：
   </p>
   
   <p>
