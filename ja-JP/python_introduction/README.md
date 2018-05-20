@@ -340,7 +340,7 @@ As we'll see later, `print()` is also useful when we want to print things from i
 
 このように、リスト名と要素のインデックスを [] に記述することで、指定した要素を取り出すことができます。
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+リストから要素を消すには、これまで学んできたインデックスと `pop()` メソッドを使います。 例で試してみましょう。リストの最初の要素を削除しています。
 
 {% filename %}command-line{% endfilename %}
 
@@ -357,15 +357,15 @@ To delete something from your list you will need to use **indexes** as we learne
 
 お見事！
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+他のインデックスも試して遊んでみてください。例えば、 6, 7, 1000, -1, -6, -1000 などをインデックスに指定するとどうなるでしょうか。コマンドを実行する前に予測してみましょう。結果はどうですか？
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+ご参考に、こちらのドキュメントにリストメソッドがすべて記されています。 https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dictionaries
 
 > For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+辞書(ディクショナリ)について確認しましょう。リストに似ていますが、インデックスのかわりにキーと呼ばれる識別子で値を参照します。キーは文字列も数値も使えます。ディクショナリは次のように `{}` 括弧で囲んで作成します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,9 +374,9 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+これで中身が空っぽのディクショナリができましたね。やったね！
 
-Now, try writing the following command (try substituting your own information, too):
+では、つぎのコマンドを記述してみましょう。 (あなた自身の情報に値をおきかえてみてもいいですよ）
 
 {% filename %}command-line{% endfilename %}
 
@@ -384,10 +384,10 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+このコマンドで、`participant` という名前の変数をつくって、３つのキーと値をもつ要素を作成しました。
 
-- キー `name` が指す値 `'オーラ'` (`string` オブジェクト)
-- キー `country` が指す値 `'Poland'` (`string` オブジェクト),
+- キー `name` が指す値 `'Ola'` (`string` オブジェクト)
+- キー `country` が指す値 `'Poland'` (`string` オブジェクト)
 - キー `favorite_numbers/0> は リスト <code>[7, 42, 92]/0>。 (数字を3つ持つlist).</li>
 </ul>
 
