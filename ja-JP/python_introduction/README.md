@@ -781,9 +781,9 @@ else:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+どうなったかわかりましたか？ `elif` を追加する事で、上記の条件（`name == 'Ola'`）が失敗した場合に実行する条件を追加することができます。
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+最初の `if` の条件分岐の後に、好きなだけ `elif` を追加する事ができます。例えば...
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -803,7 +803,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Pythonは上から順番に各条件をテスト、実行し、出力します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -813,9 +813,9 @@ Python runs through each test in sequence and prints:
 
 ## Comments
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+コメントは `#` で始まる行です。`#` の後にはなんでも書くことができ、Pythonはそれを無視します。コメントを書くことであなたのコードがほかの人にもわかりやすくなります。
 
-Let's see how that looks:
+コメントを書いてみましょう。
 
 {% filename %}python_intro.py{% endfilename %}
 
