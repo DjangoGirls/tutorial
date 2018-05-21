@@ -46,7 +46,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
 
 ![図 13.2](images/step2.png)
 
-動きましたね。 しかし、本当は、**Introduction to HTML** で作った静的な記事のように表示してほしいところです。 bodyタグの中を次のように書いてください: bodyはこのようにします。
+動きましたね。 しかし、本当は、**Introduction to HTML** で作った静的な記事のように表示してほしいところです。 そこで、HTMLとテンプレートタグを混ぜてみましょう。 `body` タグの中を次のように書いてください：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,7 +64,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
 {% endfor %}
 ```
 
-{% for %}と{% endfor %}の間にリストの中のオブジェクトごとに表示したい内容を書くとオブジェクトの数だけ繰り返し書かれます。ページをリロードしてみましょう。
+`{% for %}` と `{% endfor %}` の間にリストの中のオブジェクトごとに表示したい内容を書くとオブジェクトの数だけ繰り返し書かれます。ページをリロードしてみましょう。
 
 ![図 13.3](images/step3.png)
 
