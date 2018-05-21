@@ -86,7 +86,7 @@ A language code consist of the language, e.g. `en` for english or `de` for germa
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-LANGUAGE_CODE = 'de-ch'
+LANGUAGE_CODE = 'ja'
 ```
 
 We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
@@ -98,7 +98,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+`DEBUG` が `True` に設定されていて、`ALLOWED_HOSTS` が空のリストの時は、自動的に `['localhost', '127.0.0.1', '[::1]']` という3つのホストに対してチェックが行われます。 このままの設定では、これから私たちがデプロイして使う PythonAnywhere のホストネームが含まれていません。ですから、次のように設定を変更します。
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -106,15 +106,15 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **メモ**: Chromebook を使っている人は、次の1行を settings.py ファイルの最後に追加してください。 `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
+> cloud9 のサービスを使っている人は、`.c9users.io` も `ALLOWED_HOSTS` に追加してください。
 
-## Set up a database
+## データベースをセットアップする
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+あなたのサイトのデータを保管することができるデータベース・ソフトウェアには、たくさんの種類があります。今は、Django がデフォルトで使う `sqlite3` というデータベースを使うことにします。
 
-This is already set up in this part of your `mysite/settings.py` file:
+この設定はすでに `mysite/settings.py` ファイルの中に次のように書かれています。
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -152,7 +152,7 @@ To create a database for our blog, let's run the following in the console: `pyth
 
 And we're done! Time to start the web server and see if our website is working!
 
-## Starting the web server
+## ウェブサーバを起動する
 
 You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
 
@@ -177,14 +177,14 @@ If you are on Windows and this fails with `UnicodeDecodeError`, use this command
 
 Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
-{% filename %}browser{% endfilename %}
+{% filename %}ブラウザ{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
 If you're using a Chromebook, you'll always visit your test server by accessing:
 
-{% filename %}browser{% endfilename %}
+{% filename %}ブラウザ{% endfilename %}
 
     https://django-girls-<your cloud9 username>.c9users.io
     
