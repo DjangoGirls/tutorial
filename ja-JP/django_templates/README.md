@@ -88,7 +88,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
     $ git push
     
 
-* そしたら、Pythonanywhereに戻って、Bashコンソール（か、新しいコンソール）に入って、動かしましょう：
+* そしたら、[Pythonanywhere](https://www.pythonanywhere.com/consoles/)に戻って、**Bashコンソール**（か、新しいコンソール）に入って、次のようにコマンドを打ちましょう：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
     [...]
     
 
-* 最後にブラウザのタブを開いてアプリをリロードします。更新が反映されています！ If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* 最後に[ブラウザのタブ](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。更新が反映されています！ PythonAnywhereで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 おめでとうございます！よくできました! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
