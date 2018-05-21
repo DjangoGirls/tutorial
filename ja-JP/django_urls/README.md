@@ -33,7 +33,7 @@ urlpatterns = [
 
 三重クオート（ `'''` や `"""` ）で囲まれた行は、docstringとよばれるコメント行です。ファイル、クラス、またはメソッドの先頭に記述して、それが何をするかを説明するのに用います。 これはPythonによって実行されない行です。
 
-The admin URL, which you visited in the previous chapter, is already here:
+前の章で訪れたadminのURLについてはすでに書いてありますね。
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,7 +41,7 @@ The admin URL, which you visited in the previous chapter, is already here:
     url(r'^admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+`admin/` で始まる全てのURLについて、Djangoが返すべき*view*をこの行で指定しています。 In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## 正規表現
 
