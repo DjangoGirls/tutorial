@@ -45,11 +45,11 @@ urlpatterns = [
 
 ## 正規表現
 
-どうやってDjangoはビューとURLを紐づけるのかと思うかもしれません。 そうです、この部分はひとひねりしています。 Djangoは `regex`、正規表現を使います。 Regexは多くの（本当に多くの）検索パターンのルールを持っています。 Since regexes are an advanced topic, we will not go into detail over how they work.
+どうやってDjangoはビューとURLを紐づけるのかと思うかもしれません。 そうです、この部分はひとひねりしています。 Djangoは `regex`、正規表現を使います。 Regexは多くの（本当に多くの）検索パターンのルールを持っています。 正規表現は突きつめると高度な話になりますので、どのように動作しているのか詳しい仕組みまではここでは説明しません。
 
-If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
+どのようにパターンが作られるかを理解したいなら、こちらにプロセスの例があります。探し求めているパターンを表現する限定したルールの一部分だけを説明するとこんな感じです：
 
-* `^` for the beginning of the text
+* `^` テキストの先頭を示す
 * `$` for the end of the text
 * `\d` for a digit
 * `+` to indicate that the previous item should be repeated at least once
