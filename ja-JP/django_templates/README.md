@@ -46,7 +46,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
 
 ![図 13.2](images/step2.png)
 
-動きましたね。 But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. bodyタグの中を次のように書いてください: bodyはこのようにします。
+動きましたね。 しかし、本当は、**Introduction to HTML** で作った静的な記事のように表示してほしいところです。 bodyタグの中を次のように書いてください: bodyはこのようにします。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
