@@ -49,17 +49,17 @@ urlpatterns = [
 
 どのようにパターンが作られるかを理解したいなら、こちらにプロセスの例があります。探し求めているパターンを表現する限定したルールの一部分だけを説明するとこんな感じです：
 
-* `^` テキストの先頭を表す
-* `$` テキストの末尾を表す
-* `\d` 数字を表す
+* `^` テキストの先頭を示す
+* `$` テキストの末尾を示す
+* `\d` 数字を示す
 * `+` 前のアイテムを1回以上繰り返すことを示す
 * `()` パターンの一部を取得する
 
 URL定義内で、ほかのものはすべて文字通り受け取られます。
 
-Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
+`http://www.mysite.com/post/12345/` このようなウェブサイトのアドレスを想像してみてください。この `12345` の部分がポストした記事の番号です。
 
-すべてのポストした記事の数を分けて記述することは非常に面倒です。 With regular expressions, we can create a pattern that will match the URL and extract the number for us: `^post/(\d+)/$`. Let's break this down piece by piece to see what we are doing here:
+すべてのポストした記事の数を分けて記述することは非常に面倒です。 正規表現では、それらの数字を抽出し、URLに一致したパターンが作れます。それは、`^post/(\d+)/$` と表せます。 Let's break this down piece by piece to see what we are doing here:
 
 * **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * (\d+)は１つか複数の数字を示します。取り出したい番号のことです。
