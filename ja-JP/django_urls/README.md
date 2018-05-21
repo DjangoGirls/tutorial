@@ -59,7 +59,7 @@ URL定義内で、ほかのものはすべて文字通り受け取られます�
 
 `http://www.mysite.com/post/12345/` このようなウェブサイトのアドレスを想像してみてください。この `12345` の部分がポストした記事の番号です。
 
-すべてのポストした記事の数を分けて記述することは非常に面倒です。 正規表現では、それらの数字を抽出し、URLに一致したパターンが作れます。それは、`^post/(\d+)/$` と表せます。 Let's break this down piece by piece to see what we are doing here:
+すべてのポストした記事の数を分けて記述することは非常に面倒です。 正規表現では、それらの数字を抽出し、URLに一致したパターンが作れます。それは、`^post/(\d+)/$` と表せます。 １つずつそれが何を示しているか紐解いてみましょう。
 
 * **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * (\d+)は１つか複数の数字を示します。取り出したい番号のことです。
