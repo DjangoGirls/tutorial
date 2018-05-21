@@ -10,7 +10,7 @@
 
 Djangoでは、ファイルやディレクトリの名前がとても重要です。 作成されたファイルの名前は変えるべきではありません。 ファイルを移動させるのもいいアイディアとはいえません。 Djangoでは、重要なファイルを決められたファイル構成で作成しておくことが必要です。 
 
-> virtualenv（仮想環境）を実行しているでしょうか。 If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. チャプターDjango installationのWorking with virtualenv で、仮想環境を実行する方法を説明しました。 Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> virtualenv（仮想環境）を実行しているでしょうか。 もしコンソールのプロンプトの前に `(myvenv)` という文字が表示されていない時は、virtualenv が実行されていないので、有効にする必要があります。 **Django installation** のチャプターの **Working with virtualenv** のパートで、仮想環境を実行する方法について説明しました。 Windowsでは、`myvenv\Scripts\activate`、MacOS や Linux では、 `myvenv/bin/activate` というコマンドを入力すると有効にできます。
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
