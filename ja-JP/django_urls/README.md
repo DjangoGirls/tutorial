@@ -8,11 +8,11 @@ URLは簡単に言えばWEB上のアドレスです。 サイトのURLは、ブ�
 
 ![URL](images/url.png)
 
-インターネット上のすべてのページには、独自のURLが必要です。 それによって、これから作るアプリケーションが、URLを指定してアクセスしてきたユーザに、何を見せたらいいのかわかるのです。 Djangoでは `URL_conf`（URL設定）と呼ばれるものを使います。 URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+インターネット上のすべてのページには、独自のURLが必要です。 それによって、これから作るアプリケーションが、URLを指定してアクセスしてきたユーザに、何を見せたらいいのかわかるのです。 Djangoでは `URL_conf`（URL設定）と呼ばれるものを使います。 これは、要求されたURLに合わせてDjangoがどのviewを返したらいいか判断する仕組みのことです。
 
 ## How do URLs work in Django?
 
-mysite/urls.pyを開いて、中身をみてみると：
+`mysite/urls.py` を開いて、中身をみてみると：
 
 {% filename %}mysite/urls.py{% endfilename %}
 
