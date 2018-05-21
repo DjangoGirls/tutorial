@@ -72,7 +72,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
 
 ## もう一つ...
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+今の時点でのウェブサイトを公開して見てみませんか？もう一度PythonAnywhereでデプロイしてみましょう。デプロイのステップをおさらいします。
 
 * まず、GitHubでコードをpushします。
 
