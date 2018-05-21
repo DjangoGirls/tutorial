@@ -101,6 +101,6 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
 
 おめでとうございます！よくできました! これができたら、Django adminとして新しい投稿を追加しましょう（published_dateを忘れないで！）。PythonAnywhereサイトのDjango管理者であることを確認してください（https://yourname.pythonanywhere.com/admin）。それから、投稿したものがそこに見えるか、リロードしましょう。
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+動くのが楽しくなってきたでしょう？少しパソコンから離れて、休憩しましょう：）
 
 ![図 13.4](images/donut.png)
