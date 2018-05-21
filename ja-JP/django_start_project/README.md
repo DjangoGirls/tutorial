@@ -189,7 +189,7 @@ If you're using a Chromebook, you'll always visit your test server by accessing:
     https://django-girls-<your cloud9 username>.c9users.io
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+おめでとう！ たった今、あなたは最初のウェブサイトを作って、それをウェブサーバーの上で起動しました！ 素晴らしいですね！
 
 ![It worked!](images/it_worked2.png)
 
@@ -199,4 +199,4 @@ While the web server is running, you won't see a new command-line prompt to ente
 
 To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
-Ready for the next step? It's time to create some content!
+杉のステップに進む準備はできましたか？ 今度は実際にコンテンツを作り始めましょう！
