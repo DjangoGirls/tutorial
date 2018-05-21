@@ -164,7 +164,7 @@ TypeError: object of type 'int' has no len()
 6
 ```
 
-うまく行きました！ `str` 関数を `len` の中に記述しました。`str()` はその中身を文字列に変換します。
+うまく行きました！ `str` 関数を `len` のかっこの中に記述しました。`str()` はその中身を文字列に変換します。
 
 - `str` 関数は、**文字列** に変換します。
 - `int` 関数は、文字列や数値を **整数** に変換します。
@@ -183,7 +183,7 @@ TypeError: object of type 'int' has no len()
 >>> name = "Ola"
 ```
 
-name イコール（=）Ola とタイプします。
+name イコール（=）"Ola" とタイプします。
 
 見てのとおり、プログラムは、なにも返してくれませんね。では、変数がきちんとあるか、どうやって確かめたらいいのでしょうか？ `name` とタイプして、`Enter` キーを押してください。
 
@@ -256,7 +256,7 @@ Maria
 
 単に `name` とタイプした時は、Pythonインタプリタが、変数'name'の *representation* を返します。ここでは、 M-a-r-i-aという単なる文字の集まりで、シングルクォーテーション（''）に囲われています。 しかし、`print(name)`と記述した時は、Pythonは変数の中身を出力します。クォーテーションはありません。
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+これからさらに詳しくみていきますが、`print()` は、関数から出力をする時や、複数行の出力を行うときにも便利です。
 
 ## Lists
 
