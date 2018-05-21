@@ -22,7 +22,7 @@ We hope that we'll be able to make you love technology as much as we do!
 
 ## チュートリアルでは何を知ることができる？
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+このチュートリアルを終わらせれば、実際に動作する、自分の小さなウェブアプリを1つ動かせるようになります。私たちは、アプリをインターネット上で動かす方法を教えます。インターネット上で動くようになれば、あなたが作ったアプリを世界中の誰でも見られるようになります！
 
 It will (more or less) look like this:
 
@@ -30,7 +30,7 @@ It will (more or less) look like this:
 
 > If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+それでは、[さっそく最初からやってみよう！](./how_the_internet_works/README.md)
 
 ## 自分の家でチュートリアルを進める
 
