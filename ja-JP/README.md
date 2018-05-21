@@ -20,7 +20,7 @@ This tutorial will not magically turn you into a programmer. If you want to be g
 
 We hope that we'll be able to make you love technology as much as we do!
 
-## What will you learn during the tutorial?
+## チュートリアルでは何を知ることができる？
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
@@ -32,20 +32,20 @@ It will (more or less) look like this:
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## 自分の家でチュートリアルを進める
 
 It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
-## About and contributing
+## コントリビューションについて
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+このチュートリアルは、[DjangoGirls](https://djangogirls.org/) がメンテナンスしています。 ミスを見つけたりチュートリアルを更新したくなった時は、[コントリビューション・ガイドライン](https://github.com/DjangoGirls/tutorial/blob/master/README.md)を読んでください。
 
-## Would you like to help us translate the tutorial into other languages?
+## チュートリアルの翻訳をしたい方へ
 
-Currently, translations are being kept on crowdin.com platform at:
+現在、翻訳は crowdin.com の次のプロジェクトで管理されています。
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+あなたが翻訳したい言語が [crowdin](https://crowdin.com/) にない時は、[新しい issue を立て](https://github.com/DjangoGirls/tutorial/issues/new)て、追加したい言語を私たちに教えてください。
