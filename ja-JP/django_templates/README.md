@@ -1,12 +1,12 @@
 # Djangoテンプレート
 
-何かデータを表示しましょう！Djangoはそれをビルトインの**テンプレートタグ**で実現できます。
+何かデータを表示しましょう！Djangoはそれをビルトインの **テンプレートタグ** で実現できます。
 
 ## テンプレートタグとは？
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+HTMLではブラウザがpythonを認識できないのでpythonのコードは書けません。HTMLはより静的でpythonは動的です。
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**Djangoテンプレートタグ** はHTMLにPyhtonのようなコードを埋め込むことができて、動的なウェブサイトがより早く簡単に作れます!
 
 ## ブログ一覧テンプレート
 
@@ -20,10 +20,7 @@ Djangoテンプレートで変数を表示するためには、次のように�
 {{ posts }}
 ```
 
-これを `blog/templates/blog/post_list.html` に書いてみて下さい。 ２つめと３つ目の
-
-<div>
-</div>タグをまるごと {{posts}} に置き換えて下さい。 ファイルを保存してページをリロードしますと：
+これを `blog/templates/blog/post_list.html` に書いてみて下さい。 （２つめと３つめの `<div></div>` タグをまるごと `{{posts}}` に置き換えて下さい。） ファイルを保存してページをリロードしますと：
 
 ![図 13.1](images/step1.png)
 
@@ -35,7 +32,7 @@ Djangoテンプレートで変数を表示するためには、次のように�
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Djangoはオブジェクトのリストと認識します。 Introduction to Pythonを思い出して下さい。 ループを使ってリストを表示しましたよね。 Djangoテンプレートではこう書きます:
+Djangoはオブジェクトのリストと認識します。 **Introduction to Python** を思い出して下さい。 ループを使ってリストを表示しましたよね。 Djangoテンプレートではこう書きます：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
