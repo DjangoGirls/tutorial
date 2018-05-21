@@ -49,13 +49,13 @@ urlpatterns = [
 
 どのようにパターンが作られるかを理解したいなら、こちらにプロセスの例があります。探し求めているパターンを表現する限定したルールの一部分だけを説明するとこんな感じです：
 
-* `^` テキストの先頭を示す
-* `$` for the end of the text
-* `\d` for a digit
-* `+` to indicate that the previous item should be repeated at least once
-* `()` to capture part of the pattern
+* `^` テキストの先頭を表す
+* `$` テキストの末尾を表す
+* `\d` 数字を表す
+* `+` 前のアイテムを1回以上繰り返すことを示す
+* `()` パターンの一部を取得する
 
-Anything else in the URL definition will be taken literally.
+URL定義内で、ほかのものはすべて文字通り受け取られます。
 
 Now imagine you have a website with the address like `http://www.mysite.com/post/12345/`, where `12345` is the number of your post.
 
