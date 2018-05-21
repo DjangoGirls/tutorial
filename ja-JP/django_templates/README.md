@@ -88,7 +88,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
     $ git push
     
 
-* そしたら、[Pythonanywhere](https://www.pythonanywhere.com/consoles/)に戻って、**Bashコンソール**（か、新しいコンソール）に入って、次のようにコマンドを打ちましょう：
+* そしたら、[PythonAnywhere](https://www.pythonanywhere.com/consoles/)に戻って、**Bashコンソール**（か、新しいコンソール）に入って、次のようにコマンドを打ちましょう：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -97,9 +97,9 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
     [...]
     
 
-* 最後に[ブラウザのタブ](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。更新が反映されています！ PythonAnywhereで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* 最後に[ブラウザのタブ](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。更新が反映されています！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
 
-おめでとうございます！よくできました! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+おめでとうございます！よくできました! これができたら、Django adminとして新しい投稿を追加しましょう（published_dateを忘れないで！）。PythonAnywhereサイトのDjango管理者であることを確認してください（https://yourname.pythonanywhere.com/admin）。それから、投稿したものがそこに見えるか、リロードしましょう。
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
