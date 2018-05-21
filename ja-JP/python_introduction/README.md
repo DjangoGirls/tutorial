@@ -641,7 +641,7 @@ Macでは、コマンドは次のようになります。
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Linuxでは、次のようになります。("Desktop"のところは"デスクトップ"と表示されているかも知れません):
+Linuxでは、次のようになります。("Desktop"のところは"デスクトップ"と表示されているかも知れません)
 
 {% filename %}command-line{% endfilename %}
 
@@ -759,7 +759,7 @@ else:
     5 is indeed greater than 2
     
 
-２が５より大きい場合、２行目のコマンドが実行されます。では、`elif` はどうなるのでしょうか？
+もし２が５より大きかったら、４行目のコマンドが実行されます。では、`elif` はどうなるのでしょうか？
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -781,7 +781,7 @@ else:
     Hey Sonja!
     
 
-どうなったかわかりましたか？ `elif` を追加する事で、上記の条件（`name == 'Ola'`）が失敗した場合に実行する条件を追加することができます。
+どうなったかわかりましたか？ `elif` を追加する事で、上記の条件（`name == 'Ola'`）が True でない場合に実行する条件を追加することができます。
 
 最初の `if` の条件分岐の後に、好きなだけ `elif` を追加する事ができます。例えば...
 
