@@ -41,11 +41,11 @@ urlpatterns = [
     url(r'^admin/', admin.site.urls),
 ```
 
-`admin/` で始まる全てのURLについて、Djangoが返すべき*view*をこの行で指定しています。 In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+`admin/` で始まる全てのURLについて、Djangoが返すべき*view*をこの行で指定しています。 今回の場合、adminで始まるURLをたくさん作ることになりますが、その全てをこの小さいファイルに書くようなことはしません。この方がきれいで読みやすいですし。
 
 ## 正規表現
 
-どのやってDjangoはビューにURLをマッチするのかと思うかもしれません。 そうです、この部分はひとひねりしています。 Djangoはregex、正規表現を使います。Regexは多くの（本当に多くの）検索パターンのルールを持っています。 理解するのは簡単では無いですが、今は心配しないで下さい。 Since regexes are an advanced topic, we will not go into detail over how they work.
+どうやってDjangoはビューとURLを紐づけるのかと思うかもしれません。 そうです、この部分はひとひねりしています。 Djangoは `regex`、正規表現を使います。 Regexは多くの（本当に多くの）検索パターンのルールを持っています。 Since regexes are an advanced topic, we will not go into detail over how they work.
 
 If you still wish to understand how we created the patterns, here is an example of the process – we will only need a limited subset of the rules to express the pattern we are looking for, namely:
 
