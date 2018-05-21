@@ -1,14 +1,14 @@
-# Django URLs
+# Django urls
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+最初のウェブページを立てましょう、あなたのブログです。始めに、DjangoのURLについて少し学びましょう。
 
 ## URLとは？
 
-URLとは、Webアドレスです。 You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! そう、127.0.0.1:8000 や And `https://djangogirls.org` is also a URL.)
+URLは簡単に言えばWEB上のアドレスです。 サイトのURLは、ブラウザのアドレスバーで見ることができます。 （そう、 `127.0.0.1:8000` や `http://djangogirls.com` がURLです。）
 
 ![URL](images/url.png)
 
-インターネット上のすべてのページには、独自のURLが必要です。 This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+インターネット上のすべてのページには、独自のURLが必要です。 それによって、これから作るアプリケーションが、URLを指定してアクセスしてきたユーザに、何を見せたらいいのかわかるのです。 Djangoでは `URL_conf`（URL設定）と呼ばれるものを使います。 URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## How do URLs work in Django?
 
