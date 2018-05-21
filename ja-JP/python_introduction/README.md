@@ -8,7 +8,7 @@
 
 ## Python prompt
 
-> 家から勉強している方は：[Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) の動画を参考してください。
+> 家から勉強している方は：[Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) の動画を参考にしてください。
 
 Pythonであそぶために、*コマンドライン* を開きましょう。 やり方は、チャプター [Intro to Command Line](../intro_to_command_line/README.md) で学びましたね。
 
@@ -363,7 +363,7 @@ Maria
 
 ## Dictionaries
 
-> 家から勉強している方は：[Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) の動画を参考してください。
+> 家から勉強している方は：[Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) の動画を参考にしてください。
 
 辞書(ディクショナリ)について確認しましょう。リストに似ていますが、インデックスのかわりにキーと呼ばれる識別子で値を参照します。キーは文字列も数値も使えます。ディクショナリは次のように `{}` 括弧で囲んで作成します。
 
@@ -476,7 +476,7 @@ KeyError: 'age'
 
 ## Compare things
 
-> 家から勉強している方は：[Python Basics: Dictionaries](https://www.youtube.com/watch?v=7bzxqIKYgf4) の動画を参考してください。
+> 家から勉強している方は：[Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) の動画を参考にしてください。
 
 比較することは、プログラミングの醍醐味の１つです。簡単に比較できるものといえば、何でしょうか？そうです、数字ですね。さっそくやってみましょう。
 
@@ -590,7 +590,7 @@ False
 
 # Save it!
 
-> 家から勉強している方は：[Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) の動画を参考してください。
+> 家から勉強している方は：[Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) の動画を参考にしてください。
 
 ここまでインタプリタでPythonのコードをかいてきました。つまり、コードを１行づつしか書くことができませんでした。 普通のプログラムはファイルに保存され、**インタプリタ** あるいは **コンパイラ** でプログラミング言語を処理して実行します。 ここまで、私たちはプログラムを１行ごとにPython **インタプリタ** で実行してきました。 ここからは、１行以上のコードを実行していきましょう。次のような流れになります。
 
@@ -842,7 +842,7 @@ if volume < 20 or volume > 80:
 
 ## Your own functions!
 
-> 家から勉強している方は：[Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) の動画を参考してください。
+> 家から勉強している方は：[Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) の動画を参考にしてください。
 
 Pythonには `len()` のように関数があったのを覚えていますか？ ここでは、自分で関数を作る方法を学びます。
 
@@ -976,7 +976,7 @@ hi("Rachel")
 
 ## Loops
 
-> 家から勉強している方は：[Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) の動画を参考してください。
+> 家から勉強している方は：[Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) の動画を参考にしてください。
 
 さぁ、もう最後のパートですよ。あっという間ですね。 :)
 
