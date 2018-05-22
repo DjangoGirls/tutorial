@@ -17,13 +17,13 @@ admin.site.register(Post)` </code></pre>
 
 ![ログインページ](images/login_page2.png)
 
-ログインするには、*superuser *（サイトの全てを管理するユーザー）を作る必要があります。 Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+ログインするには、*superuser *（サイトの全てを管理するユーザー）を作る必要があります。 コマンドラインに戻り、`python manage.py createsuperuser` と入力し、enter キーを押します。
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> 今あなたのコマンドラインでは、最初の Django プロジェクト **プロジェクトを作成しよう**で行った web サーバー</b> セクションを開始しています。 Web サーバーの実行中に新しいコマンドを書き込む時は、新しいターミナル ウィンドウを開いて、仮想環境をアクティブにしてください。
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}Mac OS X または Linux:{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
+    (myvenv) ~/djangogirls$ python manage.py runserver
     
 
 {% filename %}Windows:{% endfilename %}
@@ -31,7 +31,7 @@ admin.site.register(Post)` </code></pre>
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+プロンプトが表示されたら、ユーザー名 (小文字、スペースなし)、電子メール アドレス、およびパスワードを入力します。 タイプしてる間パスワードは見えなくても大丈夫、それが正常です。タイプしてEnterを押して続けましょう。 そうすればこのように見えるはずです。（ユーザーネームとパスワードは今あなたがタイプしたものです。）
 
     Username: admin
     Email address: admin@admin.com
