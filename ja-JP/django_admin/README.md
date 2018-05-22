@@ -40,16 +40,16 @@ admin.site.register(Post)` </code></pre>
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+ブラウザに戻ってsuperuserでログインすると、Django admin ダッシュボードが見えるでしょう。
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+Postsに行って少し試してみてください。5～6のブログポストを入れてみましょう。コンテンツは心配しなくて大丈夫。今はとりあえずこのチュートリアルからテキストをいくつかコピペするだけでいいです。 （ブログ機能を確認するためなので、内容は何でも大丈夫です。自分で適当な文字列を打ち込んでももちろんOKです。）
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+少なくとも 2 つまたは 3 つの記事 (すべてではない) は 同じ日付あることを確認します。それは後で参考になります。
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+もしDjango adminについてもっと知りたければ、Django's documentationを見て下さい。（お使いの環境に合わせたバージョンを参照ください） https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+ここでおそらく、コーヒーか紅茶か何かを食べてリフレッシュする時間をとりましょう！！ 初めてのDjango modelを作成しました。
