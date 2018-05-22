@@ -6,19 +6,18 @@
 
 <p>{% filename %}blog/admin.py{% endfilename %}</p>
 
-<pre><code class="python">from django.contrib import admin
+<pre><code class="python"><code>from django.contrib import admin
 from .models import Post
 
-admin.site.register(Post)
-`</pre> 
+admin.site.register(Post)` </code></pre> 
 
 見て分かる通り、前回定義したPostモデルをimportしています。 Adminページ(管理画面)のモデルを作るために、モデルを登録する必要があります。`admin.site.register(Post)`の部分です.
 
-OKです、Postモデルについて見ていきましょう。 Web サーバーを実行するコンソールで `python manage.py runserver` を実行してください。 Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+ではPostモデルを見てみましょう。 Web サーバーを実行するコンソールで `python manage.py runserver` を実行してください。 ブラウザに行って http://127.0.0.1:8000/admin/ とアドレスバーにタイプします。 こんなログインページが出ますね。
 
 ![ログインページ](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+ログインするには、*superuser *（サイトの全てを管理するユーザー）を作る必要があります。 Go back to the command line, type `python manage.py createsuperuser`, and press enter.
 
 > Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
