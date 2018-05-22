@@ -1,16 +1,16 @@
 # Django models
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+さて、ブログの中のポストを格納するものが欲しいですよね。そのために `オブジェクト` についてちょっとお話しします。
 
 ## オブジェクト
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+プログラミングには `オブジェクト指向プログラミング` という概念があります。 それは、退屈なプログラムを繰り返し書く代わりにモデルになるものを作って、それが他とどう作用するかを定義するという考え方です。
 
 じゃあオブジェクトって何なの？って思いますよね。オブジェクトは状態（プロパティ）と命令（アクション）の塊です。ピンと来ないでしょうから例を挙げましょう。
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+猫をモデルにしたいときは、`猫(Cat)` オブジェクトを作ります。そのプロパティは、`色(color)` 、`年齢(age)` 、`機嫌(mood)`（いい、悪い、眠い）、`飼い主(owner)`（ `人(Person)` オブジェクトですね、捨て猫ならそのプロパティは空白）です。
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+`猫` のアクションは、`喉を鳴らす(purr)` 、`引っ掻く(scratch)` 、`餌を食べる(feed)`（ `キャットフード(CatFood)` などで、それはまた `味(taste)` というプロパティを持つ別のオブジェクトになるでしょう。）
 
     Cat
     --------
