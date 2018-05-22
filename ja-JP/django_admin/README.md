@@ -1,19 +1,18 @@
 # Django admin
 
-記事の追加や編集、削除するにはDjango adminを使います。
+今作成したポストを追加、編集、削除するのにDjango adminを使います。
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+`blog/admin.py<code>ファイルをエディタで開いて、内容をこのように変えて下さい：</p>
 
-{% filename %}blog/admin.py{% endfilename %}
+<p>{% filename %}blog/admin.py{% endfilename %}</p>
 
-```python
-from django.contrib import admin
+<pre><code class="python">from django.contrib import admin
 from .models import Post
 
 admin.site.register(Post)
-```
+`</pre> 
 
-前章でpostモデルをimportするのを見ました。 Adminページ(管理画面)のモデルを作るために、モデルを登録する必要があります。`admin.site.register(Post)`の部分です.
+見て分かる通り、前回定義したPostモデルをimportしています。 Adminページ(管理画面)のモデルを作るために、モデルを登録する必要があります。`admin.site.register(Post)`の部分です.
 
 OKです、Postモデルについて見ていきましょう。 Web サーバーを実行するコンソールで `python manage.py runserver` を実行してください。 Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
