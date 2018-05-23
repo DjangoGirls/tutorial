@@ -23,7 +23,7 @@ Szablony są zapisywane w katalogu `blog/templates/blog`. Zacznij więc od stwor
         └───blog
     
 
-(być może zastanawiasz się, dlaczego tworzymy dwa katalogi o nazwie `blog` - jak się niebawem dowiesz, to po prostu użyteczna konwencja nazewnictwa. Ułatwia życie, gdy sprawy stają się bardziej skomplikowane.)
+(Być może zastanawiasz się, dlaczego tworzymy dwa katalogi o nazwie `blog` - jak się niebawem dowiesz, to po prostu użyteczna konwencja nazewnictwa. Ułatwia życie, gdy sprawy stają się bardziej skomplikowane.)
 
 A teraz stwórz plik `post_list.html` (na razie niech będzie pusty) wewnątrz katalogu `blog/templates/blog`.
 
@@ -33,7 +33,7 @@ Popatrz, jak Twoja strona wygląda teraz: http://127.0.0.1:8000/
 
 ![Rysunek 11.1](images/step1.png)
 
-Nie ma błędu! Gratulacje :) Niestety, twoja aplikacja nie wyświetla niczego poza pustą stroną, ponieważ Twój szablon również jest pusty. Naprawmy to.
+Nie ma błędu! Gratulacje! :) Niestety, twoja aplikacja nie wyświetla niczego poza pustą stroną, ponieważ Twój szablon również jest pusty. Naprawmy to.
 
 Dodaj następującą treść w pliku z szablonem:
 
@@ -99,7 +99,7 @@ Teraz nieco się pobawmy i spróbujmy dostosować nasz szablon! Oto kilka znaczn
 
 * `<h1>Tytuł</h1>` dla twojego najbardziej znaczącego nagłówka
 * `<h2>Podtytuł</h2>` dla nagłówka niższego poziomu
-* `<h3>pod-podtytuł</h3>` …i tak dalej aż do `<h6>`
+* `<h3>pod-podtytuł</h3>` … i tak dalej aż do `<h6>`
 * `<p>akapit tekstu</p>`
 * `<em>tekst</em>` dodaje wyróżnienie twojego tekstu
 * `<strong>text</strong>` jeszcze mocniej wyróżnia twój tekst
@@ -146,7 +146,7 @@ Daje nam to taki efekt:
 
 ![Rysunek 11.4](images/step6.png)
 
-Hura! Ale jak do tej pory, nasz szablon wyświetla dokładnie **tą samą treść**. Tymczasem wspominałyśmy wcześniej, że szablony umożliwiają nam wyświetlenie **różnych** treści w **takim samym formacie**.
+Hura! Ale jak do tej pory, nasz szablon wyświetla dokładnie **tę samą treść**. Tymczasem wspominałyśmy wcześniej, że szablony umożliwiają nam wyświetlenie **różnych** treści w **takim samym formacie**.
 
 Chcemy wyświetlić prawdziwe wpisy dodane w naszym panelu admina Django - i tym się teraz zajmiemy.
 
