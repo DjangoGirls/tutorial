@@ -22,7 +22,7 @@ Aby zacząć nasze eksperymenty, musimy najpierw otworzyć nasz wiersz poleceń.
 
 Przejdź do menu Start → System → Wiersz polecenia.
 
-> Na starszych wersjach Windowsa szukaj w menu Start → Wszystkie programy → Akcesoria → Wiersz polecenia.
+> Na starszych wersjach Windowsa szukaj w menu Start → Wszystkie programy → Akcesoria → Wiersz poleceń.
 
 <!--endsec-->
 
@@ -34,11 +34,11 @@ Przejdź do Aplikacje → Narzędzia → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Prawdopodobnie gdzieś w menu Aplikacje → Akcesoria → Terminal, ale to może zależeć od wersji Twojego systemu. Jeżeli tam nie znajdziesz, po prostu zapytaj Google. :)
+Prawdopodobnie gdzieś w menu Aplikacje → Akcesoria → Terminal, ale to może zależeć od wersji Twojego systemu. Jeżeli tam nie znajdziesz, po prostu zapytaj Google'a. :)
 
 <!--endsec-->
 
-## Prompt
+## Znak zachęty
 
 Teraz powinnaś zobaczyć białe lub czarne okno, które czeka na Twoje polecenia.
 
@@ -165,7 +165,7 @@ Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
 {% filename %}command-line{% endfilename %}
 
     > dir
-     Directory of C:\Users\olasitarska
+    Directory of C:\Users\olasitarska
     05/08/2014 07:28 PM <DIR>      Applications
     05/08/2014 07:28 PM <DIR>      Desktop
     05/08/2014 07:28 PM <DIR>      Downloads
