@@ -159,11 +159,11 @@ class Post(models.Model):
 - `models.DateTimeField` – 日付と時間のフィールド
 - `models.ForeignKey` – これは他のモデルへのリンク
 
-コードの細かいところまでは説明し出すと時間がかかるので、ここではしませんが、 You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+コードの細かいところまでは説明し出すと時間がかかるので、ここではしませんが、 モデルのフィールドや上記以外の定義のやり方について知りたい方は是非Djangoドキュメントを見てみて下さい。 (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types)
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+`def publish(self):` は何かと言うと、 これこそが先程お話ししたブログを公開するメソッドそのものです。 `def` は、これはファンクション（関数）/メソッドという意味です。`publish` はメソッドの名前で、 変えることもできます。 メソッドの名前に使っていいのは、英小文字とアンダースコアで、アンダースコアはスペースの代わりに使います。 （例えば、平均価格を計算するメソッドは `calculate_average_price` っていう名前にします）
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+メソッドは通常何かを `return` します。 一つの例が `__str__` メソッドにあります。 このシナリオでは、`__str__` を呼ぶと、ポストの表題のテキスト（**string**）が返ってきます。
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
