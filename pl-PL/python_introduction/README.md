@@ -54,9 +54,9 @@ By wykonać potęgowanie, powiedzmy podnieść 2 do potęgi 3, musimy wpisać: {
 
 Pobaw się tym przez chwilę, a potem wróć tutaj. :)
 
-Ja widzisz, Python jest świetnym kalkulatorem. Jeżeli zastanawiasz się, co możesz z ni jeszcze zrobić…
+Ja widzisz, Python jest świetnym kalkulatorem. Jeżeli zastanawiasz się, co możesz z nim jeszcze zrobić…
 
-## Stringi
+## Tekstowy typ danych (string)
 
 A jakby tak wpisać swoje własne imię? Wpisz swoje imię używając cudzysłowów, w ten sposób:
 
@@ -142,7 +142,7 @@ Są to podstawy każdego języka programowania, jakiego przyjdzie Ci się uczyć
 
 ## Błędy
 
-Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam sposób jak długość naszego imienia? Wpisz `len(304023)` i wciśnij `enter`:
+Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam sposób, jak długość naszego imienia? Wpisz `len(304023)` i wciśnij `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Dostałyśmy nasz pierwszy błąd! Ikona {{ warning_icon }} to sposób, w jaki będziemy Ciebie informować, że kod, który zaraz wykonasz nie powinien zadziałać poprawnie. Popełnianie błędów (nawet intencjonalnie) to ważna część nauki!
+Dostałyśmy nasz pierwszy błąd! Ikona {{ warning_icon }} to sposób, w jaki będziemy Ciebie informować, że kod, który zaraz wykonasz, nie powinien zadziałać poprawnie. Popełnianie błędów (nawet intencjonalnie) to ważna część nauki!
 
 Komunikat mówi nam, że obiekty typu "int" (liczby całkowite, ang. integer) nie mają długości. Zatem co możemy zrobić? Może mogłybyśmy przekazać naszą liczbę jako string? Stringi mają ustaloną długość, zgadza się?
 
