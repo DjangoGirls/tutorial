@@ -112,9 +112,9 @@ INSTALLED_APPS = [
 
 ### Creating a blog post model
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+`blog/models.py` ファイルで `Model` と呼ばれるオブジェクトを全て定義します。これがブログポストを定義する場所です。
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+`blog/models.py` を開いて全部削除し、下のコードを書きましょう。
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -140,11 +140,11 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. これはPythonでよく使われて"ダンダー"(ダブルアンダースコア）と呼んでいます。
+> `str` の両側に2つのアンダースコア（ `_` ）がちゃんと入っているか確認しましょう。 これはPythonでよく使われて、"ダンダー"（ダブルアンダースコア）と呼ばれます。
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+難しそうでしょ？でも大丈夫！ちゃんと説明しますから。
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+`from` とか `import` で始まる行は全部、他のファイルから何かをちょこっとずつ追加する行です。 So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
