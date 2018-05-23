@@ -165,13 +165,13 @@ class Post(models.Model):
 
 メソッドは通常何かを `return` します。 一つの例が `__str__` メソッドにあります。 このシナリオでは、`__str__` を呼ぶと、ポストの表題のテキスト（**string**）が返ってきます。
 
-`def publish(self):` と `def __str__(self):` の両方が class キーワードに続く行でインデントされているのに気づきましたか？ Pythonにモデルのメソッドだと伝えるために、class キーワードに続く行ではメソッドをインデントしましょう。 そうしないと、メソッドはモデルのものではなくなり、予期しない振る舞いをするでしょう。
+`def publish(self):` と `def __str__(self):` の両方が class キーワードに続く行でインデントされているのに気づきましたか？ Pythonにモデルのメソッドだと伝えるために、class キーワードに続く行ではメソッドをインデントしましょう。 そうしないと、メソッドはモデルのものではなくなり、思ってもみない振る舞いをするでしょう。
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+もしモデルがまだはっきりつかめないようだったら、気軽にコーチに聞いて下さい！ 特にオブジェクトとファンクションを同時に習ったときはとても複雑なのはよく分かってますから。 でも前ほど魔法みたいじゃないといいですけど！
 
 ### Create tables for models in your database
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+最後のステップは新しいモデルをデータベースに追加することです。 まず、モデルに少し変更があったこと（今作ったこと）をDjangoに知らせましょう。 コンソールで `python manage.py makemigrations blog` とタイプします。 こんな感じですね。
 
 {% filename %}command-line{% endfilename %}
 
@@ -182,7 +182,7 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**メモ：**編集したファイルを忘れずに保存してくださいね。保存しないと、コンピュータが以前のパージョンのファイルを実行してしまい、思ってもみないエラーメッセージに出くわすかもしれません。
 
 Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
 
