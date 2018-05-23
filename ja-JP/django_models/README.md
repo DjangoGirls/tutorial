@@ -149,7 +149,7 @@ class Post(models.Model):
 `class Post(models.Model):` – この行が今回のモデルを定義します (これが `オブジェクト` です).
 
 - classはオブジェクトを定義してますよ、ということを示すキーワードです。
-- `Post` はモデルの名前で、他の名前をつけることもできます（が、特殊文字と空白は避けなければいけません）。クラス名は大文字で始めます。
+- `Post` はモデルの名前で、他の名前をつけることもできます（が、特殊文字と空白は避けなければいけません）。モデルの名前は大文字で始めます。
 - `models.Model` はポストがDjango Modelだという意味で、Djangoが、これはデータベースに保存すべきものだと分かるようにしています。
 
 さて今度はプロパティを定義しましょう：`title`、`text`、`created_date`、`published_date`、それに `author` ですね。 それにはまずフィールドのタイプを決めなければいけません。（テキスト？ 数値？ 日付？ 他のオブジェクト、例えばユーザーとの関係？）
@@ -165,7 +165,7 @@ class Post(models.Model):
 
 メソッドは通常何かを `return` します。 一つの例が `__str__` メソッドにあります。 このシナリオでは、`__str__` を呼ぶと、ポストの表題のテキスト（**string**）が返ってきます。
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+`def publish(self):` と `def __str__(self):` の両方が class キーワードに続く行でインデントされているのに気づきましたか？ Pythonにモデルのメソッドだと伝えるために、class キーワードに続く行ではメソッドをインデントしましょう。 そうしないと、メソッドはモデルのものではなくなり、予期しない振る舞いをするでしょう。
 
 If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
