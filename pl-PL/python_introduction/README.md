@@ -238,7 +238,7 @@ NameError: name 'masto' is not defined
 
 Błąd! Jak widzisz, Python ma różne rodzaje błędów, a ten nosi nazwę **NameError**. Python zwróci Ci taki błąd, gdy będziesz próbowała używać nazwy, która nie została jeszcze utworzona. Gdybyś w przyszłości natrafiła na niego, sprawdź w swoim kodzie czy nie popełniłaś literówek w nazwach zmiennych.
 
-Poświęć chwilę czasu na zabawę i przekonaj się co możesz z tym zrobić!
+Poświęć chwilę czasu na zabawę i przekonaj się, co możesz z tym zrobić!
 
 ## Funkcja print
 
@@ -254,13 +254,13 @@ Spróbuj tego:
 Maria
 ```
 
-Kiedy wpisujesz po prostu `imie`, interpreter Pythona zwraca *odwzorowanie* stringu będącego wartością zmiennej 'imie', czyli litery M-a-r-i-a zamknięte w pojedynczym cudzysłowie ''. Natomiast gdy napiszesz `print(imie)`, Python wypisze zawartość zmiennej na ekran, bez żadnego cudzysłowu, co wygląda lepiej.
+Kiedy wpisujesz po prostu `imie`, interpreter Pythona zwraca *odwzorowanie* stringa będącego wartością zmiennej 'imie', czyli litery M-a-r-i-a zamknięte w pojedynczym cudzysłowie''. Natomiast gdy napiszesz `print(imie)`, Python wypisze zawartość zmiennej na ekran, bez żadnego cudzysłowu, co wygląda lepiej.
 
-Jak się później przekonamy, `print()` jest szczególnie użyteczny, gdy chcemy wypisać coś z wnętrza funkcji, lub gdy zechcemy wypisać wartości w kilku wierszach.
+Jak się później przekonamy, `print()` jest szczególnie użyteczny, gdy chcemy wypisać coś z wnętrza funkcji lub gdy zechcemy wypisać wartości w kilku wierszach.
 
 ## Listy
 
-Oprócz stringów i liczb całkowitych, Python dysponuje bogactwem różnych typów obiektów. Teraz zapoznamy się z typem zwanym **listą**. Listy są dokładnie tym, co myślisz: obiektami, które są listami innych obiektów. :)
+Oprócz stringów i liczb całkowitych, Python dysponuje szeregiem różnych typów obiektów. Teraz zapoznamy się z typem zwanym **listą**. Listy są dokładnie tym, co myślisz: obiektami, które są listami innych obiektów. :)
 
 Śmiało, stwórzmy listę:
 
