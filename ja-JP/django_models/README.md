@@ -61,7 +61,7 @@ Djangoのモデルは特別なオブジェクトで、`データベース` に�
 
 ### Creating an application
 
-全部をきちんと整理しておくため、プロジェクトの中に別のアプリケーションを作ります。 初めから全てを整理しておくのはとっても良いことです。 アプリケーションを作るには、次のコマンドをコンソールの中で走らせなけれなりません。（manage.pyファイルがあるdjangogirlsディレクトリから）：
+全部をきちんと整理しておくため、プロジェクトの中に別のアプリケーションを作ります。 初めから全てを整理しておくのはとっても良いことです。 アプリケーションを作るために、次のコマンドをコンソールの中で走らせましょう。（`manage.py` ファイルがある `djangogirls` ディレクトリでコマンドをタイプしてくださいね）
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -73,7 +73,7 @@ Djangoのモデルは特別なオブジェクトで、`データベース` に�
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+新しく `blog` ディレクトリが作られて、今沢山のファイルがそこに入っているのに気がついたでしょう。ディレクトリとファイルはこんな風に見えるはずです：
 
     djangogirls
     ├── blog
@@ -94,7 +94,7 @@ You will notice that a new `blog` directory is created and it contains a number 
         └── wsgi.py
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+アプリケーションを作ったら、Djangoにそれを使うように伝えないといけません。 それは `mysite/settings.py` ファイルの中でやります。 まず `INSTALLED_APPS` を見つけて `]` の上に `'blog'` という一行を追加します。 そうすると、最終的には以下のようになりますね。
 
 {% filename %}mysite/settings.py{% endfilename %}
 
