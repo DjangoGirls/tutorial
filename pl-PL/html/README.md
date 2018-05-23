@@ -197,7 +197,7 @@ Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
 ### Prześlij nową wersję kodu do PythonAnywhere i ponownie załaduj swoją stronę
 
-* Otwórz [stronę konsol na PythonAnywhere](https://www.pythonanywhere.com/consoles/) i przejdź do swojej **Bash console** (czyli po polsku "konsoli Bash") albo otwórz nową. Wpisz do niej:
+* Otwórz [stronę konsoli na PythonAnywhere](https://www.pythonanywhere.com/consoles/) i przejdź do swojej **Bash console** (czyli po polsku "konsoli Bash") albo otwórz nową. Wpisz do niej:
 
 {% filename %}command-line{% endfilename %}
 
@@ -208,7 +208,7 @@ Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
 (Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
-I obserwuj jak Twój kod się ściąga. Jeśli chcesz sprawdzić czy już się pobrał, możesz przejść do zakładki **Files tab** i przeglądnąć swój kod na PythonAnywhere.
+I obserwuj jak Twój kod się ściąga. Jeśli chcesz sprawdzić czy już się pobrał, możesz przejść do zakładki **Files tab** i podejrzeć swój kod na PythonAnywhere.
 
 * Na koniec przeskocz do zakładki [Web tab](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**.
 
