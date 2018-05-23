@@ -55,7 +55,7 @@
 
 オブジェクトが何か分かったので、ブログポストのDjangoモデルを作りましょう。
 
-A model in Django is a special kind of object – it is saved in the `database`. データベースはデータの集まりです。 ここにユーザーやブログポストの情報を格納します。 データを格納するのにSQLiteデータベースを使います。 This is the default Django database adapter – it'll be enough for us right now.
+Djangoのモデルは特別なオブジェクトで、`データベース` に格納されます。 データベースはデータの集まりです。 ここにユーザーやブログポストの情報を格納します。 データを格納するのにSQLiteデータベースを使います。 これはDjangoのデフォルトのデータベースで、今はこれで十分です。
 
 データベースの中のモデルは、列（フィールド）と行（データ）があるスプレッドシートと思ってもらっても結構です。
 
