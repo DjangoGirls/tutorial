@@ -152,14 +152,14 @@ class Post(models.Model):
 - `Post` はモデルの名前で、他の名前をつけることもできます（が、特殊文字と空白は避けなければいけません）。クラス名は大文字で始めます。
 - `models.Model` はポストがDjango Modelだという意味で、Djangoが、これはデータベースに保存すべきものだと分かるようにしています。
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+さて今度はプロパティを定義しましょう：`title`、`text`、`created_date`、`published_date`、それに `author` ですね。 それにはまずフィールドのタイプを決めなければいけません。（テキスト？ 数値？ 日付？ 他のオブジェクト、例えばユーザーとの関係？）
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `models.CharField` – 文字数が制限されたテキストを定義するフィールド
+- `models.TextField` – これは制限無しの長いテキスト用です。ブログポストのコンテンツに理想的なフィールドでしょ？
+- `models.DateTimeField` – 日付と時間のフィールド
+- `models.ForeignKey` – これは他のモデルへのリンク
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+コードの細かいところまでは説明し出すと時間がかかるので、ここではしませんが、 You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
 What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
 
