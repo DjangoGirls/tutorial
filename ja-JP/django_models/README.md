@@ -144,13 +144,13 @@ class Post(models.Model):
 
 難しそうでしょ？でも大丈夫！ちゃんと説明しますから。
 
-`from` とか `import` で始まる行は全部、他のファイルから何かをちょこっとずつ追加する行です。 So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+`from` とか `import` で始まる行は全部、他のファイルから何かをちょこっとずつ追加する行です。 なので色んなファイルから必要な部分をコピペする代わりに `from ... import ...</0> で必要部分を入れられるんです。 import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` – この行が今回のモデルを定義します (これが `オブジェクト` です).
 
 - classはオブジェクトを定義してますよ、ということを示すキーワードです。
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- models.ModelはポストがDjango Modelだという意味で、Djangoが、これはデータベースに保存すべきものだと分かるようにしています。
+- `Post` はモデルの名前で、他の名前をつけることもできます（が、特殊文字と空白は避けなければいけません）。クラス名は大文字で始めます。
+- `models.Model` はポストがDjango Modelだという意味で、Djangoが、これはデータベースに保存すべきものだと分かるようにしています。
 
 Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
