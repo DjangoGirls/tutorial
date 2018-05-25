@@ -33,7 +33,7 @@ Um dich einloggen zu können musst du zunächst einen *superuser* erstellen - ei
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Wenn du dazu aufgefordet wirst, gib den Benutzernamen (Kleinbuchstaben, keine Leerschläge), die Mailadresse und das Passwort ein. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Wenn du dazu aufgefordet wirst, gib den Benutzernamen (Kleinbuchstaben, keine Leerschläge), die Mailadresse und das Passwort ein. **Mach dir keine Gedanken, wenn du das Passwort bei der Eingabe nicht sehen kannst - so soll es sein.** Tippe einfach weiter und drücke `enter` zum Weiterfahren. Du solltest nun Folgendes sehen (wobei Benutzername und Email deine eigenen sein sollten):
 
     Username: admin
     Email address: admin@admin.com
@@ -42,16 +42,16 @@ Wenn du dazu aufgefordet wirst, gib den Benutzernamen (Kleinbuchstaben, keine Le
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Geh nochmal in deinen Browser und log dich mit den Daten des Superusers ein, den du gerade erstellt hast. Du solltest nun das Django Admin Dashboard sehen.
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+Gehe zu Posts und experimentiere ein wenig damit. Füge 5 oder 6 Blogposts hinzu. Mach dir keine Sorgen wegen des Inhalts - du kannst einfach etwas Text aus diesem Tutorial kopieren und einfügen, um Zeit zu sparen :-).
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Achte darauf, dass bei wenigstens zwei oder drei Posts (aber nicht bei allen) das Veröffentlichungsdatum (publish date) eingetragen ist. Das werden wir später noch brauchen.
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Wenn du mehr über Django Admin wissen willst, solltest du dir die Django-Dokumentation ansehen: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Jetzt ist wahrscheinlich ein guter Moment, um dir einen Kaffee (oder Tee) zu gönnen und neue Kraft zu tanken. Du hast dein erstes Django-Modell erstellt - du hast dir eine kleine Pause verdient!
