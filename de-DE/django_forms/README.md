@@ -416,7 +416,7 @@ Erinnerst du dich an den Editier-Button, den wir gerade zu unserer Seite hinzuge
 {% endif %}
 ```
 
-Da du wahrscheinlich angemeldet bist, wirst du beim Refresh der Seite keinen Veränderung feststellen. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Da du wahrscheinlich angemeldet bist, wirst du beim Refresh der Seite keinen Veränderung feststellen. Lade jedoch die Seite in einem anderen Browser oder einem Inkognito-Fenster ("In Private" im Windows Edge) und du wirst sehen, dass dieser Link nicht auftaucht und das Icon ebenfalls nicht angezeigt wird!
 
 ## Eins noch: Zeit für das Deployment!
 
@@ -442,8 +442,8 @@ Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weit
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Denke daran `<your-pythonanywhere-username>` durch deinen PythonAnywhere-Benutzernamen zu ersetzen - ohne spitze Klammern).
 
 * Springe nun noch schnell auf den [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und klicke auf **Reload**.
 
-And that should be it! Congrats :)
+Und das war's! Glückwunsch :)
