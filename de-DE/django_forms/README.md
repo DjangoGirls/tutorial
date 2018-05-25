@@ -1,6 +1,6 @@
 # Django Formulare
 
-Als Letztes möchten wir auf unserer Website noch die Möglichkeit haben, Blogposts hinzuzufügen und zu editieren. Die Django `admin`-Oberfläche ist cool, aber eher schwierig anzupassen und hübsch zu machen. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Als Letztes möchten wir auf unserer Website noch die Möglichkeit haben, Blogposts hinzuzufügen und zu editieren. Die Django `admin`-Oberfläche ist cool, aber eher schwierig anzupassen und hübsch zu machen. Mit Formularen, `forms`, haben wir die absolute Kontrolle über unser Interface - wir können fast alles machen, was man sich vorstellen kann!
 
 Das Gute an Django Forms ist, dass man sie entweder vollständig selbst definieren oder eine `ModelForm` erstellen kann, welche den Inhalt des Formulars in das Model speichert.
 
@@ -14,7 +14,7 @@ Wir erstellen nun eine Datei mit diesem Namen im `blog` Verzeichnis.
        └── forms.py
     
 
-OK, let's open it and type the following code:
+So, jetzt lass uns diese öffnen und folgenden Code hinzufügen:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -32,7 +32,7 @@ class PostForm(forms.ModelForm):
 
 Zuerst müssen wir die Django Forms importieren (`from django import forms`) und natürlich auch unser `Post` Model (`from .models import Post`).
 
-Wie du wahrscheinlich schon vermutet hast, `PostForm` ist der Name unseres Formulars. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+Wie du wahrscheinlich schon vermutet hast, `PostForm` ist der Name unseres Formulars. Wir müssen Django mitteilen, dass unser Formular ein `ModelForm` ist (so kann Django ein bisschen für uns zaubern) - `forms.ModelForm` ist dafür verantwortlich.
 
 Als Nächstes sehen wir uns `class Meta` an, damit sagen wir Django, welches Model benutzt werden soll, um das Formular zu erstellen (`model = Post`).
 
