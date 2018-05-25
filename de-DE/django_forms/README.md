@@ -36,11 +36,11 @@ Wie du wahrscheinlich schon vermutet hast, `PostForm` ist der Name unseres Formu
 
 Als Nächstes sehen wir uns `class Meta` an, damit sagen wir Django, welches Model benutzt werden soll, um das Formular zu erstellen (`model = Post`).
 
-Nun können wir bestimmen, welche(s) Feld(er) unser Formular besitzen soll. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Nun können wir bestimmen, welche(s) Feld(er) unser Formular besitzen soll. Wir wollen hier nur den `title` und `text` sichtbar machen - der `author` sollte die Person sein, die gerade eingeloggt ist (Du!) und `created_date` sollte automatisch generiert werden, wenn der Post erstellt wird (also im Code). Stimmt's?
 
 Und das war's schon! Jetzt müssen wir das Formular nur noch in einem *view* benutzen und im Template darstellen.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, einen View und ein Template.
 
 ## Link auf eine Seite mit dem Formular
 
@@ -52,9 +52,9 @@ Jetzt ist es an der Zeit, `blog/templates/blog/base.html` zu öffnen. Wir fügen
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Beachte, dass wir unsere neue View `post_new` nennen wollen. Die Klasse `"glyphicon glyphicon-plus"` wird durch das verwendete Bootstrap Theme zur Verfügung gestellt und wird ein Pluszeichen anzeigen.
 
-After adding the line, your HTML file should now look like this:
+Nach dem Hinzufügen der Zeile sieht deine HTML-Datei so aus:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -112,7 +112,7 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Nach dem Neuladen der Site sehen wir einen `AttributeError`, weil wir noch keinen `post_new` View eingefügt haben. Fügen wir ihn gleich hinzu!
 
 ## Der post_new View
 
@@ -124,7 +124,7 @@ Jetzt wird es Zeit, die `blog/views.py` Datei zu öffnen und die folgenden Zeile
 from .forms import PostForm
 ```
 
-And then our *view*:
+Und dann unseren *View*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,15 +134,15 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Um ein neues `PostForm` zu erstellen, rufen wir die `PostForm()` Methode auf und übergeben sie an das Template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Um ein neues `PostForm` zu erstellen, rufen wir die `PostForm()` Methode auf und übergeben sie an das Template. Wir kommen gleich nochmal zu dem *View* zurück, aber jetzt erstellen wir schnell ein Template für das Form.
 
 ## Template
 
 Wir müssen eine Datei `post_edit.html` im Verzeichnis `blog/templates/blog` erstellen. Damit ein Formular funktioniert, benötigen wir einige Dinge:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
+* Wir müssen das Formular anzeigen. Wir können das zum Beispiel mit einem einfachen `{{ form.as_p }}` tun.
+* Die Zeile oben muss von einem HTML-Formular-Tag eingeschlossen werden `<form method="POST">...</form>`.
+* Wir benötigen einen `Save`-Button. Wir erstellen diesen mit einem HTML-Button: `<button type="submit">Save</button>`.
 * And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. Das ist sehr wichtig, da es deine Formulare sicher macht! If you forget about this bit, Django will complain when you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
