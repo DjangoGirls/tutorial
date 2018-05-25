@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Sieht genauso aus wie unsere `post_new` view, oder? Aber nicht ganz. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Sieht genauso aus wie unsere `post_new` view, oder? Aber nicht ganz. Zum Einen übergeben wir zusätzliche `pk` Parameter von urls. Und: Wir bekommen das `Post`-Model, welches wir bearbeiten wollen, mit `get_object_or_404(Post, pk=pk)` und wenn wir dann ein Formular erstellen, übergeben wir post als `instance`, sowohl wenn wir das Formular speichern:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ Sieht genauso aus wie unsere `post_new` view, oder? Aber nicht ganz. For one, we
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+als auch, wenn wir ein Formular mit post zum Editieren öffnen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,7 +358,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Ok, lass uns mal schauen, ob das funktioniert! Geh auf die `post_detail`-Seite. Dort sollte sich ein Editier-Button in der oberen rechten Ecke befinden:
 
 ![Schaltfläche "Bearbeiten"](images/edit_button2.png)
 
@@ -366,15 +366,15 @@ Wenn du darauf klickst, siehst du das Formular mit unserem Blogpost:
 
 ![Formular bearbeiten](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Probier doch einmal den Titel oder den Text zu ändern und die Änderungen zu speichern!
 
 Herzlichen Glückwunsch! Deine Anwendung nimmt mehr Gestalt an!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
+Falls du mehr Informationen über Django Formulare benötigst, solltest du die offizielle Dokumentation lesen: https://docs.djangoproject.com/en/1.11/topics/forms/
 
 ## Sicherheit
 
-Neue Posts mit nur einem Linkklick zu erstellen, ist großartig! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Lasst es uns so machen, das der Button für dich angezeigt wird aber für niemanden sonst. 
+Neue Posts mit nur einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, dass du garantiert nicht willst. Lasst es uns so machen, das der Button für dich angezeigt wird aber für niemanden sonst. 
 
 Finde in der Datei `blog/templates/blog/base.html` unseren `page-header` `div` und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:
 
@@ -384,7 +384,7 @@ Finde in der Datei `blog/templates/blog/base.html` unseren `page-header` `div` u
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Ändere den `<a>`-Tag zu Folgendem:
+Wir fügen ein weiteres `{% if %}`-Tag ein, was dafür sorgt, dass der Link nur für angemeldete Nutzer angezeigt wird. Im Moment bist das also nur du! Ändere den `<a>`-Tag zu Folgendem:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,11 +394,11 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Das verhindert das Erzeugen neuer Posts nicht komplett, ist aber ein sehr guter erster Schritt. In der Erweiterungslektion kümmern wir uns ausgiebiger um Sicherheit.
+Dieses `{% if %}` sorgt dafür, dass der Link nur zu dem Browser geschickt wird, wenn der anfragende Nutzer auch angemeldet ist. Das verhindert das Erzeugen neuer Posts nicht komplett, ist aber ein sehr guter erster Schritt. In der Erweiterungslektion kümmern wir uns ausgiebiger um Sicherheit.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Erinnerst du dich an den Editier-Button, den wir gerade zu unserer Seite hinzugefügt haben? Wir wollen dort dieselbe Anpassung machen, damit andere Leute keine existierenden Posts verändern können.
 
-Open `blog/templates/blog/post_detail.html` and find this line:
+Öffne `blog/templates/blog/post_detail.html` und finde folgende Zeile:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` and find this line:
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Ändere es wie folgt:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,7 +416,7 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Da du wahrscheinlich angemeldet bist, wirst du beim Refresh der Seite keinen Veränderung feststellen. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## Eins noch: Zeit für das Deployment!
 
