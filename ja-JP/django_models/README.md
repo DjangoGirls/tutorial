@@ -184,7 +184,7 @@ class Post(models.Model):
 
 **メモ：**編集したファイルを忘れずに保存してくださいね。保存しないと、コンピュータが以前のパージョンのファイルを実行してしまい、思ってもみないエラーメッセージに出くわすかもしれません。
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Djangoが作ってくれた移行ファイルを私たちがデータベースに追加すれば完了です。`python manage.py migrate blog` とタイプするとこうなるでしょう。
 
 {% filename %}command-line{% endfilename %}
 
