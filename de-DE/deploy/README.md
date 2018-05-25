@@ -196,17 +196,17 @@ Du kannst auch über den "Files"-Tab mit dem PythonAnywhere Built-in File Browse
 
 Nun ist deine Site also live im öffentlichen Internet! Klick dich bis zum PythonAnywhere "Web"-Tab durch und hole dir den Link. Teile ihn so oft du willst :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
+> **Hinweis:** Da es sich hier um ein Anfänger-Tutorial handelt, haben wir ein paar Abkürzungen genommen, um die Site zu veröffentlichen, welche sicherheitstechnisch nicht ideal sind. Solttest du dich dazu entscheiden auf diesem Projekt weiter aufzubauen oder ein neues Projekt zu starten, empfehlen wir dir für Sicherheitstips, dir die [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) genauer anzuschauen.
 
-## Debugging tips
+## Debugging Tipps
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Solltest du beim Ausführen des `pa_autoconfigure_django.py` Skripts eine Fehlermeldung erhalten, findest du folgend ein paar bekannte Gründe hierfür:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- Du hast vergessen deinen PythonAnywhere APi Token zu erstellen.
+- Du hast in deiner GitHub-URL einen Fehler gemacht.
+- Falls du die Fehlermeldung *"Could not find your settings.py"* erhältst, liegt das wahrscheinlich daran, dass du nicht alle Files zum Git hinzugefügt und/oder diese nicht erfolgreich auf GitHub veröffentlicht hast. Schau dir nochmals den Git-Abschnitt weiter oben an.
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Falls du eine Fehlermeldung erhältst, wenn du versuchst deine Site aufzurufen, solltest du als erstes die Debugging Informationen im **error log** anschauen. Den Link dazu findest du über den PythonAnywhere [Web Tab](https://www.pythonanywhere.com/web_app_setup/). Schau nach, ob darin Fehlermeldungen enthalten sind; die neuesten findest du zuunterst.
 
 There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
