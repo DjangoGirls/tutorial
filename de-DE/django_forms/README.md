@@ -143,11 +143,11 @@ Wir müssen eine Datei `post_edit.html` im Verzeichnis `blog/templates/blog` ers
 * Wir müssen das Formular anzeigen. Wir können das zum Beispiel mit einem einfachen `{{ form.as_p }}` tun.
 * Die Zeile oben muss von einem HTML-Formular-Tag eingeschlossen werden `<form method="POST">...</form>`.
 * Wir benötigen einen `Save`-Button. Wir erstellen diesen mit einem HTML-Button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. Das ist sehr wichtig, da es deine Formulare sicher macht! If you forget about this bit, Django will complain when you try to save the form:
+* Und schließlich fügen wir nach dem öffnenden `<form ...>` Tag `{% raw %}{% csrf_token %}{% endraw %}` hinzu. Das ist sehr wichtig, da es deine Formulare sicher macht! Wenn du diesen Teil vergisst, wird sich Django beim Speichern des Formulars beschweren:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Ok, also schauen wir mal, wie der HTML-Code in `post_edit.html` aussehen sollte:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -167,15 +167,15 @@ So, jetzt aktualisieren wir die Seite! Yay! Das Formular wird angezeigt!
 
 ![Neues Formular](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Aber Moment! Wenn du in das `title`- oder `text`-Feld etwas eintippst und versuchst es zu speichern - was wird wohl passieren?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Nichts! Wir landen wieder auf der selben Seite und unser Text ist verschwunden... und kein neuer Post wurde hinzugefügt. Was lief denn hier schief?
 
 Die Antwort ist: nichts. Wir müssen einfach noch etwas mehr Arbeit in unseren *view* stecken.
 
 ## Speichern des Formulars
 
-Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
+Öffne `blog/views.py` erneut. Derzeit ist alles, was wir in dem View `post_new` haben, das hier:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? Alle Felder aus dem Formular sind jetzt in `request.POST`. Du solltest `POST` nicht umbenennen (der einzige andere gültige Wert für `method` ist `GET`, wir wollen hier jetzt aber nicht auf den Unterschied eingehen).
+Wenn wir das Formular übermitteln, werden wir zur selben Ansicht weitergeleitet, aber dieses Mal haben wir mehr Daten in `request`, genauer in `request.POST` (der Name hat nichts zu tun mit einem "Blogpost", sondern damit dass wir Daten "posten"). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? Alle Felder aus dem Formular sind jetzt in `request.POST`. Du solltest `POST` nicht umbenennen (der einzige andere gültige Wert für `method` ist `GET`, wir wollen hier jetzt aber nicht auf den Unterschied eingehen).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. Wir müssen also eine Bedingung hinzufügen (dafür verwenden wir `if`):
 
