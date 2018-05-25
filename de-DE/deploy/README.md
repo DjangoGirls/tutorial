@@ -49,9 +49,9 @@ Speichere die Datei mit dem Namen `.gitignore` im "djangogirls"-Root-Verzeichnis
 
 > **Hinweis:** Der Punkt vor dem Dateinamen ist wichtig! Wenn du Schwierigkeiten beim Erstellen hast (z.B. lassen Macs im Finder keine Dateien mit Punkt am Anfang erzeugen, Punkt-Dateien sind auf Linux und OS X "versteckte Dateien"), dann verwende die "Speichern unter"-Funktion im Editor, das sollte immer funktionieren.
 > 
-> **Hinweis:** Eine der Dateien, die Du in Deiner `.gitignore`-Datei defniniert hast, ist `db.sqlite3`. Diese Datei ist deine lokale Datenbank in welcher alle Deine Artikel gespeichert werden. Wir wollen diese nicht zu Deinem Repository hinzufügen, da Deine Website auf PythonAnywhere eine andere Datenbank nutzen wird. Diese Datenbank könnte SQLite sein, wie auf Deiner Entwicklungsmaschine, aber normalerweise wirst Du eine sogenannte MySQL-Datenbank nutzen, welche mit viel mehr Besuchern umgehen kann als SQLite. So oder so, dadurch, dass Du Deine SQLite-Datenbank für die GitHub-Kopie ignorierst, werden alle Deine bisherigen Posts nur lokal zur Verfügung stehen und Du musst sie in der produktiven Umgebung nochmals hinzufügen. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Hinweis:** Eine der Dateien, die du in deiner `.gitignore`-Datei defniniert hast, ist `db.sqlite3`. Diese Datei ist deine lokale Datenbank in welcher alle deine Posts gespeichert werden. Wir wollen diese nicht zu deinem Repository hinzufügen, da deine Website auf PythonAnywhere eine andere Datenbank nutzen wird. Diese Datenbank könnte SQLite sein, wie auf deiner Entwicklungsmaschine, aber normalerweise wirst du eine sogenannte MySQL-Datenbank nutzen, welche mit viel mehr Besuchern umgehen kann als SQLite. So oder so, dadurch, dass du deine SQLite-Datenbank für die GitHub-Kopie nicht verwendest, werden alle deine bisherigen Posts nur lokal zur Verfügung stehen und du musst sie in der produktiven Umgebung nochmals hinzufügen. Betrachte Deine lokale Datenbank als tollen Spielplatz auf welchem Du verschiedene Dinge ausprobieren kannst, ohne Angst zu haben, dass Du Deine wirklichen Post auf Deinem Blog löschst.
 
-Es ist hilfreich den Befehl `git status` vor `git add` auszuführen oder immer dann, wenn du dir unsicher bist, was geändert wurde. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. Deine Ausgabe sollte dem hier ähneln:
+Es ist hilfreich den Befehl `git status` vor `git add` auszuführen oder immer dann, wenn du dir unsicher bist, was geändert wurde. Das schützt vor manchen Überraschungen, wie z. B. das falsche Hinzufügen oder Übertragen von Dateien. Das `git status`-Kommando gibt Informationen über unbeobachtete/veränderte/hinzugefügte Dateien, den Status der Verzweigung und einiges mehr wieder. Deine Ausgabe sollte dem hier ähneln:
 
 {% filename %}command-line{% endfilename %}
 
@@ -84,15 +84,15 @@ Nun speichern wir unsere Änderungen durch folgende Eingabe in der Konsole:
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Den Code auf GitHub veröffentlichen
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+Öffne [GitHub.com](https://www.github.com) und registriere dich für ein neues, kostenloses Benutzerkonto. (Wenn du das bereits in deiner Vorbereitung auf den Workshop getan hast, dann ist das großartig!)
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Erstelle dann ein neues Repository und gib ihm den Namen "my-first-blog". Lass das Kontrollkästchen "initialise with a README" deaktiviert und die Einstellung der Option .gitignore leer (das haben wir schon von Hand gemacht) und lass die Lizenz auf "None".
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+> **Achtung:** Der Name `my-first-blog` ist wichtig -- du kannst auch einen anderen wählen, aber er wird im Folgenden noch sehr oft vorkommen und du wirst immer daran denken müssen, ihn in den Anweisungen entsprechend anzupassen. It's probably easier to just stick with the name `my-first-blog`.
 
 On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
 
