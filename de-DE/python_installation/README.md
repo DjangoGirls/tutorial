@@ -4,7 +4,7 @@ Wir sind endlich da!
 
 Aber lass uns zuerst erklären, was Python ist. Python ist eine sehr beliebte Programmiersprache, die du zur Erstellung von Webseiten, Spielen, wissenschaftlichen Programmen, Computergrafiken und vielem, vielem mehr verwenden kannst.
 
-Python entstand in den späten 1980ern mit dem Hauptziel, von Menschen lesbar zu sein (nicht nur von Computern). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python entstand in den späten 1980ern mit dem Hauptziel, von Menschen lesbar zu sein (nicht nur von Computern). Darum sieht es einfacher aus als andere Programmiersprachen. Aber keine Sorge - Python ist auch sehr mächtig!
 
 # Python-Installation
 
