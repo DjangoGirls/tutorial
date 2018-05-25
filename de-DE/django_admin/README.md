@@ -1,8 +1,8 @@
 # Django Administration
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+Wir benutzen den Django Admin um die soeben modellierten Posts hinzuzufügen, zu ändern oder zu löschen.
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+Öffne die Datei `blog/admin.py` und ersetze den Inhalt wie folgt:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -13,17 +13,17 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-Wie du siehst, importieren wir hier das Model "Post", das wir im vorigen Kapitel erstellt haben. Damit unser Model auf der Admin-Seite sichtbar wird, müssen wir es mit `admin.site.register(Post)` registrieren.
+Wie du siehst, importieren wir hier das Modell "Post", das wir im vorigen Kapitel erstellt haben. Damit unser Model auf der Admin-Seite sichtbar wird, müssen wir es mit `admin.site.register(Post)` registrieren.
 
-Okay, wir sehen uns nun unser Post-Model an. Denk daran, `python manage.py runserver` in die Konsole einzugeben, um den Webserver zu starten. Go to your browser and type the address http://127.0.0.1:8000/admin/. Du siehst eine Anmeldeseite:
+Okay, wir sehen uns nun unser Post-Modell an. Denk daran, `python manage.py runserver` in die Konsole einzugeben, um den Webserver zu starten. Öffne deinen Browser und gebe die Adresse http://127.0.0.1:8000/admin/ ein. Du siehst eine Anmeldeseite:
 
 ![Login Seite](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+Um dich einloggen zu können musst du zunächst einen *superuser* erstellen - einen User, der alles auf der Website steuern darf. Geh zurück zur Kommandozeile, tippe `python manage.py createsuperuser` und drücke Enter.
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Denke daran, damit du neue Kommandos eingeben kannst während der Webserver läut, musst du ein neues Terminal öffnen und deine virtualenv aktivieren. Wie man neue Kommandos eingeben kann, haben wir im Kapitel **Your first Django project!** im **Starting the web server**-Bereich behandelt.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}Mac OS X oder Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     
@@ -33,7 +33,7 @@ To log in, you need to create a *superuser* - a user account that has control ov
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Wenn du dazu aufgefordet wirst, gib den Benutzernamen (Kleinbuchstaben, keine Leerschläge), die Mailadresse und das Passwort ein. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
 
     Username: admin
     Email address: admin@admin.com
