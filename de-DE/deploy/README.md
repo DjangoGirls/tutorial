@@ -168,9 +168,9 @@ Während Du bei der Ausführung zusiehst wirst Du sehen, was es macht:
 - Deine statischen Dateien einrichten (darüber lernen wir später etwas)
 - PythonAnywhere so einrichten, dass es deine Web App via seine API präsentieren kann
 
-Diese Schritte wurden auf PythonAnywhere automatisiert, aber es sind die selben Schritte, die Du bei jedem anderen Server Provider machen müsstest. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+Diese Schritte wurden auf PythonAnywhere automatisiert, aber es sind die selben Schritte, die Du bei jedem anderen Server Provider machen müsstest. Das wichtigste ist, dass du weisst, dass deine Datenbank auf PythonAnywhere komplett von deiner Datenbank auf deinem eigenen PC getrennt ist. Das bedeutet, sie kann unterschiedliche Posts und Administratorenkonten haben.
 
-As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Aus diesem Grund müssen wir das Administratorenkonto mittels `createsuperuser` initialisieren - wie wir das auf deinem eigenen Computer getan haben. PythonAnywhere hat deine virtualenv automatisch für dich aktiviert. Du musst nur noch Folgendes ausführen:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
