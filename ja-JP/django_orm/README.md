@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+ごめんなさい、エラーになってしまいましたね。Postがないというエラーです。その通りなんです。最初にインポートをしなくてはならないのに、忘れていました。
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+こんな風に書くだけで、`blog.models` から `Post` モデルをインポート出来ます。それでは、もう一度試してみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,7 +58,7 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+さっきDjangoの管理画面から作ったポストのリストが表示されました。だけど、次はこのコンソール画面から、新たにポストを作ってみたいですよね。それはどうすればいいのでしょうか。
 
 ### Create object
 
@@ -70,7 +70,7 @@ This is a list of the posts we created earlier! We created these posts using the
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+いい感じなのですが、1つだけマズイことをしているんです。author に `me` を渡していますが、これは `User` モデルのインスタンスでないといけませんよね。それは、どうやればいいと思います？
 
 そうです、さっきと同じです。Userモデルも先にインポートしておきましょう。
 
@@ -89,7 +89,7 @@ But we have one missing ingredient here: `me`. We need to pass an instance of `U
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now:
+作成しておいたスーパーユーザがいますね。このユーザを使ってみましょう。
 
 {% filename %}command-line{% endfilename %}
 
