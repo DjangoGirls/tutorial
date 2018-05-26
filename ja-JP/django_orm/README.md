@@ -1,16 +1,16 @@
 # DjangoのORMとクエリセット
 
-この章では、Djangoのデータベース接続方法と、データストアについて学びます。やってみましょう！
+この章では、Djangoのデータベース接続方法と、データの格納について学びます。やってみましょう！
 
 ## クエリセットとは？
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+クエリセットが何かと言うと、モデルのオブジェクトのリストのことです。クエリセットを使って、データベースからデータを読み込んだり、抽出したり、並べ替えたりできます。
 
 実際に動かしてみるのが一番わかりやすいので、試してみましょう。
 
 ## Django shell
 
-コンソール画面を開いて、次のコマンドを入力してみましょう。
+コンソール画面を開いて（PythonAnywhereのコンソールではないですよ）、次のコマンドを入力してみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,7 +26,7 @@ A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow y
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+今、Djangoのインタラクティブコンソールが起動しています。Pythonプロンプトしかないように見えますが、ちゃんとDjangoも動いています。勿論このコンソール画面では、Pythonのコマンドは何でも使えます。
 
 ### All objects
 
