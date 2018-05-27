@@ -694,7 +694,7 @@ Super! Właśnie uruchomiłaś z pliku swój pierwszy program w Pythonie. Wspani
 
 Teraz możemy przejść do niezwykle istotnego narzędzia w programowaniu:
 
-## If…elif…else
+## If… elif… else
 
 Dużo różnych rzeczy w kodzie powinno być uruchamiane tylko wtedy, kiedy zostaną spełnione określone warunki. Dlatego Python posiada coś, co nazywa się **instrukcjami warunkowymi**.
 
@@ -706,7 +706,7 @@ Zastąp kod w pliku **python_intro.py** następującym:
 if 3 > 2:
 ```
 
-Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poniższego:
+Gdybyśmy to teraz zapisały i uruchomiły, pojawiłby się błąd podobny do poniższego:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -773,7 +773,7 @@ else:
     print('Hej anonimie!')
 ```
 
-i uruchommy go:
+i uruchomimy go:
 
 {% filename %}command-line{% endfilename %}
 
@@ -783,7 +783,7 @@ i uruchommy go:
 
 Widzisz co się tutaj wydarzyło? `elif` pozwala Ci na dodanie dodatkowego warunku, jeśli poprzedni warunek nie został spełniony.
 
-Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif` ile tylko Ci się podoba. Na przykład:
+Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif`, ile tylko Ci się podoba. Na przykład:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -808,12 +808,12 @@ Python zbada każdy warunek i wyświetli:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Idealnie, moge uslyszec wszystkie detale
+    "Perfect, I can hear all the details"
     
 
 ## Komentarze
 
-Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą uczyć twój kod łatwiejszym do zrozumienia przez innych.
+Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą spowodować, że twój kod będzie łatwiejszy do zrozumienia przez innych.
 
 Zobaczmy, jak to wygląda:
 
@@ -826,7 +826,7 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-Nie musisz pisać komentarza dla każdej linijki kodu, ale pamiętaj, że są one pomocne by wytłumaczyć czemu program coś robi, lub by dodać podsumowanie gdy program robi coś skomplikowanego.
+Nie musisz pisać komentarza dla każdej linijki kodu, ale pamiętaj, że są one pomocne, by wytłumaczyć, czemu program coś robi lub by dodać podsumowanie, gdy program robi coś skomplikowanego.
 
 ### Podsumowanie
 
