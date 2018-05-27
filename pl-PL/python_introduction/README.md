@@ -340,7 +340,7 @@ Jeśli chcesz wyświetlić tylko pierwszą liczbę, możesz to uczynić używaj�
 
 Jak widzisz, możesz uzyskać dostęp do każdego z elementów Twojej listy za pomocą jej nazwy oraz numeru indeksu wewnątrz nawiasów kwadratowych.
 
-By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczyłyśmy się powyżej i metody `pop()`. Spróbujmy zobaczyć jak to działa na przykładzie i powtórzmy sobie to, czego się nauczyłyśmy wyżej. Usuńmy pierwszy element z naszej listy.
+By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczyłyśmy się powyżej i metody `pop()`. Spróbujmy zobaczyć, jak to działa na przykładzie i powtórzmy sobie to, czego się nauczyłyśmy wyżej. Usuńmy pierwszy element z naszej listy.
 
 {% filename %}command-line{% endfilename %}
 
