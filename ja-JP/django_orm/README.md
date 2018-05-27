@@ -89,7 +89,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<User: ola>]>
 ```
 
-作成しておいたスーパーユーザがいますね。このユーザを使ってみましょう。
+作成しておいたスーパーユーザがいますね。このユーザを取り出してみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ NameError: name 'Post' is not defined
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+ola というユーザ名の `User` モデルのインスタンスを、取り出せたでしょう？よかった！勿論、ご自身で作ったスーパーユーザのユーザ名に変更してコマンドを入力してくださいね。
 
 さあ、遂にコンソール画面から、最初のポストを作成出来ますね。
 
@@ -117,7 +117,7 @@ As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-There it is, one more post in the list!
+出来ていますね！リストにはポストが1つ以上あります。
 
 ### Add more posts
 
