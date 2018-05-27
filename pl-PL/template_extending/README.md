@@ -2,7 +2,7 @@
 
 Kolejną fajną rzeczą, którą Django daje Ci do dyspozycji, jest możliwość **rozszerzania szablonów**. Co to oznacza? To znaczy, że możesz używać tych samych części Twojego kodu HTML na różnych stronach Twojej aplikacji.
 
-Szablony pomagają, gdy chcesz te same informacje lub ten sam układ strony użyć w wielu miejscach. W takim wypadku nie musisz się powtarzać w każdym pliku. I jak będziesz chciała zmienić cokolwiek, nie będziesz musiała tego zrobić w każdym szablonie, wystarczy tylko w jednym!
+Szablony pomagają, gdy chcesz użyć te same informacje lub ten sam kod w wielu miejscach. W takim wypadku nie musisz się powtarzać w każdym pliku. I jak będziesz chciała zmienić cokolwiek, nie będziesz musiała tego zrobić w każdym szablonie, wystarczy tylko w jednym!
 
 ## Tworzenie szablonu bazowego
 
@@ -102,7 +102,7 @@ To teraz zapisz `base.html` i otwórz ponownie swój `blog/templates/blog/post_l
 {% endfor %}
 ```
 
-Będziemy chciały użyć tych kliku linii jako części szablonu dla wszystkich bloków treści. Najwyższy czas dodać znaczniki blog w tym pliku!
+Będziemy chciały użyć tych kliku linii jako części szablonu dla wszystkich bloków treści. Najwyższy czas dodać znaczniki block w tym pliku!
 
 {% raw %}Musimy zrobić to tak, by nasz znacznik block zgadzał się ze znacznikiem w pliku `base.html`. Chcesz też by zawierał on cały kod, który należy do twoich bloków treści. By to osiągnąć, umieść wszystko pomiędzy `{% block content %}` i `{% endblock %}`. O tak:{% endraw %}
 
