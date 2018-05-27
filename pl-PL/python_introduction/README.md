@@ -8,7 +8,7 @@ Napiszmy jakiś kod!
 
 ## Wiersz poleceń Pythona
 
-> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
+> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
 Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz poleceń* na swoim komputerze. Powinnaś już wiedzieć, jak to zrobić - nauczyłyśmy się tego w rozdziale [Wprowadzenie do interfejsu wiersza poleceń](../intro_to_command_line/README.md).
 
@@ -476,7 +476,7 @@ Gotowa na następną część? :)
 
 ## Porównywanie rzeczy
 
-> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
+> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
 Istotną częścią programowania jest porównywanie różnych rzeczy. Co najłatwiej porównać? Liczby oczywiście. Zobaczmy, jak to działa:
 
@@ -842,7 +842,7 @@ Czas na ostatnią część tego rozdziału!
 
 ## Twoje własne funkcje!
 
-> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
+> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
 Pamiętasz funkcje takie jak `len()`, które możesz uruchamiać w Pythonie? Dobra wiadomość: teraz nauczysz się pisać swoje własne funkcje!
 
@@ -874,8 +874,8 @@ Uruchommy to teraz i sprawdźmy, co się stanie:
 Uwaga: Jeżeli to nie zadziała, nie ma powodu panikować! Wynik działania pozwoli Ci ustalić czemu:
 
 - Jeżeli dostajesz `NameError`, znaczy to że prawdopodobnie niepoprawnie coś wpisałaś, więc powinnaś sprawdzić czy użyłaś tej samej nazwy tworząc funkcję w `def hi():` oraz gdy ją wykonujesz w `hi()`.
-- Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tą samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty. 
-- Jeżeli nie ma żadnego wyniku działania, sprawdź czy ostanie `hi()` *nie* jest przypadkiem wcięte - jeżeli jest, to ta linia stała się również częścią funkcji, i nigdy nie zostanie wykonana. 
+- Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tę samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty. 
+- Jeżeli nie ma żadnego wyniku działania, sprawdź czy ostanie `hi()` *nie* jest przypadkiem wcięte - jeżeli jest, to ta linia stała się również częścią funkcji i nigdy nie zostanie wykonana. 
 
 Zbudujmy naszą pierwszą funkcję z parametrami. Posłużymy się wcześniejszym przykładem - funkcją, która wita każdego, kto ją uruchomi, wraz z imieniem:
 
@@ -976,7 +976,7 @@ Gratulacje! Właśnie nauczyłaś się pisać funkcje :)
 
 ## Pętle
 
-> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
+> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
 To już ostatnia cześć. Prawda, że szybko poszło? :)
 
