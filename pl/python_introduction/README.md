@@ -8,7 +8,7 @@ Napiszmy jakiś kod!
 
 ## Wiersz poleceń Pythona
 
-> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
+> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
 Aby rozpocząć zabawę z Pythonem, musisz otworzyć jego *wiersz poleceń* na swoim komputerze. Powinnaś już wiedzieć, jak to zrobić - nauczyłyśmy się tego w rozdziale [Wprowadzenie do interfejsu wiersza poleceń](../intro_to_command_line/README.md).
 
@@ -54,9 +54,9 @@ By wykonać potęgowanie, powiedzmy podnieść 2 do potęgi 3, musimy wpisać: {
 
 Pobaw się tym przez chwilę, a potem wróć tutaj. :)
 
-Ja widzisz, Python jest świetnym kalkulatorem. Jeżeli zastanawiasz się, co możesz z ni jeszcze zrobić…
+Ja widzisz, Python jest świetnym kalkulatorem. Jeżeli zastanawiasz się, co możesz z nim jeszcze zrobić…
 
-## Stringi
+## Tekstowy typ danych (string)
 
 A jakby tak wpisać swoje własne imię? Wpisz swoje imię używając cudzysłowów, w ten sposób:
 
@@ -142,7 +142,7 @@ Są to podstawy każdego języka programowania, jakiego przyjdzie Ci się uczyć
 
 ## Błędy
 
-Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam sposób jak długość naszego imienia? Wpisz `len(304023)` i wciśnij `enter`:
+Spróbujmy czegoś nowego. Czy możemy sprawdzić długość liczby w taki sam sposób, jak długość naszego imienia? Wpisz `len(304023)` i wciśnij `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Dostałyśmy nasz pierwszy błąd! Ikona {{ warning_icon }} to sposób, w jaki będziemy Ciebie informować, że kod, który zaraz wykonasz nie powinien zadziałać poprawnie. Popełnianie błędów (nawet intencjonalnie) to ważna część nauki!
+Dostałyśmy nasz pierwszy błąd! Ikona {{ warning_icon }} to sposób, w jaki będziemy Ciebie informować, że kod, który zaraz wykonasz, nie powinien zadziałać poprawnie. Popełnianie błędów (nawet intencjonalnie) to ważna część nauki!
 
 Komunikat mówi nam, że obiekty typu "int" (liczby całkowite, ang. integer) nie mają długości. Zatem co możemy zrobić? Może mogłybyśmy przekazać naszą liczbę jako string? Stringi mają ustaloną długość, zgadza się?
 
@@ -238,7 +238,7 @@ NameError: name 'masto' is not defined
 
 Błąd! Jak widzisz, Python ma różne rodzaje błędów, a ten nosi nazwę **NameError**. Python zwróci Ci taki błąd, gdy będziesz próbowała używać nazwy, która nie została jeszcze utworzona. Gdybyś w przyszłości natrafiła na niego, sprawdź w swoim kodzie czy nie popełniłaś literówek w nazwach zmiennych.
 
-Poświęć chwilę czasu na zabawę i przekonaj się co możesz z tym zrobić!
+Poświęć chwilę czasu na zabawę i przekonaj się, co możesz z tym zrobić!
 
 ## Funkcja print
 
@@ -254,13 +254,13 @@ Spróbuj tego:
 Maria
 ```
 
-Kiedy wpisujesz po prostu `imie`, interpreter Pythona zwraca *odwzorowanie* stringu będącego wartością zmiennej 'imie', czyli litery M-a-r-i-a zamknięte w pojedynczym cudzysłowie ''. Natomiast gdy napiszesz `print(imie)`, Python wypisze zawartość zmiennej na ekran, bez żadnego cudzysłowu, co wygląda lepiej.
+Kiedy wpisujesz po prostu `imie`, interpreter Pythona zwraca *odwzorowanie* stringa będącego wartością zmiennej 'imie', czyli litery M-a-r-i-a zamknięte w pojedynczym cudzysłowie''. Natomiast gdy napiszesz `print(imie)`, Python wypisze zawartość zmiennej na ekran, bez żadnego cudzysłowu, co wygląda lepiej.
 
-Jak się później przekonamy, `print()` jest szczególnie użyteczny, gdy chcemy wypisać coś z wnętrza funkcji, lub gdy zechcemy wypisać wartości w kilku wierszach.
+Jak się później przekonamy, `print()` jest szczególnie użyteczny, gdy chcemy wypisać coś z wnętrza funkcji lub gdy zechcemy wypisać wartości w kilku wierszach.
 
 ## Listy
 
-Oprócz stringów i liczb całkowitych, Python dysponuje bogactwem różnych typów obiektów. Teraz zapoznamy się z typem zwanym **listą**. Listy są dokładnie tym, co myślisz: obiektami, które są listami innych obiektów. :)
+Oprócz stringów i liczb całkowitych, Python dysponuje szeregiem różnych typów obiektów. Teraz zapoznamy się z typem zwanym **listą**. Listy są dokładnie tym, co myślisz: obiektami, które są listami innych obiektów. :)
 
 Śmiało, stwórzmy listę:
 
@@ -340,7 +340,7 @@ Jeśli chcesz wyświetlić tylko pierwszą liczbę, możesz to uczynić używaj�
 
 Jak widzisz, możesz uzyskać dostęp do każdego z elementów Twojej listy za pomocą jej nazwy oraz numeru indeksu wewnątrz nawiasów kwadratowych.
 
-By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczyłyśmy się powyżej i metody `pop()`. Spróbujmy zobaczyć jak to działa na przykładzie i powtórzmy sobie to, czego się nauczyłyśmy wyżej. Usuńmy pierwszy element z naszej listy.
+By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczyłyśmy się powyżej i metody `pop()`. Spróbujmy zobaczyć, jak to działa na przykładzie i powtórzmy sobie to, czego się nauczyłyśmy wyżej. Usuńmy pierwszy element z naszej listy.
 
 {% filename %}command-line{% endfilename %}
 
@@ -476,7 +476,7 @@ Gotowa na następną część? :)
 
 ## Porównywanie rzeczy
 
-> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
+> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
 Istotną częścią programowania jest porównywanie różnych rzeczy. Co najłatwiej porównać? Liczby oczywiście. Zobaczmy, jak to działa:
 
@@ -590,7 +590,7 @@ Gratulacje! Wartości logiczne są jedną z najfajniejszych możliwości w progr
 
 # Zapisujemy!
 
-> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
+> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
 Do tej pory pisałyśmy cały nasz kod Pythona w interpreterze, co zmusza nas do pisania linijka po linijce. Prawdziwe programy są zapisywane w plikach i uruchamiane przez **interpreter** lub **kompilator** naszego języka programowania. Dotąd uruchamiałyśmy nasze programy w **interpreterze** Pythona, wprowadzając za każdym razem najwyżej jedną linijkę kodu. Ale w następnych zadaniach będziemy potrzebowały dodać więcej niż jeden wiersz kodu, więc musimy szybko:
 
@@ -652,7 +652,7 @@ W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-W wierszu polecań Windows będzie tak:
+W wierszu poleceń Windows będzie tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -694,7 +694,7 @@ Super! Właśnie uruchomiłaś z pliku swój pierwszy program w Pythonie. Wspani
 
 Teraz możemy przejść do niezwykle istotnego narzędzia w programowaniu:
 
-## If…elif…else
+## If… elif… else
 
 Dużo różnych rzeczy w kodzie powinno być uruchamiane tylko wtedy, kiedy zostaną spełnione określone warunki. Dlatego Python posiada coś, co nazywa się **instrukcjami warunkowymi**.
 
@@ -706,7 +706,7 @@ Zastąp kod w pliku **python_intro.py** następującym:
 if 3 > 2:
 ```
 
-Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poniższego:
+Gdybyśmy to teraz zapisały i uruchomiły, pojawiłby się błąd podobny do poniższego:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -783,7 +783,7 @@ i uruchommy go:
 
 Widzisz co się tutaj wydarzyło? `elif` pozwala Ci na dodanie dodatkowego warunku, jeśli poprzedni warunek nie został spełniony.
 
-Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif` ile tylko Ci się podoba. Na przykład:
+Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif`, ile tylko Ci się podoba. Na przykład:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -808,12 +808,12 @@ Python zbada każdy warunek i wyświetli:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Idealnie, moge uslyszec wszystkie detale
+    "Perfect, I can hear all the details"
     
 
 ## Komentarze
 
-Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą uczyć twój kod łatwiejszym do zrozumienia przez innych.
+Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą spowodować, że twój kod będzie łatwiejszy do zrozumienia przez innych.
 
 Zobaczmy, jak to wygląda:
 
@@ -826,7 +826,7 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-Nie musisz pisać komentarza dla każdej linijki kodu, ale pamiętaj, że są one pomocne by wytłumaczyć czemu program coś robi, lub by dodać podsumowanie gdy program robi coś skomplikowanego.
+Nie musisz pisać komentarza dla każdej linijki kodu, ale pamiętaj, że są one pomocne, by wytłumaczyć, czemu program coś robi lub by dodać podsumowanie, gdy program robi coś skomplikowanego.
 
 ### Podsumowanie
 
@@ -842,7 +842,7 @@ Czas na ostatnią część tego rozdziału!
 
 ## Twoje własne funkcje!
 
-> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
+> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
 Pamiętasz funkcje takie jak `len()`, które możesz uruchamiać w Pythonie? Dobra wiadomość: teraz nauczysz się pisać swoje własne funkcje!
 
@@ -874,8 +874,8 @@ Uruchommy to teraz i sprawdźmy, co się stanie:
 Uwaga: Jeżeli to nie zadziała, nie ma powodu panikować! Wynik działania pozwoli Ci ustalić czemu:
 
 - Jeżeli dostajesz `NameError`, znaczy to że prawdopodobnie niepoprawnie coś wpisałaś, więc powinnaś sprawdzić czy użyłaś tej samej nazwy tworząc funkcję w `def hi():` oraz gdy ją wykonujesz w `hi()`.
-- Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tą samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty. 
-- Jeżeli nie ma żadnego wyniku działania, sprawdź czy ostanie `hi()` *nie* jest przypadkiem wcięte - jeżeli jest, to ta linia stała się również częścią funkcji, i nigdy nie zostanie wykonana. 
+- Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tę samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty. 
+- Jeżeli nie ma żadnego wyniku działania, sprawdź czy ostanie `hi()` *nie* jest przypadkiem wcięte - jeżeli jest, to ta linia stała się również częścią funkcji i nigdy nie zostanie wykonana. 
 
 Zbudujmy naszą pierwszą funkcję z parametrami. Posłużymy się wcześniejszym przykładem - funkcją, która wita każdego, kto ją uruchomi, wraz z imieniem:
 
@@ -976,7 +976,7 @@ Gratulacje! Właśnie nauczyłaś się pisać funkcje :)
 
 ## Pętle
 
-> Dla czytelniczek w domu: tą część uwzględnia wideo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
+> Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
 To już ostatnia cześć. Prawda, że szybko poszło? :)
 

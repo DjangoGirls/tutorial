@@ -84,9 +84,9 @@ I na końcu zapisujemy zmiany. Przejdź do konsoli i wykonaj poniższe polecenia
      create mode 100644 mysite/wsgi.py
     
 
-## Przesyłanie kodu do GitHub
+## Przesyłanie kodu do GitHuba
 
-Wejdź na stronę [GitHub.com](https://www.github.com) i utwórz nowe darmowe konto. (Jeśli już to wcześniej zrobiłaś to super!)
+Wejdź na stronę [GitHub.com](https://www.github.com) i utwórz nowe, darmowe konto. (Jeśli już to wcześniej zrobiłaś, to super!)
 
 Następnie utwórz nowe repozytorium i nadaj mu nazwę "my-first-blog" (ang. "mój-pierwszy-blog"). Pozostaw niezaznaczone pole wyboru "initialize with README", pozostaw opcję .gitignore pustą (zrobiłyśmy to ręcznie) i pozostaw licencję jako None.
 
@@ -125,7 +125,7 @@ Wpisz swoją nazwę użytkownika GitHub oraz hasło, a wtedy powinnaś zobaczyć
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Twój kod jest teraz na GitHubie. Możesz to sprawdzić! Zważ, że znajduje się w wyśmienitym towarzystwie - [Django](https://github.com/django/django), [kurs Django Girls](https://github.com/DjangoGirls/tutorial) i wiele innych świetnych projektów open-source trzyma swój kod na GitHubie. :)
+Twój kod jest teraz na GitHubie. Możesz to sprawdzić! Znajdujesz się teraz w wyśmienitym towarzystwie - [Django](https://github.com/django/django), [kurs Django Girls](https://github.com/DjangoGirls/tutorial) i wiele innych świetnych projektów open-source trzyma swój kod na GitHubie! :)
 
 # Wdrażanie bloga na PythonAnywhere
 
@@ -137,22 +137,22 @@ Twój kod jest teraz na GitHubie. Możesz to sprawdzić! Zważ, że znajduje si�
 
 ## Konfigurowanie naszej strony w PythonAnywhere
 
-Wróć do głównego panelu [PythonAnywhere Dashboard](https://www.pythonanywhere.com/), klikając logo, i wybierz opcję uruchomienia konsoli "Bash" - jest to wersja wiersza poleceń PythonAnywhere, podobnie jak na Twoim komputerze.
+Wróć do głównego panelu [PythonAnywhere Dashboard](https://www.pythonanywhere.com/), klikając logo i wybierz opcję uruchomienia konsoli "Bash" - jest to wersja wiersza poleceń PythonAnywhere, podobnie jak na Twoim komputerze.
 
 ![Wybierz Bash w sekcji New Console](images/pythonanywhere_bash_console.png)
 
-> **Uwaga** PythonAnywhere jest oparty na Linuksie, więc jeśli pracujesz na Windowsie to konsola będzie wyglądać trochę inaczej niż na Twoim komputerze.
+> **Uwaga** PythonAnywhere jest oparty na Linuksie, więc jeśli pracujesz na Windowsie, to konsola będzie wyglądać trochę inaczej, niż na Twoim komputerze.
 
-Wdrożenie aplikacji internetowej w PythonAnywhere polega na ściągnięciu kodu z GitHub, a następnie skonfigurowaniu PythonAnywhere w celu rozpoznania go i rozpoczęciu wyświetlania go jako aplikacji internetowej. Istnieją manualne sposoby robienia tego, ale PythonAnywhere zapewnia narzędzie pomocnicze, które zrobi to wszystko za Ciebie. W pierwszej kolejności zainstalujmy:
+Wdrożenie aplikacji internetowej w PythonAnywhere polega na ściągnięciu kodu z GitHuba, a następnie skonfigurowaniu PythonAnywhere w celu rozpoznania go i rozpoczęciu wyświetlania go jako aplikacji internetowej. Istnieją manualne sposoby robienia tego, ale PythonAnywhere zapewnia narzędzie pomocnicze, które zrobi to wszystko za Ciebie. W pierwszej kolejności zainstalujmy:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pip3.6 install --user pythonanywhere
     
 
-To powinno wydrukować rzeczy, takie jak `Collecting pythonanywhere`, a kończy się na linii z napisem `Successfully installed (...) pythonanywhere- (...)`.
+To powinno wydrukować rzeczy takie jak `Collecting pythonanywhere`, a skończyć się na linii z napisem `Successfully installed (...) pythonanywhere- (...)`.
 
-Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHub. Wpisz następujące polecenie do konsoli w PythonAnywhere (nie zapomnij zamienić `<your-github-username>` na swoją nazwę użytkownika):
+Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHubem. Wpisz następujące polecenie do konsoli w PythonAnywhere (nie zapomnij zamienić `<your-github-username>` na swoją nazwę użytkownika):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -161,8 +161,8 @@ Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację 
 
 Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
 
-- Pobieranie kodu z GitHub
-- Tworzenie środowiska wirtualnego na PythonAnywhere, podobnie jak na Twóim PC
+- Pobieranie kodu z GitHuba
+- Tworzenie środowiska wirtualnego na PythonAnywhere, podobnie jak na Twoim PC
 - Aktualizowanie pliku ustawień z niektórych ustawień wdrażania
 - Konfigurowanie bazy danych w PythonAnywhere za pomocą polecenia `manage.py migrate`
 - Konfigurowanie plików statycznych (dowiemy się o nich później)
@@ -177,7 +177,7 @@ W rezultacie, tak jak zrobiłyśmy to na własnym komputerze, musimy zainicjowa�
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Wpisz szczegóły dla swojego administratora. Najlepiej używać tych samych, których używasz na swoim komputerze, aby uniknąć nieporozumień, chyba że chcesz, aby hasło w PythonAnywhere było bezpieczniejsze.
+Wpisz szczegóły dla konta swojego administratora. Najlepiej używać tych samych, których używasz na swoim komputerze, aby uniknąć nieporozumień, chyba że chcesz, aby hasło w PythonAnywhere było bezpieczniejsze.
 
 Teraz, jeśli chcesz, możesz również rzucić okiem na swój kod w PythonAnywhere używając `ls`:
 
@@ -194,9 +194,9 @@ Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudow
 
 ## Jesteś na żywo!
 
-Twoja strona powinna teraz być dostępna w publicznym Internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym z kimkolwiek chcesz :)
+Twoja strona powinna teraz być dostępna w publicznym Internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się nim z kimkolwiek chcesz :)
 
-> **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt, lub rozpocząć nowy projekt, należy przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) aby uzyskać jakieś wskazówki dotyczące zabezpieczania witryny.
+> **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt lub rozpocząć nowy projekt, należy przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/), aby uzyskać jakieś wskazówki dotyczące zabezpieczania witryny.
 
 ## Porady dotyczące debugowania
 
@@ -204,9 +204,9 @@ Jeśli widzisz błąd podczas uruchamiania skryptu `pa_autoconfigure_django.py`,
 
 - Zapominasz utworzyć Twój PythonAnywhere API token.
 - Robisz błąd w GitHub URL
-- Jeśli zobaczysz komunikat o błędzie *"Could not find your settings.py"*, prawdopodobnie nie udało Ci się dodać wszystkich plików do Git, i / lub nie przekazałeś ich do GitHub pomyślnie. Jeszcze raz spójrz na sekcję Git powyżej
+- Jeśli zobaczysz komunikat o błędzie *"Could not find your settings.py"*, prawdopodobnie nie udało Ci się dodać wszystkich plików do Git, i / lub nie przekazałeś ich do pomyślnie do GitHuba. Jeszcze raz spójrz na sekcję Git powyżej
 
-Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało jest Twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web](https://www.pythonanywhere.com/web_app_setup/) w PythonAnywhere. Sprawdź czy znajdują się tam jakieś komunikaty o błędach; te najświeższe znajdują się na samym dole.
+Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało, jest Twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web](https://www.pythonanywhere.com/web_app_setup/) w PythonAnywhere. Sprawdź, czy znajdują się tam jakieś komunikaty o błędach - te najświeższe znajdują się na samym dole.
 
 Są tam też dostępne [generalne porady odnośnie debugowania na stronie pomocy PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
@@ -214,8 +214,8 @@ I pamiętaj, Twój mentor jest tutaj, by Ci pomóc!
 
 # Sprawdź swoją stronę!
 
-Domyślna strona Twojej witryny powinna brzmieć "It worked!", tak jak na Twoim lokalnym komputerze. Spróbuj dodać `/admin/` na koniec swojego adresu URL, powinnaś się przenieść do panelu admina. Zaloguj się przy użyciu nazwy użytkownika i hasła, a zobaczysz, że możesz dodawać nowe posty na serwerze.
+Domyślna strona Twojej witryny powinna brzmieć "It worked!", tak jak na Twoim lokalnym komputerze. Spróbuj dodać `/admin/` na koniec swojego adresu URL - powinnaś się przenieść do panelu admina. Zaloguj się przy użyciu nazwy użytkownika i hasła, a zobaczysz, że możesz dodawać nowe posty na serwerze.
 
-Po utworzeniu kilku postów możesz wrócić do konfiguracji lokalnej (nie PythonAnywhere). Od teraz powinnaś pracować na swoim lokalnym komputerze, jeżeli będziesz chciała dokonać zmian na stronie. To częsty sposób pracy w rozwijaniu stron www - wprowadzaj zmiany lokalnie, wypychaj je na GitHuba i zaciągaj na swój internetowy serwer www. Pozwala to na pracę i eksperymentowanie bez obawy, że zepsujesz działającą stronę. Całkiem nieźle, co nie?
+Po utworzeniu kilku postów możesz wrócić do konfiguracji lokalnej (nie PythonAnywhere). Od teraz powinnaś pracować na swoim lokalnym komputerze, jeżeli będziesz chciała dokonać zmian na stronie. To częsty sposób pracy w rozwijaniu stron WWW - wprowadzaj zmiany lokalnie, wypychaj je na GitHuba i zaciągaj na swój internetowy serwer WWW. Pozwala to na pracę i eksperymentowanie bez obawy, że zepsujesz działającą stronę. Całkiem nieźle, co nie?
 
-*Przybij piątkę!* Wdrożenia serwerów są jednym z najtrudniejszych elementów tworzenia stron internetowych i często ludzie potrzebują kilku dni, zanim zaczną działać. Masz swoją witrynę na żywo, w prawdziwym Internecie, właśnie tak!
+*Przybij piątkę!* Wdrożenia strony na serwery są jednym z najtrudniejszych elementów tworzenia stron internetowych i często ludzie potrzebują kilku dni, zanim wszystko zacznie poprawnie działać. Masz swoją witrynę na żywo, w prawdziwym Internecie, właśnie tak!

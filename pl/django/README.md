@@ -8,15 +8,15 @@ Na szczęście pewni programiści już kiedyś zauważyli, że wszyscy web devel
 
 Frameworki istnieją, by oszczędzić Ci wyważania otwartych drzwi i ułatwić Ci proces tworzenia nowej strony.
 
-## Dlaczego potrzebujesz frameworku?
+## Dlaczego potrzebujesz frameworka?
 
-By zrozumieć do czego naprawdę służy Django, musimy lepiej przyjrzeć się serwerom. Pierwszą rzeczą którą musi wiedzieć serwer jest to, że chcesz, żeby wyświetlił Ci stronę.
+By zrozumieć do czego naprawdę służy Django, musimy lepiej przyjrzeć się serwerom. Pierwszą rzeczą, którą musi wiedzieć serwer, jest to, że chcesz, żeby wyświetlił Ci stronę.
 
-Wyobraź sobie skrzynkę pocztową (port), która monitorowana pod kątem przychodzących listów (żądań). To właśnie rola serwera WWW. Serwer czyta listę (żądanie), a następnie odsyła odpowiedź przy użyciu strony internetowej. Ale gdy chcesz coś wysłać, musisz mieć jakąś treść. A Django jest właśnie tym, co pomoże Ci stworzyć tę treść.
+Wyobraź sobie skrzynkę pocztową (port), która monitorowana jest pod kątem przychodzących listów (żądań). To właśnie rola serwera WWW. Serwer czyta listę (żądanie), a następnie odsyła odpowiedź przy użyciu strony internetowej. Ale gdy chcesz coś wysłać, musisz mieć jakąś treść. A Django jest właśnie tym, co pomoże Ci stworzyć tę treść.
 
 ## Co się dzieje, gdy ktoś chce otworzyć stronę z Twojego serwera?
 
-Kiedy serwer otrzymuje żądanie, przekazuje je dalej do Django, aby ten ustalił, czego właściwie ono dotyczy. Django sprawdza najpierw adres strony i decyduje, co zrobić dalej. Ta część jest wykonywana przez obecny w Django mechanizm rozpoznawania adresów (ang. **urlresolver** - zwróć uwagę, że adres strony to inaczej adres URL, czyli angielska nazwa tego modułu nie jest przypadkowa). Nie jest on zbyt inteligentny - pobiera listę wzorców i próbuje dopasować adres URL. Django sprawdza wzorce od góry do dołu i jeśli uda się znaleźć pasującą regułę, Django przekazuje żądanie do odpowiedniej funkcji (zwanej *widokiem*).
+Kiedy serwer otrzymuje żądanie, przekazuje je dalej do Django, aby ten ustalił, czego właściwie ono dotyczy. Django sprawdza najpierw adres strony i decyduje, co zrobić dalej. Ta część jest wykonywana przez obecny w Django mechanizm rozpoznawania adresów (ang. **urlresolver** - zwróć uwagę, że adres strony to inaczej adres URL, czyli angielska nazwa tego modułu nie jest przypadkowa). Nie jest on zbyt inteligentny - pobiera listę wzorców i próbuje dopasować adres URL. Django sprawdza wzorce od góry do dołu i jeśli uda się znaleźć pasującą regułę, przekazuje żądanie do odpowiedniej funkcji (zwanej *widokiem*).
 
 Wyobraź sobie listonosza niosącego list. Idzie ulicą i porównuje każdy numer domu z adresem na kopercie. List zostawia w skrzynce tego domu, którego adres pasuje. Tak samo działa urlresolver!
 

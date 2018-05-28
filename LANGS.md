@@ -6,7 +6,7 @@
 * [🇭🇺 Magyar (beta)](hu/)
 * [🇮🇹 Italiano (beta)](it/)
 * [🇰🇵/🇰🇷 한국어 (beta)](ko/)
-* [🇵🇱 Polski (beta)](pl/)
+* [🇵🇱 Polski](pl/)
 * [🇵🇹 Português-brasileiro (beta)](pt/)
 * [🇹🇷 Türkçe (beta)](tr/)
 * [🇷🇺 Русский (beta)](ru/)
