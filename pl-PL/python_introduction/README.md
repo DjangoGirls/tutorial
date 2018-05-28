@@ -773,7 +773,7 @@ else:
     print('Hej anonimie!')
 ```
 
-i uruchomimy go:
+i uruchommy go:
 
 {% filename %}command-line{% endfilename %}
 
