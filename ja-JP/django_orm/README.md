@@ -125,7 +125,7 @@ ola という`ユーザ名`の `User` モデルのインスタンスを、`取�
 
 ### Filter objects
 
-クエリセットの大部分は、抽出機能だと言えるでしょう。 ユーザolaさんのポストを全部確認してみましょうか。 全部のポストを取り出すのではなく、olaさんのポストだけを取り出したい場合は、`Post.objects.all()` の `all` を `filter` に変更します。 In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. このようになりますね。
+クエリセットの大部分は、抽出機能だと言えるでしょう。 ユーザolaさんのポストを全部確認してみましょうか。 全部のポストを取り出すのではなく、olaさんのポストだけを取り出したい場合は、`Post.objects.all()` の `all` を `filter` に変更します。 取り出されるブログポストが満たす条件を、カッコ()の中に指定します。 今回の例では、`author` が `me` と等しいという条件です。 Djangoでの表し方は、`author=me` となります。 このようになりますね。
 
 {% filename %}command-line{% endfilename %}
 
@@ -134,7 +134,7 @@ ola という`ユーザ名`の `User` モデルのインスタンスを、`取�
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+もしかすると `title` フィールドに title という単語が含まれているポストだけを取り出したくなるかもしれませんね。
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,7 +143,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Note** title と contains の間に、アンダーバーが2個続いていますが、 Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Note** `title` と `contains` の間に、アンダーバー (`_`) が2個続いていますが、 Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
