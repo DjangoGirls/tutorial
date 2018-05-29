@@ -143,7 +143,7 @@ ola という`ユーザ名`の `User` モデルのインスタンスを、`取�
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Note** `title` と `contains` の間に、アンダーバー (`_`) が2個続いていますが、 Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Note** `title` と `contains` の間に、アンダーバー (`_`) が2個続いていますが、 これはDjangoのORMの構文です。フィールド名のtitleと、照合タイプのcontainsを、2つのアンダーバーで連結させています。 もしアンダーバーが1個だけだと、title_contains というフィールド名だと判断されてしまい、エラーになります。("FieldError: Cannot resolve keyword title_contains")
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
