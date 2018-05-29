@@ -97,7 +97,7 @@ NameError: name 'Post' is not defined
 >>> me = User.objects.get(username='ola')
 ```
 
-ola というユーザ名の `User` モデルのインスタンスを、取り出せたでしょう？よかった！勿論、ご自身で作ったスーパーユーザのユーザ名に変更してコマンドを入力してくださいね。
+ola という`ユーザ名`の `User` モデルのインスタンスを、`取り出せた`でしょう？よかった！勿論、ご自身で作ったスーパーユーザのユーザ名に変更してコマンドを入力してくださいね。
 
 さあ、遂にコンソール画面から、最初のポストを作成出来ますね。
 
@@ -121,11 +121,11 @@ ola というユーザ名の `User` モデルのインスタンスを、取り�
 
 ### Add more posts
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+楽しくなってきたでしょう？理解を深めるためにもう少しポストを作っておきましょう。2〜3個記事を追加したら、次に進みましょう。
 
 ### Filter objects
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. 全部のポストを取り出すのではなく、olaさんのポストだけを取り出したい場合は、Post.objects.all() の all を filter に変更します。 In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. このようになりますね。
+クエリセットの大部分は、抽出機能だと言えるでしょう。 ユーザolaさんのポストを全部確認してみましょうか。 全部のポストを取り出すのではなく、olaさんのポストだけを取り出したい場合は、`Post.objects.all()` の `all` を `filter` に変更します。 In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. このようになりますね。
 
 {% filename %}command-line{% endfilename %}
 
