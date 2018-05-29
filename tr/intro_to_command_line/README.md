@@ -408,7 +408,7 @@ Harika, değil mi? :)
 
 | Komut (Windows)  | Komut (Mac OS - GNU/Linux) | Açıklama                | Örnek                                             |
 | ---------------- | -------------------------- | ----------------------- | ------------------------------------------------- |
-| çıkış            | çıkış                      | pencereyi kapatır       | **çıkış**                                         |
+| exit             | exit                       | pencereyi kapatır       | **exit**                                         |
 | cd               | cd                         | dizin değiştir          | **cd test**                                       |
 | cd               | pwd                        | geçerli dizini göster   | **cd** (Windows) veya **pwd** (Mac OS / Linux)    |
 | dir              | ls                         | dizin/dosyaları listele | **dir**                                           |
