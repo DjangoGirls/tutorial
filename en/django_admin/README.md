@@ -16,6 +16,8 @@ As you can see, we import (include) the Post model defined in the previous chapt
 
 OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
+> Chromebook users, remember to use your CodeAnywhere URL instead of 127.0.0.1.
+
 ![Login page](images/login_page2.png)
 
 To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
