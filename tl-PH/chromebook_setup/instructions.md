@@ -55,6 +55,6 @@ Gumawa ng account sa [Github](https://github.com).
 
 Kalakip sa Tutorial ng Django Girls ay isang seksyon na tinatawag na Deployment, ito ay isang proseso kung saan gagamiting ang iyong code para paganahin ang iyong bagong web application at paglipat nito sa isang kompyuter na pwedeng ma-access (tinatawag na server) para makita ng ibang tao ang iyong ginagawa.
 
-Ang parte na ito ay medyo kakaiba kung gumamit ka ng Chromebook sa tutorial na ito dahil tayo ay gumagamit na ng kompyuter na nakakonekta sa Internet (kumpara sa tinatawag nating, laptop). Gayun pa man, nakakatulong pa rin ito, pwede nating isipan na ang workspace ng Cloud 9 ay isang lugar o ating "kasalukuyang" gawing at ang Python Anywhere ay lugar kung saan pwede nating ipakita ang ating nagawa.
+Ang parte na ito ay medyo kakaiba kung gumamit ka ng Chromebook sa tutorial na ito dahil tayo ay gumagamit na ng kompyuter na nakakonekta sa Internet (kumpara sa tinatawag nating, laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Kaya naman, magsign-up para sa bagong account sa Python Anywhere sa [www.pythonanywhere.com](https://www.pythonanywhere.com).
