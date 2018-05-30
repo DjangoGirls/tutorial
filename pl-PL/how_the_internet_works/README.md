@@ -18,7 +18,7 @@ Narysowaliśmy Ci schemat Internetu! Wygląda tak:
 
 ![Rysunek 1.1](images/internet_1.png)
 
-Wygląda dość chaotycznie, prawda? W rzeczywistości jest to sieć połączonych między sobą maszyn (wspomnianych wyżej *serverów*). Setki tysięcy maszyn! Wiele, wiele kilometrów kabli na całym świecie! Możesz wejść na stronę Submarine Cable Map (http://submarinecablemap.com) i sama zobaczyć, jak skomplikowana jest ta sieć. Oto zrzut ekranu ze strony internetowej:
+Wygląda dość chaotycznie, prawda? W rzeczywistości jest to sieć połączonych między sobą maszyn (wspomnianych wyżej *serwerów*). Setki tysięcy maszyn! Wiele, wiele kilometrów kabli na całym świecie! Możesz wejść na stronę Submarine Cable Map (http://submarinecablemap.com) i sama zobaczyć, jak skomplikowana jest ta sieć. Oto zrzut ekranu ze strony internetowej:
 
 ![Rysunek 1.2](images/internet_3.png)
 
@@ -42,6 +42,6 @@ Listy muszą spełniać konkretne warunki, żeby zostały poprawnie doręczone: 
 
 Tak więc, ogólnie rzecz ujmując, jeśli chcesz mieć swoją stronę internetową musisz mieć *serwer* (komputer), gdzie będzie ona funkcjonować. Gdy *serwer* odbiera przychodzące *żądania* (Twój list), wysyła Ci w odpowiedzi Twoją stronę (kolejny list).
 
-Zapytasz pewnie co robi Django, skoro masz przed sobą tutorial Django? Kiedy odpowiadasz na żądanie, nie chcesz aby każdy dostawał tę samą odpowiedź, prawda? Zdecydowanie lepiej jest, jeśli listy są spersonalizowane i skierowane do konkretnej osoby, do tej, która napisała do Ciebie. Django pomaga Ci w tworzeniu tych spersonalizowanych, interesujących listów. :)
+Zapytasz pewnie co robi Django, skoro masz przed sobą tutorial Django? Kiedy odpowiadasz na żądanie, nie chcesz, aby każdy dostawał tę samą odpowiedź, prawda? Zdecydowanie lepiej jest, jeśli listy są spersonalizowane i skierowane do konkretnej osoby, do tej, która napisała do Ciebie. Django pomaga Ci w tworzeniu tych spersonalizowanych, interesujących listów. :)
 
 Wystarczy teorii, zabieramy się za tworzenie!
