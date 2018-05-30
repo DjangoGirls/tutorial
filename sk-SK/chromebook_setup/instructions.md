@@ -55,6 +55,6 @@ Vytvor si [Github](https://github.com) účet.
 
 Django Girls tutoriál obsahuje kapitolu o tom čomu sa hovorí nasadenie (Deployment). Je to proces prenesenia kódu, ktorý používa tvoja nová webová aplikácia, na verejne dostupný počítač (ešte nazývaný aj server), aby aj ostatní ľudia videli tvoju prácu.
 
-Táto časť je trochu divná, keď pracuješ s týmto tutoriálom na Chromebooku, lebo už používaš počítač, ktorý je na internete (na rozdiel od notebooku). Napriek tomu, je stále užitočná, lebo si môžeme predstaviť Cloud 9 pracovné prostredie ako miesto kde sa nachádza nedokončená práca a Python Anywhere ako miesto, kde ukážeme našu prácu, ktorá bude hotová.
+Táto časť je trochu divná, keď pracuješ s týmto tutoriálom na Chromebooku, lebo už používaš počítač, ktorý je na internete (na rozdiel od notebooku). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Teda vytvor si nový Python Anywhere účet na [www.pythonanywhere.com](https://www.pythonanywhere.com).
