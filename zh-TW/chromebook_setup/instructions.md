@@ -55,6 +55,6 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 這份 Django Girls 教程指南有章節是稱為 "部屬" ，是一個強力的網頁應用程式，能夠執行這些代碼，還能夠移動到公開可被訪問的電腦(被稱作伺服器)，並讓其他人看到你的專案。
 
-這個部分對於使用這份指南的 Chromebook 來說會有些奇怪，因為他們已經是使用了電腦是在網路上的 (相對來說就是筆記型電腦) 然而，它仍然是有用的，我們能將 Cloud9 工作空間想像成一個地方，或是 "正在執行中" 的工作或是類似 PythonAnywhere 的地方，能展示我們的東西而且能夠變得更加完整。
+這個部分對於使用這份指南的 Chromebook 來說會有些奇怪，因為他們已經是使用了電腦是在網路上的 (相對來說就是筆記型電腦) However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 所以，到 [www.pythonanywhere.com](https://www.pythonanywhere.com) 註冊一個 Python Anywhere 新帳戶吧。
