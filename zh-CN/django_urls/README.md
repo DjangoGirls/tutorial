@@ -80,51 +80,51 @@ Now imagine you have a website with the address like `http://www.mysite.com/post
     {% filename %}mysite/urls.py{% endfilename %}
     
     ```python
-from django.conf.urls import include
-from django.conf.urls import url
-from django.contrib import admin
-
-urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'', include('blog.urls')),
-]
-```
-
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
-
-Writing regular expressions in Python is always done with `r` in front of the string. 这告诉 Python，这个字符串中的特殊字符是为正则表达式准备的，而不是为 Python 自身准备的。
-
-## blog.urls
-
-Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
-
-{% filename %}blog/urls.py{% endfilename %}
-
-```python
-from django.conf.urls import url
-from . import views
-```
-
-Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
-
-然后，我们可以加入第一个 URL 模式：
-
-{% filename %}blog/urls.py{% endfilename %}
-
-```python
-urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-]
-```
-
-As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. 这是正确的，因为在 Django 的 URL 解析器中，'http://127.0.0.1:8000/' 并不是 URL 的一部分。（译注：即只有 'http://127.0.0.1:8000/' 后面的部分会被解析。如果后面的部分为空，即是空字符串被解析。） 这个模式告诉了 Django，如果有人访问 'http://127.0.0.1:8000' 地址，那么 `views.post_list` 是这个请求该去到的地方。
-
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. 它可以跟 view 的名字一样，也可以完全不一样。 We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
-
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
-
-![错误](images/error1.png)
-
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there.
-
-> 如果你想知道更多有关Django URLconf的知识，可以看看官方文档：https://docs.djangoproject.com/en/1.11/topics/http/urls/
+    from django.conf.urls import include
+    from django.conf.urls import url
+    from django.contrib import admin
+    
+    urlpatterns = [
+        url(r'^admin/', admin.site.urls),
+        url(r'', include('blog.urls')),
+    ]
+    ```
+    
+    Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+    
+    Writing regular expressions in Python is always done with `r` in front of the string. 这告诉 Python，这个字符串中的特殊字符是为正则表达式准备的，而不是为 Python 自身准备的。
+    
+    ## blog.urls
+    
+    Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
+    
+    {% filename %}blog/urls.py{% endfilename %}
+    
+    ```python
+    from django.conf.urls import url
+    from . import views
+    ```
+    
+    Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+    
+    然后，我们可以加入第一个 URL 模式：
+    
+    {% filename %}blog/urls.py{% endfilename %}
+    
+    ```python
+    urlpatterns = [
+        url(r'^$', views.post_list, name='post_list'),
+    ]
+    ```
+    
+    As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. 这是正确的，因为在 Django 的 URL 解析器中，'http://127.0.0.1:8000/' 并不是 URL 的一部分。（译注：即只有 'http://127.0.0.1:8000/' 后面的部分会被解析。如果后面的部分为空，即是空字符串被解析。） 这个模式告诉了 Django，如果有人访问 'http://127.0.0.1:8000' 地址，那么 `views.post_list` 是这个请求该去到的地方。
+    
+    The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. 它可以跟 view 的名字一样，也可以完全不一样。 We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+    
+    If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+    
+    ![错误](images/error1.png)
+    
+    Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there.
+    
+    > 如果你想知道更多有关Django URLconf的知识，可以看看官方文档：https://docs.djangoproject.com/en/1.11/topics/http/urls/
