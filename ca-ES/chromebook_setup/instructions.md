@@ -55,6 +55,6 @@ Crea un compte a [Github](https://github.com).
 
 El tutorial de Django Girls inclou un apartat en què s'anomena Desplegament, que és el procés de prendre el codi que alimenta la seva aplicació web nova i desplaçar-lo a un ordinador accessible públicament (anomenat un servidor) així altres persones poden veure el teu treball.
 
-Aquesta part és una mica estranya quan es fa el tutorial a un Chromebook ja que ja estem utilitzant un ordinador que és a Internet (per contra de, diguem, un portàtil). Tanmateix, encara és útil, ja que podem pensar en la nostra àrea de treball a Cloud 9 com un lloc per al nostre treball "en curs" i PythonAnywhere com un lloc per mostrar les nostres coses a mesura que esdevenen més completes.
+Aquesta part és una mica estranya quan es fa el tutorial a un Chromebook ja que ja estem utilitzant un ordinador que és a Internet (per contra de, diguem, un portàtil). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Així, registra't a Python Anywhere a [www.pythonanywhere.com](https://www.pythonanywhere.com).
