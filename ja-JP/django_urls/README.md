@@ -104,9 +104,9 @@ from django.conf.urls import url
 from . import views
 ```
 
-Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+これはDjangoの `url` 関数と、`blog` アプリの全ての `views`（といっても、今は一つもありません。すぐに作りますけど！）をインポートするという意味です。
 
-その後、最初のURLパターンを追加します。
+その後に、最初のURLパターンを追加します：
 
 {% filename %}blog/urls.py{% endfilename %}
 
