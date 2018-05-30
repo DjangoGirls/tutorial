@@ -74,7 +74,7 @@ people can see your work.
 This part is a little odd when doing the tutorial on a Chromebook since we're
 already using a computer that is on the Internet (as opposed to, say, a laptop).
 However, it's still useful, as we can think of our Cloud 9 workspace as a place
-or our "in progress" work and Python Anywhere as a place to show off our stuff
+for our "in progress" work and Python Anywhere as a place to show off our stuff
 as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at
