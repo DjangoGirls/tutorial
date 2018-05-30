@@ -24,7 +24,7 @@ Der untere Bereich ist dein *Terminal*, wo du Kommandos für den Computer eingeb
 
 Eine virtuelle Umgebung (auch virtualenv genannt) ist wie ein privater Behälter, in den wir nützlichen Code für ein Projekt packen können, an dem wir arbeiten. Wir benutzen diese, um Code für verschiedene Projekte getrennt aufzubewahren, damit diese nicht vermischt werden.
 
-Führe im Terminal den folgenden Code aus( das Terminal befindet sich am unteren Rand des Cloud 9 Interface):
+Führe in deinem Terminal um unteren Rand des Cloud-9-Interfaces Folgendes aus:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,7 +32,7 @@ Führe im Terminal den folgenden Code aus( das Terminal befindet sich am unteren
     sudo apt install python3.6-venv
     
 
-Wenn du Probleme hast frag deinen Coach nach Hilfe.
+Falls das nicht funktioniert, frag' deinen Coach um Hilfe.
 
 Als nächstes führe die folgenden Befehle aus:
 
@@ -45,11 +45,11 @@ Als nächstes führe die folgenden Befehle aus:
     pip install django~=1.11.0
     
 
-(beachte, dass wir im letzten Befehl eine Tilde gefolgt von einem Gleichheitssymbol benutzen: ~=).
+(Beachte, dass wir im letzten Befehl eine Tilde gefolgt von einem Gleichheitssymbol benutzen: ~=).
 
-### Github
+### GitHub
 
-Erstelle einen [Github](https://github.com) Account.
+Erstelle einen [Github](https://github.com)-Account.
 
 ### PythonAnywhere
 
