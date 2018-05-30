@@ -61,10 +61,10 @@ URL定義内で、ほかのものはすべて文字通り受け取られます�
 
 すべてのポストした記事の数を分けて記述することは非常に面倒です。 正規表現では、それらの数字を抽出し、URLに一致したパターンが作れます。それは、`^post/(\d+)/$` と表せます。 １つずつそれが何を示しているか紐解いてみましょう。
 
-* **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
-* (\d+)は１つか複数の数字を示します。取り出したい番号のことです。
-* **/** tells Django that another `/` character should follow
-* $は/で終わる後に示します。URLの終わりを示します。
+* **^post/** は `post/` で始まるURL（^のすぐ後）を示します。
+* **(\d+)** は１つか複数の数字を示します。取り出したい番号のことです。
+* **/** は別の文字列が続くことを示します。
+* **$** は `/` で終わることを示します。URLの終わりを示します。
 
 ## Your first Django URL!
 
