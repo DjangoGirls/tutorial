@@ -11,18 +11,18 @@ Cloud9 ist ein Tool, das dir einen Code-Editor und Zugriff auf einen Computer im
 5. Gib ihm den Namen *django-girls*
 6. Wähle *Blank* aus (das zweite von rechts in der untersten Reihe mit dem orangenen Logo)
 
-Jetzt solltest du ein Interface mit Sidebar, ein grosses Fenster mit Text und am unteren Rand ein Feld sehen, das wie folgt aussieht:
+Jetzt solltest du eine Benutzeroberfläche mit Seitenleiste, einem grosses Fenster mit Text und am unteren Rand ein Feld sehen, das wie folgt aussieht:
 
 {% filename %}Cloud 9{% endfilename %}
 
     deinbenutzername:~/workspace $
     
 
-Im unteren Bereich siehst du dein *Terminal*, mit dem du auf deinen Cloud 9 Computer zugreifen kannst um deine Kommandos auszuführen. Dieses Terminalfenster kannst du nach deinen Wünschen vergrößern oder verkleinern.
+Der untere Bereich ist dein *Terminal*, wo du Kommandos für den Computer eingeben kannst, den dir Cloud 9 zur Verfügung stellt. Du kannst dieses Fenster vergrössern oder verkleinern.
 
 ### Virtuelle Umgebung
 
-Eine virtuelle Umgebung (auch virtualenv genannt) ist ein privater Behälter, in den wir nützlichen Code packen können, um an einem Projekt arbeiten zu können. Wir benutzen diese, um Code für verschiedene Projekte getrennt aufzubewahren, damit diese nicht vermischt werden.
+Eine virtuelle Umgebung (auch virtualenv genannt) ist wie ein privater Behälter, in den wir nützlichen Code für ein Projekt packen können, an dem wir arbeiten. Wir benutzen diese, um Code für verschiedene Projekte getrennt aufzubewahren, damit diese nicht vermischt werden.
 
 Führe im Terminal den folgenden Code aus( das Terminal befindet sich am unteren Rand des Cloud 9 Interface):
 
