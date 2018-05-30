@@ -4,7 +4,7 @@
 
 Gleich geht's los! Du wirst deine erste Zeile Programmcode schreiben! Daher ist es jetzt an der Zeit, einen entsprechenden Editor herunterzuladen!
 
-> **Hinweis** Wenn du ein Chromebook verwendest, überspringe bitte dieses Kapitel und folgen den Anweisungen im [Chromebook Setup](../chromebook_setup/README.md).
+> **Hinweis** Wenn du ein Chromebook verwendest, überspringe dieses Kapitel und folge den [Chromebook-Installation](../chromebook_setup/README.md)-Anweisungen.
 > 
 > **Hinweis:** Es kann sein, dass du diesen Schritt bereits in dem Kapitel "Installation" erledigt hast. In diesem Fall kannst du direkt zum nächsten Kapitel übergehen!
 
