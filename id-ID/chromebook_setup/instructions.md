@@ -54,6 +54,6 @@ Cloud 9 adalah sebuah alat yang memberikan anda kode editor dan akses ke kompute
                     
                     Tutorial Django Girls menyertakan bagian tentang apa yang disebut Deployment, yaitu proses mengambil kode yang memberi kekuatan pada aplikasi web baru Anda dan memindahkannya ke komputer yang dapat diakses publik (disebut server) sehingga orang lain dapat melihat pekerjaan Anda.
                     
-                    Bagian ini sedikit aneh saat melakukan tutorial di Chromebook karena kita sudah menggunakan komputer yang ada di Internet (berlawanan dengan, katakanlah, laptop). Namun, ini masih berguna, karena kita dapat memikirkan ruang kerja Cloud 9 kita sebagai tempat atau karya "dalam proses" kita dan Python Anywhere sebagai tempat untuk memamerkan barang-barang kita karena menjadi lebih lengkap.
+                    Bagian ini sedikit aneh saat melakukan tutorial di Chromebook karena kita sudah menggunakan komputer yang ada di Internet (berlawanan dengan, katakanlah, laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
                     
                     Jadi, masuk ke akun Python Anywhere baru di  www.pythonanywhere.com </ 0> .</p>
