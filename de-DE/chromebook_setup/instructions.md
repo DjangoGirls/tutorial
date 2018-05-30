@@ -55,6 +55,6 @@ Erstelle einen [Github](https://github.com)-Account.
 
 Das Django Girls-Tutorial enthält ein Kapitel zum Thema Deployment. Beim Deployment nimmst du den Code, der deiner Web Anwendung zu Grunde liegt, und packst ihn auf einen öffentlich zugänglichen Computer (Server), damit auch andere Leute deine Arbeit sehen können.
 
-Es mag seltsam scheinen, das auf einem Chromebook zu tun. Denn wir sind mit Cloud 9 ja bereits auf einem anderen Computer im Internet (anstatt z.B. auf einem lokalen Laptop). Es ist aber trotzdem sinnvoll mitzumachen, wir stellen uns dann einfach unseren Cloud 9 Arbeitsplatz als "work in progress" vor und Python Anywhere als Platz auf dem wir unser Projekt vorführen können.
+Es mag seltsam scheinen, das auf einem Chromebook zu tun. Denn wir sind mit Cloud 9 ja bereits auf einem anderen Computer im Internet (anstatt z.B. auf einem lokalen Laptop). Es ist aber trotzdem sinnvoll, denn wir können uns unseren Cloud-9-Arbeitsplatz als Sachen "in Arbeit" vorstellen und Python Anywhere als Ort, wo wir unser "fertiges" Projekt der Öffentlichkeit zeigen.
 
-Deshalb solltest du dich auf [www.pythonanywhere.com](https://www.pythonanywhere.com) für einen Python Anywhere Account anmelden.
+Melde dich deshalb auf [www.pythonanywhere.com](https://www.pythonanywhere.com) für ein Python-Anywhere-Benutzerkonto an.
