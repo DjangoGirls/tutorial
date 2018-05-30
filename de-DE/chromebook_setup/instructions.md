@@ -9,7 +9,7 @@ Cloud9 ist ein Tool, das dir einen Code-Editor und Zugriff auf einen Computer im
 3. Erstelle dir einen Account
 4. Klicke auf *Create a New Workspace*
 5. Gib ihm den Namen *django-girls*
-6. Wähle *Blank* aus( das zweite von links in der untersten Reihe mit dem orangen Logo)
+6. Wähle *Blank* aus (das zweite von rechts in der untersten Reihe mit dem orangenen Logo)
 
 Jetzt solltest du ein Interface mit Sidebar, ein grosses Fenster mit Text und am unteren Rand ein Feld sehen, das wie folgt aussieht:
 
