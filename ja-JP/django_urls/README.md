@@ -116,9 +116,9 @@ urlpatterns = [
 ]
 ```
 
-これは `^$` というパターンのURLを `post_list` という `view` に割り当てたことを意味します。 `^$` という正規表現は、空の文字列にマッチすることを表しています。ただそれだけです。 見てのとおり、Django URLリゾルバでは 'http://127.0.0.1:8000/' はURLの一部に含めません。 この2つの記号を並べたパターンがマッチするのは、そう、空の文字列です。といっても、DjangoのURL名前解決では'http://127.0.0.1:8000/'は除いてパターンマッチするので、このパターンは'http://127.0.0.1:8000/'自体を意味します。つまり、'http://127.0.0.1:8000/'というURLにアクセスしてきたユーザに対して`views.post_list`を返すように指定していることになります。
+これは `^$` というパターンのURLを `post_list` という `view` に割り当てたことを意味します。 `^$` という正規表現は、空の文字列にマッチすることを表しています。ただそれだけです。 見てのとおり、Django URLリゾルバでは 'http://127.0.0.1:8000/' はURLの一部に含めません。 このパターンは、'http://127.0.0.1:8000/' というアドレスに訪れたら、`views.post_list` を表示させるという動作を導きます。
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+最後の `name='post_list'` は、ビューを識別するために使用する URL の名前です。 これは、ビューの名前と同じにすることができますが、完全に別の名前にすることもできます。 We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
 If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
