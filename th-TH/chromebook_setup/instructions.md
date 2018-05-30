@@ -55,6 +55,6 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 บทเรียน Django Girls ประกับด้วย ส่วนที่เรียกหว่า Deployment ซึ่งเป็นกระบวนการของการรับโค๊ดที่สนับสนุนแอ็พพลิเคชันเว็บใหม่ของคุณ และการย้ายไปยังคอมพิวเตอร์สาธารณะที่สามารถเข้าถึงได้ (เรียกว่าเซิร์ฟเวอร์) ทำให้คนอื่นสามารถเห็นผลงานของคุณได้
 
-ส่วนนี้แปลกเล็กน้อย เมื่อทำตามบทเรียนบน Chromebook เนื่องจากเรากำลังใช้คอมพิวเตอร์ที่อยู่บนอินเทอร์เน็ตอยู่แล้ว (ที่ตรงกันข้ามกับ laptop ที่พูดถึง) อย่างไรก็ตามก็ยังมีประโยชน์อยู่ เนื่องจากเราสามารถคิดว่า Cloud 9 เป็นสถานที่ทำงานของเรา หรือ "แสดงความคืบหน้า" งานของเราและ Python Anywhere เป็นสถานที่เพื่อแสดงผลงานที่เรา เมื่อมันเริ่มจะสมบูรณ์มากขึ้น
+ส่วนนี้แปลกเล็กน้อย เมื่อทำตามบทเรียนบน Chromebook เนื่องจากเรากำลังใช้คอมพิวเตอร์ที่อยู่บนอินเทอร์เน็ตอยู่แล้ว (ที่ตรงกันข้ามกับ laptop ที่พูดถึง) However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 ดังนั้น สมัครสมาชิกสำหรับงบัญชี Python Anywhere ใหม่ได้ที่ [www.pythonanywhere.com](https://www.pythonanywhere.com)
