@@ -1,8 +1,8 @@
-Du kannst [diesen Abschnitt einfach](http://tutorial.djangogirls.org/en/installation/#install-python) überspringen, falls du kein Chromebook benutzt. Wenn du eines benutzt, funktioniert vieles ein bisschen anders und du kannst den Rest der Installationsanweisungen ignorieren.
+Du kannst [diesen Abschnitt einfach](http://tutorial.djangogirls.org/en/installation/#install-python) überspringen, falls du kein Chromebook benutzt. Wenn du eins benutzt, wird deine Installation ein wenig anders sein. und du kannst den Rest der Installationsanweisungen ignorieren.
 
 ### Cloud 9
 
-Cloud9 ist ein Tool, das dir einen Code-Editor und Zugriff auf einen Computer im Internet zur Verfügung stellt, auf dem du die Software installieren, editieren und laufen lassen kannst. Für dieses Tutorial wird Cloud 9 die Rolle deines *lokalen Rechners* einnehmen. Du wirst auf diesem Cloud9 Rechner die gleichen Befehle ausführen können, wie die anderen Teilnehmer, die OS X, Ubuntu oder Windows benutzen. Jedoch ist dein Terminal für die Ein- und Ausgaben verbunden mit dem Computer, der von Cloud 9 gehostet wird.
+Cloud9 ist ein Tool, das dir einen Code-Editor und Zugriff auf einen Computer im Internet zur Verfügung stellt, auf dem du die Software installieren, editieren und laufen lassen kannst. Während des Tutorials wird dir Cloud 9 als dein *lokaler Rechner* dienen. Auch du wirst Befehle in einer Kommandozeilen-Schnittstelle ausführen, genau wie deine Klassenkammeradinnen auf OS X, Ubuntu oder Windows. Dein Terminal wird jedoch mit einem Computer woanders verbunden sein, den Cloud 9 für dich bereitstellt.
 
 1. Installiere Cloud 9 aus dem [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Gehe auf [c9.io](https://c9.io)
