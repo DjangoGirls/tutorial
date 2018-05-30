@@ -55,6 +55,6 @@ Make a [Github](https://github.com) account.
 
 Το φροντιστήριο Django Girls συμπεριλαμβάνει μια ενότητα στο τι αποκαλείται Ανάπτυξη, το οποίο είναι η διαδικασία όπου παίρνεις τον κώδικα που τροφοδοτεί την νέα σου εφαρμογή δικτύου και την μετακινεί σε ένα δημόσια προσιτό υπολογιστή (που ονομάζεται διακομιστής) έτσι ώστε άλλα άτομα μπορούν να δουν την εργασία σου.
 
-Αυτό το μέρος είναι λίγο περίεργο όταν κάνεις το φροντιστήριο σε ένα Chromebook μιας και χρησιμοποιούμε ήδη έναν υπολογιστή ο οποίος είναι στο διαδίκτυο ( σε αντίθεση, ας πούμε, με ένα φορητό υπολογιστή). However, it's still useful, as we can think of our Cloud 9 workspace as a place or our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Αυτό το μέρος είναι λίγο περίεργο όταν κάνεις το φροντιστήριο σε ένα Chromebook μιας και χρησιμοποιούμε ήδη έναν υπολογιστή ο οποίος είναι στο διαδίκτυο ( σε αντίθεση, ας πούμε, με ένα φορητό υπολογιστή). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
