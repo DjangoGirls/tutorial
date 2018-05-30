@@ -55,6 +55,6 @@ Napravi [Github](https://github.com) račun.
 
 Django Girls tutorijal uključuje dio o nečemu što se zove Postavljanje (Deployment) što je proces kopiranja koda koji pokreće tvoju novu web aplikaciju na javno dostupno računalo (zvano poslužitelj ili server) tako da i drugi ljudi mogu vidjeti tvoj rad.
 
-Ovaj je dio malo čudan kada se tutorijal radi na Chromebooku jer već koristimo računalo koje je na Internetu (a ne, na primjer, laptop). Međutim, i dalje je korisno, jer možemo razmišljati o našem Cloud 9 radnom prostoru kao mjestu našeg "u tijeku" rada i Python Anywhere-a kao mjestu gdje možemo pokazivati naš rad kako dolazi sve bliže dovršetku.
+Ovaj je dio malo čudan kada se tutorijal radi na Chromebooku jer već koristimo računalo koje je na Internetu (a ne, na primjer, laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Tako da, prijavi se za novi Python Anywhere račun na: [www.pythonanywhere.com](https://www.pythonanywhere.com).
