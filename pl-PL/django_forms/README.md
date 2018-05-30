@@ -52,7 +52,7 @@ Czas otworzyć plik `blog/templates/blog/base.html`. Wewnątrz `div`-a o nazwie 
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Zauważ, że chcemy odwołać się do naszego nowego widoku `post_new`. Klasa `"glyphicon glyphicon-plus"` jest dostarczana przez bootstrap którego używamy i wyświetli nam znak plus.
+Zauważ, że chcemy odwołać się do naszego nowego widoku `post_new`. Klasa `"glyphicon glyphicon-plus"` jest dostarczana przez motyw z bootstrapa, którego używamy i wyświetli nam znak plus.
 
 Po dodaniu powyższej linii Twój plik HTML powinien wyglądać następująco:
 
