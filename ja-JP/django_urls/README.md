@@ -72,9 +72,9 @@ URL定義内で、ほかのものはすべて文字通り受け取られます�
 
 `mysite/urls.py` ファイルは簡潔なままにしておきたいので、`mysite/urls.py` では`blog` アプリからURLをインポートするだけにしましょう。
 
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
+まず、`blog.urls` をインポートする行を追加しましょう。`include` 関数を使ってインポートします。
 
-Mysite/urls.pyファイルはこのようになります：
+`mysite/urls.py` ファイルはこのようになります：
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -89,9 +89,9 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+これでDjangoは'http://127.0.0.1:8000/'に来たリクエストは `blog.urls` へリダイレクトするようになり、それ以降はそちらを参照するようになります。
 
-Writing regular expressions in Python is always done with `r` in front of the string. これは文字列がPythonで意味しない特別な文字であり、正規表現では意味する文字を含むというヒントになります。
+Pythonで正規表現を書く時は、常に `r` の後に文字を書きます。 これは文字列がPythonで意味しない特別な文字であり、正規表現では意味する文字を含むというヒントになります。
 
 ## blog.urls
 
