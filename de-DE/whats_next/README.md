@@ -22,4 +22,4 @@ Danach kannst du die folgenden Materialien ansehen. Die sind alle sehr empfehlen
 - ["Learn Python The Hard Way"-Buch](http://learnpythonthehardway.org/book/)
 - ["Getting Started With Django" Video-Lektionen](http://www.gettingstartedwithdjango.com/)
 - [Buch "Two Scoops of Django 1.11: Best Practices for Django Web Framework"](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
+- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - du kannst auch eine kostenlose eBook-Lizenz beantragen, indem du der Autorin Tracy Osborn auf <tracy@limedaring.com> schreibst
