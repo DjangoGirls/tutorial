@@ -124,6 +124,6 @@ urlpatterns = [
 
 ![エラー](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there.
+エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' というアトリビュートがない**ことを知らせてくれています。 Djangoは、その名前の *ビュー* を探してこようとしますが、まだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 なにもおかしいことはしていません。次の章ではビューを作っていきましょう。
 
 > Django URLconfについて知りたい場合は、公式のドキュメントを見て下さい： https://docs.djangoproject.com/en/1.11/topics/http/urls/
