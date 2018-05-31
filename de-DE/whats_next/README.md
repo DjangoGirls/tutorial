@@ -10,16 +10,16 @@ Und dann folge Django Girls doch auf [Facebook](http://facebook.com/djangogirls)
 
 ### Gibt es Empfehlungen für weiteren Quellen?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
+Ja! Auf dieser Seite gibt es noch empfehlenswerte Erweiterungen [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/). Schau mal rein.
 
-Later on, you can try the resources listed below. They're all very recommended!
+Danach kannst du die folgenden Materialien ansehen. Die sind alle sehr empfehlenswert!
 
-- [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
-- [New Coder tutorials](http://newcoder.io/tutorials/)
-- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
-- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
-- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- [Das offizielle Django-Tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [New Coder-Tutorials](http://newcoder.io/tutorials/)
+- [Python-Kurs auf Code Academy](https://www.codecademy.com/en/tracks/python)
+- [HTML- & CSS-Kurs auf Code Academy](https://www.codecademy.com/tracks/web)
+- [Django Carrots-Tutorial](https://github.com/ggcarrots/django-carrots)
+- ["Learn Python The Hard Way"-Buch](http://learnpythonthehardway.org/book/)
+- ["Getting Started With Django" Video-Lektionen](http://www.gettingstartedwithdjango.com/)
+- [Buch "Two Scoops of Django 1.11: Best Practices for Django Web Framework"](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
 - [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
