@@ -8,7 +8,7 @@ Mach eine Pause und entspanne. Du hast gerade etwas wirklich Großes geleistet.
 
 Und dann folge Django Girls doch auf [Facebook](http://facebook.com/djangogirls) oder [Twitter](https://twitter.com/djangogirls), um auf dem Laufenden zu bleiben.
 
-### Gibt es Empfehlungen für weiteren Quellen?
+### Könnt ihr weiteres Lernmaterial empfehlen?
 
 Ja! Auf dieser Seite gibt es noch empfehlenswerte Erweiterungen [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/). Schau mal rein.
 
