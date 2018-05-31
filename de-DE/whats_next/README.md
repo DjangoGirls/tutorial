@@ -6,7 +6,7 @@ Herzlichen Glückwunsch! **Du bist der Hammer!** Wir sind echt stolz! <3
 
 Mach eine Pause und entspanne. Du hast gerade etwas wirklich Großes geleistet.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Und dann folge Django Girls doch auf [Facebook](http://facebook.com/djangogirls) oder [Twitter](https://twitter.com/djangogirls), um auf dem Laufenden zu bleiben.
 
 ### Gibt es Empfehlungen für weiteren Quellen?
 
