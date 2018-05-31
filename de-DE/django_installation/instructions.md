@@ -8,9 +8,9 @@ Bevor wir mit der Installation von Django beginnen, lernen wir ein sehr hilfreic
 
 Wir erzeugen eine virtuelle Arbeitsumgebung - ein **virtual environment** oder auch *virtualenv*. Eine virtuelle Umgebung wird dein Python/Django-Setup für ein einzelnes Projekt isolieren. Das bedeutet, dass deine Änderungen an einem Website-Projekt keine anderen Projekte, an welchen du auch gerade entwickelst, beeinträchtigen. Klingt nützlich, oder?
 
-Du musst nur das Verzeichnis festlegen, in dem du das `virtualenv` erstellen willst; zum Beispiel dein Home-Verzeichnis. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Du musst nur das Verzeichnis festlegen, in dem du das `virtualenv` erstellen willst; zum Beispiel dein Home-Verzeichnis. Auf Windows ist dies `C:\Users\Name` (`Name` ist dein Anmeldename/Login).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **HINWEIS:** Stelle auf Windows sicher, dass dieser Verzeichnisname keine Umlaute oder Sonderzeichen enthält. Falls dein Benutzername Umlaute enthält, verwende ein anderes Verzeichnis, zum Beispiel `C:\djangogirls`.
 
 In diesem Tutorial erstellen wir darin ein neues Verzeichnis `djangogirls`:
 
@@ -20,7 +20,7 @@ In diesem Tutorial erstellen wir darin ein neues Verzeichnis `djangogirls`:
     $ cd djangogirls
     
 
-Wir nennen die virtuelle Umgebung `myvenv`. Das Kommando dazu lautet dann:
+Wir erstellen eine virtuelle Umgebung namens `myvenv`. Das Kommando dazu lautet dann:
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,7 +30,7 @@ Wir nennen die virtuelle Umgebung `myvenv`. Das Kommando dazu lautet dann:
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+Um ein neues `virtualenv` zu erzeugen, musst du die Kommandozeile öffnen und `python -m venv myvenv` ausführen. Das wird so aussehen:
 
 {% filename %}command-line{% endfilename %}
 
