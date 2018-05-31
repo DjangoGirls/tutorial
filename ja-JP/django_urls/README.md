@@ -116,7 +116,7 @@ urlpatterns = [
 ]
 ```
 
-これは `^$` というパターンのURLを `post_list` という `view` に割り当てたことを意味します。 `^$` という正規表現は、空の文字列にマッチすることを表しています。ただそれだけです。 見てのとおり、Django URLリゾルバでは 'http://127.0.0.1:8000/' はURLの一部に含めません。 このパターンは、'http://127.0.0.1:8000/' というアドレスに訪れたら、`views.post_list` を表示させるという動作を導きます。
+これは `^$` というパターンのURLを `post_list` という `view` に割り当てたことを意味します。 `^$` という正規表現は、空の文字列にマッチすることを表しています。ただそれだけです。 ご覧のとおり、Django URLリゾルバでは 'http://127.0.0.1:8000/' はURLの一部に含めません。 このパターンは、'http://127.0.0.1:8000/' というアドレスに訪れたら、`views.post_list` を表示させるという動作を導きます。
 
 最後の `name='post_list'` は、ビューを識別するために使用する URL の名前です。 これは、ビューの名前と同じにすることができますが、完全に別の名前にすることもできます。 We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
