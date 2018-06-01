@@ -1,4 +1,4 @@
-คุณสามารถ[ข้ามส่วนนี้ไป](http://tutorial.djangogirls.org/en/installation/#install-python)หากคุณไม่ได้ใช้ Chromebook ถ้าคุณไม่ได้ใช้ ประสบการณ์การติดตั้งจะแตกต่างกันเล็กน้อย คุณสามารถมองข้ามส่วนที่เหลือของขั้นตอนการติดตั้ง
+คุณสามารถ[ข้ามส่วนนี้ไป](http://tutorial.djangogirls.org/en/installation/#install-python)หากคุณไม่ได้ใช้ Chromebook ถ้าหากคุณใช้ การติดตั้งจะแตกต่างกันเล็กน้อย คุณสามารถมองข้ามส่วนที่เหลือของขั้นตอนการติดตั้ง
 
 ### Cloud 9
 
@@ -18,7 +18,7 @@ Cloud 9 เป็นเครื่องมือที่ให้บริก
     ชื่อผู้ใช้ของคุณ: ~ /workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+พื้นที่ด้านล่างนี้คือ *เทอร์มินัล* ของคุณ ซึ่ง Cloud 9 ได้เตรียมไว้ให้คุณแล้ว คุณสามารถปรับแต่งขนาดหน้าต่างให้ใหญ่ขึ้นได้เล็กน้อยเพื่อความสะดวก
 
 ### สภาพแวดล้อมเสมือน
 
@@ -55,6 +55,6 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 บทเรียน Django Girls ประกับด้วย ส่วนที่เรียกหว่า Deployment ซึ่งเป็นกระบวนการของการรับโค๊ดที่สนับสนุนแอ็พพลิเคชันเว็บใหม่ของคุณ และการย้ายไปยังคอมพิวเตอร์สาธารณะที่สามารถเข้าถึงได้ (เรียกว่าเซิร์ฟเวอร์) ทำให้คนอื่นสามารถเห็นผลงานของคุณได้
 
-ส่วนนี้แปลกเล็กน้อย เมื่อทำตามบทเรียนบน Chromebook เนื่องจากเรากำลังใช้คอมพิวเตอร์ที่อยู่บนอินเทอร์เน็ตอยู่แล้ว (ที่ตรงกันข้ามกับ laptop ที่พูดถึง) However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+ส่วนนี้แปลกเล็กน้อย เมื่อทำตามบทเรียนบน Chromebook เนื่องจากเรากำลังใช้คอมพิวเตอร์ที่อยู่บนอินเทอร์เน็ตอยู่แล้ว (ที่ตรงกันข้ามกับ laptop ที่พูดถึง) อย่างไรก็ตาม เราสามารถใช้ Cloud 9 เป็นพื้นที่สำหรับงานที่ "กำลังดำเนินการ" อยู่ และใช้ Python Anywhere เป็นพื้นที่ไว้โชว์ของที่สมบูรณ์มากขึ้น
 
 ดังนั้น สมัครสมาชิกสำหรับงบัญชี Python Anywhere ใหม่ได้ที่ [www.pythonanywhere.com](https://www.pythonanywhere.com)
