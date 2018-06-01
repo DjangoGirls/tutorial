@@ -37,21 +37,21 @@ Um ein neues `virtualenv` zu erzeugen, musst du die Kommandozeile öffnen und `p
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. Du kannst auch andere Namen benutzen. Aber denk daran: nur Kleinbuchstaben, keine Leerzeichen, Akzente oder andere Sonderzeichen. It is also good idea to keep the name short – you'll be referencing it a lot!
+wobei `myvenv` der Name deines `virtualenv` ist. Du kannst auch irgend einen anderen Namen wählen, aber bleibe bei Kleinbuchstaben und verwende keine Leerzeichen, Umlaute oder Sonderzeichen. Eine Gute Idee ist, den Namen kurz zu halten. Du wirst ihn oft benutzen bzw. eingeben müssen!
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Auf Linux oder OS X kann ein `virtualenv` durch das Ausführen von `python3 -m venv myvenv` erzeugt werden. Das wird so aussehen:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` ist der Name deiner neuen virtuellen Arbeitsumgebung, deines neuen `virtualenv`. Andere Namen sind natürlich möglich. Bleibe bei Kleinbuchstaben und verwende keine Leerzeichen. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` ist der Name deiner neuen virtuellen Arbeitsumgebung, deines neuen `virtualenv`. Du kannst auch irgend einen anderen Namen wählen, aber bleibe bei Kleinbuchstaben und verwende keine Leerzeichen. It is also a good idea to keep the name short as you'll be referencing it a lot!
 
 > **Hinweis:** Bei manchen Versionen von Debian/Unbuntu kann folgender Fehler auftauchen:
 > 
