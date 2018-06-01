@@ -550,16 +550,16 @@ Unterschiedliche Dinge, hier die Datentypen Zahlen (`int`) und Strings (`str`), 
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Du hast gerade einen neuen Typ von Python-Objekten kennen gelernt. Er heisst **Boolean**.
 
-There are only two Boolean objects:
+Es gibt zwei Boolean-Objekte:
 
-- True
-- False
+- True (wahr)
+- False (falsch)
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+Damit Python diese beiden Werte versteht, musst du sie auch genau so schreiben (den ersten Buchstaben groß, alle weiteren klein). **true, TRUE und tRUE funktionieren nicht – nur True ist korrekt.** (Dasselbe gilt natürlich auch für False.)
 
-Booleans can be variables, too! See here:
+Auch Booleans können Variablen sein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -569,7 +569,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+Auch Folgendes geht:
 
 {% filename %}command-line{% endfilename %}
 
@@ -579,14 +579,14 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Übe ein wenig, indem du mit Booleans rumspielst, zum Beispiel mit diesen Anweisungen:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Glückwunsch! Booleans sind echt eine der coolsten Features beim Programmieren und du hast gerade gelernt, damit umzugehen!
 
 # Sichern!
 
