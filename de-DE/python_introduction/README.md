@@ -588,7 +588,7 @@ False
 
 Glückwunsch! Booleans sind echt eine der coolsten Features beim Programmieren und du hast gerade gelernt, damit umzugehen!
 
-# Sichern!
+# Speicher es!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
