@@ -55,9 +55,9 @@ Es funktioniert! Gute Arbeit! :)
 * Jede Webseite sollte mit dem Tag `<html>` beginnen. Und `</html>` steht immer am Ende. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
 * `<p>` ist der Tag für ein Absatz-Element (paragraph), `</p>` beendet einen Absatz
 
-## Head and body
+## "Head" und "body"
 
-Jede HTML Seite gliedert sich in zwei Teile: **head** und **body**.
+Jede HTML-Seite gliedert sich in zwei Teile: **head** und **body**.
 
 * Das Element **head** speichert im "Kopf" der Seite Informationen über die Seite, die dir nicht angezeigt werden.
 
