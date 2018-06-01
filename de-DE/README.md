@@ -8,7 +8,7 @@
 
 Willkommen bei der Django Girls Anleitung! Wir freuen uns, dass du hier bist :) In dieser Anleitung schauen wir gemeinsam unter die Haube der Technologien im Internet, geben dir einen Einblick in die Bits und Bytes, die zusammen das Internet bilden, wie wir es heute kennen.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Wie alles Unbekannte wird das ein Abenteuer sein - aber keine Sorge: Da du bereits den Mut aufgebracht hast, hier zu sein, wirst du das schon meistern :)
 
 ## Einleitung
 
@@ -32,9 +32,9 @@ Es wird (in etwa) so aussehen:
 
 Okay, [ lass uns ganz am Anfang starten...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Das Tutorial daheim durcharbeiten
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. Darum wollen wir dich ermutigen das Tutorial zu Hause nachzuarbeiten. For Leser zu Hause arbeiten wir gerade an Video-Tutorials, die es erleichtern sollen diesem Tutorial zu folgen. Diese Arbeit ist noch nicht abgeschlossen, aber mehr und mehr Themen werden als Video erfasst und können im [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel angesehen werden.
+An einem Django-Girls-Workshop teilzunehmen ist toll, aber uns ist klar, dass das nicht immer allen möglich ist. Darum wollen wir dich ermutigen, das Tutorial zu Hause nachzuarbeiten. Für Leser zu Hause arbeiten wir gerade an Video-Tutorials, die es erleichtern sollen, diesem Tutorial zu folgen. Diese Arbeit ist noch nicht abgeschlossen, aber mehr und mehr Themen werden als Video erfasst und können im [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)-YouTube-Kanal angesehen werden.
 
 In jedem Kapitel das bereits mit Video unterstützt wird, gibt es einen Link auf das jeweilige Video dazu.
 
