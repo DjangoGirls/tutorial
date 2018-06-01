@@ -51,9 +51,9 @@ Auf Linux oder OS X kann ein `virtualenv` durch das Ausführen von `python3 -m v
     $ python3 -m venv myvenv
     
 
-`myvenv` ist der Name deiner neuen virtuellen Arbeitsumgebung, deines neuen `virtualenv`. Du kannst auch irgend einen anderen Namen wählen, aber bleibe bei Kleinbuchstaben und verwende keine Leerzeichen. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` ist der Name deiner neuen virtuellen Arbeitsumgebung, deines neuen `virtualenv`. Du kannst auch irgend einen anderen Namen wählen, aber bleibe bei Kleinbuchstaben und verwende keine Leerzeichen. Eine Gute Idee ist, den Namen kurz zu halten. Du wirst ihn oft benutzen bzw. eingeben müssen!
 
-> **Hinweis:** Bei manchen Versionen von Debian/Unbuntu kann folgender Fehler auftauchen:
+> **Hinweis:** Bei manchen Versionen von Debian/Unbuntu kann folgender Fehler auftreten:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -62,19 +62,19 @@ Auf Linux oder OS X kann ein `virtualenv` durch das Ausführen von `python3 -m v
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> Falls das auftritt, folge den Anweisungen in der Fehlermeldung und installiere das `python3-venv`-Paket: {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
 > 
-> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> **HINWEIS:** In manchen Debian/Ubuntu-Versionen kann das zu folgendem Fehler führen:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> Das zu umgehen, kannst du den `virtualenv`-Befehl verwenden.
+> Falls das eintritt, verwende stattdessen den `virtualenv`-Befehl.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -82,14 +82,14 @@ Auf Linux oder OS X kann ein `virtualenv` durch das Ausführen von `python3 -m v
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **HINWEIS:** Wenn du einen Fehler wie
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> erhälst, führe stattdessen
 > 
 > {% filename %}command-line{% endfilename %}
 > 
