@@ -154,7 +154,7 @@ $ . myvenv/bin/activate
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~$ pip install --upgrade pip
+(myvenv) ~$ python3 -m pip install --upgrade pip
 ```
 그런 다음 `pip install django~=1.11.0`(Django를 설치하려면 물결표 뒤에 등호 :`~=`)를 입력해 장고를 설치하세요.
 

@@ -149,7 +149,7 @@ Mielőtt ezt megtennénk, meg kell győződnünk arról, hogy a `pip` legfrisseb
 
 {% filename %}parancssor{% endfilename %}
 ```
-(myvenv) ~$ pip install --upgrade pip
+(myvenv) ~$ python3 -m pip install --upgrade pip
 ```
 
 Ezután futtasd ezt a parancsot a konzolban: `pip install django~=1.11` (figyelj oda, hogy egy tilde karaktert használunk, amelyet egy egyenlőségjel követ: `~=`).

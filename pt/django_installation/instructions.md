@@ -162,7 +162,7 @@ o Django:
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~$ pip install --upgrade pip
+(myvenv) ~$ python3 -m pip install --upgrade pip
 ```
 
 E então execute `pip install django~=1.9.0` (note que nós usamos um til seguido por um sinal de igual: `~=`) para instalar
