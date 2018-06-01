@@ -154,14 +154,14 @@ Ok, jetzt ist die erforderliche Umgebung startklar und wir können endlich Djang
 
 Da du nun dein `virtualenv` gestartet hast, kannst du Django installieren.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Bevor wir damit loslegen, sollten wir jedoch sicherstellen, dass wir die neuste Version von `pip` haben. <0>pip</0> ist die Software, mit der wir Django installieren werden.
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ pip install --upgrade pip
     
 
-Then run `pip install django~=1.11.0` (note that we use a tilde followed by an equal sign: `~=`) to install Django.
+Führe dann `pip install django~=1.11.0` aus, um Django zu installieren. (Beachte, dass wir eine Tilde gefolgt von einem Gleichheitszeichen verwenden: `~=`)
 
 {% filename %}command-line{% endfilename %}
 
@@ -175,7 +175,7 @@ Then run `pip install django~=1.11.0` (note that we use a tilde followed by an e
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Erstelle ein neues virtualenv in einem neuen Verzeichnis, lösche danach das alte und wiederhohle den oben genannten Befehl. (Das Verzeichnis des virtualenv zu verschieben funktioniert dabei nicht da virtualenv absolute Pfade verwendet.)
+> Wenn du einen Fehler auf einem Windowsrechner bekommst, überprüfe, ob der Pfadname deines Projekts Leerzeichen, Umlaute oder Sonderzeichen enthält (z.B. `C:\Users\User Name\djangogirls`). Ist das der Fall, dann verwende bitte einen anderen Ordner ohne Sonderzeichen, Umlaute oder Leerzeichen. (Vorschlag: `C:\djangogirls`). Erstelle ein neues virtualenv in einem neuen Verzeichnis, lösche danach das alte und wiederhohle den oben genannten Befehl. (Das Verzeichnis des virtualenv zu verschieben funktioniert dabei nicht da virtualenv absolute Pfade verwendet.)
 
 <!--endsec-->
 
