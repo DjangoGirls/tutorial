@@ -1,6 +1,6 @@
 # Wie das Internet funktioniert
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Für die Leser zu Hause: Dieses Kapitel wird im Video [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) behandelt.
 > 
 > Dieses Kapitel wurde inspiriert durch den Vortrag "How the Internet works" von Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
@@ -42,6 +42,6 @@ Wenn du einen Brief versenden willst, brauchst du spezielle Eigenschaften wie: P
 
 Grundsätzlich brauchst du also für eine Website auch einen *Server*, auf dem sie abgelegt ist. Wenn der *Server* eine eingehende *Anforderung* (in einem Brief) empfängt, sendet er deine Website zurück (in einem weiteren Brief).
 
-Since this is a Django tutorial, you might ask what Django does. Wenn du (bzw. dein Webserver) eine Antwort zurück sendest, willst du nicht an jeden dasselbe senden. Es ist besser, wenn die Antworten individuell personalisiert sind, entsprechend dem an dich gerichteten Anliegen. Django hilft dir, diese personalisierten und interessanten Antworten zu erstellen. :)
+Da dies hier ein Django-Tutorial ist, fragst du dich vieleicht, was Django in diesem Zusammenhang macht. Wenn du (bzw. dein Webserver) eine Antwort zurück sendest, willst du nicht an jeden dasselbe senden. Es ist besser, wenn die Antworten individuell personalisiert sind, entsprechend dem an dich gerichteten Anliegen. Django hilft dir, diese personalisierten und interessanten Antworten zu erstellen. :)
 
 Genug der Theorie, lass uns loslegen!
