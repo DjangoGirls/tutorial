@@ -2,7 +2,7 @@
 
 ### Cloud 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. สำหรับระยะเวลา ของบทเรียนนี้ Cloud 9 จะทำหน้าที่เป็น *local machine* คุณจะยังคงใช้คำสั่งในอินเตอร์เฟซเทอร์มินัลเหมือนเพื่อนบน OS X, Ubuntu หรือ Windows แต่เทอร์มินัลของคุณจะเชื่อมต่อกับคอมพิวเตอร์ที่ใช้ที่อื่นที่ Cloud 9 ตั้งค่าไว้สำหรับคุณ
+Cloud 9 เป็นเครื่องมือที่ให้บริการโปรแกรมแก้ไขข้อโค้ดที่คุณสามารถเข้าถึงได้ผ่านอินเทอร์เน็ต ทั้งยังสามารถติดตั้ง, เขียน และ รันซอฟต์แวร์เหล่านั้นได้ สำหรับระยะเวลา ของบทเรียนนี้ Cloud 9 จะทำหน้าที่เป็น *local machine* คุณจะยังคงใช้คำสั่งในอินเตอร์เฟซเทอร์มินัลเหมือนเพื่อนบน OS X, Ubuntu หรือ Windows แต่เทอร์มินัลของคุณจะเชื่อมต่อกับคอมพิวเตอร์ที่ใช้ที่อื่นที่ Cloud 9 ตั้งค่าไว้สำหรับคุณ
 
 1. ติดตั้ง Cloud 9 จาก [Chrome เว็บสโตร์](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. ไปที่ [c9.io](https://c9.io)
