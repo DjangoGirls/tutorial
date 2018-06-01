@@ -29,7 +29,7 @@ Als nächstes erstellen wir eine Datei `post_list.html` (erst mal ohne Inhalt) i
 
 Kontrolliere deine überarbeitete Webseite unter: http://127.0.0.1:8000
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Falls du die Fehlermeldung `TemplateDoesNotExist` angezeigt bekommst, versuche den Server neu zu starten. Auf der Kommandozeile drückst du Strg+C bzw. Ctrl+C (Strg-/Ctrl- und die C-Taste C zusammen) und startest danach den Server erneut mit dem Kommando `python manage.py runserver`.
 
 ![Abbildung 11.1](images/step1.png)
 
@@ -41,18 +41,18 @@ Füge folgenden Text in deine Template-Datei ein:
 
 ```html
 <html>
-    <p>Hi there!</p>
-    <p>It works!</p>
+    <p>Halli-Hallo!</p>
+    <p>Es funktioniert!</p>
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Hat sich die Seite geändert? Sieh nach: http://127.0.0.1:8000/
 
 ![Abbildung 11.2](images/step3.png)
 
 Es funktioniert! Gute Arbeit! :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
+* Jede Webseite sollte mit dem Tag `<html>` beginnen. Und `</html>` steht immer am Ende. Zwischen den beiden Tags `<html>` und `</html>` steht der gesamte Inhalt der Webseite
 * `<p>` ist der Tag für ein Absatz-Element (paragraph), `</p>` beendet einen Absatz
 
 ## Head and body
