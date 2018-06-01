@@ -10,7 +10,7 @@ Und dann folge Django Girls doch auf [Facebook](http://facebook.com/djangogirls)
 
 ### Könnt ihr weiteres Lernmaterial empfehlen?
 
-Ja! Auf dieser Seite gibt es noch empfehlenswerte Erweiterungen [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/). Schau mal rein.
+Ja! Auf der Seite [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/) gibt es noch empfehlenswerte Erweiterungen. Schau mal rein.
 
 Danach kannst du die folgenden Materialien ansehen. Die sind alle sehr empfehlenswert!
 
