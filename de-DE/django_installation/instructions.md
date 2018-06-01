@@ -89,7 +89,7 @@ Auf Linux oder OS X kann ein `virtualenv` durch das Ausführen von `python3 -m v
 >     E: Unable to locate package python3-venv
 >     
 > 
-> erhälst, führe stattdessen
+> erhälst, führe stattdessen folgendes aus:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -105,14 +105,14 @@ Die obigen Kommandos erstellen ein Verzeichnis `myvenv` (bzw. den von Dir vergeb
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Starte deine virtuelle Umgebung, indem du eingibst:
+Starte deine virtuelle Umgebung, indem du folgendes eingibst:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **HINWEIS:** Auf Windows 10 kannst du in der Windows PowerShell die Fehlermeldung `execution of scripts is disabled on this system` erhalten. Öffne in diesem Fall eine weitere Windows PowerShell über "Als Administrator ausführen". Versuche dann, das folgende Kommando einzugeben, bevor du das virtualenv noch einmal aktivierst:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
