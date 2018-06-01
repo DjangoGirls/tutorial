@@ -152,7 +152,7 @@ Ok, jetzt ist die erforderliche Umgebung startklar und wir können endlich Djang
 
 ## Django Installation
 
-Now that you have your `virtualenv` started, you can install Django.
+Da du nun dein `virtualenv` gestartet hast, kannst du Django installieren.
 
 Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
