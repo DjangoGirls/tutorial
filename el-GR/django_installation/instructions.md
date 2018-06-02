@@ -158,7 +158,7 @@ data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install --upgrade pip
+    (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
 Then run `pip install django~=1.11.0` (note that we use a tilde followed by an equal sign: `~=`) to install Django.
