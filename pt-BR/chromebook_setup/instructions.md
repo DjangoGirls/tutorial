@@ -55,6 +55,6 @@ Crie uma conta no [Github](https://github.com).
 
 O tutorial do Django Girls inclui uma seção do que chamamos de Deployment (algo como "implantação", em Português).
 
-Esta parte é um pouco esquisita quando o tutorial é feito num Chromebook, dado que já estamos usando um computador que está na Internet (ao contrário de, digamos, um laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Esta parte é um pouco esquisita quando o tutorial é feito num Chromebook, dado que já estamos usando um computador que está na Internet (ao contrário de, digamos, um laptop). Porém, ainda útil, já que podemos pensar no ambiente do Cloud 9 como um lugar pra nosso trabalho "em andamento" e Python Anywhere como um lugar para mostrar nosso trabalho conforme ele vai ficando mais completo.
 
-Assim, se crie uma nova conta Python Anywhere em [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Assim, crie uma nova conta Python Anywhere em [www.pythonanywhere.com](https://www.pythonanywhere.com).
