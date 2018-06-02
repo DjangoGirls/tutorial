@@ -159,7 +159,7 @@ $ source myvenv/bin/activate
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~$ pip install --upgrade pip
+(myvenv) ~$ python3 -m pip install --upgrade pip
 ```
 
 Затем запусти команду `pip install django~=1.11.0` (обрати внимание на тильду со знаком равенства: `~=`), чтобы установить Django.

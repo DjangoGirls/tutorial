@@ -123,7 +123,7 @@ Da dein `virtualenv` jetzt gestartet ist, kannst du Django mit `pip` installiere
 Bevor wir das tun, versichern wir uns, dass wir die neueste Version von `pip` installiert haben, die Software, mit welcher wir Django installieren werden:
 
 ```bash
-(myvenv) ~$ pip install --upgrade pip
+(myvenv) ~$ python3 -m pip install --upgrade pip
 ```
 
 Gib in die Konsole `pip install django~=1.10.0` ein.
