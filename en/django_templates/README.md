@@ -89,7 +89,7 @@ $ git push
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ cd my-first-blog
+$ cd djangogirls
 $ git pull
 [...]
 ```
