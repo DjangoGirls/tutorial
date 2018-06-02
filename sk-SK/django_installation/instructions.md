@@ -158,7 +158,7 @@ Predtým ako to urobíme, mali by sme sa uistiť, že je nainštalovaná najnov�
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install --upgrade pip
+    (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
 Potom spusti `pip install django~=1.11.0` (všimni si že používame tildu po ktorej nasleduje znamienko rovná sa: `~=`) aby si nainštalovala Django.
