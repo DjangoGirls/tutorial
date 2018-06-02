@@ -158,7 +158,7 @@ Bevor wir damit loslegen, sollten wir jedoch sicherstellen, dass wir die neuste 
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install --upgrade pip
+    (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
 Führe dann `pip install django~=1.11.0` aus, um Django zu installieren. (Beachte, dass wir eine Tilde gefolgt von einem Gleichheitszeichen verwenden: `~=`)
