@@ -158,7 +158,7 @@ Pero bago yan, dapat nakasiguro tayo na pinakabago ang bersyon natin ng `pip`, a
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install --upgrade pip
+    (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
 Pagkatapos, patakbuhin ang `pip install django~=1.11.0`(tandaan na gumamagamit tayo ng tilde kasunod ng sagisag ng katumbas: `~=` para mag-install ng Django.
