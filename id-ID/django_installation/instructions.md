@@ -162,7 +162,7 @@ data-collapse=true ces-->
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
-<pre><code>(myvenv) ~ $ pip install --upgrade pip
+<pre><code>(myvenv) ~$ python3 -m pip install --upgrade pip
 `</pre> 
 > > > 
 > > > Kemudian jalankan ` pip install django ~ = 1.11.0 </ 0> (perhatikan bahwa kita menggunakan tilde diikuti dengan tanda yang sama: <code> ~ = </ 0> ) untuk menginstal Django.</p>
