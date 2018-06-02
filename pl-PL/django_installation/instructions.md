@@ -158,7 +158,7 @@ Zanim jednak to zrobimy, powinniśmy się upewnić, że mamy najnowszą wersję 
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install --upgrade pip
+    (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
 Następnie uruchom polecenie `pip install django~=1.11.0 `(zwróć uwagę, że używamy tyldy przed znakiem równości: `~=`) do instalacji Django.
