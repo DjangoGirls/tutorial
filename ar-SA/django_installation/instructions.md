@@ -158,7 +158,7 @@ data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install --upgrade pip
+    (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
 قم بتشغيل `pip install django~=1.11.0`(علما بأننا نستخدم تيلدا متبوعاً بعلامة يساوي: `~ =`) لتثبيت جانغو.
