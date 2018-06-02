@@ -158,7 +158,7 @@ Bunu yapmadan önce,bilgisayarımızın,Django yüklemek için kullanacağımız
 
 {% filename %}komut-satırı{% endfilename %}
 
-    (myvenv) ~$ pip install --upgrade pip
+    (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
 Sonra `pip install django~=1.11.0` (eşittir işaretinden önce tilde işareti kullandığımızı not edin: `~=`) çalıştırarak Django 'yu yükleyin.
