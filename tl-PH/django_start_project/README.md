@@ -79,9 +79,9 @@ Sa `settings.py`, hanapin ang linya na naglalaman ng `TIME_ZONE` at baguhin ito 
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Ang code ng wika ay binubuo ng wika, halimbawa `en` para sa Ingles or `de` para sa Aleman, at ang code ng bansa, halimbawa `de` para sa Alemanya o `ch` para sa Switzerland. Gusto mo itong idagdag kung gusto mo na ang mga default na mga button at ang mga notipikasyon mula sa Django ay nasa iyong wika. Kaya magkakaroon ka ng "Cancel" na button na naisalin sa wika na iyong binigay dito. [Ang Django ay mayroon ng maraming nahandang pagsasalin](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Kaya magkakaroon ka ng "Cancel" na button na naisalin sa wika na iyong binigay dito. [Ang Django ay mayroon ng maraming nahandang pagsasalin](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-Baguhin ang code ng wika sa pamamagitan ng pagbago sa sumusunod na linya:
+If you want a different language, change the language code by changing the following line:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
