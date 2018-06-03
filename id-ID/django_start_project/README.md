@@ -85,36 +85,37 @@
 <pre><code class="python">TIME_ZONE = 'Eropa / Berlin'
 `</pre> 
 > > > > 
-> > > > Kode bahasa terdiri dari bahasa, mis. ` en </ 0> untuk bahasa Inggris atau <code> de </ 0> untuk bahasa jerman, dan kode negara, mis. <code> de </ 0> untuk jerman atau <code> ch </ 0> untuk swiss. Anda ingin menambahkan ini jika Anda ingin tombol dan notifikasi default dari Django ada dalam bahasa Anda. Jadi Anda akan memiliki tombol "Batal" yang diterjemahkan ke bahasa yang Anda definisikan di sini. <a href="https://docs.djangoproject.com/en/1.11/ref/settings/#language-code"> Django hadir dengan banyak terjemahan yang disiapkan </ 0> .</p>
-
-<p>Ubah kode bahasa dengan mengubah baris berikut:</p>
-
-<p>{% filename%} mysite / settings.py {% endfilename%}</p>
-
-<pre><code class="python">LANGUAGE_CODE = 'de-ch'
-`</pre> 
+> > > > A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Jadi Anda akan memiliki tombol "Batal" yang diterjemahkan ke bahasa yang Anda definisikan di sini.  Django hadir dengan banyak terjemahan yang disiapkan </ 0> .</p> 
 > > > > 
-> > > > Kita juga perlu menambahkan path untuk file statis. (Kita akan mencari tahu semua tentang file statis dan CSS nanti di tutorial.) Turun ke * akhir </ 0> dari file tersebut, dan di bawah entri ` STATIC_URL </ 1> , tambahkan sebuah yang baru disebut <code> STATIC_ROOT </ 1> :</p>
+> > > > If you want a different language, change the language code by changing the following line:
+> > > > 
+> > > > {% filename%} mysite / settings.py {% endfilename%}
+> > > > 
+> > > > ```python
+LANGUAGE_CODE = 'de-ch'
+```
+> > 
+> > Kita juga perlu menambahkan path untuk file statis. (Kita akan mencari tahu semua tentang file statis dan CSS nanti di tutorial.) Turun ke * akhir </ 0> dari file tersebut, dan di bawah entri ` STATIC_URL </ 1> , tambahkan sebuah yang baru disebut <code> STATIC_ROOT </ 1> :</p>
 
 <p>{% filename%} mysite / settings.py {% endfilename%}</p>
 
 <pre><code class="python">STATIC_URL = '/ static /' STATIC_ROOT = os.path.join (BASE_DIR, 'statis')
 `</pre> 
-> > > > 
-> > > > Bila ` DEBUG </ 0> adalah <code> True </ 0> dan <code> ALLOWED_HOSTS </ 0> kosong, host divalidasi terhadap <code> ['localhost', '127.0.0.1', ' [:: 1] '] </ 0> . Ini tidak akan cocok dengan nama host kami di PythonAnywhere begitu kami menerapkan aplikasi kami sehingga kami akan mengubah setelan berikut:</p>
+> > 
+> > Bila ` DEBUG </ 0> adalah <code> True </ 0> dan <code> ALLOWED_HOSTS </ 0> kosong, host divalidasi terhadap <code> ['localhost', '127.0.0.1', ' [:: 1] '] </ 0> . Ini tidak akan cocok dengan nama host kami di PythonAnywhere begitu kami menerapkan aplikasi kami sehingga kami akan mengubah setelan berikut:</p>
 
 <p>{% filename%} mysite / settings.py {% endfilename%}</p>
 
 <pre><code class="python">ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 `</pre> 
-> > > > 
-> > > > > ** Catatan </ 0> : Jika Anda menggunakan Chromebook, tambahkan baris ini di bagian bawah file settings.py Anda: ` MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage' </ 1>  </p>
+> > 
+> > > ** Catatan </ 0> : Jika Anda menggunakan Chromebook, tambahkan baris ini di bagian bawah file settings.py Anda: ` MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage' </ 1>  </p>
   
   <p>Also add <code>.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9</p> </blockquote> 
-> > > > > 
-> > > > > ## Buat database
-> > > > > 
-> > > > > Ada banyak perangkat lunak database yang berbeda yang dapat menyimpan data untuk situs Anda. Kita akan menggunakan yang default, ` sqlite3 </ 0> .</p>
+> > > 
+> > > ## Buat database
+> > > 
+> > > Ada banyak perangkat lunak database yang berbeda yang dapat menyimpan data untuk situs Anda. Kita akan menggunakan yang default, ` sqlite3 </ 0> .</p>
 
 <p>Ini sudah disiapkan di bagian berkas <code> mysite / settings.py </ 0> Anda :</p>
 
@@ -126,8 +127,8 @@
          'NAME': os.path.join (BASE_DIR, 'db.sqlite3'),
      }}
 `</pre> 
-> > > > > 
-> > > > > Untuk membuat database untuk blog kita, mari kita jalankan yang berikut di konsol: ` python manage.py migrate </ 0> (kita perlu berada di direktori <code> djangogirls </ 0> yang berisi <code> manage.py </ 0> file). Jika berjalan dengan baik, Anda harus melihat sesuatu seperti ini:</p>
+> > > 
+> > > Untuk membuat database untuk blog kita, mari kita jalankan yang berikut di konsol: ` python manage.py migrate </ 0> (kita perlu berada di direktori <code> djangogirls </ 0> yang berisi <code> manage.py </ 0> file). Jika berjalan dengan baik, Anda harus melihat sesuatu seperti ini:</p>
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
@@ -147,54 +148,54 @@
    Menerapkan auth.0007_alter_validators_add_error_messages ... OK
    Menerapkan sesi.0001_initial ... baik
 `</pre> 
-> > > > > 
-> > > > > Dan kita sudah selesai! Waktunya memulai web server dan melihat apakah website kita bekerja!
-> > > > > 
-> > > > > ## Memulai server web
-> > > > > 
-> > > > > Anda harus berada di direktori yang berisi file ` manage.py </ 0> (direktori <code> djangogirls </ 0> ). Di konsol, kita bisa memulai server web dengan menjalankan <code> python manage.py runserver </ 0> :</p>
+> > > 
+> > > Dan kita sudah selesai! Waktunya memulai web server dan melihat apakah website kita bekerja!
+> > > 
+> > > ## Memulai server web
+> > > 
+> > > Anda harus berada di direktori yang berisi file ` manage.py </ 0> (direktori <code> djangogirls </ 0> ). Di konsol, kita bisa memulai server web dengan menjalankan <code> python manage.py runserver </ 0> :</p>
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
 <pre><code>(myvenv) ~ / djangogirls $ python manage.py runserver
 `</pre> 
-> > > > > 
-> > > > > Jika Anda menggunakan Chromebook, gunakan perintah ini sebagai gantinya:
-> > > > > 
-> > > > > {% filename %}Cloud 9{% endfilename %}
-> > > > > 
-> > > > >     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
-> > > > >     
-> > > > > 
-> > > > > Jika Anda menggunakan Windows dan ini gagal dengan ` UnicodeDecodeError </ 0> , gunakan perintah ini sebagai gantinya:</p>
+> > > 
+> > > Jika Anda menggunakan Chromebook, gunakan perintah ini sebagai gantinya:
+> > > 
+> > > {% filename %}Cloud 9{% endfilename %}
+> > > 
+> > >     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+> > >     
+> > > 
+> > > Jika Anda menggunakan Windows dan ini gagal dengan ` UnicodeDecodeError </ 0> , gunakan perintah ini sebagai gantinya:</p>
 
 <p>{% filename %}command-line{% endfilename %}</p>
 
 <pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
 `</pre> 
-> > > > > 
-> > > > > Sekarang yang perlu Anda lakukan hanyalah memeriksa apakah situs Anda berjalan. Buka browser Anda (Firefox, Chrome, Safari, Internet Explorer atau apapun yang Anda gunakan) dan masukkan alamat ini:
-> > > > > 
-> > > > > {% filename %}browser{% endfilename %}
-> > > > > 
-> > > > >     http://127.0.0.1:8000/
-> > > > >     
-> > > > > 
-> > > > > Jika menggunakan Chromebook, Anda akan selalu mengunjungi server uji dengan mengakses:
-> > > > > 
-> > > > > {% filename %}browser{% endfilename %}
-> > > > > 
-> > > > >     https://django-girls-<your cloud9 username>.c9users.io
-> > > > >     
-> > > > > 
-> > > > > Selamat! Anda baru saja membuat situs web pertama dan menjalankannya menggunakan server web! Bukankah itu mengagumkan?
-> > > > > 
-> > > > > ![Ini berhasil!](images/it_worked2.png)
-> > > > > 
-> > > > > Saat server web berjalan, Anda tidak akan melihat command-line prompt baru untuk memasukkan perintah tambahan. Terminal akan menerima teks baru tapi tidak akan menjalankan perintah baru. Ini karena server web terus berjalan untuk mendengarkan permintaan masuk .
-> > > > > 
-> > > > > > Kami meninjau bagaimana server web bekerja di ** Bagaimana Internet bekerja** bab.
-> > > > > 
-> > > > > Untuk mengetikkan perintah tambahan saat server web berjalan, buka jendela terminal baru dan aktifkan virtualenv Anda. Untuk menghentikan server web, kembali ke jendela tempat ia menjalankan dan tekan tombol CTRL + C - Control dan C bersama-sama (di Windows, Anda mungkin harus menekan Ctrl + Break).
-> > > > > 
-> > > > > Siap untuk langkah selanjutnya? Saatnya untuk membuat beberapa konten!
+> > > 
+> > > Sekarang yang perlu Anda lakukan hanyalah memeriksa apakah situs Anda berjalan. Buka browser Anda (Firefox, Chrome, Safari, Internet Explorer atau apapun yang Anda gunakan) dan masukkan alamat ini:
+> > > 
+> > > {% filename %}browser{% endfilename %}
+> > > 
+> > >     http://127.0.0.1:8000/
+> > >     
+> > > 
+> > > Jika menggunakan Chromebook, Anda akan selalu mengunjungi server uji dengan mengakses:
+> > > 
+> > > {% filename %}browser{% endfilename %}
+> > > 
+> > >     https://django-girls-<your cloud9 username>.c9users.io
+> > >     
+> > > 
+> > > Selamat! Anda baru saja membuat situs web pertama dan menjalankannya menggunakan server web! Bukankah itu mengagumkan?
+> > > 
+> > > ![Ini berhasil!](images/it_worked2.png)
+> > > 
+> > > Saat server web berjalan, Anda tidak akan melihat command-line prompt baru untuk memasukkan perintah tambahan. Terminal akan menerima teks baru tapi tidak akan menjalankan perintah baru. Ini karena server web terus berjalan untuk mendengarkan permintaan masuk .
+> > > 
+> > > > Kami meninjau bagaimana server web bekerja di ** Bagaimana Internet bekerja** bab.
+> > > 
+> > > Untuk mengetikkan perintah tambahan saat server web berjalan, buka jendela terminal baru dan aktifkan virtualenv Anda. Untuk menghentikan server web, kembali ke jendela tempat ia menjalankan dan tekan tombol CTRL + C - Control dan C bersama-sama (di Windows, Anda mungkin harus menekan Ctrl + Break).
+> > > 
+> > > Siap untuk langkah selanjutnya? Saatnya untuk membuat beberapa konten!
