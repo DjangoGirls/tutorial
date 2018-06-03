@@ -92,8 +92,8 @@ It'd be good to see if your website will still be working on the public Internet
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd my-first-blog
-    $ git pull 
+    $ cd $USER.pythonanywhere.com
+    $ git pull
     [...]
     
 
