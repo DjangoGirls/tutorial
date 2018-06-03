@@ -92,7 +92,7 @@ Magandang tingnan kung ang website ay gumagana pa rin sa publikong Internet, di 
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd $USER.pythonanywhere.com
     $ git pull
     [...]
     
