@@ -92,7 +92,7 @@ Bolo by fajn vidieť či bude tvoja web stránka stále funkčná aj na Internet
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd $USER.pythonanywhere.com
     $ git pull
     [...]
     
