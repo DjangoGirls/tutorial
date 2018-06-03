@@ -79,9 +79,9 @@
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-كود لغة يتكون من لغة، مثل `en` للغة الإنكليزية أو `de` للالمانية، ورمز البلد، مثل `de` لألمانيا أو `ch` لسويسرا. سوف تحتاج إلى إضافة هذا إذا كنت تريد الأزرار الافتراضية والإخطارات من جانغو أن تكون بلغتك. لذلك سيكون لديك زر "إلغاء" ترجم إلى اللغة التي حددتها هنا. [جانغو يأتي مع الكثير من الترجمات ](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. لذلك سيكون لديك زر "إلغاء" ترجم إلى اللغة التي حددتها هنا. [جانغو يأتي مع الكثير من الترجمات ](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-تغيير رمز اللغة عن طريق تغيير السطر التالي:
+If you want a different language, change the language code by changing the following line:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
