@@ -92,7 +92,7 @@ Websitenizi internette çalışır halde görmek iyi olur değilmi? PythonAnywhe
 
 {% filename %}PythonAnywhere komut-satırı{% endfilename %}
 
-    $ cd ilk-blogum
+    $ cd $USER.pythonanywhere.com
     $ git pull
     [...]
     
