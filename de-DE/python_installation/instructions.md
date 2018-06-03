@@ -1,6 +1,6 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> Für Leserinnen zuhause: Dieses Kapitel wird auch im Video [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) behandelt.
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Dieses Kapital basiert auf einem Tutorial der Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Django ist in Python geschrieben. Um mit Django zu arbeiten müssen wir also erst Python installieren. Lass uns also zunächst Python installieren! Für das Tutorial brauchen wir Python 3.6, falls du eine Vorgängerversion benutzt upgrade diese bitte.
 
@@ -14,7 +14,7 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Tippe "cmd" in das "Run"-Fenster](../python_installation/images/windows-plus-r.png)
 
 Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
@@ -23,7 +23,7 @@ Note: if you are using an older version of Windows (7, Vista, or any older versi
 
 If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Python zum Pfad hinzufügen (Installer von älterer Python-Version)](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
