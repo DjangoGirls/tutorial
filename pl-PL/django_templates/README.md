@@ -92,7 +92,7 @@ Dobrze byłoby sprawdzić, czy twoja strona wciąż będzie działała w publicz
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd $USER.pythonanywhere.com
     $ git pull
     [...]
     
