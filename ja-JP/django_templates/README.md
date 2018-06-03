@@ -92,7 +92,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd $USER.pythonanywhere.com
     $ git pull
     [...]
     
