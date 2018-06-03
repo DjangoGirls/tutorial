@@ -80,7 +80,7 @@ Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, �
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd my-first-blog
+    $ cd $USER.pythonanywhere.com
     $ git pull
     [...]
     
