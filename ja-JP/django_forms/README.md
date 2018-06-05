@@ -1,6 +1,6 @@
 # Djangoのフォーム
 
-自分のwebサイトで最終的にやりたいことは、ブログポストを追加したり編集したりすることをいいやり方で作ることです。 Django adminはかなりいいですが、カスタマイズや上手く作るのはより難しいです。 With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+自分のwebサイトで最終的にやりたいことは、ブログポストを追加したり編集したりすることをいいやり方で作ることです。 Django adminはかなりいいですが、カスタマイズや上手く作るのはより難しいです。 フォームはインターフェイス上でものすごい力を持っています。 - 私たちが想像する処理がほとんど行うことができます!
 
 Djangoのフォームでよいところは、フォームをスクラッチで定義できたり、モデルからフォームを生成できるところです。
 
@@ -32,15 +32,15 @@ class PostForm(forms.ModelForm):
 
 Djangoのフォームクラスをインポートする必要があります。それが`rom django import forms`の部分です。そして`from .models import Post`はポストモデルをインポートしています).
 
-PostFormとは何かと思うかもしれません。これはフォームを作る時に定義する名前です。 We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+PostFormとは何かと思うかもしれません。これはフォームを作る時に定義する名前です。 Djangoでいう、このフォームはModelFormです。`forms.ModelForm`はPostFormの引数です。
 
 次に`class Meta`ですが、Postモデルを使う時、このフォーム`model = Post`を使います).
 
-最後にフォームのフィールドに何を置くか書きます。 In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+最後にフォームのフィールドに何を置くか書きます。 このシナリオで、私たちは`title` と `text`の部分でタイトルと本文を公開します。 `author`は現在ログインしている人（あなた）です。 `created_date` は自動的に記事ポストを書いた時間が設定されます。
 
 そしてそうです！今私たちが ビューで必要なのは、フォームを使うことです。テンプレートがあるので、それを示します。
 
-So once again we will create a link to the page, a URL, a view and a template.
+もう一度ファイルを作ります。：ページへのリンク、URL、ビューとテンプレートです。
 
 ## フォームにおけるページへのリンク
 
@@ -52,14 +52,13 @@ So once again we will create a link to the page, a URL, a view and a template.
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+新しいビュー` post_new </ code>を呼び出すことに注意してください。 <code> "glyphicon glyphicon-plus" </ code>クラスは、使用しているブートストラップテーマによって提供され、プラス記号を表示します。</p>
 
-行を追加すると、このような html ファイルになります。
+<p>行を追加すると、このような html ファイルになります。</p>
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
 
-```html
-{% load staticfiles %}
+<pre><code class="html">{% load staticfiles %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -73,17 +72,7 @@ Note that we want to call our new view `post_new`. The class `"glyphicon glyphic
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
-        <div class="content container">
-            <div class="row">
-                <div class="col-md-8">
-                    {% block content %}
-                    {% endblock %}
-                </div>
-            </div>
-        </div>
-    </body>
-</html>
-```
+`</pre> 
 
 Htmlファイルを保存して、ページをリロードします。 `NoReverseMatch` エラーが表示されます?
 
@@ -124,7 +113,7 @@ blog/views.pyを開きます。fromの行の後に次の内容を追加してみ
 from .forms import PostForm
 ```
 
-And then our *view*:
+その後にビューを追加します。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -140,14 +129,14 @@ Postフォームを新しく作るには、PostFormを呼び出し、それを�
 
 blog/templates/blogディレクトリにpost_edit.htmlファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* 上記の行は HTML フォーム タグでラップする必要があります: `<form method="POST">...</form>`.
+* フォームを表示する必要があります。 私たちは（例えば）{％raw％} ` {{form.as_p}} </ code> {％endraw％}でこれを行うことができます。</li>
+<li>上記の行は HTML フォーム タグでラップする必要があります: <code><form method="POST">...</form>`.
 * `保存` のボタンが必要です。HTML ボタンで行う: `<button type="submit">Save</button>`.
-* 最後に`<form ...>` タグを開いて、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームを安全に保護できるのでこれは非常に重要です! If you forget about this bit, Django will complain when you try to save the form:
+* 最後に`<form ...>` タグを開いて、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームを安全に保護できるのでこれは非常に重要です! このビットを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+OK,そうしたらどのようにHTMLで`post_edit.html`表すか見て下さい：
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
