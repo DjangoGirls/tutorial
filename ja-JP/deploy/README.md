@@ -191,32 +191,34 @@ $ git push -u origin master
 > >         templates  tests.py  urls.py  views.py
 > >         
 > >     
-> >     You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+> >     また、「ファイル」タブに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して移動することもできます。
 > >     
 > >     ## You are now live!
 > >     
-> >     Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+> >     あなたのサイトは現在、インターネット上に生存しているはずです！ PythonAnywhereの「Web」タブをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)
 > >     
-> >     > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
-> >     
-> >     ## Debugging tips
-> >     
-> >     If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
-> >     
-> >     - Forgetting to create your PythonAnywhere API token.
-> >     - Making a mistake in your GitHub URL
-> >     - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
-> >     
-> >     If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
-> >     
-> >     There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
-> >     
-> >     And remember, your coach is here to help!
-> >     
-> >     # Check out your site!
-> >     
-> >     The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
-> >     
-> >     Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
-> >     
-> >     Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+> >     > **注</ strong>これは初心者向けのチュートリアルです。このサイトを展開する際には、セキュリティの観点からは理想的ではない、いくつかのショートカットを取り上げました。 このプロジェクトを構築するか、新しいプロジェクトを開始する場合は、[ Djangoデプロイメント チェックリスト](https://docs.djangoproject.com/ja/1.11/howto/deployment/checklist/)をご覧ください。</p> </blockquote> 
+> >     > 
+> >     > ## Debugging tips
+> >     > 
+> >     > ` pa_autoconfigure_django.py </ code>スクリプトの実行中にエラーが表示された場合は、次のような原因が考えられます。</p>
+
+<ul>
+<li>PythonAnywhere APIトークンの作成を忘れている</li>
+<li>あなたのGitHubのURLを間違えている</li>
+<li><em>Could not find your settings.py</ em>というエラーが表示された場合は、おそらくGitにすべてのファイルを追加できなかったか、 GitHubが正常に終了しました。  この場合はGitセクションをもう一度見てください</li>
+</ul>
+
+<p>サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は<strong>エラーログ</ strong>です。 PythonAnywhereの<a href="https://www.pythonanywhere.com/web_app_setup/"> Webタブ</a>には、このリンクがあります。 そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。</p>
+
+<p><a href="http://help.pythonanywhere.com/pages/DebuggingImportError"> PythonAnywhereヘルプサイトの一般的なデバッグのヒント</a>もあります。</p>
+
+<p>つまづいた時は、コーチに助けを求めましょう。</p>
+
+<h1>Check out your site!</h1>
+
+<p>サイトのデフォルトページでは、ローカルコンピュータと同じように「It worked！」と表示されます。 Try adding <code>/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+> >     > 
+> >     > Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+> >     > 
+> >     > Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
