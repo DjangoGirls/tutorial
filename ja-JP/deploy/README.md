@@ -153,70 +153,70 @@ $ git push -u origin master
 > > 
 > > ` pythonanywhereを収集する</ code>のようなものをいくつか出力し、最終的に<code> pythonanywhere-（...）</ code>をインストールしたという行で終わるはずです。</p>
 
-<p> GitHub からアプリを自動的に構成するためのヘルパーを実行します。 Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of <code><your-github-username>`):
+<p> GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（<code>＆lt; your-github-username＆gt; </ code>の代わりにGitHubユーザー名を使用することを忘れないでください）：</p>
+
+<p>{% filename %}PythonAnywhere command-line{% endfilename %}</p>
+
+<pre><code>$ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+`</pre> 
 > > 
-> > {% filename %}PythonAnywhere command-line{% endfilename %}
+> > 上記を実行すると、あなたは以下の事ができるようになります。：
 > > 
-> >     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+> > - GitHubからコードをダウンロードする
+> > - 自分のPC上のように、PythonAnywhereでのvirtualenvを作成している
+> > - 一部のデプロイメント設定で設定ファイルを更新する
+> > - ` manage.py migrate </ code>コマンドを使ってPythonAnywhereにデータベースを設定する</li>
+<li>静的ファイルの設定（これについては後で学習します）</li>
+<li>PythonAnywhereでAPIを使用してWebアプリケーションを提供するように設定する</li>
+</ul>
+
+<p>PythonAnywhereでは、これらすべてのステップは自動化されていますが、他のサーバプロバイダと同じ手順を経なければなりません。  今注目すべき重要な点は、PythonAnywhere上のデータベースが、自分のPC上のデータベースとはまったく別物であることです。つまり、異なる投稿と管理者アカウントを持つことができます。</p>
+
+<p>その結果、自分のコンピュータで行ったように、<code> createsuperuser </ code>で管理者アカウントを初期化する必要があります。 PythonAnywhereがあなたのためにあなたのvirtualenvを自動的に起動したので、あなたがする必要があるのは以下の通りです：</p>
+
+<p>{% filename %}PythonAnywhere command-line{% endfilename %}</p>
+
+<pre><code>(ola.pythonanywhere.com) $ python manage.py createsuperuser
+`</pre> 
+> >     管理者の詳細を入力します。 PythonAnywhere上のパスワードをより安全にしたい場合を除き、混乱を避けるために自分のコンピュータで使用しているのと同じものを使用することをお勧めします。
 > >     
-> > 
-> > As you watch that running, you'll be able to see what it's doing:
-> > 
-> > - Downloading your code from GitHub
-> > - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
-> > - Updating your settings file with some deployment settings
-> > - Setting up a database on PythonAnywhere using the `manage.py migrate` command
-> > - Setting up your static files (we'll learn about these later)
-> > - And configuring PythonAnywhere to serve your web app via its API
-> > 
-> > On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
-> > 
-> > As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
-> > 
-> > {% filename %}PythonAnywhere command-line{% endfilename %}
-> > 
-> >     (ola.pythonanywhere.com) $ python manage.py createsuperuser
+> >     PythonAnywhereのコードをlsを使って見てみることもできます：
 > >     
-> > 
-> > Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
-> > 
-> > Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
-> > 
-> > {% filename %}PythonAnywhere command-line{% endfilename %}
-> > 
-> >     (ola.pythonanywhere.com) $ ls
-> >     blog  db.sqlite3  manage.py  mysite  static
-> >     (ola.pythonanywhere.com) $ ls blog/
-> >     __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
-> >     templates  tests.py  urls.py  views.py
+> >     {% filename %}PythonAnywhere command-line{% endfilename %}
 > >     
-> > 
-> > You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
-> > 
-> > ## You are now live!
-> > 
-> > Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
-> > 
-> > > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
-> > 
-> > ## Debugging tips
-> > 
-> > If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
-> > 
-> > - Forgetting to create your PythonAnywhere API token.
-> > - Making a mistake in your GitHub URL
-> > - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
-> > 
-> > If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
-> > 
-> > There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
-> > 
-> > And remember, your coach is here to help!
-> > 
-> > # Check out your site!
-> > 
-> > The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
-> > 
-> > Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
-> > 
-> > Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+> >         (ola.pythonanywhere.com) $ ls
+> >         blog  db.sqlite3  manage.py  mysite  static
+> >         (ola.pythonanywhere.com) $ ls blog/
+> >         __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
+> >         templates  tests.py  urls.py  views.py
+> >         
+> >     
+> >     You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+> >     
+> >     ## You are now live!
+> >     
+> >     Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+> >     
+> >     > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
+> >     
+> >     ## Debugging tips
+> >     
+> >     If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+> >     
+> >     - Forgetting to create your PythonAnywhere API token.
+> >     - Making a mistake in your GitHub URL
+> >     - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+> >     
+> >     If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+> >     
+> >     There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+> >     
+> >     And remember, your coach is here to help!
+> >     
+> >     # Check out your site!
+> >     
+> >     The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+> >     
+> >     Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+> >     
+> >     Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
