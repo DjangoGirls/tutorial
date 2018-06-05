@@ -118,8 +118,8 @@ $ git push -u origin master
 > >     Counting objects: 6, done.
 > >     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
 > >     Total 3 (delta 0), reused 0 (delta 0)
-> >     To https://github.com/ola/my-first-blog.git
 > >     
+> >     To https://github.com/ola/my-first-blog.git
 > >      * [new branch]      master -> master
 > >     Branch master set up to track remote branch master from origin.
 > >     
@@ -134,7 +134,7 @@ $ git push -u origin master
 > > 
 > > > **備考：**あなたがすでにPythonAnywhereのアカウントを以前に作成しインストールの手順をふんでいたら、再びそれを行う必要はありません。
 > > 
-> > {% include "/deploy/signup_pythonanywhere.md" %}
+> > {% include "deploy/signup_pythonanywhere.md" %}
 > > 
 > > ## PythonAnywhere でサイトを設定する
 > > 
@@ -199,7 +199,7 @@ $ git push -u origin master
 > >     
 > >     > **注</ strong>これは初心者向けのチュートリアルです。このサイトを展開する際には、セキュリティの観点からは理想的ではない、いくつかのショートカットを取り上げました。 このプロジェクトを構築するか、新しいプロジェクトを開始する場合は、[ Djangoデプロイメント チェックリスト](https://docs.djangoproject.com/ja/1.11/howto/deployment/checklist/)をご覧ください。</p> </blockquote> 
 > >     > 
-> >     > ## Debugging tips
+> >     > ## デバッギングのヒント
 > >     > 
 > >     >  pa_autoconfigure_django.py </ code>スクリプトの実行中にエラーが表示された場合は、次のような原因が考えられます。</p>
 
