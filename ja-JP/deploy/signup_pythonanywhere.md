@@ -1,11 +1,11 @@
-Sign up for a free "Beginner" account on PythonAnywhere:
+次に「PythonAnywhere」（https://www. pythonanywhere. com/）を使って初心者用の無料アカウントを作りましょう。
 
 * [http://www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
+> メモ ユーザーネームを作る時、あなたの名前.pythonanywhere.comになることを覚えておいて下さい。ですから、自分のニックネームか名前かブログを何にするかで選んでみて下さい。
 
-## Creating a PythonAnywhere API token
+## PythonAnywhere APIトークンの作成
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Accounts" page, then select the tab named "API token", and hit the button that says "Create new API token".
+これはあなたが一度だけ行う必要があるものです。 PythonAnywhere のサインアップしているときダッシュ ボードまたは「コンソール」ページが表示されます。 [アカウント]ページの右上にあるリンクを見つけて[APIトークン]タブを選択し、[新しいAPIトークンを作成]ボタンをクリックします。
 
 ![The API token tab on the Accounts page](images/pythonanywhere_create_api_token.png)
