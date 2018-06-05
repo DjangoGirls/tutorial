@@ -126,34 +126,34 @@ $ git push -u origin master
 > > 
 > > <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 > > 
-> > コードは GitHub 上で公開されます。 それをチェックしにいってください。 You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+> > コードは GitHub 上で公開されます。 それをチェックしにいってください。 これは、[ Django ](https://github.com/django/django)、<a href = "https://github.com/DjangoGirls/tutorial/にあります。 "> Django Girls Tutorial </a>などのオープンソースソフトウェアプロジェクトも、GitHubでコードをホストしています。 :)
 > > 
-> > # Setting up our blog on PythonAnywhere
+> > # PythonAnywhereでブログを設定する
 > > 
-> > ## Sign up for a PythonAnywhere account
+> > ## PythonAnywhere アカウントにサインアップする
 > > 
-> > > **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> > > **備考：**あなたがすでにPythonAnywhereのアカウントを以前に作成しインストールの手順をふんでいたら、再びそれを行う必要はありません。
 > > 
 > > {% include "/deploy/signup_pythonanywhere.md" %}
 > > 
-> > ## Configuring our site on PythonAnywhere
+> > ## PythonAnywhere でサイトを設定する
 > > 
-> > Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+> > メインの[ PythonAnywhere Dashboard ](https://www.pythonanywhere.com/)のロゴをクリックし、「Bash」コンソールを起動するオプションを選択します。これがPythonAnywhereバージョンです あなたのコンピュータのコマンドラインと同じようなものです。
 > > 
 > > ![Pointing at Bash in the New Console section](images/pythonanywhere_bash_console.png)
 > > 
-> > > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> > > **備考：**PythonAnywhere は Linux に基づきますので、Windows の場合は、あなたのコンピュータ上で進行中のものと少し違って見えるでしょう。
 > > 
-> > Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+> > PythonAnywhereにWebアプリケーションをデプロイするには、コードをGitHubからプルし、PythonAnywhereでそれを認識してWebアプリケーションとして提供するように設定する必要があります。 それを手動で行う方法もありますが、PythonAnywhereはそれをすべて行うヘルパーツールを提供しています。 まず、インストールしてみましょう。
 > > 
 > > {% filename %}PythonAnywhere command-line{% endfilename %}
 > > 
 > >     $ pip3.6 install --user pythonanywhere
 > >     
 > > 
-> > That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
-> > 
-> > Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+> > ` pythonanywhereを収集する</ code>のようなものをいくつか出力し、最終的に<code> pythonanywhere-（...）</ code>をインストールしたという行で終わるはずです。</p>
+
+<p> GitHub からアプリを自動的に構成するためのヘルパーを実行します。 Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of <code><your-github-username>`):
 > > 
 > > {% filename %}PythonAnywhere command-line{% endfilename %}
 > > 
