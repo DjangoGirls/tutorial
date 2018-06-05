@@ -4,17 +4,17 @@
 
 今のところ、あなたが作ったサイトは、あなたのコンピューターでしかみることができません。 ここでは、デプロイの方法を学びましょう！ デプロイとは、あなたが作っているアプリケーションをインターネットで公開することです。あなた以外の人もウェブサイトを見ることができるようになりますよ. :)
 
-これまでに学んだとおり、ウェブサイトはサーバーに置かれています。 There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+これまでに学んだとおり、ウェブサイトはサーバーに置かれています。 インターネットで利用できる多くのサーバー プロバイダーがありますが、私達は [PythonAnywhere](https://www.pythonanywhere.com/) を使用します。 PythonAnywhere は、多くの人がアクセスするものではない小さいアプリケーションを無料で公開できますので今のあなたには最適でしょう。
 
 使用するその他の外部サービスは [GitHub](https://www.github.com) コードのホスティング サービスです。 他にも色々ありますが、ほとんどのプログラマはGitHubのアカウントを持っています。そしてあなたも今そうなります。
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+これらの 3 つの場所はあなたに重要です。 ローカル コンピューターは、開発およびテストを行う場所になります。 変更に満足したら、GitHub 上で、プログラムのコピーを配置します。 あなたのウェブサイトは、PythonAnywhere になります、GitHub からコードの新しいコピーを取得することによって更新されます。
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **特徴：**もし、既にgitのインストールをやっている場合は再度行う必要はありません。-あなたは次のセクションにスキップしてあなたのGitリポジトリの作成を開始します。
 
-{% include "/deploy/install_git.md" %}
+{% include "deploy/install_git.md" %}
 
 ## Starting our Git repository
 
