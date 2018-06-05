@@ -113,8 +113,8 @@ $ git push -u origin master
 > > 
 > > {% filename %}command-line{% endfilename %}
 > > 
-> >     Username for 'https://github.com': ola
-> >     Password for 'https://ola@github.com':
+> >     Username for 'https://github.com': hjwp
+> >     Password for 'https://hjwp@github.com':
 > >     Counting objects: 6, done.
 > >     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
 > >     Total 3 (delta 0), reused 0 (delta 0)
@@ -201,7 +201,7 @@ $ git push -u origin master
 > >     > 
 > >     > ## Debugging tips
 > >     > 
-> >     > ` pa_autoconfigure_django.py </ code>スクリプトの実行中にエラーが表示された場合は、次のような原因が考えられます。</p>
+> >     >  pa_autoconfigure_django.py </ code>スクリプトの実行中にエラーが表示された場合は、次のような原因が考えられます。</p>
 
 <ul>
 <li>PythonAnywhere APIトークンの作成を忘れている</li>
@@ -217,8 +217,8 @@ $ git push -u origin master
 
 <h1>Check out your site!</h1>
 
-<p>サイトのデフォルトページでは、ローカルコンピュータと同じように「It worked！」と表示されます。 Try adding <code>/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
-> >     > 
-> >     > Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
-> >     > 
-> >     > Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+<p>サイトのデフォルトページでは、ローカルコンピュータと同じように「It worked！」と表示されます。 URLの最後に<code> / admin / </ code>を追加すると、管理サイトに移動します。 ユーザー名とパスワードでログインすると、新しい投稿をサーバーに追加することができます。</p>
+
+<p>いくつかの投稿を作成したら、ローカルの設定（PythonAnywhereではなく）に戻ることができます。 ここから、変更を加えるためにあなたのローカルセットアップで作業する必要があります。 GitHubを開き、変更をライブWebサーバーにプルダウンします。 これにより、ライブWebサイトを破壊することなく作業して実験することができます。 かなりクールですね？！</p>
+
+<p>ふつうは、 サーバーの導入はWeb開発の最も難しい部分の1つであり、作業を開始するまで数日かかることがよくあります。 しかし、あなたは実際のインターネット上で、あなたのサイトを動かす事ができました！</p>
