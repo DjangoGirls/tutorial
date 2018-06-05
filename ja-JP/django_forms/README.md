@@ -164,7 +164,7 @@ OK,そうしたらどのようにHTMLで`post_edit.html`表すか見て下さい
 
 ## Formをsaveする
 
-Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
+`Blog/views.py` をもう一度開きます。現在は `post_new` ビューはこうなっています。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -174,9 +174,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? フォームの全てのフィールドがPOSTリクエストです。 POST の名前を他の名前に変更することはできません (それを変更する唯一の方法は method に GET を指定することですが、それがなぜ間違いであるかを話す時間がありません)
+フォームを送信する時、同じビューに戻るが、リクエストにデータがあると、POSTされます。（ブログポストとは関係ない、データをポストしている） HTMLファイル formの定義はPOSTメソッドを使うのを覚えていますか？ フォームの全てのフィールドがPOSTリクエストです。 POST の名前を他の名前に変更することはできません (それを変更する唯一の方法は method に GET を指定することですが、それがなぜ間違いであるかを話す時間がありません)
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. それでは [...] の部分を埋めていきます):
+*view</ em>には、処理する2つの状況があります。最初にページにアクセスしたときに空白のフォームが必要な場合、2番目に*view</ em>と入力したすべてのフォームデータが表示されます。 それでは [...] の部分を埋めていきます):</p> 
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -187,15 +187,14 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+` [...] </ code>のドットを記入してください。 <code> method </ code>が<code> POST </ code>の場合、フォームのデータを使って<code> PostForm </ code>を構築します。 私たちはそれを次のようにします：</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename %}blog/views.py{% endfilename %}</p>
 
-```python
-form = PostForm(request.POST)
-```
+<pre><code class="python">form = PostForm(request.POST)
+`</pre> 
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+簡単ですね! 次にフォームの値が正しいかどうかをチェックします（すべての必須フィールドが設定され、全く誤った値が保存されていないことを）form.is_valid() を使うことでチェックできます.
 
 フォームをチェックして、フォームの値が有効であれば保存できます。
 
@@ -209,9 +208,9 @@ if form.is_valid():
     post.save()
 ```
 
-基本的にここでは2つのことを行います。まず form.save でフォームを保存することと author を追加することです(まだ PostForm 内に author フィールドがありませんし、このフィールドは必須です). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+基本的にここでは2つのことを行います。まず form.save でフォームを保存することと author を追加することです(まだ PostForm 内に author フィールドがありませんし、このフィールドは必須です). commit=False は Post モデルをまだセーブしません。ではauthorを追加します。commit=False を指定せず form.save() を実行します。 ほとんどの場合、` commit = False </ code>なしで<code> form.save（）</ code>を使用しますが、この場合はそれを指定する必要があります。 <code> post.save（）</ code>は変更を保存し（作成者を追加する）、新しいブログ投稿が作成されます。</p>
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+<p>Finally, it would be awesome if we could immediately go to the <code>post_detail` page for our newly created blog post, right? To do that we need one more import:
 
 {% filename %}blog/views.py{% endfilename %}
 
