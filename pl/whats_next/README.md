@@ -17,7 +17,7 @@ Później możesz spróbować zasobów wyszczególnionych poniżej. Są one bard
 - [Oficjalny tutorial Django](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 - [Tutoriale New Coder](http://newcoder.io/tutorials/)
 - [Kurs Pythona na Code Academy](https://www.codecademy.com/en/tracks/python)
-- [Kurs HTML i kurs CSS na Code Academy](https://www.codecademy.com/tracks/web)
+- [Kurs HTML i kurs CSS na Codecademy](https://www.codecademy.com/tracks/web)
 - [Tutorial Django Carrots](https://github.com/ggcarrots/django-carrots)
 - [Książka Learn Python The Hard Way](http://learnpythonthehardway.org/book/)
 - [Wideolekcje Getting Started with Django](http://www.gettingstartedwithdjango.com/)

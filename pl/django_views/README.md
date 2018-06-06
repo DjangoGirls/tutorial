@@ -18,9 +18,9 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Nie ma tu dużo rzeczy jeszcze.
+Nie ma tu jeszcze zbyt wiele rzeczy.
 
-Pamiętaj, że linie zaczynające się od `#` to komentarze - oznacza to, że te linie nie będą uruchamiane przez Python.
+Pamiętaj, że linie zaczynające się od `#` to komentarze - oznacza to, że te linie nie będą uruchamiane przez Pythona.
 
 Utwórzmy *view* zgodnie z sugestią komentarza. Najprostszy widok może wyglądać tak:
 

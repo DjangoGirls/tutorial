@@ -10,7 +10,7 @@ Pierwszą rzeczą, której nasz blog potrzebuje, to strona wyświetlająca pojed
 
 Mamy już model `Post`, więc nie musimy już dodawać niczego do `models.py`.
 
-## Tworzenie linku w szablonie
+## Tworzenie szablonu odnośnika do detali wpisu na blogu
 
 Zaczniemy od dodania linku w pliku `blog/templates/blog/post_list.html`. Póki co powinien on wyglądać następująco: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,13 +38,13 @@ Zaczniemy od dodania linku w pliku `blog/templates/blog/post_list.html`. Póki c
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Czas by wyjaśnić co oznacza tajemnicze `{% url 'post_detail' pk=post.pk %}`. Jak można podejrzewać, zapis `{% %}` oznacza, że używamy tagów szablonu Django. Tym razem używamy takiego, który generuje dla nas adres URL!{% endraw %}
+{% raw %}Czas wyjaśnić, co oznacza tajemnicze `{% url 'post_detail' pk=post.pk %}`. Jak można podejrzewać, zapis `{% %}` oznacza, że używamy tagów szablonu Django. Tym razem używamy takiego, który generuje dla nas adres URL!{% endraw %}
 
 Fragment `post_detail` oznacza, że Django będzie oczekiwał URL w `blog/urls.py` o nazwie name=post_detail
 
-A co z `pk=post.pk`? `pk` jest skrótem od primary key (ang. klucz podstawowy), który jest unikalną nazwą dla każdego rekordu bazy danych. Ponieważ nie ustaliłyśmy czym jest klucz podstawowy w naszym modelu `Post`, Django stworzyło taki klucz dla nas (standardowo jest to liczba, która rośnie o jeden przy każdym kolejnym rekordzie, np. 1, 2, 3) i dodało go jako pole pod nazwą `pk` do każdego naszego posta. Możemy dostać się do klucza podstawowego przez wpisanie `post.pk`, tak samo jak otrzymuje dostęp do innych pól (`title`, `author`, itd.) w naszym obiekcie `Post`!
+A co z `pk=post.pk`? `pk` jest skrótem od primary key (ang. klucz podstawowy), który jest unikalną nazwą dla każdego rekordu bazy danych. Ponieważ nie ustaliłyśmy, czym jest klucz podstawowy w naszym modelu `Post`, Django stworzyło taki klucz dla nas (standardowo jest to liczba, która rośnie o jeden przy każdym kolejnym rekordzie, np. 1, 2, 3) i dodało go jako pole pod nazwą `pk` do każdego naszego posta. Możemy dostać się do klucza podstawowego przez wpisanie `post.pk`, tak samo jak otrzymujemy dostęp do innych pól (`title`, `author`, itd.) w naszym obiekcie `Post`!
 
-Teraz, gdy wejdziemy na adres http://127.0.0.1:8000/ ujrzymy błąd (co było do przewidzenia, bo nie mamy jeszcze ustawionego adresu URL ani widoku *view* dla `post_detail`). Będzie to wyglądać tak:
+Teraz, gdy wejdziemy na adres http://127.0.0.1:8000/, ujrzymy błąd (co było do przewidzenia, bo nie mamy jeszcze ustawionego adresu URL ani widoku *view* dla `post_detail`). Będzie to wyglądać tak:
 
 ![Błąd NoReverseMatch](images/no_reverse_match2.png)
 
@@ -72,7 +72,7 @@ Ta część `^post/(?P<pk>\d+)/$` wygląda strasznie, ale bez obaw – wyjaśnim
 
 - zaczyna się od `^` jeszcze raz - "początek".
 - `post/` po prostu oznacza, że po rozpoczęciu, adres URL powinien zawierać słowo **post** i **/**. Jak na razie dobrze idzie.
-- `(?P<pk>\d+)` - ta część jest trudniejsza. Oznacza ona, że Django pobierze wszystko, co umieścisz w tym miejscu i przekaże to do widoku w zmiennej o nazwie `pk`. (Zauważ, że odpowiada to nazwie jaką nadaliśmy zmiennej zawierającej klucz podstawowy powyżej w `blog/templates/blog/post_list.html`!) `\d` informuje nas, że klucz ten może zawierać tylko cyfry, nie litery (czyli wszystko pomiędzy 0 a 9). `+` oznacza, że to musi być jedna lub więcej cyfr. Czyli coś takiego: `http://127.0.0.1:8000/post//` nie jest poprawne, ale już `http://127.0.0.1:8000/post/1234567890/` jest jak najbardziej w porządku!
+- `(?P<pk>\d+)` - ta część jest trudniejsza. Oznacza ona, że Django pobierze wszystko, co umieścisz w tym miejscu i przekaże to do widoku w zmiennej o nazwie `pk`. (Zauważ, że odpowiada to nazwie, jaką nadaliśmy zmiennej zawierającej klucz podstawowy powyżej w `blog/templates/blog/post_list.html`!) `\d` i informuje nas, że klucz ten może zawierać tylko cyfry, nie litery (czyli wszystko pomiędzy 0 a 9). `+` oznacza, że to musi być jedna lub więcej cyfr. Czyli coś takiego: `http://127.0.0.1:8000/post//` nie jest poprawne, ale już `http://127.0.0.1:8000/post/1234567890/` jest jak najbardziej w porządku!
 - `/` – potrzebujemy ponownie **/**.
 - `$` – "koniec"!
 
@@ -174,7 +174,7 @@ Hura! Działa!
 
 # Czas na wdrożenie!
 
-Dobrze byłoby sprawdzić czy Twoja strona dalej będzie dobrze działać na PythonAnywhere, prawda? Spróbuj ponownie wdrożyć.
+Dobrze byłoby sprawdzić, czy Twoja strona dalej będzie dobrze działać na PythonAnywhere, prawda? Spróbuj ją ponownie wdrożyć.
 
 {% filename %}command-line{% endfilename %}
 
@@ -209,7 +209,7 @@ Zacznij od aktywacji swojego virtualenva, jeżeli nie jest on jeszcze aktywny (P
     [...]
     
 
-Komenda `manage.py collectstatic` jest trochę podobna do `manage.py migrate`. Wcześniej dokonałyśmy jakichś zmian w naszym kodzie, a teraz informujemy Django, by *zastosował* te zmiany, albo w kolekcji plików statycznych na serwerze, albo w bazie danych.
+Komenda `manage.py collectstatic` jest trochę podobna do `manage.py migrate`. Wcześniej dokonałyśmy jakichś zmian w naszym kodzie, a teraz informujemy Django, by *zastosował* te zmiany, albo w kolekcji plików statycznych na serwerze albo w bazie danych.
 
 W każdym wypadku jesteśmy gotowe przejść do podstrony [Web tab](https://www.pythonanywhere.com/web_app_setup/) i wcisnąć **Reload** (ang. odśwież).
 

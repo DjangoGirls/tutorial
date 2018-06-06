@@ -1,6 +1,6 @@
 # Formularze Django
 
-Ostatnią rzeczą jaką potrzebujemy dla naszej strony jest stworzenie przyjemnego sposobu dodawania i edytowania wpisów na bloga. Panel administracyjny (Django `admin`) jest fajny, ale raczej ciężko się go dostosowuje do niestandardowych potrzeb i ciężko poprawić jego wygląd. Z formularzami (`forms`) mamy absolutną władzę nad naszym interfejsem - możemy zbudować niemal wszystko, co nam przyjdzie do głowy!
+Ostatnią rzeczą, jaką potrzebujemy dla naszej strony, jest stworzenie przyjemnego sposobu dodawania i edytowania wpisów na blog. Panel administracyjny (Django `admin`) jest fajny, ale raczej ciężko się go dostosowuje do niestandardowych potrzeb i ciężko poprawić jego wygląd. Z formularzami (`forms`) mamy absolutną władzę nad naszym interfejsem - możemy zbudować niemal wszystko, co nam przyjdzie do głowy!
 
 Sympatyczną cechą formularzy Django jest to, że możemy je budować samodzielnie od zera lub posłużyć się formularzem modelu (`ModelForm`), który zapisze dane wynikowe w danym modelu.
 
@@ -36,11 +36,11 @@ Musimy najpierw zaimportować formularze Django (`from django import forms`) ora
 
 Dalej mamy `class Meta`, gdzie przekazujemy Django informację o tym, jaki model powinien być wykorzystany do stworzenia tego formularza (`model = Post`).
 
-I wreszcie możemy wskazać, które pole (lub pola) powinny pojawić się w naszym formularzu. W tym przypadku chcemy udostępnić tylko pola `title` (tytuł) i `text` (treść wpisu) - pole autora, czyli `author` powinno zawierać aktualnie zalogowanego użytkownika (Ciebie!), zaś data stworzenia wpisu (`created_date`) powinna być ustawiana automatycznie gdy stworzymy wpis (czyli za pomocą kodu) - zgadza się?
+I wreszcie możemy wskazać, które pole (lub pola) powinny pojawić się w naszym formularzu. W tym przypadku chcemy udostępnić tylko pola `title` (tytuł) i `text` (treść wpisu) - pole autora, czyli `author` powinno zawierać aktualnie zalogowanego użytkownika (Ciebie!), zaś data stworzenia wpisu (`created_date`) powinna być ustawiana automatycznie, gdy stworzymy wpis (czyli za pomocą kodu) - zgadza się?
 
 I to wszystko! Jedyne, co potrzebujemy teraz zrobić, to użyć naszego formularza wewnątrz *widoku* i wyświetlić go w szablonie.
 
-Oto, co za chwilę stworzymy: link do strony, adres URL, widok i szablon.
+Oto co za chwilę stworzymy: link do strony, adres URL, widok i szablon.
 
 ## Odnośnik do strony z formularzem
 
@@ -52,7 +52,7 @@ Czas otworzyć plik `blog/templates/blog/base.html`. Wewnątrz `div`-a o nazwie 
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Zauważ, że chcemy odwołać się do naszego nowego widoku `post_new`. Klasa `"glyphicon glyphicon-plus"` jest dostarczana przez bootstrap, którego używamy i wyświetli nam znak plus.
+Zauważ, że chcemy odwołać się do naszego nowego widoku `post_new`. Klasa `"glyphicon glyphicon-plus"` jest dostarczana przez bootstrap którego używamy i wyświetli nam znak plus.
 
 Po dodaniu powyższej linii Twój plik HTML powinien wyglądać następująco:
 
@@ -167,7 +167,7 @@ Czas odświeżyć stronę! Hura! Twój formularz został wyświetlony!
 
 ![Nowy formularz](images/new_form2.png)
 
-Ale zaraz zaraz! Co się stanie, gdy wpiszesz coś w pola z `tytułem` i `treścią`, a następnie spróbujesz to zapisać?
+Ale zaraz, zaraz! Co się stanie, gdy wpiszesz coś w pola z `tytułem` i `treścią`, a następnie spróbujesz to zapisać?
 
 Nic! Znów jesteśmy na tej samej stronie, a nasza treść zniknęła... a nowego wpisu nie ma. Co poszło źle?
 
@@ -273,11 +273,11 @@ Wspaniale!
 
 Teraz pokażemy Ci, jak fajne potrafią być formularze w Django. Wpis na blogu potrzebuje uzupełnionych pól `title` i `text`. W naszym modelu `Post` nie powiedzieliśmy (z wyjątkiem `published_date`), że te pola nie są wymagane, więc Django domyślnie uważa, że muszą zostać wypełnione.
 
-Spróbuj zapisać formularz bez uzupełnionych pól `title` i `text`. Zgadnij, co się stanie!
+Spróbuj zapisać formularz bez uzupełnionych pól `title` i `text`. Zgadnij, co się stanie?
 
 ![Walidacja formularza](images/form_validation2.png)
 
-Django dba o walidację pól w naszym formularzu, upewniając się, czy są uzupełnione poprawnie. Prawda że niesamowite?
+Django dba o walidację pól w naszym formularzu, upewniając się, czy są uzupełnione poprawnie. Prawda, że niesamowite?
 
 ## Edycja formularza
 
@@ -396,7 +396,7 @@ Dodamy kolejny tag `{% if %}`, który sprawi, że link będzie widoczny tylko dl
 
 Ten `{% if %}` spowoduje, że link zostanie wysłany do przeglądarki tylko wtedy, kiedy użytkownik chcący wyświetlić tę stronę jest zalogowany. To nie chroni tworzenia wpisów w 100%, ale jest to dobry pierwszy krok. Zagadnieniu bezpieczeństwa poświęcimy więcej miejsca w rozszerzeniu do tego kursu.
 
-Pamiętasz ikonkę edycji, która przed chwilą dodałyśmy do naszej strony szczegółów? Chcemy też dodać tą samą zmianę tutaj, tak by inne osoby nie były w stanie edytować istniejących postów.
+Pamiętasz ikonkę edycji, która przed chwilą dodałyśmy do naszej strony szczegółów? Chcemy też dodać tę samą zmianę tutaj tak, by inne osoby nie były w stanie edytować istniejących postów.
 
 Otwórz `blog/templates/blog/post_detail.html` i znajdź poniższą linijkę:
 
@@ -416,7 +416,7 @@ Zamień ją na:
 {% endif %}
 ```
 
-Ponieważ jesteś najprawdopodobniej zalogowana, jeżeli odświeżysz stronę nie zobaczysz żadnej zmiany. Podejrzyj stronę w innej przeglądarce lub chociaż w trybie incognito (nazywanym "InPrivate" w Windows Edge) i zobaczysz, że link ten i ikonka się nie pojawiają!
+Ponieważ jesteś najprawdopodobniej zalogowana, jeżeli odświeżysz stronę, nie zobaczysz żadnej zmiany. Podejrzyj stronę w innej przeglądarce lub chociaż w trybie incognito (nazywanym "InPrivate" w Windows Edge) i zobaczysz, że ten link i ikonka się nie pojawiają!
 
 ## Jeszcze jedno: czas na wdrożenie!
 

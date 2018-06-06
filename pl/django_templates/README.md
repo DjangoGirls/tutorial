@@ -101,6 +101,6 @@ Dobrze byłoby sprawdzić, czy twoja strona wciąż będzie działała w publicz
 
 Gratulacje! Teraz możesz dodać nowy wpis do swojego administratora Django (pamiętaj, aby dodać publish_date!). Upewnij się, że jesteś administratorem Django dla swojej strony pythonanywhere, https://yourname.pythonanywhere.com/admin. Następnie odśwież stronę, aby sprawdzić, czy pojawia się tam wiadomość.
 
-Poszło jak z płatka? Jesteśmy dumne! Odejdź na chwilkę od komputera - zasłużyłaś na przerwę. :)
+Poszło jak z płatka? Jesteśmy dumne! Odejdź na chwilkę od komputera - zasłużyłaś na przerwę! :)
 
 ![Rysunek 13.4](images/donut.png)

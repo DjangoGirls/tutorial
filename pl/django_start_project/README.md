@@ -4,13 +4,13 @@
 > 
 > Fragmenty tego rozdziału są oparte o [tutorial django-marcador](http://django-marcador.keimlink.de/) na licencji Creative Commons Attribution-ShareAlike International 4.0. Tutorial django-marcador jest chroniony prawami autorskimi przez Markusa Zapke-Gründemanna i in.
 
-Mamy zamiar stworzyć prostego bloga!
+Mamy zamiar stworzyć prosty blog!
 
 Pierwszy krok, który trzeba wykonać, to utworzenie nowego projektu Django. To oznacza, że skorzystamy z dostarczonych przez Django skryptów, które utworzą za nas szkielet projektu Django. Ten szkielet to zbiór katalogów i plików, których będziemy używać później.
 
 Nazwy niektórych plików i katalogów są bardzo ważne dla Django. Nie powinnaś zmieniać nazw plików, które zostaną utworzone. Przenoszenie ich w inne miejsce też nie jest dobrym pomysłem. Django wymaga zachowania pewnej struktury, by móc szybko znaleźć potrzebne rzeczy.
 
-> Pamiętaj, aby uruchamiać wszystko w virtualenv. Jeśli nie widzisz prefiksu `(myvenv)` w konsoli, to znaczy że musisz uruchomić swój virtualenv. Wyjaśniłyśmy, jak to zrobić w rozdziale **Instalacja Django** w części **Praca z virtualenv**. Wystarczy wpisać `myvenv\Scripts\activate` w systemie Windows lub `source myvenv/bin/activate`, jeśli używasz Mac OS X lub Linux.
+> Pamiętaj, aby uruchamiać wszystko w virtualenvie. Jeśli nie widzisz prefiksu `(myvenv)` w konsoli, to znaczy że musisz uruchomić swój virtualenv. Wyjaśniłyśmy, jak to zrobić w rozdziale **Instalacja Django** w części **Praca z virtualenv**. Wystarczy wpisać `myvenv\Scripts\activate` w systemie Windows lub `source myvenv/bin/activate`, jeśli używasz Mac OS X lub Linux.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
@@ -23,7 +23,7 @@ Dla systemów MacOS X lub Linux, wpisz teraz do swojej konsoli następującą ko
 
 > Kropka `.` ma kluczowe znaczenie, ponieważ dzięki niej skrypt wie, że ma zainstalować Django w bieżącym katalogu (kropka `.` to taka skrócona nazwa bieżącego katalogu).
 > 
-> **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin`. `(myvenv) ~/djangogirls$` są tutaj tylko po to, by pokazać Ci przykład linii poleceń i tego jak ona będzie wyglądała, gdy będziesz do niej wpisywać polecenia.
+> **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin`. `(myvenv) ~/djangogirls$` są tutaj tylko po to, by pokazać Ci przykład wiersza poleceń i tego, jak będzie on wyglądał, gdy będziesz wpisywać polecenia.
 
 <!--endsec-->
 
@@ -38,7 +38,7 @@ Dla systemu Windows wpisz teraz do swojej konsoli następującą komendę. **Nie
 
 > Kropka `.` ma kluczowe znaczenie, ponieważ dzięki niej skrypt wie, że ma zainstalować Django w bieżącym katalogu (kropka `.` to taka skrócona nazwa bieżącego katalogu).
 > 
-> **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin.exe`. `(myvenv) C:\Users\Name\djangogirls>` są tutaj tylko po to, by pokazać Ci przykład znaku zachęty linii poleceń, który będzie Ciebie zapraszał, byś wpisała komendę.
+> **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin.exe`. `(myvenv) C:\Users\Name\djangogirls>` są tutaj tylko po to, by pokazać Ci przykład znaku zachęty wiersza poleceń, który będzie Ciebie zapraszał, byś wpisała komendę.
 
 <!--endsec-->
 
@@ -53,7 +53,7 @@ Dla systemu Windows wpisz teraz do swojej konsoli następującą komendę. **Nie
             __init__.py
     
 
-> **Uwaga**: w strukturze katalogów, możesz zobaczyć również katalog `venv`, który stworzyliśmy wcześniej.
+> **Uwaga**: w strukturze katalogów, możesz zobaczyć również katalog `venv`, który stworzyłyśmy wcześniej.
 
 `manage.py` jest skryptem ułatwiającym zarządzanie witryną. Za jego pomocą, oprócz wielu innych rzeczy, możemy uruchomić serwer na naszym komputerze bez potrzeby instalowania czegokolwiek.
 
@@ -67,7 +67,7 @@ Na razie zapomnijmy o innych plikach - nie będziemy ich modyfikować. Jedyne, o
 
 Wprowadźmy parę zmian w pliku `mysite/settings.py`. Otwórz go za pomocą edytora kodu, który zainstalowałaś wcześniej.
 
-**Uwaga**: należy pamiętać, że `settings.py` jest zwykłym plikiem, jak każdy inny. Otworzysz go w edytorze kodu, przy użyciu menu "plik-> Otwórz". Powinieneś otrzymać zwykłe okno, w którym możesz przejść do pliku `settings.py` i zaznaczyć go. Możesz również otworzyć plik, przechodząc do folderu djangogirls na pulpicie, klikając na niego prawym przyciskiem myszy. Następnie wybierz edytor kodu z listy. Wybór edytora jest ważny, ponieważ możesz mieć zainstalowane inne programy, które mogą otworzyć plik, ale nie pozwolą ci go edytować.
+**Uwaga**: należy pamiętać, że `settings.py` jest zwykłym plikiem, jak każdy inny. Otworzysz go w edytorze kodu, przy użyciu menu "plik-> Otwórz". Powinnaś otrzymać zwykłe okno, w którym możesz przejść do pliku `settings.py` i zaznaczyć go. Możesz również otworzyć plik, przechodząc do folderu djangogirls na pulpicie, klikając na niego prawym przyciskiem myszy. Następnie wybierz edytor kodu z listy. Wybór edytora jest ważny, ponieważ możesz mieć zainstalowane inne programy, które mogą otworzyć plik, ale nie pozwolą Ci go edytować.
 
 Fajnie byłoby posługiwać się na naszej stronie właściwą strefą czasową. Przejdź do [listy stref czasowych w Wikipedii](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) i skopiuj właściwą strefę czasową (TZ) (np. `Europe/Warsaw`).
 
@@ -152,7 +152,7 @@ Aby utworzyć bazę danych dla naszego bloga, wykonajmy następujące polecenie 
 
 I to wszystko! Czas uruchomić serwer i zobaczyć, czy nasza strona działa!
 
-## Uruchamianie serwera www
+## Uruchamianie serwera WWW
 
 Musisz znajdować się w katalogu zawierającym plik `manage.py` (katalog `djangogirls`). W konsoli możemy uruchomić serwer za pomocą polecenia `python manage.py runserver`:
 
@@ -175,7 +175,7 @@ Jeśli pracujesz na Windowsie i zobaczysz w tym momencie `UnicodeDecodeError`, u
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Teraz wszystko, co musisz zrobić, to sprawdzić, czy Twoja strona działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer lub cokolwiek innego) i wprowadź ten adres:
+Teraz wszystko, co musisz zrobić, to sprawdzić, czy Twoja strona działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer lub jakąkolwiek inną) i wprowadź ten adres:
 
 {% filename %}browser{% endfilename %}
 

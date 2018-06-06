@@ -12,7 +12,7 @@ Jedyne, co potrzebujesz zrobić, to wybrać katalog, w którym chcesz utworzyć 
 
 > **UWAGA:** W Windowsie upewnij się, że katalog ten nie zawiera znaków akcentowanych lub specjalnych; Jeśli Twoja nazwa użytkownika zawiera znaki akcentowane, użyj innego katalogu, na przykład `C:\djangogirls`.
 
-Na potrzeby kursu będziemy stwórzmy nowy katalog `djangogirls` w Twoim katalogu domowym:
+Na potrzeby kursu będziemy tworzyć nowy katalog `djangogirls` w Twoim katalogu domowym:
 
 {% filename %}command-line{% endfilename %}
 

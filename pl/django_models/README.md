@@ -30,7 +30,7 @@ Nasz `Kot` ma określone czynności: `mrucz`, `podrap`, `jedz` (i w tym przypadk
 
 Czyli w zasadzie chodzi o to, że opisujemy prawdziwe rzeczy w kodzie za pomocą właściwości (zwanych `właściwościami obiektu`) oraz czynności (zwanych `metodami`).
 
-W takim razie jak będzie wyglądał model naszego postu na blogu? Chcemy zbudować bloga, zgadza się?
+W takim razie jak będzie wyglądał model naszego postu na blogu? Chcemy zbudować blog, zgadza się?
 
 Musimy sobie odpowiedzieć na pytanie: Czym jest post na blogu? Jakie powinien mieć właściwości?
 
@@ -142,7 +142,7 @@ class Post(models.Model):
 
 > Upewnij się, że używasz dwóch znaków podkreślenia (`_`) po obu stronach `str`. W Pythonie używa się ich bardzo często i czasem nazywa się je "dunder" (skrót od angielskiej nazwy: "double-underscore").
 
-Wygląda przerażająco, prawda? Ale nie martw się - będziemy tłumaczyć co te linijki znaczą!
+Wygląda przerażająco, prawda? Ale nie martw się - będziemy tłumaczyć, co te linijki znaczą!
 
 Wszystkie wiersze zaczynające się od `from` lub `import` są wierszami dodającymi jakieś elementy z innych plików. Czyli zamiast kopiowania i wklejania tych samych treści w każdym pliku, możemy po prostu zawrzeć ich fragmenty za pomocą `from... import ...`.
 
@@ -152,7 +152,7 @@ Wszystkie wiersze zaczynające się od `from` lub `import` są wierszami dodają
 - `Post` to nazwa naszego modelu. Możemy nadać mu inną nazwę (bez polskich liter, znaków specjalnych i spacji). Zawsze zaczynaj nazwę modelu wielką literą.
 - `models.Model` oznacza, że nasz obiekt Post jest modelem Django. W ten sposób Django wie, że powinien go przechowywać w bazie danych.
 
-Teraz dodamy właściwości, o których wspomniałyśmy już wcześniej: `title` (tytuł), `text` (treść wpisu), `created_date` (data utworzenia), `published_date` (data publikacji) oraz `author` (autor). Do tego celu potrzebujemy określić typ każdego pola (Czy to jest tekst? Liczba? Data? Odwołanie do innego obiektu, np. Użytkownika?)
+Teraz dodamy właściwości, o których wspomniałyśmy już wcześniej: `title` (tytuł), `text` (treść wpisu), `created_date` (data utworzenia), `published_date` (data publikacji) oraz `author` (autor). Do tego celu potrzebujemy określić typ każdego pola (Czy to jest tekst? Liczba? Data? Odwołanie do innego obiektu, np. użytkownika?)
 
 - `models.CharField` - tak definiujemy tekst z ograniczoną liczbą znaków.
 - `models.TextField` - a to nadaje się do dłuższych tekstów bez ograniczeń w ilości znaków. Dla treści wpisu będzie idealne, prawda?

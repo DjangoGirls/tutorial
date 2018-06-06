@@ -1,10 +1,10 @@
-# URLe Django
+# URL-e Django
 
-Zaczynamy budować naszą pierwszą stronę internetową: będzie to miejsce dla twojego bloga! Ale zanim zaczniemy, nauczmy się trochę na temat URLów w Django.
+Zaczynamy budować naszą pierwszą stronę internetową: będzie to miejsce dla twojego bloga! Ale zanim zaczniemy, nauczmy się trochę na temat URL-i w Django.
 
 ## Czym jest URL?
 
-Adres URL to po prostu adres w internecie. Możesz zobaczyć URLa za każdym razem, gdy odwiedzasz stronę internetową - jest on widoczny w pasku adresu przeglądarki internetowej. (Tak! `127.0.0.1:8000` jest adresem URL! Też `https://djangogirls.org` jest adresem URL.)
+Adres URL to po prostu adres w internecie. Możesz zobaczyć URL-a za każdym razem, gdy odwiedzasz stronę internetową - jest on widoczny w pasku adresu przeglądarki internetowej. (Tak! `127.0.0.1:8000` jest adresem URL! Też `https://djangogirls.org` jest adresem URL.)
 
 ![Adres URL](images/url.png)
 
@@ -31,7 +31,7 @@ urlpatterns = [
 
 Jak zauważyłaś, Django coś nam już tu umieścił.
 
-Linie między potrójnymi cudzysłowami (` '''` lub `""" `) nazywa się docstrings - możesz zapisać je na górze pliku, klasy lub metody, aby opisać, co robi. Nie będą one uruchamiane przez Python.
+Linie między potrójnymi cudzysłowami (` '''` lub `""" `) nazywa się docstrings - możesz zapisać je na górze pliku, klasy lub metody, aby opisać, co robi. Nie będą one uruchamiane przez Pythona.
 
 Adres URL panelu administracyjnego, który odwiedzałaś w poprzednim rozdziale, jest już tutaj dodany:
 
@@ -70,7 +70,7 @@ Pisanie osobnych widoków dla każdego numeru z osobna byłoby frustrujące. Z w
 
 Czas utworzyć nasz pierwszy adres URL! Chcemy, aby adres 'http://127.0.0.1:8000/' był stroną główną naszego bloga i wyświetlał listę wpisów.
 
-Zależy nam również, aby zachować porządek w pliku `mysite/urls.py`, dlatego zaimportujemy URLe z naszej aplikacji `blog` do głównego pliku `mysite/urls.py`.
+Zależy nam również, aby zachować porządek w pliku `mysite/urls.py`, dlatego zaimportujemy URL-e z naszej aplikacji `blog` do głównego pliku `mysite/urls.py`.
 
 Śmiało, dodaj linię, która zaimportuje `blog.urls`. Zauważ też, że używamy funkcji `include`, więc trzeba będzie ją też zaimportować.
 
@@ -116,7 +116,7 @@ urlpatterns = [
 ]
 ```
 
-Jak widzisz, teraz przyporządkowujemy widok (`view`) o nazwie `post_list` do URL `^$`. To wyrażenie regularne będzie dopasowywać `^` (początek) po którym następuje `$` (koniec) - więc tylko pusty ciąg znaków będzie zgodny. I to się zgadza, ponieważ dla mechanizmów rozróżniających adresy w Django 'http://127.0.0.1:8000/' nie jest częścią adresu URL. Ten wzorzec będzie wskazówką dla Django, że `views.post_list` jest właściwym miejscem dla każdego, kto wejdzie na stronę poprzez adres 'http://127.0.0.1:8000/'.
+Jak widzisz, teraz przyporządkowujemy widok (`view`) o nazwie `post_list` do URL `^$`. To wyrażenie regularne będzie dopasowywać `^` (początek) po którym następuje `$` (koniec) - więc tylko pusty ciąg znaków będzie zgodny. I to się zgadza, ponieważ dla mechanizmów rozróżniających adresy w Django, 'http://127.0.0.1:8000/' nie jest częścią adresu URL. Ten wzorzec będzie wskazówką dla Django, że `views.post_list` jest właściwym miejscem dla każdego, kto wejdzie na stronę poprzez adres 'http://127.0.0.1:8000/'.
 
 Ostatnia część, `name='post_list` jest nazwą URL, która będzie używana do zidentyfikowania widoku. Nazwa może być taka sama jak nazwa widoku albo kompletnie inna. W projekcie będziemy później używać nazw URL, więc ważne jest nazwanie każdego URL-a w aplikacji. Powinnyśmy również starać się używać nazw URL unikalnych i prostych do zapamiętania.
 
