@@ -1,8 +1,8 @@
 # Django views – time to create!
 
-それでは前の章の続きをやりましょう。確かビューの作成がまだだったので、エラーになっていましたね! :)
+それでは前の章の続きをやりましょう。確かビューの作成がまだだったので、エラーになっていましたね！:)
 
-私たちは*view*にアプリケーションのロジックを置きます。 それは前に作成した `モデル` から情報を取得し、それを `テンプレート` に引き渡します。 テンプレートは次の章で作成します。 Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*ビュー* はアプリのロジックを書いていくところです。 ビューは要求に応じて `model` から情報を取得し `template` に渡します。 テンプレートは次の章で作成します。 Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
 ビューは、`views.py` ファイルに記述します。私たちの場合 *ビュー* を `blog/views.py` に書くことになります。
 
