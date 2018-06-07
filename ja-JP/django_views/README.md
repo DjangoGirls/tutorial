@@ -18,11 +18,11 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Not too much stuff here yet.
+まだ何もないですね。
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+`#` で始まる行は、コメントです。この行に書いたものはPythonは無視します。
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+それでは、次のようなちょっとした *ビュー* を作ってみましょう。
 
 {% filename %}blog/views.py{% endfilename %}
 
