@@ -2,13 +2,13 @@
 
 それでは前の章の続きをやりましょう。確かビューの作成がまだだったので、エラーになっていましたね！:)
 
-*ビュー* はアプリのロジックを書いていくところです。 ビューは要求に応じて `model` から情報を取得し `template` に渡します。 テンプレートは次の章で作成します。 Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*ビュー* はアプリのロジックを書いていくところです。 ビューは要求に応じて `model` から情報を取得し `template` に渡します。 テンプレートは、次の章で作ります。 ビューは、Pythonで記述されているだけです。**Introduction to Python** の章でやったことよりも、ちょっと複雑なだけですよ。
 
-ビューは、`views.py` ファイルに記述します。私たちの場合 *ビュー* を `blog/views.py` に書くことになります。
+ビューは、`views.py` に記述します。私たちの場合 `blog/views.py` に書くことになります。
 
 ## blog/views.py
 
-OK それでは早速そのファイル（blog/views.py)を開いてみましょう。
+では、早速 blog/views.py を開いてみましょう。
 
 {% filename %}blog/views.py{% endfilename %}
 
