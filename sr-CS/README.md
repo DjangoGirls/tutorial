@@ -8,15 +8,15 @@
 
 Dobrodošli u Django Girls Priručnik! Raduje nas što si ovde :) U ovom priručniku ćemo te odvesti na putovanje gde ćeš sagledati šta se krije pod nazivom internet tehnologija. Omogućićemo ti da stekneš uvid u sve deliće koji zajedno čine internet onakvim kakvim ga mi znamo.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+I kao što to obično biva sa nepoznanicama, i ovo će biti avantura - ali ne brini: pošto si već sakupila hrabrost da budeš ovde, mi znamo da ćeš biti sasvim u redu :)
 
-## Introduction
+## Uvod
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Da li si ikada imala osećaj da se svet sve više i više svodi na tehnologije koje ti (još) nisu bliske? Da li si se ikada pitala kako da napraviš internet stranicu, ali nikada nisi bila dovoljno motivisana da zaista počneš? Da li si ikada pomislila da je svet softvera za tebe prekomplikovan čak i da počneš da radiš nešto samostalno?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+E, pa, dobre vesti za tebe! Programiranje nije tako teško kakvim se čini i mi želimo da ti pokažemo koliko zanimljivo može da bude.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Ovaj priručnik te neće magijom pretvoriti u programerku. Ako želiš da postaneš dobra u programiranju, potrebni su meseci, pa čak i godine učenja i vežbe. Ali mi želimo da ti pokažemo da programiranje ili kreiranje internet stranica nije tako komplikovano kakvim se čini. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
 
 We hope that we'll be able to make you love technology as much as we do!
 
