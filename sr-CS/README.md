@@ -22,19 +22,19 @@ Nadamo se da ćemo učiniti da zavoliš tehnologiju onoliko koliko je mi volimo!
 
 ## Šta ćeš naučiti iz ovog priručnika?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Kada budeš završila sa ovim priručnikom, imaćeš jednu malu internet aplikaciju koja zapravo radi: svoj blog. Pokazaćemo ti kako da je objaviš na internetu, tako da drugi mogu da vide tvoj rad!
 
-It will (more or less) look like this:
+Tvoj blog će (manje-više) izgledati ovako:
 
 ![Slika 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Ako samostalno prelaziš materiju u ovom priručniku i nemaš instruktora koji bi ti pomogao u slučaju da naiđeš na problem, imamo sistem ćaskanja za tebe: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Pitali smo naše instruktore i prethodne učesnike da se sa vremena na vreme nađu drugima i pomognu im sa priručnikom! Nemoj se ustručavati ni plašiti da postaviš pitanje ovde!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+OK, [hajde da krenemo od početka...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Praćenje priručnika kod kuće
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Neverovatno je učestvovati u Django Girls radionici, ali svesni smo da to nije uvek moguće. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
