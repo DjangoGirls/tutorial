@@ -16,11 +16,11 @@ Da li si ikada imala osećaj da se svet sve više i više svodi na tehnologije k
 
 E, pa, dobre vesti za tebe! Programiranje nije tako teško kakvim se čini i mi želimo da ti pokažemo koliko zanimljivo može da bude.
 
-Ovaj priručnik te neće magijom pretvoriti u programerku. Ako želiš da postaneš dobra u programiranju, potrebni su meseci, pa čak i godine učenja i vežbe. Ali mi želimo da ti pokažemo da programiranje ili kreiranje internet stranica nije tako komplikovano kakvim se čini. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Ovaj priručnik te neće magijom pretvoriti u programerku. Ako želiš da postaneš dobra u programiranju, potrebni su meseci, pa čak i godine učenja i vežbe. Ali mi želimo da ti pokažemo da programiranje ili kreiranje internet stranica nije tako komplikovano kakvim se čini. Pokušaćemo da objasnimo različite deliće što bolje možemo, tako da se ne bi bila zastrašena tehnologijom.
 
-We hope that we'll be able to make you love technology as much as we do!
+Nadamo se da ćemo učiniti da zavoliš tehnologiju onoliko koliko je mi volimo!
 
-## What will you learn during the tutorial?
+## Šta ćeš naučiti iz ovog priručnika?
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
