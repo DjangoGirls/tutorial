@@ -34,9 +34,9 @@ OK, [hajde da krenemo od početka...](./how_the_internet_works/README.md)
 
 ## Praćenje priručnika kod kuće
 
-Neverovatno je učestvovati u Django Girls radionici, ali svesni smo da to nije uvek moguće. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Neverovatno je učestvovati u Django Girls radionici, ali svesni smo da to nije uvek moguće. Zato te podstičemo da pokušaš da pratiš ovaj priručnik kod kuće. Za čitateljke kod kuće, trenutno pripremamo video zapise koji će vam olakšati da pratite ovaj priručnik na svoju ruku. Ovo je i dalje nešto na čemu radimo, ali sve više materijala će uskoro biti pokriveno na YouTube kanalu [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-In every chapter already covered, there is a link that points to the correct video.
+U svakom poglavlju koje je već pokriveno, postoji link koji ćete uputiti na odgovarajući video.
 
 ## About and contributing
 
