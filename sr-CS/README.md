@@ -38,7 +38,7 @@ Neverovatno je učestvovati u Django Girls radionici, ali svesni smo da to nije 
 
 U svakom poglavlju koje je već pokriveno, postoji link koji ćete uputiti na odgovarajući video.
 
-## About and contributing
+## O priručniku i doprinosima
 
 This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
