@@ -199,7 +199,7 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 * [PythonAnywhereのコンソールページ](https://www.pythonanywhere.com/consoles/)を開き、自分の**Bash コンソール画面**を選ぶ (または、新たにコンソール画面を作成する)。続いて、動作させる:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
