@@ -199,7 +199,7 @@ Po tom, čo sme to dokončili, nahráme (push) naše zmeny na Github:
 
 * Otvor [konzolovú stránku PythonAnywhere](https://www.pythonanywhere.com/consoles/) a prejdi do svojej **Bash konzoly** (alebo naštartuj novú). Potom zadaj:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
