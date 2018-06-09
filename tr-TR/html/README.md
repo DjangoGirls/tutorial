@@ -199,7 +199,7 @@ Bunu bir kez yapıp, değişikliklerimizi GitHub'a yükledik (ittik):
 
 * [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/)sayfasını ve **Bash console** u açalım (ya da yeni bir tane açalım). Sonra da çalıştıralım:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
