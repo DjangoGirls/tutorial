@@ -199,7 +199,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 * Nyisd meg a [PythonAnywhere konzol oldalát](https://www.pythonanywhere.com/consoles/) és menj a **Bash console**-odra (vagy indíts egy újat). Aztán futtasd ezt:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
