@@ -199,7 +199,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 * เปิด [หน้าคอนโซล PythonAnywhere](https://www.pythonanywhere.com/consoles/) และไปยัง **Bash console** ของคุณ (หรือเริ่มอันใหม่) จากนั้นใช้คำสั่ง:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
