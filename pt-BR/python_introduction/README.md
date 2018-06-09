@@ -12,9 +12,9 @@ Let's write some code!
 
 Para começar a trabalhar com Python, nós precisamos abrir uma * linha de comando* no seu computador. Você provavelmente já sabe como fazer isso - aprendeu no capítulo [ Introdução à Linha de Comando ](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+Assim que estiver pronto, siga as instruções abaixo.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Queremos abrir um console do Python, então digite `python` no Windows ou `python3` no Mac OS/Linux e pressione `enter`.
 
 {% filename %}command-line{% endfilename %}
 
