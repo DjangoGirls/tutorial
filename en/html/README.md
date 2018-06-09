@@ -197,7 +197,7 @@ $ git push
 
 * Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
 $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
 $ git pull

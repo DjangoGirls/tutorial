@@ -199,7 +199,7 @@ Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
 * Otwórz [stronę konsoli na PythonAnywhere](https://www.pythonanywhere.com/consoles/) i przejdź do swojej **Bash console** (czyli po polsku "konsoli Bash") albo otwórz nową. Wpisz do niej:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
