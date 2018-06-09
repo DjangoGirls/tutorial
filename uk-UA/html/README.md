@@ -199,7 +199,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 * Відкрийте [сторінку з терміналами на PythonAnywhere](https://www.pythonanywhere.com/consoles/) і переключіться на вже запущений **Bash термінал** (або запустіть новий). Далі, наберіть команди:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
