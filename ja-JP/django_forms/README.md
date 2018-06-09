@@ -361,17 +361,16 @@ Djangoのフォームについての詳細を知りたい場合、Django Project
 
 ## セキュリティ
 
-リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 Let's make it so the button shows up for you but not for anyone else.
+リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+` blog / templates / blog / base.html </ code>で、<code> page-header </ code> <code> div </ code>とそれ以前に入力したアンカータグを見つけます。 これは次のようになります。</p>
 
-{% filename %}blog/templates/blog/base.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
 
-```html
-<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-```
+<pre><code class="html">{% filename %}blog/templates/blog/base.html{% endfilename %}
+`</pre> 
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+これに` {％if％} </ code>タグを追加すると、管理者にログインしているユーザーのみにリンクを表示します。 今は、あなただけです！ これで、<code><button>` タグは以下のようになります：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -381,19 +380,18 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+この` {％if％} </ code>は、ページをリクエストしているユーザーがログインしている場合にのみ、リンクがブラウザに送信されるようにします。 これは新しい投稿の作成を完全に保護するものではありませんが、それは良い第一歩です。 私たちは拡張レッスンでより多くのセキュリティをカバーします。</p>
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+<p>詳細ページに追加した編集アイコンを覚えていますか？ 同じ変更を追加したいので、他の人が既存の投稿を編集することはできません。</p>
 
-Open `blog/templates/blog/post_detail.html` and find this line:
+<p>blog/templates/blog/post_detail.html を開いて次の行を追加します:</p>
 
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_detail.html{% endfilename %}</p>
 
-```html
-<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-```
+<pre><code class="html"><a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+`</pre> 
 
-Change it to this:
+これに変更してください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -403,7 +401,7 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+あなたがログインしている可能性が高いので、ページを更新すると、別のものは表示されません。 ただし、別のブラウザやシークレットウィンドウ（Windows Edgeでは「InPrivate」と呼ばれます）にページを読み込むと、リンクが表示されず、アイコンも表示されません。
 
 ## もう一つ: deployの時間です!
 
@@ -429,8 +427,8 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
 
 * 最後に、Webタブに行って、リロードします.
 
-And that should be it! Congrats :)
+そしてdeployします! おめでとうございます :)
