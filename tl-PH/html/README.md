@@ -199,7 +199,7 @@ Sa sandaling nagawa na natin iyan, i-a-upload natin (ipasa) ang ating mga pagbab
 
 * Buksan ang [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) at pumunta sa iyong **Bash console** (o magsimula ng panibago). Pagkatapos ay patakbuhin ang:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
