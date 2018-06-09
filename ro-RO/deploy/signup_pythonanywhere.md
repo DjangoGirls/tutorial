@@ -1,8 +1,8 @@
-Înregistreză-te pentru un cont „Beginner” pe PythonAnywhere:
+Înregistreză-te pentru un cont "Beginner" pe PythonAnywhere:
 
-* [www.pythonanywhere.com](https://www.pythonanywhere.com/)
+* [https://www.pythonanywhere.com/registration/register/beginner/](https://www.pythonanywhere.com/)
 
-> **Notă** Când îți alegi numele de utilizator aici, ține minte că adresa URL a blogului tău va lua forma de `numeutilizator.pythonanywhere.com`, așa că alege ori propia ta poreclă sau un nume care spune despre ce va fi blogul tău.
+> **Notă** Când îți alegi numele de utilizator aici, ține minte că adresa URL a blogului tău va lua forma de `numeutilizator.pythonanywhere.com`, așa că alege ori propria ta poreclă sau un nume care spune despre ce va fi blogul tău.
 
 ## Crearea unui token API pe PythonAnywhere
 
