@@ -210,15 +210,14 @@ if form.is_valid():
 
 基本的にここでは2つのことを行います。まず form.save でフォームを保存することと author を追加することです(まだ PostForm 内に author フィールドがありませんし、このフィールドは必須です). commit=False は Post モデルをまだセーブしません。ではauthorを追加します。commit=False を指定せず form.save() を実行します。 ほとんどの場合、` commit = False </ code>なしで<code> form.save（）</ code>を使用しますが、この場合はそれを指定する必要があります。 <code> post.save（）</ code>は変更を保存し（作成者を追加する）、新しいブログ投稿が作成されます。</p>
 
-<p>Finally, it would be awesome if we could immediately go to the <code>post_detail` page for our newly created blog post, right? To do that we need one more import:
+<p>最後に、新しく作成された記事の post_detail ページを表示できれば良いですよね? そのために次のインポートを追加します:</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename %}blog/views.py{% endfilename %}</p>
 
-```python
-from django.shortcuts import redirect
-```
+<pre><code class="python">from django.shortcuts import redirect
+`</pre> 
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+ファイルの先頭に追加します。これでようやく、新しく作成されたポストのための post_detail ページに移動する処理を書けます。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -226,9 +225,9 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. この view では pk 変数が必須であることを覚えていますか? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+blog.views.post_detail は新しく作成されたポストのために post_detail ページに移動するためのビューです。 この view では pk 変数が必須であることを覚えていますか? post では新しいブログ記事が作成されます。
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+OK, たくさんのことを説明しました。全体の view は以下のようになります。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -247,7 +246,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-では動作確認してみます。 Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+では動作確認してみます。 http://127.0.0.1:8000/post/new/ に行き、 title と text を追加し、保存します。 The new blog post is added and we are redirected to the `post_detail` page!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
