@@ -199,7 +199,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 * [PythonAnywhere 콘솔 페이지](https://www.pythonanywhere.com/consoles/)를 열고 **배시 콘솔** (또는 새로운 창)을 준비합니다. 그 다음, 명령어를 입력합니다. :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
