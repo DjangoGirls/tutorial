@@ -173,9 +173,9 @@ Then run `pip install django` to install Django.
 ```
 (myvenv) ~$ pip install django
 Collecting django
-  Downloading Django-2.0.1-py2.py3-none-any.whl (6.8MB)
+  Downloading Django-2.0.6-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
-Successfully installed django-2.0.1
+Successfully installed django-2.0.6
 ```
 
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
