@@ -246,21 +246,21 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-では動作確認してみます。 http://127.0.0.1:8000/post/new/ に行き、 title と text を追加し、保存します。 The new blog post is added and we are redirected to the `post_detail` page!
+では動作確認してみます。 http://127.0.0.1:8000/post/new/ に行き、 title と text を追加し、保存します。 新しいブログ記事が追加され、post_detail にリダイレクトされます！
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+おそらくあなたは日付が設定されていないことに気づいたことでしょう。それについては Django Girls Tutorial: Extensions 内の publish button をみてください。
 
 素晴らしい！
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. その問題は一時的に解決します。 メインチュートリアルの後 Homework: add security to your website! の章に恒久的な対策がありますので宿題として取り組んでみてください。
+> Djangoの管理インターフェースを使用しているので、システムは現在ログインしています。 いくつかの状況ではログアウト状態になることがあります(ブラウザを閉じる、DBを再起動するなど..)。 投稿を作成するときに、ログインユーザーがわからないというエラーが発生した場合は、管理ページhttp://127.0.0.1:8000/adminにアクセスして再度ログインしてください。 その問題は一時的に解決します。 メインチュートリアルの後 Homework: add security to your website! の章に恒久的な対策がありますので宿題として取り組んでみてください。
 
 ![Logged in error](images/post_create_error.png)
 
 ## フォームのバリデーション(検証)
 
-ここではDjangoのフォームのクールなところを紹介します。 ブログのポストは title と text のフィールドが必要です。 In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+ここではDjangoのフォームのクールなところを紹介します。 ブログのポストは title と text のフィールドが必要です。 Post モデルでは、これらのフィールドがなくてもよいとは書いておらず(デフォルトの値が設定されている published_date とは対照的に)、Djangoではその場合、それらのフィールドには何らかの値が設定されないとエラーが起こるようになっています。
 
-Try to save the form without `title` and `text`. Guess what will happen!
+title と text を入力せずに保存してみましょう。何が起こるでしょうか?
 
 ![フォームのバリデーション(検証)](images/form_validation2.png)
 
@@ -268,9 +268,9 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 
 ## フォームの編集
 
-今、私たちは新しいフォームを追加する方法を知っています。 しかし既存のデータを編集するためはどうすれば良いのでしょうか? それは先ほど行ったことと非常に似ています。 すぐにいくつかの重要なものを作成してみましょう。 (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+今、私たちは新しいフォームを追加する方法を知っています。 しかし既存のデータを編集するためはどうすれば良いのでしょうか? それは先ほど行ったことと非常に似ています。 すぐにいくつかの重要なものを作成してみましょう。 （もしわからない場合、コーチに尋ねるか、もしくはすでに手順をカバーしているので、前の章を見てください）
 
-Open `blog/templates/blog/post_detail.html` and add the line
+blog/templates/blog/post_detail.html を開いて次の行を追加します
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -278,7 +278,7 @@ Open `blog/templates/blog/post_detail.html` and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+テンプレートは次のようになります:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -309,7 +309,7 @@ blog/urls.py には次の行を追加します:
 
 テンプレート blog/templates/blog/post_edit.html を再利用します。そしてviewを追加します.
 
-Let's open `blog/views.py` and add this at the very end of the file:
+blog/views.py を開いて次をファイルの最後に追加します:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -329,7 +329,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-post_view とほとんど同じに見えますか? しかし完全に同じではありません。 For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+post_view とほとんど同じに見えますか? しかし完全に同じではありません。 まずURLから pk パラメータを渡します。次に Post モデルを get_object_or_404(Post, pk=pk) で取得します。 その後フォームを保存する際、この記事をインスタンスとしてフォームを作成します。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -337,7 +337,7 @@ post_view とほとんど同じに見えますか? しかし完全に同じで�
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+そしてこの記事でフォームを開き編集します。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -345,7 +345,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Ok, 動作確認しましょう。 post_detail ページにいきます。そこの右上に [編集] ボタンがあるはずです:
 
 ![Edit button](images/edit_button2.png)
 
@@ -353,15 +353,15 @@ OK, let's test if it works! Let's go to the `post_detail` page. There should be 
 
 ![フォームの編集](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+あとはタイトルやテキストを変更して保存してください。
 
 おめでとう！アプリケーションが完成しました。
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
+Djangoのフォームについての詳細を知りたい場合、Django Projectのドキュメントを読んでください: https://docs.djangoproject.com/en/1.11/topics/forms/
 
-## Security
+## セキュリティ
 
-Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 Let's make it so the button shows up for you but not for anyone else.
 
 In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
