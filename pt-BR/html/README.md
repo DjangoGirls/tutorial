@@ -199,7 +199,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 * Abra a [página de consoles do PythonAnywhere](https://www.pythonanywhere.com/consoles/) e vá para o seu **console Bash** (ou inicie um novo). Em seguida, execute:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
