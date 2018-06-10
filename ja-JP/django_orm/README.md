@@ -145,7 +145,7 @@ ola という`ユーザ名`の `User` モデルのインスタンスを、`取�
 
 > **Note** `title` と `contains` の間に、アンダーバー (`_`) が2個続いていますが、 これはDjangoのORMの構文です。フィールド名のtitleと、照合タイプのcontainsを、2つのアンダーバーで連結させています。 もしアンダーバーが1個だけだと、title_contains というフィールド名だと判断されてしまい、エラーになります。("FieldError: Cannot resolve keyword title_contains")
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+また、公開済みの全ポストを取り出すことも出来ます。それには、`published_date` が現在以前の全ポストを取り出します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -155,7 +155,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+そうでした、残念なことに、まだどのポストも公開されていませんね。じゃあ、ポストを公開してみるとしましょう。まず公開するポストを決めましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -163,7 +163,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-And then publish it with our `publish` method:
+そして、`publish` メソッドを呼び出します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,7 +171,7 @@ And then publish it with our `publish` method:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+じゃあ、もう一度公開済みのポストを取り出しましょう。(上方向キーを3回押せば、さっきのコマンドを呼び出せるでしょう。コマンドを表示出来たら、`Enter` キーを押してみましょう)
 
 {% filename %}command-line{% endfilename %}
 
@@ -182,7 +182,7 @@ Now try to get list of published posts again (press the up arrow key three times
 
 ### Ordering objects
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+クエリセットは、オブジェクトのリストの並べ替えもやってくれます。試しに `created_date` フィールドで並べ替えてみましょう。
 
 {% filename %}command-line{% endfilename %}
 
