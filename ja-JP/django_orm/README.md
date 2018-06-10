@@ -191,7 +191,7 @@ ola という`ユーザ名`の `User` モデルのインスタンスを、`取�
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-We can also reverse the ordering by adding `-` at the beginning:
+逆順、つまり新しく追加した順に並べ替えることも出来ます。それには、`-` ハイフンを使います。
 
 {% filename %}command-line{% endfilename %}
 
@@ -202,16 +202,16 @@ We can also reverse the ordering by adding `-` at the beginning:
 
 ### Chaining QuerySets
 
-You can also combine QuerySets by **chaining** them together:
+QuerySetsを**連鎖させて**組み合わせることも出来ます。
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 <QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
-This is really powerful and lets you write quite complex queries.
+クエリセットの連鎖は本当に強力です。つなげていくことでとても複雑なクエリも書くことが出来ます。
 
-Cool! You're now ready for the next part! To close the shell, type this:
+いいですね！次の章への準備は万端ですね！このプロンプトを閉じるには、以下のようにします。
 
 {% filename %}command-line{% endfilename %}
 
