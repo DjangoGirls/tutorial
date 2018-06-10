@@ -1,4 +1,4 @@
-Înregistreză-te pentru un cont "Beginner" pe PythonAnywhere:
+Înregistreză-te pentru un cont „Beginner” pe PythonAnywhere:
 
 * [https://www.pythonanywhere.com/registration/register/beginner/](https://www.pythonanywhere.com/)
 
