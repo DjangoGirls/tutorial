@@ -40,7 +40,7 @@ U svakom poglavlju koje je već pokriveno, postoji link koji ćete uputiti na od
 
 ## O priručniku i doprinosima
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Ovaj priručnik održavaju [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Would you like to help us translate the tutorial into other languages?
 
