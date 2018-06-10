@@ -40,12 +40,12 @@ U svakom poglavlju koje je već pokriveno, postoji link koji ćete uputiti na od
 
 ## O priručniku i doprinosima
 
-Ovaj priručnik održavaju [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Ovaj priručnik održavaju [DjangoGirls](https://djangogirls.org/). Ako naiđeš na greške ili ako želiš da ažuriraš priručnik, molimo te [ da pratiš uputstva kako možeš da napraviš doprinos.](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Želiš li da nam pomogneš da prevedemo ovaj priručnik na neki drugi jezik?
 
-Currently, translations are being kept on crowdin.com platform at:
+Trenutno se prevodi drže na crowdin.com platformi na:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Ako tvoj jezik nije naveden na [crowdin](https://crowdin.com/), molimo te [Otvori novi issue](https://github.com/DjangoGirls/tutorial/issues/new) da bismo saznali o kom jeziku se radi, tako da ga možemo dodati.
