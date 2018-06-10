@@ -1,4 +1,4 @@
-Možete da [preskočite preko ovog odeljka](http://tutorial.djangogirls.org/en/installation/#install-python) ako ne koristite Chromebook. Ako koristite, vase iskustvo za instalaciju će biti malo drugacije. Možete da zanemarite ostatak uputstva za instalaciju.
+Možeš da [preskočiš preko ovog poglavlja](http://tutorial.djangogirls.org/en/installation/#install-python) ako ne koristiš Chromebook. Ako, pak, koristiš, tvoja instalacija će teći nešto drugačije. Možete da zanemarite ostatak uputstva za instalaciju.
 
 ### Cloud 9
 
