@@ -2,14 +2,14 @@ Možeš da [preskočiš preko ovog poglavlja](http://tutorial.djangogirls.org/en
 
 ### Cloud 9
 
-Cloud 9 je alatka koja predstavlja uređivač koda i omogućava ti pristup računaru umreženom na internetu, a gde možeš da instaliraš, pišeš i pokreneš softver. Tokom ovog priručnika, Cloud 9 će služiti kao tvoj *lokalni računar*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9 je alatka koja predstavlja uređivač koda i omogućava ti pristup računaru umreženom na internetu, a gde možeš da instaliraš, pišeš i pokreneš softver. Tokom ovog priručnika, Cloud 9 će služiti kao tvoj *lokalni računar*. I dalje ćeš pokretati naredbe u terminalu, baš kao i tvoji kolege koji koriste OS X, Ubuntu ili Windows, ali će tvoj terminal biti povezan sa računarom pokrenutim negde gde je Cloud 9 to podesio za tebe.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+1. Instaliraj Cloud 9 iz [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Idi na [c9.io](https://c9.io)
+3. Registruj nalog
+4. Klikni na *Create a New Workspace*
+5. Imenuj ga *django-girls*
+6. Izaberi *Blank* (drugi zdesna u donjem redu, sa narandžastim logom)
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
