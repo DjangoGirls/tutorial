@@ -1,13 +1,13 @@
-Chromebookをお持ちでない場合は、[このセクションをスキップ](http://tutorial.djangogirls.org/en/installation/#install-python) できます。 If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+Chromebookをお持ちでない場合は、[このセクションをスキップ](http://tutorial.djangogirls.org/en/installation/#install-python) できます。 もしもっていなければ、普通のインストールの作業とは少し異なります。 インストール手順の残りの部分は無視できます。
 
 ### Cloud 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. チュートリアルをやっている間、Cloud 9はあなたの*ローカルマシーン*のように動きます。 You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+クラウド 9 は、インストール、書き込み、およびソフトウェアを実行することができますインターネット上で実行しているコンピューターにコード エディター、アクセスを与えるツールです。 チュートリアルをやっている間、Cloud 9はあなたの*ローカルマシーン*のように動きます。 あなたはMacもしくはUbuntu、またはWindowsを使用しています。ターミナルや、コマンドプロンプトは自分の端末の実行中のコンピュータに接続されます。クラウド9は他の場所に接続する設定をおこないます。
 
 1. [Chrome ウェブストア](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)から Cloud 9 を インストールする
 2. [C9.io](https://c9.io) に行く
 3. アカウントにサインアップします
-4. Click *Create a New Workspace*
+4. *作成新しいワークスペース*をクリック
 5. Name it *django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
 
