@@ -199,17 +199,17 @@ $ git push
 
 PythonAnywhereのようなサーバは、（CSSファイルのような）「静的ファイル」をPythonファイルとは違って扱うのが好きです。なぜなら、それらが高速に読み込まれるように最適化できるからです。 その結果、CSSファイルを変更するたびに、サーバー上で追加のコマンドを実行して、更新するように指示する必要があります。 コマンドは` collectstatic </ code>です。</p>
 
-<p>Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called <code>workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+<p>あなたが使用している<code> source myenv / bin / activate </ code>コマンドと同じです（PythonAnywhereはこれを行うために<code> workon </ code>というコマンドを使用します） あなた自身のコンピュータで）：</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename %}command-line{% endfilename %}</p>
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
-    (ola.pythonanywhere.com)$ python manage.py collectstatic
-    [...]
-    
+<pre><code>$ workon <your-pythonanywhere-username>.pythonanywhere.com
+(ola.pythonanywhere.com)$ python manage.py collectstatic
+[...]
+`</pre> 
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+ manage.py collectstatic </ code>コマンドは、<code> manage.py migrate </ code>のようなものです。  私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を適用するよう指示します。</p>
 
-In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+<p>いずれにしても、<a href="https://www.pythonanywhere.com/web_app_setup/"> Webタブ</a>にアクセスして、<strong> Reload </ strong>を押す準備が整いました。</p>
 
-And that should be it! Congrats :)
+<p>そしてdeployします! おめでとうございます :)</p>
