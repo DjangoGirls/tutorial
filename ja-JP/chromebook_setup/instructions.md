@@ -55,6 +55,6 @@ Githubのアカウントを作ります。
 
 Django Girlsチュートリアルには、Deploymentと呼ばれるものに関するセクションが含まれています。 新しいWebアプリケーションを強化するコードを実行するプロセスです。 それを公開アクセス可能なコンピュータ（サーバーと呼ばれる）に移動して インターネット上で、あなたが作ったものを全ての人が見られるようにできます。
 
-この部分は、Chromebookでチュートリアルを行うときに、インターネットに接続されているコンピュータ（ラップトップとは対照的に）を既に使用しているので少し奇妙です。 However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+この部分は、Chromebookでチュートリアルを行うときに、インターネットに接続されているコンピュータ（ラップトップとは対照的に）を既に使用しているので少し奇妙です。 しかし、クラウド９のワークスペースを「進行中」の場所と考えることができます。またより安全な披露する場所としてPython Anywhere を使うことができます。
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+したがって、新しいPython Anywhereアカウントにサインアップしてください。 [ www.pythonanywhere.com ](https://www.pythonanywhere.com)
