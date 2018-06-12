@@ -167,11 +167,11 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 (myvenv) ~$ python3 -m pip install --upgrade pip
 ```
 
-Then run `pip install django` to install Django.
+Then run `pip install django~=2.0.6` to install Django.
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~$ pip install django
+(myvenv) ~$ pip install django~=2.0.6
 Collecting django
   Downloading Django-2.0.6-py2.py3-none-any.whl (6.8MB)
 Installing collected packages: django
@@ -192,7 +192,7 @@ data-collapse=true ces-->
 >
 >{% filename %}command-line{% endfilename %}
 >```
->C:\Users\Name\djangogirls> python -m pip install django
+>C:\Users\Name\djangogirls> python -m pip install django~=2.0.6
 >```
 
 <!--endsec-->

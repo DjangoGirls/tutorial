@@ -196,7 +196,7 @@ https://django-girls-<your cloud9 username>.c9users.io
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
-![Install worked!](images/install_worked.PNG)
+![Install worked!](images/install_worked.png)
 
 While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 

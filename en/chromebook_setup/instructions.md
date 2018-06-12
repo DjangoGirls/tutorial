@@ -55,7 +55,7 @@ mkdir djangogirls
 cd djangogirls
 python3.6 -mvenv myvenv
 source myvenv/bin/activate
-pip install django
+pip install django~=2.0.6
 ```
 
 (note that on the last line we use a tilde followed by an equal sign: ~=).
