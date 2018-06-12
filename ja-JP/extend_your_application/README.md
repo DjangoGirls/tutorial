@@ -140,14 +140,13 @@ def post_detail(request, pk):
 
 ## 投稿の詳細へのテンプレートリンクを作成する
 
-We will create a file in `blog/templates/blog` called `post_detail.html`.
+` blog / templates / blog </ code>に<code> post_detail.html </ code>というファイルを作成します。</p>
 
-It will look like this:
+<p>こんな感じですね。</p>
 
-{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_detail.html{% endfilename %}</p>
 
-```html
-{% extends 'blog/base.html' %}
+<pre><code class="html">{% extends 'blog/base.html' %}
 
 {% block content %}
     <div class="post">
@@ -160,32 +159,32 @@ It will look like this:
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
-```
+`</pre> 
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+もう一度` base.html </ code>を拡張します。 <code> content </ code>ブロックでは、投稿のpublished_date（存在する場合）、タイトル、およびテキストを表示します。 しかし、私たちはいくつかの重要なことについて議論すべきですよね？</p>
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+<p>{% raw %}<code>{% if ... %} ...  {％endif％}は、何かをチェックしたいときに使用できるテンプレートタグです。 (<code>if ... else... Introduction to Pythonのチャプターでやってこを覚えていますか？）このシナリオでは我々はポストの<code>published_date`が空ではないかどうかを確認します。{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+これで、` TemplateDoesNotExist </ code>がなくなったかどうか確認してページを更新できます。</p>
 
-![Post detail page](images/post_detail2.png)
+<p><img src="images/post_detail2.png" alt="Post detail page" /></p>
 
-Yay! It works!
+<p>イェーイ！うまくできていますね！</p>
 
-# Deploy time!
+<h1>Deploy time!</h1>
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+<p>あなたのウェブサイトがまだPythonAnywhere上で動作するかどうかを確認してみましょう。</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename %}command-line{% endfilename %}</p>
 
-    $ git status
-    $ git add --all .
-    $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
-    $ git push
-    
+<pre><code>$ git status
+$ git add --all .
+$ git status
+$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+$ git push
+`</pre> 
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+それから、[ PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)で：
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,13 +193,13 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
 
-## Updating the static files on the server
+## サーバー上の静的ファイルの更新
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+PythonAnywhereのようなサーバは、（CSSファイルのような）「静的ファイル」をPythonファイルとは違って扱うのが好きです。なぜなら、それらが高速に読み込まれるように最適化できるからです。 その結果、CSSファイルを変更するたびに、サーバー上で追加のコマンドを実行して、更新するように指示する必要があります。 コマンドは` collectstatic </ code>です。</p>
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+<p>Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called <code>workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
 {% filename %}command-line{% endfilename %}
 
