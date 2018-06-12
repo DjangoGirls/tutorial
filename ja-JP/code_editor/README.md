@@ -1,11 +1,11 @@
 # コードエディタ
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> 家で１人でこのチャプターに挑戦している方へ：このチャプターは、動画（英語）もあるので参考にしてください。 [Your new friend: Command Line](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s)
 
 まさにこれから、はじめてのコードを書いていきます。コードエディタをダウンロードしましょう！
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **補足：**　Choromebookを使っている方は、このチャプターは飛ばして、 [Chromebook Setup](../chromebook_setup/README.md) の説明に従ってセットアップしてください。
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **注意** インストールの章で、コードエディタのインストールを前もって済ませた人もいるかもしれません。もしそうなら、飛ばして次の章に進んでください！
 
 {% include "/code_editor/instructions.md" %}
