@@ -101,25 +101,24 @@ urlpatterns = [
 
 <p><img src="images/does_not_exist2.png" alt="DoesNotExist error" /></p>
 
-<p>私たちはそれを望んでいません！ しかしもちろん、Djangoには、それを処理するものがあります：<code> get_object_or_404 </ code>。 In case there is no <code>Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+<p>私たちはそれを望んでいません！ しかしもちろん、Djangoには、それを処理するものがあります：<code> get_object_or_404 </ code>。 与えられた<code> pk </ code>に<code> Post </ code>がない場合、<code> Page Not Found 404 </ code>のページが表示されます。</p>
 
-![Page not found](images/404_2.png)
+<p><img src="images/404_2.png" alt="Page not found" /></p>
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+<p>自分用の<code>Page not found</ code>ページを作成することもできます。 しかし、それは現在非常に重要ではないので、私たちはそれをスキップします。</p>
 
-OK, time to add a *view* to our `views.py` file!
+<p><code> views.py </ code>ファイルに<em>view</ em>を追加してください。</p>
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+<p><code> blog / urls.py </ code>では<code> views.post_detail </ code>というビューを参照する<code> post_detail </ code>という名前のURLルールを作成しました。 これは、Djangoが<code> blog / views.py </ code>内の<code> post_detail </ code>というビュー機能を使うことを意味します。</p>
 
-We should open `blog/views.py` and add the following code near the other `from` lines:
+<p><code> blog / views.py </ code>を開き、他の<code>from</ code>行の近くに次のコードを追加する必要があります。</p>
 
-{% filename %}blog/views.py{% endfilename %}
+<p>{% filename %}blog/views.py{% endfilename %}</p>
 
-```python
-from django.shortcuts import render, get_object_or_404
-```
+<pre><code class="python">from django.shortcuts import render, get_object_or_404
+`</pre> 
 
-And at the end of the file we will add our *view*:
+ファイルの最後に*view</ em>を追加します：</p> 
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -129,17 +128,17 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+ページを更新してみましょう：http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+出来ましたね！ しかし、あなたはブログのポストタイトルのリンクをクリックするとどうなりますか？
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+あらいやだ！ 別のエラー！ しかし、私たちはすでにそれに対処する方法をすでに知っていますね。 そう！テンプレートを追加する必要があります！
 
-## Create a template for the post details
+## 投稿の詳細へのテンプレートリンクを作成する
 
 We will create a file in `blog/templates/blog` called `post_detail.html`.
 
