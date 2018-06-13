@@ -202,14 +202,14 @@ ola という `ユーザ名` の `User` モデルのインスタンスを、`取
 
 ### Chaining QuerySets
 
-QuerySetsを**連鎖させて**組み合わせることも出来ます。
+QuerySetsを **つなげて** 組み合わせることも出来ます。
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 <QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
-クエリセットの連鎖は本当に強力です。つなげていくことでとても複雑なクエリも書くことが出来ます。
+クエリセットをつなげるのは本当に強力です。つなげていくことでとても複雑なクエリも書くことが出来ます。
 
 いいですね！次の章への準備は万端ですね！このプロンプトを閉じるには、以下のようにします。
 
