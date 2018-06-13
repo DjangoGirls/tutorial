@@ -31,11 +31,11 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
+よく見てみましょうか。まず `post_list` という関数（ `def` から始まる部分のことです）を、記述しています。この `post_list` は `request` を引数に取り、`render` 関数を `return` しています。`render` 関数は `blog/post_list.html` というテンプレートファイルを使って、引数で受け取った `request` の内容を出力しています。
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+ファイルを保存したら、どんな風に表示されるか、ブラウザで http://127.0.0.1:8000/ を確認してみましょう。
 
-今度は別のエラーです。何と書いてあるか読んでみましょう。
+今度は別のエラーになりましたね。なんと書いてあるでしょうか。
 
 ![エラー](images/error.png)
 
