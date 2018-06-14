@@ -4,19 +4,19 @@
 
 > Este trabalho é licenciado sob a licença Creative Commons Attribution-ShareAlike 4.0. Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-sa/4.0/
 
-## Bem-vindo
+## Bem-vinda
 
-Bem-vindo ao Tutorial Django Girls! Estamos felizes em vê-lo aqui :) Neste tutorial, vamos levá-lo em uma viagem debaixo da capa de tecnologias web, oferecendo-lhe um vislumbre de todos os bits e peças que precisam se unir para fazer web funcionar tal como a conhecemos.
+Bem-vinda ao Tutorial Django Girls! Estamos felizes em vê-la aqui :) Neste tutorial, vamos levá-la em uma viagem por baixo do capô das tecnologias web, oferecendo-lhe um vislumbre de todos os bits e peças que precisam se unir para fazer web funcionar tal como a conhecemos.
 
 Como todas as coisas desconhecidas, isto vai ser uma aventura - mas não se preocupe! Já que você teve coragem para estar aqui, você vai ficar bem :)
 
 ## Introdução
 
-Você já sentiu como se o mundo fosse cada vez mais tecnológico e que de alguma forma você tenha ficado pra trás? Você já imaginou como seria criar um website mas nunca teve motivação suficiente para começar? Você já pensou que o mundo do software é complicado demais até para tentar fazer alguma coisa sozinho?
+Você já sentiu como se o mundo fosse cada vez mais tecnológico e que de alguma forma você tenha ficado pra trás? Você já imaginou como seria criar um website mas nunca teve motivação suficiente para começar? Você já pensou que o mundo do software é complicado demais até mesmo para você tentar fazer alguma coisa sozinha?
 
 Bem, nós temos boas notícias para você! Programação não é tão difícil quanto parece e nós queremos te mostrar o quão divertido pode ser.
 
-Este tutorial não irá te transformar magicamente em um programador. Se você quer ser bom nisso precisa de meses ou até mesmo anos de treino e prática. Mas nós queremos te mostrar que a programação ou criação de websites não é tão complicada quanto parece. Nós tentaremos explicar os diferentes pedaços tão bem quanto pudermos, tal que você não se sinta intimidado pela tecnologia.
+Este tutorial não irá te transformar magicamente em uma programadora. Se você quer ser bom nisso precisa de meses ou até mesmo anos de treino e prática. Mas nós queremos te mostrar que a programação ou criação de websites não é tão complicada quanto parece. Nós tentaremos explicar os diferentes pedaços tão bem quanto pudermos, tal que você não se sinta intimidado pela tecnologia.
 
 Nós esperamos conseguir fazer você amar a tecnologia tanto quanto nós amamos!
 
