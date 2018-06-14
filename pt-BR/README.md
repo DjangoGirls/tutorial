@@ -36,16 +36,16 @@ OK, [vamos pelo começo...](./how_the_internet_works/README.md)
 
 É incrível participar de um workshop de Django Girls, mas estamos conscientes de que nem sempre é possível participar de um. É por isso que te encorajamos a tentar seguir este tutorial em casa. Para leitores de casa, estamos atualmente preparando vídeos que facilitarão seguir o tutorial por conta própria. Ainda é um trabalho em andamento, mas mais e mais coisas serão abordadas em breve no canal do YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-Em cada capítulo já coberto, há um link que aponta para o vídeo correto.
+Em cada capítulo que já abordamos, há um link que aponta para o vídeo correto.
 
 ## Sobre o tutorial e contribuições
 
-Este tutorial é mantido por [DjangoGirls](https://djangogirls.org/). Este tutorial é mantido por DjangoGirls. Se você encontrar quaisquer erros ou quiser atualizar o tutorial, por favor, [siga as orientações de contribuição](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Este tutorial é mantido por [DjangoGirls](https://djangogirls.org/). Se você encontrar quaisquer erros ou quiser atualizar o tutorial, por favor, [siga as orientações de contribuição](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Você gostaria de nos ajudar a traduzir este tutorial para outros idiomas?
 
 No momento, traduções estão sendo mantidas na plataforma crowdin.com em:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Se o seu idioma não está listado no [crowdin](https://crowdin.com/), por favor [abra uma requisição](https://github.com/DjangoGirls/tutorial/issues/new) informando-nos do idioma para que possamos adicioná-lo.
