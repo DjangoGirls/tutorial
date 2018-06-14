@@ -22,7 +22,7 @@ Esta área inferior é seu *terminal*, onde você vai dar as instruções para o
 
 ### Ambiente Virtual
 
-Um ambiente virtual (também chamado de virtualenv) é como se fosse uma caixa privada onde nós podemos colocar código de computador útil para um projeto que estejamos trabalhando. Nós os utilizamos para manter os vários pedaços de código que queremos para nossos vários projetos separados uns dos outros, para que as coisas não se misturem entre os projetos.
+Um ambiente virtual (também chamado de virtualenv) é como se fosse uma caixa privada onde nós podemos colocar código de computador útil para um projeto que estejamos trabalhando. Nós os utilizamos para manter os vários pedaços de código que queremos para nossos vários projetos separados, para que as coisas não se misturem entre os projetos.
 
 No seu terminal, na parte de baixo da interface do Cloud 9, execute o seguinte:
 
@@ -49,11 +49,11 @@ Em seguida, execute:
 
 ### Github
 
-Crie uma conta no [Github](https://github.com).
+Cria uma conta no [Github](https://github.com).
 
 ### PythonAnywhere
 
-O tutorial do Django Girls inclui uma seção do que chamamos de Deployment (algo como "implantação", em Português).
+O tutorial do Django Girls inclui uma seção que chamamos de Deployment (algo como "implantação", em Português), que é o processo de pegar o código que alimenta a sua nova aplicação web e movê-lo para um computador de acesso público (chamado de servidor), então outras pessoas serão capazes de ver seu trabalho.
 
 Esta parte é um pouco esquisita quando o tutorial é feito num Chromebook, dado que já estamos usando um computador que está na Internet (ao contrário de, digamos, um laptop). Porém, ainda útil, já que podemos pensar no ambiente do Cloud 9 como um lugar pra nosso trabalho "em andamento" e Python Anywhere como um lugar para mostrar nosso trabalho conforme ele vai ficando mais completo.
 
