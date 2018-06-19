@@ -68,11 +68,11 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
 
 <p><code> mysite / settings.py </ code>にいくつか変更を加えましょう。 前にインストールしたコードエディタを使用してファイルを開きます。</p>
 
-<p><strong>注</ strong>：<code> settings.py </ code>は他のものと同じように通常のファイルであることに注意してください。 "file - > open"メニューアクションを使用して、コードエディタ内から開くことができます。 これにより、<code> settings.py </ code>ファイルに移動して選択できる通常のウィンドウが表示されます。 あるいは、デスクトップのdjangogirlsフォルダに移動して右クリックしてファイルを開くこともできます。 次に、リストからコードエディタを選択します。 Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.</p>
+<p><strong>注</ strong>：<code> settings.py </ code>は他のものと同じように通常のファイルであることに注意してください。 "file - > open"メニューアクションを使用して、コードエディタ内から開くことができます。 これにより、<code> settings.py </ code>ファイルに移動して選択できる通常のウィンドウが表示されます。 あるいは、デスクトップのdjangogirlsフォルダに移動して右クリックしてファイルを開くこともできます。 次に、リストからコードエディタを選択します。 エディタの選択は、ファイルを開くことができる他のプログラムがインストールされている可能性がありますが、編集することはできません。</p>
 
-<p>It would be nice to have the correct time on our website. Go to <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">Wikipedia's list of time zones</a> and copy your relevant time zone (TZ) (e.g. <code>Europe/Berlin`).</p> 
-> 
-> `settings.py` の中から `TIME_ZONE` と書かれた行を探してください。この行はタイムゾーンを表しているので、自分が住んでいるタイムゾーンに合わせて修正しましょう。たとえば、次のように書きます。
+<p>作成するブログサイトに、正しい時間を設定する必要があります。 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> Wikipediaのタイムゾーンのリスト</a>に移動して、関連するタイムゾーン（TZ）をコピーします（例：<code> Europe / Berlin < コード>）。</p>
+
+<p><code>settings.py` の中から `TIME_ZONE` と書かれた行を探してください。この行はタイムゾーンを表しているので、自分が住んでいるタイムゾーンに合わせて修正しましょう。たとえば、次のように書きます。</p> 
 > 
 > {% filename %}mysite/settings.py{% endfilename %}
 > 
@@ -80,24 +80,22 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
 TIME_ZONE = 'Asia/Tokyo'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+言語コードは、あなたの利用する言語を設定する必要があります。 英語の場合は` en </ code>、ドイツ語の場合は<code> de </ code>、国コードの場合は<code> de </ code> <code> de </ code>はドイツ、<code> ch </ code>はスイスです。 英語があなたの母国語でない場合、これを追加してDjangoのデフォルトのボタンや通知をあなたの言語に変更することができます。 ここで定義した言語に「キャンセル」ボタンが翻訳されます。 <a href="https://docs.djangoproject.com/ja/1.11/ref/settings/#language-code"> Djangoには多くの言語が付属しています</a>。</p>
 
-If you want a different language, change the language code by changing the following line:
+<p>別の言語を使用する場合は、次の行を変更して言語コードを変更します。</p>
 
-{% filename %}mysite/settings.py{% endfilename %}
+<p>{% filename %}mysite/settings.py{% endfilename %}</p>
 
-```python
-LANGUAGE_CODE = 'ja'
-```
+<pre><code class="python">LANGUAGE_CODE = 'ja'
+`</pre> 
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+静的ファイルのパスも追加する必要があります。 （スタティックファイルとCSSについては、後ほどチュートリアルで説明します）。ファイルの* 一番下 </ em>に移動し、` STATIC_URL </ code>の下に <code> STATIC_ROOT </ code>を追加します。：</p>
 
-{% filename %}mysite/settings.py{% endfilename %}
+<p>{% filename %}mysite/settings.py{% endfilename %}</p>
 
-```python
-STATIC_URL = '/static/'
+<pre><code class="python">STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-```
+`</pre> 
 
 `DEBUG` が `True` に設定されていて、`ALLOWED_HOSTS` が空のリストの時は、自動的に `['localhost', '127.0.0.1', '[::1]']` という3つのホストに対してチェックが行われます。 このままの設定では、これから私たちがデプロイして使う PythonAnywhere のホストネームが含まれていません。ですから、次のように設定を変更します。
 
@@ -128,28 +126,28 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+ブログのデータベースを作成するには、コンソールで次のコードを実行してみましょう： ` python manage.py migrate </ code>（<code> djangogirls </ code> manage.py </ code>ファイル）。 If that goes well, you should see something like this:</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename %}command-line{% endfilename %}</p>
 
-    (myvenv) ~/djangogirls$ python manage.py migrate
-    Operations to perform:
-      Apply all migrations: auth, admin, contenttypes, sessions
-    Running migrations:
-      Rendering model states... DONE
-      Applying contenttypes.0001_initial... OK
-      Applying auth.0001_initial... OK
-      Applying admin.0001_initial... OK
-      Applying admin.0002_logentry_remove_auto_add... OK
-      Applying contenttypes.0002_remove_content_type_name... OK
-      Applying auth.0002_alter_permission_name_max_length... OK
-      Applying auth.0003_alter_user_email_max_length... OK
-      Applying auth.0004_alter_user_username_opts... OK
-      Applying auth.0005_alter_user_last_login_null... OK
-      Applying auth.0006_require_contenttypes_0002... OK
-      Applying auth.0007_alter_validators_add_error_messages... OK
-      Applying sessions.0001_initial... OK
-    
+<pre><code>(myvenv) ~/djangogirls$ python manage.py migrate
+Operations to perform:
+  Apply all migrations: auth, admin, contenttypes, sessions
+Running migrations:
+  Rendering model states... DONE
+  Applying contenttypes.0001_initial... OK
+  Applying auth.0001_initial... OK
+  Applying admin.0001_initial... OK
+  Applying admin.0002_logentry_remove_auto_add... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying sessions.0001_initial... OK
+`</pre> 
 
 And we're done! Time to start the web server and see if our website is working!
 
