@@ -4,27 +4,27 @@ Du kan hoppe over[denne delen](http://tutorial.djangogirls.org/en/installation/#
 
 Cloud 9 er et verktøy som gir deg en code editor og tilgang til en data som kjører på Internet, hvor du kan installere, skrive og kjøre programvaren. Gjennom hele opplæringen, vill Cloud 9 være din *lokale data*. Du vil fortsatt kjøre kommandoer i en terminal-grensesnitt som dine klassekamerater på OS X, Ubuntu og Windows, men terminalen vil være koblet til en datamaskin som kjører et annet sted som Cloud 9 setter opp for deg.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+1. Installer Cloud 9 fra [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Gå til [c9.io](https://c9.io)
+3. Registrer en konto
+4. Klikk *Opprett et nytt arbeidsområde*
+5. Kall det *django-jenter*
+6. Velg det *tomme* (andre fra høyre i den nederste raden med oransje logo)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Du burde nå se et grensesnitt med ett sidepanel, et stort hovedvindu med text, og et lite vindu nederst på siden som ser omtrent slik ut:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    yourusername:~/workspace $
+    dittbrukernavn:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Det nederste området er din *terminal*, hvor du vil gi datamaskinen Cloud 9 har klargjort dine instruksjoner. Du kan endre størrelsen på vinduet for å gjøre det litt større.
 
 ### Virtual Environment
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Et virtuelt miljø (også kalt virtualenv) er som en privat boks vi kan fylle med nyttige datakode vi trenger for prosjektene vi jobber med. Vi bruker dem til å holde de ulike bitene av koden vi ønsker for våre ulike prosjekter separat så ting ikke bli blandet opp mellom prosjekter.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+I terminalen nederst på Cloud 9 grensesnittet, kjører du følgende:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +32,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Hvis dette fortsatt ikke fungerer, kan du spørre din trener om hjelp.
 
-Next, run:
+Neste steg er å kjøre:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,11 +45,11 @@ Next, run:
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(legg merke til at på siste linje bruker vi tilde etterfulgt av et likhets tegn: ~=).
 
 ### Github
 
-Make a [Github](https://github.com) account.
+Lag en [Github](https://github.com) bruker.
 
 ### PythonAnywhere
 
