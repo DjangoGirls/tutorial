@@ -126,7 +126,7 @@ DATABASES = {
 }
 ```
 
-ブログのデータベースを作成するには、コンソールで次のコードを実行してみましょう： ` python manage.py migrate </ code>（<code> djangogirls </ code> manage.py </ code>ファイル）。 If that goes well, you should see something like this:</p>
+ブログのデータベースを作成するには、コンソールで次のコードを実行してみましょう： ` python manage.py migrate </ code>（<code> djangogirls </ code> manage.py </ code>ファイル）。 うまくいったら次のように表示されるでしょう：</p>
 
 <p>{% filename %}command-line{% endfilename %}</p>
 
@@ -149,39 +149,39 @@ Running migrations:
   Applying sessions.0001_initial... OK
 `</pre> 
 
-And we're done! Time to start the web server and see if our website is working!
+終わったら、 Webサーバーを起動し、当社のWebサイトが動作しているかどうかを確認する時間です。
 
 ## ウェブサーバを起動する
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+コマンドラインやコマンドプロンプトで` manage.py </ code>ファイル（<code> djangogirls </ code>ディレクトリ）を含むディレクトリに移動している必要があります。 <code> python manage.py runserver </ code>を実行してWebサーバーを起動できます。</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename %}command-line{% endfilename %}</p>
 
-    (myvenv) ~/djangogirls$ python manage.py runserver
-    
+<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver
+`</pre> 
 
-If you are on a Chromebook, use this command instead:
+Chromebookを使用している場合は、代わりに次のコマンドを使用します。
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Windows上で、` UnicodeDecodeError </ code>で失敗した場合は、代わりに次のコマンドを使用します。</p>
 
-{% filename %}command-line{% endfilename %}
+<p>{% filename %}command-line{% endfilename %}</p>
 
-    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
-    
+<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+`</pre> 
 
-Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+これであなたのウェブサイトが稼働していることを確認するだけです。 ブラウザ（Firefox、Chrome、Safari、Internet Explorerなど）を開き、次のアドレスを入力します。
 
 {% filename %}ブラウザ{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook, you'll always visit your test server by accessing:
+Chromebookを使用している場合は、次のURLからアクセスしてテストサーバーにアクセスします。
 
 {% filename %}ブラウザ{% endfilename %}
 
@@ -192,10 +192,10 @@ If you're using a Chromebook, you'll always visit your test server by accessing:
 
 ![It worked!](images/it_worked2.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+Webサーバーが稼働している間は、追加のコマンドを入力するための新しいコマンドラインプロンプトは表示されません。 新しいテキストを受け入れますが、新しいコマンドは実行しません。 これは、Webサーバーが着信要求を待機するために継続的に実行されるためです。
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Webサーバーの仕組みについては、「インターネットの仕組み」の章を参照してください。
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Webサーバーの実行中に追加のコマンドを入力するには、新しいターミナルウィンドウを開き、virtualenvをアクティブにします。 Webサーバーを停止するには、実行中のウィンドウに戻り、CTRL + C - ControlキーとCキーを同時に押します（WindowsではCtrl + Breakキーを押す必要があります）。
 
 杉のステップに進む準備はできましたか？ 今度は実際にコンテンツを作り始めましょう！
