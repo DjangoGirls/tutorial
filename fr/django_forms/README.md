@@ -53,7 +53,7 @@ Remarquez que notre nouvelle vue s'appelle `post_new`.
 Après avoir ajouté cette ligne, votre fichier html devrait maintenant ressembler à ceci :
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

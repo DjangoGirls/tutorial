@@ -19,7 +19,7 @@
 Відкрийте його і скопіюйте усе з `post_list.html` до файлу `base.html`, як тут:
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

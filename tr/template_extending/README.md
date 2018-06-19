@@ -22,7 +22,7 @@ Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gib
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls Blog</title>

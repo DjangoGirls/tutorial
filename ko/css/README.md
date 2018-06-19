@@ -99,7 +99,7 @@ W3Schools에서 [CSS 선택자](https://www.w3schools.com/cssref/css_selectors.a
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 여기에서 동적 파일을 로딩하는 거에요. :)
@@ -117,7 +117,7 @@ W3Schools에서 [CSS 선택자](https://www.w3schools.com/cssref/css_selectors.a
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

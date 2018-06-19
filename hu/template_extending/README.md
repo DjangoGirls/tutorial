@@ -20,7 +20,7 @@ Hozz létre egy `base.html` fájlt a `blog/templates/blog/`-ban:
 Majd nyisd meg, és másolj át mindent a `post_list.html`-ből a `base.html`-be, így:
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

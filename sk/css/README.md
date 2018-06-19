@@ -93,7 +93,7 @@ Ešte musíme povedať našej HTML šablóne, že sme pridali nejaké CSS. Otvor
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Tu sme len nahrali statické súbory. :) Medzi `<head>` a `</head>`, po odkazoch na Bootstrap CSS súbory pridať tento riadok:
@@ -111,7 +111,7 @@ Súbor by mal teraz vyzerať asi takto:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

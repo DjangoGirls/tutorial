@@ -97,7 +97,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 We're just loading static files here. :)
@@ -114,7 +114,7 @@ Your file should now look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

@@ -54,7 +54,7 @@ Merk dir, dass wir unseren neuen View `post_new` nennen wollen.
 Nach Hinzufügen der Zeile sieht deine HTML-Datei so aus:
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

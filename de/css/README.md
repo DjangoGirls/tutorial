@@ -89,7 +89,7 @@ In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Die Ele
 Dann musst du auch deiner HTML-Vorlage sagen, dass wir CSS aus einer externen Datei laden wollen. Öffne dazu die Datei `blog/templates/blog/post_list.html` und füge folgende Zeile ganz am Anfang der Datei an:
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Hier laden wir nur statische Dateien :). Dann fügst du zwischen `<head>` und `</head>`, nach dem Link auf die Bootstrap-CSS-Dateien die folgenden Zeilen an (Der Browser liest die Dateien in der Reihenfolge, wie sie angegeben sind, ein, so dass dein CSS möglicherweise den Code in den Bootstrap-Dateien überschreibt.):
@@ -103,7 +103,7 @@ Wir haben unserer Vorlage gerade gesagt, wo sich die CSS-Datei befindet.
 Deine Datei sollte jetzt so aussehen:
 
 ```html 
-{% load staticfiles %} 
+{% load static %} 
 <html>
     <head>
         <title>Django Girls blog</title>

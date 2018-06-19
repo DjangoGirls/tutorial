@@ -53,7 +53,7 @@ Figyelem: az új nézetünket `post_new`-nak fogjuk hívni. A `"glyphicon glyphi
 Miután hozzáadtad ezt a sort, így fog kinézni a html fájlod:
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
