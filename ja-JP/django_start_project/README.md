@@ -38,7 +38,7 @@ Windows の場合は、以下のコマンドを実行しないといけません
 
 > コマンドの最後にピリオド (.) があることを確認してくださいね。これば、現在の作業ディレクトリにDjangoをインストールするということを示すので、とても重要なのです。(ピリオドは簡略表記です).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **メモ:** 上記のコマンドを入力するときは、`django-admin` で始まる部分のみを入力することを忘れないでください。 ここに書いた `(myvenv) ~/djangogirls$` の部分は、コマンドライン上で入力を受け付けることを示しているプロンプトの一例なので、人によって違うかもしれません。
 
 <!--endsec-->
 
@@ -53,29 +53,30 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
             __init__.py
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **注</ strong>：ディレクトリ構造には、以前作成した` venv </ code>ディレクトリもあります。</p>
+</blockquote>
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+<p><code> manage.py </ code>はサイトの管理に役立つスクリプトです。 それを使用して、他のものをインストールすることなく、私たちのコンピュータ上でWebサーバーを起動することができます。</p>
 
-The `settings.py` file contains the configuration of your website.
+<p><code> settings.py </ code>ファイルには、ウェブサイトの設定が含まれています。</p>
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+<p>手紙を送付する場所を確認する郵便業者について話した事を覚えていますか？ <code> urls.py </ code>ファイルには、<code> urlresolver </ code>で使用されるパターンのリストが含まれています。</p>
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+<p>私たちはそれらを変更しないので、今は他のファイルを無視しましょう。 覚えておくべき唯一の事は、間違えてそれらを削除しないことです！</p>
 
-## 設定変更
+<h2>設定変更</h2>
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+<p><code> mysite / settings.py </ code>にいくつか変更を加えましょう。 前にインストールしたコードエディタを使用してファイルを開きます。</p>
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+<p><strong>注</ strong>：<code> settings.py </ code>は他のものと同じように通常のファイルであることに注意してください。 "file - > open"メニューアクションを使用して、コードエディタ内から開くことができます。 これにより、<code> settings.py </ code>ファイルに移動して選択できる通常のウィンドウが表示されます。 あるいは、デスクトップのdjangogirlsフォルダに移動して右クリックしてファイルを開くこともできます。 次に、リストからコードエディタを選択します。 Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.</p>
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
-
-`settings.py` の中から `TIME_ZONE` と書かれた行を探してください。この行はタイムゾーンを表しているので、自分が住んでいるタイムゾーンに合わせて修正しましょう。たとえば、次のように書きます。
-
-{% filename %}mysite/settings.py{% endfilename %}
-
-```python
+<p>It would be nice to have the correct time on our website. Go to <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones">Wikipedia's list of time zones</a> and copy your relevant time zone (TZ) (e.g. <code>Europe/Berlin`).</p> 
+> 
+> `settings.py` の中から `TIME_ZONE` と書かれた行を探してください。この行はタイムゾーンを表しているので、自分が住んでいるタイムゾーンに合わせて修正しましょう。たとえば、次のように書きます。
+> 
+> {% filename %}mysite/settings.py{% endfilename %}
+> 
+> ```python
 TIME_ZONE = 'Asia/Tokyo'
 ```
 
