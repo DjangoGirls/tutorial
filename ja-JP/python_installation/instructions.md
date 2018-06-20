@@ -42,7 +42,7 @@ Webサイトからダウンロードしてインストールしましょう。 h
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-インストールが正しく行われたか確認するために、 ターミナル を開いて、次のようにコマンドをタイプしてみましょう。
+おそらく殆どの場合、Pythonはすでにインストール済みでしょう。インストールされているか確認するためには（バージョンを確認するためにも）、コンソールを起動して次のコマンドを打ってください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,13 +50,13 @@ data-collapse=true ces-->
     Python 3.6.5
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+このとき、バージョンの数字の最後が違っていたとしても（例えば、3.6.0など）、アップグレードする必要はありません。 もし、Pythonがインストールされていない場合、あるいはバージョンが古い場合は、次の指示に従ってインストールしてください。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+次のコマンドをコンソールに打って下さい。
 
 {% filename %}command-line{% endfilename %}
 
