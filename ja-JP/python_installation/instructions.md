@@ -12,14 +12,14 @@ Windowsをお使いのかたは、まずシステム情報を開き、システ�
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-次のステップでは、Windowsコマンドラインを使用します（コマンドラインについては後ほど詳しく教えます）。 For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+次のステップでは、Windowsコマンドラインを使用します（コマンドラインについては後ほど詳しく教えます）。 今のところ、コマンドを入力する必要があるときは、Windows10 Windowsロゴマーク→Windowsシステムツール→コマンドプロンプト（Windows10以前のバージョンの場合は、スタートメニュー→すべてのプログラム→アクセサリ→コマンドプロンプト）を開きます。 または、Windowsキー + 「R」キーを押して「ファイル名を指定して実行」ウィンドウを起動します。 コマンドプロンプトを開くには、そこに "cmd" と入力してenterキーを押します。 （新しいバージョンのWindowsでは、コマンドプロンプトが非表示になることがあるため、「コマンドプロンプト」を検索する必要があるかもしれません）。
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+注意：古いバージョンのWindows（7、Vista、またはそれ以前のバージョン）を使用していて、Python 3.6.xインストーラがエラーで失敗した場合、次のいずれかを試みることができます：
 
-1. install all Windows Updates and try to install Python 3.6 again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. すべてのWindowsアップデートをインストールして、Python 3.6を再インストールしてみる。
+2. [古いバージョンのPython](https://www.python.org/downloads/windows/)をインストールしてみる。例えば[3.4.6](https://www.python.org/downloads/release/python-346/)。
 
 If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
