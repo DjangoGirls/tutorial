@@ -408,17 +408,17 @@ Cool, huh? :)
 
 Här är en sammanfattning med några användbara kommandon:
 
-| Kommando (Windows) | Kommando (Mac OS / Linux) | Beskrivning                | Exempel                                           |
-| ------------------ | ------------------------- | -------------------------- | ------------------------------------------------- |
-| exit               | exit                      | stäng fönstret             | **exit**                                          |
-| cd                 | cd                        | ändra mapp                 | **cd test**                                       |
-| cd                 | pwd                       | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir                | ls                        | lista kataloger/filer      | **dir**                                           |
-| copy               | cp                        | kopiera fil                | **copy c:\test\test.txt c:\windows\test.txt** |
-| move               | mv                        | flytta fil                 | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir              | mkdir                     | skapa en ny katalog        | **mkdir testkatalog**                             |
-| rmdir (or del)     | rm                        | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S           | rm -r                     | delete a directory         | **rm -r testdirectory**                           |
+| Kommando (Windows) | Kommando (Mac OS / Linux) | Beskrivning            | Exempel                                           |
+| ------------------ | ------------------------- | ---------------------- | ------------------------------------------------- |
+| exit               | exit                      | stäng fönstret         | **exit**                                          |
+| cd                 | cd                        | ändra katalog          | **cd test**                                       |
+| cd                 | pwd                       | visa nuvarande katalog | **cd** (Windows) eller **pwd** (Mac OS / Linux)   |
+| dir                | ls                        | lista kataloger/filer  | **dir**                                           |
+| copy               | cp                        | kopiera fil            | **copy c:\test\test.txt c:\windows\test.txt** |
+| move               | mv                        | flytta fil             | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir              | mkdir                     | skapa en ny katalog    | **mkdir testkatalog**                             |
+| rmdir (eller del)  | rm                        | ta bort en fil         | **del c:\test\test.txt**                        |
+| rmdir /S           | rm -r                     | ta bort en mapp        | **rm -r testkatalog**                             |
 
 Dessa är bara några av de kommandon du kan köra i terminalen men du kommer inte behöva fler än dessa idag.
 
