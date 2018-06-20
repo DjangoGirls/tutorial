@@ -2,17 +2,17 @@
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Visst är det spännande!?! Inom bara några minuter kommer du skriva din första rad kod! :)
 
 **Låt oss introducera dig till din första nya vän: kommandotolken!**
 
 De följande stegen kommer att visa dig hur du använder det svarta fönstret som alla hackers använder. Det kan se lite läskigt ut i början, men egentligen är det bara ett fönster som väntar på instruktioner från dig.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Obs** Genom hela denna bok används termerna 'katalog' och 'mapp' synonymt.
 
 ## Vad är kommandotolken?
 
-Fönstret, som oftast kallas **kommandotolken** eller **terminalen**, är ett textbaserat program för att visa, hantera och ändra filer på din dator. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Andra namn på kommandotolken är: *cmd*, *CLI*, *prompt*, *konsol* eller *terminal*.
+Fönstret, som oftast kallas **kommandotolken** eller **terminalen**, är ett textbaserat program för att visa, hantera och ändra filer på din dator. Ungefär som Windows Utforskaren eller Finder på Mac, men utan det grafiska gränssnittet. Andra namn på kommandotolken är: *cmd*, *CLI*, *prompt*, *konsol* eller *terminal*.
 
 ## Öppna kommandotolken
 
@@ -66,7 +66,7 @@ På Windows är det ett `>`, såhär:
 
 Varje kommando kommer att ha detta tecken framför sig och ett mellanslag, men du behöver inte skriva det. Din dator skriver det åt dig. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> En liten notis: i ditt fall kan det finnas något framför tecknet, till exempel `C:\Users\ola>` eller `Olas-MacBook-Air:~ ola$` och det är precis som det ska vara.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
@@ -74,7 +74,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## Ditt första kommando (WOHO!)
 
-Let's start by typing this command:
+Börja med att skriva detta kommandot:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -104,7 +104,7 @@ Och tryck på `Enter`. Detta blir resultatet:
 
 Som du precis såg skrev datorn precis ditt användarnamn. Ganska coolt va? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Försök skriva varje kommando, istället för att kopiera och klistra in. Du kommer komma ihåg dem mycket bättre på det sättet!
 
 ## Grunderna
 
@@ -134,7 +134,7 @@ Visst hade det varit bra och veta var vi är nu? Skriv in detta kommando och try
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Obs: 'cd' står för 'change directory' som betyder 'byt mapp' på svenska. Med powershell kan du använda pwd som i Linux eller Mac OS X.
 
 <!--endsec-->
 
