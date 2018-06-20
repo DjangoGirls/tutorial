@@ -34,20 +34,20 @@ data-collapse=true ces-->
 
 Webサイトからダウンロードしてインストールしましょう。 https://www.python.org/downloads/
 
-* *Mac OS X 64-bit/32-bit installer* ファイルをダウンロードしてください。
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* *macOS 64-bit/32-bit installer* ファイルをダウンロードしてください。
+* *python-3.6.5-macosx10.6.pkg*をダブルクリックしてインストーラーを実行してください。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+インストールが正しく行われたか確認するために、 ターミナル を開いて、次のようにコマンドをタイプしてみましょう。
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python 3.6.5
     
 
 If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
