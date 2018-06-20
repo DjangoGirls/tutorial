@@ -12,7 +12,7 @@ Windowsをお使いのかたは、まずシステム情報を開き、システ�
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+次のステップでは、Windowsコマンドラインを使用します（コマンドラインについては後ほど詳しく教えます）。 For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window. (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
