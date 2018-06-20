@@ -21,7 +21,7 @@ Windowsをお使いのかたは、まずシステム情報を開き、システ�
 1. すべてのWindowsアップデートをインストールして、Python 3.6を再インストールしてみる。
 2. [古いバージョンのPython](https://www.python.org/downloads/windows/)をインストールしてみる。例えば[3.4.6](https://www.python.org/downloads/release/python-346/)。
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+古いバージョンのPythonをインストールする場合、インストール画面は上記のものとは多少異なる場合があります。 Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
