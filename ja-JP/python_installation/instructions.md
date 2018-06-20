@@ -68,21 +68,21 @@ data-collapse=true ces-->
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+次のコマンドをコンソールに打って下さい。
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use yum instead.
+古いバージョンのFedoraの場合は、コマンド `dnf` が見つからないというエラーが表示されます。その場合は、代わりに yum を使用してください。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+次のコマンドをコンソールに打って下さい。
 
 {% filename %}command-line{% endfilename %}
 
