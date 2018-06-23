@@ -96,7 +96,7 @@ Das ist der Superuser, den wir vorhin erstellt haben! Lass uns jetzt eine Instan
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+Wie du siehst, haben wir jetzt ein `User`-Objekt mit einem `username` 'ola'. Schön! Natürlich musst du diese Zeile anpassen, damit dein eigener Benutzername verwendet wird.
 
 Jetzt können wir schließlich unseren Post erstellen:
 
@@ -120,11 +120,11 @@ Da ist er, ein weiterer Post in der Liste!
 
 ### Mehrere Posts hinzufügen
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+Du kann jetzt nach Belieben weitere Blogposts hinzufügen, um ein Gefühl dafür zu bekommen, wie es funktioniert. Füge doch noch zwei, drei hinzu bevor zu zum nächsten Teil übergehst.
 
 ### Objekte filtern
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. Dafür nehmen wir `filter` statt `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Jetzt sieht unser Code folgendermaßen aus:
+Eine wichtige Eigenschaft von QuerySets ist, dass die Einträge gefiltert werden können. Zum Beispiel wollen wir alle Posts finden, die Users Ola geschrieben hat. Dafür nehmen wir `filter` statt `all` in `Post.objects.all()`. In Klammern schreiben wir die Bedingung(en), die ein Blogpost erfüllen muss, damit ein er in unser Queryset kommt. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Jetzt sieht unser Code folgendermaßen aus:
 
 {% filename %}command-line{% endfilename %}
 
