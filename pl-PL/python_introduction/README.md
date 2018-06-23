@@ -725,7 +725,7 @@ if 3 > 2:
     print('To działa!')
 ```
 
-Zauważyłaś, że w kolejnym wierszu nasz kod posiada wcięcie 4 spacji? Musimy tak robić, aby Python wiedział, co ma uruchomić, gdy warunek jest prawdziwy. Możesz używać jednej spacji, ale prawie każdy programista Pythona stosuje 4 spacje, aby kod wyglądał czytelniej. Pojedynczy tabulator również będzie liczył się jako 4 spacje, o ile Twój edytor tekstu został w taki sposób skonfigurowany. Jeżeli dokonałaś już wyboru, nie zmieniaj go! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Zauważyłaś, że w kolejnym wierszu nasz kod posiada wcięcie 4 spacji? Musimy tak robić, aby Python wiedział, co ma uruchomić, gdy warunek jest prawdziwy. Możesz używać jednej spacji, ale prawie każdy programista Pythona stosuje 4 spacje, aby kod wyglądał czytelniej. Pojedynczy tabulator również będzie liczył się jako 4 spacje, o ile Twój edytor tekstu został w taki sposób skonfigurowany. Jeżeli dokonałaś już wyboru, nie zmieniaj go! Jeżeli używasz już 4 spacji jako wcięć, wszystkie przyszłe wcięcia wykonuj też za pomocą 4 spacji - inaczej możesz wpaść w kłopoty.
 
 Zapisz plik i uruchom go jeszcze raz:
 
