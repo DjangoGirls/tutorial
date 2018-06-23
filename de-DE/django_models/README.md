@@ -171,7 +171,7 @@ Wenn dir über Methoden noch etwas nicht klar ist, dann zögere nicht, deinen Co
 
 ### Tabellen für Models in deiner Datenbank erstellen
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Als letzten Schritt wollen wir unser neues Model der Datenbank hinzufügen. Dazu müssen wir Django erst 'mal mitteilen, dass wir einige Änderungen an unserem Model vorgenommen haben. (Wir haben es eben erst erstellt!) Scheibe `python manage.py makemigrations blog` in dein Kommandozeilen-Fenster. Das sieht dann so aus:
 
 {% filename %}command-line{% endfilename %}
 
@@ -182,9 +182,9 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Hinweis:** Denke daran, die Dateien nach dem Editieren zu speichern. Ansonsten führt dein Computer die vorherige Version aus, was zu unerwarteten Fehlermeldungen führen kann.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django hat eine Migrationsdatei für uns vorbereitet, die wir nun auf unsere Datenbank anwenden müssen. Schreibe `python manage.py migrate blog`. Die Ausgabe sollte so aussehen:
 
 {% filename %}command-line{% endfilename %}
 
