@@ -124,7 +124,7 @@ Du kann jetzt nach Belieben weitere Blogposts hinzufügen, um ein Gefühl dafür
 
 ### Objekte filtern
 
-Eine wichtige Eigenschaft von QuerySets ist, dass die Einträge gefiltert werden können. Zum Beispiel wollen wir alle Posts finden, die Users Ola geschrieben hat. Dafür nehmen wir `filter` statt `all` in `Post.objects.all()`. In Klammern schreiben wir die Bedingung(en), die ein Blogpost erfüllen muss, damit ein er in unser Queryset kommt. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Jetzt sieht unser Code folgendermaßen aus:
+Eine wichtige Eigenschaft von QuerySets ist, dass die Einträge gefiltert werden können. Zum Beispiel wollen wir alle Posts finden, die Users Ola geschrieben hat. Dafür nehmen wir `filter` statt `all` in `Post.objects.all()`. In Klammern schreiben wir die Bedingung(en), die ein Blogpost erfüllen muss, damit ein er in unser Queryset kommt. So soll jetzt z.B. `author` gleich `me` sein, damit nur die Blogposts des Autors "me" herausgefiltert werden. In Django schreiben wir deshalb: `author=me`. Jetzt sieht unser Code folgendermaßen aus:
 
 {% filename %}command-line{% endfilename %}
 
@@ -133,7 +133,7 @@ Eine wichtige Eigenschaft von QuerySets ist, dass die Einträge gefiltert werden
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+Oder vielleicht wollen wir alle Posts haben, die das Wort "title" im `title`-Feld haben?
 
 {% filename %}command-line{% endfilename %}
 
@@ -142,9 +142,9 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Anmerkung:** Zwischen `title` und `contains` befinden sich zwei Unterstriche (`__`). Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Anmerkung:** Zwischen `title` und `contains` befinden sich zwei Unterstriche (`__`). Das ORM von Django nutzt diese Regel, um Feldnamen ("title") und Operationen oder Filter ("contains") voneinander zu trennen. Wenn du nur einen Unterstrich benutzt, bekommst du einen Fehler wie "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+Du kannst auch eine Liste aller bereits publizierten Posts erhalten, indem wir nach allen Posts suchen, deren `published_date` in der Vergangenheit liegt:
 
 {% filename %}command-line{% endfilename %}
 
@@ -154,7 +154,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+Unglücklicherweise ist der Post, den wir über die Python-Konsole hinzugefügt haben, noch nicht veröffentlicht. Aber das können wir ändern! Als Erstes holen wir eine Instanz des Posts, den wir veröffentlichen wollen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -170,7 +170,7 @@ Dann publizieren wir ihn mit unserer `publish`-Methode:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+Jetzt versuch nochmal, eine Liste von veröffentlichten Posts zu bekommen (drücke dreimal "Pfeil nach oben" und `enter`):
 
 {% filename %}command-line{% endfilename %}
 
