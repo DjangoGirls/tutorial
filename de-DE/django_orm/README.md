@@ -4,7 +4,7 @@ In diesem Kapitel lernst du, wie sich Django mit der Datenbank verbindet und Dat
 
 ## Was ist ein QuerySet?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+Zusammengefasst ist ein QuerySet eine Liste von Objekten eines bestimmten Models. QuerySets erlauben dir, Daten aus der Datenbank zu lesen, zu filtern und zu sortieren.
 
 Am besten wir sehen uns das an einem Beispiel an. Versuchen wir's?
 
@@ -25,7 +25,7 @@ Das sollte angezeigt werden:
 (InteractiveConsole) >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+Nun bist du in der Interaktiven Konsole von Django. Die funktioniert wie der Python-Prompt, aber hat noch etwas zusätzliche Django-Magie. :) Du kannst hier natürlich auch alle Python-Befehle verwenden.
 
 ### Alle Objekte
 
