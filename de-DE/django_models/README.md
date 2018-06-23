@@ -157,13 +157,13 @@ Jetzt definieren wir die Eigenschaften, über welche wir gesprochen haben: `titl
 - `models.CharField` – so definierst du ein Textfeld mit einer limitierten Anzahl von Zeichen.
 - `models.TextField` – so definierst du ein langes Textfeld ohne Grössenbeschränkung. Klingt doch perfekt für unsere Blogpostinhalte, oder?
 - `models.DateTimeField` – ein Feld für einen Zeitpunkt (ein Datum und eine Uhrzeit).
-- `models.ForeignKey` – this is a link to another model.
+- `models.ForeignKey` – definiert eine Verknüpfung/Beziehung zu einem anderen Model.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+Wir werden nicht den gesamten Code hier erklären, da das zu lange dauern würde. Du solltest einen Blick in die offizielle Django-Dokumentation werfen, wenn du mehr über Model-Felder wissen möchtest und darüber, wie man auch andere Dinge als die oben beschriebenen definiert (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+Was ist mit `def publish(self):`? Das ist genau die `publish`-Methode zum Veröffentlichen unserer Blogposts, über die wir vorher bereits sprachen. `def` zeigt an, dass es sich nachfolgend um eine Funktion/Methode handelt, und `publish` ist der Name der Methode. Du kannst den Namen der Methode auch ändern, wenn du möchtest. Die Benennungsregel ist, dass wir Kleinbuchstaben verwenden, und anstatt Leerzeichen (die in Funktionsnamen nicht vorkommend dürfen) Unterstriche. Eine Methode, die einen Durchschnittspreis berechnet, könnte zum Beispiel `calculate_average_price` genannt werden.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Oft geben Methoden einen Wert zurück (englisch: `return`). There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
