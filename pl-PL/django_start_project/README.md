@@ -79,9 +79,9 @@ W pliku `settings.py` znajdź linijkę, w której jest napisane `TIME_ZONE` i zm
 TIME_ZONE = 'Europe/Warsaw'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Tak więc przycisk "Anuluj" zostałby przetłumaczony na język, który tu zdefiniowałeś. [Django jest wyposażony w mnóstwo przygotowanych tłumaczeń](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Kod języka składa się z języka, np. ` en ` dla języka angielskiego lub ` de ` dla języka niemieckiego i kodu kraju, np. ` de ` dla Niemiec lub ` ch ` dla Szwajcarii. Jeżeli angielski nie jest Twoim językiem ojczystym, możesz dodać tą wartość, aby domyślne przyciski i powiadomienia od Django były w Twoim języku. Tak więc przycisk "Anuluj" zostałby przetłumaczony na język, który tu zdefiniowałeś. [Django jest wyposażony w mnóstwo przygotowanych tłumaczeń](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Jeżeli chcesz używać innego języka, zmień kod języka, zmieniając następujący wiersz:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
