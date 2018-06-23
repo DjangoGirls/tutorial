@@ -44,13 +44,13 @@ Wenn du dazu aufgefordet wirst, gib den Benutzernamen (Kleinbuchstaben, keine Le
 
 Geh nochmal in deinen Browser und log dich mit den Daten des Superusers ein, den du gerade erstellt hast. Du solltest nun das Django Admin Dashboard sehen.
 
-![Django admin](images/django_admin3.png)
+!["Django Admin"-Weboberfläche](images/django_admin3.png)
 
 Gehe zu Posts und experimentiere ein wenig damit. Füge 5 oder 6 Blogposts hinzu. Mach dir keine Sorgen wegen des Inhalts - du kannst einfach etwas Text aus diesem Tutorial kopieren und einfügen, um Zeit zu sparen :-).
 
 Achte darauf, dass bei wenigstens zwei oder drei Posts (aber nicht bei allen) das Veröffentlichungsdatum (publish date) eingetragen ist. Das werden wir später noch brauchen.
 
-![Django admin](images/edit_post3.png)
+!["Django Admin"-Weboberfläche](images/edit_post3.png)
 
 Wenn du mehr über Django Admin wissen willst, solltest du dir die Django-Dokumentation ansehen: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
