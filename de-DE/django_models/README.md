@@ -94,7 +94,7 @@ Wie du sehen kannst, wurde ein neues `blog`-Verzeichnis erstellt, welches schon 
         └── wsgi.py
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+Nach dem Erstellen der Applikation müssen wir Django noch sagen, dass diese auch genutzt werden soll. Das stellen wir in der Datei `mysite/settings.py` ein. Wir suchen den Eintrag `INSTALLED_APPS` und fügen darin die Zeile `'blog',` direkt über der schließenden Klammer `]` ein. Danach sollte es also so aussehen:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -112,9 +112,9 @@ INSTALLED_APPS = [
 
 ### Das Blogpost-Model
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+Alle `Model`s unserer Applikation werden in der `blog/models.py`-Datei definiert. Dies ist also der richtige Platz für unser Blogpost-Model.
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+Öffnen wir also `blog/models.py`, lösche alles darin und schreibe Code wie diesen:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -140,9 +140,9 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. Diese Konvention wird häufig in Python benutzt und manchmal nennen wir es "dunder" (kurz für "double-underscore").
+> Kontrolliere nochmal, dass du zwei Unterstriche (`__`) vor und hinter dem `str` gesetzt hast. Diese Konvention wird häufig in Python benutzt und manchmal nennen wir es "dunder" (kurz für "double-underscore").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Es sieht kompliziert aus, oder? Aber keine Sorge, wir werden erklären, was diese Zeilen bedeuten!
 
 All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
