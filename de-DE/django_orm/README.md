@@ -40,7 +40,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Hoppla! Eine Fehlermeldung ist erschienen. Sie sagt uns, dass Python "Post" nicht kennt. Und sie hat recht: Wir vergaßen das zu importieren!
 
 {% filename %}command-line{% endfilename %}
 
@@ -48,7 +48,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Wir importieren das Model `Post` aus `blog.models`. Versuchen wir nochmal, alle Posts anzuzeigen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -57,7 +57,7 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+Das ist eine Liste all der Posts, die wir zuvor erstellt haben! Wir haven diese Posts mit der Django-Admin-Oberfläche erstellt. Aber nun wollen wir weitere Posts mit Python erstellen! Wie geht das also?
 
 ### Objekt erstellen
 
@@ -69,7 +69,7 @@ So erstellst du ein neues Post-Objekt in der Datenbank:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+Allerdings fehlt noch eine Zutat: `me`. Wir müssen eine Instanz des Models `User` als Autor übergeben. Wie macht man das?
 
 Als Erstes müssen wir das User Model importieren:
 
@@ -88,7 +88,7 @@ Welche User sind in unserer Datenbank vorhanden? Finde es damit heraus:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now:
+Das ist der Superuser, den wir vorhin erstellt haben! Lass uns jetzt eine Instanz des Users erstellen:
 
 {% filename %}command-line{% endfilename %}
 
