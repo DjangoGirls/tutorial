@@ -4,13 +4,13 @@ Wir erstellen jetzt etwas, damit wir alle Posts von unserem Blog speichern könn
 
 ## Objekte
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Eine Herangehensweise an das Programmieren ist das so genannte `objektorientierte Programmieren`. Die Idee dahinter ist, dass wir Dinge und ihre Interaktionen untereinander modellieren können und nicht alles als langweilige Kette von Programmbefehlen hintereinander aufschreiben müssen.
 
 Was ist denn nun ein Objekt? Ein Objekt ist eine Sammlung von Eigenschaften und Aktionsmöglichkeiten, das anhand einer Vorlage (Klasse) erstellt wird. Das klingt erst einmal komisch, aber hier haben wir gleich ein Beispiel.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Wenn wir zum Beispiel eine Katze modellieren wollen, erschaffen wir eine Objektvorlage `Katze`, eine Art Blaupause oder Schema, nach welcher zukünftig jedes spezifische Katzenobjekt erstellt werden kann. Die Vorlage beschreibt typische Eigenschaften von Katzen, z.B. `farbe`, `alter`, `stimmung` (also gut, schlecht oder müde ;)), `besitzer` (der ein `Person`-Objekt ist oder – im Falle eines Streuners – leer bleibt).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+Jedes Objekt einer `Katze` soll natürlich auch einige Aktionsmöglichkeiten besitzen: `schnurren`, `kratzen` oder `füttern` (hier bekäme die Katze ein bisschen `Katzenfutter`, welches wieder durch ein eigenes Objekt mit Eigenschaften, wie `Geschmack`, repräsentiert sein könnte).
 
     Cat
     --------
