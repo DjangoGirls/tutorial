@@ -196,4 +196,4 @@ Django hat eine Migrationsdatei für uns vorbereitet, die wir nun auf unsere Dat
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Hurra! Unser Post-Model ist ab sofort in unserer Datenbank gespeichert! Es wäre doch schön, zu wissen, wie es aussieht, oder? Springe zum nächsten Kapitel, um es dir anzusehen!
