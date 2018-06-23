@@ -137,7 +137,7 @@ Dein Code ist jetzt auf GitHub. Schau gleich mal nach! Dort ist dein Code du in 
 
 ## Unsere Site auf PythonAnywhere konfigurieren
 
-Gehe zurück zum [Haupt-Dashboard PythonAnywhere](https://www.pythonanywhere.com/) indem du auf das Logo klickst. Dann wähle die Option zum Start einer "Bash"-Konsole - die PythonAnywhere Version einer Kommandozeile wie du sie auf deinen Computer hast.
+Gehe zurück zum [Haupt-Dashboard PythonAnywhere](https://www.pythonanywhere.com/) indem du auf das Logo klickst. Dann wähle die Option zum Start einer "Bash"-Konsole – die PythonAnywhere Version einer Kommandozeile wie du sie auf deinen Computer hast.
 
 ![Pointing at Bash in the New Console section](images/pythonanywhere_bash_console.png)
 
