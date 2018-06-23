@@ -10,22 +10,22 @@ Was ist denn nun ein Objekt? Ein Objekt ist eine Sammlung von Eigenschaften und 
 
 Wenn wir zum Beispiel eine Katze modellieren wollen, erschaffen wir eine Objektvorlage `Katze`, eine Art Blaupause oder Schema, nach welcher zukünftig jedes spezifische Katzenobjekt erstellt werden kann. Die Vorlage beschreibt typische Eigenschaften von Katzen, z.B. `farbe`, `alter`, `stimmung` (also gut, schlecht oder müde ;)), `besitzer` (der ein `Person`-Objekt ist oder – im Falle eines Streuners – leer bleibt).
 
-Jedes Objekt einer `Katze` soll natürlich auch einige Aktionsmöglichkeiten besitzen: `schnurren`, `kratzen` oder `füttern` (hier bekäme die Katze ein bisschen `Katzenfutter`, welches wieder durch ein eigenes Objekt mit Eigenschaften, wie `Geschmack`, repräsentiert sein könnte).
+Jedes Objekt einer `Katze` soll natürlich auch einige Aktionsmöglichkeiten besitzen: `schnurren`, `kratzen` oder `füttern` (hier bekäme die Katze ein bisschen `Katzenfutter`, welches wieder durch ein eigenes Objekt mit Eigenschaften wie `Geschmack` repräsentiert sein könnte).
 
-    Cat
+    Katze
     --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
+    farbe
+    alter
+    stimmung
+    besitzerin
+    schnurren()
+    kratzen()
+    fuettern(katzen_futter)
     
 
-    CatFood
+    Katzenfutter
     --------
-    taste
+    geschmack
     
 
 Der Gedanke dahinter ist also, echte Dinge mit Hilfe von Eigenschaften (genannt `Objekteigenschaften`) und Aktionsmöglichkeiten (genannt `Methoden`) im Programmcode zu beschreiben).
@@ -34,7 +34,7 @@ Wie also modellieren wir Blogposts? Schließlich wollen wir ja einen Blog bauen,
 
 Wir müssen folgende Fragen beantworten: Was ist ein Blogpost? Welche Eigenschaften sollte er haben?
 
-Nun, zum einen braucht unser Blogpost Text mit einem Inhalt und einen Titel, oder? It would be also nice to know who wrote it – so we need an author. Schließlich wollen wir wissen, wann der Post geschrieben und veröffentlicht wurde.
+Nun, zum einen braucht unser Blogpost Text mit einem Inhalt und einen Titel, oder? Außerdem wäre es schön zu wissen, wer ihn geschrieben hat – wir brauchen also noch einen Autor. Schließlich wollen wir wissen, wann der Post geschrieben und veröffentlicht wurde.
 
     Post 
     -------- 
@@ -55,7 +55,7 @@ Da wir jetzt wissen, was wir erreichen wollen, können wir nun damit anfangen, e
 
 Da wir jetzt in etwa wissen, was ein Objekt ist, wollen wir ein Django-Model, eine Vorlage, für unsere Blogposts anlegen, nach welcher wir zukünftig unsere Blogpostobjekte erstellen können.
 
-A model in Django is a special kind of object – it is saved in the `database`. Eine Datenbank ist eine Sammlung von Daten. Dies ist ein Ort, an dem du Informationen zu Benutzern, deinen Blogposts usw. speichern wirst. Wir benutzen dafür eine SQLite-Datenbank. This is the default Django database adapter – it'll be enough for us right now.
+Ein "Modell" ist in Django ein Objekt einer speziellen Sorte – eines das in der `Datenbank` gespeichert wird. Eine Datenbank ist eine Sammlung von Daten. Dies ist ein Ort, an dem du Informationen zu Benutzern, deinen Blogposts usw. speichern wirst. Wir benutzen dafür eine SQLite-Datenbank. Das ist die Voreinstellung in Django – für uns wird das erst einmal ausreichen.
 
 Du kannst dir ein Model wie eine Tabelle mit Spalten ("Feldern", englisch "fields") und Zeilen (Datensätzen) vorstellen.
 
@@ -63,7 +63,7 @@ Du kannst dir ein Model wie eine Tabelle mit Spalten ("Feldern", englisch "field
 
 Um unsere Webseite aufgeräumt zu halten, werden wir eine eigene Anwendung für unser Projekt erstellen, wir nennen das eine Applikation. Wir wollen uns gleich daran gewöhnen, alles ordentlich und sortiert zu halten. Um eine Applikation zu erstellen, müssen wir das folgende Kommando in der Konsole ausführen (wieder in dem `djangogirls`-Verzeichnis, in dem die `manage.py`-Datei liegt):
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}Mac OS X und Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
@@ -73,7 +73,7 @@ Um unsere Webseite aufgeräumt zu halten, werden wir eine eigene Anwendung für 
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Wie du sehen kannst, wurde ein neues `blog`-Verzeichnis erstellt, welches schon einige Dateien enthält. Das Verzeichnis und die Dateien unseres Projektes sollten jetzt so aussehen:
 
     djangogirls
     ├── blog
