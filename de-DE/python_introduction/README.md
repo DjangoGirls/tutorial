@@ -1032,33 +1032,33 @@ Und wenn wir es ausführen:
 
 Wie du sehen kannst, wird alles, was du innerhalb einer `for`-Anweisung eingerückt hast, für jedes Element der Liste `girls` wiederholt.
 
-Du kannst auch `for` auf Nummern beziehen, wenn du die `range`-Funktion benutzt:
+Du kannst auch `for` auf Ganzzahlen beziehen, wenn du die `range`-Funktion benutzt:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 for i in range(1, 6):
-     print(i)
+    print(i)
 ```
 
-Which would print:
+Das würde ausgeben:
 
 {% filename %}command-line{% endfilename %}
 
-    1 
-    2 
-    3 
-    4 
+    1
+    2
+    3
+    4
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` ist eine Funktion, die eine Liste von aufeinander folgenden Zahlen erschafft (die Randwerte werden von dir als Argumente bereitgestellt).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Beachte, dass die zweite dieser Werte, die du als Argumente übergibst, nicht in der Liste enthalten ist, die von Python ausgegeben wird. (Das bedeutet, dass `range(1, 6)` von 1 bis 5 zählt, aber nicht die Zahl 6 enthält). Die liegt daran, dass "range" halboffen ist, was wiederum bedeutet, dass es den ersten Wert enthält, aber nicht den letzten.
 
 ## Zusammenfassung
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Das ist alles. **Du rockst total!** Das war ein kniffliges Kapitel, du darfst also ruhig stolz auf dich sein. Wir sind definitiv stolz auf dich und darauf, dass du es so weit geschafft hast!
 
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
