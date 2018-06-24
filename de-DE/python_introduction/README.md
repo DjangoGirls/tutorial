@@ -843,9 +843,9 @@ Zeit für den letzten Teil dieses Kapitels!
 
 > Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) behandelt.
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Erinnerst du dich an Funktionen wie `len()`, die du in Python aufrufen kannst? Prima! Du wirst nun lernen, eigenen Funktionen zu schreiben.
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Eine Funktion ist eine Folge von Anweisungen, die Python ausführen soll. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
