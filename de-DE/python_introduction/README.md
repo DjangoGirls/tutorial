@@ -825,23 +825,23 @@ if volume < 20 or volume > 80:
     print("So ist's besser!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Du musst nicht für jede Codezeile einen Kommentar schreiben, aber Kommentare sind nützlich um zu erklären, wieso dein Code etwas macht, oder um zusammenzufassen, wenn er etwas komplexes tut.
 
 ### Zusammenfassung
 
-In the last few exercises you learned about:
+In den letzten paar Übungen hast du gelernt:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **Vergleiche vorzunehmen** – in Python kannst du Vergleiche mit den folgenden Operatoren `>`, `>=`, `==`, `<=`, `<` sowie `and` und `or` vornehmen
+- **Boolsche Datentypen** zu verwenden – Dies sind Objekte, die nur zwei Werte annehmen können: `True` bzw. `False`
+- **Dateien zu speichern** – also Programmcode in Dateien abzulegen, so dass du auch umfangreichere Programme schreiben kannst.
+- **if … elif … else** – Anweisungen, die dir erlauben, bestimmte Programmteile nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.
+- **Kommentare** – Zeilen, die Python nicht ausführt und die dir ermöglichen deinen Code zu dokumentieren
 
-Time for the last part of this chapter!
+Zeit für den letzten Teil dieses Kapitels!
 
 ## Deine eigenen Funktionen!
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) behandelt.
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
