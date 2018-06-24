@@ -726,7 +726,7 @@ if 3 > 2:
 
 Du fragst dich nun, warum wir die angefügte Zeile mit 4 Leerzeichen eingerückt haben? Damit teilen wir Python mit, dass dieser Code ausgeführt werden soll, wenn die vorhergehende Bedingung True ergeben hat. Du könntest auch eine andere Anzahl von Leerzeichen wählen, aber fast alle Python-Programmier nutzen 4 Leerzeichen, damit's gut aussieht. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
-Save it and give it another run:
+Nun sichere die Datei und führe sie noch einmal aus:
 
 {% filename %}command-line{% endfilename %}
 
@@ -735,22 +735,22 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Hinweis: Denk daran, dass Windows den 'python3'-Befehl nicht kennt. Falls du auf Windows arbeitest, verwende ab jetzt immer 'python', wenn in dieser Anleitung 'python3' steht.
 
 ### Was passiert, wenn eine Bedingung nicht True ist?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+In den vorigen Beispielen wurde Code ausgeführt, wenn eine vorhergehende Bedingung True (wahr) ergab. Aber Python kennt auch `elif`- und `else`-Anweisungen:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 if 5 > 2:
-    print('5 is indeed greater than 2')
+    print('5 ist wirklich größer als 2')
 else:
-    print('5 is not greater than 2')
+    print('5 ist nicht größer als 2')
 ```
 
-When this is run it will print out:
+Wenn dies ausgeführt wird, wird es anzeigen:
 
 {% filename %}command-line{% endfilename %}
 
