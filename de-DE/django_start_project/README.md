@@ -193,10 +193,10 @@ Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Web
 
 ![Es hat funktioniert!](images/it_worked2.png)
 
-Während der Webserver läuft, siehst du keinen neuen Kommandozeilen-Promt, bei dem du weitere Befehle eingeben könntest. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+Während der Webserver läuft, siehst du keinen neuen Kommandozeilen-Promt, bei dem du weitere Befehle eingeben könntest. Die Konsole akzeptiert zwar weitere Texteingaben, führt die entsprechenden Kommandos aber nicht aus. Das ist, weil der Webserver laufend auf neue eingehende Requests wartet.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Wie Webserver funktionieren, haben wir im Kapitel **"Wie das Internet funktioniert"** angesehen.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Öffne ein neues Terminal und aktiviere dort dein virtualenv, damit du – auch während der Webserver läuft – neue Kommandos eingeben kannst. Um den Webserver zu stoppen, wechsel zurück in das Fenster, in dem er läuft, und drücke STRG+C - Steuerung und C gleichzeitig. (In Windows kann es sein, dass du STRG und "Pause"-Taste drücken musst).
 
 Bereit für den nächsten Schritt? Es wird Zeit, ein paar Inhalte hinzuzufügen!
