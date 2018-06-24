@@ -845,31 +845,32 @@ Zeit für den letzten Teil dieses Kapitels!
 
 Erinnerst du dich an Funktionen wie `len()`, die du in Python aufrufen kannst? Prima! Du wirst nun lernen, eigenen Funktionen zu schreiben.
 
-Eine Funktion ist eine Folge von Anweisungen, die Python ausführen soll. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Eine Funktion ist eine Folge von Anweisungen, die Python ausführen soll. Jede Funktions-Definition beginnt mit dem Schlüsselwort (engl. "Keyword") `def`, bekommt einen Namen und kann Argumente (manchmal auch "Parameter" genannt) haben. Probieren wir's aus! Ersetze den Code in der Datei **python_intro.py** mit dem folgenden:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi():
-    print('Hi there!')
-    print('How are you?')
+def hallo():
+    print("Halli-hallo!")
+    print("Wie geht's?")
 
-hi()
+hallo()
 ```
 
-Okay, our first function is ready!
+Und schon hast du deine erste Funktion erstellt!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Nun fragst du dich vielleicht, warum wir am Ende der Datei den Namen der Funktion nochmal hingeschrieben haben. Python liest die Datei und führt sie von oben nach unten aus. Um die Funktion also auch zu benutzen, müssen wir sie noch einmal unten hinschreiben.
 
-Let's run this now and see what happens:
+Schauen wir, was passiert, wenn wir die Datei ausführen:
 
 {% filename %}command-line{% endfilename %}
 
-    $ python3 python_intro.py 
-    Hi there! How are you?
+    $ python3 python_intro.py
+    Halli-hallo!
+    Wie geht's?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Falls das nicht funktionert hat, keine Panik! Die Ausgabe wird dir dabei helfen, herauszufinden wieso:
 
 - If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
