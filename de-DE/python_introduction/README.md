@@ -662,7 +662,7 @@ In der Eingabeaufforderung von Windows wird's so sein:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Und in der Powershell von Windows so:
 
 {% filename %}command-line{% endfilename %}
 
@@ -671,9 +671,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, just ask for help.
+Kommst du hier nicht weiter, frag jemanden um Hilfe.
 
-Now use Python to execute the code in the file like this:
+Benutze jetzt Python, um den Code in der Datei auszuführen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -681,7 +681,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Hinweis: Unter Windows gibt es den 'python3'-Befehl nicht. Verwende stattdessen 'python', um die Datei auszuführen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -689,15 +689,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Prima! Du hast soeben dein erstes Python-Programm aus einer Datei heraus ausgeführt. Großartig, oder?
 
-You can now move on to an essential tool in programming:
+Nun wollen wir uns einem wichtigen Teil der Programmierung zuwenden:
 
-## If … elif … else
+## Wenn ... sonst-wenn ... sonst (If … elif … else)
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Oft sollen manche Programmteile nur ausgeführt werden, wenn bestimmte Vorbedingungen erfüllt sind. Dafür gibt es in Python sogenannte **if-Anweisungen**.
 
-Replace the code in your **python_intro.py** file with this:
+Nun ändere den Code in deiner **python_intro.py** Datei:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -705,7 +705,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Würden wir das nun speichern und anschließend ausführen, würden wir einen Fehler erhalten:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -715,7 +715,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python erwartet hier noch weiteren Programmcode, der ausgeführt werden soll, wenn die Bedingung `3 > 2` wahr ist (also `True` ergibt). Lassen wir Python “It works!” ausgeben. Ändere den Code in **python_intro.py** zu:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -724,7 +724,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Du fragst dich nun, warum wir die angefügte Zeile mit 4 Leerzeichen eingerückt haben? Damit teilen wir Python mit, dass dieser Code ausgeführt werden soll, wenn die vorhergehende Bedingung True ergeben hat. Du könntest auch eine andere Anzahl von Leerzeichen wählen, aber fast alle Python-Programmier nutzen 4 Leerzeichen, damit's gut aussieht. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Save it and give it another run:
 
