@@ -619,16 +619,16 @@ print('Hello, Django girls!')
 
 Da du nun schon einige Python-Erfahrung hast, schreibe ein wenig Code mit dem, was du bislang gelernt hast.
 
-Als nächstes wollen wir diesen Code in einer Datei mit einem aussagekräftigen Namen speichern. Lass uns die Datei **python_intro.py** nennen und auf dem Desktop speichern. Wir können der Datei jeden Namen geben, den wir wollen, aber es ist wichtig sicherzustellen, dass der Dateiname auf **.py** endet. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Als nächstes wollen wir diesen Code in einer Datei mit einem aussagekräftigen Namen speichern. Lass uns die Datei **python_intro.py** nennen und auf dem Desktop speichern. Wir können der Datei jeden Namen geben, den wir wollen, aber es ist wichtig sicherzustellen, dass der Dateiname auf **.py** endet. Die Erweiterung **.py** gibt unserem Betriebssystem an, dass dies ein **Python executable file** ist und Python diese ausführen kann.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. Dies wird "Syntax Hervorhebung" ("syntax highlighting") genannt und ist ein wirklich sehr nützliches Werkzeug beim Coden. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). Dies ist einer der Gründe, warum wir Code-Editoren verwenden. :)
+> **Hinweis:** Du wirst etwas des coolsten an Code-Editoren bemerken: Farben! In der Python-Konsole hatte alles die gleiche Farbe. Der Code-Editor dagegen sollte dir nun die `print`-Funktion in einer anderen Farbe anzeigen als der von ihr auszugebende Text. Dies wird "Syntax Hervorhebung" ("syntax highlighting") genannt und ist ein wirklich sehr nützliches Werkzeug beim Programmieren. Die Farbe von Dingen gibt dir Hinweise auf z.B. nicht geschlossene Zeichenfolgen oder Tippfehler in einem Schlüsselwort (wie das `def` in einer Funktion, das wir weiter unten sehen werden). Dies ist einer der Gründe, warum wir Code-Editoren verwenden. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Nun, da die Datei gesichert ist, wollen wir sie ausführen! Nutze, was du bisher über die Kommandozeile (das mit dem Prompt) gelernt hast, um in der Konsole in das Desktop-Verzeichnis zu wechseln.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Auf einem Mac sieht das etwa so aus:
 
 {% filename %}command-line{% endfilename %}
 
@@ -640,7 +640,7 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+Unter Linux ist es ähnlich ("Desktop" könnte bei Dir allerdings "Schreibtisch" heißen):
 
 {% filename %}command-line{% endfilename %}
 
@@ -651,7 +651,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+In der Eingabeaufforderung von Windows wird's so sein:
 
 {% filename %}command-line{% endfilename %}
 
