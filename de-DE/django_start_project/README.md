@@ -55,7 +55,7 @@ Auf Windows solltest du den folgenden Befehl ausführen. **(Vergiss den Punkt (`
 
 > **Hinweis:** In deiner Verzeichnisstruktur wirst du auch den `venv`-Ordner sehen, den wir vorhin erzeugt haben.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` ist ein Script, das das Management deines Projektes unterstützt. Mit dem Script bist du unter anderem in der Lage, den Webserver auf deinem Rechner zu starten, ohne etwas Weiteres installieren zu müssen.
 
 Die Datei `settings.py` beinhaltet die Konfiguration deiner Website.
 
