@@ -98,7 +98,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-Wenn `DEBUG` auf `True` gesetzt ist und `ALLOWED_HOSTS` leer, dann wird der "Host" gegen `['localhost', '127.0.0.1', '[::1]']` validiert. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+Wenn `DEBUG` auf `True` gesetzt ist und `ALLOWED_HOSTS` leer, dann wird der "Host" gegen `['localhost', '127.0.0.1', '[::1]']` validiert. Unser Hostname auf PythonAnywhere, wo wir unsere Anwendung deployen werden, würde da nicht passen. Deswegen ändern wir folgende Einstellung:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -106,11 +106,11 @@ Wenn `DEBUG` auf `True` gesetzt ist und `ALLOWED_HOSTS` leer, dann wird der "Hos
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Hinweis**: Wenn du ein Chromebook verwendest, füge noch diese Zeile am Ende deiner settings.py-Datei hinzu: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
+> Füge außerdem `.c9users.io` zu deinen `ALLOWED_HOSTS` hinzu, wenn du cloud9 verwendest.
 
-## Set up a database
+## Eine Datenbank erstellen
 
 Es gibt viele verschiedene Datenbank Programme, welche die Daten unserer Website verwalten können. Wir werden die Standard Datenbanksoftware nehmen, `sqlite3`.
 
@@ -152,7 +152,7 @@ Um eine Datenbank für unseren Blog zu erstellen, müssen wir folgenden Befehl i
 
 Und wir sind fertig! Zeit, unseren Webserver zu starten, um zu sehen, ob unsere Website funktioniert!
 
-## Starting the web server
+## Den Webserver starten
 
 Kontrolliere, dass du in dem Verzeichniss bist, in dem die `manage.py`-Datei liegt (das `djangogirls`-Verzeichnis). Wir starten den Webserver, indem wir in der Konsole `python manage.py runserver` ausführen:
 
@@ -161,7 +161,7 @@ Kontrolliere, dass du in dem Verzeichniss bist, in dem die `manage.py`-Datei lie
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Wenn du ein Chromebook verwendest, benutze stattdessen diesen Befehl:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -175,14 +175,14 @@ Wenn du Windows benutzt und dies mit dem `UnicodeDecodeError` fehlschläft, verw
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Jetzt wollen wir schauen, ob unsere Website funktioniert: Öffne deinen Browser (Firefox, Chrome, Safari, Edge oder was du sonst nutzt) und gib diese Adresse ein:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook, you'll always visit your test server by accessing:
+Wenn du ein Chromebook verwendest, wirst du den Test-Server immer unter folgender Adresse finden:
 
 {% filename %}browser{% endfilename %}
 
@@ -193,7 +193,7 @@ Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Web
 
 ![Es hat funktioniert!](images/it_worked2.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+Während der Webserver läuft, siehst du keinen neuen Kommandozeilen-Promt, bei dem du weitere Befehle eingeben könntest. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
 > We reviewed how web servers work in the **How the Internet works** chapter.
 
