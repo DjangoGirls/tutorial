@@ -884,86 +884,86 @@ Das war einfach! Als Nächstes bauen wir Funktionen mit sogenannten Argumenten. 
 def hallo(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Wie du siehst geben wir der Funktion jetzt einen Parameter, den wir `name` nennen:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
+def hallo(name):
     if name == 'Ola':
-        print('Hi Ola!')
+        print('Hallo Ola!')
     elif name == 'Sonja':
-        print('Hi Sonja!')
+        print('Hallo Sonja!')
     else:
-        print('Hi anonymous!')
+        print('Hallo Unbekannte(r)!')
 
-hi()
+hallo()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Denk daran: Die `print` Funktion ist 4 Leerzeichen innerhalb der `if`-Anweisung eingerückt. Das ist sinnvoll, da die Funktion ausgeführt wird, wenn die Bedingung eintritt. Mal sehen, wie das jetzt funktioniert:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py 
     Traceback (most recent call last): 
     File "python_intro.py", line 10, in <module>
-       hi() 
-    TypeError: hi() missing 1 required positional argument: 'name'
+       hallo() 
+    TypeError: hallo() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Hoppla, ein Fehler. Zum Glück gibt uns Python eine recht nützliche Fehlermeldung. Diese besagt, dass die Funktion `hallo()` (welche wir definiert haben) ein erforderliches Argument (namens `name`) hat und dass wir vergessen haben, dieses beim Funktionsaufruf mitzugeben. Lass uns das am unteren Ende der Datei schnell beheben:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-hi("Ola")
+hallo("Ola")
 ```
 
-And run it again:
+Und wir führen sie erneut aus:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py 
-    Hi Ola!
+    Hallo Ola!
     
 
-And if we change the name?
+Und wenn wir den Namen ändern?
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-hi("Sonja")
+hallo("Sonja")
 ```
 
-And run it:
+Und ausgeführt:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py 
-    Hi Sonja!
+    Hallo Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Nun, was denkst du, wird passieren, wenn du einen anderen Namen dort hinein schreibst? (Weder Ola noch Sonja.) Probier es aus und schau, ob du richtig liegst. Es sollte das Folgende herauskommen:
 
 {% filename %}command-line{% endfilename %}
 
-    Hi anonymous!
+    Hallo Unbekannte(r)!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Das ist genial, oder? Auf diese Weise musst du dich nicht jedesmal wiederholen, wenn du den Namen der Person änderst, die die Funktion grüßen soll. Und das ist genau der Grund, warum wir Funktionen brauchen – du willst auf keinem Fall deinen Code wiederholen!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+Lass uns etwas Klügeres machen – es gibt mehr Namen als nur zwei und für jeden eine Bedingung zu schreiben, wäre recht aufwändig, oder?
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
-    print('Hi ' + name + '!')
+def hallo(name):
+    print('Hallo ' + name + '!')
 
-hi("Rachel")
+hallo("Rachel")
 ```
 
-Let's call the code now:
+Lass uns den Code aufrufen:
 
 {% filename %}command-line{% endfilename %}
 
