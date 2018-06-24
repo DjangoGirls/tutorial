@@ -968,20 +968,20 @@ Lass uns den Code aufrufen:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py 
-    Hi Rachel!
+    Hallo Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Herzlichen Glückwunsch! Du hast gerade gelernt, wie du Funktionen schreibst! :)
 
 ## Schleifen
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) behandelt.
 
-This is the last part already. That was quick, right? :)
+Dies ist bereits der letzte Teil. Das ging doch schnell, oder? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Programmierer wiederholen sich nicht gerne. Beim Programmieren geht es darum, Dinge zu automatisieren. Wir wollen also nicht jede Person mit ihrem Namen manuell grüßen müssen, oder? Für so etwas kommen Schleifen gelegen.
 
-Still remember lists? Let's do a list of girls:
+Erinnerst du dich noch an Listen? Lass uns eine Liste mit Mädchennamen erstellen:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -989,7 +989,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Wir wollen alle mit ihrem Namen grüßen. Wir besitzen bereits die `hallo`-Funktion, um dies zu tun, also lass sie uns in einer Schleife verwenden:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -997,42 +997,42 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+Die `for`-Anweisung verhält sich ähnlich wie die `if`-Anweisung; Code unter beiden muss 4 Leerzeichen eingerückt werden.
 
-Here is the full code that will be in the file:
+Hier ist der vollständige Code für die Datei:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
-    print('Hi ' + name + '!')
+def hallo(name):
+    print('Hallo ' + name + '!')
 
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'du']
 for name in girls:
-    hi(name)
-    print('Next girl')
+    hallo(name)
+    print('Nächstes Mädchen')
 ```
 
-And when we run it:
+Und wenn wir es ausführen:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hi Rachel!
-    Next girl
-    Hi Monica!
-    Next girl
-    Hi Phoebe!
-    Next girl
-    Hi Ola!
-    Next girl
-    Hi You!
-    Next girl
+    Hallo Rachel!
+    Nächstes Mädchen
+    Hallo Monica!
+    Nächstes Mädchen
+    Hallo Phoebe!
+    Nächstes Mädchen
+    Hallo Ola!
+    Nächstes Mädchen
+    Hallo du!
+    Nächstes Mädchen
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Wie du sehen kannst, wird alles, was du innerhalb einer `for`-Anweisung eingerückt hast, für jedes Element der Liste `girls` wiederholt.
 
-You can also use `for` on numbers using the `range` function:
+Du kannst auch `for` auf Nummern beziehen, wenn du die `range`-Funktion benutzt:
 
 {% filename %}python_intro.py{% endfilename %}
 
