@@ -755,74 +755,74 @@ Wenn dies ausgeführt wird, wird es anzeigen:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py 
-    5 is indeed greater than 2
+    5 ist wirklich größer als 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Wenn 2 größer als 5 wäre, würde die zweite Anweisung (die nach dem else) ausgeführt. Schauen wir uns nun an, wie `elif` funktioniert:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-name = 'Sonja'
-if name == 'Ola':
+python name = 'Sonja' 
+if name == 'Ola': 
     print('Hey Ola!')
-elif name == 'Sonja':
-    print('Hey Sonja!')
-else:
+elif name == 'Sonja': 
+    print('Hey Sonja!') 
+else: 
     print('Hey anonymous!')
 ```
 
-and executed:
+und ausgeführt erhalten wir:
 
 {% filename %}command-line{% endfilename %}
 
-    $ python3 python_intro.py 
+    $ python3 python_intro.py
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Hast du bemerkt was passiert ist? `elif` lässt dich zusätzliche Bedingungen hinzufügen, die geprüft werden, falls die vorherige fehlschlägt.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Du kannst so viele `elif` Bedingungen nach der anfänglichen `if` Anweisung hinzufügen, wie du magst. Zum Beispiel:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-volume = 57
+volume = 57  # "volume" ist Englisch für "Lautstärke"
 if volume < 20:
-    print("It's kinda quiet.")
+    print("Das ist etwas leise.")
 elif 20 <= volume < 40:
-    print("It's nice for background music")
+    print("Das ist gut für Hintergrund-Musik.")
 elif 40 <= volume < 60:
-    print("Perfect, I can hear all the details")
+    print("Perfekt, ich kann alle Details hören.")
 elif 60 <= volume < 80:
-    print("Nice for parties")
+    print("Gut für Partys.")
 elif 80 <= volume < 100:
-    print("A bit loud!")
+    print("Etwas laut!")
 else:
-    print("My ears are hurting! :(")
+    print("Mir tun die Ohren weh! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python läuft durch jeden Test der Reihe nach und gibt dann aus:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py 
-    Perfect, I can hear all the details
+    Perfekt, ich kann alle Details hören.
     
 
-## Comments
+## Kommentare
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Kommentare sind Zeilen, die mit `#` beginnen. Du kannst nach dem `#` schreiben, was auch immer du willst, und Python wird es ignorieren. Kommentare können deinen Code für andere Leute einfacher zu verstehen machen.
 
-Let's see how that looks:
+Schauen wir, wie das aussieht:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-# Change the volume if it's too loud or too quiet
+# Ändert die Lautstärke, wenn sie zu leise oder zu laut ist
 if volume < 20 or volume > 80:
     volume = 50
-    print("That's better!")
+    print("So ist's besser!")
 ```
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
