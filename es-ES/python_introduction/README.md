@@ -1,8 +1,8 @@
-{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+{% set warning_icon = ' <span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
 
 # Introducción a Python
 
-> Parte de este capítulo se basa en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Parte de este capítulo se basa en tutoriales de Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 ¡Escribamos algo de código!
 
