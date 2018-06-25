@@ -33,7 +33,7 @@ Para fazer login, você precisa criar um *superusuário (superuser)* - uma conta
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Não se preocupe se você não consegue ver a senha que está digitando – é assim que tem ser.** Só digitá-la e pressionar `enter` para continuar. The output should look like this (where the username and email should be your own ones):
+Quando solicitado, insira seu nome de usuário (letras minúsculas, sem espaços), e-mail e senha. **Não se preocupe se você não consegue ver a senha que está digitando – é assim que tem ser.** Só digitá-la e pressionar `enter` para continuar. A saída deve parecer com isso (onde o nome de usuário e o email devem ser os seus):
 
     Username: admin
     Email address: admin@admin.com
