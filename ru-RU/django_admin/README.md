@@ -1,10 +1,10 @@
 # Администрирование Django
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+Чтобы добавлять, редактировать и удалять записи, для которых мы только сделали модель, нам потребуется использовать права администратора в Django.
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+Давай откроем файл `blog/admin.py` и заменим его содержимое на:
 
-{% filename %}blog/admin.py{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 from django.contrib import admin
@@ -15,7 +15,7 @@ admin.site.register(Post)
 
 Как ты можешь заметить, мы импортировали (включили) модель Post, которая была определена в предыдущей главе. Чтобы наша модель стала доступна на странице администрирования, нам нужно зарегистрировать её при помощи `admin.site.register(Post)`.
 
-Хорошо, теперь нам нужно взглянуть на модель Post. Не забудь запустить веб-сервер командой `python manage.py runserver`. Go to your browser and type the address http://127.0.0.1:8000/admin/. Ты увидишь страничку авторизации:
+Хорошо, теперь нам нужно взглянуть на модель Post. Не забудь запустить веб-сервер командой `python manage.py runserver`. Перейдите в ваш браузер и введите адрес http://127.0.0.1:8000/admin /. Ты увидишь страничку авторизации:
 
 ![Страница авторизации](images/login_page2.png)
 
@@ -42,7 +42,7 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Вернись в браузер и войди в систему при помощи имени пользователя и пароля, которые ты только что выбрала. Ты должна попасть в панель управления Django.
 
 ![Django admin](images/django_admin3.png)
 
@@ -54,4 +54,4 @@ Make sure that at least two or three posts (but not all) have the publish date s
 
 If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Сейчас, вероятно, подходящий момент, чтобы порадовать себя кружечкой кофе (или чая), а также съесть чего-нибудь для пополнения энергии. Ты только что создала свою первую Django модель и заслужила перерыв!
