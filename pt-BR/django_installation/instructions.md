@@ -8,9 +8,9 @@ Antes de instalarmos o Django, vamos instalar uma ferramenta muito útil para aj
 
 Então, vamos criar um **ambiente virtual**(também chamado um *virtualenv*). O virtualenv irá isolar seu código Python/Django em um ambiente "por projeto". Isso significa que qualquer alteração que você fizer em um website não afetará os outros que você também estiver desenvolvendo. Legal, certo?
 
-Tudo o que você precisa fazer é encontrar um diretório no qual você deseja criar o `virtualenv`; seu diretório Home, por exemplo. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Tudo o que você precisa fazer é encontrar um diretório no qual você deseja criar o `virtualenv`; seu diretório Home, por exemplo. No Windows, pode aparecer como `C:\Users\Nome` (onde `Nome` é seu usuário de login).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> ** Nota:** No Windows, certifique-se de que esse diretório não contém palavras acentuadas ou caracteres especias; se o seu usuário contém caracteres acentuados, use um diretório diferente, por exemplo: ` C:\djangogirls`.
 
 Para este tutorial usaremos um novo diretório`djangogirls` do seu diretório home:
 
