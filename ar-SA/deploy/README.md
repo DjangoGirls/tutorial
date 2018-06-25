@@ -135,7 +135,7 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > 
 > عد الى لوحة التحكم بالنقر على شعار الموقع, وحدد خيار بدئ الطرفية (bash-console) هي نسخة الموقع من الطرفية تماما كتلك اللتي لديك بجهازك.
 > 
-> ![Pointing at Bash in the New Console section](images/pythonanywhere_bash_console.png)
+> ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 > 
 > > **ملاحظة** PythonAnywhere يعتمد ومبني على اللينكس. لذا ان كنت على ويندوز فالطرفية ستظهر مختلفة قليلا.
 > 
