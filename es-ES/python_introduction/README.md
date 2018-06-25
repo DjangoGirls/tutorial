@@ -6,13 +6,13 @@
 
 ¡Escribamos algo de código!
 
-## La consola de Python
+## La Consola de Python
 
-> Para los lectores en casa: esta parte está cubierta en el video [conceptos básicos de Python: enteros, cadenas, listas, variables y errores](https://www.youtube.com/watch?v=MO63L4s-20U).
+> Para los lectores en casa: el video [conceptos básicos de Python: enteros, cadenas, listas, variables y errores](https://www.youtube.com/watch?v=MO63L4s-20U) cubre esta parte.
 
-Para empezar a jugar con Python, tenemos que abrir una *línea de comandos* en nuestra computadora. Ya deberías saber cómo hacerlo, pues lo aprendiste en el capítulo de [Introducción a la línea de comandos](../intro_to_command_line/README.md).
+Para empezar a jugar con Python, tenemos que abrir una *línea de comandos* en nuestra computadora. Deberías saber cómo hacerlo, pues lo aprendiste en el capítulo de [Introducción a la Línea de Comandos](../intro_to_command_line/README.md).
 
-Una vez que estés lista, sigue las siguientes instrucciones.
+Una vez que estés lista, sigue las instrucciones a continuación.
 
 Queremos abrir una consola de Python, así que escribe `python` en Windows o `python3` en Mac OS/Linux y pulsa `intro`.
 
@@ -26,11 +26,11 @@ Queremos abrir una consola de Python, así que escribe `python` en Windows o `py
 
 ## ¡Tu primer comando en Python!
 
-Después de ejecutar el comando de Python, el cursor cambiará a `>>>`. Para nosotros esto significa que por ahora sólo podemos utilizar comandos del lenguaje Python. No tienes que escribir el `>>>` pues Python lo hará por ti.
+Después de ejecutar el comando de Python, el cursor cambiará a `>>>`. Para nosotros esto significa que por ahora sólo podemos utilizar comandos del lenguaje Python. No tienes que escribir e`>>>` pues Python lo hará por ti.
 
-Si deseas salir de la consola de Python en cualquier momento, simplemente escribe `exit()` o usa el atajo `Ctrl + Z` para Windows y `Ctrl + D` para Mac/Linux. Luego no verás más el `>>>`.
+Si deseas salir de la consola de Python en cualquier momento, simplemente escribe `exit()` o usa el atajo `Ctrl + Z` para Windows, o `Ctrl + D` para Mac/Linux. Luego no verás más `>>>`.
 
-Por ahora, no queremos salir de la consola de Python. Deseamos aprender más sobre él. Vamos a comenzar escribiendo algunas matemáticas, como `2 + 3` y oprime la tecla `enter`.
+Por ahora, no queremos salir de la consola de Python. Deseamos aprender más sobre ella. Vamos a comenzar escribiendo algo de matemática, escribe `2 + 3` y oprime la tecla `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,7 +39,7 @@ Por ahora, no queremos salir de la consola de Python. Deseamos aprender más sob
 5
 ```
 
-¡Qué bien! ¿Ves cómo salió la respuesta? ¡Python sabe matemáticas! Puedes probar otros comandos como:
+¡Qué bien! ¿Ves cómo salió la respuesta? ¡Python sabe matemática! Puedes probar otros comandos como:
 
 - `4 * 5`
 - `5 - 1`
