@@ -138,7 +138,7 @@ Tu código ahora está en GitHub. ¡Ve y verificalo! Encontrarás que algunas co
 
 Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
-![Pointing at Bash in the New Console section](images/pythonanywhere_bash_console.png)
+![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
