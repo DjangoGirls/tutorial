@@ -18,11 +18,11 @@ Sada bi trebalo da možeš da vidiš interfejs sa sajdbar-om, veliki glavni proz
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Ova oblast na dnu je tvoj *terminal*: tu ćeš dati naredbe računaru koji je Cloud 9 pripremio za tebe. Možeš da podesiš veličinu prozora kako ti odgovara.
 
-### Virtual Environment
+### Virutalno okruženje
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Virtualno okruženje (eng. virtual environment, virutalenv) je nešto poput privatne kutije u koju možemo smestiti sav koristan kod za projekt na kojem radimo. Koristimo ih da bismo razdvojili razne delove koda koji se tiču različitih projekata. Tako nema opasnosti da ćemo pomešati nešto što pripada različitim projektima.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
