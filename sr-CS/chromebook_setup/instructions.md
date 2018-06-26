@@ -55,6 +55,6 @@ Napravi [Github](https://github.com) nalog.
 
 Django Girls priručnik sadrži deo o nečemu što se zove Postavljanje (eng. Deployment). To je proces kopiranja koda koji pokreće tvoju novu web aplikaciju na javno dostupnom računaru (zvanom server), tako da i drugi ljudi mogu vidjti tvoj rad.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Ovaj deo je malo čudan ukoliko se priručnik prati radeći na Chromebook-u jer se koristi računar koji je na Internetu (nasuprot, na primer, laptopu). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
