@@ -11,7 +11,7 @@ Cloud 9 je alatka koja predstavlja uređivač koda i omogućava ti pristup raču
 5. Imenuj ga *django-girls*
 6. Izaberi *Blank* (drugi zdesna u donjem redu, sa narandžastim logom)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Sada bi trebalo da možeš da vidiš interfejs sa sajdbar-om, veliki glavni prozor sa tekstom i mali prozor na dnu koji izgleda nešto poput:
 
 {% filename %}Cloud 9{% endfilename %}
 
