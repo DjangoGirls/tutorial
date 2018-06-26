@@ -1,6 +1,6 @@
 # Ce este Django?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. Un framework este un set de componente ce facilitează implementarea unui site web foarte rapid și ușor.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. Un framework este un set de compenente care te ajută să îți dezvolți site-ul mai rapid și mai ușor.
 
 Când faci un site web, întotdeauna vei avea nevoie de un grup de componente comune site-urilor web: un sistem de autentificare (înregistrare user, logare user, delogare), panou de administrare a site-ului, formulare, încărcare (upload) fișiere, etc.
 
