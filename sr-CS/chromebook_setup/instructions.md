@@ -24,7 +24,7 @@ Ova oblast na dnu je tvoj *terminal*: tu ćeš dati naredbe računaru koji je Cl
 
 Virtualno okruženje (eng. virtual environment, virutalenv) je nešto poput privatne kutije u koju možemo smestiti sav koristan kod za projekt na kojem radimo. Koristimo ih da bismo razdvojili razne delove koda koji se tiču različitih projekata. Tako nema opasnosti da ćemo pomešati nešto što pripada različitim projektima.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+U svom terminala na dnu Cloud 9 interfejsa, zadaj sledeće:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +32,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Ako nakon ovoga i dalje ne funkcioniše, pitaj svog instruktora/svoju instruktorku za pomoć.
 
-Next, run:
+Nakon toga, pokreni:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,11 +45,11 @@ Next, run:
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(Obrati pažnju da smo u poslednjoj liniji koristili tildu praćenu znakom jednakosti: ~=).
 
 ### Github
 
-Make a [Github](https://github.com) account.
+Napravi [Github](https://github.com) nalog.
 
 ### PythonAnywhere
 
