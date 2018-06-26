@@ -2,7 +2,7 @@
 > 
 > دغه برخه د يوه ټيوټوريل کوم چي Geek Girls Carrots جوړکري دی پر بنسټ جوړه شويده. (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
+جينګو په پايتان کي ليکل شويدی. مونږ پايتان ته اړتيا لرو تر سو په جينګو کي يو څه وکړو. نو راځی چي پيل يې د پايتان په انسټالولو سره وکړو. مونږ غواړو چي تاسو پايتان ۳. ۶ انسټال کړی، نو که تاسو کوم بل زوړ ورژن لری هغه بايد اپګريډ کړی.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
