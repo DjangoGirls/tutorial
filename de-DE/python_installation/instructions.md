@@ -12,7 +12,7 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Vergiss nicht, Python zu dem Pfad hinzuzufügen](../python_installation/images/python-installation-options.png)
 
-In künftigen Schritten werden wir die Windows-Kommandozeile verwenden (über die wir dir auch noch erzählen werden). For now, if you need to type in some commands, go to Start menu → Windows System → Command Prompt. Du kannst auch die Windows-Taste gedrückt halten und die "R"-Taste antippen, um das "Run"-Fenster zu öffnen. Um damit die Kommandozeile zu öffnen, schreibe "cmd" ins "Run"-Fenster und drücke die Eingabetaste (Enter). (On newer versions of Windows, you might have to search for "Command Prompt" since it's sometimes hidden.)
+In künftigen Schritten werden wir die Windows-Kommandozeile verwenden (über die wir dir auch noch erzählen werden). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. Um damit die Kommandozeile zu öffnen, schreibe "cmd" ins "Run"-Fenster und drücke die Eingabetaste (Enter).
 
 ![Tippe "cmd" in das "Run"-Fenster](../python_installation/images/windows-plus-r.png)
 
