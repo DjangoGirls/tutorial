@@ -4,7 +4,7 @@
 
 > Une partie de ce chapitre s’inspire du tutoriel des Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Allons écrire du code !
 
 ## Le prompt Python
 
