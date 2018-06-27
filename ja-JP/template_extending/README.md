@@ -1,10 +1,10 @@
 # テンプレートを拡張しよう
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+Djangoが持つさらに素敵なことは**テンプレート拡張**です。どういう意味でしょう？それはHTMLの共通部分をサイトの別なページで使えるということです。
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+テンプレートは同じ情報やレイアウトを一つ以上の場所で利用したいときに役立ちます。 各ファイル内で自分で繰り返す必要はありません。 さらにもし何か変更したい場合、各テンプレートで変更する必要はなく、たった1回だけです！
 
-## Create a base template
+## 基本テンプレートを作成する
 
 A base template is the most basic template that you extend on every page of your website.
 
