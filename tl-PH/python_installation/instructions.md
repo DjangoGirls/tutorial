@@ -12,7 +12,7 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Huwag kalimutan na idagdag ang Python sa Path](../python_installation/images/python-installation-options.png)
 
-Sa mga susunod na hakbang, ikaw ay gagamit ng Windows Command Line (na sasabihin namin sa iyo ang tungkol dito). Sa ngayon, kung kailangan mong mag-type ng ilang mga pag-uutos, pumunta sa Start menu → Windows System → Command Prompt. Maaari mo rin na panatilihing hawak ang Windows key at pindutin ang "R" -key hanggang ang "Run" na window ay lumabas. Upang buksan ang Command Line, i-type ang "cmd" at pindutin ang enter sa "Run" na window. (Sa bagong bersyon ng Windows, maaaring kailangan mong maghanap ng "Command Prompt" dahil minsan ito ay nakatago.)
+Sa mga susunod na hakbang, ikaw ay gagamit ng Windows Command Line (na sasabihin namin sa iyo ang tungkol dito). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. Upang buksan ang Command Line, i-type ang "cmd" at pindutin ang enter sa "Run" na window.
 
 ![Mag-type ng "cmd" sa "Run" na window](../python_installation/images/windows-plus-r.png)
 
