@@ -12,7 +12,7 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Jangan lupa menambahkan Python dapa Path](../python_installation/images/python-installation-options.png)
 
-Pada langkah selanjutnya, Anda akan menggunakan Windows Command Line (yang juga akan kami ceritakan). Sekarang, jika Anda ingin mengetik beberapa perintah, arahkan ke menu Start → Windows System → Command Prompt. Anda juga dapat menahan tombol Windows dan menekan tombol "R" -key sampai jendela "Run" muncul. Untuk membuka Command Line, ketik "cmd" dan tekan enter di jendela "Run". (Pada versi Windows yang lebih baru, Anda mungkin harus mencari "Command Prompt" karena terkadang tersembunyi.)
+Pada langkah selanjutnya, Anda akan menggunakan Windows Command Line (yang juga akan kami ceritakan). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. Untuk membuka Command Line, ketik "cmd" dan tekan enter di jendela "Run".
 
 ![Jenis "; cmd"; di "; Jalankan " jendela](../python_installation/images/windows-plus-r.png)
 
