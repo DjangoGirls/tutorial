@@ -12,7 +12,7 @@ Pozor na jednu vec: počas inštalácie si všimni okno označené "Setup". Uist
 
 ![Nezabudni pridať Python do Cesty](../python_installation/images/python-installation-options.png)
 
-V ďalších krokoch, budeš používať Windows príkazový riadok (o ktorom ti tiež povieme viac). Zatiaľ, keď potrebuješ zadať nejake príkazy, choď do Štart → Systém Windows → Príkazový riadok. Alebo môžes stlačiť a držať tlačidlo so znakom Windows a k tomu stlačiť tlačidlo "R" kým sa neobjaví "Run" okno. Aby si spustila Príkazový riadok, zadaj "cmd" a stlač enter v "Run" okne. (No novších verziách Windows, možno budeš musieť vyhľadať "Command Prompt" ("Príkazový riadok"), lebo je niekedý skrytý.)
+V ďalších krokoch, budeš používať Windows príkazový riadok (o ktorom ti tiež povieme viac). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. Aby si spustila Príkazový riadok, zadaj "cmd" a stlač enter v "Run" okne.
 
 ![Zadaj "cmd" v "Run" okne](../python_installation/images/windows-plus-r.png)
 
