@@ -12,7 +12,7 @@ Windowsをお使いのかたは、まずシステム情報を開き、システ�
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-次のステップでは、Windowsコマンドラインを使用します（コマンドラインについては後ほど詳しく教えます）。 今のところ、コマンドを入力する必要があるときは、Windows10 Windowsロゴマーク→Windowsシステムツール→コマンドプロンプト（Windows10以前のバージョンの場合は、スタートメニュー→すべてのプログラム→アクセサリ→コマンドプロンプト）を開きます。 または、Windowsキー + 「R」キーを押して「ファイル名を指定して実行」ウィンドウを起動します。 コマンドプロンプトを開くには、そこに "cmd" と入力してenterキーを押します。 （新しいバージョンのWindowsでは、コマンドプロンプトが非表示になることがあるため、「コマンドプロンプト」を検索する必要があるかもしれません）。
+次のステップでは、Windowsコマンドラインを使用します（コマンドラインについては後ほど詳しく教えます）。 For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. コマンドプロンプトを開くには、そこに "cmd" と入力してenterキーを押します。
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
