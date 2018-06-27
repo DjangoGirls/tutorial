@@ -12,7 +12,7 @@
 
 ![لا تنس إضافة بيثون إلى المسار](../python_installation/images/python-installation-options.png)
 
-في الخطوات المقبلة، عليك استخدام سطر أوامر Windows (والذي سنتكلم عنه ايضا). الآن، إذا كنت بحاجة لكتابة بعض الأوامر، انتقل إلى قائمة ابدأ ← نظام Windows ← موجه الأوامر. يمكنك أيضا الضغط على مفتاح Windows واضغط مفتاح "R"- حتى تضهر نافدة "Run". لفتح سطر الأوامر، اكتب "cmd" وإضغط على أدخل في "Run". (في الإصدارات الأحدث من Windows، قد تحتاج إلى البحث عن "موجه الأوامر"، نظراً لأنه في بعض الأحيان مخفي.)
+في الخطوات المقبلة، عليك استخدام سطر أوامر Windows (والذي سنتكلم عنه ايضا). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. لفتح سطر الأوامر، اكتب "cmd" وإضغط على أدخل في "Run".
 
 ![أكتب "cmd" في نافدة "Run&quot](../python_installation/images/windows-plus-r.png)
 
