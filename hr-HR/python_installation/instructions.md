@@ -12,7 +12,7 @@ Pripazi na jednu stvar: tijekom instalacije, u prozoru na kojem piše "Setup" mo
 
 ![Ne zaboravi dodati Python u Path](../python_installation/images/python-installation-options.png)
 
-U nadolazećim koracima, koristit ćeš Windows naredbeni redak (o kojem ćemo ti također pričati). Za sada, ako trebaš upisati neke naredbe, idi na Start → Windows System → Command Prompt. Također možeš pritisnuti Windows tipku zajedno sa tipkom "R" sve dok se ne pojavi prozorčić "Run". Da bi se otvorio naredbeni redak, upiši "cmd" i pritisni enter u "Run" prozorčiću. (Na novijim Windowsima, možda ćeš morati potražiti "Command Prompt" pošto je ponekad skriveno.)
+U nadolazećim koracima, koristit ćeš Windows naredbeni redak (o kojem ćemo ti također pričati). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. Da bi se otvorio naredbeni redak, upiši "cmd" i pritisni enter u "Run" prozorčiću.
 
 ![Upiši "cmd" u "Run" prozor](../python_installation/images/windows-plus-r.png)
 
