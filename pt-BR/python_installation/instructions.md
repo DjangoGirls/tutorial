@@ -12,7 +12,7 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Não se esqueça de adicionar o Python no Path](../python_installation/images/python-installation-options.png)
 
-Nas próximas etapas, você estará usando a linha de comando do Windows (também vamos te explicar tudo sobre isso). Por agora, se você precisar digitar alguns comandos, vá para o Menu Iniciar → → Sistema do Windows → Prompt de Comando. Você também pode clicar na tecla do Windows no seu teclado (aquela com a janela do Windows) e pressionar a tecla "R", até que apareça a janela "Executar". Para abrir a Linha de Comando, digite "cmd" e pressione enter na janela "Executar". (Em versões mais recentes do Windows, você pode ter que procurar "Prompt de Comando", já que às vezes está oculto.)
+Nas próximas etapas, você estará usando a linha de comando do Windows (também vamos te explicar tudo sobre isso). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. Para abrir a Linha de Comando, digite "cmd" e pressione enter na janela "Executar".
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
