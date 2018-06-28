@@ -92,13 +92,13 @@ Git будет отслеживать изменения всех файлов �
 
 > **Примечание:** Имя репозитория `my-first-blog` имеет очень большое значение. Ты конечно можешь придумать другое название, но оно встречается много раз в руководстве и тебе придется каждый раз менять его на своё. Для начала будет проще остановиться на нашем варианте `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+На следующем экране ты увидишь ты увидишь ссылку для создания клона, то есть копии репозитория. Выбери "HTTPS" версию, скопируй ссылку и вставь в окно терминала:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Теперь нам нужно связать твой локальный Git репозиторий на компьютере с репозиторием на GitHub.
 
-Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+Напиши у себя в консоли следующую команду (Замени `<your-github-username>` именем, который ты указала при создании аккаунта на GitHub без угловых скобок):
 
 {% filename %}command-line{% endfilename %}
 
@@ -106,24 +106,24 @@ Type the following into your console (Replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-Enter your GitHub username and password and you should see something like this:
+Введи своё имя пользователя и пароль от аккаунта GitHub, ты увидишь что-то подобное:
 
 {% filename %}command-line{% endfilename %}
 
-    Username for 'https://github.com': ola
-    Password for 'https://ola@github.com':
+    Username for 'https://github.com': hjwp
+    Password for 'https://hjwp@github.com':
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
-    To https://github.com/ola/my-first-blog.git
     
+    To https://github.com/ola/my-first-blog.git
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
     
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Теперь твой код загружен на GitHub. Зайди на сайт и проверь! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
 
 # Setting up our blog on PythonAnywhere
 
