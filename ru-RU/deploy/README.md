@@ -123,17 +123,17 @@ Git будет отслеживать изменения всех файлов �
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Теперь твой код загружен на GitHub. Зайди на сайт и проверь! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Теперь твой код загружен на GitHub. Зайди на сайт и проверь! Вы найдете его в компании – [Django](https://github.com/django/django), [ Django Girls туториала](https://github.com/DjangoGirls/tutorial) и многих других проектов c открытым исходным кодом на GitHub. :)
 
-# Setting up our blog on PythonAnywhere
+# Настройка нашего блога на PythonAnywhere
 
-## Sign up for a PythonAnywhere account
+## Регистрация аккаунта на PythonAnywhere
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Примечание** Возможно, ты уже завела учётную запись на PythonAnywhere ранее — если так, не нужно повторять это снова.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## Настройка нашего сайта на PythonAnywhere
 
 Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
