@@ -84,9 +84,9 @@ Djangoが持つさらに素敵なことは**テンプレート拡張**です。�
 {% endblock %}
 ```
 
-しかしなぜでしょう？ あなたは`block`を作ったのです！ `{% block %}` タグをこれからHTMLを挿入しようとする場所に使いました。 That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+でも何のために？ あなたはただ`block`を作っただけです！ `{% block %}` タグを、これからHTMLを挿入しようとする場所に使いました。 そのHTMLはこのテンプレート (`base.html`) を拡張した別のテンプレートからやってきます。 どうやって行うかはすぐに示します。
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+`base.html` を保存し、もう一度 `blog/templates/blog/post_list.html` を開きます。 {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
