@@ -137,7 +137,7 @@ Git будет отслеживать изменения всех файлов �
 
 Вернись в главное меню [PythonAnywhere Dashboard](https://www.pythonanywhere.com/), кликнув на логотип и выбери опцию запуска консоли Bash - это версия консоли PythonAnywhere как и на твоем компьютере.
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![В разделе «Новой консоли» в веб-версии PythonAnywhere, с помощью кнопки "Bash"](images/pythonanywhere_bash_console.png)
 
 > **Примечание**: PythonAnywhere использует Linux, так что если ты используешь Windows, то терминал и команды могут немного отличаться от того, к чему ты привыкла на своем компьютере.
 
@@ -204,16 +204,16 @@ Git будет отслеживать изменения всех файлов �
 - Была допущена ошибка в URL GitHub репозитория
 - Если ты видишь ошибку *"Could not find your settings.py"*, это вероятно потому, что не удалось добавить все твои файлы в Git и/или ты не успешно загрузила их на GitHub. Посмотри инструкции еще раз в разделе Git выше
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Если видишь ошибку при попытке посетить свой сайт, для отладочной информации первым делом смотри **журнал ошибок**. Ссылку на него ты найдёшь на [вкладке Web](https://www.pythonanywhere.com/web_app_setup/) на PythonAnywhere. Посмотри, нет ли там сообщений о каких-нибудь ошибках; самые последние из них приведены ниже.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Также можешь посмотреть [общие советы по отладке на вики PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+И помни: твой инструктор здесь, чтобы помогать!
 
-# Check out your site!
+# Проверить свой сайт!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+Стандартная страница твоего сайта должна включать приветствие "Welcome to Django", точно также как было на локальном компьютере. Попробуй добавить `/admin/` к концу адреса сайта и перейдешь к панели администратора сайта. Войди под своим именем и паролем и увидишь форму для добавления новых записей в блог.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+После того, как ты создала несколько постов, ты можешь вернуться к локальной настройке(не PythonAnywhere). Тут тебе следует работать для создания изменений. Это общий процесс веб-разработки - делать изменения локально, загружать эти изменения на GitHub и отправлять эти изменения на реальный веб-сервер. Это позволяет тебе работать и экспериментировать без нарушения работы твоего веб-сайта. Довольно круто, да?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+Ты заслужила *огромную* похвалу! Развертывание сервера — одна из самых каверзных частей веб-разработки, и на это нередко уходит несколько дней, прежде чем заставишь всё работать. Но у тебя уже есть работающий в сети веб-сайт, вот так вот!
