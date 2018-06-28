@@ -82,11 +82,11 @@ Git будет отслеживать изменения всех файлов �
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Публикация твоего кода на GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+Перейди на сайт [GitHub.com](https://www.github.com) и зарегистрируй новый бесплатный аккаунт. (Если ты уже это сделала в рамках подготовки к воркшопу, то это отлично!)
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Дальше создай новый репозиторий с именем "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 ![](images/new_github_repo.png)
 
