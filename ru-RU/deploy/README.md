@@ -135,17 +135,17 @@ Git будет отслеживать изменения всех файлов �
 
 ## Настройка нашего сайта на PythonAnywhere
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+Вернись в главное меню [PythonAnywhere Dashboard](https://www.pythonanywhere.com/), кликнув на логотип и выбери опцию запуска консоли Bash - это версия консоли PythonAnywhere как и на твоем компьютере.
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **Примечание**: PythonAnywhere использует Linux, так что если ты используешь Windows, то терминал и команды могут немного отличаться от того, к чему ты привыкла на своем компьютере.
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+Развёртывание веб-приложения на PythonAnywhere включает в себя загрузку твоего кода с GitHub и настройку PythonAnywhere, чтобы распознать его и запустить в качестве веб-приложения. Существуют ручные способы, чтобы сделать это, но PythonAnywhere предоставляет вспомогательный инструмент, который сделает это за тебя. Давай сначала установим его:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
-    $ pip3.6 install --user pythonanywhere
+    pip3.6 install --user pythonanywhere
     
 
 That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
