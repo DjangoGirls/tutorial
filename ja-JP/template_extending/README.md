@@ -2,13 +2,13 @@
 
 Djangoが持つさらに素敵なことは**テンプレート拡張**です。これは何を意味してるでしょうか？それはHTMLの共通部分をウェブサイトの別なページで使えるということです。
 
-テンプレートは同じ情報やレイアウトを一つ以上の場所で利用したいときに役立ちます。 各ファイル内で自分で繰り返す必要はありません。 さらにもし何か変更したい場合、各テンプレートで変更する必要はなく、たった1回だけです！
+テンプレートは同じ情報やレイアウトを一つ以上の場所で利用したいときに役立ちます。 各ファイル内で自分で繰り返す必要はありません。 さらにもし何か変更したい場合、各テンプレートを変更する必要はなく、1回変更すればいいだけです！
 
 ## 基本テンプレートを作成する
 
-A base template is the most basic template that you extend on every page of your website.
+基本テンプレートはあなたのウェブサイトの各ページを拡張するための最も基本的なテンプレートです。
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+`blog/templates/blog/`以下に`base.html`ファイルを作ってみましょう。
 
     blog
     └───templates
@@ -17,7 +17,7 @@ Let's create a `base.html` file in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up and copy everything from `post_list.html` to `base.html` file, like this:
+それから、以下のように`post_list.html`から`base.html`ファイルにすべてコピーしましょう。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
