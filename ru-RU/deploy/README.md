@@ -196,13 +196,13 @@ Git будет отслеживать изменения всех файлов �
 
 > **Примечание:** Это учебник для начинающих и при разворачивании сайта мы использовали несколько приёмов, которые не являются идеальными с точки зрения безопасности. Если ты решила построить на этом проект или начать новый, то следует просмотреть [Django чеклист для развертывания](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/), который содержит некоторые советы по защите твоего сайта.
 
-## Debugging tips
+## Советы по отладке
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Если вы видите ошибку во время выполнения скрипта `pa_autoconfigure_django.py`, вот несколько распространенных причин:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- Не был создан PythonAnywhere API токен - ключ, для обеспечения доступа.
+- Была допущена ошибка в URL GitHub репозитория
+- Если ты видишь ошибку *"Could not find your settings.py"*, это вероятно потому, что не удалось добавить все твои файлы в Git и/или ты не успешно загрузила их на GitHub. Посмотри инструкции еще раз в разделе Git выше
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 
