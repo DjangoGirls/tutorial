@@ -175,11 +175,11 @@ Git будет отслеживать изменения всех файлов �
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Введи сведения для учетной записи администратора. Лучше всего использовать те же, что ты использовала на своем компьютере во избежание путаницы, если ты не хочешь сделать пароль на PythonAnywhere более безопасным.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Теперь, если ты хочешь, то ты можешь посмотреть на код на PythonAnywhere используя `ls`:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite  static
@@ -188,7 +188,7 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
     templates  tests.py  urls.py  views.py
     
 
-You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+Ты также можешь перейти во вкладку "Files" и перемещаться по PythonAnywhere с помощью встроенного в браузер файлового менеджера.
 
 ## You are now live!
 
