@@ -86,11 +86,11 @@ Git будет отслеживать изменения всех файлов �
 
 Перейди на сайт [GitHub.com](https://www.github.com) и зарегистрируй новый бесплатный аккаунт. (Если ты уже это сделала в рамках подготовки к воркшопу, то это отлично!)
 
-Дальше создай новый репозиторий с именем "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Дальше создай новый репозиторий с именем "my-first-blog". Не ставь галочку на пункте "initialize with a README" и отметь опции .gitignore(мы создадим этот файл вручную) и License как None.
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+> **Примечание:** Имя репозитория `my-first-blog` имеет очень большое значение. Ты конечно можешь придумать другое название, но оно встречается много раз в руководстве и тебе придется каждый раз менять его на своё. Для начала будет проще остановиться на нашем варианте `my-first-blog`.
 
 On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
 
