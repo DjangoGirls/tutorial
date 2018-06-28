@@ -150,11 +150,11 @@ Git будет отслеживать изменения всех файлов �
 
 В консоли должно напечататься что-то подобное`Collecting pythonanywhere` и в конце `Successfully installed (...) pythonanywhere- (...)`.
 
-Теперь мы запустим помощника для автоматической настройки нашего приложения с GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+Теперь мы запустим помощника для автоматической настройки нашего приложения с GitHub. Введи следующую команду в консоли на PythonAnywhere (на забудь заменить `<your-github-username>` на свою учётную запись GitHub):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ git clone https://github.com/<your-github-username>/my-first-blog.git
     
 
 As you watch that running, you'll be able to see what it's doing:
