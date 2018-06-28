@@ -157,13 +157,13 @@ Git будет отслеживать изменения всех файлов �
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+Когда ты увидишь, как это работает, то ты сможешь понять, что именно оно делает:
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own PC
-- Updating your settings file with some deployment settings
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
+- Скачивает твой код с GitHub
+- Создает virtualenv на PythonAnywhere, такое же, как на твоем компьютере
+- Обновляет твой файл настроек с некоторыми параметрами развертывания
+- Создаем базу данных на PythonAnywhere, используя команду `manage.py migrate`
+- Настраивает твои статичные файлы(мы узнаем об этом позже)
 - And configuring PythonAnywhere to serve your web app via its API
 
 On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
