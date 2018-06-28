@@ -164,13 +164,13 @@ Git будет отслеживать изменения всех файлов �
 - Обновляет твой файл настроек с некоторыми параметрами развертывания
 - Создаем базу данных на PythonAnywhere, используя команду `manage.py migrate`
 - Настраивает твои статичные файлы(мы узнаем об этом позже)
-- And configuring PythonAnywhere to serve your web app via its API
+- И настраивает PythonAnywhere для обслуживания твоего веб-приложения через API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+На PythonAnywhere все эти шаги автоматизированы, но это те же самые шаги, которые необходимо будет выполнить с любым другим провайдером. Главное, что сейчас нужно отметить - база данных PythonAnywhere на самом деле полностью отделена от базы данных на твоем компьютере. Это значит, что они могут иметь разные посты и админские учетные записи.
 
-As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+В результате как мы уже сделали на нашем компьютере, необходимо инициализировать учетную запись администратора с помощью `createsuperuser`. PythonAnywhere автоматически активирует твой virtualenv, поэтому всё, что нужно сделать это:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
