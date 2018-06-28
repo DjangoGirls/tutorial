@@ -86,7 +86,7 @@ Djangoが持つさらに素敵なことは**テンプレート拡張**です。�
 
 でも何のために？ あなたはただ`block`を作っただけです！ `{% block %}` タグを、これからHTMLを挿入しようとする場所に使いました。 そのHTMLはこのテンプレート (`base.html`) を拡張した別のテンプレートからやってきます。 どうやって行うかはすぐに示します。
 
-`base.html` を保存し、もう一度 `blog/templates/blog/post_list.html` を開きます。 {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+`base.html` を保存し、もう一度 `blog/templates/blog/post_list.html` を開きます。 {% raw %} `{% for post in posts %}` の上と `{% endfor %}` の下をすべてを削除しましょう。 それが終わったら以下のようになっていると思います。{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,7 +102,7 @@ Djangoが持つさらに素敵なことは**テンプレート拡張**です。�
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+これをテンプレートのコンテンツブロックのパーツとして使いたいです。このファイルにblockタグを追加する時です！
 
 {% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
 
