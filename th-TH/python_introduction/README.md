@@ -476,9 +476,9 @@ Excited for the next part? :)
 
 ## การเปรียบเทียบสิ่งต่างๆ
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Dictionaries](https://www.youtube.com/watch?v=7bzxqIKYgf4)
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+ส่วนสำคัญในการเขียนโปรแกรมคือการเปรียบเทียบสิ่งต่างๆ อะไรที่สามารถเปรียบเทียบได้ง่ายที่สุด? ก็ต้องเป็นตัวเลขอยู่แล้วจริงมั้ย มาดูกันว่าเราจะเปรียบเทียบตัวเลขได้อย่างไร:
 
 {% filename %}command-line{% endfilename %}
 
@@ -495,11 +495,11 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+เราให้ Python เปรียบเทียบตัวเลขที่เราให้ไป คุณจะเห็นได้ว่า Python ไม่เพียงแต่สามารถเปรียบเทียบตัวเลขได้เท่านั้น แต่ยังสามารถเปรียบเทียบค่าที่ได้จากผลลัพธ์จากการใช้ฟังก์ชั่นได้อีกด้วย เจ๋งไปเลยใช่มั้ยล่ะ?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+คุณคงสงสัยว่าทำไมต้องใช้เครื่องหมายเท่ากับถึงสองอันติดกันแบบนี้ `==` เพื่อเปรียบเทียบว่าตัวเลขนั้นเท่ากันหรือไม่? เพราะเราใช้เครื่องหมาย `=` อันเดียว สำหรับกำหนดค่าให้กับตัวแปรไปแล้วนั่นเอง คุณจำเป็นต้องใส่เครื่องหมาย `==` **เสมอ** ถ้าคุณต้องการตรวจสอบว่าทั้งสองค่าเท่ากันหรือไม่ นอกจากนี้เรายังสามารถเปรียบเทียบสิ่งที่ไม่เท่ากันได้อีกด้วย เราใช้เครื่องหมาย `!=` เหมือนในตัวอย่างด้านบน
 
-Give Python two more tasks:
+ลองให้ Python ทำเพิ่มอีกซักสองคำสั่ง:
 
 {% filename %}command-line{% endfilename %}
 
@@ -532,10 +532,10 @@ True
 
 คุณสามารถให้ Python เปรียบเทียบตัวเลขหลายๆตัวได้มากเท่าที่คุณต้องการ แล้วมันก็ให้คำตอบกับคุณเสมอด้วย! ฉลาดสุดๆ เลยใช่ป่ะ?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** - ถ้าคุณใช้ `and` หากต้องการได้ค่า True ค่าของทั้งคู่ต้องเป็นจริง
+- **or** - ถ้าคุณใช้ `or` หากต้องการได้ค่า True ค่าใดค่าหนึ่งต้องเป็นจริง
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+คุณเคยได้คำนี้ไหม "เปรียบเทียบแอปเปิ้ลกับส้ม" เรามาลองอะไรที่คล้ายๆ กันนี้ บน Python กัน:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -546,9 +546,9 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+จะเห็นได้ว่า Python ไม่สามารถเปรียบเทียบค่าของตัวเลขจำนวนเต็ม (`int`) และ string (`str`) ได้ Python แสดงข้อผิดพลาด **TypeError** ออกมา และบอกเราว่า สองชนิดนี้ไม่สามารถเปรียบเทียบกันได้
 
-## Boolean
+## ค่าบูลีน
 
 Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
 
@@ -557,9 +557,9 @@ Boolean มีเพียงแค่สองค่าเท่านั้น
 - True (จริง)
 - False (ไม่จริง)
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+ถ้าจะให้ Python เข้าใจสิ่งนี้ คุณต้องเขียนให้ถูกต้องแบบนี้เสมอ 'True' (ตัวแรกเป็นตัวอักษรตัวใหญ่ นอกนั้นเป็นตัวเล็กหมด) **true, TRUE, tRUE ไม่สามารถใช้ได้ - มีเพียงแค่ True ที่สามารถใช้ได้** ( 'False' ก็ใช้หลักการเดียวกัน)
 
-Booleans can be variables, too! See here:
+Boolean ก็สามารถเป็นตัวแปรได้เช่นกัน! ลองดูนี่:
 
 {% filename %}command-line{% endfilename %}
 
@@ -579,18 +579,18 @@ True
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+ลองซ้อมและสนุกไปกับ Boolean โดยลองใช้คำสั่งเหล่านี้:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+ยินดีด้วย! Boolean เป็นฟีเจอร์ที่เจ๋งสุดๆในการเขียนโปรแกรม และคุณเพิ่งได้เรียนรู้วิธีใช้มัน!
 
 # เซฟซะ!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Dictionaries](https://www.youtube.com/watch?v=dOAg6QVAxyk)
 
 So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
