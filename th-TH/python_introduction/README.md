@@ -674,7 +674,7 @@ data-collapse=true ces-->
 
 ถ้าคุณมีปัญหา ขอความช่วยเหลือได้เลย
 
-Now use Python to execute the code in the file like this:
+ตอนนี้ ใช้คำสั่ง Python เพื่อรันไฟล์โค้ดของเรา แบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -690,15 +690,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+เอาล่ะ! คุณเพิ่งรันโปรแกรม Python แรกของคุณที่อยู่บนไฟล์ รู้สึกเจ๋งสุดๆเลยใช่มั้ยล่ะ?
 
-You can now move on to an essential tool in programming:
+ตอนนี้คุณสามารถไปต่อยังเครื่องมือสำคัญในการเขียนโปรแกรม:
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+มีหลายอย่างในโค้ดควรจะถูกเรียกใช้เฉพาะที่ตรงตามเงื่อนไขเท่านั้น เหตุนี้เอง Python จึงมีสิ่งที่เรียกว่า **if statements**.
 
-Replace the code in your **python_intro.py** file with this:
+แก้ไขโค้ดในไฟล์ **python_intro.py** แบบนี้:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,7 +706,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+ถ้าเราบันทึกและรันไฟล์นี้ เราจะได้ข้อผิดพลาดแบบนี้:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -716,7 +716,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python ต้องการให้เราเพิ่มเติมคำสั่งที่จะต้องรัน ถ้าเงื่อนไข `3 > 2` นั้นเป็นจริง (หรือ `True` นั่นเอง) งั้นเราลองให้ Python แสดงผล “It works!” ละกัน แก้ไขโค้ดในไฟล์ **python_intro.py** แบบนี้:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -740,7 +740,7 @@ Note: Remember that on Windows, 'python3' is not recognized as a command. From n
 
 ### ถ้าเกิดว่า เงื่อนไขไม่เป็นจริงล่ะ?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+ในตัวอย่างที่แล้ว โค้ดจะถูกรันก็ต่อเมื่อเงื่อนไขเท่ากับ True เท่านั้น แต่ Python ยังมีอย่างอื่นเช่นกัน คือ `elif` และ `else`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -751,7 +751,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+เมื่อเรารันโค้ด มันจะแสดงผลออกมาแบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -759,7 +759,7 @@ When this is run it will print out:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+ถ้า 2 มากกว่า 5 แล้ว คำสั่งที่สองจะทำงาน เรามาดูกันว่า `elif` ทำงานยังไง:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -773,7 +773,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+และลองรัน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -781,9 +781,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+เห็นมั้ยว่ามีอะไรเกิดขึ้น? `elif` ทำให้คุณเพิ่มเงื่อนไขเพิ่มเติมลงไปได้ หากเงื่อนไขก่อนหน้านี้ไม่เป็นจริง
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+คุณสามารถเพิ่ม `elif` ได้มากเท่าที่คุณต้องการ ตามหลัง `if` ตัวอย่างเช่น:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -803,7 +803,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python จะรันและทดสอบแต่ละเงื่อนไข จากนั้นจึงแสดงผลออกมา:
 
 {% filename %}command-line{% endfilename %}
 
@@ -811,11 +811,11 @@ Python runs through each test in sequence and prints:
     Perfect, I can hear all the details
     
 
-## Comments
+## คอมเม้นท์
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+คอมเม้นท์จะขึ้นต้นด้วย `#` คุณสามารถเขียนอะไรได้หลังเครื่องหมาย `#` แล้ว Python จะไม่สนใจมัน คอมเม้นท์จะทำให้คนอื่นเข้าใจโค้ดของคุณได้ง่ายขึ้น
 
-Let's see how that looks:
+เรามาดูกันว่ามันหน้าตาเป็นยังไง:
 
 {% filename %}python_intro.py{% endfilename %}
 
