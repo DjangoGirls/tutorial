@@ -169,11 +169,11 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 - ฟังก์ชัน `str` จะแปลงสิ่งต่างๆ ให้กลายเป็น **string**
 - ฟังก์ชัน `int` จะแปลงสิ่งต่างๆ ให้กลายเป็น **integer**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> สิ่งสำคัญที่ต้องทราบ: เราสามารถแปลงตัวเลขให้กลายเป็นข้อความได้ แต่เราไม่สามารถแปลงข้อความให้เป็นตัวเลขได้ - `int('hello')` จะแปลงคำว่า hello ให้กลายเป็นจำนวนเต็มได้ยังไงล่ะเนี่ย?
 
 ## ตัวแปร
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+An important concept in programming is variables. ตัวแปรนั้นไม่มีอะไรมากกว่าการเป็นชื่อ ที่คุณสามารถนำไปใช้ในภายหลังได้ Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
 สมมุติว่าเราอยากจะสร้างตัวแปลที่ใช้ชื่อว่า `name`:
 
