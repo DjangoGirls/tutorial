@@ -28,9 +28,9 @@
 
 หลังจากที่เรารันคำสั่ง Python ข้อความพร้อมรับก็จะเปลี่ยนเป็น `>>>`. สำหรับเรา นั่นหมายถึงตอนนี้เราสามารถที่จะใช้คำสั่งในภาษา Python ได้เพียงอย่างเดียวเท่านั้น คุณไม่ต้องพิมพ์ `>>>` Python จะทำให้คุณเอง
 
-ถ้าคุณอยากจะออกจากส่วนควบคุม Python แค่พิมพ์ `exit()` หรือใช้ shortcut `Ctrl + Z` สำหรับระบบปฏิบัติการ Windows และ `Ctrl + D` สำหรับระบบปฏิบัติการ Mac/Linux Then you won't see `>>>` any longer.
+ถ้าคุณอยากจะออกจากส่วนควบคุม Python แค่พิมพ์ `exit()` หรือใช้ shortcut `Ctrl + Z` สำหรับระบบปฏิบัติการ Windows และ `Ctrl + D` สำหรับระบบปฏิบัติการ Mac/Linux หลังจากนั้นคุณจะไม่เห็น `>>>` อีกต่อไป
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+สำหรับตอนนี้ เราไม่อยากออกไปจากส่วนควบคุม Python เรายังอยากเรียนเพิ่มเติ่มเกี่ยวกับ Python งั้นเรามาเริ่มจากการพิมพ์คำสั่งเกี่ยวกับคณิตศาสตร์ อย่างเช่น `2 + 3` แล้วกด `enter`
 
 {% filename %}command-line{% endfilename %}
 
