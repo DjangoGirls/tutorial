@@ -840,9 +840,9 @@ In the last few exercises you learned about:
 
 Time for the last part of this chapter!
 
-## ฟังก์ชันของคุณเอง!
+## สร้างฟังก์ชั่นของคุณเอง!
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Dictionaries](https://www.youtube.com/watch?v=5owr-6suOl0)
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
@@ -858,11 +858,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+เอาล่ะ ฟังก์ชั่นแรกของเราพร้อมแล้ว!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+คุณคงสงสัยว่าทำไมเราต้องเขียนชื่อฟังก์ชั่นที่ด้านล่างของไฟล์ด้วย นั่นก็เพราะว่า Python อ่านไฟล์และรันจากบนลงล่าง ดังนั้น การที่จะใช้ฟังก์ชั่นของเรา เราจึงต้องเขียนชื่อฟังก์ชั่นด้านล่าง
 
-Let's run this now and see what happens:
+ลองรันและดูว่าเกิดอะไรขึ้น:
 
 {% filename %}command-line{% endfilename %}
 
