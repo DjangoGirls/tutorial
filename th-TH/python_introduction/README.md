@@ -173,7 +173,7 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 
 ## ตัวแปร
 
-An important concept in programming is variables. ตัวแปรนั้นไม่มีอะไรมากกว่าการเป็นชื่อ ที่คุณสามารถนำไปใช้ในภายหลังได้ Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+An important concept in programming is variables. ตัวแปรนั้นไม่มีอะไรมากกว่าการเป็นชื่อ ที่คุณสามารถนำไปใช้ในภายหลังได้ โปรแกรมเมอร์ใช้ตัวแปรในการเก็บข้อมูล มันทำให้อ่านโค้ดได้ง่ายขึ้นและยังช่วยให้พวกเขาไม่ต้องจำค่าต่างๆที่อยู่ในโปรแกรม
 
 สมมุติว่าเราอยากจะสร้างตัวแปลที่ใช้ชื่อว่า `name`:
 
@@ -510,7 +510,7 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+เรารู้จักเครื่องหมาย `>` และ `<` แล้วเครื่องหมาย `>=` กับ `<=` ล่ะ มันหมายถึงอะไร? มันอ่านแบบนี้:
 
 - x `>` y หมายถึง: x มีค่ามากกว่า y
 - x `<` y หมายถึง: x มีค่าน้อยกว่า y
@@ -530,7 +530,7 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+คุณสามารถให้ Python เปรียบเทียบตัวเลขหลายๆตัวได้มากเท่าที่คุณต้องการ แล้วมันก็ให้คำตอบกับคุณเสมอด้วย! ฉลาดสุดๆ เลยใช่ป่ะ?
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
@@ -725,7 +725,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+สังเกตวิธีที่เราเยื้องบรรทัดถัดลงมาโดยใช้ 4 ช่องว่างไหม? เราต้องทำแบบนี้เพื่อให้ Python รู้ว่า เราต้องการรันโค้ดถ้าเงื่อนไขนั้นเป็นจริง คุณสามารถเว้นช่องว่างไว้ช่องเดียวได้นะ แต่โปรแกรมเมอร์ Python เกือบทุกคนจะเว้นช่องว่าง 4 ช่อง เพื่อทำให้มันดูเรียบร้อย A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Save it and give it another run:
 
