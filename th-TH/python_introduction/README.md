@@ -138,11 +138,11 @@
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+สิ่งเหล่านี้เป็นพื้นฐานของทุกภาษาเขียนโปรแกรมที่คุณเรียนรู้ คุณพร้อมสำหรับอะไรที่ยากกว่านี้แล้วใช่มั้ย? เรารู้ว่าคุณพร้อม!
 
 ## ความผิดพลาด
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+มาลองทำอะไรใหม่ๆกันบ้าง เราจะหาความยาวของตัวเลขได้เหมือนกับที่เราหาความยาวของชื่อเราได้มั้ยนะ? ลองพิมพ์ `len(304023)` แล้วกด `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -164,10 +164,10 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+เฮ้ย มันใช้ได้! เราใช้ฟังก์ชัน `str` ข้างในฟังก์ชัน `len` อีกที, `str()` จะแปลงทุกอย่างให้เป็น string
 
-- ฟังก์ชัน `str` แปลงสิ่งต่างๆ ให้กลายเป็น **string**
-- ฟังก์ชัน `int` แปลงสิ่งต่างๆ ให้กลายเป็น **integer**
+- ฟังก์ชัน `str` จะแปลงสิ่งต่างๆ ให้กลายเป็น **string**
+- ฟังก์ชัน `int` จะแปลงสิ่งต่างๆ ให้กลายเป็น **integer**
 
 > Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
 
@@ -327,7 +327,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-ถ้าคุณต้องการจะแสดงเฉพาะหมายเลขแรก คุณสามารถทำได้โดยใช้ **indexes** ดัชนีคือตัวเลขที่บอกตำแหน่งของสิ่งที่อยู่ในลิสต์ Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+ถ้าคุณต้องการจะแสดงเฉพาะหมายเลขแรก คุณสามารถทำได้โดยใช้ **indexes** ดัชนีคือตัวเลขที่บอกตำแหน่งของสิ่งที่อยู่ในลิสต์ โปรแกรมเมอร์จะเริ่มนับจาก 0 เพราะฉะนั้นสิ่งที่อยู่เป็นอันดับแรกในลิสต์ ก็คือ ดัชนีหมายเลข 0 ถัดไปก็คือ 1 และต่อไปเรื่อยๆ ลองนี่:
 
 {% filename %}command-line{% endfilename %}
 
