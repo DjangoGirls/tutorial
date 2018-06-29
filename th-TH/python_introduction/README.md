@@ -990,7 +990,7 @@ hi("Rachel")
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+เราต้องการที่จะทักทายด้วยพวกเขาด้วยชื่อของแต่ละคน เรามีฟังก์ชัน `hi` เพื่อทำสิ่งนั้นอยู่แล้ว งั้นเรามาใช้มันร่วมกับการทำซ้ำกัน:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -998,7 +998,7 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+คำสั่ง `for` ทำงานในรูปแบบลักษณะคล้ายๆกันกับคำสั่ง `if` โค้ดด้านล่างจำเป็นต้องเคาะเยื้องบรรทัดเข้ามา 4 ช่องเช่นกัน
 
 Here is the full code that will be in the file:
 
@@ -1042,7 +1042,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+ซึ่งจะแสดงผลดังนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,13 +1053,13 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` คือฟังก์ชันที่จะสร้าง list ของตัวเลข โดยมีเลขเริ่มต้นและสิ้นสุด (ซึ่งเลขเหล่านี้ใส่เข้ามาเป็นพารามิเตอร์ของฟังก์ชั่น)
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+หมายเหตุ เลขตัวที่สองของฟังก์ชั่นนั้นจะไม่ถูกรวมเข้ามาด้วย (ความหมายคือ `range(1, 6)` จะนับจาก 1 ถึง 5 แต่ไม่รวมเลข 6) นั่นเป็นเพราะว่า "range" นั้นเป็นแบบ half-open ซึ่งคือรวมตัวแรกแต่ไม่นับตัวสุดท้าย
 
 ## บทสรุป
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+บทนี้ก็มีเพียงเท่านี้แหล่ะ **คุณเจ๋งมากเลย!** จริงๆ บทนี้เป็นบทที่ยากนะ และคุณก็ควรจะภูมิใจในตัวเอง เราภูมิใจในตัวคุณนะที่คุณมาถึงจุดนี้ได้!
 
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
