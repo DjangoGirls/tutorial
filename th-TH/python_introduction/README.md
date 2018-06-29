@@ -131,7 +131,7 @@
 
 ### บทสรุป
 
-OK, enough of strings. So far you've learned about:
+เอาล่ะ พอก่อนเนอะสำหรับ string จนถึงตอนนี้คุณได้เรียนรู้เกี่ยวกับ:
 
 - **the prompt** – typing commands (code) into the Python prompt results in answers in Python
 - **numbers and strings** – in Python numbers are used for math and strings for text objects
@@ -242,7 +242,7 @@ Play with this for a while and see what you can do!
 
 ## ฟังก์ชันการแสดงผล
 
-Try this:
+ลองนี่:
 
 {% filename %}command-line{% endfilename %}
 
