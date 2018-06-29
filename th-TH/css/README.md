@@ -45,7 +45,7 @@ Bootstrap เป็นหนึ่งใน frameworks ภาษา HTML แล�
     ├── blog
     │   ├── migrations
     │   ├── static
-    │   └── templates
+    │   └── templates
     └── mysite
     
 
@@ -295,10 +295,10 @@ h1, h2, h3, h4 {
 
 ![รูปที่ 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+วู้ฮู้! มันดูเจ๋งสุดๆเลยใช่มั้ยล่ะ? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. คุณจะเปลี่ยนตรงไหนถ้าคุณอยากจะทำให้วันที่เปลี่ยนเป็นสีฟ้าเทอร์คอยซ์?
 
 Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+เราแนะนำให้คุณลงเรียนคอร์สออนไลน์ฟรีเหล่านี้ [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web) มันจะช่วยให้คุณเรียนรู้เกี่ยวกับการทำให้เว็บไซต์ของคุณสวยขึ้นด้วย CSS
 
 พร้อมสำหรับบทต่อไปหรือยัง?! :)
