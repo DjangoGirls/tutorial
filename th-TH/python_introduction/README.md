@@ -116,9 +116,9 @@
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+คุณเพิ่งใช้ `upper` **method** กับ string ของคุณ A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+ถ้าคุณอยากรู้ว่าชื่อของคุณมีกี่ตัวอักษร มันก็มี **function** ที่ทำหน้าที่นี้เหมือนกัน!
 
 {% filename %}command-line{% endfilename %}
 
