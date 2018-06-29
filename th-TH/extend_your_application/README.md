@@ -164,17 +164,17 @@ def post_detail(request, pk):
 
 เป็นอีกครั้งที่เรา extend ไฟล์ `base.html` ใน block `content` เราต้องการแสดง published_date ของโพสต์ (ถ้ามี), หัวข้อ และ เนื้อหา แต่เราควรจะมาปรึกษากันถึงเรื่องสำคัญอีกอย่างก่อน ดีมั้ย?
 
-{% raw %}`{% if ... %} ... {% endif %}` คือ template tag ที่เราสามารถใช้ เมื่อเราต้องการตรวจสอบบางอย่าง (จำ `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` คือ template tag ที่เราสามารถใช้ เมื่อเราต้องการตรวจสอบบางอย่าง (จำ `if ... else ..` จากบท **ความรู้เบื้องต้นเกี่ยวกับ Python** ได้มั้ย) ในสถานการณ์นี้เราต้องการตรวจสอบว่าโพสต์ `published_date` นั้นไม่ว่างเปล่า {% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+เอาล่ะ เรามาลองโหลดหน้าเว็บของเราอีกครั้ง ตอนนี้หน้า `Page not found` ควรจะหายไปแล้ว
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+เย้! ใช้ได้แล้ว!
 
-# Deploy time!
+# ได้เวลา Deploy!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+มันคงจะดี ถ้าเราจะดูหน้าเว็บของเราทำงานอยู่บน PythonAnywhere อีกครั้ง ใช่มั้ย? มา deploy กันอีกครั้ง
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+ต่อมา ใน [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,4 +213,4 @@ The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make
 
 In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
 
-And that should be it! Congrats :)
+และนั่นควรเสร็จแล้ว! ยินดีด้วย :)
