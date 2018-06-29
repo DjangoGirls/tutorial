@@ -414,12 +414,12 @@ KeyError: 'age'
 
 ดูสิ! เกิดข้อผิดพลาดอีกอันนึงแล้ว! อันนี้เรียกว่า **KeyError** Python พยายามช่วยเราด้วยการบอกว่า key ชื่อ `'age'` ไม่มีอยู่ใน dictionary
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+แล้วเราจะรู้ได้ไงว่าควรใช้ dictionary หรือ list ตอนไหน? นั่นสินะ นี่เป็นคำถามที่ตรงจุดเลยล่ะ ลองคิดหาทางออกในใจก่อนที่จะดูคำตอบในบรรทัดถัดไป
 
-- คุณต้องต้อการข้อมูลที่เป็นลำดับใช่หรือไหม? ใช้ list
-- คุณต้องการเชื่องโยงค่าข้อมูลโดยใช้ key เพื่อที่จะค้นหาได้ในภายหลังอย่างมีประสิทธิภาพ (โดยใช้ key)? ใช้ dictionary
+- ถ้าคุณต้องการข้อมูลที่เป็นลำดับ? ใช้ list
+- ถ้าคุณต้องการเชื่องโยงค่าข้อมูลโดยใช้ key เพื่อที่จะค้นหาได้ในภายหลังอย่างมีประสิทธิภาพ (โดยใช้ key)? ใช้ dictionary
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Dictionary ก็คล้ายๆกับ list คือมัน *mutable* หมายถึงเราสามารถแก้ไขค่าต่างๆ ข้างใน dictionary ได้ หลังจากที่เราสร้างมันขึ้นมาแล้ว คุณสามารถเพิ่ม key - value เข้าไปยัง dictionary ที่สร้างขึ้นมาแล้ว แบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+เช่นเดียวกับ list เราใช้ `len()` กับ dictionary เพื่อหาจำนวนคู่ของ key-value ใน dictionary ลองพิมพ์คำสั่งต่อไปนี้ดู:
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,9 +436,9 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+เราหวังว่าคุณคงเข้าใจมันบ้างแล้วนะ :) คุณพร้อมที่จะรับความสนุกของ dictionary แล้วใช่มั้ย? ลองอ่านต่อไปสิ สิ่งที่น่าอัศจรรย์อยู่ถัดไปจากบรรทัดนี้แล้ว
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+คุณสามารถใช้คำสั่ง `pop()` เพื่อลบสมาชิกภายใน dictionary ได้ เช่น ถ้าคุณต้องการลบรายการที่มี key `'favorite_numbers'` คุณแค่ใช้คำสั่งต่อไปนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -449,7 +449,7 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+อย่างที่คุณเห็นจากผลลัพธ์ ค่าของ key-value ที่อยู่ใน key 'favorite_number' ได้ถูกลบไปแล้ว
 
 As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
