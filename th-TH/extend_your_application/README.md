@@ -52,9 +52,9 @@ And how about `pk=post.pk`? `pk` is short for primary key, which is a unique nam
 
 สร้าง URL ไฟล์ `urls.py` สำหรับ `post_detail` *view* ของเรา!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+เราต้องการให้ละเอียดของโพสต์แรกของเรา แสดงที่นี่ **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
+เรามาสร้าง URL ในไฟล์ `blog/urls.py` ที่ชี้ให้ Django ไปยัง *view* ที่ใช้ชื่อ `post_detail`, ซึ่งจะแสดงหน้าโพสต์ และเพิ่มบรรทัด `url(r'^post/(?P<pk>+)/$', views.post_detail, name='post_detail'),` ที่ไฟล์ `blog/urls.py` ตอนนี้ ไฟล์ของคุณควรมีหน้าตาแบบนี้:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -72,23 +72,23 @@ This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain 
 
 - it starts with `^` again – "the beginning".
 - `post/` just means that after the beginning, the URL should contain the word **post** and a **/**. So far so good.
-- `(?P<pk>\d+)` – this part is trickier. มันหมายถึง Django จะรับข้อมูลเข้ามา และส่งต่อไปยัง view โดยผ่านตัวแปรชื่อ `pk` (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` หมายถึง ต้องมีตัวเลขอย่างน้อยหนึ่งหลัก So something like `http://127.0.0.1:8000/post//` is not valid, but `http://127.0.0.1:8000/post/1234567890/` is perfectly OK!
+- - `(?P<pk>+)` - ส่วนนี้จะซับซ้อนนิดหน่อย มันหมายถึง Django จะรับข้อมูลเข้ามา และส่งต่อไปยัง view โดยผ่านตัวแปรชื่อ `pk` (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` หมายถึง ต้องมีตัวเลขอย่างน้อยหนึ่งหลัก ดังนั้น ตัวอย่างเช่น `http://127.0.0.1:8000/post//` นั้นไม่ถูกต้อง, แต่ `http://127.0.0.1:8000/post/1234567890/` ใช้ได้ เพอร์เฟ็คเลย!
 - `/` – then we need a **/** again.
 - `$` – "the end"!
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+นั่นหมายถึง ถ้าคุณป้อน `http://127.0.0.1:8000/post/5/` เข้าไปยังเบราว์เซอร์ของคุณ Django จะเข้าใจว่าคุณกำลังมองหา *view* ที่ชื่อว่า `post_detail` และส่งข้อมูลคือ `pk` ซึ่งมีค่าเท่ากับ `5` ไปยัง *view*
 
 OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? Of course: adding a view!
+คุณจำได้มั้ยว่าขึ้นตอนต่อไปคืออะไร? แน่นอน: การเพิ่ม view ใหม่!
 
 ## เพิ่ม view รายละเอียดของโพสต์
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+ตอนนี้ *view* ของเราจะได้พารามิเตอร์เพิ่มเข้ามาคือ `pk` Our *view* needs to catch it, right? ดังนั้นเราจะสร้างฟังก์ชั่นใหม่ โดยใช้ `def post_detail(request, pk):` สังเกตว่าเราต้องใช้ชื่อเดียวกันกับชื่อที่เรากำหนดไว้ใน url (`pk`) การละเว้นตัวแปรนี้ จะทำให้เกิดข้อผิดพลาด!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+ตอนนี้ เราต้องการโพสต์เดียวเท่านั้น เราสามารถทำได้ โดยใช้ queryset แบบนี้:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -96,17 +96,17 @@ Now, we want to get one and only one blog post. To do this, we can use querysets
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+แต่โค้ดนี้มีปัญหา ถ้าเกิดว่ามันไม่มี `Post` ตามค่า `primary key` (`pk`) ที่ส่งมา เราจะได้ข้อผิดพลาดหน้าตาน่าเกลียดสุดๆ!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+เราไม่ต้องการแบบนี้! แต่ แน่ล่ะ Django มาพร้อมกับสิ่งที่สามารถจัดการปัญหานี้ได้: `get_object_or_404` ในกรณีที่ไม่มี `Post` จากค่า `pk` ที่ส่งไป มันจะแสดงหน้าเว็บที่ดูดีกว่าให้เรา (เรียกว่าหน้า `Page Not Found 404`)
 
 ![Page not found](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+ข่าวดีคือ คุณสามารถสร้างหน้า `Page not found` เป็นของคุณเองได้ และทำให้สวยแค่ไหนก็ได้ตามที่คุณต้องการ แต่ตอนนี้ยังมันไม่จำเป็นเท่าไหร่นัก เราจะขอข้ามไปก่อน
 
-OK, time to add a *view* to our `views.py` file!
+เอาล่ะ ได้เวลาเพิ่ม *view* ไปยังไฟล์ `views.py` ของเราแล้ว!
 
 In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
@@ -128,21 +128,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+ได้เวลาโหลดหน้าเว็บนี้ใหม่: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+ใช้ได้แล้ว! แต่ เกิดอะไรขึ้นเมื่อคุณคลิกที่ลิงค์บนหัวข้อโพสต์?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+โอ้ ไม่นะ! ข้อผิดพลาดอีกอันแล้ว! แต่เรารู้วิธีรับมือปัญหานี้แล้ว ใช่มั้ย? เราต้องเพิ่ม template ยังไงล่ะ!
 
-## Create a template for the post details
+## สร้าง template ที่แสดงหน้ารายละเอียดของโพสต์
 
-We will create a file in `blog/templates/blog` called `post_detail.html`.
+เราจะสร้างไฟล์ใน `blog/templates/blog` ที่ชื่อ `post_detail.html`.
 
-It will look like this:
+ผลลัพธ์ควรมีหน้าตาแบบนี้:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -162,9 +162,9 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+เป็นอีกครั้งที่เรา extend ไฟล์ `base.html` ใน block `content` เราต้องการแสดง published_date ของโพสต์ (ถ้ามี), หัวข้อ และ เนื้อหา แต่เราควรจะมาปรึกษากันถึงเรื่องสำคัญอีกอย่างก่อน ดีมั้ย?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` คือ template tag ที่เราสามารถใช้ เมื่อเราต้องการตรวจสอบบางอย่าง (จำ `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
 OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
