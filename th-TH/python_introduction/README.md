@@ -826,27 +826,27 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+คุณไม่จำเป็นต้องเขียนคอมเม้นท์ในทุกๆบรรทัดของโค้ด แต่มันจะมีประโยชน์ในการช่วยอธิบายว่าโค้ดของคุณทำอะไร หรือช่วยในการสรุปเมื่อคุณเขียนโค้ดที่ซับซ้อน
 
 ### บทสรุป
 
-In the last few exercises you learned about:
+ในแบบฝึกหัดด้านบน คุณได้เรียนรู้เกี่ยวกับ:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **การเปรียบเทียบสิ่งต่างๆ** - ใน Python คุณสามารถเปรียบเทียบสิ่งต่างๆ โดยใช้ `>`, `>=`, `==`, `<=`, `<` และ `and`, `or`
+- **Boolean** - คือชนิดของวัตถุซึ่งมีเพียงสองค่าคือ: `True` และ `False`
+- **การบันทึกไฟล์** - คือการบันทึกโค้ดลงในไฟล์ ทำให้คุณสามารถรันโปรแกรมขนาดใหญ่ได้
+- **if... elif... else** - ช่วยให้คุณรันโค้ดเมื่อตรงตามเงื่อนไขที่ต้องการ
+- **comments** - เป็นบรรทัดที่ Python จะไม่รัน ช่วยให้คุณสามารถเขียนโน้ตเล็กๆเกี่ยวกับโค้ดนั้นๆได้
 
-Time for the last part of this chapter!
+เอาล่ะ ได้เวลาสำหรับส่วนสุดท้ายในบทนี้แล้ว!
 
 ## สร้างฟังก์ชั่นของคุณเอง!
 
 > สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Dictionaries](https://www.youtube.com/watch?v=5owr-6suOl0)
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+จำฟังก์ชัน เช่น `len()` ที่คุณรันใน Python ได้ไหม? เอาล่ะ ข่าวก็ดีคือ - ตอนนี้คุณจะได้เรียนรู้วิธีเขียนฟังก์ชันของคุณเอง!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+ฟังก์ชันคือลำดับของคำสั่งที่ Python จะดำเนินการหรือรัน แต่ละฟังก์ชันใน Python เริ่มด้วยคำว่า `def` ตามด้วยชื่อ และสามารถรับพารามิเตอร์ได้ เราลองมาสร้างฟังก์ชั่นกัน แทนที่โค้ดในไฟล์ **python_intro.py** ให้เป็นด้านล่างนี้:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -871,9 +871,9 @@ hi()
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+หมายเหตุ: ถ้ามันไม่ทำงาน ไม่ต้องตกใจ ผลลัพธ์จะช่วยให้คุณเข้าใจว่าทำไม:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
+- ถ้ามันโชว์ว่า `NameError` นั่นหมายถึงคุณพิมพ์อะไรผิด ดังนั้นคุณควรตรวจสอบว่า คุณใช้ชื่อเดียวกันเมื่อสร้างฟังก์ชั่นด้วย เช่นคุณสร้างฟังก์ชั่นชื่อ ` def hi(): ` เมื่อคุณเรียกใช้ฟังก์ชั่น ก็ควรเรียกใช้ชื่อ `hi()` เป็นต้น
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
 - If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
 
