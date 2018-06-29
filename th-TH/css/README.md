@@ -66,7 +66,7 @@ Django จะค้นหาโฟลเดอร์ชื่อ "static" ใน
 
 ในที่นี้เราจะไม่ลงรายละเอียดไปถึงการปรับแต่งและการเรียนเกี่ยวกับ CSS ที่ลึกมากเกินไป ที่ด้านล่างของเพจนี้จะมีรายละเอียดเกี่ยวกับคอร์ส CSS ฟรี ถ้าคุณต้องการที่จะเรียนรู้เพิ่มเติม
 
-แต่ตอนนี้เราจะลองตกแต่งสักเล็กน้อย บางทีเราอาจจะลองเปลี่ยนสีข้อความส่วนหัวของเรา? การจะเข้าใจสีนั้น คอมพิวเตอร์จะใช้รหัสพิเศษ These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. คุณอาจใช้ [สีที่กำหนดไว้แล้ว](http://www.w3schools.com/colors/colors_names.asp) เช่น `red` และ `green`.
+แต่ตอนนี้เราจะลองตกแต่งสักเล็กน้อย บางทีเราอาจจะลองเปลี่ยนสีข้อความส่วนหัวของเรา? การจะเข้าใจสีนั้น คอมพิวเตอร์จะใช้รหัสพิเศษ โค้ดเหล่านี้ขึ้นต้นด้วย `#` แล้วตามด้วยตัวอักษร 6 ตัว (A ถึง F) และตัวเลข (0 ถึง 9) ตัวอย่างเช่น โค้ดสำหรับสีฟ้าคือ `#0000FF` คุณสามารถหารหัสสีต่างๆได้จากเว๊บนี้ http://www.colorpicker.com/ คุณอาจใช้ [สีที่กำหนดไว้แล้ว](http://www.w3schools.com/colors/colors_names.asp) เช่น `red` และ `green`.
 
 ในไฟล์ `blog/static/css/blog.css` ของคุณ ควรเพิ่มโค้ดต่อไปนี้ลงไป:
 
@@ -86,7 +86,7 @@ h1 a {
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+คุณสามารถอ่านเพิ่มเติมได้ที่นี่ [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp)
 
 We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
 
@@ -149,7 +149,7 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+แอดนี่ไปยัง CSS ของคุณ บันทึกไฟล์แล้วดูว่ามันใช้งานได้มั้ย!
 
 ![รูปที่ 14.3](images/margin2.png)
 
@@ -253,6 +253,9 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
+ 
+Text
+XPath: /pre[14]/code
 ```
 
 จากนั้นแทนที่โค้ด HTML ที่แสดงโพสต์ของเราด้วยโค้ดที่เราได้ทำกับปรับแต่งหน้าตา:
