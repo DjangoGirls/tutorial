@@ -10,7 +10,7 @@
 
 > สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Integers, Strings, Lists, Variables และ Errors](https://www.youtube.com/watch?v=MO63L4s-20U)
 
-ก่อนที่เราจะเริ่มลองใช้ Python เราจะต้องเปิด *command line* บนคอมพิวเตอร์ของคุณซะก่อน คุณควรที่จะรู้ว่าคุณต้องทำยังไง คุณเรียนมันไปแล้วในบท [Intro to Command Line](../intro_to_command_line/README.md)
+ก่อนที่เราจะเริ่มใช้งาน Python เราจะต้องเปิด *command line* บนคอมพิวเตอร์ของคุณซะก่อน คุณควรที่จะรู้ว่าคุณต้องทำยังไง คุณเรียนมันไปแล้วในบท [Intro to Command Line](../intro_to_command_line/README.md)
 
 เมื่อคุณพร้อม ก็เริ่มทำตามขั้นตอนด้านล่างนี้ได้เลย
 
@@ -45,7 +45,7 @@
 - `5 - 1`
 - `40 / 2`
 
-ในการคำนวณเลขยกกำลัง เช่น 2 ยกกำลัง 3 เราก็พิมพ์ {% filename %}command-line{% endfilename %}
+ในการคำนวณเลขยกกำลัง เช่น 2 ยกกำลัง 3 เราก็พิมพ์: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
@@ -67,7 +67,7 @@
 'Ola'
 ```
 
-คุณเพิ่งสร้าง string แรกของคุณ! String เป็นลำดับของตัวอักษรหลายๆตัวเรียงต่อกันที่สามารถประมวลผลได้โดยคอมพิวเตอร์ String ต้องขึ้นต้นและลงท้ายด้วยตัวอักษรตัวเดียวกันเสมอ มันอาจจะเป็นอัญประกาศเดี่ยว (`'`) หรืออัญประกาศคู่ (`"`) (ซึ่งก็ไม่ได้ต่างกัน!) เครื่องหมายคำพูดหรืออัญประกาศเหล่านี้จะบอก Python ว่าข้างในนั้นคือ string
+คุณเพิ่งสร้าง string แรกของคุณ! String เป็นลำดับของตัวอักษรหลายๆตัวเรียงต่อกันที่สามารถประมวลผลได้โดยคอมพิวเตอร์ String นั้นต้องอยู่ในเครื่องหมายคำพูดหรืออัญประกาศเสมอ มันอาจจะเป็นอัญประกาศเดี่ยว (`'`) หรืออัญประกาศคู่ (`"`) (ซึ่งก็ไม่ได้ต่างกัน!) เครื่องหมายคำพูดหรืออัญประกาศเหล่านี้จะบอก Python ว่าข้างในนั้นคือ string
 
 เราสามารถมัด String รวมกันได้ ลองนี่:
 
@@ -127,7 +127,7 @@
 3
 ```
 
-คุณสงสัยมั้ยว่า ทำไมบางครั้งคุณเรียกใช้ฟังก์ชั่นโดยมี `.` อยู่ท้าย string (เช่น `"Ola".upper()`) และบางครั้งก็เรียกใช้ฟังก์ชั่นโดยมี string อยู่ในวงเล็บ? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+คุณสงสัยมั้ยว่า ทำไมบางครั้งคุณเรียกใช้ฟังก์ชั่นโดยมี `.` อยู่ท้าย string (เช่น `"Ola".upper()`) และบางครั้งก็เรียกใช้ฟังก์ชั่นโดยมี string อยู่ในวงเล็บ? คืองี้ บางกรณี ฟังก์ชั่นก็เป็นของวัตถุ เช่น `upper()` ซึ่งสามารถใช้ได้เฉพาะกับ string ในกรณีนี้ เราเรียกฟังก์ชั่นว่า **method** Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### บทสรุป
 
