@@ -1033,7 +1033,7 @@ And when we run it:
 
 As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-You can also use `for` on numbers using the `range` function:
+คุณสามารถใช้ `for` กับตัวเลขได้เช่นกัน โดยใช้ฟังก์ชั่น `range`
 
 {% filename %}python_intro.py{% endfilename %}
 
