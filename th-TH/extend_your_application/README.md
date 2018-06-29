@@ -2,13 +2,13 @@
 
 # เพิ่มความสามารถให้เว็บคุณ
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+เราได้เรียนรู้ขั้นตอนทั้งหมดในการสร้างเว็บไซต์แล้ว: เรารู้วิธีสร้าง โมเดล, url, view และ template รวมถึงการทำให้เว็บเราดูดีขึ้น
 
-Time to practice!
+ได้เวลาฝึกแล้ว!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+สิ่งแรกที่เราต้องการสำหรับบล็อกของเราคือ หน้าเว็บที่จะแสดงโพสต์หนึ่งโพสต์ของเรา ถูกมั้ย?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+ซึ่งเรามีโมเดล `Post` แล้ว ดังนั้น เราไม่จำเป็นต้องเพิ่มอะไรลงไปใน `models.py`.
 
 ## สร้าง template ที่แสดงหน้ารายละเอียดของโพสต์
 
@@ -38,19 +38,19 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %}ได้เวลาอธิบายบรรทัดเหล่านี้แล้ว `{% url 'post_detail' pk=post.pk %}` คุณอาจสงสัยว่าสัญลักษณ์ `{% %}` นี้หมายถึงอะไร มันหมายถึง เรากำลังใช้ template tag ของ Django ตอนนี้เราจะใช้มันเพื่อสร้าง URL ให้กับเรา!{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
 And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+ตอนนี้ เปิดหน้า: http://127.0.0.1:8000/ เราจะเจอข้อผิดพลาด (ตามที่คาดเอาไว้, เนื่องจากเรายังไม่มี URL หรือ *view* สำหรับ `post_detail`) โดยมีหน้าตาแบบนี้:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
 ## สร้าง URL สำหรับ รายละเอียดโพสต์
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+สร้าง URL ไฟล์ `urls.py` สำหรับ `post_detail` *view* ของเรา!
 
 We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
