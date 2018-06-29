@@ -596,10 +596,10 @@ False
 
 - ออกจาก Python interpreter
 - เปิดโปรแกรมแก้ไขโค้ดที่เราเลือก
-- บันทึกโค้ด python บางอย่างลงไฟล์
+- บันทึกโค้ดลงในไฟล์ python ไฟล์ใหม่
 - แล้วเรียกใช้มัน!
 
-To exit from the Python interpreter that we've been using, simply type the `exit()` function
+เราสามารถออกจาก Python interpreter ที่เราใช้อยู่ เพียงแค่เรียกใช้ฟังก์ชัน `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -618,18 +618,18 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+จริงๆ แล้วตอนนี้ คุณก็มีความรู้เกี่ยวกับ Python พอตัวแล้ว งั้นลองเขียนโค้ดที่คุณได้เรียนจากวันนี้ดู
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+ตอนนี้เราต้องบันทึกไฟล์ และตั้งชื่อที่มีความหมาย เราจะตั้งชื่อว่า **python_intro.py** และบันทึกไฟล์เก็บไว้ที่หน้าจอเดสก์ท็อปของคุณ เราสามารถตั้งชื่อไฟล์อะไรใดก็ได้ที่เราต้องการ แต่สิ่งที่สำคัญก็คือชื่อไฟล์ต้องลงท้ายด้วย **.py** นามสกุล **.py** จะบอกระบบปฏิบัติการว่าเป็น **python executable file** และ Python สามารถรันไฟล์นี้ได้
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. มีชื่อเรียกว่า "syntax highlighting" และเป็นฟีเจอร์ที่มีประโยชน์มากๆ เมื่อเขียนโค้ด The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). นี่เป็นหนึ่งเหตุผลว่าทำไมเราถึงใช้โปรแกรมแก้ไขโค้ด. :)
+> **หมายเหตุ** คุณคงสังเกตเห็นสิ่งที่เจ๋งสุดๆอย่างนึงของ code editor นั้นก็คือสีนั่นเอง! ในคอนโซล Python ทุกอย่างจะเป็นสีเดียวกันหมด ตอนนี้คุณจะเห็นว่าฟังก์ชัน `print` มีสีที่ต่างจาก string มันมีชื่อว่า "syntax highlighting" และเป็นฟีเจอร์ที่มีประโยชน์มากๆ เมื่อเขียนโค้ด The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). นี่เป็นหนึ่งเหตุผลว่าทำไมเราถึงใช้โปรแกรมแก้ไขโค้ด. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+เรามีไฟล์แล้ว ตอนนี้ถึงเวลาที่เราจะรันมัน! โดยใช้ความรู้ที่เราเรียนมาในบทการใช้บรรทัดคำสั่ง ใช้เทอร์มินัลโดย **เปลี่ยนไดเรกทอรี** ไปยังหน้าจอเดสก์ท็อป
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+บน Mac คำสั่งที่ใช้จะมีลักษณะแบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,7 +641,7 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+บน Linux จะมีลักษณะแบบนี้ (คำว่า "Desktop" อาจจะถูกแปลเป็นภาษาของคุณ):
 
 {% filename %}command-line{% endfilename %}
 
@@ -652,7 +652,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+บน Windows Command Prompt จะมีลักษณะแบบนี้
 
 {% filename %}command-line{% endfilename %}
 
@@ -663,7 +663,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+และบน Windows Powershell จะมีลักษณะแบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,7 +672,7 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, just ask for help.
+ถ้าคุณมีปัญหา ขอความช่วยเหลือได้เลย
 
 Now use Python to execute the code in the file like this:
 
