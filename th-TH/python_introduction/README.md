@@ -901,7 +901,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+ข้อควรจำ: ฟังก์ชั่น `print` จะเยื้องเข้าไปสี่วรรคภายในคำสั่ง `if` นั่นเป็นเพราะฟังก์ชั่นจะถูกเรียกใช้ก็ต่อเมื่อเงื่อนไขถูกต้อง เรามาดูกันว่ามันทำงานยังไง:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -912,7 +912,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-อุ๊ย เกิดข้อผิดพลาดขึ้นล่ะ แต่โชคดี ที่ Python โชว์ข้อความที่ค่อนข้างเป็นประโยชน์เพื่อบอกเราว่าข้อผิดพลาดเกิดจากอะไร It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. มาแก้ไขที่ด้านล่างของไฟล์กัน:
+อุ๊ย เกิดข้อผิดพลาดขึ้นล่ะ แต่โชคดี ที่ Python โชว์ข้อความที่ค่อนข้างเป็นประโยชน์เพื่อบอกเราว่าข้อผิดพลาดเกิดจากอะไร มันบอกเราว่า ฟังก์ชัน `hi()` (ที่เราสร้างไว้) ต้องการหนึ่งพารามิเตอร์ (เรียกว่า `name`) และเราลืมใส่พารามิเตอร์ในฟังก์ชั่น <0>hi()</0> เมื่อเราเรียกใช้มัน มาแก้ไขที่ด้านล่างของไฟล์กัน:
 
 {% filename %}python_intro.py{% endfilename %}
 
