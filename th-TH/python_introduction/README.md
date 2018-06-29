@@ -183,7 +183,7 @@ An important concept in programming is variables. A variable is nothing more tha
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+เราก็พิมพ์ name เท่ากับ Ola
 
 As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
@@ -1057,7 +1057,7 @@ Which would print:
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## ภาพรวม
+## บทสรุป
 
 That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
