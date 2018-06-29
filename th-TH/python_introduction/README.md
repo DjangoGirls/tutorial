@@ -155,7 +155,7 @@ TypeError: object of type 'int' has no len()
 
 เราเพิ่งเจอข้อผิดพลาดแรกของเรา! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. การทำผิดพลาด (รวมถึงความผิดพลาดที่เจตนา) เป็นส่วนสำคัญของการเรียนรู้!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+ข้อผิดพลาดนี้บอกเราว่า "int" (integer หรือ จำนวนเต็ม) นั้นไม่สามารถหาความยาวได้ แล้วเราจำทำยังไงล่ะทีนี้? บางทีเราน่าจะเปลี่ยนให้ตัวเลขของเราเป็น string? เพราะ string มีความยาว จริงมั๊ย?
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,7 +173,7 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 
 ## ตัวแปร
 
-An important concept in programming is variables. ตัวแปรนั้นไม่มีอะไรมากกว่าการเป็นชื่อ ที่คุณสามารถนำไปใช้ในภายหลังได้ โปรแกรมเมอร์ใช้ตัวแปรในการเก็บข้อมูล มันทำให้อ่านโค้ดได้ง่ายขึ้นและยังช่วยให้พวกเขาไม่ต้องจำค่าต่างๆที่อยู่ในโปรแกรม
+แนวคิดสำคัญในการเขียนโปรแกรมคือ การใช้ตัวแปร ตัวแปรนั้นไม่มีอะไรมากกว่าการเป็นชื่อ ที่คุณสามารถนำไปใช้ในภายหลังได้ โปรแกรมเมอร์ใช้ตัวแปรในการเก็บข้อมูล มันทำให้อ่านโค้ดได้ง่ายขึ้นและยังช่วยให้พวกเขาไม่ต้องจำค่าต่างๆที่อยู่ในโปรแกรม
 
 สมมุติว่าเราอยากจะสร้างตัวแปลที่ใช้ชื่อว่า `name`:
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+วู้ฮู้วว! ตัวแปรแรกของคุณ! :) คุณสามารถเปลี่ยนค่าที่ตัวแปรสื่อถึงได้ตลอดนะ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+คุณใช้มันในฟังก์ชั่นก็ได้นะ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -236,11 +236,11 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+เออเร่อ! คุณจะเห็นได้ว่า Python มีข้อผิดพลาดหลากหลายชนิด และข้อผิดพลาดนี้เรียกว่า **NameError** Python จะแสดงข้อผิดพลาดนี้ออกมา ถ้าคุณพยายามใช้ตัวแปรที่ยังไม่มีหรือยังไม่ได้กำหนด ถ้าคุณพบข้อผิดพลาดนี้ในภายหลัง ลองตรวจโค้ดของคุณดู คุณอาจจะพิมพ์ชื่อผิดซักที่ก็เป็นได้
 
-Play with this for a while and see what you can do!
+ลองเล่นกับมันดูนะ และดูว่าคุณสามารถทำอะไรได้แค่ไหน!
 
-## ฟังก์ชันการแสดงผล
+## ฟังก์ชั่นการแสดงผล
 
 ลองนี่:
 
@@ -254,9 +254,9 @@ Play with this for a while and see what you can do!
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. เมื่อคุณใช้ `print(name)` Python จะ "แสดง" เนื้อหาที่อยู่ในตัวแปรออกมาบนหน้าจอ โดยที่ไม่มีเครื่องหมายอัญประกาศ ซึ่งจะดูเรียบร้อยกว่า
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+เราจะเห็นได้ในภายหลังว่า `print()` นั้นมีประโยชน์เมื่อเราต้องการแสดงผลของค่าบางอย่างที่อยู่ข้างในฟังก์ชั่น หรือเมื่อเราต้องการแสดงผลทีละหลายๆ บรรทัด
 
 ## List
 
