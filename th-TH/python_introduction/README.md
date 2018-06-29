@@ -828,7 +828,7 @@ if volume < 20 or volume > 80:
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
-### ภาพรวม
+### บทสรุป
 
 In the last few exercises you learned about:
 
