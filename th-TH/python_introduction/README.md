@@ -67,9 +67,9 @@
 'Ola'
 ```
 
-คุณเพิ่งสร้าง string แรกของคุณ! String เป็นลำดับของตัวอักษรหลายๆตัวเรียงต่อกันที่สามารถประมวลผลได้โดยคอมพิวเตอร์ String นั้นต้องอยู่ในเครื่องหมายคำพูดหรืออัญประกาศเสมอ มันอาจจะเป็นอัญประกาศเดี่ยว (`'`) หรืออัญประกาศคู่ (`"`) (ซึ่งก็ไม่ได้ต่างกัน!) เครื่องหมายคำพูดหรืออัญประกาศเหล่านี้จะบอก Python ว่าข้างในนั้นคือ string
+คุณเพิ่งสร้าง string แรกของคุณ! String เป็นลำดับของตัวอักษรหลายๆตัวเรียงต่อกันที่สามารถประมวลผลได้โดยคอมพิวเตอร์ String นั้นต้องอยู่ในเครื่องหมายคำพูดหรืออัญประกาศเสมอ มันอาจจะเป็นอัญประกาศเดี่ยว (`'`) หรืออัญประกาศคู่ (`"`) (ซึ่งเราสามารถใช้ได้ทั้งคู่!) เครื่องหมายคำพูดหรืออัญประกาศเหล่านี้จะบอก Python ว่าข้างในนั้นคือ string
 
-เราสามารถมัด String รวมกันได้ ลองนี่:
+เราสามารถนำ String มารวมกันได้ ลองนี่:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@
 'Hi there Ola'
 ```
 
-คุณสามารถคูณ string กับตัวเลขได้:
+นอกจากนี้ คุณยังสามารถคูณจำนวน string ได้อีกด้วย:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,7 +87,7 @@
 'OlaOlaOla'
 ```
 
-ถ้าคุณต้องการใส่เครื่องหมายวรรคตอนหรืออะพอสทรอฟี (') ใน string คุณสามารถทำได้สองทาง
+ถ้าคุณต้องการใส่เครื่องหมายวรรคตอนหรืออะพอสทรอฟี (') ใน string คุณสามารถทำได้สองวิธี
 
 ใช้เครื่องหมายอัญประกาศคู่:
 
@@ -127,7 +127,7 @@
 3
 ```
 
-คุณสงสัยมั้ยว่า ทำไมบางครั้งคุณเรียกใช้ฟังก์ชั่นโดยมี `.` อยู่ท้าย string (เช่น `"Ola".upper()`) และบางครั้งก็เรียกใช้ฟังก์ชั่นโดยมี string อยู่ในวงเล็บ? คืองี้ บางกรณี ฟังก์ชั่นก็เป็นของวัตถุ เช่น `upper()` ซึ่งสามารถใช้ได้เฉพาะกับ string ในกรณีนี้ เราเรียกฟังก์ชั่นว่า **method** Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+คุณสงสัยมั้ยว่า ทำไมบางครั้งคุณเรียกใช้ฟังก์ชั่นโดยมี `.` อยู่ท้าย string (เช่น `"Ola".upper()`) และบางครั้งก็เรียกใช้ฟังก์ชั่นโดยมี string อยู่ในวงเล็บ? คืองี้ บางกรณี ฟังก์ชั่นก็เป็นของวัตถุ เช่น `upper()` ซึ่งสามารถใช้ได้เฉพาะกับ string ในกรณีนี้ เราเรียกฟังก์ชั่นว่า **method** กรณีอื่นๆ ที่ฟังก์ชั่นไม่ได้เป็นของวัตถุใดวัตถุหนึ่ง และยังสามารถใช้ได้กับวัตถุชนิดอื่นๆ ได้ เช่น `len()` นั่นคือเหตุผลที่เราใช้ `"Ola"` เป็นพารามิเตอร์ให้กับฟังก์ชัน `len`
 
 ### บทสรุป
 
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-เราเพิ่งเจอข้อผิดพลาดแรกของเรา! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+เราเพิ่งเจอข้อผิดพลาดแรกของเรา! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. การทำผิดพลาด (รวมถึงความผิดพลาดที่เจตนา) เป็นส่วนสำคัญของการเรียนรู้!
 
 It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
