@@ -58,7 +58,7 @@
 
 ## String
 
-ชื่อคุณเป็นไง? ลองพิมพ์ชื่อของคุณในเครื่องหมายคำพูด แบบนี้:
+ชื่อคุณเป็นไง? ลองพิมพ์ชื่อของคุณในเครื่องหมายคำพูดหรืออัญประกาศ แบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@
 'Ola'
 ```
 
-คุณเพิ่งสร้าง string แรกของคุณ! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+คุณเพิ่งสร้าง string แรกของคุณ! String เป็นลำดับของตัวอักษรหลายๆตัวเรียงต่อกันที่สามารถประมวลผลได้โดยคอมพิวเตอร์ String ต้องขึ้นต้นและลงท้ายด้วยตัวอักษรตัวเดียวกันเสมอ มันอาจจะเป็นอัญประกาศเดี่ยว (`'`) หรืออัญประกาศคู่ (`"`) (ซึ่งก็ไม่ได้ต่างกัน!) เครื่องหมายคำพูดหรืออัญประกาศเหล่านี้จะบอก Python ว่าข้างในนั้นคือ string
 
-Strings can be strung together. Try this:
+เราสามารถมัด String รวมกันได้ ลองนี่:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+คุณสามารถคูณ string กับตัวเลขได้:
 
 {% filename %}command-line{% endfilename %}
 
