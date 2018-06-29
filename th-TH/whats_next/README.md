@@ -2,17 +2,17 @@
 
 ยินดีกับความสำเร็จของคุณ! **คุณเจ๋งสุดๆไปเลย** เราภูมิใจในตัวคุณนะ! <3
 
-### ทำอะไรต่อจากนี้?
+### แล้วตอนนี้เราจะทำอะไรดี?
 
-พักสักครู่และผ่อนคลาย คุณเพิ่งทำบางสิ่งที่ยิ่งใหญ่ได้สำเร็จมา
+พักสักแป๊บให้รู้สึกผ่อนคลาย คุณเพิ่งทำบางสิ่งที่ยิ่งใหญ่ไปนะ
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+หลังจากนั้น อย่าลืมที่จะติดตาม Django Girls บน [Facebook](http://facebook.com/djangogirls) หรือ [Twitter](https://twitter.com/djangogirls) เพื่อรับข่าวสารล่าสุด
 
-### แนะนำบทเรียนเพิ่มเติมให้ได้ไหม?
+### คุณแนะนำบทเรียนเพิ่มเติมให้ได้ไหม?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
+แน่นอนอยู่แล้ว! อันดับแรกเลย ลองหาหนังสือเล่มนี้ดู มันชื่อ [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
 
-Later on, you can try the resources listed below. They're all very recommended!
+หลังจากนั้น คุณก็ลองใช้แหล่งข้อมูลด้านล่างนี้ได้ มันน่าสนใจมากๆเลยล่ะ
 
 - [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 - [New Coder tutorials](http://newcoder.io/tutorials/)
