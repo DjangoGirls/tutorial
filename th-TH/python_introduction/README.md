@@ -87,9 +87,9 @@
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+ถ้าคุณต้องการใส่เครื่องหมายวรรคตอนหรืออะพอสทรอฟี (') ใน string คุณสามารถทำได้สองทาง
 
-Using double quotes:
+ใช้เครื่องหมายอัญประกาศคู่:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+หรือใช้เครื่องหมายวรรคตอนหรืออะพอสทรอฟรีร่วมกับเครื่องหมายทับขวา (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+เจ๋งใช่มั้ยล่ะ? ถ้าอยากให้ชื่อของคุณเป็นตัวพิมพ์ใหญ่ทั้งหมด ก็แค่พิมพ์:
 
 {% filename %}command-line{% endfilename %}
 
