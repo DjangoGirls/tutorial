@@ -305,7 +305,7 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+อย่างที่คุณเห็น ตัวเลขในลิสต์ของคุณถูกเรียงจากน้อยไปหามาก ยินดีด้วย!
 
 Maybe we want to reverse that order? Let's do that!
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+ถ้าคุณอยากจะเพิ่มอะไรซักอย่างเข้าไปในลิสต์ คุณสามารถทำได้โดยใช้คำสั่ง:
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+ถ้าคุณต้องการจะแสดงเฉพาะหมายเลขแรก คุณสามารถทำได้โดยใช้ **indexes** ดัชนีคือตัวเลขที่บอกตำแหน่งของสิ่งที่อยู่ในลิสต์ Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -357,7 +357,7 @@ To delete something from your list you will need to use **indexes** as we learne
 
 มันทำงานได้ถูกต้องเหมือนมีเวทมนตร์เลยล่ะ!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+เพื่อความสนุกยิ่งขึ้น ลองใช้ค่าดัชนีอื่นๆ เช่น: 6, 7, 1000, -1, -6 หรือ -1000 แล้วดูว่าคุณสามารถเดาผลลัพธ์ก่อนที่จะลองพิมพ์คำสั่งได้มั้ย แล้วผลลัพธ์ที่ว่า มันสมเหตุสมผลมั้ย?
 
 You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
