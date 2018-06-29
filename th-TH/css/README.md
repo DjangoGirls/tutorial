@@ -202,7 +202,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 </div>
 ```
 
-เราจะเพิ่มส่วนประกาศ ที่จะใช้เลือกในแต่ละบล็อคที่เราได้กำหนด ตัวเลือกที่เริ่มต้นด้วยเครื่องหมายจุด `.` จะใช้กับการเลือก class There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. สำหรับตอนนี้ คัดลอกและวางลงในไฟล์ `blog/static/css/blog.css` ของคุณ:
+เราจะเพิ่มส่วนประกาศ ที่จะใช้เลือกในแต่ละบล็อคที่เราได้กำหนด ตัวเลือกที่เริ่มต้นด้วยเครื่องหมายจุด `.` จะใช้กับการเลือก class There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. สำหรับตอนนี้ คัดลอกและวาง `blog/static/css/blog.css` ลงในไฟล์ของคุณ:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
