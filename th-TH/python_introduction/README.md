@@ -338,9 +338,9 @@ When you just type `name`, the Python interpreter responds with the string *repr
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+คุณจะเห็นได้ว่า คุณสามารถเข้าถึงสิ่งที่อยู่ใน list โดยใช้ชื่อของ list และระบุดัชนีตำแหน่งข้างในวงเล็บเหลี่ยม
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. เรามาลองทำตามตัวอย่างนี้เพื่อทบทวนสิ่งที่เรียนมาข้างต้น เราจะทำการลบเลขตัวแรกออกจาก list ของเรา
 
 {% filename %}command-line{% endfilename %}
 
@@ -359,13 +359,13 @@ To delete something from your list you will need to use **indexes** as we learne
 
 เพื่อความสนุกยิ่งขึ้น ลองใช้ค่าดัชนีอื่นๆ เช่น: 6, 7, 1000, -1, -6 หรือ -1000 แล้วดูว่าคุณสามารถเดาผลลัพธ์ก่อนที่จะลองพิมพ์คำสั่งได้มั้ย แล้วผลลัพธ์ที่ว่า มันสมเหตุสมผลมั้ย?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+คุณสามารถหาฟังก์ชั่นทั้งหมดของ list ได้จากเอกสารในเว็บ Python: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dictionary
 
 > สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c)
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Dictionary นั่นก็คล้ายๆกับ list แต่การเข้าถึงค่าของตัวแปรข้างในต้องใช้ key แทนที่ดัชนี ซึ่ง key นั้นสามารถเป็นได้ทั้ง string หรือ ตัวเลข ส่วนไวยากรณ์(วากยสัมพันธ์) สำหรับสร้าง dictionary เปล่าๆนั้นคือ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,9 +374,9 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+นี่แสดงว่า คุณเพิ่งสร้าง dictionary เปล่าขึ้นมาแล้ว ฮูเร่!
 
-Now, try writing the following command (try substituting your own information, too):
+ตอนนี้ มาลองใช้คำสั่งตามนี้ (ลองเปลี่ยนข้อมูลข้างในด้วยนะ):
 
 {% filename %}command-line{% endfilename %}
 
@@ -384,13 +384,13 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+คำสั่งนี้ เป็นการสร้างตัวแปร ชื่อ `participant` ซึ่งมี key-value สามค่า:
 
-- key ชื่อ `name` ชี้ไปยัง value `'Ola'` (เป็นวัตถุประเภท `string`)
+- Key ชื่อ `name` ชี้ไปยังค่า `'Ola'` (เป็นวัตถุประเภท `string`)
 - `country` ชี้ไปยัง `'Poland'` (เป็น `string` อีกอัน),
 - และ `favorite_numbers` ชี้ไปยัง `[7, 42, 92]` (เป็น `list` ที่มีตัวเลขสามตัวข้างใน)
 
-You can check the content of individual keys with this syntax:
+คุณสามารถตรวจสอบค่าที่อยู่ในแต่ละ key ได้จาก:
 
 {% filename %}command-line{% endfilename %}
 
@@ -399,9 +399,9 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+เห็นรึเปล่าว่ามันคล้าย list นะ และคุณไม่จำเป็นต้องจำดัชนี ใช้แค่จำชื่อก็พอ
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+จะเกิดไรขึ้น ถ้าคุณต้องการหาค่าจาก key ที่ไม่มีอยู่จริง? มาลองดูกัน!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,7 +412,7 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+ดูสิ! เกิดข้อผิดพลาดอีกอันนึงแล้ว! อันนี้เรียกว่า **KeyError** Python พยายามช่วยเราด้วยการบอกว่า key ชื่อ `'age'` ไม่มีอยู่ใน dictionary
 
 When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
 
