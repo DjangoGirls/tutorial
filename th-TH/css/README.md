@@ -300,7 +300,7 @@ XPath: /pre[14]/code
 
 วู้ฮู้! มันดูเจ๋งสุดๆเลยใช่มั้ยล่ะ? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. คุณจะเปลี่ยนตรงไหนถ้าคุณอยากจะทำให้วันที่เปลี่ยนเป็นสีฟ้าเทอร์คอยซ์?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Don't be afraid to tinker with this CSS a little bit and try to change some things. ลองเล่นกับ CSS แล้วมันจะช่วยให้คุณเข้าใจว่าสิ่งต่างๆทำงานยังไง ถ้าคุณทำมันเจ๊ง ก็ไม่ต้องห่วง คุณสามารถใช้คำสั่งย้อนกลับ (undo) ได้!
 
 เราแนะนำให้คุณลงเรียนคอร์สออนไลน์ฟรีเหล่านี้ [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web) มันจะช่วยให้คุณเรียนรู้เกี่ยวกับการทำให้เว็บไซต์ของคุณสวยขึ้นด้วย CSS
 
