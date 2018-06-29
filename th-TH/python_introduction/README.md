@@ -725,9 +725,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-สังเกตวิธีที่เราเยื้องบรรทัดถัดลงมาโดยใช้ 4 ช่องว่างไหม? เราต้องทำแบบนี้เพื่อให้ Python รู้ว่า เราต้องการรันโค้ดถ้าเงื่อนไขนั้นเป็นจริง คุณสามารถเว้นช่องว่างไว้ช่องเดียวได้นะ แต่โปรแกรมเมอร์ Python เกือบทุกคนจะเว้นช่องว่าง 4 ช่อง เพื่อทำให้มันดูเรียบร้อย A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+สังเกตวิธีที่เราเยื้องบรรทัดถัดลงมาโดยใช้ 4 ช่องว่างไหม? เราต้องทำแบบนี้เพื่อให้ Python รู้ว่า เราต้องการรันโค้ดถ้าเงื่อนไขนั้นเป็นจริง คุณสามารถเว้นช่องว่างไว้ช่องเดียวได้นะ แต่โปรแกรมเมอร์ Python เกือบทุกคนจะเว้นช่องว่าง 4 ช่อง เพื่อทำให้มันดูเรียบร้อย การกด Tab หนึ่งครึ่งก็นับว่าเป็นการเว้นช่องว่าง 4 ช่องได้ ตราบใดที่ text editor ของคุณถูกเช็ตให้ทำงานแบบนั้น เมื่อคุณเลือกทำอย่างใดอย่างนึงแล้ว อย่าเปลี่ยนนะ! ถ้าคุณเยื้องบรรทัดลงมาโดยเคาะเว้นช่องว่าง 4 ช่อง ก็ให้เคาะเว้นช่องว่าง 4 ช่องไปตลอด ห้ามเปลี่ยนไปกด Tab สลับกัน ไม่อย่างงั้นคุณจะเจอปัญหาแน่
 
-Save it and give it another run:
+บันทึกไฟล์และลองรันอีกครั้ง:
 
 {% filename %}command-line{% endfilename %}
 
@@ -912,7 +912,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+อุ๊ย เกิดข้อผิดพลาดขึ้นล่ะ Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
