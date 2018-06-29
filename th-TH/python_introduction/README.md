@@ -463,7 +463,7 @@ As well as this, you can also change a value associated with an already-created 
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
-### ภาพรวม
+### บทสรุป
 
 Awesome! You know a lot about programming now. In this last part you learned about:
 
@@ -512,12 +512,12 @@ False
 
 We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 
-- x `>` y หมายถึง: x มากกว่า y
-- x `<` y หมายถึง: x น้อยกว่า y
-- x `<=` y หมายถึง: x น้อยกว่าหรือเท่ากับ y
-- x `>=` y หมายถึง: x มากกว่าหรือเท่ากับ y
+- x `>` y หมายถึง: x มีค่ามากกว่า y
+- x `<` y หมายถึง: x มีค่าน้อยกว่า y
+- x `<=` y หมายถึง: x มีค่าน้อยกว่าหรือเท่ากับ y
+- x `>=` y หมายถึง: x มีค่ามากกว่าหรือเท่ากับ y
 
-Awesome! Wanna do one more? Try this:
+เจ๋งไปเลย! อยากทำอีกมั้ย? ลองนี่สิ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -552,10 +552,10 @@ Here you see that just like in the expression, Python is not able to compare a n
 
 Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
 
-Boolean มีเพียงสองค่าเท่านั้น คือ:
+Boolean มีเพียงแค่สองค่าเท่านั้น คือ:
 
-- True
-- False
+- True (จริง)
+- False (ไม่จริง)
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
