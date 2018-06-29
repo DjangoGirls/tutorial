@@ -912,7 +912,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-อุ๊ย เกิดข้อผิดพลาดขึ้นล่ะ Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+อุ๊ย เกิดข้อผิดพลาดขึ้นล่ะ แต่โชคดี ที่ Python โชว์ข้อความที่ค่อนข้างเป็นประโยชน์เพื่อบอกเราว่าข้อผิดพลาดเกิดจากอะไร It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. มาแก้ไขที่ด้านล่างของไฟล์กัน:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -920,7 +920,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
 hi("Ola")
 ```
 
-And run it again:
+แล้วลองรันอีกครั้ง:
 
 {% filename %}command-line{% endfilename %}
 
@@ -936,7 +936,7 @@ And run it again:
 hi("Sonja")
 ```
 
-And run it:
+แล้วรันโค้ด:
 
 {% filename %}command-line{% endfilename %}
 
@@ -944,14 +944,14 @@ And run it:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+ตอนนี้ คุณคิดว่าจะเกิดอะไรขึ้นถ้าเราใช้ชื่ออื่น? (ที่ไม่ใช่ Ola หรือ Sonja) คุณลองดูนะ ถ้าคุณทำถูก มันจะแสดงผลแบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+มันเจ๋งสุดๆไปเลยใช่ป่ะ? ด้วยวิธีนี้ คุณไม่จำเป็นต้องพิมพ์ซ้ำทุกครั้งที่คุณต้องการเปลี่ยนชื่อของบุคคลที่เราต้องการทักทาย และนั่นคือเหตุผลที่เราต้องการฟังก์ชั่น - คุณไม่อยากจะเขียนโค้ดของคุณซ้ำๆ ไงล่ะ!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
 
@@ -964,7 +964,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+มาลองรันกัน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -972,17 +972,17 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+ยินดีด้วย! คุณได้เรียนรู้เกี่ยวกับการเขียนฟังก์ชั่นแล้ว! :)
 
 ## การทำซ้ำ
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Dictionaries](https://www.youtube.com/watch?v=aEA6Rc86HF0)
 
-This is the last part already. That was quick, right? :)
+นี่เป็นส่วนสุดท้ายของบทนี้แล้ว เร็วเนอะว่ามั๊ย? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+โปรแกรมเมอร์นั้นไม่ชอบทำอะไรซ้ำไปมา การเขียนโปรแกรมนั้นเป็นการทำงานอย่างอัตโนมัติ ดังนั้นเราจึงไม่ต้องการที่จะพิมพ์ทักทายทุกๆ คน ด้วยชื่อของพวกเขาซ้ำๆในทุกๆชื่อ จริงไหม? และการทำซ้ำจะเข้ามาช่วยในส่วนนี้
 
-Still remember lists? Let's do a list of girls:
+ยังจำ list ได้ใช่ไหม? เรามาสร้างลิสต์ของชื่อสาวๆ กัน:
 
 {% filename %}python_intro.py{% endfilename %}
 
