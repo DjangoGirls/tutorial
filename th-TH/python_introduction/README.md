@@ -877,7 +877,7 @@ hi()
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
 - If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
 
-Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+เรามาลองสร้างฟังก์ชันที่มีพารามิเตอร์หลายๆตัวกัน เราจะใช้ตัวอย่างก่อนหน้านี้ - ฟังก์ชันที่จะพูด 'hi กับคนที่รันมัน - แล้วตามด้วยชื่อ:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -885,7 +885,7 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+อย่างที่คุณเห็น ตอนนี้เรามีฟังก์ชันที่มีพารามิเตอร์ที่เรียกว่า `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
