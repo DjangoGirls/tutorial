@@ -260,9 +260,9 @@ When you just type `name`, the Python interpreter responds with the string *repr
 
 ## List
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+นอกจาก string และ interger แล้ว Python ยังมีประเภทข้อมูลชนิดต่างๆ อยู่อีก ตอนนี้เราจะแนะนำให้คุณรู้จักหนึ่งในนั้น ซึ่งก็คือ **list** List คือสิ่งที่คุณคิดไว้นั้นแหละ: เป็นวัตถุที่เก็บรายการของวัตถุอื่นๆ ยังไงล่ะ :)
 
-Go ahead and create a list:
+มาลองสร้าง list กัน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -271,7 +271,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+ใช่แล้ว นี่คือ list ว่างเปล่า ไม่ค่อยมีประโยชน์เลยใช่มั้ย? เราลองมาสร้าง list ของหมายเลขลอตเตอรี่กัน เราจะไม่ทำแบบเดิมซ้ำๆ แล้ว ดังนั้นเราจะใส่ไว้ในตัวแปรซะเลย:
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+เอาล่ะ เรามี list แล้ว! แล้วเราทำอะไรกับมันได้บ้างล่ะ? เรามาดูกันว่า เรามีหมายเลขลอตเตอรี่อยู่กี่อันภายใน list คุณพอรู้มั้ยว่าเราจะใช้ฟังก์ชั่นไหน? แน่นอน คุณรู้อยู่แล้ว!
 
 {% filename %}command-line{% endfilename %}
 
@@ -288,7 +288,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+ใช่แล้ว! ฟังก์ชัน `len()` จะบอกคุณได้ว่ามีวัตถุอยู่ใน list กี่อัน สะดวกดีใช่มั้ยล่ะ? บางทีเราควรจะเรียงเลขข้างในนะ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -296,7 +296,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+ไม่มีอะไรตอบกลับมาเลย เพราะมันแค่เปลี่ยนลำดับของ list งั้นเราลองพิมพ์ list ออกมาดูอีกทีว่าเกิดอะไรขึ้น:
 
 {% filename %}command-line{% endfilename %}
 
@@ -305,9 +305,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-อย่างที่คุณเห็น ตัวเลขในลิสต์ของคุณถูกเรียงจากน้อยไปหามาก ยินดีด้วย!
+อย่างที่คุณเห็น ตัวเลขใน list ของคุณถูกเรียงจากน้อยไปหามาก ยินดีด้วย!
 
-Maybe we want to reverse that order? Let's do that!
+บางทีเราต้องการจะกลับด้านจากมากไปหาน้อย? มาลองกันเลย!
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-ถ้าคุณอยากจะเพิ่มอะไรซักอย่างเข้าไปในลิสต์ คุณสามารถทำได้โดยใช้คำสั่ง:
+ถ้าคุณอยากจะเพิ่มอะไรซักอย่างเข้าไปใน list คุณสามารถทำได้โดยใช้คำสั่ง:
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-ถ้าคุณต้องการจะแสดงเฉพาะหมายเลขแรก คุณสามารถทำได้โดยใช้ **indexes** ดัชนีคือตัวเลขที่บอกตำแหน่งของสิ่งที่อยู่ในลิสต์ โปรแกรมเมอร์จะเริ่มนับจาก 0 เพราะฉะนั้นสิ่งที่อยู่เป็นอันดับแรกในลิสต์ ก็คือ ดัชนีหมายเลข 0 ถัดไปก็คือ 1 และต่อไปเรื่อยๆ ลองนี่:
+ถ้าคุณต้องการจะแสดงเฉพาะหมายเลขแรก คุณสามารถทำได้โดยใช้ **indexes** ดัชนีคือตัวเลขที่บอกตำแหน่งของสิ่งที่อยู่ใน list โปรแกรมเมอร์จะเริ่มนับจาก 0 เพราะฉะนั้นสิ่งที่อยู่เป็นอันดับแรกในลิสต์ ก็คือ ดัชนีหมายเลข 0 ถัดไปก็คือ 1 และต่อไปเรื่อยๆ ลองนี่:
 
 {% filename %}command-line{% endfilename %}
 
