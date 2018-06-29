@@ -1,10 +1,10 @@
 # หากคุณเรียนบทเรียนนี้ที่บ้าน
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+หากคุณเรียนบทเรียนนี้ที่บ้าน และไม่ใช่ [Django Girls events](https://djangogirls.org/events/) คุณสามารถข้ามบทนี้ และเริ่มบทถัดไป คือ [อินเทอร์เน็ตทำงานอย่างไร?](../how_the_internet_works/README.md) ได้เลย
 
-ทั้งนี้เพราะเราอยากจะรวมวิธีการติดตั้งทั้งหมด มาไว้ที่เดียวกันให้หมด The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+ทั้งนี้เพราะเราอยากจะรวมวิธีการติดตั้งทั้งหมด มาไว้ที่เดียวกันให้หมด ในงานของ Django Girls ที่จัดขึ้นนั้น จะมีช่วง "Installation evening" เพื่อติดตั้งทุกสิ่งที่ต้องการในการอบรม ซึ่งจะทำให้การทำเวิร์กช็อปมีความราบรื่น และช่วยพวกเราประหยัดเวลาอีกด้วย
 
-If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+ถ้าคุณพบว่ามันมีประโยชน์ต่อคุณ คุณสามารถทำตามบทนี้ได้เลย แต่หากคุณอยากเริ่มเรียนเลย ก่อนที่จะติดตั้งสิ่งต่างๆ ลงในเครื่องของคุณ คุณสามารถข้ามบทนี้ได้ และเราจะอธิบายการติดตั้งในภายหลัง
 
 โชคดีนะ!
 
@@ -43,16 +43,16 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # เริ่มอ่านบทเรียนเหล่านี้
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+ยินดีด้วย คุณพร้อมที่จะเริ่มเรียนแล้ว! หากคุณยังพอมีเวลาก่อนการเริ่มเวิร์กช็อป เราแนะนำให้อ่านบทเรียนเหล่านี้ไปก่อน:
 
 * [อินเทอร์เน็ตทำงานอย่างไร](../how_the_internet_works/README.md)
 
 * [แนะนำการใช้บรรทัดคำสั่ง](../intro_to_command_line/README.md)
 
-* [แนะนำให้รู้จัก Python](../python_introduction/README.md)
+* [ความรู้เบื้องต้นเกี่ยวกับ Python](../python_introduction/README.md)
 
 * [Django คืออะไร?](../django/README.md)
 
-# Enjoy the workshop!
+# ขอให้คุณสนุกกับเวิร์กช้อป!
 
 When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
