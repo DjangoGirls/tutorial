@@ -592,10 +592,10 @@ False
 
 > สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Dictionaries](https://www.youtube.com/watch?v=dOAg6QVAxyk)
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+จนถึงตอนนี้ เราก็ได้เขียนโค้ด python ทั้งหมดลงในตัวแปลคำสั่ง ซึ่งจะมีข้อจำกัดในเรื่องการป้อนคำสั่งทีละบรรทัด โปรแกรมปกติจะถูกบันทึกลงในไฟล์และเรียกใช้งานโดย **อินเตอร์พรีเตอร์** หรือ **คอมไพเลอร์** จนถึงตอนนี้เราได้รันโค้ดของเราทีละบรรทัดใน Python **อินเตอร์พรีเตอร์** (ตัวแปลคำสั่ง) จากนี้ไปเราจำเป็นต้องใช้โค้ดมากกว่าหนึ่งบรรทัด งั้นตอนนี้เราจำเป็นต้อง:
 
 - ออกจาก Python interpreter
-- เปิดตัวแก้ไขโค้ดที่คุณเลือก
+- เปิดโปรแกรมแก้ไขโค้ดที่เราเลือก
 - บันทึกโค้ด python บางอย่างลงไฟล์
 - แล้วเรียกใช้มัน!
 
