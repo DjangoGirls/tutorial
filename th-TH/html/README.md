@@ -1,14 +1,14 @@
-# แนะนำให้รู้จัก HTML
+# ความรู้เบื้องต้นเกี่ยวกับ HTML
 
-อะไรคือ template คุณอาจสงสัย?
+คุณอาจจะสงสัยว่าเทมเพลต (template) คืออะไร?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Template คือ ไฟล์ที่เราจะสามารถนำมาใช้นำเสนอข้อมูลที่แตกต่างกันออกไป - ตัวอย่างเช่น คุณอาจจะใช้ template สำหรับช่วยเขียนจดหมาย เพราะแต่ละฉบับมีข้อความและที่อยู่ต่างกันไปในแต่ละคน แต่ใช้รูปแบบเดียวกัน
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+รูปแบบ template ของ Django จะถูกอธิบายโดยใช้ภาษาที่เรียกว่า HTML (เป็น HTML อันเดียวกับที่เราได้เกริ่นไว้ตอนต้นของบท **อินเทอร์เน็ตทำงานอย่างไร**)
 
 ## HTML คืออะไร?
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML เป็นโค้ดง่ายๆ ที่ถูกใช้โดยเว็บเบราว์เซอร์ - เช่น Chrome, Firefox หรือ Safari - เพื่อแสดงผลหน้าเว็บให้กับผู้ใช้
 
 HTML ย่อมาจาก "HyperText Markup Language" **HyperText** หมายถึง เป็นชนิดของข้อความที่มีการเชื่อมโยงไปหน้าเว็บอื่นๆ ได้ **Markup** หมายถึง เราทำเครื่องหมายสักอย่างไว้ที่เอกสารด้วยโค้ดเพื่อทำบางอย่าง (ในที่นี้ เบราว์เซอร์) หรือวิธีการแปลงหน้าเพจ HTML โค้ด สร้างขึ้นจาก **tag** แต่ละ tag เริ่มต้นด้วย `<` และลงท้ายด้วย `>` tag เหล่านี้ถูกทำเครื่องหมายว่าเป็น **element**.
 
