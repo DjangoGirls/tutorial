@@ -39,26 +39,26 @@
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+หูยยยดีอ่ะ! เห็นคำตอบที่โผล่ขึ้นมามั้ย? Python คำนวณได้ด้วย! คุณสามารถลองคำสั่งอื่นๆอย่าง:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+ในการคำนวณเลขยกกำลัง เช่น 2 ยกกำลัง 3 เราก็พิมพ์ {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+ลองสนุกกับมันซักหน่อย แล้วกลับมาที่นี่นะ :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+อย่างที่คุณเห็น Python เป็นเครื่องคิดเลขที่เยี่ยมมาก ถ้าคุณอยากรู้ว่าคุณสามารถทำอะไรกับมันได้อีก...
 
 ## String
 
-How about your name? Type your first name in quotes like this:
+ชื่อคุณเป็นไง? ลองพิมพ์ชื่อของคุณในเครื่องหมายคำพูด แบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,7 +67,7 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+คุณเพิ่งสร้าง string แรกของคุณ! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
