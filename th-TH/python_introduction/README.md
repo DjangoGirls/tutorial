@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Of course, variables can be anything – numbers too! Try this:
+เจ๋งไปเลยใช่มั้ยล่ะ? แน่นอนว่าตัวแปรนั้นสามารถเป็นอะไรก็ได้ เป็นตัวเลขก็ได้! ลองนี่สิ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+แต่ถ้าเกิดเราใช้ชื่อตัวแปรไม่ถูกล่ะ? คุณเดาได้มั้ยว่าจะเกิดอะไรขึ้น? มาลองดูกัน!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -355,7 +355,7 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+มันทำงานได้ถูกต้องเหมือนมีเวทมนตร์เลยล่ะ!
 
 For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
@@ -363,7 +363,7 @@ You can find a list of all available list methods in this chapter of the Python 
 
 ## Dictionary
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c)
 
 A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
