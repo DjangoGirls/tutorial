@@ -928,7 +928,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+แล้วถ้าคุณอยากจะเปลี่ยนชื่อล่ะ?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1063,6 +1063,6 @@ That's it. **You totally rock!** This was a tricky chapter, so you should feel p
 
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+ตอนนี้คุณอาจจะอยากทำอย่างอื่นบ้าง ไปยืดเส้นยืดสาย เดินเล่น พักสายตาซะหน่อย ก่อนที่จะมาต่อกันในบทถัดไป :)
 
 ![Cupcake](images/cupcake.png)
