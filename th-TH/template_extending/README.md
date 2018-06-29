@@ -1,10 +1,10 @@
 # การ extend template
 
-อีกความเก่งข้อหนึ่งของ Django คือ **ความสามารถในการ extend template** หมายความว่าไง? มันหมายถึงว่า คุณสามารถใช้ชิ้นส่วน HTML เดียว ได้กับหลายๆ หน้าของเว็บคุณ
+ความเจ๋งอีกอย่างหนึ่งของ Django คือ **ความสามารถในการ extend template** มันหมายความว่าไงล่ะ? มันก็หมายความว่า คุณสามารถใช้ส่วนเดียวกันของ HTML ของคุณในหลายๆ หน้าของเว็บไซต์ของคุณ
 
 Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
-## Create a base template
+## สร้าง template หลัก
 
 template หลัก คือ template ที่เป็นพื้นฐานที่สุด ที่คุณสามารถนำไปสร้างเป็นหน้าอื่นในเว็บของคุณได้
 
