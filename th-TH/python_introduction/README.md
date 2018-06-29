@@ -1,6 +1,6 @@
 {% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
 
-# แนะนำให้รู้จัก Python
+# ความรู้เบื้องต้นเกี่ยวกับ Python
 
 > บางส่วนของบทนี้ยึดหลักจากบทเรียนของ Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
@@ -8,13 +8,13 @@
 
 ## Python prompt
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Integers, Strings, Lists, Variables และ Errors](https://www.youtube.com/watch?v=MO63L4s-20U)
 
 ก่อนที่เราจะเริ่มลองใช้ Python เราจะต้องเปิด *command line* บนคอมพิวเตอร์ของคุณซะก่อน คุณควรที่จะรู้ว่าคุณต้องทำยังไง คุณเรียนมันไปแล้วในบท [Intro to Command Line](../intro_to_command_line/README.md)
 
 เมื่อคุณพร้อม ก็เริ่มทำตามขั้นตอนด้านล่างนี้ได้เลย
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+เราต้องการเปิดคอนโซล Python ฉะนั้นพิมพ์ `python` บนระบบปฏิบัติการ Windows หรือ `python3` บน ระบบปฏิบัติการ Mac OS/Linux แล้วกด `enter`
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,9 +26,9 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 ## คำสั่ง Python แรกของคุณ!
 
-หลังจากที่เรารันคำสั่ง Python ข้อความพร้อมรับก็จะเปลี่ยนเป็น `>>>`. สำหรับเรา นั่นหมายถึงตอนนี้เราสามารถที่จะใช้คำสั่งในภาษา Python ได้เพียงอย่างเดียวเท่านั้น You don't have to type in `>>>` – Python will do that for you.
+หลังจากที่เรารันคำสั่ง Python ข้อความพร้อมรับก็จะเปลี่ยนเป็น `>>>`. สำหรับเรา นั่นหมายถึงตอนนี้เราสามารถที่จะใช้คำสั่งในภาษา Python ได้เพียงอย่างเดียวเท่านั้น คุณไม่ต้องพิมพ์ `>>>` Python จะทำให้คุณเอง
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+ถ้าคุณอยากจะออกจากส่วนควบคุม Python แค่พิมพ์ `exit()` หรือใช้ shortcut `Ctrl + Z` สำหรับระบบปฏิบัติการ Windows และ `Ctrl + D` สำหรับระบบปฏิบัติการ Mac/Linux Then you won't see `>>>` any longer.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
