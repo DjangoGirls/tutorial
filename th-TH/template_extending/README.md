@@ -4,9 +4,9 @@
 
 Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
-## สร้าง template หลัก
+## สร้าง template พื้นฐาน
 
-template หลัก คือ template ที่เป็นพื้นฐานที่สุด ที่คุณสามารถนำไปสร้างเป็นหน้าอื่นในเว็บของคุณได้
+Template พื้นฐาน คือ template ที่เรียบง่ายที่สุด ที่คุณจะสามารถนำไปสร้างเป็นหน้าอื่นในเว็บของคุณได้
 
 สร้างไฟล์ `base.html` ใน `blog/templates/blog/`:
 
@@ -84,9 +84,9 @@ template หลัก คือ template ที่เป็นพื้นฐา
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). เราจะแสดงวิธีให้คุณดูเร็วๆ นี้ล่ะ
+แต่ทำไมล่ะ? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). เราจะแสดงวิธีให้คุณดูเร็วๆ นี้ล่ะ
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+ตอนนี้ บันทึกไฟล์ `base.html` และเปิดไฟล์ `blog/templates/blog/post_list.html` ขึ้นมาอีกครั้ง {% raw %}คุณกำลังจะลบทุกอย่างข้างต้น `{% for post in posts %}` และด้านล่าง `{% endfor %}` เมื่อคุณทำสำเร็จ ไฟล์มันจะหน้าตาแบบนี้: {% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-เสร็จแล้ว! ลองดูว่าเว็บเรายังทำงานอยู่ไหม. :)
+เสร็จแล้ว! ลองเช็คดูว่าเว็บเรายังทำงานอยู่มั้ย :)
 
 > If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
