@@ -64,7 +64,7 @@ Django จะค้นหาโฟลเดอร์ชื่อ "static" ใน
 
 ได้เวลาเขียน CSS กันแล้ว! เปิดไฟล์ `blog/static/css/blog.css` ด้วยตัวแก้ไขโค้ดของคุณ
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+ในที่นี้เราจะไม่ลงรายละเอียดไปถึงการปรับแต่งและการเรียนเกี่ยวกับ CSS ที่ลึกมากเกินไป ที่ด้านล่างของเพจนี้จะมีรายละเอียดเกี่ยวกับคอร์ส CSS ฟรี ถ้าคุณต้องการที่จะเรียนรู้เพิ่มเติม
 
 แต่ตอนนี้เราจะลองตกแต่งสักเล็กน้อย บางทีเราอาจจะลองเปลี่ยนสีข้อความส่วนหัวของเรา? การจะเข้าใจสีนั้น คอมพิวเตอร์จะใช้รหัสพิเศษ These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. คุณอาจใช้ [สีที่กำหนดไว้แล้ว](http://www.w3schools.com/colors/colors_names.asp) เช่น `red` และ `green`.
 
