@@ -22,4 +22,4 @@
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
 - [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - you can also request a free eBook licence by contacting the author Tracy Osborn at <tracy@limedaring.com>
+- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - คุณสามารถขออนุญาตใช้ eBook ได้ฟรีโดยติดต่อไปยังผู้เขียน Tracy Osborn ที่ <tracy@limedaring.com>
