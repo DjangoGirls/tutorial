@@ -552,7 +552,7 @@ Here you see that just like in the expression, Python is not able to compare a n
 
 Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
 
-There are only two Boolean objects:
+Boolean มีเพียงสองค่าเท่านั้น คือ:
 
 - True
 - False
@@ -569,7 +569,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+คุณสามารถทำแบบนี้ได้เช่นกัน:
 
 {% filename %}command-line{% endfilename %}
 
