@@ -2,7 +2,7 @@
 
 # แนะนำให้รู้จัก Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> บางส่วนของบทนี้ยึดหลักจากบทเรียนของ Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 มาเริ่มเขียนโค้ดกันเถอะ!
 
@@ -12,7 +12,7 @@
 
 ก่อนที่เราจะเริ่มลองใช้ Python เราจะต้องเปิด *command line* บนคอมพิวเตอร์ของคุณซะก่อน คุณควรที่จะรู้ว่าคุณต้องทำยังไง คุณเรียนมันไปแล้วในบท [Intro to Command Line](../intro_to_command_line/README.md)
 
-Once you're ready, follow the instructions below.
+เมื่อคุณพร้อม ก็เริ่มทำตามขั้นตอนด้านล่างนี้ได้เลย
 
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
@@ -26,7 +26,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 ## คำสั่ง Python แรกของคุณ!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+หลังจากที่เรารันคำสั่ง Python ข้อความพร้อมรับก็จะเปลี่ยนเป็น `>>>`. สำหรับเรา นั่นหมายถึงตอนนี้เราสามารถที่จะใช้คำสั่งในภาษา Python ได้เพียงอย่างเดียวเท่านั้น You don't have to type in `>>>` – Python will do that for you.
 
 If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
