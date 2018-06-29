@@ -4,13 +4,13 @@
 
 > Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+มาเริ่มเขียนโค้ดกันเถอะ!
 
 ## Python prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+ก่อนที่เราจะเริ่มลองใช้ Python เราจะต้องเปิด *command line* บนคอมพิวเตอร์ของคุณซะก่อน คุณควรที่จะรู้ว่าคุณต้องทำยังไง คุณเรียนมันไปแล้วในบท [Intro to Command Line](../intro_to_command_line/README.md)
 
 Once you're ready, follow the instructions below.
 
