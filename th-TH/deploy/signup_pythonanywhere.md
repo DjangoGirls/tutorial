@@ -1,4 +1,4 @@
-Sign up for a free "Beginner" account on PythonAnywhere:
+ลงทะเบียนสมัครใช้บัญชี "มือใหม่" ได้ฟรี ที่ PythonAnywhere:
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
@@ -6,6 +6,6 @@ Sign up for a free "Beginner" account on PythonAnywhere:
 
 ## การสร้าง PythonAnywhere API token
 
-นี่คือสิ่งที่คุณต้องทำเพียงครั้งเดียว เมื่อคุณลงทะเบียนเข้า PythonAnywhere คุณจะถูกพาไปยังหน้า dashboard Find the link near the top right to your "Accounts" page, then select the tab named "API token", and hit the button that says "Create new API token".
+นี่คือสิ่งที่คุณต้องทำเพียงครั้งเดียว เมื่อคุณลงทะเบียนเข้า PythonAnywhere คุณจะถูกพาไปยังหน้า dashboard หาลิงค์ที่อยู่ข้างบนทางขวามือใกล้ๆหน้า "Accounts" จากนั้นเลือกแท็บที่ชื่อ "API token" แล้วคลิกที่ปุ่ม "Create new API token"
 
 ![The API token tab on the Accounts page](images/pythonanywhere_create_api_token.png)
