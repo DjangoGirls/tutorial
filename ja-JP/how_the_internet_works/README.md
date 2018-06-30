@@ -4,7 +4,7 @@
 > 
 > この章は、ジェシカ・マッケラー（http://web.mit.edu/jesstess/www/）による「インターネットの仕組み」を参照しています。
 
-私達は、毎日インターネットを使っています。でも、ブラウザのアドレス欄に https://djangogirls.org のようなアドレスを入力して `Enter` キーを押すと何が起こるかあなたは実際に知っていますか？
+私達は、毎日インターネットを使っています。でも、ブラウザのアドレス欄に https://djangogirls.org のようなアドレスを入力して `Enter` キーを押すと何が起こるか、あなたは実際に知っていますか？
 
 まず最初に理解する必要があるのは、Webサイトはハードディスクに保存されたたくさんのファイルであるということです。 あなたが自分のパソコンのハードディスクに動画や音楽や画像を保存しているのと同じということです。 しかし、Webサイトは動画や音楽、写真のようなデータとは違ってHTMLというコンピュータのコードを持っているのです。
 
@@ -40,8 +40,8 @@
 
 手紙を送るときには、住所、切手など、正しく配送される特定の機能が必要ですよね。 また、受信者が理解できる言語も使用している必要がありますよね？ Webサイトを表示するために送信する *データパケット* についても同様です。 HTTP（Hypertext Transfer Protocol）というプロトコルを使用します。
 
-だから、基本的に、あなたがWebサイトを持つなら、*サーバー*（マシン）が必要です。 When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
+だから、基本的に、あなたがWebサイトを持つなら、*サーバー*（マシン）が必要です。 *サーバー* は *リクエスト* を（手紙で）受け取ると、Webサイトを（別の手紙で）返します。
 
-Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
+これはDjangoチュートリアルなので、あなたはDjangoが何をしているのかを知りたいでしょう？ あなたが返事を返す時、 いつもみんなに同じ返事を返したいわけではなく、 リクエストを送った人それぞれにパーソナライズされた返事を返した方がよいこともありますよね？ Djangoはパーソナライズされた面白い手紙を作るのに役立ちます。 :)
 
-Enough talk – time to create!
+インターネットの話は以上です！さあ、いよいよあなたのブログサイトを作成する時間です！
