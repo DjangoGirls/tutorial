@@ -4,7 +4,7 @@
 
 ## Objects
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+มีแนวคิดหนึ่งในการเขียนโปรแกรม ที่เรียกว่า `การเขียนโปรแกรมเชิงวัตถุ` The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
 แล้ว วัตถุ คืออะไร? มันคือชุดของคุณสมบัติและการกระทำ อาจจะฟังดูแปลกๆ แต่เรากำลังจะอธิบายคุณด้วยตัวอย่างนี้
 
@@ -12,20 +12,20 @@ If we want to model a cat, we will create an object `Cat` that has some properti
 
 Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
 
-    Cat
+    แมว
     --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
+    สี
+    อายุ
+    อารมณ์
+    เจ้าของ
+    คราง()
+    เกา()
+    ให้อาหาร(อาหาร_แมว)
     
 
-    CatFood
+    อาหารแมว
     --------
-    taste
+    รสชาติ
     
 
 ไอเดียนี้ถูกนำไปใช้ในการอธิบายสิ่งต่างๆ ภายในโค้ด ด้วย คุณสมบัติ (เรียกว่า `object properties`) และ การกระทำ (เรียกว่า `methods`).
