@@ -26,7 +26,7 @@ A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow y
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+ตอนนี้คุณอยู่ในคอนโซลของ Django มันเหมือนกับคอนโซลของ Python แต่เราได้เพิ่มเวทมนต์ของ Django เข้ามา :) แน่นอนว่า คุณสามารถใช้ทุกคำสั่งของ Python ในนี้เช่นกัน
 
 ### วัตถุทั้งหมด
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+อุ๊ย! เกิดข้อผิดพลาดขึ้นมาล่ะ มันบอกเราว่าไม่มี Post ซึ่งแน่ล่ะ - ก็เราลืม import มันก่อนไง!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+เรา import โมเดล `Post` จาก `blog.models` เรามาลองแสดงโพสต์ทั้งหมดกันดูอีกที:
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,7 +58,7 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+มันคือลิสต์ของโพสต์ที่เราได้สร้างไว้ก่อนหน้านี้! เราสร้างโพสต์เหล่านี้จากหน้า Django admin ตอนนี้ เราต้องการสร้างโพสต์ใหม่โดยใช้ Python แล้วเราจะทำมันได้ยังไงล่ะ?
 
 ### สร้างวัตถุ
 
@@ -70,9 +70,9 @@ This is a list of the posts we created earlier! We created these posts using the
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+แต่เราขาดอะไรไปอย่างนึง: `ตัวเรา` เราต้องการส่งวัตถุในโมเดล `User` ให้เป็นผู้เขียน แล้วเราจะทำยังไงล่ะ?
 
-นำเข้าโมเดล User ก่อน:
+เราต้อง import โมเดล User ก่อน:
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+อย่างที่คุณเห็น มันคือการ `get` `User` โดยใช้ `username` ที่ชื่อ 'ola'. มันดจีย์ใช่มะ! และแน่นอนว่าคุณสามารถเปลี่ยนมันให้เป็นชื่อของคุณได้
 
 ตอนนี้ เราก็สามารถสร้างโพสต์ของเราได้แล้ว:
 
