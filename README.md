@@ -105,7 +105,7 @@ After you have finished your changes you need to create [a pull request](https:/
 
 In your own repository on Github press do *Compare & pull request*
 
-![Gitbook](contributing/images/pull_request.png)
+![Compare & pull request](contributing/images/pull_request.png)
 
 Fill in the information *why* this change is being made. The reviewer can see the details of the actual change, so you don't need repeat the content of the change.
 
