@@ -2,7 +2,7 @@
 
 > **หมายเหตุ** บทนี้อาจจะไม่ง่ายนักที่จะผ่านไปได้ ขอให้อดทนและทำให้เสร็จ; deployment เป็นส่วนสำคัญในกระบวนการพัฒนาเว็บไซต์ บทนี้อยู่ในครึ่งทางของบทเรียนทั้งหมด ดังนั้นผู้ช่วยของคุณจะพาคุณนำเว็บไซต์ออนไลน์โดยจะมีขั้นตอนยุ่งยากเล็กน้อย ซึ่งหมายความว่า ถึงคุณมีเวลาไม่พอ ก็จะยังสามารถจบบทนี้ได้แน่นอน
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying คือกระบวนการเผยแพร่โปรแกรมของคุณขึ้นสู่อินเทอร์เน็ต สุดท้ายแล้ว ทุกคนก็จะสามารถเห็นเว็บของคุณได. :)
+จนถึงตอนนี้คุณสามารถเปิดดูเว็บไซต์ของคุณจากคอมพิวเตอร์ของคุณเท่านั้น Now you will learn how to deploy it! Deploying คือกระบวนการเผยแพร่โปรแกรมของคุณขึ้นสู่อินเทอร์เน็ต สุดท้ายแล้ว ทุกคนก็จะสามารถเห็นเว็บของคุณได. :)
 
 อย่างที่คุณได้ทราบ เว็บไซต์นั้นอาศัยอยู่ในเครื่องเซิร์ฟเวอร์ There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
@@ -45,9 +45,9 @@ Git จะติดตามการเปลี่ยนแปลงในท�
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+จากนั้นจึงบันทึกไฟล์โดยใช้ชื่อว่า `.gitignore` ที่อยู่ในโฟลเดอร์ "djangogirls"
 
-> **หมายเหตุ** เครื่องหมายจุดนำหน้าชื่อไฟล์นั้นสำคัญมาก! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **หมายเหตุ** เครื่องหมายจุดที่อยู่หน้าชื่อไฟล์นั้นสำคัญมาก! ถ้าคุณมีปัญหาในการสร้างไฟล์นี้ (เช่น Mac ไม่ชอบให้คุณสร้างไฟล์ที่เริ่มต้นด้วยเครื่องหมายจุดใน Finder) ดังนั้น คุณควรใช้ "Save As" จากตัวแก้ไขไฟล์แทน
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
@@ -84,11 +84,11 @@ And save it as `.gitignore` in the "djangogirls" folder.
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## การส่งโค้ดของเราไปยัง GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+ไปที่ [GitHub.com](https://www.github.com) แล้วลงทะเบียนบัญชีผู้ใช้ใหม่ (ถ้าคุณทำแล้วเรียบร้อย ก็เจ๋งไปเลย!)
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+จากนั้นจึงสร้าง repository ใหม่ โดยใช้ชื่อว่า "my-first-blog" Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 ![](images/new_github_repo.png)
 
