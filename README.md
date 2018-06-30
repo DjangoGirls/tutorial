@@ -11,7 +11,7 @@ The Django Girls Tutorial is licensed under a [*Creative Commons Attribution-Sha
 
 The source code of the tutorial is [hosted on Github](https://github.com/DjangoGirls/tutorial). The Github [Fork & Pull workflow](https://help.github.com/articles/using-pull-requests) is used to accept and review changes.
 
-The tutorial uses the [GitBook](https://www.gitbook.com/) service for publishing its documentation. [See more information about how Gitbook works](https://help.gitbook.com/).
+The tutorial uses the [GitBook](https://www.gitbook.com/) service for publishing its documentation. [See more information about how GitBook works](https://help.gitbook.com/).
 
 The tutorial is written in [Markdown mark up language](https://help.github.com/articles/markdown-basics).
 
@@ -64,11 +64,11 @@ Then, create a branch for your new changes to sit in. It helps to call the branc
 
     git checkout -b contributing
 
-Download the [Gitbook Editor](https://www.gitbook.com/editor) app to your computer.
+Download the [GitBook Editor](https://www.gitbook.com/editor) app to your computer.
 
-Then you can open the tutorial in Gitbook Editor (*File* > *Open book*).
+Then you can open the tutorial in GitBook Editor (*File* > *Open book*).
 
-Make any changes in the tutorial using Gitbook and then save changes (*Book* > *Save all*).
+Make any changes in the tutorial using GitBook and then save changes (*Book* > *Save all*).
 
 Then commit the changes using `git` and push the changes to your remote Github repository.
 
@@ -97,7 +97,7 @@ Example:
     To git@github.com:miohtama/tutorial.git
        b37ca59..fe36152  contributing -> contributing
 
-If you don't want to download the Gitbook Editor app you can also go to the [Gitbook website](https://www.gitbook.com/), sign up for free and work directly in your browser.
+If you don't want to download the GitBook Editor app you can also go to the [GitBook website](https://www.gitbook.com/), sign up for free and work directly in your browser.
 
 # Making a pull request
 
