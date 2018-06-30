@@ -156,7 +156,7 @@ Amit igazából szeretnénk, hogy igazi posztokat jelenítünk meg, amiket a Dja
 
 Jó lenne lenne látni ezt az egészet élesben az interneten, ugye? Csináljunk egy újabb PythonAnywhere deploy-t:
 
-### Commit, és push a Github-ra
+### Commit, és push a GitHub-ra
 
 Először nézzük meg, hogy milyen fájlok változtak a legutóbbi deploy óta (futtasd az alábbi parancsot a gépeden, ne PythonAnywhere-en):
 
@@ -182,7 +182,7 @@ Már majdnem készen is vagyunk, de előtte el kell mentenünk a változtatások
 
 > **Megjegyzés** Győződj meg róla, hogy idézőjelet használsz a commit üzenetnél.
 
-Miután ezzel megvagy, töltsd fel (push) a változtatásaidat Github-ra:
+Miután ezzel megvagy, töltsd fel (push) a változtatásaidat GitHub-ra:
 
     $ git push
     

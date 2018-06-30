@@ -6,9 +6,9 @@
 
 앞에서 배웠듯이, 웹사이트는 서버라는 곳에 들어갑니다. 인터넷 상에 서버를 제공하는 업체들은 참 많습니다. 우리는 이 중에 비교적 배포 과정이 간단한 [PythonAnywhere](https://www.pythonanywhere.com/)을 사용할 거에요. PythonAnywhere는 방문자가 아주 많지 않은 소규모 애플리케이션을 위한 무료 서비스를 제공하고 있습니다. 지금 우리가 만드는 웹사이트도 해당됩니다. 
 
-우리가 사용할 다른 외부 서비스는 [GitHub](https://github.com/)이라는 코드 호스팅 서비스입니다. 요즘에는 모든 프로그래머들은 Github 계정을 가지고 있으니, 여러분도 Github 계정을 만들어봐요!
+우리가 사용할 다른 외부 서비스는 [GitHub](https://github.com/)이라는 코드 호스팅 서비스입니다. 요즘에는 모든 프로그래머들은 GitHub 계정을 가지고 있으니, 여러분도 GitHub 계정을 만들어봐요!
 
-로컬컴퓨터, Github, Pythonanywhere 이 세 곳은 모두 중요해요. 로컬 컴퓨터는 개발 및 테스트를 수행하는 곳이 될 것입니다. 개발이 완료되면 프로그램 복사본을 GitHub에 저장합니다. 웹사이트는 PythonAnywhere에 있고 GitHub에서 코드 사본을 업데이트할 거에요.
+로컬컴퓨터, GitHub, Pythonanywhere 이 세 곳은 모두 중요해요. 로컬 컴퓨터는 개발 및 테스트를 수행하는 곳이 될 것입니다. 개발이 완료되면 프로그램 복사본을 GitHub에 저장합니다. 웹사이트는 PythonAnywhere에 있고 GitHub에서 코드 사본을 업데이트할 거에요.
 
 # Git 설치하기
 > **Note** 이미 설치가 완료되었다면, 다시 할 필요가 없어요. 다음 장으로 넘어가서 Git 저장소를 만드는 것부터 시작하세요.
@@ -100,7 +100,7 @@ $ git commit -m "My Django Girls app, first commit"
 
 이제 내 컴퓨터의 Git 저장소를 GitHub에 있는 저장소로 연결해야합니다.
 
-콘솔에 다음과 같이 입력하세요. (`<your-github-username>`에 꺽쇠괄호(<>)를 떼고 내 Github 사용자이름을 입력하세요)
+콘솔에 다음과 같이 입력하세요. (`<your-github-username>`에 꺽쇠괄호(<>)를 떼고 내 GitHub 사용자이름을 입력하세요)
 
 {% filename %}command-line{% endfilename %}
 ```

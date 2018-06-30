@@ -47,9 +47,9 @@ Sonra, çalıştır:
 
 (son satırda bir tılde ve eşitlik işareti kullandığımıza dikkat edin: ~=).
 
-### Github
+### GitHub
 
-Bir [Github](https://github.com) hesabı açın.
+Bir [GitHub](https://github.com) hesabı açın.
 
 ### PythonAnywhere
 

@@ -6,9 +6,9 @@
 
 Öğrendiğimiz üzere, bir websitesi bir sunucunun üstünde olmalıdır. İnternette bir çok sunucu sağlayıcısı var, biz [PythonAnywhere](https://www.pythonanywhere.com/) kullanacağız. PythonAnywhere ücretsizdir ve çok fazla ziyaretçisi olmayan küçük uygulamalar içindir yani şu anlık sizin için kesinlikle yeterli olacaktır.
 
-Dışarıdan kullanacağımız diğer servis bir kod barındırma hizmeti olan [Github](https://www.github.com). Başkaları da var, ama nerdeyse her programcının bir Github hesabı var, sizin de olacak!
+Dışarıdan kullanacağımız diğer servis bir kod barındırma hizmeti olan [GitHub](https://www.github.com). Başkaları da var, ama nerdeyse her programcının bir GitHub hesabı var, sizin de olacak!
 
-Bu üç yer sizin için önemli olacak. Lokal bilgisayarınız geliştirme ve test yaptığınız yer olacak. Değişikliklerden memnun olduğunuzda programınızın bir kopyasını Github'a koyacaksınız. Web siteniz PythonAnywhere üzerinde olacak ve onu kodunuzun bir kopyasını Github'dan alarak günceleyeceksiniz.
+Bu üç yer sizin için önemli olacak. Lokal bilgisayarınız geliştirme ve test yaptığınız yer olacak. Değişikliklerden memnun olduğunuzda programınızın bir kopyasını GitHub'a koyacaksınız. Web siteniz PythonAnywhere üzerinde olacak ve onu kodunuzun bir kopyasını GitHub'dan alarak günceleyeceksiniz.
 
 # Git
 
@@ -137,7 +137,7 @@ Username for 'https://github.com': zeynep Password for 'https://zeynep@github.co
     
     &gt; **Not** PythonAnywhere Linux tabanlıdır, yani Windows kullanıyorsanız bu konsol bilgisayarınızdakinden biraz daha farklı görünecektir.
     
-    Reponuzun bir klonunu yaratarak kodumuzu Github'dan PythonAnywhere üzerine çekelim. Aşağıdakileri PythonAnywhere konsoluna geçirin (`&lt;your-github-username&gt;` yerine GitHub kullanıcı adınızın geleceğini unutmayın):
+    Reponuzun bir klonunu yaratarak kodumuzu GitHub'dan PythonAnywhere üzerine çekelim. Aşağıdakileri PythonAnywhere konsoluna geçirin (`&lt;your-github-username&gt;` yerine GitHub kullanıcı adınızın geleceğini unutmayın):
     
     {% filename %}PythonAnywhere command-line{% endfilename %}
     

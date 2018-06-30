@@ -408,7 +408,7 @@ https://docs.djangoproject.com/en/1.11/topics/forms/
 
 모든 작업을 끝마쳤으면 PythonAnywhere로 배포해야죠!
 
-* 제일 먼저 코드를 커밋하고 Github로 푸시합니다.
+* 제일 먼저 코드를 커밋하고 GitHub로 푸시합니다.
 
 {% filename %}command-line{% endfilename %}
 ```

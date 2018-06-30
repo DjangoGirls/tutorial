@@ -72,7 +72,7 @@ Všimla sis, že jsme tentokrát použily lehce odlišnou notaci (`{{ post.title
 
 Bylo by dobré vidět, jestli tvá webová stránka bude stále fungovat i na webu, že? Pojďme zkusit další nasazení/deploy na PythonAnywhere. Tady je rekapitulace postupu...
 
-*   Nejdřív hoď svůj kód na Github
+*   Nejdřív hoď svůj kód na GitHub
 
 ```
 $ git status

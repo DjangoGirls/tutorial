@@ -71,7 +71,7 @@ Próbáld ki a template-edben.
 
 Jó lenne látni, hogy a weblapod még mindig működik az Interneten, nem igaz? Telepítsük újra a PythonAnywhere-en. Itt a lépések összefoglalója...
 
-*   Először tedd fel a kódot a Github-ra
+*   Először tedd fel a kódot a GitHub-ra
 ```
 $ git status
 [...]

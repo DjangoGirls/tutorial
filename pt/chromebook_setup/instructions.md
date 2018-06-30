@@ -61,9 +61,9 @@ pip install django~=1.9.0
 
 (note que na última linha nós usamos um "til" seguido de um sinal de igual: ~=).
 
-### Github
+### GitHub
 
-Crie uma conta no [Github](https://github.com).
+Crie uma conta no [GitHub](https://github.com).
 
 ### PythonAnywhere
 

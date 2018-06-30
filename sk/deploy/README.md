@@ -107,7 +107,7 @@ A nakoniec uložíme naše zmeny. Teraz prejdi na konzolu a zadaj nasledujúce p
 
 $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git $ git push -u origin master
 
-    <br />Zadaj svoje Github uživateľské meno a heslo a uvidíš niečo podobné tomuto:
+    <br />Zadaj svoje GitHub uživateľské meno a heslo a uvidíš niečo podobné tomuto:
     
     {% filename %}command-line{% endfilename %}
     
