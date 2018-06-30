@@ -8,9 +8,9 @@
 
 แล้ว วัตถุ คืออะไร? มันคือชุดของคุณสมบัติและการกระทำ อาจจะฟังดูแปลกๆ แต่เรากำลังจะอธิบายคุณด้วยตัวอย่างนี้
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+หากเราต้องการสร้างโมเดล แมว เราจะทำการสร้างวัตถุ `แมว` ซึ่งมีคุณสมบัติต่างๆ เช่น: `สี`, `อายุ`, `อารมณ์` (เช่น อารมณ์ดี, อารมณ์ไม่ดี, ง่วงนอน ;)), และ `เจ้าของ` (ซึ่งก็คือวัตถุ `คน` หรือบางกรณีเช่นแมวจรจัด ก็จะไม่มีเจ้าของ)
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+นอกจากนี้ `แมว` สามารถกระทำอะไรบางอย่าง: `คราง`, `เกา` หรือ `ให้อาหาร` (ซึ่งเราก็จะให้แมวกิน `อาหารแมว`, อาจจะเป็นวัตถุอื่นที่มีคุณสมบัตต่างๆ เช่น `รสชาติ`).
 
     แมว
     --------
@@ -73,18 +73,18 @@ A model in Django is a special kind of object – it is saved in the `database`.
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+คุณจะเห็นไดเรกทอรี `blog` เพิ่มขึ้นมา และด้านในก็มีไฟล์อีกจำนวนหนึ่ง ไดเรกทอรีและไฟล์ใน project ของเรา ควรจะมีหน้าตาประมาณนี้:
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     └── mysite
@@ -94,7 +94,7 @@ You will notice that a new `blog` directory is created and it contains a number 
         └── wsgi.py
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+หลังจากที่เราสร้าง application เราต้องบอกให้ Django รู้ด้วยว่าเราจะใช้มัน ซึ่งคุณสามารถทำได้ที่ไฟล์ `mysite/settings.py` เราต้องหา `INSTALLED_APPS` จากนั้นจึงเพิ่มบรรทัดที่มีคำว่า `'blog',` ให้อยู่เหนือเครื่องหมาย `)` ผลลัพธ์สุดท้ายของเราหน้าตาควรจะออกมาเป็นแบบนี้:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -112,9 +112,9 @@ INSTALLED_APPS = [
 
 ### สร้างโมเดลของบล็อกโพสต์
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+ในไฟล์ `blog/models.py` เราจะกำหนดวัตถุทั้งหมด เรียกว่า `Models` - ซึ่งเราจะกำหนดบล็อกโพสต์ของเราไว้ที่นี่
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+เปิดไฟล์ `blog/models.py` ลบทุกอย่างข้างในไฟล์นั้น แล้วเขียนโค้ดลงไปตามนี้:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -140,16 +140,16 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. รูปแบบนี้เป็นรูปแบบสากลในหมู่ผู้ใช้ Python บางทีก็เรียกพวกมันว่า "dunder" (ย่อมาจาก "double-underscore")
+> ตรวจสอบว่าคุณใช้ขีดล่าง (`_`) สองขีดในแต่ละข้างของ `str` (ซ้ายสองขีด ขวาสองขีด) รูปแบบนี้เป็นรูปแบบสากลในหมู่ผู้ใช้ Python บางทีก็เรียกพวกมันว่า "dunder" (ย่อมาจาก "double-underscore")
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+ดูน่ากลัวเหมือนกันเนอะ ว่ามั้ย? แต่ไม่ต้องห่วงนะ เราจะอธิบายให้คุณฟังว่าขีดๆพวกนั้นหมายความว่ายังไง!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+ทุกบรรทัดที่ขึ้นต้นด้วย `from` หรือ `import` คือการที่เรายืมบางส่วนจากไฟล์อื่นๆมาใช้ ดังนั้น แทนที่เราจะคัดลอกและวางสิ่งเดิมๆให้เหมือนๆกันในทุกๆไฟล์ เราสามารถใส่แค่บางส่วนโดยใช้ `from ... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` - บรรทัดนี้คือการเริ่มสร้างโมเดลของเรา (มันคือ `object` นั่นเอง)
 
 - `class` เป็นคำพิเศษ บ่งบอกว่าเรากำลังจะสร้างวัตถุ
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `Post` เป็นชื่อโมเดลของเรา ซึ่งสามรถตั้งเป็นชื่ออื่นได้ (แต่เราต้องหลีกเลี่ยงการใช้อักขระพิเศษ และ การเคาะเว้นช่องว่าง) ชื่อ class จะต้องขึ้นต้นด้วยตัวอักษรตัวใหญ่เสมอ
 - `models.Model` บอกเราว่า Post คือ Django Model ดังนั้น Django รู้ว่ามันควรถูกบันทึงลงในฐานข้อมูล
 
 Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
