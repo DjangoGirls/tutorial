@@ -10,19 +10,19 @@
 
 もし、あなたがプログラミングに精通していなかったら、最初はHTMLも難しく感じるでしょう。でも、あなたがよく使うWebブラウザ（ChromeやSafariやFirefox等々）はHTMLのコードが大好きです。 Webブラウザはこのコードがわかるようになっていて、コードの指示に従います。そして、あなたのウェブサイトのファイルをあなたが望む方法で表示するのです。
 
-あなたのパソコンへファイルを保存するのと同じで、私達はHTMLをハードディスクに保存する必要があります。 インターネットの場合、*サーバー* と呼ばれる、パワフルなコンピュータを使います。 サーバーの主な目的は、データを保存し、それを供給することなので、サーバーは画面やマウス、キーボードを持っていません。 That's why they're called *servers* – because they *serve* you data.
+あなたのパソコンへファイルを保存するのと同じで、私達はHTMLをハードディスクに保存する必要があります。 インターネットの場合、*サーバー* と呼ばれるパワフルなコンピュータを使い、そのハードディスクに保存します。 サーバーの主な目的は、データを保存し、それを供給することなので、サーバーは画面やマウス、キーボードを持っていません。 サーバーはデータを供給する（*サーブ* する）役割を持っているので、*サーバー* と呼ばれるのです。
 
-OK, but you want to know how the Internet looks, right?
+はい、では、どのようにインターネットが見えるかを知りたいですよね？
 
-私たちは絵を書きました。
+私たちは絵を描いてみました。
 
 ![図 1.1](images/internet_1.png)
 
-混乱しているように見えますか？ In fact it is a network of connected machines (the above-mentioned *servers*). マシンの何千もの何百も! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+上記の絵は混乱しているように見えますよね？ 接続されたマシン（*サーバー*）のネットワークは実際こんな感じです。 数十万台のマシン！ 世界中はりめぐらされたケーブル！ Submarine Cable MapのWebサイト（http://submarinecablemap.com）にアクセスすれば、ネットの複雑さを知ることができます。 ここにウェブサイトからのスクリーンショットがあります：
 
 ![図 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+すばらしいですね。 でも、インターネットに接続されているすべてのマシンとマシンの間にワイヤを置くことは不可能です。 So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 It looks like this:
 
