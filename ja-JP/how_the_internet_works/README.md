@@ -22,15 +22,15 @@
 
 ![図 1.2](images/internet_3.png)
 
-すばらしいですね。 でも、インターネットに接続されているすべてのマシンとマシンの間にワイヤを置くことは不可能です。 So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+すばらしいですね。 でも、インターネットに接続されているすべてのマシンとマシンの間にワイヤを置くことは不可能です。 したがって、マシン（例えば http://djangogirls.org が保存されているマシン）に到達するためには、多くの異なるマシンを介してリクエストを渡す必要があります。
 
-It looks like this:
+こんな感じですね。
 
 ![図 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+あなたが http://djangogirls.org と入力すると、「親愛なるDjango Girlsへ。私はdjangogirls.orgのWebサイトが見たいです」とリクエスト（手紙）を送ることになります。
 
-Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+あなたの手紙（リクエスト）は、まずあなたの一番近くの郵便局にいきますよね。 そしてそこから、もう少し宛先に少し近い別の郵便局に行き、またそこからもう少し近い郵便局に行って・・そしてあなたの目的地まで届きます。 特別なことが一つあります。同じ場所に多くの手紙（*データパケット*）を送ると、まったく別の郵便局（*ルーター*）を通過して届く可能性があるということです。 This depends on how they are distributed at each office.
 
 ![図 1.4](images/internet_4.png)
 
