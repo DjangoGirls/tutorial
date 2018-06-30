@@ -30,11 +30,11 @@
 
 あなたが http://djangogirls.org と入力すると、「親愛なるDjango Girlsへ。私はdjangogirls.orgのWebサイトが見たいです」とリクエスト（手紙）を送ることになります。
 
-あなたの手紙（リクエスト）は、まずあなたの一番近くの郵便局にいきますよね。 そしてそこから、もう少し宛先に少し近い別の郵便局に行き、またそこからもう少し近い郵便局に行って・・そしてあなたの目的地まで届きます。 特別なことが一つあります。同じ場所に多くの手紙（*データパケット*）を送ると、まったく別の郵便局（*ルーター*）を通過して届く可能性があるということです。 This depends on how they are distributed at each office.
+あなたの手紙（リクエスト）は、まずあなたの一番近くの郵便局にいきますよね。 そしてそこから、もう少し宛先に少し近い別の郵便局に行き、またそこからもう少し近い郵便局に行って・・そしてあなたの目的地まで届きます。 特別なことが一つあります。同じ場所に多くの手紙（*データパケット*）を送ると、まったく別の郵便局（*ルーター*）を通過して届く可能性があるということです。 それぞれの郵便局でどのように配送されるか次第です。
 
 ![図 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+簡単ですよね。あなたはメッセージを送信し、何らかの応答を期待します。 もちろん、紙とペンではなく、データのバイトを使用しますが、アイデアは同じです！
 
 Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
