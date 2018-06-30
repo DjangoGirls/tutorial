@@ -196,4 +196,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+ฮู้เร่! โมเดลโพสต์ของเราอยู่ในฐานข้อมูลแล้ว! อยากเห็นข้อมูลข้างในแล้วใช่มั้ยล่ะ? ไปดูในบทถัดไปกันเลยแล้วคุณจะเห็นว่าโพสต์ขอคุณหน้าตาเป็นยังไง!
