@@ -108,7 +108,7 @@ Type the following into your console (Replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-Enter your GitHub username and password and you should see something like this:
+ใส่ GitHub username และ password ของคุณ จากนั้นคุณควรจะเห็นผลลัพธ์คล้ายๆ แบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -125,7 +125,7 @@ Enter your GitHub username and password and you should see something like this:
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+ตอนนี้โค้ดของคุณได้อยู่บน GitHub แล้ว ลองไปดู ว่ามันอยู่บน GitHub แล้วจริงมั้ย! คุณจะเห็นว่ามีบริษัทเจ๋งๆ อย่าง - [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) และโครงการโอเพ่นซอร์สซอฟต์แวร์มากมาย ก็เก็บโค้ดไว้ที่ GitHub :)
 
 # Setting up our blog on PythonAnywhere
 
