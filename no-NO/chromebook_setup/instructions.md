@@ -47,9 +47,9 @@ Neste steg er å kjøre:
 
 (legg merke til at på siste linje bruker vi tilde etterfulgt av et likhets tegn: ~=).
 
-### Github
+### GitHub
 
-Lag en [Github](https://github.com) bruker.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
