@@ -47,9 +47,9 @@ Después, ejecuta:
 
 (Presta atención que en la ultima línea usamos una virgulilla seguida por un signo de igual: ~=).
 
-### Github
+### GitHub
 
-Crea una cuenta en [Github](https://github.com).
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
