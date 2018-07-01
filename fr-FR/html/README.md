@@ -154,7 +154,7 @@ What we really want to do is display real posts added in our Django admin – an
 
 Ne serait-il pas génial de pouvoir voir tout ces changements en ligne ? Hop, déployons à nouveau !
 
-### Commiter et pusher votre code sur GitHub
+### Commit, and push your code up to GitHub
 
 Tout d'abord, allons voir quels sont les fichiers qui ont changé depuis notre dernier déploiement (lancez ces commandes dans votre console locale et non celle de PythonAnywhere) :
 
