@@ -154,7 +154,7 @@ Lo que queremos realmente es mostrar posts reales añadidos en nuestra página d
 
 Sería bueno ver todo esto disponible en Internet, ¿no? Hagamos otro despliegue en PythonAnywhere:
 
-### Haz un commit y sube tu código a GitHub
+### Commit, and push your code up to GitHub
 
 En primer lugar, vamos a ver qué archivos han cambiado desde la última puesta en marcha (ejecute estos comandos localmente, no en PythonAnywhere):
 
