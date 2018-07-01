@@ -422,7 +422,7 @@ Dado que es probable que estés conectado, si actualizas la pagina, no veras nad
 
 Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegue!
 
-* Primero, haz un commit con tu nuevo código y súbelo a GitHub:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
