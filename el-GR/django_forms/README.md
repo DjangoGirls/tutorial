@@ -422,7 +422,7 @@ In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor 
 
 Για να δούμε αν όλα αυτά λειτουργούν στο PythonAnywhere. Ώρα για άλλη μια ανάπτυξη!
 
-* Πρώτα, δεσμεύστε τον νέο σας κωδικό, και βάλτε τον στο GitHub:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
