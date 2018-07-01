@@ -154,7 +154,7 @@ HTMLは、「Hypertext Markup Lnaguage」の頭文字を取ったものです。
 
 ここまでやったことを出力して、インターネットで動かしてみると楽しいですよね。PythonAnywhereでもうひとつ実行してみましょう。
 
-### 自分のコードをGithubにcommitしてpushしてみましょう
+### Commit, and push your code up to GitHub
 
 まずは、最後に実行したときから、どのファイルを変更したか見てみましょう(以下のコマンドを、PythonAnywhereではなく、自分のパソコンで実行してください。)。
 
