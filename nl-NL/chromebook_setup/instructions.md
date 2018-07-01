@@ -47,9 +47,9 @@ Dan voer je uit:
 
 (merk op dat we op de laatste regel een tilde gevolgd door een is-teken gebruiken: ~=).
 
-### Github
+### GitHub
 
-Maak een [Github](https://github.com)account aan.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
