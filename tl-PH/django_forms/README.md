@@ -418,7 +418,7 @@ Dahil maari kang nakalog-in, kung i-refresh mo ang pahina, wala kang makikitang 
 
 Tingnan natin kung gagana ito sa PythonAnywhere. Oras na para gumawa ng isa pang pag-deploy!
 
-* Una, i-commit ang iyong bagong code, at ipasa ito sa Github:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
