@@ -47,9 +47,9 @@
 
 (লক্ষ্য করুন যে শেষ লাইনে আমরা tild ব্যবহার করে একটি সমান চিহ্ন অনুসরণ করি: ~ =).
 
-### Github
+### GitHub
 
-একটি [Github](https://github.com) একাউন্ট তৈরি করুন।
+Make a [GitHub](https://github.com) account.
 
 ### পাইথন সর্বত্র
 
