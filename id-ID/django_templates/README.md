@@ -74,7 +74,7 @@ Berhasil! Tapi kami ingin posting ditampilkan seperti tulisan statis yang kami b
 <p>Akan lebih baik bila website Anda tetap bekerja di Internet publik kan? Ayo coba gunakan PythonAnywhere lagi. Inilah rekap langkahnya ...</p>
 
 <ul>
-<li>Pertama, dorong kode Anda ke Github</li>
+<li>First, push your code to GitHub</li>
 </ul>
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
