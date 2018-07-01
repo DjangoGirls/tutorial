@@ -415,7 +415,7 @@ Change it to this:
 
 بیایید ببینیم آیا این همه در هرکجا پایتون کار می کند. زمان برای راه اندازی دیگر!
 
-* ابتدا کد جدید خود را مرتب کنید و آن را به گیت هاب فشار دهید:
+* First, commit your new code, and push it up to GitHub:
 
 % filename %}}خط فرمان% endfilename %}}
 
