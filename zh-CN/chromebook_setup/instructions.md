@@ -47,9 +47,9 @@ Next, run:
 
 (请注意, 在最后一行中, 我们使用一个波形符后跟等号: ~ =)。
 
-### Github
+### GitHub
 
-创建一个[ Github](https://github.com)账户
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
