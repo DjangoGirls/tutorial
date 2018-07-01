@@ -156,7 +156,7 @@ What we really want to do is display real posts added in our Django admin – an
 
 看到這一切在網際網路上是一件很美好的事，對吧？讓我們做另一個 PythonAnywhere 部署：
 
-### 提交和推送程式碼到 Github
+### Commit, and push your code up to GitHub
 
 首先，讓我們看看自上次部署後我們修改了那些檔案（執行這些命令在你電腦上，不是在 PythonAnywhere）：
 
