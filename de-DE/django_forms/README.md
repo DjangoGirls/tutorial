@@ -422,7 +422,7 @@ Da du wahrscheinlich angemeldet bist, wirst du beim Refresh der Seite keinen Ver
 
 Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weiteres Deployment!
 
-* Checke als Erstes deinen neuen Code ein und lade ihn auf GitHub hoch:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
