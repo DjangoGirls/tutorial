@@ -422,7 +422,7 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 Uvidíme, jestli to funguje na PythonAnywhere. Čas na další nasazení!
 
-* Za prvé commitni nový kód a pošli ho na Github:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
