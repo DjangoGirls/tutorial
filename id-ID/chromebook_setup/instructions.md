@@ -46,9 +46,9 @@ Cloud 9 adalah sebuah alat yang memberikan anda kode editor dan akses ke kompute
                     
                     (perhatikan bahwa pada baris terakhir kita menggunakan tilde diikuti dengan tanda sama: ~ =).
                     
-                    ### Github
+                    ### GitHub
                     
-                    Buat akun  Github </ 0> .</p> 
+                    Make a [GitHub](https://github.com) account.
                     
                     ### PythonAnywhere
                     
