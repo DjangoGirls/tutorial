@@ -154,7 +154,7 @@ What we really want to do is display real posts added in our Django admin – an
 
 Vse narejene spremembe bi si bilo dobro ogledati še na "pravi" spletni strani. Prenesimo spremenjene datoteke na PythonAnywhere:
 
-### Nalaganje kode na Github
+### Commit, and push your code up to GitHub
 
 Za začetek poglej, katere datoteke so bile spremenjene (na tvojem računalniku, ne na PythonAnywhere):
 
