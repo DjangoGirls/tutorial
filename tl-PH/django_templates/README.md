@@ -74,7 +74,7 @@ Have you noticed that we used a slightly different notation this time (`{{ post.
 
 Magandang tingnan kung ang website ay gumagana pa rin sa publikong Internet, di ba? Subukan nating mag-deploy sa PythonAnywhere ulit. Eto ay pagbibigay buod sa mga hakbang…
 
-* Una, itulak ang iyong code sa Github
+* First, push your code to GitHub
 
 {% filename %}command-line{% endfilename %}
 
