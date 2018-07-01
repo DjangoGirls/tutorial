@@ -47,9 +47,9 @@ Cloud 9 화면 하단의 터미널에, 다음의 명령어를 실행합니다:
 
 (마지막 줄에서 물결표 다음에 등호를 사용한다는 것을 참고하길 바랍니다: ~=)
 
-### Github
+### GitHub
 
-[Github](https://github.com) 계정을 만드세요.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
