@@ -154,7 +154,7 @@ What we really want to do is display real posts added in our Django admin – an
 
 방금 작업했던 것이 인터넷에서도 볼 수 있으면 좋겠죠? PythonAnywhere으로도 배포해 봅시다. :
 
-### Github에 코드를 커밋, 푸시하세요!
+### Commit, and push your code up to GitHub
 
 제일 먼저, 마지막 배포 이후 수정된 파일을 확인해 봅시다. (PythonAnywhere가 아닌 로컬에서 실행하세요) :
 
