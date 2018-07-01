@@ -422,7 +422,7 @@ Kedže si pravdepodobne prihlásená, ak obnovíš stránku, neuvidíš nič. Na
 
 Pozrime sa, či to všetko funguje na PythonAnywhere. Je čas na ďalšie nasadenie!
 
-* Najprv ulož (commit) svoj nový kód a pošli ho na Github:
+* Najprv ulož (commit) svoj nový kód a pošli ho na GitHub:
 
 {% filename %}command-line{% endfilename %}
 

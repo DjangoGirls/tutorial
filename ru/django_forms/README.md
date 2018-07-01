@@ -410,7 +410,7 @@ form = PostForm(instance=post)
 
 Теперь давай посмотрим, как это будет работать на PythonAnywhere. Пришло время для очередного развёртывания!
 
-*   Сначала нам нужно сделать commit и push нового кода в репозиторий Github
+*   Сначала нам нужно сделать commit и push нового кода в репозиторий GitHub
 
 {% filename %}command-line{% endfilename %}
 ```

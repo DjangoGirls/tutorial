@@ -72,7 +72,7 @@ Você notou que dessa vez nós usamos uma notação um pouco diferente `{{ post.
 
 Seria bom ver se seu site ainda estará funcionando na internet, certo? Vamos tentar fazer a implantação na PythonAnywhere novamente. Aqui está um resumo dos passos...
 
-*   Primeiro, envie seu código para o Github
+*   Primeiro, envie seu código para o GitHub
    
    {% filename %}command-line{% endfilename %}
    ```

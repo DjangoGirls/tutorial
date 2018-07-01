@@ -74,7 +74,7 @@ Všimla si si, že sme tentokrát použili trochu iný zápis `{{ post.title }}`
 
 Bolo by fajn vidieť či bude tvoja web stránka stále funkčná aj na Internete, však? Skúsme to znova nasadiť na PythonAnywhere. Tu je rekapitulácia postupu…
 
-* Najskôr pošli svoj kód na Github
+* Najskôr pošli svoj kód na GitHub
 
 {% filename %}command-line{% endfilename %}
 

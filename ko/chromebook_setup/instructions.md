@@ -46,9 +46,9 @@ pip install django~=1.11.0
 
 (마지막 줄에는 물결표 뒤에 등호(~=) 기호를 사용합니다)
 
-### Github
+### GitHub
 
-[Github](https://github.com) 계정을 만드세요.
+[GitHub](https://github.com) 계정을 만드세요.
 
 ### PythonAnywhere
 

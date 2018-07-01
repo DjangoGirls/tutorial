@@ -8,11 +8,11 @@ Comme vous l'avez appris, un site web a besoin d'être installé sur un serveur.
 
  [1]: https://www.pythonanywhere.com/
 
-Nous allons aussi utiliser les services [GitHub][2], ce qui nous permettra d'héberger notre code en ligne. Il existe d'autres entreprises qui proposent des services similaires. Cependant, presque tous⋅tes les développeurs·ses possèdent aujourd'hui un compte Github et, dans quelques instants, vous aussi !
+Nous allons aussi utiliser les services [GitHub][2], ce qui nous permettra d'héberger notre code en ligne. Il existe d'autres entreprises qui proposent des services similaires. Cependant, presque tous⋅tes les développeurs·ses possèdent aujourd'hui un compte GitHub et, dans quelques instants, vous aussi !
 
  [2]: https://www.github.com
 
-Github va nous servir d'intermédiaire pour envoyer et récupérer notre code sur PythonAnywhere.
+GitHub va nous servir d'intermédiaire pour envoyer et récupérer notre code sur PythonAnywhere.
 
 # Git
 
@@ -110,7 +110,7 @@ Tapez les instructions suivantes dans votre console (remplacez `<votre-nom-d'uti
     $ git push -u origin master
 
 
-Entrez votre nom d'utilisateur et mot de passe Github. Vous devriez voir quelque chose comme ceci :
+Entrez votre nom d'utilisateur et mot de passe GitHub. Vous devriez voir quelque chose comme ceci :
 
     Username for 'https://github.com': votre-nom
     Password for 'https://votre-nom@github.com':
@@ -141,7 +141,7 @@ Une fois enregistré sur PythonAnywhere, vous serez automatiquement redirigée s
 
 > **Note** : PythonAnywhere utilise Linux. Si vous êtes sous Windows, la console sera un peu différente de celle de votre ordinateur.
 
-Importons notre code depuis Github vers PythonAnywhere en créant un "clone" de notre dépôt. Tapez la commande suivante dans la console de PythonAnywhere (n'oubliez pas d'utiliser votre nom d'utilisateur Github à la place de `<your-github-username>`):
+Importons notre code depuis GitHub vers PythonAnywhere en créant un "clone" de notre dépôt. Tapez la commande suivante dans la console de PythonAnywhere (n'oubliez pas d'utiliser votre nom d'utilisateur GitHub à la place de `<your-github-username>`):
 
     $ git clone https://github.com/<votre-nom-d'utilisateur-github>/my-first-blog.git
 

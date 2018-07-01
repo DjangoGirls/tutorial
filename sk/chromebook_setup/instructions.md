@@ -47,9 +47,9 @@ Ak to ešte stále nefunguje, požiadaj svojho mentora/ku o pomoc.
 
 (všimni si, že v poslednom riadku sme použili vlnovku a za ňou znamienko rovnosti).
 
-### Github
+### GitHub
 
-Vytvor si [Github](https://github.com) účet.
+Vytvor si [GitHub](https://github.com) účet.
 
 ### PythonAnywhere
 

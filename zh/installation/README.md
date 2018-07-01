@@ -28,7 +28,7 @@
 
 {% include "/deploy/install_git.md" %}
 
-# 创建一个 Github 账户
+# 创建一个 GitHub 账户
 
 前往 [GitHub.com](https://www.github.com) 并注册一个新的账号。
 

@@ -98,7 +98,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
  [4]: images/github_get_repo_url_screenshot.png
 
-现在我们需要把你电脑上的Git仓库和Github上的挂接。
+现在我们需要把你电脑上的Git仓库和GitHub上的挂接。
 
 在控制台输入以下内容（替换 `<your-github-username>` 为你的 github 用户名 ，不包含尖括号）：
 
@@ -106,7 +106,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
     $ git push -u origin master
     
 
-输入你的Github账号名和密码，然后你会看到这样：
+输入你的GitHub账号名和密码，然后你会看到这样：
 
     Username for 'https://github.com': hjwp
     Password for 'https://hjwp@github.com':
@@ -120,7 +120,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extention -->
 
-你的代码已经在Github上了。 快去确认一下吧！ 你会发现这些好家伙们 — [Django][5], [Django Girls Tutorial][6]，还有很多其它优秀的开放源代码软件项目同样也在Github上 :)
+你的代码已经在GitHub上了。 快去确认一下吧！ 你会发现这些好家伙们 — [Django][5], [Django Girls Tutorial][6]，还有很多其它优秀的开放源代码软件项目同样也在GitHub上 :)
 
  [5]: https://github.com/django/django
  [6]: https://github.com/DjangoGirls/tutorial
@@ -137,7 +137,7 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 > **注意** PythonAnywhere 基于 Linux，因此如果你使用 Windows，控制台将会和你本地电脑上的略有不同。
 
-让我们通过创建一个我们仓库的 “Clone” 以便从 Github 拉取代码到 PythonAnywhere。 在 PythonAnywhere 控制台输入以下 (不要忘记使用 Github 用户名替换 `<your-github-username>`)：
+让我们通过创建一个我们仓库的 “Clone” 以便从 GitHub 拉取代码到 PythonAnywhere。 在 PythonAnywhere 控制台输入以下 (不要忘记使用 GitHub 用户名替换 `<your-github-username>`)：
 
     $ git clone https://github.com/<your-github-username>/my-first-blog.git
     

@@ -156,7 +156,7 @@ Co ve skutečnosti chceme, je zobrazit opravdové příspěvky přidané v naše
 
 Bylo by fajn vidět všecho tohle venku a živě na internetu, že ano? Pojďme udělat další PythonAnywhere nasazení (deploy):
 
-### Commitni a hoď svůj kód na Github
+### Commitni a hoď svůj kód na GitHub
 
 Nejdříve se podívejme, které soubory se změnily od posledního nasazení (deploy). Zadej tyto příkazy lokálně (ne na PythonAnywhere):
 
@@ -186,7 +186,7 @@ $ git commit -m "Změněn HTML kód stránek."
 
 > **Poznámka** Ujisti se, že používáš dvojité uvozovky kolem zprávy.
 
-Jakmile jsme s tímto hotovy, nahrajeme (push) naše změny na Github:
+Jakmile jsme s tímto hotovy, nahrajeme (push) naše změny na GitHub:
 
 ```
 git push

@@ -71,7 +71,7 @@ Ti sei accorto che abbiamo utilizzato una notazione leggermente diversa questa v
 
 Sarebbe bello vedere se il tuo sito funziona ancora su Internet, giusto? Proviamo a fare il deploy su PythonAnywhere di nuovo. Ecco un riepilogo dei passaggi...
 
-*   Prima di tutto, fai il push del tuo codice verso Github
+*   Prima di tutto, fai il push del tuo codice verso GitHub
 
     $ git status
     [...]

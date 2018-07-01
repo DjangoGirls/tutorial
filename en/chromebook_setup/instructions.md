@@ -60,9 +60,9 @@ pip install django~=1.11.0
 
 (note that on the last line we use a tilde followed by an equal sign: ~=).
 
-### Github
+### GitHub
 
-Make a [Github](https://github.com) account.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 

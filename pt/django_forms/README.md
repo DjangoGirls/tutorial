@@ -397,7 +397,7 @@ Como você deve estar "logada", se você atualizar a página, não verá nada de
 
 Vamos ver se tudo isso funciona na PythonAnywhere. Tempo para outro deploy!
 
-* Primeiro, commit o seu novo código e coloque no Github
+* Primeiro, commit o seu novo código e coloque no GitHub
 
 ```bash
 $ git status

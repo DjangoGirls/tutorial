@@ -368,7 +368,7 @@ Ora, dato che probabilmente sei connessa/o, se aggiorni la pagina non troverai a
 
 Vediamo se funziona su PythonAnywhere. È l'ora di un altro deploy!
 
-*   Innanzitutto, fai un commit del tuo nuovo codice e fai il push per caricarlo su Github
+*   Innanzitutto, fai un commit del tuo nuovo codice e fai il push per caricarlo su GitHub
 
 ```
 $ git status

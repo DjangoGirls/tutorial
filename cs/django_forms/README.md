@@ -365,7 +365,7 @@ Vzhledem k tomu, že jsi pravděpodobně přihlášená, neuvidíš žádnou zm�
 
 Uvidíme, jestli to funguje na PythonAnywhere. Čas na další nasazení!
 
-*   Za prvé commitni nový kód a pošli ho na Github
+*   Za prvé commitni nový kód a pošli ho na GitHub
 
 ```
 $ git status

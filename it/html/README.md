@@ -181,7 +181,7 @@ Ci siamo quasi, ora è il momento di dirgli di salvare questa modifica nella cro
 
 > **Nota** Assicurati di usare doppie virgolette attorno al messaggio di commit.
 
-Quando hai finito, caricheremo (push) le nostre modifiche su Github:
+Quando hai finito, caricheremo (push) le nostre modifiche su GitHub:
 
     git push
 
