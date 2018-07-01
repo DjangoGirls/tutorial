@@ -154,7 +154,7 @@ Ang gusto talaga nating gawin ay ang magpakita ng mga totoong post na naidagdag 
 
 Makabubuting makita ang lahat ng ito at live sa Internet, hindi ba? Gumawa tayo ulit ng ibang PythonAnywhere deploy:
 
-### Mag-commit, at ipasa ang iyong code sa Github
+### Commit, and push your code up to GitHub
 
 Una sa lahat, tingnan natin kung anong mga file ang nagbago mula noong huli tayong nag-deploy (patakbuhin ang mga command sa lugar na ito, hindi sa PythonAnywhere):
 
