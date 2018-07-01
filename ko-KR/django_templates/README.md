@@ -74,7 +74,7 @@ Have you noticed that we used a slightly different notation this time (`{{ post.
 
 It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
-* 제일 먼저, Github에 여러분의 코드를 git의 push를 사용해서 넣으세요.
+* First, push your code to GitHub
 
 {% filename %}command-line{% endfilename %}
 
