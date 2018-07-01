@@ -422,7 +422,7 @@ Siccome probabilmente sei loggata, se ricarichi la pagina non vedrai differenze.
 
 Vediamo se funziona su PythonAnywhere. È l'ora di un altro deploy!
 
-* Innanzitutto, fai un commit del tuo nuovo codice e fai il push per caricarlo su Github:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
