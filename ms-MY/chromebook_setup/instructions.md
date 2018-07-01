@@ -47,9 +47,9 @@ Seterusnya, jalankan:
 
 (ambil perhatian bahawa pada baris terakhir kita menggunakan tilde diikuti dengan tanda yang sama: ~ =).
 
-### Github
+### GitHub
 
-Make a [Github](https://github.com) account.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
