@@ -47,9 +47,9 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 (請注意，我們在最後一行確實使用了一個符號： ~= 喔)。
 
-### Github
+### GitHub
 
-申請一個 [Github](https://github.com) 帳戶。
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
