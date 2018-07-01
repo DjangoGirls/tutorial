@@ -154,7 +154,7 @@ Aslında yapmak istediğimiz Django yöneticimize eklenen gerçek postaları aç
 
 Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
 
-### Kodumuzu commit ve push komutları ile Github'a yükleyelim
+### Commit, and push your code up to GitHub
 
 İlk önce son deployment dan sonra hangi dosyaların değiştiğine bakalım. Bu komutları lokal bilgisayarımızda çalıştıralım, PythonAnywhere'de değil:
 
