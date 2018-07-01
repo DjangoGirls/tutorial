@@ -422,7 +422,7 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 Теперь давай посмотрим как это будет работать на PythonAnywhere. Пришло время для очередного развертывания!
 
-* Сначала нам нужно сделать commit и push нового кода в репозиторий Github:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
