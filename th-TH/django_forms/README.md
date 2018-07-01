@@ -422,7 +422,7 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 มาดูกันว่า มันจะทำงานได้บน PythonAnywhere ไหม ได้เวลาเอาขึ้นแล้ว!
 
-* อย่างแรก บันทึกโค้ดใหม่ของคุณ และส่งไปเก็บไว้ที่ Github:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
