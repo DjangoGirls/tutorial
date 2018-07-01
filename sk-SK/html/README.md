@@ -154,7 +154,7 @@ To čo v skutočnosti chceme spraviť je zobraziť reálne príspevky pridané v
 
 Bolo by skvelé, ak by sme všetky tieto veci mohli vidieť naživo na Internete, že? Spravme ďalšie PythonAnywhere nasadenie:
 
-### Commitni a pošli svoj kód na Github
+### Commit, and push your code up to GitHub
 
 Najprv sa pozrime, ktoré súbory sa zmenili od posledného nasadenia (tieto príkazy spusti lokálne, nie na PythonAnywhere):
 
