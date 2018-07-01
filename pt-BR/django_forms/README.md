@@ -422,7 +422,7 @@ Desde que você está provavelmente logado, se você atualizar a página, você 
 
 Vamos ver se tudo isso funciona no PythonAnywhere. Tempo para outro deploy!
 
-* Primeiro, commite o seu novo código e dê o comando push para colocá-lo no Github:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
