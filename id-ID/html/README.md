@@ -151,7 +151,7 @@ Apa yang sebenarnya ingin kita lakukan adalah menampilkan posting nyata yang dit
 
 Alangkah baiknya melihat semua ini dan tinggal di Internet kan? Mari kita lakukan PythonAnywhere lainnya :
 
-### Komit, dan dorong kode Anda ke Github
+### Commit, and push your code up to GitHub
 
 Pertama, mari kita lihat file apa yang telah berubah sejak terakhir kita digunakan (jalankan perintah ini secara lokal, bukan di PythonAnywhere ):
 
