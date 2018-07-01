@@ -154,7 +154,7 @@ What we really want to do is display real posts added in our Django admin – an
 
 Bylo by fajn vidět všecho tohle venku a živé na internetu, že jo? Pojďme udělat další PythonAnywhere nasazení (deploy):
 
-### Commitni, a pushni svůj kód na Github
+### Commit, and push your code up to GitHub
 
 Nejdříve se podívejme které soubory se změnily od posledního nasazení (deploy). Zadej tyto příkazy lokálně (ne na PythonAnywhere):
 
