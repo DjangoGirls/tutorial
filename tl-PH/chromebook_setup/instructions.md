@@ -47,9 +47,9 @@ Sa sunod, patakbuhin ang:
 
 (paalala na sa huling linya, kami ay gumagamit ng tilde na sinundan ng equal na sign: ~=).
 
-### Github
+### GitHub
 
-Gumawa ng account sa [Github](https://github.com).
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
