@@ -154,7 +154,7 @@ What we really want to do is display real posts added in our Django admin – an
 
 It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
 
-### Commit, and push your code up to Github
+### Commit, and push your code up to GitHub
 
 First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
 
