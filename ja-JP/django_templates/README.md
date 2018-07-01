@@ -74,7 +74,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
 
 今の時点でのウェブサイトを公開して見てみませんか？もう一度PythonAnywhereでデプロイしてみましょう。デプロイのステップをおさらいします。
 
-* まず、GitHubでコードをpushします。
+* First, push your code to GitHub
 
 {% filename %}command-line{% endfilename %}
 
