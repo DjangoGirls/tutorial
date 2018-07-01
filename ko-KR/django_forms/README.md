@@ -423,7 +423,7 @@ Change it to this:
 
 모든 작업을 끝마쳤으면 PythonAnywhere로 배포해야죠!
 
-* 제일 먼저, 여러분의 코드를 커밋하고 Github로 푸시합니다:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
