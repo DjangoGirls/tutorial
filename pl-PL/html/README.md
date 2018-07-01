@@ -154,7 +154,7 @@ Chcemy wyświetlić prawdziwe wpisy dodane w naszym panelu admina Django - i tym
 
 Byłoby fajnie, gdybyśmy mogli to wszystko zobaczyć "na żywo" w Internecie, a nie tylko u siebie w komputerze. Czas na wdrożenie na serwer PythonAnywhere:
 
-### Zapisz zmiany w historii i wrzuć swój kod na GitHuba
+### Commit, and push your code up to GitHub
 
 Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji (wpisz następujące polecenie lokalnie w wierszu poleceń, nie na PythonAnywhere):
 
