@@ -154,7 +154,7 @@ What we really want to do is display real posts added in our Django admin – an
 
 Хотелось бы увидеть все это в живую в интернете, согласна? Давай проведем еще одно развертывание веб-сайта на PythonAnywhere:
 
-### Commit и push кода в репозиторий Github
+### Commit, and push your code up to GitHub
 
 Во-первых, давай посмотрим, какие файлы были изменены с момента последнего развертывания (выполни эти команды локально, не на PythonAnywhere):
 
