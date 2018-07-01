@@ -407,7 +407,7 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
     
     Mari kita lihat apakah itu semua dapat berjalan di PythonAnywhere. Saatnya melakukan deploy lagi!
     
-    * Pertama, lakukan commit kode baru anda dan kirim ke GitHub:
+    * First, commit your new code, and push it up to GitHub:
     
     {% filename%} baris perintah {% endfilename%}
     
