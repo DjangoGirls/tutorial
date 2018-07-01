@@ -47,9 +47,9 @@ Cloud 9 เป็นเครื่องมือที่ให้บริก
 
 (หมายเหตุว่า บรรทัดสุดท้าย เราใช้ tilde ตาม ด้วยเครื่องหมายเท่ากับ: ~ =)
 
-### Github
+### GitHub
 
-สร้างบัญชี [Github](https://github.com)
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
