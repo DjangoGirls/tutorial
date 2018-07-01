@@ -74,7 +74,7 @@ Bu sefer biraz daha farklı bir notasyon kullandığımızın farkında mısın�
 
 Websitenizi internette çalışır halde görmek iyi olur değilmi? PythonAnywhere tekrar çalıştıralım. Adımları hatırlayalım…
 
-* İlk önce kodumuzu GitHub'a push komutu ile yükleyelim
+* First, push your code to GitHub
 
 {% filename %}komut-satırı{% endfilename %}
 
