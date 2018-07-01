@@ -422,7 +422,7 @@ form = PostForm(instance=post)
 
 دعونا نرى ما إذا كان كل هذا يعمل على PythonAnywhere. حان الوقت لنشر آخر!
 
-* أولا، التزم بالتعليمات البرمجية الجديدة، وإدفعها إلى جيت هاب:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
