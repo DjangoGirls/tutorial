@@ -47,9 +47,9 @@ Nadalje, pokreni:
 
 (Primijeti da smo u zadnjoj liniji koristili tildu popraćenu znakom jednakosti: ~=)
 
-### Github
+### GitHub
 
-Napravi [Github](https://github.com) račun.
+Make a [GitHub](https://github.com) account.
 
 ### Python Anywhere
 
