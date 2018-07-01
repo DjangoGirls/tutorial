@@ -47,9 +47,9 @@ Poi, esegui:
 
 (nota che nell'ultima linea abbiamo usato una tilde seguita da un segno di uguale: ~=).
 
-### Github
+### GitHub
 
-Creare un account [Github](https://github.com).
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
