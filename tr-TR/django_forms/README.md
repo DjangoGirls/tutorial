@@ -422,7 +422,7 @@ Yüksek olasılıkla login yapmış olduğunuz için sayfayı yenilediğinizde f
 
 Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
 
-* İlk önce kodumuzu commit edelim, sonra Github'a push edelim:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}komut-satırı{% endfilename %}
 
