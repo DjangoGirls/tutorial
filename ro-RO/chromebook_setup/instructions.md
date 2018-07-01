@@ -47,9 +47,9 @@ Apoi execută:
 
 (observă că ultima linie utilizată conține tildă și semnul egal: ~=).
 
-### Github
+### GitHub
 
-Crează-ți un cont [Github](https://github.com).
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
