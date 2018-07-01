@@ -422,7 +422,7 @@ Parce que vous pouvez être connecté, si vous êtes refresh page, vous ne verre
 
 Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déployons à nouveau !
 
-* Tout d'abord, commiter votre nouveau code et pusher le à nouveau sur Github:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
