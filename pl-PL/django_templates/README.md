@@ -74,7 +74,7 @@ Zapewne zauważyłaś, że tym razem użyłyśmy nieco innej składni: (`{{ post
 
 Dobrze byłoby sprawdzić, czy twoja strona wciąż będzie działała w publicznym Internecie, prawda? Spróbujmy ponownie wdrożyć w PythonAnywhere. Oto podsumowanie kroków…
 
-* Najpierw zapisz swój kod na Githubie
+* First, push your code to GitHub
 
 {% filename %}command-line{% endfilename %}
 
