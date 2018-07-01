@@ -1,6 +1,6 @@
 # テンプレートを拡張しよう
 
-Djangoが持つさらに素敵なことは**テンプレート拡張**です。これは何を意味してるでしょうか？それはHTMLの共通部分をウェブサイトの別なページで使えるということです。
+Djangoのまた別の素敵なところは**テンプレート拡張**です。これは何を意味してるでしょうか？それはHTMLの共通部分をウェブサイトの別なページで使えるということです。
 
 テンプレートは同じ情報やレイアウトを一つ以上の場所で利用したいときに役立ちます。 各ファイル内で自分で繰り返す必要はありません。 さらにもし何か変更したい場合、各テンプレートを変更する必要はなく、1回変更すればいいだけです！
 
@@ -75,7 +75,7 @@ Djangoが持つさらに素敵なことは**テンプレート拡張**です。�
 </body>
 ```
 
-{% raw %}`{% for post in posts %}` から `{% endfor %}` が以下のように置き換えられたことに気づくかもしれません。 {% endraw %}
+{% raw %}`{% for post in posts %}` から `{% endfor %}` が以下のように置き換えられたことに気づいたでしょうか。 {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -104,7 +104,7 @@ Djangoが持つさらに素敵なことは**テンプレート拡張**です。�
 
 これをテンプレートのコンテンツブロックのパーツとして使いたいです。このファイルにblockタグを追加する時です！
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %}`base.html` ファイル中のタグにブロックタグをマッチさせたい。 また、それにコンテンツブロックに続くすべてのコードを含めたい。 そうするには、すべてを `{% block content %}` と `{% endblock %}` の間に入れてあげればよいです。 このように:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
