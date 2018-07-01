@@ -62,7 +62,7 @@ Prueba esto en tu plantilla.
 
 Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, ¿no? Vamos a intentar desplegar de nuevo en PythonAnywhere. Aquí va un resumen de los pasos…
 
-* Primero, sube tu código a GitHub
+* First, push your code to GitHub
 
 {% filename %}command-line{% endfilename %}
 
