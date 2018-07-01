@@ -422,7 +422,7 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 Nézzük meg, hogy működik-e ez az egész a PythonAnywhere-en. Itt az ideje egy újabb deploynak!
 
-* Először is commitold az új kódodat, és pushold GitHubra:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
