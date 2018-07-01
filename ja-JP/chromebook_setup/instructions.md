@@ -47,9 +47,9 @@ A virtual environment (仮想環境とも呼ばれます) に取り組んでい�
 
 (note that on the last line we use a tilde followed by an equal sign: ~=).
 
-### Github
+### GitHub
 
-Githubのアカウントを作ります。
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
