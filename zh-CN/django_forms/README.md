@@ -422,7 +422,7 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 我们来看看这一切能否运行在 PythonAnywhere 上。另一次部署的时间到了！
 
-* 首先，提交你的新代码，然后将它推送到 Github 上:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
