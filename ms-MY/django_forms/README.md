@@ -422,7 +422,7 @@ Oleh kerana anda mungkin log masuk, jika anda menyegarkan halaman, anda tidak ak
 
 Let's see if all this works on PythonAnywhere. Time for another deploy!
 
-* Pertama, komit kod baru anda, dan tekankannya ke Github:
+* First, commit your new code, and push it up to GitHub:
 
 {% filename %}command-line{% endfilename %}
 
