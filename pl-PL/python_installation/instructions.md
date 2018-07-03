@@ -12,7 +12,7 @@ Na jedną rzecz będziesz musiała uważać: Podczas instalacji zauważysz ekran
 
 ![Nie zapomnij dodać Pythona do ścieżki systemowej (ang. Path)](../python_installation/images/python-installation-options.png)
 
-W nadchodzących krokach, będziesz używać "Wiersz poleceń" Windowsa (o której też Ci zaraz opowiemy). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (Na starszych wersjach Windowsa możesz uruchomić "Wiersz poleceń" wyszukując w menu Start → System → Wiesz polecenia.) Możesz też przytrzymać klawisz Windows wciskając jednocześnie przycisk "R" do momentu pojawienia się okna "Uruchamianie". W celu otworzenia Wiersza polecenia, wpisz "cmd" i wciśnij przycisk enter w oknie "Uruchamianie".
+W nadchodzących krokach, będziesz używać "Wiersz poleceń" Windowsa (o której też Ci zaraz opowiemy). Na tę chwilę, jeżeli potrzebujesz wykonać jakąś komendę, przejdź do menu Start i wpisz "Wiersz polecenia" w pole wyszukiwania. (Na starszych wersjach Windowsa możesz uruchomić "Wiersz poleceń" wyszukując w menu Start → System → Wiesz polecenia.) Możesz też przytrzymać klawisz Windows wciskając jednocześnie przycisk "R" do momentu pojawienia się okna "Uruchamianie". W celu otworzenia Wiersza polecenia, wpisz "cmd" i wciśnij przycisk enter w oknie "Uruchamianie".
 
 ![Wpisz "cmd" w oknie "Uruchom""](../python_installation/images/windows-plus-r.png)
 
