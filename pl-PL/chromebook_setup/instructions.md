@@ -49,7 +49,7 @@ Następnie uruchom:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Załóż konto na [GitHubie](https://github.com).
 
 ### PythonAnywhere
 
