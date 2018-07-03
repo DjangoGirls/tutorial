@@ -422,7 +422,7 @@ Ponieważ jesteś najprawdopodobniej zalogowana, jeżeli odświeżysz stronę, n
 
 Dobrze byłoby wiedzieć, że nasza witryna nadal działa na PythonAnywhere, prawda?
 
-* First, commit your new code, and push it up to GitHub:
+* Po pierwsze zapiszmy nasze zmiany i wyślijmy je na GitHuba:
 
 {% filename %}command-line{% endfilename %}
 
