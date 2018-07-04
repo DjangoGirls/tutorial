@@ -29,7 +29,7 @@ A teraz stwórz plik `post_list.html` (na razie niech będzie pusty) wewnątrz k
 
 Popatrz, jak Twoja strona wygląda teraz: http://127.0.0.1:8000/
 
-> Jeżeli nadal otrzymujesz błąd `TemplateDoesNotExist`, spróbuj uruchomić serwer ponownie. Przejdź do wiersza poleceń, zatrzymaj serwer wciskając Ctrl+C (klawisze Control i C równocześnie), a następnie uruchom go jeszcze raz poleceniem `python manage.py runserver`.
+> Jeżeli nadal otrzymujesz błąd `TemplateDoesNotExist`, spróbuj uruchomić serwer ponownie. Przejdź do wiersza polecenia, zatrzymaj serwer wciskając Ctrl+C (klawisze Control i C równocześnie), a następnie uruchom go jeszcze raz poleceniem `python manage.py runserver`.
 
 ![Rysunek 11.1](images/step1.png)
 
@@ -156,7 +156,7 @@ Byłoby fajnie, gdybyśmy mogli to wszystko zobaczyć "na żywo" w Internecie, a
 
 ### Zapisz zmiany w historii i wrzuć swój kod na GitHuba
 
-Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji (wpisz następujące polecenie lokalnie w wierszu poleceń, nie na PythonAnywhere):
+Po pierwsze, zobaczmy, jakie pliki zostały zmienione od ostatniej aktualizacji (wpisz następujące polecenie lokalnie w wierszu polecenia, nie na PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
