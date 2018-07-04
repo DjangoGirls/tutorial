@@ -45,11 +45,11 @@ Sonra, çalıştır:
     pip install django~=1.11.0
     
 
-(son satırda bir tılde ve eşitlik işareti kullandığımıza dikkat edin: ~=).
+(son satırda bir tilde ve eşitlik işareti kullandığımıza dikkat edin: ~=).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Bir [Github](https://github.com) hesabı açın.
 
 ### PythonAnywhere
 
