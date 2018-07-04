@@ -160,35 +160,35 @@ Maalesef python konsolundan eklediğimiz gönderi henüz yayınlanmadı. Fakat b
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> post = Post.objects.get(baslik="Harika bir gönderi")
+>>> post = Post.objects.get(title="Harika bir gönderi")
 ```
 
-Ardından `yayinla` methodu ile gönderiyi yayınlayalım:
+Ardından `publish (yayinla)` methodu ile gönderiyi yayınlayalım:
 
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> post.yayinla()
+>>> post.publish()
 ```
 
-Şimdi tekrar yayınlanmış gönderilerin listesini edinin.(Üç kere yukarı ok tuşuna basın ve `enter`)'a basın:
+Şimdi yayınlanmış gönderileri tekrar almaya çalışalım (3 kez yukarı yön ve ardından `enter` tuşuna basın):
 
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.filter(published_date__lte=timezone.now())
-<QuerySet [<Post: Sample title>]>
+>>> Post.objects.filter(yayinlanma_tarihi__lte=timezone.now())
+[<Post: Harika bir gönderi>]
 ```
 
 ### Nesneleri Sıralama
 
-QuerySets ayrıca nesne listesini sıralamanızı da sağlar. Nesneleri `yaratilma_tarihi` özelliğine göre sıralamayı deneyelim:
+QuerySets ayrıca nesne listesini sıralamanızı da sağlar. Nesneleri `created_date (yaratilma_tarihi)` özelliğine göre sıralamayı deneyelim:
 
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
 >>> Post.objects.order_by('created_date')
-<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
+[<Post: Gönderi 1>, <Post: Gönderi 2>, <Post: Harika bir gönderi>, <Post: Nefis bir gönderi>]
 ```
 
 Başına `-` ekleyerek sıralamayı tersine de çevirebiliriz:
@@ -197,7 +197,7 @@ Başına `-` ekleyerek sıralamayı tersine de çevirebiliriz:
 
 ```python
 >>> Post.objects.order_by('-created_date')
-<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
+[<Post: Nefis bir gönderi>, <Post: Harika bir gönderi>, <Post: Gönderi 2>, <Post: Gönderi 1>]
 ```
 
 ### Sorgu Setlerini Zincirlemek
@@ -206,7 +206,7 @@ Sorgu setlerini **zincirleyerek** beraber kullanabilirsiniz:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
-<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
+<QuerySet [<Post: Gönderi 2>, <Post:Harika bir gönderi!>, <Post: Nefis bir gönderi>, <Post: Gönderi 1>]>
 ```
 
 Zincirleme gerçekten çok güçlüdür ve oldukça karmaşık sorgular yazmanıza imkan sağlar.
