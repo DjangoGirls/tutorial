@@ -1,14 +1,14 @@
 # Yayına alın!
 
-> **Not** Bir sonraki bölüm ara ara zor gelebilir. Dayanın ve bölümü bitirin; yayına alma, website geliştirme sürecinin önemli bir parçasıdır. Biraz daha uğraşmalı olan websitesini canlıya alma işine eğitmeninizin yardım edebilmesi için bu bölümü tutorial'ın ortasına yerleştirdik. Böylece eğer zaman yetmezse tutorial'ı kendi başınıza bitirebilirsiniz.
+> **Not** Bir sonraki bölüm ara ara zor gelebilir. Dayanın ve bölümü bitirin; yayına alma, website geliştirme sürecinin önemli bir parçasıdır. Biraz daha uğraştırıcı olan websitesini canlıya alma işine eğitmeninizin yardım edebilmesi için bu bölümü tutorial'ın ortasına yerleştirdik. Böylece eğer zaman yetmezse tutorial'ı kendi başınıza bitirebilirsiniz.
 
 Şimdiye kadar web sitenize sadece kendi bilgisayarınızdan girilebiliyordu. Şimdi onu nasıl canlıya alacağınızı öğreneceksiniz! Yayına alma uygulamanızı internette yayınlama sürecidir, böylelikle insanlar sonunda gidip uygulamanızı görebilirler. :)
 
-Öğrendiğimiz üzere, bir websitesi bir sunucunun üstünde olmalıdır. İnternette bir çok sunucu sağlayıcısı var, biz [PythonAnywhere](https://www.pythonanywhere.com/) kullanacağız. PythonAnywhere ücretsizdir ve çok fazla ziyaretçisi olmayan küçük uygulamalar içindir yani şu anlık sizin için kesinlikle yeterli olacaktır.
+Öğrendiğimiz üzere, bir websitesi bir sunucunun üstünde olmalıdır. İnternette birçok sunucu sağlayıcısı var, biz [PythonAnywhere](https://www.pythonanywhere.com/) kullanacağız. PythonAnywhere ücretsizdir ve çok fazla ziyaretçisi olmayan küçük uygulamalar içindir yani şu an sizin için kesinlikle yeterli olacaktır.
 
-Dışarıdan kullanacağımız diğer servis bir kod barındırma hizmeti olan [Github](https://www.github.com). Başkaları da var, ama nerdeyse her programcının bir Github hesabı var, sizin de olacak!
+Dışarıdan kullanacağımız diğer servis bir kod barındırma hizmeti olan [Github](https://www.github.com). Başkaları da var, ama neredeyse her programcının bir Github hesabı var, sizin de olacak!
 
-Bu üç yer sizin için önemli olacak. Lokal bilgisayarınız geliştirme ve test yaptığınız yer olacak. Değişikliklerden memnun olduğunuzda programınızın bir kopyasını Github'a koyacaksınız. Web siteniz PythonAnywhere üzerinde olacak ve onu kodunuzun bir kopyasını Github'dan alarak günceleyeceksiniz.
+Bu üç yer sizin için önemli olacak. Lokal bilgisayarınız geliştirme ve test yaptığınız yer olacak. Değişikliklerden memnun olduğunuzda programınızın bir kopyasını Github'a koyacaksınız. Web siteniz PythonAnywhere üzerinde olacak ve onu kodunuzun bir kopyasını Github'dan alarak güncelleyeceksiniz.
 
 # Git
 
