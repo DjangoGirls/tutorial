@@ -47,7 +47,7 @@ Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed 
 
 * [Jak działa internet](../how_the_internet_works/README.md)
 
-* [Wprowadzenie do wiersza poleceń](../intro_to_command_line/README.md)
+* [Wprowadzenie do wiersza polecenia](../intro_to_command_line/README.md)
 
 * [Wprowadzenie do Pythona](../python_introduction/README.md)
 
