@@ -10,7 +10,7 @@ Django'yu yüklemeden önce kod ortamınızı düzenli tutmak için son derece y
 
 Yapmanız gereken tek şey `virtualenv` oluşturmak için bir dizin bulmak; örneğin giriş dizininiz. Windows'ta şöyle görünebilir: `C:\Users\Name` (`Name` yerine kullanıcı adınız gelir).
 
-> **NOTE:** Windows'ta bu dizinin özel karakterler içermediğinden emin olun; eğer kullanıcı adınız özel karakterler içeriyorsa, farklo bir dizin kullanın. Örneğin: `C:\djangogirls`.
+> **NOTE:** Windows'ta bu dizinin özel karakterler içermediğinden emin olun; eğer kullanıcı adınız özel karakterler içeriyorsa, farklı bir dizin kullanın. Örneğin: `C:\djangogirls`.
 
 Bu eğitim için giriş dizininizde yeni açtığımız `djangogirls` adlı bir klasör kullanacağız:
 
@@ -30,14 +30,14 @@ Bu eğitim için giriş dizininizde yeni açtığımız `djangogirls` adlı bir 
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-Yeni bir `virtualenv` yaratmak için,prompt komutunu açmanız ve `python -m venv myvenv`'u çalıştırmanız gerekir.Böyle görünecektir; 
+Yeni bir `virtualenv` yaratmak için, komut istemini açmanız ve `python -m venv myvenv`'u çalıştırmanız gerekir. Böyle görünecektir:
 
 {% filename %}komut-satırı{% endfilename %}
 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Burada `myvenv`, `virtualenv`'inizin ismidir. İstediğiniz herhangi bir ismi kullanabilirsiniz, ama küçük harfle yazılmasına ve boşluk, aksan karakterleri (örn: å) ve özel karakterleri kullanmamaya dikkat edin. Ayrıca ismi kısa tutmak işinize yarayacaktır zira bu ismi çokca kullanıyor olacaksınız!
+Burada `myvenv`, `virtualenv`'inizin ismidir. İstediğiniz herhangi bir ismi kullanabilirsiniz, ama küçük harfle yazılmasına ve boşluk, aksan karakterleri (örn: å) ve özel karakterleri kullanmamaya dikkat edin. Ayrıca ismi kısa tutmak işinize yarayacaktır zira bu ismi çokça kullanıyor olacaksınız!
 
 <!--endsec-->
 
@@ -59,10 +59,10 @@ Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi
 > 
 >     The virtual environment was not created successfully because ensurepip is not available.  Debian/Ubuntu sistemlerinde, python3-venv paketini aşağıdaki komutu kullanarak yüklemeniz gerekiyor.
 >        apt install python3-venv
->     Burada sudo komutunu kullanmanız gerekebilir.  After installing the python3-venv package, recreate your virtual environment.
+>     Burada sudo komutunu kullanmanız gerekebilir.  python3-venv paketini indirdikten sonra, virtualenv'inizi yeniden oluşturun. 
 >     
 > 
-> Bu durumda,yukarıdaki yönergeleri izleyin ve `python3-venv` paketini yükleyin:
+> Bu durumda, yukarıdaki yönergeleri izleyin ve `python3-venv` paketini yükleyin:
 > 
 >     $ sudo apt install python3-venv
 >     
