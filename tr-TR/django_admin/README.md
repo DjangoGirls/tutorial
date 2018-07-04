@@ -1,8 +1,8 @@
 # Django admin
 
-Az önce modellediğimiz gönderilere ekleleme, düzenleme yada silme işlemi yapmak için Django admini kullanacağız.
+Az önce modellediğimiz gönderilere ekleme, düzenleme ya da silme işlemi yapmak için Django admini kullanacağız.
 
-Şimdi `blog/admin.py` dosyasını açarak İçeriği bununla değiştirelim:
+Şimdi `blog/admin.py` dosyasını açarak içeriği bununla değiştirelim:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -13,15 +13,15 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-Gördüğünüz gibi, bir önceki bölümde tanımladığımız gönderi modelini admin. py dosyamıza dahil (import) ettik. Admin sayfasında modelimizi görünür kılabilmek için, Modeli `admin.site.register(Post)` ile kaydetmemiz gerekiyor.
+Gördüğünüz gibi, bir önceki bölümde tanımladığımız gönderi modelini admin.py dosyamıza dahil (import) ettik. Admin sayfasında modelimizi görünür kılabilmek için, modeli `admin.site.register(Post)` ile kaydetmemiz gerekiyor.
 
-Tamam, artık admin sayfasında gönderi modelimize göz atabiliriz. Web sunucusunu çalıştırmak için komut satırında `python manage.py runserver` komutunu çalıştırmayı unutmayın. Tarayacınıza gidin ve adresi yazın http://127.0.0.1:8000/admin/. Bunun gibi bir giriş ekranı göreceksiniz:
+Tamam, artık admin sayfasında gönderi modelimize göz atabiliriz. Web sunucusunu çalıştırmak için komut satırında `python manage.py runserver` komutunu çalıştırmayı unutmayın. Tarayıcınıza gidin ve adresi yazın http://127.0.0.1:8000/admin/. Bunun gibi bir giriş ekranı göreceksiniz:
 
 ![Giriş sayfası](images/login_page2.png)
 
-Giriş yapabilmek için, sitedeki her şey üzerinde kontrolü olan *superuser* - bir kullanıcı hesabı oluşturmanız gerekiyor. Komut satırana geri giderek `python manage.py createsuperuser` yazın ve enter'a basın.
+Giriş yapabilmek için, sitedeki her şey üzerinde kontrolü olan *superuser* - bir kullanıcı hesabı oluşturmanız gerekiyor. Komut satırına geri giderek `python manage.py createsuperuser` yazın ve enter'a basın.
 
-> Unutmayın, ağ sunucusu açıkken yeni komut yazmak için, yeni bir terminal penceresi açın ve virtualenv'nizi aktif edin. **Web sunucusu başlatma** bölümünde, **Sizin ilk Django projeniz!** kısmında yeni komutların nasıl yazılacağını gözden geçirdik.
+> Ağ sunucusu açıkken yeni komut yazmak için, yeni bir terminal penceresi açıp sanal ortamınızı (virtualenv) aktive etmeniz gerekmektedir. **Web sunucusu başlatma** bölümünün, **Sizin ilk Django projeniz!** kısmında yeni komutların nasıl yazılacağını gözden geçirdik.
 
 {% filename %}Mac OS X veya Linux:{% endfilename %}
 
@@ -33,16 +33,16 @@ Giriş yapabilmek için, sitedeki her şey üzerinde kontrolü olan *superuser* 
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-İstendiğinde, kullanıcı adınızı (küçük harf, boşluksuz), e-posta adresinizi ve şifrenizi yazın. **Yazdığınız şifreyi göremezseniz endişelenmeyin - olması gerekenler burada var.** Devam etmek için şifreyi yazıp `enter` 'e bas. Çıktı şu şekilde olmalıdır (kullanıcı adı ve e-postanın sizin tarafınızdan olması gerekir):
+Giriş satırı geldiğinde, kullanıcı adınızı (küçük harfler ile ve boşluksuz), email adresinizi ve parolanızı girin. **Yazdığınız şifreyi göremezseniz endişelenmeyin - olması gereken budur.** Devam etmek için şifreyi yazıp `enter` 'a basın. Çıktı şunun gibi olmalıdır ( belirtilen kullanıcı adı ve eposta size ait olmalı):
 
-    Kullanıcı adı: admin
-    E-posta adresi: admin@admin.com
-    Şifre:
-    Şifre (tekrar):
-    Süper kullanıcı başarıyla oluşturuldu.
+    Username: admin
+    Email address: admin@admin.com
+    Password:
+    Password (again):
+    Superuser created successfully.
     
 
-Tarayıcınıza dönün. Seçtiğiniz süper kullanıcının kimlik bilgileri ile oturum açın; Django admin gösterge panelini göreceksiniz.
+Tarayıcınıza dönün. Oluşturduğunuz superuser'ın bilgileri ile giriş yaptığınızda Django'nun admin panelini göreceksiniz.
 
 ![Django admin](images/django_admin3.png)
 
