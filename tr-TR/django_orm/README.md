@@ -70,9 +70,9 @@ Veritabanına yeni bir gönderi eklemek için:
 >>> Post.objects.create(author=ben, title='Harika bir gönderi', text='Ne desem bilemedim')
 ```
 
-Fakat burada bir eksik maddemiz var: `ben`. Bir yazar olarak `Kullanıcı` modelinin bir örneğini göstermemiz gerekiyor. Bunu nasıl yaparız?
+Ancak bir eksiğimiz var: `ben`. Gönderinin yazar (author) özelliğine `User` (kullanıcı) modelinden türetilen bir nesneyi parametre olarak vermemiz gerekiyor. Nasıl verebiliriz?
 
-Öncelikle kullanıcı modelini dahil edelim:
+Öncelikle User (kullanıcı) modelini dahil edelim:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -89,7 +89,7 @@ Veritabanımızda hangi kullanıcılar var? Şu şekilde görebiliriz:
 <QuerySet [<User: zeynep>]>
 ```
 
-Bu daha önce oluşturduğumuz yetkili kullanıcı! Şimdi kullanıcının örneğini alalım:
+Daha önce yarattığımız ayrıcalıklı kullanıcı! Şimdi veritabanından User (kullanıcı) nesnesi alalım:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -97,15 +97,15 @@ Bu daha önce oluşturduğumuz yetkili kullanıcı! Şimdi kullanıcının örne
 ben = User.objects.get(username='zeynep')
 ```
 
-Gördüğünüz gibi, `username` özelliği 'zeynep' olan `User` nesnesini `get` ile aldık. Müthiş! Tabiki, kullanıcı adını kendi kullanıcı adınıza göre ayarlamalısınız.
+Gördüğünüz gibi, `username` (kullanıcı adı) özelliği 'zeynep' olan `User` nesnesini `get` ile aldık. Müthiş! Tabiki, kullanıcı adını kendi kullanıcı adınıza göre ayarlamalısınız.
 
 Gönderimizi artık kaydedebiliriz:
 
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.create(author=me, title='Sample title', text='Test')
-<Post: Sample title>
+>>> Post.objects.create(author=ben, title='Harika bir gönderi', text='Ne desem bilemedim')
+<Post: Harika bir gönderi>
 ```
 
 Yaşasın! Çalışıp çalışmadığını kontrol etmek ister misin?
@@ -114,38 +114,38 @@ Yaşasın! Çalışıp çalışmadığını kontrol etmek ister misin?
 
 ```python
 >>> Post.objects.all()
-<SorguSetleri [<Gönderi: gönderi başlığım>, <Gönderi: Diğer bir gönderi başlığı>, <Gönderi: Örnek başlık>]>
+<QuerySet [<Post: Gönderi başlığım>, <Post: Diğer bir gönderi başlığı>,<Post: Harika bir gönderi>]>
 ```
 
 İşte bu kadar, listede bir gönderi daha!
 
 ### Daha fazla gönderi ekle
 
-Şimdi daha fazla gönderi ekleyerek biraz eğlenebilir ve nasıl çalıştığını görebilirsin. İki veya üç tane daha ekle ve sıradaki bölüme geç.
+Şimdi biraz eğlenenebiliriz ve nasıl çalıştığını görmek için daha fazla gönderi ekleyebiliriz. 2-3 tane daha ekleyin ve bir sonraki kısma devam edin.
 
 ### Nesneleri filtrelemek
 
-QuerySet'lerin büyük bir bölümü onları filtreleme yeteneğidir. Diyelim ki ola yazarına ait tüm gönderileri bulmak istiyoruz. `Post.objects.all()` içindeki `all` yerine `filter` kullanacağız. Parantez içine istediğimiz blog gönderilerinin sorgusetimize girmesi için sağlaması gereken şart(lar) ı belirteceğiz. Bizim örneğimizde, `yazar`'ın `bana` eşit olma koşulu vardır. Django'da bu şu şekilde yazılır: `yazar=ben`. Şu an kod parçacığımız şöyle görünüyor:
+QuerySet'lerin büyük bir bölümü onları filtreleme yeteneğidir. Diyelim ki, Zeynep tarafından yazılmış tüm gönderileri bulmak istiyoruz. `Post.objects.all()` içindeki `all` yerine `filter` kullanacağız. Parantez içine istediğimiz blog gönderilerinin sağlaması gereken şartları belirteceğiz. Örneğimizde, `author(yazar)` `ben`'e eşitti. Django'da bu filtre şöyle yazılır: `author=ben`. Şu an kod parçacığımız şöyle görünüyor:
 
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.filter(author=me)
-<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
+>>> Post.objects.filter(author=ben)
+[<Post: Gönderi 1>, <Post: Gönderi 2>, <Post: Harika bir gönderi>, <Post: Nefis bir gönderi>]
 ```
 
-Yada belkide içinde 'Başlık' kelimesi olan bütün gönderileri `başlık`alanında görmek istiyoruzdur?
+Ya da belki `title(başlık)` alanında içinde 'Nefis' kelimesini içeren tüm gönderileri görmek istiyoruz?
 
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.filter(title__contains='title')
-<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
+>>> Post.objects.filter(title__contains='Nefis')
+[<Post: Nefis bir gönderi>]
 ```
 
-> **Not** `baslik` ve `contains` arasında iki tane alt çizgi (`_`) var. Django'nun ORM'i bu söz dizimini, özelliği ("title") ve operasyon veya filtreyi ("contains") ayırmak için kullanır. Eğer sadece tek bir alt çizgi kullanırsanız, "FieldError: Cannot resolve keyword title_contains" şeklinde bir hata alacaksınız.
+> **Not** `title` (başlık) ve `contains` arasında iki tane alt çizgi (`_`) var. Django'nun ORM'i bu söz dizimini, özelliği ("title") ve operasyon veya filtreyi ("contains") ayırmak için kullanır. Eğer sadece tek bir alt çizgi kullanırsanız, "FieldError: Cannot resolve keyword title_contains" şeklinde bir hata alacaksınız.
 
-Ayrıca yayınlananmış olan tüm gönderilerin bir listesini de alabilirsiniz. Bunu, yayınlanmış olan postlar içerisinde `yayınlanma_tarihi` şeklinde filtreleyerek yapıyoruz:
+Ayrıca yayınlanmış tüm gönderilerin bir listesini alabiliriz. Bunu geçmişte `published_date (yayinlanma_tarihi)` alanı belirtilmiş tüm gönderileri filtreleyerek yapıyoruz:
 
 {% filename %}komut-satırı{% endfilename %}
 
