@@ -46,12 +46,12 @@ Tarayıcınıza dönün. Oluşturduğunuz superuser'ın bilgileri ile giriş yap
 
 ![Django admin](images/django_admin3.png)
 
-Mesajlara gidin ve onunla biraz deneme yapın. Beş veya altı blog yazısı ekleyin. İçerik hakkında endişelenmeyin - zamandan kazanmak için bu öğreticiden bazı metinleri kopyalayıp yapıştırın. :)
+Mesajlara gidin ve biraz kurcalayın. Beş altı blog yazısı ekleyin. İçeriği kafanıza takmayın - zamandan kazanmak için basitçe bu tutorialdan birkaç yazı kopyalayıp yapıştırabilirsiniz. :)
 
-En az iki veya üç yazının (ama hepsinin değil) yayınlanma tarihinin ayarlanmış olduğundan emin olun. Bu size daha sonra yardımcı olacak.
+En azından iki ya da üç yazıya (ama hepsinin değil) yayınlama tarihi girdiğinizden emin olun. Bunu ileriki adımlarda kullanacağız.
 
 ![Django admin](images/edit_post3.png)
 
-Django admin hakkında daha fazla bilgi edinmek isterseniz, Django'nun belgelerini kontrol etmelisiniz: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Eğer Django admin ile ilgili daha fazla şey öğrenmek istiyorsanız Django'nun belgelerine göz atabilirsiniz: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
 
-Bu, muhtemelen kendinize yeniden enerji vermek için bir kahve (veya çay) veya başka şeyler yemek için iyi bir an. İlk Django modelinizi yarattınız - küçük bir molayı hak ettiniz!
+Şu an muhtemelen enerjinizi geri toplamak için bir şeyler yemek veya kahve( ya da çay) içmek için iyi bir zaman. İlk Django modelinizi yarattınız. Küçük bir molayı hak ettiniz!
