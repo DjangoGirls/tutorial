@@ -1,28 +1,28 @@
-# Wprowadzenie do interfejsu wiersza poleceń
+# Wprowadzenie do interfejsu wiersza polecenia
 
 > Dla czytelniczek w domu: ten rozdział jest również omówiony w wideo [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
 Za chwilę napiszesz swoją pierwszą linijkę kodu. Jesteś już podekscytowana? :)
 
-**Pozwól, że przedstawimy Ci, Twojego pierwszego przyjaciela: wiersz poleceń!**
+**Pozwól, że przedstawimy Ci, Twojego pierwszego przyjaciela: wiersz polecenia!**
 
 Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, które używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco ale tak naprawdę to tylko zachęta do wpisywania komend.
 
 > **Uwaga** Podczas tego kursu będziemy używać terminów "katalog" i "folder" zamiennie, ponieważ oznaczają one tę samą rzecz.
 
-## Czym jest wiersz poleceń?
+## Czym jest wiersz polecenia?
 
-Okno zwane **wierszem poleceń** lub **interfejsem wiersza poleceń** jest aplikacją tekstową służącą do przeglądania, obsługi i operowania plikami na Twoim komputerze. Podobnie jak np. Eksplorator Windows lub Finder na Macu, ale bez interfejsu graficznego. Inne nazwy dla wiersza poleceń to *cmd*, *CLI*, *prompt*, *konsola* lub *terminal*.
+Okno zwane **wierszem polecenia** lub **interfejsem wiersza polecenia** jest aplikacją tekstową służącą do przeglądania, obsługi i operowania plikami na Twoim komputerze. Podobnie jak np. Eksplorator Windows lub Finder na Macu, ale bez interfejsu graficznego. Inne nazwy dla wiersza polecenia to *cmd*, *CLI*, *prompt*, *konsola* lub *terminal*.
 
-## Uruchamiamy interfejs wiersza poleceń
+## Uruchamiamy interfejs wiersza polecenia
 
-Aby zacząć nasze eksperymenty, musimy najpierw otworzyć nasz wiersz poleceń.
+Aby zacząć nasze eksperymenty, musimy najpierw otworzyć nasz wiersz polecenia.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 Przejdź do menu Start → System → Wiersz polecenia.
 
-> Na starszych wersjach Windowsa szukaj w menu Start → Wszystkie programy → Akcesoria → Wiersz poleceń.
+> Na starszych wersjach Windowsa szukaj w menu Start → Wszystkie programy → Akcesoria → Wiersz polecenia.
 
 <!--endsec-->
 
@@ -68,7 +68,7 @@ Każde polecenie będzie poprzedzone tym znakiem oraz jedną spacją, ale nie mu
 
 > Jedna mała uwaga: w Twoim przypadku prompt może być poprzedzony czymś jeszcze, np. `C:\Users\ola>` lub `Olas-MacBook-Air:~ ola$` i jest to w 100% poprawne.
 
-Część do znaku `$` lub `>` razem z nim nazywana jest *znakiem zachęty wiersza poleceń* lub skrótowo *znakiem zachęty (promptem)*. Jego celem jest zachęcić Ciebie do wpisania jakiegoś polecenia.
+Część do znaku `$` lub `>` razem z nim nazywana jest *znakiem zachęty wiersza polecenia* lub skrótowo *znakiem zachęty (promptem)*. Jego celem jest zachęcić Ciebie do wpisania jakiegoś polecenia.
 
 W tutorialu, jeżeli będziemy chciały byś wpisała komendę, umieścimy przed nią również `$` lub `>`, a czasami nawet resztę znaku zachęty. Możesz śmiało zignorować lewą część i wpisać tylko komendę zaczynającą się za promptem.
 
@@ -108,7 +108,7 @@ Jak widzisz, komputer właśnie wyświetlił Twoją nazwę użytkownika. Prawda,
 
 ## Podstawy
 
-Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu poleceń, zatem postępuj według instrukcji odpowiadających Twojemu systemowi operacyjnemu. To co, spróbujemy?
+Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu polecenia, zatem postępuj według instrukcji odpowiadających Twojemu systemowi operacyjnemu. To co, spróbujemy?
 
 ### Bieżący katalog
 
