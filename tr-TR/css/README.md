@@ -296,7 +296,7 @@ Bu dosyaları kaydedin ve web sayfanızı yenileyin.
 
 Yaşasın! Harika görünüyor değil mi? Şimdi yapıştırdığımız koda bakıp CSS tarafından kullanılan ve HTML eklenmiş olan nesneleri bulalım. Tarihi turkuaz rengine çevirmek için nereyi değiştirmen gerekir?
 
-CSS ile biraz oynamaktan çekinme ve bir kaç şeyi değiştirmeye calış. CSS ile oynamak neyin neyi etkilediğini anlamak için çok faydalı. Bir şeyleri bozarsan dert etme, her zaman geri alabilirsin!
+CSS ile biraz oynamaktan çekinme ve birkaç şeyi değiştirmeye calış. CSS ile oynamak neyin neyi etkilediğini anlamak için çok faydalı. Bir şeyleri bozarsan dert etme, her zaman geri alabilirsin!
 
 Ücretsiz [Codeacademy HTML & CSS kursu](https://www.codecademy.com/tracks/web)nu izlemeni gerçekten öneririz. Web sitelerini CSS'le güzelleştirmeyi iyice öğrenmene yardımcı olabilir.
 
