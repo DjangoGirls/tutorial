@@ -4,7 +4,7 @@ Bu bölümde Django'nun veritabanına nasıl bağlandığını ve veriyi nasıl 
 
 ## QuerySet (SorguSeti) Nedir?
 
-QuerySet(SorguSeti), temel olarak, verilmiş olan bir Modelin nesnelerinin bir listesini oluşturmaktadır. QuerySet(SorguSeti) veritabanından verileri okumanızı, bu verileri filtrelemenizi ve düzenlemenizi sağlar.
+QuerySet (SorguSeti), esas olarak, verilen bir modelin nesnelerinin listesidir. QuerySet veritabanından veri okumamıza, veriyi filtrelememize ve sıralamamıza imkan sağlar.
 
 En kolayı örnekle öğrenmektir. Hadi deneyelim, olur mu?
 
@@ -26,7 +26,7 @@ Etkisi aşağıdaki gibi olmalı:
 >>>
 ```
 
-Şu anda Django interaktif konsoldasınız. Python komut istemi gibi fakat biraz Django büyüsü katılmış hali. :) Tabii ki, bütün python komutlarını buradada kullanabilirsiniz.
+Şu an Django'nun etkileşimli konsolundayız. Python istemine benziyor, ama biraz Django büyüsü eklenmiş :) Kuşkusuz burada da Python komutlarının tümünü kullanabiliriz.
 
 ### Tüm nesneler
 
@@ -55,7 +55,7 @@ Ahh! Bir hata meydana geldi. Bize hiç gönderi olmadığını söylüyor. Bu do
 
 ```python
 >>> Post.objects.all()
-<SorguSeti [<Gönderi: Gönderi başlığım>, <Gönderi: Diğer ir gönderi başlığı>]>
+<QuerySet [<Post: Gönderi başlığım>, <Post: Diğer bir gönderi başlığı>]>
 ```
 
 Bu daha önce oluşturduğumuz gönderilerin listesi! Bu gönderileri Django admin arayüzü ile oluşturduk. Fakat şimdi python'u kullanarak yeni gönderiler oluşturmak istiyoruz, peki bunu nasıl yaparız?
@@ -67,7 +67,7 @@ Veritabanına yeni bir gönderi eklemek için:
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.create(yazar=ben, baslik='Harika bir gönderi', yazi='Ne desem bilemedim')
+>>> Post.objects.create(author=ben, title='Harika bir gönderi', text='Ne desem bilemedim')
 ```
 
 Fakat burada bir eksik maddemiz var: `ben`. Bir yazar olarak `Kullanıcı` modelinin bir örneğini göstermemiz gerekiyor. Bunu nasıl yaparız?
@@ -85,8 +85,8 @@ Veritabanımızda hangi kullanıcılar var? Şu şekilde görebiliriz:
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>>User.objects.all()
-<SorguSetleri [<Kullanıcı: ola>]>
+>>> User.objects.all()
+<QuerySet [<User: zeynep>]>
 ```
 
 Bu daha önce oluşturduğumuz yetkili kullanıcı! Şimdi kullanıcının örneğini alalım:
@@ -94,10 +94,10 @@ Bu daha önce oluşturduğumuz yetkili kullanıcı! Şimdi kullanıcının örne
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> ben = User.objects.get(kullanıcı adı='ola')
+ben = User.objects.get(username='zeynep')
 ```
 
-Gördüğünüz gibi, 'ola' `kullanıcı adı`'yla aynı olan bir `kullanıcı` `aldık`. Muntazam! Tabiki, kendi kullanıcı adınızı kullanmak için bu satırı ayarlarınızı yapmanız gerekmektedir.
+Gördüğünüz gibi, `username` özelliği 'zeynep' olan `User` nesnesini `get` ile aldık. Müthiş! Tabiki, kullanıcı adını kendi kullanıcı adınıza göre ayarlamalısınız.
 
 Gönderimizi artık kaydedebiliriz:
 
