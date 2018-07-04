@@ -42,10 +42,10 @@ Bunu blog uygulamamızın içine `static` isimli bir klasör oluşturarak yapaca
 
     djangogirls 
     ├── blog 
-    │ ├── geçişler
-    │ ├── statik 
-    │ └── şablonlar 
-    └── benimsitem
+    │ ├── migrations
+    │ ├── static
+    │ └── templates 
+    └── mysite
     
 
 Django otomatik olarak uygulama klasörlerinizdeki "static" adlı klasörleri bulur. Böylece bunların içerikleri statik dosya olarak kullanabilir.
