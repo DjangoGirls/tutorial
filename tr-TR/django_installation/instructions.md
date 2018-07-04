@@ -57,9 +57,9 @@ Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
->     The virtual environment was not created successfully because ensurepip is not available.  Debian/Ubuntu sistemlerinde, python3-venv paketini aşağıdaki komutu kullanarak yüklemeniz gerekiyor.
+>     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
 >        apt install python3-venv
->     Burada sudo komutunu kullanmanız gerekebilir.  python3-venv paketini indirdikten sonra, virtualenv'inizi yeniden oluşturun. 
+>     You may need to use sudo with that command.  python3-venv paketini indirdikten sonra, virtualenv'inizi yeniden oluşturun. 
 >     
 > 
 > Bu durumda, yukarıdaki yönergeleri izleyin ve `python3-venv` paketini yükleyin:
@@ -112,13 +112,13 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOT:** Windows 10'da , Windows PowerShell tarafından `bu senaryoların uygulanması bu sistemde devre dışıdır` diyen bir hata alabilirsiniz. Bu durumda,başka bir Windows PowerShell'i,"Yönetici Olarak Çalıştır" seçeneğini kullanarak çalıştırın. Daha sonra Sanal ortamınızı başlatmadan önce sırada ki komutları yazmayı deneyin:
+> **NOT:** Windows 10'da , Windows PowerShell tarafından `bu senaryoların uygulanması bu sistemde devre dışıdır` diyen bir hata alabilirsiniz. Bu durumda,başka bir Windows PowerShell'i,"Yönetici Olarak Çalıştır" seçeneğini kullanarak çalıştırın. Daha sonra sanal ortamınızı başlatmadan önce sıradaki komutları yazmayı deneyin:
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
 >     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >         Execution Policy Change
->         The execution policy helps protect you from scripts that you do not trust. Uygulama politikasını değiştirmek http://go.microsoft.com/fwlink/?LinkID=135170 adresinde yardım kısmında yer alan about_Execution_Policies'teki gibi güvenlik risklerine neden olabilir. Uygulama politikasını değiştirmek istiyor musunuz? [Y] Yes/Evet [A] Yes to All/Hepsi için evet [N] No/Hayır [L] No to All/Hepsi için hayır [S] Suspend/Askıya al [?] Help/Yardım (varsayılan cevap "N")
+>         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
 <!--endsec-->
@@ -152,16 +152,16 @@ Artık bütün gerekli uygulamaları bir araya getirdiğimize göre sonunda Djan
 
 ## Django'yu yüklemek
 
-`virtualenv`'i çalıştırdığınıza göre,şimdi Django'yu yükleyebilirsiniz.
+`virtualenv`'i çalıştırdığınıza göre, şimdi Django'yu yükleyebilirsiniz.
 
-Bunu yapmadan önce,bilgisayarımızın,Django yüklemek için kullanacağımız yazılım olan `pip`'in en son versiyonuna sahip olduğundan emin olmalıyız
+Bunu yapmadan önce, bilgisayarımızın, Django yüklemek için kullanacağımız yazılım olan `pip`'in en son versiyonuna sahip olduğundan emin olmalıyız:
 
 {% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-Sonra `pip install django~=1.11.0` (eşittir işaretinden önce tilde işareti kullandığımızı not edin: `~=`) çalıştırarak Django 'yu yükleyin.
+Sonra `pip install django~=1.11.0` (eşittir işaretinden önce tilde işareti kullandığımızı not edin: `~=`) çalıştırarak Django'yu yükleyin.
 
 {% filename %}komut-satırı{% endfilename %}
 
