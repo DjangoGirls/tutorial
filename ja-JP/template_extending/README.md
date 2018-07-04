@@ -122,7 +122,7 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+あとやることは一つだけです。これら二つのテンプレートをくっつけてあげる必要があります。これがテンプレートを拡張するということのすべてです！このファイルの先頭にextendsタグを追加することでそれを行います。このように：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
