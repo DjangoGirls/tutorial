@@ -23,7 +23,7 @@ Dla systemów MacOS X lub Linux, wpisz teraz do swojej konsoli następującą ko
 
 > Kropka `.` ma kluczowe znaczenie, ponieważ dzięki niej skrypt wie, że ma zainstalować Django w bieżącym katalogu (kropka `.` to taka skrócona nazwa bieżącego katalogu).
 > 
-> **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin`. `(myvenv) ~/djangogirls$` są tutaj tylko po to, by pokazać Ci przykład wiersza poleceń i tego, jak będzie on wyglądał, gdy będziesz wpisywać polecenia.
+> **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin`. `(myvenv) ~/djangogirls$` są tutaj tylko po to, by pokazać Ci przykład wiersza polecenia i tego, jak będzie on wyglądał, gdy będziesz wpisywać polecenia.
 
 <!--endsec-->
 
@@ -38,7 +38,7 @@ Dla systemu Windows wpisz teraz do swojej konsoli następującą komendę. **Nie
 
 > Kropka `.` ma kluczowe znaczenie, ponieważ dzięki niej skrypt wie, że ma zainstalować Django w bieżącym katalogu (kropka `.` to taka skrócona nazwa bieżącego katalogu).
 > 
-> **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin.exe`. `(myvenv) C:\Users\Name\djangogirls>` są tutaj tylko po to, by pokazać Ci przykład znaku zachęty wiersza poleceń, który będzie Ciebie zapraszał, byś wpisała komendę.
+> **Uwaga** Kiedy będziesz przepisywać komedy, które zamieściliśmy wyżej, pamiętaj, że przepisujesz tylko tę część, która zaczyna się od `django-admin.exe`. `(myvenv) C:\Users\Name\djangogirls>` są tutaj tylko po to, by pokazać Ci przykład znaku zachęty wiersza polecenia, który będzie Ciebie zapraszał, byś wpisała komendę.
 
 <!--endsec-->
 
@@ -79,9 +79,9 @@ W pliku `settings.py` znajdź linijkę, w której jest napisane `TIME_ZONE` i zm
 TIME_ZONE = 'Europe/Warsaw'
 ```
 
-Kod języka składa się z języka, np. ` en ` dla języka angielskiego lub ` de ` dla języka niemieckiego i kodu kraju, np. ` de ` dla Niemiec lub ` ch ` dla Szwajcarii. Jeżeli angielski nie jest Twoim językiem ojczystym, możesz dodać tą wartość, aby domyślne przyciski i powiadomienia od Django były w Twoim języku. Tak więc przycisk "Anuluj" zostałby przetłumaczony na język, który tu zdefiniowałeś. [Django jest wyposażony w mnóstwo przygotowanych tłumaczeń](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Kod języka składa się z języka, np. ` en ` dla języka angielskiego lub ` de ` dla języka niemieckiego i kodu kraju, np. ` de ` dla Niemiec lub ` ch ` dla Szwajcarii. Jeżeli angielski nie jest Twoim językiem ojczystym, możesz dodać tę wartość, aby domyślne przyciski i powiadomienia od Django były w Twoim języku. Tak więc przycisk "Anuluj" zostałby przetłumaczony na język, który tu zdefiniowałeś. [Django jest wyposażony w mnóstwo przygotowanych tłumaczeń](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-Jeżeli chcesz używać innego języka, zmień kod języka, zmieniając następujący wiersz:
+Jeżeli chcesz używać innego języka, zmień jego kod, modyfikując następujący wiersz:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -193,7 +193,7 @@ Gratulacje! Właśnie stworzyłaś swoją pierwszą stronę i uruchomiłaś ją 
 
 ![Działa!](images/it_worked2.png)
 
-Kiedy serwer internetowy jest uruchomiony, nie możesz zobaczyć nowego wiersza poleceń do wprowadzania dodatkowych poleceń. Terminal przyjmie nowy tekst, ale nie wykona nowego polecenia. Dzieje się tak dlatego, że serwer internetowy ciągle działa, aby nasłuchiwać przychodzących żądań.
+Kiedy serwer internetowy jest uruchomiony, nie możesz zobaczyć nowego wiersza polecenia do wprowadzania dodatkowych poleceń. Terminal przyjmie nowy tekst, ale nie wykona nowego polecenia. Dzieje się tak dlatego, że serwer internetowy ciągle działa, aby nasłuchiwać przychodzących żądań.
 
 > Sprawdziliśmy, jak działają serwery internetowe w rozdziale **"Jak działa Internet"**.
 
