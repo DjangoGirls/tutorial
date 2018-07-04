@@ -8,15 +8,15 @@
 
 歡迎來到Django Girls的教學指引 很開心能在這裡見到妳/你:)，這份教學指引會帶領你進入一段旅程，進入網頁技術的世界，瞧瞧究竟是哪些必要的元素，才能完成我們所熟知的那些網頁。
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+就像面對所有的未知事物一樣，這將會是一場冒險！ 但是不用擔心，因為你已經鼓起勇氣來到了這裡，一切都會沒問題的:)
 
 ## 簡介
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? 你有沒有想過如何建立一個網站，但從來沒有足夠的動力開始嗎？ 你有沒有想過軟體世界太複雜以致於你沒有自己嘗試做些東西？
+這世界與科技的關聯性越來越高，你有沒有曾經感到無法(或只是尚未)跟上時代？ 你有沒有想過如何建立一個網站，但從來沒有足夠的動力開始嗎？ 你有沒有想過軟體世界太複雜以致於你沒有自己嘗試做些東西？
 
 那麼，我們有好消息給你！程式設計並不是看起來那麼困難，而且我們想要告訴你它可以多麼有趣。
 
-This tutorial will not magically turn you into a programmer. 如果你想要擅長它，你需要幾個月甚至幾年的學習和練習。 但我們想要讓你知道程式設計或建立網站並不是看起來的那麼複雜。 我們將盡可能試著解釋不同細節，所以你將不會覺得被技術嚇倒。
+這份教學指引沒有辦法奇蹟般的讓你變成一個工程師。 如果你想要擅長它，你需要幾個月甚至幾年的學習和練習。 但我們想要讓你知道程式設計或建立網站並不是看起來的那麼複雜。 我們將盡可能試著解釋不同細節，所以你將不會覺得被技術嚇倒。
 
 我們希望我們能使你像我們一樣熱愛科技 ！
 
