@@ -137,7 +137,7 @@ Twój kod jest teraz na GitHubie. Możesz to sprawdzić! Znajdujesz się teraz w
 
 ## Konfigurowanie naszej strony w PythonAnywhere
 
-Wróć do głównego panelu [PythonAnywhere Dashboard](https://www.pythonanywhere.com/), klikając logo i wybierz opcję uruchomienia konsoli "Bash" - jest to wersja wiersza poleceń PythonAnywhere, podobnie jak na Twoim komputerze.
+Wróć do głównego panelu [PythonAnywhere Dashboard](https://www.pythonanywhere.com/), klikając logo i wybierz opcję uruchomienia konsoli "Bash" - jest to wersja wiersza polecenia PythonAnywhere, podobnie jak na Twoim komputerze.
 
 ![Sekcja 'New Console' na stronie PythonAnywhere z przyciskiem 'bash'](images/pythonanywhere_bash_console.png)
 
