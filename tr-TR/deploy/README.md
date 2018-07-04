@@ -77,7 +77,7 @@ Ve son olarak değişikliklerimizi kaydediyoruz. Komut satırına gidin ve aşa�
 {% filename %}komut-satırı{% endfilename %}
 
     $ git add --all .
-    $ git commit -m "My Django Girls app, first commit"
+    $ git commit -m "Django Girls uygulamam, ilk commit"
      [...]
      13 files changed, 200 insertions(+)
      create mode 100644 .gitignore
@@ -93,32 +93,32 @@ Sıra depomuzu oluşturmaya geldi. 'New Repository' tuşuna tıklayıp "my-first
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+> **Not** `my-first-blog` ismi önemli -- başka birşey de seçebilirsiniz, ama aşağıdaki yönergelerde çok geçiyor, her seferinde değiştirmeniz gerekir. En kolayı `my-first-blog` ismi ile devam etmek.
 
-On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+Bir sonraki ekranda, repo'yu klonlamak için gereken URL'yi göreceksiniz. "HTTPS"li versiyonunu seçin, kopyalayın. Birazdan onu komut penceresine yapıştıracağız:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Şimdi bilgisayarınızdaki Git reposunu Github'daki repo ile ilişkilendirmemiz gerekiyor.
 
-Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+Aşağıdakini komut satırına yazın (`<github-kullanıcı-adınız>` kısmını Github hesabını yarattığınız sırada kullandığınız kullanıcı adı ile değiştirin, büyüktür küçüktür işaretlerini eklemeyin):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
-    $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
+    $ git remote add origin https://github.com/<github-kullanıcı-adınız>/my-first-blog.git 
     $ git push -u origin master
     
 
-Enter your GitHub username and password and you should see something like this:
+Github kullanıcı adı ve şifrenizi girin, ardından aşağıdakine benzer bir şey görmeniz gerekiyor:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
-    Username for 'https://github.com': ola
-    Password for 'https://ola@github.com':
+    Username for 'https://github.com': zeynep 
+    Password for 'https://zeynep@github.com': 
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
-    To https://github.com/ola/my-first-blog.git
+    To https://github.com/zeynep/my-first-blog.git
     
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
@@ -126,13 +126,13 @@ Enter your GitHub username and password and you should see something like this:
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Kodunuz artık Github'da. Hemen gidip bak! İyi bir çevrede olduğunu göreceksiniz - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), ve daha birçok harika açık kaynak yazılım projesi de kodlarını Github'da tutuyor. :)
 
-# Setting up our blog on PythonAnywhere
+# Blogumuzun PythonAnywhere üzerinde kurulumu
 
-## Sign up for a PythonAnywhere account
+## PythonAnywhere hesabı oluşturma
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Not** En baştaki kurulum adımlarında PythonAnywhere hesabını açmış olabilirsiniz - öyleyse bu kısmı tekrar yapmanıza gerek yok.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
