@@ -182,9 +182,9 @@ Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. Öncelikle
       - Create model Post
     
 
-**Not:** Düzenlediğiniz dosyaları kaydetmeyi unutmayın. Aksi takdirde, bilgisayarınız önceki sürümü çalıştırarak beklenmedik hatalar verebilecektir.
+**Not:** Düzenlediğiniz dosyaları kaydetmeyi unutmayın. Aksi takdirde, bilgisayarınız önceki sürümü çalıştırarak beklenmedik hatalar verebilir.
 
-Django bize veritabanımıza uygulayabileceğimiz bir taşıma dosyası oluşturdu. `python manage.py migrate blog` yaz ve çıktı aşağıdaki gibi olmalıdır:
+Django bize veritabanımıza uygulayabileceğimiz bir taşıma (migrasyon) dosyası oluşturdu. `python manage.py migrate blog` yazdığın zaman şunu görmelisin:
 
 {% filename %}komut-satır{% endfilename %}
 
@@ -196,4 +196,4 @@ Django bize veritabanımıza uygulayabileceğimiz bir taşıma dosyası oluştur
       Applying blog.0001_initial... OK
     
 
-Yaşasın! Model yazımız şimdi veritabanımızda! Onu görmek güzel olur, değil mi? Yazınızın neye benzediğini görmek için bir sonraki bölüme geçin!
+Yaşasın! Post modelimiz artık veritabanımızda! Görsek ne güzel olur, değil mi? Gelecek bölümde Post'un nasıl göründügünü göreceğiz!
