@@ -133,7 +133,7 @@ Zastanawiasz się, dlaczego czasami wywołujemy funkcję z `.` na końcu stringu
 
 OK, wystarczy już stringów. Jak dotąd nauczyłaś się o:
 
-- **wiersza poleceń** - wpisywanie komend (kodu) w wiersz poleceń Pythona powoduje, że Python zwraca wyniki
+- **wiersz polecenia** - wpisywanie komend (kodu) w wierszu polecenia Pythona powoduje, że Python zwraca wyniki
 - **liczby i stringi** - w Pythonie liczb używamy do działań matematycznych, a stringów do obiektów tekstowych
 - **operatory** - takie jak `+` i `*`, łączą wartości produkując nowe
 - ** funkcje** - takie jak `upper()` i `len()`, wykonują działania na obiektach.
@@ -608,7 +608,7 @@ Aby wyjść z używanego przez nas interpretera Pythona, użyj po prostu funkcji
 $
 ```
 
-W ten sposób znajdziesz się z powrotem w wierszu poleceń.
+W ten sposób znajdziesz się z powrotem w wierszu polecenia.
 
 Nieco wcześniej, w sekcji [Edytor kodu](../code_editor/README.md), dokonałyśmy wyboru programu używanego przez nas do pisania kodu. Musimy go teraz otworzyć i zapisać kod w nowym pliku:
 
@@ -624,7 +624,7 @@ Teraz musimy zapisać plik i nadać mu wymowną nazwę. Nazwijmy go **python_int
 
 > **Uwaga** Powinnaś zauważyć jedną z najfajniejszych rzeczy, jeśli chodzi o edytor kodu: kolory! Gdy pisałaś w konsoli Pythona, wszystko miało ten sam kolor. Teraz powinnaś zobaczyć, że funkcja `print` jest innego koloru niż string. Nazywa się to "podświetlanie składni" i jest naprawdę użyteczne podczas kodowania. Kolor wyrazów w edytorze będzie dla Ciebie wskazówką, np. łatwo rozpoznasz dzięki temu niezamknięty string albo literówkę w słowie kluczowym (tak jak `def` w funkcji). To jeden z powodów, dla których używamy edytora kodu. :)
 
-Mamy już zapisany plik, a więc czas go uruchomić! Wykorzystując wiadomości poznane w sekcji poświęconej wierszowi poleceń, użyj terminala, aby **zmienić aktualny katalog** na katalog Pulpitu.
+Mamy już zapisany plik, a więc czas go uruchomić! Wykorzystując wiadomości poznane w sekcji poświęconej wierszowi polecenia, użyj terminala, aby **zmienić aktualny katalog** na katalog Pulpitu.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
@@ -652,7 +652,7 @@ W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-W wierszu poleceń Windows będzie tak:
+W wierszu polecenia Windows będzie tak:
 
 {% filename %}command-line{% endfilename %}
 
