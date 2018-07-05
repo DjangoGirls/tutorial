@@ -21,37 +21,37 @@ admin.site.register(Post)
 
 การเข้าสู่ระบบ คุณต้องสร้าง *superuser* - ซึ่งสามารถควบคุมทุกอย่างบนเว็บนี้ได้ กลับไปยัง command line หรือบรรทัดคำสั่ง พิมพ์ `python manage.py createsuperuser` จากนั้นกด enter
 
-> โปรดจำไว้ว่า ในการเขียนคำสั่งใหม่ในขณะที่เว๊บเซอร์เวอร์กำลังรันอยู่นั้น ให้เปิดหน้าต่างเทอร์มินัลใหม่และเปิดใช้งาน virtualenv We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
-
-{% filename %}Mac OS X or Linux:{% endfilename %}
-
-    (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    
-
-{% filename %}Windows:{% endfilename %}
-
-    (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
-    
-
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
-
-    Username: admin
-    Email address: admin@admin.com
-    Password:
-    Password (again):
-    Superuser created successfully.
-    
-
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
-
-![Django admin](images/django_admin3.png)
-
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
-
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
-
-![Django admin](images/edit_post3.png)
-
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
-
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+> โปรดจำไว้ว่า ในการเขียนคำสั่งใหม่ในขณะที่เว๊บเซอร์เวอร์กำลังรันอยู่นั้น ให้เปิดหน้าต่างเทอร์มินัลใหม่และเปิดใช้งาน virtualenv เราสามารถตรวจสอบวิธีการเขียนคำสั่งใหม่ในบท **โปรเจ็ค Django แรกของคุณ!** ในส่วน ** การเริ่มต้นเว็บเซิร์ฟเวอร์ </ 0></p> </blockquote> 
+> 
+> {% filename %}Mac OS X or Linux:{% endfilename %}
+> 
+>     (myvenv) ~/djangogirls$ python manage.py createsuperuser
+>     
+> 
+> {% filename %}Windows:{% endfilename %}
+> 
+>     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
+>     
+> 
+> เมื่อได้รับแจ้ง ให้พิมพ์ username (ด้วยตัวพิมพ์เล็ก ไม่เว้นช่องว่าง) อีเมล์ และรหัสผ่าน **คุณไม่ต้องกังวลใจที่คุณไม่เห็นรหัสผ่านที่คุณกำลังพิมพ์ – มันควรจะเป็นแบบนั้นแหละ** แค่พิมพ์รหัสผ่านให้ครบและถูกต้องแล้วกด Enter เพื่อดำเนินการต่อ ผมลัพธ์ควรมีหน้าตาแบบนี้ (username และอีเมล์ควรจะเป็นของคุณเอง)
+> 
+>     Username: admin
+>     Email address: admin@admin.com
+>     Password:
+>     Password (again):
+>     Superuser created successfully.
+>     
+> 
+> กลับไปยังเบราว์เซอร์ของคุณ เข้าระบบด้วยบัญชีที่คุณเพิ่งสร้างเมื่อสักครู่ คุณก็จะเห็นหน้าแดชบอร์ดของ Django admin แล้วตอนนี้
+> 
+> ![Django admin](images/django_admin3.png)
+> 
+> ไปยัง Posts และเริ่มลองเล่นกับมันซักหน่อย เพิ่มบล็อกโพสต์ห้าหรือหกอัน ไม่ต้องสนใจเกี่ยวกับเนื้อหา - คุณสามารถก๊อปและวางเนื้อหาบางส่วนจากในบทเรียนนี้มาใช้ได้เลยเพื่อประหยัดเวลา :)
+> 
+> ตรวจสอบให้แน่ใจว่า อย่างน้อยสองหรือสามโพสต์ (แต่ไม่ต้องทั้งหมด) มีการตั้งค่าวันที่เผยแพร่ เราจะใช้ประโยชน์จากส่วนนี้ในภายหลัง
+> 
+> ![Django admin](images/edit_post3.png)
+> 
+> หากคุณต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับ Django คุณสามารถดูได้ที่หน้าเอกสารของโครงการ Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+> 
+> ตอนนี้น่าจะเป็นช่วงเวลาจิบกาแฟ (หรือชา) หรือหาอะไรทานเพื่อเพิ่มพลัง คุณได้สร้างโมเดล Django แรกของคุณ - และคุณสมควรที่จะได้พักบ้าง!
