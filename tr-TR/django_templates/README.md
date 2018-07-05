@@ -4,15 +4,15 @@ Bazı verileri gösterme zamanı! Django bunun için bize faydalı bazı yerleş
 
 ## Template etiketleri nedir?
 
-Görüyorsunuz, HTML'de gerçek Python kodu yazamazsınız çünkü tarayıyıcılar bunu anlamazlar. Tarayıcılar sadece HTML kodlarını anlarlar. Bildiğimiz üzere Python çok daha dinamik bir dil iken, HTML de oldukça statiktir.
+Görüyoruz ki aslında, HTML'de Python kodu yazamayız, çünkü tarayıcılar bunu anlamaz. Tarayıcılar yalnızca HTML'den anlar. Biliyoruz ki Python daha dinamik bir dil iken, HTML oldukça statiktir.
 
-**Django şablon etiketleri** Python benzeri şeyleri HTML'e aktarmamıza izin verir, böylece dinamik websitelerini daha hızlı bir şekilde oluşturabilirsiniz. Harika!
+**Django template etiketleri** Python benzeri yapıların HTML'ye aktarılmasını sağlar, böylece dinamik web sitelerini daha kolay ve hızlı oluşturabiliriz!
 
-## Gönderi listesi template'ini göster
+## Gönderi listesi template'ini gösterme
 
 Bir önceki bölümde, template'e `posts` değişkeni içinde gönderiler listesi verdik. Şimdi, bunu HTML'de göstereceğiz.
 
-Django şablonunda bir değişken yazdırmak için, değişken adını çift kıvrımlı parantez içinde şu şekilde kullanırız:
+Django şablonunda (template) bir değişken (variable) yazdırmak için, değişken adını çift kıvrımlı parantez içinde şu şekilde kullanırız:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -68,7 +68,7 @@ Bunu kendi template'imizle deneyelim.
 
 ![Şekil 13.3](images/step3.png)
 
-Bu sefer biraz daha farklı bir notasyon kullandığımızın farkında mısınız (`{{ post.title }}` or `{{ post.text }})`)? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Ayrıca `|linebreaksbr` satırsonlarını paragrafa dönüştürmek için gönderilerin içindeki metinleri bir filtre ile yönlendiriyor.
+Bu sefer biraz daha farklı bir notasyon kullandığımızın farkında mısınız (`{{ post.title }}` or `{{ post.text }})`)? Böylece `Post` modelinde tanımlanan alanlardaki verilere ulaşıyoruz. Ayrıca `|linebreaks` (satırsonu), gönderilerin metnini, satır sonlarını paragraflara çeviren bir filtreden geçiriyor.
 
 ## Bir şey daha
 
