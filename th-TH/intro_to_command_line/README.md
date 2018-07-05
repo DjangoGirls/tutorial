@@ -64,13 +64,13 @@
 
 <!--endsec-->
 
-ทุกคำสั่งจะต่อท้ายเครื่องเหล่านี้หนึ่งบรรทัด แต่คุณไม่จำเป็นต้องพิมพ์เอง คอมพิวเตอร์จะทำให้คุณเอง. :)
+คำสั่งแต่ละคำสั่งจะมีเครื่องหมายนี้และเว้นหนึ่งวรรค แต่คุณไม่จำเป็นต้องพิมพ์เองหรอกนะคอมพิวเตอร์จะจัดการให้คุณเอง :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> หมายเหตุเล็กๆ: บางกรณีคุณอาจจะเจอ `C:\Users\ola>` หรือ `Olas-MacBook-Air:~ ola$` ก่อนเครื่องหมายเหล่านี้ มันไม่ได้ปัญหาอะไรหรอกนะ มันโอเค 100% เลย
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+ส่วนข้างบนและรวมถึงเครื่องหมาย ` $ </ 0> หรือ <code> & gt; </ 0> มันจะถูกเรียกว่า <em>command line prompt</em> หรือเรียกแบบสั้นๆว่า <em> prompt </ 1> มันจะกระตุ้นให้คุณป้อนข้อมูลบางอย่างลงไป</p>
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+<p>In the tutorial, when we want you to type in a command, we will include the <code>$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
 
 ## คำสั่งแรกของคุณ (เย้!)
 
