@@ -1,10 +1,10 @@
-# แนะนำการใช้บรรทัดคำสั่ง
+# ความรู้เบื้องต้นเกี่ยวกับ command-line interface
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> สำหรับผู้อ่านทางบ้าน ส่วนนี้จะครอบคลุมในส่วนวิดิโอของ [Python Basics: Dictionaries](https://www.youtube.com/watch?v=jvZLWhkzX-8)
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+มันน่าตื่นเต้นใช่มั้ยล้าาา?! คุณจะได้เริ่มเขียนโค้ดบรรทัดแรกของคุณในอีกไม่กี่นาทีนี้แล้ว! :)
 
-**ขอแนะนำให้รู้จักเพื่อนใหม่ของคุณ: บรรทัดคำสั่ง!**
+**เราขอแนะนำให้รู้จักเพื่อนใหม่ของคุณ: command line หรือ บรรทัดคำสั่ง!**
 
 จากนี้ไปจะแนะนำการใช้หน้าต่างดำๆ เหมือนกับที่แฮกเกอร์ใช้ มันอาจจะดูน่ากลัวสักหน่อยในตอนแรก แต่ มันก็แค่สิ่งรอรับคำสั่งจากคุณเท่านั้นเอง
 
