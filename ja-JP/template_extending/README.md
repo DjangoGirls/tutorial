@@ -142,6 +142,6 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
 {% endblock %}
 ```
 
-That's it! Check if your website is still working properly. :)
+以上です！ウェブサイトがまだちゃんと動いているか確認しましょう。:)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> もし `TemplateDoesNotExist` というエラーが出ていたら、 `blog/base.html` ファイルがないという意味で、コンソールで `runserver` が動いたままになっています。 Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
