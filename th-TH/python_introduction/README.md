@@ -736,7 +736,7 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+หมายเหตุ: จำไว้ว่า บนระบบปฏิบัติการ Windows จะไม่ถือว่า 'python3' เป็นคำสั่ง จากนี้เป็นต้นไปให้ใช้ 'python' ในการเรียกใช้ไฟล์ แทนการใช้ 'python3'
 
 ### ถ้าเกิดว่า เงื่อนไขไม่เป็นจริงล่ะ?
 
@@ -874,8 +874,8 @@ hi()
 หมายเหตุ: ถ้ามันไม่ทำงาน ไม่ต้องตกใจ ผลลัพธ์จะช่วยให้คุณเข้าใจว่าทำไม:
 
 - ถ้ามันโชว์ว่า `NameError` นั่นหมายถึงคุณพิมพ์อะไรผิด ดังนั้นคุณควรตรวจสอบว่า คุณใช้ชื่อเดียวกันเมื่อสร้างฟังก์ชั่นด้วย เช่นคุณสร้างฟังก์ชั่นชื่อ ` def hi(): ` เมื่อคุณเรียกใช้ฟังก์ชั่น ก็ควรเรียกใช้ชื่อ `hi()` เป็นต้น
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- ถ้าโปรแกรมโชว์ว่า `IndentationError` ให้ตรวจสอบว่าบรรทัดทั้งสองบรรทัดที่คุณพิมพ์ว่า `print` นั้น มีการเคาะเว้นวรรคที่เท่ากัน: Python ต้องการให้โค้ดทั้งหมดที่อยู่ในฟังก์ชั่นสอดคคล้องกันอย่างเรียบร้อย
+- ถ้าหากโปรแกรมไม่แสดงเอาต์พุตใดๆเลย ให้ตรวจสอบว่า `hi()` *ไม่*ได้ถูกเยื้อง ถ้ามันถูกเยื้อง บรรทัดนี้จะถูกรวมเป็นส่วนหนึ่งของฟังก์ชั่นด้วย และมันจะไม่ถูกรัน
 
 เรามาลองสร้างฟังก์ชันที่มีพารามิเตอร์หลายๆตัวกัน เราจะใช้ตัวอย่างก่อนหน้านี้ - ฟังก์ชันที่จะพูด 'hi กับคนที่รันมัน - แล้วตามด้วยชื่อ:
 
