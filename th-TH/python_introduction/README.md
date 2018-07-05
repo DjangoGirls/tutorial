@@ -953,7 +953,7 @@ hi("Sonja")
 
 มันเจ๋งสุดๆไปเลยใช่ป่ะ? ด้วยวิธีนี้ คุณไม่จำเป็นต้องพิมพ์ซ้ำทุกครั้งที่คุณต้องการเปลี่ยนชื่อของบุคคลที่เราต้องการทักทาย และนั่นคือเหตุผลที่เราต้องการฟังก์ชั่น - คุณไม่อยากจะเขียนโค้ดของคุณซ้ำๆ ไงล่ะ!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+เรามาลองทำอะไรเจ๋งๆกัน - เรามีชื่อมากกว่าสองชื่อและการเขียนเงื่อนไขให้แต่ละชื่อมันอยากใช่ป่ะ?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1000,7 +1000,7 @@ for name in girls:
 
 คำสั่ง `for` ทำงานในรูปแบบลักษณะคล้ายๆกันกับคำสั่ง `if` โค้ดด้านล่างจำเป็นต้องเคาะเยื้องบรรทัดเข้ามา 4 ช่องเช่นกัน
 
-Here is the full code that will be in the file:
+และนี่คือโค้ดทั้งหมดที่จะอยู่ในไฟล์:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1014,7 +1014,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+และเมื่อเรารันไฟล์:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1031,7 +1031,7 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+อย่างที่คุณเห็น ทุกสิ่งที่อยู่ภายในคำสั่ง `for` จะถูกทำซ้ำและวนเข้าไปในรายชื่อที่อยู่ใน list ของ `girls`
 
 คุณสามารถใช้ `for` กับตัวเลขได้เช่นกัน โดยใช้ฟังก์ชั่น `range`
 
@@ -1061,8 +1061,8 @@ for i in range(1, 6):
 
 บทนี้ก็มีเพียงเท่านี้แหล่ะ **คุณเจ๋งมากเลย!** จริงๆ บทนี้เป็นบทที่ยากนะ และคุณก็ควรจะภูมิใจในตัวเอง เราภูมิใจในตัวคุณนะที่คุณมาถึงจุดนี้ได้!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+สำหรับการสอนอย่างเป็นทางการและเต็มรูปแบบให้เข้าไปที่ https://docs.python.org/3/tutorial/ เว๊บไซต์นี้จะช่วยให้คุณสามารศึกษาภาษา Python ได้อย่างละเอียดและสมบูรณ์มากขึ้น เย้ :)
 
 ตอนนี้คุณอาจจะอยากทำอย่างอื่นบ้าง ไปยืดเส้นยืดสาย เดินเล่น พักสายตาซะหน่อย ก่อนที่จะมาต่อกันในบทถัดไป :)
 
-![Cupcake](images/cupcake.png)
+![คัพเค้ก](images/cupcake.png)
