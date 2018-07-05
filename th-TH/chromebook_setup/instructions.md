@@ -49,7 +49,7 @@ Cloud 9 เป็นเครื่องมือที่ให้บริก
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+สร้างบัญชี [Github](https://github.com)
 
 ### PythonAnywhere
 
