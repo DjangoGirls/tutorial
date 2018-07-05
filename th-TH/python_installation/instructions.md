@@ -2,11 +2,11 @@
 > 
 > ในส่วนของบทนี้ อ้างอิงมาจากบทเรียนของ Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
+Django ถูกเขียนโดยภาษา Python เพราะฉะนั้นเราจึงต้องใช้ Python ในการทำอะไรต่างๆใน Django งั้นเรามาเริ่มต้นด้วยการติดตั้ง Python กันเถอะ คุณต้องติดตั้ง Python เวอร์ชั่น 3.6 ถ้าหากคุณมีเวอร์ชั่นก่อนหน้านี้ คุณควรที่จะอัพเกรดมันก่อนนะ
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. คุณสามารถดาวน์โหลด Python สำหรับ Windows ได้จากเว็บไซต์ https://www.python.org/downloads/release/python-343/ Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. หลังจากดาวน์โหลดไฟล์ *. msi มาแล้ว คุณควรเริ่มติดตั้ง (double-click ที่ไฟล์) และทำตามคำแนะนำของตัวติดตั้ง
+ขั้นตอนแรก คุณควรตรวจสอบว่าคอมพิวเตอร์ของคุณรัน Windows เวอร์ชั่น 32-bit หรือ 64-bit คุณสามารถตรวจสอบได้โดยการกดปุ่ม Windows และ ปุ่ม Pause/Break ซึ่งการกดปุ่มสองปุ่มนี้พร้อมกันคุณจะสามารถเปิดเข้าไปดูข้อมูลระบบของคุณได้ จากนั้นให้ดูที่ System type คุณสามารถดาวน์โหลด Python สำหรับ Windows ได้จากเว็บไซต์ https://www.python.org/downloads/release/python-343/ คลิกที่ลิงค์ Latest Python 3 Release - Python x.x.x If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. หลังจากดาวน์โหลดไฟล์ *. msi มาแล้ว คุณควรเริ่มติดตั้ง (double-click ที่ไฟล์) และทำตามคำแนะนำของตัวติดตั้ง
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
