@@ -14,7 +14,7 @@
        └── forms.py
     
 
-OK, let's open it and type the following code:
+เอาล่ะ เรามาเปิดไฟล์และพิมพ์โค้ดเหล่านี้ลงไปกันเถอะ:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,9 +30,9 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-ก่อนอื่น เราต้องนำเข้า Django form เสียก่อน(`from django import forms`) และแน่นอน โมเดล `Post` ของเรา (`form .models import Post`).
+ก่อนอื่น เราต้องอิมพอร์ท Django form ซะก่อน (`from django import forms`) และแน่นอน โมเดล `Post` ของเรา (`form .models import Post`)
 
-`PostForm` ใช่อย่างที่คุณสงสัยนั่นแหละ, ชื่อฟอร์มของเรานั่นเอง We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm` ใช่อย่างที่คุณสงสัยนั่นแหละ, มันคือชื่อฟอร์มของเรานั่นเอง We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
 ถัดมา เรามี `class Meta` ที่ซึ่งเราจะบอก Django ว่าฟอร์มนี้ จะใช้โมเดลอะไร (`model = Post`).
 
