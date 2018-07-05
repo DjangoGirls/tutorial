@@ -6,45 +6,45 @@
 
 **เราขอแนะนำให้รู้จักเพื่อนใหม่ของคุณ: command line หรือ บรรทัดคำสั่ง!**
 
-จากนี้ไปจะแนะนำการใช้หน้าต่างดำๆ เหมือนกับที่แฮกเกอร์ใช้ มันอาจจะดูน่ากลัวสักหน่อยในตอนแรก แต่ มันก็แค่สิ่งรอรับคำสั่งจากคุณเท่านั้นเอง
+จากนี้ไปเราจะแนะนำการใช้หน้าต่างสีดำเหมือนกับที่แฮกเกอร์ใช้ มันอาจจะดูน่ากลัวซักหน่อยในตอนแรก แต่มันก็แค่สิ่งที่รอรับคำสั่งจากคุณเท่านั้นเอง
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **หมายเหตุ** ตลอดบทเรียนในหนังสือเล่มนี้ เราจะใช้คำว่า 'directory' และ 'folder' ผสมๆ กัน แต่มันก็คือสิ่งเดียวกันนั่นแหละ
 
-## อะไรคือบรรทัดคำสั่ง?
+## Command line (บรรทัดคำสั่ง) คืออะไร?
 
-หน้าต่างที่เรียกว่า **บรรทัดคำสั่ง** หรือ **อินเทอร์เฟซบรรทัดคำส่ัง** คือโปรแกรมสำหรับดู จัดการ และแก้ไขไฟล์ต่างๆ ที่อยู่ในเครื่องของคุณ แต่จะอยู่ในรูปแบบที่เป็นโหมดข้อความเท่านั้น It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. บรรทัดคำส่ังมีชื่อเรียกอื่นเหมือนกัน คือเรียกว่า *cmd*, *CLI*, *prompt*, *console* หรือ *terminal*.
+หน้าต่างที่เรียกว่า **command line** หรือ **command-line interface** คือโปรแกรมสำหรับดู จัดการ และแก้ไขไฟล์ต่างๆ ที่อยู่ในเครื่องของคุณ แต่จะอยู่ในรูปแบบที่เป็นโหมดข้อความเท่านั้น มันก็คล้ายๆกับ Windows Explorer หรือ Finder บน Mac เพียงแต่มัน graphical interface แค่นั้นแหละ Command line หรือ บรรทัดคำส่ังมีชื่อเรียกอื่นๆด้วย อย่างเช่น *cmd*, *CLI*, *prompt*, *console* หรือ *terminal*
 
-## เปิดอินเทอร์เฟซบรรทัดคำสั่ง
+## การเปิด command-line interface
 
-ก่อนจะเริ่มใช้ เราต้องเปิดมันขึ้นมาก่อน
+ก่อนจะเริ่มทดลองใช้ เราก็จะต้องต้องเปิด command-line interface ขึ้นมาซะก่อน
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → Windows System → Command Prompt.
+ไปที่เมนู Start → Windows System → Command Prompt
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+> สำหรับ Windows รุ่นเก่า ให้ไปที่เมนู Start → All Programs → Accessories → Command Prompt
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+ไปที่ Applications → Utilities → Terminal
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-ส่วนใหญ่จะอยู่ที่เมนู Applications → Accessories → Terminal แต่นั่นขึ้นกับระบบที่ใช้อยู่ ถ้าไม่อยู่ในนี้ ลอง Google หาดูนะ. :)
+ส่วนใหญ่จะอยู่ที่เมนู Applications → Accessories → Terminal แต่นั่นก็ขึ้นอยู่กับระบบปฏิบัติการที่คุณใช้อยู่ ถ้าคุณหาไม่เจอ ลองหาใน Google ดูนะ :)
 
 <!--endsec-->
 
 ## Prompt
 
-ตอนนี้คุณควรเห็นหน้าสีขาวหรือสีดำที่รอคุณป้อนคำสั่งอยู่
+ตอนนี้คุณควรเห็นหน้าต่างสีขาวหรือสีดำที่รอคุณป้อนคำสั่งอยู่
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-ถ้าคุณใช้ Mac หรือ ลินุกซ์ คุณอาจจะเห็นเครื่องหมาย `$` แบบนี้:
+ถ้าคุณใช้ Mac หรือ Linux คุณอาจจะเห็นเครื่องหมาย `$` แบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-บนวินโดวส์ จะเป็นเครื่องหมาย `>` แบบนี้:
+บน Windows จะเป็นเครื่องหมาย `>` แบบนี้:
 
 {% filename %}command-line{% endfilename %}
 
