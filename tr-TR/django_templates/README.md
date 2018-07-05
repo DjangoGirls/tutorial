@@ -72,9 +72,9 @@ Bu sefer biraz daha farklı bir notasyon kullandığımızın farkında mısın�
 
 ## Bir şey daha
 
-Websitenizi internette çalışır halde görmek iyi olur değilmi? PythonAnywhere tekrar çalıştıralım. Adımları hatırlayalım…
+Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil mi? PythonAnywhere'e yükleyelim yine. Adımları hatırlayalım…
 
-* First, push your code to GitHub
+* İlk önce kodumuzu Github'a push komutu ile yükleyelim
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -101,6 +101,6 @@ Websitenizi internette çalışır halde görmek iyi olur değilmi? PythonAnywhe
 
 Tebrikler! Django admin üzerinden yeni bir gönderi ekleyin (yayinlama_tarihi eklemeyi unutmayın!) PythonAnywhere sitenizinin Django admin'inde olduğunuzdan emin olun, https://yourname.pythonanywhere.com/admin. Arkasından gönderileri görebilmek için ordaki sayfanızı yenileyin.
 
-Şiir gibi çalışıyor değil mi? Gurur duyuyoruz! Bi süre bilgisayarınızdan uzaklaşın - molayı hak ettiniz. :)
+Şiir gibi çalışıyor, değil mi? Gurur duyabiliriz! Şimdi bilgisayar başından bir süre kalkalım, çünkü bir molayı hak ettik. :)
 
 ![Şekil 13.4](images/donut.png)
