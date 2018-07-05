@@ -1,8 +1,8 @@
 # Django admin
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+การ เพิ่ม, แก้ไข และ ลบโพสต์ที่เราเพิ่งสร้างโมเดลไปนั้น เราจะทำโดยใช้ Django admin
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+เรามาเปิดไฟล์ `blog/admin.py` และแทนที่ข้างในไฟล์ด้วย:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -15,13 +15,13 @@ admin.site.register(Post)
 
 อย่างที่คุณเห็น เรามีการ import (รวม) โมเดลโพสต์ที่เราได้ทำในบทที่แล้วมาด้วย การทำให้โมเดลของเราปรากฎในหน้า admin เราต้องทำการลงทะเบียนโมเดลของเรา โดยใช้ `admin.site.register(Post)`.
 
-เอาล่ะ มาดูกันว่าโมเดลโพสต์ของเราหน้าตาเป็นไง อย่าลืมรัน `python manage.py runserver` ในคอนโซลเพื่อเปิดใช้เว็บเซิร์ฟเวอร์ Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+เอาล่ะ มาดูกันว่าโมเดลโพสต์ของเราหน้าตาเป็นไง อย่าลืมรัน `python manage.py runserver` ในคอนโซลเพื่อเปิดใช้เว็บเซิร์ฟเวอร์ ไปยังเบราว์เซอร์ของคุณ และพิมพ์ http://127.0.0.1:8000/admin/ คุณจะเห็นหน้าเข้าสู่ระบบ แบบนี้:
 
 ![หน้าล็อกอิน](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+การเข้าสู่ระบบ คุณต้องสร้าง *superuser* - ซึ่งสามารถควบคุมทุกอย่างบนเว็บนี้ได้ กลับไปยัง command line หรือบรรทัดคำสั่ง พิมพ์ `python manage.py createsuperuser` จากนั้นกด enter
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> โปรดจำไว้ว่า ในการเขียนคำสั่งใหม่ในขณะที่เว๊บเซอร์เวอร์กำลังรันอยู่นั้น ให้เปิดหน้าต่างเทอร์มินัลใหม่และเปิดใช้งาน virtualenv We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
