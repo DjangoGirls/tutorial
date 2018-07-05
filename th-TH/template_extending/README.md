@@ -75,7 +75,7 @@ Template พื้นฐาน คือ template ที่เรียบง่
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %} คุณอาจจะสังเกตว่ามันแทนที่ทุกๆอย่างตั้งแต่ `{% for post in posts %}` ไปจนถึง `{% endfor %}` ด้วย: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -144,4 +144,4 @@ Only one thing left. We need to connect these two templates together. This is wh
 
 เสร็จแล้ว! ลองเช็คดูว่าเว็บเรายังทำงานอยู่มั้ย :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> ถ้าคอมพิวเตอร์โชว์ว่า `TemplateDoesNotExist` หมายความว่า มันไม่มีไฟล์ `blog/base.html` และคุณมี `runserver` ที่กำลังรันอยู่ในคอนโซล ลองหยุดการทำงานของเซิร์ฟเวอร์ (โดยกดปุ่ม Ctrl+C - ปุ่ม Ctrl และปุ่ม C พร้อมกัน) และรีสตาร์ทเซิร์ฟเวอร์ด้วยการรันคำสั่ง `python manage.py runserver`
