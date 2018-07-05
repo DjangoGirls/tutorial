@@ -67,11 +67,11 @@ Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştu�
 
 Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önceden kurduğunuz kod düzenleyicinizi kullanarak dosyayı açın.
 
-**Not**: `settings.py` dosyasının da diğerleri gibi normal bir dosya olduğunu aklınızda tutun. Bunu kod düzenleyicisi içerisinde "dosya -> aç" menü eylemini kullanarak açabilirsiniz. Bu, size `settings.py` dosyanıza gidebileceğiniz ve bu dosyayı seçebileceğiniz her zamanki klasik pencereyi açacaktır. Alternatif olarak, bu dosyayı masaüstünüzdeki djangogirls klasörüne gidip sağ tıklayarak açabilirsiniz. Sonra, listeden kod düzenleyicinizi seçin. Dosyayı açabilen ancak düzenlemenize izin vermeyecek diğer programların yüklü olabilmesi nedeniyle kod düzenleyicinin seçilmesi önem arz etmektedir.
+**Not**: `settings.py` dosyasının da diğerleri gibi normal bir dosya olduğunu aklınızda tutun. Bunu kod düzenleyicisi içerisinde "dosya -> aç" menü eylemini kullanarak açabilirsiniz. Bu, size `settings.py` dosyanıza gidebileceğiniz ve bu dosyayı seçebileceğiniz her zamanki klasik pencereyi açacaktır. Alternatif olarak, bu dosyayı masaüstünüzdeki djangogirls klasörüne gidip sağ tıklayarak açabilirsiniz. Sonra, listeden kod düzenleyicinizi seçin. Dosyayı açabilen ancak düzenlemenize izin vermeyecek diğer programların yüklü olması ihtimaline karşın kod düzenleyicinin seçilmesi önem arz etmektedir.
 
 Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zaman dilimleri listesine](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) gidin ve ve ilgili saat dilimini kopyalayın (ZD) (Ör. `Europe/Berlin`).
 
-`settings.py`'de, `TIME_ZONE` içeren satırı bulun ve kendi zaman diliminizi seçmek için değiştirin. Örnek olarak:
+`settings.py` dosyasında `TIME_ZONE` ifadesini içeren satırı bulun ve kendi seçtiğiniz zaman dilimine göre uyarlayın:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -79,7 +79,7 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zama
 TIME_ZONE = 'Europe/Istanbul'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django hazırlanmış olan bir çok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django hazırlanmış olan bir çok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
