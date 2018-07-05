@@ -1,6 +1,6 @@
 # Django URL'leri
 
-İlk web sayfamızı kurmak üzereyiz: bloğun için bir ana sayfa! Ama öncelike, Django URL'leri hakkında biraz bilgi edinelim.
+İlk web sayfamızı yapmak üzereyiz: blogunuzun anasayfası! Ama önce, biraz Django url'lerini öğrenmeye başlayalım.
 
 ## URL nedir?
 
