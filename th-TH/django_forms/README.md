@@ -32,13 +32,13 @@ class PostForm(forms.ModelForm):
 
 ก่อนอื่น เราต้องอิมพอร์ท Django form ซะก่อน (`from django import forms`) และแน่นอน โมเดล `Post` ของเรา (`form .models import Post`)
 
-`PostForm` ใช่อย่างที่คุณสงสัยนั่นแหละ, มันคือชื่อฟอร์มของเรานั่นเอง We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm` ใช่อย่างที่คุณสงสัยนั่นแหละ, มันคือชื่อฟอร์มของเรานั่นเอง เราต้องบอกให้ Django รู้ว่า ฟอร์มของเราคือ `ModelForm` (Django จะร่ายมนต์บางอย่างให้เรา) - `forms.ModelForm` จะเป็นผู้รับผิดชอบดังกล่าว
 
 ถัดมา เรามี `class Meta` ที่ซึ่งเราจะบอก Django ว่าฟอร์มนี้ จะใช้โมเดลอะไร (`model = Post`).
 
-สุดท้าย เราสามารถบอกได้ว่า เราจะใช้ฟิลด์ไหนบ้างในฟอร์มของเรา In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+สุดท้าย เราสามารถบอกได้ว่า เราจะใช้ฟิลด์ไหนบ้างในฟอร์มของเรา ในที่นี้ เราจะใช้แค่ `title` และ `text` เท่านั้น - `author` ควรจะเป็นคนที่ตอนนี้ login อยู่ (ก็คุณนั่นแหละ!) และ `created_date` ควรจะถูกกำหนดโดยอัตโนมัติเมื่อเราสร้างโพสต์ (เช่น ในโค้ด) ถูกป่ะ?
 
-และนั่นแหละ! ที่เราต้องทำตอนนี้คือใช้ฟอร์มข้างใน *view* และแสดงมันออกมาใน template
+และนั่นแหละ! สิ้งที่เราต้องทำทั้งหมดในตอนนี้คือใช้ฟอร์มข้างใน *view* และโชว์มันในเทมเพลต
 
 So once again we will create a link to the page, a URL, a view and a template.
 
@@ -112,7 +112,7 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+หลังจากโหลดหน้าเว็บ เราจะเห็น `AttributeError`, เพราะเรายังไม่มี view `post_new` นั่นเอง งั้นเรามาสร้างกันเลยดีกว่า
 
 ## post_new view
 
@@ -124,7 +124,7 @@ After refreshing the site, we see an `AttributeError`, since we don't have the `
 from .forms import PostForm
 ```
 
-And then our *view*:
+และ *view* ของเรา:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -136,7 +136,7 @@ def post_new(request):
 
 การสร้างฟอร์ม `Post` ใหม่, เราต้องเรียกใช้ `PostForm()` และส่งไปให้ template We will go back to this *view*, but for now, let's quickly create a template for the form.
 
-## Template
+## เทมเพลต
 
 เราต้องสร้างไฟล์ `post_edit.html` ในไดเรกทอรี `blog/templates/blog`, ในการสร้างฟอร์มนั้น เราต้องการสองสามอย่าง:
 
@@ -238,7 +238,7 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. ยังจำได้ไหมที่ *view* นั้นต้องการตัวแปร `pk` ? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`blog. views. post_detail` คือชื่อของ view ที่เราต้องการที่จะเข้าถึง ยังจำได้ไหมที่ *view* นั้นต้องการตัวแปร `pk` ? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
 
 OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
@@ -283,7 +283,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 ตอนนี้คุณทราบวิธีเพิ่มฟอร์มใหม่แล้ว แต่ถ้าเกิดคุณยังแก้ไขของเดิมที่มีอยู่แล้วล่ะ? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-Open `blog/templates/blog/post_detail.html` and add the line
+เปิดไฟล์ `blog/templates/blog/post_detail.html` และเพิ่มบรรทัดนี้ลงไป
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+ดังนั้นเทมเพลตควรจะมีหน้าตาแบบนี้:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -350,7 +350,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+... และเมื่อเราเปิดฟอร์มขึ้นมาพร้อมกับโพสต์ที่ต้องการแก้ไข:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,7 +358,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+เอาล่ะ เรามาทดสอบกันดูว่ามันเวิร์คมั้ย! ไปยังหน้า `post_detail` ซึ่งควรจะมีปุ่มแก้ไขที่ตำแหน่งมุมบน-ขวา:
 
 ![ปุ่มแก้ไข](images/edit_button2.png)
 
@@ -366,7 +366,7 @@ OK, let's test if it works! Let's go to the `post_detail` page. There should be 
 
 ![การแก้ไขฟอร์ม](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+ลองแก้ไข title หรือ text ได้ตามสะดวก แล้วเซฟมันมันด้วยล่ะ!
 
 ยินดีด้วย! แอพของคุณใกล้จะเสร็จเข้าไปทุกทีแล้ว!
 
@@ -442,8 +442,8 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(โปรดจำไว้ว่าให้ใช้ `<your-pythonanywhere-username>` แทน username PythonAnywhere ที่แท้จริงของคุณโดยไม่ใช้วงเล็บปีกกา)
 
 * สุดท้าย เปิด [Web tab](https://www.pythonanywhere.com/web_app_setup/) และกด **Reload**.
 
-And that should be it! Congrats :)
+และนั่นควรเสร็จแล้ว! ยินดีด้วยนะ :)
