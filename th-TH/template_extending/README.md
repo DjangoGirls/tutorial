@@ -17,7 +17,7 @@ Template พื้นฐาน คือ template ที่เรียบง่
                 post_list.html
     
 
-จากนั้นเปิดไฟล์และคัดลองทุกบรรทัดจาก `post_list.html` ไปยังไฟล์ `base.html` แบบนี้:
+จากนั้นเปิดไฟล์และคัดลอกทุกบรรทัดจาก `post_list.html` ไปยังไฟล์ `base.html` แบบนี้:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,9 +84,9 @@ Template พื้นฐาน คือ template ที่เรียบง่
 {% endblock %}
 ```
 
-แต่ทำไมล่ะ? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). เราจะแสดงวิธีให้คุณดูเร็วๆ นี้ล่ะ
+แต่ทำไมล่ะ? คุณเพิ่งสร้าง `block` นี่นา! คุณใช้ template tag `{% block %}` ในการสร้างพื้นที่ที่จะแทรก HTML ไว้ ซึ่ง HTML นั้นจะมาจากอีกเทมเพลตนึงที่ขยายเทมเพลตนี้ (`base.html`) เดี๋ยวเราจะแสดงให้คุณเห็นว่าคุณควรทำยังไง
 
-ตอนนี้ บันทึกไฟล์ `base.html` และเปิดไฟล์ `blog/templates/blog/post_list.html` ขึ้นมาอีกครั้ง {% raw %}คุณกำลังจะลบทุกอย่างข้างต้น `{% for post in posts %}` และด้านล่าง `{% endfor %}` เมื่อคุณทำสำเร็จ ไฟล์มันจะหน้าตาแบบนี้: {% endraw %}
+ตอนนี้ บันทึกไฟล์ `base.html` และเปิดไฟล์ `blog/templates/blog/post_list.html` ขึ้นมาอีกครั้ง {% raw %}คุณกำลังจะลบทุกอย่างด้านบน `{% for post in posts %}` และด้านล่าง `{% endfor %}` เมื่อคุณทำสำเร็จ หน้าตาของไฟล์มันจะเป็นแบบนี้: {% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
