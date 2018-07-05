@@ -1,12 +1,12 @@
-# การ extend template
+# การขยายเทมแพลต
 
-ความเจ๋งอีกอย่างหนึ่งของ Django คือ **ความสามารถในการ extend template** มันหมายความว่าไงล่ะ? มันก็หมายความว่า คุณสามารถใช้ส่วนเดียวกันของ HTML ของคุณในหลายๆ หน้าของเว็บไซต์ของคุณ
+ความเจ๋งอีกอย่างหนึ่งของ Django คือ **ความสามารถในการขยายเทมเพลต** มันหมายความว่าไงล่ะ? มันก็หมายความว่า คุณสามารถใช้ส่วนเดียวกันของ HTML ของคุณในหลายๆ หน้าของเว็บไซต์ของคุณ
 
 เทมเพลตช่วยคุณได้ เมื่อคุณต้องการใช้ข้อมูลเดิมหรือเค้าโครงเดียวกันมากกว่าหนึ่งครั้ง คุณไม่ต้องทำซ้ำในทุกๆไฟล์ และถ้าหากคุณต้องการปรับเปลี่ยนบางอย่าง คุณก็ไม่จำเป็นต้องทำในทุกๆเทมเพลต คุณแค่ทำในเทมเพลตเดียวเท่านั้น
 
-## สร้าง template พื้นฐาน
+## สร้างเทมเพลตพื้นฐาน
 
-Template พื้นฐาน คือ template ที่เรียบง่ายที่สุด ที่คุณจะสามารถนำไปสร้างเป็นหน้าอื่นในเว็บของคุณได้
+เทมเพลตพื้นฐาน คือเทมเพลตที่เรียบง่ายที่สุด ที่คุณจะสามารถนำไปสร้างเป็นหน้าอื่นในเว็บของคุณได้
 
 สร้างไฟล์ `base.html` ใน `blog/templates/blog/`:
 
@@ -55,7 +55,7 @@ Template พื้นฐาน คือ template ที่เรียบง่
 </html>
 ```
 
-จากนั้น ในไฟล์ `base.html` แทนที่ทุกสิ่งใน `<body>` (ทุกสิ่งระหว่าง `<body>` และ `</body>`) ด้วย:
+จากนั้น ในไฟล์ `base.html` ให้แทน `<body>` ทั้งหมด (ทุกสิ่งระหว่าง `<body>` และ `</body>`) ด้วย:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Template พื้นฐาน คือ template ที่เรียบง่
 
 แต่ทำไมล่ะ? คุณเพิ่งสร้าง `block` นี่นา! คุณใช้ template tag `{% block %}` ในการสร้างพื้นที่ที่จะแทรก HTML ไว้ ซึ่ง HTML นั้นจะมาจากอีกเทมเพลตนึงที่ขยายเทมเพลตนี้ (`base.html`) เดี๋ยวเราจะแสดงให้คุณเห็นว่าคุณควรทำยังไง
 
-ตอนนี้ บันทึกไฟล์ `base.html` และเปิดไฟล์ `blog/templates/blog/post_list.html` ขึ้นมาอีกครั้ง {% raw %}คุณกำลังจะลบทุกอย่างด้านบน `{% for post in posts %}` และด้านล่าง `{% endfor %}` เมื่อคุณทำสำเร็จ หน้าตาของไฟล์มันจะเป็นแบบนี้: {% endraw %}
+ตอนนี้ บันทึกไฟล์ `base.html` และเปิดไฟล์ `blog/templates/blog/post_list.html` ขึ้นมาอีกครั้ง {% raw %}คุณกำลังจะลบทุกอย่างก่อน `{% for post in posts %}` และหลัง`{% endfor %}` เมื่อคุณทำสำเร็จ หน้าตาของไฟล์มันจะเป็นแบบนี้: {% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,7 +102,7 @@ Template พื้นฐาน คือ template ที่เรียบง่
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+เราต้องการใช้ข้อมูลนี้เป็นส่วนหนึ่งของเทมเพลตของเราสำหรับบล็อกเนื้อหาทั้งหมด ได้เวลาเพิ่ม block tags ในไฟล์นี้แล้ว!
 
 {% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. แบบนี้:{% endraw %}
 
