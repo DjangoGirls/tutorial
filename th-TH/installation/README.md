@@ -55,4 +55,4 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # ขอให้คุณสนุกกับเวิร์กช้อป!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+เมื่อคุณเริ่มทำเวิร์กช้อปนี้ คุณจะสามารถไปที่ [โปรเจค Django แรกของคุณ!](../django_start_project/README.md) ได้โดยตรง เพราะคุณได้ครอบคลุมเนื้อหาในบทก่อนหน้านี้แล้ว
