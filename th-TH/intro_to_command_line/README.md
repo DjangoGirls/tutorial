@@ -70,11 +70,11 @@
 
 ส่วนข้างบนและรวมถึงเครื่องหมาย ` $ </ 0> หรือ <code> & gt; </ 0> มันจะถูกเรียกว่า <em>command line prompt</em> หรือเรียกแบบสั้นๆว่า <em> prompt </ 1> มันจะกระตุ้นให้คุณป้อนข้อมูลบางอย่างลงไป</p>
 
-<p>In the tutorial, when we want you to type in a command, we will include the <code>$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+<p>ในบทเรียนนี้ เมื่อเราต้องการให้คุณพิมพ์คำสั่งใดๆ เราจะรวมเครื่องหมาย <code>$` หรือ `>` และรวมถึงเครื่องหมายอื่นๆ ลงไปทางด้านซ้ายมือให้คุณ คุณไม่ต้องสนใจส่วนด้านซ้ายมือ ให้เริ่มพิมพ์คำสั่งซึ่งเริ่มต้นหลังจาก prompt ได้เลย
 
 ## คำสั่งแรกของคุณ (เย้!)
 
-Let's start by typing this command:
+เรามาเริ่มโดนการพิมพ์คำสั่งกันเถอะ:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -102,9 +102,9 @@ Let's start by typing this command:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+อย่างที่คุณเห็น คอมพิวเตอร์จะแสดงชื่อผู้ใช้ของคุณออกมา เจ๋งใช่ป่ะล่ะ? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> ลองพิมพ์คำสั่งแต่ละคำสั่งดู ห้ามก็อปมาวางนะ ทำแบบนี้แล้วคุณจะจำได้เอง!
 
 ## พื้นฐาน
 
@@ -134,7 +134,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> หมายเหตุ: 'cd' ย่อมาจาก 'change directory' ใน powershell คุณสามรถใช้ pwd เหมือนในระบบปฏิบัติการ Linux หรือ Mac OS X
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> หมายเหตุ: ใน powershell คุณสามาถใช้ 'ls' ได้เหมือนที่คุณใช้ในระบบปฏิบัติการ Linux หรือ Mac OS X <!--endsec-->
 
 * * *
 
