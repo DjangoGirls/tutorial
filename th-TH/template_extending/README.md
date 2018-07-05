@@ -2,7 +2,7 @@
 
 ความเจ๋งอีกอย่างหนึ่งของ Django คือ **ความสามารถในการ extend template** มันหมายความว่าไงล่ะ? มันก็หมายความว่า คุณสามารถใช้ส่วนเดียวกันของ HTML ของคุณในหลายๆ หน้าของเว็บไซต์ของคุณ
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+เทมเพลตช่วยคุณได้ เมื่อคุณต้องการใช้ข้อมูลเดิมหรือเค้าโครงเดียวกันมากกว่าหนึ่งครั้ง คุณไม่ต้องทำซ้ำในทุกๆไฟล์ และถ้าหากคุณต้องการปรับเปลี่ยนบางอย่าง คุณก็ไม่จำเป็นต้องทำในทุกๆเทมเพลต คุณแค่ทำในเทมเพลตเดียวเท่านั้น
 
 ## สร้าง template พื้นฐาน
 
