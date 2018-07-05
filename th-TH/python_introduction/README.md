@@ -610,7 +610,7 @@ $
 
 หลังจากเรียกใช้ฟังก์ชัน คุณจะถูกพากลับมายัง command prompt
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+ก่อนหน้านี้ เราได้เลือกว่าจะใช้โปรแกรม code editor (โปรแกรมแก้ไขโค้ด) จากบท [โปรแกรมแก้ไขโค้ด](../code_editor/README.md) เราเปิดใช้งานโปรแกรมและเขียนโค้ดบางตัวลงในไฟล์ใหม่ของเรา
 
 {% filename %}editor{% endfilename %}
 
@@ -622,7 +622,7 @@ print('Hello, Django girls!')
 
 ตอนนี้เราต้องบันทึกไฟล์ และตั้งชื่อที่มีความหมาย เราจะตั้งชื่อว่า **python_intro.py** และบันทึกไฟล์เก็บไว้ที่หน้าจอเดสก์ท็อปของคุณ เราสามารถตั้งชื่อไฟล์อะไรใดก็ได้ที่เราต้องการ แต่สิ่งที่สำคัญก็คือชื่อไฟล์ต้องลงท้ายด้วย **.py** นามสกุล **.py** จะบอกระบบปฏิบัติการว่าเป็น **python executable file** และ Python สามารถรันไฟล์นี้ได้
 
-> **หมายเหตุ** คุณคงสังเกตเห็นสิ่งที่เจ๋งสุดๆอย่างนึงของ code editor นั้นก็คือสีนั่นเอง! ในคอนโซล Python ทุกอย่างจะเป็นสีเดียวกันหมด ตอนนี้คุณจะเห็นว่าฟังก์ชัน `print` มีสีที่ต่างจาก string มันมีชื่อว่า "syntax highlighting" และเป็นฟีเจอร์ที่มีประโยชน์มากๆ เมื่อเขียนโค้ด The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). นี่เป็นหนึ่งเหตุผลว่าทำไมเราถึงใช้โปรแกรมแก้ไขโค้ด. :)
+> **หมายเหตุ** คุณคงสังเกตเห็นสิ่งที่เจ๋งสุดๆอย่างนึงของ code editor นั้นก็คือสีนั่นเอง! ในคอนโซล Python ทุกอย่างจะเป็นสีเดียวกันหมด ตอนนี้คุณจะเห็นว่าฟังก์ชัน `print` มีสีที่ต่างจาก string มันมีชื่อว่า "syntax highlighting" และเป็นฟีเจอร์ที่มีประโยชน์มากๆ เมื่อเขียนโค้ด ซึ่งสีแต่ละสีจะบ่งบอกสิ่งที่แตกต่างกัน เช่น string ที่ไม่ได้ปิดด้วยเครื่องหมายอัญประกาศหรือชื่อ keyword ที่พิมพ์ผิด (เช่น `def` ซึ่งเดี๋ยวเราจะได้เห็นตัวอย่างด้านล่างนี้) นี่เป็นหนึ่งเหตุผลว่าทำไมเราถึงใช้โปรแกรมแก้ไขโค้ด. :)
 
 เรามีไฟล์แล้ว ตอนนี้ถึงเวลาที่เราจะรันมัน! โดยใช้ความรู้ที่เราเรียนมาในบทการใช้บรรทัดคำสั่ง ใช้เทอร์มินัลโดย **เปลี่ยนไดเรกทอรี** ไปยังหน้าจอเดสก์ท็อป
 
@@ -682,7 +682,7 @@ data-collapse=true ces-->
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+หมายเหตุ: บนระบบปฏิบัติการ Windows จะไม่ถือว่า 'python3' เป็นคำสั่ง แต่ใช้ 'python' ในการเรียกใช้ไฟล์
 
 {% filename %}command-line{% endfilename %}
 
