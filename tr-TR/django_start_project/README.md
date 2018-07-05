@@ -79,9 +79,9 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zama
 TIME_ZONE = 'Europe/Istanbul'
 ```
 
-Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django hazırlanmış olan bir çok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django hazırlanmış olan birçok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Farklı bir dil istiyorsanız, aşağıdaki satırı değiştirerek dil kodunu seçin:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -89,7 +89,7 @@ If you want a different language, change the language code by changing the follo
 LANGUAGE_CODE = 'de-ch'
 ```
 
-Ayrıca statik dosyalar için bir yol eklememiz gerekmektedir. (Eğitici ders içerisinde statik dosyalar ve CSS hakkında ayrıntılı bilgi bulabilirsiniz.) Dosyanın *son*'una gidin, hemen altında sadece `STATIC_URL` girişi yapın, `STATIC_ROOT` adında yeni birim ekleyin:
+Ayrıca statik dosyalar için bir yol eklememiz gerekmektedir. (Tutorial içerisinde statik dosyalar ve CSS hakkında ayrıntılı bilgi bulabilirsiniz.) Dosyanın *son*'una gidin, hemen altında sadece `STATIC_URL` girişi yapın, `STATIC_ROOT` adında yeni birim ekleyin:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -98,7 +98,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-`DEBUG(Hata Ayıklama)` `True(Doğru)` ve `ALLOWED_HOSTS` boş olduğu zaman ana bilgisayar `['localhost', '127.0.0.1', '[::1]']`'a karşı doğrulanır. Bu, uygulamamızı dağıttıktan sonra, PythonAnywhere'deki anamakine adıyla eşleşmeyecek ve böylece aşağıdaki ayarları değiştireceğiz:
+`DEBUG(Hata Ayıklama)` `True(Doğru)` ve `ALLOWED_HOSTS` boş olduğu zaman ana bilgisayar `['localhost', '127.0.0.1', '[::1]']`'a karşı doğrulanır. Bu, uygulamamızı dağıttıktan sonra, PythonAnywhere'deki anamakine adıyla eşleşmeyecek bu yüzden aşağıdaki ayarları değiştireceğiz:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -127,7 +127,7 @@ DATABASES = {
 }
 ```
 
-Blogumuzun veritabanını oluşturmak için konsolda şu komutu çalıştırın:`python manage.py migrate` (`manage.py` dosyasını içeren `djangogirls` klasöründe olmalıyız). İşler iyi giderse şöyle bir şey görmelisiniz:
+Blogumuzun veritabanını oluşturmak için konsolda şu komutu çalıştırın: `python manage.py migrate` (`manage.py` dosyasını içeren `djangogirls` klasöründe olmalıyız). İşler iyi giderse şöyle bir şey görmelisiniz:
 
 {% filename %}komut-satırı{% endfilename %}
 
