@@ -199,7 +199,7 @@
 
 <!--endsec-->
 
-ลองตรวจสอบดูซิ ว่าเปลี่ยนจริงไหม
+ลองเช็คดูซิว่ามันเปลี่ยนจริงมั้ย:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -223,7 +223,7 @@
 
 เปลี่ยนแล้วจริงด้วย!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> คำแนะนำจากมือโปร: ถ้าคุณพิมพ์ `cd D` และกดปุ่ม `tab` บนแป้นพิมพ์ command line หรือบรรทัดคำสั่งจะเติมส่วนที่เหลือให้โดยอัตโนมัติ เพราะฉะนั้นคุณจะสามารถพิมพ์คำสั่งได้เร็วขึ้น ถ้าเกิดว่ามันมีมากกว่าหนึ่งโฟลเดอร์ที่เริ่มด้วย "D" ให้กดปุ่ม `tab` สองครั้งเพื่อดูรายการโฟลเดอร์เหล่านั้น
 
 * * *
 
@@ -255,9 +255,9 @@
 
 * * *
 
-### มาซ้อมมือกันเถอะ!
+### มาฝึกกันเถอะ!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+เรามีโจทย์ท้าทายเล็กๆให้คุณ: ให้คุณสร้างไดเรกทอรีใหม่ ชื่อ `test` ลงในไดเรกทอรี `practice` ที่เราเพิ่งสร้างก่อนหน้านี้ โดยใช้คำสั่ง `cd` และ `mkdir`
 
 #### เฉลย:
 
@@ -289,9 +289,9 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 * * *
 
-### ทำความสะอาด
+### เก็บกวาด
 
-เราไม่ต้องการทิ้งสิ่งเหล่านี้ไว้ เรามาลบของพวกนี้ออกกันก่อนเลยละกัน
+เราไม่ต้องการทิ้งอะไรรกๆไว้ เพราะฉะนั้นเรามาลบของพวกนี้ออกกันก่อนเลยดีกว่า
 
 ขั้นแรก เราต้องกลับไปที่ Desktop:
 
@@ -313,7 +313,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+การใช้ `..` ร่วมกับคำสั่ง `cd` จะเปลี่ยนไดเรกทอรีปัจจุบันไปยังไดเรกทอรีขั้นถัดขึ้นไปหนึ่งขั้น (ซึ่งก็คือไดเรกทอรีที่เก็บไดเรกทอรีปัจจุบันอยู่นั่นเอง)
 
 ลองตรวจสอบดู:
 
@@ -339,7 +339,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 ต่อไป มาลบไดเรทอรี `practice` กัน:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **คำเตือน**: การลบไฟล์โดยใช้คำสั่ง `del`, `rmdir` หรือ `rm` เราจะไม่สามารถกู้คืนมาได้ ฉะนั้น *ไฟล์เหล่านี้จะหายไปตลอดกาล*! เพราะฉะนั้นต้องคุณระวังให้มากๆ ก่อนใช้คำสั่งเหล่านี้
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -360,7 +360,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-เรียบร้อย! มาดูซิว่าไฟล์ถูกลบไปจริงๆ หรือยัง:
+เรียบร้อย! มาดูซิว่าไฟล์ถูกลบไปจริงๆแล้วรึยัง:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +382,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 ### จบการทำงาน
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+ตอนนี้พอเท่านี้ก่อนเนอะ! คุณสามารถปิด command line หรือบรรทัดคำสั่งได้เลยตอนนี้ แต่ลองวิธีที่แฮกเกอร์เค้าทำกันดีมั๊ย? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,23 +402,23 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+เจ๋งสุดๆไปเลยใช่ม้าาา? :)
 
 ## ภาพรวม
 
 สรุปคำสั่งที่มีประโยชน์:
 
-| คำสั่ง (วินโดวส์) | คำสั่ง (Mac OS / ลินุกซ์) | คำอธิบาย                   | ตัวอย่างการใช้คำส่ัง                              |
-| ----------------- | ------------------------- | -------------------------- | ------------------------------------------------- |
-| exit              | exit                      | ปิดหน้าต่าง                | **exit**                                          |
-| cd                | cd                        | เปลี่ยนไดเรกทอรี           | **cd test**                                       |
-| cd                | pwd                       | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                        | ดูรายการไดเรกทอรี/ไฟล์     | **dir**                                           |
-| copy              | cp                        | คัดลอกไฟล์                 | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                        | ย้ายไฟล์                   | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                     | สร้างไดเรกทอรีใหม่         | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                        | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                     | delete a directory         | **rm -r testdirectory**                           |
+| คำสั่ง (วินโดวส์) | คำสั่ง (Mac OS / ลินุกซ์) | คำอธิบาย                | ตัวอย่างการใช้คำส่ัง                              |
+| ----------------- | ------------------------- | ----------------------- | ------------------------------------------------- |
+| exit              | exit                      | ปิดหน้าต่าง             | **exit**                                          |
+| cd                | cd                        | เปลี่ยนไดเรกทอรี        | **cd test**                                       |
+| cd                | pwd                       | แสดงผลไดเรกทอรีปัจจุบัน | **cd** (Windows) หรือ **pwd** (Mac OS / Linux)    |
+| dir               | ls                        | ดูรายการไดเรกทอรี/ไฟล์  | **dir**                                           |
+| copy              | cp                        | คัดลอกไฟล์              | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                        | ย้ายไฟล์                | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                     | สร้างไดเรกทอรีใหม่      | **mkdir testdirectory**                           |
+| rmdir (หรือ del)  | rm                        | ลบไฟล์                  | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                     | ลบไดเรกทอรี             | **rm -r testdirectory**                           |
 
 คำสั่งเหล่านี้เป็นเพียงส่วนหนึ่งที่คุณสามารถเรียกใช้ได้ แต่ในวันนี้คุณจะได้ใช้เพียงเท่านี้ล่ะ
 
