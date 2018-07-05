@@ -10,11 +10,11 @@ Küçük bir blog oluşturacağız!
 
 Bazı dosya ve dizinlerin isimleri Django için çok önemlidir. Oluşturmak üzere olduğumuz dosyaları yeniden adlandırmamalısınız. Onları başka bir yere taşımak da iyi bir fikir değil. Django'nun önemli şeyleri bulabilmesi için belirli yapısını koruması gerekir.
 
-> virtualenv içindeki her şeyi çalıştırmayı unutmayın. Eğer konsolunuzda `(myenv)` öneki görmüyorsanız, virtualenv'inizi aktive etmeniz gerekir. **Django yükleme** bölümünün **virtualenv ile Çalışma** kısmında nasıl yapılacağını açıkladık. Windows'ta `myvenv\Scripts\activate` ya da, Mac OS ya da Linux'ta `source myvenv/bin/activate` yazmak bunu sizin için yapacaktır.
+> virtualenv içindeki her şeyi çalıştırmayı unutmayın. Eğer konsolunuzda `(myenv)` öneki görmüyorsanız, virtualenv'inizi aktive etmeniz gerekir. **Django yükleme** bölümünün **Virtualenv ile çalışma** kısmında nasıl yapılacağını açıkladık. Windows'ta `myvenv\Scripts\activate` ya da, Mac OS ya da Linux'ta `source myvenv/bin/activate` yazmak bunu sizin için yapacaktır.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Mac OS X or Linux konsolunuzda, devam eden şu komutu çalıştırmalısınız. **Periyot eklemeyi unutmayın (yada nokta)`.`sonunda!**
+MacOS veya Linux konsolunuzda aşağıdaki komutu çalıştırmalısınız; **sonuna nokta `(.)` koymayı unutmayın**
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -29,7 +29,7 @@ Mac OS X or Linux konsolunuzda, devam eden şu komutu çalıştırmalısınız. 
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-Windows'ta aşağıdaki kumutu çalıştırmalısınız. **(Sonuna nokta `.` koymayı unutmayın)**:
+Windows'ta aşağıdaki komutu çalıştırmalısınız. **(Sonuna nokta `.` koymayı unutmayın)**:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -55,7 +55,7 @@ Windows'ta aşağıdaki kumutu çalıştırmalısınız. **(Sonuna nokta `.` koy
 
 > **Not**: Dizin yapınızda, daha önceden oluşturduğumuz `venv` dizinini de göreceksiniz.
 
-`manage.py` siteyi yönetmenize yardımcı olan bir scripttir (komut). Bununla başka herhangi bir şey yüklemeden kendi bilgisayarımızda bir web sunucusu başlatabileceğiz.
+`manage.py` site yönetimine yardımcı olan bir komut dosyasıdır. Bu dosya sayesinde, başka herhangi bir şey kurmadan bilgisayarımızda bir web sunucusunu başlatabileceğiz.
 
 `settings.py` dosyası, web sitesinizin ayarlarını içerir.
 
@@ -67,7 +67,7 @@ Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştu�
 
 Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önceden kurduğunuz kod düzenleyicinizi kullanarak dosyayı açın.
 
-**Not**: Bunu aklınızda tutun, `settings.py` dosyası da diğerleri gibi düzenli bir dosyadır. Bunu kod düzenleyicisi içerisinde "dosya -> aç" menü eylemini kullanarak açabilirsiniz. Bu, size `settings.py` dosyanıza gidebileceğiniz ve bu dosyayı seçebileceğiniz her zamanki klasik pencereyi alacaktır. Alternatif olarak, bu dosyayı masaüstünüzdeki djangogirls klasörüne gidip sağ tıklayarak açabilirsiniz. Sonra, listeden kod düzenleyicinizi seçiniz. Dosyayı açabilen ancak düzenlemenize izin vermeyecek diğer programların yüklü olabilmesi nedeniyle kod düzenleyicinin seçilmesi önem arz etmektedir.
+**Not**: `settings.py` dosyasının da diğerleri gibi normal bir dosya olduğunu aklınızda tutun. Bunu kod düzenleyicisi içerisinde "dosya -> aç" menü eylemini kullanarak açabilirsiniz. Bu, size `settings.py` dosyanıza gidebileceğiniz ve bu dosyayı seçebileceğiniz her zamanki klasik pencereyi açacaktır. Alternatif olarak, bu dosyayı masaüstünüzdeki djangogirls klasörüne gidip sağ tıklayarak açabilirsiniz. Sonra, listeden kod düzenleyicinizi seçin. Dosyayı açabilen ancak düzenlemenize izin vermeyecek diğer programların yüklü olabilmesi nedeniyle kod düzenleyicinin seçilmesi önem arz etmektedir.
 
 Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zaman dilimleri listesine](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) gidin ve ve ilgili saat dilimini kopyalayın (ZD) (Ör. `Europe/Berlin`).
 
