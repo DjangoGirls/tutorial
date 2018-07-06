@@ -85,7 +85,7 @@ Kita juga perlu memberi tahu template HTML kita bahwa kita menambahkan beberapa 
 
 <p>{% filename%} blog / templates / blog / post_list.html {% endfilename%}</p>
 
-<pre><code class="html">{% memuat staticfiles%}
+<pre><code class="html">{% load static %}
 `</pre> 
 
 Kami hanya memuatkan file statis di sini. :) Antara tag `<head>` dan ` </ 2> </ 1> , setelah link ke file CSS Bootstrap, tambahkan baris ini:</p>
@@ -102,28 +102,28 @@ File Anda seharusnya terlihat seperti ini:
 {% filename%} blog / templates / blog / post_list.html {% endfilename%}
 
 ```html
-{% load staticfiles%} 
-&lt;html&gt; 
-&lt;head&gt; &lt;title&gt; Blog Django Girls </ 2> &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt; &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"&gt; &lt;link rel="stylesheet" href="{% static 'css/blog.css' %}"&gt; </ 1> &lt;body&gt; &lt;div&gt; &lt;h1&gt;&lt;a href="/"&gt; Django Girls Blog </ 8 > </ 7> {% untuk pos di pos%} &lt;div&gt; &lt;p&gt; dipublikasikan: {{post.published_date}} </ 9> &lt;h1&gt;&lt;a href=""&gt; {{post.title}} </ 10> &lt;p&gt; { {post.text | linebreaksbr}} </ 9> </ 7> {% endfor%} </ 6> </ 0>    
-        
-        
-        
-        
-    
-    
-        
-            
-        
+{% load static %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
 
-        
-            
-                
-                
-                
-            
-        
-    
-
+        {% for post in posts %}
+            <div>
+                <p>published: {{ post.published_date }}</p>
+                <h1><a href="">{{ post.title }}</a></h1>
+                <p>{{ post.text|linebreaksbr }}</p>
+            </div>
+        {% endfor %}
+    </body>
+</html>
 ```
 
 OK, simpan file dan refresh situsnya
