@@ -92,7 +92,7 @@ h1 a {
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 نحن فقط نحمل الملفات الثابتة هنا ما بين علامات `<head>` و `</head>` بعد الارتباطات بملفات بوتستراب CSS ، قم بإضافة هذا السطر:
@@ -110,7 +110,7 @@ h1 a {
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
