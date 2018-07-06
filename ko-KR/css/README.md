@@ -93,7 +93,7 @@ HTML 템플릿(코드)에 CSS를 추가했다는 사실을 알려줄(정의할) 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 드디어 정적파일을 실행시켰어요 :) `<head>`와 `</head>`사이에, 아래 코드를 추가해 부트스트랩 CSS 파일과 연결시키세요.
@@ -111,7 +111,7 @@ HTML 템플릿(코드)에 CSS를 추가했다는 사실을 알려줄(정의할) 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
