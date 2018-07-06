@@ -21,29 +21,37 @@ Kemudian buka dan salin semua dari `post_list.html` ke `base.html` file, Seperti
 {% filenama %}blog/template/blog/base.html{% endfilename %}
 
 ```html
-{% load staticfiles%} 
-&lt;html&gt; 
-&lt;head&gt; &lt;title&gt; Blog Django Girls </ 2> &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt; &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"&gt; &lt;link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'&gt; &lt;link rel="stylesheet" href="{% static 'css/blog.css' %}"&gt; </ 1> &lt;body&gt; &lt;div class="page-header"&gt; &lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt; </ 9 > &lt;h1&gt;&lt;a href="/"&gt; Django Girls Blog </ 10> </ 8> &lt;div class="content container"&gt; &lt;div class="row"&gt; &lt;div class="col-md-8"&gt; {% konten blok%} {% endblock%} </ 13> </ 12> </ 11> </ 7 > </ 0>    
-        
-        
-        
-        
-        
-    
-    
-        
-            
-            
-        
-        
-            
-                
-                    
-                    
-                
-            
-        
-    
+{% load static %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                {% for post in posts %}
+                    <div class="post">
+                        <div class="date">
+                            {{ post.published_date }}
+                        </div>
+                        <h1><a href="">{{ post.title }}</a></h1>
+                        <p>{{ post.text|linebreaksbr }}</p>
+                    </div>
+                {% endfor %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
 ```
 
 Kemudian di `base.html`, ganti seluruh `<body>` ( diantara semua `<body>` dan `</body>`) dengan ini:
