@@ -35,7 +35,7 @@ Vamos começar com a adição de um link dentro do arquivo `blog/templates/blog/
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Tempo para explicar o misterioso `{% url 'blog.views.post_detail' pk=post.pk %}`. Como você pode suspeitar, a notação  `{% %}` significa que estamos usando as tags de template do Django. Desta vez, vamos usar uma que vai criar uma URL para nós!{% endraw %}
+{% raw %}Tempo para explicar o misterioso `{% url 'post_detail' pk=post.pk %}`. Como você pode suspeitar, a notação  `{% %}` significa que estamos usando as tags de template do Django. Desta vez, vamos usar uma que vai criar uma URL para nós!{% endraw %}
 
 `blog.views.post_detail` é um caminho para uma *view* `post_detail` que queremos criar. Preste atenção: `blog` é o nome da sua aplicação (o diretório `blog`), `views` vem do nome do arquivo `views.py` e, a última parte - `post_detail` - é o nome da *view*.
 
