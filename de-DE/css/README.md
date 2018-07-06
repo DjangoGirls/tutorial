@@ -93,7 +93,7 @@ Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu mus
 und in dieser Datei folgende Zeile am Anfang einfügen: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Wir laden hier nur statische Dateien. :-) Zwischen den Tags , direkt nach den Links zu den Bootstrap CSS Dateien, füge noch diese Zeile ein: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
@@ -112,9 +112,14 @@ Deine Datei sollte jetzt so aussehen:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
-    
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
     <body>
         <div>
             <h1><a href="/">Django Girls Blog</a></h1>
