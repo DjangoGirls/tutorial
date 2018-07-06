@@ -93,7 +93,7 @@ Mindezek után közölnünk kell a HTML fájlunkkal is, hogy hozzáadtunk pár C
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
@@ -111,7 +111,7 @@ The browser reads the files in the order they're given, so we need to make sure 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
