@@ -54,30 +54,30 @@ Perhatikan bahwa kami ingin memanggil tampilan baru kami ` post_new </ 0> . Kela
 
 <p>{% filename%} blog / templates / blog / base.html {% endfilename%}</p>
 
-<pre><code class="html">{% load staticfiles%} 
-&lt;html&gt; 
-&lt;head&gt; &lt;title&gt; Blog Django Girls </ 2> &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt; &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"&gt; &lt;link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'&gt; &lt;link rel="stylesheet" href="{% static 'css/blog.css' %}"&gt; </ 1> &lt;body&gt; &lt;div class="page-header"&gt; &lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt; </ 9 > &lt;h1&gt;&lt;a href="/"&gt; Django Girls Blog </ 10> </ 8> &lt;div class="content container"&gt; &lt;div class="row"&gt; &lt;div class="col-md-8"&gt; {% konten blok%} {% endblock%} </ 13> </ 12> </ 11> </ 7 > </ 0>    
-        
-        
-        
-        
-        
-    
-    
-        
-            
-            
-        
-        
-            
-                
-                    
-                    
-                
-            
-        
-    
-
+<pre><code class="html">{% load static %}
+<html>
+    <head>
+        <title>Django Girls blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+    </head>
+    <body>
+        <div class="page-header">
+            <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+            <h1><a href="/">Django Girls Blog</a></h1>
+        </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
 `</pre> 
 
 Setelah disimpan dan merefresh halaman http://127.0.0.1:8000 anda pasti akan melihat tampilan error yang sudah familiar: `NoReverseMatch`, betul?
