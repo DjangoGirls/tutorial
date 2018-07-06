@@ -93,7 +93,7 @@ CSSセレクタについては[CSS Selectors in w3schools](http://www.w3schools.
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 これで、このテンプレートに静的ファイルを読み込むことができました^^。そして、`<head>` と `</head>` の中にあるBootstrap CSSファイルのリンクの下に、この行を追加しましょう：
@@ -111,7 +111,7 @@ CSSセレクタについては[CSS Selectors in w3schools](http://www.w3schools.
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
