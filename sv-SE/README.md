@@ -8,7 +8,7 @@
 
 Välkommen till Django Girls Tutorial! Vi är glada att se dig här :) I den här tutorialen kommer vi att ta dig på en resa under ytan av webbteknologier och ge dig en glimt av alla bitar som behöver sammanställas för att få webben att fungera som vi är vana vid.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Som de flesta okända ting kommer även detta att bli ett äventyr - men oroa dig inte. Du har redan samlat ihop mod för att komma hit, så du kommer att klara dig utan problem :)
 
 ## Introduktion
 
@@ -32,7 +32,7 @@ Den kommer att se ut ungefär så här:
 
 Okej, [låt oss börja från början...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Att följa tutorialen hemifrån
 
 It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
