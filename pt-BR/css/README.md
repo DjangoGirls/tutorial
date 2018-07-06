@@ -93,7 +93,7 @@ Nós também precisamos dizer ao nosso template HTML que adicionamos algum CSS. 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Estamos apenas carregando arquivos estáticos aqui. :) Entre as tags `<head>` e `</head>`, depois dos links para os arquivos CSS do Bootstrap, adicione esta linha:
@@ -111,7 +111,7 @@ Agora, seu arquivo deve estar assim:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
