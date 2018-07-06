@@ -95,7 +95,7 @@ Nous vous conseillons d'en apprendre un peu plus sur les sélecteurs CSS sur [w3
 Afin que nos modifications fonctionnent, nous devons aussi signaler à notre template HTML que nous utilisons des CSS. Ouvrez le fichier `blog/templates/blog/post_list.html` et ajoutez cette ligne au tout début de celui-ci :
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Hop, nous chargeons les fichiers statiques :). Pour l'ajout de code suivant, gardez en tête que le navigateur lit vos fichiers dans l'ordre dans lequel ils lui sont donnés : en le plaçant à l'endroit que nous vous indiquons, vous allez pouvoir remplacer du code provenant des fichiers Boostrap par le vôtre. Donc, entre le `<head>` et le `</head>` et après les liens vers les fichiers CSS de Boostrap, ajoutez ceci :
@@ -109,7 +109,7 @@ Nous venons simplement de dire à notre template où nous avons rangé notre fic
 Maintenant, votre fichier doit ressembler à ceci :
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

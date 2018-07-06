@@ -20,7 +20,7 @@ Créons le fichier `base.html` dans le dossier `blog/templates/blog/` :
 Ensuite, ouvrez ce fichier `base.html` et collez-y tout ce qui se trouve dans le fichier `post_list.html`. Ça devrait ressembler à ça :
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

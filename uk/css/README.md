@@ -92,7 +92,7 @@ Class і id - імена, які ви присвоюєте елементам в
 Далі, нам треба повідомити наш HTML-шаблон про те, що ми додали CSS. Відкрийте файл `blog/templates/blog/post_list.html` і додайте на початок цей рядок:
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Тут лише завантажуються статичні файли :)
@@ -107,7 +107,7 @@ Class і id - імена, які ви присвоюєте елементам в
 Тепер ваш файл має виглядати наступним чином:
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

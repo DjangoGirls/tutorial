@@ -99,7 +99,7 @@ h1 a {
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Мы просто загружаем здесь статические файлы :)
@@ -116,7 +116,7 @@ h1 a {
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

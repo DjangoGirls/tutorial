@@ -59,7 +59,7 @@ Satırı ekledikten sonra, HTML dosyanız bu şekilde görünmelidir:
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>

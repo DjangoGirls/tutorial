@@ -52,7 +52,7 @@ class PostForm(forms.ModelForm):
 Після додавання відповідного рядка, ваш html файл має виглядати наступним чином:
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
