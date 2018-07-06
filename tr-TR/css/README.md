@@ -92,7 +92,7 @@ Bir de HTML şablonuna projemize CSS eklediğimizi bildirmemiz gerekiyor. `blog/
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Burada sadece statik dosya ekliyoruz :) `<head>` ve `</head>` etiketleri arasına, bootstrap linklerinden sonra, şu satırı ekleyelim:
@@ -110,7 +110,7 @@ Tarayıcı, dosyaları verilen sırada okuyor. O yüzden doğru yerde olduğunda
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -125,7 +125,7 @@ Tarayıcı, dosyaları verilen sırada okuyor. O yüzden doğru yerde olduğunda
 
         {% for post in posts %}
             <div>
-                <p>Yayın tarihi: {{ post.published_date }}</p>
+                <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
