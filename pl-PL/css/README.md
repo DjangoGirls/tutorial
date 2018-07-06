@@ -93,7 +93,7 @@ Musimy też powiedzieć naszemu szablonowi HTML, że dodałyśmy trochę styli C
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Tutaj ładujemy pliki statyczne :) Pomiędzy tagami `<head>` oraz `</head>`, po liniach linkujących do plików CSS Bootstrapa, dodaj tę linię:
@@ -111,7 +111,7 @@ Twój plik powinien teraz wyglądać tak:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -133,7 +133,6 @@ Twój plik powinien teraz wyglądać tak:
         {% endfor %}
     </body>
 </html>
- 
 ```
 
 Ok, teraz zapisz plik i odśwież stronę!
