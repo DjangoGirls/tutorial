@@ -93,7 +93,7 @@ Kailangan din nating sabihan ang ating template ng HTML na may dinagdag tayo na 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Nagloload lang kami ng mga static na file dito. :) Sa gitna ng `<head>` at `</head>` na mga tag, kasunod ng mga link sa mga CSS file ng Bootstrap, idagdag mo ang linya na ito:
@@ -111,22 +111,22 @@ Ang file mo ay dapat maging katulad nito:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
-        <title>blog ng Django Girls</title>
+        <title>Django Girls blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link rel="stylesheet" href="{% static 'css/blog.css' %}">
     </head>
     <body>
         <div>
-            <h1><a href="/">Blog ng Django Girls</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
         {% for post in posts %}
             <div>
-                <p>inilathala: {{ post.published_date }}</p>
+                <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
