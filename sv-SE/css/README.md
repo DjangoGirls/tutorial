@@ -93,7 +93,7 @@ Vi behöver också berätta för vår HTML-mall att vi har lagt till lite CSS. �
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 Vi laddar bara in statiska filer här. :) Mellan `<head>` och `</head>` taggarna, efter länkarna till Bootstraps CSS-filer, lägg till följande rad:
@@ -111,7 +111,7 @@ Filen ska nu se ut såhär:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
