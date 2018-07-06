@@ -22,7 +22,7 @@ Templates help when you want to use the same information or layout in more than 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
