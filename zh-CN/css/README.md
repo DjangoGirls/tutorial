@@ -93,7 +93,7 @@ h1 a {
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 我们只是在这里加载静态文件。:) 接下来，我们在`<head>`和`</head>`之间，把下面这一行写到Bootstrap的文件链接之后。
@@ -111,7 +111,7 @@ h1 a {
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
