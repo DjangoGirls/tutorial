@@ -22,7 +22,7 @@ Then open it up and copy everything from `post_list.html` to `base.html` file, l
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
