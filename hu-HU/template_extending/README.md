@@ -22,7 +22,7 @@ Majd nyisd meg, és másolj át mindent a `post_list.html`-ből a `base.html`-be
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
