@@ -58,7 +58,7 @@ PostFormとは何かと思うかもしれません。これはフォームを作
 
 <p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
 
-<pre><code class="html">{% load staticfiles %}
+<pre><code class="html">{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -72,6 +72,16 @@ PostFormとは何かと思うかもしれません。これはフォームを作
             <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
+        <div class="content container">
+            <div class="row">
+                <div class="col-md-8">
+                    {% block content %}
+                    {% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
 `</pre> 
 
 Htmlファイルを保存して、ページをリロードします。 `NoReverseMatch` エラーが表示されます?
