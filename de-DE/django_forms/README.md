@@ -59,7 +59,7 @@ Nach dem Hinzufügen der Zeile sieht deine HTML-Datei so aus:
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
