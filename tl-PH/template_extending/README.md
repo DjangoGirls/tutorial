@@ -22,7 +22,7 @@ Pagkatapos ay buksan ito at kopyahin lahat mula sa `post_list.html` sa `base.htm
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
