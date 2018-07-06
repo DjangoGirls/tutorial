@@ -8,11 +8,11 @@
 
 Witaj w tutorialu Django Girls! Super Cię widzieć! :) W tym tutorialu odbędziemy podróż po technologiach internetowych, oferując Tobie podgląd na wszystkie części składowe, które połączone razem tworzą sieć taką, jaką ją znamy.
 
-Jak z wszystkim, co jest nieznane, będzie to naprawdę niezła przygoda - ale nie przejmuj się, skoro już się tutaj znalazłaś, to dalej już będzie tylko z górki! :)
+Jak ze wszystkim, co jest nieznane, będzie to naprawdę niezła przygoda - ale nie przejmuj się! Skoro już się tutaj znalazłaś, to dalej już będzie tylko z górki! :)
 
 ## Wprowadzenie
 
-Czy kiedykolwiek czułaś, że wokół jest coraz więcej nowych technologii, a Ty zostajesz w tyle? Zastanawiałaś się kiedyś jak zrobić stronę internetową, ale nie miałaś motywacji by zacząć? Czy zdarzyło Ci się pomyśleć, że świat programowania jest dla Ciebie zbyt skomplikowany?
+Czy kiedykolwiek czułaś, że wokół jest coraz więcej nowych technologii, a Ty zostajesz w tyle? Zastanawiałaś się kiedyś, jak zrobić stronę internetową, ale nie miałaś motywacji, by zacząć? Czy zdarzyło Ci się pomyśleć, że świat programowania jest dla Ciebie zbyt skomplikowany?
 
 No więc mamy dla Ciebie dobre nowiny! Programowanie nie jest tak trudne, jak się wydaje, a my chcemy Ci pokazać, że może być też niezłą zabawą.
 
@@ -22,7 +22,7 @@ Mamy nadzieję sprawić, że pokochasz to tak jak my!
 
 ## Czego nauczysz się w trakcie kursu?
 
-Jak skończysz tutorial, będziesz miała małą działającą aplikację webową: twój blog. Pokażemy Ci jak umieścić ją online, tak by inni mogli zobaczyć Twoją pracę!
+Jak skończysz tutorial, będziesz miała małą działającą aplikację webową: Twój blog. Pokażemy Ci, jak umieścić ją online tak, by inni mogli zobaczyć Twoją pracę!
 
 Będzie to wyglądać mniej więcej tak:
 
@@ -34,7 +34,7 @@ Ok, [zacznijmy od początku...](./how_the_internet_works/README.md)
 
 ## Przerabiasz tutorial w domu?
 
-Udział w warsztatach Django Girls to niesamowite doświadczenie, ale zdajemy sobie sprawę, że nie zawsze jest to możliwe. Z tego powodu zachęcamy Ciebie, byś spróbowała przerobić tutorial w domu. Dla czytelniczek w domu, jesteśmy właśnie w trakcie przygotowywani materiałów wideo, które ułatwią samodzielne podążanie za tutorialem. Na chwilę obecną nie posiadamy wideo do wszystkich rozdziałów, ale dzień po dniu, rozdział po rozdziale kolejne materiały będą się pojawiać na kanale [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) na YouTubie.
+Udział w warsztatach Django Girls to niesamowite doświadczenie, ale zdajemy sobie sprawę, że nie zawsze jest to możliwe. Z tego powodu zachęcamy Ciebie, byś spróbowała przerobić tutorial w domu. Dla czytelniczek w domu, jesteśmy właśnie w trakcie przygotowywania materiałów wideo, które ułatwią samodzielne podążanie za tutorialem. Na chwilę obecną nie posiadamy wideo do wszystkich rozdziałów, ale dzień po dniu, rozdział po rozdziale kolejne materiały będą się pojawiać na kanale [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) na YouTubie.
 
 W każdym rozdziale, który posiada materiał wideo, udostępniamy link, który do niego prowadzi.
 

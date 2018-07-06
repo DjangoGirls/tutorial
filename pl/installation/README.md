@@ -2,7 +2,7 @@
 
 Jeśli robisz ten kurs w domu, a nie w trakcie jednego z [warsztatów Django Girls](https://djangogirls.org/events/), możesz pominąć ten rozdział i przejść od razu do [Jak działa internet?](../how_the_internet_works/README.md).
 
-Informacje, które się tutaj znajdują, napotkasz również w kolejnych rozdziałach. W trakcie warsztatów Django Girls, instalujemy wszystko w trakcie jednego wieczoru, żeby następnego dnia nie musieć się o to martwić, więc zebraliśmy wszystkie potrzebne informacje w jedno miejsce.
+Informacje, które się tutaj znajdują, napotkasz również w kolejnych rozdziałach. W trakcie warsztatów Django Girls, instalujemy wszystko w trakcie jednego wieczoru, żeby następnego dnia nie musieć się o to martwić. Zebrałyśmy więc wszystkie potrzebne informacje w jedno miejsce.
 
 Jeśli chcesz, też możesz zainstalować wszystko od razu. Ale jeśli wolisz zacząć naukę już teraz bez instalowania najpierw kilku nowych rzeczy na swoim komputerze, pomiń ten rozdział. Wszystko wytłumaczymy później.
 
@@ -10,7 +10,7 @@ Powodzenia!
 
 # Instalacja
 
-Podczas warsztatów będziesz budować bloga, ale abyś mogła zacząć programować, musimy najpierw zainstalować kilka rzeczy.
+Podczas warsztatów będziesz budować blog, ale abyś mogła zacząć programować, musimy najpierw zainstalować kilka rzeczy.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
@@ -47,7 +47,7 @@ Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed 
 
 * [Jak działa internet](../how_the_internet_works/README.md)
 
-* [Wprowadzenie do wiersza poleceń](../intro_to_command_line/README.md)
+* [Wprowadzenie do wiersza polecenia](../intro_to_command_line/README.md)
 
 * [Wprowadzenie do Pythona](../python_introduction/README.md)
 

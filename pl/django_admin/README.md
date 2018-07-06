@@ -15,11 +15,11 @@ admin.site.register(Post)
 
 Jak widać, importujemy (dołączamy) model Post, który zdefiniowałyśmy w poprzednim rozdziale. Aby nasz model był widoczny w panelu admina, musimy go zarejestrować za pomocą polecenia `admin.site.register(Post)`.
 
-OK, czas rzucić okiem na nasz model Post. Pamiętaj, by wpisać `python manage.py runserver` w wierszu poleceń, by uruchomić serwer. Przejdź do przeglądarki i wpisz adres http://127.0.0.1: 8000/admin/. Zobaczysz stronę logowania podobną do tej:
+OK, czas rzucić okiem na nasz model Post. Pamiętaj, by wpisać `python manage.py runserver` w wierszu polecenia, by uruchomić serwer. Przejdź do przeglądarki i wpisz adres http://127.0.0.1: 8000/admin/. Zobaczysz stronę logowania podobną do tej:
 
 ![Strona logowania](images/login_page2.png)
 
-Aby móc się zalogować, musisz utworzyć konto administratora (*superuser*) - czyli użytkownika, który posiada nieograniczony dostęp do całej strony. Wróć do wiersza poleceń, wpisz `python manage.py createsuperuser` i wciśnij enter.
+Aby móc się zalogować, musisz utworzyć konto administratora (*superuser*) - czyli użytkownika, który posiada nieograniczony dostęp do całej strony. Wróć do wiersza polecenia, wpisz `python manage.py createsuperuser` i wciśnij enter.
 
 > Pamietaj - aby móc wprowadzić nowe polecenie podczas pracy web serwera, otwórz nowy terminal i aktywuj virtualenv. Przyjrzałyśmy się, jak wpisywać nowe komendy w rozdziale **Twój pierwszy projekt w Django!**, w sekcji **Uruchamianie serwera www**.
 

@@ -4,7 +4,7 @@
 * [Instalacja](installation/README.md)
 * [Instalacja (chromebook)](chromebook_setup/README.md)
 * [Jak działa internet?](how_the_internet_works/README.md)
-* [Wprowadzenie do wiersza poleceń](intro_to_command_line/README.md)
+* [Wprowadzenie do wiersza polecenia](intro_to_command_line/README.md)
 * [Instalowanie Pythona](python_installation/README.md)
 * [Edytor tekstu](code_editor/README.md)
 * [Wprowadzenie do Pythona](python_introduction/README.md)
