@@ -93,7 +93,7 @@
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 ```
 
 ما فقط فایلهای استاتیک را در اینجا بارگیری میکنیم :) بین برچسب `<head>` و ` </ 2> </ 1>، پس از پیوند به فایل های CSS بوت استرپ، این خط را اضافه کنید:</p>
@@ -110,7 +110,7 @@
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -120,12 +120,12 @@
     </head>
     <body>
         <div>
-            <h1><a href="/">وبلاگ دختران جنگلی</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
         {% for post in posts %}
             <div>
-                <p>منتشر شده: {{ post.published_date }}</p>
+                <p>published: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
