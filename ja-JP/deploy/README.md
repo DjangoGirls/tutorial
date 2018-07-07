@@ -14,7 +14,7 @@
 
 > **特徴：**もし、既にgitのインストールをやっている場合は再度行う必要はありません。-あなたは次のセクションにスキップしてあなたのGitリポジトリの作成を開始します。
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 ## Starting our Git repository
 
