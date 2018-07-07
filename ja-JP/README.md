@@ -34,9 +34,9 @@ Django Girlsのチュートリアルにようこそ！ お会いできて嬉し�
 
 ## 自分の家でチュートリアルを進める
 
-Django Girlsのワークショップに参加することはすばらしいことです。でも、いつも参加できるとは限らないですよね。 This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Django Girlsのワークショップに参加することはすばらしいことです。でも、いつも参加できるとは限らないですよね。 でしたら、ご自宅でこのチュートリアルに取り組むことをおすすめします。 ご自宅で取り組まれる方向けに、チュートリアルを一人で進めやすくする動画の準備を進めています。 動画の準備は進行中ですが、YouTubeチャンネル [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) ですぐにますます多くのことがカバーされるでしょう。
 
-In every chapter already covered, there is a link that points to the correct video.
+動画がすでに準備された章には、動画へのリンクがあります。
 
 ## コントリビューションについて
 
