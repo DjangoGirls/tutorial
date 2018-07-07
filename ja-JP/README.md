@@ -6,13 +6,13 @@
 
 ## ウェルカム！
 
-Django Girlsのチュートリアルにようこそ！ お会いできて嬉しいです :) このチュートリアルでは、Webの技術というフードをかぶって私たちはあなたと旅に出ます。私たちが知っているようにWebを動かすのに必要なものすべてを垣間見ることができるでしょう。
+Django Girlsのチュートリアルにようこそ！ お会いできて嬉しいです :) このチュートリアルでは、ウェブの技術というフードをかぶって私たちはあなたと旅に出ます。私たちが知っているようにウェブを動かすのに必要なものすべてを垣間見ることができるでしょう。
 
 知らないことを学ぶことは冒険のようなものです - でも心配はいりません。あなたはすでに勇気を出してここにいらっしゃっているのですから、きっとうまくいくでしょう :)
 
 ## はじめに
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+世界のますます色々なところに自分が（まだ）知らない技術が使われていると感じたことはありませんか？ Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
 Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
 
