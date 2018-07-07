@@ -206,7 +206,7 @@ else:
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+สิ่งต่อไปคือการตรวจสอบว่าแบบฟอร์มถูกต้องหรือไม่ (ต้องกรอกข้อมูลทั้งหมดในฟิลด์ที่กำหนดและต้องไม่มีการส่งค่าที่ไม่ถูกต้อง) เราทำแบบนั้นโดยใช้ `form.is_valid()`
 
 เราตรวจสอบฟอร์ม ถ้าฟอร์มถูกต้อง เราก็สามารถบันทึกได้!
 
@@ -220,7 +220,7 @@ if form.is_valid():
     post.save()
 ```
 
-โดยทั่วไป เรามีสองสิ่งตรงนี้: เราบันทึกฟอร์มด้วย `form.save` และเราเพิ่มผู้เขียน (ซึ่งเราไม่มี `author` ในฟอร์ม `PostForm` และข้อมูลส่วนนี้นั้นจำเป็นต้องม). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+โดยทั่วไป เรามีสองสิ่งตรงนี้: เราบันทึกฟอร์มด้วย `form.save` และเราเพิ่มผู้เขียน (ซึ่งเราไม่มี `author` ในฟอร์ม `PostForm` และข้อมูลส่วนนี้นั้นจำเป็นต้องม). `commit=False` หมายถึง เราจะยังไม่บันทึกโมเดล `Post` ในตอนนี้ - เราต้องเพิ่มชื่อผู้เขียนซะก่อน ส่วนใหญ่เราจะใช้ `form.save()` โดยไม่มี `commit=False` แต่นี้กรณีนี้เราต้องใช้มัน `post.save()` จะเก็บการเปลี่ยนแปลง (เพิ่มผู้เขียน) และโพสต์ใหม่ก็จะถูกสร้าง!
 
 Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
@@ -238,9 +238,9 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`blog. views. post_detail` คือชื่อของ view ที่เราต้องการที่จะเข้าถึง ยังจำได้ไหมที่ *view* นั้นต้องการตัวแปร `pk` ? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`blog. views. post_detail` คือชื่อของ view ที่เราต้องการที่จะเข้าถึง ยังจำได้ไหมที่ *view* นั้นต้องการตัวแปร `pk` ? การส่งค่านี้ไปที่ view เราจะใช้ `pk=post.pk`, โดยที่ `post` คือโพสต์ที่เราสร้างขึ้นใหม่
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+เอาล่ะ พูดมาเยอะแล้ว เราอยากเห็นว่าตอนนี้ *view* ทั้งหมดนั้นหน้าตาเป็นยังไงแล้วใช่มั้ย?
 
 {% filename %}blog/views.py{% endfilename %}
 
