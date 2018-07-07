@@ -125,7 +125,7 @@ You can now have a little fun and add more posts to see how it works. Add two or
 
 ### ตัวกรองวัตถุ
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. เราจะใช้ `filter` แทน `all` ใน `Post.objects.all()` In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. ตอนนี้ ผลลัพธ์จากการกรองจะเป็นดังนี้:
+ส่วนสำคัญของ QuerySet คือ ความสามารถในการกรองข้อมูล Let's say we want to find all posts that user ola authored. เราจะใช้ `filter` แทน `all` ใน `Post.objects.all()` In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. ตอนนี้ ผลลัพธ์จากการกรองจะเป็นดังนี้:
 
 {% filename %}command-line{% endfilename %}
 
