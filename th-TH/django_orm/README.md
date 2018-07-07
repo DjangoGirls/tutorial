@@ -125,7 +125,7 @@ You can now have a little fun and add more posts to see how it works. Add two or
 
 ### ตัวกรองวัตถุ
 
-ส่วนสำคัญของ QuerySet คือ ความสามารถในการกรองข้อมูล Let's say we want to find all posts that user ola authored. เราจะใช้ `filter` แทน `all` ใน `Post.objects.all()` In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. ตอนนี้ ผลลัพธ์จากการกรองจะเป็นดังนี้:
+ส่วนสำคัญของ QuerySet คือ ความสามารถในการกรองข้อมูล สมมติว่าเราต้องการหาโพสต์ทั้งหมดที่ผู้ใช้มีผู้ใช่ที่ชื่อ ola เป็นคนเขียน เราจะใช้ `filter` แทน `all` ใน `Post.objects.all()` In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. วิธีการเขียนใน Django ก็คือ: `author=me` ตอนนี้ ผลลัพธ์จากการกรองจะเป็นดังนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -134,7 +134,7 @@ You can now have a little fun and add more posts to see how it works. Add two or
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+หรือบางที เราอยากเห็นโพสต์ทั้งหมดที่มีคำว่า 'title' อยู่ข้างในฟิลด์ `title`?
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,7 +143,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **หมายเหตุ** มีขีดล่างสองอัน (`_`) ระหว่าง `title` และ `contains` Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **หมายเหตุ** มีขีดล่างสองอัน (`_`) ระหว่าง `title` และ `contains` Django ORM นั้นใช้รูปแบบนี้ในการ แยกชื่อฟิลด์ ("title") และตัวดำเนินการหรือตัวกรอง ("contains") ถ้าคุณใช้ขีดล่างแค่อันเดียว คุณจะพบกับข้อผิดพลาด "FieldError: Cannot resolve keyword title_contains"
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
