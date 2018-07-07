@@ -138,13 +138,13 @@ Kodunuz artık Github'da. Hemen gidip bak! İyi bir çevrede olduğunu göreceks
 
 ## Sitemizin PythonAnywhere üzerinde yapılandırılması
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+Ana [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) a logosuna tıklayarak dönelim ve bir "Bash" console başlatalım – bu bilgisayarınızdaki komut satırının PythonAnywhere versiyonudur.
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **Not:** PythonAnywhere Linux tabanlıdır, eğer Windows kullanıyorsan, bilgisyarındaki konsoldan biraz farklı görünür.
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+PythonAnywhere'de bir web yazılımı konuşlandırmak için kodun GitHub'dan çekilmesi ve PythonAnywhere'in bu kodu tanıyabilmesi ve çalıştırması için yapılandırmamız gerekiyor. Bu iş manuel olarak yapabilir ama PythonAnywhere bunu kolaylıkla yapabilmek için yardımcı bir araç sunar. İlk önce bu aracı kuralım:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
