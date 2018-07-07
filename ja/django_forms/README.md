@@ -52,13 +52,14 @@ PostFormとは何かと思うかもしれません。これはフォームを作
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-新しいビュー` post_new </ code>を呼び出すことに注意してください。 <code> "glyphicon glyphicon-plus" </ code>クラスは、使用しているブートストラップテーマによって提供され、プラス記号を表示します。</p>
+新しいビュー` post_new `を呼び出すことに注意してください。 ` "glyphicon glyphicon-plus" `クラスは、使用しているブートストラップテーマによって提供され、プラス記号を表示します。
 
-<p>行を追加すると、このような html ファイルになります。</p>
+行を追加すると、このような html ファイルになります。
 
-<p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
-<pre><code class="html">{% load static %}
+```html
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -82,7 +83,7 @@ PostFormとは何かと思うかもしれません。これはフォームを作
         </div>
     </body>
 </html>
-`</pre> 
+```
 
 Htmlファイルを保存して、ページをリロードします。 `NoReverseMatch` エラーが表示されます?
 
@@ -373,12 +374,13 @@ Djangoのフォームについての詳細を知りたい場合、Django Project
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-` blog / templates / blog / base.html </ code>で、<code> page-header </ code> <code> div </ code>とそれ以前に入力したアンカータグを見つけます。 これは次のようになります。</p>
+` blog / templates / blog / base.html `で、` page-header ` ` div `とそれ以前に入力したアンカータグを見つけます。 これは次のようになります。
 
-<p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
-<pre><code class="html">{% filename %}blog/templates/blog/base.html{% endfilename %}
-`</pre> 
+```html
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
 
 これに` {％if％} </ code>タグを追加すると、管理者にログインしているユーザーのみにリンクを表示します。 今は、あなただけです！ これで、<code><button>` タグは以下のようになります：
 
@@ -390,16 +392,17 @@ Djangoのフォームについての詳細を知りたい場合、Django Project
 {% endif %}
 ```
 
-この` {％if％} </ code>は、ページをリクエストしているユーザーがログインしている場合にのみ、リンクがブラウザに送信されるようにします。 これは新しい投稿の作成を完全に保護するものではありませんが、それは良い第一歩です。 私たちは拡張レッスンでより多くのセキュリティをカバーします。</p>
+この`{% if %}`は、ページをリクエストしているユーザーがログインしている場合にのみ、リンクがブラウザに送信されるようにします。 これは新しい投稿の作成を完全に保護するものではありませんが、それは良い第一歩です。 私たちは拡張レッスンでより多くのセキュリティをカバーします。
 
-<p>詳細ページに追加した編集アイコンを覚えていますか？ 同じ変更を追加したいので、他の人が既存の投稿を編集することはできません。</p>
+詳細ページに追加した編集アイコンを覚えていますか？ 同じ変更を追加したいので、他の人が既存の投稿を編集することはできません。
 
-<p>blog/templates/blog/post_detail.html を開いて次の行を追加します:</p>
+`blog/templates/blog/post_detail.html` を開いて次の行を追加します:
 
-<p>{% filename %}blog/templates/blog/post_detail.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
-<pre><code class="html"><a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-`</pre> 
+```html
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```
 
 これに変更してください：
 
