@@ -42,7 +42,7 @@ from .models import Post
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`, but don't forget to first add `from django.utils import timezone`:
+そう、このコードですよね。これを `blog/views.py `の `def post_list(request)`関数 の中に加えましょう。`from django.utils import timezone`を最初に追加するのを忘れないでくださいね。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -56,11 +56,11 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
+最後に一点、クエリセットを参照している変数` posts `をテンプレートに渡すという作業が、出来ていませんが、これは次の章でやりましょう。
 
-作成したクエリセットは、 変数 posts で参照できることに、注意しましょう。この 変数 posts を使って、クエリセットのデータにアクセスします。これから先 posts というと、このクエリセットのことです。
+作成したクエリセットは、*変数* `posts `で参照できることに、注意しましょう。この 変数 posts を使って、クエリセットのデータにアクセスします。これから先 posts というと、このクエリセットのことです。
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. 表示させたいのはクエリセットのデータなので、 posts を指定しましょう). :) こんな風に、記述することになります。 {'posts': posts}. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+`render `関数では、既にパラメータとして `request `とテンプレートファイル `'blog/post_list.html' `が渡されています。リクエストというのは、インターネットを介してユーザから受け取った全ての情報が詰まったものです。最後のパラメータに注目してください。 ` {} `こんな風に書かれていますね。この中に指定した情報を、テンプレートが表示してくれます。 表示させたいのはクエリセットのデータなので、 posts を指定しましょう). :) こんな風に、記述することになります。 {'posts': posts}. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
 最終的に blog/views.py は、以下の様になるはずです。
 
