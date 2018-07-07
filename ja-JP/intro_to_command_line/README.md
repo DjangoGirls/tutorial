@@ -1,4 +1,4 @@
-# Introduction to the command-line interface
+# コマンドラインを使ってみよう
 
 > 家で１人でこのチャプターに挑戦している方へ：このチャプターは、動画（英語）もあるので参考にしてください。 [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8)
 
