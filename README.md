@@ -99,6 +99,30 @@ Example:
 
 If you don't want to download the GitBook Editor app you can also go to the [GitBook website](https://legacy.gitbook.com/), sign up for free and work directly in your browser.
 
+
+# Docker Build
+
+You can build & run website from Docker container. No external dependencies needed, just required Docker.
+
+
+## Build Docker Image
+
+    docker build -t djangogirls/tutorial .
+
+
+## Run Website from Docker
+
+Run on foreground:
+
+    docker run -p 8080:80 --name djangogirls-tutorial --rm djangogirls/tutorial
+
+or background:
+
+    docker run -p 8080:80 --name djangogirls-tutorial -d djangogirls/tutorial
+
+You can open site on [127.0.0.1:8080](http://127.0.0.1:8080)
+
+
 # Making a pull request
 
 After you have finished your changes you need to create [a pull request](https://help.github.com/articles/using-pull-requests)  on GitHub. DjangoGirls will get notified about the pull request, review your changes, suggest any corrections if needed and then *pull* your changes to the master version.
