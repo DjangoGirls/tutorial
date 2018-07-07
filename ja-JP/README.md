@@ -6,19 +6,19 @@
 
 ## ウェルカム！
 
-Django Girlsのチュートリアルにようこそ！ お会いできて嬉しいです :) このチュートリアルでは、ウェブの技術というフードをかぶって私たちはあなたと旅に出ます。私たちが知っているようにウェブを動かすのに必要なものすべてを垣間見ることができるでしょう。
+Django Girlsのチュートリアルにようこそ！ お会いできて嬉しいです :) このチュートリアルでは、ウェブテクノロジーというフードをかぶって私たちはあなたと旅に出ます。私たちが知っているようにウェブを動かすのに必要なものすべてを垣間見ることができるでしょう。
 
 知らないことを学ぶことは冒険のようなものです - でも心配はいりません。あなたはすでに勇気を出してここにいらっしゃっているのですから、きっとうまくいくでしょう :)
 
 ## はじめに
 
-世界のますます色々なところに自分が（まだ）知らない技術が使われていると感じたことはありませんか？ Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+世界のますます色々なところに自分が（まだ）知らない技術が使われていると感じたことはありませんか？ ウェブサイトはどうやって作るのだろうと興味をもちつつ、先延ばしにしていませんか？ ソフトウェアの世界は複雑すぎて一人でなにかに取り組むことはできないと考えたことはありませんか？
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+そんなあなたに朗報です！プログラミングはそれほど難しくありませんよ。楽しみかたをお教えします！！
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+このチュートリアルは、魔法のようにあなたをプログラマーに変身させるものではありません。 上手くなりたかったら、何ヶ月あるいは何年もの勉強と練習を積まなければいけません。 しかし、プログラミングやウェブサイトを作成することは、あなたが思っているほど複雑ではないことを、このチュートリアルをとおして示したいと思います。 できるだけ細かく説明していきますね。コワイと思わず、新しい世界に一歩を踏み出してみてください！
 
-We hope that we'll be able to make you love technology as much as we do!
+あなたがテクノロジーやプログラミングを楽しんでくれると嬉しいです！！
 
 ## チュートリアルでは何を知ることができる？
 
