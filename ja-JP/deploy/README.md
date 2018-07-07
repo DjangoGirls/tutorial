@@ -140,7 +140,7 @@ $ git push -u origin master
 > > 
 > > メインの[ PythonAnywhere Dashboard ](https://www.pythonanywhere.com/)のロゴをクリックし、「Bash」コンソールを起動するオプションを選択します。これがPythonAnywhereバージョンです あなたのコンピュータのコマンドラインと同じようなものです。
 > > 
-> > ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+> > ![PythonAnywhereのウェブインターフェースの「New Console」、「bash」ボタン](images/pythonanywhere_bash_console.png)
 > > 
 > > > **備考：**PythonAnywhere は Linux に基づきますので、Windows の場合は、あなたのコンピュータ上で進行中のものと少し違って見えるでしょう。
 > > 
