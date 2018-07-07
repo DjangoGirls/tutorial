@@ -6,10 +6,11 @@
 
 <p>{% filename %}blog/admin.py{% endfilename %}</p>
 
-<pre><code class="python"><code>from django.contrib import admin
+<pre><code class="python">from django.contrib import admin
 from .models import Post
 
-admin.site.register(Post)` </code></pre> 
+admin.site.register(Post)
+`</pre> 
 
 見て分かる通り、前回定義したPostモデルをimportしています。 Adminページ(管理画面)のモデルを作るために、モデルを登録する必要があります。`admin.site.register(Post)`の部分です.
 
