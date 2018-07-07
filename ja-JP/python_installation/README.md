@@ -1,15 +1,15 @@
 # Pythonをはじめよう
 
-We're finally here!
+ついにここまで来ましたね！
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+まずは、最初にPythonとは何かお話させて下さい。Pythonはとても人気のあるプログラミング言語です。Webサイトや、ゲーム、サイエンス、グラッフィックス、などなど、たくさんの場面で使われています。
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Pythonは1980年台の終わりに、人間が読みやすい（機械だけでなく）言語を目的に開発されました。 だから、他の言語に比べて、Pythonはとてもシンプルで、勉強しやすいのです。でもご心配なく、Pythonはとってもパワフルな言語ですから！
 
 # Pythonのインストール
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **注意：**Chromebookをお使いの場合、このチャプターは飛ばして、[Chromebook Setup](../chromebook_setup/README.md)の章をすすめてください。
 > 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **注意：**すでにインストール手順を実行している場合は、これをもう一度行う必要はありません。次の章に進んでください。
 
 {% include "/python_installation/instructions.md" %}
