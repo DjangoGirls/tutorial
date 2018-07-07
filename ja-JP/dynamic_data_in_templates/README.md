@@ -1,12 +1,12 @@
 # テンプレート内の動的データ
 
-ポスト内容を保存する為の Post モデルは、 models.py に定義しました。ポストの一覧を表示する post_list は views.py にあり、そこにテンプレートも加わりました。 これらを準備しましたが、実際のところ、ポストをどうやってHTMLファイルに出力すればいいのでしょうか？ Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+ポスト内容を保存する為の Post モデルは、 models.py に定義しました。ポストの一覧を表示する post_list は views.py にあり、そこにテンプレートも加わりました。 これらを準備しましたが、実際のところ、ポストをどうやってHTMLファイルに出力すればいいのでしょうか？ 大まかなイメージとしては、データベースに保存された記事を取り出して、テンプレートのHTMLファイルの中に行儀よく並べれば良さそうですね。
 
-正確には、 ビュー が モデルとテンプレートの橋渡しをしてくれます。 In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+正確には、*ビュー *が モデルとテンプレートの橋渡しをしてくれます。 私達が作業している `post_list ` *ビュー *の場合、表示したいデータを取り出して、テンプレートファイルに渡すことになります。 どのモデルのデータを、どのテンプレートに表示させるかを、 *ビュー*に 記述します。
 
-OK, so how will we achieve this?
+それでは、実際にやってみましょう。
 
-まず blog/views.py を開きます。今のところ post_list ビュー は、以下のようになっているでしょう。
+まず` blog/views.py `を開きます。今のところ `post_list `*ビュー *は、以下のようになっているでしょう。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-少し前に、別のファイルに用意したコードをどうやってインクルードするか説明したのですけれど、覚えていますか？ Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+少し前に、別のファイルに用意したコードをどうやってインクルードするか説明したのですけれど、覚えていますか？ それでは `models.py` のモデルを、インクルードしてみましょう。 `from .models import Post` という行を追加してみます。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -26,7 +26,7 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). そして、モデルの名前を指定してインポートします(この場合のモデルは Post ですね).
+`models` の前にあるドットは *カレントディレクトリ* 、もしくは *カレントアプリケーション *のことです。 ` views.py `と `models.py `は、同じディレクトリに置いてあります。 This means we can use `.` and the name of the file (without `.py`). そして、モデルの名前を指定してインポートします(この場合のモデルは Post ですね).
 
 But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
 
