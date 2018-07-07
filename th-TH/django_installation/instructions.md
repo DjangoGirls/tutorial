@@ -144,7 +144,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+คุณจะรู้ได้ว่า `virtualenv` ถูกเริ่มใช้แล้ว โดยดูที่ prompt บน console มันจะมีคำว่า `(myvenv)` อยู่ด้านหน้า
 
 เมื่อทำงานกับสภาพแวดล้อมเสมือน `python` จะอ้างถึงเวอร์ชันที่ถูกต้องให้ ซึ่งจะทำให้คุณใช้คำสั่ง `python` แทนคำสั่ง `python3` ได้เลย.
 
@@ -175,7 +175,7 @@ Then run `pip install django~=1.11.0` (note that we use a tilde followed by an e
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> หากคุณใช้ pip บน Windows แล้วเกิด error ให้ลองเช็ค project pathname ว่ามี ช่องว่าง หรืออักขระพิเศษหรือไม่ (เช่น `C:\Users\User Name\djangogirls`) If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
