@@ -16,7 +16,7 @@ Bu üç yer sizin için önemli olacak. Lokal bilgisayarınız geliştirme ve te
 
 {% include "/deploy/install_git.md" %}
 
-## Git repomuzu oluşturmak
+## Git repomuzu oluşturalım
 
 Git, bir kod deposu (repository veya kısaca "repo") olarak adlandırılan belirli dosyalardaki değişiklikleri izler. Projemiz için bir tane oluşturalım. Konsolunuzu açın ve `djangogirls` klasöründe aşağıdaki komutları çalıştırın:
 
