@@ -102,9 +102,9 @@
 {% endfor %}
 ```
 
-เราต้องการใช้ข้อมูลนี้เป็นส่วนหนึ่งของเทมเพลตของเราสำหรับบล็อกเนื้อหาทั้งหมด ได้เวลาเพิ่ม block tags ในไฟล์นี้แล้ว!
+เราต้องการใช้ข้อมูลนี้เป็นส่วนหนึ่งของเทมเพลตของเราสำหรับบล็อกเนื้อหาทั้งหมด ได้เวลาเพิ่มแท็กบล็อคในไฟล์นี้แล้ว!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. แบบนี้:{% endraw %}
+{% raw %}คุณจะต้องให้แท็กบล็อกของคุณเหมือนกับแท็กในไฟล์ `base.html` คุณยังต้องรวมโค้ดทั้งหมดที่อยู่ในบล็อคเนื้อหาของคุณ ในการจะทำแบบนั้น เราต้องใส่ทุกอย่างลงไประหว่าง `{% block content %}` และ `{% endblock %}` แบบนี้:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+ตอนนี้ก็เหลือแค่อย่างเดียวที่เราต้องทำ ก็คือการเชื่อมเทมเพลตสองอันนี้เข้าด้วยกัน นี่แหละคือทั้งหมดของการขยายเทมเพลต เราจะทำโดยเพิ่มแท็กขยายลงในตอนต้นของไฟล์ แบบนี้:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
