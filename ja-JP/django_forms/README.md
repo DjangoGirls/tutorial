@@ -140,8 +140,8 @@ Postフォームを新しく作るには、PostFormを呼び出し、それを�
 
 blog/templates/blogディレクトリにpost_edit.htmlファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
 
-* フォームを表示する必要があります。 私たちは（例えば）{％raw％} ` {{form.as_p}} </ code> {％endraw％}でこれを行うことができます。</li>
-<li>上記の行は HTML フォーム タグでラップする必要があります: <code><form method="POST">...</form>`.
+* フォームを表示する必要があります。 私たちは（例えば）{％ raw ％}`{{ form.as_p }}`{％ endraw ％}でこれを行うことができます。
+* 上記の行は HTML フォーム タグでラップする必要があります: `<form method="POST">...</form>`.
 * `保存` のボタンが必要です。HTML ボタンで行う: `<button type="submit">Save</button>`.
 * 最後に`<form ...>` タグを開いて、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームを安全に保護できるのでこれは非常に重要です! このビットを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
 
@@ -198,12 +198,13 @@ else:
     form = PostForm()
 ```
 
-` [...] </ code>のドットを記入してください。 <code> method </ code>が<code> POST </ code>の場合、フォームのデータを使って<code> PostForm </ code>を構築します。 私たちはそれを次のようにします：</p>
+`[...]`のドットを記入してください。 `method`が`POST`の場合、フォームのデータを使って`PostForm`を構築します。 私たちはそれを次のようにします：
 
-<p>{% filename %}blog/views.py{% endfilename %}</p>
+{% filename %}blog/views.py{% endfilename %}
 
-<pre><code class="python">form = PostForm(request.POST)
-`</pre> 
+```python
+form = PostForm(request.POST)
+```
 
 簡単ですね! 次にフォームの値が正しいかどうかをチェックします（すべての必須フィールドが設定され、全く誤った値が保存されていないことを）form.is_valid() を使うことでチェックできます.
 
