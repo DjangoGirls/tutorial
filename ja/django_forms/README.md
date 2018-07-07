@@ -140,8 +140,8 @@ Postフォームを新しく作るには、PostFormを呼び出し、それを�
 
 blog/templates/blogディレクトリにpost_edit.htmlファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
 
-* フォームを表示する必要があります。 私たちは（例えば）{％raw％} ` {{form.as_p}} </ code> {％endraw％}でこれを行うことができます。</li>
-<li>上記の行は HTML フォーム タグでラップする必要があります: <code><form method="POST">...</form>`.
+* フォームを表示する必要があります。 私たちは（例えば）{％ raw ％}`{{ form.as_p }}`{％ endraw ％}でこれを行うことができます。
+* 上記の行は HTML フォーム タグでラップする必要があります: `<form method="POST">...</form>`.
 * `保存` のボタンが必要です。HTML ボタンで行う: `<button type="submit">Save</button>`.
 * 最後に`<form ...>` タグを開いて、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームを安全に保護できるのでこれは非常に重要です! このビットを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
 
@@ -198,12 +198,13 @@ else:
     form = PostForm()
 ```
 
-` [...] </ code>のドットを記入してください。 <code> method </ code>が<code> POST </ code>の場合、フォームのデータを使って<code> PostForm </ code>を構築します。 私たちはそれを次のようにします：</p>
+`[...]`のドットを記入してください。 `method`が`POST`の場合、フォームのデータを使って`PostForm`を構築します。 私たちはそれを次のようにします：
 
-<p>{% filename %}blog/views.py{% endfilename %}</p>
+{% filename %}blog/views.py{% endfilename %}
 
-<pre><code class="python">form = PostForm(request.POST)
-`</pre> 
+```python
+form = PostForm(request.POST)
+```
 
 簡単ですね! 次にフォームの値が正しいかどうかをチェックします（すべての必須フィールドが設定され、全く誤った値が保存されていないことを）form.is_valid() を使うことでチェックできます.
 
@@ -219,14 +220,15 @@ if form.is_valid():
     post.save()
 ```
 
-基本的にここでは2つのことを行います。まず form.save でフォームを保存することと author を追加することです(まだ PostForm 内に author フィールドがありませんし、このフィールドは必須です). commit=False は Post モデルをまだセーブしません。ではauthorを追加します。commit=False を指定せず form.save() を実行します。 ほとんどの場合、` commit = False </ code>なしで<code> form.save（）</ code>を使用しますが、この場合はそれを指定する必要があります。 <code> post.save（）</ code>は変更を保存し（作成者を追加する）、新しいブログ投稿が作成されます。</p>
+基本的にここでは2つのことを行います。まず form.save でフォームを保存することと author を追加することです(まだ PostForm 内に author フィールドがありませんし、このフィールドは必須です). commit=False は Post モデルをまだセーブしません。ではauthorを追加します。commit=False を指定せず form.save() を実行します。 ほとんどの場合、`commit = False`なしで`form.save()`を使用しますが、この場合はそれを指定する必要があります。 `post.save()`は変更を保存し（作成者を追加する）、新しいブログ投稿が作成されます。
 
-<p>最後に、新しく作成された記事の post_detail ページを表示できれば良いですよね? そのために次のインポートを追加します:</p>
+最後に、新しく作成された記事の post_detail ページを表示できれば良いですよね? そのために次のインポートを追加します:
 
-<p>{% filename %}blog/views.py{% endfilename %}</p>
+{% filename %}blog/views.py{% endfilename %}
 
-<pre><code class="python">from django.shortcuts import redirect
-`</pre> 
+```python
+from django.shortcuts import redirect
+```
 
 ファイルの先頭に追加します。これでようやく、新しく作成されたポストのための post_detail ページに移動する処理を書けます。
 

@@ -53,49 +53,50 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
             __init__.py
     
 
-> **注</ strong>：ディレクトリ構造には、以前作成した` venv </ code>ディレクトリもあります。</p>
-</blockquote>
+> **注**：ディレクトリ構造には、以前作成した`venv`ディレクトリもあります。
 
-<p><code> manage.py </ code>はサイトの管理に役立つスクリプトです。 それを使用して、他のものをインストールすることなく、私たちのコンピュータ上でWebサーバーを起動することができます。</p>
+`manage.py`はサイトの管理に役立つスクリプトです。 それを使用して、他のものをインストールすることなく、私たちのコンピュータ上でWebサーバーを起動することができます。
 
-<p><code> settings.py </ code>ファイルには、ウェブサイトの設定が含まれています。</p>
+`settings.py`ファイルには、ウェブサイトの設定が含まれています。
 
-<p>手紙を送付する場所を確認する郵便業者について話した事を覚えていますか？ <code> urls.py </ code>ファイルには、<code> urlresolver </ code>で使用されるパターンのリストが含まれています。</p>
+手紙を送付する場所を確認する郵便業者について話した事を覚えていますか？ `urls.py`ファイルには、`urlresolver`で使用されるパターンのリストが含まれています。
 
-<p>私たちはそれらを変更しないので、今は他のファイルを無視しましょう。 覚えておくべき唯一の事は、間違えてそれらを削除しないことです！</p>
+私たちはそれらを変更しないので、今は他のファイルを無視しましょう。 覚えておくべき唯一の事は、間違えてそれらを削除しないことです！
 
-<h2>設定変更</h2>
+## 設定変更
 
-<p><code> mysite / settings.py </ code>にいくつか変更を加えましょう。 前にインストールしたコードエディタを使用してファイルを開きます。</p>
+`mysite/settings.py`にいくつか変更を加えましょう。 前にインストールしたコードエディタを使用してファイルを開きます。
 
-<p><strong>注</ strong>：<code> settings.py </ code>は他のものと同じように通常のファイルであることに注意してください。 "file - > open"メニューアクションを使用して、コードエディタ内から開くことができます。 これにより、<code> settings.py </ code>ファイルに移動して選択できる通常のウィンドウが表示されます。 あるいは、デスクトップのdjangogirlsフォルダに移動して右クリックしてファイルを開くこともできます。 次に、リストからコードエディタを選択します。 エディタの選択は、ファイルを開くことができる他のプログラムがインストールされている可能性がありますが、編集することはできません。</p>
+**注**：`settings.py`は他のものと同じように通常のファイルであることに注意してください。 "file - > open"メニューアクションを使用して、コードエディタ内から開くことができます。 これにより、`settings.py`ファイルに移動して選択できる通常のウィンドウが表示されます。 あるいは、デスクトップのdjangogirlsフォルダに移動して右クリックしてファイルを開くこともできます。 次に、リストからコードエディタを選択します。 エディタの選択は、ファイルを開くことができる他のプログラムがインストールされている可能性がありますが、編集することはできません。
 
-<p>作成するブログサイトに、正しい時間を設定する必要があります。 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> Wikipediaのタイムゾーンのリスト</a>に移動して、関連するタイムゾーン（TZ）をコピーします（例：<code> Europe / Berlin < コード>）。</p>
+作成するブログサイトに、正しい時間を設定する必要があります。 [ Wikipediaのタイムゾーンのリスト](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones)に移動して、関連するタイムゾーン（TZ）をコピーします（例：` Europe / Berlin < コード>）。</p>
 
-<p><code>settings.py` の中から `TIME_ZONE` と書かれた行を探してください。この行はタイムゾーンを表しているので、自分が住んでいるタイムゾーンに合わせて修正しましょう。たとえば、次のように書きます。</p> 
-> 
-> {% filename %}mysite/settings.py{% endfilename %}
-> 
-> ```python
+<p><code>settings.py` の中から `TIME_ZONE` と書かれた行を探してください。この行はタイムゾーンを表しているので、自分が住んでいるタイムゾーンに合わせて修正しましょう。たとえば、次のように書きます。
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
 TIME_ZONE = 'Asia/Tokyo'
 ```
 
-言語コードは、あなたの利用する言語を設定する必要があります。 英語の場合は` en </ code>、ドイツ語の場合は<code> de </ code>、国コードの場合は<code> de </ code> <code> de </ code>はドイツ、<code> ch </ code>はスイスです。 英語があなたの母国語でない場合、これを追加してDjangoのデフォルトのボタンや通知をあなたの言語に変更することができます。 ここで定義した言語に「キャンセル」ボタンが翻訳されます。 <a href="https://docs.djangoproject.com/ja/1.11/ref/settings/#language-code"> Djangoには多くの言語が付属しています</a>。</p>
+言語コードは、あなたの利用する言語を設定する必要があります。 英語の場合は`en`、ドイツ語の場合は`de`、国コードの場合は`de` `de`はドイツ、<0>ch</0>はスイスです。 英語があなたの母国語でない場合、これを追加してDjangoのデフォルトのボタンや通知をあなたの言語に変更することができます。 ここで定義した言語に「キャンセル」ボタンが翻訳されます。 [ Djangoには多くの言語が付属しています](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code)。
 
-<p>別の言語を使用する場合は、次の行を変更して言語コードを変更します。</p>
+別の言語を使用する場合は、次の行を変更して言語コードを変更します。
 
-<p>{% filename %}mysite/settings.py{% endfilename %}</p>
+{% filename %}mysite/settings.py{% endfilename %}
 
-<pre><code class="python">LANGUAGE_CODE = 'ja'
-`</pre> 
+```python
+LANGUAGE_CODE = 'ja'
+```
 
-静的ファイルのパスも追加する必要があります。 （スタティックファイルとCSSについては、後ほどチュートリアルで説明します）。ファイルの* 一番下 </ em>に移動し、` STATIC_URL </ code>の下に <code> STATIC_ROOT </ code>を追加します。：</p>
+静的ファイルのパスも追加する必要があります。 （スタティックファイルとCSSについては、後ほどチュートリアルで説明します）。ファイルの* 一番下 *に移動し、`STATIC_URL`の下に `STATIC_ROOT`を追加します。：
 
-<p>{% filename %}mysite/settings.py{% endfilename %}</p>
+{% filename %}mysite/settings.py{% endfilename %}
 
-<pre><code class="python">STATIC_URL = '/static/'
+```python
+STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
-`</pre> 
+```
 
 `DEBUG` が `True` に設定されていて、`ALLOWED_HOSTS` が空のリストの時は、自動的に `['localhost', '127.0.0.1', '[::1]']` という3つのホストに対してチェックが行われます。 このままの設定では、これから私たちがデプロイして使う PythonAnywhere のホストネームが含まれていません。ですから、次のように設定を変更します。
 
@@ -126,39 +127,39 @@ DATABASES = {
 }
 ```
 
-ブログのデータベースを作成するには、コンソールで次のコードを実行してみましょう： ` python manage.py migrate </ code>（<code> djangogirls </ code> manage.py </ code>ファイル）。 うまくいったら次のように表示されるでしょう：</p>
+ブログのデータベースを作成するには、コンソールで次のコードを実行してみましょう： `python manage.py migrate`（`djangogirls` `manage.py`ファイル）。 うまくいったら次のように表示されるでしょう：
 
-<p>{% filename %}command-line{% endfilename %}</p>
+{% filename %}command-line{% endfilename %}
 
-<pre><code>(myvenv) ~/djangogirls$ python manage.py migrate
-Operations to perform:
-  Apply all migrations: auth, admin, contenttypes, sessions
-Running migrations:
-  Rendering model states... DONE
-  Applying contenttypes.0001_initial... OK
-  Applying auth.0001_initial... OK
-  Applying admin.0001_initial... OK
-  Applying admin.0002_logentry_remove_auto_add... OK
-  Applying contenttypes.0002_remove_content_type_name... OK
-  Applying auth.0002_alter_permission_name_max_length... OK
-  Applying auth.0003_alter_user_email_max_length... OK
-  Applying auth.0004_alter_user_username_opts... OK
-  Applying auth.0005_alter_user_last_login_null... OK
-  Applying auth.0006_require_contenttypes_0002... OK
-  Applying auth.0007_alter_validators_add_error_messages... OK
-  Applying sessions.0001_initial... OK
-`</pre> 
+    (myvenv) ~/djangogirls$ python manage.py migrate
+    Operations to perform:
+      Apply all migrations: auth, admin, contenttypes, sessions
+    Running migrations:
+      Rendering model states... DONE
+      Applying contenttypes.0001_initial... OK
+      Applying auth.0001_initial... OK
+      Applying admin.0001_initial... OK
+      Applying admin.0002_logentry_remove_auto_add... OK
+      Applying contenttypes.0002_remove_content_type_name... OK
+      Applying auth.0002_alter_permission_name_max_length... OK
+      Applying auth.0003_alter_user_email_max_length... OK
+      Applying auth.0004_alter_user_username_opts... OK
+      Applying auth.0005_alter_user_last_login_null... OK
+      Applying auth.0006_require_contenttypes_0002... OK
+      Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying sessions.0001_initial... OK
+    
 
 終わったら、 Webサーバーを起動し、当社のWebサイトが動作しているかどうかを確認する時間です。
 
 ## ウェブサーバを起動する
 
-コマンドラインやコマンドプロンプトで` manage.py </ code>ファイル（<code> djangogirls </ code>ディレクトリ）を含むディレクトリに移動している必要があります。 <code> python manage.py runserver </ code>を実行してWebサーバーを起動できます。</p>
+コマンドラインやコマンドプロンプトで`manage.py`ファイル（`djangogirls`ディレクトリ）を含むディレクトリに移動している必要があります。 `python manage.py runserver`を実行してWebサーバーを起動できます。
 
-<p>{% filename %}command-line{% endfilename %}</p>
+{% filename %}command-line{% endfilename %}
 
-<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver
-`</pre> 
+    (myvenv) ~/djangogirls$ python manage.py runserver
+    
 
 Chromebookを使用している場合は、代わりに次のコマンドを使用します。
 
@@ -167,12 +168,12 @@ Chromebookを使用している場合は、代わりに次のコマンドを使�
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-Windows上で、` UnicodeDecodeError </ code>で失敗した場合は、代わりに次のコマンドを使用します。</p>
+Windows上で、`UnicodeDecodeError`で失敗した場合は、代わりに次のコマンドを使用します。
 
-<p>{% filename %}command-line{% endfilename %}</p>
+{% filename %}command-line{% endfilename %}
 
-<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
-`</pre> 
+    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+    
 
 これであなたのウェブサイトが稼働していることを確認するだけです。 ブラウザ（Firefox、Chrome、Safari、Internet Explorerなど）を開き、次のアドレスを入力します。
 

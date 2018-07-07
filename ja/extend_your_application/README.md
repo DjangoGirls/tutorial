@@ -38,49 +38,47 @@
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}` {％url 'post_detail' pk = post.pk％}`を説明します。 ` {％％} </ code>という表記は、Djangoのテンプレートタグを使用していることを意味しています。 次にURLを作成するものを使用します！</p>
+{% raw %}` {％url 'post_detail' pk = post.pk％}`を説明します。 `{% %}`という表記は、Djangoのテンプレートタグを使用していることを意味しています。 次にURLを作成するものを使用します！
 
-<p><code> post_detail </ code>の部分は、Djangoが<code> blog / urls.py </ code>にname = post_detailのURLを指定していることを意味します</p>
+`post_detail`の部分は、Djangoが`blog/urls.py`にname = post_detailのURLを指定していることを意味します
 
-<p>pk = post.pkの部分は、 pkは主キーの略で、データベースの各レコードの一意の名前です。 Postモデルでプライマリキーを指定しなかったので、Djangoは私たちのために1つのキーを作成します（デフォルトでは、レコードごとに1、2、3と数字が増えます）。 私たちの記事はPostオブジェクトの他のフィールド（タイトル、作者など）にアクセスするのと同じ方法で、post.pkを書くことによって主キーにアクセスします！</p>
+pk = post.pkの部分は、 pkは主キーの略で、データベースの各レコードの一意の名前です。 Postモデルでプライマリキーを指定しなかったので、Djangoは私たちのために1つのキーを作成します（デフォルトでは、レコードごとに1、2、3と数字が増えます）。 私たちの記事はPostオブジェクトの他のフィールド（タイトル、作者など）にアクセスするのと同じ方法で、post.pkを書くことによって主キーにアクセスします！
 
-<p>さて、私たちがhttp://127.0.0.1:8000/に行くと、（<code> post_detail </ code>のURLまたは<em> view </ em>をまだ持っていないので、 >）。 それは次のようになります：</p>
+さて、私たちがhttp://127.0.0.1:8000/に行くと、（`post_detail`のURLまたは*view*をまだ持っていないので、 >）。 それは次のようになります：
 
-<p><img src="images/no_reverse_match2.png" alt="NoReverseMatch error" /></p>
+![NoReverseMatch error](images/no_reverse_match2.png)
 
-<h2>投稿の詳細へのURLを作成する</h2>
+## 投稿の詳細へのURLを作成する
 
-<p><code> post_detail </ code> <em>ビュー</ em>用に<code> urls.py </ code>にURLを作成しましょう！</p>
+`post_detail` *ビュー*用に`urls.py`にURLを作成しましょう！
 
-<p>最初の投稿の詳細がこの<strong> URL </ strong>に表示されるようにします：http://127.0.0.1:8000/post/1/</p>
+最初の投稿の詳細がこの**URL**に表示されるようにします：http://127.0.0.1:8000/post/1/
 
-<p>Djangoが<code> post_detail </ code>という名前の<em>表示</ em>を指すように<code> blog / urls.py </ code>ファイルにURLを作ってください。 <code> blog / urlsに<code> url（r '^ post /（？P＆lt; pk＆gt; \ d +）/ $'、views.post_detail、name = 'post_detail'）、</ code>行を追加します。 py </ code>ファイルにコピーします。 ファイルは次のようになるでしょう。</p>
+Djangoが`post_detail`という名前の*表示*を指すように`blog/urls.py`ファイルにURLを作ってください。 `blog/urls.py``url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail',`行を追加します。 にファイルにコピーします。 ファイルは次のようになるでしょう。
 
-<p>{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}</p>
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
-<pre><code class="python">from django.conf.urls import url
+```python
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
 ]
-`</pre> 
+```
 
-この部分` ^ post /（？P <pk> \ d +）/ $ </ code>は難しく見えますが、心配する必要はありません。</p>
+この部分`^post/(？P<pk>\d)/$`は難しく見えますが、心配する必要はありません。
 
-<ul>
-<li><code> ^ </ code>は「文字列の開始」を意味します。</li>
-<li><code> post / </ code>というのは、最初の後に<strong>post</ strong>と<strong> / </ strong>という単語が含まれることを意味します。 ここまでは順調ですね。</li>
-<li><code>(?P<pk>\d+)` -この部分はトリッキーです。 これは、Djangoがあなたがここに置いたすべてを、` pk </ code>という変数としてビューに転送することを意味します。 （これは<code> blog / templates / blog / post_list.html </ code>でプライマリキー変数に与えた名前と一致します）！<code> \ d </ code> 数字で、文字ではありません（0と9の間のすべてです）。 
-<code> + </ code>は、そこに1つ以上の数字が必要であることを意味します。 したがって、<code> http://127.0.0.1:8000/post// </ code>のようなものは無効ですが、<code> http://127.0.0.1:8000/post/1234567890/ </ code>は 完全にOK！</li>
-<li>
-<code> / </ code>  - もう一度<strong> / </ strong>を入力する必要があります。</li>
-<li><code>$` -「終わり」!を意味します。</li> </ul> 
+- `^`は「文字列の開始」を意味します。
+- `post/`というのは、最初の後に**post**と**/**という単語が含まれることを意味します。 ここまでは順調ですね。
+- `(?P<pk>\d+)` -この部分はトリッキーです。 これは、Djangoがあなたがここに置いたすべてを、`pk`という変数としてビューに転送することを意味します。 （これは`blog/templates/blog/post_list.html`でプライマリキー変数に与えた名前と一致します）！`\d` 数字で、文字ではありません（0と9の間のすべてです）。 `+`は、そこに1つ以上の数字が必要であることを意味します。 したがって、`http://127.0.0.1:8000/post//`のようなものは無効ですが、`http://127.0.0.1:8000/post/1234567890/`は 完全にOK！
+- `/` - もう一度**/**を入力する必要があります。
+- `$` -「終わり」!を意味します。
 
-つまり、ブラウザに` http://127.0.0.1:8000/post/5/ </ code>を入力すると、Djangoは<em>view</ em>を探していると理解します。<code> post_detail </ code>に移動し、<code> pk </ code>が<code> 5 </ code>と同じ情報をその<em>view</ em>に転送します。</p>
+つまり、ブラウザに`http://127.0.0.1:8000/post/5/`を入力すると、Djangoは*view*を探していると理解します。`post_detail`に移動し、`pk`が`5`と同じ情報をその*view*に転送します。
 
-<p>[Ok] を我々 は <code>blog/urls.py` に新しい URL パターンを追加しました! ページを更新しましょう：http://127.0.0.1:8000/ Boom！ サーバーが再び実行を停止しました。 コンソールを見てください - 予想通り、もう一つのエラーがあります！
+[Ok] を我々 は `blog/urls.py` に新しい URL パターンを追加しました! ページを更新しましょう：http://127.0.0.1:8000/ Boom！ サーバーが再び実行を停止しました。 コンソールを見てください - 予想通り、もう一つのエラーがあります！
 
 ![AttributeError](images/attribute_error2.png)
 
@@ -88,37 +86,39 @@ urlpatterns = [
 
 ## 投稿の詳細ビューを追加する
 
-今回は* view </ em>に追加のパラメータ` pk </ code>が与えられます。 私たちの<em>view</ em>はそれを捕らえる必要がありますか？ そこで関数を<code> def post_detail（request、pk）：</ code>として定義します。 urls（<code> pk </ code>）で指定した名前とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略すると、エラーが発生します。</p>
+今回は*view*に追加のパラメータ`pk`が与えられます。 私たちの*view*はそれを捕らえる必要がありますか？ そこで関数を`def post_detail(request、pk):`として定義します。 urls（`pk`）で指定した名前とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略すると、エラーが発生します。
 
-<p>今、私たちは1つだけのブログ投稿を取得したいと考えています。 これを行うには、次のようにクエリーセットを使用できます。</p>
+今、私たちは1つだけのブログ投稿を取得したいと考えています。 これを行うには、次のようにクエリーセットを使用できます。
 
-<p>{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}</p>
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
-<pre><code class="python">Post.objects.get(pk=pk)
-`</pre> 
+```python
+Post.objects.get(pk=pk)
+```
 
-しかし、このコードには問題があります。 与えられた`主キー</ code>（<code> pk </ code>）で<code> Post </ code>が存在しない場合、非常に醜いエラーが発生します。</p>
+しかし、このコードには問題があります。 与えられた`主キー`（`pk`）で`Post`が存在しない場合、非常に醜いエラーが発生します。
 
-<p><img src="images/does_not_exist2.png" alt="DoesNotExist error" /></p>
+![DoesNotExist error](images/does_not_exist2.png)
 
-<p>私たちはそれを望んでいません！ しかしもちろん、Djangoには、それを処理するものがあります：<code> get_object_or_404 </ code>。 与えられた<code> pk </ code>に<code> Post </ code>がない場合、<code> Page Not Found 404 </ code>のページが表示されます。</p>
+私たちはそれを望んでいません！ しかしもちろん、Djangoには、それを処理するものがあります：`get_object_or_404`。 与えられた`pk`に`Post`がない場合、`Page Not Found 404`のページが表示されます。
 
-<p><img src="images/404_2.png" alt="Page not found" /></p>
+![Page not found](images/404_2.png)
 
-<p>自分用の<code>Page not found</ code>ページを作成することもできます。 しかし、それは現在非常に重要ではないので、私たちはそれをスキップします。</p>
+自分用の`Page not found`ページを作成することもできます。 しかし、それは現在非常に重要ではないので、私たちはそれをスキップします。
 
-<p><code> views.py </ code>ファイルに<em>view</ em>を追加してください。</p>
+`views.py`ファイルに*view*を追加してください。
 
-<p><code> blog / urls.py </ code>では<code> views.post_detail </ code>というビューを参照する<code> post_detail </ code>という名前のURLルールを作成しました。 これは、Djangoが<code> blog / views.py </ code>内の<code> post_detail </ code>というビュー機能を使うことを意味します。</p>
+`blog/urls.py`では`views.post_detail`というビューを参照する`post_detail`という名前のURLルールを作成しました。 これは、Djangoが`blog/views.py`内の`post_detail`というビュー機能を使うことを意味します。
 
-<p><code> blog / views.py </ code>を開き、他の<code>from</ code>行の近くに次のコードを追加する必要があります。</p>
+`blog/views.py`を開き、他の`from`行の近くに次のコードを追加する必要があります。
 
-<p>{% filename %}blog/views.py{% endfilename %}</p>
+{% filename %}blog/views.py{% endfilename %}
 
-<pre><code class="python">from django.shortcuts import render, get_object_or_404
-`</pre> 
+```python
+from django.shortcuts import render, get_object_or_404
+```
 
-ファイルの最後に*view</ em>を追加します：</p> 
+ファイルの最後に*view*を追加します：
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -140,13 +140,14 @@ def post_detail(request, pk):
 
 ## 投稿の詳細へのテンプレートリンクを作成する
 
-` blog / templates / blog </ code>に<code> post_detail.html </ code>というファイルを作成します。</p>
+`blog/templates/blog`に`post_detail.html`というファイルを作成します。
 
-<p>こんな感じですね。</p>
+こんな感じですね。
 
-<p>{% filename %}blog/templates/blog/post_detail.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
-<pre><code class="html">{% extends 'blog/base.html' %}
+```html
+{% extends 'blog/base.html' %}
 
 {% block content %}
     <div class="post">
@@ -159,32 +160,32 @@ def post_detail(request, pk):
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
-`</pre> 
+```
 
-もう一度` base.html </ code>を拡張します。 <code> content </ code>ブロックでは、投稿のpublished_date（存在する場合）、タイトル、およびテキストを表示します。 しかし、私たちはいくつかの重要なことについて議論すべきですよね？</p>
+もう一度`base.html`を拡張します。 `content`ブロックでは、投稿のpublished_date（存在する場合）、タイトル、およびテキストを表示します。 しかし、私たちはいくつかの重要なことについて議論すべきですよね？
 
-<p>{% raw %}<code>{% if ... %} ...  {％endif％}は、何かをチェックしたいときに使用できるテンプレートタグです。 (<code>if ... else... Introduction to Pythonのチャプターでやってこを覚えていますか？）このシナリオでは我々はポストの<code>published_date`が空ではないかどうかを確認します。{% endraw %}
+{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else...` Introduction to Pythonのチャプターでやってこを覚えていますか？）このシナリオでは我々はポストの`published_date`が空ではないかどうかを確認します。{% endraw %}
 
-これで、` TemplateDoesNotExist </ code>がなくなったかどうか確認してページを更新できます。</p>
+これで、`TemplateDoesNotExist`がなくなったかどうか確認してページを更新できます。
 
-<p><img src="images/post_detail2.png" alt="Post detail page" /></p>
+![Post detail page](images/post_detail2.png)
 
-<p>イェーイ！うまくできていますね！</p>
+イェーイ！うまくできていますね！
 
-<h1>Deploy time!</h1>
+# Deploy time!
 
-<p>あなたのウェブサイトがまだPythonAnywhere上で動作するかどうかを確認してみましょう。</p>
+あなたのウェブサイトがまだPythonAnywhere上で動作するかどうかを確認してみましょう。
 
-<p>{% filename %}command-line{% endfilename %}</p>
+{% filename %}command-line{% endfilename %}
 
-<pre><code>$ git status
-$ git add --all .
-$ git status
-$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
-$ git push
-`</pre> 
+    $ git status
+    $ git add --all .
+    $ git status
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+    $ git push
+    
 
-それから、[ PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)で：
+それから、[PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)で：
 
 {% filename %}command-line{% endfilename %}
 
@@ -197,19 +198,19 @@ $ git push
 
 ## サーバー上の静的ファイルの更新
 
-PythonAnywhereのようなサーバは、（CSSファイルのような）「静的ファイル」をPythonファイルとは違って扱うのが好きです。なぜなら、それらが高速に読み込まれるように最適化できるからです。 その結果、CSSファイルを変更するたびに、サーバー上で追加のコマンドを実行して、更新するように指示する必要があります。 コマンドは` collectstatic </ code>です。</p>
+PythonAnywhereのようなサーバは、（CSSファイルのような）「静的ファイル」をPythonファイルとは違って扱うのが好きです。なぜなら、それらが高速に読み込まれるように最適化できるからです。 その結果、CSSファイルを変更するたびに、サーバー上で追加のコマンドを実行して、更新するように指示する必要があります。 コマンドは`collectstatic`です。
 
-<p>あなたが使用している<code> source myenv / bin / activate </ code>コマンドと同じです（PythonAnywhereはこれを行うために<code> workon </ code>というコマンドを使用します） あなた自身のコンピュータで）：</p>
+あなたが使用している`source myenv/bin/activate`コマンドと同じです（PythonAnywhereはこれを行うために`workon`というコマンドを使用します） あなた自身のコンピュータで）：
 
-<p>{% filename %}command-line{% endfilename %}</p>
+{% filename %}command-line{% endfilename %}
 
-<pre><code>$ workon <your-pythonanywhere-username>.pythonanywhere.com
-(ola.pythonanywhere.com)$ python manage.py collectstatic
-[...]
-`</pre> 
+    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    (ola.pythonanywhere.com)$ python manage.py collectstatic
+    [...]
+    
 
- manage.py collectstatic </ code>コマンドは、<code> manage.py migrate </ code>のようなものです。  私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を適用するよう指示します。</p>
+`manage.py collectstatic`コマンドは、`manage.py migrate`のようなものです。 私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を適用するよう指示します。
 
-<p>いずれにしても、<a href="https://www.pythonanywhere.com/web_app_setup/"> Webタブ</a>にアクセスして、<strong> Reload </ strong>を押す準備が整いました。</p>
+いずれにしても、[Webタブ](https://www.pythonanywhere.com/web_app_setup/)にアクセスして、**Reload**を押す準備が整いました。
 
-<p>そしてdeployします! おめでとうございます :)</p>
+そしてdeployします! おめでとうございます :)
