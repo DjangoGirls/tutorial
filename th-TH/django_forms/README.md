@@ -259,13 +259,13 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-มาดูกันว่าทำงานถูกต้องไหม Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+มาดูกันว่าทำงานถูกต้องไหม ไปยังหน้า http://127.0.0.1:8000/post/new/ เพิ่ม `title` และ `text` บันทึกมันซะ แล้วก็ทาด้าาาา! โพสต์ใหม่ได้ถูกเพิ่มเข้าไป และเราจะถูกพาไปยังหน้า `post_detail`!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+คุณอาจจะสังเกตว่า เรามีการกำหนดวันที่เผยแพร่ก่อนที่จะบันทึกโพสต์ แต่หลังจากนี้เราจะทำปุ่ม *publish* ในบท **Django Girls Tutorial: Extensions**.
 
 เจ๋งไปเลย!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. ตรงนี้จะแก้ไขปัญหาได้ชั่วคราว ซึ่งการแก้ปัญหานี้แบบถาวร รอคุณอยู่ในบท **การบ้าน: เพิ่มความปลอดภัยให้เว็บคุณ!** หลังจากจบบทเรียนหลักนี้แล้ว
+> อย่างที่เราได้เคยใช้ใน Django admin อินเตอร์เฟส ตอนนี้ระบบคิดว่าเรายังล็อกอินอยู่ มีสถานการณ์บางอย่างที่อาจทำให้เราถูกล็อกเอ้าท์ออกจากระบบ (ปิดเบราว์เซอร์ รีสตาร์ทฐานข้อมูล ฯลฯ) ถ้าคุณพบข้อผิดพลาดหลังจากสร้างโพสต์ใหม่เพราะคุณยังไม่ได้เข้าสู่ระบบ ให้ไปยังหน้า admin http://127.0.0.1:8000/admin เพื่อเข้าสู่ระบบอีกครั้ง ตรงนี้จะแก้ไขปัญหาได้ชั่วคราว ซึ่งการแก้ปัญหานี้แบบถาวร รอคุณอยู่ในบท **การบ้าน: เพิ่มความปลอดภัยให้เว็บคุณ!** หลังจากจบบทเรียนหลักนี้แล้ว
 
 ![เข้าระบบผิดพลาด](images/post_create_error.png)
 
@@ -273,7 +273,7 @@ You might have noticed that we are setting the publish date before saving the po
 
 ตอนนี้ เราจะแสดงให้คุณได้เห็นถึงความเจ๋งของฟอร์ม Django บล็อกโพสต์ของเราต้องการข้อมูล `title` และ `text` In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+ลองบันทึกฟอร์มโดยที่ไม่ใส่ข้อมูลใน `title` และ `text` คุณลองเดาซิว่าจะเกิดไรขึ้น!
 
 ![Form validation](images/form_validation2.png)
 
