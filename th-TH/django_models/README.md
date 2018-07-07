@@ -152,26 +152,26 @@ class Post(models.Model):
 - `Post` เป็นชื่อโมเดลของเรา ซึ่งสามรถตั้งเป็นชื่ออื่นได้ (แต่เราต้องหลีกเลี่ยงการใช้อักขระพิเศษ และ การเคาะเว้นช่องว่าง) ชื่อ class จะต้องขึ้นต้นด้วยตัวอักษรตัวใหญ่เสมอ
 - `models.Model` บอกเราว่า Post คือ Django Model ดังนั้น Django รู้ว่ามันควรถูกบันทึงลงในฐานข้อมูล
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? ตัวเลข? วันที่? A relation to another object, like a User?)
 
 - `models.CharField` – this is how you define text with a limited number of characters.
 - `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
 - `models.DateTimeField` – this is a date and time.
 - `models.ForeignKey` – this is a link to another model.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+เราจะไม่อธิบายทุกส่วนของโค้ดทั้งหมดในที่นี้ เนื่องจากจะใช้เวลานานเกินไป You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+แล้วส่วนนี้ `def publish(self):` คืออะไร? นี่คือเมธอด `publish` ที่เราเคยบอกไปก่อนหน้านี้ไง `def` คือ ฟังก์ชั่น/เมธอด และ `publish` คือชื่อของ method คุณสามารถเปลี่ยนชื่อ method ของคุณได้ ถ้าคุณต้องการ การตั้งชื่อจะมีกฎคือ เราจะใช้ตัวพิมพ์เล็กและใช้ขีดล่าง (_) แทนช่องว่าง เช่น เรามี method สำหรับคำนวณราคาเฉลี่ย เราจะตั้งชื่อว่า `calculate_average_price`
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Method ส่วนใหญ่มักจะ `return` บางอย่างออกมา There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+ถ้ายังมีข้อสงสัยเกี่ยวกับโมเดล อย่าลังเลที่จะถามโค้ชของคุณนะ! เรารู้ว่ามันซับซ้อน โดยเฉพาะเมื่อคุณได้เรียนรู้ทั้ง วัตถุและฟังก์ชั่น ในเวลาเดียวกัน But hopefully it looks slightly less magic for you now!
 
 ### สร้างตารางสำหรับโมเดลในฐานข้อมูลของคุณ
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+ขั้นตอนสุดท้ายนี้คือ การเพิ่มโมเดลลงในฐานข้อมูลของเรา ก่อนอื่นเราต้องบอกให้ Django รู้ว่าเรามีการเปลี่ยนแปลงในโมเดลของเรา (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. หน้าตาก็จะประมาณนี้:
 
 {% filename %}command-line{% endfilename %}
 
