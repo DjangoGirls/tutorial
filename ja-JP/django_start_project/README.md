@@ -1,4 +1,4 @@
-# あなたの最初のDjangoプロジェクト！
+# プロジェクトを作成しよう！
 
 > このチャプターの一部はGeek Girls Carrotsのチュートリアルをもとにしています。(https://github.com/ggcarrots/django-carrots)
 > 
