@@ -40,7 +40,7 @@ class PostForm(forms.ModelForm):
 
 และนั่นแหละ! สิ้งที่เราต้องทำทั้งหมดในตอนนี้คือใช้ฟอร์มข้างใน *view* และโชว์มันในเทมเพลต
 
-So once again we will create a link to the page, a URL, a view and a template.
+และเป็นอีกครั้งที่เราจะสร้างลิงค์ไปยังหน้าเพจ, URL, view และ เทมแพลต
 
 ## ลิงค์ไปยังหน้าเว็บด้วยฟอร์ม
 
@@ -54,7 +54,7 @@ So once again we will create a link to the page, a URL, a view and a template.
 
 Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
 
-After adding the line, your HTML file should now look like this:
+หลังจากเพิ่มบรรทัดนี้ ไฟล์ html ของคุณจะมีหน้าตาแบบนี้:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -142,8 +142,8 @@ def post_new(request):
 
 * We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. ซึ่งส่วนี้สำคัญมาก เพราะมันทำให้ฟอร์มของคุณปลอดภัยขึ้น! If you forget about this bit, Django will complain when you try to save the form:
+* เราจำเป็นต้องมีปุ่ม `Save` เราสามารถทำได้โดยใช้ HTML button: `<button type="submit">Save</button>`
+* และสุดท้าย หลังจากเปิด tag `<form ...>` เราต้องเพิ่ม `{% raw %}{% csrf_token %}{% endraw %}` ซึ่งส่วนี้สำคัญมาก เพราะมันทำให้ฟอร์มของคุณปลอดภัยขึ้น! If you forget about this bit, Django will complain when you try to save the form:
 
 ![หน้า CSFR Forbidden](images/csrf2.png)
 
@@ -374,7 +374,7 @@ form = PostForm(instance=post)
 
 ## ความปลอดภัย
 
-การสร้างโพสต์ใหม่โดยแค่คลิกที่ลิงค์นั้น มันสุดยอดมาก! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+การสร้างโพสต์ใหม่โดยแค่คลิกที่ลิงค์นั้น มันสุดยอดมาก! แต่ตอนนี้ ใครก็ตามที่เข้ามายังหน้าเว็บของคุณจะสามารถเพิ่มโพสต์ใหม่ได้ และนั่นคงจะไม่ใช่สิ่งที่คุณต้องการ งั้นเรามาทำให้ปุ่มนี้มันแสดงให้เฉพาะเราที่เห็นมันได้เท่านั้น
 
 ในไฟล์ `blog/templates/blog/base.html` ตรงส่วน `page-header` `div` ควรมีหน้าตาแบบนี้:
 
