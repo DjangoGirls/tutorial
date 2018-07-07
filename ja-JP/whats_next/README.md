@@ -1,10 +1,10 @@
 # What's next?
 
-おめでとう!**! <3</p> 
+おめでとうございます。**素晴らしいです。**よくやりました！ <3
 
-### あなたは今何をすべきですか？
+### What to do now?
 
-Take a break and relax. You have just done something really huge.
+休憩してリラックスしてください。 あなたは本当に大きなことを成し遂げました。
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
