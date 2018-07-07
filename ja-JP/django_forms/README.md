@@ -384,7 +384,7 @@ Djangoのフォームについての詳細を知りたい場合、Django Project
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-これに` {％if％} </ code>タグを追加すると、管理者にログインしているユーザーのみにリンクを表示します。 今は、あなただけです！ これで、<code><button>` タグは以下のようになります：
+これに`{% if %}`タグを追加すると、管理者にログインしているユーザーのみにリンクを表示します。 今は、あなただけです！ これで、`<button>` タグは以下のようになります：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
