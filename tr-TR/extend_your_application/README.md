@@ -2,13 +2,13 @@
 
 # Uygulamanı genişlet
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+Websitemizi oluşturmak için gerekli adımların hepsini tamamladık: bir modelin, url'nin, view'ün ve template'in nasıl yazılacağını biliyoruz. Websitemizi nasıl güzelleştirebiliriz onu da biliyoruz.
 
-Time to practice!
+Pratik zamanı!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+Blog'umuzda lazım olan ilk şey bir gönderiyi göstermek için bir sayfa, değil mi?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir şey eklememize gerek yok.
 
 ## Bir gönderinin detayı için bir şablon linki oluşturun
 
