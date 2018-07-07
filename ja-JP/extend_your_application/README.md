@@ -99,24 +99,25 @@ Post.objects.get(pk=pk)
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-私たちはそれを望んでいません！ しかしもちろん、Djangoには、それを処理するものがあります：`get_object_or_404`。 与えられた` pk </ code>に<code> Post </ code>がない場合、<code> Page Not Found 404 </ code>のページが表示されます。</p>
+私たちはそれを望んでいません！ しかしもちろん、Djangoには、それを処理するものがあります：`get_object_or_404`。 与えられた`pk`に`Post`がない場合、`Page Not Found 404`のページが表示されます。
 
-<p><img src="images/404_2.png" alt="Page not found" /></p>
+![Page not found](images/404_2.png)
 
-<p>自分用の<code>Page not found</ code>ページを作成することもできます。 しかし、それは現在非常に重要ではないので、私たちはそれをスキップします。</p>
+自分用の`Page not found`ページを作成することもできます。 しかし、それは現在非常に重要ではないので、私たちはそれをスキップします。
 
-<p><code> views.py </ code>ファイルに<em>view</ em>を追加してください。</p>
+`views.py`ファイルに*view*を追加してください。
 
-<p><code> blog / urls.py </ code>では<code> views.post_detail </ code>というビューを参照する<code> post_detail </ code>という名前のURLルールを作成しました。 これは、Djangoが<code> blog / views.py </ code>内の<code> post_detail </ code>というビュー機能を使うことを意味します。</p>
+`blog/urls.py`では`views.post_detail`というビューを参照する`post_detail`という名前のURLルールを作成しました。 これは、Djangoが`blog/views.py`内の`post_detail`というビュー機能を使うことを意味します。
 
-<p><code> blog / views.py </ code>を開き、他の<code>from</ code>行の近くに次のコードを追加する必要があります。</p>
+`blog/views.py`を開き、他の`from`行の近くに次のコードを追加する必要があります。
 
-<p>{% filename %}blog/views.py{% endfilename %}</p>
+{% filename %}blog/views.py{% endfilename %}
 
-<pre><code class="python">from django.shortcuts import render, get_object_or_404
-`</pre> 
+```python
+from django.shortcuts import render, get_object_or_404
+```
 
-ファイルの最後に*view</ em>を追加します：</p> 
+ファイルの最後に*view*を追加します：
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,13 +139,14 @@ def post_detail(request, pk):
 
 ## 投稿の詳細へのテンプレートリンクを作成する
 
-` blog / templates / blog </ code>に<code> post_detail.html </ code>というファイルを作成します。</p>
+`blog/templates/blog`に`post_detail.html`というファイルを作成します。
 
-<p>こんな感じですね。</p>
+こんな感じですね。
 
-<p>{% filename %}blog/templates/blog/post_detail.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
-<pre><code class="html">{% extends 'blog/base.html' %}
+```html
+{% extends 'blog/base.html' %}
 
 {% block content %}
     <div class="post">
@@ -157,32 +159,32 @@ def post_detail(request, pk):
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
-`</pre> 
+```
 
-もう一度` base.html </ code>を拡張します。 <code> content </ code>ブロックでは、投稿のpublished_date（存在する場合）、タイトル、およびテキストを表示します。 しかし、私たちはいくつかの重要なことについて議論すべきですよね？</p>
+もう一度`base.html`を拡張します。 `content`ブロックでは、投稿のpublished_date（存在する場合）、タイトル、およびテキストを表示します。 しかし、私たちはいくつかの重要なことについて議論すべきですよね？
 
-<p>{% raw %}<code>{% if ... %} ...  {％endif％}は、何かをチェックしたいときに使用できるテンプレートタグです。 (<code>if ... else... Introduction to Pythonのチャプターでやってこを覚えていますか？）このシナリオでは我々はポストの<code>published_date`が空ではないかどうかを確認します。{% endraw %}
+{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else...` Introduction to Pythonのチャプターでやってこを覚えていますか？）このシナリオでは我々はポストの`published_date`が空ではないかどうかを確認します。{% endraw %}
 
-これで、` TemplateDoesNotExist </ code>がなくなったかどうか確認してページを更新できます。</p>
+これで、`TemplateDoesNotExist`がなくなったかどうか確認してページを更新できます。
 
-<p><img src="images/post_detail2.png" alt="Post detail page" /></p>
+![Post detail page](images/post_detail2.png)
 
-<p>イェーイ！うまくできていますね！</p>
+イェーイ！うまくできていますね！
 
-<h1>Deploy time!</h1>
+# Deploy time!
 
-<p>あなたのウェブサイトがまだPythonAnywhere上で動作するかどうかを確認してみましょう。</p>
+あなたのウェブサイトがまだPythonAnywhere上で動作するかどうかを確認してみましょう。
 
-<p>{% filename %}command-line{% endfilename %}</p>
+{% filename %}command-line{% endfilename %}
 
-<pre><code>$ git status
-$ git add --all .
-$ git status
-$ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
-$ git push
-`</pre> 
+    $ git status
+    $ git add --all .
+    $ git status
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+    $ git push
+    
 
-それから、[ PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)で：
+それから、[PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)で：
 
 {% filename %}command-line{% endfilename %}
 
@@ -195,19 +197,19 @@ $ git push
 
 ## サーバー上の静的ファイルの更新
 
-PythonAnywhereのようなサーバは、（CSSファイルのような）「静的ファイル」をPythonファイルとは違って扱うのが好きです。なぜなら、それらが高速に読み込まれるように最適化できるからです。 その結果、CSSファイルを変更するたびに、サーバー上で追加のコマンドを実行して、更新するように指示する必要があります。 コマンドは` collectstatic </ code>です。</p>
+PythonAnywhereのようなサーバは、（CSSファイルのような）「静的ファイル」をPythonファイルとは違って扱うのが好きです。なぜなら、それらが高速に読み込まれるように最適化できるからです。 その結果、CSSファイルを変更するたびに、サーバー上で追加のコマンドを実行して、更新するように指示する必要があります。 コマンドは`collectstatic`です。
 
-<p>あなたが使用している<code> source myenv / bin / activate </ code>コマンドと同じです（PythonAnywhereはこれを行うために<code> workon </ code>というコマンドを使用します） あなた自身のコンピュータで）：</p>
+あなたが使用している`source myenv/bin/activate`コマンドと同じです（PythonAnywhereはこれを行うために`workon`というコマンドを使用します） あなた自身のコンピュータで）：
 
-<p>{% filename %}command-line{% endfilename %}</p>
+{% filename %}command-line{% endfilename %}
 
-<pre><code>$ workon <your-pythonanywhere-username>.pythonanywhere.com
-(ola.pythonanywhere.com)$ python manage.py collectstatic
-[...]
-`</pre> 
+    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    (ola.pythonanywhere.com)$ python manage.py collectstatic
+    [...]
+    
 
- manage.py collectstatic </ code>コマンドは、<code> manage.py migrate </ code>のようなものです。  私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を適用するよう指示します。</p>
+`manage.py collectstatic`コマンドは、`manage.py migrate`のようなものです。 私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を適用するよう指示します。
 
-<p>いずれにしても、<a href="https://www.pythonanywhere.com/web_app_setup/"> Webタブ</a>にアクセスして、<strong> Reload </ strong>を押す準備が整いました。</p>
+いずれにしても、[Webタブ](https://www.pythonanywhere.com/web_app_setup/)にアクセスして、**Reload**を押す準備が整いました。
 
-<p>そしてdeployします! おめでとうございます :)</p>
+そしてdeployします! おめでとうございます :)
