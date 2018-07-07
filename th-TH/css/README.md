@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a` คือการเลือกโดย CSS This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. ในกรณีนี้ คือการบอกว่า เราต้องการให้เปลี่ยนสีให้เป็นรหัส `#FCA205` ซึ่งคือสีส้มนั่นเอง แน่นอนว่าคุณสามารถเปลี่ยนเป็นสีที่คุณต้องการได้นะ!
 
-ในไฟล์ CSS เราจะกำหนดลักษณะรูปแบบต่างๆ ให้กับองค์ประกอบที่อยู่ในไฟล์ HTML The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. class และ id คือชื่อที่คุณตั้งให้กับองค์ประกอบในหน้าเว็บเอง class กำหนดกลุ่มขององค์ประกอบ และ id ระบุไปยังองค์ประกอบที่จำเพาะเจาะจง For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+ในไฟล์ CSS เราจะกำหนดลักษณะรูปแบบต่างๆ ให้กับองค์ประกอบที่อยู่ในไฟล์ HTML The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. class และ id คือชื่อที่คุณตั้งให้กับองค์ประกอบในหน้าเว็บเอง class กำหนดกลุ่มขององค์ประกอบ และ id ระบุไปยังองค์ประกอบที่จำเพาะเจาะจง ตัวอย่างเช่น tag ต่อไปนี้อาจะถูกระบุโดย Css โดยใช้ ชื่อ tag `a`, class `external_link`, หรือ id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -88,7 +88,7 @@ h1 a {
 
 คุณสามารถอ่านเพิ่มเติมได้ที่นี่ [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp)
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+จากนั้น เราต้องบอกเทมแพลต HTML ของเราให้เพิ่ม CSS เข้าไป โดย เปิดไฟล์ `blog/templates/blog/blog_list.html` และเพิ่มบรรทัดนี้ที่ต้นไฟล์:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 </div>
 ```
 
-เราจะเพิ่มส่วนประกาศ ที่จะใช้เลือกในแต่ละบล็อคที่เราได้กำหนด ตัวเลือกที่เริ่มต้นด้วยเครื่องหมายจุด `.` จะใช้กับการเลือก class There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. สำหรับตอนนี้ คัดลอกและวาง `blog/static/css/blog.css` ลงในไฟล์ของคุณ:
+เราจะเพิ่มส่วนประกาศ ที่จะใช้เลือกในแต่ละบล็อคที่เราได้กำหนด ตัวเลือกที่เริ่มต้นด้วยเครื่องหมายจุด `.` จะใช้กับการเลือก class มีเว็บที่มีบทเรียนดีๆที่สอนและอธิบายเกี่ยวกับ CSS อยู่มากมาย ที่จะช่วยคุณเข้าใจโค้ดด้านล่างนี้ สำหรับตอนนี้ คัดลอกและวาง `blog/static/css/blog.css` ลงในไฟล์ของคุณ:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
