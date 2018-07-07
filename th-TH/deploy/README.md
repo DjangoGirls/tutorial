@@ -139,7 +139,7 @@ Type the following into your console (Replace `<your-github-username>` with the 
 
 Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![ส่วน 'New Console' บน PythonAnywhere เว็บอินเตอร์เฟส กับปุ่มสำหรับ 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
@@ -210,12 +210,12 @@ If you see an error when you try to visit your site, the first place to look for
 
 There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+และอย่าลืม โค้ชของคุณอยู่ที่นี่เพื่อมาช่วยคุณนะ!
 
-# Check out your site!
+# มาดูเว๊บไซต์ของคุณกัน!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+หน้าเริ่มต้นสำหรับเว็บไซต์ของคุณควรจะโชว์ "It worked!" แบบเดียวกับที่โชว์อยู่บนเครื่องคอมพิวเตอร์ของคุณ ลองเพิ่ม `/admin/` ต่อท้าย URL แล้วคุณจะได้หน้าเพจ admin ของคุณ เข้าระบบด้วย username และ password และคุณจะสามารถเพิ่มโพสต์ใหม่บนเซิร์ฟเวอร์ได้
 
 Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+Give yourself a *HUGE* pat on the back! การนำเว็บขึ้นบนเซิร์ฟเวอร์นั้นเป็นขั้นตอนที่ยุ่งยากในการพัฒนาเว็บไซต์ และคนส่วนมากใช้เวลาสองสามวันกว่าจะทำให้มันทำงานได้ แต่คุณมีเว็บไซต์ที่พร้อมใช้ บนอินเตอร์เน็ตจริงๆแล้วตอนนี้!
