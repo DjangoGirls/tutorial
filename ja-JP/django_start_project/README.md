@@ -53,14 +53,13 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
             __init__.py
     
 
-> **注</ strong>：ディレクトリ構造には、以前作成した` venv </ code>ディレクトリもあります。</p>
-</blockquote>
+> **注**：ディレクトリ構造には、以前作成した`venv`ディレクトリもあります。
 
-<p><code> manage.py </ code>はサイトの管理に役立つスクリプトです。 それを使用して、他のものをインストールすることなく、私たちのコンピュータ上でWebサーバーを起動することができます。</p>
+`manage.py`はサイトの管理に役立つスクリプトです。 それを使用して、他のものをインストールすることなく、私たちのコンピュータ上でWebサーバーを起動することができます。
 
-<p><code> settings.py </ code>ファイルには、ウェブサイトの設定が含まれています。</p>
+`settings.py`ファイルには、ウェブサイトの設定が含まれています。
 
-<p>手紙を送付する場所を確認する郵便業者について話した事を覚えていますか？ <code> urls.py </ code>ファイルには、<code> urlresolver </ code>で使用されるパターンのリストが含まれています。</p>
+手紙を送付する場所を確認する郵便業者について話した事を覚えていますか？ ` urls.py </ code>ファイルには、<code> urlresolver </ code>で使用されるパターンのリストが含まれています。</p>
 
 <p>私たちはそれらを変更しないので、今は他のファイルを無視しましょう。 覚えておくべき唯一の事は、間違えてそれらを削除しないことです！</p>
 
@@ -72,11 +71,11 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
 
 <p>作成するブログサイトに、正しい時間を設定する必要があります。 <a href="https://en.wikipedia.org/wiki/List_of_tz_database_time_zones"> Wikipediaのタイムゾーンのリスト</a>に移動して、関連するタイムゾーン（TZ）をコピーします（例：<code> Europe / Berlin < コード>）。</p>
 
-<p><code>settings.py` の中から `TIME_ZONE` と書かれた行を探してください。この行はタイムゾーンを表しているので、自分が住んでいるタイムゾーンに合わせて修正しましょう。たとえば、次のように書きます。</p> 
-> 
-> {% filename %}mysite/settings.py{% endfilename %}
-> 
-> ```python
+<p><code>settings.py` の中から `TIME_ZONE` と書かれた行を探してください。この行はタイムゾーンを表しているので、自分が住んでいるタイムゾーンに合わせて修正しましょう。たとえば、次のように書きます。
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
 TIME_ZONE = 'Asia/Tokyo'
 ```
 
@@ -167,12 +166,12 @@ Chromebookを使用している場合は、代わりに次のコマンドを使�
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-Windows上で、` UnicodeDecodeError </ code>で失敗した場合は、代わりに次のコマンドを使用します。</p>
+Windows上で、`UnicodeDecodeError`で失敗した場合は、代わりに次のコマンドを使用します。
 
-<p>{% filename %}command-line{% endfilename %}</p>
+{% filename %}command-line{% endfilename %}
 
-<pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
-`</pre> 
+    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+    
 
 これであなたのウェブサイトが稼働していることを確認するだけです。 ブラウザ（Firefox、Chrome、Safari、Internet Explorerなど）を開き、次のアドレスを入力します。
 
