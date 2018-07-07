@@ -1,14 +1,14 @@
 # Django URLs
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+เรากำลังจะสร้างหน้าเว็บแรกของเรา: เป็นหน้าแรกสำหรับบล็อกของคุณ! แต่ก่อนอื่น เรามาเรียนเรื่อง Django urls กันซักหน่อย
 
 ## URL คืออะไร?
 
-URL นั้นคือที่อยู่ของเว็บ You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` ก็คือ URL! And `https://djangogirls.org` is also a URL.)
+URL นั้นคือที่อยู่ของเว็บ คุณเห็น URL ทุกครั้งที่เข้าดูเว็บไซต์ - มันปรากฎอยู่ในช่องที่อยู่ของเบราว์เซอร์ของคุณ (ใช่แล้ว! `127.0.0.1:8000` ก็คือ URL! และ `https://djangogirls.org` ก็คือ URL เช่นกัน)
 
 ![Url](images/url.png)
 
-ทุกหน้าเว็บบนอินเทอร์เน็ต ต้องมี URL เป็นของตัวเอง This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+ทุกหน้าเว็บบนอินเทอร์เน็ต ต้องมี URL เป็นของตัวเอง วิธีนี้ทำให้แอปพลิเคชั่นของคุณรู้ว่าควรจะแสดงหน้าไหนให้กับผู้ใช้ที่เปิด URL นั้น ใน Django เราใช้สิ่งที่เรียกว่า `URLconf` (URL configuration) URLconf คือชุดของรูปแบบที่ Django จะพยายามจับคู่ให้ตรงกับ URL ที่ได้รับมาเพื่อหา view ที่ถูกต้อง
 
 ## URL ทำงานอย่างไรใน Django?
 
@@ -29,11 +29,11 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+อย่างที่คุณเห็น Django ได้เตรียมอะไรอะไรไว้ให้เราในที่นี้บ้างแล้ว
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. มันจะไม่ถูกรันโดย Python
 
-The admin URL, which you visited in the previous chapter, is already here:
+Admin URL คือหน้าที่คุณได้เข้าไปชมในบทก่อนหน้า แล้วมันก็อยู่ที่นี่แล้ว:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,7 +41,7 @@ The admin URL, which you visited in the previous chapter, is already here:
     url(r'^admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+บรรทัดนี้หมายความว่า ทุก URL ที่ขึ้นต้นด้วย `admin/` Django จะหา *view* ที่สอดคล้องให้ In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Regex
 
