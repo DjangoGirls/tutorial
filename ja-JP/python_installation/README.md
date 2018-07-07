@@ -1,4 +1,4 @@
-# Let’s start with Python
+# Pythonをはじめよう
 
 We're finally here!
 
