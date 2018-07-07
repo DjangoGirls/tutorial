@@ -38,23 +38,23 @@
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}` {％url 'post_detail' pk = post.pk％}`を説明します。 ` {％％} </ code>という表記は、Djangoのテンプレートタグを使用していることを意味しています。 次にURLを作成するものを使用します！</p>
+{% raw %}` {％url 'post_detail' pk = post.pk％}`を説明します。 `{% %}`という表記は、Djangoのテンプレートタグを使用していることを意味しています。 次にURLを作成するものを使用します！
 
-<p><code> post_detail </ code>の部分は、Djangoが<code> blog / urls.py </ code>にname = post_detailのURLを指定していることを意味します</p>
+`post_detail`の部分は、Djangoが`blog/urls.py`にname = post_detailのURLを指定していることを意味します
 
-<p>pk = post.pkの部分は、 pkは主キーの略で、データベースの各レコードの一意の名前です。 Postモデルでプライマリキーを指定しなかったので、Djangoは私たちのために1つのキーを作成します（デフォルトでは、レコードごとに1、2、3と数字が増えます）。 私たちの記事はPostオブジェクトの他のフィールド（タイトル、作者など）にアクセスするのと同じ方法で、post.pkを書くことによって主キーにアクセスします！</p>
+pk = post.pkの部分は、 pkは主キーの略で、データベースの各レコードの一意の名前です。 Postモデルでプライマリキーを指定しなかったので、Djangoは私たちのために1つのキーを作成します（デフォルトでは、レコードごとに1、2、3と数字が増えます）。 私たちの記事はPostオブジェクトの他のフィールド（タイトル、作者など）にアクセスするのと同じ方法で、post.pkを書くことによって主キーにアクセスします！
 
-<p>さて、私たちがhttp://127.0.0.1:8000/に行くと、（<code> post_detail </ code>のURLまたは<em> view </ em>をまだ持っていないので、 >）。 それは次のようになります：</p>
+さて、私たちがhttp://127.0.0.1:8000/に行くと、（`post_detail`のURLまたは*view*をまだ持っていないので、 >）。 それは次のようになります：
 
-<p><img src="images/no_reverse_match2.png" alt="NoReverseMatch error" /></p>
+![NoReverseMatch error](images/no_reverse_match2.png)
 
-<h2>投稿の詳細へのURLを作成する</h2>
+## 投稿の詳細へのURLを作成する
 
-<p><code> post_detail </ code> <em>ビュー</ em>用に<code> urls.py </ code>にURLを作成しましょう！</p>
+`post_detail` *ビュー*用に`urls.py`にURLを作成しましょう！
 
-<p>最初の投稿の詳細がこの<strong> URL </ strong>に表示されるようにします：http://127.0.0.1:8000/post/1/</p>
+最初の投稿の詳細がこの**URL**に表示されるようにします：http://127.0.0.1:8000/post/1/
 
-<p>Djangoが<code> post_detail </ code>という名前の<em>表示</ em>を指すように<code> blog / urls.py </ code>ファイルにURLを作ってください。 <code> blog / urlsに<code> url（r '^ post /（？P＆lt; pk＆gt; \ d +）/ $'、views.post_detail、name = 'post_detail'）、</ code>行を追加します。 py </ code>ファイルにコピーします。 ファイルは次のようになるでしょう。</p>
+Djangoが`post_detail`という名前の*表示*を指すように`blog/urls.py`ファイルにURLを作ってください。 ` blog / urlsに<code> url（r '^ post /（？P＆lt; pk＆gt; \ d +）/ $'、views.post_detail、name = 'post_detail'）、</ code>行を追加します。 py </ code>ファイルにコピーします。 ファイルは次のようになるでしょう。</p>
 
 <p>{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}</p>
 
