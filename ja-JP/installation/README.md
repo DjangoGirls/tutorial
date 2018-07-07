@@ -1,12 +1,12 @@
-# 家でチュートリアルを進める方へ
+# 家でチュートリアルに挑戦する方へ
 
 [Django Girls のイベント](https://djangogirls.org/events/)ではなく、あなたが一人家でこのチュートリアルに挑戦しているのであれば、このチャプターは無視して次のチャプタ [インターネットのしくみ](../how_the_internet_works/README.md) に進みましょう。
 
-This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+このチャプターは、インストールに関連する部分を集約してまとめたページです。これらのインストール手順は、以降のチャプターに含まれていますので、そちらを参照してください。 Django Girlsのイベントでは「インストールDay」としてワークショップ前日に、環境設定やインストールをまとめて行っています。ワークショップの都合上、イベント中に環境設定で躓いてしまわないためです。
 
-If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+まとめてインストールする方が都合が良い方は、このチャプターを参照してください。 しかし、いろんなものをパソコンにインストールする前に、一体それらが何なのか学びたい方は、このチャプターを飛ばしてください。これ以降のページでインストールの手順やその説明を行っています。
 
-グッドラック！
+頑張りましょう！
 
 # インストール
 
