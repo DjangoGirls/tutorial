@@ -4,7 +4,7 @@
 
 จนถึงตอนนี้คุณสามารถเปิดดูเว็บไซต์ของคุณจากคอมพิวเตอร์ของคุณเท่านั้น Now you will learn how to deploy it! Deploying คือกระบวนการเผยแพร่โปรแกรมของคุณขึ้นสู่อินเทอร์เน็ต สุดท้ายแล้ว ทุกคนก็จะสามารถเห็นเว็บของคุณได. :)
 
-อย่างที่คุณได้ทราบ เว็บไซต์นั้นอาศัยอยู่ในเครื่องเซิร์ฟเวอร์ There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+อย่างที่คุณได้ทราบ เว็บไซต์นั้นอาศัยอยู่ในเครื่องเซิร์ฟเวอร์ มันมีผู้ให้บริการเซิร์ฟเวอร์จำนวนมากบนอินเทอร์เน็ต แต่เราจะใช้ [PythonAnywhere](https://www.pythonanywhere.com/) PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
 มีบริการภายอื่นที่เราจะใช้เช่นกัน คือ [GitHub](https://www.github.com) ซึ่งเป็นบริการที่เก็บโค้ดของเรา จริงๆ ก็มีบริการจากที่อื่นเช่นกัน แต่โปรแกรมเมอร์เกือบทุกคนในตอนนี้มีบัญชี GitHub และคุณก็กำลังจะมีด้วยเช่นกัน!
 
@@ -100,7 +100,7 @@ On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" ve
 
 Now we need to hook up the Git repository on your computer to the one up on GitHub.
 
-Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+ใช้คำสั่งต่อไปบนคอนโซลของคุณ (แทนที่ `<your-github-username>` ด้วย username ที่คุณสมัคร Github ไว้ แต่ไม่ต้องมีเครื่องหมายวงเล็บปีกกา):
 
 {% filename %}command-line{% endfilename %}
 
@@ -141,7 +141,7 @@ Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) 
 
 ![ส่วน 'New Console' บน PythonAnywhere เว็บอินเตอร์เฟส กับปุ่มสำหรับ 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **หมายเหตุ** PythonAnywhere นั้นใช้ Linux เป็นฐาน หากคุณใช้ Windows คอนโซลที่คุณเห็นจะมีหน้าตาที่ต่างไปจากคอนโซลบนคอมพิวเตอร์ของคุณ
 
 Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 
@@ -152,7 +152,7 @@ Deploying a web app on PythonAnywhere involves pulling down your code from GitHu
 
 That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+Now we run the helper to automatically configure our app from GitHub. พิมพ์คำสั่งต่อไปลงในคอนโซลบน PythonAnywhere (อย่าลืมใช้ username GitHub ของคุณ แทนที่ `<your-github-username>`):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
