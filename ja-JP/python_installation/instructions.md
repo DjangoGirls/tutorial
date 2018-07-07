@@ -10,11 +10,11 @@ Windowsをお使いのかたは、まずシステム情報を開き、システ�
 
 **インストール時に必ず「Add Python 3.6 to PATH」にチェックをいれましょう**：
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Pythonのパスを通すのを忘れないようにしてください。](../python_installation/images/python-installation-options.png)
 
 次のステップでは、Windowsコマンドラインを使用します（コマンドラインについては後ほど詳しく教えます）。 For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. コマンドプロンプトを開くには、そこに "cmd" と入力してenterキーを押します。
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+!["ファイル名を指定して実行"で、"cmd"と入力してください](../python_installation/images/windows-plus-r.png)
 
 注意：古いバージョンのWindows（7、Vista、またはそれ以前のバージョン）を使用していて、Python 3.6.xインストーラがエラーで失敗した場合、次のいずれかを試みることができます：
 
@@ -23,7 +23,7 @@ Windowsをお使いのかたは、まずシステム情報を開き、システ�
 
 古いバージョンのPythonをインストールする場合、インストール画面は上記のものとは多少異なる場合があります。 下にスクロールして「Add python.exe to Path」のところを左クリックして「Will be installed on local hard drive（ローカルハードドライブにインストールされます）」を選択してください：
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![古いバージョンのパスを追加してください](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -91,7 +91,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+インストールされているか確認するために、コマンドプロンプトを開いて次のように`Python3`コマンドを入力してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,8 +99,8 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+**注意：** Windowsをお使いで`python3`が見つからないエラーが出る場合、 代わりに`python`と入力して、バージョンがPython3.6と出てくるか確認してください。（`3`を抜いてみましょう）
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+分からない時や、質問がある時は、コーチに質問してくださいね。 ときどき上手くいかないこともあります。そんな時は、経験豊富な人に聞くといいですよ。
