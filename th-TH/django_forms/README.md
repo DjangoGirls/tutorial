@@ -384,7 +384,7 @@ form = PostForm(instance=post)
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! เปลี่ยน tag `<a>` ให้มีหน้าตาแบบนี้:
+เราจะทำการเพิ่ม `{% if %}` อีกอัน เพื่อแสดงผลลัพธ์เฉพาะผู้ใช้ที่เข้าระบบแล้วเรียบร้อยที่หน้า admin ซึ่งตอนนี้ ก็คือคุณไง! เปลี่ยน tag `<a>` ให้มีหน้าตาแบบนี้:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ This `{% if %}` will cause the link to be sent to the browser only if the user r
 
 Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
-Open `blog/templates/blog/post_detail.html` and find this line:
+เปิดไฟล์ `blog/templates/blog/post_detail.html` และเพิ่มบรรทัดนี้ลงไป:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
