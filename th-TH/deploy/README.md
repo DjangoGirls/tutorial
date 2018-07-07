@@ -129,13 +129,13 @@ Type the following into your console (Replace `<your-github-username>` with the 
 
 # Setting up our blog on PythonAnywhere
 
-## Sign up for a PythonAnywhere account
+## สมัครใช้บัญชี PythonAnywhere
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **หมายเหตุ** คุณอาจจะได้สร้างบัญชีของ PythonAnywhere แล้ว - ถ้าเป็นเช่นนั้น คุณก็ไม่จำเป็นต้องทำมันอีกครั้ง
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## การกำหนดค่าเว็บไซต์ของเราใน PythonAnywhere
 
 Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
@@ -179,7 +179,7 @@ As a result, just as we did on your own computer, we need to initialize the admi
 
 Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+ตอนนี้ ถ้าคุณต้องการ คุณยังสามารถดูโค้ดของคุณได้ใน PythonAnywhere โดยใช้ `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -192,13 +192,13 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
 
 You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
 
-## You are now live!
+## คุณกำลังออนไลน์แล้วนะตอนนี้!
 
 Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
 
 > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
 
-## Debugging tips
+## เคล็ดลับในการ Debugging
 
 If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
 
@@ -206,7 +206,7 @@ If you see an error while running the `pa_autoconfigure_django.py` script, here 
 - Making a mistake in your GitHub URL
 - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+ถ้าคุณเห็นข้อผิดพลาดเกิดขึ้นเมื่อคุณเข้าดูหน้าเว็บ ที่แรกที่คุณควรตรวจสอบก็คือใน **error log** คุณจะเห็นลิงค์นี้บน แท็บ [Web tab](https://www.pythonanywhere.com/web_app_setup/) ใน PythonAnywhere ลองหาดูว่ามันมีข้อความแสดงข้อผิดพลาดในนั้นมั้ย โดยข้อผิดพลาดล่าสุดจะปรากฎอยู่ด้านล่าง
 
 There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
