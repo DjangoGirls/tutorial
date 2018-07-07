@@ -220,14 +220,15 @@ if form.is_valid():
     post.save()
 ```
 
-基本的にここでは2つのことを行います。まず form.save でフォームを保存することと author を追加することです(まだ PostForm 内に author フィールドがありませんし、このフィールドは必須です). commit=False は Post モデルをまだセーブしません。ではauthorを追加します。commit=False を指定せず form.save() を実行します。 ほとんどの場合、` commit = False </ code>なしで<code> form.save（）</ code>を使用しますが、この場合はそれを指定する必要があります。 <code> post.save（）</ code>は変更を保存し（作成者を追加する）、新しいブログ投稿が作成されます。</p>
+基本的にここでは2つのことを行います。まず form.save でフォームを保存することと author を追加することです(まだ PostForm 内に author フィールドがありませんし、このフィールドは必須です). commit=False は Post モデルをまだセーブしません。ではauthorを追加します。commit=False を指定せず form.save() を実行します。 ほとんどの場合、`commit = False`なしで`form.save()`を使用しますが、この場合はそれを指定する必要があります。 `post.save()`は変更を保存し（作成者を追加する）、新しいブログ投稿が作成されます。
 
-<p>最後に、新しく作成された記事の post_detail ページを表示できれば良いですよね? そのために次のインポートを追加します:</p>
+最後に、新しく作成された記事の post_detail ページを表示できれば良いですよね? そのために次のインポートを追加します:
 
-<p>{% filename %}blog/views.py{% endfilename %}</p>
+{% filename %}blog/views.py{% endfilename %}
 
-<pre><code class="python">from django.shortcuts import redirect
-`</pre> 
+```python
+from django.shortcuts import redirect
+```
 
 ファイルの先頭に追加します。これでようやく、新しく作成されたポストのための post_detail ページに移動する処理を書けます。
 
