@@ -134,7 +134,7 @@ $ git push -u origin master
 > > 
 > > > **備考：**あなたがすでにPythonAnywhereのアカウントを以前に作成しインストールの手順をふんでいたら、再びそれを行う必要はありません。
 > > 
-> > {% include "deploy/signup_pythonanywhere.md" %}
+> > {% include "/deploy/signup_pythonanywhere.md" %}
 > > 
 > > ## PythonAnywhere でサイトを設定する
 > > 
