@@ -152,12 +152,12 @@ PythonAnywhereにWebアプリケーションをデプロイするには、コー
 
 `pythonanywhereを収集する`のようなものをいくつか出力し、最終的に` pythonanywhere-（...）`をインストールしたという行で終わるはずです。
 
-GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（`＆lt; your-github-username＆gt; </ code>の代わりにGitHubユーザー名を使用することを忘れないでください）：</p>
+GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（`<your-github-username>`の代わりにGitHubユーザー名を使用することを忘れないでください）：
 
-<p>{% filename %}PythonAnywhere command-line{% endfilename %}</p>
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-<pre><code>$ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
-`</pre> 
+    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    
 
 上記を実行すると、あなたは以下の事ができるようになります。：
 
