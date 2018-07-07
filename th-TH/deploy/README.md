@@ -51,7 +51,7 @@ Git จะติดตามการเปลี่ยนแปลงในท�
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
-ควรใช้คำสั่ง `git status` ก่อนที่จะใช้คำสั่ง `git add` หรือเมื่อใดก็ตามที่คุณไม่แน่ใจว่า มีการเปลี่ยนแปลงอะไรไปบ้าง วิธีนี้จะช่วยให้คุณไม่เจอเหตุการณ์แปลกๆ เช่น คุณเพิ่มไฟล์ผิดไฟล์ หรือยืนยันการบันทึกไฟล์ผิดไฟล์ The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+ควรใช้คำสั่ง `git status` ก่อนที่จะใช้คำสั่ง `git add` หรือเมื่อใดก็ตามที่คุณไม่แน่ใจว่า มีการเปลี่ยนแปลงอะไรไปบ้าง วิธีนี้จะช่วยให้คุณไม่เจอเหตุการณ์แปลกๆ เช่น คุณเพิ่มไฟล์ผิดไฟล์ หรือยืนยันการบันทึกไฟล์ผิดไฟล์ The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. ผลลัพธ์ควรมีหน้าตาเหมือนอย่างด้านล่างนี้:
 
 {% filename %}command-line{% endfilename %}
 
@@ -92,13 +92,13 @@ Git จะติดตามการเปลี่ยนแปลงในท�
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+> **หมายเหตุ** ชื่อ `my-first-blog` นั้นสำคัญ - คุณสามารถใช้ชื่ออื่นได้ แต่ชื่อนี้จะปรากฎตลอดทั้งหน้านี้ และคุณจำเป็นต้องเปลี่ยนชื่อตามทุกครั้ง เพราะงั้นมันจะเป็นการง่ายกว่าถ้าเราใช้ชื่อ `my-first-blog`
 
 On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+ตอนนี้เราจะทำการชี้ Git repository บนคอมพิวเตอร์ของเราไปยัง GitHub
 
 ใช้คำสั่งต่อไปบนคอนโซลของคุณ (แทนที่ `<your-github-username>` ด้วย username ที่คุณสมัคร Github ไว้ แต่ไม่ต้องมีเครื่องหมายวงเล็บปีกกา):
 
@@ -127,7 +127,7 @@ Now we need to hook up the Git repository on your computer to the one up on GitH
 
 ตอนนี้โค้ดของคุณได้อยู่บน GitHub แล้ว ลองไปดู ว่ามันอยู่บน GitHub แล้วจริงมั้ย! คุณจะเห็นว่ามีบริษัทเจ๋งๆ อย่าง - [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) และโครงการโอเพ่นซอร์สซอฟต์แวร์มากมาย ก็เก็บโค้ดไว้ที่ GitHub :)
 
-# Setting up our blog on PythonAnywhere
+# การติดตั้งบล็อกของเราใน PythonAnywhere
 
 ## สมัครใช้บัญชี PythonAnywhere
 
@@ -216,6 +216,6 @@ There are also some [general debugging tips on the PythonAnywhere help site](htt
 
 หน้าเริ่มต้นสำหรับเว็บไซต์ของคุณควรจะโชว์ "It worked!" แบบเดียวกับที่โชว์อยู่บนเครื่องคอมพิวเตอร์ของคุณ ลองเพิ่ม `/admin/` ต่อท้าย URL แล้วคุณจะได้หน้าเพจ admin ของคุณ เข้าระบบด้วย username และ password และคุณจะสามารถเพิ่มโพสต์ใหม่บนเซิร์ฟเวอร์ได้
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. มันเจ๋งใช่มะ?
 
 Give yourself a *HUGE* pat on the back! การนำเว็บขึ้นบนเซิร์ฟเวอร์นั้นเป็นขั้นตอนที่ยุ่งยากในการพัฒนาเว็บไซต์ และคนส่วนมากใช้เวลาสองสามวันกว่าจะทำให้มันทำงานได้ แต่คุณมีเว็บไซต์ที่พร้อมใช้ บนอินเตอร์เน็ตจริงๆแล้วตอนนี้!
