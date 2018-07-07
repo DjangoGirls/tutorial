@@ -277,11 +277,11 @@ def post_new(request):
 
 ![Form validation](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django จะตรวจสอบความถูกต้อง ว่าข้อมูลทั้งหมดในแบบฟอร์มของเรานั้นถูกต้อง มันเจ๋งสุดๆเลยใช่ม้าา?
 
 ## การแก้ไขฟอร์ม
 
-ตอนนี้คุณทราบวิธีเพิ่มฟอร์มใหม่แล้ว แต่ถ้าเกิดคุณยังแก้ไขของเดิมที่มีอยู่แล้วล่ะ? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+ตอนนี้คุณทราบวิธีเพิ่มฟอร์มใหม่แล้ว แต่ถ้าเกิดคุณอยากแก้ไขของเดิมที่มีอยู่แล้วล่ะ? มันก็จะคล้ายๆกับที่เราเคยทำมาแหละ งั้นเรามาสร้างอะไรที่สำคัญๆกันเถอะ (ถ้ามีอะไรที่คุณไม่เข้าใจ คุณควรที่จะถามโค้ชของคุณหรือเปิดดูบทที่ผ่านๆมาที่เราได้ครอบคลุมขั้นตอนเหล่านี้ทั้งหมดไปแล้ว)
 
 เปิดไฟล์ `blog/templates/blog/post_detail.html` และเพิ่มบรรทัดนี้ลงไป
 
@@ -322,7 +322,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 เราจะนำ template `blog/templates/blog/post_edit.html` มาใช้อีกครั้ง ดังนั้นสิ่งที่ขาดไปสิ่งสุดท้ายคือ *view*.
 
-Let's open `blog/views.py` and add this at the very end of the file:
+เปิดไฟล์ `blog/views.py` และเพิ่มบรรทัดเหล่านี้ลงไปท้ายไฟล์:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-หน้าตาเกือบจะเหมือนกับ view `post_new` ของเราเลยว่าไหม? แต่ไม่ใช่ทั้งหมด For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+หน้าตาเกือบจะเหมือนกับ view `post_new` ของเราเลยว่าไหม? แต่ไม่ใช่ทั้งหมด สิ่งแรก: เราจะส่งค่าพารามิเตอร์ `pk` เพิ่มเติมจาก urls Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -370,7 +370,7 @@ form = PostForm(instance=post)
 
 ยินดีด้วย! แอพของคุณใกล้จะเสร็จเข้าไปทุกทีแล้ว!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
+หากคุณต้องการข้อมูลเพิ่มเติมเกี่ยวกับ Django form คุณควรอ่านเอกสารประกอบนี้: https://docs.djangoproject.com/en/1.11/topics/forms/
 
 ## ความปลอดภัย
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` and find this line:
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+เปลี่ยนมันให้เป็นแบบนี้:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -422,7 +422,7 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 มาดูกันว่า มันจะทำงานได้บน PythonAnywhere ไหม ได้เวลาเอาขึ้นแล้ว!
 
-* First, commit your new code, and push it up to GitHub:
+* อย่างแรก บันทึกโค้ดใหม่ของคุณ และส่งไปเก็บไว้ที่ Github:
 
 {% filename %}command-line{% endfilename %}
 
