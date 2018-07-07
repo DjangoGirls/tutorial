@@ -10,7 +10,7 @@
 
 บางชื่อในบางไฟล์และไดเรกทอรีนั้นสำคัญมากๆ สำหรับ Django และคุณไม่ควรเปลี่ยนชื่อไฟล์เหล่านั้น และการย้ายไฟล์เหล่านั้นไปยังที่อื่น ก็ไม่ใช่ความคิดที่ดีแน่ๆ Django นั้นต้องการโครงสร้างที่แน่นอน เพื่อที่จะสามารถหาสิ่งที่จำเป็นที่จะต้องใช้ได้
 
-> อย่าลืมที่จะรันทุกสิ่งอย่างภายใต้ virtualenv If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. เราอธิบายวิธีทำไว้แล้วในบท **การติดตั้ง Django** อยู่ในส่วนของ **การทำงานกับ virtualenv** Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> อย่าลืมที่จะรันทุกสิ่งอย่างภายใต้ virtualenv If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. เราอธิบายวิธีทำไว้แล้วในบท **การติดตั้ง Django** อยู่ในส่วนของ **การทำงานกับ virtualenv** โดยพิมพ์ `myvenv\Scripts\activate` บน Windows หรือ `source myvenv/bin/activate` บน Mac OS หรือ บน Linux มันจะจัดการให้คุณเอง
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
@@ -110,7 +110,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > 
 > Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
 
-## Set up a database
+## ตั้งค่าฐานข้อมูล
 
 มีซอฟต์แวร์ฐานข้อมูลจำนวนมากที่สามารถเก็บข้อมูลของเว็บคุณได้ เราจะใช้ฐานข้อมูลเริ่มต้น คือ `sqlite3`.
 
@@ -152,7 +152,7 @@ DATABASES = {
 
 เป็นอันเสร็จสิ้น! ได้เวลาเปิดเว็บเซิร์ฟเวอร์และดูว่าเว็บเราทำงานไหม!
 
-## Starting the web server
+## การเปิดใช้เว็บเซิร์ฟเวอร์
 
 คุณต้องอยู่ในไดเรกทอรีที่มีไฟล์ `manage.py` (ไดเรกทอรี `djangogirls` นั่นเอง) ในคอนโซล เราสามารถเริ่มต้นเว็บเซิร์ฟเวอร์โดยรันคำสั่ง `python manage.py runserver`:
 
@@ -168,14 +168,14 @@ If you are on a Chromebook, use this command instead:
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-ถ้าคุณอยู่บนวินโดวส์ และเกิดข้อผิดพลาด `UnicodeDecodeError` ให้ใช้คำสั่งนี้แทน:
+ถ้าคุณใช้ Windows และเกิดข้อผิดพลาดกับ `UnicodeDecodeError` ให้ใช้คำสั่งนี้แทน:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+ตอนนี้ คุณสามารถเช็คได้ว่าเว็บเรารันแล้วหรือยัง โดยเปิดเว็บเบราว์เซอร์ของคุณ (Firefox, Chrome, Safari, Internet Explorer หรืออะไรก็ตามที่คุณใช้) และป้อนที่อยู่ลงไป:
 
 {% filename %}browser{% endfilename %}
 
@@ -189,14 +189,14 @@ If you're using a Chromebook, you'll always visit your test server by accessing:
     https://django-girls-<your cloud9 username>.c9users.io
     
 
-ขอแสดงความยินดี! คุณเพิ่งสร้างเว็บแรกของคุณและรันมันบนเว็บเซิร์ฟเวอร์! เจ๋งไปเลยว่าไหม?
+ขอแสดงความยินดี! คุณเพิ่งสร้างเว็บแรกของคุณและรันมันบนเว็บเซิร์ฟเวอร์! เจ๋งไปเลยใช่ป่าว?
 
-![It worked!](images/it_worked2.png)
+![มันทำงานถูกต้อง!](images/it_worked2.png)
 
 While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
 
 > We reviewed how web servers work in the **How the Internet works** chapter.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+โปรดจำไว้ว่า ในการเขียนคำสั่งใหม่ในขณะที่เว๊บเซอร์เวอร์กำลังรันอยู่นั้น ให้เปิดหน้าต่างเทอร์มินัลใหม่และเปิดใช้งาน virtualenv ในการหยุดเว็บเซิร์ฟเวอร์ ให้สลับกลับไปที่หน้าต่างที่รันอยู่ แล้วกดปุ่ม CTRL+C - ปุ่ม Control และปุ่ม C พร้อมกัน (บน Windows คุณอาจต้องกดปุ่ม Ctrl+Break)
 
-พร้อมสำหรับขั้นถัดไปแล้ว? ถึงเวลาสร้างเนื้อในเว็บกันแล้ว!
+พร้อมสำหรับขั้นถัดไปแล้วใช่มั้ย? ถึงเวลาสร้างเนื้อในเว็บกันแล้ว!
