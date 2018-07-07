@@ -725,7 +725,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-２行目をスペース４つでインデントしていることに気が付きましたか？ 条件式が True の時、どのコードを実行するかPythonに知らせる必要があります。 スペース１つでもできますが、ほぼ全員のPythonプログラマーはスペース４つとしています。 A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+２行目をスペース４つでインデントしていることに気が付きましたか？ 条件式が True の時、どのコードを実行するかPythonに知らせる必要があります。 スペース１つでもできますが、ほぼ全員のPythonプログラマーはスペース４つとしています。 タブ１つも、スペース４つと同じです。 When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 保存して、もう一度実行してみましょう。
 
