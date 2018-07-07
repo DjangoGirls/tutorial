@@ -54,18 +54,19 @@ pk = post.pkの部分は、 pkは主キーの略で、データベースの各�
 
 最初の投稿の詳細がこの**URL**に表示されるようにします：http://127.0.0.1:8000/post/1/
 
-Djangoが`post_detail`という名前の*表示*を指すように`blog/urls.py`ファイルにURLを作ってください。 ` blog / urlsに<code> url（r '^ post /（？P＆lt; pk＆gt; \ d +）/ $'、views.post_detail、name = 'post_detail'）、</ code>行を追加します。 py </ code>ファイルにコピーします。 ファイルは次のようになるでしょう。</p>
+Djangoが`post_detail`という名前の*表示*を指すように`blog/urls.py`ファイルにURLを作ってください。 `blog/urls.py``url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail',`行を追加します。 にファイルにコピーします。 ファイルは次のようになるでしょう。
 
-<p>{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}</p>
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
-<pre><code class="python">from django.conf.urls import url
+```python
+from django.conf.urls import url
 from . import views
 
 urlpatterns = [
     url(r'^$', views.post_list, name='post_list'),
     url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
 ]
-`</pre> 
+```
 
 この部分`^post/(？P<pk>\d)/$`は難しく見えますが、心配する必要はありません。
 
