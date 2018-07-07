@@ -49,7 +49,7 @@ A virtual environment (仮想環境とも呼ばれます) に取り組んでい�
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+[GitHub](https://github.com)のアカウントを作成しましょう。
 
 ### PythonAnywhere
 
