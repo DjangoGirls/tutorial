@@ -417,7 +417,7 @@ Djangoのフォームについての詳細を知りたい場合、Django Project
 
 ではPythonAnywhere上で動作するかを確認しましょう。再度デプロイします。
 
-* First, commit your new code, and push it up to GitHub:
+* まず、Githubにあなたの新しく書いたコードをCommitして、Pushしてみましょう。
 
 {% filename %}command-line{% endfilename %}
 
