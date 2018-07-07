@@ -67,20 +67,17 @@ urlpatterns = [
 ]
 `</pre> 
 
-この部分` ^ post /（？P <pk> \ d +）/ $ </ code>は難しく見えますが、心配する必要はありません。</p>
+この部分`^post/(？P<pk>\d)/$`は難しく見えますが、心配する必要はありません。
 
-<ul>
-<li><code> ^ </ code>は「文字列の開始」を意味します。</li>
-<li><code> post / </ code>というのは、最初の後に<strong>post</ strong>と<strong> / </ strong>という単語が含まれることを意味します。 ここまでは順調ですね。</li>
-<li><code>(?P<pk>\d+)` -この部分はトリッキーです。 これは、Djangoがあなたがここに置いたすべてを、` pk </ code>という変数としてビューに転送することを意味します。 （これは<code> blog / templates / blog / post_list.html </ code>でプライマリキー変数に与えた名前と一致します）！<code> \ d </ code> 数字で、文字ではありません（0と9の間のすべてです）。 
-<code> + </ code>は、そこに1つ以上の数字が必要であることを意味します。 したがって、<code> http://127.0.0.1:8000/post// </ code>のようなものは無効ですが、<code> http://127.0.0.1:8000/post/1234567890/ </ code>は 完全にOK！</li>
-<li>
-<code> / </ code>  - もう一度<strong> / </ strong>を入力する必要があります。</li>
-<li><code>$` -「終わり」!を意味します。</li> </ul> 
+- `^`は「文字列の開始」を意味します。
+- `post/`というのは、最初の後に**post**と**/**という単語が含まれることを意味します。 ここまでは順調ですね。
+- `(?P<pk>\d+)` -この部分はトリッキーです。 これは、Djangoがあなたがここに置いたすべてを、`pk`という変数としてビューに転送することを意味します。 （これは`blog/templates/blog/post_list.html`でプライマリキー変数に与えた名前と一致します）！`\d` 数字で、文字ではありません（0と9の間のすべてです）。 `+`は、そこに1つ以上の数字が必要であることを意味します。 したがって、`http://127.0.0.1:8000/post//`のようなものは無効ですが、`http://127.0.0.1:8000/post/1234567890/`は 完全にOK！
+- `/` - もう一度**/**を入力する必要があります。
+- `$` -「終わり」!を意味します。
 
-つまり、ブラウザに` http://127.0.0.1:8000/post/5/ </ code>を入力すると、Djangoは<em>view</ em>を探していると理解します。<code> post_detail </ code>に移動し、<code> pk </ code>が<code> 5 </ code>と同じ情報をその<em>view</ em>に転送します。</p>
+つまり、ブラウザに`http://127.0.0.1:8000/post/5/`を入力すると、Djangoは*view*を探していると理解します。`post_detail`に移動し、`pk`が`5`と同じ情報をその*view*に転送します。
 
-<p>[Ok] を我々 は <code>blog/urls.py` に新しい URL パターンを追加しました! ページを更新しましょう：http://127.0.0.1:8000/ Boom！ サーバーが再び実行を停止しました。 コンソールを見てください - 予想通り、もう一つのエラーがあります！
+[Ok] を我々 は `blog/urls.py` に新しい URL パターンを追加しました! ページを更新しましょう：http://127.0.0.1:8000/ Boom！ サーバーが再び実行を停止しました。 コンソールを見てください - 予想通り、もう一つのエラーがあります！
 
 ![AttributeError](images/attribute_error2.png)
 
@@ -88,20 +85,21 @@ urlpatterns = [
 
 ## 投稿の詳細ビューを追加する
 
-今回は* view </ em>に追加のパラメータ` pk </ code>が与えられます。 私たちの<em>view</ em>はそれを捕らえる必要がありますか？ そこで関数を<code> def post_detail（request、pk）：</ code>として定義します。 urls（<code> pk </ code>）で指定した名前とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略すると、エラーが発生します。</p>
+今回は*view*に追加のパラメータ`pk`が与えられます。 私たちの*view*はそれを捕らえる必要がありますか？ そこで関数を`def post_detail(request、pk):`として定義します。 urls（`pk`）で指定した名前とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略すると、エラーが発生します。
 
-<p>今、私たちは1つだけのブログ投稿を取得したいと考えています。 これを行うには、次のようにクエリーセットを使用できます。</p>
+今、私たちは1つだけのブログ投稿を取得したいと考えています。 これを行うには、次のようにクエリーセットを使用できます。
 
-<p>{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}</p>
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
-<pre><code class="python">Post.objects.get(pk=pk)
-`</pre> 
+```python
+Post.objects.get(pk=pk)
+```
 
-しかし、このコードには問題があります。 与えられた`主キー</ code>（<code> pk </ code>）で<code> Post </ code>が存在しない場合、非常に醜いエラーが発生します。</p>
+しかし、このコードには問題があります。 与えられた`主キー`（`pk`）で`Post`が存在しない場合、非常に醜いエラーが発生します。
 
-<p><img src="images/does_not_exist2.png" alt="DoesNotExist error" /></p>
+![DoesNotExist error](images/does_not_exist2.png)
 
-<p>私たちはそれを望んでいません！ しかしもちろん、Djangoには、それを処理するものがあります：<code> get_object_or_404 </ code>。 与えられた<code> pk </ code>に<code> Post </ code>がない場合、<code> Page Not Found 404 </ code>のページが表示されます。</p>
+私たちはそれを望んでいません！ しかしもちろん、Djangoには、それを処理するものがあります：`get_object_or_404`。 与えられた` pk </ code>に<code> Post </ code>がない場合、<code> Page Not Found 404 </ code>のページが表示されます。</p>
 
 <p><img src="images/404_2.png" alt="Page not found" /></p>
 
