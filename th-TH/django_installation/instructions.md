@@ -1,4 +1,4 @@
-> Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> บางส่วนของบทนี้ยึดหลักจากบทเรียนของ Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 > 
 > Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. บทเรียน django-marcador เป็นลิขสิทธิ์ของ Markus Zapke-Gründemann
 
@@ -8,7 +8,7 @@
 
 เอาล่ะ มาสร้าง **สภาพแวดล้อมเสมือน** กัน (เรียกว่า *virtualenv*). Virtualenv จะช่วยแยกสภาพแวดล้อมของ Python/Django ออกจากระบบหลัก ซึ่งหมายความว่า ขณะที่คุณกำลังสร้างเว็บไซต์ จะไม่มีผลกระทบกับระบบอื่นๆ ที่กำลังพัฒนาอยู่ เจ๋งใช่ไหมล่ะ?
 
-ทั้งหมดที่คุณต้องการคือ หาไดเรกทอรีที่คุณต้องการจะสร้าง `virtualenv`; เช่น ไดเรกทอรี home เป็นต้น On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+ทั้งหมดที่คุณต้องการคือ หาไดเรกทอรีที่คุณต้องการจะสร้าง `virtualenv`; เช่น ไดเรกทอรี home เป็นต้น บน Windows จะมีหน้าตาประมาณนี้ `C:\Users\Name` (ซึ่ง `Name` คือชื่อ login ของคุณ)
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
 
