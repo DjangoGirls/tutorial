@@ -37,23 +37,23 @@ To create a new `virtualenv`, you need to open the command prompt and run `pytho
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. คุณใช้ชื่ออื่นได้นะ แต่ขอแค่ให้ใช้ตัวพิมพ์เล็กไม่มีช่องว่าง, หรืออักขระพิเศษเป็นพอ It is also good idea to keep the name short – you'll be referencing it a lot!
+`myvenv` คือชื่อของ `virtualenv` ของคุณ คุณจะใช้ชื่ออื่นก็ได้นะ แต่ขอแค่ให้ใช้ตัวพิมพ์เล็กและไม่มีช่องว่างหรือใช้อักขระพิเศษ ถ้าจะให้ดีคุณควรที่จะใช้ชื่อสั้นๆ เพราะคุณต้องอ้างถึงมันบ่อยมาก!
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+สร้าง `virtualenv` ทั้งใน Linux และ OS X นั้นง่ายมาก แค่รันคำสั่ง `python3 -m venv myvenv` จะมีหน้าตาประมาณนี้:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` คือชื่อ `virtualenv` ของคุณ คุณใช้ชื่ออื่นได้นะ แต่ขอให้ใช้ตัวพิมพ์เล็กไม่มีช่องว่างหรืออักขระพิเศษเป็นพอ It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` คือชื่อ `virtualenv` ของคุณ คุณจะใช้ชื่ออื่นก็ได้นะ แต่ขอแค่ให้ใช้ตัวพิมพ์เล็กและไม่มีช่องว่าง ถ้าจะให้ดีคุณควรที่จะใช้ชื่อสั้นๆ เพราะคุณต้องอ้างถึงมันบ่อยมาก!
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **หมายเหตุ: ** ในบางรุ่นของ Debian/Ubuntu คุณอาจได้รับข้อความที่แสดงข้อผิดพลาดต่อไปนี้:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -82,14 +82,14 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **หมายเหตุ:** ถ้าคุณได้รับข้อผิดพลาดเช่น
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> ให้คุณรันนี่แทน
 > 
 > {% filename %}command-line{% endfilename %}
 > 
