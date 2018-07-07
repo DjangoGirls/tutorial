@@ -63,14 +63,14 @@ Anything else in the URL definition will be taken literally.
 
 * **^post/** is telling Django to take anything that has `post/` at the beginning of the URL (right after `^`)
 * **(\d+)** หมายความว่า ตรงนี้ต้องเป็นตัวเลข (หนึ่งตัวหรือมากกว่า) และเราต้องการหมายเลขนี้แหละ
-* **/** tells Django that another `/` character should follow
+* **/** บอก django ว่ามี `/` ต่อท้ายอีกหนึ่งอัน
 * **$** บ่งบอกถึงจุดสิ้นสุดของ URL หมายถึงว่า url ต้องลงท้ายด้วย `/` เท่านั้นถึงจะตรงกับรูปแบบนี้
 
-## Your first Django URL!
+## Django url แรกของคุณ!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+ถึงเวลาสร้าง URL แรกกันแล้ว! เราต้องการสร้าง 'http://127.0.0.1:8000/' ให้เป็นหน้าแรกของบล็อกเรา และแสดงรายการของโพสต์ทั้งหมด
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+นอกจากนี้เรายังต้องการให้ไฟล์ `mysite/urls.py` อ่านง่ายและสะอาดตา ดังนั้น เราจะ import url มาจาก application `blog` ไปยังไฟล์หลักคือ `mysite/urls.py`
 
 Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
 
@@ -89,13 +89,13 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Django จะจัดการทุกคำร้องขอที่เข้ามาที่ 'http://127.0.0.1:8000/' ไปยัง `blog.urls` และดูว่าจะทำอะไรต่อจากนี้
 
-Writing regular expressions in Python is always done with `r` in front of the string. ซึ่งเป็นประโยชน์กับ Python เพราะอาจจะมีอักขระพิเศษที่มีผลกับ regular expression
+การเขียน regular expression ใน Python จะทำโดยมี `r` นำหน้า string ซึ่งเป็นประโยชน์กับ Python เพราะอาจจะมีอักขระพิเศษที่มีผลกับ regular expression
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
+สร้างไฟล์เปล่าๆโดยใช้ชื่อ `urls.py` ในไดเรคทอรี `blog` เอาล่ะ! เพิ่มสองบรรทัดแรกนี้ลงไป:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,9 +116,9 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the `^$` URL. This regular expression will match `^` (a beginning) followed by `$` (an end) – so only an empty string will match. ซึ่งถูกต้อง เพราะ Django ประมวลดูว่า URL 'http://127.0.0.1:8000/' นั้นไม่ใช่ส่วนหนึ่งของ URL รูปแบบนี้จะบอก Django ว่า `views.post_list` คือที่ๆ ต้องมาดู เมื่อมีใครสักคนเข้ามายังหน้า 'http://127.0.0.1:8000/'
+อย่างที่คุณเห็น ตอนนี้เรากำหนดให้ `view` ชื่อ `post_list` ให้กับ URL `^$` Regular expression นี้จะจับคู่ `^` (ขึ้นต้น) ตามด้วย `$` (สิ้นสุด) - ดังนั้น string ที่ว่างเปล่าเท่านั้นที่จะจับคู่ได้ มันถูกต้อง เพราะ Django ประมวลดูว่า URL 'http://127.0.0.1:8000/' นั้นไม่ใช่ส่วนหนึ่งของ URL รูปแบบนี้จะบอก Django ว่า `views.post_list` คือที่ๆ ต้องมาดู เมื่อมีใครสักคนเข้ามายังหน้า 'http://127.0.0.1:8000/'
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. ตรงนี้สามารถใช้ชื่อเดียวกันกับ view ได้ แต่ก็ยังคงเป็นสิ่งที่แตกต่างกันอย่างสิ้นเชิงได้เช่นกัน We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+ส่วนสุดท้าย `name='post_list'` คือชื่อของ URL ที่จะถูกใช้เพื่อระบุว่าคือ view ไหน ตรงนี้สามารถใช้ชื่อเดียวกันกับ view ได้ แต่ก็ยังคงเป็นสิ่งที่แตกต่างกันอย่างสิ้นเชิงได้เช่นกัน We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
 If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
