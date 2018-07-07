@@ -26,15 +26,15 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-`models` の前にあるドットは *カレントディレクトリ* 、もしくは *カレントアプリケーション *のことです。 ` views.py `と `models.py `は、同じディレクトリに置いてあります。 This means we can use `.` and the name of the file (without `.py`). そして、モデルの名前を指定してインポートします(この場合のモデルは Post ですね).
+`models` の前にあるドットは *カレントディレクトリ* 、もしくは *カレントアプリケーション *のことです。 ` views.py `と `models.py `は、同じディレクトリに置いてあります。 だから、こんな風に`.`とファイル名だけを使って、簡単に記述することが出来るのです。（ファイル名の拡張子`.py `は必要ないです） そして、モデルの名前を指定してインポートします(この場合のモデルは `Post `ですね).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+さて、次にすべきことは、実際に `Post `モデルからブログの記事を取り出すことですが、それには `クエリセット `が必要です。
 
 ## クエリセット
 
-You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+もう、クエリセットの働きについては、知っていますよね。[クエリセット](../django_orm/README.md) チャプター で勉強しました。
 
-So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
+公開したブログ記事を `published_date `で並べ替えをしたいですね。これも、クエリセットの章でやったので、大丈夫ですね？
 
 {% filename %}blog/views.py{% endfilename %}
 
