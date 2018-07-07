@@ -151,9 +151,9 @@ PythonAnywhere'de bir web yazılımı konuşlandırmak için kodun GitHub'dan ç
     $ pip3.6 install --user pythonanywhere
     
 
-That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+Şimdi, programımızı otomatik olarak yapılandırmak için bu komutu calıştıralım. Aşağıdakileri PythonAnywhere konsoluna yazalım (GitHub username yerine kendi GitHub ismini yazmayı unutma `<your-github-username>`):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
