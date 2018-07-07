@@ -1,10 +1,10 @@
 # Django project แรก ของคุณ!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> บางส่วนของบทนี้ยึดหลักจากบทเรียนของ Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. บทเรียน django-marcador เป็นลิขสิทธิ์ของ Markus Zapke-Gründemann
+> บางส่วนของบทนี้ยึดหลักจาก [django-marcador tutorial](http://django-marcador.keimlink.de/) ที่ได้รับอนุญาตภายใต้ Creative Commons Attribution-ShareAlike 4.0 International License บทเรียน django-marcador เป็นลิขสิทธิ์ของ Markus Zapke-Gründemann
 
-We're going to create a small blog!
+เราจะมาสร้างบล็อกแบบง่ายๆ กัน!
 
 ขั้นตอนแรกคือการสร้าง Django project ใหม่ โดยทั่วไปแล้ว เราจะทำการเรียกใช้สคริปต์บางอย่างที่มาพร้อมกับ Django ซึ่งจะทำการสร้างโครงของ project Django ให้กับเรา ซึ่งประกอบไปด้วย ไฟล์และไดเรกทอรีจำนวนหนึ่งที่เราจะใช้ต่อไป
 
