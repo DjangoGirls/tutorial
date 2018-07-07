@@ -23,5 +23,5 @@
 * [CSSでカワイくしよう](css/README.md)
 * [テンプレートを拡張しよう](template_extending/README.md)
 * [アプリケーションを拡張しよう](extend_your_application/README.md)
-* [Djangoのフォーム](django_forms/README.md)
-* [次は何だろう?](whats_next/README.md)
+* [Djangoフォーム](django_forms/README.md)
+* [次のステップは？](whats_next/README.md)
