@@ -1,3 +1,3 @@
 # コードエディタ
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+コードエディタはコードを保存できるアプリケーションです。後でコードを戻すことができます。 [コードエディタの章](./code_editor/README.md)で、どこから入手できるか知ることができます。
