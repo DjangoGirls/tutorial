@@ -6,13 +6,13 @@
 
 休憩してリラックスしてください。 あなたは本当に大きなことを成し遂げました。
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+休んだ後は、[Facebook](http://facebook.com/djangogirls)や[Twitter](https://twitter.com/djangogirls)でDjango Girlsをぜひフォローしてくださいね。最新の情報を入手できます。
 
 ### Can you recommend any further resources?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
+このチュートリアルの拡張版である、[Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)を試してみてください。
 
-Later on, you can try the resources listed below. They're all very recommended!
+他にオススメの資料のリストを下記に記述します。とてもいいですよ。
 
 - [Django's official tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
 - [New Coder tutorials](http://newcoder.io/tutorials/)
