@@ -136,7 +136,7 @@ Kodunuz artık Github'da. Hemen gidip bak! İyi bir çevrede olduğunu göreceks
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## Sitemizin PythonAnywhere üzerinde yapılandırılması
 
 Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
