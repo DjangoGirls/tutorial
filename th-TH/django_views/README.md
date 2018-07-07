@@ -2,7 +2,7 @@
 
 ได้เวลาแก้บั๊กในบทก่อนหน้านี้แล้ว! :)
 
-*view* คือส่วนที่เราใส่ "logic" ของโปรแกรมของเรา โดยจะขอข้อมูลจาก `model` ที่คุณสร้างก่อนหน้านี้และส่งไปยัง `template` เราจะสร้าง template ในบทถัดไป Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*view* คือส่วนที่เราใส่ "logic" ของโปรแกรมของเรา โดยจะขอข้อมูลจาก `model` ที่คุณสร้างก่อนหน้านี้และส่งไปยัง `template` เราจะสร้าง template ในบทถัดไป View นั้นเป็นเพียงฟังก์ชั่นใน Python ซึ่งมีความซับซ้อนกว่าที่เราเคยสร้างในบท **ความรู้เบื้องต้นเกี่ยวกับ Python** นิดหน่อย
 
 view จะอยู่ในไฟล์ `views.py` เราจะเพิ่ม *view* ของเราลงในไฟล์ `blog/views.py`
 
@@ -31,7 +31,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
+อย่างที่คุณเห็น เราได้สร้างฟังก์ชั่น (`def`) ที่ชื่อว่า `post_list` โดยรับ `request` และ `return` ฟังก์ชั่น `render` ซึ่งจะแสดงผล (ซึ่งรวมเข้ากับ) template ของเราคือไฟล์ `blog/post_list.html`.
 
 Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
