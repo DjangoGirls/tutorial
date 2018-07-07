@@ -10,7 +10,7 @@
 
 # インストール
 
-In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+ワークショップに参加してWebサイト（ブログ）を作成する方は、このページの手順に従って、あらかじめ必用なインストールを行っておきましょう。ワークショップ当日はコードを書くことに集中できますよ。
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
@@ -41,18 +41,18 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# 読んでみよう
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+お疲れ様でした！これで準備が整いました。ワークショップが始まるまで時間あれば、いくつかのチャプターを読んでおくとよいでしょう。
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [インターネットのしくみ](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [コマンドラインを使ってみよう](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Pythonをはじめよう](../python_introduction/README.md)
 
-* [ジャンゴってなに？](../django/README.md)
+* [Djangoってなに？](../django/README.md)
 
-# Enjoy the workshop!
+# ワークショップを楽しんでください！
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+インストールDayにここまでのインストールが無事に出来た方は、ワークショップでは、[プロジェクトを作成しよう！](../django_start_project/README.md)のチャプターからはじめてください。
