@@ -5,7 +5,7 @@ Git คือ "version control system" ถูกใช้โดยโปรแ�
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-คุณสามารถดาวน์โหลด Git ได้จาก [git-scm.com](https://git-scm.com/) You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). นอกเหนือจากนั้น ใช้ค่าเริ่มต้นก็โอเคแล้ว นั่นคือ Checkout Windows-style, commit Unix-style line endings
+คุณสามารถดาวน์โหลด Git ได้จาก [git-scm.com](https://git-scm.com/) คุณสามารถกด "next" ในทุกขั้นตอนระหว่างติดตั้ง ยกเว้นในขั้นตอนที่บอกว่า "Adjusting your PATH environment" ให้เลือก "Run Git and associated Unix tools from the Windows command-line" (ตัวเลือกล่างสุด) นอกเหนือจากนั้น ใช้ค่าเริ่มต้นก็โอเคแล้ว นั่นคือ Checkout Windows-style, commit Unix-style line endings
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
