@@ -8,7 +8,7 @@
 
 Django Girlsのチュートリアルにようこそ！ お会いできて嬉しいです :) このチュートリアルでは、Webの技術というフードをかぶって私たちはあなたと旅に出ます。私たちが知っているようにWebを動かすのに必要なものすべてを垣間見ることができるでしょう。
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+知らないことを学ぶことは冒険のようなものです - でも心配はいりません。あなたはすでに勇気を出してここにいらっしゃっているのですから、きっとうまくいくでしょう :)
 
 ## はじめに
 
