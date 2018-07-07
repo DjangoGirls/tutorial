@@ -169,7 +169,7 @@ def post_new(request):
 
 แต่เดี๋ยวนะ! ถ้าคุณพิมพ์บางอย่างในช่อง `title` และ `text` และพยายามจะบันทึกมัน - จะเกิดอะไรขึ้นล่ะ?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+ไม่มีอะไรเลย! เราได้หน้าเดิมอีกครั้งและข้อความของเราหายไป... และ ไม่มีโพสต์ใหม่เพิ่มมา ถ้างั้น มีอะไรผิดไปล่ะ?
 
 คำตอบคือ: ไม่มีอะไรผิดหรอก เราต้องทำเพิ่มเติมเล็กน้อยใน *view*.
 
@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? ข้อมูลทั้งหมดจากฟอร์มตอนนี้คือใน `request.POST` เราไม่ควรเปลี่ยนชื่อ `POST` ไปเป็นอย่างอื่น (มีอีกหนึ่งค่าที่ใช้ได้สำหรับ `method` คือ `GET`, แต่เราไม่มีเวลาพอที่จะอธิบายความแตกต่างในตอนนี้)
+เมื่อเราบันทึกฟอร์ม เราจะถูกพากลับไปยัง view อันเดิม แต่ตอนนี้เรามีข้อมูลใน `request` มากขึ้น เจาะจงลงไปใน `request.POST` (ชื่อนี้ไม่เกี่ยวอะไรกับที่เรากำลังทำบล็อก "post" มันคือการบอกว่าเรากำลัง "posting" ข้อมูล) จำได้ไหมว่า ในไฟล์ HTML `<form>` มีตัวแปร `method="POST"`? ข้อมูลทั้งหมดจากฟอร์มตอนนี้คือใน `request.POST` เราไม่ควรเปลี่ยนชื่อ `POST` ไปเป็นอย่างอื่น (มีอีกหนึ่งค่าที่ใช้ได้สำหรับ `method` คือ `GET`, แต่เราไม่มีเวลาพอที่จะอธิบายความแตกต่างในตอนนี้)
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. ดังนั้น เราต้องเพิ่มเงื่อนไขเหล่านี้ (เราจะใช้ `if` ในการจัดการ):
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+ถึงเวลาแล้วที่จะเติมอะไรลงในจุด `[...]` If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
 
 {% filename %}blog/views.py{% endfilename %}
 
