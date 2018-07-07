@@ -134,7 +134,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-การสร้างฟอร์ม `Post` ใหม่, เราต้องเรียกใช้ `PostForm()` และส่งไปให้ template We will go back to this *view*, but for now, let's quickly create a template for the form.
+การสร้างฟอร์ม `Post` ใหม่, เราต้องเรียกใช้ `PostForm()` และส่งไปให้ template เดี๋ยวเราจะกลับไปที่ *view* แต่ตอนนี้ เรามาสร้างเทมเพลตสำหรับฟอร์มของเรากันก่อน
 
 ## เทมเพลต
 
@@ -147,7 +147,7 @@ def post_new(request):
 
 ![หน้า CSFR Forbidden](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+เอาล่ะ มาดูกันว่า HTML ใน `post_edit.html` จะมีหน้าตาเป็นยังไง:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -167,7 +167,7 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 
 ![ฟอร์มใหม่](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+แต่เดี๋ยวนะ! ถ้าคุณพิมพ์บางอย่างในช่อง `title` และ `text` และพยายามจะบันทึกมัน - จะเกิดอะไรขึ้นล่ะ?
 
 Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
