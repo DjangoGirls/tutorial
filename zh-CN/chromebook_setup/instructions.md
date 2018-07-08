@@ -2,11 +2,11 @@
 
 ### Cloud 9
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, Cloud 9 will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9是一个方便的工具, 它为你提供代码编辑器并使你可以访问在 Internet 上运行的计算机, 你可以在其中安装、编写和运行该软件。 在本教程接下来的时间内, Cloud 9将充当您的 * 本地计算机 *。 你仍将在终端界面中运行命令, 就像使用 OS X、Ubuntu 或 Windows 的同学一样, 但你的终端将连接到一台 Cloud 9 为你设置的运行在其他位置的计算机上。
 
 1. 从[Chrome商店](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp) 安装Cloud 9
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
+2. 转到 [c9.io](https://c9.io)
+3. 注册一个帐户
 4. 单击 * Create a New Workspace *
 5. 将其命名为*django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
