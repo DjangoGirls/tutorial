@@ -2,7 +2,7 @@
 
 * [介绍](README.md)
 * [安装](installation/README.md)
-* [Installation (chromebook)](chromebook_setup/README.md)
+* [安装（chromebook）](chromebook_setup/README.md)
 * [互联网是如何工作的](how_the_internet_works/README.md)
 * [命令行介绍](intro_to_command_line/README.md)
 * [Python的安装](python_installation/README.md)
@@ -20,7 +20,7 @@
 * [Django ORM (查询集)](django_orm/README.md)
 * [模板中的动态数据](dynamic_data_in_templates/README.md)
 * [Django模板](django_templates/README.md)
-* [CSS – make it pretty](css/README.md)
+* [CSS — 让网页更美观](css/README.md)
 * [模板扩展](template_extending/README.md)
 * [扩展您的应用](extend_your_application/README.md)
 * [Django表单](django_forms/README.md)
