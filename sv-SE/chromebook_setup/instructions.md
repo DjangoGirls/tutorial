@@ -32,9 +32,9 @@ I din terminal, placerad längst ned i Cloud 9 rutan, kör följande kommando:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Om detta kommando inte fungerar, fråga din lärare om hjälp.
 
-Next, run:
+Nästa steg, kör:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,11 +45,11 @@ Next, run:
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(Notera att den sista raden var det en tilde följt efter ett vanligt likhets-tecken).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Skapa ett [Github](https://github.com) konto.
 
 ### PythonAnywhere
 
