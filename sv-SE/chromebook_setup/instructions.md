@@ -7,20 +7,20 @@ Cloud 9 är ett verktyg som ger användaren en kod-editor och tillgång till en 
 1. Installera Clound 9 från [Chrome webshop](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Gå till [c9.io](https://c9.io)
 3. Registrera ett konto
-4. Click *Create a New Workspace*
-5. Name it *django-girls*
-6. Select the *Blank* (second from the right on the bottom row with orange logo)
+4. Klicka på *Create a New Workspace*
+5. Döpt den till *django-girls*
+6. Välj *Blank* (Näst längst till höger på nedersta raden med orange logotyp)
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Nu kan du se ett interface med en navigation vid sidan, ett stort huvud-fönster med någon text och ett litet fönster nertill som ser ut typ så här:
 
 {% filename %}Cloud 9{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Den nedersta delen är din *terminal*, här kommer du ge din Cloud 9 dator instruktioner. Du kan ändra storleken på ditt fönster och göra det större.
 
-### Virtual Environment
+### Virtuell miljö
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
