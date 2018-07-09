@@ -22,9 +22,9 @@ Den nedersta delen är din *terminal*, här kommer du ge din Cloud 9 dator instr
 
 ### Virtuell miljö
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+En virtuell miljö (också kallad virtualenv) är som en typ av privat dator som man kan använda för att spara data och program som man använder i sitt projekt. Vi kommer använda den för att spara olika bitar av kod som tillhör olika projekt. På detta sätt kommer koden till projekten hållas separat från varandra så att vi inte blandar ihop de olika projekt-koden.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+I din terminal, placerad längst ned i Cloud 9 rutan, kör följande kommando:
 
 {% filename %}Cloud 9{% endfilename %}
 
