@@ -2,11 +2,11 @@ Du kan [hoppa över denna sektion](http://tutorial.djangogirls.org/en/installati
 
 ### Cloud 9
 
-Cloud 9 är ett verktyg som ger användaren en kod-editor och tillgång till en sorts dator som man kör i webbläsaren. Denna dator kan man installera, skriva och köra mjukvara. Under denna introduktion kommer Clod 9 vara din *lokala maskin*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that Cloud 9 sets up for you.
+Cloud 9 är ett verktyg som ger användaren en kod-editor och tillgång till en sorts dator som man kör i webbläsaren. Denna dator kan man installera, skriva och köra mjukvara. Under denna introduktion kommer Clod 9 vara din *lokala maskin*. Du kommer fortfarande att köra din kommandon i terminalen, precis som dina klasskamrater som sitter på OS X, Ubuntu eller Windows, men din terminal kommer vara kopplat till en dator som Cloud 9 har satt upp till dig.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io)
-3. Sign up for an account
+1. Installera Clound 9 från [Chrome webshop](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Gå till [c9.io](https://c9.io)
+3. Registrera ett konto
 4. Click *Create a New Workspace*
 5. Name it *django-girls*
 6. Select the *Blank* (second from the right on the bottom row with orange logo)
