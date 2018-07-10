@@ -64,7 +64,7 @@ Nu ska vi skapa en CSS-fil, för att lägga till din egen stil till din webbsida
 
 Dags att skriva lite CSS! Öppna upp filen `blog/static/css/blog.css` i din kod-editor.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Vi kommer inte gå djupare in på att skräddarsy och lära oss CSS här. Det finns en rekommendation för en gratis CSS kurs på slutet av denna sida om du är sugen på att lära dig mer.
 
 Men låt oss ändra åtminstone lite grann. Vi kanske kan ändra färgen på rubriken? För att förstå färger använder datorer speciella koder. De börjar med `#` följt av 6 bokstäver (A-F) och siffror (0-9). Till exempel är koden för blå `#0000FF`. Du kan hitta exempel på färgkoder här: http://www.colorpicker.com/. Du kan också använda [fördefinierade färger](http://www.w3schools.com/colors/colors_names.asp), som `red` och `green`.
 
