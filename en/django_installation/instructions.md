@@ -172,15 +172,29 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 A requirements file keep a list of dependencies to be installed using
 `pip install`:
 
-First, run `pip install django~=2.0.6` to install Django.
+First create a `requirements.txt` file inside of `djangogirls/` folder:
+
+```
+djangogirls
+└───requirements.txt
+```
+
+In your `djangogirls/requirements.txt` file you should add the following text:
+
+{% filename %}djangogirls/requirements.txt{% endfilename %}
+```
+Django==2.0.6
+```
+
+Now, run ``pip install -r requirements.txt`` to install Django.
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~$ pip install django~=2.0.6
-Collecting django
-  Downloading Django-2.0.6-py2.py3-none-any.whl (6.8MB)
-Installing collected packages: django
-Successfully installed django-2.0.6
+(myvenv) ~$ pip install -r requirements.txt
+Collecting Django==2.0.6 (from -r requirements.txt (line 1))
+  Downloading Django-2.0.6-py3-none-any.whl (7.1MB)
+Installing collected packages: Django
+Successfully installed Django-2.0.6
 ```
 
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
@@ -197,7 +211,7 @@ data-collapse=true ces-->
 >
 >{% filename %}command-line{% endfilename %}
 >```
->C:\Users\Name\djangogirls> python -m pip install django~=2.0.6
+>C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >```
 
 <!--endsec-->
@@ -208,16 +222,5 @@ data-collapse=true ces-->
 > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
-
-Let's create a `requirements.txt`, run `pip freeze > requirements.txt` to save `django~=2.0.6` as a dependency of the project.
-
-The `requirements.txt` should be inside of `blog/`:
-
-```
-blog
-└───requirements.txt
-```
-
-
 
 That's it! You're now (finally) ready to create a Django application!
