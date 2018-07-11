@@ -1,5 +1,8 @@
 {
     "gitbook": ">=3.2.0",
+    "variables": {
+      "django_version": "2.0.6"
+    },
     "links": {
         "sidebar": {
             "Need help? Talk to us!": "https://gitter.im/DjangoGirls/tutorial"
