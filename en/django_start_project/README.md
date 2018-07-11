@@ -47,7 +47,7 @@ The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` is a script that will create the directories and files for you. When you execute it you should indicate, that you would like to start a new project and tell the project name. For example `django-admin.py startproject myfirstproject`. As a result a new directory is created with the same name as your project. You should now have a directory structure which looks like this:
 
 ```
 djangogirls
