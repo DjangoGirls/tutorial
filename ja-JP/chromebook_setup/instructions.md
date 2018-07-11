@@ -45,7 +45,7 @@ Chromebookをお持ちでない場合は、[このセクションをスキップ
     pip install django~=1.11.0
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(最後の行はチルダに続けてイコール記号をつけることに気をつけてください: ~=)
 
 ### GitHub
 
