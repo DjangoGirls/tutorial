@@ -1,4 +1,4 @@
-> このチャプターの一部はGeek Girls Carrots (http://django.carrots.pl/)のチュートリアルに基づいています。
+> このチャプターの一部はGeek Girls Carrots (http://django.carrots.pl/) のチュートリアルに基づいています。
 > 
 > このチャプターの一部はCreative Commons Attribution-ShareAlike 4.0 International License のライセンスによるdjango-marcador tutorialに基づいています. このdjango-marcador tutorialはMarkus Zapke-Gründemann らが著作権を保有しています。 
 
@@ -44,7 +44,7 @@ data-collapse=true ces-->
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-LnuxやOX Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実行するだけです。 たとえばこんな感じです：
+LinuxやOS Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実行するだけです。 たとえばこんな感じです：
 
 {% filename %}command-line{% endfilename %}
 
@@ -155,22 +155,39 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
 
 今度はあなたの`virtualenv`を起動したので、Djangoをインストールすることができます。
 
-これを行う前に、Djangoのインストールに使用する最新バージョンの`pip`がインストールされていることを確認する必要があります。
+これを行う前に、Djangoのインストールに使用する最新バージョンの`pip`がインストールされている必要があります。
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-コンソールで、`pip install django~=1.11.0` を実行してDjangoをインストールします。（この時、チルダとイコール`~=`を使います。）
+### Requirementsファイルによってパッケージをインストールする
+
+Requirementsファイルは`pip install`でインストールするためのパケッケージリストが記載されているファイルです:
+
+最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります:
+
+    djangogirls
+    └───requirements.txt
+    
+
+`djangogirls/requirements.txt` ファイル中に以下のテキストを追加します:
+
+{% filename %}djangogirls/requirements.txt{% endfilename %}
+
+    Django=={{ book.django_version }}
+    
+
+そして、`pip install -r requirements.txt` を実行してDjangoをインストールします。
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install django~=1.11.0
-    Collecting django~=1.11.0
-      Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
-    Installing collected packages: django
-    Successfully installed django-1.11.3
+    (myvenv) ~$ pip install -r requirements.txt
+    Collecting Django=={{ book.django_version }} (from -r requirements.txt (line 1))
+      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+    Installing collected packages: Django
+    Successfully installed Django-{{ book.django_version }}
     
 
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
@@ -187,7 +204,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
+>     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >     
 
 <!--endsec-->
@@ -195,7 +212,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Ubuntu 12.04でpipを呼んだときにエラーが起きた場合は、仮想環境(virtualenvironment)内でpipインストールをフィックスするために`python -m pip install -U --force-reinstall pip` を実行して下さい。
+> Ubuntu 12.04でpipを呼んだときにエラーが起きた場合は、仮想環境(virtualenvironment) 内でpipインストールを直すために`python -m pip install -U --force-reinstall pip` を実行して下さい。
 
 <!--endsec-->
 

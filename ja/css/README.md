@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a` はCSSセレクタと呼ばれるものです。 `h1` 要素の中にある `a` 要素にスタイルを適用します、という意味になります。 よって `<h1><a href="">link</a></h1>`となっているとき、 `h1 a` スタイルが適用されます。 この場合、その要素を `#FCA205` に、つまりオレンジ色にしようとしています。 もちろん、あなたの好きな色に変えられます！
 
-CSSファイルには、HTMLファイルの各要素のスタイルを指定していきます。 まずは要素名でもって、その要素を識別します。 HTMLのタグ名は覚えがあるでしょう。 例えば `a`, `h1`, `body` などが要素名となります。 また、`class` 属性や、`id` 属性によって要素を識別することができます。 classやidは、あなたが自分で要素につけることができる名前です。 classは要素のグループを定義して、idは特定の要素を指定します。 例えば、次のタグは、タグ名 `a`、class名 `external_link`、id名 ` link_to_wiki_page`、どれを使ってもCSSによって識別されます。
+CSSファイルには、HTMLファイルの各要素のスタイルを指定していきます。 まずは要素名でもって、その要素を識別します。 HTMLのタグ名は覚えがあるでしょう。 例えば `a`, `h1`, `body` などが要素名の例です。 また、`class` 属性や、`id` 属性によって要素を識別することができます。 classやidは、あなたが自分で要素につけることができる名前です。 classは要素のグループを定義して、idは特定の要素を指定します。 例えば、次のタグは、タグ名 `a`、class名 `external_link`、id名 ` link_to_wiki_page`、どれを使ってもCSSによって識別されます。
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -161,7 +161,7 @@ body {
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-まずは、このリンクが `blog/static/css/blog.css` より前にあることを確かめましょう。この１行は *Lobster* というフォントをGoogle Fonts (https://www.google.com/fonts)から読み込むということを意味しています。
+まずは、このリンクが `blog/static/css/blog.css` より前にあることを確かめましょう。この１行は *Lobster* というフォントをGoogle Fonts (https://www.google.com/fonts) から読み込むということを意味しています。
 
 `blog/static/css/blog.css` ファイルの中の、 `h1 a` という宣言ブロックを見つけてください（コードは `{` と `}` で囲まれています）。 そして、そのカッコの中に `font-family: 'Lobster';` と１行追加して、webサイトを更新してみましょう：
 

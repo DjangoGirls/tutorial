@@ -21,11 +21,11 @@ URLは簡単に言えばWEB上のアドレスです。 サイトのURLは、ブ�
 
 [...]
 """
-from django.conf.urls import url
+from django.urls import path, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
 ]
 ```
 
@@ -38,37 +38,14 @@ urlpatterns = [
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-    url(r'^admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
 ```
 
 `admin/` で始まる全てのURLについて、Djangoが返すべき*view*をこの行で指定しています。 今回の場合、adminで始まるURLをたくさん作ることになりますが、その全てをこの小さいファイルに書くようなことはしません。この方がきれいで読みやすいですし。
 
-## 正規表現
+## あなたの初めてDjango URL!
 
-どうやってDjangoはビューとURLを紐づけるのかと思うかもしれません。 そうです、この部分はひとひねりしています。 Djangoは `regex`、正規表現を使います。 Regexは多くの（本当に多くの）検索パターンのルールを持っています。 正規表現は突きつめると高度な話になりますので、どのように動作しているのか詳しい仕組みまではここでは説明しません。
-
-どのようにパターンが作られるかを理解したいなら、こちらにプロセスの例があります。探し求めているパターンを表現する限定したルールの一部分だけを説明するとこんな感じです：
-
-* `^` テキストの先頭を示す
-* `$` テキストの末尾を示す
-* `\d` 数字を示す
-* `+` 前のアイテムを1回以上繰り返すことを示す
-* `()` パターンの一部を取得する
-
-URL定義内で、ほかのものはすべて文字通り受け取られます。
-
-`http://www.mysite.com/post/12345/` このようなウェブサイトのアドレスを想像してみてください。この `12345` の部分がポストした記事の番号です。
-
-すべてのポストした記事の数を分けて記述することは非常に面倒です。 正規表現では、それらの数字を抽出し、URLに一致したパターンが作れます。それは、`^post/(\d+)/$` と表せます。 １つずつそれが何を示しているか紐解いてみましょう。
-
-* **^post/** は `post/` で始まるURL（^のすぐ後）を示します。
-* **(\d+)** は１つか複数の数字を示します。取り出したい番号のことです。
-* **/** は別の文字列が続くことを示します。
-* **$** は `/` で終わることを示します。URLの終わりを示します。
-
-## Your first Django URL!
-
-さあ最初のURLを作りましょう！'http://127.0.0.1:8000/'はブログの入口ページなので、投稿したブログポストのリストを表示したいところです。
+さあ最初のURLを作りましょう！'http://127.0.0.1:8000/' をブログの入口ページにして、投稿したブログポストのリストを表示するようにしたいと思います。
 
 `mysite/urls.py` ファイルは簡潔なままにしておきたいので、`mysite/urls.py` では`blog` アプリからURLをインポートするだけにしましょう。
 
@@ -79,51 +56,48 @@ URL定義内で、ほかのものはすべて文字通り受け取られます�
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import include
-from django.conf.urls import url
+from django.urls import path, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'', include('blog.urls')),
+    path('admin/', admin.site.urls),
+    path('', include('blog.urls')),
 ]
 ```
 
 これでDjangoは'http://127.0.0.1:8000/'に来たリクエストは `blog.urls` へリダイレクトするようになり、それ以降はそちらを参照するようになります。
 
-Pythonで正規表現を書く時は、常に `r` の後に文字を書きます。 これは、文字列がPythonで意味しない特別な文字であり、正規表現では意味する文字を含む、ということを表します。
-
-## blog.urls
+## blog のURL
 
 `blog` ディレクトリの下に、新しく `urls.py` という空のファイルを作って下さい。そして最初の2行を以下のように書きます：
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path
 from . import views
 ```
 
 これはDjangoの `url` 関数と、`blog` アプリの全ての `views`（といっても、今は一つもありません。すぐに作りますけど！）をインポートするという意味です。
 
-その後に、最初のURLパターンを追加します：
+その後、最初のURLパターンを追加します。
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
+    path('', views.post_list, name='post_list'),
 ]
 ```
 
-これは `^$` というパターンのURLを `post_list` という `view` に割り当てたことを意味します。 `^$` という正規表現は、空の文字列にマッチすることを表しています。ただそれだけです。 ご覧のとおり、Django URLリゾルバでは 'http://127.0.0.1:8000/' はURLの一部に含めません。 このパターンは、'http://127.0.0.1:8000/' というアドレスに訪れたら、`views.post_list` を表示させるという動作を導きます。
+見てのとおり、`post_list` という名前の `ビュー` をルートURLに割り当てています。 このURLパターンは空の文字列に一致し、DjangoのURL名前解決はフルパスの前半にくっつくドメイン名（つまり、http://127.0.0.1:8000/ の部分）を無視します。 このパターンは誰かがあなたのWebサイトの 'http://127.0.0.1:8000/' というアドレスにアクセスしてきたら `views.post_list` が正しい行き先だということをDjangoに伝えます。
 
-最後の `name='post_list'` は、ビューを識別するために使用する URL の名前です。 ここでは、ビューと同じ名前をつけていますが、全く違う名前をつけることもできます。 ここで名付けたURLはこのチュートリアルの後の方で使用するので、URLに対してきちんと名前をつけておきましょう。この名前はユニーク（一意）にしておく必要があります。また、シンプルにしておいた方が覚えやすいですよ。
+最後の `name='post_list'` は、ビューを識別するために使われるURL の名前です。 これはビューと同じ名前にすることもできますが、全然別の名前にすることもできます。 プロジェクトでは名前づけされたURLを後で使うことになるので、アプリのそれぞれのURLに名前をつけておくのは重要です。また、URLの名前はユニークで覚えやすいものにしておきましょう。
 
-では、http://127.0.0.1:8000/ を開いて結果を見てみましょう。残念ながら'web page not available'というメッセージが表示されます。 これはサーバ（ `runserver` ってタイプしたのを覚えていますか？）が動いていないからです。 なぜこうなったのかを知るためにサーバのコンソール画面を見てみましょう。
+もし今 http://127.0.0.1:8000/ にアクセスしたら、'web page not available' のようなメッセージが出るでしょう。 これはサーバー（ `runserver` ってタイプしたのを覚えていますか？）が動いていないからです。 なぜこうなったのかを知るためにサーバーのコンソール画面を見てみましょう。
 
 ![エラー](images/error1.png)
 
-エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' というアトリビュートがない**ことを知らせてくれています。 Djangoは、その名前の *ビュー* を探してこようとしますが、まだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 なにもおかしいことはしていません。次の章ではビューを作っていきましょう。
+エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' という属性がない**ことを知らせてくれています。 これは *ビュー* の名前で、Djangoが探して使おうとしましたが、私たちはこれをまだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 心配しなくて大丈夫です。ちゃんとできますから。
 
-> Django URLconfについて知りたい場合は、公式のドキュメントを見て下さい： https://docs.djangoproject.com/en/1.11/topics/http/urls/
+> Django URLconfについてもっと知りたい場合は、公式のドキュメントを見て下さい： https://docs.djangoproject.com/ja/2.0/topics/http/urls/

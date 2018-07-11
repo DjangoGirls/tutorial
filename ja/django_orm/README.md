@@ -191,7 +191,7 @@ ola という `ユーザ名` の `User` モデルのインスタンスを、`取
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-逆順、つまり新しく追加した順に並べ替えることも出来ます。それには、`-` ハイフンを使います。
+逆順、つまり新しく追加した順に並べ替えることも出来ます。それには、`-`（ハイフン）を使います。
 
 {% filename %}command-line{% endfilename %}
 
