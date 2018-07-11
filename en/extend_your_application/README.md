@@ -66,7 +66,7 @@ urlpatterns = [
 ]
 ```
 
-This part ``post/<int:pk>/`` specify a url pattern – we will explain it for you:
+This part ``post/<int:pk>/`` specifies a URL pattern – we will explain it for you:
 - `post/` just means that the URL should begin with the word __post__ followed by a __/__. So far so good.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
 - `/` – then we need a __/__ again before finishing the url.

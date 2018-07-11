@@ -167,7 +167,12 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 (myvenv) ~$ python3 -m pip install --upgrade pip
 ```
 
-Then run `pip install django~=2.0.6` to install Django.
+### Installing packages with requirements
+
+A requirements file keep a list of dependencies to be installed using
+`pip install`:
+
+First, run `pip install django~=2.0.6` to install Django.
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -203,5 +208,16 @@ data-collapse=true ces-->
 > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
+
+Let's create a `requirements.txt`, run `pip freeze > requirements.txt` to save `django~=2.0.6` as a dependency of the project.
+
+The `requirements.txt` should be inside of `blog/`:
+
+```
+blog
+└───requirements.txt
+```
+
+
 
 That's it! You're now (finally) ready to create a Django application!
