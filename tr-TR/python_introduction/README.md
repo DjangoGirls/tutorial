@@ -519,7 +519,7 @@ We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 
 Awesome! Wanna do one more? Try this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> 6 > 2 and 2 < 3
@@ -530,14 +530,14 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Python'a istediğiniz kadar sayıyı karşılaştırmak için verebilirsiniz, ve size hepsinin cevabını verecek. Çok akıllı değil mi?
 
 - **and** - Eğer `and` işlecini kullanırsan, bütün komutların doğru olması için her iki kıyaslama da doğru olmak zorundadır
 - **or** - eğer `or` işlecini kullanırsan, bütün komutların doğru olması için kıyaslamalardan yalnızca biri doğru olmak zorundadır
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Portakallarla elmaları karşılaştılaştırabilir miyiz? Bunun Python'daki eşdeğerini deneyelim: 
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} komut satırı{% endfilename %}
 
 ```python
 >>> 1 > 'django'
@@ -546,20 +546,20 @@ Geri görüş (en son çağrı):
 HataTürü: ‘>’ 'int' ve 'str' örnekleri arasında desteklenmiyor
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+Gördüğünüz gibi Python tam sayılar(`int`) ve kelimeleri(yani stringleri, `str`) karşılaştıramıyor. Onun yerine, **TypeError** göstererek iki farklı tipteki değişkenin karşılaştırılamayacağını söylüyor.
 
 ## Boolean (Mantıksal)
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Bu arada, python'da yeni bir nesne türü öğrendin. Buna **Boolean** denir.
 
-There are only two Boolean objects:
+Yalnızca iki Boolean nesnesi vardır:
 
-- Doğru
-- Yalnış
+- True
+- False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+Python'un bunu anlaması için her zaman "True" (ilk harf büyük, geri kalanları küçük) yazmanız gerekiyor. **true, TRUE, tRUE işe yaramaz -- sadece True doğru.** (Aynısı "False" için de geçerli.)
 
-Booleans can be variables, too! See here:
+Boolean'lar değişken de olabiliyor! Bakınız:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -569,9 +569,9 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+Ayrıca bu şekilde de yapabilirsiniz:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
 ```python
 >>> a = 2 > 5
@@ -579,61 +579,62 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Boolean'lar ile aşağıdaki komutları deneyerek biraz oynayın:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Tebrikler! Boolean'lar programlamadaki en havalı özelliklerden, ve az önce onları nasıl kullanmanız gerektiğini öğrendiniz!
 
 # Kaydet!
 
 > Evdeki okuyucular için: Bu kısım [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) videosunda işlenmiştir.
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Şimdiye kadar kodumuzu bizi sadece tek satır yazmaya limitleyen yorumlayıcı üzerinde yazdık. Normal programlar dosyalar içine kaydedilir ve programlama dilimizin **yorumlayıcısıyla** veya **derleyicisiyle** çalıştırılır. Şimdiye kadar programlarımızı Python **yorumlayıcısında** teker satır teker satır çalıştırdık. Bundan sonraki görevlerde, birden fazla satıra ihtiyacımız olacak, bu yüzden şunlara ihtiyacımız olacak:
 
 - Python yorumlayıcısından çıkın
 - Seçtiğiniz kod düzenleyicisini açın
 - Yeni Python dosyasına kod kaydedin
 - Çalıştırın!
 
-To exit from the Python interpreter that we've been using, simply type the `exit()` function
+Kullandığımız Python yorumlayıcısından çıkmak için sadece `
+exit() ` fonksiyonunu yazmanız yeterlidir
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> exit()
 $
 ```
 
-This will put you back into the command prompt.
+Bu sizi komut satırına geri yönlendirecektir.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+Biraz önce [kod editörü](../code_editor/README.md) bölümünden bir kod editörü seçmiştik. Şimdi o editörü açmalı ve yeni bir dosya içine kod yazmalıyız:
 
-{% filename %}editor{% endfilename %}
+{% filename %}editör{% endfilename %}
 
 ```python
-print(‘Merhaba, Django kızları!’)
+print('Merhaba, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Açıkça, artık oldukça deneyimli Python programcısısın, bu yüzden bugün öğrendiğin kodları yazmaktan çekinme.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Şimdi dosyayı tanımlayıcı bir isimle kaydetmemiz gerekir. Dosyanın ismine **python_intro.py** diyelim ve masaüstüne kaydedelim. Dosyaya istediğimiz ismi verebiliriz, burada önemli olan kısım dosyanın **.py** uzantısı ile bitmesidir. **.py** uzantısı işletim sistemimize bu dosyanın bir **python çalıştırılabilir dosyası** olduğunu ve Python'un bu dosyayı çalıştırabileceğini belirtiyor.
 
 > **Not** Kod editörleriyle ilgili en harika şeylerden birine dikkat etmelisiniz: renkler! Python konsolunda herşey aynı renkteydi; şimdi bakın `print` fonksiyonu dizeden farklı renkte. Bunun ismi "söz dizimi vurgulama" ve kod yazarken gerçekten yararlı bir özellik. Koddaki renkler ipucu verir, kapanmamış dizeler gibi yada aşağıda göreceğimiz (`def` fonksiyonu gibi imla hatası içeren anahtar kelimeler oalbilir). Bu kod düzenleyicisi kullanma nedenlerimizden biri. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Dosyayı kaydettiğimize göre artık çalıştırabiliriz! Konsoldan **klasör değiştirme ** yaparak masaüstüne ulaşın, komut satırı bölümünde öğrendiklerinizi hatırlayın.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Mac'de bu komut şunun gibi görünecektir:
 
 {% filename %}komut-satırı{% endfilename %}
 
-    $ cd ~/Masaüstü
+    $ cd ~/Desktop
     
 
 <!--endsec-->
@@ -641,40 +642,40 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+Linux'ta ise bu şekilde ("Desktop" kelimesi "Masaüstü" olarak da görünebilir):
 
 {% filename %}komut-satırı{% endfilename %}
 
-    $ cd ~/Masaüstü
+    $ cd ~/Desktop
     
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Windows Komut İstemi’nde, bunun gibi olacak:
 
 {% filename %}komut-satırı{% endfilename %}
 
-    > cd %HomePath%\Masaüstü
+    > cd %HomePath%\Desktop
     
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Ve Windows Powershell’de, bunun gibi olacak:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
-    > cd $Home\Masaüstü
+    > cd $Home\Desktop
     
 
 <!--endsec-->
 
-If you get stuck, just ask for help.
+Bir problem olursa yardım istemekten çekinmeyin.
 
-Now use Python to execute the code in the file like this:
+Şimdi dosyadaki komutları çalıştırmak için Python'u kulllanın:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -682,21 +683,21 @@ Now use Python to execute the code in the file like this:
     Merhaba, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Not: Windows'ta 'python3' bir komut olarak geçmez. Onun yerine, dosyayı çalıştırmak için 'python'ı kullanın:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Tamam! Bir dosyaya kaydedilen ilk Python programınızı çalıştırdınız. Harika hissediyor musunuz?
 
-You can now move on to an essential tool in programming:
+Şimdi programlamanın olmazsa olmaz bir aracını öğrenme zamanı:
 
-## eğer…elif… yoksa
+## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Kodunuzdaki bir çok şeyi sadece belirli bir durum sağlanıyorsa çalıştırmayı isteyeceksiniz. İşte tam da bu yüzden Python'da **if deyimi** isminde bir yapı bulunuyor.
 
 **python_intro.py** dosyasındaki kodunuzu şununla değiştirin:
 
