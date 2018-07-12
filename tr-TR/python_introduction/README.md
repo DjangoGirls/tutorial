@@ -262,7 +262,7 @@ Daha ileride göreceğimiz gibi `print()`, işlevlerin içindeyken bir şey yazd
 
 Python, string (dize) ve integerın (tam sayı) yanı sıra, çok değişik türlerde nesnelere sahiptir. Şimdi, **liste** türünü tanıtacağız. Listeler tam da düşündüğünüz gibidir: diğer nesnelerin listesi olan nesne. :)
 
-Go ahead and create a list:
+Yeni bir liste yaratmakla devam edelim:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -271,7 +271,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Evet, liste boş. Çok kullanışlı sayılmaz, değil mi? Hadi loto numaralarıyla liste oluşturalım. Sürekli kendimizi tekrar etmek istemeyiz, o yüzden listeyi değişkene atayalım:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Pekala, listeyi oluşturduk! Onunla ne yapabiliriz? Hadi listede kaç tane loto numarası olduğunu görelim. Hangi fonksiyonu kullanman gerektiği hakkında bir fikrin var mı? Zaten bildiğin bir fonksiyon!
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -288,7 +288,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Evet! `len()` listedeki nesne sayısını verir. Kullanışlı, değil mi? Belki de şu an listeyi sıralarız:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -296,18 +296,18 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Bu hiçbir cevap vermez, sadece listedeki numaraların sırasını değiştirir. Şimdi listeyi yazdıralım ve ne olduğunu görelim:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> print(lottery)
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Gördüğünüz gibi, listedeki sayılar artık küçükten büyüğe sıralı. Tebrikler!
 
-Maybe we want to reverse that order? Let's do that!
+Belki de sıralamayı ters çevirmek isteriz? Hadi yapalım!
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Kolay, değil mi? Listeye yeni bir eleman eklemek isterseniz, şu komutu yazarak yapabilirsiniz:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -327,9 +327,9 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Sadece listedeki ilk elemanı göstermek isterseniz, **indexes** (indeksler) ile yapabilirsiniz. İndeks elemanın listede nerede olduğunu belirten numaradır. Programcılar sıfırdan başlamayı tercih ederler, bu yüzden listedeki ilk eleman listenin 0. indeksindedir, sonraki 1. indeksindedir ve böyle devam eder. Şunu deneyin:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> print(lottery[0])
@@ -338,11 +338,11 @@ If you want to show only the first number, you can do this by using **indexes**.
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Gördüğünüz gibi, listedeki nesnelere listenin ismi ve köşeli parantez içindeki nesnenin indeksini kullanarak ulaşabilirsin.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Listenizden bir şeyler silmek için, yukarıda öğrendiğimiz gibi **indeksleri** ve `pop()` metodunu kullanmamız gerekecektir. Bir örnekle öğrendiklerimizi pekiştirelim; listeden ilk numarayı sileceğiz.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> print(lottery)
@@ -355,17 +355,17 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Kusursuz çalıştı!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+Daha fazla eğlence için diğer indeksleri de deneyin: 6, 7, 1000, -1, -6 veya -1000. Denemeden önce komutların sonuçlarını tahmin etmeye çalışın. Sonuçlar mantıklı mıydı?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Bütün liste fonksiyonlarını Python dökümantasyonunun bu bölümünde bulabilirsin: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Sözlükler (Dictionaries)
 
 > Evdeki okuyucular için: Bu kısım [Python Temelleri: Sözlükler](https://www.youtube.com/watch?v=ZX1CVvZLE6c) videosunda işlenmiştir.
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Sözlük listeye benzerdir ancak sözlük değerlerine indeks yerine anahtar ile ulaşılır. Anahtar metin veya numara olabilir. Boş bir sözlük oluşturmak için kullanılan söz dizimi şudur:
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,36 +374,36 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Bu boş bir sözlük oluşturduğunuzu gösterir. Yaşasın!
 
-Now, try writing the following command (try substituting your own information, too):
+Şimdi, bu komutu yazmayı deneyin (kendi bilgilerinizle değiştirmeyi deneyin):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> participant = {'name': 'Ayşe', 'country': 'Türkiye', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Bu komutla, üç anahtar-değer çifti ile `participant` (katılımcı) isminde bir değişken oluşturdunuz:
 
 - Anahtar `name` `'Ayşe'` (`string` nesnesi) değerine işaret eder,
 - `country` `Türkiye` (bir diğer `string`) değerine),
 - ve `favorite_numbers` `[7, 42, 92]` (3 numaralı bir `list`) değerine işaret eder.
 
-You can check the content of individual keys with this syntax:
+Bu söz dizimi ile tek bir anahtarın içeriğini kontrol edebilirsin:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> print(participant['name'])
 Ayşe
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Gördünüz mü, bu listeye benzer. Fakat indeksi hatırlamanıza gerek yok - sadece ismini hatırlayın.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Python'a olmayan bir anahtarın değerini sorarsak ne olur? Tahmin edebiliyor musun? Hadi deneyip görelim!
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} komut satırı{% endfilename %}
 
 ```python
 >>> participant['age']
@@ -412,14 +412,14 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Bir başka hata! **KeyError** hatası. Python yardımseverdir ve sana `'age'` anahtarının sözlükte bulunmadığını söyler.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+Ne zaman sözlük veya liste kullanmalısın? Düşünmek için güzel bir nokta. Sonraki satırdaki cevaba bakmadan önce kafanızda bir çözüm oluşturun.
 
 - Sıralı elemanlara mı ihtiyacın var? Liste ile devam et.
 - İleride hızlıca (anahtarlar ile) değerlere ulaşmak istediğin için anahtarlar ile ilişkilendirilmiş değerlere mi ihtiyacın var? Sözlük kullan.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Sözlükler de listeler gibi değişebilirdir (*mutable*), yani oluşturulduktan sonra değiştirilebilirler. Oluşturulduktan sonra sözlüklere anahtar/değer çifti ekleyebilirsiniz, aşağıdaki gibi:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -427,9 +427,9 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Listeler gibi, `len()` metodu sözlükteki anahtar-değer çiftlerinin sayısını bize verir. Devam edip şu komutu yazın:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> len(participant)
@@ -1059,7 +1059,7 @@ Note that the second of these two numbers is not included in the list that is ou
 
 ## Özet
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+İşte bu. **Harikasın, süpersin!** Bu bölüm biraz zordu, kendinle gurur duymalısın. Biz buraya kadar geldiğin için seninle gurur duyuyoruz!
 
 For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
