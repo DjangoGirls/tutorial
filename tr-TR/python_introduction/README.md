@@ -4,7 +4,7 @@
 
 > Bu bölümün bir kısmı Geek Girls Carrots tarafından hazırlanmış eğitimlere dayanılarak hazırlanmıştır (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Biraz kod yazalım!
 
 ## Python komut istemi (prompt)
 
@@ -16,11 +16,11 @@ Hazır olduğunuzda, aşağıdaki talimatları takip edin.
 
 Bir Python konsolu açmak istiyoruz; öyleyse Windows'ta `python`, Mac OS/Linux'ta `python3` yazıp, `enter`'a basın.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ python3
     Python 3.6.1 (...)
-    Daha fazla bilgi için "yardım", "telif hakkı", "krediler" veya "lisans" yazın
+    Type "help", "copyright", "credits" or "license" for more information.
     >>>
     
 
@@ -30,121 +30,121 @@ Python komutunu çalıştırdıktan sonra, komut istemi `>>>` şeklinde değişt
 
 Eğer herhangi bir zamanda Python komut satırından çıkmak isterseniz, yalnızca `exit()` yazmanız ya da Windows için `Ctrl + Z`, Mac/Linux için `Ctrl + D` kısa yolunu kullanmanız yeterli. Bunu yaptığınız taktirde artık `>>>` yazısını görmeyeceksiniz.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Şimdilik, Python konsolundan çıkmak istemiyoruz. Bu konuda daha fazla bilgi edinmek istiyoruz. Biraz matematik yazarak başlayalım (` 2 + 3 ` gibi) ve `enter` 'a basalım.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> 2 + 3
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Güzel! Cevap nasıl da çıktı görüyor musun? Python matematik biliyor! Sen de diğer komutları şöyle deneyebilirsin:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Üstel hesaplama yapmak için 2 üzeri 3 deyin, şöyle yazalım: {% filename %}komut-satırı{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Bunları biraz kurcalayıp eğlen, sonra tekrar burada buluşalım. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Gördüğün gibi Python çok iyi bir hesap makinesi. Eğer başka neler yapabileceğini merak ediyorsan...
 
 ## String'ler (dizeler)
 
-How about your name? Type your first name in quotes like this:
+Mesela ismin? İsmini tırnak işaretleri içerisinde şu şekilde yaz:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> "Zeynep"
 'Zeynep'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+İlk string'ini oluşturdun! String (dize), bilgisayar tarafından işlenebilen ve karakterlerden oluşan dizilerin genel adıdır. Bir string her zaman aynı özel karakterle başlamalı ve aynı özel karakterle bitmelidir. Tek tırnak (`'`) veya çift tırnak (`"`) olabilir (aralarında herhangi bir fark yok!). Tırnak işaretleri Python'da içlerinde olan şeyin bir string olduğunu ifade eder.
 
-Strings can be strung together. Try this:
+Stringler birbirlerine eklenebilir. Şunu dene:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> "Merhaba " + "Zeynep"
 'Merhaba Zeynep'
 ```
 
-You can also multiply strings with a number:
+Ayrıca stringleri bir sayı ile çarpabilirsin:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> "Zeynep" * 3
 'ZeynepZeynepZeynep'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Eğer stringinin içerisine bir tırnak işareti koymak istiyorsan, bunun için iki seçeneğin var.
 
-Using double quotes:
+Çift tırnak kullanarak:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> "Turgut Uyar'ın dizeleriyiz"
 "Turgut Uyar'ın dizeleriyiz"
 ```
 
-or escaping the apostrophe with a backslash (``):
+veya backslash (` \ `) kullanarak:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> 'Turgut Uyar\'ın dizeleriyiz'
 "Turgut Uyar'ın dizeleriyiz"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+Hoş değil mi? İsminin tamamını büyük harf yapmak için, sadece şunu yazman yeterli:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> "Zeynep".upper()
 'ZEYNEP'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+String'in üzerinde `upper` **fonksiyon**unu kullandın! Bir fonksiyon (`upper()` gibi), çağırıldığında (calling) Python'un girdi olarak verilen bir obje (`"Zeynep"`) üzerinde gerçekleştirmesi gereken bir dizi işleme denilir.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Eğer ismindeki harflerin sayısını öğrenmek istiyorsan bunun için de bir **fonksiyon** var!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> len("Zeynep")
 6
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Fonksiyonları neden bazen stringin sonunda bir `.` ile (`"Zeynep".upper()` gibi) ve bazen de önce fonksiyonu çağırıp sonra parantez içerisine stringi yazarak kullandığımızı merak ediyor musun? Pekala, bazı durumlarda, fonksiyonlar bir takım nesnelere aittirler, mesela `upper()`, yalnızca stringler üzerinde kullanılabilir. Böyle durumlarda, bu tarz fonksiyonlara biz **method** ismini veriyoruz. Diğer durumlarda, bir fonksiyon özel olarak bir nesneye ait olmayıp, farklı çeşitlerde nesneler üzerinde de kullanılabilir, aynı `len()` gibi. İşte bu nedenle `"Zeynep"` stringini `len` fonksiyonuna bir parametre olarak veriyoruz.
 
 ### Özet
 
-OK, enough of strings. So far you've learned about:
+Tamam, stringlerden yeterince bahsettik. Şu ana kadar şu konuları öğrendin:
 
 - **komut istemi** – komutları (kod) Python'un komut istemine yazdığınızda Python'da sonuçlandırarak yanıtlar üretir
 - **sayılar ve dizinler** – Python'da sayılar matematik için dizinler ise metin nesneleri için kullanılmaktadır
 - **operatörler** `+` ve `*` gibi, değerleri birleştirerek yeni bir değer üretmek için kullanılmaktadır
 - **fonksiyonlar** `upper()` ve `len()` gibi, nesneler üzerinde eylemler gerçekleştirmektedirler.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Bunlar öğreneceğiniz her programlama dilinin temelleri. Biraz daha zor bir şey için hazır mısın? İddiaya gireriz öylesin!
 
 ## Hatalar
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Şimdi yeni bir şey deneyelim. Bir sayının uzunluğunu, bir string'in uzunluğunu bulduğumuz gibi bulabilir miyiz? Bunu görmek için `len(304023)` yazıp `enter`a basalım:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} komut satırı{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+İlk hatamızı aldık! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
 
 It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
