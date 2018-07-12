@@ -367,7 +367,7 @@ Bütün liste fonksiyonlarını Python dökümantasyonunun bu bölümünde bulab
 
 Sözlük listeye benzerdir ancak sözlük değerlerine indeks yerine anahtar ile ulaşılır. Anahtar metin veya numara olabilir. Boş bir sözlük oluşturmak için kullanılan söz dizimi şudur:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> {}
@@ -436,24 +436,23 @@ Listeler gibi, `len()` metodu sözlükteki anahtar-değer çiftlerinin sayısın
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Umarım şu ana kadar mantıklı gelmiştir :) Sözlüklerle biraz daha eğlenceye hazır mısın? İlginç şeyler için sonraki satıra atla.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+Sözlükten bir maddeyi silmek için `pop()` metodunu kullanabilirsin. Mesela, `'favorite_numbers'` anahtarına karşılık gelen elemanı silmek istersen, sadece şu komutu yaz:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
->>> participant.pop('favorite_numbers')
-[7, 42, 92]
+>>> del participant['favorite_numbers']
 >>> participant
-{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+{'country': 'Türkiye', 'favorite_language': 'Python', 'name': 'Ayşe'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Çıktıdan görebildiğin gibi, 'favorite_numbers' anahtarına karşılık gelen anahtar-değer çifti silindi.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Bunun yanı sıra, sözlükteki daha önce oluşturulmuş anahtarın değerini değiştirebilirsiniz. Şunu yazın:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> participant['country'] = 'Almanya'
@@ -461,26 +460,26 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Almanya', 'favorite_language': 'Python', 'name': 'Ayşe'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Gördüğün gibi, `'country'` anahtarının değeri `'Türkiye'`den `'Almanya`'ya çevrildi. :) Heyecan verici değil mi? Yaşasın! Bir başka harika şey öğrendin.
 
 ### Özet
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Harika! Şu an programlama hakkında birçok şey biliyorsun. Bu kısımda, şunları öğrendin:
 
 - **errors** - eğer Python yazdığın komutu anlamazsa çıkan hataları nasıl okuyacağını ve anlayacağını artık biliyorsun
 - **değişkenler** - daha kolay kod yazmanı sağlayan ve kodunu daha okunabilir yapan nesnelerin isimleri
 - **listeler** - belirli bir sırada tutulan nesnelerin listesi
 - **sözlükler** - anahtar-değer çifti olarak tutulan nesneler
 
-Excited for the next part? :)
+Bir sonraki part için heyecanlı mısınız? :)
 
 ## Karşılaştırma
 
 > Evden okuyanlar için: Bu kısım [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) vidyosunda anlatılıyor.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+Programlamanın önemli bir bölümü bir şeyleri karşılaştırmayı içerir. Karşılaştırılabilecek en kolay şey nedir? Tabii ki sayılar. Nasıl çalıştığını görelim (True = "Doğru", False= "Yanlış" demek).
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> 5 > 2
@@ -495,13 +494,13 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Python'a birkaç sayı karşılaştırmasını söyledik. Gördüğünüz gibi, sadece sayıları karşılaştırmakla kalmadı, aynı zamanda metodların sonuçlarını da karşılaştırdı. Güzel değil mi?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+İki sayının eşit olup olmadığını öğrenmek için neden iki tane eşittir işraretini `==` yan yana koyduk? Değişkenlere içerik verirken, tek `=` işaretini kullanıyoruz. Her zaman ama **her zaman** ikisini birden koyman gerekir – `==` – eğer birbirlerine eşit olup olmadıklarını kontrol etmek isterseniz. Sayıların birbirine eşit olmaması durumunu da kontrol edebiliriz. Bunun için, yukarıdaki örnekteki gibi `!=` sembolünü kullanıyoruz. 
 
-Give Python two more tasks:
+Python' a iki görev daha verin:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> 6 >= 12 / 2
@@ -510,14 +509,14 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+`>`‘ı ve `<`‘ı gördük, ama `>=` ve `<=` ne anlama geliyor? Onları böyle okuyabilirsin:
 
 - x `>` y : x büyüktür y
 - x `<` y : x küçüktür y
 - x `<=` y : x küçük eşittir y
 - x `>=` y : x büyük eşittir y
 
-Awesome! Wanna do one more? Try this:
+Harika! Birkaç denemeye daha ne dersiniz? Şunu deneyin:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -532,8 +531,8 @@ True
 
 Python'a istediğiniz kadar sayıyı karşılaştırmak için verebilirsiniz, ve size hepsinin cevabını verecek. Çok akıllı değil mi?
 
-- **and** - Eğer `and` işlecini kullanırsan, bütün komutların doğru olması için her iki kıyaslama da doğru olmak zorundadır
-- **or** - eğer `or` işlecini kullanırsan, bütün komutların doğru olması için kıyaslamalardan yalnızca biri doğru olmak zorundadır
+- **and** - Mantıkta kullandığımız "ve" anlamına geliyor, yani iki taraf da True, yani doğruysa, cevap da True olacak
+- **or** - Bu da "veya" anlamına geliyor, karşılaştırılan iki taraftan tek bir tanesi bile True ise bize True cevabını verecek
 
 Portakallarla elmaları karşılaştılaştırabilir miyiz? Bunun Python'daki eşdeğerini deneyelim: 
 
