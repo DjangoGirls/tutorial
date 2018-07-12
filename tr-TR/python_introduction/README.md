@@ -183,7 +183,7 @@ Programlamada en önemli konulardan biri değişkenlerdir. Değişken (variable)
 >>> name = "Ayşe"
 ```
 
-We type name equals Ola.
+"name" eşittir "Ayşe" yazalım. 
 
 As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
