@@ -1000,7 +1000,7 @@ kızlar içindeki isimler:
 
 The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-Here is the full code that will be in the file:
+Dosyada yer alacak tam kod aşağıdadır:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1008,32 +1008,32 @@ Here is the full code that will be in the file:
 def hi(name):
     print('Merhaba ' + name + '!')
 
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Sen']
+girls = ['Seda','Gül', 'Pınar', 'Ayşe', ' 'Sen']
 for name in girls:
     hi(name)
     print('Sıradaki kız')
 ```
 
-And when we run it:
+Ve onu çalıştırdığımız zaman:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ python3 python_intro.py
     Selam Seda!
-    Sıradaki
+    Sıradaki kız
     Selam Gül!
-    Sıradaki
+    Sıradaki kız
     Selam Pınar!
-    Sıradaki
+    Sıradaki kız
     Selam Ayşe!
-    Sıradaki
+    Sıradaki kız
     Selam Sen!
-    Sıradaki
+    Sıradaki kız
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Gördüğünüz gibi, `for` cümlesinin içine boşluk karakteri ile koyduğunuz her şey `girls` listesi için tekrarlanıyor.
 
-You can also use `for` on numbers using the `range` function:
+Ayrıca `for`'u `range` fonksiyonuyla beraber sayılar üzerinde de kullanabilirsiniz:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,9 +1042,9 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Çalıştırırsak:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     1
     2
@@ -1053,16 +1053,16 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` fonksiyonu birbirini takip eden sayılardan bir liste oluşturur (bu sayıları da siz parametre olarak yazarsınız).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Sizin verdiğiniz ikinci parametrenin listede olmadığına dikkat edin. Yani `range(1, 6)` 1'den 5'e kadar sayıyor, 6 dahil edilmiyor. Çünkü “aralık” yarı açıktır, ve yani ilk değeri içerir, ama son değeri içermez.
 
 ## Özet
 
 İşte bu. **Harikasın, süpersin!** Bu bölüm biraz zordu, kendinle gurur duymalısın. Biz buraya kadar geldiğin için seninle gurur duyuyoruz!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Resmi ve tam python tutorialı için https://docs.python.org/3/tutorial/ adresini ziyaret edin. Bu size dil hakkında daha kapsamlı ve eksiksiz bir çalışma sunacaktır. Teşekkürler :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Sonraki bölüme geçmeden başka bir şey yapmak isteyebilirsin. -gerin, biraz etrafta gezin, gözlerini dinlendir- :)
 
 ![Cupcake](images/cupcake.png)
