@@ -169,7 +169,7 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 ### Installing packages with requirements
 
-A requirements file keep a list of dependencies to be installed using
+A requirements file keeps a list of dependencies to be installed using
 `pip install`:
 
 First create a `requirements.txt` file inside of `djangogirls/` folder:
