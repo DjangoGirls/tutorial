@@ -177,7 +177,7 @@ Programlamada en önemli konulardan biri değişkenlerdir. Değişken (variable)
 
 `name` adında bir değişken yaratmak istediğimizi varsayalım:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> name = "Ayşe"
