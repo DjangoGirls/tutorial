@@ -745,67 +745,67 @@ In previous examples, code was executed only when the conditions were True. But 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-eğer 5 > 2 ise:
-    print(‘5 gerçekten 2’den büyüktür’)
-Değilse:
-    print(‘5 2’de büyük değildir’)
+if 5 > 2:    
+    print("5 gerçekten de 2'den büyüktür") 
+else:     
+    print("5  2'den büyük değildir")
 ```
 
-When this is run it will print out:
+Bu kod çalıştığında aşağıdaki çıktıyı verecektir:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ python3 python_intro.py
     5 gerçekten de 2'den büyüktür
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Eğer 2 5'ten büyük bir sayı olsaydı, ikinci komut çalıştırılmış olacaktı. Bakalım `elif` nasıl çalışıyor:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-isim = ‘Sonja’
-eğer isim == ‘Ola’ ise:
-    print(‘Selam Ola!’)
-elif isim == ‘Sonja’ ise:
-    print(‘Selam Sonja!’)
-değilse:
-    print(‘Selam yabancı!’)
+pythonname = 'Zeynep'
+if name == 'Ayşe':
+    print('Selam Ayşe!')
+elif name == 'Zeynep':
+    print('Selam Zeynep!')
+else:
+    print('Selam yabancı!')
 ```
 
-and executed:
+ve çalıştırılınca:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     $ python3 python_intro.py
     Selam Zeynep!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Gördünüz mü? Eğer önceki if ifadeleriniz doğru olmazsa kontrol edilmek üzere `elif` ifadeleri ekleyebilirsiniz.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+`if` ifadesinden sonra istediğiniz kadar `elif` ifadesi ekleyebilirsiniz. Mesela:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-volüm = 57
-eğer volüm < 20 ise:
-    print(“Biraz sessiz.”)
-elif 20 <= volüm < 40 ise:
-    print(“Arka plan müziği için güzel“)
-elif 40 <= volüm < 60 ise:
-    print(“Mükemmel, tüm detayları duyabiliyorum“)
-elif 60 <= volüm < 80 ise:
-    print(“Partiler için güzel”)
-elif 80 <= volüm < 100 ise:
-    print(“Biraz gürültülü!”)
-değilse:
-    print(“Kulaklarım ağrıyor! :(")
+pythonvolume = 57
+if volume < 20:
+    print("Çok sessiz.")
+elif 20 <= volume < 40:
+    print("Güzel bir fon müziği")
+elif 40 <= volume < 60:
+    print("Harika, her notayı duyabiliyorum")
+elif 60 <= volume < 80:
+    print("Parti başlasın")
+elif 80 <= volume < 100:
+    print("Biraz gürültülü!")
+else:
+    print("Kulaklarım ağrıyor! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python sırayla her sorguyu çalıştırır ve sonucu ona göre yazar:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ python3 python_intro.py
     Harika, her notayı duyabiliyorum
@@ -813,65 +813,66 @@ Python runs through each test in sequence and prints:
 
 ## Yorumlar
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Yorumlar `#` ile başlayan satırlardır. İstediğiniz her neyse `#` den sonra yazabilirsiniz ve Python onu gözardı eder. Yorumlar kodunuzu diğer insanların anlamasını daha kolaylaştırabilir.
 
-Let's see how that looks:
+Bakalım nasıl gözüküyor:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-# Çok yüksek veya çok düşük olduğunda volümü değiştirme
-Eğer volüm < 20 veya volüm > 80 ise:
-    volüm = 50
-    print(“Bu daha iyi!”)
+# Çok yüksek ya da çok düşük olduğunda ses seviyesini değiştirme
+if volume < 20 or volume > 80:
+    volume = 50
+    print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Kodun her satırı için bir açıklama yazmaya ihtiyacınız yoktur, ama kodunuzun niçin birşey yaptığını açıklamak ya da kompleks bir şey yaptığında bir özet sunmak için faydalıdırlar.
 
 ### Özet
 
-In the last few exercises you learned about:
+En son yaptığınız alıştırmalarda öğrendikleriniz:
 
 - **kıyaslama yapmak** - Python'da `>`, `>=`, `==`, `<=`, `<` ve `ve`, `veya` operatörlerini kullanarak kıyaslama yapabilirsiniz
-- **Boole** – yalnızca iki değerden birini olabilir nesnesi türü: `doğru` veya `yanlış`
+- **Boolean** - İki farklı değer alabilen bir nesne tipidir: Ya `True` (doğru) olur ya da `False` (yanlış)
 - **Dosya kaydetmek** – kodlarımızı dosyalara kaydederek daha büyük programları çalıştırabiliriz.
-- **if ... elif ... else** - cümlelerini sadece belirli durumlar sağlandığında çalıştırmak istediğimiz komutlar için kullanabiliriz.
+- **if ... elif ... else** - ifadelerini sadece belirli durumlar sağlandığında çalıştırmak istediğimiz komutlar için kullanabiliriz.
 - **yorumlar** - kodunuzu belgelemenize izin verecek şekilde Python’un çalışmayacağı satırlar
 
-Time for the last part of this chapter!
+Bu bölümün son kısmının zamanı geldi!
 
 ## Kendi fonksiyonlarınız!
 
 > Evdeki okuyucular için: Bu kısım [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) videosunda işlenmiştir.
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Python'da çalıştırabileceğin `len()` gibi fonksiyonları hatırlıyor musun? Güzel, iyi haber - Şimdi kendi fonksiyonlarını nasıl yazacağını öğreneceksin!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Fonksiyon Python tarafından işlenmesi gereken yönergeler dizisidir. Python'da her fonksiyon `def` anahtar kelimesi ile başlar, bir isim verilir ve bazı parameterleri olabilir. Hadi başlayalım. **python_intro.py** içindeki kodu aşağıdaki ile değiştirelim:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
+python
 def hi():
-    print('Selam!')
+    print('Merhaba!')
     print('Nasılsın?')
 
 hi()
 ```
 
-Okay, our first function is ready!
+Tamam, ilk fonksiyonumuz hazır!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Fonksiyon adını neden dosyanın en altına yazdığımızı merak edebilirsiniz. Bunun nedeni, Python'ın dosyayı okuyup, onu yukarıdan aşağı doğru işlemesi. Yani fonksiyonumuzu kullanabilmek için, onu en alt kısımda yeniden yazmalıyız.
 
-Let's run this now and see what happens:
+Haydi şimdi bunu çalıştıralım ve neler olacağını görelim:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ python3 python_intro.py
     Merhaba!
     Nasılsın?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Not: Eğer çalışmadıysa panik yapmayın! Çıktı neden olduğu hakkında bir fikir verir:
 
 - Eğer bir `NameError` alırsanız, muhtemelen yanlış bir şey yazdığınız anlamına gelir, bu nedenle `def hi():` lı fonksiyonu oluştururken ve `hi()` lıyı çağırırken aynı adı kullanıp kullanmadığınızı kontrol etmelisiniz.
 - Eğer bir `IndentationError` alırsanız,`print` dizelerinin her ikisinin de satır başında aynı boşluğa sahip olduğunu kontrol et: python fonksiyonun içindeki tüm kodların düzenli bir şekilde hizalanmasını ister.
