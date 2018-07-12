@@ -946,14 +946,14 @@ And run it:
 
 Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     Selam yabancı!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Süper değil mi? Böylece fonksiyona göndereceğiniz isim değiştiğinde aynı kodu tekrar tekrar yazmanıza gerek kalmayacak. İşte fonksiyonlara tam da bu yüzden ihtiyacımız var - aynı kodu tekrar yazmaya gerek yok!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+Hadi daha zekice bir şey yapalım - İkiden fazla isim var ve her biri için bir şart yazmak zor olur değil mi?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -961,28 +961,28 @@ Let's do something smarter – there are more names than two, and writing a cond
 def hi(name):
     print('Merhaba ' + name + '!')
 
-hi("Rachel")
+hi("Seda")
 ```
 
-Let's call the code now:
+Şimdi kodu çağıralım:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ python3 python_intro.py
     Selam Seda!
     
 
-Congratulations! You just learned how to write functions! :)
+Tebrikler! Az önce fonksiyonları nasıl yazacağınızı öğrendiniz! :)
 
 ## Döngüler
 
 > Evdeki okuyucular için: Bu kısım [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) videosunda işlenmiştir.
 
-This is the last part already. That was quick, right? :)
+Bu da zaten son parça. Hızlı oldu, değil mi? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Programcılar kendilerini tekrar etmeyi sevmezler. Programlama tamamen işleri otomatize etmedir, bu yüzden her insanı ismiyle selamlamak istemeyiz, değil mi? İşte burası döngülerin devreye girdiği yerdir.
 
-Still remember lists? Let's do a list of girls:
+Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -990,12 +990,12 @@ Still remember lists? Let's do a list of girls:
 kızlar = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Sen']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiyonunu döngü içinde kullanabiliriz:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-kızlar içindeki isimler:
+for name in girls:
 ```
 
 The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
