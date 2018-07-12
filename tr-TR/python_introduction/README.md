@@ -698,17 +698,17 @@ You can now move on to an essential tool in programming:
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Replace the code in your **python_intro.py** file with this:
+**python_intro.py** dosyasındaki kodunuzu şununla değiştirin:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-eğer 3 > 2 ise:
+if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Eğer bunu kaydetmiş ve çalıştırmış olsaydık, bunun gibi bir hata görecektik:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} komut satırı{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -716,31 +716,31 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python bizden kendisine `3 > 2` durumu (veya `True`) sağlandığında neyi çalıştıracağını söylememizi bekliyor. Python'a "Çalışıyor!" yazmasını söyleyelim. **python_intro.py** dosyanızdaki kodu şununla değiştirin:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-eğer 3 > 2 ise:
-    print(‘Çalışıyor!’)
+if 3 > 2:
+    print('Çalışıyor!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+4 tane boşluk karakteri bıraktığımıza dikkat ettiniz mi? Bunu yaparak if ifadesine yazılan durum doğru olduğunda neyi çalıştırması gerektiğini Python'a söylemiş oluyoruz. Aslında tek bir boşlukla da yapabilirsiniz, ama hemen hemen bütün Python programcıları kodlarının temiz görünmesi için 4 boşluk bırakıyor. Metin düzenleyiciniz ayarlıysa bir tab karakteri de 4 boşluk karakteri olarak sayılacaktır. Seçiminizi yaptıktan sonra değiştirmeyin! Eğer girintilerde 4 boşluk kullandıysanız, gelecek girintilerde de 4 boşluk kullanmaya devam edin - aksi halde sorunlarla karşılaşabilirsiniz.
 
-Save it and give it another run:
+Kaydedip çalıştırmayı deneyelim:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 $ python3 python_intro.py
 Çalışıyor!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Not: Windows'ta 'python3'ün komut olarak geçerli olmadığını unutmayın. Bundan böyle dosyayı çalıştırmak için 'python3'ü 'python'la değiştirin.
 
 ### Ya bir koşul True (Doğru) değilse?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+Önceki örneklerde kod sadece koşullar sadece True (doğru) olduğunda çalışıyordu. Ama Python ayrıca `elif` ve `else` ifadelerine de sahip:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -764,7 +764,7 @@ Eğer 2 5'ten büyük bir sayı olsaydı, ikinci komut çalıştırılmış olac
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-pythonname = 'Zeynep'
+name = 'Zeynep'
 if name == 'Ayşe':
     print('Selam Ayşe!')
 elif name == 'Zeynep':
@@ -788,7 +788,7 @@ Gördünüz mü? Eğer önceki if ifadeleriniz doğru olmazsa kontrol edilmek ü
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-pythonvolume = 57
+volume = 57
 if volume < 20:
     print("Çok sessiz.")
 elif 20 <= volume < 40:
