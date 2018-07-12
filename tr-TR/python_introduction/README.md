@@ -877,7 +877,7 @@ Note: if it didn't work, don't panic! The output will help you to figure why:
 - Eğer bir `IndentationError` alırsanız,`print` dizelerinin her ikisinin de satır başında aynı boşluğa sahip olduğunu kontrol et: python fonksiyonun içindeki tüm kodların düzenli bir şekilde hizalanmasını ister.
 - Eğer tamamında da çıktı yoksa, son `hi()` *isn't* girintiliğini kontrol et - eğer öyleyse, bu dize fonksiyonunda bir parçası haline gelecek ve hiçbir zaman çalışmayacak.
 
-Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+İlk fonksiyonumuzu parametrelerle birlikte oluşturalım. Önceki örneği - çalışmaktaki kişiye merhaba diyen bi fonksiyon - ismiyle kullanacağız:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -885,25 +885,25 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Gördüğünüz gibi, fonksiyonumuza `name` (isim) adında bir parametre ekledik:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 def hi(name):
-    if name == 'Ola':
-        print("Merhaba Ola!')
-    elif name == 'Sonja':
-        print('Merhaba Sonja!')
+    if name == 'Ayşe':
+        print("Merhaba Ayşe!')
+    elif name == 'Zeynep':
+        print('Merhaba Zeynep!')
     else:
         print('Merhaba anonim!')
 
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Unutmayın: `if` içerisindeki `print` fonksiyonundan önce dört tane boşluk var. Bunun sebebi sadece durum sağlandığında çalışmasını istememiz. Bakalım nasıl çalışıyor:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} komut satırı{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -912,31 +912,31 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Üzgünüz, bir hata. Neyse ki, Python bize oldukça yararlı bir hata mesajı veriyor. `hi()` fonksiyonun (yukarıda tanımladığımız) bir değişken kullanımını gerektirdiğini (`name` isimli) ve bizim o değişkeni fonksiyonu çağırırken iletmeyi unuttuğumuzu söylüyor. Dosyanın alt kısmında hatayı düzeltelim:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-hi("Ola")
+hi("Ayşe")
 ```
 
-And run it again:
+Ve tekrar çalıştıralım:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ python3 python_intro.py
     Selam Ayşe!
     
 
-And if we change the name?
+Eğer ismi değiştirirsek ne olur?
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-hi("Sonja")
+hi("Zeynep")
 ```
 
-And run it:
+Ve çalıştırın:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -944,7 +944,7 @@ And run it:
     Selam Zeynep!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Peki Ayşe veya Zeynep dışında başka bir isim yazdığımızda ne olacağını tahmin edebiliyor musunuz? Deneyin ve tahmininizin doğru olup olmadığını görün. Şunun gibi bir şey yazmalı:
 
 {% filename %}komut satırı{% endfilename %}
 
