@@ -153,18 +153,18 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-İlk hatamızı aldık! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+İlk hatamızı aldık! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Hatalar yapmak (kasıtlı olanlar bile) öğrenmenin önemli bir kısmı!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Nesne türü "int" (tam sayılar, tüm sayılar) in uzunluğu olmadığını söylüyor. Şimdi ne yapabiliriz? Belki de rakamı bir string olarak yazabiliriz? Stringlerin bir uzunluğu var, değil mi?
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
 ```python
 >>> len(str(304023))
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+İşe yaradı! `str` fonksiyonunu `len` fonksiyonunun içinde kullandık. `str` her şeyi string'e çeviriyor.
 
 - `str` fonksiyonu, değişkenleri **stringe** çeviriyor
 - `int` fonksiyonu değişkenleri **integera** çeviriyor
@@ -173,9 +173,9 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
 
 ## Değişkenler
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Programlamada en önemli konulardan biri değişkenlerdir. Değişken (variable), daha sonra kullanmak istediğiniz bir yapıya verdiğiniz isimdir. Programcılar değişkenleri verileri tutmak ya da kodlarını daha okunabilir ve anlaşılabilir kılmak için kullanırlar ve böylece her şeyi sürekli akıllarında tutmaya gerek kalmaz.
 
-Let's say we want to create a new variable called `name`:
+`name` adında bir değişken yaratmak istediğimizi varsayalım:
 
 {% filename %}command-line{% endfilename %}
 
