@@ -155,9 +155,9 @@ Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere`, an
 
 Şimdi, programımızı otomatik olarak yapılandırmak için bu komutu calıştıralım. Aşağıdakileri PythonAnywhere konsoluna yazalım (GitHub username yerine kendi GitHub ismini yazmayı unutma `<your-github-username>`):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere komut satırı{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ git clone https://github.com/<github-kullanıcı-adınız>/my-first-blog.git
     
 
 As you watch that running, you'll be able to see what it's doing:
