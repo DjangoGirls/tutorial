@@ -96,21 +96,21 @@ Bu sefer *view*'ümüze `pk` adında bir parametre ekleyeceğiz. *view*'ümüzü
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+Ama bu kodun bir problemi var. Eğer gelen `primary key` (`pk` - tekil anahtar) ile bir `Post` (gönderi) yoksa, çok çirkin bir hatamız olacak!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Bunu istemiyoruz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or404`. Eğer verilen `pk` ile bir `Post` bulunamazsa, çok daha güzel bir sayfa gösterilecek (`Sayfa bulunamadı 404` sayfası.
 
 ![Page not found](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+İyi haber şu, kendi `Sayfa bulunamadı` sayfasını yapabilir ve istediğiniz kadar güzelleştirebilirsiniz. Ama şu anda çok önemli değil, o yüzden bu kısmı atlayacağız.
 
-OK, time to add a *view* to our `views.py` file!
+Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+`blog/urls.py` içinde `views.post_detail` denilen bir görünüm ifade eden `post_detail` adında bir URL kuralı oluşturduk. Bunun anlamı Django `blog/views.py` içindeki `post_detail` adlı bir görünüm fonksiyonunu bekliyor demektir.
 
-We should open `blog/views.py` and add the following code near the other `from` lines:
+`blog/views.py` 'i açmalıyız ve diğer `from` satırının yanına şu kodları eklemeliyiz:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -118,7 +118,7 @@ We should open `blog/views.py` and add the following code near the other `from` 
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+Ve dosyanın sonuna kendi *görünüm*'ümüzü ekliyeceğiz:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -128,21 +128,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Evet. http://127.0.0.1:8000/ sayfasını tazeleme zamanı
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+Çalıştı! Fakat blog gönderisi başlığındaki bir bağlantıya tıkladığınızda ne oluyor?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bir template eklememiz gerekiyor!
 
 ## Gönderi detayları için bir şablon oluştur
 
-We will create a file in `blog/templates/blog` called `post_detail.html`.
+`blog/templates/blog` dizininde `post_detail.html` adında bir dosya oluşturacağız.
 
-It will look like this:
+Şöyle görünmeli:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -162,7 +162,7 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Bir kere daha `base.html` dosyasıa ekleme yapacağız. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
