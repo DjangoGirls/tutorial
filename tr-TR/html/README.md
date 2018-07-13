@@ -2,7 +2,7 @@
 
 Template nedir diye sorabilirsiniz.
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Template (şablon), farklı bilgileri hep aynı biçimde sunmak için tekrar tekrar kullanabileceğimiz bir dosyadır - örneğin, mektup yazmanıza yardımcı olan bir template kullanabilirsiniz çünkü yazacağınız tüm mektuplar farklı mesajlar içerse ve farklı kişilere gönderilse de aynı sayfa düzenine sahip olacaktır.
 
 Django şablonunun formatı HTML diye adlandırılan bir dilde tanımlıdır(ilk bölümde bahsettiğimiz HTML, **İnternet nasıl çalışır**).
 
@@ -29,7 +29,7 @@ Template'lar `blog/templates/blog` dizininde saklanır. Öyleyse blog klasörü 
 
 Web sitemizin nasıl göründüğüne bir bakalım: http://127.0.0.1:8000/
 
-> Eğer hala `TemplateDoesNotExist` hatası alıyorsanız, sunucunuzu yeniden başlatmayı deneyin. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Eğer hala `TemplateDoesNotExist` hatası alıyorsanız, sunucunuzu yeniden başlatmayı deneyin. Komut satırına girin, Ctrl+C (Kontrol ve C tuşlarına beraber) basarak sunucuyu durdurun ve bir `python manage.py runserver` komutunu çalıştırarak yeniden başlatın.
 
 ![Şekil 11.1](images/step1.png)
 
@@ -123,9 +123,9 @@ html
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
         <div>
-            <p>yayın tarihi: 14.06.2014, 12:14</p>
-            <h2><a href="">İlk Gönderim</a></h2>
-            <p>Çok heyecanlıyım! Bu benim ilk gönderim. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. </p>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">İlk Blogum</a></h2>
+            <p>Çok heyecanlıyım! Bu benim ilk blogum. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. </p>
         </div>
 
         <div>
@@ -140,7 +140,7 @@ html
 Burada üç tane `div` bölümü oluşturduk.
 
 * İlk `div` ögesi blogumuzun başlığını içerir - bu bir baş kısımdır ve bir bağlantıdır
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Sonraki iki `div` öğesi blog gönderilerimizi içeriyor; bunlarda bir yayın tarihi (published_date), tıklanabilir bir `h2` başlığı ve biri tarih diğeri gönderi metnimiz için olmak üzere, iki tane `p` (paragraf) var.
 
 Bize yaşattığı duygu:
 
@@ -150,11 +150,11 @@ Yaşasın! Şimdiye dek, şablonumuz tam olarak sadece **aynı bilgiyi** görün
 
 Aslında yapmak istediğimiz Django yöneticimize eklenen gerçek postaları açmak - bundan sonra oraya gidiyoruz.
 
-## Birşey daha: dağıtım!
+## Bir şey daha: deployment (yayına alma) zamanı!
 
 Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
 
-### Commit, and push your code up to GitHub
+### Kodumuzu commit ve push komutları ile Github'a yükleyelim
 
 İlk önce son deployment dan sonra hangi dosyaların değiştiğine bakalım. Bu komutları lokal bilgisayarımızda çalıştıralım, PythonAnywhere'de değil:
 
@@ -163,7 +163,7 @@ Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+`djangogirls` dizininde olduğumuzdan emin olalım ve `git` 'e bu dizinde yapılan tüm değişiklikleri dahil etmesini söyleyelim:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -199,17 +199,17 @@ Bunu bir kez yapıp, değişikliklerimizi GitHub'a yükledik (ittik):
 
 * [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/)sayfasını ve **Bash console** u açalım (ya da yeni bir tane açalım). Sonra da çalıştıralım:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere komut satırı{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+Kodumuzun indirilmesini izleyelim. Kodun geldiğini kontrol etmek istersek **Files (dosyalar) sekme**sini açıp PythonAnywhere'de kodumuzu görebiliriz.
 
 * Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Güncelleme hazır olmalı! Devam edelim ve tarayıcıda web sitesini yenileyelim. Değişiklikler görünüyor olmalı. :)
