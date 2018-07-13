@@ -86,9 +86,9 @@ Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: view'ü eklemek
 
 ## Gönderi detayı için bir view ekleyin
 
-Bu sefer *view*'ümüze `pk` adında bir parametre ekleyeceğiz. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Dikkat edin, url'lerde kullandığımız ismin birebir aynısını kullanmamız gerekiyor (`pk`). Omitting this variable is incorrect and will result in an error!
+Bu sefer *view*'ümüze `pk` adında bir parametre ekleyeceğiz. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Dikkat edin, url'lerde kullandığımız ismin birebir aynısını kullanmamız gerekiyor (`pk`). Bu değişkeni kullanmamak yanlıştır ve hataya sebep olacaktır!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+Şimdi sadece ve sadece bir tane blog gönderisi almak istiyoruz. Bunu yapmak için şunun gibi sorgu setlerini/kümelerini kullanabiliriz:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
