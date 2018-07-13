@@ -46,7 +46,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 
 Şimdi http://127.0.0.1:8000/ adresine gittiğimizde bir hata ile karşılaşacağız (`post_detail` için bir URL ya da *görüntü (view)* olmadığı için hatayı almamız normal). Hata böyle görünecektir:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![NoReverseMatch error (Tersi yok hatası)](images/no_reverse_match2.png)
 
 ## Bir gönderinin detayı için URL oluşturun
 
@@ -80,7 +80,7 @@ Bu şu demek, eğer tarayıcınıza `http://127.0.0.1:8000/post/5/` yazarsanız,
 
 Tamamdır.`blog/urls.py`!'e yeni bir URL kalıbı ekledik! Http://127.0.0.1:8000/ sayfasını yenileyelim.Boom! Sunucu çalıştırmayı tekrar durdurdu. Konsola göz at, beklendiği gibi bir hata daha var!
 
-![AttributeError](images/attribute_error2.png)
+![AttributeError (Özellik hatası)](images/attribute_error2.png)
 
 Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: view'ü eklemek!
 
@@ -98,11 +98,11 @@ Post.objects.get(pk=pk)
 
 Ama bu kodun bir problemi var. Eğer gelen `primary key` (`pk` - tekil anahtar) ile bir `Post` (gönderi) yoksa, çok çirkin bir hatamız olacak!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![DoesNotExist error (Yok hatası)](images/does_not_exist2.png)
 
 Bunu istemiyoruz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or404`. Eğer verilen `pk` ile bir `Post` bulunamazsa, çok daha güzel bir sayfa gösterilecek (`Sayfa bulunamadı 404` sayfası.
 
-![Page not found](images/404_2.png)
+![Page not found (Sayfa bulunamadı)](images/404_2.png)
 
 İyi haber şu, kendi `Sayfa bulunamadı` sayfasını yapabilir ve istediğiniz kadar güzelleştirebilirsiniz. Ama şu anda çok önemli değil, o yüzden bu kısmı atlayacağız.
 
@@ -130,11 +130,11 @@ def post_detail(request, pk):
 
 Evet. http://127.0.0.1:8000/ sayfasını tazeleme zamanı
 
-![Post list view](images/post_list2.png)
+![Post list view (Gönderi listesi görünümü)](images/post_list2.png)
 
 Çalıştı! Fakat blog gönderisi başlığındaki bir bağlantıya tıkladığınızda ne oluyor?
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![TemplateDoesNotExist error (Template yok hatası)](images/template_does_not_exist2.png)
 
 Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bir template eklememiz gerekiyor!
 
@@ -168,7 +168,7 @@ Bir kere daha `base.html` dosyasıa ekleme yapacağız. `content` blogunda bir g
 
 Tamam, şimdi sayfamızı yenileyerek `TemplateDoesNotExist` hatası kaybolmuş mu görebiliriz.
 
-![Post detail page](images/post_detail2.png)
+![Post detail page (Gönderi detay sayfası)](images/post_detail2.png)
 
 Heyo! Çalışıyor!
 
