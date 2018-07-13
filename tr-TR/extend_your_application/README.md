@@ -200,17 +200,17 @@ Sonra bir [PythonAnywhere Bash konsol](https://www.pythonanywhere.com/consoles/)
 
 PythonAynwhere gibi sunucular "statik dosyalar"a (CSS dosyaları gibi) Python dosyalarından farklı davranır çünkü onları daha hızlı yüklenmesi için optimize edebilir. Sonuç olarak, CSS dosyalarında her değişiklik yaptığınızda, sunucuya onları güncellediğimizi söylemek için ilave bir komut çalıştırmalıyız. Bu komuta `collectstatic` adı verilir.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Daha önceden çalıştırdığın virtualenv'in hala etkin değilse tekrar aktive ederek başlayın. (PythonAnywhere bunu yapmak için `workon` adlı bir komut kullanır. Kendi bilgisayarında kullandığın `source myenv/bin/activate` komutu gibi.):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ workon <your-pythonanywhere-username>.pythonanywhere.com
-    (ola.pythonanywhere.com)$ python manage.py collectstatic
+    (kullaniciadiniz.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+`manage.py collectstatic` komutu biraz `manage.py migrate` komutu gibidir. Kodumuzda bazı değişiklikler yapıp Django'ya bu değişiklikleri sunucunun statik dosyalar yığınına ya da veritabanına uygulamasını söyledik.
 
-In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın.
 
-And that should be it! Congrats :)
+İşte bu kadar! Tebrikler :)
