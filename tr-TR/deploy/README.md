@@ -160,11 +160,11 @@ Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere`, an
     $ git clone https://github.com/<github-kullanıcı-adınız>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own PC
-- Updating your settings file with some deployment settings
+- Kodunuz GitHub'dan çekiliyor
+- Tıpkı kendi bilgisayarındaki gibi PythonAnywhere üzerinde bir virtualenv oluşturuluyor
+- Ayarlar (settings) dosyası güncelleniyor
 - Setting up a database on PythonAnywhere using the `manage.py migrate` command
 - Setting up your static files (we'll learn about these later)
 - And configuring PythonAnywhere to serve your web app via its API
