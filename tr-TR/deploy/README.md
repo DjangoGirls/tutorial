@@ -178,9 +178,9 @@ Bu nedenle, aynen kendi bilgisayarımızda yapmış olduğumuz gibi, `createsupe
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızda oluşturduğunuz kullanıcı detayları ile aynı olması hatırlamak açısından faydalı olacaktır, tabii PythonAnywhere üzerindeki şifreyi daha zor olarak tanımlamak isteyebiliriz.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Şimdi, isterseniz, PythonAnywhere üzerindeki kodlara `ls` komutu ile göz atabilirsiniz:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -191,9 +191,9 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
     templates  tests.py  urls.py  views.py
     
 
-You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+"Files" sekmesine giderek de PythonAnywhere in sunduğu arayüz ile dosyaları gezinebilrsiniz.
 
-## You are now live!
+## Şimdi Canlı Yayındasınız!
 
 Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
 
