@@ -6,7 +6,7 @@
 
 ## Willkommen
 
-Willkommen beim Django Girls Tutorial! Wir freuen uns, dass du hier bist :) In dieser Anleitung schauen wir gemeinsam unter die Haube der Technologien im Internet, geben dir einen Einblick in die Bits und Bytes, die zusammen das Internet bilden, wie wir es heute kennen.
+Willkommen beim Django Girls Tutorial! Wir freuen uns, dass du hier bist :) In diesem Tutorial schauen wir gemeinsam unter die Haube der Technologien im Internet, geben dir einen Einblick in die Bits und Bytes, die zusammen das Internet bilden, wie wir es heute kennen.
 
 Wie alles Unbekannte wird das ein Abenteuer sein - aber keine Sorge: Da du bereits den Mut aufgebracht hast, hier zu sein, wirst du das schon meistern :)
 
@@ -30,7 +30,7 @@ Es wird (in etwa) so aussehen:
 
 > Wenn du allein mit diesem Tutorial arbeitest und keinen Coach in der Nähe hast, kannst du in diesem Chat nachfragen, wenn du ein Problem hast: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Wir haben unsere Coaches und frühere Teilnehmer unserer Workshops gebeten, hin und wieder dort vorbei zu schauen und anderen mit dem Tutorial zu helfen! Hab keine Angst, dort deine Fragen zu stellen!
 
-Okay, [ lass uns ganz am Anfang starten...](./how_the_internet_works/README.md)
+Okay, [lass uns ganz am Anfang starten...](./how_the_internet_works/README.md)
 
 ## Das Tutorial daheim durcharbeiten
 
