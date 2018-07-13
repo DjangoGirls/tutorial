@@ -203,8 +203,8 @@ Your site should now be live on the public Internet! Click through to the Python
 
 `pa_autoconfigure_django.py` komut dosyasını çalıştırırken bir hata görürseniz, bunun yaygın birkaç nedeni vardır:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
+- PythonAnywhere API tokeni oluşturmayı unutmak.
+- GitHub URL'nizde bir hata yapmak
 - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
