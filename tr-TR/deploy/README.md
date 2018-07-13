@@ -164,10 +164,10 @@ Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 
 - Kodunuz GitHub'dan çekiliyor
 - Tıpkı kendi bilgisayarındaki gibi PythonAnywhere üzerinde bir virtualenv oluşturuluyor
-- Ayarlar (settings) dosyası güncelleniyor
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Yayına almak için gerekli ayarlar (settings) dosyası güncelleniyor
+- Yine `manage.py migrate` komutu ile PythonAnywhere üzerinde veriatabanı oluşturuluyor using the
+- Sabit dosyaların (bunları daha sonra öğreneceğiz) oluşturulması
+- Ve web uygulamanızın API sinin PythonAnywhere tarafından sunulması için ayarlar yapılıyor
 
 On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
 
