@@ -43,7 +43,7 @@ Gehe auf [GitHub.com](https://www.github.com) eröffne ein neues, kostenloses Ko
 
 # Fang an zu lesen!
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Herzlichen Glückwunsch, Du hast alles eingerichtet und bist nun bereit, loszulegen. Wenn Du vor dem Workshop noch etwas Zeit hast, wäre es hilfreich, einige der einführenden Kapitel zu lesen:
 
 * [Wie funktioniert das Internet?](../how_the_internet_works/README.md)
 
@@ -53,6 +53,6 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 * [Django - Was ist das?](../django/README.md)
 
-# Enjoy the workshop!
+# Viel Spaß beim Workshop!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Wenn Du mit dem Workshop anfängst, kannst Du direkt zum Kapitel [Dein erstes Django-Projekt!](../django_start_project/README.md) gehen, weil Du den Inhalt der vorhergehenden Kapitel schon bearbeitet hast.
