@@ -205,9 +205,9 @@ Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "W
 
 - PythonAnywhere API tokeni oluşturmayı unutmak.
 - GitHub URL'nizde bir hata yapmak
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- *"Could not find your settings.py"* hatası genellikle tüm gerekli dosyaların Git'e eklenmemiş ve/veya GitHub'a başarılı olarak push edilmemiş olmasından kaynaklanır. Tekrar Git bölümüne bakın
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Websitenizi ziyaret ettğiniz zaman bir hata ile karşılaşıtsanız ilk bakacağınız yer **error log** dosyasıdır. PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/) sekmesinde link bulabilirsiniz. Hata mesajlarını buradan kontrol edebilrisiniz; en yakın zamandaki hatalar en sonda yer alır.
 
 [PythonAnywhere wiki üzerinde bazı genel hata giderme tüyoları](http://help.pythonanywhere.com/pages/DebuggingImportError) mevcuttur.
 
