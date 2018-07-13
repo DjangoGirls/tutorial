@@ -169,9 +169,9 @@ Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 - Sabit dosyaların (bunları daha sonra öğreneceğiz) oluşturulması
 - Ve web uygulamanızın API sinin PythonAnywhere tarafından sunulması için ayarlar yapılıyor
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. Anlaşılması önemli olan nokta şu ki PythonAnywhere üzerinde yaratılan veritabanı ile kendi bilgisayarımızda yarattığımız veritabanı birbirinden tamamen ayrı -- dolayısı ile bu iki veritabanında saklanmış olan postlar ve kullanıcılar da farklı olabilir.
 
-As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Bu nedenle, aynen kendi bilgisayarımızda yapmış olduğumuz gibi, `createsuperuser` ile bir admin kullacısını oluşturmamız gerekiyor. PythonAnywhere otomatik olarak virtualenv i başlatmış olduğu için, bu kullanıcıyı hemen oluşturabiliriz:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
