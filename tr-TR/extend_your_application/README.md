@@ -86,7 +86,7 @@ Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: view'ü eklemek
 
 ## Gönderi detayı için bir view ekleyin
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+Bu sefer *view*'ümüze `pk` adında bir parametre ekleyeceğiz. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Dikkat edin, url'lerde kullandığımız ismin birebir aynısını kullanmamız gerekiyor (`pk`). Omitting this variable is incorrect and will result in an error!
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
