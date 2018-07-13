@@ -4,7 +4,7 @@
 
 Şimdiye kadar web sitenize sadece kendi bilgisayarınızdan girilebiliyordu. Şimdi onu nasıl canlıya alacağınızı öğreneceksiniz! Yayına alma uygulamanızı internette yayınlama sürecidir, böylelikle insanlar sonunda gidip uygulamanızı görebilirler. :)
 
-Öğrendiğimiz üzere, bir websitesi bir sunucunun üstünde olmalıdır. İnternette birçok sunucu sağlayıcısı var, biz [PythonAnywhere](https://www.pythonanywhere.com/) kullanacağız. PythonAnywhere ücretsizdir ve çok fazla ziyaretçisi olmayan küçük uygulamalar içindir yani şu an sizin için kesinlikle yeterli olacaktır.
+Öğrendiğimiz üzere, bir websitesi bir sunucunun üstünde olmalıdır. İnternette birçok sunucu sağlayıcısı var, biz bunlardan [PythonAnywhere](https://www.pythonanywhere.com/) i kullanacağız. PythonAnywhere ücretsizdir ve çok fazla ziyaretçisi olmayan küçük uygulamalar içindir yani şu an sizin için kesinlikle yeterli olacaktır.
 
 Dışarıdan kullanacağımız diğer servis bir kod barındırma hizmeti olan [Github](https://www.github.com). Başkaları da var, ama neredeyse her programcının bir Github hesabı var, sizin de olacak!
 
