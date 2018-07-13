@@ -59,8 +59,8 @@ Satırı ekledikten sonra, HTML dosyanız bu şekilde görünmelidir:
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% load static %}
-<html>
+{% load staticfiles %}
+< html>
     <head>
         <title>Django Girls blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -422,7 +422,7 @@ Yüksek olasılıkla login yapmış olduğunuz için sayfayı yenilediğinizde f
 
 Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
 
-* First, commit your new code, and push it up to GitHub:
+* İlk önce kodumuzu commit edelim, sonra Github'a push edelim:
 
 {% filename %}komut-satırı{% endfilename %}
 
