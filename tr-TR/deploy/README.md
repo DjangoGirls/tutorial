@@ -195,9 +195,9 @@ Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızd
 
 ## Şimdi Canlı Yayındasınız!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "Web" tabına tıklayarak linki kopyalayın. Bu linki istediğiniz herkes ile paylaşabilirsiniz :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) for some tips on securing your site.
+> **Not** Bu kılavuz başlangıçlara yönelik olduğu için basit tutmak amacıyla siteyi yayına alırken güvenlik açısından ideal olmayan bir kaç seçim yaptık. Bu projeyi ilerletmeye karar veriseniz veya yeni bir proje oluşturursanız, güvenlik tavsiyeleri için [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) i inceleyin.
 
 ## Hata ayıklama önerileri
 
