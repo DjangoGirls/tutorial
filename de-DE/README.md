@@ -1,4 +1,4 @@
-# Django Girls Anleitung
+# Django Girls Tutorial
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
@@ -6,7 +6,7 @@
 
 ## Willkommen
 
-Willkommen bei der Django Girls Anleitung! Wir freuen uns, dass du hier bist :) In dieser Anleitung schauen wir gemeinsam unter die Haube der Technologien im Internet, geben dir einen Einblick in die Bits und Bytes, die zusammen das Internet bilden, wie wir es heute kennen.
+Willkommen beim Django Girls Tutorial! Wir freuen uns, dass du hier bist :) In dieser Anleitung schauen wir gemeinsam unter die Haube der Technologien im Internet, geben dir einen Einblick in die Bits und Bytes, die zusammen das Internet bilden, wie wir es heute kennen.
 
 Wie alles Unbekannte wird das ein Abenteuer sein - aber keine Sorge: Da du bereits den Mut aufgebracht hast, hier zu sein, wirst du das schon meistern :)
 
