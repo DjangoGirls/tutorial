@@ -1,4 +1,4 @@
-> このチャプターの一部はGeek Girls Carrots (http://django.carrots.pl/ )のチュートリアルに基づいています。
+> このチャプターの一部はGeek Girls Carrots (http://django.carrots.pl/) のチュートリアルに基づいています。
 > 
 > このチャプターの一部はCreative Commons Attribution-ShareAlike 4.0 International License のライセンスによるdjango-marcador tutorialに基づいています. このdjango-marcador tutorialはMarkus Zapke-Gründemann らが著作権を保有しています。 
 
@@ -195,7 +195,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Ubuntu 12.04でpipを呼んだときにエラーが起きた場合は、仮想環境(virtualenvironment)内でpipインストールをフィックスするために`python -m pip install -U --force-reinstall pip` を実行して下さい。
+> Ubuntu 12.04でpipを呼んだときにエラーが起きた場合は、仮想環境(virtualenvironment) 内でpipインストールを直すために`python -m pip install -U --force-reinstall pip` を実行して下さい。
 
 <!--endsec-->
 
