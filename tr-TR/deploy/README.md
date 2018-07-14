@@ -165,24 +165,24 @@ Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 - Kodunuz GitHub'dan çekiliyor
 - Tıpkı kendi bilgisayarındaki gibi PythonAnywhere üzerinde bir virtualenv oluşturuluyor
 - Yayına almak için gerekli ayarlar (settings) dosyası güncelleniyor
-- Yine `manage.py migrate` komutu ile PythonAnywhere üzerinde veriatabanı oluşturuluyor using the
-- Sabit dosyaların (bunları daha sonra öğreneceğiz) oluşturulması
+- Yine `manage.py migrate` komutu ile PythonAnywhere üzerinde veritabanı oluşturuluyor
+- Sabit dosyaların (bunları daha sonra öğreneceğiz) oluşturuluyor
 - Ve web uygulamanızın API sinin PythonAnywhere tarafından sunulması için ayarlar yapılıyor
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. Anlaşılması önemli olan nokta şu ki PythonAnywhere üzerinde yaratılan veritabanı ile kendi bilgisayarımızda yarattığımız veritabanı birbirinden tamamen ayrı -- dolayısı ile bu iki veritabanında saklanmış olan postlar ve kullanıcılar da farklı olabilir.
+Bu adımlar PythonAnywhere'de otomatikleştirilmiştir, fakat farklı herhangi bir sunucu sağlayacısıyla da aynı adımlar yapılmalıdır. Anlaşılması önemli olan nokta şu ki PythonAnywhere üzerinde yaratılan veritabanı ile kendi bilgisayarımızda yarattığımız veritabanı birbirinden tamamen ayrı -- dolayısı ile bu iki veritabanında saklanmış olan postlar ve kullanıcılar da farklı olabilir.
 
 Bu nedenle, aynen kendi bilgisayarımızda yapmış olduğumuz gibi, `createsuperuser` ile bir admin kullacısını oluşturmamız gerekiyor. PythonAnywhere otomatik olarak virtualenv i başlatmış olduğu için, bu kullanıcıyı hemen oluşturabiliriz:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere komut satırı{% endfilename %}
 
-    (ola.pythonanywhere.com) $ python manage.py createsuperuser
+    (<kullanici-adiniz>.pythonanywhere.com) $ python manage.py createsuperuser
     
 
 Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızda oluşturduğunuz kullanıcı detayları ile aynı olması hatırlamak açısından faydalı olacaktır, tabii PythonAnywhere üzerindeki şifreyi daha zor olarak tanımlamak isteyebiliriz.
 
 Şimdi, isterseniz, PythonAnywhere üzerindeki kodlara `ls` komutu ile göz atabilirsiniz:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere komut satırı{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite  static
