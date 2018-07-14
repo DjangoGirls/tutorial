@@ -1,4 +1,4 @@
-> このチャプターの一部はGeek Girls Carrots (http://django.carrots.pl/)のチュートリアルに基づいています。
+> このチャプターの一部はGeek Girls Carrots (http://django.carrots.pl/ )のチュートリアルに基づいています。
 > 
 > このチャプターの一部はCreative Commons Attribution-ShareAlike 4.0 International License のライセンスによるdjango-marcador tutorialに基づいています. このdjango-marcador tutorialはMarkus Zapke-Gründemann らが著作権を保有しています。 
 
