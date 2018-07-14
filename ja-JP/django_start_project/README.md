@@ -127,7 +127,7 @@ DATABASES = {
 }
 ```
 
-ブログのデータベースを作成するには、コンソールで次のコードを実行してみましょう： `python manage.py migrate`（`djangogirls` `manage.py`ファイル）。 うまくいったら次のように表示されるでしょう：
+ブログのデータベースを作成するには、コンソールで次のコードを実行してみましょう： `python manage.py migrate` (`manage.py`ファイルのある`djangogirls`ディレクトリにいる必要があります) 。 うまくいったら次のように表示されるでしょう：
 
 {% filename %}command-line{% endfilename %}
 
@@ -154,7 +154,7 @@ DATABASES = {
 
 ## ウェブサーバを起動する
 
-コマンドラインやコマンドプロンプトで`manage.py`ファイル（`djangogirls`ディレクトリ）を含むディレクトリに移動している必要があります。 `python manage.py runserver`を実行してWebサーバーを起動できます。
+コマンドラインやコマンドプロンプトで`manage.py`ファイルを含むディレクトリ（`djangogirls`ディレクトリ）に移動している必要があります。 `python manage.py runserver`を実行してWebサーバーを起動できます。
 
 {% filename %}command-line{% endfilename %}
 
