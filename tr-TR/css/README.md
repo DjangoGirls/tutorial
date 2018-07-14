@@ -125,7 +125,7 @@ Tarayıcı, dosyaları verilen sırada okuyor. O yüzden doğru yerde olduğunda
 
         {% for post in posts %}
             <div>
-                <p>published: {{ post.published_date }}</p>
+                <p>Yayın tarihi: {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
