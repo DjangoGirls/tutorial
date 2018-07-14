@@ -154,7 +154,7 @@ DATABASES = {
 
 ## ウェブサーバを起動する
 
-コマンドラインやコマンドプロンプトで`manage.py`ファイルを含むディレクトリ（`djangogirls`ディレクトリ）に移動している必要があります。 `python manage.py runserver`を実行してWebサーバーを起動できます。
+コマンドラインやコマンドプロンプトで`manage.py`ファイルを含むディレクトリ（`djangogirls`ディレクトリ）に移動してください。 `python manage.py runserver`を実行してWebサーバーを起動できます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -182,7 +182,7 @@ Windows上で、`UnicodeDecodeError`で失敗した場合は、代わりに次�
     http://127.0.0.1:8000/
     
 
-Chromebookを使用している場合は、次のURLからアクセスしてテストサーバーにアクセスします。
+Chromebookを使用している場合は、次のURLからテストサーバーにアクセスします。
 
 {% filename %}ブラウザ{% endfilename %}
 
