@@ -44,7 +44,7 @@ Bunu blog uygulamamızın içine `static` isimli bir klasör oluşturarak yapaca
     ├── blog 
     │ ├── migrations
     │ ├── static
-    │ └── templates 
+    │ └── templates
     └── mysite
     
 
