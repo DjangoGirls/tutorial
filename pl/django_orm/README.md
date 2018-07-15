@@ -26,7 +26,7 @@ Efekt powinien wyglądać tak:
 >>>
 ```
 
-Jesteś teraz w intrektywnej konsoli Django. Przypomina ona nieco wiersz poleceń Pythona, z odrobiną dodatkowej magii Django. :) Oczywiście możesz także używać w niej wszystkich poleceń Pythona.
+Jesteś teraz w interaktywnej konsoli Django. Przypomina ona nieco wiersz polecenia Pythona, z odrobiną dodatkowej magii Django. :) Oczywiście możesz także używać w niej wszystkich poleceń Pythona.
 
 ### Wszystkie obiekty
 

@@ -1,28 +1,28 @@
-# Wprowadzenie do interfejsu wiersza poleceń
+# Wprowadzenie do interfejsu wiersza polecenia
 
 > Dla czytelniczek w domu: ten rozdział jest również omówiony w wideo [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
 Za chwilę napiszesz swoją pierwszą linijkę kodu. Jesteś już podekscytowana? :)
 
-**Pozwól, że przedstawimy Ci, Twojego pierwszego przyjaciela: wiersz poleceń!**
+**Pozwól, że przedstawimy Ci, Twojego pierwszego przyjaciela: wiersz polecenia!**
 
 Następujące kroki pokażą Ci, jak wykorzystać tajemnicze czarne okno, które używają wszyscy hakerzy. Na początku może to wyglądać nieco przerażająco ale tak naprawdę to tylko zachęta do wpisywania komend.
 
 > **Uwaga** Podczas tego kursu będziemy używać terminów "katalog" i "folder" zamiennie, ponieważ oznaczają one tę samą rzecz.
 
-## Czym jest wiersz poleceń?
+## Czym jest wiersz polecenia?
 
-Okno zwane **wierszem poleceń** lub **interfejsem wiersza poleceń** jest aplikacją tekstową służącą do przeglądania, obsługi i operowania plikami na Twoim komputerze. Podobnie jak np. Eksplorator Windows lub Finder na Macu, ale bez interfejsu graficznego. Inne nazwy dla wiersza poleceń to *cmd*, *CLI*, *prompt*, *konsola* lub *terminal*.
+Okno zwane **wierszem polecenia** lub **interfejsem wiersza polecenia** jest aplikacją tekstową służącą do przeglądania, obsługi i operowania plikami na Twoim komputerze. Podobnie jak np. Eksplorator Windows lub Finder na Macu, ale bez interfejsu graficznego. Inne nazwy dla wiersza polecenia to *cmd*, *CLI*, *prompt*, *konsola* lub *terminal*.
 
-## Uruchamiamy interfejs wiersza poleceń
+## Uruchamiamy interfejs wiersza polecenia
 
-Aby zacząć nasze eksperymenty, musimy najpierw otworzyć nasz wiersz poleceń.
+Aby zacząć nasze eksperymenty, musimy najpierw otworzyć nasz wiersz polecenia.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 Przejdź do menu Start → System → Wiersz polecenia.
 
-> Na starszych wersjach Windowsa szukaj w menu Start → Wszystkie programy → Akcesoria → Wiersz poleceń.
+> Na starszych wersjach Windowsa szukaj w menu Start → Wszystkie programy → Akcesoria → Wiersz polecenia.
 
 <!--endsec-->
 
@@ -68,7 +68,7 @@ Każde polecenie będzie poprzedzone tym znakiem oraz jedną spacją, ale nie mu
 
 > Jedna mała uwaga: w Twoim przypadku prompt może być poprzedzony czymś jeszcze, np. `C:\Users\ola>` lub `Olas-MacBook-Air:~ ola$` i jest to w 100% poprawne.
 
-Część do znaku `$` lub `>` razem z nim nazywana jest *znakiem zachęty wiersza poleceń* lub skrótowo *znakiem zachęty (promptem)*. Jego celem jest zachęcić Ciebie do wpisania jakiegoś polecenia.
+Część do znaku `$` lub `>` razem z nim nazywana jest *znakiem zachęty wiersza polecenia* lub skrótowo *znakiem zachęty (promptem)*. Jego celem jest zachęcić Ciebie do wpisania jakiegoś polecenia.
 
 W tutorialu, jeżeli będziemy chciały byś wpisała komendę, umieścimy przed nią również `$` lub `>`, a czasami nawet resztę znaku zachęty. Możesz śmiało zignorować lewą część i wpisać tylko komendę zaczynającą się za promptem.
 
@@ -108,7 +108,7 @@ Jak widzisz, komputer właśnie wyświetlił Twoją nazwę użytkownika. Prawda,
 
 ## Podstawy
 
-Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu poleceń, zatem postępuj według instrukcji odpowiadających Twojemu systemowi operacyjnemu. To co, spróbujemy?
+Każdy system operacyjny ma nieco inny zestaw komend dostępnych w wierszu polecenia, zatem postępuj według instrukcji odpowiadających Twojemu systemowi operacyjnemu. To co, spróbujemy?
 
 ### Bieżący katalog
 
@@ -138,7 +138,7 @@ Miło byłoby dowiedzieć się, gdzie teraz jesteśmy, co? No to sprawdźmy. Wpi
 
 <!--endsec-->
 
-Prawdopodobnie ujrzysz coś podobnego na swoim komputerze. Kiedy otwierasz wiersz poleceń, zwykle jest on uruchamiany w folderze głównym Twojego konta użytkownika.
+Prawdopodobnie ujrzysz coś podobnego na swoim komputerze. Kiedy otwierasz wiersz polecenia, zwykle jest on uruchamiany w folderze głównym Twojego konta użytkownika.
 
 * * *
 
@@ -223,7 +223,7 @@ Sprawdźmy, czy coś się faktycznie zmieniło:
 
 Tak, to tutaj!
 
-> PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `Tab` na klawiaturze, wiersz poleceń automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `Tab` dwukrotnie, aby wyświetlić listę możliwości.
+> PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `Tab` na klawiaturze, wiersz polecenia automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `Tab` dwukrotnie, aby wyświetlić listę możliwości.
 
 * * *
 
@@ -382,7 +382,7 @@ Gotowe! Dla pewności, że został on naprawdę usunięty, sprawdźmy to:
 
 ### Wyjście
 
-To na razie tyle! Możesz teraz spokojnie zamknąć wiersz poleceń. To co, zrobimy to jak prawdziwy haker? :)
+To na razie tyle! Możesz teraz spokojnie zamknąć wiersz polecenia. To co, zrobimy to jak prawdziwy haker? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -420,7 +420,7 @@ Oto podsumowanie przydatnych poleceń:
 | rmdir (lub del)     | rm                         | usuwanie pliku                | **del c:\test\test.txt**                        |
 | rmdir /S            | rm -r                      | usuwanie katalogu             | **rm -r testdirectory**                           |
 
-To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu poleceń, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
+To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu polecenia, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
 
 Jeżeli temat Cię zainteresował, to [ss64.com](http://ss64.com) zawiera kompletny spis poleceń dla wszystkich systemów operacyjnych.
 

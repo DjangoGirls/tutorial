@@ -30,7 +30,7 @@ Stwórzmy nowe środowisko wirtualne o nazwie `myvenv`. Polecenie ma następują
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-Aby utworzyć nowego `virtualenv`'a, musisz otworzyć okno wiersza poleceń i wykonać polecenie `python -m venv myvenv`. Będzie to wyglądać tak:
+Aby utworzyć nowego `virtualenv`'a, musisz otworzyć okno wiersza polecenia i wykonać polecenie `python -m venv myvenv`. Będzie to wyglądać tak:
 
 {% filename %}command-line{% endfilename %}
 
