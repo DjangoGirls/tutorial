@@ -79,7 +79,7 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zama
 TIME_ZONE = 'Europe/Istanbul'
 ```
 
-Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django hazırlanmış olan birçok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. Eğer İngilizce ana diliniz değilse, varsayılan buttonları ve uyarıların dilini kendi dilinize değiştirmek bunu ekleyebilirsiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django hazırlanmış olan birçok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
 Farklı bir dil istiyorsanız, aşağıdaki satırı değiştirerek dil kodunu seçin:
 
