@@ -30,9 +30,9 @@ Nach Eingabe von python3 in der Konsole ändert sich das Prompt-Zeichen zu `>>>`
 
 Wenn du die Python-Konsole wieder verlassen möchtest, gib einfach `exit()` ein oder nutze das Tastatur-Kürzel `Strg + Z` unter Windows bzw. `Strg + D`, wenn du einen Mac hast oder Linux verwendest. Dann bist Du wieder in der normalen Konsole und der Python-Prompt `>>>` ist weg.
 
-Fürs Erste bleiben wir in der Python Konsole, wir wollen mehr darüber lernen. Last uns Anfangen mit ein wenig Mathematik, gebt `2 + 3` ein und drückt `enter`.
+Fürs Erste bleiben wir in der Python Konsole, wir wollen mehr darüber lernen. Lass uns mit ein wenig Mathematik anfangen, gib `2 + 3` ein und drück `enter`.
 
-{% filename %}cloud 9{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 + 3 
@@ -45,7 +45,7 @@ Cool! Schon ist das Ergebnis da. Python kann rechnen! Probier einfach einige and
 - `5 - 1`
 - `40 / 2`
 
-Um Potenzen zu berechnen, sagen wir mal 2 hoch 3, müssen wir folgende eingeben: {% filename %}command-line{% endfilename %}
+Um Potenzen zu berechnen, sagen wir 2 hoch 3, müssen wir Folgendes eingeben: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
@@ -67,7 +67,7 @@ Strings sind Zeichenketten. Das ist eine Folge von Buchstaben, die von Anführun
 'Ola'
 ```
 
-Nun hast du deinen ersten String erzeugt! Dies ist eine Folge von Zeichen (also nicht nur Buchstaben, wie ich oben schrieb, sondern Zeichen aller Art), die von einem Computer verarbeitet werden können. Ein String muss stets mit dem gleichen Zeichen beginnen und enden. Dies kann entweder ein einzelnes Gänsefüßchen sein (`'`) oder ein doppeltes (`"`) (da gibt es keinen Unterschied!). Die Anführungszeichen zeigen Python nur an, dass alles dazwischen ein String ist.
+Nun hast du deinen ersten String erzeugt! Dies ist eine Folge von Zeichen (also nicht nur Buchstaben, wie ich oben schrieb, sondern Zeichen aller Art), die von einem Computer verarbeitet werden können. Ein String muss stets mit dem gleichen Zeichen beginnen und enden. Dies kann entweder ein einzelnes Gänsefüßchen sein (`'`) oder ein doppeltes (`"`), da gibt es keinen Unterschied! Die Anführungszeichen zeigen Python nur an, dass alles dazwischen ein String ist.
 
 Strings können zusammengesetzt werden. Versuch es einmal:
 
