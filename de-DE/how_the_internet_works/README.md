@@ -6,7 +6,7 @@
 
 Wahrscheinlich nutzt du das Internet jeden Tag. Aber weißt du, was passiert, wenn du eine Adresse wie https://djangogirls.org im Browser eingibst und `enter` drückst?
 
-Als Erstes solltest du wissen, dass eine Webseite meist nur ein paar Dateien auf der Festplatte sind. Genau wie deine Filme, Mp3s oder Bilder. Das Besondere an Webseiten ist, dass sie aus speziellem Computer-Code bestehen, das sogenannte HTML.
+Als Erstes solltest du wissen, dass eine Webseite meist nur ein paar Dateien auf der Festplatte sind. Genau wie deine Filme, Musik oder Bilder. Das Besondere an Webseiten ist, dass sie aus speziellem Computer-Code bestehen, das sogenannte HTML.
 
 Wenn du noch nie etwas mit Programmierung zu tun hattest, kann auch HTML zuerst abschreckend aussehen, aber dein Browser (Chrome, Safari, Firefox, etc.) liebt es. Browser sind so entworfen, dass sie diesen Code verstehen, seinen Anweisungen folgen können und diese Dateien, aus denen deine Website besteht, genau so darstellen, wie du es möchtest.
 
@@ -18,7 +18,7 @@ Wir haben ein Bild gemalt. So sieht es aus:
 
 ![Abbildung 1.1](images/internet_1.png)
 
-Ziemliches Durcheinander, oder? Eigentlich ist es ein Netzwerk aus verbundenen Maschinen (den oben genannten *Servern*). Hunderttausende von Rechnern! Kilometer über Kilometer Kabel rund um die Welt. Auf einer Webseite über Unterseekabel (http://submarinecablemap.com/) kannst du dir ein Bild von der Komplexität des Netzes machen. Hier ist ein Screenshot der Seite:
+Ziemliches Durcheinander, oder? Eigentlich ist es ein Netzwerk aus verbundenen Maschinen (den oben genannten *Servern*). Hunderttausende von Rechnern! Kilometer über Kilometer Kabel rund um die Welt. Auf einer Webseite über Unterseekabel (https://submarinecablemap.com/) kannst du dir ein Bild von der Komplexität des Netzes machen. Hier ist ein Screenshot der Seite:
 
 ![Abbildung 1.2](images/internet_3.png)
 
