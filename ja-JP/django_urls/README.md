@@ -126,4 +126,4 @@ urlpatterns = [
 
 エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' というアトリビュートがない**ことを知らせてくれています。 Djangoは、その名前の *ビュー* を探してこようとしますが、まだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 なにもおかしいことはしていません。次の章ではビューを作っていきましょう。
 
-> Django URLconfについて知りたい場合は、公式のドキュメントを見て下さい： https://docs.djangoproject.com/en/1.11/topics/http/urls/
+> Django URLconfについて知りたい場合は、公式のドキュメントを見て下さい： https://docs.djangoproject.com/ja/1.11/topics/http/urls/
