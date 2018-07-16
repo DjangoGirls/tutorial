@@ -16,12 +16,12 @@ Während der nächsten Schritte werden wir die Windows-Kommandozeile verwenden (
 
 ![Tippe "cmd" in das "Run"-Fenster](../python_installation/images/windows-plus-r.png)
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Hinweis: Wenn du eine ältere Version von Windows verwendest (7, Vista oder älter) und es tritt bei der Python 3.6.x Installation ein Fehler auf, kannst du Folgendes versuchen:
 
-1. install all Windows Updates and try to install Python 3.6 again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. Installiere alle Windows-Updates und versuche erneut, Python 3.6 zu installieren; oder
+2. Installiere eine [ältere Version von Python](https://www.python.org/downloads/windows/), z. B. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Wenn du eine ältere Version von Python installierst, kann es sein, dass die Installationsanzeige etwas anders aussieht als oben gezeigt. Stell sicher, dass du nach unten scrollst bis du "python.exe zum Pfad hinzufügen" siehst, klicke den Button und wähle "Wird auf die lokale Festplatte installiert":
 
 ![Python zum Pfad hinzufügen (Installer von älterer Python-Version)](../python_installation/images/add_python_to_windows_path.png)
 
@@ -30,7 +30,7 @@ If you install an older version of Python, the installation screen may look a bi
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Hinweis** Bevor du Python auf Mac OS X installierst, musst du sicherstellen, dass deine Mac-Einstellungen es erlauben, Pakete zu installieren, die nicht aus dem App Store stammen. Geh auf Systemeinstellungen (im Ordner "Programme"), klicke auf "Sicherheit & Privacy", und dann auf die Registerkarte "Allgemein". If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
 Auf der Website https://www.python.org/downloads/release/python-361/ findest du den passenden Python-Installer:
 
