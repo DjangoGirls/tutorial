@@ -416,9 +416,9 @@ Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 | move             | mv                      | Datei verschieben              | **move c:\test\test.txt c:\windows\test.txt** |
 | mkdir            | mkdir                   | neues Verzeichnis erstellen    | **mkdir testdirectory**                           |
 | rmdir (oder del) | rm                      | Datei löschen                  | **del c:\test\test.txt**                        |
-| rmdir /S         | rm -r                   | delete a directory             | **rm -r testdirectory**                           |
+| rmdir /S         | rm -r                   | Verzeichnis löschen            | **rm -r testdirectory**                           |
 
-Das sind nur sehr wenige aller Befehle, die du in deiner Konsole verwenden kannst, heute aber wirst du keine weiteren brauchen.
+Das sind nur sehr wenige der Befehle, welche du in deiner Konsole verwenden kannst, aber du wirst heute nicht mehr brauchen.
 
 Falls du neugierig bist, findest du auf [ss64.com](http://ss64.com) eine vollständige Übersicht über alle Kommandozeilen-Befehle für alle Betriebssysteme.
 
