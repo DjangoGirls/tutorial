@@ -380,7 +380,7 @@ Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 ### Beenden
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -400,23 +400,23 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Cool, was? :)
 
 ## Zusammenfassung
 
 Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 
-| Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                | Beispiel                                          |
-| ---------------- | ----------------------- | --------------------------- | ------------------------------------------------- |
-| beenden          | beenden                 | Fenster schließen           | **beenden**                                       |
-| cd               | cd                      | Verzeichnis wechseln        | **cd test**                                       |
-| cd               | pwd                     | show the current directory  | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir              | ls                      | Unterordner/Dateien zeigen  | **dir**                                           |
-| copy             | cp                      | Datei kopieren              | **copy c:\test\test.txt c:\windows\test.txt** |
-| move             | mv                      | Datei verschieben           | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir            | mkdir                   | neues Verzeichnis erstellen | **mkdir testdirectory**                           |
-| rmdir (or del)   | rm                      | delete a file               | **del c:\test\test.txt**                        |
-| rmdir /S         | rm -r                   | delete a directory          | **rm -r testdirectory**                           |
+| Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                   | Beispiel                                          |
+| ---------------- | ----------------------- | ------------------------------ | ------------------------------------------------- |
+| exit             | exit                    | Fenster schließen              | **exit**                                          |
+| cd               | cd                      | Verzeichnis wechseln           | **cd test**                                       |
+| cd               | pwd                     | aktuelles Verzeichnis anzeigen | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| dir              | ls                      | Unterordner/Dateien zeigen     | **dir**                                           |
+| copy             | cp                      | Datei kopieren                 | **copy c:\test\test.txt c:\windows\test.txt** |
+| move             | mv                      | Datei verschieben              | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir            | mkdir                   | neues Verzeichnis erstellen    | **mkdir testdirectory**                           |
+| rmdir (or del)   | rm                      | delete a file                  | **del c:\test\test.txt**                        |
+| rmdir /S         | rm -r                   | delete a directory             | **rm -r testdirectory**                           |
 
 Das sind nur sehr wenige aller Befehle, die du in deiner Konsole verwenden kannst, heute aber wirst du keine weiteren brauchen.
 
