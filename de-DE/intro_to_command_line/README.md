@@ -256,7 +256,7 @@ Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem D
 
 ### Übung!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practice`-Ordner ein Verzeichnis namens `test`. (Verwende dazu die `cd` und `mkdir`-Kommandos.)
 
 #### Lösung:
 
@@ -311,7 +311,7 @@ Zuerst müssen wir zurück zum Desktop wechseln:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Durch Verwendung von `..` mit dem `cd` Kommando wechselst du von deinem aktuellen Verzeichnis zum übergeordneten Verzeichnis (dies ist das Verzeichnis, das das aktuelle Verzeichnis enthält).
 
 Schau nach, wo du gerade bist:
 
