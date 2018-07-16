@@ -186,7 +186,7 @@ HTMLは、「Hypertext Markup Language」の頭文字を取ったものです。
     $ git commit -m "Changed the HTML for the site."
     
 
-> **ノート** commit messageは、二重クォート記号を必ず使うようにしましょう。
+> **ノート** コミットメッセージは二重クォート記号で囲みましょう。
 
 ここまで終われば、GitHubに変更部分をアップロード(push) しましょう。
 
