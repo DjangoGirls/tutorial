@@ -30,12 +30,12 @@ Wenn du eine ältere Version von Python installierst, kann es sein, dass die Ins
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Hinweis** Bevor du Python auf Mac OS X installierst, musst du sicherstellen, dass deine Mac-Einstellungen es erlauben, Pakete zu installieren, die nicht aus dem App Store stammen. Geh auf Systemeinstellungen (im Ordner "Programme"), klicke auf "Sicherheit & Privacy", und dann auf die Registerkarte "Allgemein". If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Hinweis** Bevor du Python auf Mac OS X installierst, musst du sicherstellen, dass deine Mac-Einstellungen es erlauben, Pakete zu installieren, die nicht aus dem App Store stammen. Geh auf Systemeinstellungen (im Ordner "Programme"), klicke auf "Sicherheit", und dann auf die Registerkarte "Allgemein". Wenn "Apps-Download erlauben von:" auf "Mac App Store" gestellt ist, ändere die Einstellung auf "Mac App Store und verifizierte Entwickler".
 
-Auf der Website https://www.python.org/downloads/release/python-361/ findest du den passenden Python-Installer:
+Auf der Website https://www.python.org/downloads/release/python-366/ findest du den passenden Python-Installer:
 
-* Runteraden der *Mac OS X 64-bit/32-bit installer*-Datei,
-* Doppelklicke auf *Python.mpkg* um die Installation zu starten.
+* Lade die Datei *Mac OS X 64-bit/32-bit installer* herunter,
+* Doppelklicke auf *Python.mpkg*, um die Installation zu starten.
 
 <!--endsec-->
 
@@ -50,7 +50,7 @@ Es ist ziemlich wahrscheinlich, dass du Python schon automatisch installiert has
     Python 3.6.1
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. Wenn Python bei dir nicht installiert ist, oder du eine andere Version willst, kannst du es folgendermaßen installieren:
+Wenn du eine andere 'Mikroversion' von Python installiert hast, z.B 3.6.0, dann brauchst du die Version nicht zu aktualisieren. Wenn Python bei dir nicht installiert ist, oder du eine andere Version willst, kannst du es folgendermaßen installieren:
 
 <!--endsec-->
 
