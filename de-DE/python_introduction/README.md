@@ -296,7 +296,7 @@ Genau! `len()` liefert die Anzahl von Objekten in einer Liste zurück. Praktisch
 >>> lottery.sort()
 ```
 
-Diese Anweisung gibt nichts zurück. Was passiert, ist, dass die Reihenfolge der Objekte in der Liste geändert werden. Um zu sehen, was passiert ist, müssen wir die Liste ausgeben:
+Diese Anweisung gibt nichts zurück, sie hat aber die Reihenfolge der Objekte in der Liste geändert. Um zu sehen, was passiert ist, müssen wir die Liste ausgeben:
 
 {% filename %}command-line{% endfilename %}
 
@@ -338,9 +338,9 @@ Falls du nicht immer die gesamte Liste, sondern beispielsweise nur den ersten Ei
 42
 ```
 
-Wie Du siehst, kannst Du auf die einzelnen Objekte in Deiner Liste zugreifen, indem Du den Namen der Liste verwendest und anschließend den Index in eckigen Klammern anfügst.
+Wie du siehst, kannst du auf die einzelnen Objekte in deiner Liste zugreifen, indem du den Namen der Liste verwendest und anschließend den Index in eckigen Klammern anfügst.
 
-Um etwas aus deiner Liste zu löschen, musst du **Indizes** und die `pop()`-Methode benutzen, wie wir es weiter oben gelernt haben (del ist eine Abkürzung für delete). Lass uns ein Beispiel versuchen und das festigen, was wir zuvor gelernt haben; wir werden die erste Nummer aus unserer Liste löschen.
+Um etwas aus deiner Liste zu löschen, musst du die **Indizes** wie gerade gelernt benutzen und die `pop()`-Methode. Lass uns ein Beispiel versuchen und das festigen, was wir zuvor gelernt haben; wir werden die erste Nummer aus unserer Liste löschen.
 
 {% filename %}command-line{% endfilename %}
 
