@@ -140,7 +140,7 @@ Kodunuz artık Github'da. Hemen gidip bak! İyi bir çevrede olduğunu göreceks
 
 Ana [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) a logosuna tıklayarak dönelim ve bir "Bash" console başlatalım – bu bilgisayarınızdaki komut satırının PythonAnywhere versiyonudur.
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![PythonAnywhere web arayüzündeki 'New Console' bölümünde, 'bash' için butona tıkla](images/pythonanywhere_bash_console.png)
 
 > **Not:** PythonAnywhere Linux tabanlıdır, eğer Windows kullanıyorsan, bilgisyarındaki konsoldan biraz farklı görünür.
 
