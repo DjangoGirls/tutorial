@@ -142,7 +142,7 @@ Bunlar öğreneceğiniz her programlama dilinin temelleri. Biraz daha zor bir ş
 
 ## Hatalar
 
-Şimdi yeni bir şey deneyelim. Bir sayının uzunluğunu, bir string'in uzunluğunu bulduğumuz gibi bulabilir miyiz? Bunu görmek için `len(304023)` yazıp `enter`a basalım:
+Şimdi yeni bir şey deneyelim. Bir sayının uzunluğunu, bir string'in uzunluğunu bulduğumuz gibi bulabilir miyiz? Bunu görmek için `len(304023)` yazıp `enter` a basalım:
 
 {% filename %}{{ warning_icon }} komut satırı{% endfilename %}
 
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-İlk hatamızı aldık! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Hatalar yapmak (kasıtlı olanlar bile) öğrenmenin önemli bir kısmı!
+İlk hatamızı aldık! {{ warning_icon }} ikonu çalıştırmak üzere olduğunuz programın beklediğiniz gibi çalışmayacağı konusunda sizi ikaz eder. Hatalar yapmak (kasıtlı olanlar bile) öğrenmenin önemli bir kısmı!
 
 Nesne türü "int" (tam sayılar, tüm sayılar) in uzunluğu olmadığını söylüyor. Şimdi ne yapabiliriz? Belki de rakamı bir string olarak yazabiliriz? Stringlerin bir uzunluğu var, değil mi?
 
