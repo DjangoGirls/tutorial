@@ -166,8 +166,8 @@ Unser erster Fehler sagt, dass Objekte vom Typ "int" (Integers, das sind ganze Z
 
 Ja, das funktioniert! Hier haben wir die `str`-Funktion innerhalb der Funktion `len` aufgerufen. `str()` konvertiert alles zu einem String.
 
-- Die `str`-Funktion wandelt den übergebenen Wert in einen **String** um
-- Die `int`-Funktion wandelt den übergebenen Wert in einen **Integer** um
+- Die `str`-Funktion wandelt den übergebenen Wert in einen **String** um.
+- Die `int`-Funktion wandelt den übergebenen Wert in einen **Integer** um.
 
 > Wichtig: Zwar können wir Zahlen in Text umwandeln, aber nicht immer auch Text in Zahlen - was beispielsweise sollte `int('hello')` ergeben?
 
@@ -175,9 +175,9 @@ Ja, das funktioniert! Hier haben wir die `str`-Funktion innerhalb der Funktion `
 
 Ein wichtiger Bestandteil beim Programmieren sind Variablen. Eine Variable ist einfach ein Name für etwas, das wir später unter genau diesem Namen wieder verwenden können. Programmiererinnen nutzen Variablen, um Daten zu speichern, den Code lesbar zu halten und um sich nicht immer alles merken zu müssen.
 
-Lasst uns eine eine Variable mit der Bezeichnung `name` anlegen:
+Lass uns eine Variable mit der Bezeichnung `name` anlegen:
 
-{% filename %}cloud 9{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 >>> name = "Ola"
@@ -213,7 +213,7 @@ Du kannst die Variable auch in Funktionen verwenden:
 5
 ```
 
-Das ist toll, oder? Variable können alles sein, also auch Zahlen. Versuche Folgendes:
+Das ist toll, oder? Variablen können alles enthalten, also auch Zahlen. Versuche Folgendes:
 
 {% filename %}command-line{% endfilename %}
 
