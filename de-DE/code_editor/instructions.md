@@ -1,4 +1,4 @@
-Es gibt viele verschiedene Editoren. Welcher für Dich am besten ist, ist weitestgehend Geschmackssache. Die meisten Python-Programmiererinnen verwenden komplexe, aber extrem leistungsfähige IDEs (Integrated Development Environments), z. B. PyCharm. Für Anfängerinnen sind diese jedoch wahrscheinlich weniger gut geeignet. Unsere Empfehlungen sind ebenso leistungsfähig, aber viel einfacher zu bedienen.
+Es gibt viele verschiedene Editoren. Welcher für Dich am besten ist, ist weitestgehend Geschmackssache. Die meisten Python-Programmiererinnen verwenden komplexe, aber extrem leistungsfähige IDEs (Integrated Development Environments), z. B. PyCharm. Für Anfängerinnen sind diese jedoch weniger gut geeignet. Unsere Empfehlungen sind ebenso leistungsfähig, aber viel einfacher zu bedienen.
 
 Unsere Vorschläge siehst du unten. Aber fühl dich ganz frei, deine Trainerin zu fragen, was ihre Vorlieben sind - wenn sie sich mit dem Editor auskennt, wird es leichter sein, Hilfe zu erhalten.
 
@@ -16,7 +16,7 @@ Sublime Text ist ein sehr beliebter Editor, nutzbar für einen kostenlosen Testz
 
 ## Atom
 
-Atom ist ein ganz neuer Code-Editor, der von [GitHub](https://github.com/) ins Leben gerufen wurde. Er ist kostenlos, quelloffen (Open Source), einfach zu installieren und einfach zu bedienen. Atom ist verfügbar für Windows, OS X und Linux.
+Atom ist ein ganz neuer Code-Editor, der von [GitHub](https://github.com/) ins Leben gerufen wurde. Er ist kostenlos, quelloffen (Open Source), einfach zu installieren und zu bedienen. Atom ist für Windows, OS X und Linux verfügbar.
 
 [Du kannst ihn hier herunterladen](https://atom.io/)
 
