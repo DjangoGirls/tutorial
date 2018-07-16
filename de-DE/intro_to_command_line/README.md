@@ -8,7 +8,7 @@ Aufregend, oder?! In ein paar Minuten wirst du deine erste Zeile Code schreiben!
 
 Im Folgenden zeigen wir dir, wie du das schwarze Fenster benutzt, das alle Hackerinnen nutzen. Es sieht vielleicht erstmal etwas unheimlich aus, aber es ist nur ein Programm, das darauf wartet, Anweisungen von dir zu bekommen.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Hinweis:** Bitte beachte, dass wir in dem gesamten Buch die Begriffe "Verzeichnis" und "Ordner" abwechselnd gebrauchen, aber sie stehen für ein und dasselbe.
 
 ## Was ist die Konsole?
 
@@ -102,9 +102,9 @@ Und dann bestätige mit `Enter`. Das ist unser Ergebnis:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Wie du siehst, der Computer hat deinen Nutzernamen ausgegeben. Toll, was? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Versuch, jeden Befehl abzuschreiben und nicht zu kopieren und einzufügen. Auf diese Weise wirst du dir mehr merken!
 
 ## Grundlagen
 
