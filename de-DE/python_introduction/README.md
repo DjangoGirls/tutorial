@@ -384,7 +384,7 @@ Nun gib einmal Folgendes ein (verwende statt 'Ola' usw. deine eigenen Informatio
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-Du hast nun soeben die Variable mit dem Namen `participant` angelegt, die ein Dictionary mit drei key-value Paaren enthält (values, also Werte - aber auch hier bleiben wir beim englischen Begriff - sind die Objekte in einem Dictionary):
+Du hast nun soeben die Variable mit dem Namen `participant` angelegt, die ein Dictionary mit drei key-value Paaren enthält (values, also Werte, sind die Objekte in einem Dictionary, - aber auch hier bleiben wir beim englischen Begriff):
 
 - Der key `name` verweist auf den value `'Ola'` (welches ein `string` Objekt ist),
 - `country` verweist auf `'Poland'` (ebenfalls ein `string` Objekt),
@@ -399,7 +399,7 @@ Auf die einzelnen Objekte in einem Dictionary kannst du wie folgt zugreifen:
 Ola
 ```
 
-Also ganz ähnlich wie bei einer Liste. Aber statt dir einen Index merken zu müssen, benutzt du bei einem Dictionary einfach einen Namen (hier: den String 'name').
+Also ganz ähnlich wie bei einer Liste. Aber statt dir einen Index merken zu müssen, benutzt du bei einem Dictionary einfach einen key (hier: den String 'name').
 
 Was aber geschieht, wenn wir Python nach dem Wert eines keys fragen, den es gar nicht gibt? Errätst du es schon? Probieren wir es einfach aus und schauen was passiert!
 
@@ -412,7 +412,7 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Ah, wieder ein Fehler! Diesmal ein **KeyError**. Python hilft uns auch hier und sagt uns, dass es den key `'age'` in diesem Dictionary garnicht gibt.
+Ah, wieder ein Fehler! Diesmal ein **KeyError**. Python hilft uns auch hier und sagt uns, dass es den key `'age'` in diesem Dictionary gar nicht gibt.
 
 Wenn du zwischen Dictionaries und Listen wählen kannst, wann sollte welche Datenstruktur verwendet werden? Das ist eine gute Frage, über die es sich nachzudenken lohnt; und vielleicht möchtest du dies kurz tun, bevor du weiterliest.
 
@@ -427,7 +427,7 @@ Dictionaries sind, so wie auch Listen, *mutable*, d. h. nachträglich veränderb
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Wie bei Listen können wir auch bei Dictionaries die `len()`-Funktion verwenden, um die Zahl der enthaltenen Einträge (das sind die key-value Paare) zu ermitteln: Probier es gleich aus und tippe dieses Kommando ein:
+Wie bei Listen können wir auch bei Dictionaries die `len()`-Funktion verwenden, um die Zahl der enthaltenen Einträge (das sind die key-value Paare) zu ermitteln. Probier es gleich aus und tippe dieses Kommando ein:
 
 {% filename %}command-line{% endfilename %}
 
