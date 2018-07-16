@@ -999,7 +999,7 @@ Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiy
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+`for` un davranışı `if` e benziyor; aşağıdaki kodda her iki satır girintili olmalı (dört boşluk ile).
 
 Dosyada yer alacak tam kod aşağıdadır:
 
