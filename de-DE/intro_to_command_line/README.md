@@ -20,7 +20,7 @@ Um mit unserem Tutorial zu starten, musst du als Erstes das Kommandozeilenprogra
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → Windows System → Command Prompt.
+Windows 10: Gehe zur Suchleiste → Gib "cmd" in die Suche ein → Klicke den Eintrag Eingabeaufforderung mit der rechten Maustaste an → Wähle aus dem nächsten Menü die Option Ausführen aus.
 
 > On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
 
