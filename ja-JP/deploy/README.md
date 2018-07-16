@@ -98,9 +98,9 @@ Git のすべてのファイルおよびこのディレクトリ内のフォル�
 
 ![](images/github_get_repo_url_screenshot.png)
 
-GitHub上のGitリポジトリにコンピュータのGitリポジトリを接続する必要があります。
+そして自分のコンピューター上のGitリポジトリをGitHub上のGitリポジトリに結びつけてあげる必要があります。
 
-コンソールに次のように入力します（`<your-github-username>`をGitHubアカウントの作成時に入力したユーザー名に置き換えます）。
+コンソールに次のように入力します（`<your-github-username>`をGitHubアカウントの作成時に入力したユーザー名、ただし山カッコを除いたもの、に置き換えます）。
 
 {% filename %}command-line{% endfilename %}
 
@@ -112,8 +112,8 @@ GitHub上のGitリポジトリにコンピュータのGitリポジトリを接�
 
 {% filename %}command-line{% endfilename %}
 
-    Username for 'https://github.com': hjwp
-    Password for 'https://hjwp@github.com':
+    Username for 'https://github.com': ola
+    Password for 'https://ola@github.com':
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
@@ -125,7 +125,7 @@ GitHub上のGitリポジトリにコンピュータのGitリポジトリを接�
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-コードは GitHub 上で公開されます。 それをチェックしにいってください。 これは、[ Django ](https://github.com/django/django)、<a href = "https://github.com/DjangoGirls/tutorial/にあります。 "> Django Girls Tutorial </a>などのオープンソースソフトウェアプロジェクトも、GitHubでコードをホストしています。 :)
+コードは GitHub 上で公開されます。 見に行きましょう！ これは、[ Django ](https://github.com/django/django)、<a href = "https://github.com/DjangoGirls/tutorial/にあります。 "> Django Girls Tutorial </a>などのオープンソースソフトウェアプロジェクトも、GitHubでコードをホストしています。 :)
 
 # PythonAnywhereでブログを設定する
 
