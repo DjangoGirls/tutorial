@@ -24,7 +24,7 @@ Der untere Bereich ist dein *Terminal*, wo du Kommandos für den Computer eingeb
 
 Eine virtuelle Umgebung (auch virtualenv genannt) ist wie ein privater Behälter, in den wir nützlichen Code für ein Projekt packen können, an dem wir arbeiten. Wir benutzen diese, um Code für verschiedene Projekte getrennt aufzubewahren, damit diese nicht vermischt werden.
 
-Führe in deinem Terminal um unteren Rand des Cloud-9-Interfaces Folgendes aus:
+Führe im Terminal den folgenden Code aus (das Terminal befindet sich am unteren Rand des Cloud 9-Interfaces):
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -34,7 +34,7 @@ Führe in deinem Terminal um unteren Rand des Cloud-9-Interfaces Folgendes aus:
 
 Falls das nicht funktioniert, frag' deinen Coach um Hilfe.
 
-Als nächstes führe die folgenden Befehle aus:
+Führe dann die folgenden Befehle aus:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -49,11 +49,11 @@ Als nächstes führe die folgenden Befehle aus:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Erstelle einen [GitHub](https://github.com)-Account.
 
 ### PythonAnywhere
 
-Das Django Girls-Tutorial enthält ein Kapitel zum Thema Deployment. Beim Deployment nimmst du den Code, der deiner Web Anwendung zu Grunde liegt, und packst ihn auf einen öffentlich zugänglichen Computer (Server), damit auch andere Leute deine Arbeit sehen können.
+Das Django Girls-Tutorial enthält ein Kapitel zum Thema Deployment. Beim Deployment nimmst du den Code, der deiner Web-Anwendung zu Grunde liegt, und packst ihn auf einen öffentlich zugänglichen Computer (Server), damit auch andere Leute deine Arbeit sehen können.
 
 Es mag seltsam scheinen, das auf einem Chromebook zu tun. Denn wir sind mit Cloud 9 ja bereits auf einem anderen Computer im Internet (anstatt z.B. auf einem lokalen Laptop). Es ist aber trotzdem sinnvoll, denn wir können uns unseren Cloud-9-Arbeitsplatz als Sachen "in Arbeit" vorstellen und Python Anywhere als Ort, wo wir unser "fertiges" Projekt der Öffentlichkeit zeigen.
 
