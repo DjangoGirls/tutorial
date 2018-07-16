@@ -47,7 +47,7 @@ Es ist ziemlich wahrscheinlich, dass du Python schon automatisch installiert has
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python 3.6.6
     
 
 Wenn du eine andere 'Mikroversion' von Python installiert hast, z.B 3.6.0, dann brauchst du die Version nicht zu aktualisieren. Wenn Python bei dir nicht installiert ist, oder du eine andere Version willst, kannst du es folgendermaßen installieren:
@@ -91,15 +91,15 @@ Gib diesen Befehl in die Konsole ein:
 
 <!--endsec-->
 
-Prüfe, ob die Installation erfolgreich war, in dem du ein Kommandozeilenfenster öffnest und den `python3`-Befehl ausführst:
+Prüfe, ob die Installation erfolgreich war, indem du ein Kommandozeilenfenster öffnest und den `python3`-Befehl ausführst:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.1
+    Python 3.6.6
     
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+**Hinweis:** Wenn du unter Windows eine Fehlermeldung bekommst, dass `python3` nicht gefunden wurde, versuche es mit `python` (ohne die `3`) und prüfe, ob es dennoch eine Version von Python 3.6.x ist.
 
 * * *
 
