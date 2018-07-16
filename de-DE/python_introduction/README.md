@@ -87,7 +87,7 @@ Du kannst Strings auch vervielfältigen:
 'OlaOlaOla'
 ```
 
-Brauchst du ein Apostroph in einem String, so hast du zwei Möglichkeiten.
+Brauchst du einen Apostroph in einem String, so hast du zwei Möglichkeiten.
 
 Du kannst für den String doppelte Anführungszeichen verwenden:
 
@@ -107,7 +107,7 @@ oder du kannst den Apostroph mit einem Backslash (``) markieren:
 "Runnin' down the hill"
 ```
 
-Toll, was? Um deinen Namen in Großbuchstaben anzuzeigen, gib einfach folgendes ein:
+Toll, was? Um deinen Namen in Großbuchstaben anzuzeigen, gib einfach Folgendes ein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +116,9 @@ Toll, was? Um deinen Namen in Großbuchstaben anzuzeigen, gib einfach folgendes 
 'OLA'
 ```
 
-Hier hast du die `upper`-**Methode** auf den String verwendet! Eine Funktion (wie `upper()`) ist eine Abfolge von Anweisungen, die Python ausführt, wenn die Funktion bei einem gegebenen Objekt (hier `"Ola"`) aufgerufen wird.
+Hier hast du die `upper`-**Methode** auf den String angewendet! Eine Methode (wie `upper()`) ist eine Abfolge von Anweisungen, die Python für ein gegebenes Objekt (hier `"Ola"`) ausführt, wenn sie aufgerufen wird.
 
-Nehmen wir an, du möchtest die Zahl der Buchstaben in deinem Namen wissen. Auch dafür gibt es eine Methode!
+Nehmen wir an, du möchtest die Zahl der Buchstaben in deinem Namen wissen. Auch dafür gibt es eine **Funktion**!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ Nehmen wir an, du möchtest die Zahl der Buchstaben in deinem Namen wissen. Auch
 3
 ```
 
-Nun fragst du dich sicher, warum du manchmal eine Funktion mit einem `.` am Ende des Strings (wie bei `"Ola".upper()`) schreibst und manchmal eine Funktion direkt aufrufst und den String dahinter in Klammern setzt? Im ersten Fall gehören solche Funktionen, wie `upper()`, zu Objekten (hier: ein String) und funktionieren auch nur bei diesen. In solchen Fällen bezeichnen wir eine Funktion als **Methode**. Andere Funktionen sind dagegen allgemeiner und können auf unterschiedliche Datentypen angewendet werden, wie beispielsweise `len()`. Daher übergeben wir `"Ola"` als Parameter an die `len` Funktion.
+Nun fragst du dich sicher, warum du manchmal eine Methode mit einem `.` am Ende des Strings (wie bei `"Ola".upper()`) schreibst und manchmal eine Funktion direkt aufrufst und den String dahinter in Klammern setzt? Im ersten Fall gehören solche Methoden, wie `upper()`, zu Objekten (hier: ein String) und funktionieren auch nur bei diesen. In solchen Fällen bezeichnen wir eine Funktion als **Methode**. Andere Funktionen sind dagegen allgemeiner und können auf unterschiedliche Datentypen angewendet werden, wie beispielsweise `len()`. Daher übergeben wir `"Ola"` als Parameter an die `len` Funktion.
 
 ### Zusammenfassung
 
