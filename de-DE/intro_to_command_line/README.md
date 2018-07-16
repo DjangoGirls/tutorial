@@ -410,12 +410,12 @@ Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 | ---------------- | ----------------------- | ------------------------------ | ------------------------------------------------- |
 | exit             | exit                    | Fenster schließen              | **exit**                                          |
 | cd               | cd                      | Verzeichnis wechseln           | **cd test**                                       |
-| cd               | pwd                     | aktuelles Verzeichnis anzeigen | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| cd               | pwd                     | aktuelles Verzeichnis anzeigen | **cd** (Windows) oder **pwd** (Mac OS / Linux)    |
 | dir              | ls                      | Unterordner/Dateien zeigen     | **dir**                                           |
 | copy             | cp                      | Datei kopieren                 | **copy c:\test\test.txt c:\windows\test.txt** |
 | move             | mv                      | Datei verschieben              | **move c:\test\test.txt c:\windows\test.txt** |
 | mkdir            | mkdir                   | neues Verzeichnis erstellen    | **mkdir testdirectory**                           |
-| rmdir (or del)   | rm                      | delete a file                  | **del c:\test\test.txt**                        |
+| rmdir (oder del) | rm                      | Datei löschen                  | **del c:\test\test.txt**                        |
 | rmdir /S         | rm -r                   | delete a directory             | **rm -r testdirectory**                           |
 
 Das sind nur sehr wenige aller Befehle, die du in deiner Konsole verwenden kannst, heute aber wirst du keine weiteren brauchen.
