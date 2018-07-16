@@ -438,7 +438,7 @@ Wie bei Listen können wir auch bei Dictionaries die `len()`-Funktion verwenden,
 
 Wir hoffen, dass das Alles für dich bisher Sinn ergibt. :) Bist du bereit für mehr Spaß mit Dictionaries? Machen wir weiter.
 
-Zum Löschen von Elementen kannst du den `pop()`-Befehl (oder im Englischen: statement) verwenden. Nehmen wir an, du möchtest den Eintrag mit dem key `'favorite_numbers'` entfernen:
+Zum Löschen von Elementen kannst du den `pop()`-Befehl verwenden. Nehmen wir an, du möchtest den Eintrag mit dem key `'favorite_numbers'` entfernen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -467,10 +467,10 @@ Wie du siehst, hast du nun im key-value Paar mit dem key `'country'` den Wert vo
 
 Großartig! Inzwischen hast du schon einiges über Programmierung gelernt und die folgenden Dinge sind dir vertraut:
 
-- **Errors** - Du weißt wie sie zu lesen sind und dass Python sie dann ausgibt, wenn es eine Anweisung von dir nicht ausführen kann
-- **Variablen** - sind Namen für Objekte, die dir dabei helfen, deinen Code leichter zu schreiben und ihn dabei auch gut lesbar zu halten
-- **Listen** - können Objekte in einer geordneten Reihenfolge speichern
-- **Dictionaries** - speichern Objekte als key-value Paare
+- **Errors** - Du weißt, wie sie zu lesen sind und dass Python sie dann ausgibt, wenn es eine Anweisung von dir nicht ausführen kann.
+- **Variablen** - sind Namen für Objekte, die dir dabei helfen, deinen Code leichter zu schreiben und ihn dabei auch gut lesbar zu halten.
+- **Listen** - können Objekte in einer geordneten Reihenfolge speichern.
+- **Dictionaries** - speichern Objekte als key-value Paare.
 
 Schon gespannt auf den nächsten Teil? :)
 
