@@ -22,13 +22,13 @@ Ziemliches Durcheinander, oder? Eigentlich ist es ein Netzwerk aus verbundenen M
 
 ![Abbildung 1.2](images/internet_3.png)
 
-Faszinierend, oder? Offensichtlich ist es nicht möglich, Kabel zwischen allen Servern des Internet zu schalten. Damit wir eine Maschine (z.B. diejenige auf welcher https://djangogirls.org abgespeichert ist) erreichen können, muss unsere Anfrage über viele verschiedene andere Maschinen weitergeleitet werden.
+Faszinierend, oder? Offensichtlich ist es nicht möglich, Kabel zwischen allen Servern des Internet zu schalten. Damit wir eine Maschine (z.B. diejenige, auf welcher https://djangogirls.org abgespeichert ist) erreichen können, muss unsere Anfrage über viele verschiedene andere Maschinen weitergeleitet werden.
 
 Das sieht ungefähr so aus:
 
 ![Abbildung 1.3](images/internet_2.png)
 
-Stell dir vor, wenn du http://djangogirls.org in den Browser eingibst, würdest du einen Brief versenden, in dem steht; "Hallo Django Girls, ich möchte die djangogirls.org Webseite ansehen. Bitte schickt sie mir!"
+Stell dir vor, wenn du https://djangogirls.org in den Browser eingibst, würdest du einen Brief versenden, in dem steht; "Hallo Django Girls, ich möchte die djangogirls.org Webseite ansehen. Bitte schickt sie mir!"
 
 Der Brief kommt ins Postamt in deiner Nähe. Von da aus kommt der Brief zu einem anderen Postamt näher an der Zieladresse und näher und näher, bis der Brief zugestellt werden kann. Die einzigartige Sache ist, dass wenn du mehrere Briefe zu der selben Adresse abschickst (*Datenpakete*), jeder einzelne durch komplett unterschiedliche Poststellen laufen könnte (*Router*). Dies hängt davon ab, wie sie an jedem Standort verteilt werden.
 
