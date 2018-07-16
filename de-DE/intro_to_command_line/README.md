@@ -22,13 +22,13 @@ Um mit unserem Tutorial zu starten, musst du als Erstes das Kommandozeilenprogra
 
 Windows 10: Gehe zur Suchleiste → Gib "cmd" in die Suche ein → Klicke den Eintrag Eingabeaufforderung mit der rechten Maustaste an → Wähle aus dem nächsten Menü die Option Ausführen aus.
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+> Ältere Versionen von Windows: Start Menu → Alle Programme → Zubehör → Eingabeaufforderung.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Mac: Öffne das Launchpad → Andere → Terminal.
 
 <!--endsec-->
 
@@ -66,7 +66,7 @@ Auf Windows siehst du ein `>` Zeichen, also das hier:
 
 Vor jedem Kommando wird dieses Zeichen und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Ein kleiner Hinweis: Falls du etwas in der Art wie `C:\Users\ola>` oder `Olas-MacBook-Air:~ ola$` sehen solltest, ist das auch 100%ig korrekt.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
