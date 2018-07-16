@@ -52,6 +52,6 @@ Postsに行って少し試してみてください。5～6のブログポスト�
 
 ![Django admin](images/edit_post3.png)
 
-もしDjango adminについてもっと知りたければ、Django's documentationを見て下さい。（お使いの環境に合わせたバージョンを参照ください） https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+もしDjango adminについてもっと知りたければ、Django's documentationを見て下さい。https://docs.djangoproject.com/ja/1.11/ref/contrib/admin/
 
 ここでおそらく、コーヒーか紅茶か何かを食べてリフレッシュする時間をとりましょう！！ 初めてのDjango modelを作成しました。
