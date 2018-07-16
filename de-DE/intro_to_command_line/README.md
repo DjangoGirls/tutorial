@@ -12,7 +12,7 @@ Im Folgenden zeigen wir dir, wie du das schwarze Fenster benutzt, das alle Hacke
 
 ## Was ist die Konsole?
 
-Das Fenster, welches gewöhnlich die **Kommandokonsole** (command line) oder **Kommandoleisten-Interface** (command-line interface) genannt wird, ist eine textbasierte Applikation zum Betrachten, Bearbeiten und Manipulieren von Dateien auf deinem Computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Andere Bezeichnungen dafür sind: cmd, CLI, prompt, Eingabeaufforderung, Kommandozeile, Konsole, Terminal.
+Das Fenster, welches gewöhnlich die **Kommandokonsole** (command line) oder **Kommandozeilen-Interface** (command-line interface) genannt wird, ist eine textbasierte Applikation zum Betrachten, Bearbeiten und Manipulieren von Dateien auf deinem Computer. Es ist ähnlich wie der Windows Explorer oder Finder auf dem Mac, aber ohne die grafische Benutzeroberfläche. Andere Bezeichnungen dafür sind: *cmd*, *CLI*, *prompt*, *Eingabeaufforderung*, *Konsole* oder <0>Terminal</0>.
 
 ## Öffnen der Konsole
 
