@@ -42,10 +42,10 @@ Bunu blog uygulamamızın içine `static` isimli bir klasör oluşturarak yapaca
 
     djangogirls 
     ├── blog 
-    │ ├── geçişler
-    │ ├── statik 
-    │ └── şablonlar 
-    └── benimsitem
+    │ ├── migrations
+    │ ├── static
+    │ └── templates
+    └── mysite
     
 
 Django otomatik olarak uygulama klasörlerinizdeki "static" adlı klasörleri bulur. Böylece bunların içerikleri statik dosya olarak kullanabilir.
@@ -87,7 +87,7 @@ Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler
 
 CSS hakkında daha fazla bilgi edinmek için [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp) u okuyabilirsin.
 
-Bir de HTML şablonuna projemize CSS eklediğimizi bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açıp en başına bunlar ekleyelim:
+Bir de HTML şablonuna projemize CSS eklediğimizi bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açıp en başına bunları ekleyelim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -95,7 +95,7 @@ Bir de HTML şablonuna projemize CSS eklediğimizi bildirmemiz gerekiyor. `blog/
 {% load static %}
 ```
 
-Burada sadece statik dosya ekliyoruz :) `<head>` ve `</head>` etiketleri arasına, bootstrap linklerinde sonra, şu satırı ekleyelim:
+Burada sadece statik dosya ekliyoruz :) `<head>` ve `</head>` etiketleri arasına, bootstrap linklerinden sonra, şu satırı ekleyelim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -148,7 +148,7 @@ body {
 }
 ```
 
-Bunu CSS ekleyip kaydet ve bak bakalım! Nasıl da oldu!
+Bunu CSS dosyana ekleyip kaydet ve bak bakalım! Nasıl da oldu!
 
 ![Şekil 14.3](images/margin2.png)
 
@@ -177,7 +177,7 @@ h1 a {
 
 Harika!
 
-Yukarıda bahsettiğimiz üzere, CSS'te class (sınıf) diye bir kavram var. Class'lar, temel olarak HTML kodunuzun bir kısmına isim vermenize yarar ve diğer kısımları stiline değiştirmeden yalnızca o kısmın stilini değiştirmenizi sağlar. Bu süper yararlı olabilir! Çok farklı şeyler yapan iki div'iniz var diyelim (örneğin biri başlık diğeri gönderinin metni). Class, farklı görünmelerini sağlamana yardımcı olur.
+Yukarıda bahsettiğimiz üzere, CSS'te class (sınıf) diye bir kavram var. Class'lar, temel olarak HTML kodunuzun bir kısmına isim vermenize yarar ve diğer kısımların stilini değiştirmeden yalnızca o kısmın stilini değiştirmenizi sağlar. Bu süper yararlı olabilir! Çok farklı şeyler yapan iki div'iniz var diyelim (örneğin biri başlık diğeri gönderinin metni). Class, farklı görünmelerini sağlamana yardımcı olur.
 
 Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `div`'e `page-header` isimli bir class ekleyelim:
 
@@ -296,7 +296,7 @@ Bu dosyaları kaydedin ve web sayfanızı yenileyin.
 
 Yaşasın! Harika görünüyor değil mi? Şimdi yapıştırdığımız koda bakıp CSS tarafından kullanılan ve HTML eklenmiş olan nesneleri bulalım. Tarihi turkuaz rengine çevirmek için nereyi değiştirmen gerekir?
 
-CSS ile biraz oynamaktan çekinme ve bir kaç şeyi değiştirmeye calış. CSS ile oynamak neyin neyi etkilediğini anlamak için çok faydalı. Bir şeyleri bozarsan dert etme, her zaman geri alabilirsin!
+CSS ile biraz oynamaktan çekinme ve birkaç şeyi değiştirmeye calış. CSS ile oynamak neyin neyi etkilediğini anlamak için çok faydalı. Bir şeyleri bozarsan dert etme, her zaman geri alabilirsin!
 
 Ücretsiz [Codeacademy HTML & CSS kursu](https://www.codecademy.com/tracks/web)nu izlemeni gerçekten öneririz. Web sitelerini CSS'le güzelleştirmeyi iyice öğrenmene yardımcı olabilir.
 

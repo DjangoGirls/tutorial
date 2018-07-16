@@ -10,7 +10,7 @@ Sonra, güncel kalmak için Django Girls'ü [Facebook](http://facebook.com/djang
 
 ### Daha geniş kapsamlı kaynaklar önerebilir misiniz?
 
-Evet! İlk olarak, devam et ve diğer kitabımız [Django Girls: Uzantılar](https://djangogirls.gitbooks.io/django-girls-tutorial-extensions/content/) kitabımızı dene.
+Evet! Öncelikle [Django Girls Tutorial: Eklentiler](https://tutorial-extensions.djangogirls.org/) isimli diğer kitabımızı dene.
 
 Daha sonra, aşağıdaki listedeki kaynakları deneyebilirsin. Hepsi birden çok önerilir!
 

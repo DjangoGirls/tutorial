@@ -16,12 +16,12 @@ Bir posta kutusunun (port) gelen mektuplar (requests) için izlendiğini düşü
 
 ## Birisi sunucunuzdan bir web sitesi istediğinde ne olur?
 
-Bir istek bir web sunucusuna geldiğinde, Django'ya aktarılır aslında ve Django da istenin ne olduğunu anlamaya çalışır. O da önce bir web sayfası adresi alır ve ne yapacağını anlamaya çalışır. Bu bölüm Django'nun **urlresolver** tarafından yapılır (unutmayın bir web sitesi adresi URL – Uniform Resource Locator – olarak adlandırılır – böylece *urlresolver* anlamlı hale gelir). Çok akıllı değildir - kalıpların bir listesini alır ve URL'yi eşleştirmeye çalışır. Django kalıpları üstten alta doğru denetler ve eşleşen bir şey varsa isteği ilgili işleve( *view* olarak adlandırlan) aktarır.
+Bir istek bir web sunucusuna geldiğinde, Django'ya aktarılır aslında ve Django da istenin ne olduğunu anlamaya çalışır. O da önce bir web sayfası adresi alır ve ne yapacağını anlamaya çalışır. Bu kısım Django'nun **url çözücüsü** (urlresolver) tarafından yapılıyor (websitesi adresine URL - Uniform Resource Locator - deniyor, dolayısıyla *url çözücü* ismi mantıklı oluyor). Çok akıllı değildir - kalıpların bir listesini alır ve URL'yi eşleştirmeye çalışır. Django kalıpları üstten alta doğru denetler ve eşleşen bir şey varsa isteği ilgili işleve (*view* olarak adlandırılan) aktarır.
 
 Mektup dağıtan bir postacı düşünün. Sokak boyunca yürüyor ve her evin numarasını mektubun üstündeki numara ile karşılaştırıyor. Eğer eşleşirse, mektubu oraya koyuyor. Url çözücü işte böyle çalışır!
 
-Tüm ilginç şeyler *view (görünüm)* fonksiyonunda yapılır: bir bilgi için veritabanına bakabiliriz. Belki de kullanıcı veride bir şeyin değişmesini istemiştir? "Lütfen iş tanımımı değiştirin." diyen bir mektup gibi. *View* bunu yapmaya izninizin olup olmadığını kontrol eder, iş tanımınızı sizin için günceller ve geri "Tamamdır!" mesajı yollar. Sonra *view*bir yanıt üretir ve Django bunu kullanıcının web tarayıcısına gönderebilir.
+Tüm ilginç şeyler *view (görünüm)* fonksiyonunda yapılır: bir bilgi için veritabanına bakabiliriz. Belki de kullanıcı veride bir şeyin değişmesini istemiştir? "Lütfen iş tanımımı değiştirin." diyen bir mektup gibi. *View* bunu yapmaya izninizin olup olmadığını kontrol eder, iş tanımınızı sizin için günceller ve geri "Tamamdır!" mesajı yollar. Sonra *view* bir yanıt üretir ve Django bunu kullanıcının web tarayıcısına gönderebilir.
 
-Tabi ki yukardaki biraz basitleştirilmiş bir açıklama, ama şimdilik bütün teknik ayrıntıyı bilmene gerek yok. Genel bir fikrin olması yeterli.
+Tabi ki yukarıdaki biraz basitleştirilmiş bir açıklama, ama şimdilik bütün teknik ayrıntıyı bilmene gerek yok. Genel bir fikrin olması yeterli.
 
-Doğrudan çok fazla detaya girmek yerine, Django ile birşeyler oluşturacağız ve önemli kısımları yolda öğreneceğiz!
+Doğrudan çok fazla detaya girmek yerine, Django ile bir şeyler oluşturacağız ve önemli kısımları yolda öğreneceğiz!
