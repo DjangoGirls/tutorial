@@ -42,6 +42,6 @@ Wenn du einen Brief versenden willst, brauchst du spezielle Eigenschaften wie: P
 
 Grundsätzlich brauchst du also für eine Website auch einen *Server*, auf dem sie abgelegt ist. Wenn der *Server* eine eingehende *Anforderung* (in einem Brief) empfängt, sendet er deine Website zurück (in einem weiteren Brief).
 
-Da dies hier ein Django-Tutorial ist, fragst du dich vieleicht, was Django in diesem Zusammenhang macht. Wenn dein Server eine Antwort zurück sendet, soll nicht an jeden dasselbe gesendet werden. Es ist besser, wenn die Antworten individuell personalisiert sind, entsprechend dem an dich gerichteten Anliegen. Django hilft dir, diese personalisierten und interessanten Antworten zu erstellen. :)
+Da dies hier ein Django-Tutorial ist, fragst du dich vielleicht, was Django in diesem Zusammenhang macht. Wenn dein Server eine Antwort zurück sendet, soll nicht an jeden dasselbe gesendet werden. Es wäre besser, wenn die Antworten individuell personalisiert würden, entsprechend der Anfragen des jeweiligen Briefes, oder? Django hilft dir, diese personalisierten und interessanten Antworten zu erstellen. :)
 
 Genug der Theorie, lass uns loslegen!
