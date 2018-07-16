@@ -133,9 +133,9 @@ Nun fragst du dich sicher, warum du manchmal eine Methode mit einem `.` am Ende 
 
 Ok, genug über Strings. Bisher haben wir Folgendes kennengelernt:
 
-- **Der Prompt** - Wenn wir beim Python-Prompt Anweisungen (oder Programm-Code) in Python eingeben, dann erhalten wir auch Ergebnisse in Python. Wir befinden uns in der Python Shell
-- **Zahlen und Strings** - In Python nutzen wir Zahlen für Berechnungen und Strings für Text-Objekte
-- **Operatoren** - wie + und &#42;, verarbeiten mehrere Werte und erzeugen als Ergebnis einen neuen Wert
+- **Der Prompt** - Wenn wir beim Python-Prompt Anweisungen (oder Programm-Code) in Python eingeben, dann erhalten wir auch Ergebnisse in Python. Man sagt zu dieser Python-Umgebung auch "Python-Shell".
+- **Zahlen und Strings** - In Python nutzen wir Zahlen für Berechnungen und Strings für Text-Objekte.
+- **Operatoren**, wie + und &#42;, verarbeiten mehrere Werte und erzeugen als Ergebnis einen neuen Wert.
 - **Funktionen** - wie upper() und len(), tun etwas mit Objekten (in unserem Beispiel ändern sie diese, wie bei upper(), oder sie geben eine Eigenschaft zurück, wie bei len()).
 
 Das sind Grundlagen jeder Programmiersprache, die Du lernen wirst. Bist Du bereit für mehr? Bestimmt!
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Wir haben unsere erste Fehlermeldung (Error) erhalten! Das {{ warning_icon }} Icon ist das Zeichen von Python, dass der eingegebene Code nicht den Programmierregeln von Python entspricht und damit nicht das tut, was wir erwarten würden. Fehler zu machen (selbst absichtlich) ist ein wesentlicher Teil um zu Lernen!
+Wir haben unsere erste Fehlermeldung (Error) erhalten! Das {{ warning_icon }} Icon ist das Zeichen von Python, dass der eingegebene Code nicht den Programmierregeln von Python entspricht und damit nicht das tut, was wir erwarten würden. Fehler zu machen (selbst absichtlich) ist ein wesentlicher Teil beim Lernen!
 
 Unser erster Fehler sagt, dass Objekte vom Typ "int" (Integers, das sind ganze Zahlen) keine Länge haben. Was also nun? Vielleicht sollten wir unsere Zahl als String schreiben? Denn bei Strings funktioniert es ja, wie wir wissen.
 
