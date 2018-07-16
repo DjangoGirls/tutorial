@@ -1,8 +1,8 @@
 # Einführung in die Kommandozeile
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Für die Leser zu Hause: Dieses Kapitel wird im Video [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) behandelt.
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Aufregend, oder?! In ein paar Minuten wirst du deine erste Zeile Code schreiben! :)
 
 **Erstmal stellen wir dir deine neue Freundin vor: Die Konsole!**
 
