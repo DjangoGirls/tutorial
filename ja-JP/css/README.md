@@ -161,7 +161,7 @@ body {
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-まずは、このリンクが `blog/static/css/blog.css` より前にあることを確かめましょう。この１行は *Lobster* というフォントをGoogle Fonts (https://www.google.com/fonts)から読み込むということを意味しています。
+まずは、このリンクが `blog/static/css/blog.css` より前にあることを確かめましょう。この１行は *Lobster* というフォントをGoogle Fonts (https://www.google.com/fonts) から読み込むということを意味しています。
 
 `blog/static/css/blog.css` ファイルの中の、 `h1 a` という宣言ブロックを見つけてください（コードは `{` と `}` で囲まれています）。 そして、そのカッコの中に `font-family: 'Lobster';` と１行追加して、webサイトを更新してみましょう：
 
