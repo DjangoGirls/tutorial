@@ -8,15 +8,15 @@ Fangen wir an, schreiben wir Code!
 
 ## Der Python-Prompt
 
-> Für Leser die sich bereits mit Python auskennen: Dieser Teil findet sich im [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Für Leserinnen, die sich bereits mit Python auskennen: Dieser Teil befindet sich im [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) Video.
 
 Um Python zu starten, musst du an die *Kommandozeile* deines Computers. Wie das geht, weißt du bereits - denn du hast es im Kapitel [Einführung in die Kommandozeile](../intro_to_command_line/README.md) gelernt.
 
 Also öffne die Konsole, dann fangen wir an.
 
-Wir wollen eine Python Konsole öffnen, also tippe in Windows cmd `python` ein oder in Mac OS/Linux terminal `python3` und drücke `Enter`.
+Wir wollen eine Python Konsole öffnen, also tippe unter Windows `python` oder im Mac OS/Linux Terminal `python3` und drücke `Enter`.
 
-{% filename %}cloud 9{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3
     Python 3.6.1 (...)
