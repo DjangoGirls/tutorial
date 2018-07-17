@@ -42,11 +42,11 @@
                     
                     % filename %}Cloud 9{% endfilename %}}
                     
-                        نمایش ام کا دختر دیجانگو
-                        سی دی دختر دیجانگو 
-                        پایتون 3.6-mvenv myvenv
-                        منبع myvenv/bin/فعال 
-                        نصب پیپ دیجانگو ~=1.11.0
+                        mkdir djangogirls
+                        cd djangogirls
+                        python3.6 -mvenv myvenv
+                        source myvenv/bin/activate
+                        pip install django~={{ book.django_version }}
                         
                     
                     (توجه داشته باشید که در آخرین خط ما از تیلدهایی استفاده می کنیم که علامت برابر است: ~ =).
