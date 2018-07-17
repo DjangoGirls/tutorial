@@ -14,7 +14,7 @@ Ja! Auf der Seite [Django Girls Tutorial: Extensions](https://tutorial-extension
 
 Danach kannst du die folgenden Materialien ansehen. Die sind alle sehr empfehlenswert!
 
-- [Das offizielle Django-Tutorial](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Das offizielle Django-Tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [New Coder-Tutorials](http://newcoder.io/tutorials/)
 - [Python-Kurs auf Code Academy](https://www.codecademy.com/en/tracks/python)
 - [HTML- & CSS-Kurs auf Code Academy](https://www.codecademy.com/tracks/web)
