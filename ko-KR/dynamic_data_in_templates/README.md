@@ -78,4 +78,4 @@ def post_list(request):
 
 다 되었습니다! 이제 템플릿 파일로 돌아가서 이 쿼리셋을 나타나도록 하는 것을 해볼 때입니다.
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
