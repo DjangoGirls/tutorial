@@ -159,7 +159,7 @@ class Post(models.Model):
 - `models.DateTimeField` --هذا هو التاريخ والوقت.
 - `models.ForeignKey`--وهذا ارتباط إلى نموذج آخر.
 
-نحن لن شرح كل شيء من التعليمات البرمجية هنا لأنه سوف يستغرق الكثير من الوقت. ينبغي أن نلقي نظرة على وثائق جانغو إذا كنت ترغب في معرفة المزيد عن حقول النموذج وكيفية تحديد الأشياء غير تلك المذكورة أعلاه (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+نحن لن شرح كل شيء من التعليمات البرمجية هنا لأنه سوف يستغرق الكثير من الوقت. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
 وماذا عن `def publish(self):`؟ هذا هو بالضبط الأسلوب `publish` الذي كنا نتحدث عنه. `def` يعني أن هذا أسلوب دالة و `publish` اسم الأسلوب. يمكنك تغيير اسم الأسلوب إذا أردت. حكم التسمية أن نستخدم حروف صغيرة وتسطيرات أسفل السطر بدلاً من المسافات. على سبيل المثال، يمكن استدعاء أسلوب والذي يقوم بحساب متوسط السعر `calculate_average_price`.
 
