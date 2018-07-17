@@ -4,11 +4,11 @@ Agora o que queremos criar é algo que armazene todos os posts em nosso blog. Ma
 
 ## Objetos
 
-Existe um conceito na programação chamado `programação orientada à objetos`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Existe um conceito na programação chamado `programação orientada à objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, a gente pode modelar as coisas e definir como elas interagem umas com as outras.
 
 Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos lhe dar um exemplo.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Se quisermos modelar um gato, criaremos um objeto `Gato` que tem propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, se fosse um gato de rua, essa propriedade poderia ser vazia).
 
 E então o `Gato` tem algumas ações: `ronronar`, `arranhar` ou `alimentar` (no qual vamos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades, como `sabor`).
 
@@ -34,7 +34,7 @@ Como nós iremos modelar as postagens do blog então? Queremos construir um blog
 
 Nós precisamos responder as questões: O que é um post de blog? Que propriedades ele deve ter?
 
-Bem, com certeza nosso blog precisa de alguma postagem com o seu conteúdo e um título, certo? It would be also nice to know who wrote it – so we need an author. Finalmente, queremos saber quando a postagem foi criada e publicada.
+Bem, com certeza nosso blog precisa de alguma postagem com o seu conteúdo e um título, certo? Também seria legal saber quem escreveu – então precisamos de um autor. Finalmente, queremos saber quando a postagem foi criada e publicada.
 
     Post
     --------
