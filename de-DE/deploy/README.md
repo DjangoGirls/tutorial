@@ -196,7 +196,7 @@ Du kannst auch über den "Files"-Tab mit dem PythonAnywhere Built-in File Browse
 
 Nun ist deine Site also live im öffentlichen Internet! Klick dich bis zum PythonAnywhere "Web"-Tab durch und hole dir den Link. Teile ihn so oft du willst :)
 
-> **Hinweis:** Da es sich hier um ein Anfänger-Tutorial handelt, haben wir ein paar Abkürzungen genommen, um die Site zu veröffentlichen, welche sicherheitstechnisch nicht ideal sind. Solttest du dich dazu entscheiden auf diesem Projekt weiter aufzubauen oder ein neues Projekt zu starten, empfehlen wir dir für Sicherheitstips, dir die [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) genauer anzuschauen.
+> **Hinweis:** Da es sich hier um ein Anfänger-Tutorial handelt, haben wir ein paar Abkürzungen genommen, um die Site zu veröffentlichen, welche sicherheitstechnisch nicht ideal sind. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
 
 ## Debugging Tipps
 
