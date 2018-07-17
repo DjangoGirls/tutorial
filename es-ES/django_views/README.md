@@ -41,4 +41,4 @@ Guarda el archivo, ve a http://127.0.0.1:8000/ y mira lo que hemos hecho.
 
 Esto demuestra que el servidor está funcionando otra vez, al menos, pero todavía no se ve bien, ¿No? No te preocupes, es sólo una página de error, ¡nada a que temer! Al igual que los mensajes de error en la consola, estos son realmente muy útiles. Puedes leer que la *TemplateDoesNotExist*. Vamos a corregir este error y crear una plantilla en el próximo capítulo!
 
-> Aprenda más acerca de las vistas de Django mediante la lectura de la documentación oficial: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
