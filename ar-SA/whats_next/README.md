@@ -14,7 +14,7 @@
 
 لاحقا، يمكنك تجربة الموارد المدرجة أدناه. نحن نوصي بها كلها!
 
-- [دجانغو البرنامج التعليمي الرسمي](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [دجانغو البرنامج التعليمي الرسمي](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [دروس المبرمج المبتدئ](http://newcoder.io/tutorials/)
 - [كود أكاديمي: دروس بايثون](https://www.codecademy.com/en/tracks/python)
 - [كود أكاديمي دروس HTML & CSS](https://www.codecademy.com/tracks/web)
