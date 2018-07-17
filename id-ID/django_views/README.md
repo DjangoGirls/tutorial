@@ -39,4 +39,4 @@ Kesalahan lain Baca apa yang terjadi sekarang:
 
 Ini memperlihatkan bahwa server berjalan lagi, paling tidak, tapi masih kelihatan belum betul, betul? Jangan khawatir, itu hanyalah halaman error, tak ada yang perlu ditakutkan! Sama seperti pesan error di dalam konsol, hal tersebut sangat berguna. Anda dapat membaca *TemplateDoesNotExist*. Mari perbaiki bug ini dan membuat sebuah template pada bab berikutnya!
 
-> Pelajari lebih lanjut tentang view Django dengan membaca dokumentasi resmi: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
