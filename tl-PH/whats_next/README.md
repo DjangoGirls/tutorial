@@ -14,7 +14,7 @@ Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Exte
 
 Sa ibang pagkakataon, maaari mong subukan ang mga resources na nakalista sa ibaba. Ang lahat ng ito ay napaka-rekomendado!
 
-- [Ang opisyal na tutorial ng Django](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Ang opisyal na tutorial ng Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Mga tutorial ng Bagong Coder](http://newcoder.io/tutorials/)
 - [Kurso ng Code Academy Python](https://www.codecademy.com/en/tracks/python)
 - [Code Academy HTML & CSS na kurso](https://www.codecademy.com/tracks/web)
