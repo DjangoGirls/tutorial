@@ -102,7 +102,7 @@ Ostatecznie kod będzie wyglądał tak:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.urls import path 
+from django.urls import path
 from . import views
 
 urlpatterns = [
