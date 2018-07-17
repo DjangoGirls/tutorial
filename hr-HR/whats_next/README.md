@@ -14,7 +14,7 @@ Da! Za početak, slobodno isprobaj našu drugu knjigu, [Django Girls Tutorijal: 
 
 Poslije, možeš isprobati izvore navedene dolje. Svi su vrlo preporučeni!
 
-- [Djangov službeni tutorijal](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Djangov službeni tutorijal](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [New Coder tutorijali](http://newcoder.io/tutorials/)
 - [Code Academy Python tečaj](https://www.codecademy.com/en/tracks/python)
 - [Code Academz HTML & CSS tečaj](https://www.codecademy.com/tracks/web)
