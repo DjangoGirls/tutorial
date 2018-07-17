@@ -133,7 +133,6 @@ Twój plik powinien teraz wyglądać tak:
         {% endfor %}
     </body>
 </html>
- 
 ```
 
 Ok, teraz zapisz plik i odśwież stronę!
