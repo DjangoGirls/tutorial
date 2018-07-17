@@ -79,7 +79,7 @@
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. لذلك سيكون لديك زر "إلغاء" ترجم إلى اللغة التي حددتها هنا. [جانغو يأتي مع الكثير من الترجمات ](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. لذلك سيكون لديك زر "إلغاء" ترجم إلى اللغة التي حددتها هنا. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
@@ -191,7 +191,7 @@ DATABASES = {
 
 تهانينا! قمت بإنشاء موقعك الأول وتشغيله باستخدام خادم الويب! أليس هذا رائع؟
 
-![إنه كان مجديًا!](images/it_worked2.png)
+![Install worked!](images/install_worked.png)
 
 بينما يتم تشغيل خادم الويب، لن تشاهد موجه سطر أوامر جديدة لإدخال أوامر إضافية. لوحة التحكم تقبل نصوص جديدة ولكن لن يتم تنفيذ الأوامر الجديدة. وهذا لأن خادم الويب يعمل بشكل مستمر للاستماع للطلبات الواردة.
 
