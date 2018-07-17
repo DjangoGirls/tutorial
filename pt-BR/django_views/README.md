@@ -41,4 +41,4 @@ Outro erro! Leia o que está acontecendo agora:
 
 Isso mostra que o servidor está em execução novamente, pelo menos, mas ainda não parece certo, não é? Não se preocupe, é apenas uma página de erro, nada a temer! Como as mensagens de erro no console, estas são realmente muito úteis. Você pode ler que *TemplateDoesNotExist*. Vamos corrigir este bug e criar um modelo no próximo capítulo!
 
-> Aprenda mais sobre as views do Django lendo a documentação oficial: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
