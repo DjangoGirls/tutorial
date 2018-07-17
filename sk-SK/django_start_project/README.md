@@ -79,7 +79,7 @@ V súbore `settings.py`, nájdi riadok, ktorý obsahuje `TIME_ZONE` a uprav ho t
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Potom bude tlačidlo "Cancel" preložené do jazyka, ktorý tu definuješ. [Django je dodávaný s množstvom pripravených prekladov](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Potom bude tlačidlo "Cancel" preložené do jazyka, ktorý tu definuješ. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
@@ -191,7 +191,7 @@ Ak používaš Chromebook, budeš vždy pristupovať na test server zadaním nas
 
 Blahoželáme! Práve si vytvorila svoju prvú web stránku, ktorá beží na tvojom webovom serveri. Nie je to úžasné?
 
-![Fungovalo to!](images/it_worked2.png)
+![Install worked!](images/install_worked.png)
 
 Kým je spustený webový server, nebude možné zadať nové príkazy v príkazovom riadku. Terminál bude akceptovať nový text, ale nebude spúšťať nové príkazy. Je to kvôli tomu, že webový server nerpretržite beží a čaká na prichádzajúce požiadavky (requests).
 
