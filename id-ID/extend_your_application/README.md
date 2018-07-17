@@ -42,21 +42,25 @@ Let's create a URL in `urls.py` for our `post_detail` *view*!
 
 We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
-dari django.conf.urls impor url dari. Impor dilihat urlpatterns = [url (r'^ $', views.post_list, nama = 'post_list'), url (r'^ posting / (? P <pk>\d+)/$', views.post_detail, nama = 'post_detail'),]
+from django.conf.urls import url
+from . import views
+
+urlpatterns = [
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+]
 ```
 
-This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
+This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
 
-- dimulai dengan `^ ^` lagi-"awal".
-- `posting /` hanya berarti bahwa setelah awal, URL harus berisi kata **posting** dan **/**. Sejauh ini baik-baik saja.
-- `(?. P <pk>\d+)` – ini rumit. Itu berarti bahwa Django akan mengambil segala sesuatu yang Anda tempat di sini dan transfer ke pemandangan sebagai variabel disebut `pk`. (Catatan bahwa ini sesuai dengan nama yang kami berikan utama kunci variabel kembali di `blog/templates/blog/post_list.html`!) `\d` juga memberitahu kita bahwa itu hanya dapat digit, bukan surat (sehingga semuanya antara 0 hingga 9). `+` berarti bahwa ada kebutuhan untuk satu atau lebih angka tidak. Jadi sesuatu seperti `http://127.0.0.1:8000/post / /` tidak sah, tetapi `http://127.0.0.1:8000/post/1234567890/` ini sangat OK!
-- `/`- maka kita perlu **/** lagi.
-- `$` – "akhir"!
+- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
+- `/` – then we need a **/** again before finishing the url.
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
