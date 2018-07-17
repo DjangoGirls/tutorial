@@ -41,8 +41,10 @@ V predlogo dodaj sledečo kodo:
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
