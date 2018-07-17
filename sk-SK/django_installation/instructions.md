@@ -161,15 +161,32 @@ Predtým ako to urobíme, mali by sme sa uistiť, že je nainštalovaná najnov�
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-Potom spusti `pip install django~=1.11.0` (všimni si že používame tildu po ktorej nasleduje znamienko rovná sa: `~=`) aby si nainštalovala Django.
+### Installing packages with requirements
+
+A requirements file keeps a list of dependencies to be installed using `pip install`:
+
+First create a `requirements.txt` file inside of `djangogirls/` folder:
+
+    djangogirls
+    └───requirements.txt
+    
+
+In your `djangogirls/requirements.txt` file you should add the following text:
+
+{% filename %}djangogirls/requirements.txt{% endfilename %}
+
+    Django=={{ book.django_version }}
+    
+
+Now, run `pip install -r requirements.txt` to install Django.
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install django~=1.11.0
-    Collecting django~=1.11.0
-      Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
-    Installing collected packages: django
-    Successfully installed django-1.11.3
+    (myvenv) ~$ pip install -r requirements.txt
+    Collecting Django=={{ book.django_version }} (from -r requirements.txt (line 1))
+      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+    Installing collected packages: Django
+    Successfully installed Django-{{ book.django_version }}
     
 
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
@@ -186,7 +203,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
+>     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >     
 
 <!--endsec-->
@@ -198,4 +215,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-To je všetko! Teraz si už (konečne) pripravená vytvoriť Django aplikáciu!
+That's it! You're now (finally) ready to create a Django application!
