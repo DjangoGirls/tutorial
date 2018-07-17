@@ -91,7 +91,7 @@
 
 <p>{% filename %}blog/urls.py{% endfilename %}</p>
 
-<pre><code class="python">آدرس اینترنتی(r '^ پست / جدید / $'، نمایش.پست_جدید، نام = 'پست_جدید')،
+<pre><code class="python">path('post/new', views.post_new, name='post_new'),
 `</pre> 
 
 و کد نهایی مانند این خواهد بود:
@@ -99,13 +99,13 @@
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-از آدرس وارد شده جنگجو.conf.آدرسهای اینترنتی 
-از جانب . نمایش های واردات
+from django.urls import path 
+from . import views
 
-الگوهای آدرس اینترنتی= [
-     آدرس اینترنتی (r '^ $'، نمایش.پست_لیست، نام = 'لیست_پست')،
-     آدرس اینترنتی (r '^ post / (؟ p <pk> \ d +) / $'،نمایش.پست_جزئیات، نام = 'جزئیات_پست')،
-     آدرس اینترنتی (r '^ پست / جدید / $'، نمایش.پست_جدید، نام = 'پست_جدید')،
+urlpatterns = [
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new'),
 ]
 ```
 
@@ -310,7 +310,7 @@ In `blog/urls.py` we add this line:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
 We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
@@ -363,7 +363,7 @@ Feel free to change the title or the text and save the changes!
 
 Congratulations! Your application is getting more and more complete!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Security
 
