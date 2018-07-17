@@ -41,4 +41,4 @@ Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
 This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
-> Дізнатися більше про Django відображення можна звернувшись до офіційної документації: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
