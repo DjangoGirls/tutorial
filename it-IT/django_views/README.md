@@ -41,4 +41,4 @@ Un altro errore! Leggi cosa sta succedendo adesso:
 
 Questo mostra che almeno il server è ancora attivo, ma ancora non sembra corretto, vero? Non preoccuparti, è solo una pagina di errore, nulla di cui aver paura! Come l messaggi di errore nella console, sono davvero utili. Puoi leggere il *TemplateDoesNotExist*. Correggiamo questo bug e creiamo un template nel capitolo successivo!
 
-> Impara di più sulle views di Django leggendo la documentazione ufficiale: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
