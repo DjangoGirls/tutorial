@@ -42,7 +42,7 @@ Seterusnya, jalankan:
     cd djangogirls
     python3.6 -mvenv myvenv
     source myvenv/bin/activate
-    pip install django~=1.11.0
+    pip install django~={{ book.django_version }}
     
 
 (ambil perhatian bahawa pada baris terakhir kita menggunakan tilde diikuti dengan tanda yang sama: ~ =).
