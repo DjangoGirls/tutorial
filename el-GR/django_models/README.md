@@ -160,7 +160,7 @@ Now we define the properties we were talking about: `title`, `text`, `created_da
 - `models.DateTimeField`- αυτό είναι μια ημερομηνία και ώρα.
 - `models.ForeignKey`- αυτό είναι ένας σύνδεσμος για ένα άλλο μοντέλο.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
 What about `def publish(self):`? Αυτή είναι ακριβώς η μέθοδος `publish` για την οποία μιλούσαμε πριν. `def` σημαίνει ότι είναι αυτή είναι μια λειτουργία/μέθοδος και `publish` είναι το όνομα της μεθόδου. Μπορείτε να αλλάξετε το όνομα της μεθόδου αν θέλετε. Ο κανόνας ονομασίας είναι ότι χρησιμοποιούμε μικρά γράμματα και κάτω παύλες αντί για κενά. Για παράδειγμα, μια μέθοδος που υπολογίζει την μέση τιμή θα λεγόταν `υπολογισμός_μέσης_τιμής`.
 
