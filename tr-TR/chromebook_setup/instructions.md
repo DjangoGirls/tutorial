@@ -38,11 +38,11 @@ Sonra, çalıştır:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    mkdir djangogirls 
-    cd djangogirls 
-    python3.6 -mvenv myvenv 
-    source myvenv/bin/activate 
-    pip install django~=1.11.0
+    mkdir djangogirls
+    cd djangogirls
+    python3.6 -mvenv myvenv
+    source myvenv/bin/activate
+    pip install django~={{ book.django_version }}
     
 
 (son satırda bir tilde ve eşitlik işareti kullandığımıza dikkat edin: ~=).
