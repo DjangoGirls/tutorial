@@ -94,7 +94,7 @@ After adding the line, your HTML file should now look like this:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-url(r'^post/new/$', views.post_new, name='post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
 전체 코드는 아래와 같을 거에요.
@@ -102,13 +102,13 @@ url(r'^post/new/$', views.post_new, name='post_new'),
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path 
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new'),
 ]
 ```
 
@@ -317,7 +317,7 @@ so that the template will look like this:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
 우리는 `blog/templates/blog/post_edit.html` 템플릿을 재사용할 거에요. 마지막으로 할 일은 *view*를 만드는 것입니다.
@@ -370,7 +370,7 @@ Feel free to change the title or the text and save the changes!
 
 축하합니다! 여러분의 어플리케이션이 점점 더 완벽해지고 있어요!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## 보안
 
