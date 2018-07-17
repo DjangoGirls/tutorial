@@ -54,7 +54,7 @@ pk = post.pkの部分は、 pkは主キーの略で、データベースの各�
 
 最初の投稿の詳細がこの**URL**に表示されるようにします：http://127.0.0.1:8000/post/1/
 
-Djangoが`post_detail`という名前の*表示*を指すように`blog/urls.py`ファイルにURLを作ってください。 `blog/urls.py``url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail',`行を追加します。 にファイルにコピーします。 ファイルは次のようになるでしょう。
+Djangoが`post_detail`という名前の*表示*を指すように`blog/urls.py`ファイルにURLを作ってください。 Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. ファイルは次のようになるでしょう。
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -63,18 +63,16 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
 ```
 
-この部分`^post/(？P<pk>\d)/$`は難しく見えますが、心配する必要はありません。
+This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
 
-- `^`は「文字列の開始」を意味します。
-- `post/`というのは、最初の後に**post**と**/**という単語が含まれることを意味します。 ここまでは順調ですね。
-- `(?P<pk>\d+)` -この部分はトリッキーです。 これは、Djangoがあなたがここに置いたすべてを、`pk`という変数としてビューに転送することを意味します。 （これは`blog/templates/blog/post_list.html`でプライマリキー変数に与えた名前と一致します）！`\d` 数字で、文字ではありません（0と9の間のすべてです）。 `+`は、そこに1つ以上の数字が必要であることを意味します。 したがって、`http://127.0.0.1:8000/post//`のようなものは無効ですが、`http://127.0.0.1:8000/post/1234567890/`は 完全にOK！
-- `/` - もう一度**/**を入力する必要があります。
-- `$` -「終わり」!を意味します。
+- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
+- `/` – then we need a **/** again before finishing the url.
 
 つまり、ブラウザに`http://127.0.0.1:8000/post/5/`を入力すると、Djangoは*view*を探していると理解します。`post_detail`に移動し、`pk`が`5`と同じ情報をその*view*に転送します。
 
