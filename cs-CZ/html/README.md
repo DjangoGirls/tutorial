@@ -41,8 +41,10 @@ Do souboru šablony (template) přidej následující:
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
