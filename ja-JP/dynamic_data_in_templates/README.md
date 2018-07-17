@@ -78,4 +78,4 @@ def post_list(request):
 
 どうでしたか？次は、このクエリセットをテンプレートで表示させるところを、やってみましょう。
 
-Djangoのクエリセットについて、もっと知りたければ、英語のドキュメントですが、こちらも読んでみてくださいね。 https://docs.djangoproject.com/ja/1.11/ref/models/querysets/
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
