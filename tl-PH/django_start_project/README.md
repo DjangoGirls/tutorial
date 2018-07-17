@@ -79,7 +79,7 @@ Sa `settings.py`, hanapin ang linya na naglalaman ng `TIME_ZONE` at baguhin ito 
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Kaya magkakaroon ka ng "Cancel" na button na naisalin sa wika na iyong binigay dito. [Ang Django ay mayroon ng maraming nahandang pagsasalin](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Kaya magkakaroon ka ng "Cancel" na button na naisalin sa wika na iyong binigay dito. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
@@ -191,7 +191,7 @@ Kung ikaw ay gumagamit ng Chromebook, parating bibisitahin mo ang test na server
 
 Binabati ko kayo! Nakalikha kana ng kaunaunhan mong website at napatakbo ito gamit ang web server! Ang galing di ba?
 
-![Gumana ito!](images/it_worked2.png)
+![Install worked!](images/install_worked.png)
 
 Habang tumatakbo ang web server, wala kang makikitang bagong command-line na prompt para maglagay ng karagdagang mga command. Ang terminal ay tatanggap ng mga bagong teksto pero hindi nito patatakbuhin ang mga bagong command. Ito ay dahil ang web server ay parating nakatakbo para mag-antay ng mga paparating na mga request.
 
