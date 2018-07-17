@@ -42,7 +42,7 @@ Ak to ešte stále nefunguje, požiadaj svojho mentora/ku o pomoc.
     cd djangogirls
     python3.6 -mvenv myvenv
     source myvenv/bin/activate
-    pip install django~=1.11.0
+    pip install django~={{ book.django_version }}
     
 
 (všimni si, že v poslednom riadku sme použili vlnovku a za ňou znamienko rovnosti).
