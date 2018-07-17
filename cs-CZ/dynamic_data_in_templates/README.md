@@ -78,4 +78,4 @@ def post_list(request):
 
 A je to! Čas jít zpět do šablony a zobrazit tento QuerySet!
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
