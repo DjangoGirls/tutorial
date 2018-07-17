@@ -42,7 +42,7 @@ Cloud 9 هو أداة توفر لك محرر للشفرة البرمجية وا�
     cd djangogirls
     python3.6 -mvenv myvenv
     source myvenv/bin/activate
-    pip install django~=1.11.0
+    pip install django~={{ book.django_version }}
     
 
 (لاحظ أنه على السطر الأخير نستخدم تيلد تليها علامة متساوية:~=).
