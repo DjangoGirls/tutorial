@@ -41,8 +41,10 @@ Add hozzá az alábbi sorokat a template fájlodhoz:
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
