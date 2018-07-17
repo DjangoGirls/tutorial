@@ -41,8 +41,10 @@ HTML розшифровується як "Мова розмітки гіперт
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
