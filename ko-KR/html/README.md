@@ -41,8 +41,10 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
