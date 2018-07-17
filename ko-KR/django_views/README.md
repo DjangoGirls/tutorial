@@ -41,4 +41,4 @@ Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
 서버가 사디 실행했지만, 아직도 보여지지 않네요, 그렇죠? 걱정하지마세요, 이건 단순한 오류 페이지에요, 전혀 두려워하지 않아도 돼요! 콘솔에 에러 메세지가 나타나는 것은, 실제로 정말 유용하답니다! *TemplateDoesNotExist (템플릿이 존재하지 않습니다)*라고 읽을 수 있으니까요. 버그를 잡고 다음 장에서 템플릿을 만들어보아요!
 
-> Django 뷰에 대해 자세히 알고 싶으시면 공식 문서를 읽어보세요. https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
