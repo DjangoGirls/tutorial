@@ -159,7 +159,7 @@ Korkutucu, değil mi? Fakat endişelenmeyin - Bu satırların ne anlama geldiği
 - `models.DateTimeField` - bu da gün ve saati tanımlamada kullanılır.
 - `models.ForeignKey` - başka bir modele referans tanımlar.
 
-Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Eğer detayları merak ederseniz veya farklı tür alanlar tanımlamak isterseniz Django'nun dokümantasyonlarına bakabilirsiniz (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
 Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` bunun bir fonksiyon/metod olduğunu söyler. `publish` ise metodun adıdır. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı boşluk yerine küçük harf ve alt çizgi kullanmamızdır. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
 
