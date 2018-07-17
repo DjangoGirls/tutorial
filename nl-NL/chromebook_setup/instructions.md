@@ -39,10 +39,9 @@ Dan voer je uit:
 
     mkdir djangogirls
     cd djangogirls
-    python3 -m venv myvenv
+    python3.6 -mvenv myvenv
     source myvenv/bin/activate
-    pip install --upgrade pip
-    pip install django~=1.11.0
+    pip install django~={{ book.django_version }}
     
 
 (merk op dat we op de laatste regel een tilde gevolgd door een is-teken gebruiken: ~=).
