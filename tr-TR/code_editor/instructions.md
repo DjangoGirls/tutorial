@@ -26,6 +26,6 @@ Neden Word ya da Notepad kullanmak yerine, özel bir kod editörü yazılımı k
 
 Birinci nedeni yazdığımız kodun **sade yazı** olması gerektiği içindir ki Word gibi programlar sade yazı üretmezler (font ve şekillendirme desteklerler) ve [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format) gibi özel formatlar kullanılar.
 
-İkinci sebep ise kod editörlerinin kod düzenlemeye destek vermek - örneğin özel kelimeleri reklendirme ve otomatik parantez kapatma gibi - için özelleşmiş olmasıdır.
+İkinci sebep ise kod editörlerinin kod düzenlemeye destek vermek - örneğin özel kelimeleri renklendirme ve otomatik parantez kapatma gibi - için özelleşmiş olmasıdır.
 
 Bütün bunları birazdan deneyimleyeceğiz. Yakında kod editörünüz güvenilir bir eski dostunuz gibi olacaktır :)
