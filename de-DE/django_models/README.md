@@ -159,7 +159,7 @@ Jetzt definieren wir die Eigenschaften, über welche wir gesprochen haben: `titl
 - `models.DateTimeField` – ein Feld für einen Zeitpunkt (ein Datum und eine Uhrzeit).
 - `models.ForeignKey` – definiert eine Verknüpfung/Beziehung zu einem anderen Model.
 
-Wir werden nicht den gesamten Code hier erklären, da das zu lange dauern würde. Du solltest einen Blick in die offizielle Django-Dokumentation werfen, wenn du mehr über Model-Felder wissen möchtest und darüber, wie man auch andere Dinge als die oben beschriebenen definiert (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+Wir werden nicht den gesamten Code hier erklären, da das zu lange dauern würde. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
 Was ist mit `def publish(self):`? Das ist genau die `publish`-Methode zum Veröffentlichen unserer Blogposts, über die wir vorher bereits sprachen. `def` zeigt an, dass es sich nachfolgend um eine Funktion/Methode handelt, und `publish` ist der Name der Methode. Du kannst den Namen der Methode auch ändern, wenn du möchtest. Die Benennungsregel ist, dass wir Kleinbuchstaben verwenden, und anstatt Leerzeichen (die in Funktionsnamen nicht vorkommend dürfen) Unterstriche. Eine Methode, die einen Durchschnittspreis berechnet, könnte zum Beispiel `calculate_average_price` genannt werden.
 
