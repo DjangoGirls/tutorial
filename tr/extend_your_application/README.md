@@ -1,3 +1,5 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # Uygulamanı genişlet
 
 Websitemizi oluşturmak için gerekli adımların hepsini tamamladık: bir modelin, url'nin, view'ün ve template'in nasıl yazılacağını biliyoruz. Websitemizi nasıl güzelleştirebiliriz onu da biliyoruz.
@@ -28,21 +30,21 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 {% endblock %}
 ```
 
-{% raw %}Gönderi listesindeki bir gönderinin başlığından bir gönderinin detay sayfasına bir link (bağlantı) olsun istiyoruz. `<h1><a href="">{{ post.baslik }}</a></h1>`'i gönderinin detay sayfasına link verecek şekilde değiştirelim:{% endraw %}
+{% raw %}Gönderi listesindeki bir gönderinin başlığından bir gönderinin detay sayfasına bir link (bağlantı) olsun istiyoruz. `<h1><a href="">{{ post.title }}</a></h1>`'i gönderinin detay sayfasına link verecek şekilde değiştirelim:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Gizemli `{% url 'post_detail' pk=post.pk %}` satırını anlatma zamanı. Şüphelendiğiniz üzere, `{% %}` notasyonu, Django template tags (şablon etiketleri) kullandığımız manasına geliyor. Bu sefer bizim için URL oluşturacak bir template etiketi kullanacağız!{% endraw %}
+{% raw %}Gizemli `{% url 'post_detail' pk=post.pk %}` satırını anlatma zamanı. Şüphelendiğiniz üzere, `{% %}` notasyonu, Django template tags (şablon etiketleri) kullandığımız manasına geliyor. Bu sefer bizim için URL oluşturacak bir şablon (template) etiketi kullanacağız!{% endraw %}
 
-`post_detail` kısmı Django, `blog/urls.py` URL'si içinde name=post_detail 'ı bekliyor olacak demektir.
+`post_detail` kısmı Django'nun `blog/urls.py/0> dosyasının içinde post_detail adlı bir URL beklediği anlamına gelir.</p>
 
-Ve `pk=post.pk`'a ne dersin? `pk` veritabanındaki her benzersiz isim için varolan birincil anahtarın kısaltmasıdır. Çünkü `Post` modelimizde birincil anahtar belirtmediysek Django bizim için bir tane yaratır (varsayılan olarak her kayıt için birer arttırır, mesela 1,2,3) ve her gönderimize `pk` adında bir alan ekler. Ana anahtara `post.pk` yazarak erişiriz, diğer alanlar içinde aynısı geçerlidir (`title`, `author`, vb.) `Post` objesi!
+<p>Peki <code>pk=post.pk`? `pk` primary key (birincil anahtar) için kullanılan kısaltmadır, veritabanındaki her kayıt için verilen özgün (eşsiz) bir isimdir. `Post` modelimiz için bir primary key tanımlamamış olduğumuz için, Django onu bizim için otomatik olarak oluşturdu (genelde, her kayıt için bir artan numara ile, örnek 1, 2, 3) ve her post için `pk` adlı bir alan ekledi. Primary key'e erişmek için `post.pk` yazarız, tıpkı `Post` objesindeki diğer alanlara eriştiğimiz gibi (`title`, `author`, vb.)!
 
-Şimdi http://127.0.0.1:8000/ adresine gittiğimizde bir hata ile karşılaşacağızURL yada `içerik detayları`için bir*görüntü*'müz olmadığı için hatayı almamız normal)hata böyle görünecektir:
+Şimdi http://127.0.0.1:8000/ adresine gittiğimizde bir hata ile karşılaşacağız (`post_detail` için bir URL ya da *görüntü (view)* olmadığı için hatayı almamız normal). Hata böyle görünecektir:
 
 ![NoReverseMatch error (Tersi yok hatası)](images/no_reverse_match2.png)
 
@@ -52,9 +54,9 @@ Ve `pk=post.pk`'a ne dersin? `pk` veritabanındaki her benzersiz isim için varo
 
 İlk gönderimizin detayının şu **URL**'de gösterilmesini istiyoruz: http://127.0.0.1:8000/post/1/
 
-`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'una işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. `blog/urls.py` dosyasına şu satırı ekleyin `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),`. Dosyanın şu hale gelmiş olması gerekiyor:
+`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'una işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. `blog/urls.py` dosyasına şu satırı ekleyin `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),`. Dosya şöyle gözükmeli:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
 from django.conf.urls import url
@@ -80,25 +82,25 @@ Tamamdır.`blog/urls.py`!'e yeni bir URL kalıbı ekledik! Http://127.0.0.1:8000
 
 ![AttributeError (Özellik hatası)](images/attribute_error2.png)
 
-Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: görünüm'ü eklemek!
+Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: view'ü eklemek!
 
 ## Gönderi detayı için bir view ekleyin
 
-Bu sefer *view*'ımıza `pk` ekstra parametresi verilir. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Dikkat edin, url'lerde kullandığımız ismin birebir aynısını kullanmamız gerekiyor (`pk`). Bu değişkeni kullanmamak yanlıştır ve hataya sebep olacaktır!
+Bu sefer *view*'ümüze `pk` adında bir parametre ekleyeceğiz. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Dikkat edin, url'lerde kullandığımız ismin birebir aynısını kullanmamız gerekiyor (`pk`). Bu değişkeni kullanmamak yanlıştır ve hataya sebep olacaktır!
 
 Şimdi sadece ve sadece bir tane blog gönderisi almak istiyoruz. Bunu yapmak için şunun gibi sorgu setlerini/kümelerini kullanabiliriz:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
 ```python
 Post.objects.get(pk=pk)
 ```
 
-Ama bu kodda bir hata var. Eğer `birincil anahtar<code>verilmiş herhangi bir <code>gönderi`(<0>pk</code>) yoksa, Çok çirkin bir hata elde etmiş olacağız!
+Ama bu kodun bir problemi var. Eğer gelen `primary key` (`pk` - tekil anahtar) ile bir `Post` (gönderi) yoksa, çok çirkin bir hatamız olacak!
 
 ![DoesNotExist error (Yok hatası)](images/does_not_exist2.png)
 
-Bunu istemeyiz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or404`. Bu durumda `pk` verilen bir `gönderi` bulunamazsa çok daha güzel bir sayfa gösterilecek: `Page Not Found 404` hatası.
+Bunu istemiyoruz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or404`. Eğer verilen `pk` ile bir `Post` bulunamazsa, çok daha güzel bir sayfa gösterilecek (`Sayfa bulunamadı 404` sayfası.
 
 ![Page not found (Sayfa bulunamadı)](images/404_2.png)
 
@@ -160,21 +162,21 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 {% endblock %}
 ```
 
-Bir kere daha `base.html` dosyasını genişleteceğiz. `content` bloğunda bir gönderinin varsa yayınlama tarihini , başlığını ve metnini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
+Bir kere daha `base.html` dosyasıa ekleme yapacağız. `content` blogunda bir gönderinin varsa yayınlama tarihini, başlığını ve metnini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
 
-{% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir şablon etiketidir. (Unutmayın `if... else ..` **Python'a Giriş** bölümünden?) Bu durumda eğer gönderinin `published_date` kısmı boş değilse kontrol etmek isteriz.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir şablon etiketidir. ( `if ... else ..` ifadelerini **Python'a Giriş** bölümünden hatırladın mı?) Bu durumda eğer gönderinin `published_date` kısmı boş değilse kontrol etmek isteriz.{% endraw %}
 
-Tamam, şimdi sayfamızı yenileyerek `Şablonyok` kaybolmuşmu görebiliriz.
+Tamam, şimdi sayfamızı yenileyerek `TemplateDoesNotExist` hatası kaybolmuş mu görebiliriz.
 
 ![Post detail page (Gönderi detay sayfası)](images/post_detail2.png)
 
 Heyo! Çalışıyor!
 
-## Bir şey daha: deployment (yayına alma) zamanı!
+# Yayına alma zamanı!
 
 Sitenizin hala PythonAnywhere'de çalışıp çalışmadığına bakmakta fayda var, değil mi? Yeniden taşımayı deneyelim.
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ git status
     $ git add --all .
@@ -185,13 +187,30 @@ Sitenizin hala PythonAnywhere'de çalışıp çalışmadığına bakmakta fayda 
 
 Sonra bir [PythonAnywhere Bash konsol](https://www.pythonanywhere.com/consoles/) una gidip:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
-    $ cd ilk-blogum
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
-Nihayet, [Web tab](https://www.pythonanywhere.com/web_app_setup/) ına gidip **Reload** edelim.
+(Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
 
-O kadar! Tebrikler :)
+## Sunucudaki statik dosyaları güncelleyelim
+
+PythonAynwhere gibi sunucular "statik dosyalar"a (CSS dosyaları gibi) Python dosyalarından farklı davranır çünkü onları daha hızlı yüklenmesi için optimize edebilir. Sonuç olarak, CSS dosyalarında her değişiklik yaptığınızda, sunucuya onları güncellediğimizi söylemek için ilave bir komut çalıştırmalıyız. Bu komuta `collectstatic` adı verilir.
+
+Daha önceden çalıştırdığın virtualenv'in hala etkin değilse tekrar aktive ederek başlayın. (PythonAnywhere bunu yapmak için `workon` adlı bir komut kullanır. Kendi bilgisayarında kullandığın `source myenv/bin/activate` komutu gibi.):
+
+{% filename %}komut satırı{% endfilename %}
+
+    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    (kullaniciadiniz.pythonanywhere.com)$ python manage.py collectstatic
+    [...]
+    
+
+`manage.py collectstatic` komutu biraz `manage.py migrate` komutu gibidir. Kodumuzda bazı değişiklikler yapıp Django'ya bu değişiklikleri sunucunun statik dosyalar yığınına ya da veritabanına uygulamasını söyledik.
+
+Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın.
+
+İşte bu kadar! Tebrikler :)

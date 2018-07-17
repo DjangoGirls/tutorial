@@ -114,7 +114,7 @@ INSTALLED_APPS = [
 
 `blog/models.py` dosyasında `Models` denilen bütün nesneleri tanımlıyoruz - bu blog postumuzu tanımlayacağımız bir yerdir.
 
-`blog/models.py`‘ı açalım, burdaki herşeyi sil, ve kodu bunun gibi yaz:
+Şimdi `blog/models.py` dosyasını açalım ve içindeki her şeyi silip şu kodu yazalım:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -144,7 +144,7 @@ class Post(models.Model):
 
 Korkutucu, değil mi? Fakat endişelenmeyin - Bu satırların ne anlama geldiğini açıklayacağız!
 
-Bütün satırlar `from`‘la başlar veya `imprt` diğer dosyalardan bazı bitlerin eklendiği satırlardır. Yani her dosyada aynı şeyleri kopyalayıp yapıştırmak yerine, `‘la bazı bölümleri de ekleyebiliriz... import ...`
+`from` veya `import` ile başlayan tüm satırlar başka yerlerden bir şeyleri projemize dahil eder. Yani her dosyada aynı şeyleri kopyalayıp yapıştırmak yerine, `‘la bazı bölümleri de ekleyebiliriz... import ...`
 
 `class Post(models.Model):` - bu satır modelimizi tanımlar (bu bir `nesne`‘dir).
 
@@ -159,19 +159,19 @@ Bütün satırlar `from`‘la başlar veya `imprt` diğer dosyalardan bazı bitl
 - `models.DateTimeField` - bu da gün ve saati tanımlamada kullanılır.
 - `models.ForeignKey` - başka bir modele referans tanımlar.
 
-Çok zaman aldığından burada her bit kodunu açıklamayacağız. Model dosyalarından daha çok bilgi almak ve yukarıdaki açıklamalardan farklı tanımlamaları öğrenmek istiyorsanız Django'nun belgelerine daha çok bakmalısınız (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Eğer detayları merak ederseniz veya farklı tür alanlar tanımlamak isterseniz Django'nun dokümantasyonlarına bakabilirsiniz (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
 
-Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` bunun bir fonksiyon/metod olduğunu söyler. `publish` ise metodun adıdır. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı boşluk yerine küçük harf ve alt çizgi kullanmamızdır. Örneğin ortalama fiyatı hesaplayan bir yöntem çağrılabilir `calculate_average_price`.
+Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` bunun bir fonksiyon/metod olduğunu söyler. `publish` ise metodun adıdır. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı boşluk yerine küçük harf ve alt çizgi kullanmamızdır. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
 
-Yöntemler çoğu kez bir şeylere `return`. `__str__` yönteminde bunun bir örneği vardır. Bu durumda `__str__()`'yi çağırdığımız zaman gönderi başlığı olan bir metin (**string**) elde ederiz.
+Genellikle methodlar bir şeyler döndürür (`return` anahtar kelimesi döndür anlamına gelir). `__str__` methodunda bunun örneğini görebiliriz. Bu durumda `__str__()` methodunu çağırdığımızda Post başlığının içeren bir metin (**string**) elde ederiz.
 
-Aynı zamanda hem `def publish(self):` satırının, hem de `def __str__(self):` satırının sınıfımızın içinde girintili bir şekilde yazıldığına dikkat edin. Çünkü Python boşlukta duyarlıdır, yöntemlerimizi sınıfın içine sokmalıyız. Aksi takdirde, yöntemler sınıfın üyesi olmaz, ve bazı beklenmedik davranışlar elde edebilirsiniz.
+Aynı zamanda hem `def publish(self):` satırının, hem de `def __str__(self):` satırının sınıfımızın içinde girintili bir şekilde yazıldığına dikkat edin. Python boşluklara duyarlı olduğu için class'ın içindeki metodları girintili olarak yazmamız gerekiyor. Aksi takdirde metodlar class'a ait olmaz ve beklenmedik davranışlarla karşılaşabilirsiniz.
 
-Hala modeller hakkında bir şeyler belli değil ise, koçuna sormaktan çekinme! Özellikle hem nesneleri hem de fonksiyonları aynı anda öğrenmenin karmaşık olduğunu biliyoruz. Ama şimdi umarız ki senin için biraz daha az sihirli görünüyor!
+Buraya kadar model hakkında anlamadığın bir şeyler varsa mentörüne sormaktan çekinme! Bu konuların biraz karmaşık olduğunun farkındayız. Özellikle hem nesneleri hem de fonksiyonları aynı anda öğrenmek kolay değil. Umarız gizemi biraz azalmaya başlamıştır!
 
 ### Modeller için veritabanında tablo oluşturma
 
-Buradaki son adım, yeni modelimizi veritabanımıza eklemek. İlk olarak, modelimizdeki bazı değişikliklerden Django’yu haberdar etmeliyiz. (Daha yeni oluşturduk!) konsol pencerenize gidin ve `python manage.py makemigrations blog` yazın. Bunun gibi görünecek:
+Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. Öncelikle Django'nun modelimizde bazı değişiklikler yaptığımızı bilmesini sağlamalıyız. (Daha yeni oluşturduk!) Konsol penceresine gidin ve `python manage.py makemigrations blog` yazın. Şöyle görünmeli:
 
 {% filename %}komut-satır{% endfilename %}
 
@@ -182,9 +182,9 @@ Buradaki son adım, yeni modelimizi veritabanımıza eklemek. İlk olarak, model
       - Create model Post
     
 
-**Not:** Düzenlediğiniz dosyaları kaydetmeyi unutmayın. Aksi takdirde, bilgisayarınız beklenmedik hata mesajlarını verebilecek önceki sürümü çalıştıracaktır.
+**Not:** Düzenlediğiniz dosyaları kaydetmeyi unutmayın. Aksi takdirde, bilgisayarınız önceki sürümü çalıştırarak beklenmedik hatalar verebilir.
 
-Django bize veritabanımıza uygulayabileceğimiz bir taşıma dosyası oluşturdu. `python manage.py migrate blog` yaz ve çıktı aşağıdaki gibi olmalıdır:
+Django bize veritabanımıza uygulayabileceğimiz bir taşıma (migrasyon) dosyası oluşturdu. `python manage.py migrate blog` yazdığın zaman şunu görmelisin:
 
 {% filename %}komut-satır{% endfilename %}
 
@@ -196,4 +196,4 @@ Django bize veritabanımıza uygulayabileceğimiz bir taşıma dosyası oluştur
       Applying blog.0001_initial... OK
     
 
-Yaşasın! Model yazımız şimdi veritabanımızda! Onu görmek güzel olur, değil mi? Yazınızın neye benzediğini görmek için bir sonraki bölüme geçin!
+Yaşasın! Post modelimiz artık veritabanımızda! Görsek ne güzel olur, değil mi? Gelecek bölümde Post'un nasıl göründügünü göreceğiz!

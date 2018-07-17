@@ -10,11 +10,11 @@ Küçük bir blog oluşturacağız!
 
 Bazı dosya ve dizinlerin isimleri Django için çok önemlidir. Oluşturmak üzere olduğumuz dosyaları yeniden adlandırmamalısınız. Onları başka bir yere taşımak da iyi bir fikir değil. Django'nun önemli şeyleri bulabilmesi için belirli yapısını koruması gerekir.
 
-> virtualenv içindeki her şeyi çalıştırmayı unutmayın. Eğer konsolunuzda `(myenv)` öneki görmüyorsanız, virtualenv'inizi aktive etmeniz gerekir. **Django yükleme** bölümünün **virtualenv ile Çalışma** kısmında nasıl yapılacağını açıkladık. Windows'ta `myvenv\Scripts\activate` ya da, Mac OS ya da Linux'ta `source myvenv/bin/activate` yazmak bunu sizin için yapacaktır.
+> virtualenv içindeki her şeyi çalıştırmayı unutmayın. Eğer konsolunuzda `(myenv)` öneki görmüyorsanız, virtualenv'inizi aktive etmeniz gerekir. **Django yükleme** bölümünün **Virtualenv ile çalışma** kısmında nasıl yapılacağını açıkladık. Windows'ta `myvenv\Scripts\activate` ya da, Mac OS ya da Linux'ta `source myvenv/bin/activate` yazmak bunu sizin için yapacaktır.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-Mac OS X or Linux konsolunuzda, devam eden şu komutu çalıştırmalısınız. **Periyot eklemeyi unutmayın (yada nokta)`.`sonunda!**
+MacOS veya Linux konsolunuzda aşağıdaki komutu çalıştırmalısınız; **sonuna nokta `(.)` koymayı unutmayın**
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -29,7 +29,7 @@ Mac OS X or Linux konsolunuzda, devam eden şu komutu çalıştırmalısınız. 
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-Windows'ta aşağıdaki kumutu çalıştırmalısınız. **(Sonuna nokta `.` koymayı unutmayın)**:
+Windows'ta aşağıdaki komutu çalıştırmalısınız. **(Sonuna nokta `.` koymayı unutmayın)**:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -55,7 +55,7 @@ Windows'ta aşağıdaki kumutu çalıştırmalısınız. **(Sonuna nokta `.` koy
 
 > **Not**: Dizin yapınızda, daha önceden oluşturduğumuz `venv` dizinini de göreceksiniz.
 
-`manage.py` siteyi yönetmenize yardımcı olan bir scripttir (komut). Bununla başka herhangi bir şey yüklemeden kendi bilgisayarımızda bir web sunucusu başlatabileceğiz.
+`manage.py` site yönetimine yardımcı olan bir komut dosyasıdır. Bu dosya sayesinde, başka herhangi bir şey kurmadan bilgisayarımızda bir web sunucusunu başlatabileceğiz.
 
 `settings.py` dosyası, web sitesinizin ayarlarını içerir.
 
@@ -67,11 +67,11 @@ Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştu�
 
 Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önceden kurduğunuz kod düzenleyicinizi kullanarak dosyayı açın.
 
-**Not**: Bunu aklınızda tutun, `settings.py` dosyası da diğerleri gibi düzenli bir dosyadır. Bunu kod düzenleyicisi içerisinde "dosya -> aç" menü eylemini kullanarak açabilirsiniz. Bu, size `settings.py` dosyanıza gidebileceğiniz ve bu dosyayı seçebileceğiniz her zamanki klasik pencereyi alacaktır. Alternatif olarak, bu dosyayı masaüstünüzdeki djangogirls klasörüne gidip sağ tıklayarak açabilirsiniz. Sonra, listeden kod düzenleyicinizi seçiniz. Dosyayı açabilen ancak düzenlemenize izin vermeyecek diğer programların yüklü olabilmesi nedeniyle kod düzenleyicinin seçilmesi önem arz etmektedir.
+**Not**: `settings.py` dosyasının da diğerleri gibi normal bir dosya olduğunu aklınızda tutun. Bunu kod düzenleyicisi içerisinde "dosya -> aç" menü eylemini kullanarak açabilirsiniz. Bu, size `settings.py` dosyanıza gidebileceğiniz ve bu dosyayı seçebileceğiniz her zamanki klasik pencereyi açacaktır. Alternatif olarak, bu dosyayı masaüstünüzdeki djangogirls klasörüne gidip sağ tıklayarak açabilirsiniz. Sonra, listeden kod düzenleyicinizi seçin. Dosyayı açabilen ancak düzenlemenize izin vermeyecek diğer programların yüklü olması ihtimaline karşın kod düzenleyicinin seçilmesi önem arz etmektedir.
 
 Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zaman dilimleri listesine](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) gidin ve ve ilgili saat dilimini kopyalayın (ZD) (Ör. `Europe/Berlin`).
 
-`settings.py`'de, `TIME_ZONE` içeren satırı bulun ve kendi zaman diliminizi seçmek için değiştirin. Örnek olarak:
+`settings.py` dosyasında `TIME_ZONE` ifadesini içeren satırı bulun ve kendi seçtiğiniz zaman dilimine göre uyarlayın:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -79,9 +79,9 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zama
 TIME_ZONE = 'Europe/Istanbul'
 ```
 
-Bir dil kodu dilden oluşmaktadır, ör. `en` ingilizce için veya `de` almanca için, ve ülke kodu da, ör. `de` almanya için veya `ch`isviçre için. Django'daki varsayılan butonların ve bildirimlerin sizin dilinizde olmasını istiyorsanız bunu eklemek isteyeceksiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django hazırlanmış olan bir çok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. Eğer İngilizce ana diliniz değilse, varsayılan buttonları ve uyarıların dilini kendi dilinize değiştirmek bunu ekleyebilirsiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django hazırlanmış olan birçok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
 
-Aşağıdaki satırı değiştirerek dil kodunu değiştiriniz:
+Farklı bir dil istiyorsanız, aşağıdaki satırı değiştirerek dil kodunu seçin:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -89,7 +89,7 @@ Aşağıdaki satırı değiştirerek dil kodunu değiştiriniz:
 LANGUAGE_CODE = 'de-ch'
 ```
 
-Ayrıca statik dosyalar için bir yol eklememiz gerekmektedir. (Eğitici ders içerisinde statik dosyalar ve CSS hakkında ayrıntılı bilgi bulabilirsiniz.) Dosyanın *son*'una gidin, hemen altında sadece `STATIC_URL` girişi yapın, `STATIC_ROOT` adında yeni birim ekleyin:
+Ayrıca statik dosyalar için bir yol eklememiz gerekmektedir. (Tutorial içerisinde statik dosyalar ve CSS hakkında ayrıntılı bilgi bulabilirsiniz.) Dosyanın *son*'una gidin, hemen altında sadece `STATIC_URL` girişi yapın, `STATIC_ROOT` adında yeni birim ekleyin:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -98,7 +98,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-`DEBUG(Hata Ayıklama)` `True(Doğru)` ve `ALLOWED_HOSTS` boş olduğu zaman ana bilgisayar `['localhost', '127.0.0.1', '[::1]']`'a karşı doğrulanır. Bu, uygulamamızı dağıttıktan sonra, PythonAnywhere'deki anamakine adıyla eşleşmeyecek ve böylece aşağıdaki ayarları değiştireceğiz:
+`DEBUG(Hata Ayıklama)` `True(Doğru)` ve `ALLOWED_HOSTS` boş olduğu zaman ana bilgisayar `['localhost', '127.0.0.1', '[::1]']`'a karşı doğrulanır. Bu, uygulamamızı dağıttıktan sonra, PythonAnywhere'deki anamakine adıyla eşleşmeyecek bu yüzden aşağıdaki ayarları değiştireceğiz:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -127,7 +127,7 @@ DATABASES = {
 }
 ```
 
-Blogumuzun veritabanını oluşturmak için konsolda şu komutu çalıştırın:`python manage.py migrate` (`manage.py` dosyasını içeren `djangogirls` klasöründe olmalıyız). İşler iyi giderse şöyle bir şey görmelisiniz:
+Blogumuzun veritabanını oluşturmak için konsolda şu komutu çalıştırın: `python manage.py migrate` (`manage.py` dosyasını içeren `djangogirls` klasöründe olmalıyız). İşler iyi giderse şöyle bir şey görmelisiniz:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -193,10 +193,10 @@ Tebrikler! ilk web siteni oluşturdun ve web sunucusu kullanarak çalıştırdı
 
 ![İşte çalışıyor!](images/it_worked2.png)
 
-Web sunucusu çaışırken ek komutlar girmek için yeni bir komut satır istemi göremezsiniz. Terminal yeni metin kabul edecek ama yeni komutları çalıştırmayacaktır. Bunun nedeni web sunucusunun duraklamadan gelen talepleri algılamasıdır.
+Web sunucusu çalışırken ek komutlar girmek için yeni bir komut satırı istemi göremezsiniz. Terminal yeni metin kabul edecek ama yeni komutları çalıştırmayacaktır. Bunun nedeni web sunucusunun duraklamadan gelen talepleri algılamasıdır.
 
 > Web sunucuları nasıl çalışır **How the Internet works (İnternet Nasıl Çalışır)** bölümünde görmüştük.
 
-Ağ sunucusu açıkken yeni komut yazmak için, yeni bir terminal penceresi açıp virtualenv aktive etmeniz gerekmektedir. Web sunucusunu durdurmak için, çalıştığı pencereye geri dönün ve CTRL+C ye basın -Control ve C tuşlarına birlikte. (Windows'ta Ctrl+Break tuşları olabilir.).
+Web sunucusu açıkken yeni komut yazmak için, yeni bir terminal penceresi açıp virtualenv'inizi aktive etmeniz gerekmektedir. Web sunucusunu durdurmak için, çalıştığı pencereye geri dönün ve CTRL+C ye basın -Control ve C tuşlarına birlikte. (Windows'ta Ctrl+Break tuşları olabilir.).
 
 Sonraki adım için hazır mısın? İçerikleri oluşturma zamanı!

@@ -12,7 +12,7 @@ Dikkat edilmesi gereken bir şey: Yükleme esnasında "Setup" ("Kur") işaretli 
 
 ![Python'u arama yoluna eklemeyi unutmayın](../python_installation/images/python-installation-options.png)
 
-Önümüzdeki adımlarda, Windows Komut Satırını kullanıyor olacaksınız (ki ayrıca bahsedeceğiz). Şimdilik, eğer kimi komutlar yazmanız gerekirse, Başlat menüsü → Windows Sistemi → Komut Satırı'na gidin. Ayrıca "Çalıştır" penceresi ekrana gelene kadar Windows tuşuna basılı tutarken "R"-tuşuna basabilirsiniz. Komut Satırı'nı açmak için, "cmd" yazın ve "Çalıştır" penceresinde enter'a basın. (Windows'un yeni versiyonlarında, bazen saklı olduğundan "Komut Satırı"nı aratmak zorunda kalabilirsiniz.)
+Önümüzdeki adımlarda, Windows Komut Satırını kullanıyor olacaksınız (ki ayrıca bahsedeceğiz). Şimdilik, bazı komutlar girmeniz gerekirse, Başlat menüsüne gidin ve arama alanına "Komut istemi" yazıp enter'a basın. (Windows'un eski sürümlerinde, komut satırını Başlat menüsü → Windows sistemi → Komut istemi ile başlatabilirsin.) Ayrıca "Çalıştır" penceresi açılana kadar Windows tuşunu basılı tutup "R"-tuşuna basabilirsin. Komut Satırı'nı açmak için, "cmd" yazın ve "Çalıştır" penceresinde enter'a basın.
 
 !["Çalıştır" penceresine "cmd" yazın](../python_installation/images/windows-plus-r.png)
 
