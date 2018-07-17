@@ -14,7 +14,7 @@ Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Exte
 
 Neskôr môžeš skúsiť zdroje uvedené nižšie. Všetky sú veľmi odporúčané!
 
-- [Oficiálny Django návod](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Oficiálny Django návod](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [New Coder tutorials](http://newcoder.io/tutorials/)
 - [Code Academy Python kurz](https://www.codecademy.com/en/tracks/python)
 - [Code Academy HTML & CSS kurz](https://www.codecademy.com/tracks/web)
