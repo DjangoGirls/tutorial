@@ -85,7 +85,7 @@
 <pre><code class="python">TIME_ZONE = 'Eropa / Berlin'
 `</pre> 
 > > > > 
-> > > > A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Jadi Anda akan memiliki tombol "Batal" yang diterjemahkan ke bahasa yang Anda definisikan di sini.  Django hadir dengan banyak terjemahan yang disiapkan </ 0> .</p> 
+> > > > A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Jadi Anda akan memiliki tombol "Batal" yang diterjemahkan ke bahasa yang Anda definisikan di sini. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 > > > > 
 > > > > If you want a different language, change the language code by changing the following line:
 > > > > 
@@ -190,7 +190,7 @@ LANGUAGE_CODE = 'de-ch'
 > > > 
 > > > Selamat! Anda baru saja membuat situs web pertama dan menjalankannya menggunakan server web! Bukankah itu mengagumkan?
 > > > 
-> > > ![Ini berhasil!](images/it_worked2.png)
+> > > ![Install worked!](images/install_worked.png)
 > > > 
 > > > Saat server web berjalan, Anda tidak akan melihat command-line prompt baru untuk memasukkan perintah tambahan. Terminal akan menerima teks baru tapi tidak akan menjalankan perintah baru. Ini karena server web terus berjalan untuk mendengarkan permintaan masuk .
 > > > 
