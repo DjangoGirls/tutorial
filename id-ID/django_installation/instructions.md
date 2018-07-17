@@ -165,13 +165,35 @@ data-collapse=true ces-->
 <pre><code>(myvenv) ~$ python3 -m pip install --upgrade pip
 `</pre> 
 > > > 
-> > > Kemudian jalankan ` pip install django ~ = 1.11.0 </ 0> (perhatikan bahwa kita menggunakan tilde diikuti dengan tanda yang sama: <code> ~ = </ 0> ) untuk menginstal Django.</p>
-
-<p>{% filename%} baris perintah {% endfilename%}</p>
-
-<pre><code>(myvenv) ~ $ pip install django ~ = 1.11.0 Mengumpulkan Django ~ = 1.11.0
-   Men-download Django-1.11.3-py2.py3-none-any.whl (6.8MB) Menginstal paket yang dikumpulkan: Django Berhasil menginstal Django-1.11 .3
-`</pre> <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
+> > > ### Installing packages with requirements
+> > > 
+> > > A requirements file keeps a list of dependencies to be installed using `pip install`:
+> > > 
+> > > First create a `requirements.txt` file inside of `djangogirls/` folder:
+> > > 
+> > >     djangogirls
+> > >     └───requirements.txt
+> > >     
+> > > 
+> > > In your `djangogirls/requirements.txt` file you should add the following text:
+> > > 
+> > > {% filename %}djangogirls/requirements.txt{% endfilename %}
+> > > 
+> > >     Django=={{ book.django_version }}
+> > >     
+> > > 
+> > > Now, run `pip install -r requirements.txt` to install Django.
+> > > 
+> > > {% filename %}command-line{% endfilename %}
+> > > 
+> > >     (myvenv) ~$ pip install -r requirements.txt
+> > >     Collecting Django=={{ book.django_version }} (from -r requirements.txt (line 1))
+> > >       Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+> > >     Installing collected packages: Django
+> > >     Successfully installed Django-{{ book.django_version }}
+> > >     
+> > > 
+> > > <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 > > > 
 > > > > Jika Anda mendapatkan pesan kesalahan saat memanggil pip pada platform Windows, periksa apakah pathname proyek Anda berisi spasi, aksen atau karakter khusus (misalnya, ` C: \ Users \ User Name \ djangogirls </ 0> ). Jika ya, mohon pertimbangkan untuk menggunakan tempat lain tanpa spasi, aksen atau karakter khusus (saran: <code> C: \ djangogirls </ 0> ). Buat virtualenv baru di direktori baru, lalu hapus yang lama dan coba perintah di atas lagi. (Memindahkan direktori virtualenv tidak akan berfungsi karena virtualenv menggunakan path absolut.)</p>
@@ -189,7 +211,7 @@ data-collapse=true ces-->
   
   <p>{% filename%} baris perintah {% endfilename%}</p>
 
-<pre><code>C: \ Users \ Name \ djangogirls & gt; python -m pip install django ~ = 1.11.0
+<pre><code>C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 `</pre> </blockquote> 
 > > > > 
 > > > > <!--endsec-->
@@ -201,4 +223,4 @@ data-collapse=true ces-->
 > > > > 
 > > > > <!--endsec-->
 > > > > 
-> > > > Itu dia! Akhirnya sekarang anda telah membuat aplikasi Django!
+> > > > That's it! You're now (finally) ready to create a Django application!
