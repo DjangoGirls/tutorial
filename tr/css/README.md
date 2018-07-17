@@ -52,7 +52,7 @@ Django otomatik olarak uygulama klasörlerinizdeki "static" adlı klasörleri bu
 
 ## İlk CSS dosyanız!
 
-Simdi web sayfana kendi stilini eklemen için bir CSS dosyası oluşturalım. `static` klasörü içinde `css` adlı yeni bir klasör oluştur. Şimdi de `css` klasörü içinde `blog.css` adlı yeni bir dosya oluşturalım. Hazır mısınız?
+Şimdi web sayfana kendi stilini eklemen için bir CSS dosyası oluşturalım. `static` klasörü içinde `css` adlı yeni bir klasör oluştur. Şimdi de `css` klasörü içinde `blog.css` adlı yeni bir dosya oluşturalım. Hazır mısınız?
 
     djangogirls
     └─── blog
