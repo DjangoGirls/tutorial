@@ -42,7 +42,7 @@ Chromebookをお持ちでない場合は、[このセクションをスキップ
     cd djangogirls
     python3.6 -mvenv myvenv
     source myvenv/bin/activate
-    pip install django~=1.11.0
+    pip install django~={{ book.django_version }}
     
 
 (最後の行はチルダに続けてイコール記号をつけることに気をつけてください: ~=)
