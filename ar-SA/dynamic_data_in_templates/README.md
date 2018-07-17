@@ -78,4 +78,4 @@ def post_list(request):
 
 هذا كل شيء ، حان الوقت للعودة إلى قالبنا وإضهار QuerySet!
 
-هل تريد قراءة المزيد حول QuerySets في جانغو ؟ يجب أن ننظر هنا: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
