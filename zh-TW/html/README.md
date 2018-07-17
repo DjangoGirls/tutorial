@@ -41,8 +41,10 @@ HTML 代表 "超文字標記語言 (HyperText Markup Language)"。 **超文字 (
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
