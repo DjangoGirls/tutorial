@@ -94,7 +94,7 @@ Bubuksan nating ang `blog/urls.py` at idagdag ang linya:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-url(r'^post/new/$', views.post_new, name='post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
 At ang katapusang code ay maging ganito:
@@ -102,13 +102,13 @@ At ang katapusang code ay maging ganito:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path 
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new'),
 ]
 ```
 
@@ -313,7 +313,7 @@ Sa `blog/urls.py` idagdag natin itong linya:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
 Gagamitin natin uli ang template na `blog/templates/blog/post_edit.html`, kaya ang kulang nalang natin ay ang *view*.
@@ -366,7 +366,7 @@ Huwag mag-atubiling magpalit ng pamaga at tesko at i-save ang mga pagbabago!
 
 Binabati ko kayo! Ang iyong application ay unti-unti nang nakompleto!
 
-Kung kailangan mo nang karagdagang impormasyon tungkol sa mga forms sa Django, dapat mong basahin ang dokumentasyon: https://docs.djangoproject.com/en/1.11/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Seguridad
 
