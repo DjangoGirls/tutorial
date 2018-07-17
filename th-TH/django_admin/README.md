@@ -52,6 +52,6 @@ admin.site.register(Post)
 > 
 > ![Django admin](images/edit_post3.png)
 > 
-> หากคุณต้องการทราบข้อมูลเพิ่มเติมเกี่ยวกับ Django คุณสามารถดูได้ที่หน้าเอกสารของโครงการ Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+> If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 > 
 > ตอนนี้น่าจะเป็นช่วงเวลาจิบกาแฟ (หรือชา) หรือหาอะไรทานเพื่อเพิ่มพลัง คุณได้สร้างโมเดล Django แรกของคุณ - และคุณสมควรที่จะได้พักบ้าง!
