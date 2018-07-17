@@ -52,6 +52,6 @@ Make sure that at least two or three posts (but not all) have the publish date s
 
 ![Django admin](images/edit_post3.png)
 
-Если вы хотите узнать больше о Django admin, обратитесь к документации Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Сейчас, вероятно, подходящий момент, чтобы порадовать себя кружечкой кофе (или чая), а также съесть чего-нибудь для пополнения энергии. Ты только что создала свою первую Django модель и заслужила перерыв!
