@@ -94,7 +94,7 @@ Otwieramy plik `blog/urls.py` i dodajemy wiersz:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-url(r'^post/new/$', views.post_new, name='post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
 Ostatecznie kod będzie wyglądał tak:
@@ -102,13 +102,13 @@ Ostatecznie kod będzie wyglądał tak:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path 
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new'),
 ]
 ```
 
@@ -317,7 +317,7 @@ W pliku `blog/urls.py` dodajmy wiersz:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
 Wykorzystamy jeszcze raz szablon `blog/templates/blog/post_edit.html`, więc ostatnią rzeczą, której nam brakuje, jest *widok*.
@@ -370,7 +370,7 @@ Zmodyfikuj jego tytuł lub treść wedle uznania, a następnie zapisz zmiany!
 
 Gratulacje! Twoja aplikacja staje się coraz bardziej kompletna!
 
-Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokumentacji: https://docs.djangoproject.com/en/1.11/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Bezpieczeństwo
 
