@@ -150,7 +150,7 @@ Será algo parecido com isto:
 {% endblock %}
 ```
 
-Mais uma vez estamos estendendo `base.html`. No bloco `content` queremos exibir o published_date (data de publicação) da postagem (se houver), título e texto. Mas devemos discutir algumas coisas importantes, certo?
+Mais uma vez estamos estendendo `base.html`. No bloco `content` queremos exibir o `published_date` (data de publicação) da postagem (se houver), título e texto. Mas devemos discutir algumas coisas importantes, certo?
 
 {% raw %}`{% if ... %} ... {% endif %}` é uma tag de template que podemos usar quando queremos verificar algo (Lembra do `if ... else...` do **capítulo introdução ao Python**?). Neste cenário, queremos verificar se `published_date` de uma postagem não está vazia.{% endraw %}
 
@@ -160,7 +160,7 @@ Ok, podemos atualizar nossa página e ver se o  `TemplateDoesNotExist`já se foi
 
 Yay! Funciona!
 
-## Mais uma coisa: hora de implantar!
+# Mais uma coisa: hora de implantar!
 
 Seria bom ver se seu site ainda estará trabalhando em PythonAnywhere, certo? Vamos tentar fazer deploy novamente.
 
@@ -181,6 +181,22 @@ $ cd my-first-blog
 $ git pull
 [...]
 ```
+
+## Atualizando os arquivos estáticos no servidor
+
+Servidores como PythonAnywhere gostam de tratar "arquivos estáticos" (como arquivos CSS) de maneira diferente dos arquivos Python, porque eles podem otimizá-los para que sejam carregados mais rapidamente. Como resultado, sempre que fazemos mudanças nos nossos arquivos de CSS, precisamos executar um comando extra no servidor para informá-los para atualizá-los. O comando é chamado `collectstatic`.
+
+Comece inicializando seu ambiente virtual, se não tiver inicializado anteriormente (PythonAnywhere usa um comando chamado `workon` para fazer isso, é como o comando `source myenv/bin/activate` que você usa no seu próprio computador):
+
+{% filename %}command-line{% endfilename %}
+```
+$ workon <your-pythonanywhere-username>.pythonanywhere.com
+(ola.pythonanywhere.com)$ python manage.py collectstatic
+[...]
+```
+
+O comando `manage.py collecstatic` é um pouco parecido com `manage.py migrate`. Fazemos alterações em nosso código e, em seguida, informamos o Django para _aplicar_ essas alterações, seja para a coleção do servidor de arquivos estáticos, seja para o banco de dados.
+
 
 E finalmente, pule para a [tab Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload**.
 
