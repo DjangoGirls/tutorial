@@ -159,7 +159,7 @@ Now we define the properties we were talking about: `title`, `text`, `created_da
 - `models.DateTimeField` – this is a date and time.
 - `models.ForeignKey` – this is a link to another model.
 
-เราจะไม่อธิบายทุกส่วนของโค้ดทั้งหมดในที่นี้ เนื่องจากจะใช้เวลานานเกินไป You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+เราจะไม่อธิบายทุกส่วนของโค้ดทั้งหมดในที่นี้ เนื่องจากจะใช้เวลานานเกินไป You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
 แล้วส่วนนี้ `def publish(self):` คืออะไร? นี่คือเมธอด `publish` ที่เราเคยบอกไปก่อนหน้านี้ไง `def` คือ ฟังก์ชั่น/เมธอด และ `publish` คือชื่อของ method คุณสามารถเปลี่ยนชื่อ method ของคุณได้ ถ้าคุณต้องการ การตั้งชื่อจะมีกฎคือ เราจะใช้ตัวพิมพ์เล็กและใช้ขีดล่าง (_) แทนช่องว่าง เช่น เรามี method สำหรับคำนวณราคาเฉลี่ย เราจะตั้งชื่อว่า `calculate_average_price`
 
