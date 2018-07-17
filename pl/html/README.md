@@ -41,8 +41,10 @@ Dodaj następującą treść w pliku z szablonem:
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 

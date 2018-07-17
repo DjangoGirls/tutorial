@@ -196,7 +196,7 @@ Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudow
 
 Twoja strona powinna teraz być dostępna w publicznym Internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się nim z kimkolwiek chcesz :)
 
-> **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt lub rozpocząć nowy projekt, należy przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/), aby uzyskać jakieś wskazówki dotyczące zabezpieczania witryny.
+> **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt lub rozpocząć nowy projekt, powinnaś przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/), aby uzyskać jakieś wskazówki dotyczące zabezpieczania witryny.
 
 ## Porady dotyczące debugowania
 

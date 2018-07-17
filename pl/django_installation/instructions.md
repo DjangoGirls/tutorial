@@ -161,15 +161,32 @@ Zanim jednak to zrobimy, powinniśmy się upewnić, że mamy najnowszą wersję 
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-Następnie uruchom polecenie `pip install django~=1.11.0 `(zwróć uwagę, że używamy tyldy przed znakiem równości: `~=`) do instalacji Django.
+### Instalacja pakietów z pliku wymagań
+
+Plik wymagań zawiera listę zależności, które zainstalujemy za pomocą polecenia `pip install`:
+
+Na początek stwórz plik `requirements.txt` wewnątrz katalogu `djangogirls/`:
+
+    djangogirls
+    └───requirements.txt
+    
+
+W swoim pliku `djangogirls/requirements.txt` powinnaś dodać następujący tekst:
+
+{% filename %}djangogirls/requirements.txt{% endfilename %}
+
+    Django=={{ book.django_version }}
+    
+
+Teraz możesz uruchomić `pip install -r requirements.txt` aby zainstalować Django.
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install django~=1.11.0
-    Collecting django~=1.11.0
-      Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
-    Installing collected packages: django
-    Successfully installed django-1.11.3
+    (myvenv) ~$ pip install -r requirements.txt
+    Collecting Django=={{ book.django_version }} (from -r requirements.txt (line 1))
+      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+    Installing collected packages: Django
+    Successfully installed Django-{{ book.django_version }}
     
 
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
@@ -186,7 +203,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
+>     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >     
 
 <!--endsec-->

@@ -21,11 +21,11 @@ Otwórzmy plik `mysite/urls.py` i przyjrzyjmy się jego treści:
 
 [...]
 """
-from django.conf.urls import url
+from django.urls import path, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
 ]
 ```
 
@@ -38,33 +38,10 @@ Adres URL panelu administracyjnego, który odwiedzałaś w poprzednim rozdziale,
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-    url(r'^admin/', admin.site.urls),
+    path('admin/', admin.site.urls),
 ```
 
 To znaczy, że dla każdego adresu zaczynającego się od `admin/` Django spróbuje dopasować odpowiedni *widok*. W tym przypadku używamy wielu adresów URL panelu administracyjnego, dlatego nie wypisujemy ich wszystkich w tym jednym małym pliku - tak jest czytelniej i bardziej estetycznie.
-
-## Regex, czyli wyrażenia regularne
-
-Zastanawiałaś się, w jaki sposób Django kojarzy adresy URL z widokami? Cóż, ta część jest nieco bardziej złożona. Django wykorzystuje `regex`, czyli tzw. wyrażenia regularne. Regex posiada mnóstwo (naprawdę mnóstwo!) reguł, które tworzą wzorzec do wyszukania. To dość skomplikowany temat i nie będziemy tutaj wchodzić w szczegóły.
-
-Jeśli nadal chcesz zrozumieć, w jaki sposób stworzyliśmy wzorce, oto przykład tego procesu - będziemy potrzebować tylko ograniczonego podzbioru reguł, aby wyrazić wzorzec, którego szukamy, a mianowicie:
-
-* `^` oznacza początek tekstu
-* `$` oznacza koniec tekstu
-* `\d` oznacza cyfrę
-* `+` oznacza, że poprzedni element powinien się powtórzyć przynajmniej raz
-* piszemy () aby uchwycić część wzorca
-
-Inne znaki we wzorcu URL będą rozumiane dosłownie.
-
-Teraz wyobraź sobie, że masz stronę z takim adresem `http://www.mysite.com/post/12345/`, gdzie `12345` to numer Twojego posta.
-
-Pisanie osobnych widoków dla każdego numeru z osobna byłoby frustrujące. Z wyrażeniami regularnymi możemy stworzyć wzorzec, który dopasuje URL i znajdzie dla nas numer posta: `^post/(\d+)/$`. Rozbijmy go na mniejsze części, by zrozumieć, co tu się dzieje:
-
-* **^post/** mówi Django, by skupiło się na każdym adresie URL, który zaczyna się od wyrazu `post` (zaraz po `^`)
-* **(\d+)** oznacza, że szukamy numeru (jedna lub więcej cyfr) i że chcemy go wyodrębnić
-* **/** mówi Django, że następny w kolejności powinien się pojawić znak `/`
-* **$** informuje, że to jest koniec adresu URL, co oznacza, że Django będzie szukał adresów kończących się na `/`
 
 ## Twój pierwszy adres URL w Django!
 
@@ -79,19 +56,16 @@ Twój plik `mysite/urls.py` powinien teraz wyglądać tak:
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import include
-from django.conf.urls import url
+from django.urls import path, include
 from django.contrib import admin
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
-    url(r'', include('blog.urls')),
+    path('admin/', admin.site.urls),
+    path('', include('blog.urls')),
 ]
 ```
 
 Django przekieruje wszystkie reguły z adresu 'http://127.0.0.1:8000/' do `blog.urls` i tam będzie szukał dalszych wskazówek.
-
-Pisząc wyrażenia regularne w Pythonie, zawsze dajemy `r` na początku ciągu znaków. To jest podpowiedź dla Pythona, że w tym ciągu znaków mogą się znajdować znaki specjalne, które nie są przeznaczone dla niego, ponieważ oznaczają wyrażenie regularne.
 
 ## blog.urls
 
@@ -100,7 +74,7 @@ Stwórz nowy pusty plik o nazwie `urls.py` w katalogu `blog`. Dokładnie tak! Do
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path
 from . import views
 ```
 
@@ -112,11 +86,11 @@ Potem możemy dodać nasz pierwszy wzorzec adresu URL:
 
 ```python
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
+    path('', views.post_list, name='post_list'),
 ]
 ```
 
-Jak widzisz, teraz przyporządkowujemy widok (`view`) o nazwie `post_list` do URL `^$`. To wyrażenie regularne będzie dopasowywać `^` (początek) po którym następuje `$` (koniec) - więc tylko pusty ciąg znaków będzie zgodny. I to się zgadza, ponieważ dla mechanizmów rozróżniających adresy w Django, 'http://127.0.0.1:8000/' nie jest częścią adresu URL. Ten wzorzec będzie wskazówką dla Django, że `views.post_list` jest właściwym miejscem dla każdego, kto wejdzie na stronę poprzez adres 'http://127.0.0.1:8000/'.
+Jak widzisz, teraz przyporządkowujemy widok (`view`) o nazwie `post_list` do strony głównej. Ten wzorzec URL zostanie dopasowany do pustego ciągu znaków, a Django zignoruje nazwę domeny (np. http://127.0.0.1:8000/), która poprzedza pełną ścieżkę url. Ten wzorzec będzie wskazówką dla Django, że `views.post_list` jest właściwym miejscem dla każdego, kto wejdzie na stronę poprzez adres 'http://127.0.0.1:8000/'.
 
 Ostatnia część, `name='post_list` jest nazwą URL, która będzie używana do zidentyfikowania widoku. Nazwa może być taka sama jak nazwa widoku albo kompletnie inna. W projekcie będziemy później używać nazw URL, więc ważne jest nazwanie każdego URL-a w aplikacji. Powinnyśmy również starać się używać nazw URL unikalnych i prostych do zapamiętania.
 
@@ -126,4 +100,4 @@ Jeśli teraz spróbujesz odwiedzić stronę http://127.0.0.1:8000/, zobaczysz ko
 
 Twoja konsola pokazuje błąd, ale nie martw się - w rzeczywistości jest to całkiem użyteczne: mówi ci, że** brak atrybutu 'post_list'**. To jest nazwa widoku (*view*), którą Django próbuje znaleźć i użyć, ale jeszcze go nie utworzyłyśmy. Na tym etapie Twój `/admin/ ` również nie będzie działać. Nie martw się, zajmiemy się tym.
 
-> Jeśli chciałabyś dowiedzieć się więcej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: https://docs.djangoproject.com/en/1.11/topics/http/urls/
+> Jeśli chciałabyś dowiedzieć się więcej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: https://docs.djangoproject.com/en/2.0/topics/http/urls/
