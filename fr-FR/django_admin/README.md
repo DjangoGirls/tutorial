@@ -52,6 +52,6 @@ Assurez-vous qu'au moins deux ou trois messages (mais pas tous) ont une date de 
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Cela peut être un bon moment pour prendre un café (ou un thé) ou quelque chose à manger pour vous redynamiser. Vous avez créé le premier modèle Django - vous méritez une petite pause!
