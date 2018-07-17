@@ -54,7 +54,7 @@ Vytvorme URL v `urls.py` pre náš `post_detail` *view*!
 
 Chceme, aby sa detaily nášho prvého príspevku zobrazili na tomto **URL**: http://127.0.0.1:8000/post/1/
 
-Vytvorme URL v súbore `blog/urls.py` tak, aby odkazoval Django na *view* nazvaný `post_detail`, ktorý zobrazí celý príspevok blogu. Pridaj riadok `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),` do súboru `blog/urls.py`. Súbor by mal vyzerať takto:
+Vytvorme URL v súbore `blog/urls.py` tak, aby odkazoval Django na *view* nazvaný `post_detail`, ktorý zobrazí celý príspevok blogu. Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. Súbor by mal vyzerať takto:
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_urls.py{% endfilename %}
 
@@ -63,18 +63,16 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
 ```
 
-Táto časť `^post/(?P<pk>\d+)/$` vyzerá desivo, ale bez obáv - vysvetlíme si:
+This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
 
-- začína to opäť s `^` - "začiatok".
-- `post/` len znamená, že na začiatku, URL by mala obsahovať slovo **post** a **/**. Zatiaľ všetko v poriadku.
-- `(?P<pk>\d+)` - táto časť je zložitejšia. Znamená to, že Django vezme všetko, čo sem vložíš a premiestni to do premennej s názvom `pk`. (Všimni si, že to zodpovedá názvu ktorý sme dali primárnemu kľúču v `blog/templates/blog/post_list.html`!) `\d` nám hovorí, že to môže byť iba číslica, nie písmeno (takže všetko od 0 po 9). `+` znamená, že musíme mať aspoň jedno číslo. Takže niečo ako `http://127.0.0.1:8000/post//` nie je validné, ale `http://127.0.0.1:8000/post/1234567890/` je úplne v poriadku!
-- `/` – potom potrebujeme **/** ešte raz.
-- `$` – "koniec"!
+- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
+- `/` – then we need a **/** again before finishing the url.
 
 To znamená, že ak zadáš `http://127.0.0.1:8000/post/5/` do svojho prehliadača, Django pochopí, že hľadáš *view* s názvom `post_detail` a prenesie informácie z `pk` rovné `5` do toho *view*.
 
