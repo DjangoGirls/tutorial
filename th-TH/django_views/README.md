@@ -41,4 +41,4 @@ def post_list(request):
 
 This shows that the server is running again, at least, but it still doesn't look right, does it? ไม่ต้องกังวลไป มันก็แค่ข้อความที่แสดงถึงข้อผิดพลาด ไม่มีอะไรให้ต้องกลัวเลย! มันก็เหมือนข้อความที่แสดงข้อผิดพลาดในคอนโซล จริงๆแล้วมันมีประโยชน์มากเลยนะ คุณอ่านได้ว่า *TemplateDoesNotExist* งั้นเรามาแก้บั๊คและสร้างเทมเพลตในบทต่อไปกันเลย!
 
-> ข้อมูลเพิ่มเติมเกี่ยวกับ Django view สามารถดูได้ที่หน้าเอกสารของโครงการ Django: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
