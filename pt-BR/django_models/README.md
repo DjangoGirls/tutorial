@@ -4,7 +4,7 @@ Agora o que queremos criar é algo que armazene todos os posts em nosso blog. Ma
 
 ## Objetos
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Existe um conceito na programação chamado `programação orientada à objetos`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
 Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos lhe dar um exemplo.
 
