@@ -47,6 +47,6 @@ Untuk masuk, Anda perlu membuat * superuser </ 0> - akun pengguna yang memiliki 
 > 
 > ![Django admin](images/edit_post3.png)
 > 
-> Jika anda ingin tahu lebih banyak tentang admin Django, Anda harus memeriksa dokumentasi Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+> If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 > 
 > Ini mungkin saja saat yang tepat untuk minum kopi (atau teh) atau sesuatu yang bisa dimakan untuk mengembalikan tenaga anda. Anda menciptakan model Django yang pertama - Anda layak untuk sedikit beristirahat!
