@@ -68,11 +68,11 @@ urlpatterns = [
 ]
 ```
 
-Część `post/<int:pk>/` określa wzorzec URL - wytłumaczymy Tobie co to:
+Część `post/<int:pk>/` określa wzorzec URL - wytłumaczymy Tobie, co to jest:
 
-- `post/` po prostu oznacza, że adres URL powinien zaczynać się od słowa **post** po którym nastąpi **/**. Jak na razie dobrze idzie.
+- `post/` po prostu oznacza, że adres URL powinien zaczynać się od słowa **post**, po którym nastąpi **/**. Jak na razie idzie dobrze.
 - `<int:pk>` - ta część jest trudniejsza. Oznacza ona, że Django spodziewa się liczby całkowitej i przekaże jej wartość do widoku jako zmienną `pk`.
-- `/` - i znów potrzebujemy **/** zanim zakończymy wzorzec URL.
+- `/` - i znów potrzebujemy **/**, zanim zakończymy wzorzec URL.
 
 To oznacza, że gdy wpiszesz w przeglądarce adres `http://127.0.0.1:8000/post/5/`, Django zrozumie, że potrzebujesz *widoku* zwanego `post_detail` i przekaże informację, że `pk` jest równe `5` temu *widokowi*.
 
