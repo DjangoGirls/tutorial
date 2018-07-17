@@ -42,7 +42,7 @@ Cloud 9 화면 하단의 터미널에, 다음의 명령어를 실행합니다:
     cd djangogirls
     python3.6 -mvenv myvenv
     source myvenv/bin/activate
-    pip install django~=1.11.0
+    pip install django~={{ book.django_version }}
     
 
 (마지막 줄에서 물결표 다음에 등호를 사용한다는 것을 참고하길 바랍니다: ~=)
