@@ -41,8 +41,10 @@ Füge folgenden Text in deine Template-Datei ein:
 
 ```html
 <html>
-    <p>Halli-Hallo!</p>
-    <p>Es funktioniert!</p>
+<body>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</body>
 </html>
 ```
 
