@@ -41,8 +41,10 @@ Template dosyamıza şunları ekleyelim:
 
 ```html
 <html>
-    <p>Merhaba!</p>
-    <p>Çalışıyor!</p>
+<body>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</body>
 </html>
 ```
 
