@@ -197,7 +197,7 @@ Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızd
 
 Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "Web" tabına tıklayarak linki kopyalayın. Bu linki istediğiniz herkes ile paylaşabilirsiniz :)
 
-> **Not** Bu kılavuz başlangıçlara yönelik olduğu için basit tutmak amacıyla siteyi yayına alırken güvenlik açısından ideal olmayan bir kaç seçim yaptık. Bu projeyi ilerletmeye karar veriseniz veya yeni bir proje oluşturursanız, güvenlik tavsiyeleri için [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) i inceleyin.
+> **Not** Bu kılavuz başlangıçlara yönelik olduğu için basit tutmak amacıyla siteyi yayına alırken güvenlik açısından ideal olmayan bir kaç seçim yaptık. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
 
 ## Hata ayıklama önerileri
 
