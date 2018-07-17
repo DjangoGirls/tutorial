@@ -94,7 +94,7 @@ We open `blog/urls.py` and add a line:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-url(r'^post/new/$', views.post_new, name='post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
 Dan kod terakhir akan kelihatan seperti ini:
@@ -102,13 +102,13 @@ Dan kod terakhir akan kelihatan seperti ini:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-dari url import django.conf.urls
-dari. import views
+from django.urls import path 
+from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new'),
 ]
 ```
 
@@ -317,7 +317,7 @@ In `blog/urls.py` we add this line:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
 We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
@@ -370,7 +370,7 @@ Jangan ragu untuk menukar tajuk atau teks dan simpan perubahan!
 
 Tahniah! Permohonan anda semakin lengkap!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/1.11/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Security
 
