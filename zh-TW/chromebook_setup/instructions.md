@@ -42,7 +42,7 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
     cd djangogirls
     python3.6 -mvenv myvenv
     source myvenv/bin/activate
-    pip install django~=1.11.0
+    pip install django~={{ book.django_version }}
     
 
 (請注意，我們在最後一行確實使用了一個符號： ~= 喔)。
