@@ -41,8 +41,10 @@ Idagdag ang sumusunod sa iyong template na file:
 
 ```html
 <html>
-    <p>Kumusta!</p>
-    <p>Ito ay gumagana!</p>
+<body>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</body>
 </html>
 ```
 
