@@ -14,7 +14,7 @@ Evet! Öncelikle [Django Girls Tutorial: Eklentiler](https://tutorial-extensions
 
 Daha sonra, aşağıdaki listedeki kaynakları deneyebilirsin. Hepsi birden çok önerilir!
 
-- [Resmi Django eğitimi](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Resmi Django eğitimi](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Yeni başlayan eğitimleri](http://newcoder.io/tutorials/)
 - [Code Academy Python kursu](https://www.codecademy.com/en/tracks/python)
 - [Code Academy HTML & CSS kursu](https://www.codecademy.com/tracks/web)
