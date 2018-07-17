@@ -41,8 +41,10 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
