@@ -196,7 +196,7 @@ PythonAnywhereのコードをlsを使って見てみることもできます：
 
 あなたのサイトは現在、インターネット上に生存しているはずです！ PythonAnywhereの「Web」タブをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)
 
-> **注**これは初心者向けのチュートリアルです。このサイトを展開する際には、セキュリティの観点からは理想的ではない、いくつかのショートカットを取り上げました。 このプロジェクトを構築するか、新しいプロジェクトを開始する場合は、[ Djangoデプロイメント チェックリスト](https://docs.djangoproject.com/ja/1.11/howto/deployment/checklist/)をご覧ください。
+> **注**これは初心者向けのチュートリアルです。このサイトを展開する際には、セキュリティの観点からは理想的ではない、いくつかのショートカットを取り上げました。 If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
 
 ## デバッギングのヒント
 
