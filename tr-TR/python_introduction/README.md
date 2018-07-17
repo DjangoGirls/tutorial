@@ -134,7 +134,7 @@ Fonksiyonları neden bazen stringin sonunda bir `.` ile (`"Zeynep".upper()` gibi
 Tamam, stringlerden yeterince bahsettik. Şu ana kadar şu konuları öğrendin:
 
 - **komut istemi** – komutları (kod) Python'un komut istemine yazdığınızda Python'da sonuçlandırarak yanıtlar üretir
-- **sayılar ve dizinler** – Python'da sayılar matematik için dizinler ise metin nesneleri için kullanılmaktadır
+- **sayılar ve dizeler** – Python'da sayılar matematik için dizeler ise metin nesneleri için kullanılmaktadır
 - **operatörler** `+` ve `*` gibi, değerleri birleştirerek yeni bir değer üretmek için kullanılmaktadır
 - **fonksiyonlar** `upper()` ve `len()` gibi, nesneler üzerinde eylemler gerçekleştirmektedirler.
 
@@ -194,7 +194,7 @@ Farkettiğiniz gibi, program daha öncekilerinin aksine bu kez hiçbir cevap ver
 'Ayşe'
 ```
 
-Yaşasın! İşte bu sizin ilk değişkenin! :) Bu değişkenin işaret ettiği şeyi her zaman değiştirebilirsin:
+Yaşasın! İşte bu senin ilk değişkenin! :) Bu değişkenin işaret ettiği şeyi her zaman değiştirebilirsin:
 
 {% filename %}komut satırı{% endfilename %}
 
