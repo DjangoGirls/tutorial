@@ -94,7 +94,7 @@ Note that we want to call our new view `post_new`. The class `"glyphicon glyphic
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-url(r'^post/new/$', views.post_new, name='post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
 โค้ดสุดท้ายจะมีหน้าตาแบบนี้:
@@ -102,13 +102,13 @@ url(r'^post/new/$', views.post_new, name='post_new'),
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path 
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new'),
 ]
 ```
 
@@ -317,7 +317,7 @@ Django จะตรวจสอบความถูกต้อง ว่าข
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
 เราจะนำ template `blog/templates/blog/post_edit.html` มาใช้อีกครั้ง ดังนั้นสิ่งที่ขาดไปสิ่งสุดท้ายคือ *view*.
@@ -370,7 +370,7 @@ form = PostForm(instance=post)
 
 ยินดีด้วย! แอพของคุณใกล้จะเสร็จเข้าไปทุกทีแล้ว!
 
-หากคุณต้องการข้อมูลเพิ่มเติมเกี่ยวกับ Django form คุณควรอ่านเอกสารประกอบนี้: https://docs.djangoproject.com/en/1.11/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## ความปลอดภัย
 
