@@ -52,6 +52,6 @@ Certifique-se que pelo menos duas ou três postagens (mas não todas) têm a dat
 
 ![Django admin](images/edit_post3.png)
 
-Se você quiser saber mais sobre o Django admin, você precisa conferir a documentação do Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Esse provavelmente é um bom momento para pegar um café (ou chá) ou algo para comer para recuperar as energias. Você criou seu primeiro modelo em Django - você merece uma pausa!
