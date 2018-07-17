@@ -90,14 +90,14 @@ urlpatterns = [
 ]
 ```
 
-Jak widzisz, teraz przyporządkowujemy widok (`view`) o nazwie `post_list` do strony głównej. Ten wzorzec URL zostanie dopasowany do pustego ciągu znaków, a Django zignoruje nazwę domeny (np. http://127.0.0.1:8000/), która poprzedza pełną ścieżkę url. Ten wzorzec będzie wskazówką dla Django, że `views.post_list` jest właściwym miejscem dla każdego, kto wejdzie na stronę poprzez adres 'http://127.0.0.1:8000/'.
+Jak widzisz, teraz przyporządkowujemy widok (`view`) o nazwie `post_list` do strony głównej. Ten wzorzec URL zostanie dopasowany do pustego ciągu znaków, a Django zignoruje nazwę domeny (np. http://127.0.0.1:8000/), która poprzedza pełną ścieżkę URL. Ten wzorzec będzie wskazówką dla Django, że `views.post_list` jest właściwym miejscem dla każdego, kto wejdzie na stronę poprzez adres 'http://127.0.0.1:8000/'.
 
 Ostatnia część, `name='post_list` jest nazwą URL, która będzie używana do zidentyfikowania widoku. Nazwa może być taka sama jak nazwa widoku albo kompletnie inna. W projekcie będziemy później używać nazw URL, więc ważne jest nazwanie każdego URL-a w aplikacji. Powinnyśmy również starać się używać nazw URL unikalnych i prostych do zapamiętania.
 
-Jeśli teraz spróbujesz odwiedzić stronę http://127.0.0.1:8000/, zobaczysz komunikat "niedostępna strona internetowa". Wynika to z faktu, że serwer (pamiętaj o wpisaniu ` runserver`?) nie jest już uruchomiony. Spójrz na okno konsoli serwera, aby dowiedzieć się, dlaczego.
+Jeśli teraz spróbujesz odwiedzić stronę http://127.0.0.1:8000/, zobaczysz komunikat "niedostępna strona internetowa". Wynika to z faktu, że serwer (pamiętałaś o wpisaniu ` runserver`?) nie jest już uruchomiony. Spójrz na okno konsoli serwera, aby dowiedzieć się, dlaczego.
 
 ![Błąd](images/error1.png)
 
-Twoja konsola pokazuje błąd, ale nie martw się - w rzeczywistości jest to całkiem użyteczne: mówi ci, że** brak atrybutu 'post_list'**. To jest nazwa widoku (*view*), którą Django próbuje znaleźć i użyć, ale jeszcze go nie utworzyłyśmy. Na tym etapie Twój `/admin/ ` również nie będzie działać. Nie martw się, zajmiemy się tym.
+Twoja konsola pokazuje błąd, ale nie martw się - w rzeczywistości jest to całkiem użyteczne: mówi Ci, że** brak atrybutu 'post_list'**. To jest nazwa widoku (*view*), którą Django próbuje znaleźć i użyć, ale jeszcze go nie utworzyłyśmy. Na tym etapie Twój `/admin/ ` również nie będzie działać. Nie martw się, zajmiemy się tym.
 
 > Jeśli chciałabyś dowiedzieć się więcej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: https://docs.djangoproject.com/en/2.0/topics/http/urls/
