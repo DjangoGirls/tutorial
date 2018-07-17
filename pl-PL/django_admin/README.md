@@ -52,6 +52,6 @@ Upewnij się, że co najmniej dwa lub trzy posty (ale nie wszystkie) mają ustaw
 
 ![Admin Django](images/edit_post3.png)
 
-Jeśli chcesz dowiedzieć się więcej o administratorze Django, powinnaś sprawdzić dokumentację Django: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Jest to prawdopodobnie dobry moment, aby wziąć kawę (lub herbatę) lub coś do jedzenia, aby ponownie naładować się energią. Stworzyłaś swój pierwszy model Django - zasługujesz na małą przerwę!
