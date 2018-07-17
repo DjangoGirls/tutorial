@@ -41,4 +41,4 @@ Bir başka hata! Okuyup neler olduğunu anlamaya çalışalım:
 
 İyi tarafından bakarsak bu hata en azından sunucumuzun yeniden çalıştığını gösteriyor, ama hala bir şeyler yanlış, değil mi? Dert etmeyin, sadece bir hata sayfası, korkacak bir şey yok! Komut satırındaki hata mesajları gibi bunlar da aslında oldukça yararlılar. *TemplateDoesNotExist* hatası alıyoruz, yani Template bulunamadı. Gelecek bölümde bu hatayı template oluşturarak düzeltelim!
 
-> Django view'ları hakkında daha fazla bilgi edinmek için resmi dokümantasyonları okuyabilirsiniz: https://docs.djangoproject.com/en/1.11/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
