@@ -41,7 +41,11 @@ Cloud 9 adalah sebuah alat yang memberikan anda kode editor dan akses ke kompute
                     
                     {% filename%} Cloud 9 {% endfilename%}
                     
-                        mkdir djangogirls cd djangogirls python3.6 -mvenv myvenv source myvenv / bin / mengaktifkan pip install django ~ = 1.11.0
+                        mkdir djangogirls
+                        cd djangogirls
+                        python3.6 -mvenv myvenv
+                        source myvenv/bin/activate
+                        pip install django~={{ book.django_version }}
                         
                     
                     (perhatikan bahwa pada baris terakhir kita menggunakan tilde diikuti dengan tanda sama: ~ =).
