@@ -89,7 +89,7 @@ Kita buka `blog/urls.py` dan tambahkan baris:
 {% filename%} blog / urls.py {% endfilename%}
 
 ```python
-url (r '^ post / new / $', views.post_new, name = 'post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
 Dan kode terakhir akan tampak seperti ini:
@@ -97,10 +97,14 @@ Dan kode terakhir akan tampak seperti ini:
 {% filename%} blog / urls.py {% endfilename%}
 
 ```python
-dari django.conf.urls url impor dari. impor dilihat urlpatterns = [
-     url (r '^ $', views.post_list, name = 'post_list'),
-     url (r '^ post / (? P <pk> \ d +) / $', views.post_detail, name = 'post_detail'),
-     url (r '^ post / new / $', views.post_new, name = 'post_new'),]
+from django.urls import path 
+from . import views
+
+urlpatterns = [
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new'),
+]
 ```
 
 Setelah menyegarkan situs, kita melihat ` AttributeError </ 0> , karena kita tidak memiliki tampilan <code> post_new </ 0> yang diterapkan. Mari kita tambahkan sekarang juga.</p>
@@ -305,7 +309,7 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
     {% filename%} blog / urls.py {% endfilename%}
     
     ```python
-        url (r '^ post / (? P <pk> \ d +) / edit / $', views.post_edit, name = 'post_edit'),
+        path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
     ```
     
     Kita akan menggunakan kembali template `blog/templates/blog/post_edit.html`, sehingga sesuatu yang belum adalah sebuah *view*.
@@ -356,7 +360,7 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
 
 <p>Selamat! Aplikasi anda makin lama makin lengkap!</p>
 
-<p>Jika Anda memerlukan informasi lebih lanjut tentang formulir Django, Anda harus membaca dokumentasi: https://docs.djangoproject.com/en/1.11/topics/forms/</p>
+<p>If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/</p>
 
 <h2>Keamanan</h2>
 
