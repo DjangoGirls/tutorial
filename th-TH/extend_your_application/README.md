@@ -54,7 +54,7 @@ And how about `pk=post.pk`? `pk` is short for primary key, which is a unique nam
 
 เราต้องการให้ละเอียดของโพสต์แรกของเรา แสดงที่นี่ **URL**: http://127.0.0.1:8000/post/1/
 
-เรามาสร้าง URL ในไฟล์ `blog/urls.py` ที่ชี้ให้ Django ไปยัง *view* ที่ใช้ชื่อ `post_detail`, ซึ่งจะแสดงหน้าโพสต์ และเพิ่มบรรทัด `url(r'^post/(?P<pk>+)/$', views.post_detail, name='post_detail'),` ที่ไฟล์ `blog/urls.py` ตอนนี้ ไฟล์ของคุณควรมีหน้าตาแบบนี้:
+เรามาสร้าง URL ในไฟล์ `blog/urls.py` ที่ชี้ให้ Django ไปยัง *view* ที่ใช้ชื่อ `post_detail`, ซึ่งจะแสดงหน้าโพสต์ Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. ตอนนี้ ไฟล์ของคุณควรมีหน้าตาแบบนี้:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -63,18 +63,16 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
 ```
 
-This part `^post/(?P<pk>\d+)/$` looks scary, but no worries – we will explain it for you:
+This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
 
-- it starts with `^` again – "the beginning".
-- `post/` just means that after the beginning, the URL should contain the word **post** and a **/**. So far so good.
-- - `(?P<pk>+)` - ส่วนนี้จะซับซ้อนนิดหน่อย มันหมายถึง Django จะรับข้อมูลเข้ามา และส่งต่อไปยัง view โดยผ่านตัวแปรชื่อ `pk` (Note that this matches the name we gave the primary key variable back in `blog/templates/blog/post_list.html`!) `\d` also tells us that it can only be a digit, not a letter (so everything between 0 and 9). `+` หมายถึง ต้องมีตัวเลขอย่างน้อยหนึ่งหลัก ดังนั้น ตัวอย่างเช่น `http://127.0.0.1:8000/post//` นั้นไม่ถูกต้อง, แต่ `http://127.0.0.1:8000/post/1234567890/` ใช้ได้ เพอร์เฟ็คเลย!
-- `/` – then we need a **/** again.
-- `$` – "the end"!
+- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
+- `/` – then we need a **/** again before finishing the url.
 
 นั่นหมายถึง ถ้าคุณป้อน `http://127.0.0.1:8000/post/5/` เข้าไปยังเบราว์เซอร์ของคุณ Django จะเข้าใจว่าคุณกำลังมองหา *view* ที่ชื่อว่า `post_detail` และส่งข้อมูลคือ `pk` ซึ่งมีค่าเท่ากับ `5` ไปยัง *view*
 
