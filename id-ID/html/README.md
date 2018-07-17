@@ -40,7 +40,12 @@ Tambahkan yang berikut ke file template Anda:
 {% filename %}blog/static/css/list.html{% endfilename %}
 
 ```html
-<html><p>Hi sana!</p>     <p>Kerjanya!</p> </html>
+<html>
+<body>
+    <p>Hi there!</p>
+    <p>It works!</p>
+</body>
+</html>
 ```
 
 Jadi bagaimana Apakah situs web Anda terlihat sekarang? Mengunjunginya untuk mengetahui: http://127.0.0.1:8000 /
