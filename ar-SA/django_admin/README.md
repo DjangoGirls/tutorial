@@ -52,6 +52,6 @@ admin.site.register(Post)
 
 ![دجانغو المشرف](images/edit_post3.png)
 
-إعرف المزيد حول لوحة تحكم دجانغو من خلال قراءة الوثائق الرسمية: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 ربما تكون هذه لحظة جيدة لشرب كوب من القهوة (أو الشاي) أو لتناول الطعام لإعادة تنشيط نفسك. لقد قمت بإنشاء أول نموذج جانغو خاص بك أنت تستحق الإستراحة قليلا!
