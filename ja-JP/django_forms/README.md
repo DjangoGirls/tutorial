@@ -94,7 +94,7 @@ blog/urls.pyを開き、次の内容を追加します。
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-url(r'^post/new/$', views.post_new, name='post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
 次に、このような内容を追加します。
@@ -102,13 +102,13 @@ url(r'^post/new/$', views.post_new, name='post_new'),
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path 
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new'),
 ]
 ```
 
@@ -317,7 +317,7 @@ blog/urls.py には次の行を追加します:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
 テンプレート blog/templates/blog/post_edit.html を再利用します。そしてviewを追加します.
@@ -370,7 +370,7 @@ Ok, 動作確認しましょう。 post_detail ページにいきます。そこ
 
 おめでとう！アプリケーションが完成しました。
 
-Djangoのフォームについての詳細を知りたい場合、Django Projectのドキュメントを読んでください: https://docs.djangoproject.com/en/1.11/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## セキュリティ
 
