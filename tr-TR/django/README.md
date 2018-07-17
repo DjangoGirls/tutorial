@@ -10,7 +10,7 @@ Frameworkler, siz yeni bir site oluştururken yükünüzü hafifletmek için tek
 
 ## Neden bir iskelete ihtiyacınız var?
 
-Django aslında ne işe yaradığını anlamak için, sunuculara daha yakından bakmamız gerekiyor. İlk olarak sunucunun, onun size bir web sitesi sunmasını istediğinizi bilmesi gerekiyor.
+Django'nun aslında ne işe yaradığını anlamak için, sunuculara daha yakından bakmamız gerekiyor. İlk olarak sunucunun, onun size bir web sitesi sunmasını istediğinizi bilmesi gerekiyor.
 
 Bir posta kutusunun (port) gelen mektuplar (requests) için izlendiğini düşünün. Bu bir web sunucusu tarafından yapılıyor. Web sunucusu mektubu okur ve ardından bir web sayfası ile cevap verir. Ama bir şey gönderecekseniz, içeriğe ihtiyacınız var. Django içeriği oluşturmanıza yardımcı olan bir şeydir.
 
