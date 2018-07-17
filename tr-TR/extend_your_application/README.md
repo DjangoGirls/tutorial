@@ -54,7 +54,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 
 İlk gönderimizin detayının şu **URL**'de gösterilmesini istiyoruz: http://127.0.0.1:8000/post/1/
 
-`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'una işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. `blog/urls.py` dosyasına şu satırı ekleyin `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),`. Dosya şöyle gözükmeli:
+`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'una işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. Dosya şöyle gözükmeli:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -63,18 +63,16 @@ from django.conf.urls import url
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
 ```
 
-`^post/(?P<pk>\d+)/$` kısmı korkunç görünüyor, ama endişe etmeyin - sizin için açıklayalım:
+This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
 
-- "başlangıç" yine `^` ile başlar.
-- başlangıçtan sonraki `post/` kısmı URL **post** ve bir tane **/** içermesi gerekir anlamına gelir. Şimdiye kadar her şey iyi.
-- `(?P<pk>\d+)` - bu kısım biraz daha hileli. Buranın anlamı şu: Django bu alana yerleştirdiğimiz her şeyi alacak ve onu `pk` adında bir değişken olarak view'e aktaracak. (Bunun `blog/templates/blog/post_list.html` 'de vermiş olduğumuz birincil anahtar değeriyle eşleştiğini note edin!) aynı zamanda `\d` işareti bize sadece bir rakam olabileceğini söyler, harf değil (yani her şey 0 ve 9 arasındadır). `+` en az bir veya daha fazla rakam olması gerektiğini ifade ediyor. Yani `http://127.0.0.1:8000/post//` gibi bir şey geçerli değil, ama `http://127.0.0.1:8000/post/1234567890/` uygun!
-- `/` - sonra yine **/**'a ihtiyacımız var.
-- `$`-"son"!
+- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
+- `/` – then we need a **/** again before finishing the url.
 
 Bu şu demek, eğer tarayıcınıza `http://127.0.0.1:8000/post/5/` yazarsanız, Django `post_detail` adında bir *view* aradığınızı anlar ve `pk` eşittir `5` bilgisini *view*'e aktarır.
 
