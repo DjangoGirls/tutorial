@@ -14,7 +14,7 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
 
 Luego, puedes intentar los recursos listados a continuaciòn. ¡Todos son muy recomendados!
 
-- [Django's official tutorial (Tutorial oficial de Django)](https://docs.djangoproject.com/en/1.11/intro/tutorial01/)
+- [Django's official tutorial (Tutorial oficial de Django)](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [New Coder turorials (Tutoriales de "New Coder")](http://newcoder.io/tutorials/)
 - [Code Academy Python course (Curso de python en Code Academy)](https://www.codecademy.com/en/tracks/python)
 - [Code Academy HTML & CSS course (Curso de HTML y CSS en Code Academy)](https://www.codecademy.com/tracks/web)
