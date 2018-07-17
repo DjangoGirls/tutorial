@@ -41,8 +41,10 @@ HTMLは、「Hypertext Markup Language」の頭文字を取ったものです。
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
