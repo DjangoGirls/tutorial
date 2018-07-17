@@ -42,7 +42,7 @@ Next, run:
     cd djangogirls
     python3.6 -mvenv myvenv
     source myvenv/bin/activate
-    pip install django~=1.11.0
+    pip install django~={{ book.django_version }}
     
 
 (请注意, 在最后一行中, 我们使用一个波形符后跟等号: ~ =)。
