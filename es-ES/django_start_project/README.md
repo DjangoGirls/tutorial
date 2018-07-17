@@ -79,7 +79,7 @@ En `settings.py`, encuentra la línea que contiene `TIME_ZONE` y modifícala par
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Asì tendràs el boton "Cancel" traducido al idioma que acabas de poner. [Django viene con un montón de traducciones](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. Asì tendràs el boton "Cancel" traducido al idioma que acabas de poner. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
@@ -192,7 +192,7 @@ Si estàs usando un Chromebook, siempre visitaras tu servidor de pruebas accedie
 
 ¡Enhorabuena! ¡Has creado tu primer sitio web y lo has iniciado usando un servidor web! ¿No es genial?
 
-![¡Funcionó!](images/it_worked2.png)
+![Install worked!](images/install_worked.png)
 
 Mientras el servidor se este ejecutando, no podràs ejecutar comandos adicionales. La terminal aceptarà texto pero no ejecutara ningùn comando. Esto sucede porque el servidor se ejecuta continuamente para recibir solicitudes.
 
