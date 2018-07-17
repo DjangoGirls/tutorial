@@ -42,7 +42,7 @@ Nadalje, pokreni:
     cd djangogirls
     python3.6 -mvenv myvenv
     source myvenv/bin/activate
-    pip install django~=1.11.0
+    pip install django~={{ book.django_version }}
     
 
 (Primijeti da smo u zadnjoj liniji koristili tildu popraćenu znakom jednakosti: ~=)
