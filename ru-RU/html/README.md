@@ -41,8 +41,10 @@ HTML (от англ. "HyperText Markup Language") - язык гипертекс�
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
