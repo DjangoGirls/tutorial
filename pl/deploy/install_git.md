@@ -7,7 +7,7 @@ data-collapse=true ces-->
 
 Możesz ściągnąć Gita z [git-scm.com](https://git-scm.com/). Możesz klikać "next" we wszystkich krokach instalacji prócz jednego, w kroku nazwanym "Adjusting your PATH environment", wybierz "Use Git and optional Unix tools from the Windows Command Prompt" (dolna opcja). Poza tym domyślne ustawienia są w porządku. Upewnij się jeszcze, że w kroku "Configuring the line ending conversions" wybrana jest opcja "Checkout Windows-style, commit Unix-style line endings".
 
-Nie zapomnij zrestartować terminala wiersza poleceń lub Powershell po instalacji zakończonej sukcesem. <!--endsec-->
+Nie zapomnij zrestartować wiersza polecenia lub Powershell po instalacji zakończonej sukcesem. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->

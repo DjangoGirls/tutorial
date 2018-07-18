@@ -49,7 +49,7 @@ Ak si na Macu alebo Linuxe, zrejme uvidíš `$`, presne takto:
 {% filename %}command-line{% endfilename %}
 
     $
-    
+
 
 <!--endsec-->
 
@@ -60,7 +60,7 @@ Na Windowse je to znak `>`, takýto:
 {% filename %}command-line{% endfilename %}
 
     >
-    
+
 
 <!--endsec-->
 
@@ -81,7 +81,7 @@ Začnime tým, že zadáme nasledovný príkaz:
 {% filename %}command-line{% endfilename %}
 
     $ whoami
-    
+
 
 <!--endsec-->
 
@@ -90,7 +90,7 @@ Začnime tým, že zadáme nasledovný príkaz:
 {% filename %}command-line{% endfilename %}
 
     > whoami
-    
+
 
 <!--endsec-->
 
@@ -100,7 +100,7 @@ A stlač `enter`. Toto je výsledok:
 
     $ whoami
     olasitarska
-    
+
 
 Ako vidíš, počítač práve vypísal tvoje užívateľské meno. Milé, nie? :)
 
@@ -120,7 +120,7 @@ Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento prík
 
     $ pwd
     /Users/olasitarska
-    
+
 
 > Poznámka: 'pwd' je skratka pre 'print working directory'.
 
@@ -132,7 +132,7 @@ Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento prík
 
     > cd
     C:\Users\olasitarska
-    
+
 
 > Poznámka: 'cd' znamená 'change directory', teda zmena priečinku. V powershell môžeš použiť pwd tak ako na Linuxe alebo Mac OS X.
 
@@ -156,7 +156,7 @@ Tak čo je v ňom? Bolo by super zistiť to. Pozrime sa na to:
     Downloads
     Music
     ...
-    
+
 
 <!--endsec-->
 
@@ -171,7 +171,7 @@ Tak čo je v ňom? Bolo by super zistiť to. Pozrime sa na to:
     05/08/2014 07:28 PM <DIR>      Downloads
     05/08/2014 07:28 PM <DIR>      Music
     ...
-    
+
 
 > Poznámka: V powershelli môžeš použiť aj 'ls' ako na Linuxe alebo Mac OS X. <!--endsec-->
 
@@ -186,7 +186,7 @@ Teraz prejdime do adresára Plochy:
 {% filename %}command-line{% endfilename %}
 
     $ cd Desktop
-    
+
 
 <!--endsec-->
 
@@ -195,7 +195,7 @@ Teraz prejdime do adresára Plochy:
 {% filename %}command-line{% endfilename %}
 
     > cd Desktop
-    
+
 
 <!--endsec-->
 
@@ -207,7 +207,7 @@ Skontroluj, či sa adresár skutočne zmenil:
 
     $ pwd
     /Users/olasitarska/Desktop
-    
+
 
 <!--endsec-->
 
@@ -217,7 +217,7 @@ Skontroluj, či sa adresár skutočne zmenil:
 
     > cd
     C:\Users\olasitarska\Desktop
-    
+
 
 <!--endsec-->
 
@@ -236,7 +236,7 @@ A je to!
 {% filename %}command-line{% endfilename %}
 
     $ mkdir pokus
-    
+
 
 <!--endsec-->
 
@@ -245,7 +245,7 @@ A je to!
 {% filename %}command-line{% endfilename %}
 
     > mkdir practice
-    
+
 
 <!--endsec-->
 
@@ -269,7 +269,7 @@ Malá výzva pre teba: v čerstvo vytvorenom adresári `pokus` vytvor adresár s
     $ mkdir test
     $ ls
     test
-    
+
 
 <!--endsec-->
 
@@ -281,7 +281,7 @@ Malá výzva pre teba: v čerstvo vytvorenom adresári `pokus` vytvor adresár s
     > mkdir test
     > dir
     03/20/2016 11:05 AM <DIR>      test
-    
+
 
 <!--endsec-->
 
@@ -300,7 +300,7 @@ Najkôr sa musíme vrátiť späť na Plochu:
 {% filename %}command-line{% endfilename %}
 
     $ cd ..
-    
+
 
 <!--endsec-->
 
@@ -309,7 +309,7 @@ Najkôr sa musíme vrátiť späť na Plochu:
 {% filename %}command-line{% endfilename %}
 
     > cd ..
-    
+
 
 <!--endsec-->
 
@@ -323,7 +323,7 @@ Skontroluj, kde sa nachádzaš:
 
     $ pwd
     /Users/olasitarska/Desktop
-    
+
 
 <!--endsec-->
 
@@ -333,7 +333,7 @@ Skontroluj, kde sa nachádzaš:
 
     > cd
     C:\Users\olasitarska\Desktop
-    
+
 
 <!--endsec-->
 
@@ -346,7 +346,7 @@ Je na čase zmazať adresár `pokus`:
 {% filename %}command-line{% endfilename %}
 
     $ rm -r pokus
-    
+
 
 <!--endsec-->
 
@@ -356,7 +356,7 @@ Je na čase zmazať adresár `pokus`:
 
     > rmdir /S pous
     pokus, Are you sure <Y/N>? Y
-    
+
 
 <!--endsec-->
 
@@ -367,7 +367,7 @@ Hotovo! Uistime sa, či je to naozaj vymazané:
 {% filename %}command-line{% endfilename %}
 
     $ ls
-    
+
 
 <!--endsec-->
 
@@ -376,7 +376,7 @@ Hotovo! Uistime sa, či je to naozaj vymazané:
 {% filename %}command-line{% endfilename %}
 
     > dir
-    
+
 
 <!--endsec-->
 
@@ -389,7 +389,7 @@ Nateraz je to všetko! Môžeš pokojne zatvoriť príkazový riadok. Urobme to 
 {% filename %}command-line{% endfilename %}
 
     $ exit
-    
+
 
 <!--endsec-->
 
@@ -398,7 +398,7 @@ Nateraz je to všetko! Môžeš pokojne zatvoriť príkazový riadok. Urobme to 
 {% filename %}command-line{% endfilename %}
 
     > exit
-    
+
 
 <!--endsec-->
 
@@ -417,7 +417,7 @@ Tu je prehľad niektorých užitočných príkazov:
 | copy             | cp                      | kopíruje súbor                  | **copy c:\test\test.txt c:\windows\test.txt** |
 | move             | mv                      | presunie súbor                  | **move c:\test\test.txt c:\windows\test.txt** |
 | mkdir            | mkdir                   | vytvorí nový adresár            | **mkdir testdirectory**                           |
-| rmdir (or del)   | rm                      | vymazať súbor                   | **del c:\test\test.txt**                        |
+| del              | rm                      | vymazať súbor                   | **del c:\test\test.txt**                        |
 | rmdir /S         | rm -r                   | odstráni adresár/súbor          | **rm -r testdirectory**                           |
 
 Toto je len veľmi malá časť príkazov, ktoré môžeš spustiť vo svojom príkazovom riadku, ale dnes budeš potrebovať len tieto.

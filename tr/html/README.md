@@ -2,7 +2,7 @@
 
 Template nedir diye sorabilirsiniz.
 
-Şablon farklı bilgileri tutarlı bir formatta vermek için tekrar kullanabildiğimiz bir dosyadır - örnek olarak, bir harf yazmanıza yardım etmesi için bir şablon kullanabilirsiniz, çünkü her harfin başka bir mesaj içerebilmesi ve başka bir kişiye gönderilebilmesine rağmen aynı formatı paylaşacaklar.
+Template (şablon), farklı bilgileri hep aynı biçimde sunmak için tekrar tekrar kullanabileceğimiz bir dosyadır - örneğin, mektup yazmanıza yardımcı olan bir template kullanabilirsiniz çünkü yazacağınız tüm mektuplar farklı mesajlar içerse ve farklı kişilere gönderilse de aynı sayfa düzenine sahip olacaktır.
 
 Django şablonunun formatı HTML diye adlandırılan bir dilde tanımlıdır(ilk bölümde bahsettiğimiz HTML, **İnternet nasıl çalışır**).
 
@@ -123,9 +123,9 @@ html
             <h1><a href="/">Django Girls Blog</a></h1>
         </div>
         <div>
-            <p>yayın tarihi: 14.06.2014, 12:14</p>
-            <h2><a href="">İlk Gönderim</a></h2>
-            <p>Çok heyecanlıyım! Bu benim ilk gönderim. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. </p>
+            <p>published: 14.06.2014, 12:14</p>
+            <h2><a href="">İlk Blogum</a></h2>
+            <p>Çok heyecanlıyım! Bu benim ilk blogum. Ne kadar zevkli bir işmiş bilgisayarlarla uğraşmak. Artık bilgisayar başından kalkmam. </p>
         </div>
 
         <div>
@@ -140,7 +140,7 @@ html
 Burada üç tane `div` bölümü oluşturduk.
 
 * İlk `div` ögesi blogumuzun başlığını içerir - bu bir baş kısımdır ve bir bağlantıdır
-* Sonraki iki `div` öğesi blog gönderilerimizi içeriyor; bunlarda bir yayın tarihi, tıklanabilir bir `h2` başlığı ve biri tarih diğeri gönderi metnimiz için olmak üzere, iki tane `p` (paragraf) var.
+* Sonraki iki `div` öğesi blog gönderilerimizi içeriyor; bunlarda bir yayın tarihi (published_date), tıklanabilir bir `h2` başlığı ve biri tarih diğeri gönderi metnimiz için olmak üzere, iki tane `p` (paragraf) var.
 
 Bize yaşattığı duygu:
 
@@ -150,11 +150,11 @@ Yaşasın! Şimdiye dek, şablonumuz tam olarak sadece **aynı bilgiyi** görün
 
 Aslında yapmak istediğimiz Django yöneticimize eklenen gerçek postaları açmak - bundan sonra oraya gidiyoruz.
 
-## Birşey daha: dağıtım!
+## Bir şey daha: deployment (yayına alma) zamanı!
 
 Bunları İnternet'te canlı olarak görmek çok güzel olur, değil mi:
 
-### Kodumuzu commit ve push komutları ile GitHub'a yükleyelim
+### Kodumuzu commit ve push komutları ile Github'a yükleyelim
 
 İlk önce son deployment dan sonra hangi dosyaların değiştiğine bakalım. Bu komutları lokal bilgisayarımızda çalıştıralım, PythonAnywhere'de değil:
 
@@ -199,12 +199,14 @@ Bunu bir kez yapıp, değişikliklerimizi GitHub'a yükledik (ittik):
 
 * [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/)sayfasını ve **Bash console** u açalım (ya da yeni bir tane açalım). Sonra da çalıştıralım:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}PythonAnywhere komut satırı{% endfilename %}
 
-    $ cd ~/my-first-blog
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
+
+(Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
 
 Kodumuzun indirilmesini izleyelim. Kodun geldiğini kontrol etmek istersek **Files (dosyalar) sekme**sini açıp PythonAnywhere'de kodumuzu görebiliriz.
 

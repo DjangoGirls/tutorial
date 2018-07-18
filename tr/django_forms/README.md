@@ -1,6 +1,6 @@
 # Django Forms
 
-Blogumuzda yapmak istediğimiz son şey blog yazılarını eklemek ve düzenlemek için güzel bir yapı oluşturmak. Django'nun `admin` arayüzü çok havalı, ama özelleştirilmesi ve güzel hale getirilmesi oldukça zor. `forms` ile mutlak güce sahip olacağız – biz hayal edebileceğiniz hemen hemen her şeyi yapabilirsiniz!
+Blogumuzda yapmak istediğimiz son şey blog yazılarını eklemek ve düzenlemek için güzel bir yapı oluşturmak. Django'nun `admin` arayüzü çok havalı, ama özelleştirilmesi ve güzel hale getirilmesi oldukça zor. `forms` (formlar) ile kendi arayüzümüz üstünde mutlak bir güce sahip olacağız - neredeyse hayal ettiğimiz her şeyi yapabiliriz!
 
 Django formlarının güzel yanı, hem sıfırdan bir form tanımlayabilmemiz hem de sonuçları modele kaydedecek bir `ModelForm` oluşturabilmemizdir.
 
@@ -14,7 +14,7 @@ Django'nun diğer önemli parçaları gibi, formların da kendi dosyası var: `f
        └── forms.py
     
 
-Tamam, şimdi dosyayı açalım ve altta ki kodu yazalım:
+Tamam, hadi dosyayı açalım ve aşağıdaki kodu yazalım:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -32,11 +32,11 @@ class PostForm(forms.ModelForm):
 
 Önce Django formları (`from django import forms`) ve tabii ki `Post` modelimizi içe aktarmalıyız (`from .models import Post`).
 
-`PostForm`, tahmin etmiş olabileceğiniz gibi, formumuzun ismi. Django'ya bu formun `ModelForm` olduğunu söylemeliyiz ( dolayısı ile Django bizim için biraz büyü yapacak) - `forms.ModelForm` bunun için sorumludur.
+`PostForm`, tahmin etmiş olabileceğiniz gibi, formumuzun ismi. Django'ya bu formun bir `ModelForm` olduğunu belirtmeliyiz. Bunu `forms.ModelForm` sayesinde Django bizim için yapacaktır.
 
 Sırada Django'ya bu formu (`model = Post`) oluşturmak için hangi modelin kullanılması gerektiğini anlattığımız `class Meta` var).
 
-Son olarak, formumuzda hangi alan(lar)ın bulunması gerektiğini söyleyebiliriz. Bu senaryoda sadece `başlık` ve `metin` ortaya çıkmasını istiyoruz – `yazar` şu anda giriş yapmış kişi olmalıdır (siz!) ve `oluşturulma_tarihi` bir gönderi oluşturduğumuzda otomatik olarak ayarlanmalıdır (örneğin kod), değil mi?
+Son olarak, formumuzda hangi alan(lar)ın bulunması gerektiğini söyleyebiliriz. Bu senaryoda sadece `title` ve `text` alanlarının gösterilmesini istiyoruz - `author` şu anda giriş yapmış olması gereken kişidir (yani siz!) ve biz ne zaman yeni bir yazı oluşturursak `created_date` otomatik olarak (örn. kod içinde) ayarlanmalıdır, değil mi?
 
 Ve hepsi bu kadar! Şimdi tek yapmamız gereken formu bir *view* içinde kullanıp, template (şablon) içinde göstermek.
 
@@ -59,8 +59,8 @@ Satırı ekledikten sonra, HTML dosyanız bu şekilde görünmelidir:
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
 ```html
-{% load static %}
-<html>
+{% load staticfiles %}
+< html>
     <head>
         <title>Django Girls blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -422,7 +422,7 @@ Yüksek olasılıkla login yapmış olduğunuz için sayfayı yenilediğinizde f
 
 Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
 
-* İlk önce kodumuzu commit edelim, sonra GitHub'a push edelim:
+* İlk önce kodumuzu commit edelim, sonra Github'a push edelim:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -437,11 +437,13 @@ Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
 
 {% filename %}komut-satırı{% endfilename %}
 
-    $ cd ilk-blogum
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
     
 
+(Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
+
 * Nihayet, [Web tab](https://www.pythonanywhere.com/web_app_setup/) ına gidip **Reload** edelim.
 
-O kadar! Tebrikler :)
+İşte bu kadar! Tebrikler :)

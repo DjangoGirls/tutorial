@@ -20,7 +20,7 @@ Chceme otvoriť Python konzolu, takže napíšte `python` na Windowse alebo `pyt
     Python 3.6.1 (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
-    
+
 
 ## Váš prvý príkaz v Pythone!
 
@@ -61,7 +61,7 @@ Ako vidíte, Python je dobrá kalkulačka. A ak ste zvedaví, čo všetko vie e�
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ola" 
+>>> "Ola"
 "Ola"
 ```
 
@@ -72,7 +72,7 @@ Reťazce možno spájať dohromady. Skús toto:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ahoj" + "Ola" 
+>>> "Ahoj" + "Ola"
 'Ahoj Ola'
 ```
 
@@ -81,7 +81,7 @@ Reťazce môžete násobiť aj s číslom:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ola" * 3 
+>>> "Ola" * 3
 'OlaOlaOla'
 ```
 
@@ -92,7 +92,7 @@ Použitím dvojitých úvodzoviek:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Runnin' down the hill" 
+>>> "Runnin' down the hill"
 "Runnin' down the hill"
 ```
 
@@ -101,7 +101,7 @@ alebo pomocou spätného lomítka - tento znak (ak je napísaný pred úvodzovko
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> 'Runnin\' down the hill' 
+>>> 'Runnin\' down the hill'
 "Runnin' down the hill"
 ```
 
@@ -110,7 +110,7 @@ Pekné, hm? Ak chcete vidieť svoje meno veľkými písmenami, jednoducho zadajt
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Ola".upper() 
+>>> "Ola".upper()
 'OLA'
 ```
 
@@ -121,7 +121,7 @@ Ak chcete poznať počet písmen, ktoré sú obsiahnuté vo vašom mene, tak na 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len("Ola") 
+>>> len("Ola")
 3
 ```
 
@@ -439,10 +439,10 @@ Na odstránenie položky zo slovníka môžeš použiť metódu `pop()`. Naprík
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> participant.pop('favorite_numbers')
+>>> ucastnicka.pop('oblubene_cisla')
 [7, 42, 92]
->>> participant
-{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+>>> ucastnicka
+{'meno': 'Ola', 'krajina': 'Slovensko', 'oblubeny_jazyk': 'Python'}
 ```
 
 Ako vidíš z výstupu, pár kľúč-hodnota zodpovedajúci kľúču 'oblubene_cisla' bol vymazaný.
@@ -630,7 +630,7 @@ Na Macu bude príkaz vyzerať takto:
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
-    
+
 
 <!--endsec-->
 
@@ -642,7 +642,7 @@ Na Linuxe to bude takto (slovo "Desktop" bude možno preložené):
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
-    
+
 
 <!--endsec-->
 
@@ -653,7 +653,7 @@ Vo Windowse v Command Prompt, to bude takto:
 {% filename %}command-line{% endfilename %}
 
     > cd %HomePath%\Desktop
-    
+
 
 <!--endsec-->
 
@@ -664,7 +664,7 @@ A vo Windows Powershell bude príkaz vyzerať takto:
 {% filename %}command-line{% endfilename %}
 
     > cd $Home\Desktop
-    
+
 
 <!--endsec-->
 
@@ -676,7 +676,7 @@ Teraz použi Python na spustenie kódu v súbore:
 
     $ python3 python_intro.py
     Hello, Django girls!
-    
+
 
 Poznámka na Windowse python3 príkaz neexistuje. Použi python na spustenie súboru:
 
@@ -710,7 +710,7 @@ Ak to uložíš a spustíš, dostaneš túto chybu:
     File "python_intro.py", line 2
              ^
     SyntaxError: unexpected EOF while parsing
-    
+
 
 Python očakáva, že od nás dostane ďalšie inštrukcie, ktoré majú byť vykonané ak je podmienka `3 > 2` pravdivá (teda ak bude mať hodnotu `True`). Skúsme zariadiť, aby Python napísal "Funguje to!". Zmeň svoj kód v súbore **python_intro.py** takto:
 
@@ -753,7 +753,7 @@ Keď to spustíš, vypíše to:
 
     $ python3 python_intro.py
     5 je naozaj viac ako 2
-    
+
 
 Ak by 2 bolo väčšie ako 5, spustil by sa druhý príkaz. Jednoduché, nie? Pozrime sa, ako funguje `elif`:
 
@@ -775,7 +775,7 @@ a po spustení:
 
     $ python3 python_intro.py
     Ahoj Sonja!
-    
+
 
 Všimla si si, čo sa stalo? `elif` ti dovolí pridať dodatočné podmienky, ktoré sa spustia, ak sú predchádzajúce nesplnené.
 
@@ -805,7 +805,7 @@ Python prejde všetkými podmienkami v poradí a vypíše:
 
     $ python3 python_intro.py
     Super, pocujem vsetky detaily
-    
+
 
 ## Komentáre
 
@@ -865,7 +865,7 @@ Spusťme to a pozrime sa, čo sa stane:
     $ python3 python_intro.py
     Ahoj!
     Ako sa mas?
-    
+
 
 Poznámka: Ak nefunguje, nepanikár! Výstup ti pomôže zistiť dôvod, prečo:
 
@@ -906,7 +906,7 @@ Zapamätaj si: Funkcia `print` je odsadená o 4 medzery vo vnútri príkazu `if`
     File "python_intro.py", line 10, in <module>
       hi()
     TypeError: hi() missing 1 required positional argument: 'meno'
-    
+
 
 Ups, chyba. Našťastie Python nám dáva vcelku užitočnú chybovú hlášku. Hovorí nám, že funkcia `hi()` (tá, čo sme definovali) má jeden povinný argument (s názvom `meno`) a že sme mu ju zabudli zadať pri volaní funkcie. Opravme to na konci súboru:
 
@@ -922,7 +922,7 @@ A znova ho spusti:
 
     $ python3 python_intro.py
     Ahoj Ola!
-    
+
 
 A čo ak zmeníme meno?
 
@@ -938,14 +938,14 @@ A spustíme to:
 
     $ python3 python_intro.py
     Ahoj Sonja!
-    
+
 
 No a čo si myslíš, čo sa stane, ak tam napíšeš iné meno? (Nie Ola ani Sonja). Vyskúšaj a uvidíš, či bol tvoj predpoklad správny. Malo by ti vypísať toto:
 
 {% filename %}command-line{% endfilename %}
 
     Ahoj neznáma!
-    
+
 
 Úžasné, nie? Vďaka tomu nemusíš prepisovať dokola to isté zakaždým, keď chceš zmeniť meno osoby, ktorú má funkcia pozdraviť. A to je presne dôvod, prečo potrebujeme funkcie - aby sme nemuseli opakovať svoj kód!
 
@@ -966,7 +966,7 @@ Teraz spusťme kód:
 
     $ python3 python_intro.py
     Ahoj Katka!
-    
+
 
 Gratulujeme! Práve si sa naučila ako sa píšu funkcie! :)
 
@@ -1025,7 +1025,7 @@ A keď to spustíme:
     Dalsie dievca
     Ahoj Ty!
     Dalsie dievca
-    
+
 
 Ako vidíš, všetko, čo dáš do príkazu `for` s oddsadením sa bude opakovať pre každý prvok zoznamu `dievcata`.
 
@@ -1047,7 +1047,7 @@ for i in range(1, 6):
     3
     4
     5
-    
+
 
 `range` je funkcia, ktorá vytvára zoznam čísel s postupnosťou čísel (krajné čísla funkcii poskytneš ako parametre).
 

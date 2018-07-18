@@ -12,7 +12,7 @@ Na jedną rzecz będziesz musiała uważać: Podczas instalacji zauważysz ekran
 
 ![Nie zapomnij dodać Pythona do ścieżki systemowej (ang. Path)](../python_installation/images/python-installation-options.png)
 
-W nadchodzących krokach, będziesz używać "Wiersz poleceń" Windowsa (o której też Ci zaraz opowiemy). Na teraz, jeżeli będziesz musiała wpisać jakiekolwiek polecenie, przejdź do menu Start → System → Wiersz polecenia. Możesz też przytrzymać klawisz Windows i nacisnąć "R" - pojawi się Tobie okno "Uruchamianie". W celu otworzenia Wiersza polecenia, wpisz "cmd" i wciśnij przycisk enter w oknie "Uruchamianie". (Na nowszych wersjach Windowsa możesz być zmuszona by wyszukać "Wiersz polecenia", ponieważ może być on ukryty.)
+W nadchodzących krokach, będziesz używać "Wiersza polecenia" Windowsa (o którym też Ci zaraz opowiemy). Na tę chwilę, jeżeli potrzebujesz wykonać jakąś komendę, przejdź do menu Start i wpisz "Wiersz polecenia" w pole wyszukiwania. (Na starszych wersjach Windowsa możesz uruchomić "Wiersz polecenia" wyszukując w menu Start → System → Wiesz polecenia.) Możesz też przytrzymać klawisz Windows wciskając jednocześnie przycisk "R" do momentu pojawienia się okna "Uruchamianie". W celu otworzenia Wiersza polecenia, wpisz "cmd" i wciśnij przycisk enter w oknie "Uruchamianie".
 
 ![Wpisz "cmd" w oknie "Uruchom""](../python_installation/images/windows-plus-r.png)
 
@@ -91,7 +91,7 @@ Użyj następującego polecenia w konsoli:
 
 <!--endsec-->
 
-Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz wiersz poleceń i uruchom polecenie `python3`:
+Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz wiersz polecenia i uruchom polecenie `python3`:
 
 {% filename %}command-line{% endfilename %}
 

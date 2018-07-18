@@ -45,16 +45,16 @@ Sonra, çalıştır:
     pip install django~=1.11.0
     
 
-(son satırda bir tılde ve eşitlik işareti kullandığımıza dikkat edin: ~=).
+(son satırda bir tilde ve eşitlik işareti kullandığımıza dikkat edin: ~=).
 
 ### GitHub
 
-Bir [GitHub](https://github.com) hesabı açın.
+Bir [Github](https://github.com) hesabı açın.
 
 ### PythonAnywhere
 
 Django Girls eğitimi, yeni web uygulamanızı güçlendiren ve onu herkesin görebileceği şekilde herkes tarafından erişilebilen bir bilgisayara (sunucu olarak adlandırılır) taşıyan bir kod olan Deployment (Dağıtım) adlı bir bölümü içerir.
 
-Kılavuzu Chromebook üzerinden kullanırken bu bölüm biraz garip oluyor; zaten internet üzerindeki bir bilgisayar kullanılıyor (laptop dışında). Bununla birlikte, Cloud 9'u çalışma alanımız olarak veya "devam etmekte" olan işlerimizin bulunduğu bir yer olarak düşünebiliriz Python Anywhere de işlerimizi daha eksiksiz hale getirmek için gösterebileceğimiz bir yer olarak düşünebildiğimizden hala kullanışlıdır.
+Kılavuzu Chromebook üzerinden kullanırken bu bölüm biraz garip oluyor; zaten internet üzerindeki bir bilgisayar kullanılıyor (laptop dışında). Bununla birlikte, Cloud 9'u çalışma alanımız veya "devam etmekte" olan işlerimizin bulunduğu bir yer olarak, Python Anywhere'i de işlerimizi daha eksiksiz hale getirdiğimizde gösterebileceğimiz bir yer olarak düşündüğümüzde hala kullanışlıdır.
 
 Bu nedenle, yeni bir Python Anywhere hesabı açmak için [www.pythonanywhere.com](https://www.pythonanywhere.com).

@@ -25,7 +25,7 @@ Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gib
 {% load static %}
 <html>
     <head>
-        <title>Django Girls Blog</title>
+        <title>Django Girls blog</title>
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
         <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
         <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>

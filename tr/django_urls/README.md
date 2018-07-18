@@ -1,14 +1,14 @@
 # Django URL'leri
 
-İlk web sayfamızı kurmak üzereyiz: bloğun için bir ana sayfa! Ama öncelike, Django URL'leri hakkında biraz bilgi edinelim.
+İlk web sayfamızı yapmak üzereyiz: blogunuzun anasayfası! Ama önce, biraz Django url'lerini öğrenmeye başlayalım.
 
 ## URL nedir?
 
-URL basitçe bir web adresidir. Her defasında bir web sitesini ziyaret ettiğinde bir URL görürsün. Tarayıcının adres çubuğunda görünmektedir. (Evet! `127.0.0.1:8000` bir URL'dir! Ve`https://djangogirls.org`'da bir URL'dir)
+URL basitçe bir web adresidir. Her defasında bir web sitesini ziyaret ettiğinde bir URL görürsün. Tarayıcının adres çubuğunda görünmektedir. (Evet! `127.0.0.1:8000` bir URL'dir! Ve `https://djangogirls.org` da bir URL'dir)
 
 ![Url](images/url.png)
 
-Internetteki her sayfanın kendi URL'si olması gerekir. Bu yolla uygulama URl'yi açan kullanıcaya ne göstemesi gerektiğini bilir. Django'da `URLconf` (URL konfigürasyonu) denilen bir şey kullanıyoruz. URLconf Django'nun doğru görünümü bulmak için istenen URL ile eşleştirmeyi deneyeceği desenler dizinidir.
+İnternetteki her sayfanın kendi URL'si olması gerekir. Böylelikle bir URL açıldığında uygulama ne göstermesi gerektiğini bilir. Django'da `URLconf` (URL konfigürasyonu) denilen bir şey kullanıyoruz. URLconf Django'nun doğru görünümü (view) bulmak için istenen URL ile eşleştirmeyi deneyeceği desenler dizinidir.
 
 ## URL'ler Django'da nasıl çalışır?
 
@@ -29,11 +29,11 @@ urlpatterns = [
 ]
 ```
 
-Gördüğünüz gibi, Django çoktan bizim için buraya bir şey yerleştirmiş.
+Gördüğünüz gibi Django bu dosyaya bizim için bir şeyler koymuş bile.
 
 Üçlü tırnaklar (`'''` or `"""`) arasındaki satırlara docstrings denir - bunları bir dosyanın, sınıfın ya da metodun en üstüne ne yaptıklarını anlatmak için yazabilirsiniz. Python bunları çalıştırmaz.
 
-Önce ki bölümde ziyaret ettğiniz yönetici URL'si şimdiden burada:
+Önceki bölümde gördüğümüz yönetici URL'si burada:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,11 +41,11 @@ Gördüğünüz gibi, Django çoktan bizim için buraya bir şey yerleştirmiş.
     url(r'^admin/', admin.site.urls),
 ```
 
-Bu satırın anlamı Django, `admin` ile başlayan her URL için ona uyan bir *view* bulur demektir. Bu durumda bir sürü admin URLlerini dahil ediyoruz yani hepsi bu küçük dosyada sıkıştırılmış olarak durmuyor - bu şekil daha okunaklı ve düzenli.
+Bu satırın anlamı Django, `admin` ile başlayan her URL için ona uyan bir *view* bulur demektir. Bu durumda bir sürü yönetici URL'lerini ekliyoruz, böylece hepsi bu küçük dosyanın içinde sıkıştırılmış bir şekilde durmuyor -- bu hali daha okunabilir ve düzenli.
 
 ## Regex (Kurallı İfade)
 
-Django'nun URL'leri view'larla nasıl eşleştirdiğini merak ediyor musunuz? Bu kısım biraz karışık. Django bunun için `regex` kullanıyor. Regex, "regular expressions"ın kısaltılmış hali ve düzenli ifadeler anlamına geliyor. Regex'in bir arama kalıbı oluşturmak için birçok (birçok!) kuralı var. Regexler ileri bir konu olduğu için nasıl çalıştığının detayına girmeyeceğiz.
+Django'nun URL'leri view'larla nasıl eşleştirdiğini merak ediyor musunuz? Bu kısım biraz karışık. Django bunun için `regex` kullanıyor. Regex, "regular expressions"ın kısaltılmış hali ve düzenli ifadeler anlamına geliyor. Regex'in bir arama kalıbı oluşturmak için birçok (birçok!) kuralı var. Regex'ler ileri bir konu olduğu için nasıl çalıştığının detayına girmeyeceğiz.
 
 Gene de kalıpları nasıl oluşturduğumuzu anlamak isterseniz, aşağıdaki bir örnek var - aradığımız kalıbı oluşturmak için kuralların sadece bir kısmına ihtiyacımız olacak, şöyle:
 
@@ -61,7 +61,7 @@ URL tanımındaki diğer her şey tamamen ele alınacaktır.
 
 Her gönderi için ayrı bir view yazmak gerçekten can sıkıcı olurdu. Düzeni ifadelerle, URL ile eşleşen ve bizim için gönderi numarasını çıkaran bir desen yaratabiliriz: `^post/(\d+)/$`. Şimdi bunu, burada ne yaptığımızı görebilmek için parçalarına ayıralım:
 
-* **^post/** Django'ya urldeki `post/` ile başlayan her şeyi almasını söylüyor. (`^` 'dan hemen sonra)
+* **^post/** Django'ya URL'deki `post/` ile başlayan her şeyi almasını söylüyor. (`^` 'dan hemen sonra)
 * **(\d+)** ise bir sayı (birden fazla rakam) olduğunu ve bu sayıyı yakalamak ve çıkarmak istediğimizi belirtiyor
 * **/** ise Django'ya arkasından bir `/` karakteri gelmesi gerektiğini söylüyor
 * **$** ise URL'nin sonuna işaret ediyor, yani sadece sonu `/` ile biten string'ler bu kalıpla eşleşecek
@@ -89,7 +89,7 @@ urlpatterns = [
 ]
 ```
 
-Django artık 'http://127.0.0.1:8000/'ye gelen her şeyi `blog.urls`'ya yönlendirecek ve ordaki yönergelere bakacak.
+Django artık 'http://127.0.0.1:8000/' adresine gelen her şeyi `blog.urls`'ya yönlendirecek ve ordaki yönergelere bakacak.
 
 Python'da düzenli ifade yazarken her zaman string (dize)'den önce `r` eklenir. Bu Python için string'in özel karakterler içerdiğini, doğrudan Python için değil düzenli ifadeler için bir string olduğu konusunda ipucu verir.
 

@@ -137,9 +137,9 @@ Twój kod jest teraz na GitHubie. Możesz to sprawdzić! Znajdujesz się teraz w
 
 ## Konfigurowanie naszej strony w PythonAnywhere
 
-Wróć do głównego panelu [PythonAnywhere Dashboard](https://www.pythonanywhere.com/), klikając logo i wybierz opcję uruchomienia konsoli "Bash" - jest to wersja wiersza poleceń PythonAnywhere, podobnie jak na Twoim komputerze.
+Wróć do głównego panelu [PythonAnywhere Dashboard](https://www.pythonanywhere.com/), klikając logo i wybierz opcję uruchomienia konsoli "Bash" - jest to wersja wiersza polecenia PythonAnywhere, podobnie jak na Twoim komputerze.
 
-![Wybierz Bash w sekcji New Console](images/pythonanywhere_bash_console.png)
+![Sekcja 'New Console' na stronie PythonAnywhere z przyciskiem 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Uwaga** PythonAnywhere jest oparty na Linuksie, więc jeśli pracujesz na Windowsie, to konsola będzie wyglądać trochę inaczej, niż na Twoim komputerze.
 
@@ -196,7 +196,7 @@ Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudow
 
 Twoja strona powinna teraz być dostępna w publicznym Internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się nim z kimkolwiek chcesz :)
 
-> **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt lub rozpocząć nowy projekt, należy przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/), aby uzyskać jakieś wskazówki dotyczące zabezpieczania witryny.
+> **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt lub rozpocząć nowy, powinnaś przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/), aby uzyskać jakieś wskazówki dotyczące zabezpieczania witryny.
 
 ## Porady dotyczące debugowania
 
