@@ -67,7 +67,7 @@ urlpatterns = [
 
 これでDjangoは'http://127.0.0.1:8000/'に来たリクエストは `blog.urls` へリダイレクトするようになり、それ以降はそちらを参照するようになります。
 
-## blog.urls
+## blog のURL
 
 `blog` ディレクトリの下に、新しく `urls.py` という空のファイルを作って下さい。そして最初の2行を以下のように書きます：
 
@@ -90,9 +90,9 @@ urlpatterns = [
 ]
 ```
 
-見てのとおり、`post_list` という名前の `ビュー` をルートURLに割り当てています。 このURLパターンは空の文字列に一致し、DjangoのURL名解決はフルパスの前半にくっつくドメイン名（つまり、http://127.0.0.1:8000/ の部分）を無視します。 This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+見てのとおり、`post_list` という名前の `ビュー` をルートURLに割り当てています。 このURLパターンは空の文字列に一致し、DjangoのURL名前解決はフルパスの前半にくっつくドメイン名（つまり、http://127.0.0.1:8000/ の部分）を無視します。 このパターンは誰かがあなたのWebサイトの 'http://127.0.0.1:8000/' というアドレスにアクセスしてきたら `views.post_list` が正しい行き先だということをDjangoに伝えます。
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+最後の `name='post_list'` は、ビューを識別するために使われるURL の名前です。 これはビューと同じ名前にすることもできますが、全然別の名前にすることもできます。 We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
 If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
