@@ -42,13 +42,13 @@ Füge folgenden Text in deine Template-Datei ein:
 ```html
 <html>
 <body>
-    <p>Hi there!</p>
-    <p>It works!</p>
+    <p>Halli-Hallo!</p>
+    <p>Es funktioniert!</p>
 </body>
 </html>
 ```
 
-Hat sich die Seite geändert? Sieh nach: http://127.0.0.1:8000/
+Hat sich die Seite geändert? Besuche http://127.0.0.1:8000/ um nachzusehen.
 
 ![Abbildung 11.2](images/step3.png)
 
@@ -74,11 +74,11 @@ For example, you can put a web page title element inside the `<head>`, like this
 ```html
 <html>
     <head>
-        <title>Ola's blog</title>
+        <title>Olas Blog</title>
     </head>
     <body>
-        <p>Hi there!</p>
-        <p>It works!</p>
+        <p>Halli-Hallo!</p>
+        <p>Es funktioniert!</p>
     </body>
 </html>
 ```
@@ -87,27 +87,27 @@ Speichere die Datei und aktualisiere die Seite im Browser.
 
 ![Abbildung 11.3](images/step4.png)
 
-Der Titel "Ola's blog" wird nun im Browser angezeigt. Hast du es bemerkt? Der Browser hat `<title>Ola's blog</title>` interpretiert und in die Titelleiste übernommen (dieser Titel wird auch in den Lesezeichen usw. verwendet).
+Der Titel "Olas Blog" wird nun im Browser angezeigt. Hast du es bemerkt? Der Browser hat `<title>Olas Blog</title>` interpretiert und in die Titelleiste übernommen (dieser Titel wird auch in den Lesezeichen usw. verwendet).
 
 Wie du vielleicht bemerkt hast, hat jedes Element zu Beginn einen öffnenden Tag und einen zugehörigen *schließenden Tag* mit `/` und die Elemente sind darin *eingebettet*. Ein Tag in einem zweiten kann nicht außerhalb von diesem geschlossen werden, die Reihenfolge muss immer stimmen.
 
 Es ist wie Sachen in Kisten stecken. In die größte Box: `<html></html>` kommt eine kleinere Box: `<body></body>`, und dort wiederum packen wir viele kleine Kisten hinein: </code>`&lt;p&gt;&lt;/p&gt;</0>.</p>
 
-<p>You need to follow these rules of <em>closing</em> tags, and of <em>nesting</em> elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.</p>
+<p>Die Regeln und Reihenfolgen von <em>schließenden</em> Tags und <em>Verschachtelung</em> der Elemente musst du immer einhalten. Anderenfalls können Browser die Seite nicht richtig interpretieren und darstellen.</p>
 
 <h2>Dein Template anpassen</h2>
 
 <p>Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier sind ein paar nützliche Tags dafür:</p>
 
 <ul>
-<li><code><h1>A heading</h1>` for your most important heading</li> 
+<li><code><h1>Überschrift</h1>` (headline) für wichtigste Überschriften</li> 
 
 * `<h2>Unter-Überschrift</h2>` die nächst tiefere Überschiftenebene
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
+* `<h3>Unter-Unter-Überschrift</h3>` ... und so weiter bis `<h6>`
+* `<p>Ein Fliesstext-Absatz</p>`
 * `<em>Text</em>` hebt deinen Text hervor
-* `<strong>Text</strong>` macht deinen Text fett
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<strong>Text</strong>` hebt deinen Text stark hervor
+* `<br>` fängt eine neue Zeile an (du kannst nichts in das br schreiben und es gibt keinen schließenden Tag)
 * `<a href="https://djangogirls.org">link</a>` erstellt einen Link
 * `<ul><li>Erster Punkt</li><li>second item</li></ul>` generiert eine Liste so wie diese hier!
 * `<div></div>` definiert einen Abschnitt auf einer Seite</ul> 
@@ -143,14 +143,14 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
 Wir haben hier drei verschiedene `div` Abschnitte erstellt.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Das erste `div` Element enthält den Titel unseres Blogs – eine Überschrift und einen Link
+* Zwei weitere `div` Elemente beinhalten unsere Blogposts und ein Publikationsdatum, `h2` mit dem Titel des Posts und zwei `p` (paragraph) Tags mit Text, eines für das Datum und eines für den Blogpost.
 
 Wir bekommen das Folgende:
 
 ![Abbildung 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay! Bis jetzt zeigt unser Template aber immer genau die **gleichen Inhalte** – obwohl wir aber vorhin davon gesprochen haben, dass Templates uns erlauben, **verschiedene** Informationen im **gleichen Format** darzustellen.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
@@ -167,7 +167,7 @@ Lass uns nachsehen, welche Dateien sich nach dem letzten Veröffentlichen (Deplo
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Stelle sicher, dass du im `Djangogirls` Verzeichnis bist und sag `git`, dass alle Änderungen in diesem Verzeichnis hinzugefügt werden sollen:
 
 {% filename %}command-line{% endfilename %}
 
