@@ -161,24 +161,24 @@ Bevor wir damit loslegen, sollten wir jedoch sicherstellen, dass wir die neuste 
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Pakete mittels requirements-Datei installieren
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Eine requirements-Datei enthält eine Liste von Abhängigkeiten, die von `pip install` installiert werden sollen:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder:
+Erstelle zuerst eine Datei namens `requirements.txt` im Verzeichnis `djangogirls/`:
 
     djangogirls
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Schreibe in die Datei `djangogirls/requirements.txt` folgenden Text:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django=={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Führe nun `pip install -r requirements.txt` aus, um Django zu installieren.
 
 {% filename %}command-line{% endfilename %}
 
