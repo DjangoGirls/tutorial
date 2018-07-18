@@ -4,11 +4,11 @@
 
 ## Что такое URL-адрес?
 
-URL — это просто адрес в интернете. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` это URL-адрес! And `https://djangogirls.org` is also a URL.)
+URL — это просто адрес в интернете. Ты можешь видеть URL каждый раз при посещении веб-сайта - он отображается в адресной строке. (Да! `127.0.0.1:8000` это URL-адрес! И `https://djangogirls.org` — тоже URL.)
 
 ![URL-адрес](images/url.png)
 
-Любая страница в Интернете нуждается в собственном URL-адресе. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Любая страница в Интернете нуждается в собственном URL-адресе. Таким образом, ваше приложение знает, что оно должно показать пользователю, который открывает этот URL-адрес. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## Как URL-адреса работают в Django?
 
