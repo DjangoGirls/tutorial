@@ -39,8 +39,7 @@ Führe dann die folgenden Befehle aus:
 {% filename %}Cloud 9{% endfilename %}
 
     mkdir djangogirls
-    cd djangogirls
-    python3.6 -mvenv myvenv
+    cd djangogirls python3.6 -mvenv myvenv
     source myvenv/bin/activate
     pip install django~={{ book.django_version }}
     
