@@ -370,7 +370,7 @@ Ok, 動作確認しましょう。 post_detail ページにいきます。そこ
 
 おめでとう！アプリケーションが完成しました。
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Djangoのフォームについてもっと知りたい場合、Django Projectのドキュメントを読んでください: https://docs.djangoproject.com/ja/2.0/topics/forms/
 
 ## セキュリティ
 
