@@ -162,24 +162,24 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Requirementsファイルによってパッケージをインストールする
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Requirementsファイルは`pip install`でインストールするためのパケッケージリストが記載されているファイルです:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder:
+最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります:
 
     djangogirls
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+`djangogirls/requirements.txt` ファイル中に以下のテキストを追加します:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django=={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+そして、`pip install -r requirements.txt` を実行してDjangoをインストールします。
 
 {% filename %}command-line{% endfilename %}
 
@@ -216,4 +216,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+以上です！あなたは（ついに）Djangoアプリケーションを作成する準備が整いました！
