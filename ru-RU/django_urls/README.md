@@ -1,6 +1,6 @@
 # Django URLs
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+Мы собираемся создать нашу первую веб-страницу: домашнюю страницу для вашего блога! Но сначала давайте немного узнаем о URL-адресах Django.
 
 ## Что такое URL-адрес?
 
