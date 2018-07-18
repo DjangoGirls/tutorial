@@ -70,9 +70,9 @@ urlpatterns = [
 
 `post/<int:pk>/` の部分はURLパターンを指定しています。それについて説明しましょう:
 
-- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the url.
+- `post/` は単純にURLが **post** に続けて **/** で始まることを意味します。ここまでは順調ですね。
+- `<int:pk>` – この部分はトリッキーです。これはDjangoは整数の値を期待し、`pk`という名前の変数がビューに渡されることを意味しています。
+- `/` – それからURLの最後に再び **/** が必要です。
 
 つまり、ブラウザに`http://127.0.0.1:8000/post/5/`を入力すると、Djangoは*view*を探していると理解します。`post_detail`に移動し、`pk`が`5`と同じ情報をその*view*に転送します。
 
