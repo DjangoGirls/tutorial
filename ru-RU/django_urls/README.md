@@ -8,7 +8,7 @@ URL — это просто адрес в интернете. Ты можешь 
 
 ![URL-адрес](images/url.png)
 
-Любая страница в Интернете нуждается в собственном URL-адресе. Таким образом, ваше приложение знает, что оно должно показать пользователю, который открывает этот URL-адрес. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Любая страница в Интернете нуждается в собственном URL-адресе. Таким образом, ваше приложение знает, что оно должно показать пользователю, который открывает этот URL-адрес. В Django, мы используем кое-что под названием `URLconf` (URL configuration). URLconf — это набор шаблонов, которые Django попробует сопоставить с полученным URL, чтобы выбрать правильный метод для отображения (view).
 
 ## Как URL-адреса работают в Django?
 
@@ -29,7 +29,7 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+Как можешь заметить, Django уже кое-что разместил здесь для нас.
 
 Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. Интерпретатор Python пропустит их при выполнении скрипта.
 
