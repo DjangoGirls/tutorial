@@ -1,4 +1,4 @@
-Chromebookをお持ちでない場合は、[このセクションをスキップ](http://tutorial.djangogirls.org/en/installation/#install-python) できます。 もし利用していれば、普通のインストールの作業とは少し異なります。 インストール手順の残りの部分は無視できます。
+Chromebookをお持ちでない場合は、[このセクションをスキップ](http://tutorial.djangogirls.org/en/installation/#install-python) できます。 もし利用している場合は、普通のインストールの作業とは少し異なります。 インストール手順の残りの部分は無視できます。
 
 ### Cloud 9
 
@@ -7,8 +7,8 @@ Chromebookをお持ちでない場合は、[このセクションをスキップ
 1. [Chrome ウェブストア](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)から Cloud 9 を インストールする
 2. [C9.io](https://c9.io) に行く
 3. アカウントにサインアップします
-4. *作成新しいワークスペース*をクリック
-5. 名前はdjango-girlsとします
+4. *新しいワークスペースを作成*をクリック
+5. 名前は*django-girls*とします
 6. *Blank*を選択(下の行の右側から 2 番目のオレンジ色のロゴ)
 
 サイドバーとインターフェイス、大きなメインウィンドウ テキスト、下部に小さなウィンドウがあり、次のように見えると思います。
