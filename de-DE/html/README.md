@@ -67,7 +67,7 @@ Jede HTML-Seite gliedert sich in zwei Teile: **head** und **body**.
 
 Im `<head>` informieren wir den Browser über Einstellungen und Konfigurationen der Webseite, z.B. wie sie dargestellt werden soll, und im `<body>` darüber, was tatsächlich dargestellt werden soll.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+In den `<head>` können wir z.B. noch den Titel (title) der Seite mit aufnehmen:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -112,7 +112,7 @@ Es ist wie Sachen in Kisten stecken. In die größte Box: `<html></html>` kommt 
 * `<ul><li>Erster Punkt</li><li>second item</li></ul>` generiert eine Liste so wie diese hier!
 * `<div></div>` definiert einen Abschnitt auf einer Seite</ul> 
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Hier ist ein vollständiges Beispiel eines Templates. Kopiere es und füge es in `blog/templates/blog/post_list.html` ein:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -152,13 +152,13 @@ Wir bekommen das Folgende:
 
 Yaaay! Bis jetzt zeigt unser Template aber immer genau die **gleichen Inhalte** – obwohl wir aber vorhin davon gesprochen haben, dass Templates uns erlauben, **verschiedene** Informationen im **gleichen Format** darzustellen.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Eigentlich wollen wir richtige Posts anzeigen, die in unserer Django Admin Oberfläche hinzugefügt wurden – und das wollen wir als Nächstes tun.
 
 ## Noch eine Sache: Deployment!
 
 Es wäre gut, das alles live draußen im Internet zu sehen, oder? Lass uns noch eine PythonAnywhere-Anwendung erstellen:
 
-### Commit, and push your code up to GitHub
+### Committe und pushe deinen Code auf GitHub
 
 Lass uns nachsehen, welche Dateien sich nach dem letzten Veröffentlichen (Deployment) geändert haben. (Führe diese Befehle lokal aus und nicht auf PythonAnywhere):
 
@@ -174,7 +174,7 @@ Stelle sicher, dass du im `Djangogirls` Verzeichnis bist und sag `git`, dass all
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Denk auch daran (Kapitel 3), dass `.` das aktuelle Verzeichnis meint.
+> **Beachte:** `--all` bedeutet, dass `git` auch Dateien berücksichtigt, die du gelöscht hast (in der Standardeinstellung werden nur neue/geänderte Dateien hinzugefügt). Denk auch daran (Kapitel 3), dass `.` das aktuelle Verzeichnis meint.
 
 Bevor wir alle Dateien hochladen prüfen wir noch einmal, was `git` hochladen will (alle Dateien, die `git` hochladen wird, sind jetzt grün):
 
@@ -192,7 +192,7 @@ Fast fertig, wir sagen nun noch, dass diese Änderung in der Verlaufsübersicht 
 
 > **Beachte:** Du musst Anführungszeichen um den Commit-Kommentar setzen.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+Nachdem wir das gemacht haben, laden (push) wir unsere Änderungen auf GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -205,14 +205,14 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<dein pythonanywere-Benutzername>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Denke daran &lt;dein pythonanywere-Benutzername> durch deinen PythonAnywhere-Benutzernamen zu ersetzen - ohne spitze Klammern).
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+Schau zu, wie dein Code runtergeladen wird! Wenn du prüfen willst, ob der Code angekommen ist, kannst du zum **Files Tab** rüberspringen und deinen Code auf PythonAnywhere sehen.
 
 * Spring anschließend rüber zum [Web Tab](https://www.pythonanywhere.com/web_app_setup/) und klick auf **Neu laden** in deinem Browser.
 
