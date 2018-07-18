@@ -79,7 +79,7 @@ Suche in `settings.py` die Zeile, die `TIME_ZONE` enthält und ändere sie ab, u
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Ein Sprachkennung besteht aus einem Kürzel für die Sprache, z.B. `en` für Englisch oder `de` für Deutsch, und einem Länder-Kürzel z.B. `de` für Deutschland oder `ch` für die Schweiz. Falls Englisch nicht deine Muttersprache ist, kannst du damit die Standard-Knöpfe und -Meldungen von Django auf deine Sprache wechseln. Der "Cancel"-Knopf würde dann in diese Sprache übersetzt (und z.B. bei Deutsch mit "Abbrechen" beschriftet). [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Ein Sprachkennung besteht aus einem Kürzel für die Sprache, z.B. `en` für Englisch oder `de` für Deutsch, und einem Länder-Kürzel z.B. `de` für Deutschland oder `ch` für die Schweiz. Falls Englisch nicht deine Muttersprache ist, kannst du damit die Standard-Knöpfe und -Meldungen von Django auf deine Sprache wechseln. Der "Cancel"-Knopf würde dann in diese Sprache übersetzt (und z.B. bei Deutsch mit "Abbrechen" beschriftet). [Django enthält viele fix-fertige Übsersetzungen](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 Wenn du eine andere Sprache als Englisch willst, ändere die Sprachkennung, indem du die folgende Zeile änderst:
 
@@ -191,7 +191,7 @@ Wenn du ein Chromebook verwendest, wirst du den Test-Server immer unter folgende
 
 Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Webserver laufen! Ist das nicht toll?
 
-![Install worked!](images/install_worked.png)
+![Installation hat funktioniert!](images/install_worked.png)
 
 Während der Webserver läuft, siehst du keinen neuen Kommandozeilen-Promt, bei dem du weitere Befehle eingeben könntest. Die Konsole akzeptiert zwar weitere Texteingaben, führt die entsprechenden Kommandos aber nicht aus. Das ist, weil der Webserver laufend auf neue eingehende Requests wartet.
 
