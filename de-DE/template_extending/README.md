@@ -1,10 +1,10 @@
-# Template Erweiterung
+# Erweiterung der Templates
 
 Eine weitere praktische Sache von Django ist das **template extending**, Erweiterungen des Templates. Was bedeutet das? Damit kannst du Teile deiner HTML-Site für verschiedene Seiten deiner Website nutzen.
 
 Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
-## Create a base template
+## Ein Basis-Template erstellen
 
 Ein Base-Template ist das grundlegende Template, welches dann auf jeder einzelnen Seite deiner Website erweitert wird.
 
