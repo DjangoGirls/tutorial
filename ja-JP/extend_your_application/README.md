@@ -54,7 +54,7 @@ pk = post.pkの部分は、 pkは主キーの略で、データベースの各�
 
 最初の投稿の詳細がこの**URL**に表示されるようにします：http://127.0.0.1:8000/post/1/
 
-Djangoが`post_detail`という名前の*表示*を指すように`blog/urls.py`ファイルにURLを作ってください。 Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. ファイルは次のようになるでしょう。
+Djangoが`post_detail`という名前の*表示*を指すように`blog/urls.py`ファイルにURLを作ってください。 `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` という行を `blog/urls.py` ファイルに追加しましょう。 ファイルは次のようになるでしょう。
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -68,7 +68,7 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+`post/<int:pk>/` の部分はURLパターンを指定しています。それについて説明しましょう:
 
 - `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
