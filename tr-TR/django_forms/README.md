@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Formu teslim ettiğinizde, aynı görüşe yönlendirileceğiz, bu sefer `request` içinde daha fazla bilgi olacak, özellikle `request.POST` içinde ( isimlendirmenin blog gönderisiyle bir bağlantısı yoktur; daha fazla veri göndermemizle ilgilidir). HTML dosyasının `<form>` açıklamasının `method="POST"` değişken varlığını hatırlıyormusunuz? Formdan gelen tüm alanlar şimdi `request.POST`'un içerisinde. `POST`'un ismini değiştirmememiz lazım (`method` için geçerli diğer değer sadece `GET`'dir, ama şimdi ikisi arasındaki farkın ne olduğunu anlatacak kadar vaktimiz yok).
+Formu teslim ettiğinizde, aynı görüşe yönlendirileceğiz, bu sefer `request` içinde daha fazla bilgi olacak, özellikle `request.POST` içinde ( isimlendirmenin blog gönderisiyle bir bağlantısı yoktur; daha fazla veri göndermemizle ilgilidir). HTML dosyasında `<form>` tanımımızdaki `method="POST"` değişkenini hatırlıyor musunuz ? Formdan gelen tüm alanlar şimdi `request.POST`'un içerisinde. `POST`'un ismini değiştirmememiz lazım (`method` için geçerli diğer değer sadece `GET`'dir, ama şimdi ikisi arasındaki farkın ne olduğunu anlatacak kadar vaktimiz yok).
 
 *view* içinde halletmemiz gereken iki ayrı durum vardır: öncelikle, sayfaya ilk kez eriştiğimizde ve boş bir form isteğimizde, ikincide *view* girdiğimiz form verisiyle geri gideriz. Yani bir koşul eklememiz gerekiyor (bunun için `if` kullanacağız):
 
