@@ -159,14 +159,14 @@ GitHub からアプリを自動的に構成するためのヘルパーを実行�
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-上記を実行すると、あなたは以下の事ができるようになります。：
+実行しているところを見れば、何をしているのか見ることができます。
 
 - GitHubからコードをダウンロードする
-- 自分のPC上のように、PythonAnywhereでのvirtualenvを作成している
+- PythonAnywhere上にvirtualenvを作成する。ちょうどあなたのPC上のように
 - 一部のデプロイメント設定で設定ファイルを更新する
-- `manage.py migrate`コマンドを使ってPythonAnywhereにデータベースを設定する
+- `manage.py migrate`コマンドを使ってPythonAnywhere上のデータベースをセットアップする
 - 静的ファイルの設定（これについては後で学習します）
-- PythonAnywhereでAPIを使用してWebアプリケーションを提供するように設定する
+- APIを通じてPythonAnywhereがあなたのWebアプリケーションを提供するように設定する
 
 PythonAnywhereでは、これらすべてのステップは自動化されていますが、他のサーバプロバイダと同じ手順を経なければなりません。 今注目すべき重要な点は、PythonAnywhere上のデータベースが、自分のPC上のデータベースとはまったく別物であることです。つまり、異なる投稿と管理者アカウントを持つことができます。
 
