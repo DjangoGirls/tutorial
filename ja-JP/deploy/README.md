@@ -94,7 +94,7 @@ Git のすべてのファイルおよびこのディレクトリ内のフォル�
 
 > **注** `my-first-blog`という名前は重要です。何か他のものを選択することもできますが、以下の手順では何度も繰り返す必要があります。他の名前を選択した場合は、 毎回それを置き換えてください。 できれば、`my-first-blog`の名前にしておきましょう。
 
-次の画面では、レポジトリをクローンするためのURLが表示されます。"HTTPS"のバージョンを選択してコピーし、端末にそれを貼り付けます。
+次の画面では、レポジトリをクローンするためのURLが表示されます。"HTTPS"を選択してコピーし、端末にそれを貼り付けます。
 
 ![](images/github_get_repo_url_screenshot.png)
 
@@ -125,7 +125,7 @@ Git のすべてのファイルおよびこのディレクトリ内のフォル�
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-あなたのコードは今GitHub上にあります。 見に行きましょう！ これは、[ Django ](https://github.com/django/django)、<a href = "https://github.com/DjangoGirls/tutorial/にあります。 "> Django Girls Tutorial </a>などのオープンソースソフトウェアプロジェクトも、GitHubでコードをホストしています。 :)
+あなたのコードは今GitHub上にあります。 見に行きましょう！ [ Django ](https://github.com/django/django)や[ Django Girls Tutorial ](https://github.com/DjangoGirls/tutorial)、その他たくさんの素晴らしいオープンソースソフトウェアプロジェクトもGitHubでコードをホストしています。 :)
 
 # PythonAnywhereでブログを設定する
 
