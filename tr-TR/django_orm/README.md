@@ -30,7 +30,7 @@ Etkisi aşağıdaki gibi olmalı:
 
 ### Tüm nesneler
 
-Önce tüm gönderilerimizi görüntülemeyi deneyelim. Bunu aşağıdaki komut ile yapabiliriz:
+Önce tüm Post'larımızı görüntülemeyi deneyelim. Bunu aşağıdaki komut ile yapabiliriz:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Ahh! Bir hata meydana geldi. Bize hiç gönderi olmadığını söylüyor. Bu doğru, önce gönderiyi içeriye aktarmayı unuttuk!
+Ahh! Bir hata meydana geldi. Bize hiç post olmadığını söylüyor. Bu doğru, öncesinde post'u içeriye aktarmayı unuttuk!
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -49,7 +49,7 @@ Ahh! Bir hata meydana geldi. Bize hiç gönderi olmadığını söylüyor. Bu do
 >>> from blog.models import Post
 ```
 
-`blog.models`'ten `Post` modelini içe aktardık. Tekrar bütün gönderileri görüntülemeyi deneyelim:
+`blog.models`'ten `Post` modelini içe aktardık. Tekrar bütün post'ları görüntülemeyi deneyelim:
 
 {% filename %}komut-satırı{% endfilename %}
 
