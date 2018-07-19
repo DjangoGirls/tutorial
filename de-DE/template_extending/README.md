@@ -6,7 +6,7 @@ Templates help when you want to use the same information or layout in more than 
 
 ## Ein Basis-Template erstellen
 
-Ein Base-Template ist das grundlegende Template, welches dann auf jeder einzelnen Seite deiner Website erweitert wird.
+Ein Basis-Template ist das grundlegende Template, welches dann auf jeder einzelnen Seite deiner Website erweitert wird.
 
 Wir erstellen jetzt eine `base.html`-Datei in `blog/templates/blog/`:
 
