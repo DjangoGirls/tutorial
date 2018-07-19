@@ -143,14 +143,14 @@ Git のすべてのファイルおよびこのディレクトリ内のフォル�
 
 > **備考：**PythonAnywhere は Linuxベースなので、Windowsを使っている場合は、コンソールがあなたのものと少し違って見えるでしょう。
 
-PythonAnywhereにWebアプリケーションをデプロイするには、コードをGitHubからプルし、PythonAnywhereでそれを認識してWebアプリケーションとして提供するように設定する必要があります。 それを手動で行う方法もありますが、PythonAnywhereはそれをすべて行うヘルパーツールを提供しています。 まず、インストールしてみましょう。
+PythonAnywhereにWebアプリケーションをデプロイするには、コードをGitHubからプルし、PythonAnywhereがそれを認識してWebアプリケーションとしてサービスを開始するように設定する必要があります。 それを手動で行う方法もありますが、PythonAnywhereはそれをすべて行うヘルパーツールを提供しています。 まず、インストールしてみましょう。
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pip3.6 install --user pythonanywhere
     
 
-`pythonanywhereを収集する`のようなものをいくつか出力し、最終的に` pythonanywhere-（...）`をインストールしたという行で終わるはずです。
+`Collecting pythonanywhere` のようなメッセージがいくつか出力され、最終的に`Successfully installed (...) pythonanywhere- (...)`という行で終わると思います。
 
 GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（`<your-github-username>`の代わりにGitHubユーザー名を使用することを忘れないでください）：
 
