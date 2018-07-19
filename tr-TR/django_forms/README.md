@@ -175,7 +175,7 @@ Yanıt: hiçbir şey. Sadece *view*'ımızda biraz daha iş yapmamız gerekiyor.
 
 ## Formu kaydetme
 
-Bir kez daha `blog/views.py` yi açın.Halihazırda `post_new` görüntüsündeki elimizdeki bütün şey şunlardır:
+Bir kez daha `blog/views.py` yi açın.Halihazırda `post_new` view'ının tamamı aşağıdaki gibidir:
 
 {% filename %}blog/views.py{% endfilename %}
 
