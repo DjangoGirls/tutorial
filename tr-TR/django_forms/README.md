@@ -220,7 +220,7 @@ if form.is_valid():
     post.save()
 ```
 
-Temel olarak, burada iki şey yaptık: formu `form.save` ile kaydettik ve bir author ekledik (`PostForm`'da bir `author` tanımlı olmadığı ve bu zorunlu bir alan olduğu için). `commit=False`; e `Post` modelini kaydetmek istemiyoruz demektir - öncelikle authorı eklemeliyiz. Çoğu zaman `form.save()` kullanırken, `commit=False` kullanılmayacaktır, bu durumda desteklemeliyiz. `post.save()` değişiklikleri saklar (yazar ekleme) ve yeni blog yazısı oluşturulur!
+Temel olarak, burada iki şey yaptık: formu `form.save` ile kaydettik ve bir author ekledik (`PostForm`'da bir `author` tanımlı olmadığı ve bu zorunlu bir alan olduğu için). `commit=False`; e `Post` modelini kaydetmek istemiyoruz demektir - öncelikle authorı eklemeliyiz. Çoğu zaman `form.save()` kullanırken, `commit=False` kullanılmayacaktır, bu durumda desteklemeliyiz. `post.save()` değişiklikleri saklar (author ekleyerek) ve yeni blog yazısı oluşturulur!
 
 Son olarak hızlı bir şekilde yeni oluşturulmuş blog gönderimiz için `post_detail` gidebilirsek harika olurdu değil mi? Bunu yapmak için bir tane daha içe yapmamız gerekli:
 
