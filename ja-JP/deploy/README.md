@@ -51,7 +51,7 @@ Git のすべてのファイルおよびこのディレクトリ内のフォル�
 > 
 > `.gitignore`ファイルで指定したファイルの1つが`db.sqlite3`です。 そのファイルはローカルデータベースで、すべての投稿が保存されます。 PythonAnywhere上のあなたのウェブサイトは別のデータベースを使うことになるので、これをあなたのリポジトリには追加したくありません。 データベースは開発マシンのようにSQLiteにすることができますが、通常はSQLiteよりも多くのサイト訪問者に対処できるMySQLと呼ばれるものを使用します。 どちらの方法でも、SQLiteデータベースをGitHubのコピーとして無視することで、これまでに作成したすべての投稿はそのまま残し、ローカルでのみ利用できるようになりますが、プロダクションに再び追加する必要があります。 どちらの方法でも、SQLiteデータベースをGitHubのコピーでは無視することで、 これまであなたが作成した投稿はすべてローカルだけで利用でき、プロダクションでは再び追加しなければいけなくなります。 ローカルデータベースは本物のブログ投稿をブログから削除してしまうことを心配せずに、さまざまなことをテストできるよい遊び場として考えるといいでしょう。
 
-`git add`をする前に、何が変更されたか確認するために、`git status`コマンドを使用する事をおすすめします。 これは間違ったファイルを追加またはコミットなど思いもかけない事を止めるために役立ちます。 `Git status` コマンドは、untracked/modifed/staged filesおよび多くについての情報を返します。 出力は次のようになります。
+`git add`をする前に、何が変更されたか確認するために、`git status`コマンドを使用する事をおすすめします。 これは間違ったファイルを追加またはコミットなど思いもかけない事を止めるために役立ちます。 `git status` コマンドは、あらゆる追跡されていない/変更されている/ステージされている（untracked/modifed/staged）ファイルや、ブランチの状態などさまざまな情報を返します。 出力は次のようになります。
 
 {% filename %}command-line{% endfilename %}
 
@@ -84,7 +84,7 @@ Git のすべてのファイルおよびこのディレクトリ内のフォル�
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## GitHubにコードをプッシュする
 
 [ GitHub.com ](https://www.github.com)にアクセスし、新しい無料のユーザーアカウントを登録します。 （もしあなたがすでにワークショップの準備でそれをしていたら、それは素晴らしいことです！）
 
@@ -125,7 +125,7 @@ Git のすべてのファイルおよびこのディレクトリ内のフォル�
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-コードは GitHub 上で公開されます。 見に行きましょう！ これは、[ Django ](https://github.com/django/django)、<a href = "https://github.com/DjangoGirls/tutorial/にあります。 "> Django Girls Tutorial </a>などのオープンソースソフトウェアプロジェクトも、GitHubでコードをホストしています。 :)
+あなたのコードは今GitHub上にあります。 見に行きましょう！ これは、[ Django ](https://github.com/django/django)、<a href = "https://github.com/DjangoGirls/tutorial/にあります。 "> Django Girls Tutorial </a>などのオープンソースソフトウェアプロジェクトも、GitHubでコードをホストしています。 :)
 
 # PythonAnywhereでブログを設定する
 
