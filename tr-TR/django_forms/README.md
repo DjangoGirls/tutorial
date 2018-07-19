@@ -112,7 +112,7 @@ urlpatterns = [
 ]
 ```
 
-Siteyi yeniledikten sonra, bir `AttributeError` görürüz, çünkü uygulanan `post_new` görünümüne sahip değiliz. Hemen şimdi ekleyelim.
+Sayfayı yeniledikten sonra `post_new` view'ını oluşturmadığımız için `AttributeError` hatası alırız. Şimdi ekleyelim.
 
 ## post_new view
 
