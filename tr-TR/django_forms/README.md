@@ -366,15 +366,15 @@ Butona tıklarsak blog postunu görmemiz lazım:
 
 ![Form düzenleme](images/edit_form2.png)
 
-Başlık ya da metni değiştirmekten ve değişiklikleri kaydetmekten çekinmeyin!
+İstediğimiz gibi title ve texti değiştirebilir ve sonra da kaydedebilriz!
 
 Tebrikler! Uygulaman gittikçe tamamlanıyor!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Eğer Django formlarıyla ilgili daha çok bilgiye ihtiyacın varsa,dökümanı okumalısın: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Güvenlik
 
-Bir bağlantıya (link) tıklayarak yeni bir blog oluşturabilmek harika! Ama şu anda sizin sitenizi ziyaret eden herkes yeni bir blog post yapabilecek ve bu muhtemelen isteyeceğiniz bir şey değil. Butonun sadece sana görünmesini sağlayalım.
+Bir linke (bağlantı) tıklayarak yeni bir blog oluşturabilmek harika! Ama şu anda sizin sitenizi ziyaret eden herkes yeni bir blog post yapabilecek ve bu muhtemelen isteyeceğiniz bir şey değil. Butonun sadece sana görünmesini sağlayalım.
 
 `blog/templates/blog/base.html` dosyasında yarattığımız `page-header` `div` ve anchor etiketlerini (tags) bulalım. Şuna benziyor olmalı:
 
