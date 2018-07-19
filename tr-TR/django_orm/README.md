@@ -119,13 +119,13 @@ Yaşasın! Çalışıp çalışmadığını kontrol etmek ister misin?
 
 İşte bu kadar, listede bir gönderi daha!
 
-### Daha fazla gönderi ekle
+### Daha fazla post ekle
 
-Şimdi biraz eğlenenebiliriz ve nasıl çalıştığını görmek için daha fazla gönderi ekleyebiliriz. 2-3 tane daha ekleyin ve bir sonraki kısma devam edin.
+Şimdi daha fazla post ekleyerek biraz eğlenebilir ve nasıl çalıştığını görebilirsin. İki veya üç tane daha ekle ve sıradaki bölüme geç.
 
 ### Nesneleri filtrelemek
 
-QuerySet'lerin büyük bir bölümü onları filtreleme yeteneğidir. Diyelim ki, Zeynep tarafından yazılmış tüm gönderileri bulmak istiyoruz. `Post.objects.all()` içindeki `all` yerine `filter` kullanacağız. Parantez içine istediğimiz blog gönderilerinin sağlaması gereken şartları belirteceğiz. Örneğimizde, `author(yazar)` `ben`'e eşitti. Django'da bu filtre şöyle yazılır: `author=ben`. Şu an kod parçacığımız şöyle görünüyor:
+QuerySet'lerin büyük bir bölümü onları filtreleme yeteneğidir. Diyelim ki, Zeynep tarafından yazılmış tüm post(gönderileri) bulmak istiyoruz. `Post.objects.all()` içindeki `all` yerine `filter` kullanacağız. Parantez içine istediğimiz blog gönderilerinin sağlaması gereken şartları belirteceğiz. Örneğimizde, `author(yazar)` `ben`'e eşitti. Django'da bu filtre şöyle yazılır: `author=ben`. Şu an kod parçacığımız şöyle görünüyor:
 
 {% filename %}komut-satırı{% endfilename %}
 
