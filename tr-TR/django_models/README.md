@@ -94,7 +94,7 @@ Yeni bir ` blog </ 0> dizininin oluşturulduğunu ve bir dizi dosya içerdiğini
     └── wsgi.py
 `</pre> 
 
-Bir uygulamayı oluşturduktan sonra, Django’ya da onu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`‘ı bulmalı ve `]`’ın tam üzerine `'blog',`‘ı içeren bir satır eklemeliyiz. Sonunda ürün bunun gibi görünmeli:
+Bir uygulamayı oluşturduktan sonra, Django’ya bunu kullanması gerektiğini söylemeliyiz. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`‘ı bulmalı ve `]`’ın tam üzerine `'blog',`‘ı içeren bir satır eklemeliyiz. Sonuç aşağıdaki gibi görünmeli:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
