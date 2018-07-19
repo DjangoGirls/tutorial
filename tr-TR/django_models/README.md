@@ -159,9 +159,9 @@ Korkutucu, değil mi? Fakat endişelenmeyin - Bu satırların ne anlama geldiği
 - `models.DateTimeField` - bu da gün ve saati tanımlamada kullanılır.
 - `models.ForeignKey` - başka bir modele referans tanımlar.
 
-Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Model alanları hakkında daha fazla bilgi edinmek ve yukarıda açıklananların dışındakileri nasıl tanımlayacağınızı öğrenmek istiyorsanız Django'nun belgelerine bir göz atmalısınız (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field -types)
 
-Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` bunun bir fonksiyon/metod olduğunu söyler. `publish` ise metodun adıdır. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı boşluk yerine küçük harf ve alt çizgi kullanmamızdır. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
+Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` bunun bir fonksiyon/metod olduğunu söyler. `publish` ise metodun adıdır. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı,boşluk yerine küçük harf ve alt çizgi kullanmaktır. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
 
 Genellikle methodlar bir şeyler döndürür (`return` anahtar kelimesi döndür anlamına gelir). `__str__` methodunda bunun örneğini görebiliriz. Bu durumda `__str__()` methodunu çağırdığımızda Post başlığının içeren bir metin (**string**) elde ederiz.
 
