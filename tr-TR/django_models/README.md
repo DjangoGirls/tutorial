@@ -73,26 +73,26 @@ Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşt
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-Şimdi oluşturulmuş yeni bir `blog` dizinini göreceksiniz ve bu, dizinlerin bir numarasını içerir. Bizim projemizdeki dizinler ve dosyalar bunun gibi görünmeli:
+Yeni bir ` blog </ 0> dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark edeceksiniz. Projemizdeki dizinler ve dosyalar şu sekilde görünmelidir:</p>
 
-    djangogirls
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
-    ├── db.sqlite3
-    ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
-    
+<pre><code>djangogirls
+├── blog
+│   ├── __init__.py
+│   ├── admin.py
+│   ├── apps.py
+│   ├── migrations
+│   │   └── __init__.py
+│   ├── models.py
+│   ├── tests.py
+│   └── views.py
+├── db.sqlite3
+├── manage.py
+└── mysite
+    ├── __init__.py
+    ├── settings.py
+    ├── urls.py
+    └── wsgi.py
+`</pre> 
 
 Bir uygulamayı oluşturduktan sonra, Django’ya da onu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`‘ı bulmalı ve `]`’ın tam üzerine `'blog',`‘ı içeren bir satır eklemeliyiz. Sonunda ürün bunun gibi görünmeli:
 
