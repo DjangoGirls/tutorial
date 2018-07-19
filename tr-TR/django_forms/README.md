@@ -271,13 +271,13 @@ Süper!
 
 ## Form doğrulama
 
-Şimdi de Django formlarının ne kadar havalı olduğunu görelim. Bir blog postunun `baslik` ve `yazi` alanları olmalı. `Post` modelimizde bu alanların( `published_date` e karşı olarak) gerekli olmadığını söylemedik, bu yüzden Django varsayılan olarak hazır olmasını bekler.
+Şimdi de Django formlarının ne kadar havalı olduğunu görelim. Bir blog postunun `title` ve `text` alanları olmalı. `Post` modelimizde bu alanların( `published_date` e karşı olarak) gerekli olmadığını söylemedik, bu yüzden Django varsayılan olarak hazır olmasını bekler.
 
-Formu `başlık` ve `metin` olmadan kaydetmeyi deneyin. Tahmin edin ne olacak!
+Formu `title` ve `text` olmadan kaydetmeye çalışın. Ne olacak, tahmin et!
 
 ![Form doğrulama](images/form_validation2.png)
 
-Django formumuzdaki tüm alanların doğru olduğunu onaylamaya dikkat ediyor. Müthiş değil mi?
+Django tüm alanların doğruluğunu bizim için kontrol ediyor. Ne güzel, değil mi?
 
 ## Form düzenleme
 
