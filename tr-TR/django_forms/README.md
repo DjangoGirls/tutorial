@@ -230,7 +230,7 @@ Son olarak hızlı bir şekilde yeni oluşturulmuş blog gönderimiz için `post
 from django.shortcuts import redirect
 ```
 
-Dosyanızın başlangıcına ekleyin. Şimdi "yeni oluşturulmuş gönderi için `post_detail` gidin" diyebiliriz:
+Bunu dosyanın en başına ekleyelim. Şimdi yeni yarattığımız blog postu için `post_detail` sayfasına gidebiliriz":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +238,9 @@ Dosyanızın başlangıcına ekleyin. Şimdi "yeni oluşturulmuş gönderi için
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail`, gitmek istediğimiz view'un (görünümün) adı. Unutmayalım ki bu *view* için bir `pk` değişkeni lazım. Bu görüntülere geçmek için `pk=post.pk` kullanırız,burada `post` yeni oluşturulan blog yazısıdır!
+`post_detail`, gitmek istediğimiz view'ın adı. Unutmayalım ki bu *view* için bir `pk` değişkeni lazım. Bu değeri viewlere aktarmak için `pk=post.pk` yazarız. Burada `post` yeni yarattığımız blog postudur!
 
-Tamam, çok fazla konuştuk, ama muhtemelen bütün *görüntü* neye benziyor görmek istiyoruz değil mi?
+Çok şey söyledik ama herhalde *view* ı tümüyle bir görmek isteriz artık, değil mi?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,9 +259,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Bakalım çalışacak mı? http://127.0.0.1:8000/post/new/ sayfasına gidin, bir `başlık` ve`metin` ekleyin, kaydedin... ve işte oldu! Yeni blog gönderisi eklenmiştir ve `post_detail` sayfasına yönlendirildik!
+Bakalım çalışacak mı? http://127.0.0.1:8000/post/new/ sayfasına gidin, bir `title` ve `text` ekleyin, kaydedin... ve işte oldu! Yeni blog postu eklenmiş ve `post_detail` sayfasına yönlendirildik!
 
-Gönderiyi kaydetmeden önce yayınlama tarihini ayarladığımızın farkına varabilirsiniz. Daha sonra *yayınlama butonu* **Django Girls Tutorial: Uzantılar** içinde tanıtacağız.
+Postu kaydetmeden önce publish date e değer atandığını fark etmiş olabilirsin. Daha sonra *publish button* nu **Django Girls Tutorial: Ek konular** da anlatacağız.
 
 Süper!
 
