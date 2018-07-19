@@ -161,7 +161,7 @@ Korkutucu, değil mi? Fakat endişelenmeyin - Bu satırların ne anlama geldiği
 
 Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Model alanları hakkında daha fazla bilgi edinmek ve yukarıda açıklananların dışındakileri nasıl tanımlayacağınızı öğrenmek istiyorsanız Django'nun belgelerine bir göz atmalısınız (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field -types)
 
-Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` bunun bir fonksiyon/metod olduğunu söyler. `publish` ise metodun adıdır. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı,boşluk yerine küçük harf ve alt çizgi kullanmaktır. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
+Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` metodur. `def` bunun bir fonksiyon/metod olduğunu söyler. `publish` ise metodun adıdır. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı,boşluk yerine küçük harf ve alt çizgi kullanmaktır. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
 
 Genellikle methodlar bir şeyler döndürür (`return` anahtar kelimesi döndür anlamına gelir). `__str__` methodunda bunun örneğini görebiliriz. Bu durumda `__str__()` methodunu çağırdığımızda Post başlığının içeren bir metin (**string**) elde ederiz.
 
