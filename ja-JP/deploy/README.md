@@ -137,11 +137,11 @@ Git のすべてのファイルおよびこのディレクトリ内のフォル�
 
 ## PythonAnywhere でサイトを設定する
 
-メインの[ PythonAnywhere Dashboard ](https://www.pythonanywhere.com/)のロゴをクリックし、「Bash」コンソールを起動するオプションを選択します。これがPythonAnywhereバージョンです あなたのコンピュータのコマンドラインと同じようなものです。
+ロゴをクリックしてメインの[PythonAnywhere Dashboard](https://www.pythonanywhere.com/)に戻り、「Bash」コンソールを起動するボタンをクリックします。これはPythonAnywhereバージョンのコマンドライン、ちょうどあなたのコンピューターのコマンドラインと同じようなものです。
 
 ![PythonAnywhereのウェブインターフェースの「New Console」、「bash」ボタン](images/pythonanywhere_bash_console.png)
 
-> **備考：**PythonAnywhere は Linux に基づきますので、Windows の場合は、あなたのコンピュータ上で進行中のものと少し違って見えるでしょう。
+> **備考：**PythonAnywhere は Linuxベースなので、Windowsを使っている場合は、コンソールがあなたのものと少し違って見えるでしょう。
 
 PythonAnywhereにWebアプリケーションをデプロイするには、コードをGitHubからプルし、PythonAnywhereでそれを認識してWebアプリケーションとして提供するように設定する必要があります。 それを手動で行う方法もありますが、PythonAnywhereはそれをすべて行うヘルパーツールを提供しています。 まず、インストールしてみましょう。
 
