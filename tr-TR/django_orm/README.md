@@ -145,7 +145,7 @@ Ya da belki `title(başlık)` alanında içinde 'Nefis' kelimesini içeren tüm 
 
 > **Not** `title` (başlık) ve `contains` arasında iki tane alt çizgi (`_`) var. Django'nun ORM'i bu söz dizimini, özelliği ("title") ve operasyon veya filtreyi ("contains") ayırmak için kullanır. Eğer sadece tek bir alt çizgi kullanırsanız, "FieldError: Cannot resolve keyword title_contains" şeklinde bir hata alacaksınız.
 
-Ayrıca yayınlanmış tüm gönderilerin bir listesini alabiliriz. Bunu geçmişte `published_date (yayinlanma_tarihi)` alanı belirtilmiş tüm gönderileri filtreleyerek yapıyoruz:
+Ayrıca yayınlanmış tüm post'ların bir listesini alabiliriz. Bunu geçmişte `published_date (yayinlanma_tarihi)` alanı belirtilmiş tüm gönderileri filtreleyerek yapıyoruz:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -155,7 +155,7 @@ Ayrıca yayınlanmış tüm gönderilerin bir listesini alabiliriz. Bunu geçmi�
 <QuerySet []>
 ```
 
-Maalesef python konsolundan eklediğimiz gönderi henüz yayınlanmadı. Fakat bunu değiştirebiliriz! Önce yayınlamak istediğimiz bir gönderinin örneğini bulalım:
+Maalesef python konsolundan eklediğimiz post(gönderi) henüz yayınlanmadı. Fakat bunu değiştirebiliriz! Önce yayınlamak istediğimiz bir gönderinin örneğini bulalım:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -176,7 +176,7 @@ Ardından `publish (yayinla)` methodu ile gönderiyi yayınlayalım:
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
->>> Post.objects.filter(yayinlanma_tarihi__lte=timezone.now())
+>>> Post.objects.filter(published_date__lte=timezone.now())
 [<Post: Harika bir gönderi>]
 ```
 
@@ -200,7 +200,7 @@ Başına `-` ekleyerek sıralamayı tersine de çevirebiliriz:
 [<Post: Nefis bir gönderi>, <Post: Harika bir gönderi>, <Post: Gönderi 2>, <Post: Gönderi 1>]
 ```
 
-### Sorgu Setlerini Zincirlemek
+### Sorgu Setlerini(QuerySets) Zincirlemek
 
 Sorgu setlerini **zincirleyerek** beraber kullanabilirsiniz:
 
