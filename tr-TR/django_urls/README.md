@@ -8,7 +8,7 @@ URL basitçe bir web adresidir. Her defasında bir web sitesini ziyaret ettiğin
 
 ![Url](images/url.png)
 
-İnternetteki her sayfanın kendi URL'si olması gerekir. Böylelikle bir URL açıldığında uygulama ne göstermesi gerektiğini bilir. Django'da `URLconf` (URL konfigürasyonu) denilen bir şey kullanıyoruz. URLconf Django'nun doğru görünümü (view) bulmak için istenen URL ile eşleştirmeyi deneyeceği desenler dizinidir.
+İnternetteki her sayfanın kendi URL'si olması gerekir. Böylelikle bir URL açıldığında uygulama ne göstermesi gerektiğini bilir. Django'da `URLconf` (URL konfigürasyonu) denilen bir şey kullanıyoruz. URLconf Django'nun doğru viewı bulmak için istenen URL ile eşleştirmeyi deneyeceği desenler dizinidir.
 
 ## URL'ler Django'da nasıl çalışır?
 
