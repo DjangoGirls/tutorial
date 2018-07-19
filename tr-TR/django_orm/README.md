@@ -30,7 +30,7 @@ Etkisi aşağıdaki gibi olmalı:
 
 ### Tüm nesneler
 
-Önce tüm Post'larımızı görüntülemeyi deneyelim. Bunu aşağıdaki komut ile yapabiliriz:
+Önce tüm post'larımızı görüntülemeyi deneyelim. Bunu aşağıdaki komut ile yapabiliriz:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -58,7 +58,7 @@ Ahh! Bir hata meydana geldi. Bize hiç post olmadığını söylüyor. Bu doğru
 <QuerySet [<Post: Gönderi başlığım>, <Post: Diğer bir gönderi başlığı>]>
 ```
 
-Bu daha önce oluşturduğumuz gönderilerin listesi! Bu gönderileri Django admin arayüzü ile oluşturduk. Fakat şimdi python'u kullanarak yeni gönderiler oluşturmak istiyoruz, peki bunu nasıl yaparız?
+Bu daha önce oluşturduğumuz post'ların listesi! Bu post'ları Django admin arayüzü ile oluşturduk. Fakat şimdi python'u kullanarak yeni post'lar oluşturmak istiyoruz, peki bunu nasıl yaparız?
 
 ### Nesne oluşturma
 
@@ -89,7 +89,7 @@ Veritabanımızda hangi kullanıcılar var? Şu şekilde görebiliriz:
 <QuerySet [<User: zeynep>]>
 ```
 
-Daha önce yarattığımız ayrıcalıklı kullanıcı! Şimdi veritabanından User (kullanıcı) nesnesi alalım:
+Daha önce yarattığımız süper kullanıcı! Şimdi veritabanından User (kullanıcı) nesnesi alalım:
 
 {% filename %}komut-satırı{% endfilename %}
 
