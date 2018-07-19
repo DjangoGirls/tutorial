@@ -69,7 +69,7 @@ Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önce
 
 **Not**: `settings.py` dosyasının da diğerleri gibi normal bir dosya olduğunu aklınızda tutun. Bunu kod düzenleyicisi içerisinde "dosya -> aç" menü eylemini kullanarak açabilirsiniz. Bu, size `settings.py` dosyanıza gidebileceğiniz ve bu dosyayı seçebileceğiniz her zamanki klasik pencereyi açacaktır. Alternatif olarak, bu dosyayı masaüstünüzdeki djangogirls klasörüne gidip sağ tıklayarak açabilirsiniz. Sonra, listeden kod düzenleyicinizi seçin. Dosyayı açabilen ancak düzenlemenize izin vermeyecek diğer programların yüklü olması ihtimaline karşın kod düzenleyicinin seçilmesi önem arz etmektedir.
 
-Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zaman dilimleri listesine](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) gidin ve ve ilgili saat dilimini kopyalayın (ZD) (Ör. `Europe/Berlin`).
+Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zaman dilimleri listesine](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) gidin ve ilgili saat dilimini kopyalayın (ZD) (Ör. `Europe/Berlin`).
 
 `settings.py` dosyasında `TIME_ZONE` ifadesini içeren satırı bulun ve kendi seçtiğiniz zaman dilimine göre uyarlayın:
 
@@ -79,7 +79,7 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zama
 TIME_ZONE = 'Europe/Istanbul'
 ```
 
-Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. Eğer İngilizce ana diliniz değilse, varsayılan buttonları ve uyarıların dilini kendi dilinize değiştirmek bunu ekleyebilirsiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. Eğer İngilizce ana diliniz değilse, varsayılan buttonları ve uyarıların dilini kendi dilinize değiştirmek için bunu ekleyebilirsiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 Farklı bir dil istiyorsanız, aşağıdaki satırı değiştirerek dil kodunu seçin:
 
@@ -89,7 +89,7 @@ Farklı bir dil istiyorsanız, aşağıdaki satırı değiştirerek dil kodunu s
 LANGUAGE_CODE = 'de-ch'
 ```
 
-Ayrıca statik dosyalar için bir yol eklememiz gerekmektedir. (Tutorial içerisinde statik dosyalar ve CSS hakkında ayrıntılı bilgi bulabilirsiniz.) Dosyanın *son*'una gidin, hemen altında sadece `STATIC_URL` girişi yapın, `STATIC_ROOT` adında yeni birim ekleyin:
+Ayrıca statik dosyalar için bir yol eklememiz gerekmektedir. (Eğitici ders içerisinde statik dosyalar ve CSS hakkında ayrıntılı bilgi bulabilirsiniz.) Dosyanın *son*'una gidin, hemen altında sadece `STATIC_URL` girişi yapın, `STATIC_ROOT` adında yeni birim ekleyin:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
