@@ -89,7 +89,7 @@ Auf Linux oder OS X kann ein `virtualenv` durch das Ausführen von `python3 -m v
 >     E: Unable to locate package python3-venv
 >     
 > 
-> erhälst, führe stattdessen folgendes aus:
+> erhältst, führe stattdessen Folgendes aus:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -105,7 +105,7 @@ Die obigen Kommandos erstellen ein Verzeichnis `myvenv` (bzw. den von Dir vergeb
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Starte deine virtuelle Umgebung, indem du folgendes eingibst:
+Starte deine virtuelle Umgebung, indem du Folgendes eingibst:
 
 {% filename %}command-line{% endfilename %}
 
@@ -154,7 +154,7 @@ Ok, jetzt ist die erforderliche Umgebung startklar und wir können endlich Djang
 
 Da du nun dein `virtualenv` gestartet hast, kannst du Django installieren.
 
-Bevor wir damit loslegen, sollten wir jedoch sicherstellen, dass wir die neuste Version von `pip` haben. <0>pip</0> ist die Software, mit der wir Django installieren werden.
+Bevor wir damit loslegen, sollten wir jedoch sicherstellen, dass wir die neueste Version von `pip` haben, eine Software, mit Hilfe derer wir Django installieren werden:
 
 {% filename %}command-line{% endfilename %}
 
