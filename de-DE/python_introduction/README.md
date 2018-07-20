@@ -763,7 +763,7 @@ Wenn 2 größer als 5 wäre, würde die zweite Anweisung (die nach dem else) aus
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-python name = 'Sonja' 
+name = 'Sonja' 
 if name == 'Ola': 
     print('Hey Ola!')
 elif name == 'Sonja': 
@@ -780,7 +780,7 @@ und ausgeführt erhalten wir:
     Hey Sonja!
     
 
-Hast du bemerkt was passiert ist? `elif` lässt dich zusätzliche Bedingungen hinzufügen, die geprüft werden, falls die vorherige fehlschlägt.
+Hast du bemerkt, was passiert ist? `elif` lässt dich zusätzliche Bedingungen hinzufügen, die geprüft werden, falls die vorherige fehlschlägt.
 
 Du kannst so viele `elif` Bedingungen nach der anfänglichen `if` Anweisung hinzufügen, wie du magst. Zum Beispiel:
 
