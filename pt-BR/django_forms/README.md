@@ -169,7 +169,7 @@ Hora de atualizar! Há! Seu formulário apareceu!
 
 Mas, espere um minuto! Quando você digita alguma coisa nos campos `title` e `text` e tenta salvar o que acontece?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Nada! Estamos novamente na mesma página e nosso texto sumiu... e nenhum post foi adicionado. Então o que deu errado?
 
 A resposta é: nada. Precisamos trabalhar um pouco mais na nossa *view*.
 
