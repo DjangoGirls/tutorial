@@ -291,7 +291,7 @@ Abra `blog/templates/blog/post_detail.html` e adicione esta linha
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+agora, o template estará parecido com:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -322,7 +322,7 @@ Em `blog/urls.py` adicionamos esta linha:
 
 Nós reutilizaremos o template `blog/templates/blog/post_edit.html`, então a última coisa que falta é uma *view*.
 
-Let's open `blog/views.py` and add this at the very end of the file:
+Vamos abrir `blog/views.py` e adicionar ao final do arquivo:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
      return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Isso é quase exatamente igual a nossa view de `post_new`, certo? Mas não totalmente. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Isso é quase exatamente igual a nossa view de `post_new`, certo? Mas não totalmente. Primeira coisa: passamos um parâmetro extra `pk` da url. Em seguida: pegamos o modelo `Post` que queremos editar com `get_object_or_404 (Post, pk=pk)` e então, quando criamos um formulário, passamos este post como uma `instância`, tanto quando salvamos o formulário…
 
 {% filename %}blog/views.py{% endfilename %}
 
