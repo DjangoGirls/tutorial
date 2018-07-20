@@ -1054,7 +1054,7 @@ Das würde ausgeben:
 
 `range` ist eine Funktion, die eine Liste von aufeinander folgenden Zahlen erschafft (die Randwerte werden von dir als Argumente bereitgestellt).
 
-Beachte, dass die zweite dieser Werte, die du als Argumente übergibst, nicht in der Liste enthalten ist, die von Python ausgegeben wird. (Das bedeutet, dass `range(1, 6)` von 1 bis 5 zählt, aber nicht die Zahl 6 enthält). Die liegt daran, dass "range" halboffen ist, was wiederum bedeutet, dass es den ersten Wert enthält, aber nicht den letzten.
+Beachte, dass der zweite der Werte, die du als Argumente übergibst, nicht in der Liste enthalten ist, die von Python ausgegeben wird. (Das bedeutet, dass `range(1, 6)` von 1 bis 5 zählt, aber nicht die Zahl 6 enthält). Die liegt daran, dass "range" halboffen ist, was wiederum bedeutet, dass es den ersten Wert enthält, aber nicht den letzten.
 
 ## Zusammenfassung
 
