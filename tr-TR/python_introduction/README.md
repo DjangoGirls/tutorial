@@ -970,7 +970,7 @@ hi("Seda")
 {% filename %}komut satırı{% endfilename %}
 
     $ python3 python_intro.py
-    Selam Seda!
+    Merhaba Seda!
     
 
 Tebrikler! Az önce fonksiyonları nasıl yazacağınızı öğrendiniz! :)
