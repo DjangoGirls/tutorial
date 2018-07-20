@@ -18,11 +18,11 @@ Maintenant, vous pouvez voir une interface avec une barre latérale, une grande 
     nomutilisateur:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+La zone du bas est votre *terminal*, où vous aurez accès à l'ordinateur que Cloud 9 à préparer pour vos commandes. Vous pouvez redimensionner cette fenêtre pour l'agrandir un peu plus.
 
 ### Environnement virtuel
 
-Un environnement virtuel (également appelé un virtualenv) est comme un privé de la boîte, nous pouvons des trucs utiles code informatique dans un projet que nous travaillons. Nous les utilisons pour garder les différents morceaux de code que nous voulons pour nos différents projets distincts ainsi les choses ne se mélangent entre les projets.
+Un environnement virtuel (également appelé un virtualenv) est comme une boîte privée dans laquelle nous pouvons insérer du code informatique utile pour un projet sur lequel nous travaillons. Nous les utilisons pour garder distinctement les différents morceaux de code que nous voulons pour nos différents projets ainsi les choses ne se mélangent entre les projets.
 
 Dans votre terminal, au bas de l'interface Cloud 9, exécutez la commande suivante:
 
@@ -32,9 +32,9 @@ Dans votre terminal, au bas de l'interface Cloud 9, exécutez la commande suivan
     sudo apt install python3.6-venv
     
 
-Si cela ne fonctionne toujours pas, demandez à votre entraîneur de l'aide.
+Si cela ne fonctionne toujours pas, demandez de l'aide à votre instructeur.
 
-Next, run:
+Ensuite, lancez :
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,11 +45,11 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(Notez que sur la dernière ligne, nous utilisons un un tilde suivi d'un signe egal : ~=).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Créez un compte [GitHub](https://github.com).
 
 ### PythonAnywhere
 
