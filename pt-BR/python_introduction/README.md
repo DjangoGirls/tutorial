@@ -4,7 +4,7 @@
 
 > Parte deste capítulo é baseado no tutorial da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Vamos escrever um pouco de código!
 
 ## Interpretador Python
 
@@ -1042,7 +1042,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Que iria imprimir:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,16 +1053,16 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` é uma função que cria uma lista de números que se seguem um após o outro (esses números são dados por você como parâmetros).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Note que o segundo desses dois números não está incluído na lista que o Python mostrou (em `range(1, 6)`, conta de 1 a 5, mas o 6 não é incluído). Isso porque o intervalo é semi-aberto, o que significa que ele inclui o primeiro valor, mas não o último.
 
 ## Sumário
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+É isso. **Você mandou muito bem!** Esse foi um capítulo difícil, então você deve estar orgulhosa. Nós estamos orgulhosas de você por ter conseguido ir tão longe!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Para um tutorial de Python oficial e completo, visite https://docs.python.org/3/tutorial/. Isto te dará um guia da linguagem mais exaustivo e completo. Até lá :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Talvez você queira brevemente fazer algo mais -- espreguiçar, andar um pouco, descansar os olhos -- antes de ir para o próximo capítulo. :)
 
 ![Cupcake](images/cupcake.png)
