@@ -37,14 +37,14 @@ Para criar um novo `virtualenv`, você deve abrir o terminal e executar `python 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. Você pode usar qualquer outro nome, mas sempre use minúsculas e sem espaços, acentos ou caracteres especiais. It is also good idea to keep the name short – you'll be referencing it a lot!
+Onde `myvenv` é o nome do seu `virtualenv`. Você pode usar qualquer outro nome, mas sempre use minúsculas e sem espaços, acentos ou caracteres especiais. Também é uma boa ideia manter o nome curto - você irá referenciá-lo muitas vezes!
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv myvenv`. Deve ficar assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,8 +58,8 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 > {% filename %}command-line{% endfilename %}
 > 
 >     O ambiente virtual não foi criado com êxito, porque o ensurepip não está disponível.  Em sistemas Debian/Ubuntu, você precisa instalar o pacote python3-venv usando o comando a seguir.
->        apt install python3-venv
->     You may need to use sudo with that command.  Depois de instalar o pacote python3-venv, recrie seu ambiente virtual.
+>        apt-get install python3-venv
+>     Você pode precisar usar sudo com esse comando.  Depois de instalar o pacote python3-venv, recrie seu ambiente virtual.
 >     
 > 
 > In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
@@ -152,9 +152,9 @@ Ok, nós temos todas as dependências importantes no lugar. Finalmente podemos i
 
 ## Instalando o Django
 
-Now that you have your `virtualenv` started, you can install Django.
+Agora que você tem seu `virtualenv` ativo, você pode instalar o Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Antes de fazer isto, devemos garantir que temos a última versão do `pip`, que é o software que usamos para instalar o Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -163,22 +163,22 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 ### Installing packages with requirements
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+O arquivo "requiriments.txt" guarda as depenências que serão instaladas utilizando o `pip install`:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder:
+Primeiramente, crie um arquivo `requirements.txt` dentro da pasta `djangogirls/`:
 
     djangogirls
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Você deve adicionar o seguinte texto no arquivo `djangogirls/requirements.txt`:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django=={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Agora, execute `pip install -r requirements.txt` para instalar o Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -215,4 +215,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+É isto! Você agora (finalmente) está pronta para criar uma aplicação Django!
