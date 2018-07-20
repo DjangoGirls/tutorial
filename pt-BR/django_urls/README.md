@@ -41,17 +41,17 @@ A URL do admin, que você visitou no capítulo anterior, já está aqui:
     path('admin/', admin.site.urls),
 ```
 
-Isso significa que para cada URL que começa com `admin /` o Django irá encontrar uma *view* correspondente. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Isso significa que para cada URL que começa com `admin /` o Django irá encontrar uma *view* correspondente. Neste caso nós estamos incluindo várias URLs de admin de uma vez a partir de uma lista criada pelo próprio Django em <0>admin.site.urls</0>. Desta forma, não temos que repetir todas URLs no nosso modesto arquivo -- é mais legível e mais limpo.
 
-## Your first Django URL!
+## Sua primeira URL no Django!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+É hora de criar nossa primeira URL! Queremos que http://127.0.0.1:8000 / seja a página inicial do nosso blog e exiba uma lista de posts.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+Também queremos manter o arquivo de `mysite/urls.py` limpo e desta forma importaremos as URLS da nossa aplicação `blog` no arquivo principal `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
+Adicione uma linha para importar `blog.urls`. Note que estamos usando a função `include`, então você também precisará importar esta função.
 
-Your `mysite/urls.py` file should now look like this:
+O seu arquivo `mysite/urls.py` deve agora se parecer com isto:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -65,11 +65,11 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+O Django agora irá redirecionar tudo o que entra em 'http://127.0.0.1:8000 /'para `blog.urls` e procurar por novas instruções lá.
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory. All right! Add these first two lines:
+Crie um novo arquivo vazio chamado `urls.py` no diretório `blog`. É fácil! Basta adicionar essas duas linhas:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -78,7 +78,7 @@ from django.urls import path
 from . import views
 ```
 
-Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+Aqui nós estamos importando do Django a função `url` e todas nossas `views` do aplicativo `blog` (Não temos nenhuma ainda, mas nós chegaremos a isso em um minuto!)
 
 After that, we can add our first URL pattern:
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the root URL. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` à URL raiz. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
 
 The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
