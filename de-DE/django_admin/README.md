@@ -1,6 +1,6 @@
 # Django Administration
 
-Wir benutzen den Django Admin um die soeben modellierten Posts hinzuzufügen, zu ändern oder zu löschen.
+Wir benutzen den Django Admin, um die soeben modellierten Posts hinzuzufügen, zu ändern oder zu löschen.
 
 Öffne die Datei `blog/admin.py` und ersetze den Inhalt wie folgt:
 
