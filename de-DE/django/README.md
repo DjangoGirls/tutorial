@@ -1,8 +1,8 @@
 # Django - Was ist das?
 
-Django (*/ˈdʒæŋɡoʊ/ jang-goh*) ist ein freies, Open-Source Web-Anwendungs-Framework, geschrieben in Python. Ein Web-(Anwendungs-)Framework ist eine Art Baukastensystem, das dir mit vielen vorgefertigten Teilen die Entwicklung von Webseiten stark erleichtert.
+Django (*/ˈdʒæŋɡoʊ/ jang-goh*) ist ein freies, quelloffenes Web-Anwendungs-Framework, geschrieben in Python. Ein Web-(Anwendungs-)Framework ist eine Art Baukastensystem, das dir mit vielen vorgefertigten Teilen die Entwicklung von Webanwendungen stark erleichtert.
 
-Wenn du eine Website entwickelst, brauchst du immer wieder sehr ähnliche Elemente: Einen Weg Benutzer zu verwalten (Registrierung, Anmeldung, Abmeldung etc.), einen Administrationsbereich, Formulare, Upload von Dateien usw.
+Wenn du eine Website entwickelst, brauchst du immer wieder sehr ähnliche Elemente: Einen Weg, Benutzer zu verwalten (Registrierung, Anmeldung, Abmeldung etc.), einen Administrationsbereich, Formulare, Upload von Dateien usw.
 
 Glücklicherweise wurde schon vor einiger Zeit erkannt, dass Web-Entwickler immer wieder die gleichen Probleme zu lösen haben. Gemeinsam entstanden so verschiedene Frameworks (Django ist so eines), welche die Web-Entwicklung durch vorgefertigte Elemente erleichtern.
 
