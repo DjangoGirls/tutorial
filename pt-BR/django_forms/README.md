@@ -271,19 +271,19 @@ Isso é incrível!
 
 ## Validação de formulários
 
-Agora, nós lhe mostraremos como os fórmularios são legais. O post do blog precisa ter os campos `title` e `text`. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Agora, nós lhe mostraremos como os fórmularios são legais. O post do blog precisa ter os campos `title` e `text`. Em nosso modelo `Post` não dissemos (em oposição a `published_date`) que esses campos não são necessários, então Django, por padrão, espera que sejam definidos.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Tente salvar o formulário sem `title` e `text`. Adivinhe o que vai acontecer!
 
 ![Validação de formulários](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django está tomando conta de validar se todos os campos de nosso formulário estão corretos. Não é incrível?
 
 ## Editando o formulário
 
-Agora sabemos como adicionar um novo formulário. Mas e se quisermos editar um já existente? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Agora sabemos como adicionar um novo formulário. Mas e se quisermos editar um já existente? É muito semelhante ao que fizemos. Vamos criar algumas coisas importantes rapidamente. (Se você não entender alguma coisa - você deve perguntar ao seu treinador ou veja os capítulos anteriores, já cobrimos todas essas etapas anteriormente.)
 
-Open `blog/templates/blog/post_detail.html` and add the line
+Abra `blog/templates/blog/post_detail.html` e adicione esta linha
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
