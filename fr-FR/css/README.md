@@ -6,17 +6,17 @@ Soyons honnêtes : notre blog est plutôt moche, non ? Un peu de CSS devrait nou
 
 Les feuilles de style (CSS : Cascading Style Sheets) sont un langage utilisé pour décrire l'apparence et la disposition d'un site écrit en langage de balisage (comme HTML). Considérez-le comme le maquillage de notre page web. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Mais on ne souhaite pas repartir de zéro. Une fois de plus, nous utiliserons quelque chose que les programmeurs ont publié gratuitement sur Internet. Réinventer la roue n'est pas amusant, n'est-ce pas ?
 
 ## Utilisons Bootstrap !
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap est l'un des frameworks HTML/CSS les plus populaires pour développer de beaux sites web : https://getbootstrap.com/
 
-Il a été créé par d'anciens programmeurs·ses de chez Twitter. Il est maintenant développé par des bénévoles aux quatre coins du monde !
+Il a été créé par d'anciens développeurs de Twitter. Il est maintenant développé par des bénévoles aux quatre coins du monde !
 
 ## Installer Bootstrap
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+Pour installer Bootstrap, il vous faut ajouter ceci à votre `<head>` dans votre fichier `.html` :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Ce n'est pas ajouter des fichiers à votre projet. Il a juste des points pour les fichiers qui existent sur Internet, Juste aller de l'avant, ouvrez votre site web et refresh la page. Ici il est!
+Ceci n'ajoute aucun fichier à votre projet. Il ne fait que pointer vers des fichiers qui existent sur Internet. Allez-y, ouvrez votre site Web et rafraîchissez la page. Le voilà !
 
 ![Figure 14.1](images/bootstrap1.png)
 
@@ -37,9 +37,9 @@ Enfin, allons jeter un coup d'œil à ces **fichiers statiques** dont nous n'arr
 
 ### Où ranger les fichiers statiques dans Django ?
 
-Django sait déjà où trouver les fichiers statiques pour la partie « admin ». Maintenant, il ne nous reste plus qu'à ajouter les fichiers statiques liés à notre app `blog`.
+Django sait déjà où trouver les fichiers statiques pour la partie « admin ». Maintenant, il ne nous reste plus qu'à ajouter les fichiers statiques liés à notre app, `blog`.
 
-Pour cela, nous allons créer un fichier appelé `static` à l'intérieur de notre blog app :
+Pour cela, nous allons créer un dossier appelé `static` à l'intérieur de notre appli blog :
 
     djangogirls
     ├── blog
@@ -49,9 +49,9 @@ Pour cela, nous allons créer un fichier appelé `static` à l'intérieur de not
     └── mysite
     
 
-Django va rechercher automatiquement les dossiers dite "statique" à l'intérieur de toutes vos applications' de dossiers. Ensuite, il sera en mesure d'utiliser leur contenu sous forme de fichiers statiques.
+Django va rechercher automatiquement tous les dossiers dits "statiques" à l'intérieur de vos dossiers d'appli. Ensuite, il sera en mesure d'utiliser leur contenu sous forme de fichiers statiques.
 
-## Votre première CSS !
+## Votre premier fichier CSS !
 
 Let's create a CSS file now, to add your own style to your web page. Créez un nouveau dossier appelé `css` à l'intérieur de votre dossier `static`. Ensuite, créez un nouveau fichier appelé `blog.css` à l'intérieur du dossier `css`. Vous êtes prête ?
 
