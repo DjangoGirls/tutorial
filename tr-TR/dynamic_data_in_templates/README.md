@@ -32,14 +32,14 @@ Sırada ne var? `Post` modelinden gerçek blog gönderilerini almak için `Query
 
 ## QuerySet (Sorgu Seti)
 
-QuerySets çalışma şeklinde bir fikir sahibi olmuşsunuzdur. [Django ORM (QuerySets) chapter](../django_orm/README.md) içinde bu konudan bahsetmiştik.
+QuerySet'in nasıl çalıştığı konusunda bir fikriniz oluşmuştur. [Django ORM (QuerySets) bölümü](../django_orm/README.md)nde konuşmuştuk.
 
 Şimdi yayınlanmış ve `published_date`'e (yayınlanma tarihine) göre sıralanmış bir gönderi listesi istiyoruz, değil mi? Bunu QuerySets bölümünde yapmıştık zaten!
 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()).order_by('yayinlanma_tarihi')
+Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
 Şimdi `blog/views.py` dosyası içindeki bu kodu `def post_list(request)` fonksiyonu ekleyin ama öncelikle `from django.utils import timezone` eklemeyi unutmayın:
