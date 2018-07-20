@@ -12,7 +12,7 @@ Frameworks sind dazu da, damit du das Rad nicht neu erfinden musst. Du kannst di
 
 Um besser zu verstehen, welche Vorteile dir Django bietet, werfen wir einen Blick auf Server im Allgemeinen. Als Erstes muss der Server wissen, dass er eine Webseite ausliefern soll.
 
-Der Server hat mehrere "Ports", vergleichbar einem Briefkasten, der auf eingehende Briefe "Anfragen"/"requests" überwacht wird. Das macht der Webserver. Der Webserver liest die eingeworfenen Briefe (requests) und beantwortet sie mit der Webseite (response). Um etwas ausliefern zu können, brauchen wir Inhalte. Und Django hilft dir dabei, diese Inhalte zu erstellen.
+Der Server hat mehrere "Ports". Ein Port ist vergleichbar mit einem Briefkasten, der auf eingehende Briefe ("Anfragen", "requests") überwacht wird. Das macht der Webserver. Der Webserver liest die eingeworfenen Briefe (requests) und beantwortet sie mit der Webseite (response). Um etwas ausliefern zu können, brauchen wir Inhalte. Und Django hilft dir dabei, diese Inhalte zu erstellen.
 
 ## Was passiert, wenn jemand eine Webseite beim Server anfordert?
 
