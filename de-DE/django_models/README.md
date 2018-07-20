@@ -148,7 +148,7 @@ Die Zeilen, die mit `from` oder `import` beginnen, sind Anweisungen, um Sachen a
 
 `class Post(models.Model):` – Diese Zeile definiert unser Model (eine Objekt-Vorlage).
 
-- `class` ist ein spezielles Schlüsselwort, womit wir angeben, dass wir hier eine Klasse, eine Vorlage für zukünftige Objekte, definieren wollen.
+- `class` ist ein spezielles Schlüsselwort, das angibt, dass wir hier eine Klasse, eine Vorlage für zukünftige Objekte, definieren wollen.
 - `Post` ist der Name unseres Models. Wir können ihm auch einen anderen Namen geben (aber wir müssen Sonderzeichen und Leerzeichen vermeiden). Beginne einen Klassennamen immer mit einem Großbuchstaben.
 - `models.Model` gibt an, dass das Post-Model ein Django-Model ist, so weiß Django, dass es in der Datenbank gespeichert werden soll.
 
@@ -159,7 +159,7 @@ Jetzt definieren wir die Eigenschaften, über welche wir gesprochen haben: `titl
 - `models.DateTimeField` – ein Feld für einen Zeitpunkt (ein Datum und eine Uhrzeit).
 - `models.ForeignKey` – definiert eine Verknüpfung/Beziehung zu einem anderen Model.
 
-Wir werden nicht den gesamten Code hier erklären, da das zu lange dauern würde. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Wir werden nicht den gesamten Code hier erklären, da das zu lange dauern würde. Du solltest einen Blick in die offizielle Django-Dokumentation werfen, wenn du mehr über Modelfelder und darüber wissen möchtest, wie man auch andere Dinge als die oben beschriebenen definiert (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
 Was ist mit `def publish(self):`? Das ist genau die `publish`-Methode zum Veröffentlichen unserer Blogposts, über die wir vorher bereits sprachen. `def` zeigt an, dass es sich nachfolgend um eine Funktion/Methode handelt, und `publish` ist der Name der Methode. Du kannst den Namen der Methode auch ändern, wenn du möchtest. Die Benennungsregel ist, dass wir Kleinbuchstaben verwenden, und anstatt Leerzeichen (die in Funktionsnamen nicht vorkommend dürfen) Unterstriche. Eine Methode, die einen Durchschnittspreis berechnet, könnte zum Beispiel `calculate_average_price` genannt werden.
 
