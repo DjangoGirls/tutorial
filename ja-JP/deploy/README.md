@@ -190,7 +190,7 @@ PythonAnywhereのコードをlsを使って見てみることもできます：
     templates  tests.py  urls.py  views.py
     
 
-また、「ファイル」タブに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して移動することもできます。
+また、「ファイル」タブに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。
 
 ## You are now live!
 
