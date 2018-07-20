@@ -53,7 +53,7 @@ Django va rechercher automatiquement tous les dossiers dits "statiques" à l'int
 
 ## Votre premier fichier CSS !
 
-Let's create a CSS file now, to add your own style to your web page. Créez un nouveau dossier appelé `css` à l'intérieur de votre dossier `static`. Ensuite, créez un nouveau fichier appelé `blog.css` à l'intérieur du dossier `css`. Vous êtes prête ?
+Nous allons maintenant créer un fichier CSS afin de personnaliser votre page. Créez un nouveau dossier appelé `css` à l'intérieur de votre dossier `static`. Ensuite, créez un nouveau fichier appelé `blog.css` à l'intérieur du dossier `css`. Vous êtes prêt ?
 
     djangogirls
     └─── blog
@@ -64,11 +64,11 @@ Let's create a CSS file now, to add your own style to your web page. Créez un n
 
 Et c'est parti pour un peu de CSS ! Ouvrez le fichier `static/css/blog.css` dans votre éditeur de texte.
 
-Nous ne serons pas trop ajuster et apprendre CSS ici. Il y a une recommandation pour un cours CSS gratuit à la fin de cette page si vous voulez en savoir plus.
+Nous n'irons pas trop loin dans la personnalisation et l'apprentissage du CSS ici. Il y a à la fin de cette page une recommandation pour un cours CSS gratuit si vous souhaitez en savoir plus.
 
-Que pourrions-nous faire rapidement ? Pourquoi ne pas changer la couleur de notre en-tête ? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies](http://www.w3schools.com/colors/colors_names.asp), comme le `rouge` et le `vert`.
+Que pourrions-nous faire rapidement ? Pourquoi ne pas changer la couleur de notre en-tête ? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. Ce code commence par un `#` suivi de 6 lettres (A-F) et chiffres (0-9). Par exemple, le code pour du bleu est `#0000FF`. Afin de trouver le code associé à la couleur de votre choix, vous pouvez consulter le site http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies](http://www.w3schools.com/colors/colors_names.asp), comme `red` ou `green`.
 
-Ajoutez le code suivant dans votre fichier `blog/static/css/blog.css` :
+Dans votre fichier `blog/static/css/blog.css`, ajoutez le code suivant :
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` est un sélecteur CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Dans notre exemple précédent, nous indiquions notre souhait de changer la couleur du texte en `#FCA205`, c'est à dire en orange. Bien évidemment, vous êtes libre de choisir n'importe quelle couleur !
+`h1 a` est un sélecteur CSS. Cela signifie que notre style est appliqué sur tous les éléments `a` contenu dans un élément `h1`. Donc lorsque nous avons quelque chose comme `<h1><a href="">lien</a></h1>`, le style `h1 a` est appliqué. Dans notre exemple précédent, nous indiquions notre souhait de changer la couleur du texte en `#FCA205`, c'est à dire en orange. Bien évidemment, vous êtes libre de choisir n'importe quelle couleur !
 
 Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. La première façon dont nous permettent d'identifier des éléments est avec le nom de l'élément. Vous pouvez vous souvenir de cela comme une balise de la section HTML. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class et id sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les ids désignent des éléments précis. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
