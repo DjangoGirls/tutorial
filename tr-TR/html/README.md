@@ -74,7 +74,7 @@ Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye
 ```html
 <html>
     <head>
-        <title>Ola'nın blogu</title>
+        <title>Zeynep'in blogu</title>
     </head>
     <body>
         <p>Merhaba!</p>
@@ -89,9 +89,9 @@ Dosyayı kaydedin ve sayfanızı yenileyin.
 
 Tarayıcınızın "Zeynep'in blogu" başlığını nasıl anladığını fark ettiniz mi? `<title>Zeynep'in blogu</title>` kısmını başlık olarak yorumlayarak yazıyı tarayıcının başlık kısmına yerleştirdi. (Bu yazı yer işaretleri gibi yerlerde de kullanılır).
 
-Her açılan etiketin benzer bir *kapatan etiket*, `/` ile başlayan, ile kapatılmalıdır. Ayrıca bu etiketler *iç içe* yerleştirilebilir (bu da bir etiketi kapatabilmek için, içindeki tüm etiketlerin kapanmış olmasını gerektirir).
+Her açılan etiketin `/<1>ile başlayan bir <em>kapatan etiket</em>'i ile kapatılması gerekmektir. Ayrıca bu etiketler <em>iç içe</em> yerleştirilebilir (bu da bir etiketi kapatabilmek için, içindeki tüm etiketlerin kapanmış olmasını gerektirir).</p>
 
-Bir şeyleri kutulara yerleştirmek gibi. Büyük bir kutuda `<html></html>` olsun; onun içinde `<body></body>` kutusu olsun, onun da içinde daha küçük kutular olsun: `<p></p>`.
+<p>Bir şeyleri kutulara yerleştirmek gibi. Büyük bir kutuda <code><html></html>` olsun; onun içinde `<body></body>` kutusu olsun, onun da içinde daha küçük kutular olsun: `<p></p>`.
 
 Bu *kapatma* etiketleri ve *yuvalama* ögeleri kurallarını takip etmeye ihtiyacınız vardır - eğer yapmazsanız tarayıcı onları gerektiği gibi açıklayamayabilir ve sayfanız hatalı olarak görüntülenecektir.
 
