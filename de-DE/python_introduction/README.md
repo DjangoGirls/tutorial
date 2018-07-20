@@ -825,14 +825,14 @@ if volume < 20 or volume > 80:
     print("So ist's besser!")
 ```
 
-Du musst nicht für jede Codezeile einen Kommentar schreiben, aber Kommentare sind nützlich um zu erklären, wieso dein Code etwas macht, oder um zusammenzufassen, wenn er etwas komplexes tut.
+Du musst nicht für jede Codezeile einen Kommentar schreiben, aber Kommentare sind nützlich um zu erklären, wieso dein Code etwas macht, oder um zusammenzufassen, wenn er etwas Komplexes tut.
 
 ### Zusammenfassung
 
 In den letzten paar Übungen hast du gelernt:
 
 - **Vergleiche vorzunehmen** – in Python kannst du Vergleiche mit den folgenden Operatoren `>`, `>=`, `==`, `<=`, `<` sowie `and` und `or` vornehmen
-- **Boolsche Datentypen** zu verwenden – Dies sind Objekte, die nur zwei Werte annehmen können: `True` bzw. `False`
+- **Boolsche Datentypen** zu verwenden – dies sind Objekte, die nur zwei Werte annehmen können: `True` bzw. `False`
 - **Dateien zu speichern** – also Programmcode in Dateien abzulegen, so dass du auch umfangreichere Programme schreiben kannst.
 - **if … elif … else** – Anweisungen, die dir erlauben, bestimmte Programmteile nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.
 - **Kommentare** – Zeilen, die Python nicht ausführt und die dir ermöglichen deinen Code zu dokumentieren
@@ -843,7 +843,7 @@ Zeit für den letzten Teil dieses Kapitels!
 
 > Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) behandelt.
 
-Erinnerst du dich an Funktionen wie `len()`, die du in Python aufrufen kannst? Prima! Du wirst nun lernen, eigenen Funktionen zu schreiben.
+Erinnerst du dich an Funktionen wie `len()`, die du in Python aufrufen kannst? Prima! Du wirst nun lernen, eigene Funktionen zu schreiben!
 
 Eine Funktion ist eine Folge von Anweisungen, die Python ausführen soll. Jede Funktions-Definition beginnt mit dem Schlüsselwort (engl. "Keyword") `def`, bekommt einen Namen und kann Argumente (manchmal auch "Parameter" genannt) haben. Probieren wir's aus! Ersetze den Code in der Datei **python_intro.py** mit dem folgenden:
 
