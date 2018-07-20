@@ -28,7 +28,7 @@ Jedes Objekt einer `Katze` soll natürlich auch einige Aktionsmöglichkeiten bes
     geschmack
     
 
-Der Gedanke dahinter ist also, echte Dinge mit Hilfe von Eigenschaften (genannt `Objekteigenschaften`) und Aktionsmöglichkeiten (genannt `Methoden`) im Programmcode zu beschreiben).
+Der Gedanke dahinter ist also, echte Dinge mit Hilfe von Eigenschaften (genannt `Objekteigenschaften`) und Aktionsmöglichkeiten (genannt `Methoden`) im Programmcode zu beschreiben.
 
 Wie also modellieren wir Blogposts? Schließlich wollen wir ja einen Blog bauen, nicht wahr?
 
@@ -112,9 +112,9 @@ INSTALLED_APPS = [
 
 ### Das Blogpost-Model
 
-Alle `Model`s unserer Applikation werden in der `blog/models.py`-Datei definiert. Dies ist also der richtige Platz für unser Blogpost-Model.
+Alle `Models` unserer Applikation werden in der `blog/models.py`-Datei definiert. Dies ist also der richtige Platz für unser Blogpost-Model.
 
-Öffnen wir also `blog/models.py`, lösche alles darin und schreibe Code wie diesen:
+Öffnen wir also `blog/models.py`, löschen alles darin und schreiben Code wie diesen:
 
 {% filename %}blog/models.py{% endfilename %}
 
