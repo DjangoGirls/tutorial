@@ -40,9 +40,9 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 
 {% raw %}Gizemli `{% url 'post_detail' pk=post.pk %}` satırını anlatma zamanı. Şüphelendiğiniz üzere, `{% %}` notasyonu, Django template tags (şablon etiketleri) kullandığımız manasına geliyor. Bu sefer bizim için URL oluşturacak bir şablon (template) etiketi kullanacağız!{% endraw %}
 
-`post_detail` kısmı Django'nun `blog/urls.py/0> dosyasının içinde post_detail adlı bir URL beklediği anlamına gelir.</p>
+`post_detail` kısmı Django'nun `blog/urls.py/` dosyasının içinde post_detail adlı bir URL beklediği anlamına gelir.
 
-<p>Peki <code>pk=post.pk`? `pk` primary key (birincil anahtar) için kullanılan kısaltmadır, veritabanındaki her kayıt için verilen özgün (eşsiz) bir isimdir. `Post` modelimiz için bir primary key tanımlamamış olduğumuz için, Django onu bizim için otomatik olarak oluşturdu (genelde, her kayıt için bir artan numara ile, örnek 1, 2, 3) ve her post için `pk` adlı bir alan ekledi. Primary key'e erişmek için `post.pk` yazarız, tıpkı `Post` objesindeki diğer alanlara eriştiğimiz gibi (`title`, `author`, vb.)!
+Peki `pk=post.pk`? `pk` primary key (birincil anahtar) için kullanılan kısaltmadır, veritabanındaki her kayıt için verilen özgün (eşsiz) bir isimdir. `Post` modelimiz için bir primary key tanımlamamış olduğumuz için, Django onu bizim için otomatik olarak oluşturdu (genelde, her kayıt için bir artan numara ile, örnek 1, 2, 3) ve her post için `pk` adlı bir alan ekledi. Primary key'e erişmek için `post.pk` yazarız, tıpkı `Post` objesindeki diğer alanlara eriştiğimiz gibi (`title`, `author`, vb.)!
 
 Şimdi http://127.0.0.1:8000/ adresine gittiğimizde bir hata ile karşılaşacağız (`post_detail` için bir URL ya da *görüntü (view)* olmadığı için hatayı almamız normal). Hata böyle görünecektir:
 
