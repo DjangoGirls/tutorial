@@ -136,7 +136,7 @@ Evet. http://127.0.0.1:8000/ sayfasını tazeleme zamanı
 
 Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bir template eklememiz gerekiyor!
 
-## Gönderi detayları için bir şablon oluştur
+## Post(gönderi) detayları için bir template(şablon) oluştur
 
 `blog/templates/blog` dizininde `post_detail.html` adında bir dosya oluşturacağız.
 
@@ -160,7 +160,7 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 {% endblock %}
 ```
 
-Bir kere daha `base.html` dosyasıa ekleme yapacağız. `content` blogunda bir gönderinin varsa yayınlama tarihini, başlığını ve metnini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
+Bir kere daha `base.html` dosyasıa ekleme yapacağız. `content` blogunda bir gönderinin varsa published_date title ve text'ini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
 
 {% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir şablon etiketidir. ( `if ... else ..` ifadelerini **Python'a Giriş** bölümünden hatırladın mı?) Bu durumda eğer gönderinin `published_date` kısmı boş değilse kontrol etmek isteriz.{% endraw %}
 
