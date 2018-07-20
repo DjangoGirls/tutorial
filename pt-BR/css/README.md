@@ -297,7 +297,7 @@ Salve esses arquivos e atualize seu site.
 
 Uhuul! Parece incrível, certo? Olhe para o código que acabamos de colar para encontrar os locais onde adicionamos classes no HTML e as usamos no CSS. Onde você faria a mudança se você quisesse a data na cor turquesa?
 
-Não tenha medo de mexer um pouco com esse CSS e tentar mudar algumas coisas. Brincar com o CSS pode ajudá-lo a entender o que diferentes coisas estão fazendo. Se você quebrar algo, não se preocuoe - você sempre pode desfazê-lo!
+Não tenha medo de mexer um pouco com esse CSS e tentar mudar algumas coisas. Brincar com o CSS pode ajudá-lo a entender o que diferentes coisas estão fazendo. Se você quebrar algo, não se preocupe - você sempre pode desfazê-lo!
 
 Nós realmente recomendamos realizar este curso gratuito on-line: [Curso de HTML & CSS do Codeacademy](https://www.codecademy.com/tracks/web). Isso pode ajudá-la a aprender tudo sobre como fazer seus sites mais bonito com CSS.
 
