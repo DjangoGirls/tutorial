@@ -50,11 +50,11 @@ Peki `pk=post.pk`? `pk` primary key (birincil anahtar) için kullanılan kısalt
 
 ## Bir gönderinin detayı için URL oluşturun
 
-`post_detail` *view*'ümüz için `urls.py`'un içinde bir URL oluşturalım!
+`post_detail` *view*'ımız için `urls.py`'un içinde bir URL oluşturalım!
 
 İlk gönderimizin detayının şu **URL**'de gösterilmesini istiyoruz: http://127.0.0.1:8000/post/1/
 
-`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'una işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. Dosya şöyle gözükmeli:
+`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'ına işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. Dosya şöyle gözükmeli:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -84,7 +84,7 @@ Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: view'ü eklemek
 
 ## Gönderi detayı için bir view ekleyin
 
-Bu sefer *view*'ümüze `pk` adında bir parametre ekleyeceğiz. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Dikkat edin, url'lerde kullandığımız ismin birebir aynısını kullanmamız gerekiyor (`pk`). Bu değişkeni kullanmamak yanlıştır ve hataya sebep olacaktır!
+Bu sefer *view*'ımıza `pk` adında bir parametre ekleyeceğiz. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Dikkat edin, url'lerde kullandığımız ismin birebir aynısını kullanmamız gerekiyor (`pk`). Bu değişkeni kullanmamak yanlıştır ve hataya sebep olacaktır!
 
 Şimdi sadece ve sadece bir tane blog gönderisi almak istiyoruz. Bunu yapmak için şunun gibi sorgu setlerini/kümelerini kullanabiliriz:
 
