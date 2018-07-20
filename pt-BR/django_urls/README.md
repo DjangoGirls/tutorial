@@ -1,14 +1,14 @@
 # Django URLs
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+Estamos prestes a construir nossa primeira página Web: uma página inicial para o seu blog! Mas primeiro, vamos aprender um pouco mais sobre as URLs do Django.
 
 ## O que é uma URL?
 
-Uma URL é simplesmente um endereço da web. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` é uma URL! And `https://djangogirls.org` is also a URL.)
+Uma URL é simplesmente um endereço da web. Você pode ver uma URL toda vez que você visita um website - ela é visível na barra de endereços do seu navegador. (Sim! `127.0.0.1:8000` é uma URL! E `https://djangogirls.org` também é uma URL.)
 
 ![URL](images/url.png)
 
-Cada página na Internet precisa de sua própria URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Cada página na Internet precisa de sua própria URL. Desta forma, sua aplicação sabe o que deve mostrar a um usuário que abre uma URL. Em Django, usamos algo chamado `URLconf` (configuração de URLs). URLconf é um conjunto de padrões que o Django vai usar para comparar com a URL recebida para encontrar a resposta correta.
 
 ## Como funcionam as URLs em Django?
 
@@ -29,11 +29,11 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+Como você pode ver, o Django já colocou alguma coisa aqui pra nós.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. Elas não serão executadas pelo Python.
+Linhas entre aspas triplas (`'''` ou `"""`) são chamados de docstrings -- você pode escrevê-las no topo de um arquivo, classe ou método para descrever o que ele faz. Elas não serão executadas pelo Python.
 
-The admin URL, which you visited in the previous chapter, is already here:
+A URL do admin, que você visitou no capítulo anterior, já está aqui:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,7 +41,7 @@ The admin URL, which you visited in the previous chapter, is already here:
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Isso significa que para cada URL que começa com `admin /` o Django irá encontrar uma *view* correspondente. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Your first Django URL!
 
