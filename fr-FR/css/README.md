@@ -88,7 +88,7 @@ Un fichier CSS permet de déterminer le style des éléments présents dans un f
 
 Apprenez-en plus à propos des [Sélecteurs CSS sur W3Schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+Nous devons aussi signaler à notre template HTML que nous utilisons du CSS. Ouvrez le fichier `blog/templates/blog/post_list.html` et ajouter cette ligne au tout début :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
