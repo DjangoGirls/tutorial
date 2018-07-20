@@ -12,20 +12,20 @@ Se quisermos modelar um gato, criaremos um objeto `Gato` que tem propriedades co
 
 E então o `Gato` tem algumas ações: `ronronar`, `arranhar` ou `alimentar` (no qual vamos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades, como `sabor`).
 
-    Cat
+    Gato
     --------
-    color
-    age
-    mood
-    owner
-    purr()
-    scratch()
-    feed(cat_food)
+    cor
+    idade
+    temperamento
+    dono
+    ronronar()
+    arranhar()
+    alimentar(comida_de_gato)
     
 
-    CatFood
-    --------
-    taste
+    ComidaDeGato
+    ------------
+    sabor
     
 
 Então, basicamente, a ideia é descrever coisas reais no código com propriedades(chamadas de `propriedades do objeto`) e ações (chamadas de `métodos`).
@@ -34,7 +34,7 @@ Como nós iremos modelar as postagens do blog então? Queremos construir um blog
 
 Nós precisamos responder as questões: O que é um post de blog? Que propriedades ele deve ter?
 
-Bem, com certeza nosso blog precisa de alguma postagem com o seu conteúdo e um título, certo? Também seria legal saber quem escreveu – então precisamos de um autor. Finalmente, queremos saber quando a postagem foi criada e publicada.
+Bem, com certeza nosso blog precisa de alguma postagem com o seu conteúdo e um título, certo? Também seria legal saber quem escreveu – então precisamos de um autor. Finalmente, queremos saber quando a postagem foi criada e publicada. Para ficar chique, vamos fazer em inglês.
 
     Post
     --------
@@ -73,7 +73,7 @@ Para manter tudo arrumado vamos criar um aplicativo separado dentro do nosso pro
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Você vai notar que um novo diretório `blog` foi criado e que ele contém um vários arquivos. Algo como a lista abaixo:
 
     djangogirls
     ├── blog
@@ -112,9 +112,9 @@ INSTALLED_APPS = [
 
 ### Criando o modelo Post do nosso blog
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+No arquivo `blog/models.py` definimos todos os objetos chamados `Modelos` -- este é um lugar em que vamos definir nossa postagem do blog.
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+Vamos abrir `blog/models.py`, remova tudo dele e escreva o código como este:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -142,17 +142,17 @@ class Post(models.Model):
 
 > Verifique que você usou dois caracteres de sublinhado (`_`) a cada lado de `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, chamamos de "dunder" (redução de "double-underscore").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Parece assustador, certo? Mas não se preocupe, iremos explicar o que essas linhas significam!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Todas as linhas começando com `from` ou `import` são linhas que adicionam alguns pedaços de outros arquivos. Então ao invés de copiar e colar as mesmas coisas em cada arquivo, podemos incluir algumas partes com `from... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` -- esta linha define o nosso modelo (é um `objeto`).
 
 - `class` é uma palavra-chave especial que indica que estamos definindo um objeto.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `Post` é o nome do nosso modelo. Nós podemos dar um nome diferente (mas precisamos evitar caracteres especiais e espaços em branco). Sempre inicie o nome de uma classe com uma letra em maiúsculo.
 - `models.Model` significa que o Post é um modelo de Django, então o Django sabe ele que deve ser salvo no banco de dados.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Agora definimos as propriedades que comentamos acima: `title`, `text`, `created_date`, `published_date` e `author`. Para fazermos isso, nós precisamos definir um tipo para cada campo (É um texto? Um número? Uma data? Uma relação com outro objeto, por exemplo, um usuário?)
 
 - `models.CharField` – this is how you define text with a limited number of characters.
 - `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
