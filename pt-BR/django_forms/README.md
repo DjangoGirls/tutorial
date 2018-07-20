@@ -442,8 +442,8 @@ Vamos ver se tudo isso funciona no PythonAnywhere. Tempo para outro deploy!
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Lembre-se de substituir o `<your-pythonanywhere-username>` com seu username do PythonAnywhere, sem os símbolos < e >).
 
 * Finalmente, pule para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload**.
 
-And that should be it! Congrats :)
+E deve ser isso! Parabéns :)
