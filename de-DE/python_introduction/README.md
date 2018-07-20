@@ -559,7 +559,7 @@ Es gibt zwei Boolean-Objekte:
 
 Damit Python diese beiden Werte versteht, musst du sie auch genau so schreiben (den ersten Buchstaben groß, alle weiteren klein). **true, TRUE und tRUE funktionieren nicht – nur True ist korrekt.** (Dasselbe gilt natürlich auch für False.)
 
-Auch Booleans können Variablen sein:
+Auch Booleans können Variablen zugewiesen werden:
 
 {% filename %}command-line{% endfilename %}
 
