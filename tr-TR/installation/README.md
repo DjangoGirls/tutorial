@@ -4,7 +4,7 @@ Eğer tutorial'ı [Django Girls etkinliklerinden](https://djangogirls.org/events
 
 Çünkü burada anlatılanları tutorial boyunca zaten işliyoruz, bu kısım kurulum talimatlarının tek yerde toparlandığı ek bir sayfa sadece. Django Girls etkinliği, çalıştay boyunca tekrar kurulumla uğraşmamak adına her şeyi yüklediğimiz bir "Kurulum akşamı" içeriyor.
 
-Eğer bunu yararı bulduysanız, bu bölümü de takip edebilirsiniz. Ama eğer bilgisayarınıza birkaç şey yüklemeden önce bir şeyler öğrenmeye başlamak istiyorsanız, bu bölümü atlayın. Daha sonra kurulum kısmını size açıklayacağız. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+Eğer bunu yararı bulduysanız, bu bölümü de takip edebilirsiniz. Ama bilgisayarınıza birkaç şey yüklemeden önce bir şeyler öğrenmeye başlamak istiyorsanız, bu bölümü atlayın. Daha sonra kurulum kısmını size açıklayacağız.
 
 İyi şanslar!
 
