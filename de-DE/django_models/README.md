@@ -8,7 +8,7 @@ Eine Herangehensweise an das Programmieren ist das so genannte `objektorientiert
 
 Was ist denn nun ein Objekt? Ein Objekt ist eine Sammlung von Eigenschaften und Aktionsmöglichkeiten, das anhand einer Vorlage (Klasse) erstellt wird. Das klingt erst einmal komisch, aber hier haben wir gleich ein Beispiel.
 
-Wenn wir zum Beispiel eine Katze modellieren wollen, erschaffen wir eine Objektvorlage `Katze`, eine Art Blaupause oder Schema, nach welcher zukünftig jedes spezifische Katzenobjekt erstellt werden kann. Die Vorlage beschreibt typische Eigenschaften von Katzen, z.B. `farbe`, `alter`, `stimmung` (also gut, schlecht oder müde ;)), `besitzer` (der ein `Person`-Objekt ist oder – im Falle eines Streuners – leer bleibt).
+Wenn wir zum Beispiel eine Katze modellieren wollen, erschaffen wir eine Objektvorlage `Katze`, eine Art Blaupause oder Schema, nach welcher zukünftig jedes spezifische Katzenobjekt erstellt werden kann. Die Vorlage beschreibt typische Eigenschaften von Katzen, z.B. `farbe`, `alter`, `stimmung` (also gut, schlecht oder müde ;)), `besitzerin` (die ein `Person`-Objekt ist oder – im Falle einer Streunerkatze – leer bleibt).
 
 Jedes Objekt einer `Katze` soll natürlich auch einige Aktionsmöglichkeiten besitzen: `schnurren`, `kratzen` oder `füttern` (hier bekäme die Katze ein bisschen `Katzenfutter`, welches wieder durch ein eigenes Objekt mit Eigenschaften wie `Geschmack` repräsentiert sein könnte).
 
