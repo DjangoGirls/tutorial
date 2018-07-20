@@ -43,7 +43,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Okumaya başlayın
 
-Tebrikler, kurulumunuz tamamen bitti ve başlamaya hazırsınız! Eğer çalıştaydan önce hala biraz vaktiniz varsa, başlangıç bölümlerinden birkaç tanesini okumaya başlamanız faydalı olacaktır:
+Tebrikler, ayarlarınız tamam ve hazırsınız! Eğer atölyeden önce hala vaktiniz var ise, başlangıç bölümlerinden bazılarını okumanız yararlı olacaktır:
 
 * [İnternet nasıl çalışır](../how_the_internet_works/README.md)
 
