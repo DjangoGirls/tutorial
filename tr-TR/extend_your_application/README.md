@@ -10,7 +10,7 @@ Blog'umuzda lazım olan ilk şey bir gönderiyi göstermek için bir sayfa, değ
 
 Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir şey eklememize gerek yok.
 
-## Bir gönderinin detayı için bir şablon linki oluşturun
+## Bir gönderinin detayı için bir template(şablon) linki oluşturun
 
 `blog/templates/blog/post_list.html` dosyasının içine bir bağlantı ekleyerek başlayacağız.Şimdiye kadar bunun gibi görünmesi gerek: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
