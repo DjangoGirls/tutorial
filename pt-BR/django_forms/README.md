@@ -230,7 +230,7 @@ Finalmente, seria fantástico se nós pudéssemos imediatamente ir à página `p
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Adicione-o logo no início do seu arquivo. E agora podemos dizer: "vá para a página `post_detail` para um recém-criado post":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +238,9 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` é o nome da vista (view) à qual queremos ir. Lembre-se que essa *view* exige uma variável `pk`? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` é o nome da vista (view) à qual queremos ir. Lembre-se que essa *view* exige uma variável `pk`? Para passar isso nas `views` usamos `pk=post.pk`, onde post é o recém-criado post do blog!
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+Ok, nós falamos muito, mas provavelmente queremos ver o que toda a *view* irá parecer agora, certo?
 
 {% filename %}blog/views.py{% endfilename %}
 
