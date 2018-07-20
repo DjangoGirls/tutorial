@@ -52,6 +52,6 @@ Achte darauf, dass bei wenigstens zwei oder drei Posts (aber nicht bei allen) da
 
 !["Django Admin"-Weboberfläche](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+Mehr zum Django Admin Dashboard kannst du in der Django Dokumentation erfahren: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/.
 
-Jetzt ist wahrscheinlich ein guter Moment, um dir einen Kaffee (oder Tee) zu gönnen und neue Kraft zu tanken. Du hast dein erstes Django-Modell erstellt - du hast dir eine kleine Pause verdient!
+Jetzt ist wahrscheinlich ein guter Moment, um dir einen Kaffee (oder Tee) zu gönnen und neue Kraft zu tanken. Du hast dein erstes Django-Model erstellt - du hast dir eine kleine Pause verdient!
