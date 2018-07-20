@@ -65,9 +65,9 @@ Lass uns kurz die anderen Dateien vergessen - wir werden sie nicht verändern. D
 
 ## Einstellungen anpassen
 
-Wir machen nun ein paar Änderungen in `mysite/settings.py`. Öffne die Datei mit dem Codeeditor, den du vorhin installiert hast.
+Wir machen nun ein paar Änderungen in `mysite/settings.py`. Öffne die Datei mit dem Code-Editor, den du schon installiert hast.
 
-**Hinweis**: `settings.py` ist eine Datei wie jede andere. Du kannst sie aus deinem Code-Editor heraus öffnen, in dem du im "Datei"-Menü die "Öffnen"-Aktion wählst. So solltest du das normale Fenster zur Dateiauswahl bekommen, in dem du zur `settings.py`-Datei navigieren und sie auswählen kannst. Stattdessen kannst du die Datei aber auch öffnen, in dem du im Dateimanager zum "djangogirls"-Ordner navigierst und auf die Datei rechtsklickst. Wähle dann deinen Code-Editor aus der Liste der "Öffnen mit"-Programme. Das ist wichtig, da du andere programme installiert haben könntest, die diese Datei zwar öffnen können, aber die dich die Datei nicht editieren lassen würden.
+**Hinweis**: `settings.py` ist eine Datei wie jede andere. Du kannst sie aus deinem Code-Editor heraus öffnen, in dem du im "Datei"-Menü die "Öffnen"-Aktion wählst. So solltest du das normale Fenster zur Dateiauswahl bekommen, in dem du zur `settings.py`-Datei navigieren und sie auswählen kannst. Stattdessen kannst du die Datei aber auch öffnen, in dem du im Dateimanager zum "djangogirls"-Ordner navigierst und auf die Datei rechtsklickst. Wähle dann deinen Code-Editor aus der Liste der "Öffnen mit"-Programme. Das ist wichtig, da du andere Programme installiert haben könntest, die diese Datei zwar öffnen können, aber die dich die Datei nicht editieren lassen würden.
 
 Es wäre schön, wenn die richtige Zeit auf deiner Webseite eingestellt ist. Gehe zur [Zeitzonen-Liste auf Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) und kopiere die für dich geltende Zeitzone (Spalte "TZ"), z.B. `Europe/Berlin`.
 
@@ -89,7 +89,7 @@ Wenn du eine andere Sprache als Englisch willst, ändere die Sprachkennung, inde
 LANGUAGE_CODE = 'de-ch'
 ```
 
-Ausserdem müssen wir einen Pfad für statische Dateien festlegen. (Über statische Dateien und CSS lernst du später in diesem Tutorial etwas.) Geh hinunter zum *Ende* der Datei und füge direkt unter dem `STATIC_URL`-Eingrag einen neuen Eintrag namens `STATIC_ROOT` ein:
+Ausserdem müssen wir einen Pfad für statische Dateien festlegen. (Über statische Dateien und CSS lernst du später in diesem Tutorial etwas.) Geh hinunter zum *Ende* der Datei und füge direkt unter dem `STATIC_URL`-Eintrag einen neuen Eintrag namens `STATIC_ROOT` ein:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -154,7 +154,7 @@ Und wir sind fertig! Zeit, unseren Webserver zu starten, um zu sehen, ob unsere 
 
 ## Den Webserver starten
 
-Kontrolliere, dass du in dem Verzeichniss bist, in dem die `manage.py`-Datei liegt (das `djangogirls`-Verzeichnis). Wir starten den Webserver, indem wir in der Konsole `python manage.py runserver` ausführen:
+Kontrolliere, dass du in dem Verzeichnis bist, in dem die `manage.py`-Datei liegt (das `djangogirls`-Verzeichnis). Wir starten den Webserver, indem wir in der Konsole `python manage.py runserver` ausführen:
 
 {% filename %}command-line{% endfilename %}
 
