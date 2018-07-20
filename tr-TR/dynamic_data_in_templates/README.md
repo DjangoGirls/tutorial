@@ -6,7 +6,7 @@ Bu tam olarak *view*'lerin yapmasını beklediğimiz şey: modelleri ve template
 
 Tamam, peki nasıl yapacağız?
 
-`blog/views.py`'ı açacağız. Şu anda `post_list` *view*ü şöyle:
+`blog/views.py`'ı açacağız. Şu anda `post_list` *view*'ı şöyle:
 
 {% filename %}blog/views.py{% endfilename %}
 
