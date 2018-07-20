@@ -159,16 +159,16 @@ Nun können wir mit dem Hilfstool unsere App von GitHub automatisch konfiguriere
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-Während Du die Ausführung verfolgst, wirst Du sehen, was passiert:
+Während du die Ausführung verfolgst, wirst du sehen, was passiert:
 
 - Den Code von GitHub herunterladen
 - Eine virtualenv auf PythonAnywhere erstellen wie du sie auf deinem PC hast
 - Deine Einstellungen mit ein paar Veröffentlichungseinstellungen aktualisieren
 - Eine Datenbank auf PythonAnywhere einrichten mit dem Befehl `manage.py migrate`
 - Deine statischen Dateien einrichten (darüber lernen wir später etwas)
-- PythonAnywhere so einrichten, dass es deine Web App via seine API präsentieren kann
+- PythonAnywhere so einrichten, dass es deine Web App über seine Schnittstelle (API) präsentieren kann
 
-Diese Schritte wurden auf PythonAnywhere automatisiert, aber es sind die selben Schritte, die Du bei jedem anderen Server Provider machen müsstest. Das wichtigste ist, dass du weisst, dass deine Datenbank auf PythonAnywhere komplett von deiner Datenbank auf deinem eigenen PC getrennt ist. Das bedeutet, sie kann unterschiedliche Posts und Administratorenkonten haben.
+Diese Schritte wurden auf PythonAnywhere automatisiert, aber es sind die selben Schritte, die du bei jedem anderen Server-Provider machen müsstest. Das Wichtigste ist, dass du weisst, dass deine Datenbank auf PythonAnywhere komplett von deiner Datenbank auf deinem eigenen PC getrennt ist. Das bedeutet, sie kann unterschiedliche Posts und Administratorenkonten haben.
 
 Aus diesem Grund müssen wir das Administratorenkonto mittels `createsuperuser` initialisieren - wie wir das auf deinem eigenen Computer getan haben. PythonAnywhere hat deine virtualenv automatisch für dich aktiviert. Du musst nur noch Folgendes ausführen:
 
@@ -177,7 +177,7 @@ Aus diesem Grund müssen wir das Administratorenkonto mittels `createsuperuser` 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Trage die Informationen für Deinen Administrator ein. Am Besten verwendest du die selben Daten wie auf deinem eigenen Computer um Verwechslungen zu vermeiden - es sei denn, du wills das Passwort auf PythonAnywhere sicherer machen.
+Trage die Informationen für deinen Administrator ein. Am Besten verwendest du die selben Daten wie auf deinem eigenen Computer, um Verwechslungen zu vermeiden - es sei denn, du willst das Passwort auf PythonAnywhere sicherer machen.
 
 Nun kannst auch einen Blick auf deinen Code auf PythonAnywhere werfen mittels `ls`:
 
@@ -196,13 +196,13 @@ Du kannst auch über den "Files"-Tab mit dem PythonAnywhere Built-in File Browse
 
 Nun ist deine Site also live im öffentlichen Internet! Klick dich bis zum PythonAnywhere "Web"-Tab durch und hole dir den Link. Teile ihn so oft du willst :)
 
-> **Hinweis:** Da es sich hier um ein Anfänger-Tutorial handelt, haben wir ein paar Abkürzungen genommen, um die Site zu veröffentlichen, welche sicherheitstechnisch nicht ideal sind. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> **Hinweis:** Da es sich hier um ein Anfänger-Tutorial handelt, haben wir ein paar Abkürzungen genommen, um die Site zu veröffentlichen, welche sicherheitstechnisch nicht ideal sind. Fall du dich entscheidest, dieses Projekt weiterzubauen oder ein neues Projekt anzufangen, dann solltest du die [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) durchgehen, um einige Tipps zur Absicherung deiner Seite zu erhalten.
 
 ## Debugging Tipps
 
 Solltest du beim Ausführen des `pa_autoconfigure_django.py` Skripts eine Fehlermeldung erhalten, findest du folgend ein paar bekannte Gründe hierfür:
 
-- Du hast vergessen deinen PythonAnywhere APi Token zu erstellen.
+- Du hast vergessen deinen PythonAnywhere API Token zu erstellen.
 - Du hast in deiner GitHub-URL einen Fehler gemacht.
 - Falls du die Fehlermeldung *"Could not find your settings.py"* erhältst, liegt das wahrscheinlich daran, dass du nicht alle Files zum Git hinzugefügt und/oder diese nicht erfolgreich auf GitHub veröffentlicht hast. Schau dir nochmals den Git-Abschnitt weiter oben an.
 
