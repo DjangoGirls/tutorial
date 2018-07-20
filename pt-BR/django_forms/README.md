@@ -1,6 +1,6 @@
 # Formulários
 
-Por último, queremos uma forma legal de adicionar e editar as postagens do nosso blog. A `ferramenta de administração` do Django é legal, mas ela é um pouco difícil de customizar e de deixar mais bonita. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Por último, queremos uma forma legal de adicionar e editar as postagens do nosso blog. A `ferramenta de administração` do Django é legal, mas ela é um pouco difícil de customizar e de deixar mais bonita. Com `formulários`, temos poder absoluto sobre nosso interface - podemos fazer quase tudo que podemos imaginar!
 
 Uma coisa legal do Django é que nós podemos tanto criar um formulário do zero como podemos criar um `ModelForm` que salva o resultado do formulário em um determinado modelo.
 
@@ -124,7 +124,7 @@ Hora de abrir o arquivo `blog/views.py` e adicionar as linhas seguintes com o re
 from .forms import PostForm
 ```
 
-And then our *view*:
+E daí nosso *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,7 +134,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Para criar um novo formulario `Post`, nós devemos chamar `PostForm()` e passá-lo para o template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Para criar um novo formulario `Post`, nós devemos chamar `PostForm()` e passá-lo para o template. Vamos voltar para este *view* depois, mais por em quanto, vamos criar uma template para o formulário.
 
 ## Template
 
