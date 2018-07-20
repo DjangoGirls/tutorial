@@ -106,9 +106,9 @@ Bunu istemiyoruz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or4
 
 Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
 
-`blog/urls.py` içinde `views.post_detail` denilen bir görünüm ifade eden `post_detail` adında bir URL kuralı oluşturduk. Bunun anlamı Django `blog/views.py` içindeki `post_detail` adlı bir görünüm fonksiyonunu bekliyor demektir.
+`blog/urls.py` içinde `views.post_detail` denilen bir görünüm ifade eden `post_detail` adında bir URL kuralı oluşturduk. Bu, Django'nun ` blog / views.py </ 0> içinde <code> post_detail </ 0> adlı bir görünüm fonksiyonu bekleyeceği anlamına gelir.</p>
 
-`blog/views.py` 'i açmalıyız ve diğer `from` satırının yanına şu kodları eklemeliyiz:
+<p><code>blog/views.py` 'i açmalıyız ve diğer `from` satırının yanına şu kodları eklemeliyiz:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
 from django.shortcuts import render, get_object_or_404
 ```
 
-Ve dosyanın sonuna kendi *görünüm*'ümüzü ekliyeceğiz:
+Ve dosyanın sonuna kendi *view*'ımızı ekleyeceğiz:
 
 {% filename %}blog/views.py{% endfilename %}
 
