@@ -55,6 +55,6 @@ Créez un compte [GitHub](https://github.com).
 
 Le tutoriel Django Girls comprend une section sur ce qui est appelé le Déploiement, processus qui permet de déplacer le code de votre application web vers un ordinateur public (appelé serveur) pour que d'autres personnes puissent voir votre travail.
 
-Cette partie est un peu bizarre quand on fait le tutoriel sur un Chromebook depuis que nous sommes déjà l'utilisation d'un ordinateur sur l'Internet (par opposition, par exemple, un ordinateur portable). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Cette partie est un peu étrange quand on fait le tutoriel sur un Chromebook puisque nous utilisons déjà un ordinateur qui est sur Internet (par opposition, par exemple, à un ordinateur portable). Cependant, c'est toujours utile, car nous pouvons penser à notre espace de travail Cloud 9 comme un endroit pour notre travail " en cours " et Python Anywhere comme un endroit pour montrer notre projet à mesure qu'il devient plus complet.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Donc, inscrivez-vous pour un nouveau compte Python Anywhere sur [www.pythonanywhere.com](https://www.pythonanywhere.com).
