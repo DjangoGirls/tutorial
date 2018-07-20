@@ -70,7 +70,7 @@ Tüm komutlar bu işaret ve bir boşluktan sonra gelir fakat bunu yazmak zorunda
 
 Başında `$` veya `>` içeren kısımlar *komut satırı istemi* veya kısaca *komut istemi*'dir. Buraya bir şeyler girilir.
 
-Bu kılavuzda bir komut girmeniz istendiğinde, biz `$` veya `>` ekleyeceğiz, genellikle sola doğru. Sol tarafı göz ardı edeiblirsiniz ve işlemi başlatan komutu gireiblirsiniz.
+Bu kılavuzda bir komut girmeniz istendiğinde, biz `$` veya `>` ekleyeceğiz, genellikle sola doğru. Sol tarafı göz ardı edebilir ve işlemi başlatan komutu girebilirsiniz.
 
 ## İlk komutunuz (Yaşasın!)
 
