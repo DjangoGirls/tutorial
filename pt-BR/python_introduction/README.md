@@ -912,7 +912,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Oops, um erro. Felizmente, Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `hi()` (aquela que declaramos) tem um argumento obrigatório (chamado `name`) e que nós esquecemos de passá-lo ao chamar a função. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -920,7 +920,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+E rode novamente:
 
 {% filename %}command-line{% endfilename %}
 
@@ -928,7 +928,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+E se mudarmos o nome?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -936,7 +936,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+E rode novamente:
 
 {% filename %}command-line{% endfilename %}
 
@@ -944,16 +944,16 @@ And run it:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Agora, o que você acha que aconteceria se você escrevesse um outro nome lá (que não seja "Ola" ou "Sonja")? Faça um teste e verifique se você estava certo. Ele deve imprimir o seguinte:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Isto é incrível, não? Dessa maneira você não precisa se repetir cada vez que for mudar o nome da pessoa que a função pretende cumprimentar. And that's exactly why we need functions – you never want to repeat your code!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+Vamos fazer algo mais inteligente -- existem mais que dois nomes e escrever uma condição para cada um seria difícil, certo?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -964,7 +964,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+Vamos chamar o código agora:
 
 {% filename %}command-line{% endfilename %}
 
@@ -972,17 +972,17 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Parabéns! Você acabou de aprender como criar funções. :)
 
 ## Laços
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> Para leitores em casa: este capítulo é coberto no vídeo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-This is the last part already. That was quick, right? :)
+Essa já é a última parte! Rápido, né? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Programadores não gostam de repetir código. Programar é automatizar coisas, então não queremos cumprimentar a cada pessoa manualmente, certo? É aí que entram os laços (ou "loops", em Inglês).
 
-Still remember lists? Let's do a list of girls:
+Ainda se lembra de listas? Vamos fazer uma lista de garotas:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -990,7 +990,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Queremos cumprimentar todas elas pelos seus nomes. Temos a função `hi` para fazer isso, então vamos usá-la em um laço:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -998,9 +998,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+A instrução `for` se comporta de maneira similar ao `if`; o código abaixo de qualquer uma destas instrução deve ser endentado com quatro espaços.
 
-Here is the full code that will be in the file:
+Aqui está o código completo que será salvo no arquivo:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1014,7 +1014,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+E quando rodamos:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1031,7 +1031,7 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Como você pode ver, tudo o que você vai colocar dentro de uma instrução `for` com espaço será repetido para cada elemento da lista `girls`.
 
 You can also use `for` on numbers using the `range` function:
 
