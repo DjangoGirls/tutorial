@@ -78,9 +78,9 @@ h1 a {
 }
 ```
 
-`h1 a` est un sélecteur CSS. Cela signifie que notre style est appliqué sur tous les éléments `a` contenu dans un élément `h1`. Donc lorsque nous avons quelque chose comme `<h1><a href="">lien</a></h1>`, le style `h1 a` est appliqué. Dans notre exemple précédent, nous indiquions notre souhait de changer la couleur du texte en `#FCA205`, c'est à dire en orange. Bien évidemment, vous êtes libre de choisir n'importe quelle couleur !
+`h1 a` est un sélecteur CSS. Cela signifie que notre style est appliqué sur tous les éléments `a` contenu dans un élément `h1`. Donc lorsque nous avons quelque chose comme `<h1><a href="">lien</a></h1>`, le style `h1 a` est appliqué. Dans notre cas, nous lui indiquons de changer sa couleur en `#FCA205`, c'est à dire en orange. Bien évidemment, vous êtes libre de choisir n'importe quelle couleur !
 
-Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. La première façon dont nous permettent d'identifier des éléments est avec le nom de l'élément. Vous pouvez vous souvenir de cela comme une balise de la section HTML. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class et id sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les ids désignent des éléments précis. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. La première façon pour identifier des éléments, c'est avec leur nom d'élément. Vous vous en souviendrez car ces noms proviennent des balises HTML. Exemple : `a`, `h1` et `body` sont tous des noms d'élément. Vous pouvez aussi identifier les éléments par leur attribut `class` ou `id`. La classe et l'identifiant sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les identifiants pointent un élément spécifique. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
