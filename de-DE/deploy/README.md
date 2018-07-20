@@ -102,7 +102,7 @@ Nun müssen wir das Git-Repository auf deinem Computer mit dem auf GitHub verbin
 
 Gib Folgendes in deine Konsole ein (ersetze dabei `<your-github-username>` durch deinen Benutzernamen, den du bei der Erstellung deines GitHub-Kontos benutzt hast, aber ohne die eckigen Klammern):
 
-{% filename %}cloud 9{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
@@ -125,11 +125,11 @@ Gibt deinen GitHub-Benutzernamen und dein Passwort ein und du solltest etwas Äh
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Dein Code ist jetzt auf GitHub. Schau gleich mal nach! Dort ist dein Code du in guter Gesellschaft - [Django](https://github.com/django/django), das [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) und viele andere großartige Open Source Software-Projekte haben ihren Code auf GitHub. :)
+Dein Code ist jetzt auf GitHub. Schau gleich mal nach! Dort ist dein Code in guter Gesellschaft - [Django](https://github.com/django/django), das [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) und viele andere großartige Open Source Software-Projekte haben ihren Code auf GitHub. :)
 
 # Deinen Blog auf PythonAnywhere einrichten
 
-## Registriere Dich für ein PythonAnywhere Konto
+## Registriere dich für ein PythonAnywhere Konto
 
 > **Hinweis:** Es ist möglich, dass du bereits ein PythonAnywhere Konto angelegt hast. Wenn ja, dann brauchst du das nicht noch einmal zu tun.
 
@@ -137,13 +137,13 @@ Dein Code ist jetzt auf GitHub. Schau gleich mal nach! Dort ist dein Code du in 
 
 ## Unsere Site auf PythonAnywhere konfigurieren
 
-Gehe zurück zum [Haupt-Dashboard PythonAnywhere](https://www.pythonanywhere.com/) indem du auf das Logo klickst. Dann wähle die Option zum Start einer "Bash"-Konsole – die PythonAnywhere Version einer Kommandozeile wie du sie auf deinen Computer hast.
+Gehe zurück zum [Haupt-Dashboard PythonAnywhere](https://www.pythonanywhere.com/), indem du auf das Logo klickst. Dann wähle die Option zum Start einer "Bash"-Konsole – die PythonAnywhere Version einer Kommandozeile wie du sie auf deinen Computer hast.
 
 ![Der 'New Console"-Abschnitt auf der PythonAnywhere-Weboberfläche, mit einem Knopf für 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Hinweis:** PythonAnywhere basiert auf Linux. Wenn du Windows benutzt, dann sieht die Konsole etwas anders aus als die Konsole auf deinem Computer.
 
-Um eine Web App auf PythonAnywhere publizieren zu können, muss dein Code von GitHub heruntergeladen und PythonAnyhwere dazu gebracht werden diese zu erkennen und als Web Applikation anzubieten. Du kannst das auch manuell machen. Aber PythonAnywhere stellt ein Hilfstool zur Verfügung, dass das alles für die erledigt. Lass uns dieses installieren:
+Um eine Web App auf PythonAnywhere publizieren zu können, muss dein Code von GitHub heruntergeladen und PythonAnyhwere dazu gebracht werden, diesen zu erkennen und als Web Applikation anzubieten. Du kannst das auch manuell machen. Aber PythonAnywhere stellt ein Hilfstool zur Verfügung, das das alles für dich erledigt. Lass es uns installieren:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -159,7 +159,7 @@ Nun können wir mit dem Hilfstool unsere App von GitHub automatisch konfiguriere
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-Während Du bei der Ausführung zusiehst wirst Du sehen, was es macht:
+Während Du die Ausführung verfolgst, wirst Du sehen, was passiert:
 
 - Den Code von GitHub herunterladen
 - Eine virtualenv auf PythonAnywhere erstellen wie du sie auf deinem PC hast
