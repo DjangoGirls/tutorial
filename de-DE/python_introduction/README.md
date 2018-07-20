@@ -478,7 +478,7 @@ Schon gespannt auf den nächsten Teil? :)
 
 > Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) behandelt.
 
-Ein wichtiger Teil beim Programmieren besteht darin, Dinge zu vergleichen. Was lässt sich leicht vergleichen? Zahlen sicherlich. Schauen wir uns mal an, wie das funktioniert:
+Ein großer Teil beim Programmieren besteht darin, Dinge zu vergleichen. Was lässt sich leicht vergleichen? Zahlen sicherlich. Schauen wir uns mal an, wie das funktioniert:
 
 {% filename %}command-line{% endfilename %}
 
@@ -497,7 +497,7 @@ True
 
 Hier haben wir Python einige Zahlen zum Vergleichen gegeben. Wie du siehst, kann Python nicht nur die Zahlen vergleichen, sondern auch die Ergebnisse von Berechnungen. Cool, nicht wahr?
 
-Womöglich wunderst du dich aber über die beiden `==` Gleichheitszeichen zum Vergleich, ob zwei Zahlen den selben Wert haben? Ein einfaches Gleichheitszeichen `=` verwenden wir bereits, um Werte Variablen zuzuweisen. Da beim Programmieren alle Anweisungen eindeutig sein müssen, benötigst du in Python daher **stets** zwei `==` Zeichen, um Dinge auf Gleichheit zu testen. Wir können auch feststellen, ob Werte unterschiedlich sind. Dafür verwenden wir das Symbol `!=`, wie in obigen Beispiel.
+Womöglich wunderst du dich aber über die beiden `==` Gleichheitszeichen zum Vergleich, ob zwei Zahlen den selben Wert haben? Ein einfaches Gleichheitszeichen `=` verwenden wir bereits, um Variablen bestimmte Werte zuzuweisen. Da beim Programmieren alle Anweisungen eindeutig sein müssen, benötigst du in Python daher **stets** zwei `==` Zeichen, um Dinge auf Gleichheit zu testen. Wir können auch feststellen, ob Werte unterschiedlich sind. Dafür verwenden wir das Symbol `!=`, wie im obigen Beispiel.
 
 Nun noch zwei weitere Vergleiche:
 
