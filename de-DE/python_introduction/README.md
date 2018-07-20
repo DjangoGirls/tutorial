@@ -724,7 +724,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Du fragst dich nun, warum wir die angefügte Zeile mit 4 Leerzeichen eingerückt haben? Damit teilen wir Python mit, dass dieser Code ausgeführt werden soll, wenn die vorhergehende Bedingung True ergeben hat. Du könntest auch eine andere Anzahl von Leerzeichen wählen, aber fast alle Python-Programmier nutzen 4 Leerzeichen, damit's gut aussieht. Ein einfaches Tab zählt auch wie 4 Leerzeichen, insofern dies in deinem Editor so eingestellt ist. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Du fragst dich nun, warum wir die angefügte Zeile mit 4 Leerzeichen eingerückt haben? Damit teilen wir Python mit, dass dieser Code ausgeführt werden soll, wenn die vorhergehende Bedingung True ergeben hat. Du könntest auch eine andere Anzahl von Leerzeichen wählen, aber fast alle Python-Programmier nutzen 4 Leerzeichen, damit's gut aussieht. Ein einfaches Tab zählt auch wie 4 Leerzeichen, insofern dies in deinem Editor so eingestellt ist. Wenn du dich einmal entschieden hast, bleib dabei! Wenn du mit 4 Leerzeichen angefangen hast, solltest du alle weiteren Einrückungen auch mit 4 Leerzeichen machen, anderweitig könnte das Probleme verursachen.
 
 Nun sichere die Datei und führe sie noch einmal aus:
 
@@ -737,7 +737,7 @@ It works!
 
 Hinweis: Denk daran, dass Windows den 'python3'-Befehl nicht kennt. Falls du auf Windows arbeitest, verwende ab jetzt immer 'python', wenn in dieser Anleitung 'python3' steht.
 
-### Was passiert, wenn eine Bedingung nicht True ist?
+### Was passiert, wenn eine Bedingung nicht wahr (not True) ist?
 
 In den vorigen Beispielen wurde Code ausgeführt, wenn eine vorhergehende Bedingung True (wahr) ergab. Aber Python kennt auch `elif`- und `else`-Anweisungen:
 
