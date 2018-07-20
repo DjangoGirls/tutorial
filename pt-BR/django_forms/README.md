@@ -350,7 +350,7 @@ Isso é quase exatamente igual a nossa view de `post_new`, certo? Mas não total
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+... como quando nós apenas abrimos um formulário para editar esse post:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,7 +358,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Ok, vamos testar se funciona! Vamos para a página `post_detail`. Deve haver um botão editar no canto superior direito:
 
 ![Botão editar](images/edit_button2.png)
 
@@ -366,15 +366,15 @@ Quando você clicar nele você verá o formulário com a nossa postagem:
 
 ![Editando o formulário](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Sinta-se livre para mudar o título ou o texto e salvar as mudanças!
 
 Parabéns! Sua aplicação está ficando cada vez mais completa!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Se precisar de mais informações sobre formulários do Django você deve ler a documentação: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Segurança
 
-Ser capaz de criar novos posts apenas clicando em um link é ótimo! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Vamos fazer o botão aparece para você, mas para mais ninguém.
+Ser capaz de criar novos posts apenas clicando em um link é ótimo! Mas, no momento, qualquer um que visitar nosso site poderá criar um novo post, e isso provavelmente não é algo que você quer. Vamos fazer o botão aparece para você, mas para mais ninguém.
 
 Em `blog/templates/blog/base.html`, procure nossa `div` `page-header` e a tag de link que você colocou mais cedo. Deve se parecer com:
 
@@ -384,7 +384,7 @@ Em `blog/templates/blog/base.html`, procure nossa `div` `page-header` e a tag de
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Mude a tag `<a>` para que fique assim:
+Nós iremos incluir outra tag `{% if %}` que irá apresentar o link somente para os usuários que estiverem logados como admin. No momento, é apenas você! Mude a tag `<a>` para que fique assim:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,11 +394,11 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Isso não protege completamente a criação de um novo post, mas é um bom começo. Vamos abordar mais sobre segurança nas próximas lições.
+Este `{% if %}` irá fazer com que o link seja enviado ao navegador caso o usuário que requisitou a página esteja logado. Isso não protege completamente a criação de um novo post, mas é um bom começo. Vamos abordar mais sobre segurança nas próximas lições.
 
 Lembra do ícone Editar que acabamos de adicionar à nossa página de detalhes? Nós também queremos adicionar o mesmo la, para que outras pessoas não sejam capazes de editar as mensagens existentes.
 
-Open `blog/templates/blog/post_detail.html` and find this line:
+Abra `blog/templates/blog/post_detail.html` e encontre esta linha:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,23 +406,23 @@ Open `blog/templates/blog/post_detail.html` and find this line:
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Altere-a para:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
 {% if user.is_authenticated %}
-     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+    <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 {% endif %}
 ```
 
-Desde que você está provavelmente logado, se você atualizar a página, você não verá nada de diferente. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Uma vez que você está provavelmente logado, se você atualizar a página, não verá nada de diferente. Carregue a página em um navegador novo ou em uma janela anônima (chamada "InPrivate" no Windows Edge), contudo, e você verá que o link não aparece, e o ícone também não!
 
 ## Mais uma coisa: hora de implantar!
 
 Vamos ver se tudo isso funciona no PythonAnywhere. Tempo para outro deploy!
 
-* First, commit your new code, and push it up to GitHub:
+* Primeiro, commite o seu novo código e dê o comando push para colocá-lo no Github:
 
 {% filename %}command-line{% endfilename %}
 
