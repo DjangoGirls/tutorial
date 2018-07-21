@@ -111,7 +111,7 @@ Agora, seu arquivo deve estar assim:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load static %}
+{% load staticfiles %}
 <html>
     <head>
         <title>Django Girls blog</title>
