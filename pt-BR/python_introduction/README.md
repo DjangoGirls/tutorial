@@ -169,13 +169,13 @@ Funcionou! Usamos a função `str` dentro da função `len`. A função `str ()`
 - A função `str` converte as coisas em **strings**
 - A função `int` converte as coisas em **números inteiros**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Importante: podemos converter números em texto, mas nem sempre é possível converter texto em números -- o que `int('hello')` quer dizer?
 
 ## Variáveis
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Variáveis são um conceito importante em programação. Uma variável é apenas um nome que você atribui a alguma coisa de tal forma que possa usá-lo mais tarde. Os programadores usam essas variáveis para armazenar dados, para tornar seus códigos mais legíveis e para não ter que se lembrar a todo momento o que são certas coisas.
 
-Let's say we want to create a new variable called `name`:
+Digamos que queremos criar uma nova variável chamada `nome`:
 
 {% filename %}command-line{% endfilename %}
 
