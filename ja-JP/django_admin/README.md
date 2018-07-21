@@ -21,11 +21,11 @@ admin.site.register(Post)
 
 ログインするには、*superuser *（サイトの全てを管理するユーザー）を作る必要があります。 コマンドラインに戻り、`python manage.py createsuperuser` と入力し、enter キーを押します。
 
-> 今あなたのコマンドラインでは、最初の Django プロジェクト **プロジェクトを作成しよう**で行った web サーバー</b> セクションを開始しています。 Web サーバーの実行中に新しいコマンドを書き込む時は、新しいターミナル ウィンドウを開いて、仮想環境をアクティブにしてください。
+> Webサーバーを動かしているときに新しいコマンドを入力するには、新しいターミナルウィンドウを開きvirtualenvを有効にすることを思い出してください。 Web サーバーの実行中に新しいコマンドを書き込む時は、新しいターミナル ウィンドウを開いて、仮想環境をアクティブにしてください。
 
 {% filename %}Mac OS X または Linux:{% endfilename %}
 
-    (myvenv) ~/djangogirls$ python manage.py runserver
+    (myvenv) ~/djangogirls$ python manage.py createsuperuser
     
 
 {% filename %}Windows:{% endfilename %}
