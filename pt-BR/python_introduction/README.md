@@ -26,11 +26,11 @@ Queremos abrir um console do Python, então digite `python` no Windows ou `pytho
 
 ## Seu primeiro comando Python!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Depois de executar o comando Python, o prompt mudou para `>>>`. Para nós, isso significa que por enquanto só podemos utilizar comandos na linguagem Python. Você não precisa digitar `>>>` - o Python fará isso por você.
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Se você deseja sair do console do Python a qualquer momento, apenas digite `exit()` ou use o atalho `Ctrl + Z` no Windows e `Ctrl + D` no Mac ou Linux. Então você não vai mais ver o `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Por enquanto, não queremos sair do console de Python. Queremos saber mais sobre isso. Vamos começar digitando um pouco de matemática, como `2 + 3`, e clicar `entrar`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,22 +39,22 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Legal! Viu como a resposta apareceu? O Python sabe matemática! Você pode tentar outros comandos como:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Para executar cálculo exponencial, como 2 elevado a 3, digitamos: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Divirta-se com isso por um tempo e depois volte aqui. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Como você pode ver, o Python é uma ótima calculadora. Se você está se perguntando o que mais você pode fazer…
 
 ## Strings
 
