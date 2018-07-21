@@ -58,7 +58,7 @@ Como você pode ver, o Python é uma ótima calculadora. Se você está se pergu
 
 ## Strings
 
-How about your name? Type your first name in quotes like this:
+Que tal o seu nome? Digite seu primeiro nome entre aspas, desse jeito:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Você acabou de criar sua primeira string! String é um sequência de caracteres que podem ser processada pelo computador. A string deve sempre começar e terminar com o mesmo caractere. Este caractere pode ser aspas duplas (`'`) ou simples (`"`) (não há nenhuma diferença!). Elas dizem ao Python que o que está entre elas é uma string.
 
-Strings can be strung together. Try this:
+Strings podem ser juntadas. Tente isto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Oi Ola'
 ```
 
-You can also multiply strings with a number:
+Você também pode multiplicar strings por um número:
 
 {% filename %}command-line{% endfilename %}
 
