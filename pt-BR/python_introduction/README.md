@@ -94,7 +94,7 @@ Usando aspas duplas:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Correndo' ladeira abaixo" 
+>>> "Roda d'água" 
 "Roda d'água"
 ```
 
@@ -103,8 +103,8 @@ Ou escapando a aspa simples (o que sinaliza para o Python que aquele sinal é um
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Roda d\' água" 
-"Roda d' água"
+>>> "Roda d\'água" 
+"Roda d'água"
 ```
 
 Legal, hein? Para ver seu nome em letras maiúsculas, basta digitar:
@@ -116,9 +116,9 @@ Legal, hein? Para ver seu nome em letras maiúsculas, basta digitar:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Você acabou de usar a **função** `upper` na sua string! Uma função (como `upper()`) é um conjunto de instruções que o Python tem que realizar em um determinado objeto (`"Ola"`) quando você a chamar.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Se você quer saber o número de letras contidas em seu nome, há uma **função** para isso também!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Se perguntando porque algumas vezes você chama funções com um `.` depois de uma string (como `"Ola".upper()`) e algumas vezes você primeiro chama a função e coloca a string entre parênteses? Bem, em alguns casos, funções pertencem a objetos, como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Outras vezes, funções não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, assim como `len()`. É por isso que nós estamos fornecendo `"Ola"` como um parâmetro para a função `len`.
 
 ### Sumário
 
