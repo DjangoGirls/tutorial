@@ -78,7 +78,7 @@ Strings podem ser juntadas. Tente isto:
 'Oi Ola'
 ```
 
-Você também pode multiplicar strings por um número:
+(Ola é o nome das duas criadoras do Django Girls!) Você também pode multiplicar strings por um número:
 
 {% filename %}command-line{% endfilename %}
 
