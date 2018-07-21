@@ -95,19 +95,19 @@ Usando aspas duplas:
 
 ```python
 >>> "Correndo' ladeira abaixo" 
-"Correndo' ladeira abaixo"
+"Roda d'água"
 ```
 
-or escaping the apostrophe with a backslash (``):
+Ou escapando a aspa simples (o que sinaliza para o Python que aquele sinal é uma apóstrofe, e não uma aspa marcando o final da nossa string) com uma contra-barra (``):
 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Correndo\' ladeira abaixo" 
-"Correndo' ladeira abaixo"
+>>> "Roda d\' água" 
+"Roda d' água"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+Legal, hein? Para ver seu nome em letras maiúsculas, basta digitar:
 
 {% filename %}command-line{% endfilename %}
 
