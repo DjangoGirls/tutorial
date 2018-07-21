@@ -1,12 +1,12 @@
-> Para os leitores em casa: este capítulo pode ser visto neste vídeo [InstalandoPhyton& EditordeCódigo](https://www.youtube.com/watch?v=pVTaqzKZCdA).
+> Para leitores em casa: esse capítulo é coberto no vídeo [Instalando Python & Editor de Código](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
 > Esta seção baseia-se em tutoriais da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django é escrito em Phyton. Precisamos de Phyton para fazer qualquer coisa no Django. Vamos começar instalando o Django! Nós precisamos que você instale o Phyton 3.6, então se você tiver qualquer versão anterior de Phyton, é preciso atualizá-lo.
+Django é escrito em Python. Precisamos dele para fazer qualquer coisa no Django. Por isso, vamos começar instalando o Python! Nós precisamos que você instale o Python 3.6. Se você tiver alguma versão mais antiga, é preciso atualizá-la.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Primeiro verifique se o computador está executando a versão 32-bit ou a versão 64-bit do Windows. Faça isso pressionando a tecla do windows no seu teclado (aquela com a janela do windows) + a tecla Pause/Break. Feito isso, abrirá uma tela com as informações do seu windows. Nessa tela, verifique a seção "Tipo de sistema" e cheque a versão que está sendo executada. Você pode baixar Phyton para Windoes nesse site: https://www.python.org/downloads/windows/. Clique no link: "Versão Mais Recente Phyton 3 - Phyton x.x.x". Se seu computador está executando a versão **64-bit** do windows, baixe o **instalador executável do Windows x86-64**. Caso contrário, baixe o **instalador executável x86 do Windows**. Depois de baixar o instalador do arquivo, você precisa executá-lo (dando um duplo-clique nele) e seguir as instruções.
+Primeiro verifique se o computador está executando a versão 32-bit ou a versão 64-bit do Windows. Faça isso pressionando a tecla do windows no seu teclado (aquela com a janela do windows) + a tecla Pause/Break. Feito isso, abrirá uma tela com as informações do seu windows. Nessa tela, verifique a seção "Tipo de sistema" e cheque a versão que está sendo executada. Você pode baixar o Python para Windows no website https://www.python.org/downloads/windows/. Clique no link: "Versão Mais Recente Python 3 - Python x.x.x". Se seu computador está executando a versão **64-bit** do windows, baixe o **instalador executável do Windows x86-64**. Caso contrário, baixe o **instalador executável x86 do Windows**. Depois de baixar o instalador do arquivo, você precisa executá-lo (dando um duplo-clique nele) e seguir as instruções.
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
