@@ -18,10 +18,10 @@ Nas próximas etapas, você usará a linha de comando do Windows (e também vamo
 
 Nota: se você estiver usando uma versão antiga do Windows (7, Vista, ou qualquer versão mais antiga) e o instalador do 3.6. x Python falhar e dar erro, você pode tentar também:
 
-1. install all Windows Updates and try to install Python 3.6 again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. instalar todas as atualizações do Windows e tentar instalar o Python 3.6 novamente; ou
+2. instalar uma [versão mais antiga do Python](https://www.python.org/downloads/windows/), por exemplo, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Se você instalar uma versão mais antiga do Python, a tela de instalação pode parecer um pouco diferente da mostrada acima. Certifique-se de rolar até ver a opção "Add python.exe to Path", então clique no botão à esquerda e escolha "Will be installed on local hard drive":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -35,7 +35,7 @@ data-collapse=true ces-->
 Você precisa visitar https://www.python.org/downloads/release/python-361/ e fazer o download do instalador do Python:
 
 * Faça o download do arquivo *Mac OS X 64-bit/32-bit installer*,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Dê um duplo clique no arquivo *python-3.6.1-macosx10.6.pkg* para executar o instalador.
 
 <!--endsec-->
 
@@ -91,7 +91,7 @@ Use o seguinte comando no terminal:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Verifique se a instalação foi bem sucedida abrindo o terminal e digitando o comando `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,8 +99,8 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
+**OBS:** Se você está no Windows e receber a mensagem de erro que `python3` não foi encontrado, tente utilizar `python` (sem o `3`) e verifique se ela corresponde à versão Python 3.6.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Nem sempre tudo sai como o esperado e é melhor pedir ajuda a alguém mais experimente.
+Se você está com alguma dúvida ou se alguma coisa deu errado e você não faz a menor ideia do que fazer, pergunte ao seu instrutor! Nem sempre tudo sai como o esperado e é melhor pedir ajuda a alguém mais experimente.
