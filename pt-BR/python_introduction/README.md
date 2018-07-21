@@ -87,9 +87,9 @@ Você também pode multiplicar strings por um número:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Se você precisa colocar uma apóstrofe dentro de sua string, pode fazê-lo de duas maneiras.
 
-Using double quotes:
+Usando aspas duplas:
 
 {% filename %}command-line{% endfilename %}
 
