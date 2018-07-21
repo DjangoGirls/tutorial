@@ -138,11 +138,11 @@ OK, chega de strings. Até agora você aprendeu sobre:
 - **operadores** - como + e * combinam valores para produzir um novo valor
 - **funções** - como upper() e len() executam ações nos objetos.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Esso é o básico de todas as linguagens de programação que você aprender. Pronto para algo mais difícil? Apostamos que sim!
 
 ## Erros
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Vamos tentar algo novo. Será que conseguimos saber a extensão de um número da mesma forma que descobrimos a de nossos nomes? Digite `len(304023)` e clique `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Temos nosso primeiro erro! O ícone {{ warning_icon }} é a forma que o Pyhton tem para te avisar que o código que você está prestes a executar não vai funcionar conforme o esperado. Making mistakes (even intentional ones) are an important part of learning!
 
 It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
