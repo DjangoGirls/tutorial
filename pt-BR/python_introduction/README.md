@@ -131,12 +131,12 @@ Se perguntando porque algumas vezes você chama funções com um `.` depois de u
 
 ### Sumário
 
-OK, enough of strings. So far you've learned about:
+OK, chega de strings. Até agora você aprendeu sobre:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **o prompt** -- digitar comandos (códigos) no interpretador Python resulta em respostas em Python
+- **números e strings** -- no Python, números são usados para matemática e strings, para objetos de texto
+- **operadores** - como + e * combinam valores para produzir um novo valor
+- **funções** - como upper() e len() executam ações nos objetos.
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
