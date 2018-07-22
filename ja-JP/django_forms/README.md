@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まずURLから追加の `pk` パラメータを渡します。 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときそのポストを`インスタンス`として渡します。フォームを保存するときは……
+`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まずURLから追加の `pk` パラメータを渡します。 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときは以下の両方のケースでそのポストを`インスタンス`として渡します。フォームを保存するときは……
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-そしてこの記事でフォームを開き編集します。
+……このポストを編集するためにただフォームを開く場合は:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,15 +358,15 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-Ok, 動作確認しましょう。 post_detail ページにいきます。そこの右上に [編集] ボタンがあるはずです:
+よし、ちゃんと動くか試してみましょう！`post_detail` ページにいきましょう。そこの右上に [編集] ボタンがあるはずです:
 
 ![Edit button](images/edit_button2.png)
 
-クリックするとブログの記事にフォームが表示されます:
+クリックするとブログ記事のフォームが表示されると思います:
 
 ![フォームの編集](images/edit_form2.png)
 
-あとはタイトルやテキストを変更して保存してください。
+あとはお気軽にタイトルやテキストを変更して保存してください！
 
 おめでとう！アプリケーションが完成しました。
 
