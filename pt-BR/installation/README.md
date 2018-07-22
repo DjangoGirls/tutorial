@@ -4,7 +4,7 @@ Se você estiver fazendo o tutorial em casa e não num dos [eventos Django Girls
 
 Isto porque cobrimos estas coisas no tutorial de qualquer maneira, e esta é apenas uma página adicional que reúne todas as instruções de instalação em um só lugar. O evento Django Girls inclui uma "noite de instalação" onde instalamos tudo de forma não precisar se preocupar com isso durante o workshop, e isso é útil para nós.
 
-If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+Se você achar útil, pode continuar lendo este capítulo também. Mas se quiser começar a aprender antes de instalar um monte de coisas no seu computador, pule este capítulo e explicaremos a parte de instalação para você mais tarde.
 
 Boa sorte!
 
