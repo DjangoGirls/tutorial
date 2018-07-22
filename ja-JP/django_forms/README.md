@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## フォームにおけるページへのリンク
 
-`blog/templates/blog/base.html`を開いてみましょう。ページヘッダというdivのリンクに次の内容を追加しましょう。
+`blog/templates/blog/base.html`を開きましょう。`page-header`と名付けた`div`中に次のリンクを追加します:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -52,7 +52,7 @@ class PostForm(forms.ModelForm):
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-新しいビュー` post_new `を呼び出すことに注意してください。 ` "glyphicon glyphicon-plus" `クラスは、使用しているブートストラップテーマによって提供され、プラス記号を表示します。
+新しいビュー` post_new `を呼び出すことに注意してください。 ` "glyphicon glyphicon-plus" `クラスは、使用しているBootstrapテーマによって提供され、プラス記号を表示します。
 
 行を追加すると、このような html ファイルになります。
 
