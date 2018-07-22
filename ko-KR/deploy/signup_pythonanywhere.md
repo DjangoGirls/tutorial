@@ -6,6 +6,6 @@ Sign up for a free "Beginner" account on PythonAnywhere:
 
 ## Creating a PythonAnywhere API token
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Accounts" page, then select the tab named "API token", and hit the button that says "Create new API token".
+This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. 오른쪽 상단에 위치한 "Accounts" 페이지 링크를 선택하면 "API token"이라는 탭을 찾을 수 있어요. 탭을 선택하고 "Create new API token"이 적힌 버튼을 눌러주세요.
 
 ![The API token tab on the Accounts page](images/pythonanywhere_create_api_token.png)
