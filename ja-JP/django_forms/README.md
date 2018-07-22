@@ -141,9 +141,9 @@ def post_new(request):
 `blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
 
 * フォームを表示する必要があります。 私たちは（例えば）{％ raw ％}`{{ form.as_p }}`{％ endraw ％}でこれを行うことができます。
-* 上記の行は HTML フォーム タグでラップする必要があります: `<form method="POST">...</form>`.
-* `保存` のボタンが必要です。HTML ボタンで行う: `<button type="submit">Save</button>`.
-* 最後に`<form ...>` タグを開いて、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームを安全に保護できるのでこれは非常に重要です! このビットを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
+* 上記の行は HTMLのformタグでラップする必要があります: `<form method="POST">...</form>`.
+* `Save` ボタンが必要です。これをHTMLのbuttonタグで行います: `<button type="submit">Save</button>`.
+* 最後に`<form ...>` タグを開いて、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームをセキュアにするためこれは非常に重要です！ これを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
 
 ![CSFR Forbidden page](images/csrf2.png)
 
