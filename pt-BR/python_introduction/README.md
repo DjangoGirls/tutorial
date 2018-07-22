@@ -183,9 +183,9 @@ Digamos que queremos criar uma nova variável chamada `nome`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+Digitamos nome igual Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
+Como você deve ter percebido, a última linha de código não retornou nada como nos exemplos anteriores. Então como vamos saber se a variável realmente existe? Basta digitar `name` e clicar `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Uhuuu! Sua primeira variável! :) Você sempre pode mudar o seu valor:
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Você pode usá-la também em funções:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Of course, variables can be anything – numbers too! Try this:
+Incrível, não? Claro, variáveis podem ser qualquer coisa, então podem ser números também! Tente isso:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Of course, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+E se digitarmos o nome errado? Você consegue imaginar o que aconteceria? Vamos tentar!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -236,9 +236,9 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Um erro! Como você pode ver, o Python tem diferentes tipos de erros e este é chamado **NameError**. O Python mostrará esta mensagem de erro se você tentar usar uma variável que ainda não foi definida. Se você encontrar esse erro mais tarde, confira no seu código se você não digitou errado o nome de uma variável.
 
-Play with this for a while and see what you can do!
+Brinque com isso por um tempo e veja o que você consegue fazer!
 
 ## A função print
 
