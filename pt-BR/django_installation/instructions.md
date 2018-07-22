@@ -67,7 +67,7 @@ Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv my
 >     $ sudo apt install python3-venv
 >     
 > 
-> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> **OBS:** Em algumas versões do Debian/Ubuntu, iniciar o ambiente virtual com este comando gera o seguinte erro:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -82,14 +82,14 @@ Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv my
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **OBS:** Se você obter um erro como
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> então execute:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -112,7 +112,7 @@ Inicie o seu ambiente virtual executando:
     C:\Usuário\Nome\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **OBS:** no Windows 10, você pode obter um erro no Windows PowerShell que diz `execution of scripts is disabled on this system`. Neste caso, abra uma outra janela do Windows PowerShell com a opção de "Executar como Administrador". Assim, execute o comando abaixo antes de iniciar o seu ambiente virtual:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -192,7 +192,7 @@ Agora, execute `pip install -r requirements.txt` para instalar o Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Criar um novo virtualenv no novo diretório, em seguida exclua o velho e tente novamente o comando acima. (Mover o diretório de virtualenv não vai funcionar pois o virtualenv usa caminhos absolutos.)
+> Se você receber um erro ao chamar o pip na plataforma Windows, verifique se o caminho do projeto contém espaços, acentos ou caracteres especiais (exemplo, `C:\Users\User Name\djangogirls`). Se sim, considere movê-lo para outro lugar sem espaços, acentos ou caracteres especiais (sugestão: `C:\djangogirls`). Criar um novo virtualenv no novo diretório, em seguida exclua o velho e tente novamente o comando acima. (Mover o diretório de virtualenv não vai funcionar pois o virtualenv usa caminhos absolutos.)
 
 <!--endsec-->
 
