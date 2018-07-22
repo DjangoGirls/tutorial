@@ -72,9 +72,9 @@ A parte até e incluindo o `$` ou o `>` é chamada de *prompt de linha de comand
 
 No tutorial, quando queremos que você digite um comando, nós incluiremos o `$` ou `>` e por vezes até mais para a esquerda. Você pode ignorar a parte esquerda e apenas digite o comando que inicia após o prompt.
 
-## Seu primeiro comando (YAY!)
+## Seu primeiro comando (Uhuu!)
 
-Let's start by typing this command:
+Vamos começar digitando este comando:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -102,9 +102,9 @@ E em então aperte `enter`. Este é o nosso resultado:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Como você pode ver o computador acabou de mostrar seu nome de usuário na tela. Legal, né? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Tente escrever cada comando, não copie e cole. Você vai se lembrar melhor dos comandos desse jeito!
 
 ## O Básico
 
@@ -134,7 +134,7 @@ Seria legal se soubéssemos em que diretório estamos, certo? Para isso, digite 
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Nota: 'cd' significa 'change directory' em inglês, o que se traduz para 'mudar de diretório'. Com o powershell, você pode utilizar pwd da mesma forma como no Linux ou Mac OS X.
 
 <!--endsec-->
 
