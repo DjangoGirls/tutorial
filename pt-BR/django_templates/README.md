@@ -4,9 +4,9 @@ Hora de exibir dados! O Django já vem com algumas **tags de template** que são
 
 ## O que são tags de template?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+Sabe, em HTML não podemos incluir código Python porque os browsers só entendem HTML. Sabemos que o HTML é bem estático, enquanto o Python é muito mais dinâmico.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**Tags de template Django** nos permite transformar código que se parece Python em código HTML, para que você possa construir sites dinâmicos mais rápido e mais fácilmente. Uhuu!
 
 ## Modelo de lista de post de exibição
 
@@ -46,7 +46,7 @@ Tente fazer isso no seu template.
 
 ![Figura 13.2](images/step2.png)
 
-Funciona! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. Nós podemos misturar HTML com tags de template. O conteúdo da tag `body` ficará assim:
+Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos, como os que criamos anteriormente no capítulo de **Introdução a HTML**. Nós podemos misturar HTML com tags de template. O conteúdo da tag `body` ficará assim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
