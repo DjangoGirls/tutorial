@@ -279,7 +279,7 @@ Sim, esta é uma lista vazia. Não é muito útil, né? Vamos criar uma lista de
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Legal, criamos uma lista! O que podemos fazer com ela? Vamos ver quantos números de loteria ela tem. Você tem ideia de qual é a função que deve usar para isso? Você já aprendeu ;)
 
 {% filename %}command-line{% endfilename %}
 
@@ -288,7 +288,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Sim! `len()` pode te dizer o número de objetos que fazem parte de uma lista. Uma mão na roda, né? Agora vamos organizá-los:
 
 {% filename %}command-line{% endfilename %}
 
@@ -296,7 +296,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Isso não retorna nada, apenas troca a ordem em que os números aparecem na lista. Vamos imprimir a lista outra vez e ver o que acontece:
 
 {% filename %}command-line{% endfilename %}
 
@@ -305,9 +305,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Como você pode ver, agora os números na nossa lista estão ordenados do menor para o maior. Parabéns!
 
-Maybe we want to reverse that order? Let's do that!
+E se quisermos inverter essa ordem? Vamos fazer isso!
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Moleza né? Se você quiser adicionar alguma coisa à sua lista, você pode fazer isto digitando o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Se você quiser ver apenas o primeiro número da lista, pode usar **índices**. Um índice é o número que diz onde na lista um item está. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}command-line{% endfilename %}
 
