@@ -138,7 +138,7 @@ Seria legal se soubéssemos em que diretório estamos, certo? Para isso, digite 
 
 <!--endsec-->
 
-Você vai ver algo parecido em seu computador. Quando você abre a linha de comando ele em geral fica em seu diretório de usuário, também chamado de diretório "home", em Inglês.
+Você provavelmente vai ver algo parecido em seu computador. A linha de comando geralmente inicia no diretório principal do usuário, também chamado de diretório "home", em Inglês.
 
 * * *
 
@@ -173,7 +173,7 @@ Então o que tem nele? Seria legal descobrir. Vamos ver:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Nota: No powershell, você também pode usar 'ls' como no Linux e Mac OS X. <!--endsec-->
 
 * * *
 
@@ -223,7 +223,7 @@ Veja se realmente entramos na pasta:
 
 Aqui está!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> Dica de profissional: se você digitar `cd D` e apertar a tecla `tab` no seu teclado, a linha de comando irá preencher automaticamente o resto do nome para que você possa navegar rapidamente. Se houver mais de uma pasta que comece com "D", aperte a tecla `tab` duas vezes para obter uma lista de opções.
 
 * * *
 
@@ -257,7 +257,7 @@ Esse pequeno comando criará um diretório chamado `practice` em sua área de tr
 
 ### Exercite-se!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Um pequeno desafio para você: crie um diretório dentro do diretório `practice` chamando `test`. (Use os comandos `cd` e `mkdir`.)
 
 #### Solução:
 
@@ -313,7 +313,7 @@ Primeiro, precisamos voltar para a pasta Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Ao utilizar o `..` junto com o comando `cd` você muda o diretório atual para o diretório pai (o diretório que contém o seu diretório atual).
 
 Veja onde você está:
 
@@ -339,7 +339,7 @@ Veja onde você está:
 
 Agora é hora de deletar o diretório `pratice`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Atenção**: A exclusão de arquivos usando `del`, `rmdir` ou `rm` é irreversível; ou seja, os *arquivos excluídos são perdidos para sempre*! Então, tenha cuidado com este comando.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -382,7 +382,7 @@ Pronto! Para ter certeza que a pasta foi excluída, vamos checar:
 
 ### exit
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Isso é tudo, por enquanto! Agora você pode fechar a janela do terminal, mas vamos fazer do jeito hacker, né? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
