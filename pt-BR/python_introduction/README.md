@@ -388,7 +388,7 @@ Com esse comando, você criou uma variável chamada `participant` com três pare
 
 - A chave `nome` aponta para o valor `'Ola'` (um objeto `string`),
 - a chave `pais` aponta para `'Polonia'` (outra `string`),
-- e a chave `numeros_favoritos` aponta para `[7, 42, 92]` (uma `list` com três números nela).
+- e a chave `favorite_numbers` aponta para `[7, 42, 92]` (uma `list` com três números nela).
 
 Você pode verificar o conteúdo de chaves individuais com a sintaxe:
 
@@ -438,7 +438,7 @@ Como nas listas, usando a função `len()` em dicionários retorna o número de 
 
 Espero que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários? Pule para a próxima linha para coisas incríveis.
 
-Você pode usar o método `pop()` para deletar um item do dicionário. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+Você pode usar o método `pop()` para deletar um item do dicionário. Digamos que você queira excluir a entrada correspondente à chave `'favorite_numbers'`. Basta digitar o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
