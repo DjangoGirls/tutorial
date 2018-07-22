@@ -427,7 +427,7 @@ Dicionários, assim como listas, são *mutáveis*. Isso significa que eles podem
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Como nas listas, usando a função `len()` em dicionários retorna o número de pares chave-valor contidos nele. Vá em frente e digite o comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,9 +436,9 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Espero que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários? Pule para a próxima linha para coisas incríveis.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+Você pode usar o método `pop()` para deletar um item do dicionário. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
