@@ -147,7 +147,7 @@ def post_new(request):
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK,そうしたらどのようにHTMLで`post_edit.html`表すか見て下さい：
+では、`post_edit.html` のHTMLがどのようになるか見てみましょう:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -167,9 +167,9 @@ OK,そうしたらどのようにHTMLで`post_edit.html`表すか見て下さい
 
 ![New form](images/new_form2.png)
 
-ちょっと待ってみて下さい。`title` and `text` フィールドに何か入力して保存するとどうなりますか？
+ちょっと待ってみて下さい。`title` と `text` フィールドに何か入力して保存するとどうなりますか？
 
-何もない! 我々 は再び同じページと私たちのテキストはあの新しい記事は追加されません。なぜこうなってしまったのか？
+何もおきません！もう一度同じページ戻りテキストはどこかに行ってしまいました…… そして新しい投稿は追加されていません。何がいけなかったのでしょうか？
 
 答えは: ないからです。ビュー で、もう少し作業を行う必要があります.
 
