@@ -374,9 +374,9 @@ Um dicionário é similar a uma lista, mas para acessar seus valores você usa u
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Você acabou de criar um dicionário vazio. Uhuuu!
 
-Now, try writing the following command (try substituting your own information, too):
+Agora tente escrever o seguinte comando (tente substituir com as suas próprias informações também):
 
 {% filename %}command-line{% endfilename %}
 
@@ -384,13 +384,13 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Com esse comando, você criou uma variável chamada `participant` com três pares de chave-valor:
 
 - A chave `nome` aponta para o valor `'Ola'` (um objeto `string`),
-- `pais` aponta para `'Polonia'` (outra `string`),
-- e `numeros_favoritos` apontam para `[7, 42, 92]` (uma `list` com três números nela).
+- a chave `pais` aponta para `'Polonia'` (outra `string`),
+- e a chave `numeros_favoritos` aponta para `[7, 42, 92]` (uma `list` com três números nela).
 
-You can check the content of individual keys with this syntax:
+Você pode verificar o conteúdo de chaves individuais com a sintaxe:
 
 {% filename %}command-line{% endfilename %}
 
@@ -399,9 +399,9 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+É similar a uma lista, mas você não precisa lembrar o índice - apenas o nome.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+O que acontece se perguntarmos ao Python qual é o valor de uma chave que não existe? Você consegue adivinhar? Vamos tentar e descobrir!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,14 +412,14 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Olha, outro erro! Esse é um **KeyError**. O Python é bastante prestativo e te diz que a chave `'age'` não existe no nesse dicionário.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+Você deve estar se perguntando quando deve usar um dicionário ou uma lista, certo? Boa pergunta! A resposta rápida é:
 
-- Você precisa de uma sequência ordenada de itens? Use uma list.
-- Você precisa associar valores com chaves, assim você pode procurá-los eficientemente (pela chave) mais tarde? Use um dictionary.
+- Você precisa de uma sequência ordenada de itens? Use uma lista.
+- Você precisa associar valores com chaves para poder procurá-los eficientemente (pela chave) mais tarde? Use um dicionário.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Dicionários, assim como listas, são *mutáveis*. Isso significa que eles podem ser alterados depois de criados. Você pode adicionar um novo par chave-valor a um dicionário depois de ele ser criado, por exemplo:
 
 {% filename %}command-line{% endfilename %}
 
