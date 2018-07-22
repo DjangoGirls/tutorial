@@ -1,6 +1,6 @@
 # Introdução à linha de comando
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Para os leitores em casa: este capítulo é coberto no vídeo [ Seu novo amigo: linha de comando ](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
@@ -8,9 +8,9 @@ It's exciting, right?! You'll write your first line of code in just a few minute
 
 As etapas a seguir mostraram a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas realmente é apenas um prompt esperando por comandos de você.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Nota** Note que ao longo deste livro intercalamos o uso dos termos 'diretório' e 'pasta', mas eles significam a mesma coisa.
 
-## Qual é a linha de comando?
+## O que é a linha de comando?
 
 A janela, que geralmente é chamada de **linha de comando** ou **interface de linha de comando**, é uma aplicação de texto para ver e manipular arquivos de seu computador. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
 
@@ -20,21 +20,21 @@ Para começar alguns experimentos, precisamos abrir a nossa interface de linha d
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → Windows System → Command Prompt.
+Vá para o Menu iniciar → Sistema do Window → Prompt de comando.
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+> Em versões antigas do windows, procure em Menu iniciar → Todos programas → Acessórios → Prompt de comando.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Vá para Aplicações → Utilidades → Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Provavelmente você vai achar em Applications → Accessories → Terminal, mas isso depende do seu sistema operacional. Qualquer coisa é só procurar no Google. :)
+Provavelmente você vai achar em Aplicativos → Acessórios → Terminal, mas isso depende do seu sistema operacional. Qualquer coisa é só procurar no Google. :)
 
 <!--endsec-->
 
@@ -66,7 +66,7 @@ No Windows, é um sinal de `>`, como este:
 
 Cada comando será antecedido por este sinal e um espaço, mas você não precisa digitá-lo. Seu computador fará isso por você. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Uma pequena observação: no nosso caso existe algo como `C:\Users\ola>` ou `Olas-MacBook-Air:~ ola$` antes do cursor e isso está 100% correto.
 
 A parte até e incluindo o `$` ou o `>` é chamada de *prompt de linha de comando*, ou *prompt* de forma breve. Ele solicita que você de a entrada de algo.
 
