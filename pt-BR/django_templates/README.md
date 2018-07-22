@@ -68,13 +68,13 @@ Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos, co
 
 ![Figura 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Nós estamos acessando os dados em cada um dos campos que definimos no model do `Post`. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Você notou que dessa vez nós usamos uma notação um pouco diferente (`{{ post.title }}` ou `{{ post.text }}`)? Nós estamos acessando os dados em cada um dos campos que definimos no model do `Post`. Além disso, `|linebreaks` está passando o texto do post por um filtro, convertendo quebras de linha em parágrafos.
 
 ## Mais uma coisa
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Seria bom ver se seu site ainda funciona na internet, certo? Vamos tentar implantar a PythonAnywhere novamente. Aqui está um resumo dos passos…
 
-* First, push your code to GitHub
+* Primeiro, envie seu código para o Github
 
 {% filename %}command-line{% endfilename %}
 
