@@ -200,7 +200,7 @@ ola という `ユーザ名` の `User` モデルのインスタンスを、`取
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Chaining QuerySets
+### クエリセットをつなげる
 
 QuerySetsを **つなげて** 組み合わせることも出来ます。
 
