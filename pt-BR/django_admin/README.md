@@ -44,7 +44,7 @@ Quando solicitado, insira seu nome de usuário (letras minúsculas, sem espaços
 
 Volte ao seu navegador. Faça login com as credenciais de superusuário que você escolheu; você deverá ver o painel de controle de administração do Django.
 
-![Django admin](images/django_admin3.png)
+![Django Admin](images/django_admin3.png)
 
 Vá para Posts e experimente um pouco por lá. Adicione cinco ou seis posts. Não se preocupe com o conteúdo - você pode simplesmente copiar e colar algum texto desse tutorial para economizar tempo. :)
 
@@ -52,6 +52,6 @@ Certifique-se que pelo menos duas ou três postagens (mas não todas) têm a dat
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+Se você quiser saber mais sobre o Django admin, confira a documentação do Django: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Esse provavelmente é um bom momento para pegar um café (ou chá) ou algo para comer para recuperar as energias. Você criou seu primeiro modelo em Django - você merece uma pausa!
