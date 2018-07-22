@@ -1,6 +1,6 @@
 # Se você estiver fazendo o tutorial em casa
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+Se você estiver fazendo o tutorial em casa e não num dos [eventos Django Girls](https://djangogirls.org/events/), você pode pular este capítulo e ir direto para o capítulo [Como a internet funciona?](../how_the_internet_works/README.md).
 
 Isto porque cobrimos estas coisas no tutorial de qualquer maneira, e esta é apenas uma página adicional que reúne todas as instruções de instalação em um só lugar. O evento Django Girls inclui uma "noite de instalação" onde instalamos tudo de forma não precisar se preocupar com isso durante o workshop, e isso é útil para nós.
 
