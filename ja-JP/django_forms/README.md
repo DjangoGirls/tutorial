@@ -145,7 +145,7 @@ def post_new(request):
 * `Save` ボタンが必要です。これをHTMLのbuttonタグで行います: `<button type="submit">Save</button>`.
 * 最後に`<form ...>` タグを開いて、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームをセキュアにするためこれは非常に重要です！ これを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
 
-![CSFR Forbidden page](images/csrf2.png)
+![CSFR 禁止のページ](images/csrf2.png)
 
 では、`post_edit.html` のHTMLがどのようになるか見てみましょう:
 
@@ -267,7 +267,7 @@ def post_new(request):
 
 > 最近までDjango adminを使ってきたので、システム上で今まだログイン状態かと思います。 いくつかの状況ではログアウト状態になることがあります(ブラウザを閉じる、DBを再起動するなど..)。 投稿を作成するときに、ログインユーザーがわからないというエラーが発生した場合は、管理ページhttp://127.0.0.1:8000/adminにアクセスして再度ログインしてください。 その問題は一時的に解決します。 メインチュートリアルの後 Homework: add security to your website! の章に恒久的な対策がありますので宿題として取り組んでみてください。
 
-![Logged in error](images/post_create_error.png)
+![ログインエラー](images/post_create_error.png)
 
 ## フォームのバリデーション(検証)
 
@@ -360,11 +360,11 @@ form = PostForm(instance=post)
 
 よし、ちゃんと動くか試してみましょう！`post_detail` ページにいきましょう。そこの右上に [編集] ボタンがあるはずです:
 
-![Edit button](images/edit_button2.png)
+![編集ボタン](images/edit_button2.png)
 
 クリックするとブログ記事のフォームが表示されると思います:
 
-![フォームの編集](images/edit_form2.png)
+![編集フォーム](images/edit_form2.png)
 
 あとはお気軽にタイトルやテキストを変更して保存してください！
 
@@ -416,9 +416,9 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 {% endif %}
 ```
 
-あなたはログインしている可能性が高いので、ページを更新しても、何も変わらないかもしれません。 ただし、別のブラウザやシークレットウィンドウ（Windows Edgeでは「InPrivate」と呼ばれます）にページを読み込むと、リンクが表示されず、アイコンも表示されません。
+あなたはログインしている可能性が高いので、ページを更新しても、何も変わらないかもしれません。 ただし、別のブラウザやシークレットウィンドウ（Windows Edgeでは「InPrivate」と呼ばれます）でページを読み込むと、リンクが表示されず、アイコンも表示されないでしょう！
 
-## もう一つ: deployの時間です!
+## もう一つ: デプロイの時間です!
 
 ではPythonAnywhere上で動作するかを確認しましょう。再度デプロイします。
 
@@ -433,7 +433,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
     $ git push
     
 
-* そうすると、PythonAnywhereのbashコンソールで見ると：
+* それから、[PythonAnywhereのbashコンソール](https://www.pythonanywhere.com/consoles/)で：
 
 {% filename %}command-line{% endfilename %}
 
@@ -444,6 +444,6 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 (`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
 
-* 最後に、Webタブに行って、リロードします.
+* 最後に、[Webタブ](https://www.pythonanywhere.com/web_app_setup/)に行って、**リロード**します。
 
-そしてdeployします! おめでとうございます :)
+うまくいってるはずです！おめでとう :)
