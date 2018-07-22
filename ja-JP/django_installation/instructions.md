@@ -106,7 +106,7 @@ LinuxやOS Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実�
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-実行して、仮想環境を起動します。
+以下を実行して、仮想環境を起動します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-実行して、仮想環境を起動します。
+以下を実行して、仮想環境を起動します。
 
 {% filename %}command-line{% endfilename %}
 
