@@ -220,9 +220,9 @@ if form.is_valid():
     post.save()
 ```
 
-基本的にここでは2つのことを行います。まず `form.save` でフォームを保存することと author を追加することです (`PostForm` 内に `author` フィールドがありませんし、このフィールドは必須です) 。 commit=False は Post モデルをまだセーブしません。ではauthorを追加します。commit=False を指定せず form.save() を実行します。 ほとんどの場合、`commit = False`なしで`form.save()`を使用しますが、この場合はそれを指定する必要があります。 `post.save()`は変更を保存し（作成者を追加する）、新しいブログ投稿が作成されます。
+基本的にここでは2つのことを行います。まず `form.save` でフォームを保存することと author を追加することです (`PostForm` 内に `author` フィールドがありませんし、このフィールドは必須です) 。 `commit=False` は `Post` モデルをまだ保存しないという意味です。保存前に author を追加したいので。 ほとんどの場合、`commit = False`なしで`form.save()`を使用しますが、この場合はそれを指定する必要があります。 `post.save()`は変更を保存し（作成者を追加しつつ）、新しいブログ投稿が作成されます！
 
-最後に、新しく作成された記事の post_detail ページを表示できれば良いですよね? そのために次のインポートを追加します:
+最後に、新しく作成された記事の `post_detail` ページを表示できれば良いですよね? そのために次のインポートを追加します:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +230,7 @@ if form.is_valid():
 from django.shortcuts import redirect
 ```
 
-ファイルの先頭に追加します。これでようやく、新しく作成されたポストのための post_detail ページに移動する処理を書けます。
+ファイルの先頭に追加します。これで新しく作成されたポストの `post_detail` ページに移動する処理を書けます。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,7 +238,7 @@ from django.shortcuts import redirect
 return redirect('post_detail', pk=post.pk)
 ```
 
-blog.views.post_detail は新しく作成されたポストのために post_detail ページに移動するためのビューです。 この view では pk 変数が必須であることを覚えていますか? post では新しいブログ記事が作成されます。
+`post_detail` 移動したいビューの名前です。 この view では pk 変数が必須であることを覚えていますか? post では新しいブログ記事が作成されます。
 
 OK, たくさんのことを説明しました。全体の view は以下のようになります。
 
