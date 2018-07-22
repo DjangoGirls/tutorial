@@ -85,7 +85,7 @@ class PostForm(forms.ModelForm):
 </html>
 ```
 
-Htmlファイルを保存して、ページをリロードします。 `NoReverseMatch` エラーが表示されます?
+ファイルを保存して、ページ http://127.0.0.1:8000 をリロードします。すでに見覚えのある `NoReverseMatch` エラーが表示されます？
 
 ## URL
 
@@ -97,7 +97,7 @@ blog/urls.pyを開き、次の内容を追加します。
 path('post/new', views.post_new, name='post_new'),
 ```
 
-次に、このような内容を追加します。
+すると最終的なコードは次のようになります:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -114,9 +114,9 @@ urlpatterns = [
 
 サイトをリロードした後、`AttributeError`が出ます。`post_new`ビューの実装がないからです。ファイルに追加してみましょう。
 
-## post_new view
+## post_new ビュー
 
-blog/views.pyを開きます。fromの行の後に次の内容を追加してみましょう。
+`blog/views.py`を開きます。`from`の行の後に次の内容を追加してみましょう。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +124,7 @@ blog/views.pyを開きます。fromの行の後に次の内容を追加してみ
 from .forms import PostForm
 ```
 
-その後にビューを追加します。
+その後に*ビュー*を追加します。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,11 +134,11 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Postフォームを新しく作るには、PostFormを呼び出し、それをテンプレートに渡す必要があります。 ビューに戻り、いまからフォームのテンプレートを作りましょう。
+`Post`フォームを新しく作るには、`PostForm()`を呼び出し、それをテンプレートに渡す必要があります。 あとでこの *ビュー* に戻ってきますが、今はフォームのためのテンプレートをすぐに作ってしまいましょう。
 
 ## テンプレート
 
-blog/templates/blogディレクトリにpost_edit.htmlファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
+`blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
 
 * フォームを表示する必要があります。 私たちは（例えば）{％ raw ％}`{{ form.as_p }}`{％ endraw ％}でこれを行うことができます。
 * 上記の行は HTML フォーム タグでラップする必要があります: `<form method="POST">...</form>`.
