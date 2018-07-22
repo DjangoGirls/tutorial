@@ -259,9 +259,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-では動作確認してみましょう。 http://127.0.0.1:8000/post/new/ に行き、 title と text を追加し、保存します。 新しいブログ記事が追加され、post_detail にリダイレクトされます！
+では動作確認してみましょう。 http://127.0.0.1:8000/post/new/ に行き、 `title` と `text` を追加し、保存すると…… じゃじゃーん！ 新しいブログ記事が追加され、post_detail にリダイレクトされます！
 
-おそらくあなたは日付が設定されていないことに気づいたことでしょう。それについては Django Girls Tutorial: Extensions 内の publish button をみてください。
+ブログ記事を保存する前に公開日をセットしていることに気づいたかもしれません。後ほど、**Django Girls Tutorial: Extensions**にて *公開ボタン* を導入します。
 
 素晴らしい！
 
