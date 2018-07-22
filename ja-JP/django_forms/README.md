@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-最初にDjangoのformsをインポート (`from django import forms`) し、`Post`モデルも当然インポート (`from .models import Post`) する必要があります。
+最初にDjangoのformsをインポート (`from django import forms`) し、もちろん`Post`モデルもインポート (`from .models import Post`) する必要があります。
 
 PostFormとは何かと思うかもしれません。これはフォームを作る時に定義する名前です。 Djangoでいう、このフォームはModelFormです。`forms.ModelForm`はPostFormの引数です。
 
