@@ -1,6 +1,6 @@
 > Esta seção baseia-se em tutoriais da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. O tutorial do django-marcador é protegido por direitos autorais por Markus Zapke-Gründemann et al.
+> Parte deste capítulo é baseado em [tutorial django-marcador](http://django-marcador.keimlink.de/) licenciado sob Creative Commons Attribution-ShareAlike 4.0 International License. O tutorial do django-marcador é protegido por direitos autorais por Markus Zapke-Gründemann et al.
 
 ## Ambiente virtual
 
@@ -51,7 +51,7 @@ Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv my
     $ python3 -m venv myvenv
     
 
-`myvenv` é o nome do seu `virtualenv`. Você pode usar qualquer outro nome, mas permaneça em caixa baixa(minúsculas) e não use espaços entre os nomes. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` é o nome do seu `virtualenv`. Você pode usar qualquer outro nome, mas permaneça em caixa baixa(minúsculas) e não use espaços entre os nomes. Também é uma boa idéia manter o nome curto pois você vai escrevê-lo muitas vezes!
 
 > **NOTA:** Em algumas versões do Debian/Ubuntu, você pode receber o seguinte erro:
 > 
@@ -62,7 +62,7 @@ Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv my
 >     Você pode precisar usar sudo com esse comando.  Depois de instalar o pacote python3-venv, recrie seu ambiente virtual.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> Neste caso, siga as instruções acima e instale o pacote `python3-venv`: {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
