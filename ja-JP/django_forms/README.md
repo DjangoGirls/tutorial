@@ -238,9 +238,9 @@ from django.shortcuts import redirect
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` 移動したいビューの名前です。 この view では pk 変数が必須であることを覚えていますか? post では新しいブログ記事が作成されます。
+`post_detail` 移動したいビューの名前です。 この *ビュー* では `pk` 変数が必須であることを覚えていますか? ビューにそれを渡すため、`pk=post.pk`を使います。この `post` は新しく作られたブログポストです！
 
-OK, たくさんのことを説明しました。全体の view は以下のようになります。
+ふー、たくさんのことを話してきましたが、そろそろ *ビュー* の全体がどんな感じか見てみたい頃じゃないでしょうか？
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,7 +259,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-では動作確認してみます。 http://127.0.0.1:8000/post/new/ に行き、 title と text を追加し、保存します。 新しいブログ記事が追加され、post_detail にリダイレクトされます！
+では動作確認してみましょう。 http://127.0.0.1:8000/post/new/ に行き、 title と text を追加し、保存します。 新しいブログ記事が追加され、post_detail にリダイレクトされます！
 
 おそらくあなたは日付が設定されていないことに気づいたことでしょう。それについては Django Girls Tutorial: Extensions 内の publish button をみてください。
 
