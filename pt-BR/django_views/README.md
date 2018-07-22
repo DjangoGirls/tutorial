@@ -20,9 +20,9 @@ from django.shortcuts import render
 
 Não há muita coisa por aqui.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+Lembre-se que as linhas começando com `#` são comentários -- isto significa que estas linhas não serão executadas pelo Python.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+Vamos criar uma *view* como o comentário em inglês sugere. Vamos criar uma view mínima logo abaixo:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -31,14 +31,14 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Como você pode ver, nós criamos um método (`def`) chamada `post_list` que aceita o `request` e `return` um método `render` que irá renderizar (montar) nosso modelo `blog/post_list.html`.
+Como você pode ver, nós criamos uma função (`def`) chamada `post_list` que recebe um `request`, executa a função `render` que irá renderizar (montar) nosso modelo de acordo com o template `blog/post_list.html`e retorna (`return`) o resultado.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+Salve o arquivo e abra a página http://127.0.0.1:8000/ para ver o que acontece.
 
 Outro erro! Leia o que está acontecendo agora:
 
 ![Erro](images/error.png)
 
-Isso mostra que o servidor está em execução novamente, pelo menos, mas ainda não parece certo, não é? Não se preocupe, é apenas uma página de erro, nada a temer! Como as mensagens de erro no console, estas são realmente muito úteis. Você pode ler que *TemplateDoesNotExist*. Vamos corrigir este bug e criar um modelo no próximo capítulo!
+O erro mostra que o servidor pelo menos está sendo executado, mas ainda não parece certo, né? Não se preocupe, é apenas uma página de erro, nada a temer! Como as mensagens de erro no console, estas são realmente muito úteis. Você pode ler *TemplateDoesNotExist*, que significa template não existe, em inglês. Vamos corrigir este bug e criar um modelo no próximo capítulo!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Aprenda mais sobre as views do Django lendo a documentação oficial: https://docs.djangoproject.com/en/2.0/topics/http/views/
