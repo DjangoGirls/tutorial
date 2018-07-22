@@ -376,7 +376,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-` blog / templates / blog / base.html `で、` page-header ` ` div `とそれ以前に入力したアンカータグを見つけます。 これは次のようになります。
+`blog/templates/ blog/base.html` で、`page-header` `div `とそれ以前に入力したアンカータグを見つけます。 これは次のようになります。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -384,7 +384,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-これに`{% if %}`タグを追加すると、管理者にログインしているユーザーのみにリンクを表示します。 今は、あなただけです！ これで、`<button>` タグは以下のようになります：
+これに`{% if %}`タグを追加し、管理者でログインしているユーザーのみにリンクを表示します。 今は、あなただけです！ `<a>` タグを以下のように変更します：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
