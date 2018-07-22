@@ -2,7 +2,7 @@
 
 > Para os leitores em casa: este capítulo é coberto no vídeo [ Seu novo amigo: linha de comando ](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+É emocionante, não?! Você vai escrever sua primeira linha de código em poucos minutos! :)
 
 **Deixe-nos apresentá-lo ao seu primeiro novo amigo: a linha de comando!**
 
@@ -12,7 +12,7 @@ As etapas a seguir mostraram a você como usar a janela preta que todos os hacke
 
 ## O que é a linha de comando?
 
-A janela, que geralmente é chamada de **linha de comando** ou **interface de linha de comando**, é uma aplicação de texto para ver e manipular arquivos de seu computador. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
+A janela, que geralmente é chamada de **linha de comando** ou **interface de linha de comando**, é uma aplicação de texto para ver e manipular arquivos de seu computador. É como se fosse o Windows Explorer ou o Finder no Mac, porém sem a interface gráfica. Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
 
 ## Abra a interface de linha de comando
 
@@ -412,13 +412,13 @@ Aqui vai uma lista de alguns comandos úteis:
 | ----------------- | ------------------------ | ----------------------------- | ------------------------------------------------- |
 | saindo            | saindo                   | Fecha a janela                | **saindo**                                        |
 | cd                | cd                       | Muda a pasta                  | **cd test**                                       |
-| cd                | pwd                      | show the current directory    | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
+| cd                | pwd                      | mostra o diretório atual      | **cd** (Windows) ou **pwd** (Mac OS / Linux)      |
 | dir               | ls                       | Lista as pastas e/ou arquivos | **dir**                                           |
 | copy              | cp                       | Copia um arquivo              | **copy c:\test\test.txt c:\windows\test.txt** |
 | move              | mv                       | Move um arquivo               | **move c:\test\test.txt c:\windows\test.txt** |
 | mkdir             | mkdir                    | Cria uma pasta                | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file                 | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory            | **rm -r testdirectory**                           |
+| rmdir (ou del)    | rm                       | Exclui arquivo                | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | Exclui diretório              | **rm -r testdirectory**                           |
 
 Esses são apenas alguns dos comandos que você pode rodar na sua linha de comando, porém não vamos usar mais do que isso hoje.
 
