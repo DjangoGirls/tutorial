@@ -164,7 +164,7 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
 
 ### Requirementsファイルによってパッケージをインストールする
 
-Requirementsファイルは`pip install`でインストールするためのパケッケージリストが記載されているファイルです:
+Requirementsファイルは`pip install`でインストールするためのパッケージリストが記載されているファイルです:
 
 最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります:
 
