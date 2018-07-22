@@ -96,8 +96,8 @@ A última parte, `name='post_list'`, é o nome da URL que será usado para ident
 
 Se você tentar visitar http://127.0.0.1:8000 / agora, você irá encontrar alguma mensagem do tipo 'página web não disponível'. Isso ocorre porque o servidor (Lembre-se de digitar `runserver`?) não está mais funcionando. Dê uma olhada na sua janela de console do servidor para descobrir o porquê.
 
-![Error](images/error1.png)
+![Erro](images/error1.png)
 
-Seu console está mostrando um erro, mas não se preocupe -- este erro é bastante útil: ele está dizendo que não existe nenhum atributo **post_list** no módulo de views. Esse é o nome da *view* que Django está a tentando encontrar e usar, mas ainda não a criamos. At this stage, your `/admin/` will also not work. Mas não se preocupe que nós chegaremos lá.
+Seu console está mostrando um erro, mas não se preocupe -- este erro é bastante útil: ele está dizendo que não existe nenhum atributo **post_list** no módulo de views. Esse é o nome da *view* que Django está a tentando encontrar e usar, mas ainda não a criamos. Por enquanto, seu `/admin/` também não funcionará. Mas não se preocupe que nós chegaremos lá.
 
 > Se você quer saber mais sobre a configuração de URLs no Django, veja a documentação oficial: https://docs.djangoproject.com/en/2.0/topics/http/urls/
