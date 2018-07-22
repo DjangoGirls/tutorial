@@ -396,9 +396,9 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 この`{% if %}`は、ページをリクエストしているユーザーがログインしている場合にのみ、リンクがブラウザに送信されるようにします。 これは新しい投稿の作成を完全に保護するものではありませんが、それは良い第一歩です。 私たちは拡張レッスンでより多くのセキュリティをカバーします。
 
-詳細ページに追加した編集アイコンを覚えていますか？ 同じ変更を追加したいので、他の人が既存の投稿を編集することはできません。
+詳細ページに追加した編集アイコンを覚えていますか？ 他の人が既存の投稿を編集できないように、同じ変更を追加したいと思います。
 
-`blog/templates/blog/post_detail.html` を開いて次の行を追加します:
+`blog/templates/blog/post_detail.html` を開いて次の行を見つけてください:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-これに変更してください：
+それをこれに変更してください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,7 +416,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 {% endif %}
 ```
 
-あなたがログインしている可能性が高いので、ページを更新すると、別のものは表示されません。 ただし、別のブラウザやシークレットウィンドウ（Windows Edgeでは「InPrivate」と呼ばれます）にページを読み込むと、リンクが表示されず、アイコンも表示されません。
+あなたはログインしている可能性が高いので、ページを更新しても、何も変わらないかもしれません。 ただし、別のブラウザやシークレットウィンドウ（Windows Edgeでは「InPrivate」と呼ばれます）にページを読み込むと、リンクが表示されず、アイコンも表示されません。
 
 ## もう一つ: deployの時間です!
 
