@@ -320,9 +320,9 @@ blog/urls.py には次の行を追加します:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-テンプレート blog/templates/blog/post_edit.html を再利用します。そしてviewを追加します.
+テンプレート `blog/templates/blog/post_edit.html` を再利用します。そして*ビュー*を追加します.
 
-blog/views.py を開いて次をファイルの最後に追加します:
+`blog/views.py` を開いて次をファイルの最後に追加します:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-post_view とほとんど同じに見えますか? しかし完全に同じではありません。 まずURLから pk パラメータを渡します。次に Post モデルを get_object_or_404(Post, pk=pk) で取得します。 その後フォームを保存する際、この記事をインスタンスとしてフォームを作成します。
+`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まずURLから pk パラメータを渡します。次に Post モデルを get_object_or_404(Post, pk=pk) で取得します。 その後フォームを保存する際、この記事をインスタンスとしてフォームを作成します。
 
 {% filename %}blog/views.py{% endfilename %}
 
