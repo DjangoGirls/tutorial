@@ -1,8 +1,8 @@
-# Django views – time to create!
+# Django views -- hora de criar!
 
 É hora de resolver o bug que criamos no capítulo anterior! :)
 
-Uma *view* é colocada onde nós colocamos a "lógica" da nossa aplicação. Ela vai extrair informações do `model` que você criou e entregá-las a um `template`. Nós vamos criar um template no próximo capítulo. Views são somente funções Python que são um pouco mais complicadas do que aquelas que criamos no capítulo **Introdução ao Python**.
+Uma *view* é o lugar onde nós colocamos a "lógica" da nossa aplicação. Ela vai extrair informações do `model` que você criou e entregá-las a um `template`. Nós vamos criar um template no próximo capítulo. Views são somente funções Python que são um pouco mais complicadas do que aquelas que criamos no capítulo **Introdução ao Python**.
 
 As views são postas no arquivo `views.py`. Nós vamos adicionar nossas *views* no arquivo `blog/views.py`.
 
