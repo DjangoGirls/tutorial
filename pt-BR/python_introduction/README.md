@@ -468,17 +468,17 @@ Como você pode ver, o valor da chave `'country'` foi alterado de `'Poland'` par
 Incrível! Agora você sabe muito sobre programação. Nesta última parte você aprendeu sobre:
 
 - **erros** -- agora você sabe como ler e entender mensagens de erro que aparecem quando o Python não entende um comando que você deu
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **variáveis** -- nomes para objetos que permitem que você programe facilmente e deixam seu código mais legível
+- **listas** -- listas de objetos armazenados em uma ordem específica
+- **dicionários** - objetos armazenados como pares chave-valor
 
-Excited for the next part? :)
+Animada para a próxima parte? :)
 
 ## Compare coisas
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Para leitoras em casa: este capítulo é abordado no vídeo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+Grande parte da programação consiste em comparar coisas. O que é mais fácil comparar? Números, é claro. Vamos ver como isso funciona:
 
 {% filename %}command-line{% endfilename %}
 
@@ -495,11 +495,11 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Demos ao Python alguns números para comparar. Como você pode ver, ele pode comparar não apenas números, mas também resultados de métodos. Legal, né?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Você deve estar se perguntando por que colocamos dois sinais de igual `==` lado a lado para comparar se os números são iguais. Nós usamos um único `=` para atribuir valores a variáveis. Você sempre, **sempre**, precisa colocar dois `==` se quiser verificar se as coisas são iguais. Também é possível afirmar que as coisas são diferentes. Para isso, usamos o símbolo `! =`, como mostrado no exemplo acima.
 
-Give Python two more tasks:
+Dê ao Python mais duas tarefas:
 
 {% filename %}command-line{% endfilename %}
 
@@ -510,14 +510,14 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+Vimos `>` e `<`, mas o que significam `>=` e `<=`? Leia da seguinte forma:
 
 - x `>` y significa: x é maior que y
 - x `<` y significa: x é menor que y
-- x `< =` y significa: x é menor ou igual a y
+- x `<=` y significa: x é menor ou igual a y
 - x `>=` y significa: x é maior ou igual a y
 
-Awesome! Wanna do one more? Try this:
+Fantástico! Quer fazer mais? Tente isto:
 
 {% filename %}command-line{% endfilename %}
 
