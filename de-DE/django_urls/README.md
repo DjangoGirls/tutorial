@@ -38,9 +38,9 @@ Die admin-URL, die du im vorangegangenen Kapitel bereits besucht hast, ist schon
     path('admin/', admin.site.urls),
 ```
 
-Diese Zeile bedeutet, dass für jede URL, die mit `admin/` beginnt, Django die entsprechende *View* finden wird. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Diese Zeile bedeutet, dass für jede URL, die mit `admin/` beginnt, Django die entsprechende *View* finden wird. Hier wurden einige admin-URLs eingefügt, dadurch wird nicht alles in eine Datei gepackt - es bleibt lesbarer und sauberer. 
 
-## Your first Django URL!
+## Deine erste Django URL!
 
 Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
 
