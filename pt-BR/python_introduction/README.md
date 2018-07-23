@@ -557,9 +557,9 @@ Existem apenas dois objetos booleanos:
 - True (verdadeiro)
 - False (falso)
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+Para que o Python entenda, você precisa escrever exatamente 'True' (primeira letra maiúscula e as outras minúsculas -- mas sem as aspas). **true, TRUE ou tRUE não vão funcionar -- só True está correto.** (A mesma coisa vale para 'False', obviamente.)
 
-Booleans can be variables, too! See here:
+Booleanos também podem ser variáveis! Veja:
 
 {% filename %}command-line{% endfilename %}
 
@@ -569,7 +569,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+Você também pode fazer desse jeito:
 
 {% filename %}command-line{% endfilename %}
 
@@ -579,23 +579,23 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Pratique e divirta-se com os valores booleanos tentando executar os seguintes comandos:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Parabéns! Booleanos são um dos recursos mais interessantes na programação, e você acabou de aprender como usá-los!
 
-# Salvá-lo!
+# Salve!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> Para leitoras em casa: este capítulo é abordado no vídeo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Até agora escrevemos todos os códigos no interpretador Python, que nos limita a digitar uma linha por vez. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até agora executamos nossos programas uma linha de cada vez no **interpretador** Python. Vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
 
-- Saída do interpretador Python
-- Abra o editor de código de sua escolha
+- Sair do interpretador Python
+- Abrir o editor de código de sua escolha
 - Salvar algum código em um novo arquivo de python
 - Executá-lo!
 
