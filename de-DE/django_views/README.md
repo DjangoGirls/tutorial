@@ -18,27 +18,27 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Not too much stuff here yet.
+Ok, hier steht noch nicht so viel.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+Denk daran, Zeilen mit einem `#` am Anfang sind Kommentare – das bedeutet, dass diese Zeilen von Python nicht ausgeführt werden.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+Lass uns eine *View* erstellen, wie der Kommentar das vorschlägt. Füge die folgende Mini-View darunter ein:
 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-def post_list(request):
+def post_list(request):     
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
+Du siehst hier, dass wir eine Methode (`def`) mit dem Namen `post_list` definieren. Sie hat den Parameter `request`. In der Methode weisen wir mit `return` die Rückgabe einer anderen Funktion namens `render` an. Diese wird unser Template `blog/post_list.html` erstellen (man sagt auch "rendern").
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+Speichere die Datei, öffne http://127.0.0.1:8000/ im Browser und schau nach, was wir jetzt haben.
 
 Einen anderen Fehler! Lies dir durch, was da steht:
 
-![Fehler](images/error.png)
+![Error](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Das zeigt, dass der Server zumindest wieder läuft, aber es sieht immer noch nicht richtig aus, oder? Mach dir keine Sorgen, es ist nur eine Fehlerseite, nichts zu befürchten! Genau wie die Fehlermeldungen in der Konsole sind auch die hier super nützlich. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
 > Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
