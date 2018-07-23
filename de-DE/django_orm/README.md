@@ -1,10 +1,10 @@
-# Django ORM (Querysets)
+# Django ORM und QuerySets
 
 In diesem Kapitel lernst du, wie sich Django mit der Datenbank verbindet und Daten darin speichert. Lass uns loslegen!
 
 ## Was ist ein QuerySet?
 
-Zusammengefasst ist ein QuerySet eine Liste von Objekten eines bestimmten Models. QuerySets erlauben dir, Daten aus der Datenbank zu lesen, zu filtern und zu sortieren.
+Zusammengefasst ist ein QuerySet eine Liste von Objekten eines bestimmten Models. QuerySets erlauben es dir, Daten aus der Datenbank zu lesen, zu filtern und zu sortieren.
 
 Am besten wir sehen uns das an einem Beispiel an. Versuchen wir's?
 
@@ -25,7 +25,7 @@ Das sollte angezeigt werden:
 (InteractiveConsole) >>>
 ```
 
-Nun bist du in der Interaktiven Konsole von Django. Die funktioniert wie der Python-Prompt, aber hat noch etwas zusätzliche Django-Magie. :) Du kannst hier natürlich auch alle Python-Befehle verwenden.
+Nun bist du in der interaktiven Konsole von Django. Die funktioniert wie der Python-Prompt, aber hat noch etwas zusätzliche Django-Magie. :) Du kannst hier natürlich auch alle Python-Befehle verwenden.
 
 ### Alle Objekte
 
@@ -40,7 +40,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Hoppla! Eine Fehlermeldung ist erschienen. Sie sagt uns, dass Python "Post" nicht kennt. Und sie hat recht: Wir vergaßen das zu importieren!
+Hoppla! Eine Fehlermeldung ist erschienen. Sie sagt uns, dass Python "Post" nicht kennt. Und sie hat recht: Wir haben vergessen zu importieren!
 
 {% filename %}command-line{% endfilename %}
 
@@ -57,7 +57,7 @@ Wir importieren das Model `Post` aus `blog.models`. Versuchen wir nochmal, alle 
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-Das ist eine Liste all der Posts, die wir zuvor erstellt haben! Wir haven diese Posts mit der Django-Admin-Oberfläche erstellt. Aber nun wollen wir weitere Posts mit Python erstellen! Wie geht das also?
+Das ist eine Liste all der Posts, die wir zuvor lokal erstellt haben! Wir haben diese Posts mit der Django-Admin-Oberfläche erstellt. Aber nun wollen wir weitere Posts mit Python erstellen! Wie geht das also?
 
 ### Objekt erstellen
 
