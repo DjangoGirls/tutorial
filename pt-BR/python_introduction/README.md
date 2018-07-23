@@ -835,18 +835,18 @@ Nos últimos exercícios você aprendeu:
 - a **comparar coisas** -- em Python, você pode comparar objetos usando os operadores `>`, `>=`, `==`, `<=`, `<` e `and`, `or`.
 - **Booleano** - um tipo de objeto que só tem dois valores possíveis: `True` ou `False`.
 - a **salvar arquivos** -- armazenar código em arquivos para que você possa executar programas maiores.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **if... elif... else** -- instruções que permitem que você execute o código somente se determinadas condições forem atendidas.
+- **comentários** -- linhas que o Python não executa e que permitem que você documente seu código.
 
-Time for the last part of this chapter!
+Chegamos à última parte do capítulo!
 
 ## Suas próprias funções!
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> Para leitoras em casa: esta parte do capítulo é abordada no vídeo [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Lembra de funções como `len()`? Boas notícias: agora você vai aprender como escrever suas próprias funções!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Uma função é um sequência de instruções que o Python deve executar. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
