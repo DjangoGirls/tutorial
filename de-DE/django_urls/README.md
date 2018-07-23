@@ -18,22 +18,19 @@ Jede Seite im Internet braucht ihre eigene URL. Dadurch weiß deine Applikation,
 
 ```python
 """mysite URL Configuration
-
 [...]
-"""
+""" 
 from django.urls import path, include
-from django.contrib import admin
-
-urlpatterns = [
+from django.contrib import admin urlpatterns = [     
     path('admin/', admin.site.urls),
 ]
 ```
 
-As you can see, Django has already put something here for us.
+Wie du siehst, hat Django hier schon etwas für uns eingefügt.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+Zeilen zwischen dreifachen Gänsefüßchen (`'''` oder `"""`) heißen Docstrings (Kommentare) - man kann sie am Anfang der Datei, Klasse oder Methode platzieren, um zu beschreiben, was sie tut. Sie werden von Python nicht ausgeführt.
 
-The admin URL, which you visited in the previous chapter, is already here:
+Die admin-URL, die du im vorangegangenen Kapitel bereits besucht hast, ist schon da:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
