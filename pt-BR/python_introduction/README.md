@@ -629,7 +629,7 @@ Com o arquivo salvo, é hora de executá-lo! Com as habilidades que você aprend
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Em um Mac, o comando será esse:
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,7 +641,7 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+No Linux, o comando será assim (a palavra "Desktop" pode estar traduzida para o português "Área de Trabalho"):
 
 {% filename %}command-line{% endfilename %}
 
@@ -652,7 +652,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+No prompt de comando Windows, vai ser assim:
 
 {% filename %}command-line{% endfilename %}
 
