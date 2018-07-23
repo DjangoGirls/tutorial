@@ -781,9 +781,9 @@ e executando:
     Olá Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Viu o que aconteceu? O `elif` te possibilita adicionar uma condição que só vai ser executada se a primeira condição for falsa.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Você pode adicionar quantos `elif` quiser depois do `if`. Por exemplo:
 
 {% filename %}python_intro.py{% endfilename %}
 
