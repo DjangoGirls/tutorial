@@ -826,15 +826,15 @@ if volume < 20 or volume > 80
     print("Bem melhor!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Você não precisa escrever um comentário para cada linha de código, mas eles são úteis para explicar porque o seu código faz alguma coisa ou para fornecer um breve resumo de algo mais complexo.
 
 ### Sumário
 
-In the last few exercises you learned about:
+Nos últimos exercícios você aprendeu:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
+- a **comparar coisas** -- em Python, você pode comparar objetos usando os operadores `>`, `>=`, `==`, `<=`, `<` e `and`, `or`.
+- **Booleano** - um tipo de objeto que só tem dois valores possíveis: `True` ou `False`.
+- a **salvar arquivos** -- armazenar código em arquivos para que você possa executar programas maiores.
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
 - **comments** - lines that Python won't run which let you document your code
 
