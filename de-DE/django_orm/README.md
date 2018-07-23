@@ -120,11 +120,11 @@ Da ist er, ein weiterer Post in der Liste!
 
 ### Mehrere Posts hinzufügen
 
-Du kann jetzt nach Belieben weitere Blogposts hinzufügen, um ein Gefühl dafür zu bekommen, wie es funktioniert. Füge doch noch zwei, drei hinzu bevor zu zum nächsten Teil übergehst.
+Du kann jetzt nach Belieben weitere Blogposts hinzufügen, um ein Gefühl dafür zu bekommen, wie es funktioniert. Füge doch noch zwei, drei hinzu bevor du zum nächsten Teil übergehst.
 
 ### Objekte filtern
 
-Eine wichtige Eigenschaft von QuerySets ist, dass die Einträge gefiltert werden können. Zum Beispiel wollen wir alle Posts finden, die Users Ola geschrieben hat. Dafür nehmen wir `filter` statt `all` in `Post.objects.all()`. In Klammern schreiben wir die Bedingung(en), die ein Blogpost erfüllen muss, damit ein er in unser Queryset kommt. So soll jetzt z.B. `author` gleich `me` sein, damit nur die Blogposts des Autors "me" herausgefiltert werden. In Django schreiben wir deshalb: `author=me`. Jetzt sieht unser Code folgendermaßen aus:
+Eine wichtige Eigenschaft von QuerySets ist, dass die Einträge gefiltert werden können. Zum Beispiel wollen wir alle Posts finden, die der User Ola geschrieben hat. Dafür nehmen wir `filter` statt `all` in `Post.objects.all()`. In Klammern schreiben wir die Bedingung(en), die ein Blogpost erfüllen muss, damit ein er in unser Queryset kommt. So soll jetzt z.B. `author` gleich `me` sein, damit nur die Blogposts des Autors "me" herausgefiltert werden. In Django schreiben wir deshalb: `author=me`. Jetzt sieht unser Code folgendermaßen aus:
 
 {% filename %}command-line{% endfilename %}
 
