@@ -790,20 +790,20 @@ Você pode adicionar quantos `elif` quiser depois do `if`. Por exemplo:
 ```python
 volume = 57
 if volume < 20: 
-    print("It's kinda quiet.")
+    print("Está um pouco baixo")
 elif 20 <= volume < 40: 
-    print("It's nice for background music")
+    print("Está bom como música ambiente")
 elif 40 <= volume < 60: 
-    print("Perfect, I can hear all the details")
+    print("Perfeito, posso ouvir todos os detalhes")
 elif 60 <= volume < 80: 
-    print("Nice for parties")
+    print("Ótimo para festas!")
 elif 80 <= volume < 100: 
-    print("A bit loud!")
+    print("Está muito alto!")
 else: 
-    print("My ears are hurting! :(")
+    print("Meus ouvidos doem! :(")
 ```
 
-Python runs through each test in sequence and prints:
+O Python testa cada condição na sequência em que aparece no código e então mostra:
 
 {% filename %}command-line{% endfilename %}
 
@@ -811,19 +811,19 @@ Python runs through each test in sequence and prints:
     Perfeito, posso ouvir todos os detalhes
     
 
-## Comments
+## Comentários
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Comentários são linhas que começam com `#`. Você pode escrever o que quiser após o # `` e o Python vai ignorar. Comentários podem tornar seu código mais fácil para outras pessoas entenderem.
 
-Let's see how that looks:
+Vamos ver como isso funciona:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-# Change the volume if it's too loud or too quiet
-if volume < 20 or volume > 80:
+# Mudar o volume se estiver muito alto ou muito baixo
+if volume < 20 or volume > 80
     volume = 50
-    print("That's better!")
+    print("Bem melhor!")
 ```
 
 You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
