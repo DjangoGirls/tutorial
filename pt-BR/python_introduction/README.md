@@ -183,7 +183,7 @@ Digamos que queremos criar uma nova variável chamada `nome`:
 >>> name = "Ola"
 ```
 
-Digitamos nome igual Ola.
+Digitamos: nome igual Ola.
 
 Como você deve ter percebido, a última linha de código não retornou nada como nos exemplos anteriores. Então como vamos saber se a variável realmente existe? Basta digitar `name` e clicar `enter`:
 
@@ -387,7 +387,7 @@ Agora tente escrever o seguinte comando (tente substituir com as suas próprias 
 Com esse comando, você criou uma variável chamada `participant` com três pares de chave-valor:
 
 - A chave `nome` aponta para o valor `'Ola'` (um objeto `string`),
-- a chave `pais` aponta para `'Polonia'` (outra `string`),
+- a chave `country` aponta para `'Poland'` (outra `string`),
 - e a chave `favorite_numbers` aponta para `[7, 42, 92]` (uma `list` com três números nela).
 
 Você pode verificar o conteúdo de chaves individuais com a sintaxe:
@@ -401,7 +401,7 @@ Ola
 
 É similar a uma lista, mas você não precisa lembrar o índice - apenas o nome.
 
-O que acontece se perguntarmos ao Python qual é o valor de uma chave que não existe? Você consegue adivinhar? Vamos tentar e descobrir!
+O que acontece se perguntarmos ao Python qual é o valor de uma chave que não existe? Você consegue adivinhar? Vamos testar e descobrir!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -417,7 +417,7 @@ Olha, outro erro! Esse é um **KeyError**. O Python é bastante prestativo e te 
 Você deve estar se perguntando quando deve usar um dicionário ou uma lista, certo? Boa pergunta! A resposta rápida é:
 
 - Você precisa de uma sequência ordenada de itens? Use uma lista.
-- Você precisa associar valores com chaves para poder procurá-los eficientemente (pela chave) mais tarde? Use um dicionário.
+- Você precisa associar valores a chaves para poder procurá-los eficientemente (pela chave) mais tarde? Use um dicionário.
 
 Dicionários, assim como listas, são *mutáveis*. Isso significa que eles podem ser alterados depois de criados. Você pode adicionar um novo par chave-valor a um dicionário depois de ele ser criado, por exemplo:
 
@@ -773,12 +773,12 @@ else:
     print('Olá estranho!')
 ```
 
-and executed:
+e executando:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hey Sonja!
+    Olá Sonja!
     
 
 See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
