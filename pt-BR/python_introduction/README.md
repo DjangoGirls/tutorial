@@ -690,13 +690,13 @@ Observação: no Windows, 'python3' não é reconhecido como um comando. Em vez 
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Muito bem! Você acabou de rodar seu primeiro programa em Python que foi salvo em um arquivo. Arrasou!
 
-You can now move on to an essential tool in programming:
+Agora você pode começar a aprender uma ferramenta essencial na programação:
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Várias coisas em um código só podem ser executadas se determinadas condições forem atendidas. É por isso que o Python tem um comando chamado **if**.
 
 Replace the code in your **python_intro.py** file with this:
 
