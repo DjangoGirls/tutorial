@@ -6,7 +6,7 @@
 
 Vamos escrever um pouco de código!
 
-## Interpretador Python
+## Interpretador de Python
 
 > Para os leitores em casa: essa parte é abrangida no [ Básico do Python: Vídeo Números inteiros, Sequências, Listas e Erros ](https://www.youtube.com/watch?v=MO63L4s-20U).
 
@@ -133,7 +133,7 @@ Se perguntando porque algumas vezes você chama funções com um `.` depois de u
 
 OK, chega de strings. Até agora você aprendeu sobre:
 
-- **o prompt** -- digitar comandos (códigos) no interpretador Python resulta em respostas em Python
+- **o prompt** -- digitar comandos (códigos) no interpretador de Python resulta em respostas em Python
 - **números e strings** -- no Python, números são usados para matemática e strings, para objetos de texto
 - **operadores** - como + e * combinam valores para produzir um novo valor
 - **funções** - como upper() e len() executam ações nos objetos.
@@ -592,9 +592,9 @@ Parabéns! Booleanos são um dos recursos mais interessantes na programação, e
 
 > Para leitoras em casa: este capítulo é abordado no vídeo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-Até agora escrevemos todos os códigos no interpretador Python, que nos limita a digitar uma linha por vez. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até agora executamos nossos programas uma linha de cada vez no **interpretador** Python. Vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
+Até agora escrevemos todos os códigos no interpretador de Python, que nos limita a digitar uma linha por vez. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até agora executamos nossos programas uma linha de cada vez no **interpretador** de Python. Vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
 
-- Sair do interpretador Python
+- Sair do interpretador de Python
 - Abrir o editor de código de sua escolha
 - Salvar algum código em um novo arquivo de Python
 - Executar o código!
@@ -620,7 +620,7 @@ print('Hello, Django girls!')
 
 Agora você é um desenvolvedor Python bastante experiente, então sinta-se livre para escrever códigos com o que você aprendeu hoje.
 
-Agora precisamos salvar o arquivo e dar a ele um nome descritivo. Vamos chamar o arquivo **python_intro.py** e salvá-lo na sua área de trabalho. Podemos nomear esse arquivo do jeito que quisermos, mas é importante que o nome termine com **.py**. A extensão **.py** diz ao sistema operacional que esse é um **arquivo Python executável** e o interpretador Python pode rodá-lo.
+Agora precisamos salvar o arquivo e dar a ele um nome descritivo. Vamos nomear o arquivo **python_intro.py** e salvá-lo na sua área de trabalho. Podemos chamá-lo como quisermos, mas é importante que o nome termine com **.py**. A extensão **.py** diz ao sistema operacional que esse é um **arquivo Python executável** e o interpretador de Python pode rodá-lo.
 
 > **Observação**: Você deve reparar numa das coisas mais legais nos editores de código: cores! No interpretador de Python tudo é da mesma cor, mas agora você deve ver que a função `print` aparece em uma cor diferente da string que ela recebe como argumento. Isso é chamado de destaque de sintaxe ("syntax highlightning", do Inglês) e é uma funcionalidade muito útil quando estamos escrevendo código. As cores de cada elemento nos dão dicas sobre o código. Elas avisam, por exemplo, sobre strings que esquecemos de fechar ou palavras reservadas que digitamos errado (como `def` na definição de uma função, que veremos adiante). Esta é uma das razões pelas quais que nós usamos um editor de código. :)
 
@@ -629,7 +629,7 @@ Com o arquivo salvo, é hora de executá-lo! Com as habilidades que você aprend
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-Em um Mac, o comando será esse:
+Em um Mac, o comando é esse:
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,7 +641,7 @@ Em um Mac, o comando será esse:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-No Linux, o comando será assim (a palavra "Desktop" pode estar traduzida para o português "Área de Trabalho"):
+No Linux, o comando é assim (a palavra "Desktop" pode estar traduzida para o português "Área de Trabalho"):
 
 {% filename %}command-line{% endfilename %}
 
@@ -652,7 +652,7 @@ No Linux, o comando será assim (a palavra "Desktop" pode estar traduzida para o
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-No prompt de comando Windows, vai ser assim:
+No prompt de comando Windows, é assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -663,7 +663,7 @@ No prompt de comando Windows, vai ser assim:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+E no Windows Powershell, é assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,9 +672,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, just ask for help.
+Se você tiver alguma dificuldade, é só pedir ajuda.
 
-Now use Python to execute the code in the file like this:
+Agora use o interpretador de Python para executar o código que está no arquivo, assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -682,7 +682,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Observação: no Windows, 'python3' não é reconhecido como um comando. Em vez disso, use 'python' para executar o arquivo:
 
 {% filename %}command-line{% endfilename %}
 
