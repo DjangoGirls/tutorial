@@ -624,7 +624,7 @@ Agora precisamos salvar o arquivo e dar a ele um nome descritivo. Vamos chamar o
 
 > **Observação**: Você deve reparar numa das coisas mais legais nos editores de código: cores! No interpretador de Python tudo é da mesma cor, mas agora você deve ver que a função `print` aparece em uma cor diferente da string que ela recebe como argumento. Isso é chamado de destaque de sintaxe ("syntax highlightning", do Inglês) e é uma funcionalidade muito útil quando estamos escrevendo código. As cores de cada elemento nos dão dicas sobre o código. Elas avisam, por exemplo, sobre strings que esquecemos de fechar ou palavras reservadas que digitamos errado (como `def` na definição de uma função, que veremos adiante). Esta é uma das razões pelas quais que nós usamos um editor de código. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Com o arquivo salvo, é hora de executá-lo! Com as habilidades que você aprendeu na seção sobre linhas de comando, use o terminal para **ir para os diretórios no desktop**.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
