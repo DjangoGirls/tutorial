@@ -846,7 +846,7 @@ Chegamos à última parte do capítulo!
 
 Lembra de funções como `len()`? Boas notícias: agora você vai aprender como escrever suas próprias funções!
 
-Uma função é um sequência de instruções que o Python deve executar. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Uma função é um sequência de instruções que o Python deve executar. Cada função em Python começa com a palavra reservada `def` seguida de um nome e, opcionalmente, de uma lista de parâmetros. Vamos fazer uma tentativa. Substitua o código salvo no arquivo **python_intro.py** pelo seguinte:
 
 {% filename %}python_intro.py{% endfilename %}
 
