@@ -74,11 +74,11 @@ Strings podem ser juntadas. Tente isto:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Oi " + "Ola"
-'Oi Ola'
+>>> "Olá " + "Ola"
+'Olá Ola'
 ```
 
-(Ola é o nome das duas criadoras do Django Girls!) Você também pode multiplicar strings por um número:
+(Ola é o nome das duas criadoras do Django Girls!). Você também pode multiplicar strings por um número:
 
 {% filename %}command-line{% endfilename %}
 
@@ -706,7 +706,7 @@ Substitua o código no arquivo **python_intro.py** pelo seguinte:
 if 3 > 2:
 ```
 
-Se esse código for salvo e executado, veremos um erro como este:
+Se você salvar e executar esse código, verá um erro como este:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -725,7 +725,7 @@ if 3 > 2:
     print('Funciona!')
 ```
 
-Notou que o texto na linha seguinte ao "if" começa depois de 4 espaços? (Chamamos esse tipo de formatação de endentação). Precisamos dessa endentação para que o Python saiba quais linhas executar se a condição dentro do if for verdadeira. Você pode quantos espaços quiser, mas para que os códigos tenham uma aparência mais limpa e organizada, os programadores de Python costumam usar quatro. Uma tabulação conta como quatro espaços se você configurar seu editor de texto assim. Quando escolher quantos espaços usar, não mude! Se você já começou a endentar com quatro espaços, siga esse padrão em todo o código -- ou você poderá encontrar problemas.
+Notou que o texto na linha seguinte ao "if" começa depois de quatro espaços? (Chamamos esse tipo de formatação de endentação). Precisamos dessa endentação para que o Python saiba quais linhas executar se a condição dentro do if for verdadeira. Você pode quantos espaços quiser, mas para que os códigos tenham uma aparência mais limpa e organizada, os programadores de Python costumam usar quatro. Uma tabulação conta como quatro espaços se você configurar seu editor de texto assim. Quando escolher quantos espaços usar, não mude! Se você já começou a endentar com quatro espaços, siga esse padrão em todo o código -- ou você poderá encontrar problemas.
 
 Salve o código e execute outra vez:
 
@@ -746,31 +746,31 @@ Nos exemplos anteriores, o código foi executado somente quando as condições e
 
 ```python
 if 5 > 2:
-    print('5 e maior que 2')
+    print('5 é maior que 2')
 else:
-    print('5 nao e maior do que 2')
+    print('5 não é maior que 2')
 ```
 
-When this is run it will print out:
+Quando esse código for executado, o Python mostrará:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    5 é de fato maior que 2
+    5 é maior que 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Se 2 fosse um número maior que 5, o segundo comando seria executado. Fácil, né? Vamos ver como funciona o `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
 name = 'Sonja'
 if name == 'Ola':
-    print('Hey Ola!')
+    print('Olá Ola!')
 elif name == 'Sonja':
-    print('Hey Sonja!')
+    print('Olá Sonja!')
 else:
-    print('Hey anonymous!')
+    print('Olá estranho!')
 ```
 
 and executed:
