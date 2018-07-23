@@ -175,7 +175,7 @@ W swoim pliku `djangogirls/requirements.txt` powinnaś dodać następujący teks
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
-    Django=={{ book.django_version }}
+    Django~={{ book.django_version }}
     
 
 Teraz możesz uruchomić `pip install -r requirements.txt`, aby zainstalować Django.
@@ -183,7 +183,7 @@ Teraz możesz uruchomić `pip install -r requirements.txt`, aby zainstalować Dj
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ pip install -r requirements.txt
-    Collecting Django=={{ book.django_version }} (from -r requirements.txt (line 1))
+    Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
       Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
     Installing collected packages: Django
     Successfully installed Django-{{ book.django_version }}
