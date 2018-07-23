@@ -2,7 +2,7 @@
 
 Birkaç parçayı yerine oturttuk: `Post` (gönderi) modelini `models.py`'de tanımladık, `views.py`'de `post_list` (gönderi listesi) var ve template ekledik. Ama gönderilerimizi HTML'de görünür kıldık mı? Çünkü yapmak istediğimiz şey bu -bazı içerikleri (veritabanında kayıtlı modeller) al ve şablonumuzda göster, değil mi?
 
-Bu tam olarak *view*'lerin yapmasını beklediğimiz şey: modelleri ve template'leri bağlamak. `post_list` *view* 'ımızda göstermek istediğimiz modelleri alıp şablona iletmemiz gerekecek. *view* ile şablon içinde neyin (hangi modelin) gösterileceğine karar veriyoruz.
+Bu tam olarak *view*'lerin yapmasını beklediğimiz şey: modelleri ve template'leri bağlamak. `post_list` *view* 'ımızda göstermek istediğimiz modelleri alıp template'e iletmemiz gerekecek. *view* ile template içinde neyin (hangi modelin) gösterileceğine karar veriyoruz.
 
 Tamam, peki nasıl yapacağız?
 
