@@ -698,7 +698,7 @@ Agora você pode começar a aprender uma ferramenta essencial na programação:
 
 Várias coisas em um código só podem ser executadas se determinadas condições forem atendidas. É por isso que o Python tem um comando chamado **if**.
 
-Replace the code in your **python_intro.py** file with this:
+Substitua o código no arquivo **python_intro.py** pelo seguinte:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,7 +706,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Se esse código for salvo e executado, veremos um erro como este:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -716,7 +716,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+O Python espera receber de nós instruções que devem ser executadas caso a condição `3 > 2` seja verdadeira (ou `True`). Vamos tentar fazer o Python mostrar na tela "Funciona!". Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
