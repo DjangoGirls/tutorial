@@ -530,12 +530,12 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Você pode pedir ao Python para comprar quantos números você quiser, e ele vai te dar uma resposta! Espertinho, não é?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** -- se você usar o operador `and`, as duas comparações terão que ser verdadeiras para que a expressão seja verdadeiro (True)
+- **or** - se você usar o operador `or`, apenas uma das comparações precisa ser verdadeira para que a expressão seja verdadeira (True)
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Já ouviu a expressão "comparar alhos com bugalhos"? Vamos tentar o equivalente em Python:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -546,16 +546,16 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+Aqui vemos que assim como na expressão, o Python não é capaz de comparar um número (`int`) e uma string (`str`). Em vez disso, ele mostrou um **TypeError** e nos disse que os dois tipos não podem ser comparados um ao outro.
 
 ## Booleano
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Aliás, você acabou de aprender sobre um novo tipo de objeto em Python. Ele se chama **booleano**.
 
-There are only two Boolean objects:
+Existem apenas dois objetos booleanos:
 
-- True
-- False
+- True (verdadeiro)
+- False (falso)
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
 
