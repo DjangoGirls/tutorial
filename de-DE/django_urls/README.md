@@ -83,7 +83,7 @@ Jetzt können wir unser erstes URL-Pattern hinzufügen:
 
 ```python
 urlpatterns = [
-    path('', views.post_list, name='post_list'),
+    path('', views.post_list, name='post_list'), 
 ]
 ```
 
