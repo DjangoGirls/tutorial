@@ -95,6 +95,6 @@ Wenn du jetzt versuchst, http://127.0.0.1:8000/ aufzurufen, dann erscheint eine 
 
 ![Error](images/error1.png)
 
-Die Konsole zeigt einen Fehler, aber keine Sorge – das ist eigentlich ziemlich nützlich: das sagt dir, dass **kein Attribut 'post_list'** vorhanden ist. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there.
+Die Konsole zeigt einen Fehler, aber keine Sorge – das ist eigentlich ziemlich nützlich: das sagt dir, dass **kein Attribut 'post_list'** vorhanden ist. Das ist der Name der *View*, die Django versucht zu finden und zu verwenden, aber wir haben sie noch gar nicht erstellt. An dieser Stelle wird dein `/admin/` auch nicht funktionieren. Keine Sorge, das machen wir gleich.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> Wenn du mehr über Django URLconfs lernen willst, dann öffne die offizielle Dokumentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
