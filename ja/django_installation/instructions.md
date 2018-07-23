@@ -1,10 +1,10 @@
-> このチャプターの一部はGeek Girls Carrots (http://django.carrots.pl/) のチュートリアルに基づいています。
+> このチャプターの一部はGeek Girls Carrots (https://github.com/ggcarrots/django-carrots) のチュートリアルに基づいています。
 > 
-> このチャプターの一部はCreative Commons Attribution-ShareAlike 4.0 International License のライセンスによるdjango-marcador tutorialに基づいています. このdjango-marcador tutorialはMarkus Zapke-Gründemann らが著作権を保有しています。 
+> このチャプターの一部はCreative Commons Attribution-ShareAlike 4.0 International License のライセンスによる[django-marcador tutorial](http://django-marcador.keimlink.de/)に基づいています. このdjango-marcador tutorialはMarkus Zapke-Gründemann らが著作権を保有しています。 
 
 ## 仮想環境
 
-Django をインストールする前に、あなたのコーディング環境を、きれいにしておく便利な道具をインストールしてもらいます。 このステップをとばすこともできますが、しかし、このステップをとばすことは全くお勧めしまません。 可能な限りベストなセットアップで始めることは将来のたくさんのトラブルからあなたを救うはずですから！
+Django をインストールする前に、あなたのコーディング環境を、きれいにしておく便利な道具をインストールしてもらいます。 このステップをとばすこともできますが、しかし、このステップをとばすことは全くお勧めしません。 可能な限りベストなセットアップで始めることは将来のたくさんのトラブルからあなたを救うはずですから！
 
 さあ、**仮想環境（virtual environment )**(*virtualenv*とも呼ばれています）を作成してみましょう。 仮想環境（virtual environment）ではプロジェクト単位であなたのPython/Djangoのセットアップを他から隔離します。 これは、あなたがひとつのウェブサイトにおこなったどんな変更も、あなたが開発している他のサイトに影響を及ぼさないということです。 便利でしょ？
 
@@ -106,7 +106,7 @@ LinuxやOS Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実�
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-実行して、仮想環境を起動します。
+以下を実行して、仮想環境を起動します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-実行して、仮想環境を起動します。
+以下を実行して、仮想環境を起動します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,7 +164,7 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
 
 ### Requirementsファイルによってパッケージをインストールする
 
-Requirementsファイルは`pip install`でインストールするためのパケッケージリストが記載されているファイルです:
+Requirementsファイルは`pip install`でインストールするためのパッケージリストが記載されているファイルです:
 
 最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります:
 

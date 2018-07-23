@@ -1,20 +1,20 @@
 # Djangoのフォーム
 
-自分のwebサイトで最終的にやりたいことは、ブログポストを追加したり編集したりすることをいいやり方で作ることです。 Django adminはかなりいいですが、カスタマイズや上手く作るのはより難しいです。 フォームはインターフェイス上でものすごい力を持っています。 - 私たちが想像する処理がほとんど行うことができます!
+私たちのWebサイトで最終的にやりたいことは、記事を追加したり編集したりするためのよい方法を作ることです。 `Django admin`はかなりいいですが、カスタマイズしたりかわいくいい感じにするのはちょっと大変です。 `フォーム`によってインターフェイスに対して完璧な力を持てるようになります。想像するほとんど全てのことができます！
 
-Djangoのフォームでよいところは、フォームをスクラッチで定義できたり、モデルからフォームを生成できるところです。
+Djangoフォームのよいところは、フォームをゼロから定義できたり、フォームの結果をモデルに保存できる`ModelForm`を作れるところです。
 
-これはまさに私たちがやりたいことです：Postモデルを作ります。
+これはまさに私たちがやりたいことです：`Post`モデルのためのフォームを作ります。
 
-Djangoのフォームの重要な部分は`forms.py`ファイルで持ちます.
+Djangoの他の重要なパーツと同様に、フォームは自身のファイルがあります: `forms.py`
 
-これは`blog`ディレクトリの下にforms. pyの名前で作る必要があります。
+これは`blog`ディレクトリの下にforms.pyの名前で作る必要があります。
 
     blog
        └── forms.py
     
 
-Forms. pyファイルを開き、次のコードをタイプしてください。
+forms.pyファイルを開き、次のコードをタイプしてください。
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,21 +30,21 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Djangoのフォームクラスをインポートする必要があります。それが`rom django import forms`の部分です。そして`from .models import Post`はポストモデルをインポートしています).
+最初にDjangoのformsをインポート (`from django import forms`) し、もちろん`Post`モデルもインポート (`from .models import Post`) する必要があります。
 
-PostFormとは何かと思うかもしれません。これはフォームを作る時に定義する名前です。 Djangoでいう、このフォームはModelFormです。`forms.ModelForm`はPostFormの引数です。
+`PostForm`とは何かと思うかもしれませんが、これはフォームの名前です。 このフォームが `ModelForm` の一種だとDjangoに伝える必要があります (Djangoが私たちのためにいくつか魔法をかけられるように)。`forms.ModelForm`がその役割を果たします。
 
-次に`class Meta`ですが、Postモデルを使う時、このフォーム`model = Post`を使います).
+次に`class Meta`ですが、ここでDjangoにフォームを作るときにどのモデルを使えばいいか (`model = Post`) を伝えます。
 
 最後にフォームのフィールドに何を置くか書きます。 このシナリオで、私たちは`title` と `text`の部分でタイトルと本文を公開します。 `author`は現在ログインしている人（あなた）です。 `created_date` は自動的に記事ポストを書いた時間が設定されます。
 
-そしてそうです！今私たちが ビューで必要なのは、フォームを使うことです。テンプレートがあるので、それを示します。
+そしてそうです！今私たちがやりたいのはフォームを*view*で使い、それをテンプレート内に表示することです。
 
 もう一度ファイルを作ります。：ページへのリンク、URL、ビューとテンプレートです。
 
 ## フォームにおけるページへのリンク
 
-`blog/templates/blog/base.html`を開いてみましょう。ページヘッダというdivのリンクに次の内容を追加しましょう。
+`blog/templates/blog/base.html`を開きましょう。`page-header`と名付けた`div`中に次のリンクを追加します:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -52,7 +52,7 @@ PostFormとは何かと思うかもしれません。これはフォームを作
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-新しいビュー` post_new `を呼び出すことに注意してください。 ` "glyphicon glyphicon-plus" `クラスは、使用しているブートストラップテーマによって提供され、プラス記号を表示します。
+新しいビュー` post_new `を呼び出すことに注意してください。 ` "glyphicon glyphicon-plus" `クラスは、使用しているBootstrapテーマによって提供され、プラス記号を表示します。
 
 行を追加すると、このような html ファイルになります。
 
@@ -85,7 +85,7 @@ PostFormとは何かと思うかもしれません。これはフォームを作
 </html>
 ```
 
-Htmlファイルを保存して、ページをリロードします。 `NoReverseMatch` エラーが表示されます?
+ファイルを保存して、ページ http://127.0.0.1:8000 をリロードします。すでに見覚えのある `NoReverseMatch` エラーが表示されます？
 
 ## URL
 
@@ -97,7 +97,7 @@ blog/urls.pyを開き、次の内容を追加します。
 path('post/new', views.post_new, name='post_new'),
 ```
 
-次に、このような内容を追加します。
+すると最終的なコードは次のようになります:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -114,9 +114,9 @@ urlpatterns = [
 
 サイトをリロードした後、`AttributeError`が出ます。`post_new`ビューの実装がないからです。ファイルに追加してみましょう。
 
-## post_new view
+## post_new ビュー
 
-blog/views.pyを開きます。fromの行の後に次の内容を追加してみましょう。
+`blog/views.py`を開きます。`from`の行の後に次の内容を追加してみましょう。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +124,7 @@ blog/views.pyを開きます。fromの行の後に次の内容を追加してみ
 from .forms import PostForm
 ```
 
-その後にビューを追加します。
+その後に*ビュー*を追加します。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,20 +134,20 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Postフォームを新しく作るには、PostFormを呼び出し、それをテンプレートに渡す必要があります。 ビューに戻り、いまからフォームのテンプレートを作りましょう。
+`Post`フォームを新しく作るには、`PostForm()`を呼び出し、それをテンプレートに渡す必要があります。 あとでこの *ビュー* に戻ってきますが、今はフォームのためのテンプレートをすぐに作ってしまいましょう。
 
 ## テンプレート
 
-blog/templates/blogディレクトリにpost_edit.htmlファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
+`blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
 
 * フォームを表示する必要があります。 私たちは（例えば）{％ raw ％}`{{ form.as_p }}`{％ endraw ％}でこれを行うことができます。
-* 上記の行は HTML フォーム タグでラップする必要があります: `<form method="POST">...</form>`.
-* `保存` のボタンが必要です。HTML ボタンで行う: `<button type="submit">Save</button>`.
-* 最後に`<form ...>` タグを開いて、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームを安全に保護できるのでこれは非常に重要です! このビットを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
+* 上記の行は HTMLのformタグでラップする必要があります: `<form method="POST">...</form>`.
+* `Save` ボタンが必要です。これをHTMLのbuttonタグで行います: `<button type="submit">Save</button>`.
+* 最後に`<form ...>` タグを開いて、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームをセキュアにするためこれは非常に重要です！ これを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
 
-![CSFR Forbidden page](images/csrf2.png)
+![CSFR 禁止のページ](images/csrf2.png)
 
-OK,そうしたらどのようにHTMLで`post_edit.html`表すか見て下さい：
+では、`post_edit.html` のHTMLがどのようになるか見てみましょう:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -167,11 +167,11 @@ OK,そうしたらどのようにHTMLで`post_edit.html`表すか見て下さい
 
 ![New form](images/new_form2.png)
 
-ちょっと待ってみて下さい。`title` and `text` フィールドに何か入力して保存するとどうなりますか？
+ちょっと待ってみて下さい。`title` と `text` フィールドに何か入力して保存するとどうなりますか？
 
-何もない! 我々 は再び同じページと私たちのテキストはあの新しい記事は追加されません。なぜこうなってしまったのか？
+何もおきません！もう一度同じページ戻りテキストはどこかに行ってしまいました…… そして新しい投稿は追加されていません。何がいけなかったのでしょうか？
 
-答えは: ないからです。ビュー で、もう少し作業を行う必要があります.
+答えは: 何も間違ってない、です。*ビュー* でもう少し作業を行う必要があります.
 
 ## Formをsaveする
 
@@ -185,9 +185,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-フォームを送信する時、同じビューに戻るが、リクエストにデータがあると、POSTされます。（ブログポストとは関係ない、データをポストしている） HTMLファイル formの定義はPOSTメソッドを使うのを覚えていますか？ フォームの全てのフィールドがPOSTリクエストです。 POST の名前を他の名前に変更することはできません (それを変更する唯一の方法は method に GET を指定することですが、それがなぜ間違いであるかを話す時間がありません)
+フォームを送信したとき、同じビューに戻されていましたが、このとき`request`、もっと詳しくいうと `request.POST` にデータが追加されています (このPOSTという名前はブログ投稿 "post" とは関係ありません。このデータは送られてきたもの、というコトと関係しています) 。 HTMLファイルの `<form>` 定義で、`method="POST"` という変数があったのを覚えていますか？ これによってフォームのすべてのフィールドは今 `request.POST` にあります。 `POST` という名前を何か別のものに変えることはできません (他に唯一の有効な `method` の値は `GET` ですが、その違いを説明する時間がありません) 。
 
-*view*には、処理する2つの状況があります。最初にページにアクセスしたときに空白のフォームが必要な場合、2番目に*view*と入力したすべてのフォームデータが表示されます。 それでは [...] の部分を埋めていきます):
+私たちの *ビュー* では、扱わなくてはならない２つの別々のシチュエーションがあります: １つ目は、最初にページにアクセスしてきた時で空白のフォームが必要な場合。２つ目はすべてのフォームデータが入力された状態で*ビュー*に戻ってくる場合です。 したがって条件分岐を追加する必要があります（そのために`if`を使います）:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-`[...]`のドットを記入してください。 `method`が`POST`の場合、フォームのデータを使って`PostForm`を構築します。 私たちはそれを次のようにします：
+ドット `[...]` の部分を埋めていきましょう。 `method`が`POST`の場合、フォームのデータを使って`PostForm`を構築します。 私たちはそれを次のようにします：
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,7 +206,7 @@ else:
 form = PostForm(request.POST)
 ```
 
-簡単ですね! 次にフォームの値が正しいかどうかをチェックします（すべての必須フィールドが設定され、全く誤った値が保存されていないことを）form.is_valid() を使うことでチェックできます.
+次にフォームの値が正しいかどうかをチェックします（すべての必須フィールドが設定され、不正な値が送信されないこと）。 `form.is_valid()` で行います。
 
 フォームをチェックして、フォームの値が有効であれば保存できます。
 
@@ -220,9 +220,9 @@ if form.is_valid():
     post.save()
 ```
 
-基本的にここでは2つのことを行います。まず form.save でフォームを保存することと author を追加することです(まだ PostForm 内に author フィールドがありませんし、このフィールドは必須です). commit=False は Post モデルをまだセーブしません。ではauthorを追加します。commit=False を指定せず form.save() を実行します。 ほとんどの場合、`commit = False`なしで`form.save()`を使用しますが、この場合はそれを指定する必要があります。 `post.save()`は変更を保存し（作成者を追加する）、新しいブログ投稿が作成されます。
+基本的にここでは2つのことを行います。まず `form.save` でフォームを保存することと author を追加することです (`PostForm` 内に `author` フィールドがありませんし、このフィールドは必須です) 。 `commit=False` は `Post` モデルをまだ保存しないという意味です。保存前に author を追加したいので。 ほとんどの場合、`commit = False`なしで`form.save()`を使用しますが、この場合はそれを指定する必要があります。 `post.save()`は変更を保存し（作成者を追加しつつ）、新しいブログ投稿が作成されます！
 
-最後に、新しく作成された記事の post_detail ページを表示できれば良いですよね? そのために次のインポートを追加します:
+最後に、新しく作成された記事の `post_detail` ページを表示できれば良いですよね? そのために次のインポートを追加します:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +230,7 @@ if form.is_valid():
 from django.shortcuts import redirect
 ```
 
-ファイルの先頭に追加します。これでようやく、新しく作成されたポストのための post_detail ページに移動する処理を書けます。
+ファイルの先頭に追加します。これで新しく作成されたポストの `post_detail` ページに移動する処理を書けます。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +238,9 @@ from django.shortcuts import redirect
 return redirect('post_detail', pk=post.pk)
 ```
 
-blog.views.post_detail は新しく作成されたポストのために post_detail ページに移動するためのビューです。 この view では pk 変数が必須であることを覚えていますか? post では新しいブログ記事が作成されます。
+`post_detail` 移動したいビューの名前です。 この *ビュー* では `pk` 変数が必須であることを覚えていますか? ビューにそれを渡すため、`pk=post.pk`を使います。この `post` は新しく作られたブログポストです！
 
-OK, たくさんのことを説明しました。全体の view は以下のようになります。
+ふー、たくさんのことを話してきましたが、そろそろ *ビュー* の全体がどんな感じか見てみたい頃じゃないでしょうか？
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,21 +259,21 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-では動作確認してみます。 http://127.0.0.1:8000/post/new/ に行き、 title と text を追加し、保存します。 新しいブログ記事が追加され、post_detail にリダイレクトされます！
+では動作確認してみましょう。 http://127.0.0.1:8000/post/new/ に行き、 `title` と `text` を追加し、保存すると…… じゃじゃーん！ 新しいブログ記事が追加され、post_detail にリダイレクトされます！
 
-おそらくあなたは日付が設定されていないことに気づいたことでしょう。それについては Django Girls Tutorial: Extensions 内の publish button をみてください。
+ブログ記事を保存する前に公開日をセットしていることに気づいたかもしれません。後ほど、**Django Girls Tutorial: Extensions**にて *公開ボタン* を導入します。
 
 素晴らしい！
 
-> Djangoの管理インターフェースを使用しているので、システムは現在ログインしています。 いくつかの状況ではログアウト状態になることがあります(ブラウザを閉じる、DBを再起動するなど..)。 投稿を作成するときに、ログインユーザーがわからないというエラーが発生した場合は、管理ページhttp://127.0.0.1:8000/adminにアクセスして再度ログインしてください。 その問題は一時的に解決します。 メインチュートリアルの後 Homework: add security to your website! の章に恒久的な対策がありますので宿題として取り組んでみてください。
+> 最近までDjango adminを使ってきたので、システム上で今まだログイン状態かと思います。 いくつかの状況ではログアウト状態になることがあります(ブラウザを閉じる、DBを再起動するなど..)。 投稿を作成するときに、ログインユーザーがわからないというエラーが発生した場合は、管理ページhttp://127.0.0.1:8000/adminにアクセスして再度ログインしてください。 その問題は一時的に解決します。 メインチュートリアルの後 Homework: add security to your website! の章に恒久的な対策がありますので宿題として取り組んでみてください。
 
-![Logged in error](images/post_create_error.png)
+![ログインエラー](images/post_create_error.png)
 
 ## フォームのバリデーション(検証)
 
-ここではDjangoのフォームのクールなところを紹介します。 ブログのポストは title と text のフィールドが必要です。 Post モデルでは、これらのフィールドがなくてもよいとは書いておらず(デフォルトの値が設定されている published_date とは対照的に)、Djangoではその場合、それらのフィールドには何らかの値が設定されないとエラーが起こるようになっています。
+ここではDjangoのフォームのクールなところを紹介します。 ブログのポストは `title` と `text` のフィールドが必要です。 `Post` モデルではこれらのフィールドがなくてもよいとは書いておらず (`published_date` とは対照的に)、Djangoはその場合、それらのフィールドには何らかの値が設定されることを期待します。
 
-title と text を入力せずに保存してみましょう。何が起こるでしょうか?
+`title` と `text` を入力せずに保存してみましょう。何が起こるでしょうか?
 
 ![フォームのバリデーション(検証)](images/form_validation2.png)
 
@@ -283,7 +283,7 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 
 今、私たちは新しいフォームを追加する方法を知っています。 しかし既存のデータを編集するためはどうすれば良いのでしょうか? それは先ほど行ったことと非常に似ています。 すぐにいくつかの重要なものを作成してみましょう。 （もしわからない場合、コーチに尋ねるか、もしくはすでに手順をカバーしているので、前の章を見てください）
 
-blog/templates/blog/post_detail.html を開いて次の行を追加します
+`blog/templates/blog/post_detail.html` を開いて次の行を追加します
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -320,9 +320,9 @@ blog/urls.py には次の行を追加します:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-テンプレート blog/templates/blog/post_edit.html を再利用します。そしてviewを追加します.
+テンプレート `blog/templates/blog/post_edit.html` を再利用します。そして*ビュー*を追加します.
 
-blog/views.py を開いて次をファイルの最後に追加します:
+`blog/views.py` を開いて次をファイルの最後に追加します:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-post_view とほとんど同じに見えますか? しかし完全に同じではありません。 まずURLから pk パラメータを渡します。次に Post モデルを get_object_or_404(Post, pk=pk) で取得します。 その後フォームを保存する際、この記事をインスタンスとしてフォームを作成します。
+`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まずURLから追加の `pk` パラメータを渡します。 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときは以下の両方のケースでそのポストを`インスタンス`として渡します。フォームを保存するときは……
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ post_view とほとんど同じに見えますか? しかし完全に同じで�
 form = PostForm(request.POST, instance=post)
 ```
 
-そしてこの記事でフォームを開き編集します。
+……このポストを編集するためにただフォームを開く場合は:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,15 +358,15 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-Ok, 動作確認しましょう。 post_detail ページにいきます。そこの右上に [編集] ボタンがあるはずです:
+よし、ちゃんと動くか試してみましょう！`post_detail` ページにいきましょう。そこの右上に [編集] ボタンがあるはずです:
 
-![Edit button](images/edit_button2.png)
+![編集ボタン](images/edit_button2.png)
 
-クリックするとブログの記事にフォームが表示されます:
+クリックするとブログ記事のフォームが表示されると思います:
 
-![フォームの編集](images/edit_form2.png)
+![編集フォーム](images/edit_form2.png)
 
-あとはタイトルやテキストを変更して保存してください。
+あとはお気軽にタイトルやテキストを変更して保存してください！
 
 おめでとう！アプリケーションが完成しました。
 
@@ -376,7 +376,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-` blog / templates / blog / base.html `で、` page-header ` ` div `とそれ以前に入力したアンカータグを見つけます。 これは次のようになります。
+`blog/templates/ blog/base.html` で、`page-header` `div `とそれ以前に入力したアンカータグを見つけます。 これは次のようになります。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -384,7 +384,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-これに`{% if %}`タグを追加すると、管理者にログインしているユーザーのみにリンクを表示します。 今は、あなただけです！ これで、`<button>` タグは以下のようになります：
+これに`{% if %}`タグを追加し、管理者でログインしているユーザーのみにリンクを表示します。 今は、あなただけです！ `<a>` タグを以下のように変更します：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -396,9 +396,9 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 この`{% if %}`は、ページをリクエストしているユーザーがログインしている場合にのみ、リンクがブラウザに送信されるようにします。 これは新しい投稿の作成を完全に保護するものではありませんが、それは良い第一歩です。 私たちは拡張レッスンでより多くのセキュリティをカバーします。
 
-詳細ページに追加した編集アイコンを覚えていますか？ 同じ変更を追加したいので、他の人が既存の投稿を編集することはできません。
+詳細ページに追加した編集アイコンを覚えていますか？ 他の人が既存の投稿を編集できないように、同じ変更を追加したいと思います。
 
-`blog/templates/blog/post_detail.html` を開いて次の行を追加します:
+`blog/templates/blog/post_detail.html` を開いて次の行を見つけてください:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-これに変更してください：
+それをこれに変更してください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,9 +416,9 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 {% endif %}
 ```
 
-あなたがログインしている可能性が高いので、ページを更新すると、別のものは表示されません。 ただし、別のブラウザやシークレットウィンドウ（Windows Edgeでは「InPrivate」と呼ばれます）にページを読み込むと、リンクが表示されず、アイコンも表示されません。
+あなたはログインしている可能性が高いので、ページを更新しても、何も変わらないかもしれません。 ただし、別のブラウザやシークレットウィンドウ（Windows Edgeでは「InPrivate」と呼ばれます）でページを読み込むと、リンクが表示されず、アイコンも表示されないでしょう！
 
-## もう一つ: deployの時間です!
+## もう一つ: デプロイの時間です!
 
 ではPythonAnywhere上で動作するかを確認しましょう。再度デプロイします。
 
@@ -433,7 +433,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
     $ git push
     
 
-* そうすると、PythonAnywhereのbashコンソールで見ると：
+* それから、[PythonAnywhereのbashコンソール](https://www.pythonanywhere.com/consoles/)で：
 
 {% filename %}command-line{% endfilename %}
 
@@ -444,6 +444,6 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 (`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
 
-* 最後に、Webタブに行って、リロードします.
+* 最後に、[Webタブ](https://www.pythonanywhere.com/web_app_setup/)に行って、**リロード**します。
 
-そしてdeployします! おめでとうございます :)
+うまくいってるはずです！おめでとう :)
