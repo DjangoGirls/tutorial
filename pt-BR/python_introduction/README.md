@@ -449,9 +449,9 @@ Você pode usar o método `pop()` para deletar um item do dicionário. Digamos q
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Como você pode ver no resultado, o par chave-valor correspondente à chave 'favorite_numbers' foi excluído.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Além disso, você pode mudar o valor associado a uma chave já criada no dicionário. Digite:
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,13 +461,13 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Como você pode ver, o valor da chave `'country'` foi alterado de `'Poland'` para `'Germany'`. :) Emocionante? Uhu! Você acabou de aprender outra coisa incrível.
 
 ### Sumário
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Incrível! Agora você sabe muito sobre programação. Nesta última parte você aprendeu sobre:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
+- **erros** -- agora você sabe como ler e entender mensagens de erro que aparecem quando o Python não entende um comando que você deu
 - **variables** – names for objects that allow you to code more easily and to make your code more readable
 - **lists** – lists of objects stored in a particular order
 - **dictionaries** – objects stored as key–value pairs
