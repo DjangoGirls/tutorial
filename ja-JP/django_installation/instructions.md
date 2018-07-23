@@ -176,7 +176,7 @@ Requirementsファイルは`pip install`でインストールするためのパ�
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
-    Django=={{ book.django_version }}
+    Django~={{ book.django_version }}
     
 
 そして、`pip install -r requirements.txt` を実行してDjangoをインストールします。
@@ -184,7 +184,7 @@ Requirementsファイルは`pip install`でインストールするためのパ�
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ pip install -r requirements.txt
-    Collecting Django=={{ book.django_version }} (from -r requirements.txt (line 1))
+    Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
       Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
     Installing collected packages: Django
     Successfully installed Django-{{ book.django_version }}
