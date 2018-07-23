@@ -176,7 +176,7 @@ Stelle sicher, dass du im `Djangogirls` Verzeichnis bist und sag `git`, dass all
 
 > **Beachte:** `--all` bedeutet, dass `git` auch Dateien berücksichtigt, die du gelöscht hast (in der Standardeinstellung werden nur neue/geänderte Dateien hinzugefügt). Denk auch daran (Kapitel 3), dass `.` das aktuelle Verzeichnis meint.
 
-Bevor wir alle Dateien hochladen prüfen wir noch einmal, was `git` hochladen will (alle Dateien, die `git` hochladen wird, sind jetzt grün):
+Bevor wir alle Dateien hochladen, prüfen wir noch einmal, was `git` hochladen will (alle Dateien, die `git` hochladen wird, sind jetzt grün):
 
 {% filename %}command-line{% endfilename %}
 
