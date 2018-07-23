@@ -46,9 +46,9 @@ Es wird Zeit, unsere erste URL zu erstellen! Wir wollen, dass 'http://127.0.0.1:
 
 Wir wollen auch, dass die `mysite/urls.py`-Datei sauber bleibt. Deshalb importieren wir die URLs unserer `Blog`-Applikation in die `mysite/urls.py`-Hauptdatei.
 
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
+Also los, füge eine Zeile hinzu, die `blog.urls` inkludiert. Beachte, dass wir hierfür die `include`-Funktion nutzen, daher musst du sie importieren.
 
-Your `mysite/urls.py` file should now look like this:
+Deine `mysite/urls.py`-Datei sollte jetzt so aussehen:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
