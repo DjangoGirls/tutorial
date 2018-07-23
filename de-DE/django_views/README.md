@@ -1,14 +1,14 @@
-# Django views – time to create!
+# Django views - leg los!
 
 Es wird jetzt Zeit, den Bug, den wir im letzten Kapitel erzeugt haben, zu beheben! :)
 
-In der *View* schreiben wir die Logik unserer Anwendung. So werden Informationen aus dem `Model` abgefragt werden, welches du zuvor erzeugt hast und diese werden an ein `Template` weitergeben. Ein Template erzeugen wir im nächsten Kapitel. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+In der *View* schreiben wir die Logik unserer Anwendung. So werden Informationen aus dem `Model` abgefragt werden, welches du zuvor erzeugt hast und diese werden an ein `Template` weitergeben. Ein Template erzeugen wir im nächsten Kapitel. Views sind Python-Methoden, die ein bisschen komplizierter sind als die, die wir im Kapitel **Einführung in Python** kennengelernt haben.
 
 Views kommen in die `views.py` Datei. Wir fügen nun also unsere *Views* zur Datei `blog/views.py` hinzu.
 
 ## blog/views.py
 
-OK, wir öffnen nun diese Datei und schauen was darin steht:
+OK, wir öffnen jetzt diese Datei und schauen, was darin steht:
 
 {% filename %}blog/views.py{% endfilename %}
 
