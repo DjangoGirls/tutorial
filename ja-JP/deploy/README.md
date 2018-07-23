@@ -137,7 +137,7 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
 
 ## PythonAnywhere でサイトを設定する
 
-ロゴをクリックしてメインの[PythonAnywhere Dashboard](https://www.pythonanywhere.com/)に戻り、「Bash」コンソールを起動するボタンをクリックします。これはPythonAnywhereバージョンのコマンドライン、ちょうどあなたのコンピューターのコマンドラインと同じようなものです。
+ロゴをクリックしてメインの[PythonAnywhere Dashboard](https://www.pythonanywhere.com/)に戻り、「Bash」コンソールを起動するボタンをクリックします。これはPythonAnywhereバージョンのコマンドラインで、ちょうどあなたのコンピューターのコマンドラインと同じようなものです。
 
 ![PythonAnywhereのウェブインターフェースの「New Console」、「bash」ボタン](images/pythonanywhere_bash_console.png)
 
