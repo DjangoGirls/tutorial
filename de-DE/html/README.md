@@ -10,7 +10,7 @@ Ein Django-Template wird mit einer Sprache namens HTML beschrieben. (Genau das H
 
 HTML ist recht einfacher Code, der von deinem Browser – z.B. Chrome, Firefox oder Safari – interpretiert wird, um dem Benutzer eine Website darzustellen.
 
-HTML bedeutet "HyperText Markup Language". Als **HyperText** wird Text bezeichnet, der über markierte Textstellen, den "Hyperlinks" (die umgangssprachlichen "Links") auf andere (meist ebenfalls in HTML geschriebene) Seiten verweist. **Markup** bedeutet, dass wir ein Dokument nehmen und mit Code versehen, um einem Empfänger mitzuteilen (in diesem Fall dem Browser), wie diese Seite interpretiert werden muss. HTML-Code besteht aus **Tags**, wovon jeder mit `<` beginnt und mit `>` endet. Diese Tags stellen die Markup-**Elemente** dar.
+HTML steht für "HyperText Markup Language". Als **HyperText** wird Text bezeichnet, der über markierte Textstellen, den "Hyperlinks" (die umgangssprachlichen "Links"), auf andere (meist ebenfalls in HTML geschriebene) Seiten verweist. **Markup** bedeutet, dass wir ein Dokument nehmen und mit Code versehen, um einem Empfänger mitzuteilen (in diesem Fall dem Browser), wie diese Seite interpretiert werden muss. HTML-Code besteht aus **Tags**, wovon jeder mit `<` beginnt und mit `>` endet. Diese Tags stellen die Markup-**Elemente** dar.
 
 ## Dein erstes Template!
 
@@ -29,7 +29,7 @@ Als nächstes erstellen wir eine Datei `post_list.html` (erst mal ohne Inhalt) i
 
 Kontrolliere deine überarbeitete Webseite unter: http://127.0.0.1:8000
 
-> Falls du die Fehlermeldung `TemplateDoesNotExist` angezeigt bekommst, versuche den Server neu zu starten. Auf der Kommandozeile drückst du Strg+C bzw. Ctrl+C (Strg-/Ctrl- und die C-Taste C zusammen) und startest danach den Server erneut mit dem Kommando `python manage.py runserver`.
+> Falls du die Fehlermeldung `TemplateDoesNotExist` angezeigt bekommst, versuche den Server neu zu starten. Auf der Kommandozeile drückst du dafür Strg+C bzw. Ctrl+C (Strg-/Ctrl- und die C-Taste C zusammen) und startest danach den Server erneut mit dem Kommando `python manage.py runserver`.
 
 ![Abbildung 11.1](images/step1.png)
 
@@ -48,7 +48,7 @@ Füge folgenden Text in deine Template-Datei ein:
 </html>
 ```
 
-Hat sich die Seite geändert? Besuche http://127.0.0.1:8000/ um nachzusehen.
+Hat sich die Seite geändert? Besuche http://127.0.0.1:8000/, um nachzusehen.
 
 ![Abbildung 11.2](images/step3.png)
 
