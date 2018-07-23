@@ -596,10 +596,10 @@ Até agora escrevemos todos os códigos no interpretador Python, que nos limita 
 
 - Sair do interpretador Python
 - Abrir o editor de código de sua escolha
-- Salvar algum código em um novo arquivo de python
-- Executá-lo!
+- Salvar algum código em um novo arquivo de Python
+- Executar o código!
 
-To exit from the Python interpreter that we've been using, simply type the `exit()` function
+Para sair do interpretador de Python que estamos usando, simplesmente digite a função `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -608,9 +608,9 @@ To exit from the Python interpreter that we've been using, simply type the `exit
 $
 ```
 
-This will put you back into the command prompt.
+Isso vai levá-lo de volta ao prompt de comando.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file:
+Anteriormente, nós escolhemos um editor de código da seção [editor de código](../code_editor/README.md). Agora precisamos abrir o editor e escrever algum código em um novo arquivo:
 
 {% filename %}editor{% endfilename %}
 
@@ -618,11 +618,11 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Agora você é um desenvolvedor Python bastante experiente, então sinta-se livre para escrever códigos com o que você aprendeu hoje.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Agora precisamos salvar o arquivo e dar a ele um nome descritivo. Vamos chamar o arquivo **python_intro.py** e salvá-lo na sua área de trabalho. Podemos nomear esse arquivo do jeito que quisermos, mas é importante que o nome termine com **.py**. A extensão **.py** diz ao sistema operacional que esse é um **arquivo Python executável** e o interpretador Python pode rodá-lo.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. Isso é chamado de destaque de sintaxe ("syntax highlightning", do Inglês) e é uma funcionalidade muito útil para usar quando estamos escrevendo código. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). Esta é uma das razões pelas quais que nós usamos um editor de código. :)
+> **Observação**: Você deve reparar numa das coisas mais legais nos editores de código: cores! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. Isso é chamado de destaque de sintaxe ("syntax highlightning", do Inglês) e é uma funcionalidade muito útil para usar quando estamos escrevendo código. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). Esta é uma das razões pelas quais que nós usamos um editor de código. :)
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
