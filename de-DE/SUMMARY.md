@@ -17,7 +17,7 @@
 * [Django URLs](django_urls/README.md)
 * [Django views - leg los!](django_views/README.md)
 * [Einführung in HTML](html/README.md)
-* [Django ORM (Querysets)](django_orm/README.md)
+* [Django ORM und QuerySets](django_orm/README.md)
 * [Dynamische Daten in Templates](dynamic_data_in_templates/README.md)
 * [Django Templates](django_templates/README.md)
 * [CSS - mach es hübsch](css/README.md)
