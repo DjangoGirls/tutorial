@@ -1,14 +1,14 @@
 > For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> 本节基于 Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)的教程
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
+Django 是用 Python 写成的，要使用Django做任何东西我们都需要Python。让我们先开始安装它！我们希望您安装 Python 3.6, 所以如果你使用的是早期版本的Python，那么你就需要升级它。
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, by pressing the Windows key + Pause/Break key which will open your System info, and look at the "System type" line. You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+首先，请检查您的计算机运行的是32位版本还是64位版本的 Windows, 方法是按 windows 键 + Break键，打开系统信息, 然后查看 "系统类型" 行。 您可以从 https://www.python.org/downloads/windows/ 网站上下载 Windows版的Python。 点击 "Latest Python 3 Release - Python x.x.x"。 如果你的电脑运行的是 ** 64 位 ** 版本的 windows, 请下载 ** Windows x86-64 可执行安装程序 **。 否则, 仅下载 ** Windows x86 可执行安装程序 **即可。 下载完成之后，你应该运行它 （双击它），并按照提示安装。
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
+有一件事要注意：在安装过程中, 您会注意到一个名字是 "Setup"的窗口。请确保勾选"Add Python 3.6 to PATH"复选框, 然后单击 "Install Now", 如下所示:
 
 ![别忘了增加 Python 到 Path](../python_installation/images/python-installation-options.png)
 
