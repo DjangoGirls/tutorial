@@ -39,6 +39,6 @@ Einen anderen Fehler! Lies dir durch, was da steht:
 
 ![Error](images/error.png)
 
-Das zeigt, dass der Server zumindest wieder läuft, aber es sieht immer noch nicht richtig aus, oder? Mach dir keine Sorgen, es ist nur eine Fehlerseite, nichts zu befürchten! Genau wie die Fehlermeldungen in der Konsole sind auch die hier super nützlich. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Das zeigt, dass der Server zumindest wieder läuft, aber es sieht immer noch nicht richtig aus, oder? Mach dir keine Sorgen, es ist nur eine Fehlerseite, nichts zu befürchten! Genau wie die Fehlermeldungen in der Konsole sind auch die hier super nützlich. Du erhältst den Hinweis *TemplateDoesNotExist*. Lass uns diesen Bug beheben, indem wir im nächsten Kapitel ein Template erstellen!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Erfahre mehr über Django Views in der offiziellen Dokumentation: https://docs.djangoproject.com/en/2.0/topics/http/views/.
