@@ -725,22 +725,22 @@ if 3 > 2:
     print('Funciona!')
 ```
 
-Notou que o texto na linha seguinte ao "if" começa depois de 4 espaços? (Chamamos esse tipo de formatação de endentação). Precisamos dessa endentação para que o Python saiba quais linhas executar se a condição dentro do if for verdadeira. Você pode quantos espaços quiser, mas para que os códigos tenham uma aparência mais limpa e organizada, os programadores de Python costumam usar quatro. Uma tabulação conta como quatro espaços se você configurar seu editor de texto assim. Quando escolher quantos espaços usar, não mude! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Notou que o texto na linha seguinte ao "if" começa depois de 4 espaços? (Chamamos esse tipo de formatação de endentação). Precisamos dessa endentação para que o Python saiba quais linhas executar se a condição dentro do if for verdadeira. Você pode quantos espaços quiser, mas para que os códigos tenham uma aparência mais limpa e organizada, os programadores de Python costumam usar quatro. Uma tabulação conta como quatro espaços se você configurar seu editor de texto assim. Quando escolher quantos espaços usar, não mude! Se você já começou a endentar com quatro espaços, siga esse padrão em todo o código -- ou você poderá encontrar problemas.
 
-Save it and give it another run:
+Salve o código e execute outra vez:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
 $ python3 python_intro.py
-It works!
+Funciona!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Observação: Lembre-se que no Windows 'python3' não é reconhecido como um comando. Se você usa esse sistema operacional, de agora em diante, substitua 'python3' 'python' para executar o arquivo.
 
 ### E se uma condição não for verdadeira?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+Nos exemplos anteriores, o código foi executado somente quando as condições eram verdade. No entanto, o Python também tem as instruções `elif` e `mais`:
 
 {% filename %}python_intro.py{% endfilename %}
 
