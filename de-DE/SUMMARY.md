@@ -20,7 +20,7 @@
 * [Django ORM und QuerySets](django_orm/README.md)
 * [Dynamische Daten in Templates](dynamic_data_in_templates/README.md)
 * [Django Templates](django_templates/README.md)
-* [CSS - mach es hübsch](css/README.md)
+* [CSS - mach es hübsch!](css/README.md)
 * [Erweiterung der Templates](template_extending/README.md)
 * [Erweitere deine Anwendung](extend_your_application/README.md)
 * [Django Formulare](django_forms/README.md)
