@@ -421,7 +421,7 @@ Da du wahrscheinlich angemeldet bist, wirst du beim Refresh der Seite keinen Ver
 
 Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weiteres Deployment!
 
-* First, commit your new code, and push it up to GitHub:
+* Commite als Erstes deinen neuen Code und schiebe ihn auf GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -441,7 +441,7 @@ Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weit
     [...]
     
 
-(Denke daran `<your-pythonanywhere-username>` durch deinen PythonAnywhere-Benutzernamen zu ersetzen - ohne spitze Klammern).
+(Denke daran, `<your-pythonanywhere-username>` durch deinen PythonAnywhere-Benutzernamen zu ersetzen - ohne spitze Klammern).
 
 * Springe nun noch schnell auf den [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und klicke auf **Reload**.
 
