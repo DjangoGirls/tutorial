@@ -99,8 +99,8 @@ Es wäre gut zu sehen, ob deine Website noch immer im öffentlichen Internet fun
 
 * Zum Schluss hüpf noch einmal kurz rüber zum [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und drück auf **Reload**. Deine Änderungen sollten jetzt live sein! Wenn die Blogposts auf deiner PythonAnywhere Seite anders sind als die auf deinem lokalen Server, ist das in Ordnung so. Die Datenbanken auf deinem lokalen Computer und auf PythonAnywhere synchronisieren sich nicht.
 
-Glückwunsch! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Glückwunsch! Nun kannst du dich daran machen, neue Posts in deinem Django Admin zu erstellen (denk daran, auch ein published_date einzufügen!). Stell sicher, dass du im Django Admin der PythonAnywhere Seite https://yourname.pythonanywhere.com/admin arbeitest. Dann aktualisiere die Seite und schau nach, ob die Posts dort erscheinen.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+Funktioniert super? Wir sind so stolz auf dich! Steh kurz auf und geh ein Stück weg vom Computer. Du hast dir eine Pause verdient :)
 
 ![Abbildung 13.4](images/donut.png)
