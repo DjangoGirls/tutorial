@@ -33,7 +33,7 @@ Para fazer login, você precisa criar um *superusuário (superuser)* - uma conta
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Quando solicitado, insira seu nome de usuário (letras minúsculas, sem espaços), e-mail e senha. **Não se preocupe se você não consegue ver a senha que está digitando – é assim que tem ser.** Só digitá-la e pressionar `enter` para continuar. A saída deve parecer com isso (onde o nome de usuário e o email devem ser os seus):
+Quando solicitado, insira seu nome de usuário (letras minúsculas, sem espaços), e-mail e senha. **Não se preocupe se você não conseguir ver a senha que está digitando – é assim que tem ser.** Basta digitá-la e clicar `enter` para continuar. A saída deve parecer com isso (onde o nome de usuário e o email devem ser os seus):
 
     Username: admin
     Email address: admin@admin.com
@@ -46,9 +46,9 @@ Volte ao seu navegador. Faça login com as credenciais de superusuário que voc�
 
 ![Django Admin](images/django_admin3.png)
 
-Vá para Posts e experimente um pouco por lá. Adicione cinco ou seis posts. Não se preocupe com o conteúdo - você pode simplesmente copiar e colar algum texto desse tutorial para economizar tempo. :)
+Vá para Posts e brinque um pouco por lá. Adicione cinco ou seis posts. Não se preocupe com o conteúdo - você pode simplesmente copiar e colar algum texto desse tutorial para economizar tempo. :)
 
-Certifique-se que pelo menos duas ou três postagens (mas não todas) têm a data de publicação definida. Isso será útil depois.
+Certifique-se de que pelo menos duas ou três postagens (mas não todas) têm a data de publicação definida. Isso será útil depois.
 
 ![Django admin](images/edit_post3.png)
 
