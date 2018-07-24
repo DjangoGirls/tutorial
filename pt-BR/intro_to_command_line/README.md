@@ -2,13 +2,13 @@
 
 > Para as leitoras em casa: este capítulo é coberto no vídeo [ Sua nova amiga: a linha de comando ](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-É emocionante, não?! Você vai escrever sua primeira linha de código em poucos minutos! :)
+É emocionante, não?! Em poucos minutos você vai escrever sua primeira linha de código! :)
 
-**Deixe-nos apresentá-lo ao seu primeiro novo amigo: a linha de comando!**
+**Deixe-nos apresentá-la à sua primeira nova amiga: a linha de comando!**
 
 As etapas a seguir mostraram a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas realmente é apenas um prompt esperando por comandos de você.
 
-> **Nota** Note que ao longo deste livro intercalamos o uso dos termos 'diretório' e 'pasta', mas eles significam a mesma coisa.
+> **Observação** Note que ao longo deste livro intercalamos o uso dos termos 'diretório' e 'pasta', mas eles significam a mesma coisa.
 
 ## O que é a linha de comando?
 
@@ -16,13 +16,13 @@ A janela, que geralmente é chamada de **linha de comando** ou **interface de li
 
 ## Abra a interface de linha de comando
 
-Para começar alguns experimentos, precisamos abrir a nossa interface de linha de comando primeiro.
+Para começar alguns experimentos, precisamos abrir a nossa interface de linha de comando.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
 Vá para o Menu iniciar → Sistema do Window → Prompt de comando.
 
-> Em versões antigas do windows, procure em Menu iniciar → Todos programas → Acessórios → Prompt de comando.
+> Em versões antigas do Windows, procure em Menu iniciar → Todos programas → Acessórios → Prompt de comando.
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Agora você deve ver uma janela branca ou preta que está à espera de seus coma
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Se você estiver em Mac ou num Linux, você provavelmente verá um `` $, como este:
+Se você estiver em Mac ou Linux, provavelmente verá um `` $, como este:
 
 {% filename %}command-line{% endfilename %}
 
