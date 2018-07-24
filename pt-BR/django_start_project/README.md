@@ -191,12 +191,12 @@ Se você estiver com um Chromebook, semre visite o servidor de teste acessando:
 
 Parabéns! Você criou seu primeiro site e o executou usando um servidor de web! Não é impressionante?
 
-![Install worked!](images/install_worked.png)
+![Instalação funcionou!](images/install_worked.png)
 
 Enquanto o servidor estiver rodando, o prompt do terminal não estará disponível para receber novos comandos. Na realidade, o terminal permite que você escreva texto, mas não irá executar nenhum comando. Isto acontece porque o servidor bloqueia o terminal enquanto ele mesmo escuta novos comandos.
 
 > Nós revisamos como servidores web funcionam no capítulo **Como a Internet funciona**.
 
-Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal e execute o virtualenv. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C - botões Control e C juntos (no Windows, você pode precisar pressionar Ctrl+Break).
+Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal e execute o virtualenv. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C - botões Control e C juntos (no Windows, tente Ctrl+Break se o primeiro não funcionar).
 
 Pronto para o próximo passo? Está na hora de criar algum conteúdo!
