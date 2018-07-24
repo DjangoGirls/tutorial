@@ -67,6 +67,7 @@ Git จะติดตามการเปลี่ยนแปลงในท�
             blog/
             manage.py
             mysite/
+            requirements.txt
     
     nothing added to commit but untracked files present (use "git add" to track)
     
@@ -184,7 +185,7 @@ Type in the details for your admin user. Best to use the same ones as you're usi
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
-    blog  db.sqlite3  manage.py  mysite  static
+    blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
     __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
     templates  tests.py  urls.py  views.py
