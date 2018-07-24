@@ -46,12 +46,12 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
-    它是一个Django的项目文件夹，为即将开始的项目准备好了必要的资源文件和文件夹
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
 > **Note**: in your directory structure, you will also see your `venv` directory that we created before.
