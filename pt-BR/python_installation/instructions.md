@@ -14,7 +14,7 @@ Existe uma coisa com a qual você precisa ter cuidado: durante a instalação, v
 
 Nas próximas etapas, você usará a linha de comando do Windows (e também vamos te explicar tudo sobre isso). Por enquanto, se você precisa digitar alguns comandos, vá ao menu iniciar e digite "Command Prompt" no campo de busca. (Em versões mais antigas do Windows, é possível iniciar a linha de comando com Start menu → Sistema do Windows → Prompt de comando.) Você também pode segurar a tecla windows + "R" até aparecer a janela "Executar". Para abrir a Linha de Comando, digite "cmd" e pressione enter na janela "Executar".
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Digite "cmd" na janela "Run"](../python_installation/images/windows-plus-r.png)
 
 Nota: se você estiver usando uma versão antiga do Windows (7, Vista, ou qualquer versão mais antiga) e o instalador do 3.6. x Python falhar e dar erro, você pode tentar também:
 
@@ -23,14 +23,14 @@ Nota: se você estiver usando uma versão antiga do Windows (7, Vista, ou qualqu
 
 Se você instalar uma versão mais antiga do Python, a tela de instalação pode parecer um pouco diferente da mostrada acima. Certifique-se de rolar até ver a opção "Add python.exe to Path", então clique no botão à esquerda e escolha "Will be installed on local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Adicionar o Python para o caminho, as versões mais antigas](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Obs** Antes de instalar o Python no Mac OS X, você deve garantir que suas configurações permitam a instalação de pacotes que não estejam na App Store. Vá para preferências do sistema (dentro da pasta Aplicativos), clique em "Segurança & Privacidade" e depois na guia "Geral". Se a configuração "Permitir que apps baixados:" estiver definida como "Mac App Store," mudar para "Mac App Store e desenvolvedores identificados."
 
 Você precisa visitar https://www.python.org/downloads/release/python-361/ e fazer o download do instalador do Python:
 
@@ -75,7 +75,7 @@ Use o seguinte comando no terminal:
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use yum instead.
+Se você estiver em versões mais antigas do Fedora, você pode receber um erro que não se encontra o comando `dnf`. Nesse caso, você precisa usar o yum em vez disso.
 
 <!--endsec-->
 
