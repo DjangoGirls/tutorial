@@ -44,7 +44,7 @@ Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, eine Vie
 
 ## Link auf eine Seite mit dem Formular
 
-Jetzt ist es an der Zeit, `blog/templates/blog/base.html` zu öffnen. Wir fügen einen Link in `div` hinzu mit dem Namen `page-header`:
+Jetzt ist es an der Zeit, `blog/templates/blog/base.html` zu öffnen. Wir fügen einen Link in einem `div` hinzu mit dem Namen `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
