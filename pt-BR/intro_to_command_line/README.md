@@ -66,11 +66,11 @@ No Windows, é um sinal de `>`, como este:
 
 Cada comando será antecedido por este sinal e um espaço, mas você não precisa digitá-lo. Seu computador fará isso por você. :)
 
-> Uma pequena observação: no nosso caso existe algo como `C:\Users\ola>` ou `Olas-MacBook-Air:~ ola$` antes do cursor e isso está 100% correto.
+> Uma pequena observação: pode ser que apareça algo como `C:\Users\ola>` ou `Olas-MacBook-Air:~ ola$` antes do cursor e isso está 100% correto.
 
-A parte até e incluindo o `$` ou o `>` é chamada de *prompt de linha de comando*, ou *prompt* de forma breve. Ele solicita que você de a entrada de algo.
+A parte que vai até e inclui o `$` ou o `>` é chamada de *prompt de linha de comando*, ou *prompt* de forma breve. Ele está pedindo que você digite algo.
 
-No tutorial, quando queremos que você digite um comando, nós incluiremos o `$` ou `>` e por vezes até mais para a esquerda. Você pode ignorar a parte esquerda e apenas digite o comando que inicia após o prompt.
+No tutorial, quando queremos que você digite um comando, nós incluiremos o `$` ou `>` e algumas vezes algum texto adicional à esquerda. Você pode ignorar o que está à esquerda e apenas digitar o comando que inicia após o prompt.
 
 ## Seu primeiro comando (Uhuu!)
 
@@ -94,7 +94,7 @@ Vamos começar digitando este comando:
 
 <!--endsec-->
 
-E em então aperte `enter`. Este é o nosso resultado:
+E em então pressione a tecla `enter`. Este é o nosso resultado:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,9 +102,9 @@ E em então aperte `enter`. Este é o nosso resultado:
     olasitarska
     
 
-Como você pode ver o computador acabou de mostrar seu nome de usuário na tela. Legal, né? :)
+Como você pode ver, o computador acabou de mostrar seu nome de usuário na tela. Legal, né? :)
 
-> Tente escrever cada comando, não copie e cole. Você vai se lembrar melhor dos comandos desse jeito!
+> Tente escrever cada comando, não copie e cole. Assim você vai se lembrar melhor dos comandos!
 
 ## O Básico
 
@@ -122,7 +122,7 @@ Seria legal se soubéssemos em que diretório estamos, certo? Para isso, digite 
     /Users/olasitarska
     
 
-> Nota: 'pwd' significa 'print working directory' (imprima/mostre o diretório de trabalho).
+> Observação: 'pwd' significa 'print working directory' (imprima/mostre o diretório de trabalho).
 
 <!--endsec-->
 
