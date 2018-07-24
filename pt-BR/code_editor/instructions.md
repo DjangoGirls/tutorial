@@ -1,6 +1,6 @@
-Existem muitos editores diferentes e trata-se essencialmente de preferência pessoal. A maioria dos programadores Python usa os complexos, mas extremamente poderosos IDEs (Integrated Development Environments, ou, em português, Ambientes de Desenvolvimento Integrado), tais como o PyCharm. Para um iniciante, entretanto, estas IDEs não são muito adequadas; nossas recomendações são igualmente poderosas, mas bem mais simples.
+Existem muitos editores diferentes e escolher um trata-se essencialmente de preferência pessoal. A maioria dos programadores de Python usa os complexos, mas extremamente poderosos IDEs (Integrated Development Environments, ou, em português, Ambientes de Desenvolvimento Integrado), tais como o PyCharm. Para um iniciante, entretanto, estas IDEs não são muito adequadas; nossas recomendações são igualmente poderosas, mas bem mais simples.
 
-Nossas sugestões estão logo abaixo, mas sinta-se livre para perguntar à sua monitora quais são suas preferências - assim será mais fácil conseguir a ajuda delas.
+Nossas sugestões estão logo abaixo, mas sinta-se livre para perguntar à sua monitora quais são suas preferências - será mais fácil escolher com a ajuda delas.
 
 ## Gedit
 
@@ -16,7 +16,7 @@ O Sublime Text é um editor muito popular. Ele tem um período de avaliação gr
 
 ## Atom
 
-O Atom é um editor de código extremamente novo, criado pelo [GitHub](https://github.com/). Ele é gratuito, de código aberto e está disponível para Windows, OS X e Linux.
+O Atom é um editor de código recente criado pelo [GitHub](https://github.com/). Ele é gratuito, tem código aberto e está disponível para Windows, OS X e Linux.
 
 [Baixe-o aqui](https://atom.io/)
 
