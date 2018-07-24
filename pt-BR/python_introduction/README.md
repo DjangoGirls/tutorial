@@ -8,11 +8,11 @@ Vamos escrever um pouco de código!
 
 ## Interpretador de Python
 
-> Para os leitores em casa: essa parte é abrangida no [ Básico do Python: Vídeo Números inteiros, Sequências, Listas e Erros ](https://www.youtube.com/watch?v=MO63L4s-20U).
+> Para as leitoras em casa: esta parte é abordada no vídeo [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-Para começar a trabalhar com Python, nós precisamos abrir uma * linha de comando* no seu computador. Você provavelmente já sabe como fazer isso - aprendeu no capítulo [ Introdução à Linha de Comando ](../intro_to_command_line/README.md).
+Para começar a trabalhar com Python, nós precisamos abrir uma * linha de comando* no computador. Você provavelmente já sabe como fazer isso - aprendeu no capítulo [ Introdução à Linha de Comando ](../intro_to_command_line/README.md).
 
-Assim que estiver pronto, siga as instruções abaixo.
+Assim que estiver pronta, siga as instruções abaixo.
 
 Queremos abrir um console do Python, então digite `python` no Windows ou `python3` no Mac OS/Linux e pressione `enter`.
 
