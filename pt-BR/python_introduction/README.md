@@ -860,15 +860,15 @@ oi()
 
 Ok, nossa primeira função está pronta!
 
-Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a função que definimos, devemos chamá-la no final. So in order to use our function, we have to re-write it at the bottom.
+Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a função que definimos, devemos chamá-la no final. Esclarecendo: no bloco de texto formado pela linha que começa com "def" e nas linhas edentadas seguintes, definimos a função, mas não executamos nenhum comando. Precisamos dizer explicitamente ao Python que a execute (escrevendo "oi()").
 
 Vamos executá-la agora e ver o que acontece:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hi there!
-    How are you?
+    Oi!
+    Tudo bem?
     
 
 Observação: se não funcionou, não entre em pânico! A saída vai te ajudar a entender o que aconteceu:
