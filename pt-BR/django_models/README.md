@@ -163,15 +163,15 @@ Nós não explicaremos cada pedaço de código aqui pois isso levaria muito temp
 
 E que tal `def publish(self):`? É justamente o método `publish` que falamos anteriormente. `def` significa que se trata de uma função/método e que `publish` é seu nome. Você pode mudar o nome do método, se quiser. A regra para nomes é que usamos sempre letras minúsculas e sublinhados ao no lugar dos espaços em branco. Por exemplo, um método que calcula o preço médio poderia se chamar `calculate_average_price` (do inglês, calcular_preco_medio).
 
-Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `__str__`. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `__str__`. Nesse caso, quando chamar `__str__()` resulta em um texto (**string**), com o título do Post.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Lembre-se também que ambos `def publish(self):`, e `def __str__(self):` são indentados para dentro da classe. E porque Python é sensível a espaços em branco, precisamos indentar todos nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe, e você pode obter um comportamento inesperado.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para o seu treinador! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas espero que isto se pareça um pouco menos mágica agora!
 
 ### Criando tabelas para nossos modelos no banco de dados
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+O último passo é adicionar nosso novo modelo ao banco de dados. Primeiramente, precisamos fazer com que o Django entenda que fizemos algumas alterações nos nossos modelos. (Nós acabamos de criar um modelo de Post!) Vá para o console e digite `python manage.py makemigrations blog`. Deve ficar assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -182,9 +182,9 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Obs:** Lembre-se de salvar os arquivos que você editar. Caso contrŕio, o computador executara uma versão antiga que pode gerar mensagens de erro inesperadas.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+O Django preparou um arquivo de migração que precisamos aplicar ao nosso banco de dados. Digite `python manage.py migrate blog` e a saída deve ser:
 
 {% filename %}command-line{% endfilename %}
 
@@ -196,4 +196,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Uhul! Nosso modelo Post já está no banco de dados! Seria legal vê-lo, né? Vá para o próximo capítulo para descobrir como nosso Post se parece!
