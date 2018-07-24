@@ -56,19 +56,20 @@ Det är en bra idé att använda kommandot `git status` före `git add` eller om
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    På grenen master
+    On branch master
     
-    Första incheckning
+    Initial commit
     
-    Ospårade filer:
-      (använd "git add <file>..." för att ta med i det som skall checkas in)
+    Untracked files:
+      (use "git add <file>..." to include in what will be committed)
     
             .gitignore
             blog/
             manage.py
             mysite/
+            requirements.txt
     
-    inget köat för incheckning, men ospårade filer finns (spåra med "git add")
+    nothing added to commit but untracked files present (use "git add" to track)
     
 
 Och slutligen sparar vi våra ändringar. Gå till din konsol och kör dessa kommandon:
@@ -184,7 +185,7 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
-    blog  db.sqlite3  manage.py  mysite  static
+    blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
     __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
     templates  tests.py  urls.py  views.py
