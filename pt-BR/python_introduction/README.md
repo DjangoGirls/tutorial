@@ -1005,13 +1005,13 @@ Aqui está o código completo que será salvo no arquivo:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
-    print('Hi ' + name + '!')
+def oi(nome):
+    print('Oi ' + nome + '!')
 
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'você']
 for name in girls:
-    hi(name)
-    print('Next girl')
+    oi(name)
+    print('Próxima')
 ```
 
 E quando rodamos:
@@ -1019,21 +1019,21 @@ E quando rodamos:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hi Rachel!
-    Next girl
-    Hi Monica!
-    Next girl
-    Hi Phoebe!
-    Next girl
-    Hi Ola!
-    Next girl
-    Hi You!
+    Olá Rachel!
+    Próxima
+    Olá Monica!
+    Próxima
+    Olá Phoebe!
+    Próxima
+    Olá Ola!
+    Próxima
+    Olá você!
     Next girl
     
 
-Como você pode ver, tudo o que você vai colocar dentro de uma instrução `for` com espaço será repetido para cada elemento da lista `girls`.
+Como você pode ver, tudo o que colocar dentro de uma instrução `for` com espaço será repetido para cada elemento da lista `girls`.
 
-You can also use `for` on numbers using the `range` function:
+Você também pode usar o `for` para números usando a função `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,7 +1042,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Que iria imprimir:
+Que deve imprimir:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1055,13 +1055,13 @@ Que iria imprimir:
 
 `range` é uma função que cria uma lista de números que se seguem um após o outro (esses números são dados por você como parâmetros).
 
-Note que o segundo desses dois números não está incluído na lista que o Python mostrou (em `range(1, 6)`, conta de 1 a 5, mas o 6 não é incluído). Isso porque o intervalo é semi-aberto, o que significa que ele inclui o primeiro valor, mas não o último.
+Note que o segundo desses dois números não está incluído na lista que o Python mostrou (em `range(1, 6)`, ele conta de 1 a 5, mas inclui o 6). Isso porque o intervalo é semi-aberto, o que significa que ele inclui o primeiro valor, mas não o último.
 
 ## Sumário
 
 É isso. **Você mandou muito bem!** Esse foi um capítulo difícil, então você deve estar orgulhosa. Nós estamos orgulhosas de você por ter conseguido ir tão longe!
 
-Para um tutorial de Python oficial e completo, visite https://docs.python.org/3/tutorial/. Isto te dará um guia da linguagem mais exaustivo e completo. Até lá :)
+Para um tutorial de Python oficial e completo, visite https://docs.python.org/3/tutorial/. Ele te dará um guia da linguagem mais exaustivo e completo. Até lá :)
 
 Talvez você queira brevemente fazer algo mais -- espreguiçar, andar um pouco, descansar os olhos -- antes de ir para o próximo capítulo. :)
 
