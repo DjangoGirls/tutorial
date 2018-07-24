@@ -6,7 +6,7 @@ Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar s
 
 Also, in HTML kann man nicht wirklich Python-Code schreiben, weil es der Browser nicht verstehen würde. Aber er kennt HTML. Wir wissen, dass HTML, im Gegensatz zum dynamischeren Python, eher statisch ist.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+Die **Django Template Tags** helfen dabei, Python-Dinge in HTML auszudrücken, so dass man einfach und schnell dynamische Websites erstellen kann. Super!
 
 ## Anzeigen des Post-List-Templates
 
@@ -20,7 +20,7 @@ Um eine Variable in einem Django-Template darzustellen, nutzen wir doppelte, ges
 {{ posts }}
 ```
 
-Versuche dies in deinem `blog/templates/blog/post_list.html` Template. Ersetze alles vom zweiten `<div>` bis zum dritten `<div>` mit `{{ posts }}`. Speichere die Datei und aktualisiere die Seite, um die Ergebnisse anzuzeigen.
+Versuche das in deinem `blog/templates/blog/post_list.html` Template. Ersetze alles vom zweiten `<div>` bis zum dritten `<div>` mit `{{ posts }}`. Speichere die Datei und aktualisiere die Seite, um die Ergebnisse anzuzeigen.
 
 ![Abbildung 13.1](images/step1.png)
 
@@ -46,7 +46,7 @@ Versuch das in deinem Template.
 
 ![Abbildung 13.2](images/step2.png)
 
-Es funktioniert! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. Du kannst HTML und Template Tags mischen. Unser `body` sollte dann so aussehen:
+Es funktioniert! Aber wir wollen, dass die Posts so angezeigt werden, wie die statischen Posts, die wir vorhin im **Einführung in HTML** Kapitel erstellt haben. Du kannst HTML und Template Tags mischen. Unser `body` sollte dann so aussehen:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -68,7 +68,7 @@ Es funktioniert! But we want the posts to be displayed like the static posts we 
 
 ![Abbildung 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Ist dir aufgefallen, dass wir diesmal eine etwas andere Notation benutzen haben (`{{ post.title }}` oder `{{ post.text }}`)? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## Und zum Schluss
 
