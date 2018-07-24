@@ -851,16 +851,16 @@ Uma função é um sequência de instruções que o Python deve executar. Cada f
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi():
-    print('Hi there!')
-    print('How are you?')
+def oi():
+    print('Oi!')
+    print('Tudo bem?')
 
-hi()
+oi()
 ```
 
 Ok, nossa primeira função está pronta!
 
-Você pode estar se perguntando por que escrevemos o nome da função no final do código. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Você pode estar se perguntando por que escrevemos o nome da função no final do código. O Python lê e executa o código de cima para baixo, então para usar a nossa função, devemos chamá-la no final. So in order to use our function, we have to re-write it at the bottom.
 
 Vamos executá-la agora e ver o que acontece:
 
@@ -874,7 +874,7 @@ Vamos executá-la agora e ver o que acontece:
 Observação: se não funcionou, não entre em pânico! A saída vai te ajudar a entender o que aconteceu:
 
 - Se você recebeu uma mensagem `NameError`, provavelmente foi um erro de digitação, então confira se você usou o mesmo nome ao criar a função com `def hi()` e quando a chamou no final com `hi()`.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
+- Se recebeu uma mensagem `IdentationError`, confira se as duas linhas de `print` têm o mesmo recuo no começo: o Python precisa que o código dentro da função esteja bem alinhado.
 - If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
 
 Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
