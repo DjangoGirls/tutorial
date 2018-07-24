@@ -319,7 +319,7 @@ In `blog/urls.py` fügen wir folgende Zeile ein:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-Wir werden die Vorlage `blog/templates/blog/post_edit.html` wiederverwenden, daher ist das einzig Fehlende eine neue *view*.
+Wir werden die Vorlage `blog/templates/blog/post_edit.html` wiederverwenden, daher ist das einzig Fehlende eine neue *View*.
 
 Öffne `blog/views.py` und füge ganz am Ende der Datei Folgendes hinzu:
 
@@ -341,7 +341,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Sieht genauso aus wie unsere `post_new` view, oder? Aber nicht ganz. Zum Einen übergeben wir zusätzliche `pk` Parameter von urls. Und: Wir bekommen das `Post`-Model, welches wir bearbeiten wollen, mit `get_object_or_404(Post, pk=pk)` und wenn wir dann ein Formular erstellen, übergeben wir post als `instance`, sowohl wenn wir das Formular speichern:
+Sieht genauso aus wie unsere `post_new` View, oder? Aber nicht ganz. Zum einen übergeben wir zusätzliche `pk` Parameter von urls. Und: Wir bekommen das `Post`-Model, welches wir bearbeiten wollen, mit `get_object_or_404(Post, pk=pk)` und wenn wir dann ein Formular erstellen, übergeben wir post als `instance`, wenn wir das Formular speichern…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -365,15 +365,15 @@ Wenn du darauf klickst, siehst du das Formular mit unserem Blogpost:
 
 ![Formular bearbeiten](images/edit_form2.png)
 
-Probier doch einmal den Titel oder den Text zu ändern und die Änderungen zu speichern!
+Probier doch einmal, den Titel oder den Text zu ändern und die Änderungen zu speichern!
 
-Herzlichen Glückwunsch! Deine Anwendung nimmt mehr Gestalt an!
+Herzlichen Glückwunsch! Deine Anwendung nimmt immer mehr Gestalt an!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Falls du mehr Informationen über Django Formulare benötigst, solltest du die offizielle Dokumentation lesen: https://docs.djangoproject.com/en/2.0/topics/forms/.
 
 ## Sicherheit
 
-Neue Posts mit nur einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, dass du garantiert nicht willst. Lasst es uns so machen, das der Button für dich angezeigt wird aber für niemanden sonst. 
+Neue Posts mit nur einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, dass du garantiert nicht willst. Lasst es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
 
 Finde in der Datei `blog/templates/blog/base.html` unseren `page-header` `div` und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:
 
