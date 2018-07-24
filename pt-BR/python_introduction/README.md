@@ -862,7 +862,7 @@ Ok, nossa primeira função está pronta!
 
 Você pode estar se perguntando por que escrevemos o nome da função no final do código. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-Let's run this now and see what happens:
+Vamos executá-la agora e ver o que acontece:
 
 {% filename %}command-line{% endfilename %}
 
@@ -871,9 +871,9 @@ Let's run this now and see what happens:
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Observação: se não funcionou, não entre em pânico! A saída vai te ajudar a entender o que aconteceu:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
+- Se você recebeu uma mensagem `NameError`, provavelmente foi um erro de digitação, então confira se você usou o mesmo nome ao criar a função com `def hi()` e quando a chamou no final com `hi()`.
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
 - If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
 
