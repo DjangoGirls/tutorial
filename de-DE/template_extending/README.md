@@ -1,8 +1,8 @@
 # Erweiterung der Templates
 
-Eine weitere praktische Sache von Django ist das **template extending**, Erweiterungen des Templates. Was bedeutet das? Damit kannst du Teile deiner HTML-Site für verschiedene Seiten deiner Website nutzen.
+Eine weitere praktische Sache von Django ist das **template extending**, Erweiterungen des Templates. Was bedeutet das? Damit kannst du Teile deines HTML-Codes für andere Seiten deiner Website nutzen.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Templates helfen, wenn du die selben Informationen oder das selbe Layout an mehreren Stellen verwenden willst. Du musst dich so nicht in jeder Datei wiederholen. Und wenn du etwas ändern willst, dann musst du es nicht in jedem einzelnen Template tun, sondern nur in einem!
 
 ## Ein Basis-Template erstellen
 
@@ -75,7 +75,7 @@ Dann ersetze in `base.html` den gesamten `<body>` (alles zwischen `<body>` und `
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}Vielleicht hast du bemerkt, dass das alles von `{% for post in posts %}` bis `{% endfor %}` mit dem Folgenden ersetzt: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,9 +84,9 @@ Dann ersetze in `base.html` den gesamten `<body>` (alles zwischen `<body>` und `
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Wir zeigen dir gleich, wie das geht.
+Aber warum? Du hast gerade einen `block` erstellt! Du hast den Template Tag `{% block %}` benutzt, um einen Bereich zu schaffen, der HTML aufnehmen kann. Dieses HTML kommt aus einem anderen Template, welches das Template hier (`base.html`) erweitert. Wir zeigen dir gleich, wie das geht.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_list.html`. {% raw %}Du löschst alles oberhalb von `{% for post in posts %}` und unterhalb von `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
