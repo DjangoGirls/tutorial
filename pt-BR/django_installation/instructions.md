@@ -161,7 +161,7 @@ Antes de fazer isto, devemos garantir que temos a última versão do `pip`, que 
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Instalando pacotes com requisitos
 
 O arquivo "requiriments.txt" guarda as depenências que serão instaladas utilizando o `pip install`:
 
