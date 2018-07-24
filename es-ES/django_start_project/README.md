@@ -46,11 +46,12 @@ En Windows debes ejecutar el siguiente comando. **(No olvides incluir el punto `
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
 > **Nota**: en tu estructura de directorios, tambièn veràs el directorio `venv` que creamos anteriormente.
