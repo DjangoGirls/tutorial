@@ -4,7 +4,7 @@ Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar s
 
 ## Was sind Template Tags?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+Also, in HTML kann man nicht wirklich Python-Code schreiben, weil es der Browser nicht verstehen würde. Aber er kennt HTML. Wir wissen, dass HTML, im Gegensatz zum dynamischeren Python, eher statisch ist.
 
 **Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
 
