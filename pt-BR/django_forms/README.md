@@ -1,10 +1,10 @@
 # Formulários
 
-Por último, queremos uma forma legal de adicionar e editar as postagens do nosso blog. A `ferramenta de administração` do Django é legal, mas ela é um pouco difícil de customizar e de deixar mais bonita. Com `formulários`, temos poder absoluto sobre nosso interface - podemos fazer quase tudo que podemos imaginar!
+Por último, queremos uma forma legal de adicionar e editar as postagens do nosso blog. A `ferramenta de administração` do Django é legal, mas é um pouco difícil de personalizar e de deixar mais bonita. Com `formulários`, temos poder absoluto sobre nosso interface - podemos fazer quase tudo que podemos imaginar!
 
-Uma coisa legal do Django é que nós podemos tanto criar um formulário do zero como podemos criar um `ModelForm` que salva o resultado do formulário em um determinado modelo.
+Uma coisa legal do Django é que nós podemos tanto criar um formulário do zero, como criar um `ModelForm` que salva o resultado do formulário em um determinado modelo.
 
-Isso é exatamente o que nós queremos fazer: criaremos um formulário para o nosso modelo `Post`.
+É exatamente isso que nós queremos fazer: criar um formulário para o nosso modelo `Post`.
 
 Assim como toda parte importante do Django, forms têm seu próprio arquivo: `forms.py`.
 
@@ -30,17 +30,17 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Primeiro precisamos importar o módulo de formulários do Django (`from django import forms`) e, obviamente, nosso modelo `Post` (`from .models import Post`).
+Primeiro, precisamos importar o módulo de formulários do Django (`from django import forms`) e, obviamente, o nosso modelo `Post` (`from .models import Post`).
 
-`PostForm`, como você já deve suspeitar, é o nome do nosso formulário. Nós precisamos dizer ao Django que esse form é um `ModelForm` (pro Django fazer algumas mágicas para nós) – `forms.ModelForm` é o responsável por essa parte.
+`PostForm`, como você já deve suspeitar, é o nome do nosso formulário. Precisamos dizer ao Django que esse form é um `ModelForm` (pro Django fazer algumas mágicas para nós) – `forms.ModelForm` é o responsável por essa parte.
 
-Em seguida, nós temos a `class Meta` onde dizemos ao Django qual modelo deverá ser usado para criar este formulário (`model = Post`).
+Em seguida, temos a `class Meta` onde dizemos ao Django qual modelo deverá ser usado para criar este formulário (`model = Post`).
 
-Por fim, nós podemos dizer qual(is) campo(s) devem entrar no nosso formulário. Neste cenário nós queremos apenas que o `title` e o `text` sejam expostos - `author` deveria ser a pessoa que está logada no sistema (nesse caso, você!) e `created_date` deveria ser setado automaticamente quando nós criamos um post (no código), correto?
+Por fim, podemos dizer qual(is) campo(s) devem entrar no nosso formulário. Neste cenário, queremos apenas que o `title` e o `text` sejam expostos - `author` deveria ser a pessoa que está logada no sistema (nesse caso, você!) e `created_date` deveria ser configurado automaticamente quando criamos um post (no código), correto?
 
-E é isso aí! Tudo o que precisamos fazer agora é usar o formulário em uma *view* e mostrá-lo em um template.
+E é isso! Tudo o que precisamos fazer agora é usar o formulário em uma *view* e mostrá-lo em um template.
 
-Novamente nós criaremos um link para a página, uma URL, uma view e um template.
+Novamente, criaremos um link para a página, uma URL, uma view e um template.
 
 ## Link para a página com o formulário
 
@@ -52,7 +52,7 @@ Novamente nós criaremos um link para a página, uma URL, uma view e um template
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note que queremos chamar nossa nova view de `post_new`. A classe `"glyphicon glyphicon-plus"` é fornecida pelo tema (bootstrap) que estamos usando, e irá mostrar um sinal de mais para nós.
+Note que queremos chamar nossa nova view de `post_new`. A classe `"glyphicon glyphicon-plus"` é fornecida pelo tema (bootstrap) que estamos usando, e inos mostrará um sinal de mais.
 
 Após adicionar essa linha, o seu HTML vai estar assim:
 
