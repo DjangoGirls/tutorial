@@ -86,7 +86,7 @@ Dann ersetze in `base.html` den gesamten `<body>` (alles zwischen `<body>` und `
 
 Aber warum? Du hast gerade einen `block` erstellt! Du hast den Template Tag `{% block %}` benutzt, um einen Bereich zu schaffen, der HTML aufnehmen kann. Dieses HTML kommt aus einem anderen Template, welches das Template hier (`base.html`) erweitert. Wir zeigen dir gleich, wie das geht.
 
-Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_list.html`. {% raw %}Du löschst alles oberhalb von `{% for post in posts %}` und unterhalb von `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_list.html`. {% raw %}Du löschst alles oberhalb von `{% for post in posts %}` und unterhalb von `{% endfor %}`. Wenn du das gemacht hast, sieht die Datei so aus:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,9 +102,9 @@ Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Dieser Teil unseres Templates soll nun das Basis-Template erweitern. Wir müssen daher Block-Tags ergänzen!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. So hier:
+{% raw %}Deine Block Tags müssen mit den Tags in der `base.html`-Datei übereinstimmen. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. So hier:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
