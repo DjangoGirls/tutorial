@@ -59,20 +59,21 @@ db.sqlite3
 
 <p>% filename %}}خط فرمان% endfilename %}}</p>
 
-<pre><code>وضعیت $ گیت
-در شاخه کارشناسی ارشد
+<pre><code>$ git status
+On branch master
 
-تعهد اولیه
+Initial commit
 
-فایل های غیرقابل پیگیری:
-   (استفاده از "گیت اضافه کردن <file> ..." برای شامل در آنچه متعهد خواهد شد)
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
 
-         .ردکردن گیت
-         وبلاگ/
-         مدیریت.py
-         مکان من/
+        .gitignore
+        blog/
+        manage.py
+        mysite/
+        requirements.txt
 
-هیچ چیز اضافه نشده به مرتکب شدن اما فایل های غیرقابل مشاهده موجود (استفاده از "git add" برای ردیابی)
+nothing added to commit but untracked files present (use "git add" to track)
 `</pre> 
 > 
 > و در نهایت ما تغییرات ما را ذخیره می کنیم. به کنسول خود بروید و این دستورات را اجرا کنید:
@@ -188,7 +189,7 @@ db.sqlite3
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
 >     (ola.pythonanywhere.com) $ ls
->     blog  db.sqlite3  manage.py  mysite  static
+>     blog  db.sqlite3  manage.py  mysite requirements.txt static
 >     (ola.pythonanywhere.com) $ ls blog/
 >     __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
 >     templates  tests.py  urls.py  views.py
