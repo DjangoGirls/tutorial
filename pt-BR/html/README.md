@@ -214,4 +214,4 @@ E veja seu código sendo baixado. Se você quiser verificar que ele já baixou, 
 
 * Finalmente, pule para a aba [Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em seu aplicativo.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Sua atualização deve estar no ar! Vá em frente e atualize seu site no navegador. As alterações devem estar visíveis. :)
