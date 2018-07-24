@@ -27,13 +27,13 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Dann ergänzen wir für den Import den Namen des Models (`Post`).
+Der Punkt vor `models` bedeutet *current directory*, also das aktuelle Verzeichnis, oder *current application*, die aktuelle Anwendung. Die `views.py` und `models.py` liegen im selben Verzeichnis. Dadurch können wir `.` und den Namen der Datei (ohne `.py`) benutzen. Dann ergänzen wir für den Import den Namen des Models (`Post`).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+Und nun? Um die tatsächlichen Blogposts des `Post`-Models zu erhalten, brauchen wir etwas, das `QuerySet` heißt.
 
 ## QuerySet
 
-You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+Dir sollte schon ungefähr klar sein, wie QuerySets funktionieren. Wir haben darüber im Kapitel [Django ORM und QuerySets](../django_orm/README.md) gesprochen.
 
 So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
 
