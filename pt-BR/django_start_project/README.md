@@ -79,17 +79,17 @@ Em `settings.py`, localize a linha que contém `TIME_ZONE` e modifique para esco
 TIME_ZONE = 'America/Sao_Paulo'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Um código de idioma consistem da língua, por exemplo, `en` para inglês ou `pt` para português e o código do país, por exemplo, `br` para Brasil ou `pt` para a Portugal. Já que o inglês provavelmente não é sua língua nativa, você pode pode adicionar um novo código de país para deixar os botões padrão e notificações de Django em seu idioma. Assim, você teria por exemplo um botão "Cancel" traduzido para a língua da sua escolha (ex: "Cancelar" em português). [Django vem com um monte de traduções já preparadas](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Se você quiser um idioma diferente do inglês, especifique o código de idioma alterando a seguinte linha:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-LANGUAGE_CODE = 'de-ch'
+LANGUAGE_CODE = 'pt-BR'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Também precisamos adicionar o caminho para os arquivos estáticos. (Nós discutiremos tudo sobre arquivos estáticos e CSS mais adiante no tutorial.) Vá até o *final* do arquivo e, logo abaixo da linha com `STATIC_URL`, adicione uma nova variável chamada `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -98,7 +98,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site será validado como `['localhost', '127.0.0.1', '[::1]']`. Isso não corresponde ao nosso domínio no PythonAnywhere quando implantarmos a nossa aplicação, então mudamos a seguinte configuração:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -106,7 +106,7 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Obs**: Se você estiver utilizando um Chromebook, adicione esta linha ao final do arquivo settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
 > Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
 
