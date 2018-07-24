@@ -1061,8 +1061,8 @@ Note que o segundo desses dois números não está incluído na lista que o Pyth
 
 É isso. **Você mandou muito bem!** Esse foi um capítulo difícil, então você deve estar orgulhosa. Nós estamos orgulhosas de você por ter conseguido ir tão longe!
 
-Para um tutorial de Python oficial e completo, visite https://docs.python.org/3/tutorial/. Ele te dará um guia da linguagem mais exaustivo e completo. Até lá :)
+Para um tutorial de Python oficial e completo, visite https://docs.python.org/3/tutorial/. Lá você encontrará um guia da linguagem mais exaustivo e completo. Até lá :)
 
-Talvez você queira brevemente fazer algo mais -- espreguiçar, andar um pouco, descansar os olhos -- antes de ir para o próximo capítulo. :)
+Talvez você queira fazer uma breve pausa -- espreguiçar, andar um pouco, descansar os olhos -- antes de ir para o próximo capítulo. :)
 
 ![Cupcake](images/cupcake.png)
