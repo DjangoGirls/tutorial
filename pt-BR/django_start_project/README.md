@@ -108,11 +108,11 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Obs**: Se você estiver utilizando um Chromebook, adicione esta linha ao final do arquivo settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9
+> Também inclua `.c9users.io` à lista de `ALLOWED_HOSTS` se você estiver utilizando o cloud9
 
-## Set up a database
+## Configurando um banco de dados
 
-Há um monte de software de banco de dados diferente que pode armazenar dados para o seu site. Nós vamos usar o padrão, `sqlite3`.
+Existem vários software de banco de dados diferente que podem armazenar dados para o seu site. Nós vamos usar o padrão do Django, o `sqlite3`.
 
 Isto já está configurado nesta parte do seu arquivo `mysite/settings.py`:
 
@@ -127,7 +127,7 @@ DATABASES = {
 }
 ```
 
-Para criar um banco de dados para o nosso blog, vamos fazer o seguinte no console. Digite: `python manage.py migrate` (precisamos estar no diretório que contém o arquivo `manage.py` `djangogirls`). Se isso der certo, você deve ver algo como isto:
+Para criar um banco de dados para o nosso blog, vamos executar o seguinte comando no console. Digite: `python manage.py migrate` (precisamos estar no diretório que contém o arquivo `manage.py` `djangogirls`). Se isso der certo, você deve ver algo assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -152,7 +152,7 @@ Para criar um banco de dados para o nosso blog, vamos fazer o seguinte no consol
 
 E está pronto! Hora de iniciar o servidor web e ver se nosso site está funcionando!
 
-## Starting the web server
+## Iniciando o servidor web
 
 Você precisa estar no diretório que contém o arquivo `manage.py` (o diretório `djangogirls`). No console, nós podemos iniciar o servidor web executando o `python manage.py runserver`:
 
@@ -161,28 +161,28 @@ Você precisa estar no diretório que contém o arquivo `manage.py` (o diretóri
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Se você usa um Chromebook, execute este comando:
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-Se você estiver no Windows e o comando falhar com `UnicodeDecodeError`, use o este comando:
+Se você estiver no Windows e o comando falhar com `UnicodeDecodeError`, use o comando alternativo:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now all you need to do is check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Agora nós precisamos verificar que o nosso site está rodando. Abra seu browser (Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você utilizar) e digite o endereço:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook, you'll always visit your test server by accessing:
+Se você estiver com um Chromebook, semre visite o servidor de teste acessando:
 
 {% filename %}browser{% endfilename %}
 
@@ -193,10 +193,10 @@ Parabéns! Você criou seu primeiro site e o executou usando um servidor de web!
 
 ![Install worked!](images/install_worked.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+Enquanto o servidor estiver rodando, o prompt do terminal não estará disponível para receber novos comandos. Na realidade, o terminal permite que você escreva texto, mas não irá executar nenhum comando. Isto acontece porque o servidor bloqueia o terminal enquanto ele mesmo escuta novos comandos.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Nós revisamos como servidores web funcionam no capítulo **Como a Internet funciona**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal e execute o virtualenv. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C - botões Control e C juntos (no Windows, você pode precisar pressionar Ctrl+Break).
 
 Pronto para o próximo passo? Está na hora de criar algum conteúdo!
