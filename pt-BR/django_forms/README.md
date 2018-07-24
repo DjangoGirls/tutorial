@@ -416,11 +416,11 @@ Altere-a para:
 {% endif %}
 ```
 
-Você provavelmente está logada, então se atualizar a página, não verá nada de diferente. Carregue a página em um navegador novo ou em uma janela anônima (chamada "InPrivate" no Windows Edge), contudo, e você verá que o link não aparece, e o ícone também não!
+Você provavelmente está logada, então se atualizar a página, não verá nada de diferente. Carregue a página em um navegador novo ou em uma janela anônima (chamada "InPrivate" no Windows Edge), e então você verá que o link não aparece, e o ícone também não!
 
 ## Mais uma coisa: hora de implantar!
 
-Vamos ver se tudo isso funciona no PythonAnywhere. Tempo para outro deploy!
+Vamos ver se tudo isso funciona no PythonAnywhere. Hora de fazer outro deploy!
 
 * Primeiro, commite o seu novo código e dê o comando push para colocá-lo no Github:
 
@@ -444,6 +444,6 @@ Vamos ver se tudo isso funciona no PythonAnywhere. Tempo para outro deploy!
 
 (Lembre-se de substituir o `<your-pythonanywhere-username>` com seu username do PythonAnywhere, sem os símbolos < e >).
 
-* Finalmente, pule para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload**.
+* Finalmente, vá para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e clique **Reload**.
 
 E deve ser isso! Parabéns :)
