@@ -265,7 +265,7 @@ Você deve ter percebido que estamos estabelecendo a data de publicação antes 
 
 Isso é incrível!
 
-> Como recentemente usamos a interface de administração do Django, o sistema entende que estamos logados. Existem algumas situações que poderiam nos desligar do sistema (fechar o navegador, reiniciar banco de dados etc.). Se ao criar um post você receber erros que se referem à ausência de um usuário logado, vá até a página de admin http://127.0.0.1:8000/admin e faça login novamente. Isso vai resolver o problema temporariamente. Há um ajuste permanente esperando por você em **lição de casa: adicionar segurança no seu site!**, capítulo após o tutorial principal.
+> Como recentemente usamos a interface de administração do Django, o sistema entende que estamos logados. Existem algumas situações que poderiam nos desligar do sistema (fechar o navegador, reiniciar banco de dados etc.). Se ao criar um post você receber erros que se referem à ausência de um usuário logado, vá até a página de admin http://127.0.0.1:8000/admin e faça login novamente. Isso vai resolver o problema temporariamente. Há um ajuste permanente esperando por você em **lição de casa: adicionar segurança no seu site!**, um capítulo vem depois do tutorial principal.
 
 ![Erro de  usuário logado](images/post_create_error.png)
 
@@ -281,7 +281,7 @@ Django está tomando conta de validar se todos os campos de nosso formulário es
 
 ## Editando o formulário
 
-Agora sabemos como adicionar um novo formulário. Mas e se quisermos editar um já existente? É muito semelhante ao que fizemos. Vamos criar algumas coisas importantes rapidamente. (Se você não entender alguma coisa - você deve perguntar ao seu treinador ou veja os capítulos anteriores, já cobrimos todas essas etapas anteriormente.)
+Agora sabemos como adicionar um novo formulário. Mas e se quisermos editar um que já existe? É muito parecido com o que acabamos de fazer. Vamos criar algumas coisas importantes rapidinho. (Se você não entender alguma coisa, pergunte para a sua monitora ou veja os capítulos anteriores -- já cobrimos todas essas etapas anteriormente.)
 
 Abra `blog/templates/blog/post_detail.html` e adicione esta linha
 
