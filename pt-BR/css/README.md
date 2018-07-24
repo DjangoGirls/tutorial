@@ -1,12 +1,12 @@
 # CSS - deixe as coisas bonitas!
 
-Nosso blog ainda parece feio, certo? Está na hora de deixar ele melhor! Para isso, nós usaremos o CSS.
+Nosso blog ainda parece feio, né? Está na hora de deixar ele mais bonitinho! Para isso, nós usaremos o CSS.
 
 ## O que é CSS?
 
 Cascading Style Sheets (CSS - Folhas de Estilo em Cascata, em português) é uma linguagem utilizada para descrever o visual e a formatação de um website escrito numa linguagem de marcação (como HTML). Veja ela como uma maquiagem para a nossa página web. :)
 
-Mas nós não queremos começar do zero de novo, certo? Mais uma vez, usaremos algo que outros programadores lançaram na Internet de graça. Você sabe, reinventar a roda não é divertido.
+Mas não queremos começar do zero de novo, né? Mais uma vez, usaremos algo que outros programadores lançaram na Internet de graça. Você sabe, reinventar a roda não é divertido.
 
 ## Vamos usar o Bootstrap!
 
@@ -25,19 +25,19 @@ Para instalar o Bootstrap, você precisa adicionar isso `<head>` no seu arquivo 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Isso não adiciona nenhum arquivo ao seu projeto. Isso apenas aponta para arquivos que existem na Internet. Vá em frente, abra seu website e atualize a página. Aqui está!
+Isso não adiciona nenhum arquivo ao seu projeto, apenas aponta para arquivos que existem na Internet. Vá em frente, abra seu website e atualize a página. Aqui está!
 
 ![Figura 14.1](images/bootstrap1.png)
 
-Já está parecendo melhor!
+Já está mais bonita!
 
 ## Arquivos estáticos no Django
 
-Finalmente, vamos dar uma olhada mais de perto nessas coisas que chamamos de **arquivos estáticos**. Arquivos estáticos são todos seu CSS e imagens. Seu conteúdo não depende do contexto de requisição e será o mesmo para todo usuário.
+Finalmente, vamos dar uma olhada mais de perto nessas coisas que chamamos de **arquivos estáticos**. Arquivos estáticos são todos seu CSS e imagens. Seu conteúdo não depende do contexto de requisição e será o mesmo para todos os usuários.
 
 ### Onde colocar os arquivos estáticos para o Django
 
-Django, já sabe onde encontrar os arquivos estáticos para o app pré-instalado "admin". Agora só precisamos adicionar alguns arquivos estáticos para nosso próprio app, `blog`.
+O Django já sabe onde encontrar os arquivos estáticos para o app pré-instalado "admin". Agora só precisamos adicionar alguns arquivos estáticos para o nosso próprio app, `blog`.
 
 Fazemos isso através da criação de uma pasta chamada `static` dentro da aplicação blog:
 
