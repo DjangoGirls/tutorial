@@ -1,24 +1,24 @@
-# Como funciona a Internet
+# Como a Internet funciona
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Para leitoras em casa: este capítulo é abordado no vídeo [Como a Internet funciona](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Este capítulo é inspirado na palestra "Como a Internet funciona" de Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Apostamos que você usa a Internet todos os dias. Mas você sabe realmente o que acontece quando digita um endereço como https://djangogirls.org em seu navegador e aperta `Enter`?
 
-A primeira coisa que você precisa entender é que um site é só um monte de arquivos salvos em um disco rígido. Igual à seus filmes, músicas, ou imagens. No entanto, há uma parte que é exclusiva para sites: essa parte inclui códigos de computador chamado HTML.
+A primeira coisa que você precisa entender é que um site é só um monte de arquivos salvos em um disco rígido. Igual a seus filmes, músicas, ou imagens. No entanto, há uma parte que é exclusiva para sites: ela inclui códigos de computador chamado HTML.
 
-Se você não estiver familiarizada com a programação, pode ser difícil compreender o HTML no começo, mas seus navegadores da web (como o Chrome, Safari, Firefox, etc) amam ele. Os navegadores da Web são projetados para entender esse código, siga suas instruções e apresenta esses arquivos que seu site é feito, exatamente do jeito que você quer.
+Se você não estiver familiarizada com programação, pode ser difícil compreender o HTML no começo, mas seus navegadores da web (como o Chrome, Safari, Firefox, etc) amam ele. Os navegadores da Web são projetados para entender esse código, seguir suas instruções e apresentar esses arquivos de que seu site é feito, exatamente como você quer.
 
-Igual à todos os arquivos, os arquivos HTML precisam ser armazenados num disco rígido. Pra internet nós usamos poderosos computadores especiais chamados *servidores*. Eles não têm uma tela, o mouse ou o teclado, porque sua finalidade principal é para armazenar dados e servi-los. That's why they're called *servers* – because they *serve* you data.
+Igual a todos os arquivos, os arquivos HTML precisam ser armazenados num disco rígido. Para a internet, usamos poderosos computadores especiais chamados *servidores*. Eles não têm uma tela, um mouse ou um teclado, porque sua finalidade principal é armazenar dados e servi-los. É por isso que eles são chamados de *servidores* -- eles *servem* dados a você.
 
-OK, but you want to know how the Internet looks, right?
+OK, mas você quer saber com o quê a internet se parece, certo?
 
-Fizemos um desenho pra você! Veja:
+Fizemos um desenho para ajudar! Veja:
 
 ![Figura 1.1](images/internet_1.png)
 
-Que bagunça né? In fact it is a network of connected machines (the above-mentioned *servers*). Centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! Para ver quão complicada a internet é você pode visitar um site (http://submarinecablemap.com/) que mostra o mapa com os cabos submarinos. Aqui está um screenshot do site:
+Que bagunça, né? Na verdade é uma rede de máquinas conectadas (os *servidores* mencionados acima). Centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! Para ver quão complicada a internet é você pode visitar um site (http://submarinecablemap.com/) que mostra o mapa com os cabos submarinos. Aqui está um screenshot do site:
 
 ![Figura 1.2](images/internet_3.png)
 
