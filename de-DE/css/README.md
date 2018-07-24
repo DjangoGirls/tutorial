@@ -88,7 +88,7 @@ In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg
 
 [Auf w3schools](http://www.w3schools.com/cssref/css_selectors.asp) erfährst du mehr über CSS-Selektoren.
 
-Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die Datei `blog/templates/blog/post_list.html` öffnen und diese Zeile am Anfang ergänzen:
+Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die Datei `blog/templates/blog/post_list.html` öffnen und diese Zeile ganz oben ergänzen:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -96,16 +96,15 @@ Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu mus
 {% load static %}
 ```
 
-Wir laden hier nur statische Dateien. :-) Zwischen den Tags , direkt nach den Links zu den Bootstrap CSS Dateien, füge noch diese Zeile ein: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Wir laden hier die statischen Dateien. :) Zwischen den Tags `<head>` und `</head>`, direkt nach den Links zu den Bootstrap-Dateien, füge noch diese Zeile ein:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-
 ```
 
-Der Browser liest die Dateien in der Reihenfolge in der sie im File stehen. Darum müssen wir sicherstellen, dass die Zeile am richtigen Ort steht. Sonst könnte der Code in unserer Datei den Code in den Bootstrap Dateien überschreiben. Wir haben unserer Vorlage gerade gesagt, wo sich die CSS-Datei befindet.
+Der Browser liest die Dateien in der Reihenfolge, in der sie aufgeschrieben wurden. Darum müssen wir sicherstellen, dass die Zeile am richtigen Ort steht. Sonst könnte der Code der Bootstrap-Dateien den Code aus unserer Datei überschreiben. Wir haben also unserem Template gerade gesagt, wo sich die CSS-Datei befindet.
 
 Deine Datei sollte jetzt so aussehen:
 
