@@ -68,7 +68,7 @@ Nós não vamos nos aprofundar muito no aprendizado do CSS aqui. No final desta 
 
 Mas vamos fazer pelo menos um pouco. Vamos mudar a cor do nosso cabeçalho? Para entender as cores, os computadores usam códigos especiais. Esses códigos começam com `#` e são seguidos de 6 letras (A-F) e números (0-9). Por exemplo, o código para o azul é `#0000FF`. Você pode encontrar os códigos de diversas cores aqui: http://www.colorpicker.com/. Você pode também usar [cores predefinidas](http://www.w3schools.com/colors/colors_names.asp), como `red` e `green`.
 
-Em seu arquivo `blog/static/css/blog.css` você deve adicionar o seguinte código:
+Em seu arquivo `blog/static/css/blog.css`, adicione o seguinte código:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a` é um seletor CSS. Isto significa que estamos aplicando nossos estilos a qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, nós estamos dizendo para mudar a cor para `#FCA205`, que é laranja. Mas é claro que você pode colocar a cor que você quiser aqui!
 
-Em um arquivo CSS, nós determinamos estilos para elementos do arquivo HTML. A primeira maneira de identificar elementos é usando seus nomes. Você pode se lembrar desses nomes como as tags da seção HTML. Coisas como `a` `h1` e `body` são exemplos de nomes de elementos. Também identificamos elementos pelo atributo `class` ou o atributo `id`. Class e id são nomes que você mesma dá ao elemento. Classes definem grupos de elementos, e ids apontam para elementos específicos. Por exemplo, a tag a seguir pode ser identificada usando a tag de nome `a`, a classe `external_link` ou o id de `link_to_wiki_page`:
+Em um arquivo CSS, nós determinamos estilos para elementos do arquivo HTML. A primeira maneira de identificar elementos é usando seus nomes. Você pode se lembrar desses nomes como as tags da seção HTML. Coisas como `a` `h1` e `body` são exemplos de nomes de elementos. Também identificamos elementos pelo atributo `class` ou pelo atributo `id`. Class e id são nomes que você mesma dá ao elemento. Classes definem grupos de elementos, e ids apontam para elementos específicos. Por exemplo, a tag a seguir pode ser identificada usando a tag de nome `a`, a classe `external_link` ou o id de `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -104,7 +104,7 @@ Estamos apenas carregando arquivos estáticos aqui. :) Entre as tags `<head>` e 
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-O navegador lê os arquivos na ordem em que são apresentados, então precisamos ter certeza de que eles estão no está no lugar certo. Do contrário, o código no nosso arquivo pode ser sobrescrito pelo código dos arquivos do Bootstrap. Acabamos de dizer ao nosso template onde está o nosso arquivo CSS.
+O navegador lê os arquivos na ordem em que são apresentados, então precisamos ter certeza de que eles estão no lugar certo. Do contrário, o código no nosso arquivo pode ser sobrescrito pelo código dos arquivos do Bootstrap. Acabamos de dizer ao nosso template onde está o nosso arquivo CSS.
 
 Agora, seu arquivo deve estar assim:
 
@@ -161,9 +161,9 @@ E que tal customizar a fonte no nosso cabeçalho? Cole o seguinte na seção `<h
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-Assim como antes, cheque a ordem e a posição antes do do link para `blog/static/css/blog.css`. Esta linha importará do Google Fonts (https://www.google.com/fonts) uma fonte chamada *Lobster*.
+Assim como antes, cheque a ordem e a posição antes do link para `blog/static/css/blog.css`. Esta linha importará do Google Fonts (https://www.google.com/fonts) uma fonte chamada *Lobster*.
 
-Encontre o bloco de declaração `h1 a` (o código entre chaves `{` e `}`) no arquivo CSS `blog/static/css/blog.css`. Agora adicione a linha `font-family: 'Lobster';` entre as chaves e atualize a página:
+Encontre o bloco de declaração `h1 a` (o código entre chaves `{` e `}`) no arquivo CSS `blog/static/css/blog.css`. Agora, adicione a linha `font-family: 'Lobster';` entre as chaves e atualize a página:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -178,7 +178,7 @@ h1 a {
 
 Incrível!
 
-Como mencionado acima, o CSS tem um conceito de classes. Essas classes permitem que você nomeie uma parte do código HTML e aplique estilos apenas a esta parte sem afetar nenhuma outra. Isto pode ser super útil! Talvez você tenha duas divs que estão fazendo algo diferente (como o seu cabeçalho e seu post). Uma classe pode ajudá-la a fazê-los parecer diferentes.
+Como mencionado acima, o CSS tem um conceito de classes. Essas classes permitem que você nomeie uma parte do código HTML e aplique estilos apenas a esta parte sem afetar nenhuma outra. Isto pode ser super útil! Talvez você tenha duas divs que estão fazendo algo diferente (como o seu cabeçalho e seu post). Uma classe pode ajudá-la a diferenciá-los.
 
 Vá em frente e o nomeie algumas partes do código HTML. Adicione uma classe chamada `page-header` para o `div` que contém o cabeçalho, assim:
 
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Então inclua declarações de classes no código HTML que exibe os posts. Substitua isto:
+Então, inclua declarações de classes no código HTML que exibe os posts. No arquivo <0>blog/templates/blog/post_list. html</0>, substitua isto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
