@@ -161,25 +161,26 @@ Vielleicht können wir auch die Schrift in unserem HTML-Kopf anpassen? Füge die
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-Wie eben bereits gemacht, prüfe die Reihenfolge der Anweisungen vor dem Link `blog/static/css/blog.css`. Diese Anweisung importiert einen Font (Zeichensatz) mit Namen *Lobster* von Google Fonts (https://www.google.com/fonts). 
+Wie eben bereits gemacht, prüfe die Reihenfolge und platziere die Anweisung vor dem Link `blog/static/css/blog.css`. Sie importiert einen Font (Zeichensatz) mit Namen *Lobster* von Google Fonts (https://www.google.com/fonts).
 
-Suche den Anweisungsblock: `h1 a` (der Code zwischen den geschweiften Klammern `{` und `}`) in der CSS Datei `blog/static/css/blog.css`. Nun füge die Zeile``font-family: 'Lobster';` zwischen den geschweiften Klammern hinzu und aktualisiere die Seite:</p>
+Suche den Anweisungsblock: `h1 a` (der Code zwischen den geschweiften Klammern `{` und `}`) in der CSS Datei `blog/static/css/blog.css`. Nun füge die Zeile `font-family: 'Lobster';` zwischen den geschweiften Klammern hinzu und aktualisiere die Seite:
 
-<p>{% filename %}blog/static/css/blog.css{% endfilename %}</p>
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
-<pre><code class="css">h1 a {
+```css
+h1 a {
     color: #FCA205;
     font-family: 'Lobster';
 }
-``</pre> 
+```
 
 ![Abbildung 14.3](images/font.png)
 
 Super!
 
-Wie oben erwähnt, basiert CSS auf dem Konzept von Klassen. Dies erlaubt Dir, einen Teil des HTML Codes mit einem Namen zu versehen und nur für diesen Teil einen Stil hinzuzufügen ohne Auswirkungen auf andere Teile des Codes. Dies kann sehr hilfreich sein! Eventuell hast Du zwei divs die etwas vollkommen Verschiedenes auszeichnen (wie einen Seitentitel oder Post Beitrag). Die Klasse hilft dir sie unterschiedlich aussehen zu lassen.
+Wie oben erwähnt, basiert CSS auf dem Konzept von Klassen. Dies erlaubt dir, einen Teil des HTML Codes mit einem Namen zu versehen und nur für diesen Teil einen Style hinzuzufügen, ganz ohne Auswirkungen auf andere Teile des Codes. Das kann sehr hilfreich sein! Eventuell hast Du zwei 'div's die etwas vollkommen Verschiedenes auszeichnen (wie einen Seitentitel oder Post Beitrag). Die Klasse hilft dir, sie unterschiedlich aussehen zu lassen.
 
-Im nächsten Schritt werden wir den HTML-Code einteilen. Füge eine Klasse (class) names `page-header` dem `div` hinzu, der die Kopfzeilen (header) enthalten soll:
+Im nächsten Schritt werden wir den HTML-Code einteilen. Füge eine Klasse (class) namens `page-header` dem `div` hinzu, der die Kopfzeilen (header) enthalten soll:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -189,7 +190,7 @@ Im nächsten Schritt werden wir den HTML-Code einteilen. Füge eine Klasse (clas
 </div>
 ```
 
-Jetzt fügen wir noch eine Klasse `post` für den Blog-Inhalt (Post) dem `div` hinzu.
+Jetzt fügen wir dem `div` für den Blog-Inhalt (Post) noch eine Klasse `post` hinzu.
 
 {% filename %}blog/templates/blog/post_list{% endfilename %}
 
