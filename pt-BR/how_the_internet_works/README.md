@@ -22,26 +22,26 @@ Que bagunça, né? Na verdade é uma rede de máquinas conectadas (os *servidore
 
 ![Figura 1.2](images/internet_3.png)
 
-Fascinante, não? Mas, obviamente, não é possível ter um fio conectado a todas as máquina conectadas à internet. Logo, para alcançar uma máquina (por exemplo aquela onde https://djangogirls.org está salva), precisamos passar uma requisição por muitas máquinas diferentes.
+Fascinante, né? Mas, obviamente, não é possível ter um fio conectado a todas as máquina conectadas à internet. Logo, para alcançar uma máquina (por exemplo aquela onde https://djangogirls.org está salva), precisamos passar uma requisição por muitas máquinas diferentes.
 
 É algo assim:
 
 ![Figura 1.3](images/internet_2.png)
 
-Imagine que quando você digita http://djangogirls.org você envia uma carta que diz: "Queridas Django Girls, eu desejo ver o site djangogirls.org. Envie-o pra mim, por favor!"
+Imagine que quando você digita http://djangogirls.org você envia uma carta que diz: "Queridas Django Girls, eu desejo ver o site djangogirls.org. Envie-o para mim, por favor!"
 
-Sua carta vai para a agência dos correios mais próxima de você. Então, ela vai para outra agência um pouco mais perto do destinatário e, em seguida, para outra e outra até ser entregue. A única coisa diferente é que se você enviasse muitas cartas (*pacotes de dados*) para o mesmo lugar, elas poderiam passar por agências totalmente diferentes (*roteadores*). Isso depende de como elas são distribuídas em cada escritório.
+Sua carta vai para a agência dos correios mais próxima de você. Então, ela vai para outra agência um pouco mais perto do destinatário e, em seguida, para outra e outra até ser entregue. A única coisa diferente é que se você enviar muitas cartas (*pacotes de dados*) para o mesmo lugar, elas podem passar por agências totalmente diferentes (*roteadores*). Isso depende de como elas são distribuídas em cada agência.
 
 ![Figura 1.4](images/internet_4.png)
 
 Sim, é simples assim. Você envia mensagens e espera alguma resposta. Claro, ao invés de papel e caneta você usa bytes de dados, mas a ideia é a mesma!
 
-Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, nós usamos endereços de IP. Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para um endereço de IP. Funciona mais ou menos como as antigas listas telefônicas em que você podia procurar o número e endereço de uma pessoa que queria contactar.
+Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, na internet usamos endereços de IP. Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para um endereço de IP. Isso funciona mais ou menos como as antigas listas telefônicas em que você podia procurar o número e endereço da pessoa que queria contactar.
 
 Quando você envia uma carta, ela precisa ter certas características para ser entregue corretamente: um endereço, um selo, etc. E você usa uma linguagem que o destinatário compreende, certo? O mesmo se aplica para os *pacotes de dados* que você envia para acessar um site. Nós usamos um protocolo chamado HTTP (Hypertext Transfer Protocol).
 
 Então, basicamente, um site precisa ter um *servidor* (máquina) onde ele vive. Quando o *servidor* recebe uma *solicitação* de entrada (numa carta), ele envia em respota seu website (em outra carta).
 
-Como este é um tutorial de Django, você pode estar imaginando o que o Django faz. Quando envia uma resposta, nem sempre você quer mandar a mesma coisa para todo mundo. É muito melhor se suas cartas são personalizadas, especialmente para a pessoa que acabou de lhe escrever, né? O Django ajuda a criar essas cartas personalizadas e interessantes. :)
+Como este é um tutorial de Django, você pode estar imaginando o que o Django faz. Quando envia uma resposta, nem sempre você quer mandar a mesma coisa para todo mundo. É muito melhor se as cartas forem personalizadas, especialmente para a pessoa que acabou de nos escrever, né? O Django nos ajuda a criar essas cartas personalizadas e interessantes. :)
 
 Chega de falar, é hora de criar!
