@@ -52,11 +52,12 @@
 
 <pre><code>djangogirls
 ├───manage.py
-└───mysite
-         settings.py
-         urls.py
-         wsgi.py
-         __init__.py
+├───mysite
+│        settings.py
+│        urls.py
+│        wsgi.py
+│        __init__.py
+└───requirements.txt
 `</pre> 
 > > > 
 > > > > ** Catatan </ 0>: dalam struktur direktori Anda, Anda juga akan melihat direktori ` venv </ 1> yang telah kita buat sebelumnya.</p>
