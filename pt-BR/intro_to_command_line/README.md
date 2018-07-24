@@ -1,6 +1,6 @@
 # Introdução à linha de comando
 
-> Para os leitores em casa: este capítulo é coberto no vídeo [ Seu novo amigo: linha de comando ](https://www.youtube.com/watch?v=jvZLWhkzX-8).
+> Para as leitoras em casa: este capítulo é coberto no vídeo [ Sua nova amiga: a linha de comando ](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
 É emocionante, não?! Você vai escrever sua primeira linha de código em poucos minutos! :)
 
