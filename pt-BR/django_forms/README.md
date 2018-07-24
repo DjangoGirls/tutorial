@@ -187,7 +187,7 @@ def post_new(request):
 
 Quando enviamos o formulário, somos trazidas de volta à mesmo view, mas desta vez temos mais alguns dados no `request`, especificamente em `request.POST` (o nome não tem nada a ver com "post" de blog; tem a ver com o fato que estamos "postando" dados). Você se lembra que no arquivo HTML, nossa definição de `form` incluiu o variável `method="POST"`? Todos os campos vindos do "form" estarão disponíveis agora em `request.POST`. Não renomeie `POST` para nada diferente disso (o único outro valor válido para `method` é `GET`, mas nós não temos tempo para explicar qual é a diferença).
 
-Então em nossa *view* temos duas situações diferentes para lidar: primeiro, quando acessamos a página pela primeira vez e queremos um formulário em branco e, segundo, quando voltamos para a *view* com todos os dados do formulário que acabamos de digitar. Desse modo, precisamos adicionar uma condição (usaremos `if` para isso):
+Então em nossa *view* temos duas situações diferentes com as quais lidar: primeiro, quando acessamos a página pela primeira vez e queremos um formulário em branco e, segundo, quando voltamos para a *view* com todos os dados do formulário que acabamos de digitar. Desse modo, precisamos adicionar uma condição (usaremos `if` para isso):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-É hora de preencher os pontos `[...]`. Se `method` é `POST` então queremos construir o `PostForm` com dados do formulário, certo? Faremos como a seguir:
+É hora de preencher os pontos `[...]`. Se `method` é `POST`, queremos construir o `PostForm` com dados do formulário, certo? Faremos assim:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,9 +220,9 @@ if form.is_valid():
      post.save()
 ```
 
-Basicamente, temos duas coisas aqui: Salvamos o formulário com `form.save` e adicionados um autor(desde que não haja o campo `author` em `PostForm`, e este campo é obrigatório). `commit=False` significa que não queremos salvar o modelo de `Post` ainda - queremos adicionar o autor primeiro. Na maioria das vezes você irá usar `form.save()`, sem `commit=False`, mas neste caso, precisamos fazer isso. `post.save()` irá preservar as alterações(adicionando autor) e é criado um novo post no blog!
+Basicamente, temos duas coisas aqui: salvamos o formulário com `form.save` e adicionamos um autor (como não houve um campo `author` em `PostForm`, e este campo é obrigatório). `commit=False` significa que não queremos salvar o modelo de `Post` ainda - queremos adicionar o autor primeiro. Na maioria das vezes você irá usar `form.save()`, sem `commit=False`, mas neste caso, precisamos fazer isso. `post.save()` vai preservar as alterações (adicionando o autor) e é criado um novo post no blog!
 
-Finalmente, seria fantástico se nós pudéssemos imediatamente ir à página `post_detail` para o recém-criado post do blog, certo? Para fazer isso nós precisaremos de mais uma importação:
+Finalmente, seria fantástico se pudéssemos ir à página `post_detail`, direto para o nosso recém-criado post no blog, né? Para fazer isso, precisaremos de mais uma importação:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +230,7 @@ Finalmente, seria fantástico se nós pudéssemos imediatamente ir à página `p
 from django.shortcuts import redirect
 ```
 
-Adicione-o logo no início do seu arquivo. E agora podemos dizer: "vá para a página `post_detail` para um recém-criado post":
+Adicione isso logo no início do seu arquivo. Agora podemos dizer: "vá para a página `post_detail` para o post recém-criado":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +238,9 @@ Adicione-o logo no início do seu arquivo. E agora podemos dizer: "vá para a p�
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` é o nome da vista (view) à qual queremos ir. Lembre-se que essa *view* exige uma variável `pk`? Para passar isso nas `views` usamos `pk=post.pk`, onde post é o recém-criado post do blog!
+`post_detail` é o nome da visualização (view) à qual queremos ir. Lembra que essa *view* exige uma variável `pk`? Para passar isso para as `views`, usamos `pk=post.pk`, em que post é o recém-criado post do blog!
 
-Ok, nós falamos muito, mas provavelmente queremos ver o que toda a *view* irá parecer agora, certo?
+Ok, nós falamos muito, e agora queremos ver a cara da *view* completa, né?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,13 +259,13 @@ def post_new(request):
      return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Vamos ver se funciona. Vá para a página http://127.0.0.1:8000/post/new/, adicione um `title` e o `text`, salve... e pronto! O novo post do blog é adicionado e somos redirecionados à página de `post_detail`!
+Vamos ver se funciona. Vá para a página http://127.0.0.1:8000/post/new/, adicione um `title` e o `text`, salve... e pronto! O novo post do blog é adicionado e somos redirecionadas à página de `post_detail`!
 
 Você deve ter percebido que estamos estabelecendo a data de publicação antes de salvar o post. Mais tarde, vamos introduzir um botão de *Publicar* em **Django Girls Tutorial: Extensões**.
 
 Isso é incrível!
 
-> Como recentemente usamos a interface de administração do Django, o sistema entende que estamos logados. Existem algumas situações que poderiam levar a sermos desligados do sistema (fechar o navegador, reiniciar banco de dados etc.). Se, quando criar um post, você perceber que está recebendo erros que se referem à ausência de um usuário logado, vá até a página de admin http://127.0.0.1:8000/admin e faça login novamente. Isso vai resolver o problema temporariamente. Há um ajuste permanente esperando por você em **lição de casa: adicionar segurança no seu site!**, capítulo após o tutorial principal.
+> Como recentemente usamos a interface de administração do Django, o sistema entende que estamos logados. Existem algumas situações que poderiam nos desligar do sistema (fechar o navegador, reiniciar banco de dados etc.). Se ao criar um post você receber erros que se referem à ausência de um usuário logado, vá até a página de admin http://127.0.0.1:8000/admin e faça login novamente. Isso vai resolver o problema temporariamente. Há um ajuste permanente esperando por você em **lição de casa: adicionar segurança no seu site!**, capítulo após o tutorial principal.
 
 ![Erro de  usuário logado](images/post_create_error.png)
 
