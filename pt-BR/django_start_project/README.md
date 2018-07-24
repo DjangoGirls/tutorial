@@ -53,9 +53,9 @@ No Windows você pode rodar o seguinte comando; **não esqueça de adicionar o p
             __init__.py
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Obs**: em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `venv`, que criamos antes.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` é um script que ajuda com a gestão do site. Com ele, podemos iniciar um servidor de web no nosso computador sem instalar nada, entre outras coisas.
 
 O arquivo `settings.py` contém a configuração do seu site.
 
@@ -67,7 +67,7 @@ Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. A �
 
 Vamos fazer algumas alterações no `mysite/settings.py`. Abra o arquivo usando o editor de código que você instalou anteriormente.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Obs**: Lembre-se que o `settings.py` é um arquivo comum, como qualquer outro. Você pode abri-lo de dentro do editor de código usando as ações de menu "Arquivo-> Abrir". Assim, você deve encontrá-lo na janela usual para selecionar arquivos e abrí-lo. Ou então, é possível abrir o arquivo navegando até o diretório do djangogirls e abrindo o arquivo com o botão direito. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
 Seria bom ter a hora correta no nosso site. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
