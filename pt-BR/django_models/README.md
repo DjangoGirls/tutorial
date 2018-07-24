@@ -45,7 +45,7 @@ Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título
     published_date
     
 
-Que tipo de coisa pode ser feita com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
+Que tipo de ações pode ser feitas com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
 
 Então, nós precisaremos de um método `publicar (publish)`.
 
@@ -53,9 +53,9 @@ Como nós já sabemos o que queremos alcançar, vamos começar a modelá-lo no D
 
 ## Modelo do Django
 
-Sabendo o que um objeto é, nós criaremos um modelo no Django para a postagem do blog.
+Sabendo o que um objeto é, criamos um modelo no Django para a postagem do blog.
 
-Um modelo no Django é um tipo especial de objeto -- ele é salvo em um `banco de dados`. Um banco de dados é uma coleção de dados. O banco de dados é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. Este é o adaptador de banco de dados padrão Django -- ele vai ser o suficiente para nós neste momento.
+Um modelo no Django é um tipo especial de objeto -- ele é salvo em um `banco de dados`. Um banco de dados é uma coleção de dados. Ele é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. Este é o banco de dados padrão Django -- e ele será o suficiente neste primeiro momento.
 
 Você pode pensar em um modelo de banco de dados como uma planilha com colunas (campos) e linhas (dados).
 
@@ -73,7 +73,7 @@ Para manter tudo arrumado vamos criar um aplicativo separado dentro do nosso pro
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-Você vai notar que um novo diretório `blog` foi criado e que ele contém um vários arquivos. Algo como a lista abaixo:
+Você vai notar que um novo diretório `blog` foi criado e que ele contém vários arquivos. Algo como a lista abaixo:
 
     djangogirls
     ├── blog
@@ -152,18 +152,18 @@ Todas as linhas começando com `from` ou `import` são linhas que adicionam algu
 - `Post` é o nome do nosso modelo. Nós podemos dar um nome diferente (mas precisamos evitar caracteres especiais e espaços em branco). Sempre inicie o nome de uma classe com uma letra em maiúsculo.
 - `models.Model` significa que o Post é um modelo de Django, então o Django sabe ele que deve ser salvo no banco de dados.
 
-Agora definimos as propriedades que comentamos acima: `title`, `text`, `created_date`, `published_date` e `author`. Para fazermos isso, nós precisamos definir um tipo para cada campo (É um texto? Um número? Uma data? Uma relação com outro objeto, por exemplo, um usuário?)
+Agora definimos as propriedades que comentamos acima: `title`, `text`, `created_date`, `published_date` e `author`. Para fazer isso, é necessário definir um tipo para cada campo (É um texto? Um número? Uma data? Uma relação com outro objeto, por exemplo, um usuário?)
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `models.CharField` - é assim que definimos um texto com um número limitado de caracteres.
+- `models.TextField` - este campo é para textos sem um limite fixo. Parece ideal para o conteúdo de um blog, né?
+- `models.DateTimeField` - este é uma data e hora.
+- `models.ForeignKey` - este é um link para outro modelo.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Nós não explicaremos cada pedaço de código aqui pois isso levaria muito tempo. Você deve dar uma olhada na documentação do Django se quiser saber mais sobre campos de modelos e como definir outras coisas além das descritas acima (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+E que tal `def publish(self):`? É justamente o método `publish` que falamos anteriormente. `def` significa que se trata de uma função/método e que `publish` é seu nome. Você pode mudar o nome do método, se quiser. A regra para nomes é que usamos sempre letras minúsculas e sublinhados ao no lugar dos espaços em branco. Por exemplo, um método que calcula o preço médio poderia se chamar `calculate_average_price` (do inglês, calcular_preco_medio).
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `__str__`. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
