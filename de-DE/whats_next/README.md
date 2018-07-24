@@ -1,4 +1,4 @@
-# Was kommt als Nächstes?
+# Wie geht es weiter?
 
 Herzlichen Glückwunsch! **Du bist der Hammer!** Wir sind echt stolz! <3
 
