@@ -312,7 +312,7 @@ agora, o template estará parecido com:
 {% endblock %}
 ```
 
-Em `blog/urls.py` adicionamos esta linha:
+Em `blog/urls.py`, adicionamos esta linha:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,7 +320,7 @@ Em `blog/urls.py` adicionamos esta linha:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-Nós reutilizaremos o template `blog/templates/blog/post_edit.html`, então a última coisa que falta é uma *view*.
+Vamos reutilizar o template `blog/templates/blog/post_edit.html`, então a última coisa que falta é uma *view*.
 
 Vamos abrir `blog/views.py` e adicionar ao final do arquivo:
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
      return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Isso é quase exatamente igual a nossa view de `post_new`, certo? Mas não totalmente. Primeira coisa: passamos um parâmetro extra `pk` da url. Em seguida: pegamos o modelo `Post` que queremos editar com `get_object_or_404 (Post, pk=pk)` e então, quando criamos um formulário, passamos este post como uma `instância`, tanto quando salvamos o formulário…
+Isso é quase igual à nossa view de `post_new`, né? Mas não totalmente. Primeira coisa: passamos um parâmetro extra `pk` da url. Em seguida, pegamos o modelo `Post` que queremos editar com `get_object_or_404 (Post, pk=pk)` e então, quando criamos um formulário, passamos este post como uma `instância` tanto quando salvamos o formulário…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ Isso é quase exatamente igual a nossa view de `post_new`, certo? Mas não total
 form = PostForm(request.POST, instance=post)
 ```
 
-... como quando nós apenas abrimos um formulário para editar esse post:
+... como quando apenas abrimos um formulário para editar esse post:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -362,19 +362,19 @@ Ok, vamos testar se funciona! Vamos para a página `post_detail`. Deve haver um 
 
 ![Botão editar](images/edit_button2.png)
 
-Quando você clicar nele você verá o formulário com a nossa postagem:
+Quando você clicar nesse botão, você verá o formulário com a nossa postagem:
 
 ![Editando o formulário](images/edit_form2.png)
 
-Sinta-se livre para mudar o título ou o texto e salvar as mudanças!
+Sinta-se livre para mudar o título ou o texto e salvar as alterações!
 
 Parabéns! Sua aplicação está ficando cada vez mais completa!
 
-Se precisar de mais informações sobre formulários do Django você deve ler a documentação: https://docs.djangoproject.com/en/2.0/topics/forms/
+Se precisar de mais informações sobre formulários do Django, leia a documentação: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Segurança
 
-Ser capaz de criar novos posts apenas clicando em um link é ótimo! Mas, no momento, qualquer um que visitar nosso site poderá criar um novo post, e isso provavelmente não é algo que você quer. Vamos fazer o botão aparece para você, mas para mais ninguém.
+Ser capaz de criar novos posts apenas clicando em um link é ótimo! Mas nesse momento, qualquer um que visitar nosso site poderá criar um novo post, e você isso provavelmente não quer isso. Vamos fazer com que o botão apareça apenas para você e para mais ninguém.
 
 Em `blog/templates/blog/base.html`, procure nossa `div` `page-header` e a tag de link que você colocou mais cedo. Deve se parecer com:
 
@@ -384,7 +384,7 @@ Em `blog/templates/blog/base.html`, procure nossa `div` `page-header` e a tag de
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Nós iremos incluir outra tag `{% if %}` que irá apresentar o link somente para os usuários que estiverem logados como admin. No momento, é apenas você! Mude a tag `<a>` para que fique assim:
+Vamos incluir outra tag `{% if %}` que irá apresentar o link somente para os usuários que estiverem logados como admin. No momento, é apenas você! Mude a tag `<a>` para que fique assim:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,9 +394,9 @@ Nós iremos incluir outra tag `{% if %}` que irá apresentar o link somente para
 {% endif %}
 ```
 
-Este `{% if %}` irá fazer com que o link seja enviado ao navegador caso o usuário que requisitou a página esteja logado. Isso não protege completamente a criação de um novo post, mas é um bom começo. Vamos abordar mais sobre segurança nas próximas lições.
+Este `{% if %}` fará com que o link seja enviado ao navegador se o usuário que requisitou a página estiver logado. Isso não protege completamente a criação de um novo post, mas é um bom começo. Vamos falar mais sobre segurança nas próximas lições.
 
-Lembra do ícone Editar que acabamos de adicionar à nossa página de detalhes? Nós também queremos adicionar o mesmo la, para que outras pessoas não sejam capazes de editar as mensagens existentes.
+Lembra do ícone Editar que acabamos de adicionar à nossa página de detalhes? Queremos fazer a mesma coisa com ele para que outras pessoas não possam editar as mensagens já existentes.
 
 Abra `blog/templates/blog/post_detail.html` e encontre esta linha:
 
@@ -416,7 +416,7 @@ Altere-a para:
 {% endif %}
 ```
 
-Uma vez que você está provavelmente logado, se você atualizar a página, não verá nada de diferente. Carregue a página em um navegador novo ou em uma janela anônima (chamada "InPrivate" no Windows Edge), contudo, e você verá que o link não aparece, e o ícone também não!
+Você provavelmente está logada, então se atualizar a página, não verá nada de diferente. Carregue a página em um navegador novo ou em uma janela anônima (chamada "InPrivate" no Windows Edge), contudo, e você verá que o link não aparece, e o ícone também não!
 
 ## Mais uma coisa: hora de implantar!
 
