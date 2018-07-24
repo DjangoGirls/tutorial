@@ -121,11 +121,11 @@ Viva! Quer ver se funcionou?
 
 ### Adicione mais postagens
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+Agora você pode se divertir um pouco e adicionar algumas postagens para ver como funciona. Adicione mais uns 2 ou 3 posts pelo Python e siga para a próxima parte.
 
 ### Filtrar objetos
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. Nós usaremos `filter` em vez de `all` em `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Agora o nosso trecho de código ficará como o seguinte:
+Um recurso importante dos QuerySets é a possibilidade de filtrá-los. Digamos que queremos encontrar todos as postagens escritas pelo usuário ola. Para isto, usamos `filter` ao invés de `all` em `Post.objects.all()`. Entre parênteses indicamos quais as condições precisam ser atendidas por um post para acabar dentro do nosso queryset. No nosso caso é `author` que é igual a `me`. A maneira de escrever isso no Django é: `author=me`. Agora o nosso trecho de código ficará assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -134,7 +134,7 @@ A big part of QuerySets is the ability to filter them. Let's say we want to find
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+Ou talvez nós queremos ver todos os posts que contenham a palavra 'title' no campo `title`?
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,9 +143,9 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Nota** Existem dois caracteres de sublinhado (`_`) entre `title` e `contains`. Django ORM usa esta sintaxe para separar nomes de campo ("title") e operações ou filtros ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Obs** Existem dois caracteres de sublinhado (`_`) entre `title` e `contains`. O ORM do Django utiliza esta sintaxe para separar nomes de campo ("title") e operações ou filtros (como "contains"). Se você usar apenas um sublinhado, obterá um erro como "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+Você também pode obter uma lista de todos os posts publicados. Fazemos isso filtrando todos os posts com uma `published_date` definida no passado:
 
 {% filename %}command-line{% endfilename %}
 
@@ -155,7 +155,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+Infelizmente, o post que nós criamos pelo console do Python não está publicado ainda. Podemos mudar isso! Primeiro, busque a instância do post que queremos publicar:
 
 {% filename %}command-line{% endfilename %}
 
@@ -163,7 +163,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-E então publicá-lo com o nosso método de `publish`:
+Então vamos publicá-lo com o nosso método `publish`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,7 +171,7 @@ E então publicá-lo com o nosso método de `publish`:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+Agora, busque a lista de posts publicados novamente (aperte a seta para cima algumas vezes e pressione `enter`):
 
 {% filename %}command-line{% endfilename %}
 
@@ -202,14 +202,14 @@ Você também pode inverter a ordem adicionando `-` no início:
 
 ### Encadeando QuerySets
 
-Você também pode combinar QuerySets **encadeando** elas:
+Você também pode combinar QuerySets **encadeando**-os:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 <QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
-Isso é muito poderoso e permite que você crie consultas bastante complexas.
+Isso é muito poderoso e permite que criar consultas bastante complexas.
 
 Legal! Você já está pronto para a próxima parte! Para fechar o terminal digite:
 
