@@ -40,7 +40,7 @@ Nun können wir bestimmen, welche(s) Feld(er) unser Formular besitzen soll. Wir 
 
 Und das war's schon! Jetzt müssen wir das Formular nur noch in einem *view* benutzen und im Template darstellen.
 
-Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, einen View und ein Template.
+Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, eine View und ein Template.
 
 ## Link auf eine Seite mit dem Formular
 
