@@ -46,11 +46,12 @@ No Windows você pode rodar o seguinte comando; **não esqueça de adicionar o p
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
 > **Obs**: em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `venv`, que criamos antes.
