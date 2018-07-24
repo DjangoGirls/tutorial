@@ -46,11 +46,12 @@
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
 > **ملاحظة** في بنية الدليل، سترى أيضا `venv` الذي أنشأناه من قبل.
