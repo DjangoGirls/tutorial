@@ -61,7 +61,7 @@ Als Letztes fehlt noch, dass wir das `posts`-QuerySet dem Template übergeben. W
 
 Beachte, dass wir eine *Variable* für unser QuerySet erstellt haben: `posts`. Das ist sozusagen der Name unseres QuerySets. Ab jetzt bezeichnen wir das QuerySet mit diesem Namen.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. Wir müssen diesen einen Namen geben (wir verwenden einfach wieder `'posts'`). :) Es sollte nun so aussehen: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+In der `render`-Funktion haben wir schon einen Parameter `request` (also alles, was wir vom User über das Internet bekommen) und einen Template-Namen (`'blog/post_list.html'`) angegeben. The last parameter, `{}`, is a place in which we can add some things for the template to use. Wir müssen diesen einen Namen geben (wir verwenden einfach wieder `'posts'`). :) Es sollte nun so aussehen: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
 Am Ende sollte deine `blog/views.py` Datei folgendermaßen aussehen:
 
