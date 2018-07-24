@@ -46,11 +46,12 @@ A `django-admin.py` egy script, ami könyvtárakat és fájlokat hoz létre neke
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
 > **Note**: in your directory structure, you will also see your `venv` directory that we created before.
