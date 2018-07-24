@@ -4,9 +4,9 @@ Neste capítulo você vai aprender como Django se conecta ao banco de dados e co
 
 ## O que é um QuerySet?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+Um QuerySet (conjunto de busca) é, em essência, uma lista de objetos de um dado modelo. QuerySet permite que você leia os dados à partir de uma base de dados, filtre e ordene.
 
-É mais fácil aprender por exemplos. Vamos tentar?
+É mais fácil aprender por exemplos. Vamos lá?
 
 ## O Shell do Django
 
@@ -26,7 +26,7 @@ O resultado deve ser:
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+Agora você está no console interativo do Django. Ele é como o prompt do Python só que com umas mágicas adicionais :). Você pode usar todos os comandos do Python aqui também, é claro.
 
 ### Todos os objetos
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Oops! Um erro apareceu. Ele nos diz que não existe algo chamado Post. É verdade -- nós esquecemos de importá-lo primeiro!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Isso é simples: importamos o modelo `Post` de dentro do `blog.models`. Vamos tentar mostrar todas as postagens novamente:
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,11 +58,11 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+É uma lista dos posts que criamos mais cedo! Nós criamos estes posts utilizando a interface do Django admin. No entanto, agora queremos criar novos posts utilizando Python, como fazemos isso?
 
 ### Criando um objeto
 
-É assim que você cria um objeto Post no banco de dados:
+É assim que se cria um objeto Post no banco de dados:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ This is a list of the posts we created earlier! We created these posts using the
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+Mas aqui temos um ingrediente faltando: `me`. Precisamos passar uma instância do modelo `User` como autor. Como fazemos isso?
 
 Primeiro vamos importar o modelo User:
 
@@ -89,7 +89,7 @@ Quais usuários temos no nosso banco de dados? Experimente isso:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now:
+É o superusuário que criamos anteriormente! Vamos obter uma instância de usuário agora:
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,9 +97,9 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+Como podemos ver, agora usamos o método `get` para selecionar um `User` com o campo `username` igual a 'ola'. Claro, você tem que adaptar este comando ao seu nome de usuário.
 
-Agora nós finalmente podemos criar nosso post:
+Agora finalmente podemos criar nosso post:
 
 {% filename %}command-line{% endfilename %}
 
