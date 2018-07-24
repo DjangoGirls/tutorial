@@ -860,7 +860,7 @@ oi()
 
 Ok, nossa primeira função está pronta!
 
-Você pode estar se perguntando por que escrevemos o nome da função no final do código. O Python lê e executa o código de cima para baixo, então para usar a nossa função, devemos chamá-la no final. So in order to use our function, we have to re-write it at the bottom.
+Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a nossa função, devemos chamá-la no final. So in order to use our function, we have to re-write it at the bottom.
 
 Vamos executá-la agora e ver o que acontece:
 
