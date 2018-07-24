@@ -202,7 +202,7 @@ E agora, adicione uma classe `post` em sua `div` que contém um post de blog.
 </div>
 ```
 
-Agora adicionaremos blocos de declaração a seletores diferentes. Seletores começando com `.` se referem às classes. Existem vários tutoriais e explicações excelentes sobre CSS na Web que podem te ajudar a entender melhor o código a seguir. Por enquanto, basta copiar e colá-lo em seu arquivo `blog/static/css/blog.css`:
+Agora, adicionaremos blocos de declaração a seletores diferentes. Seletores começando com `.` se referem às classes. Existem vários tutoriais e explicações excelentes sobre CSS na Web que podem te ajudar a entender melhor o código a seguir. Por enquanto, basta copiar e colá-lo em seu arquivo `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Então envolva o código HTML que exibe os posts com declarações de classes. Substitua isto:
+Então inclua declarações de classes no código HTML que exibe os posts. Substitua isto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -295,10 +295,10 @@ Salve esses arquivos e atualize seu site.
 
 ![Figura 14.4](images/final.png)
 
-Uhuul! Parece incrível, certo? Olhe para o código que acabamos de colar para encontrar os locais onde adicionamos classes no HTML e as usamos no CSS. Onde você faria a mudança se você quisesse a data na cor turquesa?
+Uhuu! Está lindo, né? Olhe para o código que acabamos de colar para encontrar os locais onde adicionamos classes no HTML e as usamos no CSS. Onde você faria uma mudança se você quisesse a data na cor turquesa?
 
-Não tenha medo de mexer um pouco com esse CSS e tentar mudar algumas coisas. Brincar com o CSS pode ajudá-lo a entender o que diferentes coisas estão fazendo. Se você quebrar algo, não se preocupe - você sempre pode desfazê-lo!
+Não tenha medo de mexer um pouco com esse CSS e tentar mudar algumas coisas. Brincar com o CSS pode ajudá-lo a entender o que diferentes coisas estão fazendo. Se quebrar algo, não se preocupe - você sempre pode desfazer!
 
-Nós realmente recomendamos realizar este curso gratuito on-line: [Curso de HTML & CSS do Codeacademy](https://www.codecademy.com/tracks/web). Isso pode ajudá-la a aprender tudo sobre como fazer seus sites mais bonito com CSS.
+Nós realmente recomendamos fazer este curso gratuito on-line: [Curso de HTML & CSS do Codeacademy](https://www.codecademy.com/tracks/web). Isso pode ajudá-la a aprender tudo sobre como fazer seus sites mais bonito com CSS.
 
 Pronta para o próximo capítulo?! :)
