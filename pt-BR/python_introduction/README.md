@@ -852,7 +852,7 @@ Uma função é um sequência de instruções que o Python deve executar. Cada f
 
 ```python
 def oi():
-    print('Oi!')
+    print('Olá!')
     print('Tudo bem?')
 
 oi()
@@ -867,7 +867,7 @@ Vamos executá-la agora e ver o que acontece:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Oi!
+    Olá!
     Tudo bem?
     
 
@@ -875,44 +875,44 @@ Observação: se não funcionou, não entre em pânico! A saída vai te ajudar a
 
 - Se você recebeu uma mensagem `NameError`, provavelmente foi um erro de digitação, então confira se você usou o mesmo nome ao criar a função com `def hi()` e quando a chamou no final com `hi()`.
 - Se recebeu uma mensagem `IdentationError`, confira se as duas linhas de `print` têm o mesmo recuo no começo: o Python precisa que o código dentro da função esteja bem alinhado.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- Se a função não retornou nenhum resultado, certifique-se de que o útlimo `oi()`*não* esteja edentado - se ele estiver, essa linha vai se tornar parte da função e o Python não vai receber nenhum comando para executar.
 
-Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'oi' para quem o executa - com um o nome dessa pessoa:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
+def oi(nome):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Como você pode ver, agora nossa função tem um parâmetro chamado `nome`:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(name):
-    if name == 'Ola':
-        print('Hi Ola!')
-    elif name == 'Sonja':
-        print('Hi Sonja!')
+def oi(nome):
+    if nome == 'Ola':
+        print('Olá Ola!')
+    elif nome == 'Sonja':
+        print('Olá Sonja!')
     else:
-        print('Hi anonymous!')
+        print('Olá estranho!')
 
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Não esqueça: a função `print` está endentada com 4 espaços depois do `if`. Isso é necessário porque a função só rodará se a condição for verdadeira. Vamos ver como isso funciona:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
     File "python_intro.py", line 10, in <module>
-      hi()
-    TypeError: hi() missing 1 required positional argument: 'name'
+      oi()
+    TypeError: oi() missing 1 required positional argument: 'nome'
     
 
-Oops, um erro. Felizmente, Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `hi()` (aquela que declaramos) tem um argumento obrigatório (chamado `name`) e que nós esquecemos de passá-lo ao chamar a função. Let's fix it at the bottom of the file:
+Oops, um erro. Felizmente, Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `oi()` (aquela que definimos) tem um argumento obrigatório (chamado `nome`) e que nós esquecemos de passá-lo ao chamar a função. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -941,14 +941,14 @@ E rode novamente:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hi Sonja!
+    Oi Sonja!
     
 
-Agora, o que você acha que aconteceria se você escrevesse um outro nome lá (que não seja "Ola" ou "Sonja")? Faça um teste e verifique se você estava certo. Ele deve imprimir o seguinte:
+Agora, o que você acha que aconteceria se escrevesse um outro nome lá (que não seja "Ola" ou "Sonja")? Faça um teste e verifique se você estava certo. Ele deve imprimir o seguinte:
 
 {% filename %}command-line{% endfilename %}
 
-    Hi anonymous!
+    Olá estranho!
     
 
 Isto é incrível, não? Dessa maneira você não precisa se repetir cada vez que for mudar o nome da pessoa que a função pretende cumprimentar. And that's exactly why we need functions – you never want to repeat your code!
