@@ -5,7 +5,7 @@ O Git é um "sistema de controle de versão" usado por muitos programadores. Est
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Você pode baixar o Git em [git-scm.com](https://git-scm.com/). Você pode clicar em "next" em todos os passos, exceto um; no passo intitulado "Ajustando o PATH do seu ambiente" (em inglês "Adjusting your PATH environment"), escolha "Use Git e ferramentas Unix opcionais do Prompt de Comando do Windows" (em inglês "Use Git and optional Unix tools from the Windows Command Prompt"), que é a opção mais abaixo. Além disso, o padrão está ótimo. "Checkout Windows-style, commit Unix-style line endings" está bom.
+Você pode baixar o Git em [git-scm.com](https://git-scm.com/). Clique em "next" em todos os passos, exceto em um: no passo intitulado "Ajustando o PATH do seu ambiente" (em inglês "Adjusting your PATH environment"), escolha "Use Git e ferramentas Unix opcionais do Prompt de Comando do Windows" (em inglês "Use Git and optional Unix tools from the Windows Command Prompt"), que é a opção mais abaixo. Além disso, o padrão está ótimo. "Checkout Windows-style, commit Unix-style line endings" está bom.
 
 Não se esqueça de reiniciar o prompt de comando ou o powershell depois que a instalação terminar com sucesso. <!--endsec-->
 
@@ -14,7 +14,7 @@ data-collapse=true ces-->
 
 Baixe o Git em [git-scm.com](https://git-scm.com/) e siga as instruções.
 
-> **NOta** Se você estiver rodando o OS X 10.6, 10.7, ou 10.8, você precisará instalar a versão do git daqui: [Instalado Git para o OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **Observação:** Se você estiver rodando o OS X 10.6, 10.7, ou 10.8, você precisará instalar essa versão do git: [Instalado Git para o OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
