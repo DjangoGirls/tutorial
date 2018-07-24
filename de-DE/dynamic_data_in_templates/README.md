@@ -35,7 +35,7 @@ Und nun? Um die tatsächlichen Blogposts des `Post`-Models zu erhalten, brauchen
 
 Dir sollte schon ungefähr klar sein, wie QuerySets funktionieren. Wir haben darüber im Kapitel [Django ORM und QuerySets](../django_orm/README.md) gesprochen.
 
-So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
+Wir wollen nun also eine Liste von Blogposts ausgeben, wobei die Posts publiziert und nach `published_date` sortiert sein sollen, oder? Das haben wir bereits im Kapitel QuerySets gemacht!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -43,7 +43,7 @@ So now we want published blog posts sorted by `published_date`, right? We alread
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`, but don't forget to first add `from django.utils import timezone`:
+Nun setzen wir dieses Stück Code in der Datei `blog/views.py` in die Funktion `def post_list(request)` ein, aber vergiss nicht, zuerst `from django.utils import timezone` hinzufügen:
 
 {% filename %}blog/views.py{% endfilename %}
 
