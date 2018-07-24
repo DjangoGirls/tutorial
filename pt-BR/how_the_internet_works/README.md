@@ -36,12 +36,12 @@ Sua carta vai para a agência dos correios mais próxima de você. Então, ela v
 
 Sim, é simples assim. Você envia mensagens e espera alguma resposta. Claro, ao invés de papel e caneta você usa bytes de dados, mas a ideia é a mesma!
 
-Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, nós usamos endereços de IP. Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para um endereço de IP. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, nós usamos endereços de IP. Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para um endereço de IP. Funciona mais ou menos como as antigas listas telefônicas em que você podia procurar o número e endereço de uma pessoa que queria contactar.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. Você também usa uma linguagem que o receptador compreende, certo? O mesmo se aplica para os *pacotes de dados* que você enviar para ver um site. Nós usamos um protocolo chamado HTTP (Hypertext Transfer Protocol).
+Quando você envia uma carta, ela precisa ter certas características para ser entregue corretamente: um endereço, um selo, etc. E você usa uma linguagem que o destinatário compreende, certo? O mesmo se aplica para os *pacotes de dados* que você envia para acessar um site. Nós usamos um protocolo chamado HTTP (Hypertext Transfer Protocol).
 
-Então, basicamente, quando você tem um site, você precisa ter um *servidor* (máquina) onde ele vive. Quando o *servidor* recebe uma *solicitação* de entrada (numa carta), ele envia seu website (em outra carta).
+Então, basicamente, um site precisa ter um *servidor* (máquina) onde ele vive. Quando o *servidor* recebe uma *solicitação* de entrada (numa carta), ele envia em respota seu website (em outra carta).
 
-Since this is a Django tutorial, you might ask what Django does. Quando envia uma resposta nem sempre você quer enviar a mesma coisa para todo mundo. É muito melhor se suas cartas são personalizadas, especialmente para a pessoa que acabou de escrever para você, certo? O Django ajuda você a criar essas personalizadas e interessantes cartas. :)
+Como este é um tutorial de Django, você pode estar imaginando o que o Django faz. Quando envia uma resposta, nem sempre você quer mandar a mesma coisa para todo mundo. É muito melhor se suas cartas são personalizadas, especialmente para a pessoa que acabou de lhe escrever, né? O Django ajuda a criar essas cartas personalizadas e interessantes. :)
 
-Enough talk – time to create!
+Chega de falar, é hora de criar!
