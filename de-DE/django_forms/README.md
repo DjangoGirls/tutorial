@@ -103,18 +103,17 @@ Der finale Code sieht dann so aus:
 
 ```python
 from django.urls import path 
-from . import views
-
-urlpatterns = [
-    path('', views.post_list, name='post_list'),
-    path('post/<int:pk>/', views.post_detail, name='post_detail'),
-    path('post/new/', views.post_new, name='post_new'),
+from . import views 
+urlpatterns = [     
+    path('', views.post_list, name='post_list'),     
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),     
+    path('post/new/', views.post_new, name='post_new'), 
 ]
 ```
 
-Nach dem Neuladen der Site sehen wir einen `AttributeError`, weil wir noch keinen `post_new` View eingefügt haben. Fügen wir ihn gleich hinzu!
+Nach dem Neuladen der Site sehen wir einen `AttributeError`, weil wir noch keine `post_new` View eingefügt haben. Fügen wir sie gleich hinzu!
 
-## Der post_new View
+## Die post_new View
 
 Jetzt wird es Zeit, die `blog/views.py` Datei zu öffnen und die folgenden Zeilen zu den anderen `from` Zeilen hinzuzufügen:
 
@@ -124,7 +123,7 @@ Jetzt wird es Zeit, die `blog/views.py` Datei zu öffnen und die folgenden Zeile
 from .forms import PostForm
 ```
 
-Und dann unseren *View*:
+Und dann unsere *View*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,7 +133,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Um ein neues `PostForm` zu erstellen, rufen wir die `PostForm()` Methode auf und übergeben sie an das Template. Wir kommen gleich nochmal zu dem *View* zurück, aber jetzt erstellen wir schnell ein Template für das Form.
+Um ein neues `PostForm` zu erstellen, rufen wir `PostForm()` auf und übergeben es an das Template. Wir kommen gleich nochmal zu dem *View* zurück, aber jetzt erstellen wir schnell ein Template für das Form.
 
 ## Template
 
@@ -143,7 +142,7 @@ Wir müssen eine Datei `post_edit.html` im Verzeichnis `blog/templates/blog` ers
 * Wir müssen das Formular anzeigen. Wir können das zum Beispiel mit einem einfachen `{{ form.as_p }}` tun.
 * Die Zeile oben muss von einem HTML-Formular-Tag eingeschlossen werden `<form method="POST">...</form>`.
 * Wir benötigen einen `Save`-Button. Wir erstellen diesen mit einem HTML-Button: `<button type="submit">Save</button>`.
-* Und schließlich fügen wir nach dem öffnenden `<form ...>` Tag `{% raw %}{% csrf_token %}{% endraw %}` hinzu. Das ist sehr wichtig, da es deine Formulare sicher macht! Wenn du diesen Teil vergisst, wird sich Django beim Speichern des Formulars beschweren:
+* Und schließlich fügen wir nach dem öffnenden `<form ...>` Tag `{% raw %}{% csrf_token %}{% endraw %}` hinzu. Das ist sehr wichtig, da es deine Formulare sicher macht! Wenn du diesen Teil vergisst, wird sich Django beim Speichern des Formulars beschweren.
 
 ![CSFR Forbidden page](images/csrf2.png)
 
@@ -171,11 +170,11 @@ Aber Moment! Wenn du in das `title`- oder `text`-Feld etwas eintippst und versuc
 
 Nichts! Wir landen wieder auf der selben Seite und unser Text ist verschwunden... und kein neuer Post wurde hinzugefügt. Was lief denn hier schief?
 
-Die Antwort ist: nichts. Wir müssen einfach noch etwas mehr Arbeit in unseren *view* stecken.
+Die Antwort ist: nichts. Wir müssen einfach noch etwas mehr Arbeit in unsere *View* stecken.
 
 ## Speichern des Formulars
 
-Öffne `blog/views.py` erneut. Derzeit ist alles, was wir in dem View `post_new` haben, das hier:
+Öffne `blog/views.py` erneut. Derzeit ist alles, was wir in der View `post_new` haben, das hier:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,7 +184,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Wenn wir das Formular übermitteln, werden wir zur selben Ansicht weitergeleitet, aber dieses Mal haben wir mehr Daten in `request`, genauer in `request.POST` (der Name hat nichts zu tun mit einem "Blogpost", sondern damit dass wir Daten "posten"). Erinnerst du dich daran, dass in der HTML-Datei unsere `<form>` Definition die Variable `method="POST"` hatte? Alle Felder aus dem Formular sind jetzt in `request.POST`. Du solltest `POST` nicht umbenennen (der einzige andere gültige Wert für `method` ist `GET`, wir wollen hier jetzt aber nicht auf den Unterschied eingehen).
+Wenn wir das Formular übermitteln, werden wir zur selben Ansicht weitergeleitet, aber dieses Mal haben wir mehr Daten in `request`, genauer in `request.POST` (der Name hat nichts zu tun mit einem "Blogpost", sondern damit, dass wir Daten "posten"). Erinnerst du dich daran, dass in der HTML-Datei unsere `<form>` Definition die Variable `method="POST"` hatte? Alle Felder aus dem Formular sind jetzt in `request.POST`. Du solltest `POST` nicht umbenennen (der einzige andere gültige Wert für `method` ist `GET`, wir wollen hier jetzt aber nicht auf den Unterschied eingehen).
 
 Somit müssen wir uns in unserer *View* mit zwei verschiedenen Situationen befassen: erstens, wenn wir das erste Mal auf die Seite zugreifen und ein leeres Formular wollen und zweitens, wenn wir zur *View* mit allen soeben ausgefüllten Formular-Daten zurück wollen. Wir müssen also eine Bedingung hinzufügen (dafür verwenden wir `if`):
 
