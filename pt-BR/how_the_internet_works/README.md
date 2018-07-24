@@ -18,25 +18,25 @@ Fizemos um desenho para ajudar! Veja:
 
 ![Figura 1.1](images/internet_1.png)
 
-Que bagunça, né? Na verdade é uma rede de máquinas conectadas (os *servidores* mencionados acima). Centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! Para ver quão complicada a internet é você pode visitar um site (http://submarinecablemap.com/) que mostra o mapa com os cabos submarinos. Aqui está um screenshot do site:
+Que bagunça, né? Na verdade é uma rede de máquinas conectadas (os *servidores* mencionados acima). São centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! Para ver o quão complicada a internet é você pode visitar um site (http://submarinecablemap.com/) que mostra o mapa com dos cabos submarinos. Aqui está um screenshot do site:
 
 ![Figura 1.2](images/internet_3.png)
 
-Fascinante, não? Mas, obviamente, não é possível ter um fio conectado a toda máquina ligada na internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Fascinante, não? Mas, obviamente, não é possível ter um fio conectado a todas as máquina conectadas à internet. Logo, para alcançar uma máquina (por exemplo aquela onde https://djangogirls.org está salva), precisamos passar uma requisição por muitas máquinas diferentes.
 
-Se parece com isso:
+É algo assim:
 
 ![Figura 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+Imagine que quando você digita http://djangogirls.org você envia uma carta que diz: "Queridas Django Girls, eu desejo ver o site djangogirls.org. Envie-o pra mim, por favor!"
 
-Sua carta vai para a agência dos correios mais próxima de você. Então ele vai para outro que é um pouco mais perto de seu destinatário e, em seguida, a outra e outra até que é entregue ao seu destino. A única coisa é que se você enviar muitas cartas (*pacotes de dados*) para o mesmo lugar, eles poderiam passar por correios totalmente diferentes (*roteadores*). Isso depende de como eles são distribuídos em cada escritório.
+Sua carta vai para a agência dos correios mais próxima de você. Então, ela vai para outra agência um pouco mais perto do destinatário e, em seguida, para outra e outra até ser entregue. A única coisa diferente é que se você enviasse muitas cartas (*pacotes de dados*) para o mesmo lugar, elas poderiam passar por agências totalmente diferentes (*roteadores*). Isso depende de como elas são distribuídas em cada escritório.
 
 ![Figura 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+Sim, é simples assim. Você envia mensagens e espera alguma resposta. Claro, ao invés de papel e caneta você usa bytes de dados, mas a ideia é a mesma!
 
-Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, nós usamos endereços IP. Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para um endereço IP. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, nós usamos endereços de IP. Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para um endereço de IP. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
 When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. Você também usa uma linguagem que o receptador compreende, certo? O mesmo se aplica para os *pacotes de dados* que você enviar para ver um site. Nós usamos um protocolo chamado HTTP (Hypertext Transfer Protocol).
 
