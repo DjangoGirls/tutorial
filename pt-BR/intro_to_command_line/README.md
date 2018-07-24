@@ -422,8 +422,8 @@ Aqui vai uma lista de alguns comandos úteis:
 
 Esses são apenas alguns dos comandos que você pode rodar na sua linha de comando, mas não vamos usar mais do que isso hoje.
 
-Se você estiver curioso, [ss64.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
+Se você estiver curiosa, [ss64.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
 
-## Pronto?
+## Pronta?
 
 Vamos mergulhar no Python!
