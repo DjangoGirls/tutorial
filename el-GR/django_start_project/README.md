@@ -46,11 +46,12 @@
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
 > **Σημείωση**: Στην δομή καταλόγου σας, θα δείτε επίσης τον κατάλογο σας `εικονικό περιβάλλον` που δημιουργήσαμε προηγουμένως.
