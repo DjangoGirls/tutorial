@@ -2,17 +2,17 @@
 
 # Amplie sua aplicação
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+Já concluímos todos os passos necessários para a criação do nosso site: sabemos como criar um modelo, uma url, uma view e um template. Também sabemos como deixá-lo bonitinho.
 
-Time to practice!
+Hora de praticar!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+A primeira coisa que precisamos em nosso blog é, obviamente, uma página para mostrar uma postagem, né?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+Já temos um modelo de `Post`, então não precisamos adicionar nada ao `models.py`.
 
 ## Criando um link para detalhes de um post
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Vamos começar adicionando um link dentro do arquivo `blog/templates/blog/post_list.html`. Por enquanto, ele deve se parecer com isto: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -30,7 +30,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
+{% raw %}Queremos um link no título do post dentro da página de lista de posts apontando para a página de detalhes do post respectivo. Vamos mudar `<h1><a href="">{{ post.title }}</a></h1>` e adicionar um link para a página de detalhe:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,7 +38,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %}Hora de explicar o misterioso `{% url 'post_detail' pk=post.pk %}`. Como você deve suspeitar, a notação de `{% %}` significa que estamos usando as tags de template do Django. Dessa vez usamos uma que cria uma URL para nós!{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
