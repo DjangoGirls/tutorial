@@ -56,18 +56,19 @@ Ve onu `.gitignore` ismi ile "djangogirls" dizinine kaydedin.
 
 {% filename %}komut-satırı{% endfilename %}
 
-    $ git status 
-    On branch master 
+    $ git status
+    On branch master
     
     Initial commit
     
     Untracked files:
-      (use "git add <dosya>..." to include in what will be committed)
+      (use "git add <file>..." to include in what will be committed)
     
-             .gitignore
-             blog/
-             manage.py
-             mysite/ 
+            .gitignore
+            blog/
+            manage.py
+            mysite/
+            requirements.txt
     
     nothing added to commit but untracked files present (use "git add" to track)
     
@@ -185,7 +186,7 @@ Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızd
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
-    blog  db.sqlite3  manage.py  mysite  static
+    blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
     __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
     templates  tests.py  urls.py  views.py
