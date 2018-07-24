@@ -197,7 +197,7 @@ else:
     form = PostForm()
 ```
 
-Es wird Zeit die Lücken zu füllen `[...]`. Falls die `Methode` `POST` ist, wollen wir das `PostForm` mit Daten vom Formular abfüllen. Oder? Das machen wir folgendermassen:
+Es wird Zeit, die Lücken zu füllen `[...]`. Falls die `Methode` `POST` ist, wollen wir das `PostForm` mit Daten vom Formular erstellen. Oder? Das machen wir folgendermaßen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -221,7 +221,7 @@ if form.is_valid():
 
 Im Grunde passieren hier zwei Dinge: Wir speichern das Formular mit `form.save` und wir fügen einen Autor hinzu (da es bislang kein `author` Feld in der `PostForm` gab und dieses Feld notwendig ist). `commit=False` bedeutet, dass wir das `Post` Model noch nicht speichern wollen - wir wollen erst noch den Autor hinzufügen. Meistens wirst du `form.save()` ohne `commit=False` benutzen, aber in diesem Fall müssen wir es so tun. `post.save()` wird die Änderungen sichern (den Autor hinzufügen) und ein neuer Blogpost wurde erstellt!
 
-Wäre es nicht grossartig, wenn wir direkt zu der `post_detail` Seite des neu erzeugten Blog Posts gehen könnten? Um dies zu tun benötigen wir noch einen zusätzlichen Import:
+Wäre es nicht grossartig, wenn wir direkt zu der `post_detail` Seite des neu erzeugten Blog Posts gehen könnten? Um dies zu tun, benötigen wir noch einen zusätzlichen Import:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -237,9 +237,9 @@ Füge dies direkt am Anfang der Datei hinzu. Jetzt können wir endlich sagen: "G
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` ist der Name unseres Views, zu dem wir springen wollen. Erinnerst du dich, dass dieser *view* einen `pk` benötigt? Um diesen an den View weiterzugeben, benutzen wir `pk=post.pk`, wobei `post` unser neu erstellter Blogpost ist!
+`post_detail` ist der Name unserer View, zu der wir springen wollen. Erinnerst du dich, dass diese *View* einen `pk` benötigt? Um diesen an die View weiterzugeben, benutzen wir `pk=post.pk`, wobei `post` unser neu erstellter Blogpost ist!
 
-Ok, wir haben jetzt eine ganze Menge geredet, aber du willst bestimmt sehen, wie die gesamte *view* aussieht, richtig?
+Ok, wir haben jetzt eine ganze Menge geredet, aber du willst bestimmt sehen, wie die gesamte *View* aussieht, richtig?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -258,7 +258,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Schauen wir mal, ob es funktioniert. Gehe zur Seite http://127.0.0.1:8000/post/new/, füge einen `title` und `text` hinzu und speichere es...voilà! Der neue Blogpost wird hinzugefügt und wir werden auf die `Post_detail` Seite umgeleitet!
+Schauen wir mal, ob es funktioniert. Gehe zur Seite http://127.0.0.1:8000/post/new/, füge einen `title` und `text` hinzu und speichere es...voilà! Der neue Blogpost wird hinzugefügt und wir werden auf die `post_detail` Seite umgeleitet!
 
 Du hast vielleicht bemerkt, dass wir das Veröffentlichungsdatum festlegen, bevor wir den Post veröffentlichen. Später werden wir einen *publish button* in **Django Girls Tutorial: Extensions** einführen.
 
@@ -280,7 +280,7 @@ Django kümmert sich darum sicherzustellen, dass alle Felder in unserem Formular
 
 ## Formular bearbeiten
 
-Jetzt wissen wir, wie ein neues Formular hinzugefügt wird. Aber was ist, wenn wir ein bereits bestehendes bearbeiten wollen? Das funktioniert so ähnlich wie das, was wir gerade getan haben. Lass uns sofort ein paar wichtige Dinge kreieren. (Falls du etwas nicht verstehst, solltest du deinen Coach fragen oder in den vorherigen Kapiteln nachschlagen, da wir all die Schritte bereits behandelt haben.)
+Jetzt wissen wir, wie ein neues Formular hinzugefügt wird. Aber was ist, wenn wir ein bereits bestehendes bearbeiten wollen? Das funktioniert so ähnlich wie das, was wir gerade getan haben. Lass uns schnell ein paar wichtige Dinge kreieren. (Falls du etwas nicht verstehst, solltest du deinen Coach fragen oder in den vorherigen Kapiteln nachschlagen, da wir all die Schritte bereits behandelt haben.)
 
 Öffne `blog/templates/blog/post_detail.html` und füge folgende Zeile hinzu
 
