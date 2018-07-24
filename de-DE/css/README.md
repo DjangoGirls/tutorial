@@ -82,19 +82,17 @@ h1 a {
 
 In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg, HTML-Elemente zu identifizieren, ist der Name des Elements. Du erinnerst dich vielleicht an diese Namen, die wir als 'Tags' im HTML Kapitel bezeichnet haben. Zum Beispiel sind `a`, `h1` und `body` solche Elementnamen. Wir identifizieren Elemente auch über die Attribute `class` oder `id`. Klassen (`class`) und IDs (`id`) sind Namen, die du den Elementen selbst gibst. Klassen definieren dabei Gruppen von Elementen und IDs verweisen auf bestimmte Elemente. Du könntest zum Beispiel den folgenden Tag anhand des Elementnamens `a`, der Klasse `external_link` oder der ID `link_to_wiki_page` identifizieren:
 
-```html
-<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-```
+<pre><code class="html"><a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+</code></pre>
 
-[Auf w3schools](http://www.w3schools.com/cssref/css_selectors.asp) erfährst du mehr über CSS-Selektoren.
+<p><a href="http://www.w3schools.com/cssref/css_selectors.asp">Auf w3schools</a> erfährst du mehr über CSS-Selektoren.</p>
 
-Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die Datei `blog/templates/blog/post_list.html` öffnen und diese Zeile ganz oben ergänzen:
+<p>Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die Datei <code>blog/templates/blog/post_list.html</code> öffnen und diese Zeile ganz oben ergänzen:</p>
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
 
-```html
-{% load static %}
-```
+<pre><code class="html">{% load static %}
+</code></pre>
 
 Wir laden hier die statischen Dateien. :) Zwischen den Tags `<head>` und `</head>`, direkt nach den Links zu den Bootstrap-Dateien, füge noch diese Zeile ein:
 
@@ -202,12 +200,57 @@ Jetzt fügen wir dem `div` für den Blog-Inhalt (Post) noch eine Klasse `post` h
 </div>
 ```
 
-Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit `.` anfangen, beziehen sich auf Klassen im HTML. Es gibt im Internet viele gute Tutorials die dir CSS weiter erläutern und helfen können den folgenden Code besser zu verstehen. Für den Anfang reicht es aus, folgenden Text in deine `blog/static/css/blog.css`-Datei zu kopieren:
+Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit `.` anfangen, beziehen sich auf Klassen im HTML. Es gibt im Internet viele gute Tutorials, die dir CSS weiter erläutern und helfen können, den folgenden Code besser zu verstehen. Für den Anfang reicht es aus, folgenden Text in deine `blog/static/css/blog.css`-Datei zu kopieren:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-.page-header {     background-color: #ff9400;     margin-top: 0;     padding: 20px 20px 20px 40px; } .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {     color: #ffffff;     font-size: 36pt;     text-decoration: none; } .content {     margin-left: 40px; } h1, h2, h3, h4 {     font-family: 'Lobster', cursive; } .date {     color: #828282; } .save {     float: right; } .post-form textarea, .post-form input {     width: 100%; } .top-menu, .top-menu:hover, .top-menu:visited {     color: #ffffff;     float: right;     font-size: 26pt;     margin-right: 20px; } .post {     margin-bottom: 70px; } .post h1 a, .post h1 a:visited {     color: #000000; }
+.page-header {     
+  background-color: #ff9400;     
+  margin-top: 0;     
+  padding: 20px 20px 20px 40px; 
+} 
+
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {     
+  color: #ffffff;     
+  font-size: 36pt;     
+  text-decoration: none; 
+} 
+
+.content {     
+  margin-left: 40px; 
+} 
+
+h1, h2, h3, h4 {     
+  font-family: 'Lobster', cursive; 
+} 
+
+.date {     
+  color: #828282; 
+} 
+
+.save {     
+  float: right; 
+} 
+
+.post-form textarea, .post-form input {     
+  width: 100%; 
+} 
+
+.top-menu, .top-menu:hover, .top-menu:visited {     
+  color: #ffffff;     
+  float: right;     
+  font-size: 26pt;     
+  margin-right: 20px; 
+} 
+
+.post {     
+  margin-bottom: 70px; 
+} 
+
+.post h1 a, .post h1 a:visited {     
+  color: #000000; 
+}
 ```
 
 Der HTML-Code, der für die Anzeige der Blogposts verantwortlich ist, soll durch Klassen erweitert werden. Ersetze den folgenden Code:
@@ -250,10 +293,10 @@ Speichere die geänderten Dateien und aktualisiere die Webseite.
 
 ![Abbildung 14.4](images/final.png)
 
-Juhuu! Sieht super aus, oder? Schau dir den Code an den wir gerade eingefügt haben. Da siehst du wo wir überall Klassen zu den HTML Objekten hinzugefügt haben um sie in CSS zu referenzieren. Wo würdest du eine Änderung machen um das Datum in Türkis anzuzeigen?
+Juhuu! Sieht super aus, oder? Schau dir den Code an, den wir gerade eingefügt haben. Da siehst du, wo wir überall Klassen zu den HTML Objekten hinzugefügt haben, um sie in CSS zu referenzieren. Wo würdest du eine Änderung machen, um das Datum in Türkis anzuzeigen?
 
-Hab keine Angst, etwas mit dieser CSS Datei herumzuspielen und versuche ein paar Dinge zu ändern. Mit CSS herumzuspielen kann dir helfen zu verstehen was die verschiedenen Dinge genau machen. Mach dir keine Sorgen wenn etwas kaputt geht, du kannst deine Änderungen immer rückgängig machen!
+Hab keine Angst, etwas mit dieser CSS Datei herumzuspielen und versuche, ein paar Dinge zu ändern. Mit CSS herumzuspielen, kann dir helfen zu verstehen, was die verschiedenen Dinge genau machen. Mach dir keine Sorgen, wenn etwas kaputt geht, du kannst deine Änderungen immer rückgängig machen!
 
-Wir empfehlen diesen kostenlosen [Codeacademy HTML & CSS Kurs](https://www.codecademy.com/tracks/web). Er wird dir helfen deine Webseiten mit CSS schöner zu gestalten.
+Wir empfehlen diesen kostenlosen [Codeacademy HTML & CSS Kurs](https://www.codecademy.com/tracks/web). Er wird dir helfen, deine Webseiten mit CSS schöner zu gestalten.
 
 Bereit für das nächste Kapitel? :)
