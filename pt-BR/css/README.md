@@ -1,6 +1,6 @@
 # CSS - deixe tudo mais bonito!
 
-Nosso blog ainda parece feio, né? Está na hora de deixar ele mais bonitinho! Para isso, nós usaremos o CSS.
+Nosso blog ainda está um pouco feio, né? Está na hora de deixar ele mais bonitinho! Para isso, nós usaremos o CSS.
 
 ## O que é CSS?
 
