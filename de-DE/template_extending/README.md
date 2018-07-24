@@ -104,7 +104,7 @@ Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_
 
 Dieser Teil unseres Templates soll nun das Basis-Template erweitern. Wir müssen daher Block-Tags ergänzen!
 
-{% raw %}Deine Block Tags müssen mit den Tags in der `base.html`-Datei übereinstimmen. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. So hier:
+{% raw %}Deine Block Tags müssen mit den Tags in der `base.html`-Datei übereinstimmen. Du möchtest auch, dass der ganze Code dieser Datei mit eingeschlossen wird. Um das zu erreichen, umschließt du ihn mit `{% block content %}` und `{% endblock %}`. So hier:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ Dieser Teil unseres Templates soll nun das Basis-Template erweitern. Wir müssen
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Nur eine Sache noch. Wir müssen die beiden Templates natürlich miteinander verknüpfen. Darum geht es ja bei der Template Erweiterung! Dafür ergänzen wir einen Tag für Erweiterung (extends tag) ganz oben in der Datei. So hier:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -144,4 +144,4 @@ Only one thing left. We need to connect these two templates together. This is wh
 
 Das war's! Probier aus, ob deine Website noch richtig funktioniert. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Wenn du einen Fehler `TemplateDoesNotExist` erhältst, dann heißt das, es gibt keine `blog/base.html` Datei und `runserver` läuft in der Konsole. Halte ihn an (durch Drücken von Ctrl+C – Control und die C Taste gleichzeitig) und starte ihn neu, in dem du den Befehl `python manage.py runserver` ausführst.
