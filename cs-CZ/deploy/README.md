@@ -56,18 +56,20 @@ Je vhodné použít příkaz `git status` před použitím příkazu `git add` n
 {% filename %}command-line{% endfilename %}
 
     $ git status
-     On branch master
+    On branch master
     
-     Initial commit 
+    Initial commit
     
     Untracked files:
-       (use "git add <file>..." to include in what will be committed)
-             .gitignore
-             blog/
-             manage.py
-             mysite/
+      (use "git add <file>..." to include in what will be committed)
     
-     nothing added to commit but untracked files present (use "git add" to track)
+            .gitignore
+            blog/
+            manage.py
+            mysite/
+            requirements.txt
+    
+    nothing added to commit but untracked files present (use "git add" to track)
     
 
 A nakonec uložíme naše změny. Přejdi do konzole a spusť tyto příkazy:
@@ -183,7 +185,7 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
-    blog  db.sqlite3  manage.py  mysite  static
+    blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
     __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
     templates  tests.py  urls.py  views.py
