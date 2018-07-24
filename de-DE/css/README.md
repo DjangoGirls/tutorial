@@ -78,9 +78,9 @@ h1 a {
 }
 ```
 
-`h1 a` ist ein CSS-Selektor. Das bedeutet, dass wir unsere Styles auf alle `a` Elemente innerhalb von einem `h1` Element anwenden. Also wenn wir so etwas wie `<h1><a href="">link</a></h1>`, der `h1 a` stil wird gelten. In diesem Fall sagen wir, dass es seine Farbe in `#FCA205` ändern soll, was für Orange steht. Du kannst hier natürlich deine eigene Farbe angeben!
+`h1 a` ist ein CSS-Selektor. Das bedeutet, dass wir unsere Styles auf alle `a` Elemente innerhalb von einem `h1` Element anwenden. Wenn wir also etwas haben wie: `<h1><a href="">link</a></h1>` wird der `h1 a` Style angewendet. In diesem Fall sagen wir, dass die Farbe in `#FCA205` geändert werden soll, was für Orange steht. Du kannst hier natürlich deine eigene Farbe angeben!
 
-In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg HTML-Elemente zu identifizieren ist der Name des Elements. Du erinnerst dich vielleicht an diese Namen als 'Tags' aus dem HTML Kapitel. Zum Beispiel sind `a`, `h1` und `body` solche Elementnamen. Wir identifizieren Elemente auch über die Attribute `class` oder `id`. Klassen (`class`) und IDs (`id`) sind Namen, die du den Elementen selbst gibst. Klassen definieren dabei Gruppen von Elementen und IDs verweisen auf bestimmte Elemente. Du könntest zum Beispiel den folgenden Tag anhand des Elementnamen `a`, der Klasse `external_link` oder der Id `link_to_wiki_page` identifizieren:
+In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg, HTML-Elemente zu identifizieren, ist der Name des Elements. Du erinnerst dich vielleicht an diese Namen, die wir als 'Tags' im HTML Kapitel bezeichnet haben. Zum Beispiel sind `a`, `h1` und `body` solche Elementnamen. Wir identifizieren Elemente auch über die Attribute `class` oder `id`. Klassen (`class`) und IDs (`id`) sind Namen, die du den Elementen selbst gibst. Klassen definieren dabei Gruppen von Elementen und IDs verweisen auf bestimmte Elemente. Du könntest zum Beispiel den folgenden Tag anhand des Elementnamens `a`, der Klasse `external_link` oder der ID `link_to_wiki_page` identifizieren:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -88,9 +88,9 @@ In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg
 
 [Auf w3schools](http://www.w3schools.com/cssref/css_selectors.asp) erfährst du mehr über CSS-Selektoren.
 
-Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die folgende Datei öffnen: `blog/templates/blog/post_list.html` 
+Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die Datei `blog/templates/blog/post_list.html` öffnen und diese Zeile am Anfang ergänzen:
 
-und in dieser Datei folgende Zeile am Anfang einfügen: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load static %}
