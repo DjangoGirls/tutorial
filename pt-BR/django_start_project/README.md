@@ -14,35 +14,35 @@ Os nomes de alguns arquivos e diretórios são muito importantes para o Django. 
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+No MacOS ou no console do Linux, você pode rodar o seguinte comando; **não esqueça de adicionar o ponto `.` no final**
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é uma referência para isso).
+> O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é um atalho para referenciar este diretório).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Bos** Quando digitar o comando acima, lembre-se de digitar apenas a parte que inicia em `django-admin`. A parte `(myvenv) ~/djangogirls$` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você for digitar seus comandos.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+No Windows você pode rodar o seguinte comando; **não esqueça de adicionar o ponto `.` no final**:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é uma referência para isso).
+> O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é um atalho para referenciar este diretório).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Bos** Quando digitar o comando acima, lembre-se de digitar apenas a parte que inicia em `django-admin.exe`. A parte `(myvenv) C:\Users\Name\djangogirls>` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você for digitar seus comandos.
 
 <!--endsec-->
 
-`Django-admin` é um script que irá criar os diretórios e arquivos para você. Agora, você deve ter um diretório estrutura que se parece com isso:
+`django-admin` é um script que irá criar os diretórios e arquivos para você. Agora, você deve ter um diretório estrutura que se parece com isso:
 
     djangogirls
     ├───manage.py
