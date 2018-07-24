@@ -858,9 +858,9 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Ok, nossa primeira função está pronta!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Você pode estar se perguntando por que escrevemos o nome da função no final do código. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
 Let's run this now and see what happens:
 
