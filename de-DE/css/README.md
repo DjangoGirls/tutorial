@@ -1,6 +1,6 @@
 # CSS - mach es hübsch!
 
-Unser Blog sieht immer noch ziemlich unfertig aus, oder? Zeit das zu ändern! Dafür nutzen wir CSS.
+Unser Blog sieht immer noch ziemlich unfertig aus, oder? Zeit, das zu ändern! Dafür nutzen wir CSS.
 
 ## Was ist CSS?
 
@@ -10,15 +10,15 @@ Aber wir wollen nicht nochmal bei Null anfangen, oder? Einmal mehr werden wir et
 
 ## Lass uns Bootstrap verwenden!
 
-Bootstrap ist eines der bekanntesten HTML- und CSS-Frameworks für die Entwicklung von schönen Websites: https://getbootstrap.com/
+Bootstrap ist eines der bekanntesten HTML- und CSS-Frameworks für die Entwicklung von schönen Webseiten: https://getbootstrap.com/
 
 Es wurde ursprünglich von ProgrammiererInnen bei Twitter geschrieben. Heute wird es von Freiwilligen aus der ganzen Welt weiterentwickelt!
 
 ## Bootstrap installieren
 
-Um Bootstrap zu installieren, müssen Sie das hinzufügen, um Ihre `<head>`in Ihre `Html`-Datei:
+Um Bootstrap zu installieren, musst du Folgendes in den `<head>` deiner `.html`-Datei einfügen:
 
-{% filename %}blog/templates/blog/post_list{% endfilename %}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
@@ -33,7 +33,7 @@ Sie sieht jetzt schon viel schöner aus!
 
 ## Statische Dateien in Django
 
-Schlussendlich werden wir einen genaueren Blick auf die Dinge werfen, die wir bisher **statische Dateien** genannt haben. Statische Dateien sind alle deine CSS- und Bilddateien. Ihr Inhalt hängt nicht vom Requestkontext ab sondern gilt für alle Benutzer gleichermassen.
+Schlussendlich werden wir einen genaueren Blick auf die Dinge werfen, die wir bisher **statische Dateien** genannt haben. Statische Dateien sind alle deine CSS- und Bilddateien. Ihr Inhalt hängt nicht vom Requestkontext ab, sondern gilt für alle Benutzer gleichermassen.
 
 ### Wohin kommen die statischen Dateien für Django
 
