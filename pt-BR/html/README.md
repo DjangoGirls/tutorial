@@ -2,13 +2,13 @@
 
 Você pode se perguntar: e o que é um template?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Template é um arquivo que nós podemos reutilizar para apresentar diferentes informações em um formato consistente – por exemplo, você pode usar um template para te ajudar a escrever uma carta, pois mesmo que cada carta contenha mensagens diferentes e ser endereçada a pessoas diferentes, elas estarão compartilhando o mesmo formato.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+O formato do template do Django é descrito em uma linguagem chamada HTML (esse é o mesm HTML que mencionamos no primeiro capítulo **Como a Internet funciona**).
 
 ## O que é HTML?
 
-HTML é um código interpretado pelo seu navegador - como Chromo, Firefox ou Safari - para exibir uma página web ao usuário.
+HTML é um código interpretado pelo seu navegador - como Chrome, Firefox ou Safari - para exibir uma página web ao usuário.
 
 HTML significa "HyperText Markup Language". **HiperText** significa que é um tipo de texto que suporta hiperlinks entre páginas. **Marcação** nada mais é que marcar um documento com códigos que dizem para alguém (nesse caso, o navegador web) como a página deverá ser interpretada. Código em HTML é feito com **tags**, cada uma começando com `<` e terminando com `>`. Estas tags representam **elementos de marcação**.
 
@@ -16,20 +16,20 @@ HTML significa "HyperText Markup Language". **HiperText** significa que é um ti
 
 Criar um template significa criar um arquivo de template. Tudo é um arquivo, certo? Provavelmente você já deve ter notado isso.
 
-Os templates são salvos no diretório `blog/templates`. Logo, crie um diretório chamado `templates` dentro do diretório do seu blog. Em seguida, crie outro diretório chamado `blog` dentro da diretório templates:
+Os templates são salvos no diretório `blog/templates`. Assim, crie um diretório chamado `templates` dentro do diretório do seu blog. Em seguida, crie outro diretório chamado `blog` dentro da diretório templates:
 
     blog
     └───templates
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(Você deve estar se perguntando porque nós precisamos de dois diretórios chamados `blog` - como você descobrirá mais para frente, essa é uma convenção que facilita a nossa vida quando as coisas começarem a ficar mais complicadas.)
 
-E agora nós criamos o arquivo `post_list.html` (deixe-o em branco por agora) dentro do diretório `blog/templates/blog`.
+E agora nós criamos o arquivo `post_list.html` (deixe-o em branco por enquanto) dentro do diretório `blog/templates/blog`.
 
 Veja como o nosso site está se parecendo agora: http://127.0.0.1:8000/
 
-> Se você ainda tem um erro `TemplateDoesNotExist`, tente reiniciar o seu servidor. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Se você ainda tem um erro `TemplateDoesNotExist`, tente reiniciar o seu servidor. Entre na linha de comando, interrompa o servidor pressionando Ctrl+C (Control seguido da tecla C, juntas) e reinicie-o rodando `python manage.py runserver`.
 
 ![Figura 11.1](images/step1.png)
 
@@ -48,16 +48,16 @@ Adicione a seguinte linha dentro do template:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Como nosso site se parece agora? Visite a página descobrir: http://127.0.0.1:8000/
 
 ![Figura 11.2](images/step3.png)
 
 Funcionou! Bom trabalho :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Como você pode ver, todo o conteúdo de um website se encontra entre a tag de início `<html>` e entre a tag de fim `</html>`
+* A tag mais básica, `<html>`, estará sempre no começo de qualquer página da web, assim como, `</html>` sempre estará no fim. Como você pode ver, todo o conteúdo de um website se encontra entre a tag de início `<html>` e entre a tag de fim `</html>`
 * `<p>` é a tag que denomina parágrafos; `</p>` determina o fim de cada parágrafo
 
-## Head and body
+## "Head" e "body"
 
 Cada página HTML também é dividida em dois elementos: **head** (cabeça) e **body** (corpo.
 
@@ -65,7 +65,7 @@ Cada página HTML também é dividida em dois elementos: **head** (cabeça) e **
 
 * **body** é um elemento que contém tudo o que é exibido como parte de uma página de um site.
 
-Nós usamos a tag `<head>` para dizer ao navegador sobre as configurações da página. Por sua vez, a tag `<body>` diz ao navegador o que há de verdade na página.
+Nós usamos a tag `<head>` para dizer ao navegador sobre as configurações da página. Por sua vez, a tag `<body>` diz ao navegador qual é o conteúdo de fato da página.
 
 For example, you can put a web page title element inside the `<head>`, like this:
 
