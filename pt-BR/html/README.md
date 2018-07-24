@@ -67,7 +67,7 @@ Cada página HTML também é dividida em dois elementos: **head** (cabeça) e **
 
 Nós usamos a tag `<head>` para dizer ao navegador sobre as configurações da página. Por sua vez, a tag `<body>` diz ao navegador qual é o conteúdo de fato da página.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+Por exemplo, você pode incluir o elemento título de uma página web dentro da tag `<head>`. Veja:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -93,46 +93,46 @@ Provavelmente você já deve ter notado que cada tag de abertura casa com uma *t
 
 É como colocar coisas dentro de caixas. Você tem uma grande caixa, `<html></html>`; dentro dela há `<body></body>`, sendo que esta ainda contém caixas menors: `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Você precisa seguir essas regras de *fechamento* de tags, e de *aninhamento* de elementos - se você não fizer isso, o navegador provavelmente não interpretará seu código da maneira correta e sua página será exibida erroneamente.
 
-## Customize seu template
+## Personalize seu template
 
-Agora você pode se divertir um pouco tentando customizar o seu template! Aqui estão algumas tags úteis para isso:
+Agora você pode se divertir um pouco tentando personalizar o seu template! Aqui estão algumas tags úteis para isso:
 
-* `<h1>A heading</h1>` for your most important heading
+* `<h1>Um título</h1>` para o título da seção principal exibido na página
 * `<h2>Um sub-título</h2>` para um título um nível abaixo
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
+* `<h3>Um sub-sub-título</h3>` ... e por aí vai, até `<h6>`
+* `<p>Um parágrafo de texto</p>`
 * `<em>texto</em>` enfatiza seu texto
 * `<strong>text</strong>` enfatiza fortemente seu texto
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<br>` quebra a linha (você não pode digitar nada dentro da tag br e ela não possui uma tag de fechamento correspondente)
 * `<a href="https://djangogirls.org">link</a>` cria um link
 * `<ul><li>primeiro item</li><li>segundo item</li></ul>` cria uma lista, exatamente como essa!
 * `<div></div>` define uma seção da página
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Aqui vai um exemplo de um template completo; copie e cole dentro de `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Blog Django Girls</title>
     </head>
     <body>
         <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
+            <h1><a href="/">Blog Django Girls</a></h1>
         </div>
 
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
+            <p>publicado: 14.06.2014, 12:14</p>
+            <h2><a href="">Meu primeiro post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
         </div>
 
         <div>
-            <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
+            <p>publicado: 14.06.2014, 12:14</p>
+            <h2><a href="">Meu segundo post</a></h2>
             <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
         </div>
     </body>
@@ -141,14 +141,14 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
 Nós criamos três seções `div` aqui.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* O primeiro elemento `div` possui o título do nosso blog - é um título que contêm um link
+* Os outros dois elementos `div` possuem nossas postagens com a data de publicação, `h2` com o título clicável da postagem e dois `p`s (parágrafos) de texto, um para a data e outro para o texto da postagem.
 
 Isso nos dá o seguinte efeito:
 
 ![Figura 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay! Mas, até agora, nosso template mostra **sempre a mesma informação** - sendo que, anteriormente, nós falávamos sobre templates como uma maneira para exibir informações **diferentes** em um **mesmo formato**.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
