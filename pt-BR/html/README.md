@@ -150,15 +150,15 @@ Isso nos dá o seguinte efeito:
 
 Yaaay! Mas, até agora, nosso template mostra **sempre a mesma informação** - sendo que, anteriormente, nós falávamos sobre templates como uma maneira para exibir informações **diferentes** em um **mesmo formato**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+O que nós realmente queremos fazer é exibir as postagens reais que foram adicionadas no Django admin - e isso é o que faremos em seguida.
 
 ## Mais uma coisa: implantação (deploy)!
 
 Seria bom ver tudo isto na Internet, certo? Vamos fazer outro deploy no PythonAnywhere:
 
-### Commit, and push your code up to GitHub
+### Commit, e dê push para subir seu código no GitHub
 
-Primeiro de tudo, vamos ver que arquivos foram modificados desde que nós fizemos a última implantação (execute esses comandos localmente, não no PythonAnywhere):
+Antes de tudo, vamos ver que arquivos foram modificados desde que nós fizemos a última implantação (execute esses comandos localmente, não no PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
@@ -174,14 +174,14 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 > **Nota** `..--all` significa que `git` também irá reconhecer se você tiver excluído arquivos (por padrão, ele só reconhece arquivos novos/modificados). Lembre-se também (do capítulo 3) que `.` significa o diretório atual.
 
-Antes de nós fazermos o upload de todos os arquivos, chequemos o que o `git` enviará (todos os arquivos que o `git` enviará deverão agora aparecer em verde):
+Antes de fazermos o upload de todos os arquivos, vamos verificar quais arquivos o `git` enviará (todos os arquivos marcados para upload pelo `git` aparecerão em verde):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Estamos quase lá! Agora é hora de dizer a ele para salvar essa modificação em seu histórico. Nós daremos a ele uma "mensagem de commit" onde nós descrevemos as modificações que fizemos. Você pode escrever o que você quiser agora, mas será mais útil se você escrever algo descritivo, então você poderá se lembrar das coisas que fez no futuro.
+Estamos quase lá! Agora é hora de dizer ao git para salvar essa modificação em seu histórico. Daremos a ele uma "mensagem de commit" onde descrevemos as modificações que foram feitas. Você pode escrever o que você quiser agora, mas é mais útil se você escrever algo descritivo para que possa se lembrar das coisas que fez no futuro.
 
 {% filename %}command-line{% endfilename %}
 
@@ -190,7 +190,7 @@ Estamos quase lá! Agora é hora de dizer a ele para salvar essa modificação e
 
 > **Note** Certifique-se que você usou aspas duplas para delimitar a mensagem do commit.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
 
 {% filename %}command-line{% endfilename %}
 
@@ -208,10 +208,10 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Lembre-se de substituir o `<your-pythonanywhere-username>` com seu username do PythonAnywhere, sem os símbolos < e >).
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **Files tab** and view your code on PythonAnywhere.
+E veja seu código sendo baixado. Se você quiser verificar que ele já baixou, pode ir para a **aba Files** e ver seu código no PythonAnywhere.
 
-* Finalmente, pule para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em seu aplicativo web.
+* Finalmente, pule para a aba [Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em seu aplicativo.
 
 Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
