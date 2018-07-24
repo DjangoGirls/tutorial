@@ -46,11 +46,12 @@ Vo Windowse spusti tento príkaz; **nezabudni pridať bodku `.` na konci**:
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
 > **Poznámka**: adresárovej štruktúre, uvidíš `venv` adresár, ktorý sme vytvorili.
