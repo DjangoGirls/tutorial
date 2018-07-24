@@ -46,11 +46,12 @@ Ang `django-admin.py` ay isang script na maglilikha ng mga directory at mga file
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
 > **Paalala**: sa iyong directory structure, makikita mo rin ang iyong `venv` na directory na nilikha natin kanina.
