@@ -1,16 +1,16 @@
 # Modelos do Django
 
-Agora o que queremos criar é algo que armazene todos os posts em nosso blog. Mas para podermos fazer isto temos que falar um pouco sobre coisas chamadas `objects`.
+Queremos criar algo que armazene todos os posts em nosso blog. Mas para fazer isto temos que falar um pouco sobre `objects`.
 
 ## Objetos
 
-Existe um conceito na programação chamado `programação orientada à objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, a gente pode modelar as coisas e definir como elas interagem umas com as outras.
+Existe um conceito em programação chamado `programação orientada à objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, a gente pode modelar as coisas e definir como elas interagem umas com as outras.
 
 Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos lhe dar um exemplo.
 
-Se quisermos modelar um gato, criaremos um objeto `Gato` que tem propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, se fosse um gato de rua, essa propriedade poderia ser vazia).
+Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade seria vazia).
 
-E então o `Gato` tem algumas ações: `ronronar`, `arranhar` ou `alimentar` (no qual vamos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades, como `sabor`).
+`Gato` também realiza algumas ações: `ronronar`, `arranhar` ou `alimentar`-se (no qual podemos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades, como `sabor`).
 
     Gato
     --------
@@ -28,13 +28,13 @@ E então o `Gato` tem algumas ações: `ronronar`, `arranhar` ou `alimentar` (no
     sabor
     
 
-Então, basicamente, a ideia é descrever coisas reais no código com propriedades(chamadas de `propriedades do objeto`) e ações (chamadas de `métodos`).
+A ideia básica é descrever coisas reais em código a partir de suas propriedades (chamadas de `atributos`) e ações (chamadas de `métodos`).
 
-Como nós iremos modelar as postagens do blog então? Queremos construir um blog, certo?
+Como iremos modelar as postagens do blog então? Queremos construir um blog, certo?
 
-Nós precisamos responder as questões: O que é um post de blog? Que propriedades ele deve ter?
+Para isto, precisamos responder as questões: O que é um post de blog? Que propriedades (atributos) ele deve ter?
 
-Bem, com certeza nosso blog precisa de alguma postagem com o seu conteúdo e um título, certo? Também seria legal saber quem escreveu – então precisamos de um autor. Finalmente, queremos saber quando a postagem foi criada e publicada. Para ficar chique, vamos fazer em inglês.
+Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título, certo? Também seria legal saber quem escreveu – então precisamos de um autor. Finalmente, queremos saber quando a postagem foi criada e publicada. Para ficar chique, vamos fazer em inglês.
 
     Post
     --------
