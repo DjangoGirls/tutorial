@@ -41,19 +41,19 @@ Django weiss schon wo die statischen Dateien für die integrierte "admin" App zu
 
 Dies tun wir, indem wir einen Ordner namens `static` in der Blog-App erstellen:
 
-    djangogirls
-    ├── blog
-    |     ├── migrationen
-    |     ├── statisch
-    |     └── vorlagen
-    └── meineseite
+    djangogirls 
+    ├── blog 
+    │ ├── migrations 
+    │ ├── static 
+    │ └── templates 
+    └── mysite
     
 
-Django findet automatisch jede datei mit dem namen "static" in jeder ihrer apps ordner. Danach wird er in der lage sein ihr Inhalt als statische dateien zu benutzen.
+Django wird automatisch alle 'static' Ordner in deinen Apps finden und die Dateien darin als statische Dateien nutzen.
 
 ## Deine erste CSS-Datei!
 
-Lassen Sie uns jetzt eine CSS-Datei erstellen, um einen eigenen Stil zu Ihrer Webseite hinzuzufügen. Erstelle ein neues Verzeichnis namens `css` in deinem `static`-Verzeichnis. Dann erstelle eine neue Datei namens `blog.css` in diesem `css`-Verzeichnis. Fertig?
+Nun erstellen wir eine CSS-Datei, um deiner Website deinen eigenen Stil zu verleihen. Erstelle ein neues Verzeichnis namens `css` in deinem `static`-Verzeichnis. Dann erstelle eine neue Datei namens `blog.css` in diesem `css`-Verzeichnis. Fertig?
 
     djangogirls
     └─── blog
@@ -62,11 +62,11 @@ Lassen Sie uns jetzt eine CSS-Datei erstellen, um einen eigenen Stil zu Ihrer We
                    └─── blog.css
     
 
-Zeit ein wenig CSS zu schreiben! Öffne die `blog/static/css/blog.css` Datei in Deinem Code-Editor.
+Zeit, ein wenig CSS zu schreiben! Öffne die `blog/static/css/blog.css` Datei in Deinem Code-Editor.
 
-Wir gehen nicht zu sehr auf die Details von CSS ein. Wir haben am Ende der Seite einen Link auf eine Empfehlung für einen frei zugänglichen CSS Kurs angefügt, für diejenigen, die mehr über CSS lernen möchten.
+Wir gehen nicht zu sehr auf die Details von CSS ein. Wir haben am Ende des Kapitels einen Link auf eine Empfehlung für einen frei zugänglichen CSS Kurs angefügt, für diejenigen, die mehr über CSS lernen möchten.
 
-Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. Diese Codes beginnen mit `#` gefolgt von 6 Buchstaben (A-F) und nummern (0-9). Blau zum Beispiel ist `#0000FF`. Beispiele für solche Farbcodes findest Du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/colors/colors_names.asp) wie `red` und `green` benutzen.
+Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. Diese Codes starten immer mit `#`, danach folgen sechs Buchstaben (A-F) und Zahlen (0-9). Blau zum Beispiel ist `#0000FF`. Beispiele für solche Farbcodes findest Du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/colors/colors_names.asp) wie `red` und `green` benutzen.
 
 In deiner `blog/static/css/blog.css` Datei änderst du den folgenden Code:
 
@@ -74,11 +74,11 @@ In deiner `blog/static/css/blog.css` Datei änderst du den folgenden Code:
 
 ```css
 h1 a {
-color: #FCA205;
+  color: #FCA205;
 }
 ```
 
-`h1 a` ist ein CSS-Selektor. Das bedeutet, sass wir unsere Styles auf alle `a` Elemente innerhalb von einem `h1` Element anwenden. Also wenn wir so etwas wie `<h1><a href="">link</a></h1>`, der `h1 a` stil wird gelten. In diesem Fall sagen wir, dass es seine Farbe in `#FCA205` ändern soll, was für Orange steht. Du kannst hier natürlich deine eigene Farbe angeben!
+`h1 a` ist ein CSS-Selektor. Das bedeutet, dass wir unsere Styles auf alle `a` Elemente innerhalb von einem `h1` Element anwenden. Also wenn wir so etwas wie `<h1><a href="">link</a></h1>`, der `h1 a` stil wird gelten. In diesem Fall sagen wir, dass es seine Farbe in `#FCA205` ändern soll, was für Orange steht. Du kannst hier natürlich deine eigene Farbe angeben!
 
 In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg HTML-Elemente zu identifizieren ist der Name des Elements. Du erinnerst dich vielleicht an diese Namen als 'Tags' aus dem HTML Kapitel. Zum Beispiel sind `a`, `h1` und `body` solche Elementnamen. Wir identifizieren Elemente auch über die Attribute `class` oder `id`. Klassen (`class`) und IDs (`id`) sind Namen, die du den Elementen selbst gibst. Klassen definieren dabei Gruppen von Elementen und IDs verweisen auf bestimmte Elemente. Du könntest zum Beispiel den folgenden Tag anhand des Elementnamen `a`, der Klasse `external_link` oder der Id `link_to_wiki_page` identifizieren:
 
