@@ -94,7 +94,7 @@ Vamos começar digitando este comando:
 
 <!--endsec-->
 
-E em então pressione a tecla `enter`. Este é o nosso resultado:
+E então pressione a tecla `enter`. Este é o nosso resultado:
 
 {% filename %}command-line{% endfilename %}
 
@@ -112,7 +112,7 @@ Cada sistema operacional tem o seu próprio conjunto de instruções para a linh
 
 ### Pasta atual
 
-Seria legal se soubéssemos em que diretório estamos, certo? Para isso, digite o seguinte comando e aperte `enter`:
+Seria legal saber em que diretório estamos, né? Para isso, digite o seguinte comando e clique `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -134,7 +134,7 @@ Seria legal se soubéssemos em que diretório estamos, certo? Para isso, digite 
     C:\Users\olasitarska
     
 
-> Nota: 'cd' significa 'change directory' em inglês, o que se traduz para 'mudar de diretório'. Com o powershell, você pode utilizar pwd da mesma forma como no Linux ou Mac OS X.
+> Observação: 'cd' significa 'change directory' em inglês, o que se traduz para 'mudar de diretório'. Com o powershell, você pode utilizar pwd da mesma forma como no Linux ou Mac OS X.
 
 <!--endsec-->
 
@@ -144,7 +144,7 @@ Você provavelmente vai ver algo parecido em seu computador. A linha de comando 
 
 ### Listando arquivos e pastas
 
-Então o que tem nele? Seria legal descobrir. Vamos ver:
+Então, o que tem no seu computador? Seria legal descobrir. Vamos ver:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -173,13 +173,13 @@ Então o que tem nele? Seria legal descobrir. Vamos ver:
     ...
     
 
-> Nota: No powershell, você também pode usar 'ls' como no Linux e Mac OS X. <!--endsec-->
+> Observação: No powershell, você também pode usar 'ls' como no Linux e Mac OS X. <!--endsec-->
 
 * * *
 
 ### Entrar em outra pasta
 
-Agora, vamos para a pasta Desktop:
+Agora vamos para a pasta Desktop:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -229,7 +229,7 @@ Aqui está!
 
 ### Criando uma pasta
 
-Que tal criar um diretório em sua área de trabalho para praticarmos? Você pode fazer isso com o seguinte comando:
+Que tal criar um diretório em sua área de trabalho para praticar? Use o seguinte comando:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -257,7 +257,7 @@ Esse pequeno comando criará um diretório chamado `practice` em sua área de tr
 
 ### Exercite-se!
 
-Um pequeno desafio para você: crie um diretório dentro do diretório `practice` chamando `test`. (Use os comandos `cd` e `mkdir`.)
+Um pequeno desafio: crie um diretório chamado `test` dentro do diretório `practice`. (Use os comandos `cd` e `mkdir`.)
 
 #### Solução:
 
@@ -313,7 +313,7 @@ Primeiro, precisamos voltar para a pasta Desktop:
 
 <!--endsec-->
 
-Ao utilizar o `..` junto com o comando `cd` você muda o diretório atual para o diretório pai (o diretório que contém o seu diretório atual).
+Ao utilizar o `..` junto com o comando `cd`, você muda do diretório atual para o diretório pai (o diretório que contém o seu diretório atual).
 
 Veja onde você está:
 
@@ -412,7 +412,7 @@ Aqui vai uma lista de alguns comandos úteis:
 | ----------------- | ------------------------ | ----------------------------- | ------------------------------------------------- |
 | saindo            | saindo                   | Fecha a janela                | **saindo**                                        |
 | cd                | cd                       | Muda a pasta                  | **cd test**                                       |
-| cd                | pwd                      | mostra o diretório atual      | **cd** (Windows) ou **pwd** (Mac OS / Linux)      |
+| cd                | pwd                      | Mostra o diretório atual      | **cd** (Windows) ou **pwd** (Mac OS / Linux)      |
 | dir               | ls                       | Lista as pastas e/ou arquivos | **dir**                                           |
 | copy              | cp                       | Copia um arquivo              | **copy c:\test\test.txt c:\windows\test.txt** |
 | move              | mv                       | Move um arquivo               | **move c:\test\test.txt c:\windows\test.txt** |
@@ -420,7 +420,7 @@ Aqui vai uma lista de alguns comandos úteis:
 | rmdir (ou del)    | rm                       | Exclui arquivo                | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                    | Exclui diretório              | **rm -r testdirectory**                           |
 
-Esses são apenas alguns dos comandos que você pode rodar na sua linha de comando, porém não vamos usar mais do que isso hoje.
+Esses são apenas alguns dos comandos que você pode rodar na sua linha de comando, mas não vamos usar mais do que isso hoje.
 
 Se você estiver curioso, [ss64.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
 
