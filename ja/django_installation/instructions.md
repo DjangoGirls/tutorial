@@ -106,7 +106,7 @@ LinuxやOS Xで`virtualenv`を作るときは、`python3 -m venv myvenv`と実�
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-以下を実行して、仮想環境を起動します。
+以下を実行して、仮想環境を開始します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-以下を実行して、仮想環境を起動します。
+以下を実行して、仮想環境を開始します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -176,7 +176,7 @@ Requirementsファイルは`pip install`でインストールするためのパ�
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
-    Django=={{ book.django_version }}
+    Django~={{ book.django_version }}
     
 
 そして、`pip install -r requirements.txt` を実行してDjangoをインストールします。
@@ -184,7 +184,7 @@ Requirementsファイルは`pip install`でインストールするためのパ�
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ pip install -r requirements.txt
-    Collecting Django=={{ book.django_version }} (from -r requirements.txt (line 1))
+    Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
       Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
     Installing collected packages: Django
     Successfully installed Django-{{ book.django_version }}
