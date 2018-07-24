@@ -61,11 +61,12 @@ Es una buena idea utilizar el comando `git status` antes de `git add` o en cualq
     
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-            
-           .gitignore
+    
+            .gitignore
             blog/
             manage.py
             mysite/
+            requirements.txt
     
     nothing added to commit but untracked files present (use "git add" to track)
     
@@ -183,7 +184,7 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
-    blog  db.sqlite3  manage.py  mysite  static
+    blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
     __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
     templates  tests.py  urls.py  views.py
