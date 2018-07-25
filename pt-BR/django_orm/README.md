@@ -1,16 +1,16 @@
 # QuerySets e ORM do Django
 
-Neste capítulo você vai aprender como Django se conecta ao banco de dados e como ele armazena dados. Vamos nessa!
+Neste capítulo você vai aprender como o Django se conecta ao banco de dados e como ele armazena dados. Vamos nessa!
 
 ## O que é um QuerySet?
 
 Um QuerySet (conjunto de busca) é, em essência, uma lista de objetos de um dado modelo. QuerySet permite que você leia os dados à partir de uma base de dados, filtre e ordene.
 
-É mais fácil aprender por exemplos. Vamos lá?
+É mais fácil aprender usando exemplos. Vamos lá?
 
 ## O Shell do Django
 
-Abre o seu terminal (não no PythonAnywhere) e digite o seguinte comando:
+Abra o seu terminal (não no PythonAnywhere) e digite o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -134,7 +134,7 @@ Um recurso importante dos QuerySets é a possibilidade de filtrá-los. Digamos q
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Ou talvez nós queremos ver todos os posts que contenham a palavra 'title' no campo `title`?
+E se quisermos ver todos os posts que contenham a palavra 'title' no campo `title`?
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,7 +143,7 @@ Ou talvez nós queremos ver todos os posts que contenham a palavra 'title' no ca
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Obs** Existem dois caracteres de sublinhado (`_`) entre `title` e `contains`. O ORM do Django utiliza esta sintaxe para separar nomes de campo ("title") e operações ou filtros (como "contains"). Se você usar apenas um sublinhado, obterá um erro como "FieldError: Cannot resolve keyword title_contains".
+> **Observação:** Existem dois caracteres de sublinhado (`_`) entre `title` e `contains`. O ORM do Django utiliza esta sintaxe para separar nomes de campo ("title") e operações ou filtros (como "contains"). Se você usar apenas um sublinhado, obterá um erro como "FieldError: Cannot resolve keyword title_contains".
 
 Você também pode obter uma lista de todos os posts publicados. Fazemos isso filtrando todos os posts com uma `published_date` definida no passado:
 
@@ -171,7 +171,7 @@ Então vamos publicá-lo com o nosso método `publish`:
 >>> post.publish()
 ```
 
-Agora, busque a lista de posts publicados novamente (aperte a seta para cima algumas vezes e pressione `enter`):
+Agora, busque novamente a lista de posts publicados (aperte a seta para cima algumas vezes e pressione `enter`):
 
 {% filename %}command-line{% endfilename %}
 
@@ -209,9 +209,9 @@ Você também pode combinar QuerySets **encadeando**-os:
 <QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
-Isso é muito poderoso e permite que criar consultas bastante complexas.
+Isso é muito poderoso e nos permite criar consultas bastante complexas.
 
-Legal! Você já está pronto para a próxima parte! Para fechar o terminal digite:
+Legal! Você já está pronta para a próxima parte! Para fechar o terminal, digite:
 
 {% filename %}command-line{% endfilename %}
 
