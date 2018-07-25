@@ -61,9 +61,9 @@ A última parte que falta é colocar a QuerySet `posts` dentro do template. Não
 
 Note que criamos uma *variável* para nosso o QuerySet: `posts`. Esse é o nome do nosso QuerySet. De agora em diante nós podemos nos referir a ele por este nome.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. Precisamos nomeá-los (ficaremos com `'posts'` por enquanto). :) Deve ficar assim: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+Na função `render` já temos um parâmetro `request` (tudo o que recebemos do usuário através da Internet) e um arquivo de template (`'blog/post_list.html'`). O último parâmetro -- `{}` -- é um lugar em que podemos acrescentar algumas coisas para o template usar. Precisamos nomear os parâmetros (continuaremos com `'posts'`, por enquanto). :) Deve ficar assim: `{'posts': posts}`. Note que a parte antes de `:` é uma string; por isso você precisa colocá-la entre aspas: `"`.
 
-Então finalmente nosso arquivo `blog/views.py` deve se parecer com isto:
+Agora, nosso arquivo `blog/views.py` deve ter essa cara:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -78,6 +78,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
-Feito! Hora de voltar para o nosso template e exibir essa QuerySet!
+Pronto! Hora de voltar para o nosso template e exibir essa QuerySet!
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
+Se quiser ler mais sobre QuerySets no Django, você deve dar uma olhada aqui: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
