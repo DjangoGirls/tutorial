@@ -32,9 +32,9 @@ E o que vem agora? Para pegar os posts reais do modelo `Post`, precisamos de uma
 
 ## QuerySet
 
-You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+Você já deve estar familiarizada com o modo que os QuerySets funcionam. Nós conversamos sobre isso no [capítulo QuerySets e ORM do Django](/django_orm/README. html).</p> 
 
-Então, agora queremos as postagens publicadas classificadas por `published_date`, certo? Nós já fizemos isso no capítulo sobre QuerySets!
+Agora queremos classificar as postagens publicadas por `published_date`, certo? Nós já fizemos isso no capítulo sobre QuerySets!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ Então, agora queremos as postagens publicadas classificadas por `published_date
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Now we put this piece of code inside the `blog/views.py` file by adding it to the function `def post_list(request)`, but don't forget to first add `from django.utils import timezone`:
+Agora vamos colocar esse pedaço de código dentro do arquivo `blog.views.py` adicionando-o à função `def post_list(request)`. Não esqueça de adicionar `from django.utils import timezone` antes!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -57,9 +57,9 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
+A última parte que falta é colocar a QuerySet `posts` dentro do template. Não se preocupe com isso agora, vamos falar sobre como exibi-lo em um próximo capítulo.
 
-Note que criamos uma *variável* para nosso o QuerySet: `posts`. Trate isto como o nome do nosso QuerySet. De agora em diante nós podemos nos referir a ele por este nome.
+Note que criamos uma *variável* para nosso o QuerySet: `posts`. Esse é o nome do nosso QuerySet. De agora em diante nós podemos nos referir a ele por este nome.
 
 In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. Precisamos nomeá-los (ficaremos com `'posts'` por enquanto). :) Deve ficar assim: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
