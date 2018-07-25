@@ -12,7 +12,7 @@ Cada página na Internet precisa de sua própria URL. Desta forma, sua aplicaç�
 
 ## Como funcionam as URLs em Django?
 
-Vamos abrir o arquivo `mysite/urls.py` no seu editor de código preferido e ver o que aparece:
+Abra o arquivo `mysite/urls.py` no seu editor de código preferido e veja o que aparece:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,13 +41,13 @@ A URL do admin, que você visitou no capítulo anterior, já está aqui:
     path('admin/', admin.site.urls),
 ```
 
-Isso significa que para cada URL que começa com `admin /` o Django irá encontrar uma *view* correspondente. Neste caso nós estamos incluindo várias URLs de admin de uma vez a partir de uma lista criada pelo próprio Django em <0>admin.site.urls</0>. Desta forma, não temos que repetir todas URLs no nosso modesto arquivo -- é mais legível e mais limpo.
+Isso significa que para cada URL que começa com `admin/`, o Django irá encontrar uma *view* correspondente. Neste caso nós estamos incluindo várias URLs de admin de uma vez a partir de uma lista criada pelo próprio Django em <0>admin.site.urls</0>. Desta forma, não temos que repetir todas URLs no nosso modesto arquivo -- é mais legível e mais limpo.
 
 ## Sua primeira URL no Django!
 
 É hora de criar nossa primeira URL! Queremos que http://127.0.0.1:8000 / seja a página inicial do nosso blog e exiba uma lista de posts.
 
-Também queremos manter o arquivo de `mysite/urls.py` limpo e desta forma importaremos as URLS da nossa aplicação `blog` no arquivo principal `mysite/urls.py`.
+Também queremos manter o arquivo de `mysite/urls.py` limpo, e portanto importaremos as URLS da nossa aplicação `blog` no arquivo principal `mysite/urls.py`.
 
 Adicione uma linha para importar `blog.urls`. Note que estamos usando a função `include`, então você também precisará importar esta função.
 
@@ -92,9 +92,9 @@ urlpatterns = [
 
 Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` à URL raiz. Este padrão de URL corresponde a uma sequência de caracteres vazia, onde o resolvedor de URLs do Django irá ignorar o nome de domínio (ou seja, http://127.0.0.1:8000 /) que antecede o caminho completo da URL. Este padrão dirá ao Django que `views.post_list` é o lugar correto para ir se alguém entra em seu site no endereço 'http://127.0.0.1:8000 /'.
 
-A última parte, `name='post_list'`, é o nome da URL que será usado para identificar a view. Este pode ser o mesmo nome da view, mas também pode ser algo completamente diferente. Nós vamos usar URLs nomeadas mais à frente, então é importante nomearmos agora todas as URLs de nossa aplicação. Também devemos fazer com que os nomes das URLs sejam únicos e fáceis de lembrar.
+A última parte, `name='post_list'`, é o nome da URL que será usado para identificar a view. Pode ser o mesmo nome da view, mas também pode ser algo completamente diferente. Nós vamos usar URLs nomeadas mais à frente, então é importante nomearmos agora todas as URLs de nossa aplicação. Também devemos fazer com que os nomes das URLs sejam únicos e fáceis de lembrar.
 
-Se você tentar visitar http://127.0.0.1:8000 / agora, você irá encontrar alguma mensagem do tipo 'página web não disponível'. Isso ocorre porque o servidor (Lembre-se de digitar `runserver`?) não está mais funcionando. Dê uma olhada na sua janela de console do servidor para descobrir o porquê.
+Se você tentar visitar http://127.0.0.1:8000 / agora, você irá encontrar alguma mensagem do tipo 'página web não disponível'. Isso ocorre porque o servidor (lembre-se de digitar `runserver`?) não está mais funcionando. Dê uma olhada na sua janela de console do servidor para descobrir o porquê.
 
 ![Erro](images/error1.png)
 
