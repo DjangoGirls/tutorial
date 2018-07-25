@@ -82,7 +82,7 @@ Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv my
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **OBS:** Se você obter um erro como
+> **Oservação:** Se você obtiver um erro como
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -112,7 +112,7 @@ Inicie o seu ambiente virtual executando:
     C:\Usuário\Nome\djangogirls> myvenv\Scripts\activate
     
 
-> **OBS:** no Windows 10, você pode obter um erro no Windows PowerShell que diz `execution of scripts is disabled on this system`. Neste caso, abra uma outra janela do Windows PowerShell com a opção de "Executar como Administrador". Assim, execute o comando abaixo antes de iniciar o seu ambiente virtual:
+> **Observação:** no Windows 10, você pode obter um erro no Windows PowerShell que diz `execution of scripts is disabled on this system`. Neste caso, abra uma outra janela do Windows PowerShell com a opção de "Executar como Administrador". Assim, execute o comando abaixo antes de iniciar o seu ambiente virtual:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -135,7 +135,7 @@ Inicie o seu ambiente virtual executando:
 
 Lembre-se de substituir `myvenv` com seu nome escolhido do `virtualenv`!
 
-> **NOTE:** às vezes `source` pode não estar disponível. Nesses casos, tente fazer isso em vez disso:
+> **Observação:** às vezes `source` pode não estar disponível. Nesses casos, tente fazer isso:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -144,15 +144,15 @@ Lembre-se de substituir `myvenv` com seu nome escolhido do `virtualenv`!
 
 <!--endsec-->
 
-Você vai saber que tem um `virtualenv` funcionando quando ver sua linha de comando no seu console ter o prefixo `(myvenv)`.
+Você vai saber que tem um `virtualenv` funcionando quando vir que a linha de comando no seu console ter o prefixo `(myvenv)`.
 
-Ao trabalhar dentro de um ambiente virtual, `python` irá automaticamente se referir a versão correta para que possa utilizar `python` em vez de `python3`.
+Ao trabalhar dentro de um ambiente virtual, o `Python` irá automaticamente se referir à versão correta para que possa utilizar o `Python` em vez do `Python3`.
 
 Ok, nós temos todas as dependências importantes no lugar. Finalmente podemos instalar o Django!
 
 ## Instalando o Django
 
-Agora que você tem seu `virtualenv` ativo, você pode instalar o Django.
+Agora que você tem seu `virtualenv` ativo, pode instalar o Django.
 
 Antes de fazer isto, devemos garantir que temos a última versão do `pip`, que é o software que usamos para instalar o Django:
 
@@ -211,7 +211,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Se você receber um erro ao chamar pip no Ubuntu 12.04 por favor execute `python -m pip install -U --force-reinstall pip` para corrigir a instalação do pip no virtualenv.
+> Se você receber um erro ao chamar pip no Ubuntu 12.04, execute `python -m pip install -U --force-reinstall pip` para corrigir a instalação do pip no virtualenv.
 
 <!--endsec-->
 
