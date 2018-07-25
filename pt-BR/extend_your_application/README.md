@@ -87,7 +87,7 @@ Você lembra qual é o próximo passo? Claro: adicionar uma view!
 
 Desta vez, a nossa *view* recebe um parâmetro extra: `pk`. Nossa *view* precisa pegá-lo, certo? Então vamos definir nossa função como `def post_detail (request, pk):`. Precisamos usar exatamente o mesmo nome que especificamos em urls (`pk`). Omitir essa variável é errado e resultará em um erro!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+Agora queremos receber apenas um post do blog. Para isso, podemos usar QuerySets como este:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -127,19 +127,19 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+É isso aí, está na hora de atualizar a página: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+Funcionou! Mas o que acontece quando você clica em um link no título de um post do blog?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+Ah não! Outro erro! Mas nós já sabemos como lidar com isso, né? Precisamos adicionar um template!
 
-## Create a template for the post details
+## Criando um template de para os detalhes do post
 
-We will create a file in `blog/templates/blog` called `post_detail.html`.
+Vamos criar um arquivo em `blog/templates/blog` chamado `post_detail.html`.
 
 It will look like this:
 
