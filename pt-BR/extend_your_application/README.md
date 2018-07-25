@@ -72,20 +72,20 @@ urlpatterns = [
 A parte `post/<int:pk>/` especifica um padrão de URL – vamos explicar:
 
 - `post/` significa apenas que a URL deve começar com a palavra **post** seguida por **/**. Até aqui, tudo bem.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the url.
+- `<int:pk>` – essa parte é um pouco mais complicada. Ela nos diz que o Django espera um objeto do tipo inteiro e que vai transferí-lo para a view como uma variável chamada `pk`.
+- `/` – por fim, precisamos adicionar uma **/** ao final da nossa URL.
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+Isso significa que se você digitar `http://127.0.0.1:8000/post/5/` em seu navegador, o Django vai entender que você está procurando uma *view* chamada `post_detail` e vai transferir a informação de que `pk` é igual a `5` para essa *view*.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+Legal, nós adicionamos um novo padrão de URL para `blog/urls.py`! Vamos atualizar a página: http://127.0.0.1:8000 / Boom! O servidor parou de funcionar de novo. Dê um olhada no console - como esperado, há ainda outro erro!
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? Of course: adding a view!
+Você lembra qual é o próximo passo? Claro: adicionar uma view!
 
 ## Adicionando a view de detalhes do post
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+Desta vez, a nossa *view* recebe um parâmetro extra: `pk`. Nossa *view* precisa pegá-lo, certo? Então vamos definir nossa função como `def post_detail (request, pk):`. Precisamos usar exatamente o mesmo nome que especificamos em urls (`pk`). Omitir essa variável é errado e resultará em um erro!
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
