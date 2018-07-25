@@ -185,10 +185,10 @@ PythonAnywhereのコードをlsを使って見てみることもできます：
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
-    blog  db.sqlite3  manage.py  mysite requirements.txt static
+    blog db.sqlite3 manage.py mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
-    templates  tests.py  urls.py  views.py
+    __init__.py __pycache__ admin.py forms.py migrations models.py static
+    templates tests.py urls.py views.py
     
 
 また、「ファイル」タブに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。
