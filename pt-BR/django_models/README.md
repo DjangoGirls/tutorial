@@ -4,7 +4,7 @@ Queremos criar algo que armazene todos os posts em nosso blog. Mas para fazer is
 
 ## Objetos
 
-Existe um conceito em programação chamado `programação orientada à objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, a gente pode modelar as coisas e definir como elas interagem umas com as outras.
+Existe um conceito em programação chamado `programação orientada a objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, a gente pode modelar as coisas e definir como elas interagem umas com as outras.
 
 Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos lhe dar um exemplo.
 
@@ -30,7 +30,7 @@ Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propried
 
 A ideia básica é descrever coisas reais em código a partir de suas propriedades (chamadas de `atributos`) e ações (chamadas de `métodos`).
 
-Como iremos modelar as postagens do blog então? Queremos construir um blog, certo?
+Como vamos modelar as postagens do blog, então? Queremos construir um blog, certo?
 
 Para isto, precisamos responder as questões: O que é um post de blog? Que propriedades (atributos) ele deve ter?
 
@@ -114,7 +114,7 @@ INSTALLED_APPS = [
 
 No arquivo `blog/models.py` definimos todos os objetos chamados `Modelos` -- este é um lugar em que vamos definir nossa postagem do blog.
 
-Vamos abrir `blog/models.py`, remova tudo dele e escreva o código como este:
+Vamos abrir `blog/models.py`, remova tudo dele e escreva o código assim:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -142,7 +142,7 @@ class Post(models.Model):
 
 > Verifique que você usou dois caracteres de sublinhado (`_`) a cada lado de `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, chamamos de "dunder" (redução de "double-underscore").
 
-Parece assustador, certo? Mas não se preocupe, iremos explicar o que essas linhas significam!
+Parece assustador, né? Mas não se preocupe, vamos explicar o que essas linhas significam!
 
 Todas as linhas começando com `from` ou `import` são linhas que adicionam alguns pedaços de outros arquivos. Então ao invés de copiar e colar as mesmas coisas em cada arquivo, podemos incluir algumas partes com `from... import ...`.
 
@@ -165,7 +165,7 @@ E que tal `def publish(self):`? É justamente o método `publish` que falamos an
 
 Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `__str__`. Nesse caso, quando chamar `__str__()` resulta em um texto (**string**), com o título do Post.
 
-Lembre-se também que ambos `def publish(self):`, e `def __str__(self):` são indentados para dentro da classe. E porque Python é sensível a espaços em branco, precisamos indentar todos nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe, e você pode obter um comportamento inesperado.
+Lembre-se também que ambos `def publish(self):`, e `def __str__(self):` são endentados para dentro da classe. E porque Python é sensível a espaços em branco, precisamos endentar todos os nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe, e você pode obter um comportamento inesperado.
 
 Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para o seu treinador! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas espero que isto se pareça um pouco menos mágica agora!
 
