@@ -46,7 +46,7 @@ E quanto ao `pk=post.pk`? `pk` é uma abreviação de "primary key" (do inglês 
 
 Agora, quando formos para: http://127.0.0.1:8000/ veremos um erro (como esperado, já que existe uma URL e nem uma *view* para `post_detail`). Vai se parecer com isso:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![erro NoReverseMatch](images/no_reverse_match2.png)
 
 ## Criando uma URL para página de detalhes de um post
 
@@ -97,7 +97,7 @@ Post.objects.get(pk=pk)
 
 Mas este código tem um problema. Se não houver nenhum `Post` com a `chave primária` (`pk`) fornecida teremos um erro horroroso!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![erro DoesNotExist](images/does_not_exist2.png)
 
 Não queremos isso! Mas é claro que o Django tem algo para lidar com isso por nós: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro - `Page Not Found 404` (página não encontrada).
 
@@ -133,7 +133,7 @@ def post_detail(request, pk):
 
 Funcionou! Mas o que acontece quando você clica em um link no título de um post do blog?
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![erro TemplateDoesNotExist](images/template_does_not_exist2.png)
 
 Ah não! Outro erro! Mas nós já sabemos como lidar com isso, né? Precisamos adicionar um template!
 
@@ -167,7 +167,7 @@ Mais uma vez estamos estendendo `base.html`. No bloco `content`, queremos exibir
 
 Pronto, podemos atualizar nossa página e ver se aquele `Page not found` sumiu.
 
-![Post detail page](images/post_detail2.png)
+![Página de detalhes da postagem](images/post_detail2.png)
 
 Uhuu! Funcionou!
 
