@@ -1,8 +1,8 @@
 # Dados dinâmicos em modelos
 
-Nós temos diferentes peças aqui: o model `Post` está definido em `models.py`, nós temos `post_list` no `views.py` e o template adicionado. Mas como faremos de fato para fazer com que as postagens apareçam no nosso template em HTML? Porque é isso que nós queremos: pegar algum conteúdo (models salvos no banco de dados) e exibi-lo de uma maneira bacana no nosso template, certo?
+Até o momento, temos diferentes peças: o modelo `Post` está definido em `models.py`, temos `post_list` em `views.py` e o template adicionado. Mas como faremos de fato para que as postagens apareçam no nosso template em HTML? Porque é isso que nós queremos: pegar algum conteúdo (modelos salvos no banco de dados) e exibi-lo de uma maneira bacana no nosso template, certo?
 
-E isso é exatamente o que as *views* devem fazer: conectar models e templates. Vamos precisar pegar os models que queremos exibir e passá-los para o template na nossa lista de postagens `post_list` *view*. Em uma *visualização*, nós decidimos o que (modelo) será exibido em um template.
+E isso é exatamente o que as *views* devem fazer: conectar modelos e templates. Vamos precisar pegar os modelos que queremos exibir e passá-los para o template na nossa lista de postagens `post_list` *view*. Em uma *visualização*, nós decidimos o que (qual modelo) será exibido em um template.
 
 Como vamos fazer isso?
 
