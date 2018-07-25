@@ -14,7 +14,7 @@ Os nomes de alguns arquivos e diretórios são muito importantes para o Django. 
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-No MacOS ou no console do Linux, você pode rodar o seguinte comando; **não esqueça de adicionar o ponto `.` no final**
+No MacOS ou no console do Linux, você pode rodar o comando abaixo (**não esqueça de adicionar o ponto `.` no final</0!>):</p> 
 
 {% filename %}command-line{% endfilename %}
 
@@ -23,13 +23,13 @@ No MacOS ou no console do Linux, você pode rodar o seguinte comando; **não esq
 
 > O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é um atalho para referenciar este diretório).
 > 
-> **Bos** Quando digitar o comando acima, lembre-se de digitar apenas a parte que inicia em `django-admin`. A parte `(myvenv) ~/djangogirls$` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você for digitar seus comandos.
+> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin`. A parte `(myvenv) ~/djangogirls$` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você for digitar seus comandos.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-No Windows você pode rodar o seguinte comando; **não esqueça de adicionar o ponto `.` no final**:
+No Windows, você pode rodar o seguinte comando (**não esqueça de adicionar o ponto `.` no final!**):
 
 {% filename %}command-line{% endfilename %}
 
@@ -38,11 +38,11 @@ No Windows você pode rodar o seguinte comando; **não esqueça de adicionar o p
 
 > O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é um atalho para referenciar este diretório).
 > 
-> **Bos** Quando digitar o comando acima, lembre-se de digitar apenas a parte que inicia em `django-admin.exe`. A parte `(myvenv) C:\Users\Name\djangogirls>` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você for digitar seus comandos.
+> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin.exe`. A parte `(myvenv) C:\Users\Name\djangogirls>` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você for digitar seus comandos.
 
 <!--endsec-->
 
-`django-admin` é um script que irá criar os diretórios e arquivos para você. Agora, você deve ter um diretório estrutura que se parece com isso:
+`django-admin` é um script que criará os diretórios e arquivos para você. Agora, você deve ter um diretório estrutura que se parece com isso:
 
     djangogirls
     ├───manage.py
@@ -54,23 +54,23 @@ No Windows você pode rodar o seguinte comando; **não esqueça de adicionar o p
     └───requirements.txt
     
 
-> **Obs**: em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `venv`, que criamos antes.
+> **Observação:** em sua estrutura de diretórios, você também verá o o diretório do virtualenv, `venv`, que criamos antes.
 
 `manage.py` é um script que ajuda com a gestão do site. Com ele, podemos iniciar um servidor de web no nosso computador sem instalar nada, entre outras coisas.
 
 O arquivo `settings.py` contém a configuração do seu site.
 
-Lembra quando falamos sobre um carteiro verificando onde entregar uma carta? arquivo `urls.py` contém uma lista dos padrões usados por `urlresolver`.
+Lembra de quando falamos sobre um carteiro verificando onde entregar uma carta? O arquivo `urls.py` contém uma lista dos padrões usados por `urlresolver`.
 
-Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. A única coisa a ser lembrada é para não excluí-los por acidente!
+Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. Só precisamos lembrar de para não excluí-los por acidente!
 
 ## Configurando
 
 Vamos fazer algumas alterações no `mysite/settings.py`. Abra o arquivo usando o editor de código que você instalou anteriormente.
 
-**Obs**: Lembre-se que o `settings.py` é um arquivo comum, como qualquer outro. Você pode abri-lo de dentro do editor de código usando as ações de menu "Arquivo-> Abrir". Assim, você deve encontrá-lo na janela usual para selecionar arquivos e abrí-lo. Ou então, é possível abrir o arquivo navegando até o diretório do djangogirls e abrindo o arquivo com o botão direito. Uma vez clicado, selecione o seu editor de código preferido da lista. Selecionar o editor apropriado é importante uma vez que você pode ter outros programas instalados que podem abrir o arquivo, mas não editá-lo.
+**Observação:** Lembre-se que o `settings.py` é um arquivo comum, como qualquer outro. Você pode abri-lo de dentro do editor de código usando as ações de menu "Arquivo-> Abrir". Assim, você deve encontrá-lo na janela usual para selecionar arquivos e abrí-lo. Ou então, é possível abrir o arquivo navegando até o diretório do djangogirls e abrindo o arquivo com o botão direito. Uma vez clicado, selecione o seu editor de código preferido da lista. Selecionar o editor apropriado é importante uma vez que você pode ter outros programas instalados que podem abrir o arquivo, mas não editá-lo.
 
-Para começar, seria bom ter a hora correta no nosso site. Para isto, devemos configurar o fuso horário correto de onde você está. Se você estiver no Brasil é bem provável que o fuso horário seja `America/Sao_Paulo` (aqui conhecido como horário de Brasília). Caso queira saber mais, vá para [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) e copie e cole o fuso horário correspondende à sua localização.
+Para começar, seria bom ter a hora correta no nosso site. Para isto, você configurar o fuso horário correto de onde está. Se você estiver no Brasil é bem provável que o fuso horário seja `America/Sao_Paulo` (aqui conhecido como horário de Brasília). Caso queira saber mais, vá para [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) e copie e cole o fuso horário correspondende à sua localização.
 
 Em `settings.py`, localize a linha que contém `TIME_ZONE` e modifique para escolher seu próprio fuso horário:
 
@@ -80,7 +80,7 @@ Em `settings.py`, localize a linha que contém `TIME_ZONE` e modifique para esco
 TIME_ZONE = 'America/Sao_Paulo'
 ```
 
-Um código de idioma consistem da língua, por exemplo, `en` para inglês ou `pt` para português e o código do país, por exemplo, `br` para Brasil ou `pt` para a Portugal. Já que o inglês provavelmente não é sua língua nativa, você pode pode adicionar um novo código de país para deixar os botões padrão e notificações de Django em seu idioma. Assim, você teria por exemplo um botão "Cancel" traduzido para a língua da sua escolha (ex: "Cancelar" em português). [Django vem com um monte de traduções já preparadas](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Um código de idioma consiste da língua, por exemplo, `en` para inglês ou `pt` para português e o código do país, por exemplo, `br` para Brasil ou `pt` para a Portugal. Já que o inglês provavelmente não é sua língua nativa, você pode pode adicionar um novo código de país para deixar os botões padrão e notificações de Django em seu idioma. Assim, você teria por exemplo um botão "Cancel" traduzido para a língua da sua escolha (ex: "Cancelar" em português). O [Django vem com um monte de traduções já preparadas](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 Se você quiser um idioma diferente do inglês, especifique o código de idioma alterando a seguinte linha:
 
@@ -107,9 +107,9 @@ Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site se
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Obs**: Se você estiver utilizando um Chromebook, adicione esta linha ao final do arquivo settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Observação:** Se você estiver utilizando um Chromebook, adicione esta linha ao final do arquivo settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Também inclua `.c9users.io` à lista de `ALLOWED_HOSTS` se você estiver utilizando o cloud9
+> Também inclua `.c9users.io` à lista de `ALLOWED_HOSTS` se você estiver utilizando o cloud9.
 
 ## Configurando um banco de dados
 
