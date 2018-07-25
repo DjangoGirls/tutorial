@@ -2,11 +2,11 @@
 
 # Erweitere deine Anwendung
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+Wir haben bereits die verschiedenen Schritte für die Erstellung unserer Website abgeschlossen: Wir wissen, wie man Models, URLs, Views und Templates schreibt. Wir wissen auch, wie wir unsere Website verschönern.
 
-Time to practice!
+Zeit zum Üben!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+Das erste, was unser Blog gebrauchen könnte, ist eine Seite, auf der ein Blogpost dargestellt werden kann, oder?
 
 We already have a `Post` model, so we don't need to add anything to `models.py`.
 
