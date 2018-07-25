@@ -167,7 +167,7 @@ Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `_
 
 Lembre-se também que ambos `def publish(self):`, e `def __str__(self):` são endentados para dentro da classe. E porque Python é sensível a espaços em branco, precisamos endentar todos os nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe, e você pode obter um comportamento inesperado.
 
-Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para o seu treinador! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas espero que isto se pareça um pouco menos mágica agora!
+Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para sua monitora! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas espero que isto se pareça um pouco menos mágica agora!
 
 ### Criando tabelas para nossos modelos no banco de dados
 
@@ -182,7 +182,7 @@ O último passo é adicionar nosso novo modelo ao banco de dados. Primeiramente,
       - Create model Post
     
 
-**Obs:** Lembre-se de salvar os arquivos que você editar. Caso contrŕio, o computador executara uma versão antiga que pode gerar mensagens de erro inesperadas.
+**Observação:** Lembre-se de salvar os arquivos que você editar. Caso contrário, o computador executará uma versão antiga que pode gerar mensagens de erro inesperadas.
 
 O Django preparou um arquivo de migração que precisamos aplicar ao nosso banco de dados. Digite `python manage.py migrate blog` e a saída deve ser:
 
@@ -196,4 +196,4 @@ O Django preparou um arquivo de migração que precisamos aplicar ao nosso banco
       Applying blog.0001_initial... OK
     
 
-Uhul! Nosso modelo Post já está no banco de dados! Seria legal vê-lo, né? Vá para o próximo capítulo para descobrir como nosso Post se parece!
+Uhuu! Nosso modelo Post já está no banco de dados! Seria legal vê-lo, né? Vá para o próximo capítulo para descobrir como nosso Post se parece!
