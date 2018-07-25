@@ -197,9 +197,9 @@ Agora, em um [console Bash do PythonAnywhere](https://www.pythonanywhere.com/con
 
 ## Atualizando os arquivos estáticos no servidor
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Servidores como o PythonAnywhere tratam arquivos estáticos (como os arquivos CSS) de forma diferente dos arquivos em Python, por que assim podem otimizar para que eles carreguem mais rápido. Como resultado, sempre que alteramos nossos arquivos CSS, precisamos rodar um comando extra no servidor para dizer a ele que os atualize. O comando se chama `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Comece ativando seu virtualenv, se ele já não estiver ativo (para isso, o PythonAnywhere usa um comando chamado `workon` que é bem parecido com o comando `source myenv/bin/activate` que vosê usa no seu computador):
 
 {% filename %}command-line{% endfilename %}
 
@@ -208,8 +208,8 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+O comando `manage.py collectstatic` é mais ou menos como `manage.py migrate`. Fazemos algumas mudanças no nosso código e dizemos ao Django que as aplique (*apply*) à coleção de arquivos estáticos, ou ao banco de dados.
 
-In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+De qualquer forma, estamos prontas para ir para a[aba Web](https://www.pythonanywhere.com/web_app_setup/) e clicar em **Reload** (atualizar).
 
-And that should be it! Congrats :)
+Deve estar pronto! Arrasou :)
