@@ -46,7 +46,7 @@ Djangoはオブジェクトのリストと認識します。 **Python入門**で
 
 ![図 13.2](images/step2.png)
 
-動きましたね。 しかし、本当は、**Introduction to HTML** で作った静的な記事のように表示してほしいところです。 そこで、HTMLとテンプレートタグを混ぜてみましょう。 `body` タグの中を次のように書いてください：
+動きましたね。 しかし、本当は**HTML入門**で作った静的な記事のように表示してほしいところです。 そこで、HTMLとテンプレートタグを混ぜてみましょう。 `body` タグの中を次のように書いてください：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
