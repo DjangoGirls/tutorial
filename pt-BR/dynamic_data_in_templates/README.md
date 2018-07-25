@@ -1,10 +1,10 @@
 # Dados dinâmicos em modelos
 
-Nós temos diferentes peças aqui: o model `Post` está definido em `models.py`, nós temos `post_list` no `views.py` e o template adicionado. Mas como nós faremos de fato para fazer com que as nossas postagens apareçam no nosso template em HTML? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+Nós temos diferentes peças aqui: o model `Post` está definido em `models.py`, nós temos `post_list` no `views.py` e o template adicionado. Mas como faremos de fato para fazer com que as postagens apareçam no nosso template em HTML? Porque é isso que nós queremos: pegar algum conteúdo (models salvos no banco de dados) e exibi-lo de uma maneira bacana no nosso template, certo?
 
-E isso é exatamente o que as *views* devem fazer: conectar models e templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. Em uma *Vista*, nós decidimos que (modelo) será exibido em um padrão.
+E isso é exatamente o que as *views* devem fazer: conectar models e templates. Vamos precisar pegar os models que queremos exibir e passá-los para o template na nossa lista de postagens `post_list` *view*. Em uma *visualização*, nós decidimos o que (modelo) será exibido em um template.
 
-OK, so how will we achieve this?
+Como vamos fazer isso?
 
 Precisamos abrir o nosso `blog/views.py`. Até agora a *view*`post_list` se parece com isso:
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Lembra quando falamos sobre a inclusão de código escrito em arquivos diferentes? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+Lembra quando falamos sobre a inclusão de código que foi escrito em arquivos diferentes? Agora é o momento em que temos que incluir o modelo que temos escrito em `models.py`. Vamos adicionar a linha `from .models import Post` assim:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -28,7 +28,7 @@ from .models import Post
 
 O ponto antes de `models` significa o *diretório atual* ou o *aplicativo atual*. Tanto `views.py` como `models.py` estão no mesmo diretório. Isto significa que podemos usar `.` e o nome do arquivo (sem `py`). Então nós importamos o nome do modelo (`Post`).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+E o que vem agora? Para pegar os posts reais do modelo `Post`, precisamos de uma coisa chamada `QuerySet`.
 
 ## QuerySet
 
