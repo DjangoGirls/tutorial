@@ -161,19 +161,19 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Mais uma vez estamos estendendo `base.html`. No bloco `content`, queremos exibir a data de publicação (published_date) do post (se houver), título e texto. Mas ainda temos algumas coisas importantes para discutir, certo?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` é uma de template que podemos usar quando queremos conferir alguma coisa. (Lembra de `if ... else ..` que vimos no capítulo **Introdução ao Python**?) Aqui queremos conferir se a `published_date` de um post não está vazia.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+Pronto, podemos atualizar nossa página e ver se aquele `Page not found` sumiu.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+Uhuu! Funcionou!
 
-# Deploy time!
+# Hora do Deploy!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Seria bom ver se seu site ainda estará trabalhando no PythonAnywhere, né? Vamos tentar fazer a implantação novamente.
 
 {% filename %}command-line{% endfilename %}
 
@@ -184,7 +184,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Agora, em um [console Bash do PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}command-line{% endfilename %}
 
@@ -193,9 +193,9 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Lembre-se de substituir o `<your-pythonanywhere-username>` com seu username do PythonAnywhere, sem os símbolos < e >).
 
-## Updating the static files on the server
+## Atualizando os arquivos estáticos no servidor
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
 
