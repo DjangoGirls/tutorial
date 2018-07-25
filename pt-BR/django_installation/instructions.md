@@ -4,15 +4,15 @@
 
 ## Ambiente virtual
 
-Antes de instalar o Django, vamos instalar uma ferramenta muito útil para ajudar a manter o ambiente de trabalho no nosso computador organizado. Você pode pular esse passo, mas ele é altamente recomendado. Iniciar com a melhor instalação possível poupará você de muito trabalho no futuro!
+Antes de instalar o Django, vamos instalar uma ferramenta muito útil para ajudar a manter o ambiente de trabalho no nosso computador organizado. Você pode pular esse passo, mas ele é altamente recomendado. Começar com a melhor instalação possível poupará você de muito trabalho no futuro!
 
-Vamos criar um **ambiente virtual** (também chamado um *virtualenv*). O virtualenv irá isolar seu código Python/Django em um ambiente "por projeto". Isso significa que qualquer alteração que você fizer em um website não afetará os outros que você também estiver desenvolvendo. Legal, né?
+Vamos criar um **ambiente virtual** (também chamado um *virtualenv*). O virtualenv irá isolar seu código Python/Django em um ambiente "por projeto". Isso significa que alterações que você fizer em um website não afetará os outros que você também estiver desenvolvendo. Legal, né?
 
-Tudo o que você precisa fazer é encontrar um diretório no qual você deseja criar o `virtualenv`; seu diretório Home, por exemplo. No Windows, pode aparecer como `C:\Users\Nome` (onde `Nome` é seu usuário de login).
+Tudo o que você precisa fazer é encontrar o diretório em que você quer criar o `virtualenv`; seu diretório Home, por exemplo. No Windows, pode aparecer como `C:\Users\Nome` (onde `Nome` é seu usuário de login).
 
-> ** Nota:** No Windows, certifique-se de que esse diretório não contém palavras acentuadas ou caracteres especias; se o seu usuário contém caracteres acentuados, use um diretório diferente, por exemplo: ` C:\djangogirls`.
+> ** Observação:** No Windows, certifique-se de que esse diretório não contém palavras acentuadas ou caracteres especias; se o seu usuário contém caracteres acentuados, use um diretório diferente, por exemplo: ` C:\djangogirls`.
 
-Para este tutorial usaremos um novo diretório`djangogirls` do seu diretório home:
+Para este tutorial usaremos um novo diretório `djangogirls` no seu diretório home:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@ Para este tutorial usaremos um novo diretório`djangogirls` do seu diretório ho
     $ cd djangogirls
     
 
-Nós vamos fazer um virtualenv chamado `meuenv`. O formato geral desse comando é:
+Vamos fazer um virtualenv chamado `meuenv`. O formato geral desse comando é:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,7 +37,7 @@ Para criar um novo `virtualenv`, você deve abrir o terminal e executar `python 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Onde `myvenv` é o nome do seu `virtualenv`. Você pode usar qualquer outro nome, mas sempre use minúsculas e sem espaços, acentos ou caracteres especiais. Também é uma boa ideia manter o nome curto - você irá referenciá-lo muitas vezes!
+Onde `myvenv` é o nome do seu `virtualenv`. Você pode usar qualquer outro nome, mas sempre use minúsculas e não use espaços, acentos ou caracteres especiais. Também é uma boa ideia manter o nome curto - você irá referenciá-lo muitas vezes!
 
 <!--endsec-->
 
@@ -51,9 +51,9 @@ Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv my
     $ python3 -m venv myvenv
     
 
-`myvenv` é o nome do seu `virtualenv`. Você pode usar qualquer outro nome, mas permaneça em caixa baixa(minúsculas) e não use espaços entre os nomes. Também é uma boa idéia manter o nome curto pois você vai escrevê-lo muitas vezes!
+`myvenv` é o nome do seu `virtualenv`. Você pode usar qualquer outro nome, mas use sempre letras minúsculas e não use espaços entre as palavras. Também é uma boa ideia manter o nome curto pois você vai escrevê-lo muitas vezes!
 
-> **NOTA:** Em algumas versões do Debian/Ubuntu, você pode receber o seguinte erro:
+> **Observação:** Em algumas versões do Debian/Ubuntu, você pode receber o seguinte erro:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -67,7 +67,7 @@ Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv my
 >     $ sudo apt install python3-venv
 >     
 > 
-> **OBS:** Em algumas versões do Debian/Ubuntu, iniciar o ambiente virtual com este comando gera o seguinte erro:
+> **Observação:** Em algumas versões do Debian/Ubuntu, iniciar o ambiente virtual com este comando gera o seguinte erro:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
