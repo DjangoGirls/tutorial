@@ -30,7 +30,7 @@ Vamos começar adicionando um link dentro do arquivo `blog/templates/blog/post_l
 {% endblock %}
 ```
 
-{% raw %}Queremos um link no título do post dentro da página de lista de posts apontando para a página de detalhes do post respectivo. Vamos mudar `<h1><a href="">{{ post.title }}</a></h1>` e adicionar um link para a página de detalhe:{% endraw %}
+{% raw %} Queremos um link no título do post dentro da página de lista de posts apontando para a página de detalhes do post respectivo. Vamos mudar `<h1><a href="">{{ post.title }}</a></h1>` e adicionar um link para a página de detalhe: {% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -50,11 +50,12 @@ Agora, quando formos para: http://127.0.0.1:8000/ veremos um erro (como esperado
 
 ## Criando uma URL para página de detalhes de um post
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+Vamos criar uma URL em `urls.py` para a nossa `post_detail` *view*!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+Queremos que a página de detalhes do nosso primeiro post seja exibida por essa **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
+Vamos criar uma URL no arquivo `blog/urls.py` que aponta para uma *view* chamada `post_detail`, que vai nos mostrar o post completo. Adicione a linha `url(r'^post/(?P<int:pk>+)/$', views.post_detail, name='post_detail')
+ ` ao arquivo `blog/urls.py`. O arquivo deverá ficar assim:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -68,9 +69,9 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+A parte `post/<int:pk>/` especifica um padrão de URL – vamos explicar:
 
-- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `post/` significa apenas que a URL deve começar com a palavra **post** seguida por **/**. Até aqui, tudo bem.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
 - `/` – then we need a **/** again before finishing the url.
 
