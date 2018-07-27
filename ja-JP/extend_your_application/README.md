@@ -38,7 +38,7 @@
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}不思議な` {％ url 'post_detail' pk = post.pk ％}`を説明します。 `{% %}`という表記は、Djangoのテンプレートタグを使用していることを意味しています。 次にURLを作成するものを使用します！
+{% raw %}不思議な` {％ url 'post_detail' pk = post.pk ％}`を説明します。 気づいたかもしれませんが、`{% %}`という表記はDjangoのテンプレートタグを使用していることを意味しています。 次にURLを作成するものを使用します！
 
 `post_detail`の部分は、Djangoが`blog/urls.py`にname = post_detailのURLを指定していることを意味します
 
