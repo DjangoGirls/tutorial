@@ -46,11 +46,12 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │         settings.py
+    │         urls.py
+    │         wsgi.py
+    │         __init__.py
+    └───requirements.txt
     
 
 > **注**：ディレクトリ構造には、以前作成した`venv`ディレクトリもあります。

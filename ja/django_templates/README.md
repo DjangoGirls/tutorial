@@ -4,7 +4,7 @@
 
 ## テンプレートタグとは？
 
-HTMLではブラウザがpythonを認識できないのでpythonのコードは書けません。HTMLはより静的でpythonは動的です。
+HTML中で本当はPythonのコードを書くことはできません。なぜならブラウザが理解できないからです。ブラウザはHTMLだけ分かります。HTMLはどちらかというと静的で、それに対してPythonはもっとずっと動的なことを私たちは知っています。
 
 **Djangoテンプレートタグ** はHTMLにPyhtonのようなコードを埋め込むことができて、動的なウェブサイトがより早く簡単に作れます!
 
@@ -32,7 +32,7 @@ Djangoテンプレートで変数を表示するためには、次のように�
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Djangoはオブジェクトのリストと認識します。 **Introduction to Python** を思い出して下さい。 ループを使ってリストを表示しましたよね。 Djangoテンプレートではこう書きます：
+Djangoはオブジェクトのリストと認識します。 **Python入門**でどうやってリストを表示できたか覚えていますか？ ループを使ってリストを表示しましたよね。 Djangoテンプレートではこう書きます：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -46,7 +46,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
 
 ![図 13.2](images/step2.png)
 
-動きましたね。 しかし、本当は、**Introduction to HTML** で作った静的な記事のように表示してほしいところです。 そこで、HTMLとテンプレートタグを混ぜてみましょう。 `body` タグの中を次のように書いてください：
+動きましたね。 しかし、本当は**HTML入門**で作った静的な記事のように表示してほしいところです。 そこで、HTMLとテンプレートタグを混ぜてみましょう。 `body` タグの中を次のように書いてください：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,7 +64,7 @@ Djangoはオブジェクトのリストと認識します。 **Introduction to P
 {% endfor %}
 ```
 
-`{% for %}` と `{% endfor %}` の間にリストの中のオブジェクトごとに表示したい内容を書くとオブジェクトの数だけ繰り返し書かれます。ページをリロードしてみましょう。
+{% raw %}`{% for %}` と `{% endfor %}` の間に書いたものはリスト中の各オブジェクトの分だけ繰り返されます。ページをリロードしてみましょう。{% endraw %}
 
 ![図 13.3](images/step3.png)
 

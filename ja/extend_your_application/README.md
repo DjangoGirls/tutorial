@@ -2,7 +2,7 @@
 
 # アプリケーションを拡張しよう
 
-もう、ウェブサイトを作るのに必要な全ての章は終わりました。どのようにモデル、URL、ビュー、テンプレートを書いたら良いかわかっていますし、またウェブサイトの作り方もわかります。
+もう、ウェブサイトを作るのに必要な全ての章は終わりました。どのようにモデル、URL、ビュー、テンプレートを書いたら良いかわかっていますし、またウェブサイトを素敵にするやり方もわかります。
 
 さあ練習しましょう！
 
@@ -30,7 +30,7 @@
 {% endblock %}
 ```
 
-{% raw %}投稿リストの投稿のタイトルから投稿の詳細ページへのリンクが必要です。 投稿の詳細ページにリンクするように`<h1><a href="">{{ post.title }}</a></h1>` {% endraw %}
+{% raw %}投稿リストの投稿のタイトルから投稿の詳細ページへのリンクが必要です。 投稿の詳細ページにリンクするように`<h1><a href="">{{ post.title }}</a></h1>`を変更しましょう。{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,13 +38,13 @@
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}` {％url 'post_detail' pk = post.pk％}`を説明します。 `{% %}`という表記は、Djangoのテンプレートタグを使用していることを意味しています。 次にURLを作成するものを使用します！
+{% raw %}不思議な` {％ url 'post_detail' pk = post.pk ％}`を説明します。 気づいたかもしれませんが、`{% %}`という表記はDjangoのテンプレートタグを使用していることを意味しています。 今私たちはこれをURLを作るために使います！{% endraw %}
 
-`post_detail`の部分は、Djangoが`blog/urls.py`にname = post_detailのURLを指定していることを意味します
+`post_detail`の部分は、Djangoに`blog/urls.py`のname=post_detailのURLを要求していることを表しています。
 
-pk = post.pkの部分は、 pkは主キーの略で、データベースの各レコードの一意の名前です。 Postモデルでプライマリキーを指定しなかったので、Djangoは私たちのために1つのキーを作成します（デフォルトでは、レコードごとに1、2、3と数字が増えます）。 私たちの記事はPostオブジェクトの他のフィールド（タイトル、作者など）にアクセスするのと同じ方法で、post.pkを書くことによって主キーにアクセスします！
+そして`pk=post.pk`についてはどうでしょうか? `pk`はプライマリキーの略で、データベースの各レコードのユニークな名前です。 `Post`モデルでプライマリキーを指定しなかったので、Djangoは私たちのために1つのキーを作成し（デフォルトでは、各レコードごとに1ずつ増える数字で、たとえば1、2、3です）、各投稿に`pk`というフィールド名で追加します。 `Post`オブジェクトの他のフィールド（`title`、`author`など）にアクセスするのと同じ方法で、`post.pk`と書くことによってプライマリキーにアクセスします！
 
-さて、私たちがhttp://127.0.0.1:8000/に行くと、（`post_detail`のURLまたは*view*をまだ持っていないので、 >）。 それは次のようになります：
+さて、私たちが http://127.0.0.1:8000/ に行くとエラーが出ます（知っての通り、URLまたは`post_detail`の*ビュー*をまだ持っていないので）。 それは次のようになります：
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
@@ -52,9 +52,9 @@ pk = post.pkの部分は、 pkは主キーの略で、データベースの各�
 
 `post_detail` *ビュー*用に`urls.py`にURLを作成しましょう！
 
-最初の投稿の詳細がこの**URL**に表示されるようにします：http://127.0.0.1:8000/post/1/
+最初の投稿の詳細がこの**URL**で表示されるようにします：http://127.0.0.1:8000/post/1/
 
-Djangoが`post_detail`という名前の*表示*を指すように`blog/urls.py`ファイルにURLを作ってください。 `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` という行を `blog/urls.py` ファイルに追加しましょう。 ファイルは次のようになるでしょう。
+投稿の内容を表示する`post_detail`という名前の*ビュー*をDjangoが指し示すように`blog/urls.py`ファイルでURLを作りましょう。 `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` という行を `blog/urls.py` ファイルに追加しましょう。 ファイルは次のようになるでしょう。
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
