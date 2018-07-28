@@ -54,7 +54,7 @@
 
 最初の投稿の詳細がこの**URL**で表示されるようにします：http://127.0.0.1:8000/post/1/
 
-Djangoが`post_detail`という名前の*表示*を指すように`blog/urls.py`ファイルにURLを作ってください。 `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` という行を `blog/urls.py` ファイルに追加しましょう。 ファイルは次のようになるでしょう。
+投稿の内容を表示する`post_detail`という名前の*ビュー*をDjangoが指し示すように`blog/urls.py`ファイルでURLを作りましょう。 `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` という行を `blog/urls.py` ファイルに追加しましょう。 ファイルは次のようになるでしょう。
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
