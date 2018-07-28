@@ -190,9 +190,22 @@ We can also reverse the ordering by adding `-` at the beginning:
 ```
 
 
-### Chaining QuerySets 
+### Combining QuerySets
 
-You can also combine QuerySets by **chaining** them together:
+You can also combine QuerySets by **unioning** them together:
+
+```python
+>>> usernames = User.objects.values_list('username', flat=True)
+>>> post_titles = Post.objects.values_list('title', flat=True)
+>>> usernames.union(post_titles).order_by('name')
+<QuerySet ['Post number 2', 'My 3rd post!', '4th title of post', 'Sample title', 'me']>
+```
+
+
+### Chaining QuerySet methods
+
+The result of refining a QuerySet is itself a QuerySet, so it's possible to
+**chain** refinements together. For example:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
