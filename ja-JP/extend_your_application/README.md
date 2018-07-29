@@ -102,9 +102,9 @@ Post.objects.get(pk=pk)
 
 ![Page not found](images/404_2.png)
 
-自分用の`Page not found`ページを作成することもできます。 しかし、それは現在非常に重要ではないので、私たちはそれをスキップします。
+いい知らせとして実際には自分の`Page not found`ページを作って自分の好きなようにきれいにすることができます。しかしそれは今すごく重要ではないので、私たちはそれをスキップします。
 
-`views.py`ファイルに*view*を追加してください。
+よし、今こそ*ビュー*を`views.py`ファイルに追加するときです！
 
 `blog/urls.py`では`views.post_detail`というビューを参照する`post_detail`という名前のURLルールを作成しました。 これは、Djangoが`blog/views.py`内の`post_detail`というビュー機能を使うことを意味します。
 
