@@ -160,7 +160,7 @@ GitHub からアプリを自動的に構成するためのヘルパーを実行�
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-実行しているところを見れば、何をしているのか見ることができます。
+実行しているところを見れば、何をしているのかわかるでしょう。
 
 - GitHubからコードをダウンロードする
 - PythonAnywhere上にvirtualenvを作成する。ちょうどあなたのPC上のように
