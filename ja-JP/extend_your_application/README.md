@@ -106,7 +106,7 @@ Post.objects.get(pk=pk)
 
 よし、今こそ*ビュー*を`views.py`ファイルに追加するときです！
 
-`blog/urls.py`では`views.post_detail`というビューを参照する`post_detail`という名前のURLルールを作成しました。 これは、Djangoが`blog/views.py`内の`post_detail`というビュー機能を使うことを意味します。
+`blog/urls.py`では`views.post_detail`というビューを参照する`post_detail`という名前のURLルールを作成しました。 これは、Djangoが`blog/views.py`内の`post_detail`というビュー関数を待っていることを意味します。
 
 `blog/views.py`を開き、他の`from`行の近くに次のコードを追加する必要があります。
 
@@ -116,7 +116,7 @@ Post.objects.get(pk=pk)
 from django.shortcuts import render, get_object_or_404
 ```
 
-ファイルの最後に*view*を追加します：
+ファイルの最後に*ビュー*を追加します：
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -130,7 +130,7 @@ def post_detail(request, pk):
 
 ![Post list view](images/post_list2.png)
 
-出来ましたね！ しかし、あなたはブログのポストタイトルのリンクをクリックするとどうなりますか？
+出来ましたね！ しかし、ブログ投稿のタイトルのリンクをクリックするとどうなりますか？
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
