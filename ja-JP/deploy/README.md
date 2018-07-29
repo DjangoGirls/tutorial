@@ -180,7 +180,7 @@ PythonAnywhereではこれらすべてのステップは自動化されていま
 
 管理者の詳細を入力します。 PythonAnywhere上のパスワードをより安全にしたい場合を除き、混乱を避けるために自分のコンピュータで使用しているのと同じものを使用することをお勧めします。
 
-PythonAnywhereのコードをlsを使って見てみることもできます：
+PythonAnywhereのコードを`ls`を使って見てみることもできます：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
