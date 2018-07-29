@@ -98,7 +98,7 @@ Post.objects.get(pk=pk)
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-私たちはそれを望んでいません！ しかしもちろん、Djangoには、それを処理するものがあります：`get_object_or_404`。 与えられた`pk`に`Post`がない場合、`Page Not Found 404`のページが表示されます。
+私たちはそれを望んでいません！ しかしもちろん、Djangoにはそれを処理するものがあります：`get_object_or_404` です。 与えられた`pk`の`Post`がない場合、前よりもっとよい `Page Not Found 404` ページが表示されます。
 
 ![Page not found](images/404_2.png)
 
