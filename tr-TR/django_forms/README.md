@@ -320,9 +320,9 @@ böylece şablon şöyle görünecektir:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-Daha önce kullandığımız `blog/templates/blog/post_edit.html` template'i tekrar kullanacağız, tek eksik bir *view*.
+Daha önce kullandığımız `blog/templates/blog/post_edit.html` template'ini tekrar kullanacağız, geriye bir tek *view* kalıyor.
 
-`blog/views.py` açın ve dosyanın en sonuna bunu ekleyin:
+`blog/views.py` açalım ve dosyanın en sonuna şunu ekleyelim:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Bu nerdeyse bizim `post_new` view'e benziyor, değil mi? Ama, tam da değil. Özellikle url'lerden ekstra bir `pk` parametresi geçiriyoruz. Sonra,`get_object_or_404(Post, pk=pk)` düzenlemek istediğimiz `Post` modelini alıyoruz ve daha sonra bir form oluşturduğumzda bu yazıyı `instance` olarak geçiriyoruz, formu kaydettiğimizde de…
+Bu nerdeyse bizim `post_new` view'inin aynısı, değil mi? Ama, tam da değil. Özellikle url'lerden ekstra bir `pk` parametresi geçiriyoruz. Sonra,`get_object_or_404(Post, pk=pk)` ile düzenlemek istediğimiz `Post` modelini alıyoruz ve daha sonra bir form oluşturduğumuzda bu yazı objesini `instance` olarak geçiriyoruz, aynı şekilde formu kaydettiğimizde de…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,7 +358,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-Tamam, çalışıp çalışmadığını test edelim! `post_detail` sayfasına gidelim. Sağ üst köşede bir düzenleme butonu olmalıdır:
+Tamam, çalışıp çalışmadığını test edelim! `post_detail` sayfasına gidelim. Sağ üst köşede bir düzenleme butonu olmalı:
 
 ![Düzenle butonu](images/edit_button2.png)
 
@@ -366,15 +366,15 @@ Butona tıklarsak blog postunu görmemiz lazım:
 
 ![Form düzenleme](images/edit_form2.png)
 
-İstediğimiz gibi title ve texti değiştirebilir ve sonra da kaydedebilriz!
+İstediğimiz gibi title ve text'i değiştirebilir ve sonra da kaydedebiliriz!
 
-Tebrikler! Uygulaman gittikçe tamamlanıyor!
+Tebrikler! Uygulamamız gittikçe tamamlanıyor!
 
-Eğer Django formlarıyla ilgili daha çok bilgiye ihtiyacın varsa,dökümanı okumalısın: https://docs.djangoproject.com/en/2.0/topics/forms/
+Eğer Django formlarıyla ilgili daha çok bilgiye ihtiyacın varsa, dökümanı okumalısın: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Güvenlik
 
-Bir linke (bağlantı) tıklayarak yeni bir blog oluşturabilmek harika! Ama şu anda sizin sitenizi ziyaret eden herkes yeni bir blog post yapabilecek ve bu muhtemelen isteyeceğiniz bir şey değil. Butonun sadece sana görünmesini sağlayalım.
+Bir linke (bağlantı) tıklayarak yeni bir blog oluşturabilmek harika! Ama şu anda sizin sitenizi ziyaret eden herkes yeni bir blog post yapabilecek ve bu muhtemelen isteyeceğiniz bir şey değil. Butonun sadece bize görünmesini sağlayalım.
 
 `blog/templates/blog/base.html` dosyasında yarattığımız `page-header` `div` ve anchor etiketlerini (tags) bulalım. Şuna benziyor olmalı:
 
@@ -394,7 +394,7 @@ Linkin sadece admin olarak giriş yapmış kullanıcılara gözükmesi için ba�
 {% endif %}
 ```
 
-Bu `{% if %}` bağlantının sadece eğer sayfayı talep eden kullanıcı oturum açtıysa tarayıcıya gönderilmesine sebep olacak. Bu yeni post yaratılmasını kesin olarak engellemese de iyi bir başlangıç. Güvenlik konusu ek derslerde daha çok ele alınacak.
+Bu `{% if %}` linkin sadece sayfayı görüntüleyen kullanıcı oturum açtıysa görüntülenmesini sağlayacak. Bu yeni post yaratılmasını kesin olarak engellemese de iyi bir başlangıç. Güvenlik konusu ek derslerde daha çok ele alınacak.
 
 Az evvel detay sayfamıza eklediğimiz düzenle ikonunu hatırladınız mı? Aynı değişikliği oraya da eklemek istiyoruz. Böylelikle başka insanlar var olan gönderileri düzenleyemeyecekler.
 
