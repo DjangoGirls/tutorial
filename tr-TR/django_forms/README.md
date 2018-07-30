@@ -398,7 +398,7 @@ Bu `{% if %}` linkin sadece sayfayı görüntüleyen kullanıcı oturum açtıys
 
 Az evvel detay sayfamıza eklediğimiz düzenle ikonunu hatırladınız mı? Aynı değişikliği oraya da eklemek istiyoruz. Böylelikle başka insanlar var olan gönderileri düzenleyemeyecekler.
 
-`blog/templates/blog/post_detail.html` açın ve bu satırı bulun:
+`blog/templates/blog/post_detail.html` dosyasını açıp şu satırı bulalım:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Az evvel detay sayfamıza eklediğimiz düzenle ikonunu hatırladınız mı? Ayn
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Buna çevirin:
+Bu şekilde değiştirelim:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,9 +416,9 @@ Buna çevirin:
 {% endif %}
 ```
 
-Yüksek olasılıkla login yapmış olduğunuz için sayfayı yenilediğinizde farklı bir şey göremeyeceksiniz. Sayfayı farklı bir tarayıcı veya görünmez pencere ile yükleyin(Windows Edge üzerinde "InPrivate" olarak adlandırılan), yinede göreceksiniz ki bağlantı ve ikon gözükmeyecektir!
+Yüksek olasılıkla login yapmış olduğunuz için sayfayı yenilediğinizde farklı bir şey göremeyeceksiniz. Sayfayı farklı bir tarayıcı veya görünmez pencere ile yükleyelim (Windows Edge üzerinde "InPrivate" olarak adlandırılan), göreceksiniz ki bağlantı ve ikon artık görüntülenmiyor!
 
-## Bir şey daha: deployment (yayına alma) zamanı!
+## Son bir şey daha: deployment (yayına alma) zamanı!
 
 Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
 
