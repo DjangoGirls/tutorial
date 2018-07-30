@@ -168,33 +168,33 @@ OK, aktualisieren wir unsere Seite und sehen, ob `TemplateDoesNotExist` jetzt we
 
 Yay! Es funktioniert!
 
-# Deploy time!
+# Veröffentlichen!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Es wäre schön zu sehen, ob deine Website noch auf PythonAnywhere funktioniert, richtig? Lass sie uns erneut veröffentlichen.
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status
-    $ git add --all .
-    $ git status
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
+    $ git status 
+    $ git add --all . 
+    $ git status 
+    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site." 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Dann führe Folgendes in der [PythonAnywhere Bash-Konsole](https://www.pythonanywhere.com/consoles/) aus:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
-    $ git pull
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com 
+    $ git pull 
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Denk daran, `<your-pythonanywhere-username>` durch deinen PythonAnywhere-Benutzernamen zu ersetzen - ohne spitze Klammern).
 
-## Updating the static files on the server
+## Die statischen Dateien aktualisieren
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Server wie PythonAnywhere behandeln statische Dateien, "static files" (wie CSS Dateien), anders als Python Dateien, weil diese noch optimiert und dadurch dann schneller geladen werden können. Deswegen müssen wir, nachdem wir Änderungen an den CSS Dateien vorgenommen haben, einen extra Befehl auf dem Server ausführen, um diese Dateien zu aktualisieren. Der Befehl heißt `collectstatic`.
 
 Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
