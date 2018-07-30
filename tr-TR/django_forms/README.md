@@ -52,7 +52,7 @@ Bir kere daha sayfaya bir bağlantı, bir url, bir view ve bir template oluştur
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Yeni view'umuzun (görünümüzümün) adını `post_new` koymak istiyoruz. `"glyphicon glyphicon-plus"` class'ı kullandığımız bootstrap teması tarafından sağlanıyor ve bizim için bir artı işareti gösterecek.
+Yeni view'in (görünümün) adını `post_new` koymak istiyoruz. `"glyphicon glyphicon-plus"` class'ı kullandığımız bootstrap teması tarafından sağlanıyor ve bizim için bir artı işareti gösterecek.
 
 Satırı ekledikten sonra, HTML dosyanız bu şekilde görünmelidir:
 
@@ -85,7 +85,7 @@ Satırı ekledikten sonra, HTML dosyanız bu şekilde görünmelidir:
 </html>
 ```
 
-Dokümanı kaydedip http://127.0.0.1:8000 sayfasını yeniledikten sonra, siz de tanıdık `NoReverseMatch` hatasını görüyor olmalısınız, değil mi?
+Dosyayı kaydedip http://127.0.0.1:8000 sayfasını yeniledikten sonra, siz de tanıdık `NoReverseMatch` hatasını görüyor olmalısınız, değil mi?
 
 ## URL
 
@@ -112,7 +112,7 @@ urlpatterns = [
 ]
 ```
 
-Sayfayı yeniledikten sonra `post_new` view'ını oluşturmadığımız için `AttributeError` hatası alırız. Şimdi ekleyelim.
+Sayfayı yeniledikten sonra `post_new` view'ını oluşturmadığımız için `AttributeError` hatası aacağız. Şimdi onu ekleyelim.
 
 ## post_new view
 
@@ -124,7 +124,7 @@ Sayfayı yeniledikten sonra `post_new` view'ını oluşturmadığımız için `A
 from .forms import PostForm
 ```
 
-Ve sonra bizim *view*'imiz:
+Ve sonra bizim *view*'ımız:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -143,11 +143,11 @@ Yeni bir `Post` formu oluşturmak için `PostForm()` fonksiyonunu çağırmak ve
 * Formu göstermek zorundayız. Örneğin bunu şu şekilde yapabiliriz {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Yukarıdaki örnek satır HTML form etiketi içine alınmalı: `<form method="POST">...</form>`.
 * Bir `Kaydet` butonuna ihtiyacımız var. Bunu Bir HTML butonu ile yapıyoruz: `<button type="submit">Kaydet</button>`.
-* Ve son olarak, açılıştan hemen sonra `<form ...>` etiketini eklememiz gerekiyor {% raw %}`{% csrf_token %}`{% endraw %}. Formlarımızın güvenliğini sağladığı için bu çok önemlidir! Eğer bu kısmı unutursan, formu kaydetmeye çalıştığınızda Django şikayet edecektir:
+* Ve son olarak, açılıştan hemen sonra `<form ...>` etiketini eklememiz gerekiyor {% raw %}`{% csrf_token %}`{% endraw %}. Formlarımızın güvenliğini sağladığı için bu çok önemlidir! Eğer bu kısmı unutursak, formu kaydetmeye çalıştığımızda Django şikayet edecektir:
 
 ![CSFR Korumalı sayfa](images/csrf2.png)
 
-Tamam,hadi `post_edit.html` deki HTML'ye nasıl bakılacağını görelim:
+Tamam, hadi `post_edit.html` deki HTML'e bakalım:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -155,10 +155,10 @@ Tamam,hadi `post_edit.html` deki HTML'ye nasıl bakılacağını görelim:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>New post</h1>
+    <h1>Yeni post</h1>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type="submit" class="save btn btn-default">Kaydet</button>
     </form>
 {% endblock %}
 ```
@@ -281,9 +281,9 @@ Django tüm alanların doğruluğunu bizim için kontrol ediyor. Ne güzel, değ
 
 ## Form düzenleme
 
-Artık yeni bir form oluşturmayı biliyoruz. Peki, mevcut bir formu güncellemek için ne yapmalı? Bu az önce yaptığımız şeyle çok benzer. Hızlıca bazı önemli şeyleri oluşturalım. (Eğer birşeyi anlamazsan, çalıştırıcına sormalısın veya önceki bölümlere bakmalısın, çünkü bütün bu adımları daha önce bitirdik.)
+Artık yeni bir form oluşturmayı biliyoruz. Peki, mevcut bir formu güncellemek için ne yapmalı? Bu az önce yaptığımız şeyle çok benzer. Hızlıca bazı önemli şeyleri oluşturalım. (Eğer birşeyi anlamazsan, mentörüne sormalısın veya önceki bölümlere bakmalısın, çünkü bütün bu adımları daha önce bitirdik.)
 
-`blog/templates/blog/post_detail.html` açın ve satırı ekleyin
+`blog/templates/blog/post_detail.html` dosyasını açalım ve şu satırı ekleyelim
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Artık yeni bir form oluşturmayı biliyoruz. Peki, mevcut bir formu güncelleme
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-böylece şablon bunun gibi görünecektir:
+böylece şablon şöyle görünecektir:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
