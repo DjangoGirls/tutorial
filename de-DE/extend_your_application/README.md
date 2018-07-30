@@ -160,13 +160,13 @@ Das sieht dann so aus:
 
 Wir erweitern wieder `base.html`. Im `content`-Block wollen wir das Publikationsdatum eines Posts (published_date), falls es existiert, anzeigen und auch den Titel und den Text. Aber wir müssen noch ein paar wichtige Dinge klären, oder?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %} {% if ... %} ... {% endif %}</code> ist ein Template-Tag, das wir benutzen können, wenn wir etwas überprüfen möchten. (Erinnerst du dich? `if ...else</0> vom <strong>Einführung in Python</strong> Kapitel?) In diesem Fall hier wollen wir prüfen, ob das <code>published_date` Feld eines Post-Objektes nicht leer ist. {% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+OK, aktualisieren wir unsere Seite und sehen, ob `TemplateDoesNotExist` jetzt weg ist.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+Yay! Es funktioniert!
 
 # Deploy time!
 
