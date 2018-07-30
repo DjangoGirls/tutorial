@@ -46,7 +46,7 @@ Und was ist mit `pk=post.pk`? `pk` ist die Abkürzung für primary key (Primär-
 
 Wenn wir jetzt http://127.0.0.1:8000/ aufrufen, erhalten wir einen Fehler (wie erwartet, da wir ja noch keine URL oder *View* für `post_detail` erstellt haben). Das sieht so aus:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![NoReverseMatch Error](images/no_reverse_match2.png)
 
 ## Erstelle eine URL
 
@@ -94,7 +94,7 @@ Post.objects.get(pk=pk)
 
 Aber bei diesem Code gibt es ein Problem. Wenn es kein `Post`-Objekt mit diesem `primary key` (`pk`) gibt, bekommen wir einen hässlichen Fehler!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![DoesNotExist Error](images/does_not_exist2.png)
 
 Das wollen wir nicht! Natürlich stellt uns Django etwas zur Verfügung, um dieses Problem zu umgehen: `get_object_or_404`. Wenn es kein `Post`-Objekt mit einem gegebenen `pk` gibt, wird eine schöne Seite angezeigt, die sogenannte `Page Not Found 404` Seite ("Seite nicht gefunden"-Seite).
 
@@ -126,11 +126,11 @@ def post_detail(request, pk):
 
 Super. Lass uns nun http://127.0.0.1:8000/ aktualisieren.
 
-![Post list view](images/post_list2.png)
+![Die post_list View](images/post_list2.png)
 
 Es hat funktioniert! Aber was passiert, wenn du auf den Link im Blog-Titel klickst?
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![TemplateDoesNotExist Error](images/template_does_not_exist2.png)
 
 Oh nein! Ein anderer Fehler! Aber wir wissen ja schon, wie wir mit diesem umgehen, oder? Wir müssen ein Template hinzufügen!
 
@@ -164,7 +164,7 @@ Wir erweitern wieder `base.html`. Im `content`-Block wollen wir das Publikations
 
 OK, aktualisieren wir unsere Seite und sehen, ob `TemplateDoesNotExist` jetzt weg ist.
 
-![Post detail page](images/post_detail2.png)
+![Die post_detail Seite](images/post_detail2.png)
 
 Yay! Es funktioniert!
 
@@ -209,4 +209,4 @@ Der `manage.py collectstatic` Befehl ist ein bisschen wie `manage.py migrate`. W
 
 Springe nun noch schnell auf den [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und klicke auf **Reload**.
 
-And that should be it! Congrats :)
+Und das sollte es sein! Herzlichen Glückwunsch :)
