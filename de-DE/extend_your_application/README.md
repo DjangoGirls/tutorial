@@ -72,9 +72,9 @@ Der Teil `post/<int:pk>/` definiert ein URL-Muster – wir erklären es dir:
 - `<int:pk>` – Der Teil ist schwieriger. Er bedeutet, dass Django einen Integer-Wert erwartet und diesen in Form einer Variablen namens `pk` zu einer View weitergibt.
 - `/` – dann wir brauchen wieder vor dem Abschluss der URL einen **/**.
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+Also wenn du `http://127.0.0.1:8000/post/5/` in deinen Browser eingibst, wird Django verstehen, dass du nach einer *View* suchst, die `post_detail` heißt, und wird der *View* eine Variable `pk` übergeben, die eine `5` enthält.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+So, jetzt haben wir der `blog/urls.py` ein neues URL-Muster hinzugefügt! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
