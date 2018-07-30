@@ -30,21 +30,21 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Önce Django formları (`from django import forms`) ve tabii ki `Post` modelimizi içe aktarmalıyız (`from .models import Post`).
+Önce Django formları (`from django import forms`) ve tabii ki `Post` modelimizi import komutu ile içe aktarmalıyız (`from .models import Post`).
 
-`PostForm`, tahmin etmiş olabileceğiniz gibi, formumuzun ismi. Django'ya bu formun bir `ModelForm` olduğunu belirtmeliyiz. Bunu `forms.ModelForm` sayesinde Django bizim için yapacaktır.
+Tahmin etmiş olabileceğiniz gibi, formumuzun ismi `PostForm`. Django'ya bu formun bir `ModelForm` olduğunu belirtmeliyiz. Bunu `forms.ModelForm` sayesinde Django bizim için yapacaktır.
 
-Sırada Django'ya bu formu (`model = Post`) oluşturmak için hangi modelin kullanılması gerektiğini anlattığımız `class Meta` var).
+Sırada Django'ya bu formu oluşturmak için hangi modelin kullanılması gerektiğini (`model = Post`) anlattığımız `class Meta` var.
 
 Son olarak, formumuzda hangi alan(lar)ın bulunması gerektiğini söyleyebiliriz. Bu senaryoda sadece `title` ve `text` alanlarının gösterilmesini istiyoruz - `author` şu anda giriş yapmış olması gereken kişidir (yani siz!) ve biz ne zaman yeni bir yazı oluşturursak `created_date` otomatik olarak (örn. kod içinde) ayarlanmalıdır, değil mi?
 
 Ve hepsi bu kadar! Şimdi tek yapmamız gereken formu bir *view* içinde kullanıp, template (şablon) içinde göstermek.
 
-Bir kere daha sayfaya bir bağlantı, bir url, bir görünüm ve şablon oluşturacağız.
+Bir kere daha sayfaya bir bağlantı, bir url, bir view ve bir template oluşturacağız.
 
 ## Formun bulunduğu sayfaya bağlantı oluşturma
 
-Şimdi `blog/templates/blog/base.html` şablonunu açma zamanı. Öncelikle `page-header` adlı `div` öğesinin içine bir bağlantı ekleyeceğiz:
+Şimdi `blog/templates/blog/base.html` isimli template'i açma zamanı. Öncelikle `page-header` adlı `div` öğesinin içine bir bağlantı ekleyeceğiz:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
