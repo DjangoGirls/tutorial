@@ -230,7 +230,7 @@ Son olarak hızlı bir şekilde yeni oluşturulmuş blog gönderimiz için `post
 from django.shortcuts import redirect
 ```
 
-Bunu dosyanın en başına ekleyelim. Şimdi yeni yarattığımız blog postu için `post_detail` sayfasına gidebiliriz":
+Bunu dosyanın en başına ekleyelim. Şimdi yeni yarattığımız blog postu için "`post_detail` sayfasına git" diyebiliriz:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -240,7 +240,7 @@ return redirect('post_detail', pk=post.pk)
 
 `post_detail`, gitmek istediğimiz view'ın adı. Unutmayalım ki bu *view* için bir `pk` değişkeni lazım. Bu değeri viewlere aktarmak için `pk=post.pk` yazarız. Burada `post` yeni yarattığımız blog postudur!
 
-Çok şey söyledik ama herhalde *view* ı tümüyle bir görmek isteriz artık, değil mi?
+Çok şey söyledik ama artık *view*'ı tümüyle bir görmek isteriz, değil mi?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,21 +259,21 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Bakalım çalışacak mı? http://127.0.0.1:8000/post/new/ sayfasına gidin, bir `title` ve `text` ekleyin, kaydedin... ve işte oldu! Yeni blog postu eklenmiş ve `post_detail` sayfasına yönlendirildik!
+Bakalım çalışacak mı? http://127.0.0.1:8000/post/new/ sayfasına gidin, bir `title` ve `text` ekleyin, kaydedin... ve işte oldu! Yeni blog postu eklendi ve `post_detail` sayfasına yönlendirildik!
 
-Postu kaydetmeden önce publish date e değer atandığını fark etmiş olabilirsin. Daha sonra *publish button* nu **Django Girls Tutorial: Ek konular** da anlatacağız.
+Postu kaydetmeden önce publish date'e değer atandığını fark etmiş olabilirsin. Daha sonra *publish button*'nı **Django Girls Tutorial: Ek konular**'da anlatacağız.
 
 Süper!
 
-> Yakın zamanda Django'nun admin arayüzünü kullandığımız için, sistem hala giriş yaptığımızı düşünüyor. Bazı durumlar bizim oturumdan çıkmamıza neden olabilir (web tarayıcısını kapatmak, veritabanını tekrar başlatmak, vb). Eğer oturum açan kullanıcı olmadığı için post yaratmada hata alırsak admin sayfası olan http://127.0.0.1:8000/admin adrese gidip tekrar oturum açmalıyız. Bu sorunu geçici olarak düzeltir. Kalıcı çözüm, ana tutorialdan sonra **Ödev: Web sitene güvenlik ekleme!** bölümünde anlatılacak.
+> Yakın zamanda Django'nun admin arayüzünü kullandığımız için, sistem hala giriş yaptığımızı düşünüyor. Bazı durumlar bizim oturumdan çıkmamıza neden olabilir (web tarayıcısını kapatmak, veritabanını tekrar başlatmak, vb). Eğer oturum açık olmadığı için post yaratmada hata alırsak admin sayfası olan http://127.0.0.1:8000/admin adresine gidip tekrar oturum açmalıyız. Bu sorunu geçici olarak düzeltecektir. Kalıcı çözüm, ana tutorialdan sonra **Ödev: Web sitene güvenlik ekleme!** bölümünde anlatılacak.
 
 ![Oturum hatası](images/post_create_error.png)
 
 ## Form doğrulama
 
-Şimdi de Django formlarının ne kadar havalı olduğunu görelim. Bir blog postunun `title` ve `text` alanları olmalı. `Post` modelimizde bu alanların( `published_date` e karşı olarak) gerekli olmadığını söylemedik, bu yüzden Django varsayılan olarak hazır olmasını bekler.
+Şimdi de Django formlarının ne kadar havalı olduğunu görelim. Bir blog postunun `title` ve `text` alanları olmalı. `Post` modelimizde bu alanların gerekli olmadığını söylemedik (`published_date`'te yaptığımızın tersine), bu yüzden Django varsayılan olarak bu alanın dolu olmasını bekliyor.
 
-Formu `title` ve `text` olmadan kaydetmeye çalışın. Ne olacak, tahmin et!
+Formu `title` ve `text` olmadan kaydetmeye çalışalım. Ne olacak, tahmin edin!
 
 ![Form doğrulama](images/form_validation2.png)
 
