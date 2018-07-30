@@ -1,4 +1,4 @@
-Chromebook kullanmıyorsanız, [bu bölümü atlayabilirsiniz](http://django-blog-tutorial.kadinyazilimci.com/en/installation/#install-python). Chromebook kullanıyorsanız kurulum deneyiminiz biraz farklı olacaktır. Diğer yükleme yönergelerini göz ardı edebilirsiniz.
+Chromebook kullanmıyorsanız, [bu bölümü atlayabilirsiniz](http://tutorial.djangogirls.org/en/installation/#install-python). Chromebook kullanıyorsanız kurulum deneyiminiz biraz farklı olacaktır. Diğer yükleme yönergelerini göz ardı edebilirsiniz.
 
 ### Cloud 9
 
