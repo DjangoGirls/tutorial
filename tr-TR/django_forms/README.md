@@ -259,7 +259,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Bakalım çalışacak mı? http://127.0.0.1:8000/post/new/ sayfasına gidin, bir `title` ve `text` ekleyin, kaydedin... ve işte oldu! Yeni blog postu eklendi ve `post_detail` sayfasına yönlendirildik!
+Bakalım çalışacak mı? http://127.0.0.1:8000/post/new/ sayfasına gidelim, bir `title` ve `text` ekleyelim, kaydedelim... ve işte oldu! Yeni blog postu eklendi ve `post_detail` sayfasına yönlendirildik!
 
 Postu kaydetmeden önce publish date'e değer atandığını fark etmiş olabilirsin. Daha sonra *publish button*'nı **Django Girls Tutorial: Ek konular**'da anlatacağız.
 
@@ -420,7 +420,7 @@ Yüksek olasılıkla login yapmış olduğunuz için sayfayı yenilediğinizde f
 
 ## Son bir şey daha: deployment (yayına alma) zamanı!
 
-Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
+Bakalım PythonAnywhere'de de çalışacak mı? Tekrar yayına alalım!
 
 * İlk önce kodumuzu commit edelim, sonra Github'a push edelim:
 
@@ -444,6 +444,6 @@ Bakalım PythonAnywhere'de calışacak mı? Tekrar yayına alalım!
 
 (Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
 
-* Nihayet, [Web tab](https://www.pythonanywhere.com/web_app_setup/) ına gidip **Reload** edelim.
+* Nihayet, [Web tab](https://www.pythonanywhere.com/web_app_setup/)'ına gidip **Reload** edelim.
 
 İşte bu kadar! Tebrikler :)
