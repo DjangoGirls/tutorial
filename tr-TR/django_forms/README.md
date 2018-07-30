@@ -187,7 +187,7 @@ def post_new(request):
 
 Formu gönderdiğimizde, aynı view'a yönlendirileceğiz, bu sefer `request` içinde daha fazla bilgi olacak, özellikle `request.POST` içinde (isimlendirmenin blog gönderisiyle bir bağlantısı yoktur; daha fazla veri göndermemizle ilgilidir). HTML dosyasında `<form>` tanımımızdaki `method="POST"` değişkenini hatırlıyor musunuz ? Formdan gelen tüm alanlar şimdi `request.POST`'un içerisinde. `POST`'un ismini değiştirmememiz lazım (`method` için geçerli diğer değer sadece `GET`'dir, ama şimdi ikisi arasındaki farkın ne olduğunu anlatacak kadar vaktimiz yok).
 
-*view* içinde halletmemiz gereken iki ayrı durum vardır: öncelikle, sayfaya ilk kez eriştiğimizde ve boş bir form isteğimizde, ikincide *view* girdiğimiz form verisiyle geri gideriz. Yani bir koşul eklememiz gerekiyor (bunun için `if` kullanacağız):
+*view* içinde ele almamız gereken iki farklı durum var: ilki, sayfaya ilk kez eriştiğimizde boş bir form döndürmek isteğimiz durum, ikincisi ise *view*'e forma girdiğimiz form verisiyle geri döndüğümüz durum. Yani bir koşul eklememiz gerekiyor (bunun için `if` kullanacağız):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-Noktaları doldurma zamanı `[...]`. Eğer `method` `POST` ise `PostForm` formdaki veriyle oluşturmalıyız, değil mi? Bunu şu şekilde yapacağız:
+Boşlukları doldurma zamanı `[...]`. Eğer `method` `POST` ise `PostForm`'u forma girilen veri ile oluşturmalıyız, değil mi? Bunu şu şekilde yapacağız:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,9 +220,9 @@ if form.is_valid():
     post.save()
 ```
 
-Temel olarak, burada iki şey yaptık: formu `form.save` ile kaydettik ve bir author ekledik (`PostForm`'da bir `author` tanımlı olmadığı ve bu zorunlu bir alan olduğu için). `commit=False`; e `Post` modelini kaydetmek istemiyoruz demektir - öncelikle authorı eklemeliyiz. Çoğu zaman `form.save()` kullanırken, `commit=False` kullanılmayacaktır, bu durumda desteklemeliyiz. `post.save()` değişiklikleri saklar (author ekleyerek) ve yeni blog yazısı oluşturulur!
+Temel olarak, burada iki şey yaptık: formu `form.save` ile kaydettik ve bir author (yazar) ekledik (`PostForm`'da bir `author` tanımlı olmadığı ve bu zorunlu bir alan olduğu için). `commit=False` `Post` modelini henüzkaydetmek istemiyoruz demektir - öncelikle yazarı eklemeliyiz. Çoğu zaman `form.save()`'i `commit=False` olmadan kullanacağız, fakat bu durumda bu parametre ile kullanmalıyız. `post.save()` değişiklikleri saklar (author ekleyerek) ve yeni blog yazısı oluşturulur!
 
-Son olarak hızlı bir şekilde yeni oluşturulmuş blog gönderimiz için `post_detail` gidebilirsek harika olurdu değil mi? Bunu yapmak için bir tane daha içe yapmamız gerekli:
+Son olarak hızlı bir şekilde yeni oluşturulmuş blog gönderimiz için `post_detail` sayfasına gidebilirsek harika olurdu değil mi? Bunu yapmak için bir tane daha import yapmamız gerekli:
 
 {% filename %}blog/views.py{% endfilename %}
 
