@@ -102,11 +102,11 @@ Das wollen wir nicht! Natürlich stellt uns Django etwas zur Verfügung, um dies
 
 Die gute Neuigkeit ist, dass du auch deine eigene `Page not found`-Seite erstellen und diese so hübsch gestalten kannst, wie du willst. Aber da das gerade nicht so wichtig ist, überspringen wir das erst einmal.
 
-OK, time to add a *view* to our `views.py` file!
+Okay, es wird Zeit, die *View* zu unserer `views.py`-Datei hinzuzufügen!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+In `blog/urls.py` haben wir eine URL-Regel namens `post_detail` erstellt, die auf eine View namens `views.post_detail` referenziert. Das heißt, dass Django eine View-Funktion erwartet, die `post_detail` heißt und in `blog/views.py` angelegt wurde.
 
-We should open `blog/views.py` and add the following code near the other `from` lines:
+Wir sollten also `blog/views.py` öffnen und den folgenden Code zu den anderen `from` Zeilen hinzufügen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -114,7 +114,7 @@ We should open `blog/views.py` and add the following code near the other `from` 
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+Und am Ende der Datei werden wir unsere *View*-Funktion ergänzen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,21 +124,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Super. Lass uns nun http://127.0.0.1:8000/ aktualisieren.
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+Es hat funktioniert! Aber was passiert, wenn du auf den Link im Blog-Titel klickst?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+Oh nein! Ein anderer Fehler! Aber wir wissen ja schon, wie wir mit diesem umgehen, oder? Wir müssen ein Template hinzufügen!
 
-## Create a template for the post details
+## Erstelle ein Template
 
-We will create a file in `blog/templates/blog` called `post_detail.html`.
+Wir erstellen eine Datei in `blog/templates/blog` mit dem Namen `post_detail.html`.
 
-It will look like this:
+Das sieht dann so aus:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -158,7 +158,7 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Wir erweitern wieder `base.html`. Im `content`-Block wollen wir das Publikationsdatum eines Posts (published_date), falls es existiert, anzeigen und auch den Titel und den Text. Aber wir müssen noch ein paar wichtige Dinge klären, oder?
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
