@@ -171,7 +171,7 @@ Buraya kadar model hakkında anlamadığın bir şeyler varsa mentörüne sormak
 
 ### Modeller için veritabanında tablo oluşturma
 
-Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. Öncelikle Django'nun modelimizde bazı değişiklikler yaptığımızı bilmesini sağlamalıyız. (Daha yeni oluşturduk!) Konsol penceresine gidin ve `python manage.py makemigrations blog` yazın. Şöyle görünmeli:
+Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. Öncelikle Django'nun modelimizde bazı değişiklikler yaptığımızı bilmesini sağlamalıyız. (Daha yeni oluşturduk!) Komut satırına gidelim ve `python manage.py makemigrations blog` yazalım. Şöyle görünmeli:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -184,9 +184,9 @@ Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. Öncelikle
 
 **Not:** Düzenlediğiniz dosyaları kaydetmeyi unutmayın. Aksi takdirde, bilgisayarınız önceki sürümü çalıştırarak beklenmedik hatalar verebilir.
 
-Django bize veritabanımıza uygulayabileceğimiz bir taşıma (migrasyon) dosyası oluşturdu. `python manage.py migrate blog` yazdığın zaman şunu görmelisin:
+Django bize veritabanımıza uygulayabileceğimiz bir taşıma (migration) dosyası oluşturdu. `python manage.py migrate blog` yazdığın zaman şunu görmelisin:
 
-{% filename %}komut-satır{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
