@@ -37,17 +37,17 @@ Cevaplamamız gereken soru: Bir blog gönderisi nedir? Özellikleri ne olmalıd�
 Tabii ki blog gönderimizin içeriği için yazı ve bir de başlık lazım, değil mi? Kimin yazdığını da bilsek iyi olur - dolayısı ile bir de yazara ihtiyacımız var. Son olarak, gönderinin ne zaman yaratıldığını ve yayınlandığını da bilmek isteyebiliriz.
 
     Post
-    ------
-    baslik
-    yazi
-    yazar
-    yaratilma_tarihi
-    yayinlanma_tarihi
+    --------
+    title
+    text
+    author
+    created_date
+    published_date
     
 
 Bir blog gönderisi ile ne tür şeyler yapılabilir? Gönderiyi yayınlayan bir `method` olması güzel olurdu, değil mi?
 
-Bu yüzden `yayinla` metoduna ihtiyacımız olacak.
+Bu yüzden `publish` metoduna ihtiyacımız olacak.
 
 Ne elde etmek istediğimizi bildiğimize göre, haydi bunu Django'da modellemeye başlayalım!
 
@@ -55,7 +55,7 @@ Ne elde etmek istediğimizi bildiğimize göre, haydi bunu Django'da modellemeye
 
 Nesnenin ne olduğunu bildiğimize göre, blog gönderimiz için bir Django modeli oluşturabiliriz.
 
-Django'da modeller özel bir çeşit nesnedir - `veritabanı`'na kaydedilir. Veritabanı ise veri topluluğuna verdiğimiz isim. Veritabanında, kullanıcılar, blog gönderileri, vs. ile ilgili bilgileri saklarız. Verilerimizi depolamak için SQLite veritabanını kullanacağız. Bu varsayılan Django veritabanı adaptörü - şimdilik bizim için yeterli olacaktır.
+Django'da modeller özel bir çeşit nesnedir - `veritabanı`'na kaydedilir. Veritabanı (database) belirli bir veri topluluğuna verdiğimiz isim. Veritabanında, kullanıcılar, blog gönderileri, vs. ile ilgili bilgileri saklarız. Verilerimizi depolamak için SQLite veritabanını kullanacağız. Bu varsayılan Django veritabanı adaptörü - şimdilik bizim için yeterli olacaktır.
 
 Veritabanındaki bir modeli, sütunları (alan adı) ve satırları (veri) olan bir hesap çizelgesi olarak düşünebilirsiniz.
 
