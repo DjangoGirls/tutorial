@@ -2,7 +2,7 @@
 
 > 家で１人でこのチャプターに挑戦している方へ：このチャプターは、動画（英語）もあるので参考にしてください。 [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc)
 > 
-> この章は、ジェシカ・マッケラー（http://web.mit.edu/jesstess/www/）による「インターネットの仕組み」を参照しています。
+> この章は、ジェシカ・マッケラー（http://web.mit.edu/jesstess/www/ ）による「インターネットの仕組み」を参照しています。
 
 私達は、毎日インターネットを使っています。でも、ブラウザのアドレス欄に https://djangogirls.org のようなアドレスを入力して `Enter` キーを押すと何が起こるか、あなたは実際に知っていますか？
 
