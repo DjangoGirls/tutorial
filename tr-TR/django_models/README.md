@@ -61,7 +61,7 @@ Veritabanındaki bir modeli, sütunları (alan adı) ve satırları (veri) olan 
 
 ### Uygulama oluşturma
 
-Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşturacağız. Her şeyin en başından düzenli olması çok iyidir. Bir uygulama oluşturmak için aşağıdaki komutu konsolda çalıştırmamız gerekiyor ( `djangogirls` dizininden `manage.py` dosyasının bulunduğu yer):
+Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşturacağız. Her şeyin en başından düzenli olması çok iyidir. Bir uygulama oluşturmak için aşağıdaki komutu konsolda çalıştırmamız gerekiyor (`djangogirls` dizininden `manage.py` dosyasının bulunduğu yer):
 
 {% filename %}Mac OS X ve Linux:{% endfilename %}
 
@@ -73,28 +73,28 @@ Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşt
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-Yeni bir ` blog </ 0> dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark edeceksiniz. Projemizdeki dizinler ve dosyalar şu sekilde görünmelidir:</p>
+Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark edeceksiniz. Projemizdeki dizinler ve dosyalar şu sekilde görünüyor olmalı:
 
-<pre><code>djangogirls
-├── blog
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── migrations
-│   │   └── __init__.py
-│   ├── models.py
-│   ├── tests.py
-│   └── views.py
-├── db.sqlite3
-├── manage.py
-└── mysite
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
-`</pre> 
+    djangogirls
+    ├── blog
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
+    ├── db.sqlite3
+    ├── manage.py
+    └── mysite
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
+    
 
-Bir uygulamayı oluşturduktan sonra, Django’ya bunu kullanması gerektiğini söylemeliyiz. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`‘ı bulmalı ve `]`’ın tam üzerine `'blog',`‘ı içeren bir satır eklemeliyiz. Sonuç aşağıdaki gibi görünmeli:
+Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`‘ı bulmalı ve `]`’ın tam üzerine `'blog',`‘ı içeren bir satır eklemeliyiz. Sonuç aşağıdaki gibi görünmeli:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
