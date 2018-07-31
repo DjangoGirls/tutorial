@@ -159,13 +159,13 @@ Biraz korkunç görünüyor, değil mi? Ama merak etmeyin - hepsinin ne anlama g
 - `models.DateTimeField` - bu da gün ve saati tanımlamada kullanılır.
 - `models.ForeignKey` - başka bir modele referans tanımlar.
 
-Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Model alanları hakkında daha fazla bilgi edinmek ve yukarıda açıklananların dışındakileri nasıl tanımlayacağınızı öğrenmek istiyorsanız Django'nun belgelerine bir göz atmalısınız (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field -types)
+Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Model alanları (model fields) hakkında daha fazla bilgi edinmek ve yukarıda açıklananların dışındaki alanları nasıl tanımlayacağınızı öğrenmek istiyorsanız Django dokümantasyonuna bir göz atabilirsiniz (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field -types).
 
-Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` metodur. `def` bunun bir fonksiyon/metod olduğunu söyler. `publish` ise metodun adıdır. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı,boşluk yerine küçük harf ve alt çizgi kullanmaktır. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
+Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz `publish` metodu. `def` bunun bir fonksiyon/method olduğunu söylüyor. `publish` ise methodumuzun ismi. Eğer isterseniz metodun adını değiştirebilirsiniz. Methodlara isim verirken küçük harf kullanmaya ve boşluk yerine alt çizgi kullanmaya dikkat ediyoruz. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
 
-Genellikle methodlar bir şeyler döndürür (`return` anahtar kelimesi döndür anlamına gelir). `__str__` methodunda bunun örneğini görebiliriz. Bu durumda `__str__()` methodunu çağırdığımızda Post başlığının içeren bir metin (**string**) elde ederiz.
+Genellikle methodlar bir şeyler döndürür (`return` anahtar kelimesi döndür anlamına gelir). `__str__` methodunda bunun örneğini görebiliriz. Bu durumda, `__str__()` methodunu çağırdığımızda Post başlığını içeren bir metin (**string**) elde ederiz.
 
-Aynı zamanda hem `def publish(self):` satırının, hem de `def __str__(self):` satırının sınıfımızın içinde girintili bir şekilde yazıldığına dikkat edin. Python boşluklara duyarlı olduğu için class'ın içindeki metodları girintili olarak yazmamız gerekiyor. Aksi takdirde metodlar class'a ait olmaz ve beklenmedik davranışlarla karşılaşabilirsiniz.
+Aynı zamanda hem `def publish(self):` satırının, hem de `def __str__(self):` satırının sınıfımızın içinde girintili (indented) bir şekilde yazıldığına dikkat edin. Python boşluklara duyarlı olduğu için class'ın içindeki metodları girintili olarak yazmamız gerekiyor. Aksi takdirde methodlar class'a ait olmaz ve beklenmedik davranışlarla karşılaşabilirsiniz.
 
 Buraya kadar model hakkında anlamadığın bir şeyler varsa mentörüne sormaktan çekinme! Bu konuların biraz karmaşık olduğunun farkındayız. Özellikle hem nesneleri hem de fonksiyonları aynı anda öğrenmek kolay değil. Umarız gizemi biraz azalmaya başlamıştır!
 
@@ -173,7 +173,7 @@ Buraya kadar model hakkında anlamadığın bir şeyler varsa mentörüne sormak
 
 Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. Öncelikle Django'nun modelimizde bazı değişiklikler yaptığımızı bilmesini sağlamalıyız. (Daha yeni oluşturduk!) Konsol penceresine gidin ve `python manage.py makemigrations blog` yazın. Şöyle görünmeli:
 
-{% filename %}komut-satır{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
