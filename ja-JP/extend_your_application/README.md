@@ -183,7 +183,7 @@ def post_detail(request, pk):
     $ git push
     
 
-それから、[PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)で：
+それから、[PythonAnywhere Bash コンソール](https://www.pythonanywhere.com/consoles/)で：
 
 {% filename %}command-line{% endfilename %}
 
