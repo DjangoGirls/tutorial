@@ -94,7 +94,7 @@ Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark 
         └── wsgi.py
     
 
-Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`‘ı bulmalı ve `]`’ın tam üzerine `'blog',`‘ı içeren bir satır eklemeliyiz. Sonuç aşağıdaki gibi görünmeli:
+Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`'ı bulup `]` karakterinin üzerindeki satıra `'blog',` yazmamız lazım. Sonuç aşağıdaki gibi görünmeli:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -112,7 +112,7 @@ INSTALLED_APPS = [
 
 ### Post (Blog gönderisi) modeli oluşturma
 
-`blog/models.py` dosyasında `Models` denilen bütün nesneleri tanımlıyoruz - bu blog postumuzu tanımlayacağımız bir yerdir.
+`blog/models.py` dosyasında `Models` denilen bütün nesneleri tanımlıyoruz - burası blog postumuzu tanımlayacağımız yer.
 
 Şimdi `blog/models.py` dosyasını açalım ve içindeki her şeyi silip şu kodu yazalım:
 
@@ -140,19 +140,19 @@ class Post(models.Model):
         return self.title
 ```
 
-> `str`'nin her iki tarafında da 2 tane alt çizgi (`_`) kullandığınızdan emin olun. İki alt çizgi Python dilinde sık kullanılır, bazen "dunder" olarak da anılır ("double-underscore"un kısaltması).
+> `str`'nin her iki tarafında da 2 tane alt çizgi (`_`) kullandığımızdan emin olalım. İki alt çizgi Python dilinde sık kullanılır, bazen "dunder" olarak da anılır ("double-underscore"un kısaltması).
 
-Korkutucu, değil mi? Fakat endişelenmeyin - Bu satırların ne anlama geldiğini açıklayacağız!
+Biraz korkunç görünüyor, değil mi? Ama merak etmeyin - hepsinin ne anlama geldiğini tek tek anlatacağız!
 
-`from` veya `import` ile başlayan tüm satırlar başka yerlerden bir şeyleri projemize dahil eder. Yani her dosyada aynı şeyleri kopyalayıp yapıştırmak yerine, `‘la bazı bölümleri de ekleyebiliriz... import ...`
+`from` veya `import` ile başlayan tüm satırlar başka yerlerden bir şeyleri projemize dahil eder. Yani, başka yerlerde tanımlanmış kodları dosyalarımıza kopyalamak yerine, bu kodların bir kısmını `from ... import ...` kullanarak kodumuza dahil edebiliriz.
 
-`class Post(models.Model):` - bu satır modelimizi tanımlar (bu bir `nesne`‘dir).
+`class Post(models.Model):` - bu satır modelimizi tanımlıyor (bir `nesne`).
 
-- `class` bir nesne tanımladığımızı belirten bir anahtar kelimedir.
-- `Post` modelimizin ismi. Başka bir isim de verebilirdik (yeter ki özel karakterler ve boşluk kullanmayalım). Class isimleri her zaman büyük harf ile başlamalıdır.
+- `class` bir nesne tanımladığımızı belirten anahtar kelime.
+- `Post` modelimizin ismi. Başka bir isim de verebilirdik (yeter ki özel karakterler ve boşluk kullanmayalım). class isimleri her zaman büyük harf ile başlamalıdır.
 - `models.Model` Post'un bir Django Modeli olduğunu belirtir, bu şekilde Django onu veritabanında tutması gerektiğini bilir.
 
-Şimdi daha önce bahsettiğimiz özellikleri tanımlayabiliriz: `title`, `text`, `created_date`, `published_date` ve `author`. Bunun için her alanın türünü tanımlamamız gerekir (Bu metin mi? Bir numara mı? Bir tarih mi? Bir kullanıcı gibi, başka bir nesne ile bağlantılı mı?)
+Şimdi daha önce bahsettiğimiz özellikleri tanımlayabiliriz: `title`, `text`, `created_date`, `published_date` ve `author`. Bunun için her alanın türünü tanımlamamız gerekir (Bir metin mi? Bir numara mı? Bir tarih mi? Başka bir nesneye referans mı, örneğin User?)
 
 - `models.CharField` - belirli bir uzunluktaki metinleri tanımlamak için kullanılır.
 - `models.TextField` - bu da uzun metinleri tanımlar. Blog gönderileri için biçilmiş kaftan, değil mi?
