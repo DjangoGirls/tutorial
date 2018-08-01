@@ -150,6 +150,13 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 <!--endsec-->
 
+> __NOTE:__ For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+>
+>```
+>$ . myvenv\Scripts\activate.ps1
+>```
+>The obvious advantage is that you don't have to switch between editor windows and command-line windows
+
 You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
 When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
