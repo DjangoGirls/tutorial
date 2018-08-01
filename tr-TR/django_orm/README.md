@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Ahh! Bir hata meydana geldi. Bize hiç post olmadığını söylüyor. Bu doğru, öncesinde post'u içeriye aktarmayı unuttuk!
+Ahh! Bir hata meydana geldi. Bize Post'un tanımlı olmadığını söylüyor. Bu doğru, öncesinde post'u dahil etmeyi (import) unuttuk!
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -49,13 +49,13 @@ Ahh! Bir hata meydana geldi. Bize hiç post olmadığını söylüyor. Bu doğru
 >>> from blog.models import Post
 ```
 
-`blog.models`'ten `Post` modelini içe aktardık. Tekrar bütün post'ları görüntülemeyi deneyelim:
+`blog.models`'dan `Post` modelini dahil ettik (import). Tekrar bütün post'ları görüntülemeyi deneyelim:
 
 {% filename %}komut-satırı{% endfilename %}
 
 ```python
 >>> Post.objects.all()
-<QuerySet [<Post: Gönderi başlığım>, <Post: Diğer bir gönderi başlığı>]>
+<QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
 Bu daha önce oluşturduğumuz post'ların listesi! Bu post'ları Django admin arayüzü ile oluşturduk. Fakat şimdi python'u kullanarak yeni post'lar oluşturmak istiyoruz, peki bunu nasıl yaparız?
@@ -145,7 +145,7 @@ Ya da belki `title(başlık)` alanında içinde 'Nefis' kelimesini içeren tüm 
 
 > **Not** `title` (başlık) ve `contains` arasında iki tane alt çizgi (`_`) var. Django'nun ORM'i bu söz dizimini, özelliği ("title") ve operasyon veya filtreyi ("contains") ayırmak için kullanır. Eğer sadece tek bir alt çizgi kullanırsanız, "FieldError: Cannot resolve keyword title_contains" şeklinde bir hata alacaksınız.
 
-Ayrıca yayınlanmış tüm post'ların bir listesini alabiliriz. Bunu geçmişte `published_date (yayinlanma_tarihi)` alanı belirtilmiş tüm gönderileri filtreleyerek yapıyoruz:
+Ayrıca yayınlanmış tüm post'ların bir listesini alabiliriz. Bunu geçmişte `published_date` (yayinlanma_tarihi) alanı belirtilmiş tüm gönderileri filtreleyerek yapıyoruz:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -182,7 +182,7 @@ Ardından `publish (yayinla)` methodu ile gönderiyi yayınlayalım:
 
 ### Nesneleri Sıralama
 
-QuerySets ayrıca nesne listesini sıralamanızı da sağlar. Nesneleri `created_date (yaratilma_tarihi)` özelliğine göre sıralamayı deneyelim:
+QuerySets ayrıca nesne listesini sıralamanızı da sağlar. Nesneleri `created_date` (yaratilma_tarihi) özelliğine göre sıralamayı deneyelim:
 
 {% filename %}komut-satırı{% endfilename %}
 
