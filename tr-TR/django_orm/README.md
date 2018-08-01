@@ -200,7 +200,7 @@ Başına `-` ekleyerek sıralamayı tersine de çevirebiliriz:
 [<Post: Nefis bir gönderi>, <Post: Harika bir gönderi>, <Post: Gönderi 2>, <Post: Gönderi 1>]>
 ```
 
-### Sorgu Setlerini(QuerySets) Zincirlemek
+### QuerySets (SorguSetlerini) Zincirlemek (Chaining)
 
 Sorgu setlerini **zincirleyerek** beraber kullanabilirsiniz:
 
@@ -211,7 +211,7 @@ Sorgu setlerini **zincirleyerek** beraber kullanabilirsiniz:
 
 Zincirleme gerçekten çok güçlüdür ve oldukça karmaşık sorgular yazmanıza imkan sağlar.
 
-Güzel! Şimdi bir sonraki bölüm için hazırız. Kabuğu kapatmak için, şunu yazalım:
+Güzel! Şimdi bir sonraki bölüm için hazırız. Komut satırını kapatmak için, şunu yazalım:
 
 {% filename %}komut-satırı{% endfilename %}
 
