@@ -75,7 +75,7 @@ from django.urls import path
 from . import views
 ```
 
-Hier importieren wir erstmal nur die Methoden von Django und alles aus den `views` unserer `blog`-Applikation (wir haben noch keine, aber dazu kommen wir gleich!).
+Here we're importing Django's function `path` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
 
 Jetzt können wir unser erstes URL-Pattern hinzufügen:
 
