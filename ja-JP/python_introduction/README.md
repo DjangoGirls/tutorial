@@ -361,7 +361,7 @@ Maria
 
 ご参考に、こちらのドキュメントにリストメソッドがすべて記されています。 https://docs.python.org/3/tutorial/datastructures.html
 
-## 辞書（dictionary）
+## 辞書（ディクショナリ）
 
 > 家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。 [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c)
 
@@ -463,7 +463,7 @@ KeyError: 'age'
 
 これで、キー `'country'` の値は、`'Poland'` から `'Germany'` に変わりました。面白くなってきましたか？その調子です！
 
-### Summary
+### まとめ
 
 素晴らしいです！これで、あなたはプログラミングについて沢山のことを学びました。ここまでのところをまとめましょう。
 
@@ -474,7 +474,7 @@ KeyError: 'age'
 
 次に進む準備はいいですか？ :)
 
-## Compare things
+## 比較
 
 > 家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。[Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4)
 
@@ -548,7 +548,7 @@ TypeError: '>' not supported between instances of 'int' and 'str'
 
 Pythonは、数値(`int`)と文字列(`str`)の比較はできません。 **TypeError** とエラーが表示され、２つのオブジェクトタイプが比較できないことを教えてくれています。
 
-## Boolean
+## ブール型（Boolean）
 
 偶然にも、**ブール型 (Boolean)** というあたらしいオブジェクトタイプを学びました。
 
@@ -588,7 +588,7 @@ False
 
 おめでとうございます！ブール型を理解することは、プログラミングでとても大事です。ここまでできましたね！
 
-# Save it!
+# 保存しよう！
 
 > 家で１人でこのパートに挑戦している方へ：このパートと続くパートは、動画（英語）もあるので参考にしてください。[Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk)
 
@@ -610,7 +610,7 @@ $
 
 これで、コマンドプロンプトに戻りました。
 
-前のチャプター [code editor](../code_editor/README.md) で、エディタを紹介しました。エディタを起動して、新しいファイルにコードを書いてみましょう。
+前のチャプター [コードエディタ](../code_editor/README.md) で、エディタを紹介しました。エディタを起動して、新しいファイルにコードを書いてみましょう。
 
 {% filename %}editor{% endfilename %}
 
@@ -738,7 +738,7 @@ It works!
 
 メモ：Windowsでは 'python3' とタイプしてもうまくいかないことを思い出してください。この後ファイルを実行するときは 'python3' の代わりに 'python' とタイプしてくださいね。
 
-### What if a condition isn't True?
+### 条件がTrueじゃないときは？
 
 前述の例では、if文の条件式が True の時だけ、コードが実行されました。Pythonは、`elif` や `else` といった記述もできます。
 
@@ -811,7 +811,7 @@ Pythonは上から順番に各条件をテスト、実行し、出力します�
     Perfect, I can hear all the details
     
 
-## Comments
+## コメント
 
 コメントは `#` で始まる行です。`#` の後にはなんでも書くことができ、Pythonはそれを無視します。コメントを書いたコードは、ほかの人にとってもわかりやすくなります。
 
@@ -828,7 +828,7 @@ if volume < 20 or volume > 80:
 
 コードのすべての行にコメントを書く必要はありません。コメントには、コードの中である処理をする理由や、複雑なコードの動きのまとめを書くと役に立ちます。
 
-### Summary
+### まとめ
 
 直近のエクササイズを通して、学んだことは、、、
 
@@ -840,7 +840,7 @@ if volume < 20 or volume > 80:
 
 では、このチャプターの最後のパートに挑戦していきましょう！
 
-## Your own functions!
+## 自作の関数！
 
 > 家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。[Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0)
 
@@ -974,7 +974,7 @@ hi("Rachel")
 
 おめでとうございます！関数の書き方を学びましたね！:)
 
-## Loops
+## ループ
 
 > 家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。[Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0)
 
@@ -1057,7 +1057,7 @@ for i in range(1, 6):
 
 2つ目の引数（終了の数値）は、リストに含まれないことに注意してください。 つまり、 `range(1, 6)` は、１から５のことであり、６は含まれません。
 
-## Summary
+## まとめ
 
 以上です！**おめでとう！頑張りました！** これは簡単ではなかったと思います。自分を褒めてあげてくださいね。ここまで進めることができたのは、本当に素晴らしいことです！
 
@@ -1065,4 +1065,4 @@ for i in range(1, 6):
 
 次のチャプターにうつるまえに、少し気晴らしに、ストレッチやお散歩をして、目や身体を休ませてあげてくださいね。
 
-![Cupcake](images/cupcake.png)
+![カップケーキ](images/cupcake.png)
