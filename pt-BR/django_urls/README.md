@@ -78,7 +78,7 @@ from django.urls import path
 from . import views
 ```
 
-Aqui nós estamos importando do Django a função `url` e todas nossas `views` do aplicativo `blog` (Não temos nenhuma ainda, mas nós chegaremos a isso em um minuto!)
+Here we're importing Django's function `path` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
 
 Depois disso podemos adicionar nosso primeiro padrão de URLs:
 
