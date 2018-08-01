@@ -199,7 +199,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 ### 新しいコードをPythonAnywhereにpullして、自分のウェブアプリを再度実行させる
 
-* [PythonAnywhereのコンソールページ](https://www.pythonanywhere.com/consoles/)を開き、自分の**Bash コンソール画面**を選ぶ (または、新たにコンソール画面を作成する)。続いて、動作させる:
+* [PythonAnywhereのコンソールページ](https://www.pythonanywhere.com/consoles/)を開き、**Bash コンソール**に移動してください (または新たなBash コンソールを開始してください)。それから次を実行してください。
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
