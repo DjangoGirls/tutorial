@@ -198,7 +198,7 @@ def post_detail(request, pk):
 
 PythonAnywhereのようなサーバは、（CSSファイルのような）「静的ファイル」をPythonファイルとは違って扱うのが好きです。なぜなら、それらが高速に読み込まれるように最適化できるからです。 その結果、CSSファイルを変更するたびに、サーバー上で追加のコマンドを実行して、更新するように指示する必要があります。 コマンドは`collectstatic`です。
 
-あなたが使用している`source myenv/bin/activate`コマンドと同じです（PythonAnywhereはこれを行うために`workon`というコマンドを使用します） あなた自身のコンピュータで）：
+もし仮想環境（virtualenv）が有効になっていなければ有効化するところから始めましょう (PythonAnywhereはこれを行うために`workon`というコマンドを使用します。これはあなたが自身のコンピュータで使用している`source myenv/bin/activate`コマンドと同じようなものです) 。
 
 {% filename %}command-line{% endfilename %}
 
