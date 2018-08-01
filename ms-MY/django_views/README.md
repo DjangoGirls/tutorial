@@ -1,6 +1,6 @@
-# Django views – time to create!
+# Pemandangan Django - Masa untuk bina!
 
-Time to get rid of the bug we created in the last chapter! :)
+Masa untuk lepaskan kesalahan yang telah kita bina dalam bab yang terakhir!:)
 
 A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
