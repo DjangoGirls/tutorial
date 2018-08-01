@@ -77,7 +77,7 @@ from django.urls import path
 from . import views
 ```
 
-Here we're importing Django's function `url` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+Here we're importing Django's function `path` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
 
 After that, we can add our first URL pattern:
 
