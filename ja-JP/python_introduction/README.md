@@ -1,12 +1,12 @@
 {% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
 
-# Introduction to Python
+# Python入門
 
 > このチャプターの一部はGeek Girls Carrotsのチュートリアルをもとにしています。(https://github.com/ggcarrots/django-carrots)
 
 さあ、コードを書いてみましょう！
 
-## Python prompt
+## Pythonプロンプト
 
 > 家で１人でこのパートに挑戦している方へ：このパートと続くパートは、動画（英語）もあるので参考にしてください。 [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U)
 
@@ -24,7 +24,7 @@ Pythonコンソールを開きましょう。Windowsなら `python` 、Mac OSや
     >>>
     
 
-## Your first Python command!
+## 最初のPythonコマンド！
 
 Pythonのコマンドが走ると、プロンプト記号が `>>>` に変わりました。 これは、今Pythonの言語を実行できますという意味です。 `>>>` はタイプしなくていいですよ – Pythonがあなたの代わりにやってくれます。
 
@@ -56,7 +56,7 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 
 お分かりのとおり、Pythonはステキな計算機ですね。他になにができるんだろう…と思ったら、次にいってみましょう。
 
-## Strings
+## 文字列
 
 あなたのお名前を次のようにクォーテーションをつけてタイプしてください。
 
@@ -129,7 +129,7 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 
 どうして、文字列の後に `.` をつけて関数を呼び出したり ( `"Ola".upper()` のように)、あるいは、先に関数を呼び出してかっこの中に文字列をいれているのか、と疑問に思ったかもしれません。 そうですね。時に、オブジェクトに結びついた関数というのがあります。例えば、`upper()` は、文字列にのみ実行される関数です。 私たちはこれを **メソッド (method)** と呼びます。 それとは別に、特定のオブジェクトに関連せず、異なるタイプのオブジェクトに対して実行できる関数があります。例えば `len()` ですね。 `len` 関数の引数として `"Ola"` をかっこの中にいれているのです。
 
-### Summary
+### まとめ
 
 文字列はだいじょうぶですね。ここまでに学んだことをまとめましょう。
 
@@ -140,7 +140,7 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 
 すべてのプログラミング言語に共通する基礎になります。 もう少し難易度の高いものに挑戦してみましょう。準備はいいですか？
 
-## Errors
+## エラー
 
 さて、新しいことをやってみましょう。あなたの名前の文字数を数えたように、数字の文字数は数えられるでしょうか？ `len(304023)` と記述して、`Enter` キーを押してみましょう。
 
@@ -171,7 +171,7 @@ TypeError: object of type 'int' has no len()
 
 > 重要！: 数字は文字列にすることはできますが、全ての文字が数字に変換できるわけではありません。 例えば `int('hello')` は数字にはなりませんよね？
 
-## Variables
+## 変数
 
 変数（variables）は、プログラミングの重要なコンセプトです。 後で使うためにつける単なる名札ではありません。 プログラマーは変数を使ってデータを保管したり、 コードを読みやすくして、後でそれが何だったか覚えておかなくてもいいようにします。
 
@@ -240,7 +240,7 @@ NameError: name 'ctiy' is not defined
 
 ちょっと遊んで、何ができるか試してみてくださいね！
 
-## The print function
+## print 関数
 
 次に挑戦してみましょう。
 
@@ -254,13 +254,13 @@ NameError: name 'ctiy' is not defined
 Maria
 ```
 
-単に `name` とタイプした時は、Pythonインタプリタが、変数'name'の *representation* を返します。ここでは、 M-a-r-i-aという単なる文字の集まりで、シングルクォーテーション（''）に囲われています。 しかし、`print(name)`と記述した時は、Pythonは変数の中身を出力します。クォーテーションはありません。
+単に `name` とタイプした時は、Pythonインタプリタが、変数'name'の文字列*表現（representation）*を返します。ここでは、シングルクォーテーション（''）に囲まれた M-a-r-i-aという文字の集まりです。 しかし、`print(name)`と記述した時は、Pythonは変数の中身を出力します。クォーテーションはありません。
 
 これからさらに詳しくみていきますが、`print()` は、関数から出力をする時や、複数行の出力を行うときにも便利です。
 
-## Lists
+## リスト
 
-数値と文字列の他にも、すべてのオブジェクトタイプを勉強しておきましょう。 **list** というものがあります。 リストは、その名のとおり、オブジェクトの並びをもつものですね。 :)
+数値と文字列の他にも、すべてのオブジェクトタイプを勉強しておきましょう。 今から**list** というものを紹介していきます。 リストは、その名のとおり、オブジェクトの並びをもつものですね。 :)
 
 まずはリストを作りましょう。
 
@@ -361,7 +361,7 @@ Maria
 
 ご参考に、こちらのドキュメントにリストメソッドがすべて記されています。 https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## 辞書（dictionary）
 
 > 家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。 [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c)
 
