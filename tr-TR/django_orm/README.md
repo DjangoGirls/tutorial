@@ -1,16 +1,16 @@
-# Django ORM ve QuerySets (Sorgu Setleri)
+# Django ORM ve QuerySets (SorguSetleri)
 
 Bu bölümde Django'nun veritabanına nasıl bağlandığını ve veriyi nasıl sakladığını öğreneceğiz. Hadi başlayalım!
 
 ## QuerySet (SorguSeti) Nedir?
 
-QuerySet (SorguSeti), esas olarak, verilen bir modelin nesnelerinin listesidir. QuerySet veritabanından veri okumamıza, veriyi filtrelememize ve sıralamamıza imkan sağlar.
+QuerySet (SorguSeti), esas olarak, verilen bir modele ait nesnelerin listesidir. QuerySet veritabanından veri okumamıza, veriyi filtrelememize ve sıralamamıza imkan sağlar.
 
-En kolayı örnekle öğrenmektir. Hadi deneyelim, olur mu?
+En kolayı örnek ile öğrenmektir. Hadi deneyelim, olur mu?
 
 ## Django shell (kabuk)
 
-Yerel konsolumuzu açalım (PythonAnywhere'dekini değil) ve şu komutu yazalım:
+Bilgisayarımızdaki konsolu açalım (PythonAnywhere'dekini değil) ve şu komutu yazalım:
 
 {% filename %}komut-satırı{% endfilename %}
 
