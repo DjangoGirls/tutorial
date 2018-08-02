@@ -161,11 +161,11 @@ Bunu yapmadan önce, bilgisayarımızın, Django yüklemek için kullanacağım�
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Requirements ile paketleri yüklemek
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Bir requirements dosyası `pip install` ile yüklenmesi gereken paketlerin listesini tutar:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder:
+Öncelikle `djangogirls/` klasörünün içinde `requirements.txt` isimli bir dosya oluşturun:
 
     djangogirls
     └───requirements.txt
