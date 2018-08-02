@@ -112,7 +112,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOT:** Windows 10'da , Windows PowerShell tarafından `bu senaryoların uygulanması bu sistemde devre dışıdır` diyen bir hata alabilirsiniz. Bu durumda, başka bir Windows PowerShell'i, "Yönetici Olarak Çalıştır" seçeneğiyle açın. Daha sonra sanal ortamınızı başlatmadan önce sıradaki komutları yazmayı deneyin:
+> **NOT:** Windows 10'da , Windows PowerShell tarafından `bu senaryoların uygulanması bu sistemde devre dışıdır` diyen bir hata alabilirsiniz. Bu durumda, başka bir Windows PowerShell'i, "Yönetici Olarak Çalıştır" seçeneğiyle açın. Bundan sonra sanal ortamınızı başlatmadan önce aşağıdaki komutları yazmayı deneyin:
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
@@ -171,16 +171,16 @@ First create a `requirements.txt` file inside of `djangogirls/` folder:
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+`djangogirls/requirements.txt` dosyanıza şu kodu eklemelisiniz:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Simdi, Django kurmak için `pip install -r requirements.txt` komutunu çalıstırın.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~$ pip install -r requirements.txt
     Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
@@ -215,4 +215,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+İşte bu kadar! Sonunda Django uygulamanızı oluşturmaya hazırsınız!
