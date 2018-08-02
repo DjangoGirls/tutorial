@@ -2,15 +2,15 @@
 
 Template nedir diye sorabilirsiniz.
 
-Template (şablon), farklı bilgileri hep aynı biçimde sunmak için tekrar tekrar kullanabileceğimiz bir dosyadır - örneğin, mektup yazmanıza yardımcı olan bir template kullanabilirsiniz çünkü yazacağınız tüm mektuplar farklı mesajlar içerip ,farklı kişilere gönderilse de aynı sayfa düzenine sahip olacaktır.
+Template (şablon), farklı bilgileri hep aynı biçimde sunmak için tekrar tekrar kullanabileceğimiz bir dosyadır - örneğin, mektup yazmanıza yardımcı olan bir template kullanabilirsiniz çünkü yazacağınız tüm mektuplar farklı mesajlar içerse ve farklı kişilere gönderilse de aynı sayfa düzenine sahip olacaktır.
 
-Django şablonunun formatı HTML diye adlandırılan bir dilde tanımlıdır(ilk bölümde bahsettiğimiz HTML, **İnternet nasıl çalışır**).
+Bir Django template'inin formatı HTML adını verdiğimiz bir dilde tanımlanır (**İnternet nasıl çalışır** adlı ilk bölümde bahsettiğimiz HTML).
 
 ## HTML nedir?
 
 HTML kullanıcıya basit bir web sayfası görüntülemek için web tarayıcınız tarafından - Chrome, Firefox veya Safari gibi - yorumlanan basit bir koddur.
 
-HTML "HyperText Markup Language" (HiperMetin İşaretleme Dili) anlamına gelir. **HyperText (HiperMetin)** sayfalar arası bağlantıları destekleyen türden bir metin demektir. **Markup (İşaretleme)**, bir belgeyi alıp onu kodlarla işaretleyerek, nasıl yorumlanacağını (tarayıcıya) söyledik demektir. HTML kodu **etiketler** ile oluşturulur, etiketlerin her biri `<` ile başlar ve `>` ile biter. Bu etiketler biçimlendirme **öğelerini** temsil eder.
+HTML "HyperText Markup Language" (HiperMetin İşaretleme Dili) anlamına gelir. **HyperText** (HiperMetin) sayfalar arası bağlantıları destekleyen türden bir metin demektir. **Markup** (işaretleme), bir belgeyi alıp onu kodlarla işaretleyerek, nasıl yorumlanacağını (tarayıcıya) söylemek demektir. HTML kodu **etiketler** ile oluşturulur, etiketlerin her biri `<` ile başlar ve `>` ile biter. Bu etiketler biçimlendirme **öğelerini** temsil eder.
 
 ## İlk template'iniz!
 
@@ -23,13 +23,13 @@ Template'lar `blog/templates/blog` dizininde saklanır. Öyleyse blog klasörü 
         └───blog
     
 
-(`blog` diye adlandırılan iki dizine niye ihtiyacımız olduğunu merak edebilirsiniz - daha sonra anlayacağınız üzere, basitçe durum karmaşıklaşmaya başladığında hayatınızı kolaylaştıracak bir adlandırma uzlaşımıdır.)
+(`blog` diye adlandırılan iki dizine niye ihtiyacımız olduğunu merak edebilirsiniz - daha sonra anlayacağınız üzere, sitemiz karmaşıklaştıkça bu şekilde isimlendirme tarzı işimizi oldukça kolaylaştırır.)
 
 Şimdi de `blog/templates/blog` dizini içine `post_list.html` adlı bir dosya oluşturalım (şimdilik içini boş bırakalım).
 
 Web sitemizin nasıl göründüğüne bir bakalım: http://127.0.0.1:8000/
 
-> Eğer hala `TemplateDoesNotExist` hatası alıyorsanız, sunucunuzu yeniden başlatmayı deneyin. Komut satırına girin, Ctrl+C (Kontrol ve C tuşlarına beraber) basarak sunucuyu durdurun ve bir `python manage.py runserver` komutunu çalıştırarak yeniden başlatın.
+> Eğer hala `TemplateDoesNotExist` hatası alıyorsanız, sunucunuzu yeniden başlatmayı deneyin. Komut satırına girin, Ctrl+C (Kontrol ve C tuşlarına beraber) basarak sunucuyu durdurun ve `python manage.py runserver` komutunu çalıştırarak yeniden başlatın.
 
 ![Şekil 11.1](images/step1.png)
 
@@ -42,13 +42,13 @@ Template dosyamıza şunları ekleyelim:
 ```html
 <html>
 <body>
-    <p>Hi there!</p>
-    <p>It works!</p>
+    <p>Merhaba!</p>
+    <p>Çalışıyor!</p>
 </body>
 </html>
 ```
 
-Web siteniz şu anda nasıl görünüyor?Öğrenmek için ziyaret edin: http://127.0.0.1:8000/
+Web siteniz şu anda nasıl görünüyor? Öğrenmek için bir bakalım: http://127.0.0.1:8000/
 
 ![Şekil 11.2](images/step3.png)
 
