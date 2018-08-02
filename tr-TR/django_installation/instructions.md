@@ -30,7 +30,7 @@ Bu eğitim için giriş dizininizde yeni açtığımız `djangogirls` adlı bir 
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-Yeni bir `virtualenv` yaratmak için, komut istemini açmanız ve `python -m venv myvenv`'u çalıştırmanız gerekir. Böyle görünecektir:
+Yeni bir `virtualenv` yaratmak için, komut satırını açmanız ve `python -m venv myvenv`'u çalıştırmanız gerekir. Böyle görünecektir:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -51,7 +51,7 @@ Hem Linux hem de OS X 'teyken `python3 -m venv myvenv` komutuyla bir `virtualenv
     $ python3 -m venv myvenv
     
 
-Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. Ayrıca ismi çok fazla referans alacağınızdan kısa tutmak iyi bir fikir olacaktır!
+Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. Ayrıca ismi kısa tutmak işinize yarayacaktır zira bu ismi çokça kullanıyor olacaksınız!
 
 > **NOT:** Debian/Ubuntu'nun bazı sürümlerinde aşağıdaki hatayı alabilirsiniz:
 > 
