@@ -6,7 +6,7 @@
 
 Django'yu yüklemeden önce kod ortamınızı düzenli tutmak için son derece yararlı bir araç yükleyeceğiz. Bu adımı atlayabilirsiniz, fakat atlamamanızı tavsiye ederiz. En iyi olası kurulum ile başlamanız sizi gelecekteki bir sürü sorundan koruyacaktır!
 
-Öyleyse bir **virtual environment**(diğer adıyla *virtualenv*) kuralım. Virtualenv Python/Django kurulumunuzu her proje için ayrı tutup izole eder. Bu, bir websitesine yapacağınız değişikliklerin diğer geliştirdiklerinize yansımayacağı anlamına gelir. Muazzam, değil mi?
+Öyleyse bir **virtual environment** (diğer adıyla *virtualenv*) kuralım. Virtualenv Python/Django kurulumunuzu her proje için ayrı tutup izole eder. Bu, bir websitesine yapacağınız değişikliklerin diğer geliştirdiklerinize yansımayacağı anlamına gelir. Muazzam, değil mi?
 
 Yapmanız gereken tek şey `virtualenv` oluşturmak için bir dizin bulmak; örneğin giriş dizininiz. Windows'ta şöyle görünebilir: `C:\Users\Name` (`Name` yerine kullanıcı adınız gelir).
 
@@ -57,9 +57,9 @@ Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
->     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+>     Ensurepip kullanılamadığından sanal ortam başarıyla oluşturulamadı.  Debian/Ubuntu sistemlerinde, aşağıdaki komutu kullanarak python3-venv paketini yüklemeniz gerekir.
 >        apt install python3-venv
->     You may need to use sudo with that command.  python3-venv paketini indirdikten sonra, virtualenv'inizi yeniden oluşturun. 
+>     sudo komutu ile kullanmanız gerekebilir.  python3-venv paketini indirdikten sonra, virtualenv'inizi yeniden oluşturun. 
 >     
 > 
 > Bu durumda, yukarıdaki yönergeleri izleyin ve `python3-venv` paketini yükleyin:
@@ -112,7 +112,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOT:** Windows 10'da , Windows PowerShell tarafından `bu senaryoların uygulanması bu sistemde devre dışıdır` diyen bir hata alabilirsiniz. Bu durumda,başka bir Windows PowerShell'i,"Yönetici Olarak Çalıştır" seçeneğini kullanarak çalıştırın. Daha sonra sanal ortamınızı başlatmadan önce sıradaki komutları yazmayı deneyin:
+> **NOT:** Windows 10'da , Windows PowerShell tarafından `bu senaryoların uygulanması bu sistemde devre dışıdır` diyen bir hata alabilirsiniz. Bu durumda, başka bir Windows PowerShell'i, "Yönetici Olarak Çalıştır" seçeneğiyle açın. Daha sonra sanal ortamınızı başlatmadan önce sıradaki komutları yazmayı deneyin:
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
