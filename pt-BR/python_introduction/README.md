@@ -98,7 +98,7 @@ Usando aspas duplas:
 "Roda d'água"
 ```
 
-Ou escapando a aspa simples (o que sinaliza para o Python que aquele sinal é uma apóstrofe, e não uma aspa marcando o final da nossa string) com uma contra-barra (``):
+Ou escapando a aspa simples (o que sinaliza para o Python que aquele sinal é uma apóstrofe, e não uma aspa marcando o final da string) com uma contra-barra (``):
 
 {% filename %}command-line{% endfilename %}
 
