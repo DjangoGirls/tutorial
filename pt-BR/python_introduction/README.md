@@ -24,13 +24,13 @@ Queremos abrir um console do Python, então digite `python` no Windows ou `pytho
     >>>
     
 
-## Seu primeiro comando Python!
+## Seu primeiro comando em Python!
 
-Depois de executar o comando Python, o prompt mudou para `>>>`. Para nós, isso significa que por enquanto só podemos utilizar comandos na linguagem Python. Você não precisa digitar `>>>` - o Python fará isso por você.
+Depois de executar o comando Python, o prompt mudou para `>>>`. Isso significa que por enquanto nós só podemos utilizar comandos na linguagem Python. Você não precisa digitar `>>>` - o Python fará isso por você.
 
-Se você deseja sair do console do Python a qualquer momento, apenas digite `exit()` ou use o atalho `Ctrl + Z` no Windows e `Ctrl + D` no Mac ou Linux. Então você não vai mais ver o `>>>`.
+Se a qualquer momento você quiser sair do console do Python, apenas digite `exit()` ou use o atalho `Ctrl + Z` no Windows e `Ctrl + D` no Mac ou Linux. Então você não vai mais ver o `>>>`.
 
-Por enquanto, não queremos sair do console de Python. Queremos saber mais sobre isso. Vamos começar digitando um pouco de matemática, como `2 + 3`, e clicar `entrar`.
+Por enquanto, não queremos sair do console do Python. Queremos saber mais sobre ele. Vamos começar digitando um pouco de matemática, como `2 + 3`, e clicar `entrar`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -52,7 +52,7 @@ Para executar cálculo exponencial, como 2 elevado a 3, digitamos: {% filename %
 8
 ```
 
-Divirta-se com isso por um tempo e depois volte aqui. :)
+Brinque um pouco com isso e depois volte aqui. :)
 
 Como você pode ver, o Python é uma ótima calculadora. Se você está se perguntando o que mais você pode fazer…
 
@@ -67,7 +67,7 @@ Que tal o seu nome? Digite seu primeiro nome entre aspas, desse jeito:
 'Ola'
 ```
 
-Você acabou de criar sua primeira string! String é um sequência de caracteres que podem ser processada pelo computador. A string deve sempre começar e terminar com o mesmo caractere. Este caractere pode ser aspas duplas (`'`) ou simples (`"`) (não há nenhuma diferença!). Elas dizem ao Python que o que está entre elas é uma string.
+Você acabou de criar sua primeira string! Uma string é uma sequência de caracteres que pode ser processada pelo computador. Ela deve sempre começar e terminar com o mesmo caractere. Este caractere pode ser aspas duplas (`"`) ou simples (`'`) (não há nenhuma diferença!). Elas dizem ao Python que o que está entre elas é uma string.
 
 Strings podem ser juntadas. Tente isto:
 
