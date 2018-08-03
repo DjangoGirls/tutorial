@@ -2,7 +2,7 @@
 
 # Introdução ao Python
 
-> Parte deste capítulo é baseado no tutorial da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Parte deste capítulo é baseada no tutorial da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Vamos escrever um pouco de código!
 
@@ -10,7 +10,7 @@ Vamos escrever um pouco de código!
 
 > Para as leitoras em casa: esta parte é abordada no vídeo [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-Para começar a trabalhar com Python, nós precisamos abrir uma * linha de comando* no computador. Você provavelmente já sabe como fazer isso - aprendeu no capítulo [ Introdução à Linha de Comando ](../intro_to_command_line/README.md).
+Para começar a trabalhar com Python, precisamos abrir uma * linha de comando* no computador. Você provavelmente já sabe como fazer isso - aprendeu no capítulo [ Introdução à Linha de Comando ](../intro_to_command_line/README.md).
 
 Assim que estiver pronta, siga as instruções abaixo.
 
