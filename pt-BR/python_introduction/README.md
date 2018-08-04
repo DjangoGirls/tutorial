@@ -740,7 +740,7 @@ Observação: Lembre-se que no Windows 'python3' não é reconhecido como um com
 
 ### E se uma condição não for verdadeira?
 
-Nos exemplos anteriores, o código foi executado somente quando as condições eram verdade. No entanto, o Python também tem as instruções `elif` e `mais`:
+Nos exemplos anteriores, o código foi executado somente quando as condições eram verdadeiras. No entanto, o Python também tem as instruções `elif` e `mais`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -781,7 +781,7 @@ e executando:
     Olá Sonja!
     
 
-Viu o que aconteceu? O `elif` te possibilita adicionar uma condição que só vai ser executada se a primeira condição for falsa.
+Viu o que aconteceu? O `elif` possibilita adicionar uma condição que só vai ser executada se a primeira condição for falsa.
 
 Você pode adicionar quantos `elif` quiser depois do `if`. Por exemplo:
 
@@ -792,7 +792,7 @@ volume = 57
 if volume < 20: 
     print("Está um pouco baixo")
 elif 20 <= volume < 40: 
-    print("Está bom como música ambiente")
+    print("Está bom para música ambiente")
 elif 40 <= volume < 60: 
     print("Perfeito, posso ouvir todos os detalhes")
 elif 60 <= volume < 80: 
@@ -833,7 +833,7 @@ Você não precisa escrever um comentário para cada linha de código, mas eles 
 Nos últimos exercícios você aprendeu:
 
 - a **comparar coisas** -- em Python, você pode comparar objetos usando os operadores `>`, `>=`, `==`, `<=`, `<` e `and`, `or`.
-- **Booleano** - um tipo de objeto que só tem dois valores possíveis: `True` ou `False`.
+- **Booleano** -- um tipo de objeto que só tem dois valores possíveis: `True` ou `False`.
 - a **salvar arquivos** -- armazenar código em arquivos para que você possa executar programas maiores.
 - **if... elif... else** -- instruções que permitem que você execute o código somente se determinadas condições forem atendidas.
 - **comentários** -- linhas que o Python não executa e que permitem que você documente seu código.
@@ -846,7 +846,7 @@ Chegamos à última parte do capítulo!
 
 Lembra de funções como `len()`? Boas notícias: agora você vai aprender como escrever suas próprias funções!
 
-Uma função é um sequência de instruções que o Python deve executar. Cada função em Python começa com a palavra reservada `def` seguida de um nome e, opcionalmente, de uma lista de parâmetros. Vamos fazer uma tentativa. Substitua o código salvo no arquivo **python_intro.py** pelo seguinte:
+Uma função é uma sequência de instruções que o Python deve executar. Cada função em Python começa com a palavra reservada `def` seguida de um nome e, opcionalmente, de uma lista de parâmetros. Vamos fazer uma tentativa. Substitua o código salvo no arquivo **python_intro.py** pelo seguinte:
 
 {% filename %}python_intro.py{% endfilename %}
 
