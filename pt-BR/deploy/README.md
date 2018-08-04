@@ -16,7 +16,7 @@ Estes três lugares serão importantes para você. Seu computador local é o lug
 
 {% include "/deploy/install_git.md" %}
 
-## Começando nosso repositório no Git
+## Começando o seu repositório no Git
 
 O Git controla as alterações em um determinado conjunto de arquivos no que chamamos de repositório de código (ou "repo"). Vamos criar um para o nosso projeto. Abra o seu console e execute esses comandos no diretório `djangogirls`:
 
