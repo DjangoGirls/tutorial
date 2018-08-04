@@ -860,7 +860,7 @@ oi()
 
 Ok, nossa primeira função está pronta!
 
-Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a função que definimos, devemos chamá-la no final. Esclarecendo: no bloco de texto formado pela linha que começa com "def" e nas linhas endentadas seguintes, definimos a função, mas não executamos nenhum comando. Precisamos dizer explicitamente ao Python que a execute (escrevendo "oi()").
+Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a função que definimos, devemos chamá-la no final. Esclarecendo: no bloco de texto formado pela linha que começa com "def" e as linhas endentadas seguintes, definimos a função, mas não executamos nenhum comando. Precisamos dizer explicitamente ao Python que a execute (escrevendo "oi()").
 
 Vamos executá-la agora e ver o que acontece:
 
@@ -877,7 +877,7 @@ Observação: se não funcionou, não entre em pânico! A saída vai te ajudar a
 - Se recebeu uma mensagem `IdentationError`, confira se as duas linhas de `print` têm o mesmo recuo no começo: o Python precisa que o código dentro da função esteja bem alinhado.
 - Se a função não retornou nenhum resultado, certifique-se de que o útlimo `oi()`*não* esteja endentado - se ele estiver, essa linha vai se tornar parte da função e o Python não vai receber nenhum comando para executar.
 
-Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'oi' para quem o executa - com um o nome dessa pessoa:
+Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'oi' para quem o executa - com o nome dessa pessoa:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -912,12 +912,12 @@ Não esqueça: a função `print` está endentada com 4 espaços depois do `if`.
     TypeError: oi() missing 1 required positional argument: 'nome'
     
 
-Oops, um erro. Felizmente, Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `oi()` (aquela que definimos) tem um argumento obrigatório (chamado `nome`) e que nós esquecemos de passá-lo ao chamar a função. Vamos resolver isso no final da função:
+Oops, um erro. Felizmente, o Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `oi()` (aquela que definimos) tem um argumento obrigatório (chamado `nome`) e que nós esquecemos de passá-lo ao chamar a função. Vamos resolver isso no final da função:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-hi("Ola")
+oi("Ola")
 ```
 
 E rode novamente:
@@ -933,7 +933,7 @@ E se mudarmos o nome?
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-hi("Sonja")
+oi("Sonja")
 ```
 
 E rode novamente:
@@ -944,14 +944,14 @@ E rode novamente:
     Olá Sonja!
     
 
-Agora, o que você acha que aconteceria se escrevesse um outro nome lá (que não seja "Ola" ou "Sonja")? Faça um teste e verifique se você estava certo. Ele deve imprimir o seguinte:
+Agora, o que você acha que aconteceria se escrevesse um outro nome lá (diferente de "Ola" ou "Sonja")? Faça um teste e verifique se você estava certa. Deve aparecer o seguinte:
 
 {% filename %}command-line{% endfilename %}
 
     Olá estranho!
     
 
-Isto é incrível, não? Dessa maneira você não precisa se repetir cada vez que for mudar o nome da pessoa que a função pretende cumprimentar. E é exatamente por isso que precisamos de funções - você não quer precisar repetir seu código!
+Legal, né? Dessa maneira você não precisa se repetir cada vez que for mudar o nome da pessoa que a função pretende cumprimentar. E é exatamente por isso que precisamos de funções - você não quer precisar repetir seu código!
 
 Vamos fazer algo mais inteligente -- existem mais que dois nomes e escrever uma condição para cada um parece difícil, né?
 
@@ -961,7 +961,7 @@ Vamos fazer algo mais inteligente -- existem mais que dois nomes e escrever uma 
 def oi(name):
     print('Olá ' + name + '!')
 
-hi("Rachel")
+oi("Rachel")
 ```
 
 Vamos chamar o código agora:
@@ -987,10 +987,10 @@ Ainda se lembra de listas? Vamos fazer uma lista de garotas:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Você']
 ```
 
-Queremos cumprimentar todas elas pelos seus nomes. Temos a função `hi` para fazer isso, então vamos usá-la em um laço:
+Queremos cumprimentar todas elas pelos seus nomes. Temos a função `oi` para fazer isso, então vamos usá-la em um laço:
 
 {% filename %}python_intro.py{% endfilename %}
 
