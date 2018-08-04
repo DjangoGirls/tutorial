@@ -131,12 +131,12 @@ Talvez você esteja se perguntando porque algumas vezes chamamos funções com u
 
 ### Sumário
 
-OK, chega de strings. Até agora você aprendeu sobre:
+OK, chega de strings. Até agora, você aprendeu sobre:
 
 - **o prompt** -- digitar comandos (códigos) no interpretador de Python resulta em respostas em Python
 - **números e strings** -- no Python, números são usados para matemática e strings, para objetos de texto
-- **operadores** - como + e * combinam valores para produzir um novo valor
-- **funções** - como upper() e len() executam ações nos objetos.
+- **operadores** -- como `+` e `*`, combinam valores para produzir um novo valor
+- **funções** -- como `upper()` e `len()`, executam ações nos objetos.
 
 Esso é o básico de todas as linguagens de programação que você aprender. Pronto para algo mais difícil? Apostamos que sim!
 
