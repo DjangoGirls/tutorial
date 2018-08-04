@@ -338,9 +338,9 @@ Se você quiser ver apenas o primeiro número da lista, pode usar **índices**. 
 42
 ```
 
-Como você pode ver, você pode acessar diferentes objetos na sua lista usando o nome da lista e o índice do objeto entre colchetes.
+Como você pode ver, podemos acessar diferentes objetos na lista usando o nome da lista e o índice do objeto entre colchetes.
 
-Para apagar algum objeto da sua lista, você precisa usar **índices**, como aprendemos acima, e o método `pop()`. Vamos usar um exemplo para reforçar o que aprendemos antes: vamos deletar o primeiro número de nossa lista.
+Para apagar algum objeto da sua lista, você precisa usar **índices**, como aprendemos acima, e o método `pop()`. Vamos usar um exemplo para reforçar o que já aprendemos: vamos deletar o primeiro número de nossa lista.
 
 {% filename %}command-line{% endfilename %}
 
@@ -376,7 +376,7 @@ Um dicionário é similar a uma lista, mas para acessar seus valores você usa u
 
 Você acabou de criar um dicionário vazio. Uhuuu!
 
-Agora tente escrever o seguinte comando (tente substituir com as suas próprias informações também):
+Agora escreva o seguinte comando (e tente colocar suas próprias informações):
 
 {% filename %}command-line{% endfilename %}
 
@@ -388,7 +388,7 @@ Com esse comando, você criou uma variável chamada `participant` com três pare
 
 - A chave `nome` aponta para o valor `'Ola'` (um objeto `string`),
 - a chave `country` aponta para `'Poland'` (outra `string`),
-- e a chave `favorite_numbers` aponta para `[7, 42, 92]` (uma `list` com três números nela).
+- e a chave `favorite_numbers` aponta para `[7, 42, 92]` (uma `list` de três números).
 
 Você pode verificar o conteúdo de chaves individuais com a sintaxe:
 
@@ -436,7 +436,7 @@ Como nas listas, usar a função `len()` em dicionários retorna o número de pa
 4
 ```
 
-Espero que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários? Pule para a próxima linha para coisas incríveis.
+Espero que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários? Pule para a próxima linha para aprender mais coisas incríveis.
 
 Você pode usar o método `pop()` para deletar um item do dicionário. Digamos que você queira excluir a entrada correspondente à chave `'favorite_numbers'`. Basta digitar o seguinte comando:
 
@@ -461,16 +461,16 @@ Além disso, você pode mudar o valor associado a uma chave já criada no dicion
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-Como você pode ver, o valor da chave `'country'` foi alterado de `'Poland'` para `'Germany'`. :) Emocionante? Uhu! Você acabou de aprender outra coisa incrível.
+Agora, o valor da chave `'country'` foi alterado de `'Poland'` para `'Germany'`. :) Emocionante? Uhu! Você acabou de aprender outra coisa incrível.
 
 ### Sumário
 
 Incrível! Agora você sabe muito sobre programação. Nesta última parte você aprendeu sobre:
 
-- **erros** -- agora você sabe como ler e entender mensagens de erro que aparecem quando o Python não entende um comando que você deu
-- **variáveis** -- nomes para objetos que permitem que você programe facilmente e deixam seu código mais legível
-- **listas** -- listas de objetos armazenados em uma ordem específica
-- **dicionários** - objetos armazenados como pares chave-valor
+- **erros** -- agora você sabe como ler e entender mensagens de erro que aparecem quando o Python não entende um comando que você deu;
+- **variáveis** -- nomes para objetos que permitem que você programe facilmente e deixam seu código mais legível;
+- **listas** -- listas de objetos armazenados em uma ordem específica;
+- **dicionários** - objetos armazenados como pares chave-valor.
 
 Animada para a próxima parte? :)
 
