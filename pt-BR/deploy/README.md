@@ -162,16 +162,16 @@ Agora vamos executar a ferramenta para configurar a nossa aplicação a partir d
 
 Enquanto assiste a execução da ferramenta, você pode ver o que ela está fazendo:
 
-- Baixando o seu código do GitHub
-- Criando um virtualenv no PythonAnywhere, igual ao que existe no seu computador
-- Atualizando o seu arquivo de configuração com algumas configurações sobre o deploy
-- Criando um banco de dados no PythonAnywhere usando o comando `manage.py migrate`
+- Baixando o seu código do GitHub;
+- Criando um virtualenv no PythonAnywhere, igual ao que existe no seu computador;
+- Atualizando o seu arquivo de configuração com algumas configurações sobre o deploy;
+- Criando um banco de dados no PythonAnywhere usando o comando `manage.py migrate`;
 - Criando os seus arquivos estáticos (nós aprenderemos sobre eles mais tarde)
-- E configurando o PythonAnywhere para servir a sua web app através da sua API
+- E configurando o PythonAnywhere para servir a sua web app através da sua API.
 
-No PythonAnywhere todos esses passos são automatizados, mas são os mesmos passos que você executaria ao utilizar qualquer outro provedor. O principal agora é reparar que o seu banco de dados no PythonAnywhere é na verdade completamente separado do banco de dados no seu computador — isso significa que eles têm posts e contas de admin completamente diferentes.
+No PythonAnywhere, todos esses passos são automatizados, mas são os mesmos que você executaria ao utilizar qualquer outro provedor. O importante agora é reparar que o seu banco de dados no PythonAnywhere é na verdade completamente separado do banco de dados no seu computador — isso significa que eles têm posts e contas de admin completamente diferentes.
 
-Por causa disso, da mesma forma que tivemos que fazer no nosso computador, nós precisamos criar a conta de admin com `createsuperuser`. O PythonAnywhere já ativou o seu virtualenv automaticamente pra você, então tudo o que precisa fazer é rodar:
+Por causa disso, da mesma forma que tivemos que fazer no nosso computador, precisamos criar a conta de admin com `createsuperuser`. O PythonAnywhere já ativou o seu virtualenv automaticamente, então tudo o que você precisa fazer é executar o comando:
 
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
