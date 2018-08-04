@@ -987,7 +987,7 @@ Ainda se lembra de listas? Vamos fazer uma lista de garotas:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Você']
+girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'você']
 ```
 
 Queremos cumprimentar todas elas pelos seus nomes. Temos a função `oi` para fazer isso, então vamos usá-la em um laço:
@@ -1055,14 +1055,14 @@ Que deve imprimir:
 
 `range` é uma função que cria uma lista de números que se seguem um após o outro (esses números são dados por você como parâmetros).
 
-Note que o segundo desses dois números não está incluído na lista que o Python mostrou (em `range(1, 6)`, ele conta de 1 a 5, mas inclui o 6). Isso porque o intervalo é semi-aberto, o que significa que ele inclui o primeiro valor, mas não o último.
+Note que o segundo desses dois números não está incluído na lista que o Python mostrou (em `range(1, 6)`; ele conta de 1 a 5, mas não inclui o 6). Isso acontece porque o intervalo é semi-aberto, o que significa que ele inclui o primeiro valor, mas não o último.
 
 ## Sumário
 
-É isso. **Você mandou muito bem!** Esse foi um capítulo difícil, então você deve estar orgulhosa. Nós estamos orgulhosas de você por ter conseguido ir tão longe!
+É isso. **Arrasou!** Esse foi um capítulo difícil, então você deve estar orgulhosa. Nós estamos orgulhosas de você por ter conseguido ir tão longe!
 
 Para um tutorial de Python oficial e completo, visite https://docs.python.org/3/tutorial/. Lá você encontrará um guia da linguagem mais exaustivo e completo. Até lá :)
 
-Talvez você queira fazer uma breve pausa -- espreguiçar, andar um pouco, descansar os olhos -- antes de ir para o próximo capítulo. :)
+Talvez você queira fazer uma breve pausa -- se espreguiçar, andar um pouco, descansar os olhos -- antes de ir para o próximo capítulo. :)
 
 ![Cupcake](images/cupcake.png)
