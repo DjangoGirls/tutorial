@@ -592,7 +592,7 @@ Parabéns! Booleanos são um dos recursos mais interessantes na programação, e
 
 > Para leitoras em casa: esta seção é abordada no vídeo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-Até agora, escrevemos todos os códigos no interpretador de Python, que nos limita a digitar uma linha por vez. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até agora executamos nossos programas uma linha de cada vez no **interpretador** de Python. Vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
+Até agora, escrevemos todos os códigos no interpretador de Python, que nos limita a digitar uma linha por vez. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até aqui, executamos nossos programas uma linha de cada vez no **interpretador** de Python. Vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
 
 - Sair do interpretador de Python
 - Abrir o editor de código de sua escolha
@@ -608,9 +608,9 @@ Para sair do interpretador de Python que estamos usando, simplesmente digite a f
 $
 ```
 
-Isso vai levá-lo de volta ao prompt de comando.
+Isso vai levá-la de volta ao prompt de comando.
 
-Anteriormente, nós escolhemos um editor de código da seção [editor de código](../code_editor/README.md). Agora precisamos abrir o editor e escrever algum código em um novo arquivo:
+Mais cedo, nós escolhemos um editor de código da seção [editor de código](../code_editor/README.md). Agora, precisamos abrir o editor e escrever algum código em um novo arquivo:
 
 {% filename %}editor{% endfilename %}
 
