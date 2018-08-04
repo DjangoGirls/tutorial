@@ -138,11 +138,11 @@ OK, chega de strings. Até agora, você aprendeu sobre:
 - **operadores** -- como `+` e `*`, combinam valores para produzir um novo valor
 - **funções** -- como `upper()` e `len()`, executam ações nos objetos.
 
-Esso é o básico de todas as linguagens de programação que você aprender. Pronto para algo mais difícil? Apostamos que sim!
+Esse é o básico de todas as linguagens de programação que você aprender. Pronta para algo mais difícil? Apostamos que sim!
 
 ## Erros
 
-Vamos tentar algo novo. Será que conseguimos saber a extensão de um número da mesma forma que descobrimos a de nossos nomes? Digite `len(304023)` e clique `enter`:
+Vamos tentar algo novo. Será que conseguimos saber a extensão de um número da mesma forma que descobrimos a dos nossos nomes? Digite `len(304023)` e clique `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Temos nosso primeiro erro! O ícone {{ warning_icon }} é a forma que o Pyhton tem para te avisar que o código que você está prestes a executar não vai funcionar conforme o esperado. Cometer erros (inclusive intencionalmente) é uma parte importante da aprendizamgem!
+Temos nosso primeiro erro! O ícone {{ warning_icon }} é a forma que o Pyhton tem para avisar que o código que você está prestes a executar não vai funcionar conforme o esperado. Cometer erros (inclusive intencionalmente) é uma parte importante da aprendizamgem!
 
-Nossa primeira mensagem de erro nos diz que objetos do tipo "int" (inteiros, natuairs) não têm comprimento algum. Então o que podemos fazer agora? Podemos escrever nosso número como string? Strings têm comprimento, certo?
+Nossa primeira mensagem de erro nos diz que objetos do tipo "int" (inteiros, naturais) não têm comprimento algum. Então o que podemos fazer agora? Podemos escrever nosso número como string? Strings têm comprimento, certo?
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ Como você deve ter percebido, a última linha de código não retornou nada com
 'Ola'
 ```
 
-Uhuuu! Sua primeira variável! :) Você sempre pode mudar o seu valor:
+Uhuuu! Sua primeira variável! :) Você sempre pode mudar o valor dela:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Você pode usá-la também em funções:
 5
 ```
 
-Incrível, não? Claro, variáveis podem ser qualquer coisa, então podem ser números também! Tente isso:
+Incrível, né? Claro, variáveis podem ser qualquer coisa, então podem ser números também! Tente isso:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Incrível, não? Claro, variáveis podem ser qualquer coisa, então podem ser n�
 24
 ```
 
-E se digitarmos o nome errado? Você consegue imaginar o que aconteceria? Vamos tentar!
+E se digitarmos errado o nome da variável? Você consegue imaginar o que aconteceria? Vamos tentar!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -238,7 +238,7 @@ NameError: name 'ctiy' is not defined
 
 Um erro! Como você pode ver, o Python tem diferentes tipos de erros e este é chamado **NameError**. O Python mostrará esta mensagem de erro se você tentar usar uma variável que ainda não foi definida. Se você encontrar esse erro mais tarde, confira no seu código se você não digitou errado o nome de uma variável.
 
-Brinque com isso por um tempo e veja o que você consegue fazer!
+Brinque com isso por um tempo e veja o que consegue fazer!
 
 ## A função print
 
@@ -254,7 +254,7 @@ Tente o seguinte:
 Maria
 ```
 
-Quando você digita `name`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você diz para o Python `print(name)`, ele vai "imprimir" o conteúdo da variável na tela sem as aspas, o que é mais bonitinho. :)
+Quando você digita `name`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você diz para o Python `print(name)`, ele vai "imprimir" o conteúdo da variável na tela sem as aspas, que é mais bonitinho. :)
 
 Como veremos mais tarde, `print()` também é útil quando queremos imprimir algo dentro de funções ou quando queremos imprimir algo em várias linhas.
 
