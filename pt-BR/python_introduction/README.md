@@ -254,7 +254,7 @@ Tente o seguinte:
 Maria
 ```
 
-Quando você digita `name`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você diz para o Python `print(name)`, ele vai "imprimir" o conteúdo da variável na tela sem as aspas, que é mais bonitinho. :)
+Quando você digita `name`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você disser para o Python `print(name)`, ele vai "imprimir" o conteúdo da variável na tela sem as aspas, que é mais bonitinho. :)
 
 Como veremos mais tarde, `print()` também é útil quando queremos imprimir algo dentro de funções ou quando queremos imprimir algo em várias linhas.
 
@@ -307,7 +307,7 @@ Isso não retorna nada, apenas troca a ordem em que os números aparecem na list
 
 Como você pode ver, agora os números na nossa lista estão ordenados do menor para o maior. Parabéns!
 
-E se quisermos inverter essa ordem? Vamos fazer isso!
+E se quisermos inverter a ordem? Vamos fazer isso!
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ E se quisermos inverter essa ordem? Vamos fazer isso!
 [59, 42, 30, 19, 12, 3]
 ```
 
-Moleza né? Se você quiser adicionar alguma coisa à sua lista, você pode fazer isto digitando o seguinte comando:
+Moleza, né? Se você quiser adicionar alguma coisa à sua lista, digite o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ Moleza né? Se você quiser adicionar alguma coisa à sua lista, você pode faze
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Se você quiser ver apenas o primeiro número da lista, pode usar **índices**. Um índice é o número que diz onde na lista um item está. Programadores preferem começar a contar a partir do zero, então o primeiro objeto em sua lista está no índice 0, o segundo no 1 e assim por diante. Try this:
+Se você quiser ver apenas o primeiro número da lista, pode usar **índices**. Um índice é o número que diz onde na lista um item está. Programadores preferem começar a contar a partir do zero, então o primeiro objeto em sua lista está no índice 0, o segundo no 1 e assim por diante. Tente isso:
 
 {% filename %}command-line{% endfilename %}
 
