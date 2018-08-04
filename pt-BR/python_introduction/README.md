@@ -476,7 +476,7 @@ Animada para a próxima parte? :)
 
 ## Compare coisas
 
-> Para leitoras em casa: este capítulo é abordado no vídeo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
+> Para leitoras em casa: esta seção é abordada no vídeo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
 Grande parte da programação consiste em comparar coisas. O que é mais fácil comparar? Números, é claro. Vamos ver como isso funciona:
 
@@ -497,7 +497,7 @@ True
 
 Demos ao Python alguns números para comparar. Como você pode ver, ele pode comparar não apenas números, mas também resultados de métodos. Legal, né?
 
-Você deve estar se perguntando por que colocamos dois sinais de igual `==` lado a lado para comparar se os números são iguais. Nós usamos um único `=` para atribuir valores a variáveis. Você sempre, **sempre**, precisa colocar dois `==` se quiser verificar se as coisas são iguais. Também é possível afirmar que as coisas são diferentes. Para isso, usamos o símbolo `! =`, como mostrado no exemplo acima.
+Você deve estar se perguntando por que colocamos dois sinais de igual `==` lado a lado para verificar se os números são iguais. Nós usamos um único `=` para atribuir valores a variáveis. Você sempre, **sempre**, precisa colocar dois `==` se quiser verificar se as coisas são iguais. Também é possível afirmar que as coisas são diferentes. Para isso, usamos o símbolo `!=`, como mostrado no exemplo acima.
 
 Dê ao Python mais duas tarefas:
 
@@ -510,7 +510,7 @@ True
 False
 ```
 
-Vimos `>` e `<`, mas o que significam `>=` e `<=`? Leia da seguinte forma:
+Já vimos `>` e `<`, mas o que significam `>=` e `<=`? Leia da seguinte forma:
 
 - x `>` y significa: x é maior que y
 - x `<` y significa: x é menor que y
@@ -530,9 +530,9 @@ False
 True
 ```
 
-Você pode pedir ao Python para comprar quantos números você quiser, e ele vai te dar uma resposta! Espertinho, não é?
+Você pode pedir ao Python para comprar quantos números você quiser e ele vai te dar uma resposta! Espertinho, não é?
 
-- **and** -- se você usar o operador `and`, as duas comparações terão que ser verdadeiras para que a expressão seja verdadeiro (True)
+- **and** -- se você usar o operador `and`, as duas comparações terão que ser verdadeiras para que a expressão seja verdadeira (True)
 - **or** - se você usar o operador `or`, apenas uma das comparações precisa ser verdadeira para que a expressão seja verdadeira (True)
 
 Já ouviu a expressão "comparar alhos com bugalhos"? Vamos tentar o equivalente em Python:
@@ -546,9 +546,9 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Aqui vemos que assim como na expressão, o Python não é capaz de comparar um número (`int`) e uma string (`str`). Em vez disso, ele mostrou um **TypeError** e nos disse que os dois tipos não podem ser comparados um ao outro.
+Aqui vemos que assim como não podemos compara alhos com bugalhos, o Python não é capaz de comparar um número (`int`) e uma string (`str`). Em vez de retornar um resultado, ele mostrou um **TypeError** e nos disse que os dois tipos não podem ser comparados um ao outro.
 
-## Booleano
+## Booleanos
 
 Aliás, você acabou de aprender sobre um novo tipo de objeto em Python. Ele se chama **booleano**.
 
@@ -590,9 +590,9 @@ Parabéns! Booleanos são um dos recursos mais interessantes na programação, e
 
 # Salve!
 
-> Para leitoras em casa: este capítulo é abordado no vídeo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
+> Para leitoras em casa: esta seção é abordada no vídeo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-Até agora escrevemos todos os códigos no interpretador de Python, que nos limita a digitar uma linha por vez. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até agora executamos nossos programas uma linha de cada vez no **interpretador** de Python. Vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
+Até agora, escrevemos todos os códigos no interpretador de Python, que nos limita a digitar uma linha por vez. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até agora executamos nossos programas uma linha de cada vez no **interpretador** de Python. Vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
 
 - Sair do interpretador de Python
 - Abrir o editor de código de sua escolha
