@@ -2,7 +2,7 @@
 
 Se você estiver fazendo o tutorial em casa e não em um dos [eventos Django Girls](https://djangogirls.org/events/), você pode pular este capítulo e ir direto para o capítulo [Como a internet funciona](../how_the_internet_works/README.md).
 
-Isto porque cobrimos estas coisas no tutorial de qualquer maneira, e esta é apenas uma página adicional que reúne todas as instruções de instalação em um só lugar. O evento Django Girls inclui uma "noite de instalação" onde instalamos tudo de forma não precisar se preocupar com isso durante o workshop, e isso é útil para nós.
+Isto porque cobrimos estas coisas no tutorial de qualquer maneira, e esta é apenas uma página adicional que reúne todas as instruções de instalação em um só lugar. O evento Django Girls inclui uma "noite de instalação" quando instalamos tudo que vamos precisar durante o workshop, então essa seção é útil para nós.
 
 Se você achar útil, pode continuar lendo este capítulo também. Mas se quiser começar a aprender antes de instalar um monte de coisas no seu computador, pule este capítulo e explicaremos a parte de instalação para você mais tarde.
 
@@ -10,7 +10,7 @@ Boa sorte!
 
 # Instalação
 
-No workshop você construirá um blog, e há algumas tarefas de configuração no tutorial que são boas para que você esteja pronta(o) para escrever códigos logo.
+No workshop, você construirá um blog. No tutorial, aprecem certas tarefas de configuração que você deve fazer antes para estar pronta para escrever códigos no dia do evento.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
@@ -35,7 +35,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Crie uma conta no GitHub
 
-Vá para [GitHub.com](https://www.github.com) e cadastre uma nova e gratuita conta de usuário.
+Vá para [GitHub.com](https://www.github.com) e cadastre uma conta de usuário.
 
 # Crie uma conta no PythonAnywhere
 
@@ -43,7 +43,7 @@ Vá para [GitHub.com](https://www.github.com) e cadastre uma nova e gratuita con
 
 # Comece a ler
 
-Parabéns, você tem tudo configurado e pronto para começar! Se você ainda tem algum tempo antes do workshop, seria útil começar a ler alguns dos capítulos de início:
+Parabéns, você tem tudo configurado e pronto para começar! Se você ainda tem tempo antes do workshop, seria útil começar a ler alguns dos capítulos iniciais:
 
 * [Como a internet funciona](../how_the_internet_works/README.md)
 
