@@ -62,7 +62,7 @@ Vamos criar um arquivo CSS agora, para adicionar seu próprio estilo à sua pág
                    └─── blog.css
     
 
-Hora de escrever algum CSS! Abra o arquivo `blog/static/css/blog.css` no seu editor de código.
+Hora de escrever um pouco de CSS! Abra o arquivo `blog/static/css/blog.css` no seu editor de código.
 
 Nós não vamos nos aprofundar muito no aprendizado do CSS aqui. No final desta página há uma recomendação para um curso gratuito de CSS se você quiser aprender mais.
 
