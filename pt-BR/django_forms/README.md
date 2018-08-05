@@ -277,7 +277,7 @@ Tente salvar o formulário sem `title` e `text`. Adivinhe o que vai acontecer!
 
 ![Validação de formulários](images/form_validation2.png)
 
-Django está tomando conta de validar se todos os campos de nosso formulário estão corretos. Não é incrível?
+Django está confirmando que todos os campos de nosso formulário estão corretos. Não é incrível?
 
 ## Editando o formulário
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
      return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Isso é quase igual à nossa view de `post_new`, né? Mas não totalmente. Primeira coisa: passamos um parâmetro extra `pk` da url. Em seguida, pegamos o modelo `Post` que queremos editar com `get_object_or_404 (Post, pk=pk)` e então, quando criamos um formulário, passamos este post como uma `instância` tanto quando salvamos o formulário…
+Isso é quase igual à nossa view de `post_new`, né? Mas não inteiramente. Primeira coisa: passamos um parâmetro extra `pk` a partir da url. Em seguida, pegamos o modelo `Post` que queremos editar com `get_object_or_404 (Post, pk=pk)` e então, quando criamos um formulário, passamos este post como uma `instância` tanto quando salvamos o formulário…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,11 +358,11 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-Ok, vamos testar se funciona! Vamos para a página `post_detail`. Deve haver um botão editar no canto superior direito:
+Ok, vamos testar para ver se funciona! Vamos para a página `post_detail`. Deve haver um botão editar no canto superior direito:
 
 ![Botão editar](images/edit_button2.png)
 
-Quando você clicar nesse botão, você verá o formulário com a nossa postagem:
+Quando você clicar nesse botão, verá o formulário com a nossa postagem:
 
 ![Editando o formulário](images/edit_form2.png)
 
