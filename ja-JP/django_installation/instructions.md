@@ -212,7 +212,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Ubuntu 12.04でpipを呼んだときにエラーが起きた場合は、仮想環境(virtualenvironment) 内でpipインストールを直すために`python -m pip install -U --force-reinstall pip` を実行して下さい。
+> Ubuntu 12.04でpipを呼んだときにエラーが起きた場合は、仮想環境(virtualenv) 内にpipを再インストールするために`python -m pip install -U --force-reinstall pip` を実行して下さい。
 
 <!--endsec-->
 
