@@ -52,7 +52,7 @@ Novamente, criaremos um link para a página, uma URL, uma view e um template.
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note que queremos chamar nossa nova view de `post_new`. A classe `"glyphicon glyphicon-plus"` é fornecida pelo tema (bootstrap) que estamos usando, e inos mostrará um sinal de mais.
+Note que queremos chamar nossa nova view de `post_new`. A classe `"glyphicon glyphicon-plus"` é fornecida pelo tema (bootstrap) que estamos usando, e nos mostrará um sinal de mais.
 
 Depois de adicionar essa linha, o seu HTML vai ficar assim:
 
@@ -85,7 +85,7 @@ Depois de adicionar essa linha, o seu HTML vai ficar assim:
 </html>
 ```
 
-Depois de salvar e recarregar a página `http://127.0.0.1:8000` você verá, obviamente, um erro familiar `NoReverseMatch` certo?
+Depois de salvar e recarregar a página `http://127.0.0.1:8000`, você verá, obviamente, o familiar erro `NoReverseMatch`, certo?
 
 ## URL
 
@@ -112,9 +112,9 @@ urlpatterns = [
 ]
 ```
 
-Após recarregar a página, nós veremos um `AttributeError`, já que nós não temos a view `post_new` implementada. Vamos adicioná-la agora.
+Após recarregar a página, veremos um `AttributeError` por que não temos a view `post_new` implementada. Vamos adicioná-la agora.
 
-## post_new view
+## View post_new
 
 Hora de abrir o arquivo `blog/views.py` e adicionar as linhas seguintes com o resto das linhas `from`:
 
@@ -124,7 +124,7 @@ Hora de abrir o arquivo `blog/views.py` e adicionar as linhas seguintes com o re
 from .forms import PostForm
 ```
 
-E daí nosso *view*:
+E então a nossa *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,20 +134,20 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Para criar um novo formulario `Post`, devemos chamar `PostForm()` e passá-lo para o template. Voltaremos a este *view* depois, mas por enquanto, vamos criar uma template para o formulário.
+Para criar um novo formulario `Post`, devemos chamar `PostForm()` e passá-lo para o template. Voltaremos a esta *view* depois, mas por enquanto, vamos criar um template para o formulário.
 
 ## Template
 
-Precisamos criar um arquivo `post_edit.html` na pasta `blog/templates/blog`. Pra fazer o formulário funcionar, precisamos de muitas coisas:
+Precisamos criar um arquivo `post_edit.html` na pasta `blog/templates/blog`. Para fazer o formulário funcionar, precisamos de muitas coisas:
 
 * Temos que exibir o formulário. Podemos fazer isso com (por exemplo) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * A linha acima precisa estar dentro de uma tag HTML form: `<form method="POST">...</form>`.
 * Precisamos de um botão `Salvar`. Fazemos isso com um botão HTML: `<button type="submit">Save</button>`.
-* E finalmente, depois de abrir a tag `<form ...>`, precisamos adicionar {% raw %}`{% csrf_token %}`{% endraw %}. Isso é muito importante, pois é isso que faz o nosso formulário ficar seguro! Se você esquecer esta parte, Django vai reclamar quando você tentar salvar o formulário:
+* E finalmente, depois de abrir a tag `<form ...>`, precisamos adicionar {% raw %}`{% csrf_token %}`{% endraw %}. Isso é muito importante, pois é isso que torna o nosso formulário seguro! Se você esquecer esta parte, o Django vai reclamar quando você tentar salvar o formulário:
 
 ![CSFR Página proíbida](images/csrf2.png)
 
-Beleza, então vamos ver como ficou o HTML `post_edit.html`:
+Legal, então vamos ver como ficou o HTML `post_edit.html`:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Quando enviamos o formulário, somos trazidas de volta à mesmo view, mas desta vez temos mais alguns dados no `request`, especificamente em `request.POST` (o nome não tem nada a ver com "post" de blog; tem a ver com o fato que estamos "postando" dados). Você se lembra que no arquivo HTML, nossa definição de `form` incluiu o variável `method="POST"`? Todos os campos vindos do "form" estarão disponíveis agora em `request.POST`. Não renomeie `POST` para nada diferente disso (o único outro valor válido para `method` é `GET`, mas nós não temos tempo para explicar qual é a diferença).
+Quando enviamos o formulário, somos trazidas de volta à mesma view, mas desta vez temos mais alguns dados no `request`, especificamente em `request.POST` (o nome não tem nada a ver com "post" de blog; tem a ver com o fato que estamos "postando" dados). Você se lembra que no arquivo HTML, nossa definição de `form` incluiu o variável `method="POST"`? Todos os campos vindos do "form" estarão disponíveis agora em `request.POST`. Não renomeie `POST` para nada diferente disso (o único outro valor válido para `method` é `GET`, mas nós não temos tempo para explicar qual é a diferença).
 
 Então em nossa *view* temos duas situações diferentes com as quais lidar: primeiro, quando acessamos a página pela primeira vez e queremos um formulário em branco e, segundo, quando voltamos para a *view* com todos os dados do formulário que acabamos de digitar. Desse modo, precisamos adicionar uma condição (usaremos `if` para isso):
 
