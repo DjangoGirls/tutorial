@@ -6,7 +6,7 @@ Queremos criar algo que armazene todos os posts em nosso blog. Mas para fazer is
 
 Existe um conceito em programação chamado `programação orientada a objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, a gente pode modelar as coisas e definir como elas interagem umas com as outras.
 
-Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos lhe dar um exemplo.
+Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos mostrar um exemplo.
 
 Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade seria vazia).
 
@@ -45,7 +45,7 @@ Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título
     published_date
     
 
-Que tipo de ações pode ser feitas com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
+Que tipo de ações podem ser feitas com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
 
 Então, nós precisaremos de um método `publicar (publish)`.
 
