@@ -12,7 +12,7 @@ Sabe, em HTML não podemos incluir código Python porque os browsers só entende
 
 No capítulo anterior, fornecemos para o nosso template uma lista de postagens e a variável <o>posts</o>. Agora vamos exibi-las em HTML.
 
-Pra mostrar uma variável dentro de um template do Django, nós usamos chaves duplas com o nome da variável dentro, assim:
+Pra mostrar uma variável em um template do Django, usamos chaves duplas com o nome da variável, assim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,11 +20,11 @@ Pra mostrar uma variável dentro de um template do Django, nós usamos chaves du
 {{ posts }}
 ```
 
-Tente fazer isso no seu template `blog/templates/blog/post_list.html`. Substitua tudo desde o segundo `<div>` até o terceiro `</div>` com `{{ posts }}`. Salve o arquivo, e atualize a página para ver o resultado:
+Tente fazer isso no seu template `blog/templates/blog/post_list.html`. Substitua tudo desde o segundo `<div>` até o terceiro `</div>` por `{{ posts }}`. Salve o arquivo e atualize a página para ver o resultado:
 
 ![Figura 13.1](images/step1.png)
 
-Você pode ver, tudo que temos é:
+Como você pode ver, obtivemos apenas:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +32,7 @@ Você pode ver, tudo que temos é:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Isto significa que o Django a entende como uma lista de objetos. Lembre-se de **introdução ao Python** como podemos exibir listas? Sim, com laços "for"! Em um template do Django você pode criá-los assim:
+Isto significa que o Django entende essa variável como uma lista de objetos. Em **Introdução ao Python** aprendemos como exibir listas, lembra? Sim, com laços "for"! Em um template do Django você pode criá-los assim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -46,7 +46,7 @@ Tente fazer isso no seu template.
 
 ![Figura 13.2](images/step2.png)
 
-Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos, como os que criamos anteriormente no capítulo de **Introdução a HTML**. Nós podemos misturar HTML com tags de template. O conteúdo da tag `body` ficará assim:
+Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos que criamos anteriormente no capítulo de **Introdução a HTML**. Nós podemos misturar HTML com tags de template. O conteúdo da tag `body` ficará assim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
