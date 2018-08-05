@@ -1,4 +1,4 @@
-Sign up for a free "Beginner" account on PythonAnywhere:
+Registra una cuenta gratuita de tipo "Beginner" en PythonAnywhere:
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
