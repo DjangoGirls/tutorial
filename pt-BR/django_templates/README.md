@@ -6,11 +6,11 @@ Hora de exibir dados! O Django já vem com algumas **tags de template** que são
 
 Sabe, em HTML não podemos incluir código Python porque os browsers só entendem HTML. Sabemos que o HTML é bem estático, enquanto o Python é muito mais dinâmico.
 
-**Tags de template Django** nos permite transformar código que se parece Python em código HTML, para que você possa construir sites dinâmicos mais rápido e mais fácilmente. Uhuu!
+**Tags de template Django** nos permitem transformar código similar a Python em código HTML para que você possa construir sites dinâmicos mais rápido e mais facilmente. Legal!
 
-## Modelo de lista de post de exibição
+## Templates para lista de posts
 
-No capitulo anterior, nós fornecemos ao nosso template uma lista de postagens e a variável <o>posts</o>. Agora vamos exibir em nosso HTML.
+No capítulo anterior, fornecemos para o nosso template uma lista de postagens e a variável <o>posts</o>. Agora vamos exibi-las em HTML.
 
 Pra mostrar uma variável dentro de um template do Django, nós usamos chaves duplas com o nome da variável dentro, assim:
 
