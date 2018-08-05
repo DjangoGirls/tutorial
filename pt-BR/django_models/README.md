@@ -161,13 +161,13 @@ Agora definimos as propriedades que comentamos acima: `title`, `text`, `created_
 
 Nós não explicaremos cada pedaço de código aqui pois isso levaria muito tempo. Você deve dar uma olhada na documentação do Django se quiser saber mais sobre campos de modelos e como definir outras coisas além das descritas acima (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-E que tal `def publish(self):`? É justamente o método `publish` que falamos anteriormente. `def` significa que se trata de uma função/método e que `publish` é seu nome. Você pode mudar o nome do método, se quiser. A regra para nomes é que usamos sempre letras minúsculas e sublinhados ao no lugar dos espaços em branco. Por exemplo, um método que calcula o preço médio poderia se chamar `calculate_average_price` (do inglês, calcular_preco_medio).
+E sobre `def publish(self):`? É justamente o método `publish` que falamos anteriormente. `def` significa que se trata de uma função/método e que `publish` é seu nome. Você pode mudar o nome do método, se quiser. A regra para nomes que usamos é sempre letras minúsculas e sublinhados no lugar dos espaços em branco. Por exemplo, um método que calcula o preço médio poderia se chamar `calculate_average_price` (do inglês, calcular_preco_medio).
 
-Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `__str__`. Nesse caso, quando chamar `__str__()` resulta em um texto (**string**), com o título do Post.
+Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `__str__`. Neste caso, quando chamarmos `__str__()`, obteremos um texto (**string**) com o título do Post.
 
-Lembre-se também que ambos `def publish(self):`, e `def __str__(self):` são endentados para dentro da classe. E porque Python é sensível a espaços em branco, precisamos endentar todos os nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe, e você pode obter um comportamento inesperado.
+Lembre-se também que ambos `def publish(self):`, e `def __str__(self):` são indentados para dentro da classe. E, como Python é sensível a espaços em branco, precisamos indentar todos os nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe, e você pode obter um comportamento inesperado.
 
-Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para sua monitora! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas espero que isto se pareça um pouco menos mágica agora!
+Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para sua monitora! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas espero que isto se pareça um pouco menos como mágica agora!
 
 ### Criando tabelas para nossos modelos no banco de dados
 
