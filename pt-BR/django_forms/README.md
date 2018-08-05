@@ -1,12 +1,12 @@
 # Formulários
 
-Por último, queremos uma forma legal de adicionar e editar as postagens do nosso blog. A `ferramenta de administração` do Django é legal, mas é um pouco difícil de personalizar e de deixar mais bonita. Com `formulários`, temos poder absoluto sobre nosso interface - podemos fazer quase tudo que podemos imaginar!
+Por último, queremos uma forma legal de adicionar e editar as postagens do nosso blog. A `ferramenta de administração` do Django é legal, mas é um pouco difícil de personalizar e de deixar mais bonita. Com `formulários`, temos poder absoluto sobre nossa interface - podemos fazer quase tudo que pudermos imaginar!
 
-Uma coisa legal do Django é que nós podemos tanto criar um formulário do zero, como criar um `ModelForm` que salva o resultado do formulário em um determinado modelo.
+Uma coisa legal do Django é que podemos tanto criar um formulário do zero, como criar um `ModelForm` que salva o resultado do formulário em um determinado modelo.
 
-É exatamente isso que nós queremos fazer: criar um formulário para o nosso modelo `Post`.
+É exatamente isso que queremos fazer: criar um formulário para o nosso modelo `Post`.
 
-Assim como toda parte importante do Django, forms têm seu próprio arquivo: `forms.py`.
+Assim como todas as partes importantes do Django, forms têm seu próprio arquivo: `forms.py`.
 
 Precisamos criar um arquivo com este nome dentro da pasta `blog`.
 
@@ -34,9 +34,9 @@ Primeiro, precisamos importar o módulo de formulários do Django (`from django 
 
 `PostForm`, como você já deve suspeitar, é o nome do nosso formulário. Precisamos dizer ao Django que esse form é um `ModelForm` (pro Django fazer algumas mágicas para nós) – `forms.ModelForm` é o responsável por essa parte.
 
-Em seguida, temos a `class Meta` onde dizemos ao Django qual modelo deverá ser usado para criar este formulário (`model = Post`).
+Em seguida, temos a `class Meta` em que dizemos ao Django qual modelo deverá ser usado para criar este formulário (`model = Post`).
 
-Por fim, podemos dizer qual(is) campo(s) devem entrar no nosso formulário. Neste cenário, queremos apenas que o `title` e o `text` sejam expostos - `author` deveria ser a pessoa que está logada no sistema (nesse caso, você!) e `created_date` deveria ser configurado automaticamente quando criamos um post (no código), correto?
+Por fim, podemos dizer quais campos devem entrar no nosso formulário. Neste cenário, queremos que apenas o `title` e o `text` sejam expostos -- `author` deve ser a pessoa que está logada no sistema (nesse caso, você!) e `created_date` deve ser configurado automaticamente quando criamos um post (no código), correto?
 
 E é isso! Tudo o que precisamos fazer agora é usar o formulário em uma *view* e mostrá-lo em um template.
 
