@@ -61,7 +61,7 @@ Você pode pensar em um modelo de banco de dados como uma planilha com colunas (
 
 ### Criando uma aplicação
 
-Para manter tudo arrumado vamos criar um aplicativo separado dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar um aplicativo precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
+Para manter tudo arrumado, vamos criar um aplicativo separado dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar um aplicativo precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -140,7 +140,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Verifique que você usou dois caracteres de sublinhado (`_`) a cada lado de `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, chamamos de "dunder" (redução de "double-underscore").
+> Verifique que você usou dois caracteres de sublinhado (`_`) a cada lado de `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, chamamos de "dunder" (redução de "double-underscore" - sublinhado duplo em português).
 
 Parece assustador, né? Mas não se preocupe, vamos explicar o que essas linhas significam!
 
