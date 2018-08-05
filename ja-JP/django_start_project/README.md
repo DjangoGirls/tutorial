@@ -47,10 +47,10 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
     djangogirls
     ├───manage.py
     ├───mysite
-    │         settings.py
-    │         urls.py
-    │         wsgi.py
-    │         __init__.py
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
     └───requirements.txt
     
 
@@ -80,7 +80,7 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
 TIME_ZONE = 'Asia/Tokyo'
 ```
 
-言語コードは、あなたの利用する言語を設定する必要があります。 英語の場合は`en`、ドイツ語の場合は`de`、国コードの場合は`de`はドイツ、`ch`はスイスです。 英語があなたの母国語でない場合、これを追加してDjangoのデフォルトのボタンや通知をあなたの言語に変更することができます。 ですのでたとえば「Cancel」ボタンがここで定義した言語に翻訳されます。 [Djangoには多くの言語が付属しています](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code)。
+言語コードは、あなたの利用する言語を設定する必要があります。 英語の場合は`en`、ドイツ語の場合は`de`、国コードの場合は`de`はドイツ、`ch`はスイスです。 英語があなたの母国語でない場合、これを追加してDjangoのデフォルトのボタンや通知をあなたの言語に変更することができます。 ですのでたとえば「Cancel」ボタンがここで定義した言語に翻訳されます。 [Djangoには多くの言語が付属しています](https://docs.djangoproject.com/ja/2.0/ref/settings/#language-code)。
 
 別の言語を使用する場合は、次の行を変更して言語コードを変更します。
 
