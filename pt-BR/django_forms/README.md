@@ -145,7 +145,7 @@ Precisamos criar um arquivo `post_edit.html` na pasta `blog/templates/blog`. Par
 * Precisamos de um botão `Salvar`. Fazemos isso com um botão HTML: `<button type="submit">Save</button>`.
 * E finalmente, depois de abrir a tag `<form ...>`, precisamos adicionar {% raw %}`{% csrf_token %}`{% endraw %}. Isso é muito importante, pois é isso que torna o nosso formulário seguro! Se você esquecer esta parte, o Django vai reclamar quando você tentar salvar o formulário:
 
-![CSFR Página proíbida](images/csrf2.png)
+![CSFR Página proibida](images/csrf2.png)
 
 Legal, então vamos ver como ficou o HTML `post_edit.html`:
 
@@ -267,7 +267,7 @@ Isso é incrível!
 
 > Como recentemente usamos a interface de administração do Django, o sistema entende que estamos logadas. Existem algumas situações que poderiam nos desligar do sistema (fechar o navegador, reiniciar banco de dados etc.). Se ao criar um post você receber erros que se referem à ausência de um usuário logado, vá até a página de admin http://127.0.0.1:8000/admin e faça login novamente. Isso vai resolver o problema temporariamente. Há um ajuste permanente esperando por você em **lição de casa: adicionar segurança ao seu site!**, um capítulo posterior ao tutorial principal.
 
-![Erro de  usuário logado](images/post_create_error.png)
+![Erro de usuário logado](images/post_create_error.png)
 
 ## Validação de formulários
 
@@ -394,7 +394,7 @@ Vamos incluir outra tag `{% if %}` que irá apresentar o link somente para os us
 {% endif %}
 ```
 
-Este `{% if %}` fará com que o link seja enviado ao navegador se o usuário que requisitou a página estiver logado. Isso não protege completamente a criação de um novo post, mas é um bom começo. Vamos falar mais sobre segurança nas próximas lições.
+Este `{% if %}` fará com que o link seja enviado ao navegador se o usuário que requisitou a página estiver logado. Isso não protege o blog completamente da criação de um novo post, mas é um bom começo. Vamos falar mais sobre segurança nas próximas lições.
 
 Lembra do ícone Editar que acabamos de adicionar à nossa página de detalhes? Queremos fazer a mesma coisa com ele para que outras pessoas não possam editar as mensagens já existentes.
 
@@ -422,7 +422,7 @@ Você provavelmente está logada, então se atualizar a página, não verá nada
 
 Vamos ver se tudo isso funciona no PythonAnywhere. Hora de fazer outro deploy!
 
-* Primeiro, commite o seu novo código e dê o comando push para colocá-lo no Github:
+* Primeiro, faça o commit do seu novo código e dê o comando push para colocá-lo no Github:
 
 {% filename %}command-line{% endfilename %}
 
@@ -442,7 +442,7 @@ Vamos ver se tudo isso funciona no PythonAnywhere. Hora de fazer outro deploy!
     [...]
     
 
-(Lembre-se de substituir o `<your-pythonanywhere-username>` com seu username do PythonAnywhere, sem os símbolos < e >).
+(Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
 
 * Finalmente, vá para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e clique **Reload**.
 
