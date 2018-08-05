@@ -265,13 +265,13 @@ Você deve ter percebido que estamos estabelecendo a data de publicação antes 
 
 Isso é incrível!
 
-> Como recentemente usamos a interface de administração do Django, o sistema entende que estamos logadas. Existem algumas situações que poderiam nos desligar do sistema (fechar o navegador, reiniciar banco de dados etc.). Se ao criar um post você receber erros que se referem à ausência de um usuário logado, vá até a página de admin http://127.0.0.1:8000/admin e faça login novamente. Isso vai resolver o problema temporariamente. Há um ajuste permanente esperando por você em **lição de casa: adicionar segurança ao seu site!**, um capítulo que vem depois do tutorial principal.
+> Como recentemente usamos a interface de administração do Django, o sistema entende que estamos logadas. Existem algumas situações que poderiam nos desligar do sistema (fechar o navegador, reiniciar banco de dados etc.). Se ao criar um post você receber erros que se referem à ausência de um usuário logado, vá até a página de admin http://127.0.0.1:8000/admin e faça login novamente. Isso vai resolver o problema temporariamente. Há um ajuste permanente esperando por você em **lição de casa: adicionar segurança ao seu site!**, um capítulo posterior ao tutorial principal.
 
 ![Erro de  usuário logado](images/post_create_error.png)
 
 ## Validação de formulários
 
-Agora, nós lhe mostraremos como os fórmularios são legais. O post do blog precisa ter os campos `title` e `text`. Em nosso modelo `Post` não dissemos (em oposição a `published_date`) que esses campos não são necessários, então Django, por padrão, espera que sejam definidos.
+Agora, mostraremos como os fórmularios do Django são legais. O post do blog precisa ter os campos `title` e `text`. Em nosso modelo `Post` não dissemos (em oposição a `published_date`) que esses campos são opcionais, então o Django, por padrão, espera que sejam definidos.
 
 Tente salvar o formulário sem `title` e `text`. Adivinhe o que vai acontecer!
 
