@@ -1,16 +1,16 @@
 # Como a Internet funciona
 
-> Para leitoras em casa: este capítulo é abordado no vídeo [Como a Internet funciona](https://www.youtube.com/watch?v=oM9yAA09wdc).
+> Para leitoras em casa: este capítulo é abordado no vídeo [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
 > Este capítulo é inspirado na palestra "Como a Internet funciona" de Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
 Apostamos que você usa a Internet todos os dias. Mas você sabe realmente o que acontece quando digita um endereço como https://djangogirls.org em seu navegador e aperta `Enter`?
 
-A primeira coisa que você precisa entender é que um site é só um monte de arquivos salvos em um disco rígido. Igual a seus filmes, músicas, ou imagens. No entanto, há uma parte que é exclusiva para sites: ela inclui códigos de computador chamado HTML.
+A primeira coisa que você precisa entender é que um site é só um monte de arquivos salvos em um disco rígido. Igual a seus filmes, músicas, ou imagens. No entanto, há uma parte que é exclusiva para sites: ela inclui códigos de computador chamados HTML.
 
 Se você não estiver familiarizada com programação, pode ser difícil compreender o HTML no começo, mas seus navegadores da web (como o Chrome, Safari, Firefox, etc) amam ele. Os navegadores da Web são projetados para entender esse código, seguir suas instruções e apresentar esses arquivos de que seu site é feito, exatamente como você quer.
 
-Igual a todos os arquivos, os arquivos HTML precisam ser armazenados num disco rígido. Para a internet, usamos poderosos computadores especiais chamados *servidores*. Eles não têm uma tela, um mouse ou um teclado, porque sua finalidade principal é armazenar dados e servi-los. É por isso que eles são chamados de *servidores* -- eles *servem* dados a você.
+Como qualquer arquivo, os arquivos HTML precisam ser armazenados num disco rígido. Para a internet, usamos poderosos computadores especiais chamados *servidores*. Eles não têm uma tela, um mouse ou um teclado, porque sua finalidade principal é armazenar dados e servi-los. É por isso que eles são chamados de *servidores* -- eles *servem* dados a você.
 
 OK, mas você quer saber com o quê a internet se parece, certo?
 
@@ -18,7 +18,7 @@ Fizemos um desenho para ajudar! Veja:
 
 ![Figura 1.1](images/internet_1.png)
 
-Que bagunça, né? Na verdade é uma rede de máquinas conectadas (os *servidores* mencionados acima). São centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! Para ver o quão complicada a internet é você pode visitar um site (http://submarinecablemap.com/) que mostra o mapa com dos cabos submarinos. Aqui está um screenshot do site:
+Que bagunça, né? Na verdade, a internet é uma rede de máquinas conectadas (os *servidores* mencionados acima). São centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! Para ver o quão complicada a internet é, você pode visitar um site (http://submarinecablemap.com/) que mostra o mapa com dos cabos submarinos. Aqui está um screenshot do site:
 
 ![Figura 1.2](images/internet_3.png)
 
