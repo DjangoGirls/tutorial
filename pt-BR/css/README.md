@@ -14,7 +14,7 @@ Bootstrap é um dos frameworks de HTML e CSS mais populares para desenvolver web
 
 Foi escrito por programadores que trabalharam no Twitter. Agora é desenvolvido por voluntários de todo o mundo!
 
-## Instalar Bootstrap
+## Instalar o Bootstrap
 
 Para instalar o Bootstrap, você precisa adicionar o seguinte código no `<head>` dentro do seu arquivo `.html`:
 
@@ -33,7 +33,7 @@ Já está mais bonita!
 
 ## Arquivos estáticos no Django
 
-Finalmente, vamos dar uma olhada mais de perto nessas coisas que chamamos de **arquivos estáticos**. Arquivos estáticos são todos seu CSS e imagens. Seu conteúdo não depende do contexto de requisição e será o mesmo para todos os usuários.
+Finalmente, vamos dar uma olhada mais de perto nessas coisas que chamamos de **arquivos estáticos**. Arquivos estáticos são todos os seus CSS e imagens. Seu conteúdo não depende do contexto de requisição e será o mesmo para todos os usuários.
 
 ### Onde colocar os arquivos estáticos para o Django
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` é um seletor CSS. Isto significa que estamos aplicando nossos estilos a qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, nós estamos dizendo para mudar a cor para `#FCA205`, que é laranja. Mas é claro que você pode colocar a cor que você quiser aqui!
+`h1 a` é um seletor CSS. Isto significa que estamos aplicando nossos estilos a qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, nós estamos dizendo para mudar a cor para `#FCA205`, que é laranja. Mas é claro que você pode colocar a cor que quiser aqui!
 
 Em um arquivo CSS, nós determinamos estilos para elementos do arquivo HTML. A primeira maneira de identificar elementos é usando seus nomes. Você pode se lembrar desses nomes como as tags da seção HTML. Coisas como `a` `h1` e `body` são exemplos de nomes de elementos. Também identificamos elementos pelo atributo `class` ou pelo atributo `id`. Class e id são nomes que você mesma dá ao elemento. Classes definem grupos de elementos, e ids apontam para elementos específicos. Por exemplo, a tag a seguir pode ser identificada usando a tag de nome `a`, a classe `external_link` ou o id de `link_to_wiki_page`:
 
@@ -178,7 +178,7 @@ h1 a {
 
 Incrível!
 
-Como mencionado acima, o CSS tem um conceito de classes. Essas classes permitem que você nomeie uma parte do código HTML e aplique estilos apenas a esta parte sem afetar nenhuma outra. Isto pode ser super útil! Talvez você tenha duas divs que estão fazendo algo diferente (como o seu cabeçalho e seu post). Uma classe pode ajudá-la a diferenciá-los.
+Como mencionado acima, o CSS tem um conceito de classes. Essas classes permitem que você nomeie uma parte do código HTML e aplique estilos apenas a esta parte sem afetar nenhuma outra. Isto pode ser super útil! Talvez você tenha duas divs que estão fazendo coisas diferentes (como o seu cabeçalho e seu post). Uma classe pode ajudá-la a diferenciá-los.
 
 Vá em frente e o nomeie algumas partes do código HTML. Adicione uma classe chamada `page-header` para o `div` que contém o cabeçalho, assim:
 
@@ -269,7 +269,7 @@ Então, inclua declarações de classes no código HTML que exibe os posts. No a
 {% endfor %}
 ```
 
-no arquivo `blog/templates/blog/post_list.html` por isto:
+por isto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
