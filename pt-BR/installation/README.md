@@ -53,6 +53,6 @@ Parabéns, você tem tudo configurado e pronto para começar! Se você ainda tem
 
 * [O que é Django?](../django/README.md)
 
-# Aproveite a oficina!
+# Aproveite o workshop!
 
-Quando você começar a oficina, você será capaz de ir direto para o [seu primeiro projeto Django!](../django_start_project/README.md) porque você já cobriu o material nos capítulos anteriores.
+Quando você começar a oficina, já será capaz de ir direto para o [seu primeiro projeto Django!](../django_start_project/README.md) porque já viu todo o material dos capítulos anteriores.
