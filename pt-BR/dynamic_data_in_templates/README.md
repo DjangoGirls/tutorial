@@ -57,9 +57,9 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-A última parte que falta é colocar a QuerySet `posts` dentro do template. Não se preocupe com isso agora, vamos falar sobre como exibi-lo em um próximo capítulo.
+A última parte que falta é passar a QuerySet `posts` para o template. Não se preocupe com isso agora, vamos falar sobre como exibi-lo em um próximo capítulo.
 
-Note que criamos uma *variável* para nosso o QuerySet: `posts`. Esse é o nome do nosso QuerySet. De agora em diante nós podemos nos referir a ele por este nome.
+Note que criamos uma *variável* para nosso o QuerySet: `posts`. Esse é o nome do nosso QuerySet. De agora em diante, podemos nos referir a ele por este nome.
 
 Na função `render` já temos um parâmetro `request` (tudo o que recebemos do usuário através da Internet) e um arquivo de template (`'blog/post_list.html'`). O último parâmetro -- `{}` -- é um lugar em que podemos acrescentar algumas coisas para o template usar. Precisamos nomear os parâmetros (continuaremos com `'posts'`, por enquanto). :) Deve ficar assim: `{'posts': posts}`. Note que a parte antes de `:` é uma string; por isso você precisa colocá-la entre aspas: `"`.
 
