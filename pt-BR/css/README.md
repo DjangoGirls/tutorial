@@ -4,19 +4,19 @@ Nosso blog ainda está um pouco feio, né? Está na hora de deixar ele mais boni
 
 ## O que é CSS?
 
-Cascading Style Sheets (CSS - Folhas de Estilo em Cascata, em português) é uma linguagem utilizada para descrever o visual e a formatação de um website escrito numa linguagem de marcação (como HTML). Veja ela como uma maquiagem para a nossa página web. :)
+Cascading Style Sheets (CSS - Folhas de Estilo em Cascata, em português) é uma linguagem utilizada para descrever o visual e a formatação de um website escrito numa linguagem de marcação (como HTML). Considere como uma maquiagem para a nossa página web. :)
 
 Mas não queremos começar do zero de novo, né? Mais uma vez, usaremos algo que outros programadores lançaram na Internet de graça. Você sabe, reinventar a roda não é divertido.
 
 ## Vamos usar o Bootstrap!
 
-Bootstrap é um dos frameworks HTML e CSS mais populares para desenvolver belos websites: https://getbootstrap.com/
+Bootstrap é um dos frameworks de HTML e CSS mais populares para desenvolver websites mais bonitinhos: https://getbootstrap.com/
 
 Foi escrito por programadores que trabalharam no Twitter. Agora é desenvolvido por voluntários de todo o mundo!
 
 ## Instalar Bootstrap
 
-Para instalar o Bootstrap, você precisa adicionar isso `<head>` no seu arquivo `.html`:
+Para instalar o Bootstrap, você precisa adicionar o seguinte código no `<head>` dentro do seu arquivo `.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -49,7 +49,7 @@ Fazemos isso criando uma pasta chamada `static` dentro da aplicação blog:
     └── mysite
     
 
-O Django vai automaticamente encontrar quaisquer pastas chamadas "static" dentro de quaisquer pastas dos seus apps. Então ele será capaz de usar seu conteúdo como arquivos estáticos.
+O Django vai encontrar automaticamente quaisquer pastas chamadas "static" dentro de todas as pastas dos seus apps. Então ele será capaz de usar seu conteúdo como arquivos estáticos.
 
 ## Seu primeiro arquivo CSS!
 
