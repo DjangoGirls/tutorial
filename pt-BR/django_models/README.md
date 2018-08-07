@@ -49,13 +49,13 @@ Que tipo de ações podem ser feitas com uma postagem? Seria legal ter algum `m�
 
 Então, nós precisaremos de um método para publicar (`publish`).
 
-Como nós já sabemos o que queremos alcançar, vamos começar a modelá-lo no Django!
+Como já sabemos o que queremos alcançar, podemos começar a modelar em Django!
 
-## Modelo do Django
+## Modelos do Django
 
 Sabendo o que um objeto é, criamos um modelo no Django para a postagem do blog.
 
-Um modelo no Django é um tipo especial de objeto -- ele é salvo em um `banco de dados`. Um banco de dados é uma coleção de dados. Ele é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. Este é o banco de dados padrão Django -- e ele será o suficiente neste primeiro momento.
+Um modelo no Django é um tipo especial de objeto -- ele é salvo em um `banco de dados`. Um banco de dados é uma coleção de dados. Ele é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. Este é o banco de dados padrão do Django -- e ele será o suficiente neste primeiro momento.
 
 Você pode pensar em um modelo de banco de dados como uma planilha com colunas (campos) e linhas (dados).
 
