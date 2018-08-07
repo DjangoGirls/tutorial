@@ -6,7 +6,7 @@ Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar s
 
 Also, in HTML kann man nicht wirklich Python-Code schreiben, weil es der Browser nicht verstehen würde. Denn der kennt nur HTML. Wir wissen, dass HTML ziemlich statisch ist, während Python dynamischer ist.
 
-Die **Django Template Tags** helfen dabei, Python-Dinge in HTML auszudrücken, so dass man einfach und schnell dynamische Websites erstellen kann. Super!
+Die **Django-Template-Tags** erlauben uns, Python-artige Dinge ins HTML zu bringen, so dass man einfach und schnell dynamische Websites erstellen kann. Super!
 
 ## Anzeigen des Post-List-Templates
 
@@ -46,7 +46,7 @@ Versuch das in deinem Template.
 
 ![Abbildung 13.2](images/step2.png)
 
-Es funktioniert! Aber wir wollen, dass die Posts so angezeigt werden, wie die statischen Posts, die wir vorhin im **Einführung in HTML** Kapitel erstellt haben. Du kannst HTML und Template Tags mischen. Unser `body` sollte dann so aussehen:
+Es funktioniert! Aber wir wollen, dass die Posts so wie die statischen Posts angezeigt werden, die wir vorhin im **Einführung in HTML**-Kapitel erstellt haben. Du kannst HTML und Template Tags mischen. Unser `body` sollte dann so aussehen:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
