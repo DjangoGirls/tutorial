@@ -54,7 +54,7 @@
 
 最初の投稿の詳細がこの**URL**で表示されるようにします：http://127.0.0.1:8000/post/1/
 
-投稿の内容を表示する`post_detail`という名前の*ビュー*をDjangoが指し示すように`blog/urls.py`ファイルでURLを作りましょう。 `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` という行を `blog/urls.py` ファイルに追加しましょう。 ファイルは次のようになるでしょう。
+`blog/urls.py`ファイルで`post_detail`という投稿の内容を表示する*ビュー*をDjangoが示すようにURLを作りましょう。 `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` という行を `blog/urls.py` ファイルに追加しましょう。 ファイルは次のようになるでしょう。
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -74,9 +74,9 @@ urlpatterns = [
 - `<int:pk>` – この部分はトリッキーです。これはDjangoは整数の値を期待し、`pk`という名前の変数がビューに渡されることを意味しています。
 - `/` – それからURLの最後に再び **/** が必要です。
 
-つまり、ブラウザに`http://127.0.0.1:8000/post/5/`を入力すると、Djangoは*view*を探していると理解します。`post_detail`に移動し、`pk`が`5`と同じ情報をその*view*に転送します。
+つまり、ブラウザに`http://127.0.0.1:8000/post/5/`を入力すると、Djangoは`post_detail`という*ビュー*を探していると理解します。そして`pk`が`5`という情報をその*ビュー*に転送します。
 
-[Ok] を我々 は `blog/urls.py` に新しい URL パターンを追加しました! ページを更新しましょう：http://127.0.0.1:8000/ Boom！ サーバーが再び実行を停止しました。 コンソールを見てください - 予想通り、もう一つのエラーがあります！
+よし、私たちは `blog/urls.py` に新しい URL パターンを追加しました！ ページを更新しましょう：http://127.0.0.1:8000/ ドーン！ サーバーが再び実行を停止しました。 コンソールを見てください - 予想通り、もう一つのエラーがあります！
 
 ![AttributeError](images/attribute_error2.png)
 
@@ -84,9 +84,9 @@ urlpatterns = [
 
 ## 投稿の詳細ビューを追加する
 
-今回は*view*に追加のパラメータ`pk`が与えられます。 私たちの*view*はそれを捕らえる必要がありますか？ そこで関数を`def post_detail(request、pk):`として定義します。 urls（`pk`）で指定した名前とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略すると、エラーが発生します。
+今回は*ビュー*に追加のパラメータ`pk`が与えられます。 私たちの*ビュー*はそれを受け取る必要がありますね？ そこで関数を`def post_detail(request、pk):`として定義します。 urlsで指定した名前（`pk`）とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略するのは正しくないのでエラーになってしまいます！
 
-今、私たちは1つだけのブログ投稿を取得したいと考えています。 これを行うには、次のようにクエリーセットを使用できます。
+今、私たちは1つだけブログ投稿を取得したいと考えています。 これを行うには、次のようなクエリーセットが使用できます。
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -94,19 +94,19 @@ urlpatterns = [
 Post.objects.get(pk=pk)
 ```
 
-しかし、このコードには問題があります。 与えられた`主キー`（`pk`）で`Post`が存在しない場合、非常に醜いエラーが発生します。
+しかし、このコードには問題があります。 与えられた`プライマリキー`（`pk`）で`Post`が存在しない場合、非常に醜いエラーが発生します。
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-私たちはそれを望んでいません！ しかしもちろん、Djangoには、それを処理するものがあります：`get_object_or_404`。 与えられた`pk`に`Post`がない場合、`Page Not Found 404`のページが表示されます。
+私たちはそれを望んでいません！ しかしもちろん、Djangoにはそれを処理するものがあります：`get_object_or_404` です。 与えられた`pk`の`Post`がない場合、前よりもっとよい `Page Not Found 404` ページが表示されます。
 
 ![Page not found](images/404_2.png)
 
-自分用の`Page not found`ページを作成することもできます。 しかし、それは現在非常に重要ではないので、私たちはそれをスキップします。
+いい知らせとして実際には自分の`Page not found`ページを作って自分の好きなようにきれいにすることができます。しかしそれは今すごく重要ではないので、私たちはそれをスキップします。
 
-`views.py`ファイルに*view*を追加してください。
+よし、今こそ*ビュー*を`views.py`ファイルに追加するときです！
 
-`blog/urls.py`では`views.post_detail`というビューを参照する`post_detail`という名前のURLルールを作成しました。 これは、Djangoが`blog/views.py`内の`post_detail`というビュー機能を使うことを意味します。
+`blog/urls.py`では`views.post_detail`というビューを参照する`post_detail`という名前のURLルールを作成しました。 これは、Djangoが`blog/views.py`内の`post_detail`というビュー関数を待っていることを意味します。
 
 `blog/views.py`を開き、他の`from`行の近くに次のコードを追加する必要があります。
 
@@ -116,7 +116,7 @@ Post.objects.get(pk=pk)
 from django.shortcuts import render, get_object_or_404
 ```
 
-ファイルの最後に*view*を追加します：
+ファイルの最後に*ビュー*を追加します：
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -130,7 +130,7 @@ def post_detail(request, pk):
 
 ![Post list view](images/post_list2.png)
 
-出来ましたね！ しかし、あなたはブログのポストタイトルのリンクをクリックするとどうなりますか？
+出来ましたね！ しかし、ブログ投稿のタイトルのリンクをクリックするとどうなりますか？
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
@@ -160,19 +160,19 @@ def post_detail(request, pk):
 {% endblock %}
 ```
 
-もう一度`base.html`を拡張します。 `content`ブロックでは、投稿のpublished_date（存在する場合）、タイトル、およびテキストを表示します。 しかし、私たちはいくつかの重要なことについて議論すべきですよね？
+もう一度`base.html`を拡張します。 `content`ブロックでは、投稿の公開日（存在する場合）、タイトル、およびテキストを表示します。 しかし、私たちはいくつかの重要なことについて議論すべきですよね？
 
-{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else...` Introduction to Pythonのチャプターでやってこを覚えていますか？）このシナリオでは我々はポストの`published_date`が空ではないかどうかを確認します。{% endraw %}
+{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else...` を**Python入門**のチャプターでやったのを覚えていますか？) このシナリオで私たちは投稿の`公開日（published_date）`が空でないかを確認したいです。{% endraw %}
 
-これで、`TemplateDoesNotExist`がなくなったかどうか確認してページを更新できます。
+これで、ページを更新して`TemplateDoesNotExist`がもうなくなったかどうか確認できます。
 
 ![Post detail page](images/post_detail2.png)
 
 イェーイ！うまくできていますね！
 
-# Deploy time!
+# デプロイタイム！
 
-あなたのウェブサイトがまだPythonAnywhere上で動作するかどうかを確認してみましょう。
+あなたのウェブサイトがまだPythonAnywhere上で動くとしたらいいでしょう？またデプロイしてみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,7 +183,7 @@ def post_detail(request, pk):
     $ git push
     
 
-それから、[PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/)で：
+それから、[PythonAnywhere Bash コンソール](https://www.pythonanywhere.com/consoles/)で：
 
 {% filename %}command-line{% endfilename %}
 
@@ -198,7 +198,7 @@ def post_detail(request, pk):
 
 PythonAnywhereのようなサーバは、（CSSファイルのような）「静的ファイル」をPythonファイルとは違って扱うのが好きです。なぜなら、それらが高速に読み込まれるように最適化できるからです。 その結果、CSSファイルを変更するたびに、サーバー上で追加のコマンドを実行して、更新するように指示する必要があります。 コマンドは`collectstatic`です。
 
-あなたが使用している`source myenv/bin/activate`コマンドと同じです（PythonAnywhereはこれを行うために`workon`というコマンドを使用します） あなた自身のコンピュータで）：
+もし仮想環境（virtualenv）が有効になっていなければ有効化するところから始めましょう (PythonAnywhereはこれを行うために`workon`というコマンドを使用します。これはあなたが自身のコンピュータで使用している`source myenv/bin/activate`コマンドと同じようなものです) 。
 
 {% filename %}command-line{% endfilename %}
 
@@ -207,8 +207,8 @@ PythonAnywhereのようなサーバは、（CSSファイルのような）「静
     [...]
     
 
-`manage.py collectstatic`コマンドは、`manage.py migrate`のようなものです。 私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を適用するよう指示します。
+`manage.py collectstatic`コマンドは、`manage.py migrate`のようなものです。 私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を*適用*するよう指示します。
 
 いずれにしても、[Webタブ](https://www.pythonanywhere.com/web_app_setup/)にアクセスして、**Reload**を押す準備が整いました。
 
-そしてdeployします! おめでとうございます :)
+うまくいってるはずです！おめでとう :)
