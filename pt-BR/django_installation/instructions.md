@@ -211,7 +211,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Se você receber um erro ao chamar pip no Ubuntu 12.04, execute `python -m pip install -U --force-reinstall pip` para corrigir a instalação do pip no virtualenv.
+> Se você receber um erro ao chamar o pip no Ubuntu 12.04, execute `python -m pip install -U --force-reinstall pip` para corrigir a instalação do pip no virtualenv.
 
 <!--endsec-->
 
