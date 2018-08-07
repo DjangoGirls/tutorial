@@ -96,7 +96,7 @@ Nous devons aussi signaler à notre template HTML que nous utilisons du CSS. Ouv
 {% load static %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+On vient tout juste de charger les fichiers statiques :). Entre les balises `<head>` et `</head>`, après les liens vers les fichiers CSS de Bootstrap, ajoutez cette ligne :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
