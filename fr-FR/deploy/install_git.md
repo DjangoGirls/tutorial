@@ -5,16 +5,16 @@ Git est un " système de gestion de versions" utilisé par de nombreux développ
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Vous pouvez télécharger Git sur [git-scm.com](https://git-scm.com/). Vous pouvez cliquer sur "suivant" pour toutes les étapes sauf une : à l'étape intitulé "Adjusting your PATH environment", sélectionnez "Use Git and optional Unix tools from the Windows Command Prompt" (l'option du bas). Les autres choix par défaut n'ont pas besoin d'être modifiés. L'option "Checkout Windows-style, commit Unix-style line endings" est parfaite: vous n'avez rien à changer sur cette page.
+Vous pouvez télécharger Git sur [git-scm.com](https://git-scm.com/). Vous pouvez cliquer sur "suivant" pour toutes les étapes sauf une : à l'étape intitulé "Adjusting your PATH environment", sélectionnez "Use Git and optional Unix tools from the Windows Command Prompt" (l'option du bas). Les autres choix par défaut n'ont pas besoin d'être modifiés. Laissez cocher l'option "Checkout Windows-style, commit Unix-style line endings".
 
-Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
+N'oubliez pas de relancer l'invite de commande ou la fenêtre du Powershell une fois l'installation terminée. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Vous pouvez télécharger Git sur [git-scm.com](https://git-scm.com/). Pour le reste de l'installation, suivez simplement les instructions de l'installateur.
+Vous pouvez télécharger Git depuis [git-scm.com](https://git-scm.com/). Pour le reste de l'installation, suivez simplement les instructions.
 
-> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **Note** Si vous utilisez un OS X 10.6, 10.7 ou 10.8, vous devrez sans doute installer la version de git présente ici : [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
