@@ -61,7 +61,7 @@ Você pode pensar em um modelo de banco de dados como uma planilha com colunas (
 
 ### Criando uma aplicação
 
-Para manter tudo arrumado, vamos criar um aplicativo separado dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar um aplicativo precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
+Para manter tudo arrumado, vamos criar uma aplicação separada dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar uma aplicação, precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -94,7 +94,7 @@ Você vai notar que um novo diretório `blog` foi criado e que ele contém vári
         └── wsgi.py
     
 
-Depois de criar um app, também precisamos dizer ao Django que ele deve usá-lo. Fazemos isso no arquivo `mysite/settings.py`. Precisamos encontrar o `INSTALLED_APPS` e adicionar uma linha com `'blog',` logo acima do `]`. O resultado final ficará assim:
+Depois de criar uma aplicação, também precisamos dizer ao Django que ele deve usá-la. Fazemos isso no arquivo `mysite/settings.py`. Precisamos encontrar o `INSTALLED_APPS` e adicionar uma linha com `'blog',` logo acima do `]`. O resultado final ficará assim:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
