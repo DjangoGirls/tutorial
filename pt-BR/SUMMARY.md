@@ -2,8 +2,8 @@
 
 * [Introdução](README.md)
 * [Instalação](installation/README.md)
-* [Instalação (chromebook)](chromebook_setup/README.md)
-* [Como funciona a internet](how_the_internet_works/README.md)
+* [Configuração do Chromebook](chromebook_setup/README.md)
+* [Como a Internet funciona](how_the_internet_works/README.md)
 * [Introdução à linha de comando](intro_to_command_line/README.md)
 * [Instalação do Python](python_installation/README.md)
 * [Editor de Código](code_editor/README.md)
@@ -23,5 +23,5 @@
 * [CSS - Deixe tudo mais bonito!](css/README.md)
 * [Estendendo os templates](template_extending/README.md)
 * [Amplie sua aplicação](extend_your_application/README.md)
-* [Django forms](django_forms/README.md)
+* [Formulários do Django](django_forms/README.md)
 * [O que vem depois?](whats_next/README.md)
