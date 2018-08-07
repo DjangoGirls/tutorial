@@ -4,13 +4,13 @@ Neste capítulo você vai aprender como o Django se conecta ao banco de dados e 
 
 ## O que é um QuerySet?
 
-Um QuerySet (conjunto de busca) é, em essência, uma lista de objetos de um dado modelo. QuerySet permite que você leia os dados à partir de uma base de dados, filtre e ordene.
+Um QuerySet (conjunto de busca) é, em essência, uma lista de objetos de um dado modelo. QuerySet permite que você leia os dados a partir de uma base de dados, filtre e ordene.
 
 É mais fácil aprender usando exemplos. Vamos lá?
 
 ## O Shell do Django
 
-Abra o seu terminal (não no PythonAnywhere) e digite o seguinte comando:
+Abra o seu terminal (não o PythonAnywhere) e digite o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,11 +26,11 @@ O resultado deve ser:
 >>>
 ```
 
-Agora você está no console interativo do Django. Ele é como o prompt do Python só que com umas mágicas adicionais :). Você pode usar todos os comandos do Python aqui também, é claro.
+Agora você está no console interativo do Django. Ele é como o prompt do Python, só que com umas mágicas adicionais ;). Você pode usar todos os comandos do Python aqui também, é claro.
 
 ### Todos os objetos
 
-Antes, vamos tentar mostrar todas as nossas postagens. Podemos fazer isso com o seguinte comando:
+Primeiro, vamos tentar mostrar todas as nossas postagens. Podemos fazer isso com o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! Um erro apareceu. Ele nos diz que não existe algo chamado Post. É verdade -- nós esquecemos de importá-lo primeiro!
+Oops! Um erro apareceu. Ele nos diz que não existe algo chamado Post. É verdade -- nós esquecemos de importá-lo antes!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! Um erro apareceu. Ele nos diz que não existe algo chamado Post. É verdad
 >>> from blog.models import Post
 ```
 
-Isso é simples: importamos o modelo `Post` de dentro do `blog.models`. Vamos tentar mostrar todas as postagens novamente:
+Mas isso é simples: basta importar o modelo `Post` de dentro do `blog.models`. Vamos tentar mostrar todas as postagens novamente:
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,7 +58,7 @@ Isso é simples: importamos o modelo `Post` de dentro do `blog.models`. Vamos te
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-É uma lista dos posts que criamos mais cedo! Nós criamos estes posts utilizando a interface do Django admin. No entanto, agora queremos criar novos posts utilizando Python, como fazemos isso?
+É uma lista dos posts que criamos mais cedo! Nós criamos estes posts utilizando a interface do Django admin. No entanto, agora queremos criar novos posts utilizando Python. Como fazemos isso?
 
 ### Criando um objeto
 
@@ -108,7 +108,7 @@ Agora finalmente podemos criar nosso post:
 <Post: Sample title>
 ```
 
-Viva! Quer ver se funcionou?
+Uhuu! Quer ver se funcionou?
 
 {% filename %}command-line{% endfilename %}
 
