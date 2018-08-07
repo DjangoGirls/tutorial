@@ -109,7 +109,7 @@ Inicie o seu ambiente virtual executando:
 
 {% filename %}command-line{% endfilename %}
 
-    C:\Usuário\Nome\djangogirls> myvenv\Scripts\activate
+    C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
 > **Observação:** no Windows 10, você pode obter um erro no Windows PowerShell que diz `execution of scripts is disabled on this system`. Neste caso, abra uma outra janela do Windows PowerShell com a opção de "Executar como Administrador". Assim, execute o comando abaixo antes de iniciar o seu ambiente virtual:
@@ -133,7 +133,7 @@ Inicie o seu ambiente virtual executando:
     $ source myvenv/bin/activate
     
 
-Lembre-se de substituir `myvenv` com seu nome escolhido do `virtualenv`!
+Lembre-se de substituir `myvenv` pelo nome que você escolheu para o `virtualenv`!
 
 > **Observação:** às vezes `source` pode não estar disponível. Nesses casos, tente fazer isso:
 > 
@@ -144,7 +144,7 @@ Lembre-se de substituir `myvenv` com seu nome escolhido do `virtualenv`!
 
 <!--endsec-->
 
-Você vai saber que tem um `virtualenv` funcionando quando vir que a linha de comando no seu console ter o prefixo `(myvenv)`.
+Você vai saber que tem um `virtualenv` funcionando quando vir que a linha de comando no seu console tem o prefixo `(myvenv)`.
 
 Ao trabalhar dentro de um ambiente virtual, o `Python` irá automaticamente se referir à versão correta para que possa utilizar o `Python` em vez do `Python3`.
 
