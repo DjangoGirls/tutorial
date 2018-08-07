@@ -140,14 +140,14 @@ Afin de pouvoir créer un nouveau formulaire `Post`, nous avons besoin d'appeler
 
 Pour cela, nous avons besoin de créer un fichier `post_edit.html` dans le dossier `blog/templates/blog`. Afin que notre formulaire fonctionne, nous avons besoin de plusieurs choses :
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. C'est très important car c'est ce qui va permettre de sécuriser votre formulaire ! Si vous oubliez ce bit, Django se plaindra lorsque vous essaierez de sauvegarder le formulaire:
+* Nous avons besoin d'afficher le formulaire. Pour cela, nous n'avons qu'à utiliser {% raw %}`{{ form.as_p }}`{% endraw %}.
+* La ligne précédente va avoir besoin d'être enveloppée des balises HTML `<form method="POST">...</form>`.
+* Nous avons besoin d'un bouton `Valider`. Nous allons le créer à l'aide d'un bouton HTML : `<button type="submit">Valider</button>`.
+* Enfin, nous devons ajouter {% raw %}`{% csrf_token %}`{% endraw %} juste après `<form ...>`. C'est très important car c'est ce qui va permettre de sécuriser votre formulaire ! Si vous oubliez ce détail, Django se plaindra lorsque vous essaierez de sauvegarder le formulaire:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Ok, voyons maintenant à quoi devrait ressembler le fichier `post_edit.html` :
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -167,15 +167,15 @@ Rafraîchissons la page ! Et voilà : le formulaire s'affiche !
 
 ![Nouveau formulaire](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Heu, attendez une minute... Quand vous tapez quelque chose dans `title` et `text` et que vous essayez de le sauvegarder, que se passe-t-il ?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Absolument rien ! Nous retombons sur la même page sauf qu'en plus, notre texte a disparu et aucun post ne semble avoir été créé. Que s'est-il passé ?
 
-La réponse est : rien ! Nous avons juste encore un peu de travail à accomplir. Retournons à notre *vue*.
+La réponse est encore : rien ! Nous avons juste encore un peu de travail à accomplir. Retournons à notre *vue*.
 
 ## Sauvegarder le contenu du formulaire
 
-Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
+Ouvrez à nouveau `blog/views.py`. Actuellement, `post_new` n'est composé que des lignes de code suivantes :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? Tous les champs du formulaire se trouvent maintenant dans `request.POST`. Veillez à ne pas renommer `POST` en quoi que ce soit d'autre : la seule autre valeur autorisée pour `method` est `GET`. Malheureusement, nous n'avons pas le temps de rentrer dans les détails aujourd'hui.
+Lorsque nous envoyons notre formulaire, nous revenons à la même vue. Cependant, nous récupérons les données dans `request`, et plus particulièrement dans `request.POST` (le nom "POST" n'a aucun lien avec nos "posts" de blog : il est lié au type de requête effectué à l'envoi des données). Rappelez-vous : nous avions défini la variable `method="POST"` dans le fichier HTML qui contient notre `<form>`. Tous les champs du formulaire se trouvent maintenant dans `request.POST`. Veillez à ne pas renommer `POST` en quoi que ce soit d'autre : la seule autre valeur autorisée pour `method` est `GET`. Malheureusement, nous n'avons pas le temps de rentrer dans les détails aujourd'hui.
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. Pour gérer ces deux cas, nous allons utiliser une condition `if` (si):
 
