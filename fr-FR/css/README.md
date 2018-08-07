@@ -104,7 +104,7 @@ On vient tout juste de charger les fichiers statiques :). Entre les balises `<he
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Le navigateur lit les fichiers dans l'ordre où ils sont donnés, donc nous devons nous assurer que c'est dans le bon endroit. Sinon le code dans notre fichier peut être remplacé par du code dans des fichiers d'Amorçage. Nous venons simplement de dire à notre template où nous avons rangé notre fichier CSS.
+Le navigateur lit les fichiers dans l'ordre où ils sont donnés, donc nous devons nous assurer que c'est dans le bon endroit. Dans le cas contraire, le code dans notre fichier peut être écrasé par le code des fichiers Bootstrap. Nous venons simplement de dire à notre template où trouver notre fichier CSS.
 
 Maintenant, votre fichier doit ressembler à ceci :
 
@@ -126,7 +126,7 @@ Maintenant, votre fichier doit ressembler à ceci :
 
         {% for post in posts %}
             <div>
-                <p>published: {{ post.published_date }}</p>
+                <p>Publié le {{ post.published_date }}</p>
                 <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
@@ -139,7 +139,7 @@ Ok, on sauvegarde et on rafraîchit la page !
 
 ![Figure 14.2](images/color2.png)
 
-Bravo ! Peut-être que nous pourrions un peu aérer notre page web en augmentant la marge du côté gauche ? Essayons pour voir !
+Bravo ! Peut-être que nous pourrions aérer un peu notre page web en augmentant la marge du côté gauche ? Essayons pour voir !
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -149,11 +149,11 @@ body {
 }
 ```
 
-Ajoutez-le à votre CSS, enregistrez le fichier et voir comment cela fonctionne!
+Ajoutez ceci à votre CSS, enregistrez le fichier et regarder comment cela fonctionne !
 
 ![Figure 14.3](images/margin2.png)
 
-Et si nous changions aussi la police de caractères de notre entête ? Collez ceci dans la partie `<head>` de votre fichier `blog/templates/blog/post_list.html` :
+Et si nous changions aussi la police de caractères de notre entête ? Collez ceci dans le `<head>` de votre fichier `blog/templates/blog/post_list.html` :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -161,7 +161,7 @@ Et si nous changions aussi la police de caractères de notre entête ? Collez ce
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Comme précédemment, vérifiez l'ordre et placez le avant `blog/static/css/blog.css`. Cette ligne importera une police appelée *Lobster* à partir de Google Fonts (https://www.google.com/fonts).
 
 Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
