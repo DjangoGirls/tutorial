@@ -163,7 +163,7 @@ Et si nous changions aussi la police de caractères de notre entête ? Collez ce
 
 Comme précédemment, vérifiez l'ordre et placez le avant `blog/static/css/blog.css`. Cette ligne importera une police appelée *Lobster* à partir de Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Retrouvez le bloc de règles `h1 a` (délimité par les accolades `{` `}`) dans le fichier css `blog/static/css/blog.css`. Ajoutez maintenant la ligne `font-family; 'Lobster',` dans les accolades et rafraîchissez la page :
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -178,9 +178,9 @@ h1 a {
 
 Super !
 
-Comme mentionné ci-dessus, CSS a un concept de classe. Ceux-ci vous permettent de nommer une partie de code HTML et appliquer des styles que pour cette partie, sans affecter les autres parties. Cela peut être très utile! Peut-être que vous avez deux divs qui sont en train de faire quelque chose de différent (comme votre tête et de votre post). Une classe peut vous aider à leur donner un aspect différent.
+Comme mentionné ci-dessus, CSS a un concept de classe. Ce concept vous permet de nommer une partie de code HTML et d'y appliquer des styles, uniquement pour cette partie, sans affecter le reste. Cela peut être très utile ! Peut-être que vous avez deux divs qui sont en train de faire quelque chose de différent (comme votre en-tête et votre contenu). Une classe peut vous aider à leur donner un aspect différent.
 
-Allons donner des noms à certaines parties de notre code html. Ajouter la classe `page-header` à votre `div` qui contient votre entête. Votre fichier doit ressembler maintenant à ceci :
+Allons donner des noms à certaines parties de notre code html. Ajouter la classe `page-header` à votre `div` qui contient votre en-tête. Votre fichier doit ressembler maintenant à ceci :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -190,13 +190,13 @@ Allons donner des noms à certaines parties de notre code html. Ajouter la class
 </div>
 ```
 
-Maintenant, ajoutez la classe `post` à votre `div` contenant votre blog post.
+Maintenant, ajoutez la classe `post` à votre `div` contenant votre billet de blog.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="post">
-    <p>published: {{ post.published_date }}</p>
+    <p>Publié le {{ post.published_date }}</p>
     <h1><a href="">{{ post.title }}</a></h1>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
