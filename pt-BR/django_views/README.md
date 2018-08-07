@@ -2,9 +2,9 @@
 
 É hora de resolver o bug que criamos no capítulo anterior! :)
 
-Uma *view* é o lugar onde nós colocamos a "lógica" da nossa aplicação. Ela vai extrair informações do `model` que você criou e entregá-las a um `template`. Nós vamos criar um template no próximo capítulo. Views são somente funções Python que são um pouco mais complicadas do que aquelas que criamos no capítulo **Introdução ao Python**.
+Uma *view* é o lugar onde nós colocamos a "lógica" da nossa aplicação. Ela vai extrair informações do `model` que você criou e entregá-las a um `template`. Nós vamos criar um template no próximo capítulo. Views são apenas funções Python um pouco mais complicadas do que aquelas que criamos no capítulo **Introdução ao Python**.
 
-As views são postas no arquivo `views.py`. Nós vamos adicionar nossas *views* no arquivo `blog/views.py`.
+As views são colocadas no arquivo `views.py`. Nós vamos adicionar nossas *views* ao arquivo `blog/views.py`.
 
 ## blog/views.py
 
@@ -18,7 +18,7 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Não há muita coisa por aqui.
+Ainda não tem muita coisa aqui.
 
 Lembre-se que as linhas começando com `#` são comentários -- isto significa que estas linhas não serão executadas pelo Python.
 
