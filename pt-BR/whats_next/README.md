@@ -1,14 +1,14 @@
 # O que vem depois?
 
-Parabéns! Você é **demais**. Estamos orgulhosos! <3
+Parabéns! Você **arrasou**. Estamos orgulhosas! <3
 
 ### O que fazer agora?
 
-Faça uma pausa e relaxe. Você acabou de fazer algo realmente grande.
+Antes de mais nada, faça uma pausa e relaxe. Você acabou de fazer algo realmente grande.
 
-Depois disso, certifique-se de seguir o Django Girls no [Facebook](http://facebook.com/djangogirls) ou no [Twitter](https://twitter.com/djangogirls) para se manter atualizada(o).
+Depois disso, certifique-se de seguir o Django Girls no [Facebook](http://facebook.com/djangogirls) ou no [Twitter](https://twitter.com/djangogirls) para se manter atualizada.
 
-### Você pode recomendar outras fontes?
+### Vocês podem recomendar outras fontes de informação?
 
 Sim! Primeiro, vá em frente e tente nosso outro livro, chamado [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
 
