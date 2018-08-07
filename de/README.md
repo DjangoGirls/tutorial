@@ -2,7 +2,13 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> Dieses Werk ist unter der Creative Commons Attribution-ShareAlike 4.0 International License lizensiert. Eine Kopie dieser Lizenz findest du auf http://creativecommons.org/licenses/by-sa/4.0/
+> Dieses Werk ist unter der Creative Commons Attribution-ShareAlike 4.0 International License lizensiert. Eine Kopie dieser Lizenz finden Sie auf http://creativecommons.org/licenses/by-sa/4.0/
+
+## Willkommen
+
+Willkommen beim Django Girls Tutorial! Wir freuen uns, dass du hier bist :) In diesem Tutorial schauen wir gemeinsam unter die Haube der Technologien im Internet, geben dir einen Einblick in die Bits und Bytes, die zusammen das Internet bilden, wie wir es heute kennen.
+
+Wie alles Unbekannte wird das ein Abenteuer sein - aber keine Sorge: Da du bereits den Mut aufgebracht hast, hier zu sein, wirst du das schon meistern :)
 
 ## Einleitung
 
@@ -24,15 +30,17 @@ Es wird (in etwa) so aussehen:
 
 > Wenn du allein mit diesem Tutorial arbeitest und keinen Coach in der Nähe hast, kannst du in diesem Chat nachfragen, wenn du ein Problem hast: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Wir haben unsere Coaches und frühere Teilnehmer unserer Workshops gebeten, hin und wieder dort vorbei zu schauen und anderen mit dem Tutorial zu helfen! Hab keine Angst, dort deine Fragen zu stellen!
 
-Okay, [lass uns ganz am Anfang anfangen...](./how_the_internet_works/README.md)
+Okay, [lass uns ganz am Anfang starten...](./how_the_internet_works/README.md)
 
-## Mit dem Tutorial zu Hause arbeiten
+## Das Tutorial daheim durcharbeiten
 
-Na klar ist es aufregend, bei einem Django Girls Workshop dabei zu sein, aber es ist auch verständlich, dass das nicht immer klappt. Deswegen möchten wir es dir erleichtern, das Tutorial auch von Hause aus zu erarbeiten. Dafür erstellen wir Videos zu einzelnen Themen, die dir helfen können, die Inhalte besser zu verstehen. Wir arbeiten noch daran, aber einige sind schon verfügbar und du kannst sie dir gern auf dem "[Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)"-YouTube-Channel anschauen.
+An einem Django-Girls-Workshop teilzunehmen ist toll, aber uns ist klar, dass das nicht immer allen möglich ist. Darum wollen wir dich ermutigen, das Tutorial zu Hause nachzuarbeiten. Für Leser zu Hause arbeiten wir gerade an Video-Tutorials, die es erleichtern sollen, diesem Tutorial zu folgen. Diese Arbeit ist noch nicht abgeschlossen, aber mehr und mehr Themen werden als Video erfasst und können im [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed)-YouTube-Kanal angesehen werden.
+
+In jedem Kapitel, das bereits mit Video unterstützt wird, gibt es einen Link auf das jeweilige Video dazu.
 
 ## Über uns und wie du mithelfen kannst
 
-Dieses Tutorial wird von [DjangoGirls](http://djangogirls.org/) betreut. Solltest du Fehler finden oder das Tutorial aktualisieren wollen, dann folge den [Richtlinien zum Mitarbeiten](https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md).
+Dieses Tutorial wird von [DjangoGirls](https://djangogirls.org/) betreut. Solltest du Fehler finden oder das Tutorial aktualisieren wollen, dann folge den [Richtlinien zum Mitarbeiten](https://github.com/DjangoGirls/tutorial/blob/master/CONTRIBUTING.md).
 
 ## Möchtest du uns helfen, das Tutorial in andere Sprachen zu übersetzen?
 

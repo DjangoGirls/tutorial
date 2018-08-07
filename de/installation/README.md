@@ -1,8 +1,8 @@
 # Wenn Du dieses Tutorial zu Hause bearbeitest
 
-Wenn Du dieses Tutorial zu Hause bearbeitest, und nicht auf einer der ["Django Girls"-Veranstaltungen](http://djangogirls.org/events/), kannst du dieses Kapitel komplett überspringen und gleich zum Kapitel [Wie funktioniert das Internet?](../how_the_internet_works/README.md) gehen.
+Wenn Du das Tutorial zu Hause bearbeitest, und nicht auf einer der ["Django Girls"-Veranstaltungen](https://djangogirls.org/events/), kannst du dieses Kapitel komplett überspringen und direkt mit dem Kapitel [Wie funktioniert das Internet?](../how_the_internet_works/README.md) fortfahren.
 
-Wir werden die folgenden Punkte so oder so im vollständigen Tutorial betrachten. Das hier ist nur eine zusätzliche Seite, die alle Installationsanleitungen an einem Ort bündelt. Die "Django Girls"-Veranstaltung enthält einen "Installationsabend", an dem wir alles installieren, damit wir uns während des Workshops nicht damit beschäftigen müssen. Diese Seite ist für uns daher sehr hilfreich.
+Wir werden die folgenden Punkte so oder so im vollständigen Tutorial betrachten. Das hier ist nur eine zusätzliche Seite, die alle Installationsanleitungen an einem Ort bündelt. Die "Django Girls"-Veranstaltung enthält einen "Installationsabend", an dem wir alles installieren, was wir brauchen. So müssen wir uns während des Workshops nicht damit beschäftigen. Diese Seite ist dafür sehr hilfreich.
 
 Wenn es Dir sinnvoll erscheint, kannst du dieses Kapitel natürlich auch bearbeiten. Wenn Du jedoch mit dem Lernen beginnen willst, bevor du eine handvoll Sachen auf deinem Computer installierst, überspringe dieses Kapitel und lies unsere Erklärungen zur Installation später im Tutorial.
 
@@ -12,38 +12,47 @@ Viel Erfolg!
 
 Im Workshop wirst Du einen Blog erstellen und es gibt einige Dinge, bei denen es besser ist, wenn Du sie vorher vorbereitest, so dass Du gleich mit dem Programmieren loslegen kannst.
 
-## Python installieren
+<!--sec data-title="Chromebook setup (if you're using one)"
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+
+<!--endsec-->
+
+# Python installieren
 
 {% include "/python_installation/instructions.md" %}
 
-## Virtualenv einrichten und Django installieren
+# Virtualenv einrichten und Django installieren
 
 {% include "/django_installation/instructions.md" %}
 
-## Einen Code Editor installieren
+# Einen Code Editor installieren
 
-{% include "/code_editor/instructions.md" %}
+{% include "code_editor/instructions.md" %}
 
-## Git installieren
+# Git installieren
 
 {% include "/deploy/install_git.md" %}
 
-## Einen GitHub-Account einrichten
+# Einen GitHub-Account einrichten
 
-Öffne [GitHub.com](http://www.github.com) und richte Dir einen neuen, kostenfreien Nutzeraccount ein.
+Gehe auf [GitHub.com](https://www.github.com) eröffne ein neues, kostenloses Konto.
 
-## Einen PythonAnywhere-Account erstellen
+# Einen PythonAnywhere-Account erstellen
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Fang an zu lesen!
+# Fang an zu lesen!
 
 Herzlichen Glückwunsch, Du hast alles eingerichtet und bist nun bereit, loszulegen. Wenn Du vor dem Workshop noch etwas Zeit hast, wäre es hilfreich, einige der einführenden Kapitel zu lesen:
 
-  * [Wie funktioniert das Internet?](../how_the_internet_works/README.md)
+* [Wie funktioniert das Internet?](../how_the_internet_works/README.md)
 
-  * [Einführung in die Kommandozeile](../intro_to_command_line/README.md)
+* [Einführung in die Kommandozeile](../intro_to_command_line/README.md)
 
-  * [Einführung in Python](../intro_to_command_line/README.md)
+* [Einführung in Python](../python_introduction/README.md)
 
-  * [Was ist Django?](../django/README.md)
+* [Django - Was ist das?](../django/README.md)
+
+# Viel Spaß beim Workshop!
+
+Wenn Du mit dem Workshop anfängst, kannst Du direkt zum Kapitel [Dein erstes Django-Projekt!](../django_start_project/README.md) gehen, weil Du den Inhalt der vorhergehenden Kapitel schon bearbeitet hast.
