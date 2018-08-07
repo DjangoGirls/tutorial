@@ -2,7 +2,7 @@
 
 If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-Ez az oldal csak egy helyre gyűjti az installációk leírását, amikkel később úgyis találkozni fogsz a tutorial során. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+Ez az oldal csak egy helyre gyűjti az installációk leírását, amikkel később úgyis találkozni fogsz a tutorial során. A Django Girls workshopok előtt mindig van egy telepítős, felkészítő esemény, amikor mindent telepítünk, hogy a workshopon már ne kelljen ezzel bajlódni, ezért praktikus, hogy mindent megtalálunk egy helyen.
 
 If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
