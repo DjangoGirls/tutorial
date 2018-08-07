@@ -64,7 +64,7 @@ Erstellen wir nun eine CSS-Datei, um deiner Website deinen eigenen Stil zu verle
 
 Zeit, ein wenig CSS zu schreiben! Öffne die `blog/static/css/blog.css` Datei in Deinem Code-Editor.
 
-Wir gehen nicht zu sehr auf die Details von CSS ein. Wir haben am Ende des Kapitels einen Link auf eine Empfehlung für einen frei zugänglichen CSS Kurs angefügt, für diejenigen, die mehr über CSS lernen möchten.
+Wir gehen nicht zu sehr auf die Details von CSS ein. Für diejenigen, die mehr über CSS lernen möchten, haben wir am Ende des Kapitels einen Link auf eine Empfehlung für einen kostenlosen CSS-Kurs angefügt.
 
 Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. Diese Codes starten immer mit `#`, danach folgen sechs Buchstaben (A-F) und Zahlen (0-9). Blau zum Beispiel ist `#0000FF`. Beispiele für solche Farbcodes findest Du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/colors/colors_names.asp) wie `red` und `green` benutzen.
 
@@ -88,7 +88,7 @@ In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg
 
 [Auf w3schools](http://www.w3schools.com/cssref/css_selectors.asp) erfährst du mehr über CSS-Selektoren.
 
-Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die Datei `blog/templates/blog/post_list.html` öffnen und diese Zeile ganz oben ergänzen:
+Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Öffne die Datei `blog/templates/blog/post_list.html` und füge diese Zeile ganz oben ein:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -96,7 +96,7 @@ Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu mus
 {% load static %}
 ```
 
-Wir laden hier die statischen Dateien. :) Zwischen den Tags `<head>` und `</head>`, direkt nach den Links zu den Bootstrap-Dateien, füge noch diese Zeile ein:
+Wir laden hier die statischen Dateien. :) Füge zwischen den Tags `<head>` und `</head>`, direkt nach den Links zu den Bootstrap-Dateien, noch diese Zeile ein:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
