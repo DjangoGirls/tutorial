@@ -4,19 +4,19 @@ Nosso blog ainda está um pouco feio, né? Está na hora de deixar ele mais boni
 
 ## O que é CSS?
 
-Cascading Style Sheets (CSS - Folhas de Estilo em Cascata, em português) é uma linguagem utilizada para descrever o visual e a formatação de um website escrito numa linguagem de marcação (como HTML). Veja ela como uma maquiagem para a nossa página web. :)
+Cascading Style Sheets (CSS - Folhas de Estilo em Cascata, em português) é uma linguagem utilizada para descrever o visual e a formatação de um website escrito numa linguagem de marcação (como HTML). Considere como uma maquiagem para a nossa página web. :)
 
 Mas não queremos começar do zero de novo, né? Mais uma vez, usaremos algo que outros programadores lançaram na Internet de graça. Você sabe, reinventar a roda não é divertido.
 
 ## Vamos usar o Bootstrap!
 
-Bootstrap é um dos frameworks HTML e CSS mais populares para desenvolver belos websites: https://getbootstrap.com/
+Bootstrap é um dos frameworks de HTML e CSS mais populares para desenvolver websites mais bonitinhos: https://getbootstrap.com/
 
 Foi escrito por programadores que trabalharam no Twitter. Agora é desenvolvido por voluntários de todo o mundo!
 
-## Instalar Bootstrap
+## Instalar o Bootstrap
 
-Para instalar o Bootstrap, você precisa adicionar isso `<head>` no seu arquivo `.html`:
+Para instalar o Bootstrap, você precisa adicionar o seguinte código no `<head>` dentro do seu arquivo `.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -33,7 +33,7 @@ Já está mais bonita!
 
 ## Arquivos estáticos no Django
 
-Finalmente, vamos dar uma olhada mais de perto nessas coisas que chamamos de **arquivos estáticos**. Arquivos estáticos são todos seu CSS e imagens. Seu conteúdo não depende do contexto de requisição e será o mesmo para todos os usuários.
+Finalmente, vamos dar uma olhada mais de perto nessas coisas que chamamos de **arquivos estáticos**. Arquivos estáticos são todos os seus CSS e imagens. Seu conteúdo não depende do contexto de requisição e será o mesmo para todos os usuários.
 
 ### Onde colocar os arquivos estáticos para o Django
 
@@ -49,7 +49,7 @@ Fazemos isso criando uma pasta chamada `static` dentro da aplicação blog:
     └── mysite
     
 
-O Django vai automaticamente encontrar quaisquer pastas chamadas "static" dentro de quaisquer pastas dos seus apps. Então ele será capaz de usar seu conteúdo como arquivos estáticos.
+O Django vai encontrar automaticamente quaisquer pastas chamadas "static" dentro de todas as pastas dos seus apps. Então ele será capaz de usar seu conteúdo como arquivos estáticos.
 
 ## Seu primeiro arquivo CSS!
 
@@ -62,7 +62,7 @@ Vamos criar um arquivo CSS agora, para adicionar seu próprio estilo à sua pág
                    └─── blog.css
     
 
-Hora de escrever algum CSS! Abra o arquivo `blog/static/css/blog.css` no seu editor de código.
+Hora de escrever um pouco de CSS! Abra o arquivo `blog/static/css/blog.css` no seu editor de código.
 
 Nós não vamos nos aprofundar muito no aprendizado do CSS aqui. No final desta página há uma recomendação para um curso gratuito de CSS se você quiser aprender mais.
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` é um seletor CSS. Isto significa que estamos aplicando nossos estilos a qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, nós estamos dizendo para mudar a cor para `#FCA205`, que é laranja. Mas é claro que você pode colocar a cor que você quiser aqui!
+`h1 a` é um seletor CSS. Isto significa que estamos aplicando nossos estilos a qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, nós estamos dizendo para mudar a cor para `#FCA205`, que é laranja. Mas é claro que você pode colocar a cor que quiser aqui!
 
 Em um arquivo CSS, nós determinamos estilos para elementos do arquivo HTML. A primeira maneira de identificar elementos é usando seus nomes. Você pode se lembrar desses nomes como as tags da seção HTML. Coisas como `a` `h1` e `body` são exemplos de nomes de elementos. Também identificamos elementos pelo atributo `class` ou pelo atributo `id`. Class e id são nomes que você mesma dá ao elemento. Classes definem grupos de elementos, e ids apontam para elementos específicos. Por exemplo, a tag a seguir pode ser identificada usando a tag de nome `a`, a classe `external_link` ou o id de `link_to_wiki_page`:
 
@@ -178,7 +178,7 @@ h1 a {
 
 Incrível!
 
-Como mencionado acima, o CSS tem um conceito de classes. Essas classes permitem que você nomeie uma parte do código HTML e aplique estilos apenas a esta parte sem afetar nenhuma outra. Isto pode ser super útil! Talvez você tenha duas divs que estão fazendo algo diferente (como o seu cabeçalho e seu post). Uma classe pode ajudá-la a diferenciá-los.
+Como mencionado acima, o CSS tem um conceito de classes. Essas classes permitem que você nomeie uma parte do código HTML e aplique estilos apenas a esta parte sem afetar nenhuma outra. Isto pode ser super útil! Talvez você tenha duas divs que estão fazendo coisas diferentes (como o seu cabeçalho e seu post). Uma classe pode ajudá-la a diferenciá-los.
 
 Vá em frente e o nomeie algumas partes do código HTML. Adicione uma classe chamada `page-header` para o `div` que contém o cabeçalho, assim:
 
@@ -269,7 +269,7 @@ Então, inclua declarações de classes no código HTML que exibe os posts. No a
 {% endfor %}
 ```
 
-no arquivo `blog/templates/blog/post_list.html` por isto:
+por isto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 

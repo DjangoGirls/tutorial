@@ -1,10 +1,10 @@
-# Urls
+# URLs
 
 Estamos prestes a construir nossa primeira página Web: uma página inicial para o seu blog! Mas primeiro, vamos aprender um pouco mais sobre as URLs do Django.
 
 ## O que é uma URL?
 
-Uma URL é simplesmente um endereço da web. Você pode ver uma URL toda vez que você visita um website - ela é visível na barra de endereços do seu navegador. (Sim! `127.0.0.1:8000` é uma URL! E `https://djangogirls.org` também é uma URL.)
+Uma URL é simplesmente um endereço da web. Você pode ver uma URL toda vez que você visita um website - ela aparece na barra de endereços do seu navegador. (Sim! `127.0.0.1:8000` é uma URL! E `https://djangogirls.org` também é uma URL.)
 
 ![URL](images/url.png)
 
@@ -29,9 +29,9 @@ urlpatterns = [
 ]
 ```
 
-Como você pode ver, o Django já colocou alguma coisa aqui pra nós.
+Como você pode ver, o Django já colocou alguma coisa aqui para nós.
 
-Linhas entre aspas triplas (`'''` ou `"""`) são chamados de docstrings -- você pode escrevê-las no topo de um arquivo, classe ou método para descrever o que ele faz. Elas não serão executadas pelo Python.
+Linhas entre aspas triplas (`'''` ou `"""`) são chamadas de docstrings -- você pode escrevê-las no topo de um arquivo, classe ou método para descrever o que ele faz. Elas não serão executadas pelo Python.
 
 A URL do admin, que você visitou no capítulo anterior, já está aqui:
 
@@ -78,7 +78,7 @@ from django.urls import path
 from . import views
 ```
 
-Aqui nós estamos importando do Django a função `url` e todas nossas `views` do aplicativo `blog` (Não temos nenhuma ainda, mas nós chegaremos a isso em um minuto!)
+Aqui, estamos importando do Django a função `url` e todas as nossas `views` do aplicativo `blog`. (Não temos nenhuma ainda, mas chegaremos a isso em um minuto!)
 
 Depois disso podemos adicionar nosso primeiro padrão de URLs:
 
@@ -90,14 +90,14 @@ urlpatterns = [
 ]
 ```
 
-Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` à URL raiz. Este padrão de URL corresponde a uma sequência de caracteres vazia, onde o resolvedor de URLs do Django irá ignorar o nome de domínio (ou seja, http://127.0.0.1:8000 /) que antecede o caminho completo da URL. Este padrão dirá ao Django que `views.post_list` é o lugar correto para ir se alguém entra em seu site no endereço 'http://127.0.0.1:8000 /'.
+Como você pode ver, estamos agora atribuindo uma `view` chamada `post_list` à URL raiz. Este padrão de URL corresponde a uma sequência de caracteres vazia, e o resolvedor de URLs do Django irá ignorar o nome de domínio (ou seja, http://127.0.0.1:8000 /) que antecede o caminho completo da URL. Este padrão dirá ao Django que `views.post_list` é o lugar correto aonde ir se alguém entra em seu site pelo endereço 'http://127.0.0.1:8000 /'.
 
 A última parte, `name='post_list'`, é o nome da URL que será usado para identificar a view. Pode ser o mesmo nome da view, mas também pode ser algo completamente diferente. Nós vamos usar URLs nomeadas mais à frente, então é importante nomearmos agora todas as URLs de nossa aplicação. Também devemos fazer com que os nomes das URLs sejam únicos e fáceis de lembrar.
 
-Se você tentar visitar http://127.0.0.1:8000 / agora, você irá encontrar alguma mensagem do tipo 'página web não disponível'. Isso ocorre porque o servidor (lembre-se de digitar `runserver`?) não está mais funcionando. Dê uma olhada na sua janela de console do servidor para descobrir o porquê.
+Se você tentar visitar http://127.0.0.1:8000 / agora, vai encontrar alguma mensagem do tipo 'página web não disponível'. Isso ocorre porque o servidor (lembre-se de digitar `runserver`?) não está mais funcionando. Dê uma olhada na sua janela de console do servidor para descobrir o porquê.
 
 ![Erro](images/error1.png)
 
-Seu console está mostrando um erro, mas não se preocupe -- este erro é bastante útil: ele está dizendo que não existe nenhum atributo **post_list** no módulo de views. Esse é o nome da *view* que Django está a tentando encontrar e usar, mas ainda não a criamos. Por enquanto, seu `/admin/` também não funcionará. Mas não se preocupe que nós chegaremos lá.
+Seu console está mostrando um erro, mas não se preocupe -- este erro é bastante útil: ele está dizendo que não existe nenhum atributo **post_list** no módulo de views. Esse é o nome da *view* que Django está tentando encontrar e usar, mas ainda não a criamos. Por enquanto, seu `/admin/` também não funcionará. Mas não se preocupe, nós chegaremos lá.
 
 > Se você quer saber mais sobre a configuração de URLs no Django, veja a documentação oficial: https://docs.djangoproject.com/en/2.0/topics/http/urls/

@@ -6,7 +6,7 @@ Queremos criar algo que armazene todos os posts em nosso blog. Mas para fazer is
 
 Existe um conceito em programação chamado `programação orientada a objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, a gente pode modelar as coisas e definir como elas interagem umas com as outras.
 
-Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos lhe dar um exemplo.
+Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos mostrar um exemplo.
 
 Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade seria vazia).
 
@@ -45,7 +45,7 @@ Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título
     published_date
     
 
-Que tipo de ações pode ser feitas com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
+Que tipo de ações podem ser feitas com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
 
 Então, nós precisaremos de um método `publicar (publish)`.
 
@@ -61,7 +61,7 @@ Você pode pensar em um modelo de banco de dados como uma planilha com colunas (
 
 ### Criando uma aplicação
 
-Para manter tudo arrumado vamos criar um aplicativo separado dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar um aplicativo precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
+Para manter tudo arrumado, vamos criar um aplicativo separado dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar um aplicativo precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -140,7 +140,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Verifique que você usou dois caracteres de sublinhado (`_`) a cada lado de `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, chamamos de "dunder" (redução de "double-underscore").
+> Verifique que você usou dois caracteres de sublinhado (`_`) a cada lado de `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, chamamos de "dunder" (redução de "double-underscore" - sublinhado duplo em português).
 
 Parece assustador, né? Mas não se preocupe, vamos explicar o que essas linhas significam!
 
@@ -161,13 +161,13 @@ Agora definimos as propriedades que comentamos acima: `title`, `text`, `created_
 
 Nós não explicaremos cada pedaço de código aqui pois isso levaria muito tempo. Você deve dar uma olhada na documentação do Django se quiser saber mais sobre campos de modelos e como definir outras coisas além das descritas acima (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-E que tal `def publish(self):`? É justamente o método `publish` que falamos anteriormente. `def` significa que se trata de uma função/método e que `publish` é seu nome. Você pode mudar o nome do método, se quiser. A regra para nomes é que usamos sempre letras minúsculas e sublinhados ao no lugar dos espaços em branco. Por exemplo, um método que calcula o preço médio poderia se chamar `calculate_average_price` (do inglês, calcular_preco_medio).
+E sobre `def publish(self):`? É justamente o método `publish` que falamos anteriormente. `def` significa que se trata de uma função/método e que `publish` é seu nome. Você pode mudar o nome do método, se quiser. A regra para nomes que usamos é sempre letras minúsculas e sublinhados no lugar dos espaços em branco. Por exemplo, um método que calcula o preço médio poderia se chamar `calculate_average_price` (do inglês, calcular_preco_medio).
 
-Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `__str__`. Nesse caso, quando chamar `__str__()` resulta em um texto (**string**), com o título do Post.
+Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `__str__`. Neste caso, quando chamarmos `__str__()`, obteremos um texto (**string**) com o título do Post.
 
-Lembre-se também que ambos `def publish(self):`, e `def __str__(self):` são endentados para dentro da classe. E porque Python é sensível a espaços em branco, precisamos endentar todos os nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe, e você pode obter um comportamento inesperado.
+Lembre-se também que ambos `def publish(self):`, e `def __str__(self):` são indentados para dentro da classe. E, como Python é sensível a espaços em branco, precisamos indentar todos os nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe, e você pode obter um comportamento inesperado.
 
-Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para sua monitora! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas espero que isto se pareça um pouco menos mágica agora!
+Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para sua monitora! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas espero que isto se pareça um pouco menos como mágica agora!
 
 ### Criando tabelas para nossos modelos no banco de dados
 

@@ -1,12 +1,12 @@
 # Formulários
 
-Por último, queremos uma forma legal de adicionar e editar as postagens do nosso blog. A `ferramenta de administração` do Django é legal, mas é um pouco difícil de personalizar e de deixar mais bonita. Com `formulários`, temos poder absoluto sobre nosso interface - podemos fazer quase tudo que podemos imaginar!
+Por último, queremos uma forma legal de adicionar e editar as postagens do nosso blog. A `ferramenta de administração` do Django é legal, mas é um pouco difícil de personalizar e de deixar mais bonita. Com `formulários`, temos poder absoluto sobre nossa interface - podemos fazer quase tudo que pudermos imaginar!
 
-Uma coisa legal do Django é que nós podemos tanto criar um formulário do zero, como criar um `ModelForm` que salva o resultado do formulário em um determinado modelo.
+Uma coisa legal do Django é que podemos tanto criar um formulário do zero, como criar um `ModelForm` que salva o resultado do formulário em um determinado modelo.
 
-É exatamente isso que nós queremos fazer: criar um formulário para o nosso modelo `Post`.
+É exatamente isso que queremos fazer: criar um formulário para o nosso modelo `Post`.
 
-Assim como toda parte importante do Django, forms têm seu próprio arquivo: `forms.py`.
+Assim como todas as partes importantes do Django, forms têm seu próprio arquivo: `forms.py`.
 
 Precisamos criar um arquivo com este nome dentro da pasta `blog`.
 
@@ -34,9 +34,9 @@ Primeiro, precisamos importar o módulo de formulários do Django (`from django 
 
 `PostForm`, como você já deve suspeitar, é o nome do nosso formulário. Precisamos dizer ao Django que esse form é um `ModelForm` (pro Django fazer algumas mágicas para nós) – `forms.ModelForm` é o responsável por essa parte.
 
-Em seguida, temos a `class Meta` onde dizemos ao Django qual modelo deverá ser usado para criar este formulário (`model = Post`).
+Em seguida, temos a `class Meta` em que dizemos ao Django qual modelo deverá ser usado para criar este formulário (`model = Post`).
 
-Por fim, podemos dizer qual(is) campo(s) devem entrar no nosso formulário. Neste cenário, queremos apenas que o `title` e o `text` sejam expostos - `author` deveria ser a pessoa que está logada no sistema (nesse caso, você!) e `created_date` deveria ser configurado automaticamente quando criamos um post (no código), correto?
+Por fim, podemos dizer quais campos devem entrar no nosso formulário. Neste cenário, queremos que apenas o `title` e o `text` sejam expostos -- `author` deve ser a pessoa que está logada no sistema (nesse caso, você!) e `created_date` deve ser configurado automaticamente quando criamos um post (no código), correto?
 
 E é isso! Tudo o que precisamos fazer agora é usar o formulário em uma *view* e mostrá-lo em um template.
 
@@ -52,7 +52,7 @@ Novamente, criaremos um link para a página, uma URL, uma view e um template.
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note que queremos chamar nossa nova view de `post_new`. A classe `"glyphicon glyphicon-plus"` é fornecida pelo tema (bootstrap) que estamos usando, e inos mostrará um sinal de mais.
+Note que queremos chamar nossa nova view de `post_new`. A classe `"glyphicon glyphicon-plus"` é fornecida pelo tema (bootstrap) que estamos usando, e nos mostrará um sinal de mais.
 
 Depois de adicionar essa linha, o seu HTML vai ficar assim:
 
@@ -85,7 +85,7 @@ Depois de adicionar essa linha, o seu HTML vai ficar assim:
 </html>
 ```
 
-Depois de salvar e recarregar a página `http://127.0.0.1:8000` você verá, obviamente, um erro familiar `NoReverseMatch` certo?
+Depois de salvar e recarregar a página `http://127.0.0.1:8000`, você verá, obviamente, o familiar erro `NoReverseMatch`, certo?
 
 ## URL
 
@@ -112,9 +112,9 @@ urlpatterns = [
 ]
 ```
 
-Após recarregar a página, nós veremos um `AttributeError`, já que nós não temos a view `post_new` implementada. Vamos adicioná-la agora.
+Após recarregar a página, veremos um `AttributeError` por que não temos a view `post_new` implementada. Vamos adicioná-la agora.
 
-## post_new view
+## View post_new
 
 Hora de abrir o arquivo `blog/views.py` e adicionar as linhas seguintes com o resto das linhas `from`:
 
@@ -124,7 +124,7 @@ Hora de abrir o arquivo `blog/views.py` e adicionar as linhas seguintes com o re
 from .forms import PostForm
 ```
 
-E daí nosso *view*:
+E então a nossa *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,20 +134,20 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Para criar um novo formulario `Post`, devemos chamar `PostForm()` e passá-lo para o template. Voltaremos a este *view* depois, mas por enquanto, vamos criar uma template para o formulário.
+Para criar um novo formulario `Post`, devemos chamar `PostForm()` e passá-lo para o template. Voltaremos a esta *view* depois, mas por enquanto, vamos criar um template para o formulário.
 
 ## Template
 
-Precisamos criar um arquivo `post_edit.html` na pasta `blog/templates/blog`. Pra fazer o formulário funcionar, precisamos de muitas coisas:
+Precisamos criar um arquivo `post_edit.html` na pasta `blog/templates/blog`. Para fazer o formulário funcionar, precisamos de muitas coisas:
 
 * Temos que exibir o formulário. Podemos fazer isso com (por exemplo) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * A linha acima precisa estar dentro de uma tag HTML form: `<form method="POST">...</form>`.
 * Precisamos de um botão `Salvar`. Fazemos isso com um botão HTML: `<button type="submit">Save</button>`.
-* E finalmente, depois de abrir a tag `<form ...>`, precisamos adicionar {% raw %}`{% csrf_token %}`{% endraw %}. Isso é muito importante, pois é isso que faz o nosso formulário ficar seguro! Se você esquecer esta parte, Django vai reclamar quando você tentar salvar o formulário:
+* E finalmente, depois de abrir a tag `<form ...>`, precisamos adicionar {% raw %}`{% csrf_token %}`{% endraw %}. Isso é muito importante, pois é isso que torna o nosso formulário seguro! Se você esquecer esta parte, o Django vai reclamar quando você tentar salvar o formulário:
 
-![CSFR Página proíbida](images/csrf2.png)
+![CSFR Página proibida](images/csrf2.png)
 
-Beleza, então vamos ver como ficou o HTML `post_edit.html`:
+Legal, então vamos ver como ficou o HTML `post_edit.html`:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -185,9 +185,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Quando enviamos o formulário, somos trazidas de volta à mesmo view, mas desta vez temos mais alguns dados no `request`, especificamente em `request.POST` (o nome não tem nada a ver com "post" de blog; tem a ver com o fato que estamos "postando" dados). Você se lembra que no arquivo HTML, nossa definição de `form` incluiu o variável `method="POST"`? Todos os campos vindos do "form" estarão disponíveis agora em `request.POST`. Não renomeie `POST` para nada diferente disso (o único outro valor válido para `method` é `GET`, mas nós não temos tempo para explicar qual é a diferença).
+Quando enviamos o formulário, somos trazidas de volta à mesma view, mas desta vez temos mais alguns dados no `request`, especificamente em `request.POST` (o nome não tem nada a ver com "post" de blog; tem a ver com o fato que estamos "postando" dados). Lembra que no arquivo HTML, nossa definição de `form` incluiu a variável `method="POST"`? Todos os campos vindos do "form" estarão disponíveis agora em `request.POST`. Não renomeie `POST` para nada diferente disso (o único outro valor válido para `method` é `GET`, mas não temos tempo para explicar a diferença).
 
-Então em nossa *view* temos duas situações diferentes com as quais lidar: primeiro, quando acessamos a página pela primeira vez e queremos um formulário em branco e, segundo, quando voltamos para a *view* com todos os dados do formulário que acabamos de digitar. Desse modo, precisamos adicionar uma condição (usaremos `if` para isso):
+Então em nossa *view* temos duas situações diferentes com as quais lidar: primeiro, quando acessamos a página pela primeira vez e queremos um formulário em branco e segundo, quando voltamos para a *view* com todos os dados do formulário que acabamos de digitar. Desse modo, precisamos adicionar uma condição (usaremos `if` para isso):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,7 +220,7 @@ if form.is_valid():
      post.save()
 ```
 
-Basicamente, temos duas coisas aqui: salvamos o formulário com `form.save` e adicionamos um autor (como não houve um campo `author` em `PostForm`, e este campo é obrigatório). `commit=False` significa que não queremos salvar o modelo de `Post` ainda - queremos adicionar o autor primeiro. Na maioria das vezes você irá usar `form.save()`, sem `commit=False`, mas neste caso, precisamos fazer isso. `post.save()` vai preservar as alterações (adicionando o autor) e é criado um novo post no blog!
+Basicamente, temos duas coisas aqui: salvamos o formulário com `form.save` e adicionamos um autor (já que houve um campo `author` em `PostForm`, e este campo é obrigatório). `commit=False` significa que não queremos salvar o modelo de `Post` ainda - queremos adicionar o autor primeiro. Na maioria das vezes você irá usar `form.save()`, sem `commit=False`, mas neste caso, precisamos fazer isso. `post.save()` vai preservar as alterações (adicionando o autor) e é criado um novo post no blog!
 
 Finalmente, seria fantástico se pudéssemos ir à página `post_detail`, direto para o nosso recém-criado post no blog, né? Para fazer isso, precisaremos de mais uma importação:
 
@@ -265,19 +265,19 @@ Você deve ter percebido que estamos estabelecendo a data de publicação antes 
 
 Isso é incrível!
 
-> Como recentemente usamos a interface de administração do Django, o sistema entende que estamos logados. Existem algumas situações que poderiam nos desligar do sistema (fechar o navegador, reiniciar banco de dados etc.). Se ao criar um post você receber erros que se referem à ausência de um usuário logado, vá até a página de admin http://127.0.0.1:8000/admin e faça login novamente. Isso vai resolver o problema temporariamente. Há um ajuste permanente esperando por você em **lição de casa: adicionar segurança no seu site!**, um capítulo vem depois do tutorial principal.
+> Como recentemente usamos a interface de administração do Django, o sistema entende que estamos logadas. Existem algumas situações que poderiam nos desligar do sistema (fechar o navegador, reiniciar banco de dados etc.). Se ao criar um post você receber erros que se referem à ausência de um usuário logado, vá até a página de admin http://127.0.0.1:8000/admin e faça login novamente. Isso vai resolver o problema temporariamente. Há um ajuste permanente esperando por você em **lição de casa: adicionar segurança ao seu site!**, um capítulo posterior ao tutorial principal.
 
-![Erro de  usuário logado](images/post_create_error.png)
+![Erro de usuário logado](images/post_create_error.png)
 
 ## Validação de formulários
 
-Agora, nós lhe mostraremos como os fórmularios são legais. O post do blog precisa ter os campos `title` e `text`. Em nosso modelo `Post` não dissemos (em oposição a `published_date`) que esses campos não são necessários, então Django, por padrão, espera que sejam definidos.
+Agora, mostraremos como os fórmularios do Django são legais. O post do blog precisa ter os campos `title` e `text`. Em nosso modelo `Post` não dissemos (em oposição a `published_date`) que esses campos são opcionais, então o Django, por padrão, espera que sejam definidos.
 
 Tente salvar o formulário sem `title` e `text`. Adivinhe o que vai acontecer!
 
 ![Validação de formulários](images/form_validation2.png)
 
-Django está tomando conta de validar se todos os campos de nosso formulário estão corretos. Não é incrível?
+Django está confirmando que todos os campos de nosso formulário estão corretos. Não é incrível?
 
 ## Editando o formulário
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
      return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Isso é quase igual à nossa view de `post_new`, né? Mas não totalmente. Primeira coisa: passamos um parâmetro extra `pk` da url. Em seguida, pegamos o modelo `Post` que queremos editar com `get_object_or_404 (Post, pk=pk)` e então, quando criamos um formulário, passamos este post como uma `instância` tanto quando salvamos o formulário…
+Isso é quase igual à nossa view de `post_new`, né? Mas não inteiramente. Primeira coisa: passamos um parâmetro extra `pk` a partir da url. Em seguida, pegamos o modelo `Post` que queremos editar com `get_object_or_404 (Post, pk=pk)` e então, quando criamos um formulário, passamos este post como uma `instância` tanto quando salvamos o formulário…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,11 +358,11 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-Ok, vamos testar se funciona! Vamos para a página `post_detail`. Deve haver um botão editar no canto superior direito:
+Ok, vamos testar para ver se funciona! Vamos para a página `post_detail`. Deve haver um botão editar no canto superior direito:
 
 ![Botão editar](images/edit_button2.png)
 
-Quando você clicar nesse botão, você verá o formulário com a nossa postagem:
+Quando você clicar nesse botão, verá o formulário com a nossa postagem:
 
 ![Editando o formulário](images/edit_form2.png)
 
@@ -394,7 +394,7 @@ Vamos incluir outra tag `{% if %}` que irá apresentar o link somente para os us
 {% endif %}
 ```
 
-Este `{% if %}` fará com que o link seja enviado ao navegador se o usuário que requisitou a página estiver logado. Isso não protege completamente a criação de um novo post, mas é um bom começo. Vamos falar mais sobre segurança nas próximas lições.
+Este `{% if %}` fará com que o link seja enviado ao navegador se o usuário que requisitou a página estiver logado. Isso não protege o blog completamente da criação de um novo post, mas é um bom começo. Vamos falar mais sobre segurança nas próximas lições.
 
 Lembra do ícone Editar que acabamos de adicionar à nossa página de detalhes? Queremos fazer a mesma coisa com ele para que outras pessoas não possam editar as mensagens já existentes.
 
@@ -422,7 +422,7 @@ Você provavelmente está logada, então se atualizar a página, não verá nada
 
 Vamos ver se tudo isso funciona no PythonAnywhere. Hora de fazer outro deploy!
 
-* Primeiro, commite o seu novo código e dê o comando push para colocá-lo no Github:
+* Primeiro, faça o commit do seu novo código e dê o comando push para colocá-lo no Github:
 
 {% filename %}command-line{% endfilename %}
 
@@ -442,7 +442,7 @@ Vamos ver se tudo isso funciona no PythonAnywhere. Hora de fazer outro deploy!
     [...]
     
 
-(Lembre-se de substituir o `<your-pythonanywhere-username>` com seu username do PythonAnywhere, sem os símbolos < e >).
+(Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
 
 * Finalmente, vá para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e clique **Reload**.
 

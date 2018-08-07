@@ -10,7 +10,7 @@ Vamos criar um **ambiente virtual** (também chamado um *virtualenv*). O virtual
 
 Tudo o que você precisa fazer é encontrar o diretório em que você quer criar o `virtualenv`; seu diretório Home, por exemplo. No Windows, pode aparecer como `C:\Users\Nome` (onde `Nome` é seu usuário de login).
 
-> ** Observação:** No Windows, certifique-se de que esse diretório não contém palavras acentuadas ou caracteres especias; se o seu usuário contém caracteres acentuados, use um diretório diferente, por exemplo: ` C:\djangogirls`.
+> ** Observação:** No Windows, certifique-se de que esse diretório não contém palavras acentuadas ou caracteres especiais; se o seu usuário contém caracteres acentuados, use um diretório diferente, por exemplo: ` C:\djangogirls`.
 
 Para este tutorial usaremos um novo diretório `djangogirls` no seu diretório home:
 

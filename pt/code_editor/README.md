@@ -6,6 +6,6 @@ Você está prestes a escrever sua primeira linha de código, então é hora de 
 
 > **Observação:** Se você estiver usando um Chromebook, pule este capítulo e certifique-se de seguir as instruções para a [Configuração do Chromebook](../chromebook_setup/README.md).
 > 
-> **Observação:** Você talvez já tenha feito isso anteriormente no capítulo de Instalação - se for o caso, você pode pular direto para o próximo capítulo!
+> **Observação:** Você talvez já tenha feito isso anteriormente no capítulo de Instalação - se for o caso, pode pular direto para o próximo capítulo!
 
 {% include "/code_editor/instructions.md" %}

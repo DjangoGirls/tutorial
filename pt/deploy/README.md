@@ -1,26 +1,26 @@
 # Deploy!
 
-> **Observação:** Pode ser um pouco difícil chegar ao final do capítulo seguinte. Persista e termine-o; o deploy é uma parte importante do processo de desenvolvimento de um website. Colocar o seu site no ar é um pouco mais complicado, então esse capítulo está no meio do tutorial para que sua monitora possa lhe ajudar nessa tarefa. Isto significa que você pode terminar o tutorial por conta própria se o tempo acabar.
+> **Observação:** Pode ser um pouco difícil chegar ao final desse capítulo. Persista e termine-o; o deploy é uma parte importante do processo de desenvolvimento de um website. Colocar o seu site no ar é um pouco mais complicado, então esse capítulo está no meio do tutorial para que sua monitora possa lhe ajudar nessa tarefa. Isto significa que você pode terminar o tutorial por conta própria se o tempo acabar.
 
-Até agora, seu site só estava disponível no seu computador. Agora você aprenderá como implantá-lo (fazer o 'deploy')! O deploy é o processo de publicação do seu aplicativo na Internet de forma que as pessoas possam, finalmente, vê-lo. :)
+Até agora, seu site só estava disponível no seu computador. Agora você aprenderá como implantá-lo (fazer o 'deploy')! O deploy é o processo de publicação da sua aplicação na Internet de forma que as pessoas possam, finalmente, vê-la. :)
 
-Como você aprendeu, um website precisa estar em um servidor. Existem vários provedores de servidores na internet, nós vamos usar o [PythonAnywhere](https://www.pythonanywhere.com/). O PythonAnywhere é gratuito para pequenas aplicações que não recebem muitos visitantes, então definitivamente vai ser suficiente para você por enquanto.
+Como você aprendeu, um website precisa estar em um servidor. Existem vários provedores de servidores na internet, nós vamos usar o [PythonAnywhere](https://www.pythonanywhere.com/). O PythonAnywhere é gratuito para pequenas aplicações que não recebem muitos visitantes, então vai ser suficiente para você por enquanto.
 
-O outro serviço externo que usaremos é [GitHub](https://www.github.com), que é um serviço de hospedagem de código. Existem outros, mas atualmente quase todos os programadores possuem uma conta no GitHub e agora, você também terá!
+O outro serviço externo que usaremos é [GitHub](https://www.github.com), que é um serviço de hospedagem de código. Existem outros, mas atualmente quase todos os programadores possuem uma conta no GitHub e agora, você também terá a sua!
 
-Estes três lugares serão importantes para você. Seu computador local será o lugar onde você faz o desenvolvimento e testes. Quando você estiver satisfeita com as mudanças, você colocará uma cópia de seu programa no GitHub. Seu site estará na PythonAnywhere e você irá atualizá-lo ao subir uma nova cópia do seu código para o GitHub.
+Estes três lugares serão importantes para você. Seu computador local é o lugar onde você fará o desenvolvimento e testes. Quando estiver satisfeita com as mudanças, você colocará uma cópia de seu programa no GitHub. Seu site estará na PythonAnywhere e você irá atualizá-lo ao subir uma nova cópia do seu código para o GitHub.
 
 # Git
 
-> **Observação:** Se você já fez os passos de instalação, não precisa fazer isso novamente - você pode pular para a próxima seção e comece a criar seu repositório Git.
+> **Observação:** Se você já fez os passos de instalação, não precisa fazer novamente - você pode pular para a próxima seção e comece a criar seu repositório Git.
 
 {% include "/deploy/install_git.md" %}
 
-## Começando nosso repositório no Git
+## Começando o seu repositório no Git
 
 O Git controla as alterações em um determinado conjunto de arquivos no que chamamos de repositório de código (ou "repo"). Vamos criar um para o nosso projeto. Abra o seu console e execute esses comandos no diretório `djangogirls`:
 
-> **Nota**: Verifique o seu diretório atual com um `pwd` (OSX/Linux) ou o comando `cd` (Windows) antes de inicializar o repositório. Você deve estar na pasta `djangogirls`.
+> **Observação:** Verifique o seu diretório atual com um `pwd` (OSX/Linux) ou o comando `cd` (Windows) antes de inicializar o repositório. Você deve estar na pasta `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -47,9 +47,9 @@ O Git irá controlar as alterações em todos os arquivos e pastas neste diretó
 
 E salve-o como `.gitignore` na pasta "djangogirls".
 
-> **Observação:** O ponto no início do nome do arquivo é importante! Se você estiver tendo alguma dificuldade em criá-lo (Macs, por exemplo, não gostam quando você tenta criar arquivos que começam com um ponto através do Finder), então use a função "Salvar Como..." no seu editor; não tem como errar.
+> **Observação:** O ponto no início do nome do arquivo é importante! Se você estiver tendo alguma dificuldade em criá-lo (Macs, por exemplo, não gostam quando você tenta criar arquivos que começam com um ponto por meio do Finder), use a função "Salvar Como..." no seu editor; não tem como errar.
 > 
-> **Observação:** Um dos arquivos especificados no seu `.gitignore` é o `db.sqlite3`. Este arquivo é o seu banco de dados local, onde todos os seus posts ficarão guardados. Nós não queremos que você adicione este arquivo ao repositório porque o seu site no PythonAnywhere vai utilizar um banco de dados diferente. Esse banco poderia ser SQLite, como na sua máquina de desenvolvimento, mas normalmente você irá utilizar um chamado MySQL, que consegue lidar com bem mais visitantes ao site do que o SQLite. De qualquer forma, ao ignorar o banco de dados SQLite para a cópia do GitHub, todos os posts que você criou até agora vão estar disponíveis somente no seu ambiente local, e você terá que adicioná-los novamente durante a produção. Pense no seu banco de dados local como um bom parque de diversões onde você pode testar coisas diferentes e não ter medo de apagar os posts reais do seu blog.
+> **Observação:** Um dos arquivos especificados no seu `.gitignore` é o `db.sqlite3`. Este arquivo é o seu banco de dados local, onde todos os seus posts ficarão guardados. Não queremos que você adicione este arquivo ao repositório porque o seu site no PythonAnywhere vai utilizar um banco de dados diferente. Esse banco poderia ser SQLite, como na sua máquina de desenvolvimento, mas normalmente você utilizará um chamado MySQL, que consegue lidar com bem mais visitantes ao site do que o SQLite. De qualquer forma, ao ignorar o banco de dados SQLite para a cópia do GitHub, todos os posts que você criou até agora vão estar disponíveis somente no seu ambiente local, e você terá que adicioná-los novamente durante a produção. Pense no seu banco de dados local como um bom parque de diversões onde você pode testar coisas diferentes e não ter medo de apagar os posts reais do seu blog.
 
 É uma boa idéia usar um comando `git status` antes de `git add` ou sempre que você não tiver certeza do que mudou. Isso evitará quaisquer surpresas, como os arquivos errados serem adicionados ou "commitados". O comando `git status` mostra informações sobre arquivos que não estão sendo controlados, arquivos que foram modificados ou preparados (staged), o status do branch, e muito mais. A saída do comando deve ser parecida com o seguinte:
 
@@ -128,7 +128,7 @@ Digite o seu nome e senha do GitHub e você deverá ver algo parecido com isso:
 
 O seu código agora está no GitHub. Vai lá ver! Você perceberá que ele esta em ótima companhia - o [Django](https://github.com/django/django), o [Tutorial Django Girls](https://github.com/DjangoGirls/tutorial) e vários outros incríveis projetos open source também hospedam seu código no GitHub. :)
 
-# Configurando o nosso blog no PythonAnywhere
+# Configurando o seu blog no PythonAnywhere
 
 ## Crie uma conta no PythonAnywhere
 
@@ -136,13 +136,13 @@ O seu código agora está no GitHub. Vai lá ver! Você perceberá que ele esta 
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configurando nosso site no PythonAnywhere
+## Configurando o seu site no PythonAnywhere
 
-Navegue para a [Dashboard do PythonAnywhere](https://www.pythonanywhere.com/) clicando no logo, e escolha a opção de iniciar um console "Bash" - isso é a versão do PythonAnywhere da linha de comando, igual à que tem no seu computador.
+Navegue para a [Dashboard do PythonAnywhere](https://www.pythonanywhere.com/) clicando no logo e escolha a opção de iniciar um console "Bash" -- essa é a versão do PythonAnywhere da linha de comando, igual à que existe no seu computador.
 
 ![A seção 'New Console' na interface web do PythonAnywhere, com o botão para abrir o 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Observação:** O PythonAnywhere é baseado em Linux, então se você estiver no Windows, o console terá uma cara um pouco diferente do que tem no seu computador.
+> **Observação:** O PythonAnywhere é baseado em Linux, então se você estiver no Windows, o console terá uma cara um pouco diferente do que aparece no seu computador.
 
 Fazer o deploy de uma aplicação web no PythonAnywhere envolve baixar o seu código do GitHub e configurar o PythonAnywhere para reconhecê-lo e começar a servi-lo como uma aplicacão web. Existem formas manuais de fazer isso, mas o PythonAnywhere fornece uma ferramenta que vai fazer tudo pra você. Vamos instalar ela primeiro:
 
@@ -153,7 +153,7 @@ Fazer o deploy de uma aplicação web no PythonAnywhere envolve baixar o seu có
 
 Isso deve mostrar na tela coisas como `Collecting pythonanywhere`, e depois de algum tempo finalizar com uma linha dizendo `Successfully installed (...) pythonanywhere (...)`.
 
-Agora nós vamos executar a ferramenta para configurar a nossa app do GitHub automaticamente. Digite os seguintes comandos no console do PythonAnywhere (não se esqueça de usar o seu nome de usuário no GitHub ao invés de `<your-github-username>`):
+Agora vamos executar a ferramenta para configurar a nossa aplicação a partir do GitHub automaticamente. Digite os seguintes comandos no console do PythonAnywhere (não se esqueça de usar o seu nome de usuário no GitHub ao invés de `<your-github-username>`):
 
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
@@ -162,16 +162,16 @@ Agora nós vamos executar a ferramenta para configurar a nossa app do GitHub aut
 
 Enquanto assiste a execução da ferramenta, você pode ver o que ela está fazendo:
 
-- Baixando o seu código do GitHub
-- Criando um virtualenv no PythonAnywhere, igual ao que existe no seu computador
-- Atualizando o seu arquivo de configuração com algumas configurações sobre o deploy
-- Criando um banco de dados no PythonAnywhere usando o comando `manage.py migrate`
+- Baixando o seu código do GitHub;
+- Criando um virtualenv no PythonAnywhere, igual ao que existe no seu computador;
+- Atualizando o seu arquivo de configuração com algumas configurações sobre o deploy;
+- Criando um banco de dados no PythonAnywhere usando o comando `manage.py migrate`;
 - Criando os seus arquivos estáticos (nós aprenderemos sobre eles mais tarde)
-- E configurando o PythonAnywhere para servir a sua web app através da sua API
+- E configurando o PythonAnywhere para servir a sua web app através da sua API.
 
-No PythonAnywhere todos esses passos são automatizados, mas são os mesmos passos que você executaria ao utilizar qualquer outro provedor. O principal agora é reparar que o seu banco de dados no PythonAnywhere é na verdade completamente separado do banco de dados no seu computador — isso significa que eles têm posts e contas de admin completamente diferentes.
+No PythonAnywhere, todos esses passos são automatizados, mas são os mesmos que você executaria ao utilizar qualquer outro provedor. O importante agora é reparar que o seu banco de dados no PythonAnywhere é na verdade completamente separado do banco de dados no seu computador — isso significa que eles têm posts e contas de admin completamente diferentes.
 
-Por causa disso, da mesma forma que tivemos que fazer no nosso computador, nós precisamos criar a conta de admin com `createsuperuser`. O PythonAnywhere já ativou o seu virtualenv automaticamente pra você, então tudo o que precisa fazer é rodar:
+Por causa disso, da mesma forma que tivemos que fazer no nosso computador, precisamos criar a conta de admin com `createsuperuser`. O PythonAnywhere já ativou o seu virtualenv automaticamente, então tudo o que você precisa fazer é executar o comando:
 
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
@@ -197,7 +197,7 @@ Você também pode visitar a aba "Files" e dar uma olhada usando o gerenciador d
 
 Agora o seu site deve estar no ar, na internet! Clique na aba "Web" do PythonAnywhere para pegar o link dele. Você pode compartilhar esse link com quem quiser :)
 
-> **Observação:** Este é um tutorial para iniciantes, e ao fazer o deploy do site desta forma nós tomamos alguns atalhos que não são ideais do ponto de vista de segurança. Se e quando você decidir continuar trabalhando nesse projeto, ou iniciar um novo projeto, você deve revisar a [checklist de implantação do Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) para pegar algumas dicas de como tornar seu site seguro.
+> **Observação:** Este é um tutorial para iniciantes e ao fazer o deploy do site desta forma, nós tomamos alguns atalhos que não são ideais do ponto de vista de segurança. Se e quando você decidir continuar trabalhando nesse projeto ou começar um novo, você deve revisar a [checklist de implantação do Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) para pegar algumas dicas de como tornar seu site seguro.
 
 ## Dicas de debugging
 
@@ -205,9 +205,9 @@ Se você vir um erro ao rodar o script `pa_autoconfigure_django.py`, aqui vão a
 
 - Esquecer de criar um token de API do PythonAnywhere.
 - Digitar a URL do seu GitHub incorretamente.
-- Se você vir um erro dizendo *"Could not find your settings.py"* (settings.py não encontrado), você provavelmente não adicionou todos os seus arquivos ao Git e/ou você não fez o push deles para o GitHub. Dê uma revisada na sessão sobre Git acima.
+- Se você vir um erro dizendo *"Could not find your settings.py"* (settings.py não encontrado), você provavelmente não adicionou todos os seus arquivos ao Git e/ou você não fez o push deles para o GitHub. Dê uma revisada na sessão sobre Git acima
 
-Se você vir um erro ao visitar o seu site, o primeiro lugar para procurar informações sobre o erro é o **log de erros**. Você vai encontrar um link para o log na aba [Web](https://www.pythonanywhere.com/web_app_setup/) do PythonAnywhere. Verifique se há alguma mensagem de erro no log; as mais recentes estarão no final.
+Se você vir um erro ao visitar o seu site, o primeiro lugar para procurar informações sobre ele é o **log de erros**. Você vai encontrar um link para o log na aba [Web](https://www.pythonanywhere.com/web_app_setup/) do PythonAnywhere. Verifique se há alguma mensagem de erro no log; as mais recentes estarão no final.
 
 Há também algumas [dicas de debugging no site de ajuda da PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
@@ -215,8 +215,8 @@ E lembre-se, a sua monitora está aí pra ajudar!
 
 # Visite o seu site!
 
-A página padrão no seu site deverá dizer "It worked!" ("Funcionou!"), igual ao seu ambiente local. Adicione `/admin` ao final da URL, e você será levada ao site de administração. Faça login com o nome de usuário e a senha e você poderá adicionar novos Posts ao servidor.
+A página padrão no seu site deverá dizer "It worked!" ("Funcionou!"), igual ao seu ambiente local. Adicione `/admin` ao final da URL e você será levada ao site de administração. Faça login com o nome de usuário e a senha e você poderá adicionar novos Posts ao servidor.
 
-Depois de criar alguns posts, você pode voltar para o seu ambiente local (não o PythonAnywhere). Daqui pra frente você deve trabalhar no seu ambiente local para fazer alterações. Este workflow é comum no desenvolvimento web – fazer alteracões locais, subir essas alteracões pro GitHub, e baixar essas alterações no seu servidor web de produção. Isto permite que você desenvolva e experimente sem quebrar o seu site que está no ar. Bem legal, né?
+Depois de criar alguns posts, você pode voltar para o seu ambiente local (não o PythonAnywhere). Daqui pra frente você deve trabalhar no seu ambiente local para fazer alterações. Este workflow é comum no desenvolvimento web – fazer alteracões locais, subir essas alteracões pro GitHub, e baixar essas alterações para o seu servidor web de produção. Isto permite que você desenvolva e experimente sem quebrar o seu site que está no ar. Bem legal, né?
 
-Você merece *MUITOS* parabéns! Deploys em servidores são uma das partes mais complicadas do desenvolvimento web e não é incomum levar vários dias até conseguir fazer com que isso funcione. Mas você está com o seu site no ar, na internet de verdade! Simples assim!
+Você merece *MUITOS* parabéns! Deploys em servidores são uma das partes mais complicadas do desenvolvimento web e não é incomum levar vários dias até conseguir fazer com que isso funcione. Mas seu site está no ar, na internet de verdade! Simples assim!
