@@ -22,21 +22,21 @@ Nós esperamos conseguir fazer você amar a tecnologia tanto quanto nós amamos!
 
 ## O que você vai aprender durante o tutorial?
 
-Quando você tiver terminado o tutorial você terá uma pequena aplicação web funcional: seu próprio blog. Nós vamos mostrar como colocá-lo online, para que outras pessoas vejam seu trabalho!
+Quando terminar o tutorial, você terá uma pequena aplicação web funcional: seu próprio blog. Nós vamos mostrar como colocá-lo online para que outras pessoas vejam seu trabalho!
 
 Ele se parecerá (mais ou menos) com isso:
 
 ![Figura 0.1](images/application.png)
 
-> Se você seguir o tutorial por conta própria e não tiver um treinador para ajudar em caso de qualquer problema, nós temos um chat para você: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nós pedimos às nossas treinadoras e participantes anteriores para acessarem lá de tempos em tempos e ajudarem outras pessoas com o tutorial! Não tenha medo de fazer sua pergunta lá!
+> Se você seguir o tutorial por conta própria e não tiver uma monitora para ajudar, podemos de ajudar a resolver qualquer problema por esse chat: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nós pedimos às nossas monitoras e participantes anteriores para acessarem o chat de tempos em tempos para ajudar outras pessoas com o tutorial! Não tenha medo de fazer sua pergunta!
 
-OK, [vamos pelo começo...](./how_the_internet_works/README.md)
+OK, [vamos começar pelo começo...](./how_the_internet_works/README.md)
 
 ## Seguindo o tutorial em casa
 
-É incrível participar de um workshop de Django Girls, mas estamos conscientes de que nem sempre é possível participar de um. É por isso que te encorajamos a tentar seguir este tutorial em casa. Para leitores de casa, estamos atualmente preparando vídeos que facilitarão seguir o tutorial por conta própria. Ainda é um trabalho em andamento, mas mais e mais coisas serão abordadas em breve no canal do YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
+É incrível participar de um workshop de Django Girls, mas estamos conscientes de que isso nem sempre é possível. É por isso que encorajamos você a tentar seguir este tutorial em casa. Para leitores em casa, estamos atualmente preparando vídeos que facilitarão seguir o tutorial por conta própria. Ainda é um trabalho em andamento, mas mais e mais coisas serão abordadas em breve no canal do YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-Em cada capítulo que já abordamos, há um link que aponta para o vídeo correto.
+Em cada capítulo que já abordamos, há um link que aponta para o vídeo correspondente.
 
 ## Sobre o tutorial e contribuições
 
