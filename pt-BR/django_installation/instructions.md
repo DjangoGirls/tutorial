@@ -6,13 +6,13 @@
 
 Antes de instalar o Django, vamos instalar uma ferramenta muito útil para ajudar a manter o ambiente de trabalho no nosso computador organizado. Você pode pular esse passo, mas ele é altamente recomendado. Começar com a melhor instalação possível poupará você de muito trabalho no futuro!
 
-Vamos criar um **ambiente virtual** (também chamado um *virtualenv*). O virtualenv irá isolar seu código Python/Django em um ambiente "por projeto". Isso significa que alterações que você fizer em um website não afetará os outros que você também estiver desenvolvendo. Legal, né?
+Vamos criar um **ambiente virtual** (também chamado um *virtualenv*). O virtualenv isolará seu código Python/Django em um ambiente organizado por projetos. Isso significa que as alterações que você fizer em um website não afetarão os outros projetos que você estiver desenvolvendo ao mesmo tempo. Legal, né?
 
 Tudo o que você precisa fazer é encontrar o diretório em que você quer criar o `virtualenv`; seu diretório Home, por exemplo. No Windows, pode aparecer como `C:\Users\Nome` (onde `Nome` é seu usuário de login).
 
-> ** Observação:** No Windows, certifique-se de que esse diretório não contém palavras acentuadas ou caracteres especiais; se o seu usuário contém caracteres acentuados, use um diretório diferente, por exemplo: ` C:\djangogirls`.
+> ** Observação:** No Windows, certifique-se de que esse diretório não contém palavras acentuadas ou caracteres especias; se o seu usuário contém caracteres acentuados, use um diretório diferente, por exemplo: ` C:\djangogirls`.
 
-Para este tutorial usaremos um novo diretório `djangogirls` no seu diretório home:
+Para este tutorial, usaremos um novo diretório `djangogirls` no seu diretório home:
 
 {% filename %}command-line{% endfilename %}
 
@@ -57,9 +57,9 @@ Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv my
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     O ambiente virtual não foi criado com êxito, porque o ensurepip não está disponível.  Em sistemas Debian/Ubuntu, você precisa instalar o pacote python3-venv usando o comando a seguir.
->        apt-get install python3-venv
->     Você pode precisar usar sudo com esse comando.  Depois de instalar o pacote python3-venv, recrie seu ambiente virtual.
+>     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+>        apt install python3-venv
+>     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
 > Neste caso, siga as instruções acima e instale o pacote `python3-venv`: {% filename %}command-line{% endfilename %}
