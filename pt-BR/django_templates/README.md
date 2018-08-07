@@ -1,4 +1,4 @@
-# Modelos do Django
+# Templates do Django
 
 Hora de exibir dados! O Django já vem com algumas **tags de template** que são úteis pra isso.
 
