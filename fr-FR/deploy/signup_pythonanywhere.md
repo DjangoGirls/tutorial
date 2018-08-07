@@ -6,6 +6,6 @@ Inscrivez-vous pour un compte "Débutant" gratuit sur PythonAnywhere :
 
 ## Création d’un jeton de l’API PythonAnywhere
 
-Une action à n'effectuer qu'une seule fois. Lorsque vous inscrivez sur PythonAnywhere, vous serez redirigé vers votre tableau de bord. Trouvez le lien en haut à droite de votre page "Compte" et sélectionnez un onglet appelé "jeton d'API", puis appuyez sur le bouton "Créer un nouveau jeton d'API".
+Une action à n'effectuer qu'une seule fois. Lorsque vous inscrivez sur PythonAnywhere, vous serez redirigé vers votre tableau de bord. Trouvez le lien vers la page "Account" en haut à droite de la page, sélectionnez l'onglet nommé "API token", puis cliquez sur "Create new API token".
 
-![Onglet jeton API sur la page Comptes](images/pythonanywhere_create_api_token.png)
+![L'onglet API token sur la page Account](images/pythonanywhere_create_api_token.png)
