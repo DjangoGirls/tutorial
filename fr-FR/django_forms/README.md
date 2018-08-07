@@ -1,6 +1,6 @@
 # Formulaires Django
 
-La dernière chose que nous voulons faire sur notre site web, c'est créer une manière sympathique d'ajouter ou éditer des blog posts. `L'interface d'administration` de Django est cool, mais elle est assez complexe à personnaliser et à rendre jolie. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+La dernière chose que nous voulons faire sur notre site web, c'est créer une manière sympathique d'ajouter ou éditer des blog posts. `L'interface d'administration` de Django est cool, mais elle est assez complexe à personnaliser et à rendre jolie. Les `formulaires` vont nous donner un pouvoir absolu sur notre interface : nous allons être capables de faire à peu près tout ce que nous pouvons imaginer !
 
 Ce qui est pratique avec les formulaires Django, c'est que nous pouvons aussi bien en définir un à partir de rien ou créer un `ModelForm` qui va enregistrer le résultat du formulaire dans un modèle.
 
@@ -32,11 +32,11 @@ class PostForm(forms.ModelForm):
 
 Nous avons besoin tout d'abord d'importer les formulaires Django (`from django import forms`), puis, évidemment, notre modèle `Post` (`from .models import Post`).
 
-Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulaire. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulaire. Nous avons besoin de préciser à Django que ce formulaire est un `ModelForm`. Pour cela, nous utilisons `forms.ModelForm`.
 
-Ensuite, nous avons une `Meta Classe` qui nous permet de dire à Django quel modèle il doit utiliser pour créer ce formulaire (`model = Post`).
+Ensuite, nous avons la `class Meta` qui nous permet de dire à Django quel modèle il doit utiliser pour créer ce formulaire (`model = Post`).
 
-Enfin, nous précisions quels sont le⋅s champ⋅s qui doivent figurer dans notre formulaire. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Enfin, nous précisions quels sont les champs qui doivent figurer dans notre formulaire. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
 Et voilà, c'est tout ! Tout ce qu'il nous reste à faire, c'est d'utiliser ce formulaire dans une *vue* et de l'afficher dans un template.
 
