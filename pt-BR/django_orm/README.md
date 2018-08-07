@@ -119,13 +119,13 @@ Uhuu! Quer ver se funcionou?
 
 É isso aí, mais um post na lista!
 
-### Adicione mais postagens
+### Adicionando mais postagens
 
 Agora você pode se divertir um pouco e adicionar algumas postagens para ver como funciona. Adicione mais uns 2 ou 3 posts pelo Python e siga para a próxima parte.
 
-### Filtrar objetos
+### Filtrando objetos
 
-Um recurso importante dos QuerySets é a possibilidade de filtrá-los. Digamos que queremos encontrar todos as postagens escritas pelo usuário ola. Para isto, usamos `filter` ao invés de `all` em `Post.objects.all()`. Entre parênteses indicamos quais as condições precisam ser atendidas por um post para acabar dentro do nosso queryset. No nosso caso é `author` que é igual a `me`. A maneira de escrever isso no Django é: `author=me`. Agora o nosso trecho de código ficará assim:
+Um recurso importante dos QuerySets é a possibilidade de filtrá-los. Digamos que queremos encontrar todos as postagens escritas pela usuária ola. Para isto, usamos `filter` ao invés de `all` em `Post.objects.all()`. Entre parênteses, indicamos quais condições precisam ser atendidas por um post para que ele entre no nosso queryset. No nosso caso, a condição é: `author` é igual a `me`. A maneira de escrever isso no Django é: `author=me`. Agora o nosso trecho de código ficará assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -191,7 +191,7 @@ Um QuerySet também nos permite ordenar a lista de objetos. Vamos tentar ordenar
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Você também pode inverter a ordem adicionando `-` no início:
+Também podemos inverter a ordem adicionando `-` no início:
 
 {% filename %}command-line{% endfilename %}
 
