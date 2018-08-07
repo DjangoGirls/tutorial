@@ -68,7 +68,7 @@ Es funktioniert! Aber wir wollen, dass die Posts so wie die statischen Posts ang
 
 ![Abbildung 13.3](images/step3.png)
 
-Ist dir aufgefallen, dass wir diesmal eine etwas andere Notation benutzen haben (`{{ post.title }}` oder `{{ post.text }}`)? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. In den Posttexten konvertiert außerdem der `|linebreaks`-Befehl ("pipe") Zeilenumbrüche in Absätze.
+Ist dir aufgefallen, dass wir diesmal eine etwas andere Notation benutzen haben (`{{ post.title }}` oder `{{ post.text }}`)? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. Außerdem leitet das `|linebreaksbr` den Text der Posts durch einen Filter, um Zeilenumbrüche in Absätze umzuwandeln.
 
 ## Und zum Schluss
 
@@ -78,13 +78,13 @@ Es wäre gut zu sehen, ob deine Website noch immer im öffentlichen Internet fun
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status 
-    [...] 
-    $ git add --all . 
-    $ git status 
-    [...] 
-    $ git commit -m "Modified templates to display posts from database." 
-    [...] 
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
     $ git push
     
 
@@ -92,8 +92,8 @@ Es wäre gut zu sehen, ob deine Website noch immer im öffentlichen Internet fun
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd $USER.pythonanywhere.com 
-    $ git pull 
+    $ cd $USER.pythonanywhere.com
+    $ git pull
     [...]
     
 
