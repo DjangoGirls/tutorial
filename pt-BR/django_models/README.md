@@ -1,16 +1,16 @@
 # Modelos do Django
 
-Queremos criar algo que armazene todos os posts em nosso blog. Mas para fazer isto temos que falar um pouco sobre `objects`.
+Queremos criar algo que armazene todos os posts em nosso blog. Mas para fazer isto, temos que falar um pouco sobre `objects`.
 
 ## Objetos
 
-Existe um conceito em programação chamado `programação orientada a objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, a gente pode modelar as coisas e definir como elas interagem umas com as outras.
+Existe um conceito em programação chamado `programação orientada a objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, possamos modelar as coisas e definir como elas interagem umas com as outras.
 
 Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos mostrar um exemplo.
 
-Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade seria vazia).
+Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade fosse vazia).
 
-`Gato` também realiza algumas ações: `ronronar`, `arranhar` ou `alimentar`-se (no qual podemos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades, como `sabor`).
+`Gato` também realiza algumas ações: `ronronar`, `arranhar` ou `alimentar`-se (no qual podemos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades como `sabor`).
 
     Gato
     --------
@@ -47,7 +47,7 @@ Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título
 
 Que tipo de ações podem ser feitas com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
 
-Então, nós precisaremos de um método `publicar (publish)`.
+Então, nós precisaremos de um método para publicar (`publish`).
 
 Como nós já sabemos o que queremos alcançar, vamos começar a modelá-lo no Django!
 
