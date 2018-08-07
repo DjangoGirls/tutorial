@@ -161,7 +161,7 @@ Vielleicht können wir auch die Schrift in unserem HTML-Kopf anpassen? Füge die
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-Wie eben bereits gemacht, prüfe die Reihenfolge und platziere die Anweisung vor dem Link `blog/static/css/blog.css`. Sie importiert einen Font (Zeichensatz) mit Namen *Lobster* von Google Fonts (https://www.google.com/fonts).
+Wie eben bereits gemacht, prüfe die Reihenfolge und platziere die Anweisung vor dem Link `blog/static/css/blog.css`. Sie importiert eine Schriftart (engl. "Font") namens *Lobster* von Google Fonts (https://www.google.com/fonts).
 
 Suche den Anweisungsblock: `h1 a` (der Code zwischen den geschweiften Klammern `{` und `}`) in der CSS Datei `blog/static/css/blog.css`. Nun füge die Zeile `font-family: 'Lobster';` zwischen den geschweiften Klammern hinzu und aktualisiere die Seite:
 
@@ -178,7 +178,7 @@ h1 a {
 
 Super!
 
-Wie oben erwähnt, basiert CSS auf dem Konzept von Klassen. Dies erlaubt dir, einen Teil des HTML Codes mit einem Namen zu versehen und nur für diesen Teil einen Style hinzuzufügen, ganz ohne Auswirkungen auf andere Teile des Codes. Das kann sehr hilfreich sein! Eventuell hast Du zwei 'div's die etwas vollkommen Verschiedenes auszeichnen (wie einen Seitentitel oder Post Beitrag). Die Klasse hilft dir, sie unterschiedlich aussehen zu lassen.
+Wie oben erwähnt, basiert CSS auf dem Konzept von Klassen. Diese erlauben dir, einen Teil des HTML-Codes mit einem Namen zu versehen und die Darstellung dieses Teils separat von anderen Teilen mit einem Stil zu steuern. Das kann sehr hilfreich sein! Eventuell hast Du zwei 'div's die etwas vollkommen Verschiedenes auszeichnen (wie einen Seitentitel oder Post Beitrag). Die Klasse hilft dir, sie unterschiedlich aussehen zu lassen.
 
 Im nächsten Schritt werden wir den HTML-Code einteilen. Füge eine Klasse (class) namens `page-header` dem `div` hinzu, der die Kopfzeilen (header) enthalten soll:
 
