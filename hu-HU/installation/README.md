@@ -8,7 +8,7 @@ If you find it useful, you can follow this chapter too. But if you want to start
 
 Sok szerencsét!
 
-# Installáció
+# Telepítés
 
 A workshopon egy blogot fogsz elkészíteni. Ehhez el kell végezned néhány telepítési feladatot, hogy a workshop napján már egyből elkezdhess kódolni.
 
