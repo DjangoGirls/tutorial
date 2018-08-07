@@ -49,11 +49,11 @@ Dies tun wir, indem wir einen Ordner namens `static` in der Blog-App erstellen:
     └── mysite
     
 
-Django wird automatisch alle 'static' Ordner in deinen Apps finden und die Dateien darin als statische Dateien nutzen.
+Django findet automatisch alle Ordner mit dem Namen "static" in allen unserer App-Ordner. So ist es in der Lage, ihre Inhalte als statische Dateien zu nutzen.
 
 ## Deine erste CSS-Datei!
 
-Nun erstellen wir eine CSS-Datei, um deiner Website deinen eigenen Stil zu verleihen. Erstelle ein neues Verzeichnis namens `css` in deinem `static`-Verzeichnis. Dann erstelle eine neue Datei namens `blog.css` in diesem `css`-Verzeichnis. Fertig?
+Erstellen wir nun eine CSS-Datei, um deiner Website deinen eigenen Stil zu verleihen. Erstelle ein neues Verzeichnis namens `css` in deinem `static`-Verzeichnis. Dann erstelle eine neue Datei namens `blog.css` in diesem `css`-Verzeichnis. Fertig?
 
     djangogirls
     └─── blog
