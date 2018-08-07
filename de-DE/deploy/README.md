@@ -55,18 +55,19 @@ Es ist hilfreich den Befehl `git status` vor `git add` auszuführen oder immer d
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status 
-    On branch master 
+    $ git status
+    On branch master
     
-    Initial commit 
+    Initial commit
     
     Untracked files:
-     (use "git add <file>..." to include in what will be committed)         
-        .gitignore         
-        blog/         
-        manage.py         
-        mysite/         
-        requirements.txt 
+      (use "git add <file>..." to include in what will be committed)
+    
+            .gitignore
+            blog/
+            manage.py
+            mysite/
+            requirements.txt
     
     nothing added to commit but untracked files present (use "git add" to track)
     
@@ -183,9 +184,11 @@ Nun kannst auch einen Blick auf deinen Code auf PythonAnywhere werfen mittels `l
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    (ola.pythonanywhere.com) $ ls 
-    blog db.sqlite3 manage.py mysite requirements.txt static (ola.pythonanywhere.com) $ ls blog/
-    __init__.py __pycache__ admin.py forms.py migrations models.py static templates tests.py urls.py views.py
+    (ola.pythonanywhere.com) $ ls
+    blog  db.sqlite3  manage.py  mysite requirements.txt static
+    (ola.pythonanywhere.com) $ ls blog/
+    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
+    templates  tests.py  urls.py  views.py
     
 
 Du kannst auch über den "Files"-Tab mit dem PythonAnywhere Built-in File Browser navigieren.
@@ -210,7 +213,7 @@ Du findest einige [Allgemeine Debugging Tipps im PythonAnywhere Wiki](http://hel
 
 Und denke daran, dein Coach ist da, um zu helfen!
 
-# Zieh dir deine Site rein!
+# Schau dir deine Website an!
 
 Auf der Defaultseite deiner Site sollte "It worked!" stehen - genau so wie auf deinem lokalen Computer. Füge nun `/admin/` ans Ende deiner URL an und du kommst auf die Admin-Site. Melde dich mit deinem Benutzernamen und Passwort an. Nun kannst du neue Posts auf dem Server hinzufügen.
 
