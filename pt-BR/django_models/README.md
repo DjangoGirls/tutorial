@@ -110,11 +110,11 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Criando o modelo Post do nosso blog
+### Criando um modelo de postagem para o nosso blog
 
 No arquivo `blog/models.py` definimos todos os objetos chamados `Modelos` -- este é um lugar em que vamos definir nossa postagem do blog.
 
-Vamos abrir `blog/models.py`, remova tudo dele e escreva o código assim:
+Vamos abrir `blog/models.py`, remover tudo dele e escrever o código assim:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -140,7 +140,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Verifique que você usou dois caracteres de sublinhado (`_`) a cada lado de `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, chamamos de "dunder" (redução de "double-underscore" - sublinhado duplo em português).
+> Certifique-se de que usou dois caracteres de sublinhado (`_`) em cada lado de `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, a chamamos de "dunder" (vem da expressão em inglês "double-underscore" - sublinhado duplo em português).
 
 Parece assustador, né? Mas não se preocupe, vamos explicar o que essas linhas significam!
 
