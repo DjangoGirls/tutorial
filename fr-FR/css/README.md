@@ -202,7 +202,7 @@ Maintenant, ajoutez la classe `post` à votre `div` contenant votre billet de bl
 </div>
 ```
 
-Nous allons maintenant ajouter des blocs déclaratifs à différents sélecteurs. Les sélecteurs qui commencent par `.` sont reliés aux classes. Il y a de nombreux tutoriels et des explications à propos de CSS sur le Web qui peuvent vous aider à comprendre le code suivant. Pour l'instant, copier-coller le code qui suit dans votre fichier `blog/static/css/blog.css` :
+Nous allons maintenant ajouter des blocs de règles aux différents sélecteurs. Les sélecteurs qui commencent par `.` désignent des classes. De nombreux tutoriels et explications sur le CSS existent sur le Web, cela pourra vous aider qui à comprendre le code suivant. Pour l'instant, copier-coller le code qui suit dans votre fichier `blog/static/css/blog.css` :
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -262,14 +262,14 @@ Nous allons maintenant nous intéresser au code concernant les posts. Il va fall
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>published: {{ post.published_date }}</p>
+        <p>Publié le {{ post.published_date }}</p>
         <h1><a href="">{{ post.title }}</a></h1>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
 
-Ce code se trouve dans le fichier `blog/templates/blog/post_list.html`. Il doit être remplacé par le code suivant :
+se trouvant dans le fichier `blog/templates/blog/post_list.html` par :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -280,7 +280,7 @@ Ce code se trouve dans le fichier `blog/templates/blog/post_list.html`. Il doit 
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        <p>published: {{ post.published_date }}</p>
+                        <p>Publié le {{ post.published_date }}</p>
                     </div>
                     <h1><a href="">{{ post.title }}</a></h1>
                     <p>{{ post.text|linebreaksbr }}</p>
@@ -291,11 +291,11 @@ Ce code se trouve dans le fichier `blog/templates/blog/post_list.html`. Il doit 
 </div>
 ```
 
-Sauvegardez les fichiers modifiés et rafraîchissez votre site web.
+Sauvegardez les fichiers modifiés et rafraîchissez votre page.
 
 ![Figure 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Regarde le code que nous venons juste collé à trouver les endroits où nous avons ajouté des classes dans le code HTML et de les utiliser dans le CSS. Où souhaitez-vous faire le changement si vous vouliez la date turquoise?
+Woohoo ! Ça a l'air génial, non ? Regarde le code que nous venons juste collé à trouver les endroits où nous avons ajouté des classes dans le code HTML et de les utiliser dans le CSS. Où souhaitez-vous faire le changement si vous vouliez la date turquoise?
 
 N'ayez pas peur de bricoler avec ce CSS un peu et essayer de changer certaines choses. Jouer avec le CSS peut vous aider à comprendre quelles sont les différentes choses sont en train de faire. Si vous cassez quelque chose, ne vous inquiétez pas – vous pouvez toujours annuler!
 
