@@ -295,10 +295,10 @@ Sauvegardez les fichiers modifiés et rafraîchissez votre page.
 
 ![Figure 14.4](images/final.png)
 
-Woohoo ! Ça a l'air génial, non ? Regarde le code que nous venons juste collé à trouver les endroits où nous avons ajouté des classes dans le code HTML et de les utiliser dans le CSS. Où souhaitez-vous faire le changement si vous vouliez la date turquoise?
+Woohoo ! Ça a l'air génial, non ? Intéressez-vous au code que nous venons juste de coller pour trouver quelles règles CSS sont appliquées aux sélecteurs HTML que nous avons nommés précédemment. Où feriez-vous le changement si l'on souhaite mettre la date en turquoise ?
 
-N'ayez pas peur de bricoler avec ce CSS un peu et essayer de changer certaines choses. Jouer avec le CSS peut vous aider à comprendre quelles sont les différentes choses sont en train de faire. Si vous cassez quelque chose, ne vous inquiétez pas – vous pouvez toujours annuler!
+N'ayez pas peur de bricoler un peu le CSS et essayer de changer certaines choses. Jouer avec le CSS peut vous aider à comprendre comment et qui agit sur quoi. Si vous cassez quelque chose, ne vous inquiétez pas – vous pouvez toujours faire marche arrière !
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). Il peut vous aider à apprendre tout au sujet de faire votre site web plus joli avec les CSS.
+Il peut vous aider à apprendre tout au sujet de faire votre site web plus joli avec les CSS.
 
 Prête pour le chapitre suivant ? :)
