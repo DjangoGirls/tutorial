@@ -46,11 +46,12 @@ Dla systemu Windows wpisz teraz do swojej konsoli następującą komendę. **Nie
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
 > **Uwaga**: w strukturze katalogów, możesz zobaczyć również katalog `venv`, który stworzyłyśmy wcześniej.
