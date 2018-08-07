@@ -27,7 +27,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Einen Code Editor installieren
 
-{% include "code_editor/instructions.md" %}
+{% include "/code_editor/instructions.md" %}
 
 # Git installieren
 
