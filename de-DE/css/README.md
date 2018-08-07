@@ -82,17 +82,19 @@ h1 a {
 
 In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg, HTML-Elemente zu identifizieren, ist der Name des Elements. Du erinnerst dich vielleicht an diese Namen, die wir als 'Tags' im HTML Kapitel bezeichnet haben. Zum Beispiel sind `a`, `h1` und `body` solche Elementnamen. Wir identifizieren Elemente auch über die Attribute `class` oder `id`. Klassen (`class`) und IDs (`id`) sind Namen, die du den Elementen selbst gibst. Klassen definieren dabei Gruppen von Elementen und IDs verweisen auf bestimmte Elemente. Du könntest zum Beispiel den folgenden Tag anhand des Elementnamens `a`, der Klasse `external_link` oder der ID `link_to_wiki_page` identifizieren:
 
-<pre><code class="html"><a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
-</code></pre>
+```html
+<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
+```
 
-<p><a href="http://www.w3schools.com/cssref/css_selectors.asp">Auf w3schools</a> erfährst du mehr über CSS-Selektoren.</p>
+[Auf w3schools](http://www.w3schools.com/cssref/css_selectors.asp) erfährst du mehr über CSS-Selektoren.
 
-<p>Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die Datei <code>blog/templates/blog/post_list.html</code> öffnen und diese Zeile ganz oben ergänzen:</p>
+Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die Datei `blog/templates/blog/post_list.html` öffnen und diese Zeile ganz oben ergänzen:
 
-<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<pre><code class="html">{% load static %}
-</code></pre>
+```html
+{% load static %}
+```
 
 Wir laden hier die statischen Dateien. :) Zwischen den Tags `<head>` und `</head>`, direkt nach den Links zu den Bootstrap-Dateien, füge noch diese Zeile ein:
 
