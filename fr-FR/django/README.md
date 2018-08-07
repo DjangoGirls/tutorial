@@ -6,17 +6,17 @@ Lorsque vous créez un site web, vous avez souvent besoin de la même chose : un
 
 Heureusement pour vous, d'autres personnes ont réalisé depuis longtemps que les développeurs web font face aux mêmes problèmes lors de la construction d'un nouveau site, donc ils travaillent ensemble et créent un framework (Django étant un) qui vous donne des composants prêts à l'emploi.
 
-Les Frameworks existent pour vous éviter d'avoir à réinventer la roue et aider à réduire les frais généraux lorsque vous construisez de nouveaux sites.
+Les frameworks existent pour vous éviter d'avoir à réinventer la roue et aider à réduire les frais généraux lorsque vous construisez de nouveaux sites.
 
 ## Pourquoi est-ce que vous auriez besoin d'un framework ?
 
 Pour comprendre ce qu'est exactement Django, nous devons regarder de plus près le serveur. La première chose est que le serveur doit savoir que vous voulez vous servir une page Web.
 
-Imaginez une boîte aux lettres (un port) dont l'arrivée de lettres (une requête) serait surveillée. C'est le travail qu'effectue le serveur. Le serveur Web lit la lettre et renvoie une page Web en réponse. Généralement, lorsque vous voulez envoyer quelque chose, vous avez besoin de contenu. Django est quelque chose qui va vous aider à créer ce contenu.
+Imaginez une boîte aux lettres (un port) dont l'arrivée de lettres (une requête) serait surveillée. C'est le travail qu'effectue le serveur. Le serveur Web lit la lettre et renvoie une page Web en réponse. Généralement, lorsque vous voulez envoyer quelque chose, vous avez besoin de contenu. Django est un outil qui va vous aider à créer ce contenu.
 
 ## Que se passe-t-il quand quelqu'un demande un site web à votre serveur ?
 
-Lorsqu'une requête arrive sur un serveur web, elle est transmise à Django dont le premier travail va être de comprendre ce qui est demandé. Il prend d'abord une adresse de page Web et essaie de savoir quoi faire. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). Ce n'est pas très intelligent - il faut une liste de modèles et essaie de faire correspondre l'URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Lorsqu'une requête arrive sur un serveur web, elle est transmise à Django dont le premier travail va être de comprendre ce qui est demandé. Il s'occupe tout d'abord de l'adresse de page Web et essaie de savoir quoi faire. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). Ce n'est pas très intelligent - il faut une liste de modèles et essaie de faire correspondre l'URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
 Afin d'y voir un peu plus clair, imaginez une postière transportant une lettre. Elle descend la rue et vérifie à chaque maison si le numéro de celle-ci correspond à celui de la lettre. Si jamais les deux numéros correspondent, elle met la lettre dans la boîte aux lettres de cette maison. C'est à peu près comme cela que fonctionne l'urlresolver !
 
