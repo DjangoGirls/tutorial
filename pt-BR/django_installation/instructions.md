@@ -8,7 +8,7 @@ Antes de instalar o Django, vamos instalar uma ferramenta muito útil para ajuda
 
 Vamos criar um **ambiente virtual** (também chamado um *virtualenv*). O virtualenv isolará seu código Python/Django em um ambiente organizado por projetos. Isso significa que as alterações que você fizer em um website não afetarão os outros projetos que você estiver desenvolvendo ao mesmo tempo. Legal, né?
 
-Tudo o que você precisa fazer é encontrar o diretório em que você quer criar o `virtualenv`; seu diretório Home, por exemplo. No Windows, pode aparecer como `C:\Users\Nome` (onde `Nome` é seu usuário de login).
+Tudo o que você precisa fazer é encontrar o diretório em que você quer criar o `virtualenv`; seu diretório Home, por exemplo. No Windows, pode aparecer como `C:\Users\Name` (onde `Nome` é seu usuário de login).
 
 > ** Observação:** No Windows, certifique-se de que esse diretório não contém palavras acentuadas ou caracteres especias; se o seu usuário contém caracteres acentuados, use um diretório diferente, por exemplo: ` C:\djangogirls`.
 
@@ -62,7 +62,7 @@ Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv my
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> (Em português, o erro acima diz: "O ambiente virtual não foi criado com êxito porque o ensurepip não está disponível. Em sistemas Debian/Ubuntu, você precisa instalar o pacote python3-venv usando o comando a seguir: `apt install python3-venv`. Você pode precisar usar sudo com esse comando. Depois de instalar o pacote python3-venv, recrie seu ambiente virtual.")
+> Caso você receba esse erro, siga as instruções acima e instale o pacote `python3-venv`: {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
@@ -89,7 +89,7 @@ Podemos criar um `virtualenv` no Linux ou no OS X executando `python3 -m venv my
 >     E: Unable to locate package python3-venv
 >     
 > 
-> então execute:
+> no lugar do comando mostrado acima, execute esse:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
