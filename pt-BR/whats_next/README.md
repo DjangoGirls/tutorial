@@ -1,4 +1,4 @@
-# O que vem depois?
+# O que vem agora?
 
 Parabéns! Você **arrasou**. Estamos orgulhosas! <3
 
@@ -19,7 +19,7 @@ Mais pra frente, você pode tentar os recursos listados abaixo. Todos são muito
 - [Curso de Python do Code Academy](https://www.codecademy.com/en/tracks/python)
 - [Curso de HTML & CSS do Code Academy](https://www.codecademy.com/tracks/web)
 - [Tutorial do Django Carrots](https://github.com/ggcarrots/django-carrots)
-- [Livro "Aprenda Python do Jeito Difícil" (Learn Python The Hard Way)](http://learnpythonthehardway.org/book/)
-- [Vídeo aulas "Iniciando com Django"](http://www.gettingstartedwithdjango.com/)
-- [Livro Duas Colheres de Django 1.11: Melhores Práticas para o Framework Web Django (Two Scoops of Django 1.11: Best Practices for Django Web Framework)](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Aprenda Como Construir uma Aplicação Web (Learn How to Build a Web App)](https://hellowebapp.com/) - você também pode solicitar uma licença de eBook gratuita entrando em contato com a autora Tracy Osborn em <tracy@limedaring.com>
+- [Livro "Learn Python The Hard Way" (Aprenda Python do Jeito Difícil)](http://learnpythonthehardway.org/book/)
+- [Vídeo aulas "Começando com o Django"](http://www.gettingstartedwithdjango.com/)
+- [Livro "Two Scoops of Django 1.11: Best Practices for Django Web Framework" (Duas Colheres de Django 1.11: Melhores Práticas para o Framework Web Django)](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- ["Hello Web App: Learn How to Build a Web App"](https://hellowebapp.com/) (Aprenda Como Construir uma Aplicação Web) -- você também pode solicitar uma licença gratuita do eBook entrando em contato com a autora Tracy Osborn em <tracy@limedaring.com>
