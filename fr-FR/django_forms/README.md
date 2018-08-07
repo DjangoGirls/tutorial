@@ -36,15 +36,15 @@ Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulair
 
 Ensuite, nous avons la `class Meta` qui nous permet de dire à Django quel modèle il doit utiliser pour créer ce formulaire (`model = Post`).
 
-Enfin, nous précisions quels sont les champs qui doivent figurer dans notre formulaire. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Enfin, nous précisions quels sont les champs qui doivent figurer dans notre formulaire. Dans notre cas, nous souhaitons que seuls `title` et `text` apparaissent dans notre formulaire. Nous obtiendrons les autres données différemment : l'auteur (`author`) peut être la personne actuellement enregistrée (vous dans ce cas) et la date de création `created_date` peut être générée automatiquement lors de la création du post (voir dans le code).
 
 Et voilà, c'est tout ! Tout ce qu'il nous reste à faire, c'est d'utiliser ce formulaire dans une *vue* et de l'afficher dans un template.
 
-Donc, encore une fois, nous allons créer des liens vers des pages, des URL, des vues et des modèles.
+Donc, encore une fois, nous allons créer un lien entre une page, une URL, une vue et un template.
 
 ## Lien vers une page contenant le formulaire
 
-C'est le moment d'ouvrir le fichier `blog/templates/blog/base.html`. Nous allons ajouter un lien dans un `div` appelé `page-header` :
+C'est le moment d'ouvrir le fichier `blog/templates/blog/base.html`. Nous allons ajouter un lien dans une `div` nommé `page-header` :
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -52,9 +52,9 @@ C'est le moment d'ouvrir le fichier `blog/templates/blog/base.html`. Nous allons
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Notez que nous souhaitons appeler notre nouvelle vue `post_new`. Les classes `"glyphicon glyphicon-plus"` sont fournies par le thème bootstrap et nous permettent d'afficher un signe plus.
 
-Après avoir ajouté une ligne, votre fichier HTML devrait maintenant ressembler à ceci:
+Après avoir ajouté cette ligne, votre fichier HTML devrait maintenant ressembler à ceci :
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -112,7 +112,7 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Une fois la page rechargée, vous allez voir une `AttributeError`, ce qui est normal. Nous n'avons pas encore implémentée la vue `post_new`. Allons nous occuper de ça maintenant.
 
 ## La vue post_new
 
@@ -124,7 +124,7 @@ Ouvrez maintenant le fichier `blog/views.py` et ajoutez les lignes suivantes ave
 from .forms import PostForm
 ```
 
-And then our *view*:
+Puis ajoutez la *vue* :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,7 +134,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Afin de pouvoir créer un nouveau formulaire `Post`, nous avons besoin d'appeler la fonction `PostForm()` et de la passer au template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Afin de pouvoir créer un nouveau formulaire `Post`, nous avons besoin d'appeler la fonction `PostForm()` et de la passer au template. Nous reviendrons modifier cette *vue* plus tard, mais pour l'instant, créons rapidement un template pour ce formulaire.
 
 ## Template
 
