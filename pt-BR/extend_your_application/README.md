@@ -10,7 +10,7 @@ A primeira coisa que precisamos em nosso blog é, obviamente, uma página para m
 
 Já temos um modelo de `Post`, então não precisamos adicionar nada ao `models.py`.
 
-## Criando um link para detalhes de um post
+## Criando um link para os detalhes de um post
 
 Vamos começar adicionando um link dentro do arquivo `blog/templates/blog/post_list.html`. Por enquanto, ele deve se parecer com isto: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -30,7 +30,7 @@ Vamos começar adicionando um link dentro do arquivo `blog/templates/blog/post_l
 {% endblock %}
 ```
 
-{% raw %} Queremos um link no título do post dentro da página de lista de posts apontando para a página de detalhes do post respectivo. Vamos mudar `<h1><a href="">{{ post.title }}</a></h1>` e adicionar um link para a página de detalhe: {% endraw %}
+{% raw %} Queremos um link no título do post dentro da página de lista de posts apontando para a página de detalhes do post respectivo. Vamos mudar `<h1><a href="">{{ post.title }}</a></h1>` e adicionar um link para a página de detalhe:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,9 +38,9 @@ Vamos começar adicionando um link dentro do arquivo `blog/templates/blog/post_l
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Hora de explicar o misterioso `{% url 'post_detail' pk=post.pk %}`. Como você deve suspeitar, a notação de `{% %}` significa que estamos usando as tags de template do Django. Dessa vez usamos uma que cria uma URL para nós!{% endraw %}
+{% raw %}Hora de explicar o misterioso `{% url 'post_detail' pk=post.pk %}`. Como você deve suspeitar, a notação `{% %}` significa que estamos usando as tags de template do Django. Dessa vez, usamos uma que cria uma URL para nós!{% endraw %}
 
-A parte com `post_detail` significa que o Django espera uma URL no arquivo `blog/urls.py` com o nome definido como name='post_detail'
+A parte `post_detail` significa que o Django espera uma URL no arquivo `blog/urls.py` com o nome definido como name='post_detail'
 
 E quanto ao `pk=post.pk`? `pk` é uma abreviação de "primary key" (do inglês chave primária), que é um identificador único de cada entrada em um banco de dados. Uma vez que não especificamos a chave primária em nosso modelo de `Post`, o Django cria uma para nós (que por padrão, é um número que incrementa sequencialmente a partir de 1, 2, 3, etc) e a adiciona como um campo chamado `pk` em cada um dos nossos posts. Acessamos a chave primária escrevendo `post.pk`, do mesmo modo que podemos acessar outros campos (`title`, `author`, etc.) no nosso objeto de `Post`!
 
