@@ -12,7 +12,7 @@ Mas não queremos começar do zero de novo, né? Mais uma vez, usaremos algo que
 
 Bootstrap é um dos frameworks de HTML e CSS mais populares para desenvolver websites mais bonitinhos: https://getbootstrap.com/
 
-Foi escrito por programadores que trabalharam no Twitter. Agora é desenvolvido por voluntários de todo o mundo!
+Foi escrito por programadores que já trabalharam no Twitter e agora é desenvolvido por voluntários de todo o mundo!
 
 ## Instalar o Bootstrap
 
@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a` é um seletor CSS. Isto significa que estamos aplicando nossos estilos a qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, nós estamos dizendo para mudar a cor para `#FCA205`, que é laranja. Mas é claro que você pode colocar a cor que quiser aqui!
 
-Em um arquivo CSS, nós determinamos estilos para elementos do arquivo HTML. A primeira maneira de identificar elementos é usando seus nomes. Você pode se lembrar desses nomes como as tags da seção HTML. Coisas como `a` `h1` e `body` são exemplos de nomes de elementos. Também identificamos elementos pelo atributo `class` ou pelo atributo `id`. Class e id são nomes que você mesma dá ao elemento. Classes definem grupos de elementos, e ids apontam para elementos específicos. Por exemplo, a tag a seguir pode ser identificada usando a tag de nome `a`, a classe `external_link` ou o id de `link_to_wiki_page`:
+Em um arquivo CSS, nós determinamos estilos para elementos do arquivo HTML. A primeira maneira de identificar elementos é usando seus nomes. Você pode se lembrar desses nomes porque são a mesma coisa que as tags da seção HTML. `a`, `h1` e `body` são exemplos de nomes de elementos. Também identificamos elementos pelo atributo `class` ou pelo atributo `id`. Class e id são nomes que você mesma dá ao elemento. Classes definem grupos de elementos e ids apontam para elementos específicos. Por exemplo, a tag a seguir pode ser identificada usando a tag de nome `a`, a classe `external_link` ou o id de `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -96,7 +96,7 @@ Nós também precisamos dizer ao nosso template HTML que adicionamos algum CSS. 
 {% load static %}
 ```
 
-Estamos apenas carregando arquivos estáticos aqui. :) Entre as tags `<head>` e `</head>`, depois dos links para os arquivos CSS do Bootstrap, adicione esta linha:
+Estamos apenas carregando arquivos estáticos aqui. :) Adicione a seguinte linha entre as tags `<head>` e `</head>` e depois dos links para os arquivos CSS do Bootstrap:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,7 +104,7 @@ Estamos apenas carregando arquivos estáticos aqui. :) Entre as tags `<head>` e 
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-O navegador lê os arquivos na ordem em que são apresentados, então precisamos ter certeza de que eles estão no lugar certo. Do contrário, o código no nosso arquivo pode ser sobrescrito pelo código dos arquivos do Bootstrap. Acabamos de dizer ao nosso template onde está o nosso arquivo CSS.
+O navegador lê os arquivos na ordem em que são apresentados, então precisamos ter certeza de que eles estão no lugar certo. Do contrário, o código no nosso arquivo poderia ser sobrescrito pelo código dos arquivos do Bootstrap. Acabamos de dizer ao nosso template onde está o nosso arquivo CSS.
 
 Agora, seu arquivo deve estar assim:
 
@@ -139,7 +139,7 @@ OK, salve o arquivo e atualize o site!
 
 ![Figura 14.2](images/color2.png)
 
-Bom trabalho! Que tal a gente dar um pouco de ar ao nosso site e aumentar a margem do lado esquerdo? Vamos tentar!
+Bom trabalho! Que tal a gente dar um pouco de espaço ao nosso site e aumentar a margem do lado esquerdo? Vamos tentar!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Então, inclua declarações de classes no código HTML que exibe os posts. No arquivo <0>blog/templates/blog/post_list. html</0>, substitua isto:
+Agora inclua declarações de classes no código HTML que exibe os posts. No arquivo blog/templates/blog/post_list. html, substitua isto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 

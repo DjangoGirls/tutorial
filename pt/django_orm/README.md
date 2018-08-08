@@ -4,13 +4,13 @@ Neste capítulo você vai aprender como o Django se conecta ao banco de dados e 
 
 ## O que é um QuerySet?
 
-Um QuerySet (conjunto de busca) é, em essência, uma lista de objetos de um dado modelo. QuerySet permite que você leia os dados à partir de uma base de dados, filtre e ordene.
+Um QuerySet (conjunto de busca) é, em essência, uma lista de objetos de um dado modelo. QuerySet permite que você leia os dados a partir de uma base de dados, filtre e ordene.
 
 É mais fácil aprender usando exemplos. Vamos lá?
 
 ## O Shell do Django
 
-Abra o seu terminal (não no PythonAnywhere) e digite o seguinte comando:
+Abra o seu terminal (não o PythonAnywhere) e digite o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,11 +26,11 @@ O resultado deve ser:
 >>>
 ```
 
-Agora você está no console interativo do Django. Ele é como o prompt do Python só que com umas mágicas adicionais :). Você pode usar todos os comandos do Python aqui também, é claro.
+Agora você está no console interativo do Django. Ele é como o prompt do Python, só que com umas mágicas adicionais ;). Você pode usar todos os comandos do Python aqui também, é claro.
 
 ### Todos os objetos
 
-Antes, vamos tentar mostrar todas as nossas postagens. Podemos fazer isso com o seguinte comando:
+Primeiro, vamos tentar mostrar todas as nossas postagens. Podemos fazer isso com o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! Um erro apareceu. Ele nos diz que não existe algo chamado Post. É verdade -- nós esquecemos de importá-lo primeiro!
+Oops! Um erro apareceu. Ele nos diz que não existe algo chamado Post. É verdade -- nós esquecemos de importá-lo antes!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! Um erro apareceu. Ele nos diz que não existe algo chamado Post. É verdad
 >>> from blog.models import Post
 ```
 
-Isso é simples: importamos o modelo `Post` de dentro do `blog.models`. Vamos tentar mostrar todas as postagens novamente:
+Mas isso é simples: basta importar o modelo `Post` de dentro do `blog.models`. Vamos tentar mostrar todas as postagens novamente:
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,7 +58,7 @@ Isso é simples: importamos o modelo `Post` de dentro do `blog.models`. Vamos te
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-É uma lista dos posts que criamos mais cedo! Nós criamos estes posts utilizando a interface do Django admin. No entanto, agora queremos criar novos posts utilizando Python, como fazemos isso?
+É uma lista dos posts que criamos mais cedo! Nós criamos estes posts utilizando a interface do Django admin. No entanto, agora queremos criar novos posts utilizando Python. Como fazemos isso?
 
 ### Criando um objeto
 
@@ -108,7 +108,7 @@ Agora finalmente podemos criar nosso post:
 <Post: Sample title>
 ```
 
-Viva! Quer ver se funcionou?
+Uhuu! Quer ver se funcionou?
 
 {% filename %}command-line{% endfilename %}
 
@@ -119,13 +119,13 @@ Viva! Quer ver se funcionou?
 
 É isso aí, mais um post na lista!
 
-### Adicione mais postagens
+### Adicionando mais postagens
 
 Agora você pode se divertir um pouco e adicionar algumas postagens para ver como funciona. Adicione mais uns 2 ou 3 posts pelo Python e siga para a próxima parte.
 
-### Filtrar objetos
+### Filtrando objetos
 
-Um recurso importante dos QuerySets é a possibilidade de filtrá-los. Digamos que queremos encontrar todos as postagens escritas pelo usuário ola. Para isto, usamos `filter` ao invés de `all` em `Post.objects.all()`. Entre parênteses indicamos quais as condições precisam ser atendidas por um post para acabar dentro do nosso queryset. No nosso caso é `author` que é igual a `me`. A maneira de escrever isso no Django é: `author=me`. Agora o nosso trecho de código ficará assim:
+Um recurso importante dos QuerySets é a possibilidade de filtrá-los. Digamos que queremos encontrar todos as postagens escritas pela usuária ola. Para isto, usamos `filter` ao invés de `all` em `Post.objects.all()`. Entre parênteses, indicamos quais condições precisam ser atendidas por um post para que ele entre no nosso queryset. No nosso caso, a condição é: `author` é igual a `me`. A maneira de escrever isso no Django é: `author=me`. Agora o nosso trecho de código ficará assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -191,7 +191,7 @@ Um QuerySet também nos permite ordenar a lista de objetos. Vamos tentar ordenar
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Você também pode inverter a ordem adicionando `-` no início:
+Também podemos inverter a ordem adicionando `-` no início:
 
 {% filename %}command-line{% endfilename %}
 

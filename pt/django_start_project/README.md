@@ -14,7 +14,7 @@ Os nomes de alguns arquivos e diretórios são muito importantes para o Django. 
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-No MacOS ou no console do Linux, você pode rodar o comando abaixo (**não esqueça de adicionar o ponto `.` no final</0!>):</p> 
+No MacOS ou no console do Linux, rode o comando abaixo (**não esqueça de adicionar o ponto `.` no final</0!>):</p> 
 
 {% filename %}command-line{% endfilename %}
 
@@ -23,13 +23,13 @@ No MacOS ou no console do Linux, você pode rodar o comando abaixo (**não esque
 
 > O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é um atalho para referenciar este diretório).
 > 
-> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin`. A parte `(myvenv) ~/djangogirls$` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você for digitar seus comandos.
+> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin`. A parte `(myvenv) ~/djangogirls$` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você digitar seus comandos.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-No Windows, você pode rodar o seguinte comando (**não esqueça de adicionar o ponto `.` no final!**):
+No Windows, rode o seguinte comando (**não esqueça de adicionar o ponto `.` no final!**):
 
 {% filename %}command-line{% endfilename %}
 
@@ -38,11 +38,11 @@ No Windows, você pode rodar o seguinte comando (**não esqueça de adicionar o 
 
 > O ponto `.` é crucial por que ele diz para o script instalar o Django no diretório atual (o ponto `.` é um atalho para referenciar este diretório).
 > 
-> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin.exe`. A parte `(myvenv) C:\Users\Name\djangogirls>` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você for digitar seus comandos.
+> **Observação:** Quando digitar o comando acima, lembre-se de digitar apenas a parte que começa em `django-admin.exe`. A parte `(myvenv) C:\Users\Name\djangogirls>` apresentada aqui é apenas um exemplo do que pode aparecer no seu terminal quando você digitar seus comandos.
 
 <!--endsec-->
 
-`django-admin` é um script que criará os diretórios e arquivos para você. Agora, você deve ter um diretório estrutura que se parece com isso:
+`django-admin` é um script que criará os diretórios e arquivos para você. Agora, você deve ter uma estrutura de diretório parecida com isso:
 
     djangogirls
     ├───manage.py
@@ -62,15 +62,15 @@ O arquivo `settings.py` contém a configuração do seu site.
 
 Lembra de quando falamos sobre um carteiro verificando onde entregar uma carta? O arquivo `urls.py` contém uma lista dos padrões usados por `urlresolver`.
 
-Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. Só precisamos lembrar de para não excluí-los por acidente!
+Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. Só precisamos lembrar de não excluí-los por acidentalmente!
 
-## Configurando
+## Mudando as configurações
 
 Vamos fazer algumas alterações no `mysite/settings.py`. Abra o arquivo usando o editor de código que você instalou anteriormente.
 
-**Observação:** Lembre-se que o `settings.py` é um arquivo comum, como qualquer outro. Você pode abri-lo de dentro do editor de código usando as ações de menu "Arquivo-> Abrir". Assim, você deve encontrá-lo na janela usual para selecionar arquivos e abrí-lo. Ou então, é possível abrir o arquivo navegando até o diretório do djangogirls e abrindo o arquivo com o botão direito. Uma vez clicado, selecione o seu editor de código preferido da lista. Selecionar o editor apropriado é importante uma vez que você pode ter outros programas instalados que podem abrir o arquivo, mas não editá-lo.
+**Observação:** Lembre-se de que o `settings.py` é um arquivo comum, como qualquer outro. Você pode abri-lo de dentro do editor de código usando as ações de menu "Arquivo-> Abrir". Assim, você deve encontrá-lo na janela usual para selecionar arquivos e abri-lo. Ou então, é possível abrir o arquivo navegando até o diretório do djangogirls e abrindo o arquivo com o botão direito. Uma vez clicado, selecione o seu editor de código preferido da lista. Selecionar o editor apropriado é importante uma vez que você pode ter outros programas instalados que podem abrir o arquivo, mas não editá-lo.
 
-Para começar, seria bom ter a hora correta no nosso site. Para isto, você configurar o fuso horário correto de onde está. Se você estiver no Brasil é bem provável que o fuso horário seja `America/Sao_Paulo` (aqui conhecido como horário de Brasília). Caso queira saber mais, vá para [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) e copie e cole o fuso horário correspondende à sua localização.
+Para começar, seria bom ter a hora correta no nosso site. Para isto, você configurar o fuso horário correto de onde está. Se você estiver no Brasil, é bem provável que o fuso horário seja `America/Sao_Paulo` (aqui conhecido como horário de Brasília). Caso queira saber mais, vá para [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) e copie e cole o fuso horário correspondende à sua localização.
 
 Em `settings.py`, localize a linha que contém `TIME_ZONE` e modifique para escolher seu próprio fuso horário:
 
@@ -80,7 +80,7 @@ Em `settings.py`, localize a linha que contém `TIME_ZONE` e modifique para esco
 TIME_ZONE = 'America/Sao_Paulo'
 ```
 
-Um código de idioma consiste da língua, por exemplo, `en` para inglês ou `pt` para português e o código do país, por exemplo, `br` para Brasil ou `pt` para a Portugal. Já que o inglês provavelmente não é sua língua nativa, você pode pode adicionar um novo código de país para deixar os botões padrão e notificações de Django em seu idioma. Assim, você teria por exemplo um botão "Cancel" traduzido para a língua da sua escolha (ex: "Cancelar" em português). O [Django vem com um monte de traduções já preparadas](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Um código de idioma se refere à língua, por exemplo, `en` para inglês ou `pt` para português e o código do país, por exemplo, `br` para Brasil ou `pt` para a Portugal. Já que o inglês provavelmente não é sua língua nativa, você pode pode adicionar um novo código de país para deixar os botões padrão e notificações de Django em seu idioma. Assim, você teria por exemplo um botão "Cancel" traduzido para a língua da sua escolha (ex: "Cancelar" em português). O [Django vem com um monte de traduções já preparadas](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 Se você quiser um idioma diferente do inglês, especifique o código de idioma alterando a seguinte linha:
 
@@ -90,7 +90,7 @@ Se você quiser um idioma diferente do inglês, especifique o código de idioma 
 LANGUAGE_CODE = 'pt-BR'
 ```
 
-Também precisamos adicionar o caminho para os arquivos estáticos. (Nós discutiremos tudo sobre arquivos estáticos e CSS mais adiante no tutorial.) Vá até o *final* do arquivo e, logo abaixo da linha com `STATIC_URL`, adicione uma nova variável chamada `STATIC_ROOT`:
+Também precisamos adicionar o caminho para os arquivos estáticos. (Discutiremos tudo sobre arquivos estáticos e CSS mais adiante no tutorial.) Vá até o *final* do arquivo e, logo abaixo da linha com `STATIC_URL`, adicione uma nova variável chamada `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site será validado como `['localhost', '127.0.0.1', '[::1]']`. Isso não corresponde ao nosso domínio no PythonAnywhere quando implantarmos a nossa aplicação, então mudamos a seguinte configuração:
+Quando `DEBUG` for `True` e `ALLOWED_HOSTS` estiver vazia, o domínio do site será validado como `['localhost', '127.0.0.1', '[::1]']`. Isso não corresponderá ao nosso domínio no PythonAnywhere quando implantarmos a nossa aplicação, então vamos mudamos a seguinte configuração:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -151,7 +151,7 @@ Para criar um banco de dados para o nosso blog, vamos executar o seguinte comand
       Applying sessions.0001_initial... OK
     
 
-E está pronto! Hora de iniciar o servidor web e ver se nosso site está funcionando!
+Pronto! Hora de iniciar o servidor web e ver se nosso site está funcionando!
 
 ## Iniciando o servidor web
 
@@ -176,7 +176,7 @@ Se você estiver no Windows e o comando falhar com `UnicodeDecodeError`, use o c
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Agora nós precisamos verificar se o nosso site está rodando. Abra seu browser (Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você utilizar) e digite o endereço:
+Agora, precisamos verificar se o nosso site está rodando. Abra seu browser (Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você utilizar) e digite o endereço:
 
 {% filename %}browser{% endfilename %}
 
@@ -190,7 +190,7 @@ Se você estiver com um Chromebook, sempre visite o servidor de teste acessando:
     https://django-girls-<your cloud9 username>.c9users.io
     
 
-Parabéns! Você criou seu primeiro site e o executou usando um servidor de web! Não é impressionante?
+Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
 
 ![Instalação funcionou!](images/install_worked.png)
 
@@ -198,6 +198,6 @@ Enquanto o servidor estiver rodando, o prompt do terminal não estará disponív
 
 > Nós revisamos como servidores web funcionam no capítulo **Como a Internet funciona**.
 
-Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal e execute o virtualenv. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C - botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
+Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal e execute o virtualenv. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C -- botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
 
-Pronto para o próximo passo? Está na hora de criar algum conteúdo!
+Pronta para o próximo passo? Está na hora de criar conteúdo!

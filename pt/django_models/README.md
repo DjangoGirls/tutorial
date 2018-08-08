@@ -1,16 +1,16 @@
 # Modelos do Django
 
-Queremos criar algo que armazene todos os posts em nosso blog. Mas para fazer isto temos que falar um pouco sobre `objects`.
+Queremos criar algo que armazene todos os posts em nosso blog. Mas para fazer isto, temos que falar um pouco sobre `objects`.
 
 ## Objetos
 
-Existe um conceito em programação chamado `programação orientada a objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, a gente pode modelar as coisas e definir como elas interagem umas com as outras.
+Existe um conceito em programação chamado `programação orientada a objetos`. A ideia é que ao invés de escrever tudo como uma sequência entediante de instruções de programação, possamos modelar as coisas e definir como elas interagem umas com as outras.
 
 Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos mostrar um exemplo.
 
-Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade seria vazia).
+Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade fosse vazia).
 
-`Gato` também realiza algumas ações: `ronronar`, `arranhar` ou `alimentar`-se (no qual podemos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades, como `sabor`).
+`Gato` também realiza algumas ações: `ronronar`, `arranhar` ou `alimentar`-se (no qual podemos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades como `sabor`).
 
     Gato
     --------
@@ -47,21 +47,21 @@ Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título
 
 Que tipo de ações podem ser feitas com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
 
-Então, nós precisaremos de um método `publicar (publish)`.
+Então, nós precisaremos de um método para publicar (`publish`).
 
-Como nós já sabemos o que queremos alcançar, vamos começar a modelá-lo no Django!
+Como já sabemos o que queremos alcançar, podemos começar a modelar em Django!
 
-## Modelo do Django
+## Modelos do Django
 
 Sabendo o que um objeto é, criamos um modelo no Django para a postagem do blog.
 
-Um modelo no Django é um tipo especial de objeto -- ele é salvo em um `banco de dados`. Um banco de dados é uma coleção de dados. Ele é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. Este é o banco de dados padrão Django -- e ele será o suficiente neste primeiro momento.
+Um modelo no Django é um tipo especial de objeto -- ele é salvo em um `banco de dados`. Um banco de dados é uma coleção de dados. Ele é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. Este é o banco de dados padrão do Django -- e ele será o suficiente neste primeiro momento.
 
 Você pode pensar em um modelo de banco de dados como uma planilha com colunas (campos) e linhas (dados).
 
 ### Criando uma aplicação
 
-Para manter tudo arrumado, vamos criar um aplicativo separado dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar um aplicativo precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
+Para manter tudo arrumado, vamos criar uma aplicação separada dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar uma aplicação, precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -94,7 +94,7 @@ Você vai notar que um novo diretório `blog` foi criado e que ele contém vári
         └── wsgi.py
     
 
-Depois de criar um app, também precisamos dizer ao Django que ele deve usá-lo. Fazemos isso no arquivo `mysite/settings.py`. Precisamos encontrar o `INSTALLED_APPS` e adicionar uma linha com `'blog',` logo acima do `]`. O resultado final ficará assim:
+Depois de criar uma aplicação, também precisamos dizer ao Django que ele deve usá-la. Fazemos isso no arquivo `mysite/settings.py`. Precisamos encontrar o `INSTALLED_APPS` e adicionar uma linha com `'blog',` logo acima do `]`. O resultado final ficará assim:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -110,11 +110,11 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Criando o modelo Post do nosso blog
+### Criando um modelo de postagem para o nosso blog
 
 No arquivo `blog/models.py` definimos todos os objetos chamados `Modelos` -- este é um lugar em que vamos definir nossa postagem do blog.
 
-Vamos abrir `blog/models.py`, remova tudo dele e escreva o código assim:
+Vamos abrir `blog/models.py`, remover tudo dele e escrever o código assim:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -140,7 +140,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Verifique que você usou dois caracteres de sublinhado (`_`) a cada lado de `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, chamamos de "dunder" (redução de "double-underscore" - sublinhado duplo em português).
+> Certifique-se de que usou dois caracteres de sublinhado (`_`) em cada lado de `str`. Esta convenção é utilizada frequentemente em Python e, muitas vezes, a chamamos de "dunder" (vem da expressão em inglês "double-underscore" - sublinhado duplo em português).
 
 Parece assustador, né? Mas não se preocupe, vamos explicar o que essas linhas significam!
 
@@ -161,13 +161,13 @@ Agora definimos as propriedades que comentamos acima: `title`, `text`, `created_
 
 Nós não explicaremos cada pedaço de código aqui pois isso levaria muito tempo. Você deve dar uma olhada na documentação do Django se quiser saber mais sobre campos de modelos e como definir outras coisas além das descritas acima (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-E sobre `def publish(self):`? É justamente o método `publish` que falamos anteriormente. `def` significa que se trata de uma função/método e que `publish` é seu nome. Você pode mudar o nome do método, se quiser. A regra para nomes que usamos é sempre letras minúsculas e sublinhados no lugar dos espaços em branco. Por exemplo, um método que calcula o preço médio poderia se chamar `calculate_average_price` (do inglês, calcular_preco_medio).
+E `def publish(self):`? Esse é justamente o método `publish` de que falamos anteriormente. `def` significa que se trata de uma função/método e que `publish` é seu nome. Você pode mudar o nome do método, se quiser. A regra para nomes é sempre usar letras minúsculas e no lugar dos espaços em branco, usar o caractere sublinhado (_). Por exemplo, um método que calcula o preço médio poderia se chamar `calculate_average_price` (do inglês, calcular_preco_medio).
 
 Métodos muitas vezes retornam (`return`) algo. Um exemplo disto é o método `__str__`. Neste caso, quando chamarmos `__str__()`, obteremos um texto (**string**) com o título do Post.
 
-Lembre-se também que ambos `def publish(self):`, e `def __str__(self):` são indentados para dentro da classe. E, como Python é sensível a espaços em branco, precisamos indentar todos os nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe, e você pode obter um comportamento inesperado.
+Lembre-se também de que tanto `def publish(self):` quanto `def __str__(self):` são endentados para dentro da classe. E porque Python é sensível a espaços em branco, precisamos endentar todos os nossos métodos para dentro da classe. Caso contrário, os métodos não pertencerão à classe e você poderá obter um comportamento inesperado.
 
-Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para sua monitora! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas espero que isto se pareça um pouco menos como mágica agora!
+Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para sua monitora! Sabemos que é complicado, especialmente porque você está aprendendo o que são objetos e funções ao mesmo tempo. Mas esperamos que isto se pareça um pouco menos com mágica agora!
 
 ### Criando tabelas para nossos modelos no banco de dados
 
