@@ -108,7 +108,7 @@ Como você pode ver, o computador acabou de mostrar seu nome de usuário na tela
 
 ## O Básico
 
-Cada sistema operacional tem o seu próprio conjunto de instruções para a linha de comando, então se certifique que você está seguindo as instruções do seu sistema operacional. Vamos tentar, certo?
+Cada sistema operacional tem o seu próprio conjunto de instruções para a linha de comando, então certifique-se de que você está seguindo as instruções do seu sistema operacional. Vamos tentar, certo?
 
 ### Pasta atual
 
@@ -177,7 +177,7 @@ Então, o que tem no seu computador? Seria legal descobrir. Vamos ver:
 
 * * *
 
-### Entrar em outra pasta
+### Entrando em outra pasta
 
 Agora vamos para a pasta Desktop:
 
@@ -291,7 +291,7 @@ Parabéns! :)
 
 ### Limpando
 
-Não queremos deixar uma bagunça, então vamos remover tudo o que fizemos até agora.
+Não queremos deixar uma bagunça, então vamos apagar tudo o que fizemos até agora.
 
 Primeiro, precisamos voltar para a pasta Desktop:
 
@@ -380,7 +380,7 @@ Pronto! Para ter certeza que a pasta foi excluída, vamos checar:
 
 <!--endsec-->
 
-### exit
+### Saindo
 
 Isso é tudo, por enquanto! Agora você pode fechar a janela do terminal, mas vamos fazer do jeito hacker, né? :)
 
