@@ -33,11 +33,11 @@ Sie sieht jetzt schon viel schöner aus!
 
 ## Statische Dateien in Django
 
-Schlussendlich werden wir einen genaueren Blick auf die Dinge werfen, die wir bisher **statische Dateien** genannt haben. Statische Dateien sind alle deine CSS- und Bilddateien. Ihr Inhalt hängt nicht vom Requestkontext ab, sondern gilt für alle Benutzer gleichermassen.
+Endlich werden wir einen genaueren Blick auf die Dinge werfen, die wir bisher **statische Dateien** genannt haben. Statische Dateien sind alle deine CSS- und Bilddateien. Ihr Inhalt hängt nicht vom Requestkontext ab, sondern gilt für alle Benutzer gleichermaßen.
 
 ### Wohin kommen die statischen Dateien für Django
 
-Django weiss schon wo die statischen Dateien für die integrierte "admin" App zu finden sind. Wir müssen nur noch die statischen Dateien für unsere `blog` App hinzufügen.
+Django weiss schon, wo die statischen Dateien für die integrierte "admin" App zu finden sind. Wir müssen nur noch die statischen Dateien für unsere `blog` App hinzufügen.
 
 Dies tun wir, indem wir einen Ordner namens `static` in der Blog-App erstellen:
 
