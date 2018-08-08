@@ -151,7 +151,7 @@ Para criar um banco de dados para o nosso blog, vamos executar o seguinte comand
       Applying sessions.0001_initial... OK
     
 
-E está pronto! Hora de iniciar o servidor web e ver se nosso site está funcionando!
+Pronto! Hora de iniciar o servidor web e ver se nosso site está funcionando!
 
 ## Iniciando o servidor web
 
@@ -176,7 +176,7 @@ Se você estiver no Windows e o comando falhar com `UnicodeDecodeError`, use o c
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Agora nós precisamos verificar se o nosso site está rodando. Abra seu browser (Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você utilizar) e digite o endereço:
+Agora, precisamos verificar se o nosso site está rodando. Abra seu browser (Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você utilizar) e digite o endereço:
 
 {% filename %}browser{% endfilename %}
 
@@ -190,7 +190,7 @@ Se você estiver com um Chromebook, sempre visite o servidor de teste acessando:
     https://django-girls-<your cloud9 username>.c9users.io
     
 
-Parabéns! Você criou seu primeiro site e o executou usando um servidor de web! Não é impressionante?
+Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
 
 ![Instalação funcionou!](images/install_worked.png)
 
@@ -198,6 +198,6 @@ Enquanto o servidor estiver rodando, o prompt do terminal não estará disponív
 
 > Nós revisamos como servidores web funcionam no capítulo **Como a Internet funciona**.
 
-Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal e execute o virtualenv. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C - botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
+Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal e execute o virtualenv. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C -- botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
 
-Pronto para o próximo passo? Está na hora de criar algum conteúdo!
+Pronta para o próximo passo? Está na hora de criar conteúdo!
