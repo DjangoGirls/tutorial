@@ -1,45 +1,47 @@
-# Como funciona a internet
+# Como a Internet funciona
 
+> Para leitoras em casa: este capítulo é abordado no vídeo [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc).
+> 
 > Este capítulo é inspirado na palestra "Como a Internet funciona" de Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-Apostamos que você usa a Internet todos os dias. Mas você sabe realmente o que acontece quando você digita um endereço como https://djangogirls.org em seu navegador e pressiona `Enter`?
+Apostamos que você usa a Internet todos os dias. Mas você sabe realmente o que acontece quando digita um endereço como https://djangogirls.org em seu navegador e aperta `Enter`?
 
-A primeira coisa que você precisa entender é que um site é só um monte de arquivos salvos em um disco rígido. Assim como acontece com os filmes, músicas ou fotos que você tem no computador. No entanto, existe uma parte que é exclusiva para sites: essa parte inclui código de computador chamado HTML.
+A primeira coisa que você precisa entender é que um site é só um monte de arquivos salvos em um disco rígido. Igual a seus filmes, músicas, ou imagens. No entanto, há uma parte que é exclusiva para sites: ela inclui códigos de computador chamados HTML.
 
-Se você não estiver familiarizada com programação, pode ser difícil compreender o HTML no começo, mas seu navegador web (como o Chrome, Safari, Firefox, etc) ama ele. Navegadores web são projetados para entender esse código, seguir suas instruções e apresentar todos esses arquivos de que seu site é feito, exatamente do jeito que você quer que eles sejam apresentados.
+Se você não estiver familiarizada com programação, pode ser difícil compreender o HTML no começo, mas seus navegadores da web (como o Chrome, Safari, Firefox, etc) amam ele. Os navegadores da Web são projetados para entender esse código, seguir suas instruções e apresentar esses arquivos de que seu site é feito, exatamente como você quer.
 
-Então, igual a todos os outros arquivos, os arquivos HTML precisam ser armazenados em um disco rígido. Para a internet, nós usamos especiais e poderosos computadores chamados de *servidores*. Eles não têm tela, mouse ou teclado, porque sua finalidade principal é armazenar dados e servi-los. É por isso que eles são chamados de *servidores*..--porque eles *servem*, a você, dados.
+Como qualquer arquivo, os arquivos HTML precisam ser armazenados num disco rígido. Para a internet, usamos poderosos computadores especiais chamados *servidores*. Eles não têm uma tela, um mouse ou um teclado, porque sua finalidade principal é armazenar dados e servi-los. É por isso que eles são chamados de *servidores* -- eles *servem* dados a você.
 
 OK, mas você quer saber com o quê a internet se parece, certo?
 
-Fizemos um desenho pra você! Veja:
+Fizemos um desenho para ajudar! Veja:
 
 ![Figura 1.1](images/internet_1.png)
 
-Parece uma bagunça, não é? Na verdade é uma rede de máquinas conectadas (os *servidores* mencionados acima). Centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos por todo o mundo! Para ver o quão complicada a internet é, você pode visitar um site (http://submarinecablemap.com/) que mostra um mapa com os cabos submarinos. Aqui está uma captura de tela do site:
+Que bagunça, né? Na verdade, a internet é uma rede de máquinas conectadas (os *servidores* mencionados acima). São centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! Para ver o quão complicada a internet é, você pode visitar um site (http://submarinecablemap.com/) que mostra o mapa com dos cabos submarinos. Aqui está um screenshot do site:
 
 ![Figura 1.2](images/internet_3.png)
 
-Fascinante, não? Mas, obviamente, não é possível ter um cabo que ligue todas as máquinas conectas na internet. Logo, para chegar em uma máquina (por exemplo aquela onde https://djangogirls.org está salva), nós precisamos passar uma requisição através de muitas e muitas máquinas diferentes.
+Fascinante, né? Mas, obviamente, não é possível ter um fio ligando todas as máquina conectadas à internet. Logo, para alcançar uma máquina (por exemplo aquela onde https://djangogirls.org está salva), precisamos passar uma requisição por muitas máquinas diferentes.
 
-O que parece com isso:
+É algo assim:
 
 ![Figura 1.3](images/internet_2.png)
 
-Imagine que, quando você digita https://djangogirls.org, você envia uma carta que diz: "Queridas djangoGirls.org, eu desejo ver o site da Django Girls. Envie pra mim, por favor!"
+Imagine que quando digita http://djangogirls.org, você envia uma carta que diz: "Queridas Django Girls, eu desejo ver o site djangogirls.org. Enviem-no para mim, por favor!"
 
-Sua carta vai para a agência dos correios mais próxima de você. Depois vai para outra que é um pouco mais perto de seu destinatário, depois para outra e outra, até que ela seja entregue ao seu destino. A única diferença é que, se você enviar muitas cartas (*pacotes de dados*) para o mesmo lugar, cada carta pode passar por diferentes agências de correios (*roteadores*). Isso depende de como elas são distribuídas em cada agência.
+Sua carta vai para a agência dos correios mais próxima de você. Então, ela vai para outra agência um pouco mais perto do destinatário e, em seguida, para outra e outra até ser entregue. A única coisa diferente é que se você enviar muitas cartas (*pacotes de dados*) para o mesmo lugar, elas podem passar por agências totalmente diferentes (*roteadores*). Isso depende de como elas são distribuídas em cada agência.
 
 ![Figura 1.4](images/internet_4.png)
 
 Sim, é simples assim. Você envia mensagens e espera alguma resposta. Claro, ao invés de papel e caneta você usa bytes de dados, mas a ideia é a mesma!
 
-Em vez de endereços com o nome da rua, cidade, código postal e nome do país, nós usamos endereços IP. Primeiro, seu computador pede ao DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para um endereço IP. O funcionamento dele se parece um pouco com as antigas listas telefônicas onde você pode olhar para o nome da pessoa que quer entrar em contato e achar o seu número de telefone e endereço.
+Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, na internet usamos endereços de IP. Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para um endereço de IP. Isso funciona mais ou menos como as antigas listas telefônicas em que você podia procurar o número e endereço da pessoa que queria contactar.
 
-Quando você envia uma carta, ela precisa ter certas características para ser entregue corretamente: um endereço, selo, etc. Você também usa uma linguagem que o receptador compreende, certo? O mesmo acontece com os *pacotes de dados* que você envia para ver um site: você usa um protocolo chamado HTTP (Hypertext Transfer Protocol - Protocolo de Transferência de Hipertexto).
+Quando você envia uma carta, ela precisa ter certas características para ser entregue corretamente: um endereço, um selo, etc. E você usa uma linguagem que o destinatário compreende, certo? O mesmo se aplica aos *pacotes de dados* que você envia para acessar um site. Nós usamos um protocolo chamado HTTP (Hypertext Transfer Protocol).
 
-Então, basicamente, quando você tem um site, você precisa ter um *servidor* (máquina) onde ele fica hospedado. O *servidor* está à espera de quaisquer *requisições* recebidas (cartas que solicitam ao servidor o envio do seu site) e ele envia de volta seu site (em outra carta).
+Então, de forma simplificada, um site precisa ter um *servidor* (máquina) onde ele vive. Quando o *servidor* recebe uma *solicitação* de entrada (numa carta), ele envia em respota seu website (em outra carta).
 
-Como este é um tutorial de Django, você vai perguntar o que o Django faz. Quando você envia uma resposta, nem sempre você quer enviar a mesma coisa para todo mundo. Será muito melhor se suas cartas forem personalizadas, especialmente para a pessoa que acabou de escrever para você, certo? O Django ajuda você a criar essas personalizadas e interessantes cartas. :)
+Este é um tutorial de Django, então você deve estar imaginando o que o Django faz. Quando envia uma resposta, nem sempre você quer mandar a mesma coisa para todo mundo. É muito melhor que as cartas sejam personalizadas, especialmente para a pessoa que acabou de nos escrever, né? O Django nos ajuda a criar essas cartas personalizadas. :)
 
 Chega de falar, é hora de criar!
