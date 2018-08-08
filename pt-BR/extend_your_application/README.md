@@ -101,7 +101,7 @@ Mas este código tem um problema. Se não houver nenhum `Post` com a `chave prim
 
 Não queremos isso! Mas é claro que o Django tem algo para lidar com isso por nós: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro -- `Page Not Found 404` (página não encontrada).
 
-![Page not found](images/404_2.png)
+![Página não encontrada](images/404_2.png)
 
 A boa notícia é que você pode criar sua própria página de `Page not found` e torná-la tão bonita quanto quiser. Mas isso não é super importante agora, então vamos deixar pra lá.
 
@@ -129,7 +129,7 @@ def post_detail(request, pk):
 
 É isso aí, está na hora de atualizar a página: http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![View da lista de posts](images/post_list2.png)
 
 Funcionou! Mas o que acontece quando você clica em um link no título de um post do blog?
 
@@ -137,11 +137,11 @@ Funcionou! Mas o que acontece quando você clica em um link no título de um pos
 
 Ah não! Outro erro! Mas nós já sabemos como lidar com isso, né? Precisamos adicionar um template!
 
-## Criando um template de para os detalhes do post
+## Criando um template para os detalhes do post
 
 Vamos criar um arquivo em `blog/templates/blog` chamado `post_detail.html`.
 
-It will look like this:
+Ele vai ter essa cara:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -163,7 +163,7 @@ It will look like this:
 
 Mais uma vez estamos estendendo `base.html`. No bloco `content`, queremos exibir a data de publicação (published_date) do post (se houver), título e texto. Mas ainda temos algumas coisas importantes para discutir, certo?
 
-{% raw %}`{% if ... %} ... {% endif %}` é uma de template que podemos usar quando queremos conferir alguma coisa. (Lembra de `if ... else ..` que vimos no capítulo **Introdução ao Python**?) Aqui queremos conferir se a `published_date` de um post não está vazia.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` é uma tag de template que podemos usar quando queremos conferir alguma coisa. (Lembra de `if ... else ..` que vimos no capítulo **Introdução ao Python**?) Aqui queremos conferir se a `published_date` de um post não está vazia.{% endraw %}
 
 Pronto, podemos atualizar nossa página e ver se aquele `Page not found` sumiu.
 
@@ -193,7 +193,7 @@ Agora, em um [console Bash do PythonAnywhere](https://www.pythonanywhere.com/con
     [...]
     
 
-(Lembre-se de substituir o `<your-pythonanywhere-username>` com seu username do PythonAnywhere, sem os símbolos < e >).
+(Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
 
 ## Atualizando os arquivos estáticos no servidor
 
@@ -208,8 +208,8 @@ Comece ativando seu virtualenv, se ele já não estiver ativo (para isso, o Pyth
     [...]
     
 
-O comando `manage.py collectstatic` é mais ou menos como `manage.py migrate`. Fazemos algumas mudanças no nosso código e dizemos ao Django que as aplique (*apply*) à coleção de arquivos estáticos, ou ao banco de dados.
+O comando `manage.py collectstatic` é mais ou menos como `manage.py migrate`. Agora, fazemos algumas mudanças no nosso código e dizemos ao Django que as aplique (*apply*) à coleção de arquivos estáticos, ou ao banco de dados.
 
-De qualquer forma, estamos prontas para ir para a[aba Web](https://www.pythonanywhere.com/web_app_setup/) e clicar em **Reload** (atualizar).
+De qualquer forma, estamos prontas para ir para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e clicar em **Reload** (atualizar).
 
 Deve estar pronto! Arrasou :)
