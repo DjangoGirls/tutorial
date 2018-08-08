@@ -14,7 +14,7 @@ Os nomes de alguns arquivos e diretórios são muito importantes para o Django. 
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-No MacOS ou no console do Linux, você pode rodar o comando abaixo (**não esqueça de adicionar o ponto `.` no final</0!>):</p> 
+No MacOS ou no console do Linux, rode o comando abaixo (**não esqueça de adicionar o ponto `.` no final</0!>):</p> 
 
 {% filename %}command-line{% endfilename %}
 
