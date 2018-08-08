@@ -57,7 +57,7 @@ Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `p
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 ```python
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
