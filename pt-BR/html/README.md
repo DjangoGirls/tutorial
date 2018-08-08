@@ -1,6 +1,6 @@
 # Introdução ao HTML
 
-Você pode se perguntar: e o que é um template?
+Você pode se perguntar: o que é um template?
 
 Template é um arquivo que nós podemos reutilizar para apresentar diferentes informações em um formato consistente – por exemplo, você pode usar um template para te ajudar a escrever uma carta, pois mesmo que cada carta contenha mensagens diferentes e ser endereçada a pessoas diferentes, elas estarão compartilhando o mesmo formato.
 
