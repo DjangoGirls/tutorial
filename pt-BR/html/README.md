@@ -2,40 +2,40 @@
 
 Você pode se perguntar: o que é um template?
 
-Template é um arquivo que nós podemos reutilizar para apresentar diferentes informações em um formato consistente – por exemplo, você pode usar um template para te ajudar a escrever uma carta, pois mesmo que cada carta contenha mensagens diferentes e ser endereçada a pessoas diferentes, elas estarão compartilhando o mesmo formato.
+Template é um arquivo que nós podemos reutilizar para apresentar diferentes informações em um formato consistente – por exemplo, você pode usar um template para te ajudar a escrever uma carta, pois mesmo que cada carta contenha mensagens diferentes e possa estar endereçada a pessoas diferentes, elas compartilharão o mesmo formato.
 
-O formato do template do Django é descrito em uma linguagem chamada HTML (esse é o mesm HTML que mencionamos no primeiro capítulo **Como a Internet funciona**).
+O formato do template do Django é descrito em uma linguagem chamada HTML (esse é o mesm HTML que mencionamos no primeiro capítulo -- **Como a Internet funciona**).
 
 ## O que é HTML?
 
 HTML é um código interpretado pelo seu navegador - como Chrome, Firefox ou Safari - para exibir uma página web ao usuário.
 
-HTML significa "HyperText Markup Language". **HiperText** significa que é um tipo de texto que suporta hiperlinks entre páginas. **Marcação** nada mais é que marcar um documento com códigos que dizem para alguém (nesse caso, o navegador web) como a página deverá ser interpretada. Código em HTML é feito com **tags**, cada uma começando com `<` e terminando com `>`. Estas tags representam **elementos de marcação**.
+HTML significa "HyperText Markup Language". **HiperText** significa que é um tipo de texto que suporta hiperlinks entre páginas. **Marcação** nada mais é que marcar um documento com códigos que dizem para alguém (nesse caso, o navegador web) como a página deverá ser interpretada. Códigos em HTML são feitos com **tags**, cada uma começando com `<` e terminando com `>`. Estas tags representam **elementos de marcação**.
 
 ## Seu primeiro template!
 
 Criar um template significa criar um arquivo de template. Tudo é um arquivo, certo? Provavelmente você já deve ter notado isso.
 
-Os templates são salvos no diretório `blog/templates`. Assim, crie um diretório chamado `templates` dentro do diretório do seu blog. Em seguida, crie outro diretório chamado `blog` dentro da diretório templates:
+Os templates são salvos no diretório `blog/templates`. Então, crie um diretório chamado `templates` dentro do diretório do seu blog. Em seguida, crie outro diretório chamado `blog` dentro do diretório templates:
 
     blog
     └───templates
         └───blog
     
 
-(Você deve estar se perguntando porque nós precisamos de dois diretórios chamados `blog` - como você descobrirá mais para frente, essa é uma convenção que facilita a nossa vida quando as coisas começarem a ficar mais complicadas.)
+(Você deve estar se perguntando porque nós precisamos de dois diretórios chamados `blog` - como você descobrirá mais para frente, essa é uma convenção que facilita a nossa vida quando as coisas começam a ficar mais complicadas.)
 
 E agora nós criamos o arquivo `post_list.html` (deixe-o em branco por enquanto) dentro do diretório `blog/templates/blog`.
 
-Veja como o nosso site está se parecendo agora: http://127.0.0.1:8000/
+Veja como o nosso site está agora: http://127.0.0.1:8000/
 
 > Se você ainda tem um erro `TemplateDoesNotExist`, tente reiniciar o seu servidor. Entre na linha de comando, interrompa o servidor pressionando Ctrl+C (Control seguido da tecla C, juntas) e reinicie-o rodando `python manage.py runserver`.
 
 ![Figura 11.1](images/step1.png)
 
-Acabaram-se os erros! Parabéns :) Entretanto, nosso site não mostra nada a não ser uma página em branco. Isso porque o nosso template está vazio. Então precisamos consertar isso.
+Acabaram-se os erros! Uhuu :) Entretanto, nosso site não mostra nada a não ser uma página em branco. Isso acontece porque o nosso template está vazio. Precisamos consertar isso.
 
-Adicione a seguinte linha dentro do template:
+Adicione a seguinte linha ao template:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -48,14 +48,14 @@ Adicione a seguinte linha dentro do template:
 </html>
 ```
 
-Como nosso site se parece agora? Visite a página descobrir: http://127.0.0.1:8000/
+Como está o nosso site agora? Visite a página descobrir: http://127.0.0.1:8000/
 
 ![Figura 11.2](images/step3.png)
 
 Funcionou! Bom trabalho :)
 
-* A tag mais básica, `<html>`, estará sempre no começo de qualquer página da web, assim como, `</html>` sempre estará no fim. Como você pode ver, todo o conteúdo de um website se encontra entre a tag de início `<html>` e entre a tag de fim `</html>`
-* `<p>` é a tag que denomina parágrafos; `</p>` determina o fim de cada parágrafo
+* A tag mais básica, `<html>`, estará sempre no começo de qualquer página da web, assim como, `</html>` sempre estará no fim. Todo o conteúdo de um website se encontra entre a tag de início `<html>` e a tag de fim `</html>`
+* `<p>` é a tag que inicia um parágrafos; `</p>` determina o fim de um parágrafo
 
 ## "Head" e "body"
 
