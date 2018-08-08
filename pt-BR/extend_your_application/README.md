@@ -44,11 +44,11 @@ A parte `post_detail` significa que o Django espera uma URL no arquivo `blog/url
 
 E quanto ao `pk=post.pk`? `pk` é uma abreviação de "primary key" (do inglês chave primária), que é um identificador único de cada entrada em um banco de dados. Uma vez que não especificamos a chave primária em nosso modelo de `Post`, o Django cria uma para nós (que por padrão, é um número que incrementa sequencialmente a partir de 1, 2, 3, etc) e a adiciona como um campo chamado `pk` em cada um dos nossos posts. Acessamos a chave primária escrevendo `post.pk`, do mesmo modo que podemos acessar outros campos (`title`, `author`, etc.) no nosso objeto de `Post`!
 
-Agora, quando formos para: http://127.0.0.1:8000/ veremos um erro (como esperado, já que existe uma URL e nem uma *view* para `post_detail`). Vai se parecer com isso:
+Agora, quando formos para: http://127.0.0.1:8000/, veremos um erro (como esperado, já que existe uma URL, mas não uma *view* para `post_detail`). Vai se parecer com isso:
 
 ![erro NoReverseMatch](images/no_reverse_match2.png)
 
-## Criando uma URL para página de detalhes de um post
+## Criando uma URL para a página de detalhes de um post
 
 Vamos criar uma URL em `urls.py` para a nossa `post_detail` *view*!
 
@@ -72,12 +72,12 @@ urlpatterns = [
 A parte `post/<int:pk>/` especifica um padrão de URL – vamos explicar:
 
 - `post/` significa apenas que a URL deve começar com a palavra **post** seguida por **/**. Até aqui, tudo bem.
-- `<int:pk>` – essa parte é um pouco mais complicada. Ela nos diz que o Django espera um objeto do tipo inteiro e que vai transferí-lo para a view como uma variável chamada `pk`.
+- `<int:pk>` – essa parte é um pouco mais complicada. Ela nos diz que o Django espera um objeto do tipo inteiro e que vai transferi-lo para a view como uma variável chamada `pk`.
 - `/` – por fim, precisamos adicionar uma **/** ao final da nossa URL.
 
 Isso significa que se você digitar `http://127.0.0.1:8000/post/5/` em seu navegador, o Django vai entender que você está procurando uma *view* chamada `post_detail` e vai transferir a informação de que `pk` é igual a `5` para essa *view*.
 
-Legal, nós adicionamos um novo padrão de URL para `blog/urls.py`! Vamos atualizar a página: http://127.0.0.1:8000 / Boom! O servidor parou de funcionar de novo. Dê um olhada no console - como esperado, há ainda outro erro!
+Legal, adicionamos um novo padrão de URL para `blog/urls.py`! Vamos atualizar a página: http://127.0.0.1:8000 / Boom! O servidor parou de funcionar de novo. Dê um olhada no console -- como esperado, há ainda outro erro!
 
 ![AttributeError](images/attribute_error2.png)
 
@@ -85,9 +85,9 @@ Você lembra qual é o próximo passo? Claro: adicionar uma view!
 
 ## Adicionando a view de detalhes do post
 
-Desta vez, a nossa *view* recebe um parâmetro extra: `pk`. Nossa *view* precisa pegá-lo, certo? Então vamos definir nossa função como `def post_detail (request, pk):`. Precisamos usar exatamente o mesmo nome que especificamos em urls (`pk`). Omitir essa variável é errado e resultará em um erro!
+Desta vez, a nossa *view* recebe um parâmetro extra: `pk`. Nossa *view* precisa pegá-lo, certo? Então vamos definir nossa função como `def post_detail (request, pk):`. Precisamos usar exatamente o mesmo nome que especificamos em urls (`pk`). Omitir essa variável é incorreto e resultará em um erro!
 
-Agora queremos receber apenas um post do blog. Para isso, podemos usar QuerySets como este:
+Agora, queremos receber apenas um post do blog. Para isso, podemos usar queries (buscas) como esta:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -95,15 +95,15 @@ Agora queremos receber apenas um post do blog. Para isso, podemos usar QuerySets
 Post.objects.get(pk=pk)
 ```
 
-Mas este código tem um problema. Se não houver nenhum `Post` com a `chave primária` (`pk`) fornecida teremos um erro horroroso!
+Mas este código tem um problema. Se não houver nenhum `Post` com a `chave primária` (`pk`) fornecida, teremos um erro horroroso!
 
 ![erro DoesNotExist](images/does_not_exist2.png)
 
-Não queremos isso! Mas é claro que o Django tem algo para lidar com isso por nós: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro - `Page Not Found 404` (página não encontrada).
+Não queremos isso! Mas é claro que o Django tem algo para lidar com isso por nós: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro -- `Page Not Found 404` (página não encontrada).
 
 ![Page not found](images/404_2.png)
 
-A boa notícia é que você pode criar sua própria página de `Page not found` e torná-la tão bonita quanto quiser. Mas isso não é super importante agora, então nós vamos deixar pra lá.
+A boa notícia é que você pode criar sua própria página de `Page not found` e torná-la tão bonita quanto quiser. Mas isso não é super importante agora, então vamos deixar pra lá.
 
 Hora de adicionar uma *view* ao nosso arquivo `views.py`!
 
