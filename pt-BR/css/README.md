@@ -12,7 +12,7 @@ Mas não queremos começar do zero de novo, né? Mais uma vez, usaremos algo que
 
 Bootstrap é um dos frameworks de HTML e CSS mais populares para desenvolver websites mais bonitinhos: https://getbootstrap.com/
 
-Foi escrito por programadores que trabalharam no Twitter. Agora é desenvolvido por voluntários de todo o mundo!
+Foi escrito por programadores que já trabalharam no Twitter e agora é desenvolvido por voluntários de todo o mundo!
 
 ## Instalar o Bootstrap
 
