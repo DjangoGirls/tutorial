@@ -410,7 +410,7 @@ Aqui vai uma lista de alguns comandos úteis:
 
 | Comando (Windows) | Comando (Mac OS / Linux) | Descrição                     | Exemplo                                           |
 | ----------------- | ------------------------ | ----------------------------- | ------------------------------------------------- |
-| saindo            | saindo                   | Fecha a janela                | **saindo**                                        |
+| exit              | exit                     | Fecha a janela                | **exit**                                          |
 | cd                | cd                       | Muda a pasta                  | **cd test**                                       |
 | cd                | pwd                      | Mostra o diretório atual      | **cd** (Windows) ou **pwd** (Mac OS / Linux)      |
 | dir               | ls                       | Lista as pastas e/ou arquivos | **dir**                                           |
