@@ -97,9 +97,9 @@ post変数がさっきと違って、`{{ post.title }}` や `{{ post.text }}` �
     [...]
     
 
-* 最後に[ブラウザのタブ](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。更新が反映されています！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
+* 最後に[Web tab](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。更新が反映されています！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
 
-おめでとうございます！よくできました! これができたら、Django adminとして新しい投稿を追加しましょう（published_dateを忘れないで！）。PythonAnywhereサイトのDjango管理者であることを確認してください（https://yourname.pythonanywhere.com/admin）。それから、投稿したものがそこに見えるか、リロードしましょう。
+おめでとうございます！よくできました! これができたら、Django adminとして新しい投稿を追加しましょう（published_dateを忘れないで！）。PythonAnywhereサイトのDjango管理者であることを確認してください（https://yourname.pythonanywhere.com/admin ）。それから、投稿したものがそこに見えるか、リロードしましょう。
 
 動くのが楽しくなってきたでしょう？少しパソコンから離れて、休憩しましょう：）
 
