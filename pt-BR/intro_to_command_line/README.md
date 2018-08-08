@@ -1,18 +1,18 @@
 # Introdução à linha de comando
 
-> Para as leitoras em casa: este capítulo é coberto no vídeo [ Sua nova amiga: a linha de comando ](https://www.youtube.com/watch?v=jvZLWhkzX-8).
+> Para as leitoras em casa: este capítulo é coberto no vídeo [Sua nova amiga: a linha de comando](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
 É emocionante, não?! Em poucos minutos você vai escrever sua primeira linha de código! :)
 
-**Deixe-nos apresentá-la à sua primeira nova amiga: a linha de comando!**
+**Vamos apresentá-la à sua primeira nova amiga: a linha de comando!**
 
 As etapas a seguir mostraram a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas realmente é apenas um prompt esperando por comandos de você.
 
-> **Observação** Note que ao longo deste livro intercalamos o uso dos termos 'diretório' e 'pasta', mas eles significam a mesma coisa.
+> **Observação:** Note que ao longo deste tutorial, intercalamos o uso dos termos 'diretório' e 'pasta', mas eles significam a mesma coisa.
 
 ## O que é a linha de comando?
 
-A janela, que geralmente é chamada de **linha de comando** ou **interface de linha de comando**, é uma aplicação de texto para ver e manipular arquivos de seu computador. É como se fosse o Windows Explorer ou o Finder no Mac, porém sem a interface gráfica. Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
+A janela, que geralmente é chamada de **linha de comando** ou **interface de linha de comando**, é uma aplicação de texto para ver e manipular arquivos em seu computador. É comoo Windows Explorer ou o Finder no Mac, mas sem a interface gráfica. Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
 
 ## Abra a interface de linha de comando
 
@@ -20,7 +20,7 @@ Para começar alguns experimentos, precisamos abrir a nossa interface de linha d
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Vá para o Menu iniciar → Sistema do Window → Prompt de comando.
+Vá para o Menu iniciar → Sistema do Windows → Prompt de comando.
 
 > Em versões antigas do Windows, procure em Menu iniciar → Todos programas → Acessórios → Prompt de comando.
 
@@ -68,7 +68,7 @@ Cada comando será antecedido por este sinal e um espaço, mas você não precis
 
 > Uma pequena observação: pode ser que apareça algo como `C:\Users\ola>` ou `Olas-MacBook-Air:~ ola$` antes do cursor e isso está 100% correto.
 
-A parte que vai até e inclui o `$` ou o `>` é chamada de *prompt de linha de comando*, ou *prompt* de forma breve. Ele está pedindo que você digite algo.
+A parte que vai até e inclui o `$` ou o `>` é chamada de *prompt de linha de comando*, ou *prompt*, de forma breve. Ele está pedindo que você digite algo.
 
 No tutorial, quando queremos que você digite um comando, nós incluiremos o `$` ou `>` e algumas vezes algum texto adicional à esquerda. Você pode ignorar o que está à esquerda e apenas digitar o comando que inicia após o prompt.
 
@@ -104,7 +104,7 @@ E então pressione a tecla `enter`. Este é o nosso resultado:
 
 Como você pode ver, o computador acabou de mostrar seu nome de usuário na tela. Legal, né? :)
 
-> Tente escrever cada comando, não copie e cole. Assim você vai se lembrar melhor dos comandos!
+> Tente escrever cada comando, não copie e cole. Assim você vai se lembrar melhor deles!
 
 ## O Básico
 
