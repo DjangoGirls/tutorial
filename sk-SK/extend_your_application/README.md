@@ -59,7 +59,7 @@ Vytvorme URL v súbore `blog/urls.py` tak, aby odkazoval Django na *view* nazvan
 {% filename %}{{ warning_icon }} blog/templates/blog/post_urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
