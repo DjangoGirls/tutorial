@@ -1,8 +1,8 @@
 # Estendendo os templates
 
-Outra coisa boa que o Django tem pra você é o **template extending**. O que isso significa? Isso significa que você pode usar as mesmas partes do seu HTML em diferentes páginas do seu site.
+Outra coisa boa que o Django tem para você é o **template extending** - extensão de templates. O que isso significa? Significa que você pode usar as mesmas partes do seu HTML em diferentes páginas do seu site.
 
-Templates ajudam quando você quer usar a mesma informação ou layout em mais de um lugar. Você não precisa se repetir em todos os arquivos. E se você quiser mudar algo, você não precisa fazê-lo em todos os templates, apenas em um!
+Templates ajudam quando você quer usar a mesma informação ou layout em mais de um lugar. Você não precisa se repetir em todos os arquivos. E, caso queira mudar algo, você não precisa fazê-lo em todos os templates, apenas em um!
 
 ## Crie um template base
 
@@ -17,7 +17,7 @@ Vamos criar um arquivo `base.html` na pasta `blog/templates/blog/`:
                 post_list.html
     
 
-Abra-o e copie tudo que está no arquivo `post_list.html` para `base.html`, desse jeito:
+Em seguida, abra o arquivo criado e copie tudo que está no arquivo `post_list.html` para `base.html`, desse jeito:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
