@@ -165,30 +165,30 @@ Antes de tudo, vamos ver que arquivos foram modificados desde que nós fizemos a
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Assegure-se de que você está no diretório `djangogirls` e vamos dizer ao `git` para incluir todas as mudanças feitas nele:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Nota** `..--all` significa que `git` também irá reconhecer se você tiver excluído arquivos (por padrão, ele só reconhece arquivos novos/modificados). Lembre-se também (do capítulo 3) que `.` significa o diretório atual.
+> **Observação:** `..--all` significa que o `git` também vai reconhecer se você tiver excluído arquivos (por padrão, ele só reconhece arquivos novos/modificados). Lembre-se também (do capítulo 3) que `.` significa o diretório atual.
 
-Antes de fazermos o upload de todos os arquivos, vamos verificar quais arquivos o `git` enviará (todos os arquivos marcados para upload pelo `git` aparecerão em verde):
+Antes de fazermos o upload de todos os arquivos, vamos verificar quais deles o `git` enviará (todos os arquivos marcados para upload pelo `git` aparecerão em verde):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Estamos quase lá! Agora é hora de dizer ao git para salvar essa modificação em seu histórico. Daremos a ele uma "mensagem de commit" onde descrevemos as modificações que foram feitas. Você pode escrever o que você quiser agora, mas é mais útil se você escrever algo descritivo para que possa se lembrar das coisas que fez no futuro.
+Estamos quase lá! Agora é hora de dizer ao git para salvar essa modificação em seu histórico. Daremos a ele uma "mensagem de commit" em que descrevemos as modificações que foram feitas. Você pode escrever o que quiser agora, mas é mais útil escrever algo descritivo que te ajude no futuro a lembrar das coisas que fez.
 
 {% filename %}command-line{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Certifique-se que você usou aspas duplas para delimitar a mensagem do commit.
+> **Observação:** Certifique-se de que você usou aspas duplas para delimitar a mensagem do commit.
 
 Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
 
@@ -199,7 +199,7 @@ Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
 
 ### Baixe seu novo código no PythonAnywhere e recarregue o seu aplicativo da web
 
-* Abra a [página de consoles do PythonAnywhere](https://www.pythonanywhere.com/consoles/) e vá para o seu **console Bash** (ou inicie um novo). Em seguida, execute:
+* Abra a [página de consoles do PythonAnywhere](https://www.pythonanywhere.com/consoles/) e vá para o seu **console do Bash** (ou inicie um novo). Em seguida, execute:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -208,10 +208,10 @@ Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
     [...]
     
 
-(Lembre-se de substituir o `<your-pythonanywhere-username>` com seu username do PythonAnywhere, sem os símbolos < e >).
+(Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
 
-E veja seu código sendo baixado. Se você quiser verificar que ele já baixou, pode ir para a **aba Files** e ver seu código no PythonAnywhere.
+E veja seu código sendo baixado. Se você quiser verificar se ele já baixou, pode ir para a **aba Files** e ver seu código no PythonAnywhere.
 
-* Finalmente, pule para a aba [Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em seu aplicativo.
+* Finalmente, pule para a aba [Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em sua aplicação.
 
 Sua atualização deve estar no ar! Vá em frente e atualize seu site no navegador. As alterações devem estar visíveis. :)
