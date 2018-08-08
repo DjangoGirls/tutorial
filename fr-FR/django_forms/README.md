@@ -187,7 +187,7 @@ def post_new(request):
 
 Lorsque nous envoyons notre formulaire, nous revenons à la même vue. Cependant, nous récupérons les données dans `request`, et plus particulièrement dans `request.POST` (le nom "POST" n'a aucun lien avec nos "posts" de blog : il est lié au type de requête effectué à l'envoi des données). Rappelez-vous : nous avions défini la variable `method="POST"` dans le fichier HTML qui contient notre `<form>`. Tous les champs du formulaire se trouvent maintenant dans `request.POST`. Veillez à ne pas renommer `POST`par autre chose (la seule autre valeur autorisée pour `method` est `GET`, mais nous n'avons pas le temps d'expliquer la différence ici).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. Pour gérer ces deux cas, nous allons utiliser une condition `if` (si):
+So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. Pour gérer ces deux cas, nous allons utiliser une condition `if` (si) :
 
 {% filename %}blog/views.py{% endfilename %}
 
