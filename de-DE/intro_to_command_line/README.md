@@ -220,7 +220,7 @@ Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
 <!--endsec-->
 
-Hier ist es!
+Passt!
 
 > Pro-Tipp: Wenn du `cd D` tippst und dann `tab` auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit "D" beginnt, drücke die `tab`-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.
 
@@ -267,6 +267,7 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
     $ cd practice
     $ mkdir test 
     $ ls test
+    test
     
 
 <!--endsec-->
