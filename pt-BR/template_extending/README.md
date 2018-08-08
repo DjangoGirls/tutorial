@@ -102,9 +102,9 @@ Agora salve `base.html` e abra seu `blog/templates/blog/post_list.html` novament
 {% endfor %}
 ```
 
-Queremos usar isso como parte do nosso modelo para todos os blocos de conteúdo. É hora de adicionar etiquetas de bloco para este arquivo!
+Queremos usar isso como parte do nosso template para todos os blocos de conteúdo. É hora de adicionar as tags (etiquetas) de blocos neste arquivo!
 
-{% raw %}Você quer que sua etiqueta de bloco coincida com a etiqueta no seu arquivo `base.html`. Você também quer que inclua todo o código que pertence aos seus blocos de conteúdo. Para isso, coloque tudo entre `{% block content %}` e `{% endblock %}`. Assim:{% endraw %}
+{% raw %}Você vai querer que sua etiqueta de bloco coincida com a etiqueta no seu arquivo `base.html`. Você também deve incluir todo o código que pertence aos seus blocos de conteúdo. Para isso, coloque tudo entre `{% block content %}` e `{% endblock %}`. Assim:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ Queremos usar isso como parte do nosso modelo para todos os blocos de conteúdo.
 {% endblock %}
 ```
 
-Só resta uma coisa. Precisamos ligar estes dois modelos juntos. Isto é o que significa 'estender modelos'! Vamos fazer isso adicionando uma etiqueta de extensão no início do arquivo. Assim:
+Só está faltando uma coisa. Precisamos conectar estes dois templates juntos. Isto é o que significa 'estender templates'! Vamos fazer isso adicionando uma etiqueta de extensão no início do arquivo. Assim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Só resta uma coisa. Precisamos ligar estes dois modelos juntos. Isto é o que s
 {% endblock %}
 ```
 
-É isso! Veja se o seu site ainda está funcionando direito. :)
+É isso! Veja se o seu site ainda está funcionando corretamente. :)
 
 > Se você receber o erro `TemplateDoesNotExist`, isso significa que não há um arquivo em `blog/base.html` e você está rodando o `runserver` no console. Tente encerrá-lo (apertando Ctrl+C - as teclas Control e C juntas) e reiniciá-lo rodando o comando `python manage.py runserver`.
