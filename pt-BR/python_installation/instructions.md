@@ -6,11 +6,11 @@ Django é escrito em Python. Precisamos dele para fazer qualquer coisa no Django
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Usuárias de Windows: primeiro, verifique se o computador está executando a versão 32-bit ou a versão 64-bit do Windows. Faça isso pressionando a tecla do windows no seu teclado (aquela com a janela do windows) + a tecla Pause/Break. Feito isso, uma tela abrirá com as informações do seu windows. Nessa tela, verifique a seção "Tipo de sistema" e confira que versão está sendo executada. Você pode baixar o Python para Windows no website https://www.python.org/downloads/windows/. Clique no link: "Versão Mais Recente Python 3 - Python x.x.x". Se seu computador está executando a versão **64-bit** do windows, baixe o **instalador executável do Windows x86-64**. Caso contrário, baixe o **instalador executável x86 do Windows**. Depois de baixar o instalador, você precisa executá-lo (dando um duplo-clique nele) e seguir as instruções.
+Primeiro, verifique se o computador está executando a versão 32-bit ou a versão 64-bit do Windows. Faça isso pressionando a tecla do windows no seu teclado (aquela com a janela do windows) + a tecla Pause/Break. Feito isso, uma tela abrirá com as informações do seu windows. Nessa tela, verifique a seção "Tipo de sistema" e confira que versão está sendo executada. Você pode baixar o Python para Windows no website https://www.python.org/downloads/windows/. Clique no link: "Versão Mais Recente Python 3 - Python x.x.x". Se seu computador está executando a versão **64-bit** do windows, baixe o **instalador executável do Windows x86-64**. Caso contrário, baixe o **instalador executável x86 do Windows**. Depois de baixar o instalador, você precisa executá-lo (dando um duplo-clique nele) e seguir as instruções.
 
 Existe uma coisa com a qual você precisa ter cuidado: durante a instalação, você verá uma janela marcada como "Setup". Certifique-se de selecionar a caixa "Adicionar Python 3.6 ao CAMINHO" e clique em "Instalar agora", conforme mostrado aqui:
 
-![Não se esqueça de adicionar o Python no Path](../python_installation/images/python-installation-options.png)
+![Não se esqueça de adicionar o Python ao Path](../python_installation/images/python-installation-options.png)
 
 Nas próximas etapas, você usará a linha de comando do Windows (vamos te explicar tudo sobre isso também). Por enquanto, se você precisa digitar alguns comandos, vá ao menu iniciar e digite "Command Prompt" no campo de busca. (Em versões mais antigas do Windows, é possível iniciar a linha de comando com Start menu → Sistema do Windows → Prompt de comando.) Você também pode segurar a tecla windows + "R" até aparecer a janela "Executar". Para abrir a Linha de Comando, digite "cmd" e pressione enter na janela "Executar".
 
@@ -23,7 +23,7 @@ Nas próximas etapas, você usará a linha de comando do Windows (vamos te expli
 
 Se você instalar uma versão mais antiga do Python, a tela de instalação pode parecer um pouco diferente da mostrada acima. Certifique-se de rolar até ver a opção "Add python.exe to Path", então clique no botão à esquerda e escolha "Will be installed on local hard drive":
 
-![Adicionar o Python para o caminho, as versões mais antigas](../python_installation/images/add_python_to_windows_path.png)
+![Adicionar o Python ao PATH, versões mais antigas](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -50,7 +50,7 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-Se você tem uma 'micro version' diferente do Python instalado, por exemplo, 3.6.0, então você não precisa atualizar. Se você não tiver o Python instalado, ou se você quiser uma versão diferente, você pode fazer da seguinte maneira:
+Se você tem instalada uma outra "versão micro" do Python, por exemplo, 3.6.0, você não precisa atualizá-la. Se você não tiver o Python instalado ou quiser uma versão diferente, faça assim:
 
 <!--endsec-->
 
@@ -75,7 +75,7 @@ Use o seguinte comando no terminal:
     $ sudo dnf install python3
     
 
-Se você estiver em versões mais antigas do Fedora, você pode receber um erro que não se encontra o comando `dnf`. Nesse caso, você precisa usar o yum em vez disso.
+Se você estiver em versões mais antigas do Fedora, pode receber um erro dizendo que o comando `dnf` não foi encontrado. Nesse caso, você precisa usar o yum em vez disso.
 
 <!--endsec-->
 
@@ -99,8 +99,8 @@ Verifique se a instalação foi bem sucedida abrindo o terminal e digitando o co
     Python 3.6.1
     
 
-**OBS:** Se você está no Windows e receber a mensagem de erro que `python3` não foi encontrado, tente utilizar `python` (sem o `3`) e verifique se ela corresponde à versão Python 3.6.
+**Observação:** Se você estiver no Windows e receber uma mensagem de erro dizendo queo `python3` não foi encontrado, tente utilizar `python` (sem o `3`) e verifique se ela corresponde à versão Python 3.6.
 
 * * *
 
-Se você está com alguma dúvida ou se alguma coisa deu errado e você não faz a menor ideia do que fazer, pergunte ao seu instrutor! Nem sempre tudo sai como o esperado e é melhor pedir ajuda a alguém mais experimente.
+Se você tem alguma dúvida ou se alguma coisa deu errado e você não tem a menor ideia do que fazer, pergunte à sua monitora! Nem sempre tudo sai conforme o esperado e é melhor pedir ajuda a alguém mais experiente.
