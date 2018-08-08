@@ -49,7 +49,7 @@ Dies tun wir, indem wir einen Ordner namens `static` in der Blog-App erstellen:
     └── mysite
     
 
-Django findet automatisch alle Ordner mit dem Namen "static" in allen unserer App-Ordner. So ist es in der Lage, ihre Inhalte als statische Dateien zu nutzen.
+Django findet automatisch alle Ordner mit dem Namen "static" in allen unseren App-Ordnern. So ist es in der Lage, ihre Inhalte als statische Dateien zu nutzen.
 
 ## Deine erste CSS-Datei!
 
@@ -66,7 +66,7 @@ Zeit, ein wenig CSS zu schreiben! Öffne die `blog/static/css/blog.css` Datei in
 
 Wir gehen nicht zu sehr auf die Details von CSS ein. Für diejenigen, die mehr über CSS lernen möchten, haben wir am Ende des Kapitels einen Link auf eine Empfehlung für einen kostenlosen CSS-Kurs angefügt.
 
-Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. Diese Codes starten immer mit `#`, danach folgen sechs Buchstaben (A-F) und Zahlen (0-9). Blau zum Beispiel ist `#0000FF`. Beispiele für solche Farbcodes findest Du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/colors/colors_names.asp) wie `red` und `green` benutzen.
+Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. Diese Codes starten immer mit `#`, danach folgen sechs Buchstaben (A-F) und Zahlen (0-9). Blau zum Beispiel ist `#0000FF`. Beispiele für solche Farbcodes findest du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/colors/colors_names.asp) wie `red` und `green` benutzen.
 
 In deiner `blog/static/css/blog.css` Datei änderst du den folgenden Code:
 
