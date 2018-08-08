@@ -1,6 +1,6 @@
 # Django Templates
 
-Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar sehr hilfreiche **Template Tags** mit.
+Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar sehr hilfreiche **Template-Tags** mit.
 
 ## Was sind Template-Tags?
 
