@@ -60,7 +60,7 @@ Vamos criar uma URL no arquivo `blog/urls.py` que aponta para uma *view* chamada
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
