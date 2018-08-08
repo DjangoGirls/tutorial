@@ -59,7 +59,7 @@
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
