@@ -32,7 +32,7 @@ Djangoテンプレートで変数を表示するためには、次のように�
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Djangoはオブジェクトのリストと認識します。 **Python入門**でどうやってリストを表示できたか覚えていますか？ ループを使ってリストを表示しましたよね。 Djangoテンプレートではこう書きます：
+Djangoはposts変数をオブジェクトのリストと認識します。 **Python入門**でどうやってリストを表示できたか覚えていますか？ ループを使ってリストを表示しましたよね。 Djangoテンプレートではこう書きます：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
