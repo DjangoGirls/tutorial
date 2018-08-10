@@ -1,4 +1,4 @@
-Es gibt viele verschiedene Editoren. Welcher für Dich am besten ist, ist weitestgehend Geschmackssache. Die meisten Python-Programmiererinnen verwenden komplexe, aber extrem leistungsfähige IDEs (Integrated Development Environments), z. B. PyCharm. Für Anfängerinnen sind diese jedoch weniger gut geeignet. Unsere Empfehlungen sind ebenso leistungsfähig, aber viel einfacher zu bedienen.
+Es gibt viele verschiedene Editoren. Welcher für dich am besten ist, ist weitestgehend Geschmackssache. Die meisten Python-Programmiererinnen verwenden komplexe, aber extrem leistungsfähige IDEs (Integrated Development Environments), z. B. PyCharm. Für Anfängerinnen sind diese jedoch weniger gut geeignet. Unsere Empfehlungen sind ebenso leistungsfähig, aber viel einfacher zu bedienen.
 
 Unsere Vorschläge siehst du unten. Aber fühl dich ganz frei, deine Trainerin zu fragen, was ihre Vorlieben sind - wenn sie sich mit dem Editor auskennt, wird es leichter sein, Hilfe zu erhalten.
 
