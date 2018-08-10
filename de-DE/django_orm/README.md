@@ -71,7 +71,7 @@ So erstellst du ein neues Post-Objekt in der Datenbank:
 
 Allerdings fehlt noch eine Zutat: `me`. Wir müssen eine Instanz des Models `User` als Autor übergeben. Wie macht man das?
 
-Als Erstes müssen wir das User Model importieren:
+Als Erstes müssen wir das User-Model importieren:
 
 {% filename %}command-line{% endfilename %}
 
