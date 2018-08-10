@@ -167,7 +167,7 @@ Während du die Ausführung verfolgst, wirst du sehen, was passiert:
 - Deine Einstellungen mit ein paar Veröffentlichungseinstellungen aktualisieren
 - Eine Datenbank auf PythonAnywhere einrichten mit dem Befehl `manage.py migrate`
 - Deine statischen Dateien einrichten (darüber lernen wir später etwas)
-- PythonAnywhere so einrichten, dass es deine Web App über seine Schnittstelle (API) präsentieren kann
+- PythonAnywhere so einrichten, dass es deine Web-App über seine Schnittstelle (API) präsentieren kann
 
 Diese Schritte wurden auf PythonAnywhere automatisiert, aber es sind die selben Schritte, die du bei jedem anderen Server-Provider machen müsstest. Das Wichtigste ist, dass du weisst, dass deine Datenbank auf PythonAnywhere komplett von deiner Datenbank auf deinem eigenen PC getrennt ist. Das bedeutet, sie kann unterschiedliche Posts und Administratorenkonten haben.
 
@@ -203,7 +203,7 @@ Nun ist deine Site also live im öffentlichen Internet! Klick dich bis zum Pytho
 
 Solltest du beim Ausführen des `pa_autoconfigure_django.py` Skripts eine Fehlermeldung erhalten, findest du folgend ein paar bekannte Gründe hierfür:
 
-- Du hast vergessen deinen PythonAnywhere API Token zu erstellen.
+- Du hast vergessen deinen PythonAnywhere API-Token zu erstellen.
 - Du hast in deiner GitHub-URL einen Fehler gemacht.
 - Falls du die Fehlermeldung *"Could not find your settings.py"* erhältst, liegt das wahrscheinlich daran, dass du nicht alle Files zum Git hinzugefügt und/oder diese nicht erfolgreich auf GitHub veröffentlicht hast. Schau dir nochmals den Git-Abschnitt weiter oben an.
 
