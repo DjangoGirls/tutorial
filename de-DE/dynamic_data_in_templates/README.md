@@ -33,7 +33,7 @@ Und nun? Um die tatsächlichen Blogposts des `Post`-Models zu erhalten, brauchen
 
 ## QuerySet
 
-Dir sollte schon ungefähr klar sein, wie QuerySets funktionieren. Wir haben darüber im Kapitel [Django ORM und QuerySets](../django_orm/README.md) gesprochen.
+Dir sollte schon ungefähr klar sein, wie QuerySets funktionieren. Wir haben darüber im Kapitel [Django-ORM und QuerySets](../django_orm/README.md) gesprochen.
 
 Wir wollen nun also eine Liste von Blogposts ausgeben, wobei die Posts publiziert und nach `published_date` sortiert sein sollen, oder? Das haben wir bereits im Kapitel QuerySets gemacht!
 
