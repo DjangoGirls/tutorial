@@ -1,4 +1,4 @@
-# Django URLs
+# Django-URLs
 
 Gleich werden wir unsere erste Website basteln: eine Homepage für deinen Blog! Zuerst sollten wir uns jedoch mit Django URLs beschäftigen.
 
@@ -40,7 +40,7 @@ Die admin-URL, die du im vorangegangenen Kapitel bereits besucht hast, ist schon
 
 Diese Zeile bedeutet, dass für jede URL, die mit `admin/` beginnt, Django die entsprechende *View* finden wird. Hier wurden einige admin-URLs eingefügt, dadurch wird nicht alles in eine Datei gepackt - es bleibt lesbarer und sauberer. 
 
-## Deine erste Django URL!
+## Deine erste Django-URL!
 
 Es wird Zeit, unsere erste URL zu erstellen! Wir wollen, dass 'http://127.0.0.1:8000/' die Homepage unseres Blogs wird und eine Liste unserer Posts zeigt.
 
@@ -97,4 +97,4 @@ Wenn du jetzt versuchst, http://127.0.0.1:8000/ aufzurufen, dann erscheint eine 
 
 Die Konsole zeigt einen Fehler, aber keine Sorge – das ist eigentlich ziemlich nützlich: das sagt dir, dass **kein Attribut 'post_list'** vorhanden ist. Das ist der Name der *View*, die Django versucht zu finden und zu verwenden, aber wir haben sie noch gar nicht erstellt. An dieser Stelle wird dein `/admin/` auch nicht funktionieren. Keine Sorge, das machen wir gleich.
 
-> Wenn du mehr über Django URLconfs lernen willst, dann öffne die offizielle Dokumentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> Wenn du mehr über Django-URLconfs lernen willst, dann öffne die offizielle Dokumentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
