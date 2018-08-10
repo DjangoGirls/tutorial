@@ -2,7 +2,7 @@
 
 * [はじめに](README.md)
 * [インストール](installation/README.md)
-* [インストール（chromebook）](chromebook_setup/README.md)
+* [Chromebookのセットアップ](chromebook_setup/README.md)
 * [インターネットのしくみ](how_the_internet_works/README.md)
 * [コマンドラインを使ってみよう](intro_to_command_line/README.md)
 * [Pythonのインストール](python_installation/README.md)
