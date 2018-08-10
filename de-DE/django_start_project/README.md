@@ -113,7 +113,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 ## Eine Datenbank erstellen
 
-Es gibt viele verschiedene Datenbank Programme, welche die Daten unserer Website verwalten können. Wir werden die Standard Datenbanksoftware nehmen, `sqlite3`.
+Es gibt viele verschiedene Datenbank Programme, welche die Daten unserer Website verwalten können. Wir werden die Standard-Datenbanksoftware nehmen, `sqlite3`.
 
 Das sollte schon in der `mysite/settings.py`-Datei eingestellt sein:
 
