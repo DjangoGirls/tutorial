@@ -270,9 +270,9 @@ Das ist genial!
 
 ## Formularvalidierung
 
-Jetzt zeigen wir dir, wie cool Django Formulare sind. Ein Blogpost muss `title`- und `text`-Felder besitzen. In unserem `Post`-Model haben wir (im Gegensatz zu dem `published_date`) nicht festgelegt, dass diese Felder nicht benötigt werden, also nimmt Django standardmäßig an, dass sie definiert werden.
+Jetzt zeigen wir dir, wie cool Django-Formulare sind. Ein Blogpost muss `title`- und `text`-Felder besitzen. In unserem `Post`-Model haben wir (im Gegensatz zu dem `published_date`) nicht festgelegt, dass diese Felder nicht benötigt werden, also nimmt Django standardmäßig an, dass sie definiert werden.
 
-Versuch das Formular ohne `title` und `text` zu speichern. Rate, was passieren wird!
+Versuch, das Formular ohne `title` und `text` zu speichern. Rate, was passieren wird!
 
 ![Formularvalidierung](images/form_validation2.png)
 
@@ -341,7 +341,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Sieht genauso aus wie unsere `post_new` View, oder? Aber nicht ganz. Zum einen übergeben wir zusätzliche `pk` Parameter von urls. Und: Wir bekommen das `Post`-Model, welches wir bearbeiten wollen, mit `get_object_or_404(Post, pk=pk)` und wenn wir dann ein Formular erstellen, übergeben wir post als `instance`, wenn wir das Formular speichern…
+Sieht genauso aus wie unsere `post_new`-View, oder? Aber nicht ganz. Zum einen übergeben wir zusätzliche `pk` Parameter von urls. Und: Wir bekommen das `Post`-Model, welches wir bearbeiten wollen, mit `get_object_or_404(Post, pk=pk)` und wenn wir dann ein Formular erstellen, übergeben wir post als `instance`, wenn wir das Formular speichern…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -369,7 +369,7 @@ Probier doch einmal, den Titel oder den Text zu ändern und die Änderungen zu s
 
 Herzlichen Glückwunsch! Deine Anwendung nimmt immer mehr Gestalt an!
 
-Falls du mehr Informationen über Django Formulare benötigst, solltest du die offizielle Dokumentation lesen: https://docs.djangoproject.com/en/2.0/topics/forms/.
+Falls du mehr Informationen über Django-Formulare benötigst, solltest du die offizielle Dokumentation lesen: https://docs.djangoproject.com/en/2.0/topics/forms/.
 
 ## Sicherheit
 
