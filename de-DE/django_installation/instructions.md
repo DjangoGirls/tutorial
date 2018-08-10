@@ -150,7 +150,7 @@ In Deiner neuen virtuellen Umgebung wird automatisch die richtige Version von `p
 
 Ok, jetzt ist die erforderliche Umgebung startklar und wir können endlich Django installieren!
 
-## Django Installation
+## Django-Installation
 
 Da du nun dein `virtualenv` gestartet hast, kannst du Django installieren.
 
@@ -215,4 +215,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Das war's! Du bist nun (endlich) bereit, deine erste Django Anwendung zu starten!
+Das war's! Du bist nun (endlich) bereit, deine erste Django-Anwendung zu starten!
