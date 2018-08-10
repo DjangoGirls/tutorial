@@ -1,4 +1,4 @@
-# Django Models
+# Django-Models
 
 Wir erstellen jetzt etwas, damit wir alle Posts von unserem Blog speichern können. Aber um das zu tun, müssen wir zunächst über `Objekte` sprechen.
 
