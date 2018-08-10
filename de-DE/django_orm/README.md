@@ -1,4 +1,4 @@
-# Django ORM und QuerySets
+# Django-ORM und QuerySets
 
 In diesem Kapitel lernst du, wie sich Django mit der Datenbank verbindet und Daten darin speichert. Lass uns loslegen!
 
@@ -8,7 +8,7 @@ Zusammengefasst ist ein QuerySet eine Liste von Objekten eines bestimmten Models
 
 Am besten wir sehen uns das an einem Beispiel an. Versuchen wir's?
 
-## Django Shell
+## Django-Shell
 
 Öffne deine lokale Konsole (nicht in PythonAnywhere) und tippe dieses Kommando ein:
 
