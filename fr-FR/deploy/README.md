@@ -45,7 +45,7 @@ Git va surveiller et conserver les modifications concernant l'ensemble des fichi
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+Enregistrez ce fichier `.gitignore` dans votre répertoire principal "djangogirls".
 
 > **Attention** : le point au début du nom du fichier est important ! Si vous avez des difficultés à le faire (Mac n'aime pas que vous créiez des fichiers commençant par un point dans le Finder, par exemple), utilisez la fonction "Enregistrer sous" dans votre éditeur; c'est à l'épreuve des balles.
 > 
