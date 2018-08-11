@@ -144,4 +144,4 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
 
 以上です！ウェブサイトがまだちゃんと動いているか確認しましょう。:)
 
-> もし `TemplateDoesNotExist` というエラーが出ていたら、 `blog/base.html` ファイルがないという意味で、コンソールで `runserver` が動いたままになっていると思います。 これを止め(Ctrl+C - ControlとCのキーを同時押し)、それから `python manage.py runserver`コマンドを入力して再度サーバーを動かしてみてください。
+> もし `TemplateDoesNotExist` というエラーが出ていたら、 `blog/base.html` ファイルがないという意味で、コンソールで `runserver` が実行されたままになっていると思います。 これを止め(Ctrl+C - ControlとCのキーを同時押し)、それから `python manage.py runserver`コマンドを入力して再度サーバーを動かしてみてください。
