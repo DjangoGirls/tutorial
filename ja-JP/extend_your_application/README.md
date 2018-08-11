@@ -54,7 +54,7 @@
 
 最初の投稿の詳細がこの**URL**で表示されるようにします：http://127.0.0.1:8000/post/1/
 
-`blog/urls.py`ファイルで`post_detail`という投稿の内容を表示する*ビュー*をDjangoが示すようにURLを作りましょう。 `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` という行を `blog/urls.py` ファイルに追加しましょう。 ファイルは次のようになるでしょう。
+投稿の内容を表示する`post_detail`という*ビュー*をDjangoに示すように、`blog/urls.py`ファイルでURLを作りましょう。 `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` という行を `blog/urls.py` ファイルに追加しましょう。 ファイルは次のようになるでしょう。
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -71,7 +71,7 @@ urlpatterns = [
 `post/<int:pk>/` の部分はURLパターンを指定しています。それについて説明しましょう:
 
 - `post/` は単純にURLが **post** に続けて **/** で始まることを意味します。ここまでは順調ですね。
-- `<int:pk>` – この部分はトリッキーです。これはDjangoは整数の値を期待し、`pk`という名前の変数がビューに渡されることを意味しています。
+- `<int:pk>` – この部分はトリッキーです。これはDjangoは整数の値を期待し、その値が`pk`という名前の変数でビューに渡されることを意味しています。
 - `/` – それからURLの最後に再び **/** が必要です。
 
 つまり、ブラウザに`http://127.0.0.1:8000/post/5/`を入力すると、Djangoは`post_detail`という*ビュー*を探していると理解します。そして`pk`が`5`という情報をその*ビュー*に転送します。
