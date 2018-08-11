@@ -81,14 +81,14 @@ You will notice that a new `blog` directory is created and it contains a number 
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     └── mysite
