@@ -55,7 +55,7 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
 </html>
 ```
 
-それから`base.html`内の`<body>`(`<body>`と`</body>`の間のすべて)を次で置き換えます。
+それから`base.html`内の`<body>`全体(`<body>`と`</body>`の間のすべて)を次で置き換えます。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
