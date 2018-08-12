@@ -178,9 +178,9 @@ Et donc, exactement comme on l'avait fait sur votre ordinateur, on doit initiali
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Entrez les informations pour votre compte administrateur. Mieux vaut utiliser les mêmes que sur votre ordinateur pour éviter toute confusion, sauf si vous voulez utiliser un mot de passe plus sécurisé sur PythonAnywhere.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Maintenant, si vous voulez, vous pouvez aussi jeter un œil à votre code sur PythonAnywhere en utilisant la commande `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -191,20 +191,20 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
     templates  tests.py  urls.py  views.py
     
 
-You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+Vous pouvez également accéder à l'onglet "Fichiers" et naviguer à l'aide du navigateur de fichiers intégré à PythonAnywhere.
 
-## You are now live!
+## Vous êtes désormais sur Internet !
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+Votre site devrait désormais être accessible sur Internet ! Cliquez sur l'onglet "Web" dans PythonAnywhere pour obtenir un lien. Vous pouvez partagez ce lien avec qui vous voulez :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> **Note** Ce tutoriel est conçu pour les débutants, et pendant le déploiement on a pris quelques raccourcis qui, d'un point de vue de la sécurité, ne sont pas idéaux. Quand vous voudrez aller plus loin dans ce projet, ou commencer un nouveau projet, vous devriez consulter la [Checklist de déploiement pour Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) pour obtenir des conseils sur comment sécuriser votre site.
 
-## Debugging tips
+## Conseils en cas de bug
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Si vous constatez une erreur en exécutant le script `pa_autoconfigure_django.py`, voici quelques causes courantes :
 
-- Vous avez oublié de créer votre jeton d'API PythonAnywhere.
-- Faites une erreur dans votre URL GitHub
+- Oublier de créer votre "API token" pour PythonAnywhere.
+- Faire une erreur dans votre URL GitHub
 - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Regardez à nouveau la section Git ci-dessus
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
