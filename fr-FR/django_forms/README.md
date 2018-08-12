@@ -187,7 +187,7 @@ def post_new(request):
 
 Lorsque nous envoyons notre formulaire, nous revenons à la même vue. Cependant, nous récupérons les données dans `request`, et plus particulièrement dans `request.POST` (le nom "POST" n'a aucun lien avec nos "posts" de blog : il est lié au type de requête effectué à l'envoi des données). Rappelez-vous : nous avions défini la variable `method="POST"` dans le fichier HTML qui contient notre `<form>`. Tous les champs du formulaire se trouvent maintenant dans `request.POST`. Veillez à ne pas renommer `POST`par autre chose (la seule autre valeur autorisée pour `method` est `GET`, mais nous n'avons pas le temps d'expliquer la différence ici).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. Pour gérer ces deux cas, nous allons utiliser une condition `if` (si) :
+Donc dans notre *vue* nous avons deux situations différentes à gérer : la première quand on accède à la page pour la première fois et nous voulons un formulaire vide, et la seconde quand on revient à la *vue* avec les données que l'on a saisies dans le formulaire. Pour gérer ces deux cas, nous allons utiliser une condition `if` (si) :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Il faut maintenant remplir à l'endroit des pointillés `[...]`. Si `method` vaut `POST` alors on veut construire le `PostForm` avec les données du formulaire, non ? Nous allons le faire comme cela :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,7 +206,7 @@ It's time to fill in the dots `[...]`. If `method` is `POST` then we want to con
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+La prochaine étape est de vérifier que le formulaire a été rempli correctement (tous les champs obligatoires ont été remplis et aucune valeur incorrecte n'a été envoyée). Nous allons faire ça en utilisant `form.is_valid()`.
 
 Testons donc si notre formulaire est valide et, si c'est le cas, sauvegardons-le !
 
