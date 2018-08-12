@@ -36,11 +36,11 @@ Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulair
 
 Ensuite, nous avons la `class Meta` qui nous permet de dire à Django quel modèle il doit utiliser pour créer ce formulaire (`model = Post`).
 
-Enfin, nous précisions quels sont le⋅s champ⋅s qui doivent figurer dans notre formulaire. Dans notre cas, nous souhaitons que seuls `title` et `text` apparaissent dans notre formulaire. Nous obtiendrons les autres données différemment : l'auteur (`author`) peut être la personne actuellement enregistrée (vous dans ce cas) et la date de création `created_date` peut être générée automatiquement lors de la création du post (voir dans le code).
+Enfin, nous précisions quels sont le⋅s champ⋅s qui doivent figurer dans notre formulaire. Dans notre cas, nous souhaitons que seuls `title` et `text` apparaissent dans notre formulaire. Nous obtiendrons les autres données différemment : par exemple, on s'attend à ce que l'auteur (`author`) soit la personne actuellement connectée (c'est à dire vous !) et que la date de création `created_date` soit générée automatiquement lors de la création du post (cf code que nous avons écrit).
 
 Et voilà, c'est tout ! Tout ce qu'il nous reste à faire, c'est d'utiliser ce formulaire dans une *vue* et de l'afficher dans un template.
 
-Donc, encore une fois, nous allons créer un lien entre une page, une URL, une vue et un template.
+Nous allons donc une nouvelle fois suivre le processus suivant et créer : un lien vers la page, une URL, une vue et un template.
 
 ## Lien vers une page contenant le formulaire
 
@@ -52,7 +52,7 @@ C'est le moment d'ouvrir le fichier `blog/templates/blog/base.html`. Nous allons
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Notez que nous souhaitons appeler notre nouvelle vue `post_new`. Les classes `"glyphicon glyphicon-plus"` sont fournies par le thème bootstrap et nous permettent d'afficher un signe plus.
+Notez que nous souhaitons appeler notre nouvelle vue `post_new`. Les classes `"glyphicon glyphicon-plus"` sont fournies par le thème bootstrap et nous permettent d'afficher un symbole "plus" ("+").
 
 Après avoir ajouté cette ligne, votre fichier HTML devrait maintenant ressembler à ceci :
 
@@ -112,7 +112,7 @@ urlpatterns = [
 ]
 ```
 
-Une fois la page rechargée, vous allez voir une `AttributeError`, ce qui est normal. Nous n'avons pas encore implémentée la vue `post_new`. Allons nous occuper de ça maintenant.
+Une fois la page rechargée, vous allez voir une `AttributeError`, ce qui est normal. Nous n'avons pas encore implémenté la vue `post_new`. Faisons-le maintenant.
 
 ## La vue post_new
 
