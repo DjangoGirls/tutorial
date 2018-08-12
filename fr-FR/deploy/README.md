@@ -4,15 +4,15 @@
 
 Jusqu'à maintenant, votre site web est uniquement disponible sur votre ordinateur. Maintenant, vous allez apprendre à déployer! Déployer signifie mettre en ligne votre site pour que d'autres personnes puissent enfin voir votre app. :)
 
-Comme vous l'avez appris, un site web a besoin d'être installé sur un serveur. Il existe de nombreux fournisseurs de serveurs disponibles sur Internet, nous les utiliserons [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere gratuit pour les petites applications qui n'ont pas trop de visiteurs, il sera certainement suffisant pour vous maintenant.
+Comme vous l'avez appris, un site web a besoin d'être installé sur un serveur. Il existe de nombreux fournisseurs de serveurs disponibles sur Internet, nous utiliserons [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere est gratuit pour les petites applications qui n'ont pas trop de visiteurs, donc ce sera certainement suffisant pour vous maintenant.
 
 Nous allons aussi utiliser les services [GitHub](https://www.github.com), ce qui nous permettra d'héberger notre code en ligne. Il existe d'autres entreprises qui proposent des services similaires. Cependant, presque tous⋅tes les développeurs·ses possèdent aujourd'hui un compte Github et, dans quelques instants, vous aussi !
 
-Ces trois endroits sont importants pour vous. Votre ordinateur local est l'endroit où vous faites de développement et de test. Lorsque vous êtes heureux avec les changements, vous aurez une copie de votre programme sur GitHub. Votre site sera en PythonAnywhere et vous le mettrez à jour en obtenant une copie de votre nouveau code de GitHub.
+Ces trois endroits sont importants pour vous. Votre ordinateur local est l'endroit où vous faites de développement et de test. Lorsque vous êtes heureux avec le résultat, vous sauvegarderez une copie de votre programme sur GitHub. Votre site sera sur PythonAnywhere et vous le mettrez à jour en y mettant une copie de votre nouveau code sur GitHub.
 
 # Git
 
-> **noter** Si vous avez déjà effectué les étapes d'installation, vous n'avez plus besoin de le faire - vous pouvez passer à la section suivante et commencer à créer votre référentiel Git.
+> **Note** Si vous avez déjà effectué l'installation, vous n'avez pas besoin de le re-faire: vous pouvez passer à la section suivante et commencer à créer votre dépôt Git.
 
 {% include "/deploy/install_git.md" %}
 
