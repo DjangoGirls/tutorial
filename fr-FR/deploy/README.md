@@ -30,9 +30,9 @@ Git conserve toutes les modifications apportées à un ensemble de fichiers dans
     $ git config --global user.email you@exemple.com
     
 
-L'initialisation d'un dépôt git est quelque chose que nous avons besoin de faire une seule fois par projet (et vous n'avez pas besoin de ressaisir ce nom d'utilisateur et d'envoyer un nouveau courriel).
+L'initialisation d'un dépôt git ne doit être faite qu'une seule fois par projet (et vous n'avez plus jamais besoin de re-saisir le nom d'utilisateur et adresse email).
 
-Git va surveiller et conserver les modifications concernant l'ensemble des fichiers et dossiers présents dans ce répertoire, à l'exception de certains fichiers que nous aimerions exclure. Pour cela, nous allons créer un fichier appelé `.gitignore` dans le répertoire principal du projet. Ouvrez votre éditeur et créez un nouveau fichier en copiant le contenu suivant :
+Git va surveiller les modifications faites à tous les fichiers et dossiers présents dans ce répertoire, mais il y a certains fichiers que nous voudrions qu'il ignore. Pour cela, nous allons créer un fichier appelé `.gitignore` dans le répertoire principal du projet. Ouvrez votre éditeur et créez un nouveau fichier en copiant le contenu suivant :
 
 {% filename %}.gitignore{% endfilename %}
 
