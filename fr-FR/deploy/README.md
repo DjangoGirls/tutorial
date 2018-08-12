@@ -51,7 +51,7 @@ Enregistrez ce fichier sous le nom `.gitignore` dans votre répertoire principal
 > 
 > **Remarque** un de fichiers que vous avez spécifié dans votre fichier `.gitignore` est `db.sqlite3`. Ce fichier est votre base de données locale, où tous vos articles sont stockés. Nous ne souhaitons pas l'ajouter à votre dépôt car votre site sur PythonAnywhere utilisera une base de données différente. Cette base de données pourrait être de type SQLite, comme sur votre version de développement, mais on utiliserait plutôt une BDD de type MySQL qui peut gérer un plus grand nombre de visiteurs que SQLite. Dans tous les cas, parce que vous votre base de données SQLite est ignorée pour l'archivage sur GitHub, tous les messages que vous avez créé jusqu'à maintenant ne seront accessibles que localement, et vous devrez les ajouter de nouveau en production. Vous devriez penser à votre base de données locale comme un terrain de jeux où vous pouvez tester différentes choses et ne pas avoir peur de supprimer vos messages réels sur votre blog.
 
-C'est une bonne idée d'utiliser la commande `git status` avant `git add` ou dès que vous n'êtes plus sûr de ce qui a changé dans le projet. Cela aidera à prévenir toute surprise de se produire, tels que les mauvais fichiers ajoutés ou engagés. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. La sortie doit être semblable au suivant:
+C'est une bonne idée d'utiliser la commande `git status` avant `git add` ou dès que vous n'êtes plus sûr de ce qui a changé dans le projet. Cela vous évitera des surprises comme ajouter ou envoyer un mauvais fichier. La commande `git status` permet d'obtenir des informations sur tous les fichiers non-suivis/modifiés/ajoutés, l'état de la branche, et bien plus encore. La commande devrait renvoyer ceci:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,12 +72,12 @@ C'est une bonne idée d'utiliser la commande `git status` avant `git add` ou dè
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-Pour le moment, nous n'avons fait que regarder l'état de notre branche. Pour enregistrer nos changements, nous allons devoir taper les commandes suivantes :
+Et pour finir, nous allons enregistrer nos modifications. Taper ces commandes dans votre terminal:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
-    $ git commit -m "My Django Girls app, first commit"
+    $ git commit -m "Mon app Django Girls, premier commit"
      [...]
      13 files changed, 200 insertions(+)
      create mode 100644 .gitignore
@@ -85,11 +85,11 @@ Pour le moment, nous n'avons fait que regarder l'état de notre branche. Pour en
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Publier votre code sur GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!)
+Allez sur [GitHub.com](https://www.github.com) et inscrivez-vous gratuitement (si vous possédez déjà un compte, c'est parfait!)
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Ensuite, créez un nouveau dépôt en lui donnant le nom "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 ![](images/new_github_repo.png)
 
