@@ -166,8 +166,8 @@ En regardant la commande s'exécuter, vous devriez voir ce qui ce passe:
 - Création d'un virtualenv chez PythonAnywhere, comme celui sur votre propre PC
 - Mise à jour de votre fichier de paramètres avec des paramètres de déploiement
 - Mise en place d’une base de données sur PythonAnywhere en utilisant la commande `manage.py migrate`
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Mise en place de vos fichiers statiques (nous verrons ce que c'est plus tard)
+- Et configuration de PythonAnywhere pour servir votre application web via son API
 
 On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
 
