@@ -1,6 +1,6 @@
 # Formulaires Django
 
-La dernière chose que nous voulons faire sur notre site web, c'est créer une manière sympathique d'ajouter ou éditer des blog posts. `L'interface d'administration` de Django est cool, mais elle est assez complexe à personnaliser et à rendre jolie. Les `formulaires` vont nous donner un pouvoir absolu sur notre interface : nous allons être capables de faire à peu près tout ce que nous pouvons imaginer !
+La dernière chose que nous voulons faire sur notre site web, c'est créer une manière sympathique d'ajouter ou éditer des blog posts. L'interface d'administration (`/admin`) de Django est cool, mais elle est assez complexe à personnaliser et à rendre jolie. Les formulaires (`forms`) vont nous donner un pouvoir absolu sur notre interface : nous allons être capables de faire à peu près tout ce que nous pouvons imaginer !
 
 Ce qui est pratique avec les formulaires Django, c'est que nous pouvons aussi bien en définir un à partir de rien ou créer un `ModelForm` qui va enregistrer le résultat du formulaire dans un modèle.
 
@@ -14,7 +14,7 @@ Nous allons devoir créer un fichier avec ce nom dans notre dossier `blog`.
        └── forms.py
     
 
-Très bien, allons-y et tapez le code suivant:
+Ouvrez maintenant ce fichier et tapez le code suivant :
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,13 +30,13 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Nous avons besoin tout d'abord d'importer les formulaires Django (`from django import forms`), puis, évidemment, notre modèle `Post` (`from .models import Post`).
+Tout d'abord, nous avons besoin d'importer les formulaires Django (`from django import forms`), puis, évidemment, notre modèle `Post` (`from .models import Post`).
 
 Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulaire. Nous avons besoin de préciser à Django que ce formulaire est un `ModelForm`. Pour cela, nous utilisons `forms.ModelForm`.
 
 Ensuite, nous avons la `class Meta` qui nous permet de dire à Django quel modèle il doit utiliser pour créer ce formulaire (`model = Post`).
 
-Enfin, nous précisions quels sont les champs qui doivent figurer dans notre formulaire. Dans notre cas, nous souhaitons que seuls `title` et `text` apparaissent dans notre formulaire. Nous obtiendrons les autres données différemment : l'auteur (`author`) peut être la personne actuellement enregistrée (vous dans ce cas) et la date de création `created_date` peut être générée automatiquement lors de la création du post (voir dans le code).
+Enfin, nous précisions quels sont le⋅s champ⋅s qui doivent figurer dans notre formulaire. Dans notre cas, nous souhaitons que seuls `title` et `text` apparaissent dans notre formulaire. Nous obtiendrons les autres données différemment : l'auteur (`author`) peut être la personne actuellement enregistrée (vous dans ce cas) et la date de création `created_date` peut être générée automatiquement lors de la création du post (voir dans le code).
 
 Et voilà, c'est tout ! Tout ce qu'il nous reste à faire, c'est d'utiliser ce formulaire dans une *vue* et de l'afficher dans un template.
 
