@@ -72,7 +72,7 @@ C'est une bonne idée d'utiliser la commande `git status` avant `git add` ou dè
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-Et pour finir, nous allons enregistrer nos modifications. Taper ces commandes dans votre terminal:
+Et pour finir, nous allons enregistrer nos modifications. Tapez ces commandes dans votre terminal:
 
 {% filename %}command-line{% endfilename %}
 
@@ -89,19 +89,19 @@ Et pour finir, nous allons enregistrer nos modifications. Taper ces commandes da
 
 Allez sur [GitHub.com](https://www.github.com) et inscrivez-vous gratuitement (si vous possédez déjà un compte, c'est parfait!)
 
-Ensuite, créez un nouveau dépôt en lui donnant le nom "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Ensuite, créez un nouveau dépôt en lui donnant le nom "my-first-blog". Laissez la case "initialisation avec README" décochée, laissez l'option .gitignore vide (nous l'avons fait manuellement) et laissez la Licence en tant que Aucune.
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to just stick with the name `my-first-blog`.
+> **Note** : dans le cadre de ce tutoriel, le nom `my-first-blog` est très important. Cependant, vous êtes libre de le changer mais, attention : à chaque fois que ce nom apparaîtra dans le tutoriel, vous allez devoir le remplacer par le nom que vous avez choisi. Il est probablement plus simple de garder le nom `my-first-blog` pour cette fois.
 
-On the next screen, you'll be shown your repo's clone URL. Choose the "HTTPS" version, copy it, and we'll paste it into the terminal shortly:
+La page suivante vous donne l'URL qui va vous permettre de cloner votre dépôt. Choisissez la version « HTTPS » et copiez l'URL car nous allons rapidement en avoir besoin :
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Nous avons maintenant besoin de relier nos deux dépôts ("hook" en anglais) : celui sur notre ordinateur et celui sur GitHub.
 
-Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
+Tapez les instructions suivantes dans votre console (remplacez `<your-github-username>` avec le nom d'utilisateur de votre compte GitHub et sans les chevrons "<" et ">") :
 
 {% filename %}command-line{% endfilename %}
 
@@ -109,7 +109,7 @@ Type the following into your console (Replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-Enter your GitHub username and password and you should see something like this:
+Entrez votre nom d'utilisateur et mot de passe Github. Vous devriez voir quelque chose comme cela :
 
 {% filename %}command-line{% endfilename %}
 
@@ -126,17 +126,17 @@ Enter your GitHub username and password and you should see something like this:
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Votre code est maintenant sur GitHub. Allez jeter un coup d’œil ! Votre code est maintenant au même endroit que d'autres projets super cool : [Django](https://github.com/django/django), [le tutoriel Django Girls](https://github.com/DjangoGirls/tutorial) et les nombreux autres projets libres qui sont hébergés sur GitHub. :)
 
-# Setting up our blog on PythonAnywhere
+# Mettre votre blog en ligne avec PythonAnywhere
 
-## Sign up for a PythonAnywhere account
+## Créez votre compte utilisateur sur PythonAnywhere
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Note** Vous avez peut être déjà créé un compte PythonAnyWhere au cours de la phase d'installation - si c'est le cas, inutile de le refaire.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## Configurer votre site sur PythonAnywhere
 
 Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
