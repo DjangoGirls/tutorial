@@ -192,7 +192,6 @@ Django bize veritabanımıza uygulayabileceğimiz bir taşıma (migration) dosya
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
-      Rendering model states... DONE
       Applying blog.0001_initial... OK
     
 
