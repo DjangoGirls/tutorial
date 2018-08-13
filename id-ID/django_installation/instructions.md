@@ -60,9 +60,9 @@ data-collapse=true ces-->
 > > 
 > > {% filename%} baris perintah {% endfilename%}
 > > 
-> >     Lingkungan virtual tidak berhasil dibuat karena ensurepip tidak tersedia.  Pada sistem Debian / Ubuntu, Anda perlu menginstal paket python3-venv menggunakan perintah berikut.
+> >     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
 > >        apt install python3-venv
-> >     You may need to use sudo with that command.  Setelah menginstal paket python3-venv, buat ulang lingkungan virtual Anda.
+> >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 > >     
 > > 
 > > Dalam kasus ini, ikuti petunjuk di atas dan pasang paket ` python3-venv </ 0> :
