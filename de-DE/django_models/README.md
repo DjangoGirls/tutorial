@@ -189,10 +189,10 @@ Django hat eine Migrationsdatei für uns vorbereitet, die wir nun auf unsere Dat
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate blog
-    Operations to perform:
-      Apply all migrations: blog
+    Operations to perform:   
+       Apply all migrations: blog
     Running migrations:
-      Applying blog.0001_initial... OK
+       Applying blog.0001_initial... OK
     
 
 Hurra! Unser Post-Model ist ab sofort in unserer Datenbank gespeichert! Es wäre doch schön, zu wissen, wie es aussieht, oder? Springe zum nächsten Kapitel, um es dir anzusehen!
