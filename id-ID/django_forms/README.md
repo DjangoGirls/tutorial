@@ -149,15 +149,15 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
 
 <p>{% filename%} blog / templates / blog / post_edit.html {% endfilename%}</p>
 
-<pre><code class="html">{% meluas 'blog / base.html'%}
+<pre><code class="html">{% extends 'blog/base.html' %}
 
- {% blok konten%} 
-&lt;h1&gt; Pos baru </ 0> &lt;form method="POST" class="post-form"&gt; {% csrf_token%} {{form.as_p}} &lt;button type="submit" class="save btn btn-default"&gt; Simpan </ 2> </ 1> {% endblock%}    
-    
-        
-        
-    
-
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
 `</pre> 
     Saatnya merefresh web kita! Wow...! Form anda tampil!
     
@@ -288,20 +288,20 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
     {% filename%} blog / templates / blog / post_detail.html {% endfilename%}
     
     ```html
-    {% meluas 'blog / base.html'%}
+    {% extends 'blog/base.html' %}
     
-     {% blok konten%} 
-    &lt;div class="post"&gt; {% jika post.published_date%} &lt;div class="date"&gt; {{post.published_date}} </ 1> {% endif%} <2 > </ 2> &lt;h1&gt; {{post.title}} </ 3> &lt;p&gt; {{post.text | linebreaksbr}} </ 4> </ 0> {% endblock%}    
-            
-                
-                    
-                
-            
-            
-            
-            
-        
-    
+    {% block content %}
+        <div class="post">
+            {% if post.published_date %}
+                <div class="date">
+                    {{ post.published_date }}
+                </div>
+            {% endif %}
+            <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+            <h1>{{ post.title }}</h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endblock %}
     ```
     
     Dalam `blog/urls.py` kita tambah baris ini:
