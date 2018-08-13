@@ -196,7 +196,6 @@ Django prepared a migration file for us that we now have to apply to our databas
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
-      Rendering model states... DONE
       Applying blog.0001_initial... OK
     
 
