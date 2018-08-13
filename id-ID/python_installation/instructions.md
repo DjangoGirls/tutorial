@@ -46,7 +46,7 @@ Sepertinya kamu telah menginstall Python sebelumnya. Untuk mengecek jika itu sud
 
 {% filename %} baris perintah {% endfilename %}
 
-    $ python3 --versi
+    $ python3 --version
     Python 3.6.1
     
 
