@@ -176,7 +176,6 @@ Semua baris yang dimulai dengan `dari` atau ` impor ` adalah baris yang menambah
             Operations to perform:
               Apply all migrations: blog
             Running migrations:
-              Rendering model states... DONE
               Applying blog.0001_initial... OK
             
         
