@@ -193,7 +193,6 @@ What about `def publish(self):`? Αυτή είναι ακριβώς η μέθο�
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
-      Rendering model states... DONE
       Applying blog.0001_initial... OK
     
 
