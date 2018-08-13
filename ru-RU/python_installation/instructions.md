@@ -86,7 +86,7 @@ data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo zypper install python3
+    $ sudo apt install python3.6
     
 
 <!--endsec-->
