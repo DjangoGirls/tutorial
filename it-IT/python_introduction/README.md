@@ -103,7 +103,7 @@ or escaping the apostrophe with a backslash (``):
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "L\'ape Maja va"
+>>> 'L\'ape Maja va'
 "L'ape Maja va"
 ```
 
