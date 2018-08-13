@@ -216,34 +216,34 @@ Kemudian hubungilah kode HTML yang menampilkan tulisan dengan deklarasi kelas. G
 {% filename%} blog / templates / blog / post_list.html {% endfilename%}
 
 ```html
-{% untuk posting di posting%} 
-&lt;div class="post"&gt; &lt;p&gt; diterbitkan: {{post.published_date}} </ 1> &lt;h1&gt;&lt;a href=""&gt; {{post.title}} </ 2> &lt;p&gt; {{post.text | linebreaksbr}} </ 1> </ 0> {% endfor%}    
-        
-        
-        
-    
-
+{% for post in posts %}
+    <div class="post">
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 ```
 
 di ` blog / templates / blog / post_list.html </ 0> dengan ini:</p>
 
 <p>{% filename%} blog / templates / blog / post_list.html {% endfilename%}</p>
 
-<pre><code class="html">&lt;div class="content container"&gt; 
-&lt;div class="row"&gt; &lt;div class="col-md-8"&gt; {% untuk posting di posting%} &lt;div class="post"&gt; &lt;div class="date"&gt; &lt;p&gt; diterbitkan: {{post.published_date}} </ 5> </ 4> &lt;h1&gt;&lt;a href=""&gt; {{post. judul}} </ 6> &lt;p&gt; {{post.text | linebreaksbr}} </ 5> </ 3> {% endfor%} </ 2> </ 1> </ 0>    
-        
-            
-                
-                    
-                        
-                    
-                    
-                    
-                
-            
-        
-    
-
+<pre><code class="html"><div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        <p>published: {{ post.published_date }}</p>
+                    </div>
+                    <h1><a href="">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</div>
 `</pre> 
 
 Simpan file tersebut dan segarkan situs Anda.
