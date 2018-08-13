@@ -192,7 +192,6 @@ O Django preparou um arquivo de migração que precisamos aplicar ao nosso banco
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
-      Rendering model states... DONE
       Applying blog.0001_initial... OK
     
 
