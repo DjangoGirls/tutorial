@@ -101,7 +101,7 @@ We should open `blog/views.py` and add the following code near the other `from` 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-dari django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404
 ```
 
 And at the end of the file we will add our *view*:
