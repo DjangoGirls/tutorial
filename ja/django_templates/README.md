@@ -8,7 +8,7 @@ HTML中で本当はPythonのコードを書くことはできません。なぜ�
 
 **Djangoテンプレートタグ** はHTMLにPyhtonのようなコードを埋め込むことができて、動的なウェブサイトがより早く簡単に作れます!
 
-## ブログ一覧テンプレート
+## ブログ一覧テンプレートの表示
 
 前の章で、`posts` 変数でテンプレートに記事のリストを渡しました。今からHTMLで表示をしてみましょう。
 
@@ -32,7 +32,7 @@ Djangoテンプレートで変数を表示するためには、次のように�
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Djangoはオブジェクトのリストと認識します。 **Python入門**でどうやってリストを表示できたか覚えていますか？ ループを使ってリストを表示しましたよね。 Djangoテンプレートではこう書きます：
+Djangoはposts変数をオブジェクトのリストと認識します。 **Python入門**でどうやってリストを表示できたか覚えていますか？ ループを使ってリストを表示しましたよね。 Djangoテンプレートではこう書きます：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -97,9 +97,9 @@ post変数がさっきと違って、`{{ post.title }}` や `{{ post.text }}` �
     [...]
     
 
-* 最後に[ブラウザのタブ](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。更新が反映されています！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
+* 最後に[Web tab](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。更新が反映されています！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
 
-おめでとうございます！よくできました! これができたら、Django adminとして新しい投稿を追加しましょう（published_dateを忘れないで！）。PythonAnywhereサイトのDjango管理者であることを確認してください（https://yourname.pythonanywhere.com/admin）。それから、投稿したものがそこに見えるか、リロードしましょう。
+おめでとうございます！よくできました! これができたら、Django adminとして新しい投稿を追加しましょう（published_dateを忘れないで！）。PythonAnywhereサイトのDjango管理者であることを確認してください（https://yourname.pythonanywhere.com/admin ）。それから、投稿したものがそこに見えるか、リロードしましょう。
 
 動くのが楽しくなってきたでしょう？少しパソコンから離れて、休憩しましょう：）
 

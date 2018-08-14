@@ -192,7 +192,6 @@ Djangoが作ってくれた移行ファイルを私たちがデータベース�
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
-      Rendering model states... DONE
       Applying blog.0001_initial... OK
     
 
