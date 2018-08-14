@@ -43,7 +43,7 @@ Gehe auf [GitHub.com](https://www.github.com) eröffne ein neues, kostenloses Ko
 
 # Fang an zu lesen!
 
-Herzlichen Glückwunsch, Du hast alles eingerichtet und bist nun bereit, loszulegen. Wenn Du vor dem Workshop noch etwas Zeit hast, wäre es hilfreich, einige der einführenden Kapitel zu lesen:
+Herzlichen Glückwunsch, du hast alles eingerichtet und bist nun bereit loszulegen! Wenn du vor dem Workshop noch etwas Zeit hast, wäre es hilfreich, einige der einführenden Kapitel zu lesen:
 
 * [Wie funktioniert das Internet?](../how_the_internet_works/README.md)
 
@@ -55,4 +55,4 @@ Herzlichen Glückwunsch, Du hast alles eingerichtet und bist nun bereit, loszule
 
 # Viel Spaß beim Workshop!
 
-Wenn Du mit dem Workshop anfängst, kannst Du direkt zum Kapitel [Dein erstes Django-Projekt!](../django_start_project/README.md) gehen, weil Du den Inhalt der vorhergehenden Kapitel schon bearbeitet hast.
+Wenn du mit dem Workshop anfängst, kannst du direkt zum Kapitel [Dein erstes Django-Projekt!](../django_start_project/README.md) gehen, weil du den Inhalt der vorhergehenden Kapitel schon bearbeitet hast.
