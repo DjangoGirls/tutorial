@@ -150,7 +150,7 @@ In Deiner neuen virtuellen Umgebung wird automatisch die richtige Version von `p
 
 Ok, jetzt ist die erforderliche Umgebung startklar und wir können endlich Django installieren!
 
-## Django Installation
+## Django-Installation
 
 Da du nun dein `virtualenv` gestartet hast, kannst du Django installieren.
 
@@ -182,9 +182,10 @@ Führe nun `pip install -r requirements.txt` aus, um Django zu installieren.
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ pip install -r requirements.txt 
-    Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))   
-    Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB) Installing collected packages: Django 
+    (myvenv) ~$ pip install -r requirements.txt
+    Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
+      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+    Installing collected packages: Django
     Successfully installed Django-{{ book.django_version }}
     
 
@@ -214,4 +215,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Das war's! Du bist nun (endlich) bereit, deine erste Django Anwendung zu starten!
+Das war's! Du bist nun (endlich) bereit, deine erste Django-Anwendung zu starten!

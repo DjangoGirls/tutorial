@@ -33,11 +33,11 @@ Sie sieht jetzt schon viel schöner aus!
 
 ## Statische Dateien in Django
 
-Schlussendlich werden wir einen genaueren Blick auf die Dinge werfen, die wir bisher **statische Dateien** genannt haben. Statische Dateien sind alle deine CSS- und Bilddateien. Ihr Inhalt hängt nicht vom Requestkontext ab, sondern gilt für alle Benutzer gleichermassen.
+Endlich werden wir einen genaueren Blick auf die Dinge werfen, die wir bisher **statische Dateien** genannt haben. Statische Dateien sind alle deine CSS- und Bilddateien. Ihr Inhalt hängt nicht vom Requestkontext ab, sondern gilt für alle Benutzer gleichermaßen.
 
 ### Wohin kommen die statischen Dateien für Django
 
-Django weiss schon wo die statischen Dateien für die integrierte "admin" App zu finden sind. Wir müssen nur noch die statischen Dateien für unsere `blog` App hinzufügen.
+Django weiss schon, wo die statischen Dateien für die integrierte "admin" App zu finden sind. Wir müssen nur noch die statischen Dateien für unsere `blog` App hinzufügen.
 
 Dies tun wir, indem wir einen Ordner namens `static` in der Blog-App erstellen:
 
@@ -49,11 +49,11 @@ Dies tun wir, indem wir einen Ordner namens `static` in der Blog-App erstellen:
     └── mysite
     
 
-Django wird automatisch alle 'static' Ordner in deinen Apps finden und die Dateien darin als statische Dateien nutzen.
+Django findet automatisch alle Ordner mit dem Namen "static" in allen unseren App-Ordnern. So ist es in der Lage, ihre Inhalte als statische Dateien zu nutzen.
 
 ## Deine erste CSS-Datei!
 
-Nun erstellen wir eine CSS-Datei, um deiner Website deinen eigenen Stil zu verleihen. Erstelle ein neues Verzeichnis namens `css` in deinem `static`-Verzeichnis. Dann erstelle eine neue Datei namens `blog.css` in diesem `css`-Verzeichnis. Fertig?
+Erstellen wir nun eine CSS-Datei, um deiner Website deinen eigenen Stil zu verleihen. Erstelle ein neues Verzeichnis namens `css` in deinem `static`-Verzeichnis. Dann erstelle eine neue Datei namens `blog.css` in diesem `css`-Verzeichnis. Fertig?
 
     djangogirls
     └─── blog
@@ -64,9 +64,9 @@ Nun erstellen wir eine CSS-Datei, um deiner Website deinen eigenen Stil zu verle
 
 Zeit, ein wenig CSS zu schreiben! Öffne die `blog/static/css/blog.css` Datei in Deinem Code-Editor.
 
-Wir gehen nicht zu sehr auf die Details von CSS ein. Wir haben am Ende des Kapitels einen Link auf eine Empfehlung für einen frei zugänglichen CSS Kurs angefügt, für diejenigen, die mehr über CSS lernen möchten.
+Wir gehen nicht zu sehr auf die Details von CSS ein. Für diejenigen, die mehr über CSS lernen möchten, haben wir am Ende des Kapitels einen Link auf eine Empfehlung für einen kostenlosen CSS-Kurs angefügt.
 
-Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. Diese Codes starten immer mit `#`, danach folgen sechs Buchstaben (A-F) und Zahlen (0-9). Blau zum Beispiel ist `#0000FF`. Beispiele für solche Farbcodes findest Du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/colors/colors_names.asp) wie `red` und `green` benutzen.
+Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. Diese Codes starten immer mit `#`, danach folgen sechs Buchstaben (A-F) und Zahlen (0-9). Blau zum Beispiel ist `#0000FF`. Beispiele für solche Farbcodes findest du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/colors/colors_names.asp) wie `red` und `green` benutzen.
 
 In deiner `blog/static/css/blog.css` Datei änderst du den folgenden Code:
 
@@ -88,7 +88,7 @@ In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg
 
 [Auf w3schools](http://www.w3schools.com/cssref/css_selectors.asp) erfährst du mehr über CSS-Selektoren.
 
-Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu musst du die Datei `blog/templates/blog/post_list.html` öffnen und diese Zeile ganz oben ergänzen:
+Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Öffne die Datei `blog/templates/blog/post_list.html` und füge diese Zeile ganz oben ein:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -96,7 +96,7 @@ Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Dazu mus
 {% load static %}
 ```
 
-Wir laden hier die statischen Dateien. :) Zwischen den Tags `<head>` und `</head>`, direkt nach den Links zu den Bootstrap-Dateien, füge noch diese Zeile ein:
+Wir laden hier die statischen Dateien. :) Füge zwischen den Tags `<head>` und `</head>`, direkt nach den Links zu den Bootstrap-Dateien, noch diese Zeile ein:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -161,7 +161,7 @@ Vielleicht können wir auch die Schrift in unserem HTML-Kopf anpassen? Füge die
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-Wie eben bereits gemacht, prüfe die Reihenfolge und platziere die Anweisung vor dem Link `blog/static/css/blog.css`. Sie importiert einen Font (Zeichensatz) mit Namen *Lobster* von Google Fonts (https://www.google.com/fonts).
+Wie eben bereits gemacht, prüfe die Reihenfolge und platziere die Anweisung vor dem Link `blog/static/css/blog.css`. Sie importiert eine Schriftart (engl. "Font") namens *Lobster* von Google Fonts (https://www.google.com/fonts).
 
 Suche den Anweisungsblock: `h1 a` (der Code zwischen den geschweiften Klammern `{` und `}`) in der CSS Datei `blog/static/css/blog.css`. Nun füge die Zeile `font-family: 'Lobster';` zwischen den geschweiften Klammern hinzu und aktualisiere die Seite:
 
@@ -178,9 +178,9 @@ h1 a {
 
 Super!
 
-Wie oben erwähnt, basiert CSS auf dem Konzept von Klassen. Dies erlaubt dir, einen Teil des HTML Codes mit einem Namen zu versehen und nur für diesen Teil einen Style hinzuzufügen, ganz ohne Auswirkungen auf andere Teile des Codes. Das kann sehr hilfreich sein! Eventuell hast Du zwei 'div's die etwas vollkommen Verschiedenes auszeichnen (wie einen Seitentitel oder Post Beitrag). Die Klasse hilft dir, sie unterschiedlich aussehen zu lassen.
+Wie oben erwähnt, basiert CSS auf dem Konzept von Klassen. Diese erlauben dir, einen Teil des HTML-Codes mit einem Namen zu versehen und die Darstellung dieses Teils separat von anderen Teilen mit einem Stil zu steuern. Das kann sehr hilfreich sein! Eventuell hast Du zwei 'div's die etwas vollkommen Verschiedenes auszeichnen (wie einen Seitentitel oder Post Beitrag). Die Klasse hilft dir, sie unterschiedlich aussehen zu lassen.
 
-Im nächsten Schritt werden wir den HTML-Code einteilen. Füge eine Klasse (class) namens `page-header` dem `div` hinzu, der die Kopfzeilen (header) enthalten soll:
+Geben wir also einigen Teilen deines HTML-Codes solche Namen. Füge eine Klasse (`class`) namens `page-header` dem `div` hinzu, das die Kopfzeilen (header) enthalten soll:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ Jetzt fügen wir dem `div` für den Blog-Inhalt (Post) noch eine Klasse `post` h
 </div>
 ```
 
-Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit `.` anfangen, beziehen sich auf Klassen im HTML. Es gibt im Internet viele gute Tutorials, die dir CSS weiter erläutern und helfen können, den folgenden Code besser zu verstehen. Für den Anfang reicht es aus, folgenden Text in deine `blog/static/css/blog.css`-Datei zu kopieren:
+Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit `.` anfangen, beziehen sich auf Klassen im HTML. Es gibt im Internet viele gute Tutorials und Informationen über CSS, die dir helfen können, den folgenden Code besser zu verstehen. Für den Anfang reicht es aus, folgenden Text in deine `blog/static/css/blog.css`-Datei zu kopieren:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -295,9 +295,9 @@ Speichere die geänderten Dateien und aktualisiere die Webseite.
 
 ![Abbildung 14.4](images/final.png)
 
-Juhuu! Sieht super aus, oder? Schau dir den Code an, den wir gerade eingefügt haben. Da siehst du, wo wir überall Klassen zu den HTML Objekten hinzugefügt haben, um sie in CSS zu referenzieren. Wo würdest du eine Änderung machen, um das Datum in Türkis anzuzeigen?
+Juhuu! Sieht super aus, oder? Schau dir den Code an, den wir gerade eingefügt haben. Da siehst du, wo wir überall Klassen zu den HTML-Objekten hinzugefügt haben, um sie in CSS zu referenzieren. Wo würdest du eine Änderung machen, um das Datum in Türkis anzuzeigen?
 
-Hab keine Angst, etwas mit dieser CSS Datei herumzuspielen und versuche, ein paar Dinge zu ändern. Mit CSS herumzuspielen, kann dir helfen zu verstehen, was die verschiedenen Dinge genau machen. Mach dir keine Sorgen, wenn etwas kaputt geht, du kannst deine Änderungen immer rückgängig machen!
+Hab keine Angst, etwas mit dieser CSS-Datei herumzuspielen, und versuche, ein paar Dinge zu ändern. Mit CSS herumzuspielen, kann dir helfen zu verstehen, was die verschiedenen Dinge genau machen. Mach dir keine Sorgen, wenn etwas kaputt geht, du kannst deine Änderungen immer rückgängig machen!
 
 Wir empfehlen diesen kostenlosen [Codeacademy HTML & CSS Kurs](https://www.codecademy.com/tracks/web). Er wird dir helfen, deine Webseiten mit CSS schöner zu gestalten.
 

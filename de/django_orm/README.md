@@ -1,4 +1,4 @@
-# Django ORM und QuerySets
+# Django-ORM und QuerySets
 
 In diesem Kapitel lernst du, wie sich Django mit der Datenbank verbindet und Daten darin speichert. Lass uns loslegen!
 
@@ -8,7 +8,7 @@ Zusammengefasst ist ein QuerySet eine Liste von Objekten eines bestimmten Models
 
 Am besten wir sehen uns das an einem Beispiel an. Versuchen wir's?
 
-## Django Shell
+## Django-Shell
 
 Öffne deine lokale Konsole (nicht in PythonAnywhere) und tippe dieses Kommando ein:
 
@@ -71,7 +71,7 @@ So erstellst du ein neues Post-Objekt in der Datenbank:
 
 Allerdings fehlt noch eine Zutat: `me`. Wir müssen eine Instanz des Models `User` als Autor übergeben. Wie macht man das?
 
-Als Erstes müssen wir das User Model importieren:
+Als Erstes müssen wir das User-Model importieren:
 
 {% filename %}command-line{% endfilename %}
 

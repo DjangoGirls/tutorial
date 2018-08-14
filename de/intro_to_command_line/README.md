@@ -12,7 +12,7 @@ Im Folgenden zeigen wir dir, wie du das schwarze Fenster benutzt, das alle Hacke
 
 ## Was ist die Konsole?
 
-Das Fenster, welches gewöhnlich die **Kommandokonsole** (command line) oder **Kommandozeilen-Interface** (command-line interface) genannt wird, ist eine textbasierte Applikation zum Betrachten, Bearbeiten und Manipulieren von Dateien auf deinem Computer. Es ist dem Windows Explorer oder Finder auf dem Mac ähnlich, aber ohne die grafische Benutzeroberfläche. Andere Bezeichnungen dafür sind: *cmd*, *CLI*, *prompt*, *Eingabeaufforderung*, *Konsole* oder <0>Terminal</0>.
+Das Fenster, welches gewöhnlich die **Kommandokonsole** (command line) oder **Kommandozeilen-Interface** (command-line interface) genannt wird, ist eine textbasierte Applikation zum Betrachten, Bearbeiten und Manipulieren von Dateien auf deinem Computer. Es ist dem Windows Explorer oder Finder auf dem Mac ähnlich, aber ohne die grafische Benutzeroberfläche. Andere Bezeichnungen dafür sind: *CMD*, *CLI*, *Prompt (Eingabeaufforderung)*, *Konsole* oder *Terminal*.
 
 ## Öffnen der Konsole
 
@@ -220,7 +220,7 @@ Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
 <!--endsec-->
 
-Hier ist es!
+Passt!
 
 > Pro-Tipp: Wenn du `cd D` tippst und dann `tab` auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit "D" beginnt, drücke die `tab`-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.
 
@@ -267,6 +267,7 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
     $ cd practice
     $ mkdir test 
     $ ls test
+    test
     
 
 <!--endsec-->

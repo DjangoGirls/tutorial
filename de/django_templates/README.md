@@ -1,12 +1,12 @@
-# Django Templates
+# Django-Templates
 
-Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar sehr hilfreiche **Template Tags** mit.
+Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar sehr hilfreiche **Template-Tags** mit.
 
-## Was sind Template Tags?
+## Was sind Template-Tags?
 
-Also, in HTML kann man nicht wirklich Python-Code schreiben, weil es der Browser nicht verstehen würde. Aber er kennt HTML. Wir wissen, dass HTML, im Gegensatz zum dynamischeren Python, eher statisch ist.
+Also, in HTML kann man nicht wirklich Python-Code schreiben, weil es der Browser nicht verstehen würde. Denn der kennt nur HTML. Wir wissen, dass HTML ziemlich statisch ist, während Python dynamischer ist.
 
-Die **Django Template Tags** helfen dabei, Python-Dinge in HTML auszudrücken, so dass man einfach und schnell dynamische Websites erstellen kann. Super!
+Die **Django-Template-Tags** erlauben uns, Python-artige Dinge ins HTML zu bringen, so dass man einfach und schnell dynamische Websites erstellen kann. Super!
 
 ## Anzeigen des Post-List-Templates
 
@@ -46,7 +46,7 @@ Versuch das in deinem Template.
 
 ![Abbildung 13.2](images/step2.png)
 
-Es funktioniert! Aber wir wollen, dass die Posts so angezeigt werden, wie die statischen Posts, die wir vorhin im **Einführung in HTML** Kapitel erstellt haben. Du kannst HTML und Template Tags mischen. Unser `body` sollte dann so aussehen:
+Es funktioniert! Aber wir wollen, dass die Posts so wie die statischen Posts angezeigt werden, die wir vorhin im **Einführung in HTML**-Kapitel erstellt haben. Du kannst HTML und Template Tags mischen. Unser `body` sollte dann so aussehen:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -68,7 +68,7 @@ Es funktioniert! Aber wir wollen, dass die Posts so angezeigt werden, wie die st
 
 ![Abbildung 13.3](images/step3.png)
 
-Ist dir aufgefallen, dass wir diesmal eine etwas andere Notation benutzen haben (`{{ post.title }}` oder `{{ post.text }}`)? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. In den Posttexten konvertiert außerdem der `|linebreaks`-Befehl ("pipe") Zeilenumbrüche in Absätze.
+Ist dir aufgefallen, dass wir diesmal eine etwas andere Notation benutzen haben (`{{ post.title }}` oder `{{ post.text }}`)? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. Außerdem leitet das `|linebreaksbr` den Text der Posts durch einen Filter, um Zeilenumbrüche in Absätze umzuwandeln.
 
 ## Und zum Schluss
 
@@ -78,13 +78,13 @@ Es wäre gut zu sehen, ob deine Website noch immer im öffentlichen Internet fun
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status 
-    [...] 
-    $ git add --all . 
-    $ git status 
-    [...] 
-    $ git commit -m "Modified templates to display posts from database." 
-    [...] 
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
     $ git push
     
 
@@ -92,12 +92,12 @@ Es wäre gut zu sehen, ob deine Website noch immer im öffentlichen Internet fun
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd $USER.pythonanywhere.com 
-    $ git pull 
+    $ cd $USER.pythonanywhere.com
+    $ git pull
     [...]
     
 
-* Zum Schluss hüpf noch einmal kurz rüber zum [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und drück auf **Reload**. Deine Änderungen sollten jetzt live sein! Wenn die Blogposts auf deiner PythonAnywhere Seite anders sind als die auf deinem lokalen Server, ist das in Ordnung so. Die Datenbanken auf deinem lokalen Computer und auf PythonAnywhere synchronisieren sich nicht.
+* Zum Schluss hüpf noch einmal kurz rüber zum [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und drück auf **Reload**. Deine Änderungen sollten jetzt live sein! Wenn die Blogposts auf deiner PythonAnywhere-Seite anders sind als die auf deinem lokalen Server, ist das in Ordnung so. Die Datenbanken auf deinem lokalen Computer und auf PythonAnywhere werden nicht zusammen mit den restlichen Dateien abgeglichen.
 
 Glückwunsch! Nun kannst du dich daran machen, neue Posts in deinem Django Admin zu erstellen (denk daran, auch ein published_date einzufügen!). Stell sicher, dass du im Django Admin der PythonAnywhere Seite https://yourname.pythonanywhere.com/admin arbeitest. Dann aktualisiere die Seite und schau nach, ob die Posts dort erscheinen.
 

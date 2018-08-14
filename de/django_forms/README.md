@@ -1,14 +1,14 @@
-# Django Formulare
+# Django-Formulare
 
 Als Letztes möchten wir auf unserer Website noch die Möglichkeit haben, Blogposts hinzuzufügen und zu editieren. Die Django `admin`-Oberfläche ist cool, aber eher schwierig anzupassen und hübsch zu machen. Mit Formularen, `forms`, haben wir die absolute Kontrolle über unser Interface - wir können fast alles machen, was man sich vorstellen kann!
 
-Das Gute an Django Forms ist, dass man sie entweder vollständig selbst definieren oder eine `ModelForm` erstellen kann, welche den Inhalt des Formulars in das Model speichert.
+Das Gute an Django-Forms ist, dass man sie entweder vollständig selbst definieren oder eine `ModelForm` erstellen kann, welche den Inhalt des Formulars in das Model speichert.
 
 Genau das wollen wir jetzt machen: Wir erstellen ein Formular für unser `Post` Model.
 
 So wie die anderen wichtigen Django-Komponenten haben auch die Forms ihre eigene Datei: `forms.py`.
 
-Wir erstellen nun eine Datei mit diesem Namen im `blog` Verzeichnis.
+Wir erstellen nun eine Datei mit diesem Namen im `blog`-Verzeichnis.
 
     blog
        └── forms.py
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
          fields = ('title', 'text',)
 ```
 
-Zuerst müssen wir die Django Forms importieren (`from django import forms`) und natürlich auch unser `Post` Model (`from .models import Post`).
+Zuerst müssen wir die Django-Forms importieren (`from django import forms`) und natürlich auch unser `Post`-Model (`from .models import Post`).
 
 Wie du wahrscheinlich schon vermutet hast, `PostForm` ist der Name unseres Formulars. Wir müssen Django mitteilen, dass unser Formular ein `ModelForm` ist (so kann Django ein bisschen für uns zaubern) - `forms.ModelForm` ist dafür verantwortlich.
 
@@ -52,7 +52,7 @@ Jetzt ist es an der Zeit, `blog/templates/blog/base.html` zu öffnen. Wir fügen
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Beachte, dass wir unsere neue View `post_new` nennen wollen. Die Klasse `"glyphicon glyphicon-plus"` wird durch das verwendete Bootstrap Theme zur Verfügung gestellt und wird ein Pluszeichen anzeigen.
+Beachte, dass wir unsere neue View `post_new` nennen wollen. Die Klasse `"glyphicon glyphicon-plus"` wird durch das verwendete Bootstrap-Theme zur Verfügung gestellt und wird ein Pluszeichen anzeigen.
 
 Nach dem Hinzufügen der Zeile sieht deine HTML-Datei so aus:
 
@@ -111,11 +111,11 @@ urlpatterns = [
 ]
 ```
 
-Nach dem Neuladen der Site sehen wir einen `AttributeError`, weil wir noch keine `post_new` View eingefügt haben. Fügen wir sie gleich hinzu!
+Nach dem Neuladen der Site sehen wir einen `AttributeError`, weil wir noch keine `post_new`-View eingefügt haben. Fügen wir sie gleich hinzu!
 
 ## Die post_new View
 
-Jetzt wird es Zeit, die `blog/views.py` Datei zu öffnen und die folgenden Zeilen zu den anderen `from` Zeilen hinzuzufügen:
+Jetzt wird es Zeit, die `blog/views.py` Datei zu öffnen und die folgenden Zeilen zu den anderen `from`-Zeilen hinzuzufügen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -221,7 +221,7 @@ if form.is_valid():
 
 Im Grunde passieren hier zwei Dinge: Wir speichern das Formular mit `form.save` und wir fügen einen Autor hinzu (da es bislang kein `author` Feld in der `PostForm` gab und dieses Feld notwendig ist). `commit=False` bedeutet, dass wir das `Post` Model noch nicht speichern wollen - wir wollen erst noch den Autor hinzufügen. Meistens wirst du `form.save()` ohne `commit=False` benutzen, aber in diesem Fall müssen wir es so tun. `post.save()` wird die Änderungen sichern (den Autor hinzufügen) und ein neuer Blogpost wurde erstellt!
 
-Wäre es nicht grossartig, wenn wir direkt zu der `post_detail` Seite des neu erzeugten Blog Posts gehen könnten? Um dies zu tun, benötigen wir noch einen zusätzlichen Import:
+Wäre es nicht grossartig, wenn wir direkt zu der `post_detail` Seite des neu erzeugten Blogposts gehen könnten? Um dies zu tun, benötigen wir noch einen zusätzlichen Import:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -264,15 +264,15 @@ Du hast vielleicht bemerkt, dass wir das Veröffentlichungsdatum festlegen, bevo
 
 Das ist genial!
 
-> Da wir vor Kurzem das Django Admin Interface benutzt haben, denkt das System, dass wir noch angemeldet sind. Es gibt einige Situationen, welche dazu führen können, dass wir ausgeloggt werden (Schließen des Browsers, Neustarten der Datenbank etc). Wenn du feststellst, dass du bei dem Erstellen von Posts Fehlermeldungen bekommst, die auf nicht angemeldete Nutzer zurückzuführen sind, dann gehe zur Admin Seite http://127.0.0.1:8000/admin und logge dich erneut ein. Dies wird das Problem vorübergehend lösen. Es gibt eine permanente Lösung dafür, die im Kapitel **Homework: add security to your website!** nach dem Haupttutorial auf dich wartet.
+> Da wir vor Kurzem das Django-Admin-Interface benutzt haben, denkt das System, dass wir noch angemeldet sind. Es gibt einige Situationen, welche dazu führen können, dass wir ausgeloggt werden (Schließen des Browsers, Neustarten der Datenbank etc). Wenn du feststellst, dass du bei dem Erstellen von Posts Fehlermeldungen bekommst, die auf nicht angemeldete Nutzer zurückzuführen sind, dann gehe zur Admin Seite http://127.0.0.1:8000/admin und logge dich erneut ein. Dies wird das Problem vorübergehend lösen. Es gibt eine permanente Lösung dafür, die im Kapitel **Homework: add security to your website!** nach dem Haupttutorial auf dich wartet.
 
 ![Logged in error](images/post_create_error.png)
 
 ## Formularvalidierung
 
-Jetzt zeigen wir dir, wie cool Django Formulare sind. Ein Blogpost muss `title`- und `text`-Felder besitzen. In unserem `Post`-Model haben wir (im Gegensatz zu dem `published_date`) nicht festgelegt, dass diese Felder nicht benötigt werden, also nimmt Django standardmäßig an, dass sie definiert werden.
+Jetzt zeigen wir dir, wie cool Django-Formulare sind. Ein Blogpost muss `title`- und `text`-Felder besitzen. In unserem `Post`-Model haben wir (im Gegensatz zu dem `published_date`) nicht festgelegt, dass diese Felder nicht benötigt werden, also nimmt Django standardmäßig an, dass sie definiert werden.
 
-Versuch das Formular ohne `title` und `text` zu speichern. Rate, was passieren wird!
+Versuch, das Formular ohne `title` und `text` zu speichern. Rate, was passieren wird!
 
 ![Formularvalidierung](images/form_validation2.png)
 
@@ -341,7 +341,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Sieht genauso aus wie unsere `post_new` View, oder? Aber nicht ganz. Zum einen übergeben wir zusätzliche `pk` Parameter von urls. Und: Wir bekommen das `Post`-Model, welches wir bearbeiten wollen, mit `get_object_or_404(Post, pk=pk)` und wenn wir dann ein Formular erstellen, übergeben wir post als `instance`, wenn wir das Formular speichern…
+Sieht genauso aus wie unsere `post_new`-View, oder? Aber nicht ganz. Zum einen übergeben wir zusätzliche `pk` Parameter von urls. Und: Wir bekommen das `Post`-Model, welches wir bearbeiten wollen, mit `get_object_or_404(Post, pk=pk)` und wenn wir dann ein Formular erstellen, übergeben wir post als `instance`, wenn wir das Formular speichern…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -369,7 +369,7 @@ Probier doch einmal, den Titel oder den Text zu ändern und die Änderungen zu s
 
 Herzlichen Glückwunsch! Deine Anwendung nimmt immer mehr Gestalt an!
 
-Falls du mehr Informationen über Django Formulare benötigst, solltest du die offizielle Dokumentation lesen: https://docs.djangoproject.com/en/2.0/topics/forms/.
+Falls du mehr Informationen über Django-Formulare benötigst, solltest du die offizielle Dokumentation lesen: https://docs.djangoproject.com/en/2.0/topics/forms/.
 
 ## Sicherheit
 

@@ -1,6 +1,6 @@
-# Django Administration
+# Django-Administration
 
-Wir benutzen den Django Admin, um die soeben modellierten Posts hinzuzufügen, zu ändern oder zu löschen.
+Wir benutzen den Django-Admin, um die soeben modellierten Posts hinzuzufügen, zu ändern oder zu löschen.
 
 Öffne die Datei `blog/admin.py` und ersetze den Inhalt wie folgt:
 
@@ -42,7 +42,7 @@ Wenn du dazu aufgefordert wirst, gib einen Benutzernamen (Kleinbuchstaben, keine
     Superuser created successfully.
     
 
-Geh nochmal in deinen Browser und log dich mit den Daten des Superusers ein, den du gerade erstellt hast. Du solltest nun das Django Admin Dashboard sehen.
+Geh nochmal in deinen Browser und log dich mit den Daten des Superusers ein, den du gerade erstellt hast. Du solltest nun das Django-Admin-Dashboard sehen.
 
 !["Django Admin"-Weboberfläche](images/django_admin3.png)
 
@@ -52,6 +52,6 @@ Achte darauf, dass bei wenigstens zwei oder drei Posts (aber nicht bei allen) da
 
 !["Django Admin"-Weboberfläche](images/edit_post3.png)
 
-Mehr zum Django Admin Dashboard kannst du in der Django Dokumentation erfahren: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/.
+Mehr zum Django-Admin-Dashboard kannst du in der Django-Dokumentation erfahren: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/.
 
 Jetzt ist wahrscheinlich ein guter Moment, um dir einen Kaffee (oder Tee) zu gönnen und neue Kraft zu tanken. Du hast dein erstes Django-Model erstellt - du hast dir eine kleine Pause verdient!

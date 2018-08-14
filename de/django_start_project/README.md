@@ -44,13 +44,13 @@ Auf Windows solltest du den folgenden Befehl ausführen. **(Vergiss den Punkt (`
 
 `django-admin.py` ist ein Skript, welches Verzeichnisse und Dateien für dich erstellt. Du solltest jetzt eine Verzeichnisstruktur haben, die folgendermaßen aussieht:
 
-    djangogirls 
-    ├───manage.py 
-    ├───mysite 
-    │     settings.py 
-    │     urls.py 
-    │     wsgi.py 
-    │     __init__.py 
+    djangogirls
+    ├───manage.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
     └───requirements.txt
     
 
@@ -113,7 +113,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 ## Eine Datenbank erstellen
 
-Es gibt viele verschiedene Datenbank Programme, welche die Daten unserer Website verwalten können. Wir werden die Standard Datenbanksoftware nehmen, `sqlite3`.
+Es gibt viele verschiedene Datenbank Programme, welche die Daten unserer Website verwalten können. Wir werden die Standard-Datenbanksoftware nehmen, `sqlite3`.
 
 Das sollte schon in der `mysite/settings.py`-Datei eingestellt sein:
 

@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/django_installation/instructions.md" %}
 
-# Einen Code Editor installieren
+# Einen Code-Editor installieren
 
 {% include "/code_editor/instructions.md" %}
 

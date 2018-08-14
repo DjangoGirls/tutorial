@@ -30,7 +30,7 @@ Git verwaltet die Veränderungen an einer Sammlung von Dateien in einem sogenann
     $ git config --global user.email du@beispiel.com
     
 
-Die Initialisierung des Git Repositorys müssen wir für jedes Projekt nur einmal machen (danach musst Du Benutzernamen und Mail-Adresse nie wieder eingeben).
+Die Initialisierung des Git-Repositorys müssen wir für jedes Projekt nur einmal machen (danach musst Du Benutzernamen und Mail-Adresse nie wieder eingeben).
 
 Git wird die Änderungen an all den Dateien und Ordnern in diesem Verzeichnis aufzeichnen. Wir wollen aber, dass einige Dateien ignoriert werden. Dazu legen wir eine Datei `.gitignore` im Basisverzeichnis des Repos an. Öffne deinen Editor und erstelle eine neue Datei mit dem folgenden Inhalt:
 
@@ -55,18 +55,19 @@ Es ist hilfreich den Befehl `git status` vor `git add` auszuführen oder immer d
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status 
-    On branch master 
+    $ git status
+    On branch master
     
-    Initial commit 
+    Initial commit
     
     Untracked files:
-     (use "git add <file>..." to include in what will be committed)         
-        .gitignore         
-        blog/         
-        manage.py         
-        mysite/         
-        requirements.txt 
+      (use "git add <file>..." to include in what will be committed)
+    
+            .gitignore
+            blog/
+            manage.py
+            mysite/
+            requirements.txt
     
     nothing added to commit but untracked files present (use "git add" to track)
     
@@ -94,7 +95,7 @@ Erstelle dann ein neues Repository und gib ihm den Namen "my-first-blog". Lass d
 
 > **Achtung:** Der Name `my-first-blog` ist wichtig -- du kannst auch einen anderen wählen, aber er wird im Folgenden noch sehr oft vorkommen und du wirst immer daran denken müssen, ihn in den Anweisungen entsprechend anzupassen. Lass es daher besser erst mal bei `my-first-blog`.
 
-Auf der nächsten Seite wird dir die Clone-URL deines Repos angezeigt. Nimm die HTTPS-Variante, kopiere sie und füge sie in der Konsole ein:
+Auf der nächsten Seite wird dir die Clone-URL deines Repos angezeigt. Nimm die HTTPS-Variante, kopiere sie, damit wir sie dann gleich in die Konsole einfügen können:
 
 ![](images/github_get_repo_url_screenshot.png)
 
@@ -166,7 +167,7 @@ Während du die Ausführung verfolgst, wirst du sehen, was passiert:
 - Deine Einstellungen mit ein paar Veröffentlichungseinstellungen aktualisieren
 - Eine Datenbank auf PythonAnywhere einrichten mit dem Befehl `manage.py migrate`
 - Deine statischen Dateien einrichten (darüber lernen wir später etwas)
-- PythonAnywhere so einrichten, dass es deine Web App über seine Schnittstelle (API) präsentieren kann
+- PythonAnywhere so einrichten, dass es deine Web-App über seine Schnittstelle (API) präsentieren kann
 
 Diese Schritte wurden auf PythonAnywhere automatisiert, aber es sind die selben Schritte, die du bei jedem anderen Server-Provider machen müsstest. Das Wichtigste ist, dass du weisst, dass deine Datenbank auf PythonAnywhere komplett von deiner Datenbank auf deinem eigenen PC getrennt ist. Das bedeutet, sie kann unterschiedliche Posts und Administratorenkonten haben.
 
@@ -183,9 +184,11 @@ Nun kannst auch einen Blick auf deinen Code auf PythonAnywhere werfen mittels `l
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    (ola.pythonanywhere.com) $ ls 
-    blog db.sqlite3 manage.py mysite requirements.txt static (ola.pythonanywhere.com) $ ls blog/
-    __init__.py __pycache__ admin.py forms.py migrations models.py static templates tests.py urls.py views.py
+    (ola.pythonanywhere.com) $ ls
+    blog  db.sqlite3  manage.py  mysite requirements.txt static
+    (ola.pythonanywhere.com) $ ls blog/
+    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
+    templates  tests.py  urls.py  views.py
     
 
 Du kannst auch über den "Files"-Tab mit dem PythonAnywhere Built-in File Browser navigieren.
@@ -200,7 +203,7 @@ Nun ist deine Site also live im öffentlichen Internet! Klick dich bis zum Pytho
 
 Solltest du beim Ausführen des `pa_autoconfigure_django.py` Skripts eine Fehlermeldung erhalten, findest du folgend ein paar bekannte Gründe hierfür:
 
-- Du hast vergessen deinen PythonAnywhere API Token zu erstellen.
+- Du hast vergessen deinen PythonAnywhere API-Token zu erstellen.
 - Du hast in deiner GitHub-URL einen Fehler gemacht.
 - Falls du die Fehlermeldung *"Could not find your settings.py"* erhältst, liegt das wahrscheinlich daran, dass du nicht alle Files zum Git hinzugefügt und/oder diese nicht erfolgreich auf GitHub veröffentlicht hast. Schau dir nochmals den Git-Abschnitt weiter oben an.
 
@@ -210,7 +213,7 @@ Du findest einige [Allgemeine Debugging Tipps im PythonAnywhere Wiki](http://hel
 
 Und denke daran, dein Coach ist da, um zu helfen!
 
-# Zieh dir deine Site rein!
+# Schau dir deine Website an!
 
 Auf der Defaultseite deiner Site sollte "It worked!" stehen - genau so wie auf deinem lokalen Computer. Füge nun `/admin/` ans Ende deiner URL an und du kommst auf die Admin-Site. Melde dich mit deinem Benutzernamen und Passwort an. Nun kannst du neue Posts auf dem Server hinzufügen.
 

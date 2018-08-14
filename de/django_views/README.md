@@ -1,4 +1,4 @@
-# Django views - leg los!
+# Django-Views - leg los!
 
 Es wird jetzt Zeit, den Bug, den wir im letzten Kapitel erzeugt haben, zu beheben! :)
 
