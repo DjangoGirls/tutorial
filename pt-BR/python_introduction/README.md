@@ -236,7 +236,7 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-Um erro! O Python tem diferentes tipos de erros e este é chamado **NameError**. O Python mostrará esta mensagem de erro se você tentar usar uma variável que ainda não foi definida. Se você encontrar esse erro mais tarde, confira no seu código se você não digitou errado o nome de uma variável.
+Um erro! O Python tem diferentes tipos de erros e este é chamado **NameError**. O Python mostrará esta mensagem se você tentar usar uma variável que ainda não foi definida. Se encontrar esse erro mais tarde, confira no seu código se você não digitou errado o nome de uma variável.
 
 Brinque com isso por um tempo e veja o que consegue fazer!
 
@@ -271,7 +271,7 @@ Vá em frente e crie uma lista:
 []
 ```
 
-Sim, esta é uma lista vazia. Não é muito útil, né? Vamos criar uma composta por números de loteria. Para não precisar repetir o código o tempo todo, vamos atribuí-lo a uma variável:
+Sim, esta é uma lista vazia. Não é muito útil, né? Vamos criar uma outra composta por números de loteria. Para não precisar repetir o código o tempo todo, vamos atribuí-la a uma variável:
 
 {% filename %}command-line{% endfilename %}
 
