@@ -127,18 +127,18 @@ Se você quer saber o número de letras contidas em seu nome, há uma **função
 3
 ```
 
-Talvez você esteja se perguntando porque algumas vezes chamamos funções com um `.` depois de uma string (como `"Ola".upper()`) e outras vezes primeiro chamamos a função e colocamos a string entre parênteses. Bem, em alguns casos, funções pertencem a objetos -- como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Em outras vezes, funções não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, assim como `len()`. É por isso que nós estamos fornecendo `"Ola"` como um parâmetro para a função `len`.
+Talvez você esteja se perguntando porque algumas vezes chamamos funções com um `.` depois de uma string (como `"Ola".upper()`) e outras vezes primeiro chamamos a função e colocamos a string entre parênteses. Bem, em alguns casos, funções pertencem a objetos - como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Outras vezes, elas não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, como a função `len()`. É por isso que nós estamos fornecendo `"Ola"` como um parâmetro para a função `len`.
 
 ### Sumário
 
 OK, chega de strings. Até agora, você aprendeu sobre:
 
-- **o prompt** -- digitar comandos (códigos) no interpretador de Python resulta em respostas em Python
-- **números e strings** -- no Python, números são usados para matemática e strings, para objetos de texto
-- **operadores** -- como `+` e `*`, combinam valores para produzir um novo valor
+- **o prompt** - digitar comandos (códigos) no interpretador de Python resulta em respostas em Python
+- **números e strings** - no Python, números são usados para matemática e strings, para objetos de texto
+- **operadores** - como `+` e `*`, combinam valores para produzir um novo valor
 - **funções** -- como `upper()` e `len()`, executam ações nos objetos.
 
-Esse é o básico de todas as linguagens de programação que você aprender. Pronta para algo mais difícil? Apostamos que sim!
+Esse é o básico de todas as linguagens de programação. Pronta para algo mais difícil? Apostamos que sim!
 
 ## Erros
 
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Temos nosso primeiro erro! O ícone {{ warning_icon }} é a forma que o Pyhton tem para avisar que o código que você está prestes a executar não vai funcionar conforme o esperado. Cometer erros (inclusive intencionalmente) é uma parte importante da aprendizamgem!
+Temos nosso primeiro erro! O ícone {{ warning_icon }} é a forma que o Pyhton tem para avisar que o código que você está prestes a executar não vai funcionar conforme o esperado. Cometer erros (inclusive intencionalmente) é uma parte importante da aprendizagem!
 
-Nossa primeira mensagem de erro nos diz que objetos do tipo "int" (inteiros, naturais) não têm comprimento algum. Então o que podemos fazer agora? Podemos escrever nosso número como string? Strings têm comprimento, certo?
+Nossa primeira mensagem de erro nos diz que objetos do tipo "int" (inteiros, naturais) não têm comprimento algum. O que podemos fazer agora? Podemos escrever nosso número como string? Strings têm comprimento, certo?
 
 {% filename %}command-line{% endfilename %}
 
@@ -169,11 +169,11 @@ Funcionou! Usamos a função `str` dentro da função `len`. A função `str ()`
 - A função `str` converte as coisas em **strings**
 - A função `int` converte as coisas em **números inteiros**
 
-> Importante: podemos converter números em texto, mas nem sempre é possível converter texto em números -- o que `int('hello')` quer dizer?
+> Importante: podemos converter números em texto, mas nem sempre é possível converter texto em números - o que `int('hello')` quer dizer?
 
 ## Variáveis
 
-Variáveis são um conceito importante em programação. Uma variável é apenas um nome que você atribui a alguma coisa de tal forma que possa usá-lo mais tarde. Os programadores usam essas variáveis para armazenar dados, para tornar seus códigos mais legíveis e para não ter que se lembrar a todo momento o que são certas coisas.
+Variáveis são um conceito importante em programação. Uma variável é apenas um nome que você atribui a um objeto. Programadores armazenam dados nelas para tornar seus códigos mais legíveis e para não ter que lembrar a todo momento o que são certas coisas.
 
 Digamos que queremos criar uma nova variável chamada `nome`:
 
@@ -194,7 +194,7 @@ Como você deve ter percebido, a última linha de código não retornou nada com
 'Ola'
 ```
 
-Uhuuu! Sua primeira variável! :) Você sempre pode mudar o valor dela:
+Uhuuu! Sua primeira variável! :) Você pode mudar o valor dela:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Você pode usá-la também em funções:
 5
 ```
 
-Incrível, né? Claro, variáveis podem ser qualquer coisa, então podem ser números também! Tente isso:
+Incrível, né? Variáveis podem ser qualquer coisa, então podem ser números também! Tente isso:
 
 {% filename %}command-line{% endfilename %}
 
@@ -236,7 +236,7 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-Um erro! Como você pode ver, o Python tem diferentes tipos de erros e este é chamado **NameError**. O Python mostrará esta mensagem de erro se você tentar usar uma variável que ainda não foi definida. Se você encontrar esse erro mais tarde, confira no seu código se você não digitou errado o nome de uma variável.
+Um erro! O Python tem diferentes tipos de erros e este é chamado **NameError**. O Python mostrará esta mensagem de erro se você tentar usar uma variável que ainda não foi definida. Se você encontrar esse erro mais tarde, confira no seu código se você não digitou errado o nome de uma variável.
 
 Brinque com isso por um tempo e veja o que consegue fazer!
 
