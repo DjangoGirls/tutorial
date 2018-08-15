@@ -55,13 +55,13 @@ Como já sabemos o que queremos alcançar, podemos começar a modelar em Django!
 
 Sabendo o que um objeto é, criamos um modelo no Django para a postagem do blog.
 
-Um modelo no Django é um tipo especial de objeto -- ele é salvo em um `banco de dados`. Um banco de dados é uma coleção de dados. Ele é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. Este é o banco de dados padrão do Django -- e ele será o suficiente neste primeiro momento.
+Um modelo no Django é um tipo especial de objeto -- ele é salvo em um `banco de dados`. Um banco de dados é uma coleção de dados. Ele é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. Este é o banco de dados padrão do Django -- e ele será suficiente neste primeiro momento.
 
 Você pode pensar em um modelo de banco de dados como uma planilha com colunas (campos) e linhas (dados).
 
 ### Criando uma aplicação
 
-Para manter tudo arrumado, vamos criar uma aplicação separada dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar uma aplicação, precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
+Para manter tudo arrumado, vamos criar uma aplicação separada dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar uma aplicação, precisamos executar o seguinte comando no prompt (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -144,15 +144,15 @@ class Post(models.Model):
 
 Parece assustador, né? Mas não se preocupe, vamos explicar o que essas linhas significam!
 
-Todas as linhas começando com `from` ou `import` são linhas que adicionam alguns pedaços de outros arquivos. Então ao invés de copiar e colar as mesmas coisas em cada arquivo, podemos incluir algumas partes com `from... import ...`.
+Todas as linhas começando com `from` ou `import` são linhas que adicionam pedaços de outros arquivos. Então ao invés de copiar e colar as mesmas coisas em cada arquivo, podemos incluir algumas partes com `from... import ...`.
 
-`class Post(models.Model):` -- esta linha define o nosso modelo (é um `objeto`).
+`class Post(models.Model):` - esta linha define o nosso modelo (é um `objeto`).
 
 - `class` é uma palavra-chave especial que indica que estamos definindo um objeto.
 - `Post` é o nome do nosso modelo. Nós podemos dar um nome diferente (mas precisamos evitar caracteres especiais e espaços em branco). Sempre inicie o nome de uma classe com uma letra em maiúsculo.
-- `models.Model` significa que o Post é um modelo de Django, então o Django sabe ele que deve ser salvo no banco de dados.
+- `models.Model` significa que o Post é um modelo de Django, então o Django sabe que ele deve ser salvo no banco de dados.
 
-Agora definimos as propriedades que comentamos acima: `title`, `text`, `created_date`, `published_date` e `author`. Para fazer isso, é necessário definir um tipo para cada campo (É um texto? Um número? Uma data? Uma relação com outro objeto, por exemplo, um usuário?)
+Agora definiremos as propriedades comentadas acima: `title`, `text`, `created_date`, `published_date` e `author`. Para fazer isso, é necessário definir um tipo para cada campo (É um texto? Um número? Uma data? Uma relação com outro objeto, por exemplo, um usuário?)
 
 - `models.CharField` - é assim que definimos um texto com um número limitado de caracteres.
 - `models.TextField` - este campo é para textos sem um limite fixo. Parece ideal para o conteúdo de um blog, né?
@@ -171,7 +171,7 @@ Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para
 
 ### Criando tabelas para nossos modelos no banco de dados
 
-O último passo é adicionar nosso novo modelo ao banco de dados. Primeiramente, precisamos fazer com que o Django entenda que fizemos algumas alterações nos nossos modelos. (Nós acabamos de criar um modelo de Post!) Vá para o console e digite `python manage.py makemigrations blog`. Deve ficar assim:
+O último passo é adicionar nosso novo modelo ao banco de dados. Primeiramente, precisamos fazer com que o Django entenda que fizemos algumas alterações nos nossos modelos. (Acabamos de criar um modelo de Post!) Vá para o console e digite `python manage.py makemigrations blog`. Deve ficar assim:
 
 {% filename %}command-line{% endfilename %}
 
