@@ -8,9 +8,9 @@ Existe um conceito em programação chamado `programação orientada a objetos`.
 
 Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos mostrar um exemplo.
 
-Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade fosse vazia).
+Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade seja vazia).
 
-`Gato` também realiza algumas ações: `ronronar`, `arranhar` ou `alimentar`-se (no qual podemos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades como `sabor`).
+`Gato` também realiza algumas ações: `ronronar`, `arranhar` ou `alimentar`-se (em que podemos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades como `sabor`).
 
     Gato
     --------
@@ -34,7 +34,7 @@ Como vamos modelar as postagens do blog, então? Queremos construir um blog, cer
 
 Para isto, precisamos responder as questões: O que é um post de blog? Que propriedades (atributos) ele deve ter?
 
-Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título, certo? Também seria legal saber quem escreveu – então precisamos de um autor. Finalmente, queremos saber quando a postagem foi criada e publicada. Para ficar chique, vamos fazer em inglês.
+Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título, certo? Também seria legal saber quem a escreveu – então precisamos de um autor. Finalmente, queremos saber quando a postagem foi criada e publicada. Para ficar chique, vamos fazer em inglês.
 
     Post
     --------
@@ -45,7 +45,7 @@ Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título
     published_date
     
 
-Que tipo de ações podem ser feitas com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
+Que tipo de ações podem ser feitas com uma postagem? Seria legal ter um `método` que publique a postagem, não é mesmo?
 
 Então, nós precisaremos de um método para publicar (`publish`).
 
