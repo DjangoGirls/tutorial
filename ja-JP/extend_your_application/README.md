@@ -12,7 +12,7 @@
 
 ## 投稿の詳細へのテンプレートリンクを作成する
 
-`blog/templates/blog/post_list.html`ファイルに次のようにリンクを追加しましょう： {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+`blog/templates/blog/post_list.html`ファイルにリンクを追加していきましょう。今は次のようになっていますよね： {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
