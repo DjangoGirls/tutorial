@@ -14,7 +14,7 @@ Para começar a trabalhar com Python, precisamos abrir uma * linha de comando* n
 
 Assim que estiver pronta, siga as instruções abaixo.
 
-Para abrir um prompt do Python, digite `python` no Windows ou `python3` no Mac OS/Linux e clique `enter`.
+Para abrir um prompt de comando do Python, digite `python` no Windows ou `python3` no Mac OS/Linux e clique `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -595,7 +595,7 @@ Parabéns! Booleanos são um dos recursos mais interessantes na programação, e
 Até agora, escrevemos todos os códigos no interpretador de Python, que nos limita a digitar uma linha por vez. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até aqui, executamos nossos programas uma linha de cada vez no **interpretador** de Python. Vamos precisar de mais de uma linha de código para as próximas tarefas, então vamos rapidamente:
 
 - Sair do interpretador de Python
-- Abrir o editor de código de sua escolha
+- Abrir o editor de código que escolhemos antes
 - Salvar algum código em um novo arquivo de Python
 - Executar o código!
 
