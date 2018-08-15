@@ -388,7 +388,7 @@ Com esse comando, você criou uma variável chamada `participant` com três pare
 
 - A chave `name` aponta para o valor `'Ola'` (um objeto do tipo `string`),
 - a chave `country` aponta para `'Poland'` (outra `string`),
-- e a chave `favorite_numbers` aponta para `[7, 42, 92]` (uma `list` de três números).
+- e a chave `favorite_numbers` aponta para `[7, 42, 92]` (uma `lista` de três números).
 
 Você pode verificar o conteúdo de chaves individuais com a sintaxe:
 
@@ -436,9 +436,9 @@ Como nas listas, usar a função `len()` em dicionários retorna o número de pa
 4
 ```
 
-Espero que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários? Pule para a próxima linha para aprender mais coisas incríveis.
+Espero que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários?
 
-Você pode usar o método `pop()` para deletar um item do dicionário. Digamos que você queira excluir a entrada correspondente à chave `'favorite_numbers'`. Basta digitar o seguinte comando:
+Você pode usar o método `pop()` para deletar um item do dicionário. Se quiser excluir a entrada correspondente à chave `'favorite_numbers'`, por exemplo, basta digitar o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -465,12 +465,12 @@ Agora, o valor da chave `'country'` foi alterado de `'Poland'` para `'Germany'`.
 
 ### Sumário
 
-Incrível! Agora você sabe muito sobre programação. Nesta última parte você aprendeu sobre:
+Legal! Agora você sabe muito sobre programação. ;) Nesta última parte, você aprendeu sobre:
 
-- **erros** -- agora você sabe como ler e entender mensagens de erro que aparecem quando o Python não entende um comando que você deu;
-- **variáveis** -- nomes para objetos que permitem que você programe facilmente e deixam seu código mais legível;
-- **listas** -- listas de objetos armazenados em uma ordem específica;
-- **dicionários** - objetos armazenados como pares chave-valor.
+- **erros** - você já sabe como ler e entender mensagens de erro que aparecem quando o Python não entende um comando que você deu;
+- **variáveis** - são nomes para objetos que permitem que você programe facilmente e deixam seu código mais legível;
+- **listas** - são listas de objetos armazenados em uma ordem específica;
+- **dicionários** - contêm objetos armazenados como pares chave-valor.
 
 Animada para a próxima parte? :)
 
@@ -478,7 +478,7 @@ Animada para a próxima parte? :)
 
 > Para leitoras em casa: esta seção é abordada no vídeo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-Grande parte da programação consiste em comparar coisas. O que é mais fácil comparar? Números, é claro. Vamos ver como isso funciona:
+Grande parte da programação consiste em comparar coisas. O que é mais fácil comparar? Números, é claro. Vamos ver como funciona:
 
 {% filename %}command-line{% endfilename %}
 
@@ -530,7 +530,7 @@ False
 True
 ```
 
-Você pode pedir ao Python para comprar quantos números você quiser e ele vai te dar uma resposta! Espertinho, não é?
+Você pode pedir ao Python para comprar quantos números quiser e ele vai te dar uma resposta! Espertinho, não é?
 
 - **and** -- se você usar o operador `and`, as duas comparações terão que ser verdadeiras para que a expressão seja verdadeira (True)
 - **or** - se você usar o operador `or`, apenas uma das comparações precisa ser verdadeira para que a expressão seja verdadeira (True)
