@@ -87,7 +87,7 @@ Strings podem ser juntadas. Tente isto:
 'OlaOlaOla'
 ```
 
-Se você precisa colocar uma apóstrofe dentro de sua string, pode fazê-lo de duas maneiras.
+Se você precisa colocar uma apóstrofe dentro de uma string, pode fazê-lo de duas maneiras.
 
 Usando aspas duplas:
 
@@ -851,16 +851,16 @@ Uma função é uma sequência de instruções que o Python deve executar. Cada 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def oi():
+def hi():
     print('Olá!')
     print('Tudo bem?')
 
-oi()
+hi()
 ```
 
 Ok, nossa primeira função está pronta!
 
-Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a função que definimos, devemos chamá-la no final. Esclarecendo: no bloco de texto formado pela linha que começa com "def" e as linhas endentadas seguintes, definimos a função, mas não executamos nenhum comando. Precisamos dizer explicitamente ao Python que a execute (escrevendo "oi()").
+Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a função que definimos, devemos chamá-la no final. Esclarecendo: no bloco de texto formado pela linha que começa com "def" e as linhas endentadas seguintes, definimos a função, mas não executamos nenhum comando. Precisamos dizer explicitamente ao Python que a execute (escrevendo "hi()").
 
 Vamos executá-la agora e ver o que acontece:
 
@@ -873,32 +873,32 @@ Vamos executá-la agora e ver o que acontece:
 
 Observação: se não funcionou, não entre em pânico! A saída vai te ajudar a entender o que aconteceu:
 
-- Se você recebeu uma mensagem `NameError`, provavelmente foi um erro de digitação, então confira se você usou o mesmo nome ao criar a função com `def oi()` e quando a chamou no final com `oi()`.
+- Se você recebeu uma mensagem `NameError`, provavelmente foi um erro de digitação, então confira se usou o mesmo nome ao criar a função com `def hi()` e quando a chamou no final com `hi()`.
 - Se recebeu uma mensagem `IdentationError`, confira se as duas linhas de `print` têm o mesmo recuo no começo: o Python precisa que o código dentro da função esteja bem alinhado.
-- Se a função não retornou nenhum resultado, certifique-se de que o útlimo `oi()`*não* esteja endentado - se ele estiver, essa linha vai se tornar parte da função e o Python não vai receber nenhum comando para executar.
+- Se a função não retornou nenhum resultado, certifique-se de que o útlimo `hi()`*não* esteja endentado - se ele estiver, essa linha vai se tornar parte da função e o Python não vai receber nenhum comando para executar.
 
 Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'olá' para quem o executa - com o nome dessa pessoa:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def oi(nome):
+def hi(name):
 ```
 
-Como você pode ver, agora nossa função tem um parâmetro chamado `nome`:
+Como você pode ver, agora nossa função tem um parâmetro chamado `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def oi(nome):
-    if nome == 'Ola':
+def hi(name):
+    if name == 'Ola':
         print('Olá Ola!')
-    elif nome == 'Sonja':
+    elif name == 'Sonja':
         print('Olá Sonja!')
     else:
         print('Olá estranho!')
 
-oi()
+hi()
 ```
 
 Não esqueça: a função `print` está endentada com 4 espaços depois do `if`. Isso é necessário porque a função só rodará se a condição for verdadeira. Vamos ver como isso funciona:
@@ -908,16 +908,16 @@ Não esqueça: a função `print` está endentada com 4 espaços depois do `if`.
     $ python3 python_intro.py
     Traceback (most recent call last):
     File "python_intro.py", line 10, in <module>
-      oi()
-    TypeError: oi() missing 1 required positional argument: 'nome'
+      hi()
+    TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, um erro. Felizmente, o Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `oi()` (aquela que definimos) tem um argumento obrigatório (chamado `nome`) e que nós esquecemos de passá-lo ao chamar a função. Vamos resolver isso no final da função:
+Oops, um erro. Felizmente, o Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `hi()` (aquela que definimos) tem um argumento obrigatório (chamado `name`) e que nós esquecemos de passá-lo ao chamar a função. Vamos resolver isso no final da função:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-oi("Ola")
+hi("Ola")
 ```
 
 E rode novamente:
@@ -933,7 +933,7 @@ E se mudarmos o nome?
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-oi("Sonja")
+hi("Sonja")
 ```
 
 E rode novamente:
@@ -958,10 +958,10 @@ Vamos fazer algo mais inteligente - existem mais que dois nomes, e escrever uma 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def oi(name):
-    print('Olá ' + name + '!')
+def hi(name):
+    print('Hi ' + name + '!')
 
-oi("Rachel")
+hi("Rachel")
 ```
 
 Vamos chamar o código agora:
@@ -990,7 +990,7 @@ Ainda se lembra de listas? Vamos fazer uma lista de garotas:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'você']
 ```
 
-Queremos cumprimentar todas elas pelos seus nomes. Temos a função `oi` para fazer isso, então vamos usá-la em um laço:
+Queremos cumprimentar todas elas pelos seus nomes. Temos a função `hi` para fazer isso, então vamos usá-la em um laço:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1005,12 +1005,12 @@ Aqui está o código completo que será salvo no arquivo:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def oi(nome):
-    print('Oi ' + nome + '!')
+def hi(nome):
+    print('Olá ' + nome + '!')
 
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'você']
 for name in girls:
-    oi(name)
+    hi(name)
     print('Próxima')
 ```
 
@@ -1063,6 +1063,6 @@ Note que o segundo desses dois números não está incluído na lista que o Pyth
 
 Para um tutorial de Python oficial e completo, visite https://docs.python.org/3/tutorial/. Lá você encontrará um guia da linguagem mais exaustivo e completo. Até lá :)
 
-Talvez você queira fazer uma breve pausa -- se espreguiçar, andar um pouco, descansar os olhos -- antes de ir para o próximo capítulo. :)
+Talvez você queira fazer uma breve pausa - se espreguiçar, andar um pouco, descansar os olhos - antes de ir para o próximo capítulo. :)
 
 ![Cupcake](images/cupcake.png)
