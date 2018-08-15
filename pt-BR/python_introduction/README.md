@@ -14,7 +14,7 @@ Para começar a trabalhar com Python, precisamos abrir uma * linha de comando* n
 
 Assim que estiver pronta, siga as instruções abaixo.
 
-Queremos abrir um console do Python, então digite `python` no Windows ou `python3` no Mac OS/Linux e pressione `enter`.
+Para abrir um prompt do Python, digite `python` no Windows ou `python3` no Mac OS/Linux e clique `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,11 +26,11 @@ Queremos abrir um console do Python, então digite `python` no Windows ou `pytho
 
 ## Seu primeiro comando em Python!
 
-Depois de executar o comando Python, o prompt mudou para `>>>`. Isso significa que por enquanto nós só podemos utilizar comandos na linguagem Python. Você não precisa digitar `>>>` - o Python fará isso por você.
+Depois de executar o comando python, o prompt mudou para `>>>`. Isso significa que, por enquanto, só podemos executar comandos na linguagem Python. Você não precisa digitar `>>>` - o Python fará isso por você.
 
-Se a qualquer momento você quiser sair do console do Python, apenas digite `exit()` ou use o atalho `Ctrl + Z` no Windows e `Ctrl + D` no Mac ou Linux. Então você não vai mais ver o `>>>`.
+Se a qualquer momento você quiser sair do prompt do Python, digite `exit()` ou use o atalho `Ctrl + Z` no Windows e `Ctrl + D` no Mac ou Linux. Fazendo isso, você não vai mais ver o `>>>`.
 
-Por enquanto, não queremos sair do console do Python. Queremos saber mais sobre ele. Vamos começar digitando um pouco de matemática, como `2 + 3`, e clicar `entrar`.
+Por enquanto, não vamos sair do prompt do Python. Queremos saber mais sobre ele. Para começar, vamos digitar um pouco de matemática, como `2 + 3`, e clicar `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,7 +39,7 @@ Por enquanto, não queremos sair do console do Python. Queremos saber mais sobre
 5
 ```
 
-Legal! Viu como a resposta apareceu? O Python sabe matemática! Você pode tentar outros comandos como:
+Legal! Viu como a resposta apareceu? O Python sabe matemática! Você pode tentar outros comandos:
 
 - `4 * 5`
 - `5 - 1`
@@ -98,7 +98,7 @@ Usando aspas duplas:
 "Roda d'água"
 ```
 
-Ou escapando a aspa simples (o que sinaliza para o Python que aquele sinal é uma apóstrofe, e não uma aspa marcando o final da string) com uma contra-barra (``):
+ou "escapando" a aspa simples (o que sinaliza para o Python que aquele sinal é uma apóstrofe, e não uma aspa marcando o final da string) com uma contra-barra (``):
 
 {% filename %}command-line{% endfilename %}
 
