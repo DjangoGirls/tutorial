@@ -254,13 +254,13 @@ Tente o seguinte:
 Maria
 ```
 
-Quando você digita `name`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você disser para o Python `print(name)`, ele vai "imprimir" o conteúdo da variável na tela sem as aspas, que é mais bonitinho. :)
+Quando você digita `name`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você disser para o Python `print(name)`, ele vai "imprimir" (ou mostrar) na tela o conteúdo da variável sem as aspas, que é mais bonitinho. :)
 
 Como veremos mais tarde, `print()` também é útil quando queremos imprimir algo dentro de funções ou quando queremos imprimir algo em várias linhas.
 
 ## Listas
 
-Além de strings e números inteiros, o Python tem muitos tipos diferentes de objetos. Agora vamos apresentar um chamado **lista**. Listas são exatamente o que você imagina: objetos que são listas de outros objetos. :)
+Além de strings e números inteiros, o Python tem muitos tipos diferentes de objetos. Agora, vamos apresentar um chamado **lista**. Listas são objetos que são listas de outros objetos. :)
 
 Vá em frente e crie uma lista:
 
@@ -271,7 +271,7 @@ Vá em frente e crie uma lista:
 []
 ```
 
-Sim, esta é uma lista vazia. Não é muito útil, né? Vamos criar uma lista de números de loteria. Para não precisar repetir o código o tempo todo, vamos atribuí-la a uma variável:
+Sim, esta é uma lista vazia. Não é muito útil, né? Vamos criar uma composta por números de loteria. Para não precisar repetir o código o tempo todo, vamos atribuí-lo a uma variável:
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@ Sim, esta é uma lista vazia. Não é muito útil, né? Vamos criar uma lista de
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-Legal, criamos uma lista! O que podemos fazer com ela? Vamos ver quantos números de loteria ela tem. Você tem ideia de qual é a função que deve usar para isso? Você já aprendeu ;)
+Legal, criamos uma lista! O que podemos fazer com ela? Vamos ver quantos números de loteria ela contém. Você tem ideia de que a função deve usar para isso? Você já aprendeu ;)
 
 {% filename %}command-line{% endfilename %}
 
@@ -296,7 +296,7 @@ Sim! `len()` pode te dizer o número de objetos que fazem parte de uma lista. Um
 >>> lottery.sort()
 ```
 
-Isso não retorna nada, apenas troca a ordem em que os números aparecem na lista. Vamos imprimir a lista outra vez e ver o que acontece:
+Isso não retorna nada, apenas muda a ordem em que os números aparecem na lista. Vamos imprimi-la outra vez e ver o que acontece:
 
 {% filename %}command-line{% endfilename %}
 
@@ -305,7 +305,7 @@ Isso não retorna nada, apenas troca a ordem em que os números aparecem na list
 [3, 12, 19, 30, 42, 59]
 ```
 
-Como você pode ver, agora os números na nossa lista estão ordenados do menor para o maior. Parabéns!
+Como você pode ver, agora os números estão ordenados do menor para o maior. Parabéns!
 
 E se quisermos inverter a ordem? Vamos fazer isso!
 
@@ -327,7 +327,7 @@ Moleza, né? Se você quiser adicionar alguma coisa à sua lista, digite o segui
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Se você quiser ver apenas o primeiro número da lista, pode usar **índices**. Um índice é o número que diz onde na lista um item está. Programadores preferem começar a contar a partir do zero, então o primeiro objeto em sua lista está no índice 0, o segundo no 1 e assim por diante. Tente isso:
+Se quiser ver apenas o primeiro número da lista, pode usar **índices**. Um índice é o número que diz onde na lista um item está. Programadores preferem começar a contar a partir do zero, então o primeiro objeto em sua lista está no índice 0, o segundo no 1 e assim por diante. Tente isso:
 
 {% filename %}command-line{% endfilename %}
 
@@ -357,13 +357,13 @@ Para apagar algum objeto da sua lista, você precisa usar **índices**, como apr
 
 Funcionou perfeitamente!
 
-Agora tente alguns outros índices, como: 6, 7, 1000, -1, -6 ou -1000. Veja se você consegue prever o resultado antes de executar o comando. Os resultados fazem sentido para você?
+Agora tente alguns outros índices, como: 6, 7, 1000, -1, -6 ou -1000. Veja se consegue prever o resultado antes de executar o comando. Os resultados fazem sentido para você?
 
-Você pode encontrar uma lista de todos os métodos disponíveis neste capítulo na documentação do Python: https://docs.python.org/3/tutorial/datastructures.html
+Você pode encontrar uma lista de todos os métodos disponíveis nesta seção na documentação do Python: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dicionários
 
-> Para leitoras em casa: este capítulo é abordado no vídeo [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
+> Para leitoras em casa: esta seção é abordada no vídeo [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
 Um dicionário é similar a uma lista, mas para acessar seus valores você usa uma chave ao invés de um índice. Uma chave pode ser qualquer string ou número. A sintaxe para definir um dicionário vazio é:
 
@@ -386,7 +386,7 @@ Agora escreva o seguinte comando (e tente colocar suas próprias informações):
 
 Com esse comando, você criou uma variável chamada `participant` com três pares de chave-valor:
 
-- A chave `nome` aponta para o valor `'Ola'` (um objeto `string`),
+- A chave `name` aponta para o valor `'Ola'` (um objeto do tipo `string`),
 - a chave `country` aponta para `'Poland'` (outra `string`),
 - e a chave `favorite_numbers` aponta para `[7, 42, 92]` (uma `list` de três números).
 
