@@ -175,7 +175,7 @@ Funcionou! Usamos a função `str` dentro da função `len`. A função `str ()`
 
 Variáveis são um conceito importante em programação. Uma variável é apenas um nome que você atribui a um objeto. Programadores armazenam dados nelas para tornar seus códigos mais legíveis e para não ter que lembrar a todo momento o que são certas coisas.
 
-Digamos que queremos criar uma nova variável chamada `nome`:
+Digamos que queremos criar uma nova variável chamada `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,7 +183,7 @@ Digamos que queremos criar uma nova variável chamada `nome`:
 >>> name = "Ola"
 ```
 
-Digitamos: nome igual Ola.
+Digitamos: name igual Ola.
 
 Como você deve ter percebido, a última linha de código não retornou nada como nos exemplos anteriores. Então como vamos saber se a variável realmente existe? Basta digitar `name` e clicar `enter`:
 
@@ -832,11 +832,11 @@ Você não precisa escrever um comentário para cada linha de código, mas eles 
 
 Nos últimos exercícios você aprendeu:
 
-- a **comparar coisas** -- em Python, você pode comparar objetos usando os operadores `>`, `>=`, `==`, `<=`, `<` e `and`, `or`.
-- **Booleano** -- um tipo de objeto que só tem dois valores possíveis: `True` ou `False`.
-- a **salvar arquivos** -- armazenar código em arquivos para que você possa executar programas maiores.
-- **if... elif... else** -- instruções que permitem que você execute o código somente se determinadas condições forem atendidas.
-- **comentários** -- linhas que o Python não executa e que permitem que você documente seu código.
+- a **comparar coisas** - em Python, você pode comparar objetos usando os operadores `>`, `>=`, `==`, `<=`, `<` e `and`, `or`;
+- **booleano** - um tipo de objeto que só tem dois valores possíveis: `True` ou `False`;
+- a **salvar arquivos** - armazenar código em arquivos para que você possa executar programas maiores;
+- **if... elif... else** - instruções que permitem que você execute o código somente se determinadas condições forem atendidas;
+- **comentários** - linhas que o Python não executa e que permitem que você documente seu código.
 
 Chegamos à última parte do capítulo!
 
@@ -873,11 +873,11 @@ Vamos executá-la agora e ver o que acontece:
 
 Observação: se não funcionou, não entre em pânico! A saída vai te ajudar a entender o que aconteceu:
 
-- Se você recebeu uma mensagem `NameError`, provavelmente foi um erro de digitação, então confira se você usou o mesmo nome ao criar a função com `def hi()` e quando a chamou no final com `hi()`.
+- Se você recebeu uma mensagem `NameError`, provavelmente foi um erro de digitação, então confira se você usou o mesmo nome ao criar a função com `def oi()` e quando a chamou no final com `oi()`.
 - Se recebeu uma mensagem `IdentationError`, confira se as duas linhas de `print` têm o mesmo recuo no começo: o Python precisa que o código dentro da função esteja bem alinhado.
 - Se a função não retornou nenhum resultado, certifique-se de que o útlimo `oi()`*não* esteja endentado - se ele estiver, essa linha vai se tornar parte da função e o Python não vai receber nenhum comando para executar.
 
-Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'oi' para quem o executa - com o nome dessa pessoa:
+Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'olá' para quem o executa - com o nome dessa pessoa:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -898,7 +898,7 @@ def oi(nome):
     else:
         print('Olá estranho!')
 
-hi()
+oi()
 ```
 
 Não esqueça: a função `print` está endentada com 4 espaços depois do `if`. Isso é necessário porque a função só rodará se a condição for verdadeira. Vamos ver como isso funciona:
@@ -944,7 +944,7 @@ E rode novamente:
     Olá Sonja!
     
 
-Agora, o que você acha que aconteceria se escrevesse um outro nome lá (diferente de "Ola" ou "Sonja")? Faça um teste e verifique se você estava certa. Deve aparecer o seguinte:
+Agora, o que você acha que aconteceria se escrevesse um outro nome (diferente de "Ola" ou "Sonja")? Faça um teste e veja se estava certa. Deve aparecer o seguinte:
 
 {% filename %}command-line{% endfilename %}
 
@@ -953,7 +953,7 @@ Agora, o que você acha que aconteceria se escrevesse um outro nome lá (diferen
 
 Legal, né? Dessa maneira você não precisa se repetir cada vez que for mudar o nome da pessoa que a função pretende cumprimentar. E é exatamente por isso que precisamos de funções - você não quer precisar repetir seu código!
 
-Vamos fazer algo mais inteligente -- existem mais que dois nomes e escrever uma condição para cada um parece difícil, né?
+Vamos fazer algo mais inteligente - existem mais que dois nomes, e escrever uma condição para cada um parece chato, né?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -976,7 +976,7 @@ Parabéns! Você acabou de aprender como criar funções. :)
 
 ## Laços
 
-> Para leitoras em casa: este capítulo é abordado no vídeo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
+> Para leitoras em casa: esta parte do capítulo é abordada no vídeo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
 Essa já é a última parte! Rápido, né? :)
 
