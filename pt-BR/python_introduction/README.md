@@ -532,7 +532,7 @@ True
 
 Você pode pedir ao Python para comprar quantos números quiser e ele vai te dar uma resposta! Espertinho, não é?
 
-- **and** -- se você usar o operador `and`, as duas comparações terão que ser verdadeiras para que a expressão seja verdadeira (True)
+- **and** - se você usar o operador `and`, as duas comparações terão que ser verdadeiras para que a expressão seja verdadeira (True)
 - **or** - se você usar o operador `or`, apenas uma das comparações precisa ser verdadeira para que a expressão seja verdadeira (True)
 
 Já ouviu a expressão "comparar alhos com bugalhos"? Vamos tentar o equivalente em Python:
@@ -546,7 +546,7 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Aqui vemos que assim como não podemos compara alhos com bugalhos, o Python não é capaz de comparar um número (`int`) e uma string (`str`). Em vez de retornar um resultado, ele mostrou um **TypeError** e nos disse que os dois tipos não podem ser comparados um ao outro.
+Aqui, vemos que assim como não podemos comparar alhos com bugalhos, o Python não é capaz de comparar um número (`int`) e uma string (`str`). Em vez de retornar um resultado, ele mostrou um **TypeError** e nos disse que os dois tipos não podem ser comparados um ao outro.
 
 ## Booleanos
 
@@ -557,7 +557,7 @@ Existem apenas dois objetos booleanos:
 - True (verdadeiro)
 - False (falso)
 
-Para que o Python entenda, você precisa escrever exatamente 'True' (primeira letra maiúscula e as outras minúsculas -- mas sem as aspas). **true, TRUE ou tRUE não vão funcionar -- só True está correto.** (A mesma coisa vale para 'False', obviamente.)
+Para que o Python entenda, você precisa escrever exatamente 'True' (primeira letra maiúscula e as outras minúsculas -- mas sem as aspas). **true, TRUE ou tRUE não vão funcionar - só True está correto.** (A mesma coisa vale para 'False', obviamente.)
 
 Booleanos também podem ser variáveis! Veja:
 
@@ -592,7 +592,7 @@ Parabéns! Booleanos são um dos recursos mais interessantes na programação, e
 
 > Para leitoras em casa: esta seção é abordada no vídeo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-Até agora, escrevemos todos os códigos no interpretador de Python, que nos limita a digitar uma linha por vez. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até aqui, executamos nossos programas uma linha de cada vez no **interpretador** de Python. Vamos precisar de mais de uma linha de código para as próximas tarefas, então precisaremos rapidamente:
+Até agora, escrevemos todos os códigos no interpretador de Python, que nos limita a digitar uma linha por vez. Programas normais são salvos em arquivos e executados pelo nosso **interpretador** de linguagem de programação ou **compilador**. Até aqui, executamos nossos programas uma linha de cada vez no **interpretador** de Python. Vamos precisar de mais de uma linha de código para as próximas tarefas, então vamos rapidamente:
 
 - Sair do interpretador de Python
 - Abrir o editor de código de sua escolha
@@ -610,7 +610,7 @@ $
 
 Isso vai levá-la de volta ao prompt de comando.
 
-Mais cedo, nós escolhemos um editor de código da seção [editor de código](../code_editor/README.md). Agora, precisamos abrir o editor e escrever algum código em um novo arquivo:
+Mais cedo, nós escolhemos um editor de código da seção [editor de código](../code_editor/README.md). Agora, precisamos abri-lo e escrever algum código em um novo arquivo:
 
 {% filename %}editor{% endfilename %}
 
