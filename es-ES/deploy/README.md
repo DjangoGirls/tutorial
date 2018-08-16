@@ -214,8 +214,8 @@ Y recuerda, tu mentor está aquí para ayudar!
 
 # Checa tu página!
 
-La página por defecto debería decir "It worked!", tal como lo dice en tu computador. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+La página por defecto debería decir "It worked!", tal como lo dice en tu computador. Intenta añadir `/admin/` al final de la URL y te llevará a la página de administración. Ingresa con el usuario y contraseña y verás que puedes agregar nuevas publicaciones al servidor.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Una vez que hayas creado algunas publicaciones, puedes volver a tu instalación local (no PythonAnywhere). Desde allí, deberías trabajar en tu instalación local para hacer cambios. Este es un flujo de trabajo común en el desarrollo web – haz cambios localmente, sube esos cambios a GitHub, y jala tus cambios al servidor de publicación. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
