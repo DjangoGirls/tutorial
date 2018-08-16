@@ -190,23 +190,23 @@ Ahora, si lo deseas, tambien puedes mirar tu código en PythonAnywhere usando `l
     templates  tests.py  urls.py  views.py
     
 
-You can also go to the "Files" tab and navigate around using PythonAnywhere's built-in file browser.
+También puedes is a la pestaña "Files" y navegar alrededor usando el explorador embebido en PythonAnywhere.
 
-## You are now live!
+## Ahora estás en línea!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" tab to get a link to it. You can share this with anyone you want :)
+Tu página debe estar ahora en línea en internet! Haz click en la pestaña "Web" de PythonAnywhere para obtener un link a ella. Puedes compartir este link con quien quieras :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> **Nota** Este es un tutorial para principiantes, y al desplegar esta página hemos tomado algunos atajos que no son ideales desde una perspectiva de seguridad. Si y cuando decida construir sobre este proyecto, o comenzar uno nuevo, debería revisar el [Checklist de despliegue de Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) para obtener algunos tips de cómo asegurar tu página.
 
-## Debugging tips
+## Tips de Depuración
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Si ves un error al ejecutar el script `pa_autconfigure_django.py`, aqui hay algunas causas comunes:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- Olvidar crear el token de API de PythonAnywhere.
+- Cometer un error en la URL de GitHub
+- Si ves un error diciendo *"Could not find your settings.py*, es probable que no añadieras todos tus archivos a Git, y/o no los subiste a GitHub satisfactoriamente. Dale otro vistazo a la sección Git arriba
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Si ves un error cuando tratas de visitar tu página, el primer lugar para ver alguna información de depuración es en tu **log de errores**. Encontrarás un vínculo a este en la [pestaña Web](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Mira si hay algún mensaje de error allí; los más recientes están en la parte inferior.
 
 There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
