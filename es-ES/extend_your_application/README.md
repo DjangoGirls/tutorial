@@ -12,7 +12,7 @@ Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
 
 ## Crea un enlace al detalle de una entrada
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Empezaremos añadiendo un link en el archivo `blog/templates/blog/post_list.html`. Hasta el momento debería verse así: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
