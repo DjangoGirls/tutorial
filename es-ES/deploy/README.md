@@ -139,7 +139,7 @@ Tu código ahora está en GitHub. ¡Ve y verificalo! Encontrarás que algunas co
 
 Vuelve al [panel principal de PythonAnywhere](https://www.pythonanywhere.com/) al hacer click en el logo, y escoge la opción iniciar la consola "Bash" – esa es la versión de una línea de comando de PythonAnywhere, tal como la de tu computador.
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![La sección 'Nueva Consola' en la interfaz de PythonAnywhere con un botón para 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Nota** PythonAnywhere está basado en Linux, entonces si estás en Windows, la consola tendrá una apariencia diferente a la de tu computador.
 
@@ -216,6 +216,6 @@ Y recuerda, tu mentor está aquí para ayudar!
 
 La página por defecto debería decir "It worked!", tal como lo dice en tu computador. Intenta añadir `/admin/` al final de la URL y te llevará a la página de administración. Ingresa con el usuario y contraseña y verás que puedes agregar nuevas publicaciones al servidor.
 
-Una vez que hayas creado algunas publicaciones, puedes volver a tu instalación local (no PythonAnywhere). Desde allí, deberías trabajar en tu instalación local para hacer cambios. Este es un flujo de trabajo común en el desarrollo web – haz cambios localmente, sube esos cambios a GitHub, y jala tus cambios al servidor de publicación. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Una vez que hayas creado algunas publicaciones, puedes volver a tu instalación local (no PythonAnywhere). Desde allí, deberías trabajar en tu instalación local para hacer cambios. Este es un flujo de trabajo común en el desarrollo web – haz cambios localmente, sube esos cambios a GitHub, y jala tus cambios al servidor de publicación. Esto te permite trabajar y experimentar sin romper tu página publicada. Genial, ¿ah?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+¡Date una *GRAN* palmada en la espalda! El despliegue a servidor es una de las partes más complicadas de desarrollo web y con frecuencia requiere a las personas múltiples días antes de lograr que funcione. Pero tu lograste publicar tu página, en Internet, ¡así como si nada!
