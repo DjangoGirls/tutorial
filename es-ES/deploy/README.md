@@ -165,21 +165,21 @@ A medida que ves ejecutar, podrás ver lo que hace:
 - Crea un virtualenv en PythonAnywhere, tal como el de tu PC
 - Actualiza tus configuraciones con algunas configuraciones de despliegue
 - Configura la base de datos en PythonAnywhere usando el comando `manage.py migrate`
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Configura tus archivos estáticos (aprenderemos acerca de estos luego)
+- Y configura PythonAnywhere para publicar tu aplicación web por medio de su API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+En PythonAnywhere todos esos pasos están automatizados, pero son los mismos pasos que tendrías que haber seguido en cualquier otro proveedor de servidor. Lo principal a notar ahora es que tu base de datos en PythonAnywhere está, en realidad, totalmente separada de la base de datos en tu propio PC—eso significa que puedes tener distintas publicaciones y cuentas de administración.
 
-As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Como resultado, tal como hicimos en tu computador, necesitamos inicializar la cuenta de administrador con `createsuperuser`. PythonAnywhere ha activado automáticamente tu virtualenv, entonces todo lo que debes hacer es ejecutar:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Inserta las credenciales para tu usuario admin. Mejor si usas las mismas que usas en tu computador, para evitar confusiones; a menos que quieras que la contraseña en PythonAnywhere sea más segura.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Ahora, si lo deseas, tambien puedes mirar tu código en PythonAnywhere usando `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
