@@ -2,13 +2,13 @@
 
 # Extiende tu aplicación
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+Ya hemos completado todos los pasos necesarios para la creación de nuestro sitio web: sabemos cómo escribir un model, url, view y template. También sabemos cómo hacer que nuestro sitio web se vea lindo.
 
-Time to practice!
+¡Hora de practicar!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+Lo primero que necesitamos en nuestro blog es, obviamente, una página para mostrar un post, ¿cierto?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
 
 ## Crea un enlace al detalle de una entrada
 
