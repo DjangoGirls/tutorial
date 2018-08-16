@@ -1,4 +1,4 @@
-Registra una cuenta gratuita de tipo "Beginner" en PythonAnywhere:
+Regístrate para una cuenta gratuita de "Principiante" en PythonAnywhere:
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
