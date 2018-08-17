@@ -16,7 +16,7 @@ The names of some files and directories are very important for Django. You shoul
 
 In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
@@ -31,7 +31,7 @@ In your Mac OS X or Linux console, you should run the following command. **Don't
 
 On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
@@ -130,7 +130,7 @@ DATABASES = {
 
 To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
@@ -157,7 +157,7 @@ And we're done! Time to start the web server and see if our website is working!
 
 You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
@@ -171,7 +171,7 @@ If you are on a Chromebook, use this command instead:
 
 If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
