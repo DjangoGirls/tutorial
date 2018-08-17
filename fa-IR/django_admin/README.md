@@ -4,13 +4,12 @@
 
 بیایید فایل ` وبلاگ/ مدیریت.py </ 0> را باز کنیم و محتویات آن را با این قرار دهید:</p>
 
-<p>{% filename %}}وبلاگ/مدیر.پی{% endfilename %}}</p>
+<p>{% filename %}blog/admin.py{% endfilename %}</p>
 
-<pre><code class="python">مشارکت جنگجو از وارد کردن مدیر 
-از .مدلها واردات پست
+<pre><code class="python">from django.contrib import admin
+from .models import Post
 
-مدیر .سایت .ثبت (پست)
-مشارکت
+admin.site.register(Post)
 `</pre> 
 
 همانطور که می بینید، مدل وارد شده (شامل) را که در فصل قبل تعریف شده وارد می کنیم. برای اینکه مدل ما در صفحه مدیریت نمایش داده شود، ما باید مدل را با ` admin.site.register (ارسال) </ 0> ثبت نام کنیم.</p>
@@ -27,21 +26,21 @@
 
 <p>{% filename %}Mac OS X or Linux:{% endfilename %}</p>
 
-<pre><code>(مای ونو (/ دختران جنگجو $ پایتون مدیریت.با ایجاد کاربر ویژه
+<pre><code>(myvenv) ~/djangogirls$ python manage.py createsuperuser
 `</pre> 
 
 % filename %}}ویندوز% endfilename %}}
 
-    مای ونو C:\Users\Name\djangogirls&gt پایتون مدیریت.با ایجاد کاربر ویژه
+    (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
 هنگام درخواست، نام کاربری خود را (حروف کوچک، فضایی)، آدرس ایمیل و رمز عبور تایپ کنید. ** نگران نباشید که شما نمیتوانید رمز عبوری را که تایپ میکنید را مشاهده کنید - این به این معناست که چطور باید باشد. </ 0> فقط آن را تایپ کنید و ` وارد کنید </ 1> برای ادامه کلیک کنید. خروجی باید مانند این باشد (که در آن نام کاربری و ایمیل باید خود شما باشد):</p>
 
-<pre><code>نام کاربری: admin
-آدرس ایمیل: admin@admin.com
-کلمه عبور:
-رمز عبور دوباره):
-کاربر ویژه با موفقیت ایجاد شد.
+<pre><code>Username: admin
+Email address: admin@admin.com
+Password:
+Password (again):
+Superuser created successfully.
 `</pre> 
 
 به مرورگر خود برگردید با اعتبار کاربری کاربر که انتخاب کرده اید وارد شوید شما باید داشبورد مدیر جنگجو را ببینید.
