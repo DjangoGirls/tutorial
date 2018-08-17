@@ -16,7 +16,7 @@
 
 <p>برای این آموزش ما از یک دایرکتوری جدید <>> دختران جنگجو</ 0> از دایرکتوری اصلی شما استفاده خواهیم کرد:</p>
 
-<p>% filename %}}خط فرمان% endfilename %}}</p>
+<p>{% filename %}خط فرمان{% endfilename %}</p>
 
 <pre><code>$ نمایش ام کا دختران جنگجو
 $ سی دی دختران جنگجو
@@ -24,7 +24,7 @@ $ سی دی دختران جنگجو
 
 ما مجازی را ` مای ون</ 0> ایجاد خواهیم کرد. فرمان کلی در قالب خواهد بود:</p>
 
-<p>% filename %}}خط فرمان %endfilename %}}</p>
+<p>{% filename %}خط فرمان{% endfilename %}</p>
 
 <pre><code>$ پایتون3-ام ون مایون
 `</pre> <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
@@ -32,7 +32,7 @@ data-collapse=true ces-->
 
 برای ایجاد یک <جدید> مجازی</ 0> جدید، باید دستور دستور را باز کنید و ` پایتون-ام ون مایون</ 0> را اجرا کنید. شبیه این خواهد شد:</p>
 
-<p>% filename %}}خط فرمان% endfilename %}}</p>
+<p>{% filename %}خط فرمان{% endfilename %}</p>
 
 <pre><code>C:\Users\Name\djangogirls> python -m venv myvenv
 `</pre> 
@@ -46,7 +46,7 @@ data-collapse=true ces-->
 
 We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 -m venv myvenv
     
@@ -55,7 +55,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 
 > **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
 >        apt install python3-venv
@@ -69,14 +69,14 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 > 
 > **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
 > To get around this, use the `virtualenv` command instead.
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     $ sudo apt install python-virtualenv
 >     $ virtualenv --python=python3.6 myvenv
@@ -84,14 +84,14 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 > 
 > **NOTE:** If you get an error like
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
 > then instead run:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     sudo apt install python3.6-venv
 >     
@@ -107,14 +107,14 @@ data-collapse=true ces-->
 
 Start your virtual environment by running:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
 > **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >         Execution Policy Change
@@ -128,7 +128,7 @@ data-collapse=true ces-->
 
 Start your virtual environment by running:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ source myvenv/bin/activate
     
@@ -137,7 +137,7 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 
 > **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     $ . myvenv/bin/activate
 >     
@@ -156,7 +156,7 @@ Now that you have your `virtualenv` started, you can install Django.
 
 Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
@@ -180,7 +180,7 @@ In your `djangogirls/requirements.txt` file you should add the following text:
 
 Now, run `pip install -r requirements.txt` to install Django.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     (myvenv) ~$ pip install -r requirements.txt
     Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
@@ -201,7 +201,7 @@ data-collapse=true ces-->
 
 > Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >     
