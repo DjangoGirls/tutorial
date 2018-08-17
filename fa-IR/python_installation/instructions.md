@@ -44,7 +44,7 @@ data-collapse=true ces-->
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 --version
     Python 3.6.1
@@ -58,7 +58,7 @@ If you have a different 'micro version' of Python installed, e.g. 3.6.0, then yo
 
 Type this command into your console:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ sudo apt install python3.6
     
@@ -70,7 +70,7 @@ data-collapse=true ces-->
 
 Use this command in your console:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ sudo dnf install python3
     
@@ -84,7 +84,7 @@ data-collapse=true ces-->
 
 Use this command in your console:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ sudo zypper install python3
     
@@ -93,7 +93,7 @@ Use this command in your console:
 
 Verify the installation was successful by opening a command prompt and running the `python3` command:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 --version
     Python 3.6.1
