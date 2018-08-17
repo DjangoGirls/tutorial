@@ -57,9 +57,9 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     Persekitaran maya tidak berjaya dibuat kerana ensurepip tidak tersedia.  Pada sistem Debian / Ubuntu, anda perlu memasang paket python3-venv menggunakan arahan berikut.
+>     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
 >        apt install python3-venv
->     You may need to use sudo with that command.  Selepas memasang pakej python3-venv, buat semula persekitaran maya anda.
+>     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
 > In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
