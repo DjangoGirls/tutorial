@@ -74,8 +74,8 @@ Strings can be strung together. Try this:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Hi there " + "Ola"
-'Hi there Ola'
+>>> "Ola"
+'Ola'
 ```
 
 You can also multiply strings with a number:
