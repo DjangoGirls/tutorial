@@ -186,7 +186,7 @@ The last step here is to add our new model to our database. First we have to mak
 
 Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
