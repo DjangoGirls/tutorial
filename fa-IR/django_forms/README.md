@@ -10,24 +10,24 @@
 
 <p>ما باید یک فایل با این نام در <code> وبلاگ </ 0> ایجاد کنید.</p>
 
-<pre><code>وبلاگ
-   └── شکلها.py
+<pre><code>blog
+   └── forms.py
 `</pre> 
 
 خوب، اجازه دهید آن را باز کنیم و کد زیر را تایپ کنیم:
 
-{% filename %}}وبلاگ/شکلها.پی{% endfilename} %}
+{% filename %}blog/forms.py{% endfilename %}
 
 ```python
-از فرم های واردات جیانگو
+from django import forms
 
-از .مدلها واردات پست
+from .models import Post
 
-کلاس شکل ارسال(شکلها.نوع شکل):
+class PostForm(forms.ModelForm):
 
-     کلاس متا:
-         مدل = پست
-         فیلدها= ('عنوان'، 'متن'،)
+    class Meta:
+        model = Post
+        fields = ('title', 'text',)
 ```
 
 ما باید ابتدا فرم های جانگو را وارد کنیم (` از فرم های واردات جانگا </ 0>) و، بدیهی است، ما <code> پست </ 0> مدل (<code> از .مدلها واردات پست </ 0>).</p>
@@ -117,7 +117,7 @@ urlpatterns = [
 
 <p>{% filename %}blog/views.py{% endfilename %}</p>
 
-<pre><code class="python">از واردات فرم ها فرم ارسال
+<pre><code class="python">from .forms import PostForm
 `</pre> 
 
 و سپس نمایش * ما </ 0>:</p> 
@@ -125,9 +125,9 @@ urlpatterns = [
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-دفاعپست_جدید (درخواست):
-     فرم = فرم پست ()
-     بازگشت رندر (درخواست، 'وبلاگ/ ویرایش_پست.اچ تی ام ال'، {'فرم': فرم})
+def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
 برای ایجاد فرم ` ارسال </ 0> جدید، ما باید <code> پست فرم() </ 0> را فراخوانی کنیم و آن را به قالب منتقل کنیم. ما به این <em> نمایش </ 0> بازگشت خواهیم کرد، اما در حال حاضر، بیایید به سرعت یک قالب برای فرم ایجاد کنیم.</p>
@@ -149,15 +149,15 @@ urlpatterns = [
 
 <p>{% filename %}blog/templates/blog/post_edit.html{% endfilename %}</p>
 
-<pre><code class="html">{٪ گسترش وبلاگ / base.html٪}
+<pre><code class="html">{% extends 'blog/base.html' %}
 
-{٪ محتوای بلوک٪}
-     &lt;h1&gt; پست جدید </ 0>
-     &lt;form method="POST" class="post-form"&gt; {٪ csrf_token٪}
-         {{form.as_p}}
-         &lt;button type="submit" class="save btn btn-default"&gt; ذخیره </ 2>
-     </ 1>
-{٪ پایان بلوک٪}
+{% block content %}
+    <h1>New post</h1>
+    <form method="POST" class="post-form">{% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="save btn btn-default">Save</button>
+    </form>
+{% endblock %}
 `</pre> 
 
 زمان برای تازه کردن! بله فرم شما نمایش داده می شود!
@@ -176,10 +176,9 @@ urlpatterns = [
 
 <p>{% filename %}blog/views.py{% endfilename %}</p>
 
-<pre><code class="python">دفع پست_جدید (درخواست):
-     فرم = فرم پست()
-     بازگشت رندر
-(درخواست، 'وبلاگ/ویرایش_پست، {'فرم': فرم{)
+<pre><code class="python">def post_new(request):
+    form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 `</pre> 
 
 هنگامی که فرم را ارسال می کنیم، ما به همان نمایش داده می شود، اما این بار ما در ` درخواست </ 0> داده های بیشتری داریم، به ویژه در <code> request.POST </ 0> (نامگذاری هیچ ارتباطی با "پست" وبلاگ نداشته باشد، این کار با این واقعیت است که ما "ارسال" داده ها). به یاد داشته باشید که چگونه در فایل HTML، تعریف <code><form>` دارای متغیر ` متد = "پست" </ 1> بود? تمام فیلدها از فرم اکنون در <code> درخواست.پست</ 0> قرار دارند. شما نباید <code> پست</ 0> را به هر چیز دیگری تغییر دهید (تنها مقدار معتبر دیگر برای روش <code> </ 0> <code> گرفتن</ 0> است، اما ما هیچ وقت برای توضیح تفاوت آن است).</p>
@@ -220,14 +219,14 @@ else:
 
 <p>{% filename %}blog/views.py{% endfilename %}</p>
 
-<pre><code class="python">از جنگجو.میانبر واردات تغییر مسیر
+<pre><code class="python">from django.shortcuts import redirect
 `</pre> 
 
 آن را در ابتدای فایل خود اضافه کنید. و اکنون می توان گفت، "به صفحه پست ` post_detail </ 0> برای پست جدید ایجاد شده بروید":</p>
 
 <p>{% filename %}blog/views.py{% endfilename %}}</p>
 
-<pre><code class="python">برگشت تغییر مسیر ('post_detail'، pk = post.pk)
+<pre><code class="python">return redirect('post_detail', pk=post.pk)
 `</pre> 
 
 ` post_detail </ 0> نام نمایش است که ما می خواهیم به آن برویم. به یاد داشته باشید که این نمایش <em> </ 0> نیاز به متغیر <code> pk </ 1> دارد؟ برای انتقال آن به نمایش ها، از <code> pk = post.pk </ 0> استفاده می کنیم، که <code> post </ 0> جدیدترین پست وبلاگ است!</p>
@@ -236,18 +235,18 @@ else:
 
 <p>{% filename %}blog/views.py{% endfilename %}}</p>
 
-<pre><code class="python">def پست جدید (درخواست):
-     اگر request.method == "POST":
-         form = PostForm (request.POST)
-         اگر form.is_valid ():
-             post = form.save (commit = False)
-             post.author = request.user
-             post.published_date = timezone.now ()
-             post.save ()
-             return redirect ('post_detail'، pk = post.pk)
-     دیگر:
-         فرم = PostForm ()
-     بازگشت رندر (درخواست، 'blog / post_edit.html'، {'form': form})
+<pre><code class="python">def post_new(request):
+    if request.method == "POST":
+        form = PostForm(request.POST)
+        if form.is_valid():
+            post = form.save(commit=False)
+            post.author = request.user
+            post.published_date = timezone.now()
+            post.save()
+            return redirect('post_detail', pk=post.pk)
+    else:
+        form = PostForm()
+    return render(request, 'blog/post_edit.html', {'form': form})
 `</pre> 
 
 بیایید ببینیم که آیا کار می کند. برو به صفحه http://127.0.0.1:8000/post/new/، اضافه کردن ` عنوان </ 0> و <code> متن </ 0>، ذخیره آن... و voilà! پست جدید وبلاگ اضافه شده است و ما به صفحه <code> post_detail </ 0> هدایت می شوید!</p>
@@ -417,18 +416,18 @@ Change it to this:
 
 * First, commit your new code, and push it up to GitHub:
 
-% filename %}}خط فرمان% endfilename %}}
+{% filename %}خط فرمان{% endfilename %}
 
-    وضعیت $ گیت
-    $ گیتاضافه --همه.
-    وضعیت $ گیت
-    $ گیت مرتکب شدن-m "اضافه شده دید برای ایجاد / ویرایش پست وبلاگ در داخل سایت."
-    $ گیتفشار
+    $ git status
+    $ git add --all .
+    $ git status
+    $ git commit -m "Added views to create/edit blog post inside the site."
+    $ git push
     
 
 * سپس، در کنسول  هرکجا پایتون باش </ 0>:</li> </ul> 
     
-    % filename %}}خط فرمان% endfilename %}}
+    {% filename %}خط فرمان{% endfilename %}
     
         $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
         $ git pull
