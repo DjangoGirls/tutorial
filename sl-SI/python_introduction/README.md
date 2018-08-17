@@ -345,13 +345,13 @@ To delete something from your list you will need to use **indexes** as we learne
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(lottery)
+>>> print(loterija)
 [59, 42, 30, 19, 12, 3, 199]
->>> print(lottery[0])
+>>> print(loterija[0])
 59
->>> lottery.pop(0)
+>>> loterija.pop(0)
 59
->>> print(lottery)
+>>> print(loterija)
 [42, 30, 19, 12, 3, 199]
 ```
 
@@ -381,7 +381,7 @@ Now, try writing the following command (try substituting your own information, t
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> udeleženec = {'ime': 'Ana', 'država': 'Slovenija', 'najljubša_števila': [7, 42, 92]}
+>>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
 With this command, you just created a variable named `participant` with three key–value pairs:
@@ -395,8 +395,8 @@ You can check the content of individual keys with this syntax:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(udeleženec['ime'])
-Ana
+>>> print(participant['name'])
+Ola
 ```
 
 See, it's similar to a list. But you don't need to remember the index – just the name.
@@ -406,7 +406,7 @@ What happens if we ask Python the value of a key that doesn't exist? Can you gue
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
->>> udeleženec['ime']
+>>> participant['age']
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 KeyError: 'age'
@@ -424,7 +424,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> udeleženec['najljubši_jezik'] = 'Python'
+>>> participant['favorite_language'] = 'Python'
 ```
 
 Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
@@ -432,7 +432,7 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(udeleženec)
+>>> len(participant)
 4
 ```
 
@@ -456,9 +456,9 @@ As well as this, you can also change a value associated with an already-created 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> udeleženec['država'] = 'Avstrija'
->>> udeleženec
-{'država': 'Avstrija', 'najljubši_jezik': 'Python', 'ime': 'Ana'}
+>>> participant['country'] = 'Germany'
+>>> participant
+{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
