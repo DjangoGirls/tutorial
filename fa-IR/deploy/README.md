@@ -107,7 +107,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > 
 > Type the following into your console (Replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets):
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
 >     $ git push -u origin master
@@ -115,7 +115,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > 
 > Enter your GitHub username and password and you should see something like this:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     Username for 'https://github.com': ola
 >     Password for 'https://ola@github.com':
