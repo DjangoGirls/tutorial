@@ -27,7 +27,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 
 Ini tidak menambah sebarang fail pada projek anda. Ia hanya menunjuk kepada fail yang wujud di Internet. Teruskan saja, buka laman web anda dan muat semula halaman. Ini dia!
 
-![Figure 14.1](images/bootstrap1.png)
+![Rajah 14.1](images/bootstrap1.png)
 
 Kelihatan lebih cantik!
 
@@ -141,7 +141,7 @@ OK, simpan file dan refresh situsnya
 
 Kerja yang bagus! Mungkin kita juga ingin memberi kami web sedikit udara dan meningkatkan margin di sebelah kiri? Mari kita coba yang ini!
 
-{% filename%} blog / static / css / blog.css {% endfilename%}
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 body {
@@ -174,7 +174,7 @@ h1 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![Rajah 14.3](images/font.png)
 
 Great!
 
