@@ -109,7 +109,7 @@ or escaping the apostrophe with a backslash (``):
 
 Nice, huh? To see your name in uppercase letters, simply type:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> "Ola".upper()
@@ -120,7 +120,7 @@ You just used the `upper` **method** on your string! A method (like `upper()`) i
 
 If you want to know the number of letters contained in your name, there is a **function** for that too!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> len("Ola")
@@ -157,7 +157,7 @@ We got our first error! The {{ warning_icon }} icon is our way of giving you a h
 
 It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> len(str(304023))
@@ -177,7 +177,7 @@ An important concept in programming is variables. A variable is nothing more tha
 
 Let's say we want to create a new variable called `name`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> name = "Ola"
@@ -187,7 +187,7 @@ We type name equals Ola.
 
 As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> name
@@ -196,7 +196,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 
 Yippee! Your first variable! :) You can always change what it refers to:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> name = "Sonja"
@@ -206,7 +206,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 
 You can use it in functions too:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> len(name)
@@ -215,7 +215,7 @@ You can use it in functions too:
 
 Awesome, right? Of course, variables can be anything – numbers too! Try this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> a = 4
@@ -244,7 +244,7 @@ Play with this for a while and see what you can do!
 
 Try this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> name = 'Maria'
@@ -264,7 +264,7 @@ Beside strings and integers, Python has all sorts of different types of objects.
 
 Go ahead and create a list:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> []
@@ -273,7 +273,7 @@ Go ahead and create a list:
 
 Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> lottery = [3, 42, 12, 19, 30, 59]
@@ -281,7 +281,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 
 All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> len(lottery)
@@ -290,7 +290,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 
 Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> lottery.sort()
@@ -298,7 +298,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 
 This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> print(lottery)
@@ -309,7 +309,7 @@ As you can see, the numbers in your list are now sorted from the lowest to highe
 
 Maybe we want to reverse that order? Let's do that!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> lottery.reverse()
@@ -319,7 +319,7 @@ Maybe we want to reverse that order? Let's do that!
 
 If you want to add something to your list, you can do this by typing this command:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> lottery.append(199)
@@ -329,7 +329,7 @@ If you want to add something to your list, you can do this by typing this comman
 
 If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> print(lottery[0])
@@ -342,7 +342,7 @@ As you can see, you can access different objects in your list by using the list'
 
 To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> print(lottery)
@@ -367,7 +367,7 @@ You can find a list of all available list methods in this chapter of the Python 
 
 A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> {}
@@ -378,7 +378,7 @@ This shows that you just created an empty dictionary. Hurray!
 
 Now, try writing the following command (try substituting your own information, too):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
@@ -392,7 +392,7 @@ With this command, you just created a variable named `participant` with three ke
 
 You can check the content of individual keys with this syntax:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> print(participant['name'])
@@ -421,7 +421,7 @@ When should you use a dictionary or a list? Well, that's a good point to ponder.
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> participant['favorite_language'] = 'Python'
@@ -429,7 +429,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 
 Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> len(participant)
@@ -440,7 +440,7 @@ I hope it makes sense up to now. :) Ready for some more fun with dictionaries? R
 
 You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> participant.pop('favorite_numbers')
@@ -453,7 +453,7 @@ As you can see from the output, the key–value pair corresponding to the 'favor
 
 As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> participant['country'] = 'Germany'
@@ -480,7 +480,7 @@ Excited for the next part? :)
 
 A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> 5 > 2
@@ -501,7 +501,7 @@ Do you wonder why we put two equal signs `==` next to each other to compare if n
 
 Give Python two more tasks:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> 6 >= 12 / 2
@@ -519,7 +519,7 @@ We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 
 Awesome! Wanna do one more? Try this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> 6 > 2 and 2 < 3
@@ -561,7 +561,7 @@ But for Python to understand this, you need to always write it as 'True' (first 
 
 Booleans can be variables, too! See here:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> a = True
@@ -571,7 +571,7 @@ True
 
 You can also do it this way:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> a = 2 > 5
@@ -601,7 +601,7 @@ So far we've been writing all our python code in the interpreter, which limits u
 
 To exit from the Python interpreter that we've been using, simply type the `exit()` function
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> exit()
@@ -630,7 +630,7 @@ data-collapse=true ces-->
 
 On a Mac, the command will look something like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ cd ~/Desktop
     
@@ -642,7 +642,7 @@ data-collapse=true ces-->
 
 On Linux, it will be like this (the word "Desktop" might be translated to your local language):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ cd ~/Desktop
     
@@ -653,7 +653,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 On Windows Command Prompt, it will be like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd %HomePath%\Desktop
     
@@ -664,7 +664,7 @@ On Windows Command Prompt, it will be like this:
 
 And on Windows Powershell, it will be like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd $Home\Desktop
     
@@ -675,7 +675,7 @@ If you get stuck, just ask for help.
 
 Now use Python to execute the code in the file like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hello, Django girls!
@@ -683,7 +683,7 @@ Now use Python to execute the code in the file like this:
 
 Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 > python python_intro.py
@@ -728,7 +728,7 @@ Notice how we've indented the next line of code by 4 spaces? We need to do this 
 
 Save it and give it another run:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 $ python3 python_intro.py
@@ -752,7 +752,7 @@ else:
 
 When this is run it will print out:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     5 is indeed greater than 2
@@ -774,7 +774,7 @@ else:
 
 and executed:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hey Sonja!
@@ -804,7 +804,7 @@ else:
 
 Python runs through each test in sequence and prints:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Perfect, I can hear all the details
@@ -863,7 +863,7 @@ You may wonder why we've written the name of the function at the bottom of the f
 
 Let's run this now and see what happens:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hi there!
@@ -921,7 +921,7 @@ hi("Ola")
 
 And run it again:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hi Ola!
@@ -937,7 +937,7 @@ hi("Sonja")
 
 And run it:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hi Sonja!
@@ -945,7 +945,7 @@ And run it:
 
 Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     Hi anonymous!
     
@@ -965,7 +965,7 @@ hi("Rachel")
 
 Let's call the code now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -1015,7 +1015,7 @@ for name in girls:
 
 And when we run it:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -1043,7 +1043,7 @@ for i in range(1, 6):
 
 Which would print:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     1
     2
