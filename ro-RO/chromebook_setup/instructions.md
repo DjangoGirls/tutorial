@@ -49,7 +49,7 @@ Apoi execută:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Crează-ți un cont [GitHub](https://github.com).
 
 ### PythonAnywhere
 
