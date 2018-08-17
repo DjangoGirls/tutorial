@@ -31,7 +31,7 @@ See how your website looks now: http://127.0.0.1:8000/
 
 > If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
-![Figure 11.1](images/step1.png)
+![Rajah 11.1](images/step1.png)
 
 No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
 
@@ -50,7 +50,7 @@ Add the following to your template file:
 
 So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
 
-![Figure 11.2](images/step3.png)
+![Rajah 11.2](images/step3.png)
 
 It worked! Nice work there :)
 
@@ -85,7 +85,7 @@ For example, you can put a web page title element inside the `<head>`, like this
 
 Save the file and refresh your page.
 
-![Figure 11.3](images/step4.png)
+![Rajah 11.3](images/step4.png)
 
 Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
 
@@ -146,7 +146,7 @@ We've created three `div` sections here.
 
 It gives us this effect:
 
-![Figure 11.4](images/step6.png)
+![Rajah 11.4](images/step6.png)
 
 Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
