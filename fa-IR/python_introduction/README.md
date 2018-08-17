@@ -16,7 +16,7 @@ Once you're ready, follow the instructions below.
 
 We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3
     Python 3.6.1 (...)
@@ -32,7 +32,7 @@ If you want to exit the Python console at any point, just type `exit()` or use t
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> 2 + 3
@@ -60,7 +60,7 @@ As you can see, Python is a great calculator. If you're wondering what else you 
 
 How about your name? Type your first name in quotes like this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> "Ola"
@@ -71,7 +71,7 @@ You've now created your first string! It's a sequence of characters that can be 
 
 Strings can be strung together. Try this:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> "Hi there " + "Ola"
@@ -80,7 +80,7 @@ Strings can be strung together. Try this:
 
 You can also multiply strings with a number:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> "Ola" * 3
@@ -91,7 +91,7 @@ If you need to put an apostrophe inside your string, you have two ways to do it.
 
 Using double quotes:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> "Runnin' down the hill"
@@ -100,7 +100,7 @@ Using double quotes:
 
 or escaping the apostrophe with a backslash (``):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> 'Runnin\' down the hill'
