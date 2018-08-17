@@ -57,7 +57,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     Το εικονικό περιβάλλον δεν δημιουργήθηκε επιτυχώς επειδή το ensurepip δεν είναι διαθέσιμο.  Στα συστήματα Debian/Ubuntu, πρέπει να εγκαταστήσετε το πακέτο python3-venv χρησιμοποιώντας την ακόλουθη εντολή.
+>     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
 >        apt install python3-venv
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
@@ -118,7 +118,7 @@ data-collapse=true ces-->
 > 
 >     C:\WINDOWS\system32> Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
 >         Execution Policy Change
->         The execution policy helps protect you from scripts that you do not trust. Αλλάζοντας την πολιτική εκτέλεσης μπορεί να σας εκθέσει σε ρίσκα ασφάλειας που περιγράφονται στο θέμα βοήθειας about_Execution_Policies στο http://go.microsoft.com/fwlink/?LinkID=135170. Θέλετε να αλλάξετε την πολιτική εκτέλεσης; [Y] Ναι [A] Ναι σε όλα [N] Όχι [L] Όχι σε όλα [S] Διακοπή [?] Βοήθεια (προεπιλεγμένο είναι το "N"): A
+>         The execution policy helps protect you from scripts that you do not trust. Changing the execution policy might expose you to the security risks described in the about_Execution_Policies help topic at http://go.microsoft.com/fwlink/?LinkID=135170. Do you want to change the execution policy? [Y] Yes  [A] Yes to All  [N] No  [L] No to All  [S] Suspend  [?] Help (default is "N"): A
 >     
 
 <!--endsec-->
