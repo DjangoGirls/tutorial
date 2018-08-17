@@ -16,23 +16,23 @@ OK, but you want to know how the Internet looks, right?
 
 We drew you a picture! It looks like this:
 
-![Figure 1.1](images/internet_1.png)
+![Rajah 1.1](images/internet_1.png)
 
 Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! Anda boleh mengunjungi sebuah kapal Selam Kabel Peta website (http://submarinecablemap.com) untuk melihat bagaimana rumit bersih. Here is a screenshot from the website:
 
-![Figure 1.2](images/internet_3.png)
+![Rajah 1.2](images/internet_3.png)
 
 It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. Jadi, untuk mencapai satu mesin (sebagai contoh, satu di mana https://djangogirls.org disimpan) kita perlu lulus permintaan melalui banyak, banyak mesin yang berbeza.
 
 It looks like this:
 
-![Figure 1.3](images/internet_2.png)
+![Rajah 1.3](images/internet_2.png)
 
 Bayangkan bahwa ketika anda jenis https://djangogirls.org, yang anda kirim surat yang mengatakan: "Dear Django Girls, aku ingin melihat djangogirls.org web. Kirimkan ke saya, silakan!"
 
 Your letter goes to the post office closest to you. Kemudian ia pergi untuk yang lain, yang sedikit lebih dekat dengan anda penerima, kemudian yang lain, dan lain sehingga ia dihantar di destinasi. Satu-satunya yang unik adalah bahawa jika anda banyak mengirim surat (*paket data*) ke tempat yang sama, mereka bisa pergi melalui benar-benar berbeza pejabat pos (*penghala*). This depends on how they are distributed at each office.
 
-![Figure 1.4](images/internet_4.png)
+![Rajah 1.4](images/internet_4.png)
 
 That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
 
