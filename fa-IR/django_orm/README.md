@@ -12,7 +12,7 @@ A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow y
 
 کنسول های لوکال خود را باز کرده ( نه در PythonAnywhere) و این دستور را تایپ کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
@@ -20,10 +20,11 @@ A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow y
 
 باید پاسخی مانند زیر دریافت کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
-(InteractiveConsole) >>>
+(InteractiveConsole)
+>>>
 ```
 
 You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
@@ -32,7 +33,7 @@ You're now in Django's interactive console. It's just like the Python prompt, bu
 
 در ابتدا تمامی پست ها را نمایش می دهیم. با دستور زیر می توان این کار را انجام داد:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> Post.objects.all()
@@ -43,7 +44,7 @@ NameError: name 'Post' is not defined
 
 Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> from blog.models import Post
@@ -51,7 +52,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 
 We import the model `Post` from `blog.models`. Let's try displaying all posts again:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> Post.objects.all()
@@ -64,7 +65,7 @@ This is a list of the posts we created earlier! We created these posts using the
 
 به صورت زیر می توان یک شیء پست جدید در پایگاه داده ایجاد کرد:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
@@ -74,7 +75,7 @@ But we have one missing ingredient here: `me`. We need to pass an instance of `U
 
 بیایید اول مدل User را وارد کنیم:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> from django.contrib.auth.models import User
@@ -82,7 +83,7 @@ But we have one missing ingredient here: `me`. We need to pass an instance of `U
 
 مشاهده کاربران در پایگاه داده :
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> User.objects.all()
@@ -91,7 +92,7 @@ But we have one missing ingredient here: `me`. We need to pass an instance of `U
 
 This is the superuser we created earlier! Let's get an instance of the user now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> me = User.objects.get(username='ola')
@@ -101,7 +102,7 @@ As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 الان ما میتونیم پست خود را ایجا کنیم:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
@@ -110,7 +111,7 @@ As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 با هم امتحان می کنیم.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> Post.objects.all()
@@ -127,7 +128,7 @@ You can now have a little fun and add more posts to see how it works. Add two or
 
 A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. ما در اینجا به جای `all` از `filter` در تمامی `Post.objects.all()` استفاده می کنیم. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. الان یک کد به صورت زیر داریم:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> Post.objects.filter(author=me)
@@ -136,7 +137,7 @@ A big part of QuerySets is the ability to filter them. Let's say we want to find
 
 Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> Post.objects.filter(title__contains='title')
@@ -147,7 +148,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> from django.utils import timezone
@@ -157,7 +158,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 
 Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> post = Post.objects.get(title="Sample title")
@@ -165,7 +166,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 
 و حالا با متد `publish` آن را منتشر می کنیم:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> post.publish()
@@ -173,7 +174,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 
 Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
@@ -184,7 +185,7 @@ Now try to get list of published posts again (press the up arrow key three times
 
 QuerySets همچنین به شما اجازه میدهد لیستی از اشیاء را سفارش دهید.آنها را در قسمت `created_date` سفارش دهید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> Post.objects.order_by('created_date')
@@ -193,7 +194,7 @@ QuerySets همچنین به شما اجازه میدهد لیستی از اشی�
 
 همچنین با اضافه کردن `-` در ابتدای دستور میتوانیم معکوس سفارش را ببینیم:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> Post.objects.order_by('-created_date')
@@ -213,7 +214,7 @@ QuerySets همچنین به شما اجازه میدهد لیستی از اشی�
 
 موفق شدیم! شما الان برای قسمت بعدی آماده هستید. برای بستن پوسته (shell) دستور زیر را تایپ کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> exit()
