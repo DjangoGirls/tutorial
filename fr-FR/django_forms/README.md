@@ -32,7 +32,7 @@ class PostForm(forms.ModelForm):
 
 Tout d'abord, nous avons besoin d'importer les formulaires Django (`from django import forms`), puis, évidemment, notre modèle `Post` (`from .models import Post`).
 
-Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulaire. Nous avons besoin de préciser à Django que ce formulaire est un `ModelForm`. Pour cela, nous utilisons `forms.ModelForm`.
+Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulaire. Nous avons besoin d'indiquer à Django que ce formulaire est un `ModelForm` (pour que Django fasse certaines choses automatiquement pour nous). Pour cela, nous utilisons `forms.ModelForm`.
 
 Ensuite, nous avons la `class Meta` qui nous permet de dire à Django quel modèle il doit utiliser pour créer ce formulaire (`model = Post`).
 
@@ -271,17 +271,17 @@ Encore bravo !
 
 ## Validation de formulaire
 
-Maintenant, nous allons vous montrer à quel point les formulaires Django sont cools ! Un post de blog a besoin de champs `title` (titre) et `text` (texte). In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Maintenant, nous allons vous montrer à quel point les formulaires Django sont cools ! Un post de blog a besoin de champs `title` (titre) et `text` (texte). Dans notre modèle `Post`, nous n'avons pas signalé que ces champs n'étaient pas obligatoire (à l'inverse de `published_date`). Django s'attend donc à ce qu'ils soient remplis à chaque fois.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Essayez de sauvegarder un formulaire sans mettre de `titre` ou de `texte`. Devinez ce qui va se passer !
 
 ![Validation de formulaire](images/form_validation2.png)
 
-Django tente de valider que tous les champs de notre formulaire sont corrects. N'est-ce pas incroyable?
+Django va s'occuper de la validation : il va regarder si tous les champs de notre formulaire sont en adéquation avec notre modèle. C'est cool, non ?
 
 ## Éditer un formulaire
 
-Maintenant, nous savons comme ajouter un nouveau formulaire. Comment faire si nous voulons éditer un formulaire déjà existant ? C'est très similaire à ce que nous venons de faire. Faisons des choses importantes rapidement. (Si vous ne comprenez pas quelque chose, vous devriez demander à votre entraîneur ou regarder les chapitres précédents, car nous avons accompli toutes ces étapes.)
+Maintenant, nous savons comment ajouter un nouveau formulaire. Comment faire si nous voulons éditer un formulaire déjà existant ? C'est très similaire à ce que nous venons de faire. Tout d'abord, faisons rapidement quelques choses importantes. (Si vous ne comprenez pas quelque chose, vous devriez demander à votre entraîneur ou regarder les chapitres précédents, car nous avons accompli toutes ces étapes.)
 
 Open `blog/templates/blog/post_detail.html` and add the line
 
