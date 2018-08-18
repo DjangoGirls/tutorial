@@ -89,7 +89,7 @@ Pour créer un `virtualenv` sous Linux ou OS X, tapez simplement la commande `py
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> alors exécutez plutôt :
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -112,7 +112,7 @@ Démarrez votre environnement virtuel en exécutant :
     C:\Utilisateurs\Nom\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **Note:** sur Windows 10 vous pouvez avoir une erreur dans le PowerShell de Windows disant `execution of scripts is disabled on this system`. Dans ce cas ouvrez une autre console Windows PowerShell avec l'option "ouvrir en tant qu'administrateur". Puis essayer d'exécuter la commande suivante avant de démarrer votre environnement virtuel :
 > 
 > {% filename %}command-line{% endfilename %}
 > 
