@@ -281,9 +281,9 @@ Django va s'occuper de la validation : il va regarder si tous les champs de notr
 
 ## Éditer un formulaire
 
-Maintenant, nous savons comment ajouter un nouveau formulaire. Comment faire si nous voulons éditer un formulaire déjà existant ? C'est très similaire à ce que nous venons de faire. Tout d'abord, faisons rapidement quelques choses importantes. (Si vous ne comprenez pas quelque chose, vous devriez demander à votre entraîneur ou regarder les chapitres précédents, car nous avons accompli toutes ces étapes.)
+Maintenant, nous savons comment ajouter un nouveau formulaire. Comment faire si nous voulons éditer un formulaire déjà existant ? C'est très similaire à ce que nous venons de faire. Tout d'abord, faisons rapidement quelques choses importantes. (Si vous ne comprenez pas quelque chose, vous devriez demander à votre entraîneur ou regarder les chapitres précédents, car nous avons déjà traité toutes ces étapes.)
 
-Open `blog/templates/blog/post_detail.html` and add the line
+Ouvrez le fichier `blog/templates/blog/post_detail.html` et ajoutez la ligne suivante :
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+Votre template doit ressembler à ceci :
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -322,7 +322,7 @@ Maintenant, dans `blog/urls.py`, ajoutez cette ligne :
 
 Nous allons réutiliser le template de `blog/templates/blog/post_edit.html`. Il ne va donc nous manquer qu'une *vue*.
 
-Let's open `blog/views.py` and add this at the very end of the file:
+Ouvrons `blog/views.py` et ajoutons à la toute fin du fichier :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Vous ne trouvez pas que ça ressemble presque à la vue de `post_new` ? Regardons un peu plus en détails. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Vous ne trouvez pas que ça ressemble presque à la vue de `post_new` ? Regardons un peu plus en détails. Tout d'abord, nous passons un paramètre `pk` supplémentaire. Ensuite, nous récupérons le modèle `Post` que nous souhaitons éditer à l'aide de `get_object_or_404(Post, pk=pk)`. Puis, lorsque nous créons un formulaire, nous faisons de ce post deux `instances`. Tout d'abord lorsque nous sauvegardons le formulaire…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ Vous ne trouvez pas que ça ressemble presque à la vue de `post_new` ? Regardon
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+…Puis ensuite lorsque nous ouvrons le formulaire associé à ce post afin de l'éditer :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,7 +358,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Alors, voyons si ça marche ! Allons à la page `post_detail`. Un bouton d'édition devrait apparaitre dans le coin supérieur droit de la page :
 
 ![Bouton d'édition](images/edit_button2.png)
 
@@ -370,7 +370,7 @@ N'hésitez pas à changer le titre ou le texte et enregistrer les modifications!
 
 Bravo ! Votre application se complexifie et contient de plus en plus de fonctionnalité !
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas à consulter la documentation associée : https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Sécurité
 
@@ -384,7 +384,7 @@ Dans `blog/templates/blog/base.html`, trouvez notre `page-header` `div` et la ba
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Changez la balise `<a>` comme ceci :
+On va y ajouter une autre balise `{% if %}` qui ne fera apparaitre le lien qu’aux utilisateurs⋅trices connecté⋅e⋅s dans l’administration. C'est à dire pour le moment, seulement vous ! Changez la balise `<a>` comme ceci :
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,11 +394,11 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Ce n’est pas une protection complète, mais c’est un bon début. Nous reviendrons sur les questions de sécurité dans les extensions du tutoriel.
+Ce `{% if %}` fait en sorte de n’envoyer le lien au navigateur que si l’utilisateur⋅trice demandant la page est connecté⋅e. Ce n’est pas une protection complète, mais c’est un bon début. Nous reviendrons sur les questions de sécurité dans les extensions du tutoriel.
 
 Rappelez-vous l'icône de modification que nous venons d'ajouter à notre page de détails? Nous souhaitons également ajouter les mêmes modifications, afin que les autres utilisateurs ne puissent pas modifier les publications existantes.
 
-Open `blog/templates/blog/post_detail.html` and find this line:
+Ouvrez le fichier `blog/templates/blog/post_detail.html` et ajoutez la ligne suivante :
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` and find this line:
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Changez-le en ceci:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,7 +416,7 @@ Change it to this:
 {% endif %}
 ```
 
-Parce que vous pouvez être connecté, si vous êtes refresh page, vous ne verrez rien de différent. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Parce vous êtes sans doute déjà connecté, vous ne verrez aucune différence si vous rafraîchissez la page. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## Encore un petit effort : déployons !
 
