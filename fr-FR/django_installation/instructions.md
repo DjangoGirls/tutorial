@@ -199,7 +199,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Votre terminal peut se figer quand vous essayez d'installer Django. Si cela arrive, utilisez cette commande au lieu de la précédente :
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -215,4 +215,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Et voilà ! Vous êtes (enfin) prête pour créer votre première application Django !
