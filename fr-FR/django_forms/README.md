@@ -416,13 +416,13 @@ Changez-le en ceci:
 {% endif %}
 ```
 
-Parce vous êtes sans doute déjà connecté, vous ne verrez aucune différence si vous rafraîchissez la page. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Parce vous êtes sans doute déjà connecté, vous ne verrez aucune différence si vous rafraîchissez la page. Mais si vous chargez la page dans un navigateur web différent ou dans une fenêtre en mode "navigation privée" ou "incognito", vous verrez que le lien ne s'affiche plus, et l’icône non plus !
 
 ## Encore un petit effort : déployons !
 
 Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déployons à nouveau !
 
-* First, commit your new code, and push it up to GitHub:
+* Tout d'abord, commitez votre nouveau code et pushez le à nouveau sur GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -442,8 +442,8 @@ Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déplo
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(N’oubliez pas de remplacer `<your-pythonanywhere-username>` avec votre propre nom d’utilisateur sur PythonAnywhere, sans les chevrons).
 
 * Enfin, cliquez sur l'onglet [Web](https://www.pythonanywhere.com/web_app_setup/) et cliquez sur **Reload**.
 
-And that should be it! Congrats :)
+Normalement, ça devrait suffire ! Encore bravo :)
