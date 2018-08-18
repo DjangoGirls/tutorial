@@ -144,7 +144,7 @@ N'oubliez pas de remplacer `myvenv` par le nom que vous avez choisi pour votre `
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Vous saurez que votre `virtualenv` est lancé quand le prompt de votre console est précédé de `(myvenv)`.
 
 Quand vous travaillez dans un environnement virtuel, la commande `python` fera automatiquement référence à la bonne version de Python. Vous pouvez donc utiliser `python` plutôt que `python3`.
 
@@ -152,33 +152,33 @@ Ok, nous avons installé toutes les dépendances dont nous avions besoin. Nous a
 
 ## Installation de Django
 
-Now that you have your `virtualenv` started, you can install Django.
+Maintenant que vous avez activé votre `virtualenv`, vous pouvez installer Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Avant de faire cela, nous devons nous assurer que nous avons la dernière version de `pip`, le programme que nous allons utiliser pour installer Django:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Installer des paquets avec un fichier "requirements"
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Un fichier "requirement" maintient une liste des dépendances qui doivent être installées avec `pip install`:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder:
+Tout d'abord, créez un fichier nommé `requirements.txt` dans le répertoire `djangogirls` :
 
     djangogirls
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Dans ce fichier `djangogirls/requirements.txt` vous devez ajouter ceci :
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Maintenant, exécutez `pip install -r requirements.txt` pour installer Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -192,7 +192,7 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Si jamais vous obtenez des erreurs lorsque vous utilisez pip sous Windows, vérifiez si votre chemin d'accès contient des espaces, des accents ou des caractères spéciaux (ex : `C:\Utilisateurs\Nom d'Utilisateur\djangogirls`). Si c'est le cas, changez de dossier et essayez d'en créer un nouveau en prenant en compte le fait qu'il ne doit donc avoir ni accents, ni espaces, ni caractères spéciaux (ex : `C:\djangogirls`). Créez un nouvel environnement virtuel dans le nouveau répertoire, puis supprimez l'ancien et ré-essayez la commande précédente. (Déplacer ou couper/coller le répertoire de l'environnement virtuel ne marchera pas car virtualenv utilise des chemins absolus)
 
 <!--endsec-->
 
