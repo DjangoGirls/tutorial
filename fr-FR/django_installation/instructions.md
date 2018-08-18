@@ -10,7 +10,7 @@ Donc, commençons par créer un **environnement virtuel de programmation** (ou *
 
 Tout ce dont vous avez besoin, c'est de trouver un dossier où vous voulez créer votre `virtualenv` ; vous pouvez choisir votre répertoire "home" par exemple. Sous Windows, le home ressemble à `C:\Utilisateurs\Nom` (où `Nom` est votre login).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **Note:** Sur Windows, assurez-vous que le chemin vers ce répertoire ne contienne pas d'accents ou autres caractères spéciaux; si c'est la cas, utilisez un répertoire différent, par exemple `C:\djangogirls`.
 
 Dans ce tutoriel, nous allons utiliser un nouveau dossier `djangogirls` que vous allez créer dans votre dossier home :
 
@@ -30,30 +30,30 @@ Nous allons créer un virtualenv appelé `myvenv`. Pour cela, nous taperons une 
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+Pour créer un nouveau `virtualenv`, vous devez ouvrir un terminal et exécuter `python -m venv myvenv`. Voici ce à quoi ça devrait ressembler:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. Vous pouvez choisir un autre nom mais attention : il doit être en minuscules, sans espaces et sans accents ou caractères spéciaux. It is also good idea to keep the name short – you'll be referencing it a lot!
+Où `myvenv` est le nom de votre `virtualenv`. Vous pouvez choisir un autre nom mais attention : il doit être en minuscules, sans espaces et sans accents ou caractères spéciaux. C'est aussi une bonne idée de choisir un nom plutôt court, car vous aller souvent l'utiliser!
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Pour créer un `virtualenv` sous Linux ou OS X, tapez simplement la commande `python3 -m venv myvenv`. Ça ressemblera à ça :
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` est le nom de votre `virtualenv`. Vous pouvez choisir un autre nom, mais veillez à n'utiliser que des minuscules et à n'insérer ni espaces, ni caractères spéciaux. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` est le nom de votre `virtualenv`. Vous pouvez choisir un autre nom, mais veillez à n'utiliser que des minuscules et à n'insérer ni espaces, ni caractères spéciaux. C'est aussi une bonne idée de choisir un nom plutôt court, car vous aller souvent l'utiliser!
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **Note:** sur certaines versions de Debian/Ubuntu vous pouvez avoir l'erreur suivante:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -62,12 +62,12 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> Dans ce cas, suivez les instructions ci-dessus et installez le paquet `python9-venv`: {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
 > 
-> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> **Note:** Sur certaines version de Debian/Ubuntu, initialiser l’environnement virtuel de cette façon donne l'erreur suivante:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -82,7 +82,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **Note:** Si vous avez une erreur telle que :
 > 
 > {% filename %}command-line{% endfilename %}
 > 
