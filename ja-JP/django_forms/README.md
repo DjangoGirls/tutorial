@@ -140,7 +140,7 @@ def post_new(request):
 
 `blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
 
-* フォームを表示する必要があります。 私たちは（例えば）{％ raw ％}`{{ form.as_p }}`{％ endraw ％}でこれを行うことができます。
+* フォームを表示する必要があります。 私たちは（例えば）{% raw %}`{{ form.as_p }}`{% endraw %} でこれを行うことができます。
 * 上記の行は HTMLのformタグでラップする必要があります：`<form method="POST">...</form>`
 * `Save` ボタンが必要です。これをHTMLのbuttonタグで行います：`<button type="submit">Save</button>`
 * 最後に`<form ...>` タグの開始直後に、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームをセキュアにするためこれは非常に重要です！ これを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
