@@ -1,6 +1,6 @@
-# Djangoのフォーム
+# Djangoフォーム
 
-私たちのWebサイトで最終的にやりたいことは、記事を追加したり編集したりするためのよい方法を作ることです。 `Django admin`はかなりいいですが、カスタマイズしたりかわいくいい感じにするのはちょっと大変です。 `フォーム`によってインターフェイスに対して完璧な力を持てるようになります。想像するほとんど全てのことができます！
+私たちのWebサイトで最終的にやりたいことは、記事を追加したり編集したりするためのよい方法を作ることです。 `Django admin`はかなりいいですが、カスタマイズしたりかわいくいい感じにするのはちょっと大変です。 `フォーム` によってインターフェイスを完璧にコントロールできるようになります。想像するほとんど全てのことができます！
 
 Djangoフォームのよいところは、フォームをゼロから定義できたり、フォームの結果をモデルに保存できる`ModelForm`を作れたりするところです。
 
@@ -36,15 +36,15 @@ class PostForm(forms.ModelForm):
 
 次に`class Meta`ですが、ここでDjangoにフォームを作るときにどのモデルを使えばいいか (`model = Post`) を伝えます。
 
-最後にフォームのフィールドに何を置くか書きます。 このシナリオで、私たちは`title` と `text`の部分でタイトルと本文を公開します。 `author`は現在ログインしている人（あなた）です。 `created_date` は自動的に記事ポストを書いた時間が設定されます。
+最後にフォームのフィールドに何を置くか書きます。 ここでは、私たちは`title`（タイトル）と `text`（本文）のみをフォームで使用します。 `author` は現在ログインしている人（あなた）です。 `created_date` は（コードによって）自動的に記事を書いた日時が設定されます。
 
-そしてそうです！今私たちがやりたいのはフォームを*view*で使い、それをテンプレート内に表示することです。
+ひとまずこれでおしまいです！あとはフォームを*ビュー*で使い、それをテンプレート内に表示しさえすればいいです。
 
-もう一度ファイルを作ります。：ページへのリンク、URL、ビューとテンプレートです。
+もう一度、ページへのリンク、URL、ビューとテンプレートを作ります。
 
 ## フォームにおけるページへのリンク
 
-`blog/templates/blog/base.html`を開きましょう。`page-header`と名付けた`div`中に次のリンクを追加します:
+`blog/templates/blog/base.html`を開きましょう。`page-header`と名付けた`div`中に次のリンクを追加します：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,7 +85,7 @@ class PostForm(forms.ModelForm):
 </html>
 ```
 
-ファイルを保存して、ページ http://127.0.0.1:8000 をリロードします。すでに見覚えのある `NoReverseMatch` エラーが表示されます？
+ファイルを保存して、ページ http://127.0.0.1:8000 をリロードします。すでに見覚えのある `NoReverseMatch` エラーが表示されますか？
 
 ## URL
 
@@ -140,10 +140,10 @@ def post_new(request):
 
 `blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
 
-* フォームを表示する必要があります。 私たちは（例えば）{％ raw ％}`{{ form.as_p }}`{％ endraw ％}でこれを行うことができます。
-* 上記の行は HTMLのformタグでラップする必要があります: `<form method="POST">...</form>`.
-* `Save` ボタンが必要です。これをHTMLのbuttonタグで行います: `<button type="submit">Save</button>`.
-* 最後に`<form ...>` タグを開いて、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームをセキュアにするためこれは非常に重要です！ これを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
+* フォームを表示する必要があります。 私たちは（例えば）{% raw %}`{{ form.as_p }}`{% endraw %} でこれを行うことができます。
+* 上記の行は HTMLのformタグでラップする必要があります：`<form method="POST">...</form>`
+* `Save` ボタンが必要です。これをHTMLのbuttonタグで行います：`<button type="submit">Save</button>`
+* 最後に`<form ...>` タグの開始直後に、 `{% raw %}{% csrf_token %}{% endraw %}`を追加する必要があります。 フォームをセキュアにするためこれは非常に重要です！ これを忘れると、Djangoはフォームを保存しようとすると文句を言うでしょう：
 
 ![CSFR 禁止のページ](images/csrf2.png)
 
@@ -169,13 +169,13 @@ def post_new(request):
 
 ちょっと待ってみて下さい。`title` と `text` フィールドに何か入力して保存するとどうなりますか？
 
-何もおきません！もう一度同じページ戻りテキストはどこかに行ってしまいました…… そして新しい投稿は追加されていません。何がいけなかったのでしょうか？
+何も起きません！もう一度同じページに戻りテキストはどこかに行ってしまいました… そして新しい投稿は追加されていません。何がいけなかったのでしょうか？
 
 答えは: 何も間違ってない、です。*ビュー* でもう少し作業を行う必要があります.
 
-## Formをsaveする
+## フォームを保存する
 
-`Blog/views.py` をもう一度開きます。現在は `post_new` ビューはこうなっています。
+`blog/views.py` をもう一度開きます。現在は `post_new` ビューはこうなっています。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,9 +185,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-フォームを送信したとき、同じビューに戻されていましたが、このとき`request`、もっと詳しくいうと `request.POST` にデータが追加されています (このPOSTという名前はブログ投稿 "post" とは関係ありません。このデータは送られてきたもの、というコトと関係しています) 。 HTMLファイルの `<form>` 定義で、`method="POST"` という変数があったのを覚えていますか？ これによってフォームのすべてのフィールドは今 `request.POST` にあります。 `POST` という名前を何か別のものに変えることはできません (他に唯一の有効な `method` の値は `GET` ですが、その違いを説明する時間がありません) 。
+フォームを送信したとき、同じビューに戻されていましたが、このとき`request`、もっと詳しくいうと `request.POST` にデータが追加されています (このPOSTという名前はブログ投稿 "post" とは関係ありません。このデータは送られてきたもの、というコトと関係しています) 。 HTMLファイルの `<form>` タグで、`method="POST"` という変数があったのを覚えていますか？ これによってフォームのすべてのフィールドは今 `request.POST` にあります。 `POST` という名前を何か別のものに変えることはできません (他に唯一の有効な `method` の値は `GET` ですが、その違いを説明する時間がありません) 。
 
-私たちの *ビュー* では、扱わなくてはならない２つの別々のシチュエーションがあります: １つ目は、最初にページにアクセスしてきた時で空白のフォームが必要な場合。２つ目はすべてのフォームデータが入力された状態で*ビュー*に戻ってくる場合です。 したがって条件分岐を追加する必要があります（そのために`if`を使います）:
+私たちの *ビュー* では、扱わなくてはならない２つの別々のシチュエーションがあります: １つ目は、最初にページにアクセスしてきた時で空白のフォームが必要な場合。２つ目はすべてのフォームデータが入力された状態で*ビュー*に戻ってくる場合です。 したがって条件分岐を追加する必要があります（そのために`if`を使います）：
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,7 +238,7 @@ from django.shortcuts import redirect
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` 移動したいビューの名前です。 この *ビュー* では `pk` 変数が必須であることを覚えていますか? ビューにそれを渡すため、`pk=post.pk`を使います。この `post` は新しく作られたブログポストです！
+`post_detail` は移動したいビューの名前です。 この *ビュー* では `pk` 変数が必須であることを覚えていますか? ビューにそれを渡すため、`pk=post.pk`を使います。この `post` は新しく作られたブログポストです！
 
 ふー、たくさんのことを話してきましたが、そろそろ *ビュー* の全体がどんな感じか見てみたい頃じゃないでしょうか？
 
@@ -265,7 +265,7 @@ def post_new(request):
 
 素晴らしい！
 
-> 最近までDjango adminを使ってきたので、システム上で今まだログイン状態かと思います。 いくつかの状況ではログアウト状態になることがあります(ブラウザを閉じる、DBを再起動するなど..)。 投稿を作成するときに、ログインユーザーがわからないというエラーが発生した場合は、管理ページhttp://127.0.0.1:8000/adminにアクセスして再度ログインしてください。 その問題は一時的に解決します。 メインチュートリアルの後 Homework: add security to your website! の章に恒久的な対策がありますので宿題として取り組んでみてください。
+> 最近までDjango adminを使ってきたので、システム上で今まだログイン状態かと思います。 いくつかの状況ではログアウト状態になることがあります(ブラウザを閉じる、DBを再起動するなど..)。 投稿を作成するときに、ログインユーザーがわからないというエラーが発生した場合は、管理ページhttp://127.0.0.1:8000/admin にアクセスして再度ログインしてください。 その問題は一時的に解決します。 メインチュートリアルの後 **Homework: add security to your website!** の章に恒久的な対策がありますので宿題として取り組んでみてください。
 
 ![ログインエラー](images/post_create_error.png)
 
@@ -312,7 +312,7 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 {% endblock %}
 ```
 
-blog/urls.py には次の行を追加します:
+`blog/urls.py` には次の行を追加します:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +320,9 @@ blog/urls.py には次の行を追加します:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-テンプレート `blog/templates/blog/post_edit.html` を再利用します。そして*ビュー*を追加します.
+テンプレート `blog/templates/blog/post_edit.html` を再利用します。そして残るは*ビュー*です。
 
-`blog/views.py` を開いて次をファイルの最後に追加します:
+`blog/views.py` を開いて次をファイルの最後に追加します：
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まずURLから追加の `pk` パラメータを渡します。 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときは以下の両方のケースでそのポストを`インスタンス`として渡します。フォームを保存するときは……
+`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まずURLから追加の `pk` パラメータを渡します。 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときは以下の2つのケースのようにそのポストを`instance（インスタンス）`として渡します。フォームを保存するときは…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-……このポストを編集するためにただフォームを開く場合は:
+…このポストを編集するためにただフォームを開く場合は:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,11 +358,11 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-よし、ちゃんと動くか試してみましょう！`post_detail` ページにいきましょう。そこの右上に [編集] ボタンがあるはずです:
+よし、ちゃんと動くか試してみましょう！`post_detail` ページにいきましょう。そこの右上に [編集] ボタンがあるはずです：
 
 ![編集ボタン](images/edit_button2.png)
 
-クリックするとブログ記事のフォームが表示されると思います:
+クリックするとブログ記事のフォームが表示されると思います：
 
 ![編集フォーム](images/edit_form2.png)
 
@@ -376,7 +376,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-`blog/templates/ blog/base.html` で、`page-header` `div `とそれ以前に入力したアンカータグを見つけます。 これは次のようになります。
+`blog/templates/blog/base.html` で、`page-header` と名付けた `div ` とそこに以前に入力したアンカータグを見つけます。 これは次のようになります。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 詳細ページに追加した編集アイコンを覚えていますか？ 他の人が既存の投稿を編集できないように、同じ変更を追加したいと思います。
 
-`blog/templates/blog/post_detail.html` を開いて次の行を見つけてください:
+`blog/templates/blog/post_detail.html` を開いて次の行を見つけてください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-それをこれに変更してください：
+以下のように変更してください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -442,7 +442,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
     [...]
     
 
-(`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
+(`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに)
 
 * 最後に、[Webタブ](https://www.pythonanywhere.com/web_app_setup/)に行って、**リロード**します。
 

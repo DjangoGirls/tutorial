@@ -102,9 +102,9 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
 {% endfor %}
 ```
 
-これをテンプレートのコンテンツブロックのパーツとして使いたいです。このファイルにblockタグを追加する時です！
+これをcontentブロックに対応するテンプレートのパーツとして使いたいです。このファイルにblockタグを追加する時です！
 
-{% raw %}追加するblockタグは `base.html` ファイル中のタグにマッチしてほしいですよね。 また、blockタグにはコンテンツブロックに続くすべてのコードを含めたいですよね。 そうするには、すべてを `{% block content %}` と `{% endblock %}` の間に入れてあげればよいです。 このように:{% endraw %}
+{% raw %}追加するblockタグは `base.html` ファイル中のタグにマッチしてほしいですよね。 また、blockタグにはcontentブロックに属するすべてのコードを含めたいですよね。 そうするには、すべてを `{% block content %}` と `{% endblock %}` の間に入れてあげればよいです。 このように:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
