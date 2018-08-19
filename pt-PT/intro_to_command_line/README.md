@@ -322,7 +322,7 @@ Verifica onde estás:
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/olasitarska/Ambiente de Trabalho
+    /Users/olasitarska/Desktop
     
 
 <!--endsec-->
@@ -332,7 +332,7 @@ Verifica onde estás:
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Users\olasitarska\Ambiente de Trabalho
+    C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
