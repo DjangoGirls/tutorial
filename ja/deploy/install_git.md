@@ -5,7 +5,7 @@ Gitはたくさんのプログラマが利用する「バージョン管理シ�
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-[git-scm.com](https://git-scm.com/) かからGitをダウンロードすることができます。 １つを除きすべてのステップで「次へ」を押して進んで大丈夫です。 「PATH環境を調整する」の手順で、「WindowsコマンドプロンプトからGitとオプションのUnixツールを使用する」を選択します。 （checkout時はWindows-style、commit時はUnix-style に改行コードを変換する オプションを選択するということ）
+[git-scm.com](https://git-scm.com/) からGitをダウンロードすることができます。 1つのステップを除いて「次へ」を押して進んで大丈夫です。「PATH環境を調整する(Adjusting your PATH environment)」というステップでは、「WindowsコマンドプロンプトからGitとオプションのUnixツールを使用する(Use Git and optional Unix tools from the Windows Command Prompt)」（一番下の選択肢）を選択します。 それ以外はデフォルトの設定値で構いません。 改行コードの変換(Configuring the line ending conversions)については、「Checkout Windows-style, commit Unix-style line endings」の選択で大丈夫です。
 
 インストールが正常に終了した後、コマンドプロンプトまたはPowerShellを再起動することを忘れないでください。<!--endsec-->
 
