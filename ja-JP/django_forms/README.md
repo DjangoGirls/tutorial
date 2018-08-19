@@ -376,7 +376,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-`blog/templates/ blog/base.html` で、`page-header` `div `とそれ以前に入力したアンカータグを見つけます。 これは次のようになります。
+`blog/templates/blog/base.html` で、`page-header` と名付けた `div ` とそこに以前に入力したアンカータグを見つけます。 これは次のようになります。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 詳細ページに追加した編集アイコンを覚えていますか？ 他の人が既存の投稿を編集できないように、同じ変更を追加したいと思います。
 
-`blog/templates/blog/post_detail.html` を開いて次の行を見つけてください:
+`blog/templates/blog/post_detail.html` を開いて次の行を見つけてください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-それをこれに変更してください：
+以下のように変更してください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
