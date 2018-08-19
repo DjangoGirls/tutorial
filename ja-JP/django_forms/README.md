@@ -312,7 +312,7 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 {% endblock %}
 ```
 
-blog/urls.py には次の行を追加します:
+`blog/urls.py` には次の行を追加します:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +320,9 @@ blog/urls.py には次の行を追加します:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-テンプレート `blog/templates/blog/post_edit.html` を再利用します。そして*ビュー*を追加します.
+テンプレート `blog/templates/blog/post_edit.html` を再利用します。そして残るは*ビュー*です。
 
-`blog/views.py` を開いて次をファイルの最後に追加します:
+`blog/views.py` を開いて次をファイルの最後に追加します：
 
 {% filename %}blog/views.py{% endfilename %}
 
