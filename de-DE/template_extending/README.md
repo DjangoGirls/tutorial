@@ -104,7 +104,7 @@ Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_
 
 Dieser Teil unseres Templates soll nun das Basis-Template erweitern. Wir müssen daher Block-Tags ergänzen!
 
-{% raw %}Deine Block-Tags müssen mit den Tags in der `base.html`-Datei übereinstimmen. Du möchtest auch, dass der ganze Code dieser Datei mit eingeschlossen wird. Um das zu erreichen, umschließt du ihn mit `{% block content %}` und `{% endblock %}`. So hier:{% endraw %}
+{% raw %}Deine Block-Tags müssen mit den Tags in der `base.html`-Datei übereinstimmen. Stelle sicher, dass die Block-Tags den ganzen Code deines content-Blocks umschließen. Um das zu erreichen, umschließt du ihn mit `{% block content %}` und `{% endblock %}`. So hier:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ Dieser Teil unseres Templates soll nun das Basis-Template erweitern. Wir müssen
 {% endblock %}
 ```
 
-Nur eine Sache noch. Wir müssen die beiden Templates natürlich miteinander verknüpfen. Darum geht es ja bei der Template-Erweiterung! Dafür ergänzen wir einen Tag für Erweiterung (extends tag) ganz oben in der Datei. So hier:
+Nur eine Sache noch. Wir müssen die beiden Templates miteinander verknüpfen. Darum geht es ja bei der Template-Erweiterung! Dafür ergänzen wir einen Tag für Erweiterung (extends tag) ganz oben in der Datei. Und zwar so:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
