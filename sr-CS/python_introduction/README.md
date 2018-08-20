@@ -276,7 +276,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> lutrija= [3, 42, 12, 19, 30, 59]
+>>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
 All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
@@ -284,7 +284,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(lutrija)
+>>> len(lottery)
 6
 ```
 
@@ -293,7 +293,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> lutrija.sort()
+>>> lottery.sort()
 ```
 
 This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
@@ -301,7 +301,7 @@ This doesn't return anything, it just changed the order in which the numbers app
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(lutrija)
+>>> print(lottery)
 [3, 12, 19, 30, 42, 59]
 ```
 
@@ -312,8 +312,8 @@ Maybe we want to reverse that order? Let's do that!
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> lutrija.reverse()
->>> print(lutrija)
+>>> lottery.reverse()
+>>> print(lottery)
 [59, 42, 30, 19, 12, 3]
 ```
 
@@ -322,8 +322,8 @@ If you want to add something to your list, you can do this by typing this comman
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> lutrija.append(199)
->>> print(lutrija)
+>>> lottery.append(199)
+>>> print(lottery)
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
@@ -332,9 +332,9 @@ If you want to show only the first number, you can do this by using **indexes**.
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(lutrija[0])
+>>> print(lottery[0])
 59
->>> print(lutrija[1])
+>>> print(lottery[1])
 42
 ```
 
@@ -381,7 +381,7 @@ Now, try writing the following command (try substituting your own information, t
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucesnik= {'ime': 'Ola', 'zemlja': 'Poljska', 'omiljeni_brojevi': [7, 42, 92]}
+>>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
 With this command, you just created a variable named `participant` with three key–value pairs:
@@ -395,7 +395,7 @@ You can check the content of individual keys with this syntax:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(ucesnik['ime'])
+>>> print(participant['name'])
 Ola
 ```
 
@@ -406,10 +406,10 @@ What happens if we ask Python the value of a key that doesn't exist? Can you gue
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
 ```python
->>> ucesnik['godine']
+>>> participant['age']
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-KeyError: 'godine'
+KeyError: 'age'
 ```
 
 Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
@@ -424,7 +424,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> ucesnik['omiljeni_jezik'] = 'Python'
+>>> participant['favorite_language'] = 'Python'
 ```
 
 Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
@@ -432,7 +432,7 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> len(ucesnik)
+>>> len(participant)
 4
 ```
 
