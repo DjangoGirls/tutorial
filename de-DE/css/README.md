@@ -180,7 +180,7 @@ Super!
 
 Wie oben erwähnt, basiert CSS auf dem Konzept von Klassen. Diese erlauben dir, einen Teil des HTML-Codes mit einem Namen zu versehen und die Darstellung dieses Teils separat von anderen Teilen mit einem Stil zu steuern. Das kann sehr hilfreich sein! Eventuell hast Du zwei 'div's die etwas vollkommen Verschiedenes auszeichnen (wie einen Seitentitel oder Post Beitrag). Die Klasse hilft dir, sie unterschiedlich aussehen zu lassen.
 
-Geben wir also einigen Teilen deines HTML-Codes solche Namen. Füge eine Klasse (`class`) namens `page-header` dem <0>div</0> hinzu, das die Kopfzeilen (header) enthalten soll:
+Geben wir also einigen Teilen deines HTML-Codes solche Namen. Füge eine Klasse (`class`) namens `page-header` dem `div` hinzu, das die Kopfzeilen (header) enthalten soll:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
