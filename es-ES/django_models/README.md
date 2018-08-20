@@ -77,7 +77,7 @@ Para mantener todo en orden, crearemos una aplicación separada dentro de nuestr
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Notarás que se ha creado un nuevo directorio `blog` y ahora contiene una cantidad de archivos. Los directorios y archivos en nuestro proyecto deberían verse así:
 
     djangogirls
     ├── blog
