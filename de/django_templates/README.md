@@ -1,12 +1,12 @@
-# Django Templates
+# Django-Templates
 
-Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar sehr hilfreiche **Template Tags** mit.
+Es wird Zeit, ein paar Daten anzuzeigen! Django bringt dafür bereits ein paar sehr hilfreiche **Template-Tags** mit.
 
-## Was sind Template Tags?
+## Was sind Template-Tags?
 
-Also, in HTML kann man nicht wirklich Python-Code schreiben, weil es der Browser nicht verstehen würde. Er kennt nur HTML. Wir wissen, dass HTML, im Gegensatz zum dynamischeren Python, eher statisch ist.
+Also, in HTML kann man nicht wirklich Python-Code schreiben, weil es der Browser nicht verstehen würde. Denn der kennt nur HTML. Wir wissen, dass HTML ziemlich statisch ist, während Python dynamischer ist.
 
-Die **Django Template Tags** helfen dabei, Python-Dinge in HTML auszudrücken, so dass man einfach und schnell dynamische Websites erstellen kann. Super!
+Die **Django-Template-Tags** erlauben uns, Python-artige Dinge ins HTML zu bringen, so dass man einfach und schnell dynamische Websites erstellen kann. Super!
 
 ## Anzeigen des Post-List-Templates
 
@@ -14,15 +14,19 @@ Im vorangegangen Kapitel haben wir unserem Template in der `posts`-Variable eine
 
 Um eine Variable in einem Django-Template darzustellen, nutzen wir doppelte, geschweifte Klammern mit dem Namen der Variable darin, so wie hier:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {{ posts }}
 ```
 
-Versuche dies in deinem `blog/templates/blog/post_list.html` Template. Ersetze alles vom zweiten `<div>` bis zum dritten `<div>` mit `{{ posts }}`. Speichere die Datei und aktualisiere die Seite, um die Ergebnisse anzuzeigen.
+Versuche das in deinem `blog/templates/blog/post_list.html` Template. Ersetze alles vom zweiten `<div>` bis zum dritten `<div>` mit `{{ posts }}`. Speichere die Datei und aktualisiere die Seite, um die Ergebnisse anzuzeigen.
 
 ![Abbildung 13.1](images/step1.png)
 
 Wie du siehst, haben wir nun das:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <QuerySet [<Post: My second post>, <Post: My first post>]>
@@ -30,9 +34,11 @@ Wie du siehst, haben wir nun das:
 
 Das heißt, Django versteht es als Liste von Objekten. Kannst du dich noch an die Einführung von Python erinnern, wie man Listen anzeigen kann? Ja, mit for-Schleifen! In einem Django-Template benutzt du sie so:
 
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+
 ```html
 {% for post in posts %}
-    {{ post }}
+    {{ post }}
 {% endfor %}
 ```
 
@@ -40,19 +46,21 @@ Versuch das in deinem Template.
 
 ![Abbildung 13.2](images/step2.png)
 
-Es funktioniert! Aber wir wollen, dass die Posts so angezeigt werden, wie die statischen Posts, die wir vorhin im **Introduction to HTML** Kapitel erstellt haben. Du kannst HTML und Template Tags mischen. Unser `body` sollte dann so aussehen:
+Es funktioniert! Aber wir wollen, dass die Posts so wie die statischen Posts angezeigt werden, die wir vorhin im **Einführung in HTML**-Kapitel erstellt haben. Du kannst HTML und Template Tags mischen. Unser `body` sollte dann so aussehen:
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div>
-    <h1><a href="/">Django Girls Blog</a></h1>
+    <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h1><a href="">{{ post.title }}</a></h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endfor %}
 ```
 
@@ -60,37 +68,39 @@ Es funktioniert! Aber wir wollen, dass die Posts so angezeigt werden, wie die st
 
 ![Abbildung 13.3](images/step3.png)
 
-Ist dir aufgefallen, dass wir diesmal eine etwas andere Notation benutzen bei `{{ post.title }}` oder `{{ post.text }}`? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. In den Posttexten konvertiert außerdem der `|linebreaks`-Befehl ("pipe") Zeilenumbrüche in Absätze.
+Ist dir aufgefallen, dass wir diesmal eine etwas andere Notation benutzen haben (`{{ post.title }}` oder `{{ post.text }}`)? Wir greifen auf Daten von jedem Feld unseres `Post`-Models zu. Außerdem leitet das `|linebreaksbr` den Text der Posts durch einen Filter, um Zeilenumbrüche in Absätze umzuwandeln.
 
 ## Und zum Schluss
 
-Es wäre gut zu sehen, ob deine Website noch immer im öffentlichen Internet funktioniert, richtig? Lass uns versuchen, unsere Aktualisierungen wieder zu PythonAnywhere hochzuladen. Hier ist eine Zusammenfassung der Schritte...
+Es wäre gut zu sehen, ob deine Website noch immer im öffentlichen Internet funktioniert, richtig? Lass uns versuchen, unsere Aktualisierungen wieder zu PythonAnywhere hochzuladen. Hier ist eine Zusammenfassung der Schritte…
 
 * Schiebe zuerst deinen Code auf GitHub
 
-```bash
-$ git status
-[...]
-$ git add --all .
-$ git status
-[...]
-$ git commit -m "Modified templates to display posts from database."
-[...]
-$ git push
-```
+{% filename %}command-line{% endfilename %}
 
-* Dann logg dich wieder bei [PythonAnywhere](https://www.pythonanywhere.com/consoles/) ein und geh zu deiner **Bash-Konsole** (oder starte eine neue) und gib ein:
+    $ git status
+    [...]
+    $ git add --all .
+    $ git status
+    [...]
+    $ git commit -m "Modified templates to display posts from database."
+    [...]
+    $ git push
+    
 
-```bash
-$ cd my-first-blog
-$ git pull
-[...]
-```
+* Dann logg dich wieder bei [PythonAnywhere](https://www.pythonanywhere.com/consoles/) ein, geh zu deiner **Bash-Konsole** (oder starte eine neue) und gib ein:
 
-* Zum Schluss hüpf noch einmal kurz rüber zum [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und drück auf **Reload**. Deine Änderungen sollten jetzt live sein!
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-Herzlichen Glückwunsch! Du kannst jetzt in der Django Admin Oberfläche neue Posts hinzufügen (denk daran published_date hinzuzufügen!), dann aktualisiere die Site, um zu sehen, ob der neue Post auch erscheint.
+    $ cd $USER.pythonanywhere.com
+    $ git pull
+    [...]
+    
 
-Funktioniert super? Wir sind stolz auf dich! Steh kurz ein bisschen vom Computer auf. Du hast dir eine Pause verdient :)
+* Zum Schluss hüpf noch einmal kurz rüber zum [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und drück auf **Reload**. Deine Änderungen sollten jetzt live sein! Wenn die Blogposts auf deiner PythonAnywhere-Seite anders sind als die auf deinem lokalen Server, ist das in Ordnung so. Die Datenbanken auf deinem lokalen Computer und auf PythonAnywhere werden nicht zusammen mit den restlichen Dateien abgeglichen.
+
+Glückwunsch! Nun kannst du dich daran machen, neue Posts in deinem Django Admin zu erstellen (denk daran, auch ein published_date einzufügen!). Stell sicher, dass du im Django Admin der PythonAnywhere Seite https://yourname.pythonanywhere.com/admin arbeitest. Dann aktualisiere die Seite und schau nach, ob die Posts dort erscheinen.
+
+Funktioniert super? Wir sind so stolz auf dich! Steh kurz auf und geh ein Stück weg vom Computer. Du hast dir eine Pause verdient :)
 
 ![Abbildung 13.4](images/donut.png)
