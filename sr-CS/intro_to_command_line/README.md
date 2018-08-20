@@ -235,7 +235,7 @@ Tu je!
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir vezba
+    $ mkdir practice
     
 
 <!--endsec-->
@@ -244,7 +244,7 @@ Tu je!
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir vezba
+    > mkdir practice
     
 
 <!--endsec-->
@@ -337,7 +337,7 @@ Pogledajmo gde smo:
 
 <!--endsec-->
 
-Sada je vreme da izbrišemo `vezva` direktorijum:
+Sada je vreme da izbrišemo `practice` direktorijum:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -345,7 +345,7 @@ Sada je vreme da izbrišemo `vezva` direktorijum:
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r vezba
+    $ rm -r practice
     
 
 <!--endsec-->
@@ -354,8 +354,8 @@ Sada je vreme da izbrišemo `vezva` direktorijum:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S vezba
-    vezba, Are you sure <Y/N>? Y
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
@@ -410,7 +410,7 @@ Evo pregleda nekih korisnih komandi:
 
 | Komande (Windows) | Komande (Mac OS / Linux) | Opis                            | Primer                                            |
 | ----------------- | ------------------------ | ------------------------------- | ------------------------------------------------- |
-| izlazak           | izlazak                  | zatvara prozor                  | **izlazak**                                       |
+| exit              | exit                     | zatvara prozor                  | **exit**                                          |
 | cd                | cd                       | menja direktorijum              | **cd test**                                       |
 | cd                | pwd                      | show the current directory      | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
 | dir               | ls                       | izlistava direktorijume/fajlove | **dir**                                           |
