@@ -21,13 +21,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# Podešavanje virtualenv-a i instalacija Djanga
-
-{% include "/django_installation/instructions.md" %}
-
-# Instalacija editora koda
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
+
+# Set up virtualenv and install Django
+
+{% include "/django_installation/instructions.md" %}
 
 # Instalacija Git-a
 
