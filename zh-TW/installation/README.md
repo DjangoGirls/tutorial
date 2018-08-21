@@ -21,13 +21,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# 建立虛擬環境 (Virtualenv) 和安裝 Django
-
-{% include "/django_installation/instructions.md" %}
-
-# 安裝程式編輯器
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
+
+# Set up virtualenv and install Django
+
+{% include "/django_installation/instructions.md" %}
 
 # 安裝 Git
 
