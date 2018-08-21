@@ -21,13 +21,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# قم بإعداد بيئة افتراضية وتثبيت جانغو
+# Install a code editor
+
+{% include "/code_editor/instructions.md" %}
+
+# Set up virtualenv and install Django
 
 {% include "/django_installation/instructions.md" %}
-
-# ركب محرر اكواد
-
-{% include "/chromebook_setup/instructions.md" %}
 
 # تثبيت Git
 
