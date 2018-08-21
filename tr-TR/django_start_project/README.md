@@ -80,7 +80,7 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zama
 TIME_ZONE = 'Europe/Istanbul'
 ```
 
-Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. Eğer İngilizce ana diliniz değilse, varsayılan buttonları ve uyarıların dilini kendi dilinize değiştirmek için bunu ekleyebilirsiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. Eğer İngilizce ana diliniz değilse, varsayılan buttonları ve uyarıların dilini kendi dilinize değiştirmek için bunu ekleyebilirsiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django birçok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 Farklı bir dil istiyorsanız, aşağıdaki satırı değiştirerek dil kodunu seçin:
 
@@ -192,7 +192,7 @@ Eğer Chromebook kullanıyorsanız, her seferinde test sunucusunu ziyaret edecek
 
 Tebrikler! ilk web siteni oluşturdun ve web sunucusu kullanarak çalıştırdın! Harika, değil mi?
 
-![Install worked!](images/install_worked.png)
+![Kurulum basarili!](images/install_worked.png)
 
 Web sunucusu çalışırken ek komutlar girmek için yeni bir komut satırı istemi göremezsiniz. Terminal yeni metin kabul edecek ama yeni komutları çalıştırmayacaktır. Bunun nedeni web sunucusunun duraklamadan gelen talepleri algılamasıdır.
 
