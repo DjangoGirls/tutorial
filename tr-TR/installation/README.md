@@ -21,13 +21,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# Bir "virtualenv" kurun ve Django'yu yükleyin
-
-{% include "/django_installation/instructions.md" %}
-
-# Bir kod düzenleyicisi yükleyin
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
+
+# Set up virtualenv and install Django
+
+{% include "/django_installation/instructions.md" %}
 
 # Git yükleyin
 
