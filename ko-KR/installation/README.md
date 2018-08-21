@@ -21,13 +21,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# virtualenv 설정하고 Django 설치하기
-
-{% include "/django_installation/instructions.md" %}
-
-# 코드 에디터 설치하기
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
+
+# Set up virtualenv and install Django
+
+{% include "/django_installation/instructions.md" %}
 
 # Git 설치하기
 
