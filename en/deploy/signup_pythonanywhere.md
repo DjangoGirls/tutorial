@@ -4,7 +4,7 @@ Sign up for a free "Beginner" account on PythonAnywhere:
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (write it down or add it to your password manager, if you use one).
 
 ## Creating a PythonAnywhere API token
 
