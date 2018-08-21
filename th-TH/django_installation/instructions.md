@@ -165,7 +165,7 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder:
+First create a `requirements.txt` file inside of `djangogirls/` folder, using the code editor that you installed earlier:
 
     djangogirls
     └───requirements.txt
