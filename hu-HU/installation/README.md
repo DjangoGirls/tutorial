@@ -21,13 +21,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# Virtuális környezet létrehozása és a Django telepítése
+# Install a code editor
+
+{% include "/code_editor/instructions.md" %}
+
+# Set up virtualenv and install Django
 
 {% include "/django_installation/instructions.md" %}
-
-# Kódszerkesztő telepítése
-
-{% include "code_editor/instructions.md" %}
 
 # A Git telepítése
 
