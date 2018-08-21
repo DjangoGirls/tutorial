@@ -165,7 +165,7 @@ Predtým ako to urobíme, mali by sme sa uistiť, že je nainštalovaná najnov�
 
 A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder:
+First create a `requirements.txt` file inside of `djangogirls/` folder, using the code editor that you installed earlier:
 
     djangogirls
     └───requirements.txt
