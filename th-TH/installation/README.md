@@ -21,13 +21,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# ตั้งค่า virtualenv และ ติดตั้ง Django
-
-{% include "/django_installation/instructions.md" %}
-
-# ติดตั้งโปรแกรมแก้ไขโค้ด
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
+
+# Set up virtualenv and install Django
+
+{% include "/django_installation/instructions.md" %}
 
 # ติดตั้ง Git
 
