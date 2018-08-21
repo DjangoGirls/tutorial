@@ -21,13 +21,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# Vzpostavitev virtualnega okolja in namestitev orodja Django
-
-{% include "/django_installation/instructions.md" %}
-
-# Namestitev urejevalnika programske kode
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
+
+# Set up virtualenv and install Django
+
+{% include "/django_installation/instructions.md" %}
 
 # Namestitev sistema Git
 
