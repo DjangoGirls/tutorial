@@ -1,5 +1,5 @@
 
-Sign up for a free "Beginner" account on PythonAnywhere:
+We will be hosting the blog we're building on PythonAnywhere. Sign up for a free "Beginner" account on PythonAnywhere:
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
