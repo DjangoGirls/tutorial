@@ -165,7 +165,7 @@ Antes de hacer eso, debemos asegurarnos que tenemos la última versión de `pip`
 
 A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder:
+First create a `requirements.txt` file inside of `djangogirls/` folder, using the code editor that you installed earlier:
 
     djangogirls
     └───requirements.txt
