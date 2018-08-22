@@ -165,7 +165,7 @@ Zanim jednak to zrobimy, powinniśmy się upewnić, że mamy najnowszą wersję 
 
 Plik wymagań zawiera listę zależności, które zainstalujemy za pomocą polecenia `pip install`:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder, using the code editor that you installed earlier:
+Na początek stwórz plik `requirements.txt` wewnątrz katalogu `djangogirls/` używając edytora kodu, który wcześniej zainstalowałaś:
 
     djangogirls
     └───requirements.txt
