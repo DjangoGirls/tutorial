@@ -6,6 +6,6 @@ Prijavi se za besplatan "Beginner" račun na PythonAnywhere:
 
 ## Stvaranje PythonAnywhere API tokena
 
-Ovo je nešto što moraš napraviti samo jednom. Jednom kada se prijavila za PythonAnywhere, bit ćeš odvedena na tzv kontrolnu ploču. Nađi link pri gornjem desnom rubu na svojoj stranici računa, a zatim odaberi karticu na kojoj piše "API token" te stisni gumb "Create new API token".
+Ovo je nešto što moraš napraviti samo jednom. Jednom kada se prijavila za PythonAnywhere, bit ćeš odvedena na tzv kontrolnu ploču. Find the link near the top right to your "Account" page, then select the tab named "API token", and hit the button that says "Create new API token".
 
-![API token kartica na stranici računa](images/pythonanywhere_create_api_token.png)
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
