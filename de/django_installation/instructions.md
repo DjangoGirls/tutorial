@@ -165,7 +165,7 @@ Bevor wir damit loslegen, sollten wir jedoch sicherstellen, dass wir die neueste
 
 Eine requirements-Datei enthält eine Liste von Abhängigkeiten, die von `pip install` installiert werden sollen:
 
-Erstelle zuerst eine Datei namens `requirements.txt` im Verzeichnis `djangogirls/`:
+Erstelle mit dem zuvor installierten Code-Editor eine Datei namens `requirements.txt` im Verzeichnis `djangogirls/`:
 
     djangogirls
     └───requirements.txt
