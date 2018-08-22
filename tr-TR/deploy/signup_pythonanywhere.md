@@ -6,6 +6,6 @@ PythonAnywhere ile ücretsiz bir "Beginner" hesabı için kaydolun:
 
 ## PythonAnywhere API belirteci oluşturma
 
-Bu sadece bir kez yapmanız gereken bir şey. PythonAnywhere'e kaydolduğunuzda, ana ekranınıza götürüleceksiniz. "Hesaplar" sayfanızın sağ üstüne yakın link'i bulun ve "API belirteci" isimli sekmeyi seçerek "Yeni API belirteci oluştur" butonuna basın.
+Bu sadece bir kez yapmanız gereken bir şey. PythonAnywhere'e kaydolduğunuzda, ana ekranınıza götürüleceksiniz. Find the link near the top right to your "Account" page, then select the tab named "API token", and hit the button that says "Create new API token".
 
-![Hesaplar sayfasında API token sekmesi](images/pythonanywhere_create_api_token.png)
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
