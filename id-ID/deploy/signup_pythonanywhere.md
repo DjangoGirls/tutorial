@@ -6,6 +6,6 @@ Daftar ke akun "Pemula" gratis di PythonAnywhere:
 
 ## Membuat token API PythonAnywhere
 
-Ini adalah sesuatu yang hanya perlu Anda lakukan satu kali. Saat anda mendaftar ke PythonAnywhere, anda akan dibawa ke dasbor anda. Temukan tautan di dekat bagian kanan atas laman "Akun" Anda, lalu pilih tab yang bernama "token API", dan tekan tombol yang bertuliskan "Buat token API baru".
+Ini adalah sesuatu yang hanya perlu Anda lakukan satu kali. Saat anda mendaftar ke PythonAnywhere, anda akan dibawa ke dasbor anda. Find the link near the top right to your "Account" page, then select the tab named "API token", and hit the button that says "Create new API token".
 
-![API tab Token pada laman Akun](images/pythonanywhere_create_api_token.png)
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
