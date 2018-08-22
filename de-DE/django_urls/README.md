@@ -92,12 +92,12 @@ urlpatterns = [
 
 Wie du siehst, fügen wir nun eine `view` mit dem Namen `post_list` zur Root-URL hinzu. Leeren Zeichenfolgen passen auf dieses Muster und der Django-URL-Resolver ignoriert den Domain-Namen (z.B. http://127.0.0.1:8000/), der im vollständigen Pfad voransteht. Dieses Muster sagt Django also, dass `views.post_list` das gewünschte Ziel ist, wenn jemand deine Website über 'http://127.0.0.1:8000/' aufruft.
 
-Der letzte Teil `name='post_list'` ist der Name der URL, der genutzt wird, um die View zu identifizieren. Er kann identisch mit dem Namen der View sein, aber es kann auch ein komplett anderer sein. Wir werden später die Namen der URLs in dem Projekt benutzen, daher ist es wichtig, jede URL in der App zu benennen. Wir sollten außerdem versuchen, solche Namen für URLs zu wählen, die einzigartig und einfach zu merken sind.
+Der letzte Teil `name='post_list'` ist der Name der URL, der genutzt wird, um die View zu identifizieren. Er kann identisch mit dem Namen der View sein, aber es kann auch ein komplett anderer sein. Wir werden später die Namen der URLs im Projekt benutzen. Daher ist es wichtig, jede URL in der App zu benennen. Wir sollten außerdem versuchen, einzigartige und einfach zu merkende URL-Namen zu wählen.
 
-Wenn du jetzt versuchst, http://127.0.0.1:8000/ aufzurufen, dann erscheint eine Meldung der Art: "Webseite nicht verfügbar". Das erscheint deshalb, weil der Server (hast du `runserver` eingegeben?) nicht mehr läuft. Schau mal in deiner Server-Konsole nach und finde heraus, was passiert ist.
+Wenn du jetzt versuchst, http://127.0.0.1:8000/ aufzurufen, dann erscheint eine Meldung der Art "Webseite nicht verfügbar". Das erscheint deshalb, weil der Server nicht mehr läuft. (Erinnerst du dich noch, `runserver` eingegeben zu haben?) Schau mal in deiner Server-Konsole nach und finde heraus, warum der Server nicht mehr läuft.
 
 ![Error](images/error1.png)
 
-Die Konsole zeigt einen Fehler, aber keine Sorge – das ist eigentlich ziemlich nützlich: das sagt dir, dass **kein Attribut 'post_list'** vorhanden ist. Das ist der Name der *View*, die Django versucht zu finden und zu verwenden, aber wir haben sie noch gar nicht erstellt. An dieser Stelle wird dein `/admin/` auch nicht funktionieren. Keine Sorge, das machen wir gleich.
+Die Konsole zeigt einen Fehler, aber keine Sorge – der ist eigentlich ziemlich nützlich: Er sagt dir, dass **kein Attribut 'post_list'** vorhanden ist. Das ist der Name der *View*, die Django zu finden und zu verwenden versucht, aber wir haben sie noch gar nicht erstellt. In diesem Zustand wird dein `/admin/` auch nicht funktionieren. Keine Sorge, das regeln wir gleich.
 
 > Wenn du mehr über Django-URLconfs lernen willst, dann öffne die offizielle Dokumentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
