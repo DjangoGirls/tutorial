@@ -6,6 +6,6 @@ Cadastre uma conta gratuita de "Beginner" (Iniciante) no PythonAnywhere:
 
 ## Criando um token de API do PythonAnywhere
 
-Você só precisa fazer isso uma vez. Quando estiver inscrita no PythonAnywhere, você será levada ao seu dashboard. Encontre o link no lado direito superior da página "Accounts", e então selecione a aba "API token" e clique no botão que diz "Create new API token".
+Você só precisa fazer isso uma vez. Quando estiver inscrita no PythonAnywhere, você será levada ao seu dashboard. Find the link near the top right to your "Account" page, then select the tab named "API token", and hit the button that says "Create new API token".
 
-![O token de API na página Accounts](images/pythonanywhere_create_api_token.png)
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
