@@ -90,9 +90,9 @@ urlpatterns = [
 ]
 ```
 
-Wie du siehst, fügen wir nun eine `view` mit dem Namen `post_list` zur Root-URL hinzu. Leeren Zeichenfolgen passen auf dieses Muster und der Django-URL-Resolver ignoriert den Domain-Namen (z.B. http://127.0.0.1:8000/), der im vollständigen Pfad voransteht. Wenn also jemand deine Website mit der Adresse 'http://127.0.0.1:8000/' aufruft, passt dieses Muster (leere Zeichenkette) und Django weiß so, dass `views.post_list` das gewünschte Ziel ist.
+Wie du siehst, fügen wir nun eine `view` mit dem Namen `post_list` zur Root-URL hinzu. Leeren Zeichenfolgen passen auf dieses Muster und der Django-URL-Resolver ignoriert den Domain-Namen (z.B. http://127.0.0.1:8000/), der im vollständigen Pfad voransteht. Dieses Muster sagt Django also, dass `views.post_list` das gewünschte Ziel ist, wenn jemand deine Website über 'http://127.0.0.1:8000/' aufruft.
 
-Der letzte Teil `name='post_list'` ist der Name der URL, der genutzt wird, die View zu identifizieren. Er kann identisch mit dem Namen der View sein, aber es kann auch ein komplett anderer sein. Wir werden später die Namen der URLs in dem Projekt benutzen, daher ist es wichtig, jede URL in der App zu benennen. Wir sollten außerdem versuchen, solche Namen für URLs zu wählen, die einzigartig und einfach zu merken sind.
+Der letzte Teil `name='post_list'` ist der Name der URL, der genutzt wird, um die View zu identifizieren. Er kann identisch mit dem Namen der View sein, aber es kann auch ein komplett anderer sein. Wir werden später die Namen der URLs in dem Projekt benutzen, daher ist es wichtig, jede URL in der App zu benennen. Wir sollten außerdem versuchen, solche Namen für URLs zu wählen, die einzigartig und einfach zu merken sind.
 
 Wenn du jetzt versuchst, http://127.0.0.1:8000/ aufzurufen, dann erscheint eine Meldung der Art: "Webseite nicht verfügbar". Das erscheint deshalb, weil der Server (hast du `runserver` eingegeben?) nicht mehr läuft. Schau mal in deiner Server-Konsole nach und finde heraus, was passiert ist.
 
