@@ -8,7 +8,7 @@ Eine URL ist einfach eine Web-Adresse. Jedes Mal, wenn du eine Website besuchst,
 
 ![URL](images/url.png)
 
-Jede Seite im Internet braucht ihre eigene URL. Dadurch weiß deine Applikation, was sie dem Nutzer, der eine URL öffnet, zeigen soll. In Django verwenden wir eine sogenannte `URLconf` (URL- Konfiguration). URLconf ist eine Ansammlung von Mustern, die Django mit der empfangenen URL abgleicht, um die richtige View zu finden, das heißt, um letztlich die richtige Seite für den Nutzer anzuzeigen.
+Jede Seite im Internet braucht ihre eigene URL. Dadurch weiß deine Applikation, was sie dem Nutzer, der eine URL öffnet, zeigen soll. In Django verwenden wir eine sogenannte `URLconf` (URL-Konfiguration). URLconf ist eine Ansammlung von Mustern, die Django mit der empfangenen URL abgleicht, um die richtige View zu finden, das heißt, um letztlich die richtige Seite für den Nutzer anzuzeigen.
 
 ## Wie funktionieren URLs in Django?
 
@@ -38,7 +38,7 @@ Die admin-URL, die du im vorangegangenen Kapitel bereits besucht hast, ist schon
     path('admin/', admin.site.urls),
 ```
 
-Diese Zeile bedeutet, dass für jede URL, die mit `admin/` beginnt, Django die entsprechende *View* finden wird. Hier wurden einige admin-URLs eingefügt, dadurch wird nicht alles in eine Datei gepackt - es bleibt lesbarer und sauberer. 
+Diese Zeile bedeutet, dass Django für jede URL, die mit `admin/` beginnt, die entsprechende *View* finden wird. Hier wurden einige admin-URLs eingefügt, dadurch wird nicht alles in eine Datei gepackt - es bleibt lesbarer und sauberer. 
 
 ## Deine erste Django-URL!
 
