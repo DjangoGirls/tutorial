@@ -50,7 +50,7 @@ $ python3 --version
 Python 3.6.1
 ```
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you have a different 'minor version' of Python 3 installed, such as 3.5.2 or 3.7.4, you will also probably be fine. If you don't have Python installed, or if you want a newer version, you can install it as follows:
 
 
 <!--endsec-->
@@ -61,7 +61,7 @@ Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 ```
-$ sudo apt install python3.6
+$ sudo apt install python3
 ```
 
 <!--endsec-->
