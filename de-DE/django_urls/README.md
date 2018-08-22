@@ -78,19 +78,19 @@ from django.urls import path
 from . import views
 ```
 
-Hier importieren wir erstmal nur die Methoden von Django und alles aus den `views` unserer `blog`-Applikation (wir haben noch keine, aber dazu kommen wir gleich!).
+Hier importieren wir die Django-Funktion `path` und alle unsere `views` aus unserer `blog`-Applikation. (Wir haben noch keine, aber dazu kommen wir gleich!)
 
-Jetzt können wir unser erstes URL-Pattern hinzufügen:
+Jetzt können wir unser erstes URL-Muster hinzufügen:
 
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
 urlpatterns = [
-    path('', views.post_list, name='post_list'), 
+    path('', views.post_list, name='post_list'),
 ]
 ```
 
-Wie du siehst, fügen wir nun eine `view` mit dem Namen `post_list` zur Root-URL hinzu. Dieses URL-Muster (' ') wird mit einer leeren Zeichenfolge übereinstimmen und der Django-URL-Resolver ignoriert den Domain-Namen (z.B. http://127.0.0.1:8000/), der im vollständigen Pfad voransteht. Wenn also jemand deine Website mit der Adresse 'http://127.0.0.1:8000/' aufruft, passt dieses Muster (leere Zeichenkette) und Django weiß so, dass `views.post_list` das gewünschte Ziel ist.
+Wie du siehst, fügen wir nun eine `view` mit dem Namen `post_list` zur Root-URL hinzu. Leeren Zeichenfolgen passen auf dieses Muster und der Django-URL-Resolver ignoriert den Domain-Namen (z.B. http://127.0.0.1:8000/), der im vollständigen Pfad voransteht. Wenn also jemand deine Website mit der Adresse 'http://127.0.0.1:8000/' aufruft, passt dieses Muster (leere Zeichenkette) und Django weiß so, dass `views.post_list` das gewünschte Ziel ist.
 
 Der letzte Teil `name='post_list'` ist der Name der URL, der genutzt wird, die View zu identifizieren. Er kann identisch mit dem Namen der View sein, aber es kann auch ein komplett anderer sein. Wir werden später die Namen der URLs in dem Projekt benutzen, daher ist es wichtig, jede URL in der App zu benennen. Wir sollten außerdem versuchen, solche Namen für URLs zu wählen, die einzigartig und einfach zu merken sind.
 
