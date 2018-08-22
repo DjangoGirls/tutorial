@@ -6,6 +6,6 @@
 
 ## إنشان قطعة واجهة التطبيق البرمجية - (وابر) PythonAnywhere
 
-هذا شيئ لاتحتاج القيام به الا مرة واحدة فقط. عند استكمال تسجيل حساب بموقع PythonAnywhere, سيتم نقلك الى لوحة القيادة. ابحث عن الرابط بالقرب من أعلى يمين صفحة "Accounts" ، ثم حدد التبويب المسمى "API token" ، واضغط على الزر الذي يحمل العنوان "Create new API token".
+هذا شيئ لاتحتاج القيام به الا مرة واحدة فقط. عند استكمال تسجيل حساب بموقع PythonAnywhere, سيتم نقلك الى لوحة القيادة. Find the link near the top right to your "Account" page, then select the tab named "API token", and hit the button that says "Create new API token".
 
-![The API token tab on the Accounts page](images/pythonanywhere_create_api_token.png)
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
