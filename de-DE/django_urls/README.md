@@ -18,10 +18,13 @@ Jede Seite im Internet braucht ihre eigene URL. Dadurch weiß deine Applikation,
 
 ```python
 """mysite URL Configuration
+
 [...]
-""" 
+"""
 from django.urls import path, include
-from django.contrib import admin urlpatterns = [     
+from django.contrib import admin
+
+urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 ```
@@ -38,7 +41,7 @@ Die admin-URL, die du im vorangegangenen Kapitel bereits besucht hast, ist schon
     path('admin/', admin.site.urls),
 ```
 
-Diese Zeile bedeutet, dass Django für jede URL, die mit `admin/` beginnt, die entsprechende *View* finden wird. Hier wurden einige admin-URLs eingefügt, dadurch wird nicht alles in eine Datei gepackt - es bleibt lesbarer und sauberer. 
+Diese Zeile bedeutet, dass Django für jede URL, die mit `admin/` beginnt, die entsprechende *View* finden wird. Hier wird mit admin-site.urls eine ganze Sammlung von admin-URLs referenziert. Dadurch müssen nicht alle in dieser kleinen Datei aufgeführt werden und sie bleibt lesbarer und übersichtlicher.
 
 ## Deine erste Django-URL!
 
@@ -54,11 +57,11 @@ Deine `mysite/urls.py`-Datei sollte jetzt so aussehen:
 
 ```python
 from django.urls import path, include
-from django.contrib import admin 
+from django.contrib import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('blog.urls')), 
+    path('', include('blog.urls')),
 ]
 ```
 
