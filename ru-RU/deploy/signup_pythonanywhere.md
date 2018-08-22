@@ -6,6 +6,6 @@
 
 ## Создание API ключа на PythonAnywhere
 
-Это то, что тебе нужно сделать только один раз. После регистрации на PythonAnywhere ты переместишься на страницу "Consoles". Найди ссылку сверху справа на странице "Accounts", после чего выбери вкладу с именем "API token" и нажми кнопку, на которой написано "Create new API token".
+Это то, что тебе нужно сделать только один раз. После регистрации на PythonAnywhere ты переместишься на страницу "Consoles". Find the link near the top right to your "Account" page, then select the tab named "API token", and hit the button that says "Create new API token".
 
-![Вкладка API token на странице Accounts](images/pythonanywhere_create_api_token.png)
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
