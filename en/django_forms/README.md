@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
@@ -83,7 +83,7 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error, right?
 
 ## URL
 
@@ -356,7 +356,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Security
 
-Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
 In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
