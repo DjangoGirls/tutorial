@@ -16,7 +16,7 @@
 * [Implantar!](deploy/README.md)
 * [Django urls](django_urls/README.md)
 * [Django views – time to create!](django_views/README.md)
-* [Introduction to HTML](html/README.md)
+* [Introdução ao HTML](html/README.md)
 * [ORM do Django (Querysets)](django_orm/README.md)
 * [Dynamic data in templates](dynamic_data_in_templates/README.md)
 * [Django templates](django_templates/README.md)
