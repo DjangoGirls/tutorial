@@ -83,7 +83,7 @@ Settings.py에서 `TIME_ZONE`있는 줄을 찾으세요. 그리고 이를 해당
 {% filename %}mysite/settings.py{% endfilename %}
 ```python
 STATIC_URL = '/static/'
-STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+STATIC_ROOT = os.path.join(BASE_DIR, 'blog/static')
 ```
 
 `DEBUG`가`True`이고 `ALLOWED_HOSTS`가 비어 있으면, 호스트는 `['localhost', '127.0.0.1', '[::1]']`에 대해서 유효합니다. 애플리케이션을 배포할 때 PythonAnywhere의 호스트 이름과 일치하지 않으므로 다음 설정을 아래와 같이 변경해줘야 합니다. :
