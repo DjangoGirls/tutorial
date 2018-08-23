@@ -22,7 +22,7 @@ Der untere Bereich ist dein *Terminal*, wo du Kommandos für den Computer eingeb
 
 ### Virtuelle Umgebung
 
-Eine virtuelle Umgebung (auch virtualenv genannt) ist wie ein privater Behälter, in den wir nützlichen Code für ein Projekt packen können, an dem wir arbeiten. Wir benutzen diese, um Code für verschiedene Projekte getrennt aufzubewahren, damit diese nicht vermischt werden.
+Eine virtuelle Umgebung (auch virtualenv genannt) ist wie ein privater Behälter, in den wir nützlichen Code für ein Projekt packen können, an dem wir arbeiten. Wir benutzen sie, um Code für verschiedene Projekte getrennt aufzubewahren, damit dieser nicht vermischt wird.
 
 Führe im Terminal den folgenden Code aus (das Terminal befindet sich am unteren Rand des Cloud 9-Interfaces):
 

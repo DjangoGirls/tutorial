@@ -2,7 +2,7 @@
 > 
 > Dieses Kapital basiert auf einem Tutorial der Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Django ist in Python geschrieben. Um mit Django zu arbeiten, müssen wir also erst Python installieren. Lass uns das also zuerst tun! Für das Tutorial brauchen wir Python 3.6, falls du eine Vorgängerversion benutzt aktualisiere diese bitte.
+Django ist in Python geschrieben. Um mit Django zu arbeiten, müssen wir also erst Python installieren. Lass uns das also zunächst tun! Für das Tutorial brauchen wir Python 3.6, falls du eine Vorgängerversion benutzt, aktualisiere diese bitte.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
