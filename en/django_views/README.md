@@ -8,7 +8,7 @@ Views are placed in the `views.py` file. We will add our *views* to the `blog/vi
 
 ## blog/views.py
 
-OK, let's open up this file and see what's in there:
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
