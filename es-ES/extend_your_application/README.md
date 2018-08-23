@@ -30,7 +30,7 @@ Empezaremos añadiendo un link en el archivo `blog/templates/blog/post_list.html
 {% endblock %}
 ```
 
-{% raw %}Queremos tener un link del titulo de una publicación en la lista de publicaciones al detalle de la misma. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
+{% raw %}Queremos tener un link del titulo de una publicación en la lista de publicaciones al detalle de la misma. Vamos a cambiar `<h1><a href="">{{ post.title }}</a></h1>` para que se enlace a la página de detalles de publicación:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,11 +38,11 @@ Empezaremos añadiendo un link en el archivo `blog/templates/blog/post_list.html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %}Es hora de explicar el misterioso`{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. ¡Esta vez usaremos uno que creará un URL para nosotros!{% endraw %}
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+La parte de`post_detail` significa que Django estará esperando un URL en `blog/urls.py` con el nombre=post_detail
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+¿Y ahora qué pasa con < 0>pk=post.pk</code>? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
