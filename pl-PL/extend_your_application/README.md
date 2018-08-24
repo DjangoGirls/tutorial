@@ -70,9 +70,9 @@ urlpatterns = [
 
 Część `post/<int:pk>/` określa wzorzec URL - wytłumaczymy Tobie, co to jest:
 
-- `post/` po prostu oznacza, że adres URL powinien zaczynać się od słowa **post**, po którym nastąpi **/**. Jak na razie idzie dobrze.
+- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` - ta część jest trudniejsza. Oznacza ona, że Django spodziewa się liczby całkowitej i przekaże jej wartość do widoku jako zmienną `pk`.
-- `/` - i znów potrzebujemy **/**, zanim zakończymy wzorzec URL.
+- `/` – then we need a **/** again before finishing the URL.
 
 To oznacza, że gdy wpiszesz w przeglądarce adres `http://127.0.0.1:8000/post/5/`, Django zrozumie, że potrzebujesz *widoku* zwanego `post_detail` i przekaże informację, że `pk` jest równe `5` temu *widokowi*.
 
@@ -80,7 +80,7 @@ OK, dodałyśmy nowy wzorzec URL do `blog/urls.py`! Odświeżmy stronę: http://
 
 ![AttributeError](images/attribute_error2.png)
 
-Pamiętasz, jaki jest następny krok? Oczywiście: dodanie widoku!
+Do you remember what the next step is? It's adding a view!
 
 ## Dodajmy widok dla poszczególnego wpisu
 
@@ -98,7 +98,7 @@ Ale ten kod ma problem. Jeśli nie istnieje żaden wpis (`Post`) z podanym `kluc
 
 ![Błąd DoesNotExist](images/does_not_exist2.png)
 
-Tak nie może być! Ale oczywiście Django ma dla nas coś, co rozwiąże ten problem za nas: `get_object_or_404`. W sytuacji, gdy nie istnieje żaden wpis (`Post`) z przekazaną wartością `pk`, wyświetli znacznie przyjemniejszą stronę zwaną `Page Not Found 404` albo stroną błędu 404 - informującą, że dana strona nie została znaleziona.
+Tak nie może być! But luckily Django comes with something that will handle that for us: `get_object_or_404`. W sytuacji, gdy nie istnieje żaden wpis (`Post`) z przekazaną wartością `pk`, wyświetli znacznie przyjemniejszą stronę zwaną `Page Not Found 404` albo stroną błędu 404 - informującą, że dana strona nie została znaleziona.
 
 ![Nie znaleziono strony](images/404_2.png)
 
