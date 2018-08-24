@@ -34,7 +34,7 @@ Vá para Aplicações → Utilidades → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Provavelmente você vai achar em Aplicativos → Acessórios → Terminal, mas isso depende do seu sistema operacional. Qualquer coisa é só procurar no Google. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Agora você deve ver uma janela branca ou preta que está à espera de seus coma
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Se você estiver em Mac ou Linux, provavelmente verá um `` $, como este:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Cada comando será antecedido por este sinal e um espaço, mas você não precis
 
 A parte que vai até e inclui o `$` ou o `>` é chamada de *prompt de linha de comando*, ou *prompt*, de forma breve. Ele está pedindo que você digite algo.
 
-No tutorial, quando queremos que você digite um comando, nós incluiremos o `$` ou `>` e algumas vezes algum texto adicional à esquerda. Você pode ignorar o que está à esquerda e apenas digitar o comando que inicia após o prompt.
+No tutorial, quando queremos que você digite um comando, nós incluiremos o `$` ou `>` e algumas vezes algum texto adicional à esquerda. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Seu primeiro comando (Uhuu!)
 
@@ -249,7 +249,7 @@ Que tal criar um diretório em sua área de trabalho para praticar? Use o seguin
 
 <!--endsec-->
 
-Esse pequeno comando criará um diretório chamado `practice` em sua área de trabalho. Você pode verificar se o diretório realmente está lá olhando sua área de trabalho ou executando o comando `ls` ou `dir`! Experimente. :)
+Esse pequeno comando criará um diretório chamado `practice` em sua área de trabalho. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Experimente. :)
 
 > Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
 
