@@ -23,7 +23,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 다음 `blog/templates/blog` 디렉토리에 `post_list.html` (비어있는) 파일을 만드세요.
 
