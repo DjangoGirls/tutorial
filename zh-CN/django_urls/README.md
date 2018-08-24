@@ -4,7 +4,7 @@ We're about to build our first webpage: a homepage for your blog! But first, let
 
 ## 什么是 URL？
 
-简单地说，URL 是一个网页地址。 You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` 是一个URL！ And `https://djangogirls.org` is also a URL.)
+A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` 是一个URL！ And `https://djangogirls.org` is also a URL.)
 
 ![URL](images/url.png)
 
