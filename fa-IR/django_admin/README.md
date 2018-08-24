@@ -34,20 +34,20 @@ admin.site.register(Post)
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-هنگام درخواست، نام کاربری خود را (حروف کوچک، فضایی)، آدرس ایمیل و رمز عبور تایپ کنید. ** نگران نباشید که شما نمیتوانید رمز عبوری را که تایپ میکنید را مشاهده کنید - این به این معناست که چطور باید باشد. </ 0> فقط آن را تایپ کنید و ` وارد کنید </ 1> برای ادامه کلیک کنید. خروجی باید مانند این باشد (که در آن نام کاربری و ایمیل باید خود شما باشد):</p>
+هنگام درخواست، نام کاربری خود را (حروف کوچک، فضایی)، آدرس ایمیل و رمز عبور تایپ کنید. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. خروجی باید مانند این باشد (که در آن نام کاربری و ایمیل باید خود شما باشد):
 
-<pre><code>Username: admin
-Email address: admin@admin.com
-Password:
-Password (again):
-Superuser created successfully.
-`</pre> 
+    Username: admin
+    Email address: admin@admin.com
+    Password:
+    Password (again):
+    Superuser created successfully.
+    
 
 به مرورگر خود برگردید با اعتبار کاربری کاربر که انتخاب کرده اید وارد شوید شما باید داشبورد مدیر جنگجو را ببینید.
 
 ![جنگجو مدیر](images/django_admin3.png)
 
-به پست ها بروید و کمی با آن آزمایش کنید. پنج یا شش پست وبلاگ اضافه کنید در مورد محتوا نگران نباشید - شما می توانید به سادگی یک متن را از این آموزش کپی کنید تا زمان صرفه جویی کنید. :)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can copy-paste some text from this tutorial to save time. :)
 
 اطمینان حاصل کنید که حداقل دو یا سه پست (اما نه همه) تاریخ انتشار را تعیین کنید. بعدا مفید خواهد بود.
 
