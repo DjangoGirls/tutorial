@@ -28,7 +28,7 @@ Chceme otvoriť Python konzolu, takže napíšte `python` na Windowse alebo `pyt
 
 Po spustení príkazu Python sa prompt zmenil na `>>>`. Pre nás to znamená, že odteraz by sme mali písať príkazy iba v jazyku Python. Nemusíte písať `>>>` - Python to urobí pre Vás.
 
-Ak by ste chceli kedykoľvek ukončiť konzolu Pythonu, len napíšte `exit()` alebo môžete použiť aj skratku `Ctrl + Z` vo Windowse alebo `Ctrl + D` pre Mac/Linux. Potom už nebudete vidieť toto: `>>>`.
+If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Potom už nebudete vidieť toto: `>>>`.
 
 Zatiaľ nechceme opustiť Python konzolu. Chceme sa o nej dozvedieť viac. Začnime tým, že skúsime matematiku, napr. ` 2 + 3 `a stlač `enter`.
 
@@ -107,7 +107,7 @@ alebo pomocou spätného lomítka - tento znak (ak je napísaný pred úvodzovko
 "Runnin' down the hill"
 ```
 
-Pekné, hm? Ak chcete vidieť svoje meno veľkými písmenami, jednoducho zadajte:
+Nice, huh? To see your name in uppercase letters, type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ Povedzme, že chceme vytvoriť novú premennú s názvom `meno`:
 
 Zadáme meno sa rovná Ola.
 
-Ako ste si to zbadali už, váš program nič nevrátil späť ako to robil v predchádzajúcich príkladoch. Tak ako vieme, či tá premenná existuje? Jednoducho napíšte `meno` a stlačte `enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Môžete ju použiť aj vo funkciách:
 5
 ```
 
-Úžasné, že? Samozrejme premenné môžu byť hocičo, takže aj čísla! Skúste toto:
+Awesome, right? Now, variables can be anything – numbers too! Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -414,7 +414,7 @@ KeyError: 'vek'
 
 Aha, ďalšia chyba! Táto sa volá **KeyError** (chyba kľúča). Python je nápomocný a povie vám, že kľúč `'vek'` v tomto slovníku neexistuje.
 
-Kedy by používať slovník alebo zoznam? No, to je dobrá otázka. Porozmýšľaj predtým, ako si pozrieš odpoveď v nasledujúcom riadku.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
 
 - Potrebuješ zoradenú postupnosť položiek? Vyber si zoznam (list).
 - Potrebuješ priraďovať hodnoty kľúčovým slovám, aby si si ich mohla efektívne (podľa kľúča) neskôr vyhľadať? Použi slovník (dictionary).
@@ -438,7 +438,7 @@ Tak ako pri zoznamoch, použitím metódy `len()` na slovníkoch dostaneš poče
 
 Dúfam, že to dáva zmysel. :) Pripravená na trochu zábavy so slovníkmi? Tak šup na ďalší riadok za úžasnými vecami.
 
-Na odstránenie položky zo slovníka môžeš použiť metódu `pop()`. Napríklad ak chceš odstrániť položku zodpovedajúcu kľúču `'oblubene_cisla'`, zadaj nasledujúci príkaz:
+Na odstránenie položky zo slovníka môžeš použiť metódu `pop()`. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ Tešíš sa na ďalšiu časť? :)
 
 > Pre čitateľov doma: Táto kapitola je spracovaná v [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) videu.
 
-Veľkú časť programovania predstavuje porovnávanie veci. Čo je najjednoduchšia vec na porovnanie? Čísla, samozrejme. Pozrime sa, ako to funguje:
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
 {% filename %}command-line{% endfilename %}
 
@@ -557,7 +557,7 @@ Existujú iba dva typy Booleovských objektov:- True (Pravda)- False (Nepravda):
 - True
 - False
 
-Aby ich Python spoznal, musíš vždy napísať 'True' (s veľkým písmenom na začiatku a zvyšok malým písmom). **true, TRUE, tRUE nebudú fungovať -- iba True je správne.** (Samozrejme, to isté platí aj pre 'False'.)
+Aby ich Python spoznal, musíš vždy napísať 'True' (s veľkým písmenom na začiatku a zvyšok malým písmom). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
 Logické hodnoty môžu byť aj premenné. Aha:
 
@@ -599,7 +599,7 @@ Zatiaľ sme písali všetok pythonský kód do konzoly interpretera, čiže mô�
 - Uložiť v ňom nejaký kód do nového pythonského súboru
 - Spustiť ho!
 
-Pre opustenie interpretera Pythonu, ktorý sme doteraz používali, zadaj jednoducho funkciu `exit()`
+To exit from the Python interpreter that we've been using, type the `exit()` function
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,7 +672,7 @@ A vo Windows Powershell bude príkaz vyzerať takto:
 
 <!--endsec-->
 
-Ak máš akékoľvek ťažkosti, stačí požiadať o pomoc.
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
 Teraz použi Python na spustenie kódu v súbore:
 
