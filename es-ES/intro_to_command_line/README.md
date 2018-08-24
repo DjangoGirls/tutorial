@@ -34,7 +34,7 @@ Ve a Aplicaciones → Servicios → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Está probablemente en Aplicaciones → Accesorios → Terminal, pero eso depende de tu distribución. Si no lo encuentras, Googlealo. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Si estás en Mac o Linux, probablemente verás `$`, así:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Cada comando será precedido por este signo y un espacio, pero no tienes que esc
 
 La parte hasta e incluyendo `$` o `>` se llama la *línea de comandos* o *prompt*. Esta te solicita escribir algo ahí.
 
-En el tutorial, cuando queremos escribir un comando, incluiremos el `$` o `>` y de vez en cuando más a la izquierda. Puedes ignorar la parte izquierda y solo escribir en el comando que comienza después del símbolo prompt.
+En el tutorial, cuando queremos escribir un comando, incluiremos el `$` o `>` y de vez en cuando más a la izquierda. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Tu primer comando (¡BIEN!)
 
@@ -248,7 +248,7 @@ Comprueba si realmente ha cambiado:
 
 <!--endsec-->
 
-Este pequeño comando creará una carpeta con el nombre `practice` en el escritorio. ¡Puedes comprobar si está ahí mirando en el escritorio o ejecutando el comando `ls` o `dir`! Inténtalo. :)
+Este pequeño comando creará una carpeta con el nombre `practice` en el escritorio. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Inténtalo. :)
 
 > Truco pro: Si no quieres escribir una y otra vez los mismos comandos, prueba pulsando la `flecha arriba` y la `flecha abajo` de tu teclado para ir pasando por los comandos utilizados recientemente.
 
