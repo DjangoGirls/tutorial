@@ -22,6 +22,6 @@ Imaginează-ți un poștaș cu o scrisoare. Ea trece de-a lungul străzii și co
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Poate utilizatorul a solicitat să schimbe ceva în baza de date? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-Desigur descrierea de mai sus este un pic simplificată, dar nu ai nevoie să știi toate lucrurile tehnice la moment. Este suficient să-ți faci o idee generală.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Deci, în loc să ne adâncim în detalii, pur și simplu vom începe a crea ceva cu Django și vom învăța toate părțile importante pe parcurs!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
