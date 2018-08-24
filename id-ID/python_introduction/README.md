@@ -25,7 +25,7 @@ Kita ingin membuka konsol Python, Jadi silakan ketik `python` untuk Windows atau
 
 Setelah menjalankan perintah Python, prompt akan berubah menjadi `>>>`. Bagi kita sekarang adalah kita harus menggunakan perintah pada bahasa Python saja. Kmau gak perlu mengetik pada perintah `>>>` - Python akan melakukannya untukmu.
 
-Jika kamu ingin keluar dari konsol Python, Cukup dengan mengetik perintah `exit()` atau pakai shortcut `Ctrl + Z` untuk Windows dan `Ctrl + D` untuk Mac/Linux. Kemudian kamu tidak akan melihat lagi `>>>`.
+If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Kemudian kamu tidak akan melihat lagi `>>>`.
 
 Untuk saat ini, kami tidak ingin untuk keluar dari konsol Python. Kami ingin belajar lebih banyak tentang hal itu. Mari kita mulai dengan mengetik beberapa matematika, seperti `2 + 3` dan memukul `masuk`.
 
@@ -105,7 +105,7 @@ atau keluar dari apostrof dengan garis miring terbalik (``):
 "Runnin' menuruni bukit"
 ```
 
-Bagus, ya? Untuk melihat nama Anda dalam huruf besar, cukup ketik:
+Nice, huh? To see your name in uppercase letters, type:
 
 {% filename %} baris perintah {% endfilename %}
 
@@ -181,7 +181,7 @@ Katakanlah kita ingin membuat sebuah variabel baru yang disebut `nama`:
 
 Kita ketik nama sama Ola.
 
-Seperti yang Anda perhatikan, program Anda tidak kembali sesuatu seperti itu lakukan sebelumnya. Jadi bagaimana kita tahu bahwa variabel benar-benar ada? Cukup masukkan `nama` dan tekan `Masukkan`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
 
 {% filename %}baris perintah{% endfilename %}
 
@@ -209,7 +209,7 @@ Anda dapat menggunakannya dalam fungsi juga:
 5
 ```
 
-Awesome, right? Of course, variables can be anything – numbers too! Try this:
+Awesome, right? Now, variables can be anything – numbers too! Try this:
 
 {% filename %}baris perintah{% endfilename %}
 
@@ -410,7 +410,7 @@ KeyError: 'usia'
 
 Tampilan, kesalahan lain! Ini adalah **KeyError**. Python membantu dan memberitahu Anda bahwa kunci `'usia'` tidak ada dalam Kamus ini.
 
-Ketika Anda harus menggunakan kamus atau daftar? Yah, itu adalah titik yang baik untuk merenungkan. Hanya memiliki solusi dalam pikiran sebelum melihat jawaban dalam baris berikutnya.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
 
 - Anda hanya perlu memesan urutan item? Pergi untuk daftar.
 - Apakah Anda perlu menghubungkan nilai dengan tombol, sehingga Anda dapat mencarinya efisien (dengan kunci) kemudian? Menggunakan Kamus.
@@ -434,7 +434,7 @@ Seperti daftar, menggunakan metode `len()` pada kamus kembali jumlah pasangan ku
 
 Saya harap ini masuk akal sampai sekarang. :) Siap untuk bersenang-senang dengan kamus? Baca terus untuk beberapa hal yang menakjubkan.
 
-Anda dapat menggunakan metode ` pop () ` untuk menghapus item dalam kamus. Katakan, jika Anda ingin menghapus entri yang sesuai dengan tombol `'favorite_numbers'`, ketik saja perintah berikut:
+Anda dapat menggunakan metode ` pop () ` untuk menghapus item dalam kamus. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -474,7 +474,7 @@ Excited for the next part? :)
 
 > Bagi pembaca di rumah: bagian ini tercakup dalam [Dasar-dasar Python: Perbandingan](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
 {% filename %}command-line{% endfilename %}
 
@@ -553,7 +553,7 @@ There are only two Boolean objects:
 - Benar
 - Salah
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
 Booleans can be variables, too! See here:
 
@@ -595,7 +595,7 @@ So far we've been writing all our python code in the interpreter, which limits u
 - Simpan beberapa kode ke file python baru
 - Menjalankannya!
 
-To exit from the Python interpreter that we've been using, simply type the `exit()` function
+To exit from the Python interpreter that we've been using, type the `exit()` function
 
 {% filename %}command-line{% endfilename %}
 
@@ -668,7 +668,7 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, just ask for help.
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
 Now use Python to execute the code in the file like this:
 
