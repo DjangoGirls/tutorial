@@ -22,6 +22,6 @@ Predstav si poštárku s listom. Kráča ulicou a porovnáva čísla domov s č�
 
 Vo funkcii *view* sa dejú všetky zaujímavé veci: môžeme sa pozrieť do databázy a vyhľadať nejaké informácie. Čo ak užívateľ požiada o zmenu v údajoch? Napríklad listom, v ktorom je žiadosť "Prosím, zmeňte popis mojej práce." *view* overí, či máš oprávnenie na túto zmenu, potom aktualizuje popis tvojej práce a naspäť pošle správu: "Hotovo!". Následne *view* vygeneruje odpoveď a Django ho pošle do uživateľovho prehliadača.
 
-Samozrejme, vyššie uvedený popis je trochu zjednodušený, ale zatiaľ ešte nepotrebuješ vedieť všetky technické detaily. Pre všeobecnú predstavu to však stačí.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Takže namiesto zložitého študovania detailov, jednoducho začneme v Djangu niečo vytvárať a všetky dôležité veci sa naučíme popri tom!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
