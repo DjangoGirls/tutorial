@@ -49,7 +49,7 @@ Ak to ešte stále nefunguje, požiadaj svojho mentora/ku o pomoc.
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Vytvor si [GitHub](https://github.com) účet.
 
 ### PythonAnywhere
 
