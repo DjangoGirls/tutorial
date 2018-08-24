@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Valószínűleg itt találod meg: Applications → Accessories → Terminal, de ez a rendszeredtől függ. Ha nincs ott, csak keress rá a Google-n. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Egy fehér vagy fekete ablakot kell látnod, ami csak a te parancsaidra vár.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Ha Mac-ed vagy Linux-od van, valószínűleg egy `$`-t kell látnod:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Minden sornak ezzel a jellel és az azt követő space-el kell kezdődnie, de ez
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Az első parancsod (YAY!)
 
@@ -249,7 +249,7 @@ Mit szólnál, ha létrehoznánk egy gyakorló (practice) könyvtárat az asztal
 
 <!--endsec-->
 
-Ez a parancs létre fog hozni egy `practice` nevű mappát az asztalodon. Ha megnézed az asztalt, meggyőződhetsz róla, hogy tényleg ott van-e, de a `ls` vagy `dir` paranccsal is megteheted! Próbáld ki. :)
+Ez a parancs létre fog hozni egy `practice` nevű mappát az asztalodon. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Próbáld ki. :)
 
 > PRO tipp: Ha nem szeretnéd újra és újra ugyanazt a parancsot begépelni, próbáld meg a `felfele` és `lefele nyilakkal` behívni a legutóbb futtatott parancsokat.
 
