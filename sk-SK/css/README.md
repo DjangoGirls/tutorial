@@ -25,7 +25,7 @@ Aby si nainštalovala Bootstrap, potrebuješ pridať nasledovnú vec do `<head>`
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Nepridá to do tvojho projektu žiadne súbory. Iba to ukazuje na súbory, ktoré už existujú na Internete. Skúsme to, otvor svoju webstránku a obnov stránku. Už to máme!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Obrázok 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Konečne sa pozrieme zblízka na veci, ktoré nazývame **statické súbory**. S
 
 ### Kam umiestniť statické súbory pre Django
 
-Django už vie, kde nájsť statické súbory pre zabudovanú aplikáciu "admin". Teraz už len musíme pridať niektoré statické súbory pre našu vlastnú aplikáciu, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 To urobíme tak, že vo vnútri našej aplikácie blog vytvoríme adresár s názvom `static`:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` je CSS Selector. To znamená, že sme naše štýly použili na akýkoľvek prvok `a`, vo vnútri prvku `h1`. Takže keď máme niečo ako: `<h1><a href="">link</a></h1>` použije sa naň `h1 a` štýl. V tomto prípade elementu hovoríme, aby zmenil svoju farbu na `#FCA205`, čo je oranžová. Samozrejme, sem môžeš zadať vlastnú farbu!
+`h1 a` je CSS Selector. To znamená, že sme naše štýly použili na akýkoľvek prvok `a`, vo vnútri prvku `h1`. Takže keď máme niečo ako: `<h1><a href="">link</a></h1>` použije sa naň `h1 a` štýl. V tomto prípade elementu hovoríme, aby zmenil svoju farbu na `#FCA205`, čo je oranžová. Or you can put your own color here!
 
 V CSS súbore definujeme štýly pre elementy v HTML súbore. Prvý spôsob, akým môžme identifikovať elementy je názov elementu. Môžno si pamätáte tieto značky z HTML sekcie. Veci ako `a`,`h1`, a `body` sú príklady názvov elementov. Elementy taktiež identifikujeme pomocou atribútu `class` alebo atribútu `id`. Triedy (class) a id sú názvy, ktorými nazveš elementy. Triedy definujú skupiny elementov a id-čká poukazujú na konkrétne elementy. Napríklad, nasledujúci tag môže byť identifikovaný v CSS pomocou mena tagu `a`, triedy `external_link`, alebo id `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ A teraz pridaj triedu, `post` do `div`u, v ktorom je blog post.
 </div>
 ```
 
-Teraz pridáme deklarácie rôznym selektorom. Selektory, ktoré začínajú `.` sa týkajú tried. Na webe je ohľadne CSS veľa skvelých tutorialov a vysvetlení, ktoré ti pomôžu pochopiť nasledujúci kód. Ale teraz len skopíruj a vlož nasledujúci kód do súboru `blog/static/css/blog.css`:
+Teraz pridáme deklarácie rôznym selektorom. Selektory, ktoré začínajú `.` sa týkajú tried. Na webe je ohľadne CSS veľa skvelých tutorialov a vysvetlení, ktoré ti pomôžu pochopiť nasledujúci kód. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
