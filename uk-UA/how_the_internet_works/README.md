@@ -6,7 +6,7 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-Перша річ, яку вам необхідно зрозуміти це те, що веб сайт є лише набором файлів на жорсткому диску. Таких же як ваші фільми, музика і фотографії. Проте, є одна річ унікальна для веб сайтів: вони включають комп'ютерний код, що називається HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Таких же як ваші фільми, музика і фотографії. Проте, є одна річ унікальна для веб сайтів: вони включають комп'ютерний код, що називається HTML.
 
 Якщо ви не знайомі із програмуванням, спочатку може бути складно зрозуміти що таке HTML, але ваші веб-браузери (такі як Chrome, Safari, Firefox, тощо) його люблять. Веб-браузери пристосовані для того, щоб розуміти цей код, виконувати його інструкції та показувати файли, з яких складається ваш сайт, саме так як ви хочете.
 
@@ -22,7 +22,7 @@ OK, but you want to know how the Internet looks, right?
 
 ![Figure 1.2](images/internet_3.png)
 
-Вражаюче, чи не так? Але однозначно, неможливо мати проводи між кожною машиною підключеною до Інтернету. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Вражаюче, чи не так? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 Це виглядатиме так:
 
@@ -34,7 +34,7 @@ Imagine that when you type https://djangogirls.org, you send a letter that says:
 
 ![Figure 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Замість адрес із назвами вулиці, міста, індексом і назвою країни, ми використовуємо IP адреси. Ваш комп'ютер спочатку запитує про DNS (англ. Domain Name System - Система доменних імен) для переводу djangogirls.org в IP адресу. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
