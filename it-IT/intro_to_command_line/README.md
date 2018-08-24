@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Probabilmente è sotto Applicazioni → Accessori → Terminal, ma quello potrebbe dipendere dal tuo sistema. Se non è lì cercalo su Google. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Ora dovresti essere in grado di vedere una finestra bianca o nera che è in atte
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Se sei su Mac o Linux, probabilmente vedi `$`, proprio come questo:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Ogni comando sarà preceduto da questo simbolo e da uno spazio, ma tu non hai bi
 
 La parte fino al `$` o al `>` inclusi, si chiama *prompt della linea di comando* o semplicemente *prompt*. Ti richiede di inserire qualcosa.
 
-Nel tutorial quando vorremo che tu scriva un comando, includeremo `$` o `>` e occasionalmente qualcosa in più a sinistra. Puoi ignorare la parte a sinistra e inserire solo il comando dopo il prompt.
+Nel tutorial quando vorremo che tu scriva un comando, includeremo `$` o `>` e occasionalmente qualcosa in più a sinistra. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Il tuo primo comando (YAY!)
 
@@ -246,7 +246,7 @@ Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in qu
 
 <!--endsec-->
 
-Questo breve comando creerà una cartella con il nome `practice` sul tuo desktop. Puoi controllare se è lì semplicemente guardando sul tuo desktop oppure eseguendo un commando `ls` oppure `dir`! Provalo. :)
+Questo breve comando creerà una cartella con il nome `practice` sul tuo desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Provalo. :)
 
 > Suggerimento PRO: se non vuoi digitare lo stesso comando tutte le volte, prova a premere ` freccia in su ` e `freccia in giù` sulla tua tastiera per scorrere tutti i comandi che hai usato fin ora.
 
