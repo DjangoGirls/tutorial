@@ -30,9 +30,9 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-ما باید ابتدا فرم های جانگو را وارد کنیم (` از فرم های واردات جانگا </ 0>) و، بدیهی است، ما <code> پست </ 0> مدل (<code> از .مدلها واردات پست </ 0>).</p>
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
-<p><code> فرم ارسال</ 0>، همانطور که احتمالا مشکوک است، نام فرم ما است. ما باید به دوگانگو بگوییم که این فرم یک فرم ارسال </ 0> است (بنابراین جانگو برای ما جادویی خواهد کرد) - <code> شکلها.نوع شکل </ 0> مسئول آن است.</p>
+` فرم ارسال</ 0>، همانطور که احتمالا مشکوک است، نام فرم ما است. ما باید به دوگانگو بگوییم که این فرم یک فرم ارسال </ 0> است (بنابراین جانگو برای ما جادویی خواهد کرد) - <code> شکلها.نوع شکل </ 0> مسئول آن است.</p>
 
 <p>بعد، ما <code> کلاس متا </ 0> را داریم، جایی که ما به جنگو می گویم که کدام مدل باید برای ایجاد این فرم (<=> مدل = پست </ 0>) استفاده شود.</p>
 
@@ -83,11 +83,11 @@ class PostForm(forms.ModelForm):
 </html>
 `</pre> 
 
-پس از ذخیره و بازخوانی صفحه http://127.0.0.1:8000 شما آشکارا آشنا ` NoReverseMatch </ 0> را ببینید، درست است؟</p>
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
-<h2>آدرس اینترنتی</h2>
+## آدرس اینترنتی
 
-<p><code> وبلاگ/ آدرسهای اینترنتی.py </ 0> باز کنید و یک خط اضافه کنید:</p>
+` وبلاگ/ آدرسهای اینترنتی.py </ 0> باز کنید و یک خط اضافه کنید:</p>
 
 <p>{% filename %}blog/urls.py{% endfilename %}</p>
 
@@ -366,7 +366,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Security
 
-Being able to create new posts just by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
 In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
