@@ -28,7 +28,7 @@ Pythonコンソールを開きましょう。Windowsなら `python` 、Mac OSや
 
 Pythonのコマンドが走ると、プロンプト記号が `>>>` に変わりました。 これは、今Pythonの言語を実行できますという意味です。 `>>>` はタイプしなくていいですよ – Pythonがあなたの代わりにやってくれます。
 
-Pythonコンソールを終わる時は、`exit()` とタイプするか、ショートカット `Ctrl + Z`（Windows）、`Ctrl + D`（Mac/Linux）で終了です。 そうするともう `>>>` は出なくなります。
+If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. そうするともう `>>>` は出なくなります。
 
 けど、今はまだコンソールを終了しないで、もっと動かして学びましょう。簡単な計算からはじめましょう。`2 + 3` とタイプして、`Enter` キーを押してください。
 
@@ -107,7 +107,7 @@ Pythonコンソールを終わる時は、`exit()` とタイプするか、シ�
 "Runnin' down the hill"
 ```
 
-できましたか？次に、あなたの名前を大文字に変えてみましょう。次のように記述してください。
+Nice, huh? To see your name in uppercase letters, type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ TypeError: object of type 'int' has no len()
 
 name イコール（=）"Ola" とタイプします。
 
-見てのとおり、プログラムは、なにも返してくれませんね。では、変数がきちんとあるか、どうやって確かめたらいいのでしょうか？ `name` とタイプして、`Enter` キーを押してください。
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ name イコール（=）"Ola" とタイプします。
 5
 ```
 
-素晴らしいですね！変数は、もちろん数値にも使えますよ。
+Awesome, right? Now, variables can be anything – numbers too! Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -414,7 +414,7 @@ KeyError: 'age'
 
 またエラーです。今回は **KeyError** というエラーが出ました。Pythonは、このディクショナリにキー `'age'` は存在しませんよ、と教えてくれています。
 
-ディクショナリとリストはどう使い分ければよいのでしょうか？そうですね、これはゆっくり考えてみるべきポイントですね！この後の解答を読むまえに、考えてみてください。
+When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
 
 - 必要なのは、順序付けられた一連のアイテムですか？　リストを使いましょう。
 - キーに対応する値が必要？キーから値を参照する？　ディクショナリを使いましょう。
@@ -438,7 +438,7 @@ KeyError: 'age'
 
 お分かり頂けたでしょうか。 :) では、ディクショナリを使ってもう少し練習してみましょう。準備ができたら、次の行にいってみましょう。
 
-ディクショナリの要素を削除する時は、`pop()` メソッドを使います。 例えば、 キー `'favorite_numbers'` の要素を削除するには、次のように記述してください。
+ディクショナリの要素を削除する時は、`pop()` メソッドを使います。 Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ KeyError: 'age'
 
 > 家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。[Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4)
 
-比較することは、プログラミングの醍醐味の１つです。簡単に比較できるものといえば、何でしょうか？そうです、数字ですね。さっそくやってみましょう。
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
 {% filename %}command-line{% endfilename %}
 
@@ -557,7 +557,7 @@ Pythonは、数値(`int`)と文字列(`str`)の比較はできません。 **Typ
 - True
 - False
 
-Pythonを記述するときは、Trueの最初は大文字のT、残りは小文字です。 **true, TRUE, tRUE は間違いです。– True と記述してください** (もちろん False についても同様です。)
+Pythonを記述するときは、Trueの最初は大文字のT、残りは小文字です。 **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
 ブール型は、次のように変数に代入することもできます。
 
@@ -599,7 +599,7 @@ False
 - Pythonファイルとしてコードを保存します。
 - 実行します！
 
-これまで使っていたPythonインタプリタを終了しましょう。`exit()` 関数を記述してください。
+To exit from the Python interpreter that we've been using, type the `exit()` function
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,7 +672,7 @@ WindowsのPowerShellでは、次のようになります。
 
 <!--endsec-->
 
-うまくできない時は、質問してください。
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
 次に、ファイルのコードを実行します。
 
