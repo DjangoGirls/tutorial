@@ -33,7 +33,7 @@ Para iniciar sesión, deberás crear un *superusuario (superuser)*, que es un us
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Cuando te lo pida, escribe tu nombre de usuario (en minúscula, sin espacios), email y contraseña. **No te preocupes si no puedes ver la contraseña que estás escribiendo, así es como se supone que tiene que ser.** Simplemente escríbela y presiona `enter` para continuar. Luego, verás algo así (Donde username y email serán los que escribiste anteriormente):
+Cuando te lo pida, escribe tu nombre de usuario (en minúscula, sin espacios), email y contraseña. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. Luego, verás algo así (Donde username y email serán los que escribiste anteriormente):
 
     Username: admin
     Email address: admin@admin.com
@@ -46,7 +46,7 @@ Vuelve a tu navegador. Ingresa con las credenciales de super usuario que tu esco
 
 ![Administrador de Django](images/django_admin3.png)
 
-Ve a Post y experimenta un como con él. Agrega cinco o seis posts para tu blog. No te preocupes sobre el contenido - simplemente puedes copiar y pegar algunas palabras de este tutorial para ahorrar tiempo. :)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can copy-paste some text from this tutorial to save time. :)
 
 Asegúrate de que al menos dos o tres posts (pero no todos) tengan la fecha de publicación definida. Esto será muy poderoso después.
 
