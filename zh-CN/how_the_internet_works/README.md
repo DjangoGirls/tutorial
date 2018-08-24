@@ -6,7 +6,7 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-你需要了解的第一件事是一个网站只是一堆保存在硬盘上的文件。 就像你的电影、 音乐或图片一样。 然而，网站的唯一的不同之处是： 网站包含一种称为 HTML 的代码。
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. 就像你的电影、 音乐或图片一样。 然而，网站的唯一的不同之处是： 网站包含一种称为 HTML 的代码。
 
 如果你不熟悉编程，一开始你会很难理解HTML。你的浏览器 (如Chrome、 Safari、 Firefox 等) 却很喜欢它。 Web浏览器懂得这些代码，遵循它的指令并如你所想的那样展示这些文件。
 
@@ -22,7 +22,7 @@ OK, but you want to know how the Internet looks, right?
 
 ![图1.2](images/internet_3.png)
 
-它很迷人，对吧？ 但是很明显，我们不太可能用电缆去连接任何两台上网的电脑。 So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+它很迷人，对吧？ But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 它看起来像这样：
 
@@ -34,7 +34,7 @@ Imagine that when you type https://djangogirls.org, you send a letter that says:
 
 ![图1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 我们使用的地址叫做IP地址，这种地址却不包含街道、城市、邮编和城市。 你的电脑首先要求DNS（域名服务器）去解析djangogirls.org成为IP地址。 It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
