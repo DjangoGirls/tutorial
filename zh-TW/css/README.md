@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![圖 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ### Django的靜態檔放那裡
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 我們在部落格應用程式 (blog app) 裡建立一個名為 `static` 資料夾︰
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` 是一個 CSS 選取項 (Selector)。 This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. 在這種情況下，我們會告訴它要把顏色改為 `#FCA205`，它是橘色。 當然，你可以放你自己的顏色在這裡！
+`h1 a` 是一個 CSS 選取項 (Selector)。 This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. 在這種情況下，我們會告訴它要把顏色改為 `#FCA205`，它是橘色。 Or you can put your own color here!
 
 在 CSS 檔中，我們決定的 HTML 檔案中元素的樣式 (styles)。 The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class 和 id 是你自己給元素的名稱。 Classes 定義一群組的元素，而 ids 指向特定的元素。 For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 </div>
 ```
 
-我們現在將增加宣告區域到不同選項器。 以 `.` 開始的選項器是關於 classes 的。 There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. 現在，只要複製並貼到你的 `blog/static/css/blog.css` 檔︰
+我們現在將增加宣告區域到不同選項器。 以 `.` 開始的選項器是關於 classes 的。 There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
