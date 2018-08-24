@@ -22,6 +22,6 @@ Imagine a mail carrier with a letter. She is walking down the street and checks 
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-Of course, the description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-So instead of diving too much into details, we will simply start creating something with Django and we will learn all the important parts along the way!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
