@@ -34,7 +34,7 @@ Arahkan ke Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Mungkin letaknya di Applications → Accessories → Terminal, tapi itu tergantung pada sistem Anda. Jika tidak ada, silahkan cari bantuan di Google. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Sekarang Anda akan melihat jendala hitam atau putih yang menunggu perintah yang 
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Jikan Anda menggunakan Mac atau Linux, mungkin Anda akan melihat tanda `$`, seperti ini:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}baris-perintah{% endfilename %}
 
@@ -70,7 +70,7 @@ Setiap baris perintah akan ada tambahan awal dengan tanda ini dan satu spasi, na
 
 Bagian setelah dan termasuk tanda `$` atau `>` disebut *prompt baris perintah*, atau singkatnya disebut *prompt*. Mengharuskan Anda untuk mengetikkan sebuah perintah di sana.
 
-Pada tutorial, pada saat kami ingin Anda untuk mengeikkan baris perintah, kami akan sertakan tanda `$` atau `>`, dan kadang-kadang lebih ke kiri. Anda dapat mengabaikan bagian sebelah kiri tadi lalu perintahnya dapat dimulai setelah prompt.
+Pada tutorial, pada saat kami ingin Anda untuk mengeikkan baris perintah, kami akan sertakan tanda `$` atau `>`, dan kadang-kadang lebih ke kiri. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Perintah pertama Anda (YAY!)
 
@@ -249,7 +249,7 @@ Bagaimana jika kita membuat direktori praktik di dekstop Anda? Anda dapat melaku
 
 <!--endsec-->
 
-Perintah sederhana ini akan membuat sebuh folder dengan nama `praktik` pada Desktop Anda. Anda dapat memeriksanya apakah sudah ada di Desktop atau dengan menjalankan perintah `ls` atu `dir`! Cobalah. :)
+Perintah sederhana ini akan membuat sebuh folder dengan nama `praktik` pada Desktop Anda. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Cobalah. :)
 
 > PRO tip: Jika Anda tidak ingin mengetikkan perintah yang sama berulangkali, coba tekan `panah atas` dan `panah bawah` pada keyboard Anda untuk melihat perintah yang baru saja Anda gunakan.
 
