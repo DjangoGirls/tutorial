@@ -25,7 +25,7 @@ För att installera Bootstrap, måste du lägga till detta till din `<head>` i d
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Detta lägger inte till några filer i ditt projekt. Det bara pekar på filer som finns på Internet. Öppna nu webbsidan och ladda om den. Här är den!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Figur 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Vi ska äntligen ta en närmare titt på dessa saker vi kallat **statiska filer*
 
 ### Var ska vi lägga statiska filer för Django?
 
-Django vet redan var den ska hitta statiska filer för den inbyggda "admin"-appen. Nu behöver vi bara lägga till några statiska filer för vår egen app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 Vi gör det genom att skapa en mapp kallad `static` i vår blogg-app:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` är en CSS Selector. Detta innebär att vi tillämpar våra stilar till alla `a`-element inne i ett `h1`-element. Så när vi har något i stil med `<h1><a href="">länk</a></h1>`, kommer `h1 a`-stilen gälla. I detta fall säger vi åt den att ändra sin färg till `#FCA205`, vilket är orange. Du kan såklart välja din egen färg här!
+`h1 a` är en CSS Selector. Detta innebär att vi tillämpar våra stilar till alla `a`-element inne i ett `h1`-element. Så när vi har något i stil med `<h1><a href="">länk</a></h1>`, kommer `h1 a`-stilen gälla. I detta fall säger vi åt den att ändra sin färg till `#FCA205`, vilket är orange. Or you can put your own color here!
 
 I en CSS-fil bestämmer vi stilar för element i HTML-filen. Det första sättet vi identifierar element är med elementnamnet. Du kanske minns dessa som taggar från HTML-avsnittet. Saker som `a`, `h1` och `body` är alla exempel på elementnamn. Vi identifierar även element genom attributet `class` eller attributet `id`. Class och id är namn du själv ger elementet. Class definierar grupper av element, medan id pekar på specifika element. Till exempel, följande tagg kan identifieras i CSS genom dess elementnamn `a`, dess class-attribut `external_link` eller genom dess id `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ Och lägg till klassen `post` till den `div` som innehåller en blogg-post.
 </div>
 ```
 
-Vi kommer nu lägga till deklarations-block till olika selektorer. Selektorer som börjar med `.` avser klasser. Det finns mängder av bra guider och förklaringar om CSS på webben som kan hjälpa dig förstå följande kod. Men för stunden, kopiera den bara till filen `blog/static/css/blog.css`:
+Vi kommer nu lägga till deklarations-block till olika selektorer. Selektorer som börjar med `.` avser klasser. Det finns mängder av bra guider och förklaringar om CSS på webben som kan hjälpa dig förstå följande kod. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
