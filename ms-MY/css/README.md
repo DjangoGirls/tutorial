@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Ini tidak menambah sebarang fail pada projek anda. Ia hanya menunjuk kepada fail yang wujud di Internet. Teruskan saja, buka laman web anda dan muat semula halaman. Ini dia!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Rajah 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Akhir sekali, kita akan melihat dengan lebih dekat kepada **fail-fail statik**. 
 
 ### Di mana meletakkan fail-fail statik untuk Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 Kita melaksanakannya dengan mencipta folder yang dipanggil `statik` di dalam aplikasi blog ini:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` adalah Pilihan CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Dalam kes ini, kita sedang memberitahunya untuk menukar warna kepada `#FCA205`, iaitu warna oren. Sudah tentu, anda boleh meletakkan warna anda sendiri di sini!
+`h1 a` adalah Pilihan CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Dalam kes ini, kita sedang memberitahunya untuk menukar warna kepada `#FCA205`, iaitu warna oren. Or you can put your own color here!
 
 Di dalam sebuah fail CSS, kita tentukan gaya bagi unsur-unsur dalam fail HTML. Cara pertama kami mengenal pasti elemen adalah dengan nama elemen. Anda mungkin ingat ini sebagai tanda dari bahagian HTML. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class dan id adalah nama-nama yang anda berikan pada unsur sendiri. Kelas menentukan kumpulan elemen, dan id titik untuk unsur-unsur tertentu. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-Sekarang kita akan menambah deklarasi blok untuk berbeza pemilih. Selectors starting with `.` relate to classes. Ada banyak tutorial dan penjelasan mengenai CSS di Web yang boleh membantu kau mengerti berikut kod. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+Sekarang kita akan menambah deklarasi blok untuk berbeza pemilih. Selectors starting with `.` relate to classes. Ada banyak tutorial dan penjelasan mengenai CSS di Web yang boleh membantu kau mengerti berikut kod. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
