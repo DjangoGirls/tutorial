@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Для начала нам нужно импортировать формы Django (`from django import forms`) и, разумеется, нашу модель `Post` (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`, как ты, вероятно, подозреваешь, это имя для нашей формы. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
@@ -85,7 +85,7 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-Сохрани файл и перезагрузи страницу по адресу http://127.0.0.1:8000, ты должна увидеть знакомую ошибку `NoReverseMatch`, так?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Безопасность
 
-Круто иметь возможность создавать новые посты просто нажав на ссылку! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
 В файле `blog/templates/blog/base.html`, найди `page-header` `div` и тег &lta&gt который мы добавили ранее. Должно выглядеть примерно так:
 
