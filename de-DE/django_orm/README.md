@@ -25,7 +25,7 @@ Das sollte angezeigt werden:
 (InteractiveConsole) >>>
 ```
 
-Nun bist du in der interaktiven Konsole von Django. Die funktioniert wie der Python-Prompt, aber hat noch etwas zusätzliche Django-Magie. :) Du kannst hier natürlich auch alle Python-Befehle verwenden.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### Alle Objekte
 
@@ -88,7 +88,7 @@ Welche User sind in unserer Datenbank vorhanden? Finde es damit heraus:
 <QuerySet [<User: ola>]>
 ```
 
-Das ist der Superuser, den wir vorhin erstellt haben! Lass uns jetzt eine Instanz des Users erstellen:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -96,7 +96,7 @@ Das ist der Superuser, den wir vorhin erstellt haben! Lass uns jetzt eine Instan
 >>> me = User.objects.get(username='ola')
 ```
 
-Wie du siehst, haben wir jetzt ein `User`-Objekt mit einem `username` 'ola'. Schön! Natürlich musst du diese Zeile anpassen, damit dein eigener Benutzername verwendet wird.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 Jetzt können wir schließlich unseren Post erstellen:
 
