@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-아마도 프로그램 → 보조 프로그램 → 터미널을 실행하면 될 거에요. 하지만 시스템에 따라 다를 수도 있어요. 그럴 때는 구글에서 찾아보세요. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-맥이나 리눅스의 경우, 이런 `$` 기호가 보일 거예요:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Go to Applications → Utilities → Terminal.
 
 `$` 또는 `>` 포함 부분 짧게 *명령줄 프롬프트* 또는 *프롬프트*라고 합니다. 뭔가 입력하라는 표시입니다.
 
-이 튜토리얼을 따라하면서, 커맨드 라인에 명령어를 입력할 때마다 왼쪽에 `$` 또는 `>`표시가 보일 거에요. 프롬프트를 실행하고 나서 왼쪽 표시 부분을 무시하고 명령어를 바로 입력하면 됩니다.
+이 튜토리얼을 따라하면서, 커맨드 라인에 명령어를 입력할 때마다 왼쪽에 `$` 또는 `>`표시가 보일 거에요. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## 나의 첫 번째 명령 (야호!)
 
@@ -249,7 +249,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-이 간단한 명령어가, 바탕화면에 `practice` 라는 이름의 폴더를 만들어 줍니다. 바탕화면에서 직접 보거나, 명령어 `ls` 혹은 `dir`을 실행해서 확인할 수 있어요! 한 번 해보세요. :)
+이 간단한 명령어가, 바탕화면에 `practice` 라는 이름의 폴더를 만들어 줍니다. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! 한 번 해보세요. :)
 
 > 전문가 팁: 같은 명령어를 여러 번 반복해서 입력하고 싶지 않다면, 키보드의 `위 화살표`와 `아래 화살표`를 눌러서 최근 사용한 명령어들을 볼 수 있어요.
 
