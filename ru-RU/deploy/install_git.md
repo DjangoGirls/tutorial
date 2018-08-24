@@ -12,7 +12,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Загрузи Git с официального сайта [git-scm.com](https://git-scm.com/) и просто следуй инструкциям по установке.
+Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
 
 > **Заметка** Если вы используете OS X 10.6, 10.7, or 10.8, вам необходимо установить версию git, расположенную здеесь: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
