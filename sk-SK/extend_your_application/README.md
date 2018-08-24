@@ -70,9 +70,9 @@ urlpatterns = [
 
 This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
 
-- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the url.
+- `/` – then we need a **/** again before finishing the URL.
 
 To znamená, že ak zadáš `http://127.0.0.1:8000/post/5/` do svojho prehliadača, Django pochopí, že hľadáš *view* s názvom `post_detail` a prenesie informácie z `pk` rovné `5` do toho *view*.
 
@@ -80,7 +80,7 @@ OK, pridali sme nový URL vzor `blog/urls.py`! Poďme obnoviť stránku: http://
 
 ![AttributeError](images/attribute_error2.png)
 
-Pamätáš si, čo je ďalší krok? Samozrejme: pridávanie view!
+Do you remember what the next step is? It's adding a view!
 
 ## Pridaj view do detailu príspevku
 
@@ -98,7 +98,7 @@ Ale tento kód má problém. Pokiaľ tu nie je žiaden `Post` s daným `primárn
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-To nechceme! Ale samozrejme Django prichádza s niečim, čo si s tým poradí: `get_object_or_404`. V príade, že neexistuje žiaden `Post` s daným `pk` zobrazí oveľa krajšiu stránku, `Page Not Found 404`.
+To nechceme! But luckily Django comes with something that will handle that for us: `get_object_or_404`. V príade, že neexistuje žiaden `Post` s daným `pk` zobrazí oveľa krajšiu stránku, `Page Not Found 404`.
 
 ![Stránka nenájdená](images/404_2.png)
 
