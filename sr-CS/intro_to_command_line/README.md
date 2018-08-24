@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Verovatno je pod Applications → Accessories → Terminal, ali možda zavisi od vašeg sistema. Ako nije tamo, izguglajte. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Trebalo bi da vidite beli ili crni prozor koji čeka vaše komande.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Ako koristite Mac ili Linux, verovatno vidite `$`, poput ovoga:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Svaka komanda će imate prefiks koji se sastoji od ovog znaka i jednog razmaka, 
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Vaša prva komanda (YAY!)
 
@@ -249,7 +249,7 @@ Tu je!
 
 <!--endsec-->
 
-Ova mala komanda kreira folder sa nazivom `vezba` na vašem desktop-u. Možete proveriti da li je zaista tamo ako pogledate vaš desktop ili pokrenete komandu `ls` ili `dir`! Probajte. :)
+Ova mala komanda kreira folder sa nazivom `vezba` na vašem desktop-u. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Probajte. :)
 
 > PRO saver> Ako ne želite da kucate istu komandu ponovo i ponovo, pritisnite `strelicu na gore` i `strelicu na dole` na vašoj tastaturi da biste se kretali kroz skoro unete komande.
 
