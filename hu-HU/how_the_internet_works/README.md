@@ -6,7 +6,7 @@
 
 Biztosan minden nap internetezel. De tudod, igazából mi történik, mikor beírod a böngésződbe, hogy https://djangogirls.org, és `enter`t nyomsz?
 
-Az első dolog, amit fontos megérteni, hogy egy weboldal nem más, mint egy csomó fájl egy merevlemezre mentve. Olyanok, mint a filmjeid, a zenéid, vagy a képeid. De van valami, ami a weboldalakat egyedivé teszi: a HTML nevű számítógépes kód.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Olyanok, mint a filmjeid, a zenéid, vagy a képeid. De van valami, ami a weboldalakat egyedivé teszi: a HTML nevű számítógépes kód.
 
 Ha nem igazán ismered a programozást, akkor nehéz lehet megértened először a HTML-t, de ne aggódj a böngésződ (Chrome, Safari, Firefox, stb.) imádja. A webböngészőket úgy tervezték, hogy megértsék ezt a kódot, kövessék azt, ami abban van, és megjelenítsenek mindent pont úgy, ahogy szeretnéd.
 
@@ -22,7 +22,7 @@ Elég zavaros, igaz? In fact it is a network of connected machines (the above-me
 
 ![1.2 ábra](images/internet_3.png)
 
-Lenyűgöző, igaz? Persze az képtelenség, hogy minden gép össze legyen kötve egymással, ami az Internethez csatlakozik. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Lenyűgöző, igaz? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 Így néz ki:
 
@@ -34,7 +34,7 @@ Először a leveled a hozzád legközelebbi postára megy. Ezután továbbhalad 
 
 ![1.4 ábra](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Utcanév, házszám, város és irányítószám helyett IP-címeket használunk. A számítógéped először megkéri a DNS-t (Domain Name System, tartománynévrendszer), hogy fordítsa le a djangogirls.org-ot egy IP címre. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
