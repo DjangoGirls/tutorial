@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Tout d'abord, nous avons besoin d'importer les formulaires Django (`from django import forms`), puis, évidemment, notre modèle `Post` (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulaire. Nous avons besoin d'indiquer à Django que ce formulaire est un `ModelForm` (pour que Django fasse certaines choses automatiquement pour nous). Pour cela, nous utilisons `forms.ModelForm`.
 
@@ -85,7 +85,7 @@ Après avoir ajouté cette ligne, votre fichier HTML devrait maintenant ressembl
 </html>
 ```
 
-Sauvegardez votre fichier et rafraîchissez la page http://127.0.0.1:8000 : vous devez normalement tomber encore une fois sur l'erreur `NoReverseMatch` !
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas �
 
 ## Sécurité
 
-C’est génial de pouvoir créer de nouveaux posts juste en cliquant sur un lien ! Mais maintenant, toute personne visitant votre site sera en mesure de créer un nouveau blog, et ce n'est peut-être pas ce que vous voulez. Faisons en sorte que les boutons apparaissent pour vous mais pas pour les autres.
+Being able to create new posts by clicking a link is awesome! Mais maintenant, toute personne visitant votre site sera en mesure de créer un nouveau blog, et ce n'est peut-être pas ce que vous voulez. Faisons en sorte que les boutons apparaissent pour vous mais pas pour les autres.
 
 Dans `blog/templates/blog/base.html`, trouvez notre `page-header` `div` et la balise ancre que vous y avez mis plus tôt. Ça doit ressembler à ça :
 
