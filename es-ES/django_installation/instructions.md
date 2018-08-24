@@ -215,4 +215,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+¡Eso es todo! Ahora estás lista (por fin) para crear una aplicación Django!
