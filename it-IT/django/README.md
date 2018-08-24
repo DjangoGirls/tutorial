@@ -22,6 +22,6 @@ Immagina un postino con una lettera. Sta camminando per la strada e controlla og
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Forse l'utente ha richiesto di cambiare qualcosa all'interno dei suoi dati? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-Naturalmente, la descrizione qui sopra é molto semplificata, ma per il momento non hai bisogno di sapere nel dettaglio tutti gli aspetti tecnici. Avere il senso generale per il momento è abbastanza.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Per cui invece di perderci troppo nei dettagli, creeremo semplicemente qualcosa usando Django e apprenderemo in concetti fondamentali lungo la strada!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
