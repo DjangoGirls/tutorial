@@ -26,7 +26,7 @@ A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow y
 >>>
 ```
 
-ตอนนี้คุณอยู่ในคอนโซลของ Django มันเหมือนกับคอนโซลของ Python แต่เราได้เพิ่มเวทมนต์ของ Django เข้ามา :) แน่นอนว่า คุณสามารถใช้ทุกคำสั่งของ Python ในนี้เช่นกัน
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### วัตถุทั้งหมด
 
@@ -89,7 +89,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 >>> me = User.objects.get(username='ola')
 ```
 
-อย่างที่คุณเห็น มันคือการ `get` `User` โดยใช้ `username` ที่ชื่อ 'ola'. มันดจีย์ใช่มะ! และแน่นอนว่าคุณสามารถเปลี่ยนมันให้เป็นชื่อของคุณได้
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 ตอนนี้ เราก็สามารถสร้างโพสต์ของเราได้แล้ว:
 
