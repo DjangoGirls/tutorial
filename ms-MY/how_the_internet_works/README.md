@@ -6,7 +6,7 @@
 
 Kami yakin anda menggunakan Internet setiap hari. Tapi apakah anda benar-benar tahu apa yang terjadi ketika anda jenis alamat seperti https://djangogirls.org ke pelayar anda dan tekan `masuk`?
 
-Perkara pertama yang kau harus faham bahawa laman web adalah hanya sekelompok fail yang disimpan pada hard disk. Hanya seperti filem anda, music, atau gambar. Bagaimanapun, ada satu bagian yang unik untuk laman websites: mereka termasuk kode komputer yang dipanggil HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Hanya seperti filem anda, music, atau gambar. Bagaimanapun, ada satu bagian yang unik untuk laman websites: mereka termasuk kode komputer yang dipanggil HTML.
 
 Jika anda tidak akrab dengan program itu akan sulit untuk memahami HTML pada mulanya, tetapi anda web browser (seperti Chrome, Safari, Firefox, dan lain-lain.) cinta itu. Web browser direka untuk memahami kode ini, mengikut arahan, dan sekarang ini fail bahawa laman web anda dibuat, persis seperti yang anda inginkan.
 
@@ -22,7 +22,7 @@ Looks like a mess, right? In fact it is a network of connected machines (the abo
 
 ![Rajah 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But obviously, it is not possible to have a wire between every machine connected to the Internet. Jadi, untuk mencapai satu mesin (sebagai contoh, satu di mana https://djangogirls.org disimpan) kita perlu lulus permintaan melalui banyak, banyak mesin yang berbeza.
+It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. Jadi, untuk mencapai satu mesin (sebagai contoh, satu di mana https://djangogirls.org disimpan) kita perlu lulus permintaan melalui banyak, banyak mesin yang berbeza.
 
 It looks like this:
 
@@ -34,7 +34,7 @@ Your letter goes to the post office closest to you. Kemudian ia pergi untuk yang
 
 ![Rajah 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Bukan alamat dengan nama jalan, bandar, zip code dan nama negara, kami menggunakan alamat IP. Komputer pertama meminta DNS (Nama Domain Sistem) untuk menterjemahkan djangogirls.org ke alamat IP. Ia berfungsi sedikit seperti lama buku telefon di mana anda boleh melihat ke atas nama orang yang anda mahu untuk menghubungi dan mencari mereka nomor telepon dan alamat.
 
