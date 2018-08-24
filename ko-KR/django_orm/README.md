@@ -26,7 +26,7 @@ PythonAnywhere가 아닌 로컬 컨솔에서 아래 명령을 입력하세요. :
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### 모두 보기
 
@@ -89,7 +89,7 @@ But we have one missing ingredient here: `me`. We need to pass an instance of `U
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 드디어 우리 게시물을 만들었네요. :
 
