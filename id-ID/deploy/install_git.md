@@ -12,7 +12,7 @@ Jangan lupa restart command prompt atau PowerShell setelah penginstalan selesai 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git dari [git-scm.com](https://git-scm.com/) dan ikuti perintah yang diberikan.
+Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
 
 > ** Catatan </ 0> Jika Anda menjalankan OS X 10.6, 10.7, atau 10.8, Anda perlu menginstal versi git dari sini:  Git installer untuk OS X Snow Leopard </ 1></p> </blockquote> <!--endsec-->
 > 
