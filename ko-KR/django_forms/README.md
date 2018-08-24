@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-위 코드를 보면 첫 번째로 forms model을 import 해야하고 (`from django import forms`), 그 다음으로 `Post` model 도 import 해야합니다. (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm` 은 이미 다들 예상 하셨듯이 우리가 만들 폼의 이름이에요. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
@@ -85,7 +85,7 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-페이지를 저장하고 나서 http://127.0.0.1:8000 페이지를 새로고침 해보면, `NoReverseMatch`이 에러가 나타나죠?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## 보안
 
-링크를 클릭해 새로운 포스트가 나오게 만드는 것은 멋져요! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어볼게요.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어볼게요.
 
 `blog/templates/blog/base.html` 파일에서, `page-header` `div`를 찾아 그 위에 아래와 같이 입력합니다:
 
