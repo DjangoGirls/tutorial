@@ -26,7 +26,7 @@ Ang epekto nito ay dapat ganito:
 >>>
 ```
 
-Ikaw ngayon ay nasa interactive console na ni Django. Gaya lang ito ng prompt ng Pythod, pero may mga karagdagang mahika ni Django. :) Maari mong magamit ang lahat ng mga command ni Python dito, siyempre.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### Lahat ng mga object
 
@@ -89,7 +89,7 @@ Anong mga gumagamit ang nasa loob ng ating database? Subukan natin ito:
 <QuerySet [<User: ola>]>
 ```
 
-Ito ay ang superuser na nilikha natin kanina! Ngayon ay kukuha tayo ng instance ng user na ito:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ Ito ay ang superuser na nilikha natin kanina! Ngayon ay kukuha tayo ng instance 
 >>> me = User.objects.get(username='ola')
 ```
 
-Gaya ng makikita mo, may `nakuha` tayong isang `User` na may `bansag` na katumbas ng 'ola'. Mahusay! Siyempre, kailangan natin itong baguhin gamit ang ating sariling bansag.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 Ngayon makakalikha na tayo ng post sa wakas:
 
