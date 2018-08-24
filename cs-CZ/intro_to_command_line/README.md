@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Pravděpodobně ji nalezneš pod Aplikace → Příslušenství → Terminál, ale závisí to na tvém systému. Pokud to tam není, jen to vygoogli. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Nyní bys měla vidět bílé nebo černé okno, které čeká na tvé příkazy
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Pokud jsi na Mac nebo na Linuxu, pravděpodobně uvidíš výzvu začínající tímto znakem `$`, právě takhle:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Každý příkaz budeš psát za tento znak a jednu mezeru, ale není nutné to 
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Tvůj první příkaz (hurá!)
 
@@ -248,7 +248,7 @@ Co si vytvořit pokusnou složku na ploše? Můžeš to udělat tímto způsobem
 
 <!--endsec-->
 
-Tento malý příkaz vytvoří složku s názvem `pokus` na ploše. Jestli se na ploše složka vytvořila můžeš zkontrolovat pouhým pohledem na pracovní plochu nebo spuštěním příkazu `ls` nebo `dir`! Zkus to. :)
+Tento malý příkaz vytvoří složku s názvem `pokus` na ploše. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Zkus to. :)
 
 > PRO tip: Pokud nechceš znovu a znovu zadávat stejné příkazy, zkus stisknutím `šipka nahoru` a `šipka dolů` na klávesnici přepínat mezi nedávno použitými příkazy.
 
