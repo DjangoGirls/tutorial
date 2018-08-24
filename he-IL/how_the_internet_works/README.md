@@ -6,7 +6,7 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-הדבר הראשון שעליך להבין הוא שאתר אינטרנט הוא פשוט הרבה קבצים השמורים על דיסק קשיח. בדיוק כמו הסרטים, המוסיקה או התמונות שלך. עם זאת, יש חלק אחד ייחודי עבור אתרי אינטרנט: הם כוללים קוד מחשב הנקרא HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. בדיוק כמו הסרטים, המוסיקה או התמונות שלך. עם זאת, יש חלק אחד ייחודי עבור אתרי אינטרנט: הם כוללים קוד מחשב הנקרא HTML.
 
 אם אתן לא מכירות תכנות זה יכול להיות קשה להבין HTML בהתחלה, אבל דפדפני האינטרנט שלך (כמו כרום, ספארי, פיירפוקס, וכו ') אוהבים את זה. דפדפני אינטרנט נועדו להבין קוד זה, לעקוב אחר ההוראות שלו, ולהציג את הקבצים מהם אתר האינטרנט שלך בנוי, בדיוק כפי שאת רוצה.
 
@@ -22,7 +22,7 @@ OK, but you want to know how the Internet looks, right?
 
 ![איור 1.2](images/internet_3.png)
 
-זה מרתק, נכון? אבל כמובן, לא ניתן להעביר כבל בין כל המכשירים המחוברים לאינטרנט. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+זה מרתק, נכון? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 זה נראה כך:
 
@@ -34,7 +34,7 @@ Imagine that when you type https://djangogirls.org, you send a letter that says:
 
 ![איור 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 במקום כתובות עם שם רחוב, עיר, מיקוד, שם מדינה, נשתמש בכתובות IP. המחשב שלך קודם מבקש מה-DNS (Domain Name System) לתרגם את djangogirls.org לכתובת IP. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
