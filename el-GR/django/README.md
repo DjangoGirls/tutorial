@@ -22,6 +22,6 @@ To understand what Django is actually for, we need to take a closer look at the 
 
 Στην λειτουργία *view*, γίνονται όλα τα ενδιαφέροντα πράγματα: μπορούμε να δούμε μια βάση δεδομένων για να ψάξουμε για μερικές πληροφορίες. Μήπως ο χρήστης ζήτησε να αλλάξει κάτι στα δεδομένα; Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-Φυσικά, η παραπάνω περιγραφή είναι λίγο απλοποιημένη, αλλά δεν χρειάζεται να γνωρίζετε όλα τα τεχνικά ζητήματα ακόμη. Έχοντας μια γενική ιδέα είναι αρκετό.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Έτσι αντί να αφιερώνουμε πάρα πολύ χρόνο σε λεπτομέρειες, θα ξεκινήσουμε απλά δημιουργώντας κάτι με το Django και θα μάθουμε όλα τα σημαντικά κομμάτια κατά μήκος του δρόμου!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
