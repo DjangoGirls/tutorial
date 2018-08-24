@@ -23,7 +23,7 @@ HTML singkatan dari "HyperText Markup bahasa". ** HyperText </ 0> berarti itu ad
      └───blog
     
 
-(Anda mungkin bertanya-tanya mengapa kita perlu dua direktori kedua disebut `blog`-seperti yang Anda akan menemukan nanti, ini adalah cukup berguna konvensi penamaan yang membuat hidup lebih mudah ketika keadaan mulai menjadi lebih rumit.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 Dan sekarang membuat `post_list.html` file (Biarkan kosong untuk sekarang) didalam direktori `blog/template/blog`.
 
