@@ -4,7 +4,7 @@ We're about to build our first webpage: a homepage for your blog! But first, let
 
 ## URL이란 무엇인가요?
 
-URL은 단순히 웹 주소랍니다. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000`가 바로 URL이에요! And `https://djangogirls.org` is also a URL.)
+A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000`가 바로 URL이에요! And `https://djangogirls.org` is also a URL.)
 
 ![URL](images/url.png)
 
