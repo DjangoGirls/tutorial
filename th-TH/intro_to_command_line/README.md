@@ -34,7 +34,7 @@
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-ส่วนใหญ่จะอยู่ที่เมนู Applications → Accessories → Terminal แต่นั่นก็ขึ้นอยู่กับระบบปฏิบัติการที่คุณใช้อยู่ ถ้าคุณหาไม่เจอ ลองหาใน Google ดูนะ :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-ถ้าคุณใช้ Mac หรือ Linux คุณอาจจะเห็นเครื่องหมาย `$` แบบนี้:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@
 
 ส่วนข้างบนและรวมถึงเครื่องหมาย ` $ </ 0> หรือ <code> & gt; </ 0> มันจะถูกเรียกว่า <em>command line prompt</em> หรือเรียกแบบสั้นๆว่า <em> prompt </ 1> มันจะกระตุ้นให้คุณป้อนข้อมูลบางอย่างลงไป</p>
 
-<p>ในบทเรียนนี้ เมื่อเราต้องการให้คุณพิมพ์คำสั่งใดๆ เราจะรวมเครื่องหมาย <code>$` หรือ `>` และรวมถึงเครื่องหมายอื่นๆ ลงไปทางด้านซ้ายมือให้คุณ คุณไม่ต้องสนใจส่วนด้านซ้ายมือ ให้เริ่มพิมพ์คำสั่งซึ่งเริ่มต้นหลังจาก prompt ได้เลย
+<p>ในบทเรียนนี้ เมื่อเราต้องการให้คุณพิมพ์คำสั่งใดๆ เราจะรวมเครื่องหมาย <code>$` หรือ `>` และรวมถึงเครื่องหมายอื่นๆ ลงไปทางด้านซ้ายมือให้คุณ Ignore the left part and only type in the command, which starts after the prompt.
 
 ## คำสั่งแรกของคุณ (เย้!)
 
@@ -249,7 +249,7 @@
 
 <!--endsec-->
 
-คำสั่งน้อยๆ นี้จะสร้างโฟลเดอร์ชื่อ `practice` บน desktop ของคุณ คุณสามารถตรวจดูได้ใน Desktop ของคุณ โดยใช้คำสั่ง `ls` หรือ `dir` ! ลองเลย. :)
+คำสั่งน้อยๆ นี้จะสร้างโฟลเดอร์ชื่อ `practice` บน desktop ของคุณ You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! ลองเลย. :)
 
 > คำแนะนำจากโปร: ถ้าคุณไม่อยากพิมพ์คำสั่งเดิมซ้ำๆ ลองกดปุ่ม `ลูกศรขึ้น` และ `ลูกศรลง` บนแป้นพิมพ์ของคุณ เพื่อดูว่าคุณใช้คำสั่งล่าสุดอะไรบ้าง
 
