@@ -23,7 +23,7 @@ HTML 代表 "超文字標記語言 (HyperText Markup Language)"。 **超文字 (
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 現在，在 `blog/templates/blog` 目錄裡面，建立一個 `post_list.html` 檔（現在讓它保留空白） 。
 
