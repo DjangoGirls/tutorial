@@ -22,6 +22,6 @@ Wyobraź sobie listonosza niosącego list. Idzie ulicą i porównuje każdy nume
 
 W funkcji *widoku* dzieje się wszystko to, co najciekawsze: tutaj możemy połączyć się z bazą danych i wyszukać potrzebne nam informacje. Może użytkownik poprosił o zmianę danych? To tak, jakbyś wysłała list o treści "proszę o zmianę opisu mojego stanowiska pracy". *Widok* może sprawdzić, czy masz takie uprawnienia, a następnie dokona zmiany opisu i odeśle odpowiedź "Zrobione!". Wówczas *widok*generuje odpowiedź, a Django wysyła ją do przeglądarki użytkownika.
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Powyższy opis jest nieco uproszczony, ale znajomość niuansów technicznych nie jest Ci na razie potrzebna. Wystarczy, że zrozumiesz ogólną zasadę działania.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+Dlatego nie będziemy się zbyt mocno zagłębiać w szczegóły i zacznijmy budować coś w Django. Wszystkich potrzebnych rzeczy nauczymy się po drodze!
