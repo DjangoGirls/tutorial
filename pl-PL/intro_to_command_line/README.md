@@ -70,7 +70,7 @@ Każde polecenie będzie poprzedzone tym znakiem oraz jedną spacją, ale nie mu
 
 Część do znaku `$` lub `>` razem z nim nazywana jest *znakiem zachęty wiersza polecenia* lub skrótowo *znakiem zachęty (promptem)*. Jego celem jest zachęcić Ciebie do wpisania jakiegoś polecenia.
 
-W tutorialu, jeżeli będziemy chciały byś wpisała komendę, umieścimy przed nią również `$` lub `>`, a czasami nawet resztę znaku zachęty. Możesz śmiało zignorować lewą część i wpisać komendę zaczynającą się za promptem.
+W tutorialu, jeżeli będziemy chciały, byś wpisała komendę, umieścimy przed nią również `$` lub `>`, a czasami nawet resztę znaku zachęty. Możesz śmiało zignorować lewą część i wpisać komendę zaczynającą się za promptem.
 
 ## Twoja pierwsza komenda! 
 
