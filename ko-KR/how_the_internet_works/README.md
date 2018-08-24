@@ -6,7 +6,7 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-먼저 알아야 할 것은 웹사이트란 하드 디스크에 저장된 파일묶음이라는 거에요. 동영상, 음악, 사진 파일처럼요. 웹사이트가 다른 파일과 다른 점은 HTML이라는 컴퓨터 코드가 들어있다는 것이에요.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. 동영상, 음악, 사진 파일처럼요. 웹사이트가 다른 파일과 다른 점은 HTML이라는 컴퓨터 코드가 들어있다는 것이에요.
 
 만약 프로그래밍에 익숙하지 않다면, HTML을 이해하는 게 어려울 수도 있어요. 하지만 브라우저들(크롬, 사파리, 파이어폭스 같은 것들요) 은 HTML을 사랑한답니다. 웹 프라우저는 코드를 이해하고 지시에 따르고, 내가 원하는 방식으로 정확하게 구현될 수 있도록 설계되었어요.
 
@@ -22,7 +22,7 @@ OK, but you want to know how the Internet looks, right?
 
 ![그림 1.2](images/internet_3.png)
 
-멋지지 않나요? 그러나 인터넷에 연결되어 있는 모든 기계들을 전부 연결하는 것은 불가능해요. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+멋지지 않나요? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 그림으로 보면 다음과 같습니다.
 
@@ -34,7 +34,7 @@ Imagine that when you type https://djangogirls.org, you send a letter that says:
 
 ![그림 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 그리고 도로명과 도시이름, 우편번호를 쓰는 대신 IP주소라는 것을 써야해요. 컴퓨터는 먼저 DNS(도메인 주소 시스템)에게 djangogirls.org 의 IP주소가 무엇인지 물어봅니다. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
