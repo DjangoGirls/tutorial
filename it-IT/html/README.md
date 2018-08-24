@@ -23,7 +23,7 @@ I template vengono salvati in una cartella `blog/templates/blog`. Quindi prima c
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 E ora crea un file `post_list.html` nella directory `blog/templates/blog` (lascialo in bianco per adesso).
 
