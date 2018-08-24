@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Det är antagligen under Applikationer → Tillbehör → Terminal, men det beror på ditt system. Om du inte hittar det, försök googla det. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Nu borde du se ett vitt eller svart fönster som väntar på dina kommandon.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Om du använder Mac eller Linux ser du antagligen `$`, precis såhär:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Varje kommando kommer att ha detta tecken framför sig och ett mellanslag, men d
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Ditt första kommando (WOHO!)
 
@@ -249,7 +249,7 @@ Nu kan vi skapa en katalog för Django Girls på skrivbordet såhär:
 
 <!--endsec-->
 
-Det här kommandot skapar en mapp med namnet `djangogirls` på ditt skrivbord. Du kan kolla om den är där genom att kolla på ditt skrivbord eller genom att köra kommandot `ls` eller `dir`! Testa. :)
+Det här kommandot skapar en mapp med namnet `djangogirls` på ditt skrivbord. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Testa. :)
 
 > Tips: Om du inte vill skriva samma kommandon om och om igen, testa att trycka på `uppåtpilen` och `nedåtpilen` för att bläddra bland kommandon som du nyligen har använt.
 
