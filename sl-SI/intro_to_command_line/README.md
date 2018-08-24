@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Verjetno se nahaja v Applications → Accessories → Terminal, vendar je to odvisno od tega, katero verzijo Linuxa imaš naloženo. Če je tam ni, pogooglaj. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Pred sabo imaš torej odprto črno ali belo okno, ki čaka, da vanj vpišeš ust
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Če uporabljaš operacijski sistem Mac ali Linux, se prva vrstica v ukazni lupini verjetno začne takole:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Vsak ukaz se bo začel s tem znakom in presledkom, vendar tebi tega ne bo treba 
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Tvoj prvi ukaz :)
 
@@ -249,7 +249,7 @@ Kako pa bi ustvarili nov imenik? Recimo takole:
 
 <!--endsec-->
 
-Ta ukaz bo naredil nov imenik z imenom `vaja` znotraj našega trenutnaga imenika. To lahko preveriš tako, da vpišeš ukaz `ls` oziroma `dir`, ali pa greš pogledat v imenik s pomočjo programa Finder oziroma Explorer! Poskusi. :)
+Ta ukaz bo naredil nov imenik z imenom `vaja` znotraj našega trenutnaga imenika. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Poskusi. :)
 
 > UPORABEN namig: Če nočeš vedno znova vpisovati istega ukaza, lahko s pomočje pritiskanja puščic `gor` in `dol` na tipkovnici, pregledaš nedavno uporabljene ukaze.
 
