@@ -28,7 +28,7 @@ Kada si spremna, prati sljedeće upute.
 
 Nakon što smo pokrenuli naredbu Python, prompt se promijenio u `>>>`. Nama to znači da za sada smijemo koristiti samo naredbe jezika Python. Ne moraš utipkati `>>>` - Python će to činiti za tebe.
 
-Ako u bilokojem trenutku poželiš izaći iz Pythonove konzole, samo utipkaj `exit()` ili iskoristi prečac `Ctrl + Z` na Windowsima, tj. `Ctrl + D` na Macu/Linuxu. Tada više nećeš vidjeti `>>>`.
+If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Tada više nećeš vidjeti `>>>`.
 
 Za sada ne želimo izaći iz Pythonove konzole, već želimo naučiti više o njoj. Započnimo tipkanjem malo matematike, npr. `2 + 3`, i pritiskanjem `enter`-a.
 
@@ -107,7 +107,7 @@ ili zanemarujući taj apostrof kosom crtom unazad (`"`):
 "Runnin' down the hill"
 ```
 
-Fora, zar ne? Da vidiš svoje ime napisano velikim slovima, jednostavno utipkaj:
+Nice, huh? To see your name in uppercase letters, type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ Recimo da želimo stvoriti novu varijablu nazvanu `name`:
 
 Utipkamo name jednako Ola.
 
-Kao što si primijetila, tvoj program nije ništa vratio kao što je to prije činio. Kako onda znamo da varijabla zaista postoji? Jednostavno upiši `name` i pritisni `enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Možeš ju također koristiti u funkcijama:
 5
 ```
 
-Super, zar ne? Naravno, varijable mogu bili bilo što - pa i brojevi! Pokušaj ovo:
+Awesome, right? Now, variables can be anything – numbers too! Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -414,7 +414,7 @@ KeyError: 'age'
 
 Vidi, još jedna greška! Ova je **KeyError** - Python je koristan i kaže ti da ključ `'age'` ne postoji u ovom rječniku.
 
-Kada bi se trebao koristiti rječnik, a kada lista? To je dobro pitanje za promišljanje. Imaj nekakvo rješenje na umu prije nego što pogledaš odgovor u sljedećem retku.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
 
 - Trebaš li samo poredani niz stvari? Odaberi listu.
 - Trebaš li povezati vrijednosti sa ključevima kako bi se poslije efikasno moglo pretraživati pomoću ključa? Odaberi rječnik.
@@ -438,7 +438,7 @@ Kao kod listi, korištenje `len()` metode na rječnicima vraća broj ključ-vrij
 
 Nadam se da sve do sada ima smisla. :) Spremna za još malo zabave s rječnicima? Čitaj dalje za neke nevjerojatne stvari.
 
-Možeš koristiti `pop()` metodu za brisanje stvari iz rječnika. Recimo da želiš pobrisati unos koji odgovara ključu `'favorite_numbers'`. Samo upišeš sljedeću naredbu:
+Možeš koristiti `pop()` metodu za brisanje stvari iz rječnika. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ Uzbuđena za nastavak? :)
 
 > Za čitatelje kod kuće: ovaj je dio pokriven u [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) videu.
 
-Velik dio programiranja uključuje uspoređivanje stvari. Što je najjednostavnije za usporediti? Brojevi, naravno. Idemo vidjeti kako to funkcionira:
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
 {% filename %}command-line{% endfilename %}
 
@@ -557,7 +557,7 @@ Postoje samo dva Boolean objekta:
 - True
 - False
 
-Ali kako bi Python to razumio, uvijek to moraš pisati kao 'True' (prvo slovo veliko, ostala mala). **true, TRUE, and tRUE neće raditi – samo je True ispravno.** (Naravno, isto se odnosi i na 'False'.)
+Ali kako bi Python to razumio, uvijek to moraš pisati kao 'True' (prvo slovo veliko, ostala mala). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
 Booleani također mogu biti varijable! Vidi ovo:
 
@@ -599,7 +599,7 @@ Do sada smo sav svoj Python kod pisali u prevoditelj, što nas ograničava na un
 - Spremi neki kod u novu Python datoteku
 - Pokreni ga!
 
-Da izađeš iz prevoditelja koji smo koristili, jednostavno upiši `exit()` funkciju
+To exit from the Python interpreter that we've been using, type the `exit()` function
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,7 +672,7 @@ A u Windowsovom Powershellu izgledat će ovako:
 
 <!--endsec-->
 
-Ako zapneš, samo pitaj za pomoć.
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
 Sada iskoristi Python za pokretanje koda u datoteci:
 
