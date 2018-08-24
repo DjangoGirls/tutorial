@@ -23,7 +23,7 @@ Vytvorenie šablóny znamená vytvorenie súboru šablóny. Všetko je súbor, v
         └───blog
     
 
-(Možno sa pýtaš prečo potrebujeme dve zložky s menom `blog` - ako neskôr zistíš, je to len užitočna konvencia, ktorá ti uľahčí život keď sa veci začnú komplikovať.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 A teraz vytvor súbor `post_list.html` (zatiaľ ho ponechaj prázdny) v zložke `blog/templates/blog`.
 
