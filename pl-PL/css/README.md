@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1` to selektor CSS. Oznacza to, że nasz styl stosujemy do wszystkich elementów `a` znajdujących się w elemencie `h1`. Czyli gdy mamy coś takiego jak `<h1><a href="">link</a></h1>`, styl `h1 a`, styl zostanie użyty. W tym przypadku nadajemy mu kolor `#FCA205`, czyli pomarańczowy. Or you can put your own color here!
+`h1` to selektor CSS. Oznacza to, że nasz styl stosujemy do wszystkich elementów `a` znajdujących się w elemencie `h1`. Czyli gdy mamy coś takiego jak `<h1><a href="">link</a></h1>`, styl `h1 a`, styl zostanie użyty. W tym przypadku nadajemy mu kolor `#FCA205`, czyli pomarańczowy. Możesz też wybrać swój własny kolor!
 
 W pliku CSS ustalamy styl dla elementów znajdujących się w pliku HTML. Pierwszą metodą rozpoznawania elementu jest jego nazwa. Możesz pamiętać te tagi z rozdziału o HTML. Takie rzeczy jak `a`, `h1` i `body` to wszystko przykłady nazw elementów. Elementy rozpoznajemy również po atrybutach `class` lub `id`. Nazwę klasy lub id ustalasz sama dowolnie. Ta sama nazwa klasy może być przypisana do wielu elementów, ale id musi być unikalne dla całego kodu HTML. Dla przykładu, możesz zidentyfikować następujący tag używając nazwy tagu `a`, klasy `external_link` lub po jego id `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ Teraz dodaj klasę `post` do Twojego `div` zawierającego post bloga:
 </div>
 ```
 
-A teraz dodamy bloki deklaracji do selektorów. Selektory zaczynające się od `.` odnoszą się do klas. W Internecie jest wiele wspaniałych tutoriali dotyczących CSS, które pomogą Tobie zrozumieć następujący kod. For now, copy and paste it into your `blog/static/css/blog.css` file:
+A teraz dodamy bloki deklaracji do selektorów. Selektory zaczynające się od `.` odnoszą się do klas. W Internecie jest wiele wspaniałych tutoriali dotyczących CSS, które pomogą Tobie zrozumieć następujący kod. Na razie skopiuj i wklej do `blog/static/css/blog.css` poniższy kod:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
