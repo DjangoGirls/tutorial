@@ -12,7 +12,7 @@ Kurulum başarı ile tamamlandıktan sonra komut istemini veya powershelli yenid
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Git'i [git-scm.com](https://git-scm.com/)'den indirin ve yönergeleri izleyin.
+Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
 
 > **Not** Eğer OS X 10.6, 10.7 ya da 10.8 kullanıyorsanız, giti buradan indirmeniz gerekmektedir: [OS X Snow Leopard için Git Kurulumu](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
