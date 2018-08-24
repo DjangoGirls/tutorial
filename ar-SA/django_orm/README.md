@@ -26,7 +26,7 @@ QuerySet هو، في جوهره، قائمة الكائنات من نموذج م
 >>>
 ```
 
-أنت الآن في جانغو في وحدة التحكم التفاعلية. أنها تماما مثل موجه بيثون، ولكن مع بعض سحر جانغو الإضافي. :) يمكنك استخدام كافة اوامر بيثون هنا أيضا، بطبيعة الحال.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### كل الكائنات
 
@@ -89,7 +89,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<User: ola>]>
 ```
 
-هذا هو المستخدم الخارق الذي أنشأنا في وقت سابق! دعونا نحصل على مثيل للمستخدم الآن:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ NameError: name 'Post' is not defined
 >>> me = User.objects.get(username='ola')
 ```
 
-كما ترون، نحن الآن`get` ا `User` مع `username` يساوي 'ola'. أنيق! بطبيعة الحال، عليك ضبط هذا الخط لاستخدام اسم المستخدم الخاص بك.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 الآن يمكننا أخيرا إنشاء مشاركة:
 
