@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Ezzel nem adsz hozzá új fájlokat a projektedhez, csak az Interneten létező fájlokra hivatkozol. Nyisd meg újra a weboldaladat, és frissítsd! Itt is van!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![14.1 ábra](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Most nézzük meg kicsit közelebbről ezeket a "**statikus fájl**"-nak nevezet
 
 ### Hová pakoljuk a statikus fájlokat?
 
-Amikor -- kicsit korábban -- a collectstatic parancsot futtattuk a szerveren, Django már tudta, hol találja a statikus fájlokat a beépíttett "admin" alkalmazáshoz. Most csak annyit kell tennünk, hogy a saját, `blog` alkalmazásunkhoz hozzáadunk néhány statikus fájlt.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 Ehhez pedig létre kell hozunk egy "`static`" nevű könyvtárat a blog applikáción belül:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-A `h1 a` egy CSS szelektor. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Ebben az esetben azt mondjuk, hogy változtasd meg a kiválasztott elem színét `#FCA205`-re, ami narancssárgát jelent. Természetesen nyugodtan használd a saját színedet itt!
+A `h1 a` egy CSS szelektor. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Ebben az esetben azt mondjuk, hogy változtasd meg a kiválasztott elem színét `#FCA205`-re, ami narancssárgát jelent. Or you can put your own color here!
 
 A CSS fájlban mondjuk meg, hogy nézzenek ki a HTML fájl elemei. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. A class és az id olyan nevek, amelyeket te adhatsz meg az elemeknek. A class attribútum elemek egy csoportjára vonatkozik, míg az id-val kifejezetetten egy elemet tudunk beazonosítani. A következő tag például beazonosítható akár az "`a`" tag névvel, az `external_link` class-szal vagy a `link_to_wiki_page` id-val:
 
@@ -202,7 +202,7 @@ Menj végig és nevezd el egy részét a HTML kódodnak. Adj egy `page-header` n
 </div>
 ```
 
-Most pedig adjunk stílusblokkokat a különböző szelektorokhoz. A `.` -tal kezdődő szelektorok classokra utalnak. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Most csak másold ki és illeszd be a `blog/static/css/blog.css` fájlodba:
+Most pedig adjunk stílusblokkokat a különböző szelektorokhoz. A `.` -tal kezdődő szelektorok classokra utalnak. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
