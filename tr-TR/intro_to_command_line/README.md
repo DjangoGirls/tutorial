@@ -34,7 +34,7 @@ Uygulamalar → Araçlar →Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Muhtemelen Uygulamalar → Donatılar → Terminal altında olmalı, fakat sistemler arası farklılık gösterebilir. Eğer orada değilse İnternet'te arayın. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Muhtemelen Uygulamalar → Donatılar → Terminal altında olmalı, fakat siste
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Eğer Mac veya GNU/Linux kullanıyorsanız, yüksek ihtimalle `$` işareti göreceksiniz, tıpkı bunun gibi:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -70,7 +70,7 @@ Tüm komutlar bu işaret ve bir boşluktan sonra gelir fakat bunu yazmak zorunda
 
 Başında `$` veya `>` içeren kısımlar *komut satırı istemi* veya kısaca *komut istemi*'dir. Buraya bir şeyler girilir.
 
-Bu kılavuzda bir komut girmeniz istendiğinde, biz `$` veya `>` ekleyeceğiz, genellikle sola doğru. Sol tarafı göz ardı edebilir ve işlemi başlatan komutu girebilirsiniz.
+Bu kılavuzda bir komut girmeniz istendiğinde, biz `$` veya `>` ekleyeceğiz, genellikle sola doğru. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## İlk komutunuz (Yaşasın!)
 
@@ -247,7 +247,7 @@ Uygulamalı yapmak için masaüstünüzde bir dizin oluşturmaya ne dersiniz? Bu
 
 <!--endsec-->
 
-Bu küçük komut masaüstünüzde `uygulama` isimli bir klasör oluşturacaktır. Orada olup olmadığını kontrol etmek için `ls` veya `dir` komutlarını kullanabilirsiniz! Deneyin. :)
+Bu küçük komut masaüstünüzde `uygulama` isimli bir klasör oluşturacaktır. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Deneyin. :)
 
 > Profesyonel ipucu: Eğer aynı komutları tekrar tekrar yazmak istemiyorsanız, `yukarı ok` ve `aşağı ok` tuşlarına basarak yazdığınız komutlar arasında geçiş yapabilirsiniz.
 
