@@ -26,7 +26,7 @@
 >>>
 ```
 
-Είστε τώρα στην διαδραστική κονσόλα του Django. Είναι ακριβώς όπως το παράθυρο εντολών της Python, αλλά με μερική επιπρόσθετη μαγεία Django. :) Μπορείτε να χρησιμοποιήσετε όλες τις εντολές Python εδώ επίσης, φυσικά.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### Όλα τα αντικείμενα
 
@@ -89,7 +89,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<User: ola>]>
 ```
 
-Αυτός είναι ο υπέρ-χρήστης που δημιουργήσαμε νωρίτερα! Ας λάβουμε μία παρουσία του χρήστη τώρα:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ NameError: name 'Post' is not defined
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 Now we can finally create our post:
 
