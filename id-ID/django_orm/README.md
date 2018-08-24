@@ -26,7 +26,7 @@ Hasilnya akan seperti ini:
 >>>
 ```
 
-Anda sekarang ada di konsol interaktif Django. Ini sama seperti prompt Python, tapi dengan beberapa tambahan Django magic. :) Anda bisa menggunakan semua perintah Python di sini juga, tentu saja.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### Semua benda
 
@@ -88,7 +88,7 @@ Pengguna apa yang ada di database kami? Coba ini:
  <QuerySet [<User: ola> ] & gt;
 ```
 
-Ini adalah superuser yang kita buat tadi! Mari dapatkan contoh pengguna sekarang:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename%} baris perintah {% endfilename%}
 
@@ -96,15 +96,16 @@ Ini adalah superuser yang kita buat tadi! Mari dapatkan contoh pengguna sekarang
 & gt; & gt; & gt; saya = User.objects.get (username = 'ola')
 ```
 
-Seperti yang Anda lihat, sekarang kita ` mendapatkan </ 0> a <code> Pengguna </ 0> dengan <code> nama pengguna </ 0> yang sama dengan 'ola'. Rapi! Tentu saja, Anda harus menyesuaikan baris ini untuk menggunakan username Anda sendiri.</p>
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
-<p>Sekarang kita akhirnya bisa membuat tulisan kita:</p>
+Sekarang kita akhirnya bisa membuat tulisan kita:
 
-<p>{% filename%} baris perintah {% endfilename%}</p>
+{% filename%} baris perintah {% endfilename%}
 
-<pre><code class="python">>>> Post.objects.create(author=me, title='Sample title', text='Test')
+```python
+>>> Post.objects.create(author=me, title='Sample title', text='Test')
 <Post: Sample title>
-`</pre> 
+```
 
 Hore! Ingin memeriksa apakah berhasil?
 
