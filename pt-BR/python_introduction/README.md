@@ -28,7 +28,7 @@ Para abrir um prompt de comando do Python, digite `python` no Windows ou `python
 
 Depois de executar o comando python, o prompt mudou para `>>>`. Isso significa que, por enquanto, só podemos executar comandos na linguagem Python. Você não precisa digitar `>>>` - o Python fará isso por você.
 
-Se a qualquer momento você quiser sair do prompt do Python, digite `exit()` ou use o atalho `Ctrl + Z` no Windows e `Ctrl + D` no Mac ou Linux. Fazendo isso, você não vai mais ver o `>>>`.
+If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Fazendo isso, você não vai mais ver o `>>>`.
 
 Por enquanto, não vamos sair do prompt do Python. Queremos saber mais sobre ele. Para começar, vamos digitar um pouco de matemática, como `2 + 3`, e clicar `enter`.
 
@@ -107,7 +107,7 @@ ou "escapando" a aspa simples (o que sinaliza para o Python que aquele sinal é 
 "Roda d'água"
 ```
 
-Legal, hein? Para ver seu nome em letras maiúsculas, basta digitar:
+Nice, huh? To see your name in uppercase letters, type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ Digamos que queremos criar uma nova variável chamada `name`:
 
 Digitamos: name igual Ola.
 
-Como você deve ter percebido, a última linha de código não retornou nada como nos exemplos anteriores. Então como vamos saber se a variável realmente existe? Basta digitar `name` e clicar `enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Você pode usá-la também em funções:
 5
 ```
 
-Incrível, né? Variáveis podem ser qualquer coisa, então podem ser números também! Tente isso:
+Awesome, right? Now, variables can be anything – numbers too! Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -414,7 +414,7 @@ KeyError: 'age'
 
 Olha, outro erro! Esse é um **KeyError**. O Python é bastante prestativo e te diz que a chave `'age'` não existe no nesse dicionário.
 
-Você deve estar se perguntando quando deve usar um dicionário ou uma lista, certo? Boa pergunta! A resposta rápida é:
+When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
 
 - Você precisa de uma sequência ordenada de itens? Use uma lista.
 - Você precisa associar valores a chaves para poder procurá-los eficientemente (pela chave) mais tarde? Use um dicionário.
@@ -438,7 +438,7 @@ Como nas listas, usar a função `len()` em dicionários retorna o número de pa
 
 Espero que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários?
 
-Você pode usar o método `pop()` para deletar um item do dicionário. Se quiser excluir a entrada correspondente à chave `'favorite_numbers'`, por exemplo, basta digitar o seguinte comando:
+Você pode usar o método `pop()` para deletar um item do dicionário. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ Animada para a próxima parte? :)
 
 > Para leitoras em casa: esta seção é abordada no vídeo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-Grande parte da programação consiste em comparar coisas. O que é mais fácil comparar? Números, é claro. Vamos ver como funciona:
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
 {% filename %}command-line{% endfilename %}
 
@@ -557,7 +557,7 @@ Existem apenas dois objetos booleanos:
 - True (verdadeiro)
 - False (falso)
 
-Para que o Python entenda, você precisa escrever exatamente 'True' (primeira letra maiúscula e as outras minúsculas -- mas sem as aspas). **true, TRUE ou tRUE não vão funcionar - só True está correto.** (A mesma coisa vale para 'False', obviamente.)
+Para que o Python entenda, você precisa escrever exatamente 'True' (primeira letra maiúscula e as outras minúsculas -- mas sem as aspas). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
 Booleanos também podem ser variáveis! Veja:
 
@@ -599,7 +599,7 @@ Até agora, escrevemos todos os códigos no interpretador de Python, que nos lim
 - Salvar algum código em um novo arquivo de Python
 - Executar o código!
 
-Para sair do interpretador de Python que estamos usando, use a função `exit()`
+To exit from the Python interpreter that we've been using, type the `exit()` function
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,7 +672,7 @@ E no Windows Powershell, é assim:
 
 <!--endsec-->
 
-Se você tiver alguma dificuldade, é só pedir ajuda.
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
 Agora use o interpretador de Python para executar o código que está no arquivo, assim:
 
