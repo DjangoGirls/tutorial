@@ -12,7 +12,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-گیت را از  git-scm.com </ 0> دانلود کنید و فقط دستورالعمل ها را دنبال کنید.</p> 
+Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
 
 > ** نکته </ 0> اگر شما OS X 10.6، 10.7 یا 10.8 را اجرا می کنید، باید نسخه GIT را از اینجا نصب کنید:  نصب Git برای OS X Snow Leopard </ 1></p> </blockquote> <!--endsec-->
 > 
