@@ -4,7 +4,7 @@
 
 ## URLとは？
 
-URLは簡単に言えばWeb上のアドレスです。 サイトのURLは、ブラウザのアドレスバーで見ることができます。 （そう、 `127.0.0.1:8000` や `http://djangogirls.com` がURLです。）
+A URL is a web address. サイトのURLは、ブラウザのアドレスバーで見ることができます。 （そう、 `127.0.0.1:8000` や `http://djangogirls.com` がURLです。）
 
 ![URL](images/url.png)
 
