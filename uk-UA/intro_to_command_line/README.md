@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Скоріш за все Додатки → Стандартні → Термінал, але це може залежати від вашої системної версії. Якщо тут його немає, просто загугліть. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Якщо ви працюєте на Mac або на Linux, ви напевно побачите `$`, на зразок:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Go to Applications → Utilities → Terminal.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Ваша перша команда (ЙОЙ!)
 
@@ -249,7 +249,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-Ця коротка команда створить папку з іменем `practice` на вашому робочому столі. Може перевірити чи є вона там, просто глянувши на свій Робочий стіл або запустивши команду `ls` або `dir`! Спробуйте. :)
+Ця коротка команда створить папку з іменем `practice` на вашому робочому столі. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Спробуйте. :)
 
 > ПРОФІ хитрощі: Якщо ви не хочете кожного разу набирати одну й ту ж команду, спробуйте натиснути кнопки `стрілка вгору` та `стрілка вниз` на своїй клавіатурі щоб повторити нещодавно використовувані команди.
 
