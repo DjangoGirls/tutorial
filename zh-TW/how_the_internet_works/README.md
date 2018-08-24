@@ -6,7 +6,7 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-你需要明白的第一件事就是，其實一個網站就是一堆存在硬碟的檔案啦。 就像是你電腦裡的眾多影片、音樂和照片。 即便如此，網站的組成中還是有一部分是獨一無二的：他們都含有一種叫做「HTML」的程式碼。
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. 就像是你電腦裡的眾多影片、音樂和照片。 即便如此，網站的組成中還是有一部分是獨一無二的：他們都含有一種叫做「HTML」的程式碼。
 
 如果你還不熟悉編程，你一開始可能會有點難理解什麼叫做 HTML，但是你的網站瀏覽器(像是 Chrome, Safari, Firefox 等等) 超愛它。 網站瀏覽器就是設計出來讀懂 Html 的，遵循它的架構及切切實實地展示你希望瀏覽器展示的所有檔案。
 
@@ -22,7 +22,7 @@ OK, but you want to know how the Internet looks, right?
 
 ![Figure 1.2](images/internet_3.png)
 
-這真是無法想像，對吧？ 但是很明顯地，要在任意兩台機器間都有電纜連結這件事本身是不可能的。 So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+這真是無法想像，對吧？ But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 這件事看起來就像是這樣：
 
@@ -34,7 +34,7 @@ Imagine that when you type https://djangogirls.org, you send a letter that says:
 
 ![Figure 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 除了有國家、郵遞區號、城市與街道名稱所組成的地址，我們也使用 IP 作為地址。 你的電腦會先要求網域系統 (DNS - Domain Name System) 將 djangogirls.org 這個網域轉換為 IP。 It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
