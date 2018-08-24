@@ -26,7 +26,7 @@ Etkisi aşağıdaki gibi olmalı:
 >>>
 ```
 
-Şu an Django'nun etkileşimli konsolundayız. Python istemine benziyor, ama biraz Django büyüsü eklenmiş :) Kuşkusuz burada da Python komutlarının tümünü kullanabiliriz.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### Tüm nesneler
 
@@ -89,7 +89,7 @@ Veritabanımızda hangi kullanıcılar var? Şu şekilde görebiliriz:
 <QuerySet [<User: zeynep>]>
 ```
 
-Daha önce yarattığımız süper kullanıcı! Şimdi veritabanından User (kullanıcı) nesnesi alalım:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -97,7 +97,7 @@ Daha önce yarattığımız süper kullanıcı! Şimdi veritabanından User (kul
 ben = User.objects.get(username='zeynep')
 ```
 
-Gördüğünüz gibi, `username` (kullanıcı adı) özelliği 'zeynep' olan `User` nesnesini `get` ile aldık. Müthiş! Tabiki, kullanıcı adını kendi kullanıcı adınıza göre ayarlamalısınız.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 Gönderimizi artık kaydedebiliriz:
 
