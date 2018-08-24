@@ -34,7 +34,7 @@ Przejdź do Aplikacje → Narzędzia → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Prawdopodobnie gdzieś w menu Aplikacje → Akcesoria → Terminal, ale to może zależeć od wersji Twojego systemu. Jeżeli tam nie znajdziesz, możesz spróbować zapytać Google'a. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Teraz powinnaś zobaczyć białe lub czarne okno, które czeka na Twoje poleceni
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+Jeżeli używasz Maca lub Linuksa, powinnaś zobaczyć `$`, tak jak poniżej:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Każde polecenie będzie poprzedzone tym znakiem oraz jedną spacją, ale nie mu
 
 Część do znaku `$` lub `>` razem z nim nazywana jest *znakiem zachęty wiersza polecenia* lub skrótowo *znakiem zachęty (promptem)*. Jego celem jest zachęcić Ciebie do wpisania jakiegoś polecenia.
 
-W tutorialu, jeżeli będziemy chciały byś wpisała komendę, umieścimy przed nią również `$` lub `>`, a czasami nawet resztę znaku zachęty. Ignore the left part and only type in the command, which starts after the prompt.
+W tutorialu, jeżeli będziemy chciały byś wpisała komendę, umieścimy przed nią również `$` lub `>`, a czasami nawet resztę znaku zachęty. Możesz śmiało zignorować lewą część i wpisać komendę zaczynającą się za promptem.
 
 ## Twoja pierwsza komenda! 
 
@@ -249,7 +249,7 @@ Co powiesz na stworzenie folderu cwiczenie na swoim pulpicie? Zrób to w ten spo
 
 <!--endsec-->
 
-To niepozorne polecenie doda do Twojego pulpitu folder o nazwie `cwiczenie`. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Spróbuj. :)
+To niepozorne polecenie doda do Twojego pulpitu folder o nazwie `cwiczenie`. Możesz sprawdzić, czy na pewno został tam dodany - spójrz na swój pulpit albo uruchom polecenie `ls` lub `dir`! Spróbuj. :)
 
 > PRO tip: Jeżeli nie chcesz w kółko wpisywać tych samych poleceń, wciśnij na klawiaturze klawisz ze `strzałką w górę` i `strzałką w dół` aby przewinąć listę poprzednio użytych poleceń.
 
