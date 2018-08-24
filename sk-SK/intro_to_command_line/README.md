@@ -34,7 +34,7 @@ Choď do Aplikácie → Nástroje → Terminál.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Pravdepodobne ho nájdeš pod Aplikácie → Príslušenstvo → Terminál, ale to závisí na tvojom systéme. Ak to tam nie je, tak si to jednoducho vygoogli. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Teraz by si už mala vidieť biele alebo čierne okno, ktoré čaká na tvoje pr
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Ak si na Macu alebo Linuxe, zrejme uvidíš `$`, presne takto:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Každý príkaz budeš zadávať za tento znak a jednu medzeru. Ty to ale písa�
 
 Časť po a vrátane `$` alebo `>` sa nazýva *príkazový riadok*, alebo *prompt* skrátene. Je to miesto kde zadávaš príkazy.
 
-V tutoriále, keď chceme, aby si zadala príkaz, použijeme `$` alebo `>`, a občas aj väčšmej doľava. Môžeš ignorovať ľavú čast a zadaj príkaz, ktorý sa začína po prompte.
+V tutoriále, keď chceme, aby si zadala príkaz, použijeme `$` alebo `>`, a občas aj väčšmej doľava. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Tvoj prvý príkaz (Hurá!)
 
@@ -249,7 +249,7 @@ A je to!
 
 <!--endsec-->
 
-Tento príkazík vytvorí adresár s názvom `pokus` na tvojej ploche. Či je adresár naozaj tam môžeš zistiť jednoducho pohľadom na Plochu alebo spustením príkazu `ls` alebo `dir`! Vyskúšaj to. :)
+Tento príkazík vytvorí adresár s názvom `pokus` na tvojej ploche. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Vyskúšaj to. :)
 
 > Profi tip: ak sa ti nechce vypisovať stále dookola tie isté príkazy, skús sa stlačením `šípky hore` a `šípky dole` vrátiť k nedávno použitým príkazom.
 
