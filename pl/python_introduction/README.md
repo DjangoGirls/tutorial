@@ -28,7 +28,7 @@ Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie
 
 Po uruchomieniu Pythona wiersz polecenia wygląda tak: `>>>`. Jest to sygnał dla nas, że od tego momentu możemy używać wyłącznie instrukcji języka Python. Nie musisz wpisywać `>>>` - Python zrobi to za Ciebie.
 
-Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, po prostu wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Wtedy już nie będziesz więcej widzieć `>>>`.
+Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Wtedy już nie będziesz więcej widzieć `>>>`.
 
 Teraz jeszcze nie chcemy wyjść z konsoli Pythona. Chcemy się jeszcze kilku rzeczy nauczyć. Zacznijmy od wpisania działania matematycznego, np. `2 + 3` i naciśnięcia `entera`.
 
@@ -107,7 +107,7 @@ lub poprzedzając apostrof odwróconym ukośnikiem (``):
 "Runnin' down the hill"
 ```
 
-Fajnie, co? Możesz także wyświetlić swoje imię wielkimi literami. Wpisz po prostu:
+Fajnie, co? Możesz także wyświetlić swoje imię wielkimi literami. Wpisz:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ Przypuśćmy, że chcemy stworzyć nową zmienną zwaną `imie`:
 
 Napisałyśmy własnie, że imie równa się Ola.
 
-Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robił wcześniej. Zatem skąd wiemy, że zmienna faktycznie istnieje? Po prostu wpisz `imie` i wciśnij `enter`:
+Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robił wcześniej. Zatem skąd wiemy, że zmienna faktycznie istnieje? Wpisz `imie` i wciśnij `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Możesz także używać jej w funkcjach:
 5
 ```
 
-Super, co? Oczywiście zmienne mogą być czymkolwiek - liczbami również! Spróbuj:
+Super, co? Zmienne mogą być czymkolwiek - liczbami również! Spróbuj:
 
 {% filename %}command-line{% endfilename %}
 
@@ -438,7 +438,7 @@ Podobnie jak w przypadku list, metoda `len()` zwraca liczbę par klucz-wartość
 
 Mam nadzieję, że jak dotąd jest to zrozumiałe. :) Gotowa na dalszą zabawę ze słownikami? W następnej linijce czeka nas jeszcze więcej niesamowitości.
 
-Za pomocą polecenia `pop()` możesz usunąć element ze słownika. Założmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Po prostu wpisz następującą instrukcję:
+Za pomocą polecenia `pop()` możesz usunąć element ze słownika. Założmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Wpisz następującą instrukcję:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ Gotowa na następną część? :)
 
 > Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-Istotną częścią programowania jest porównywanie różnych rzeczy. Co najłatwiej porównać? Liczby oczywiście. Zobaczmy, jak to działa:
+Istotną częścią programowania jest porównywanie różnych rzeczy. Co najłatwiej porównać? Liczby! Zobaczmy, jak to działa:
 
 {% filename %}command-line{% endfilename %}
 
@@ -557,7 +557,7 @@ Są tylko dwa obiekty logiczne:
 - True - prawda
 - False - fałsz
 
-Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (oczywiście to samo dotyczy 'False'.)
+Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (to samo dotyczy False.)
 
 Wartości logiczne mogą także być zmiennymi! Zobacz tutaj:
 
@@ -599,7 +599,7 @@ Do tej pory pisałyśmy cały nasz kod Pythona w interpreterze, co zmusza nas do
 - Zapisać kod do nowego pliku Pythona
 - Uruchomić go!
 
-Aby wyjść z używanego przez nas interpretera Pythona, użyj po prostu funkcji `exit()`
+Aby wyjść z używanego przez nas interpretera Pythona, użyj funkcji `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,7 +672,7 @@ A w Windows Powershell będzie tak:
 
 <!--endsec-->
 
-Jeżeli coś jest dla Ciebie niejasne, nie wahaj się poprosić o pomoc.
+Jeżeli utknęłaś, poproś o pomoc. To właśnie od tego są mentorzy!
 
 Teraz użyj Pythona do uruchomienia kodu z pliku w następujący sposób:
 

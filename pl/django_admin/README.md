@@ -33,7 +33,7 @@ Aby móc się zalogować, musisz utworzyć konto administratora (*superuser*) - 
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Po wyświetleniu komunikatu, wpisz swoją nazwę użytkownika (małymi literami, bez spacji), adres e-mail i hasło. ** Nie martw się, że nie widzisz hasła, które wpisujesz - tak powinno być. ** Po prostu wpisz je i naciśnij klawisz `Enter`, aby kontynuować. Dane wyjściowe powinny wyglądać tak (gdzie nazwa użytkownika i adres e-mail powinny być Twoje):
+Po wyświetleniu komunikatu, wpisz swoją nazwę użytkownika (małymi literami, bez spacji), adres e-mail i hasło. ** Nie martw się, że nie widzisz hasła, które wpisujesz - tak powinno być.** Wpisz je i naciśnij klawisz `Enter`, aby kontynuować. Dane wyjściowe powinny wyglądać tak (gdzie nazwa użytkownika i adres e-mail powinny być Twoje):
 
     Username: admin
     Email address: admin@admin.com
@@ -46,7 +46,7 @@ Wróć do przeglądarki. Zaloguj się za pomocą danych logowania administratora
 
 ![Admin Django](images/django_admin3.png)
 
-Przejdź do Postów i poeksperymentuj z nimi trochę. Dodaj pięć lub sześć wpisów na blogu. Nie przejmuj się zawartością - możesz po prostu skopiować i wkleić tekst z tego tutoriala, aby zaoszczędzić czas. :)
+Przejdź do Postów i poeksperymentuj chwilę. Dodaj pięć czy sześć artykułów. Nie martw się ich zawartością - możesz skopiować i wkleić chociażby trochę tekstu z tego tutoriala, by zaoszczędzić czas. :)
 
 Upewnij się, że co najmniej dwa lub trzy posty (ale nie wszystkie) mają ustawioną datę publikacji. Będzie to pomocne później.
 
