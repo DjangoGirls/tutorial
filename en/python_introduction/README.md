@@ -633,7 +633,7 @@ And on Windows Powershell, it will be like this:
 <!--endsec-->
 
 
-If you get stuck, ask for help.
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
 Now use Python to execute the code in the file like this:
 
