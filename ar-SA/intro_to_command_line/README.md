@@ -34,7 +34,7 @@
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-أنها على الأرجح تحت تطبيقات ← اكسسوارات ← تيرمينال، ولكن قد تعتمد على النظام الخاص بك. إذا لم يكن هناك، فقط بحث في جوجل
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-إذا كنت على ماك أو لينكس، ربما تشاهد `` $، تماما مثل هذا:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@
 
 يطلق على الجزء`$` أو `>` أو *موجه سطر الأوامر*، أو *موجه* كإسم قصير. فإنه يطالبك بإدخال شيء هناك.
 
-في البرنامج التعليمي، عندما نريد منك أن تكتب أمر ما ، سوف نشمل `$` أو `>`، وأحيانا أكثر إلى اليسار. يمكنك تجاهل الجزء الأيسر وما عليك سوى كتابة الأمر الذي يبدأ بعد الموجه.
+في البرنامج التعليمي، عندما نريد منك أن تكتب أمر ما ، سوف نشمل `$` أو `>`، وأحيانا أكثر إلى اليسار. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## الأمر الأول الخاص بك (ياي!)
 
@@ -249,7 +249,7 @@
 
 <!--endsec-->
 
-سيؤدي هذا الأمر الصغير إلى إنشاء مجلد باسم `practice` على سطح المكتب. يمكنك التحقق إذا كان هناك من خلال النظر في سطح المكتب الخاص بك أو بواسطة تشغيل أمر `dir` أو `ls`! جربها. :)
+سيؤدي هذا الأمر الصغير إلى إنشاء مجلد باسم `practice` على سطح المكتب. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! جربها. :)
 
 > نصيحة للمحترفين: إذا كنت لا تريد كتابة الأوامر نفسها مرارا وتكرارا، فجرب الضغط على `up arrow` و `down arrow` على لوحة المفاتيح للتنقل عبر الأوامر المستخدمة مؤخرا.
 
