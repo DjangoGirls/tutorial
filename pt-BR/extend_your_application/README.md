@@ -71,9 +71,9 @@ urlpatterns = [
 
 A parte `post/<int:pk>/` especifica um padrão de URL – vamos explicar:
 
-- `post/` significa apenas que a URL deve começar com a palavra **post** seguida por **/**. Até aqui, tudo bem.
+- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – essa parte é um pouco mais complicada. Ela nos diz que o Django espera um objeto do tipo inteiro e que vai transferi-lo para a view como uma variável chamada `pk`.
-- `/` – por fim, precisamos adicionar uma **/** ao final da nossa URL.
+- `/` – then we need a **/** again before finishing the URL.
 
 Isso significa que se você digitar `http://127.0.0.1:8000/post/5/` em seu navegador, o Django vai entender que você está procurando uma *view* chamada `post_detail` e vai transferir a informação de que `pk` é igual a `5` para essa *view*.
 
@@ -81,7 +81,7 @@ Legal, adicionamos um novo padrão de URL para `blog/urls.py`! Vamos atualizar a
 
 ![AttributeError](images/attribute_error2.png)
 
-Você lembra qual é o próximo passo? Claro: adicionar uma view!
+Do you remember what the next step is? It's adding a view!
 
 ## Adicionando a view de detalhes do post
 
@@ -99,7 +99,7 @@ Mas este código tem um problema. Se não houver nenhum `Post` com a `chave prim
 
 ![erro DoesNotExist](images/does_not_exist2.png)
 
-Não queremos isso! Mas é claro que o Django tem algo para lidar com isso por nós: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro -- `Page Not Found 404` (página não encontrada).
+Não queremos isso! But luckily Django comes with something that will handle that for us: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro -- `Page Not Found 404` (página não encontrada).
 
 ![Página não encontrada](images/404_2.png)
 
