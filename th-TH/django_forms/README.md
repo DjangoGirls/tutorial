@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-ก่อนอื่น เราต้องอิมพอร์ท Django form ซะก่อน (`from django import forms`) และแน่นอน โมเดล `Post` ของเรา (`form .models import Post`)
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm` ใช่อย่างที่คุณสงสัยนั่นแหละ, มันคือชื่อฟอร์มของเรานั่นเอง เราต้องบอกให้ Django รู้ว่า ฟอร์มของเราคือ `ModelForm` (Django จะร่ายมนต์บางอย่างให้เรา) - `forms.ModelForm` จะเป็นผู้รับผิดชอบดังกล่าว
 
@@ -85,7 +85,7 @@ Note that we want to call our new view `post_new`. The class `"glyphicon glyphic
 </html>
 ```
 
-หลังจากบันทึกไฟล์ และโหลดหน้าเว็บ http://127.0.0.1:8000 อีกครั้ง คุณจะเจอกับข้อผิดพลาด `NoReverseMatch`, คุ้นๆ ไหม?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## ความปลอดภัย
 
-การสร้างโพสต์ใหม่โดยแค่คลิกที่ลิงค์นั้น มันสุดยอดมาก! แต่ตอนนี้ ใครก็ตามที่เข้ามายังหน้าเว็บของคุณจะสามารถเพิ่มโพสต์ใหม่ได้ และนั่นคงจะไม่ใช่สิ่งที่คุณต้องการ งั้นเรามาทำให้ปุ่มนี้มันแสดงให้เฉพาะเราที่เห็นมันได้เท่านั้น
+Being able to create new posts by clicking a link is awesome! แต่ตอนนี้ ใครก็ตามที่เข้ามายังหน้าเว็บของคุณจะสามารถเพิ่มโพสต์ใหม่ได้ และนั่นคงจะไม่ใช่สิ่งที่คุณต้องการ งั้นเรามาทำให้ปุ่มนี้มันแสดงให้เฉพาะเราที่เห็นมันได้เท่านั้น
 
 ในไฟล์ `blog/templates/blog/base.html` ตรงส่วน `page-header` `div` ควรมีหน้าตาแบบนี้:
 
