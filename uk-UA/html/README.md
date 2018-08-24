@@ -23,7 +23,7 @@ HTML розшифровується як "Мова розмітки гіперт
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 А тепер створіть файл `post_list.html` (просто залиште його поки що пустим) всередині папки `blog/templates/blog`.
 
