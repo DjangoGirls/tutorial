@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Вероятно, командная строка скрывается по адресу: Приложения → Стандартные → Терминал, но это может зависеть от конкретной системы. Если не сможешь найти - Google поможет. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Если ты используешь Mac или Linux, то, вероятно, увидишь символ `$`:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Go to Applications → Utilities → Terminal.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Твоя первая команда (УРА!)
 
@@ -249,7 +249,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-Эта маленькая команда создаст папку с именем `practice` на рабочем столе. Ты можешь проверить, появилась ли она, просто взглянув на рабочий стол или введя команду `ls` / `dir`! Попробуй. :)
+Эта маленькая команда создаст папку с именем `practice` на рабочем столе. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Попробуй. :)
 
 > ПРО совет: Если ты не хочешь вводить одни и те же команды снова и снова, попробуйте нажать на `стрелку вверх` и `стрелку вниз` на клавиатуре, чтобы просмотреть недавно использованные команды.
 
