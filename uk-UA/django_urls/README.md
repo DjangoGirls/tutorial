@@ -4,7 +4,7 @@ We're about to build our first webpage: a homepage for your blog! But first, let
 
 ## Що таке URL?
 
-URL - це просто веб-адреса. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` - це URL! And `https://djangogirls.org` is also a URL.)
+A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` - це URL! And `https://djangogirls.org` is also a URL.)
 
 ![Url](images/url.png)
 
