@@ -22,6 +22,6 @@ Bayangkan pembawa mel dengan surat. Dia sedang berjalan di jalan dan memeriksa s
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Mungkin pengguna diminta mengubah sesuatu dalam data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-Sudah tentu, perihalan di atas sedikit banyak dipermudahkan, tetapi anda tidak perlu mengetahui semua perkara teknikal lagi. Mempunyai idea umum cukup.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Jadi, bukannya menyelam terlalu banyak ke dalam butiran, kami hanya akan mula membuat sesuatu dengan Django dan kami akan mempelajari semua bahagian penting di sepanjang jalan!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
