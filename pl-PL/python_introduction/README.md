@@ -672,7 +672,7 @@ A w Windows Powershell będzie tak:
 
 <!--endsec-->
 
-Jeżeli utknęłaś, poproś o pomoc. To właśnie po od tego są mentorzy!
+Jeżeli utknęłaś, poproś o pomoc. To właśnie od tego są mentorzy!
 
 Teraz użyj Pythona do uruchomienia kodu z pliku w następujący sposób:
 
