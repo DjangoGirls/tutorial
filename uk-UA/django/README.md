@@ -22,6 +22,6 @@ When a request comes to a web server, it's passed to Django which tries to figur
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Можливо, користувач може попросити зробити певні зміни даних? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-Звичайно, вище наведені пояснення є трохи спрощеними, але вам не потрібно знати усіх технічних деталей поки що. Достатньо мати загальне уявлення.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Отже замість того, щоб надто занурюватись у деталі, ми просто почнемо щось створювати із використанням Django і вивчимо усі важливі складові на цьому шляху!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
