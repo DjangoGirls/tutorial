@@ -33,7 +33,7 @@ admin.site.register(Post)
 >     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
 >     
 > 
-> เมื่อได้รับแจ้ง ให้พิมพ์ username (ด้วยตัวพิมพ์เล็ก ไม่เว้นช่องว่าง) อีเมล์ และรหัสผ่าน **คุณไม่ต้องกังวลใจที่คุณไม่เห็นรหัสผ่านที่คุณกำลังพิมพ์ – มันควรจะเป็นแบบนั้นแหละ** แค่พิมพ์รหัสผ่านให้ครบและถูกต้องแล้วกด Enter เพื่อดำเนินการต่อ ผมลัพธ์ควรมีหน้าตาแบบนี้ (username และอีเมล์ควรจะเป็นของคุณเอง)
+> เมื่อได้รับแจ้ง ให้พิมพ์ username (ด้วยตัวพิมพ์เล็ก ไม่เว้นช่องว่าง) อีเมล์ และรหัสผ่าน **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. ผมลัพธ์ควรมีหน้าตาแบบนี้ (username และอีเมล์ควรจะเป็นของคุณเอง)
 > 
 >     Username: admin
 >     Email address: admin@admin.com
@@ -46,7 +46,7 @@ admin.site.register(Post)
 > 
 > ![Django admin](images/django_admin3.png)
 > 
-> ไปยัง Posts และเริ่มลองเล่นกับมันซักหน่อย เพิ่มบล็อกโพสต์ห้าหรือหกอัน ไม่ต้องสนใจเกี่ยวกับเนื้อหา - คุณสามารถก๊อปและวางเนื้อหาบางส่วนจากในบทเรียนนี้มาใช้ได้เลยเพื่อประหยัดเวลา :)
+> Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can copy-paste some text from this tutorial to save time. :)
 > 
 > ตรวจสอบให้แน่ใจว่า อย่างน้อยสองหรือสามโพสต์ (แต่ไม่ต้องทั้งหมด) มีการตั้งค่าวันที่เผยแพร่ เราจะใช้ประโยชน์จากส่วนนี้ในภายหลัง
 > 
