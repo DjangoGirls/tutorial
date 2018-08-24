@@ -6,6 +6,6 @@ Czas utworzyć darmowe konto (opcja "Beginner" - dla początkujących) na Python
 
 ## Tworzenie tokenu PythonAnywhere API
 
-Tę operację będziesz musiała wykonać tylko raz. Kiedy już zakończysz tworzenie konta na PythonAnywhere, zostaniesz przeniesiona do strony nawigacyjnej. Znajdź u góry na prawo link do twojego konta (ang. Account), a następnie wybierz zakładkę o nazwie "API Token" i wciśnij przycisk, który utworzy nowy token API (ang. "Create new API token").
+Tę operację będziesz musiała wykonać tylko raz. Kiedy już zakończysz tworzenie konta na PythonAnywhere, zostaniesz przeniesiona do strony nawigacyjnej. Znajdź u góry na prawo link do Twojego konta (ang. Account), a następnie wybierz zakładkę o nazwie "API Token" i wciśnij przycisk, który utworzy nowy token API (ang. "Create new API token").
 
 ![Zakładka z tokenem API w koncie użytkownika](../deploy/images/pythonanywhere_create_api_token.png)
