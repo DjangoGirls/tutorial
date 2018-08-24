@@ -34,7 +34,7 @@ Pumunta sa Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Siguro nasa loob ito ng Applications → Accessories → Terminal, ngunit nakadepende ito sa iyong sistem. Kung wala ito dito, i-Goggle lang ito. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Dapat makakita ka ng isang white o black na window na naghihintay isa iyong mga 
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Kung ikaw ay nasa Mac o Linux, siguro nakakita ka ng `$`, gaya nito:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Bawat command ay nakaprepend nang sign na ito at isang space, ngunit hindi mo na
 
 Ang parte hanggang at kasali ang `$` o ang `>` ay tinatawag na *command line prompt*, o *prompt* kung pinaikli. Ito ay magprompt sa iyo na mag-input dito.
 
-Sa tutorial, kung gusto namin na magtype ka ng command, isasali na namin ang `$` o `>`, at minsan may nadagdag pa sa kaliwa. Maari mong ibalewala ang kaliwang parte at magtype lang ng command na nagsisimula pagkatapos ng prompt.
+Sa tutorial, kung gusto namin na magtype ka ng command, isasali na namin ang `$` o `>`, at minsan may nadagdag pa sa kaliwa. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Ang una mong command (YAY!)
 
@@ -249,7 +249,7 @@ Paano kaya kung maglikha ka ng practice directory sa iyong desktop? Maari mo ito
 
 <!--endsec-->
 
-Ang maliit na command na ito ay maglikha ng folder na may pangalang `practice` sa iyong desktop. Maari mo itong tingnan sa pamamagitan ng pagpunta sa iyong Desktop o sa pamamagitan ng pagpapatakbo ng `ls` o `dir` na command! Subukan ninyo ito. :)
+Ang maliit na command na ito ay maglikha ng folder na may pangalang `practice` sa iyong desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Subukan ninyo ito. :)
 
 > PRO tip: kung hindi mo gustong magtype ng parehong mga command ng paulit-ulit, subukang pindutin ang `up arrow` at `down arrow` sa iyong keyboard para maikot ang mga kakagamit lang na mga command.
 
