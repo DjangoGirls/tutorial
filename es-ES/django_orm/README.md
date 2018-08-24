@@ -26,7 +26,7 @@ El resultado debería ser:
 >>>
 ```
 
-Ahora estás en la consola interactiva de Django. Es como la consola de Python, pero con un toque de magia Django :). Puedes utilizar todos los comandos Python aquí también, por supuesto.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### Todos los objetos
 
@@ -89,7 +89,7 @@ Primero importemos el modelo User:
 <QuerySet [<User: ola>]>
 ```
 
-¡Es el súper usuario que hemos creado antes! Ahora obtengamos una instancia del usuario:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ Primero importemos el modelo User:
 >>> me = User.objects.get(username='ola')
 ```
 
-Como puedes ver, ahora obtenemos, `get`, un usuario `User`, con un `username` que es igual a 'ola'. ¡Genial! Por supuesto, tienes que ajustarlo a tu nombre de usuario.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 Ahora, finalmente, podemos crear nuestra entrada:
 
