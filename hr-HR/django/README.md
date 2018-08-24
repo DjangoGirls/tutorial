@@ -22,6 +22,6 @@ Zamisli poštara sa pismom. On hoda niz ulicu i uspoređuje svaki kućni broj sa
 
 U *view* funkciji događaju se sve zanimljive stvari: možemo potražiti neke informacije u bazi podataka. Možda je korisnik zatražio da mu promijenimo podatke? Poput pisma u kojem piše:"Molim promjeniti opis mog posla.". *View* će provjeriti je li ti dozvoljena ta radnja, zatim će za tebe promjeniti opis posla i vratiti poruku:"Gotovo!". Tada *view* stvara odgovor i Django ga potom šalje korisnikovom web pregledniku.
 
-Naravno, gornji opis je malo pojednostavljen, ali ni ne trebaš još znati sve tehnikalije. Dovoljno je ako imaš neku opću ideju.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Tako da ćemo, umjesto previše detalja, samo započeti sa stvaranjem nečega koristeći Django, a bitne djelove naučit ćemo putem!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
