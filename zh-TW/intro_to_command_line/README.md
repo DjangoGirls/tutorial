@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-他有可能在 應用程式 → 附屬應用程式 → 終端機 這個路徑下，但主要視你的版本而定。如果不是這裡所提到的開啟方式，就麻煩 Google 它一下. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-如果你是用 Mac 或 Linux, 你大概看到一個 `$` 符號，像這樣：
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Go to Applications → Utilities → Terminal.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## 你的第一個命令 (耶!)
 
@@ -249,7 +249,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-這些小指令可以建立一個叫做 `practice` 的資料夾在你的桌面。 你可以用 `ls` 或 `dir` 指令檢查看看是不是真的有在你的桌面上！ 試試看吧. :)
+這些小指令可以建立一個叫做 `practice` 的資料夾在你的桌面。 You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! 試試看吧. :)
 
 > 進階技巧：如果你不想重複的輸入一樣的指令，試著使用 `上方向鍵` 和 `下方向鍵` 來選擇你使用過的指令。
 
