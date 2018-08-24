@@ -70,9 +70,9 @@ urlpatterns = [
 
 `post/<int:pk>/` の部分はURLパターンを指定しています。それについて説明しましょう:
 
-- `post/` は単純にURLが **post** に続けて **/** で始まることを意味します。ここまでは順調ですね。
+- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – この部分はトリッキーです。これはDjangoは整数の値を期待し、その値が`pk`という名前の変数でビューに渡されることを意味しています。
-- `/` – それからURLの最後に再び **/** が必要です。
+- `/` – then we need a **/** again before finishing the URL.
 
 つまり、ブラウザに`http://127.0.0.1:8000/post/5/`を入力すると、Djangoは`post_detail`という*ビュー*を探していると理解します。そして`pk`が`5`という情報をその*ビュー*に転送します。
 
@@ -80,7 +80,7 @@ urlpatterns = [
 
 ![AttributeError](images/attribute_error2.png)
 
-あなたは次のステップが何であるか覚えていますか？ もちろん：ビューを追加する！ですね。
+Do you remember what the next step is? It's adding a view!
 
 ## 投稿の詳細ビューを追加する
 
@@ -98,7 +98,7 @@ Post.objects.get(pk=pk)
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-私たちはそれを望んでいません！ しかしもちろん、Djangoにはそれを処理するものがあります：`get_object_or_404` です。 与えられた`pk`の`Post`がない場合、前よりもっとよい `Page Not Found 404` ページが表示されます。
+私たちはそれを望んでいません！ But luckily Django comes with something that will handle that for us: `get_object_or_404`. 与えられた`pk`の`Post`がない場合、前よりもっとよい `Page Not Found 404` ページが表示されます。
 
 ![Page not found](images/404_2.png)
 
