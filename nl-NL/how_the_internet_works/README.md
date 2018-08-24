@@ -6,7 +6,7 @@
 
 Gokje: je gebruikt het Internet zeker elke dag? Maar weet je écht wat er gebeurt als je een adres zoals https://djangogirls.org in je browser ingeeft en op de `enter` knop drukt?
 
-Het eerste wat je moet begrijpen is dat een website gewoon een stelletje opgeslagen bestanden op een harde schijf zijn. Net zoals je video's, muziek of afbeeldingen. Echter is er één dingetje dat uniek is voor websites: ze bevatten computer code genaamd HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Net zoals je video's, muziek of afbeeldingen. Echter is er één dingetje dat uniek is voor websites: ze bevatten computer code genaamd HTML.
 
 Als je niet bekend bent met programmeren kan het moeilijk zijn om in eerste instantie HTML te begrijpen. Je web browsers(zoals Chrome, Safari, Firefox, etc.) zijn er anders wel gek op. Web browsers zijn ontwerpen om deze code te begrijpen. Ze volgen de instructies die omschreven staan in de code en presenteren de bestanden waar jouw website uit bestaat, precies zoals jij het wilt.
 
@@ -22,7 +22,7 @@ Ziet er uit als een puinhoop, toch? In feite is het een netwerk van aaneengeslot
 
 ![Figuur 1.2](images/internet_3.png)
 
-Het is fascinerend, nietwaar? Maar uiteraard is het niet mogelijk om draden te hebben per machine naar elke andere machine die verbonden is met het Internet. Dus, om een machine te bereiken (bijvoorbeeld degene waarop https://djangogirls.org staat), moeten we een verzoek versturen dat langs vele, vele verschillende machines gaat.
+Het is fascinerend, nietwaar? But it is not possible to have a wire between every machine connected to the Internet. Dus, om een machine te bereiken (bijvoorbeeld degene waarop https://djangogirls.org staat), moeten we een verzoek versturen dat langs vele, vele verschillende machines gaat.
 
 Het ziet er zo uit:
 
@@ -34,7 +34,7 @@ Je brief gaat naar het dichtsbijzijnde postkantoor. Dan gaat 'ie naar een ander 
 
 ![Figuur 1.4](images/internet_4.png)
 
-Zo gaat dat - je stuurt berichten en je verwacht een of ander antwoord. Natuurlijk gebruik je bytes met gegevens in plaats van papier en pen, maar het idee erachter is hetzelfde!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 In plaats van adressen met een straatnaam, woonplaats, postcode en landnaam gebruiken we IP-adressen. Je computer vraagt eerst aan het DNS (Domein Naam Systeem) om 'djangogirls.org' om te zetten naar een IP-adres. Dat werkt een beetje als een ouderwets telefoonboek waarin je de naam kunt opzoeken van de persoon die je wilt bellen en dan diens telefoonnummer en adres vindt.
 
