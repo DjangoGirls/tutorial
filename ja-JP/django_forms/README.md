@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-最初にDjangoのformsをインポート (`from django import forms`) し、もちろん`Post`モデルもインポート (`from .models import Post`) する必要があります。
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`とは何かと思うかもしれませんが、これはフォームの名前です。 このフォームが `ModelForm` の一種だとDjangoに伝える必要があります (Djangoが私たちのためにいくつか魔法をかけられるように)。`forms.ModelForm`がその役割を果たします。
 
@@ -85,7 +85,7 @@ class PostForm(forms.ModelForm):
 </html>
 ```
 
-ファイルを保存して、ページ http://127.0.0.1:8000 をリロードします。すでに見覚えのある `NoReverseMatch` エラーが表示されますか？
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 ## セキュリティ
 
-リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
+Being able to create new posts by clicking a link is awesome! しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
 `blog/templates/blog/base.html` で、`page-header` と名付けた `div ` とそこに以前に入力したアンカータグを見つけます。 これは次のようになります。
 
