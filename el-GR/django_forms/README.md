@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Πρέπει να εισάγουμε αρχικά το module forms του Django (`from django import forms`) και φυσικά το μοντέλο `Post` (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 Οπώς πιθανόν να υποψιάζεστε το `PostForm`, είναι το όνομα της φόρμας εισαγωγής. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
@@ -85,7 +85,7 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Ασφάλεια
 
-Το να μπορείς να δημιουργήσεις νέες δημοσιεύσεις κάνοντας απλώς ένα κλικ σε ένα σύνδεσμο είναι φοβερό! Αλλά τώρα, οποιοσδήποτε επισκεφθεί την σελίδα σας θα μπορεί να φτιάξει μία καινούρια δημοσίευση blog, και αυτό είναι κάτι που πιθανώς δεν θέλετε. Ας το κάνουμε έτσι ώστε το κουμπί εμφανίζεται για εσάς αλλά για κανέναν άλλο.
+Being able to create new posts by clicking a link is awesome! Αλλά τώρα, οποιοσδήποτε επισκεφθεί την σελίδα σας θα μπορεί να φτιάξει μία καινούρια δημοσίευση blog, και αυτό είναι κάτι που πιθανώς δεν θέλετε. Ας το κάνουμε έτσι ώστε το κουμπί εμφανίζεται για εσάς αλλά για κανέναν άλλο.
 
 In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
