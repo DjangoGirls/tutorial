@@ -25,7 +25,7 @@ Bootstrap是最受欢迎的前端框架之一，可以被用来开发美观的�
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-这不会将任何文件添加到你的项目中。它只是指向在互联网上已经存在的文件。接着，你只需要打开你的网站并刷新页面。你瞧！
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![图 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Bootstrap是最受欢迎的前端框架之一，可以被用来开发美观的�
 
 ### Django的静态文件放在哪儿呢？
 
-Django 已经知道到哪儿为内置的 "admin" 应用找到静态文件。现在我们只需为我们自己的应用增加一些静态文件，`博客`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 我们在blog应用的目录下创建一个名为`static`的文件夹，创建后目录结构如下：
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a`是CSS选择器。 这样，我们可以把样式应用到`h1`中的任意`a`元素中。 所以，如果我们有这样的代码`<h1><a href="">link</a></h1>`，通过`h1 a`描述的样式就将会生效。 在这段样式代码中我们把它的颜色设为`#FCA205`, 这代表着橙色。 当然，你可以改成你自己喜欢的颜色。
+`h1 a`是CSS选择器。 这样，我们可以把样式应用到`h1`中的任意`a`元素中。 所以，如果我们有这样的代码`<h1><a href="">link</a></h1>`，通过`h1 a`描述的样式就将会生效。 在这段样式代码中我们把它的颜色设为`#FCA205`, 这代表着橙色。 Or you can put your own color here!
 
 在CSS文件中我们指明了HTML文件里各种元素的样式。 我们识别元素的第一种方法是使用元素的名称。 你可能还记得那些HTML部分中的标签。 诸如`a`，`h1`和`body`等都是元素的名称。 我们也可以用`class`属性和`id`属性来定义元素。 class和id是你自己给该元素定义的名称。 class定义一组元素，而id则指定特定的元素。 例如，下面的标签使用了 `a` 作为标签名,`external_link` 为 class 名, id 名则是 `link_to_wiki_page`.
 
@@ -202,7 +202,7 @@ h1 a {
 </div>
 ```
 
-现在，我们将把声明组代码放入不同的选择器中。 选择器以 `.` 开始，后面紧跟着类名。 网络上有很多很棒的CSS教程以及相关解释，帮助您理解下面的代码。 至于现在，就简单地把以下代码复制粘贴到你的 `blog/static/css/blog.css` 文件中吧。
+现在，我们将把声明组代码放入不同的选择器中。 选择器以 `.` 开始，后面紧跟着类名。 网络上有很多很棒的CSS教程以及相关解释，帮助您理解下面的代码。 For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
