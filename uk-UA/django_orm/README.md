@@ -26,7 +26,7 @@ A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow y
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### Усі об'єкти
 
@@ -89,7 +89,7 @@ But we have one missing ingredient here: `me`. We need to pass an instance of `U
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 Тепер ми нарешті можемо створити наш пост:
 
