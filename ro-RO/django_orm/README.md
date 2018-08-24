@@ -26,7 +26,7 @@ The effect should be like this:
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too, of course.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### All objects
 
@@ -89,7 +89,7 @@ What users do we have in our database? Try this:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ This is the superuser we created earlier! Let's get an instance of the user now:
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat! Of course, you have to adjust this line to use your own username.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 Now we can finally create our post:
 
