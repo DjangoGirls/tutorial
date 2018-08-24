@@ -25,7 +25,7 @@ Bootstrap is one of the most popular HTML and CSS frameworks for developing beau
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Σχήμα 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ### Πού βρίσκονται τα στατικά αρχεία στο Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 Για να το κάνουμε αυτό πρέπει να δημιουργήσουμε ένα φάκελο με το όνομα `static` μέσα στο φάκελο του app blog:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-Το `h1 a` είναι ένας επιλογέας CSS. This means we're applying our styles to any `a` element inside of an `h1` element. Έτσι όταν έχουμε κάτι σαν `<h1><a href="">σύνδεσμο</a></h1>`, το `h1 a ` στυλ θα εφαρμοστεί. Σε αυτή τη περίπτωση, του λέμε να αλλάξει το χρώμα του σε `#FCA205`, που είναι πορτοκαλί. Φυσικά μπορείς να βάλεις το δικό σου χρώμα εδώ!
+Το `h1 a` είναι ένας επιλογέας CSS. This means we're applying our styles to any `a` element inside of an `h1` element. Έτσι όταν έχουμε κάτι σαν `<h1><a href="">σύνδεσμο</a></h1>`, το `h1 a ` στυλ θα εφαρμοστεί. Σε αυτή τη περίπτωση, του λέμε να αλλάξει το χρώμα του σε `#FCA205`, που είναι πορτοκαλί. Or you can put your own color here!
 
 Μέσα σε ενα αρχείο CSS καθορίζουμε τα στύλ για τα στοιχεία μέσα στο HTML αρχείο. Ο πρώτος τρόπος που αναγνωρίζουμε στοιχεία είναι με το όνομα στοιχείου. Μπορεί να τα θυμάστε αυτά ως ετικέτες από το τμήμα HTML. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Η τάξη (class) και η ταυτότητα (id) είναι ονόματα που δίνεις εσύ στο κάθε στοιχείο. Οι τάξεις αναφέρονται σε ομάδες στοιχείων και οι ταυτότητες σε συγκεκριμένα στοιχεία. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ h1 a {
 </div>
 ```
 
-Τώρα θα προσθέσουμε κώδικα σε διάφορους επιλογείς (selectors). Οι επιλογείς που ξεκινούν με `.` αναφέρονται σε τάξεις. Υπάρχουν πολλά σπουδαία σεμινάρια και εξηγήσεις σχετικά με την CSS στο δίκτυο τα οποία θα σε βοηθήσουν να καταλάβεις τον παρακάτω κώδικα. Προς το παρών, απλά αντίγραψε τα παρακάτω στο αρχείο `blog/static/css/blog.css`:
+Τώρα θα προσθέσουμε κώδικα σε διάφορους επιλογείς (selectors). Οι επιλογείς που ξεκινούν με `.` αναφέρονται σε τάξεις. Υπάρχουν πολλά σπουδαία σεμινάρια και εξηγήσεις σχετικά με την CSS στο δίκτυο τα οποία θα σε βοηθήσουν να καταλάβεις τον παρακάτω κώδικα. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
