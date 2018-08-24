@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Рисунок 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ### Де помістити статичні файли для Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 Створимо директорію з ім’ям `static` всередині додатку blog:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` -- CSS селектор. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. У цьому випадку, ми повідомляємо про те, що треба змінити колір на `#FCA205`, тобто помаранчевий. Звичайно, ви можете визначити тут ваш власний колір!
+`h1 a` -- CSS селектор. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. У цьому випадку, ми повідомляємо про те, що треба змінити колір на `#FCA205`, тобто помаранчевий. Or you can put your own color here!
 
 В CSS файлі ми визначаємо стилі для елементів файлу HTML. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class і id -- імена, які ви присвоюєте елементам власноруч. Класи (сlasses) визначають групи елементів, а ідентифікатори (id), в свою чергу, вказують на специфічні елементи. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 </div>
 ```
 
-А тепер додамо визначення блоків для різних селекторів. Селектори, які починають із символу `.` стосуються класів. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Поки що, просто скопіюйте і вставте це у ваш файл `mysite/static/css/blog.css`:
+А тепер додамо визначення блоків для різних селекторів. Селектори, які починають із символу `.` стосуються класів. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
