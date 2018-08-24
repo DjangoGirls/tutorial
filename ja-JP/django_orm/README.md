@@ -26,7 +26,7 @@
 >>>
 ```
 
-今、Djangoのインタラクティブコンソールが起動しています。Pythonプロンプトしかないように見えますが、ちゃんとDjangoも動いています。勿論このコンソール画面では、Pythonのコマンドは何でも使えます。
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### すべてのオブジェクト
 
@@ -89,7 +89,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<User: ola>]>
 ```
 
-作成しておいたスーパーユーザがいますね。このユーザを取り出してみましょう。
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ NameError: name 'Post' is not defined
 >>> me = User.objects.get(username='ola')
 ```
 
-ola という `ユーザ名` の `User` モデルのインスタンスを、`取り出せ` たでしょう？よかった！勿論、ご自身で作ったスーパーユーザのユーザ名に変更して取り出してくださいね。
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 さあ、遂にコンソール画面から、最初のポストを作成出来ますね。
 
