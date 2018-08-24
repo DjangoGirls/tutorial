@@ -6,7 +6,7 @@
 
 Apostamos a que utilizas Internet todos los días. Pero, ¿sabes lo que pasa cuando escribes una dirección como http://djangogirls.org en tu navegador y presionas `enter`?
 
-Lo primero que tienes que entender es que un sitio web es sólo un montón de archivos guardados en un disco duro. Al igual que tus películas, música o fotos. Sin embargo, los sitios web poseen una peculiaridad: incluyen un código informático llamado HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Al igual que tus películas, música o fotos. Sin embargo, los sitios web poseen una peculiaridad: incluyen un código informático llamado HTML.
 
 Si no estás familiarizada con la programación, puede ser difícil captar HTML a la primera, pero tus navegadores web (como Chrome, Safari, Firefox, etc.) lo aman. Los navegadores están diseñados para entender este código, seguir sus instrucciones y presentar estos archivos de los cuales está hecho tu sitio web, exactamente de la forma que quieres.
 
@@ -22,7 +22,7 @@ Parece un lío, ¿no? De hecho, es una red de máquinas interconectadas (los *se
 
 ![Figura 1.2](images/internet_3.png)
 
-Es fascinante, ¿no? Pero, obviamente, no es posible tener un cable entre cada máquina conectada a Internet. Así que, para llegar a una máquina (por ejemplo la que aloja http://djangogirls.org) tenemos que elevar una solicitud mediante una gran cantidad de máquinas diferentes.
+Es fascinante, ¿no? But it is not possible to have a wire between every machine connected to the Internet. Así que, para llegar a una máquina (por ejemplo la que aloja http://djangogirls.org) tenemos que elevar una solicitud mediante una gran cantidad de máquinas diferentes.
 
 Se parece a esto:
 
@@ -34,7 +34,7 @@ Tu carta va hacia la oficina de correo más cercana. Luego va a otra que es un p
 
 ![Figura 1.4](images/internet_4.png)
 
-Sí, es tan sencillo como eso. Enviar mensajes y esperar alguna respuesta. Por supuesto, en vez de papel y bolígrafo usas bytes de datos, ¡pero la idea es la misma!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 En lugar de direcciones con el nombre de la calle, ciudad, código postal y nombre del país, utilizamos direcciones IP. Tu computadora pide primero el DNS (Domain Name System - en español Sistema de Nombres de Dominio) para traducir djangogirls.org a una dirección IP. Funciona en cierta manera como los viejos directorios telefónicos donde puedes buscar el nombre de la persona que se deseas contactar y encontrar su número de teléfono y dirección.
 
