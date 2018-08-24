@@ -93,7 +93,7 @@ Erstelle dann ein neues Repository und gib ihm den Namen "my-first-blog". Lass d
 
 ![](images/new_github_repo.png)
 
-> **Achtung:** Der Name `my-first-blog` ist wichtig -- du kannst auch einen anderen wählen, aber er wird im Folgenden noch sehr oft vorkommen und du wirst immer daran denken müssen, ihn in den Anweisungen entsprechend anzupassen. Lass es daher besser erst mal bei `my-first-blog`.
+> **Achtung:** Der Name `my-first-blog` ist wichtig -- du kannst auch einen anderen wählen, aber er wird im Folgenden noch sehr oft vorkommen und du wirst immer daran denken müssen, ihn in den Anweisungen entsprechend anzupassen. It's probably easier to stick with the name `my-first-blog`.
 
 Auf der nächsten Seite wird dir die Clone-URL deines Repos angezeigt. Nimm die HTTPS-Variante, kopiere sie, damit wir sie dann gleich in die Konsole einfügen können:
 
@@ -219,4 +219,4 @@ Auf der Defaultseite deiner Site sollte "It worked!" stehen - genau so wie auf d
 
 Wenn du ein paar Posts erstellt hast, kannst du zurück auf dein lokales Setup (nicht PythonAnywhere) wechseln. Ab jetzt solltest du für Änderungen auf deinem lokalen Setup arbeiten. So wird in der Web-Entwicklung gearbeitet - Änderungen lokal machen und diese dann auf GitHub veröffentlichen und dann deine Änderungen auf den produktiven Webserver ziehen. So kannst du Sachen ausprobieren, ohne deine produktive Website kaputt zu machen. Ziemlich cool, oder?
 
-Klopf dir *kräftig* auf die Schulter! Server-Deployment ist eines der kompliziertesten Dinge der Web-Entwicklung und es dauert oftmals mehrere Tage, bis alles läuft. Aber du hast deine Site jetzt live, im echten Internet, einfach so!
+Klopf dir *kräftig* auf die Schulter! Server-Deployment ist eines der kompliziertesten Dinge der Web-Entwicklung und es dauert oftmals mehrere Tage, bis alles läuft. But you've got your site live, on the real Internet!
