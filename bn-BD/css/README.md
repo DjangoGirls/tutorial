@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Figure 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Finally we will take a closer look at these things we've been calling **static f
 
 ### Where to put static files for Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 We do that by creating a folder called `static` inside the blog app:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Of course, you can put your own color here!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#FCA205`, which is orange. Or you can put your own color here!
 
 In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
