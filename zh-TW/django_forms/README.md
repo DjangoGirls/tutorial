@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-我們需要先導入 Django forms（`from django import forms`），然後，很明顯地，我們的 `Post` 模型（`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`，正如你可能猜想的，是我們表單的名稱。 We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
@@ -85,7 +85,7 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-存檔並更新網頁 http://127.0.0.1:8000 後，你會明顯看到一個熟悉的錯誤 `NoReverseMatch`，對吧？
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## 安全性 (Security)
 
-只透過點選一個連結就能夠建立新的文章，是很棒的！ But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
 在 `blog/templates/blog/base.html`，找我們的 `page-header` `div` 和你稍早放在那裡的錨點 (anchor) 疵標籤。它看起來應該像這樣︰
 
