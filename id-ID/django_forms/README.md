@@ -26,9 +26,9 @@ dari bentuk impor Django dari .Models import Post class PostForm (forms.ModelFor
          fields = ('title', 'text',)
 ```
 
-Pertama, kita perlu mengimport form Django (</code>form django import forms</code>) dan model `Post` kita (`from .models import Post</0>).</p>
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
-<p><code>PostForm`, sebagaimana yang barangkali anda duga, adalah nama form kita. Kita perlu memberi tahu Django bahwa bentuk ini adalah ` ModelForm </ 0> (jadi Django akan melakukan sihir untuk kita) - <code> forms.ModelForm </ 0> bertanggung jawab untuk itu.</p>
+`PostForm`, sebagaimana yang barangkali anda duga, adalah nama form kita. Kita perlu memberi tahu Django bahwa bentuk ini adalah ` ModelForm </ 0> (jadi Django akan melakukan sihir untuk kita) - <code> forms.ModelForm </ 0> bertanggung jawab untuk itu.</p>
 
 <p>Selanjutnya, kita memiliki <code>class Meta` dimana kita memberitahu django model yang mana yang harus digunakan untuk menciptakan form ini (`model=post`).
 
@@ -80,7 +80,7 @@ Perhatikan bahwa kami ingin memanggil tampilan baru kami ` post_new </ 0> . Kela
 </html>
 `</pre> 
 
-Setelah disimpan dan merefresh halaman http://127.0.0.1:8000 anda pasti akan melihat tampilan error yang sudah familiar: `NoReverseMatch`, betul?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -364,7 +364,7 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
 
 <h2>Keamanan</h2>
 
-<p>Telah berhasil membuat post baru hanya dengan melakukan klik pada sebuah link itu hebat! Tapi, sekarang seseorang yang mengunjungi website anda akan dapat memposting postingan baru dan itu mungkin bukan hal yang anda inginkan! Tapi sekarang, siapa pun yang mengunjungi situs Anda akan dapat membuat posting blog baru, dan itu mungkin bukan sesuatu yang Anda inginkan. Mari kita membuatnya jadi tombol muncul untuk Anda tapi tidak untuk orang lain.</p>
+<p>Being able to create new posts by clicking a link is awesome! Tapi sekarang, siapa pun yang mengunjungi situs Anda akan dapat membuat posting blog baru, dan itu mungkin bukan sesuatu yang Anda inginkan. Mari kita membuatnya jadi tombol muncul untuk Anda tapi tidak untuk orang lain.</p>
 
 <p>Dalam <code>blog/templates/blog/base.html`, temukan `div` dari `page-header` kita dan anchor tag yang anda letakkan sebelumnya. Tampilannya seharusnya seperti ini:
     
