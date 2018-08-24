@@ -23,7 +23,7 @@ Ang mga templates ay naka-save sa `blog/templates/blog` na directory. Una, ay gu
         └───blog
     
 
-(Maaaring ngtataka ka kung bakit kailangan ng dalawang directories na parehong tinatawag na `blog` –sa iyong matutuklasan mamaya, ito ay isa lamang na kapaki-pakinabang na naming na kombensyon na magpapadali ng buhay kapag ang mga bagay ay maging mas kumplikado.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 At ngayon, gumawa ng isang `post_list.html` na file (hayaan itong blangko sa ngayon) sa loob ng `blog/templates/blog` na directory.
 
