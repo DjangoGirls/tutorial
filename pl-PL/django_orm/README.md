@@ -89,7 +89,7 @@ Jakich użytkowników mamy w bazie danych? Spróbuj tak:
 <QuerySet [<User: ola>]>
 ```
 
-To konto administratora, które stworzyłyśmy wcześniej! Teraz uzyskajmy dostęp do naszej instancji użytkownika (podmień poniższą linię, by zawierała nazwę twojego użytkownika):
+To konto administratora, które stworzyłyśmy wcześniej! Teraz uzyskajmy dostęp do naszej instancji użytkownika (podmień poniższą linię, by zawierała nazwę Twojego użytkownika):
 
 {% filename %}command-line{% endfilename %}
 
