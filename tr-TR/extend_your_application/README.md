@@ -70,9 +70,9 @@ urlpatterns = [
 
 This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
 
-- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the url.
+- `/` – then we need a **/** again before finishing the URL.
 
 Bu şu demek, eğer tarayıcınıza `http://127.0.0.1:8000/post/5/` yazarsanız, Django `post_detail` adında bir *view* aradığınızı anlar ve `pk` eşittir `5` bilgisini *view*'e aktarır.
 
@@ -80,7 +80,7 @@ Tamamdır.`blog/urls.py`!'e yeni bir URL kalıbı ekledik! Http://127.0.0.1:8000
 
 ![AttributeError (Özellik hatası)](images/attribute_error2.png)
 
-Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: view'ü eklemek!
+Do you remember what the next step is? It's adding a view!
 
 ## Gönderi detayı için bir view ekleyin
 
@@ -98,7 +98,7 @@ Ama bu kodun bir problemi var. Eğer gelen `primary key` (`pk` - tekil anahtar) 
 
 ![DoesNotExist error (Yok hatası)](images/does_not_exist2.png)
 
-Bunu istemiyoruz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or404`. Eğer verilen `pk` ile bir `Post` bulunamazsa, çok daha güzel bir sayfa gösterilecek (`Sayfa bulunamadı 404` sayfası.
+Bunu istemiyoruz! But luckily Django comes with something that will handle that for us: `get_object_or_404`. Eğer verilen `pk` ile bir `Post` bulunamazsa, çok daha güzel bir sayfa gösterilecek (`Sayfa bulunamadı 404` sayfası.
 
 ![Page not found (Sayfa bulunamadı)](images/404_2.png)
 
