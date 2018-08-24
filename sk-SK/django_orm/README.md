@@ -26,7 +26,7 @@ Toto by sa ti malo zobraziť:
 >>>
 ```
 
-Nachádzaš sa v interaktívnej Django konzole. Je to ako konzola Pythonu, ale s trochou Django mágie :). Môžeš v nej samozrejme použiť všetky Pythonovské príkazy.
+You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
 ### Všetky objekty
 
@@ -89,7 +89,7 @@ Akých užívateľov máme v našej databáze? Skús toto:
 <QuerySet [<User: ola>]>
 ```
 
-To je superuser, ktorého sme už vytvorili predtým. Teraz získajme inštanciu tohto užívateľa:
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ To je superuser, ktorého sme už vytvorili predtým. Teraz získajme inštanciu
 >>> me = User.objects.get(username='ola')
 ```
 
-Ako vidíš, teraz získame (angl. `get`) užívateľa (angl. `User`) s užívateľským meno (angl. `username`), ktoré sa rovná 'ola'. Aké elegantné! Samozrejme musíš si to zmeniť tak aby tam bolo tvoje meno.
+As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 Teraz už konečne môžeme vytvoriť náš prvý príspevok:
 
