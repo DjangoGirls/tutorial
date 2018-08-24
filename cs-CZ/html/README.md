@@ -23,7 +23,7 @@ Vytvoření šablony znamená vytvoření souboru šablony. Všechno je soubor, 
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 A teď vytvoř soubor `post_list.html` (pro teď ho nech prázdný) uvnitř adresáře `blog/templates/blog`.
 
