@@ -6,7 +6,7 @@
 
 Sa tingin namin ay araw-araw kang gumagamit ng Internet. Pero alam mo ba kung ano talaga ang nangyari kapag nag-type ka na address gaya ng https://djangogirls.org sa iyong browser at pinindot ang `enter`?
 
-Ang unang dapat nating maintindihan na ang website ay isang grupo na mga file naka save sa isang hard disk. Gaya ng mga palabas, musika o mga larawan. Ngunit, may isang parte na pambihira sa mga website: naglalaman ito ng computer code na tinatawag na HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Gaya ng mga palabas, musika o mga larawan. Ngunit, may isang parte na pambihira sa mga website: naglalaman ito ng computer code na tinatawag na HTML.
 
 Kung hindi mo kabisado ang pagpoprogram, maaring mahirap intindihin ang HTML sa una, pero ang mga browser mo (gaya ng Chrome, Safari, Firefox, at iba pa) ay nagkagusto dito. Ang mga web browser ay ginawa para magbasa ng code, sumunod sa mga instruksyon, at magpresenta sa mga file na ito na bumuo sa iyong website, eksakto kung paano mo ito gusto.
 
@@ -22,7 +22,7 @@ Ang gulo, di ba? Sa totoo lang, ito ay isang network ng mga nakakonektang mga ma
 
 ![Tambilang 1.2](images/internet_3.png)
 
-Kawili-wili ito, di ba? Pero maliwanag naman, na imposible na magkaroon ng wire sa bawat makina na nakakonekta sa Internet. Kaya, para maabot ang mga makina (halimbawa, ang makina kung saan naka-save ang https://djangogirls.org) kailangan nating magpasa ng request sa napakarami at iba-ibang mga makina.
+Kawili-wili ito, di ba? But it is not possible to have a wire between every machine connected to the Internet. Kaya, para maabot ang mga makina (halimbawa, ang makina kung saan naka-save ang https://djangogirls.org) kailangan nating magpasa ng request sa napakarami at iba-ibang mga makina.
 
 Maging kagaya ito ito:
 
@@ -34,7 +34,7 @@ Ang iyong sulat ay napunta sa iyong pinakamalapit na post office. Pagkatapos ay 
 
 ![Tambilang 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Sa halip na mga address na may mga pangalan ng daan, zip code, at pangalan ng bansa, gagamit tayo ng IP na mga address. Ang iyong komputer ay magtatanong muna sa DNS (Domain Name System) na isalin ang djangogirls.org sa IP address. Gumana ito gaya ng mga lumang mga phonebook kung saan maghahanap ka na pangalan ng tao na gusto mong ikontak at hanapin ang kanilang numero ng telepono at address.
 
