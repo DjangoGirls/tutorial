@@ -8,4 +8,4 @@ Vytvor si zdarma "Beginner" účet na PythonAnywhere:
 
 Toto musíš urobiť len jeden krát. Po registrácii na PythonAnywhere, budeš presmerovaná na svoju nástenku. Najdi link v hornej časti vpravo od tvojej "Account" stránky, a zvoľ záložku čo sa volá "API token", a stlač tlačidlo na ktorom píše "Create new API token".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![API token záložka na Account stránke](../deploy/images/pythonanywhere_create_api_token.png)
