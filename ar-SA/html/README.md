@@ -23,7 +23,7 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
         └───blog
     
 
-(قد تتساءل لماذا نحتاج إلى دليلي `blog` - كما سوف تكتشف في وقت لاحق، وهذا هو مجرد تسمية اصطلاح مفيدة تجعل الحياة أسهل عندما تبدأ الأمور أكثر تعقيدا)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 والآن قم بإنشاء ملف `post_list.html` (فقط اتركه فارغاً للآن) داخل دليل `blog/templates/blog`.
 
