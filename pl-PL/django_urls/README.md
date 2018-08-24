@@ -4,7 +4,7 @@ Zaczynamy budować naszą pierwszą stronę internetową: będzie to miejsce dla
 
 ## Czym jest URL?
 
-Adres URL to po prostu adres w internecie. Możesz zobaczyć URL-a za każdym razem, gdy odwiedzasz stronę internetową - jest on widoczny w pasku adresu przeglądarki internetowej. (Tak! `127.0.0.1:8000` jest adresem URL! Też `https://djangogirls.org` jest adresem URL.)
+A URL is a web address. Możesz zobaczyć URL-a za każdym razem, gdy odwiedzasz stronę internetową - jest on widoczny w pasku adresu przeglądarki internetowej. (Tak! `127.0.0.1:8000` jest adresem URL! Też `https://djangogirls.org` jest adresem URL.)
 
 ![Adres URL](images/url.png)
 
