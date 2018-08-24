@@ -4,7 +4,7 @@ Tayo ay gagawa ng ating kauna-unahang webpage: ang homepage para sa iyong blog! 
 
 ## Ano ang URL?
 
-Ang URL ay isang web address lamang. Makikita mo ang URL sa bawat oras na bibisita ka ng website - makikita mo ito sa address bar ng iyong browser. (Oo! ang `127.0.0.1:8000` ay isang URL! At ang `https://djangogirls.org` ay isa ring URL.)
+A URL is a web address. Makikita mo ang URL sa bawat oras na bibisita ka ng website - makikita mo ito sa address bar ng iyong browser. (Oo! ang `127.0.0.1:8000` ay isang URL! At ang `https://djangogirls.org` ay isa ring URL.)
 
 ![Url](images/url.png)
 
