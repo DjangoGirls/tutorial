@@ -22,6 +22,6 @@ Django是一个由python编写的，免费和开放的开源网站框架。 web�
 
 在*view*函数里做了很多有趣的事情：我们能在数据库中寻找到一些信息。 如果用户要求修改数据呢？ 就像一封信说, "请更改我的工作描述。 * view * 可以检查是否允许这样做, 然后更新您的作业说明并发送回消息: "完成!“ 然后, * view * 生成一个响应, Django 可以将其发送到用户的 web 浏览器。
 
-当然，上述的描述是有一些简化的，但是你不需要去知道所有的技术的东西。有一个大概的想法就够了。
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-所以不要太过深入细节，我们会简单用Django创建一些东西，然后我们会在学习的路上学到所有重要的部分！
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
