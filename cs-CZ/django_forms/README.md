@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Musíme nejdříve importovat Django formuláře (`z django import forms`) a samozřejmě náš `Post` model (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`, jak asi předpokládáš, je jméno našeho formuláře. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
@@ -85,7 +85,7 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-Po uložení a obnovení stránky http://127.0.0.1:8000 patrně uvidíš známou `NoReverseMatch` chybu, dobrá?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Zabezpečení
 
-Být schopna vytvářet nové příspěvky pouhým klepnutím na odkaz je super! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
 V `blog/templates/blog/base.html` najdeš naši `page-header` `div` a kotevní tag, který jsme tam dali dříve. Řádek by měl vypadat nějak takto:
 
