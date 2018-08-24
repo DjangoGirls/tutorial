@@ -28,7 +28,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
-If you want to exit the Python console at any point, just type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, simply type:
+Nice, huh? To see your name in uppercase letters, type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -186,7 +186,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     
     We type name equals Ola.
     
-    As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Simply enter `name` and hit `enter`:
+    As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
     
     {% filename %}command-line{% endfilename %}
     
@@ -214,7 +214,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     5
     ```
     
-    Awesome, right? Of course, variables can be anything – numbers too! Try this:
+    Awesome, right? Now, variables can be anything – numbers too! Try this:
     
     {% filename %}command-line{% endfilename %}
     
@@ -415,7 +415,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     
     Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
     
-    When should you use a dictionary or a list? Well, that's a good point to ponder. Just have a solution in mind before looking at the answer in the next line.
+    When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
     
     - هل تحتاج فقط إلى تسلسل أمر من العناصر؟ انتقل إلى القائمة.
     - هل تحتاج إلى ربط القيم مع مفاتيح، حتى تتمكن من البحث عنها بكفاءة (عن طريق مفتاح) في وقت لاحق؟ إستخدم المعجم.
@@ -439,7 +439,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     
     I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
     
-    You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, just type in the following command:
+    You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
     
     {% filename %}command-line{% endfilename %}
     
@@ -479,7 +479,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     
     > للقراء في المنزل: هذا الفصل تم التكلم عنه في فيديو [Python Basics: Dictionaries](https://www.youtube.com/watch?v=7bzxqIKYgf4).
     
-    A big part of programming involves comparing things. What's the easiest thing to compare? Numbers, of course. Let's see how that works:
+    A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
     
     {% filename %}command-line{% endfilename %}
     
@@ -558,7 +558,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     - صحيح
     - خطأ
     
-    But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well, of course.)
+    But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
     
     Booleans can be variables, too! See here:
     
@@ -600,7 +600,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
     - حفظ بعض التعليمات البرمجية في ملف بايثون جديد
     - تشغيله!
     
-    To exit from the Python interpreter that we've been using, simply type the `exit()` function
+    To exit from the Python interpreter that we've been using, type the `exit()` function
     
     {% filename %}command-line{% endfilename %}
     
@@ -673,7 +673,7 @@ data-collapse=true ces-->
     
     <!--endsec-->
     
-    If you get stuck, just ask for help.
+    If you get stuck, ask for help. That's exactly what the coaches are here for!
     
     Now use Python to execute the code in the file like this:
     
