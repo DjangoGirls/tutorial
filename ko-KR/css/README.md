@@ -25,7 +25,7 @@ CSS(Cascading Style Sheets)는 웹사이트의 보여지는 부분 나타낼 때
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-이 링크는 프로젝트에 파일을 새로 추가하는 게 아니에요. 인터넷에 있는 파일을 연결하는 거에요. 따라해보고, 웹사이트를 열어 새로고침 버튼을 눌러보세요. 짜자자잔!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![그림 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ CSS(Cascading Style Sheets)는 웹사이트의 보여지는 부분 나타낼 때
 
 ### 어디에 정적 파일을 넣어야 하나요
 
-서버에서 `collectstatic`를 실행할 때 처럼, 장고는 "admin" 앱에서 동적 파일을 어디서 찾아야하는지 이미 알고 있어요. 이제 `blog`앱에 동적파일을 추가하면 되어요.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 blog앱 안에 `static`폴더를 만드세요:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a`가 CSS 셀렉터(Selector)에요. `h1`대신 `a`스타일을 적용하라는 뜻입니다. 예를 들어 `<h1><a href="">link</a></h1>`은 `h1 a` {...} 을 통해 스타일이 적용됩니다. 위 예에서, `#FCA205`은 오렌지 색상으로 바꾸는 것을 나타내요. 물론, 색상을 직접 선택할 수도 있어요!
+`h1 a`가 CSS 셀렉터(Selector)에요. `h1`대신 `a`스타일을 적용하라는 뜻입니다. 예를 들어 `<h1><a href="">link</a></h1>`은 `h1 a` {...} 을 통해 스타일이 적용됩니다. 위 예에서, `#FCA205`은 오렌지 색상으로 바꾸는 것을 나타내요. Or you can put your own color here!
 
 CSS파일에서는 HTML 파일에 있는 각 요소들에 스타일을 적용할 수 있어요. 요소를 식별하는 첫 번째 방법은 이름을 붙이는 겁니다. HTML에서 태그 이름으로 찾을 수 있겠죠. `a`, `h1`, `body`요소도 그 예입니다. 상속 `class` 또는 상속 `id`로 요소를 식별합니다. Class와 id는 여러분들이 붙인 이름을 갖게 되지요. 클래스는 요소들의 그룹을 결정하는 것이고, id는 특정 요소들을 지칭해요. 예를 들어, 다음 태그들은 css에서 태그 이름 `a`, 클래스 `external_link`, id `link_to_wiki_page`을 사용해서 식별해요.
 
@@ -201,7 +201,7 @@ body {
 </div>
 ```
 
-다음 각 다른 선택자(selector) 에 정의를 붙여볼거에요. 클래스를 나타내는 선택자는 `.`으로 시작합니다. 아래의 코드(클래스 선택자) 를 이해하기 위해서 CSS에 대한 튜토리얼이나 설명을 참고하면 큰 도움이 될 거에요. 이제 `blog/static/css/blog.css`파일안에 아래 코드를 복사, 붙여넣기 하세요:
+다음 각 다른 선택자(selector) 에 정의를 붙여볼거에요. 클래스를 나타내는 선택자는 `.`으로 시작합니다. 아래의 코드(클래스 선택자) 를 이해하기 위해서 CSS에 대한 튜토리얼이나 설명을 참고하면 큰 도움이 될 거에요. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/templates/blog/post_blog.css{% endfilename %}
 
