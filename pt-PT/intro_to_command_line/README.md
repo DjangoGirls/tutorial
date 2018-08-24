@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Provavelmente está em Aplicações → Acessórios → Terminal, mas pode depender do teu sistema. Se não está aqui, procura no Google. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Deves estar agora a ver uma janela, preta ou branca, à espera que lhe dês coma
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Se estás a usar um Mac ou Linux, deves ver um `&`, assim:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Cada comando vai ter este sinal atrás seguido de um espaço, mas não tens que 
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## O teu primeiro comando (YAY!)
 
@@ -249,7 +249,7 @@ Que tal criares um directório para praticares no teu ambiente de trabalho? Pode
 
 <!--endsec-->
 
-Este comando vai criar uma pasta chamada `pratica` no teu ambiente de trabalho. Podes verificar se está lá olhando para o teu ambiente de trabalho, ou correndo o comando `ls` ou `dir`! Tenta. :)
+Este comando vai criar uma pasta chamada `pratica` no teu ambiente de trabalho. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Tenta. :)
 
 > Dica PRO: Se não quiseres estar sempre a escrever os mesmos comandos, tenta usar as setas para cima e para baixo no teu teclado para navegar os comandos utilizados recentemente.
 
