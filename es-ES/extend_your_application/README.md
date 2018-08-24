@@ -70,9 +70,9 @@ urlpatterns = [
 
 This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
 
-- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the url.
+- `/` – then we need a **/** again before finishing the URL.
 
 Esto quiere decir que si pones `http://127.0.0.1:8000/post/5/` en tu navegador, Django entenderá que estás buscando una *vista* llamada `post_detail` y transferirá la información de que `pk` es igual a `5` a esa *vista*.
 
@@ -80,7 +80,7 @@ OK, hemos añadido un nuevo patrón de URL a `blog/urls.py`! Actualizamos la pag
 
 ![AttributeError](images/attribute_error2.png)
 
-¿Recuerdas cuál es el próximo paso? Por supuesto: ¡agregar una vista!
+Do you remember what the next step is? It's adding a view!
 
 ## Añade una vista de detalle de la entrada
 
@@ -98,7 +98,7 @@ Pero este código tiene un problema. Si no hay ningún `Post` con esa `clave pri
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-¡No queremos eso! Pero, por supuesto, Django viene con algo que se encargará de ese problema por nosotros: `get_object_or_404`. En caso de que no haya ningún `Post` con el `pk` dado se mostrará una página mucho más agradable, `Page Not Found 404`.
+¡No queremos eso! But luckily Django comes with something that will handle that for us: `get_object_or_404`. En caso de que no haya ningún `Post` con el `pk` dado se mostrará una página mucho más agradable, `Page Not Found 404`.
 
 ![Page not found](images/404_2.png)
 
