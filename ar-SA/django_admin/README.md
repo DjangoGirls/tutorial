@@ -33,7 +33,7 @@ admin.site.register(Post)
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-عند الطلب، اكتب اسم المستخدم (أحرف صغيرة، لا مسافات)، وعنوان البريد الإلكتروني، وكلمة المرور. **لا تقلق أن كنت لا تستطيع رؤية كلمة المرور التي تكتبها – هكذا يجب ان تعمل-** اكتب فقط واضغط `إدخال` للمواصلة. يجب أن يظهر الناتج على هذا النحو (حيث يجب أن يكون اسم المستخدم والبريد الإلكتروني هو اسم المستخدم الخاص بك):
+عند الطلب، اكتب اسم المستخدم (أحرف صغيرة، لا مسافات)، وعنوان البريد الإلكتروني، وكلمة المرور. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. يجب أن يظهر الناتج على هذا النحو (حيث يجب أن يكون اسم المستخدم والبريد الإلكتروني هو اسم المستخدم الخاص بك):
 
     Username: admin
     Email address: admin@admin.com
@@ -46,7 +46,7 @@ admin.site.register(Post)
 
 ![دجانغو المشرف](images/django_admin3.png)
 
-انتقل إلى المشاركات وقم ببعض الإختبارات هناك. أضف خمس أو ست مشاركات مدونة. لا تقلق بشأن المحتوى - يمكنك ببساطة نسخ ولصق بعض النص من هذا البرنامج التعليمي لتوفير الوقت. :)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can copy-paste some text from this tutorial to save time. :)
 
 تأكد من أن اثنين أو ثلاث مشاركات على الأقل (ليس جميعها) لها تاريخ نشر. سوف يكون هذا مفيد لنا في وقت لاحق.
 
