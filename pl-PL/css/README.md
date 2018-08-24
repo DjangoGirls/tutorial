@@ -25,7 +25,7 @@ Aby zainstalować bibliotekę Bootstrap, musisz dodać poniższe linijki `<head>
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Akurat to nie doda żadnych nowych plików do twojego projektu. Te dwie linijki wskazują na pliki, które istnieją w Internecie. Sprawdź sama, otwórz swoją stronę w przeglądarce internetowej, odśwież zawartość. No i proszę!
+Akurat to nie doda żadnych nowych plików do Twojego projektu. Te dwie linijki wskazują na pliki, które istnieją w Internecie. Sprawdź sama, otwórz swoją stronę w przeglądarce internetowej, odśwież zawartość. No i proszę!
 
 ![Rysunek 14.1](images/bootstrap1.png)
 
