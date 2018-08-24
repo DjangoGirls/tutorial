@@ -6,7 +6,7 @@
 
 Stavíme sa, že Internet používaš každý deň. Ale vieš, čo sa deje, keď napíšeš adresu, ako https://djangogirls.org do prehliadača a stlačíš `enter`?
 
-Prvá vec, ktorú potrebuješ vedieť je, že webové stránky sú len kopa súborov uložených na pevnom disku. Podobne ako tvoje filmy, hudba a obrázky. Ale je tu jedna časť, ktorá je špecifická pre webové stránky: obsahujú počítačový kód nazývaný HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Podobne ako tvoje filmy, hudba a obrázky. Ale je tu jedna časť, ktorá je špecifická pre webové stránky: obsahujú počítačový kód nazývaný HTML.
 
 Pokiaľ nemáš skúsenosti s programovaní, môže byť pochopenie HTML zo začiatku zložité, ale tvoj webový prehliadač (ako Chrome, Safari, Firefox atď.) ho milujú. Webové prehliadače sú navrhnuté na to, aby rozumeli kódu, nasledovali jeho inštrukcie a prezentovali súbory, ktoré tvoria tvoju webovú stránku presne tak, ako to chceš.
 
@@ -22,7 +22,7 @@ Vyzerá to ako neporiadok, že? V skutočnosti je to sieť prepojených strojov 
 
 ![Obrázok 1.2](images/internet_3.png)
 
-Nie je to fascinujúce? Ale zjavne nie je možné mať kábel medzi každým strojom pripojeným k Internetu. Takže na to, aby sme boli schopní kontaktovať stroj (napríklad ten na ktorom je uložená stránka https://djangogirls.org) musíme poslať žiadosť cez mnoho, mnoho rozdielnych strojov.
+Nie je to fascinujúce? But it is not possible to have a wire between every machine connected to the Internet. Takže na to, aby sme boli schopní kontaktovať stroj (napríklad ten na ktorom je uložená stránka https://djangogirls.org) musíme poslať žiadosť cez mnoho, mnoho rozdielnych strojov.
 
 Vyzerá to takto:
 
@@ -34,7 +34,7 @@ Tvoj list ide na najbližšiu poštu. Potom ide na ďalšiu, ktorá je o čosi b
 
 ![Obrázok 1.4](images/internet_4.png)
 
-Áno, je to tak jednoduché. Pošleš správu a očakávaš nejakú odpoveď. Samozrejme, namiesto papiera a pera použijes byty dát, ale myšlienka je rovnaká!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Namiesto adries s menom ulice, mesta, PSČ a krajinou používame IP adresy. Tvoj počítač sa najprv opýta DNS (Domain Name System) aby preložil djangogirls.org na IP adresu. Funguje to trocha ako staré dobré telefónne zoznamy, kde si môžeš vyhľadať meno osoby ktorú chceš kontaktovať a nájsť jej telefón a adresu.
 
