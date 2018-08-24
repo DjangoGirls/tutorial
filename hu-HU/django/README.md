@@ -22,6 +22,6 @@ Képzelj el egy postást egy levéllel. Ahogy halad az utcán, minden házszámo
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Talán a felhasználó meg szeretne változtatni valamilyen adatot? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-Természetesen ez a leírást egy kicsit leegyszerűsítettünk, de még nem kell, hogy minden technikai részletet tudj. Elég, ha van egy általános elképzelésed.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Most ahelyett, hogy túlságosan belemennénk a részletekbe, egyszerűen csak elkezdünk létrehozni valamit a Djangóval, és menet közben fogjuk megtanulni a fontos részeket!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
