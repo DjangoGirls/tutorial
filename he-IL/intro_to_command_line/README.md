@@ -34,7 +34,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-ככל הנראה תחת: Applications → Accessories → Terminal אבל זה תלוי במערכת ההפעלה שלך. אם זה לא שם, פשוט חפשי בגוגל. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-אם את במקינטוש או Linux, את בטח רואה `$`, בדיוק כמו זה:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Go to Applications → Utilities → Terminal.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. You can ignore the left part and just type in the command which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## הפקודה הראשונה שלך (הידד!)
 
@@ -249,7 +249,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there just by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
