@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Musimy najpierw zaimportować formularze Django (`from django import forms`) oraz, naturalnie, nasz model wpisu (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`, jak zapewne podejrzewasz, to nazwa naszego formularza. Musimy poinformować Django, że ten formularz jest formularzem modelu (`ModelForm`), dzięki czemu Django wyręczy nas w pewnych czynnościach - właśnie za to odpowiada `forms.ModelForm`.
 
@@ -85,7 +85,7 @@ Po dodaniu powyższej linii Twój plik HTML powinien wyglądać następująco:
 </html>
 ```
 
-Po zapisaniu i odświeżeniu strony http://127.0.0.1:8000 zobaczyłaś oczywiście znajomo wyglądający błąd `NoReverseMatch`, zgadza się?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## Adres URL
 
@@ -374,7 +374,7 @@ Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokume
 
 ## Bezpieczeństwo
 
-Super, że możemy tworzyć posty po prostu klikając w link! Jest niestety jeden problem - aktualnie każdy, kto odwiedzi Twoją stronę, może stworzyć nowy post. Zróbmy tak, aby przycisk był widoczny tylko dla Ciebie i nikogo innego.
+Being able to create new posts by clicking a link is awesome! Jest niestety jeden problem - aktualnie każdy, kto odwiedzi Twoją stronę, może stworzyć nowy post. Zróbmy tak, aby przycisk był widoczny tylko dla Ciebie i nikogo innego.
 
 W `blog/templates/blog/base.html` znajdź `page-header` `div` i tag <0>a</0>, który umieściliśmy tam wcześniej. Powinien wyglądać tak:
 
