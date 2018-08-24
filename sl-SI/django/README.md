@@ -22,6 +22,6 @@ Predstavljaj si poštarja, ko dostavlja pismo. Ko hodi po ulici, da bi ga dostav
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Recimo, da želi uporabnik spremeniti svoje podatke, ki jih imamo shranjene v bazi. Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-Zgornji opis je resda malce poenostavljen, vendar pa povzame vse tisto, kar moraš zaenkrat vedeti.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Zdaj vemo dovolj, da se lahko začnemo ukvarjati z razvijanjem aplikacije. Vse ostale pomembne stvari bomo povedali sproti.
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
