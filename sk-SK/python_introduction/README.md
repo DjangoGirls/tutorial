@@ -624,12 +624,12 @@ Teraz uložíme súbor a dáme mu nejaký zrozumiteľný názov. Nazvime ho **py
 
 > **Poznámka** Všimni si jednu z najúžasnejších vecí editorov kódu: farby! V pythonskej konzole bolo všetko napísané jednou farbou, teraz však vidíš, že funkcia `print` je napísaná inou farbou ako reťazec. Toto sa nazýva "zvýraznenie syntaxe" a pri programovaní je to fakt užitočná vec. Farba výrazov ti môže pomôcť, ak máš neuzavretý reťazec či preklep v názve špeciálnych slov (ako napríklad `def` vo funkcii, ktorú uvidíme neskôr). Toto je jedným z dôvodov, prečo používame editor kódu. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Súbor máme uložený, je čas ho spustiť! Pomocou poznatkov z kapitoly o príkazovom riadku, pomocou Terminálu **zmeň adresár** na plochu.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Na Macu bude príkaz vyzerať takto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,7 +641,7 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+Na Linuxe to bude takto (slovo "Desktop" bude možno preložené):
 
 {% filename %}command-line{% endfilename %}
 
@@ -652,7 +652,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Vo Windowse v Command Prompt, to bude takto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -663,7 +663,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+A vo Windows Powershell bude príkaz vyzerať takto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,9 +672,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, just ask for help.
+Ak máš akékoľvek ťažkosti, stačí požiadať o pomoc.
 
-Now use Python to execute the code in the file like this:
+Teraz použi Python na spustenie kódu v súbore:
 
 {% filename %}command-line{% endfilename %}
 
@@ -682,7 +682,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Poznámka na Windowse python3 príkaz neexistuje. Použi python na spustenie súboru:
 
 {% filename %}command-line{% endfilename %}
 
@@ -690,15 +690,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Výborne! Práve si spustila svoj prvý pythonský program uložený v súbore. Skvelý pocit, však?
 
-You can now move on to an essential tool in programming:
+Teraz sa môžeš posunúť na ďalší základný nástroj v programovaní:
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Kopec vecí v kóde sa má spúšťať len ak sú splnené nejaké podmienky. Práve na to používa Python príkaz **if**.
 
-Replace the code in your **python_intro.py** file with this:
+Nahraď kód v súbore **python_intro.py** týmto:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,7 +706,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Ak to uložíš a spustíš, dostaneš túto chybu:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -716,7 +716,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python očakáva, že od nás dostane ďalšie inštrukcie, ktoré majú byť vykonané ak je podmienka `3 > 2` pravdivá (teda ak bude mať hodnotu `True`). Skúsme zariadiť, aby Python napísal "Funguje to!". Zmeň svoj kód v súbore **python_intro.py** takto:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -725,9 +725,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Všimla si si, ako sme odsadili druhý riadok o 4 medzery? To musíme urobiť preto, aby Python vedel, ktorú časť kódu má spustiť ak je výsledok pravdivý. Môžeš použiť len jednu medzeru, ale takmer všetci programátori v Pythone používajú 4 medzery, aby bol kód dobre čitateľný. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
-Save it and give it another run:
+Ulož to a spusti to znova:
 
 {% filename %}command-line{% endfilename %}
 
@@ -736,11 +736,11 @@ $ python3 python_intro.py
 Funguje to!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Poznámka: Zapamätaj si že Windows nepozná príkaz "python3". Od teraz a naďalej, nahraď "python3" príkazom "python"pri spúšťaní súborov.
 
 ### Čo ak podmienka nie je pravdivá?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+V predchádzajúcich príkladoch, bol kód vykonaný len vtedy, keď podmienky boli pravdivé. Ale Python má tiež príkazy `elif` a `else`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -751,7 +751,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+Keď to spustíš, vypíše to:
 
 {% filename %}command-line{% endfilename %}
 
@@ -759,7 +759,7 @@ When this is run it will print out:
     5 je naozaj viac ako 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Ak by 2 bolo väčšie ako 5, spustil by sa druhý príkaz. Jednoduché, nie? Pozrime sa, ako funguje `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -773,7 +773,7 @@ else:
     print('Ahoj neznama!')
 ```
 
-and executed:
+a po spustení:
 
 {% filename %}command-line{% endfilename %}
 
@@ -781,9 +781,9 @@ and executed:
     Ahoj Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Všimla si si, čo sa stalo? `elif` ti dovolí pridať dodatočné podmienky, ktoré sa spustia, ak sú predchádzajúce nesplnené.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Za prvý `if` môžeš dať `elif` toľkokrát, koľko len chceš. Napríklad:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -803,7 +803,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python prejde všetkými podmienkami v poradí a vypíše:
 
 {% filename %}command-line{% endfilename %}
 
@@ -813,9 +813,9 @@ Python runs through each test in sequence and prints:
 
 ## Komentáre
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Komentáre su riadky, ktoré sa začínajú s `#`. Po `#` môžeš napísať hocičo, Python to bude ignorovať. Komentáre urobia tvoj kód čitateľnejším pre iných ludí.
 
-Let's see how that looks:
+Pozrime sa ako to vyzerá:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -826,11 +826,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Nemusíš písať komentár pre každý riadok kódu čo napíšeš, ale je užitočné vysvetliť prečo tvoj kód niečo robǐ, alebo stručne popísať keď robí niečo zložité.
 
 ### Zhrnutie
 
-In the last few exercises you learned about:
+V posledných troch cvičeniach si sa naučila:
 
 - **porovnávať veci** - v Pythone môžeš porovnávať veci pomocou znamienok `>`, `>=`, `==`, `<=`, `<` a operátorov `and`, `or`
 - **Booleovské/logické premenné** - typ objektu, ktorý môže mať len jednu z dvoch hodnôt: `True` (pravda) alebo `False` (nepravda)
@@ -838,15 +838,15 @@ In the last few exercises you learned about:
 - **if... elif... else** - príkazy, ktoré ti umožňujú spustiť kód, iba ak sú splnené určité podmienky.
 - **comments** - lines that Python won't run which let you document your code
 
-Time for the last part of this chapter!
+Teraz je čas na poslednú časť tejto kapitoly!
 
 ## Tvoje vlastné funkcie!
 
 > Pre čitateľov doma: Táto kapitola je spracovaná v [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) videu.
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Pamätáš si funkcie ako napríklad `len()`, ktoré môžeš v Pythone spúšťať? Máme pre teba dobrú správu - teraz sa naučíš ako napísať vlastnú funkciu!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Funkcia je postupnosť inštrukcií, ktoré by mal Python spustiť. Každá funkcia v Pythone začína kľúčovým slovom `def`, má svoje meno a môže mať nejaké parametre. Skusme to. Nahraď kód v **python_intro.py** týmto:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -858,11 +858,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+OK, naša prvá funkcia je pripravená!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Možno sa čuduješ prečo sme na koniec súboru napísali názov funkcie. To preto, lebo Python číta súbor a vykonáva kód od vrchu po spodok. Takže aby sme mohli našu funkciu použiť, musíme jej názov napísať opäť.
 
-Let's run this now and see what happens:
+Spusťme to a pozrime sa, čo sa stane:
 
 {% filename %}command-line{% endfilename %}
 
@@ -871,13 +871,13 @@ Let's run this now and see what happens:
     Ako sa mas?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Poznámka: Ak nefunguje, nepanikár! Výstup ti pomôže zistiť dôvod, prečo:
 
 - Ak sa ti zjaví `NameError`, to znamená, že si niečo chybne napísala, takže by si mala overiť, že si použila rovnaké meno, keď si vytvárala pomocou `def hi()` a keď si ju zavolala pomocou `hi()`.
 - Ak sa ti zjaví `IndentationError`, uisti sa, že oba `print` riadky, majú rovnaký počet medzier od začiatku riadku: python vyžaduje aby všetky riadky boli pedatne zarovnané.
 - Ak nevidíš žiaden výstup, tak sa pozri či posledné `hi()` *nie je* odsadené - ak je, ten riadok sa stal súčasťou funkcie a nikdy nedojde k jeho spusteniu.
 
-Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+Poďme vytvoriť našu prvú funkciu s parametrami. Použijeme predchádzajúci príklad - funkcia, ktorá hovorí "ahoj" osobe, ktorá ju spustí - s menom:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -885,7 +885,7 @@ Let's build our first function with parameters. We will use the previous example
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Ako vidíš, dali sme našej funkcii parameter, ktorý sme nazvali `meno`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -901,7 +901,7 @@ def hi(meno):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Zapamätaj si: Funkcia `print` je odsadená o 4 medzery vo vnútri príkazu `if`. Je to preto, lebo funkcia sa spustí, len ak je splnená podmienka. Pozrime sa ako to funguje:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -912,7 +912,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'meno'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Ups, chyba. Našťastie Python nám dáva vcelku užitočnú chybovú hlášku. Hovorí nám, že funkcia `hi()` (tá, čo sme definovali) má jeden povinný argument (s názvom `meno`) a že sme mu ju zabudli zadať pri volaní funkcie. Opravme to na konci súboru:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -920,7 +920,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+A znova ho spusti:
 
 {% filename %}command-line{% endfilename %}
 
@@ -928,7 +928,7 @@ And run it again:
     Ahoj Ola!
     
 
-And if we change the name?
+A čo ak zmeníme meno?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -936,7 +936,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+A spustíme to:
 
 {% filename %}command-line{% endfilename %}
 
@@ -944,16 +944,16 @@ And run it:
     Ahoj Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+No a čo si myslíš, čo sa stane, ak tam napíšeš iné meno? (Nie Ola ani Sonja). Vyskúšaj a uvidíš, či bol tvoj predpoklad správny. Malo by ti vypísať toto:
 
 {% filename %}command-line{% endfilename %}
 
     Ahoj neznáma!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Úžasné, nie? Vďaka tomu nemusíš prepisovať dokola to isté zakaždým, keď chceš zmeniť meno osoby, ktorú má funkcia pozdraviť. A to je presne dôvod, prečo potrebujeme funkcie - aby sme nemuseli opakovať svoj kód!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+Urobme to teda trochu rozumnejšie - existujú viac ako dve mená a písať podmienku pre každé by bolo trochu náročné, však?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -964,7 +964,7 @@ def hi(meno):
 hi("Katka")
 ```
 
-Let's call the code now:
+Teraz spusťme kód:
 
 {% filename %}command-line{% endfilename %}
 
@@ -972,17 +972,17 @@ Let's call the code now:
     Ahoj Katka!
     
 
-Congratulations! You just learned how to write functions! :)
+Gratulujeme! Práve si sa naučila ako sa píšu funkcie! :)
 
 ## Cykly
 
 > Pre čitateľov doma: Táto kapitola je spracovaná v [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) videu.
 
-This is the last part already. That was quick, right? :)
+Toto je už posledná časť. Išlo to rýchlo, však? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Programátori sa neradi opakujú. Programovanie je o automatizácii vecí, takže nechceme zdraviť každú osobu manuálne, nie? A vtedy nám prídu vhod cykly.
 
-Still remember lists? Let's do a list of girls:
+Ešte si spomínaš na zoznamy? Pripravme zoznam dievčat:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -990,7 +990,7 @@ Still remember lists? Let's do a list of girls:
 dievcata = ['Katka', 'Monika', 'Zuzka', 'Ola', 'Ty']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Chceme ich pozdraviť všetky menom. Na to máme funkciu `hi`, tak ju použime v cykle:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -998,9 +998,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for meno in dievcata:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+Príkaz `for` sa správa podobne ako `if`; kód pod oboma z nich musí byť odsadený o štyri medzery.
 
-Here is the full code that will be in the file:
+Tu je plný kód, ktorý napíšeme do súboru:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1014,7 +1014,7 @@ for meno in dievcata:
     print('Dalsie dievca')
 ```
 
-And when we run it:
+A keď to spustíme:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1031,9 +1031,9 @@ And when we run it:
     Dalsie dievca
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Ako vidíš, všetko, čo dáš do príkazu `for` s oddsadením sa bude opakovať pre každý prvok zoznamu `dievcata`.
 
-You can also use `for` on numbers using the `range` function:
+`for` môžeš pomocou funkcie `range` použiť aj na čísla:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,7 +1042,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Čo vypíše:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,16 +1053,16 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` je funkcia, ktorá vytvára zoznam čísel s postupnosťou čísel (krajné čísla funkcii poskytneš ako parametre).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Všimni si, že druhé číslo sa nenachádza vo výstupnom zozname (teda `range(1, 6)` počíta od 1 po 5, ale neobsahuje číslo 6). To je preto, lebo "range" je jednostranne otvorený, čo znamená, že obsahuje prvú hodnotu, ale nie poslednú.
 
 ## Zhrnutie
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+To je všetko. **Si úplne geniálna!** Toto bola náročná kapitola, takže by si mala byť na seba pyšná. My sme rozhodne hrdí na teba, že si to zvládla až potiaľto!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Oficiálnu a plnú verziu tutoriálu najdeš na https://docs.python.org/3/tutorial/. Tam najdeš podrobnejšie a úplné informácie o jazyku. Nech sa darí :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Teraz na chvíľu si daj pauzu - natiahni sa trochu, poprechádzaj sa, nechaj svoje oči oddýchnuť si - a potom prejdeme na ďalšiu kapitolu. :)
 
-![Cupcake](images/cupcake.png)
+![Koláčik](images/cupcake.png)
