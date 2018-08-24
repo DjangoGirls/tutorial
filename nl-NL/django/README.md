@@ -22,6 +22,6 @@ Stel je een postbode met een brief voor. Ze loopt langs de straat en controleert
 
 In de *view* functie worden alle interessante dingen gedaan: we kunnen de database bekijken en er informatie uit opvragen. Misschien heeft de gebruiker gevraagd om iets in de data te wijzigen? Net zoals een brief met het verzoek "verander alsjeblieft de omschrijving van mijn baan", kan de *view* controleren of je daar wel toestemming voor hebt. Als je die toestemming hebt wordt de omschrijving geüpdatet en wordt een bericht teruggestuurd met: "Gedaan!" Vervolgens genereert de *view* een antwoord wat Django naar de webbrowser van de gebruiker kan sturen.
 
-Natuurlijk is de beschrijving hierboven een beetje vereenvoudigd, maar je hoeft nog niet alle technische dingen te begrijpen. Een algemeen idee van hoe het werkt is genoeg.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Dus inplaats van te veel in de details te gaan, zullen we simpelweg beginnen met iets in Django te maken en leren we de belangrijke onderdelen onderweg!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
