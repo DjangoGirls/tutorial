@@ -6,7 +6,7 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-Первое, что тебе нужно понять, это то, что веб-сайт представляет собой просто группу файлов, сохраненных на жестком диске. Так же, как твои фильмы, музыка или фотографии. Тем не менее, есть одна особенность, которая является уникальной для сайтов: они содержат компьютерный код, называемый HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Так же, как твои фильмы, музыка или фотографии. Тем не менее, есть одна особенность, которая является уникальной для сайтов: они содержат компьютерный код, называемый HTML.
 
 Если ты не знакома с программированием, то сначала может быть трудно понять HTML, но твой веб-браузер (например, Chrome, Safari, Firefox, и т. д.) обожает его. Веб-браузеры созданы для того чтобы понимать этот код, следовать его указаниям и представлять файлы, из которых состоит твой веб-сайт, именно так, как ты этого хочешь.
 
@@ -22,7 +22,7 @@ OK, but you want to know how the Internet looks, right?
 
 ![Рисунок 1.2](images/internet_3.png)
 
-Поразительно, не так ли? Однако, очевидно, что невозможно соединить кабелем каждую машину, подключенную к Интернету. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Поразительно, не так ли? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 Это выглядит приблизительно так:
 
@@ -34,7 +34,7 @@ Imagine that when you type https://djangogirls.org, you send a letter that says:
 
 ![Рисунок 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Вместо адресов с названием улицы, города, почтового индекса и названия страны мы используем IP-адреса. Твой компьютер сначала просит DNS (Domain Name System) перевести djangogirls.org в IP-адрес. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
