@@ -22,6 +22,6 @@ Mektup dağıtan bir postacı düşünün. Sokak boyunca yürüyor ve her evin n
 
 Tüm ilginç şeyler *view (görünüm)* fonksiyonunda yapılır: bir bilgi için veritabanına bakabiliriz. Belki de kullanıcı veride bir şeyin değişmesini istemiştir? "Lütfen iş tanımımı değiştirin." diyen bir mektup gibi. *View* bunu yapmaya izninizin olup olmadığını kontrol eder, iş tanımınızı sizin için günceller ve geri "Tamamdır!" mesajı yollar. Sonra *view* bir yanıt üretir ve Django bunu kullanıcının web tarayıcısına gönderebilir.
 
-Tabi ki yukarıdaki biraz basitleştirilmiş bir açıklama, ama şimdilik bütün teknik ayrıntıyı bilmene gerek yok. Genel bir fikrin olması yeterli.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Doğrudan çok fazla detaya girmek yerine, Django ile bir şeyler oluşturacağız ve önemli kısımları yolda öğreneceğiz!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
