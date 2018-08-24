@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-نحتاج إلى استيراد أشكال دجانغو أولا (`from django import forms`)، ومن الواضح أن نموذج `Post` من .(`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`,، كما كنت تظن ربما، هو اسم النموذج. نحن بحاجة إلى أن نقول لدجانغو ان هذا النموذج هو `ModelForm`(لذلك جانغو ستقوم ببعض السحر `forms.ModelForm` هو المسؤول عن ذلك.
 
@@ -85,7 +85,7 @@ class PostForm(forms.ModelForm):
 </html>
 ```
 
-سوف تشاهد بعد حفظ وتحديث الصفحة http://127.0.0.1:8000 من الواضح أن خطأ `NoReverseMatch` مألوف، اليس كذالك؟
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## عنوان الموقع URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## الحماية
 
-أن تكون قادر على خلق مشاركات جديدة فقط عن طريق النقر على رابط رائع! ولكن في الوقت الراهن، أي شخص يقوم بزيارة موقع الويب الخاص بك سوف يكون قادر على انشاء مشاركة جديدة، وهذا شيء ربما لا تريده. دعونا تجعل الزر يظهر لك و ليس لأي شخص آخر.
+Being able to create new posts by clicking a link is awesome! ولكن في الوقت الراهن، أي شخص يقوم بزيارة موقع الويب الخاص بك سوف يكون قادر على انشاء مشاركة جديدة، وهذا شيء ربما لا تريده. دعونا تجعل الزر يظهر لك و ليس لأي شخص آخر.
 
 في `blog/templates/blog/base.html`، تجد لدينا `page-header` `div` وعلامة مرساة كانت قد وضعت هناك مسبقا. ينبغي أن تبدو مثل هذا:
 
