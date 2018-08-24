@@ -34,7 +34,7 @@ Mac: Öffne das Launchpad → Andere → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Wahrscheinlich ist es unter Programme → Zubehör → Terminal, aber das ist von deinem System abhängig. Wenn es nicht da ist, google einfach schnell danach. :)
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Du solltest nun ein weißes oder schwarzes Fenster sehen, das auf deine Anweisun
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Auf einem Mac oder Linux, siehst du wahrscheinlich `$`, also so:
+If you're on Mac or Linux, you probably see `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Vor jedem Kommando wird dieses Zeichen und ein Leerzeichen vorangestellt, aber d
 
 Der Teil bis und einschließlich `$` oder `>` heißt *Kommandozeilen-Eingabeaufforderung* oder kurz *Eingabeaufforderung*. Es fordert dich auf, hier etwas einzugeben.
 
-Wenn wir im Tutorial wollen, dass du einen Befehl eingibst, schreiben wir `$` oder `>` mit hin, gelegentlich auch noch die anderen Angaben links davon. Du kannst dann den linken Teil einfach ignorieren und nur das Kommando eingeben, welches rechts der Eingabeaufforderung steht.
+Wenn wir im Tutorial wollen, dass du einen Befehl eingibst, schreiben wir `$` oder `>` mit hin, gelegentlich auch noch die anderen Angaben links davon. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Dein erstes Kommando (YAY!)
 
@@ -248,7 +248,7 @@ Wie wärs damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kann
 
 <!--endsec-->
 
-Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :)
+Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Versuch es. :)
 
 > Pro-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die `Pfeil aufwärts`- und `Pfeil abwärts`-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.
 
