@@ -70,9 +70,9 @@ urlpatterns = [
 
 This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
 
-- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the url.
+- `/` – then we need a **/** again before finishing the URL.
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
@@ -80,7 +80,7 @@ OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: htt
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? Of course: adding a view!
+Do you remember what the next step is? It's adding a view!
 
 ## Додамо деталі відображення запису
 
@@ -98,7 +98,7 @@ But this code has a problem. If there is no `Post` with the given `primary key` 
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
