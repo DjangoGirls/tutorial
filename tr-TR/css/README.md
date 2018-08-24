@@ -24,7 +24,7 @@ Bootstrap'ı kurmak için alttakileri `.html` dosyasının `<head>` kısmına ek
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Bu satırlar projeye yeni dosya eklemez. Ancak İnternet'te var olan dosyalara işaret eder. Haydi, tekrar websiteni tekrar aç ve yenile. İşte budur!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Şekil 14.1](images/bootstrap1.png)
 
@@ -36,7 +36,7 @@ Son olarak **statik dosyalar** diye bahsettiğimiz şeylere daha yakından bakal
 
 ### Django'da statik dosyaları nereye koymalı
 
-Django dahili "admin" uygulaması için statik dosyaları nerede bulacağını biliyor. Şimdi sadece kendi `blog` uygulamamız için bazı statik dosyalar eklememiz gerekiyor.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 Bunu blog uygulamamızın içine `static` isimli bir klasör oluşturarak yapacağız:
 
@@ -77,7 +77,7 @@ h1 a {
 }
 ```
 
-`h1 a` bir CSS seçicisidir (selector). Bu, stillerimizi `h1` öğesi içerisindeki `a` öğelerine uyguladığımız anlamına geliyor. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Elbette, buraya kendi arzu ettiğin rengi koyabilirsin!
+`h1 a` bir CSS seçicisidir (selector). Bu, stillerimizi `h1` öğesi içerisindeki `a` öğelerine uyguladığımız anlamına geliyor. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Or you can put your own color here!
 
 Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiket olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` class'ı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
@@ -201,7 +201,7 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
 </div>
 ```
 
-Şimdi farklı seçicilere (selectors) bildirim (deklarasyon) blokları ekleyeceğiz. `.` ile başlayan seçiciler sınıflara işaret eder. Web'de, aşağıdaki kodu anlamanıza yardımcı olacak pek çok güzel CSS öğreticisi ve açıklama mevcut. Şimdilik sadece bu kodu kopyalayıp `blog/static/css/blog.css` dosyamıza yapıştıralım:
+Şimdi farklı seçicilere (selectors) bildirim (deklarasyon) blokları ekleyeceğiz. `.` ile başlayan seçiciler sınıflara işaret eder. Web'de, aşağıdaki kodu anlamanıza yardımcı olacak pek çok güzel CSS öğreticisi ve açıklama mevcut. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
