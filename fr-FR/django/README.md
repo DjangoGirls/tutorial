@@ -22,6 +22,6 @@ Afin d'y voir un peu plus clair, imaginez un facteur transportant une lettre. Il
 
 C'est dans la fonction de la *vue* que les choses se passent : nous allons pouvoir jeter un œil dans la base de données pour obtenir d'avantage d'informations. Par exemple, peut-être que l'utilisateur demande à changer quelque chose dans ces données ? Ce serait comme une lettre dont le contenu serait : "Merci de changer la description de mon emploi actuel". La *vue* va tout d'abord vérifier que l'utilisateur est bien autorisé à effectuer ce changement puis elle corrigera la description de l'emploi. Enfin, la *vue* générera une réponse de type "Travail terminé !" que Django pourra retourner à l'utilisateur.
 
-Bien sûr, ceci n'est qu'une description très simplifiée du processus. Vous n'avez pas besoin de connaître tous les détails techniques pour le moment : cette vue d'ensemble suffira largement.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Au lieu de vous assommer avec des détails complexes sur comment tout cela fonctionne, nous allons plutôt commencer à construire quelque chose ! Nous vous donnerons toutes les informations importantes au fur et à mesure que vous progresserez. Ce sera plus sympa, non ?
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
