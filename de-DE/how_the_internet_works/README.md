@@ -6,7 +6,7 @@
 
 Wahrscheinlich nutzt du das Internet jeden Tag. Aber weißt du, was passiert, wenn du eine Adresse wie https://djangogirls.org im Browser eingibst und `enter` drückst?
 
-Als Erstes solltest du wissen, dass eine Webseite meist nur ein paar Dateien auf der Festplatte sind. Genau wie deine Filme, Musik oder Bilder. Das Besondere an Webseiten ist, dass sie aus speziellem Computer-Code bestehen, das sogenannte HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Genau wie deine Filme, Musik oder Bilder. Das Besondere an Webseiten ist, dass sie aus speziellem Computer-Code bestehen, das sogenannte HTML.
 
 Wenn du noch nie etwas mit Programmierung zu tun hattest, kann auch HTML zuerst abschreckend aussehen, aber dein Browser (Chrome, Safari, Firefox, etc.) liebt es. Browser sind so entworfen, dass sie diesen Code verstehen, seinen Anweisungen folgen können und diese Dateien, aus denen deine Website besteht, genau so darstellen, wie du es möchtest.
 
@@ -22,7 +22,7 @@ Ziemliches Durcheinander, oder? Eigentlich ist es ein Netzwerk aus verbundenen M
 
 ![Abbildung 1.2](images/internet_3.png)
 
-Faszinierend, oder? Offensichtlich ist es nicht möglich, Kabel zwischen allen Servern des Internet zu schalten. Damit wir eine Maschine (z.B. diejenige, auf welcher https://djangogirls.org abgespeichert ist) erreichen können, muss unsere Anfrage über viele verschiedene andere Maschinen weitergeleitet werden.
+Faszinierend, oder? But it is not possible to have a wire between every machine connected to the Internet. Damit wir eine Maschine (z.B. diejenige, auf welcher https://djangogirls.org abgespeichert ist) erreichen können, muss unsere Anfrage über viele verschiedene andere Maschinen weitergeleitet werden.
 
 Das sieht ungefähr so aus:
 
@@ -34,7 +34,7 @@ Der Brief kommt ins Postamt in deiner Nähe. Von da aus gelangt er zu einem ande
 
 ![Abbildung 1.4](images/internet_4.png)
 
-So einfach ist das im Prinzip. Du sendest Nachrichten und erwartest eine Antwort. Anstelle von Papier und Stift verwendest du Daten (Byte für Byte), aber die Idee ist dieselbe!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Anstelle von Adressen mit Straße, Ort und Postleitzahl verwenden wir IP-Adressen. IP steht für Internet Protocol. Dein Computer fragt erst das DNS (Domain Name System), um die (von Menschen besser lesbare) Adresse djangogirls.org in die (besser von Maschinen lesbare) IP-Adresse umzuwandeln. Das DNS ist ein bisschen wie ein altmodisches Telefonbuch aus Papier, in dem du den Namen einer Person, die Du kontaktieren willst, suchen und die Telefonnummer und Adresse nachgucken kannst.
 
