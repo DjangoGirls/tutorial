@@ -89,7 +89,7 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 
 ![](images/new_github_repo.png)
 
-> ** * * ملاحظة * * اسم 'my-first-blog' مهم – يمكن أن تختار شيئا آخر، لكن هذا سيأخد الكثير من الوقت في الإرشادات الموجودة أدناه، وسيكون عليك استبداله كل مرة. ربما من الأسهل الإبقاء على اسم 'my-first-blog'.</p> </blockquote> 
+> ** * * ملاحظة * * اسم 'my-first-blog' مهم – يمكن أن تختار شيئا آخر، لكن هذا سيأخد الكثير من الوقت في الإرشادات الموجودة أدناه، وسيكون عليك استبداله كل مرة. It's probably easier to stick with the name `my-first-blog`.</p> </blockquote> 
 > 
 > في الشاشة التالية، سوف يظهر لك رابط استنساخ المستودع الخاص بك. اختر نسخة "HTTPS"،ثم قم بنسخ الرابط سنحتاجه بعد قليل:
 > 
@@ -215,4 +215,4 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > 
 > Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 > 
-> Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet, just like that!
+> Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
