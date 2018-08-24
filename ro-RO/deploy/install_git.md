@@ -12,7 +12,7 @@ Să nu uităm să restartăm linia de comandă sau powershell-ul după ce instal
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Descărcăm Git aici [git-scm.com](https://git-scm.com/) şi urmăm instrucţiunile.
+Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
 
 > **Notă** Dacă e rulat OS X 10.6, 10.7 sau 10.8, trebuie de instalat versiunea Git-ului de aici: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
