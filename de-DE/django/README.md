@@ -22,6 +22,6 @@ Stell dir eine Postbotin mit einem Brief vor. Sie geht die Straße entlang und p
 
 In der *view* Funktion passieren all die interessanten Dinge: wir können in eine Datenbank gucken und dort nach Informationen suchen. Vielleicht wollte die Benutzerin irgendetwas in den Daten ändern? So, als ob der Brief sagen würde: "Bitte ändere meine Stellenbeschreibung!" Die Funktion *view* kann nun prüfen, ob du dazu berechtigt bist, im positiven Fall die Änderungen durchführen und im Anschluss eine Bestätigungs-Nachricht zurücksenden. Die *view* generiert dann eine Antwort und Django kann diese an den Webbrowser der Benutzerin senden.
 
-Natürlich, ist die Beschreibung oben ein wenig vereinfacht, aber du musst noch nicht all die technischen Details wissen. Eine generelle Vorstellung zu haben, reicht erstmal.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Anstatt zu sehr ins Detail zu gehen, starten wir lieber damit, etwas Praktisches mit Django anzustellen. Du wirst die wichtigen Dinge im Laufe der Zeit lernen!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
