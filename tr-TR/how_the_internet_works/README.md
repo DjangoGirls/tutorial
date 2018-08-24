@@ -6,7 +6,7 @@
 
 İddia ediyoruz ki her gün İnternet'i kullanıyorsunuz. Fakat tarayıcınıza https://djangogirls.org gibi bir adres girip `enter` tuşuna bastığınızda neler olduğunu biliyor musunuz?
 
-Öncelikle bir web sitesinin bir sabit diske kaydedilmiş bir grup dosya olduğunu anlamanız gerekir. Tıpkı filmleriniz, müzikleriniz ya da resimleriniz gibi. Ancak, web sitelerine özel şöyle bir durum var: HTML adı verilen bir bilgisayar kodu içerirler. 
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Tıpkı filmleriniz, müzikleriniz ya da resimleriniz gibi. Ancak, web sitelerine özel şöyle bir durum var: HTML adı verilen bir bilgisayar kodu içerirler. 
 
 Eğer programlamaya aşina değilseniz HTML'yi kavramak başlangıçta zor olabilir, ama web tarayıcılarınız (Chrome, Safari, Firefox, vs.) ona bayılıyor. Web tarayıcılarınız bu kodu anlamak, komutlarını yerine getirmek ve size bu websitesini oluşturan dosyaları sunmak için tasarlanmıştır, tam da olmasını istediğiniz gibi.
 
@@ -22,7 +22,7 @@ Size bir resmini çizdik, İnternet işte buna benzer:
 
 ![Şekil 1.2](images/internet_3.png)
 
-Büyüleyici, değil mi? Ama açıkça belli ki, İnternet'e bağlanan tüm makineler arasında kablolar olması mümkün değil. Yani, bir makineye erişmek için (örneğin, https://djangogirls.org sitesinin kayıtlı olduğu) birçok farklı makine üzerinden istek geçmesi gereklidir.
+Büyüleyici, değil mi? But it is not possible to have a wire between every machine connected to the Internet. Yani, bir makineye erişmek için (örneğin, https://djangogirls.org sitesinin kayıtlı olduğu) birçok farklı makine üzerinden istek geçmesi gereklidir.
 
 Şöyle gözükmekte:
 
@@ -34,7 +34,7 @@ Mektubunuz size en yakın postaneye gider. Daha sonra sizden biraz daha uzak bir
 
 ![Şekil 1.4](images/internet_4.png)
 
-Bu işler böyle yürür. Mesajlar gönderirsiniz ve cevap beklersiniz. Tabiiki, kağıt ve kalem yerine veri baytları kullanırsınız, fakat fikir aynıdır!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Sokak adı, şehir, alan kodu ve ülke adı yerine, biz IP adreslerini kullanırız. Bilgisayarınız ilk olarak DNS'den (Domain Name System - Alan Adı Sistemi) djangogirls.org adresini bir IP adresine çevirmesini ister. Bu bir nebze burada iletişim kurmak istediğiniz kişinin adına bakarak telefon numarası ve adresini bulabildiğiniz eski telefon rehberleri gibi çalışır.
 
