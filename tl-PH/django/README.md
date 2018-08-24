@@ -22,6 +22,6 @@ Isipan ang isang tagapagpadala ng mga sulat na may dalang liham. Naglalakad siya
 
 Sa *view* na function, lahat ng mga kaayayang mga bagay ay nagawa, pede mong tingnan ang database para magkuha ng mga impormasyon. Maaring hiniling ng user na baguhin ang data? Gaya ng isang liham na nagsasabing, "Pakipalitan ang paglalarawan ng aking trabaho." Maaring tingnan ng *view* kung ikaw ay may pahintulot na gawin ito, saka i-update niya ang paglalarawan ng trabaho para sa iyo at magpapadala ng mensahe na: "Tapos na!". Pagkatapos ang *view* ay gagawa ng sagot at ipapadala ito ni Django sa web browser ng user.
 
-Syempre, ang paglalarawan sa itaas ay ginawang simple, pero hindi mo pa kailangang malaman ang lahat ng mga teknikal na bagay. Ang pagkaroon ng pangkaraniwang ideya ay sapat na.
+The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
-Kaysa humatak ka sa napakaraming mga detalye, gagawa lang tayo ng mga bagay sa Django at ating pag-aralan ang mga importanteng parte na ating madaanan!
+So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
