@@ -6,7 +6,7 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-Prva stvar koju treba da shvatite je da je svaki veb-sajt samo gomila fajlova na hard disku. Baš kao i vaši filmovi, muzika ili slike. Međutim, jedna stvar je jedinstvena za veb-sajtove: svi uključuju kompjuterski kod zvan HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Baš kao i vaši filmovi, muzika ili slike. Međutim, jedna stvar je jedinstvena za veb-sajtove: svi uključuju kompjuterski kod zvan HTML.
 
 Ako niste upoznate sa programiranjem, u početku može biti teško razumeti HTML, ali ga vaši brauzeri (poput Chrome-a, Safari-a, Firefox-a itd.) vole. Brauzeri su dizajnirani tako da razumeju ovaj kod, prate njegova uputsva i prikazuju ove fajlove od kojih se vaš veb-sajt sastoji, baš na način kako želite.
 
@@ -22,7 +22,7 @@ Potpuni nered, zar ne? In fact it is a network of connected machines (the above-
 
 ![Slika 1.2](images/internet_3.png)
 
-Fascinantno, zar ne? Ali, očigledno, nije moguće imati žicu izmeću svih mašina povezanih na internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Fascinantno, zar ne? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 To izgleda ovako:
 
@@ -34,7 +34,7 @@ Vaše pismo ide do pošte najbliže vama. Zatim ide do još jedne koja je malo b
 
 ![Slika 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Umesto adrese koja se sastoji od naziva ulice, grada, poštanskog broja i naziva zemlje, koristimo IP adrese. Vaš računar prvo pita DNS (Domain Name System) da prevede djangogirls.org u IP adresu. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
