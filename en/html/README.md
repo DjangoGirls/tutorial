@@ -24,7 +24,7 @@ blog
     └───blog
 ```
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
