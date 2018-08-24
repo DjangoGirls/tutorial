@@ -23,7 +23,7 @@ HTML (от англ. "HyperText Markup Language") - язык гипертекс�
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 Теперь создай файл `post_list.html` (для начала оставь его пустым) внутри директории `blog/templates/blog`.
 
