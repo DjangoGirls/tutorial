@@ -25,7 +25,7 @@ Pour installer Bootstrap, il vous faut ajouter ceci à votre `<head>` dans votre
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Ceci n'ajoute aucun fichier à votre projet. Il ne fait que pointer vers des fichiers qui existent sur Internet. Allez-y, ouvrez votre site Web et rafraîchissez la page. Le voilà !
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Figure 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Enfin, allons jeter un coup d'œil à ces **fichiers statiques** dont nous n'arr
 
 ### Où ranger les fichiers statiques dans Django ?
 
-Django sait déjà où trouver les fichiers statiques pour la partie « admin ». Maintenant, il ne nous reste plus qu'à ajouter les fichiers statiques liés à notre app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 Pour cela, nous allons créer un dossier appelé `static` à l'intérieur de notre appli blog :
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` est un sélecteur CSS. Cela signifie que notre style est appliqué sur tous les éléments `a` contenu dans un élément `h1`. Donc lorsque nous avons quelque chose comme `<h1><a href="">lien</a></h1>`, le style `h1 a` est appliqué. Dans notre cas, nous lui indiquons de changer sa couleur en `#FCA205`, c'est à dire en orange. Bien évidemment, vous êtes libre de choisir n'importe quelle couleur !
+`h1 a` est un sélecteur CSS. Cela signifie que notre style est appliqué sur tous les éléments `a` contenu dans un élément `h1`. Donc lorsque nous avons quelque chose comme `<h1><a href="">lien</a></h1>`, le style `h1 a` est appliqué. Dans notre cas, nous lui indiquons de changer sa couleur en `#FCA205`, c'est à dire en orange. Or you can put your own color here!
 
 Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. La première façon pour identifier des éléments, c'est avec leur nom d'élément. Vous vous en souviendrez car ces noms proviennent des balises HTML. Exemple : `a`, `h1` et `body` sont tous des noms d'élément. Vous pouvez aussi identifier les éléments par leur attribut `class` ou `id`. La classe et l'identifiant sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les identifiants pointent un élément spécifique. Par exemple, vous pouvez identifier la ligne suivant par le nom `a`, la classe `.external_link`, ou l'identifiant `#link_to_wiki_page` :
 
@@ -202,7 +202,7 @@ Maintenant, ajoutez la classe `post` à votre `div` contenant votre billet de bl
 </div>
 ```
 
-Nous allons maintenant ajouter des blocs de règles aux différents sélecteurs. Les sélecteurs qui commencent par `.` désignent des classes. De nombreux tutoriels et explications sur le CSS existent sur le Web, cela pourra vous aider qui à comprendre le code suivant. Pour l'instant, copier-coller le code qui suit dans votre fichier `blog/static/css/blog.css` :
+Nous allons maintenant ajouter des blocs de règles aux différents sélecteurs. Les sélecteurs qui commencent par `.` désignent des classes. De nombreux tutoriels et explications sur le CSS existent sur le Web, cela pourra vous aider qui à comprendre le code suivant. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
