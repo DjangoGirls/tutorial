@@ -28,7 +28,7 @@ Queremos abrir una consola de Python, así que escribe `python` en Windows o `py
 
 Después de ejecutar el comando de Python, el cursor cambiará a `>>>`. Para nosotros esto significa que por ahora sólo podemos utilizar comandos del lenguaje Python. No tienes que escribir e`>>>` pues Python lo hará por ti.
 
-Si deseas salir de la consola de Python en cualquier momento, simplemente escribe `exit()` o usa el atajo `Ctrl + Z` para Windows, o `Ctrl + D` para Mac/Linux. Luego no verás más `>>>`.
+If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Luego no verás más `>>>`.
 
 Por ahora, no queremos salir de la consola de Python. Deseamos aprender más sobre ella. Vamos a comenzar escribiendo algo de matemática, escribe `2 + 3` y oprime la tecla `enter`.
 
@@ -107,7 +107,7 @@ o escapar el apóstrofe con la diagonal inversa (``):
 "Runnin' down the hill"
 ```
 
-Bien, ¿eh? Para ver tu nombre en letras mayúsculas, sencillamente escribe:
+Nice, huh? To see your name in uppercase letters, type:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ Supongamos que queremos crear una nueva variable llamada `name`:
 
 Tecleamos que nombre es igual a Ola.
 
-Como habrás notado, el programa no devuelve nada como lo hacía antes. ¿Cómo sabemos que la variable existe realmente? Sencillamente escribe `name` y pulsa `enter`:
+As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ También puedes usarla dentro de funciones:
 5
 ```
 
-Increíble, ¿verdad? Por supuesto, las variables pueden ser cualquier cosa, ¡también números! Prueba esto:
+Awesome, right? Now, variables can be anything – numbers too! Try this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -414,7 +414,7 @@ KeyError: 'age'
 
 ¡Mira, otro error! Este es un **KeyError**. Python te ayuda y te dice que la llave `'age'` no existe en este diccionario.
 
-¿Cuando deberías usar un diccionario o una lista? Bueno, es un buen punto para reflexionar. Simplemente ten una solución en mente antes de buscar una respuesta en la siguiente línea.
+When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
 
 - ¿Sólo necesitas una secuencia ordenada de elementos? Usa una lista.
 - ¿Necesitas asociar valores con claves, así puedes buscarlos eficientemente (usando las claves) más adelante? Utiliza un diccionario.
@@ -438,7 +438,7 @@ Como las listas, usando el método `len()` en los diccionarios devulven el núme
 
 Espero tenga sentido hasta ahora. :) ¿Listo para más diversión con diccionarios? Salta a la siguiente línea para algunas cosas sorprendentes.
 
-Puedes utilizar el comando `pop()` para borrar un elemento en el diccionario. Por ejemplo, si deseas eliminar la entrada correspondiente a la clave `'favorite_numbers'`, sólo tienes que escribir el siguiente comando:
+Puedes utilizar el comando `pop()` para borrar un elemento en el diccionario. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ Como puedes ver, el valor de la llave `'country'` ha sido modificado de `'Poland
 
 > Para lectores en casa: este capítulo está cubierto en el video [Bases de Python: Comparaciones](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-Una gran parte de la programación incluye comparar cosas. ¿Qué es lo más fácil para comparar? Números, por supuesto. Vamos a ver cómo funciona:
+A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
 {% filename %}command-line{% endfilename %}
 
@@ -557,7 +557,7 @@ Hay sólo dos objetos booleanos:
 - True - verdadero
 - False - falso
 
-Pero para que Python entienda esto, siempre los tienes que escribir de modo 'True' (la primera letra en mayúscula, con el resto de las letras en minúscula). **true, TRUE, tRUE no funcionarán -- solo True es correcto.** (Lo mismo aplica para 'False', por supuesto.)
+Pero para que Python entienda esto, siempre los tienes que escribir de modo 'True' (la primera letra en mayúscula, con el resto de las letras en minúscula). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
 Los valores booleanos pueden ser variables, también. Ve el siguiente ejemplo:
 
@@ -599,7 +599,7 @@ Hasta ahora hemos escrito todo nuestro código Python en el intérprete, lo cual
 - Guardar algo de código en un nuevo archivo de Python
 - ¡Ejecutarlo!
 
-Para salir del intérprete de Python que hemos estado usando, simplemente escribe la función `exit()`
+To exit from the Python interpreter that we've been using, type the `exit()` function
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,7 +672,7 @@ Y en Powershell, será así:
 
 <!--endsec-->
 
-Si te quedas atascada, sólo pide ayuda.
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
 Ahora usa Python para ejecutar el código en el archivo así:
 
