@@ -204,6 +204,6 @@ $ workon <your-pythonanywhere-username>.pythonanywhere.com
 
 The `manage.py collectstatic` command is a bit like `manage.py migrate`.  We make some changes to our code, and then we tell Django to _apply_ those changes, either to the server's collection of static files, or to the database.
 
-In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
 
 And that should be it! Congrats :)
