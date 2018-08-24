@@ -4,7 +4,7 @@ Kami akan membuat laman web pertama kami: beranda untuk blog Anda! Tapi pertama,
 
 ## Apa itu URL?
 
-URL hanyalah sebuah alamat web. Anda dapat melihat URL setiap kali mengunjungi situs web - ini terlihat di bilah alamat browser Anda. (Iya nih! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+A URL is a web address. Anda dapat melihat URL setiap kali mengunjungi situs web - ini terlihat di bilah alamat browser Anda. (Iya nih! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
 
 ![Url](images/url.png)
 
