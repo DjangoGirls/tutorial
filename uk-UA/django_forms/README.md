@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Спершу потрібно імпортувати Django форми (`from django import forms`) і, очевидно, нашу модель `Post` (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`, як ви можливо зазначили, ім'я нашої форми. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
@@ -85,7 +85,7 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-Після збереження та оновлення сторінки http://127.0.0.1:8000 ви звісно побачите знайому помилку `NoReverseMatch`, правда?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Безпека
 
-Створювати нові публікації просто клацаючи на посилання класно! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
 В `blog/templates/blog/base.html`, знайдіть наш `page-header` `div` і тег посилання який ви додали туди раніше. Вони повинні виглядати якось так:
 
