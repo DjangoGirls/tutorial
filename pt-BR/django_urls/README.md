@@ -4,7 +4,7 @@ Estamos prestes a construir nossa primeira página Web: uma página inicial para
 
 ## O que é uma URL?
 
-Uma URL é simplesmente um endereço da web. Você pode ver uma URL toda vez que você visita um website - ela aparece na barra de endereços do seu navegador. (Sim! `127.0.0.1:8000` é uma URL! E `https://djangogirls.org` também é uma URL.)
+A URL is a web address. Você pode ver uma URL toda vez que você visita um website - ela aparece na barra de endereços do seu navegador. (Sim! `127.0.0.1:8000` é uma URL! E `https://djangogirls.org` também é uma URL.)
 
 ![URL](images/url.png)
 
