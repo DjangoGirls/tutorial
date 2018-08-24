@@ -12,7 +12,7 @@ Nezabudni reštartovať príkazový riadok alebo powershell po úspešnom dokon�
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Stiahni si Git z [git-scm.com](https://git-scm.com/) a riaď sa inštrukciami.
+Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
 
 > **Poznámka:** Ak používaš OS X 10.6, 10.7 alebo 10.8, budeš musieť nainštalovať verziu git-tu odtialto: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
