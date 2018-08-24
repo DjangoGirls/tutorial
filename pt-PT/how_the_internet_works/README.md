@@ -6,7 +6,7 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-A primeira coisa que precisas de perceber é que um website é só um monte de ficheiros gravados num disco rígido. Tal como os teus filmes, música ou fotos. No entanto, há uma coisa que é única dos websites: incluem código chamado HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Tal como os teus filmes, música ou fotos. No entanto, há uma coisa que é única dos websites: incluem código chamado HTML.
 
 Se não és familiar com programação pode ser difícil perceber HTML ao início, mas os teus browsers (como o Chrome, Safari, Firefox, etc) adoram-no. Browsers são desenhados para perceber este código, seguir as suas instruções, e apresentar estes ficheiros que constroem o teu site exactamente da forma que queres.
 
@@ -22,7 +22,7 @@ Parece uma confusão, certo? In fact it is a network of connected machines (the 
 
 ![Figura 1.2](images/internet_3.png)
 
-Fascinante, não é? Mas, obviamente, não é possível haver um cabo entre cada duas máquinas ligadas à Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Fascinante, não é? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 Parece-se com isto:
 
@@ -34,7 +34,7 @@ A carta vai para os correios mais próximos de ti. Depois vai para outros que fi
 
 ![Figura 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Em vez de moradas com nomes de ruas, código postal e nome do país, usamos endereços de IP. Primeiro, o teu computador pede ao DNS (do inglês *Domain Name System*, Sistema de Nomes de Domínios) que traduza djangogirls.org para um endereço de IP. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
