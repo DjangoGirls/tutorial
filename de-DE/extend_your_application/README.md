@@ -70,9 +70,9 @@ urlpatterns = [
 
 Der Teil `post/<int:pk>/` definiert ein URL-Muster – wir erklären es dir:
 
-- `post/` heißt lediglich, dass die URL mit dem Wort **post** beginnen sollte, gefolgt von einem **/**. So weit, so gut.
+- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – Der Teil ist schwieriger. Er bedeutet, dass Django einen Integer-Wert erwartet und diesen in Form einer Variablen namens `pk` zu einer View weitergibt.
-- `/` – dann wir brauchen wieder vor dem Abschluss der URL einen **/**.
+- `/` – then we need a **/** again before finishing the URL.
 
 Also wenn du `http://127.0.0.1:8000/post/5/` in deinen Browser eingibst, wird Django verstehen, dass du nach einer *View* suchst, die `post_detail` heißt, und wird der *View* eine Variable `pk` übergeben, die eine `5` enthält.
 
@@ -80,7 +80,7 @@ So, jetzt haben wir der `blog/urls.py` ein neues URL-Muster hinzugefügt! Lass u
 
 ![AttributeError](images/attribute_error2.png)
 
-Erinnerst du dich, was der nächste Schritt ist? Natürlich: eine View hinzufügen!
+Do you remember what the next step is? It's adding a view!
 
 ## Füge eine View hinzu
 
@@ -98,7 +98,7 @@ Aber bei diesem Code gibt es ein Problem. Wenn es kein `Post`-Objekt mit diesem 
 
 ![DoesNotExist Error](images/does_not_exist2.png)
 
-Das wollen wir nicht! Natürlich stellt uns Django etwas zur Verfügung, um dieses Problem zu umgehen: `get_object_or_404`. Wenn es kein `Post`-Objekt mit einem gegebenen `pk` gibt, wird eine schöne Seite angezeigt, die sogenannte `Page Not Found 404` Seite ("Seite nicht gefunden"-Seite).
+Das wollen wir nicht! But luckily Django comes with something that will handle that for us: `get_object_or_404`. Wenn es kein `Post`-Objekt mit einem gegebenen `pk` gibt, wird eine schöne Seite angezeigt, die sogenannte `Page Not Found 404` Seite ("Seite nicht gefunden"-Seite).
 
 ![Page not found](images/404_2.png)
 
