@@ -70,9 +70,9 @@ urlpatterns = [
 
 This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
 
-- `post/` just means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the url.
+- `/` – then we need a **/** again before finishing the URL.
 
 นั่นหมายถึง ถ้าคุณป้อน `http://127.0.0.1:8000/post/5/` เข้าไปยังเบราว์เซอร์ของคุณ Django จะเข้าใจว่าคุณกำลังมองหา *view* ที่ชื่อว่า `post_detail` และส่งข้อมูลคือ `pk` ซึ่งมีค่าเท่ากับ `5` ไปยัง *view*
 
@@ -80,7 +80,7 @@ OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: htt
 
 ![AttributeError](images/attribute_error2.png)
 
-คุณจำได้มั้ยว่าขึ้นตอนต่อไปคืออะไร? แน่นอน: การเพิ่ม view ใหม่!
+Do you remember what the next step is? It's adding a view!
 
 ## เพิ่ม view รายละเอียดของโพสต์
 
@@ -98,7 +98,7 @@ Post.objects.get(pk=pk)
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-เราไม่ต้องการแบบนี้! แต่ แน่ล่ะ Django มาพร้อมกับสิ่งที่สามารถจัดการปัญหานี้ได้: `get_object_or_404` ในกรณีที่ไม่มี `Post` จากค่า `pk` ที่ส่งไป มันจะแสดงหน้าเว็บที่ดูดีกว่าให้เรา (เรียกว่าหน้า `Page Not Found 404`)
+เราไม่ต้องการแบบนี้! But luckily Django comes with something that will handle that for us: `get_object_or_404`. ในกรณีที่ไม่มี `Post` จากค่า `pk` ที่ส่งไป มันจะแสดงหน้าเว็บที่ดูดีกว่าให้เรา (เรียกว่าหน้า `Page Not Found 404`)
 
 ![Page not found](images/404_2.png)
 
