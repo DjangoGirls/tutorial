@@ -33,7 +33,7 @@ Giriş yapabilmek için, sitedeki her şey üzerinde kontrolü olan *superuser* 
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Giriş satırı geldiğinde, kullanıcı adınızı (küçük harfler ile ve boşluksuz), email adresinizi ve parolanızı girin. **Yazdığınız şifreyi göremezseniz endişelenmeyin - olması gereken budur.** Devam etmek için şifreyi yazıp `enter` 'a basın. Çıktı şunun gibi olmalıdır ( belirtilen kullanıcı adı ve eposta size ait olmalı):
+Giriş satırı geldiğinde, kullanıcı adınızı (küçük harfler ile ve boşluksuz), email adresinizi ve parolanızı girin. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. Çıktı şunun gibi olmalıdır ( belirtilen kullanıcı adı ve eposta size ait olmalı):
 
     Username: admin
     Email address: admin@admin.com
@@ -46,7 +46,7 @@ Tarayıcınıza dönün. Oluşturduğunuz superuser'ın bilgileri ile giriş yap
 
 ![Django admin](images/django_admin3.png)
 
-Mesajlara gidin ve biraz kurcalayın. Beş altı blog yazısı ekleyin. İçeriği kafanıza takmayın - zamandan kazanmak için basitçe bu tutorialdan birkaç yazı kopyalayıp yapıştırabilirsiniz. :)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can copy-paste some text from this tutorial to save time. :)
 
 En azından iki ya da üç yazıya (ama hepsinin değil) yayınlama tarihi girdiğinizden emin olun. Bunu ileriki adımlarda kullanacağız.
 
