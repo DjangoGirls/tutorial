@@ -93,7 +93,7 @@ Potom vytvor nové úložisko a pomenuj ho "my-first-blog". Checkbox "inicializu
 
 ![](images/new_github_repo.png)
 
-> **Poznámka** Názov `my-first-blog` je dôležitý -- mohla by si si vybrať aj niečo iné, ale bude sa to ďalej vyskytovať veľakrát a musela by si to zakaždým nahradiť. Asi bude ľahšie, ak ostaneš pri názve `my-first-blog`.
+> **Poznámka** Názov `my-first-blog` je dôležitý -- mohla by si si vybrať aj niečo iné, ale bude sa to ďalej vyskytovať veľakrát a musela by si to zakaždým nahradiť. It's probably easier to stick with the name `my-first-blog`.
 
 Na ďalšej obrazovke sa zobrazí klon URL tvojho repozitára. Vyber si verziu "HTTPS", skopírujte ju, a o chvíľu ju použijeme v termináli:
 
@@ -219,4 +219,4 @@ Hlavná stránka tvojej aplikácie by ťa mala vítať nápisom "It worked!", ta
 
 Keď vytvoríš niekolľko príspevkov, môžeš sa vrátiť do tvojho lokálneho prostredia (nie PythonAnywhere). Na zmenách by si mala pracovať v lokálnom prostredí. To je štandardný pracovný postup pri vývoji webových aplikácií - urobíš zmeny lokálne, dáš tieto zmeny na GitHub a stiahneš zmeny na svoj webový server. To ti umožní pracovať a experimentovať bez pokazenia živej webovej stránky. Docela cool, nie?
 
-*OHROMNE* sa potľapkaj po chrbte! Nasadenie serveru je jedna z najzradnejších častí vývoja web stránok a často zaberie ľuďom aj niekoľko dní, kým to spojazdnia. Ale ty už máš teraz svoju stránku online, na skutočnom internete!
+*OHROMNE* sa potľapkaj po chrbte! Nasadenie serveru je jedna z najzradnejších častí vývoja web stránok a často zaberie ľuďom aj niekoľko dní, kým to spojazdnia. But you've got your site live, on the real Internet!
