@@ -28,7 +28,7 @@ Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie
 
 Po uruchomieniu Pythona wiersz polecenia wygląda tak: `>>>`. Jest to sygnał dla nas, że od tego momentu możemy używać wyłącznie instrukcji języka Python. Nie musisz wpisywać `>>>` - Python zrobi to za Ciebie.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Wtedy już nie będziesz więcej widzieć `>>>`.
+Jeśli w którymkolwiek momencie zechcesz wyjść z konsoli Pythona, wpisz polecenie `exit()` albo użyj kombinacji klawiszy `Ctrl + Z` w Windows lub `Ctrl + D` w Macu/Linuksie. Wtedy już nie będziesz więcej widzieć `>>>`.
 
 Teraz jeszcze nie chcemy wyjść z konsoli Pythona. Chcemy się jeszcze kilku rzeczy nauczyć. Zacznijmy od wpisania działania matematycznego, np. `2 + 3` i naciśnięcia `entera`.
 
@@ -107,7 +107,7 @@ lub poprzedzając apostrof odwróconym ukośnikiem (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Fajnie, co? Możesz także wyświetlić swoje imię wielkimi literami. Wpisz:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ Przypuśćmy, że chcemy stworzyć nową zmienną zwaną `imie`:
 
 Napisałyśmy własnie, że imie równa się Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Jak już zauważyłaś, Twój program nie wyświetlił niczego tak, jak to robił wcześniej. Zatem skąd wiemy, że zmienna faktycznie istnieje? Wpisz `imie` i wciśnij `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Możesz także używać jej w funkcjach:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Super, co? Zmienne mogą być czymkolwiek - liczbami również! Spróbuj:
 
 {% filename %}command-line{% endfilename %}
 
@@ -414,7 +414,7 @@ KeyError: 'wiek'
 
 Spójrz, kolejny błąd! Tym razem **KeyError**. Python próbuje Ci pomóc i wskazuje, że klucz `'wiek'` nie istnieje w tym słowniku.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Kiedy powinniśmy używać słownika, a kiedy listy? To bardzo dobre pytanie! Zastanów się nad rozwiązaniem, zanim spojrzysz na odpowiedź poniżej.
 
 - Potrzebujesz ułożyć elementy w określonej kolejności? Wybierz listę.
 - Potrzebujesz powiązać wartości z kluczami, żeby mieć później łatwiejszy dostęp do nich (używając klucza)? Użyj słownika.
@@ -438,7 +438,7 @@ Podobnie jak w przypadku list, metoda `len()` zwraca liczbę par klucz-wartość
 
 Mam nadzieję, że jak dotąd jest to zrozumiałe. :) Gotowa na dalszą zabawę ze słownikami? W następnej linijce czeka nas jeszcze więcej niesamowitości.
 
-Za pomocą polecenia `pop()` możesz usunąć element ze słownika. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Za pomocą polecenia `pop()` możesz usunąć element ze słownika. Założmy, że chciałabyś usunąć wpis oznaczony kluczem `'ulubione_liczby'`. Wpisz następującą instrukcję:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ Gotowa na następną część? :)
 
 > Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Istotną częścią programowania jest porównywanie różnych rzeczy. Co najłatwiej porównać? Liczby! Zobaczmy, jak to działa:
 
 {% filename %}command-line{% endfilename %}
 
@@ -557,7 +557,7 @@ Są tylko dwa obiekty logiczne:
 - True - prawda
 - False - fałsz
 
-Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Jednak żeby Python mógł to zrozumieć, powinnaś zawsze zapisywać je tak: True (pierwsza litera wielka, reszta to małe litery). **true, TRUE, tRUE nie zadziałają -- tylko True jest poprawne.** (to samo dotyczy False.)
 
 Wartości logiczne mogą także być zmiennymi! Zobacz tutaj:
 
@@ -599,7 +599,7 @@ Do tej pory pisałyśmy cały nasz kod Pythona w interpreterze, co zmusza nas do
 - Zapisać kod do nowego pliku Pythona
 - Uruchomić go!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Aby wyjść z używanego przez nas interpretera Pythona, użyj funkcji `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,7 +672,7 @@ A w Windows Powershell będzie tak:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Jeżeli utknęłaś, poproś o pomoc. To właśnie po od tego są mentorzy!
 
 Teraz użyj Pythona do uruchomienia kodu z pliku w następujący sposób:
 
