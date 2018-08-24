@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and, obviously, our `Post` model (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
@@ -85,7 +85,7 @@ Selepas menambah baris, fail HTML anda sekarang akan kelihatan seperti ini:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will obviously see a familiar `NoReverseMatch` error, right?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Security
 
-Mampu mencipta jawatan baru hanya dengan mengklik pautan adalah hebat! Tetapi sekarang, sesiapa yang melawat laman web anda akan dapat membuat catatan blog baru, dan itu mungkin bukan sesuatu yang anda mahukan. Mari buatkannya supaya butang itu muncul untuk anda tetapi bukan untuk orang lain.
+Being able to create new posts by clicking a link is awesome! Tetapi sekarang, sesiapa yang melawat laman web anda akan dapat membuat catatan blog baru, dan itu mungkin bukan sesuatu yang anda mahukan. Mari buatkannya supaya butang itu muncul untuk anda tetapi bukan untuk orang lain.
 
 In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
