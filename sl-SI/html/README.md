@@ -23,7 +23,7 @@ Vse predloge bomo shranjevali v mapo `blog/templates/blog`. Za začetek moraš t
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is simply a useful naming convention that makes life easier when things start to get more complicated.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 Ustvari datoteko `post_list.html` (zaenkrat naj bo prazna) in jo shrani v `blog/templates/blog`.
 
