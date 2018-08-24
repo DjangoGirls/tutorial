@@ -23,7 +23,7 @@ Las plantillas se guardan en el directorio de `blog/templates/blog`. Así que pr
         └───blog
     
 
-(Tal vez te preguntes por qué necesitamos dos directorios llamados `blog` - como descubrirás más adelante, esto es simplemente una convención de nomenclatura que hace la vida más fácil cuando las cosas empiezan a complicarse más.)
+(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
 Y ahora crea un archivo `post_list.html` (déjalo en blanco por ahora) dentro de la carpeta `blog/templates/blog`.
 
