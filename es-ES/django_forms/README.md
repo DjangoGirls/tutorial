@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Primero necesitamos importar los formularios de Django (`from django import forms`) y, obviamente, nuestro modelo `Post` (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 `PostForm`, como probablemente sospechas, es el nombre de nuestro formulario. Necesitamos decirle a Django que este formulario es un `ModelForm` (así Django hará algo de magia por nosotros) - `forms.ModelForm` es responsable de ello.
 
@@ -85,7 +85,7 @@ Después de agregar la línea, tu archivo html debería lucir de esta forma:
 </html>
 ```
 
-Luego de guardar y actualizar la página `http://127.0.0.1:8000` obviamente verás un error <0>NoReverseMatch</0> familiar, ¿cierto?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Seguridad
 
-¡Poder crear entradas nuevas sólo con pulsar un botón es genial! Pero, ahora mismo, cualquiera que visite tu página podría publicar un nuevo post y seguro que eso no es lo que quieres. Vamos a hacer que el botón sea visible para ti pero no para nadie más.
+Being able to create new posts by clicking a link is awesome! Pero, ahora mismo, cualquiera que visite tu página podría publicar un nuevo post y seguro que eso no es lo que quieres. Vamos a hacer que el botón sea visible para ti pero no para nadie más.
 
 En `blog/templates/blog/base.html`, buscar el `div` `page-header` y la etiqueta de enlace que has puesto ahí antes. Debería ser algo como:
 
