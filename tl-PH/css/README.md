@@ -25,7 +25,7 @@ Para ma-instal ang Bootstrap, kailangan mo itong ilaya sa `<head>` na iyong `.ht
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Ito ay hindi nagdadagdag ng mga file sa iyong proyekto. Ito ay nagtuturo lamang sa mga file na nakalagay sa Internet. Sige subukan mo, buksan mo ang iyong website at i-refresh ang pahina. Eto na!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Tambilang 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Sa wakas ay titingnan natin nang masinsinan ang mga bagay na tinatawag nating **
 
 ### Saan ilagay ang static na mga file para sa Django
 
-Alam na ni Django kung saan hanapin ang static na mga file para sa kalakip na "admin" app. Ngayon, kailangan na lang nating idagdag ang static na mga file para sa sarili nating app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 Magagawa natin yan sa pamamagitan ng paglikha ng folder na pinangalanang `static` sa loob ng blog na app:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` ay isang Selector ng CSS. Ibig sabihin nito na kinakapit natin ang ating mga estilo sa kahit ano na `a` na elemento na nasa loob ng `h1` na elemento. Kung mayroon kang `<h1><a href="">link</a></h1>` na gaya nito, ang estilo na `h1 a` ay magagamit. Sa kaso na ito, sinabihan natin ito na palitan ang kulay nito nang `#FCA205`, ang orange (o dalandan). Siyempre, pede ilagay ang sarili mong kulay dito!
+`h1 a` ay isang Selector ng CSS. Ibig sabihin nito na kinakapit natin ang ating mga estilo sa kahit ano na `a` na elemento na nasa loob ng `h1` na elemento. Kung mayroon kang `<h1><a href="">link</a></h1>` na gaya nito, ang estilo na `h1 a` ay magagamit. Sa kaso na ito, sinabihan natin ito na palitan ang kulay nito nang `#FCA205`, ang orange (o dalandan). Or you can put your own color here!
 
 Sa loob ng CSS file nakabase ang estilo ng mga elemento sa loob ng HTML na file. Ang unang pamamaraan na makilala natin ang mga elemento ay gamit ang pangalan ng elemento. Maari mong naalala ang mga tag na ito mula sa pangkat ng HTML. Mga bagay gaya ng `a`, `h1`, at `body` ay puro mga halimbawa ng mga pangalan ng elemento. Maaari din nating kilalanin ang mga elemento sa pamamagitan ng katangian na `class` o sa katangian na `id`. Ang class at id ay mga pangalan na sarili mong ibinigay sa mga elemento. Ang mga class ay nagbibigay kahulugan sa mga grupo ng mga elemento, at ang id ay nagtuturo sa mga tiyak na mga elemento. Halimbawa, maari mong kilalanin ang sumusunod na tag sa pamamagitan ng paggamit ng pangalan ng tag na `a`, sa `external_link` na class, o sa `link_to_wiki_page` na id:
 
@@ -202,7 +202,7 @@ At ngayon, magdagdag ng class na `post` sa iyong `div` na naglalaman ng iyong bl
 </div>
 ```
 
-Ngayon, aming idadagdag ang deklerasyon na mga bloke sa iba ibang mga selector. Ang mga selector na nagsimula sa `.` ay may kaugnayan sa mga classes. Mayroong maraming magagandang tutorial doon at mga pagpapaliwanag tungkol sa CSS sa Web na makakatulong sa iyo sa pag-intindi sa mga sumusunod na code. Sa ngayon, kopyahin at idikit ito sa inyong `blog/static/css/blog.css` na file:
+Ngayon, aming idadagdag ang deklerasyon na mga bloke sa iba ibang mga selector. Ang mga selector na nagsimula sa `.` ay may kaugnayan sa mga classes. Mayroong maraming magagandang tutorial doon at mga pagpapaliwanag tungkol sa CSS sa Web na makakatulong sa iyo sa pag-intindi sa mga sumusunod na code. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
