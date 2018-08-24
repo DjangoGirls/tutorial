@@ -24,7 +24,7 @@ Untuk menginstal Bootstrap, Anda perlu menambahkan ini ke `<head>` di file ` .ht
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 `</pre> 
 
-Ini tidak menambahkan file ke proyek Anda. Ini hanya menunjuk ke file yang ada di Internet. Langsung saja buka situs Anda dan refresh halamannya. Ini dia!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Gambar 14.1](images/bootstrap1.png)
 
@@ -36,9 +36,9 @@ Mari kita bahas apa itu **static files**. Static files are all your CSS and imag
 
 ### Dimana menyimpan static files untuk Django
 
-Django sudah tahu di mana menemukan file statis untuk aplikasi "admin" bawaan. Sekarang kita hanya perlu menambahkan beberapa file statis untuk aplikasi kita sendiri, ` blog </ 0> .</p>
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
-<p>Kita melakukan itu dengan cara membuat folder bernama <code>static` didalam blog app:
+Kita melakukan itu dengan cara membuat folder bernama `static` didalam blog app:
 
     djangogirls ├── blog │ ├── migrasi │ ├── static │   └── template └── mysite
     
@@ -71,7 +71,7 @@ h1 a {
      warna: # FCA205; }
 ```
 
-`h1 a` adalah selector dalam CSS. Ini berarti kita menerapkan gaya kita ke elemen ` a </ 0> di dalam elemen <code> h1 </ 0> . Jadi ketika kita memiliki sesuatu seperti <code>&lt;h1&gt;&lt;a href=""&gt; link </ 0> , style <code> h1 a </ 1> akan berlaku. Pada contoh kali ini, kita memberitahukan untuk melakukan perubahan warna menjadi <code>#FCA205`, yang dimana warna tersebut adalah Jingga. Tentu saja, kamu bisa menempatkan warna mu sendiri disini!
+`h1 a` adalah selector dalam CSS. Ini berarti kita menerapkan gaya kita ke elemen ` a </ 0> di dalam elemen <code> h1 </ 0> . Jadi ketika kita memiliki sesuatu seperti <code>&lt;h1&gt;&lt;a href=""&gt; link </ 0> , style <code> h1 a </ 1> akan berlaku. Pada contoh kali ini, kita memberitahukan untuk melakukan perubahan warna menjadi <code>#FCA205`, yang dimana warna tersebut adalah Jingga. Or you can put your own color here!
 
 Dalam berkas CSS kita menentukan styles untuk elemen yang berada pada berkas HTML. Cara pertama kita mengidentifikasi elemen adalah dengan nama elemen. Anda mungkin ingat ini sebagai tag dari bagian HTML. Hal-hal seperti ` a </ 0> , <code> h1 </ 0> , dan <code> body </ 0> adalah contoh nama elemen.
 Kami juga mengidentifikasi elemen dengan atribut <code> class </ 0> atau atribut <code> id </ 0> . Class dan id adalah nama-nama elemen yang kamu berikan sendiri. Class-class mendefinisikan kelompok-kelompok elemen, dan id menunjuk pada elemen khusus. Misalnya, Anda dapat mengidentifikasi tag berikut dengan menggunakan nama tag <code> a </ 0> , kelas <code> external_link </ 0> , atau id <code> link_to_wiki_page </ 0> :</p>
@@ -187,11 +187,12 @@ Dan sekarang tambahkan sebuah kelas ` pos </ 0> ke <code> div </ 0> berisi sebua
 
 `</pre> 
 
-Kami sekarang akan menambahkan blok deklarasi ke penyeleksi yang berbeda. Pemilih dimulai dengan ` . </ 0> berhubungan dengan kelas. Ada banyak tutorial dan penjelasan bagus tentang CSS di Web yang dapat membantu Anda memahami kode berikut. Untuk saat ini, cukup copy dan paste ke file <code> blog / static / css / blog.css </ 0> Anda :</p>
+Kami sekarang akan menambahkan blok deklarasi ke penyeleksi yang berbeda. Pemilih dimulai dengan ` . </ 0> berhubungan dengan kelas. Ada banyak tutorial dan penjelasan bagus tentang CSS di Web yang dapat membantu Anda memahami kode berikut. For now, copy and paste it into your <code>blog/static/css/blog.css` file:
 
-<p>{% filename%} blog / static / css / blog.css {% endfilename%}</p>
+{% filename%} blog / static / css / blog.css {% endfilename%}
 
-<pre><code class="css">.page-header {
+```css
+.page-header {
      background-color: # ff9400;
     margin-top: 0;
     padding: 20px 20px 20px 40px; } .page-header h1, .page-header h1 a, .page-header h1 a: visited, .page-header h1 a: active {
@@ -209,7 +210,7 @@ Kami sekarang akan menambahkan blok deklarasi ke penyeleksi yang berbeda. Pemili
     margin-right: 20px; } .post {
      margin-bottom: 70px; } .post h1 a, .post h1 a: visited {
     warna: # 000000; }
-`</pre> 
+```
 
 Kemudian hubungilah kode HTML yang menampilkan tulisan dengan deklarasi kelas. Ganti ini:
 
