@@ -29,7 +29,7 @@ Untuk masuk, Anda perlu membuat * superuser </ 0> - akun pengguna yang memiliki 
 >     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
 >     
 > 
-> Saat diminta, ketik nama akun anda (huruf kecil, tidak ada spasi), alamat email, dan kata sandi. ** Jangan khawatir ketika anda tidak dapat melihat kata sandi yang anda ketik - begitulah semestinya. ** Ketik saja dan tekan ` masukkan ` untuk melanjutkan. Outputnya akan terlihat seperti ini (dimana nama akun dan emailnya seharusnya menjadi milik anda):
+> Saat diminta, ketik nama akun anda (huruf kecil, tidak ada spasi), alamat email, dan kata sandi. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. Outputnya akan terlihat seperti ini (dimana nama akun dan emailnya seharusnya menjadi milik anda):
 > 
 >     Nama akun: admin
 >     Alamat Email: admin@admin.com
@@ -41,7 +41,7 @@ Untuk masuk, Anda perlu membuat * superuser </ 0> - akun pengguna yang memiliki 
 > 
 > ![Django admin](images/django_admin3.png)
 > 
-> Beralih ke Postingan-postinga dan bereksperimen sedikit dengannya. Tambahkan lima atau enam entri blog. Jangan khawatir tentang konten tersebut - anda cukup menkopi beberapa teks dari tutorial ini untuk menghemat waktu. :)
+> Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can copy-paste some text from this tutorial to save time. :)
 > 
 > Pastikan paling tidak ada dua atau tiga postingan (tapi tidak semua) yang memiliki tanggal terbitan. Ini akan sangat membantu nantinya.
 > 
