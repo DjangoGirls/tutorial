@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Először importálnunk kell a Django formjait (`from django import forms`), és persze a `Post` modellünket is (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 Valószínűleg már sejted, hogy a `PostForm` az űrlapunk neve lesz. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
@@ -85,7 +85,7 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-Ha elmented, és frissíted a http://127.0.0.1:8000 oldalt, az ismerős `NoReverseMatch` hibát kell látnod, igaz?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## Biztonság
 
-Nagyon jó, hogy az új blogposztok írásához csak egy linkre kell kattintani! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
 A `blog/templates/blog/base.html`-ben keresd meg a `page-header` `div`et, és az anchor taget, amit korábban írtál bele. Így néz ki:
 
