@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Obrázek 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Konečně se podíváme zblízka na téma, které jsme již zmínili, **statick�
 
 ### Kam umístit statické soubory pro Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 Uděláš to tak, že vytvoříš složku s názvem `static` uvnitř aplikace blog:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1` je CSS selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. V takovém případě sdělujeme, že barvu elementu měníme na `#FCA205`, což je oranžová. Samozřejmě zde můžeš vložit vlastní barvu!
+`h1` je CSS selector. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. V takovém případě sdělujeme, že barvu elementu měníme na `#FCA205`, což je oranžová. Or you can put your own color here!
 
 V CSS souboru určujeme styly pro prvky v souboru HTML. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Třídy/Class a id jsou jména, které pojmenovávají samotný prvek. Třídy definují skupiny prvků a Id poukazují na konkrétní prvky. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ A nyní přidej třídu, `post` do svého `div` obsahující blog post.
 </div>
 ```
 
-Nyní přidáme deklaraci bloků pro jiné selektory. Selektory začínající `.` se týkají tříd. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. Pro tuto chvíli stačí zkopírovat a vložit do souboru `blog/static/css/blog.css`:
+Nyní přidáme deklaraci bloků pro jiné selektory. Selektory začínající `.` se týkají tříd. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
