@@ -25,7 +25,7 @@ Para instalares o Bootstrap, precisas de adicionar isto `<head>` no teu arquivo 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Isso não adiciona nenhum arquivo ao teu projeto. Isso apenas aponta para arquivos que existem na Internet. Vai em frente, abre o teu website e atualiza a página. Aqui está!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Figura 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Vamos finalmente ver em pormenor o que temos chamado **ficheiros estáticos**. O
 
 ### Onde colocar os ficheiros estáticos no Django
 
-Django, já sabe onde encontrar os arquivos estáticos para o app pré-instalado "admin". Agora só precisamos adicionar alguns arquivos estáticos para a nossa própria app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 Fazemos isso criando uma pasta chamada `static` dentro da aplicação blog:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` é um selector de CSS. Isto significa que estamos a aplicar os nossos estilos para qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, nós estamos a dizer para mudar a cor para `#FCA205`, que é laranja. Mas é claro que tu podes colocar a cor que tu quiseres aqui!
+`h1 a` é um selector de CSS. Isto significa que estamos a aplicar os nossos estilos para qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, nós estamos a dizer para mudar a cor para `#FCA205`, que é laranja. Or you can put your own color here!
 
 Num arquivo CSS nós determinamos estilos para os elementos do arquivo HTML. A primeira forma de identificar elementos é pelo o nome do elemento. Podes te lembrar destes como etiquetas da seção HTML. Coisas como `a` `h1` e `body` são exemplos de nomes de elementos. Nós também identificamos elementos pelo atributo `class` ou o atributo `id`. Class e id são nomes que tu mesmo dás ao elemento. As classes definem grupos de elementos, e ids apontam para os elementos específicos. Por exemplo, a tag a seguir pode ser identificada usando a tag de nome `a`, a classe `external_link` ou o id de `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ E agora, adiciona uma classe `post` na tua `div` que contém um post de blog.
 </div>
 ```
 
-Agora iremos adicionar blocos de declaração a seletores diferentes. Seletores começando com `.` referem-se às classes. Existem vários manuais de instruções e explicações excelentes sobre CSS na Web que podem te ajudar a entender melhor o seguinte código. Por enquanto, basta copiar e colá-lo no teu arquivo `blog/static/css/blog.css`:
+Agora iremos adicionar blocos de declaração a seletores diferentes. Seletores começando com `.` referem-se às classes. Existem vários manuais de instruções e explicações excelentes sobre CSS na Web que podem te ajudar a entender melhor o seguinte código. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
