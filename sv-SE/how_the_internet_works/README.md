@@ -6,7 +6,7 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-Det första du måste förstå är att en hemsida bara är ett gäng filer sparade på en hårddisk. Precis som dina filmklipp, musik och bilder. Men det finns en sak som är unikt för hemsidor: de innehåller programkod som kallas HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Precis som dina filmklipp, musik och bilder. Men det finns en sak som är unikt för hemsidor: de innehåller programkod som kallas HTML.
 
 Om du inte är van vid programmering kan det vara svårt att förstå HTML till en början, men din webbläsare (t.ex. Chrome, Safari, Firefox, etc.) älskar det. Webbläsare är designade för att förstå denna kod, följa dess instruktioner och presentera alla filer som din hemsida är gjord av precis på det sättet som du vill att de ska presenteras.
 
@@ -22,7 +22,7 @@ Visst ser det stökigt ut? In fact it is a network of connected machines (the ab
 
 ![Figur 1.2](images/internet_3.png)
 
-Visst är det fascinerande? Men självklart går det inte att ha en kabel mellan varje dator som är ansluten till Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Visst är det fascinerande? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 Så här ser det ut:
 
@@ -34,7 +34,7 @@ Ditt brev går till postkontoret närmast dig. Sen skickas det vidare till ett k
 
 ![Figur 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 Istället för adresser med gatunamn, ort, postnummer och land, använder vi IP-adresser. Din dator ber en DNS-server (Domain Name System) att översätta djangogirls.org till en IP-adress. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
