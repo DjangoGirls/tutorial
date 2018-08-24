@@ -6,7 +6,7 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-Primul lucru pe care trebuie să-l știi este că un website este o grămadă de fișiere salvate pe un hard disk. Just like your movies, music, or pictures. Totuși, paginile web au ceva special: conțin un cod numit HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Just like your movies, music, or pictures. Totuși, paginile web au ceva special: conțin un cod numit HTML.
 
 If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
@@ -22,7 +22,7 @@ Cam haos, nu? In fact it is a network of connected machines (the above-mentioned
 
 ![Figura 1.2](images/internet_3.png)
 
-E fascinant, nu-i așa? Dar, evident, nu e posibil să existe un cablu care să unească toate computerele conectate la Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+E fascinant, nu-i așa? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 Arată așa:
 
@@ -34,7 +34,7 @@ Scrisoarea ta ajunge la oficiul poștal cel mai apropiat. Then it goes to anothe
 
 ![Figura 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Of course, instead of paper and pen you use bytes of data, but the idea is the same!
+That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
 
 În loc de adrese cu numele străzii, oraș, cod și numele țării, folosim adrese IP. Computerul tău cere de la DNS (Domain Name System) să traducă djangogirls.org într-o adresă IP. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
