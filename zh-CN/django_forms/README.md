@@ -30,9 +30,9 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-首先我们需要导入Django表单（`from django import forms`）然后，显然是我们的`Post`模型（`from .models import Post</0).</p>
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
-<p><code>PostForm`, 正如你所猜想的，是我们表单的名字。 We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm`, 正如你所猜想的，是我们表单的名字。 We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
 下面，我们有`class Meta`，在这里我们告诉Django哪个模型会被用来创建这个表单（`model=Post`).
 
@@ -85,7 +85,7 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-然后保存，刷新http://127.0.0.1:8000页面，你可以明显地看到一个熟悉的`NoReverseMatch`错误信息，是吧？
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ If you need more information about Django forms, you should read the documentati
 
 ## 安全性
 
-能够通过点击一条连接进行发布确实不错。 But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
 在 `blog/templates/blog/base.html`中，找到我们 `page-header` `div` 和你早些时候在放那里锚点标记。看起来应该像这样：
 
