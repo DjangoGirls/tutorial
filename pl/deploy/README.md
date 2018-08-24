@@ -219,4 +219,4 @@ Domyślna strona Twojej witryny powinna brzmieć "It worked!", tak jak na Twoim 
 
 Po utworzeniu kilku postów możesz wrócić do konfiguracji lokalnej (nie PythonAnywhere). Od teraz powinnaś pracować na swoim lokalnym komputerze, jeżeli będziesz chciała dokonać zmian na stronie. To częsty sposób pracy w rozwijaniu stron WWW - wprowadzaj zmiany lokalnie, wypychaj je na GitHuba i zaciągaj na swój internetowy serwer WWW. Pozwala to na pracę i eksperymentowanie bez obawy, że zepsujesz działającą stronę. Całkiem nieźle, co nie?
 
-*Przybij piątkę!* Wdrożenia strony na serwery są jednym z najtrudniejszych elementów tworzenia stron internetowych i często ludzie potrzebują kilku dni, zanim wszystko zacznie poprawnie działać. Masz swoją witrynę na żywo, w prawdziwym Internecie, właśnie tak!
+*Przybij piątkę!* Wdrożenia strony na serwery są jednym z najtrudniejszych elementów tworzenia stron internetowych i często ludzie potrzebują kilku dni, zanim wszystko zacznie poprawnie działać. Ale Tobie udało się wdrożyć swoją stronę, jest ona w prawdziwym internecie!
