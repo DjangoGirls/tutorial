@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-Önce Django formları (`from django import forms`) ve tabii ki `Post` modelimizi import komutu ile içe aktarmalıyız (`from .models import Post`).
+We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
 
 Tahmin etmiş olabileceğiniz gibi, formumuzun ismi `PostForm`. Django'ya bu formun bir `ModelForm` olduğunu belirtmeliyiz. Bunu `forms.ModelForm` sayesinde Django bizim için yapacaktır.
 
@@ -85,7 +85,7 @@ Satırı ekledikten sonra, HTML dosyanız bu şekilde görünmelidir:
 </html>
 ```
 
-Dosyayı kaydedip http://127.0.0.1:8000 sayfasını yeniledikten sonra, siz de tanıdık `NoReverseMatch` hatasını görüyor olmalısınız, değil mi?
+After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
 
 ## URL
 
@@ -374,7 +374,7 @@ Eğer Django formlarıyla ilgili daha çok bilgiye ihtiyacın varsa, dökümanı
 
 ## Güvenlik
 
-Bir linke (bağlantı) tıklayarak yeni bir blog oluşturabilmek harika! Ama şu anda sizin sitenizi ziyaret eden herkes yeni bir blog post yapabilecek ve bu muhtemelen isteyeceğiniz bir şey değil. Butonun sadece bize görünmesini sağlayalım.
+Being able to create new posts by clicking a link is awesome! Ama şu anda sizin sitenizi ziyaret eden herkes yeni bir blog post yapabilecek ve bu muhtemelen isteyeceğiniz bir şey değil. Butonun sadece bize görünmesini sağlayalım.
 
 `blog/templates/blog/base.html` dosyasında yarattığımız `page-header` `div` ve anchor etiketlerini (tags) bulalım. Şuna benziyor olmalı:
 
