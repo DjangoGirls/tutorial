@@ -25,7 +25,7 @@ To install Bootstrap, you need to add this to your `<head>` in your `.html` file
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. Just go ahead, open your website and refresh the page. Here it is!
+This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
 ![Figure 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ### Django-യിലെ static ഫൈലുകള്‍ എവിടെ വെക്കണം
 
-Django already knows where to find the static files for the built-in "admin" app. Now we just need to add some static files for our own app, `blog`.
+Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
 അത് ചെയ്യാനായി നമുക്ക് blog ആപ്പിനകത്ത് ഒരു `static` എന്ന് പേരുള്ള ഫോള്‍ഡര്‍ നിര്‍മിക്കാം:
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a`-നെ ഒരു CSS Selector എന്നണ് വിളിക്കുക. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. ഈ അവസരത്തില്‍, അതിന്റെ നിറം `#FCA205` അഥവാ ഓറഞ്ജ് ആക്കി മാറ്റുവാനാണ് നാം നിര്‍ദേശിക്കുന്നത്. നിങ്ങള്‍ക്ക് ഇഷ്ടമുള്ള നിറം ഉപയൊഗിക്കാം ഇവിടെ!
+`h1 a`-നെ ഒരു CSS Selector എന്നണ് വിളിക്കുക. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. ഈ അവസരത്തില്‍, അതിന്റെ നിറം `#FCA205` അഥവാ ഓറഞ്ജ് ആക്കി മാറ്റുവാനാണ് നാം നിര്‍ദേശിക്കുന്നത്. Or you can put your own color here!
 
 ഒരു HTML ഫൈലിലുള്ള എലമെന്റ്സിന്റെ സ്ടൈലിനെയാണ് നമ്മള്‍ ഒരു CSS ഫൈലില്‍ നിര്‍ണയിക്കുന്നത്. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class-ഉം id-യും നിങ്ങള്‍ തന്നെ എലമെന്റ്സിനു കൊടുക്കുന്ന പേരുകളാണ്. ഒരു class ഒരു കൂട്ടം എലമെന്റ്സിനെ വര്‍ണ്ണിക്കുവാന്‍ ഉപയോഗിക്കുന്നതാണ്. എന്നാല്‍ ഒരു id ഒരു പ്രത്യേഗ എലമെന്റിനെയാണ് സൂജിപ്പിക്കുന്നത്. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, just copy and paste it into your `blog/static/css/blog.css` file:
+We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
