@@ -25,7 +25,7 @@ Um Bootstrap zu installieren, musst du Folgendes in den `<head>` deiner `.html`-
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Dadurch werden deinem Projekt keine Dateien hinzugefügt. Der Code verweist nur auf Dateien, die im Internet vorhanden sind. Öffne und aktualisiere also deine Webseite. Da ist sie!
 
 ![Abbildung 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Endlich werden wir einen genaueren Blick auf die Dinge werfen, die wir bisher **
 
 ### Wohin kommen die statischen Dateien für Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django weiss schon, wo die statischen Dateien für die integrierte "admin"-App zu finden sind. Wir müssen noch die statischen Dateien für unsere `blog`-App hinzufügen.
 
 Dies tun wir, indem wir einen Ordner namens `static` in der Blog-App erstellen:
 
@@ -49,7 +49,7 @@ Dies tun wir, indem wir einen Ordner namens `static` in der Blog-App erstellen:
     └── mysite
     
 
-Django findet automatisch alle Ordner mit dem Namen "static" in allen unseren App-Ordnern. So ist es in der Lage, ihre Inhalte als statische Dateien zu nutzen.
+Django findet automatisch alle Ordner mit dem Namen "static" in all unseren App-Ordnern. So ist es in der Lage, ihre Inhalte als statische Dateien zu nutzen.
 
 ## Deine erste CSS-Datei!
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` ist ein CSS-Selektor. Das bedeutet, dass wir unsere Styles auf alle `a` Elemente innerhalb von einem `h1` Element anwenden. Wenn wir also etwas haben wie: `<h1><a href="">link</a></h1>` wird der `h1 a` Style angewendet. In diesem Fall sagen wir, dass die Farbe in `#FCA205` geändert werden soll, was für Orange steht. Or you can put your own color here!
+`h1 a` ist ein CSS-Selektor. Das bedeutet, dass wir unsere Styles auf alle `a` Elemente innerhalb von einem `h1` Element anwenden. Wenn wir also etwas haben wie: `<h1><a href="">link</a></h1>` wird der `h1 a` Style angewendet. In diesem Fall sagen wir, dass die Farbe in `#FCA205` geändert werden soll, was für Orange steht. Du kannst hier auch deine eigene Farbe angeben!
 
 In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg, HTML-Elemente zu identifizieren, ist der Name des Elements. Du erinnerst dich vielleicht an diese Namen, die wir als 'Tags' im HTML Kapitel bezeichnet haben. Zum Beispiel sind `a`, `h1` und `body` solche Elementnamen. Wir identifizieren Elemente auch über die Attribute `class` oder `id`. Klassen (`class`) und IDs (`id`) sind Namen, die du den Elementen selbst gibst. Klassen definieren dabei Gruppen von Elementen und IDs verweisen auf bestimmte Elemente. Du könntest zum Beispiel den folgenden Tag anhand des Elementnamens `a`, der Klasse `external_link` oder der ID `link_to_wiki_page` identifizieren:
 
@@ -202,7 +202,7 @@ Jetzt fügen wir dem `div` für den Blog-Inhalt (Post) noch eine Klasse `post` h
 </div>
 ```
 
-Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit `.` anfangen, beziehen sich auf Klassen im HTML. Es gibt im Internet viele gute Tutorials und Informationen über CSS, die dir helfen können, den folgenden Code besser zu verstehen. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit `.` anfangen, beziehen sich auf Klassen im HTML. Es gibt im Internet viele gute Tutorials und Informationen über CSS, die dir helfen können, den folgenden Code besser zu verstehen. Kopiere zunächst folgenden Text in deine `blog/static/css/blog.css`-Datei:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
