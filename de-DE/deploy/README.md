@@ -93,7 +93,7 @@ Erstelle dann ein neues Repository und gib ihm den Namen "my-first-blog". Lass d
 
 ![](images/new_github_repo.png)
 
-> **Achtung:** Der Name `my-first-blog` ist wichtig -- du kannst auch einen anderen wählen, aber er wird im Folgenden noch sehr oft vorkommen und du wirst immer daran denken müssen, ihn in den Anweisungen entsprechend anzupassen. It's probably easier to stick with the name `my-first-blog`.
+> **Achtung:** Der Name `my-first-blog` ist wichtig -- du kannst auch einen anderen wählen, aber er wird im Folgenden noch sehr oft vorkommen und du wirst immer daran denken müssen, ihn in den Anweisungen entsprechend anzupassen. Lass es daher besser erst mal bei `my-first-blog`.
 
 Auf der nächsten Seite wird dir die Clone-URL deines Repos angezeigt. Nimm die HTTPS-Variante, kopiere sie, damit wir sie dann gleich in die Konsole einfügen können:
 
