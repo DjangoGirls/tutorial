@@ -20,7 +20,7 @@ Most megjelenik egy felület, egy sáv, egy nagy fő ablakot néhány szöveg, v
 
 This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
-### Virtual Environment
+### Virtuális környezet
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
