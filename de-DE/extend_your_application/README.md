@@ -136,7 +136,7 @@ Es hat funktioniert! Aber was passiert, wenn du auf den Link im Blog-Titel klick
 
 Oh nein! Ein anderer Fehler! Aber wir wissen ja schon, wie wir mit diesem umgehen, oder? Wir müssen ein Template hinzufügen!
 
-## Erstelle ein Template
+## Erstelle ein Template für die Post-Detailseite
 
 Wir erstellen eine Datei in `blog/templates/blog` mit dem Namen `post_detail.html`.
 
@@ -148,23 +148,23 @@ Das sieht dann so aus:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h1>{{ post.title }}</h1>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endblock %}
 ```
 
 Wir erweitern wieder `base.html`. Im `content`-Block wollen wir das Publikationsdatum eines Posts (published_date), falls es existiert, anzeigen und auch den Titel und den Text. Aber wir müssen noch ein paar wichtige Dinge klären, oder?
 
-{% raw %} {% if ... %} ... {% endif %}</code> ist ein Template-Tag, das wir benutzen können, wenn wir etwas überprüfen möchten. (Erinnerst du dich? `if ...else</0> vom <strong>Einführung in Python</strong> Kapitel?) In diesem Fall hier wollen wir prüfen, ob das <code>published_date` Feld eines Post-Objektes nicht leer ist. {% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` ist ein Template-Tag, das wir benutzen können, wenn wir etwas überprüfen möchten. (Erinnerst du dich an `if ... else` vom Kapitel **Einführung in Python**?) In diesem Fall hier wollen wir prüfen, ob das `published_date</0> Feld eines Post-Objektes nicht leer ist. {% endraw %}</p>
 
-OK, aktualisieren wir unsere Seite und sehen, ob `TemplateDoesNotExist` jetzt weg ist.
+<p>OK, aktualisieren wir unsere Seite und sehen, ob <code>TemplateDoesNotExist` jetzt weg ist.
 
 ![Die post_detail Seite](images/post_detail2.png)
 
@@ -176,25 +176,25 @@ Es wäre schön zu sehen, ob deine Website noch auf PythonAnywhere funktioniert,
 
 {% filename %}command-line{% endfilename %}
 
-    $ git status 
-    $ git add --all . 
-    $ git status 
-    $ git commit -m "Added view and template for detailed blog post as well as CSS for the site." 
+    $ git status
+    $ git add --all .
+    $ git status
+    $ git commit -m "View und Template für Blog-Post-Details sowie CSS für die Website hinzugefügt"
     $ git push
     
 
-Dann führe Folgendes in der [PythonAnywhere Bash-Konsole](https://www.pythonanywhere.com/consoles/) aus:
+Dann führe Folgendes in der [PythonAnywhere-Bash-Konsole](https://www.pythonanywhere.com/consoles/) aus:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com 
-    $ git pull 
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ git pull
     [...]
     
 
-(Denk daran, `<your-pythonanywhere-username>` durch deinen PythonAnywhere-Benutzernamen zu ersetzen - ohne spitze Klammern).
+(Denk daran, `<your-pythonanywhere-username>` durch deinen tatsächlichen PythonAnywhere-Benutzernamen zu ersetzen - ohne die spitzen Klammern).
 
-## Die statischen Dateien aktualisieren
+## Die statischen Dateien auf dem Server aktualisieren
 
 Server wie PythonAnywhere behandeln statische Dateien, "static files" (wie CSS Dateien), anders als Python Dateien, weil diese noch optimiert und dadurch dann schneller geladen werden können. Deswegen müssen wir, nachdem wir Änderungen an den CSS Dateien vorgenommen haben, einen extra Befehl auf dem Server ausführen, um diese Dateien zu aktualisieren. Der Befehl heißt `collectstatic`.
 
