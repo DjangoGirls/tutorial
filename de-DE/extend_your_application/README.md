@@ -128,7 +128,7 @@ def post_detail(request, pk):
 
 Super. Lass uns nun http://127.0.0.1:8000/ neu laden.
 
-![Die post_list View](images/post_list2.png)
+![Die post_list-View](images/post_list2.png)
 
 Es hat funktioniert! Aber was passiert, wenn du auf den Link im Blog-Titel klickst?
 
@@ -166,7 +166,7 @@ Wir erweitern wieder `base.html`. Im `content`-Block wollen wir das Publikations
 
 <p>OK, aktualisieren wir unsere Seite und sehen, ob <code>TemplateDoesNotExist` jetzt weg ist.
 
-![Die post_detail Seite](images/post_detail2.png)
+![Blog-Post-Detailseite](images/post_detail2.png)
 
 Yay! Es funktioniert!
 
@@ -196,14 +196,14 @@ Dann führe Folgendes in der [PythonAnywhere-Bash-Konsole](https://www.pythonany
 
 ## Die statischen Dateien auf dem Server aktualisieren
 
-Server wie PythonAnywhere behandeln statische Dateien, "static files" (wie CSS Dateien), anders als Python Dateien, weil diese noch optimiert und dadurch dann schneller geladen werden können. Deswegen müssen wir, nachdem wir Änderungen an den CSS Dateien vorgenommen haben, einen extra Befehl auf dem Server ausführen, um diese Dateien zu aktualisieren. Der Befehl heißt `collectstatic`.
+Server wie PythonAnywhere behandeln statische Dateien ("static files", z.B. CSS-Dateien) anders als Python-Dateien, weil statische Dateien noch optimiert und dadurch dann schneller geladen werden können. Deswegen müssen wir, nachdem wir Änderungen an den CSS Dateien vorgenommen haben, einen zusätzlichen Befehl auf dem Server ausführen, um diese Dateien zu aktualisieren. Der Befehl heißt `collectstatic`.
 
-Aktiviere also deine virtuelle Umgebung, wenn sie nicht vom letzten Mal noch aktiv ist (PythonAnywhere benutzt dazu das Kommando `workon`, das ist genau dasselbe wie `source myenv/bin/activate`, was du auf deinem Computer verwendest):
+Aktiviere also deine virtuelle Umgebung, wenn sie nicht vom letzten Mal noch aktiv ist (PythonAnywhere benutzt dazu das Kommando `workon`, das ist ähnlich wie `source myenv/bin/activate`, das du auf deinem Computer verwendest):
 
 {% filename %}command-line{% endfilename %}
 
     $ workon <your-pythonanywhere-username>.pythonanywhere.com
-    (ola.pythonanywhere.com)$ python manage.py collectstatic 
+    (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
