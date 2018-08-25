@@ -671,7 +671,7 @@ Und in der Powershell von Windows so:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Wenn du nicht weiterkommst, frag' um Hilfe. Denn genau dafür sind die Coaches da!
 
 Benutze jetzt Python, um den Code in der Datei auszuführen:
 
