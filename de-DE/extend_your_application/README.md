@@ -84,9 +84,9 @@ Erinnerst du dich, was der nächste Schritt ist? Eine View hinzufügen!
 
 ## Füge eine View hinzu
 
-Dieses Mal bekommt unsere *View* den extra Parameter `pk`. Unsere *View* muss diesen abfangen, richtig? Also definieren wir unsere Funktion mit `def post_detail(request, pk)`. Beachte, dass wir genau den gleichen Variablennamen benutzen müssen, wie in den URLs festgelegt (`pk`). Diese Variable wegzulassen ist falsch und führt zu einem Fehler!
+Dieses Mal bekommt unsere *View* den extra Parameter `pk`. Unsere *View* muss diesen entgegennehmen, richtig? Also definieren wir unsere Funktion als `def post_detail(request, pk)`. Beachte, dass wir genau den gleichen Variablennamen benutzen müssen, wie in den URLs festgelegt (`pk`). Diese Variable wegzulassen ist falsch und führt zu einem Fehler!
 
-Jetzt benötigen wir also genau einen bestimmten Blogpost. Diesen finden wir, indem wir ein Queryset folgendermaßen schreiben:
+Jetzt benötigen wir also genau einen bestimmten Blogpost. Diesen finden wir, indem wir ein QuerySet folgendermaßen schreiben:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -94,19 +94,19 @@ Jetzt benötigen wir also genau einen bestimmten Blogpost. Diesen finden wir, in
 Post.objects.get(pk=pk)
 ```
 
-Aber bei diesem Code gibt es ein Problem. Wenn es kein `Post`-Objekt mit diesem `primary key` (`pk`) gibt, bekommen wir einen hässlichen Fehler!
+Aber bei diesem Code gibt es ein Problem. Wenn es kein `Post`-Objekt mit diesem `primary key` (`pk`) gibt, bekommen wir einen super-hässlichen Fehler!
 
 ![DoesNotExist Error](images/does_not_exist2.png)
 
-Das wollen wir nicht! But luckily Django comes with something that will handle that for us: `get_object_or_404`. Wenn es kein `Post`-Objekt mit einem gegebenen `pk` gibt, wird eine schöne Seite angezeigt, die sogenannte `Page Not Found 404` Seite ("Seite nicht gefunden"-Seite).
+Das wollen wir nicht! Zum Glück stellt uns Django etwas zur Verfügung, das uns dieses Problem abnimmt: `get_object_or_404`. Wenn es kein `Post`-Objekt mit einem gegebenen `pk` gibt, wird eine schöne Seite angezeigt, die sogenannte `Page Not Found 404` Seite ("Seite nicht gefunden"-Seite).
 
 ![Page not found](images/404_2.png)
 
-Die gute Neuigkeit ist, dass du auch deine eigene `Page not found`-Seite erstellen und diese so hübsch gestalten kannst, wie du willst. Aber da das gerade nicht so wichtig ist, überspringen wir das erst einmal.
+Die gute Neuigkeit ist, dass du auch deine eigene `Page not found`-Seite erstellen und diese so hübsch gestalten kannst, wie du willst. Aber das ist jetzt gerade nicht so wichtig, deshalb überspringen wir das.
 
 Okay, es wird Zeit, die *View* zu unserer `views.py`-Datei hinzuzufügen!
 
-In `blog/urls.py` haben wir eine URL-Regel namens `post_detail` erstellt, die auf eine View namens `views.post_detail` referenziert. Das heißt, dass Django eine View-Funktion erwartet, die `post_detail` heißt und in `blog/views.py` angelegt wurde.
+In `blog/urls.py` haben wir eine URL-Regel namens `post_detail` erstellt, die auf eine View namens `views.post_detail` verweist. Das heißt, dass Django eine View-Funktion erwartet, die `post_detail` heißt und in `blog/views.py` angelegt wurde.
 
 Wir sollten also `blog/views.py` öffnen und den folgenden Code zu den anderen `from` Zeilen hinzufügen:
 
@@ -122,11 +122,11 @@ Und am Ende der Datei werden wir unsere *View*-Funktion ergänzen:
 
 ```python
 def post_detail(request, pk):
-    post = get_object_or_404(Post, pk=pk)
-    return render(request, 'blog/post_detail.html', {'post': post})
+    post = get_object_or_404(Post, pk=pk)
+    return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Super. Lass uns nun http://127.0.0.1:8000/ aktualisieren.
+Super. Lass uns nun http://127.0.0.1:8000/ neu laden.
 
 ![Die post_list View](images/post_list2.png)
 
