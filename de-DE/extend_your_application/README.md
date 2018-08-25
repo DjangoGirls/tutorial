@@ -70,17 +70,17 @@ urlpatterns = [
 
 Der Teil `post/<int:pk>/` definiert ein URL-Muster – wir erklären es dir:
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
-- `<int:pk>` – Der Teil ist schwieriger. Er bedeutet, dass Django einen Integer-Wert erwartet und diesen in Form einer Variablen namens `pk` zu einer View weitergibt.
-- `/` – then we need a **/** again before finishing the URL.
+- `post/` heißt, dass die URL mit dem Wort **post** beginnen sollte, gefolgt von einem **/**. So weit, so gut.
+- `<int:pk>` – Dieser Teil ist schwieriger. Er bedeutet, dass Django eine Ganzzahl (einen Integer-Wert) erwartet und diese in Form einer Variablen namens `pk` einer View weitergibt.
+- `/` – dann wir brauchen vor dem Abschluss der URL wieder einen **/**.
 
-Also wenn du `http://127.0.0.1:8000/post/5/` in deinen Browser eingibst, wird Django verstehen, dass du nach einer *View* suchst, die `post_detail` heißt, und wird der *View* eine Variable `pk` übergeben, die eine `5` enthält.
+Wenn du also `http://127.0.0.1:8000/post/5/` in deinen Browser eingibst, wird Django verstehen, dass du nach einer *View* suchst, die `post_detail` heißt, und wird der *View* die Information weitergeben, dass `pk` dabei `5` sein soll.
 
-So, jetzt haben wir der `blog/urls.py` ein neues URL-Muster hinzugefügt! Lass uns die Seite http://127.0.0.1:8000/ aktualisieren - Peng! Der Server läuft wieder nicht mehr. Schau in die Konsole - wie erwartet, gibt es noch einen anderen Fehler!
+So, jetzt haben wir der `blog/urls.py` ein neues URL-Muster hinzugefügt! Lass uns die Seite http://127.0.0.1:8000/ neu laden - Bumm! Der Server läuft wieder nicht mehr. Schau in die Konsole - wie erwartet gibt es noch einen anderen Fehler!
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+Erinnerst du dich, was der nächste Schritt ist? Eine View hinzufügen!
 
 ## Füge eine View hinzu
 
