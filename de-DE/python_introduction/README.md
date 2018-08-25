@@ -28,7 +28,7 @@ Wir wollen eine Python Konsole öffnen, also tippe unter Windows `python` oder i
 
 Nach Eingabe von python3 in der Konsole ändert sich das Prompt-Zeichen zu `>>>`. Für uns bedeutet das, dass wir ab nun nur noch Python-Code eingeben können. Den Python-Prompt `>>>` musst du nicht jedesmal eingeben - dies macht Python für dich.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Dann bist Du wieder in der normalen Konsole und der Python-Prompt `>>>` ist weg.
+Wenn du die Python-Konsole wieder verlassen möchtest, gib `exit()` ein oder nutze das Tastatur-Kürzel `Strg + Z` unter Windows bzw. `Strg + D`, wenn du einen Mac hast oder Linux verwendest. Dann bist Du wieder in der normalen Konsole und der Python-Prompt `>>>` ist weg.
 
 Fürs Erste bleiben wir in der Python Konsole, wir wollen mehr darüber lernen. Lass uns mit ein wenig Mathematik anfangen, gib `2 + 3` ein und drück `enter`.
 
@@ -107,7 +107,7 @@ oder du kannst den Apostroph mit einem Backslash (``) markieren:
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Toll, was? Um deinen Namen in Großbuchstaben anzuzeigen, gib folgendes ein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ Lass uns eine Variable mit der Bezeichnung `name` anlegen:
 
 Wir geben ein: name ist gleich "Ola".
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Du hast sicher schon bemerkt, dass Python diesmal kein Ergebnis zurückgegeben hat. Woher sollen wir nun wissen, dass es die Variable jetzt auch tatsächlich gibt? Gib `name` ein und drücke wieder auf `Enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Du kannst die Variable auch in Funktionen verwenden:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Das ist toll, oder? Variablen können alles enthalten, also auch Zahlen. Versuche Folgendes:
 
 {% filename %}command-line{% endfilename %}
 
@@ -414,7 +414,7 @@ KeyError: 'age'
 
 Ah, wieder ein Fehler! Diesmal ein **KeyError**. Python hilft uns auch hier und sagt uns, dass es den key `'age'` in diesem Dictionary gar nicht gibt.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Wenn du zwischen Dictionaries und Listen wählen kannst, wann sollte welche Datenstruktur verwendet werden? Das ist eine gute Frage, über die es sich nachzudenken lohnt; und vielleicht möchtest du dies kurz tun, bevor du weiterliest.
 
 - Du brauchst nur eine geordnete Folge von Elementen? Dann wähle eine Liste.
 - Du brauchst eine Sammlung von Elementen, auf die du später einzeln, gezielt und effizient mit Hilfe eines Namens (d.h. keys) zugreifen kannst? Dann wähle ein Dictionary.
@@ -438,7 +438,7 @@ Wie bei Listen können wir auch bei Dictionaries die `len()`-Funktion verwenden,
 
 Wir hoffen, dass das Alles für dich bisher Sinn ergibt. :) Bist du bereit für mehr Spaß mit Dictionaries? Machen wir weiter.
 
-Zum Löschen von Elementen kannst du den `pop()`-Befehl verwenden. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Zum Löschen von Elementen kannst du den `pop()`-Befehl verwenden. Nehmen wir an, du möchtest den Eintrag mit dem key `'favorite_numbers'` entfernen, dann tippe:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ Schon gespannt auf den nächsten Teil? :)
 
 > Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) behandelt.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Ein großer Teil beim Programmieren besteht darin, Dinge zu vergleichen. Was lässt sich am besten vergleichen? Zahlen!. Schauen wir uns mal an, wie das funktioniert:
 
 {% filename %}command-line{% endfilename %}
 
@@ -557,7 +557,7 @@ Es gibt zwei Boolean-Objekte:
 - True (wahr)
 - False (falsch)
 
-Damit Python diese beiden Werte versteht, musst du sie auch genau so schreiben (den ersten Buchstaben groß, alle weiteren klein). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Damit Python diese beiden Werte versteht, musst du sie auch genau so schreiben (den ersten Buchstaben groß, alle weiteren klein). **true, TRUE und tRUE funktionieren nicht – nur True ist korrekt.** (Dasselbe gilt auch für False.)
 
 Auch Booleans können Variablen zugewiesen werden:
 
@@ -599,7 +599,7 @@ Bisher haben wir den Python-Code nur im Interpreter eingegeben, wodurch wir imme
 - Code eingeben und diesen in einer Python-Datei sichern
 - Und diesen dann laufen lassen!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Um den Python-Interpreter zu beenden, nutze die `exit()`-Funktion
 
 {% filename %}command-line{% endfilename %}
 
