@@ -96,7 +96,7 @@ Das ist der Superuser, den wir vorhin erstellt haben! Lass uns jetzt eine Instan
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Wie du siehst, holen (`get`) wir jetzt ein `User`-Objekt mit einem `username` 'ola'. Prima!
 
 Jetzt können wir schließlich unseren Post erstellen:
 
