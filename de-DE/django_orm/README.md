@@ -25,7 +25,7 @@ Das sollte angezeigt werden:
 (InteractiveConsole) >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+Nun bist du in der interaktiven Konsole von Django. Die funktioniert wie der Python-Prompt, aber hat noch etwas zusätzliche Django-Magie. :) Du kannst hier auch alle Python-Befehle verwenden.
 
 ### Alle Objekte
 
@@ -88,7 +88,7 @@ Welche User sind in unserer Datenbank vorhanden? Finde es damit heraus:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+Das ist der Superuser, den wir vorhin erstellt haben! Lass uns jetzt eine Instanz des Users erstellen (passe diese Zeile an, so dass dein eigener Benutzername verwendet wird):
 
 {% filename %}command-line{% endfilename %}
 
