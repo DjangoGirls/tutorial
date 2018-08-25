@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
          fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Zuerst müssen wir die Django-Forms importieren (`from django import forms`) und auch unser `Post`-Model (`from .models import Post`).
 
 Wie du wahrscheinlich schon vermutet hast, `PostForm` ist der Name unseres Formulars. Wir müssen Django mitteilen, dass unser Formular ein `ModelForm` ist (so kann Django ein bisschen für uns zaubern) - `forms.ModelForm` ist dafür verantwortlich.
 
@@ -85,7 +85,7 @@ Nach dem Hinzufügen der Zeile sieht deine HTML-Datei so aus:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Nach dem Speichern und Neuladen von http://127.0.0.1:8000 solltest du den bereits bekannten `NoReverseMatch` Fehler sehen. Ist dem so? Gut!
 
 ## URL
 
