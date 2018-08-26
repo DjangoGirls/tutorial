@@ -87,11 +87,12 @@ Você vai notar que um novo diretório `blog` foi criado e que ele contém vári
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
 Depois de criar uma aplicação, também precisamos dizer ao Django que ele deve usá-la. Fazemos isso no arquivo `mysite/settings.py`. Precisamos encontrar o `INSTALLED_APPS` e adicionar uma linha com `'blog',` logo acima do `]`. O resultado final ficará assim:
