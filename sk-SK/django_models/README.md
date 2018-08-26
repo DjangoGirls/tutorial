@@ -92,11 +92,12 @@ Uvidíš, že pribudne nový adresár `blog`, ktorý obsahuje množstvo súborov
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
 Po vytvorení aplikácie tiež musíš Djangu povedať, že ju má použiť. To urobíme v súbore `mysite/settings.py`. Musíme nájsť `INSTALLED_APPS` a pridať riadok obsahujúci `'blog'` tesne pred uzatváraciu zátvorku`]`. Takže výsledok nášho snaženia bude vyzerať takto:
