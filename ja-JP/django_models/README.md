@@ -87,11 +87,12 @@ Djangoのモデルは特別なオブジェクトで、`データベース` に�
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
 アプリケーションを作ったら、Djangoにそれを使うように伝えないといけません。 それは `mysite/settings.py` ファイルの中でやります。 まず `INSTALLED_APPS` を見つけて `]` の上に `'blog'` という一行を追加します。 そうすると、最終的には以下のようになりますね。
