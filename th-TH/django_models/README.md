@@ -77,21 +77,22 @@ A model in Django is a special kind of object – it is saved in the `database`.
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
 หลังจากที่เราสร้าง application เราต้องบอกให้ Django รู้ด้วยว่าเราจะใช้มัน ซึ่งคุณสามารถทำได้ที่ไฟล์ `mysite/settings.py` เราต้องหา `INSTALLED_APPS` จากนั้นจึงเพิ่มบรรทัดที่มีคำว่า `'blog',` ให้อยู่เหนือเครื่องหมาย `)` ผลลัพธ์สุดท้ายของเราหน้าตาควรจะออกมาเป็นแบบนี้:
