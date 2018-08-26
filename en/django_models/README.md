@@ -91,11 +91,12 @@ djangogirls
 │   └── views.py
 ├── db.sqlite3
 ├── manage.py
-└── mysite
-    ├── __init__.py
-    ├── settings.py
-    ├── urls.py
-    └── wsgi.py
+├── mysite
+│   ├── __init__.py
+│   ├── settings.py
+│   ├── urls.py
+│   └── wsgi.py
+└── requirements.txt
 ```
 
 After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
