@@ -87,11 +87,12 @@
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
 بعد إنشاء التطبيق، نحتاج أيضا أن نقول لدجانغو أنه ينبغي استخدامه. نحن نفعل ذلك في ملف `mysite/settings.py`. نحن بحاجة إلى البحث عن `INSTALLED_APPS` وإضافة خط يحتوي على `'blog',` فقط فوق `]`. المنتج النهائي ينبغي أن يبدو هكذا:
