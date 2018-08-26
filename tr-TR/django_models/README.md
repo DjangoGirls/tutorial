@@ -87,11 +87,12 @@ Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark 
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
 Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`'ı bulup `]` karakterinin üzerindeki satıra `'blog',` yazmamız lazım. Sonuç aşağıdaki gibi görünmeli:
