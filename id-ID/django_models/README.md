@@ -71,11 +71,12 @@ Anda akan melihat bahwa sebuah petunjuk `blog` baru dibuat dan berisi sejumlah f
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
 Setelah membuat sebuah aplikasi, kita juga perlu memberitahukan Django bahwa aplikasi tersebut harus menggunakannya. Kami mengerjakan itu di file `Mysite/settings.py`. Kita harus menemukan `INSTALLED_APPS` dan menambahkan baris yang berisikan `'blog',` tepat di atas `]`. Jadi produk akhir akan tampak seperti ini:
