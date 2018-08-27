@@ -80,7 +80,7 @@ urlpatterns = [
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+あなたは次のステップが何であるか覚えていますか？ ビューを追加する！ですね。
 
 ## 投稿の詳細ビューを追加する
 
@@ -98,7 +98,7 @@ Post.objects.get(pk=pk)
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-私たちはそれを望んでいません！ But luckily Django comes with something that will handle that for us: `get_object_or_404`. 与えられた`pk`の`Post`がない場合、前よりもっとよい `Page Not Found 404` ページが表示されます。
+私たちはそれを望んでいません！ しかし幸運にもDjangoにはそれを処理するものがあります：`get_object_or_404` です。 与えられた`pk`の`Post`がない場合、前よりもっとよい `Page Not Found 404` ページが表示されます。
 
 ![Page not found](images/404_2.png)
 
