@@ -6,11 +6,11 @@
 
 Apostamos que você usa a Internet todos os dias. Mas você sabe realmente o que acontece quando digita um endereço como https://djangogirls.org em seu navegador e aperta `Enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Igual a seus filmes, músicas, ou imagens. No entanto, há uma parte que é exclusiva para sites: ela inclui códigos de computador chamados HTML.
+A primeira coisa que você precisa entender é que um site é só um monte de arquivos salvos em um disco rígido. Da mesma frma que seus filmes, músicas, ou imagens. No entanto, há uma parte que é exclusiva para sites: ela inclui códigos de computador chamados HTML.
 
-Se você não estiver familiarizada com programação, pode ser difícil compreender o HTML no começo, mas seus navegadores da web (como o Chrome, Safari, Firefox, etc) amam ele. Os navegadores da Web são projetados para entender esse código, seguir suas instruções e apresentar esses arquivos de que seu site é feito, exatamente como você quer.
+Se você não estiver familiarizada com programação, pode ser difícil compreender o HTML no começo, mas seus navegadores da web (como o Chrome, Safari, Firefox, etc) amam ele. Os navegadores da Web são projetados para entender esse código, seguir suas instruções e apresentar os arquivos de que um site é feito, exatamente como deve.
 
-Como qualquer arquivo, os arquivos HTML precisam ser armazenados num disco rígido. Para a internet, usamos poderosos computadores especiais chamados *servidores*. Eles não têm uma tela, um mouse ou um teclado, porque sua finalidade principal é armazenar dados e servi-los. É por isso que eles são chamados de *servidores* -- eles *servem* dados a você.
+Como qualquer arquivo, os arquivos HTML precisam ser armazenados num disco rígido. Para a internet, usamos poderosos computadores especiais chamados *servidores*. Eles não têm uma tela, um mouse ou um teclado, porque sua finalidade principal é armazenar dados e servi-los. É por isso que eles são chamados de *servidores* - eles *servem* dados a você.
 
 OK, mas você quer saber com o quê a internet se parece, certo?
 
@@ -22,7 +22,7 @@ Que bagunça, né? Na verdade, a internet é uma rede de máquinas conectadas (o
 
 ![Figura 1.2](images/internet_3.png)
 
-Fascinante, né? But it is not possible to have a wire between every machine connected to the Internet. Logo, para alcançar uma máquina (por exemplo aquela onde https://djangogirls.org está salva), precisamos passar uma requisição por muitas máquinas diferentes.
+Fascinante, né? Mas não é possível ter um fio ligando todas as máquinas que estão conectadas à internet. Logo, para alcançar uma máquina (por exemplo aquela onde https://djangogirls.org está salva), precisamos passar uma requisição por muitas máquinas diferentes.
 
 É algo assim:
 
@@ -34,7 +34,7 @@ Sua carta vai para a agência dos correios mais próxima de você. Então, ela v
 
 ![Figura 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+Funciona assim - voê envia mensagens e espera alguma resposta. Ao invés de papel e caneta, você usa bytes de dados, mas a ideia é a mesma!
 
 Ao invés de endereços com o nome da rua, cidade, código postal e nome do país, na internet usamos endereços de IP. Primeiro seu computador pergunta pelo DNS (Domain Name System - Sistema de Nome de Domínio) para traduzir djangogirls.org para um endereço de IP. Isso funciona mais ou menos como as antigas listas telefônicas em que você podia procurar o número e endereço da pessoa que queria contactar.
 
