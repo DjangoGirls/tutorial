@@ -22,6 +22,6 @@ Webサーバーにリクエストがあると、Djangoに伝えられ、リク�
 
 *ビュー*関数では、面白いことが行われます。私たちは、データベースに情報を探しにいきます。 時に、ユーザーがデータを変更するよう求めてきますよね？ 例えば、「私の仕事内容を変えて下さい」といった手紙のように。*ビュー*は、まずあなたにその権限があるか確認します。次に、仕事内容を書き換えて、「完了しました！」というメッセージをあなたに送り返します。そして、*ビュー*が反応を返して、DjangoがユーザーのWebブラウザに情報を送ります。
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+上記の説明は、多少簡略化して説明しています。しかし、今ここでは、技術的なことを完璧に理解する必要はありません。概念が分かれば十分です。
 
 So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
