@@ -599,7 +599,7 @@ Até agora, escrevemos todos os códigos no interpretador de Python, que nos lim
 - Salvar algum código em um novo arquivo de Python
 - Executar o código!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Para sair do interpretador de Python, use a função `exit()`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -610,7 +610,7 @@ $
 
 Isso vai levá-la de volta ao prompt de comando.
 
-Mais cedo, nós escolhemos um editor de código da seção [editor de código](../code_editor/README.md). Agora, precisamos abri-lo e escrever algum código em um novo arquivo:
+Mais cedo, escolhemos um editor de código na seção [editor de código](../code_editor/README.md). Agora, precisamos abri-lo e escrever algum código em um novo arquivo:
 
 {% filename %}editor{% endfilename %}
 
@@ -618,11 +618,11 @@ Mais cedo, nós escolhemos um editor de código da seção [editor de código](.
 print('Hello, Django girls!')
 ```
 
-Agora você é uma desenvolvedora Python bastante experiente, então sinta-se livre para escrever códigos com o que aprendeu hoje. ;)
+Você já é uma desenvolvedora Python bastante experiente, então sinta-se livre para escrever códigos com o que aprendeu hoje. ;)
 
 Agora, precisamos salvar o arquivo e dar a ele um nome descritivo. Vamos nomear o arquivo **python_intro.py** e salvá-lo na sua área de trabalho. Podemos chamá-lo como quisermos, mas é importante que o nome termine com **.py**. A extensão **.py** diz ao sistema operacional que esse é um **arquivo Python executável** e o interpretador de Python pode rodá-lo.
 
-> **Observação**: Você deve reparar numa das coisas mais legais nos editores de código: cores! No interpretador de Python tudo é da mesma cor, mas no editor você deve estar vendo que a função `print` tem uma cor diferente da string que ela recebe como argumento. Isso se chama destaque de sintaxe ("syntax highlightning", do Inglês) e é uma funcionalidade muito útil quando escrevemos código. As cores de cada elemento nos dão dicas sobre o código. Elas avisam, por exemplo, sobre strings que esquecemos de fechar ou palavras reservadas que digitamos errado (como a palavra `def` na definição de uma função, que veremos adiante). Esta é uma das razões pelas quais usamos um editor de código. :)
+> **Observação**: Você deve reparar numa das coisas mais legais nos editores de código: cores! No interpretador de Python, tudo é da mesma cor, mas no editor você deve estar vendo que a função `print` tem uma cor diferente da string que ela recebe como argumento. Isso se chama destaque de sintaxe ("syntax highlightning", do Inglês) e é uma funcionalidade muito útil quando escrevemos código. As cores de cada elemento nos dão dicas importantes. Elas avisam, por exemplo, sobre strings que esquecemos de fechar ou palavras reservadas que digitamos errado (como a palavra `def` na definição de uma função, que veremos adiante). Esta é uma das razões pelas quais usamos um editor de código. :)
 
 O arquivo está salvo, então é hora de executá-lo! Com as habilidades que você aprendeu na seção sobre linhas de comando, use o terminal para **ir para os diretórios no desktop**.
 
@@ -672,9 +672,9 @@ E no Windows Powershell, é assim:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Se você tiver alguma dificuldade, é só pedir ajuda. Sua monitora está aqui para isso!
 
-Agora use o interpretador de Python para executar o código que está no arquivo, assim:
+Agora, use o interpretador de Python para executar o código que está no arquivo, assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -725,7 +725,7 @@ if 3 > 2:
     print('Funciona!')
 ```
 
-Notou que o texto na linha seguinte ao "if" começa depois de quatro espaços? Chamamos esse tipo de formatação de endentação. Precisamos dessa endentação para que o Python saiba quais linhas executar se a condição dentro do if for verdadeira. Você pode usar quantos espaços quiser, mas para que os códigos tenham uma aparência mais limpa e organizada, os programadores de Python costumam usar quatro. Uma tabulação conta como quatro espaços se você configurar seu editor de texto assim. Quando escolher quantos espaços usar, não mude! Se você já começou a endentar com quatro espaços, siga esse padrão em todo o código - ou você poderá encontrar problemas.
+Notou que o texto na linha seguinte ao "if" começa depois de quatro espaços? Chamamos esse tipo de formatação de endentação. Precisamos dessa endentação para que o Python saiba quais linhas executar se a condição dentro do if for verdadeira. Você pode usar quantos espaços quiser, mas para que os códigos tenham uma aparência mais limpa e organizada, os programadores de Python costumam usar quatro. Uma tabulação conta como quatro espaços se você configurar seu editor de texto assim. Quando escolher quantos espaços usar, não mude! Se começou a endentar com quatro espaços, siga esse padrão em todo o código - ou você poderá encontrar problemas.
 
 Salve o código e execute outra vez:
 
@@ -740,7 +740,7 @@ Observação: Lembre-se que no Windows 'python3' não é reconhecido como um com
 
 ### E se uma condição não for verdadeira?
 
-Nos exemplos anteriores, o código foi executado somente quando as condições eram verdadeiras. No entanto, o Python também tem as instruções `elif` e `mais`:
+Nos exemplos anteriores, o código foi executado somente quando as condições eram verdadeiras. No entanto, o Python também tem as instruções `elif` e `else`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -815,7 +815,7 @@ O Python testa cada condição na sequência em que aparece no código e então 
 
 Comentários são linhas que começam com `#`. Você pode escrever o que quiser após o # `` e o Python vai ignorar. Comentários podem tornar seu código mais fácil para outras pessoas entenderem.
 
-Vamos ver como isso funciona:
+Vamos ver como funciona:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -860,7 +860,7 @@ hi()
 
 Ok, nossa primeira função está pronta!
 
-Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a função que definimos, devemos chamá-la no final. Esclarecendo: no bloco de texto formado pela linha que começa com "def" e as linhas endentadas seguintes, definimos a função, mas não executamos nenhum comando. Precisamos dizer explicitamente ao Python que a execute (escrevendo "hi()").
+Reparou que escrevemos o nome da função no começo e no final do código? O Python lê e executa o código de cima para baixo, então para usar a função que definimos, devemos chamá-la no final. Esclarecendo: no bloco de texto formado pela linha que começa com "def" e pelas linhas endentadas seguintes, definimos a função, mas não executamos nenhum comando. Precisamos dizer explicitamente ao Python que a execute (escrevendo "hi()").
 
 Vamos executá-la agora e ver o que acontece:
 
