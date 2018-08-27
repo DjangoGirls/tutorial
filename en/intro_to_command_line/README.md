@@ -21,9 +21,15 @@ To start some experiments we need to open our command-line interface first.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → Windows System → Command Prompt.
+Depending on your version of Windows and your keyboard, one or more of the following should work to open a command window:
+- Go to Start menu → Windows System → Command Prompt.
+- Go to Start menu → All Programs → Accessories → Command Prompt.
+- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
+- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
+- Hold the special Windows key on your keyboard and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Hold the Windows key and press the "X" key. Choose "Command Prompt" from the pop-up menu.
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
 
 <!--endsec-->
 
@@ -36,7 +42,7 @@ Go to Applications → Utilities → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
 
 <!--endsec-->
 
