@@ -12,7 +12,7 @@ As etapas a seguir mostrarão como usar a janela preta que todos os hackers usam
 
 ## O que é a linha de comando?
 
-A janela, que geralmente é chamada de **linha de comando** ou **interface de linha de comando**, é uma aplicação de texto para ver e manipular arquivos em seu computador. É comoo Windows Explorer ou o Finder no Mac, mas sem a interface gráfica. Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
+A janela, que geralmente é chamada de **linha de comando** ou **interface de linha de comando**, é uma aplicação de texto para ver e manipular arquivos em seu computador. É como o Windows Explorer ou o Finder no Mac, mas sem a interface gráfica. Outros nomes para a linha de comando são: *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
 
 ## Abra a interface de linha de comando
 
@@ -20,7 +20,7 @@ Para começar alguns experimentos, precisamos abrir a nossa interface de linha d
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Vá para o Menu iniciar → Sistema do Windows → Prompt de comando.
+Vá para Menu iniciar → Sistema do Windows → Prompt de comando.
 
 > Em versões antigas do Windows, procure em Menu iniciar → Todos programas → Acessórios → Prompt de comando.
 
@@ -34,7 +34,7 @@ Vá para Aplicações → Utilidades → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Provavelmente você vai encontrá-la em Aplicativos → Acessórios → Terminal, mas depende do seu sistema operacional. Qualquer coisa, é só procurar no Google. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Agora você deve ver uma janela branca ou preta que está à espera de seus coma
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+Se você estiver em Mac ou Linux, provavelmente verá um `$` como este:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,7 +55,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-No Windows, é um sinal de `>`, como este:
+No Windows, é um sinal de `>` como este:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Cada comando será antecedido por este sinal e um espaço, mas você não precis
 
 A parte que vai até e inclui o `$` ou o `>` é chamada de *prompt de linha de comando*, ou *prompt*, de forma breve. Ele está pedindo que você digite algo.
 
-No tutorial, quando queremos que você digite um comando, nós incluiremos o `$` ou `>` e algumas vezes algum texto adicional à esquerda. Ignore the left part and only type in the command, which starts after the prompt.
+No tutorial, quando quisermos que você digite um comando, incluiremos o `$` ou `>` e, algumas vezes, algum texto adicional à esquerda. Ignore o que está à esquerda e apenas digite o comando que inicia após o prompt.
 
 ## Seu primeiro comando (Uhuu!)
 
@@ -94,7 +94,7 @@ Vamos começar digitando este comando:
 
 <!--endsec-->
 
-E então pressione a tecla `enter`. Este é o nosso resultado:
+E então pressione a tecla `enter`. Este é o resultado:
 
 {% filename %}command-line{% endfilename %}
 
@@ -112,7 +112,7 @@ Cada sistema operacional tem o seu próprio conjunto de instruções para a linh
 
 ### Pasta atual
 
-Seria legal saber em que diretório estamos, né? Para isso, digite o seguinte comando e clique `enter`:
+Quer saber em que diretório está agora? Digite o seguinte comando e clique `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -144,7 +144,7 @@ Você provavelmente vai ver algo parecido em seu computador. A linha de comando 
 
 ### Listando arquivos e pastas
 
-Então, o que tem no seu computador? Seria legal descobrir. Vamos ver:
+Então, o que tem no seu computador? Vamos descobrir:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -223,7 +223,7 @@ Veja se realmente entramos na pasta:
 
 Aqui está!
 
-> Dica de profissional: se você digitar `cd D` e apertar a tecla `tab` no seu teclado, a linha de comando irá preencher automaticamente o resto do nome para que você possa navegar rapidamente. Se houver mais de uma pasta que comece com "D", aperte a tecla `tab` duas vezes para obter uma lista de opções.
+> Dica de profissional: se você digitar `cd D` e apertar a tecla `tab` no seu teclado, a linha de comando preencherá automaticamente o resto do nome para que você possa navegar rapidamente. Se houver mais de uma pasta cujo nome comece com "D", aperte a tecla `tab` duas vezes para obter uma lista de opções.
 
 * * *
 
@@ -249,7 +249,7 @@ Que tal criar um diretório em sua área de trabalho para praticar? Use o seguin
 
 <!--endsec-->
 
-Esse pequeno comando criará um diretório chamado `practice` em sua área de trabalho. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Experimente. :)
+Esse pequeno comando criará um diretório chamado `practice` em sua área de trabalho. Você pode verificar se o diretório realmente está lá olhando sua área de trabalho ou executando o comando `ls` ou `dir`! Experimente. :)
 
 > Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
 
