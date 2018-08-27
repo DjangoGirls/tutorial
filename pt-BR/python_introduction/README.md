@@ -107,7 +107,7 @@ ou "escapando" a aspa simples (o que sinaliza para o Python que aquele sinal é 
 "Roda d'água"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Legal, hein? Para ver seu nome em letras maiúsculas, basta digitar:
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ Se você quer saber o número de letras contidas em seu nome, há uma **função
 3
 ```
 
-Talvez você esteja se perguntando porque algumas vezes chamamos funções com um `.` depois de uma string (como `"Ola".upper()`) e outras vezes primeiro chamamos a função e colocamos a string entre parênteses. Bem, em alguns casos, funções pertencem a objetos - como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Outras vezes, elas não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, como a função `len()`. É por isso que nós estamos fornecendo `"Ola"` como um parâmetro para a função `len`.
+Talvez você esteja se perguntando porque algumas vezes chamamos funções com um `.` depois de uma string (como `"Ola".upper()`) e outras vezes primeiro chamamos a função e depois colocamos a string entre parênteses. Bem, em alguns casos, funções pertencem a objetos - como `upper()`, que só pode ser utilizada em strings. Nesse caso, nós chamamos a função de **método**. Outras vezes, elas não pertencem a nada específico e podem ser usadas em diferentes tipos de objetos, como a função `len()`. É por isso que fornecemos `"Ola"` como parâmetro para a função `len`.
 
 ### Sumário
 
@@ -136,7 +136,7 @@ OK, chega de strings. Até agora, você aprendeu sobre:
 - **o prompt** - digitar comandos (códigos) no interpretador de Python resulta em respostas em Python
 - **números e strings** - no Python, números são usados para matemática e strings, para objetos de texto
 - **operadores** - como `+` e `*`, combinam valores para produzir um novo valor
-- **funções** -- como `upper()` e `len()`, executam ações nos objetos.
+- **funções** - como `upper()` e `len()`, executam ações nos objetos.
 
 Esse é o básico de todas as linguagens de programação. Pronta para algo mais difícil? Apostamos que sim!
 
@@ -164,7 +164,7 @@ Nossa primeira mensagem de erro nos diz que objetos do tipo "int" (inteiros, nat
 6
 ```
 
-Funcionou! Usamos a função `str` dentro da função `len`. A função `str ()` converte tudo para strings.
+Funcionou! Usamos a função `str` dentro da função `len`. A função `str ()` converte tudo em strings.
 
 - A função `str` converte as coisas em **strings**
 - A função `int` converte as coisas em **números inteiros**
@@ -175,7 +175,7 @@ Funcionou! Usamos a função `str` dentro da função `len`. A função `str ()`
 
 Variáveis são um conceito importante em programação. Uma variável é apenas um nome que você atribui a um objeto. Programadores armazenam dados nelas para tornar seus códigos mais legíveis e para não ter que lembrar a todo momento o que são certas coisas.
 
-Digamos que queremos criar uma nova variável chamada `name`:
+Se quisermos criar uma nova variável chamada `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ Digamos que queremos criar uma nova variável chamada `name`:
 
 Digitamos: name igual Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Como você deve ter percebido, a última linha de código não retornou nada como nos exemplos anteriores. Então como vamos saber se a variável realmente existe? Basta digitar `name` e clicar `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Você pode usá-la também em funções:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Incrível, né? Variáveis podem ser qualquer coisa, então podem ser números também! Tente isso:
 
 {% filename %}command-line{% endfilename %}
 
@@ -236,7 +236,7 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-Um erro! O Python tem diferentes tipos de erros e este é chamado **NameError**. O Python mostrará esta mensagem se você tentar usar uma variável que ainda não foi definida. Se encontrar esse erro mais tarde, confira no seu código se você não digitou errado o nome de uma variável.
+Um erro! O Python tem diferentes tipos de erros e este é chamado **NameError**. Ele mostrará esta mensagem se você tentar usar uma variável que ainda não foi definida. Se encontrar esse erro mais tarde, confira no seu código se você não digitou errado o nome de uma variável.
 
 Brinque com isso por um tempo e veja o que consegue fazer!
 
@@ -254,7 +254,7 @@ Tente o seguinte:
 Maria
 ```
 
-Quando você digita `name`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você disser para o Python `print(name)`, ele vai "imprimir" (ou mostrar) na tela o conteúdo da variável sem as aspas, que é mais bonitinho. :)
+Quando você digita `name`, o interpretador de Python responde com a *representação* da variável 'name' na forma de string, que é sequência de letras M-a-r-i-a, entre aspas simples. Quando você disser para o Python `print(name)`, ele vai "imprimir" (ou mostrar) na tela o conteúdo da variável sem as aspas.
 
 Como veremos mais tarde, `print()` também é útil quando queremos imprimir algo dentro de funções ou quando queremos imprimir algo em várias linhas.
 
@@ -305,7 +305,7 @@ Isso não retorna nada, apenas muda a ordem em que os números aparecem na lista
 [3, 12, 19, 30, 42, 59]
 ```
 
-Como você pode ver, agora os números estão ordenados do menor para o maior. Parabéns!
+Agora os números estão ordenados do menor para o maior. Parabéns!
 
 E se quisermos inverter a ordem? Vamos fazer isso!
 
@@ -317,7 +317,7 @@ E se quisermos inverter a ordem? Vamos fazer isso!
 [59, 42, 30, 19, 12, 3]
 ```
 
-Moleza, né? Se você quiser adicionar alguma coisa à sua lista, digite o seguinte comando:
+Moleza, né? Se quiser adicionar alguma coisa à sua lista, digite o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -357,9 +357,9 @@ Para apagar algum objeto da sua lista, você precisa usar **índices**, como apr
 
 Funcionou perfeitamente!
 
-Agora tente alguns outros índices, como: 6, 7, 1000, -1, -6 ou -1000. Veja se consegue prever o resultado antes de executar o comando. Os resultados fazem sentido para você?
+Agora, tente alguns outros índices, como: 6, 7, 1000, -1, -6 ou -1000. Veja se consegue prever o resultado antes de executar o comando. Os resultados fazem sentido para você?
 
-Você pode encontrar uma lista de todos os métodos disponíveis nesta seção na documentação do Python: https://docs.python.org/3/tutorial/datastructures.html
+Uma lista de todos os métodos disponíveis nesta seção pode ser encontrada na documentação do Python: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dicionários
 
