@@ -2,15 +2,15 @@
 
 # Introdução ao Python
 
-> Parte deste capítulo é baseada no tutorial da Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Parte deste capítulo é baseada no tutorial das Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
 Vamos escrever um pouco de código!
 
 ## Interpretador de Python
 
-> Para as leitoras em casa: esta parte é abordada no vídeo [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
+> Para leitoras em casa: esta parte é abordada no vídeo [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-Para começar a trabalhar com Python, precisamos abrir uma * linha de comando* no computador. Você provavelmente já sabe como fazer isso - aprendeu no capítulo [ Introdução à Linha de Comando ](../intro_to_command_line/README.md).
+Para começar a trabalhar com Python, precisamos abrir uma * linha de comando* (ou prompt) no computador. Você provavelmente já sabe como fazer isso - aprendeu no capítulo [ Introdução à Linha de Comando ](../intro_to_command_line/README.md).
 
 Assim que estiver pronta, siga as instruções abaixo.
 
@@ -28,9 +28,9 @@ Para abrir um prompt de comando do Python, digite `python` no Windows ou `python
 
 Depois de executar o comando python, o prompt mudou para `>>>`. Isso significa que, por enquanto, só podemos executar comandos na linguagem Python. Você não precisa digitar `>>>` - o Python fará isso por você.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Fazendo isso, você não vai mais ver o `>>>`.
+Se a qualquer momento você quiser sair do prompt do Python, digite `exit()` ou use o atalho `Ctrl + Z` no Windows e `Ctrl + D` no Mac ou Linux. Fazendo isso, você não vai mais ver o `>>>`.
 
-Por enquanto, não vamos sair do prompt do Python. Queremos saber mais sobre ele. Para começar, vamos digitar um pouco de matemática, como `2 + 3`, e clicar `enter`.
+Por enquanto, não vamos sair do prompt do Python. Queremos aprender mais sobre ele. Para começar, vamos digitar um pouco de matemática, como `2 + 3`, e clicar `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -54,7 +54,7 @@ Para executar cálculo exponencial, como 2 elevado a 3, digitamos: {% filename %
 
 Brinque um pouco com isso e depois volte aqui. :)
 
-Como você pode ver, o Python é uma ótima calculadora. Se você está se perguntando o que mais você pode fazer…
+Como você pode ver, o Python é uma ótima calculadora. Se você está se perguntando o que mais pode fazer…
 
 ## Strings
 
