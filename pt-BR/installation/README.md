@@ -43,7 +43,7 @@ Vá para [GitHub.com](https://www.github.com) e cadastre uma conta de usuário.
 
 # Comece a ler
 
-Parabéns, você tem tudo configurado e pronto para começar! Se você ainda tem tempo antes do workshop, seria útil começar a ler alguns dos capítulos iniciais:
+Parabéns, você tem tudo configurado e pronto para começar! Se ainda tem tempo antes do workshop, comece a ler alguns dos capítulos iniciais:
 
 * [Como a internet funciona](../how_the_internet_works/README.md)
 
@@ -55,4 +55,4 @@ Parabéns, você tem tudo configurado e pronto para começar! Se você ainda tem
 
 # Aproveite o workshop!
 
-Quando você começar a oficina, já será capaz de ir direto para o [seu primeiro projeto Django!](../django_start_project/README.md) porque já viu todo o material dos capítulos anteriores.
+Quando você começar a oficina, já será capaz de ir direto para o [seu primeiro projeto Django!](../django_start_project/README.md) porque já vai ter visto todo o material dos capítulos anteriores.
