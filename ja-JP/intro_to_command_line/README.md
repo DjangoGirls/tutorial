@@ -34,7 +34,7 @@
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+おそらく ［アプリケーション］→［アクセサリ］→［ターミナル］と選択し起動できるでしょう。あなたのシステムによってはこの通りではないことがあります。見つからないときは、Google先生にきいてみましょう. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+MacあるいはLinuxの方は、次のように `$` と表示されているのがわかりますか？
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Windowsの方は、 `>` という記号が表示されていることでしょ�
 
 `$` や `>` と書かれているところまでを、 *コマンドラインプロンプト* あるいは略して*プロンプト*と呼ばれます。プロンプトは、あなたがここに何かを入力することを促しています。
 
-このチュートリアルでは、コマンドを入力してほしい時は、 `$` や `>` を含めて示しています。 Ignore the left part and only type in the command, which starts after the prompt.
+このチュートリアルでは、コマンドを入力してほしい時は、 `$` や `>` を含めて示しています。 $や>は無視して、プロンプト以降のコマンドを入力してください。
 
 ## 最初のコマンド (イェイ！)
 
@@ -249,7 +249,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-この短いコマンドで、デスクトップにpracticeという名前の新しいフォルダが作成されました。 You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! やってみてください。 :)
+この短いコマンドで、デスクトップにpracticeという名前の新しいフォルダが作成されました。 あなたのデスクトップを見てフォルダが作成されていることを確認してみましょう。あるいは、先ほど学んだコマンド `ls` や `dir` を使って確認しましょう。 やってみてください。 :)
 
 > PRO tip: 同じコマンドを何度もなんども入力したくない時は、上下矢印キー`↑`、`↓`を押せば、先ほどキーボードから入力したものが現れます。内容を修正したい場合には，左右矢印キー←，→を利用して修正したい位置にカーソルを移動させて，修正することができますよ。
 
