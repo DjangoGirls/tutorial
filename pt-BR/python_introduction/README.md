@@ -877,7 +877,7 @@ Observação: se não funcionou, não entre em pânico! A saída vai te ajudar a
 - Se recebeu uma mensagem `IdentationError`, confira se as duas linhas de `print` têm o mesmo recuo no começo: o Python precisa que o código dentro da função esteja bem alinhado.
 - Se a função não retornou nenhum resultado, certifique-se de que o útlimo `hi()`*não* esteja endentado - se ele estiver, essa linha vai se tornar parte da função e o Python não vai receber nenhum comando para executar.
 
-Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'olá' para quem o executa - com o nome dessa pessoa:
+Foi fácil, né? Vamos construir nossa primeira função com parâmetros. Usaremos o exemplo anterior - uma função que diz 'olá' para quem o executa - com o nome dessa pessoa:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -885,7 +885,7 @@ Isso foi fácil! Vamos construir nossa primeira função com parâmetros. Usarem
 def hi(name):
 ```
 
-Como você pode ver, agora nossa função tem um parâmetro chamado `name`:
+Agora nossa função tem um parâmetro chamado `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -959,7 +959,7 @@ Vamos fazer algo mais inteligente - existem mais que dois nomes, e escrever uma 
 
 ```python
 def hi(name):
-    print('Hi ' + name + '!')
+    print('Olá ' + name + '!')
 
 hi("Rachel")
 ```
@@ -978,7 +978,7 @@ Parabéns! Você acabou de aprender como criar funções. :)
 
 > Para leitoras em casa: esta parte do capítulo é abordada no vídeo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-Essa já é a última parte! Rápido, né? :)
+Essa já é a última parte do capítulo! Rápido, né? :)
 
 Programadores não gostam de repetir código. Programar é automatizar coisas, então não queremos cumprimentar cada pessoa manualmente, certo? É aí que entram os laços (ou "loops", em Inglês).
 
@@ -1005,8 +1005,8 @@ Aqui está o código completo que será salvo no arquivo:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-def hi(nome):
-    print('Olá ' + nome + '!')
+def hi(name):
+    print('Olá ' + name + '!')
 
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'você']
 for name in girls:
@@ -1028,10 +1028,10 @@ E quando rodamos:
     Olá Ola!
     Próxima
     Olá você!
-    Next girl
+    Próxima
     
 
-Como você pode ver, tudo o que colocar dentro de uma instrução `for` com espaço será repetido para cada elemento da lista `girls`.
+Como você pode ver, tudo o que colocar dentro de uma instrução `for` com endentação será repetido para cada elemento da lista `girls`.
 
 Você também pode usar o `for` para números usando a função `range`:
 
