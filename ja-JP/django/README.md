@@ -24,4 +24,4 @@ Webサーバーにリクエストがあると、Djangoに伝えられ、リク�
 
 上記の説明は、多少簡略化して説明しています。しかし、今ここでは、技術的なことを完璧に理解する必要はありません。概念が分かれば十分です。
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+これ以上詳細について深く説明するより、きっと、Djangoを使って実際に手を動かして作ってみる方がいいでしょう。重要な事はすべてその過程で学べますよ！
