@@ -313,7 +313,7 @@ Primeiro, precisamos voltar para a pasta Desktop:
 
 <!--endsec-->
 
-Ao utilizar o `..` junto com o comando `cd`, você muda do diretório atual para o diretório pai (o diretório que contém o seu diretório atual).
+Ao utilizar o `..` junto com o comando `cd`, você muda do diretório atual para o diretório pai (a pasta que contém o seu diretório atual).
 
 Veja onde você está:
 
@@ -360,7 +360,7 @@ Agora é hora de deletar o diretório `pratice`:
 
 <!--endsec-->
 
-Pronto! Para ter certeza que a pasta foi excluída, vamos checar:
+Pronto! Para ter certeza de que a pasta foi excluída, vamos checar:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +382,7 @@ Pronto! Para ter certeza que a pasta foi excluída, vamos checar:
 
 ### Saindo
 
-Isso é tudo, por enquanto! Agora você pode fechar a janela do terminal, mas vamos fazer do jeito hacker, né? :)
+Isso é tudo, por enquanto! Agora você pode fechar a janela do terminal, mas vamos fazer do jeito hacker. ;)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -420,9 +420,9 @@ Aqui vai uma lista de alguns comandos úteis:
 | rmdir (ou del)    | rm                       | Exclui arquivo                | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                    | Exclui diretório              | **rm -r testdirectory**                           |
 
-Esses são apenas alguns dos comandos que você pode rodar na sua linha de comando, mas não vamos usar mais do que isso hoje.
+Esses são apenas alguns dos comandos que você pode rodar no seu prompt de comando, mas hoje não vamos precisar de mais que isso.
 
-Se você estiver curiosa, [ss64.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
+Se estiver curiosa, [ss64.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
 
 ## Pronta?
 
