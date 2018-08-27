@@ -6,7 +6,7 @@
 
 **Vamos apresentá-la à sua primeira nova amiga: a linha de comando!**
 
-As etapas a seguir mostraram a você como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas realmente é apenas um prompt esperando por comandos de você.
+As etapas a seguir mostrarão como usar a janela preta que todos os hackers usam. Pode parecer um pouco assustador no começo, mas é apenas um prompt esperando por comandos.
 
 > **Observação:** Note que ao longo deste tutorial, intercalamos o uso dos termos 'diretório' e 'pasta', mas eles significam a mesma coisa.
 
