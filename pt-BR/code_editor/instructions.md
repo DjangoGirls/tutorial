@@ -24,8 +24,8 @@ O Atom é um editor de código recente criado pelo [GitHub](https://github.com/)
 
 Você deve estar se perguntando porque estamos instalando esse software editor de código específico ao invés de usar algo como Word ou Bloco de Notas.
 
-A primeira razão é que o código precisa estar em **texto puro, sem formatação**, e o problema com programas como o Word e o Textedit é que eles não produzem texto puro de fato. Eles produzem texto rico (com fontes e formatação), usando formatos personalizados, como [RTF](https://en.wikipedia.org/wiki/Rich_Text_Format) (Rich Text Format, ou Formato de Texto Rico, em português).
+A primeira razão é que o código precisa estar em **texto puro, sem formatação**, e programas como o Word e o Textedit não produzem texto puro de fato. Eles produzem texto rico (com fontes e formatação), usando formatos personalizados, como [RTF](https://en.wikipedia.org/wiki/Rich_Text_Format) (Rich Text Format, ou Formato de Texto Rico, em português).
 
-A segunda razão é que editores de código são especializados em edição de código, então eles podem fornecer funcionalidades úteis, como destacar o código com cores de acordo com seu significado ou fechar aspas automaticamente para você.
+A segunda razão é que editores de código são especializados em edição de código, então eles possuem funcionalidades úteis, como destacar o código com cores de acordo com seu significado ou fechar aspas automaticamente.
 
 Veremos tudo isso em ação mais pra frente. Logo, logo, seu bom e velho editor de código será uma de suas ferramentas preferidas. :)
