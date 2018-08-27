@@ -26,7 +26,7 @@
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+今、Djangoのインタラクティブコンソールが起動しています。Pythonプロンプトしかないように見えますが、ちゃんとDjangoも動いています。このコンソール画面では、Pythonのコマンドは何でも使えます。
 
 ### すべてのオブジェクト
 
