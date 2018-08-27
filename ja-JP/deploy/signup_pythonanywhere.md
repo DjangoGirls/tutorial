@@ -6,6 +6,6 @@ PythonAnywhere で無料の「Beginner」アカウントにサインアップし
 
 ## PythonAnywhere APIトークンの作成
 
-これはあなたが一度だけ行う必要があるものです。 PythonAnywhere にサインアップしたとき、ダッシュボードページが表示されます。 Find the link near the top right to your "Account" page, then select the tab named "API token", and hit the button that says "Create new API token".
+これはあなたが一度だけ行う必要があるものです。 PythonAnywhere にサインアップしたとき、ダッシュボードページが表示されます。 右上にある[アカウント]ページへのリンクをクリックし、[APIトークン]タブを選択し、[新しいAPIトークンを作成]ボタンをクリックします。
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![アカウントページのAPIトークンタブ](../deploy/images/pythonanywhere_create_api_token.png)
