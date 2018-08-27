@@ -1,16 +1,16 @@
 # Se você estiver fazendo o tutorial em casa
 
-Se você estiver fazendo o tutorial em casa e não em um dos [eventos Django Girls](https://djangogirls.org/events/), você pode pular este capítulo e ir direto para o capítulo [Como a internet funciona](../how_the_internet_works/README.md).
+Se você estiver fazendo o tutorial em casa e não em um dos [eventos Django Girls](https://djangogirls.org/events/), pode pular este capítulo e ir direto para o capítulo [Como a internet funciona](../how_the_internet_works/README.md).
 
-Isto porque cobrimos estas coisas no tutorial de qualquer maneira, e esta é apenas uma página adicional que reúne todas as instruções de instalação em um só lugar. O evento Django Girls inclui uma "noite de instalação" quando instalamos tudo que vamos precisar durante o workshop, então essa seção é útil para nós.
+Cobrimos estas coisas no tutorial de qualquer maneira, e esta é apenas uma página que reúne todas as instruções de instalação em um só lugar. O evento Django Girls inclui uma "noite de instalação" quando instalamos tudo que vamos precisar durante o workshop, então essa seção é útil para nós.
 
-Se você achar útil, pode continuar lendo este capítulo também. Mas se quiser começar a aprender antes de instalar um monte de coisas no seu computador, pule este capítulo e explicaremos a parte de instalação para você mais tarde.
+Se você achar útil, pode continuar lendo este capítulo também. Mas se quiser começar o tutorial antes de instalar um monte de coisas no seu computador, pule este capítulo e deixe a parte de instalação para mais tarde.
 
 Boa sorte!
 
 # Instalação
 
-No workshop, você construirá um blog. No tutorial, aprecem certas tarefas de configuração que você deve fazer antes para estar pronta para escrever códigos no dia do evento.
+No workshop, você construirá um blog. Para estar pronta para escrever códigos no dia do evento, você deve fazer antes certas tarefas de configuração que aparecem no tutorial.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
@@ -21,11 +21,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Instale um editor de código
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Configure o virtualenv e instale o Django
 
 {% include "/django_installation/instructions.md" %}
 
