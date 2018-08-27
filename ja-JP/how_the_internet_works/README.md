@@ -6,7 +6,7 @@
 
 私達は、毎日インターネットを使っています。でも、ブラウザのアドレス欄に https://djangogirls.org のようなアドレスを入力して `Enter` キーを押すと何が起こるか、あなたは実際に知っていますか？
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. あなたが自分のパソコンのハードディスクに動画や音楽や画像を保存しているのと同じということです。 しかし、Webサイトは動画や音楽、写真のようなデータとは違って、HTMLというコンピュータのコードを持っているのです。
+まず最初に理解する必要があるのは、Webサイトはハードディスクに保存された沢山のファイルであるということです。 あなたが自分のパソコンのハードディスクに動画や音楽や画像を保存しているのと同じということです。 しかし、Webサイトは動画や音楽、写真のようなデータとは違って、HTMLというコンピュータのコードを持っているのです。
 
 もし、あなたがプログラミングに精通していなかったら、最初はHTMLも難しく感じるでしょう。でも、あなたがよく使うWebブラウザ（ChromeやSafariやFirefox等々）はHTMLのコードが大好きです。 Webブラウザはこのコードがわかるようになっていて、コードの指示に従います。そして、あなたのウェブサイトのファイルをあなたが望む方法で表示するのです。
 
@@ -22,7 +22,7 @@ The first thing you need to understand is that a website consists of a bunch of 
 
 ![図 1.2](images/internet_3.png)
 
-すばらしいですね。 But it is not possible to have a wire between every machine connected to the Internet. したがって、マシン（例えば http://djangogirls.org が保存されているマシン）に到達するためには、多くの異なるマシンを介してリクエストを渡す必要があります。
+すばらしいですね。 でも、インターネットに接続されているすべてのマシンとマシンの間にワイヤを置くことは不可能です。 したがって、マシン（例えば http://djangogirls.org が保存されているマシン）に到達するためには、多くの異なるマシンを介してリクエストを渡す必要があります。
 
 こんな感じですね。
 
@@ -34,7 +34,7 @@ The first thing you need to understand is that a website consists of a bunch of 
 
 ![図 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+このように動作しています。あなたはメッセージを送信し、何らかの応答を期待します。 紙とペンではなく、データのバイトを使用しますが、アイデアは同じです！
 
 市町村名、郵便番号、国名の住所の代わりに、IPアドレスを使用します。 お使いのコンピュータは、まず djangogirls.org をIPアドレスに変換するようにDNS（Domain Name System）に依頼します。 あなたが連絡したい人の名前を探し、電話番号と住所を見つけることができる昔ながらの電話帳のようなものです。
 
