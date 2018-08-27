@@ -550,14 +550,14 @@ Aquí verás que al igual que en la expresión, Python no es capaz de comparar u
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Incidentalmente, acabas de aprender sobre un nuevo tipo de objeto en Python. Se llama **Boolean** (booleano).
 
 Hay sólo dos objetos booleanos:
 
 - True - verdadero
 - False - falso
 
-Pero para que Python entienda esto, siempre los tienes que escribir de modo 'True' (la primera letra en mayúscula, con el resto de las letras en minúscula). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Pero para que Python entienda esto, siempre los tienes que escribir de modo 'True' (la primera letra en mayúscula, con el resto de las letras en minúscula). **true, TRUE, y tRUE no funcionarán – solamente True es correcta.** (Lo mismo aplica también para 'False'.)
 
 Los valores booleanos pueden ser variables, también. Ve el siguiente ejemplo:
 
@@ -599,7 +599,7 @@ Hasta ahora hemos escrito todo nuestro código Python en el intérprete, lo cual
 - Guardar algo de código en un nuevo archivo de Python
 - ¡Ejecutarlo!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Para salir del intérprete de Python que hemos estado usando, escribe `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,7 +672,7 @@ Y en Powershell, será así:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Si te atoras, pide ayuda. ¡Justo para eso están aquí los asesores!
 
 Ahora usa Python para ejecutar el código en el archivo así:
 
