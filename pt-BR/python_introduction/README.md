@@ -414,7 +414,7 @@ KeyError: 'age'
 
 Olha, outro erro! Esse é um **KeyError**. O Python é bastante prestativo e te diz que a chave `'age'` não existe no nesse dicionário.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Você deve estar se perguntando quando deveria usar um dicionário ou uma lista. Essa é uma questão importante. Pense sobre ela antes de ver a resposta nas próximas linhas.
 
 - Você precisa de uma sequência ordenada de itens? Use uma lista.
 - Você precisa associar valores a chaves para poder procurá-los eficientemente (pela chave) mais tarde? Use um dicionário.
@@ -427,7 +427,7 @@ Dicionários, assim como listas, são *mutáveis*. Isso significa que eles podem
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Como nas listas, usar a função `len()` em dicionários retorna o número de pares chave-valor contidos nele. Vá em frente e digite o comando:
+Como nas listas, usar a função `len()` em dicionários retorna o número de pares chave-valor que ele contém. Vá em frente e digite o comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,9 +436,9 @@ Como nas listas, usar a função `len()` em dicionários retorna o número de pa
 4
 ```
 
-Espero que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários?
+Esperamos que esteja fazendo sentido até agora. :) Pronta para mais diversão com dicionários?
 
-Você pode usar o método `pop()` para deletar um item do dicionário. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Você pode usar o método `pop()` para deletar um item do dicionário. Se quiser excluir a entrada correspondente à chave `'favorite_numbers'`, por exemplo, basta digitar o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ Animada para a próxima parte? :)
 
 > Para leitoras em casa: esta seção é abordada no vídeo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Grande parte da programação consiste em comparar coisas. O que é mais fácil comparar? Números! Vamos ver como funciona:
 
 {% filename %}command-line{% endfilename %}
 
@@ -557,7 +557,7 @@ Existem apenas dois objetos booleanos:
 - True (verdadeiro)
 - False (falso)
 
-Para que o Python entenda, você precisa escrever exatamente 'True' (primeira letra maiúscula e as outras minúsculas -- mas sem as aspas). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Para que o Python entenda, você precisa escrever exatamente 'True' (primeira letra maiúscula e as outras minúsculas - mas sem as aspas). **true, TRUE ou tRUE não vão funcionar - só True está correto.** (A mesma coisa vale para 'False').
 
 Booleanos também podem ser variáveis! Veja:
 
