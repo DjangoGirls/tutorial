@@ -12,7 +12,7 @@ Existe uma coisa com a qual é preciso ter cuidado: durante a instalação, voc�
 
 ![Não se esqueça de adicionar o Python ao Path](../python_installation/images/python-installation-options.png)
 
-Nas próximas etapas, você usará a linha de comando do Windows (vamos explicar tudo sobre isso também). Por enquanto, se você precisar digitar alguns comandos, vá ao menu iniciar e digite "Command Prompt" no campo de busca. (Em versões mais antigas do Windows, é possível iniciar o prompt em Start menu → Sistema do Windows → Prompt de comando.) Você também pode segurar a tecla windows + "R" até aparecer a janela "Executar". Para abrir a <0>Linha de Comando</0>, digite "cmd" e pressione enter na janela "Executar".
+Nas próximas etapas, você usará a linha de comando do Windows (vamos explicar tudo sobre isso também). Por enquanto, se você precisar digitar alguns comandos, vá ao menu iniciar e digite "Command Prompt" no campo de busca. (Em versões mais antigas do Windows, é possível iniciar o prompt em Start menu → Sistema do Windows → Prompt de comando.) Você também pode segurar a tecla windows + "R" até aparecer a janela "Executar". Para abrir o prompt de CoManDo, digite "cmd" e pressione enter na janela "Executar".
 
 ![Digite "cmd" na janela "Run"](../python_installation/images/windows-plus-r.png)
 
@@ -21,7 +21,7 @@ Nas próximas etapas, você usará a linha de comando do Windows (vamos explicar
 1. instalar todas as atualizações do Windows e tentar instalar o Python 3.6 novamente; ou
 2. instalar uma [versão mais antiga do Python](https://www.python.org/downloads/windows/), por exemplo, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-Se você instalar uma versão mais antiga do Python, a tela de instalação pode parecer um pouco diferente da mostrada acima. Certifique-se de rolar até ver a opção "Add python.exe to Path", então clique no botão à esquerda e escolha "Will be installed on local hard drive":
+Se você instalar uma versão mais antiga do Python, a tela de instalação pode ser um pouco diferente da mostrada acima. Certifique-se de rolar até ver a opção "Add python.exe to Path", então clique no botão à esquerda e escolha "Will be installed on local hard drive":
 
 ![Adicionar o Python ao PATH, versões mais antigas](../python_installation/images/add_python_to_windows_path.png)
 
@@ -50,7 +50,7 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-Se você tem instalada uma outra "versão micro" do Python, por exemplo, 3.6.0, você não precisa atualizá-la. Se você não tiver o Python instalado ou quiser uma versão diferente, faça assim:
+Se você tem instalada uma outra "versão micro" do Python, por exemplo, 3.6.0, não precisa atualizá-la. Se não tiver o Python instalado ou quiser uma versão diferente, faça assim:
 
 <!--endsec-->
 
@@ -75,7 +75,7 @@ Use o seguinte comando no terminal:
     $ sudo dnf install python3
     
 
-Se você estiver em versões mais antigas do Fedora, pode receber um erro dizendo que o comando `dnf` não foi encontrado. Nesse caso, você precisa usar o yum em vez disso.
+Se você estiver em versões mais antigas do Fedora, pode receber um erro dizendo que o comando `dnf` não foi encontrado. Nesse caso, você precisa usar o yum.
 
 <!--endsec-->
 
