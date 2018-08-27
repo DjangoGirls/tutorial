@@ -2,7 +2,7 @@ Você pode [pular este capítulo](http://tutorial.djangogirls.org/en/installatio
 
 ### Cloud 9
 
-Cloud 9 é uma ferramenta fornece um editor de código e acesso a um computador conectado à Internet em que você pode instalar, escrever e executar software. Durante o tutorial, o Cloud 9 atuará como sua *máquina local*. Você ainda estará executando comandos em uma interface de terminal (ou prompt de comando), como seus colegas de classe no OS X, Ubuntu ou Windows, mas seu prompt estará conectado a um computador remoto que o Cloud 9 configurou para você.
+Cloud 9 é uma ferramenta que fornece um editor de código e acesso a um computador conectado à Internet em que você pode instalar, escrever e executar software. Durante o tutorial, o Cloud 9 atuará como sua *máquina local*. Você ainda estará executando comandos em uma interface de terminal (ou prompt de comando), como seus colegas de classe no OS X, Ubuntu ou Windows, mas seu prompt estará conectado a um computador remoto configurado pelo Cloud 9.
 
 1. Instale o Cloud 9 através da [Chrome Web Store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Acesse o site [c9.io](https://c9.io)
@@ -18,11 +18,11 @@ Agora, a sua tela deve exibir uma interface com uma barra lateral, uma grande ja
     seunomedeusuário:~/workspace $
     
 
-Esta área inferior é seu *terminal*, onde você vai dar as instruções para o computador que o Cloud 9 preparou para você. Você pode redimensionar a janela para torná-la um pouco maior.
+Esta área inferior é seu *terminal* (ou prompt de comando), onde você dará as instruções para o computador que o Cloud 9 preparou. Você pode redimensionar a janela para torná-la um pouco maior.
 
 ### Ambiente Virtual
 
-Um ambiente virtual (também chamado de virtualenv) é como uma caixa privada em que podemos colocar código de computador útil para um projeto que estejamos trabalhando. Nós os utilizamos para manter os vários pedaços de código que queremos para nossos vários projetos separados, para que as coisas não se misturem entre os projetos.
+Um ambiente virtual (também chamado de virtualenv) é como uma caixa privada em que podemos colocar código de computador útil para um projeto em que estejamos trabalhando. Nós os utilizamos para manter separados uns dos outros os vários pedaços de código que queremos para nossos diferentes projetos, para que as coisas não se misturem entre eles.
 
 No seu terminal, na parte de baixo da interface do Cloud 9, execute o seguinte:
 
@@ -32,7 +32,7 @@ No seu terminal, na parte de baixo da interface do Cloud 9, execute o seguinte:
     sudo apt install python3.6-venv
     
 
-Se isso ainda não funcionar, peça ajuda ao seu treinador.
+Se não funcionar, peça ajuda ao seu treinador.
 
 Em seguida, execute:
 
@@ -45,7 +45,7 @@ Em seguida, execute:
     pip install django~={{ book.django_version }}
     
 
-(note que na última linha nós utilizamos um til seguido de um sinal de igual: ~=).
+(note que na última linha, utilizamos um til seguido de um sinal de igual: ~=).
 
 ### GitHub
 
