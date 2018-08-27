@@ -28,7 +28,7 @@ Queremos abrir una consola de Python, así que escribe `python` en Windows o `py
 
 Después de ejecutar el comando de Python, el cursor cambiará a `>>>`. Para nosotros esto significa que por ahora sólo podemos utilizar comandos del lenguaje Python. No tienes que escribir e`>>>` pues Python lo hará por ti.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Luego no verás más `>>>`.
+Si deseas salir de la consola de Python en cualquier momento, solo escribe `exit()` o usa el atajo `Ctrl + Z` para Windows y `Ctrl + D` para Mac/Linux. Luego no verás más `>>>`.
 
 Por ahora, no queremos salir de la consola de Python. Deseamos aprender más sobre ella. Vamos a comenzar escribiendo algo de matemática, escribe `2 + 3` y oprime la tecla `enter`.
 
@@ -107,7 +107,7 @@ o escapar el apóstrofe con la diagonal inversa (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Bien, ¿eh? Para ver tu nombre en letras mayúsculas, escribe:
 
 {% filename %}command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ Supongamos que queremos crear una nueva variable llamada `name`:
 
 Tecleamos que nombre es igual a Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Como habrás notado, tu programa no devolvió nada como lo hacía antes. Así que ¿cómo sabemos que la variable existe realmente? Escribe `name` y pulsa `intro`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ También puedes usarla dentro de funciones:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Increíble, ¿verdad? Por supuesto, las variables pueden ser cualquier cosa, ¡también números! Prueba esto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -414,7 +414,7 @@ KeyError: 'age'
 
 ¡Mira, otro error! Este es un **KeyError**. Python te ayuda y te dice que la llave `'age'` no existe en este diccionario.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+¿Cuando deberías usar un diccionario o una lista? Bueno, es un buen punto para reflexionar. Piensa sobre la respuesta, antes de mirar una solución en la siguiente línea.
 
 - ¿Sólo necesitas una secuencia ordenada de elementos? Usa una lista.
 - ¿Necesitas asociar valores con claves, así puedes buscarlos eficientemente (usando las claves) más adelante? Utiliza un diccionario.
@@ -438,7 +438,7 @@ Como las listas, usando el método `len()` en los diccionarios devulven el núme
 
 Espero tenga sentido hasta ahora. :) ¿Listo para más diversión con diccionarios? Salta a la siguiente línea para algunas cosas sorprendentes.
 
-Puedes utilizar el comando `pop()` para borrar un elemento en el diccionario. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Puedes utilizar el comando `pop()` para borrar un elemento en el diccionario. Por ejemplo, si deseas eliminar la entrada correspondiente a la clave `'favorite_numbers'`, tienes que escribir el siguiente comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ Como puedes ver, el valor de la llave `'country'` ha sido modificado de `'Poland
 
 > Para lectores en casa: este capítulo está cubierto en el video [Bases de Python: Comparaciones](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Buena parte de la programación incluye comparar cosas. ¿Qué es lo más fácil para comparar? Números, por supuesto. Vamos a ver cómo funciona:
 
 {% filename %}command-line{% endfilename %}
 
