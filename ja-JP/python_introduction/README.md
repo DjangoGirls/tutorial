@@ -672,7 +672,7 @@ WindowsのPowerShellでは、次のようになります。
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+うまくできない時は、質問してください。まさにコーチがここにいるのです！
 
 次に、ファイルのコードを実行します。
 
