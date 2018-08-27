@@ -37,7 +37,7 @@ Bootstrapをインストールするには `.html` ファイル (blog/templates/
 
 ### 静的ファイルはプロジェクトのどこに置けばいいの？
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Djangoは、ビルトインの "admin" アプリにより、静的ファイルをどこで探せばいいのかわかっています。私たちがやることは、`blog` アプリのための静的ファイルを追加することだけです。
 
 そのために、blogアプリの中に `static` というフォルダを作ります。
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` はCSSセレクタと呼ばれるものです。 `h1` 要素の中にある `a` 要素にスタイルを適用します、という意味になります。 よって `<h1><a href="">link</a></h1>`となっているとき、 `h1 a` スタイルが適用されます。 この場合、その要素を `#FCA205` に、つまりオレンジ色にしようとしています。 Or you can put your own color here!
+`h1 a` はCSSセレクタと呼ばれるものです。 `h1` 要素の中にある `a` 要素にスタイルを適用します、という意味になります。 よって `<h1><a href="">link</a></h1>`となっているとき、 `h1 a` スタイルが適用されます。 この場合、その要素を `#FCA205` に、つまりオレンジ色にしようとしています。 またはあなたの好きな色に変えられます！
 
 CSSファイルには、HTMLファイルの各要素のスタイルを指定していきます。 まずは要素名でもって、その要素を識別します。 HTMLのタグ名は覚えがあるでしょう。 例えば `a`, `h1`, `body` などが要素名の例です。 また、`class` 属性や、`id` 属性によって要素を識別することができます。 classやidは、あなたが自分で要素につけることができる名前です。 classは要素のグループを定義して、idは特定の要素を指定します。 例えば、次のタグは、タグ名 `a`、class名 `external_link`、id名 ` link_to_wiki_page`、どれを使ってもCSSによって識別されます。
 
@@ -202,7 +202,7 @@ h1 a {
 </div>
 ```
 
-そして、さまざまなセレクタに宣言ブロックを追加します。 `.` で始まるセレクタはクラスに関連します。 Web上にはCSSに関する多くのチュートリアルがあり、それらは以下に示すコードを理解する手助けになるはずです。 For now, copy and paste it into your `blog/static/css/blog.css` file:
+そして、さまざまなセレクタに宣言ブロックを追加します。 `.` で始まるセレクタはクラスに関連します。 Web上にはCSSに関する多くのチュートリアルがあり、それらは以下に示すコードを理解する手助けになるはずです。 今のところは、`blog/static/css/blog.css` のファイルに以下の内容をコピー＆ペーストしましょう：
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
