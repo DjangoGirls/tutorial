@@ -42,7 +42,7 @@ Wir wollen nun also eine Liste von publizierten Blogposts ausgeben, sortiert nac
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Nun setzen wir dieses Stück Code in der Datei `blog/views.py` in die Funktion `def post_list(request)` ein, aber vergiss nicht, zuerst `from django.utils import timezone` hinzufügen:
+Nun setzen wir dieses Stück Code in der Datei `blog/views.py` in die Funktion `def post_list(request)` ein. Aber vergiss nicht, zuerst `from django.utils import timezone` hinzufügen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -60,9 +60,9 @@ Als Letztes fehlt noch, dass wir das `posts`-QuerySet dem Template übergeben. W
 
 Beachte, dass wir eine *Variable* für unser QuerySet erstellt haben: `posts`. Das ist sozusagen der Name unseres QuerySets. Ab jetzt bezeichnen wir das QuerySet mit diesem Namen.
 
-In der `render`-Funktion haben wir schon einen Parameter `request` (also alles, was wir vom User über das Internet bekommen) und einen Template-Namen (`'blog/post_list.html'`) angegeben. Der letzte Parameter, der so aussieht: `{}`, ist ein Ort, wo wir weitere Informationen zur Nutzung im Template hinzufügen können. Wir müssen diesen einen Namen geben (wir verwenden einfach wieder `'posts'`). :) Es sollte nun so aussehen: `{'posts': posts}`. Bitte achte darauf, dass der Teil vor `:` ein String ist; das heißt, du musst ihn mit Anführungszeichen `''` umschliessen.
+In der `render`-Funktion haben wir einen Parameter `request` (also alles, was wir vom User über das Internet bekommen) und einen weiteren Parameter, der den Template-Namen (`'blog/post_list.html'`) angibt. Der letzte Parameter, `{}`, ist eine Stelle, in der wir weitere Dinge hinzufügen können, die das Template dann benutzen kann. Wir müssen diesen einen Namen geben (wir verwenden einfach wieder `'posts'`). :) Es sollte nun so aussehen: `{'posts': posts}`. Bitte achte darauf, dass der Teil vor `:` ein String ist; das heißt, du musst ihn mit Anführungszeichen `''` umschliessen.
 
-Am Ende sollte deine `blog/views.py` Datei folgendermaßen aussehen:
+Schließlich sollte deine `blog/views.py` Datei folgendermaßen aussehen:
 
 {% filename %}blog/views.py{% endfilename %}
 
