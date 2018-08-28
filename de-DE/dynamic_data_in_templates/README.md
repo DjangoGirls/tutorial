@@ -2,7 +2,7 @@
 
 Wir haben nun schon einige Dinge an verschiedenen Orten fertiggestellt: das `Post`-Model ist in der `models.py` definiert, wir haben die `post_list` in der `views.py` und das Template hinzugefügt. Aber wie schaffen wir es nun, dass unsere Posts wirklich im HTML-Template erscheinen? Denn wir wollen ja erreichen, dass bestimmte Inhalte (die in der Datenbank gespeicherten Models) auf schöne Weise in unserem Template anzeigt werden, richtig?
 
-Genau dafür sind die *Views* zuständig: die Verbindung zwischen den Models und den Templates. In unserer `post_list`-View müssen wir die Models, die wir anzeigen wollen, hernehmen und diese dem Template übergeben. In einer View entscheiden wir, welches Model wir in einem Template anzeigen werden.
+Genau dafür sind die *Views* zuständig: die Verbindung zwischen den Models und den Templates. In unserer `post_list`-View müssen wir die Models, die wir anzeigen wollen, hernehmen und diese dem Template übergeben. In einer *View* entscheiden wir, was (welches Model) wir in einem Template anzeigen werden.
 
 Okay, und wie machen wir das jetzt?
 
@@ -15,7 +15,6 @@ from django.shortcuts import render
 
 def post_list(request):
     return render(request, 'blog/post_list.html', {})
-
 ```
 
 Erinnerst du dich, als wir davon gesprochen haben, dass wir den Code in verschiedene Dateien einfügen müssen? Jetzt ist es an der Zeit, das Model, dass wir in `models.py` beschrieben haben, einzufügen. Wir fügen den Befehl `from .models import Post` folgendermaßen ein:
@@ -27,15 +26,15 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-Der Punkt vor `models` bedeutet *current directory*, also das aktuelle Verzeichnis, oder *current application*, die aktuelle Anwendung. Die `views.py` und `models.py` liegen im selben Verzeichnis. Dadurch können wir `.` und den Namen der Datei (ohne `.py`) benutzen. Dann ergänzen wir für den Import den Namen des Models (`Post`).
+Der Punkt vor `models` bedeutet *aktuelle Verzeichnis* oder *aktuelle Anwendung*. Die Dateien `views.py` und `models.py` liegen im selben Verzeichnis. Deswegen können wir `.` und den Namen der Datei (ohne `.py`) benutzen. Dann ergänzen wir für den Import den Namen des Models (`Post`).
 
-Und nun? Um die tatsächlichen Blogposts des `Post`-Models zu erhalten, brauchen wir etwas, das `QuerySet` heißt.
+Und nun? Um vom `Post`-Model die tatsächlichen Blogposts zu erhalten, brauchen wir etwas, das `QuerySet` heißt.
 
 ## QuerySet
 
 Dir sollte schon ungefähr klar sein, wie QuerySets funktionieren. Wir haben darüber im Kapitel [Django-ORM und QuerySets](../django_orm/README.md) gesprochen.
 
-Wir wollen nun also eine Liste von Blogposts ausgeben, wobei die Posts publiziert und nach `published_date` sortiert sein sollen, oder? Das haben wir bereits im Kapitel QuerySets gemacht!
+Wir wollen nun also eine Liste von publizierten Blogposts ausgeben, sortiert nach dem `published_date`, oder? Das haben wir bereits im Kapitel QuerySets gemacht!
 
 {% filename %}blog/views.py{% endfilename %}
 
