@@ -2,7 +2,7 @@
 
 Es wird jetzt Zeit, den Bug, den wir im letzten Kapitel erzeugt haben, zu beheben! :)
 
-In der *View* schreiben wir die Logik unserer Anwendung. So werden Informationen aus dem `Model` abgefragt werden, welches du zuvor erzeugt hast und diese werden an ein `Template` weitergeben. Ein Template erzeugen wir im nächsten Kapitel. Views sind Python-Methoden, die ein bisschen komplizierter sind als die, die wir im Kapitel **Einführung in Python** kennengelernt haben.
+In der *View* schreiben wir die Logik unserer Anwendung. So werden Informationen aus dem `Model` abgefragt werden, welches du zuvor erzeugt hast und diese werden an ein `Template` weitergeben. Ein Template erzeugen wir im nächsten Kapitel. Views sind Python-Funktionen, die ein bisschen komplizierter sind als die, die wir im Kapitel **Einführung in Python** kennengelernt haben.
 
 Views kommen in die `views.py` Datei. Wir fügen nun also unsere *Views* zur Datei `blog/views.py` hinzu.
 
@@ -18,11 +18,11 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Ok, hier steht noch nicht so viel.
+OK, hier steht noch nicht so viel.
 
 Denk daran, Zeilen mit einem `#` am Anfang sind Kommentare – das bedeutet, dass diese Zeilen von Python nicht ausgeführt werden.
 
-Lass uns eine *View* erstellen, wie der Kommentar das vorschlägt. Füge die folgende Mini-View darunter ein:
+Lass uns eine *View* erstellen, wie der Kommentar das vorschlägt. Füge die folgende Mini-View unter dem Kommentar ein:
 
 {% filename %}blog/views.py{% endfilename %}
 
