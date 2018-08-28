@@ -4,9 +4,9 @@
 
 ## Что представляются из себя теги шаблонов?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+Как видишь, в HTML нельзя помещать код Python, поскольку браузеры не понимают его. Они знаю только HTML. Мы помним, что HTML статичен, в то время как Python позволяет динамические изменения.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**Теги шаблонов Django** позволяют нам вставлять Python в HTML, так что ты можешь создавать динамические веб-сайты быстрее и проще. То что надо!
 
 ## Отображаем шаблон списка записей
 
@@ -46,7 +46,7 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 
 ![Рисунок 13.2](images/step2.png)
 
-Сработало! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. ты можешь смешивать HTML и теги шаблонов. Наш элемент `body` будет выглядеть следующим образом:
+Сработало! Но мы хотим, чтобы они отображались как статические записи, которые мы создавали в главе **Введение в HTML**. ты можешь смешивать HTML и теги шаблонов. Наш элемент `body` будет выглядеть следующим образом:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
