@@ -162,9 +162,9 @@ Das sieht dann so aus:
 
 Wir erweitern wieder `base.html`. Im `content`-Block wollen wir das Publikationsdatum eines Posts (published_date), falls es existiert, anzeigen und auch den Titel und den Text. Aber wir müssen noch ein paar wichtige Dinge klären, oder?
 
-{% raw %}`{% if ... %} ... {% endif %}` ist ein Template-Tag, das wir benutzen können, wenn wir etwas überprüfen möchten. (Erinnerst du dich an `if ... else` vom Kapitel **Einführung in Python**?) In diesem Fall hier wollen wir prüfen, ob das `published_date</0> Feld eines Post-Objektes nicht leer ist. {% endraw %}</p>
+{% raw %}`{% if ... %} ... {% endif %}` ist ein Template-Tag, das wir benutzen können, wenn wir etwas überprüfen möchten. (Erinnerst du dich an `if ... else` vom Kapitel **Einführung in Python**?) In diesem Fall hier wollen wir prüfen, ob das `published_date` Feld eines Post-Objektes nicht leer ist. {% endraw %}
 
-<p>OK, aktualisieren wir unsere Seite und sehen, ob <code>TemplateDoesNotExist` jetzt weg ist.
+OK, aktualisieren wir unsere Seite und sehen, ob `TemplateDoesNotExist` jetzt weg ist.
 
 ![Blog-Post-Detailseite](images/post_detail2.png)
 
