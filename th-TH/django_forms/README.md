@@ -444,6 +444,6 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 (โปรดจำไว้ว่าให้ใช้ `<your-pythonanywhere-username>` แทน username PythonAnywhere ที่แท้จริงของคุณโดยไม่ใช้วงเล็บปีกกา)
 
-* สุดท้าย เปิด [Web tab](https://www.pythonanywhere.com/web_app_setup/) และกด **Reload**.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
 
 และนั่นควรเสร็จแล้ว! ยินดีด้วยนะ :)
