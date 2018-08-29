@@ -209,6 +209,6 @@ Aktiviere also deine virtuelle Umgebung, wenn sie nicht vom letzten Mal noch akt
 
 Der `manage.py collectstatic` Befehl ist ein bisschen wie `manage.py migrate`. Wir machen ein paar Änderungen in unserem Code und dann sagen wir Django, dass es diese übernehmen (*apply*) soll, entweder zu der servereigenen Sammlung von statischen Dateien oder in die Datenbank.
 
-Springe nun noch schnell auf den [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und klicke auf **Reload**.
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
 
 Und das sollte es sein! Herzlichen Glückwunsch :)
