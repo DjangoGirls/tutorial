@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
          fields = ('title', 'text',)
 ```
 
-Zuerst müssen wir die Django-Forms importieren (`from django import forms`) und natürlich auch unser `Post`-Model (`from .models import Post`).
+Zuerst müssen wir die Django-Forms importieren (`from django import forms`) und auch unser `Post`-Model (`from .models import Post`).
 
 Wie du wahrscheinlich schon vermutet hast, `PostForm` ist der Name unseres Formulars. Wir müssen Django mitteilen, dass unser Formular ein `ModelForm` ist (so kann Django ein bisschen für uns zaubern) - `forms.ModelForm` ist dafür verantwortlich.
 
@@ -85,7 +85,7 @@ Nach dem Hinzufügen der Zeile sieht deine HTML-Datei so aus:
 </html>
 ```
 
-Nach dem Speichern und Neuladen von http://127.0.0.1:8000 siehst du den bekannten `NoReverseMatch` Fehler, oder?
+Nach dem Speichern und Neuladen von http://127.0.0.1:8000 solltest du den bereits bekannten `NoReverseMatch` Fehler sehen. Ist dem so? Gut!
 
 ## URL
 
@@ -373,7 +373,7 @@ Falls du mehr Informationen über Django-Formulare benötigst, solltest du die o
 
 ## Sicherheit
 
-Neue Posts mit nur einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, dass du garantiert nicht willst. Lasst es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
+Neue Posts mit einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, dass du garantiert nicht willst. Lasst es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
 
 Finde in der Datei `blog/templates/blog/base.html` unseren `page-header` `div` und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:
 
