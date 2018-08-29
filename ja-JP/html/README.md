@@ -210,8 +210,8 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 (`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
 
-そのうえで、自分のコードがダウンロードされたことを確認しましょう。それをチェックしたい場合は、**Files tab** を押して、自分のコードをPythonAnywhereの中で見てみましょう。
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
-* 最後に、 [Web tab](https://www.pythonanywhere.com/web_app_setup/) を押して、 自分のアプリの**Reload** を選択します。
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
 あなたのアプリが更新され、動いています！ウェブサイトを開いて、再読込してみましょう。どう変わったのか、見えるはずです。:)
