@@ -1,6 +1,10 @@
-Sign up for a free "Beginner" account on PythonAnywhere:
+PythonAnywhere is a service for running Python code on servers "in the cloud". We'll use it for hosting our site, live and on the Internet.
+
+Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
+
+![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](images/pythonanywhere_beginner_account_button.png)
 
 > **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about.
 
