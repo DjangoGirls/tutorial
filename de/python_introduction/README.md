@@ -28,7 +28,7 @@ Wir wollen eine Python Konsole öffnen, also tippe unter Windows `python` oder i
 
 Nach Eingabe von python3 in der Konsole ändert sich das Prompt-Zeichen zu `>>>`. Für uns bedeutet das, dass wir ab nun nur noch Python-Code eingeben können. Den Python-Prompt `>>>` musst du nicht jedesmal eingeben - dies macht Python für dich.
 
-Wenn du die Python-Konsole wieder verlassen möchtest, gib `exit()` ein oder nutze das Tastatur-Kürzel `Strg + Z` unter Windows bzw. `Strg + D`, wenn du einen Mac hast oder Linux verwendest. Dann bist Du wieder in der normalen Konsole und der Python-Prompt `>>>` ist weg.
+Wenn du die Python-Konsole wieder verlassen möchtest, gib `exit()` ein oder nutze das Tastatur-Kürzel `Strg + Z` unter Windows bzw. `Strg + D`, wenn du einen Mac hast oder Linux verwendest. Dann bist du wieder in der normalen Konsole und der Python-Prompt `>>>` ist weg.
 
 Fürs Erste bleiben wir in der Python Konsole, wir wollen mehr darüber lernen. Lass uns mit ein wenig Mathematik anfangen, gib `2 + 3` ein und drück `enter`.
 
@@ -107,7 +107,7 @@ oder du kannst den Apostroph mit einem Backslash (``) markieren:
 "Runnin' down the hill"
 ```
 
-Toll, was? Um deinen Namen in Großbuchstaben anzuzeigen, gib folgendes ein:
+Toll, was? Um deinen Namen in Großbuchstaben anzuzeigen, gib Folgendes ein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ Schon gespannt auf den nächsten Teil? :)
 
 > Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) behandelt.
 
-Ein großer Teil beim Programmieren besteht darin, Dinge zu vergleichen. Was lässt sich am besten vergleichen? Zahlen!. Schauen wir uns mal an, wie das funktioniert:
+Ein großer Teil beim Programmieren besteht darin, Dinge zu vergleichen. Was lässt sich am besten vergleichen? Zahlen! Schauen wir uns mal an, wie das funktioniert:
 
 {% filename %}command-line{% endfilename %}
 
