@@ -16,7 +16,7 @@ It was written by programmers who worked for Twitter. Now it's developed by volu
 
 ## Install Bootstrap
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file (in the code editor):
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
