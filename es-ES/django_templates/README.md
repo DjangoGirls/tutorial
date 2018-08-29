@@ -85,7 +85,7 @@ Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, �
     [...]
     
 
-* Finalmente, ve a la [pestaña Web](https://www.pythonanywhere.com/web_app_setup/) y presiona **Reload** en tu aplicación web. ¡Tu actualización debería verse! Si los posts en PythonAnywhere no coinciden con los posts del blog hosteado en tu servidor local, no importa. Las bases de datos en tu computador y en PythonAnywhere no se sincronizan con el resto de tus archivos.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 Felicidades! Ahora intenta añadir un nuevo post en tu administrador de Django (recuerda añadir published_date!) Asegurate de que estas en el administrador de Django de pytonanywhere, https://tunombre.pythonanywhere.com/admin. Luego actualiza tu pàgina para ver si los post aparecen.
 
