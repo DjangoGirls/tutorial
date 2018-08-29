@@ -191,11 +191,11 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
     templates tests.py urls.py views.py
     
 
-また、「ファイル」タブに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。
+You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
 
 ## 動いています！
 
-あなたのサイトは現在、インターネット上で動作しているはずです！ PythonAnywhereの「Web」タブをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 
 > **注** これは初心者向けのチュートリアルです。このサイトをデプロイする際にはセキュリティの観点からは理想的ではない、いくつかのショートカットをしました。 もしこのプロジェクトを利用すると決めたり、新しいプロジェクトを開始する場合は、あなたのサイトを保護するいくつかのヒントのために、[Djangoデプロイメントチェックリスト](https://docs.djangoproject.com/ja/2.0/howto/deployment/checklist/)を見直してみてください。
 
@@ -207,7 +207,7 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 - あなたのGitHubのURLを間違えている
 - *Could not find your settings.py*というエラーが表示された場合は、おそらくGitにすべてのファイルを追加できていなかったか、 GitHubにうまくプッシュできていなかった。 この場合はGitセクションをもう一度見てください
 
-サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は**エラーログ**です。 PythonAnywhereの[ Webタブ](https://www.pythonanywhere.com/web_app_setup/)には、このリンクがあります。 そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。
+サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は**エラーログ**です。 You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。
 
 [ PythonAnywhereヘルプサイトの一般的なデバッグのヒント](http://help.pythonanywhere.com/pages/DebuggingImportError)もあります。
 
