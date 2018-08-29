@@ -191,11 +191,11 @@ Maintenant, si vous voulez, vous pouvez aussi jeter un œil à votre code sur Py
     templates  tests.py  urls.py  views.py
     
 
-Vous pouvez également accéder à l'onglet "Fichiers" et naviguer à l'aide du navigateur de fichiers intégré à PythonAnywhere.
+You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
 
 ## Vous êtes désormais sur Internet !
 
-Votre site devrait désormais être accessible sur Internet ! Cliquez sur l'onglet "Web" dans PythonAnywhere pour obtenir un lien. Vous pouvez partagez ce lien avec qui vous voulez :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 
 > **Note** Ce tutoriel est conçu pour les débutants, et pendant le déploiement on a pris quelques raccourcis qui, d'un point de vue de la sécurité, ne sont pas idéaux. Quand vous voudrez aller plus loin dans ce projet, ou commencer un nouveau projet, vous devriez consulter la [Checklist de déploiement pour Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) pour obtenir des conseils sur comment sécuriser votre site.
 
@@ -207,7 +207,7 @@ Si vous constatez une erreur en exécutant le script `pa_autoconfigure_django.py
 - Faire une erreur dans votre URL GitHub
 - Si vous voyez un message d’erreur indiquant *« Could not find your settings.py »*, vous avez probablement oublié d'ajouter tous vos fichiers sur Git, et/ou vous ne les avez pas envoyé à GitHub. Regardez à nouveau la section Git ci-dessus
 
-Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les **logs d'erreurs** devraient vous permettre de comprendre ce qui ne marche pas. Vous trouverez un lien vers ces fichiers dans l'onglet [Web](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Regardez s’il y a des messages d’erreurs ; les plus récents seront en bas du fichier.
+Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les **logs d'erreurs** devraient vous permettre de comprendre ce qui ne marche pas. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). Regardez s’il y a des messages d’erreurs ; les plus récents seront en bas du fichier.
 
 Vous pourrez aussi trouver des astuces pour le débogage sur le site d'aide de[PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
