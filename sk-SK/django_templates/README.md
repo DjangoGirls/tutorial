@@ -97,7 +97,7 @@ Bolo by fajn vidieť či bude tvoja web stránka stále funkčná aj na Internet
     [...]
     
 
-* A nakoniec prejdi na [záložku Web](https://www.pythonanywhere.com/web_app_setup/) a stlač **Reload** na svojej webovej aplikácii. Aktualizácia by mala byť online! Ak sa blogové príspevky na tvojej PythonAnywhere stránke nezhodujú s príspevkami na blogu ktorý beží na tvojom lokálnom počítači, to je v poriadku. Databázy na tvojom lokálnom počítači a na PythonAnywhere sa nesznchronizujú spolu so zvyšnými subormi.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 Gratulujeme! Teraz skús pridať nový príspevok cez Django admin (nezabudni pridať published_date!). Uisti sa, že si v Django admin prostredi na svojej stránke na PythonAnywhere, https://yourname.pythonanywhere.com/admin. Následne obnov stránku aby si zistila či sa príspevok tam objaví.
 
