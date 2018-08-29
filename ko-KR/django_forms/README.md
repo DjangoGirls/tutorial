@@ -444,6 +444,6 @@ Change it to this:
 
 (Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
 
-* 마지막으로 [웹 탭(Web tab)](https://www.pythonanywhere.com/web_app_setup/)에서 **다시 불러오기(Reload)**를 누르세요.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
 
 And that should be it! Congrats :)
