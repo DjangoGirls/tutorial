@@ -209,6 +209,6 @@ Daha önceden çalıştırdığın virtualenv'in hala etkin değilse tekrar akti
 
 `manage.py collectstatic` komutu biraz `manage.py migrate` komutu gibidir. Kodumuzda bazı değişiklikler yapıp Django'ya bu değişiklikleri sunucunun statik dosyalar yığınına ya da veritabanına uygulamasını söyledik.
 
-Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın.
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
 
 İşte bu kadar! Tebrikler :)
