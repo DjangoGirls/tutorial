@@ -96,13 +96,13 @@ Sıra depomuzu oluşturmaya geldi. 'New Repository' tuşuna tıklayıp "my-first
 
 > **Not** `my-first-blog` ismi önemli -- başka birşey de seçebilirsiniz, ama aşağıdaki yönergelerde çok geçiyor, her seferinde değiştirmeniz gerekir. It's probably easier to stick with the name `my-first-blog`.
 
-Bir sonraki ekranda, repo'yu klonlamak için gereken URL'yi göreceksiniz. "HTTPS"li versiyonunu seçin, kopyalayın. Birazdan onu komut penceresine yapıştıracağız:
+On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
 ![](images/github_get_repo_url_screenshot.png)
 
 Şimdi bilgisayarınızdaki Git reposunu Github'daki repo ile ilişkilendirmemiz gerekiyor.
 
-Aşağıdakini komut satırına yazın (`<github-kullanıcı-adınız>` kısmını Github hesabını yarattığınız sırada kullandığınız kullanıcı adı ile değiştirin, büyüktür küçüktür işaretlerini eklemeyin):
+Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -154,7 +154,7 @@ PythonAnywhere'de bir web yazılımı konuşlandırmak için kodun GitHub'dan ç
 
 Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
 
-Şimdi, programımızı otomatik olarak yapılandırmak için bu komutu calıştıralım. Aşağıdakileri PythonAnywhere konsoluna yazalım (GitHub username yerine kendi GitHub ismini yazmayı unutma `<your-github-username>`):
+Şimdi, programımızı otomatik olarak yapılandırmak için bu komutu calıştıralım. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
