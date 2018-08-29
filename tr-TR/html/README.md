@@ -210,8 +210,8 @@ Bunu bir kez yapıp, değişikliklerimizi GitHub'a yükledik (ittik):
 
 (Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
 
-Kodumuzun indirilmesini izleyelim. Kodun geldiğini kontrol etmek istersek **Files (dosyalar) sekme**sini açıp PythonAnywhere'de kodumuzu görebiliriz.
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
-* Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
 Güncelleme hazır olmalı! Devam edelim ve tarayıcıda web sitesini yenileyelim. Değişiklikler görünüyor olmalı. :)
