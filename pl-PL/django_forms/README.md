@@ -444,6 +444,6 @@ Dobrze byłoby wiedzieć, że nasza witryna nadal działa na PythonAnywhere, pra
 
 (Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
-* Na koniec, przejdźmy do podstrony [Web tab](https://www.pythonanywhere.com/web_app_setup/) i wciśnijmy **Reload** (ang. odśwież).
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
 
 I to już wszystko! Gratulacje :)
