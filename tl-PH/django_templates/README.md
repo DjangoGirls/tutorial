@@ -97,7 +97,7 @@ Magandang tingnan kung ang website ay gumagana pa rin sa publikong Internet, di 
     [...]
     
 
-* Sa katapusan, puntahahan ang [Web tab](https://www.pythonanywhere.com/web_app_setup/) at pindutin ang **Reload** sa iyong web app. Ang iyong update ay dapat naka-live! Kung ang mga blog post sa ating PythonAnywhere na site ay hindi tugma sa mga post na makikita sa blog na nakahost sa ating local na serva, okay lang yan. Ang database sa ating local na kompyuter at sa Python Anywhere ay hindi nakasync gaya ng iba nating mga file.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 Maligayang bati! Ngayon dumiretso ka na at subukan mong magdagdag ng bagong post sa iyong Django admin (tandaan magdagdag ng published_date!) Siguraduhin na nasa Django admin ka ng iyong pythonanywhere na site, https://yourname.pythonanywhere.com/admin. Pagkatapos i-refresh ang iyong pahina at tingnan kung makita mo ang post mo doon.
 
