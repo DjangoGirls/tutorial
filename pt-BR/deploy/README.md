@@ -95,13 +95,13 @@ Em seguida, crie um novo repositório chamado "my-first-blog". Deixe a caixa "In
 
 > **Observação:** O nome `my-first-blog` é importante - você poderia escolher qualquer outra coisa, mas ele vai aparecer várias vezes nas instruções abaixo, e você teria que substituir todas as vezes. It's probably easier to stick with the name `my-first-blog`.
 
-Na próxima tela, você verá a URL pra clonar o seu repo. Escolha a versão "HTTPS", e copie-a e cole no terminal em seguida:
+On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
 ![](images/github_get_repo_url_screenshot.png)
 
 Agora precisamos conectar o repositório Git no seu computador com o que existe no GitHub.
 
-Digite o seguinte no seu terminal (Substitua `<your-github-username>` pelo nome de usuário que você colocou quando criou a sua conta no GitHub, sem os sinais de menor e maior):
+Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 
 {% filename %}linha de comando{% endfilename %}
 
@@ -153,7 +153,7 @@ Fazer o deploy de uma aplicação web no PythonAnywhere envolve baixar o seu có
 
 Isso deve mostrar na tela coisas como `Collecting pythonanywhere`, e depois de algum tempo finalizar com uma linha dizendo `Successfully installed (...) pythonanywhere (...)`.
 
-Agora vamos executar a ferramenta para configurar a nossa aplicação a partir do GitHub automaticamente. Digite os seguintes comandos no console do PythonAnywhere (não se esqueça de usar o seu nome de usuário no GitHub ao invés de `<your-github-username>`):
+Agora vamos executar a ferramenta para configurar a nossa aplicação a partir do GitHub automaticamente. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
