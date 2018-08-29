@@ -95,13 +95,13 @@ Git จะติดตามการเปลี่ยนแปลงในท�
 
 > **หมายเหตุ** ชื่อ `my-first-blog` นั้นสำคัญ - คุณสามารถใช้ชื่ออื่นได้ แต่ชื่อนี้จะปรากฎตลอดทั้งหน้านี้ และคุณจำเป็นต้องเปลี่ยนชื่อตามทุกครั้ง It's probably easier to stick with the name `my-first-blog`.
 
-หน้าจอถัดไป คุณจะเห็น URL สำหรับโคลน repo ของคุณ ให้เลือก "HTTPS" คัดลอกลิงค์และวางไปยังเทอร์มินัล:
+On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
 ![](images/github_get_repo_url_screenshot.png)
 
 ตอนนี้เราจะทำการชี้ Git repository บนคอมพิวเตอร์ของเราไปยัง GitHub
 
-ใช้คำสั่งต่อไปบนคอนโซลของคุณ (แทนที่ `<your-github-username>` ด้วย username ที่คุณสมัคร Github ไว้ แต่ไม่ต้องมีเครื่องหมายวงเล็บปีกกา):
+Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Deploying a web app on PythonAnywhere involves pulling down your code from GitHu
 
 That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. พิมพ์คำสั่งต่อไปลงในคอนโซลบน PythonAnywhere (อย่าลืมใช้ username GitHub ของคุณ แทนที่ `<your-github-username>`):
+Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
