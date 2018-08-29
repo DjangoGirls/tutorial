@@ -440,6 +440,6 @@ Tingnan natin kung gagana ito sa PythonAnywhere. Oras na para gumawa ng isa pang
 
 (Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
 
-* Sa katapusan, puntahan ang iyong [Web tab](https://www.pythonanywhere.com/web_app_setup/) at pindutin ang **Reload**.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
 
 And that should be it! Congrats :)
