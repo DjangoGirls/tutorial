@@ -49,7 +49,7 @@ Esta linea dice que para cada URL que empieza con `admin/` Django encontrará su
 
 También queremos mantener limpio el archivo `mysite/urls.py`, así que vamos a importar las urls de nuestra aplicación `blog` en el archivo principal `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. Note that we are using the `include` function here so you will need to add that import.
+Go ahead, add a line that will import `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
 
 El archivo `mysite/urls.py` debería verse ahora así:
 
@@ -98,6 +98,6 @@ Si tratas de visitar http://127.0.0.1:8000/ ahora, encontrarás un mensaje de er
 
 ![Error](images/error1.png)
 
-La consola esta mostrando un error, pero no te preocupes - de hecho es muy ùtil: està diciendote que **no existe el atributo 'post_list'**. Ese es el nombre del *view* que Django está tratando de encontrar y usar, pero aun no lo hemos creado. En esta etapa tu `/admin/` tampoco funcionarà. No te preocupes, ya llegaremos a eso.
+La consola esta mostrando un error, pero no te preocupes - de hecho es muy ùtil: està diciendote que **no existe el atributo 'post_list'**. Ese es el nombre del *view* que Django está tratando de encontrar y usar, pero aun no lo hemos creado. En esta etapa tu `/admin/` tampoco funcionarà. No te preocupes, ya llegaremos a eso. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
 
 > Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/2.0/topics/http/urls/
