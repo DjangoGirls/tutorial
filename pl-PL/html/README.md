@@ -210,8 +210,8 @@ Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
 (Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
-I obserwuj jak Twój kod się ściąga. Jeśli chcesz sprawdzić czy już się pobrał, możesz przejść do zakładki **Files tab** i podejrzeć swój kod na PythonAnywhere.
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
-* Na koniec przeskocz do zakładki [Web tab](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
 I to powinno wystarczyć! Możesz śmiało odświeżyć swoją stronę w przeglądarce! Zmiany powinny być widoczne. :)
