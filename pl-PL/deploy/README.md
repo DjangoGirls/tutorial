@@ -95,13 +95,13 @@ Następnie utwórz nowe repozytorium i nadaj mu nazwę "my-first-blog" (ang. "m�
 
 > **Uwaga** Nazwa `my-first-blog` jest ważna - mogłabyś wybrać jakąś inną, ale będziemy tej nazwy używać wiele razy i za każdym razem musiałabyś pamiętać, żeby zastępować "my-first-blog" swoją wybraną nazwą. Z tego powodu najłatwiej będzie jak użyjesz nazwy `my-first-blog`.
 
-Na następnej stronie wyświetli Ci się adres URL do klonowania Twojego repozytorium. Wybierz wersję "HTTPS", skopiuj go i niedługo będziemy go wklejać do terminala:
+On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
 ![](images/github_get_repo_url_screenshot.png)
 
 Teraz musimy podpiąć repozytorium Git na komputerze do tego na GitHubie.
 
-Wpisz następujące polecenie do konsoli (Zamień `<your-github-username>` na swoją nazwę użytkownika, którą podałaś przy tworzeniu konta na GitHubie, ale bez nawiasów ostrokątnych, czyli "<" i ">"):
+Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Wdrożenie aplikacji internetowej w PythonAnywhere polega na ściągnięciu kodu
 
 To powinno wydrukować rzeczy takie jak `Collecting pythonanywhere`, a skończyć się na linii z napisem `Successfully installed (...) pythonanywhere- (...)`.
 
-Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHubem. Wpisz następujące polecenie do konsoli w PythonAnywhere (nie zapomnij zamienić `<your-github-username>` na swoją nazwę użytkownika):
+Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHubem. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
