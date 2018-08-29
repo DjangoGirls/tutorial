@@ -210,8 +210,8 @@ Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
 
 (Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
 
-E veja seu código sendo baixado. Se você quiser verificar se ele já baixou, pode ir para a **aba Files** e ver seu código no PythonAnywhere.
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
-* Finalmente, pule para a aba [Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em sua aplicação.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
 Sua atualização deve estar no ar! Vá em frente e atualize seu site no navegador. As alterações devem estar visíveis. :)
