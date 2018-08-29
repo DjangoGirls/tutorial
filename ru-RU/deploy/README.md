@@ -189,11 +189,11 @@ Type the following into your console (replace `<your-github-username>` with the 
     templates  tests.py  urls.py  views.py
     
 
-Ты также можешь перейти во вкладку "Files" и перемещаться по PythonAnywhere с помощью встроенного в браузер файлового менеджера.
+You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
 
 ## Ты в сети!
 
-Твой сайт теперь "живет" в публичном Интернете! Перейди во вкладку "Web" на PythonAnywhere и получи ссылку на твой сайт. Ты можешь поделиться им, с кем ты хочешь. :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 
 > **Примечание:** Это учебник для начинающих и при разворачивании сайта мы использовали несколько приёмов, которые не являются идеальными с точки зрения безопасности. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
 
@@ -205,7 +205,7 @@ Type the following into your console (replace `<your-github-username>` with the 
 - Была допущена ошибка в URL GitHub репозитория
 - Если ты видишь ошибку *"Could not find your settings.py"*, это вероятно потому, что не удалось добавить все твои файлы в Git и/или ты не успешно загрузила их на GitHub. Посмотри инструкции еще раз в разделе Git выше
 
-Если видишь ошибку при попытке посетить свой сайт, для отладочной информации первым делом смотри **журнал ошибок**. Ссылку на него ты найдёшь на [вкладке Web](https://www.pythonanywhere.com/web_app_setup/) на PythonAnywhere. Посмотри, нет ли там сообщений о каких-нибудь ошибках; самые последние из них приведены ниже.
+Если видишь ошибку при попытке посетить свой сайт, для отладочной информации первым делом смотри **журнал ошибок**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). Посмотри, нет ли там сообщений о каких-нибудь ошибках; самые последние из них приведены ниже.
 
 Также можешь посмотреть [общие советы по отладке на вики PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
