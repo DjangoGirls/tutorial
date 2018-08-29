@@ -95,13 +95,13 @@ Potom vytvor nové úložisko a pomenuj ho "my-first-blog". Checkbox "inicializu
 
 > **Poznámka** Názov `my-first-blog` je dôležitý -- mohla by si si vybrať aj niečo iné, ale bude sa to ďalej vyskytovať veľakrát a musela by si to zakaždým nahradiť. It's probably easier to stick with the name `my-first-blog`.
 
-Na ďalšej obrazovke sa zobrazí klon URL tvojho repozitára. Vyber si verziu "HTTPS", skopírujte ju, a o chvíľu ju použijeme v termináli:
+On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
 ![](images/github_get_repo_url_screenshot.png)
 
 Teraz musíme pripojiť Git repozitár v počítači k tomu na GitHube.
 
-Napíš do konzoly nasledujúci príkaz (nahraď `<tvoje-github-meno>` svojím užívateľským menom na GitHube, ale bez lomených zátvoriek):
+Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Nasadenie webovej aplikácie na PythonAnywhere znamená stiahnutie kódu z GitHu
 
 That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
 
-Teraz spustíme pomocníka, ktorý automaticky nakonfiguruje našu aplikáciu z GitHubu. Zadaj nasledujúci príkaz do konzoly na PythonAnywhere (nezabudni použiť užívateľské meno z GitHubu namiesto `<tvoje-github-meno>`):
+Teraz spustíme pomocníka, ktorý automaticky nakonfiguruje našu aplikáciu z GitHubu. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
