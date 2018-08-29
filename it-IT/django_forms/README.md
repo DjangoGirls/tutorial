@@ -444,6 +444,6 @@ Vediamo se funziona su PythonAnywhere. È l'ora di un altro deploy!
 
 (Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
 
-* Infine, vai sulla [Web tab](https://www.pythonanywhere.com/web_app_setup/) e premi **Reload**.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
 
 And that should be it! Congrats :)
