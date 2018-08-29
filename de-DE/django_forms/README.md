@@ -4,7 +4,7 @@ Als Letztes möchten wir auf unserer Website noch die Möglichkeit haben, Blogpo
 
 Das Gute an Django-Forms ist, dass man sie entweder vollständig selbst definieren oder eine `ModelForm` erstellen kann, welche den Inhalt des Formulars in das Model speichert.
 
-Genau das wollen wir jetzt machen: Wir erstellen ein Formular für unser `Post` Model.
+Genau das wollen wir jetzt machen: Wir erstellen ein Formular für unser `Post`-Model.
 
 So wie die anderen wichtigen Django-Komponenten haben auch die Forms ihre eigene Datei: `forms.py`.
 
@@ -113,7 +113,7 @@ urlpatterns = [
 
 Nach dem Neuladen der Site sehen wir einen `AttributeError`, weil wir noch keine `post_new`-View eingefügt haben. Fügen wir sie gleich hinzu!
 
-## Die post_new View
+## Die post_new-View
 
 Jetzt wird es Zeit, die `blog/views.py` Datei zu öffnen und die folgenden Zeilen zu den anderen `from`-Zeilen hinzuzufügen:
 
@@ -373,7 +373,7 @@ Falls du mehr Informationen über Django-Formulare benötigst, solltest du die o
 
 ## Sicherheit
 
-Neue Posts mit einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, dass du garantiert nicht willst. Lasst es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
+Neue Posts mit einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, was du garantiert nicht willst. Lasst es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
 
 Finde in der Datei `blog/templates/blog/base.html` unseren `page-header` `div` und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:
 
