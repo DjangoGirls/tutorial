@@ -210,8 +210,8 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 
 (تذكر تغيير `<your-pythonanywhere-username>` بحسابك PythonAnywhere, بدون الاقواس).
 
-ثم لاحظ ان برمجتك يتم ارسالها للخادم, لتتأكد أنها أرسلت بنجاح, يمكنك زيارة **Files tab** ومشاهدت برنامجك على خادم PythonAnywhere.
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
-* وأخيرا، انتقل إلى علامة التبويب [Web tab](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload**.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
 تحديثك يجب ان يكون متاح, قم بعمل تحديث صفحة الموقع في المتصفح. التغييرات يجب ان تظهر لك الان
