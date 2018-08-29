@@ -95,13 +95,13 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
 
 > **注** `my-first-blog`という名前は重要です。何か他のものを選択することもできますが、以下の手順では何度も繰り返す必要があります。他の名前を選択した場合は、 毎回それを置き換えてください。 できれば、`my-first-blog` の名前にしておきましょう。
 
-次の画面では、リポジトリをクローンするためのURLが表示されます。"HTTPS"を選択してURLをコピーします。すぐに端末でペーストします。
+On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
 ![](images/github_get_repo_url_screenshot.png)
 
 そして自分のコンピューター上のGitリポジトリをGitHub上のGitリポジトリに結びつけてあげる必要があります。
 
-コンソールに次のように入力します（`<your-github-username>`をGitHubアカウントの作成時に入力したユーザー名に置き換えます。山カッコ&lt;&gt;を残さないでください）。
+Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ PythonAnywhereにWebアプリケーションをデプロイするには、コー
 
 `Collecting pythonanywhere` のようなメッセージがいくつか出力され、最終的に`Successfully installed (...) pythonanywhere- (...)`という行で終わると思います。
 
-GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（`<your-github-username>`の代わりにGitHubユーザー名を使用することを忘れないでください）：
+GitHub からアプリを自動的に構成するためのヘルパーを実行します。 Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
