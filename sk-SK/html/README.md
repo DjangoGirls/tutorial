@@ -210,8 +210,8 @@ Po tom, čo sme to dokončili, nahráme (push) naše zmeny na Github:
 
 (Nezabudni nahradiť `<your-pythonanywhere-username>` svojím uživateľským menom na PythonAnywhere, bez hranatých zátvoriek).
 
-A sleduj ako sa tvoj kód sťahuje. Pokiaľ chceš skontrolovať, že dorazil, môžeš skočiť do **záložky Files** a pozrieť sa na svoj kód na PythonAnywhere.
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
-* Nakoniec skoč do [záložky Web](https://www.pythonanywhere.com/web_app_setup/) a stlač **Reload** na tvojej webovej aplikácii.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
 Aktualizácia by mala prebehnuť a zmeny by mali byť dostupne v živej verzii! Obnov svoju stránku v prehliadači. Zmeny by mali byť viditeľné. :)
