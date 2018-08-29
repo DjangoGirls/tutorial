@@ -373,7 +373,7 @@ Falls du mehr Informationen über Django-Formulare benötigst, solltest du die o
 
 ## Sicherheit
 
-Neue Posts mit einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, was du garantiert nicht willst. Lasst es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
+Neue Posts mit einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, was du garantiert nicht willst. Lass es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
 
 Finde in der Datei `blog/templates/blog/base.html` unseren `page-header` `div` und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:
 
