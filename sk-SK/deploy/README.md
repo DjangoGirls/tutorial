@@ -191,11 +191,11 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
     templates  tests.py  urls.py  views.py
     
 
-Môžeš tiež ísť do záložky "Files" a pozrieť sa pomocou zabudovaného PythonAnywhere prehliadača súborov.
+You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
 
 ## Si online!
 
-Tvoja stránka by teraz mala by dostupná na verejnom internete. Preklikni sa do PythonAnywhere "Web" záložky, aby si na ňu získala link . Môžeš to vyzdieľať s kýmkoľvek :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 
 > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
 
@@ -207,7 +207,7 @@ Ak uvídíš chybu počas behu `pa_autoconfigure_django.py` skriptu, toto sú na
 - Urobila si chybu v tvojej GitHub URL
 - Ak sa ti zobrazí chybové hlásenie, že *"Could not find your settings.py"*, pravdepodobne je to spôsobené tým, že sa ti nepodarilo pridať všetky súbory do Git a/alebo sa ich nepodarilo úspešne pridať na GitHub. Znovu sa pozri na Git odstavec vyššie
 
-Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde hľadať problém je **error log**. Odkaz naňho nájdeš na PythonAnywhere v [karte Web](https://www.pythonanywhere.com/web_app_setup/). Pozri, či tam nie sú nejaké chybové hlášky - tie najnovšie sú naspodku.
+Ak pri pokuse navštíviť svoju stránku uvidíš chybu, prvým miestom, kde hľadať problém je **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). Pozri, či tam nie sú nejaké chybové hlášky - tie najnovšie sú naspodku.
 
 Môžeš skúsiť aj [Všeobecné tipy na ladenie na PythonAnywhere help stránke](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
