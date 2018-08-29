@@ -97,7 +97,7 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
     
 
-* 마지막으로 [웹 탭(Web tab)](https://www.pythonanywhere.com/web_app_setup/)에서 **다시 불러오기(Reload)**를 누르세요. 업데이트가 보여야 해요! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. 로컬 컴퓨터 데이터베이스와 PythonAnywehere 데이터베이스 파일은 파일 동기화를 하지 않아요.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 축하합니다! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
