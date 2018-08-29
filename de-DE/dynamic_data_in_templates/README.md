@@ -26,7 +26,7 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-Der Punkt vor `models` bedeutet *aktuelle Verzeichnis* oder *aktuelle Anwendung*. Die Dateien `views.py` und `models.py` liegen im selben Verzeichnis. Deswegen können wir `.` und den Namen der Datei (ohne `.py`) benutzen. Dann ergänzen wir für den Import den Namen des Models (`Post`).
+Der Punkt vor `models` bedeutet *aktuelles Verzeichnis* oder *aktuelle Anwendung*. Die Dateien `views.py` und `models.py` liegen im selben Verzeichnis. Deswegen können wir `.` und den Namen der Datei (ohne `.py`) benutzen. Dann ergänzen wir für den Import den Namen des Models (`Post`).
 
 Und nun? Um vom `Post`-Model die tatsächlichen Blogposts zu erhalten, brauchen wir etwas, das `QuerySet` heißt.
 
