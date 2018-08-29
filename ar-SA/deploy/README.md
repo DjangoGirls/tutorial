@@ -91,13 +91,13 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 
 > ** * * ملاحظة * * اسم 'my-first-blog' مهم – يمكن أن تختار شيئا آخر، لكن هذا سيأخد الكثير من الوقت في الإرشادات الموجودة أدناه، وسيكون عليك استبداله كل مرة. It's probably easier to stick with the name `my-first-blog`.</p> </blockquote> 
 > 
-> في الشاشة التالية، سوف يظهر لك رابط استنساخ المستودع الخاص بك. اختر نسخة "HTTPS"،ثم قم بنسخ الرابط سنحتاجه بعد قليل:
+> On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 > 
 > ![](images/github_get_repo_url_screenshot.png)
 > 
 > الآن نحن بحاجة إلى ربط مستودع Git على جهاز الكمبيوتر الخاص بك مع المستودع الذي أنشأته على GitHub.
 > 
-> اكتب الأمر التالي في وحدة التحكم الخاصة بك (استبدل '&lt; your-github-username&gt;' مع اسم المستخدم الذي قمت بإدخاله عند إنشاء حساب GitHub الخاص بك، ولكن دون أقواس):{% filename %} command-line{% endfilename %}:
+> Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -149,7 +149,7 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > 
 > يجب أنت ترى بعض الملاحظات ك`Collecting pythonanywhere` و تنتهي بالعبارة `Successfully installed (...) pythonanywhere- (...)`.
 > 
-> الان نستخدم الادات المساعدة, لإعداد التطبيق مباشرة من GitHub و بشكل ألي. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`):
+> الان نستخدم الادات المساعدة, لإعداد التطبيق مباشرة من GitHub و بشكل ألي. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
