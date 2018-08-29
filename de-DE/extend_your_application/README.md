@@ -12,7 +12,7 @@ Wir haben bereits ein `Post`-Model, deshalb brauchen wir nichts zur `models.py` 
 
 ## Erstelle eine Template-Verknüpfung
 
-Wir beginnen mit dem Hinzufügen einer Verknüpfung in der `blog/templates/blog/post_list.html`-Datei. Derzeit sollte diese so aussehen: {% filename %}-blog/templates/blog/post_list.html-{% endfilename %}
+Wir beginnen mit dem Hinzufügen einer Verknüpfung in der `blog/templates/blog/post_list.html`-Datei. Derzeit sollte diese so aussehen: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
