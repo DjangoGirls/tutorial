@@ -444,6 +444,6 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 (Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
 
-* 最后，跳到 [Web 标签页](https://www.pythonanywhere.com/web_app_setup/) 并点击**重新载入**.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
 
 And that should be it! Congrats :)
