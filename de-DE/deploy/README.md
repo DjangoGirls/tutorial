@@ -101,7 +101,7 @@ In der nächsten Ansicht wirst du die clone-URL deines Repositorys sehen, die du
 
 Nun müssen wir das Git-Repository auf deinem Computer mit dem auf GitHub verbinden.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Gib das Folgende auf der Kommandozeile ein (ersetzte `<your-github-username>` mit dem Benutzername, den du beim Erstellen deines GitHub-Accounts gewählt hast, aber ohne die spitzen Klammern -- die URL sollte der clone-URL entsprechen, die du vorhin gerade gesehen hast):
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Um eine Web App auf PythonAnywhere publizieren zu können, muss dein Code von Gi
 
 Nach diesem Befehl solltest du in etwa Folgendes sehen: `Collecting pythonanywhere`, und irgendwann den Schluss `Successfully installed (...) pythonanywhere- (...)`.
 
-Nun können wir mit dem Hilfstool unsere App von GitHub automatisch konfigurieren. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Nun können wir mit dem Hilfstool unsere App von GitHub automatisch konfigurieren. Gib das Folgende in der Konsole auf PythonAnywhere ein (vergiss nicht, deinen GitHub-Benutzernamen an Stelle von `<your-github-username>` zu benutzen, so dass die URL der clone-URL von GitHub entspricht):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -191,11 +191,11 @@ Nun kannst auch einen Blick auf deinen Code auf PythonAnywhere werfen mittels `l
     templates  tests.py  urls.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Du kannst auch auf die "Files"-Seite gehen und mit PythonAnywheres eingebautem Datei-Manager navigieren. (Von der "Console"-Seite gelangst über das Menü in der rechten oberen Ecke zu anderen PythonAnywhere-Seiten. Sobald du auf einer dieser Seiten bist, sind oben links zu den anderen dieser Seiten.)
 
 ## Du bist jetzt live!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+Nun ist deine Site also live im öffentlichen Internet! Klick dich zur PythonAnywhere "Web"-Seite durch und hole dir den Link. Teile ihn so oft du willst :)
 
 > **Hinweis:** Da es sich hier um ein Anfänger-Tutorial handelt, haben wir ein paar Abkürzungen genommen, um die Site zu veröffentlichen, welche sicherheitstechnisch nicht ideal sind. Fall du dich entscheidest, dieses Projekt weiterzubauen oder ein neues Projekt anzufangen, dann solltest du die [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) durchgehen, um einige Tipps zur Absicherung deiner Seite zu erhalten.
 
@@ -207,7 +207,7 @@ Solltest du beim Ausführen des `pa_autoconfigure_django.py` Skripts eine Fehler
 - Du hast in deiner GitHub-URL einen Fehler gemacht.
 - Falls du die Fehlermeldung *"Could not find your settings.py"* erhältst, liegt das wahrscheinlich daran, dass du nicht alle Files zum Git hinzugefügt und/oder diese nicht erfolgreich auf GitHub veröffentlicht hast. Schau dir nochmals den Git-Abschnitt weiter oben an.
 
-Falls du eine Fehlermeldung erhältst, wenn du versuchst deine Site aufzurufen, solltest du als erstes die Debugging Informationen im **error log** anschauen. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). Schau nach, ob darin Fehlermeldungen enthalten sind; die neuesten findest du ganz unten.
+Falls du eine Fehlermeldung erhältst, wenn du versuchst deine Site aufzurufen, solltest du als erstes die Debugging Informationen im **error log** anschauen. Den Link dazu findest du über [die PythonAnywhere-Seite "Web"](https://www.pythonanywhere.com/web_app_setup/). Schau nach, ob darin Fehlermeldungen enthalten sind; die neuesten findest du ganz unten.
 
 Du findest einige [Allgemeine Debugging Tipps im PythonAnywhere Wiki](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
