@@ -40,7 +40,7 @@ Wir beginnen mit dem Hinzufügen einer Verknüpfung in der `blog/templates/blog/
 
 {% raw %}Es ist an der Zeit, das mysteriöse `{% url 'post_detail' pk=post.pk %}` zu erklären. Wie du dir wahrscheinlich schon denkst, bedeutet `{% %}`, dass wir Django-Template-Tags verwenden. Dieses Mal verwenden wir eines, das eine URL für uns erzeugen wird! {% endraw %}
 
-Der `post_detail` Teil bedeutet, dass Django eine URL in `blog/urls.py` mit dem Namen name=post_detail erwartet.
+Der `post_detail`-Teil bedeutet, dass Django eine URL in `blog/urls.py` mit dem Namen name=post_detail erwartet.
 
 Und was ist mit `pk=post.pk`? `pk` ist die Abkürzung für primary key (Primär-Schlüssel), ein eindeutiger Name für jeden Datensatz in einer Datenbank. Da wir keinen Primärschlüssel in unserem `Post`-Model angelegt haben, erstellt Django einen für uns (standardmäßig ist das eine Zahl, die mit jedem Eintrag nach oben gezählt wird, z.B. 1, 2, 3) und fügt den Schlüssel in einem Feld namens `pk` zu jedem unserer Blogposts hinzu. Wir können auf den Primärschlüssel durch `post.pk` zugreifen, genauso wie auf andere Felder (`title`, `author`, usw.) in unserem `Post`-Objekt!
 
@@ -98,7 +98,7 @@ Aber bei diesem Code gibt es ein Problem. Wenn es kein `Post`-Objekt mit diesem 
 
 ![DoesNotExist Error](images/does_not_exist2.png)
 
-Das wollen wir nicht! Zum Glück stellt uns Django etwas zur Verfügung, das uns dieses Problem abnimmt: `get_object_or_404`. Wenn es kein `Post`-Objekt mit einem gegebenen `pk` gibt, wird eine schöne Seite angezeigt, die sogenannte `Page Not Found 404` Seite ("Seite nicht gefunden"-Seite).
+Das wollen wir nicht! Zum Glück stellt uns Django etwas zur Verfügung, das uns dieses Problem abnimmt: `get_object_or_404`. Wenn es kein `Post`-Objekt mit einem gegebenen `pk` gibt, wird eine schöne Seite angezeigt, die sogenannte `Page Not Found 404`-Seite ("Seite nicht gefunden"-Seite).
 
 ![Page not found](images/404_2.png)
 
@@ -162,7 +162,7 @@ Das sieht dann so aus:
 
 Wir erweitern wieder `base.html`. Im `content`-Block wollen wir das Publikationsdatum eines Posts (published_date), falls es existiert, anzeigen und auch den Titel und den Text. Aber wir müssen noch ein paar wichtige Dinge klären, oder?
 
-{% raw %}`{% if ... %} ... {% endif %}` ist ein Template-Tag, das wir benutzen können, wenn wir etwas überprüfen möchten. (Erinnerst du dich an `if ... else` vom Kapitel **Einführung in Python**?) In diesem Fall hier wollen wir prüfen, ob das `published_date` Feld eines Post-Objektes nicht leer ist. {% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` ist ein Template-Tag, das wir benutzen können, wenn wir etwas überprüfen möchten. (Erinnerst du dich an `if ... else` vom Kapitel **Einführung in Python**?) In diesem Fall hier wollen wir prüfen, ob das `published_date`-Feld eines Post-Objektes nicht leer ist. {% endraw %}
 
 OK, aktualisieren wir unsere Seite und sehen, ob `TemplateDoesNotExist` jetzt weg ist.
 
