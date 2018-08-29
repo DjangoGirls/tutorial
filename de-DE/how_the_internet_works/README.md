@@ -22,7 +22,7 @@ Ziemliches Durcheinander, oder? Eigentlich ist es ein Netzwerk aus verbundenen M
 
 ![Abbildung 1.2](images/internet_3.png)
 
-Faszinierend, oder? Es ist jedoch nicht möglich, Kabel zwischen allen Servern des Internet zu schalten. Damit wir eine Maschine (z.B. diejenige, auf welcher https://djangogirls.org abgespeichert ist) erreichen können, muss unsere Anfrage über viele verschiedene andere Maschinen weitergeleitet werden.
+Faszinierend, oder? Es ist jedoch nicht möglich, Kabel zwischen allen Servern des Internets zu schalten. Damit wir eine Maschine (z.B. diejenige, auf welcher https://djangogirls.org abgespeichert ist) erreichen können, muss unsere Anfrage über viele verschiedene andere Maschinen weitergeleitet werden.
 
 Das sieht ungefähr so aus:
 
