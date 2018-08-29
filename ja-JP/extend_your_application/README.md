@@ -209,6 +209,6 @@ PythonAnywhereのようなサーバは、（CSSファイルのような）「静
 
 `manage.py collectstatic`コマンドは、`manage.py migrate`のようなものです。 私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を*適用*するよう指示します。
 
-いずれにしても、[Webタブ](https://www.pythonanywhere.com/web_app_setup/)にアクセスして、**Reload**を押す準備が整いました。
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
 
 うまくいってるはずです！おめでとう :)
