@@ -429,6 +429,6 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
     
     (Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
     
-    * Yang terakhir, cari [Web tab](https://www.pythonanywhere.com/web_app_setup/) dan klik **Reload**.
+    * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
     
     And that should be it! Congrats :)
