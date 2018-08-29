@@ -444,6 +444,6 @@ Bakalım PythonAnywhere'de de çalışacak mı? Tekrar yayına alalım!
 
 (Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
 
-* Nihayet, [Web tab](https://www.pythonanywhere.com/web_app_setup/)'ına gidip **Reload** edelim.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
 
 İşte bu kadar! Tebrikler :)
