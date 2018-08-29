@@ -72,7 +72,7 @@ Der Teil `post/<int:pk>/` definiert ein URL-Muster – wir erklären es dir:
 
 - `post/` heißt, dass die URL mit dem Wort **post** beginnen sollte, gefolgt von einem **/**. So weit, so gut.
 - `<int:pk>` – Dieser Teil ist schwieriger. Er bedeutet, dass Django eine Ganzzahl (einen Integer-Wert) erwartet und diese in Form einer Variablen namens `pk` einer View weitergibt.
-- `/` – dann wir brauchen vor dem Abschluss der URL wieder einen **/**.
+- `/` – dann brauchen wir vor dem Abschluss der URL wieder einen **/**.
 
 Wenn du also `http://127.0.0.1:8000/post/5/` in deinen Browser eingibst, wird Django verstehen, dass du nach einer *View* suchst, die `post_detail` heißt, und wird der *View* die Information weitergeben, dass `pk` dabei `5` sein soll.
 
