@@ -444,6 +444,6 @@ Being able to create new posts by clicking a link is awesome! ولكن في ال
 
 (تذكر ان تستبدل `<your-pythonanywhere-username>` بحسابك الشخصي على PythonAnywhere, بدون أقواس).
 
-* وأخيرا، انتقل إلى علامة التبويب [Web tab](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload**.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
 
 هذا ينبغي ان يكون كل شيء! مبروك:)
