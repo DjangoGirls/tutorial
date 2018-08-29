@@ -190,11 +190,11 @@ Ahora, si lo deseas, tambien puedes mirar tu código en PythonAnywhere usando `l
     templates  tests.py  urls.py  views.py
     
 
-También puedes is a la pestaña "Files" y navegar alrededor usando el explorador embebido en PythonAnywhere.
+You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
 
 ## Ahora estás en línea!
 
-Tu página debe estar ahora en línea en internet! Haz click en la pestaña "Web" de PythonAnywhere para obtener un link a ella. Puedes compartir este link con quien quieras :)
+Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 
 > **Nota** Este es un tutorial para principiantes, y al desplegar esta página hemos tomado algunos atajos que no son ideales desde una perspectiva de seguridad. Si y cuando decida construir sobre este proyecto, o comenzar uno nuevo, debería revisar el [Checklist de despliegue de Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) para obtener algunos tips de cómo asegurar tu página.
 
@@ -206,7 +206,7 @@ Si ves un error al ejecutar el script `pa_autconfigure_django.py`, aqui hay algu
 - Cometer un error en la URL de GitHub
 - Si ves un error diciendo *"Could not find your settings.py*, es probable que no añadieras todos tus archivos a Git, y/o no los subiste a GitHub satisfactoriamente. Dale otro vistazo a la sección Git arriba
 
-Si ves un error cuando tratas de visitar tu página, el primer lugar para ver alguna información de depuración es en tu **log de errores**. Encontrarás un vínculo a este en la [pestaña Web](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Mira si hay algún mensaje de error allí; los más recientes están en la parte inferior.
+Si ves un error cuando tratas de visitar tu página, el primer lugar para ver alguna información de depuración es en tu **log de errores**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). Mira si hay algún mensaje de error allí; los más recientes están en la parte inferior.
 
 Hay también alguns [ tips generales de depuración en la página de ayuda de PythonAywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
