@@ -478,7 +478,7 @@ Schon gespannt auf den nächsten Teil? :)
 
 > Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) behandelt.
 
-Ein großer Teil beim Programmieren besteht darin, Dinge zu vergleichen. Was lässt sich am besten vergleichen? Zahlen!. Schauen wir uns mal an, wie das funktioniert:
+Ein großer Teil beim Programmieren besteht darin, Dinge zu vergleichen. Was lässt sich am besten vergleichen? Zahlen! Schauen wir uns mal an, wie das funktioniert:
 
 {% filename %}command-line{% endfilename %}
 
