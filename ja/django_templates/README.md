@@ -20,7 +20,7 @@ Djangoテンプレートで変数を表示するためには、次のように�
 {{ posts }}
 ```
 
-これを `blog/templates/blog/post_list.html` に書いてみて下さい。 （２つめと３つめの `<div></div>` タグをまるごと `{{posts}}` に置き換えて下さい。） ファイルを保存してページをリロードしますと：
+これを `blog/templates/blog/post_list.html` テンプレートでやってみましょう。 エディタでこのファイルを開き、２つめと３つめの `<div></div>` タグをまるごと `{{posts}}` に置き換えて下さい。 ファイルを保存してページをリロードしますと：
 
 ![図 13.1](images/step1.png)
 
@@ -97,7 +97,7 @@ post変数がさっきと違って、`{{ post.title }}` や `{{ post.text }}` �
     [...]
     
 
-* 最後に[Web tab](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。更新が反映されています！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
+* 最後に[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。 （コンソールから他のPythonAnywhereページにアクセスするには、右上のメニューボタンを使います。）更新された内容がhttps://yourname.pythonanywhere.comに公開されているはずです。ブラウザで確認しましょう！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
 
 おめでとうございます！よくできました! これができたら、Django adminとして新しい投稿を追加しましょう（published_dateを忘れないで！）。PythonAnywhereサイトのDjango管理者であることを確認してください（https://yourname.pythonanywhere.com/admin ）。それから、投稿したものがそこに見えるか、リロードしましょう。
 

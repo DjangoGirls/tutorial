@@ -14,7 +14,7 @@ Djangoの他の重要なパーツと同様に、フォームは自身のファ�
        └── forms.py
     
 
-forms.pyファイルを開き、次のコードをタイプしてください。
+このファイルをエディタで開き、次のコードを入力してください。
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-最初にDjangoのformsをインポート (`from django import forms`) し、もちろん`Post`モデルもインポート (`from .models import Post`) する必要があります。
+最初にDjangoのformsをインポート（`from django import forms`）し、`Post`モデルもインポート（`from .models import Post`）する必要があります。
 
 `PostForm`とは何かと思うかもしれませんが、これはフォームの名前です。 このフォームが `ModelForm` の一種だとDjangoに伝える必要があります (Djangoが私たちのためにいくつか魔法をかけられるように)。`forms.ModelForm`がその役割を果たします。
 
@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## フォームにおけるページへのリンク
 
-`blog/templates/blog/base.html`を開きましょう。`page-header`と名付けた`div`中に次のリンクを追加します：
+`blog/templates/blog/base.html`をエディタで開きましょう。`page-header`と名付けた`div`中に次のリンクを追加します：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ class PostForm(forms.ModelForm):
 </html>
 ```
 
-ファイルを保存して、ページ http://127.0.0.1:8000 をリロードします。すでに見覚えのある `NoReverseMatch` エラーが表示されますか？
+ファイルを保存して、ページ http://127.0.0.1:8000 をリロードすると見覚えのある `NoReverseMatch` エラーが表示されると思います。実際にそうなってますか？いいですね！
 
 ## URL
 
-blog/urls.pyを開き、次の内容を追加します。
+`blog/urls.py`をエディタで開き、次の内容を追加します。
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ urlpatterns = [
 
 ## post_new ビュー
 
-`blog/views.py`を開きます。`from`の行の後に次の内容を追加してみましょう。
+`blog/views.py`をエディタで開き、`from`の行の後に次の内容を追加してみましょう。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ def post_new(request):
 
 ## テンプレート
 
-`blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作りましょう。フォームを動かすにはいくつかやることがあります。
+`blog/templates/blog`ディレクトリに`post_edit.html`ファイルを作り、コードエディタで開きましょう。フォームを動かすにはいくつかやることがあります。
 
 * フォームを表示する必要があります。 私たちは（例えば）{% raw %}`{{ form.as_p }}`{% endraw %} でこれを行うことができます。
 * 上記の行は HTMLのformタグでラップする必要があります：`<form method="POST">...</form>`
@@ -175,7 +175,7 @@ def post_new(request):
 
 ## フォームを保存する
 
-`blog/views.py` をもう一度開きます。現在は `post_new` ビューはこうなっています。
+`blog/views.py` をもう一度エディタで開きます。現在の `post_new` ビューはこうなっています。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 
 今、私たちは新しいフォームを追加する方法を知っています。 しかし既存のデータを編集するためはどうすれば良いのでしょうか? それは先ほど行ったことと非常に似ています。 すぐにいくつかの重要なものを作成してみましょう。 （もしわからない場合、コーチに尋ねるか、もしくはすでに手順をカバーしているので、前の章を見てください）
 
-`blog/templates/blog/post_detail.html` を開いて次の行を追加します
+`blog/templates/blog/post_detail.html` をエディタで開いて次の行を追加します
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 {% endblock %}
 ```
 
-`blog/urls.py` には次の行を追加します:
+`blog/urls.py`をエディタで開き、次の内容を追加します。
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 
 テンプレート `blog/templates/blog/post_edit.html` を再利用します。そして残るは*ビュー*です。
 
-`blog/views.py` を開いて次をファイルの最後に追加します：
+`blog/views.py` をエディタで開いて次の内容をファイルの最後に追加します：
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-`blog/templates/blog/base.html` で、`page-header` と名付けた `div ` とそこに以前に入力したアンカータグを見つけます。 これは次のようになります。
+`blog/templates/blog/base.html` をエディタで開き、`page-header` と名付けた `div ` とそこに以前に入力したアンカータグを見つけます。 これは次のようになります。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 詳細ページに追加した編集アイコンを覚えていますか？ 他の人が既存の投稿を編集できないように、同じ変更を追加したいと思います。
 
-`blog/templates/blog/post_detail.html` を開いて次の行を見つけてください：
+`blog/templates/blog/post_detail.html` をエディタで開いて次の行を見つけてください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -444,6 +444,6 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 (`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに)
 
-* 最後に、[Webタブ](https://www.pythonanywhere.com/web_app_setup/)に行って、**リロード**します。
+* 最後に、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/) に飛んで（コンソールの右上のメニューボタンを使って）それから **Reload** を押しましょう。 変更を見るためにあなたのブログ https://yourname.pythonanywhere.com を再読み込みしましょう。
 
 うまくいってるはずです！おめでとう :)
