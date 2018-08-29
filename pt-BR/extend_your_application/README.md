@@ -210,6 +210,6 @@ Comece ativando seu virtualenv, se ele já não estiver ativo (para isso, o Pyth
 
 O comando `manage.py collectstatic` é mais ou menos como `manage.py migrate`. Agora, fazemos algumas mudanças no nosso código e dizemos ao Django que as aplique (*apply*) à coleção de arquivos estáticos, ou ao banco de dados.
 
-De qualquer forma, estamos prontas para ir para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e clicar em **Reload** (atualizar).
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
 
 Deve estar pronto! Arrasou :)
