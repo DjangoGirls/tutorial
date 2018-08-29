@@ -85,7 +85,7 @@ Nach dem Hinzufügen der Zeile sieht deine HTML-Datei so aus:
 </html>
 ```
 
-Nach dem Speichern und Neuladen von http://127.0.0.1:8000 solltest du den bereits bekannten `NoReverseMatch` Fehler sehen. Ist dem so? Gut!
+Nach dem Speichern und Neuladen von http://127.0.0.1:8000 solltest du den bereits bekannten `NoReverseMatch`-Fehler sehen. Ist dem so? Gut!
 
 ## URL
 
