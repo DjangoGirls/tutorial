@@ -166,7 +166,7 @@ Wir erweitern wieder `base.html`. Im `content`-Block wollen wir das Publikations
 
 OK, aktualisieren wir unsere Seite und sehen, ob `TemplateDoesNotExist` jetzt weg ist.
 
-![Blog-Post-Detailseite](images/post_detail2.png)
+![Blogpost-Detailseite](images/post_detail2.png)
 
 Yay! Es funktioniert!
 
@@ -179,7 +179,7 @@ Es wäre schön zu sehen, ob deine Website noch auf PythonAnywhere funktioniert,
     $ git status
     $ git add --all .
     $ git status
-    $ git commit -m "View und Template für Blog-Post-Details sowie CSS für die Website hinzugefügt"
+    $ git commit -m "View und Template für Blogpost-Details sowie CSS für die Website hinzugefügt"
     $ git push
     
 
