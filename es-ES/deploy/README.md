@@ -94,13 +94,13 @@ Entonces, crea un nuevo repositorio dándole el nombre "my-first-blog". Deja el 
 
 > **Note** El nombre `my-first-blog` es importante - tu puedes escoger algo mas, pero va a ocurrir muchas veces en las instrucciones, y vas a tener que sustituirlo cada vez. It's probably easier to stick with the name `my-first-blog`.
 
-En la siguiente pantalla, se te mostrarán tu enlace de clonado. Escoje la versión "HTTPS", cópialo y pégalo en tu terminal:
+On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
 ![](images/github_get_repo_url_screenshot.png)
 
 Ahora necesitas enlazar el repositorio de Git en tu computador al repositorio de github.
 
-Escribe el siguiente comando en tu consola (Reemplaza `<your-github-username>` con el nombre de usuario que ingresaste cuando creaste tu cuenta de Github, pero sin < >):
+Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 
 {% filename %}command-line{% endfilename %}
 
@@ -152,7 +152,7 @@ Desplegar una aplicación web en PythonAnywhere involucra jalar tu codigo de Git
 
 Eso debería imprimir en pantalla algunas cadenas de texto como `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
 
-Ahora ejecutamos el asistente para configurar automáticamente nuestra aplicación desde GitHub. Escribe lo siguiente en la consola de PythonAnywhere (no te olvides de usar tu usuario de GitHub en lugar de `<your-github-username>`):
+Ahora ejecutamos el asistente para configurar automáticamente nuestra aplicación desde GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
