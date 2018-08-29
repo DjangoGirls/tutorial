@@ -148,7 +148,7 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>New post</h1>
+    <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
@@ -292,7 +292,7 @@ so that the template will look like this:
             </div>
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
