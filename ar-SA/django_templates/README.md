@@ -97,7 +97,7 @@
     [...]
     
 
-* وأخيرا، انتقل إلى علامة التبويب [Web tab](https://www.pythonanywhere.com/web_app_setup/) واضغط على **Reload**. على تطبيق الويب. يجب أن يكون التحديث مباشر! إذا كانت مشاركات المدونة على موقع PythonAnywhere لا تتطابق مع المشاركات التي تظهر على المدونة المستضافة على الخادم المحلي، فلا بأس بذالك. قواعد البيانات على جهاز الكمبيوتر المحلي وبايثون في أي مكان لا يتزامنان مع بقية الملفات الخاصة بك.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 مبروك! الآن امضي قدما وحاول إضافة مشاركة جديدة عبر إدارة جانغو الخاصة بك (تذكر لإضافة publication_date!) تأكد من أنك في إدارة جانغو لموقع pythonanywhere الخاص بك، https://yourname.pythonanywhere.com/admin. ثم حدث الصفحة لمعرفة ما إذا كانت المشاركة تظهر هناك أم لا.
 
