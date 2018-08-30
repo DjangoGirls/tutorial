@@ -2,7 +2,7 @@
 
 Untuk menambah, edit dan padamkan siaran kami baru saja dimodelkan, kita akan menggunakan Django admin.
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
