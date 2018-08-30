@@ -6,7 +6,7 @@ Esto es exactamente lo que las *views* se supone que hacen: conectar modelos con
 
 Muy bien, entonces ¿cómo lo logramos?
 
-Necesitamos abrir nuestro archivo `blog/views.py`. Hasta ahora la *view* `post_list` se ve así:
+We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ Así que ahora nos interesa tener una lista de post publicados ordenados por `pu
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Ahora ponemos este trozo de código en el archivo `blog/views.py` añadiéndole la función `def post_list(request)`, pero no olvides que primero debes añadir ` from django.utils import timezone`:
+So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 
