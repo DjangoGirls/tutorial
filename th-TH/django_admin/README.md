@@ -2,7 +2,7 @@
 
 การ เพิ่ม, แก้ไข และ ลบโพสต์ที่เราเพิ่งสร้างโมเดลไปนั้น เราจะทำโดยใช้ Django admin
 
-เรามาเปิดไฟล์ `blog/admin.py` และแทนที่ข้างในไฟล์ด้วย:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
