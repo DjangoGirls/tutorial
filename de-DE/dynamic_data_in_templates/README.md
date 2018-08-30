@@ -6,7 +6,7 @@ Genau dafür sind die *Views* zuständig: die Verbindung zwischen den Models und
 
 Okay, und wie machen wir das jetzt?
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+Wir öffnen unsere Datei `blog/views.py` in unserem Code-Editor. Bisher sieht unsere `post_list`-*View* folgendermaßen aus:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ Wir wollen nun also eine Liste von publizierten Blogposts ausgeben, sortiert nac
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
+Öffnen wir also die Datei `blog/views.py` im Code-Editor und setzen wir dieses Stück Code in die Funktion `def post_list(request)` ein. Aber vergiss nicht, zuerst `from django.utils import timezone` hinzufügen:
 
 {% filename %}blog/views.py{% endfilename %}
 
