@@ -17,7 +17,7 @@
                 post_list.html
     
 
-ثم افتحه وانسخ كل شيء من `post_list.html` إلى ملف `base.html`، مثل هذا:
+Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,7 +85,7 @@
 
 لكن لماذا؟ لقد انشأت `كتلة`! استخدمت علامة القالب `{% block %}` لإنشاء منطقة التي ستضع فيها إتش تي أم ال HTML. ذاك HTML قادم من قالب اخر الذي قام بتمديد هذا القالب (`base.html`). نحن سنريك طريقة فعل ذالك خلال لحضات.
 
-الآن إحفظ `base.html` وإفتح `blog/templates/blog/post_list.html` مرة أخرى. {% raw %}ستحتاج لحدف كل شي فوق `{% for post in posts %}` وتحت `{% endfor %}`. عند الانتهاء من ذلك، الملف سيبدو هكذا:{% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}ستحتاج لحدف كل شي فوق `{% for post in posts %}` وتحت `{% endfor %}`. عند الانتهاء من ذلك، الملف سيبدو هكذا:{% endraw %}
 
 {% filename %}blog/templates/blog/list.html{% endfilename %}
 
@@ -141,7 +141,7 @@
 {% endblock %}
 ```
 
-هذا كل شء! تحقق ان كان موقعك يعمل
+That's it! Save the file, and check if your website is still working properly. :)
 
 > اذا حصلت على هذا الخطأ `TemplateDoesNotExist`، وهذا يعني انه ليس هناك ملف`blog/base.html` ولديك `runserver` يشتغل في الكونسول. حاول إيقافه (بالضغط على Ctrl+C - مفتاح التحكم و C معا) وإعادة تشغيله من خلال تشغيل أمر  python manage.py runserver </ 0>.</p>
 </blockquote>
