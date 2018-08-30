@@ -16,7 +16,7 @@ CSS(Cascading Style Sheets)는 웹사이트의 보여지는 부분 나타낼 때
 
 ## Bootstrap 설치하기
 
-부트스트랩(Bootstrap)을 설치하려면, 부트스트랩을 적용하려는 html 확장자(*.html)을 가진 파일의 `<head>`에 다음과 같은 문장을 추가해야 해요.
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ CSS파일에서는 HTML 파일에 있는 각 요소들에 스타일을 적용할
 
 W3Schools에서 [CSS Selectors](http://www.w3schools.com/cssref/css_selectors.asp)에 대해 더 읽을 수 있어요.
 
-HTML 템플릿(코드)에 CSS를 추가했다는 사실을 알려줄(정의할) 필요가 있어요. `blog/templates/blog/post_list.html`파일을 열고 가장 위에 다음 줄을 추가하세요:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
