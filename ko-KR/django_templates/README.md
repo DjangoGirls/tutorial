@@ -20,7 +20,7 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 {{ posts }}
 ```
 
-`blog/templates/blog/post_list.html` 템플릿에서 하세요. 두 번째 `<div>`에서 세 번째 `</div>`까지를 `{{ posts }}`로 바꾸세요. 파일을 저장하고 페이지를 새로 고침하면 이렇게 보입니다. :
+`blog/templates/blog/post_list.html` 템플릿에서 하세요. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. 파일을 저장하고 페이지를 새로 고침하면 이렇게 보입니다. :
 
 ![그림 13.1](images/step1.png)
 
