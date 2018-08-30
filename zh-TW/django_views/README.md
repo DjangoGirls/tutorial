@@ -8,7 +8,7 @@ Views 都放在 `views.py` 檔中，我們將會新增我們 *views* 到 `blog/v
 
 ## blog/views.py
 
-OK，讓我們打開這個檔，看看裡面有什麼？
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
