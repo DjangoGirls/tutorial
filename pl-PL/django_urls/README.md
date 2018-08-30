@@ -69,7 +69,7 @@ Django przekieruje wszystkie reguły z adresu 'http://127.0.0.1:8000/' do `blog.
 
 ## blog.urls
 
-Stwórz nowy pusty plik o nazwie `urls.py` w katalogu `blog`. Dokładnie tak! Dodaj te pierwsze dwie linie:
+Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
 
 {% filename %}blog/urls.py{% endfilename %}
 
