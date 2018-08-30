@@ -14,7 +14,7 @@ Kailangan nating maglikha ng file sa loob ng `blog` na directory na may ganitong
        └── forms.py
     
 
-Sige, buksan ito at i-type ang sumusunod na code:
+OK, let's open it in the code editor and type the following code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ Sa makaisa pa, gagawa tayo ng link papunta sa page, sa URL, sa view at sa templa
 
 ## I-link sa isang page na may mga form
 
-Oras na para buksan ang `blog/template/blog/base.html`. Magdadagdag tayo ng link sa loob ng `div` na pinangalanang `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## URL
 
-Bubuksan nating ang `blog/urls.py` at idagdag ang linya:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Pagkatapos mag-refresh sa site, makikita natin ang `AttributeError`, ito ay dahi
 
 ## post_new view
 
-Oras na para buksan ang file na `blog/views.py` at idagdag ang sumusunod na mga linya sa ibang `from` na mga hanay:
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Para makalikha ng bagong form na `Post`, kailagan nating tawagin ang `PostForm()
 
 ## Template
 
-Kailangan nating maglikha ng file na `post_edit.html` sa loob ng `blog/templates/blog` na directory. Para gagana ang form, may mga bagay pa tayong dapat gawin:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Ang linya sa itaas ay kailangang nakabalot sa HTML form na tag: `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ Ang sagot ay: wala. May kailangan lang tayong gawin sa ating *view*.
 
 ## Nagsisave ng form
 
-Buksan ulit ang `blog/views.py`. Sa ngayon, ang laman lang ng `post_new` na vieiw ay ang sumusunod:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -279,7 +279,7 @@ Si Django ay sinisuguro na ang lahat ng field sa ating form ay tama. Kagilas-gil
 
 Ngayon, alam na natin kung paano magdagdag ng bagong form. Ngunit paano kung gusto natin i-edit ang umiiral na? Ito ay parehong-pareho lang sa ginawa natin kanina. Gagawa tayo ng mga importanteng bagay nang mabilisan. (Kung meron kang bagay na hindi maiintindihan, magtanong sa iyong taga sanay o hanapin sa nakalipas na mga kabanata, yamang atin ng napag-aralan and mga hakbang na ito.)
 
-Buksan ang `blog/templates/blog/post_detail.html` at idagdag ang susunod na linya
+Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post/post_detail.html{% endfilename %}
 
@@ -308,7 +308,7 @@ nang sa gayon ang template ay magmumukhang ganito:
 {% endblock %}
 ```
 
-Sa `blog/urls.py` idagdag natin itong linya:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -318,7 +318,7 @@ Sa `blog/urls.py` idagdag natin itong linya:
 
 Gagamitin natin uli ang template na `blog/templates/blog/post_edit.html`, kaya ang kulang nalang natin ay ang *view*.
 
-Buksan natin ang `blog/views.py` at idagdag ito sa katapusan ng file:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -372,7 +372,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! Pero sa ngayon, kung sinuman ang bumisita sa iyong site ay maaring maglikha ng bagong blog post, at yan ang hindi mo siguro gustong mangyari. Gawin natin ito na ang button ay makikita mo lang pero hindi sa ibang tao.
 
-Sa `blog/templates/blog/base.html`, hanapin ang `page-header` na `div` at ang anchor na tag na nilagay natin kanina. Maging kagaya ito nito:
+Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,7 +394,7 @@ Ang `{% if %}` ay maging sanhi na ang link ay ipapadala sa browser kung ang guma
 
 Natandaan mo ba ang edit na icon na kakadagdag lang natin sa pahina na detalye? Gusto din nating magdagdag ng kaparehang pagbabago dito. Para ang ibang tao ay hindi maaring mag-edit ng umiiral na mga post.
 
-Buksan ang `blog/templates/blog/post_detail.html` at hanapin ang linya na ito:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
