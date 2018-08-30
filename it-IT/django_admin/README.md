@@ -2,7 +2,7 @@
 
 Per aggiungere, modificare ed eliminare le pubblicazioni che abbiamo appena modellato, useremo l'amministratore di Django.
 
-Stiamo per aprire il ` blog/admin.py` archiviare e sostituire il suo contenuto con questo:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
