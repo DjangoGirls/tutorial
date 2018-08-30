@@ -35,7 +35,7 @@ HTML هو رمز يتم تفسيره بواسطة متصفح الويب - مثل
 
 لا يوجد خطأ بعد الآن! تهاني:) ومع ذلك، موقع الويب الخاص بك لم ينشر أي شيء ما عدا صفحة فارغة، نظراً لأن القالب فارغ . نحن بحاجة إلى إصلاح ذلك.
 
-أضف ما يلي إلى ملف القالب الخاص بك:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
