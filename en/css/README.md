@@ -77,15 +77,13 @@ In your `blog/static/css/blog.css` file you should add the following code:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 ```css
-h1 a {
+h1 a, h2 a {
     color: #C25100;
 }
-h2 a {
-    color: #C25100;
-}
+
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element (the `h2 a` selector does the same thing for `h2` elements). So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names.
 We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
@@ -171,11 +169,7 @@ Find the `h1 a` declaration block (the code between braces `{` and `}`) in the C
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 ```css
-h1 a {
-    color: #C25100;
-    font-family: 'Lobster';
-}
-h2 a {
+h1 a, h2 a {
     color: #C25100;
     font-family: 'Lobster';
 }
