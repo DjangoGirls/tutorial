@@ -35,7 +35,7 @@ Guarda che aspetto ha il tuo sito adesso: http://127.0.0.1:8000/
 
 L'errore non c'è più! Congratulazioni :) Tuttavia, il tuo sito in realtà non sta pubblicando niente eccetto una pagina vuota, perché anche il tuo template è vuoto. Dobbiamo sistemarlo.
 
-Aggiungi quanto segue nel tuo file template:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
