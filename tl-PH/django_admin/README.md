@@ -2,7 +2,7 @@
 
 Para makadagdag, maka-edit, at makabura ng mga post na kakamodel lang, gagamitin natin ang admin ng Django.
 
-Ating buksan ang `blog/admin.py` na file at palitan ang laman nito:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
