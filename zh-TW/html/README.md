@@ -35,7 +35,7 @@ HTML 代表 "超文字標記語言 (HyperText Markup Language)"。 **超文字 (
 
 再也沒有錯誤了！恭喜 :) 然而，您的網站實際上沒有發佈任何東西除了一空白網頁，因為你的範本 (template) 也是空白，我們需要修復這個問題。
 
-加入以下內容到你的範本檔 (template file) 中：
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
