@@ -12,7 +12,7 @@ Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
 
 ## Crea un enlace al detalle de una entrada
 
-Empezaremos añadiendo un link en el archivo `blog/templates/blog/post_list.html`. Hasta el momento debería verse así: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -54,7 +54,7 @@ Vamos a crear una URL en `urls.py` para nuestra *view* `post_detail`!
 
 Queremos que el detalle de la primera entrada se visualice en esta **URL**: http://127.0.0.1:8000/post/1/
 
-Vamos a crear una URL en el fichero `blog/urls.py` que dirija a Django hacia una *vista* llamada `post_detail`, que mostrará una entrada de blog completa. Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. El fichero debería parecerse a esto:
+Vamos a crear una URL en el fichero `blog/urls.py` que dirija a Django hacia una *vista* llamada `post_detail`, que mostrará una entrada de blog completa. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -108,7 +108,7 @@ La buena noticia es que puedes crear tu propia página `Page Not Found` y diseñ
 
 En `blog/urls.py` creamos un regla de URL denominada `post_detail` que hace referencia a una vista llamada `view.post_detail`. Esto significa que Django va a estar esperando una función llamada `post_detail` de vista en `blog/views.py`.
 
-Deberiamos abrir `blog/views.py` y añadir lo siguiente por donde estan los otros `from`:
+We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Sí. Es hora de actualizar la página: http://127.0.0.1:8000/
 
 ## Crear una plantilla para post detail
 
-Crearemos un archivo en `blog/templates/blog` llamado `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
 Se verá así:
 
