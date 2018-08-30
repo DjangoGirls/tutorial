@@ -2,15 +2,16 @@
 
 برای اضافه کردن، ویرایش و حذف پستهایی که ما فقط مدل کرده ایم، از مدیر جنگجو استفاده خواهیم کرد.
 
-بیایید فایل ` وبلاگ/ مدیریت.py </ 0> را باز کنیم و محتویات آن را با این قرار دهید:</p>
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
-<p>{% filename %}blog/admin.py{% endfilename %}</p>
+{% filename %}blog/admin.py{% endfilename %}
 
-<pre><code class="python">from django.contrib import admin
+```python
+from django.contrib import admin
 from .models import Post
 
 admin.site.register(Post)
-`</pre> 
+```
 
 همانطور که می بینید، مدل وارد شده (شامل) را که در فصل قبل تعریف شده وارد می کنیم. برای اینکه مدل ما در صفحه مدیریت نمایش داده شود، ما باید مدل را با ` admin.site.register (ارسال) </ 0> ثبت نام کنیم.</p>
 
