@@ -2,12 +2,13 @@
 
 Untuk menambahkan, mengedit dan menghapus tulisan yang baru saja kita telusuri, kita akan menggunakan admin Django.
 
-Mari buka file ` blog / admin.py </ 0> dan ganti isinya dengan ini:</p>
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
-<p>{% filename%} blog / admin.py {% endfilename%}</p>
+{% filename%} blog / admin.py {% endfilename%}
 
-<pre><code class="python">dari admin impor django.contrib dari .Models import Post admin.site.register (Post)
-`</pre> 
+```python
+dari admin impor django.contrib dari .Models import Post admin.site.register (Post)
+```
 
 Sebagaimana dapat anda lihat, kita mengimport (meng Include) model Post yang telah didefinisikan di bab sebelumnya. Agar model kita tampil pada halaman admin, kita perlu mendaftarkan model tersebut dengan `admin.site.register(Post)`.
 
