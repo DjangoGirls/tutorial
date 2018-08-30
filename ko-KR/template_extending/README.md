@@ -17,7 +17,7 @@ Templates help when you want to use the same information or layout in more than 
                 post_list.html
     
 
-그 다음 파일을 열어 `post_list.html`에 있는 모든 내용을 `base.html`에 아래 내용을 복사해 붙여넣습니다.
+Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Templates help when you want to use the same information or layout in more than 
 
 왜 그럴까요? `block`을 만들었기 때문이죠! `{% block %}`템플릿 태그는 HTML이 삽입될 수 있는 영역을 만들어줍니다. That HTML will come from another template that extends this template (`base.html`). 그럼 어떻게 동작하는지 알아볼게요.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}`{% for post in posts %}`부터 `{% endfor %}`까지 모든 내용을 지우세요. When you're done, the file will look like this:{% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}`{% for post in posts %}`부터 `{% endfor %}`까지 모든 내용을 지우세요. When you're done, the file will look like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {
 {% endblock %}
 ```
 
-That's it! Check if your website is still working properly. :)
+That's it! Save the file, and check if your website is still working properly. :)
 
 > If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
