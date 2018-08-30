@@ -20,7 +20,7 @@ Um eine Variable in einem Django-Template darzustellen, nutzen wir doppelte, ges
 {{ posts }}
 ```
 
-Versuche das in deinem `blog/templates/blog/post_list.html` Template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Speichere die Datei und aktualisiere die Seite, um die Ergebnisse anzuzeigen.
+Versuche das in deinem `blog/templates/blog/post_list.html` Template. Öffne es in deinem Code-Editor und ersetze alles vom zweiten `<div>` bis zum dritten `</div>` mit `{{ posts }}`. Speichere die Datei und aktualisiere die Seite, um die Ergebnisse anzuzeigen.
 
 ![Abbildung 13.1](images/step1.png)
 
