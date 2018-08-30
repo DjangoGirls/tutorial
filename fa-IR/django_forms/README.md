@@ -14,7 +14,7 @@
    └── forms.py
 `</pre> 
 
-خوب، اجازه دهید آن را باز کنیم و کد زیر را تایپ کنیم:
+OK, let's open it in the code editor and type the following code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,12 +44,13 @@ We need to import Django forms first (`from django import forms`) and our `Post`
 
 <h2>پیوند به یک صفحه با فرم</h2>
 
-<p>وقت آن است که <code> blog / templates / blog / base.html </ 0> باز شود. <code> div </ 0> به نام <code> عنوان صفحه </ 0> لینک اضافه می کنیم:</p>
+<p>It's time to open <code>blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
-<p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
-<pre><code class="html"><a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
-`</pre> 
+```html
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
 
 توجه داشته باشید که ما می خواهیم با نمایش جدید ما ` post_new </ 0> تماس بگیریم. کلاس <code> "گلیفیکن گلیفیکن به علاوه" </ 0> توسط تم بوت استرپ ما استفاده می شود و علامت پلاس را برای ما نمایش می دهد.</p>
 
@@ -87,12 +88,13 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## آدرس اینترنتی
 
-` وبلاگ/ آدرسهای اینترنتی.py </ 0> باز کنید و یک خط اضافه کنید:</p>
+We open `blog/urls.py` in the code editor and add a line:
 
-<p>{% filename %}blog/urls.py{% endfilename %}</p>
+{% filename %}blog/urls.py{% endfilename %}
 
-<pre><code class="python">path('post/new', views.post_new, name='post_new'),
-`</pre> 
+```python
+path('post/new', views.post_new, name='post_new'),
+```
 
 و کد نهایی مانند این خواهد بود:
 
@@ -113,12 +115,13 @@ urlpatterns = [
 
 <h2>دیدگاه پست_جدید</h2>
 
-<p>زمان باز کردن فایل <code> وبلاگ / نمایشها </ 0> را باز کنید و خطوط زیر را با بقیه <code> از </ 0> ردیف اضافه کنید:</p>
+<p>Time to open the <code>blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
-<p>{% filename %}blog/views.py{% endfilename %}</p>
+{% filename %}blog/views.py{% endfilename %}
 
-<pre><code class="python">from .forms import PostForm
-`</pre> 
+```python
+from .forms import PostForm
+```
 
 و سپس نمایش * ما </ 0>:</p> 
 
@@ -134,14 +137,12 @@ def post_new(request):
 
 <h2>قالب</h2>
 
-<p>ما باید یک فایل <code> post_edit.html </ 0> در <code> وبلاگ / قالبها/ وبلاگ</ 0> ایجاد کنیم. برای ایجاد یک کار فرم، ما نیاز به چندین چیز دارد:</p>
+<p>We need to create a file <code>post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
-<ul>
-<li>ما باید فرم را نمایش دهیم. ما می توانیم با (مثلا{% raw %}<code>{{ form.as_p }}`{% endraw %}. را انجام دهیم.</li> 
-
+* ما باید فرم را نمایش دهیم. ما می توانیم با (مثلا{% raw %}`{{ form.as_p }}`{% endraw %}. را انجام دهیم.
 * خط بالا باید با یک تگ فرم HTML پیچیده شود: `&lt;form method="POST"&gt;... </ 0>.</li>
 <li>ما به یک دکمه <code> ذخیره </ 0> نیاز داریم. ما این کار را با یک دکمه HTML انجام می دهیم: <code>&lt;button type="submit"&gt; ذخیره </ 1>.</li>
-<li>و در نهایت، درست بعد از باز شدن تگ <code><form ...>` باید {% raw %}`{% csrf_token %}`{% endraw %} را اضافه کنیم. این بسیار مهم است، زیرا فرم های شما را امن می کند! اگر شما در مورد این بیت را فراموش کرده اید، جانگو هنگام تلاش برای ذخیره فرم شکایت می کند:</ul> 
+<li>و در نهایت، درست بعد از باز شدن تگ <code><form ...>` باید {% raw %}`{% csrf_token %}`{% endraw %} را اضافه کنیم. این بسیار مهم است، زیرا فرم های شما را امن می کند! اگر شما در مورد این بیت را فراموش کرده اید، جانگو هنگام تلاش برای ذخیره فرم شکایت می کند:
 
 ![CSRF صفحه ممنوع](images/csrf2.png)
 
@@ -172,14 +173,15 @@ def post_new(request):
 
 <h2>ذخیره فرم</h2>
 
-<p>باز <code> وبلاگ / نمایشها.پی</ 0> باز کنید. در حال حاضر همه ما در نمای <code> پست_جدید </ 0> زیر است:</p>
+<p>Open <code>blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
-<p>{% filename %}blog/views.py{% endfilename %}</p>
+{% filename %}blog/views.py{% endfilename %}
 
-<pre><code class="python">def post_new(request):
+```python
+def post_new(request):
     form = PostForm()
     return render(request, 'blog/post_edit.html', {'form': form})
-`</pre> 
+```
 
 هنگامی که فرم را ارسال می کنیم، ما به همان نمایش داده می شود، اما این بار ما در ` درخواست </ 0> داده های بیشتری داریم، به ویژه در <code> request.POST </ 0> (نامگذاری هیچ ارتباطی با "پست" وبلاگ نداشته باشد، این کار با این واقعیت است که ما "ارسال" داده ها). به یاد داشته باشید که چگونه در فایل HTML، تعریف <code><form>` دارای متغیر ` متد = "پست" </ 1> بود? تمام فیلدها از فرم اکنون در <code> درخواست.پست</ 0> قرار دارند. شما نباید <code> پست</ 0> را به هر چیز دیگری تغییر دهید (تنها مقدار معتبر دیگر برای روش <code> </ 0> <code> گرفتن</ 0> است، اما ما هیچ وقت برای توضیح تفاوت آن است).</p>
 
@@ -275,7 +277,7 @@ else:
 
 <p>حالا ما می دانیم که چگونه یک فرم جدید اضافه کنیم. اما اگر بخواهیم یک موجود را ویرایش کنیم، چه؟ این بسیار شبیه آنچه ما انجام دادیم. بگذارید برخی از چیزهای مهم را سریع بسازیم. (اگر چیزی را درک نکنید، باید از مربی خود بپرسید یا در فصل های قبلی نگاه کنید، زیرا ما قبلا همه این مراحل را پوشش دادیم.)</p>
 
-<p>Open <code>blog/templates/blog/post_detail.html` and add the line
+<p>Open <code>blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -304,7 +306,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-In `blog/urls.py` we add this line:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -314,7 +316,7 @@ In `blog/urls.py` we add this line:
 
 We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
-Let's open `blog/views.py` and add this at the very end of the file:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -368,7 +370,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -390,7 +392,7 @@ This `{% if %}` will cause the link to be sent to the browser only if the user r
 
 Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
-Open `blog/templates/blog/post_detail.html` and find this line:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
