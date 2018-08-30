@@ -20,7 +20,7 @@ Aby wyświetlić zmienną w szablonie Django, używamy podwójnych nawiasów kla
 {{ posts }}
 ```
 
-Spróbuj tak zrobić w szablonie` blog/templates/blog/post_list.html`. Zastąp wszystko od drugiego `<div>` do trzeciego `</div>` wierszem `{{ posts }}`. Zapisz plik i odśwież stronę, by zobaczyć rezultat:
+Spróbuj tak zrobić w szablonie` blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Zapisz plik i odśwież stronę, by zobaczyć rezultat:
 
 ![Rysunek 13.1](images/step1.png)
 
