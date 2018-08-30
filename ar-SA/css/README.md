@@ -16,13 +16,14 @@ Bootstrap اطار عمل الأكثر شعبية لـ HTML و CSS لتطوير 
 
 ## تثبيت Bootstrap
 
-لتثبيت بوتستراب، يجب إضافة هذا إلى `<head>` في ملف `.html </ 1>:</p>
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
-<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<pre><code class="html"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+```html
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-`</pre> 
+```
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
@@ -87,7 +88,7 @@ h1 a {
 
 اقرأ عن [محددات CSS في w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-نحن بحاجة إلى أن نقول أيضا لقالب HTML أننا أضفنا بعض ال CSS. افتح الملف `blog/templates/blog/post_list.html` وأضف هذا السطر في البداية:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
