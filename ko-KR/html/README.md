@@ -35,7 +35,7 @@ HTML은 "HyperText Markup Language"의 줄인 말입니다. **하이퍼텍스트
 
 이제 에러가 사라졌어요! 축하합니다. :) 하지만 웹사이트가 비어있어 아무 내용도 보여지지 않네요. 이제 고쳐나가 봅시다.
 
-템플릿 파일 post_list.html에 아래 내용을 넣어주세요:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
