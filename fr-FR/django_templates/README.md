@@ -20,7 +20,7 @@ Afin d'afficher une variable dans un template Django, nous utiliserons des doubl
 {{ posts }}
 ```
 
-Essayez de faire la même chose avec votre template `blog/templates/blog/post_list.html`. Remplacez tout ce qui se trouve entre la seconde balise `<div>` jusqu'au troisième `</div>` avec la ligne `{{ posts }}`. Sauvegardez votre fichier et rafraichissez votre page pour voir le résultat :
+Essayez de faire la même chose avec votre template `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Sauvegardez votre fichier et rafraichissez votre page pour voir le résultat :
 
 ![Figure 13.1](images/step1.png)
 
