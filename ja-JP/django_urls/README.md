@@ -69,7 +69,7 @@ urlpatterns = [
 
 ## blogのURL
 
-`blog` ディレクトリの下に、新しく `urls.py` という空のファイルを作って下さい。そして最初の2行を以下のように書きます：
+Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
 
 {% filename %}blog/urls.py{% endfilename %}
 
