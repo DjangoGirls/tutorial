@@ -49,7 +49,7 @@ Es wird Zeit, unsere erste URL zu erstellen! Wir wollen, dass 'http://127.0.0.1:
 
 Wir wollen auch, dass die `mysite/urls.py`-Datei sauber bleibt. Deshalb importieren wir die URLs unserer `Blog`-Applikation in die `mysite/urls.py`-Hauptdatei.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+Also los: Füge eine Zeile hinzu, die `blog.urls` importiert. Ausserdem wirst du die erste Zeile ändern müssen, da wir hier die Funktion `include` verwenden, die du auf dieser Zeile noch importieren musst.
 
 Deine `mysite/urls.py`-Datei sollte jetzt so aussehen:
 
@@ -69,7 +69,7 @@ Django wird nun alle Aufrufe von 'http://127.0.0.1:8000/' auf `blog.urls` umleit
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+Erstelle eine neue leere Datei namens `urls.py` im Verzeichnis `blog` und öffne sie im Code-Editor. Alles klar! Füge folgende zwei Zeilen ein:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -98,6 +98,6 @@ Wenn du jetzt versuchst, http://127.0.0.1:8000/ aufzurufen, dann erscheint eine 
 
 ![Error](images/error1.png)
 
-Die Konsole zeigt einen Fehler, aber keine Sorge – der ist eigentlich ziemlich nützlich: Er sagt dir, dass **kein Attribut 'post_list'** vorhanden ist. Das ist der Name der *View*, die Django zu finden und zu verwenden versucht, aber wir haben sie noch gar nicht erstellt. In diesem Zustand wird dein `/admin/` auch nicht funktionieren. Keine Sorge, das regeln wir gleich. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Die Konsole zeigt einen Fehler, aber keine Sorge – der ist eigentlich ziemlich nützlich: Er sagt dir, dass **kein Attribut 'post_list'** vorhanden ist. Das ist der Name der *View*, die Django zu finden und zu verwenden versucht, aber wir haben sie noch gar nicht erstellt. In diesem Zustand wird dein `/admin/` auch nicht funktionieren. Keine Sorge, das regeln wir gleich. Wenn du eine andere Fehlermeldung siehst, versuche es nochmal nach einem Neustart des Webservers. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
 
 > Wenn du mehr über Django-URLconfs lernen willst, dann öffne die offizielle Dokumentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
