@@ -2,7 +2,7 @@
 
 Om berichten die we zojuist gemodelleerd hebben toe te voegen, te bewerken of te verwijderen, gebruiken we de Django admin.
 
-Open het `blog/admin.py` bestand en vervang de inhoud door:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
