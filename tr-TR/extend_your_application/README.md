@@ -12,7 +12,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 
 ## Bir gönderinin detayı için bir template(şablon) linki oluşturun
 
-`blog/templates/blog/post_list.html` dosyasının içine bir bağlantı ekleyerek başlayacağız.Şimdiye kadar bunun gibi görünmesi gerek: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -54,7 +54,7 @@ Peki `pk=post.pk`? `pk` primary key (birincil anahtar) için kullanılan kısalt
 
 İlk gönderimizin detayının şu **URL**'de gösterilmesini istiyoruz: http://127.0.0.1:8000/post/1/
 
-`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'ına işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. Dosya şöyle gözükmeli:
+`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'ına işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -108,7 +108,7 @@ Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
 
 `blog/urls.py` içinde `views.post_detail` denilen bir görünüm ifade eden `post_detail` adında bir URL kuralı oluşturduk. Bu, Django'nun ` blog / views.py </ 0> içinde <code> post_detail </ 0> adlı bir görünüm fonksiyonu bekleyeceği anlamına gelir.</p>
 
-<p><code>blog/views.py` 'i açmalıyız ve diğer `from` satırının yanına şu kodları eklemeliyiz:
+<p>We should open <code>blog/views.py` in the code editor and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 
 ## Post(gönderi) detayları için bir template(şablon) oluştur
 
-`blog/templates/blog` dizininde `post_detail.html` adında bir dosya oluşturacağız.
+We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
 Şöyle görünmeli:
 
