@@ -14,7 +14,7 @@
        └── forms.py
     
 
-เอาล่ะ เรามาเปิดไฟล์และพิมพ์โค้ดเหล่านี้ลงไปกันเถอะ:
+OK, let's open it in the code editor and type the following code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ We need to import Django forms first (`from django import forms`) and our `Post`
 
 ## ลิงค์ไปยังหน้าเว็บด้วยฟอร์ม
 
-ได้เวลาเปิดไฟล์ `blog/templates/blog/base.html` เราจะเพิ่มลิงค์ใน `div` ชื่อ `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## URL
 
-เปิดไฟล์ `blog/urls.py` และเพิ่มบรรทัดนี้:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ urlpatterns = [
 
 ## post_new view
 
-ได้เวลาเปิดไฟล์ `blog/views.py` และเพิ่มบรรทัดเหล่านี้ลงไปพร้อมกับ `form`:
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ def post_new(request):
 
 ## เทมเพลต
 
-เราต้องสร้างไฟล์ `post_edit.html` ในไดเรกทอรี `blog/templates/blog`, ในการสร้างฟอร์มนั้น เราต้องการสองสามอย่าง:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ def post_new(request):
 
 ## บันทึกฟอร์ม
 
-Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django จะตรวจสอบความถูกต้อง ว่าข
 
 ตอนนี้คุณทราบวิธีเพิ่มฟอร์มใหม่แล้ว แต่ถ้าเกิดคุณอยากแก้ไขของเดิมที่มีอยู่แล้วล่ะ? มันก็จะคล้ายๆกับที่เราเคยทำมาแหละ งั้นเรามาสร้างอะไรที่สำคัญๆกันเถอะ (ถ้ามีอะไรที่คุณไม่เข้าใจ คุณควรที่จะถามโค้ชของคุณหรือเปิดดูบทที่ผ่านๆมาที่เราได้ครอบคลุมขั้นตอนเหล่านี้ทั้งหมดไปแล้ว)
 
-เปิดไฟล์ `blog/templates/blog/post_detail.html` และเพิ่มบรรทัดนี้ลงไป
+Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ Django จะตรวจสอบความถูกต้อง ว่าข
 {% endblock %}
 ```
 
-เปิดไฟล์ `blog/urls.py` และเพิ่มบรรทัดนี้:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ Django จะตรวจสอบความถูกต้อง ว่าข
 
 เราจะนำ template `blog/templates/blog/post_edit.html` มาใช้อีกครั้ง ดังนั้นสิ่งที่ขาดไปสิ่งสุดท้ายคือ *view*.
 
-เปิดไฟล์ `blog/views.py` และเพิ่มบรรทัดเหล่านี้ลงไปท้ายไฟล์:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! แต่ตอนนี้ ใครก็ตามที่เข้ามายังหน้าเว็บของคุณจะสามารถเพิ่มโพสต์ใหม่ได้ และนั่นคงจะไม่ใช่สิ่งที่คุณต้องการ งั้นเรามาทำให้ปุ่มนี้มันแสดงให้เฉพาะเราที่เห็นมันได้เท่านั้น
 
-ในไฟล์ `blog/templates/blog/base.html` ตรงส่วน `page-header` `div` ควรมีหน้าตาแบบนี้:
+Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ This `{% if %}` will cause the link to be sent to the browser only if the user r
 
 Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
-เปิดไฟล์ `blog/templates/blog/post_detail.html` และเพิ่มบรรทัดนี้ลงไป:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
