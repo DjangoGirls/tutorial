@@ -8,7 +8,7 @@ Views sú umiestnené v súbore `views.py`. Naše *views* budeme pridávať do s
 
 ## blog/views.py
 
-OK, otvorme tento súbor a pozrime sa, čo je v ňom:
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
