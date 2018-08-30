@@ -35,7 +35,7 @@ Zdaj si lahko stran ogledaš na naslovu http://127.0.0.1:8000/
 
 Napake ni več! Čestitke :) Vendar pa je naša stran zaenkrat še precej dolgočasna, saj ni na njej nič objavljenega. Zdaj je končno prišel čas, da to spremenimo.
 
-V predlogo dodaj sledečo kodo:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
