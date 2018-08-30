@@ -20,7 +20,7 @@ Na vypísanie premennej v Django šablónach použijeme dvojitú zloženú zátv
 {{ posts }}
 ```
 
-Vyskúšaj to vo svojej šablóne `blog/templates/blog/post_list.html`. Nahraď všetko od druhého `<div>` po tretí `</div>` týmto kódom: `{{ posts }}`. Ulož súbor a obnov stránku, aby si videla výsledky:
+Vyskúšaj to vo svojej šablóne `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Ulož súbor a obnov stránku, aby si videla výsledky:
 
 ![Obrázok 13.1](images/step1.png)
 
