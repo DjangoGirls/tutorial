@@ -14,7 +14,7 @@ Musíme vytvoriť súbor s týmto názvom v adresári `blog`.
        └── forms.py
     
 
-OK, otvorme ho a napíšme nasledovný kód:
+OK, let's open it in the code editor and type the following code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ Takže ešte raz vytvoríme link na stránku, URL, zobrazenie a šablónu.
 
 ## Link na stránku s formulárom
 
-Je čas otvoriť `blog/templates/blog/base.html`. Pridáme link do `divu` s názvom `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## URL
 
-Otvor `blog/urls.py` a pridaj riadok:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Po obnovení stránky uvidíme chybu `AttributeError`, pretože nemáme implemen
 
 ## view post_new
 
-Teraz otvoríme súbor `blog/views.py` a pridáme tam nasledujúce riadky so zvyškom importovacích riadkov `from`:
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Nový formulár `Post` vytvoríme tak, že sputíme `PostForm()` a prepošleme h
 
 ## Šablóna
 
-Musíme vytvoriť súbor `post_edit.html` v adresári `blog/ templates/blog`. Aby formulár fungoval, potrebujeme niekoľko vecí:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * Musíme zobraziť formulár. Môžeme to urobiť (napríklad) pomocou {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Riadok vyššie musí byť obalený HTML tagom: `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ Odpoveď znie: nič. Akurát budeme mať ešte trochu práce v našom *view* (zo
 
 ## Uloženie formuláru
 
-Znova otvor `blog/views.py`. Momentálne máme v `post_new` len toto:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django overí, či sú všetky polia formulára správne. Nie je to skvelé?
 
 Teraz už vieme, ako sa pridáva nový formulár. Ale čo ak chceme upravovať existujúci? Je to veľmi podobné tomu, čo sme práve spravili. Poďme rýchlo vytvoriť niektoré dôležité veci. (ak niečomu nerozumieš, opýtaj sa svojho trénera alebo sa pozri na predchádzajúce kapitoly, pretože všetky tieto kroky sme si už prebrali.)
 
-Otvor `blog/templates/blog/post_detail.html` a pridaj tento riadok
+Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ takže šablóna teraz bude vyzerať takto:
 {% endblock %}
 ```
 
-V `blog/urls.py` pridáme tento riadok:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ V `blog/urls.py` pridáme tento riadok:
 
 Znova použijeme šablónu `blog/templates/blog/post_edit.html`, takže posledná vec, čo nám chýba je *view*.
 
-Otvor `blog/views.py` a na úplný koniec súboru pridaj toto:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! Ale, v tejto chvíli, každý kto navštívi tvoju stránku, bude môcť pridať nový blog post a to asi nie je to, čo by si chcela. Urobme to tak, že sa tlačidlo zobrazí len tebe.
 
-V `blog/templates/blog/base.html` nájdi náš `div` `page-header` a kotviaci tag, ktorý si tam umiestnila už predtým. Mal by vyzerať takto:
+Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Tento `{% if %}` zabezpečí, aby bol link odoslaný do prehliadača, len ak je 
 
 Spomínaš si na ikonku na upravovanie ktorú sme práve pridali na našu stránku s detailmi? Rovnakú zmenu chceme pridať aj sem, aby iný ludia nemohli upravovať existujúce príspevky.
 
-Otvor `blog/templates/blog/post_detail.html` a pridaj tento riadok:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
