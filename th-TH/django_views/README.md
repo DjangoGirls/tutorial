@@ -8,7 +8,7 @@ view จะอยู่ในไฟล์ `views.py` เราจะเพิ่
 
 ## blog/views.py
 
-โอเค เปิดไฟล์นี้ขึ้นมาดูว่ามีอะไรข้างใน:
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
