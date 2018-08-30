@@ -16,7 +16,7 @@ Ito ay isinulat ng mga programmer na nagtatrabaho sa Twitter. Sa ngayon, ito ay 
 
 ## Mag-install ng Bootstrap
 
-Para ma-instal ang Bootstrap, kailangan mo itong ilaya sa `<head>` na iyong `.html` na file:
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ Sa loob ng CSS file nakabase ang estilo ng mga elemento sa loob ng HTML na file.
 
 Maari ka pang magbasa ng higit pa tungkol sa mga [Selector ng CSS sa w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-Kailangan din nating sabihan ang ating template ng HTML na may dinagdag tayo na mga CSS. Buksan ang `blog/templates/blog/post_list.html` na file at idagdag ang linya na ito sa pinakasimula nito:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
