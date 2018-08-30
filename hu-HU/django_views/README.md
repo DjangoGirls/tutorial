@@ -8,7 +8,7 @@ A nézetek a `views.py` fájlban találhatók. A *view-kat* a `blog/views.py` f�
 
 ## blog/views.py
 
-Ok, nyissuk ki ezt a fájlt és nézzük, mi van benne:
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
