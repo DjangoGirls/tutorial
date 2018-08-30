@@ -20,7 +20,7 @@
 {{ posts }}
 ```
 
-جرب هذا في قالبك `blog/templates/blog/post_list.html`. استبدل كل شيء من `<div>` الثاني الى `</div>` الثالت ب `{{ posts }}`. قم بحفظ الملف، وقم بتحديث الصفحة لمشاهدة النتائج:
+جرب هذا في قالبك `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. قم بحفظ الملف، وقم بتحديث الصفحة لمشاهدة النتائج:
 
 ![الرقم 13.1](images/step1.png)
 
