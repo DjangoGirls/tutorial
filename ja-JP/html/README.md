@@ -35,7 +35,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 もうエラーはありませんか！おめでとうございます:)。しかし、あなたのウェブサイトは実際には空白のページ以外は何も表示していないでしょう。テンプレートも空白だからです。それを直していく必要があります。
 
-あなたのテンプレートファイルに、次の内容を書き加えます。
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
