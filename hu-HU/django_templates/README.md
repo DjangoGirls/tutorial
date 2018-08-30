@@ -20,7 +20,7 @@ Ahhoz, hogy kiírjunk egy változót a Django template-ben, dupla kapcsos záró
 {{ posts }}
 ```
 
-Próbáld ki a `blog/templates/blog/post_list.html` template-ben. Cserélj ki mindent a második `<div>` -től a harmadikig a következővel: `{{ posts }}`. Mentsd el a fájlt és frissítsd az oldalt, hogy lásd az eredményt:
+Próbáld ki a `blog/templates/blog/post_list.html` template-ben. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Mentsd el a fájlt és frissítsd az oldalt, hogy lásd az eredményt:
 
 ![13.1 ábra](images/step1.png)
 
