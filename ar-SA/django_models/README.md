@@ -95,7 +95,7 @@
     └── requirements.txt
     
 
-بعد إنشاء التطبيق، نحتاج أيضا أن نقول لدجانغو أنه ينبغي استخدامه. نحن نفعل ذلك في ملف `mysite/settings.py`. نحن بحاجة إلى البحث عن `INSTALLED_APPS` وإضافة خط يحتوي على `'blog',` فقط فوق `]`. المنتج النهائي ينبغي أن يبدو هكذا:
+بعد إنشاء التطبيق، نحتاج أيضا أن نقول لدجانغو أنه ينبغي استخدامه. We do that in the file `mysite/settings.py` -- open it in your code editor. نحن بحاجة إلى البحث عن `INSTALLED_APPS` وإضافة خط يحتوي على `'blog',` فقط فوق `]`. المنتج النهائي ينبغي أن يبدو هكذا:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -115,7 +115,7 @@ INSTALLED_APPS = [
 
 في ملف `blog/models.py` نحدد كافة كائنات تسمى `Models`--وهذا هو المكان الذي سنحدد فيه مشاركات مدونتنا.
 
-دعونا نفتح `blog/models.py`، وإزالة كل شيء منه، وكتابة التعليمات البرمجية التالية:
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
 
