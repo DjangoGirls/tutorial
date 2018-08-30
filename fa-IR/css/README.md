@@ -16,7 +16,7 @@
 
 ## نصب بوت استرپ
 
-برای نصب بوت استرپ، شما باید این را در `.html </ 1> فایل <code><head>` خود اضافه کنید:
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ Django already knows where to find the static files for the built-in "admin" app
 
 شما می توانید بیشتر در مورد اینها بخوانید[CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-ما همچنین باید قالب HTML خودمان را اضافه کنیم که بعضی CSS ها را اضافه کردیم. فایل `blog/templates/blog/post_list.html` را باز کنید و این خط را در ابتدای آن اضافه کنید:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
