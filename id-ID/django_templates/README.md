@@ -20,7 +20,7 @@ Untuk mencetak variabel ke dalam Django templates, kita menggunakan dua buah kar
 {{posts}}
 ```
 
-Terapkan ke template `blog/templates/blog/post_list.html`. Ubah semua dari `<div>` kedua sampai dengan `</div>` ketiga ganti dengan `{{ posts }}`. Simpan file, dan refresh halaman untuk melihat hasil perubahan:
+Terapkan ke template `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Simpan file, dan refresh halaman untuk melihat hasil perubahan:
 
 ![Gambar 13.1](images/step1.png)
 
