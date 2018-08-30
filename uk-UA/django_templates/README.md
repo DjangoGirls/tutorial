@@ -20,7 +20,7 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 {{ posts }}
 ```
 
-Спробуйте це в шаблоні `blog/templates/blog/post_list.html`. Починаючи з другого `<div>` до третього `</div>` замініть все на `{{ posts }}`. Збережіть файл і оновіть сторінку, щоб побачити результат:
+Спробуйте це в шаблоні `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Збережіть файл і оновіть сторінку, щоб побачити результат:
 
 ![Figure 13.1](images/step1.png)
 
