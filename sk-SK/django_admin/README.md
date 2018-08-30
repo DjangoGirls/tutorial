@@ -2,7 +2,7 @@
 
 Na pridávanie, editovanie a mazanie postov, ktoré sme práve namodelovali, budeme používať Django admina.
 
-Otvorme súbor `blog/admin.py` a nahraďme jeho obsah týmto:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
