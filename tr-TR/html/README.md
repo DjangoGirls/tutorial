@@ -35,7 +35,7 @@ Web sitemizin nasıl göründüğüne bir bakalım: http://127.0.0.1:8000/
 
 Artık hata kalmadı! Tebrikler :) Ama, web sitemiz aslında boş bir sayfadan başka bir şey yayınlamıyor, çünkü template boş. Bunu düzeltelim.
 
-Template dosyamıza şunları ekleyelim:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
