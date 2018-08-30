@@ -20,7 +20,7 @@ Pra mostrar uma variável em um template do Django, usamos chaves duplas com o n
 {{ posts }}
 ```
 
-Tente fazer isso no seu template `blog/templates/blog/post_list.html`. Substitua tudo desde o segundo `<div>` até o terceiro `</div>` por `{{ posts }}`. Salve o arquivo e atualize a página para ver o resultado:
+Tente fazer isso no seu template `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Salve o arquivo e atualize a página para ver o resultado:
 
 ![Figura 13.1](images/step1.png)
 
