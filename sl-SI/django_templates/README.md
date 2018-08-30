@@ -20,7 +20,7 @@ Za izpis spremenljivke v Djangovih predlogah bomo uporabili zavite oklepaje, zno
 {{ posts }}
 ```
 
-Naredi to v predlogi `blog/templates/blog/post_list.html`. Vso kodo med drugo značko `<div>` in tretjo značko `</div>` z `{{ posts }}`. Datoteko shrani, osveži stran in si oglej rezultate:
+Naredi to v predlogi `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Datoteko shrani, osveži stran in si oglej rezultate:
 
 ![Figure 13.1](images/step1.png)
 
