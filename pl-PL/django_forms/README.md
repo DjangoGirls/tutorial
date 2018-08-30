@@ -14,7 +14,7 @@ Stwórzmy plik o takiej nazwie w katalogu `blog`.
        └── forms.py
     
 
-Dobrze, a teraz otwórzmy go i wprowadźmy następujący kod:
+OK, let's open it in the code editor and type the following code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ Oto co za chwilę stworzymy: link do strony, adres URL, widok i szablon.
 
 ## Odnośnik do strony z formularzem
 
-Czas otworzyć plik `blog/templates/blog/base.html`. Wewnątrz `div`-a o nazwie `page-header` dodajmy odnośnik:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ Po zapisaniu i odświeżeniu strony http://127.0.0.1:8000 zobaczyłaś znajomo w
 
 ## Adres URL
 
-Otwieramy plik `blog/urls.py` i dodajemy wiersz:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Po odświeżeniu strony zobaczymy błąd `AttributeError`, ponieważ nie mamy je
 
 ## Widok post_new
 
-Czas otworzyć plik `blog/views.py` i dodać poniższe linijki obok innych wierszy z `from`:
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Aby stworzyć nowy formularz dla modelu `Post`, musimy wywołać funkcję `PostF
 
 ## Szablon
 
-Musimy utworzyć plik `post_edit.html` w katalogu `blog/templates/blog`. Aby nasz formularz zadziałał, niezbędne jest kilka rzeczy:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * Musimy wyświetlić formularz. Możemy to zrobić np. za pomocą polecenia {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Powyższa linijka musi znajdować się wewnątrz znacznika formularza HTML: &lt;`form method="POST">...</form>`.
@@ -175,7 +175,7 @@ Odpowiedź brzmi: nic. Mamy coś jeszcze do zrobienia w naszym *widoku*.
 
 ## Zapisujemy formularz
 
-Otwórz jeszcze raz plik `blog/views.py`. W tym momencie wszystko, co mamy w widoku `post_new` to:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django dba o walidację pól w naszym formularzu, upewniając się, czy są uzup
 
 Teraz już wiemy, jak dodać nowy formularz. Ale co w przypadku, gdy zapragniemy zmienić już istniejący? Proces jest bardzo podobny do tego, który przeszłyśmy przed chwilą. Stwórzmy szybko kilka ważnych rzeczy. (jeżeli masz problem ze zrozumieniem czegoś, zapytaj osobę prowadzącą kurs lub przejrzyj poprzednie rozdziały, gdyż wszystkie kroki mamy już omówione.)
 
-Otwórz `blog/templates/blog/post_detail.html` i dodaj poniższą linijkę
+Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ dzięki czemu nasz szablon będzie wyglądał tak:
 {% endblock %}
 ```
 
-W pliku `blog/urls.py` dodajmy wiersz:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ W pliku `blog/urls.py` dodajmy wiersz:
 
 Wykorzystamy jeszcze raz szablon `blog/templates/blog/post_edit.html`, więc ostatnią rzeczą, której nam brakuje, jest *widok*.
 
-Otwórz `blog/views.py` i dodaj poniższy kod na samym końcu tego pliku:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokume
 
 Super, że możemy tworzyć posty klikając w link! Jest niestety jeden problem - aktualnie każdy, kto odwiedzi Twoją stronę, może stworzyć nowy post. Zróbmy tak, aby przycisk był widoczny tylko dla Ciebie i nikogo innego.
 
-W `blog/templates/blog/base.html` znajdź `page-header` `div` i tag <0>a</0>, który umieściliśmy tam wcześniej. Powinien wyglądać tak:
+Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Ten `{% if %}` spowoduje, że link zostanie wysłany do przeglądarki tylko wted
 
 Pamiętasz ikonkę edycji, która przed chwilą dodałyśmy do naszej strony szczegółów? Chcemy też dodać tę samą zmianę tutaj tak, by inne osoby nie były w stanie edytować istniejących postów.
 
-Otwórz `blog/templates/blog/post_detail.html` i znajdź poniższą linijkę:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
