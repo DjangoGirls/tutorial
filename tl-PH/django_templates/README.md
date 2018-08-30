@@ -20,7 +20,7 @@ Para magprint ng variable sa templates ng Django, gagamit tayo ng dobleng pamuko
 {{ posts }}
 ```
 
-Subukan mo ito sa loob ng iyong `blog/templates/blog/post_list.html` na template. Palitan ang lahat mula sa pangalawa `<div>`hanggang sa pangatlong `</div>` ng `{{ posts }}`. I-save ang file, at i-refresh ang pahina para makita ang mga resulta:
+Subukan mo ito sa loob ng iyong `blog/templates/blog/post_list.html` na template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. I-save ang file, at i-refresh ang pahina para makita ang mga resulta:
 
 ![Tambilang 13.1](images/step1.png)
 
