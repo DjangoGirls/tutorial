@@ -12,7 +12,7 @@ Wir haben bereits ein `Post`-Model, deshalb brauchen wir nichts zur `models.py` 
 
 ## Erstelle eine Template-Verknüpfung
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Wir beginnen damit, einen Link in der `blog/templates/blog/post_list.html`-Datei zu erstellen. Öffne sie im Code-Editor, und bisher sollte sie etwa so aussehen: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -108,7 +108,7 @@ Okay, es wird Zeit, die *View* zu unserer `views.py`-Datei hinzuzufügen!
 
 In `blog/urls.py` haben wir eine URL-Regel namens `post_detail` erstellt, die auf eine View namens `views.post_detail` verweist. Das heißt, dass Django eine View-Funktion erwartet, die `post_detail` heißt und in `blog/views.py` angelegt wurde.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+Wir sollten also `blog/views.py` im Code-Editor öffnen und den folgenden Code zu den anderen `from` Zeilen hinzufügen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Oh nein! Ein anderer Fehler! Aber wir wissen ja schon, wie wir mit diesem umgehe
 
 ## Erstelle ein Template für die Post-Detailseite
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+Wir erstellen eine Datei in `blog/templates/blog` mit dem Namen `post_detail.html` und öffnen sie im Code-Editor.
 
 Das sieht dann so aus:
 
