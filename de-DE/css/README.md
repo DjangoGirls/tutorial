@@ -88,7 +88,7 @@ In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg
 
 [Auf w3schools](http://www.w3schools.com/cssref/css_selectors.asp) erfährst du mehr über CSS-Selektoren.
 
-Wir müssen unserem HTML-Template noch mitteilen, dass wir etwas CSS hinzugefügt haben. Öffne die Datei `blog/templates/blog/post_list.html` im Code-Editor und füge folgende Zeile ganz am Anfang der Datei ein:
+Wir müssen der HTML-Vorlage noch sagen, dass wir CSS eingefügt haben. Öffne die Datei `blog/templates/blog/post_list.html` im Code-Editor und füge diese Zeile ganz oben ein:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
