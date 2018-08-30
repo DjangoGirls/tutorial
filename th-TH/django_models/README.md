@@ -95,7 +95,7 @@ A model in Django is a special kind of object – it is saved in the `database`.
     └── requirements.txt
     
 
-หลังจากที่เราสร้าง application เราต้องบอกให้ Django รู้ด้วยว่าเราจะใช้มัน ซึ่งคุณสามารถทำได้ที่ไฟล์ `mysite/settings.py` เราต้องหา `INSTALLED_APPS` จากนั้นจึงเพิ่มบรรทัดที่มีคำว่า `'blog',` ให้อยู่เหนือเครื่องหมาย `)` ผลลัพธ์สุดท้ายของเราหน้าตาควรจะออกมาเป็นแบบนี้:
+หลังจากที่เราสร้าง application เราต้องบอกให้ Django รู้ด้วยว่าเราจะใช้มัน We do that in the file `mysite/settings.py` -- open it in your code editor. เราต้องหา `INSTALLED_APPS` จากนั้นจึงเพิ่มบรรทัดที่มีคำว่า `'blog',` ให้อยู่เหนือเครื่องหมาย `)` ผลลัพธ์สุดท้ายของเราหน้าตาควรจะออกมาเป็นแบบนี้:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -115,7 +115,7 @@ INSTALLED_APPS = [
 
 ในไฟล์ `blog/models.py` เราจะกำหนดวัตถุทั้งหมด เรียกว่า `Models` - ซึ่งเราจะกำหนดบล็อกโพสต์ของเราไว้ที่นี่
 
-เปิดไฟล์ `blog/models.py` ลบทุกอย่างข้างในไฟล์นั้น แล้วเขียนโค้ดลงไปตามนี้:
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
 
