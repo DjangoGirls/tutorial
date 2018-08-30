@@ -20,7 +20,7 @@ Djangoテンプレートで変数を表示するためには、次のように�
 {{ posts }}
 ```
 
-これを `blog/templates/blog/post_list.html` に書いてみて下さい。 （２つめと３つめの `<div></div>` タグをまるごと `{{posts}}` に置き換えて下さい。） ファイルを保存してページをリロードしますと：
+これを `blog/templates/blog/post_list.html` に書いてみて下さい。 Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. ファイルを保存してページをリロードしますと：
 
 ![図 13.1](images/step1.png)
 
