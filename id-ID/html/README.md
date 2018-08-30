@@ -35,7 +35,7 @@ Lihatlah bagaimana situs web terlihat sekarang: http://127.0.0.1:8000 /
 
 Tidak ada kesalahan lagi! Selamat :) Namun, situs Anda sebenarnya tidak menerbitkan apapun kecuali halaman kosong, karena template Anda juga kosong. Kita perlu memperbaikinya.
 
-Tambahkan yang berikut ke file template Anda:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/static/css/list.html{% endfilename %}
 
