@@ -6,7 +6,7 @@ To je presne to, čo majú *views* robiť: spojiť modely a šablóny. V našom 
 
 Dobre, takže ako toto dosiahneme?
 
-Musíme otvoriť náš `blog/views.py`. Zatiaľ `post_list` *view* vyzerá takto:
+We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ Takže teraz chceme zoznam príspevkov, ktoré sú uverejnené a zoradené podľ
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Teraz vložíme tento kus kódu do súboru `blog/views.py` pridaním funkcie `def post_list(request)`, ale nezabudni najprv pridať `from django.utils import timezone`:
+So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 
