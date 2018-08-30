@@ -16,7 +16,7 @@ Bol napísaný programátormi, ktorí pracovali pre Twitter. Teraz je vyvíjaný
 
 ## Inštalácia Bootstrapu
 
-Aby si nainštalovala Bootstrap, potrebuješ pridať nasledovnú vec do `<head>` tvojho `.html` súboru:
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ V CSS súbore definujeme štýly pre elementy v HTML súbore. Prvý spôsob, ak�
 
 O [CSS selektoroch ](http://www.w3schools.com/cssref/css_selectors.asp) si môžeš prečítať viac na stránkach w3schools.
 
-Ešte musíme povedať našej HTML šablóne, že sme pridali nejaké CSS. Otvor súbor `blog/templates/blog/post_list.html` a pridaj tento riadok na úplný začiatok:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
