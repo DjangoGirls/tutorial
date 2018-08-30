@@ -35,7 +35,7 @@ Pozri sa, ako momentálne vyzerá tvoja stránka: http://127.0.0.1:8000/
 
 Žiadne ďalšie chyby! Gratulujeme :) Avšak tvoja stránka zatiaľ neukazuje nič, okrem prázdnej stránky, pretože tvoja šablóna je taktiež prázdna. To musíme opraviť.
 
-Pridaj nasledujúci kód do tvojho súboru šablóny:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
