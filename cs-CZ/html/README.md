@@ -35,7 +35,7 @@ Podívej se jak tvá stránka vypadá teď: http://127.0.0.1:8000/
 
 Žádná chybová hláška! Gratulujeme :) Nicméně, na tvé stránce se ještě nezveřejnilo nic kromě prázdné stránky, protože tvá šablona je také prázdná. To musíme napravit.
 
-Do souboru šablony (template) přidej následující:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
