@@ -16,7 +16,7 @@ Bootstrap是最受欢迎的前端框架之一，可以被用来开发美观的�
 
 ## 安装 Boostrap
 
-为了成功安装Bootstrap，你需要把以下代码写在你的`.html`文件的`<head>`部分中：
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ h1 a {
 
 你可以通过[w3schools的CSS选择器部分](http://www.w3schools.com/cssref/css_selectors.asp)了解更多内容。
 
-然后，我们需要让HTML文件知道我们增加了一些CSS样式。打开文件`blog/templates/blog/post_list.html`并把这行代码放在HTML文件的开头。
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
