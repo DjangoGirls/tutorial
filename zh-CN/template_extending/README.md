@@ -17,7 +17,7 @@
                 post_list.html
     
 
-然后将它打开，从`post_list.html`中复制所有东西到`base.html`文件，就像这样：
+Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@
 
 But why? 你刚才创建了`block<0>  你使用template 标记<code>{% block %}` 来标记一个区域，这个区域是html格式 这个HTML将要从别的模板中扩展过来 (`base.html`). 我们一会儿将给你展示这个如何使用。
 
-现在保存`base.html` ，再次打开你的 `blog/templates/blog/post_list.html` . {% raw %}你需要一掉任何在 `{% for post in posts %}`之下和 `{% endfor %}`之上的内容. When you're done, the file will look like this:{% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}你需要一掉任何在 `{% for post in posts %}`之下和 `{% endfor %}`之上的内容. When you're done, the file will look like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-好了，就是它了！检查你的网站还能正常工作. :)
+That's it! Save the file, and check if your website is still working properly. :)
 
 > 如果你得到error `TemplateDoesNotExist`, 这个意味着这里没有`blog/base.html`文件，你需要运行`runserver` 在终端中。 Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
