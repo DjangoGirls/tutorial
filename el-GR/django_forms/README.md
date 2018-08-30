@@ -14,7 +14,7 @@
        └── forms.py
     
 
-OK, let's open it and type the following code:
+OK, let's open it in the code editor and type the following code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ So once again we will create a link to the page, a URL, a view and a template.
 
 ## Πως συνδέουμε μια σελίδα με την φόρμα μας
 
-Ανοίξτε το αρχείο `blog/templates/blog/base.html`. Θα προσθέσουμε το λινκ μέσα στο `div` με όνομα `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## URL
 
-We open `blog/urls.py` and add a line:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ After refreshing the site, we see an `AttributeError`, since we don't have the `
 
 ## post_new view
 
-Time to open the `blog/views.py` file and add the following lines with the rest of the `from` rows:
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ To create a new `Post` form, we need to call `PostForm()` and pass it to the tem
 
 ## Πρότυπο
 
-Πρέπει να δημιουργήσουμε ένα αρχείο `post_edit.html` στο κατάλογο `blog/templates/blog`. Για να κάνουμε μια αίτηση εργασίας χρειαζόμαστε αρκετά πράγματα:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * Πρέπει να εμφανίσουμε την αίτηση. Μπορούμε να το κάνουμε αυτό με (για παράδειγμα) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Η παραπάνω γραμμή πρέπει να τυλιχθεί με μία ετικέτα αίτησης HTML: `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ To create a new `Post` form, we need to call `PostForm()` and pass it to the tem
 
 ## Αποθηκεύοντας την αίτηση
 
-Ανοίξτε `blog/views.py` ξανά. Προς το παρόν αυτό που έχουμε στο `post_new` θέα είναι τα ακόλουθα:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-Open `blog/templates/blog/post_detail.html` and add the line
+Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-In `blog/urls.py` we add this line:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ In `blog/urls.py` we add this line:
 
 We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
-Let's open `blog/views.py` and add this at the very end of the file:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! Αλλά τώρα, οποιοσδήποτε επισκεφθεί την σελίδα σας θα μπορεί να φτιάξει μία καινούρια δημοσίευση blog, και αυτό είναι κάτι που πιθανώς δεν θέλετε. Ας το κάνουμε έτσι ώστε το κουμπί εμφανίζεται για εσάς αλλά για κανέναν άλλο.
 
-In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ In `blog/templates/blog/base.html`, find our `page-header` `div` and the anchor 
 
 Θυμάστε το εικονίδιο επεξεργασίας που μόλις προσθέσαμε στην σελίδα λεπτομερειών; Θέλουμε επίσης να προσθέσουμε την ίδια αλλαγή εκεί, ώστε άλλα άτομα δεν θα μπορούν να επεξεργαστούν τις υπάρχουσες δημοσιεύσεις.
 
-Ανοίξτε το `blog/templates/blog/post_detail.html` και βρείτε αυτή τη γραμμή:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
