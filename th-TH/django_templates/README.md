@@ -20,7 +20,7 @@
 {{ posts }}
 ```
 
-ลองแก้ไขไฟล์ template `blog/templates/blog/post_list.html` แทนที่ทุกอย่างจาก `<div>` ที่สอง ไปจนถึง `</div>` ที่สาม โดยแทนที่ด้วย `{{ posts }}` บันทึกไฟล์และโหลดหน้าเว็บอีกครั้งเพื่อดูผลลัพธ์:
+ลองแก้ไขไฟล์ template `blog/templates/blog/post_list.html` Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. บันทึกไฟล์และโหลดหน้าเว็บอีกครั้งเพื่อดูผลลัพธ์:
 
 ![รูปที่ 13.1](images/step1.png)
 
