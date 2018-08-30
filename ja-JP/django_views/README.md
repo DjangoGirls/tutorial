@@ -8,7 +8,7 @@
 
 ## blog/views.py
 
-では、早速 blog/views.py を開いてみましょう。
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
