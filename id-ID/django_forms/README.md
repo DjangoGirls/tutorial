@@ -14,7 +14,7 @@ Kita perlu membuat sebuah file dengan nama tersebut di dalam directory `blog`.
        └── forms.py
     
 
-Baiklah, ayo buka dan ketik kode berikut ini:
+OK, let's open it in the code editor and type the following code:
 
 {% filename%} blog / forms.py {% endfilename%}
 
@@ -40,7 +40,7 @@ Akhirnya, kita dapat menyatakan field-field mana yang akan muncul di dalam form 
 
 <h2>Mengarahkan link menuju sebuah halaman dengan Form</h2>
 
-<p>Sekarang saatnya membuka <code>blog/templates/base.html`. Kita akan menambahkan sebuah link di dalam `div` yang diberi nama `page-header`:
+<p>It's time to open <code>blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename%} blog / templates / blog / base.html {% endfilename%}
 
@@ -84,7 +84,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## URL
 
-Kita buka `blog/urls.py` dan tambahkan baris:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename%} blog / urls.py {% endfilename%}
 
@@ -111,7 +111,7 @@ Setelah menyegarkan situs, kita melihat ` AttributeError </ 0> , karena kita tid
 
 <h2>view post_view</h2>
 
-<p>Sekarang kita buka file <code>blog/views.py` dan tambahkan baris-baris berikut dengan sisa dari baris-baris `rows`: 
+<p>Time to open the <code>blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename%} blog / views.py {% endfilename%}
 
@@ -133,11 +133,9 @@ Untuk membuat sebuah form `post` baru, kita perlu memanggil `PostForm` dan mengi
 
 ## Template
 
-Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `blog/templates/blog</0>. Untuk membuat sebuah form agar berjalan, kita perlu beberapa hal:</p>
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
-<ul>
-<li>We have to display the form. We can do that with (for example) {% raw %}<code>{{ form.as_p }}`{% endraw %}.</li> 
-
+* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Baris di atas tersebut perlu diletakkan di dalam tag form HTML: `<form method="POST">...</form>`.
 * Kita perlu sebuah tombol `Save`. Kita lakukan hal itu dengan sebuah tombol HTML: `<button type="submit">Save</button>`.
 * Dan akhirnya, tepat setelah tag pembuka `<form ...>` kita perlu menambahkan {% raw%} ` {% csrf_token%} </ 1> {% endraw%} . Ini sangat penting, karena akan menjadikan form anda aman! Jika Anda lupa sedikit ini, Django akan mengeluh saat Anda mencoba menyimpan formulir:</li>
@@ -171,14 +169,15 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
 
 <h2>Menyimpan Form</h2>
 
-<p>Buka <code> blog / views.py </ 0> sekali lagi. Saat ini semua yang ada pada tampilan <code> post_new </ 0> adalah sebagai berikut:</p>
-
-<p>{% filename%} blog / views.py {% endfilename%}</p>
-
-<pre><code class="python">def post_new (request):
-     form = PostForm ()
-     mengembalikan render (request, 'blog / post_edit.html', {'form': form} )
-`</pre> 
+<p>Open <code>blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+    
+    {% filename%} blog / views.py {% endfilename%}
+    
+    ```python
+    def post_new (request):
+         form = PostForm ()
+         mengembalikan render (request, 'blog / post_edit.html', {'form': form} )
+    ```
     
     Saat kita mengirimkan formulir, kita dibawa kembali ke tampilan yang sama, tapi kali ini kita memiliki beberapa data lagi di ` request </ 0> , lebih khusus lagi pada permintaan <code> .POST </ 0> (penamaannya telah tidak ada hubungannya dengan blog "post", ada kaitannya dengan fakta bahwa kita "memposting" data). Ingat bagaimana dalam file HTML, definisi <code><form>` kami memiliki variabel ` method = "POST" </ 1> ? Semua field dari from tersebut kini dalam <code>request.POST`. Anda tidak boleh merename `POST` apapun namanya (satu-satunya nilai valed dari `method` adalah `GET`, akan tetapi kami tidak punya cukup waktu untuk menjelaskan perbedaannya).
     
@@ -276,12 +275,13 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
 
 <p>Kini kita tahu bagaimana menambah form baru. Tetapi, bagaimana jika kita ingin mengedit yang sudah ada ? Ini sangat mirip dengan apa yang baru saja kita lakukan. Mari buat beberapa hal penting dengan cepat. (Jika Anda tidak mengerti sesuatu, Anda harus bertanya kepada pelatih Anda atau melihat bab-bab sebelumnya, karena kami telah menyelesaikan semua langkah ini.)</p>
 
-<p>Buka <code> blog / templates / blog / post_detail.html </ 0> dan tambahkan barisnya</p>
-
-<p>{% filename%} blog / templates / blog / post_detail.html {% endfilename%}</p>
-
-<pre><code class="html">&lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt; </ 0>
-`</pre> 
+<p>Open <code>blog/templates/blog/post_detail.html` in the code editor and add the line
+    
+    {% filename%} blog / templates / blog / post_detail.html {% endfilename%}
+    
+    ```html
+    &lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt; </ 0>
+    ```
     
     sehingga template akan terlihat seperti ini:
     
@@ -304,7 +304,7 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
     {% endblock %}
     ```
     
-    Dalam `blog/urls.py` kita tambah baris ini:
+    Open `blog/urls.py` in the code editor, and add this line:
     
     {% filename%} blog / urls.py {% endfilename%}
     
@@ -314,24 +314,25 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
     
     Kita akan menggunakan kembali template `blog/templates/blog/post_edit.html`, sehingga sesuatu yang belum adalah sebuah *view*.
     
-    Mari buka ` blog / views.py </ 0> dan tambahkan ini di bagian akhir file:</p>
-
-<p>{% filename%} blog / views.py {% endfilename%}</p>
-
-<pre><code class="python">def post_edit (request, pk):
-     post = get_object_or_404 (Post, pk = pk)
-     jika request.method == "POST":
-         form = PostForm (request.POST, instance = post)
-         if form.is_valid ():
-             post = form .save (commit = False)
-             post.author = request.user
-             post.published_date = timezone.now ()
-             post.save ()
-             pengalihan kembali ('post_detail', pk = post.pk)
-     else:
-         form = PostForm (instance = post )
-     mengembalikan render (permintaan, 'blog / post_edit.html', {'form': form} )
-`</pre> 
+    Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+    
+    {% filename%} blog / views.py {% endfilename%}
+    
+    ```python
+    def post_edit (request, pk):
+         post = get_object_or_404 (Post, pk = pk)
+         jika request.method == "POST":
+             form = PostForm (request.POST, instance = post)
+             if form.is_valid ():
+                 post = form .save (commit = False)
+                 post.author = request.user
+                 post.published_date = timezone.now ()
+                 post.save ()
+                 pengalihan kembali ('post_detail', pk = post.pk)
+         else:
+             form = PostForm (instance = post )
+         mengembalikan render (permintaan, 'blog / post_edit.html', {'form': form} )
+    ```
     
     Ini tampak hampir sama persis dengan view `post_new` kita, benar ? Tetapi tidak seluruhnya sama persis. Untuk satu, kami melewatkan parameter ` pk </ 0> tambahan dari url. Selanjutnya, kita mendapatkan <code> Post </ 0> model yang ingin kita edit dengan <code> get_object_or_404 (Post, pk = pk) </ 0> dan kemudian, ketika kita membuat sebuah form, kita melewati postingan ini sebagai < 0> contoh </ 0> , saat kita menyimpan form ...</p>
 
@@ -366,7 +367,7 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
 
 <p>Being able to create new posts by clicking a link is awesome! Tapi sekarang, siapa pun yang mengunjungi situs Anda akan dapat membuat posting blog baru, dan itu mungkin bukan sesuatu yang Anda inginkan. Mari kita membuatnya jadi tombol muncul untuk Anda tapi tidak untuk orang lain.</p>
 
-<p>Dalam <code>blog/templates/blog/base.html`, temukan `div` dari `page-header` kita dan anchor tag yang anda letakkan sebelumnya. Tampilannya seharusnya seperti ini:
+<p>Open <code>blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
     
     {% filename%} blog / templates / blog / base.html {% endfilename%}
     
@@ -388,12 +389,13 @@ Kita perlu membuat sebuah file </code>post_edit.html</code> di dalam direktori `
 
 <p>Ingat ikon edit yang baru saja kita tambahkan ke halaman detail kita? Kami juga ingin menambahkan perubahan yang sama di sana, sehingga orang lain tidak dapat mengedit posting yang ada.</p>
 
-<p>Buka <code> blog / templates / blog / post_detail.html </ 0> dan temukan baris ini:</p>
-
-<p>{% filename%} blog / templates / blog / post_detail.html {% endfilename%}</p>
-
-<pre><code class="html">&lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt; </ 0>
-`</pre> 
+<p>Open <code>blog/templates/blog/post_detail.html` in the code editor and find this line:
+    
+    {% filename%} blog / templates / blog / post_detail.html {% endfilename%}
+    
+    ```html
+    &lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt; </ 0>
+    ```
     
     Ubah ke ini:
     
