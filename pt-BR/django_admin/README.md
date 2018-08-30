@@ -2,7 +2,7 @@
 
 Para adicionar, editar e deletar os posts que acabamos de modelar, nós usaremos o admin do Django.
 
-Vamos abrir o arquivo `blog/admin.py` e substituir seu conteúdo por isso:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
