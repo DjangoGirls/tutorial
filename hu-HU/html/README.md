@@ -35,7 +35,7 @@ Nézd meg, hogy néz ki most a weboldal: http://127.0.0.1:8000/
 
 Nincs több hiba! Ügyes vagy :) Azonban a weboldalad csak egy üres oldalt jelenít meg, mivel a template is üres, amit készítettél. Ezt ki kell javítanunk.
 
-Add hozzá az alábbi sorokat a template fájlodhoz:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
