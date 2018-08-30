@@ -2,7 +2,7 @@
 
 W celu dodawania, edycji czy usuwania artykułów, dla których model przed chwilą stworzyłyśmy, użyjemy admina Django.
 
-Otwórzmy plik `blog/admin.py` i zamieńmy jego zawartość na:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
