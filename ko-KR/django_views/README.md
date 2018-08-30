@@ -8,7 +8,7 @@
 
 ## blog/views.py
 
-좋아요. 이제 이 파일을 열고 안에 있는 내용을 살펴봅시다. :
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
