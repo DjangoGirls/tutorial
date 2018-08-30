@@ -12,7 +12,7 @@ Já temos um modelo de `Post`, então não precisamos adicionar nada ao `models.
 
 ## Criando um link para os detalhes de um post
 
-Vamos começar adicionando um link dentro do arquivo `blog/templates/blog/post_list.html`. Por enquanto, ele deve se parecer com isto: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -54,8 +54,7 @@ Vamos criar uma URL em `urls.py` para a nossa `post_detail` *view*!
 
 Queremos que a página de detalhes do nosso primeiro post seja exibida por essa **URL**: http://127.0.0.1:8000/post/1/
 
-Vamos criar uma URL no arquivo `blog/urls.py` que aponta para uma *view* chamada `post_detail`, que vai nos mostrar o post completo. Adicione a linha `url(r'^post/(?P<int:pk>+)/$', views.post_detail, name='post_detail')
- ` ao arquivo `blog/urls.py`. O arquivo deverá ficar assim:
+Vamos criar uma URL no arquivo `blog/urls.py` que aponta para uma *view* chamada `post_detail`, que vai nos mostrar o post completo. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -109,7 +108,7 @@ Hora de adicionar uma *view* ao nosso arquivo `views.py`!
 
 Em `blog/urls.py`, criamos uma regra de URL chamada `post_detail` que se refere a uma view chamada `views.post_detail`. Isto significa que o Django espera uma função chamada `post_detail` dentro de `blog/views.py`.
 
-Vamos abrir `blog/views.py` e adicionar o seguinte código perto das outras linhas `from`:
+We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -139,7 +138,7 @@ Ah não! Outro erro! Mas nós já sabemos como lidar com isso, né? Precisamos a
 
 ## Criando um template para os detalhes do post
 
-Vamos criar um arquivo em `blog/templates/blog` chamado `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
 Ele vai ter essa cara:
 
