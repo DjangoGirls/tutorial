@@ -12,7 +12,7 @@ Už máme `Post` model, takže nepotrebujeme do `models.py` pridávať nič iné
 
 ## Vytvorenie šablóny odkazu na post detail
 
-Začneme s pridaním odkazu v súbore `blog/templates/blog/post_list.html`. Zatiaľ by mal vyzerať takto: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -54,7 +54,7 @@ Vytvorme URL v `urls.py` pre náš `post_detail` *view*!
 
 Chceme, aby sa detaily nášho prvého príspevku zobrazili na tomto **URL**: http://127.0.0.1:8000/post/1/
 
-Vytvorme URL v súbore `blog/urls.py` tak, aby odkazoval Django na *view* nazvaný `post_detail`, ktorý zobrazí celý príspevok blogu. Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. Súbor by mal vyzerať takto:
+Vytvorme URL v súbore `blog/urls.py` tak, aby odkazoval Django na *view* nazvaný `post_detail`, ktorý zobrazí celý príspevok blogu. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_urls.py{% endfilename %}
 
@@ -108,7 +108,7 @@ Dobre, čas pridať *view* do nášho `views.py` súboru!
 
 V `blog/urls.py` sme vytvorili URL pravidlo s názvom `post_detail`, ktoré odkazuje na zobrazenie s názvom `views.post_detail`. To znamená, že Django očakáva zobrazovaciu funkciu s názvom `post_detail` v súbore `blog/views.py`.
 
-Mali by sme otvoriť `blog/views.py` a pridať nasledovný kód ku ostatným `from` riadkom:
+We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Ale nie! Ďalšia chyba! Ale už vieme, s čim mám dočinenia, že? Potrebujeme
 
 ## Vytvor šablónu pre detaily príspevku
 
-Vytvoríme súbor v `blog/templates/blog` s názvom `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
 Bude to vyzerať takto:
 
