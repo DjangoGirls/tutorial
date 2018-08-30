@@ -16,7 +16,7 @@ Det skapades av programmerare som arbetade på Twitter och utvecklas nu av frivi
 
 ## Installera Bootstrap
 
-För att installera Bootstrap, måste du lägga till detta till din `<head>` i din `.html`-fil:
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ I en CSS-fil bestämmer vi stilar för element i HTML-filen. Det första sättet
 
 Du kan läsa mer om [CSS Selektorer hos w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-Vi behöver också berätta för vår HTML-mall att vi har lagt till lite CSS. Öppna filen `blog/templates/blog/post_list.html` och lägg till denna rad i början av den:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
