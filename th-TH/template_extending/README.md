@@ -17,7 +17,7 @@
                 post_list.html
     
 
-จากนั้นเปิดไฟล์และคัดลอกทุกบรรทัดจาก `post_list.html` ไปยังไฟล์ `base.html` แบบนี้:
+Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@
 
 แต่ทำไมล่ะ? คุณเพิ่งสร้าง `block` นี่นา! คุณใช้ template tag `{% block %}` ในการสร้างพื้นที่ที่จะแทรก HTML ไว้ ซึ่ง HTML นั้นจะมาจากอีกเทมเพลตนึงที่ขยายเทมเพลตนี้ (`base.html`) เดี๋ยวเราจะแสดงให้คุณเห็นว่าคุณควรทำยังไง
 
-ตอนนี้ บันทึกไฟล์ `base.html` และเปิดไฟล์ `blog/templates/blog/post_list.html` ขึ้นมาอีกครั้ง {% raw %}คุณกำลังจะลบทุกอย่างก่อน `{% for post in posts %}` และหลัง`{% endfor %}` เมื่อคุณทำสำเร็จ หน้าตาของไฟล์มันจะเป็นแบบนี้: {% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}คุณกำลังจะลบทุกอย่างก่อน `{% for post in posts %}` และหลัง`{% endfor %}` เมื่อคุณทำสำเร็จ หน้าตาของไฟล์มันจะเป็นแบบนี้: {% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@
 {% endblock %}
 ```
 
-เสร็จแล้ว! ลองเช็คดูว่าเว็บเรายังทำงานอยู่มั้ย :)
+That's it! Save the file, and check if your website is still working properly. :)
 
 > ถ้าคอมพิวเตอร์โชว์ว่า `TemplateDoesNotExist` หมายความว่า มันไม่มีไฟล์ `blog/base.html` และคุณมี `runserver` ที่กำลังรันอยู่ในคอนโซล ลองหยุดการทำงานของเซิร์ฟเวอร์ (โดยกดปุ่ม Ctrl+C - ปุ่ม Ctrl และปุ่ม C พร้อมกัน) และรีสตาร์ทเซิร์ฟเวอร์ด้วยการรันคำสั่ง `python manage.py runserver`
