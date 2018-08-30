@@ -79,7 +79,7 @@ Anda akan melihat bahwa sebuah petunjuk `blog` baru dibuat dan berisi sejumlah f
     └── requirements.txt
     
 
-Setelah membuat sebuah aplikasi, kita juga perlu memberitahukan Django bahwa aplikasi tersebut harus menggunakannya. Kami mengerjakan itu di file `Mysite/settings.py`. Kita harus menemukan `INSTALLED_APPS` dan menambahkan baris yang berisikan `'blog',` tepat di atas `]`. Jadi produk akhir akan tampak seperti ini:
+Setelah membuat sebuah aplikasi, kita juga perlu memberitahukan Django bahwa aplikasi tersebut harus menggunakannya. We do that in the file `mysite/settings.py` -- open it in your code editor. Kita harus menemukan `INSTALLED_APPS` dan menambahkan baris yang berisikan `'blog',` tepat di atas `]`. Jadi produk akhir akan tampak seperti ini:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -99,7 +99,7 @@ INSTALLED_APPS = [
 
 Pada file `blog/models.py` kami menemukan semua objek yang disebut `Model` - ini merupakan tempat di mana kita akan menemukan posting blog kita.
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
 
