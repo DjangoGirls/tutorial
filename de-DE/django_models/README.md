@@ -95,7 +95,7 @@ Wie du sehen kannst, wurde ein neues `blog`-Verzeichnis erstellt, welches schon 
     └── requirements.txt
     
 
-Nach dem Erstellen der Applikation müssen wir Django noch sagen, dass diese auch genutzt werden soll. Das stellen wir in der Datei `mysite/settings.py` ein. Wir suchen den Eintrag `INSTALLED_APPS` und fügen darin die Zeile `'blog',` direkt über der schließenden Klammer `]` ein. Danach sollte es also so aussehen:
+Nach dem Erstellen der Applikation müssen wir Django noch sagen, dass diese auch genutzt werden soll. We do that in the file `mysite/settings.py` -- open it in your code editor. Wir suchen den Eintrag `INSTALLED_APPS` und fügen darin die Zeile `'blog',` direkt über der schließenden Klammer `]` ein. Danach sollte es also so aussehen:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -115,7 +115,7 @@ INSTALLED_APPS = [
 
 Alle `Models` unserer Applikation werden in der `blog/models.py`-Datei definiert. Dies ist also der richtige Platz für unser Blogpost-Model.
 
-Öffnen wir also `blog/models.py`, löschen alles darin und schreiben Code wie diesen:
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
 
