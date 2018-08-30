@@ -95,7 +95,7 @@ Djangoのモデルは特別なオブジェクトで、`データベース` に�
     └── requirements.txt
     
 
-アプリケーションを作ったら、Djangoにそれを使うように伝えないといけません。 それは `mysite/settings.py` ファイルの中でやります。 まず `INSTALLED_APPS` を見つけて `]` の上に `'blog'` という一行を追加します。 そうすると、最終的には以下のようになりますね。
+アプリケーションを作ったら、Djangoにそれを使うように伝えないといけません。 We do that in the file `mysite/settings.py` -- open it in your code editor. まず `INSTALLED_APPS` を見つけて `]` の上に `'blog'` という一行を追加します。 そうすると、最終的には以下のようになりますね。
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -115,7 +115,7 @@ INSTALLED_APPS = [
 
 `blog/models.py` ファイルで `Model` と呼ばれるオブジェクトを全て定義します。これがブログポストを定義する場所です。
 
-`blog/models.py` を開いて全部削除し、下のコードを書きましょう。
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
 
