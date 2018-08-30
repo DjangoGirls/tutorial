@@ -17,7 +17,7 @@ Templates help when you want to use the same information or layout in more than 
                 post_list.html
     
 
-এটি ওপেন করার পর `post_list.html` থেকে সবকিছু `base.html` ফাইলে কপি করি, নিচের মত করেঃ
+Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Templates help when you want to use the same information or layout in more than 
 
 But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). আমরা এখন দেখব এটি কীভাবে কাজ করে।
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-ব্যাস! চেক করুন আপনার ওয়েব সাইটের এখনো সঠিকভাবে কাজ করছে কিন. :)
+That's it! Save the file, and check if your website is still working properly. :)
 
 > If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
