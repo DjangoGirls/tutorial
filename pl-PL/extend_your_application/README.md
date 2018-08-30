@@ -12,7 +12,7 @@ Mamy już model `Post`, więc nie musimy już dodawać niczego do `models.py`.
 
 ## Tworzenie szablonu odnośnika do detali wpisu na blogu
 
-Zaczniemy od dodania linku w pliku `blog/templates/blog/post_list.html`. Póki co powinien on wyglądać następująco: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -54,7 +54,7 @@ Dodajmy adres URL w pliku `urls.py` dla naszego *widoku (ang.view)* `post_detail
 
 Chcemy, aby nasz wpis i wszystkie informacje o nim, były widoczne pod tym adresem **URL**: http://127.0.0.1:8000/post/1/
 
-W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Dodaj wiersz `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` w pliku `blog/urls.py`. Jego zawartość powinna wyglądać tak:
+W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -108,7 +108,7 @@ OK, czas dodać nasz *widok* do naszego pliku `views.py`!
 
 W `blog/urls.py` stworzyłyśmy regułę URL, którą nazwałyśmy `post_detail` i która odnosi się do widoku `views.post_detail`. Oznacza to że Django będzie oczekiwało funkcji widoku o nazwie `post_detail` w pliku `blog/views.py`.
 
-Powinnyśmy otworzyć `blog/views.py` i dodać poniższy kod nidaleko innych linii z `from`:
+We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ O nie! Kolejny błąd! Ale wiemy już, jak sobie z nim poradzić, prawda? Musimy
 
 ## Stwórzmy szablon dla poszczególnego wpisu
 
-Stwórzmy plik w `blog/templates/blog` o nazwie `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
 Będzie to wyglądać tak:
 
