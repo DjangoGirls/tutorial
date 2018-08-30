@@ -14,7 +14,7 @@ Nous allons devoir créer un fichier avec ce nom dans notre dossier `blog`.
        └── forms.py
     
 
-Ouvrez maintenant ce fichier et tapez le code suivant :
+OK, let's open it in the code editor and type the following code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ Nous allons donc une nouvelle fois suivre le processus suivant et créer : un li
 
 ## Lien vers une page contenant le formulaire
 
-C'est le moment d'ouvrir le fichier `blog/templates/blog/base.html`. Nous allons ajouter un lien dans une `div` nommé `page-header` :
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## URL
 
-Ouvrez le fichier `blog/urls.py` et ajoutez cette ligne :
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Une fois la page rechargée, vous allez voir une `AttributeError`, ce qui est no
 
 ## La vue post_new
 
-Ouvrez maintenant le fichier `blog/views.py` et ajoutez les lignes suivantes avec celles du `from` qui existent déjà :
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Afin de pouvoir créer un nouveau formulaire `Post`, nous avons besoin d'appeler
 
 ## Template
 
-Pour cela, nous avons besoin de créer un fichier `post_edit.html` dans le dossier `blog/templates/blog`. Afin que notre formulaire fonctionne, nous avons besoin de plusieurs choses :
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * Nous avons besoin d'afficher le formulaire. Pour cela, nous n'avons qu'à utiliser {% raw %}`{{ form.as_p }}`{% endraw %}.
 * La ligne précédente va avoir besoin d'être enveloppée des balises HTML `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ La réponse est encore : rien ! Nous avons juste encore un peu de travail à acc
 
 ## Sauvegarder le contenu du formulaire
 
-Ouvrez à nouveau `blog/views.py`. Actuellement, `post_new` n'est composé que des lignes de code suivantes :
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django va s'occuper de la validation : il va regarder si tous les champs de notr
 
 Maintenant, nous savons comment ajouter un nouveau formulaire. Comment faire si nous voulons éditer un formulaire déjà existant ? C'est très similaire à ce que nous venons de faire. Tout d'abord, faisons rapidement quelques choses importantes. (Si vous ne comprenez pas quelque chose, vous devriez demander à votre entraîneur ou regarder les chapitres précédents, car nous avons déjà traité toutes ces étapes.)
 
-Ouvrez le fichier `blog/templates/blog/post_detail.html` et ajoutez la ligne suivante :
+Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ Votre template doit ressembler à ceci :
 {% endblock %}
 ```
 
-Maintenant, dans `blog/urls.py`, ajoutez cette ligne :
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ Maintenant, dans `blog/urls.py`, ajoutez cette ligne :
 
 Nous allons réutiliser le template de `blog/templates/blog/post_edit.html`. Il ne va donc nous manquer qu'une *vue*.
 
-Ouvrons `blog/views.py` et ajoutons à la toute fin du fichier :
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas �
 
 Being able to create new posts by clicking a link is awesome! Mais maintenant, toute personne visitant votre site sera en mesure de créer un nouveau blog, et ce n'est peut-être pas ce que vous voulez. Faisons en sorte que les boutons apparaissent pour vous mais pas pour les autres.
 
-Dans `blog/templates/blog/base.html`, trouvez notre `page-header` `div` et la balise ancre que vous y avez mis plus tôt. Ça doit ressembler à ça :
+Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Ce `{% if %}` fait en sorte de n’envoyer le lien au navigateur que si l’util
 
 Rappelez-vous l'icône de modification que nous venons d'ajouter à notre page de détails? Nous souhaitons également ajouter les mêmes modifications, afin que les autres utilisateurs ne puissent pas modifier les publications existantes.
 
-Ouvrez le fichier `blog/templates/blog/post_detail.html` et ajoutez la ligne suivante :
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
