@@ -35,7 +35,7 @@ HTML代表“HyperText Markup Language（超文本标记语言）”。 **超文
 
 再也没有错误了 ！祝贺:)然而，您的网站实际上并没有展现任何东西出了一个空白页，因为您的模板也是空。我们需要解决这个问题。
 
-在您的模板文件中添加以下内容：
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
