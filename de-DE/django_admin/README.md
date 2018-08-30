@@ -2,7 +2,7 @@
 
 Wir benutzen den Django-Admin, um die soeben modellierten Posts hinzuzufügen, zu ändern oder zu löschen.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Öffne die Datei `blog/admin.py` im Code-Editor und ersetze den Inhalt wie folgt:
 
 {% filename %}blog/admin.py{% endfilename %}
 
