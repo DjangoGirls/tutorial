@@ -17,7 +17,7 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
                 post_list.html
     
 
-それから、以下のように`post_list.html`から`base.html`ファイルにすべてコピーしましょう。
+Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
 
 でも何のために？ あなたはただ`block`を作っただけです！ `{% block %}` テンプレートタグを、これからHTMLを挿入しようとする場所に使いました。 そのHTMLはこのテンプレート (`base.html`) を拡張した別のテンプレートからやってきます。 どうやって行うかはすぐに示します。
 
-`base.html` を保存し、もう一度 `blog/templates/blog/post_list.html` を開きます。 {% raw %} `{% for post in posts %}` の上と `{% endfor %}` の下すべてを削除しましょう。 それが終わったら以下のようになっていると思います。{% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %} `{% for post in posts %}` の上と `{% endfor %}` の下すべてを削除しましょう。 それが終わったら以下のようになっていると思います。{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
 {% endblock %}
 ```
 
-以上です！ウェブサイトがまだちゃんと動いているか確認しましょう。:)
+That's it! Save the file, and check if your website is still working properly. :)
 
 > もし `TemplateDoesNotExist` というエラーが出ていたら、 `blog/base.html` ファイルがないという意味で、コンソールで `runserver` が実行されたままになっていると思います。 これを止め(Ctrl+C - ControlとCのキーを同時押し)、それから `python manage.py runserver`コマンドを入力して再度サーバーを動かしてみてください。
