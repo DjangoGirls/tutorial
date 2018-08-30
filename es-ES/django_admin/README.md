@@ -2,7 +2,7 @@
 
 Para agragar, editar y borrar los posts que hemos modelado, usaremos el administrador (admin) de Django.
 
-Abre el archivo `blog/admin.py` y remplaza su contenido con esto:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
