@@ -35,7 +35,7 @@ Tingnan kung ano ang hitsura ng iyong website ngayon: http://127.0.0.1:8000/
 
 Wala nang error! Binabati kita :) Subalit, ang iyong website ay walang pina-publish na kahit ano maliban sa isang page na walang laman, dahil ang iyong template ay wala ring laman. Kailangan natin itong ayusin.
 
-Idagdag ang sumusunod sa iyong template na file:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
