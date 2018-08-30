@@ -95,7 +95,7 @@ Zauważysz, że nowy katalog `blog` został utworzony i zawiera kilka plików. K
     └── requirements.txt
     
 
-Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Posługujemy się w tym celu plikiem `mysite/settings.py`. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `]`. Czyli efekt końcowy powinien wyglądać tak:
+Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. We do that in the file `mysite/settings.py` -- open it in your code editor. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `]`. Czyli efekt końcowy powinien wyglądać tak:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -115,7 +115,7 @@ INSTALLED_APPS = [
 
 W pliku `blog/models.py` definiujemy wszystkie obiekty zwane `Models` - jest to miejsce, w którym będziemy definiować nasz wpis na blogu.
 
-Otwórz plik `blog/models.py`, usuń z niego całą zawartość i napisz taki kod:
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
 
