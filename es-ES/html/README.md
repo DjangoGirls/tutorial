@@ -35,7 +35,7 @@ Mira cómo se ve su sitio web ahora: http://127.0.0.1:8000/
 
 ¡Ningún error más! Felicidades :) Sin embargo, por ahora, tu sitio web no está publicando nada excepto una página en blanco, porque la plantilla también está vacía. Tenemos que arreglarlo.
 
-Añade lo siguiente a tu archivo de plantilla:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
