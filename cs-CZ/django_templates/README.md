@@ -20,7 +20,7 @@ V Django šabloně se proměnná vypíše pomocí dvojitých složených závore
 {{ posts }}
 ```
 
-Zkus to ve své šabloně `blog/templates/blog/post_list.html`. Nahraď vše od druhého `<div>` do třetího `</div>` řádkou `{{ posts }}`. Ulož soubor a obnov stránku, abys viděla výsledek:
+Zkus to ve své šabloně `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Ulož soubor a obnov stránku, abys viděla výsledek:
 
 ![Figure 13.1](images/step1.png)
 
