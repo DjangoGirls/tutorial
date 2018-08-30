@@ -20,7 +20,7 @@ Django şablonunda (template) bir değişken (variable) yazdırmak için, deği�
 {{ posts }}
 ```
 
-Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. İkinci `<div>`'den üçüncü `</div>`'e kadar olan her şeyi `{{ posts }}` ile değiştirelim. Ne olduğunu görmek için dosyayı kaydedip sayfayı yenileyelim:
+Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Ne olduğunu görmek için dosyayı kaydedip sayfayı yenileyelim:
 
 ![Şekil 13.1](images/step1.png)
 
