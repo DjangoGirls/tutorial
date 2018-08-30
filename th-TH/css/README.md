@@ -16,7 +16,7 @@ Bootstrap เป็นหนึ่งใน frameworks ภาษา HTML แล�
 
 ## ติดตั้ง Bootstrap
 
-การติดตั้ง Bootstrap คุณต้องเพิ่มสิ่งนี้ `<head>`ในไฟล์ `.html` ของคุณ:
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ h1 a {
 
 คุณสามารถอ่านเพิ่มเติมได้ที่นี่ [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp)
 
-จากนั้น เราต้องบอกเทมแพลต HTML ของเราให้เพิ่ม CSS เข้าไป โดย เปิดไฟล์ `blog/templates/blog/blog_list.html` และเพิ่มบรรทัดนี้ที่ต้นไฟล์:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
