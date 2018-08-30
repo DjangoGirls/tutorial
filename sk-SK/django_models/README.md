@@ -100,7 +100,7 @@ Uvidíš, že pribudne nový adresár `blog`, ktorý obsahuje množstvo súborov
     └── requirements.txt
     
 
-Po vytvorení aplikácie tiež musíš Djangu povedať, že ju má použiť. To urobíme v súbore `mysite/settings.py`. Musíme nájsť `INSTALLED_APPS` a pridať riadok obsahujúci `'blog'` tesne pred uzatváraciu zátvorku`]`. Takže výsledok nášho snaženia bude vyzerať takto:
+Po vytvorení aplikácie tiež musíš Djangu povedať, že ju má použiť. We do that in the file `mysite/settings.py` -- open it in your code editor. Musíme nájsť `INSTALLED_APPS` a pridať riadok obsahujúci `'blog'` tesne pred uzatváraciu zátvorku`]`. Takže výsledok nášho snaženia bude vyzerať takto:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -120,7 +120,7 @@ INSTALLED_APPS = [
 
 V súbore `blog/models.py` definujeme všetky objekty, ktoré sa nazývajú `modely` - na tomto mieste definujeme náš blog post.
 
-Otvor `blog/models.py`, všetko z neho odstráň a napíš nasledovný kód:
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
 
