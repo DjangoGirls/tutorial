@@ -16,7 +16,7 @@ Bootstrap は美しいWebサイトを開発するためのHTMLとCSSのフレー
 
 ## Bootstrapのインストール
 
-Bootstrapをインストールするには `.html` ファイル (blog/templates/blog/post_list.html) の `<head>` の中に、次のとおり書き加えます：
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ CSSファイルには、HTMLファイルの各要素のスタイルを指定し�
 
 CSSセレクタについては[CSS Selectors in w3schools](http://www.w3schools.com/cssref/css_selectors.asp)を見てください。
 
-さて、CSSを追加したことをHTMLテンプレートに教えないといけません。`blog/templates/blog/post_list.html` を開いて、先頭にこの行を追加しましょう：
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
