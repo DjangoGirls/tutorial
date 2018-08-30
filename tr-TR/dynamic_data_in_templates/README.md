@@ -6,7 +6,7 @@ Bu tam olarak *view*'lerin yapmasını beklediğimiz şey: modelleri ve template
 
 Tamam, peki nasıl yapacağız?
 
-`blog/views.py`'ı açacağız. Şu anda `post_list` *view*'ı şöyle:
+We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ QuerySet'in nasıl çalıştığı konusunda bir fikriniz oluşmuştur. [Django 
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Şimdi `blog/views.py` dosyası içindeki bu kodu `def post_list(request)` fonksiyonu ekleyin ama öncelikle `from django.utils import timezone` eklemeyi unutmayın:
+So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 
