@@ -8,7 +8,7 @@ Les vues sont placées dans le fichier `views.py`. Nous allons créer nos *vues*
 
 ## blog/views.py
 
-Ok, allons-y ! Ouvrons ce fichier pour voir ce qu'il contient :
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
