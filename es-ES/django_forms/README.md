@@ -14,7 +14,7 @@ Necesitamos crear un archivo con este nombre en el directorio `blog`.
        └── forms.py
     
 
-Ok, ábrelo y escribe el siguiente código:
+OK, let's open it in the code editor and type the following code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ Una vez más vamos a crear: un enlace a la página, una dirección URL, una vist
 
 ## Enlace a una página con el formulario
 
-Es hora de abrir `blog/templates/blog/base.html`. Vamos a añadir un enlace en un `div` llamado `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/post_base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## URL
 
-Abrimos `blog/urls.py` y añadimos una línea:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Después de actualizar el sitio, veremos un `AttributeError`, puesto que no tene
 
 ## Vista post_new
 
-Es el momento de abrir el archivo `blog/views.py` y agregar las siguientes líneas al resto de las filas `from`:
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Para crear un nuevo formulario `Post`, tenemos que llamar a `PostForm()` y pasar
 
 ## Plantilla
 
-Tenemos que crear un archivo `post_edit.html` en el directorio `blog/templates/blog`. Para hacer que un formulario funcione necesitamos varias cosas:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * Tenemos que mostrar el formulario. Podemos hacerlo, por ejemplo, con un sencillo {% raw %}`{{ form.as_p }}`{% endraw %}.
 * La línea anterior tiene que estar dentro de una etiqueta de formuLario HTML: `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ La respuesta es: nada. Tenemos que trabajar un poco más en nuestra *vista*.
 
 ## Guardar el formulario
 
-Abre `blog/views.py` una vez más. Actualmente, lo que tenemos en la vista `post_new` es lo siguiente:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django se encarga de validar que todos los campos en el formulario estén correc
 
 Ahora sabemos cómo agregar un nuevo formulario. Pero, ¿qué pasa si queremos editar uno existente? Es muy similar a lo que acabamos de hacer. Creemos rápidamente algunas cosas importantes. (si no entiendes algo, pregúntale a tu tutora o tutor, o revisa lo capítulos anteriores, son temas que ya hemos cubierto.)
 
-Abre el archivo `blog/templates/blog/post_detail.html` y añade esta línea
+Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ para que la plantilla se mire así:
 {% endblock %}
 ```
 
-En el archivo `blog/urls.py` añadimos esta línea:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ En el archivo `blog/urls.py` añadimos esta línea:
 
 Vamos a reusar la plantilla `blog/templates/blog/post_edit.html`, así que lo último que nos falta es una *view*.
 
-Abramos el archivo `blog/views.py` y añadamos esta línea al final:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! Pero, ahora mismo, cualquiera que visite tu página podría publicar un nuevo post y seguro que eso no es lo que quieres. Vamos a hacer que el botón sea visible para ti pero no para nadie más.
 
-En `blog/templates/blog/base.html`, buscar el `div` `page-header` y la etiqueta de enlace que has puesto ahí antes. Debería ser algo como:
+Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Este `{% if %}` hará que el enlace sólo se envíe al navegador si el usuario q
 
 Recuerdas el icono de "editar" que acabamos de añadir a nuestra pagina de detalles? También queremos añadir lo mismo aquí, así otras personas no podrán editar posts existentes.
 
-Abre el archivo `blog/templates/blog/post_detail.html` y encuentra esta línea:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
