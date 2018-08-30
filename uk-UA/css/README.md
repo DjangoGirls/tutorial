@@ -16,7 +16,7 @@ It was written by programmers who worked for Twitter. Now it's developed by volu
 
 ## Встановлюємо Boostrap
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ h1 a {
 
 You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file and add this line at the very beginning of it:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
