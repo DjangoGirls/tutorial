@@ -8,7 +8,7 @@ Le views vengono collocate nel file `views.py`. Noi aggiungeremo le nostre *view
 
 ## blog/views.py
 
-OK, apriamo questo file e scopriamo cosa c'è dentro:
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
