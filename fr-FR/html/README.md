@@ -35,7 +35,7 @@ Allons regarder à quoi ressemble notre site maintenant : http://127.0.0.1:8000/
 
 Et voilà, il n'y a plus d'erreurs ! Bravo :) Cependant, notre site ne peut rien faire d'autre pour le moment qu'afficher une page blanche. La faute à notre template que nous avons laissé vide. Allons corriger ça.
 
-Ajoutez ce qui suit à votre fichier template :
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
