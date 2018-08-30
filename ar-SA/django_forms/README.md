@@ -14,7 +14,7 @@
        └── forms.py
     
 
-حسنا، دعونا نفتحه ونكتب التعليمة البرمجية التالية:
+OK, let's open it in the code editor and type the following code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ We need to import Django forms first (`from django import forms`) and our `Post`
 
 ## رابط لصفحة مع الشكل
 
-حان الوقت لفتح `blog/templates/blog/base.html` سنضيف رابط في `div` بإسم `page-header`:
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## عنوان الموقع URL
 
-نفتح `blog/urls.py` وإضافة سطر:
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ urlpatterns = [
 
 ## عرض post_new
 
-حان الوقت لفتح `blog/views.py` واضافة الأسطر التالية مع بقية اسطر `from`:
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ def post_new(request):
 
 ## القالب
 
-نحن بحاجة إلى إنشاء ملف `post_edit.html` في الدليل `blog/templates/blog`. لإنشاء نموذج العمل نحن بحاجة إلى عدة أشياء:
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * علينا عرض الشكل. يمكننا أن نفعل ذلك عبر (على سبيل المثال{% raw %}`{{ form.as_p }}`{% endraw %}.
 * السطر أعلاه يحتاج إلى أن يكون ملفوف مع علامة نموذج HTML: `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ def post_new(request):
 
 ## حفظ الشكل
 
-أفتح `blog/views.py` مرة أخرى. حاليا كل ما لدينا في `post_new` هو ما يلي:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ def post_new(request):
 
 الأن نعرف كيف نضيف شكل جديد. لكن ماذا لو اردنا تحرير شكل موجود مسبقا؟ هذا مشابه جدا لما قمنا به. لنقم بإنشاء بعض الأمور الهامة بسرعة. (إذا كنت لا تفهم شيئا، يجب أن تسأل المدرب الخاص بك أو تنظر في الفصول السابقة، لأننا غطينا جميع هذه الخطوات مسبقاً.)
 
-افتح `blog/templates/blog/post_detail.html` واضف السطر
+Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ def post_new(request):
 {% endblock %}
 ```
 
-وفي `blog/urls.py` نضيف هذا السطر:
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ def post_new(request):
 
 سوف نعيد استخدام القالب `blog/templates/blog/post_edit.html`، آخر شيء مفقود هو طريقة*view*.
 
-دعونا نفتح `blog/views.py` وإضافة هذا في نهاية الملف:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! ولكن في الوقت الراهن، أي شخص يقوم بزيارة موقع الويب الخاص بك سوف يكون قادر على انشاء مشاركة جديدة، وهذا شيء ربما لا تريده. دعونا تجعل الزر يظهر لك و ليس لأي شخص آخر.
 
-في `blog/templates/blog/base.html`، تجد لدينا `page-header` `div` وعلامة مرساة كانت قد وضعت هناك مسبقا. ينبغي أن تبدو مثل هذا:
+Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Being able to create new posts by clicking a link is awesome! ولكن في ال
 
 هل تذكر رمز التعديل الذي أضفناه للتو إلى صفحة التفاصيل؟ نريد أيضا إضافة التغيير نفسه هناك، حتى لا يتمكن الأشخاص الآخرون من تعديل المشاركات الحالية.
 
-افتح `blog/templates/blog/post_detail.html` واضف السطر:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
