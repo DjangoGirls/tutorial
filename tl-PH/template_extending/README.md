@@ -17,7 +17,7 @@ Gumawa tayo ng isang `base.html` na file sa `blog/templates/blog/`:
                 post_list.html
     
 
-Pagkatapos ay buksan ito at kopyahin lahat mula sa `post_list.html` sa `base.html` na file, kagaya nito:
+Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Pagkatapos, sa `base.html`, palitan ang iyong kabuuang `<body>` (everything betw
 
 Pero bakit? Ikaw ay nakagawa ng isang `block`! Ginamit mo ang template tag na `{% block %}` upang gumawa ng lugar na magkakaroon ng HTML na nakalakip dito. Ang HTML na ito ay manggagaling sa ibang template na ini-extend ang template na ito (`base.html`). Ipapakita namin sa iyo kung paano ito gawin maya-maya.
 
-Ngayon, i-save ang `base.html` at buksan ang `blog/templates/blog/post_list.html` ulit. {% raw %}Tatanggalin mo ang lahat ng nasa taas ng `{% for post in posts %}` at sa baba `{% endfor %}`. Kapag tapos ka na, ang file ay magiging kagaya nito: {% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}Tatanggalin mo ang lahat ng nasa taas ng `{% for post in posts %}` at sa baba `{% endfor %}`. Kapag tapos ka na, ang file ay magiging kagaya nito: {% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Isang bagay na lang ang natira. Kailangan nating ikonekta ang dalawang templates
 {% endblock %}
 ```
 
-Iyan na! Tingnan ang iyong website kung gumagana pa rin ito. :)
+That's it! Save the file, and check if your website is still working properly. :)
 
 > Kung may nakuha kang error na `TemplateDoesNotExist`, ibig sabihin ay walang `blog/base.html` na file at ang `runserver` ay tumatakbo sa iyong console. Subukang ihinto ito (sa pamamagitan ng pag-pindut ng Ctrl+C - ang Control at ang C na mga key ng sabay) at i-start itong muli sa pamamagitan ng pagpapatakbo ng isang `python manage.py runserver` na pag-uutos.
