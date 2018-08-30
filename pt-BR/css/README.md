@@ -16,7 +16,7 @@ Foi escrito por programadores que já trabalharam no Twitter e agora é desenvol
 
 ## Instalar o Bootstrap
 
-Para instalar o Bootstrap, você precisa adicionar o seguinte código no `<head>` dentro do seu arquivo `.html`:
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ Em um arquivo CSS, nós determinamos estilos para elementos do arquivo HTML. A p
 
 Você pode ler mais sobre [Seletores CSS no w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-Nós também precisamos dizer ao nosso template HTML que adicionamos algum CSS. Abra o arquivo `blog/templates/blog/post_list.html` e adicione esta linha bem no começo dele:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
