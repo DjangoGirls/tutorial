@@ -16,13 +16,14 @@ Itu ditulis oleh programmer yang bekerja untuk Twitter. Sekarang dikembangkan ol
 
 ## Memasang Bootstrap
 
-Untuk menginstal Bootstrap, Anda perlu menambahkan ini ke `<head>` di file ` .html </ 1> Anda :</p>
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
-<p>{% filename%} blog / templates / blog / post_list.html {% endfilename%}</p>
+{% filename%} blog / templates / blog / post_list.html {% endfilename%}
 
-<pre><code class="html"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
+```html
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-`</pre> 
+```
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
@@ -81,12 +82,13 @@ Kami juga mengidentifikasi elemen dengan atribut <code> class </ 0> atau atribut
 
 Anda dapat membaca lebih lanjut tentang  CSS Selectors di w3schools </ 0> .</p> 
 
-Kita juga perlu memberi tahu template HTML kita bahwa kita menambahkan beberapa CSS. Buka file ` blog / templates / blog / post_list.html </ 0> dan tambahkan baris ini di awal saja:</p>
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
-<p>{% filename%} blog / templates / blog / post_list.html {% endfilename%}</p>
+{% filename%} blog / templates / blog / post_list.html {% endfilename%}
 
-<pre><code class="html">{% load static %}
-`</pre> 
+```html
+{% load static %}
+```
 
 Kami hanya memuatkan file statis di sini. :) Antara tag `<head>` dan ` </ 2> </ 1> , setelah link ke file CSS Bootstrap, tambahkan baris ini:</p>
 
