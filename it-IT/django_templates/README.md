@@ -20,7 +20,7 @@ Per stampare una variabile nel template Django, usiamo doppie parentesi graffe c
 {{ posts }}
 ```
 
-Prova ad inserirlo nel tuo template `blog/templates/blog/post_list.html`. Sostituisci tutto dal secondo `<div>` al terzo `</div>` con `{{ posts }}`. Salva il file e aggiorna la pagina per vedere i risultati:
+Prova ad inserirlo nel tuo template `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Salva il file e aggiorna la pagina per vedere i risultati:
 
 ![Figura 13.1](images/step1.png)
 
