@@ -69,7 +69,7 @@ Django wird nun alle Aufrufe von 'http://127.0.0.1:8000/' auf `blog.urls` umleit
 
 ## blog.urls
 
-Erstelle eine neue leere Datei namens `urls.py` im `blog`- Verzeichnis. Alles klar! Füge die ersten beiden Zeilen ein:
+Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
 
 {% filename %}blog/urls.py{% endfilename %}
 
