@@ -6,7 +6,7 @@ Ito ang eksaktong dapat gawain ng *views*: magkonek sa mga model at mga template
 
 Sige, kaya paano natin magagawa ito?
 
-Kailangan nating buksan ang `blog/views.py`. Sa ngayon ganito ang itsura na ating `post_list` na *view*:
+We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ Ngayon, gusto natin na ang nalathala na mga blog posts ay nasuri ayon sa pagkasu
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Ngayon ilagay natin ang pirasong code na ito sa loob ng `blog/views.py` na file sa pamamagitan ng pagdagdag nito sa function na `def post_list(request)`, pero huwag kalimutang idagdag muna ang `from django.utils import timezone`:
+So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 
