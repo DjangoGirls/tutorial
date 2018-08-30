@@ -35,7 +35,7 @@ Popatrz, jak Twoja strona wygląda teraz: http://127.0.0.1:8000/
 
 Nie ma błędu! Gratulacje! :) Niestety, twoja aplikacja nie wyświetla niczego poza pustą stroną, ponieważ Twój szablon również jest pusty. Naprawmy to.
 
-Dodaj następującą treść w pliku z szablonem:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
