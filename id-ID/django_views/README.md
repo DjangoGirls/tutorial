@@ -8,7 +8,7 @@ A * view </ 0> adalah tempat kita meletakkan "logika" aplikasi kita. Ini akan me
 
 <h2>blog / views.py</h2>
 
-<p>Baiklah, mari kita buka file ini dan lihat apa yang ada di dalamnya:</p>
+<p>OK, let's open up this file in our code editor and see what's in there:</p>
 
 <p>{% filename%} blog / views.py {% endfilename%}</p>
 
