@@ -17,7 +17,7 @@ Stwórzmy plik `base.html` w `blog/templates/blog/`:
                 post_list.html
     
 
-Następnie otwórz go i skopiuj całą zawartość pliku `post_list.html` do pliku `base.html`, w taki sposób:
+Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Następnie, w `base.html`, zamień całą zawartość `<body>` (wszystko, co zna
 
 Ale czemu? Właśnie stworzyłaś `block`! Użyłaś znacznika szablonu `{% block %}` by zaznaczyć obszar, w który zostanie wstawiony HTML. Ten HTML będzie pochodził z innego szablonu, który rozszerza ten szablon (`base.html`). Za chwilę pokażemy Ci, jak to się robi.
 
-To teraz zapisz `base.html` i otwórz ponownie swój `blog/templates/blog/post_list.html`. {% raw %}Usuniemy teraz wszystko powyżej `{% for post in posts %}` i poniżej `{% endfor %}`. Jak to zrobisz, plik będzie wyglądać tak:{% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}Usuniemy teraz wszystko powyżej `{% for post in posts %}` i poniżej `{% endfor %}`. Jak to zrobisz, plik będzie wyglądać tak:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Została jeszcze jedna rzecz. Musimy połączyć te dwa szablony razem. To wła�
 {% endblock %}
 ```
 
-I już! Sprawdź, czy twoja strona nadal działa poprawnie. :)
+That's it! Save the file, and check if your website is still working properly. :)
 
 > Jeżeli dostaniesz błąd `TemplateDoesNotExist`, oznacza to, że nie ma jesze pliku `blog/base.html` i jednocześnie w konsoli działa uruchomiony `runserver`. Spróbuj go zatrzymać (wciskając Ctrl+C - czy razem klawisze Control i C) i uruchomić ponownie przy użyciu polecenia `python manage.py runserver`.
