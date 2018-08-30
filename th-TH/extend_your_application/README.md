@@ -12,7 +12,7 @@
 
 ## สร้าง template ที่แสดงหน้ารายละเอียดของโพสต์
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -54,7 +54,7 @@ And how about `pk=post.pk`? `pk` is short for primary key, which is a unique nam
 
 เราต้องการให้ละเอียดของโพสต์แรกของเรา แสดงที่นี่ **URL**: http://127.0.0.1:8000/post/1/
 
-เรามาสร้าง URL ในไฟล์ `blog/urls.py` ที่ชี้ให้ Django ไปยัง *view* ที่ใช้ชื่อ `post_detail`, ซึ่งจะแสดงหน้าโพสต์ Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. ตอนนี้ ไฟล์ของคุณควรมีหน้าตาแบบนี้:
+เรามาสร้าง URL ในไฟล์ `blog/urls.py` ที่ชี้ให้ Django ไปยัง *view* ที่ใช้ชื่อ `post_detail`, ซึ่งจะแสดงหน้าโพสต์ Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -108,7 +108,7 @@ Post.objects.get(pk=pk)
 
 In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
-We should open `blog/views.py` and add the following code near the other `from` lines:
+We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ def post_detail(request, pk):
 
 ## สร้าง template ที่แสดงหน้ารายละเอียดของโพสต์
 
-เราจะสร้างไฟล์ใน `blog/templates/blog` ที่ชื่อ `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
 ผลลัพธ์ควรมีหน้าตาแบบนี้:
 
