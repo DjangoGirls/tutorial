@@ -16,7 +16,7 @@ Es wurde ursprünglich von ProgrammiererInnen bei Twitter geschrieben. Heute wir
 
 ## Bootstrap installieren
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Öffne dein `.html` in deinem Code-Editor und füge Folgendes zum `<head>`-Abschnitt hinzu, um Bootstrap zu installieren:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg
 
 [Auf w3schools](http://www.w3schools.com/cssref/css_selectors.asp) erfährst du mehr über CSS-Selektoren.
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Wir müssen unserem HTML-Template noch mitteilen, dass wir etwas CSS hinzugefügt haben. Öffne die Datei `blog/templates/blog/post_list.html` im Code-Editor und füge folgende Zeile ganz am Anfang der Datei ein:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
