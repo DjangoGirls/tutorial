@@ -20,7 +20,7 @@ Para imprimir una variable en una plantilla de Django, utilizamos llaves dobles 
 {{ posts }}
 ```
 
-Prueba esto en la plantilla `blog/templates/blog/post_list.html`. Sustituye todo desde el segundo `<div>` al tercer `</div>` por `{{ posts }}`. Guarda el archivo y refresca la página para ver los resultados:
+Prueba esto en la plantilla `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Guarda el archivo y refresca la página para ver los resultados:
 
 ![Figura 13.1](images/step1.png)
 
