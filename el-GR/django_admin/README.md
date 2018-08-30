@@ -2,7 +2,7 @@
 
 Για να προσθέσουμε, επεξεργαστούμε και να διαγράψουμε τις δημοσιεύσεις που έχουμε αναπτύξει, θα χρησιμοποιήσουμε τον διαχειριστή Django.
 
-Ας ανοίξουμε το αρχείο `blog/admin.py` και ας αντικαταστήσουμε τα περιεχόμενα του με αυτό:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
