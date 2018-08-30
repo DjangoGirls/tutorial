@@ -20,7 +20,7 @@
 {{ posts }}
 ```
 
-Попробуй это в шаблоне `blog/templates/blog/post_list.html`. Замени всё, начиная со второго `<div>` и вплоть до третьего `</div>` кодом `{{ posts }}`. Сохрани файл и обнови страницу, чтобы увидеть результат:
+Попробуй это в шаблоне `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Сохрани файл и обнови страницу, чтобы увидеть результат:
 
 ![Рисунок 13.1](images/step1.png)
 
