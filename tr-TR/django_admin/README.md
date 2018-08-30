@@ -2,7 +2,7 @@
 
 Az önce modellediğimiz gönderilere ekleme, düzenleme ya da silme işlemi yapmak için Django admini kullanacağız.
 
-Şimdi `blog/admin.py` dosyasını açarak içeriği bununla değiştirelim:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
