@@ -16,7 +16,7 @@ Bootstrap - один из самых популярных HTML и CSS фрейм
 
 ## Установка Bootstrap
 
-Для установки Bootstrap необходимо добавить в `<head>` твоего `.html` файла следующее:
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -87,7 +87,7 @@ h1 a {
 
 Вы можете прочитать больше о CSS селекторах на [w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-Затем нам также нужно сообщить нашему HTML-шаблону о том, что мы добавили CSS. Открой файл `blog/templates/blog/post_list.html` и добавь эту строку в самом начале:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
