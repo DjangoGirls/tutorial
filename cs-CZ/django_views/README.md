@@ -8,7 +8,7 @@ View se dávají do souboru `views.py`. My si teď přidáme naše vlastní *vie
 
 ## blog/views.py
 
-OK, pojďme otevřít tento soubor a podívat se co tam je:
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 
