@@ -14,7 +14,7 @@ Django 表單的好處是，我們可以從零開始定義一個或者建立一�
        └── forms.py
     
 
-OK, let's open it and type the following code:
+OK, let's open it in the code editor and type the following code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ So once again we will create a link to the page, a URL, a view and a template.
 
 ## 連結表單到網頁 (Link to a page with the form)
 
-現在，打開 `blog/templates/blog/base.html`，我們將增加一個連結到名稱為 `page-header` 的 `div` 裡面︰
+It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## URL
 
-我們打開 `blog/urls.py`，並增加一行︰
+We open `blog/urls.py` in the code editor and add a line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ After refreshing the site, we see an `AttributeError`, since we don't have the `
 
 ## post_new view
 
-現在打開 `blog/views.py` 檔，並增加以下行到 `from` 下︰
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ def post_new(request):
 
 ## 範本 (Template)
 
-我們需要在 `blog/templates/blog` 目錄中建立 `post_edit.html`。為使表單能運作，我們需要幾件東西︰
+We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
 * We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ Nothing! We are once again on the same page and our text is gone… and no new p
 
 ## 儲存表單 (Saving the form)
 
-Open `blog/views.py` once again. Currently all we have in the `post_new` view is the following:
+Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 現在我們知道如何增加一個新的表單。 但如果我們想要編輯一個現存的？ This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-Open `blog/templates/blog/post_detail.html` and add the line
+Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-在 `blog/urls.py` 中我們加入這行︰
+Open `blog/urls.py` in the code editor, and add this line:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ so that the template will look like this:
 
 我們將再使用範本 `blog/templates/blog/post_edit.html`，因此最後欠缺的是一個 *view*.
 
-Let's open `blog/views.py` and add this at the very end of the file:
+Let's open `blog/views.py` in the code editor and add this at the very end of the file:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
-在 `blog/templates/blog/base.html`，找我們的 `page-header` `div` 和你稍早放在那裡的錨點 (anchor) 疵標籤。它看起來應該像這樣︰
+Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ This `{% if %}` will cause the link to be sent to the browser only if the user r
 
 Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
-Open `blog/templates/blog/post_detail.html` and find this line:
+Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
