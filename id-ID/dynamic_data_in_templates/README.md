@@ -6,7 +6,7 @@ Inilah yang seharusnya dilihat * dilihat *: hubungkan model dan template. Pada `
 
 Baiklah, jadi bagaimana kita bisa mencapai ini?
 
-Kita perlu membuka ` blog / views.py ` kita. Sejauh ` post_list ` * lihat * terlihat seperti ini:
+We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
 
 {% filename %}blog/static/css/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ Jadi sekarang kita ingin posting blog yang dipublikasikan diurutkan menurut ` pu
 & gt; & gt; & gt; Post.objects.filter (published_date__lte = timezone.now ()) order_by ('published_date')
 ```
 
-Sekarang kita letakkan potongan kode ini di dalam file ` blog / views.py ` dengan menambahkannya ke fungsi ` def post_list (request) `, tapi jangan lupa tambahkan dulu ` dari zona waktu impor django.utils `:
+So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
 
 {% filename %}blog/static/css/views.py{% endfilename %}
 
