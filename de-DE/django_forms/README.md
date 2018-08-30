@@ -89,7 +89,7 @@ Nach dem Speichern und Neuladen von http://127.0.0.1:8000 solltest du den bereit
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Wir öffnen `blog/urls.py` im Code-Editor und fügen eine Zeile hinzu:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -115,7 +115,7 @@ Nach dem Neuladen der Site sehen wir einen `AttributeError`, weil wir noch keine
 
 ## Die post_new-View
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Jetzt wird es Zeit, die Datei `blog/views.py` im Code-Editor zu öffnen und die folgenden Zeilen zu den anderen `from` Zeilen hinzuzufügen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -137,7 +137,7 @@ Um ein neues `PostForm` zu erstellen, rufen wir `PostForm()` auf und übergeben 
 
 ## Template
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Wir müssen eine Datei `post_edit.html` im Verzeichnis `blog/templates/blog` erstellen und im Code-Editor öffnen. Damit ein Formular funktioniert, benötigen wir einige Dinge:
 
 * Wir müssen das Formular anzeigen. Wir können das zum Beispiel mit einem einfachen `{{ form.as_p }}` tun.
 * Die Zeile oben muss von einem HTML-Formular-Tag eingeschlossen werden `<form method="POST">...</form>`.
@@ -174,7 +174,7 @@ Die Antwort ist: nichts. Wir müssen einfach noch etwas mehr Arbeit in unsere *V
 
 ## Speichern des Formulars
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Öffne `blog/views.py` erneut im Code-Editor. Derzeit ist alles, was wir in der View `post_new` haben, das hier:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -282,7 +282,7 @@ Django kümmert sich darum sicherzustellen, dass alle Felder in unserem Formular
 
 Jetzt wissen wir, wie ein neues Formular hinzugefügt wird. Aber was ist, wenn wir ein bereits bestehendes bearbeiten wollen? Das funktioniert so ähnlich wie das, was wir gerade getan haben. Lass uns schnell ein paar wichtige Dinge kreieren. (Falls du etwas nicht verstehst, solltest du deinen Coach fragen oder in den vorherigen Kapiteln nachschlagen, da wir all die Schritte bereits behandelt haben.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Öffne `blog/templates/blog/post_detail.html` im Code-Editor und füge folgende Zeile hinzu
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -311,7 +311,7 @@ damit die Vorlage so aussieht:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Öffne `blog/urls.py` im Code-Editor und fügen diese Zeile hinzu:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -321,7 +321,7 @@ Open `blog/urls.py` in the code editor, and add this line:
 
 Wir werden die Vorlage `blog/templates/blog/post_edit.html` wiederverwenden, daher ist das einzig Fehlende eine neue *View*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Öffne `blog/views.py` im Code-Editor und füge ganz am Ende der Datei Folgendes hinzu:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -375,7 +375,7 @@ Falls du mehr Informationen über Django-Formulare benötigst, solltest du die o
 
 Neue Posts mit einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, was du garantiert nicht willst. Lass es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Öffne die Datei `blog/templates/blog/base.html` im Code-Editor, finde darin unseren `page-header` `div` und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -397,7 +397,7 @@ Dieses `{% if %}` sorgt dafür, dass der Link nur zu dem Browser geschickt wird,
 
 Erinnerst du dich an den Editier-Button, den wir gerade zu unserer Seite hinzugefügt haben? Wir wollen dort dieselbe Anpassung machen, damit andere Leute keine existierenden Posts verändern können.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Öffne `blog/templates/blog/post_detail.html` im Code-Editor und finde folgende Zeile:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
