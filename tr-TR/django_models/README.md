@@ -95,7 +95,7 @@ Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark 
     └── requirements.txt
     
 
-Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`'ı bulup `]` karakterinin üzerindeki satıra `'blog',` yazmamız lazım. Sonuç aşağıdaki gibi görünmeli:
+Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. We do that in the file `mysite/settings.py` -- open it in your code editor. `INSTALLED_APPS`'ı bulup `]` karakterinin üzerindeki satıra `'blog',` yazmamız lazım. Sonuç aşağıdaki gibi görünmeli:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -115,7 +115,7 @@ INSTALLED_APPS = [
 
 `blog/models.py` dosyasında `Models` denilen bütün nesneleri tanımlıyoruz - burası blog postumuzu tanımlayacağımız yer.
 
-Şimdi `blog/models.py` dosyasını açalım ve içindeki her şeyi silip şu kodu yazalım:
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
 
