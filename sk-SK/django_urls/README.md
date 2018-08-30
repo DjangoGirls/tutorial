@@ -69,7 +69,7 @@ Django teraz presmeruje všetko, čo prichádza na 'http://127.0.0.1:8000/' do `
 
 ## blog.urls
 
-Vytvor nový prázdny súbor s názvom `urls.py` v priečinku `blog`. Dobre! Pridaj tieto dva riadky:
+Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
 
 {% filename %}blog/urls.py{% endfilename %}
 
