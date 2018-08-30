@@ -17,7 +17,7 @@ Vytvorme súbor `base.html` v `blog/templates/blog/`:
                 post_list.html
     
 
-Otvor ho a skopíruj doň všetko z `post_list.html` do súboru `base.html`:
+Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Potom v `base.html` nahraď celé `<body>` (všetko medzi `<body>` a `</body>`) 
 
 Ale prečo? Práve si vytvorila `block`! Použila si šablónový tag `{% block %}` aby si vytvoila časť, do ktorej bude vložené HTML. To HTML bude pochádzať z inej šablóny, ktorá rozšíri túto šablónu (`base.html`). Hneď ti ukážeme, ako sa to robí.
 
-Teraz ulož `base.html` a znova otvor `blog/templates/blog/post_list.html`. {% raw %}Odstrániš všetko nad `{% for post in posts %}` a pod `{% endfor %}`. Keď skončíš, súbor bude vyzerať nasledovne:{% endraw %}
+Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}Odstrániš všetko nad `{% for post in posts %}` a pod `{% endfor %}`. Keď skončíš, súbor bude vyzerať nasledovne:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Ešte zostála len jediná vec. Potrebujeme prepojiť tieto dve šablóny. O tom
 {% endblock %}
 ```
 
-A je to! Skontroluj či tvoja web stránka funguje tak, ako má. :)
+That's it! Save the file, and check if your website is still working properly. :)
 
 > Ak sa ti zobrazí chyba `TemplateDoesNotExist`, to znamená, že neexistuje `blog/base.html` súbor a `runserver` beží v konzole. Skús ho zastaviť (stlačením Ctrl+C – Control a C tlačidiel spolu) a spusti ho znova pomocou príkazu `python manage.py runserver`.
