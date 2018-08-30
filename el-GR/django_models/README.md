@@ -95,7 +95,7 @@
     └── requirements.txt
     
 
-Μετά την δημιουργία μίας εφαρμογής, πρέπει επίσης να πούμε στο Django ότι πρέπει να το χρησιμοποιήσει. Αυτό το κάνουμε στο αρχείο `mysite/settings.py`. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. Έτσι το τελικό προϊόν πρέπει να μοιάζει κάπως έτσι:
+Μετά την δημιουργία μίας εφαρμογής, πρέπει επίσης να πούμε στο Django ότι πρέπει να το χρησιμοποιήσει. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. Έτσι το τελικό προϊόν πρέπει να μοιάζει κάπως έτσι:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -115,7 +115,7 @@ INSTALLED_APPS = [
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
-Let's open `blog/models.py`, remove everything from it, and write code like this:
+Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
 {% filename %}blog/models.py{% endfilename %}
 
