@@ -2,7 +2,7 @@
 
 لإضافة وتعديل وحذف المشاركات التي قمنا بإضافتها، سوف نستخدم دجانغو المشرف.
 
-دعونا نفتح `blog/admin.py` ونغير محتواه بهذا:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 
