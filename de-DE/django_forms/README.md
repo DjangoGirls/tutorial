@@ -14,7 +14,7 @@ Wir erstellen nun eine Datei mit diesem Namen im `blog`-Verzeichnis.
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+So, jetzt lass uns diese im Code-Editor öffnen und folgenden Code hinzufügen:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, eine Vie
 
 ## Link auf eine Seite mit dem Formular
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+Jetzt ist es an der Zeit, `blog/templates/blog/base.html` im Code-Editor zu öffnen. Wir fügen einen Link in `div` hinzu mit dem Namen `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
