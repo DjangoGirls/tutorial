@@ -12,7 +12,7 @@ Wir haben bereits ein `Post`-Model, deshalb brauchen wir nichts zur `models.py` 
 
 ## Erstelle eine Template-Verknüpfung
 
-Wir beginnen mit dem Hinzufügen einer Verknüpfung in der `blog/templates/blog/post_list.html`-Datei. Derzeit sollte diese so aussehen: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -54,7 +54,7 @@ Lass uns eine URL in `urls.py` für unsere `post_detail`-*View* erstellen!
 
 Wir wollen, dass unsere erste Blogpost-Detailseite unter dieser **URL** angezeigt wird: http://127.0.0.1:8000/post/1/
 
-Lass uns eine URL in der Datei `blog/urls.py` anlegen, um Django auf die *View* `post_detail` zu verweisen, welche dann den ganzen Blogpost anzeigen wird. Füge die Zeile `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` zu der Datei `blog/urls.py` hinzu. Die Datei sollte so aussehen:
+Lass uns eine URL in der Datei `blog/urls.py` anlegen, um Django auf die *View* `post_detail` zu verweisen, welche dann den ganzen Blogpost anzeigen wird. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -108,7 +108,7 @@ Okay, es wird Zeit, die *View* zu unserer `views.py`-Datei hinzuzufügen!
 
 In `blog/urls.py` haben wir eine URL-Regel namens `post_detail` erstellt, die auf eine View namens `views.post_detail` verweist. Das heißt, dass Django eine View-Funktion erwartet, die `post_detail` heißt und in `blog/views.py` angelegt wurde.
 
-Wir sollten also `blog/views.py` öffnen und den folgenden Code zu den anderen `from` Zeilen hinzufügen:
+We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Oh nein! Ein anderer Fehler! Aber wir wissen ja schon, wie wir mit diesem umgehe
 
 ## Erstelle ein Template für die Post-Detailseite
 
-Wir erstellen eine Datei in `blog/templates/blog` mit dem Namen `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
 Das sieht dann so aus:
 
