@@ -35,7 +35,7 @@ Kontrolliere deine überarbeitete Webseite unter: http://127.0.0.1:8000
 
 Der Fehler sollte weg sein! Toll :) Deine Webseite ist allerdings noch leer, weil dein Template leer ist. Das müssen wir ändern.
 
-Füge folgenden Text in deine Template-Datei ein:
+Open the new file in the code editor, and add the following:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
