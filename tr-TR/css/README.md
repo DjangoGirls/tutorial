@@ -16,7 +16,7 @@ Twitter yazılımcıları tarafından geliştirilmeye başlanmış ve şu anda d
 
 ## Bootstrap kurulumu
 
-Bootstrap'ı kurmak için alttakileri `.html` dosyasının `<head>` kısmına eklemelisiniz:
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -87,7 +87,7 @@ Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler
 
 CSS hakkında daha fazla bilgi edinmek için [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp) u okuyabilirsin.
 
-Bir de HTML şablonuna projemize CSS eklediğimizi bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açıp en başına bunları ekleyelim:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
