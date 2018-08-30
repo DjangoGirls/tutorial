@@ -20,7 +20,7 @@ You see, in HTML, you can't really write Python code, because browsers don't und
 {{ posts }}
 ```
 
-在你的 `blog/templates/blog/post_list.html` 文件中进行如下的操作。 将所有 `<div>` to the third `</div>` 中的 to the third 用 `{{ posts }}` 代替。 并保存文件，刷新页面后去看看我们做的那些改变。
+在你的 `blog/templates/blog/post_list.html` 文件中进行如下的操作。 Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. 并保存文件，刷新页面后去看看我们做的那些改变。
 
 ![图 13.1](images/step1.png)
 
