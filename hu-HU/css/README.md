@@ -16,7 +16,7 @@ Eredetileg a Twitternél dolgozó programozók készítették, de most önkénte
 
 ## Bootstrap telepítés
 
-To install Bootstrap, you need to add this to your `<head>` in your `.html` file:
+To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -88,7 +88,7 @@ html<a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="lin
 
 Olvass utána a [CSS szelektorokról a w3schools oldalán](http://www.w3schools.com/cssref/css_selectors.asp).
 
-Mindezek után közölnünk kell a HTML fájlunkkal is, hogy hozzáadtunk pár CSS-t. Nyisd meg a `blog/templates/blog/post_list.html` fájlt és add a következő sort a fájl legelejére:
+We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
