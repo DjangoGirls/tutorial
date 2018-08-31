@@ -54,7 +54,7 @@ Lass uns eine URL in `urls.py` für unsere `post_detail`-*View* erstellen!
 
 Wir wollen, dass unsere erste Blogpost-Detailseite unter dieser **URL** angezeigt wird: http://127.0.0.1:8000/post/1/
 
-Lass uns eine URL in der Datei `blog/urls.py` anlegen, um Django auf die *View* `post_detail` zu verweisen, welche dann den ganzen Blogpost anzeigen wird. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Lass uns eine URL in der Datei `blog/urls.py` anlegen, um Django auf die *View* `post_detail` zu verweisen, welche dann den ganzen Blogpost anzeigen wird. Öffne die Datei `blog/urls.py` im Code-Editor und füge die Zeile `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` hinzu, so dass die Datei wie folgt aussieht:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -209,6 +209,6 @@ Aktiviere also deine virtuelle Umgebung, wenn sie nicht vom letzten Mal noch akt
 
 Der `manage.py collectstatic` Befehl ist ein bisschen wie `manage.py migrate`. Wir machen ein paar Änderungen in unserem Code und dann sagen wir Django, dass es diese übernehmen (*apply*) soll, entweder zu der servereigenen Sammlung von statischen Dateien oder in die Datenbank.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
+Auf jeden Fall sind wir nun soweit, dass wir [auf die Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) wechseln können (mittels dem Menü-Knopf in der Ecke oben rechts) und **Reload** klicken können. Schau dir dann die Seite https://yourname.pythonanywhere.com an, um das Ergebnis zu sehen.
 
 Und das sollte es sein! Herzlichen Glückwunsch :)
