@@ -16,7 +16,7 @@ Foi escrito por programadores que já trabalharam no Twitter e agora é desenvol
 
 ## Instalar o Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Para instalar o Bootstrap, abra o arquivo `.html` no seu editor de código e adicione o trecho abaixo à seção `<head>`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
