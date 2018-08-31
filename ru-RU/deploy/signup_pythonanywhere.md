@@ -4,7 +4,7 @@ Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you d
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](images/pythonanywhere_beginner_account_button.png)
+![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Примечание**: При выборе имени пользователя, помни, что URL блога примет вид `yourusername.pythonanywhere.com`, так что остановись либо на своём нике, либо на имени, связанном с тематикой блога.
 
