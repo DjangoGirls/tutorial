@@ -4,7 +4,7 @@ Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you d
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](images/pythonanywhere_beginner_account_button.png)
+![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > ** نکته </ 0> هنگام انتخاب نام کاربری خود در اینجا، توجه داشته باشید که آدرس وبلاگ شما  yourusername.pythonanywhere.com شما </ 1> خواهد شد، بنابراین نام مستعار خود یا نام خود را برای آنچه که وبلاگ همه چیز است.</p>
 </blockquote>
