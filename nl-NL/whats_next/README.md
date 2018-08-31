@@ -1,16 +1,16 @@
-# What's next?
+# Wat nu?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Feliciteer jezelf! **Je bent helemaal geweldig**. Wij zijn trots! <3
 
-### What to do now?
+### Wat moet je nu doen?
 
-Take a break and relax. You have just done something really huge.
+Neem even pauze en relax. Je hebt zojuist iets geweldigs gedaan.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Volg Django Girls op [Facebook](http://facebook.com/djangogirls) of [Twitter](https://twitter.com/djangogirls) om up to date te blijven.
 
-### Can you recommend any further resources?
+### Kan je andere bronnen aanbevelen?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
+Ja! Probeer ons andere boek genoemd [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
 
 Later on, you can try the resources listed below. They're all very recommended!
 
