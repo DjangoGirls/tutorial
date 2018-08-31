@@ -96,7 +96,7 @@ Prüfe, ob die Installation erfolgreich war, indem du ein Kommandozeilenfenster 
 {% filename %}command-line{% endfilename %}
 
     $ python3 --version
-    Python 3.6.6
+    Python 3.6.1
     
 
 **Hinweis:** Wenn du unter Windows eine Fehlermeldung bekommst, dass `python3` nicht gefunden wurde, versuche es mit `python` (ohne die `3`) und prüfe, ob es dennoch eine Version von Python 3.6.x ist.
