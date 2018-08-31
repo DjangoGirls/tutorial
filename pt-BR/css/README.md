@@ -25,7 +25,7 @@ Para instalar o Bootstrap, abra o arquivo `.html` no seu editor de código e adi
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Isso não adiciona nenhum arquivo ao seu projeto, apenas aponta para arquivos que existem na Internet. Então vá em frente, abra seu website e atualize a página. Aqui está!
 
 ![Figura 14.1](images/bootstrap1.png)
 
