@@ -34,7 +34,7 @@ Mac: Öffne das Launchpad → Andere → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Wahrscheinlich ist es unter Programme → Zubehör → Terminal, aber das ist von deinem System abhängig. Wenn es nicht da ist, google einfach schnell danach. :)
+Wahrscheinlich ist es unter Programme → Zubehör → Terminal, aber das ist von deinem System abhängig. Wenn es nicht da ist, kannst du versuchen, danach zu googlen. :)
 
 <!--endsec-->
 
@@ -70,7 +70,7 @@ Vor jedem Kommando wird dieses Zeichen und ein Leerzeichen vorangestellt, aber d
 
 Der Teil bis und einschließlich `$` oder `>` heißt *Kommandozeilen-Eingabeaufforderung* oder kurz *Eingabeaufforderung*. Es fordert dich auf, hier etwas einzugeben.
 
-Wenn wir im Tutorial wollen, dass du einen Befehl eingibst, schreiben wir `$` oder `>` mit hin, gelegentlich auch noch die anderen Angaben links davon. Du kannst dann den linken Teil einfach ignorieren und nur das Kommando eingeben, welches rechts der Eingabeaufforderung steht.
+Wenn wir im Tutorial wollen, dass du einen Befehl eingibst, schreiben wir `$` oder `>` mit hin, gelegentlich auch noch die anderen Angaben links davon. Ignoriere den linken Teil und gib nur das Kommando ein, welches rechts der Eingabeaufforderung steht.
 
 ## Dein erstes Kommando (YAY!)
 
@@ -228,7 +228,7 @@ Passt!
 
 ### Erstellen eines Verzeichnisses
 
-Wie wärs damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
+Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 

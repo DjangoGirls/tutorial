@@ -87,11 +87,12 @@ Wie du sehen kannst, wurde ein neues `blog`-Verzeichnis erstellt, welches schon 
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
 Nach dem Erstellen der Applikation müssen wir Django noch sagen, dass diese auch genutzt werden soll. Das stellen wir in der Datei `mysite/settings.py` ein. Wir suchen den Eintrag `INSTALLED_APPS` und fügen darin die Zeile `'blog',` direkt über der schließenden Klammer `]` ein. Danach sollte es also so aussehen:
