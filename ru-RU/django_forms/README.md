@@ -85,7 +85,7 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+После обновления страницы http://127.0.0.1:8000 ты увидишь привычное сообщение об ошибке `NoReverseMatch`. Это ваш случай? Отлично!
 
 ## URL
 
