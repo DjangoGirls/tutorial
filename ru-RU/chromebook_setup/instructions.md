@@ -49,7 +49,7 @@ Cloud9 позволяет вам запустить редактор кода, �
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Создать счёт на [GitHub](https://github.com).
 
 ### PythonAnywhere
 
