@@ -16,7 +16,7 @@ Bootstrap - один из самых популярных HTML и CSS фрейм
 
 ## Установка Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Для установки Bootstrap открой файл содержащий код `.html` в редакторе и добавь эти строки в заголовок `<head>`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
