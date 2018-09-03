@@ -95,7 +95,7 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
 
 > **注** `my-first-blog`という名前は重要です。何か他のものを選択することもできますが、以下の手順では何度も繰り返す必要があります。他の名前を選択した場合は、 毎回それを置き換えてください。 できれば、`my-first-blog` の名前にしておきましょう。
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+次の画面では、リポジトリをクローンするためのURLが表示されます。これはこの後のコマンドで利用します。
 
 ![](images/github_get_repo_url_screenshot.png)
 
