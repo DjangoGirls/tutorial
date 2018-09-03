@@ -12,11 +12,11 @@ Eine Sache ist zu beachten: Während der Installation wirst du ein "Setup"-Fenst
 
 ![Vergiss nicht, Python zu dem Pfad hinzuzufügen](../python_installation/images/python-installation-options.png)
 
-Während der nächsten Schritte werden wir die Windows-Kommandozeile verwenden (über die wir dir auch noch etwas erzählen werden). Bis dahin, wenn du dort Befehle eingeben musst, dann gehe zum Startmenü und gib "Eingabeaufforderung" in das Suchfeld ein. (Bei alten Windows-Versionen kannst du die Eingabeaufforderung unter Startmenü → Windows System → Eingabeaufforderung finden.) Du kannst auch die Windows-Taste gedrückt halten und "R" drücken bis das "Ausführen"-Fenster auftaucht. Um damit die Kommandozeile zu öffnen, schreibe "cmd" ins "Run"-Fenster und drücke die Eingabetaste (Enter).
+Während der nächsten Schritte werden wir die Windows-Kommandozeile verwenden (über die wir dir auch noch etwas erzählen werden). Wenn du bis dahin Befehle in die Kommandozeile eingeben musst, dann gehe zum Startmenü und gib "Eingabeaufforderung" in das Suchfeld ein. (Bei alten Windows-Versionen kannst du die Eingabeaufforderung unter Startmenü → Windows System → Eingabeaufforderung finden.) Du kannst auch die Windows-Taste gedrückt halten und "R" drücken bis das "Ausführen"-Fenster auftaucht. Um damit die Kommandozeile zu öffnen, schreibe "cmd" ins "Run"-Fenster und drücke die Eingabetaste (Enter).
 
 ![Tippe "cmd" in das "Run"-Fenster](../python_installation/images/windows-plus-r.png)
 
-Hinweis: Wenn du eine ältere Version von Windows verwendest (7, Vista oder älter) und es tritt bei der Python 3.6.x Installation ein Fehler auf, kannst du Folgendes versuchen:
+Hinweis: Falls du eine ältere Version von Windows verwendest (7, Vista oder älter) und die Installation von Python 3.6.x mit einer Fehlermeldung fehlschlägt, kannst du Folgendes versuchen:
 
 1. Installiere alle Windows-Updates und versuche erneut, Python 3.6 zu installieren; oder
 2. Installiere eine [ältere Version von Python](https://www.python.org/downloads/windows/), z. B. [3.4.6](https://www.python.org/downloads/release/python-346/).
