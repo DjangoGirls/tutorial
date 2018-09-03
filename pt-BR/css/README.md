@@ -37,7 +37,7 @@ Finalmente, vamos dar uma olhada mais de perto nessas coisas que chamamos de **a
 
 ### Onde colocar os arquivos estáticos para o Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+O Django já sabe onde encontrar os arquivos estáticos para o app "admin" pré-instalado. Agora só precisamos adicionar alguns arquivos estáticos para o nosso próprio app, `blog`.
 
 Fazemos isso criando uma pasta chamada `static` dentro da aplicação blog:
 
@@ -88,7 +88,7 @@ Em um arquivo CSS, nós determinamos estilos para elementos do arquivo HTML. A p
 
 Você pode ler mais sobre [Seletores CSS no w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Nós também precisamos dizer ao nosso template HTML que adicionamos algum CSS. Abra o arquivo `blog/templates/blog/post_list.html` no editor de código e adicione esta linha bem no começo dele:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
