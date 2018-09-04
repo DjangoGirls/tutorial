@@ -2,7 +2,7 @@
 
 今作成したポストを追加、編集、削除するのにDjango adminを使います。
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+`blog/admin.py`ファイルをエディタで開いて、内容をこのように変えて下さい：
 
 {% filename %}blog/admin.py{% endfilename %}
 
