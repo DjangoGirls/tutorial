@@ -191,7 +191,7 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
     templates tests.py urls.py views.py
     
 
-また、「ファイル」ページに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。 (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+また、「ファイル」ページに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。 (Consoleページから他のPythonAnywhereページには右上のメニューボタンからいけます。 一度いずれかのページに移動したら、他ページへのリンクはトップのあたりにあります。)
 
 ## 動いています！
 
