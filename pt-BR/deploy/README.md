@@ -95,7 +95,7 @@ Em seguida, crie um novo repositório chamado "my-first-blog". Deixe a caixa "In
 
 > **Observação:** O nome `my-first-blog` é importante - você poderia escolher qualquer outra coisa, mas ele vai aparecer várias vezes nas instruções abaixo, e você teria que substituir todas as vezes. É mais fácil simplesmente manter o nome `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+Na próxima tela, você verá a URL de clonagem do seu repositório, que você usará em alguns dos comandos a seguir:
 
 ![](images/github_get_repo_url_screenshot.png)
 
@@ -153,7 +153,7 @@ Fazer o deploy de uma aplicação web no PythonAnywhere envolve baixar o seu có
 
 Isso deve mostrar na tela coisas como `Collecting pythonanywhere`, e depois de algum tempo finalizar com uma linha dizendo `Successfully installed (...) pythonanywhere (...)`.
 
-Agora vamos executar a ferramenta para configurar a nossa aplicação a partir do GitHub automaticamente. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Agora vamos executar a ferramenta para configurar a nossa aplicação a partir do GitHub automaticamente. Digite os seguintes comandos no console do PythonAnywhere (não se esqueça de usar o seu usuário do GitHub ao invés de `<your-github-username>`, para que a URL fique igual a URL de clonagem do GitHub):
 
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
