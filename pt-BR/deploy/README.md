@@ -191,7 +191,7 @@ Agora, se quiser, você pode dar uma olhada no seu código no PythonAnywhere usa
     templates  tests.py  urls.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Você também pode visitar a aba "Files" e dar uma olhada usando o gerenciador de arquivos do PythonAnywhere. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
 
 ## Estamos no ar!
 
