@@ -93,7 +93,7 @@ Em seguida, crie um novo repositório chamado "my-first-blog". Deixe a caixa "In
 
 ![](images/new_github_repo.png)
 
-> **Observação:** O nome `my-first-blog` é importante - você poderia escolher qualquer outra coisa, mas ele vai aparecer várias vezes nas instruções abaixo, e você teria que substituir todas as vezes. It's probably easier to stick with the name `my-first-blog`.
+> **Observação:** O nome `my-first-blog` é importante - você poderia escolher qualquer outra coisa, mas ele vai aparecer várias vezes nas instruções abaixo, e você teria que substituir todas as vezes. É mais fácil simplesmente manter o nome `my-first-blog`.
 
 On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
@@ -101,7 +101,7 @@ On the next screen, you'll be shown your repo's clone URL, which you will use in
 
 Agora precisamos conectar o repositório Git no seu computador com o que existe no GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Digite o seguinte no seu terminal (Substitua `<your-github-username>` pelo nome de usuário que você colocou quando criou a sua conta no GitHub, mas sem os sinais de menor e maior):
 
 {% filename %}linha de comando{% endfilename %}
 
