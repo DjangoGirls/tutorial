@@ -14,7 +14,7 @@ Djangoの他の重要なパーツと同様に、フォームは自身のファ�
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+このファイルをエディタで開き、次のコードを入力してください。
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ class PostForm(forms.ModelForm):
 
 ## フォームにおけるページへのリンク
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+`blog/templates/blog/base.html`をエディタで開きましょう。`page-header`と名付けた`div`中に次のリンクを追加します：
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ It's time to open `blog/templates/blog/base.html` in the code editor. We will ad
 </html>
 ```
 
-ファイルを保存して、ページ http://127.0.0.1:8000 をリロードします。すでに見覚えのある `NoReverseMatch` エラーが表示されますか？
+ファイルを保存して、ページ http://127.0.0.1:8000 をリロードすると見覚えのある `NoReverseMatch` エラーが表示されると思います。実際にそうなってますか？いいですね！
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+`blog/urls.py`をエディタで開き、次の内容を追加します。
 
 {% filename %}blog/urls.py{% endfilename %}
 
