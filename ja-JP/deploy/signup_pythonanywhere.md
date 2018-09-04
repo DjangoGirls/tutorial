@@ -1,6 +1,6 @@
 PythonAnywhere はクラウド上のサーバーでPythonのコードを走らせるためのサービスです。私たちはこれを私たちのサイトをホスティングして、インターネット上で動かし続けるために使います。
 
-Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+PythonAnywhere で「Beginner」アカウントにサインアップしましょう（クレジットカードのいらない無料利用枠で大丈夫です）。
 
 * [https://www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
@@ -10,6 +10,6 @@ Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you d
 
 ## PythonAnywhere APIトークンの作成
 
-これはあなたが一度だけ行う必要があるものです。 When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page, then select the tab named "API token", and hit the button that says "Create new API token".
+これはあなたが一度だけ行う必要があるものです。 PythonAnywhere にサインアップしたとき、ダッシュボードページが表示されます。 右上にある「Account」ページへのリンクをクリックし、それから「API Token」タブを選択し、「Create new API token」ボタンをクリックします。
 
 ![アカウントページのAPIトークンタブ](../deploy/images/pythonanywhere_create_api_token.png)
