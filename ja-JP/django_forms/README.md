@@ -116,7 +116,7 @@ urlpatterns = [
 
 ## post_new ビュー
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+`blog/views.py`をエディタで開き、`from`の行の後に次の内容を追加してみましょう。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -175,7 +175,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 
 ## フォームを保存する
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+`blog/views.py` をもう一度エディタで開きます。現在の `post_new` ビューはこうなっています。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Djangoはフォームのすべてのフィールドが正しいことを検証�
 
 今、私たちは新しいフォームを追加する方法を知っています。 しかし既存のデータを編集するためはどうすれば良いのでしょうか? それは先ほど行ったことと非常に似ています。 すぐにいくつかの重要なものを作成してみましょう。 （もしわからない場合、コーチに尋ねるか、もしくはすでに手順をカバーしているので、前の章を見てください）
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+`blog/templates/blog/post_detail.html` をエディタで開いて次の行を追加します
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+`blog/urls.py`をエディタで開き、次の内容を追加します。
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ Open `blog/urls.py` in the code editor, and add this line:
 
 テンプレート `blog/templates/blog/post_edit.html` を再利用します。そして残るは*ビュー*です。
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+`blog/views.py` をエディタで開いて次の内容をファイルの最後に追加します：
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 リンクをクリックするだけで新しい投稿を作成できることは素晴らしいことです！ しかし、今、あなたのサイトにアクセスした人は誰でも新しいブログ投稿を作成することができます。それはおそらくあなたが望むものではありません。 ボタンはあなたのためには表示されますが、他の人には表示されないようにしましょう。
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+`blog/templates/blog/base.html` をエディタで開き、`page-header` と名付けた `div ` とそこに以前に入力したアンカータグを見つけます。 これは次のようになります。
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `page-header` 
 
 詳細ページに追加した編集アイコンを覚えていますか？ 他の人が既存の投稿を編集できないように、同じ変更を追加したいと思います。
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+`blog/templates/blog/post_detail.html` をエディタで開いて次の行を見つけてください：
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
