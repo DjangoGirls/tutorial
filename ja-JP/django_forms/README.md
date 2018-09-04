@@ -444,6 +444,6 @@ Djangoのフォームについてもっと知りたい場合、Django Projectの
 
 (`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
+* 最後に、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/) に飛んで（コンソールの右上のメニューボタンを使って）それから **Reload** を押しましょう。 変更を見るためにあなたのブログ https://yourname.pythonanywhere.com を再読み込みしましょう。
 
 うまくいってるはずです！おめでとう :)
