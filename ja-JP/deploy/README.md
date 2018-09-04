@@ -207,7 +207,7 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 - あなたのGitHubのURLを間違えている
 - *Could not find your settings.py*というエラーが表示された場合は、おそらくGitにすべてのファイルを追加できていなかったか、 GitHubにうまくプッシュできていなかった。 この場合はGitセクションをもう一度見てください
 
-サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は**エラーログ**です。 You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。
+サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は**エラーログ**です。 PythonAnywhereの[ Webページ](https://www.pythonanywhere.com/web_app_setup/)には、このリンクがあります。 そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。
 
 [ PythonAnywhereヘルプサイトの一般的なデバッグのヒント](http://help.pythonanywhere.com/pages/DebuggingImportError)もあります。
 
