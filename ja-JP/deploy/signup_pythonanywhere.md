@@ -4,7 +4,7 @@ PythonAnywhere で「Beginner」アカウントにサインアップしましょ
 
 * [https://www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![PythonAnywhere サインアップページが表示する無料の「Beginner」アカウント作成ボタン](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **注** ユーザー名を選ぶとき、あなたのブログのURLが`あなたのユーザー名.pythonanywhere.com`になることを覚えておいて下さい。ですから、自分のニックネームかあなたのブログが何についてのブログか分かるような名前を選んでみて下さい。
 
