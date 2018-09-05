@@ -16,7 +16,7 @@ Es wurde ursprünglich von ProgrammiererInnen bei Twitter geschrieben. Heute wir
 
 ## Bootstrap installieren
 
-Öffne dein `.html` in deinem Code-Editor und füge Folgendes zum `<head>`-Abschnitt hinzu, um Bootstrap zu installieren:
+Öffne deine `.html`-Datei in deinem Code-Editor und füge Folgendes zum `<head>`-Abschnitt hinzu, um Bootstrap zu installieren:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
