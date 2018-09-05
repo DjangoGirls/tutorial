@@ -212,6 +212,6 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 そのうえで、自分のコードがダウンロードされたことを確認しましょう。 それをチェックしたい場合は、**「Files」ページ** を押して、自分のコードをPythonAnywhereの中で見てみましょう（コンソールページのメニューボタンから他のPythonAnywhereページにアクセスできます）。
 
-* 最後に、[Web page](https://www.pythonanywhere.com/web_app_setup/)を押して、自分のアプリの**Reload**を選択します。
+* 最後に、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を押して、自分のアプリの**Reload**を押します。
 
 あなたのアプリが更新され、動いています！ウェブサイトを開いて、再読込してみましょう。どう変わったのか、見えるはずです。:)
