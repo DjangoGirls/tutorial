@@ -210,7 +210,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 (`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
 
-そのうえで、自分のコードがダウンロードされたことを確認しましょう。 それをチェックしたい場合は、**Files page** を押して、自分のコードをPythonAnywhereの中で見てみましょう（コンソールページのメニューボタンから他のPythonAnywhereページにアクセスできます）。
+そのうえで、自分のコードがダウンロードされたことを確認しましょう。 それをチェックしたい場合は、**「Files」ページ** を押して、自分のコードをPythonAnywhereの中で見てみましょう（コンソールページのメニューボタンから他のPythonAnywhereページにアクセスできます）。
 
 * 最後に、[Web page](https://www.pythonanywhere.com/web_app_setup/)を押して、自分のアプリの**Reload**を選択します。
 
