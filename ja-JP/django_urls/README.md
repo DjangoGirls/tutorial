@@ -49,7 +49,7 @@ urlpatterns = [
 
 `mysite/urls.py` ファイルは簡潔なままにしておきたいので、`mysite/urls.py` では`blog` アプリからURLをインポートするだけにしましょう。
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+まず、`blog.urls` をインポートする行を追加しましょう。 You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
 
 `mysite/urls.py` ファイルはこのようになります：
 
