@@ -49,7 +49,7 @@ urlpatterns = [
 
 `mysite/urls.py` ファイルは簡潔なままにしておきたいので、`mysite/urls.py` では`blog` アプリからURLをインポートするだけにしましょう。
 
-まず、`blog.urls` をインポートする行を追加しましょう。 You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+まず、`blog.urls` をインポートする行を追加しましょう。 また、ここで`include`関数を使用しているため、最初の行を変更し、そのインポートも追加する必要があります。
 
 `mysite/urls.py` ファイルはこのようになります：
 
@@ -69,7 +69,7 @@ urlpatterns = [
 
 ## blogのURL
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+`blog` ディレクトリの下に、新しく `urls.py` という空のファイルを作って、コードエディタで開いて下さい。そして最初の2行を以下のように書きます：
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -98,6 +98,6 @@ urlpatterns = [
 
 ![エラー](images/error1.png)
 
-エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' という属性(attribute)がない**ことを知らせてくれています。 これは *ビュー* の名前で、Djangoが探して使おうとしましたが、私たちはこれをまだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 心配しなくて大丈夫です。ちゃんとできますから。 If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' という属性(attribute)がない**ことを知らせてくれています。 これは *ビュー* の名前で、Djangoが探して使おうとしましたが、私たちはこれをまだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 心配しなくて大丈夫です。ちゃんとできますから。 別のエラーメッセージが表示された場合は、webサーバーを再起動してみてください。 サーバーが動いているコンソール画面で、Ctrl+C（ControlとCのキーを同時に）を押してサーバーを止め、`python manage.py runserver`コマンドを動かして再度サーバーを動かします。
 
 > Django URLconfについてもっと知りたい場合は、公式のドキュメントを見て下さい： https://docs.djangoproject.com/ja/2.0/topics/http/urls/
