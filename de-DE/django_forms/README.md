@@ -443,6 +443,6 @@ Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weit
 
 (Denke daran, `<your-pythonanywhere-username>` durch deinen PythonAnywhere-Benutzernamen zu ersetzen - ohne spitze Klammern).
 
-* Gehe schliesslich noch rüber [auf die Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) (benutze den Menü-Knopf in der rechten oben Ecke der Konsole) und klicke **Reload**. Lade deinen Blog https://yourname.pythonanywhere.com neu, um die Änderungen zu sehen.
+* Gehe schliesslich noch rüber [auf die Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) (benutze den Menü-Knopf in der rechten oberen Ecke der Konsole) und klicke **Reload**. Lade deinen Blog https://yourname.pythonanywhere.com neu, um die Änderungen zu sehen.
 
 Und das war's! Glückwunsch :)
