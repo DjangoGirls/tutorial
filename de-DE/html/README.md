@@ -212,7 +212,7 @@ Nachdem wir das gemacht haben, laden (push) wir unsere Änderungen auf GitHub:
 
 (Denke daran &lt;dein pythonanywere-Benutzername> durch deinen PythonAnywhere-Benutzernamen zu ersetzen - ohne spitze Klammern).
 
-Und sieh zu, wie dein Code heruntergeladen wird. Wenn du überprüfen willst, dass er angekommen ist, geh' hinüber zur **Seite "Files"** and schau deinen code auf PythonAnywhere an (du kannst andere PythonAnywhere-Seiten über den Menü-Knopf auf der Konsolen-Seite erreichen).
+Und sieh zu, wie dein Code heruntergeladen wird. Wenn du überprüfen willst, dass er angekommen ist, geh' hinüber zur **Seite "Files"** and schau deinen Code auf PythonAnywhere an (du kannst andere PythonAnywhere-Seiten über den Menü-Knopf auf der Konsolen-Seite erreichen).
 
 * Spring anschließend rüber zur [Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) und klick auf **Neu laden** in deinem Browser.
 
