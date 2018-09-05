@@ -101,7 +101,7 @@ In der nächsten Ansicht wirst du die clone-URL deines Repositorys sehen, die du
 
 Nun müssen wir das Git-Repository auf deinem Computer mit dem auf GitHub verbinden.
 
-Gib das Folgende auf der Kommandozeile ein (ersetzte `<your-github-username>` mit dem Benutzername, den du beim Erstellen deines GitHub-Accounts gewählt hast, aber ohne die spitzen Klammern -- die URL sollte der clone-URL entsprechen, die du vorhin gerade gesehen hast):
+Gib das Folgende auf der Kommandozeile ein (ersetzte `<your-github-username>` mit dem Benutzernamen, den du beim Erstellen deines GitHub-Accounts gewählt hast, aber ohne die spitzen Klammern -- die URL sollte der clone-URL entsprechen, die du vorhin gerade gesehen hast):
 
 {% filename %}command-line{% endfilename %}
 
