@@ -35,7 +35,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 もうエラーはありませんか！おめでとうございます:)。しかし、あなたのウェブサイトは実際には空白のページ以外は何も表示していないでしょう。テンプレートも空白だからです。それを直していく必要があります。
 
-Open the new file in the code editor, and add the following:
+この新しく作ったファイルをコードエディタで開いて、次の内容を書き加えます。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -210,7 +210,7 @@ Open the new file in the code editor, and add the following:
 
 (`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+そのうえで、自分のコードがダウンロードされたことを確認しましょう。 If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
