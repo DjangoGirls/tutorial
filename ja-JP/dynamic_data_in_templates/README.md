@@ -6,7 +6,7 @@
 
 それでは、実際にやってみましょう。
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+まず`blog/views.py`をコードエディタで開きます。今のところ `post_list`*ビュー* は、以下のようになっているでしょう。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ from .models import Post
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
+それでは `blog/views.py`をコードエディタで開いて、このコードを`def post_list(request)`関数の中に加えましょう。`from django.utils import timezone`を最初に追加するのを忘れないでくださいね。
 
 {% filename %}blog/views.py{% endfilename %}
 
