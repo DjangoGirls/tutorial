@@ -97,7 +97,7 @@ post変数がさっきと違って、`{{ post.title }}` や `{{ post.text }}` �
     [...]
     
 
-* 最後に[Web page](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。 (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* 最後に[Web page](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。 （コンソールから他のPythonAnywhereページにアクセスするには、右上のメニューボタンを使います。）更新された内容がhttps://yourname.pythonanywhere.comに公開されているはずです。ブラウザで確認しましょう！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
 
 おめでとうございます！よくできました! これができたら、Django adminとして新しい投稿を追加しましょう（published_dateを忘れないで！）。PythonAnywhereサイトのDjango管理者であることを確認してください（https://yourname.pythonanywhere.com/admin ）。それから、投稿したものがそこに見えるか、リロードしましょう。
 
