@@ -46,12 +46,12 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can copy-paste some text from this tutorial to save time. :)
+Зайди в раздел Posts и немного поэкспериментируй с ним. Добавь пять или шесть постов. Не беспокойся о содержании - можешь просто скопировать текст из этого учебника чтобы сохранить время. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Убедитесь, чтобы хотя бы у двух-трёх постов (но не у всех) была дата публикации. Это может быть полезным в будущем.
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+Если вы хотите узнать больше о панели администратора в Django, то следует заглянуть в официальную документацию: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
-Сейчас, вероятно, подходящий момент, чтобы порадовать себя кружечкой кофе (или чая), а также съесть чего-нибудь для пополнения энергии. Ты только что создала свою первую Django модель и заслужила перерыв!
+Сейчас, вероятно, подходящий момент, чтобы порадовать себя кружечкой кофе (или чая), а также съесть чего-нибудь для пополнения энергии. Ты только что создал(а) свою первую Django модель и заслужил(а) перерыв!
