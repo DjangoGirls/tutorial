@@ -26,8 +26,8 @@ Git verwaltet die Veränderungen an einer Sammlung von Dateien in einem sogenann
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
-    $ git config --global user.email you@example.com
+    $ git config --global user.name "Dein Name"
+    $ git config --global user.email du@example.com
     
 
 Die Initialisierung des Git-Repositorys müssen wir für jedes Projekt nur einmal machen (danach musst Du Benutzernamen und Mail-Adresse nie wieder eingeben).
