@@ -25,7 +25,7 @@ Bootstrap - один из самых популярных HTML и CSS фрейм
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Это не добавит никаких файлов в твой проект. Этот код просто указывает на то, что эти файлы существуют в Интернете. Поэтому открой сайт и обнови страницу, где ты обнаружишь изменения!
 
 ![Рисунок 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ### Куда поместить статические файлы в Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django уже знает, где искать статические файлы для встроенного приложения"admin". Теперь нам нужно добавить статические файлы в наше собственное приложение, `blog`.
 
 Мы сделаем это, создав папку `static` внутри каталога с нашим приложением:
 
