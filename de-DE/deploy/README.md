@@ -191,7 +191,7 @@ Nun kannst auch einen Blick auf deinen Code auf PythonAnywhere werfen mittels `l
     templates  tests.py  urls.py  views.py
     
 
-Du kannst auch auf die "Files"-Seite gehen und mit PythonAnywheres eingebautem Datei-Manager navigieren. (Von der "Console"-Seite gelangst über das Menü in der rechten oberen Ecke zu anderen PythonAnywhere-Seiten. Sobald du auf einer dieser Seiten bist, sind oben links zu den anderen dieser Seiten.)
+Du kannst auch auf die "Files"-Seite gehen und mit PythonAnywheres eingebautem Datei-Manager navigieren. (Von der "Console"-Seite gelangst über das Menü in der rechten oberen Ecke zu anderen PythonAnywhere-Seiten. Sobald du auf einer dieser Seiten bist, sind oben Links zu den anderen dieser Seiten.)
 
 ## Du bist jetzt live!
 
