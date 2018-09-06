@@ -2,7 +2,7 @@
 
 Чтобы добавлять, редактировать и удалять записи, для которых мы только сделали модель, нам потребуется использовать права администратора в Django.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Откройте файл `blog/admin.py` в редакторе кода и замените его содержимое на:
 
 {% filename %}command-line{% endfilename %}
 
