@@ -8,7 +8,7 @@
 
 ## blog/views.py
 
-では、早速 blog/views.py を開いてみましょう。
+では、早速 blog/views.py をコードエディタで開いてみましょう：
 
 {% filename %}blog/views.py{% endfilename %}
 

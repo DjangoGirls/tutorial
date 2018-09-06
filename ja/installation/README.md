@@ -21,13 +21,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# virtualenvのセットアップとDjangoのインストール
-
-{% include "/django_installation/instructions.md" %}
-
 # コードエディタのインストール
 
 {% include "/code_editor/instructions.md" %}
+
+# virtualenvのセットアップとDjangoのインストール
+
+{% include "/django_installation/instructions.md" %}
 
 # Gitのインストール
 
