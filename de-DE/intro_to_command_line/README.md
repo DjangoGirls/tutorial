@@ -20,7 +20,7 @@ Um mit unserem Tutorial zu starten, musst du als Erstes das Kommandozeilenprogra
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Windows 10: Gehe zur Suchleiste → Gib "cmd" in die Suche ein → Klicke den Eintrag Eingabeaufforderung mit der rechten Maustaste an → Wähle aus dem nächsten Menü die Option Ausführen aus.
+Windows 10: Drücke die Windows-Taste → gib in die Suchleiste “cmd” ein → bestätige mit Enter.
 
 > Ältere Versionen von Windows: Start Menu → Alle Programme → Zubehör → Eingabeaufforderung.
 
