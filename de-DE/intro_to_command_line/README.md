@@ -68,7 +68,7 @@ Vor jedem Kommando wird dieses Zeichen und ein Leerzeichen vorangestellt, aber d
 
 > Ein kleiner Hinweis: Falls du etwas in der Art wie `C:\Users\ola>` oder `Olas-MacBook-Air:~ ola$` sehen solltest, ist das auch 100%ig korrekt.
 
-Der Teil bis und einschließlich `$` oder `>` heißt *Kommandozeilen-Eingabeaufforderung* oder kurz *Eingabeaufforderung*. Es fordert dich auf, hier etwas einzugeben.
+Der Teil bis und einschließlich `$` oder `>` heißt *Kommandozeilen-Eingabeaufforderung* oder kurz *Eingabeaufforderung*. Sie fordert dich auf, hier etwas einzugeben.
 
 Wenn wir im Tutorial wollen, dass du einen Befehl eingibst, schreiben wir `$` oder `>` mit hin, gelegentlich auch noch die anderen Angaben links davon. Ignoriere den linken Teil und gib nur das Kommando ein, welches rechts der Eingabeaufforderung steht.
 
@@ -134,7 +134,7 @@ Es wäre schön zu sehen, wo wir uns befinden, oder? Lass uns nachsehen. Gib die
     C:\Users\olasitarska
     
 
-> Hinweis: "cd" steht für "Change Directory". Mit Powershell kannst du auch 'pwd' verwenden, wie auf Linux oder Mac OS X.
+> Hinweis: "cd" steht für "change directory". Mit Powershell kannst du auch 'pwd' verwenden, wie auf Linux oder Mac OS X.
 
 <!--endsec-->
 
