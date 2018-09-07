@@ -8,7 +8,7 @@ Django ist in Python geschrieben. Um mit Django zu arbeiten, müssen wir also er
 
 Finde zuerst heraus, ob auf deinem Computer eine 32-bit- oder 64-bit-Version von Windows läuft. Drücke dafür die Windows-Taste zusammen mit der Pause/Break-Taste, was das Systeminformationen-Fenster öffnen wird, und schau nach der "Systemtyp"-Zeile. Python für Windows kannst du auf der Webseite https://www.python.org/downloads/windows/ herunterladen. Klicke auf den "Latest Python 3 Release - Python x.x.x" Link. Wenn du eine **64-bit** Version von Windows benutzt, lade die Datei **Windows x86-64 executable installer** herunter. Andernfalls, lade den **Windows x86 executable installer** herunter. Führe den Installer nach dem Download (per Doppelklick) aus und folge den Anweisungen des Installationsprogramms.
 
-Eine Sache ist zu beachten: Während der Installation wirst du ein "Setup"-Fenster bemerken. Stell sicher, dass du das Kontrollkästchen "Python 3.6 zu Pfad hinzufügen" aktiviert hast. Klicke nun auf "Jetzt installieren", wie hier gezeigt:
+Eine Sache ist zu beachten: Während der Installation wirst du ein "Setup"-Fenster bemerken. Stell sicher, dass du das Kontrollkästchen "Add Python 3.6 to PATH" aktiviert hast. Klicke nun auf "Install Now", wie hier gezeigt:
 
 ![Vergiss nicht, Python zu dem Pfad hinzuzufügen](../python_installation/images/python-installation-options.png)
 
