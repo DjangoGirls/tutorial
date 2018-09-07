@@ -21,7 +21,7 @@ Hinweis: Falls du eine ältere Version von Windows verwendest (7, Vista oder äl
 1. Installiere alle Windows-Updates und versuche erneut, Python 3.6 zu installieren; oder
 2. Installiere eine [ältere Version von Python](https://www.python.org/downloads/windows/), z. B. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-Wenn du eine ältere Version von Python installierst, kann es sein, dass die Installationsanzeige etwas anders aussieht als oben gezeigt. Stell sicher, dass du nach unten scrollst bis du "python.exe zum Pfad hinzufügen" siehst, klicke den Button und wähle "Wird auf die lokale Festplatte installiert":
+Wenn du eine ältere Version von Python installierst, kann es sein, dass die Installationsanzeige etwas anders aussieht als oben gezeigt. Stell sicher, dass du nach unten scrollst bis du "Add python.exe to Path" siehst, klicke den Button und wähle "Will be installed on local hard drive":
 
 ![Python zum Pfad hinzufügen (Installer von älterer Python-Version)](../python_installation/images/add_python_to_windows_path.png)
 
