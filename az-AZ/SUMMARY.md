@@ -1,8 +1,8 @@
-# Summary
+# Xülasə
 
-* [Introduction](README.md)
-* [Installation](installation/README.md)
-* [Installation (chromebook)](chromebook_setup/README.md)
+* [Giriş](README.md)
+* [Quraşdırma](installation/README.md)
+* [Quraşdırma(chromebook)](chromebook_setup/README.md)
 * [How the Internet works](how_the_internet_works/README.md)
 * [Introduction to command line](intro_to_command_line/README.md)
 * [Python installation](python_installation/README.md)
