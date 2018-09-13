@@ -2,7 +2,7 @@
 
 ### Cloud 9
 
-Cloud 9는 코드 편집기를 제공하며, 인터넷상에서 작동하는 가상의 컴퓨터를 사용할 수 있도록 도와줍니다. 이러한 컴퓨터에서 소프트웨어를 설치하고, 만들고, 작동시킬 수 있습니다. 이 튜토리얼에서는, Cloud 9가 당신의 *로컬 컴퓨터* 역할을 합니다. 이번에도 OS X, Ubuntu, Windows 등에서 했던 것과 같이 터미널 화면에 명령어를 입력할 것입니다. 그러나 이번에는 터미널이, Cloud 9에서 당신을 위해 어디선가 돌리고 있는 가상의 컴퓨터에 연결됩니다.
+Cloud 9는 코드 편집기를 제공하며, 인터넷상에서 작동하는 가상의 컴퓨터를 사용할 수 있도록 도와줍니다. 이 컴퓨터에서는 소프트웨어를 설치하고, 만들고, 작동시킬 수 있습니다. 이 튜토리얼에서는, Cloud 9가 당신의 *로컬 컴퓨터* 역할을 합니다. 이번에도 OS X, Ubuntu, Windows 등에서 했던 것과 같이 터미널 화면에 명령어를 입력할 것입니다. 그러나 이번에는 터미널이, Cloud 9에서 당신을 위해 어디선가 돌리고 있는 가상의 컴퓨터에 연결됩니다.
 
 1. [크롬 웹 스토어](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)에서 Cloud 9 설치하기
 2. [c9.io](https://c9.io)로 들어가기
@@ -49,7 +49,7 @@ Cloud 9 화면 하단의 터미널에, 다음의 명령어를 실행합니다:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+[Github](https://github.com) 계정을 만드세요.
 
 ### PythonAnywhere
 
