@@ -471,11 +471,11 @@ Harika! Şu an programlama hakkında birçok şey biliyorsun. Bu kısımda, şun
 - **listeler** - belirli bir sırada tutulan nesnelerin listesi
 - **sözlükler** - anahtar-değer çifti olarak tutulan nesneler
 
-Bir sonraki part için heyecanlı mısınız? :)
+Bir sonraki bölüm için heyecanlı mısınız? :)
 
 ## Karşılaştırma
 
-> Evden okuyanlar için: Bu kısım [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) vidyosunda anlatılıyor.
+> Evden okuyanlar için: Bu kısım [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) videosunda anlatılıyor.
 
 A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
