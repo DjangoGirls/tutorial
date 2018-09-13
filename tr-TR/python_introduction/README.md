@@ -621,7 +621,7 @@ Açıkça, artık oldukça deneyimli Python programcısısın, bu yüzden bugün
 
 Şimdi dosyayı tanımlayıcı bir isimle kaydetmemiz gerekir. Dosyanın ismine **python_intro.py** diyelim ve masaüstüne kaydedelim. Dosyaya istediğimiz ismi verebiliriz, burada önemli olan kısım dosyanın **.py** uzantısı ile bitmesidir. **.py** uzantısı işletim sistemimize bu dosyanın bir **python çalıştırılabilir dosyası** olduğunu ve Python'un bu dosyayı çalıştırabileceğini belirtiyor.
 
-> **Not** Kod editörleriyle ilgili en harika şeylerden birine dikkat etmelisiniz: renkler! Python konsolunda herşey aynı renkteydi; şimdi bakın `print` fonksiyonu dizeden farklı renkte. Bunun ismi "söz dizimi vurgulama" ve kod yazarken gerçekten yararlı bir özellik. Koddaki renkler ipucu verir, kapanmamış dizeler gibi yada aşağıda göreceğimiz (`def` fonksiyonu gibi imla hatası içeren anahtar kelimeler olabilir). Bu kod düzenleyicisi kullanma nedenlerimizden biri. :)
+> **Not** Kod editörleriyle ilgili en harika şeylerden birine dikkat etmelisiniz: renkler! Python konsolunda herşey aynı renkteydi; şimdi bakın `print` fonksiyonu dizeden farklı renkte. Bunun ismi "söz dizimi vurgulama" ve kod yazarken gerçekten yararlı bir özellik. Koddaki renkler ipucu verir, kapanmamış dizeler gibi ya da aşağıda göreceğimiz (`def` fonksiyonu gibi imla hatası içeren anahtar kelimeler olabilir). Bu kod düzenleyicisi kullanma nedenlerimizden biri. :)
 
 Dosyayı kaydettiğimize göre artık çalıştırabiliriz! Konsoldan **klasör değiştirme ** yaparak masaüstüne ulaşın, komut satırı bölümünde öğrendiklerinizi hatırlayın.
 
@@ -896,7 +896,7 @@ def hi(name):
     elif name == 'Zeynep':
         print('Merhaba Zeynep!')
     else:
-        print('Merhaba anonim!')
+        print('Merhaba yabancı!')
 
 hi()
 ```
@@ -987,7 +987,7 @@ Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-kızlar = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Sen']
+kızlar = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
 ```
 
 Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiyonunu döngü içinde kullanabiliriz:
@@ -1008,7 +1008,7 @@ Dosyada yer alacak tam kod aşağıdadır:
 def hi(name):
     print('Merhaba ' + name + '!')
 
-girls = ['Seda','Gül', 'Pınar', 'Ayşe', ' 'Sen']
+girls = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
 for name in girls:
     hi(name)
     print('Sıradaki kız')
