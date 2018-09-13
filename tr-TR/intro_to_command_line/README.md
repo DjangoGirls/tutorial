@@ -1,8 +1,8 @@
 # Komut satırı arayüzüne giriş
 
-> Evden okuyanlar için: Bu bölüm [ içinde anlatıldı. Yeni arkadaşınız: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Evden okuyanlar için: Bu bölüm [ Yeni arkadaşınız: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) videosu içinde anlatıldı.
 
-Heyecanlı değil mi?! Birkaç dakika içinde ilk kod satırını yazacaksın! :)
+Heyecanlı değil mi?! Birkaç dakika içinde ilk kod satırınızı yazacaksın! :)
 
 **Sizi yeni arkadaşınızla tanıştıralım: komut satırı!**
 
@@ -20,9 +20,9 @@ Birkaç deneme yapmak için önce komut satırı arabirimini açmamız gerekir.
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Başlat'a gidin → windows sistemi → Komut istemcisi.
+Başlat'a gidin → Windows sistemi → Komut istemcisi.
 
-> Daha eski bir windows sistemi için, Başlat menüsü →Tüm programlar → aksesuarlar → Komut istemcisi.
+> Daha eski bir windows sistemi için, Başlat menüsü →Tüm programlar → Aksesuarlar → Komut istemcisi.
 
 <!--endsec-->
 
@@ -66,7 +66,7 @@ Windows'da ise `>` işareti göreceksiniz, bunun gibi:
 
 Tüm komutlar bu işaret ve bir boşluktan sonra gelir fakat bunu yazmak zorunda değilsiniz. Bilgisayarınız bunu sizin için yapacaktır. :)
 
-> Küçük bir not: sizin durumunuzda `C:\Users\ola>` veya `Olas-MacBook-Air:~ ola$` benzeri bir durumda olabilir ve kesinlikle tamamdır.
+> Küçük bir not: sizin durumunuzda `C:\Users\ola>` veya `Olas-MacBook-Air:~ ola$` benzeri bir durumda olabilir ve kesinlikle sorun yok.
 
 Başında `$` veya `>` içeren kısımlar *komut satırı istemi* veya kısaca *komut istemi*'dir. Buraya bir şeyler girilir.
 
@@ -221,7 +221,7 @@ Gerçekten değişmiş mi bir bakalım:
 
 İşte oldu!
 
-> Profesyonel İpucu: Eğer `cd D` yazarsanız ve klavyenizden `tab`'a basarsanız, komut satırıismin geri kalanını tamamlar ve daha hızlı gezersiniz. Eğer "D" ile başlayan birden fazla klasör varsa, diğer seçenekleri görmek için `tab` tuşuna iki kez basın.
+> Profesyonel İpucu: Eğer `cd D` yazarsanız ve klavyenizden `tab`'a basarsanız, komut satırı ismin geri kalanını tamamlar ve daha hızlı gezersiniz. Eğer "D" ile başlayan birden fazla klasör varsa, diğer seçenekleri görmek için `tab` tuşuna iki kez basın.
 
 * * *
 
