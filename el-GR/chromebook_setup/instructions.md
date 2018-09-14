@@ -55,6 +55,6 @@
 
 Το tutorial του Django Girls περιλαμβάνει μια ενότητα γι' αυτό που λέγεται Deployment, το οποίο είναι η διαδικασία του να πάρεις τον κώδικα που τροφοδοτεί τη νέα σου διαδικτυακή εφαρμογή και να τον βάλεις σε έναν δημοσίως προσβάσιμο υπολογιστή (ο οποίος ονομάζεται server), ώστε άλλοι άνθρωποι να μπορούν να δουν τη δουλειά σου.
 
-Αυτό το μέρος είναι λίγο περίεργο όταν κάνεις το φροντιστήριο σε ένα Chromebook μιας και χρησιμοποιούμε ήδη έναν υπολογιστή ο οποίος είναι στο διαδίκτυο ( σε αντίθεση, ας πούμε, με ένα φορητό υπολογιστή). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Για σένα που κάνεις το tutorial στο Chromebook σου και ήδη χρησιμοποιείς έναν άλλο υπολογιστή κάπου στο διαδίκτυο μέσω του Cloud 9, το κομμάτι αυτό ίσως σου φαίνεται λίγο περίεργο. Παρ' όλα αυτά είναι χρήσιμο, αν θεωρήσεις το workspace σου στο Cloud 9 ως το χώρο για τη δουλειά σε εξέλιξη και το PythonAnywhere ως το χώρο όπου εκθέτεις τη δουλειά σου, όταν αυτή είναι πιο ολοκληρωμένη.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
