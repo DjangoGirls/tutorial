@@ -122,7 +122,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+只留下一件事了，我们需要将这两个模板连接在一起。这就是扩展模板的全部内容！我们将通过在文件开头增加 extends 标记来实现此目的，就像这样：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+就是这样了！保存文件，检查你的网站是否仍在正常运行。:）
 
 > 如果你得到error `TemplateDoesNotExist`, 这个意味着这里没有`blog/base.html`文件，你需要运行`runserver` 在终端中。 Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
