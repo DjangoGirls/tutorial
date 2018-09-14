@@ -179,8 +179,8 @@ PythonAnywhere에서도 내 컴퓨터에 있는 것과 같이 작동할 수 있�
 ```
 $ cd my-first-blog
 
-$ virtualenv --python=python3.6 myvenv
-Running virtualenv with interpreter /usr/bin/python3.6
+$ virtualenv --python=python3.5 myvenv
+Running virtualenv with interpreter /usr/bin/python3.5
 [...]
 Installing setuptools, pip...done.
 
@@ -217,7 +217,7 @@ Operations to perform:
 
 로고를 클릭해 PythonAnywhere 대시보드로 와서 **Web**을 클릭하고 **Add a new web app**를 선택하세요.
 
-도메인 이름을 확정한 후, 대화창에 **수동설정(manual configuration)** ("Django"옵션이 *아니에요*) 을 클릭하세요. 다음, **Python 3.6**을 선택하고 다음(Next)을 클릭하면 마법사가 종료됩니다.
+도메인 이름을 확정한 후, 대화창에 **수동설정(manual configuration)** ("Django"옵션이 *아니에요*) 을 클릭하세요. 다음, **Python 3.5**을 선택하고 다음(Next)을 클릭하면 마법사가 종료됩니다.
 
 > **Note** "Django"가 아니라 꼭 "수동설정(Manual configuration)"을 선택하세요. 기본 PythonAnywhere Django 설정을 위해서는 이렇게 하는 것이 더 좋아요. ;-)
 
