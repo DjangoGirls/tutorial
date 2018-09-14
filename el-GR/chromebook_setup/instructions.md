@@ -6,8 +6,8 @@
 
 1. Εγκατάστησε το Cloud 9 από το [web store του Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Πήγαινε στο [c9.io](https://c9.io)
-3. Δημιουργήστε λογαριασμό
-4. Κάντε κλικ στο * Create a New Workspace*
+3. Δημιούργησε λογαριασμό
+4. Κάνε κλικ στο *Create a New Workspace*
 5. Ονομάστε το *django-girls*
 6. Επιλέξτε το *Βlank*(Δεύτερο από δεξιά στην κάτω γραμμή με το πορτοκαλί λογότυπο)
 
