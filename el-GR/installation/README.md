@@ -2,13 +2,13 @@
 
 Αν κάνεις το tutorial στο σπίτι και όχι στο πλαίσιο ενός [Django Girls event](https://djangogirls.org/events/), μπορείς να αγνοήσεις εντελώς αυτό το κεφάλαιο και να πας κατευθείαν στο κεφάλαιο [Πώς δουλεύει το internet](../how_the_internet_works/README.md).
 
-Αυτό γιατί το περιεχόμενο του συγκεκριμένου κεφαλαίου καλύπτεται σταδιακά στο υπόλοιπο tutorial ούτως ή άλλως, απλώς αυτή η σελίδα παρουσιάζει συγκεντρωμένες όλες τις οδηγίες εγκατάστασης. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+Αυτό γιατί το περιεχόμενο του συγκεκριμένου κεφαλαίου καλύπτεται σταδιακά στο υπόλοιπο tutorial ούτως ή άλλως, απλώς αυτή η σελίδα παρουσιάζει συγκεντρωμένες όλες τις οδηγίες εγκατάστασης. Συνήθως, τα Django Girls events περιλαμβάνουν και ένα "installation evening", όποτε και γίνονται όλες οι απαραίτητες εγκαταστάσεις ώστε να μην μας απασχολούν κατά τη διάρκεια του workshop, συνεπώς αυτό το κεφάλαιο είναι περισσότερο χρήσιμο για όσες συμμετέχουν στο event.
 
-If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+Αν βέβαια το θεωρείς χρήσιμο, μπορείς φυσικά να ακολουθήσεις και το παρόν κεφάλαιο. Αν ωστόσο προτιμάς να ξεκινήσεις μαθαίνοντας πράγματα πριν κάνεις όλες τις εγκαταστάσεις που απαιτούνται, παράλειψε το κεφάλαιο αυτό και εμείς θα σου δώσουμε όλες τις απαραίτητες οδηγίες στην πορεία.
 
-Good luck!
+Καλή επιτυχία!
 
-# Installation
+# Εγκατάσταση
 
 In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
 
