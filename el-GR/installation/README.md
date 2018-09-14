@@ -1,8 +1,8 @@
-# If you're doing the tutorial at home
+# Για σένα που κάνεις το tutorial από το σπίτι
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+Αν κάνεις το tutorial στο σπίτι και όχι στο πλαίσιο ενός [Django Girls event](https://djangogirls.org/events/), μπορείς να αγνοήσεις εντελώς αυτό το κεφάλαιο και να πας κατευθείαν στο κεφάλαιο [Πώς δουλεύει το internet](../how_the_internet_works/README.md).
 
-This is because we cover these things in the whole tutorial anyway, and this is just an additional page that gathers all of the installation instructions in one place. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+Αυτό γιατί το περιεχόμενο του συγκεκριμένου κεφαλαίου καλύπτεται σταδιακά στο υπόλοιπο tutorial ούτως ή άλλως, απλώς αυτή η σελίδα παρουσιάζει συγκεντρωμένες όλες τις οδηγίες εγκατάστασης. The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
 
 If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
 
