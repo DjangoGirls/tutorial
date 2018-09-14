@@ -10,38 +10,38 @@
 
 # Εγκατάσταση
 
-In the workshop you will be building a blog, and there are a few setup tasks in the tutorial which would be good to work through beforehand so that you are ready to start coding on the day.
+Στη διάρκεια του workshop θα φτιάξεις ένα blog, η κατασκευή του οποίου απαιτεί μερικές ρυθμίσεις, τις οποίες καλό είναι να κάνεις προηγουμένως ώστε να είσαι σε θέση να ξεκινήσεις να γράφεις κώδικα την ήμερα του workshop.
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Install Python
+# Εγκατάστησε την Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Εγκατάστησε έναν code editor
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Ρύθμισε το εικονικό σου περιβάλλον και εγκατάστησε το Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Εγκατάστησε το Git
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Δημιούργησε λογαριασμό στο GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account.
+Πήγαινε στο [GitHub.com](https://www.github.com) και κάνε έναν δωρεάν λογαριασμό.
 
-# Create a PythonAnywhere account
+# Δημιούργησε λογαριασμό στο PythonAnywhere
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Άρχισε να διαβάζεις
 
 Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
