@@ -4,8 +4,8 @@
 
 Το Cloud 9 είναι ένα εργαλείο, το οποίο σου παρέχει έναν code editor και πρόσβαση σε έναν υπολογιστή, κάπου στο διαδίκτυο, όπου μπορείς να εγκαταστήσεις, να γράψεις και να τρέξεις λογισμικό. Σε όλη τη διάρκεια του workshop, το Cloud 9 θα λειτουργεί σαν *το τοπικό σου μηχάνημα*. Με αυτόν τον τρόπο θα μπορείς να τρέχεις εντολές σε ένα τερματικό περιβάλλον, ακριβώς όπως και οι συμμαθητές σου που χρησιμοποιούν OS X, Ubuntu ή Windows, με τη διαφορά ότι το δικό σου τερματικό θα είναι συνδεδεμένο με έναν υπολογιστή κάπου στο διαδίκτυο, στον οποίο το Cloud 9 έχει κάνει όλες τις απαραίτητες ρυθμίσεις για σένα.
 
-1. Εγκαταστήστε το Cloud 9 από το [ web store του Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Πηγαίντε στο [c9.io](https://c9.io)
+1. Εγκατάστησε το Cloud 9 από το [web store του Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Πήγαινε στο [c9.io](https://c9.io)
 3. Δημιουργήστε λογαριασμό
 4. Κάντε κλικ στο * Create a New Workspace*
 5. Ονομάστε το *django-girls*
