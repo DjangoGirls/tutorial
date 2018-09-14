@@ -194,10 +194,10 @@ Tal y como hiciste en tu propio ordenador, puedes crear un virtualenv en PythonA
     
     20:20 ~ $ source myvenv/bin/activate
     
-    (myvenv)20:20 ~ $  pip install django==1.8 whitenoise
+    (myvenv)20:20 ~ $  pip install django==1.8 whitenoise==3.3
     Collecting django
     [...]
-    Successfully installed django-1.8 whitenoise-1.0.6
+    Successfully installed django-1.8 whitenoise-3.3.0
     
 
 <!--TODO: think about using requirements.txt instead of pip install.-->
