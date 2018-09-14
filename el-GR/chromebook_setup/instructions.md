@@ -57,4 +57,4 @@
 
 Για σένα που κάνεις το tutorial στο Chromebook σου και ήδη χρησιμοποιείς έναν άλλο υπολογιστή κάπου στο διαδίκτυο μέσω του Cloud 9, το κομμάτι αυτό ίσως σου φαίνεται λίγο περίεργο. Παρ' όλα αυτά είναι χρήσιμο, αν θεωρήσεις το workspace σου στο Cloud 9 ως το χώρο για τη δουλειά σε εξέλιξη και το PythonAnywhere ως το χώρο όπου εκθέτεις τη δουλειά σου, όταν αυτή είναι πιο ολοκληρωμένη.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Κάνε λοιπόν, λογαριασμό στο PythonAnywhere ακολουθώντας αυτόν τον σύνδεσμο [www.pythonanywhere.com](https://www.pythonanywhere.com).
