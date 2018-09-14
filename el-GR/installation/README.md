@@ -43,16 +43,16 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Άρχισε να διαβάζεις
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Συγχαρητήρια, όλα έχουν ρυθμιστεί σωστά και είσαι πανέτοιμη! Αν έχεις ακόμα χρόνο πριν το workshop, ίσως να σε βοηθούσε να ξεκινήσεις να διαβάζεις μερικά από τα εισαγωγικά κεφάλαια:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Πώς δουλεύει το internet](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Εισαγωγή στο τερματικό (command line)](../intro_to_command_line/README.md)
 
 * [Εισαγωγή στην Python](../python_introduction/README.md)
 
 * [Τι είναι το Django;](../django/README.md)
 
-# Enjoy the workshop!
+# Καλά να περάσεις στο workshop!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Όταν ξεκινήσει το workshop, εσύ μπορείς να πας αμέσως στο [Your first Django Project!](../django_start_project/README.md), αφού έχεις ήδη καλύψει το υλικό των ενδιάμεσων ενοτήτων στα προηγούμενα κεφάλαια.
