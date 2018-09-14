@@ -12,3 +12,7 @@ install:
   - gitbook install
 
 script: gitbook build
+
+branches:
+  except:
+  - crowdin_master

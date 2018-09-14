@@ -35,7 +35,7 @@ Kontrolliere deine überarbeitete Webseite unter: http://127.0.0.1:8000
 
 Der Fehler sollte weg sein! Toll :) Deine Webseite ist allerdings noch leer, weil dein Template leer ist. Das müssen wir ändern.
 
-Füge folgenden Text in deine Template-Datei ein:
+Öffne die neue Datei im Code-Editor, und füge Folgendes hinzu:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -212,8 +212,8 @@ Nachdem wir das gemacht haben, laden (push) wir unsere Änderungen auf GitHub:
 
 (Denke daran &lt;dein pythonanywere-Benutzername> durch deinen PythonAnywhere-Benutzernamen zu ersetzen - ohne spitze Klammern).
 
-Schau zu, wie dein Code runtergeladen wird! Wenn du prüfen willst, ob der Code angekommen ist, kannst du zum **Files Tab** rüberspringen und deinen Code auf PythonAnywhere sehen.
+Und sieh zu, wie dein Code heruntergeladen wird. Wenn du überprüfen willst, dass er angekommen ist, geh' hinüber zur **Seite "Files"** and schau deinen Code auf PythonAnywhere an (du kannst andere PythonAnywhere-Seiten über den Menü-Knopf auf der Konsolen-Seite erreichen).
 
-* Spring anschließend rüber zum [Web Tab](https://www.pythonanywhere.com/web_app_setup/) und klick auf **Neu laden** in deinem Browser.
+* Spring anschließend rüber zur [Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) und klick auf **Neu laden** in deinem Browser.
 
 Dein Update sollte live sein! Lade die Seite neu in deinem Browser. Es sollten nun Änderungen zu sehen sein. :)

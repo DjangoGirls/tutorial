@@ -27,8 +27,8 @@ Git verwaltet die Veränderungen an einer Sammlung von Dateien in einem sogenann
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config --global user.name "Dein Name"
-    $ git config --global user.email du@beispiel.com
-
+    $ git config --global user.email du@example.com
+    
 
 Die Initialisierung des Git-Repositorys müssen wir für jedes Projekt nur einmal machen (danach musst Du Benutzernamen und Mail-Adresse nie wieder eingeben).
 
@@ -95,13 +95,13 @@ Erstelle dann ein neues Repository und gib ihm den Namen "my-first-blog". Lass d
 
 > **Achtung:** Der Name `my-first-blog` ist wichtig -- du kannst auch einen anderen wählen, aber er wird im Folgenden noch sehr oft vorkommen und du wirst immer daran denken müssen, ihn in den Anweisungen entsprechend anzupassen. Es ist wahrscheinlich einfacher, bei `my-first-blog` zu bleiben.
 
-Auf der nächsten Seite wird dir die Clone-URL deines Repos angezeigt. Nimm die HTTPS-Variante, kopiere sie, damit wir sie dann gleich in die Konsole einfügen können:
+In der nächsten Ansicht wirst du die clone-URL deines Repositorys sehen, die du in manchen der folgenden Kommandozeilenbefehlen verwenden wirst:
 
 ![](images/github_get_repo_url_screenshot.png)
 
 Nun müssen wir das Git-Repository auf deinem Computer mit dem auf GitHub verbinden.
 
-Gib Folgendes in deine Konsole ein (ersetze dabei `<your-github-username>` durch deinen Benutzernamen, den du bei der Erstellung deines GitHub-Kontos benutzt hast, aber ohne die eckigen Klammern):
+Gib das Folgende auf der Kommandozeile ein (ersetzte `<your-github-username>` mit dem Benutzernamen, den du beim Erstellen deines GitHub-Accounts gewählt hast, aber ohne die spitzen Klammern -- die URL sollte der clone-URL entsprechen, die du vorhin gerade gesehen hast):
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Um eine Web App auf PythonAnywhere publizieren zu können, muss dein Code von Gi
 
 Nach diesem Befehl solltest du in etwa Folgendes sehen: `Collecting pythonanywhere`, und irgendwann den Schluss `Successfully installed (...) pythonanywhere- (...)`.
 
-Nun können wir mit dem Hilfstool unsere App von GitHub automatisch konfigurieren. Tippe das Folgende in die Konsole auf PythonAnywhere (vergiss nicht deinen GitHub-Benutzernamen an Stelle von `<your-github-username>` zu benutzen):
+Nun können wir mit dem Hilfstool unsere App von GitHub automatisch konfigurieren. Gib das Folgende in der Konsole auf PythonAnywhere ein (vergiss nicht, deinen GitHub-Benutzernamen an Stelle von `<your-github-username>` zu benutzen, so dass die URL der clone-URL von GitHub entspricht):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -191,11 +191,11 @@ Nun kannst auch einen Blick auf deinen Code auf PythonAnywhere werfen mittels `l
     templates  tests.py  urls.py  views.py
     
 
-Du kannst auch über den "Files"-Tab mit dem PythonAnywhere Built-in File Browser navigieren.
+Du kannst auch auf die "Files"-Seite gehen und mit PythonAnywheres eingebautem Datei-Manager navigieren. (Von der "Console"-Seite gelangst über das Menü in der rechten oberen Ecke zu anderen PythonAnywhere-Seiten. Sobald du auf einer dieser Seiten bist, findest du die Links zu den anderen Seiten oben über dem Seiteninhalt.)
 
 ## Du bist jetzt live!
 
-Nun ist deine Site also live im öffentlichen Internet! Klick dich bis zum PythonAnywhere "Web"-Tab durch und hole dir den Link. Teile ihn so oft du willst :)
+Nun ist deine Site also live im öffentlichen Internet! Klick dich zur PythonAnywhere "Web"-Seite durch und hole dir den Link. Teile ihn, so oft du willst :)
 
 > **Hinweis:** Da es sich hier um ein Anfänger-Tutorial handelt, haben wir ein paar Abkürzungen genommen, um die Site zu veröffentlichen, welche sicherheitstechnisch nicht ideal sind. Fall du dich entscheidest, dieses Projekt weiterzubauen oder ein neues Projekt anzufangen, dann solltest du die [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) durchgehen, um einige Tipps zur Absicherung deiner Seite zu erhalten.
 
@@ -207,7 +207,7 @@ Solltest du beim Ausführen des `pa_autoconfigure_django.py` Skripts eine Fehler
 - Du hast in deiner GitHub-URL einen Fehler gemacht.
 - Falls du die Fehlermeldung *"Could not find your settings.py"* erhältst, liegt das wahrscheinlich daran, dass du nicht alle Files zum Git hinzugefügt und/oder diese nicht erfolgreich auf GitHub veröffentlicht hast. Schau dir nochmals den Git-Abschnitt weiter oben an.
 
-Falls du eine Fehlermeldung erhältst, wenn du versuchst deine Site aufzurufen, solltest du als erstes die Debugging Informationen im **error log** anschauen. Den Link dazu findest du über den PythonAnywhere [Web Tab](https://www.pythonanywhere.com/web_app_setup/). Schau nach, ob darin Fehlermeldungen enthalten sind; die neuesten findest du ganz unten.
+Falls du eine Fehlermeldung erhältst, wenn du versuchst, deine Site aufzurufen, solltest du als Erstes die Debugging-Informationen im **error log** anschauen. Den Link dazu findest du über [die PythonAnywhere-Seite "Web"](https://www.pythonanywhere.com/web_app_setup/). Schau nach, ob darin Fehlermeldungen enthalten sind; die neuesten findest du ganz unten.
 
 Du findest einige [Allgemeine Debugging Tipps im PythonAnywhere Wiki](http://help.pythonanywhere.com/pages/DebuggingImportError).
 

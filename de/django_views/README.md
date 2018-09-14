@@ -8,7 +8,7 @@ Views kommen in die `views.py` Datei. Wir fügen nun also unsere *Views* zur Dat
 
 ## blog/views.py
 
-OK, wir öffnen jetzt diese Datei und schauen, was darin steht:
+OK, wir öffnen jetzt diese Datei in unserem Code-Editor und schauen, was darin steht:
 
 {% filename %}blog/views.py{% endfilename %}
 
