@@ -1,4 +1,4 @@
-> Para leitoras em casa: esse capítulo é aboradado no vídeo [Instalando Python & Editor de Código](https://www.youtube.com/watch?v=pVTaqzKZCdA).
+> Para leitoras em casa: esse capítulo é abordado no vídeo [Instalando Python & Editor de Código](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
 > Esta seção baseia-se em tutoriais das Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
