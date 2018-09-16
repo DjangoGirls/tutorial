@@ -4,7 +4,7 @@ Eğer tutorial'ı [Django Girls etkinliklerinden](https://djangogirls.org/events
 
 Çünkü burada anlatılanları tutorial boyunca zaten işliyoruz, bu kısım kurulum talimatlarının tek yerde toparlandığı ek bir sayfa sadece. Django Girls etkinliği, çalıştay boyunca tekrar kurulumla uğraşmamak adına her şeyi yüklediğimiz bir "Kurulum akşamı" içeriyor.
 
-Eğer bunu yararı bulduysanız, bu bölümü de takip edebilirsiniz. Ama bilgisayarınıza birkaç şey yüklemeden önce bir şeyler öğrenmeye başlamak istiyorsanız, bu bölümü atlayın. Daha sonra kurulum kısmını size açıklayacağız.
+Eğer bunu yararlı bulduysanız, bu bölümü de takip edebilirsiniz. Ama bilgisayarınıza birkaç şey yüklemeden önce bir şeyler öğrenmeye başlamak istiyorsanız, bu bölümü atlayın. Daha sonra kurulum kısmını size açıklayacağız.
 
 İyi şanslar!
 
@@ -55,4 +55,4 @@ Tebrikler, ayarlarınız tamam ve hazırsınız! Eğer atölyeden önce hala vak
 
 # Çalışmanın tadına varın!
 
-İşe başladığınızda direk [Your first Django project!](../django_start_project/README.md) gidebilirsiniz çünkü çoktan önceki bölümlerde bu konuları çözdük.
+İşe başladığınızda doğrudan [Your first Django project!](../django_start_project/README.md) gidebilirsiniz çünkü çoktan önceki bölümlerde bu konuları çözdük.
