@@ -2,7 +2,7 @@
 
 Django'nun size sunduğu başka bir güzellik de **template genişletmek**tir. O da ne demek? Şu demek, HTML dosyanızın bazı bölümlerini birden fazla sayfanızda kullanabilirsiniz.
 
-Templatelar aynı bilgiyi ya da yerleştirmeyi (layout) birden fazla yerde kullanmak istediğinizde yardım ederler. Yaptığınızı her dosya için tekrar etmek zorunda kalmazsınız. Ve bir şey değiştimek isterseniz, tüm templatelarda değil sadece bir tanesinde değiştirirsiniz!
+Templatelar aynı bilgiyi ya da yerleştirmeyi (layout) birden fazla yerde kullanmak istediğinizde yardım ederler. Yaptığınızı her dosya için tekrar etmek zorunda kalmazsınız. Ve bir şey değiştirmek isterseniz, tüm templatelarda değil sadece bir tanesinde değiştirirsiniz!
 
 ## Bir Temel Template Oluştur
 
@@ -75,7 +75,7 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
 </body>
 ```
 
-{% raw %}Her şeyin bununla değiştirildiğini farkedebilirsiniz`{% for post in posts %}`dan`{% endfor %}`bununla:{% endraw %}
+{% raw %}Her şeyin bununla değiştirildiğini fark edebilirsiniz`{% for post in posts %}`dan`{% endfor %}`bununla:{% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -104,7 +104,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 
 Bunu, bütün içerik blokları için şablonumuzun bir parçası olarak kullanmak istiyoruz. Şimdi bu dosyaya blok etiketleri ekleme zamanı!
 
-{% raw %}Blok etiketinizin `base.html` dosyanızdaki etikete uymasını istiyorsunuz. Ayrıca içerik bloklarınına ait bütün koduda dahil etmek istiyorsun. Bunu yapmak için, herşeyi `{% block content %}`ve`{% endblock %}`'un arasına yerleştir. Şunun gibi:{% endraw %}
+{% raw %}Blok etiketinizin `base.html` dosyanızdaki etikete uymasını istiyorsunuz. Ayrıca içerik bloklarınına ait bütün kodu da dahil etmek istiyorsun. Bunu yapmak için, her şeyi `{% block content %}`ve`{% endblock %}`'un arasına yerleştir. Şunun gibi:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ Bunu, bütün içerik blokları için şablonumuzun bir parçası olarak kullanm
 {% endblock %}
 ```
 
-Geriye tek birşey kaldı. Bu iki şablonu birbirine bağlamamız gerekiyor. Genişleyen şablonlar tam da bununla ilgili! Bunu dosyanın başlangıcına genişleyebilir etiketler ekleyerek yapacağız. Bunun gibi:
+Geriye tek bir şey kaldı. Bu iki şablonu birbirine bağlamamız gerekiyor. Genişleyen şablonlar tam da bununla ilgili! Bunu dosyanın başlangıcına genişleyebilir etiketler ekleyerek yapacağız. Bunun gibi:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
