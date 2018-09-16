@@ -99,7 +99,7 @@ Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil 
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
-Tebrikler! Şimdi Django admin üzerinden yeni bir gönderi eklemeyi deneyin (published_date eklemeyi unutmayın!) PythonAnywhere sitenizinin Django admininde olduğunuzdan emin olun, https://yourname.pythonanywhere.com/admin. Arkasından gönderileri görebilmek için ordaki sayfanızı yenileyin.
+Tebrikler! Şimdi Django admin üzerinden yeni bir gönderi eklemeyi deneyin (published_date eklemeyi unutmayın!) PythonAnywhere sitenizin Django admininde olduğunuzdan emin olun, https://yourname.pythonanywhere.com/admin. Arkasından gönderileri görebilmek için oradaki sayfanızı yenileyin.
 
 Şiir gibi çalışıyor, değil mi? Gurur duyabiliriz! Şimdi bilgisayar başından bir süre kalkalım, çünkü bir molayı hak ettik. :)
 
