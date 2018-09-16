@@ -110,7 +110,7 @@ Bu *kapatma* etiketleri ve *yuvalama* ögeleri kurallarını takip etmeye ihtiya
 * `<ul><li>ilk madde</li><li>ikinci madde</li></ul>` - tıpkı bunun gibi bir liste yapar!
 * `<div></div>` - sayfanın bir bölümünü tanımlar
 
-İşte komple bir şablon örneği,kopyalayın ve `blog/templates/blog/post_list.html` içine yapıştırın:
+İşte komple bir template örneği, kopyalayın ve `blog/templates/blog/post_list.html` içine yapıştırın:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
