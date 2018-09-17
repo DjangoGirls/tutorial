@@ -66,7 +66,7 @@ Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştu�
 
 ## Ayarları değiştirme
 
-Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önceden kurduğunuz kod düzenleyicinizi (editör)kullanarak dosyayı açın.
+Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önceden kurduğunuz kod düzenleyicinizi (editör) kullanarak dosyayı açın.
 
 **Not**: `settings.py` dosyasının da diğerleri gibi normal bir dosya olduğunu aklınızda tutun. Bunu kod düzenleyicisi içerisinde "dosya -> aç" menü eylemini kullanarak açabilirsiniz. Bu, size `settings.py` dosyanıza gidebileceğiniz ve bu dosyayı seçebileceğiniz her zamanki klasik pencereyi açacaktır. Alternatif olarak, bu dosyayı masaüstünüzdeki djangogirls klasörüne gidip sağ tıklayarak açabilirsiniz. Sonra, listeden kod düzenleyicinizi seçin. Dosyayı açabilen ancak düzenlemenize izin vermeyecek diğer programların yüklü olması ihtimaline karşın kod düzenleyicinin seçilmesi önem arz etmektedir.
 
@@ -80,7 +80,7 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zama
 TIME_ZONE = 'Europe/Istanbul'
 ```
 
-Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django birçok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Bir dil kodu, dil (ör. İngilizce için `en` veya Almanca için `de`) ve ülke kodundan (ör. Almanya için `de` veya İsviçre için `ch`) oluşmaktadır. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django birçok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 Farklı bir dil istiyorsanız, aşağıdaki satırı değiştirerek dil kodunu seçin:
 
