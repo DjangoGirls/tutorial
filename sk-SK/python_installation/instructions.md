@@ -75,7 +75,7 @@ Použi v konzole tento príkaz:
     $ sudo dnf install python3
     
 
-Ak používaš staršiu verziu Fedora, možno sa ti objaví chyba, že príkaz `dnf` neexistuje. V tomto prípade musíš použiť príkaz yum.
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
 
 <!--endsec-->
 
