@@ -75,7 +75,7 @@ data-collapse=true ces-->
     $ sudo dnf install python3
     
 
-古いバージョンのFedoraの場合は、コマンド `dnf` が見つからないというエラーが表示されます。その場合は、代わりに yum を使用してください。
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
 
 <!--endsec-->
 
