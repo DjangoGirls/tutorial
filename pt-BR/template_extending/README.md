@@ -17,7 +17,7 @@ Vamos criar um arquivo `base.html` na pasta `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+Em seguida, abra o arquivo no editor de código e copie tudo de `post_list.html` para `base.html`, desse jeito:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Então, em `base.html`, substitua todo o seu `<body>` (tudo entre `<body>` e `</
 
 Mas por quê? Você acabou de criar um `bloco`! Você usou o a etiqueta de template (template tag) `{% block %}` para criar uma área que terá HTML inserido nela. Esse HTML virá de outro template que vai estender este template (`base.html`). Nós vamos te mostrar como fazer isso já já.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %} Remova tudo acima de `{% for post in posts %}` e abaixo de `{% endfor %}`. Quando terminar, o arquivo deve estar parecido com isso: {% endraw %}
+Agora, salve `base.html` e abra novamente o seu `blog/templates/blog/post_list.html` no editor de código. {% raw %} Remova tudo acima de `{% for post in posts %}` e abaixo de `{% endfor %}`. Quando terminar, o arquivo deve estar parecido com isso: {% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Só falta uma coisa. Precisamos juntar estes dois templates. Isto é o que signi
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+É isso! Salve o arquivo e veja se o seu site ainda está funcionando corretamente. :)
 
 > Se você receber o erro `TemplateDoesNotExist`, significa que não há um arquivo em `blog/base.html` e você está rodando o `runserver` na janela do terminal. Tente encerrá-lo (apertando Ctrl+C -- as teclas Control e C juntas) e reiniciá-lo rodando o comando `python manage.py runserver`.
