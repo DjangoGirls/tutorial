@@ -1,4 +1,4 @@
-Voit [ohittaa tämän osan](http://tutorial.djangogirls.org/en/installation/#install-python), jos et käytä Chromebookia. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+Voit [ohittaa tämän osan](http://tutorial.djangogirls.org/en/installation/#install-python), jos et käytä Chromebookia. Jos et käytä, asennuskokemus on hieman erilainen. Voit ohittaa loput asennusohjeet.
 
 ### Cloud 9
 
@@ -20,7 +20,7 @@ Now you should see an interface with a sidebar, a big main window with some text
 
 This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
-### Virtual Environment
+### Virtuaaliympäristö
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
