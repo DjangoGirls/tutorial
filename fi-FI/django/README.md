@@ -1,8 +1,8 @@
-# What is Django?
+# Mikä on Django?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) on ilmainen avoimen lähdekoodin web-sovelluskehys, joka on kirjoitetty Pythonilla. Web-sovelluskehys on joukko osia, jotka auttavat kehittämään verkkosivustoja nopeammin ja helpommin.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+Kun olet rakentamassa sivustoa, tarvitset aina samanlaisia osia: tavan käsitellä käyttäjän todennus (rekisteröitymisessä sekä sisään ja ulos kirjautuessa), hallinto-paneelin, lomakkeita, tavan ladata tiedostoja jne.
 
 Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
