@@ -1,12 +1,12 @@
 # Mikä on Django?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) on ilmainen avoimen lähdekoodin web-sovelluskehys, joka on kirjoitetty Pythonilla. Web-sovelluskehys on joukko osia, jotka auttavat kehittämään verkkosivustoja nopeammin ja helpommin.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) on ilmainen avoimen lähdekoodin web-sovelluskehys, joka on kirjoitetty Pythonilla. Web-sovelluskehys on joukko komponentteja, jotka auttavat kehittämään verkkosivustoja nopeammin ja helpommin.
 
-Kun olet rakentamassa sivustoa, tarvitset aina samanlaisia osia: tavan käsitellä käyttäjän todennus (rekisteröitymisessä sekä sisään ja ulos kirjautuessa), hallinto-paneelin, lomakkeita, tavan ladata tiedostoja jne.
+Kun olet rakentamassa sivustoa, tarvitset aina samanlaisia komponentteja: tavan käsitellä käyttäjän todennus (rekisteröitymisessä sekä sisään ja ulos kirjautuessa), hallinto-paneelin, lomakkeita, tavan ladata tiedostoja jne.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Onneksi ihmiset jo kauan sitten huomasivat, että web-kehittäjät kohtaavat kerta toisensa jälkeen samanlaisia ongelmia uutta sivustoa rakentaessaan, joten he yhdistivät voimansa ja loivat sovelluskehyksiä (esimerkiksi Djangon), jotka antavat valmiita komponentteja suoraan käyttöön.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Sovelluskehykset ovat olemassa, jotta sinun ei tarvitsisi keksiä pyörää uudelleen ja jotta säästät aikaa rakentaessasi uutta sivustoa.
 
 ## Why do you need a framework?
 
