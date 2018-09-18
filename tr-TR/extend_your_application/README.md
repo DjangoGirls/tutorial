@@ -12,7 +12,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 
 ## Bir gönderinin detayı için bir template(şablon) linki oluşturun
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+`blog/templates/blog/post_list.html` dosyasına bir link (bağlantı) ekleyerek başlayacağız. Bu dosyayı kod düzenleyicisinde açalım, şimdiye kadar yaptıklarımızın şöyle gözüküyor olması lazım:
 
 ```html
 {% extends 'blog/base.html' %}
@@ -80,7 +80,7 @@ Tamamdır.`blog/urls.py`!'e yeni bir URL kalıbı ekledik! Http://127.0.0.1:8000
 
 ![AttributeError (Özellik hatası)](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: view(görünüm)'ü eklemek!
 
 ## Gönderi detayı için bir view ekleyin
 
@@ -108,7 +108,7 @@ Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
 
 `blog/urls.py` içinde `views.post_detail` denilen bir görünüm ifade eden `post_detail` adında bir URL kuralı oluşturduk. Bu, Django'nun ` blog/views.py </ 0> içinde <code> post_detail </ 0> adlı bir görünüm fonksiyonu bekleyeceği anlamına gelir.</p>
 
-<p>We should open <code>blog/views.py` in the code editor and add the following code near the other `from` lines:
+<p><code>blog/views.py` 'i açmalıyız ve diğer `from` satırının yanına şu kodları eklemeliyiz:
 
 {% filename %}blog/views.py{% endfilename %}
 
