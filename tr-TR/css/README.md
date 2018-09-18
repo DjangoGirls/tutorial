@@ -16,7 +16,7 @@ Twitter yazılımcıları tarafından geliştirilmeye başlanmış ve şu anda d
 
 ## Bootstrap kurulumu
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Bootstrap yüklemek için `.html` uzantılı dostamızı kod düzenleyicisinde açalım ve `<head>` bölümüne şunları ekleyelim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -24,7 +24,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Bu satırlar projeye yeni dosya eklemez. Ancak İnternet'te var olan dosyalara işaret eder. Şimdi websitenizi açın ve sayfayı yenileyin. İşte oldu!
 
 ![Şekil 14.1](images/bootstrap1.png)
 
@@ -36,7 +36,7 @@ Son olarak **statik dosyalar** diye bahsettiğimiz şeylere daha yakından bakal
 
 ### Django'da statik dosyaları nereye koymalı
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django dahili "admin" uygulaması için statik dosyaları nerede bulacağını biliyor. Şimdi sadece kendi `blog` uygulamamız için bazı statik dosyalar eklememiz gerekiyor.
 
 Bunu blog uygulamamızın içine `static` isimli bir klasör oluşturarak yapacağız:
 
@@ -77,7 +77,7 @@ h1 a {
 }
 ```
 
-`h1 a` bir CSS seçicisidir (selector). Bu, stillerimizi `h1` öğesi içerisindeki `a` öğelerine uyguladığımız anlamına geliyor. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Or you can put your own color here!
+`h1 a` bir CSS seçicisidir (selector). Bu, stillerimizi `h1` öğesi içerisindeki `a` öğelerine uyguladığımız anlamına geliyor. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Ya da buraya kendi istediğin rengi koyabilirsin!
 
 Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiket olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` class'ı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
@@ -87,7 +87,7 @@ Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler
 
 CSS hakkında daha fazla bilgi edinmek için [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp) u okuyabilirsin.
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Sonrasında, ayrıca HTML şablonumuza (template) birtakım CSS eklemeleri yaptığımızı bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açıp en başına şu satırı ekleyelim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -201,7 +201,7 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
 </div>
 ```
 
-Şimdi farklı seçicilere (selectors) bildirim (deklarasyon) blokları ekleyeceğiz. `.` ile başlayan seçiciler sınıflara işaret eder. Web'de, aşağıdaki kodu anlamanıza yardımcı olacak pek çok güzel CSS öğreticisi ve açıklama mevcut. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Şimdi farklı seçicilere (selectors) bildirim (deklarasyon) blokları ekleyeceğiz. `.` ile başlayan seçiciler sınıflara işaret eder. Web'de, aşağıdaki kodu anlamanıza yardımcı olacak pek çok güzel CSS öğreticisi ve açıklama mevcut. Şimdilik sadece bu kodu kopyalayıp `blog/static/css/blog.css` dosyamıza yapıştıralım:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
