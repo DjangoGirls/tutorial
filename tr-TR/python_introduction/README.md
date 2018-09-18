@@ -672,7 +672,7 @@ Ve Windows Powershell’de, bunun gibi olacak:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Takılırsanız, yardım isteyin. Eğitmenler bunun için var!
 
 Şimdi dosyadaki komutları çalıştırmak için Python'u kulllanın:
 
