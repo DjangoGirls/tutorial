@@ -106,7 +106,7 @@ Bunu istemiyoruz! But luckily Django comes with something that will handle that 
 
 Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
 
-`blog/urls.py` içinde `views.post_detail` denilen bir görünüm ifade eden `post_detail` adında bir URL kuralı oluşturduk. Bu, Django'nun ` blog / views.py </ 0> içinde <code> post_detail </ 0> adlı bir görünüm fonksiyonu bekleyeceği anlamına gelir.</p>
+`blog/urls.py` içinde `views.post_detail` denilen bir görünüm ifade eden `post_detail` adında bir URL kuralı oluşturduk. Bu, Django'nun ` blog/views.py </ 0> içinde <code> post_detail </ 0> adlı bir görünüm fonksiyonu bekleyeceği anlamına gelir.</p>
 
 <p>We should open <code>blog/views.py` in the code editor and add the following code near the other `from` lines:
 
@@ -160,7 +160,7 @@ We will create a file in `blog/templates/blog` called `post_detail.html`, and op
 {% endblock %}
 ```
 
-Bir kere daha `base.html` dosyasıa ekleme yapacağız. `content` blogunda bir gönderinin varsa published_date title ve text'ini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
+Bir kere daha `base.html` dosyasıa ekleme yapacağız. `content` blogunda bir gönderinin varsa published_date, title ve text'ini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
 
 {% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir şablon etiketidir. ( `if ... else ..` ifadelerini **Python'a Giriş** bölümünden hatırladın mı?) Bu durumda eğer gönderinin `published_date` kısmı boş değilse kontrol etmek isteriz.{% endraw %}
 
