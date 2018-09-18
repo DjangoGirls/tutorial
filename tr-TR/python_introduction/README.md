@@ -28,7 +28,7 @@ Bir Python konsolu açmak istiyoruz; öyleyse Windows'ta `python`, Mac OS/Linux'
 
 Python komutunu çalıştırdıktan sonra, komut istemi `>>>` şeklinde değişti. Bizim için bu, şimdi yalnızca Python dilinde komutlar kullanabileceğimiz anlamına geliyor. `>>>` yazmanıza gerek yok - Python bunu sizin için yapacak.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Bunu yaptığınız taktirde artık `>>>` yazısını görmeyeceksiniz.
+Eğer herhangi bir zamanda Python komut satırından çıkmak isterseniz, yalnızca `exit()` yazmanız ya da Windows için `Ctrl + Z`, Mac/Linux için `Ctrl + D` kısa yolunu kullanmanız yeterli. Bunu yaptığınız taktirde artık `>>>` yazısını görmeyeceksiniz.
 
 Şimdilik, Python konsolundan çıkmak istemiyoruz. Bu konuda daha fazla bilgi edinmek istiyoruz. Biraz matematik yazarak başlayalım (` 2 + 3 ` gibi) ve `enter` 'a basalım.
 
@@ -107,7 +107,7 @@ veya backslash (` \ `) kullanarak:
 "Turgut Uyar'ın dizeleriyiz"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Hoş değil mi? İsminin tamamını büyük harf yapmak için, sadece şunu yazman yeterli:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -185,7 +185,7 @@ Programlamada en önemli konulardan biri değişkenlerdir. Değişken (variable)
 
 name (isim) eşittir "Ayşe" yazalım.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Farkettiğiniz gibi, program daha öncekilerinin aksine bu kez hiçbir cevap vermedi. O zaman böyle bir değişkenin gerçekten tanımlı olduğunu nasıl bilebiliriz? Basitçe, `name` yazıp `enter` tuşuna basalım:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -213,7 +213,7 @@ Bu değişkeni fonksiyonlar içinde de kullanabilirsin:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Harika değil mi? Tabii ki değişkenler, sayılar da dahil herhangi bir şey olabilir. Şunu deneyin:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -414,7 +414,7 @@ KeyError: 'age'
 
 Bir başka hata! **KeyError** hatası. Python yardımseverdir ve sana `'age'` anahtarının sözlükte bulunmadığını söyler.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Ne zaman sözlük veya liste kullanmalısın? Düşünmek için güzel bir nokta. Sonraki satıra bakmadan önce cevap üzerinde bir düşünün.
 
 - Sıralı elemanlara mı ihtiyacın var? Liste ile devam et.
 - İleride hızlıca (anahtarlar ile) değerlere ulaşmak istediğin için anahtarlar ile ilişkilendirilmiş değerlere mi ihtiyacın var? Sözlük kullan.
@@ -438,7 +438,7 @@ Listeler gibi, `len()` metodu sözlükteki anahtar-değer çiftlerinin sayısın
 
 Umarım şu ana kadar mantıklı gelmiştir :) Sözlüklerle biraz daha eğlenceye hazır mısın? İlginç şeyler için sonraki satıra atla.
 
-Sözlükten bir maddeyi silmek için `pop()` metodunu kullanabilirsin. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Sözlükten bir maddeyi silmek için `pop()` metodunu kullanabilirsin. Mesela, `'favorite_numbers'` anahtarına karşılık gelen elemanı silmek istersen, şu komutu yaz:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -477,7 +477,7 @@ Bir sonraki bölüm için heyecanlı mısınız? :)
 
 > Evden okuyanlar için: Bu kısım [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) videosunda anlatılıyor.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Programlamanın büyük kısmı karşılaştırma içerir. Karşılaştırması en kolay olan şey nediir? Tabiki sayılar. Bakalım nasıl çalışıyor:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -556,7 +556,7 @@ Yalnızca iki Boolean nesnesi vardır:
 - True
 - False
 
-Python'un bunu anlaması için her zaman "True" (ilk harf büyük, geri kalanları küçük) yazmanız gerekiyor. **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Python'un bunu anlaması için her zaman "True" (ilk harf büyük, geri kalanları küçük) yazmanız gerekiyor. **true, TRUE, tRUE işe yaramaz -- sadece True doğru.** (Aynısı "False" için de geçerli.)
 
 Boolean'lar değişken de olabiliyor! Bakınız:
 
@@ -598,7 +598,8 @@ Tebrikler! Boolean'lar programlamadaki en havalı özelliklerden, ve az önce on
 - Yeni Python dosyasına kod kaydedin
 - Çalıştırın!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Kullandığımız Python yorumlayıcısından çıkmak için `
+exit() ` fonksiyonunu yazın
 
 {% filename %}komut satırı{% endfilename %}
 
