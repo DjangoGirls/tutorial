@@ -94,7 +94,7 @@ Sıra depomuzu oluşturmaya geldi. 'New Repository' tuşuna tıklayıp "my-first
 
 ![](images/new_github_repo.png)
 
-> **Not** `my-first-blog` ismi önemli -- başka birşey de seçebilirsiniz, ama aşağıdaki yönergelerde çok geçiyor, her seferinde değiştirmeniz gerekir. It's probably easier to stick with the name `my-first-blog`.
+> **Not** `my-first-blog` ismi önemli -- başka birşey de seçebilirsiniz, ama aşağıdaki yönergelerde çok geçiyor, her seferinde değiştirmeniz gerekir. En kolayı `my-first-blog` ismi ile devam etmek.
 
 On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
