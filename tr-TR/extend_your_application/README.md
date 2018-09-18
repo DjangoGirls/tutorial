@@ -138,7 +138,7 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 
 ## Post(gönderi) detayları için bir template(şablon) oluştur
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+`blog/templates/blog` dizininde `post_detail.html` adında bir dosya oluşturalım ve kod düzenleyicisinde açalım.
 
 Şöyle görünmeli:
 
