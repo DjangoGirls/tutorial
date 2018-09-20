@@ -1,30 +1,45 @@
 Μπορείς [ να παραλείψεις αυτή την ενότητα](http://tutorial.djangogirls.org/en/installation/#install-python) εάν δεν χρησιμοποιείς ένα Chromebook. Εάν όμως δουλεύεις σε ένα τέτοιο laptop, η διαδικασία εγκατάστασης θα είναι λίγο διαφορετική. Μπορείς να αγνοήσεις τις υπόλοιπες οδηγίες εγκατάστασης και να ακολουθήσεις μόνο τα παρακάτω βήματα.
 
-### Cloud 9
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Το Cloud 9 είναι ένα εργαλείο, το οποίο σου παρέχει έναν code editor και πρόσβαση σε έναν υπολογιστή, κάπου στο διαδίκτυο, όπου μπορείς να εγκαταστήσεις, να γράψεις και να τρέξεις λογισμικό. Στη διάρκεια του tutorial, το Cloud 9 θα λειτουργεί σαν *το τοπικό σου μηχάνημα*. Με αυτόν τον τρόπο θα μπορείς να τρέχεις εντολές σε ένα τερματικό περιβάλλον, ακριβώς όπως και οι συμμαθητές σου που χρησιμοποιούν OS X, Ubuntu ή Windows, με τη διαφορά ότι το δικό σου τερματικό θα είναι συνδεδεμένο με έναν υπολογιστή κάπου στο διαδίκτυο, στον οποίο το Cloud 9 έχει κάνει όλες τις απαραίτητες ρυθμίσεις για σένα.
+Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
-1. Εγκατάστησε το Cloud 9 από το [web store του Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Πήγαινε στο [c9.io](https://c9.io)
-3. Δημιούργησε λογαριασμό
-4. Κάνε κλικ στο *Create a New Workspace*
-5. Ονομάστε το *django-girls*
-6. Επίλεξε το *Βlank* (δεύτερο από δεξιά στην κάτω γραμμή, με το πορτοκαλί λογότυπο)
+#### PaizaCloud Cloud IDE
 
-Τώρα θα πρέπει να βλέπεις μια σελίδα με πλαϊνή μπάρα εργασίων, ένα μεγάλο κύριο παράθυρο με κείμενο, και ένα μικρότερο παράθυρο στο κάτω μέρος της που μοιάζει κάπως έτσι:
+1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Sign up for an account
+3. Click *New Server*
+4. Click Terminal button(on the left side of the window)
 
-{% filename %}Cloud 9{% endfilename %}
+Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    $
+    
+
+The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+
+#### AWS Cloud9
+
+1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Sign up for an account
+3. Click *Create Environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+
+{% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-Το κάτω μέρος της σελίδας είναι το δικό σου *τερματικό*, μέσω του οποίου θα δίνεις εντολές στον μακρινό υπολογιστή που λέγαμε πως το Cloud 9 έχει ετοιμάσει για σένα. Αν θέλεις μπορείς να αλλάξεις το μέγεθος αυτού του παραθύρου και να το κάνεις μεγαλύτερο.
+This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
 ### Εικονικό Περιβάλλον
 
-Ένα εικονικό περιβάλλον (γνωστό και ως virtualenv) είναι σαν ένα ιδιωτικό κουτί που μπορούμε να γεμίσουμε με χρήσιμο κώδικα για ένα project πάνω στo οποίo δουλεύουμε. Χρησιμοποιώντας εικονικά περιβάλλοντα καταφέρνουμε να κρατήσουμε τα διάφορα κομμάτια κώδικα που θέλουμε για τα διάφορα projects μας χωριστά, ώστε τα πράγματα να μην μπερδεύονται μεταξύ των projects μας.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Στο τερματικό σου, στο κάτω μέρος του Cloud 9, τρέξε τις παρακάτω εντολές:
+In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +47,9 @@
     sudo apt install python3.6-venv
     
 
-Εάν αυτό δεν δουλέψει, ζήτα τη βοήθεια των coaches.
+If this still doesn't work, ask your coach for some help.
 
-Στη συνέχεια, τρέξε τις ακόλουθες εντολές:
+Next, run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,16 +60,16 @@
     pip install django~={{ book.django_version }}
     
 
-(παρατήρησε ότι στην τελευταία γραμμή χρησιμοποιούμε μία περισπωμένη, την οποία ακολουθεί ένα ίσον).
+(note that on the last line we use a tilde followed by an equal sign: ~=).
 
 ### GitHub
 
-Φτιάξε λογαριασμό στο [GitHub](https://github.com).
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Το tutorial του Django Girls περιλαμβάνει μια ενότητα γι' αυτό που λέγεται Deployment, το οποίο είναι η διαδικασία του να πάρεις τον κώδικα που τροφοδοτεί τη νέα σου διαδικτυακή εφαρμογή και να τον βάλεις σε έναν δημοσίως προσβάσιμο υπολογιστή (ο οποίος ονομάζεται server), ώστε άλλοι άνθρωποι να μπορούν να δουν τη δουλειά σου.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Για σένα που κάνεις το tutorial στο Chromebook σου και ήδη χρησιμοποιείς έναν άλλο υπολογιστή κάπου στο διαδίκτυο μέσω του Cloud 9, το κομμάτι αυτό ίσως σου φαίνεται λίγο περίεργο. Παρ' όλα αυτά είναι χρήσιμο, αν θεωρήσεις το workspace σου στο Cloud 9 ως το χώρο για τη δουλειά σε εξέλιξη και το PythonAnywhere ως το χώρο όπου εκθέτεις τη δουλειά σου, όταν αυτή είναι πιο ολοκληρωμένη.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Κάνε λοιπόν, λογαριασμό στο PythonAnywhere ακολουθώντας αυτόν τον σύνδεσμο [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
