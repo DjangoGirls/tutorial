@@ -33,11 +33,11 @@ Bootstrap - це один з найпопулярніших HTML-і CSS-рамо
 
 ## Статичні файли в Django
 
-Нарешті, ми детальніше розглянемо те, що ми називали **статичними файлами**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Нарешті, ми детальніше розглянемо те, що ми називали **статичними файлами**. Статичні файли - це всі ваші CSS та зображення. Їх зміст не залежить від контексту запиту і буде однаковим для кожного користувача.
 
 ### Де помістити статичні файли для Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Як ви бачили, коли ми запускали collectstatic на сервері, Django вже знає, де знайти статичні файли для вбудованого додатку "admin". Тепер нам просто потрібно додати деякі статичні файли для нашого власного додатку, `blog`.
 
 Створимо директорію з ім’ям `static` всередині додатку blog:
 
@@ -49,7 +49,7 @@ Django already knows where to find the static files for the built-in "admin" app
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django автоматично знайде всі папки, які називаються "статичними", в папках з будь-якими вашими додатками, і він буде мати можливість використовувати їх вміст як статичні файли.
 
 ## Ваш перший CSS файл!
 
