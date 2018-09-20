@@ -1,30 +1,45 @@
 Pwede kang [lumaktaw sa seksiyon na ito](http://tutorial.djangogirls.org/en/installation/#install-python) kung hindi ka gumamit ng Chromebook. Kung ikaw ay, ang iyong karanasan sa pag-install ay medyo kakaiba. Pede mo nang isawalang bahala ang iba mga tagubilin sa pag-install.
 
-### Cloud 9
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud 9 is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. Sa durasyon ng tutorial, ang Cloud 9 ay magsilbi mong *local machine*. Magpapatakbo ka pa rin ng mga direksyon sa interface ng terminal gaya ng mga kamag-aral na gumagamit ng OS X, Ubuntu, or Windows, pero ang terminal mo nakaugnay sa isang kompyuter na pinatakabo sa ibang lugar na hinanda ni Cloud 9 para sa ito.
+Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
-1. I-install ang Cloud 9 mula sa [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Pumunta sa [c9.io](https://c9.io)
-3. Magsign-up ng account
-4. I-click ang *Maglikha ng Bagong Workspace*
-5. Pangalanan mo ito nang *django-girls*
-6. Piliin ang *Blanko* (pangalawa mula sa kanan, sa ibabang hanay na may dalandan na logo)
+#### PaizaCloud Cloud IDE
 
-Ngayon, makikita mo na dapat ang interface na may sidebar, isang malaking pangunahing window na maroong mga teksto, at isang maliit na window sa baba gaya nito:
+1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Sign up for an account
+3. Click *New Server*
+4. Click Terminal button(on the left side of the window)
 
-{% filename %}Cloud 9{% endfilename %}
+Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
-    iyongusername:~/workspace $
+{% filename %}Terminal{% endfilename %}
+
+    $
+    
+
+The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+
+#### AWS Cloud9
+
+1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Sign up for an account
+3. Click *Create Environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+
+{% filename %}bash{% endfilename %}
+
+    yourusername:~/workspace $
     
 
 This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
 ### Virtual na Environment
 
-Ang virtual na kaligirian (tinatawag din na virtualenv) ay parang isang pribadong kahon kung saan pede mong ilagay ang mga code ng computer na ginawa mo para sa isang proyekto. Ginagamit namin ito para lalagyan ng mga piraso ng aming code na ginamit naming sa iba-ibang proyekto para ihiwalay nang hindi mahalo sa pagitan ng mga proyekto.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Sa iyong terminal sa baba ng interface ng Cloud 9, patakbuhin mo ang sumunod:
+In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +47,9 @@ Sa iyong terminal sa baba ng interface ng Cloud 9, patakbuhin mo ang sumunod:
     sudo apt install python3.6-venv
     
 
-If hindi pa rin gumagana, humingi ka ng tulong sa iyong coach.
+If this still doesn't work, ask your coach for some help.
 
-Sa sunod, patakbuhin ang:
+Next, run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,7 +60,7 @@ Sa sunod, patakbuhin ang:
     pip install django~={{ book.django_version }}
     
 
-(paalala na sa huling linya, kami ay gumagamit ng tilde na sinundan ng equal na sign: ~=).
+(note that on the last line we use a tilde followed by an equal sign: ~=).
 
 ### GitHub
 
@@ -53,8 +68,8 @@ Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Kalakip sa Tutorial ng Django Girls ay isang seksyon na tinatawag na Deployment, ito ay isang proseso kung saan gagamiting ang iyong code para paganahin ang iyong bagong web application at paglipat nito sa isang kompyuter na pwedeng ma-access (tinatawag na server) para makita ng ibang tao ang iyong ginagawa.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Ang parte na ito ay medyo kakaiba kung gumamit ka ng Chromebook sa tutorial na ito dahil tayo ay gumagamit na ng kompyuter na nakakonekta sa Internet (kumpara sa tinatawag nating, laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Kaya naman, magsign-up para sa bagong account sa Python Anywhere sa [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
