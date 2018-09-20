@@ -1,19 +1,34 @@
 如果您不是使用 Chromebook 的話，您可以 [跳過這個章節](http://tutorial.djangogirls.org/en/installation/#install-python)。 如果是的話，您的安裝過程將會有些許的不同。 您可以忽略其餘的安裝導覽說明。
 
-### Cloud 9
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud 9 這工具會提供你一個程式碼編輯器(code editor)，並讓你存取一台位於網路上的電腦，使你可以透過它安裝、撰寫、以及執行軟體。 在這個教程指南過程中，Cloud 9 將能當作您的*本機電腦*來執行。 您仍將在終端機介面中執行指令，跟同學使用在 OS X、Ubuntu、或是 Windows 一樣，但是您的終端機是連接到一個由 Cloud 9 為您設定在其他地方的主機。
+Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
-1. 從 [Chrome 線上應用程式商店](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)安裝 Colud 9
-2. 到 [c9.io](https://c9.io)
-3. 註冊一個帳戶
-4. 點選*建立一個新的工作區*
-5. 幫它命名 *django-girls*
-6. 選擇*空白*(右邊由上往下第二個橙橘色標籤)
+#### PaizaCloud Cloud IDE
 
-現在您應該看到一個帶有邊欄的介面，一個有文字的大視窗，下面還有一個小視窗，看起來應該像是這樣：
+1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Sign up for an account
+3. Click *New Server*
+4. Click Terminal button(on the left side of the window)
 
-{% filename %}Cloud 9{% endfilename %}
+Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    $
+    
+
+The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+
+#### AWS Cloud9
+
+1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Sign up for an account
+3. Click *Create Environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+
+{% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
@@ -22,9 +37,9 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 ### 虛擬環境 [Virtual Environment]
 
-虛擬環境 (virtual environment，也被叫做 virtualenv) 就像一個私有的盒子 我們能夠提供有用的電腦代碼到我們正在運作的專案。 我們使用虛擬環境來保持在不同專案間不會混淆，即使在不同專案底下使用了不同的編輯代碼。
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-在您的 Cloud 9 介面底下的終端機畫面中，執行以下指令：
+In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +47,9 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
     sudo apt install python3.6-venv
     
 
-如果仍然不能運作，請向其他人 (教練，這邊是美式幽默) 尋求協助。
+If this still doesn't work, ask your coach for some help.
 
-接下來，執行以下指令：
+Next, run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,7 +60,7 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
     pip install django~={{ book.django_version }}
     
 
-(請注意，我們在最後一行確實使用了一個符號： ~= 喔)。
+(note that on the last line we use a tilde followed by an equal sign: ~=).
 
 ### GitHub
 
@@ -53,8 +68,8 @@ Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-這份 Django Girls 教程指南有章節是稱為 "部屬" ，是一個強力的網頁應用程式，能夠執行這些代碼，還能夠移動到公開可被訪問的電腦(被稱作伺服器)，並讓其他人看到你的專案。
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-這個部分對於使用這份指南的 Chromebook 來說會有些奇怪，因為他們已經是使用了電腦是在網路上的 (相對來說就是筆記型電腦) However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-所以，到 [www.pythonanywhere.com](https://www.pythonanywhere.com) 註冊一個 Python Anywhere 新帳戶吧。
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
