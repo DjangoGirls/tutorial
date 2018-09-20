@@ -1,40 +1,55 @@
 Puoi [saltare questa sezione](http://tutorial.djangogirls.org/en/installation/#install-python) se non stai usando un Chromebook. Altrimenti, la tua installazione seguirà una procedura diversa. Puoi ignorare il resto delle istruzioni di installazione.
 
-### Cloud9
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud9 è uno strumento che mette a disposizione un editor e l'accesso ad un computer su Internet su cui puoi installare, scrivere ed eseguire il software. Per questo tutorial, Cloud9 sarà come il tuo *computer locale*. Potrai sempre scrivere comandi sul terminale come i tuoi compagni di classe su OS X, Ubuntu o Windows, ma il tuo terminale sarà connesso ad un computer attivo da un'altra parte, che Cloud9 configura per te.
+Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
-1. Installa Cloud 9dal [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Vai su [c9.io](https://c9.io)
-3. Registrati
-4. Clicca *Crea nuovo spazio di lavoro*
-5. Chiamalo *django-girls*
-6. Seleziona *Blank* (secondo da destra nella riga in basso con il logo arancione)
+#### PaizaCloud Cloud IDE
 
-Ora dovresti vedere un'interfaccia con una barra laterale, una grossa finestra principale con del testo, ed una piccola finestra in basso che somiglia a questa:
+1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Sign up for an account
+3. Click *New Server*
+4. Click Terminal button(on the left side of the window)
 
-{% filename %}Cloud 9{% endfilename %}
+Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
-    tuonome:~/workspace $
+{% filename %}Terminal{% endfilename %}
+
+    $
     
 
-Quest'area in basso è il tuo *terminale*, dove darai le tue istruzioni al computer che Cloud9 ha preparato. Puoi ridimensionare questa finestra per renderla un po' più grande.
+The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+
+#### AWS Cloud9
+
+1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Sign up for an account
+3. Click *Create Environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+
+{% filename %}bash{% endfilename %}
+
+    yourusername:~/workspace $
+    
+
+This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
 ### Ambiente virtuale
 
-Un ambiente virtuale (in inglese virtual environment, abbreviato spesso in virtualenv) è come una scatola privata in cui possiamo mettere del codice per un progetto su cui stiamo lavorando. Li usiamo per tenere separati i vari pezzi di codice dei nostri progetti, affinchè non si crei confusione tra di essi.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Nel terminale in basso dell'interfaccia di Cloud9, esegui:
+In your terminal at the bottom of the Cloud 9 interface, run the following:
 
-{% filename %} Nuvola 9 {% endfilename %}
+{% filename %}Cloud 9{% endfilename %}
 
     sudo apt update
     sudo apt install python3.6-venv
     
 
-Se non funziona, chiedi aiuto al tuo coach.
+If this still doesn't work, ask your coach for some help.
 
-Poi, esegui:
+Next, run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,7 +60,7 @@ Poi, esegui:
     pip install django~={{ book.django_version }}
     
 
-(nota che nell'ultima linea abbiamo usato una tilde seguita da un segno di uguale: ~=).
+(note that on the last line we use a tilde followed by an equal sign: ~=).
 
 ### GitHub
 
@@ -53,8 +68,8 @@ Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Il tutorial Django Girls include una sezione chiamata Distribuzione, ovvero spostare su un computer accessibile a tutti (chiamato server) il codice che alimenta la tua nuova applicazione web, affinché altre persone possano vedere il tuo lavoro.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Questa parte del tutorial è un po' strana seguendo il tutorial su un Chromebook, poiché stiamo già usando un computer che è già su internet (al contrario di, per esempio, un laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Quindi, registrati a PythonAnywhere su [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
