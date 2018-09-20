@@ -1,30 +1,45 @@
 আপনি পারবেন [ এই বিভাগ ছেরে যেতে ](http://tutorial.djangogirls.org/en/installation/#install-python) যদি আপনি chromebook না করেন। যদি আপনি হন, আপনার স্থাপন অভিজ্ঞতা কিছুটা ভিন্ন হবে। আপনি স্থাপন নির্দেশাবলী বাকি প্রত্যাখ্যান করতে পারেন।
 
-### ক্লাউড ৯
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-ক্লাউড 9 একটি টুল যা আপনাকে কোডের জন্য সম্পাদক এবং ইন্টারনেটে চলমান একটি কম্পিউটারের অ্যাক্সেস প্রদান করে যেখানে আপনি প্রোগ্রামগুলি ইনস্টল, লিখতে এবং চালাতে পারেন। টিউটোরিয়ালের সময়, আপনার স্থানীয় * মেশিন হিসাবে ক্লাউড 9 পরিবেশন করবে * । আপনি এখনও ওএস এক্স, উবুন্টু, বা উইন্ডোতে আপনার সহকর্মীদের মত টার্মিনাল ইন্টারফেসে কমান্ড চালাবেন, তবে টার্মিনাল অন্য যে কোনও কম্পিউটারের সাথে সংযুক্ত থাকবে যা ক্লাউড 9 আপনার জন্য তৈরি করবে।
+Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
-1. </a>Chrome ওয়েব দোকান থেকে ক্লাউড ৯ ইনস্টল করুন</0>
-2. যান [c9.io](https://c9.io)
-3. একটি অ্যাকাউন্ট নিবন্ধন
-4. একটি নতুন কর্মক্ষেত্র *তৈরি করুন ক্লিক*করুন
-5. নাম *django-girls*
-6. *ফাঁকা* নির্বাচন করুন (কমলা লোগোতে নিচের সারির ডান থেকে দ্বিতীয়)
+#### PaizaCloud Cloud IDE
 
-এখন আপনি কিছু টেক্সট দিয়ে একটি সাইডবার এবং একটি বড় মাস্টার উইন্ডোর সাথে একটি ইন্টারফেস দেখতে পাবেন, এবং নীচে এমন একটি ছোট উইন্ডো যা এটির মতো দেখতে পাবেন:
+1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Sign up for an account
+3. Click *New Server*
+4. Click Terminal button(on the left side of the window)
 
-{% filename %}Cloud 9{% endfilename %}
+Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    $
+    
+
+The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+
+#### AWS Cloud9
+
+1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Sign up for an account
+3. Click *Create Environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+
+{% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-এই নীচের অংশটি আপনার *টার্মিনাল*, যেখানে আপনি আপনার দিকনির্দেশের সাথে ক্লাউড ৯ প্রস্তুত পাবেন। আপনি এটি সামান্য বড় করতে এই উইন্ডোটি পুনরায় আকার দিতে পারেন।
+This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
 ### ভার্চুয়াল পরিবেশ
 
-একটি ভার্চুয়াল পরিবেশ (ভার্চুয়ালওয়ালও বলা হয়) এমন একটি বিশেষ বাক্সের মতো যা দরকারী কাজে যেমন একটি প্রকল্প যা আমরা কাজ করি তার জন্য প্রোগ্রামিং কোডগুলি পূরণ করতে পারি। আমরা একটি প্রকল্প থেকে প্রোগ্রামিং কোড একটি সেট পেতে ভার্চুয়াল পরিবেশ ব্যবহার করি, তাই অন্যান্য প্রকল্পের সঙ্গে মিশ্রন হিসাবে না
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-ক্লাউড ৯ ইন্টারফেসের নীচে টার্মিনালে, নিম্নলিখিতটি চালিয়ে যান:
+In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +47,9 @@
     sudo apt install python3.6-venv
     
 
-যদি এটা এখনো কাজ না করে,আপনার কোচকে সাহায্যের জন্য জিজ্ঞেস করুন।
+If this still doesn't work, ask your coach for some help.
 
-তারপর যান
+Next, run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,7 +60,7 @@
     pip install django~={{ book.django_version }}
     
 
-(লক্ষ্য করুন যে শেষ লাইনে আমরা tild ব্যবহার করে একটি সমান চিহ্ন অনুসরণ করি: ~ =).
+(note that on the last line we use a tilde followed by an equal sign: ~=).
 
 ### GitHub
 
@@ -53,8 +68,8 @@ Make a [GitHub](https://github.com) account.
 
 ### পাইথন সর্বত্র
 
-মেয়েদের শিক্ষার জন্য জ্যাঙ্গো প্রোগ্রাম তথাকথিত প্রকাশনার উপর একটি অধ্যায়, যা সফ্টওয়্যার কোডটি ওয়েব অ্যাপ্লিকেশন এবং একটি কম্পিউটারে স্থানান্তর পরিচালনা সাধারণভাবে অ্যাক্সেস করা যেতে পারে (সার্ভার বলা হয়) গ্রহণ প্রক্রিয়া অন্তর্ভুক্ত যাতে মানুষ আপনার ব্যবসার Leroux থেকে অন্য কেউ।
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-এই অংশটি একটি বিরাট অদ্ভুত যখন আপনি একটি ChromeBook ডিভাইসে টিউটোরিয়ালটি বাস্তবায়িত করেন যেহেতু আমরা ইন্টারনেটে বিদ্যমান কম্পিউটার ব্যবহার করি (উদাহরণস্বরূপ, একটি ল্যাপটপ)। However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-সুতরাং, একটি নতুন "Python" অ্যাকাউন্টের জন্য সাইন আপ করুন [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
