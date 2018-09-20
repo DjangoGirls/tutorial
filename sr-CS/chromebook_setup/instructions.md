@@ -1,30 +1,45 @@
 Možeš da [preskočiš preko ovog poglavlja](http://tutorial.djangogirls.org/en/installation/#install-python) ako ne koristiš Chromebook. Ako, pak, koristiš, tvoja instalacija će teći nešto drugačije. Možeš da zanemariš ostatak uputstva za instalaciju.
 
-### Cloud 9
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud 9 je alatka koja predstavlja uređivač koda i omogućava ti pristup računaru umreženom na internetu, a gde možeš da instaliraš, pišeš i pokreneš softver. Tokom ovog priručnika, Cloud 9 će služiti kao tvoj *lokalni računar*. I dalje ćeš pokretati naredbe u terminalu, baš kao i tvoji kolege koji koriste OS X, Ubuntu ili Windows, ali će tvoj terminal biti povezan sa računarom pokrenutim negde gde je Cloud 9 to podesio za tebe.
+Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
-1. Instaliraj Cloud 9 iz [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Idi na [c9.io](https://c9.io)
-3. Registruj nalog
-4. Klikni na *Create a New Workspace*
-5. Imenuj ga *django-girls*
-6. Izaberi *Blank* (drugi zdesna u donjem redu, sa narandžastim logom)
+#### PaizaCloud Cloud IDE
 
-Sada bi trebalo da možeš da vidiš interfejs sa sajdbar-om, veliki glavni prozor sa tekstom i mali prozor na dnu koji izgleda nešto poput:
+1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Sign up for an account
+3. Click *New Server*
+4. Click Terminal button(on the left side of the window)
 
-{% filename %}Cloud 9{% endfilename %}
+Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    $
+    
+
+The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+
+#### AWS Cloud9
+
+1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Sign up for an account
+3. Click *Create Environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+
+{% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-Ova oblast na dnu je tvoj *terminal*: tu ćeš dati naredbe računaru koji je Cloud 9 pripremio za tebe. Možeš da podesiš veličinu prozora kako ti odgovara.
+This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
 ### Virutalno okruženje
 
-Virtualno okruženje (eng. virtual environment, virutalenv) je nešto poput privatne kutije u koju možemo smestiti sav koristan kod za projekt na kojem radimo. Koristimo ih da bismo razdvojili razne delove koda koji se tiču različitih projekata. Tako nema opasnosti da ćemo pomešati nešto što pripada različitim projektima.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-U svom terminala na dnu Cloud 9 interfejsa, zadaj sledeće:
+In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +47,9 @@ U svom terminala na dnu Cloud 9 interfejsa, zadaj sledeće:
     sudo apt install python3.6-venv
     
 
-Ako nakon ovoga i dalje ne funkcioniše, pitaj svog instruktora/svoju instruktorku za pomoć.
+If this still doesn't work, ask your coach for some help.
 
-Nakon toga, pokreni:
+Next, run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,7 +60,7 @@ Nakon toga, pokreni:
     pip install django~={{ book.django_version }}
     
 
-(Obrati pažnju da smo u poslednjoj liniji koristili tildu praćenu znakom jednakosti: ~=).
+(note that on the last line we use a tilde followed by an equal sign: ~=).
 
 ### GitHub
 
@@ -53,8 +68,8 @@ Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Django Girls priručnik sadrži deo o nečemu što se zove Postavljanje (eng. Deployment). To je proces kopiranja koda koji pokreće tvoju novu web aplikaciju na javno dostupnom računaru (zvanom server), tako da i drugi ljudi mogu vidjti tvoj rad.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Ovaj deo je malo čudan ukoliko se priručnik prati radeći na Chromebook-u jer se koristi računar koji je na Internetu (nasuprot, na primer, laptopu). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
