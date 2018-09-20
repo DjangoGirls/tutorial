@@ -10,7 +10,7 @@ Gedit є відкритим, безкоштовним редактором, до
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text 3 - дуже популярний редактор із безкоштовним періодом оцінки, і цей редактор також доступний для всіх операційних систем.
 
 [Завантажте його тут](https://www.sublimetext.com/3)
 
