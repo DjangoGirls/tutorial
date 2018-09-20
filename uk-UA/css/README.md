@@ -4,19 +4,19 @@
 
 ## Що таке CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Каскадні таблиці стилів (CSS) - це мова, яка використовується для опису вигляду та форматування веб-сайту, написаного на мові розмітки (наприклад, HTML). Розгляньте це як макіяж для нашої веб-сторінки. ;) 
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Але ми не хочемо починати з нуля, чи не так? Ще раз повторюємо: ми будемо використовувати те, що програмісти випускають в Інтернеті безкоштовно. Ви знаєте, що винаходити велосипед не весело.
 
 ## Скористаємось Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap - це один з найпопулярніших HTML-і CSS-рамок для розробки гарних веб-сайтів: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Це було написано програмістами, які працювали у Twitter. Тепер вона розроблена для волонтерів з усього світу!
 
 ## Встановлюємо Boostrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Для встановлення початкового завантаження, відкрийте файл `. HTML` файл у редакторі коду і додати його в розділі `<head>`»:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Це не додасть жодного файлу до вашого проекту. Натомість ці рядки просто вказують на файли опубліковані в інтернеті. Отже далі просто , відкрийте свій веб-сайт і оновіть сторінку. Ось так!
 
 ![Рисунок 14.1](images/bootstrap1.png)
 
