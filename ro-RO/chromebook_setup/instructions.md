@@ -1,30 +1,45 @@
 Poți [sări peste această secțiune](http://tutorial.djangogirls.org/en/installation/#install-python) dacă nu vei folosi Chromebook. Dar dacă folosești deja Chromebook, experiența ta de instalare poate că a fost un pic diferită de aceasta. Și poți ignora restul instrucţiunilor de instalare.
 
-### Cloud 9
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud 9 este un instrument care îți oferă un editor de cod şi acces la un calculator care rulează pe Internet, în care poți scrie, și unde poți instala şi executa software-ul. Pe durata acestui tutorial, Cloud 9 se va comporta ca și *calculatorul tău local *. Tu vei rula comenzile în interfața terminalului la fel ca și colegii ce vor folosi Os X, Ubuntu, sau Windows, dar terminalul pe care îl vei folosi tu, este conectat la un calculator care rulează în altă parte, pe care Cloud 9 ți la configurat.
+Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
-1. Instalează Cloud 9 din [magazinul de aplicații Chrome](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Acceasează [c9.io](https://c9.io)
-3. Creează-ți un cont
-4. Apasă pe *Create a New Workspace*
-5. Numește-l *django-girls*
-6. Selectează rândul *Blank* (al doilea rând din dreapta cel cu logoo-ul portocaliu)
+#### PaizaCloud Cloud IDE
 
-Acum puteți vedea o interfață cu un meniu, fereastra principală ce conține un text și o mică ferestruică în partea de jos, ce arată în felul următor:
+1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Sign up for an account
+3. Click *New Server*
+4. Click Terminal button(on the left side of the window)
 
-{% filename %}Cloud 9{% endfilename %}
+Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    $
+    
+
+The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+
+#### AWS Cloud9
+
+1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Sign up for an account
+3. Click *Create Environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+
+{% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-Această porțiune de jos este *terminal-ul* tău, unde tu vei putea introduce instrucțiunile necesare pentru ca acestea să fie executate de calculatorul Cloud 9. Ai posibilitatea să mărești dimensiunile acestei ferestre.
+This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
 ### Mediul Virtual
 
-Mediul virtual (eng. = Virtual Environment, prescurtat virtualenv) este ca o cutie privată în care poate fi stocat codul scris pentru proiectul la care noi vom lucra. Noi le folosim pentru a păstra diverse bucăți de cod de care avem nevoie pentru diverse proiecte, pentru a nu le mixa între acestea.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-În terminalul tău din partea de jos a interfeței Cloud 9, execută următoarea instrucțiune:
+In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +47,9 @@ Mediul virtual (eng. = Virtual Environment, prescurtat virtualenv) este ca o cut
     sudo apt install python3.6-venv
     
 
-Dacă întâmpini careva obstacole, apelează la mentorul tău pentru ajutor.
+If this still doesn't work, ask your coach for some help.
 
-Apoi execută:
+Next, run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,16 +60,16 @@ Apoi execută:
     pip install django~={{ book.django_version }}
     
 
-(observă că ultima linie utilizată conține tildă și semnul egal: ~=).
+(note that on the last line we use a tilde followed by an equal sign: ~=).
 
 ### GitHub
 
-Crează-ți un cont [GitHub](https://github.com).
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Tutorial-ul Django Girls include o secțiune pentru așa-numitu-l Deployment, ce reprezintă procesul de transfer a codului aplicației tale web pe un calculator public (numit server) pentru ca alte persoane să poată vizualiza proiectul tău.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Această secțiune pare un pic ciudată atunci când tutorial-ul este realizat pe Chromebook, deoarece noi deja utilizăm un calculator public ce este accesibil prin intermediul Internet-ului (spre deosebire de, de exemplu, un laptop). Dar totuși, este de ajutor, pentru că ne putem gândi la Cloud 9 ca fiind un un spațiu de lucru pentru proiectele noastre „în progres”, și Python Anywhere îl putem considera ca pe un loc unde ne putem prezenta munca noastră după ce devină completă.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Astfel, crează-ți un cont nou pe Python Anywhere accesând: [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
