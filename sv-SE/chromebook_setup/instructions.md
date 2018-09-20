@@ -1,30 +1,45 @@
 Du kan [hoppa över denna sektion](http://tutorial.djangogirls.org/en/installation/#install-python) om du inte använder en Chromebook. Om det är så att du använder en Chromebook kommer din installation se lite annorlunda ut. Du kan ignorera resten av installations instruktionerna.
 
-### Cloud 9
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud 9 är ett verktyg som ger användaren en kod-editor och tillgång till en sorts dator som man kör i webbläsaren. Denna dator kan man installera, skriva och köra mjukvara. Under denna introduktion kommer Clod 9 vara din *lokala maskin*. Du kommer fortfarande att köra din kommandon i terminalen, precis som dina klasskamrater som sitter på OS X, Ubuntu eller Windows, men din terminal kommer vara kopplat till en dator som Cloud 9 har satt upp till dig.
+Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
-1. Installera Clound 9 från [Chrome webshop](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Gå till [c9.io](https://c9.io)
-3. Registrera ett konto
-4. Klicka på *Create a New Workspace*
-5. Döpt den till *django-girls*
-6. Välj *Blank* (Näst längst till höger på nedersta raden med orange logotyp)
+#### PaizaCloud Cloud IDE
 
-Nu kan du se ett interface med en navigation vid sidan, ett stort huvud-fönster med någon text och ett litet fönster nertill som ser ut typ så här:
+1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Sign up for an account
+3. Click *New Server*
+4. Click Terminal button(on the left side of the window)
 
-{% filename %}Cloud 9{% endfilename %}
+Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    $
+    
+
+The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+
+#### AWS Cloud9
+
+1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Sign up for an account
+3. Click *Create Environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+
+{% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-Den nedersta delen är din *terminal*, här kommer du ge din Cloud 9 dator instruktioner. Du kan ändra storleken på ditt fönster och göra det större.
+This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
 
 ### Virtuell miljö
 
-En virtuell miljö (också kallad virtualenv) är som en typ av privat dator som man kan använda för att spara data och program som man använder i sitt projekt. Vi kommer använda den för att spara olika bitar av kod som tillhör olika projekt. På detta sätt kommer koden till projekten hållas separat från varandra så att vi inte blandar ihop de olika projekt-koden.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-I din terminal, placerad längst ned i Cloud 9 rutan, kör följande kommando:
+In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -32,9 +47,9 @@ I din terminal, placerad längst ned i Cloud 9 rutan, kör följande kommando:
     sudo apt install python3.6-venv
     
 
-Om detta kommando inte fungerar, fråga din lärare om hjälp.
+If this still doesn't work, ask your coach for some help.
 
-Nästa steg, kör:
+Next, run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -45,16 +60,16 @@ Nästa steg, kör:
     pip install django~={{ book.django_version }}
     
 
-(Notera att den sista raden var det en tilde följt efter ett vanligt likhets-tecken).
+(note that on the last line we use a tilde followed by an equal sign: ~=).
 
 ### GitHub
 
-Skapa ett [Github](https://github.com) konto.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Django Girls introduktion innehåller en sektion på vad som kallas Deployment, vilket menas med processen av att ta koden för din nya applikation och flyttar den till en publik server så att andra personer kan se applikationen.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Denna biten av introduktionen är lite annorlunda för dig som sitter på en Chromebook. Eftersom din dator redan utgår ifrån internet (inte som en vanlig laptop som är en dator i sig). Men Cloud 9 är fortfarande användbart för dig. Eftersom vi kan tänka att vår Cloud 9 workspace är ett ställe för vårt "pågående" arbete och då är Python Anywhere ett ställe där vi kan visa upp vårt arbete som är mer klart.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Således, registrera dig på Python Anywhere på [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
