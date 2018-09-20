@@ -1,64 +1,75 @@
 اگر از Chromebook استفاده نکنید، میتوانید  راست بالای این بخش </ 0> را جستوجو کنید. اگر شما هستند، تجربه نصب شما کمی متفاوت خواهد بود. شما می توانید آن را نادیده بگیرید بقیه دستورالعمل نصب.</p> 
 
-### ابر 9
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-ابر 9 ابزار است که به شما یک ویرایشگر کد و دسترسی به کامپیوتر در حال اجرا است در اینترنت که در آن شما می توانید نصب، نوشتن و اجرای نرم افزار را انجام دهید. برای مدت زمان از آموزش، ابر9 به عنوان * دستگاه محلی شما </ 0> عمل خواهد کرد. شما هنوز هم هستی اجرای دستورات در یک رابط ترمینال درست مثل همکلاسی های شما در OS X، اوبونتو یا ویندوز، اما ترمینال شما به یک رایانه در حال اجرا متصل خواهد شد در جای دیگری ابر 9 برای شما تنظیم شده است.</p> 
+Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
-1. ابر 9 را از  فروشگاه وب کروم</ 0> نصب کنید</li> 
+#### PaizaCloud Cloud IDE
+
+1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Sign up for an account
+3. Click *New Server*
+4. Click Terminal button(on the left side of the window)
+
+Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+
+{% filename %}Terminal{% endfilename %}
+
+    $
     
-    - به  c9.io و </ 0> بروید</li> 
-        
-        - برای یک حساب کار بری ثبت نام کنید
-        - روی * ایجاد یک فضای کاری جدید کلیک کنید </ 0></li> 
-            
-            - نام ببرید * دختران جانگا </ 0></li> 
-                
-                - * خالی </ 0> را انتخاب کنید (دوم از سمت راست در ردیف پایین با آرم نارنجی)</li> </ol> 
-                    
-                    حالا شما باید یک رابط با یک نوار کناری، یک پنجره اصلی بزرگ با برخی از آنها را ببینید متن و یک پنجره کوچک در پایین که به نظر می رسد چیزی شبیه به این است:
-                    
-                    % filename %}}ابر9 و% endfilename %}}
-                    
-                        نام کاربری شما:~/فضای کاری $
-                        
-                    
-                    این منطقه پایین * ترمینال </ 0> شما است، که در آن شما رایانه ابر9 را به شما ارائه می دهیم برای دستورالعمل های شما آماده شده است. شما می توانید این پنجره را تغییر دهید تا آن را کمی تغییر دهید بزرگتر.</p> 
-                    
-                    ### محیط مجازی
-                    
-                    محیط مجازی (همچنین مجازی نامیده می شود) مانند یک جعبه خصوصی است که می توانیم انجام دهیم برای کدام یک از پروژه هایی که در حال کار بر روی آنها هستیم، کد کامپیوتر مفیدی را وارد می کنیم. ما از آنها استفاده می کنیم بیت های مختلفی را که می خواهیم برای پروژه های مختلفمان بخواهیم جداگانه نگهداریم همه چیز بین پروژه ها مخلوط نیست.
-                    
-                    در ترمینال شما در پایین رابط ابر9، موارد زیر را اجرا کنید:
-                    
-                    % filename %}}ابر9 و% endfilename %}}
-                    
-                        سودا مناسب به روز رسانی 
-                        سودا مناسب پایتون ورژن 3.6 را نصب کنید
-                        
-                    
-                    اگر این هنوز کار نمی کند، از مربی خود بخواهید برای کمک به شما کمک کند.
-                    
-                    اجرای بعدی:
-                    
-                    % filename %}Cloud 9{% endfilename %}}
-                    
-                        mkdir djangogirls
-                        cd djangogirls
-                        python3.6 -mvenv myvenv
-                        source myvenv/bin/activate
-                        pip install django~={{ book.django_version }}
-                        
-                    
-                    (توجه داشته باشید که در آخرین خط ما از تیلدهایی استفاده می کنیم که علامت برابر است: ~ =).
-                    
-                    ### GitHub
-                    
-                    Make a [GitHub](https://github.com) account.
-                    
-                    ### پایتون هرجا
-                    
-                    آموزش دختران جنگو شامل بخش هایی است که به نام "استقرار" که فرآیند گرفتن کد است که برنامه وب جدید شما را تأیید می کند و انتقال آن به رایانه قابل دسترسی (به نام سرور) و غیره مردم می توانند کار شما را ببینند.
-                    
-                    این بخش زمانی کمی در هنگام انجام آموزش در یک کتاب کروم از زمانیکه ما هست، کم است در حال حاضر با استفاده از یک کامپیوتر که در اینترنت است (به عنوان مخالف، می گویند، یک لپ تاپ). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
-                    
-                    بنابراین، برای یک حساب جدید پایتون هرجا ثبت نام کنید [www.pythonanywhere.com](https://www.pythonanywhere.com).
+
+The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+
+#### AWS Cloud9
+
+1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Sign up for an account
+3. Click *Create Environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+
+{% filename %}bash{% endfilename %}
+
+    yourusername:~/workspace $
+    
+
+This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+
+### محیط مجازی
+
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+
+In your terminal at the bottom of the Cloud 9 interface, run the following:
+
+% filename %}Cloud 9{% endfilename %}}
+
+    sudo apt update
+    sudo apt install python3.6-venv
+    
+
+If this still doesn't work, ask your coach for some help.
+
+Next, run:
+
+{% filename %}Cloud 9{% endfilename %}
+
+    mkdir djangogirls
+    cd djangogirls
+    python3.6 -mvenv myvenv
+    source myvenv/bin/activate
+    pip install django~={{ book.django_version }}
+    
+
+(note that on the last line we use a tilde followed by an equal sign: ~=).
+
+### GitHub
+
+Make a [GitHub](https://github.com) account.
+
+### پایتون هرجا
+
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
