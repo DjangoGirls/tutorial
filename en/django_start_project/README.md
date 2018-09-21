@@ -51,12 +51,13 @@ The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the
 
 ```
 djangogirls
-├───manage.py
 ├───mysite
-│        settings.py
-│        urls.py
-│        wsgi.py
-│        __init__.py
+│   ├──manage.py
+│   ├──mysite
+│      ├──settings.py
+│      ├──urls.py
+│      ├──wsgi.py
+│      ├──__init__.py
 └───requirements.txt
 ```
 > **Note**: in your directory structure, you will also see your `venv` directory that we created before.
@@ -132,11 +133,11 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory 'mysite' that contains the `manage.py` file). If that goes well, you should see something like this:
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py migrate
+(myvenv) ~/djangogirls/mysite$ python manage.py migrate
 Operations to perform:
   Apply all migrations: auth, admin, contenttypes, sessions
 Running migrations:
@@ -159,25 +160,25 @@ And we're done! Time to start the web server and see if our website is working!
 
 ## Starting the web server
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+You need to be in the directory that contains the `manage.py` file (the `djangogirls/mysite` directory). In the console, we can start the web server by running `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py runserver
+(myvenv) ~/djangogirls/mysite$ python manage.py runserver
 ```
 
 If you are on a Chromebook, use this command instead:
 
 {% filename %}Cloud 9{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+(myvenv) ~/djangogirls/mysite$ python manage.py runserver 0.0.0.0:8080
 ```
 
 If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+(myvenv) ~/djangogirls$/mysite python manage.py runserver 0:8000
 ```
 
 

@@ -68,34 +68,35 @@ To keep everything tidy, we will create a separate application inside our projec
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py startapp blog
+(myvenv) ~/djangogirls/mysite$ python manage.py startapp blog
 ```
 
 {% filename %}Windows:{% endfilename %}
 ```
-(myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
+(myvenv) C:\Users\Name\djangogirls\mysite> python manage.py startapp blog
 ```
 
 You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
 
 ```
 djangogirls
-├── blog
-│   ├── __init__.py
-│   ├── admin.py
-│   ├── apps.py
-│   ├── migrations
-│   │   └── __init__.py
-│   ├── models.py
-│   ├── tests.py
-│   └── views.py
-├── db.sqlite3
-├── manage.py
 ├── mysite
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   └── wsgi.py
+│   ├── blog
+│   │   ├── __init__.py
+│   │   ├── admin.py
+│   │   ├── apps.py
+│   │   ├── migrations
+│   │   │   └── __init__.py
+│   │   ├── models.py
+│   │   ├── tests.py
+│   │   └── views.py
+│   ├── db.sqlite3
+│   ├── manage.py
+│   ├── mysite
+│   │   ├── __init__.py
+│   │   ├── settings.py
+│   │   ├── urls.py
+│   │   └── wsgi.py
 └── requirements.txt
 ```
 
@@ -177,7 +178,7 @@ The last step here is to add our new model to our database. First we have to mak
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py makemigrations blog
+(myvenv) ~/djangogirls/mysite$ python manage.py makemigrations blog
 Migrations for 'blog':
   blog/migrations/0001_initial.py:
   - Create model Post
@@ -189,7 +190,7 @@ Django prepared a migration file for us that we now have to apply to our databas
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~/djangogirls$ python manage.py migrate blog
+(myvenv) ~/djangogirls/mysite$ python manage.py migrate blog
 Operations to perform:
   Apply all migrations: blog
 Running migrations:
