@@ -2,16 +2,16 @@ Puedes [saltarte esta sección](http://tutorial.djangogirls.org/en/installation/
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE es una herramienta que te da un editor de código y acceso a una computadora conectada a internet en la que puedes instalar, escribir y correr el software. Para la duración del tutorial, cloud IDE funcionará como tu *máquina local*. Seguirás corriendo comandos en una interfaz de terminal justo como tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal será conenctada a una computadora corriendo en algún otro lugar que cloud IDE establecerá por tí. Aquí están las instrucciones para cloud IDEs (PaizaCloud Cloud IDE, AWS CLoud9). Puedes elegir una de las cloud IDEs, y seguir las instrucciones de cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+1. Ve a [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Crea una cuenta
+3. Dale click a *New Server*
+4. Da click en el botón terminal (en el lado izquierdo de la ventana)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Ahora deberías ver una interfaz con una barra y botones en la izquierda. Dale click al botón "Terminal" para abrir la ventana de la terminal con rapidéz de esta forma:
 
 {% filename %}Terminal{% endfilename %}
 
