@@ -165,7 +165,7 @@ $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-
 As you watch that running, you'll be able to see what it's doing:
 
 - Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own PC
+- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
 - Updating your settings file with some deployment settings
 - Setting up a database on PythonAnywhere using the `manage.py migrate` command
 - Setting up your static files (we'll learn about these later)
