@@ -49,9 +49,9 @@ Y guárdalo como `.gitignore` en la carpeta "djangogirls".
 
 > **Nota** ¡El punto al principio del nombre del archivo es importante! Si tienes problemas para crearlo (a los Mac no les gusta que crees ficheros con un punto al principio del nombre usando el Finder por ejemplo), entonces usa la opción "Save As" o "Guardar como" de tu editor, esto funcionará seguro.
 > 
-> **Nota** Uno de los archivos especificados en tu `.gitignore` es `db.sqlite3`. Este archivo es tu base de datos local, donde se almacenan todas tus publicaciones. No querrás añadir esto a tu repositorio por que tu pagina en PythonAnywhere va a usar una base de datos distinta. Esa base de datos podría ser SQLite, como tu maquina de desarrollo, pero usualmente usarás una llamada MySQL que puede manejar muchos mas visitantes que SQLite. De todos modos, al ignorar tu base de datos SQLite en la copia de GitHub todas las publicaciones que has creado hasta el momento solo van a estar disponibles localmente y se van a quedar así, pero vas a tener que añadirlas de nuevo en producción. Deberías imaginar que tu base de datos local es un buen campo de pruebas donde puedes probar diferentes cosas sin miedo a borrar tus publicaciones reales de tu blog.
+> **Nota** Uno de los archivos especificados en tu `.gitignore` es `db.sqlite3`. Este archivo es tu base de datos local, donde se almacenan todas tus publicaciones. No queremos añadir esto al repositorio por que el sitio web en PythonAnywhere va a usar una base de datos distinta. Esa base de datos podría ser SQLite, como en tu maquina de desarrollo, pero normalmente usarás MySQL o PostgreSQL que pueden manejar muchos mas visitantes que SQLite. De cualquier forma, al haber ignorado tu base de datos SQLite en la copia de GitHub, todas las publicaciones que has creado hasta el momento solo van a estar disponibles localmente. Para que haya datos tendrás que añadir más publicaciones en producción. Tu base de datos local es un buen campo de pruebas donde puedes probar diferentes cosas sin miedo a estropear o borrar las publicaciones reales de tu blog.
 
-Es una buena idea utilizar el comando `git status` antes de `git add` o en cualquier momento en que no estés seguro de lo que ha cambiado. Esto te ayudará a prevenir cualquier sorpresa, como archivos incorrectos siendo añadidos o consignados (commit). El comando `git status` muestra información sobre cualquier archivo no seguido("untracked"), modificado ("modified"), preparado ("staged"), el estado de la rama y mucho más. La salida debería ser similar a lo siguiente:
+Te recomendamos utilizar el comando `git status` antes de `git add` o en cualquier momento en que no sepas muy bien lo que ha cambiado. Esto te ayudará a evitar sorpresas, como subir cambios o archivos que no queríamos subir. El comando `git status` muestra información sobre cualquier archivo no seguido ("untracked"), modificado ("modified"), preparado ("staged"), el estado de la rama y muchas cosas más. La salida debería ser parecida a esto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,7 +72,7 @@ Es una buena idea utilizar el comando `git status` antes de `git add` o en cualq
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-Y finalmente guardamos nuestros cambios. Ve a tu consola y ejecuta estos comandos:
+Y finalmente guardamos nuestros cambios. Ve a la consola y ejecuta estos comandos:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,11 +85,11 @@ Y finalmente guardamos nuestros cambios. Ve a tu consola y ejecuta estos comando
      create mode 100644 mysite/wsgi.py
     
 
-## Colocando tu código en Github
+## Subiendo tu código a Github
 
-Ve a [GitHub.com](https://www.github.com) y registrate para una nueva cuenta gratuita. (Si ya hiciste esto en la preparación del taller, ¡esta genial!)
+Ve a [GitHub.com](https://www.github.com) y regístrate para tener una cuenta gratuita. (Si ya tienes una o lo hiciste en la preparación del taller, ¡genial!)
 
-Entonces, crea un nuevo repositorio dándole el nombre "my-first-blog". Deja el cuadro de chequeo "initialize with a README" sin validar, deja la opción de .gitignore vacía (ya lo hemos hecho manualmente) y deja la licencia como None.
+A continuación, crea un nuevo repositorio con el nombre "my-first-blog". Deja el checkbox "initialize with a README" sin marcar, deja la opción de .gitignore vacía (ya lo hemos hecho manualmente) y deja la licencia como None.
 
 ![](images/new_github_repo.png)
 
