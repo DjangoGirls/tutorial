@@ -138,38 +138,38 @@ Tu código ya está subido a GitHub. ¡Ve y compruébalo! Encontrarás que está
 
 ## Configurar nuestro sitio en PythonAnywhere
 
-Vuelve al [panel principal de PythonAnywhere](https://www.pythonanywhere.com/) al hacer click en el logo, y escoge la opción iniciar la consola "Bash" – esa es la versión de una línea de comando de PythonAnywhere, tal como la de tu computador.
+Vuelve al [dashboard de PythonAnywhere](https://www.pythonanywhere.com/) haciendo click en el logo, y escoge la opción de iniciar una consola "Bash" – esta terminal es como la que hay en tu ordenador, pero en el servidor de PythonAnywhere.
 
 ![La sección 'Nueva Consola' en la interfaz de PythonAnywhere con un botón para 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Nota** PythonAnywhere está basado en Linux, entonces si estás en Windows, la consola tendrá una apariencia diferente a la de tu computador.
+> **Nota** PythonAnywhere está basado en Linux, así que si estás en Windows, la consola será un poco distinta a la de tu ordenador.
 
-Desplegar una aplicación web en PythonAnywhere involucra jalar tu codigo de GitHub y entonces configurar PythonAnywhere para reconocerlo y empezar a servirlo como una aplicación web. Hay maneras manuales de hacerlo, pero PythonAnywhere provee una herramienta de asistencia que lo hará todo por tí. Instalemos la herramienta primero:
+Para desplegar una aplicación web en PythonAnywhere necesitas descargar tu código de GitHub y configurar PythonAnywhere para que lo reconozca y lo sirva como una aplicación web. Hay formas de hacerlo manualmente, pero PythonAnywhere tiene una herramienta automática que lo hará todo por nosotros. Lo primero, vamos a instalar la herramienta:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pip3.6 install --user pythonanywhere
     
 
-Eso debería imprimir en pantalla algunas cadenas de texto como `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+Eso debería mostrar en pantalla algunos mensajes como `Collecting pythonanywhere`, y finalmente una linea diciendo que ha terminado bien: `Successfully installed (...) pythonanywhere- (...)`.
 
-Ahora ejecutamos el asistente para configurar automáticamente nuestra aplicación desde GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Ahora ejecutaremos el asistente para configurar automáticamente nuestra aplicación desde GitHub. Teclea lo siguiente en la consola de PythonAnywhere (no te olvides de usar tu propio nombre de usuario de GitHub en lugar de `<your-github-username>`, para que la URL sea como la URL de clonar el repo de GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-A medida que ves ejecutar, podrás ver lo que hace:
+A medida que se ejecuta, podrás ver lo que hace:
 
-- Descarga tu código de GitHub
-- Crea un virtualenv en PythonAnywhere, tal como el de tu PC
-- Actualiza tus configuraciones con algunas configuraciones de despliegue
-- Configura la base de datos en PythonAnywhere usando el comando `manage.py migrate`
-- Configura tus archivos estáticos (aprenderemos acerca de estos luego)
-- Y configura PythonAnywhere para publicar tu aplicación web por medio de su API
+- Se descarga tu código de GitHub
+- Crea un virtualenv en PythonAnywhere, igual que el de tu ordenador local
+- Actualiza tus ficheros de settings con algunos settings de despliegue
+- Crea la base de datos en PythonAnywhere ejecutando el comando `manage.py migrate`
+- Configura los archivos estáticos (static) (luego hablaremos de éstos con más detalle)
+- Y configura PythonAnywhere para publicar tu aplicación web a través de su API
 
-En PythonAnywhere todos esos pasos están automatizados, pero son los mismos pasos que tendrías que haber seguido en cualquier otro proveedor de servidor. Lo principal a notar ahora es que tu base de datos en PythonAnywhere está, en realidad, totalmente separada de la base de datos en tu propio PC—eso significa que puedes tener distintas publicaciones y cuentas de administración.
+En PythonAnywhere todos estos pasos están automatizados, pero son los mismos pasos que tendrías que haber seguido en cualquier otro proveedor de servidores. Lo principal a notar ahora es que tu base de datos en PythonAnywhere está, en realidad, totalmente separada de la base de datos en tu propio PC—eso significa que puedes tener distintas publicaciones y cuentas de administración.
 
 Como resultado, tal como hicimos en tu computador, necesitamos inicializar la cuenta de administrador con `createsuperuser`. PythonAnywhere ha activado automáticamente tu virtualenv, entonces todo lo que debes hacer es ejecutar:
 
