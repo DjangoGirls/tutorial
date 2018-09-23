@@ -169,18 +169,18 @@ A medida que se ejecuta, podrás ver lo que hace:
 - Configura los archivos estáticos (static) (luego hablaremos de éstos con más detalle)
 - Y configura PythonAnywhere para publicar tu aplicación web a través de su API
 
-En PythonAnywhere todos estos pasos están automatizados, pero son los mismos pasos que tendrías que haber seguido en cualquier otro proveedor de servidores. Lo principal a notar ahora es que tu base de datos en PythonAnywhere está, en realidad, totalmente separada de la base de datos en tu propio PC—eso significa que puedes tener distintas publicaciones y cuentas de administración.
+En PythonAnywhere todos estos pasos están automatizados, pero son los mismos pasos que tendrías que haber seguido en cualquier otro proveedor de servidores. Lo más importante es que la base de datos de PythonAnywhere es totalmente independiente de la base de datos de tu ordenador local. Eso significa que puede tener distintas publicaciones y cuentas de administración.
 
-Como resultado, tal como hicimos en tu computador, necesitamos inicializar la cuenta de administrador con `createsuperuser`. PythonAnywhere ha activado automáticamente tu virtualenv, entonces todo lo que debes hacer es ejecutar:
+Así que, igual que hicimos en tu ordenador local, tenemos que crear la cuenta de administrador con `createsuperuser`. PythonAnywhere ya ha activado automáticamente el virtualenv, así que solamente hay que ejecutar:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Inserta las credenciales para tu usuario admin. Mejor si usas las mismas que usas en tu computador, para evitar confusiones; a menos que quieras que la contraseña en PythonAnywhere sea más segura.
+Teclea las credenciales para tu usuario admin. Para evitar confusiones, te recomendamos usar el mismo nombre de usuario que usaste en tu ordenador local; aunque a lo mejor prefieres que la contraseña en PythonAnywhere sea más segura.
 
-Ahora, si lo deseas, tambien puedes mirar tu código en PythonAnywhere usando `ls`:
+Ahora, si quieres, también puedes ver tu código en PythonAnywhere con el comando `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -191,11 +191,11 @@ Ahora, si lo deseas, tambien puedes mirar tu código en PythonAnywhere usando `l
     templates  tests.py  urls.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+También puedes ir a la página de ficheros ("Files") y navegar por los ficheros y directorios usando el visor de PythonAnywhere. (Desde la página de la consola ("Console"), puedes ir a cualquier otra página de PythonAnywhere usando el botón de la esquina superior derecha. Desde el resto de páginas, también hay enlaces a las otras en la parte superior.)
 
-## Ahora estás en línea!
+## ¡Ya estás en vivo!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+¡Tu sitio ya debería estar online en internet! Haz click en la página "Web" de PythonAnywhere para obtener un enlace a él. Puedes compartir este enlace con quien tu quieras :)
 
 > **Nota** Este es un tutorial para principiantes, y al desplegar esta página hemos tomado algunos atajos que no son ideales desde una perspectiva de seguridad. Si y cuando decida construir sobre este proyecto, o comenzar uno nuevo, debería revisar el [Checklist de despliegue de Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) para obtener algunos tips de cómo asegurar tu página.
 
