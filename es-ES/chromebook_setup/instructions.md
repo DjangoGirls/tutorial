@@ -18,28 +18,28 @@ Ahora deberías ver una interfaz con una barra y botones en la izquierda. Haz cl
     $
     
 
-The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+La terminal enviará tus instrucciones al ordenador que Cloud 9 ha preparado para ti. Puedes redimensionar o maximizar la ventana para hacerla un poco mas grande.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. Ve a [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Crea una cuenta
+3. Haz click en *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Deberías ver un interfaz con una barra lateral, una ventana principal grande con texto y una ventana pequeña abajo del todo parecida a esto:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+La parte inferior es tu *terminal*, donde escribirás las instrucciones para el ordenador que Cloud 9 te ha preparado. Puedes redimensionar la ventana para hacerla un poco más grande.
 
 ### Entorno Virtual
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un entorno virtual (también llamado virtualenv) es como una caja privada donde podemos guardar código útil para el proyecto en el que estamos trabajando. Lo usamos para guardar por separado los trozos de código de distintos proyectos, y que así, las cosas no se mezclen entre proyectos.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+En la terminal de la parte inferior de Cloud 9, ejecuta lo siguiente:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Si aun así, no te funciona, pide ayuda a tu mentor.
 
-Next, run:
+A continuación, ejecuta:
 
 {% filename %}Cloud 9{% endfilename %}
 
