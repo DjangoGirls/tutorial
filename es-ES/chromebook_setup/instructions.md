@@ -1,17 +1,17 @@
 Puedes [saltarte esta sección](http://tutorial.djangogirls.org/en/installation/#install-python) en caso de que no estés usando un Chromebook. Si lo estás usando, tu experiencia de instalación será algo diferente. Puedes ignorar el resto de las instrucciones de instalación.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### IDE en la nube (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE es una herramienta que te da un editor de código y acceso a una computadora conectada a internet en la que puedes instalar, escribir y correr el software. Para la duración del tutorial, cloud IDE funcionará como tu *máquina local*. Seguirás corriendo comandos en una interfaz de terminal justo como tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal será conenctada a una computadora corriendo en algún otro lugar que cloud IDE establecerá por tí. Aquí están las instrucciones para cloud IDEs (PaizaCloud Cloud IDE, AWS CLoud9). Puedes elegir una de las cloud IDEs, y seguir las instrucciones de cloud IDE.
+Un IDE en la nube es una herramienta que te da un editor de código y acceso a un ordenador conectado a internet en el que puedes instalar, escribir y ejecutar software. En este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás ejecutando comandos en una terminal igual que tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal en realidad estará conectada a un ordenador corriendo en otro sitio que el IDE en la nube gestionará para ti. Aquí están las instrucciones para IDEs en la nube (PaizaCloud Cloud IDE, AWS Cloud9). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
 
 #### PaizaCloud Cloud IDE
 
 1. Ve a [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Crea una cuenta
-3. Dale click a *New Server*
-4. Da click en el botón terminal (en el lado izquierdo de la ventana)
+3. Haz click en *New Server*
+4. Haz click en el botón Terminal (en el lado izquierdo de la ventana)
 
-Ahora deberías ver una interfaz con una barra y botones en la izquierda. Dale click al botón "Terminal" para abrir la ventana de la terminal con rapidéz de esta forma:
+Ahora deberías ver una interfaz con una barra y botones en la izquierda. Haz click en al botón "Terminal" para abrir la ventana de la terminal con un símbolo de sistema como este:
 
 {% filename %}Terminal{% endfilename %}
 
