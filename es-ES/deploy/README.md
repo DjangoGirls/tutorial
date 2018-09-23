@@ -93,15 +93,15 @@ A continuación, crea un nuevo repositorio con el nombre "my-first-blog". Deja e
 
 ![](images/new_github_repo.png)
 
-> **Note** El nombre `my-first-blog` es importante - tu puedes escoger algo mas, pero va a ocurrir muchas veces en las instrucciones, y vas a tener que sustituirlo cada vez. It's probably easier to stick with the name `my-first-blog`.
+> **Nota** El nombre `my-first-blog` es importante - podrías escoger otro, pero va a salir muchas veces en las instrucciones que vienen a continuación, y vas a tener que acordarte de cambiarlo cada vez. Lo más fácil es quedarse con el nombre `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+En la siguiente pantalla, verás la URL para clonar el repo, que tendrás que usar en los comandos que van a continuación:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Ahora necesitas enlazar el repositorio de Git en tu computador al repositorio de github.
+Ahora necesitas enlazar el repositorio Git en tu ordenador con el repositorio de GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Escribe lo siguiente en la consola (cambia `<your-github-username>` por tu nombre de usuario de GitHub, pero sin los símbolos < y > -- fíjate en que la URL debería coincidir con la URL para clonar el repo que acabas de ver):
 
 {% filename %}command-line{% endfilename %}
 
@@ -109,7 +109,7 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-Ingresa tu nombre de usuario y contraseña de GitHub y deberías ver algo como:
+Teclea tu nombre de usuario y contraseña de GitHub y deberías ver algo como:
 
 {% filename %}command-line{% endfilename %}
 
@@ -126,17 +126,17 @@ Ingresa tu nombre de usuario y contraseña de GitHub y deberías ver algo como:
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Tu código ahora está en GitHub. ¡Ve y verificalo! Encontrarás que algunas compañias como - [Django](https://github.com/django/django)[Django Girst Tutorial](https://github.com/DjangoGirls/tutorial), y muchas otros proyectos grandes de software libre están alojados en GitHub. :)
+Tu código ya está subido a GitHub. ¡Ve y compruébalo! Encontrarás que está en buena compañía - [Django](https://github.com/django/django)[Django Girlst Tutorial](https://github.com/DjangoGirls/tutorial), y muchos otros proyectos de software libre están alojados en GitHub. :)
 
 # Configurar nuestro blog en PythonAnywhere
 
-## Regístrese para crear una cuenta en PythonAnywhere
+## Crea una cuenta en PythonAnywhere
 
-> **Nota** Puede que ya hayas creado una cuenta en PythonAnywhere durante los paso de instalación. Si es así, no necesitas hacerlo de nuevo.
+> **Nota** A lo mejor ya has creado una cuenta en PythonAnywhere durante los pasos de instalación. Si es así, no necesitas hacerlo otra vez.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configurar nuestra página en PythonAnywhere
+## Configurar nuestro sitio en PythonAnywhere
 
 Vuelve al [panel principal de PythonAnywhere](https://www.pythonanywhere.com/) al hacer click en el logo, y escoge la opción iniciar la consola "Bash" – esa es la versión de una línea de comando de PythonAnywhere, tal como la de tu computador.
 
