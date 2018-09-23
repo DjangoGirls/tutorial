@@ -197,25 +197,25 @@ También puedes ir a la página de ficheros ("Files") y navegar por los ficheros
 
 ¡Tu sitio ya debería estar online en internet! Haz click en la página "Web" de PythonAnywhere para obtener un enlace a él. Puedes compartir este enlace con quien tu quieras :)
 
-> **Nota** Este es un tutorial para principiantes, y al desplegar esta página hemos tomado algunos atajos que no son ideales desde una perspectiva de seguridad. Si y cuando decida construir sobre este proyecto, o comenzar uno nuevo, debería revisar el [Checklist de despliegue de Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) para obtener algunos tips de cómo asegurar tu página.
+> **Nota** Este es un tutorial para principiantes, y al desplegar este sitio hemos tomado algunos atajos que tal vez no sean las mejores prácticas desde el punto de vista de la seguridad. Si decides ampliar este proyecto o comenzar uno nuevo, deberías revisar el [Checklist de despliegue de Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) con recomendaciones para que tu sitio sea más seguro.
 
-## Tips de Depuración
+## Consejos de depuración
 
-Si ves un error al ejecutar el script `pa_autconfigure_django.py`, aqui hay algunas causas comunes:
+Si te sale un error al ejecutar el script `pa_autconfigure_django.py`, aquí hay algunas causas comunes:
 
-- Olvidar crear el token de API de PythonAnywhere.
-- Cometer un error en la URL de GitHub
-- Si ves un error diciendo *"Could not find your settings.py*, es probable que no añadieras todos tus archivos a Git, y/o no los subiste a GitHub satisfactoriamente. Dale otro vistazo a la sección Git arriba
+- Te has olvidado de crear el token de API de PythonAnywhere.
+- No has puesto bien la URL de GitHub
+- Si ves un error diciendo *"Could not find your settings.py*, es probable que no añadieras todos tus archivos a Git, y/o no los subiste a GitHub correctamente. Repasa la sección de Git más arriba
 
-Si ves un error cuando tratas de visitar tu página, el primer lugar para ver alguna información de depuración es en tu **log de errores**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). Mira si hay algún mensaje de error allí; los más recientes están en la parte inferior.
+Si ves un error al visitar tu sitio, el primer lugar para ver qué está pasando es el **log de errores**. Encontrará un enlace en la página ["Web"](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Mira si hay algún mensaje de error allí; los más recientes están en la parte inferior.
 
-Hay también alguns [ tips generales de depuración en la página de ayuda de PythonAywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Hay también algunos [ consejos generales de depuración en la página de ayuda de PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-Y recuerda, tu mentor está aquí para ayudar!
+Y recuerda, ¡tu mentor está aquí para ayudar!
 
-# Checa tu página!
+# ¡Comprueba tu página!
 
-La página por defecto debería decir "It worked!", tal como lo dice en tu computador. Intenta añadir `/admin/` al final de la URL y te llevará a la página de administración. Ingresa con el usuario y contraseña y verás que puedes agregar nuevas publicaciones al servidor.
+La página por defecto debería decir "It worked!", tal como dice en tu ordenador local. Intenta añadir `/admin/` al final de la URL y te llevará a la página de administración. Ingresa con el usuario y contraseña y verás que puedes agregar nuevas publicaciones al servidor.
 
 Una vez que hayas creado algunas publicaciones, puedes volver a tu instalación local (no PythonAnywhere). Desde allí, deberías trabajar en tu instalación local para hacer cambios. Este es un flujo de trabajo común en el desarrollo web – haz cambios localmente, sube esos cambios a GitHub, y jala tus cambios al servidor de publicación. Esto te permite trabajar y experimentar sin romper tu página publicada. Genial, ¿ah?
 
