@@ -12,11 +12,11 @@ Pero no queremos empezar de cero otra vez, ¿verdad? De nuevo vamos a usar algo 
 
 Bootstrap es uno de los frameworks de HTML y CSS mas populares para desarrollar para sitios web atractivos: https://getbootstrap.com/
 
-Fue escrito por programadores que trabajaban para Twitter. ¡Ahora está siendo desarrollado por voluntarios de todo el mundo!
+Lo escribieron programadores que trabajaban en Twitter. ¡Ahora lo mantienen y desarrollan voluntarios de todo el mundo!
 
 ## Instalar Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Para instalar Bootstrap, abre tu fichero `.html` en el editor de código y añade esto a la sección `<head>`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,13 +25,13 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Esto no agrega archivos a tu proyecto. Solo apunta a archivos que existen en Internet. Así que adelante, accede a tu sitio web y refresca la página ¡Aquí la tienes!
+Esto no añade ningún archivo a tu proyecto. Solo apunta a archivos que existen en Internet. Así que adelante, accede a tu sitio web y refresca la página ¡Aquí la tienes!
 
 ![Figura 14.1](images/bootstrap1.png)
 
-¡Se ve mucho mejor!
+¡Ya tiene mejor pinta!
 
-## Archivos estáticos en Django
+## Archivos estáticos (static files) en Django
 
 Finalmente nos vamos a fijar en estas cosas que hemos estado llamando **archivos estáticos**. Los archivos estáticos son todos tus CSS e imágenes. Su contenido no depende del contexto de la solicitud y será el mismo para todos los usuarios.
 
