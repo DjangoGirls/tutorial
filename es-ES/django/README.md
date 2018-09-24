@@ -10,9 +10,9 @@ Los frameworks sirven para que no tengamos que reinventar la rueda cada vez y qu
 
 ## ¿Por qué necesitas un framework?
 
-Para entender para que es Django, necesitamos mirar más de cerca a los servidores. Lo primero que el servidor necesita saber es que quieres que te sirva una página web.
+Para entender para que sirve realmente Django, necesitamos fijarnos en cómo funcionan los servidores. Lo primero es que el servidor necesita enterarse de que tu quieres que te sirva una página web.
 
-Imagina un buzón (puerto) el cual es monitoreado por cartas entrantes (peticiones). Esto es realizado por un servidor web. El servidor web lee la carta, y envía una respuesta con una página web. Pero cuando quieres enviar algo, tienes que tener algún contenido. Y Django es quien que te ayuda a crear el contenido.
+Imagina un buzón (puerto) en el que alguien está constantemente mirando si hay cartas entrantes (peticiones). Esto es lo que hace un servidor web. El servidor web lee la carta, y envía una respuesta con la página web. Pero para enviar algo, tenemos que tener algún contenido. Y Django nos ayuda a crear ese contenido.
 
 ## ¿Qué sucede cuando alguien solicita una página web de tu servidor?
 
