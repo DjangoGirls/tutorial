@@ -207,7 +207,7 @@ Se você vir um erro ao rodar o script `pa_autoconfigure_django.py`, aqui vão a
 - Digitar a URL do seu GitHub incorretamente.
 - Se você vir um erro dizendo *"Could not find your settings.py"* (settings.py não encontrado), você provavelmente não adicionou todos os seus arquivos ao Git e/ou você não fez o push deles para o GitHub. Dê uma revisada na sessão sobre Git acima
 
-Se você vir um erro ao visitar o seu site, o primeiro lugar para procurar informações sobre ele é o **log de erros**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). Verifique se há alguma mensagem de erro no log; as mais recentes estarão no final.
+Se você vir um erro ao visitar o seu site, o primeiro lugar para procurar informações sobre ele é o **log de erros**. Você encontrará um link para isso na [página "Web"](https://www.pythonanywhere.com/web_app_setup/) do PythonAnywhere. Verifique se há alguma mensagem de erro no log; as mais recentes estarão no final.
 
 Há também algumas [dicas de debugging no site de ajuda da PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
@@ -219,4 +219,4 @@ A página padrão no seu site deverá dizer "It worked!" ("Funcionou!"), igual a
 
 Depois de criar alguns posts, você pode voltar para o seu ambiente local (não o PythonAnywhere). Daqui pra frente você deve trabalhar no seu ambiente local para fazer alterações. Este workflow é comum no desenvolvimento web – fazer alteracões locais, subir essas alteracões pro GitHub, e baixar essas alterações para o seu servidor web de produção. Isto permite que você desenvolva e experimente sem quebrar o seu site que está no ar. Bem legal, né?
 
-Você merece *MUITOS* parabéns! Deploys em servidores são uma das partes mais complicadas do desenvolvimento web e não é incomum levar vários dias até conseguir fazer com que isso funcione. But you've got your site live, on the real Internet!
+Você merece *MUITOS* parabéns! Deploys em servidores são uma das partes mais complicadas do desenvolvimento web e não é incomum levar vários dias até conseguir fazer com que isso funcione. Mas você já tem seu site publicado, na internet!
