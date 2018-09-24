@@ -2,7 +2,7 @@
 
 Para adicionar, editar e deletar os posts que acabamos de modelar, nós usaremos o admin do Django.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Vamos abrir o arquivo `blog/admin.py` no editor e substituir o conteúdo com isso:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -33,7 +33,7 @@ Para fazer login, você precisa criar um *superusuário (superuser)* - uma conta
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Quando for solicitado, insira seu nome de usuário (letras minúsculas, sem espaços), e-mail e senha. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. A saída deve parecer com isso (onde o nome de usuário e o email devem ser os seus):
+Quando for solicitado, insira seu nome de usuário (letras minúsculas, sem espaços), e-mail e senha. **Não se preocupe por não conseguir ver a senha que está digitando - é assim mesmo.** Digite a senha e aperte a tecla `enter` para continuar. A saída deve parecer com isso (onde o nome de usuário e o email devem ser os seus):
 
     Username: admin
     Email address: admin@admin.com
@@ -46,7 +46,7 @@ Volte ao seu navegador. Faça login com as credenciais de superusuário que voc�
 
 ![Django Admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can copy-paste some text from this tutorial to save time. :)
+Abra a página de Posts e experimente um pouquinho. Adicione cinco ou seis posts do blog. Não se preocupe com o conteúdo - você pode copiar e colar textos do tutorial para poupar tempo. :)
 
 Certifique-se de que pelo menos duas ou três postagens (mas não todas) têm a data de publicação definida. Isso será útil depois.
 
