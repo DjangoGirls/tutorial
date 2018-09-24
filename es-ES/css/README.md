@@ -1,16 +1,16 @@
-# CSS - ¡Hazlo verse bien!
+# CSS - ¡Que quede bonito!
 
-Nuestro blog todavía se ve bastante feo, ¿verdad? ¡Es hora de hacerlo bonito! Vamos a usar CSS para eso.
+Nuestro blog todavía es un poco feo, ¿no te parece? ¡Es hora de ponerlo bonito! Para eso, vamos a usar CSS.
 
 ## ¿Qué es CSS?
 
-Las hojas de estilos en cascada (CSS por sus siglas en ingles) es un lenguaje usado para describir la apariencia de una página web escrita en un lenguaje de marcado (como HTML). Míralo como un maquillaje para nuestra página web ;)
+El lenguaje CSS (las siglas en inglés de hojas de estilos en cascada, o Cascading Style Sheets) sirve para describir la apariencia de un sitio web escrito en un lenguaje de marcado (como HTML). Es como la capa de pintura para nuestra página web. ;)
 
-Pero no queremos empezar de cero otra vez, ¿verdad? Una vez más, vamos a usar algo que los programadores publicaron en Internet. Sabes, reinventar la rueda no es divertido.
+Pero no queremos empezar de cero otra vez, ¿verdad? De nuevo vamos a usar algo que otros programadores publicaron en Internet. Estar siempre reinventando la rueda no mola.
 
 ## ¡Vamos a usar Bootstrap!
 
-Bootstrap es uno de los frameworks mas populares de HTML y CSS para desarrollar para sitios atractivos: https://getbootstrap.com/
+Bootstrap es uno de los frameworks de HTML y CSS mas populares para desarrollar para sitios web atractivos: https://getbootstrap.com/
 
 Fue escrito por programadores que trabajaban para Twitter. ¡Ahora está siendo desarrollado por voluntarios de todo el mundo!
 
