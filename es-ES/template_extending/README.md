@@ -1,8 +1,8 @@
 # Extendiendo plantillas
 
-Otra cosa buena que Django tiene para tí es la **extensión de plantillas**. ¿Qué significa esto? Significa que puedes usar las mismas partes de tu HTML para diferentes páginas de tu sitio web.
+Otra cosa buena que tiene Django es la **extensión de plantillas**. ¿Qué significa? Significa que puedes reusar partes del HTML para diferentes páginas del sitio web.
 
-Las plantillas te ayudan cuando deseas utilizar el misma información o diseño en más de un lugar. No tienes que repetirte a ti misma en cada archivo. Y si quieres cambiar algo, no tienes que hacerlo en cada plantilla, sólo en una!
+Las plantillas son útiles cuando quieres utilizar la misma información o el mismo diseño en más de un lugar. No tienes que repetirte a ti misma en cada archivo. Y si quieres cambiar algo, no tienes que hacerlo en cada plantilla, sólo en una!
 
 ## Crea una plantilla base
 
