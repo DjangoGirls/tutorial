@@ -86,7 +86,7 @@ Luego, en `base.html` reemplaza por completo tu `<body>` (todo lo que haya entre
 
 Pero ¿por qué? ¡Acabas de crear un bloque! Hemos usado la etiqueta de plantilla `{% block %}` para crear un área en la que se insertará HTML. Ese HTML vendrá de otra plantilla que extiende esta (`base.html`). Enseguida te enseñamos cómo se hace.
 
-Ahora guarda `base.html` y abre `blog/templates/blog/post_list.html` de nuevo en el editor. {% raw %}Quita todo lo que hay encima de `{% for post in posts %}` y por debajo de `{% endfor %}`. Cuando termines el archivo tendrá este aspecto:{% endraw %}
+Ahora guarda `base.html` y abre `blog/templates/blog/post_list.html` de nuevo en el editor. {% raw %}Quita todo lo que hay encima de `{% for post in posts %}` y por debajo de `{% endfor %}`. Cuando termines, el archivo tendrá este aspecto:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,9 +102,9 @@ Ahora guarda `base.html` y abre `blog/templates/blog/post_list.html` de nuevo en
 {% endfor %}
 ```
 
-Queremos utilizar esto como parte de nuestra plantilla para todos los bloques de contenido. Hora de añadir etiquetas de bloque a este archivo!
+Queremos utilizar esto como parte de nuestra plantilla en los bloques de contenido. ¡Es hora de añadir etiquetas de bloque en este archivo!
 
-{% raw %} Tu etiqueta de bloque debe coincidir con tu archivo `base.html`. También querrás incluir todo el código que va en tus bloques de contenido. Para ello, pon todo entre `{% block content %}` y `{% endblock %}`. Algo como esto:{% endraw %}
+{% raw %}Tu etiqueta de bloque debe ser la misma que la etiqueta del archivo `base.html`. También querrás que incluya todo el código que va en los bloques de contenido. Para ello, pon todo entre `{% block content %}` y `{% endblock %}`. Algo como esto:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ Queremos utilizar esto como parte de nuestra plantilla para todos los bloques de
 {% endblock %}
 ```
 
-Solo falta una cosa. Tenemos que conectar estas dos plantillas. Esto es lo que significa extender plantillas! Haremos esto añadiendo una etiqueda "extends" al comienzo del archivo. Así:
+Solo falta una cosa. Tenemos que conectar estas dos plantillas. ¿Esto es lo que significa extender plantillas! Para eso tenemos que añadir una etiqueta "extends" al comienzo del archivo. Así:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Solo falta una cosa. Tenemos que conectar estas dos plantillas. Esto es lo que s
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+¡Y ya está! Guarda el fichero y comprueba que el sitio web sigue funcionando como antes. :)
 
-> Si te sale el error `TemplateDoesNotExist`, significa que no hay ningún archivo `blog/base.html` y tienes `runserver` corriendo en la consola. Ve a la línea de comandos, detén el servidor pulsando Ctrl + C (teclas Control y C juntas) y reinicialo con el comando `python manage.py runserver`.
+> Si te sale el error `TemplateDoesNotExist`, que significa que no hay ningún archivo `blog/base.html` y tienes `runserver` corriendo en la consola. Intenta pararlo, pulsando Ctrl+C (teclas Control y C a la vez) en la consola y reiniciarlo con el comando `python manage.py runserver`.
