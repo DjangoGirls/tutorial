@@ -140,7 +140,7 @@ Tu código ya está subido a GitHub. ¡Ve y compruébalo! Encontrarás que está
 
 Vuelve al [dashboard de PythonAnywhere](https://www.pythonanywhere.com/) haciendo click en el logo, y escoge la opción de iniciar una consola "Bash" – esta terminal es como la que hay en tu ordenador, pero en el servidor de PythonAnywhere.
 
-![La sección 'Nueva Consola' en la interfaz de PythonAnywhere con un botón para 'bash'](images/pythonanywhere_bash_console.png)
+![La sección 'New Console' en la interfaz de PythonAnywhere con un botón para 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Nota** PythonAnywhere está basado en Linux, así que si estás en Windows, la consola será un poco distinta a la de tu ordenador.
 
@@ -215,8 +215,8 @@ Y recuerda, ¡tu mentor está aquí para ayudar!
 
 # ¡Comprueba tu página!
 
-La página por defecto debería decir "It worked!", tal como dice en tu ordenador local. Intenta añadir `/admin/` al final de la URL y te llevará a la página de administración. Ingresa con el usuario y contraseña y verás que puedes agregar nuevas publicaciones al servidor.
+La página por defecto debería decir "It worked!", tal como dice en tu ordenador local. Prueba a añadir `/admin/` al final de la URL y llegarás a la página de administración. Teclea tu usuario y contraseña y verás que puedes añadir nuevas publicaciones en el servidor.
 
-Una vez que hayas creado algunas publicaciones, puedes volver a tu instalación local (no PythonAnywhere). Desde allí, deberías trabajar en tu instalación local para hacer cambios. Este es un flujo de trabajo común en el desarrollo web – haz cambios localmente, sube esos cambios a GitHub, y jala tus cambios al servidor de publicación. Esto te permite trabajar y experimentar sin romper tu página publicada. Genial, ¿ah?
+Después de crear algunas publicaciones, puedes volver a tu instalación local (no la de PythonAnywhere). A partir de ahora, trabaja en tu instalación local para hacer los siguientes cambios. Este es un flujo de trabajo típico en el desarrollo web – haz cambios localmente, sube (push) esos cambios a GitHub, y descarga (pull) tus cambios al servidor de publicación. Esto te permite trabajar y experimentar en local sin romper tu página publicada. Mola, ¿eh?
 
-¡Date una *GRAN* palmada en la espalda! El despliegue a servidor es una de las partes más complicadas de desarrollo web y con frecuencia requiere a las personas múltiples días antes de lograr que funcione. But you've got your site live, on the real Internet!
+¡Date una *GRAN* palmada en la espalda! Desplegar a un servidor es una de las partes más complicadas de desarrollo web y a menudo la gente necesita varios días para que funcione del todo. Pero tu ya tienes tu sitio publicado, ¡en internet de verdad!
