@@ -22,6 +22,6 @@ Imagine uma funcionária dos Correios com uma carta. Ela está andando pela rua 
 
 Todas as coisas interessantes são feitas dentro da função *view*: podemos dar uma olhada no banco de dados para procurar algumas informações. O usuário solicitou alguma mudança nos dados? Como uma carta dizendo "Por favor mude a descrição do meu emprego." A *view* pode checar se você tem permissão para fazer isso, e então atualizar a descrição do emprego e enviar de volta a mensagem: "Pronto!" Então a *view* gera uma resposta e o Django pode enviá-la para o navegador web do usuário.
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+A descrição acima é um pouquinho simplificada, mas você não precisa saber todos os detalhes técnicos ainda. Uma ideia geral já é o suficiente.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+Então, ao invés de mergulharmos fundo nos detalhes, vamos começar criando algo com o Django e ir aprendendo as partes importantes durante o caminho!
