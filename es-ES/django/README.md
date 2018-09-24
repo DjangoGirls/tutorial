@@ -4,9 +4,9 @@ Django (*gdh/ˈdʒæŋɡoʊ/jang-goh*) es un framework de aplicaciones web gratu
 
 Cuando construyes un sitio web, siempre necesitas un conjunto de componentes similares: una manera de manejar la autenticación de usuarios (registrarse, iniciar sesión, cerrar sesión), un panel de administración para tu sitio web, formularios, una forma de subir archivos, etc.
 
-Por suerte para ti, tiempo atrás varias personas notaron que los desarrolladores web enfrentan problemas similares cuando construyen un sitio nuevo, por eso se unieron y crearon frameworks (Django es uno de ellos) que te ofrecen componentes listos para usarse.
+Por suerte para nosotros, hace tiempo que otros desarrolladores se dieron cuenta de que siempre se enfrentaban a los mismos problemas cuando construían sitios web, y por eso se unieron y crearon frameworks (Django es uno de ellos) con componentes listos para usarse.
 
-Los frameworks existen para ahorrarte tener que reinventar la rueda y ayudarte a aliviar la carga cuando construyes un sitio.
+Los frameworks sirven para que no tengamos que reinventar la rueda cada vez y que podamos avanzar más rápido al construir un nuevo sitio.
 
 ## ¿Por qué necesitas un framework?
 
