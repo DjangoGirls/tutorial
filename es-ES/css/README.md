@@ -33,13 +33,13 @@ Esto no añade ningún archivo a tu proyecto. Solo apunta a archivos que existen
 
 ## Archivos estáticos (static files) en Django
 
-Finalmente nos vamos a fijar en estas cosas que hemos estado llamando **archivos estáticos**. Los archivos estáticos son todos tus CSS e imágenes. Su contenido no depende del contexto de la solicitud y será el mismo para todos los usuarios.
+Finalmente nos vamos a fijar en esto que hemos estado llamando **archivos estáticos**. Los archivos estáticos son los archivos CSS e imágenes. Su contenido no depende del contexto de la petición y siempre será el mismo para todos los usuarios.
 
-### ¿Dónde poner los archivos estáticos para Django
+### Dónde poner los archivos estáticos en Django
 
-Django ya sabe dónde encontrar los archivos estáticos para la app "admin". Ahora necesitamos agregar algunos archivos estáticos para nuestra aplicación, `blog`.
+Django ya sabe dónde encontrar los archivos estáticos de la app "admin". Ahora necesitamos añadir los archivos estáticos de nuestra aplicación, `blog`.
 
-Hacemos esto creando una carpeta llamada `static` dentro de la estructura de la aplicación que llamamos blog:
+Crearemos una carpeta llamada `static` dentro de la app blog:
 
     djangogirls
     ├── blog
@@ -49,11 +49,11 @@ Hacemos esto creando una carpeta llamada `static` dentro de la estructura de la 
     └── mysite
     
 
-Django automáticamente buscará cualquier carpeta nombrada "static" que esté dentro de cualquiera de las carpetas de tus aplicaciones para usar su contenido como archivos estáticos.
+Django encontrará automáticamente cualquier carpeta llamada "static" dentro de cualquiera de las carpetas de tus apps. Podrá usar su contenido como archivos estáticos.
 
 ## ¡Tu primer archivo CSS!
 
-Creamos un archivo CSS, para añadir tu propio estilo a la página. Crea una nueva carpeta llamada `css` dentro de tu carpeta `static`. Luego, crea un nuevo archivo llamado `blog.css` dentro de la carpeta `css`. ¿Listo?
+Vamos a crear un archivo CSS, para añadir tu propio estilo a la página. Crea un nuevo directorio llamado `css` dentro de la carpeta `static`. A continuación, crea un nuevo archivo llamado `blog.css` dentro de la carpeta `css`. ¿Listos?
 
     djangogirls
     └─── blog
@@ -62,11 +62,11 @@ Creamos un archivo CSS, para añadir tu propio estilo a la página. Crea una nue
                    └─── blog.css
     
 
-¡Es hora de escribir algo de CSS! Abre el archivo `blog/static/css/blog.css` en tu editor de código.
+¡Vamos a escribir algo de CSS! Abre el archivo `blog/static/css/blog.css` en el editor de código.
 
-No vamos a profundizar demasiado en cómo personalizar y aprender CSS aquí. Hay recomendación para un curso CSS gratuito al final de esta página por si quieres conocer más.
+No vamos a profundizar demasiado en cómo personalizar y aprender CSS. Pero te podemos recomendar un un curso gratuito de CSS al final de esta página por si quieres aprender más.
 
-Pero vamos a hacer al menos algo. ¿Tal vez podríamos cambiar el color de nuestro título? Los ordenadores utilizan códigos especiales para entender los colores. Estos códigos empiezan con `#` seguidos por 6 letras (A-F) y números (0-9). Por ejemplo, el código del color azul es `#0000FF`. Puedes encontrar los códigos para muchos colores aquí: http://www.colorpicker.com/ y en otras páginas web. También puedes utilizar [colores predefinidos](http://www.w3schools.com/colors/colors_names.asp) utilizando su nombre en inglés, como `red` y `green`.
+Vamos a hacer al menos un poquito. ¿Tal vez podríamos cambiar el color de nuestro título? Los ordenadores utilizan códigos especiales para entender los colores. Estos códigos empiezan con `#` seguidos por 6 letras (A-F) y números (0-9). Por ejemplo, el código del color azul es `#0000FF`. Puedes encontrar los códigos para muchos colores aquí: http://www.colorpicker.com/ y en otras páginas web. También puedes utilizar [colores predefinidos](http://www.w3schools.com/colors/colors_names.asp) utilizando su nombre en inglés, como `red` y `green`.
 
 En tu archivo `blog/static/css/blog.css` deberías agregar el siguiente código:
 
