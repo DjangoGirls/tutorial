@@ -49,7 +49,7 @@ Czas utworzyć nasz pierwszy adres URL! Chcemy, aby adres 'http://127.0.0.1:8000
 
 Zależy nam również, aby zachować porządek w pliku `mysite/urls.py`, dlatego zaimportujemy URL-e z naszej aplikacji `blog` do głównego pliku `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+Śmiało, dodaj linię, która spowoduje zaimportowanie `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
 
 Twój plik `mysite/urls.py` powinien teraz wyglądać tak:
 
