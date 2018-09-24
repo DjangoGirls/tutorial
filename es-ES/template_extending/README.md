@@ -17,7 +17,7 @@ Vamos a crear un archivo `base.html` en `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+Ahora, ábrelo en el editor de código y copia todo el contenido de `post_list.html` en `base.html`, así:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -75,7 +75,7 @@ Luego, en `base.html` reemplaza por completo tu `<body>` (todo lo que haya entre
 </body>
 ```
 
-{% raw %} Puede que hayas notado que esto reemplazó todo desde `{% for post in posts %}` hasta `{% endfor %}` con {% endraw %}
+{% raw %}Seguro que ya te has dado cuenta de que lo que hemos hecho ha sido cambiar todo lo que había entre `{% for post in posts %}` y `{% endfor %}` por {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,9 +84,9 @@ Luego, en `base.html` reemplaza por completo tu `<body>` (todo lo que haya entre
 {% endblock %}
 ```
 
-Pero ¿por qué? ¡Acabas de crear un bloque! Utilizaste la etiqueta de plantilla `{% block %}` para crear un área que tendrá HTML insertado en él. El HTML vendrá de otras plantillas que extienden esta plantilla (`base.html`). Te mostraremos como hacer esto en un momento.
+Pero ¿por qué? ¡Acabas de crear un bloque! Hemos usado la etiqueta de plantilla `{% block %}` para crear un área en la que se insertará HTML. Ese HTML vendrá de otra plantilla que extiende esta (`base.html`). Enseguida te enseñamos cómo se hace.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}Vas a quitar todo arriba de `{% for post in posts %}` y abajo de `{% endfor %}`. Cuando termines el archivo se verá así:{% endraw %}
+Ahora guarda `base.html` y abre `blog/templates/blog/post_list.html` de nuevo en el editor. {% raw %}Quita todo lo que hay encima de `{% for post in posts %}` y por debajo de `{% endfor %}`. Cuando termines el archivo tendrá este aspecto:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
