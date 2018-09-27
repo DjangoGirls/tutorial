@@ -16,7 +16,7 @@ Sublime Text는 인기있는 에디터이면서 무료로 사용할 수 있어�
 
 ## Atom
 
-Atom은 아주 최근에 [GitHub](https://github.com/)에서 만든 에디터예요. 무료로 제공되는 오픈소스이며, 설치나 사용이 쉬워요. 윈도우, 맥OS, 리눅스에서 쓸 수 있어요.
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
 [이 곳에서 다운받을 수 있어요.](https://atom.io/)
 
