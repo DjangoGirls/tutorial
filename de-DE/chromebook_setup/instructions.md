@@ -30,7 +30,7 @@ Now you should see an interface with a sidebar, a big main window with some text
 
 {% filename %}bash{% endfilename %}
 
-    yourusername:~/workspace $
+    deinbenutzername:~/workspace $
     
 
 Der untere Bereich ist dein *Terminal*, wo du Kommandos für den Computer eingeben kannst, den dir Cloud 9 zur Verfügung stellt. Du kannst dieses Fenster vergrössern oder verkleinern.
