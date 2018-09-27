@@ -16,7 +16,7 @@ Sublime Text 3 - дуже популярний редактор із безко�
 
 ## Atom
 
-Atom - найновіший редактор коду, створений GitHub. Це безкоштовне відкрите програмне забезпечення та доступний для Windows, OS X та Linux.
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
 [Завантажте його тут](https://atom.io/)
 
