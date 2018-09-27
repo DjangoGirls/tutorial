@@ -165,7 +165,7 @@ Bunu yapmadan önce, bilgisayarımızın, Django yüklemek için kullanacağım�
 
 Bir requirements dosyası `pip install` ile yüklenmesi gereken paketlerin listesini tutar:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder, using the code editor that you installed earlier:
+Önce `djangogirls /` klasörü içinde `requirements.txt` dosyası oluşturalım:
 
     djangogirls
     └───requirements.txt
