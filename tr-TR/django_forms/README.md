@@ -85,11 +85,11 @@ Satırı ekledikten sonra, HTML dosyanız bu şekilde görünmelidir:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Dosyayı kaydedip http://127.0.0.1:8000 sayfasını yeniledikten sonra, siz de bilindik `NoReverseMatch` hatasını görüyor olmalısınız, görüyorsunuz değil mi? Güzel!
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+`blog/urls.py` dosyasını açıp şu satırı ekleyelim:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Sayfayı yeniledikten sonra `post_new` view'ını oluşturmadığımız için `A
 
 ## post_new view
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Şimdi `blog/views.py` dosyasını açıp aşağıdaki satırları diğer `from` satırlarının olduğu yere ekleyelim:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Yeni bir `Post` formu oluşturmak için `PostForm()` fonksiyonunu çağırmak ve
 
 ## Template
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Öncelikle `blog/templates/blog` dizininde `post_edit.html` isimli bir dosya oluşturmalıyız. Bir formu çalışır hale getirmek için birkaç şeye ihtiyacımız var:
 
 * Formu göstermek zorundayız. Örneğin bunu şu şekilde yapabiliriz {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Yukarıdaki örnek satır HTML form etiketi içine alınmalı: `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ Yanıt: hiçbir şeyi. Sadece *view*'ımızda biraz daha iş yapmamız gerekiyor
 
 ## Formu kaydetme
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Bir kez daha `blog/views.py`'yi açalım. Hali hazırda `post_new` view'ının tamamı aşağıdaki gibi olmalı:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django tüm alanların doğruluğunu bizim için kontrol ediyor. Ne güzel, değ
 
 Artık yeni bir form oluşturmayı biliyoruz. Peki, mevcut bir formu güncellemek için ne yapmalı? Bu az önce yaptığımız şeyle çok benzer. Hızlıca bazı önemli şeyleri oluşturalım. (Eğer birşeyi anlamazsan, mentörüne sormalısın veya önceki bölümlere bakmalısın, çünkü bütün bu adımları daha önce bitirdik.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+`blog/templates/blog/post_detail.html` dosyasını açalım ve şu satırı ekleyelim
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -374,9 +374,9 @@ Eğer Django formlarıyla ilgili daha çok bilgiye ihtiyacın varsa, dökümanı
 
 ## Güvenlik
 
-Being able to create new posts by clicking a link is awesome! Ama şu anda sizin sitenizi ziyaret eden herkes yeni bir blog post yapabilecek ve bu muhtemelen isteyeceğiniz bir şey değil. Butonun sadece bize görünmesini sağlayalım.
+Bir linke tıklayarak yeni bir blog oluşturabilmek harika! Ama şu anda sizin sitenizi ziyaret eden herkes yeni bir blog post yapabilecek ve bu muhtemelen isteyeceğiniz bir şey değil. Butonun sadece bize görünmesini sağlayalım.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+`blog/templates/blog/base.html` dosyasında yarattığımız `page-header` `div` ve anchor etiketlerini (tags) bulalım. Şuna benziyor olmalı:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Bu `{% if %}` linkin sadece sayfayı görüntüleyen kullanıcı oturum açtıys
 
 Az evvel detay sayfamıza eklediğimiz düzenle ikonunu hatırladınız mı? Aynı değişikliği oraya da eklemek istiyoruz. Böylelikle başka insanlar var olan gönderileri düzenleyemeyecekler.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+`blog/templates/blog/post_detail.html` dosyasını açalım ve şu satırı ekleyelim:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -444,6 +444,6 @@ Bakalım PythonAnywhere'de de çalışacak mı? Tekrar yayına alalım!
 
 (Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Değişiklikleri görmek için https://yourname.pythonanywhere.com blogunuzu yenileyin.
 
 İşte bu kadar! Tebrikler :)
