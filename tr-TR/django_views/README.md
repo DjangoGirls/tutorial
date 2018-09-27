@@ -8,7 +8,7 @@ View'ler `views.py` dosyasında yer alır. Şimdi, *view*'larımızı `blog/view
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+Tamam, şimdi bu dosyayı açalım ve içinde ne olduğuna bakalım:
 
 {% filename %}blog/views.py{% endfilename %}
 
