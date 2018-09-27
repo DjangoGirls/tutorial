@@ -16,7 +16,7 @@ Subline Text este un editor popular cu o perioadă de evaluare nelimitată și g
 
 ## Atom
 
-Atom este un editor foarte nou creat de echipa [GitHub ](https://github.com/). Este gratuit și open-source și este disponibil pentru Windows, OS X și Linux.
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
 [Descarcă-l de aici](https://atom.io/)
 
