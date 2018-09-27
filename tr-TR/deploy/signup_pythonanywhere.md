@@ -10,6 +10,6 @@ Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you d
 
 ## PythonAnywhere API token oluşturma
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page, then select the tab named "API token", and hit the button that says "Create new API token".
+Bu sadece bir kez yapmanız gereken bir şey. PythonAnywhere'e kaydolduğunuzda, dashboard sayfasına yönlendirileceksiniz. "Account" sayfanızın sağ üstüne yakın link'i bulun ve "API token" isimli sekmeyi seçerek "Create new API token" butonuna basın.
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![Hesaplar sayfasındaki API token sekmesi](../deploy/images/pythonanywhere_create_api_token.png)
