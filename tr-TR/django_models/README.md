@@ -115,7 +115,7 @@ INSTALLED_APPS = [
 
 `blog/models.py` dosyasında `Models` denilen bütün nesneleri tanımlıyoruz - burası blog postumuzu tanımlayacağımız yer.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+Şimdi `blog/models.py` dosyasını açalım ve içindeki her şeyi silip şu kodu yazalım:
 
 {% filename %}blog/models.py{% endfilename %}
 
