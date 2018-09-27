@@ -16,7 +16,7 @@ Sublime Text là một trình viết code khá phổ biến, bạn được dùn
 
 ## Atom
 
-Atom là trình soạn thảo Code rất mới mẻ được tạo bởi [GitHub](https://github.com/). Nó mạnh mẽ, miễn phí và có sẵn trên Windows, OS X và Linux.
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
 [Tải ở đây](https://atom.io/)
 
