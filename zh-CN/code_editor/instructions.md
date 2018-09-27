@@ -16,7 +16,7 @@ Sublime Text 是一个很受欢迎的、免费试用的编辑器，它很容易�
 
 ## Atom编辑器
 
-Atom is an extremely new code editor created by [GitHub](https://github.com/). It's free, open-source and available for Windows, OS X and Linux.
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
 [在这里下载](https://atom.io/)
 
