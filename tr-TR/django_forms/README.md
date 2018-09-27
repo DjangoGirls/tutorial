@@ -14,7 +14,7 @@ Django'nun diğer önemli parçaları gibi, formların da kendi dosyası var: `f
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+Tamam, hadi dosyayı açalım ve aşağıdaki kodu yazalım:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Önce Django formları (`from django import forms`) ve tabii ki `Post` modelimizi (`from .models import Post`) import komutu ile dahil etmeliyiz.
 
 Tahmin etmiş olabileceğiniz gibi, formumuzun ismi `PostForm`. Django'ya bu formun bir `ModelForm` olduğunu belirtmeliyiz. Bunu `forms.ModelForm` sayesinde Django bizim için yapacaktır.
 
@@ -44,7 +44,7 @@ Bir kere daha sayfaya bir bağlantı, bir url, bir view ve bir template oluştur
 
 ## Formun bulunduğu sayfaya bağlantı oluşturma
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+Şimdi `blog/templates/blog/base.html` isimli template'i açma zamanı. Öncelikle `page-header` adlı `div` öğesinin içine bir bağlantı ekleyeceğiz:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -312,7 +312,7 @@ böylece şablon şöyle görünecektir:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+`blog/urls.py` dosyasını açıp şu satırı ekleyelim:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ Open `blog/urls.py` in the code editor, and add this line:
 
 Daha önce kullandığımız `blog/templates/blog/post_edit.html` template'ini tekrar kullanacağız, geriye bir tek *view* kalıyor.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Şimdi `blog/views.py` dosyasını açıp en sonuna şu satırı ekleyelim:
 
 {% filename %}blog/views.py{% endfilename %}
 
