@@ -16,7 +16,7 @@ Sublime Text is een populaire editor met een gratis proefperiode, en is beschikb
 
 ## Atom
 
-Atom is een spiksplinternieuwe editor gecreëerd door [GitHub](https://github.com/). Het is gratis, open-source en beschikbaar voor Windows, OS X en Linux.
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
 [Download het hier](https://atom.io/)
 
