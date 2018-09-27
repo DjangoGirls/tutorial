@@ -2,7 +2,7 @@ Pwede kang [lumaktaw sa seksiyon na ito](http://tutorial.djangogirls.org/en/inst
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Ang Cloud IDE ay isang kagamitan na nagbibigay sayo ng code editor at pahintulot na makagamit ng gumaganang kompyuter sa internet na kung saan ay pwede kang mag-install, gumawa, at magpagana ng software. Para sa tagal ng pag-aaral na ito, ang Cloud IDE ay magsisilbing *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
