@@ -16,7 +16,7 @@ Teks Sublime merupakan editor yang sangat populer dengan periode evaluasi gratis
 
 ## Atom
 
-Atom adalah editor kode yang sangat baru yang diciptakan oleh [GitHub](https://github.com/). Kode editor ini gratis, open-source dan tersedia untuk Windows, OS X dan Linux.
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
 [Download disini](https://atom.io/)
 
