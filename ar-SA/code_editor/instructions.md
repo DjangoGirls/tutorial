@@ -16,7 +16,7 @@ Sublime Text هو محرر شائع جدا مع فترة مجانية للتقي
 
 ## Atom
 
-Atom محرر برمجة جديد للغاية تم إنشاؤه بواسطة [GitHub](https://github.com/). هو حر ومفتوح المصدر، وسهل التركيب والاستخدام. متاح لويندوز وماك و لينكس.
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
 [يمكنك تحميل البرنامج هنا](https://atom.io/)
 
