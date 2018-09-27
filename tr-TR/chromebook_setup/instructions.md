@@ -7,8 +7,8 @@ Cloud IDE is a tool that gives you a code editor and access to a computer runnin
 #### PaizaCloud Cloud IDE
 
 1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
+2. Bir hesap oluşturun
+3. *New Server*'a tiklayalim
 4. Click Terminal button(on the left side of the window)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
@@ -23,7 +23,7 @@ The terminal will give the computer Cloud 9 has prepared for your instructions. 
 #### AWS Cloud9
 
 1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
+2. Bir hesap oluşturun
 3. Click *Create Environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
