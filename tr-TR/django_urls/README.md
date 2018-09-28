@@ -49,7 +49,7 @@ Bu satırın anlamı Django, `admin` ile başlayan her URL için ona uyan bir *v
 
 Aynı zamanda `mysite/urls.py` dosyasını temiz tutmak istiyoruz, bu yüzden `blog` uygulamamızdan `mysite/urls.py` ana dosyamıza URL'leri aktarıyoruz (import).
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+Devam edip, `blog.urls`'i import edecek bir satır ekleyelim. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
 
 `mysite/urls.py` dosyamız şöyle olmalı:
 
@@ -98,6 +98,6 @@ Eğer şimdi http://127.0.0.1:8000/ adresine gitmeyi denerseniz, 'sayfanıza ula
 
 ![Hata](images/error1.png)
 
-Konsolunuz bir hata gösteriyor, ama endişelenmeyin -aslında bu oldukça kullanışlı: bize **'post_list' özelliği yok** diyor. Bu Django'nun bulup kullanmaya çalıştığı *view*'ın adı. Ama onu henüz oluşturmadık. Bu aşamada `/admin/` de çalışmayacaktır. Hiç merak etmeyin, oraya geleceğiz. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Konsolunuz bir hata gösteriyor, ama endişelenmeyin -aslında bu oldukça kullanışlı: bize **'post_list' özelliği yok** diyor. Bu Django'nun bulup kullanmaya çalıştığı *view*'ın adı. Ama onu henüz oluşturmadık. Bu aşamada `/admin/` de çalışmayacaktır. Hiç merak etmeyin, oraya geleceğiz. Farklı bir hata görürseniz, web sunucunuzu yeniden başlatmayı deneyin. Komut satırına girin, konsol ekraninda Ctrl+C (Control ve C tuşlarına beraber) basarak sunucuyu durdurun ve `python manage.py runserver` komutunu çalıştırarak yeniden başlatın.
 
 > Django URLconfs ile ilgili daha fazla bilgi edinmek istiyorsanız resmi Django dokümantasyonuna bakabilirsiniz: https://docs.djangoproject.com/en/2.0/topics/http/urls/
