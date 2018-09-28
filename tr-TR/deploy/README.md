@@ -96,7 +96,7 @@ Sıra depomuzu oluşturmaya geldi. 'New Repository' tuşuna tıklayıp "my-first
 
 > **Not** `my-first-blog` ismi önemli -- başka birşey de seçebilirsiniz, ama aşağıdaki yönergelerde çok geçiyor, her seferinde değiştirmeniz gerekir. En kolayı `my-first-blog` ismi ile devam etmek.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+Bir sonraki ekranda, reponuzun klonlama URL'ini goreceksiniz, bu URL takip eden bir kac komutta kullanacagiz:
 
 ![](images/github_get_repo_url_screenshot.png)
 
@@ -192,7 +192,7 @@ Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızd
     templates  tests.py  urls.py  views.py
     
 
-"Files" sekmesine giderek de PythonAnywhere in sunduğu arayüz ile dosyaları gezinebilrsiniz. (Sağ üst köşedeki menü butonunu kullanarak, konsol sayfasından diğer PythonAnywhere sayfalarına geçebilirsiniz. Bu sayfaların birindeyken yukarıda diğer sayfalara linkleri görebilirsiniz.)
+"Files" sekmesine giderek de PythonAnywhere in sunduğu arayüz ile dosyaları gezinebilirsiniz. (Sağ üst köşedeki menü butonunu kullanarak, konsol sayfasından diğer PythonAnywhere sayfalarına geçebilirsiniz. Bu sayfaların birindeyken, sayfanın yukarısında diğer sayfalara olan linkleri görebilirsiniz.)
 
 ## Şimdi Canlı Yayındasınız!
 
