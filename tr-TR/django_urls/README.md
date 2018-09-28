@@ -69,7 +69,7 @@ Django artık 'http://127.0.0.1:8000/' adresine gelen her şeyi `blog.urls`'e y�
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+`blog` dizini içinde `urls.py` adında yeni bir boş dosya oluşturalım ve kod editöründe açalım. Tamam! Şu ilk iki satırı ekleyelim:
 
 {% filename %}blog/urls.py{% endfilename %}
 
