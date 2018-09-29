@@ -28,23 +28,23 @@ Ve a Menú de inicio → Windows System → Command Prompt.
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Ve a Aplicaciones → Servicios → Terminal.
+Ve a Aplicaciones → Utilidades → Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Probablemente estará en Aplicaciones → Accesorios → Terminal, pero en tu sistema puede estar en un sitio distinto. Si no lo encuentras, busca en Google. :)
 
 <!--endsec-->
 
-## Prompt
+## Símbolo del Sistema (Prompt)
 
 Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+Si estás en un Mac o Linux, seguramente verás un símbolo `$`, como este:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,7 +70,7 @@ Cada comando será precedido por este signo y un espacio, pero no tienes que esc
 
 La parte hasta e incluyendo `$` o `>` se llama la *línea de comandos* o *prompt*. Esta te solicita escribir algo ahí.
 
-En el tutorial, cuando queremos escribir un comando, incluiremos el `$` o `>` y de vez en cuando más a la izquierda. Ignore the left part and only type in the command, which starts after the prompt.
+En el tutorial, cuando queremos escribir un comando, incluiremos el `$` o `>` y de vez en cuando más a la izquierda. Ignora la parte izquierda y teclea sólo el comando, que es lo que empieza después del prompt.
 
 ## Tu primer comando (¡BIEN!)
 
@@ -248,7 +248,7 @@ Comprueba si realmente ha cambiado:
 
 <!--endsec-->
 
-Este pequeño comando creará una carpeta con el nombre `practice` en el escritorio. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Inténtalo. :)
+Este pequeño comando creará una carpeta con el nombre `practice` en el escritorio. Puedes comprobar que efectivamente está allí mirando en tu Escritorio o ejecutando un comando `ls` o `dir`. ¡Inténtalo! :)
 
 > Truco pro: Si no quieres escribir una y otra vez los mismos comandos, prueba pulsando la `flecha arriba` y la `flecha abajo` de tu teclado para ir pasando por los comandos utilizados recientemente.
 
