@@ -14,7 +14,7 @@ Necesitamos crear un archivo con este nombre en el directorio `blog`.
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+Vale, ábrelo en el editor de código y teclea lo siguiente:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Lo primero, necesitamos importar Django forms (`from django import forms`) y nuestro modelo `Post` (`from .models import Post`).
 
 `PostForm`, como probablemente sospechas, es el nombre de nuestro formulario. Necesitamos decirle a Django que este formulario es un `ModelForm` (así Django hará algo de magia por nosotros) - `forms.ModelForm` es responsable de ello.
 
@@ -44,7 +44,7 @@ Una vez más vamos a crear: un enlace a la página, una dirección URL, una vist
 
 ## Enlace a una página con el formulario
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+Ahora toca abrir el fichero `blog/templates/blog/base.html` en el editor. Vamos a añadir un enlace en el `div` llamado `page-header`:
 
 {% filename %}blog/templates/blog/post_base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ Después de agregar la línea, tu archivo html debería lucir de esta forma:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Después de guardar y refrescar la página http://127.0.0.1:8000 verás el - ya conocido - error `NoReverseMatch`. ¿Es así? ¡Vamos bien!
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Abrimos `blog/urls.py` en el editor para añadir una línea:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Después de actualizar el sitio, veremos un `AttributeError`, puesto que no tene
 
 ## Vista post_new
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Ahora abre el fichero `blog/views.py` en el editor y añade estas líneas con el resto de imports `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Para crear un nuevo formulario `Post`, tenemos que llamar a `PostForm()` y pasar
 
 ## Plantilla
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Tenemos que crear un fichero `post_edit.html` el el directorio `blog/templates/blog`, y abrirlo en el editor de código. Para hacer que un formulario funcione necesitamos varias cosas:
 
 * Tenemos que mostrar el formulario. Podemos hacerlo, por ejemplo, con un sencillo {% raw %}`{{ form.as_p }}`{% endraw %}.
 * La línea anterior tiene que estar dentro de una etiqueta de formuLario HTML: `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ La respuesta es: nada. Tenemos que trabajar un poco más en nuestra *vista*.
 
 ## Guardar el formulario
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Abre `blog/views.py` de nuevo en el editor. De momento todo lo que tenemos en la vista `post_new` es lo siguiente:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django se encarga de validar que todos los campos en el formulario estén correc
 
 Ahora sabemos cómo agregar un nuevo formulario. Pero, ¿qué pasa si queremos editar uno existente? Es muy similar a lo que acabamos de hacer. Creemos rápidamente algunas cosas importantes. (si no entiendes algo, pregúntale a tu tutora o tutor, o revisa lo capítulos anteriores, son temas que ya hemos cubierto.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Abre `blog/templates/blog/post_detail.html` en el editor de código y añade la línea
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-para que la plantilla se mire así:
+para que la plantilla quede así:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ para que la plantilla se mire así:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Abre `blog/urls.py` en el editor y añade esta línea:
 
 {% filename %}blog/urls.py{% endfilename %}
 
