@@ -80,17 +80,17 @@ En `settings.py`, encuentra la línea que contiene `TIME_ZONE` y modifícala par
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Un código de idioma tiene dos partes: el idioma, p.ej. `en` para inglés o `de` para alemán, y el código de país, p.ej. `de` para Alemania o `ch` para Suiza. Si tu idioma nativo no es el inglés, puedes añadir lo siguiente para cambiar el idioma de los botones y notificaciones de Django. Asì tendràs el boton "Cancel" traducido al idioma que acabas de poner. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Un código de idioma tiene dos partes: el idioma, p.ej. `en` para inglés o `de` para alemán, y el código de país, p.ej. `de` para Alemania o `ch` para Suiza. Si tu idioma nativo no es el inglés, puedes añadir lo siguiente para cambiar el idioma de los botones y notificaciones de Django. Así tendrás el botón "Cancel" traducido al idioma que pongas aquí. [Django trae un montón de traducciones listas para usar](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Si quieres un idioma diferente, cambia el código de idioma cambiando la siguiente línea:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-LANGUAGE_CODE = 'de-ch'
+LANGUAGE_CODE = 'es-es'
 ```
 
-Tambièn tenemos que añadir una ruta para archivos estàticos. (Veremos todo acerca de archivos estàticos y CSS más adelante.) Ve al *final* del archivo, y justo debajo de la entrada `STATIC_URL`, añade una nueva llamada `STATIC_ROOR`:
+También tenemos que añadir una ruta para archivos estáticos. (Veremos todo acerca de archivos estáticos y CSS más adelante.) Ve al *final* del archivo, y justo debajo de la entrada `STATIC_URL`, añade una nueva llamada `STATIC_ROOR`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -193,7 +193,7 @@ Si estàs usando un Chromebook, siempre visitaras tu servidor de pruebas accedie
 
 ¡Enhorabuena! ¡Has creado tu primer sitio web y lo has iniciado usando un servidor web! ¿No es genial?
 
-![Install worked!](images/install_worked.png)
+![¡La instalación ha funcionado!](images/install_worked.png)
 
 Mientras el servidor se este ejecutando, no podràs ejecutar comandos adicionales. La terminal aceptarà texto pero no ejecutara ningùn comando. Esto sucede porque el servidor se ejecuta continuamente para recibir solicitudes.
 
