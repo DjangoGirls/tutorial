@@ -142,7 +142,7 @@ Aca va un ejemplo de una plantilla completa, copialo y pegalo en `blog/templates
 Aquí hemos creado tres secciones `div`.
 
 * El primer elemento `div` contiene el título de nuestro blog - es un encabezado y un enlace
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Otros dos elementos `div` contienen nuestras publicaciones (posts) del blog con su fecha de publicación, `h2` con el título del post que es clickable y dos `p`s (párrafos) de texto, uno para la fecha y otro para el contenido del post.
 
 Nos da este efecto:
 
@@ -156,7 +156,7 @@ Lo que queremos realmente es mostrar posts reales añadidos en nuestra página d
 
 Sería bueno ver todo esto disponible en Internet, ¿no? Hagamos otro despliegue en PythonAnywhere:
 
-### Commit, and push your code up to GitHub
+### Haz commit, y sube tu código a GitHub
 
 En primer lugar, vamos a ver qué archivos han cambiado desde la última puesta en marcha (ejecute estos comandos localmente, no en PythonAnywhere):
 
@@ -165,7 +165,7 @@ En primer lugar, vamos a ver qué archivos han cambiado desde la última puesta 
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Asegúrate de que estás en el directorio `djangogirls` y vamos a decirle a `git` que incluya todos los cambios en este directorio:
 
 {% filename %}command-line{% endfilename %}
 
@@ -208,10 +208,10 @@ Una vez hecho esto, subimos (push) los cambios a Github:
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Recuerda sustituir `<your-pythonanywhere-username>` por tu nombre de usuario real en PythonAnywhere sin los < >).
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+Y mira como se descarga tu código. Si quieres comprobar que efectivamente ha llegado bien, puedes ir a la **página "Files"** y ver tu código en PythonAnywhere (puedes ir a otras páginas de PythonAnywhere desde el botón de la esquina superior derecha de la página de la consola).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* Finalmente, ve a la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) y pulsa **Reload** en tu aplicación web.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+¡Tu nueva versión ya debería estar publicada! Ve al navegador y refresca tu sitio web. Deberías ver los cambios. :)
