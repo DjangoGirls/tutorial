@@ -70,6 +70,6 @@ Hazte una cuenta de [GitHub](https://github.com).
 
 El tutorial de Django Girls tiene una sección que se llama "Despliegue", que es el proceso de coger el código de tu nueva aplicación web y ponerlo en un ordenador públicamente accesible (un servidor) para que todo el mundo pueda ver tu trabajo.
 
-Esta parte "chirría" un poco cuando haces el tutorial en un Chromebook, porque que ya estamos usando un ordenador que ya está en Internet (en lugar de un ordenador local como un portátil). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Esta parte "chirría" un poco cuando haces el tutorial en un Chromebook, porque que ya estamos usando un ordenador que ya está en Internet (en lugar de un ordenador local como un portátil). Sin embargo, aún tiene sentido, si pensamos que nuestro espacio de trabajo en Cloud9 es un lugar para nuestro trabajo "en progreso" y PythonAnywhere es el lugar donde enseñar nuestro sitio web más terminado.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Así que créate una cuenta de PythonAnywhere en [www.pythonanywhere.com](https://www.pythonanywhere.com).
