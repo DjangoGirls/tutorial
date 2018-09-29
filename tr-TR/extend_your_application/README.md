@@ -54,7 +54,7 @@ Peki `pk=post.pk`? `pk` primary key (birincil anahtar) için kullanılan kısalt
 
 İlk gönderimizin detayının şu **URL**'de gösterilmesini istiyoruz: http://127.0.0.1:8000/post/1/
 
-`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'ına işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
+`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'ına işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. Kod düzenleyicide `blog/urls.py</ 0> dosyasını açın ve <code>path('post/<int:pk>)/', views.post_detail, name='post_detail'),` satırını ekleyin, böylece dosya şöyle görünür:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -68,7 +68,7 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+`post/<int:pk>/` kısmı bir URL kalıbı belirtir - sizin için bunu açıklayalım:
 
 - `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
