@@ -6,9 +6,9 @@
 
 ## Bienvenido/a
 
-Bienvenido/a al tutorial de las Django Girls! Estamos felices de que estes aquí :) En este tutorial, te llevaremos a un viaje a las entrañas de la tecnología web, ofreciendote un vistaso de todos los pedazos que se deben unir para hacer que la web funcione.
+¡Bienvenido/a al tutorial de las Django Girls! ¡Nos alegra que estes aquí :) En este tutorial, te llevaremos de viaje a las entrañas de la tecnología web, para que veas todas las piezas que se necesitan para que la web funcione.
 
-Como con todas las cosas desconocidas, esto va a ser una aventura - pero no te preocupes, puesto que ya reuniste el valor para estar aquí, estarás muy bien :)
+Como con todas las cosas desconocidas, va a ser una aventura - pero no te preocupes; ahora que ya has reunido el valor para estar aquí, te va a ir fenomenal :)
 
 ## Introducción
 
