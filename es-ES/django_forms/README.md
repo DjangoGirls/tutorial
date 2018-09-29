@@ -322,7 +322,7 @@ Abre `blog/urls.py` en el editor y añade esta línea:
 
 Vamos a reusar la plantilla `blog/templates/blog/post_edit.html`, así que lo último que nos falta es una *view*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Abre `blog/views.py` en el editor de código y añade esto al final del todo:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -370,13 +370,13 @@ Al dar click ahí, debes ver el formulario con nuestro post del blog:
 
 ¡Felicitaciones! ¡Tu aplicación está cada vez más completa!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Si quieres saber más sobre los Django forms, puedes encontrar la documentación aquí: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Seguridad
 
-Being able to create new posts by clicking a link is awesome! Pero, ahora mismo, cualquiera que visite tu página podría publicar un nuevo post y seguro que eso no es lo que quieres. Vamos a hacer que el botón sea visible para ti pero no para nadie más.
+¡Poder crear nuevas publicaciones haciendo click en un enlace es genial! Pero, ahora mismo, cualquiera que visite tu página podría publicar un nuevo post y seguro que eso no es lo que quieres. Vamos a hacer que el botón sea visible para ti pero no para nadie más.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Abre `blog/templates/blog/base.html` en el editor, busca el `div` `page-header` y la etiqueta del enlace (anchor) que pusimos antes. Debería ser algo así:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Este `{% if %}` hará que el enlace sólo se envíe al navegador si el usuario q
 
 Recuerdas el icono de "editar" que acabamos de añadir a nuestra pagina de detalles? También queremos añadir lo mismo aquí, así otras personas no podrán editar posts existentes.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Abre `blog/templates/blog/post_detail.html` en el editor y busca esta línea:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -422,7 +422,7 @@ Dado que es probable que estés conectado, si actualizas la pagina, no veras nad
 
 Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegue!
 
-* First, commit your new code, and push it up to GitHub:
+* Lo primero, haz commit de tus últimos cambios y súbelo (push) a GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -443,6 +443,6 @@ Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegu
 
 (Recuerda sustituir `<your-pythonanywhere-username>`con tu nombre de PythonAnywhere real, sin los signos de ángulo).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
+* Para terminar ve a ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (usa el botón del menú de la esquina superior derecha, encima de la consola) y haz click en **Reload**. Refresca tu blog https://yourname.pythonanywhere.com para ver los cambios.
 
 ¡Y eso debería ser todo! Felicidades :)
