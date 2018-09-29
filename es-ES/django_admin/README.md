@@ -2,7 +2,7 @@
 
 Para agragar, editar y borrar los posts que hemos modelado, usaremos el administrador (admin) de Django.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Abre el fichero `blog/admin.py` en el editor y reemplaza su contenido con esto:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -33,7 +33,7 @@ Para iniciar sesión, deberás crear un *superusuario (superuser)*, que es un us
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Cuando te lo pida, escribe tu nombre de usuario (en minúscula, sin espacios), email y contraseña. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. Luego, verás algo así (Donde username y email serán los que escribiste anteriormente):
+Cuando te lo pida, escribe tu nombre de usuario (en minúscula, sin espacios), email y contraseña. **No te preocupes si no puedes ver la password que estás tecleando - así es como debe ser.** Tecléalo y pulsa `intro` para continuar. Luego, verás algo así (Donde username y email serán los que escribiste anteriormente):
 
     Username: admin
     Email address: admin@admin.com
