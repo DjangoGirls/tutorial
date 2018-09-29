@@ -54,7 +54,7 @@ Peki `pk=post.pk`? `pk` primary key (birincil anahtar) için kullanılan kısalt
 
 İlk gönderimizin detayının şu **URL**'de gösterilmesini istiyoruz: http://127.0.0.1:8000/post/1/
 
-`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'ına işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. Kod düzenleyicide `blog/urls.py</ 0> dosyasını açın ve <code>path('post/<int:pk>)/', views.post_detail, name='post_detail'),` satırını ekleyin, böylece dosya şöyle görünür:
+`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'ına işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. Kod düzenleyicide `blog/urls.py` dosyasını açın ve `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` satırını ekleyin, böylece dosya şöyle görünür:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -70,9 +70,9 @@ urlpatterns = [
 
 `post/<int:pk>/` kısmı bir URL kalıbı belirtir - sizin için bunu açıklayalım:
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- `post/`, URL'nin **post** kelimesi ile başlayıp ardından ** / ** ile devam etmesi gerektiği anlamına gelir.
+- `<int:pk>` - bu bölüm daha zorlayıcı. Django'nun bir tamsayı değeri beklediği ve onu `pk` adlı bir değişken olarak bir görünüme(view) aktaracağı anlamına gelir.
+- `/` - URL'yi bitirmeden önce **/** 'e tekrar ihtiyacımız var.
 
 Bu şu demek, eğer tarayıcınıza `http://127.0.0.1:8000/post/5/` yazarsanız, Django `post_detail` adında bir *view* aradığınızı anlar ve `pk` eşittir `5` bilgisini *view*'e aktarır.
 
@@ -98,7 +98,7 @@ Ama bu kodun bir problemi var. Eğer gelen `primary key` (`pk` - tekil anahtar) 
 
 ![DoesNotExist error (Yok hatası)](images/does_not_exist2.png)
 
-Bunu istemiyoruz! But luckily Django comes with something that will handle that for us: `get_object_or_404`. Eğer verilen `pk` ile bir `Post` bulunamazsa, çok daha güzel bir sayfa gösterilecek (`Sayfa bulunamadı 404` sayfası.
+Bunu istemiyoruz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or_404`. Eğer verilen `pk` ile bir `Post` bulunamazsa, çok daha güzel bir sayfa gösterilecek (`Sayfa bulunamadı 404` sayfası.
 
 ![Page not found (Sayfa bulunamadı)](images/404_2.png)
 
@@ -209,6 +209,6 @@ Daha önceden çalıştırdığın virtualenv'in hala etkin değilse tekrar akti
 
 `manage.py collectstatic` komutu biraz `manage.py migrate` komutu gibidir. Kodumuzda bazı değişiklikler yapıp Django'ya bu değişiklikleri sunucunun statik dosyalar yığınına ya da veritabanına uygulamasını söyledik.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
+Her durumda, artık ["Web" sayfasına](https://www.pythonanywhere.com/web_app_setup/) (konsolun sağ üstündeki menü düğmesinden) atlamaya ve **Yeniden Yükle** seçeneğine tıklamaya hazırız ve sonucu görmek için https://adınız.pythonanywhere.com sayfasına bakın.
 
 İşte bu kadar! Tebrikler :)
