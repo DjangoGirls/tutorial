@@ -2,7 +2,7 @@
 
 # Extiende tu aplicación
 
-Ya hemos completado todos los pasos necesarios para la creación de nuestro sitio web: sabemos cómo escribir un model, url, view y template. También sabemos cómo hacer que nuestro sitio web se vea lindo.
+Ya hemos completado todos los pasos necesarios para la creación de nuestro sitio web: sabemos cómo escribir un model, url, view y template. También sabemos cómo hacer que nuestro sitio web tenga buen aspecto.
 
 ¡Hora de practicar!
 
@@ -10,9 +10,9 @@ Lo primero que necesitamos en nuestro blog es, obviamente, una página para most
 
 Ya tenemos un modelo `Post`, así que no necesitamos añadir nada a `models.py`.
 
-## Crea un enlace al detalle de una entrada
+## Crea un enlace a la página de detalle de una publicación
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Empezaremos añadiendo un enlace al fichero `blog/templates/blog/post_list.html`. Ábrelo en el editor; de momento debería tener este contenido: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -48,13 +48,13 @@ Ahora cuando vayamos a: http://127.0.0.1:8000/ tendremos un error (como era de e
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
-## Crea una URL al detalle de una entrada
+## Crea una URL al detalle de una publicación
 
 Vamos a crear una URL en `urls.py` para nuestra *view* `post_detail`!
 
 Queremos que el detalle de la primera entrada se visualice en esta **URL**: http://127.0.0.1:8000/post/1/
 
-Vamos a crear una URL en el fichero `blog/urls.py` que dirija a Django hacia una *vista* llamada `post_detail`, que mostrará una entrada de blog completa. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Vamos a crear una URL en el fichero `blog/urls.py` que dirija a Django hacia una *vista* llamada `post_detail`, que mostrará una entrada de blog completa. Abre el fichero `blog/urls.py` en el editor, y añade la línea `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` para que el fichero quede así:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -68,11 +68,11 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+Esta parte `post/<int:pk>/` especifica un patrón de URL – ahora lo explicamos:
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- `post/` significa que la URL debería empezar con la palabra **post** seguida por una **/**. Hasta aquí bien.
+- `<int:pk>` – esta parte tiene más miga. Significa que Django buscará un número entero y se lo pasará a la vista en una variable llamada `pk`.
+- `/` – necesitamos otra **/** al final de la URL.
 
 Esto quiere decir que si pones `http://127.0.0.1:8000/post/5/` en tu navegador, Django entenderá que estás buscando una *vista* llamada `post_detail` y transferirá la información de que `pk` es igual a `5` a esa *vista*.
 
@@ -80,9 +80,9 @@ OK, hemos añadido un nuevo patrón de URL a `blog/urls.py`! Actualizamos la pag
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+¿Recuerdas cual es el próximo paso? ¡Añadir una vista!
 
-## Añade una vista de detalle de la entrada
+## Añade la vista de detalle de la publicación
 
 Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Ten en cuenta que tenemos que usar exactamente el mismo nombre que especificamos en las urls (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
 
@@ -194,7 +194,7 @@ Luego, en una [consola Bash de PythonAnywhere](https://www.pythonanywhere.com/co
 
 (Recuerda sustituir `<your-pythonanywhere-username>`con tu nombre de PythonAnywhere real, sin los signos de ángulo).
 
-## Updating the static files on the server
+## Actualizar los ficheros estáticos (static files) en el servidor
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
 
