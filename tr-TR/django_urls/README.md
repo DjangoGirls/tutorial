@@ -49,7 +49,7 @@ Bu satırın anlamı Django, `admin` ile başlayan her URL için ona uyan bir *v
 
 Aynı zamanda `mysite/urls.py` dosyasını temiz tutmak istiyoruz, bu yüzden `blog` uygulamamızdan `mysite/urls.py` ana dosyamıza URL'leri aktarıyoruz (import).
 
-Devam edip, `blog.urls`'i import edecek bir satır ekleyelim. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+Devam edip, `blog.urls`'i import edecek bir satır ekleyelim. Ayrıca, ilk satırı değiştirmelisiniz çünkü burada `include` fonksiyonunu kullanıyoruz, bu yüzden bu içe aktarmayı (import) satırlara eklemeniz gerekecek.
 
 `mysite/urls.py` dosyamız şöyle olmalı:
 
