@@ -23,19 +23,19 @@ Las plantillas se guardan en el directorio de `blog/templates/blog`. Así que pr
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(Tal vez te estés preguntando por qué necesitamos dos directorios llamados `blog` – como verás más adelante, es una convención de nombres que nos facilitará la vida cuando las cosas se pongan más complicadas.)
 
 Y ahora crea un archivo `post_list.html` (déjalo en blanco por ahora) dentro de la carpeta `blog/templates/blog`.
 
 Mira cómo se ve su sitio web ahora: http://127.0.0.1:8000/
 
-> Si todavía tienes un error `TemplateDoesNotExist`, intenta reiniciar tu servidor. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Si todavía tienes un error `TemplateDoesNotExist`, intenta reiniciar tu servidor. Ve a la consola, para el servidor pulsando Ctrl+C (las teclas Control y C a la vez) y reinicialo ejecuntado el comando `python manage.py runserver`.
 
 ![Figura 11.1](images/step1.png)
 
 ¡Ningún error más! Felicidades :) Sin embargo, por ahora, tu sitio web no está publicando nada excepto una página en blanco, porque la plantilla también está vacía. Tenemos que arreglarlo.
 
-Open the new file in the code editor, and add the following:
+Abre un fichero nuevo en el editor y escribe lo siguiente:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -105,7 +105,7 @@ Tienes que seguir estas reglas de etiquetas de *cierre* y de *anidación* de ele
 * `<p>Un párrafo de texto</p>`
 * `<em>texto</em>` - pone en cursiva tu texto
 * `<strong>texto</strong>` - pone en negrita tu texto
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<br>` va en otra línea (no puedes poner nada dentro de br y no hay etiqueta de cierre)
 * `<a href="https://djangogirls.org">link</a>` - crea un vínculo
 * `<ul><li>primer elemento</li><li>segundo elemento</li></ul>` - crea una lista, ¡igual que esta!
 * `<div></div>` - define una sección de la página
