@@ -20,7 +20,7 @@ Para imprimir una variable en una plantilla de Django, utilizamos llaves dobles 
 {{ posts }}
 ```
 
-Prueba esto en la plantilla `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Guarda el archivo y refresca la página para ver los resultados:
+Prueba esto en la plantilla `blog/templates/blog/post_list.html`. Ábrela en el editor de código, y cambia todo desde el segundo `<div>` hasta el tercer `</div>` por `{{ posts }}`. Guarda el archivo y refresca la página para ver los resultados:
 
 ![Figura 13.1](images/step1.png)
 
@@ -62,7 +62,7 @@ Prueba esto en tu plantilla.
 
 Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, ¿no? Vamos a intentar desplegar de nuevo en PythonAnywhere. Aquí va un resumen de los pasos…
 
-* First, push your code to GitHub
+* Lo primero, sube tu código a GitHub
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +85,9 @@ Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, �
     [...]
     
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Y finalmente, ve a la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) y haz click en **Reload** en tu aplicación web. (Para ir a otras páginas de PythonAnywhere desde la consola, haz click en el botón de la esquina superior derecha.) Los cambios deberían estar visibles en https://yourname.pythonanywhere.com -- ¡compruébalo en en navegador! Si ves distintas publicaciones en el sitio en PythonAnywhere de las que tienes en tu servidor local, es lo normal. Tienes dos bases de datos, una en tu ordenador local y otra en PythonAnywhere y no tienen por qué tener el mismo contenido.
 
-Felicidades! Ahora intenta añadir un nuevo post en tu administrador de Django (recuerda añadir published_date!) Asegurate de que estas en el administrador de Django de pytonanywhere, https://tunombre.pythonanywhere.com/admin. Luego actualiza tu pàgina para ver si los post aparecen.
+¡Felicidades! Ahora intenta añadir un nuevo post en tu administrador de Django (recuerda añadir published_date!) Asegurate de que estas en el administrador de Django de pytonanywhere, https://tunombre.pythonanywhere.com/admin. Luego actualiza tu pàgina para ver si los post aparecen.
 
 ¿Funciona de maravilla? ¡Estamos orgullosas! Aléjate un rato del ordenador, te has ganado un descanso. :)
 
