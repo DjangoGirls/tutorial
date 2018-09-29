@@ -12,7 +12,7 @@ Algo a tener en cuenta: Durante la instalación notarás una ventana llamada "Se
 
 ![No te olvides de agregar Python al Path](../python_installation/images/python-installation-options.png)
 
-En los próximos pasos, vas a utilizar la línea de comandos de Windows (acerca de la cual también de contaremos algo). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. Para abrir la línea de comandos, escribe "cmd" y pulsa enter en la ventana "Run".
+En los próximos pasos, vas a utilizar la línea de comandos de Windows (acerca de la cual también de contaremos algo). De momento, si tienes que teclear algunos comandos, ve al menú de Inicio y teclea "Command Prompt" en el cuadro de búsqueda. (En versiones anteriores de Windows, puedes arrancar la linea de comandos con menú de Inicio → Sistema Windows → Linea de Comandos.) También puedes pulsar la tecla "Windows" + R hasta que aparezca la ventana "Ejecutar" (Run). Para abrir la línea de comandos, escribe "cmd" y pulsa enter en la ventana "Run".
 
 ![Escribe "cmd" en la ventana "Run&quot](../python_installation/images/windows-plus-r.png)
 
@@ -75,7 +75,7 @@ Usa este comando en tu consola:
     $ sudo dnf instalar python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+En versiones anteriores de Fedora tal vez te salga un error de que no se encuentra el comando `dnf`. En ese caso utiliza `yum` en su lugar.
 
 <!--endsec-->
 
