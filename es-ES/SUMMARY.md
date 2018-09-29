@@ -22,6 +22,6 @@
 * [Plantillas de Django](django_templates/README.md)
 * [CSS - ¡Que quede bonito!](css/README.md)
 * [Extendiendo plantillas](template_extending/README.md)
-* [Extiende tu aplicación](extend_your_application/README.md)
+* [Amplía tu aplicación](extend_your_application/README.md)
 * [Formularios de Django](django_forms/README.md)
-* [¿Qué sigue?](whats_next/README.md)
+* [¿Y ahora qué?](whats_next/README.md)
