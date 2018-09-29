@@ -978,7 +978,7 @@ Ahora vamos a llamar al código:
 
 > Para lectores en casa: este capítulo está cubierto en el video [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-Esta es la última parte. Bien rápido, ¿cierto? :)
+Esta es la última parte. ¡Qué rápido! ¿no? :)
 
 A las programadoras no les gusta repetirse a si mismas. Programar es sobre automatizar cosas, entonces no queremos saludar a cada persona por su nombre manualmente, ¿no? Ahí es donde los loops son útiles.
 
@@ -998,7 +998,7 @@ Queremos saludar a todas ellas por su nombre. Tenemos la función `hi` que hace 
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+La sentencia `for` funciona de forma parecida a la sentencia `if`; el código de dentro tiene que estar indentado con cuatro espacios en ambas.
 
 Aquí está el código completo que estará en el archivo:
 
@@ -1033,7 +1033,7 @@ Y cuando lo ejecutamos:
 
 Como puedes ver, todo lo que pones con una indentación dentro de una sentencia `for` será repetido para cada elemento de la lista `girls`.
 
-You can also use `for` on numbers using the `range` function:
+También se puede usar `for` con números, usando la función `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1061,7 +1061,7 @@ Ten en cuenta que el segundo de estos dos números no será incluido en la lista
 
 Eso es todo. **¡Eres genial!** Este fue un capítulo difícil, por lo que debes sentirte orgullosa de ti misma. ¡Nosotras estamos orgullosas de ti porque has llegado lejos!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Si quieres ver un tutorial de Python oficial y completo, puedes visitar https://docs.python.org/3/tutorial/. Este tutorial te enseñará conocimientos más completos y detallados del lenguaje. ¡Bravo! :)
 
 Tal vez quieras hacer algo distinto por un momento - estirarte, caminar un poco, descansar tus ojos - antes de pasar al siguiente capítulo. :)
 
