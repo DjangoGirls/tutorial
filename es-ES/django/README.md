@@ -22,6 +22,6 @@ Imagina a un cartero llevando una carta. Él está caminando por la calle y comp
 
 En la función de *view (vista)* se hacen todas las cosas interesantes: podemos mirar a una base de datos para buscar alguna información. ¿Tal vez el usuario pidió cambiar algo en los datos? Como una carta diciendo "Por favor cambia la descripción de mi trabajo." La *vista* puede comprobar si tienes permiso para hacerlo, actualizar la descripción de tu trabajo y devolver un mensaje: "¡Hecho!". Luego la *vista* genera una respuesta y Django puede enviarla al navegador del usuario.
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Esta descripción es un poco simplista, pero de momento no necesitas saber todos los detalles técnicos, con tener una idea general es más que suficiente.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+Así que en lugar de detenernos demasiado en los detalles, vamos a empezar a crear algo con Django y ¡así aprenderemos las cosas importantes sobre la marcha!
