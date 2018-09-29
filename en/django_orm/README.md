@@ -83,17 +83,17 @@ What users do we have in our database? Try this:
 {% filename %}command-line{% endfilename %}
 ```python
 >>> User.objects.all()
-<QuerySet [<User: ola>]>
+<QuerySet [<User: admin>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own superuser's username):
 
 {% filename %}command-line{% endfilename %}
 ```python
->>> me = User.objects.get(username='ola')
+>>> me = User.objects.get(username='admin')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+As you can see, we now `get` a `User` with a `username` that equals 'admin'. Neat!
 
 Now we can finally create our post:
 
