@@ -98,7 +98,7 @@ Pero este código tiene un problema. Si no hay ningún `Post` con esa `clave pri
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-¡No queremos eso! But luckily Django comes with something that will handle that for us: `get_object_or_404`. En caso de que no haya ningún `Post` con el `pk` dado se mostrará una página mucho más agradable, `Page Not Found 404`.
+¡No queremos eso! Por suerte, Django tiene una función que se encarga de eso: `get_object_or_404`. En caso de que no haya ningún `Post` con el `pk` dado se mostrará una página mucho más agradable, `Page Not Found 404`.
 
 ![Page not found](images/404_2.png)
 
@@ -108,7 +108,7 @@ La buena noticia es que puedes crear tu propia página `Page Not Found` y diseñ
 
 En `blog/urls.py` creamos un regla de URL denominada `post_detail` que hace referencia a una vista llamada `view.post_detail`. Esto significa que Django va a estar esperando una función llamada `post_detail` de vista en `blog/views.py`.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+Deberíamos abrir `blog/views.py` en el editor y añadir el siguiente código cerca de los otros import `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Sí. Es hora de actualizar la página: http://127.0.0.1:8000/
 
 ## Crear una plantilla para post detail
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+Vamos crear un fichero en `blog/templates/blog` llamado `post_detail.html`, y abrirlo en el editor de código.
 
 Se verá así:
 
@@ -209,6 +209,6 @@ Activa el virtualenv si no estaba activado de antes (en PythonAnywhere se usa el
 
 El comando `manage.py collectstatic` es un poco como el comando `manage.py migrate`. Hacemos cambios en nuestro código y luego le decimos a Django que los *aplique*, bien a la colección de ficheros estáticos o bien a la base de datos.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
+En cualquier caso, ya podemos ir a la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) (botón en la esquina superior derecha de la consola), hacer click en **Reload**, y mirar la página https://yourname.pythonanywhere.com para ver el resultado.
 
 ¡Y eso debería ser todo! Felicidades :)
