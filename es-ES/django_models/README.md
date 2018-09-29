@@ -99,7 +99,7 @@ Notarás que se ha creado un nuevo directorio `blog` y ahora contiene una cantid
     └── requirements.txt
     
 
-Después de crear una aplicación, también necesitamos decirle a Django que debe utilizarla. We do that in the file `mysite/settings.py` -- open it in your code editor. Tenemos que encontrar `INSTALLED_APPS` y agregar una línea que contiene `'blog',` justo por encima de `]`. El producto final debe tener este aspecto:
+Después de crear una aplicación, también necesitamos decirle a Django que debe utilizarla. Eso se hace en el fichero `mysite/settings.py` -- ábrelo en el editor. Tenemos que encontrar `INSTALLED_APPS` y agregar una línea que contiene `'blog',` justo por encima de `]`. El producto final debe tener este aspecto:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -119,7 +119,7 @@ INSTALLED_APPS = [
 
 En el archivo `blog/models.py` definimos todos los objetos llamados `Models`. Este es un lugar en el cual definiremos nuestra entrada del blog.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+Abre `blog/models.py` en el editor, borra todo, y escribe código como este:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -157,7 +157,7 @@ Todas las líneas que comienzan con `from` o `import` son líneas para agregar a
 - `Post` es el nombre de nuestro modelo. Podemos darle un nombre diferente (pero debemos evitar espacios en blanco y caracteres especiales). Siempre inicia el nombre de una clase con una letra mayúscula.
 - `models.Model` significa que Post es un modelo de Django, así Django sabe que debe guardarlo en la base de datos.
 
-Ahora definimos las propiedades de las que hablábamos: `title`, `text`, `created_date`, `published_date` y `author`. Para ello tenemos que definir el tipo de cada campo (¿es texto? ¿un número? ¿una fecha? A relation to another object, like a User?)
+Ahora definimos las propiedades de las que hablábamos: `title`, `text`, `created_date`, `published_date` y `author`. Para ello tenemos que definir el tipo de cada campo (¿es texto? ¿un número? ¿una fecha? ¿una relación con otro objeto como un User (usuario)?)
 
 - `models.CharField`, así es como defines un texto con un número limitado de caracteres.
 - `models.TextField`, este es para texto largo sin límite. Suena perfecto para el contenido de la entrada del blog, ¿no?
