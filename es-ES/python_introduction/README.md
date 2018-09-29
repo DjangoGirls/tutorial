@@ -510,7 +510,7 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+Hemos visto `>` y `<`, pero, ¿qué significan `>=` y `<=`? Los puedes leer así:
 
 - x `>` y significa: x es mayor que y
 - x `<` y significa: x es menor que y
@@ -725,7 +725,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-¿Observas cómo hemos indentado la siguiente línea de código con 4 espacios? Necesitamos hacer esto para que Python sepa que código ejecutar si es resultado es verdadero. Puedes poner un espacio, pero casi todas las programadores y los programadores Python hacen 4 espacios para hacer que el código sea más legible. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+¿Observas cómo hemos indentado la siguiente línea de código con 4 espacios? Necesitamos hacer esto para que Python sepa que código ejecutar si es resultado es verdadero. Puedes poner un espacio, pero casi todas las programadores y los programadores Python hacen 4 espacios para hacer que el código sea más legible. Un solo tabulador también cuenta como 4 espacios, siempre y cuando tengas configurado el editor así. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Guárdalo y ejecútalo de nuevo:
 
