@@ -26,7 +26,7 @@ El resultado debería ser:
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+Ahora estás en la consola interactiva de Django. Es como una consola de Python normal, pero con un poco de magia de Django. :) Aquí también se pueden usar todos los comandos de Python.
 
 ### Todos los objetos
 
@@ -49,7 +49,7 @@ NameError: name 'Post' is not defined
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Vamos a importar el modelo `Post` de `blog.models`. Y probamos de nuevo a mostrar todas las publicaciones (posts):
 
 {% filename %}command-line{% endfilename %}
 
@@ -89,7 +89,7 @@ Primero importemos el modelo User:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+¡Este es el superusuario que hemos creado antes! Ahora, vamos a obtener una instancia de éste usuario (cambia el código para usar tu propio nombre de usuario):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ This is the superuser we created earlier! Let's get an instance of the user now 
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Como vés, ya hemos obtenido (`get`) un usuario (`User`) cuyo `username` es igual a 'ola'. ¡Mola!
 
 Ahora, finalmente, podemos crear nuestra entrada:
 
