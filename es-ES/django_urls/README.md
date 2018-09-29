@@ -4,7 +4,7 @@ Estamos a punto de construir nuestra primera página web: ¡una página de inici
 
 ## ¿Qué es una URL?
 
-A URL is a web address. Puedes ver una URL cada vez que visitas una página. Se ve en la barra de direcciones del navegador. (Sì! ¡`127.0.0.1:8000` es una URL! Y `https://djangogirls.org` también es una URL.)
+Una URL es una dirección de la web. Puedes ver una URL cada vez que visitas una página. Se ve en la barra de direcciones del navegador. (Sì! ¡`127.0.0.1:8000` es una URL! Y `https://djangogirls.org` también es una URL.)
 
 ![URL](images/url.png)
 
@@ -33,7 +33,7 @@ Como puedes ver, Django ya puso algo aquí por nosotros.
 
 Líneas entre triples comillas (`'''` o `"""`) son llamadas docstrings - puedes escribirlos en la parte superior de un archivo, clase o método para describir lo que hace. No serán ejecutadas por Python.
 
-The admin URL, which you visited in the previous chapter, is already here:
+La URL de admin, que hemos visitado en el capítulo anterior ya está aquí:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -49,7 +49,7 @@ Esta linea dice que para cada URL que empieza con `admin/` Django encontrará su
 
 También queremos mantener limpio el archivo `mysite/urls.py`, así que vamos a importar las urls de nuestra aplicación `blog` en el archivo principal `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+Vamos, añade la línea para importar `blog.urls`. También tienes que cambiar la primera línea, porque vamos a usar la función `include` y tenemos que importarla.
 
 El archivo `mysite/urls.py` debería verse ahora así:
 
@@ -69,7 +69,7 @@ Ahora Django redirigirá todo lo que entre a 'http://127.0.0.1:8000/' hacia `blo
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+Crea un nuevo fichero vacío llamado `urls.py` el el directorio `blog`, y ábrelo en el editor de código. ¡Vale! Añade las dos primeras líneas:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the root URL. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. Este patrón le dirá a Django que `views.post_list` es el lugar correcto al que ir si alguien entra a tu sitio web con la dirección 'http://127.0.0.1:8000/'.
+Como puedes ver, estamos asociando una vista (`view`) llamada `post_list` a la URL raíz. Este patrón de URL detectará la cadena vacía, y el URL resolver de Django no tiene en cuenta el nombre el dominio (i.e., http://127.0.0.1:8000/) que viene antes del path de la url. Este patrón le dirá a Django que `views.post_list` es el lugar correcto al que ir si alguien entra a tu sitio web con la dirección 'http://127.0.0.1:8000/'.
 
 La última parte `name='post_list'` es el nombre de la URL que se utilizará para identificar a la vista. Puede coincidir con el nombre de la vista pero también puede ser algo completamente distinto. Utilizaremos las URL con nombre más delante en el proyecto así que es importante darle un nombre a cada URL de la aplicación. También deberíamos intentar mantener los nombres de las URL únicos y fáciles de recordar.
 
@@ -98,6 +98,6 @@ Si tratas de visitar http://127.0.0.1:8000/ ahora, encontrarás un mensaje de er
 
 ![Error](images/error1.png)
 
-La consola esta mostrando un error, pero no te preocupes - de hecho es muy ùtil: està diciendote que **no existe el atributo 'post_list'**. Ese es el nombre del *view* que Django está tratando de encontrar y usar, pero aun no lo hemos creado. En esta etapa tu `/admin/` tampoco funcionarà. No te preocupes, ya llegaremos a eso. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+La consola esta mostrando un error, pero no te preocupes - de hecho es muy ùtil: està diciendote que **no existe el atributo 'post_list'**. Ese es el nombre del *view* que Django está tratando de encontrar y usar, pero aun no lo hemos creado. En esta etapa tu `/admin/` tampoco funcionarà. No te preocupes, ya llegaremos a eso. Si ves un error diferente, intenta reiniciar el servidor web. Para ello, en la consola en la que se está ejecutando el servidor web, páralo pulsando Ctrl+C (las teclas Control y C a la vez) y reinícialo ejecutando el comando `python manage.py runserver`.
 
 > Si quieres saber más sobre Django URLconfs, mira la documentación oficial: https://docs.djangoproject.com/en/2.0/topics/http/urls/
