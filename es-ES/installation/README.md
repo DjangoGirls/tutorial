@@ -21,11 +21,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Instala un Editor de Código
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Crea un entorno virtual (virtualenv) e instala Django
 
 {% include "/django_installation/instructions.md" %}
 
