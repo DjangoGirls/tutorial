@@ -16,6 +16,52 @@ data-id="chromebook_setup" data-collapse=true ces-->
 {% include "/chromebook_setup/instructions.md" %}
 <!--endsec-->
 
+# Brief intro to command line
+
+Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like:
+
+<!--sec data-title="Opening command line: Windows" data-id="windows_prompt" data-collapse=true ces-->
+
+Go to Start menu → Windows System → Command Prompt. If this doesn't work on your version of Windows, check the "Intro to the command line" topic in the main tutorial for instructions.
+
+You should now see a black window with a `>` in it, like this:
+
+{% filename %}command-line{% endfilename %}
+```
+>
+```
+There may be something like `C:\Users\ola>` before the prompt sign, and this is 100% OK. When you enter commands shown on this page, omit everything up through the `>`. Also, sometimes the command line example comes from OS X or Linux, which use a `$` in place of the `>`. In that case, omit everything up through the `$` shown.
+
+<!--endsec-->
+
+
+<!--sec data-title="Opening command line: OS X" data-id="OSX_prompt" data-collapse=true ces-->
+
+Go to Applications → Utilities → Terminal. You should now see a black window with a `$` in it, like this:
+
+{% filename %}command-line{% endfilename %}
+```
+$
+```
+There may be something like `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK. When you enter commands shown on this page, omit everything up through the `$`.
+
+<!--endsec-->
+
+<!--sec data-title="Opening command line: Linux" data-id="linux_prompt" data-collapse=true ces-->
+
+It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+
+You should now see a black window with a `$` in it, like this:
+
+{% filename %}command-line{% endfilename %}
+```
+$
+```
+There may be something like `~ ola$` before the prompt sign, and this is 100% OK. When you enter commands shown on this page, omit everything up through the `$`.
+
+<!--endsec-->
+
+
 # Install Python
 {% include "/python_installation/instructions.md" %}
 
