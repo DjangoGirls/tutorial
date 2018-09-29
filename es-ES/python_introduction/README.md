@@ -725,7 +725,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-¿Observas cómo hemos indentado la siguiente línea de código con 4 espacios? Necesitamos hacer esto para que Python sepa que código ejecutar si es resultado es verdadero. Puedes poner un espacio, pero casi todas las programadores y los programadores Python hacen 4 espacios para hacer que el código sea más legible. Un solo tabulador también cuenta como 4 espacios, siempre y cuando tengas configurado el editor así. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+¿Observas cómo hemos indentado la siguiente línea de código con 4 espacios? Necesitamos hacer esto para que Python sepa que código ejecutar cuando la condición es verdadera. Podrías poner un solo espacio, pero casi todas las programadores y programadores de Python ponen 4 espacios para que el código sea más legible. Un tabulador también cuenta como 4 espacios (dependiendo de la configuración de tu editor). Elige una forma para indentar, ¡y hazlo siempre igual! Si ya has indentado el código con 4 espacios, hazlo siempre igual. Es importante que la indentación del código sea consistente para evitar problemas.
 
 Guárdalo y ejecútalo de nuevo:
 
@@ -759,7 +759,7 @@ Cuando esto se ejecute imprimirá:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Si 2 fuera mayor que 5, entonces se ejecutaría el segundo comando. Vamos a ver como funciona `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -813,9 +813,9 @@ Python corre a través de cada prueba en secuencia e imprime:
 
 ## Comentarios
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Las líneas que empiezan por `#` son comentarios. Puedes escribir lo que quieres detrás del `#` y Python lo ignorará. Los comentarios sirven para explicar el código a la gente que lo lea en el futuro (¡o incluso a ti misma!).
 
-Mirémos como se ve:
+A ver qué pinta tiene:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -846,7 +846,7 @@ En los últimos tres ejercicios aprendiste acerca de:
 
 ¿Recuerdas funciones como `len()` que puedes ejecutar en Python? Bueno, te tenemos buenas noticias, ¡ahora aprenderás a escribir tus propias funciones!
 
-Una función es una secuencia de instrucciones que Python debe ejecutar. Cada función en Python comienza con la palabra clave `def`, se le asigna un nombre y puede tener algunos parámetros. Let's give it a go. Reemplaza el código en **python_intro.py** con lo siguiente:
+Una función es una secuencia de instrucciones que Python debe ejecutar. Cada función en Python comienza con la palabra clave `def`, se le asigna un nombre y puede tener algunos parámetros. Vamos a probar. Reemplaza el código en **python_intro.py** con lo siguiente:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -974,9 +974,9 @@ Ahora vamos a llamar al código:
 
 ¡Felicidades! Acabas de aprender cómo escribir funciones :)
 
-## Ciclos
+## Bucles
 
-> Para lectores en casa: este capítulo está cubierto en el video [Bases de Python: Ciclos "For"](https://www.youtube.com/watch?v=aEA6Rc86HF0).
+> Para lectores en casa: este capítulo está cubierto en el video [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
 Esta es la última parte. Bien rápido, ¿cierto? :)
 
