@@ -99,6 +99,7 @@ Verify the installation was successful by opening a command prompt and running t
 $ python3 --version
 Python 3.6.1
 ```
+The version shown may be different from 3.6.1 -- it should match the version you installed.
 
 **NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python between 3.4.x and 3.7.x.
 
