@@ -50,7 +50,7 @@ $ python3 --version
 Python 3.6.1
 ```
 
-If you have a different 'micro version' of Python installed, between 3.4.x and 3.7.x (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a newer version, you can install it as follows:
+If you have a different 'micro version' of Python installed, at least 3.4.x (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a newer version, you can install it as follows:
 
 
 <!--endsec-->
@@ -101,7 +101,7 @@ Python 3.6.1
 ```
 The version shown may be different from 3.6.1 -- it should match the version you installed.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python between 3.4.x and 3.7.x.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.x or higher.
 
 ----
 
