@@ -1,10 +1,10 @@
-Existe una gran cantidad de editores diferentes y la elección se reduce en gran medida a las preferencias personales. La mayoría de programadores de Python usan IDEs (Entornos de Desarrollo Integrados) complejos pero muy poderosos, como PyCharm. Sin embargo, como principiante, probablemente no es muy adecuado; nuestras recomendaciones son igualmente poderosas pero mucho más simples.
+Hay muchos editores diferentes y la elección es principalmente una cuestión de preferencia personal. La mayoría de programadores de Python usan IDEs (Entornos de Desarrollo Integrados) complejos pero muy potentes, como PyCharm. Sin embargo, como principiante, probablemente no es lo más aconsejable; nuestras recomendaciones son igualmente potentes pero mucho más simples.
 
-Abajo presentamos nuestra sugerencias pero, siéntete libre de preguntarle a tu tutor cuales son las suyas - seria mucho mas simple obtener su ayuda.
+Abajo presentamos nuestras sugerencias pero, también puedes preguntarle a tu mentor cuáles son las suyas - será más fácil que te ayude.
 
 ## Gedit
 
-Gedit es un editor de texto open-source, gratis, disponible para todos los sistemas operativos.
+Gedit es un editor de texto de código abierto, gratuito, y que está disponible para todos los sistemas operativos.
 
 [Descárgalo aquí](https://wiki.gnome.org/Apps/Gedit#Download)
 
@@ -22,10 +22,10 @@ Atom es otro editor que usa mucha gente. Es gratuito, de código abierto y hay v
 
 ## ¿Por qué estamos instalando un editor de texto?
 
-Puedes estar preguntándote por qué estamos instalando un editor especial, en lugar de usar un editor convencional como Word o Notepad.
+Tal vez te estés preguntando por qué estamos instalando un editor especializado en código, en lugar de usar un editor convencional como Word o Notepad.
 
-La principal razón es que el código necesita ser **texto plano** y, el problema con programas como Word y Textedit es que no producen texto plano, por el contrario, producen texto enriquecido (con estilos), usando formatos personalizados como [RTF(Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La principal razón es que el código tiene que ser **texto plano** y, el problema con programas como Word y Textedit es que no guardan texto plano, sino que guardan texto enriquecido (con estilos), usando formatos personalizados como [RTF(Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-La segunda razón es que los editores de texto son herramientas especiales para editar código, porque proveen características útiles como resaltar el código con diferentes colores de acuerdo a su significado, o cerrar comillas por ti automáticamente.
+La segunda razón es que los editores de texto son herramientas especiales para editar código, porque tienen características útiles como resaltar el código con diferentes colores de acuerdo a su significado, o cerrar comillas automáticamente.
 
-Veremos todo esto en acción más adelante. Pronto veras a tu editor de código como una de tus herramientas favoritas. :)
+Veremos todo esto en acción más adelante. Pronto el editor de código se convertirá en una de tus herramientas favoritas. :)
