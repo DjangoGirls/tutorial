@@ -80,7 +80,7 @@ h1 a {
 
 `h1 a` es un selector CSS. Esto significa que se va a aplicar el estilo a cualquier elemento `a` que esté dentro de un elemento `h1`. Así, cuando tenemos algo como `<h1><a href="">link</a></h1>`, se aplicará el estilo `h1 a`. En este caso le estamos diciendo que cambie el color a `#FCA205`, que es naranja. ¡O puedes poner el color que tu quieras!
 
-En un archivo CSS se definen los estilos de los elementos que aparecen en el archivo HTML. La primera forma de identificar los elementos es por su nombre. Puede que los recuerdes como 'tags' de la sección de HTML. Cosas como `a`, `h1`, y `body` son algunos ejemplos de nombres de elementos. También podemos identificar elementos por el atributo `class` o el atributo `id`. Los valores de "class" e "id" son nombres que das al elemento para poderlo identificar. Con el atributo "class" identificamos grupos de elementos del mismo tipo y con el atributo "id" identificamos a un elemento específico. Por ejemplo, el siguiente elemento lo podrías identificar por su nombre de "tag" `a`, por su "class" `external_link`, o por su "id" `link_to_wiki_page`:
+En un archivo CSS se definen los estilos de los elementos que aparecen en el archivo HTML. La primera forma de identificar los elementos es por su nombre. Puede que los recuerdes como 'tags' de la sección de HTML. Cosas como `a`, `h1`, y `body` son algunos ejemplos de nombres de elementos. También podemos identificar elementos por el atributo `class` o el atributo `id`. Los valores de "class" e "id" son nombres que das al elemento para poderlo identificar. Con el atributo "class" identificamos grupos de elementos del mismo tipo y con el atributo "id" identificamos un elemento específico. Por ejemplo, el siguiente elemento lo podrías identificar por su nombre de "tag" `a`, por su "class" `external_link`, o por su "id" `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -178,7 +178,7 @@ h1 a {
 
 ¡Genial!
 
-Como ya hemos dicho, CSS tiene un concepto de clases. Las clases te permiten dar un nombre a una parte del código HTML para aplicar estilos solo a esta parte, sin afectar a otras. ¡Esto puede ser súper útil! Quizá tienes dos divs haciendo algo diferente (como el encabezado y tu publicación). Una clase puede ayudarte a hacerlos verse distintos.
+Como ya hemos dicho, CSS tiene un concepto de clases. Las clases te permiten dar un nombre a una parte del código HTML para aplicar estilos solo a esta parte, sin afectar a otras. ¡Esto puede ser súper útil! Quizá tienes dos divs haciendo algo diferente (como el encabezado y el texto de tu publicación). Las clases pueden ayudarte a asignarles estilos distintos.
 
 Adelante, nombra algunas partes del código HTML. Añade una clase llamada `page-header` a tu `div` que contiene el encabezado, así:
 
@@ -190,7 +190,7 @@ Adelante, nombra algunas partes del código HTML. Añade una clase llamada `page
 </div>
 ```
 
-Y ahora añade una clase `post` a tu `div` que contiene una entrada del blog.
+Y ahora añade una clase `post` a tu `div` que contiene una publicación del blog.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
