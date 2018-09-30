@@ -31,7 +31,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Instalar Git
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 # Crear una cuenta de GitHub
 
