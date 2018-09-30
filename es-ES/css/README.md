@@ -178,7 +178,7 @@ h1 a {
 
 ¡Genial!
 
-Como se mencionó anteriormente, CSS tiene un concepto de clases. Éstas te permiten nombrar parte del código HTML y aplicar estilos solo a esta parte, sin afectar las otras. ¡Esto puede ser súper útil! Quizá tienes dos divs haciendo algo diferente (como el encabezado y tu publicación). Una clase puede ayudarte a hacerlos verse distintos.
+Como ya hemos dicho, CSS tiene un concepto de clases. Las clases te permiten dar un nombre a una parte del código HTML para aplicar estilos solo a esta parte, sin afectar a otras. ¡Esto puede ser súper útil! Quizá tienes dos divs haciendo algo diferente (como el encabezado y tu publicación). Una clase puede ayudarte a hacerlos verse distintos.
 
 Adelante, nombra algunas partes del código HTML. Añade una clase llamada `page-header` a tu `div` que contiene el encabezado, así:
 
@@ -202,7 +202,7 @@ Y ahora añade una clase `post` a tu `div` que contiene una entrada del blog.
 </div>
 ```
 
-Ahora añadiremos bloques de declaración a diferentes selectores. Los selectores que comienzan con `.` hacen referencia a clases. Hay muchos tutoriales y explicaciones excelentes acerca de CSS en la Web que te pueden ayudar a entender el código a continuación. Por ahora, copia y pega lo siguiente en tu archivo `blog/static/css/blog.css`:
+Ahora añadiremos bloques de declaración a varios selectores. Los selectores que comienzan con `.` hacen referencia a clases. Hay muchos tutoriales y explicaciones excelentes sobre CSS en la Web que te pueden ayudar a entender el código que sigue a continuación. Por ahora, copia y pega lo siguiente en tu archivo `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -256,7 +256,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Luego envuelve el código HTML que muestra los posts con declaraciones de clases. Cambia esto:
+Luego rodea el código HTML que muestra los posts con declaraciones de clases. Cambia esto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -270,7 +270,7 @@ Luego envuelve el código HTML que muestra los posts con declaraciones de clases
 {% endfor %}
 ```
 
-en `blog/templates/blog/post_list.html` con esto:
+en `blog/templates/blog/post_list.html` por esto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -292,14 +292,14 @@ en `blog/templates/blog/post_list.html` con esto:
 </div>
 ```
 
-Guarda estos archivos y actualiza tu sitio.
+Guarda estos archivos y recarga tu sitio.
 
 ![Figura 14.4](images/final.png)
 
-¡Woohoo! Se ve bien, ¿Verdad? Mira el código que acabamos de pegar para encontrar los lugares donde agregamos clases en el HTML y las usamos en el CSS. ¿Dónde harías el cambio si quisieras que la fecha fuera color turquesa?
+¡Woohoo! Queda genial, ¿Verdad? Mira el código que acabamos de pegar para encontrar los lugares donde añadimos clases en el HTML y las usamos en el CSS. ¿Qué cambiarías si quisieras que la fecha fuera color turquesa?
 
-No tengas miedo a experimentar con este CSS un poco y tratar de cambiar algunas cosas. Jugar con el CSS te puede ayudar a entrenar lo que hacen las distintas secciones. Si algo deja de funcionar, no te preocupes, siempre puedes deshacerlo!
+No tengas miedo a experimentar con este CSS un poco y tratar de cambiar algunas cosas. Jugar con el CSS te puede ayudar a entender lo que hacen las distintas secciones. Si algo deja de funcionar, no te preocupes, ¡siempre puedes deshacerlo!
 
-Realmente recomendamos tomar este [curso HTML y CSS codecademy](https://www.codecademy.com/tracks/web). Puede ayudarte a aprender todo lo que necesitas para hacer tus websites más hermosos con CSS.
+Realmente te recomendamos seguir este [Curso de HTML y CSS de CodeAcademy](https://www.codecademy.com/tracks/web). Puede ayudarte a aprender todo lo que necesitas para hacer tus websites más bonitos con CSS.
 
-¡¿Listo para el siguiente capítulo?! :)
+¡¿Lista para el siguiente capítulo?! :)
