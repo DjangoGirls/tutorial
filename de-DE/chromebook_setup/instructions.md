@@ -23,10 +23,10 @@ The terminal will give the computer Cloud 9 has prepared for your instructions. 
 #### AWS Cloud9
 
 1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
+2. Lege dir dort ein Benutzerkonto an
 3. Click *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Jetzt solltest du eine Benutzeroberfläche mit Seitenleiste, ein grosses Fenster mit Text und am unteren Rand ein Feld sehen, das wie folgt aussieht:
 
 {% filename %}bash{% endfilename %}
 
