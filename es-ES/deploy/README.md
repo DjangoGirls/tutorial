@@ -14,7 +14,7 @@ Estos tres lugares serán importantes para ti. Tu ordenador local será el lugar
 
 > **Nota** Si ya has realizado los pasos de instalación, no los tienes que repetir, puedes avanzar a la siguiente sección y empezar a crear tu repositorio de Git.
 
-{% include "deploy/install_git.md" %}
+{% include "/deploy/install_git.md" %}
 
 ## Crear nuestro repositorio Git
 
