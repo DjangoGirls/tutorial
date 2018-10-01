@@ -47,7 +47,7 @@ Git houdt alle wijzigingen in alle bestanden en mappen in deze map bij, maar er 
 
 En sla het op als `.gitignore` in de "djangogirls" map.
 
-> **Opmerking** De punt aan het begin van de bestandsnaam is belangrijk! Als je tegen problemen aanloopt bij het creëren van het bestand (Macs vinden het niet leuk als je via de Finder een bestand dat begint met een punt aanmaakt, bijvoorbeeld), gebruik dan de "Opslaan als" functie in je editor; daar kan niks misgaan.
+> **Opmerking** De punt aan het begin van de bestandsnaam is belangrijk! Als je tegen problemen aanloopt bij het creëren van het bestand (Macs vinden het niet leuk als je via de Finder een bestand dat begint met een punt aanmaakt, bijvoorbeeld), gebruik dan de "Opslaan als" functie in je editor; daar kan niks misgaan. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
 > 
 > **Opmerking** Een van de besanden die je genoemd hebt in je `.gitignore` bestand is `db.sqlite3`. Dat bestand is je lokale database, waar al je blogposts worden bewaard. We willen dit niet aan de repository toevoegen, omdat je website straks op PythonAnywhere een andere database zal gebruiken. Die database zou SQLite kunnen zijn, net als op je eigen laptop, maar normaal gesproken zul je MySQL gebruiken, wat veel meer bezoekers aankan dan SQLite. Door de SQLite database te negeren voor de GitHub kopie zullen all blogposts die je tot nu toe geschreven hebt alleen maar lokaal beschikbaar zijn. Je zal ze voor de live website dus nog een keer moeten toevoegen. Zie je lokale database als een speeltuin waar je veel verschillende dingen kunt uitproberen, zonder dat je bang hoeft te zijn dat je al je echte posts perongeluk verwijdert van je blog.
 
@@ -109,12 +109,10 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-Enter your GitHub username and password and you should see something like this:
+When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
 
 {% filename %}command-line{% endfilename %}
 
-    Username for 'https://github.com': ola
-    Password for 'https://ola@github.com':
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
