@@ -47,7 +47,7 @@ Initializing the git repository is something we need to do only once per project
 
 And save it as `.gitignore` in the "djangogirls" folder.
 
-> **Σημείωση** Η τελεία στην αρχή του ονόματος του αρχείου είναι σημαντική! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof.
+> **Σημείωση** Η τελεία στην αρχή του ονόματος του αρχείου είναι σημαντική! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. Αυτό το αρχείο είναι η τοπική σου βάση δεδομένων, όπου όλες οι δημοσιεύσεις σου αποθηκεύονται. Δεν θέλουμε να προσθέσουμε αυτό στην αποθήκη σας επειδή η ιστοσελίδα σας στο PythonAnywhere πρόκειται να χρησιμοποιεί διαφορετική βάση δεδομένων. Η βάση δεδομένων μπορεί να είναι SQLite, όπως η μηχανή ανάπτυξης σας, αλλά συνήθως θα χρησιμοποιείται μία που ονομάζεται MySQL η οποία μπορεί να ασχοληθεί με πολύ περισσότερους επισκέπτες από την SQLite. Έτσι και αλλιώς, αγνοώντας την βάση δεδομένων σας SQLite για την αντιγραφή στο GitHub, σημαίνει ότι όλες οι δημοσιεύσεις σας που έχετε δημιουργήσει μέχρι τώρα πρόκειται να μείνουν και να είναι διαθέσιμες τοπικά, αλλά θα πρέπει να τις προσθέσετε ξανά στην παραγωγή. Να σκέφτεστε την τοπική βάση δεδομένων σας ως ένα παιδότοπο όπου μπορείτε να δοκιμάσετε διαφορετικά πράγματα και να μην φοβάστε ότι πρόκειται να διαγράψετε τις αληθινές σας δημοσιεύσεις από το blog σας.
 
@@ -109,12 +109,10 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-Enter your GitHub username and password and you should see something like this:
+When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
 
 {% filename %}command-line{% endfilename %}
 
-    Username for 'https://github.com': ola
-    Password for 'https://ola@github.com':
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
