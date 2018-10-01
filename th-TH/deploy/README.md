@@ -47,7 +47,7 @@ Git จะติดตามการเปลี่ยนแปลงในท�
 
 จากนั้นจึงบันทึกไฟล์โดยใช้ชื่อว่า `.gitignore` ที่อยู่ในโฟลเดอร์ "djangogirls"
 
-> **หมายเหตุ** เครื่องหมายจุดที่อยู่หน้าชื่อไฟล์นั้นสำคัญมาก! ถ้าคุณมีปัญหาในการสร้างไฟล์นี้ (เช่น Mac ไม่ชอบให้คุณสร้างไฟล์ที่เริ่มต้นด้วยเครื่องหมายจุดใน Finder) ดังนั้น คุณควรใช้ "Save As" จากตัวแก้ไขไฟล์แทน
+> **หมายเหตุ** เครื่องหมายจุดที่อยู่หน้าชื่อไฟล์นั้นสำคัญมาก! ถ้าคุณมีปัญหาในการสร้างไฟล์นี้ (เช่น Mac ไม่ชอบให้คุณสร้างไฟล์ที่เริ่มต้นด้วยเครื่องหมายจุดใน Finder) ดังนั้น คุณควรใช้ "Save As" จากตัวแก้ไขไฟล์แทน And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your posts are stored. We don't want to add this to your repository because your website on PythonAnywhere is going to be using a different database. That database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts you created so far are going to stay and only be available locally, but you're going to have to add them again on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
@@ -109,12 +109,10 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-ใส่ GitHub username และ password ของคุณ จากนั้นคุณควรจะเห็นผลลัพธ์คล้ายๆ แบบนี้:
+When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
 
 {% filename %}command-line{% endfilename %}
 
-    Username for 'https://github.com': ola
-    Password for 'https://ola@github.com':
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
