@@ -37,7 +37,7 @@ Questo tutorial è mantenuto da [DjangoGirls][4]. Se trovi errori o se vuoi aggi
  [4]: https://djangogirls.org/
  [5]: https://github.com/DjangoGirls/tutorial/blob/master/README.md
 
-## Vorresti aiutarci a tradurre il tutorial in un altra lingua?
+## Vorresti aiutarci a tradurre il tutorial in un'altra lingua?
 
 Attualmente, le traduzioni vengono mantenute sulla piattaforma crowdin.com in:
 
