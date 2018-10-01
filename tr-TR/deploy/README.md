@@ -48,7 +48,7 @@ Git bu dizindeki tüm dizin ve dosyalardaki değişiklikleri kaydedecek, ama tak
 
 Ve onu `.gitignore` ismi ile "djangogirls" dizinine kaydedin.
 
-> **Not** Dosya adının başındaki nokta önemli! Eğer dosyayı oluştururken zorluk yaşarsanız (örneğin Mac'ler Finder'dan nokta ile başlayan bir dosya oluşturmanızdan hoşlanmazlar), editörünüzdeki "Farklı Kaydet" özelliğini kullanın böylece çalışacaktır.
+> **Not** Dosya adının başındaki nokta önemli! Eğer dosyayı oluştururken zorluk yaşarsanız (örneğin Mac'ler Finder'dan nokta ile başlayan bir dosya oluşturmanızdan hoşlanmazlar), editörünüzdeki "Farklı Kaydet" özelliğini kullanın böylece çalışacaktır. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
 > 
 > **Not** `.gittignore` dosyasında belirttiğiniz dosyalardan biri `db.sqlite3` dosyası. Bu dosya tüm gönderilerinizin saklandığı yerel veritabanınızdır. Bunu reponuza eklemek istemiyoruz çünkü PythonAnywhere'deki web siteniz farklı bir veritabanı kullanacak. Bu veritabanı geliştirme makinenizdeki gibi SQLite olabilir ama genelde sitenizdeki çok daha fazla ziyaretçiyi kaldırabilecek MySQL adı verilen bir veritabanı kullanacaksınız. Her iki durumda da, GitHub kopyası için SQLite veritabanınızı yok saymanız, şu ana kadar oluşturduğunuz tüm gönderilerin lokalinizde kalması ve yalnızca lokal olarak kullanılabilmeniz anlamına geliyor. Canlıda onlara ulaşabilmeniz için yeniden eklemek zorundasınız. Lokal veritabanınızı farklı şeyleri test edebileceğiniz ve blogunuzdaki gerçek gönderilerinizi silmekten korkmayacağınız iyi bir oyun alanı olarak düşünmelisiniz.
 
@@ -110,12 +110,10 @@ Aşağıdakini komut satırına yazın (`< your-github-username>`) kısmını Gi
     $ git push -u origin master
     
 
-Github kullanıcı adı ve şifrenizi girin, ardından aşağıdakine benzer bir şey görmeniz gerekiyor:
+When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
 
 {% filename %}komut satırı{% endfilename %}
 
-    Username for 'https://github.com': zeynep 
-    Password for 'https://zeynep@github.com': 
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
