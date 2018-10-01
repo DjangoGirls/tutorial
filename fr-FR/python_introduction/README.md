@@ -1031,9 +1031,9 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Comme vous pouvez le constater, tout ce que vous mettez dans la déclaration `for` avec une indentation sera répétée pour chaque élément de la liste `filles`.
 
-You can also use `for` on numbers using the `range` function:
+Vous pouvez toujours utiliser une déclaration `for` pour des chiffres, en utilisant la fonction `range` :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,7 +1042,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Ce qui imprimerait :
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,7 +1053,7 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` est une fonction créant une liste de nombres consécutifs (ces nombres sont paramétrés par vous-même).
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
