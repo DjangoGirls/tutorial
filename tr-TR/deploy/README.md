@@ -170,7 +170,7 @@ Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 - Sabit dosyaların (bunları daha sonra öğreneceğiz) oluşturuluyor
 - Ve web uygulamanızın API sinin PythonAnywhere tarafından sunulması için ayarlar yapılıyor
 
-Bu adımlar PythonAnywhere'de otomatikleştirilmiştir, ancak farklı sunucu sağlayıcıları ile yapılacak olan adımlarla aynıdır. Anlaşılması önemli olan nokta şu ki PythonAnywhere üzerinde yaratılan veritabanı ile kendi bilgisayarımızda yarattığımız veritabanı birbirinden tamamen ayrı -- dolayısı ile bu iki veritabanında saklanmış olan postlar ve kullanıcılar da farklı olabilir.
+Bu adımlar PythonAnywhere'de otomatikleştirilmiştir, ancak farklı sunucu sağlayıcıları ile yapılacak olan adımlarla aynıdır. Anlaşılması önemli olan nokta şu ki PythonAnywhere üzerinde yaratılan veritabanı ile kendi bilgisayarımızda yarattığımız veritabanı birbirinden tamamen ayrıdır -- dolayısı ile bu iki veritabanında saklamış olduğumuz postlar ve kullanıcılar da farklı olabilir.
 
 Bu nedenle, aynen kendi bilgisayarımızda yapmış olduğumuz gibi, `createsuperuser` ile bir admin kullacısını oluşturmamız gerekiyor. PythonAnywhere otomatik olarak virtualenv i başlatmış olduğu için, bu kullanıcıyı hemen oluşturabiliriz:
 
@@ -179,7 +179,7 @@ Bu nedenle, aynen kendi bilgisayarımızda yapmış olduğumuz gibi, `createsupe
     (<kullanici-adiniz>.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızda oluşturduğunuz kullanıcı detayları ile aynı olması hatırlamak açısından faydalı olacaktır, tabii PythonAnywhere üzerindeki şifreyi daha zor olarak tanımlamak isteyebiliriz.
+Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızda oluşturduğunuz kullanıcı detayları ile aynı tutarsanız hatırlamak daha kolay olacaktır, fakat güvenlik açısından PythonAnywhere üzerindeki şifreyi daha zor tanımlamak isteyebiliriz.
 
 Şimdi, isterseniz, PythonAnywhere üzerindeki kodlara `ls` komutu ile göz atabilirsiniz:
 
@@ -196,7 +196,7 @@ Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızd
 
 ## Şimdi Canlı Yayındasınız!
 
-Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "Web" tabına tıklayarak linki kopyalayın. Bu linki istediğiniz herkes ile paylaşabilirsiniz :)
+Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "Web" tabına tıklayarak linki kopyalayıp istediğiniz herkes ile paylaşabilirsiniz :)
 
 > **Not** Bu kılavuz başlangıçlara yönelik olduğu için basit tutmak amacıyla siteyi yayına alırken güvenlik açısından ideal olmayan bir kaç seçim yaptık. Bu projeyi ilerletmeye karar verirseniz veya yeni bir proje oluşturursanız, güvenlik tavsiyeleri için [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) i inceleyin.
 
@@ -208,7 +208,7 @@ Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "W
 - GitHub URL'nizde bir hata yapmak
 - *"Could not find your settings.py"* hatası genellikle tüm gerekli dosyaların Git'e eklenmemiş ve/veya GitHub'a başarılı olarak push edilmemiş olmasından kaynaklanır. Tekrar Git bölümüne bakın
 
-Websitenizi ziyaret ettğiniz zaman bir hata ile karşılaşıtsanız ilk bakacağınız yer **error log** dosyasıdır. PythonAnywhere [Web](https://www.pythonanywhere.com/web_app_setup/) sekmesinde bu dosyaya link bulabilirsiniz. Hata mesajlarını buradan kontrol edebilrisiniz; en yakın zamandaki hatalar en sonda yer alır.
+Websitenizi ziyaret ettiğiniz zaman bir hata ile karşılaşırsanız ilk bakacağınız yer **error log** dosyasıdır. PythonAnywhere [Web](https://www.pythonanywhere.com/web_app_setup/) sekmesinde bu dosyaya link bulabilirsiniz. Hata mesajlarını buradan kontrol edebilrisiniz; en yakın zamandaki hatalar en sonda yer alır.
 
 [PythonAnywhere wiki üzerinde bazı genel hata giderme tüyoları](http://help.pythonanywhere.com/pages/DebuggingImportError) mevcuttur.
 
@@ -218,6 +218,6 @@ Ve eğitmeniniz size yardıma hazır, unutmayın!
 
 Siteniz için bulunan varsayılan sayfa ''İşe yaradı!'' demelidir. Tıpkı yerel bilgisayarınızda olduğu gibi. URL'nin sonuna `/admin/` yazın, 'giriş' tuşuna bastığınızda admin sitesi açılacak. Kullanıcı adı ve şifrenizle giriş yapın, sunucuda yeni blog yazıları girebildiğinizi göreceksiniz.
 
-Birkaç gönderi oluşturduktan sonra, lokalinize (PythonAnywhere'e değil) geri dönebilirsiniz. Değişiklikleri lokalinizde yapacaksınız. Bu web geliştirmekte yaygın bir akışıdır - değişiklikleri yerel olarak yapınız, bu değişiklikleri GitHub'a gönderin, değişikliklerinizi canlı Web sunucusuna çekin. Bu canlı web sitenizi bozmadan çalışmanızı ve yeni şeyler denemenizi sağlar. Bayağı havalı, di mi?
+Birkaç gönderi oluşturduktan sonra, lokal kurulumunuza geri dönebilirsiniz (PythonAnywhere'e değil). Değişiklikleri lokalinizde yapacaksınız. Bu web geliştirmekte yaygın bir akışıdır - değişiklikleri yerel olarak yapar, sonra bu değişiklikleri GitHub'a gönderip canlı Web sunucusuna çekersiniz. Bu canlı web sitenizi bozmadan çalışmanızı ve yeni şeyler denemenizi sağlar. Bayağı havalı, di mi?
 
 Kendinize *KOCAMAN* bir aferin diyin! Yayına alma web geliştirme işinin en uğraştırmalı kısımlarından biridir ve genelde çalışana kadar insanların birkaç gününü alır. Ama işte siteniz canlıda, gerçek internette!
