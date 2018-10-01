@@ -477,7 +477,7 @@ Bir sonraki bölüm için heyecanlı mısınız? :)
 
 > Evden okuyanlar için: Bu kısım [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) videosunda anlatılıyor.
 
-Programlamanın büyük kısmı karşılaştırma içerir. Karşılaştırması en kolay olan şey nediir? Tabiki sayılar. Bakalım nasıl çalışıyor:
+Programlamanın büyük kısmı karşılaştırma içerir. Karşılaştırması en kolay olan şey nedir? Tabi ki sayılar. Bakalım nasıl çalışıyor:
 
 {% filename %}komut satırı{% endfilename %}
 
