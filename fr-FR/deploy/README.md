@@ -89,11 +89,11 @@ Et pour finir, nous allons enregistrer nos modifications. Tapez ces commandes da
 
 Allez sur [GitHub.com](https://www.github.com) et inscrivez-vous gratuitement (si vous possédez déjà un compte, c'est parfait!)
 
-Ensuite, créez un nouveau dépôt en lui donnant le nom "my-first-blog". Laissez la case "initialisation avec README" décochée, laissez l'option .gitignore vide (nous l'avons fait manuellement) et laissez la Licence en tant que Aucune.
+Ensuite, créez un nouveau dépôt en lui donnant le nom "mon-nouveau-blog". Laissez la case "initialisation avec README" décochée, laissez l'option .gitignore vide (nous l'avons fait manuellement) et laissez la Licence en tant que Aucune.
 
 ![](images/new_github_repo.png)
 
-> **Note** : dans le cadre de ce tutoriel, le nom `my-first-blog` est très important. Cependant, vous êtes libre de le changer mais, attention : à chaque fois que ce nom apparaîtra dans le tutoriel, vous allez devoir le remplacer par le nom que vous avez choisi. It's probably easier to stick with the name `my-first-blog`.
+> **Note** : dans le cadre de ce tutoriel, le nom `mon-nouveau-blog` est très important. Cependant, vous êtes libre de le changer mais, attention : à chaque fois que ce nom apparaîtra dans le tutoriel, vous allez devoir le remplacer par le nom que vous avez choisi. Il est probablement plus simple de garder le nom `mon-nouveau-blog`.
 
 On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
