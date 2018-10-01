@@ -18,13 +18,13 @@ Cloud IDE, size İnternette yazılım yükleyebileceğiniz, yazabileceğiniz ve 
     $
     
 
-The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Terminal Cloud 9 in hazırladığı komutları gösterecek. Ekranın boyunu değiştirebilir veya maxize edebilirsiniz.
 
 #### AWS Cloud9
 
 1. [AWS Cloud9](https://aws.amazon.com/cloud9/)'a gidin
 2. Bir hesap oluşturun
-3. Click *Create Environment*
+3. *Create Environment* a tıklayın
 
 Şimdi bir kenar çubuğu, bazı metinlerin olduğu büyük bir ana pencere ve en altta da buna benzer küçük penceresi olan bir arayüz görmelisiniz:
 
