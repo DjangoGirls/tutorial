@@ -203,7 +203,7 @@ Your site should now be live on the public Internet! Click through to the Python
 
 Si vous constatez une erreur en exécutant le script `pa_autoconfigure_django.py`, voici quelques causes courantes :
 
-- Oublier de créer votre "API token" pour PythonAnywhere.
+- Oubli de créer votre "jeton API" pour PythonAnywhere.
 - Faire une erreur dans votre URL GitHub
 - Si vous voyez un message d’erreur indiquant *« Could not find your settings.py »*, vous avez probablement oublié d'ajouter tous vos fichiers sur Git, et/ou vous ne les avez pas envoyé à GitHub. Regardez à nouveau la section Git ci-dessus
 
