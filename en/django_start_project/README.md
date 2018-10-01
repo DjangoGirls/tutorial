@@ -199,7 +199,7 @@ Congratulations! You've just created your first website and run it using a web s
 
 ![Install worked!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. So, as long as the web server is running and waiting for additional incoming requests, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands.
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > We reviewed how web servers work in the <b>How the Internet works</b> chapter.
 
