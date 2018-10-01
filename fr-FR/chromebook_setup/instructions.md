@@ -26,7 +26,7 @@ The terminal will give the computer Cloud 9 has prepared for your instructions. 
 2. Créez un compte
 3. Cliquez *Créer un environnement*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Maintenant, vous devriez voir une interface dotée d'une barre latérale, une grande fenêtre principale contenant du texte, ainsi qu'une petite fenêtre en bas ressemblant plus ou moins à ceci :
 
 {% filename %}bash{% endfilename %}
 
@@ -37,7 +37,7 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 ### Environnement virtuel
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un environnement virtuel (aussi appelé virtualenv) est comme une boite privée dans laquelle on peut stocker du code relatif au projet sur lequel on travaille. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
@@ -47,7 +47,7 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Si cela ne fonctionne toujours pas, demandez de l'aide à votre coach.
 
 Next, run:
 
