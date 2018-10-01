@@ -37,7 +37,7 @@ Enfin, allons jeter un coup d'œil à ces **fichiers statiques** dont nous n'arr
 
 ### Où ranger les fichiers statiques dans Django ?
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django sait déjà où trouver les fichiers statiques pour l'application "admin" intégrée. Maintenant, nous devons ajouter quelques fichiers statiques pour notre propre application, `blog`.
 
 Pour cela, nous allons créer un dossier appelé `static` à l'intérieur de notre appli blog :
 
@@ -78,7 +78,7 @@ h1 a {
 }
 ```
 
-`h1 a` est un sélecteur CSS. Cela signifie que notre style est appliqué sur tous les éléments `a` contenu dans un élément `h1`. Donc lorsque nous avons quelque chose comme `<h1><a href="">lien</a></h1>`, le style `h1 a` est appliqué. Dans notre cas, nous lui indiquons de changer sa couleur en `#FCA205`, c'est à dire en orange. Or you can put your own color here!
+`h1 a` est un sélecteur CSS. Cela signifie que notre style est appliqué sur tous les éléments `a` contenu dans un élément `h1`. Donc lorsque nous avons quelque chose comme `<h1><a href="">lien</a></h1>`, le style `h1 a` est appliqué. Dans notre cas, nous lui indiquons de changer sa couleur en `#FCA205`, c'est à dire en orange. Ou vous pouvez utiliser votre propre couleur ici !
 
 Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. La première façon pour identifier des éléments, c'est avec leur nom d'élément. Vous vous en souviendrez car ces noms proviennent des balises HTML. Exemple : `a`, `h1` et `body` sont tous des noms d'élément. Vous pouvez aussi identifier les éléments par leur attribut `class` ou `id`. La classe et l'identifiant sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les identifiants pointent un élément spécifique. Par exemple, vous pouvez identifier la ligne suivant par le nom `a`, la classe `.external_link`, ou l'identifiant `#link_to_wiki_page` :
 
@@ -88,7 +88,7 @@ Un fichier CSS permet de déterminer le style des éléments présents dans un f
 
 Apprenez-en plus à propos des [Sélecteurs CSS sur W3Schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Nous devons aussi dire à notre modèle HTML que nous avons utilisé un peu de CSS. Ouvrez le fichier `blog/templates/blog/post_list.html` dans l'éditeur de code et ajoutez cette ligne au tout début :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ Maintenant, ajoutez la classe `post` à votre `div` contenant votre billet de bl
 </div>
 ```
 
-Nous allons maintenant ajouter des blocs de règles aux différents sélecteurs. Les sélecteurs qui commencent par `.` désignent des classes. De nombreux tutoriels et explications sur le CSS existent sur le Web, cela pourra vous aider qui à comprendre le code suivant. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Nous allons maintenant ajouter des blocs de règles aux différents sélecteurs. Les sélecteurs qui commencent par `.` désignent des classes. De nombreux tutoriels et explications sur le CSS existent sur le Web, cela pourra vous aider qui à comprendre le code suivant. Pour le moment, copiez et collez-le dans votre fichier `blog/static/css/blog.css` :
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
