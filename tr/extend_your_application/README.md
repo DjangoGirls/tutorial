@@ -10,9 +10,9 @@ Blog'umuzda lazım olan ilk şey bir gönderiyi göstermek için bir sayfa, değ
 
 Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir şey eklememize gerek yok.
 
-## Bir gönderinin detayı için bir şablon linki oluşturun
+## Bir gönderinin detayı için bir template(şablon) linki oluşturun
 
-`blog/templates/blog/post_list.html` dosyasının içine bir bağlantı ekleyerek başlayacağız.Şimdiye kadar bunun gibi görünmesi gerek: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+`blog/templates/blog/post_list.html` dosyasına bir link (bağlantı) ekleyerek başlayacağız. Bu dosyayı kod düzenleyicisinde açalım, şimdiye kadar yaptıklarımızın şöyle gözüküyor olması lazım:
 
 ```html
 {% extends 'blog/base.html' %}
@@ -40,9 +40,9 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 
 {% raw %}Gizemli `{% url 'post_detail' pk=post.pk %}` satırını anlatma zamanı. Şüphelendiğiniz üzere, `{% %}` notasyonu, Django template tags (şablon etiketleri) kullandığımız manasına geliyor. Bu sefer bizim için URL oluşturacak bir şablon (template) etiketi kullanacağız!{% endraw %}
 
-`post_detail` kısmı Django'nun `blog/urls.py/0> dosyasının içinde post_detail adlı bir URL beklediği anlamına gelir.</p>
+`post_detail` kısmı Django'nun `blog/urls.py/` dosyasının içinde post_detail adlı bir URL beklediği anlamına gelir.
 
-<p>Peki <code>pk=post.pk`? `pk` primary key (birincil anahtar) için kullanılan kısaltmadır, veritabanındaki her kayıt için verilen özgün (eşsiz) bir isimdir. `Post` modelimiz için bir primary key tanımlamamış olduğumuz için, Django onu bizim için otomatik olarak oluşturdu (genelde, her kayıt için bir artan numara ile, örnek 1, 2, 3) ve her post için `pk` adlı bir alan ekledi. Primary key'e erişmek için `post.pk` yazarız, tıpkı `Post` objesindeki diğer alanlara eriştiğimiz gibi (`title`, `author`, vb.)!
+Peki `pk=post.pk`? `pk` primary key (birincil anahtar) için kullanılan kısaltmadır, veritabanındaki her kayıt için verilen özgün (eşsiz) bir isimdir. `Post` modelimiz için bir primary key tanımlamamış olduğumuz için, Django onu bizim için otomatik olarak oluşturdu (genelde, her kayıt için bir artan numara ile, örnek 1, 2, 3) ve her post için `pk` adlı bir alan ekledi. Primary key'e erişmek için `post.pk` yazarız, tıpkı `Post` objesindeki diğer alanlara eriştiğimiz gibi (`title`, `author`, vb.)!
 
 Şimdi http://127.0.0.1:8000/ adresine gittiğimizde bir hata ile karşılaşacağız (`post_detail` için bir URL ya da *görüntü (view)* olmadığı için hatayı almamız normal). Hata böyle görünecektir:
 
@@ -50,31 +50,29 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
 
 ## Bir gönderinin detayı için URL oluşturun
 
-`post_detail` *view*'ümüz için `urls.py`'un içinde bir URL oluşturalım!
+`post_detail` *view*'ımız için `urls.py`'un içinde bir URL oluşturalım!
 
 İlk gönderimizin detayının şu **URL**'de gösterilmesini istiyoruz: http://127.0.0.1:8000/post/1/
 
-`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'una işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. `blog/urls.py` dosyasına şu satırı ekleyin `url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),`. Dosya şöyle gözükmeli:
+`blog/urls.py` dosyasında `post_detail` adında bir Django *view*'ına işaret eden bir URL yapalım. Bu <1>view</1> bir gönderinin tümünü gösterecek. Kod düzenleyicide `blog/urls.py` dosyasını açın ve `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` satırını ekleyin, böylece dosya şöyle görünür:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
 ```python
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
 ```
 
-`^post/(?P<pk>\d+)/$` kısmı korkunç görünüyor, ama endişe etmeyin - sizin için açıklayalım:
+`post/<int:pk>/` kısmı bir URL kalıbı belirtir - sizin için bunu açıklayalım:
 
-- "başlangıç" yine `^` ile başlar.
-- başlangıçtan sonraki `post/` kısmı URL **post** ve bir tane **/** içermesi gerekir anlamına gelir. Şimdiye kadar her şey iyi.
-- `(?P<pk>\d+)` - bu kısım biraz daha hileli. Buranın anlamı şu: Django bu alana yerleştirdiğimiz her şeyi alacak ve onu `pk` adında bir değişken olarak view'e aktaracak. (Bunun `blog/templates/blog/post_list.html` 'de vermiş olduğumuz birincil anahtar değeriyle eşleştiğini note edin!) aynı zamanda `\d` işareti bize sadece bir rakam olabileceğini söyler, harf değil (yani her şey 0 ve 9 arasındadır). `+` en az bir veya daha fazla rakam olması gerektiğini ifade ediyor. Yani `http://127.0.0.1:8000/post//` gibi bir şey geçerli değil, ama `http://127.0.0.1:8000/post/1234567890/` uygun!
-- `/` - sonra yine **/**'a ihtiyacımız var.
-- `$`-"son"!
+- `post/`, URL'nin **post** kelimesi ile başlayıp ardından ** / ** ile devam etmesi gerektiği anlamına gelir.
+- `<int:pk>` - bu bölüm daha zorlayıcı. Django'nun bir tamsayı değeri beklediği ve onu `pk` adlı bir değişken olarak bir görünüme(view) aktaracağı anlamına gelir.
+- `/` - URL'yi bitirmeden önce **/** 'e tekrar ihtiyacımız var.
 
 Bu şu demek, eğer tarayıcınıza `http://127.0.0.1:8000/post/5/` yazarsanız, Django `post_detail` adında bir *view* aradığınızı anlar ve `pk` eşittir `5` bilgisini *view*'e aktarır.
 
@@ -82,11 +80,11 @@ Tamamdır.`blog/urls.py`!'e yeni bir URL kalıbı ekledik! Http://127.0.0.1:8000
 
 ![AttributeError (Özellik hatası)](images/attribute_error2.png)
 
-Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: view'ü eklemek!
+Bir sonraki adımın ne olduğunu hatırlıyor musunuz? Tabi ki: view(görünüm)'ü eklemek!
 
 ## Gönderi detayı için bir view ekleyin
 
-Bu sefer *view*'ümüze `pk` adında bir parametre ekleyeceğiz. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Dikkat edin, url'lerde kullandığımız ismin birebir aynısını kullanmamız gerekiyor (`pk`). Bu değişkeni kullanmamak yanlıştır ve hataya sebep olacaktır!
+Bu sefer *view*'ımıza `pk` adında bir parametre ekleyeceğiz. *view*'ümüzün onu yakalaması gerekiyor, değil mi? Fonksiyonumuzu `def post_detail(request, pk):` olarak tanımlayacağız. Dikkat edin, url'lerde kullandığımız ismin birebir aynısını kullanmamız gerekiyor (`pk`). Bu değişkeni kullanmamak yanlıştır ve hataya sebep olacaktır!
 
 Şimdi sadece ve sadece bir tane blog gönderisi almak istiyoruz. Bunu yapmak için şunun gibi sorgu setlerini/kümelerini kullanabiliriz:
 
@@ -100,7 +98,7 @@ Ama bu kodun bir problemi var. Eğer gelen `primary key` (`pk` - tekil anahtar) 
 
 ![DoesNotExist error (Yok hatası)](images/does_not_exist2.png)
 
-Bunu istemiyoruz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or404`. Eğer verilen `pk` ile bir `Post` bulunamazsa, çok daha güzel bir sayfa gösterilecek (`Sayfa bulunamadı 404` sayfası.
+Bunu istemiyoruz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or_404`. Eğer verilen `pk` ile bir `Post` bulunamazsa, çok daha güzel bir sayfa gösterilecek (`Sayfa bulunamadı 404` sayfası.
 
 ![Page not found (Sayfa bulunamadı)](images/404_2.png)
 
@@ -108,9 +106,9 @@ Bunu istemiyoruz! Ama tabi Django'da bunu ele alan bir şey var: `get_object_or4
 
 Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
 
-`blog/urls.py` içinde `views.post_detail` denilen bir görünüm ifade eden `post_detail` adında bir URL kuralı oluşturduk. Bunun anlamı Django `blog/views.py` içindeki `post_detail` adlı bir görünüm fonksiyonunu bekliyor demektir.
+`blog/urls.py` içinde `views.post_detail` denilen bir görünüm ifade eden `post_detail` adında bir URL kuralı oluşturduk. Bu, Django'nun ` blog/views.py </ 0> içinde <code> post_detail </ 0> adlı bir görünüm fonksiyonu bekleyeceği anlamına gelir.</p>
 
-`blog/views.py` 'i açmalıyız ve diğer `from` satırının yanına şu kodları eklemeliyiz:
+<p><code>blog/views.py` 'i açmalıyız ve diğer `from` satırının yanına şu kodları eklemeliyiz:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -118,7 +116,7 @@ Tamam, `views.py` dosyamıza bir *view* ekleme zamanı!
 from django.shortcuts import render, get_object_or_404
 ```
 
-Ve dosyanın sonuna kendi *görünüm*'ümüzü ekliyeceğiz:
+Ve dosyanın sonuna kendi *view*'ımızı ekleyeceğiz:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,9 +136,9 @@ Evet. http://127.0.0.1:8000/ sayfasını tazeleme zamanı
 
 Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bir template eklememiz gerekiyor!
 
-## Gönderi detayları için bir şablon oluştur
+## Post(gönderi) detayları için bir template(şablon) oluştur
 
-`blog/templates/blog` dizininde `post_detail.html` adında bir dosya oluşturacağız.
+`blog/templates/blog` dizininde `post_detail.html` adında bir dosya oluşturalım ve kod düzenleyicisinde açalım.
 
 Şöyle görünmeli:
 
@@ -162,7 +160,7 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 {% endblock %}
 ```
 
-Bir kere daha `base.html` dosyasıa ekleme yapacağız. `content` blogunda bir gönderinin varsa yayınlama tarihini, başlığını ve metnini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
+Bir kere daha `base.html` dosyasıa ekleme yapacağız. `content` blogunda bir gönderinin varsa published_date, title ve text'ini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
 
 {% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir şablon etiketidir. ( `if ... else ..` ifadelerini **Python'a Giriş** bölümünden hatırladın mı?) Bu durumda eğer gönderinin `published_date` kısmı boş değilse kontrol etmek isteriz.{% endraw %}
 
@@ -211,6 +209,6 @@ Daha önceden çalıştırdığın virtualenv'in hala etkin değilse tekrar akti
 
 `manage.py collectstatic` komutu biraz `manage.py migrate` komutu gibidir. Kodumuzda bazı değişiklikler yapıp Django'ya bu değişiklikleri sunucunun statik dosyalar yığınına ya da veritabanına uygulamasını söyledik.
 
-Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın.
+Her durumda, artık ["Web" sayfasına](https://www.pythonanywhere.com/web_app_setup/) (konsolun sağ üstündeki menü düğmesinden) atlamaya ve **Yeniden Yükle** seçeneğine tıklamaya hazırız ve sonucu görmek için https://adınız.pythonanywhere.com sayfasına bakın.
 
 İşte bu kadar! Tebrikler :)
