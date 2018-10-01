@@ -1,6 +1,6 @@
 # 템플릿의 동적 데이터
 
-블로그 글이 각각 다른 장소에 조각조각 나눠져있어요. `Post` 모델은 `post_list`파일에 정의되어 있고, `post_list` 모델은 `views.py` 파일에 정의되어 있습니다. 템플릿도 추가해야해요. 하지만 실제로 HTML 템플릿에서 글들이 어떻게 보여질까요? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+블로그 글은 각각 다른 장소에 조각조각 나눠져있어요. `Post`모델은 `models.py`파일에, `post_list`모델은 `views.py`파일에 있어요. 그리고 앞으로 템플릿도 추가해야 합니다. 하지만 실제로 HTML 템플릿에서 글들이 어떻게 보여질까요? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
 
 여기서 *views*가 모델과 템플릿을 연결하는 역할을 한다는 것을 알 수 있어요. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. 그래서 기본적으로 *view*에서는 템플릿에서 무엇을 보여줄 지 (모델)을 선택해야죠.
 
