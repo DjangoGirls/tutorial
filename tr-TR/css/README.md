@@ -1,4 +1,4 @@
-# CSS – sayfanı güzelleştir!
+# CSS - sayfanı güzelleştir!
 
 Blogumuz hala epey çirkin gözüküyor, değil mi? Güzelleştirme zamanı! Bunun için CSS kullanacağız.
 
@@ -28,11 +28,11 @@ Bu satırlar projeye yeni dosya eklemez. Ancak İnternet'te var olan dosyalara i
 
 ![Şekil 14.1](images/bootstrap1.png)
 
-Şimdiden daha güzel gözüküyor!
+Şimdiden daha güzel görünüyor!
 
 ## Django'da statik dosyalar
 
-Son olarak **statik dosyalar** diye bahsettiğimiz şeylere daha yakından bakalım. Statik dosyalar, tüm CSS dosyaları ve resimlerindir. İçerikleri istek bağlamından (request context) bağımsızdır ve her kullanıcı için aynıdır.
+Son olarak **statik dosyalar** dediğimiz şeylere daha yakından bakalım. Statik dosyalar, tüm CSS dosyaları ve resimlerindir. İçerikleri istek bağlamından (request context) bağımsızdır ve her kullanıcı için aynıdır.
 
 ### Django'da statik dosyaları nereye koymalı
 
@@ -65,7 +65,7 @@ Django otomatik olarak uygulama klasörlerinizdeki "static" adlı klasörleri bu
 
 Burada CSS'yi özelleştirme ve öğrenmeyle ilgili çok derinlemesine gidemeyeceğiz. Daha fazla bilgi edinmek isterseniz, bu sayfanın sonunda ücretsiz CSS kursu için bir tavsiye var.
 
-Ama, biraz da yapalım. Acaba başlığımızın rengini mi değiştirsek? Bilgisayarlar renkleri anlamak için özel kodlar kullanır. Bu kodlar `#` ile başlar ve 6 harf(A-F) ve sayıyla(0-9) devam eder. Örneğin, mavinin renk kodu `#0000FF` dur. Birçok renk için renk kodlarını buradan bulabilirsiniz: http://www.colorpicker.com/. Ayrıca [tanımlı renkler](http://www.w3schools.com/colors/colors_names.asp)i de kullanabilirsin, `red` (kırmızı) ve `green` (yeşil) gibi.
+Ama, biraz da yapalım. Acaba başlığımızın rengini mi değiştirsek? Bilgisayarlar renkleri anlamak için özel kodlar kullanır. Bu kodlar `#` ile başlar ve 6 harf(A-F) ve sayıyla(0-9) devam eder. Örneğin, mavinin renk kodu `#0000FF` dur. Birçok renk için renk kodlarını buradan bulabilirsiniz: http://www.colorpicker.com/. Ayrıca [tanımlı renkler](http://www.w3schools.com/colors/colors_names.asp)i de kullanabilirsiniz, `red` (kırmızı) ve `green` (yeşil) gibi.
 
 `blog/static/css/blog.css` dosyanıza şu kodu eklemelisiniz:
 
