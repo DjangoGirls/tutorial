@@ -47,7 +47,7 @@ Git va surveiller les modifications faites à tous les fichiers et dossiers pré
 
 Enregistrez ce fichier sous le nom `.gitignore` dans votre répertoire principal "djangogirls".
 
-> **Attention** : le point au début du nom du fichier est important ! Si vous avez des difficultés à le faire (les Macs n'aiment pas que vous créiez des fichiers commençant par un point dans le Finder, par exemple), utilisez la fonction "Enregistrer sous" dans votre éditeur; ça marche toujours.
+> **Attention** : le point au début du nom du fichier est important ! Si vous avez des difficultés à le faire (les Macs n'aiment pas que vous créiez des fichiers commençant par un point dans le Finder, par exemple), utilisez la fonction "Enregistrer sous" dans votre éditeur; ça marche toujours. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
 > 
 > **Remarque** un de fichiers que vous avez spécifié dans votre fichier `.gitignore` est `db.sqlite3`. Ce fichier est votre base de données locale, où tous vos articles sont stockés. Nous ne souhaitons pas l'ajouter à votre dépôt car votre site sur PythonAnywhere utilisera une base de données différente. Cette base de données pourrait être de type SQLite, comme sur votre version de développement, mais on utiliserait plutôt une BDD de type MySQL qui peut gérer un plus grand nombre de visiteurs que SQLite. Dans tous les cas, parce que vous votre base de données SQLite est ignorée pour l'archivage sur GitHub, tous les messages que vous avez créé jusqu'à maintenant ne seront accessibles que localement, et vous devrez les ajouter de nouveau en production. Vous devriez penser à votre base de données locale comme un terrain de jeux où vous pouvez tester différentes choses et ne pas avoir peur de supprimer vos messages réels sur votre blog.
 
@@ -109,12 +109,10 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-Entrez votre nom d'utilisateur et mot de passe Github. Vous devriez voir quelque chose comme cela :
+When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
 
 {% filename %}command-line{% endfilename %}
 
-    Username for 'https://github.com': ola
-    Password for 'https://ola@github.com':
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
