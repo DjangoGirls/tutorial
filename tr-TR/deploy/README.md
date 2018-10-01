@@ -90,11 +90,11 @@ Ve son olarak değişikliklerimizi kaydediyoruz. Komut satırına gidin ve aşa�
 
 Şimdi [Github.com](https://www.github.com) adresine gidip bir Github hesabı açmalıyız. (Eğer daha önceden hesap açtıysanız süper!)
 
-Sıra depomuzu oluşturmaya geldi. 'New Repository' tuşuna tıklayıp "my-first-blog" adında bir Github deposu oluşturalım. "initialize with a README" ve ".gitignore" kutularının seçili olmadığından emin olalım (zaten .gitignore dosyamızı kendimiz oluşturmuştuk). Son olarak License seçeneğinde 'None'yi seçelim.
+Sıra depomuzu oluşturmaya geldi. 'New Repository' tuşuna tıklayıp "my-first-blog" adında bir Github deposu oluşturalım. "initialize with a README" ve ".gitignore" kutularının seçili olmadığından emin olalım (zaten .gitignore dosyamızı kendimiz oluşturmuştuk). Son olarak License seçeneğinde 'None' ı seçelim.
 
 ![](images/new_github_repo.png)
 
-> **Not** `my-first-blog` ismi önemli -- başka birşey de seçebilirsiniz, ama aşağıdaki yönergelerde çok geçiyor, her seferinde değiştirmeniz gerekir. En kolayı `my-first-blog` ismi ile devam etmek.
+> **Not** `my-first-blog` ismi önemli -- başka bir şey de seçebilirsiniz, ama aşağıdaki yönergelerde çok geçiyor, her seferinde değiştirmeniz gerekir. En kolayı `my-first-blog` ismi ile devam etmek.
 
 Bir sonraki ekranda, reponuzun klonlama URL'ini goreceksiniz, bu URL takip eden bir kac komutta kullanacagiz:
 
@@ -127,7 +127,7 @@ Github kullanıcı adı ve şifrenizi girin, ardından aşağıdakine benzer bir
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Kodunuz artık Github'da. Hemen gidip bak! İyi bir çevrede olduğunu göreceksiniz - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), ve daha birçok harika açık kaynak yazılım projesi de kodlarını Github'da tutuyor. :)
+Kodunuz artık Github'da. Hemen gidip bakın! İyi bir çevrede olduğunu göreceksiniz - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), ve daha birçok harika açık kaynak yazılım projesi de kodlarını Github'da tutuyor. :)
 
 # Blogumuzun PythonAnywhere üzerinde kurulumu
 
@@ -152,7 +152,7 @@ PythonAnywhere'de bir web yazılımı konuşlandırmak için kodun GitHub'dan ç
     $ pip3.6 install --user pythonanywhere
     
 
-Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere` den başlayıp, sonunda `Successfully installed (...) pythonanywhere- (...)` gibi bir şey der.
 
 Şimdi, programımızı otomatik olarak yapılandırmak için bu komutu calıştıralım. Aşağıdakileri PythonAnywhere konsoluna yazın (`<your-github-username>` yerine kendi Github kullanıcı adınızı yazmayı unutmayın):
 
@@ -170,7 +170,7 @@ Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 - Sabit dosyaların (bunları daha sonra öğreneceğiz) oluşturuluyor
 - Ve web uygulamanızın API sinin PythonAnywhere tarafından sunulması için ayarlar yapılıyor
 
-Bu adımlar PythonAnywhere'de otomatikleştirilmiştir, fakat farklı herhangi bir sunucu sağlayacısıyla da aynı adımlar yapılmalıdır. Anlaşılması önemli olan nokta şu ki PythonAnywhere üzerinde yaratılan veritabanı ile kendi bilgisayarımızda yarattığımız veritabanı birbirinden tamamen ayrı -- dolayısı ile bu iki veritabanında saklanmış olan postlar ve kullanıcılar da farklı olabilir.
+Bu adımlar PythonAnywhere'de otomatikleştirilmiştir, ancak farklı sunucu sağlayıcıları ile yapılacak olan adımlarla aynıdır. Anlaşılması önemli olan nokta şu ki PythonAnywhere üzerinde yaratılan veritabanı ile kendi bilgisayarımızda yarattığımız veritabanı birbirinden tamamen ayrı -- dolayısı ile bu iki veritabanında saklanmış olan postlar ve kullanıcılar da farklı olabilir.
 
 Bu nedenle, aynen kendi bilgisayarımızda yapmış olduğumuz gibi, `createsuperuser` ile bir admin kullacısını oluşturmamız gerekiyor. PythonAnywhere otomatik olarak virtualenv i başlatmış olduğu için, bu kullanıcıyı hemen oluşturabiliriz:
 
