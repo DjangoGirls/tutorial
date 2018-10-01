@@ -11,7 +11,7 @@ Cloud IDE, size İnternette yazılım yükleyebileceğiniz, yazabileceğiniz ve 
 3. *New Server*'a tiklayalim
 4. Pencerenin sol tarafındaki Terminal butonuna tıklayalım
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Şimdi arayüzün sol tarafında bir takım buttonları görmeniz gerekiyor. "Terminal" buttonuna tıklayıp aşağıdaki komut satırını gösteren bir ekran açın:
 
 {% filename %}Terminal{% endfilename %}
 
