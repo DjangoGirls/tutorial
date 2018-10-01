@@ -47,7 +47,7 @@ Git memorizzerà le modifiche a tutti i file e le cartelle in questa directory, 
 
 E salvalo come `.gitignore` all'interno della cartella "djangogirls".
 
-> **Nota** Il punto all'inizio del nome del file è importante! Se hai difficoltá a crearlo (per esempio, Mac non piacere creare file che iniziano con un punto attraverso il Finder), usa la funzione "salva con nome" nell'editor, é a prova di proiettile.
+> **Nota** Il punto all'inizio del nome del file è importante! Se hai difficoltá a crearlo (per esempio, Mac non piacere creare file che iniziano con un punto attraverso il Finder), usa la funzione "salva con nome" nell'editor, é a prova di proiettile. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
 > 
 > **Nota** Uno dei file che hai specificato nel tuo`.ginignore`il file é`db.sqlite3`. Quel file é il tuo database locale, in cui sono archiviate tutte le tue pubblicazioni. Non vogliamo aggiungere questo al tuo repository perché il tuo sitio web in PythonAnywhere utilizzerá un database diverso. Quel database potrebbe essere SQLite, come la tua macchina di sviluppo, ma generalmente usa una chiamata MySQL che puó gestire molti piú visitatori del sitio di SQLite. Ad ogni modo, ignorando il tuo database SQLite per la copia di GitHub, significa che tutte le pubblicazioni che hai creato fino ad ora rimarranno e saranno disponibili solo localmente, ma dovrai aggiungerle nuovamente in produzione. Dovresti pensare al database locale come un parco giochi dove si possono provare cose diverse e senza avere paura di eliminare i tuoi messaggi reali dal tuo blog.
 
@@ -109,12 +109,10 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-Enter your GitHub username and password and you should see something like this:
+When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
 
 {% filename %}command-line{% endfilename %}
 
-    Username for 'https://github.com': ola
-    Password for 'https://ola@github.com':
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
