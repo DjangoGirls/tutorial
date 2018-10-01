@@ -110,12 +110,10 @@ $ git remote add origin https://github.com/<your-github-username>/my-first-blog.
 $ git push -u origin master
 ```
 
-Enter your GitHub username and password and you should see something like this:
+When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
 
 {% filename %}command-line{% endfilename %}
 ```
-Username for 'https://github.com': ola
-Password for 'https://ola@github.com':
 Counting objects: 6, done.
 Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
 Total 3 (delta 0), reused 0 (delta 0)
