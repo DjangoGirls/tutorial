@@ -6,7 +6,7 @@ PythonAnywhere'de bir "Beginner" hesabı için açın (ücretsiz seviye yeterli,
 
 ![Ücretsiz 'Beginner' hesabı oluşturmak için PythonAnywhere kayıt sayfası düğmesi](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Not** Burada kullanıcı adınızı seçerken, blogunuzun URL'sinin `yourusername.pythonanywhere.com`, şeklini alacağını unutmayın, bu nedenle blogunuzun neyle ilgili olduğu için kendi takma adınızı veya bir adınızı seçin.
+> **Not** Burada kullanıcı adınızı seçerken, blogunuzun URL'sinin `yourusername.pythonanywhere.com`, şeklini alacağını unutmayın, bu nedenle ya blogunuzun neyle ilgili ise ona uygun isim veya kendi isminizi kullanabilirsiniz.
 
 ## PythonAnywhere API token oluşturma
 
