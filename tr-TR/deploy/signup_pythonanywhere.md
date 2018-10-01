@@ -4,7 +4,7 @@ PythonAnywhere'de bir "Beginner" hesabı için açın (ücretsiz seviye yeterli,
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![Ücretsiz 'Beginner' hesabı oluşturmak için PythonAnywhere kayıt sayfası düğmesi](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Not** Burada kullanıcı adınızı seçerken, blogunuzun URL'sinin `yourusername.pythonanywhere.com`, şeklini alacağını unutmayın, bu nedenle blogunuzun neyle ilgili olduğu için kendi takma adınızı veya bir adınızı seçin.
 
