@@ -1,15 +1,15 @@
 PythonAnywhere is a service for running Python code on servers "in the cloud". We'll use it for hosting our site, live and on the Internet.
 
-Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+Créez un compte "Débutant" sur PythonAnywhere (la partie gratuite est suffisante, pas besoin de carte de crédit).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![La page de login de PythonAnywhere contenant un bouton pour créer le compte gratuit pour 'Débutant'](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Note** Lorsque vous choisissez votre nom d'utilisateur, gardez à l'esprit que l'URL de votre blog prendra la forme `nomutilisateur.pythonanywhere.com`, alors choisissez un pseudonyme ou un nom pour votre blog.
 
-## Création d’un jeton de l’API PythonAnywhere
+## Création d’un jeton API pour PythonAnywhere
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page, then select the tab named "API token", and hit the button that says "Create new API token".
+Vous ne devez effectuer cette action qu'une seule fois. Lorsque vous vous serez enregistré-e sur PythonAnywhere, vous serez redirigé-e vers le tableau de bord. Trouvez le lien "Mon compte" en haut à droite de la page, puis sélectionnez l'onglet nommé "Jeton API" et appuyez sur le bouton "Créez un nouveau jeton API".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![L'onglet Jeton API sur la page "Mon compte"](../deploy/images/pythonanywhere_create_api_token.png)
