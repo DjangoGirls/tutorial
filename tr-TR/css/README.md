@@ -268,7 +268,7 @@ Sonra, blog gönderilerini gösteren HTML kodunu, class bildirimleri içine alı
 {% endfor %}
 ```
 
-bununla değiştirelim:
+`blog/templates/blog/post_list.html` i bununla değiştirelim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -296,8 +296,8 @@ Bu dosyaları kaydedin ve web sayfanızı yenileyin.
 
 Yaşasın! Harika görünüyor değil mi? Şimdi yapıştırdığımız koda bakıp CSS tarafından kullanılan ve HTML eklenmiş olan nesneleri bulalım. Tarihi turkuaz rengine çevirmek için nereyi değiştirmen gerekir?
 
-CSS ile biraz oynamaktan çekinme ve birkaç şeyi değiştirmeye calış. CSS ile oynamak neyin neyi etkilediğini anlamak için çok faydalı. Bir şeyleri bozarsan dert etme, her zaman geri alabilirsin!
+CSS ile biraz oynamaktan çekinme ve birkaç şeyi değiştirmeye calış. CSS ile oynamak neyin neyi etkilediğini anlamak için çok faydalı. Bir şey bozarsanız, merak etmeyin- her zaman geri alabilirsiniz!
 
-Ücretsiz [Codeacademy HTML & CSS kursu](https://www.codecademy.com/tracks/web)nu izlemeni gerçekten öneririz. Web sitelerini CSS'le güzelleştirmeyi iyice öğrenmene yardımcı olabilir.
+Ücretsiz [Codeacademy HTML & CSS kursu](https://www.codecademy.com/tracks/web)nu izlemenizi gerçekten öneririz. Web sitelerini CSS'le güzelleştirmeyi iyice öğrenmenize yardımcı olabilir.
 
-Sonraki bölüm için hazır mısın?! :)
+Sonraki bölüm için hazır mısınız?! :)
