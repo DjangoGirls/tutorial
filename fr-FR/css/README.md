@@ -16,7 +16,7 @@ Il a été créé par d'anciens développeurs de Twitter. Il est maintenant dév
 
 ## Installer Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Pour installer Bootstrap, ouvrez votre fichier `.html` dans l'éditeur de code et ajoutez cela à la section `<head>` :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Cela n'ajoute pas de fichier à votre projet, mais crée seulement un lien vers des fichiers existant sur internet. Allez-y, ouvrez votre site web et rafraichissez la page. Et voilà !
 
 ![Figure 14.1](images/bootstrap1.png)
 
