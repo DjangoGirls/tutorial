@@ -1,24 +1,39 @@
-Chromebook kullanmıyorsanız, [bu bölümü atlayabilirsiniz](http://django-blog-tutorial.kadinyazilimci.com/en/installation/#install-python). Chromebook kullanıyorsanız kurulum deneyiminiz biraz farklı olacaktır. Diğer yükleme yönergelerini göz ardı edebilirsiniz.
+Chromebook kullanmıyorsanız, [bu bölümü atlayabilirsiniz](http://tutorial.djangogirls.org/en/installation/#install-python). Chromebook kullanıyorsanız kurulum deneyiminiz biraz farklı olacaktır. Diğer yükleme yönergelerini göz ardı edebilirsiniz.
 
-### Cloud 9
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud 9, size İnternette yazılımı yükleyebileceğiniz, yazabileceğiniz ve çalıştırabileceğiniz bir kod düzenleyicisi ve çalışan bir bilgisayara erişim sağlayan bir araçtır. Eğitim boyunca, Cloud 9 sizin *yerel makinanız* olma görevini alacaktır. OS X, Ubuntu veya Windows'daki sınıf arkadaşlarınız gibi terminal arayüzünde komut çalıştırmaya devam edeceksiniz, ancak terminaliniz Cloud 9'un sizin yerinize kuracağı başka bir bilgisayara bağlanacaktır.
+Cloud IDE, size İnternette yazılım yükleyebileceğiniz, yazabileceğiniz ve çalıştırabileceğiniz bir kod düzenleyicisi ve çalışan bir bilgisayara erişim sağlayan bir araçtır. Eğitim boyunca, Cloud IDE sizin *yerel makinanız* gibi davranacak. OS X, Ubuntu veya Windows'daki sınıf arkadaşlarınız gibi terminal arayüzünde komut çalıştırmaya devam edeceksiniz, ancak terminaliniz Cloud IDE'nin sizin yerinize kuracağı başka bir bilgisayara bağlanacaktır. Cloud IDE'ler (PaizaCloud bulut IDE, AWS Cloud9) için talimatlar burada. Cloud IDE'lerden birini seçin ve o IDE'nin talimatlarini takip edin.
 
-1. Cloud 9'u [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp) üzerinden yükleyin
-2. [C9.io](https://c9.io) adresine gidin
-3. Kaydolun
-4. *Yeni çalışma alanı oluştur* ' u tıklayın
-5. *django-girls* olarak isimlendirin
-6. *Boş*'u seçin (en altta sağdan ikinci turuncu logolu olan)
+#### PaizaCloud Cloud IDE
+
+1. [PaizaCloud Cloud IDE](https://paiza.cloud/)'ye gidin
+2. Bir hesap oluşturun
+3. *New Server*'a tiklayalim
+4. Pencerenin sol tarafındaki Terminal butonuna tıklayalım
+
+Şimdi arayüzün sol tarafında bir takım buttonları görmeniz gerekiyor. "Terminal" buttonuna tıklayıp aşağıdaki komut satırını gösteren bir ekran açın:
+
+{% filename %}Terminal{% endfilename %}
+
+    $
+    
+
+Terminal Cloud 9 in hazırladığı komutları gösterecek. Ekranın boyunu değiştirebilir veya maxize edebilirsiniz.
+
+#### AWS Cloud9
+
+1. [AWS Cloud9](https://aws.amazon.com/cloud9/)'a gidin
+2. Bir hesap oluşturun
+3. *Create Environment* a tıklayın
 
 Şimdi bir kenar çubuğu, bazı metinlerin olduğu büyük bir ana pencere ve en altta da buna benzer küçük penceresi olan bir arayüz görmelisiniz:
 
-{% filename %}Cloud 9{% endfilename %}
+{% filename %}bash{% endfilename %}
 
-    isminiz:~/calismaalani $
+    yourusername:~/workspace $
     
 
-Bu alt alan * terminalinizdir </ 0>, Cloud 9'un sizin için hazırladığı talimatlarınızı yazacağınız yer. Biraz daha büyük yapmak için bu pencereyi yeniden boyutlandırabilirsiniz</p> 
+Bu alt alan * terminalinizdir </ 0>, Cloud 9'un sizin için hazırladığı talimatlarınızı yazacağınız yer. Biraz daha büyük yapmak için bu pencereyi yeniden boyutlandırabilirsiniz.</p> 
 
 ### Sanal ortam (Virtual environment)
 
@@ -34,15 +49,15 @@ Cloud 9 arayüzünün altındaki terminalinizde şunu çalıştırın:
 
 Eğer hala çalışmıyorsa eğitmeninizden yardım isteyin.
 
-Sonra, çalıştır:
+Sonra, bunu çalıştırın:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    mkdir djangogirls 
-    cd djangogirls 
-    python3.6 -mvenv myvenv 
-    source myvenv/bin/activate 
-    pip install django~=1.11.0
+    mkdir djangogirls
+    cd djangogirls
+    python3.6 -mvenv myvenv
+    source myvenv/bin/activate
+    pip install django~={{ book.django_version }}
     
 
 (son satırda bir tilde ve eşitlik işareti kullandığımıza dikkat edin: ~=).
@@ -57,4 +72,4 @@ Django Girls eğitimi, yeni web uygulamanızı güçlendiren ve onu herkesin gö
 
 Kılavuzu Chromebook üzerinden kullanırken bu bölüm biraz garip oluyor; zaten internet üzerindeki bir bilgisayar kullanılıyor (laptop dışında). Bununla birlikte, Cloud 9'u çalışma alanımız veya "devam etmekte" olan işlerimizin bulunduğu bir yer olarak, Python Anywhere'i de işlerimizi daha eksiksiz hale getirdiğimizde gösterebileceğimiz bir yer olarak düşündüğümüzde hala kullanışlıdır.
 
-Bu nedenle, yeni bir Python Anywhere hesabı açmak için [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Bu nedenle, [www.pythonanywhere.com](https://www.pythonanywhere.com) adresinden yeni bir Python Anywhere hesabı açın.

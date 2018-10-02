@@ -2,7 +2,7 @@
 
 Django'nun size sunduğu başka bir güzellik de **template genişletmek**tir. O da ne demek? Şu demek, HTML dosyanızın bazı bölümlerini birden fazla sayfanızda kullanabilirsiniz.
 
-Templatelar aynı bilgiyi ya da yerleştirmeyi (layout) birden fazla yerde kullanmak istediğinizde yardım ederler. Yaptığınızı her dosya için tekrar etmek zorunda kalmazsınız. Ve bir şey değiştimek isterseniz, tüm templatelarda değil sadece bir tanesinde değiştirirsiniz!
+Templatelar aynı bilgiyi ya da yerleştirmeyi (layout) birden fazla yerde kullanmak istediğinizde yardım ederler. Yaptığınızı her dosya için tekrar etmek zorunda kalmazsınız. Ve bir şey değiştirmek isterseniz, tüm templatelarda değil sadece bir tanesinde değiştirirsiniz!
 
 ## Bir Temel Template Oluştur
 
@@ -17,7 +17,7 @@ Temel template web sitenizin bütün sayfalarında genişletebileceğiniz en tem
                 post_list.html
     
 
-Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gibi bu `base.html`'ye kopyalayalım:
+Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gibi `base.html`'ye kopyalayalım:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -75,7 +75,7 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
 </body>
 ```
 
-{% raw %}Her şeyin bununla değiştirildiğini farkedebilirsiniz`{% for post in posts %}`dan`{% endfor %}`bununla:{% endraw %}
+{% raw %}Her şeyin bununla değiştirildiğini fark edebilirsiniz`{% for post in posts %}`dan`{% endfor %}`bununla:{% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Sonra, `base.html` dosyasındaki `<body>`'nizi (`<body>` ve `</body>` arasında 
 
 Ama neden? Bir `blok` oluşturdunuz! `{% block %}` içinde HTML ekleyecek alan yapmak için şablon etiketi kullandınız. HTML başka bir şablondan gelecek (`base.html`) bu şablonu genişletir. Bunun nasıl yapıldığını da hemen göstereceğiz.
 
-Şimdi `base.html`'i kaydedin ve `blog/templates/blog/post_list.html` dosyanızı tekrar açın. {% raw %} `{% for post in posts %}`'ın üzerindeki ve `{% endfor %}`'ın altındaki her şeyi kaldıracaksınız. İşiniz bittiğinde dosya şu şekilde görünecektir:{% endraw %}
+Şimdi `base.html`'i kaydedelim ve `blog/templates/blog/post_list.html` dosyamızı tekrar açalım. {% raw %} `{% for post in posts %}`'ın üzerindeki ve `{% endfor %}`'ın altındaki her şeyi kaldıracaksınız. İşiniz bittiğinde dosya şu şekilde görünecektir:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,7 +104,7 @@ Ama neden? Bir `blok` oluşturdunuz! `{% block %}` içinde HTML ekleyecek alan y
 
 Bunu, bütün içerik blokları için şablonumuzun bir parçası olarak kullanmak istiyoruz. Şimdi bu dosyaya blok etiketleri ekleme zamanı!
 
-{% raw %}Blok etiketinizin `base.html` dosyanızdaki etikete uymasını istiyorsunuz. Ayrıca içerik bloklarınına ait bütün koduda dahil etmek istiyorsun. Bunu yapmak için, herşeyi `{% block content %}`ve`{% endblock %}`'un arasına yerleştir. Şunun gibi:{% endraw %}
+{% raw %}Blok etiketinizin `base.html` dosyanızdaki etikete uymasını istiyorsunuz. Ayrıca içerik bloklarınına ait bütün kodu da dahil etmek istiyorsun. Bunu yapmak için, her şeyi `{% block content %}`ve`{% endblock %}`'un arasına yerleştir. Şunun gibi:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ Bunu, bütün içerik blokları için şablonumuzun bir parçası olarak kullanm
 {% endblock %}
 ```
 
-Geriye tek birşey kaldı. Bu iki şablonu birbirine bağlamamız gerekiyor. Genişleyen şablonlar tam da bununla ilgili! Bunu dosyanın başlangıcına genişleyebilir etiketler ekleyerek yapacağız. Bunun gibi:
+Geriye tek bir şey kaldı. Bu iki şablonu birbirine bağlamamız gerekiyor. Genişleyen şablonlar tam da bununla ilgili! Bunu dosyanın başlangıcına genişleyebilir etiketler ekleyerek yapacağız. Bunun gibi:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Geriye tek birşey kaldı. Bu iki şablonu birbirine bağlamamız gerekiyor. Gen
 {% endblock %}
 ```
 
-İşte bu! Sitenizin hala düzgün çalışıp çalışmadığını kontrol edin. :)
+İşte bu! Dosyayı kaydedip sitenizin hala düzgün çalışıp çalışmadığını kontrol edin. :)
 
 > Eğer `TemplateDoesNotExist` hatasını alıyorsanız, bunun anlamı `blog/base.html` dosyası yok ve konsolda `runserver`'ı çalıştırıyorsunuz demektir. Konsolda durdurmayı deneyin (Ctrl+C -Control ve C tuşlarına birlikte basarak) ve `python manage.py runserver` komutunu çalıştırarak yeniden başlatın.

@@ -4,7 +4,7 @@ Eğer tutorial'ı [Django Girls etkinliklerinden](https://djangogirls.org/events
 
 Çünkü burada anlatılanları tutorial boyunca zaten işliyoruz, bu kısım kurulum talimatlarının tek yerde toparlandığı ek bir sayfa sadece. Django Girls etkinliği, çalıştay boyunca tekrar kurulumla uğraşmamak adına her şeyi yüklediğimiz bir "Kurulum akşamı" içeriyor.
 
-Eğer bunu yararı bulduysanız, bu bölümü de takip edebilirsiniz. Ama eğer bilgisayarınıza birkaç şey yüklemeden önce bir şeyler öğrenmeye başlamak istiyorsanız, bu bölümü atlayın. Daha sonra kurulum kısmını size açıklayacağız. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+Eğer bunu yararlı bulduysanız, bu bölümü de takip edebilirsiniz. Ama bilgisayarınıza birkaç şey yüklemeden önce bir şeyler öğrenmeye başlamak istiyorsanız, bu bölümü atlayın. Daha sonra kurulum kısmını size açıklayacağız.
 
 İyi şanslar!
 
@@ -21,13 +21,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/python_installation/instructions.md" %}
 
-# Bir "virtualenv" kurun ve Django'yu yükleyin
-
-{% include "/django_installation/instructions.md" %}
-
 # Bir kod düzenleyicisi yükleyin
 
 {% include "/code_editor/instructions.md" %}
+
+# Bir "virtualenv" kurun ve Django'yu yükleyin
+
+{% include "/django_installation/instructions.md" %}
 
 # Git yükleyin
 
@@ -43,7 +43,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Okumaya başlayın
 
-Tebrikler, kurulumunuz tamamen bitti ve başlamaya hazırsınız! Eğer çalıştaydan önce hala biraz vaktiniz varsa, başlangıç bölümlerinden birkaç tanesini okumaya başlamanız faydalı olacaktır:
+Tebrikler, ayarlarınız tamam ve hazırsınız! Eğer atölyeden önce hala vaktiniz var ise, başlangıç bölümlerinden bazılarını okumanız yararlı olacaktır:
 
 * [İnternet nasıl çalışır](../how_the_internet_works/README.md)
 
@@ -55,4 +55,4 @@ Tebrikler, kurulumunuz tamamen bitti ve başlamaya hazırsınız! Eğer çalış
 
 # Çalışmanın tadına varın!
 
-İşe başladığınızda direk [Your first Django project!](../django_start_project/README.md) gidebilirsiniz çünkü çoktan önceki bölümlerde bu konuları çözdük.
+İşe başladığınızda doğrudan [Your first Django project!](../django_start_project/README.md) gidebilirsiniz çünkü çoktan önceki bölümlerde bu konuları çözdük.

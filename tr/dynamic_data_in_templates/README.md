@@ -2,11 +2,11 @@
 
 Birkaç parçayı yerine oturttuk: `Post` (gönderi) modelini `models.py`'de tanımladık, `views.py`'de `post_list` (gönderi listesi) var ve template ekledik. Ama gönderilerimizi HTML'de görünür kıldık mı? Çünkü yapmak istediğimiz şey bu -bazı içerikleri (veritabanında kayıtlı modeller) al ve şablonumuzda göster, değil mi?
 
-Bu tam olarak *view*'lerin yapmasını beklediğimiz şey: modelleri ve template'leri bağlamak. `post_list` *view* 'ımızda göstermek istediğimiz modelleri alıp şablona iletmemiz gerekecek. *view* ile şablon içinde neyin (hangi modelin) gösterileceğine karar veriyoruz.
+Bu tam olarak *view*'lerin yapmasını beklediğimiz şey: modelleri ve template'leri bağlamak. `post_list` *view* 'ımızda göstermek istediğimiz modelleri alıp template'e iletmemiz gerekecek. *view* ile template içinde neyin (hangi modelin) gösterileceğine karar veriyoruz.
 
 Tamam, peki nasıl yapacağız?
 
-`blog/views.py`'ı açacağız. Şu anda `post_list` *view*ü şöyle:
+`blog/views.py`'ı açacağız. Şu anda `post_list` *view*'ı şöyle:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -32,17 +32,17 @@ Sırada ne var? `Post` modelinden gerçek blog gönderilerini almak için `Query
 
 ## QuerySet (Sorgu Seti)
 
-QuerySets çalışma şeklinde bir fikir sahibi olmuşsunuzdur. [Django ORM (QuerySets) chapter](../django_orm/README.md) içinde bu konudan bahsetmiştik.
+QuerySet'in nasıl çalıştığı konusunda bir fikriniz oluşmuştur. [Django ORM (QuerySets) bölümü](../django_orm/README.md)nde konuşmuştuk.
 
 Şimdi yayınlanmış ve `published_date`'e (yayınlanma tarihine) göre sıralanmış bir gönderi listesi istiyoruz, değil mi? Bunu QuerySets bölümünde yapmıştık zaten!
 
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-Post.objects.filter(yayinlanma_tarihi__lte=timezone.now()).order_by('yayinlanma_tarihi')
+Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Şimdi `blog/views.py` dosyası içindeki bu kodu `def post_list(request)` fonksiyonu ekleyin ama öncelikle `from django.utils import timezone` eklemeyi unutmayın:
+Şimdi `blog/views.py` dosyasına `def post_list(request)` fonksiyonunu ekleyin ama öncelikle `from django.utils import timezone` eklemeyi unutmayın:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -78,4 +78,4 @@ def post_list(request):
 
 İşte bu kadar! Template'e geri gidip QuerySet'leri görünür hale getirme zamanı!
 
-Django'daki QuerySet'ler hakkında daha fazla bilgi sahibi olmak istiyor musunuz? Şuraya bakabilirsiniz: https://docs.djangoproject.com/en/1.11/ref/models/querysets/
+Django'daki QuerySet'ler hakkında daha fazla bilgi sahibi olmak istiyor musunuz? Şuraya bakabilirsiniz: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
