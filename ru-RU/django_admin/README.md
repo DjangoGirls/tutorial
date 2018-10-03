@@ -46,7 +46,7 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
 
 ![Django admin](images/django_admin3.png)
 
-Зайди в раздел Posts и немного поэкспериментируй с ним. Добавь пять или шесть постов. Не беспокойся о содержании - можешь просто скопировать текст из этого учебника чтобы сохранить время. :)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Убедитесь, чтобы хотя бы у двух-трёх постов (но не у всех) была дата публикации. Это может быть полезным в будущем.
 
