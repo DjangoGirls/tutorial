@@ -2,29 +2,29 @@ Możesz [pominąć tę sekcję](http://tutorial.djangogirls.org/en/installation/
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w Internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w Internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud IDE będzie działać jako *komputer lokalny*. Będziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windowsa, z tym że Twój terminal będzie podłączony do komputera, który ustawi dla Ciebie Cloud IDE. Oto instrukcje dotyczące róznych Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). Możesz wybrać jedną z poniższych cloud IDE i postepować zgodnie z instrukcją.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+1. Przejdź do [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Załóż konto
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+3. Kliknij przycisk *New Server*
+4. Kliknij przycisk "Terminal" (po lewej stronie okna)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Teraz powinieneś zobaczyć interfejs z bocznym paskiem i przyciski po lewej stronie. Kliknij przycisk "Terminal", aby otworzyć okno terminala ze znakiem zachęty takim jak ten:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Terminal przekaże Twoje komendy do komputera Cloud9, który jest przygotowany na Twoje instrukcje. Możesz manipulować rozmiarem okienka, tak by było nieco większe lub mniejsze. 
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+1. Przejdź do [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. Załóż konto
-3. Click *Create Environment*
+3. Kliknij *Create Environment*
 
 Teraz powinnaś zobaczyć interfejs z bocznym paskiem, duże główne okno z tekstem i małe okno na dole, które wygląda następująco:
 
