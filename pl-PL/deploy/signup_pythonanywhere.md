@@ -1,10 +1,10 @@
 PythonAnywhere jest platformą do uruchamiania kodu Pythona w chmurze. Będziemy go używać do hostowania naszej strony na żywo w Internecie.
 
-Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+Utwórz konto dla "Beginner" na PythonAnywhere ( darmowy poziom jest dobry, nie potrzebujesz do niego karty kredytowej).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![Strona rejestracji PythonAnywhere z przyciskiem, aby utworzyć bezpłatne konto "Beginner"](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > ** Uwaga ** Wybierając tutaj swoją nazwę użytkownika, należy pamiętać, że adres URL bloga będzie miał postać `yourusername.pythonanywhere.com`, więc wybierz swój własny nick lub nazwę tego, o czym będzie blog.
 
