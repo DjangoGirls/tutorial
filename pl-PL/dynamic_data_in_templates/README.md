@@ -6,7 +6,7 @@ Dokładnie do tego przydadzą nam się *widoki*: do połączenia modeli i szablo
 
 OK, więc jak to osiągniemy?
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+Musimy otworzyć nasz plik `blog/views.py` w naszym edytorze kodu. Jak dotąd *widok* `post_list` wygląda następująco:
 
 {% filename %}blog/views.py{% endfilename %}
 
