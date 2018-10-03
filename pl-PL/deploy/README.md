@@ -167,9 +167,9 @@ Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
 - Konfigurowanie plików statycznych (dowiemy się o nich później)
 - I konfigurowanie PythonAnywhere do obsługi aplikacji internetowej za pomocą interfejsu API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+W PythonAnywhere wszystkie te kroki są zautomatyzowane, ale są to te same kroki, które trzeba wykonać z dowolnym innym dostawcą serwera.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Najważniejszym w tej chwili jest to, aby zapamiętać, że baza danych w PythonAnywhere jest całkowicie oddzielona od bazy danych na Twoim komputerze, co oznacza, że może mieć inne posty i konta administracyjne. W rezultacie, tak jak zrobiłyśmy to wcześniej na własnym komputerze, musimy zainicjować konto administratora za pomocą `createsuperuser`. PythonAnywhere automatycznie aktywował dla Ciebie Twojego virtualenv, więc jedyne, co musisz zrobić, to uruchomić:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -189,7 +189,7 @@ Teraz, jeśli chcesz, możesz również rzucić okiem na swój kod w PythonAnywh
     templates  tests.py  urls.py  views.py
     
 
-Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudowanej przeglądarki plików w PythonAnywhere. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudowanej przeglądarki plików w PythonAnywhere. (Ze strony konsoli, możesz przejść do innych stron PythonAnywhere za pomocą przycisku menu w prawym górnym rogu. Po przejściu na jedną ze stron, w pobliżu góry zobaczysz linki do innych.)
 
 ## Jesteś na żywo!
 
@@ -213,7 +213,7 @@ I pamiętaj, Twój mentor jest tutaj, by Ci pomóc!
 
 # Sprawdź swoją stronę!
 
-Domyślna strona Twojej witryny powinna brzmieć "It worked!", tak jak na Twoim lokalnym komputerze. Spróbuj dodać `/admin/` na koniec swojego adresu URL - powinnaś się przenieść do panelu admina. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+Domyślna strona Twojej witryny powinna brzmieć "It worked!", tak jak na Twoim lokalnym komputerze. Spróbuj dodać `/admin/` na koniec swojego adresu URL - powinnaś się przenieść do panelu admina. Zaloguj się za pomocą nazwy użytkownika i hasła. Zobaczysz, że możesz dodać nowy Post na serwerze -- pamiętaj, posty z Twojej lokalnej, testowej bazy danych nie będą wysyłane na Twojego produkcyjnego bloga.
 
 Po utworzeniu kilku postów możesz wrócić do konfiguracji lokalnej (nie PythonAnywhere). Od teraz powinnaś pracować na swoim lokalnym komputerze, jeżeli będziesz chciała dokonać zmian na stronie. To częsty sposób pracy w rozwijaniu stron WWW - wprowadzaj zmiany lokalnie, wypychaj je na GitHuba i zaciągaj na swój internetowy serwer WWW. Pozwala to na pracę i eksperymentowanie bez obawy, że zepsujesz działającą stronę. Całkiem nieźle, co nie?
 
