@@ -46,7 +46,7 @@ Vráť sa do prehliadača. Prihlás sa zvolenými údajmi ako superuser, mala by
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can copy-paste some text from this tutorial to save time. :)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Uisti sa, že aspoň dva alebo tri posty (ale nie všetky) majú nastavený dátum publikovania. Bude to neskôr užitočné.
 
