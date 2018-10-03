@@ -46,7 +46,7 @@ Wróć do przeglądarki. Zaloguj się za pomocą danych logowania administratora
 
 ![Admin Django](images/django_admin3.png)
 
-Przejdź do Postów i poeksperymentuj chwilę. Dodaj pięć czy sześć artykułów. Nie martw się ich zawartością - możesz skopiować i wkleić chociażby trochę tekstu z tego tutoriala, by zaoszczędzić czas. :)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Upewnij się, że co najmniej dwa lub trzy posty (ale nie wszystkie) mają ustawioną datę publikacji. Będzie to pomocne później.
 
