@@ -46,7 +46,7 @@ Vuelve a tu navegador. Ingresa con las credenciales de super usuario que tu esco
 
 ![Administrador de Django](images/django_admin3.png)
 
-Ve a "Posts" y experimenta un poco. Añade cinco o seis publicaciones (Posts). No te preocupes mucho por el contenido - si no tienes mucha imaginación en este momento puedes copiar y pegar trozos de este tutorial. El caso es tener un poco de texto en el blog. :)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Asegúrate de que al menos dos o tres posts (pero no todos) tengan la fecha de publicación definida. Esto será muy poderoso después.
 
