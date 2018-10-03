@@ -322,7 +322,7 @@ Otwieramy plik `blog/urls.py` w edytorze kodu dodajemy wiersz:
 
 Wykorzystamy jeszcze raz szablon `blog/templates/blog/post_edit.html`, więc ostatnią rzeczą, której nam brakuje, jest *widok*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Otwórz `blog/views.py` w edytorze kodu i dodaj poniższy kod na samym końcu tego pliku:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -398,7 +398,7 @@ Ten `{% if %}` spowoduje, że link zostanie wysłany do przeglądarki tylko wted
 
 Pamiętasz ikonkę edycji, która przed chwilą dodałyśmy do naszej strony szczegółów? Chcemy też dodać tę samą zmianę tutaj tak, by inne osoby nie były w stanie edytować istniejących postów.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Otwórzmy `blog/templates/blog/post_detail.html` w edytorze kodu i dodaj poniższą linijkę:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -444,6 +444,6 @@ Dobrze byłoby wiedzieć, że nasza witryna nadal działa na PythonAnywhere, pra
 
 (Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
+* Nareszcie przeskakujemy do do ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (użyj przycisku menu w prawym górnym rogu konsoli) i naciśnij **Reaload**. Odśwież swoj blog https://yourname.pythonanywhere.com, aby zobaczyć zmiany.
 
 I to już wszystko! Gratulacje :)
