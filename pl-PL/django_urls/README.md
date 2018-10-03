@@ -49,7 +49,7 @@ Czas utworzyć nasz pierwszy adres URL! Chcemy, aby adres 'http://127.0.0.1:8000
 
 Zależy nam również, aby zachować porządek w pliku `mysite/urls.py`, dlatego zaimportujemy URL-e z naszej aplikacji `blog` do głównego pliku `mysite/urls.py`.
 
-Śmiało, dodaj linię, która spowoduje zaimportowanie `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+Śmiało, dodaj linię, która spowoduje zaimportowanie `blog.urls`. Będziesz musiała także zmienić pierwszy wiersz, ponieważ użyjemy tutaj funkcji `include`, którą musimy najpierw zaimportować.
 
 Twój plik `mysite/urls.py` powinien teraz wyglądać tak:
 
@@ -69,7 +69,7 @@ Django przekieruje wszystkie reguły z adresu 'http://127.0.0.1:8000/' do `blog.
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+Stwórz nowy pusty plik o nazwie `urls.py` w katalogu `blog` i otwórz go w Twoim edytorze. Dokładnie tak! Dodaj te pierwsze dwie linie:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -98,6 +98,6 @@ Jeśli teraz spróbujesz odwiedzić stronę http://127.0.0.1:8000/, zobaczysz ko
 
 ![Błąd](images/error1.png)
 
-Twoja konsola pokazuje błąd, ale nie martw się - w rzeczywistości jest to całkiem użyteczne: mówi Ci, że** brak atrybutu 'post_list'**. To jest nazwa widoku (*view*), którą Django próbuje znaleźć i użyć, ale jeszcze go nie utworzyłyśmy. Na tym etapie Twój `/admin/ ` również nie będzie działać. Nie martw się, zajmiemy się tym. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Twoja konsola pokazuje błąd, ale nie martw się - w rzeczywistości jest to całkiem użyteczne: mówi Ci, że** brak atrybutu 'post_list'**. To jest nazwa widoku (*view*), którą Django próbuje znaleźć i użyć, ale jeszcze go nie utworzyłyśmy. Na tym etapie Twój `/admin/ ` również nie będzie działać. Nie martw się, zajmiemy się tym. Jeżeli pojawiła Ci się jakaś inna wiadomość o innym błędzie, spróbuj zrestartować swój serwer. Aby to zrobić, przejdź do wiersza polecenia w którym uruchomiony jest serwer strony, zatrzymaj serwer wciskając Ctrl+C (klawisze Control i C równocześnie), a następnie uruchom go jeszcze raz poleceniem `python manage.py runserver`.
 
 > Jeśli chciałabyś dowiedzieć się więcej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: https://docs.djangoproject.com/en/2.0/topics/http/urls/
