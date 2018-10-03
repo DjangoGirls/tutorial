@@ -46,7 +46,7 @@ Volte ao seu navegador. Faça login com as credenciais de superusuário que voc�
 
 ![Django Admin](images/django_admin3.png)
 
-Abra a página de Posts e experimente um pouquinho. Adicione cinco ou seis posts do blog. Não se preocupe com o conteúdo - você pode copiar e colar textos do tutorial para poupar tempo. :)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Certifique-se de que pelo menos duas ou três postagens (mas não todas) têm a data de publicação definida. Isso será útil depois.
 
