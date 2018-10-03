@@ -8,7 +8,7 @@ Widoki (ang. views) są przechowywane w pliku `views.py`. Dodajmy *views* do nas
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+OK, otwórzmy ten plik w naszym edytorze i zobaczmy co siedzi w środku:
 
 {% filename %}blog/views.py{% endfilename %}
 
