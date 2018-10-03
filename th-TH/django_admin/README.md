@@ -46,7 +46,7 @@ admin.site.register(Post)
 > 
 > ![Django admin](images/django_admin3.png)
 > 
-> Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can copy-paste some text from this tutorial to save time. :)
+> Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 > 
 > ตรวจสอบให้แน่ใจว่า อย่างน้อยสองหรือสามโพสต์ (แต่ไม่ต้องทั้งหมด) มีการตั้งค่าวันที่เผยแพร่ เราจะใช้ประโยชน์จากส่วนนี้ในภายหลัง
 > 
