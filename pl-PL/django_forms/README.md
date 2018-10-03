@@ -44,7 +44,7 @@ Oto co za chwilę stworzymy: link do strony, adres URL, widok i szablon.
 
 ## Odnośnik do strony z formularzem
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+Czas otworzyć plik `blog/templates/blog/base.html` w edytoarze kodu. Dodajmy wiersz w `div` o nazwie `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -138,7 +138,7 @@ Aby stworzyć nowy formularz dla modelu `Post`, musimy wywołać funkcję `PostF
 
 ## Szablon
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Musimy utworzyć plik `post_edit.html` w katalogu `blog/templates/blog` i otowrzyć go w edytoarze kodu. Aby nasz formularz zadziałał, niezbędne jest kilka rzeczy:
 
 * Musimy wyświetlić formularz. Możemy to zrobić np. za pomocą polecenia {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Powyższa linijka musi znajdować się wewnątrz znacznika formularza HTML: &lt;`form method="POST">...</form>`.
@@ -175,7 +175,7 @@ Odpowiedź brzmi: nic. Mamy coś jeszcze do zrobienia w naszym *widoku*.
 
 ## Zapisujemy formularz
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Otwórz jeszcze raz plik `blog/views.py`. w edytorze kodu. W tym momencie wszystko, co mamy w widoku `post_new` to:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django dba o walidację pól w naszym formularzu, upewniając się, czy są uzup
 
 Teraz już wiemy, jak dodać nowy formularz. Ale co w przypadku, gdy zapragniemy zmienić już istniejący? Proces jest bardzo podobny do tego, który przeszłyśmy przed chwilą. Stwórzmy szybko kilka ważnych rzeczy. (jeżeli masz problem ze zrozumieniem czegoś, zapytaj osobę prowadzącą kurs lub przejrzyj poprzednie rozdziały, gdyż wszystkie kroki mamy już omówione.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Otwórz `blog/templates/blog/post_detail.html` w edytorze kodu i dodaj poniższą linijkę
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
