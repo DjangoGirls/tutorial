@@ -16,7 +16,7 @@ Został stworzony przez programistów, którzy pracowali dla Twittera. Obecnie j
 
 ## Zainstaluj Bootstrapa
 
-Aby zainstalować bibliotekę Bootstrap, musisz dodać poniższe linijki `<head>` w Twoim pliku `.html`:
+Aby zainstalować Bootstrap, otwórz plik `.html` w edytorze kodu i dodaj do sekcji `<head>`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
