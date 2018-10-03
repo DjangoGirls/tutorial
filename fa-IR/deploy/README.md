@@ -52,7 +52,7 @@ db.sqlite3
 <blockquote>
   <p><strong> توجه </ 0> نقطه در ابتدای نام فایل مهم است!  اگر مشکلی در ایجاد آن دارید (به عنوان مثال مکینتاش شما را دوست ندارد فایل هایی را ایجاد کنید که از طریق یاب شروع می شود)، سپس از ویژگی ذخیره در استفاده کنید در ویرایشگر خود. آن ضد گلوله است. And be sure not to add <code>.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
 > 
-> ** توجه </ 0> یکی از فایل هایی که در فایل `.ردکردن گیت </ 1> مشخص شده است <code> db.sqlite3 </ 1> است. این فایل پایگاه داده محلی شما است، که همه پست های شما ذخیره می شود. ما نمی خواهیم این را به مخزن خود اضافه کنیم؛ زیرا وب سایت شما در هرجا پایتون از یک پایگاه داده متفاوت استفاده می کند.  این پایگاه داده می تواند اسکیولایت مانند دستگاه توسعه خود باشد، اما معمولا شما از یک مای اسکیوال استفاده می کنید که می تواند با بازدیدکنندگان سایت بسیار بیشتر از اسکیولایت مقابله کند. در هر صورت، با نادیده گرفتن پایگاه داده اسکیولایت خود برای نسخه گیت هاب، این بدان معنی است که همه پستهایی که تا کنون ایجاد کرده اید، ماندگار میشوند و فقط در محلی در دسترس هستند، اما شما مجبورید آنها را دوباره در تولید اضافه کنید. شما باید از پایگاه داده محلی خود به عنوان یک زمین بازی خوب که در آن شما می توانید چیزهای مختلف را آزمایش کنید و نگران نباشید که شما قصد ارسال پست واقعی خود را از وبلاگ خود را دارید، فکر کنید.</p>
+> ** توجه </ 0> یکی از فایل هایی که در فایل `.ردکردن گیت </ 1> مشخص شده است <code> db.sqlite3 </ 1> است. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. شما باید از پایگاه داده محلی خود به عنوان یک زمین بازی خوب که در آن شما می توانید چیزهای مختلف را آزمایش کنید و نگران نباشید که شما قصد ارسال پست واقعی خود را از وبلاگ خود را دارید، فکر کنید.</p>
 </blockquote>
 
 <p>ایده خوبی است برای استفاده از دستور <code> وضعیت گیت </ 0> قبل از اینکه <code> گیت اضافه </ 0> یا هر زمان که خودتان مطمئن نیستید از چه چیزی تغییر کرده اید. این به جلوگیری از هر گونه شگفتی از اتفاق می افتد، مانند فایل های اشتباه اضافه شده یا مرتکب می شوند. دستور <code> وضعیت گیت </ 0> اطلاعاتی را در مورد هر گونه فایل های غیر قابل شناسایی / تغییر یافته / مرتب شده، وضعیت شاخه و موارد دیگر باز می گرداند. خروجی باید شبیه به موارد زیر باشد:</p>
@@ -171,9 +171,9 @@ nothing added to commit but untracked files present (use "git add" to track)
 > - Setting up your static files (we'll learn about these later)
 > - And configuring PythonAnywhere to serve your web app via its API
 > 
-> On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider. The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC—that means it can have different posts and admin accounts.
+> On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
 > 
-> As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+> The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
@@ -217,7 +217,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > 
 > # Check out your site!
 > 
-> The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server.
+> The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 > 
 > Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 > 
