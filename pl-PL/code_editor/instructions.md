@@ -16,7 +16,7 @@ Sublime Text jest bardzo popularnym edytorem z bezpłatnym okresem testowania i 
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom jest kolejnym popularnym edytorem. Jest darmowy, open-source'owy i dostępny dla systemów Windows, OS X i Linux.
 
 [Pobierz tutaj](https://atom.io/)
 
