@@ -101,7 +101,7 @@ Na następnym obrazku zostanie wyświetlony Twój URL do klonowania repozytorium
 
 Teraz musimy podpiąć repozytorium Git na komputerze do tego na GitHubie.
 
-Wpisz następujące polecenie do konsoli ( zamień <your-github-username> na swoją nazwę użytkownika, którą podałaś przy tworzeniu konta na GitHubie. Nie zapomnij o usunięciu nawiasów ("<" i ">"), ten URL powinien pasować do URL-a klonującego Twoje repozytorium. 
+Wpisz następujące polecenie do konsoli ( zamień <your-github-username> na swoją nazwę użytkownika, którą podałaś przy tworzeniu konta na GitHubie. Nie zapomnij o usunięciu nawiasów ("<" i ">"), ten URL powinien pasować do URL-a klonującego Twoje repozytorium.
 
 {% filename %}command-line{% endfilename %}
 
