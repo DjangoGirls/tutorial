@@ -18,7 +18,7 @@ Teraz powinieneś zobaczyć interfejs z bocznym paskiem i przyciski po lewej str
     $
     
 
-Terminal przekaże Twoje komendy do komputera Cloud9, który jest przygotowany na Twoje instrukcje. Możesz manipulować rozmiarem okienka, tak by było nieco większe lub mniejsze. 
+Terminal przekaże Twoje komendy do komputera Cloud9, który jest przygotowany na Twoje instrukcje. Możesz manipulować rozmiarem okienka, tak by było nieco większe lub mniejsze.
 
 #### AWS Cloud9
 
