@@ -12,7 +12,7 @@ Mamy już model `Post`, więc nie musimy już dodawać niczego do `models.py`.
 
 ## Tworzenie szablonu odnośnika do detali wpisu na blogu
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Zaczniemy od dodania linku wewnątrz pliku `blog/templates/blog/post_list.html`. Otwórz go w edytorze kodu. Do tej pory plik powinien wyglądać tak: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -54,7 +54,7 @@ Dodajmy adres URL w pliku `urls.py` dla naszego *widoku (ang.view)* `post_detail
 
 Chcemy, aby nasz wpis i wszystkie informacje o nim, były widoczne pod tym adresem **URL**: http://127.0.0.1:8000/post/1/
 
-W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
+W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Otwórz plik `blog/urls.py` w edytorze i dodaj wiersz: `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` tak, żeby otrzymać:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -108,7 +108,7 @@ OK, czas dodać nasz *widok* do naszego pliku `views.py`!
 
 W `blog/urls.py` stworzyłyśmy regułę URL, którą nazwałyśmy `post_detail` i która odnosi się do widoku `views.post_detail`. Oznacza to że Django będzie oczekiwało funkcji widoku o nazwie `post_detail` w pliku `blog/views.py`.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+Otwórzmy `blog/views.py` w edytorze kodu i dodajmy poniższy kod zaraz obok pozostałych wierszy `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
