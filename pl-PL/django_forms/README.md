@@ -312,7 +312,7 @@ dzięki czemu nasz szablon będzie wyglądał tak:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Otwieramy plik `blog/urls.py` w edytorze kodu dodajemy wiersz:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -376,7 +376,7 @@ Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokume
 
 Super, że możemy tworzyć posty klikając w link! Jest niestety jeden problem - aktualnie każdy, kto odwiedzi Twoją stronę, może stworzyć nowy post. Zróbmy tak, aby przycisk był widoczny tylko dla Ciebie i nikogo innego.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Otwórzmy `blog/templates/blog/base.html` w edytorze kodu i znajdźmy nasz `page-header` `div` i zalinkuj tag, który umieściliśmy tam wcześniej. Powinien wyglądać tak:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
