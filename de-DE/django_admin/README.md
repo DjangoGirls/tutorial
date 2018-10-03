@@ -46,7 +46,7 @@ Geh nochmal in deinen Browser und log dich mit den Daten des Superusers ein, den
 
 !["Django Admin"-Weboberfläche](images/django_admin3.png)
 
-Gehe zu Posts und experimentiere ein wenig damit. Füge 5 oder 6 Blogposts hinzu. Mach dir keine Sorgen wegen des Inhalts - du kannst etwas Text aus diesem Tutorial kopieren und einfügen, um Zeit zu sparen. :-)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Achte darauf, dass bei wenigstens zwei oder drei Posts (aber nicht bei allen) das Veröffentlichungsdatum (publish date) eingetragen ist. Das werden wir später noch brauchen.
 
