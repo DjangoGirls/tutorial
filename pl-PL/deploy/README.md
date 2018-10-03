@@ -101,7 +101,7 @@ Na następnym obrazku zostanie wyświetlony Twój URL do klonowania repozytorium
 
 Teraz musimy podpiąć repozytorium Git na komputerze do tego na GitHubie.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Wpisz następujące polecenie do konsoli ( zamień <your-github-username> na swoją nazwę użytkownika, którą podałaś przy tworzeniu konta na GitHubie. Nie zapomnij o usunięciu nawiasów ("<" i ">"), ten URL powinien pasować do URL-a klonującego Twoje repozytorium. 
 
 {% filename %}command-line{% endfilename %}
 
@@ -109,7 +109,7 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+Po wykonaniu komendy push na GitHuba zostaniesz zapytany o swoją nazwę użytkownika i hasło (albo bezpośrednio w wierszu poleceń w oknie terminala, albo w wyskakującym okienku). Po poprawnym wpisaniu użytkownika i hasła powinieneś zobaczyć coś takiego:
 
 {% filename %}command-line{% endfilename %}
 
@@ -151,7 +151,7 @@ Wdrożenie aplikacji internetowej w PythonAnywhere polega na ściągnięciu kodu
 
 To powinno wydrukować rzeczy takie jak `Collecting pythonanywhere`, a skończyć się na linii z napisem `Successfully installed (...) pythonanywhere- (...)`.
 
-Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHubem. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHubem. Wpisz następujące polecenie do konsoli w PythonAnywhere (nie zapomnij zamienić <your-github-username> na Twoją nazwę użytkownika GitHub, tak by Twój URL pasował do klonowanego URL'a z GitHub'a).
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
