@@ -14,7 +14,7 @@ Stwórzmy plik o takiej nazwie w katalogu `blog`.
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+Dobrze, a teraz otwórzmy edytor kodu i wprowadźmy następujący kod:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -89,7 +89,7 @@ Po zapisaniu i odświeżeniu strony http://127.0.0.1:8000 zobaczyłaś znajomo w
 
 ## Adres URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Otwieramy plik `blog/urls.py` w edytorze kodu dodajemy wiersz:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Po odświeżeniu strony zobaczymy błąd `AttributeError`, ponieważ nie mamy je
 
 ## Widok post_new
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Czas otworzyć plik `blog/views.py` w edytorze kodu i dodać poniższe linijki obok innych wierszy z `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
