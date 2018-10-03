@@ -49,7 +49,7 @@ Y guárdalo como `.gitignore` en la carpeta "djangogirls".
 
 > **Nota** ¡El punto al principio del nombre del archivo es importante! Si tienes problemas para crearlo (a los Mac no les gusta que crees ficheros con un punto al principio del nombre usando el Finder por ejemplo), entonces usa la opción "Save As" o "Guardar como" de tu editor, esto funcionará seguro. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
 > 
-> **Nota** Uno de los archivos especificados en tu `.gitignore` es `db.sqlite3`. Este archivo es tu base de datos local, donde se almacenan todas tus publicaciones. No queremos añadir esto al repositorio por que el sitio web en PythonAnywhere va a usar una base de datos distinta. Esa base de datos podría ser SQLite, como en tu maquina de desarrollo, pero normalmente usarás MySQL o PostgreSQL que pueden manejar muchos mas visitantes que SQLite. De cualquier forma, al haber ignorado tu base de datos SQLite en la copia de GitHub, todas las publicaciones que has creado hasta el momento solo van a estar disponibles localmente. Para que haya datos tendrás que añadir más publicaciones en producción. Tu base de datos local es un buen campo de pruebas donde puedes probar diferentes cosas sin miedo a estropear o borrar las publicaciones reales de tu blog.
+> **Nota** Uno de los archivos especificados en tu `.gitignore` es `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. Tu base de datos local es un buen campo de pruebas donde puedes probar diferentes cosas sin miedo a estropear o borrar las publicaciones reales de tu blog.
 
 Te recomendamos utilizar el comando `git status` antes de `git add` o en cualquier momento en que no sepas muy bien lo que ha cambiado. Esto te ayudará a evitar sorpresas, como subir cambios o archivos que no queríamos subir. El comando `git status` muestra información sobre cualquier archivo no seguido ("untracked"), modificado ("modified"), preparado ("staged"), el estado de la rama y muchas cosas más. La salida debería ser parecida a esto:
 
@@ -167,9 +167,9 @@ A medida que se ejecuta, podrás ver lo que hace:
 - Configura los archivos estáticos (static) (luego hablaremos de éstos con más detalle)
 - Y configura PythonAnywhere para publicar tu aplicación web a través de su API
 
-En PythonAnywhere todos estos pasos están automatizados, pero son los mismos pasos que tendrías que haber seguido en cualquier otro proveedor de servidores. Lo más importante es que la base de datos de PythonAnywhere es totalmente independiente de la base de datos de tu ordenador local. Eso significa que puede tener distintas publicaciones y cuentas de administración.
+On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
 
-Así que, igual que hicimos en tu ordenador local, tenemos que crear la cuenta de administrador con `createsuperuser`. PythonAnywhere ya ha activado automáticamente el virtualenv, así que solamente hay que ejecutar:
+The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Y recuerda, ¡tu mentor está aquí para ayudar!
 
 # ¡Comprueba tu página!
 
-La página por defecto debería decir "It worked!", tal como dice en tu ordenador local. Prueba a añadir `/admin/` al final de la URL y llegarás a la página de administración. Teclea tu usuario y contraseña y verás que puedes añadir nuevas publicaciones en el servidor.
+La página por defecto debería decir "It worked!", tal como dice en tu ordenador local. Prueba a añadir `/admin/` al final de la URL y llegarás a la página de administración. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 
 Después de crear algunas publicaciones, puedes volver a tu instalación local (no la de PythonAnywhere). A partir de ahora, trabaja en tu instalación local para hacer los siguientes cambios. Este es un flujo de trabajo típico en el desarrollo web – haz cambios localmente, sube (push) esos cambios a GitHub, y descarga (pull) tus cambios al servidor de publicación. Esto te permite trabajar y experimentar en local sin romper tu página publicada. Mola, ¿eh?
 
