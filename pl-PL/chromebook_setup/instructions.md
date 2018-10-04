@@ -2,7 +2,7 @@ Możesz [pominąć tę sekcję](http://tutorial.djangogirls.org/en/installation/
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w Internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud IDE będzie działać jako *komputer lokalny*. Będziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windowsa, z tym że Twój terminal będzie podłączony do komputera, który ustawi dla Ciebie Cloud IDE. Oto instrukcje dotyczące róznych Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). Możesz wybrać jedno z poniższych Cloud IDE i postepować zgodnie z instrukcją.
+Cloud IDE jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud IDE będzie działać jako *komputer lokalny*. Będziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windowsa, z tym że Twój terminal będzie podłączony do komputera, który ustawi dla Ciebie Cloud IDE. Oto instrukcje dotyczące róznych Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). Możesz wybrać jedno z poniższych Cloud IDE i postepować zgodnie z instrukcją.
 
 #### PaizaCloud Cloud IDE
 
@@ -11,7 +11,7 @@ Cloud IDE jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia 
 3. Kliknij przycisk *New Server*
 4. Kliknij przycisk "Terminal" (po lewej stronie okna)
 
-Teraz powinieneś zobaczyć interfejs z bocznym paskiem i przyciski po lewej stronie. Kliknij przycisk "Terminal", aby otworzyć okno terminala ze znakiem zachęty takim jak ten:
+Teraz powinnaś zobaczyć interfejs z bocznym paskiem i przyciski po lewej stronie. Kliknij przycisk "Terminal", aby otworzyć okno terminala ze znakiem zachęty takim jak ten:
 
 {% filename %}Terminal{% endfilename %}
 
