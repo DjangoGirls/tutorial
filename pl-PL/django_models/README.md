@@ -95,7 +95,7 @@ Zauważysz, że nowy katalog `blog` został utworzony i zawiera kilka plików. K
     └── requirements.txt
     
 
-Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Robimy to w pliku `mysite/settings.py` -- otwórz go w swoim edytorze kodu. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `]`. Czyli efekt końcowy powinien wyglądać tak:
+Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Robimy to w pliku `mysite/settings.py` - otwórz go w swoim edytorze kodu. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `]`. Czyli efekt końcowy powinien wyglądać tak:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
