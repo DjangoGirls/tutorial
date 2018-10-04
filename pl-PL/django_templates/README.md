@@ -97,7 +97,7 @@ Dobrze byłoby sprawdzić, czy twoja strona wciąż będzie działała w publicz
     [...]
     
 
-* Na koniec przeskocz do strony [Web](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**. (Aby dotrzeć do innych stron PythonAnywhere przez konsolę, użyj przycisku menu w prawym górnym rogu.) Twoja aktualizacja powinna być już pod adresem https://yourname.pythonanywhere.com -- sprawdź to w swojej przeglądarce! Jeśli posty na blogu w witrynie PythonAnywhere nie pasują do postów znajdujących się na blogu hostowane na lokalnym serwerze, jest to OK. Bazy danych na komputerze lokalnym i Python Anywhere nie synchronizują się z resztą plików.
+* Na koniec przeskocz do strony [Web](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**. (Aby dotrzeć do innych stron PythonAnywhere przez konsolę, użyj przycisku menu w prawym górnym rogu.) Twoja aktualizacja powinna być już pod adresem https://yourname.pythonanywhere.com - sprawdź to w swojej przeglądarce! Jeśli posty na blogu w witrynie PythonAnywhere nie pasują do postów znajdujących się na blogu hostowane na lokalnym serwerze, jest to OK. Bazy danych na komputerze lokalnym i Python Anywhere nie synchronizują się z resztą plików.
 
 Gratulacje! Teraz możesz dodać nowy wpis do swojego administratora Django (pamiętaj, aby dodać publish_date!). Upewnij się, że jesteś administratorem Django dla swojej strony pythonanywhere, https://yourname.pythonanywhere.com/admin. Następnie odśwież stronę, aby sprawdzić, czy pojawia się tam wiadomość.
 
