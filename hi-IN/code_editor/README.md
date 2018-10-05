@@ -1,6 +1,6 @@
 # कोड एडिटर
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> घर पर पाठकों के लिए: इस अध्याय अधिष्ठापन पायथन वर्ग में शामिल है
 
 आप कोड की पहली लाइन लिखने जा रहे है इसलिए अब आप को कोड एडिटर डाउनलोड कर लेना चाहिये।
 
