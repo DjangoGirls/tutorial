@@ -16,7 +16,7 @@ Sublime Text - это очень популярный текстовый ред�
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom - еще один популярный редактор. Он бесплатный, с открытым исходным кодом и доступен для Windows, OS X и Linux. Atom разработан [GitHub](https://github.com/).
 
 [Скачать его можно здесь](https://atom.io/)
 
