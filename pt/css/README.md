@@ -27,7 +27,7 @@ Para instalar o Bootstrap, você precisa adicionar o seguinte código no `<head>
 
 Isso não adiciona nenhum arquivo ao seu projeto, apenas aponta para arquivos que existem na Internet. Vá em frente, abra seu website e atualize a página. Aqui está!
 
-![Figura 14.1](images/bootstrap1.png)
+![Imagem do navegador com o título "Django Girls Blog" e dois "posts" simples ainda. Os títulos estão azuis.](images/bootstrap1.png)
 
 Já está mais bonita!
 
@@ -47,7 +47,7 @@ Fazemos isso criando uma pasta chamada `static` dentro da aplicação blog:
     │   ├── static
     │   └── templates
     └── mysite
-    
+
 
 O Django vai encontrar automaticamente quaisquer pastas chamadas "static" dentro de todas as pastas dos seus apps. Então ele será capaz de usar seu conteúdo como arquivos estáticos.
 
@@ -60,7 +60,7 @@ Vamos criar um arquivo CSS agora, para adicionar seu próprio estilo à sua pág
          └─── static
               └─── css
                    └─── blog.css
-    
+
 
 Hora de escrever um pouco de CSS! Abra o arquivo `blog/static/css/blog.css` no seu editor de código.
 
@@ -151,7 +151,7 @@ body {
 
 Adicione isto ao seu CSS, salve o arquivo e veja como funciona!
 
-![Figura 14.3](images/margin2.png)
+![Imagem do navegador com o título "Django Girls Blog" e dois "posts" simples ainda. Os títulos estão laranja.](images/margin2.png)
 
 E que tal customizar a fonte no nosso cabeçalho? Cole o seguinte na seção `<head>` do arquivo `blog/templates/blog/post_list.html`:
 
@@ -174,7 +174,7 @@ h1 a {
 }
 ```
 
-![Figura 14.3](images/font.png)
+![Imagem do navegador com o título "Django Girls Blog" e dois "posts" simples ainda. Os títulos estão laranja e mais afastados uns dos outros e com a fonte oficial do Django Girls.](images/font.png)
 
 Incrível!
 
@@ -293,7 +293,7 @@ por isto:
 
 Salve esses arquivos e atualize seu site.
 
-![Figura 14.4](images/final.png)
+![Imagem do navegador com o título "Django Girls Blog", já possui uma faixa laranja no topo onde está o título do blog. Abaixo há uma postagem com título e descrição.](images/final.png)
 
 Uau! Está lindo, né? Olhe para o código que acabamos de colar para encontrar os locais onde adicionamos classes no HTML e as usamos no CSS. Onde você faria uma mudança se você quisesse a data na cor turquesa?
 

@@ -22,7 +22,7 @@ Queremos abrir um console do Python, então digite `python` no Windows ou `pytho
     Python 3.6.1 (...)
     Digite "ajuda", "direitos autorais", ou "licença" para mais informações.
     >>>
-    
+
 
 ## Seu primeiro comando em Python!
 
@@ -94,7 +94,7 @@ Usando aspas duplas:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Roda d'água" 
+>>> "Roda d'água"
 "Roda d'água"
 ```
 
@@ -103,7 +103,7 @@ Ou escapando a aspa simples (o que sinaliza para o Python que aquele sinal é um
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Roda d\'água" 
+>>> "Roda d\'água"
 "Roda d'água"
 ```
 
@@ -634,7 +634,7 @@ Em um Mac, o comando é esse:
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
-    
+
 
 <!--endsec-->
 
@@ -646,7 +646,7 @@ No Linux, o comando é assim (a palavra "Desktop" pode estar traduzida para o po
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
-    
+
 
 <!--endsec-->
 
@@ -657,7 +657,7 @@ No prompt de comando Windows, é assim:
 {% filename %}command-line{% endfilename %}
 
     > cd %HomePath%\Desktop
-    
+
 
 <!--endsec-->
 
@@ -668,7 +668,7 @@ E no Windows Powershell, é assim:
 {% filename %}command-line{% endfilename %}
 
     > cd $Home\Desktop
-    
+
 
 <!--endsec-->
 
@@ -680,7 +680,7 @@ Agora use o interpretador de Python para executar o código que está no arquivo
 
     $ python3 python_intro.py
     Hello, Django girls!
-    
+
 
 Observação: no Windows, 'python3' não é reconhecido como um comando. Em vez disso, use 'python' para executar o arquivo:
 
@@ -714,7 +714,7 @@ Se você salvar e executar esse código, verá um erro como este:
     File "python_intro.py", line 2
              ^
     SyntaxError: unexpected EOF while parsing
-    
+
 
 O Python espera receber de nós instruções que devem ser executadas caso a condição `3 > 2` seja verdadeira (ou `True`). Vamos tentar fazer o Python mostrar na tela "Funciona!". Altere o código no seu arquivo **python_intro.py** para o seguinte:
 
@@ -757,7 +757,7 @@ Quando esse código for executado, o Python mostrará:
 
     $ python3 python_intro.py
     5 é maior que 2
-    
+
 
 Se 2 fosse um número maior que 5, o segundo comando seria executado. Fácil, né? Vamos ver como funciona o `elif`:
 
@@ -779,7 +779,7 @@ e executando:
 
     $ python3 python_intro.py
     Olá Sonja!
-    
+
 
 Viu o que aconteceu? O `elif` possibilita adicionar uma condição que só vai ser executada se a primeira condição for falsa.
 
@@ -789,17 +789,17 @@ Você pode adicionar quantos `elif` quiser depois do `if`. Por exemplo:
 
 ```python
 volume = 57
-if volume < 20: 
+if volume < 20:
     print("Está um pouco baixo")
-elif 20 <= volume < 40: 
+elif 20 <= volume < 40:
     print("Está bom para música ambiente")
-elif 40 <= volume < 60: 
+elif 40 <= volume < 60:
     print("Perfeito, posso ouvir todos os detalhes")
-elif 60 <= volume < 80: 
+elif 60 <= volume < 80:
     print("Ótimo para festas!")
-elif 80 <= volume < 100: 
+elif 80 <= volume < 100:
     print("Está muito alto!")
-else: 
+else:
     print("Meus ouvidos doem! :(")
 ```
 
@@ -809,7 +809,7 @@ O Python testa cada condição na sequência em que aparece no código e então 
 
     $ python3 python_intro.py
     Perfeito, posso ouvir todos os detalhes
-    
+
 
 ## Comentários
 
@@ -869,7 +869,7 @@ Vamos executá-la agora e ver o que acontece:
     $ python3 python_intro.py
     Olá!
     Tudo bem?
-    
+
 
 Observação: se não funcionou, não entre em pânico! A saída vai te ajudar a entender o que aconteceu:
 
@@ -910,7 +910,7 @@ Não esqueça: a função `print` está endentada com 4 espaços depois do `if`.
     File "python_intro.py", line 10, in <module>
       oi()
     TypeError: oi() missing 1 required positional argument: 'nome'
-    
+
 
 Oops, um erro. Felizmente, o Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `oi()` (aquela que definimos) tem um argumento obrigatório (chamado `nome`) e que nós esquecemos de passá-lo ao chamar a função. Vamos resolver isso no final da função:
 
@@ -926,7 +926,7 @@ E rode novamente:
 
     $ python3 python_intro.py
     Olá Ola!
-    
+
 
 E se mudarmos o nome?
 
@@ -942,14 +942,14 @@ E rode novamente:
 
     $ python3 python_intro.py
     Olá Sonja!
-    
+
 
 Agora, o que você acha que aconteceria se escrevesse um outro nome lá (diferente de "Ola" ou "Sonja")? Faça um teste e verifique se você estava certa. Deve aparecer o seguinte:
 
 {% filename %}command-line{% endfilename %}
 
     Olá estranho!
-    
+
 
 Legal, né? Dessa maneira você não precisa se repetir cada vez que for mudar o nome da pessoa que a função pretende cumprimentar. E é exatamente por isso que precisamos de funções - você não quer precisar repetir seu código!
 
@@ -970,7 +970,7 @@ Vamos chamar o código agora:
 
     $ python3 python_intro.py
     Olá Rachel!
-    
+
 
 Parabéns! Você acabou de aprender como criar funções. :)
 
@@ -1029,7 +1029,7 @@ E quando rodamos:
     Próxima
     Olá você!
     Next girl
-    
+
 
 Como você pode ver, tudo o que colocar dentro de uma instrução `for` com espaço será repetido para cada elemento da lista `girls`.
 
@@ -1051,7 +1051,7 @@ Que deve imprimir:
     3
     4
     5
-    
+
 
 `range` é uma função que cria uma lista de números que se seguem um após o outro (esses números são dados por você como parâmetros).
 
@@ -1065,4 +1065,4 @@ Para um tutorial de Python oficial e completo, visite https://docs.python.org/3/
 
 Talvez você queira fazer uma breve pausa -- se espreguiçar, andar um pouco, descansar os olhos -- antes de ir para o próximo capítulo. :)
 
-![Cupcake](images/cupcake.png)
+![Cupcake branco, laranja e marrom](images/cupcake.png)

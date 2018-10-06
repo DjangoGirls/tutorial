@@ -37,7 +37,7 @@ Salve o arquivo e abra a página http://127.0.0.1:8000/ para ver o que acontece.
 
 Outro erro! Veja o que está acontecendo agora:
 
-![Erro](images/error.png)
+![Imagem de erro no navegador ao não encontrar o template.](images/error.png)
 
 O erro mostra que o servidor pelo menos está sendo executado, mas ainda não parece certo, né? Não se preocupe, é apenas uma página de erro: nada a temer! Como as mensagens de erro no console, estas também são muito úteis. Você pode ler *TemplateDoesNotExist*, que significa "template não existe", em inglês. Vamos corrigir este bug e criar um modelo no próximo capítulo!
 

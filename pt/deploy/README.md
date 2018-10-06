@@ -28,7 +28,7 @@ O Git controla as alterações em um determinado conjunto de arquivos no que cha
     Initialized empty Git repository in ~/djangogirls/.git/
     $ git config --global user.name "Seu Nome"
     $ git config --global user.email voce@exemplo.com
-    
+
 
 Só é necessário iniciar o repositório Git uma vez por projeto (e você não vai precisar preencher seu nome de usuário e e-mail nunca mais).
 
@@ -43,12 +43,12 @@ O Git irá controlar as alterações em todos os arquivos e pastas neste diretó
     db.sqlite3
     /static
     .DS_Store
-    
+
 
 E salve-o como `.gitignore` na pasta "djangogirls".
 
 > **Observação:** O ponto no início do nome do arquivo é importante! Se você estiver tendo alguma dificuldade em criá-lo (Macs, por exemplo, não gostam quando você tenta criar arquivos que começam com um ponto por meio do Finder), use a função "Salvar Como..." no seu editor; não tem como errar.
-> 
+>
 > **Observação:** Um dos arquivos especificados no seu `.gitignore` é o `db.sqlite3`. Este arquivo é o seu banco de dados local, onde todos os seus posts ficarão guardados. Não queremos que você adicione este arquivo ao repositório porque o seu site no PythonAnywhere vai utilizar um banco de dados diferente. Esse banco poderia ser SQLite, como na sua máquina de desenvolvimento, mas normalmente você utilizará um chamado MySQL, que consegue lidar com bem mais visitantes ao site do que o SQLite. De qualquer forma, ao ignorar o banco de dados SQLite para a cópia do GitHub, todos os posts que você criou até agora vão estar disponíveis somente no seu ambiente local, e você terá que adicioná-los novamente durante a produção. Pense no seu banco de dados local como um bom parque de diversões onde você pode testar coisas diferentes e não ter medo de apagar os posts reais do seu blog.
 
 É uma boa idéia usar um comando `git status` antes de `git add` ou sempre que você não tiver certeza do que mudou. Isso evitará quaisquer surpresas, como os arquivos errados serem adicionados ou "commitados". O comando `git status` mostra informações sobre arquivos que não estão sendo controlados, arquivos que foram modificados ou preparados (staged), o status do branch, e muito mais. A saída do comando deve ser parecida com o seguinte:
@@ -57,20 +57,20 @@ E salve-o como `.gitignore` na pasta "djangogirls".
 
     $ git status
     On branch master
-    
+
     Initial commit
-    
+
     Untracked files:
       (use "git add <file>..." to include in what will be committed)
-    
+
             .gitignore
             blog/
             manage.py
             mysite/
             requirements.txt
-    
+
     nothing added to commit but untracked files present (use "git add" to track)
-    
+
 
 E finalmente salvamos nossas alterações. Vá para o seu console e execute estes comandos:
 
@@ -83,7 +83,7 @@ E finalmente salvamos nossas alterações. Vá para o seu console e execute este
      create mode 100644 .gitignore
      [...]
      create mode 100644 mysite/wsgi.py
-    
+
 
 ## Subindo o seu código para o GitHub
 
@@ -91,13 +91,13 @@ Vá para [GitHub.com](https://www.github.com) e crie uma conta nova, gratuita. (
 
 Em seguida, crie um novo repositório chamado "my-first-blog". Deixe a caixa "Initialize with a README" desmarcada, deixe a opção do .gitignore em branco (nós já fizemos isso manualmente) e deixe a licença como "None".
 
-![](images/new_github_repo.png)
+![Página do github de criação de repositório](images/new_github_repo.png)
 
 > **Observação:** O nome `my-first-blog` é importante - você poderia escolher qualquer outra coisa, mas ele vai aparecer várias vezes nas instruções abaixo, e você teria que substituir todas as vezes. É mais fácil simplesmente manter o nome `my-first-blog`.
 
 Na próxima tela, você verá a URL pra clonar o seu repo. Escolha a versão "HTTPS", e copie-a e cole no terminal em seguida:
 
-![](images/github_get_repo_url_screenshot.png)
+![Página do github depois que é criado o repositório e há os comandos para criar um novo repositório ou contribuir com um já existente.](images/github_get_repo_url_screenshot.png)
 
 Agora precisamos conectar o repositório Git no seu computador com o que existe no GitHub.
 
@@ -107,7 +107,7 @@ Digite o seguinte no seu terminal (Substitua `<your-github-username>` pelo nome 
 
     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
     $ git push -u origin master
-    
+
 
 Digite o seu nome e senha do GitHub e você deverá ver algo parecido com isso:
 
@@ -119,10 +119,10 @@ Digite o seu nome e senha do GitHub e você deverá ver algo parecido com isso:
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
     To https://github.com/ola/my-first-blog.git
-    
+
      * [new branch]      master -> master
     Branch master set up to track remote branch master from origin.
-    
+
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
@@ -149,7 +149,7 @@ Fazer o deploy de uma aplicação web no PythonAnywhere envolve baixar o seu có
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
     $ pip3.6 install --user pythonanywhere
-    
+
 
 Isso deve mostrar na tela coisas como `Collecting pythonanywhere`, e depois de algum tempo finalizar com uma linha dizendo `Successfully installed (...) pythonanywhere (...)`.
 
@@ -158,7 +158,7 @@ Agora vamos executar a ferramenta para configurar a nossa aplicação a partir d
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
-    
+
 
 Enquanto assiste a execução da ferramenta, você pode ver o que ela está fazendo:
 
@@ -176,7 +176,7 @@ Por causa disso, da mesma forma que tivemos que fazer no nosso computador, preci
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
-    
+
 
 Digite as informações sobre a sua conta de admin. É mais fácil usar as mesmos que usou no seu computador pra evitar qualquer confusão, a menos que você queira criar uma senha mais segura para a conta no PythonAnywhere.
 
@@ -189,7 +189,7 @@ Agora, se quiser, você pode dar uma olhada no seu código no PythonAnywhere usa
     (ola.pythonanywhere.com) $ ls blog/
     __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
     templates  tests.py  urls.py  views.py
-    
+
 
 Você também pode visitar a aba "Files" e dar uma olhada usando o gerenciador de arquivos do PythonAnywhere.
 

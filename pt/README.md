@@ -4,9 +4,9 @@
 
 > Este trabalho é licenciado sob a licença Creative Commons Attribution-ShareAlike 4.0. Para ver uma cópia desta licença, visite https://creativecommons.org/licenses/by-sa/4.0/
 
-## Bem-vinda
+## Boas-vindas
 
-Bem-vinda ao Tutorial Django Girls! Estamos felizes em vê-la aqui :) Neste tutorial, vamos levá-la em uma viagem por baixo do capô das tecnologias web, oferecendo-lhe um vislumbre de todos os bits e peças que precisam se unir para fazer a web funcionar tal como a conhecemos.
+Boas-vindas ao Tutorial Django Girls! Estamos felizes em ver você aqui :) Neste tutorial, vamos levar você em uma viagem por baixo do capô das tecnologias web, oferecendo-lhe um vislumbre de todos os bits e peças que precisam se unir para fazer a web funcionar tal como a conhecemos.
 
 Como todas as coisas desconhecidas, isto vai ser uma aventura - mas não se preocupe! Já que você teve coragem para estar aqui, você vai ficar bem :)
 
@@ -26,7 +26,7 @@ Quando terminar o tutorial, você terá uma pequena aplicação web funcional: s
 
 Ele se parecerá (mais ou menos) com isso:
 
-![Figura 0.1](images/application.png)
+![Layout final do seu projeto. Tem uma barra no topo alaranjada com ícones para adicionar novas postagens. Abaixo tem três postagens com títulos e suas descrições preenchidas com lorem ipsum e com as datas de publicação.](images/application.png)
 
 > Se você seguir o tutorial por conta própria e não tiver uma monitora para ajudar, podemos de ajudar a resolver qualquer problema por esse chat: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nós pedimos às nossas monitoras e participantes anteriores para acessarem o chat de tempos em tempos para ajudar outras pessoas com o tutorial! Não tenha medo de fazer sua pergunta!
 

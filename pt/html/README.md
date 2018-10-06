@@ -21,7 +21,7 @@ Os templates são salvos no diretório `blog/templates`. Então, crie um diretó
     blog
     └───templates
         └───blog
-    
+
 
 (Você deve estar se perguntando porque nós precisamos de dois diretórios chamados `blog` - como você descobrirá mais para frente, essa é uma convenção que facilita a nossa vida quando as coisas começam a ficar mais complicadas.)
 
@@ -31,7 +31,7 @@ Veja como o nosso site está agora: http://127.0.0.1:8000/
 
 > Se você ainda tem um erro `TemplateDoesNotExist`, tente reiniciar o seu servidor. Entre na linha de comando, interrompa o servidor pressionando Ctrl+C (Control seguido da tecla C, juntas) e reinicie-o rodando `python manage.py runserver`.
 
-![Figura 11.1](images/step1.png)
+![Imagem do navegador em branco pois não possui conteúdo ainda, mas funciona.](images/step1.png)
 
 Acabaram-se os erros! Uhuu :) Entretanto, nosso site não mostra nada a não ser uma página em branco. Isso acontece porque o nosso template está vazio. Precisamos consertar isso.
 
@@ -50,7 +50,7 @@ Adicione a seguinte linha ao template:
 
 Como está o nosso site agora? Visite a página descobrir: http://127.0.0.1:8000/
 
-![Figura 11.2](images/step3.png)
+![Imagem do navegador com os parágrafos: "Hi there!", "It works!"](images/step3.png)
 
 Funcionou! Bom trabalho :)
 
@@ -85,7 +85,7 @@ Por exemplo, você pode incluir o elemento título de uma página web dentro da 
 
 Salve o arquivo e atualize a página.
 
-![Figura 11.3](images/step4.png)
+![Imagem do navegador com os parágrafos: "Hi there!", "It works!", mas agora com o nome "Ola's blog" na aba do navegador.](images/step4.png)
 
 Viu como o navegador entendeu que "Ola's blog" é o título da página? Ele interpretou `<title>Ola's blog</title>` e colocou o texto na barra de título do seu navegador (o texto também será usado nos favoritos e outras coisas mais).
 
@@ -163,14 +163,14 @@ Antes de tudo, vamos ver que arquivos foram modificados desde que nós fizemos a
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    
+
 
 Assegure-se de que você está no diretório `djangogirls` e vamos dizer ao `git` para incluir todas as mudanças feitas nele:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
-    
+
 
 > **Observação:** `..--all` significa que o `git` também vai reconhecer se você tiver excluído arquivos (por padrão, ele só reconhece arquivos novos/modificados). Lembre-se também (do capítulo 3) que `.` significa o diretório atual.
 
@@ -179,14 +179,14 @@ Antes de fazermos o upload de todos os arquivos, vamos verificar quais deles o `
 {% filename %}command-line{% endfilename %}
 
     $ git status
-    
+
 
 Estamos quase lá! Agora é hora de dizer ao git para salvar essa modificação em seu histórico. Daremos a ele uma "mensagem de commit" em que descrevemos as modificações que foram feitas. Você pode escrever o que quiser agora, mas é mais útil escrever algo descritivo que te ajude no futuro a lembrar das coisas que fez.
 
 {% filename %}command-line{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
-    
+
 
 > **Observação:** Certifique-se de que você usou aspas duplas para delimitar a mensagem do commit.
 
@@ -195,7 +195,7 @@ Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
 {% filename %}command-line{% endfilename %}
 
     $ git push
-    
+
 
 ### Baixe seu novo código no PythonAnywhere e recarregue o seu aplicativo da web
 
@@ -206,7 +206,7 @@ Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
-    
+
 
 (Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
 

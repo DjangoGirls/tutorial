@@ -6,7 +6,7 @@ Estamos prestes a construir nossa primeira página Web: uma página inicial para
 
 Uma URL é simplesmente um endereço da web. Você pode ver uma URL toda vez que você visita um website - ela aparece na barra de endereços do seu navegador. (Sim! `127.0.0.1:8000` é uma URL! E `https://djangogirls.org` também é uma URL.)
 
-![URL](images/url.png)
+![URL no navegador](images/url.png)
 
 Cada página na Internet precisa de sua própria URL. Desta forma, sua aplicação sabe o que deve mostrar a um usuário que abre uma URL. Em Django, usamos algo chamado `URLconf` (configuração de URLs). URLconf é um conjunto de padrões que o Django vai usar para comparar com a URL recebida para encontrar a resposta correta.
 
@@ -96,7 +96,7 @@ A última parte, `name='post_list'`, é o nome da URL que será usado para ident
 
 Se você tentar visitar http://127.0.0.1:8000 / agora, vai encontrar alguma mensagem do tipo 'página web não disponível'. Isso ocorre porque o servidor (lembre-se de digitar `runserver`?) não está mais funcionando. Dê uma olhada na sua janela de console do servidor para descobrir o porquê.
 
-![Erro](images/error1.png)
+![Imagem de erro do terminal ao não encontrar a URL](images/error1.png)
 
 Seu console está mostrando um erro, mas não se preocupe -- este erro é bastante útil: ele está dizendo que não existe nenhum atributo **post_list** no módulo de views. Esse é o nome da *view* que Django está tentando encontrar e usar, mas ainda não a criamos. Por enquanto, seu `/admin/` também não funcionará. Mas não se preocupe, nós chegaremos lá.
 

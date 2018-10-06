@@ -46,7 +46,7 @@ E quanto ao `pk=post.pk`? `pk` é uma abreviação de "primary key" (do inglês 
 
 Agora, quando formos para: http://127.0.0.1:8000/, veremos um erro (como esperado, já que existe uma URL, mas não uma *view* para `post_detail`). Vai se parecer com isso:
 
-![erro NoReverseMatch](images/no_reverse_match2.png)
+![erro NoReverseMatch no Navegador](images/no_reverse_match2.png)
 
 ## Criando uma URL para a página de detalhes de um post
 
@@ -79,7 +79,7 @@ Isso significa que se você digitar `http://127.0.0.1:8000/post/5/` em seu naveg
 
 Legal, adicionamos um novo padrão de URL para `blog/urls.py`! Vamos atualizar a página: http://127.0.0.1:8000 / Boom! O servidor parou de funcionar de novo. Dê um olhada no console -- como esperado, há ainda outro erro!
 
-![AttributeError](images/attribute_error2.png)
+![AttributeError no Terminal](images/attribute_error2.png)
 
 Você lembra qual é o próximo passo? Claro: adicionar uma view!
 
@@ -97,11 +97,11 @@ Post.objects.get(pk=pk)
 
 Mas este código tem um problema. Se não houver nenhum `Post` com a `chave primária` (`pk`) fornecida, teremos um erro horroroso!
 
-![erro DoesNotExist](images/does_not_exist2.png)
+![erro DoesNotExist no Navegador](images/does_not_exist2.png)
 
 Não queremos isso! Mas é claro que o Django tem algo para lidar com isso por nós: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro -- `Page Not Found 404` (página não encontrada).
 
-![Página não encontrada](images/404_2.png)
+![Página não encontrada no Navegador](images/404_2.png)
 
 A boa notícia é que você pode criar sua própria página de `Page not found` e torná-la tão bonita quanto quiser. Mas isso não é super importante agora, então vamos deixar pra lá.
 
@@ -133,7 +133,7 @@ def post_detail(request, pk):
 
 Funcionou! Mas o que acontece quando você clica em um link no título de um post do blog?
 
-![erro TemplateDoesNotExist](images/template_does_not_exist2.png)
+![erro TemplateDoesNotExist no Navegador](images/template_does_not_exist2.png)
 
 Ah não! Outro erro! Mas nós já sabemos como lidar com isso, né? Precisamos adicionar um template!
 
@@ -182,7 +182,7 @@ Seria bom ver se seu site ainda estará trabalhando no PythonAnywhere, né? Vamo
     $ git status
     $ git commit -m "Added view and template for detailed blog post as well as CSS for the site."
     $ git push
-    
+
 
 Agora, em um [console Bash do PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
@@ -191,7 +191,7 @@ Agora, em um [console Bash do PythonAnywhere](https://www.pythonanywhere.com/con
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
     [...]
-    
+
 
 (Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
 
@@ -206,7 +206,7 @@ Comece ativando seu virtualenv, se ele já não estiver ativo (para isso, o Pyth
     $ workon <your-pythonanywhere-username>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
-    
+
 
 O comando `manage.py collectstatic` é mais ou menos como `manage.py migrate`. Agora, fazemos algumas mudanças no nosso código e dizemos ao Django que as aplique (*apply*) à coleção de arquivos estáticos, ou ao banco de dados.
 

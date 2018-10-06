@@ -1,7 +1,7 @@
 # Como a Internet funciona
 
 > Para leitoras em casa: este capítulo é abordado no vídeo [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc).
-> 
+>
 > Este capítulo é inspirado na palestra "Como a Internet funciona" de Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
 Apostamos que você usa a Internet todos os dias. Mas você sabe realmente o que acontece quando digita um endereço como https://djangogirls.org em seu navegador e aperta `Enter`?
@@ -16,23 +16,23 @@ OK, mas você quer saber com o quê a internet se parece, certo?
 
 Fizemos um desenho para ajudar! Veja:
 
-![Figura 1.1](images/internet_1.png)
+![Há duas imagens. Na primeira há pontos ligados por retas em uma quantidade enorme. Na segunda imagem há uma aproximação de um pedaço da imagem anterior, são alguns pontos ligados por retas.](images/internet_1.png)
 
 Que bagunça, né? Na verdade, a internet é uma rede de máquinas conectadas (os *servidores* mencionados acima). São centenas de milhares de máquinas! Muitos, muitos quilômetros de cabos em todo o mundo! Para ver o quão complicada a internet é, você pode visitar um site (http://submarinecablemap.com/) que mostra o mapa com dos cabos submarinos. Aqui está um screenshot do site:
 
-![Figura 1.2](images/internet_3.png)
+![A imagem mostra um mapa de cabos submarinos de internet no mundo. Em cada lugar que há máquinas de comando há pontos e esses pontos são ligados por retas que são os cabos.](images/internet_3.png)
 
 Fascinante, né? Mas, obviamente, não é possível ter um fio ligando todas as máquina conectadas à internet. Logo, para alcançar uma máquina (por exemplo aquela onde https://djangogirls.org está salva), precisamos passar uma requisição por muitas máquinas diferentes.
 
 É algo assim:
 
-![Figura 1.3](images/internet_2.png)
+![Nesta imagem há um ponto marcado com "você" e um ponto marcado com "o servidor do Django Girls" que você acessa. Entre eles, há vários pontos interligados através de linhas por onde a informação irá caminhar até chegar de você no servidor do Django Girls.](images/internet_2.png)
 
 Imagine que quando digita http://djangogirls.org, você envia uma carta que diz: "Queridas Django Girls, eu desejo ver o site djangogirls.org. Enviem-no para mim, por favor!"
 
 Sua carta vai para a agência dos correios mais próxima de você. Então, ela vai para outra agência um pouco mais perto do destinatário e, em seguida, para outra e outra até ser entregue. A única coisa diferente é que se você enviar muitas cartas (*pacotes de dados*) para o mesmo lugar, elas podem passar por agências totalmente diferentes (*roteadores*). Isso depende de como elas são distribuídas em cada agência.
 
-![Figura 1.4](images/internet_4.png)
+![Nesta imagem há uma carta que nela você solicita ver o website do Django Girls.](images/internet_4.png)
 
 Sim, é simples assim. Você envia mensagens e espera alguma resposta. Claro, ao invés de papel e caneta você usa bytes de dados, mas a ideia é a mesma!
 

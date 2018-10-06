@@ -22,7 +22,7 @@ Pra mostrar uma variável em um template do Django, usamos chaves duplas com o n
 
 Tente fazer isso no seu template `blog/templates/blog/post_list.html`. Substitua tudo desde o segundo `<div>` até o terceiro `</div>` por `{{ posts }}`. Salve o arquivo e atualize a página para ver o resultado:
 
-![Figura 13.1](images/step1.png)
+![Imagem do navegador com o título "Django Girls Blog" e dois "posts" simples ainda.](images/step1.png)
 
 Como você pode ver, obtivemos apenas:
 
@@ -44,7 +44,7 @@ Isto significa que o Django entende essa variável como uma lista de objetos. Em
 
 Tente fazer isso no seu template.
 
-![Figura 13.2](images/step2.png)
+![Imagem do navegador com o título "Django Girls Blog" e dois "posts" simples ainda.](images/step2.png)
 
 Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos que criamos anteriormente no capítulo de **Introdução a HTML**. Nós podemos misturar HTML com tags de template. O conteúdo da tag `body` ficará assim:
 
@@ -66,7 +66,7 @@ Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos que
 
 {% raw %}Tudo o que você colocar entre `{% for %}` e `{% endfor %}` será repetido para cada objeto na lista. Atualize a página:{% endraw %}
 
-![Figura 13.3](images/step3.png)
+![Imagem do navegador com o título "Django Girls Blog" e dois "posts" com título e descrições com lorem ipsum, porém ainda com html básico.](images/step3.png)
 
 Você notou que dessa vez nós usamos uma notação um pouco diferente (`{{ post.title }}` ou `{{ post.text }}`)? Estamos acessando os dados em cada um dos campos que definimos no modelo do `Post`. Além disso, `|linebreaks` está passando o texto do post por um filtro, convertendo quebras de linha em parágrafos.
 
@@ -86,7 +86,7 @@ Seria bom ver se seu site ainda funciona na internet, né? Vamos tentar implanta
     $ git commit -m "Modified templates to display posts from database."
     [...]
     $ git push
-    
+
 
 * Em seguida, faça login em [PythonAnywhere](https://www.pythonanywhere.com/consoles/) e vá para seu **console de Bash** (ou comece um novo) e execute:
 
@@ -95,7 +95,7 @@ Seria bom ver se seu site ainda funciona na internet, né? Vamos tentar implanta
     $ cd $USER.pythonanywhere.com
     $ git pull
     [...]
-    
+
 
 * Por fim, vá para a aba [Web app setup](https://www.pythonanywhere.com/web_app_setup/) e clique em **Reload** em sua aplicação Web. Sua atualização deve ter aparecido! Tudo bem se as postagens em seu site PythonAnywhere não coincidirem com as postagens que aparecem no blog hospedado no seu servidor local. Os bancos de dados em seu computador local e no Python Anywhere não sincronizam com o resto de seus arquivos.
 
@@ -103,4 +103,4 @@ Parabéns! Agora vá em frente e tente adicionar um novo post em seu Django admi
 
 Funcionou como mágica? Estamos orgulhosas! Afaste-se do seu computador um pouco, você merece uma pausa. :)
 
-![Figura 13.4](images/donut.png)
+![Rosquinha de chocolate com uma cobertura alaranjada e com confetes.](images/donut.png)
