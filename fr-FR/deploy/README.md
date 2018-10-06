@@ -151,7 +151,7 @@ Pour déployer une application sur PythonAnywhere, vous devez y télécharger vo
 
 Vous devriez voir quelque chose comme `Collecting pythonanywhere`, et au bout d'un moment une dernière ligne disant `Successfully installed (...) pythonanywhere-(...)`.
 
-Maintenant, nous exécutez l'assistant pour configurer automatiquement votre application à partir de GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Maintenant, nous exécutez l'assistant pour configurer automatiquement votre application à partir de GitHub. Tapez ce qui suit dans la console sur PythonAnywhere (n'oubliez pas d'utiliser votre nom d'utilisateur GitHub à la place de `<your-github-username>`, afin que l'URL corresponde à celle du clone de GitHub) :
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
