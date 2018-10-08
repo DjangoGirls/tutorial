@@ -46,7 +46,7 @@ Wróć do przeglądarki. Zaloguj się za pomocą danych logowania administratora
 
 ![Admin Django](images/django_admin3.png)
 
-Przejdź do sekcji Posts i poeksperymentuj trochę. Dodaj pięć czy sześć wpisów do bloga. Nie martw się zawartością - widoczna ona jest tylko na twoim komputerze - możesz skopiować i wkleić fragment tekstu z tego tutoriala, aby zaoszczędzić czas. :)
+Przejdź do sekcji Posts i poeksperymentuj trochę. Dodaj pięć czy sześć wpisów do bloga. Nie martw się zawartością - widoczna ona jest tylko na Twoim komputerze - możesz skopiować i wkleić fragment tekstu z tego tutoriala, aby zaoszczędzić czas. :)
 
 Upewnij się, że co najmniej dwa lub trzy posty (ale nie wszystkie) mają ustawioną datę publikacji. Będzie to pomocne później.
 
