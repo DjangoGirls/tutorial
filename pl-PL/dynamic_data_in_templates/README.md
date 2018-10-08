@@ -42,7 +42,7 @@ Więc teraz chcemy opublikować posty na blogu posortowane według daty publikac
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Teraz otwórz plik `blog/views.py` w edytorze kodu, umieść ten fragment kodu w pliku dodając go do funkcji `def post_list (request)`, ale nie zapomnij najpierw dodać `from django.utils import timezone`:
+Teraz otwórz plik `blog/views.py` w edytorze kodu i umieść ten fragment kodu dodając go do funkcji `def post_list (request)`, ale nie zapomnij najpierw dodać `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 
