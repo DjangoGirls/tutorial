@@ -2,9 +2,9 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> 이 튜토리얼은 Creative Commons Attribution-ShareAlike 4.0 International 저작권을 준수합니다. 라이센스 전문은 https://creativecommons.org/licenses/by-sa/4.0 에서 확인하세요.
 
-## Welcome
+## 환영합니다
 
 Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
