@@ -138,7 +138,7 @@ Aby stworzyć nowy formularz dla modelu `Post`, musimy wywołać funkcję `PostF
 
 ## Szablon
 
-Musimy utworzyć plik `post_edit.html` w katalogu `blog/templates/blog` i otowrzyć go w edytorze kodu. Aby nasz formularz zadziałał, niezbędne jest kilka rzeczy:
+Musimy utworzyć plik `post_edit.html` w katalogu `blog/templates/blog` i otowrzyć go w edytorze kodu. Aby nasz formularz zadziałał, niezbędnych jest kilka rzeczy:
 
 * Musimy wyświetlić formularz. Możemy to zrobić np. za pomocą polecenia {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Powyższa linijka musi znajdować się wewnątrz znacznika formularza HTML: &lt;`form method="POST">...</form>`.
