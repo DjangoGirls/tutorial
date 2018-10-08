@@ -1,6 +1,6 @@
 만약 크롬북을 사용하고 있지 않다면, [이 섹션은 바로 넘어가도 됩니다.](http://tutorial.djangogirls.org/en/installation/#install-python) 사용하고 있다면, 여러분의 설치 경험은 약간 다를 것입니다. 여러분은 설치 안내의 나머지 부분을 무시하셔도 됩니다.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### 클라우드 IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
 Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
