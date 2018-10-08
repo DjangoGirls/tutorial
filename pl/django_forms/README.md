@@ -14,7 +14,7 @@ Stwórzmy plik o takiej nazwie w katalogu `blog`.
        └── forms.py
     
 
-Dobrze, a teraz otwórzmy go i wprowadźmy następujący kod:
+Dobrze, a teraz otwórzmy edytor kodu i wprowadźmy następujący kod:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -44,7 +44,7 @@ Oto co za chwilę stworzymy: link do strony, adres URL, widok i szablon.
 
 ## Odnośnik do strony z formularzem
 
-Czas otworzyć plik `blog/templates/blog/base.html`. Wewnątrz `div`-a o nazwie `page-header` dodajmy odnośnik:
+Czas otworzyć plik `blog/templates/blog/base.html` w edytorze kodu. Dodajmy wiersz w `div` o nazwie `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ Po zapisaniu i odświeżeniu strony http://127.0.0.1:8000 zobaczyłaś znajomo w
 
 ## Adres URL
 
-Otwieramy plik `blog/urls.py` i dodajemy wiersz:
+Otwieramy plik `blog/urls.py` w edytorze kodu i dodajemy wiersz:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Po odświeżeniu strony zobaczymy błąd `AttributeError`, ponieważ nie mamy je
 
 ## Widok post_new
 
-Czas otworzyć plik `blog/views.py` i dodać poniższe linijki obok innych wierszy z `from`:
+Czas otworzyć plik `blog/views.py` w edytorze kodu i dodać poniższe linijki obok innych wierszy z `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Aby stworzyć nowy formularz dla modelu `Post`, musimy wywołać funkcję `PostF
 
 ## Szablon
 
-Musimy utworzyć plik `post_edit.html` w katalogu `blog/templates/blog`. Aby nasz formularz zadziałał, niezbędne jest kilka rzeczy:
+Musimy utworzyć plik `post_edit.html` w katalogu `blog/templates/blog` i otowrzyć go w edytorze kodu. Aby nasz formularz zadziałał, niezbędnych jest kilka rzeczy:
 
 * Musimy wyświetlić formularz. Możemy to zrobić np. za pomocą polecenia {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Powyższa linijka musi znajdować się wewnątrz znacznika formularza HTML: &lt;`form method="POST">...</form>`.
@@ -175,7 +175,7 @@ Odpowiedź brzmi: nic. Mamy coś jeszcze do zrobienia w naszym *widoku*.
 
 ## Zapisujemy formularz
 
-Otwórz jeszcze raz plik `blog/views.py`. W tym momencie wszystko, co mamy w widoku `post_new` to:
+Otwórz jeszcze raz plik `blog/views.py`. w edytorze kodu. W tym momencie wszystko, co mamy w widoku `post_new` to:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django dba o walidację pól w naszym formularzu, upewniając się, czy są uzup
 
 Teraz już wiemy, jak dodać nowy formularz. Ale co w przypadku, gdy zapragniemy zmienić już istniejący? Proces jest bardzo podobny do tego, który przeszłyśmy przed chwilą. Stwórzmy szybko kilka ważnych rzeczy. (jeżeli masz problem ze zrozumieniem czegoś, zapytaj osobę prowadzącą kurs lub przejrzyj poprzednie rozdziały, gdyż wszystkie kroki mamy już omówione.)
 
-Otwórz `blog/templates/blog/post_detail.html` i dodaj poniższą linijkę
+Otwórz `blog/templates/blog/post_detail.html` w edytorze kodu i dodaj poniższą linijkę
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ dzięki czemu nasz szablon będzie wyglądał tak:
 {% endblock %}
 ```
 
-W pliku `blog/urls.py` dodajmy wiersz:
+Otwieramy plik `blog/urls.py` w edytorze kodu dodajemy wiersz:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ W pliku `blog/urls.py` dodajmy wiersz:
 
 Wykorzystamy jeszcze raz szablon `blog/templates/blog/post_edit.html`, więc ostatnią rzeczą, której nam brakuje, jest *widok*.
 
-Otwórz `blog/views.py` i dodaj poniższy kod na samym końcu tego pliku:
+Otwórz `blog/views.py` w edytorze kodu i dodaj poniższy kod na samym końcu tego pliku:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -376,7 +376,7 @@ Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokume
 
 Super, że możemy tworzyć posty klikając w link! Jest niestety jeden problem - aktualnie każdy, kto odwiedzi Twoją stronę, może stworzyć nowy post. Zróbmy tak, aby przycisk był widoczny tylko dla Ciebie i nikogo innego.
 
-W `blog/templates/blog/base.html` znajdź `page-header` `div` i tag <0>a</0>, który umieściliśmy tam wcześniej. Powinien wyglądać tak:
+Otwórzmy `blog/templates/blog/base.html` w edytorze kodu, znajdźmy nasz `page-header` `div` i zalinkujmy tag, który umieściłyśmy tam wcześniej. Powinien wyglądać tak:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Ten `{% if %}` spowoduje, że link zostanie wysłany do przeglądarki tylko wted
 
 Pamiętasz ikonkę edycji, która przed chwilą dodałyśmy do naszej strony szczegółów? Chcemy też dodać tę samą zmianę tutaj tak, by inne osoby nie były w stanie edytować istniejących postów.
 
-Otwórz `blog/templates/blog/post_detail.html` i znajdź poniższą linijkę:
+Otwórzmy `blog/templates/blog/post_detail.html` w edytorze kodu i dodajmy poniższą linijkę:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -444,6 +444,6 @@ Dobrze byłoby wiedzieć, że nasza witryna nadal działa na PythonAnywhere, pra
 
 (Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
-* Na koniec, przejdźmy do podstrony [Web tab](https://www.pythonanywhere.com/web_app_setup/) i wciśnijmy **Reload** (ang. odśwież).
+* Nareszcie przeskakujemy do do ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (użyj przycisku menu w prawym górnym rogu konsoli) i naciśnij **Reload**. Odśwież swoj blog https://yourname.pythonanywhere.com, aby zobaczyć zmiany.
 
 I to już wszystko! Gratulacje :)

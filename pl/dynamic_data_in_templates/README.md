@@ -6,7 +6,7 @@ Dokładnie do tego przydadzą nam się *widoki*: do połączenia modeli i szablo
 
 OK, więc jak to osiągniemy?
 
-Musimy otworzyć nasz plik `blog/views.py`. Jak dotąd *widok* `post_list` wygląda następująco:
+Musimy otworzyć nasz plik `blog/views.py` w naszym edytorze kodu. Jak dotąd *widok* `post_list` wygląda następująco:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ Więc teraz chcemy opublikować posty na blogu posortowane według daty publikac
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-Teraz umieszczamy ten fragment kodu w pliku `blog/views.py` dodając go do funkcji `def post_list (request)`, ale nie zapomnij najpierw dodać `from django.utils import timezone`:
+Teraz otwórz plik `blog/views.py` w edytorze kodu i umieść ten fragment kodu dodając go do funkcji `def post_list (request)`, ale nie zapomnij najpierw dodać `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 

@@ -12,7 +12,7 @@ Mamy już model `Post`, więc nie musimy już dodawać niczego do `models.py`.
 
 ## Tworzenie szablonu odnośnika do detali wpisu na blogu
 
-Zaczniemy od dodania linku w pliku `blog/templates/blog/post_list.html`. Póki co powinien on wyglądać następująco: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Zaczniemy od dodania linku wewnątrz pliku `blog/templates/blog/post_list.html`. Otwórz go w edytorze kodu. Do tej pory plik powinien wyglądać tak: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -54,7 +54,7 @@ Dodajmy adres URL w pliku `urls.py` dla naszego *widoku (ang.view)* `post_detail
 
 Chcemy, aby nasz wpis i wszystkie informacje o nim, były widoczne pod tym adresem **URL**: http://127.0.0.1:8000/post/1/
 
-W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Dodaj wiersz `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` w pliku `blog/urls.py`. Jego zawartość powinna wyglądać tak:
+W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Otwórz plik `blog/urls.py` w edytorze i dodaj wiersz: `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` tak, żeby otrzymać:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -108,7 +108,7 @@ OK, czas dodać nasz *widok* do naszego pliku `views.py`!
 
 W `blog/urls.py` stworzyłyśmy regułę URL, którą nazwałyśmy `post_detail` i która odnosi się do widoku `views.post_detail`. Oznacza to że Django będzie oczekiwało funkcji widoku o nazwie `post_detail` w pliku `blog/views.py`.
 
-Powinnyśmy otworzyć `blog/views.py` i dodać poniższy kod nidaleko innych linii z `from`:
+Otwórzmy `blog/views.py` w edytorze kodu i dodajmy poniższy kod zaraz obok pozostałych wierszy `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ O nie! Kolejny błąd! Ale wiemy już, jak sobie z nim poradzić, prawda? Musimy
 
 ## Stwórzmy szablon dla poszczególnego wpisu
 
-Stwórzmy plik w `blog/templates/blog` o nazwie `post_detail.html`.
+Stwórzmy teraz plik o nazwie `post_detail.html` w folderze `blog/templates/blog` i otwórzmy go w edytorze.
 
 Będzie to wyglądać tak:
 
@@ -209,6 +209,6 @@ Zacznij od aktywacji swojego virtualenva, jeżeli nie jest on jeszcze aktywny (P
 
 Komenda `manage.py collectstatic` jest trochę podobna do `manage.py migrate`. Wcześniej dokonałyśmy jakichś zmian w naszym kodzie, a teraz informujemy Django, by *zastosował* te zmiany, albo w kolekcji plików statycznych na serwerze albo w bazie danych.
 
-W każdym wypadku jesteśmy gotowe przejść do podstrony [Web tab](https://www.pythonanywhere.com/web_app_setup/) i wcisnąć **Reload** (ang. odśwież).
+W każdym razie, jesteśmy już gotowe do przejścia na stronę ["Web"](https://www.pythonanywhere.com/web_app_setup/) (klikając w menu umieszczonym w prawym górnym rogu). Następnie kliknij **Reload** i spójrz na stronę https://yourname.pythonanywhere.com aby zobaczyć rezultat.
 
 I to już wszystko! Gratulacje :)
