@@ -167,9 +167,9 @@ A medida que se ejecuta, podrás ver lo que hace:
 - Configura los archivos estáticos (static) (luego hablaremos de éstos con más detalle)
 - Y configura PythonAnywhere para publicar tu aplicación web a través de su API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+En PythonAnywhere todos estos pasos están automatizados, pero son los mismos que tendrías que seguir en cualquier otro proveedor de servidores.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Lo más importante que debes tener en cuenta es que tu base de datos en PythonAnywhere es totalmente independiente de la base de datos de tu propio ordenador, puede tener diferentes posts y cuentas de administrador. Como consecuencia, igual que lo hicimos en tu ordenador, tenemos que crear la cuenta de administrador con el comando `createsuperuser`. PythonAnywhere ya ha activado el virtualenv automáticamente, así que lo único que tienes que hacer es ejecutar:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Y recuerda, ¡tu mentor está aquí para ayudar!
 
 # ¡Comprueba tu página!
 
-La página por defecto debería decir "It worked!", tal como dice en tu ordenador local. Prueba a añadir `/admin/` al final de la URL y llegarás a la página de administración. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+La página por defecto debería decir "It worked!", tal como dice en tu ordenador local. Prueba a añadir `/admin/` al final de la URL y llegarás a la página de administración. Entra con tu usuario y password, y verás que puedes añadir nuevas publicaciones en el servidor -- recuerda, los post que tenías en tu base de datos local no se han subido a al blog publicado en producción.
 
 Después de crear algunas publicaciones, puedes volver a tu instalación local (no la de PythonAnywhere). A partir de ahora, trabaja en tu instalación local para hacer los siguientes cambios. Este es un flujo de trabajo típico en el desarrollo web – haz cambios localmente, sube (push) esos cambios a GitHub, y descarga (pull) tus cambios al servidor de publicación. Esto te permite trabajar y experimentar en local sin romper tu página publicada. Mola, ¿eh?
 
