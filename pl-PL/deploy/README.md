@@ -169,7 +169,7 @@ Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
 
 W PythonAnywhere wszystkie te kroki są zautomatyzowane, ale są to te same kroki, które trzeba wykonać z dowolnym innym dostawcą serwera.
 
-Najważniejszym w tej chwili jest to, aby zapamiętać, że baza danych w PythonAnywhere jest całkowicie oddzielona od bazy danych na Twoim komputerze, co oznacza, że może mieć inne posty i konta administracyjne. W rezultacie, tak jak zrobiłyśmy to wcześniej na własnym komputerze, musimy zainicjować konto administratora za pomocą `createsuperuser`. PythonAnywhere automatycznie aktywował dla Ciebie Twojego virtualenv, więc jedyne, co musisz zrobić, to uruchomić:
+Najważniejszym w tej chwili jest to, aby zapamiętać, że baza danych w PythonAnywhere jest całkowicie oddzielona od bazy danych na Twoim komputerze, co oznacza, że może mieć inne posty i konta administracyjne. W rezultacie, tak jak zrobiłyśmy to wcześniej na własnym komputerze, musimy zainicjować konto administratora za pomocą `createsuperuser`. PythonAnywhere automatycznie aktywował dla Ciebie Twojego virtualenva, więc jedyne, co musisz zrobić, to uruchomić:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -193,7 +193,7 @@ Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudow
 
 ## Jesteś na żywo!
 
-Twoja strona powinna teraz być dostępna w publicznym Internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym z kimkolwiek chcesz :)
+Twoja strona powinna teraz być dostępna w publicznym internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym z kimkolwiek chcesz! :)
 
 > **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt lub rozpocząć nowy, powinnaś przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/), aby uzyskać jakieś wskazówki dotyczące zabezpieczania witryny.
 
@@ -213,7 +213,7 @@ I pamiętaj, Twój mentor jest tutaj, by Ci pomóc!
 
 # Sprawdź swoją stronę!
 
-Domyślna strona Twojej witryny powinna brzmieć "It worked!", tak jak na Twoim lokalnym komputerze. Spróbuj dodać `/admin/` na koniec swojego adresu URL - powinnaś się przenieść do panelu admina. Zaloguj się za pomocą nazwy użytkownika i hasła. Zobaczysz, że możesz dodać nowy Post na serwerze -- pamiętaj, posty z Twojej lokalnej, testowej bazy danych nie będą wysyłane na Twojego produkcyjnego bloga.
+Domyślna strona Twojej witryny powinna brzmieć "It worked!", tak jak na Twoim lokalnym komputerze. Spróbuj dodać `/admin/` na koniec swojego adresu URL - powinnaś się przenieść do panelu admina. Zaloguj się za pomocą nazwy użytkownika i hasła. Zobaczysz, że możesz dodać nowy Post na serwerze - pamiętaj, posty z Twojej lokalnej, testowej bazy danych nie będą wysyłane na Twojego produkcyjnego bloga.
 
 Po utworzeniu kilku postów możesz wrócić do konfiguracji lokalnej (nie PythonAnywhere). Od teraz powinnaś pracować na swoim lokalnym komputerze, jeżeli będziesz chciała dokonać zmian na stronie. To częsty sposób pracy w rozwijaniu stron WWW - wprowadzaj zmiany lokalnie, wypychaj je na GitHuba i zaciągaj na swój internetowy serwer WWW. Pozwala to na pracę i eksperymentowanie bez obawy, że zepsujesz działającą stronę. Całkiem nieźle, co nie?
 
