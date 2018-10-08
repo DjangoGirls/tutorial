@@ -376,7 +376,7 @@ Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokume
 
 Super, że możemy tworzyć posty klikając w link! Jest niestety jeden problem - aktualnie każdy, kto odwiedzi Twoją stronę, może stworzyć nowy post. Zróbmy tak, aby przycisk był widoczny tylko dla Ciebie i nikogo innego.
 
-Otwórzmy `blog/templates/blog/base.html` w edytorze kodu i znajdźmy nasz `page-header` `div` i zalinkuj tag, który umieściłyśmy tam wcześniej. Powinien wyglądać tak:
+Otwórzmy `blog/templates/blog/base.html` w edytorze kodu, znajdźmy nasz `page-header` `div` i zalinkujmy tag, który umieściłyśmy tam wcześniej. Powinien wyglądać tak:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Ten `{% if %}` spowoduje, że link zostanie wysłany do przeglądarki tylko wted
 
 Pamiętasz ikonkę edycji, która przed chwilą dodałyśmy do naszej strony szczegółów? Chcemy też dodać tę samą zmianę tutaj tak, by inne osoby nie były w stanie edytować istniejących postów.
 
-Otwórzmy `blog/templates/blog/post_detail.html` w edytorze kodu i dodaj poniższą linijkę:
+Otwórzmy `blog/templates/blog/post_detail.html` w edytorze kodu i dodajmy poniższą linijkę:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
