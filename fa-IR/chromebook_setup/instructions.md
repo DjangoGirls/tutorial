@@ -2,7 +2,7 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE یک ابزار است که به شما یک ویرایشگر کد و دسترسی به کامپیوتر در حال اجرا است در اینترنت که در آن شما می توانید نصب، نوشتن و اجرای نرم افزار را انجام دهید. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
@@ -49,7 +49,7 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 If this still doesn't work, ask your coach for some help.
 
-Next, run:
+اجرای بعدی:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -64,7 +64,7 @@ Next, run:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+یک حساب [گیت هاب](https://github.com) ایجاد کنید.
 
 ### پایتون هرجا
 
