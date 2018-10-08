@@ -101,7 +101,7 @@ Na następnym obrazku zostanie wyświetlony Twój URL do klonowania repozytorium
 
 Teraz musimy podpiąć repozytorium Git na komputerze do tego na GitHubie.
 
-Wpisz następujące polecenie do konsoli ( zamień <your-github-username> na swoją nazwę użytkownika, którą podałaś przy tworzeniu konta na GitHubie. Nie zapomnij o usunięciu nawiasów ("<" i ">"), ten URL powinien pasować do URL-a klonującego Twoje repozytorium.
+Wpisz następujące polecenie do konsoli (zamień <your-github-username> na swoją nazwę użytkownika, którą podałaś przy tworzeniu konta na GitHubie. Nie zapomnij o usunięciu nawiasów ("<" i ">"), ten URL powinien pasować do URL-a klonującego Twoje repozytorium.
 
 {% filename %}command-line{% endfilename %}
 
@@ -189,11 +189,11 @@ Teraz, jeśli chcesz, możesz również rzucić okiem na swój kod w PythonAnywh
     templates  tests.py  urls.py  views.py
     
 
-Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudowanej przeglądarki plików w PythonAnywhere. (Ze strony konsoli, możesz przejść do innych stron PythonAnywhere za pomocą przycisku menu w prawym górnym rogu. Po przejściu na jedną ze stron, w pobliżu góry zobaczysz linki do innych.)
+Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudowanej przeglądarki plików w PythonAnywhere. (Ze strony konsoli możesz przejść do innych stron PythonAnywhere za pomocą przycisku menu w prawym górnym rogu. Po przejściu na jedną ze stron, w pobliżu góry zobaczysz linki do innych.)
 
 ## Jesteś na żywo!
 
-Twoja strona powinna teraz być dostępna w publicznym internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym z kimkolwiek chcesz! :)
+Twoja strona powinna teraz być dostępna w publicznym internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym, z kimkolwiek chcesz! :)
 
 > **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt lub rozpocząć nowy, powinnaś przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/), aby uzyskać jakieś wskazówki dotyczące zabezpieczania witryny.
 
