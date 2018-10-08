@@ -11,29 +11,29 @@
 3. *New Server* 버튼을 클릭합니다.
 4. Terminal 버튼(왼쪽 창에 있습니다) 버튼을 클릭합니다.
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+이제 당신은 버튼이 왼쪽에 있는 사이드바 형태의 인터페이스를 볼 수 있을 겁니다. "Terminal" 버튼을 눌러 터미널 창을 연 뒤 해당 명령어를 입력하세요:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+하단의 영역은 Cloud 9가 당신을 위해 준비한 컴퓨터에게 명령을 내리는 터미널입니다. 크기를 좀 더 키우려면 창의 크기를 조절할 수 있습니다.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. [AWS Cloud9](https://aws.amazon.com/cloud9/) 사이트에 접속합니다.
+2. 새 계정을 생성합니다.
+3. *Create Environment*를 클릭 합니다
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+이제 당신은 다음과 같이 사이드바와 글자가 있는 큰 메인 창, 그리고 하단에 작은 창이 있는 인터페이스가 보일겁니다:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+이 하단의 영역은 당신이 사용할 수 있는 *터미널*입니다. 크기를 키우기 위해 창의 크기를 조절 할 수 있습니다.
 
 ### 가상 환경
 
