@@ -89,7 +89,7 @@ Po zapisaniu i odświeżeniu strony http://127.0.0.1:8000 zobaczyłaś znajomo w
 
 ## Adres URL
 
-Otwieramy plik `blog/urls.py` w edytorze kodu dodajemy wiersz:
+Otwieramy plik `blog/urls.py` w edytorze kodu i dodajemy wiersz:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Aby stworzyć nowy formularz dla modelu `Post`, musimy wywołać funkcję `PostF
 
 ## Szablon
 
-Musimy utworzyć plik `post_edit.html` w katalogu `blog/templates/blog` i otowrzyć go w edytoarze kodu. Aby nasz formularz zadziałał, niezbędne jest kilka rzeczy:
+Musimy utworzyć plik `post_edit.html` w katalogu `blog/templates/blog` i otowrzyć go w edytorze kodu. Aby nasz formularz zadziałał, niezbędne jest kilka rzeczy:
 
 * Musimy wyświetlić formularz. Możemy to zrobić np. za pomocą polecenia {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Powyższa linijka musi znajdować się wewnątrz znacznika formularza HTML: &lt;`form method="POST">...</form>`.
@@ -376,7 +376,7 @@ Jeżeli potrzebujesz więcej informacji o formularzach Django, zajrzyj do dokume
 
 Super, że możemy tworzyć posty klikając w link! Jest niestety jeden problem - aktualnie każdy, kto odwiedzi Twoją stronę, może stworzyć nowy post. Zróbmy tak, aby przycisk był widoczny tylko dla Ciebie i nikogo innego.
 
-Otwórzmy `blog/templates/blog/base.html` w edytorze kodu i znajdźmy nasz `page-header` `div` i zalinkuj tag, który umieściliśmy tam wcześniej. Powinien wyglądać tak:
+Otwórzmy `blog/templates/blog/base.html` w edytorze kodu i znajdźmy nasz `page-header` `div` i zalinkuj tag, który umieściłyśmy tam wcześniej. Powinien wyglądać tak:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
