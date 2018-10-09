@@ -8,25 +8,25 @@ Mit dem Tool Cloud IDE erhältst du Zugang zu einem Code-Editor und einem Rechne
 
 1. Gehe zu [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Lege dir dort ein Benutzerkonto an
-3. Klicke auf *Neuer Server*
-4. Click Terminal button(on the left side of the window)
+3. Klicke auf *New Server*
+4. Klicke auf die Schaltfläche "Terminal" (links im Browserfenster)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Jetzt solltest du links eine Schnittstelle mit einer Seitenleiste und Schaltflächen sehen. Klicke auf den "Terminal"-Button und öffne das Terminal-Fenster mit einer Eingabeaufforderung wie folgt:
 
-{% filename %}Terminal{% endfilename %}
+{% filename %}browser{% endfilename %}
 
     $
     
 
-The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Das Terminal wird dir den Computer bereitstellen, den Cloud 9 für deine Anweisungen vorbereitet hat. Du kannst die Größe des Fensters frei einstellen.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+1. Gehe zu [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. Lege dir dort ein Benutzerkonto an
-3. Click *Create Environment*
+3. Klicke auf *Create Environment*
 
-Jetzt solltest du eine Benutzeroberfläche mit Seitenleiste, ein grosses Fenster mit Text und am unteren Rand ein Feld sehen, das wie folgt aussieht:
+Jetzt solltest eine Benutzeroberfläche erscheinen mit einer Seitenleiste, einem großen Fenster mit irgendeinem Text und einem kleinen Fenster am unteren Rand, das ungefähr so aussieht:
 
 {% filename %}bash{% endfilename %}
 
