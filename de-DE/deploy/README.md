@@ -109,7 +109,7 @@ Gib das Folgende auf der Kommandozeile ein (ersetzte `<your-github-username>` mi
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+Wenn du zu GitHub pushst, wirst du nach deinem Benutzernamen und Passwort gefragt (entweder direkt im Kommandozeilen-Fenster oder in einem Pop-Up-Fenster), und nach der Eingabe deiner Zugangsdaten solltest du etwas Ähnliches wie das hier sehen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -167,9 +167,9 @@ Während du die Ausführung verfolgst, wirst du sehen, was passiert:
 - Deine statischen Dateien einrichten (darüber lernen wir später etwas)
 - PythonAnywhere so einrichten, dass es deine Web-App über seine Schnittstelle (API) präsentieren kann
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+Diese Schritte wurden auf PythonAnywhere automatisiert, aber es sind die selben Schritte, die du bei jedem anderen Server-Provider machen müsstest.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Das Wichtigste ist, dass du weisst, dass deine Datenbank auf PythonAnywhere komplett von deiner Datenbank auf deinem eigenen PC getrennt ist. Das bedeutet, sie kann unterschiedliche Posts und Administratorenkonten haben. Aus diesem Grund müssen wir das Administratorenkonto mittels `createsuperuser` initialisieren - wie wir das auf deinem eigenen Computer getan haben. PythonAnywhere hat deine virtualenv automatisch für dich aktiviert. Du musst nur noch Folgendes ausführen:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Und denke daran, dein Coach ist da, um zu helfen!
 
 # Schau dir deine Website an!
 
-Auf der Defaultseite deiner Site sollte "It worked!" stehen - genau so wie auf deinem lokalen Computer. Füge nun `/admin/` ans Ende deiner URL an und du kommst auf die Admin-Site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+Auf der Defaultseite deiner Site sollte "It worked!" stehen - genau so wie auf deinem lokalen Computer. Füge nun `/admin/` ans Ende deiner URL an und du kommst auf die Admin-Site. Logge dich mit Benutzername und Passwort ein, und du wirst sehen, dass du auf dem Server neue Posts hinzufügen kannst -- die Posts aus deiner lokalen Test-Datenbank wurden ja nicht auf deinen öffentlichen Blog geschickt.
 
 Wenn du ein paar Posts erstellt hast, kannst du zurück auf dein lokales Setup (nicht PythonAnywhere) wechseln. Ab jetzt solltest du für Änderungen auf deinem lokalen Setup arbeiten. So wird in der Web-Entwicklung gearbeitet - Änderungen lokal machen und diese dann auf GitHub veröffentlichen und dann deine Änderungen auf den produktiven Webserver ziehen. So kannst du Sachen ausprobieren, ohne deine produktive Website kaputt zu machen. Ziemlich cool, oder?
 
