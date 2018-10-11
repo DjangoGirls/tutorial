@@ -122,7 +122,7 @@ Queremos utilizar esto como parte de nuestra plantilla en los bloques de conteni
 {% endblock %}
 ```
 
-Solo falta una cosa. Tenemos que conectar estas dos plantillas. ¿Esto es lo que significa extender plantillas! Para eso tenemos que añadir una etiqueta "extends" al comienzo del archivo. Así:
+Solo falta una cosa. Tenemos que conectar estas dos plantillas. ¡Esto es lo que significa extender plantillas! Para eso tenemos que añadir una etiqueta "extends" al comienzo del archivo. Así:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
