@@ -42,7 +42,7 @@ Cuando te lo pida, escribe tu nombre de usuario (en minúscula, sin espacios), e
     Superuser created successfully.
     
 
-Vuelve a tu navegador. Ingresa con las credenciales de super usuario que tu escogiste; verás el panel de administrador de Django.
+Vuelve a tu navegador. Entra con las credenciales de super usuario que tu escogiste; verás el panel de administrador de Django.
 
 ![Administrador de Django](images/django_admin3.png)
 
