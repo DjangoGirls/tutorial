@@ -6,7 +6,7 @@ Nuestro blog todavía es un poco feo, ¿no te parece? ¡Es hora de ponerlo bonit
 
 El lenguaje CSS (las siglas en inglés de hojas de estilos en cascada, o Cascading Style Sheets) sirve para describir la apariencia de un sitio web escrito en un lenguaje de marcado (como HTML). Es como la capa de pintura para nuestra página web. ;)
 
-Pero no queremos empezar de cero otra vez, ¿verdad? De nuevo vamos a usar algo que otros programadores publicaron en Internet. Estar siempre reinventando la rueda no mola.
+Pero no queremos empezar de cero otra vez, ¿verdad? De nuevo vamos a usar algo que otros programadores han publicado ya en Internet. Estar siempre reinventando la rueda no mola.
 
 ## ¡Vamos a usar Bootstrap!
 
@@ -66,7 +66,7 @@ Vamos a crear un archivo CSS, para añadir tu propio estilo a la página. Crea u
 
 No vamos a profundizar demasiado en cómo personalizar y aprender CSS. Pero te podemos recomendar un un curso gratuito de CSS al final de esta página por si quieres aprender más.
 
-Vamos a hacer al menos un poquito. ¿Qué te parece si cambiamos el color del título? Los ordenadores utilizan códigos especiales para expresar los colores. Estos códigos empiezan con `#` seguidos por 6 letras (A-F) y números (0-9). Por ejemplo, el código del color azul es `#0000FF`. Puedes encontrar los códigos de muchos colores aquí: http://www.colorpicker.com/ y en otras páginas web. También puedes utilizar [colores predefinidos](http://www.w3schools.com/colors/colors_names.asp) utilizando su nombre en inglés, como `red` y `green`.
+Pero vamos a hacer al menos un poco. ¿Qué te parece si cambiamos el color del título? Los ordenadores utilizan códigos especiales para expresar los colores. Estos códigos empiezan con `#` seguidos por 6 letras (A-F) y números (0-9). Por ejemplo, el código del color azul es `#0000FF`. Puedes encontrar los códigos de muchos colores aquí: http://www.colorpicker.com/ y en otras páginas web. También puedes utilizar [colores predefinidos](http://www.w3schools.com/colors/colors_names.asp) utilizando su nombre en inglés, como `red` y `green`.
 
 En el archivo `blog/static/css/blog.css` deberías añadir el siguiente código:
 
