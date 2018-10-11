@@ -1,4 +1,4 @@
-# Resumen
+# Contenido
 
 * [Introducción](README.md)
 * [Instalación](installation/README.md)
