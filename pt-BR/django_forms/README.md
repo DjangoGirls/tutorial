@@ -14,7 +14,7 @@ Precisamos criar um arquivo com este nome dentro da pasta `blog`.
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+Agora vamos abri-lo e digitar o seguinte código:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Primeiro, precisamos importar o módulo de formulários do Django (*from django import forms*) e, obviamente, o nosso modelo *Post* (*from .models import Post*).
 
 `PostForm`, como você já deve suspeitar, é o nome do nosso formulário. Precisamos dizer ao Django que esse form é um `ModelForm` (pro Django fazer algumas mágicas para nós) – `forms.ModelForm` é o responsável por essa parte.
 
@@ -44,7 +44,7 @@ Novamente, criaremos um link para a página, uma URL, uma view e um template.
 
 ## Link para a página com o formulário
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+É hora de abrir *blog/templates/blog/base.html*. Nós iremos adicionar um link em *div* nomeado *page-header*:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
