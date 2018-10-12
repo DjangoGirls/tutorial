@@ -4,7 +4,7 @@ Estamos prestes a construir nossa primeira página Web: uma página inicial para
 
 ## O que é uma URL?
 
-A URL is a web address. Você pode ver uma URL toda vez que você visita um website - ela aparece na barra de endereços do seu navegador. (Sim! `127.0.0.1:8000` é uma URL! E `https://djangogirls.org` também é uma URL.)
+Uma URL é um endereço da web. Você pode ver uma URL toda vez que você visita um website - ela aparece na barra de endereços do seu navegador. (Sim! `127.0.0.1:8000` é uma URL! E `https://djangogirls.org` também é uma URL.)
 
 ![URL](images/url.png)
 
@@ -49,7 +49,7 @@ Isso significa que para cada URL que começa com `admin/`, o Django irá encontr
 
 Também queremos manter o arquivo de `mysite/urls.py` limpo, e portanto importaremos as URLS da nossa aplicação `blog` no arquivo principal `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+Vá em frente, adicione uma linha que importará `blog.urls` Você também precisará alterar a primeira linha porque estamos usando a função `include` aqui, então você precisará adicionar essa importação à linha.
 
 O seu arquivo `mysite/urls.py` deve agora se parecer com isto:
 
@@ -69,7 +69,7 @@ O Django agora irá redirecionar tudo o que entra em 'http://127.0.0.1:8000 /'pa
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+Crie um novo arquivo vazio chamado `urls.py` no diretório `blog`. É fácil! Basta adicionar essas duas linhas:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -98,6 +98,6 @@ Se você tentar visitar http://127.0.0.1:8000 / agora, vai encontrar alguma mens
 
 ![Erro](images/error1.png)
 
-Seu console está mostrando um erro, mas não se preocupe -- este erro é bastante útil: ele está dizendo que não existe nenhum atributo **post_list** no módulo de views. Esse é o nome da *view* que Django está tentando encontrar e usar, mas ainda não a criamos. Por enquanto, seu `/admin/` também não funcionará. Mas não se preocupe, nós chegaremos lá. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Seu console está mostrando um erro, mas não se preocupe -- este erro é bastante útil: ele está dizendo que não existe nenhum atributo **post_list** no módulo de views. Esse é o nome da *view* que Django está tentando encontrar e usar, mas ainda não a criamos. Por enquanto, seu `/admin/` também não funcionará. Mas não se preocupe, nós chegaremos lá. Se você vir uma mensagem de erro diferente, tente reiniciar seu servidor da web. Entre na linha de comando, interrompa o servidor pressionando Ctrl+C (Control seguido da tecla C, juntas) e reinicie-o rodando `python manage.py runserver`.
 
 > Se você quer saber mais sobre a configuração de URLs no Django, veja a documentação oficial: https://docs.djangoproject.com/en/2.0/topics/http/urls/
