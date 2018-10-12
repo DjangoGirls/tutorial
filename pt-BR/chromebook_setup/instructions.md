@@ -2,44 +2,44 @@ Você pode [pular este capítulo](http://tutorial.djangogirls.org/en/installatio
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-O Cloud IDE é uma ferramenta que fornece um editor de código e acesso a um computador em execução na Internet, onde você pode instalar, gravar e executar o software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+O Cloud IDE é uma ferramenta que fornece um editor de código e acesso a um computador em execução na Internet, onde você pode instalar, gravar e executar o software. Para a duração do tutorial, o IDE na nuvem funcionará como sua * máquina local *. Você ainda estará executando comandos em uma interface de terminal (ou prompt de comando), como seus colegas de classe no OS X, Ubuntu ou Windows, mas seu prompt estará conectado a um computador remoto configurado pelo Cloud 9. Estas são as instruções para Cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). Você pode escolher uma das Cloud IDEs, e seguir as instruções.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+1. Vá para *PaizaCloud Cloud IDE *
+2. Registre-se
+3. Clique em *New Server*
+4. Clique no botão Terminal (no lado esquerdo da janela)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Agora você deve ver uma interface com uma barra lateral, botões no canto esquerdo. Clique no botão "Terminal" para abrir a janela de terminal com prompt como este:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Esta área inferior é seu terminal (ou prompt de comando), onde você dará as instruções para o computador que o Cloud 9 preparou. Você pode redimensionar a janela para torná-la um pouco maior.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. Ir para [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Registre-se
+3. Clique em *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Agora, a sua tela deve exibir uma interface com uma barra lateral, uma grande janela principal com algum texto e uma pequena janela na parte inferior, semelhante a isto:
 
 {% filename %}bash{% endfilename %}
 
-    yourusername:~/workspace $
+    seunomedeusuário:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Esta área inferior é seu *terminal* (ou prompt de comando), onde você dará as instruções para o computador que o Cloud 9 preparou. Você pode redimensionar a janela para torná-la um pouco maior.
 
 ### Ambiente Virtual
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Um ambiente virtual (também chamado de virtualenv) é como uma caixa privada em que podemos colocar código de computador útil para um projeto em que estejamos trabalhando. Nós os utilizamos para manter separados uns dos outros os vários pedaços de código que queremos para nossos diferentes projetos, para que as coisas não se misturem entre eles.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+No seu terminal, na parte de baixo da interface do Cloud 9, execute o seguinte:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Se não funcionar, peça ajuda ao seu treinador.
 
-Next, run:
+Em seguida, execute:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,7 +60,7 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(note que na última linha, utilizamos um til seguido de um sinal de igual: ~=).
 
 ### GitHub
 
@@ -68,8 +68,8 @@ Crie uma conta no [GitHub](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+O tutorial do Django Girls inclui uma seção que chamamos de Deploy (algo como "implantação", em Português), que é o processo de mover o código que alimenta a sua nova aplicação web para um computador de acesso público (chamado de servidor) para que outras pessoas possam ver o seu trabalho.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Esta parte é um pouco estranha quando o tutorial é feito num Chromebook por que já estamos usando um computador que está na Internet (ao contrário de, digamos, um laptop). No entanto, ainda é útil, já que podemos pensar no ambiente do Cloud 9 como um lugar pra nosso trabalho em andamento e no Python Anywhere como um lugar para mostrar nosso trabalho conforme ele vai ficando mais completo.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Assim, crie uma nova conta Python Anywhere em *www.pythonanywhere.com*.
