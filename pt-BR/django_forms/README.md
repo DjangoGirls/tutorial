@@ -85,11 +85,11 @@ Depois de adicionar essa linha, o seu HTML vai ficar assim:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Depois de salvar e recarregar a página *http://127.0.0.1:8000* você verá, obviamente, um erro familiar `NoReverseMatch` certo?
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Vamos abrir o arquivo *blog/urls.py* e escrever:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Após recarregar a página, veremos um `AttributeError` por que não temos a vie
 
 ## View post_new
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Hora de abrir o arquivo *blog/views.py* e adicionar as linhas seguintes com o resto das linhas *from*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Para criar um novo formulario `Post`, devemos chamar `PostForm()` e passá-lo pa
 
 ## Template
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Precisamos criar um arquivo *post_edit.html* na pasta *blog/templates/blog*. Pra fazer o formulário funcionar precisamos de muitas coisas:
 
 * Temos que exibir o formulário. Podemos fazer isso com (por exemplo) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * A linha acima precisa estar dentro de uma tag HTML form: `<form method="POST">...</form>`.
@@ -175,7 +175,7 @@ A resposta é: nada. Precisamos trabalhar um pouco mais na nossa *view*.
 
 ## Salvando o formulário
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Abra *blog/views.py* mais uma vez. Atualmente tudo que temos na view *post_new* é:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django está confirmando que todos os campos de nosso formulário estão correto
 
 Agora sabemos como adicionar um novo formulário. Mas e se quisermos editar um que já existe? É muito parecido com o que acabamos de fazer. Vamos criar algumas coisas importantes rapidinho. (Se você não entender alguma coisa, pergunte para a sua monitora ou veja os capítulos anteriores -- já cobrimos todas essas etapas anteriormente.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Abra *blog/templates/blog/post_detail.html* e adicione esta linha
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ agora, o template estará parecido com:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Vamos abrir o arquivo *blog/urls.py* e escrever:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ Open `blog/urls.py` in the code editor, and add this line:
 
 Vamos reutilizar o template `blog/templates/blog/post_edit.html`, então a última coisa que falta é uma *view*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Vamos abrir *blog/views.py* e adicionar ao final do arquivo:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -374,9 +374,9 @@ Se precisar de mais informações sobre formulários do Django, leia a documenta
 
 ## Segurança
 
-Being able to create new posts by clicking a link is awesome! Mas nesse momento, qualquer um que visitar nosso site poderá criar um novo post, e você isso provavelmente não quer isso. Vamos fazer com que o botão apareça apenas para você e para mais ninguém.
+Ser capaz de criar novos posts apenas clicando em um link é ótimo! Mas nesse momento, qualquer um que visitar nosso site poderá criar um novo post, e você isso provavelmente não quer isso. Vamos fazer com que o botão apareça apenas para você e para mais ninguém.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Em `blog/templates/blog/base.html`, procure nossa `div` `page-header` e a tag de link que você colocou mais cedo. Deve se parecer com:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Este `{% if %}` fará com que o link seja enviado ao navegador se o usuário que
 
 Lembra do ícone Editar que acabamos de adicionar à nossa página de detalhes? Queremos fazer a mesma coisa com ele para que outras pessoas não possam editar as mensagens já existentes.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Abra `blog/templates/blog/post_detail.html` e adicione esta linha:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -444,6 +444,6 @@ Vamos ver se tudo isso funciona no PythonAnywhere. Hora de fazer outro deploy!
 
 (Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
+* Finalmente, suba para a [página "Web"](https://www.pythonanywhere.com/web_app_setup/) (use o botão de menu no canto superior direito do console) e pressione **Recarregar**. Atualize seu blog https://yourname.pythonanywhere.com para ver as alterações.
 
 E deve ser isso! Parabéns :)
