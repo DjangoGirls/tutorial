@@ -26,7 +26,7 @@ O resultado deve ser:
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+Agora você está no console interativo do Django. Ele é como o prompt do Python, só que com umas mágicas adicionais ;). Você pode usar todos os comandos do Python aqui também, é claro.
 
 ### Todos os objetos
 
@@ -89,7 +89,7 @@ Quais usuários temos no nosso banco de dados? Experimente isso:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+Este é o superusuário que criamos anteriormente! Vamos pegar uma instância do usuário agora (ajuste esta linha para usar seu próprio nome de usuário):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ This is the superuser we created earlier! Let's get an instance of the user now 
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Como você pode ver, agora `obtém` um `Usuário` com um `nome de usuário` que é igual a 'ola'. Arrumado!
 
 Agora finalmente podemos criar nosso post:
 
