@@ -23,7 +23,7 @@ Os templates são salvos no diretório `blog/templates`. Então, crie um diretó
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(Você deve estar se perguntando porque nós precisamos de dois diretórios chamados `blog` - como você descobrirá mais para frente, essa é uma convenção que facilita a nossa vida quando as coisas começam a ficar mais complicadas.)
 
 E agora nós criamos o arquivo `post_list.html` (deixe-o em branco por enquanto) dentro do diretório `blog/templates/blog`.
 
@@ -35,7 +35,7 @@ Veja como o nosso site está agora: http://127.0.0.1:8000/
 
 Acabaram-se os erros! Uhuu :) Entretanto, nosso site não mostra nada a não ser uma página em branco. Isso acontece porque o nosso template está vazio. Precisamos consertar isso.
 
-Open the new file in the code editor, and add the following:
+Abra o novo arquivo no editor de código e adicione o seguinte:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -210,8 +210,8 @@ Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
 
 (Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+E veja seu código ser baixado. Se você quiser verificar se ele chegou, você pode pular para a **página "Arquivos"**e visualizar seu código no PythonAnywhere (você pode acessar outras páginas do PythonAnywhere a partir do botão de menu na página do console).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* Finalmente, pule para a aba ["Web" page](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em sua aplicação.
 
 Sua atualização deve estar no ar! Vá em frente e atualize seu site no navegador. As alterações devem estar visíveis. :)
