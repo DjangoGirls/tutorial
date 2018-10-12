@@ -12,7 +12,7 @@ Já temos um modelo de `Post`, então não precisamos adicionar nada ao `models.
 
 ## Criando um link para os detalhes de um post
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Vamos começar com a adição de um link dentro do arquivo `blog/templates/blog/post_list.html`. Neste momento ele deve se parecer com: Abra-o no editor de código e, até agora, deve ficar assim:{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -70,9 +70,9 @@ urlpatterns = [
 
 A parte `post/<int:pk>/` especifica um padrão de URL – vamos explicar:
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `post/` significa apenas que a URL deve começar com a palavra **post** seguida por **/**. Até aqui, tudo bem.
 - `<int:pk>` – essa parte é um pouco mais complicada. Ela nos diz que o Django espera um objeto do tipo inteiro e que vai transferi-lo para a view como uma variável chamada `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- `/` – por fim, precisamos adicionar uma **/** ao final da nossa URL.
 
 Isso significa que se você digitar `http://127.0.0.1:8000/post/5/` em seu navegador, o Django vai entender que você está procurando uma *view* chamada `post_detail` e vai transferir a informação de que `pk` é igual a `5` para essa *view*.
 
@@ -80,7 +80,7 @@ Legal, adicionamos um novo padrão de URL para `blog/urls.py`! Vamos atualizar a
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+Você se lembra qual é o próximo passo? Claro: adicionar uma view!
 
 ## Adicionando a view de detalhes do post
 
@@ -98,7 +98,7 @@ Mas este código tem um problema. Se não houver nenhum `Post` com a `chave prim
 
 ![erro DoesNotExist](images/does_not_exist2.png)
 
-Não queremos isso! But luckily Django comes with something that will handle that for us: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro -- `Page Not Found 404` (página não encontrada).
+Não queremos isso! Mas, claro, o Django vem com algo que vai lidar com isso para nós: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro -- `Page Not Found 404` (página não encontrada).
 
 ![Página não encontrada](images/404_2.png)
 
@@ -108,7 +108,7 @@ Hora de adicionar uma *view* ao nosso arquivo `views.py`!
 
 Em `blog/urls.py`, criamos uma regra de URL chamada `post_detail` que se refere a uma view chamada `views.post_detail`. Isto significa que o Django espera uma função chamada `post_detail` dentro de `blog/views.py`.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+Vamos abrir `blog/views.py` e adicionar o seguinte código perto das outras linhas `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Ah não! Outro erro! Mas nós já sabemos como lidar com isso, né? Precisamos a
 
 ## Criando um template para os detalhes do post
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+Vamos criar um arquivo em `blog/templates/blog` chamado `post_detail.html`.
 
 Ele vai ter essa cara:
 
