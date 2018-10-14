@@ -31,7 +31,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Gaya ng makikita mo, naglikha tayo ng function (`def`) na tinatawag na `post_list` na kukuha ng mga `request` at `magbalik` ng function na `render` na mag render (bumuo) sa ating template na `blog/post_list.html`.
+As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
 
 I-save ang file, puntahan ang http://127.0.0.1:8000/ at tingnan kung ano ang laman.
 
