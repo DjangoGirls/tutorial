@@ -31,7 +31,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-อย่างที่คุณเห็น เราได้สร้างฟังก์ชั่น (`def`) ที่ชื่อว่า `post_list` โดยรับ `request` และ `return` ฟังก์ชั่น `render` ซึ่งจะแสดงผล (ซึ่งรวมเข้ากับ) template ของเราคือไฟล์ `blog/post_list.html`.
+As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
 
 บักทึกไฟล์ แล้วไปที่ http://127.0.0.1:8000/ และดูว่าเกิดไรขึ้น
 
