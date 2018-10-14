@@ -44,7 +44,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,26 +55,28 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-في Windows، انها علامة `>`، مثل هذا:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-سيتم إرفاق كل أمر قبل هذه الإشارة ومسافة واحدة، ولكن ليس عليك كتابته. سيقوم جهاز الكمبيوتر بالقيام بذلك نيابة عنك. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > مجرد ملاحظة صغيرة: في الحالة الخاصة بك قد يكون هناك شيء من هذا القبيل `C:\Users\ola >` أو `Olas-MacBook-Air:~ ola$` قبل التوقيع الفوري، وهذا موافق 100 ٪.
 
-يطلق على الجزء`$` أو `>` أو *موجه سطر الأوامر*، أو *موجه* كإسم قصير. فإنه يطالبك بإدخال شيء هناك.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-في البرنامج التعليمي، عندما نريد منك أن تكتب أمر ما ، سوف نشمل `$` أو `>`، وأحيانا أكثر إلى اليسار. Ignore the left part and only type in the command, which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## الأمر الأول الخاص بك (ياي!)
 
-لنبدأ بكتابة هذا الأمر:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,7 +96,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-ثم اضغط على `enter`. هذه هي النتيجة لدينا:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ If you're on Mac or Linux, you probably see `$`, like this:
     olasitarska
     
 
-كما ترون، الكمبيوتر قد طبع اسم المستخدم الخاص بك. أنيق، هاه؟ :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > حاول كتابة كل أمر؛ لا نسخ ولصق. عليك أن تتذكر هذه الطريقة أكثر!
 
 ## الأساسيات
 
-كل نظام تشغيل يحتوي على مجموعة مختلفة قليلاً من أوامر سطر الأوامر، لذا تأكد من اتباع التعليمات لنظام التشغيل الخاص بك. دعونا نحاول هذا،هيا بنا؟
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### الدليل الحالي
 
-سيكون من الجميل أن نعرف أين نحن الآن، اليس كذالك؟ لنرى. اكتب هذا الأمر وإضغط `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-ربما سترى شيئا مشابها على الجهاز الخاص بك. عندما تقوم بفتح سطر الأوامر تبدأ عادة في الدليل الرئيسي للمستخدم الخاص بك.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### قائمة الملفات والدلائل
 
-اذا ماذا فيها ؟ سيكون من الرائع معرفة ذالك ، دعونا نرى:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 ### تغيير الدليل الحالي
 
-الآن، دعنا نذهب إلى دليل سطح المكتب:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-تحقق إذا كان تم تغييره حقا:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-ها هي ذا!
+Here it is!
 
 > نصيحة المحترفين: إذا كتبت <`cd D`، ثم ضغطت في `tab` على لوحة المفاتيح، فسيملأ سطر الأوامر تلقائيا بقية الاسم حتى تتمكن من التنقل بشكل أسرع. إذا كان هناك أكثر من مجلد واحد بدءاً من"D"، اضغط مفتاح `tab` مرتين للحصول على قائمة الخيارات.
 
@@ -229,7 +231,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 ### إنشاء دليل
 
-ماذا عن إنشاء دليل للتدرب على سطح المكتب؟ يمكنك القيام بذلك بهذه الطريقة:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-سيؤدي هذا الأمر الصغير إلى إنشاء مجلد باسم `practice` على سطح المكتب. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! جربها. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > نصيحة للمحترفين: إذا كنت لا تريد كتابة الأوامر نفسها مرارا وتكرارا، فجرب الضغط على `up arrow` و `down arrow` على لوحة المفاتيح للتنقل عبر الأوامر المستخدمة مؤخرا.
 
@@ -257,7 +259,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 ### تمارين!
 
-تحدي صغيرة بالنسبة لك: في الدليل الذي تم إنشاؤه حديثا `practice` ، قم بإنشاء دليل يسمى `test`(استخدم الأمرين `cd` و `mkdir`.)
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### الحل:
 
@@ -285,15 +287,15 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-مبروك
+Congrats! :)
 
 * * *
 
 ### التنظيف
 
-لا نريد أن تترك فوضى، لذلك دعونا نزيل كل ما قمنا به حتى هذه النقطة.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-أولاً، نحن بحاجة للعودة إلى سطح المكتب:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -313,9 +315,9 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-باستخدام `.` مع الأمر `cd` سيتم تغيير الدليل الحالي الخاص بك إلى الدليل الأصل (أي، الدليل الذي يحتوي على الدليل الحالي الخاص بك).
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-تحقق أين أنت:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-حان الوقت الآن لحذف دليل `practice`:
+Now time to delete the `practice` directory:
 
 > **انتباه**: حذف الملفات باستخدام `del`, `rmdir` أو `rm` غير قابلة للاسترداد، مما يعني * الملفات ستزول إلى الأبد*! لذا كن حدرا جدا مع هذه الأوامر.
 
@@ -360,7 +362,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-تم! للتأكد دعونا نتحقق من انك حدفته فعليا:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 ### خروج
 
-هذا كل شيء الأن! يمكنك إغلاق سطر الأوامر الآن بأمان. دعونا نفعل ذلكبطريقة الهكر، حسنا؟ :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-جيد ، هاه
+Cool, huh? :)
 
 ## الملخص
 
-هنا ملخص لبعض الأوامر المفيدة:
+Here is a summary of some useful commands:
 
 | الأوامر (في Windows) | الأوامر في (ماك/لينكس) | الوصف               | أمثلة                                             |
 | -------------------- | ---------------------- | ------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ If you're on Mac or Linux, you probably see `$`, like this:
 | rmdir (or del)       | rm                     | حذف الملف           | **del c:\test\test.txt**                        |
 | rmdir /S             | rm -r                  | حذف الدليل          | **rm -r testdirectory**                           |
 
-هذه فقط عدد قليل جداً من الأوامر يمكنك تشغيلها في سطر الأوامر الخاصة بك، ولكن انت لن تستخدم اي شيء اكثر من ذالك هذا اليوم.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-إذا كنت فضولي، [ss64.com](http://ss64.com) يحتوي على مرجع كامل لأوامر لكافة أنظمة التشغيل.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## مستعد ؟
 
-دعونا نغوص في بايثون!
+Let's dive into Python!
