@@ -44,7 +44,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-在 Windows 上，它是一个 `>` 标志，像这样：
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-每个命令将前缀由这个符号和一个空格组成，但您不必键入它。您的计算机将为您完成这个. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -94,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-然后键入 `enter`。这是我们的结果：
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ Let's start by typing this command:
     olasitarska
     
 
-正如你所看到的计算机刚刚打印了你的用户名。棒吧，呵呵? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## 基础知识
 
-每个操作系统都有一组略有不同的适用于相应命令行的命令，所以请务必按照您的操作系统说明来做。我们试试这个，好吗？
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### 当前目录: 
 
-知道身在何处让人高兴，对不对？让我们看看。输入命令并键入`enter`：
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-在你的机器上你可能会看见类似的东西。一旦你打开命令行工具你通常开始于用户主目录。
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### 列出文件和目录
 
-那么它是什么？它一定很酷，找出。让我们看看：
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ Let's start by typing this command:
 
 ### 更改当前目录
 
-现在，让我们去我们桌面目录：
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-请检查它是否真的发生改变了：
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-它在这儿 ！
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -229,7 +231,7 @@ Let's start by typing this command:
 
 ### 创建目录
 
-在你的桌面上创建一个practice目录怎么样？你可以这样做：
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-这小小的命令将在桌面上为你创建名为`practice` 的目录。 You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! 试试. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > 进阶提示： 如果你不想要一遍又一遍地键入相同的命令，试着按 `向上箭头键` 和 `向下箭头` 下循环查看最近你使用过的命令。
 
@@ -285,15 +287,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-恭喜 ！:)
+Congrats! :)
 
 * * *
 
 ### 清理
 
-我们不想留下一个烂摊子，所以让我们删除所有的东西，直到达到目的。
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-首先，我们需要回到桌面：
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +317,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-检查你在哪里：
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-现在删除 `practice` 目录：
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +362,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-完成了 ！为了肯定它真的已经删除了，让我们检查一下：
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 ### 退出
 
-暂时就到这里！你可以安全的关闭命令行。让我们以黑客的方式，好吗? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-很酷吧? :)
+Cool, huh? :)
 
 ## 摘要
 
-这里是一些有用的命令摘要：
+Here is a summary of some useful commands:
 
 | 命令 (Windows)   | 命令 （Mac OS / Linux） | 说明：                        | 示例：                                               |
 | -------------- | ------------------- | -------------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ Using `..` with the `cd` command will change your current directory to the paren
 | rmdir (or del) | rm                  | delete a file              | **del c:\test\test.txt**                        |
 | rmdir /S       | rm -r               | delete a directory         | **rm -r testdirectory**                           |
 
-这些不过是你在你的命令行中可以运行的少量命令，但你今天不会用到比这里更多的了。
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-如果你好奇，[ss64.com](http://ss64.com) 包含用于所有操作系统命令的完整引用。
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## 准备好了吗？
 
-让我们深入到 Python ！
+Let's dive into Python!
