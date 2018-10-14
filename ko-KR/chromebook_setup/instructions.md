@@ -18,7 +18,7 @@
     $
     
 
-하단의 영역은 Cloud 9가 당신을 위해 준비한 컴퓨터에게 명령을 내리는 터미널입니다. 크기를 좀 더 키우려면 창의 크기를 조절할 수 있습니다.
+The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
 
 #### AWS Cloud9
 
