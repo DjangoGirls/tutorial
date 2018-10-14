@@ -44,7 +44,7 @@ You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, it's a `>` sign, like this:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -360,7 +362,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Έγινε! Για να βεβαιωθείς οτι έχει διαγραφεί, ας το ελέγξουμε:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ Now time to delete the `practice` directory:
 
 ### $ rm -r practice
 
-Αυτά για τώρα! Μπορείς να κλείσεις τη γραμμή εντολών με ασφάλεια τώρα. Ας το κάνουμε με τον τρόπο του χάκερ, εντάξει? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Ωραίο, ε? :)
+Cool, huh? :)
 
 ## Περίληψη
 
-Μια περίληψη κάποιων χρήσιμων εντολών:
+Here is a summary of some useful commands:
 
 | Εντολή (Windows) | Εντολή (Mac OS / Linux) | Περιγραφή                     | Παράδειγμα                                        |
 | ---------------- | ----------------------- | ----------------------------- | ------------------------------------------------- |
