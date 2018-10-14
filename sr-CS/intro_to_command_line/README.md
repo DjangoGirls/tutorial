@@ -44,7 +44,7 @@ Trebalo bi da vidite beli ili crni prozor koji čeka vaše komande.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Na Windows-u imate znak `>`, poput ovoga:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Svaka komanda će imate prefiks koji se sastoji od ovog znaka i jednog razmaka, ali ih ne morate kucate. Vaš računar će to uraditi za vas. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -94,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-I pritisnite `enter`. Ovo je naš rezultat:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ I pritisnite `enter`. Ovo je naš rezultat:
     olasitarska
     
 
-Kao što vidite, računar je jednostavno ispisao vaše korisničko ime. Strava, zar ne? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Osnove
 
-Svaki operativni sistem ima malo drugačiji skup komandi za komandnu liniju, te budite sigurni da pratite instrukcije za vaš operativni sistem. Probajmo sledeće:
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Trenutni direktorijum
 
-Bilo bi lepo znati gde smo sada, zar ne? Pogledajmo. Ukucajte sledeću komandu i pritisnite `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ Bilo bi lepo znati gde smo sada, zar ne? Pogledajmo. Ukucajte sledeću komandu i
 
 <!--endsec-->
 
-Verovatno ćete videti nešto slično na vašoj mašini. Kada otvorite komandnu liniju, obično počinjete na home direktorijimu vašeg naloga.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Izlistavanje fajlova i direktorijuma
 
-Šta je sve unutra? Bilo bi interesantno otkriti. Pogledajmo:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ Verovatno ćete videti nešto slično na vašoj mašini. Kada otvorite komandnu 
 
 ### Promena tekućeg direktorijuma
 
-Hajdemo sada na Desktop direktorijum:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ Hajdemo sada na Desktop direktorijum:
 
 <!--endsec-->
 
-Proverimo da li se stvarno promenio:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ Proverimo da li se stvarno promenio:
 
 <!--endsec-->
 
-Tu je!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -229,7 +231,7 @@ Tu je!
 
 ### Kreiranje direktorijuma
 
-Šta kažete na to da napravimo direktorijum vežbe radi na vašem desktop-u? Možete to učiniti na sledeći način:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ Tu je!
 
 <!--endsec-->
 
-Ova mala komanda kreira folder sa nazivom `vezba` na vašem desktop-u. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Probajte. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO saver> Ako ne želite da kucate istu komandu ponovo i ponovo, pritisnite `strelicu na gore` i `strelicu na dole` na vašoj tastaturi da biste se kretali kroz skoro unete komande.
 
@@ -285,15 +287,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Čestitamo! :)
+Congrats! :)
 
 * * *
 
 ### Čišćenje
 
-Ne želimo da ostavimo haos, pa hajde da izbrišemo sve što smo uradili do ove tačke.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Najpre treba da se vratimo na desktop:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +317,7 @@ Najpre treba da se vratimo na desktop:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Pogledajmo gde smo:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Pogledajmo gde smo:
 
 <!--endsec-->
 
-Sada je vreme da izbrišemo `practice` direktorijum:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +362,7 @@ Sada je vreme da izbrišemo `practice` direktorijum:
 
 <!--endsec-->
 
-Gotovo! Da bismo bili sigurni da je stvarno izbrisano, proverimo sledeće:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ Gotovo! Da bismo bili sigurni da je stvarno izbrisano, proverimo sledeće:
 
 ### Izlazak
 
-To je to za sada! Možete bezbedno zatvoriti komandnu liniju sadad. Hajde da to uradimo na hakerski način? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -406,7 +408,7 @@ Cool, huh? :)
 
 ## Kratak pregled
 
-Evo pregleda nekih korisnih komandi:
+Here is a summary of some useful commands:
 
 | Komande (Windows) | Komande (Mac OS / Linux) | Opis                            | Primer                                            |
 | ----------------- | ------------------------ | ------------------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ Evo pregleda nekih korisnih komandi:
 | rmdir (or del)    | rm                       | delete a file                   | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                    | delete a directory              | **rm -r testdirectory**                           |
 
-Ovo je samo mali broj komandi koje možete koristiti u vašoj komandnoj liniji, ali danas nećete koristiti ništa više dodatno.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Ako vas zanima, [ss64.com](http://ss64.com) sadrži kompletan pregled svih komandi za sve operativne sisteme.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Spremni?
 
-Hajde da se bacimo na Python!
+Let's dive into Python!
