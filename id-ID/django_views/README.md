@@ -29,7 +29,7 @@ Ingat bahwa baris yang dimulai dengan ` # </ 0> adalah komentar - ini berarti ba
     return render(request, 'blog/post_list.html', {})
 `</pre> 
 
-Sebagaimana dapat anda lihat, kita membuat sebuah fungsi (`def`) namanya `post_list` yang melakukan `request` dan `me-return` sebuah fungsi `render` yang akan melakukan render (menggabungkan) template `blog/post_list.html` kita.
+As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
 
 Simpan filenya, pergi ke http://127.0.0.1:8000/ dan lihat apa yang kita punya.
 
