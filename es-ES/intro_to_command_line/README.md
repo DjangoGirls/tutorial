@@ -44,7 +44,7 @@ Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Si estás en un Mac o Linux, seguramente verás un símbolo `$`, como este:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,26 +55,28 @@ Si estás en un Mac o Linux, seguramente verás un símbolo `$`, como este:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-En Windows, es un signo así `>`, como este:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Cada comando será precedido por este signo y un espacio, pero no tienes que escribirlo. Tu computadora lo hará por ti. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Sólo una pequeña nota: en tu caso puede que haya algo como `C:\Users\ola>` o `Olas-MacBook-Air:~ ola$` antes del símbolo prompt y eso está perfecto.
 
-La parte hasta e incluyendo `$` o `>` se llama la *línea de comandos* o *prompt*. Esta te solicita escribir algo ahí.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-En el tutorial, cuando queremos escribir un comando, incluiremos el `$` o `>` y de vez en cuando más a la izquierda. Ignora la parte izquierda y teclea sólo el comando, que es lo que empieza después del prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Tu primer comando (¡BIEN!)
 
-Comencemos escribiendo este comando:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,24 +96,24 @@ Comencemos escribiendo este comando:
 
 <!--endsec-->
 
-Y pulsa `enter`. Este es nuestro resultado:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
     $ whoami olasitarska
     
 
-Como puedes ver, el ordenador ha imprimido tu nombre de usuario. Genial, ¿eh? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Trata de escribir cada comando, no copies y pegues. ¡Te acordarás más de esta manera!
 
 ## Fundamentos
 
-Cada sistema operativo tiene un conjunto diferente de comandos para la línea de comandos, así que asegúrate de seguir las instrucciones para tu sistema operativo. Vamos a intentarlo, ¿de acuerdo?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Directorio actual
 
-Estaría bien saber dónde estamos ahora, ¿verdad? Vamos a ver. Escribe este comando y pulsa `intro`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -137,13 +139,13 @@ Estaría bien saber dónde estamos ahora, ¿verdad? Vamos a ver. Escribe este co
 
 <!--endsec-->
 
-Probablemente verás algo similar en tu máquina. Una vez que abres la línea de comandos generalmente empiezas en el directorio home de tu usuario.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Listar ficheros y directorios
 
-¿Qué hay aquí? Sería bueno saber. Veamos:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -178,7 +180,7 @@ Probablemente verás algo similar en tu máquina. Una vez que abres la línea de
 
 ### Cambia el directorio actual
 
-Ahora, vayamos a nuestro directorio Desktop, el escritorio:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -198,7 +200,7 @@ Ahora, vayamos a nuestro directorio Desktop, el escritorio:
 
 <!--endsec-->
 
-Comprueba si realmente ha cambiado:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -220,7 +222,7 @@ Comprueba si realmente ha cambiado:
 
 <!--endsec-->
 
-¡Aquí está!
+Here it is!
 
 > Truco pro: si escribes `cd D` y luego pulsas `tab` en el teclado, la línea de comandos automáticamente completará el resto del nombre para que puedas navegar más rápido. Si hay más de una carpeta que empiece con "D", dale al botón `tab` dos veces para obtener una lista de opciones.
 
@@ -228,7 +230,7 @@ Comprueba si realmente ha cambiado:
 
 ### Crear directorio
 
-¿Qué tal si creamos un directorio de práctica en el escritorio? Lo puedes hacer de esta manera:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -248,7 +250,7 @@ Comprueba si realmente ha cambiado:
 
 <!--endsec-->
 
-Este pequeño comando creará una carpeta con el nombre `practice` en el escritorio. Puedes comprobar que efectivamente está allí mirando en tu Escritorio o ejecutando un comando `ls` o `dir`. ¡Inténtalo! :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > Truco pro: Si no quieres escribir una y otra vez los mismos comandos, prueba pulsando la `flecha arriba` y la `flecha abajo` de tu teclado para ir pasando por los comandos utilizados recientemente.
 
@@ -256,7 +258,7 @@ Este pequeño comando creará una carpeta con el nombre `practice` en el escrito
 
 ### ¡Ejercicios!
 
-Un pequeño reto para ti: en el directorio `practice` que acabas de crear crea un directorio llamado `test`. (Utiliza los comandos `cd` y `mkdir`.)
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### Solución:
 
@@ -284,15 +286,15 @@ Un pequeño reto para ti: en el directorio `practice` que acabas de crear crea u
 
 <!--endsec-->
 
-¡Enhorabuena! :)
+Congrats! :)
 
 * * *
 
 ### Limpieza
 
-No queremos dejar un lío, así que vamos a eliminar todo lo que hemos hecho hasta este momento.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-En primer lugar, tenemos que volver al escritorio:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -312,9 +314,9 @@ En primer lugar, tenemos que volver al escritorio:
 
 <!--endsec-->
 
-Usar `..` con el comando `cd` hará que cambie el directorio actual al directorio padre (el que contiene el directorio actual).
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Revisa dónde estás:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -336,7 +338,7 @@ Revisa dónde estás:
 
 <!--endsec-->
 
-Es el momento de eliminar el directorio `practice`:
+Now time to delete the `practice` directory:
 
 > **Atención**: Eliminar archivos utilizando `del`, `rmdir` o `rm` hace que no puedan recuperarse, lo que significa que los *archivos borrados desaparecerán para siempre*! Así que ten mucho cuidado con este comando.
 
@@ -359,7 +361,7 @@ Es el momento de eliminar el directorio `practice`:
 
 <!--endsec-->
 
-¡Hecho! Para asegurarnos de que realmente se ha eliminado, vamos a comprobarlo:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -381,7 +383,7 @@ Es el momento de eliminar el directorio `practice`:
 
 ### Salida
 
-Esto es todo por ahora! Ya puedes cerrar la línea de comandos sin problema. Vamos a hacerlo al estilo hacker, ¿vale? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -401,11 +403,11 @@ Esto es todo por ahora! Ya puedes cerrar la línea de comandos sin problema. Vam
 
 <!--endsec-->
 
-Genial, ¿no? :)
+Cool, huh? :)
 
 ## Resumen
 
-Aquí hay una lista de algunos comandos útiles:
+Here is a summary of some useful commands:
 
 | Comando (Windows) | Comando (Mac OS / Linux) | Descripción                  | Ejemplo                                           |
 | ----------------- | ------------------------ | ---------------------------- | ------------------------------------------------- |
@@ -419,10 +421,10 @@ Aquí hay una lista de algunos comandos útiles:
 | rmdir (o del)     | rm                       | Eliminar un archivo          | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                    | Eliminar un Directorio       | **rm -r testdirectory**                           |
 
-Estos son sólo unos pocos de los comandos que se pueden ejecutar en la línea de comandos, pero hoy no vas a utilizar ninguno más.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Si tienes curiosidad, [ss64.com](http://ss64.com) contiene una referencia completa de comandos para todos los sistemas operativos.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## ¿Listo?
 
-¡Vamos a sumergirnos en Python!
+Let's dive into Python!
