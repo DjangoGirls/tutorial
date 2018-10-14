@@ -2,7 +2,7 @@ Du kannst [diesen Abschnitt einfach](http://tutorial.djangogirls.org/en/installa
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Mit dem Tool Cloud IDE erhältst du Zugang zu einem Code-Editor und einem Rechner der im Internet läuft und auf dem du die Software installieren, schreiben und ausführen kannst. Für die Dauer des Tutorials wird Cloud IDE zu deinem *lokalen Rechner*. Auch du wirst Befehle in einer Kommandozeilen-Oberfläche ausführen können, genau wie die anderen Teilnehmerinnen, die mit OS X, Ubuntu oder Windows arbeiten. Dein Terminal wird jedoch mit einem Rechner verbunden sein, den Cloud IDE dir bereitstellt. Hier ist die Anleitung für die Cloud IDEs (PaizaCloud, Cloud IDE, AWS Cloud9). Wählen Sie eine der Cloud IDEs aus und folgen sie den Anweisungen der gewählten Cloud IDE.
+Mit dem Tool Cloud IDE erhältst du Zugang zu einem Code-Editor und einem Rechner, der im Internet läuft und auf dem du die Software installieren, schreiben und ausführen kannst. Für die Dauer des Tutorials wird Cloud IDE zu deinem *lokalen Rechner*. Auch du wirst Befehle in einer Kommandozeilen-Oberfläche ausführen können, genau wie die anderen Teilnehmerinnen, die mit OS X, Ubuntu oder Windows arbeiten. Dein Terminal wird jedoch mit einem Rechner verbunden sein, den Cloud IDE dir bereitstellt. Hier ist die Anleitung für die Cloud IDEs (PaizaCloud, Cloud IDE, AWS Cloud9). Wähle eine der Cloud IDEs aus und folge den Anweisungen der gewählten Cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
@@ -26,7 +26,7 @@ Das Terminal wird dir den Computer bereitstellen, den Cloud 9 für deine Anweisu
 2. Lege dir dort ein Benutzerkonto an
 3. Klicke auf *Create Environment*
 
-Jetzt solltest eine Benutzeroberfläche erscheinen mit einer Seitenleiste, einem großen Fenster mit irgendeinem Text und einem kleinen Fenster am unteren Rand, das ungefähr so aussieht:
+Jetzt solltest du eine Benutzeroberfläche mit Seitenleiste, ein grosses Fenster mit Text und am unteren Rand ein Feld sehen, das wie folgt aussieht:
 
 {% filename %}bash{% endfilename %}
 
