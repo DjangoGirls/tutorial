@@ -44,7 +44,7 @@ Egy fehér vagy fekete ablakot kell látnod, ami csak a te parancsaidra vár.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-A Windows-on ez egy `>` jel:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Minden sornak ezzel a jellel és az azt követő space-el kell kezdődnie, de ezt nem neked kell begépelned. A számítógéped megteszi helyetted. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Csak egy gyors megjegyzés: így is kinézhet a parancssorod: `C:\Users\ola>` vagy `Olas-MacBook-Air:~ ola$`, de ez teljesen jó így. A parancssor nagyon sokféleképpen nézhet ki. Ebben a leírásban a sajátunkat mutatjuk, de a tied nem biztos, hogy ilyen.
 
@@ -94,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-Majd nyomj `enter`t. Ezt az eredményt kapod:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ Majd nyomj `enter`t. Ezt az eredményt kapod:
     olasitarska
     
 
-Amint láthatod, a számítógéped az előbb kiírta a felhasználónevedet. Jó, mi? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Az alapok
 
-Minden operációs rendszer parancssora kissé különböző prancsokat igényel, ezért kérlek győzödj meg arról, hogy a te operációs rendszerednek megfelelő utasításokat követed. Próbáljuk ki, rendben?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### A jelenlegi mappa
 
-Jó lenne tudni, hogy most hol vagyunk, nem? Nézzük. Írd be ezt a parancsot, és nyomj `enter`t:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ Jó lenne tudni, hogy most hol vagyunk, nem? Nézzük. Írd be ezt a parancsot, 
 
 <!--endsec-->
 
-Valószínűleg valami hasonlót fogsz látni a gépeden. Amikor megnyitod a parancssort, általában a felhasználó 'home' könyvtárába kerülsz.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Fájlok és könyvtárak kilistázása
 
-És mi van benne? Szuper lenne kideríteni. Nézzük meg:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ Valószínűleg valami hasonlót fogsz látni a gépeden. Amikor megnyitod a par
 
 ### Jelenlegi mappa megváltoztatása
 
-Most pedig lépjünk be a Desktop (vagy Asztal) mappába:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ Most pedig lépjünk be a Desktop (vagy Asztal) mappába:
 
 <!--endsec-->
 
-Nézzük meg, hogy tényleg megváltozott-e:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ Nézzük meg, hogy tényleg megváltozott-e:
 
 <!--endsec-->
 
-Itt is van!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -229,7 +231,7 @@ Itt is van!
 
 ### Könyvtár létrehozása
 
-Mit szólnál, ha létrehoznánk egy gyakorló (practice) könyvtárat az asztalon? Így tudod megtenni:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ Mit szólnál, ha létrehoznánk egy gyakorló (practice) könyvtárat az asztal
 
 <!--endsec-->
 
-Ez a parancs létre fog hozni egy `practice` nevű mappát az asztalodon. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Próbáld ki. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tipp: Ha nem szeretnéd újra és újra ugyanazt a parancsot begépelni, próbáld meg a `felfele` és `lefele nyilakkal` behívni a legutóbb futtatott parancsokat.
 
@@ -285,15 +287,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Gratulálunk! :)
+Congrats! :)
 
 * * *
 
 ### Takarítás
 
-Nem szeretnénk káoszt hagyni magunk után, szóval töröljünk le mindent, amit eddig csináltunk.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Először vissza kell mennünk az Asztal-ra:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +317,7 @@ Először vissza kell mennünk az Asztal-ra:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Ellenőrizzük le, hogy hol vagyunk:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Ellenőrizzük le, hogy hol vagyunk:
 
 <!--endsec-->
 
-Most pedig itt az ideje, hogy kitöröljük a `practice` könyvtárat:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +362,7 @@ Most pedig itt az ideje, hogy kitöröljük a `practice` könyvtárat:
 
 <!--endsec-->
 
-Kész! Ellenőrizzük le, hogy tényleg megtörtént-e:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ Kész! Ellenőrizzük le, hogy tényleg megtörtént-e:
 
 ### Kilépés
 
-Ennyi volt! Most már biztonságosan kiléphetsz a parancssorból. Csináljuk hacker módra, jó? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -406,7 +408,7 @@ Cool, huh? :)
 
 ## Összefoglaló
 
-Egy kis összefoglalás néhány hasznos parancsról:
+Here is a summary of some useful commands:
 
 | Parancs (Windows) | Parancs (Mac OS/Linux) | Leírás                        | Példa                                             |
 | ----------------- | ---------------------- | ----------------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ Egy kis összefoglalás néhány hasznos parancsról:
 | rmdir (or del)    | rm                     | delete a file                 | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                  | delete a directory            | **rm -r testdirectory**                           |
 
-Ez csak néhány parancs, azok közül, amiket a parancssorban futtathatsz, de ma nem lesz szükséged ennél többre.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Ha kíváncsi vagy, a [ss64.com](http://ss64.com) oldalon megtalálod az összes parancsot bármelyik operációs rendszerre.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Kész vagy?
 
-Merüljünk el a Python-ban!
+Let's dive into Python!
