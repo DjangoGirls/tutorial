@@ -44,7 +44,7 @@ Ora dovresti essere in grado di vedere una finestra bianca o nera che è in atte
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,22 +55,24 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Su Windows, è un segno `>`, come questo:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Ogni comando sarà preceduto da questo simbolo e da uno spazio, ma tu non hai bisogno di digitarlo. Il computer lo farà per te. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
-La parte fino al `$` o al `>` inclusi, si chiama *prompt della linea di comando* o semplicemente *prompt*. Ti richiede di inserire qualcosa.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-Nel tutorial quando vorremo che tu scriva un comando, includeremo `$` o `>` e occasionalmente qualcosa in più a sinistra. Ignore the left part and only type in the command, which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Il tuo primo comando (YAY!)
 
@@ -94,24 +96,24 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-Premi `invio`. Questo è il nostro risultato:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
     $ whoami olasitarska
     
 
-Come puoi vedere, il computer ha appena stampato il tuo nome utente. Bello, eh? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Nozioni di base
 
-Ogni sistema operativo ha un insieme di comandi leggermente diverso per la command line, per cui assicurati di seguire le istruzioni per il tuo sistema operativo. Proviamo questo, ti va?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Cartella corrente
 
-Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo commando e premi `invio`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -135,13 +137,13 @@ Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo commando e 
 
 <!--endsec-->
 
-Probabilmente vedrai qualcosa di simile sul tuo computer. Quando apri la command-line normalmente inizi sulla tua directory home.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Elenco di file e cartelle
 
-Cosa c'è dentro? Sarebbe bello scoprirlo. Vediamo come:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -176,7 +178,7 @@ Cosa c'è dentro? Sarebbe bello scoprirlo. Vediamo come:
 
 ### Cambiare cartella corrente
 
-Ora, andiamo nella nostra directory Desktop:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -196,7 +198,7 @@ Ora, andiamo nella nostra directory Desktop:
 
 <!--endsec-->
 
-Controlla ora se ti sei veramente spostato/a:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -218,7 +220,7 @@ Controlla ora se ti sei veramente spostato/a:
 
 <!--endsec-->
 
-Ecco fatto!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -226,7 +228,7 @@ Ecco fatto!
 
 ### Creare una directory
 
-Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in questo modo:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -246,7 +248,7 @@ Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in qu
 
 <!--endsec-->
 
-Questo breve comando creerà una cartella con il nome `practice` sul tuo desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Provalo. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > Suggerimento PRO: se non vuoi digitare lo stesso comando tutte le volte, prova a premere ` freccia in su ` e `freccia in giù` sulla tua tastiera per scorrere tutti i comandi che hai usato fin ora.
 
@@ -282,15 +284,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congratulazioni! :)
+Congrats! :)
 
 * * *
 
 ### Facciamo ordine
 
-Non vogliamo lasciare un pasticcio, per cui rimuoviamo tutto quello che abbiamo fatto fino a questo punto.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Per prima cosa dobbiamo tornare al Desktop:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -312,7 +314,7 @@ Per prima cosa dobbiamo tornare al Desktop:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Controlla dove ti trovi ora:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -334,7 +336,7 @@ Controlla dove ti trovi ora:
 
 <!--endsec-->
 
-Adesso è l'ora di cancellare la directory `practice`:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -357,7 +359,7 @@ Adesso è l'ora di cancellare la directory `practice`:
 
 <!--endsec-->
 
-Fatto! Per essere sicuri che sia stato effettivamente cancellato, controlliamo:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -379,7 +381,7 @@ Fatto! Per essere sicuri che sia stato effettivamente cancellato, controlliamo:
 
 ### Uscire dalla command line
 
-Questo è tutto per ora! puoi tranquillamente chiudere la tua command line. facciamolo alla maniera degli hacker, va bene? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -399,11 +401,11 @@ Questo è tutto per ora! puoi tranquillamente chiudere la tua command line. facc
 
 <!--endsec-->
 
-Figo, eh? :)
+Cool, huh? :)
 
 ## Indice
 
-Questo è un riepilogo di alcuni comandi utili:
+Here is a summary of some useful commands:
 
 | Comandi(Windows) | Comandi (Mac OS / Linux)  | Descrizione                | Esempio                                           |
 | ---------------- | ------------------------- | -------------------------- | ------------------------------------------------- |
@@ -417,10 +419,10 @@ Questo è un riepilogo di alcuni comandi utili:
 | rmdir (or del)   | rm                        | delete a file              | **del c:\test\test.txt**                        |
 | rmdir /S         | rm -r                     | delete a directory         | **rm -r testdirectory**                           |
 
-Questi sono solo alcuni dei comandi che puoi eseguire sulla tua command line, ma non ne userai altri oltre a quelli spiegati oggi.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Se sei curioso/a, [ss64.com](http://ss64.com) contiene una guida completa ai comandi per tutti i sistemi operativi.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Fatto?
 
-Tuffiamoci in Python!
+Let's dive into Python!
