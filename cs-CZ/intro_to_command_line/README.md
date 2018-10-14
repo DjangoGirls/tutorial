@@ -44,7 +44,7 @@ Nyní bys měla vidět bílé nebo černé okno, které čeká na tvé příkazy
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-V systému Windows je to `>` tento znak:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Každý příkaz budeš psát za tento znak a jednu mezeru, ale není nutné to zadávat. Tvůj počítač to udělá za tebe. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -94,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-A zmáčkni `enter`. Tohle je výsledek:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ A zmáčkni `enter`. Tohle je výsledek:
     olasitarska
     
 
-Jak vidíš, počítač právě vypsal tvé uživatelské jméno. Pěkný, co? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Základy
 
-Každý operační systém má mírně odlišnou sadu příkazů na příkazové řádce, ujisti se, že sleduješ pokyny pro tvůj operační systém. Zkusme to, ano?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Aktuální složka
 
-Bylo by hezké vědět, kde právě jsme, ne? Podívejme se. Zadej následující příkaz a stiskni `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ Bylo by hezké vědět, kde právě jsme, ne? Podívejme se. Zadej následujíc�
 
 <!--endsec-->
 
-Pravděpodobně se ti zobrazí něco podobného. Jakmile otevřeš příkazovou řádku, obvykle začínáš ve svém domovském adresáři.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Seznam souborů a adresářů
 
-Tak co je v něm? Bylo by fajn zjistit co je v našem adresáři. Podívejme se:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -178,7 +180,7 @@ Tak co je v něm? Bylo by fajn zjistit co je v našem adresáři. Podívejme se:
 
 ### Změna aktuálního adresáře
 
-Teď pojďme do adresáře plochy:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -198,7 +200,7 @@ Teď pojďme do adresáře plochy:
 
 <!--endsec-->
 
-Zkontroluj, zda-li se adresář skutečně změnil:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -220,7 +222,7 @@ Zkontroluj, zda-li se adresář skutečně změnil:
 
 <!--endsec-->
 
-A je to!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -228,7 +230,7 @@ A je to!
 
 ### Jak vytvořit složku
 
-Co si vytvořit pokusnou složku na ploše? Můžeš to udělat tímto způsobem:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -248,7 +250,7 @@ Co si vytvořit pokusnou složku na ploše? Můžeš to udělat tímto způsobem
 
 <!--endsec-->
 
-Tento malý příkaz vytvoří složku s názvem `pokus` na ploše. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Zkus to. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tip: Pokud nechceš znovu a znovu zadávat stejné příkazy, zkus stisknutím `šipka nahoru` a `šipka dolů` na klávesnici přepínat mezi nedávno použitými příkazy.
 
@@ -284,15 +286,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Gratulujeme! :)
+Congrats! :)
 
 * * *
 
 ### Jak odstranit složku
 
-Nechceme si nechat nepořádek v počítači, takže musíme odstranit vše, co jsme až do tohoto okamžiku dělali.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Zaprvé potřebujeme se dostat zpátky na plochu:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -314,7 +316,7 @@ Zaprvé potřebujeme se dostat zpátky na plochu:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Zkontroluj, kde se nacházíš:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -336,7 +338,7 @@ Zkontroluj, kde se nacházíš:
 
 <!--endsec-->
 
-Teď je čas vymazat adresář `pokus`:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -359,7 +361,7 @@ Teď je čas vymazat adresář `pokus`:
 
 <!--endsec-->
 
-Hotovo! Vše je skutečně odstraněno. Pojďme to zkontrolovat:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -401,11 +403,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Suprový, co? :)
+Cool, huh? :)
 
 ## Shrnutí
 
-Zde je přehled některých užitečných příkazů:
+Here is a summary of some useful commands:
 
 | Příkaz (Windows)        | Příkaz (Mac OS / Linux) | Popis                      | Příklad                                           |
 | ----------------------- | ----------------------- | -------------------------- | ------------------------------------------------- |
@@ -419,10 +421,10 @@ Zde je přehled některých užitečných příkazů:
 | rmdir (or del)          | rm                      | delete a file              | **del c:\test\test.txt**                        |
 | rmdir /S                | rm -r                   | delete a directory         | **rm -r testdirectory**                           |
 
-Toto je jen velmi malá část příkazů, které lze spustit v příkazovém řádku, ale pro dnešek to bude stačit.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Pokud jsi zvědavá, na [ss64.com](http://ss64.com) je úplný přehled příkazů pro všechny operační systémy.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Připraveno?
 
-Pojďme se ponořit do Pythonu!
+Let's dive into Python!
