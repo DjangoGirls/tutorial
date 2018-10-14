@@ -18,7 +18,7 @@ Agora você deve ver uma interface com uma barra lateral, botões no canto esque
     $
     
 
-Esta área inferior é seu terminal (ou prompt de comando), onde você dará as instruções para o computador que o Cloud 9 preparou. Você pode redimensionar a janela para torná-la um pouco maior.
+The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
 
 #### AWS Cloud9
 
