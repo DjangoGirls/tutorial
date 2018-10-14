@@ -28,7 +28,7 @@ Click "Terminal" button to open terminal window with prompt like this:
 $
 ```
 
-The terminal will give the computer Cloud 9 has prepared for your instructions.
+The terminal on the PaizaCloud Cloud IDE is prepared for your instructions.
 You can resize or maximize that window to make it a bit bigger.
 
 #### AWS Cloud9
