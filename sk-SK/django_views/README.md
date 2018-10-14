@@ -31,7 +31,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Ako vidíš, vytvorili sme funkciu (`def`) nazvanú `post_list`, ktorá použije `request` (žiadosť) a `return` (vráti) metódu `render`, ktorá vytvorí (spojí dokopy) našu šablónu `blog/post_list.html`.
+As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
 
 Ulož súbor a prejdi na http://127.0.0.1:8000 / a pozri sa, čo sa udeje.
 
