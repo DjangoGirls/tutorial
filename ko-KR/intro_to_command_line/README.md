@@ -44,7 +44,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,22 +55,24 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-윈도우의 경우, 이런 `>` 기호가 보일 겁니다:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-각각의 명령어는 접두어로 위와 같은 기호와 공백 한 칸이 붙습니다. 하지만 여러분이 입력할 필요는 없어요. 컴퓨터가 대신 해줄 거예요. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
-`$` 또는 `>` 포함 부분 짧게 *명령줄 프롬프트* 또는 *프롬프트*라고 합니다. 뭔가 입력하라는 표시입니다.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-이 튜토리얼을 따라하면서, 커맨드 라인에 명령어를 입력할 때마다 왼쪽에 `$` 또는 `>`표시가 보일 거에요. Ignore the left part and only type in the command, which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## 나의 첫 번째 명령 (야호!)
 
@@ -94,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-그리고 `enter`를 누르세요. 다음과 같이 보일 거에요.
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,11 +110,11 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 ## 기본 명령어
 
-각각의 운영체제에 따라, 명령어들이 조금씩 다를 수도 있으니까, 여러분의 운영체제에 해당하는 설명을 따라주세요. 그럼 같이 해볼까요?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### 현재 디렉토리
 
-우리가 어디쯤 있는지 알면 좋겠죠? 아래의 명렁을 입력하고 `enter`를 눌러보세요:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-위와 비슷한 결과가 출력되었을 거예요. 커맨드라인을 열면, 항상 '홈 디렉토리' 에서 시작합니다.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### 파일과 디렉토리 목록 보기
 
-여기에는 뭐가 있는지 알아낼 수 있다면 좋겠지요? 그럼 같이 해봐요.
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 ### 현재 디렉토리 변경
 
-자, 바탕화면 디렉토리로 가볼까요:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-정말 변경되었는지 볼까요:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-맞군요!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -229,7 +231,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 ### 새 디렉토리 만들기
 
-바탕 화면에 연습 디렉터리를 만들어 볼까요? 이렇게 하면 돼요:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-이 간단한 명령어가, 바탕화면에 `practice` 라는 이름의 폴더를 만들어 줍니다. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! 한 번 해보세요. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > 전문가 팁: 같은 명령어를 여러 번 반복해서 입력하고 싶지 않다면, 키보드의 `위 화살표`와 `아래 화살표`를 눌러서 최근 사용한 명령어들을 볼 수 있어요.
 
@@ -285,15 +287,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-축하합니다 :)
+Congrats! :)
 
 * * *
 
 ### 정리
 
-어지럽힌 흔적은 남기고 싶지 않지요, 지금까지 한 것들을 모두 지워봅시다!
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-우선, 바탕화면으로 돌아가야해요.
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +317,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-현재 위치를 확인해 보세요:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-이제 `practice` 디렉토리를 삭제할시간이에요:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +362,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-완료! 실제로 삭제되었는지, 확인해 봅시다:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 ### 종료
 
-여기까지입니다! 이제 커맨드라인을 닫으시면 됩니다. 해커 스타일로 해 볼까요, 괜찮죠? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-멋지지 않나요? :)
+Cool, huh? :)
 
 ## 목차
 
-유용한 명령어들을 요약한 표입니다:
+Here is a summary of some useful commands:
 
 | 명령어(윈도우)       | 명령어(맥 OS/리눅스) | 설명                         | 예시                                                |
 | -------------- | ------------- | -------------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ Using `..` with the `cd` command will change your current directory to the paren
 | rmdir (or del) | rm            | delete a file              | **del c:\test\test.txt**                        |
 | rmdir /S       | rm -r         | delete a directory         | **rm -r testdirectory**                           |
 
-커맨드라인에서 실행할 수 있는 명령어들 중에, 아주 몇 가지만 소개했지만, 오늘은 이정도만 필요할 거에요. 
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-더 알고 싶다면, [ss64.com](http://ss64.com)에서 운영체제별로 정리된 명령어모음을 볼 수 있어요.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## 준비되셨나요?
 
-이제 파이썬의 세계로 빠져봅시다!
+Let's dive into Python!
