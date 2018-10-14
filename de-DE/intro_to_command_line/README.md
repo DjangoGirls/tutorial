@@ -62,11 +62,11 @@ Auf einem Windows-Rechner siehst du wahrscheinlich ein `>`, so hier:
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Schau mal in den Linux-Abschnitt hier obendrüber -- so etwas wirst du wieder im Abschnitt PythonAnywhere später im Tutorial antreffen.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Vor jedem Kommando wird das Zeichen `$` oder `>` und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich. :-)
 
 > Ein kleiner Hinweis: Falls du etwas in der Art wie `C:\Users\ola>` oder `Olas-MacBook-Air:~ ola$` sehen solltest, ist das auch 100%ig korrekt.
 
@@ -421,10 +421,10 @@ Here is a summary of some useful commands:
 | rmdir (oder del) | rm                      | Datei löschen                  | **del c:\test\test.txt**                        |
 | rmdir /S         | rm -r                   | Verzeichnis löschen            | **rm -r testdirectory**                           |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Das sind nur einige der Befehle, welche du in deiner Konsole verwenden kannst, aber mehr wirst du heute nicht brauchen.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Falls du neugierig bist, findest du auf [ss64.com](http://ss64.com) eine vollständige Übersicht über alle Kommandozeilen-Befehle für alle Betriebssysteme.
 
 ## Fertig?
 
-Let's dive into Python!
+Lass uns mit Python anfangen!
