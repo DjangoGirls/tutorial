@@ -44,7 +44,7 @@ You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, it's a `>` sign, like this:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}خط فرمان{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Each command will be prepended by this sign and one space, but you don't have to type it. Your computer will do it for you. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -87,7 +89,7 @@ Let's start by typing this command:
 
 <!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > whoami
     
@@ -96,7 +98,7 @@ Let's start by typing this command:
 
 And then hit `enter`. This is our result:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ whoami
     olasitarska
@@ -128,7 +130,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska
@@ -162,7 +164,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > dir
      Directory of C:\Users\olasitarska
@@ -192,7 +194,7 @@ Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd Desktop
     
@@ -213,7 +215,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
@@ -242,7 +244,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > mkdir practice
     
@@ -275,7 +277,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd practice
     > mkdir test
@@ -306,7 +308,7 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd ..
     
@@ -329,7 +331,7 @@ Check where you are:
 
 <!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
@@ -352,7 +354,7 @@ Now time to delete the `practice` directory:
 
 <!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > rmdir /S practice
     practice, Are you sure <Y/N>? Y
@@ -373,7 +375,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > dir
     
@@ -395,7 +397,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > exit
     
