@@ -44,7 +44,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-В Windows ты увидишь знак `>`:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Каждую команду будет предварять этот знак и один пробел, но тебе не придется их вводить. Компьютер сделает это за нас. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -94,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-И затем нажми `enter`. Вот наш результат:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,11 +110,11 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 ## Основы
 
-В каждой операционной системе набор команд для командной строки немного отличается, поэтому не забывай следовать инструкциям для своей операционной системы. Давай попробуем, готова?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Текущий каталог
 
-Было бы приятно знать, где мы находимся сейчас, верно? Давай посмотрим. Введи следующую команду и нажми `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-Ты, вероятно, увидишь нечто похожее на своем компьютере. Когда ты открываешь командную строку, то обычно находишься в домашнем каталоге текущего пользователя.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Список файлов и каталогов
 
-Так что же в нем? Было бы здорово узнать. Давайте посмотрим:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 ### Смена текущего каталога
 
-Теперь вернемся в наш каталог рабочего стола:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-Проверь, что рабочий каталог действительно изменился:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-Вот и он!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -229,7 +231,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 ### Создание каталога
 
-Как насчет создания каталога practice на рабочем столе? Вы можете сделать это таким образом:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 <!--endsec-->
 
-Эта маленькая команда создаст папку с именем `practice` на рабочем столе. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Попробуй. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > ПРО совет: Если ты не хочешь вводить одни и те же команды снова и снова, попробуйте нажать на `стрелку вверх` и `стрелку вниз` на клавиатуре, чтобы просмотреть недавно использованные команды.
 
@@ -285,15 +287,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Поздравляем! :)
+Congrats! :)
 
 * * *
 
 ### Чистка
 
-Мы не хотим оставлять беспорядок, поэтому давай удалим все, что мы создали до этого момента.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Во-первых, мы должны вернуться на рабочий стол:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +317,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Проверь, где ты находишься:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-Пришло время удалить каталог `practice`:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +362,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-Готово! Давай проверим, что папка действительно удалена:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Круто, да? :)
+Cool, huh? :)
 
 ## Содержание
 
-Вот краткий обзор некоторых полезных команд:
+Here is a summary of some useful commands:
 
 | Команда (Windows) | Команда (Mac OS / Linux) | Описание                   | Пример                                            |
 | ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 | rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-Это лишь некоторые из команд, которые можно использовать в командной строке, но сегодня тебе больше и не пригодится.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Если тебе интересно, [ss64.com](http://ss64.com) содержит полный справочник команд для всех операционных систем.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Готова?
 
-Давай погрузимся в мир Python!
+Let's dive into Python!
