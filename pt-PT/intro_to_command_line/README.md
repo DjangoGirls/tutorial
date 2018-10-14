@@ -44,7 +44,7 @@ Deves estar agora a ver uma janela, preta ou branca, à espera que lhe dês coma
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Em Windows, é um `>`:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Cada comando vai ter este sinal atrás seguido de um espaço, mas não tens que o escrever. O computador faz isso por ti. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -94,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-E depois carrega no `enter`. Este é o nosso resultado:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,11 +110,11 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 ## Básicos
 
-Cada sistema operativo tem uma lista de comandos ligeiramente diferente dos outros, por isso verifica que estás a seguir as instruções certas para o teu sistema operativo. Vamos tentar isto.
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Directório actual
 
-Era bom sabermos onde estamos, certo? Vamos ver. Escreve este comando e carrega no `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ Era bom sabermos onde estamos, certo? Vamos ver. Escreve este comando e carrega 
 
 <!--endsec-->
 
-Provavelmente vais ver algo parecido no teu computador. Quando abres a linha de comandos normalmente começas na pasta base do teu utilizador.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Listar ficheiros e directórios
 
-O que está dentro da pasta, então? Vamos descobrir:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ O que está dentro da pasta, então? Vamos descobrir:
 
 ### Mudar de directório
 
-Agora vamos para o directório Ambiente de Trabalho:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ Agora vamos para o directório Ambiente de Trabalho:
 
 <!--endsec-->
 
-Verifica que realmente mudaste:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ Verifica que realmente mudaste:
 
 <!--endsec-->
 
-Aqui está!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -229,7 +231,7 @@ Aqui está!
 
 ### Criar directório
 
-Que tal criares um directório para praticares no teu ambiente de trabalho? Podes fazê-lo assim:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ Que tal criares um directório para praticares no teu ambiente de trabalho? Pode
 
 <!--endsec-->
 
-Este comando vai criar uma pasta chamada `pratica` no teu ambiente de trabalho. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Tenta. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > Dica PRO: Se não quiseres estar sempre a escrever os mesmos comandos, tenta usar as setas para cima e para baixo no teu teclado para navegar os comandos utilizados recentemente.
 
@@ -285,15 +287,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Boa! :)
+Congrats! :)
 
 * * *
 
 ### Limpeza
 
-Não queremos deixar uma confusão, por isso vamos remover tudo o que criámos até aqui.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Primeiro, precisamos de voltar ao Ambiente de Trabalho:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +317,7 @@ Primeiro, precisamos de voltar ao Ambiente de Trabalho:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Verifica onde estás:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Verifica onde estás:
 
 <!--endsec-->
 
-Agora vamos apagar o directório `pratica`:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +362,7 @@ Agora vamos apagar o directório `pratica`:
 
 <!--endsec-->
 
-Feito! Para teres a certeza que apagaste mesmo:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -406,7 +408,7 @@ Cool, huh? :)
 
 ## Índice
 
-Aqui está um sumário de alguns comandos úteis:
+Here is a summary of some useful commands:
 
 | Comando (Windows) | Comando (Mac OS / Linux) | Descrição                    | Exemplo                                           |
 | ----------------- | ------------------------ | ---------------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ Aqui está um sumário de alguns comandos úteis:
 | rmdir (or del)    | rm                       | delete a file                | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                    | delete a directory           | **rm -r testdirectory**                           |
 
-Estes são apenas alguns dos comandos que podes usar na linha de comandos, mas não vais precisar de mais do que estes hoje.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Se estiveres curiosa, [ss64.com](http://ss64.com) contém uma lista completa de comandos para todos os sistemas operativos.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Pronta?
 
-Vamos começar a aprender Python!
+Let's dive into Python!
