@@ -31,7 +31,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-みてのとおり、`post_list` という関数 (`def` から始まる部分のことです) を作りました。これは `request` を引数に取り、`blog/post_list.html`テンプレートを表示する (組み立てる) `render` 関数を `return` しています。
+As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
 
 ファイルを保存したら、どんな風に表示されるか、ブラウザで http://127.0.0.1:8000/ を確認してみましょう。
 
