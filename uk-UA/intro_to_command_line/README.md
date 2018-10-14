@@ -44,7 +44,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-На Windows, це знак `>`:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Кожній команді буде передувати цей знак і один пробіл, але ви не мусите набирати їх. Ваш комп'ютер робитиме це для вас сам. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -94,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-А потім натисніть `enter`. Результатом буде:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ Let's start by typing this command:
     olasitarska
     
 
-Як бачите, комп'ютер щойно надрукував ваше ім'я користувача. Акуратний, правда? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Основи
 
-У кожної операційної системи є трохи відмінні набори команд для командного рядку, отже, будьте певними, що виконуєте інструкції саме для вашої операційної системи. Давайте спробуємо?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Поточна директорія
 
-Було б приємно знати, де ми перебуваємо зараз, чи не так? Давайте подивимося. Введіть цю команду і натисніть `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-Можливо, ви побачите щось схоже на вашій машині. Після того, як ви відкрили командний рядок, ви зазвичай починаєте зі своєї домашньої папки.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Список файлів і папок
 
-Отже, що ж всередині? Було б круто з'ясувати. Давайте подивимось:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ Let's start by typing this command:
 
 ### Змінити поточну директорію
 
-Тепер давайте перейдемо до директорії робочого столу:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-Перевірте чи дійсно щось змінилось:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-Ось!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -229,7 +231,7 @@ Let's start by typing this command:
 
 ### Створити директорію 
 
-Як щодо створення каталогу practice на вашому робочому столі? Ви можете зробити це таким чином:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-Ця коротка команда створить папку з іменем `practice` на вашому робочому столі. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Спробуйте. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > ПРОФІ хитрощі: Якщо ви не хочете кожного разу набирати одну й ту ж команду, спробуйте натиснути кнопки `стрілка вгору` та `стрілка вниз` на своїй клавіатурі щоб повторити нещодавно використовувані команди.
 
@@ -285,15 +287,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Вітаємо! :)
+Congrats! :)
 
 * * *
 
 ### Прибираємо
 
-Ми не хочемо залишити безлад, то ж давайте видалимо усе, що ми до цього моменту створили.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Спочатку, нам потрібно повернутися назад до директорії Робочий стіл:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +317,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Перевірте де ми:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-Тепер час видалити директорію `practice`:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +362,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-Виконано! Щоб переконатися, що папку дійсно видалена, давайте перевіримо:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 ### Вихід
 
-Це все наразі! Можна тепер спокійно закрити командний рядок. Давайте зробимо це хакерським методом, добре? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ Using `..` with the `cd` command will change your current directory to the paren
 
 <!--endsec-->
 
-Круто, га? :)
+Cool, huh? :)
 
 ## Зміст
 
-Тут наведено підсумок деяких корисних команд:
+Here is a summary of some useful commands:
 
 | Команда (Windows) | Команда (Mac OS / Linux) | Опис                       | Приклад                                           |
 | ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ Using `..` with the `cd` command will change your current directory to the paren
 | rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
 
-Тут наведено лише невелика кількість команд, котрі можна запускати у вашому командному рядку, однак, на даний момент ми не збираємося використовувати щось більше.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Якщо вас цікавить, [ss64.com](http://ss64.com) містить повний список посилань на команди для усіх операційних систем.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Готові?
 
-Давайте зануримось у Python!
+Let's dive into Python!
