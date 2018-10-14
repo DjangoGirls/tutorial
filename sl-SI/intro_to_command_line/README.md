@@ -44,7 +44,7 @@ Pred sabo imaš torej odprto črno ali belo okno, ki čaka, da vanj vpišeš ust
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Na operacijskem sistemu Windows pa tako:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Vsak ukaz se bo začel s tem znakom in presledkom, vendar tebi tega ne bo treba pisati vsakič znova. To bo zate naredil tvoj računalnik. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -94,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-Nato pritisni `enter`. Rezultat je približno tak:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ Nato pritisni `enter`. Rezultat je približno tak:
     ana
     
 
-Kot si opazila, je računalnik izpisal tvoje ime. Super? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Osnove
 
-Vsak operacijski sistem ima malce različen nabor ukazov v ukazni vrstici, zato se vedno prepričaj, da spremljaš navodila za svoj operacijski sistem.
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Trenutni imenik
 
-Če želimo delati z datotekami, bi bilo za začetek uporabno vedeti, v katerem direktoriju se nahajamo. Vpiši sledeči ukaz in pritisni `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ Vsak operacijski sistem ima malce različen nabor ukazov v ukazni vrstici, zato 
 
 <!--endsec-->
 
-Nekaj podobnega si verjetno dobila tudi ti. Ko odpreš ukazno vrstico, je tvoj imenik običajno enak domačemu imeniku prijavljenega uporabnika.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Izpis datotek in imenikov
 
-Bi rada izpisala vse imenike in datoteke, ki so v tvojem trenutnem imeniku? To narediš takole:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ Bi rada izpisala vse imenike in datoteke, ki so v tvojem trenutnem imeniku? To n
 
 ### Sprememba imenika
 
-Premaknimo se v imenik Namizje:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ Premaknimo se v imenik Namizje:
 
 <!--endsec-->
 
-Preveri, če si se res premaknila:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ Preveri, če si se res premaknila:
 
 <!--endsec-->
 
-Deluje! Super!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -229,7 +231,7 @@ Deluje! Super!
 
 ### Ustvarjanje imenika
 
-Kako pa bi ustvarili nov imenik? Recimo takole:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ Kako pa bi ustvarili nov imenik? Recimo takole:
 
 <!--endsec-->
 
-Ta ukaz bo naredil nov imenik z imenom `vaja` znotraj našega trenutnaga imenika. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Poskusi. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > UPORABEN namig: Če nočeš vedno znova vpisovati istega ukaza, lahko s pomočje pritiskanja puščic `gor` in `dol` na tipkovnici, pregledaš nedavno uporabljene ukaze.
 
@@ -285,15 +287,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Čestitke! :)
+Congrats! :)
 
 * * *
 
 ### Čistka :)
 
-Ustvarjenih imenikov ne potrebujemo več, zato jim odstranimo.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Za začetek se pomaknimo nazaj v nadrejeni imenik:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +317,7 @@ Za začetek se pomaknimo nazaj v nadrejeni imenik:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Preverimo našo lokacijo:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Preverimo našo lokacijo:
 
 <!--endsec-->
 
-Pripravljeni smo za odstranitev imenika `vaja`:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +362,7 @@ Pripravljeni smo za odstranitev imenika `vaja`:
 
 <!--endsec-->
 
-Končano! Preverimo imenik:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ Končano! Preverimo imenik:
 
 ### Izhod
 
-Zaenkrat smo se naučili dovolj, zato lahko ukazno vrstico zapremo. Naredimo to kot pravi hekerji? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ Zaenkrat smo se naučili dovolj, zato lahko ukazno vrstico zapremo. Naredimo to 
 
 <!--endsec-->
 
-Super? :)
+Cool, huh? :)
 
 ## Povzetek
 
-Tu je še povzetek nekaterih uporabnih ukazov:
+Here is a summary of some useful commands:
 
 | Ukaz (Windows) | Ukaz (Mac OS/ Linux) | Opis                                                   | Primer                                            |
 | -------------- | -------------------- | ------------------------------------------------------ | ------------------------------------------------- |
@@ -420,10 +422,10 @@ Tu je še povzetek nekaterih uporabnih ukazov:
 | rmdir (or del) | rm                   | delete a file                                          | **del c:\test\test.txt**                        |
 | rmdir /S       | rm -r                | delete a directory                                     | **rm -r testdirectory**                           |
 
-To je le nekaj osnovnih ukazov za ukazno vrstico. Drugih danes ne boš potrebovala.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Če ti je bilo to poglavje zanimivo in bi rada izvedela še kaj več, imaš na strani [ss64.com](http://ss64.com) seznam vseh ukazov za vse operacijske sisteme.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Pripravljena?
 
-Začnimo s programskim jezikom Python!
+Let's dive into Python!
