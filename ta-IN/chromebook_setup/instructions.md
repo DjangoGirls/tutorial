@@ -18,7 +18,7 @@ Now you should see an interface with a sidebar, buttons at the left. Click "Term
     $
     
 
-The terminal will give the computer Cloud 9 has prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
 
 #### AWS Cloud9
 
