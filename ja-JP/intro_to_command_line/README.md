@@ -44,7 +44,7 @@
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-MacあるいはLinuxの方は、次のように `$` と表示されているのがわかりますか？
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,26 +55,28 @@ MacあるいはLinuxの方は、次のように `$` と表示されているの�
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Windowsの方は、 `>` という記号が表示されていることでしょう。
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-各コマンドの先頭には、この記号とスペースがつきます。あなたのコンピューターが表示してくれるので、自分で入力する必要はありません. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > ちょっと補足です。プロンプト記号の前に `C:\Users\ola>` や `Olas-MacBook-Air:~ ola$` のような表示がありますね。これは間違いではありません。100%正解です。このチュートリアルでは、シンプルにわかりやすくするために、その部分を省略して記述します。
 
-`$` や `>` と書かれているところまでを、 *コマンドラインプロンプト* あるいは略して*プロンプト*と呼ばれます。プロンプトは、あなたがここに何かを入力することを促しています。
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-このチュートリアルでは、コマンドを入力してほしい時は、 `$` や `>` を含めて示しています。 $や>は無視して、プロンプト以降のコマンドを入力してください。
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## 最初のコマンド (イェイ！)
 
-次のようにコマンドを入力してみましょう。:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,7 +96,7 @@ Windowsの方は、 `>` という記号が表示されていることでしょ�
 
 <!--endsec-->
 
-そして最後にEnterキーを押して下さい。このような結果が返ってきます
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ Windowsの方は、 `>` という記号が表示されていることでしょ�
     olasitarska
     
 
-ご覧のとおり、コンピューターがあなたのユーザーネームを表示してくれましたね。面白いでしょ? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > コピー＆ペーストではなく、コマンドを入力して試してみてください。そのうち自然と覚えられるようになりますからね！
 
 ## 基本
 
-OSによってコマンドが若干違います。あなたのコンピューターのOSの方法に従って、以下は進めていってくださいね。次にいってみましょう。
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### カレントディレクトリ（現在のディレクトリ）
 
-今どこのディレクトリにいるか（どのフォルダで作業をしているか）、知りたいですよね？では、このようにキーボードで入力して、`Enterキー`をおしてください。
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-おそらく、似たようなものがあなたの画面に表示されたのではないでしょうか。コマンドラインを起動した最初は、通常ユーザーのホームディレクトリが表示されます。
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### ファイルとディレクトリの一覧
 
-では、その中には何があるのでしょうか？表示させてみましょう。
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 ### カレントディレクトリの変更
 
-次に、デスクトップのディレクトリに移動してみましょう。
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-本当に変更されたかどうか確認してみてください：
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-できていますね！
+Here it is!
 
 > PRO tip: `cd D`と入力して、キーボードの`tab`ボタンを押してください。すると、Dに続く残りの部分が自動的に補完されて入力されます。 もし、Dから始まるディレクトリ名が他にもあれば、`tabボタン`を繰り返し押すと候補が次々と表示されます。入力が楽になりますね。
 
@@ -229,7 +231,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 ### ディレクトリの作成
 
-それでは、Django Girlsのディレクトリをデスクトップに新規作成してみましょう。
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-この短いコマンドで、デスクトップにpracticeという名前の新しいフォルダが作成されました。 あなたのデスクトップを見てフォルダが作成されていることを確認してみましょう。あるいは、先ほど学んだコマンド `ls` や `dir` を使って確認しましょう。 やってみてください。 :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tip: 同じコマンドを何度もなんども入力したくない時は、上下矢印キー`↑`、`↓`を押せば、先ほどキーボードから入力したものが現れます。内容を修正したい場合には，左右矢印キー←，→を利用して修正したい位置にカーソルを移動させて，修正することができますよ。
 
@@ -257,7 +259,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 ### エクササイズ！
 
-練習をしてみましょう。先ほど作成した`practice`ディレクトリの中に、新たに`test`という名前のディレクトリを作成してください。（使うコマンドは、` cd `と `mkdir` ですよ。）
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### 解答:
 
@@ -285,15 +287,15 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-おめでとうございます！よくできました！
+Congrats! :)
 
 * * *
 
 ### クリーンアップ
 
-練習がおわったら、それをそのままに置いておくと邪魔になりますね。削除しておきましょう。
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-はじめに、作業するディレクトリをデスクトップに戻しましょう。
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -313,9 +315,9 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-`cd` の後にある`..` で、現在の親ディレクトリに移動します。（今作業しているフォルダのひとつ上のフォルダに移動するということですね。）
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-現在の作業ディレクトリを確認しておきましょう。
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-では、practiceディレクトリを削除しましょう。
+Now time to delete the `practice` directory:
 
 > **注意！: **　`del`や `rmdir `、`rm` のコマンドを使って削除したファイルは、復活できません。完全に消えてしまいます。 このコマンドを使う時は、よく気をつけてくださいね。
 
@@ -360,7 +362,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-できました! 本当に削除されたか、確認してみましょう。:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 ### 終了
 
-ここまでです。それではコマンドラインを終了しましょう。かっこいいやり方で終わりたいですよね? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--endsec-->
 
-かっこいいですね? :)
+Cool, huh? :)
 
 ## まとめ
 
-ここに学んだコマンドをまとめておきます。
+Here is a summary of some useful commands:
 
 | コマンド (Windows) | コマンド (Mac OS / Linux) | 説明                | 例                                                 |
 | -------------- | --------------------- | ----------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 | rmdir (or del) | rm                    | ファイルを削除           | **del c:\test\test.txt**                        |
 | rmdir /S       | rm -r                 | ディレクトリを削除         | **rm -r testdirectory**                           |
 
-ここで勉強したのはコマンドのほんの一部でしたが、このワークショップで使うコマンドはこれだけです。
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-もっと勉強したい方は、[ss64.com](http://ss64.com) に各OSのコマンド一覧があります。ご参考までに。
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## 準備OK？
 
-よし、次はPythonを勉強していきましょう!
+Let's dive into Python!
