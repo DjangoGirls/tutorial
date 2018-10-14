@@ -18,7 +18,7 @@ Jetzt solltest du links eine Schnittstelle mit einer Seitenleiste und Schaltflä
     $
     
 
-Das Terminal wird dir den Computer bereitstellen, den Cloud 9 für deine Anweisungen vorbereitet hat. Du kannst die Größe des Fensters frei einstellen.
+The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
 
 #### AWS Cloud9
 
