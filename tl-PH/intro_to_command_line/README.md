@@ -44,7 +44,7 @@ Dapat makakita ka ng isang white o black na window na naghihintay isa iyong mga 
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,22 +55,24 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Sa windows, ito ay `>` na sign, gaya nito:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Bawat command ay nakaprepend nang sign na ito at isang space, ngunit hindi mo na kailangang itype ito. Ang kompyuter na ang gagawa nito para sa iyo. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Isang maliit na paalala: sa kaso mo maaring may makikita kang `C:\Users\ola>` o `Olas-Macbook-Air:~ ola$` bago ang prompt na sign, at ito 100% OK lang.
 
-Ang parte hanggang at kasali ang `$` o ang `>` ay tinatawag na *command line prompt*, o *prompt* kung pinaikli. Ito ay magprompt sa iyo na mag-input dito.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-Sa tutorial, kung gusto namin na magtype ka ng command, isasali na namin ang `$` o `>`, at minsan may nadagdag pa sa kaliwa. Ignore the left part and only type in the command, which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Ang una mong command (YAY!)
 
@@ -94,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-At pindutin ang `enter`. Ito ang ating resulta:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ At pindutin ang `enter`. Ito ang ating resulta:
     olasitarska
     
 
-Gaya ng makikita mo, ang kompyuter ay nagprinta sa iyong bansag. Malinis, di ba? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Subukan mong magtype ng bawat command; huwag mag copy-paste. Mas matandaan mo ito sa ganitong paraan!
 
 ## Mga Basic
 
-Bawat operating system ay may medyo iba-ibang set ng mga commands para sa command line, kaya siguradihing sumunod sa mga instruksyon para sa iyong operating system. Subukan natin ito, tara na?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Kasalukuyang directory
 
-Mas maganda kapag alam natin kung saan tayo, di ba? Tingnan natin. I-type ang command na ito at pindutin ang `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ Mas maganda kapag alam natin kung saan tayo, di ba? Tingnan natin. I-type ang co
 
 <!--endsec-->
 
-Maaring nakakita ka ng kagaya nito sa iyong makina. Kapag nabuksan mo na ang command line, kadalasang magsisimula ka iyong home directory ng user.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Lista ng mga file at mga directory
 
-Ano ang dapat nasa loob ito. Maganda kung ating makita ito. Tingnan natin:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ Ano ang dapat nasa loob ito. Maganda kung ating makita ito. Tingnan natin:
 
 ### Magpalit ng kasalukuyang directory
 
-Ngayon, puntahan nating ang ating Desktop na directory:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ Ngayon, puntahan nating ang ating Desktop na directory:
 
 <!--endsec-->
 
-Tingnan kung nabago ba talaga ito:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ Tingnan kung nabago ba talaga ito:
 
 <!--endsec-->
 
-Nandito na!
+Here it is!
 
 > PRO tip: kung mag type ka ng `cd D` at magpindut ng `tab` sa iyong keyboard, ang command line ay awtomatikong maglagay ng buong pangalan para mabilis mo itong manavigate. Kung mayroong higit sa isang folder na nagsisimula sa "D", pindutin ang `tab` na key ng dalawang beses para makuha mo ang lista ng mga options.
 
@@ -229,7 +231,7 @@ Nandito na!
 
 ### Maglikha ng directory
 
-Paano kaya kung maglikha ka ng practice directory sa iyong desktop? Maari mo itong gawin sa ganitong paraan:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ Paano kaya kung maglikha ka ng practice directory sa iyong desktop? Maari mo ito
 
 <!--endsec-->
 
-Ang maliit na command na ito ay maglikha ng folder na may pangalang `practice` sa iyong desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Subukan ninyo ito. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tip: kung hindi mo gustong magtype ng parehong mga command ng paulit-ulit, subukang pindutin ang `up arrow` at `down arrow` sa iyong keyboard para maikot ang mga kakagamit lang na mga command.
 
@@ -257,7 +259,7 @@ Ang maliit na command na ito ay maglikha ng folder na may pangalang `practice` s
 
 ### Mag-ehersisyo!
 
-May maliit na pagsusubok para sa iyo: sa iyong kakalikha na `practice` na directory, maglikha ng directory na tatawaging `test`. (Gamitin ang `cd` at `mkdir` na mga command.)
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### Solusyon:
 
@@ -285,15 +287,15 @@ May maliit na pagsusubok para sa iyo: sa iyong kakalikha na `practice` na direct
 
 <!--endsec-->
 
-Maligayang bati! :)
+Congrats! :)
 
 * * *
 
 ### Maglinis
 
-Hindi natin gustong mag-iwan ng kalat, kaya burahin natin ang lahat ng nagawa natin hanggang sa puntong ito.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Una, kailangan nating makabalik sa Desktop:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -313,9 +315,9 @@ Una, kailangan nating makabalik sa Desktop:
 
 <!--endsec-->
 
-Gamit ang `..` kasabay ng `cd` na command ay magbabago sa iyong kasalukuyang directory sa magulang na directory (ito ay and directory na naglalaman ng iyong kasalukuyang directory).
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Suriin kung nasaan ka na:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Suriin kung nasaan ka na:
 
 <!--endsec-->
 
-Ngayon ay oras na para burahin ang `practice` na directory:
+Now time to delete the `practice` directory:
 
 > **Bigyang pansin>**: Ang pagbura ng file gamit ang `del`, `rmdir` o `rm` ay hindi na marecover ulit, ibig sabihin na *ang mga naburang file ay mawala na magpakailanman*! Dapat maging maingat sa command na ito.
 
@@ -360,7 +362,7 @@ Ngayon ay oras na para burahin ang `practice` na directory:
 
 <!--endsec-->
 
-Tapos na! Para masiguro na nabura talaga ito, tingnan natin ito:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ Tapos na! Para masiguro na nabura talaga ito, tingnan natin ito:
 
 ### Exit
 
-Iyan na sa ngayon. Maari mo nang isara ang command line ngayon. Gagawin natin ito sa hacker na paraan, okay ba? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ Iyan na sa ngayon. Maari mo nang isara ang command line ngayon. Gagawin natin it
 
 <!--endsec-->
 
-Cool, di ba? :)
+Cool, huh? :)
 
 ## Buod
 
-Ito ang buod ng iilang mga command:
+Here is a summary of some useful commands:
 
 | Command (Windows) | Command (Mac OS / Linux) | Paglalarawan                       | Halimbawa                                         |
 | ----------------- | ------------------------ | ---------------------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ Ito ang buod ng iilang mga command:
 | rmdir (or del)    | rm                       | burahin ang file                   | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                    | magbura ng directory               | **rm -r testdirectory**                           |
 
-Ang mga ito ay iilan lang sa mga command na maari mong mapatakbo sa iyong command line, ngunit hindi ka gagamit ng higit pa dito sa ngayon.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Kung ikaw ay curious, ang [ss64.com](http://ss64.com) ay naglalaman ng kompletong lista ng mga command para sa lahat ng operating systems.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Handa ka na ba?
 
-Pumunta na tayo sa Python!
+Let's dive into Python!
