@@ -44,7 +44,7 @@ Teraz by si už mala vidieť biele alebo čierne okno, ktoré čaká na tvoje pr
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,26 +55,28 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Na Windowse je to znak `>`, takýto:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Každý príkaz budeš zadávať za tento znak a jednu medzeru. Ty to ale písať nemusíš, urobí to za teba tvoj počítač. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Len krátka poznámka: v tvojom prípade môže tam byť pred niečo ako `C:\Users\ola>` alebo `Olas-MacBook-Air:~ ola$` a to je úplne v poriadku.
 
-Časť po a vrátane `$` alebo `>` sa nazýva *príkazový riadok*, alebo *prompt* skrátene. Je to miesto kde zadávaš príkazy.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-V tutoriále, keď chceme, aby si zadala príkaz, použijeme `$` alebo `>`, a občas aj väčšmej doľava. Ignore the left part and only type in the command, which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Tvoj prvý príkaz (Hurá!)
 
-Začnime tým, že zadáme nasledovný príkaz:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,7 +96,7 @@ Začnime tým, že zadáme nasledovný príkaz:
 
 <!--endsec-->
 
-A stlač `enter`. Toto je výsledok:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ A stlač `enter`. Toto je výsledok:
     olasitarska
     
 
-Ako vidíš, počítač práve vypísal tvoje užívateľské meno. Milé, nie? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Skús každý príkaz napísať, nielen kopírovať. Viac si tak zapamätáš!
 
 ## Základy
 
-Každý operačný systém má trochu iné príkazy pre príkazový riadok, takže postupuj podľa inštrukcií pre tvoj operačný systém. Tak čo, vyskúšame to?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Aktuálny adresár
 
-Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento príkaz a stlač `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ Bolo by fajn vedieť, kde sa nachádzame, však? Zistime to. Napíš tento prík
 
 <!--endsec-->
 
-Na svojom stroji pravdepodobne uvidíš niečo takéto. Keď otvoríš príkazový riadok, zvyčajne začneš vo svojom domovskom adresári.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Zoznam súborov a adresárov
 
-Tak čo je v ňom? Bolo by super zistiť to. Pozrime sa na to:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ Tak čo je v ňom? Bolo by super zistiť to. Pozrime sa na to:
 
 ### Zmena aktuálneho adresára
 
-Teraz prejdime do adresára Plochy:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ Teraz prejdime do adresára Plochy:
 
 <!--endsec-->
 
-Skontroluj, či sa adresár skutočne zmenil:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ Skontroluj, či sa adresár skutočne zmenil:
 
 <!--endsec-->
 
-A je to!
+Here it is!
 
 > Profi tip: ak napíšeš `cd D` a potom stlačíš `tab`, príkazový riadok automaticky doplní zvyšok názvu, takže adresáre môžeš prechádzať rýchlejšie. Ak na "D" začína viac ako jeden adresár, stlač `tab` dvakrát a dostaneš zoznam možností.
 
@@ -229,7 +231,7 @@ A je to!
 
 ### Vytvoriť adresár
 
-Čo takto vytvoriť pokusný adresár na ploche? Urobíš to takto:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ A je to!
 
 <!--endsec-->
 
-Tento príkazík vytvorí adresár s názvom `pokus` na tvojej ploche. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Vyskúšaj to. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > Profi tip: ak sa ti nechce vypisovať stále dookola tie isté príkazy, skús sa stlačením `šípky hore` a `šípky dole` vrátiť k nedávno použitým príkazom.
 
@@ -257,7 +259,7 @@ Tento príkazík vytvorí adresár s názvom `pokus` na tvojej ploche. You can c
 
 ### Cvičenie!
 
-Malá výzva pre teba: v čerstvo vytvorenom adresári `pokus` vytvor adresár s názvom `test`. (Použi príkazy `cd` a `mkdir`.)
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### Riešenie:
 
@@ -285,15 +287,15 @@ Malá výzva pre teba: v čerstvo vytvorenom adresári `pokus` vytvor adresár s
 
 <!--endsec-->
 
-Gratulujeme! :)
+Congrats! :)
 
 * * *
 
 ### Upratovanie
 
-Nechceme po sebe nechať neporiadok, takže odstránime všetko, čo sme doteraz vytvorili.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Najkôr sa musíme vrátiť späť na Plochu:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -313,9 +315,9 @@ Najkôr sa musíme vrátiť späť na Plochu:
 
 <!--endsec-->
 
-Pomocou `..` s príkazom `cd` zmeníš svoj aktuálny adresár na rodičovský adresár (to je ten adresár, v ktorom sa nachádza tvoj aktuálny adresár).
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Skontroluj, kde sa nachádzaš:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Skontroluj, kde sa nachádzaš:
 
 <!--endsec-->
 
-Je na čase zmazať adresár `pokus`:
+Now time to delete the `practice` directory:
 
 > **Pozor**: mazanie súborov pomocou `del` `rmdir` alebo `rm` je neodvolateľné, teda *odstránené súbory budú navždy odtranené*! Takže s týmito príkazmi buď opatrná.
 
@@ -360,7 +362,7 @@ Je na čase zmazať adresár `pokus`:
 
 <!--endsec-->
 
-Hotovo! Uistime sa, či je to naozaj vymazané:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ Hotovo! Uistime sa, či je to naozaj vymazané:
 
 ### Ukončenie
 
-Nateraz je to všetko! Môžeš pokojne zatvoriť príkazový riadok. Urobme to hackersky, dobre? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ Nateraz je to všetko! Môžeš pokojne zatvoriť príkazový riadok. Urobme to 
 
 <!--endsec-->
 
-Super, čo? :)
+Cool, huh? :)
 
 ## Zhrnutie
 
-Tu je prehľad niektorých užitočných príkazov:
+Here is a summary of some useful commands:
 
 | Príkaz (Windows) | Príkaz (Mac OS / Linux) | Popis                           | Príklad                                           |
 | ---------------- | ----------------------- | ------------------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ Tu je prehľad niektorých užitočných príkazov:
 | rmdir (or del)   | rm                      | vymazať súbor                   | **del c:\test\test.txt**                        |
 | rmdir /S         | rm -r                   | odstráni adresár/súbor          | **rm -r testdirectory**                           |
 
-Toto je len veľmi malá časť príkazov, ktoré môžeš spustiť vo svojom príkazovom riadku, ale dnes budeš potrebovať len tieto.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Ak ťa to zaujalo, na [ss64.com](http://ss64.com) nájdeš kompletný prehľad príkazov pre všetky operačné systémy.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Pripravená?
 
-Vrhnime sa na Python!
+Let's dive into Python!
