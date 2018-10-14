@@ -31,7 +31,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Como puedes ver, hemos creado una función (`def`) llamada `post_list` que acepta `request` y `return` una función `render` que reproduce (construye) nuestra plantilla `blog/post_list.html`.
+As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
 
 Guarda el archivo, ve a http://127.0.0.1:8000/ y mira lo que hemos hecho.
 
