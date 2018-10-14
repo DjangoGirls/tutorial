@@ -44,7 +44,7 @@ Nu borde du se ett vitt eller svart fönster som väntar på dina kommandon.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-På Windows är det ett `>`, såhär:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-Varje kommando kommer att ha detta tecken framför sig och ett mellanslag, men du behöver inte skriva det. Din dator skriver det åt dig. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > En liten notis: i ditt fall kan det finnas något framför tecknet, till exempel `C:\Users\ola>` eller `Olas-MacBook-Air:~ ola$` och det är precis som det ska vara.
 
@@ -74,7 +76,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## Ditt första kommando (WOHO!)
 
-Börja med att skriva detta kommandot:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,7 +96,7 @@ Börja med att skriva detta kommandot:
 
 <!--endsec-->
 
-Och tryck på `Enter`. Detta blir resultatet:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ Och tryck på `Enter`. Detta blir resultatet:
     olasitarska
     
 
-Som du precis såg skrev datorn precis ditt användarnamn. Ganska coolt va? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Försök skriva varje kommando, istället för att kopiera och klistra in. Du kommer komma ihåg dem mycket bättre på det sättet!
 
 ## Grunderna
 
-Varje operativsystem har lite olika kommandon för terminalen, så följ instruktionerna för ditt operativsystem. Nu kör vi!
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Aktuell katalog
 
-Visst hade det varit bra och veta var vi är nu? Skriv in detta kommando och tryck `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ Visst hade det varit bra och veta var vi är nu? Skriv in detta kommando och try
 
 <!--endsec-->
 
-Du ser säkert något liknande på din dator. När du öppnar terminalen brukar du starta i användarens hemmamapp.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Lista filer och mappar
 
-Så vad finns här? Det hade varit kul att se. Vi testar:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ Så vad finns här? Det hade varit kul att se. Vi testar:
 
 ### Ändra aktuell katalog
 
-Låt oss gå till Skrivbordets katalog:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ Låt oss gå till Skrivbordets katalog:
 
 <!--endsec-->
 
-Testa om det verkligen fungerande:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ Testa om det verkligen fungerande:
 
 <!--endsec-->
 
-Det fungerade!
+Here it is!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
@@ -229,7 +231,7 @@ Det fungerade!
 
 ### Skapa katalog
 
-Nu kan vi skapa en katalog för Django Girls på skrivbordet såhär:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ Nu kan vi skapa en katalog för Django Girls på skrivbordet såhär:
 
 <!--endsec-->
 
-Det här kommandot skapar en mapp med namnet `djangogirls` på ditt skrivbord. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Testa. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > Tips: Om du inte vill skriva samma kommandon om och om igen, testa att trycka på `uppåtpilen` och `nedåtpilen` för att bläddra bland kommandon som du nyligen har använt.
 
@@ -285,15 +287,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Grattis! :)
+Congrats! :)
 
 * * *
 
 ### Städa upp
 
-Vi vill inte lämna det stökigt, så låt oss ta bort allt som vi har gjort hittills.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Först måste vi tillbaka till skrivbordet:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -315,7 +317,7 @@ Först måste vi tillbaka till skrivbordet:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Kolla var du är:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ Kolla var du är:
 
 <!--endsec-->
 
-Nu är det dags att ta bort katalogen `djangogirls`:
+Now time to delete the `practice` directory:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -360,7 +362,7 @@ Nu är det dags att ta bort katalogen `djangogirls`:
 
 <!--endsec-->
 
-Klart! För att vara säker på att den verkligen är raderad kan vi kolla med:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ Klart! För att vara säker på att den verkligen är raderad kan vi kolla med:
 
 ### Exit
 
-Det var allt i detta kapitlet! Nu kan du stänga kommandotolken. Vi gör det som en riktig hacker? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -406,7 +408,7 @@ Cool, huh? :)
 
 ## Sammanfattning
 
-Här är en sammanfattning med några användbara kommandon:
+Here is a summary of some useful commands:
 
 | Kommando (Windows) | Kommando (Mac OS / Linux) | Beskrivning            | Exempel                                           |
 | ------------------ | ------------------------- | ---------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ Här är en sammanfattning med några användbara kommandon:
 | rmdir (eller del)  | rm                        | ta bort en fil         | **del c:\test\test.txt**                        |
 | rmdir /S           | rm -r                     | ta bort en mapp        | **rm -r testkatalog**                             |
 
-Dessa är bara några av de kommandon du kan köra i terminalen men du kommer inte behöva fler än dessa idag.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Om du är nyfiken så innehåller [ss64.com](http://ss64.com) en komplett lista med kommandon för alla operativsystem.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Redo?
 
-Nu dyker vi ner i Python!
+Let's dive into Python!
