@@ -44,7 +44,7 @@ It's probably under Applications → Accessories → Terminal, but that may depe
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see `$`, like this:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,26 +55,28 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-บน Windows จะเป็นเครื่องหมาย `>` แบบนี้:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+
 <!--endsec-->
 
-คำสั่งแต่ละคำสั่งจะมีเครื่องหมายนี้และเว้นหนึ่งวรรค แต่คุณไม่จำเป็นต้องพิมพ์เองหรอกนะคอมพิวเตอร์จะจัดการให้คุณเอง :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > หมายเหตุเล็กๆ: บางกรณีคุณอาจจะเจอ `C:\Users\ola>` หรือ `Olas-MacBook-Air:~ ola$` ก่อนเครื่องหมายเหล่านี้ มันไม่ได้ปัญหาอะไรหรอกนะ มันโอเค 100% เลย
 
-ส่วนข้างบนและรวมถึงเครื่องหมาย ` $ </ 0> หรือ <code> & gt; </ 0> มันจะถูกเรียกว่า <em>command line prompt</em> หรือเรียกแบบสั้นๆว่า <em> prompt </ 1> มันจะกระตุ้นให้คุณป้อนข้อมูลบางอย่างลงไป</p>
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-<p>ในบทเรียนนี้ เมื่อเราต้องการให้คุณพิมพ์คำสั่งใดๆ เราจะรวมเครื่องหมาย <code>$` หรือ `>` และรวมถึงเครื่องหมายอื่นๆ ลงไปทางด้านซ้ายมือให้คุณ Ignore the left part and only type in the command, which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## คำสั่งแรกของคุณ (เย้!)
 
-เรามาเริ่มโดนการพิมพ์คำสั่งกันเถอะ:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -94,7 +96,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-จากนั้นกด `enter` นี่คือผลลัพธ์ของเรา:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -102,17 +104,17 @@ If you're on Mac or Linux, you probably see `$`, like this:
     olasitarska
     
 
-อย่างที่คุณเห็น คอมพิวเตอร์จะแสดงชื่อผู้ใช้ของคุณออกมา เจ๋งใช่ป่ะล่ะ? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > ลองพิมพ์คำสั่งแต่ละคำสั่งดู ห้ามก็อปมาวางนะ ทำแบบนี้แล้วคุณจะจำได้เอง!
 
 ## พื้นฐาน
 
-แต่ละระบบปฏิบัติการที่มีชุดคำสั่งมาให้แตกต่างกัน ควรแน่ใจว่าคุณทำตามคำสั่งของระบบปฏิบัติการที่ใช้อยู่ เรามาลองกันเลยมั๊ย?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### ไดเรกทอรีปัจจุบัน
 
-มันน่าจะดีใช่ไหม หากเรารู้ว่าตอนนี้เราอยู่ไหนแล้ว? ลองมาดูกัน ลองพิมพ์คำสั่งนี้ แล้วกด `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -138,13 +140,13 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-คุณจะเห็นผลลัพธ์ที่ต่างไปเล็กน้อยบนเครื่องของคุณ ซึ่งผลที่ได้มักจะเริ่มที่ไดเรกทอรีบ้านของคุณ
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### แสดงรายการไฟล์และไดเรกทอรี
 
-มันคืออะไรกันนะ? มาดูกัน:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -179,7 +181,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 ### เปลี่ยนไดเรกทอรีปัจจุบัน
 
-ตอนนี้ เราลองไปที่ไดเรกทอรี Desktop ของเรากัน:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -199,7 +201,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-ลองเช็คดูซิว่ามันเปลี่ยนจริงมั้ย:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -221,7 +223,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-เปลี่ยนแล้วจริงด้วย!
+Here it is!
 
 > คำแนะนำจากมือโปร: ถ้าคุณพิมพ์ `cd D` และกดปุ่ม `tab` บนแป้นพิมพ์ command line หรือบรรทัดคำสั่งจะเติมส่วนที่เหลือให้โดยอัตโนมัติ เพราะฉะนั้นคุณจะสามารถพิมพ์คำสั่งได้เร็วขึ้น ถ้าเกิดว่ามันมีมากกว่าหนึ่งโฟลเดอร์ที่เริ่มด้วย "D" ให้กดปุ่ม `tab` สองครั้งเพื่อดูรายการโฟลเดอร์เหล่านั้น
 
@@ -229,7 +231,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 ### สร้างไดเรกทอรี
 
-มาลองสร้างไดเรกทอรีชื่อ practice บน desktop ดูเป็นไง? คุณสามารถทำได้แบบนี้:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -249,7 +251,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-คำสั่งน้อยๆ นี้จะสร้างโฟลเดอร์ชื่อ `practice` บน desktop ของคุณ You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! ลองเลย. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > คำแนะนำจากโปร: ถ้าคุณไม่อยากพิมพ์คำสั่งเดิมซ้ำๆ ลองกดปุ่ม `ลูกศรขึ้น` และ `ลูกศรลง` บนแป้นพิมพ์ของคุณ เพื่อดูว่าคุณใช้คำสั่งล่าสุดอะไรบ้าง
 
@@ -257,7 +259,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 ### มาฝึกกันเถอะ!
 
-เรามีโจทย์ท้าทายเล็กๆให้คุณ: ให้คุณสร้างไดเรกทอรีใหม่ ชื่อ `test` ลงในไดเรกทอรี `practice` ที่เราเพิ่งสร้างก่อนหน้านี้ โดยใช้คำสั่ง `cd` และ `mkdir`
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### เฉลย:
 
@@ -285,15 +287,15 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-ยินดีด้วย! :)
+Congrats! :)
 
 * * *
 
 ### เก็บกวาด
 
-เราไม่ต้องการทิ้งอะไรรกๆไว้ เพราะฉะนั้นเรามาลบของพวกนี้ออกกันก่อนเลยดีกว่า
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-ขั้นแรก เราต้องกลับไปที่ Desktop:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -313,9 +315,9 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-การใช้ `..` ร่วมกับคำสั่ง `cd` จะเปลี่ยนไดเรกทอรีปัจจุบันไปยังไดเรกทอรีขั้นถัดขึ้นไปหนึ่งขั้น (ซึ่งก็คือไดเรกทอรีที่เก็บไดเรกทอรีปัจจุบันอยู่นั่นเอง)
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-ลองตรวจสอบดู:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -337,7 +339,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-ต่อไป มาลบไดเรทอรี `practice` กัน:
+Now time to delete the `practice` directory:
 
 > **คำเตือน**: การลบไฟล์โดยใช้คำสั่ง `del`, `rmdir` หรือ `rm` เราจะไม่สามารถกู้คืนมาได้ ฉะนั้น *ไฟล์เหล่านี้จะหายไปตลอดกาล*! เพราะฉะนั้นต้องคุณระวังให้มากๆ ก่อนใช้คำสั่งเหล่านี้
 
@@ -360,7 +362,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-เรียบร้อย! มาดูซิว่าไฟล์ถูกลบไปจริงๆแล้วรึยัง:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -382,7 +384,7 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 ### จบการทำงาน
 
-ตอนนี้พอเท่านี้ก่อนเนอะ! คุณสามารถปิด command line หรือบรรทัดคำสั่งได้เลยตอนนี้ แต่ลองวิธีที่แฮกเกอร์เค้าทำกันดีมั๊ย? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -402,11 +404,11 @@ If you're on Mac or Linux, you probably see `$`, like this:
 
 <!--endsec-->
 
-เจ๋งสุดๆไปเลยใช่ม้าาา? :)
+Cool, huh? :)
 
 ## ภาพรวม
 
-สรุปคำสั่งที่มีประโยชน์:
+Here is a summary of some useful commands:
 
 | คำสั่ง (วินโดวส์) | คำสั่ง (Mac OS / ลินุกซ์) | คำอธิบาย                | ตัวอย่างการใช้คำส่ัง                              |
 | ----------------- | ------------------------- | ----------------------- | ------------------------------------------------- |
@@ -420,10 +422,10 @@ If you're on Mac or Linux, you probably see `$`, like this:
 | rmdir (หรือ del)  | rm                        | ลบไฟล์                  | **del c:\test\test.txt**                        |
 | rmdir /S          | rm -r                     | ลบไดเรกทอรี             | **rm -r testdirectory**                           |
 
-คำสั่งเหล่านี้เป็นเพียงส่วนหนึ่งที่คุณสามารถเรียกใช้ได้ แต่ในวันนี้คุณจะได้ใช้เพียงเท่านี้ล่ะ
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-ถ้าคุณอยากรู้เพิ่มเติม [ss64.com](http://ss64.com) มีข้อมูลอ้างอิงเกี่ยวกับคำสั่งครบทุกระบบปฏิบัติการที่สมบูรณ์
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## พร้อมหรือยัง?
 
-เราไปดำดิ่งลงสู่โลกของ Python กัน!
+Let's dive into Python!
