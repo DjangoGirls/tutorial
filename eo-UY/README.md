@@ -42,7 +42,7 @@ In every chapter already covered, there is a link that points to the correct vid
 
 This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Ĉu vi ŝatus helpi nin traduki la memlernilon al aliajn lingvojn?
 
 Currently, translations are being kept on crowdin.com platform at:
 
