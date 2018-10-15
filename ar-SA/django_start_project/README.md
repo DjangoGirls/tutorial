@@ -194,7 +194,7 @@ DATABASES = {
 
 ![Install worked!](images/install_worked.png)
 
-بينما يتم تشغيل خادم الويب، لن تشاهد موجه سطر أوامر جديدة لإدخال أوامر إضافية. لوحة التحكم تقبل نصوص جديدة ولكن لن يتم تنفيذ الأوامر الجديدة. وهذا لأن خادم الويب يعمل بشكل مستمر للاستماع للطلبات الواردة.
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > لقد استعرضنا كيف تعمل خادمات الويب في الفصل **How the Internet works**.
 
