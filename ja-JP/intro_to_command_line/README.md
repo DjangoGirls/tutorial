@@ -144,7 +144,23 @@ You'll probably see something similar on your machine. Once you open the command
 
 * * *
 
-### ファイルとディレクトリの一覧
+### Learn more about a command
+
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+
+<!--endsec-->
+
+### List files and directories
 
 So what's in it? It'd be cool to find out. Let's see:
 
@@ -179,7 +195,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### カレントディレクトリの変更
+### Change current directory
 
 Now, let's go to our Desktop directory:
 
@@ -229,7 +245,7 @@ Here it is!
 
 * * *
 
-### ディレクトリの作成
+### Create directory
 
 How about creating a practice directory on your desktop? You can do it this way:
 
@@ -257,7 +273,7 @@ This little command will create a folder with the name `practice` on your deskto
 
 * * *
 
-### エクササイズ！
+### Exercise!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
@@ -291,7 +307,7 @@ Congrats! :)
 
 * * *
 
-### クリーンアップ
+### Clean up
 
 We don't want to leave a mess, so let's remove everything we did until that point.
 
@@ -382,7 +398,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### 終了
+### Exit
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
@@ -410,17 +426,18 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| コマンド (Windows) | コマンド (Mac OS / Linux) | 説明                | 例                                                 |
-| -------------- | --------------------- | ----------------- | ------------------------------------------------- |
-| exit           | exit                  | ウインドウを閉じる         | **exit**                                          |
-| cd             | cd                    | ディレクトリを変更         | **cd test**                                       |
-| cd             | pwd                   | 現在のディレクトリを表示      | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir            | ls                    | ディレクトリ/ファイルの一覧を表示 | **dir**                                           |
-| copy           | cp                    | ファイルのコピー          | **copy c:\test\test.txt c:\windows\test.txt** |
-| move           | mv                    | ファイルを移動           | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir          | mkdir                 | 新しいディレクトリを作成      | **mkdir testdirectory**                           |
-| rmdir (or del) | rm                    | ファイルを削除           | **del c:\test\test.txt**                        |
-| rmdir /S       | rm -r                 | ディレクトリを削除         | **rm -r testdirectory**                           |
+| コマンド (Windows) | コマンド (Mac OS / Linux) | 説明                     | 例                                                  |
+| -------------- | --------------------- | ---------------------- | -------------------------------------------------- |
+| exit           | exit                  | ウインドウを閉じる              | **exit**                                           |
+| cd             | cd                    | ディレクトリを変更              | **cd test**                                        |
+| cd             | pwd                   | 現在のディレクトリを表示           | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
+| dir            | ls                    | ディレクトリ/ファイルの一覧を表示      | **dir**                                            |
+| copy           | cp                    | ファイルのコピー               | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move           | mv                    | ファイルを移動                | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir          | mkdir                 | 新しいディレクトリを作成           | **mkdir testdirectory**                            |
+| rmdir (or del) | rm                    | ファイルを削除                | **del c:\test\test.txt**                         |
+| rmdir /S       | rm -r                 | ディレクトリを削除              | **rm -r testdirectory**                            |
+| [CMD] /?       | man [CMD]             | get help for a command | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
