@@ -144,6 +144,22 @@ You'll probably see something similar on your machine. Once you open the command
 
 * * *
 
+### Learn more about a command
+
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+
+<!--endsec-->
+
 ### List files and directories
 
 So what's in it? It'd be cool to find out. Let's see:
@@ -410,17 +426,18 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                            |
+| ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                           |
+| cd                | cd                       | change directory           | **cd test**                                        |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
+| dir               | ls                       | list directories/files     | **dir**                                            |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                            |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                         |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                            |
+| [CMD] /?          | man [CMD]                | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
