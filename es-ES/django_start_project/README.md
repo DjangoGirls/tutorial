@@ -195,7 +195,7 @@ Si estàs usando un Chromebook, siempre visitaras tu servidor de pruebas accedie
 
 ![¡La instalación ha funcionado!](images/install_worked.png)
 
-Mientras el servidor se este ejecutando, no podràs ejecutar comandos adicionales. La terminal aceptarà texto pero no ejecutara ningùn comando. Esto sucede porque el servidor se ejecuta continuamente para recibir solicitudes.
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > Miramos como funcionan los servidores web en el capìtulo **Còmo funciona el internet**.
 
