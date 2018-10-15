@@ -194,7 +194,7 @@ Blahoželáme! Práve si vytvorila svoju prvú web stránku, ktorá beží na tv
 
 ![Install worked!](images/install_worked.png)
 
-Kým je spustený webový server, nebude možné zadať nové príkazy v príkazovom riadku. Terminál bude akceptovať nový text, ale nebude spúšťať nové príkazy. Je to kvôli tomu, že webový server nerpretržite beží a čaká na prichádzajúce požiadavky (requests).
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > Ako webový server funguje sme si povedali v kapitole **Ako funguje Internet**.
 
