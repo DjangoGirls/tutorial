@@ -194,7 +194,7 @@ Chromebookを使用している場合は、次のURLからテストサーバー�
 
 ![インストールできました！](images/install_worked.png)
 
-Webサーバーが稼働している間は、追加のコマンドを入力するための新しいコマンドラインプロンプトは表示されません。 新しいテキストを受け入れますが、新しいコマンドは実行しません。 これは、Webサーバーが動作している間はずっとリクエストを待つためです。
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > Webサーバーの仕組みについては、「インターネットの仕組み」の章を参照してください。
 
