@@ -194,7 +194,7 @@ Gratulálunk! Létrehoztad az első weboldaladat, és futtatad is egy webszerver
 
 ![Install worked!](images/install_worked.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. A terminál fogadja el az új szöveg, de nem teljesíti új parancsokat. This is because the web server continuously runs in order to listen for incoming requests.
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > Megnéztük, hogy milyen web szerver működik, a **Hogyan működik az Internet** fejezet.
 
