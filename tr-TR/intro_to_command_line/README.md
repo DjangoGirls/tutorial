@@ -143,7 +143,23 @@ You'll probably see something similar on your machine. Once you open the command
 
 * * *
 
-### Dosya ve dizinleri listele
+### Learn more about a command
+
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+
+<!--endsec-->
+
+### List files and directories
 
 So what's in it? It'd be cool to find out. Let's see:
 
@@ -177,7 +193,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Geçerli dizini değiştir
+### Change current directory
 
 Now, let's go to our Desktop directory:
 
@@ -203,7 +219,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     C:\Users\zeynep\Masaüstü
@@ -213,7 +229,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     > cd 
     C:\Users\zeynep\Masaüstü
@@ -227,13 +243,13 @@ Here it is!
 
 * * *
 
-### Dizin oluşturun
+### Create directory
 
 How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ mkdir uygulama
     
@@ -242,7 +258,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > mkdir uygulama
     
@@ -255,7 +271,7 @@ This little command will create a folder with the name `practice` on your deskto
 
 * * *
 
-### Alıştırma!
+### Exercise!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
@@ -263,7 +279,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ cd uygulama
     $ mkdir test
@@ -289,7 +305,7 @@ Congrats! :)
 
 * * *
 
-### Temizlik
+### Clean up
 
 We don't want to leave a mess, so let's remove everything we did until that point.
 
@@ -297,7 +313,7 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ cd ..
     
@@ -306,7 +322,7 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > cd ..
     
@@ -380,13 +396,13 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Çıkış
+### Exit
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ exit
     
@@ -408,17 +424,18 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| Komut (Windows)  | Komut (Mac OS - GNU/Linux) | Açıklama                | Örnek                                             |
-| ---------------- | -------------------------- | ----------------------- | ------------------------------------------------- |
-| exit             | exit                       | pencereyi kapatır       | **exit**                                          |
-| cd               | cd                         | dizin değiştir          | **cd test**                                       |
-| cd               | pwd                        | geçerli dizini göster   | **cd** (Windows) veya **pwd** (Mac OS / Linux)    |
-| dir              | ls                         | dizin/dosyaları listele | **dir**                                           |
-| copy             | cp                         | dosya kopyala           | **copy c:\test\test.txt c:\windows\test.txt** |
-| move             | mv                         | dosya taşı              | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir            | mkdir                      | yeni bir dizin oluştur  | **mkdir testdizini**                              |
-| rmdir (veya del) | rm                         | dosyayı silin           | **del c:\test\test.txt**                        |
-| rmdir /S         | rm -r                      | klasörü siliniz         | **rm - r testdizini**                             |
+| Komut (Windows)  | Komut (Mac OS - GNU/Linux) | Açıklama                | Örnek                                              |
+| ---------------- | -------------------------- | ----------------------- | -------------------------------------------------- |
+| exit             | exit                       | pencereyi kapatır       | **exit**                                           |
+| cd               | cd                         | dizin değiştir          | **cd test**                                        |
+| cd               | pwd                        | geçerli dizini göster   | **cd** (Windows) veya **pwd** (Mac OS / Linux)     |
+| dir              | ls                         | dizin/dosyaları listele | **dir**                                            |
+| copy             | cp                         | dosya kopyala           | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move             | mv                         | dosya taşı              | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir            | mkdir                      | yeni bir dizin oluştur  | **mkdir testdizini**                               |
+| rmdir (veya del) | rm                         | dosyayı silin           | **del c:\test\test.txt**                         |
+| rmdir /S         | rm -r                      | klasörü siliniz         | **rm - r testdizini**                              |
+| [CMD] /?         | man [CMD]                  | get help for a command  | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
