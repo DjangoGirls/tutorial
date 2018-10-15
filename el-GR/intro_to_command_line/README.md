@@ -144,6 +144,22 @@ You'll probably see something similar on your machine. Once you open the command
 
 * * *
 
+### Learn more about a command
+
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+
+<!--endsec-->
+
 ### List files and directories
 
 So what's in it? It'd be cool to find out. Let's see:
@@ -382,7 +398,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### $ rm -r practice
+### Exit
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
@@ -410,17 +426,18 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| Εντολή (Windows) | Εντολή (Mac OS / Linux) | Περιγραφή                     | Παράδειγμα                                        |
-| ---------------- | ----------------------- | ----------------------------- | ------------------------------------------------- |
-| exit             | exit                    | κλείσιμο παραθύρου            | **exit**                                          |
-| cd               | cd                      | αλλάξτε κατάλογο              | **cd test**                                       |
-| cd               | pwd                     | show the current directory    | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir              | ls                      | λίστα καταλόγων/αρχείων       | **dir**                                           |
-| copy             | cp                      | αντιγραφή αρχείου             | **copy c:\test\test.txt c:\windows\test.txt** |
-| move             | mv                      | move file                     | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir            | mkdir                   | δημιούργησε έναν νέο κατάλογο | **mkdir testdirectory**                           |
-| rmdir (or del)   | rm                      | delete a file                 | **del c:\test\test.txt**                        |
-| rmdir /S         | rm -r                   | delete a directory            | **rm -r testdirectory**                           |
+| Εντολή (Windows) | Εντολή (Mac OS / Linux) | Περιγραφή                     | Παράδειγμα                                         |
+| ---------------- | ----------------------- | ----------------------------- | -------------------------------------------------- |
+| exit             | exit                    | κλείσιμο παραθύρου            | **exit**                                           |
+| cd               | cd                      | αλλάξτε κατάλογο              | **cd test**                                        |
+| cd               | pwd                     | show the current directory    | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
+| dir              | ls                      | λίστα καταλόγων/αρχείων       | **dir**                                            |
+| copy             | cp                      | αντιγραφή αρχείου             | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move             | mv                      | move file                     | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir            | mkdir                   | δημιούργησε έναν νέο κατάλογο | **mkdir testdirectory**                            |
+| rmdir (or del)   | rm                      | delete a file                 | **del c:\test\test.txt**                         |
+| rmdir /S         | rm -r                   | delete a directory            | **rm -r testdirectory**                            |
+| [CMD] /?         | man [CMD]               | get help for a command        | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
