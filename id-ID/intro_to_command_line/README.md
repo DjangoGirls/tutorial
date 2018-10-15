@@ -144,7 +144,23 @@ You'll probably see something similar on your machine. Once you open the command
 
 * * *
 
-### Daftar berkas dan direktori
+### Learn more about a command
+
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+
+<!--endsec-->
+
+### List files and directories
 
 So what's in it? It'd be cool to find out. Let's see:
 
@@ -179,7 +195,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Mengganti direktori aktif
+### Change current directory
 
 Now, let's go to our Desktop directory:
 
@@ -205,7 +221,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ pwd 
     /Users/olasitarska/Desktop
@@ -215,7 +231,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     > cd 
     C:\Users\olasitarska\Desktop
@@ -229,13 +245,13 @@ Here it is!
 
 * * *
 
-### Membuat Direktori
+### Create directory
 
 How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ mkdir praktik
     
@@ -244,7 +260,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     > mkdir praktik
     
@@ -257,7 +273,7 @@ This little command will create a folder with the name `practice` on your deskto
 
 * * *
 
-### Latihan!
+### Exercise!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
@@ -265,7 +281,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ cd practice 
     $ mkdir test 
@@ -291,7 +307,7 @@ Congrats! :)
 
 * * *
 
-### Pembersihan
+### Clean up
 
 We don't want to leave a mess, so let's remove everything we did until that point.
 
@@ -299,7 +315,7 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ cd ..
     
@@ -308,7 +324,7 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     > cd ..
     
@@ -321,7 +337,7 @@ Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}baris-perinah{% endfilename %}
 
     $ pwd 
     /Users/olasitarska/Desktop
@@ -345,7 +361,7 @@ Now time to delete the `practice` directory:
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-{% filename %}baris-perinah{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ rm -r practice
     
@@ -388,7 +404,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ exit
     
@@ -410,17 +426,18 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| Perintah (Windows) | Perintah (Mac OS / Linux) | Keterangan                  | Contoh                                         |
-| ------------------ | ------------------------- | --------------------------- | ---------------------------------------------- |
-| exit               | exit                      | menutup jendela kerja       | **exit**                                       |
-| cd                 | cd                        | mengganti direktori         | **cd tes**                                     |
-| cd                 | pwd                       | menunjukkan direktori aktif | **cd** (Windows) atau **pwd** (Mac OS / Linux) |
-| dir                | ls                        | daftar direktori/file       | **dir**                                        |
-| copy               | cp                        | menyalin berkas             | **copy c:\tes\tes.txt c:\windows\tes.txt** |
-| move               | mv                        | memindakan berkas           | **move c:\tes\tes.txt c:\windows\tes.txt** |
-| mkdir              | mkdir                     | membuat direktori baru      | **mkdir direktorites**                         |
-| rmdir (or del)     | rm                        | menghapus berkas            | **del c:\tes\tes.txt**                       |
-| rmdir /S           | rm -r                     | menghapus direktori         | **rm -r testdirectory**                        |
+| Perintah (Windows) | Perintah (Mac OS / Linux) | Keterangan                  | Contoh                                             |
+| ------------------ | ------------------------- | --------------------------- | -------------------------------------------------- |
+| exit               | exit                      | menutup jendela kerja       | **exit**                                           |
+| cd                 | cd                        | mengganti direktori         | **cd tes**                                         |
+| cd                 | pwd                       | menunjukkan direktori aktif | **cd** (Windows) atau **pwd** (Mac OS / Linux)     |
+| dir                | ls                        | daftar direktori/file       | **dir**                                            |
+| copy               | cp                        | menyalin berkas             | **copy c:\tes\tes.txt c:\windows\tes.txt**     |
+| move               | mv                        | memindakan berkas           | **move c:\tes\tes.txt c:\windows\tes.txt**     |
+| mkdir              | mkdir                     | membuat direktori baru      | **mkdir direktorites**                             |
+| rmdir (or del)     | rm                        | menghapus berkas            | **del c:\tes\tes.txt**                           |
+| rmdir /S           | rm -r                     | menghapus direktori         | **rm -r testdirectory**                            |
+| [CMD] /?           | man [CMD]                 | get help for a command      | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
