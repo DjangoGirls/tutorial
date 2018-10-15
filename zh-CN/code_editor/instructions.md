@@ -24,8 +24,8 @@ Atom是另一个流行的编辑器。免费，开源，并且支持Windows，OS 
 
 你可能会疑惑为什么我们要安装代码编辑器软件，而不是使用如 Word 或记事本这样的软件。
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+第一个原因是，代码需要是**纯文本**的，类似Word和Textedit的软件有个问题是，它们生成的不是纯文本，而是使用类似[RTF(Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format)的自定义格式产生富文本(含有不同字体和格式)。
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+第二个原因是，代码编辑器是专门用来编辑代码的，因此它们会提供一些有用的功能，比如根据代码的含义高亮代码，或者帮你自动匹配引号。
 
 We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
