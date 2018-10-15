@@ -194,7 +194,7 @@ Binabati ko kayo! Nakalikha kana ng kaunaunhan mong website at napatakbo ito gam
 
 ![Install worked!](images/install_worked.png)
 
-Habang tumatakbo ang web server, wala kang makikitang bagong command-line na prompt para maglagay ng karagdagang mga command. Ang terminal ay tatanggap ng mga bagong teksto pero hindi nito patatakbuhin ang mga bagong command. Ito ay dahil ang web server ay parating nakatakbo para mag-antay ng mga paparating na mga request.
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > Ating pinagbalik-aralan kung paano gumagana ang mga web server sa **How the Internet words** na kabanata.
 
