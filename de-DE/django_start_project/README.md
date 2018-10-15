@@ -194,7 +194,7 @@ Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Web
 
 ![Installation hat funktioniert!](images/install_worked.png)
 
-Während der Webserver läuft, siehst du keinen neuen Kommandozeilen-Promt, bei dem du weitere Befehle eingeben könntest. Die Konsole akzeptiert zwar weitere Texteingaben, führt die entsprechenden Kommandos aber nicht aus. Das ist, weil der Webserver laufend auf neue eingehende Requests wartet.
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > Wie Webserver funktionieren, haben wir im Kapitel **"Wie das Internet funktioniert"** angesehen.
 
