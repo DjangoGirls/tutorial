@@ -144,6 +144,22 @@ You'll probably see something similar on your machine. Once you open the command
 
 * * *
 
+### Learn more about a command
+
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+
+<!--endsec-->
+
 ### List files and directories
 
 So what's in it? It'd be cool to find out. Let's see:
@@ -205,7 +221,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska/Desktop
@@ -215,7 +231,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
@@ -235,7 +251,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ mkdir practice
     
@@ -244,7 +260,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > mkdir practice
     
@@ -265,7 +281,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ cd practice
     $ mkdir test
@@ -299,7 +315,7 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ cd ..
     
@@ -308,7 +324,7 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd ..
     
@@ -388,7 +404,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ exit
     
@@ -410,17 +426,18 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                           |
-| ----------------- | ------------------------ | -------------------------- | ------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                          |
-| cd                | cd                       | change directory           | **cd test**                                       |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | list directories/files     | **dir**                                           |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt** |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                           |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                        |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                           |
+| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                            |
+| ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
+| exit              | exit                     | close the window           | **exit**                                           |
+| cd                | cd                       | change directory           | **cd test**                                        |
+| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
+| dir               | ls                       | list directories/files     | **dir**                                            |
+| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                            |
+| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                         |
+| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                            |
+| [CMD] /?          | man [CMD]                | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
