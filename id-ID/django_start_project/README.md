@@ -193,7 +193,7 @@ LANGUAGE_CODE = 'de-ch'
 > > > 
 > > > ![Install worked!](images/install_worked.png)
 > > > 
-> > > Saat server web berjalan, Anda tidak akan melihat command-line prompt baru untuk memasukkan perintah tambahan. Terminal akan menerima teks baru tapi tidak akan menjalankan perintah baru. Ini karena server web terus berjalan untuk mendengarkan permintaan masuk .
+> > > Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 > > > 
 > > > > Kami meninjau bagaimana server web bekerja di ** Bagaimana Internet bekerja** bab.
 > > > 
