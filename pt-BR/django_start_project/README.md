@@ -194,7 +194,7 @@ Parabéns! Você criou seu primeiro site e o executou usando um servidor web! N�
 
 ![Instalação funcionou!](images/install_worked.png)
 
-Enquanto o servidor estiver rodando, o prompt do terminal não estará disponível para receber novos comandos. Na realidade, o terminal permite que você escreva texto, mas não irá executar nenhum comando. Isto acontece porque o servidor bloqueia o terminal enquanto ele mesmo recebe novos comandos.
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > Nós revisamos como servidores web funcionam no capítulo **Como a Internet funciona**.
 
