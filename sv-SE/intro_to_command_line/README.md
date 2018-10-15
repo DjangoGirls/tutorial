@@ -144,7 +144,23 @@ You'll probably see something similar on your machine. Once you open the command
 
 * * *
 
-### Lista filer och mappar
+### Learn more about a command
+
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+
+<!--endsec-->
+
+### List files and directories
 
 So what's in it? It'd be cool to find out. Let's see:
 
@@ -179,7 +195,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Ändra aktuell katalog
+### Change current directory
 
 Now, let's go to our Desktop directory:
 
@@ -229,7 +245,7 @@ Here it is!
 
 * * *
 
-### Skapa katalog
+### Create directory
 
 How about creating a practice directory on your desktop? You can do it this way:
 
@@ -257,7 +273,7 @@ This little command will create a folder with the name `practice` on your deskto
 
 * * *
 
-### Övning!
+### Exercise!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
@@ -291,7 +307,7 @@ Congrats! :)
 
 * * *
 
-### Städa upp
+### Clean up
 
 We don't want to leave a mess, so let's remove everything we did until that point.
 
@@ -410,17 +426,18 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| Kommando (Windows) | Kommando (Mac OS / Linux) | Beskrivning            | Exempel                                           |
-| ------------------ | ------------------------- | ---------------------- | ------------------------------------------------- |
-| exit               | exit                      | stäng fönstret         | **exit**                                          |
-| cd                 | cd                        | ändra katalog          | **cd test**                                       |
-| cd                 | pwd                       | visa nuvarande katalog | **cd** (Windows) eller **pwd** (Mac OS / Linux)   |
-| dir                | ls                        | lista kataloger/filer  | **dir**                                           |
-| copy               | cp                        | kopiera fil            | **copy c:\test\test.txt c:\windows\test.txt** |
-| move               | mv                        | flytta fil             | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir              | mkdir                     | skapa en ny katalog    | **mkdir testkatalog**                             |
-| rmdir (eller del)  | rm                        | ta bort en fil         | **del c:\test\test.txt**                        |
-| rmdir /S           | rm -r                     | ta bort en mapp        | **rm -r testkatalog**                             |
+| Kommando (Windows) | Kommando (Mac OS / Linux) | Beskrivning            | Exempel                                            |
+| ------------------ | ------------------------- | ---------------------- | -------------------------------------------------- |
+| exit               | exit                      | stäng fönstret         | **exit**                                           |
+| cd                 | cd                        | ändra katalog          | **cd test**                                        |
+| cd                 | pwd                       | visa nuvarande katalog | **cd** (Windows) eller **pwd** (Mac OS / Linux)    |
+| dir                | ls                        | lista kataloger/filer  | **dir**                                            |
+| copy               | cp                        | kopiera fil            | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move               | mv                        | flytta fil             | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir              | mkdir                     | skapa en ny katalog    | **mkdir testkatalog**                              |
+| rmdir (eller del)  | rm                        | ta bort en fil         | **del c:\test\test.txt**                         |
+| rmdir /S           | rm -r                     | ta bort en mapp        | **rm -r testkatalog**                              |
+| [CMD] /?           | man [CMD]                 | get help for a command | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
