@@ -194,7 +194,7 @@ Bravo ! Vous venez de créer votre premier site web, et de le lancer avec un ser
 
 ![Install worked!](images/install_worked.png)
 
-While the web server is running, you won't see a new command-line prompt to enter additional commands. The terminal will accept new text but will not execute new commands. This is because the web server continuously runs in order to listen for incoming requests.
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > We reviewed how web servers work in the **How the Internet works** chapter.
 
