@@ -1,6 +1,6 @@
 有很多不同的编辑器，通常根据个人偏好选择。 大部分 Python程序员使用像 PyCharm这样复杂但是功能强大的IDE (集成开发环境)。 然而，这可能不太适合初学者。我们建议使用同样强大但是更为简单的编辑器。
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+下面是我们的建议，不过你可以随时询问你的教练有什么推荐 - 向他们寻求帮助会更简单些。
 
 ## Gedit文本编辑器
 
@@ -16,7 +16,7 @@ Sublime Text 是一个很受欢迎的、免费试用的编辑器，它很容易�
 
 ## Atom编辑器
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom是另一个流行的编辑器。免费，开源，并且支持Windows，OS X 和 Linux。Atom是[GitHub](https://github.com/)开发的。
 
 [在这里下载](https://atom.io/)
 
