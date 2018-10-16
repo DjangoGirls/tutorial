@@ -194,9 +194,9 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Change current directory
+### Wechseln des Verzeichnisses
 
-Now, let's go to our Desktop directory:
+Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -216,7 +216,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -238,15 +238,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Hier ist es!
 
 > Pro-Tipp: Wenn du `cd D` tippst und dann `tab` auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit "D" beginnt, drücke die `tab`-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.
 
 * * *
 
-### Create directory
+### Erstellen eines Verzeichnisses
 
-How about creating a practice directory on your desktop? You can do it this way:
+Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -266,15 +266,15 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :)
 
 > Pro-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die `Pfeil aufwärts`- und `Pfeil abwärts`-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.
 
 * * *
 
-### Exercise!
+### Übung!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practice`-Ordner ein Verzeichnis namens `test`. (Verwende dazu die Kommandos `cd` und `mkdir`.)
 
 #### Lösung:
 
@@ -302,15 +302,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Glückwunsch! :)
 
 * * *
 
-### Clean up
+### Aufräumen
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Wir wollen kein Chaos hinterlassen, also lass uns das bislang Geschaffene wieder löschen.
 
-First, we need to get back to Desktop:
+Zuerst müssen wir zurück zum Desktop wechseln:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -330,9 +330,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Durch Verwendung von `..` mit dem `cd` Kommando wechselst du von deinem aktuellen Verzeichnis zum übergeordneten Verzeichnis (dies ist das Verzeichnis, das das aktuelle Verzeichnis enthält).
 
-Check where you are:
+Schau nach, wo du gerade bist:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -354,7 +354,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
 
 > **Achtung**: Wenn du Daten mit `del`, `rmdir` oder `rm` löschst, kannst du das nicht mehr rückgängig machen, das bedeutet *die gelöschten Dateien sind für immer weg*! Sei also sehr vorsichtig mit diesem Befehl.
 
@@ -377,7 +377,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -397,9 +397,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Beenden
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -419,11 +419,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Cool, was? :-)
 
 ## Zusammenfassung
 
-Here is a summary of some useful commands:
+Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 
 | Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                   | Beispiel                                           |
 | ---------------- | ----------------------- | ------------------------------ | -------------------------------------------------- |
@@ -438,10 +438,10 @@ Here is a summary of some useful commands:
 | rmdir /S         | rm -r                   | Verzeichnis löschen            | **rm -r testdirectory**                            |
 | [CMD] /?         | man [CMD]               | get help for a command         | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Das sind nur sehr wenige der Befehle, welche du in deiner Konsole verwenden kannst, aber du wirst heute nicht mehr brauchen.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Falls du neugierig bist, findest du auf [ss64.com](http://ss64.com) eine vollständige Übersicht über alle Kommandozeilen-Befehle für alle Betriebssysteme.
 
 ## Fertig?
 
-Let's dive into Python!
+Lass uns mit Python anfangen!
