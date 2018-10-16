@@ -144,7 +144,7 @@ Du wirst wahrscheinlich etwas Ähnliches auf deinem Gerät sehen. Wenn du die Ko
 
 * * *
 
-### Learn more about a command
+### Mehr über ein Kommando lernen
 
 Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
@@ -302,7 +302,7 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 
 <!--endsec-->
 
-Glückwunsch! :)
+Glückwunsch! :-)
 
 * * *
 
@@ -399,7 +399,7 @@ Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 ### Beenden
 
-Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
+Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :-)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -425,18 +425,18 @@ Cool, was? :-)
 
 Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 
-| Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                   | Beispiel                                           |
-| ---------------- | ----------------------- | ------------------------------ | -------------------------------------------------- |
-| exit             | exit                    | Fenster schließen              | **exit**                                           |
-| cd               | cd                      | Verzeichnis wechseln           | **cd test**                                        |
-| cd               | pwd                     | aktuelles Verzeichnis anzeigen | **cd** (Windows) oder **pwd** (Mac OS / Linux)     |
-| dir              | ls                      | Unterordner/Dateien zeigen     | **dir**                                            |
-| copy             | cp                      | Datei kopieren                 | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move             | mv                      | Datei verschieben              | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir            | mkdir                   | neues Verzeichnis erstellen    | **mkdir testdirectory**                            |
-| rmdir (oder del) | rm                      | Datei löschen                  | **del c:\test\test.txt**                         |
-| rmdir /S         | rm -r                   | Verzeichnis löschen            | **rm -r testdirectory**                            |
-| [CMD] /?         | man [CMD]               | get help for a command         | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                    | Beispiel                                             |
+| ---------------- | ----------------------- | ------------------------------- | ---------------------------------------------------- |
+| exit             | exit                    | Fenster schließen               | **exit**                                             |
+| cd               | cd                      | Verzeichnis wechseln            | **cd test**                                          |
+| cd               | pwd                     | aktuelles Verzeichnis anzeigen  | **cd** (Windows) oder **pwd** (Mac OS / Linux)       |
+| dir              | ls                      | Unterordner/Dateien zeigen      | **dir**                                              |
+| copy             | cp                      | Datei kopieren                  | **copy c:\test\test.txt c:\windows\test.txt**    |
+| move             | mv                      | Datei verschieben               | **move c:\test\test.txt c:\windows\test.txt**    |
+| mkdir            | mkdir                   | neues Verzeichnis erstellen     | **mkdir testdirectory**                              |
+| rmdir (oder del) | rm                      | Datei löschen                   | **del c:\test\test.txt**                           |
+| rmdir /S         | rm -r                   | Verzeichnis löschen             | **rm -r testdirectory**                              |
+| [CMD] /?         | man [CMD]               | Hilfe für ein Kommando aufrufen | **cd /?** (Windows) oder **man cd** (Mac OS / Linux) |
 
 Das sind nur sehr wenige der Befehle, welche du in deiner Konsole verwenden kannst, aber du wirst heute nicht mehr brauchen.
 
