@@ -150,13 +150,13 @@ Viele Befehle, die du in der Kommandozeile nutzen kannst, haben eine eingebaute 
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X und Linux haben einen `man`-Befehl, mit dem du die Hilfe über die Kommandos aufrufen kannst. Gib `man pwd` ein und schau, was angezeigt wird oder setzte `man` vor andere Kommandos und sieh dir deren Hilfe an. Das Ergebnis von `man` wird in der Regel seitenweise ausgegeben. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X und Linux haben einen `man`-Befehl, mit dem du die Hilfe über die Kommandos aufrufen kannst. Gib `man pwd` ein und schau, was angezeigt wird oder setzte `man` vor andere Kommandos und sieh dir deren Hilfe an. Das Ergebnis von `man` wird in der Regel seitenweise ausgegeben. Du kannst die Leertaste benutzen, um auf die nächste Seite zu gelangen und `q`, um die Hilfeseiten zu schließen.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Wenn du Windows benutzt, dann wird dir der Suffix `/?` für die meisten Kommandos die Hilfeseite ausgeben. Gegebenenfalls musst du nach oben scrollen, um alles zu sehen. Versuch es mal mit `cd /?`.
 
 <!--endsec-->
 
