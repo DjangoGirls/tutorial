@@ -148,13 +148,13 @@ Du wirst wahrscheinlich etwas Ähnliches auf deinem Gerät sehen. Wenn du die Ko
 
 Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
-<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
 OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
-<!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
+<!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
 Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
 
