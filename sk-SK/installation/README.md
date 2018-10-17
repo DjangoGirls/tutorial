@@ -2,22 +2,28 @@
 
 Pokiaľ robíš tento tutoriál doma, nie na jednej z [Django Girls akcií](https://djangogirls.org/events/), môžeš úplne preskočiť túto kapitolu a pokračovať rovno na kapitolu [Ako funguje Internet](../how_the_internet_works/README.md).
 
-Je to preto, že tieto veci spomenieme počas tutoriálu a toto je len dodatočná stránka, ktorá zjednocuje všetky inštalačné inštrukcie na jednom mieste. Django Girls akcie obsahujú "Inštalačné večery", kde nainštalujeme všetko, aby sme sa s tým nemuseli trápiť počas workshopu, takže táto stránka je pre nás užitočná.
+This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
-Pokiaľ sa ti zdá táto kapitola užitočná, tiež si ju môžeš celú prejsť. Ale pokiaľ sa chceš začať učiť predtým, ako si nainštaluješ množstvo vecí na svoj počítač, preskoč túto kapitolu a my ti vysvetlíme inštalačnú časť neskôr.
+Good luck!
 
-Veľa šťastia!
+# If you're attending a workshop
 
-# Inštalácia
+If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
 
-Počas workshopu budeš vytvárať blog a v tutoriále je pár nastavení, ktoré by bolo dobré prejsť predtým, aby si bola pripravená začať programovať.
+* Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
+* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
+* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+
+# Installation
+
+In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Inštalácia Pythonu
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
@@ -29,30 +35,30 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/django_installation/instructions.md" %}
 
-# Inštalácia Gitu
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# Vytvorenie GitHub účtu
+# Create a GitHub account
 
 Choď na [GitHub.com](https://www.github.com) a založ (Sign Up) si nový účet zdarma.
 
-# Vytvor si PythonAnywhere účet
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Začni si čítať
+# Start reading
 
 Gratulujeme, si pripravená začať! Pokiaľ máš stále zvyšný čas pred začiatkom workshopu, bolo by užitočné, ak by si si prečítala pár začiatočníckych kapitol:
 
-* [Ako funguje Internet](../how_the_internet_works/README.md)
+* [How the internet works](../how_the_internet_works/README.md)
 
-* [Úvod do príkazového riadku](../intro_to_command_line/README.md)
+* [Introduction to the command line](../intro_to_command_line/README.md)
 
-* [Úvod do jazyka Python](../python_introduction/README.md)
+* [Introduction to Python](../python_introduction/README.md)
 
-* [Čo je Django?](../django/README.md)
+* [What is Django?](../django/README.md)
 
-# Uži si workshop!
+# Enjoy the workshop!
 
 Keď začne workshop, budeš môcť prejsť priamo na [Tvoj prvý Django projekt!](../django_start_project/README.md), lebo si už absolvovala látku v predchádzajucích kapitol.
