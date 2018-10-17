@@ -12,18 +12,20 @@ Django ถูกเขียนโดยภาษา Python เพราะฉ�
 
 ![อย่าลืมเพิ่ม Python ไปยัง Path](../python_installation/images/python-installation-options.png)
 
-ในขั้นตอนต่อจากนี้ คุณจะต้องใช้ Windows Command Line (ซึ่งเราจะอธิบายให้คุณฟังต่อไป) สำหรับตอนนี้ ถ้าหากคุณอยากจะพิมพ์คำสั่งใดๆ ให้ไปที่ Start และพิมพ์ "Command Prompt" ลงในช่องค้นหาที่ปรากฏ (ใน Windows รุ่นเก่าๆ คุณสามารถเริ่มใช้ Command Line ได้โดยการกด Start → Windows System → Command Prompt) คุณยังสามารถกดปุ่ม Windows และปุ่มตัว R จนหน้าต่าง "Run" เด้งขึ้นมา ในการเปิดใช้ Command Line พิมพ์ "cmd" แล้วกด Enter ในหน้าต่าง "Run"
+When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
-![พิมพ์ "cmd" ในหน้าต่าง "Run"](../python_installation/images/windows-plus-r.png)
+In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window.
 
-หมายเหตุ: ถ้าหากคุณใช้ Windows รุ่นเก่า (7, Vista, หรือรุ่นที่เก่ากว่านั้น) และไม่สามารถติดตั้ง Python 3.6.x ได้ คุณสามารถลองวิธีใดวิธีหนึ่งตามด้านล่างนี้:
+![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+
+Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
 1. ติดตั้ง Windows Updates ทั้งหมด และลองติดตั้ง Python 3.6 อีกครั้ง; หรือ
 2. ติดตั้ง [Python รุ่นเก่า](https://www.python.org/downloads/windows/) เช่น e.g., [3.4.6](https://www.python.org/downloads/release/python-346/)
 
-ถ้าหากคุณติดตั้ง Python รุ่นเก่า หน้าจอการติดตั้งอาจจะดูแตกต่างจากหน้าจอที่เราโชว์ในตัวอย่างด้านบน ควรตรวจสอบให้แน่ใจว่าคุณเลื่อนลงไปดู "Add python.exe to Path" แล้วคลิกที่ปุ่มด้านซ้ายมือ จากนั้นจึงเลือก "Will be installed on local hard drive":
+If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-![เพิ่ม Python to the Path รุ่นเก่า](../python_installation/images/add_python_to_windows_path.png)
+![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -32,7 +34,7 @@ data-collapse=true ces-->
 
 > **หมายเหตุ** ก่อนที่คุณจะติดตั้ง Python บนระบบปฏิบัติการ OS X คุณควรตรวจสอบให้แน่ใจว่าการตั้งค่า Mac ของคุณนั้นอนุญาตให้ติดตั้งแพคเก็จที่ไม่ได้มาจาก App Store ได้ ให้ไปที่ System Preferences (มันอยู่ในโฟลเดอร์ Applications) คลิก "Security & Privacy," หลังจากนั้นให้คลิกที่แท็บ "General" ถ้าหาก "Allow apps downloaded from:" ถูกตั้งค่าให้อยู่ใน "Mac App Store," ให้เปลี่ยนเป็น "Mac App Store and identified developers."
 
-คุณต้องไปที่เว็บไซต์ https://www.python.org/downloads/release/python-361/ และดาวน์โหลดตัวติดตั้ง Python:
+You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
 * ดาวน์โหลดไฟล์ *Mac OS X 64-bit/32-bit installer*
 * Double click ที่ *python-3.4.3-macosx10.6.pkg* เพื่อรันตัวติดตั้ง
@@ -42,7 +44,7 @@ data-collapse=true ces-->
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-มีโอกาสสูงที่คุณจะมี Python ติดตั้งอยู่แล้ว ตรวจสอบว่าได้ติดตั้งแล้ว (และเป็นรุ่นอะไร) เปิดคอนโซลขึ้นมา และพิมพ์คำสั่งต่อไปนี้:
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,13 +52,13 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-ถ้าหากคุณได้ติดตั้ง Python รุ่น 'micro version' เช่น 3.6.0 คุณก็ไม่ต้องอัพเกรดใดๆ ถ้าคุณยังไม่ได้ติดตั้ง Python หรือ ถ้าคุณต้องการเวอร์ชั่นอื่น คุณสามารถติดตั้งได้ ตามนี้:
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-ใช้คำสั่งต่อไปนี้ในคอนโซลของคุณ:
+Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -68,7 +70,7 @@ data-collapse=true ces-->
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-ใช้คำสั่งต่อไปนี้ในคอนโซลของคุณ:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,7 +84,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-ใช้คำสั่งต่อไปนี้ในคอนโซลของคุณ:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -91,7 +93,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-ตรวจสอบว่าการติดตั้งสมบูรณ์หรือไม่ โดยเปิดโปรแกรม *Terminal* ขึ้นมา และรันคำสั่ง `python3` ตามนี้:
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,8 +101,8 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-**หมายเหตุ:** ถ้าหากคุณใช้ระบบปฏิบัตการ Windows และคุณได้รับข้อความที่บอกถึงข้อผิดพลาดว่า `python3` wasn't found (ไม่พบ python3) คุณควรลองพิมพ์ `python` (ไม่ต้องพิมพ์เลข `3`) แล้วลองตรวจสอบดูว่ามันยังเป็น Python รุ่น 3.6 หรือไม่
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
 
 * * *
 
-หากคุณมีข้อสงสัยใด ๆ หรือคุณคิดว่ามีอะไรผิดพลาด และคุณไม่รู้จะทำอะไรต่อดี - ลองถามโค้ชของคุณสิ! บางครั้ง กระบวนการจะไม่ราบรื่นอย่างที่คิด มันจะดีกว่าถ้าคุณจะขอความช่วยเหลือจากคนอื่นที่มีประสบการณ์มาก่อน
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
