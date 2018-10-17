@@ -12,18 +12,20 @@ Dikkat edilmesi gereken bir şey: Yükleme esnasında "Setup" ("Kur") işaretli 
 
 ![Python'u arama yoluna eklemeyi unutmayın](../python_installation/images/python-installation-options.png)
 
-Önümüzdeki adımlarda, Windows Komut Satırını kullanıyor olacaksınız (ki ayrıca bahsedeceğiz). Şimdilik, bazı komutlar girmeniz gerekirse, Başlat menüsüne gidin ve arama alanına "Komut istemi" yazıp enter'a basın. (Windows'un eski sürümlerinde, komut satırını Başlat menüsü → Windows sistemi → Komut istemi ile başlatabilirsin.) Ayrıca "Çalıştır" penceresi açılana kadar Windows tuşunu basılı tutup "R"-tuşuna basabilirsin. Komut Satırı'nı açmak için, "cmd" yazın ve "Çalıştır" penceresinde enter'a basın.
+When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
-!["Çalıştır" penceresine "cmd" yazın](../python_installation/images/windows-plus-r.png)
+In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window.
 
-Not: eğer Windows'un eski bir versiyonunu (7, Vista ya da herhangi bir eski versiyon) kullanıyorsanız ve Python 3.6.x yükleyicisi hata veriyorsa, aşağıdakilerden birini deneyebilirsiniz:
+![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+
+Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
 1. bütün Windows Güncellemeleri'ni yükleyin ve Python 3.6'yı tekrar yüklemeyi deneyin; ya da
 2. [eski bir Python versiyonu](https://www.python.org/downloads/windows/), örneğin [3.4.6](https://www.python.org/downloads/release/python-346/) yükleyin.
 
-Eğer Python'ın eski bir versiyonunu yüklerseniz, yükleme ekranı yukarıda gösterilenden biraz farklı görünebilir. "python.exe'yi Path'e ekle" görene dek aşağı kaydırdığınızdan emin olun, daha sonra soldaki butona tıklayın ve "Yerel sabit sürücüye yüklenecek"'i seçin:
+If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-![Eski Python sürümlerini Path'e ekleyin](../python_installation/images/add_python_to_windows_path.png)
+![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -32,7 +34,7 @@ data-collapse=true ces-->
 
 > **Not** Python'ı OS X'te yüklemeden önce, Mac ayarlarınızın App Store'dan olmayan paketleri yüklemeye izin verdiğinden emin olmalısınız. Sistem Tercihleri'ne (Uygulamalar klasöründe) gidin, önce "Güvenlik & Gizlilik"'e ve daha sonra da "Genel" sekmesine tıklayın. Eğer sizin "Şuradan yüklenen uygulamalara izin ver:" ayarınız "Mac App Store"'a ayarlıysa, onu "Mac App Store and kimliği bilinen geliştirici."lere çevirin
 
-Python kurulum dosyasını indirmek için resmi siteye gitmelisiniz: https://www.python.org/downloads/release/python-361/
+You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
 * *Mac OS X 64-bit/32-bit yükleyici* dosyasını indirin,
 * *python-3.6.1-macosx10.6.pkg* 'a çift tıklayarak yükleyiciyi çalıştırın.
@@ -42,23 +44,23 @@ Python kurulum dosyasını indirmek için resmi siteye gitmelisiniz: https://www
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Muhtemelen sisteminizde Python zaten yüklüdür. Yüklü olup olmadığını (ya da hangi versiyon olduğunu) kontrol etmek için komut satırını açın ve aşağıdaki komutları girin: 
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 --version
     Python 3.6.1
     
 
-Eğer farklı bir 'mikro sürüm' Python yüklüyse, örn: 3.6.0, o zaman yükseltme yapmak zorunda değilsiniz. Python yüklü değilse ya da farklı bir versiyon edinmek istiyorsanız aşağıdaki adımları takip edin:
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Terminale bu komutu girin:
+Type this command into your console:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ sudo apt install python3.6
     
@@ -68,39 +70,39 @@ Terminale bu komutu girin:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Terminalde kullanmanız gereken komut:
+Use this command in your console:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-Eğer eski bir Fedora sürümünüz varsa `dnf` komutu bulunamadı hatasını alabilirsiniz. Bu durumda, `yum` kullanmanız gerekir.
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Terminalde kullanmanız gereken komut:
+Use this command in your console:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ sudo zypper install python3
     
 
 <!--endsec-->
 
-Komut istemini açıp `python3` komutunu çalıştırarak yüklemenin başarılı olup olmadığını doğrulayabilirsiniz:
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 --version
     Python 3.6.1
     
 
-**Not:** Eğer Windows kullanıyorsanız ve `python3` bulunamadı hatasını alıyorsanız, `python` (`3` olmadan) komutunu deneyin ve Python 3.6 sürümlerinin olup olmadığını kontrol edin.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
 
 * * *
 
-Eğer herhangi bir şüpheniz varsa veya kurulumda bir şeyler ters gittiyse ve sonrasında ne yapılacağını bilmiyorsanız, eğitmeninize sorabilirsiniz! Bazen işler düzgün gitmiyor, bu durumda daha fazla deneyime sahip birinden yardım istemelisiniz.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
