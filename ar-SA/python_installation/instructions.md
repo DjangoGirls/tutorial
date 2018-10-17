@@ -12,18 +12,20 @@
 
 ![لا تنس إضافة بيثون إلى المسار](../python_installation/images/python-installation-options.png)
 
-في الخطوات المقبلة، عليك استخدام سطر أوامر Windows (والذي سنتكلم عنه ايضا). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. لفتح سطر الأوامر، اكتب "cmd" وإضغط على أدخل في "Run".
+When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
-![أكتب "cmd" في نافدة "Run&quot](../python_installation/images/windows-plus-r.png)
+In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window.
 
-ملاحضة: اذا كنت تستخدم نسخة قديمة من وندوز ( 7، فيستا، او اي نسخة قديمة) وبايثون 3.6 فشلت في التنصيب يكنك تجريب هذا:
+![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+
+Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
 1. تثبيت كافة تحديثات Windows ومحاولة تثبيت بايثون 3.6 مرة أخرى؛ أو
 2. تثبيت [نسخة اقدم من بايثون](https://www.python.org/downloads/windows/) مثال [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-إذا قمت بتثبيت إصدار قديم من بايثون، شاشة التثبيت قد تبدو مختلفة بعض الشيء مما هو مبين أعلاه. تأكد من أنك قمت بالتمرير لأسفل لرؤية "Add python.exe to Path"، ثم انقر فوق الزر الموجود على الجانب الأيسر واختر "Will be installed on local hard drive":
+If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-![إضافة بايثون إلى المسار، الإصدارات القديمة](../python_installation/images/add_python_to_windows_path.png)
+![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -32,7 +34,7 @@ data-collapse=true ces-->
 
 > **ملاحظة** قبل أن تقوم بتثبيت بايثون على نظام التشغيل OS X، عليك التأكد من إعدادات ماك إذا كانت تسمح بتثبيت الحزم التي ليست من المتجر. إذهب إلى "تفضيلات النظام" (في مجلد التطبيقات)، انقر فوق "الأمان الخصوصية"، ثم علامة التبويب "عام". إذا كانت " السمحاح بالتطبيقات للتحميل من " موضوعة على تطبيقات أبستور فقط غيرها إلى " تطبيقات أبستور و المطورين الغير المعرفين "
 
-يجب عليك زيارة هذا الموقع وتحميل مثبت بايثون https://www.python.org/downloads/release/python-361/:
+You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
 * تحميل ملف *مثبت Ma c OS X 64-بت/32-بت * ،
 * انقر نقراً مزدوجاً فوق *python-3.6.1-macosx10.6.pkg* لتشغيل المثبت.
@@ -42,7 +44,7 @@ data-collapse=true ces-->
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-من المحتمل جدا ان لديك نسخة بايثون مثبتة بالفعل ، للتحقق ادخل الأوامر التالية في وحدة التحكم:
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,15 +52,15 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-إذا كان لديك 'نسخة مايكرو' مختلفة من بايثون منصبة، مثل 3.6.0، إذا ليس عليك الترقية. إذا لم تنصب بايثون ، أي انك تريد نسخة مغايرة ، يمكنك تثبيته على النحو التالي:
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-استخدم هذا الأمر في وحدة التحكم الخاصة بك:
+Type this command into your console:
 
-{% filename %} baris perintah {% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ sudo apt install python3.6
     
@@ -68,7 +70,7 @@ data-collapse=true ces-->
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-استخدم هذا الأمر في وحدة التحكم الخاصة بك:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,7 +84,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-استخدم هذا الأمر في وحدة التحكم الخاصة بك:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -91,7 +93,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-تحقق من أن عملية التثبيت كانت ناجحة بفتح موجه الأوامر ثم تشغيل الأمر `python3`:
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,8 +101,8 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-**ملاحظة:** إذا كنت على ويندوز، و حصلت على رسالة خطأ أنه لم يتم العثور على `python3`، حاول استخدام `python` (دون `3`) وتجربة اذا كان لا يزال هنا نسخة من 3.6 بيثون.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
 
 * * *
 
-إذا كان لديك اي سؤال ، او حصل شي ما وليس لديه اي فكرة عن ما حصل ، رجاء إستشر مدربك! أحيانا لا تسير الأمور بسلاسة، لذا من الأفضل أن تطلب المساعدة من شخص لديه خبرة أكبر.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
