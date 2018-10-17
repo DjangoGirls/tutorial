@@ -12,6 +12,8 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
+When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+
 In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
@@ -44,7 +46,7 @@ data-collapse=true ces-->
 
 It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 --version
     Python 3.6.1
@@ -58,7 +60,7 @@ If you have a different 'micro version' of Python installed, e.g. 3.6.0, then yo
 
 Type this command into your console:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ sudo apt install python3.6
     
@@ -70,7 +72,7 @@ data-collapse=true ces-->
 
 Use this command in your console:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
@@ -84,7 +86,7 @@ data-collapse=true ces-->
 
 Use this command in your console:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ sudo zypper install python3
     
@@ -93,7 +95,7 @@ Use this command in your console:
 
 Verify the installation was successful by opening a command prompt and running the `python3` command:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 --version
     Python 3.6.1
