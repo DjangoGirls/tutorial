@@ -5,7 +5,7 @@ Git, birçok programcı tarafından kullanılan bir "sürüm kontrol sistemi"dir
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Git'i [git-scm.com](https://git-scm.com/) adresinden indirebilirsiniz. Bir adım hariç bütün adımları "next"e basarak geçebilirsiniz. Bu adımda "Adjusting your PATH environment" dediği yerde, "Run Git and associated Unix tools from the Windows command-line" (en alttaki opsiyonu) seçin. Onun dışında varsayılanları seçebilirsiniz. Satır sonları için kodu çekerken Windows-stilini, kodu gönderirken Unix-stilini kullanın.
+Git'i [git-scm.com](https://git-scm.com/) adresinden indirebilirsiniz. You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Onun dışında varsayılanları seçebilirsiniz. Satır sonları için kodu çekerken Windows-stilini, kodu gönderirken Unix-stilini kullanın.
 
 Kurulum başarı ile tamamlandıktan sonra komut istemini veya powershelli yeniden başlatmayı unutmayın. <!--endsec-->
 
