@@ -44,7 +44,7 @@ Du solltest nun ein weißes oder schwarzes Fenster sehen, das auf deine Anweisun
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Auf einem Mac oder Linux, siehst du wahrscheinlich `$`, also so:
+Auf einem Mac- oder Linux-Rechner siehst du wahrscheinlich ein `$`, also so:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,16 +55,18 @@ Auf einem Mac oder Linux, siehst du wahrscheinlich `$`, also so:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Auf Windows siehst du ein `>` Zeichen, also das hier:
+Auf einem Windows-Rechner siehst du wahrscheinlich ein `>`, so hier:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Schau mal in den Linux-Abschnitt hier obendrüber -- so etwas wirst du wieder im Abschnitt PythonAnywhere später im Tutorial antreffen.
+
 <!--endsec-->
 
-Vor jedem Kommando wird dieses Zeichen und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich. :)
+Vor jedem Kommando wird das Zeichen `$` oder `>` und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich. :-)
 
 > Ein kleiner Hinweis: Falls du etwas in der Art wie `C:\Users\ola>` oder `Olas-MacBook-Air:~ ola$` sehen solltest, ist das auch 100%ig korrekt.
 
@@ -102,7 +104,7 @@ Und dann bestätige mit `Enter`. Das ist unser Ergebnis:
     olasitarska
     
 
-Wie du siehst, der Computer hat deinen Nutzernamen ausgegeben. Toll, was? :)
+Wie du siehst, der Computer hat deinen Nutzernamen ausgegeben. Toll, was? :-)
 
 > Versuch, jeden Befehl abzuschreiben und nicht zu kopieren und einzufügen. Auf diese Weise wirst du dir mehr merken!
 
@@ -248,7 +250,7 @@ Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kan
 
 <!--endsec-->
 
-Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :)
+Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :-)
 
 > Pro-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die `Pfeil aufwärts`- und `Pfeil abwärts`-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.
 
@@ -256,7 +258,7 @@ Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem D
 
 ### Übung!
 
-Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practice`-Ordner ein Verzeichnis namens `test`. (Verwende dazu die `cd` und `mkdir`-Kommandos.)
+Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practice`-Ordner ein Verzeichnis namens `test`. (Verwende dazu die Kommandos `cd` und `mkdir`.)
 
 #### Lösung:
 
@@ -284,7 +286,7 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 
 <!--endsec-->
 
-Glückwunsch! :)
+Glückwunsch! :-)
 
 * * *
 
@@ -381,7 +383,7 @@ Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 ### Beenden
 
-Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
+Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :-)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -401,7 +403,7 @@ Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es 
 
 <!--endsec-->
 
-Cool, was? :)
+Cool, was? :-)
 
 ## Zusammenfassung
 
