@@ -2,22 +2,28 @@
 
 Als je deze tutorial thuis volgt en niet op een van de [Django Girls evenementen](https://djangogirls.org/events/), kun je dit hoofdstuk in z'n geheel overslaan en rechtstreeks naar het [Hoe werkt het internet](../how_the_internet_works/README.md) hoofdstuk gaan.
 
-Je kan dit eventueel overslaan omdat we alle informatie die hier staat dekken in de gehele tutorial. Dit is gewoon een extra pagina die alle installatie instructies verzameld op één plek. Het Django Girls evenement omvat ook een "Installatie-avond" waar we alles installeren zodat we daar ons tijdens de workshop geen zorgen meer om hoeven te maken. Dit is dus handig als je naar een workshop gaat.
+This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
-Als het je nuttig lijkt, kun je dit hoofdstuk ook doornemen. Maar als je liever dingen leert dan een aantal dingen op je computer te installeren, sla dan dit hoofdstuk over en ga aan de slag! We leggen alle installatie stappen later aan je uit.
+Good luck!
 
-Succes!
+# If you're attending a workshop
 
-# Installatie
+If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
 
-In deze workshop ga je een blog bouwen. Er zijn een paar setup taken in de tutorial waarvan het goed zou zijn om hier van tevoren alvast doorheen te werken, zodat je klaar bent om te kunnen programmeren op de dag van het evenement.
+* Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
+* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
+* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+
+# Installation
+
+In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Python installeren
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
@@ -29,30 +35,30 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/django_installation/instructions.md" %}
 
-# Git installeren
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# Een GitHub account aanmaken
+# Create a GitHub account
 
 Ga naar [GitHub.com](https://www.github.com) and registreer voor een nieuw, gratis gebruikers account.
 
-# Een PythonAnywhere account aanmaken
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Begin met lezen
+# Start reading
 
 Gefeliciteerd! Je bent helemaal klaar om te gaan. Als je nog wat tijd over hebt voordat de workshop begint zou het handig zijn om alvast een paar van de volgende hoofdstukken te lezen:
 
-* [Hoe het internet werkt](../how_the_internet_works/README.md)
+* [How the internet works](../how_the_internet_works/README.md)
 
-* [Inleiding tot de command line](../intro_to_command_line/README.md)
+* [Introduction to the command line](../intro_to_command_line/README.md)
 
-* [Inleiding Python](../python_introduction/README.md)
+* [Introduction to Python](../python_introduction/README.md)
 
-* [Wat is Django?](../django/README.md)
+* [What is Django?](../django/README.md)
 
-# Veel plezier met de workshop!
+# Enjoy the workshop!
 
 Als je met de workshop begint kun je rechtstreeks naar [Je eerste Django project!](../django_start_project/README.md) gaan, omdat je de stof al in de eerdere hoofdstukken behandeld hebt.
