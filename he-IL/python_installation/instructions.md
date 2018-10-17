@@ -12,6 +12,8 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
+When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+
 In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
