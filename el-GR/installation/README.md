@@ -2,57 +2,63 @@
 
 Αν κάνεις το tutorial στο σπίτι και όχι στο πλαίσιο ενός [Django Girls event](https://djangogirls.org/events/), μπορείς να αγνοήσεις εντελώς αυτό το κεφάλαιο και να πας κατευθείαν στο κεφάλαιο [Πώς δουλεύει το internet](../how_the_internet_works/README.md).
 
-Αυτό γιατί το περιεχόμενο του συγκεκριμένου κεφαλαίου καλύπτεται σταδιακά στο υπόλοιπο tutorial ούτως ή άλλως, απλώς αυτή η σελίδα παρουσιάζει συγκεντρωμένες όλες τις οδηγίες εγκατάστασης. Συνήθως, τα Django Girls events περιλαμβάνουν και ένα "installation evening", όποτε και γίνονται όλες οι απαραίτητες εγκαταστάσεις ώστε να μην μας απασχολούν κατά τη διάρκεια του workshop, συνεπώς αυτό το κεφάλαιο είναι περισσότερο χρήσιμο για όσες συμμετέχουν στο event.
+This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
-Αν βέβαια το θεωρείς χρήσιμο, μπορείς φυσικά να ακολουθήσεις και το παρόν κεφάλαιο. Αν ωστόσο προτιμάς να ξεκινήσεις μαθαίνοντας πράγματα πριν κάνεις όλες τις εγκαταστάσεις που απαιτούνται, παράλειψε το κεφάλαιο αυτό και εμείς θα σου δώσουμε όλες τις απαραίτητες οδηγίες στην πορεία.
+Good luck!
 
-Καλή επιτυχία!
+# If you're attending a workshop
 
-# Εγκατάσταση
+If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
 
-Στη διάρκεια του workshop θα φτιάξεις ένα blog, η κατασκευή του οποίου απαιτεί μερικές ρυθμίσεις, τις οποίες καλό είναι να κάνεις προηγουμένως ώστε να είσαι σε θέση να ξεκινήσεις να γράφεις κώδικα την ήμερα του workshop.
+* Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
+* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
+* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+
+# Installation
+
+In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Εγκατάστησε την Python
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Εγκατάστησε έναν code editor
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
 
-# Ρύθμισε το εικονικό σου περιβάλλον και εγκατάστησε το Django
+# Set up virtualenv and install Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Εγκατάστησε το Git
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# Δημιούργησε λογαριασμό στο GitHub
+# Create a GitHub account
 
 Πήγαινε στο [GitHub.com](https://www.github.com) και κάνε έναν δωρεάν λογαριασμό.
 
-# Δημιούργησε λογαριασμό στο PythonAnywhere
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Άρχισε να διαβάζεις
+# Start reading
 
 Συγχαρητήρια, όλα έχουν ρυθμιστεί σωστά και είσαι πανέτοιμη! Αν έχεις ακόμα χρόνο πριν το workshop, ίσως να σε βοηθούσε να ξεκινήσεις να διαβάζεις μερικά από τα εισαγωγικά κεφάλαια:
 
-* [Πώς δουλεύει το internet](../how_the_internet_works/README.md)
+* [How the internet works](../how_the_internet_works/README.md)
 
-* [Εισαγωγή στο τερματικό (command line)](../intro_to_command_line/README.md)
+* [Introduction to the command line](../intro_to_command_line/README.md)
 
-* [Εισαγωγή στην Python](../python_introduction/README.md)
+* [Introduction to Python](../python_introduction/README.md)
 
-* [Τι είναι το Django;](../django/README.md)
+* [What is Django?](../django/README.md)
 
-# Καλά να περάσεις στο workshop!
+# Enjoy the workshop!
 
 Όταν ξεκινήσει το workshop, εσύ μπορείς να πας αμέσως στο [Your first Django Project!](../django_start_project/README.md), αφού έχεις ήδη καλύψει το υλικό των ενδιάμεσων ενοτήτων στα προηγούμενα κεφάλαια.
