@@ -2,22 +2,28 @@
 
 إذا كنت تستخدم البرنامج التعليمي في المنزل وليس في أحد [أحداث "جانغو للفتيات"](https://djangogirls.org/events/)، يمكنك تخطي هذا الفصل الآن والانتقال مباشرة إلى الفصل ["كيف يعمل الإنترنت" ](../how_the_internet_works/README.md).
 
-وهذا يرجع إلى أننا نغطي هذه الأشياء في البرنامج التعليمي كله على أي حال، وهذه مجرد صفحة إضافية تقوم بجمع كافة إرشادات التثبيت في مكان واحد. يشمل حدث دجانغو للفتيات امسية للتثبيت بحيث نقوم بتثبيت كل شيء، حتى لا نعاني اثناء حلقات العمل، هذا سيكون مفيدا بالنسبة لنا.
+This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
-إذا وجدت أنها مفيدة، يمكنك المتابعة من خلال هذا الفصل أيضا. ولكن إذا كنت تريد البدء في تعلم الأشياء قبل تثبيت مجموعة من الأشياء على جهاز الكمبيوتر الخاص بك، انتقل من هذا الفصل وسوف نشرح جزء التثبيت لكم في وقت لاحق.
+Good luck!
 
-حظا سعيدا!
+# If you're attending a workshop
 
-# التثبيت
+If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
 
-في حلقة العمل سوف نبني مدونة، هناك عدد قليل من مهام الإعداد في البرنامج التعليمي الذي سيكون جيدا للعمل سلفا حتى أن كنت على استعداد لبدء التكويد في ذاك اليوم.
+* Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
+* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
+* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+
+# Installation
+
+In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# تثبيت بايثون
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
@@ -29,30 +35,30 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/django_installation/instructions.md" %}
 
-# تثبيت Git
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# إنشاء حساب Github
+# Create a GitHub account
 
 زر [GitHub.com](https://www.github.com) وسجل حساب مستخدم جديد، مجاناً.
 
-# قم بإنشاء حساب بايثون في كل مكان
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# ابدأ بالقراءة
+# Start reading
 
 تهانينا، انت جاهز الأن وعلى استعداد للإنطلاق! إذا كان لا يزال لديك بعض الوقت قبل انعقاد حلقة العمل، سيكون من المفيد بدء قراءة عدد قليل من فصول البداية:
 
-* [كيف تعمل الإنترنت](../how_the_internet_works/README.md)
+* [How the internet works](../how_the_internet_works/README.md)
 
-* [مقدمة لسطر الأوامر](../intro_to_command_line/README.md)
+* [Introduction to the command line](../intro_to_command_line/README.md)
 
-* [مقدمة إلى بايثون](../python_introduction/README.md)
+* [Introduction to Python](../python_introduction/README.md)
 
-* [ما هو جانغو؟](../django/README.md)
+* [What is Django?](../django/README.md)
 
-# استمتع بالحلقة!
+# Enjoy the workshop!
 
 عند البدء في حلقة العمل، عليك أن تكون قادر على الذهاب مباشرة إلى [أول مشروع جانغو!](../django_start_project/README.md) لأنك غطيت كل الموارد في الفصول السابقة.
