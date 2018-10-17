@@ -12,18 +12,20 @@ Pripazi na jednu stvar: tijekom instalacije, u prozoru na kojem piše "Setup" mo
 
 ![Ne zaboravi dodati Python u Path](../python_installation/images/python-installation-options.png)
 
-U nadolazećim koracima, koristit ćeš Windows naredbeni redak (o kojem ćemo ti također pričati). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. Da bi se otvorio naredbeni redak, upiši "cmd" i pritisni enter u "Run" prozorčiću.
+When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
-![Upiši "cmd" u "Run" prozor](../python_installation/images/windows-plus-r.png)
+In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window.
 
-Napomena: ako koristiš starije inačice Windowsa (7, Vista ili starije), i instalacija Pythona 3.6.x ti dojavi grešku, možeš pokušati ili:
+![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+
+Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
 1. instalirati sva ažuriranja pa pokušati ponovno; ili
 2. instalirati [stariju inačicu Pythona](https://www.python.org/downloads/windows/), npr. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-Ako ćeš instalirati stariju inačicu Pythona, ekran instalacije može može izgledati drukčije nego na slici gore. Provjeri je li označeno "Add python.exe to Path", zatim klikni na gumb lijevo i odaberi "Will be installed on a local hard drive":
+If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-![Dodaj Python u Path, starije inačice](../python_installation/images/add_python_to_windows_path.png)
+![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -32,7 +34,7 @@ data-collapse=true ces-->
 
 > **Note** Prije instalacije Pythona na OS X, trebalo bi provjeriti dozvoljavaju li ti postavke Maca instaliranje paketa koji nisu sa App Storea. Idi na System Preferences (u mapi Aplikacija), stisni na "Securty & Privacy", a zatim na tab "General". Ako ti pod "Allow apps downloaded from:" piše "Mac App Store", promjeni to u "Mac App Store and identified developers."
 
-Moraš otići na web stranicu https://www.python.org/downloads/release/python-361/ i preuzeti Python instalaciju:
+You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
 * Preuzmi *Mac OS X 64-bit732-bit installer*,
 * Dvaput stisni *python-3.6.1-macosx10.6.pkg* da pokreneš instalaciju.
@@ -42,7 +44,7 @@ Moraš otići na web stranicu https://www.python.org/downloads/release/python-36
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Vrlo je vjerojatno da već imaš predinstaliran Python još iz trgovine. Ako želiš provjeriti imaš li ga instaliranog (i koju inačicu), otvori konzolu i upiši sljedeću naredbu:
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,13 +52,13 @@ Vrlo je vjerojatno da već imaš predinstaliran Python još iz trgovine. Ako že
     Python 3.6.1
     
 
-Ako imaš imaš instaliranu neku drugu 'mikro inačicu' Pythona, npr. 3.6.0, onda ne moraš ažurirati. Ako nemaš instaliran Python, ili želiš drugu inačicu, možeš ju instalirati na slijedeći način:
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Upiši ovu naredbu u svoju konzolu:
+Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -68,7 +70,7 @@ Upiši ovu naredbu u svoju konzolu:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Koristi ovu naredbu u svojoj konzoli:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,7 +84,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Koristi ovu naredbu u svojoj konzoli:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -91,7 +93,7 @@ Koristi ovu naredbu u svojoj konzoli:
 
 <!--endsec-->
 
-Provjeri da je instalacija prošla uspješno tako da otvoriš komandnu liniju i pokreneš `python3` naredbu:
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,8 +101,8 @@ Provjeri da je instalacija prošla uspješno tako da otvoriš komandnu liniju i 
     Python 3.6.1
     
 
-**NAPOMENA:**Ako si na Windowsima i dobiješ grešku da `python3` nije pronađen, pokušaj upisati samo `python` (bez `3`) i provjeri je li još uvijek inačica 3.6.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python 3.6.
 
 * * *
 
-Ako imaš bilo kakvih sumnji, ili nešto pođe po zlu, a nemaš ideja što dalje napraviti, pitaj svoj trenera! Ponekad stvari ne prošu glatko i bolje je pitati za pomoć nekoga s više iskustva.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
