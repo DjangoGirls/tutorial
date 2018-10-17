@@ -2,22 +2,28 @@
 
 If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-因為這章節的內容含概在整份教材中，本章節是附加頁面，它將所有安莊指令集中在一個地方。 The Django Girls event includes one "Installation evening" where we install everything so we don't need to bother with it during the workshop, so this is useful for us.
+This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
-If you find it useful, you can follow this chapter too. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation part to you later on.
+Good luck!
 
-祝你好運！
+# If you're attending a workshop
 
-# 安裝
+If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
 
-在這個研討會中，你將建立一個部落格；教材中有一些前置設定作業最好先完成，這樣這天你就可以開始寫程式了。
+* Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
+* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
+* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+
+# Installation
+
+In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# 安裝 Python
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
@@ -29,29 +35,29 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/django_installation/instructions.md" %}
 
-# 安裝 Git
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# 建立 GitHub 帳號
+# Create a GitHub account
 
 到 [GitHub.com](https://www.github.com) 註冊一個新的、免費的帳戶。
 
-# 建立 PythonAnywhere 帳戶
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# 開始閱讀
+# Start reading
 
 Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
-* [網際網路是如何運作](../how_the_internet_works/README.md)
+* [How the internet works](../how_the_internet_works/README.md)
 
-* [命令行簡介](../intro_to_command_line/README.md)
+* [Introduction to the command line](../intro_to_command_line/README.md)
 
-* [Python 簡介](../python_introduction/README.md)
+* [Introduction to Python](../python_introduction/README.md)
 
-* [Django 是什麼?](../django/README.md)
+* [What is Django?](../django/README.md)
 
 # Enjoy the workshop!
 
