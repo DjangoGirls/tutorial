@@ -5,7 +5,7 @@ Git היא תוכנת version control (ובעברית, בקרת גרסאות), �
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-את יכולה להוריד את git מ-[git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). מלבד זאת, אפשרויות ברירת המחדל הן סבבה. גם הסרת הסימון מ-Windows-style line endings והוספתו ב-Unix-style line endings היא רעיון לא רע.
+את יכולה להוריד את git מ-[git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). מלבד זאת, אפשרויות ברירת המחדל הן סבבה. גם הסרת הסימון מ-Windows-style line endings והוספתו ב-Unix-style line endings היא רעיון לא רע.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
