@@ -76,7 +76,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## Tu primer comando (¡BIEN!)
 
-Let's start by typing this command:
+Comencemos escribiendo este comando:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -96,24 +96,24 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Y pulsa `enter`. Este es nuestro resultado:
 
 {% filename %}command-line{% endfilename %}
 
     $ whoami olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Como puedes ver, el ordenador ha imprimido tu nombre de usuario. Genial, ¿eh? :)
 
 > Trata de escribir cada comando, no copies y pegues. ¡Te acordarás más de esta manera!
 
 ## Fundamentos
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Cada sistema operativo tiene un conjunto diferente de comandos para la línea de comandos, así que asegúrate de seguir las instrucciones para tu sistema operativo. Vamos a intentarlo, ¿de acuerdo?
 
 ### Directorio actual
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Estaría bien saber dónde estamos ahora, ¿verdad? Vamos a ver. Escribe este comando y pulsa `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -159,9 +159,9 @@ Adding a `/?` suffix to most commands will print the help page. You may need to 
 
 <!--endsec-->
 
-### List files and directories
+### Listar ficheros y directorios
 
-So what's in it? It'd be cool to find out. Let's see:
+¿Qué hay aquí? Sería bueno saber. Veamos:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
