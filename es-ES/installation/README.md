@@ -4,7 +4,7 @@ Si estás haciendo el tutorial en casa, y no en uno de los [eventos de Django Gi
 
 This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
-Good luck!
+¡Buena suerte!
 
 # If you're attending a workshop
 
@@ -14,7 +14,7 @@ If you are attending one of the [Django Girls events](https://djangogirls.org/ev
 * The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
 * If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
 
-# Installation
+# Instalación
 
 In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
@@ -23,42 +23,42 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Install Python
+# Instalar Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Instalar un editor de código
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Configurar virtualenv e instalar Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Instalar Git
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Crear una cuenta de GitHub
 
 Visita [GitHub.com](https://www.github.com) y registra una nueva cuenta de usuario gratuita.
 
-# Create a PythonAnywhere account
+# Crear una cuenta de PythonAnywhere
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Comienza a leer
 
 Felicitaciones, ya tienes todo configurado y listo para seguir! Si aún tienes tiempo antes del taller, sería útil comenzar a leer algunos de los capítulos iniciales:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [¿Cómo funciona internet?](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Introducción a la línea de comandos](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Introducción a Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [¿Qué es Django?](../django/README.md)
 
-# Enjoy the workshop!
+# ¡Disfruta el taller!
 
 Al comenzar el taller, podrás ir directamente a [Tu primer proyecto en Django!](../django_start_project/README.md) porque ya cubriste el material de los capítulos anteriores.
