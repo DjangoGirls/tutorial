@@ -5,7 +5,7 @@ Git은 많은 프로그래머들이 사용하고 있는 "버전 제어 시스템
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Git은 [git-scm.com](https://git-scm.com/)에서 다운로드 할 수 있어요. You can hit "next" on all steps except for one; in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). 나머지는 모두 기본 설정대로 해도 됩니다. 윈도우 스타일, 유닉스 스타일로 라인엔딩 커밋하기(commit Unix-style line endings) 를 체크하는 것도 좋습니다.
+Git은 [git-scm.com](https://git-scm.com/)에서 다운로드 할 수 있어요. You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). 나머지는 모두 기본 설정대로 해도 됩니다. 윈도우 스타일, 유닉스 스타일로 라인엔딩 커밋하기(commit Unix-style line endings) 를 체크하는 것도 좋습니다.
 
 설치가 성공적으로 완료된 후 명령 프롬프트나 파워쉘을 다시 시작하세요. <!--endsec-->
 
