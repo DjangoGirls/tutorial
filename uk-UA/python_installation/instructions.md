@@ -12,6 +12,8 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Не забудьте додати Python до змінної Path](../python_installation/images/python-installation-options.png)
 
+When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+
 In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
@@ -32,7 +34,7 @@ data-collapse=true ces-->
 
 > **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
-Вам необхідно перейти на веб сайт https://www.python.org/downloads/release/python-361/ і завантажити Python інсталятор:
+You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
 * завантажте файл *Mac OS X 64-bit/32-bit installer*,
 * Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
@@ -42,7 +44,7 @@ data-collapse=true ces-->
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Цілком ймовірно, що у вас вже є Python встановлений разом із системою. Щоб перевірити це (а заодно й версію), відкрийте консоль і наберіть наступну команду:
+It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,13 +52,13 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. Якщо Python не встановлено або ви бажаєте встановити іншу версію, то можете виконати встановлення наступним чином:
+If you have a different 'micro version' of Python installed, e.g. 3.6.0, then you don't have to upgrade. If you don't have Python installed, or if you want a different version, you can install it as follows:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Наберіть наступну команду в консолі:
+Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -68,7 +70,7 @@ If you have a different 'micro version' of Python installed, e.g. 3.6.0, then yo
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Скористайтеся наступною командою в консолі:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -82,7 +84,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Скористайтеся наступною командою в консолі:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -103,4 +105,4 @@ Verify the installation was successful by opening a command prompt and running t
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Інколи не все йде гладко і краще звернутись по допомогу до когось, хто має більше досвіду.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
