@@ -194,7 +194,7 @@ Adding a `/?` suffix to most commands will print the help page. You may need to 
 
 * * *
 
-### Change current directory
+### Cambiar el directorio actual
 
 Now, let's go to our Desktop directory:
 
@@ -216,7 +216,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+Comprueba si realmente ha cambiado:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -238,15 +238,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+¡Aquí está!
 
 > Truco pro: si escribes `cd D` y luego pulsas `tab` en el teclado, la línea de comandos automáticamente completará el resto del nombre para que puedas navegar más rápido. Si hay más de una carpeta que empiece con "D", dale al botón `tab` dos veces para obtener una lista de opciones.
 
 * * *
 
-### Create directory
+### Crear un directorio
 
-How about creating a practice directory on your desktop? You can do it this way:
+¿Qué tal si creamos un directorio de práctica en el escritorio? Lo puedes hacer de esta manera:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -272,7 +272,7 @@ This little command will create a folder with the name `practice` on your deskto
 
 * * *
 
-### Exercise!
+### ¡Ejercicio!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
@@ -302,15 +302,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+¡Felicidades!
 
 * * *
 
 ### Clean up
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+No queremos dejar un lío, así que vamos a eliminar todo lo que hemos hecho hasta este momento.
 
-First, we need to get back to Desktop:
+En primer lugar, tenemos que volver al escritorio:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -332,7 +332,7 @@ First, we need to get back to Desktop:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Check where you are:
+Revisa dónde estás:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -397,9 +397,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Salir
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+¡Esto es todo por ahora! Ya puedes cerrar la línea de comandos sin problema. Vamos a hacerlo al estilo hacker, ¿vale?:)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -419,29 +419,29 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Genial, ¿no? :)
 
 ## Resumen
 
-Here is a summary of some useful commands:
+Aquí hay una lista de algunos comandos útiles:
 
-| Comando (Windows) | Comando (Mac OS / Linux) | Descripción                  | Ejemplo                                            |
-| ----------------- | ------------------------ | ---------------------------- | -------------------------------------------------- |
-| salida            | salida                   | Cierra la ventana            | **salida**                                         |
-| cd                | cd                       | Cambia el directorio         | **cd test**                                        |
-| cd                | pwd                      | Mostrar el directorio actual | **cd** (Windows) o **pwd** (Mac OS / Linux)        |
-| dir               | ls                       | Lista directorios/archivos   | **dir**                                            |
-| copy              | cp                       | Copia de archivos            | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move              | mv                       | Mueve archivos               | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir             | mkdir                    | Crea un nuevo directorio     | **mkdir testdirectory**                            |
-| rmdir (o del)     | rm                       | Eliminar un archivo          | **del c:\test\test.txt**                         |
-| rmdir /S          | rm -r                    | Eliminar un Directorio       | **rm -r testdirectory**                            |
-| [CMD] /?          | man [CMD]                | get help for a command       | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Comando (Windows) | Comando (Mac OS / Linux) | Descripción                   | Ejemplo                                            |
+| ----------------- | ------------------------ | ----------------------------- | -------------------------------------------------- |
+| salida            | salida                   | Cierra la ventana             | **salida**                                         |
+| cd                | cd                       | Cambia el directorio          | **cd test**                                        |
+| cd                | pwd                      | Mostrar el directorio actual  | **cd** (Windows) o **pwd** (Mac OS / Linux)        |
+| dir               | ls                       | Lista directorios/archivos    | **dir**                                            |
+| copy              | cp                       | Copia de archivos             | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move              | mv                       | Mueve archivos                | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir             | mkdir                    | Crea un nuevo directorio      | **mkdir testdirectory**                            |
+| rmdir (o del)     | rm                       | Eliminar un archivo           | **del c:\test\test.txt**                         |
+| rmdir /S          | rm -r                    | Eliminar un Directorio        | **rm -r testdirectory**                            |
+| [CMD] /?          | man [CMD]                | Obtener ayuda para un comando | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Estos son solo algunos de los comandos que puedes ejecutar en la línea de comandos. No vas a usar nada más que esos por ahora.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Si tienes curiosidad, [ss64.com](http://ss64.com) contiene una referencia completa de comandos para todos los sistemas operativos.
 
 ## ¿Listo?
 
-Let's dive into Python!
+¡Vamos a sumergirnos en Python!
