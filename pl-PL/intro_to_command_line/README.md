@@ -160,9 +160,9 @@ Adding a `/?` suffix to most commands will print the help page. You may need to 
 
 <!--endsec-->
 
-### List files and directories
+### Lista plików i folderów
 
-So what's in it? It'd be cool to find out. Let's see:
+Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -195,9 +195,9 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Change current directory
+### Zmiana katalogu bieżącego
 
-Now, let's go to our Desktop directory:
+Przejdźmy teraz do naszego folderu Pulpit:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -217,7 +217,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+Sprawdźmy, czy coś się faktycznie zmieniło:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -239,15 +239,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Tak, to tutaj!
 
 > PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `Tab` na klawiaturze, wiersz polecenia automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `Tab` dwukrotnie, aby wyświetlić listę możliwości.
 
 * * *
 
-### Create directory
+### Tworzenie folderu
 
-How about creating a practice directory on your desktop? You can do it this way:
+Co powiesz na stworzenie folderu cwiczenie na swoim pulpicie? Zrób to w ten sposób:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -267,15 +267,15 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+To niepozorne polecenie doda do Twojego pulpitu folder o nazwie `cwiczenie`. Możesz sprawdzić, czy na pewno został tam dodany - spójrz na swój pulpit albo uruchom polecenie `ls` lub `dir`! Spróbuj. :)
 
 > PRO tip: Jeżeli nie chcesz w kółko wpisywać tych samych poleceń, wciśnij na klawiaturze klawisz ze `strzałką w górę` i `strzałką w dół` aby przewinąć listę poprzednio użytych poleceń.
 
 * * *
 
-### Exercise!
+### Ćwiczenie!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` stwórz katalog o nazwie `test`. (Użyj poleceń `cd` i `mkdir`.)
 
 #### Rozwiązanie:
 
@@ -303,15 +303,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Gratulacje! :)
 
 * * *
 
-### Clean up
+### Sprzątanie
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Nie chcemy zostawić bałaganu, a zatem wyrzućmy wszystko, co do tej pory zrobiłyśmy.
 
-First, we need to get back to Desktop:
+Najpierw musimy wrócić do Pulpitu:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -331,9 +331,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Wykonanie `cd` wraz z `..` przeniesie Cię do katalogu nadrzędnego (czyli tego, w którym znajduje się Twój aktualny katalog).
 
-Check where you are:
+Sprawdź, gdzie jesteś:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -355,7 +355,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Teraz czas usunąć katalog `cwiczenie`:
 
 > **Uwaga**: Usuwanie plików za pomocą `del`, `rmdir` lub `rm` jest nieodwracalne. To znaczy, że *Twoje pliki zostaną bezpowrotnie utracone*! Tak więc bądź ostrożna z tymi poleceniami.
 
@@ -378,7 +378,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Gotowe! Dla pewności, że został on naprawdę usunięty, sprawdźmy to:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -398,9 +398,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Wyjście
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+To na razie tyle! Możesz teraz spokojnie zamknąć wiersz polecenia. To co, zrobimy to jak prawdziwy haker? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -420,29 +420,29 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Fajnie, nie? :)
 
 ## Podsumowanie
 
-Here is a summary of some useful commands:
+Oto podsumowanie przydatnych poleceń:
 
-| Polecenie (Windows) | Polecenie (Mac OS / Linux) | Opis                          | Przykład                                           |
-| ------------------- | -------------------------- | ----------------------------- | -------------------------------------------------- |
-| wyjście             | wyjście                    | zamknięcie okna               | **wyjście**                                        |
-| cd                  | cd                         | zmiana katalogu               | **cd test**                                        |
-| cd                  | pwd                        | pokazywane bieżącego katalogu | **cd** (Windows) lub **pwd** (Mac OS / Linux)      |
-| dir                 | ls                         | lista katalogów/plików        | **dir**                                            |
-| copy                | cp                         | kopiowanie pliku              | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move                | mv                         | przenoszenie pliku            | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir               | mkdir                      | tworzenie nowego katalogu     | **mkdir testdirectory**                            |
-| rmdir (lub del)     | rm                         | usuwanie pliku                | **del c:\test\test.txt**                         |
-| rmdir /S            | rm -r                      | usuwanie katalogu             | **rm -r testdirectory**                            |
-| [CMD] /?            | man [CMD]                  | get help for a command        | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Polecenie (Windows) | Polecenie (Mac OS / Linux) | Opis                                | Przykład                                            |
+| ------------------- | -------------------------- | ----------------------------------- | --------------------------------------------------- |
+| wyjście             | wyjście                    | zamknięcie okna                     | **wyjście**                                         |
+| cd                  | cd                         | zmiana katalogu                     | **cd test**                                         |
+| cd                  | pwd                        | pokazywane bieżącego katalogu       | **cd** (Windows) lub **pwd** (Mac OS / Linux)       |
+| dir                 | ls                         | lista katalogów/plików              | **dir**                                             |
+| copy                | cp                         | kopiowanie pliku                    | **copy c:\test\test.txt c:\windows\test.txt**   |
+| move                | mv                         | przenoszenie pliku                  | **move c:\test\test.txt c:\windows\test.txt**   |
+| mkdir               | mkdir                      | tworzenie nowego katalogu           | **mkdir testdirectory**                             |
+| rmdir (lub del)     | rm                         | usuwanie pliku                      | **del c:\test\test.txt**                          |
+| rmdir /S            | rm -r                      | usuwanie katalogu                   | **rm -r testdirectory**                             |
+| [CMD] /?            | man [CMD]                  | uzyskiwanie pomocy na temat komendy | **cd /?** (Windows) lub **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu polecenia, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Jeżeli temat Cię zainteresował, to [ss64.com](http://ss64.com) zawiera kompletny spis poleceń dla wszystkich systemów operacyjnych.
 
 ## Gotowa?
 
-Let's dive into Python!
+No to poznajmy Pythona!
