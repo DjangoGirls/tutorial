@@ -6,11 +6,17 @@ Ang Django ay nakasulat sa Python. Kinakailangan natin ang Python upang gumawa n
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Una, i-check kung ang iyong computer ay gumagamit ng isang 32-bit na bersyon o isang 64-bit na bersyon ng Windows, sa pamamagitan ng pagpindot ng Windows key + Pause/Break key na magbubukas sa impormasyon ng iyong System, at tingnan ang "System type" na linya. Maaari kang mag-download ng Python para sa Windows mula sa website na https://www.python.org/downloads/windows/. Pindutin ang "Latest Python 3 Release - Python x.x.x" na link. Kung ang iyong computer ay gumagamit ng isang **64-bit** na bersyon ng Windows, i-download ang **Windows x86-64 executable installer**. Kung hindi man, i-download ang **Windows x86 executable installer**. Pagkatapos i-download ang installer, dapat mo itong gamitin (i-double click ito) at sundin ang mga tagubilin doon.
+First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+
+* Press the Windows key and Pause/Break key at the same time
+* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
+* Press the Windows button, then navigate to Settings > System > About
+
+You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
 
-![Huwag kalimutan na idagdag ang Python sa Path](../python_installation/images/python-installation-options.png)
+![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
 When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
@@ -36,8 +42,8 @@ data-collapse=true ces-->
 
 You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
-* Mag-download ng *Mac OS X 64-bit/32-bit installer* na file,
-* I-double click ang *python-3.6.1-macosx10.6.pkg* para mapatakbo ang installer.
+* Download the *Mac OS X 64-bit/32-bit installer* file,
+* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
 
 <!--endsec-->
 
