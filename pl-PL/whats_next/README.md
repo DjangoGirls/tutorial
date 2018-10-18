@@ -4,19 +4,19 @@ Możesz z siebie być dumna! **Jesteś absolutnie świetna**. Jesteśmy takie du
 
 ### Co teraz?
 
-Take a break and relax! You have just done something really huge.
+Zrób sobie przerwę i zrelaksuj się. Odwaliłaś kawał dobrej roboty!
 
 Potem, upewnij się, że śledzisz Django Girls na [Facebooku](http://facebook.com/djangogirls) i [Twitterze](https://twitter.com/djangogirls) by być na bieżąco.
 
 ### Czy możesz polecić kolejne materiały?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Tak! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
 - Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Oficjalny tutorial Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Wideolekcje Getting Started with Django](http://www.gettingstartedwithdjango.com/)
 - [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – the course costs money but you can request a free eBook licence by contacting author Tracy Osborn at <tracy@limedaring.com>
 
 #### HTML, CSS and JavaScript
