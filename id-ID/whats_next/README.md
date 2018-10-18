@@ -4,22 +4,39 @@ Selamatkan dirimu! ** Anda benar-benar hebat </ 0> . Kami bangga <3</p>
 
 ### Apa yang harus dilakukan sekarang?
 
-Istirahat sejenak dan rileks. Anda baru saja melakukan sesuatu yang sangat besar.
+Take a break and relax! You have just done something really huge.
 
 Setelah itu, pastikan untuk mengikuti Django Girls di  Facebook </ 0> atau  Twitter </ 1> untuk tetap mengikuti perkembangan.</p> 
 
 ### Dapatkah Anda merekomendasikan sumber daya lebih lanjut?
 
-Yes! First, go ahead and try our other book, called [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
+Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
-Nantinya, Anda bisa mencoba sumber daya yang tercantum di bawah ini. Mereka semua sangat dianjurkan!
+#### Django
 
-- [Tutorial resmi Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Tutorial Coder Baru](http://newcoder.io/tutorials/)
-- [Code Academy Python saja](https://www.codecademy.com/en/tracks/python)
-- [Code Academy HTML & amp; Kursus CSS](https://www.codecademy.com/tracks/web)
-- [Tutorial wortel Django](https://github.com/ggcarrots/django-carrots)
-- [Pelajari buku Python The Hard Way](http://learnpythonthehardway.org/book/)
-- [Memulai dengan pelajaran video Django](http://www.gettingstartedwithdjango.com/)
-- [Dua Scoops dari Django 1.11: Praktik Terbaik untuk buku Django Web Framework](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
--  Hello Web App: Pelajari Cara Membangun Aplikasi Web </ 0> - Anda juga dapat meminta lisensi e-book gratis dengan menghubungi penulis Tracy Osborn di  tracy@limedaring.com </ 1></li> </ul>
+- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – the course costs money but you can request a free eBook licence by contacting author Tracy Osborn at <tracy@limedaring.com>
+
+#### HTML, CSS and JavaScript
+
+- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [freeCodeCamp](https://www.freecodecamp.org/)
+
+#### Python
+
+- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
+- [Google's Python course](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
+- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
+- [Coursera's Python courses](https://www.coursera.org/specializations/python) – some video lectures can be audited for free
+
+#### Working with data
+
+- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
+- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+
+We can't wait to see what you build next!
