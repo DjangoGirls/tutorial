@@ -6,11 +6,17 @@ Django 是用 Python 写成的，要使用Django做任何东西我们都需要Py
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-首先，请检查您的计算机运行的是32位版本还是64位版本的 Windows, 方法是按 windows 键 + Break键，打开系统信息, 然后查看 "系统类型" 行。 您可以从 https://www.python.org/downloads/windows/ 网站上下载 Windows版的Python。 点击 "Latest Python 3 Release - Python x.x.x"。 如果你的电脑运行的是 ** 64 位 ** 版本的 windows, 请下载 ** Windows x86-64 可执行安装程序 **。 否则, 仅下载 ** Windows x86 可执行安装程序 **即可。 下载完成之后，你应该运行它 （双击它），并按照提示安装。
+First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
 
-有一件事要注意：在安装过程中, 您会注意到一个名字是 "Setup"的窗口。请确保勾选"Add Python 3.6 to PATH"复选框, 然后单击 "Install Now", 如下所示:
+* Press the Windows key and Pause/Break key at the same time
+* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
+* Press the Windows button, then navigate to Settings > System > About
 
-![别忘了增加 Python 到 Path](../python_installation/images/python-installation-options.png)
+You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+
+One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" checkbox and click on "Install Now", as shown here:
+
+![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
 When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
@@ -36,7 +42,7 @@ data-collapse=true ces-->
 
 You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
-* 下载 *Mac OS X 64-bit/32-bit installer* 文件，
+* Download the *Mac OS X 64-bit/32-bit installer* file,
 * Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
 
 <!--endsec-->
