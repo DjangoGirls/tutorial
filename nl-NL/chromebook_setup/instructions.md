@@ -6,10 +6,10 @@ Cloud 9 is een hulpmiddel die je een code editor aanbiedt op een computer op het
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+1. Ga naar de [PaizaCloud wolk IDE](https://paiza.cloud/)
+2. Meld je aan voor een account
+3. Klik op *nieuwe Server*
+4. Klik op Terminal knop (aan de linkerkant van het venster)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
