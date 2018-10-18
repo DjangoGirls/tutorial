@@ -16,7 +16,6 @@ Yes! There are a _lot_ of resources online for learning all kinds of programming
 - Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
 - [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – the course costs money but you can request a free eBook licence by contacting author Tracy Osborn at [tracy@limedaring.com](mailto:tracy@limedaring.com)
 
 #### HTML, CSS and JavaScript
@@ -26,8 +25,8 @@ Yes! There are a _lot_ of resources online for learning all kinds of programming
 #### Python
 - [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
 - [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
-- [New Coder tutorials](http://newcoder.io/tutorials/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python courses](https://www.coursera.org/specializations/python) – some video lectures can be audited for free
 
