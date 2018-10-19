@@ -4,7 +4,7 @@ Herzlichen Glückwunsch! **Du bist der Hammer!** Wir sind echt stolz! <3
 
 ### Was jetzt?
 
-Take a break and relax! You have just done something really huge.
+Mach eine Pause und entspanne! Du hast gerade etwas wirklich Großes geleistet.
 
 Und dann folge Django Girls doch auf [Facebook](http://facebook.com/djangogirls) oder [Twitter](https://twitter.com/djangogirls), um auf dem Laufenden zu bleiben.
 
