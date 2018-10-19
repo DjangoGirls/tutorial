@@ -4,13 +4,13 @@ Date muchas felicitaciones. **¡Eres increíble!** ¡Estamos orgullosas! <3
 
 ### ¿Qué hacer ahora?
 
-Take a break and relax! You have just done something really huge.
+Toma un descanso y ¡relájate!. Acabas de hacer algo realmente grande.
 
 Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebook.com/djangogirls) o [Twitter](https://twitter.com/djangogirls) para estar al día.
 
 ### ¿Me puedes recomendar recursos adicionales?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+¡ Sí! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
