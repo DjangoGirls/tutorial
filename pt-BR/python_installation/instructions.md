@@ -9,8 +9,8 @@ Django é escrito em Python. Precisamos dele para fazer qualquer coisa no Django
 Primeiramente, verifique se o seu computador está rodando uma versão 32-bit ou 64-bit do Windows, na linha "Tipo de Sistema" na página de informação do Sistema. Para chegar a essa página, tente um desses métodos:
 
 * Aperte as teclas do Windows e "Pause/Break" ao mesmo tempo
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
+* Abra o seu Painel de Controle pelo menu do Windows, e navegue para "Sistema e Segurança", depois "Sistema"
+* Aperte o botão do Windows no seu teclado, então navegue para Configurações > Sistema > Sobre
 
 You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
