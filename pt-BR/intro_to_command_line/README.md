@@ -114,7 +114,7 @@ Cada sistema operacional tem uma série de comandos um pouco diferentes para a l
 
 ### Pasta atual
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Seria bom saber onde nós estamos agora, certo? Vamos ver. Digite esse comando e aperte `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -140,7 +140,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--endsec-->
 
-Você provavelmente verá algo similar na sua máquina. Uma vez que você abre a linha de comando você geralmente começa em seu diretório de usuário local, conhecido como "home".
+Você provavelmente verá algo similar na sua máquina. Uma vez que você abre a linha de comando você geralmente começa em sua pasta de usuário local, conhecido como "home".
 
 * * *
 
@@ -150,17 +150,17 @@ Muitos comandos que você digita no Prompt de comand possuem um painel de ajuda 
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-SO X e Linux tem um comando `man`, que ajuda você nos comandos. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+SO X e Linux tem um comando `man`, que ajuda você nos comandos. Tente `mand pwd` e veja o que ele diz, ou coloque `man` antes de outros comandos para ver seus menus de ajuda. A saída `man` é normalmente paginada. Use a barra de espaço para ir para a próxima página, e `q` para sair do menu de ajuda.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Colocando um sufixo `/?` para a maioria dos comandos, irá imprimir uma página de ajuda. Você pode precisar rolar a janela do seu comando para ver tudo. Tente `cd /?`.
 
 <!--endsec-->
 
-### List files and directories
+### Listando arquivos e pastas
 
 So what's in it? It'd be cool to find out. Let's see:
 
@@ -195,9 +195,9 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Change current directory
+### Mudar a pasta atual
 
-Now, let's go to our Desktop directory:
+Agora, vamos para nossa pasta Desktop (Área de Trabalho):
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -217,7 +217,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+Verifique se realmente mudamos de pasta:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -245,9 +245,9 @@ Here it is!
 
 * * *
 
-### Create directory
+### Criando Pastas
 
-How about creating a practice directory on your desktop? You can do it this way:
+Que tal criar uma pasta para praticarmos em sua área de trabalho? Você pode fazer assim:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -267,7 +267,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Esse pequeno comando criará uma pasta com o nome `practice` na sua área de trabalho. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
 
