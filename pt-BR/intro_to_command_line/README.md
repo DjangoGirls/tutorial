@@ -445,4 +445,4 @@ Se você é curiosa, [ss.com](http://ss64.com) contém uma referência completa 
 
 ## Pronta?
 
-Let's dive into Python!
+Vamos mergulhar no mundo do Python!
