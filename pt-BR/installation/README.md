@@ -2,13 +2,13 @@
 
 Se você estiver fazendo o tutorial em casa e não em um dos [eventos Django Girls](https://djangogirls.org/events/), pode pular este capítulo e ir direto para o capítulo [Como a internet funciona](../how_the_internet_works/README.md).
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+Isso porque nós cobrimos a instalação dos itens a medida que eles são necessários no tutorial -- Essa é apenas uma página adicional que reúne todas as instruções de instalação em um só lugar (que é útil para alguns formatos de oficinas). Você pode escolher instalar tudo que está nessa página nesse momento se você quiser. Mas se você quer começar a aprender coisas antes de instalar um monte de coisas no seu computador, pule este capítulo e nós explicaremos os componentes de instalação para você mais tarde, a medida que são necessários.
 
-Good luck!
+Boa sorte!
 
-# If you're attending a workshop
+# Se você está participando de uma oficina
 
-If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
+Se você está participando de uma oficina de um [ Evento Django Girls ](https://djangogirls.org/events/):
 
 * Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
 * The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
