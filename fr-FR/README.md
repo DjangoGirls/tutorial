@@ -28,7 +28,7 @@ Une fois que vous avez terminé le tutoriel, vous aurez une petite application w
 
 ![Figure 0.1](images/application.png)
 
-> Si vous travaillez avec le tutoriel sur votre propre et ne pas avoir un coach qui vous aidera en cas de problème, nous avons un système de chat pour vous: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'aillez pas peur et allez poser vos questions !
+> Si vous travaillez avec le tutoriel sur votre propre et ne pas avoir un coach qui vous aidera en cas de problème, nous avons un système de chat pour vous: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Nous avons demandé aux coachs et participant·e·s des précédentes éditions de passer de temps en temps pour aider les autres avec le tutoriel. N'ayez pas peur et allez poser vos questions !
 
 Ok, [commençons par le commencement…](./how_the_internet_works/README.md)
 
@@ -48,4 +48,4 @@ Actuellement, les traductions sont conservés sur crowdin.com plate-forme:
 
 https://crowdin.com/project/django-girls-tutorial
 
-Si votre langue n'est pas listée sur [crowdin](https://crowdin.com/), merci [d'ouvrir un ticket](https://github.com/DjangoGirls/tutorial/issues/new)pour nous en informer afin que nous la rajoutions.
+Si votre langue n'est pas listée sur [crowdin](https://crowdin.com/), merci [d'ouvrir un ticket](https://github.com/DjangoGirls/tutorial/issues/new) pour nous en informer afin que nous la rajoutions.
