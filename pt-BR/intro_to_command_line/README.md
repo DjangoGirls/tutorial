@@ -267,15 +267,15 @@ Que tal criar uma pasta para praticarmos em sua área de trabalho? Você pode fa
 
 <!--endsec-->
 
-Esse pequeno comando criará uma pasta com o nome `practice` na sua área de trabalho. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Esse pequeno comando criará uma pasta com o nome `practice` na sua área de trabalho. Você pode verificar se está la olhando na sua Área de trabalho ou executando o comando `ls` ou `dir`! Try it. :)
 
 > Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
 
 * * *
 
-### Exercise!
+### Pratique!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Um pequeno desafio para você: em sua recém criada pasta `practice`, crie uma pasta chamada `test`. (Use os comandos `cd` e `mkdir`.)
 
 #### Solução:
 
@@ -307,11 +307,11 @@ Congrats! :)
 
 * * *
 
-### Clean up
+### Arrumando
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Nós não queremos que você deixe uma bagunça, então vamos remover tudo que fizemos até aqui.
 
-First, we need to get back to Desktop:
+Primeiro, precisamos voltar para a Área de trabalho:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -331,9 +331,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Usando o comando `..` com o `cd` irá mudar sua pasta atual para o diretório pai (ou seja, a pasta que contém sua pasta atual).
 
-Check where you are:
+Verifique onde você está:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -355,7 +355,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Agora é hora de deletar a pasta `practice`:
 
 > **Atenção**: A exclusão de arquivos usando `del`, `rmdir` ou `rm` é irreversível; ou seja, os *arquivos excluídos são perdidos para sempre*! Então, tenha cuidado com este comando.
 
@@ -400,7 +400,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Exit
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Isso é tudo por agora! Você pode fechar a janela da sua linha de comando agora sem medo. Vamos fazer isso do jeito hacker, certo? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -420,11 +420,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Massa, né? :)
 
 ## Sumário
 
-Here is a summary of some useful commands:
+Aqui vai uma lista com alguns comandos úteis:
 
 | Comando (Windows) | Comando (Mac OS / Linux) | Descrição                     | Exemplo                                            |
 | ----------------- | ------------------------ | ----------------------------- | -------------------------------------------------- |
@@ -437,11 +437,11 @@ Here is a summary of some useful commands:
 | mkdir             | mkdir                    | Cria uma pasta                | **mkdir testdirectory**                            |
 | rmdir (ou del)    | rm                       | Exclui arquivo                | **del c:\test\test.txt**                         |
 | rmdir /S          | rm -r                    | Exclui diretório              | **rm -r testdirectory**                            |
-| [CMD] /?          | man [CMD]                | get help for a command        | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| [CMD] /?          | man [CMD]                | obtém ajuda para um comando   | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Essas são apenas alguns poucos comandos que você pode executar em sua linha de comando, mas você não irá usar nada mais que isso hoje.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Se você é curiosa, [ss.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
 
 ## Pronta?
 
