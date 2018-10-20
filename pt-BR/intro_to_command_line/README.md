@@ -70,13 +70,13 @@ Cada comando vai ser precedido por um `$` ou `>` e um espaço, mas você não de
 
 > Uma pequena observação: pode ser que apareça algo como `C:\Users\ola>` ou `Olas-MacBook-Air:~ ola$` antes do cursor e isso está 100% correto.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Até a parte que inclui o `$` ou o `>` é chamada de *linha de comando prompt *, ou simplesmente *prompt*. Ele está incentivando você a inserir algo ali.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+No tutorial, quando queremos que você digite algo em um comando, vamos incluir `$` ou `>`, e por vezes mais a esquerda. Ignore a parte esquerda e apenas digite no comando, que começa depois do prompt.
 
 ## Seu primeiro comando (Uhuu!)
 
-Let's start by typing this command:
+Vamos começar digitando este comando:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -96,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Então aperte `enter`. Esse é o nosso resultado:
 
 {% filename %}command-line{% endfilename %}
 
@@ -110,7 +110,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 ## O Básico
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Cada sistema operacional tem uma série de comandos um pouco diferentes para a linha de comando, então tenha certeza de seguir as instruções do seu sistema operacional. Vamos tentar?
 
 ### Pasta atual
 
@@ -140,17 +140,17 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Você provavelmente verá algo similar na sua máquina. Uma vez que você abre a linha de comando você geralmente começa em seu diretório de usuário local, conhecido como "home".
 
 * * *
 
-### Learn more about a command
+### Aprenda mais sobre um comando
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Muitos comandos que você digita no Prompt de comand possuem um painel de ajuda integrada que você pode abrir e ler! Por exemplo, para entender melhor sobre o comando do diretório atual:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+SO X e Linux tem um comando `man`, que ajuda você nos comandos. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
