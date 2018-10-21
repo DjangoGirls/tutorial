@@ -6,10 +6,10 @@ Cloud 9 est un outil qui vous propose un éditeur de code et un accès à un ord
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+1. Allez à [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Créez un compte
 3. Cliquez *Nouveau Serveur*
-4. Click Terminal button(on the left side of the window)
+4. Cliquez sur le bouton Terminal (sur le côté gauche de la fenêtre)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
