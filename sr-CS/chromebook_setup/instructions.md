@@ -64,7 +64,7 @@ Next, run:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Napravi [GitHub](https://github.com) nalog.
 
 ### PythonAnywhere
 
