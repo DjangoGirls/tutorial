@@ -8,7 +8,7 @@ Powodzenia!
 
 # If you're attending a workshop
 
-If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
+Jeśli uczestniczysz w wydarzeniu Django Girls:
 
 * Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
 * The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
