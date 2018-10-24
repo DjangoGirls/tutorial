@@ -18,7 +18,7 @@ Teraz powinnaś zobaczyć interfejs z bocznym paskiem i przyciski po lewej stron
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Terminal PaizaCloud Cloud ID jest przygtowany na twoje instrukcje. Możesz zmienić rozmiar tego okna, powiększyć jej aby było troszkę większe.
 
 #### AWS Cloud9
 
