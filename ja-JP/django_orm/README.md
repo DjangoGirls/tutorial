@@ -117,7 +117,7 @@ ola という `ユーザ名` の `User` モデルのインスタンスを、`取
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-出来ていますね！リストにはポストが1つ以上あります。
+出来ていますね！リストに新しいポストが1つ追加されています。
 
 ### さらに投稿を追加しましょう
 
