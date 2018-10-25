@@ -165,7 +165,7 @@ Avant de faire cela, nous devons nous assurer que nous avons la dernière versio
 
 Un fichier "requirement" maintient une liste des dépendances qui doivent être installées avec `pip install`:
 
-First create a `requirements.txt` file inside of `djangogirls/` folder, using the code editor that you installed earlier:
+Tout d'abord, créez un fichier `requirements.txt` dans votre dossier `djangogirls`, en utilisant l'éditeur de texte que vous avez téléchargé précédemment :
 
     djangogirls
     └───requirements.txt
