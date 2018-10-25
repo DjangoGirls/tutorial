@@ -2,7 +2,7 @@
 > 
 > Cette section repose sur un tutoriel de Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install Python 3.6, so if you have any earlier version, you will need to upgrade it.
+Django est écrit en Python. Nous avons donc besoin de Python pour faire quoi que ce soit en Django. C'est parti, installons Python ! Nous souhaitons que vous installiez Python 3.6. Si vous avez une version plus ancienne, vous devez la mettre à jour.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
