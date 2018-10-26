@@ -60,11 +60,11 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(참고로 마지막 라인에서는 물결표시와 등호를 붙입니다: ~=).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+[Github](https://github.com) 계정을 만드세요.
 
 ### PythonAnywhere
 
@@ -72,4 +72,4 @@ The Django Girls tutorial includes a section on what is called Deployment, which
 
 This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+그러므로, Python Anywhere의 새 계정을 [www.pythonanywhere.com](https://www.pythonanywhere.com) 에서 만들어 보세요.
