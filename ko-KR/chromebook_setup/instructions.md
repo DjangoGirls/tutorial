@@ -39,7 +39,7 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+터미널에서 클라우드 9 인터페이스 아래에 다음의 명령어를 입력합니다:
 
 {% filename %}Cloud 9{% endfilename %}
 
