@@ -11,12 +11,12 @@ Viel Erfolg!
 Wenn du an einer [Django Girls Veranstaltung](https://djangogirls.org/events/) teilnimmst:
 
 * Vielleicht hat deine Veranstaltung eine "Installationsparty" vor dem eigentlichen Workshoptag. Wenn du gerade auf einer Installationsparty bist, ist das deine Seite! Folge den Anweisungen hier, um alles Notwendige für den Workshop zu installieren, frage deinen Coach, wenn du Hilfe brauchst. Am Workshoptag kannst du die Installationsanweisungen dann überspringen, wenn du im Tutorial darauf stößt.
-* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* Möglicherweise haben die Organisatoren des Workshops dich gebeten, die Installationen auf deinem Computer schon zu Hause zu probieren. Wenn du dazu aufgefordert wurdest, dann ist das deine Seite! Folge den Anweisungen hier so gut, wie du kannst. Wenn du am Workshoptag dann im Tutorial auf einen Installationsschritt triffst, der dir zu Hause nicht gelungen ist, fragst du deinen Coach um Hilfe.
+* Wenn dein Workshop keine Installationsparty hat (oder du nicht teilnehmen konntest) und die Organisatorien dich nicht gebeten haben, alles zu Hause zu installieren, dann überspring die Seite und geh direkt zum Kapitel [Wie das Internet funktioniert](../how_the_internet_works/README.md). Denn du wirst dann alles installieren, während du das Tutorial durcharbeitest.
 
 # Installation
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+In diesem Tutorial wirst du einen Blog bauen. Dafür wirst du während des Tutorials aufgefordert, verschiedene Software auf deinem Computer zu installieren und auch einige Online-Konten anzulegen, wenn sie gebraucht werden. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
