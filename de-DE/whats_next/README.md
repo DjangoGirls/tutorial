@@ -10,25 +10,25 @@ Und dann folge Django Girls doch auf [Facebook](http://facebook.com/djangogirls)
 
 ### Könnt ihr weiteres Lernmaterial empfehlen?
 
-Ja! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Programmierfähigkeiten - es kann ziemlich entmutigend sein, herauszufinden, was man als Nächstes machen sollte, aber wir helfen dir dabei. Was auch immer du für Interessen hattest, bevor du zu Django Girls gekommen bist und was auch immer du für Interessen während des Tutorials entwickelt hast, hier sind einige kostenfreie Ressourcen (oder solche mit kostenlosen Komponenten), die du nutzen kannst, um auf deinem Weg voranzukommen.
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – the course costs money but you can request a free eBook licence by contacting author Tracy Osborn at <tracy@limedaring.com>
+- Unser anderes Buch, [Django Girls Tutorial: Erweiterungen](https://tutorial-extensions.djangogirls.org/)
+- [Das offizielle Django-Tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- ["Getting Started With Django" Video-Lektionen](http://www.gettingstartedwithdjango.com/)
+- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) - du kannst auch eine kostenlose eBook-Lizenz beantragen, indem du der Autorin Tracy Osborn auf <tracy@limedaring.com> schreibst
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS und JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Web Development Kurs auf Codeacademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [Python-Kurs auf Codeacademy](https://www.codecademy.com/learn/learn-python)
+- [Googles Python Kurs](https://developers.google.com/edu/python/)
+- [Lernen Python The Hard Way Buch](http://learnpythonthehardway.org/book/) – die ersten Übungen sind frei
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python courses](https://www.coursera.org/specializations/python) – some video lectures can be audited for free
