@@ -23,42 +23,42 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Install Python
+# Python installieren
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Einen Code-Editor installieren
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Virtualenv einrichten und Django installieren
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Git installieren
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Einen GitHub-Account erstellen
 
 Gehe auf [GitHub.com](https://www.github.com) eröffne ein neues, kostenloses Konto.
 
-# Create a PythonAnywhere account
+# Einen PythonAnywhere-Account erstellen
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Fang an zu lesen!
 
 Herzlichen Glückwunsch, du hast alles eingerichtet und bist nun bereit loszulegen! Wenn du vor dem Workshop noch etwas Zeit hast, wäre es hilfreich, einige der einführenden Kapitel zu lesen:
 
 * [How the internet works](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Einführung in die Kommandozeile](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Einführung in Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Django - Was ist das?](../django/README.md)
 
-# Enjoy the workshop!
+# Viel Spaß beim Workshop!
 
 Wenn du mit dem Workshop anfängst, kannst du direkt zum Kapitel [Dein erstes Django-Projekt!](../django_start_project/README.md) gehen, weil du den Inhalt der vorhergehenden Kapitel schon bearbeitet hast.
