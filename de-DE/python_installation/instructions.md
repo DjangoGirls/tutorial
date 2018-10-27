@@ -6,9 +6,9 @@ Django ist in Python geschrieben. Um mit Django zu arbeiten, müssen wir also er
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Bitte schau zuerst auf der "Systemtyp"-Zeile der Systeminformationsseite nach, ob auf deinem Computer eine 32-Bit-Version oder eine 64-Bit-Version von Windows läuft. Um diese Seite zu finden, versuche eine der folgenden Methoden:
 
-* Press the Windows key and Pause/Break key at the same time
+* Drücke die Windows-Taste und die Pause/Break-Taste zur selben Zeit
 * Open your Control Panel from the Windows menu, then navigate to System & Security, then System
 * Press the Windows button, then navigate to Settings > System > About
 
