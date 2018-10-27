@@ -51,7 +51,7 @@ Gehe auf [GitHub.com](https://www.github.com) eröffne ein neues, kostenloses Ko
 
 Herzlichen Glückwunsch, du hast alles eingerichtet und bist nun bereit loszulegen! Wenn du vor dem Workshop noch etwas Zeit hast, wäre es hilfreich, einige der einführenden Kapitel zu lesen:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Wie das Internet funktioniert](../how_the_internet_works/README.md)
 
 * [Einführung in die Kommandozeile](../intro_to_command_line/README.md)
 
