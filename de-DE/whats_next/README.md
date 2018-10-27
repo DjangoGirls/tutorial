@@ -29,14 +29,14 @@ Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Program
 - [Python-Kurs auf Codeacademy](https://www.codecademy.com/learn/learn-python)
 - [Googles Python Kurs](https://developers.google.com/edu/python/)
 - [Lernen Python The Hard Way Buch](http://learnpythonthehardway.org/book/) – die ersten Übungen sind frei
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python courses](https://www.coursera.org/specializations/python) – some video lectures can be audited for free
+- [New Coder Tutorials](http://newcoder.io/tutorials/) – eine Vielzahl von praktischen Beispielen, wie Python verwendet werden kann
+- [edX](https://www.edx.org/course?search_query=python) – die meisten Kurse sind kostenfrei, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
+- [Courseras Python-Kurse](https://www.coursera.org/specializations/python) – einige Video-Vorträge sind kostenlos
 
-#### Working with data
+#### Mit Daten arbeiten
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Der Data Science Kurs von Codecademy](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – die meisten Kurse sind kostenfrei, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
+- [Dataquest](https://www.dataquest.io/) – die ersten 30 "Missionen" sind frei
 
-We can't wait to see what you build next!
+Wir können es nicht abwarten zu sehen, was du als Nächstes baust!
