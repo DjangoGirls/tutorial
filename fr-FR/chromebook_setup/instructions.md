@@ -11,7 +11,7 @@ Cloud 9 est un outil qui vous propose un éditeur de code et un accès à un ord
 3. Cliquez *Nouveau Serveur*
 4. Cliquez sur le bouton Terminal (sur le côté gauche de la fenêtre)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Maintenant vous devriez voir une interface avec une barre latérale et des boutons à gauche. Cliquez sur le bouton « Terminal » pour ouvrir la fenêtre de terminal. Vous devriez avoir le résultat suivant :
 
 {% filename %}Terminal{% endfilename %}
 
