@@ -49,7 +49,7 @@ Dans votre terminal, au bas de l'interface Cloud 9, exécutez la commande suivan
 
 Si cela ne fonctionne toujours pas, demandez de l'aide à votre coach.
 
-Next, run:
+Ensuite, lancez :
 
 {% filename %}Cloud 9{% endfilename %}
 
