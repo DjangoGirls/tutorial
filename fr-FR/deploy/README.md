@@ -109,7 +109,7 @@ Tapez les instructions suivantes dans votre console (remplacez `<your-github-use
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+Lorsque vous "poussez" sur GitHub, votre nom d’utilisateur ainsi que le mot de passe vous seront demandés (que ce soit dans la fenêtre de ligne de commande ou dans une fenêtre pop-up). Après avoir entré les informations d’identification, vous devriez voir quelque chose comme ceci :
 
 {% filename %}command-line{% endfilename %}
 
@@ -167,9 +167,9 @@ En regardant la commande s'exécuter, vous devriez voir ce qui ce passe:
 - Mise en place de vos fichiers statiques (nous verrons ce que c'est plus tard)
 - Et configuration de PythonAnywhere pour servir votre application web via son API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+Sur PythonAnywhere toutes ces étapes sont automatisées, mais ce sont les mêmes étapes que vous auriez à faire avec n'importe quel autre fournisseur de serveurs.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+La principale chose à remarquer maintenant est que votre base de donnée sur PythonAnywhere est complètement séparée de votre base de données sur votre propre PC. Cela veut dire qu'elle peut contenir des messages différents et avoir des comptes administrateurs différents. Et donc, exactement comme on l'avait fait sur votre ordinateur, on doit initialiser le compte administrateur avec `createsuperuser`. PythonAnywhere a initialisé votre virtualenv pour vous automatiquement, donc la seule chose que vous avez à faire est d'exécuter:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -189,7 +189,7 @@ Maintenant, si vous voulez, vous pouvez aussi jeter un œil à votre code sur Py
     templates  tests.py  urls.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Vous pouvez également accéder à l'onglet "Fichiers" et naviguer à l'aide du navigateur de fichiers PythonAnywhere intégré. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
 
 ## Vous êtes désormais sur Internet !
 
