@@ -189,11 +189,11 @@ Maintenant, si vous voulez, vous pouvez aussi jeter un œil à votre code sur Py
     templates  tests.py  urls.py  views.py
     
 
-Vous pouvez également accéder à l'onglet "Fichiers" et naviguer à l'aide du navigateur de fichiers PythonAnywhere intégré. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Vous pouvez également accéder à la page "Fichiers" et naviguer à l'aide du navigateur de fichiers PythonAnywhere intégré. (Depuis la page Console, vous pouvez visiter d'autres pages PythonAnywhere en cliquant sur le bouton Menu en haut à droite. Une fois que vous vous trouvez dans une de ces pages, les liens vers les autres pages se trouve en haut.)
 
 ## Vous êtes désormais sur Internet !
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+Votre site devrait désormais être accessible sur Internet ! Cliquez sur la page "Web" dans PythonAnywhere pour obtenir un lien. Vous pouvez partagez ce lien avec qui vous voulez :)
 
 > **Note** Ce tutoriel est conçu pour les débutants, et pendant le déploiement on a pris quelques raccourcis qui, d'un point de vue de la sécurité, ne sont pas idéaux. Quand vous voudrez aller plus loin dans ce projet, ou commencer un nouveau projet, vous devriez consulter la [Checklist de déploiement pour Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) pour obtenir des conseils sur comment sécuriser votre site.
 
@@ -205,7 +205,7 @@ Si vous constatez une erreur en exécutant le script `pa_autoconfigure_django.py
 - Faire une erreur dans votre URL GitHub
 - Si vous voyez un message d’erreur indiquant *« Could not find your settings.py »*, vous avez probablement oublié d'ajouter tous vos fichiers sur Git, et/ou vous ne les avez pas envoyé à GitHub. Regardez à nouveau la section Git ci-dessus
 
-Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les **logs d'erreurs** devraient vous permettre de comprendre ce qui ne marche pas. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). Regardez s’il y a des messages d’erreurs ; les plus récents seront en bas du fichier.
+Si vous constatez une erreur lorsque vous essayez de visiter votre site web, les **logs d'erreurs** devraient vous permettre de comprendre ce qui ne marche pas. Vous trouverez un lien vers les logs dans la page [Web](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Regardez s’il y a des messages d’erreurs ; les plus récents seront en bas du fichier.
 
 Vous pourrez aussi trouver des astuces pour le débogage sur le site d'aide de[PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
@@ -213,8 +213,8 @@ Et n'oubliez pas, votre coach est là pour vous aider !
 
 # Jetez un œil à votre site !
 
-La page par défaut de votre site doit dire "Ça marche!", comme c'est le cas sur votre ordinateur local. Vous pouvez essayer d'accéder à l'interface d’administration en ajoutant `/admin/` à la fin de l'URL. Normalement, une page de login devrait s'afficher. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+La page par défaut de votre site doit dire "Ça marche!", comme c'est le cas sur votre ordinateur local. Vous pouvez essayer d'accéder à l'interface d’administration en ajoutant `/admin/` à la fin de l'URL. Normalement, une page de login devrait s'afficher. Identifiez-vous avec votre nom d'utilisateur et mot de passe et vous verrez que vous pourrez créer de nouveaux messages sur le serveur. N'oubliez pas que les messages dans votre base de données locale n'ont pas été envoyés sur la version en ligne de votre blog.
 
 Une fois que vous avez créé des messages, vous pouvez revenir à votre configuration locale (pas PythonAnywhere). De là, vous devez travailler sur votre installation locale pour apporter des modifications. C'est la façon habituelle de procéder dans le développement web : faire des modifications localement, envoyer ces modifications sur GitHub, puis télécharger ces modifications vers votre serveur Web de production. Cela vous permet de faire des expériences sans endommager votre site web de production (celui sur Internet). Cool, non ?
 
-*Félicitations !* Le déploiement est l’une des parties les plus épineuses du développement web et il faut souvent plusieurs jours avant d'obtenir quelque chose de fonctionnel. But you've got your site live, on the real Internet!
+*Félicitations !* Le déploiement est l’une des parties les plus épineuses du développement web et il faut souvent plusieurs jours avant d'obtenir quelque chose de fonctionnel. Mais vous avez réussi à mettre votre site en ligne, dans le vrai Internet !
