@@ -6,11 +6,19 @@ Django ist in Python geschrieben. Um mit Django zu arbeiten, müssen wir also er
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Finde zuerst heraus, ob auf deinem Computer eine 32-bit- oder 64-bit-Version von Windows läuft. Drücke dafür die Windows-Taste zusammen mit der Pause/Break-Taste, was das Systeminformationen-Fenster öffnen wird, und schau nach der "Systemtyp"-Zeile. Python für Windows kannst du auf der Webseite https://www.python.org/downloads/windows/ herunterladen. Klicke auf den "Latest Python 3 Release - Python x.x.x" Link. Wenn du eine **64-bit** Version von Windows benutzt, lade die Datei **Windows x86-64 executable installer** herunter. Andernfalls, lade den **Windows x86 executable installer** herunter. Führe den Installer nach dem Download (per Doppelklick) aus und folge den Anweisungen des Installationsprogramms.
+Bitte schau zuerst auf der "Systemtyp"-Zeile der Systeminformationsseite nach, ob auf deinem Computer eine 32-Bit-Version oder eine 64-Bit-Version von Windows läuft. Um diese Seite zu finden, versuche eine der folgenden Methoden:
+
+* Drücke die Windows-Taste und die Pause/Break-Taste zur selben Zeit
+* Öffne dein Control Panel über das Windows Menü und navigiere dann zu System & Sicherheit, dann System
+* Drücke die Windows-Taste und navigiere dann zu Einstellungen > System > Über
+
+Du kannst Python für Windows von der Webseite https://www.python.org/downloads/windows/ herunterladen. Klicke auf den "Latest Python 3 Release - Python x.x.x" Link. Wenn du eine **64-bit** Version von Windows benutzt, lade die Datei **Windows x86-64 executable installer** herunter. Andernfalls lade den **Windows x86 executable installer** herunter. Führe den Installer nach dem Download (per Doppelklick) aus und folge den Anweisungen des Installationsprogramms.
 
 Eine Sache ist zu beachten: Während der Installation wirst du ein "Setup"-Fenster bemerken. Stell sicher, dass du das Kontrollkästchen "Add Python 3.6 to PATH" aktiviert hast. Klicke nun auf "Install Now", wie hier gezeigt:
 
 ![Vergiss nicht, Python zu dem Pfad hinzuzufügen](../python_installation/images/python-installation-options.png)
+
+Wenn die Installation abgeschlossen ist, siehst du vielleicht ein Dialogfeld mit einem Link, wo du mehr über Python oder über die Version lernen kannst. Schließe es oder brich den Dialog ab -- du wirst darüber mehr in diesem Tutorial lernen!
 
 Während der nächsten Schritte werden wir die Windows-Kommandozeile verwenden (über die wir dir auch noch etwas erzählen werden). Wenn du bis dahin Befehle in die Kommandozeile eingeben musst, dann gehe zum Startmenü und gib "Eingabeaufforderung" in das Suchfeld ein. (Bei alten Windows-Versionen kannst du die Eingabeaufforderung unter Startmenü → Windows System → Eingabeaufforderung finden.) Du kannst auch die Windows-Taste gedrückt halten und "R" drücken bis das "Ausführen"-Fenster auftaucht. Um damit die Kommandozeile zu öffnen, schreibe "cmd" ins "Run"-Fenster und drücke die Eingabetaste (Enter).
 
