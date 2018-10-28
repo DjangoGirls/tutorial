@@ -33,13 +33,13 @@ Maintenant, vous devriez voir une interface dotée d'une barre latérale, une gr
     nomutilisateur:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Cette partie est votre *terminal*, qui vous servira à donner des instructions à l'ordinateur Cloud9. Vous pouvez redimensionner cette fenêtre pour la rendre plus grande.
 
 ### Environnement virtuel
 
-Un environnement virtuel (aussi appelé virtualenv) est comme une boite privée dans laquelle on peut stocker du code relatif au projet sur lequel on travaille. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un environnement virtuel (aussi appelé virtualenv) est comme une boite privée dans laquelle on peut stocker du code relatif au projet sur lequel on travaille. Nous les utilisons pour garder distinctement les différents morceaux de code dont nous avons besoin pour nos différents projets, afin d'éviter tout mélange.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Dans votre terminal, au bas de l'interface Cloud 9, exécutez la commande suivante:
 
 {% filename %}Cloud 9{% endfilename %}
 
