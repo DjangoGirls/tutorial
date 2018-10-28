@@ -1,4 +1,4 @@
-PythonAnywhere is a service for running Python code on servers "in the cloud". We'll use it for hosting our site, live and on the Internet.
+PythonAnywhere est un service qui permet de faire tourner des programmes en Python sur des serveurs "dans le cloud". Nous allons l'utiliser pour héberger notre site, en direct et sur Internet.
 
 Créez un compte "Débutant" sur PythonAnywhere (la partie gratuite est suffisante, pas besoin de carte de crédit).
 
