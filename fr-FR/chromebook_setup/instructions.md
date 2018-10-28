@@ -11,18 +11,18 @@ Cloud 9 est un outil qui vous propose un éditeur de code et un accès à un ord
 3. Cliquez *Nouveau Serveur*
 4. Cliquez sur le bouton Terminal (sur le côté gauche de la fenêtre)
 
-Maintenant vous devriez voir une interface avec une barre latérale et des boutons à gauche. Cliquez sur le bouton « Terminal » pour ouvrir la fenêtre de terminal. Vous devriez avoir le résultat suivant :
+Maintenant vous devriez voir une interface avec une barre latérale et des boutons à gauche. Cliquez sur le bouton « Terminal » pour ouvrir la fenêtre de terminal. Vous devriez voir le résultat suivant :
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Le terminal de PaizaCloud Cloud IDE attend vos instructions. Vous pouvez redimensionner ou maximiser la fenêtre pour la rendre un peu plus grand.
 
 #### AWS Cloud9
 
-1. Allez à [AWS Cloud9](https://aws.amazon.com/cloud9/)
+1. Allez sur [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. Créez un compte
 3. Cliquez *Créer un environnement*
 
@@ -30,7 +30,7 @@ Maintenant, vous devriez voir une interface dotée d'une barre latérale, une gr
 
 {% filename %}bash{% endfilename %}
 
-    yourusername:~/workspace $
+    nomutilisateur:~/workspace $
     
 
 This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
