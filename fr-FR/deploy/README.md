@@ -49,7 +49,7 @@ Enregistrez ce fichier sous le nom `.gitignore` dans votre répertoire principal
 
 > **Attention** : le point au début du nom du fichier est important ! Si vous avez des difficultés à le faire (les Macs n'aiment pas que vous créiez des fichiers commençant par un point dans le Finder, par exemple), utilisez la fonction "Enregistrer sous" dans votre éditeur; ça marche toujours. N'ajoutez pas `.txt`, `.py`, ou d'autres extensions à la fin du nom. Git va reconnaitre le fichier seulement s'il porte le nom `.gitignore`.
 > 
-> **Remarque** un de fichiers que vous avez spécifié dans votre fichier `.gitignore` est `db.sqlite3`. Ce fichier est votre base de données locale, où tous les utilisateurs et les articles que vous avez créés sont stockés. Suivant les bonnes pratiques du développement web, nous allons utiliser des bases de données distinctes pour votre site de test local et votre site Web en ligne sur PythonAnywhere. La base de données sur PythonAnywhere pourrait être du type SQLite, comme votre version locale. Normalement on lui préfèrerait une base de données du type MySQL, car capable de gérer un plus grand nombre de visiteurs. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. Vous devriez penser à votre base de données locale comme un terrain de jeux où vous pouvez tester différentes choses et ne pas avoir peur de supprimer vos messages réels sur votre blog.
+> **Remarque** un de fichiers que vous avez spécifié dans votre fichier `.gitignore` est `db.sqlite3`. Ce fichier est votre base de données locale, où tous les utilisateurs et les articles que vous avez créés sont stockés. Suivant les bonnes pratiques du développement web, nous allons utiliser des bases de données distinctes pour votre site de test local et votre site Web en ligne sur PythonAnywhere. La base de données sur PythonAnywhere pourrait être du type SQLite, comme votre version locale. Normalement on lui préfèrerait une base de données du type MySQL, car capable de gérer un plus grand nombre de visiteurs. Quoi qu’il en soit, le fait que votre base de données SQLite soit ignorée lors de l'archivage sur GitHub implique que tous les messages et le superutilisateurs que vous avez créé jusqu'à présent ne seront disponibles que localement. Vous devrez les créer de nouveau en production. Vous devriez penser à votre base de données locale comme un terrain de jeux où vous pouvez tester différentes choses et ne pas avoir peur de supprimer vos messages réels sur votre blog.
 
 C'est une bonne idée d'utiliser la commande `git status` avant `git add` ou dès que vous n'êtes plus sûr de ce qui a changé dans le projet. Cela vous évitera des surprises comme ajouter ou envoyer un mauvais fichier. La commande `git status` permet d'obtenir des informations sur tous les fichiers non-suivis/modifiés/ajoutés, l'état de la branche, et bien plus encore. La commande devrait renvoyer ceci:
 
@@ -95,13 +95,13 @@ Ensuite, créez un nouveau dépôt en lui donnant le nom "mon-nouveau-blog". Lai
 
 > **Note** : dans le cadre de ce tutoriel, le nom `mon-nouveau-blog` est très important. Cependant, vous êtes libre de le changer mais, attention : à chaque fois que ce nom apparaîtra dans le tutoriel, vous allez devoir le remplacer par le nom que vous avez choisi. Il est probablement plus simple de garder le nom `mon-nouveau-blog`.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+Dans l'image suivante, vous verrez le URL de votre dépôt, que vous utiliserez dans certaines commandes qui suivent (ex. pour cloner le dépôt) :
 
 ![](images/github_get_repo_url_screenshot.png)
 
 Nous avons maintenant besoin de relier nos deux dépôts ("hook" en anglais) : celui sur notre ordinateur et celui sur GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Tapez les instructions suivantes dans votre console (remplacez `<your-github-username>` avec le nom d'utilisateur de votre compte GitHub et sans les chevrons. Le URL doit correspondre exactement à l'URL que vous venez de voir) :
 
 {% filename %}command-line{% endfilename %}
 
