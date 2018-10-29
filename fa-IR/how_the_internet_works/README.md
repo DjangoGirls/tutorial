@@ -1,10 +1,10 @@
 # اینترنت چگونه کار می‌کند
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> برای خوانندگان در خانه: این فصل در ویدئو [نصب پایتون و کد ویرایشگر](https://www.youtube.com/watch?v=oM9yAA09wdc) توضیح داده شده است.
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> این فصل "که اینترنت چگونه کار می کند" توسط جسیکا مک کلر (http://web.mit.edu/jesstess/www/) الهام گرفته است.
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+مطمعنن شما هر روز از اینترنت استفاده می کنین. اما آیا می دانید در واقع چه اتفاقی می افتد وقتی که شما آدرس مثل https://djangogirls.org را در مرورگر خود و مطبوعات `را وارد کنید`?
 
 The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
