@@ -4,7 +4,7 @@
 > 
 > این فصل "که اینترنت چگونه کار می کند" توسط جسیکا مک کلر (http://web.mit.edu/jesstess/www/) الهام گرفته است.
 
-مطمعنن شما هر روز از اینترنت استفاده می کنین. اما آیا می دانید در واقع چه اتفاقی می افتد وقتی که شما آدرس مثل https://djangogirls.org را در مرورگر خود و مطبوعات `را وارد کنید`?
+مطمعنا شما هر روز از اینترنت استفاده می کنین. اما آیا می دانید در واقع وقتی شما آدرس مثل https://djangogirls.org را در مرورگر خود تایپ میکنید، چه اتفاقی می افتد?
 
 The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
