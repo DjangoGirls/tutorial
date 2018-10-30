@@ -1,4 +1,4 @@
-Μπορείς [ να παραλείψεις αυτή την ενότητα](http://tutorial.djangogirls.org/en/installation/#install-python) εάν δεν χρησιμοποιείς ένα Chromebook. Εάν όμως δουλεύεις σε ένα τέτοιο laptop, η διαδικασία εγκατάστασης θα είναι λίγο διαφορετική. Μπορείς να αγνοήσεις τις υπόλοιπες οδηγίες εγκατάστασης και να ακολουθήσεις μόνο τα παρακάτω βήματα.
+Μπορείτε [ να παραλείψετε αυτή την ενότητα](http://tutorial.djangogirls.org/en/installation/#install-python) εάν δεν χρησιμοποιείτε το Chromebook. Εάν το χρησιμοποιείτε, η διαδικασία εγκατάστασης θα είναι λίγο διαφορετική. Σε αυτή την περίπτωση μπορείτε να αγνοήσετε τις υπόλοιπες οδηγίες εγκατάστασης.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
@@ -60,11 +60,11 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(παρατήρησε ότι στην τελευταία γραμμή χρησιμοποιούμε μία περισπωμένη, την οποία ακολουθεί ένα ίσον:~=).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Φτιάξε έναν λογαριασμό στο [GitHub](https://github.com).
 
 ### PythonAnywhere
 
