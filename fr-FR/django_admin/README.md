@@ -33,7 +33,7 @@ Afin de vous connecter, vous allez devoir créer un *superuser*, c'est à dire u
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Tapez votre nom d'utilisateur (en minuscules, sans espace), votre email et votre mot de passe. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. Vous devrez obtenir quelque chose comme ceci (où le nom d'utilisateur et le mail correspond à ce que vous avez saisi) :
+Tapez votre nom d'utilisateur (en minuscules, sans espace), votre email et votre mot de passe. **Ne soyez pas surpris de ne pas voir le mot de passe quand vous le saisissez, c'est normal.** Saisissez le à l'aveugle et appuyez sur `Entrée` pour continuer. Vous devrez obtenir quelque chose comme ceci (où le nom d'utilisateur et le mail correspond à ce que vous avez saisi) :
 
     Username: admin
     Email address: admin@admin.com
@@ -46,7 +46,7 @@ Retournez dans votre navigateur et connectez-vous en tant que superutilisateur g
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Allons du côté des Posts et jouons un peu avec. Créez 5 ou 6 blog posts. Ne vous inquiétez pas trop du contenu, qui ne sera visible que depuis votre ordinateur. Vous pouvez copier-coller des morceaux du tutoriel pour aller plus vite. :)
 
 Assurez-vous quelques posts (mais pas tous) aient une date de publication. Cela sera utile plus tard.
 
