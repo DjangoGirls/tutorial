@@ -2,7 +2,7 @@
 
 Pour ajouter, modifier et supprimer les posts que nous venons de créer, nous allons utiliser l'interface Django admin.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Ouvrons le fichier `blog/admin.py` dans l'éditeur de code et remplaçons son contenu par ceci :
 
 {% filename %}blog/admin.py{% endfilename %}
 
