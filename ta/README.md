@@ -6,6 +6,8 @@
 
 ## Welcome
 Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+டிஜாங்கோ பெண்கள் பயிற்சியகத்திற்கு உங்களை வரவேற்கிறோம்.  உங்களை  இங்கு காண்பதில் பெரு மகிழ்ச்சிக் கொள்கிறோம். உங்களை வலை தொழில்நுட்பத்திற்குள் பயணிக்க முயல்கிறோம். 
+
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
@@ -49,3 +51,6 @@ Currently, translations are being kept on crowdin.com platform at:
 https://crowdin.com/project/django-girls-tutorial
 
 If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+
+
+
