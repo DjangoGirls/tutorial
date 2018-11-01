@@ -1,5 +1,5 @@
-# Chromebook setup
+# קנפוג Chromebook
 
-> **Note** If you already worked through the Installation steps, no need to do this again – you can skip straight ahead to [Introduction to Python](../python_introduction/README.md).
+> **הערה** אם כבר עברתם על כל שלבי ההתקנה, אין צורך לעשות אותם שוב - ניתן לדלג ישירות ל[מבוא לפייתון](../python_introduction/README.md).
 
 {% include "/chromebook_setup/instructions.md" %}
