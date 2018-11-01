@@ -6,6 +6,6 @@
 
 > **הערה** אם את משתמשת בChromebook, דלגי על הפרק הזה ועקבי אחר ההוראות בפרק [קנפוג Chromebook](../chromebook_setup/README.md).
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **הערה** ייתכן כי כבר עשית זאת בשלב מוקדם יותר של פרק ההתקנה - אם כן, ניתן לדלג ישירות לפרק הבא!
 
 {% include "/code_editor/instructions.md" %}
