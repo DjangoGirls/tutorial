@@ -4,13 +4,13 @@
 
 ### ماذا يجب ان تفعل الأن؟
 
-Take a break and relax! You have just done something really huge.
+خذ راحة واسترخِ! لقد قمت بشيء ضخم حقا.
 
 بعد ذلك، تأكد من اتباع Django Girls على [ الفيسبوك ](http://facebook.com/djangogirls) أو [ تويتر ](https://twitter.com/djangogirls) للبقاء مطلعا على كل الأحداث.
 
 ### هل يمكنك التوصية بأي موارد إضافية؟
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+نعم! وهناك *الكثير* من الموارد على الإنترنت لتعلم جميع أنواع مهارات البرمجة-- قد يكون شيئاً شاقاً فعلاً أن تعرف الى أين تذهب الآن، لكننا سنوفر لك كل شيء. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
