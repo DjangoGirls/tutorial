@@ -2,7 +2,7 @@
 
 Az önce modellediğimiz gönderilere ekleme, düzenleme ya da silme işlemi yapmak için Django admini kullanacağız.
 
-Şimdi `blog/admin.py` dosyasını açarak içeriği bununla değiştirelim:
+Şimdi `blog/admin.py` dosyasını açarak içeriğini aşağıdaki şekilde değiştirelim:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -46,12 +46,12 @@ Tarayıcınıza dönün. Oluşturduğunuz superuser'ın bilgileri ile giriş yap
 
 ![Django admin](images/django_admin3.png)
 
-Mesajlara gidin ve biraz kurcalayın. Beş altı blog yazısı ekleyin. İçeriği kafanıza takmayın - zamandan kazanmak için basitçe bu tutorialdan birkaç yazı kopyalayıp yapıştırabilirsiniz. :)
+Posts linkine tıklayın ve biraz kurcalayın. Beş altı blog yazısı ekleyin. İçeriği kafanıza takmayın - tutorial'dan bir kaç paragraf kopyalayıp yapıştırabilirsiniz. :)
 
 En azından iki ya da üç yazıya (ama hepsinin değil) yayınlama tarihi girdiğinizden emin olun. Bunu ileriki adımlarda kullanacağız.
 
 ![Django admin](images/edit_post3.png)
 
-Eğer Django admin ile ilgili daha fazla şey öğrenmek istiyorsanız Django'nun belgelerine göz atabilirsiniz: https://docs.djangoproject.com/en/1.11/ref/contrib/admin/
+Eğer Django admin ile ilgili daha fazla şey öğrenmek istiyorsanız, Django dokümantasyonuna göz atabilirsiniz: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 Şu an muhtemelen enerjinizi geri toplamak için bir şeyler yemek veya kahve( ya da çay) içmek için iyi bir zaman. İlk Django modelinizi yarattınız. Küçük bir molayı hak ettiniz!

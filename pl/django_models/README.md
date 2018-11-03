@@ -77,24 +77,25 @@ Zauważysz, że nowy katalog `blog` został utworzony i zawiera kilka plików. K
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
-Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Posługujemy się w tym celu plikiem `mysite/settings.py`. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `]`. Czyli efekt końcowy powinien wyglądać tak:
+Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Robimy to w pliku `mysite/settings.py` - otwórz go w swoim edytorze kodu. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `]`. Czyli efekt końcowy powinien wyglądać tak:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -114,7 +115,7 @@ INSTALLED_APPS = [
 
 W pliku `blog/models.py` definiujemy wszystkie obiekty zwane `Models` - jest to miejsce, w którym będziemy definiować nasz wpis na blogu.
 
-Otwórz plik `blog/models.py`, usuń z niego całą zawartość i napisz taki kod:
+Otwórz plik `blog/models.py` w swoim edytorze kodu, usuń z niego całą zawartość i wpisz taki kod:
 
 {% filename %}blog/models.py{% endfilename %}
 

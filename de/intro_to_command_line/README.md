@@ -20,7 +20,7 @@ Um mit unserem Tutorial zu starten, musst du als Erstes das Kommandozeilenprogra
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Windows 10: Gehe zur Suchleiste → Gib "cmd" in die Suche ein → Klicke den Eintrag Eingabeaufforderung mit der rechten Maustaste an → Wähle aus dem nächsten Menü die Option Ausführen aus.
+Windows 10: Drücke die Windows-Taste → gib in die Suchleiste “cmd” ein → bestätige mit Enter.
 
 > Ältere Versionen von Windows: Start Menu → Alle Programme → Zubehör → Eingabeaufforderung.
 
@@ -34,7 +34,7 @@ Mac: Öffne das Launchpad → Andere → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-Wahrscheinlich ist es unter Programme → Zubehör → Terminal, aber das ist von deinem System abhängig. Wenn es nicht da ist, google einfach schnell danach. :)
+Wahrscheinlich ist es unter Programme → Zubehör → Terminal, aber das ist von deinem System abhängig. Wenn es nicht da ist, kannst du versuchen, danach zu googlen. :)
 
 <!--endsec-->
 
@@ -44,7 +44,7 @@ Du solltest nun ein weißes oder schwarzes Fenster sehen, das auf deine Anweisun
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Auf einem Mac oder Linux, siehst du wahrscheinlich `$`, also so:
+Auf einem Mac- oder Linux-Rechner siehst du wahrscheinlich ein `$`, also so:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,22 +55,24 @@ Auf einem Mac oder Linux, siehst du wahrscheinlich `$`, also so:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Auf Windows siehst du ein `>` Zeichen, also das hier:
+Auf einem Windows-Rechner siehst du wahrscheinlich ein `>`, so hier:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
+Schau mal in den Linux-Abschnitt hier obendrüber -- so etwas wirst du wieder im Abschnitt PythonAnywhere später im Tutorial antreffen.
+
 <!--endsec-->
 
-Vor jedem Kommando wird dieses Zeichen und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich. :)
+Vor jedem Kommando wird das Zeichen `$` oder `>` und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich. :-)
 
 > Ein kleiner Hinweis: Falls du etwas in der Art wie `C:\Users\ola>` oder `Olas-MacBook-Air:~ ola$` sehen solltest, ist das auch 100%ig korrekt.
 
-Der Teil bis und einschließlich `$` oder `>` heißt *Kommandozeilen-Eingabeaufforderung* oder kurz *Eingabeaufforderung*. Es fordert dich auf, hier etwas einzugeben.
+Der Teil bis und einschließlich `$` oder `>` heißt *Kommandozeilen-Eingabeaufforderung* oder kurz *Eingabeaufforderung*. Sie fordert dich auf, hier etwas einzugeben.
 
-Wenn wir im Tutorial wollen, dass du einen Befehl eingibst, schreiben wir `$` oder `>` mit hin, gelegentlich auch noch die anderen Angaben links davon. Du kannst dann den linken Teil einfach ignorieren und nur das Kommando eingeben, welches rechts der Eingabeaufforderung steht.
+Wenn wir im Tutorial wollen, dass du einen Befehl eingibst, schreiben wir `$` oder `>` mit hin, gelegentlich auch noch die anderen Angaben links davon. Ignoriere den linken Teil und gib nur das Kommando ein, welches rechts der Eingabeaufforderung steht.
 
 ## Dein erstes Kommando (YAY!)
 
@@ -102,7 +104,7 @@ Und dann bestätige mit `Enter`. Das ist unser Ergebnis:
     olasitarska
     
 
-Wie du siehst, der Computer hat deinen Nutzernamen ausgegeben. Toll, was? :)
+Wie du siehst, der Computer hat deinen Nutzernamen ausgegeben. Toll, was? :-)
 
 > Versuch, jeden Befehl abzuschreiben und nicht zu kopieren und einzufügen. Auf diese Weise wirst du dir mehr merken!
 
@@ -134,13 +136,29 @@ Es wäre schön zu sehen, wo wir uns befinden, oder? Lass uns nachsehen. Gib die
     C:\Users\olasitarska
     
 
-> Hinweis: "cd" steht für "Change Directory". Mit Powershell kannst du auch 'pwd' verwenden, wie auf Linux oder Mac OS X.
+> Hinweis: "cd" steht für "change directory". Mit Powershell kannst du auch 'pwd' verwenden, wie auf Linux oder Mac OS X.
 
 <!--endsec-->
 
 Du wirst wahrscheinlich etwas Ähnliches auf deinem Gerät sehen. Wenn du die Konsole öffnest, befindest du dich normalerweise im Heimverzeichnis deines Benutzers.
 
 * * *
+
+### Mehr über ein Kommando lernen
+
+Viele Befehle, die du in der Kommandozeile nutzen kannst, haben eine eingebaute Hilfe, die du anzeigen und lesen kannst! Zum Beispiel kannst du etwas über den eben verwendeten Befehl lernen:
+
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+
+OS X und Linux haben einen `man`-Befehl, mit dem du die Hilfe über die Kommandos aufrufen kannst. Gib `man pwd` ein und schau, was angezeigt wird oder setzte `man` vor andere Kommandos und sieh dir deren Hilfe an. Das Ergebnis von `man` wird in der Regel seitenweise ausgegeben. Du kannst die Leertaste benutzen, um auf die nächste Seite zu gelangen und `q`, um die Hilfeseiten zu schließen.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
+
+Wenn du Windows benutzt, dann wird dir der Suffix `/?` für die meisten Kommandos die Hilfeseite ausgeben. Gegebenenfalls musst du nach oben scrollen, um alles zu sehen. Versuch es mal mit `cd /?`.
+
+<!--endsec-->
 
 ### Anzeigen von Dateien und Unterordnern
 
@@ -220,7 +238,7 @@ Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
 <!--endsec-->
 
-Passt!
+Hier ist es!
 
 > Pro-Tipp: Wenn du `cd D` tippst und dann `tab` auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit "D" beginnt, drücke die `tab`-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.
 
@@ -228,7 +246,7 @@ Passt!
 
 ### Erstellen eines Verzeichnisses
 
-Wie wärs damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
+Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -248,7 +266,7 @@ Wie wärs damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kann
 
 <!--endsec-->
 
-Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :)
+Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :-)
 
 > Pro-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die `Pfeil aufwärts`- und `Pfeil abwärts`-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.
 
@@ -256,7 +274,7 @@ Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem D
 
 ### Übung!
 
-Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practice`-Ordner ein Verzeichnis namens `test`. (Verwende dazu die `cd` und `mkdir`-Kommandos.)
+Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practice`-Ordner ein Verzeichnis namens `test`. (Verwende dazu die Kommandos `cd` und `mkdir`.)
 
 #### Lösung:
 
@@ -284,7 +302,7 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 
 <!--endsec-->
 
-Glückwunsch! :)
+Glückwunsch! :-)
 
 * * *
 
@@ -381,7 +399,7 @@ Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 ### Beenden
 
-Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
+Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :-)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -401,23 +419,24 @@ Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es 
 
 <!--endsec-->
 
-Cool, was? :)
+Cool, was? :-)
 
 ## Zusammenfassung
 
 Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 
-| Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                   | Beispiel                                          |
-| ---------------- | ----------------------- | ------------------------------ | ------------------------------------------------- |
-| exit             | exit                    | Fenster schließen              | **exit**                                          |
-| cd               | cd                      | Verzeichnis wechseln           | **cd test**                                       |
-| cd               | pwd                     | aktuelles Verzeichnis anzeigen | **cd** (Windows) oder **pwd** (Mac OS / Linux)    |
-| dir              | ls                      | Unterordner/Dateien zeigen     | **dir**                                           |
-| copy             | cp                      | Datei kopieren                 | **copy c:\test\test.txt c:\windows\test.txt** |
-| move             | mv                      | Datei verschieben              | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir            | mkdir                   | neues Verzeichnis erstellen    | **mkdir testdirectory**                           |
-| rmdir (oder del) | rm                      | Datei löschen                  | **del c:\test\test.txt**                        |
-| rmdir /S         | rm -r                   | Verzeichnis löschen            | **rm -r testdirectory**                           |
+| Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                    | Beispiel                                             |
+| ---------------- | ----------------------- | ------------------------------- | ---------------------------------------------------- |
+| exit             | exit                    | Fenster schließen               | **exit**                                             |
+| cd               | cd                      | Verzeichnis wechseln            | **cd test**                                          |
+| cd               | pwd                     | aktuelles Verzeichnis anzeigen  | **cd** (Windows) oder **pwd** (Mac OS / Linux)       |
+| dir              | ls                      | Unterordner/Dateien zeigen      | **dir**                                              |
+| copy             | cp                      | Datei kopieren                  | **copy c:\test\test.txt c:\windows\test.txt**    |
+| move             | mv                      | Datei verschieben               | **move c:\test\test.txt c:\windows\test.txt**    |
+| mkdir            | mkdir                   | neues Verzeichnis erstellen     | **mkdir testdirectory**                              |
+| rmdir (oder del) | rm                      | Datei löschen                   | **del c:\test\test.txt**                           |
+| rmdir /S         | rm -r                   | Verzeichnis löschen             | **rm -r testdirectory**                              |
+| [CMD] /?         | man [CMD]               | Hilfe für ein Kommando aufrufen | **cd /?** (Windows) oder **man cd** (Mac OS / Linux) |
 
 Das sind nur sehr wenige der Befehle, welche du in deiner Konsole verwenden kannst, aber du wirst heute nicht mehr brauchen.
 

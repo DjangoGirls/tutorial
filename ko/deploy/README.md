@@ -125,7 +125,7 @@ Branch master set up to track remote branch master from origin.
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-이제 여러분의 코드가 gitHub에 저장됐어요! 가서 확인해보세요! [Django](https://github.com/django/django), [장고걸스 튜토리얼][https://github.com/DjangoGirls/tutorial]뿐만 아니라 수많은 훌륭한 오픈소스 소프트웨어 프로젝트들이 gitHub에서 호스팅하고 있어요. 방금 여러분이 한 것처럼 말이죠. :)
+이제 여러분의 코드가 gitHub에 저장됐어요! 가서 확인해보세요! [Django](https://github.com/django/django), [장고걸스 튜토리얼](https://github.com/DjangoGirls/tutorial)뿐만 아니라 수많은 훌륭한 오픈소스 소프트웨어 프로젝트들이 gitHub에서 호스팅하고 있어요. 방금 여러분이 한 것처럼 말이죠. :)
 
 
 # PythonAnywhere에 블로그 설정하기

@@ -2,7 +2,7 @@
 
 W celu dodawania, edycji czy usuwania artykułów, dla których model przed chwilą stworzyłyśmy, użyjemy admina Django.
 
-Otwórzmy plik `blog/admin.py` i zamieńmy jego zawartość na:
+Otwórzmy plik `blog/admin.py` w edytorze kodu i zamieńmy jego zawartość na:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -46,7 +46,7 @@ Wróć do przeglądarki. Zaloguj się za pomocą danych logowania administratora
 
 ![Admin Django](images/django_admin3.png)
 
-Przejdź do Postów i poeksperymentuj chwilę. Dodaj pięć czy sześć artykułów. Nie martw się ich zawartością - możesz skopiować i wkleić chociażby trochę tekstu z tego tutoriala, by zaoszczędzić czas. :)
+Przejdź do sekcji Posts i poeksperymentuj trochę. Dodaj pięć czy sześć wpisów do bloga. Nie martw się zawartością - widoczna ona jest tylko na Twoim komputerze - możesz skopiować i wkleić fragment tekstu z tego tutoriala, aby zaoszczędzić czas. :)
 
 Upewnij się, że co najmniej dwa lub trzy posty (ale nie wszystkie) mają ustawioną datę publikacji. Będzie to pomocne później.
 

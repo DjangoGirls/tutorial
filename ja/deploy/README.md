@@ -93,15 +93,15 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
 
 ![](images/new_github_repo.png)
 
-> **注** `my-first-blog`という名前は重要です。何か他のものを選択することもできますが、以下の手順では何度も繰り返す必要があります。他の名前を選択した場合は、 毎回それを置き換えてください。 できれば、`my-first-blog`の名前にしておきましょう。
+> **注** `my-first-blog`という名前は重要です。何か他のものを選択することもできますが、以下の手順では何度も繰り返す必要があります。他の名前を選択した場合は、 毎回それを置き換えてください。 できれば、`my-first-blog` の名前にしておきましょう。
 
-次の画面では、リポジトリをクローンするためのURLが表示されます。"HTTPS"を選択してURLをコピーします。すぐに端末でペーストします。
+次の画面では、リポジトリをクローンするためのURLが表示されます。これはこの後のコマンドで利用します。
 
 ![](images/github_get_repo_url_screenshot.png)
 
 そして自分のコンピューター上のGitリポジトリをGitHub上のGitリポジトリに結びつけてあげる必要があります。
 
-コンソールに次のように入力します（`<your-github-username>`をGitHubアカウントの作成時に入力したユーザー名に置き換えます。山カッコ&lt;&gt;を残さないでください）。
+コンソールに次のように入力します（`<your-github-username>`をGitHubアカウントの作成時に入力したユーザー名に置き換えます。山カッコ&lt;&gt;を残さないでください。このURLはさっき見たクローンURLと一致する必要があります）。
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ PythonAnywhereにWebアプリケーションをデプロイするには、コー
 
 `Collecting pythonanywhere` のようなメッセージがいくつか出力され、最終的に`Successfully installed (...) pythonanywhere- (...)`という行で終わると思います。
 
-GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（`<your-github-username>`の代わりにGitHubユーザー名を使用することを忘れないでください）：
+GitHub からアプリを自動的に構成するためのヘルパーを実行します。 PythonAnywhereのコンソールに次のように入力します（GitHubからクローンしたときのURLと一致するように、`<your-github-username>`の代わりにGitHubユーザー名を使用することを忘れないでください）：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -191,11 +191,11 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
     templates tests.py urls.py views.py
     
 
-また、「ファイル」タブに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。
+また、「ファイル」ページに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。 (Consoleページから他のPythonAnywhereページには右上のメニューボタンからいけます。 一度いずれかのページに移動したら、他ページへのリンクはトップのあたりにあります。)
 
 ## 動いています！
 
-あなたのサイトは現在、インターネット上で動作しているはずです！ PythonAnywhereの「Web」タブをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)
+あなたのサイトは現在、インターネット上で動作しているはずです！ PythonAnywhereの「Web」ページをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)
 
 > **注** これは初心者向けのチュートリアルです。このサイトをデプロイする際にはセキュリティの観点からは理想的ではない、いくつかのショートカットをしました。 もしこのプロジェクトを利用すると決めたり、新しいプロジェクトを開始する場合は、あなたのサイトを保護するいくつかのヒントのために、[Djangoデプロイメントチェックリスト](https://docs.djangoproject.com/ja/2.0/howto/deployment/checklist/)を見直してみてください。
 
@@ -207,7 +207,7 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 - あなたのGitHubのURLを間違えている
 - *Could not find your settings.py*というエラーが表示された場合は、おそらくGitにすべてのファイルを追加できていなかったか、 GitHubにうまくプッシュできていなかった。 この場合はGitセクションをもう一度見てください
 
-サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は**エラーログ**です。 PythonAnywhereの[ Webタブ](https://www.pythonanywhere.com/web_app_setup/)には、このリンクがあります。 そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。
+サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は**エラーログ**です。 PythonAnywhereの[ Webページ](https://www.pythonanywhere.com/web_app_setup/)には、このリンクがあります。 そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。
 
 [ PythonAnywhereヘルプサイトの一般的なデバッグのヒント](http://help.pythonanywhere.com/pages/DebuggingImportError)もあります。
 

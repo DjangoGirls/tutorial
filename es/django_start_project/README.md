@@ -1,119 +1,204 @@
 # ¡Tu primer proyecto en Django!
 
-> Parte de este capitulo esta basado en los tutoriales de Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Parte de este capítulo se basa en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parte de este capítulo se basa en el [django-marcador tutorial][1] bajo licencia de Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
+> Parte de este capítulo está basado en el [ tutorial django-marcador](http://django-marcador.keimlink.de/) bajo licencia de Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
 
- [1]: http://django-marcador.keimlink.de/
+¡Vamos a crear un blog sencillo!
 
-¡Vamos a crear un simple blog!
+El primer paso es iniciar un nuevo proyecto de Django. Básicamente, significa que vamos a lanzar unos scripts proporcionados por Django que nos crearán el esqueleto de un proyecto de Django. Son solo un montón de directorios y archivos que usaremos más tarde.
 
-El primer paso para crearlo es iniciar un nuevo proyecto en Django. Básicamente, esto significa que podrás correr algunos scripts proporcionados por Django que crearán el esqueleto de un proyecto para nosotros: un montón de directorios y archivos que vamos a utilizar más adelante.
+Los nombres de algunos archivos y directorios son muy importantes para Django. No deberías renombrar los archivos que estamos a punto de crear. Moverlos a un lugar diferente tampoco es buena idea. Django necesita mantener una cierta estructura para poder encontrar cosas importantes.
 
-Los nombres de algunos archivos y directorios son muy importantes para Django. No deberías renombrar los archivos que estamos a punto de crear. Moverlos a un lugar diferente tampoco es una buena idea. Django tiene que mantener una cierta estructura para ser capaz de encontrar cosas importantes.
+> Recuerda ejecutar todo en el virtualenv. Si no ves un prefijo `(myvenv)` en tu consola tienes que activar tu virtualenv. Explicamos cómo hacerlo en el capítulo de **Instalación de Django** en la sección **Trabajar con virtualenv**. Basta con escribir `myvenv\Scripts\activate` en Windows o `source myvenv/bin/activate` en Mac OS / Linux.
 
-> Recuerda correr todo en el virtualenv. Si no ves un prefijo `(myvenv)` en tu consola necesitas activar tu virtualenv. Explicamos cómo hacer eso en el capítulo de **Instalación de Django** en la sección **Trabajando con virtualenv**. Puedes hacerlo escribiendo el siguiente comando: `myvenv\Scripts\activate` en Windows o `source myvenv/bin/activate` en Mac OS / Linux.
-> 
-> **Nota** Verifica dos veces que hayas incluido el punto (`.`) al final del comando, es importante porque le dice al script que instale Django en el directorio actual.
+<!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-En la consola debes ejecutar (recuerda no escribir `(myvenv) ~/djangogirls$`, ¿ok?):
+En MacOS o Linux deberías ejecutar el siguiente comando en la consola. **no te olvides de añadir el punto `.` al final**
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-En Windows:
+> El punto `.` es crucial porque le dice al script que instale Django en el directorio actual (para el cual el punto `.` sirve de abreviatura).
+> 
+> **Nota** Cuando escribas los comandos de arriba acuérdate de que sólo tienes que escribir la parte que empieza por `django-admin`. La parte de `(myvenv) ~/djangogirls$` que mostramos aquí es sólo un ejemplo del mensaje que aparecerá en tu línea de comandos.
 
-    (myvenv) C:\Users\Name\djangogirls> django-admin.py startproject mysite .
+<!--endsec-->
+
+<!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
+
+En Windows debes ejecutar el siguiente comando. **(No olvides incluir el punto `.` al final)**:
+
+{% filename %}command-line{% endfilename %}
+
+    (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
-> **Nota** Verifica dos veces que hayas incluido el punto (`.`) al final del comando, es importante porque le dice al script que instale Django en el directorio actual.
 
-`django-admin.py` es un script que creará los archivos y directorios para ti. Ahora deberías tener una estructura de directorios parecida a esto:
+> El punto `.` es crucial porque le dice al script que instale Django en el directorio actual (para el cual el punto `.` sirve de abreviatura).
+> 
+> **Nota** Cuando teclees los comandos de arriba, recuerda que sólo tienes que escribir la parte que empieza por `django-admin.exe`. La parte de `(myvenv) C:\Users\Name\djangogirls>` que mostramos aquí es sólo un ejemplo del mensaje que aparecerá en tu línea de comandos.
+
+<!--endsec-->
+
+`django-admin.py` es un script que creará los archivos y directorios para ti. Ahora deberías tener una estructura de directorios parecida a esta:
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
-`manage.py` es un script que ayuda con la administración del sitio. Con ello podremos iniciar un servidor web en nuestro ordenador sin necesidad de instalar nada más, entre otras cosas.
+> **Nota**: en tu estructura de directorios, tambièn veràs el directorio `venv` que creamos anteriormente.
+
+`manage.py` es un script que ayuda con la administración del sitio. Con él podremos iniciar un servidor web en nuestro ordenador sin necesidad de instalar nada más, entre otras cosas.
 
 El archivo `settings.py` contiene la configuración de tu sitio web.
 
-¿Recuerdas cuando hablamos de un cartero que debía comprobar donde entregar una carta? El archivo `urls.py` contiene una lista de los patrones utilizados por `urlresolver`.
+Recuerdas cuando hablamos de una cartera que debía comprobar dónde entregar una carta? El archivo `urls.py` contiene una lista de los patrones utilizados por `urlresolver`.
 
-Ignoremos los otros archivos por ahora - no los cambiaremos. ¡Lo único que debes recordar es no borrarlos por accidente!
+Por ahora vamos a ignorar el resto de archivos porque no los vamos a cambiar. ¡Sólo acuérdate de no borrarlos accidentalmente!
 
-## Cambiando la configuración
+## Cambiar la configuración
 
 Vamos a hacer algunos cambios en `mysite/settings.py`. Abre el archivo usando el editor de código que has instalado anteriormente.
 
-Sería bueno tener el horario correcto en nuestro sitio web. Ve a la [lista de husos horarios de Wikipedia][2] y copia tu zona horaria (TZ). (por ejemplo, `Europe/Berlin` )
+**Nota**: Ten en cuenta que `settings.py` es un archivo normal, como cualquier otro. Puedes abrirlo con el editor de texto, usando "file -> open" en el menu de acciones. Esto te deberìa llevar a la tìpica ventana donde puedes buscar el archivo `settings.py` y seleccionarlo. Como alternativa, puedes abrir el archivo haciendo click derecho en la carpeta djangogirls en tu escritorio. Luego, selecciona tu editor de texto en la lista. Elegir el editor es importante puesto que puede que tengas otros programas que pueden abrir el archivo pero que no te dejaran editarlo.
 
- [2]: https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
+Sería bueno tener el horario correcto en nuestro sitio web. Ve a [lista de Wikipedia de las zonas horarias](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) y copia tu zona horaria (TZ) (e.g. `Europa/Berlín`).
 
-En settings.py, encuentra la línea que contiene `TIME_ZONE` y modifícala para elegir tu propia zona horaria:
+En `settings.py`, encuentra la línea que contiene `TIME_ZONE` y modifícala para elegir tu zona horaria. Por ejemplo:
 
-``` python
-    TIME_ZONE = 'Europe/Berlin'
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+TIME_ZONE = 'Europe/Berlin'
 ```
 
-Modificando "Europe/Berlin" como corresponda
+Un código de idioma tiene dos partes: el idioma, p.ej. `en` para inglés o `de` para alemán, y el código de país, p.ej. `de` para Alemania o `ch` para Suiza. Si tu idioma nativo no es el inglés, puedes añadir lo siguiente para cambiar el idioma de los botones y notificaciones de Django. Así tendrás el botón "Cancel" traducido al idioma que pongas aquí. [Django trae un montón de traducciones listas para usar](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
-También necesitaremos agregar una ruta para los archivos estáticos (aprenderemos todo sobre los archivos estáticos y CSS más tarde en este tutorial). Ve hacia abajo hasta el *final* del archivo, y justo por debajo de la entrada `STATIC_URL`, agrega una nueva llamada `STATIC_ROOT`:
+Si quieres un idioma diferente, cambia el código de idioma cambiando la siguiente línea:
 
-``` python
-    STATIC_URL = '/static/'
-    STATIC_ROOT = os.path.join(BASE_DIR, 'static') 
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+LANGUAGE_CODE = 'es-es'
 ```
+
+También tenemos que añadir una ruta para archivos estáticos. (Veremos todo acerca de archivos estáticos y CSS más adelante.) Ve al *final* del archivo, y justo debajo de la entrada `STATIC_URL`, añade una nueva llamada `STATIC_ROOR`:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+STATIC_URL = '/static/'
+STATIC_ROOT = os.path.join(BASE_DIR, 'static')
+```
+
+Cuando `DEBUG` es `True` y `ALLOWED_HOST` esta vacìo, el host es validado contra `['localhost', '127,0.0.1', '[::1]']`. Una vez despleguemos nuestra aplicaciòn este no sera el mismo que nuestro nombre de host en PythonAnywhere asi que cambiaremos la siguiente opciòn:
+
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+ALLOWED_HOSTS = ['127.0.0.1', ' . pythonanywhere.com']
+```
+
+> **Nota**: si estas usando un Chromebook, añade esta linea al final del archivo settings.py: `MESSAGE_STORAGE =
+'django.contrib.messages.storage.session.SessionStorage'`
+> 
+> Añade también `.c9users.io` a `ALLOWED_HOSTS` si estás usando cloud9
 
 ## Configurar una base de datos
 
-Hay una gran variedad de opciones de bases de datos para almacenar los datos de tu sitio. Utilizaremos el que viene por defecto, `sqlite3`.
+Hay una gran variedad de opciones de bases de datos para almacenar los datos de tu sitio. Utilizaremos la que viene por defecto, `sqlite3`.
 
-Esto ya está configurado en esta parte de tu archivo `mysite/settings.py`:
+Esta ya está configurado en esta parte de tu archivo `mysite/settings.py`:
 
-``` python
-    DATABASES = {
-        'default': {
-            'ENGINE': 'django.db.backends.sqlite3',
-            'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-        }
+{% filename %}mysite/settings.py{% endfilename %}
+
+```python
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
     }
+}
 ```
 
 Para crear una base de datos para nuestro blog, ejecutemos lo siguiente en la consola: `python manage.py migrate` (necesitamos estar en el directorio de `djangogirls` que contiene el archivo `manage.py`). Si eso va bien, deberías ver algo así:
 
+{% filename %}command-line{% endfilename %}
+
     (myvenv) ~/djangogirls$ python manage.py migrate
     Operations to perform:
-      Apply all migrations: admin, contenttypes, auth, sessions
+      Apply all migrations: auth, admin, contenttypes, sessions
     Running migrations:
+      Rendering model states... DONE
       Applying contenttypes.0001_initial... OK
       Applying auth.0001_initial... OK
       Applying admin.0001_initial... OK
+      Applying admin.0002_logentry_remove_auto_add... OK
+      Applying contenttypes.0002_remove_content_type_name... OK
+      Applying auth.0002_alter_permission_name_max_length... OK
+      Applying auth.0003_alter_user_email_max_length... OK
+      Applying auth.0004_alter_user_username_opts... OK
+      Applying auth.0005_alter_user_last_login_null... OK
+      Applying auth.0006_require_contenttypes_0002... OK
+      Applying auth.0007_alter_validators_add_error_messages... OK
       Applying sessions.0001_initial... OK
     
 
-¡Y listo! ¡Es hora de iniciar el servidor web y ver si nuestro sitio web está funcionando!
+Y, ¡terminamos! Es hora de iniciar el servidor web y ver si está funcionando nuestro sitio web!
+
+## Iniciar el servidor
 
 Debes estar en el directorio que contiene el archivo `manage.py` (en la carpeta `djangogirls`). En la consola, podemos iniciar el servidor web ejecutando `python manage.py runserver`:
+
+{% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-Ahora todo lo que debes hacer es verificar que tu sitio esté corriendo - abre tu navegador (Firefox, Chrome, Safari, Internet Explorer o el que utilices) e ingresa la dirección:
+Si estas usando un Chromebook, utiliza este comando:
+
+{% filename %}Cloud 9{% endfilename %}
+
+    (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
+    
+
+Si estás en Windows y te falla con un error `UnicodeDecodeError`, utiliza en su lugar este comando:
+
+{% filename %}command-line{% endfilename %}
+
+    (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
+    
+
+Ahora todo lo que tienes que hacer es comprobar que tu sitio se esté ejecutando. Abre tu navegador (Firefox, Chrome, Safari, Internet Explorer o el que utilices) y escribe la dirección:
+
+{% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-El servidor web se apropiará de tu consola hasta que lo termines manualmente: para tipear más comandos o abres una nueva terminal (y no te olvides de activar tu virtualenv allí también), o frena el servidor web yendo a la consola en la que está corriendo y presionando Ctrl+C - las teclas Control y C juntas (en Windows, deberás presionar Ctrl + Break).
+Si estàs usando un Chromebook, siempre visitaras tu servidor de pruebas accediendo a:
 
-¡Felicitaciones! ¡Has creado tu primer sitio web y lo has ejecutado usando un servidor web! ¿No es genial?
+{% filename %}browser{% endfilename %}
 
-![¡Funcionó!][3]
+    https://django-girls-<your cloud9 username>.c9users.io
+    
 
- [3]: images/it_worked2.png
+¡Enhorabuena! ¡Has creado tu primer sitio web y lo has iniciado usando un servidor web! ¿No es genial?
 
-¿Lista para el próximo paso? ¡Es momento de crear algo de contenido!
+![¡La instalación ha funcionado!](images/install_worked.png)
+
+Mientras el servidor se este ejecutando, no podràs ejecutar comandos adicionales. La terminal aceptarà texto pero no ejecutara ningùn comando. Esto sucede porque el servidor se ejecuta continuamente para recibir solicitudes.
+
+> Miramos como funcionan los servidores web en el capìtulo **Còmo funciona el internet**.
+
+Recuerda, para escribir comandos mientras el servidor web esta funcionando, abre una nueva terminal y activa el virtualenv. Para parar el servidor web, ve a la ventana donde se esté ejecutando y pulsa CTRL+C, las teclas Control y C a la vez ( en Windows puede que tengas que pulsar Ctrl+Break).
+
+¿Preparada para el próximo paso? ¡Es momento de crear algo de contenido!

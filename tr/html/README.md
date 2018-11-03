@@ -4,13 +4,13 @@ Template nedir diye sorabilirsiniz.
 
 Template (şablon), farklı bilgileri hep aynı biçimde sunmak için tekrar tekrar kullanabileceğimiz bir dosyadır - örneğin, mektup yazmanıza yardımcı olan bir template kullanabilirsiniz çünkü yazacağınız tüm mektuplar farklı mesajlar içerse ve farklı kişilere gönderilse de aynı sayfa düzenine sahip olacaktır.
 
-Django şablonunun formatı HTML diye adlandırılan bir dilde tanımlıdır(ilk bölümde bahsettiğimiz HTML, **İnternet nasıl çalışır**).
+Bir Django template'inin formatı HTML adını verdiğimiz bir dilde tanımlanır (**İnternet nasıl çalışır** adlı ilk bölümde bahsettiğimiz HTML).
 
 ## HTML nedir?
 
 HTML kullanıcıya basit bir web sayfası görüntülemek için web tarayıcınız tarafından - Chrome, Firefox veya Safari gibi - yorumlanan basit bir koddur.
 
-HTML "HyperText Markup Language" (HiperMetin İşaretleme Dili) anlamına gelir. **HyperText (HiperMetin)** sayfalar arası bağlantıları destekleyen türden bir metin demektir. **Markup (İşaretleme)**, bir belgeyi alıp onu kodlarla işaretleyerek, nasıl yorumlanacağını (tarayıcıya) söyledik demektir. HTML kodu **etiketler** ile oluşturulur, etiketlerin her biri `<` ile başlar ve `>` ile biter. Bu etiketler biçimlendirme **öğelerini** temsil eder.
+HTML "HyperText Markup Language" (HiperMetin İşaretleme Dili) anlamına gelir. **HyperText** (HiperMetin) sayfalar arası bağlantıları destekleyen türden bir metin demektir. **Markup** (işaretleme), bir belgeyi alıp onu kodlarla işaretleyerek, nasıl yorumlanacağını (tarayıcıya) söylemek demektir. HTML kodu **etiketler** ile oluşturulur, etiketlerin her biri `<` ile başlar ve `>` ile biter. Bu etiketler biçimlendirme **öğelerini** temsil eder.
 
 ## İlk template'iniz!
 
@@ -23,30 +23,32 @@ Template'lar `blog/templates/blog` dizininde saklanır. Öyleyse blog klasörü 
         └───blog
     
 
-(`blog` diye adlandırılan iki dizine niye ihtiyacımız olduğunu merak edebilirsiniz - daha sonra anlayacağınız üzere, basitçe durum karmaşıklaşmaya başladığında hayatınızı kolaylaştıracak bir adlandırma uzlaşımıdır.)
+(`blog` diye adlandırılan iki dizine niye ihtiyacımız olduğunu merak edebilirsiniz - daha sonra anlayacağınız üzere, sitemiz karmaşıklaştıkça bu şekilde isimlendirme tarzı işimizi oldukça kolaylaştırır.)
 
 Şimdi de `blog/templates/blog` dizini içine `post_list.html` adlı bir dosya oluşturalım (şimdilik içini boş bırakalım).
 
 Web sitemizin nasıl göründüğüne bir bakalım: http://127.0.0.1:8000/
 
-> Eğer hala `TemplateDoesNotExist` hatası alıyorsanız, sunucunuzu yeniden başlatmayı deneyin. Komut satırına girin, Ctrl+C (Kontrol ve C tuşlarına beraber) basarak sunucuyu durdurun ve bir `python manage.py runserver` komutunu çalıştırarak yeniden başlatın.
+> Eğer hala `TemplateDoesNotExist` hatası alıyorsanız, sunucunuzu yeniden başlatmayı deneyin. Komut satırına girin, Ctrl+C (Kontrol ve C tuşlarına beraber) basarak sunucuyu durdurun ve `python manage.py runserver` komutunu çalıştırarak yeniden başlatın.
 
 ![Şekil 11.1](images/step1.png)
 
 Artık hata kalmadı! Tebrikler :) Ama, web sitemiz aslında boş bir sayfadan başka bir şey yayınlamıyor, çünkü template boş. Bunu düzeltelim.
 
-Template dosyamıza şunları ekleyelim:
+Yeni dosyayı kod düzenleyicisinde açıp şunları ekleyelim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <html>
+<body>
     <p>Merhaba!</p>
     <p>Çalışıyor!</p>
+</body>
 </html>
 ```
 
-Web siteniz şu anda nasıl görünüyor?Öğrenmek için ziyaret edin: http://127.0.0.1:8000/
+Web siteniz şu anda nasıl görünüyor? Öğrenmek için bir bakalım: http://127.0.0.1:8000/
 
 ![Şekil 11.2](images/step3.png)
 
@@ -72,7 +74,7 @@ Aynı zamanda tüm HTML sayfaları **head** ve **body** olmak üzere iki öğeye
 ```html
 <html>
     <head>
-        <title>Ola'nın blogu</title>
+        <title>Zeynep'in blogu</title>
     </head>
     <body>
         <p>Merhaba!</p>
@@ -87,7 +89,7 @@ Dosyayı kaydedin ve sayfanızı yenileyin.
 
 Tarayıcınızın "Zeynep'in blogu" başlığını nasıl anladığını fark ettiniz mi? `<title>Zeynep'in blogu</title>` kısmını başlık olarak yorumlayarak yazıyı tarayıcının başlık kısmına yerleştirdi. (Bu yazı yer işaretleri gibi yerlerde de kullanılır).
 
-Her açılan etiketin benzer bir *kapatan etiket*, `/` ile başlayan, ile kapatılmalıdır. Ayrıca bu etiketler *iç içe* yerleştirilebilir (bu da bir etiketi kapatabilmek için, içindeki tüm etiketlerin kapanmış olmasını gerektirir).
+Her açılan etiketin `/` ile başlayan bir *kapatan etiket*'i ile kapatılması gerekmektir. Ayrıca bu etiketler *iç içe* yerleştirilebilir (bu da bir etiketi kapatabilmek için, içindeki tüm etiketlerin kapanmış olmasını gerektirir).
 
 Bir şeyleri kutulara yerleştirmek gibi. Büyük bir kutuda `<html></html>` olsun; onun içinde `<body></body>` kutusu olsun, onun da içinde daha küçük kutular olsun: `<p></p>`.
 
@@ -108,7 +110,7 @@ Bu *kapatma* etiketleri ve *yuvalama* ögeleri kurallarını takip etmeye ihtiya
 * `<ul><li>ilk madde</li><li>ikinci madde</li></ul>` - tıpkı bunun gibi bir liste yapar!
 * `<div></div>` - sayfanın bir bölümünü tanımlar
 
-İşte komple bir şablon örneği,kopyalayın ve `blog/templates/blog/post_list.html` içine yapıştırın:
+İşte komple bir template örneği, kopyalayın ve `blog/templates/blog/post_list.html` içine yapıştırın:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -208,7 +210,7 @@ Bunu bir kez yapıp, değişikliklerimizi GitHub'a yükledik (ittik):
 
 (Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
 
-Kodumuzun indirilmesini izleyelim. Kodun geldiğini kontrol etmek istersek **Files (dosyalar) sekme**sini açıp PythonAnywhere'de kodumuzu görebiliriz.
+Ve kodunuzun indirilmesini izleyin. Kontrol etmek istersen, **Files** sekmesine gidip kodunu PythonAnywhere üzerinde görebilirsin (Konsol sayfasındaki menü butonundan diğer PythonAnywhere sayfalarına ulaşabilirsin).
 
 * Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın.
 

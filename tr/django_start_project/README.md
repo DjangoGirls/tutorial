@@ -46,11 +46,12 @@ Windows'ta aşağıdaki komutu çalıştırmalısınız. **(Sonuna nokta `.` koy
 
     djangogirls
     ├───manage.py
-    └───mysite
-            settings.py
-            urls.py
-            wsgi.py
-            __init__.py
+    ├───mysite
+    │        settings.py
+    │        urls.py
+    │        wsgi.py
+    │        __init__.py
+    └───requirements.txt
     
 
 > **Not**: Dizin yapınızda, daha önceden oluşturduğumuz `venv` dizinini de göreceksiniz.
@@ -59,17 +60,17 @@ Windows'ta aşağıdaki komutu çalıştırmalısınız. **(Sonuna nokta `.` koy
 
 `settings.py` dosyası, web sitesinizin ayarlarını içerir.
 
-Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştuğumuzu hatırlıyor musun? `urls.py` dosyası `urlresolver`(urlçözümleyici) tarafından kullanılan desenler listesi içerir.
+Bir mektubu nereye götüreceğini kontrol eden postacının hakkında konuştuğumuzu hatırlıyor musun? `urls.py` dosyası `urlresolver`(urlçözümleyici) tarafından kullanılan kalıpların bir listesini içerir.
 
 Şu an için değişiklik yapmayacağımız diğer dosyaları yoksayalım. Unutmamanız gereken tek şey kazayla onları silmeyin!
 
 ## Ayarları değiştirme
 
-Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önceden kurduğunuz kod düzenleyicinizi kullanarak dosyayı açın.
+Hadi `mysite/settings.py` dosyasında bazı değişiklikler yapalım. Daha önceden kurduğunuz kod düzenleyicinizi (editör) kullanarak dosyayı açın.
 
 **Not**: `settings.py` dosyasının da diğerleri gibi normal bir dosya olduğunu aklınızda tutun. Bunu kod düzenleyicisi içerisinde "dosya -> aç" menü eylemini kullanarak açabilirsiniz. Bu, size `settings.py` dosyanıza gidebileceğiniz ve bu dosyayı seçebileceğiniz her zamanki klasik pencereyi açacaktır. Alternatif olarak, bu dosyayı masaüstünüzdeki djangogirls klasörüne gidip sağ tıklayarak açabilirsiniz. Sonra, listeden kod düzenleyicinizi seçin. Dosyayı açabilen ancak düzenlemenize izin vermeyecek diğer programların yüklü olması ihtimaline karşın kod düzenleyicinin seçilmesi önem arz etmektedir.
 
-Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zaman dilimleri listesine](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) gidin ve ve ilgili saat dilimini kopyalayın (ZD) (Ör. `Europe/Berlin`).
+Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zaman dilimleri listesine](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) gidin ve ilgili saat dilimini kopyalayın (ZD) (Ör. `Europe/Berlin`).
 
 `settings.py` dosyasında `TIME_ZONE` ifadesini içeren satırı bulun ve kendi seçtiğiniz zaman dilimine göre uyarlayın:
 
@@ -79,7 +80,7 @@ Web sitemizin doğru bir saate sahip olması güzel olurdu. [Wikipedia'nın zama
 TIME_ZONE = 'Europe/Istanbul'
 ```
 
-Bir dil kodu, dil (ör. ingilizce için `en` veya almanca için `de`) ve ülke kodundan (ör. almanya için `de` veya isviçre için `ch`) oluşmaktadır. Eğer İngilizce ana diliniz değilse, varsayılan buttonları ve uyarıların dilini kendi dilinize değiştirmek bunu ekleyebilirsiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django hazırlanmış olan birçok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/1.11/ref/settings/#language-code).
+Bir dil kodu, dil (ör. İngilizce için `en` veya Almanca için `de`) ve ülke kodundan (ör. Almanya için `de` veya İsviçre için `ch`) oluşmaktadır. Eğer İngilizce ana diliniz değilse, varsayılan butonları ve Django uyarılarının dilini kendi dilinize değiştirmek için bunu ekleyebilirsiniz. Böylece "İptal" butonu burada tanımladığınız dile çevrilmiş olacaktır. [Django birçok çeviri ile birlikte gelmektedir](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 Farklı bir dil istiyorsanız, aşağıdaki satırı değiştirerek dil kodunu seçin:
 
@@ -89,7 +90,7 @@ Farklı bir dil istiyorsanız, aşağıdaki satırı değiştirerek dil kodunu s
 LANGUAGE_CODE = 'de-ch'
 ```
 
-Ayrıca statik dosyalar için bir yol eklememiz gerekmektedir. (Tutorial içerisinde statik dosyalar ve CSS hakkında ayrıntılı bilgi bulabilirsiniz.) Dosyanın *son*'una gidin, hemen altında sadece `STATIC_URL` girişi yapın, `STATIC_ROOT` adında yeni birim ekleyin:
+Ayrıca statik dosyalar için bir yol eklememiz gerekmektedir. (Eğitici ders içerisinde statik dosyalar ve CSS hakkında ayrıntılı bilgi bulabilirsiniz.) Dosyanın *son*'una gidin, hemen altında sadece `STATIC_URL` girişi yapın, `STATIC_ROOT` adında yeni birim ekleyin:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -191,7 +192,7 @@ Eğer Chromebook kullanıyorsanız, her seferinde test sunucusunu ziyaret edecek
 
 Tebrikler! ilk web siteni oluşturdun ve web sunucusu kullanarak çalıştırdın! Harika, değil mi?
 
-![İşte çalışıyor!](images/it_worked2.png)
+![Kurulum basarili!](images/install_worked.png)
 
 Web sunucusu çalışırken ek komutlar girmek için yeni bir komut satırı istemi göremezsiniz. Terminal yeni metin kabul edecek ama yeni komutları çalıştırmayacaktır. Bunun nedeni web sunucusunun duraklamadan gelen talepleri algılamasıdır.
 

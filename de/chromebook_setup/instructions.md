@@ -1,19 +1,34 @@
 Du kannst [diesen Abschnitt einfach](http://tutorial.djangogirls.org/en/installation/#install-python) überspringen, falls du kein Chromebook benutzt. Wenn du eins benutzt, wird deine Installation ein wenig anders sein. Du kannst den Rest der Installationsanweisungen ignorieren.
 
-### Cloud 9
+### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud9 ist ein Tool, das dir einen Code-Editor und Zugriff auf einen Computer im Internet zur Verfügung stellt, auf dem du die Software installieren, editieren und laufen lassen kannst. Während des Tutorials wird dir Cloud 9 als dein *lokaler Rechner* dienen. Auch du wirst Befehle auf einer Kommandozeilen-Oberfläche im Terminal ausführen können, genau wie andere Teilnehmerinnen, die mit OS X, Ubuntu oder Windows arbeiten. Dein Terminal wird jedoch mit einem entfernten Computer verbunden sein, den Cloud 9 für dich bereitstellt.
+Mit dem Tool Cloud IDE erhältst du Zugang zu einem Code-Editor und einem Rechner, der im Internet läuft und auf dem du die Software installieren, schreiben und ausführen kannst. Für die Dauer des Tutorials wird Cloud IDE zu deinem *lokalen Rechner*. Auch du wirst Befehle in einer Kommandozeilen-Oberfläche ausführen können, genau wie die anderen Teilnehmerinnen, die mit OS X, Ubuntu oder Windows arbeiten. Dein Terminal wird jedoch mit einem Rechner verbunden sein, den Cloud IDE dir bereitstellt. Hier ist die Anleitung für die Cloud IDEs (PaizaCloud, Cloud IDE, AWS Cloud9). Wähle eine der Cloud IDEs aus und folge den Anweisungen der gewählten Cloud IDE.
 
-1. Installiere Cloud 9 aus dem [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Gehe auf [c9.io](https://c9.io)
-3. Lege dir dort ein Benutzerkonto an
-4. Klicke auf *Create a New Workspace*
-5. Gib ihm den Namen *django-girls*
-6. Wähle *Blank* aus (das zweite von rechts in der untersten Reihe mit dem orangenen Logo)
+#### PaizaCloud Cloud IDE
+
+1. Gehe zu [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Lege dir dort ein Benutzerkonto an
+3. Klicke auf *New Server*
+4. Klicke auf die Schaltfläche "Terminal" (links im Browserfenster)
+
+Jetzt solltest du links eine Schnittstelle mit einer Seitenleiste und Schaltflächen sehen. Klicke auf den "Terminal"-Button und öffne das Terminal-Fenster mit einer Eingabeaufforderung wie folgt:
+
+{% filename %}browser{% endfilename %}
+
+    $
+    
+
+Das Terminal auf der PaizaCloud Cloud IDE steht für deine Anweisungen bereit. Du kannst die Größe des Fensters frei einstellen.
+
+#### AWS Cloud9
+
+1. Gehe zu [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Lege dir dort ein Benutzerkonto an
+3. Klicke auf *Create Environment*
 
 Jetzt solltest du eine Benutzeroberfläche mit Seitenleiste, ein grosses Fenster mit Text und am unteren Rand ein Feld sehen, das wie folgt aussieht:
 
-{% filename %}Cloud 9{% endfilename %}
+{% filename %}bash{% endfilename %}
 
     deinbenutzername:~/workspace $
     

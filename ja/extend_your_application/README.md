@@ -12,7 +12,7 @@
 
 ## 投稿の詳細へのテンプレートリンクを作成する
 
-`blog/templates/blog/post_list.html`ファイルにリンクを追加していきましょう。今は次のようになっていますよね： {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+`blog/templates/blog/post_list.html`ファイルにリンクを追加していきましょう。 コードエディタで開いたら、次のようになっていますよね： {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -54,7 +54,7 @@
 
 最初の投稿の詳細がこの**URL**で表示されるようにします：http://127.0.0.1:8000/post/1/
 
-投稿の内容を表示する`post_detail`という*ビュー*をDjangoに示すように、`blog/urls.py`ファイルでURLを作りましょう。 `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` という行を `blog/urls.py` ファイルに追加しましょう。 ファイルは次のようになるでしょう。
+投稿の内容を表示する`post_detail`という*ビュー*をDjangoに示すように、`blog/urls.py`ファイルでURLを作りましょう。 `blog/urls.py`をコードエディタで開いて、`path('post/<int:pk>)/', views.post_detail, name='post_detail'),`という行を追加しましょう。ファイルは次のようになるでしょう。
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -70,7 +70,7 @@ urlpatterns = [
 
 `post/<int:pk>/` の部分はURLパターンを指定しています。それについて説明しましょう:
 
-- `post/` は単純にURLが **post** に続けて **/** で始まることを意味します。ここまでは順調ですね。
+- `post/` はURLが **post** に続けて **/** で始まることを意味します。ここまでは順調ですね。
 - `<int:pk>` – この部分はトリッキーです。これはDjangoは整数の値を期待し、その値が`pk`という名前の変数でビューに渡されることを意味しています。
 - `/` – それからURLの最後に再び **/** が必要です。
 
@@ -80,7 +80,7 @@ urlpatterns = [
 
 ![AttributeError](images/attribute_error2.png)
 
-あなたは次のステップが何であるか覚えていますか？ もちろん：ビューを追加する！ですね。
+あなたは次のステップが何であるか覚えていますか？ ビューを追加する！ですね。
 
 ## 投稿の詳細ビューを追加する
 
@@ -98,7 +98,7 @@ Post.objects.get(pk=pk)
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-私たちはそれを望んでいません！ しかしもちろん、Djangoにはそれを処理するものがあります：`get_object_or_404` です。 与えられた`pk`の`Post`がない場合、前よりもっとよい `Page Not Found 404` ページが表示されます。
+私たちはそれを望んでいません！ しかし幸運にもDjangoにはそれを処理するものがあります：`get_object_or_404` です。 与えられた`pk`の`Post`がない場合、前よりもっとよい `Page Not Found 404` ページが表示されます。
 
 ![Page not found](images/404_2.png)
 
@@ -108,7 +108,7 @@ Post.objects.get(pk=pk)
 
 `blog/urls.py`では`views.post_detail`というビューを参照する`post_detail`という名前のURLルールを作成しました。 これは、Djangoが`blog/views.py`内の`post_detail`というビュー関数を待っていることを意味します。
 
-`blog/views.py`を開き、他の`from`行の近くに次のコードを追加する必要があります。
+`blog/views.py`をコードエディタで開き、他の`from`行の近くに次のコードを追加する必要があります。
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ def post_detail(request, pk):
 
 ## 投稿の詳細へのテンプレートリンクを作成する
 
-`blog/templates/blog`に`post_detail.html`というファイルを作成します。
+`blog/templates/blog`に`post_detail.html`というファイルを作成し、コードエディタで開きます。
 
 こんな感じですね。
 
@@ -209,6 +209,6 @@ PythonAnywhereのようなサーバは、（CSSファイルのような）「静
 
 `manage.py collectstatic`コマンドは、`manage.py migrate`のようなものです。 私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を*適用*するよう指示します。
 
-いずれにしても、[Webタブ](https://www.pythonanywhere.com/web_app_setup/)にアクセスして、**Reload**を押す準備が整いました。
+いずれにしても、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)（コンソールの右上のメニューボタンから）を開き、**Reload**をクリックする準備ができました。そしてそれから https://yourname.pythonanywhere.comページを見て結果を確認しましょう。
 
 うまくいってるはずです！おめでとう :)

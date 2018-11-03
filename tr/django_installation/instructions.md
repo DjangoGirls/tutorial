@@ -6,7 +6,7 @@
 
 Django'yu yüklemeden önce kod ortamınızı düzenli tutmak için son derece yararlı bir araç yükleyeceğiz. Bu adımı atlayabilirsiniz, fakat atlamamanızı tavsiye ederiz. En iyi olası kurulum ile başlamanız sizi gelecekteki bir sürü sorundan koruyacaktır!
 
-Öyleyse bir **virtual environment**(diğer adıyla *virtualenv*) kuralım. Virtualenv Python/Django kurulumunuzu her proje için ayrı tutup izole eder. Bu, bir websitesine yapacağınız değişikliklerin diğer geliştirdiklerinize yansımayacağı anlamına gelir. Muazzam, değil mi?
+Öyleyse bir **virtual environment** (diğer adıyla *virtualenv*) kuralım. Virtualenv Python/Django kurulumunuzu her proje için ayrı tutup izole eder. Bu, bir websitesine yapacağınız değişikliklerin diğer geliştirdiklerinize yansımayacağı anlamına gelir. Muazzam, değil mi?
 
 Yapmanız gereken tek şey `virtualenv` oluşturmak için bir dizin bulmak; örneğin giriş dizininiz. Windows'ta şöyle görünebilir: `C:\Users\Name` (`Name` yerine kullanıcı adınız gelir).
 
@@ -30,7 +30,7 @@ Bu eğitim için giriş dizininizde yeni açtığımız `djangogirls` adlı bir 
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-Yeni bir `virtualenv` yaratmak için, komut istemini açmanız ve `python -m venv myvenv`'u çalıştırmanız gerekir. Böyle görünecektir:
+Yeni bir `virtualenv` yaratmak için, komut satırını açmanız ve `python -m venv myvenv`'u çalıştırmanız gerekir. Böyle görünecektir:
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -51,15 +51,15 @@ Hem Linux hem de OS X 'teyken `python3 -m venv myvenv` komutuyla bir `virtualenv
     $ python3 -m venv myvenv
     
 
-Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. Ayrıca ismi çok fazla referans alacağınızdan kısa tutmak iyi bir fikir olacaktır!
+Burada `myvenv` sizin `virtualenv`'inizin ismi. Dilerseniz istediğiniz herhangi bir isim kullanabilirsiniz, ama büyük harf ve boşluk kullanmamaya dikkat edin. Ayrıca ismi kısa tutmak işinize yarayacaktır zira bu ismi çokça kullanıyor olacaksınız!
 
 > **NOT:** Debian/Ubuntu'nun bazı sürümlerinde aşağıdaki hatayı alabilirsiniz:
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
->     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+>     Ensurepip kullanılamadığından sanal ortam başarıyla oluşturulamadı.  Debian/Ubuntu sistemlerinde, aşağıdaki komutu kullanarak python3-venv paketini yüklemeniz gerekir.
 >        apt install python3-venv
->     You may need to use sudo with that command.  python3-venv paketini indirdikten sonra, virtualenv'inizi yeniden oluşturun. 
+>     sudo komutu ile kullanmanız gerekebilir.  python3-venv paketini indirdikten sonra, virtualenv'inizi yeniden oluşturun. 
 >     
 > 
 > Bu durumda, yukarıdaki yönergeleri izleyin ve `python3-venv` paketini yükleyin:
@@ -112,7 +112,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOT:** Windows 10'da , Windows PowerShell tarafından `bu senaryoların uygulanması bu sistemde devre dışıdır` diyen bir hata alabilirsiniz. Bu durumda,başka bir Windows PowerShell'i,"Yönetici Olarak Çalıştır" seçeneğini kullanarak çalıştırın. Daha sonra sanal ortamınızı başlatmadan önce sıradaki komutları yazmayı deneyin:
+> **NOT:** Windows 10'da , Windows PowerShell tarafından `bu senaryoların uygulanması bu sistemde devre dışıdır` diyen bir hata alabilirsiniz. Bu durumda, başka bir Windows PowerShell'i, "Yönetici Olarak Çalıştır" seçeneğiyle açın. Bundan sonra sanal ortamınızı başlatmadan önce aşağıdaki komutları yazmayı deneyin:
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
@@ -161,15 +161,32 @@ Bunu yapmadan önce, bilgisayarımızın, Django yüklemek için kullanacağım�
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-Sonra `pip install django~=1.11.0` (eşittir işaretinden önce tilde işareti kullandığımızı not edin: `~=`) çalıştırarak Django'yu yükleyin.
+### Requirements ile paketleri yüklemek
+
+Bir requirements dosyası `pip install` ile yüklenmesi gereken paketlerin listesini tutar:
+
+Önce `djangogirls /` klasörü içinde `requirements.txt` dosyası oluşturalım:
+
+    djangogirls
+    └───requirements.txt
+    
+
+`djangogirls/requirements.txt` dosyanıza şu kodu eklemelisiniz:
+
+{% filename %}djangogirls/requirements.txt{% endfilename %}
+
+    Django~={{ book.django_version }}
+    
+
+Simdi, Django kurmak için `pip install -r requirements.txt` komutunu çalıstırın.
 
 {% filename %}komut-satırı{% endfilename %}
 
-    (myvenv) ~$ pip install django~=1.11.0
-    Collecting django~=1.11.0
-      Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
-    Installing collected packages: django
-    Successfully installed django-1.11.3
+    (myvenv) ~$ pip install -r requirements.txt
+    Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
+      Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+    Installing collected packages: Django
+    Successfully installed Django-{{ book.django_version }}
     
 
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
@@ -186,7 +203,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}komut-satırı{% endfilename %}
 > 
->     C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
+>     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >     
 
 <!--endsec-->
