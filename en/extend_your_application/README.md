@@ -179,7 +179,7 @@ $ git push
 
 Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 ```
 $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
 $ git pull
@@ -195,7 +195,7 @@ Servers like PythonAnywhere like to treat "static files" (like CSS files) differ
 
 Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 ```
 $ workon <your-pythonanywhere-username>.pythonanywhere.com
 (ola.pythonanywhere.com)$ python manage.py collectstatic

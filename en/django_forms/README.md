@@ -413,7 +413,7 @@ $ git push
 
 * Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 ```
 $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
 $ git pull
