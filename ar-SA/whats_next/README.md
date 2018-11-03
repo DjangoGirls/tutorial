@@ -10,13 +10,13 @@
 
 ### هل يمكنك التوصية بأي موارد إضافية؟
 
-نعم! وهناك *الكثير* من الموارد على الإنترنت لتعلم جميع أنواع مهارات البرمجة-- قد يكون شيئاً شاقاً فعلاً أن تعرف الى أين تذهب الآن، لكننا سنوفر لك كل شيء. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+نعم! وهناك *الكثير* من الموارد على الإنترنت لتعلم جميع أنواع مهارات البرمجة-- قد يكون شيئاً شاقاً فعلاً أن تعرف الى أين تذهب الآن، لكننا سنوفر لك كل شيء. مهما كانت اهتماماتك قبل أن تأتي إلى Django Girls، ومهما كانت الاهتمامات التي طورتها خلال المحتوى التعليمي، هذه بعض الموارد المجانية(أو الموارد مع مكونات مجانية كبيرة) يمكن أن تستخدمها للوصول إلى حيث تريد.
 
 #### Django
 
 - Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [المحتوى التعليمي الخاص بDjango](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [ابدأ مع دروس الفيديو لDjango](http://www.gettingstartedwithdjango.com/)
 - [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – the course costs money but you can request a free eBook licence by contacting author Tracy Osborn at <tracy@limedaring.com>
 
 #### HTML, CSS and JavaScript
