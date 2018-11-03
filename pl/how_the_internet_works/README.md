@@ -6,7 +6,7 @@
 
 Możemy się założyć, że używasz go każdego dnia. Ale czy naprawdę wiesz, co się dzieje, gdy wpisujesz w przeglądarce adres https://djangogirls.org i wciskasz `enter`?
 
-Aby zrozumieć, jak działa internet, powinnaś najpierw dowiedzieć się, czym tak naprawdę jest strona internetowa - a jest ona tylko zbiorem plików zapisanych na dysku twardym. Tak samo jak Twoje zdjęcia, muzyka czy filmy. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
+Aby zrozumieć, jak działa internet, powinnaś najpierw dowiedzieć się, czym tak naprawdę jest strona internetowa - a jest ona zbiorem plików zapisanych na dysku twardym. Tak samo jak Twoje zdjęcia, muzyka czy filmy. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
 
 Jeśli nie miałaś wcześniej do czynienia z programowaniem, może być Ci na początku trudno zrozumieć HTML, ale przeglądarki internetowe (takie jak Chrome, Safari, Firefox itd.) uwielbiają go. Zostały one zaprojektowane po to, by czytać ten kod, przetwarzać go i postępować zgodnie z jego instrukcjami. Prezentują pliki, z których składa się Twoja strona - by wyglądała dokładnie tak jak Ty chcesz.
 
@@ -22,7 +22,7 @@ Wygląda dość chaotycznie, prawda? W rzeczywistości jest to sieć połączony
 
 ![Rysunek 1.2](images/internet_3.png)
 
-To fascynujące, prawda? Ale oczywiście niemożliwe jest stworzenie bezpośredniego połączenia kablowego między każdym komputerem w internecie. Więc aby dostać się do maszyny dostępnej w internecie (na przykład tej, na której zapisane jest https://djangogirls.org), potrzebujemy wykonać zapytanie przechodzące przez wiele, wiele różnych maszyn.
+To fascynujące, prawda? Ale niemożliwe jest stworzenie bezpośredniego połączenia kablowego między każdym komputerem w internecie. Więc aby dostać się do maszyny dostępnej w internecie (na przykład tej, na której zapisane jest https://djangogirls.org), potrzebujemy wykonać zapytanie przechodzące przez wiele, wiele różnych maszyn.
 
 Wygląda to tak:
 
@@ -34,7 +34,7 @@ List trafia do urzędu pocztowego najbliżej Ciebie. Potem idzie do drugiego urz
 
 ![Rysunek 1.4](images/internet_4.png)
 
-Właśnie tak to działa - wysyłasz wiadomości i oczekujesz jakiejś odpowiedzi. Oczywście, zamiast papieru i długopisu używasz bitów danych, ale koncepcja jest dokładnie taka sama!
+Właśnie tak to działa - wysyłasz wiadomości i oczekujesz jakiejś odpowiedzi. Zamiast papieru i długopisu używasz bitów danych, ale koncepcja jest dokładnie taka sama!
 
 Zamiast adresów z nazwą ulicy, miastem, kodem pocztowym oraz nazwą kraju, używa się adresów IP. Twój komputer najpierw pyta serwera DNS (system nazw domenowych, ang. DNS - Domain Name System) o przetłumaczenie djangogirls.org na adres IP. Działa to podobnie do dawnych książek telefonicznych, w których mogłaś poszukać adresu czy numeru po nazwisku osoby, z którą chciałaś się skontaktować.
 

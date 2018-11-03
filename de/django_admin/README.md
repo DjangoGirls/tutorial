@@ -2,7 +2,7 @@
 
 Wir benutzen den Django-Admin, um die soeben modellierten Posts hinzuzufügen, zu ändern oder zu löschen.
 
-Öffne die Datei `blog/admin.py` und ersetze den Inhalt wie folgt:
+Öffne die Datei `blog/admin.py` im Code-Editor und ersetze den Inhalt wie folgt:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -33,7 +33,7 @@ Um dich einloggen zu können, musst du zunächst einen *superuser* erstellen - e
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Wenn du dazu aufgefordert wirst, gib einen Benutzernamen (Kleinbuchstaben, keine Leerzeichen), eine Mailadresse und ein Passwort ein. **Mach dir keine Gedanken, wenn du das Passwort bei der Eingabe nicht sehen kannst - so soll es sein.** Tippe einfach weiter und drücke `Enter`, um weiterzumachen. Du solltest nun Folgendes sehen (wobei Benutzername und Email deine eigenen sein sollten):
+Wenn du dazu aufgefordert wirst, gib einen Benutzernamen (Kleinbuchstaben, keine Leerzeichen), eine Mailadresse und ein Passwort ein. **Mach dir keine Gedanken, wenn du das Passwort bei der Eingabe nicht sehen kannst - so soll es sein.** Tippe weiter und drücke `Enter`, um weiterzumachen. Du solltest nun Folgendes sehen (wobei Benutzername und Email deine eigenen sein sollten):
 
     Username: admin
     Email address: admin@admin.com
@@ -46,7 +46,7 @@ Geh nochmal in deinen Browser und log dich mit den Daten des Superusers ein, den
 
 !["Django Admin"-Weboberfläche](images/django_admin3.png)
 
-Gehe zu Posts und experimentiere ein wenig damit. Füge 5 oder 6 Blogposts hinzu. Mach dir keine Sorgen wegen des Inhalts - du kannst einfach etwas Text aus diesem Tutorial kopieren und einfügen, um Zeit zu sparen :-).
+Gehe auf Posts und experimentiere ein bisschen damit. Füge fünf oder sechs Blogeinträge hinzu. Mach dir keine Sorgen wegen des Inhalts -- der ist nur auf deinem lokalen Computer sichtbar. Um Zeit zu sparen kannst du etwas Text aus diesem Tutorial kopieren und einfügen. :-)
 
 Achte darauf, dass bei wenigstens zwei oder drei Posts (aber nicht bei allen) das Veröffentlichungsdatum (publish date) eingetragen ist. Das werden wir später noch brauchen.
 

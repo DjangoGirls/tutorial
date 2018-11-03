@@ -12,7 +12,7 @@ We already have a `Post` model, so we don't need to add anything to `models.py`.
 
 ## Create a template link to a post's detail
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. So far it should look like this:
+We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 {% extends 'blog/base.html' %}
@@ -53,7 +53,7 @@ Let's create a URL in `urls.py` for our `post_detail` *view*!
 
 We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` to the `blog/urls.py` file. The file should look like this:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 ```python
@@ -67,9 +67,9 @@ urlpatterns = [
 ```
 
 This part ``post/<int:pk>/`` specifies a URL pattern – we will explain it for you:
-- `post/` just means that the URL should begin with the word __post__ followed by a __/__. So far so good.
+- `post/` means that the URL should begin with the word __post__ followed by a __/__. So far so good.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a __/__ again before finishing the url.
+- `/` – then we need a __/__ again before finishing the URL.
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
@@ -77,7 +77,7 @@ OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: htt
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? Of course: adding a view!
+Do you remember what the next step is? It's adding a view!
 
 ## Add a post's detail view
 
@@ -94,7 +94,7 @@ But this code has a problem. If there is no `Post` with the given `primary key` 
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But, of course, Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
@@ -104,7 +104,7 @@ OK, time to add a *view* to our `views.py` file!
 
 In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called  `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
-We should open `blog/views.py` and add the following code near the other `from` lines:
+We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
@@ -132,7 +132,7 @@ Oh no! Another error! But we already know how to deal with it, right? We need to
 
 ## Create a template for the post details
 
-We will create a file in `blog/templates/blog` called `post_detail.html`.
+We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
 It will look like this:
 
@@ -204,6 +204,6 @@ $ workon <your-pythonanywhere-username>.pythonanywhere.com
 
 The `manage.py collectstatic` command is a bit like `manage.py migrate`.  We make some changes to our code, and then we tell Django to _apply_ those changes, either to the server's collection of static files, or to the database.
 
-In any case, we're now ready to hop on over to the [Web tab](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload**.
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
 
 And that should be it! Congrats :)

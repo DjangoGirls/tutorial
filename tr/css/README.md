@@ -16,7 +16,7 @@ Twitter yazılımcıları tarafından geliştirilmeye başlanmış ve şu anda d
 
 ## Bootstrap kurulumu
 
-Bootstrap'ı kurmak için alttakileri `.html` dosyasının `<head>` kısmına eklemelisiniz:
+Bootstrap yüklemek için `.html` uzantılı dostamızı kod düzenleyicisinde açalım ve `<head>` bölümüne şunları ekleyelim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -24,7 +24,7 @@ Bootstrap'ı kurmak için alttakileri `.html` dosyasının `<head>` kısmına ek
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-Bu satırlar projeye yeni dosya eklemez. Ancak İnternet'te var olan dosyalara işaret eder. Haydi, tekrar websiteni tekrar aç ve yenile. İşte budur!
+Bu satırlar projeye yeni dosya eklemez. Ancak İnternet'te var olan dosyalara işaret eder. Şimdi websitenizi açın ve sayfayı yenileyin. İşte oldu!
 
 ![Şekil 14.1](images/bootstrap1.png)
 
@@ -77,7 +77,7 @@ h1 a {
 }
 ```
 
-`h1 a` bir CSS seçicisidir (selector). Bu, stillerimizi `h1` öğesi içerisindeki `a` öğelerine uyguladığımız anlamına geliyor. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Elbette, buraya kendi arzu ettiğin rengi koyabilirsin!
+`h1 a` bir CSS seçicisidir (selector). Bu, stillerimizi `h1` öğesi içerisindeki `a` öğelerine uyguladığımız anlamına geliyor. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Ya da buraya kendi istediğin rengi koyabilirsin!
 
 Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiket olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` class'ı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
@@ -87,7 +87,7 @@ Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler
 
 CSS hakkında daha fazla bilgi edinmek için [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp) u okuyabilirsin.
 
-Bir de HTML şablonuna projemize CSS eklediğimizi bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açıp en başına bunları ekleyelim:
+Sonrasında, ayrıca HTML şablonumuza (template) birtakım CSS eklemeleri yaptığımızı bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açıp en başına şu satırı ekleyelim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 

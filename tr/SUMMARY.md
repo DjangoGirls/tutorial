@@ -23,5 +23,5 @@
 * [CSS - Güzelleştirin](css/README.md)
 * [Template genişletmek](template_extending/README.md)
 * [Uygulamanı genişlet](extend_your_application/README.md)
-* [Django Forms](django_forms/README.md)
+* [Django Formları](django_forms/README.md)
 * [Sırada ne var?](whats_next/README.md)

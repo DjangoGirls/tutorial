@@ -23,7 +23,7 @@ Szablony są zapisywane w katalogu `blog/templates/blog`. Zacznij więc od stwor
         └───blog
     
 
-(Być może zastanawiasz się, dlaczego tworzymy dwa katalogi o nazwie `blog` - jak się niebawem dowiesz, to po prostu użyteczna konwencja nazewnictwa. Ułatwia życie, gdy sprawy stają się bardziej skomplikowane.)
+(Być może zastanawiasz się, dlaczego tworzymy dwa katalogi o nazwie `blog` - jak się niebawem dowiesz, to użyteczna konwencja nazewnictwa. Ułatwia życie, gdy sprawy stają się bardziej skomplikowane.)
 
 A teraz stwórz plik `post_list.html` (na razie niech będzie pusty) wewnątrz katalogu `blog/templates/blog`.
 
@@ -35,7 +35,7 @@ Popatrz, jak Twoja strona wygląda teraz: http://127.0.0.1:8000/
 
 Nie ma błędu! Gratulacje! :) Niestety, twoja aplikacja nie wyświetla niczego poza pustą stroną, ponieważ Twój szablon również jest pusty. Naprawmy to.
 
-Dodaj następującą treść w pliku z szablonem:
+Otwórz Twój nowy plik w edytorze kodu i dodaj poniższe:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -210,8 +210,8 @@ Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
 (Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
-I obserwuj jak Twój kod się ściąga. Jeśli chcesz sprawdzić czy już się pobrał, możesz przejść do zakładki **Files tab** i podejrzeć swój kod na PythonAnywhere.
+Widzisz, jak ściąga się Twój kod. Jeśli chcesz sprawdzić, czy zmiany zostały ściągnięte, możesz przejść do strony **"Files"** i sprawdzić swój kod na PythonAnywhere (możesz przejść do innych stron na PythonAnywhere korzystając z menu na stronie konsoli).
 
-* Na koniec przeskocz do zakładki [Web tab](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**.
+* Na koniec przejdź do strony ["Web"](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**.
 
 I to powinno wystarczyć! Możesz śmiało odświeżyć swoją stronę w przeglądarce! Zmiany powinny być widoczne. :)

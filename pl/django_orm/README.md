@@ -26,7 +26,7 @@ Efekt powinien wyglądać tak:
 >>>
 ```
 
-Jesteś teraz w interaktywnej konsoli Django. Przypomina ona nieco wiersz polecenia Pythona, z odrobiną dodatkowej magii Django. :) Oczywiście możesz także używać w niej wszystkich poleceń Pythona.
+Jesteś teraz w interaktywnej konsoli Django. Przypomina ona nieco wiersz polecenia Pythona, z odrobiną dodatkowej magii Django. :) Możesz także używać w niej wszystkich poleceń Pythona.
 
 ### Wszystkie obiekty
 
@@ -89,7 +89,7 @@ Jakich użytkowników mamy w bazie danych? Spróbuj tak:
 <QuerySet [<User: ola>]>
 ```
 
-To konto administratora, które stworzyłyśmy wcześniej! Teraz uzyskajmy dostęp do naszej instancji użytkownika:
+To konto administratora, które stworzyłyśmy wcześniej! Teraz uzyskajmy dostęp do naszej instancji użytkownika (podmień poniższą linię, by zawierała nazwę Twojego użytkownika):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ To konto administratora, które stworzyłyśmy wcześniej! Teraz uzyskajmy dost�
 >>> me = User.objects.get(username='ola')
 ```
 
-Jak widzisz, za pomocą polecenia `get` pobrałyśmy z bazy obiekt użytkownika (`User`) z właściwością `username` o wartości 'ola'. Elegancko! Oczywiście musisz wprowadzić tam swoją nazwę użytkownika.
+Jak widzisz, za pomocą polecenia `get` pobrałyśmy z bazy obiekt użytkownika (`User`) z właściwością `username` o wartości 'ola'. Elegancko!
 
 Teraz możemy wreszcie stworzyć nasz post:
 

@@ -8,7 +8,7 @@ Views are placed in the `views.py` file. We will add our *views* to the `blog/vi
 
 ## blog/views.py
 
-OK, let's open up this file and see what's in there:
+OK, let's open up this file in our code editor and see what's in there:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
@@ -29,7 +29,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and `return` a function `render` that will render (put together) our template `blog/post_list.html`.
+As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
 
 Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 

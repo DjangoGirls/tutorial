@@ -4,7 +4,7 @@ Als Letztes möchten wir auf unserer Website noch die Möglichkeit haben, Blogpo
 
 Das Gute an Django-Forms ist, dass man sie entweder vollständig selbst definieren oder eine `ModelForm` erstellen kann, welche den Inhalt des Formulars in das Model speichert.
 
-Genau das wollen wir jetzt machen: Wir erstellen ein Formular für unser `Post` Model.
+Genau das wollen wir jetzt machen: Wir erstellen ein Formular für unser `Post`-Model.
 
 So wie die anderen wichtigen Django-Komponenten haben auch die Forms ihre eigene Datei: `forms.py`.
 
@@ -14,7 +14,7 @@ Wir erstellen nun eine Datei mit diesem Namen im `blog`-Verzeichnis.
        └── forms.py
     
 
-So, jetzt lass uns diese öffnen und folgenden Code hinzufügen:
+So, jetzt lass uns diese im Code-Editor öffnen und folgenden Code hinzufügen:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
          fields = ('title', 'text',)
 ```
 
-Zuerst müssen wir die Django-Forms importieren (`from django import forms`) und natürlich auch unser `Post`-Model (`from .models import Post`).
+Zuerst müssen wir die Django-Forms importieren (`from django import forms`) und auch unser `Post`-Model (`from .models import Post`).
 
 Wie du wahrscheinlich schon vermutet hast, `PostForm` ist der Name unseres Formulars. Wir müssen Django mitteilen, dass unser Formular ein `ModelForm` ist (so kann Django ein bisschen für uns zaubern) - `forms.ModelForm` ist dafür verantwortlich.
 
@@ -44,7 +44,7 @@ Also erstellen wir hier auch wieder einen Link auf die Seite, eine URL, eine Vie
 
 ## Link auf eine Seite mit dem Formular
 
-Jetzt ist es an der Zeit, `blog/templates/blog/base.html` zu öffnen. Wir fügen einen Link in einem `div` hinzu mit dem Namen `page-header`:
+Jetzt ist es an der Zeit, `blog/templates/blog/base.html` im Code-Editor zu öffnen. Wir fügen einen Link in `div` hinzu mit dem Namen `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ Nach dem Hinzufügen der Zeile sieht deine HTML-Datei so aus:
 </html>
 ```
 
-Nach dem Speichern und Neuladen von http://127.0.0.1:8000 siehst du den bekannten `NoReverseMatch` Fehler, oder?
+Nach dem Speichern und Neuladen von http://127.0.0.1:8000 solltest du den bereits bekannten `NoReverseMatch`-Fehler sehen. Ist dem so? Gut!
 
 ## URL
 
-Wir öffnen `blog/urls.py` und fügen eine Zeile hinzu:
+Wir öffnen `blog/urls.py` im Code-Editor und fügen eine Zeile hinzu:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -113,9 +113,9 @@ urlpatterns = [
 
 Nach dem Neuladen der Site sehen wir einen `AttributeError`, weil wir noch keine `post_new`-View eingefügt haben. Fügen wir sie gleich hinzu!
 
-## Die post_new View
+## Die post_new-View
 
-Jetzt wird es Zeit, die `blog/views.py` Datei zu öffnen und die folgenden Zeilen zu den anderen `from`-Zeilen hinzuzufügen:
+Jetzt wird es Zeit, die Datei `blog/views.py` im Code-Editor zu öffnen und die folgenden Zeilen zu den anderen `from` Zeilen hinzuzufügen:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -137,7 +137,7 @@ Um ein neues `PostForm` zu erstellen, rufen wir `PostForm()` auf und übergeben 
 
 ## Template
 
-Wir müssen eine Datei `post_edit.html` im Verzeichnis `blog/templates/blog` erstellen. Damit ein Formular funktioniert, benötigen wir einige Dinge:
+Wir müssen eine Datei `post_edit.html` im Verzeichnis `blog/templates/blog` erstellen und im Code-Editor öffnen. Damit ein Formular funktioniert, benötigen wir einige Dinge:
 
 * Wir müssen das Formular anzeigen. Wir können das zum Beispiel mit einem einfachen `{{ form.as_p }}` tun.
 * Die Zeile oben muss von einem HTML-Formular-Tag eingeschlossen werden `<form method="POST">...</form>`.
@@ -174,7 +174,7 @@ Die Antwort ist: nichts. Wir müssen einfach noch etwas mehr Arbeit in unsere *V
 
 ## Speichern des Formulars
 
-Öffne `blog/views.py` erneut. Derzeit ist alles, was wir in der View `post_new` haben, das hier:
+Öffne `blog/views.py` erneut im Code-Editor. Derzeit ist alles, was wir in der View `post_new` haben, das hier:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -282,7 +282,7 @@ Django kümmert sich darum sicherzustellen, dass alle Felder in unserem Formular
 
 Jetzt wissen wir, wie ein neues Formular hinzugefügt wird. Aber was ist, wenn wir ein bereits bestehendes bearbeiten wollen? Das funktioniert so ähnlich wie das, was wir gerade getan haben. Lass uns schnell ein paar wichtige Dinge kreieren. (Falls du etwas nicht verstehst, solltest du deinen Coach fragen oder in den vorherigen Kapiteln nachschlagen, da wir all die Schritte bereits behandelt haben.)
 
-Öffne `blog/templates/blog/post_detail.html` und füge folgende Zeile hinzu
+Öffne `blog/templates/blog/post_detail.html` im Code-Editor und füge folgende Zeile hinzu:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -311,7 +311,7 @@ damit die Vorlage so aussieht:
 {% endblock %}
 ```
 
-In `blog/urls.py` fügen wir folgende Zeile ein:
+Öffne `blog/urls.py` im Code-Editor und fügen diese Zeile hinzu:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -321,7 +321,7 @@ In `blog/urls.py` fügen wir folgende Zeile ein:
 
 Wir werden die Vorlage `blog/templates/blog/post_edit.html` wiederverwenden, daher ist das einzig Fehlende eine neue *View*.
 
-Öffne `blog/views.py` und füge ganz am Ende der Datei Folgendes hinzu:
+Öffne `blog/views.py` im Code-Editor und füge ganz am Ende der Datei Folgendes hinzu:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -373,9 +373,9 @@ Falls du mehr Informationen über Django-Formulare benötigst, solltest du die o
 
 ## Sicherheit
 
-Neue Posts mit nur einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, dass du garantiert nicht willst. Lasst es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
+Neue Posts mit einem Linkklick zu erstellen, ist großartig! Aber im Moment ist jeder, der deine Seite besucht in der Lage, einen neuen Blogpost zu veröffentlichen und das ist etwas, was du garantiert nicht willst. Lass es uns so machen, dass der Button für dich angezeigt wird, aber für niemanden sonst.
 
-Finde in der Datei `blog/templates/blog/base.html` unseren `page-header` `div` und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:
+Öffne die Datei `blog/templates/blog/base.html` im Code-Editor, finde darin unseren `page-header` `div` und das Anchor-Tag, welches du zuvor eingefügt hast. Es sollte so aussehen:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -397,7 +397,7 @@ Dieses `{% if %}` sorgt dafür, dass der Link nur zu dem Browser geschickt wird,
 
 Erinnerst du dich an den Editier-Button, den wir gerade zu unserer Seite hinzugefügt haben? Wir wollen dort dieselbe Anpassung machen, damit andere Leute keine existierenden Posts verändern können.
 
-Öffne `blog/templates/blog/post_detail.html` und finde folgende Zeile:
+Öffne `blog/templates/blog/post_detail.html` im Code-Editor und finde folgende Zeile:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -443,6 +443,6 @@ Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weit
 
 (Denke daran, `<your-pythonanywhere-username>` durch deinen PythonAnywhere-Benutzernamen zu ersetzen - ohne spitze Klammern).
 
-* Springe nun noch schnell auf den [Web-Tab](https://www.pythonanywhere.com/web_app_setup/) und klicke auf **Reload**.
+* Gehe schliesslich noch rüber [auf die Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) (benutze den Menü-Knopf in der rechten oberen Ecke der Konsole) und klicke **Reload**. Lade deinen Blog https://yourname.pythonanywhere.com neu, um die Änderungen zu sehen.
 
 Und das war's! Glückwunsch :)

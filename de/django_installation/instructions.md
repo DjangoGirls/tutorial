@@ -144,9 +144,9 @@ Der Name `myvenv` muss mit dem von Dir gewählten Namen des `virtualenv` überei
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Du erkennst, dass dein `virtualenv` gestartet ist, wenn du vor der Eingabeaufforderung eine Klammer mit dem Namen deiner Umgebung siehst, `(myvenv)`.
 
-In Deiner neuen virtuellen Umgebung wird automatisch die richtige Version von `python` verwendet. Du kannst also `python` statt `python3` eingeben.
+In deiner neuen virtuellen Umgebung wird automatisch die richtige Version von `python` verwendet. Du kannst also `python` statt `python3` eingeben.
 
 Ok, jetzt ist die erforderliche Umgebung startklar und wir können endlich Django installieren!
 
@@ -165,7 +165,7 @@ Bevor wir damit loslegen, sollten wir jedoch sicherstellen, dass wir die neueste
 
 Eine requirements-Datei enthält eine Liste von Abhängigkeiten, die von `pip install` installiert werden sollen:
 
-Erstelle zuerst eine Datei namens `requirements.txt` im Verzeichnis `djangogirls/`:
+Erstelle mit dem zuvor installierten Code-Editor eine Datei namens `requirements.txt` im Verzeichnis `djangogirls/`:
 
     djangogirls
     └───requirements.txt

@@ -17,7 +17,7 @@ Wir erstellen jetzt eine `base.html`-Datei in `blog/templates/blog/`:
                 post_list.html
     
 
-Öffne sie, kopiere alles von `post_list.html` und füge es wie folgt in die `base.html`-Datei ein:
+Öffne sie im Code-Editor, kopiere alles von `post_list.html` und füge es wie folgt in die `base.html`-Datei ein:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Dann ersetze in `base.html` den gesamten `<body>` (alles zwischen `<body>` und `
 
 Aber warum? Du hast gerade einen `block` erstellt! Du hast den Template-Tag `{% block %}` benutzt, um einen Bereich zu schaffen, der HTML aufnehmen kann. Dieses HTML kommt aus einem anderen Template, welches das Template hier (`base.html`) erweitert. Wir zeigen dir gleich, wie das geht.
 
-Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_list.html`. {% raw %}Du löschst alles oberhalb von `{% for post in posts %}` und unterhalb von `{% endfor %}`. Wenn du das gemacht hast, sieht die Datei so aus:{% endraw %}
+Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_list.html` im Code-Editor. {% raw %}Du löschst alles oberhalb von `{% for post in posts %}` und unterhalb von `{% endfor %}`. Wenn du das gemacht hast, sieht die Datei so aus:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,7 +104,7 @@ Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_
 
 Dieser Teil unseres Templates soll nun das Basis-Template erweitern. Wir müssen daher Block-Tags ergänzen!
 
-{% raw %}Deine Block-Tags müssen mit den Tags in der `base.html`-Datei übereinstimmen. Du möchtest auch, dass der ganze Code dieser Datei mit eingeschlossen wird. Um das zu erreichen, umschließt du ihn mit `{% block content %}` und `{% endblock %}`. So hier:{% endraw %}
+{% raw %}Deine Block-Tags müssen mit den Tags in der `base.html`-Datei übereinstimmen. Stelle sicher, dass die Block-Tags den ganzen Code deines content-Blocks umschließen. Um das zu erreichen, umschließt du ihn mit `{% block content %}` und `{% endblock %}`. So hier:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ Dieser Teil unseres Templates soll nun das Basis-Template erweitern. Wir müssen
 {% endblock %}
 ```
 
-Nur eine Sache noch. Wir müssen die beiden Templates natürlich miteinander verknüpfen. Darum geht es ja bei der Template-Erweiterung! Dafür ergänzen wir einen Tag für Erweiterung (extends tag) ganz oben in der Datei. So hier:
+Nur eine Sache noch. Wir müssen die beiden Templates miteinander verknüpfen. Darum geht es ja bei der Template-Erweiterung! Dafür ergänzen wir einen Tag für Erweiterung (extends tag) ganz oben in der Datei. Und zwar so:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Nur eine Sache noch. Wir müssen die beiden Templates natürlich miteinander ver
 {% endblock %}
 ```
 
-Das war's! Probier aus, ob deine Website noch richtig funktioniert. :)
+Das war's! Speichere die Datei und probier aus, ob deine Website noch richtig funktioniert. :)
 
-> Wenn du einen Fehler `TemplateDoesNotExist` erhältst, dann heißt das, es gibt keine `blog/base.html` Datei und `runserver` läuft in der Konsole. Halte ihn an (durch Drücken von Ctrl+C – Control und die C Taste gleichzeitig) und starte ihn neu, in dem du den Befehl `python manage.py runserver` ausführst.
+> Wenn du den Fehler `TemplateDoesNotExist` erhältst, dann heißt das, dass es die Datei `blog/base.html` nicht gibt und dass `runserver` in der Konsole läuft. Halte ihn an (durch Drücken von Ctrl+C bzw. Strg+C – Control- und die C-Taste gleichzeitig) und starte ihn neu, indem du den Befehl `python manage.py runserver` ausführst.

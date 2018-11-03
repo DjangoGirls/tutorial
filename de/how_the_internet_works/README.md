@@ -22,7 +22,7 @@ Ziemliches Durcheinander, oder? Eigentlich ist es ein Netzwerk aus verbundenen M
 
 ![Abbildung 1.2](images/internet_3.png)
 
-Faszinierend, oder? Offensichtlich ist es nicht möglich, Kabel zwischen allen Servern des Internet zu schalten. Damit wir eine Maschine (z.B. diejenige, auf welcher https://djangogirls.org abgespeichert ist) erreichen können, muss unsere Anfrage über viele verschiedene andere Maschinen weitergeleitet werden.
+Faszinierend, oder? Es ist jedoch nicht möglich, Kabel zwischen allen Servern des Internets zu schalten. Damit wir eine Maschine (z.B. diejenige, auf welcher https://djangogirls.org abgespeichert ist) erreichen können, muss unsere Anfrage über viele verschiedene andere Maschinen weitergeleitet werden.
 
 Das sieht ungefähr so aus:
 
@@ -34,7 +34,7 @@ Der Brief kommt ins Postamt in deiner Nähe. Von da aus gelangt er zu einem ande
 
 ![Abbildung 1.4](images/internet_4.png)
 
-So einfach ist das im Prinzip. Du sendest Nachrichten und erwartest eine Antwort. Anstelle von Papier und Stift verwendest du Daten (Byte für Byte), aber die Idee ist dieselbe!
+So einfach ist das im Prinzip. Du sendest Nachrichten und erwartest eine Antwort. Anstelle von Papier und Stift verwendest du Daten, aber die Idee ist dieselbe!
 
 Anstelle von Adressen mit Straße, Ort und Postleitzahl verwenden wir IP-Adressen. IP steht für Internet Protocol. Dein Computer fragt erst das DNS (Domain Name System), um die (von Menschen besser lesbare) Adresse djangogirls.org in die (besser von Maschinen lesbare) IP-Adresse umzuwandeln. Das DNS ist ein bisschen wie ein altmodisches Telefonbuch aus Papier, in dem du den Namen einer Person, die Du kontaktieren willst, suchen und die Telefonnummer und Adresse nachgucken kannst.
 

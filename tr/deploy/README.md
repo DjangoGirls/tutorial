@@ -56,18 +56,19 @@ Ve onu `.gitignore` ismi ile "djangogirls" dizinine kaydedin.
 
 {% filename %}komut-satırı{% endfilename %}
 
-    $ git status 
-    On branch master 
+    $ git status
+    On branch master
     
     Initial commit
     
     Untracked files:
-      (use "git add <dosya>..." to include in what will be committed)
+      (use "git add <file>..." to include in what will be committed)
     
-             .gitignore
-             blog/
-             manage.py
-             mysite/ 
+            .gitignore
+            blog/
+            manage.py
+            mysite/
+            requirements.txt
     
     nothing added to commit but untracked files present (use "git add" to track)
     
@@ -95,13 +96,13 @@ Sıra depomuzu oluşturmaya geldi. 'New Repository' tuşuna tıklayıp "my-first
 
 > **Not** `my-first-blog` ismi önemli -- başka birşey de seçebilirsiniz, ama aşağıdaki yönergelerde çok geçiyor, her seferinde değiştirmeniz gerekir. En kolayı `my-first-blog` ismi ile devam etmek.
 
-Bir sonraki ekranda, repo'yu klonlamak için gereken URL'yi göreceksiniz. "HTTPS"li versiyonunu seçin, kopyalayın. Birazdan onu komut penceresine yapıştıracağız:
+Bir sonraki ekranda, reponuzun klonlama URL'ini goreceksiniz, bu URL takip eden bir kac komutta kullanacagiz:
 
 ![](images/github_get_repo_url_screenshot.png)
 
 Şimdi bilgisayarınızdaki Git reposunu Github'daki repo ile ilişkilendirmemiz gerekiyor.
 
-Aşağıdakini komut satırına yazın (`<github-kullanıcı-adınız>` kısmını Github hesabını yarattığınız sırada kullandığınız kullanıcı adı ile değiştirin, büyüktür küçüktür işaretlerini eklemeyin):
+Aşağıdakini komut satırına yazın (`< your-github-username>`) kısmını Github hesabını yarattığınız sırada kullandığınız kullanıcı adı ile değiştirin, büyüktür küçüktür işaretlerini eklemeyin):
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -153,7 +154,7 @@ PythonAnywhere'de bir web yazılımı konuşlandırmak için kodun GitHub'dan ç
 
 Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
 
-Şimdi, programımızı otomatik olarak yapılandırmak için bu komutu calıştıralım. Aşağıdakileri PythonAnywhere konsoluna yazalım (GitHub username yerine kendi GitHub ismini yazmayı unutma `<your-github-username>`):
+Şimdi, programımızı otomatik olarak yapılandırmak için bu komutu calıştıralım. Aşağıdakileri PythonAnywhere konsoluna yazın (`<your-github-username>` yerine kendi Github kullanıcı adınızı yazmayı unutmayın):
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
@@ -185,19 +186,19 @@ Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızd
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
-    blog  db.sqlite3  manage.py  mysite  static
+    blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
     __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
     templates  tests.py  urls.py  views.py
     
 
-"Files" sekmesine giderek de PythonAnywhere in sunduğu arayüz ile dosyaları gezinebilrsiniz.
+"Files" sekmesine giderek de PythonAnywhere in sunduğu arayüz ile dosyaları gezinebilirsiniz. (Sağ üst köşedeki menü butonunu kullanarak, konsol sayfasından diğer PythonAnywhere sayfalarına geçebilirsiniz. Bu sayfaların birindeyken, sayfanın yukarısında diğer sayfalara olan linkleri görebilirsiniz.)
 
 ## Şimdi Canlı Yayındasınız!
 
 Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "Web" tabına tıklayarak linki kopyalayın. Bu linki istediğiniz herkes ile paylaşabilirsiniz :)
 
-> **Not** Bu kılavuz başlangıçlara yönelik olduğu için basit tutmak amacıyla siteyi yayına alırken güvenlik açısından ideal olmayan bir kaç seçim yaptık. Bu projeyi ilerletmeye karar veriseniz veya yeni bir proje oluşturursanız, güvenlik tavsiyeleri için [Django deployment checklist](https://docs.djangoproject.com/en/1.11/howto/deployment/checklist/) i inceleyin.
+> **Not** Bu kılavuz başlangıçlara yönelik olduğu için basit tutmak amacıyla siteyi yayına alırken güvenlik açısından ideal olmayan bir kaç seçim yaptık. Bu projeyi ilerletmeye karar verirseniz veya yeni bir proje oluşturursanız, güvenlik tavsiyeleri için [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) i inceleyin.
 
 ## Hata ayıklama önerileri
 
@@ -207,7 +208,7 @@ Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "W
 - GitHub URL'nizde bir hata yapmak
 - *"Could not find your settings.py"* hatası genellikle tüm gerekli dosyaların Git'e eklenmemiş ve/veya GitHub'a başarılı olarak push edilmemiş olmasından kaynaklanır. Tekrar Git bölümüne bakın
 
-Websitenizi ziyaret ettğiniz zaman bir hata ile karşılaşıtsanız ilk bakacağınız yer **error log** dosyasıdır. PythonAnywhere [Web tab](https://www.pythonanywhere.com/web_app_setup/) sekmesinde link bulabilirsiniz. Hata mesajlarını buradan kontrol edebilrisiniz; en yakın zamandaki hatalar en sonda yer alır.
+Websitenizi ziyaret ettğiniz zaman bir hata ile karşılaşıtsanız ilk bakacağınız yer **error log** dosyasıdır. PythonAnywhere [Web](https://www.pythonanywhere.com/web_app_setup/) sekmesinde bu dosyaya link bulabilirsiniz. Hata mesajlarını buradan kontrol edebilrisiniz; en yakın zamandaki hatalar en sonda yer alır.
 
 [PythonAnywhere wiki üzerinde bazı genel hata giderme tüyoları](http://help.pythonanywhere.com/pages/DebuggingImportError) mevcuttur.
 

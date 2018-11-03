@@ -134,7 +134,7 @@ Fonksiyonları neden bazen stringin sonunda bir `.` ile (`"Zeynep".upper()` gibi
 Tamam, stringlerden yeterince bahsettik. Şu ana kadar şu konuları öğrendin:
 
 - **komut istemi** – komutları (kod) Python'un komut istemine yazdığınızda Python'da sonuçlandırarak yanıtlar üretir
-- **sayılar ve dizinler** – Python'da sayılar matematik için dizinler ise metin nesneleri için kullanılmaktadır
+- **sayılar ve dizeler** – Python'da sayılar matematik için dizeler ise metin nesneleri için kullanılmaktadır
 - **operatörler** `+` ve `*` gibi, değerleri birleştirerek yeni bir değer üretmek için kullanılmaktadır
 - **fonksiyonlar** `upper()` ve `len()` gibi, nesneler üzerinde eylemler gerçekleştirmektedirler.
 
@@ -194,7 +194,7 @@ Farkettiğiniz gibi, program daha öncekilerinin aksine bu kez hiçbir cevap ver
 'Ayşe'
 ```
 
-Yaşasın! İşte bu sizin ilk değişkenin! :) Bu değişkenin işaret ettiği şeyi her zaman değiştirebilirsin:
+Yaşasın! İşte bu senin ilk değişkenin! :) Bu değişkenin işaret ettiği şeyi her zaman değiştirebilirsin:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -213,7 +213,7 @@ Bu değişkeni fonksiyonlar içinde de kullanabilirsin:
 5
 ```
 
-Muhteşem değil mi? Tabi ki değişkenler sayılar da dahil herhangi bir şey olabilir. Şunu deneyin:
+Harika değil mi? Tabii ki değişkenler, sayılar da dahil herhangi bir şey olabilir. Şunu deneyin:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -414,7 +414,7 @@ KeyError: 'age'
 
 Bir başka hata! **KeyError** hatası. Python yardımseverdir ve sana `'age'` anahtarının sözlükte bulunmadığını söyler.
 
-Ne zaman sözlük veya liste kullanmalısın? Düşünmek için güzel bir nokta. Sonraki satırdaki cevaba bakmadan önce kafanızda bir çözüm oluşturun.
+Ne zaman sözlük veya liste kullanmalısın? Düşünmek için güzel bir nokta. Sonraki satıra bakmadan önce cevap üzerinde bir düşünün.
 
 - Sıralı elemanlara mı ihtiyacın var? Liste ile devam et.
 - İleride hızlıca (anahtarlar ile) değerlere ulaşmak istediğin için anahtarlar ile ilişkilendirilmiş değerlere mi ihtiyacın var? Sözlük kullan.
@@ -438,7 +438,7 @@ Listeler gibi, `len()` metodu sözlükteki anahtar-değer çiftlerinin sayısın
 
 Umarım şu ana kadar mantıklı gelmiştir :) Sözlüklerle biraz daha eğlenceye hazır mısın? İlginç şeyler için sonraki satıra atla.
 
-Sözlükten bir maddeyi silmek için `pop()` metodunu kullanabilirsin. Mesela, `'favorite_numbers'` anahtarına karşılık gelen elemanı silmek istersen, sadece şu komutu yaz:
+Sözlükten bir maddeyi silmek için `pop()` metodunu kullanabilirsin. Mesela, `'favorite_numbers'` anahtarına karşılık gelen elemanı silmek istersen, şu komutu yaz:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -471,13 +471,13 @@ Harika! Şu an programlama hakkında birçok şey biliyorsun. Bu kısımda, şun
 - **listeler** - belirli bir sırada tutulan nesnelerin listesi
 - **sözlükler** - anahtar-değer çifti olarak tutulan nesneler
 
-Bir sonraki part için heyecanlı mısınız? :)
+Bir sonraki bölüm için heyecanlı mısınız? :)
 
 ## Karşılaştırma
 
-> Evden okuyanlar için: Bu kısım [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) vidyosunda anlatılıyor.
+> Evden okuyanlar için: Bu kısım [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) videosunda anlatılıyor.
 
-Programlamanın önemli bir bölümü bir şeyleri karşılaştırmayı içerir. Karşılaştırılabilecek en kolay şey nedir? Tabii ki sayılar. Nasıl çalıştığını görelim (True = "Doğru", False= "Yanlış" demek).
+Programlamanın büyük kısmı karşılaştırma içerir. Karşılaştırması en kolay olan şey nedir? Tabi ki sayılar. Bakalım nasıl çalışıyor:
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -598,8 +598,8 @@ Tebrikler! Boolean'lar programlamadaki en havalı özelliklerden, ve az önce on
 - Yeni Python dosyasına kod kaydedin
 - Çalıştırın!
 
-Kullandığımız Python yorumlayıcısından çıkmak için sadece `
-exit() ` fonksiyonunu yazmanız yeterlidir
+Kullandığımız Python yorumlayıcısından çıkmak için `
+exit() ` fonksiyonunu yazın
 
 {% filename %}komut satırı{% endfilename %}
 
@@ -622,7 +622,7 @@ Açıkça, artık oldukça deneyimli Python programcısısın, bu yüzden bugün
 
 Şimdi dosyayı tanımlayıcı bir isimle kaydetmemiz gerekir. Dosyanın ismine **python_intro.py** diyelim ve masaüstüne kaydedelim. Dosyaya istediğimiz ismi verebiliriz, burada önemli olan kısım dosyanın **.py** uzantısı ile bitmesidir. **.py** uzantısı işletim sistemimize bu dosyanın bir **python çalıştırılabilir dosyası** olduğunu ve Python'un bu dosyayı çalıştırabileceğini belirtiyor.
 
-> **Not** Kod editörleriyle ilgili en harika şeylerden birine dikkat etmelisiniz: renkler! Python konsolunda herşey aynı renkteydi; şimdi bakın `print` fonksiyonu dizeden farklı renkte. Bunun ismi "söz dizimi vurgulama" ve kod yazarken gerçekten yararlı bir özellik. Koddaki renkler ipucu verir, kapanmamış dizeler gibi yada aşağıda göreceğimiz (`def` fonksiyonu gibi imla hatası içeren anahtar kelimeler oalbilir). Bu kod düzenleyicisi kullanma nedenlerimizden biri. :)
+> **Not** Kod editörleriyle ilgili en harika şeylerden birine dikkat etmelisiniz: renkler! Python konsolunda herşey aynı renkteydi; şimdi bakın `print` fonksiyonu dizeden farklı renkte. Bunun ismi "söz dizimi vurgulama" ve kod yazarken gerçekten yararlı bir özellik. Koddaki renkler ipucu verir, kapanmamış dizeler gibi ya da aşağıda göreceğimiz (`def` fonksiyonu gibi imla hatası içeren anahtar kelimeler olabilir). Bu kod düzenleyicisi kullanma nedenlerimizden biri. :)
 
 Dosyayı kaydettiğimize göre artık çalıştırabiliriz! Konsoldan **klasör değiştirme ** yaparak masaüstüne ulaşın, komut satırı bölümünde öğrendiklerinizi hatırlayın.
 
@@ -672,7 +672,7 @@ Ve Windows Powershell’de, bunun gibi olacak:
 
 <!--endsec-->
 
-Bir problem olursa yardım istemekten çekinmeyin.
+Takılırsanız, yardım isteyin. Eğitmenler bunun için var!
 
 Şimdi dosyadaki komutları çalıştırmak için Python'u kulllanın:
 
@@ -897,7 +897,7 @@ def hi(name):
     elif name == 'Zeynep':
         print('Merhaba Zeynep!')
     else:
-        print('Merhaba anonim!')
+        print('Merhaba yabancı!')
 
 hi()
 ```
@@ -970,7 +970,7 @@ hi("Seda")
 {% filename %}komut satırı{% endfilename %}
 
     $ python3 python_intro.py
-    Selam Seda!
+    Merhaba Seda!
     
 
 Tebrikler! Az önce fonksiyonları nasıl yazacağınızı öğrendiniz! :)
@@ -988,7 +988,7 @@ Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-kızlar = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'Sen']
+kızlar = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
 ```
 
 Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiyonunu döngü içinde kullanabiliriz:
@@ -1009,7 +1009,7 @@ Dosyada yer alacak tam kod aşağıdadır:
 def hi(name):
     print('Merhaba ' + name + '!')
 
-girls = ['Seda','Gül', 'Pınar', 'Ayşe', ' 'Sen']
+girls = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
 for name in girls:
     hi(name)
     print('Sıradaki kız')

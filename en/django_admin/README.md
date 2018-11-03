@@ -2,7 +2,7 @@
 
 To add, edit and delete the posts we've just modeled, we will use Django admin.
 
-Let's open the `blog/admin.py` file and replace its contents with this:
+Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
 {% filename %}blog/admin.py{% endfilename %}
 ```python
@@ -32,7 +32,7 @@ To log in, you need to create a *superuser* - a user account that has control ov
 (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
 ```
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Just type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
 
 ```
 Username: admin
@@ -46,7 +46,7 @@ Return to your browser. Log in with the superuser's credentials you chose; you s
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content – you can simply copy-paste some text from this tutorial to save time. :)
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
