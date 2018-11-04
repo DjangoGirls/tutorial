@@ -8,11 +8,11 @@
 
 Bienvenue dans le tutoriel Django Girls ! Nous sommes heureux de vous voir ici :) Dans ce tutoriel, nous allons vous emmener dans un voyage sous le capot des technologies web, en vous offrant un aperçu de tous les pièces et les morceaux qui ont besoin de se réunir pour que le web fonctionne tel que nous le connaissons.
 
-Comme avec toutes les choses inconnues, cela va être une aventure, mais pas de soucis, puisque vous avez déjà travaillé le courage d'être ici, vous serez tout simplement beau :)
+Comme avec toutes les choses inconnues, cela va être une aventure, mais pas de soucis, puisque vous avez déjà eu le courage d'arriver ici, vous allez y arriver :)
 
 ## Introduction
 
-Avez-vous jamais eu l'impression que le monde est de plus en plus sur la technologie pour laquelle vous ne pouvez pas (encore)? Avez-vous déjà été curieuse de comment créer un site web, sans jamais avoir le courage de vous plonger dedans ? Vous êtes-vous déjà dit que le monde du logiciel est trop compliqué pour savoir ne serait-ce que par où l'attaquer ?
+Avez-vous déjà eu l'impression que le monde est de plus en plus remplit de technologies avec lesquelles vous n'êtes pas (encore) familière ? Avez-vous déjà été curieuse de comment créer un site web, sans jamais avoir le courage de vous plonger dedans ? Vous êtes-vous déjà dit que le monde de l'informatique est trop compliqué, ne serait-ce que pour savoir par où commencer ?
 
 Hé bien, bonne nouvelle ! Programmer n'est pas aussi dur que ça en a l'air, et nous sommes là pour vous montrer à quel point ça peut être amusant.
 
