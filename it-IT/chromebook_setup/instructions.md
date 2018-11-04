@@ -24,20 +24,20 @@ Il terminale PaizaCloud Cloud IDE è pronto per ricevere istruzioni. E' possibil
 
 1. Andare su [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. Creare un account
-3. Click *Create Environment*
+3. Fare click su *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Verrà visualizzata un'interfaccia con una barra laterale, una grossa finestra con del testo e una finestra più piccola in basso che assomiglia a questa:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+L'area in basso è il *terminale* dove dare istruzioni al computer che Cloud 9 ha configurato. E' possibile ridimensionare la finistra per ingrandirla.
 
 ### Ambiente virtuale
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un ambiente virtuale (in inglese virtual environment, abbreviato spesso in virtualenv) è come una scatola privata in cui possiamo mettere del codice per un progetto su cui stiamo lavorando. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
