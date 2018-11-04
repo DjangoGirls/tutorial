@@ -6,7 +6,7 @@
 
 ## Bienvenue
 
-Bienvenue dans le tutoriel Django Girls ! Nous sommes heureux de te voir ici :) Dans ce tutoriel, nous allons vous emmener dans un voyage sous le capot des technologies web, vous offrant un aperçu de tous les pièces et de morceaux qui ont besoin de se réunir pour faire le travail web tel que nous le connaissons.
+Bienvenue dans le tutoriel Django Girls ! Nous sommes heureux de vous voir ici :) Dans ce tutoriel, nous allons vous emmener dans un voyage sous le capot des technologies web, en vous offrant un aperçu de tous les pièces et les morceaux qui ont besoin de se réunir pour que le web fonctionne tel que nous le connaissons.
 
 Comme avec toutes les choses inconnues, cela va être une aventure, mais pas de soucis, puisque vous avez déjà travaillé le courage d'être ici, vous serez tout simplement beau :)
 
