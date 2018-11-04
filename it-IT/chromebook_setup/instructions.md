@@ -1,15 +1,15 @@
-Puoi [saltare questa sezione](http://tutorial.djangogirls.org/en/installation/#install-python) se non stai usando un Chromebook. Altrimenti, la tua installazione seguirà una procedura diversa. Puoi ignorare il resto delle istruzioni di installazione.
+E' possibile [saltare questa sezione](http://tutorial.djangogirls.org/en/installation/#install-python) se non si utilizza un Chromebook. Altrimenti, la tua installazione seguirà una procedura diversa. È possibile ignorare il resto di delle istruzioni di installazione.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud9 è uno strumento che mette a disposizione un editor e l'accesso ad un computer su Internet su cui puoi installare, scrivere ed eseguire il software. Per questo tutorial, Cloud9 sarà come il tuo *computer locale*. Eseguirai comandi sul terminale come i tuoi compagni di classe su OS X, Ubuntu o Windows ma il tuo terminale sarà connesso ad un computer attivo da qualche altra parte che il Cloud IDE ha configurato per te. Ecco le istruzioni per gli IDE nel cloud (PaizaCloud Cloud IDE, AWS Cloud9). E' possibile selezionare uno degli IDE Cloud e seguire le relative istruzioni.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+1. Vai su [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Accedi al tuo account
+3. Clicca su *Nuovo Server*
+4. Fare click sul pulsante Terminal (sul lato sinistro della finestra)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
