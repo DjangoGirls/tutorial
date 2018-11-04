@@ -1,6 +1,10 @@
-Czas utworzyć darmowe konto (opcja "Beginner" - dla początkujących) na PythonAnywhere:
+PythonAnywhere jest platformą do uruchamiania kodu Pythona w chmurze. Będziemy go używać do hostowania naszej strony na żywo w internecie.
+
+Utwórz konto dla "Beginner" na PythonAnywhere (darmowy poziom jest dobry, nie potrzebujesz do niego karty kredytowej).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
+
+![Strona rejestracji PythonAnywhere z przyciskiem, aby utworzyć bezpłatne konto "Beginner"](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > ** Uwaga ** Wybierając tutaj swoją nazwę użytkownika, należy pamiętać, że adres URL bloga będzie miał postać `yourusername.pythonanywhere.com`, więc wybierz swój własny nick lub nazwę tego, o czym będzie blog.
 

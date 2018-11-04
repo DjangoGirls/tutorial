@@ -20,7 +20,7 @@ Django şablonunda (template) bir değişken (variable) yazdırmak için, deği�
 {{ posts }}
 ```
 
-Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. İkinci `<div>`'den üçüncü `</div>`'e kadar olan her şeyi `{{ posts }}` ile değiştirelim. Ne olduğunu görmek için dosyayı kaydedip sayfayı yenileyelim:
+Bunu `blog/templates/blog/post_list.html` şablonunda deneyelim. Dosyayı kod editöründe açalım ve ikinci `<div>`'den üçüncü `</div>`'e kadar olan her şeyi `{{ posts }}` ile değiştirelim. Ne olduğunu görmek için dosyayı kaydedip sayfayı yenileyelim:
 
 ![Şekil 13.1](images/step1.png)
 
@@ -97,9 +97,9 @@ Web sitemizin İnternet'te hâlâ çalıştığını görmek iyi olacak, değil 
     [...]
     
 
-* Ve son olarak da [Web tab](https://www.pythonanywhere.com/web_app_setup/) sekmesine gidip web uygulamamızdaki **Reload**'a basalım. Şimdi güncellememiz yayında olmalı! Eğer PythonAnywhere sitesindeki gönderilerin içeriği ile lokal sunucunuzda bulunan gönderilerin içeriği aynı değilse sorun değil. Lokal bilgisayarınızdaki veritabanı ile Python Anywhere'deki veritabanı, diğer dosyalarınız gibi eşitlenmiyor.
+* Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın. (Konsoldan diğer PythonAnywhere sayfalarına ulaşmak için, sağ üst köşedeki menü düğmesini kullanın.) Güncellemeniz https://isminiz.pythonanywhere.com adresinde yayınlanmalıdır - tarayıcıda kontrol edin! Eğer PythonAnywhere sitesindeki gönderilerin içeriği ile lokal sunucunuzda bulunan gönderilerin içeriği aynı değilse sorun değil. Lokal bilgisayarınızdaki veritabanı ile Python Anywhere'deki veritabanı, diğer dosyalarınız gibi eşitlenmiyor.
 
-Tebrikler! Django admin üzerinden yeni bir gönderi ekleyin (yayinlama_tarihi eklemeyi unutmayın!) PythonAnywhere sitenizinin Django admin'inde olduğunuzdan emin olun, https://yourname.pythonanywhere.com/admin. Arkasından gönderileri görebilmek için ordaki sayfanızı yenileyin.
+Tebrikler! Şimdi Django admin üzerinden yeni bir gönderi eklemeyi deneyin (published_date eklemeyi unutmayın!) PythonAnywhere sitenizin Django admininde olduğunuzdan emin olun, https://yourname.pythonanywhere.com/admin. Arkasından gönderileri görebilmek için oradaki sayfanızı yenileyin.
 
 Şiir gibi çalışıyor, değil mi? Gurur duyabiliriz! Şimdi bilgisayar başından bir süre kalkalım, çünkü bir molayı hak ettik. :)
 

@@ -6,13 +6,13 @@
 
 İddia ediyoruz ki her gün İnternet'i kullanıyorsunuz. Fakat tarayıcınıza https://djangogirls.org gibi bir adres girip `enter` tuşuna bastığınızda neler olduğunu biliyor musunuz?
 
-Öncelikle bir web sitesinin bir sabit diske kaydedilmiş bir grup dosya olduğunu anlamanız gerekir. Tıpkı filmleriniz, müzikleriniz ya da resimleriniz gibi. Ancak, web sitelerine özel şöyle bir durum var: HTML adı verilen bir bilgisayar kodu içerirler. 
+Anlamanız gereken ilk şey; bir web sitesinin, sadece bir sabit diskte saklanan birtakım dosyalardan ibaret olduğudur. Tıpkı filmleriniz, müzikleriniz ya da resimleriniz gibi. Ancak, web sitelerine özel şöyle bir durum var: HTML adı verilen bir bilgisayar kodu içerirler. 
 
 Eğer programlamaya aşina değilseniz HTML'yi kavramak başlangıçta zor olabilir, ama web tarayıcılarınız (Chrome, Safari, Firefox, vs.) ona bayılıyor. Web tarayıcılarınız bu kodu anlamak, komutlarını yerine getirmek ve size bu websitesini oluşturan dosyaları sunmak için tasarlanmıştır, tam da olmasını istediğiniz gibi.
 
-Her dosya gibi, bu HTML dosyalarını da sabit diskte bir yerde saklamamız gerekir. Internet için, *sunucu* denilen özel ve güçlü bilgisayarlar kullanıyoruz. Bir ekranları, fareleri ya da klavyeleri yok çünkü esas amaçları veriyi saklamak ve sunmak. Bu yüzden onlara *sunucular* diyoruz – çünkü size veri *sunuyorlar*.
+Her dosya gibi, bu HTML dosyalarını da sabit diskte bir yerde saklamamız gerekir. Internet için, *sunucu (server)* denilen özel ve güçlü bilgisayarlar kullanıyoruz. Bir ekranları, fareleri ya da klavyeleri yok çünkü esas amaçları veriyi saklamak ve sunmak. Bu yüzden onlara *sunucular* diyoruz – çünkü size veri *sunuyorlar*.
 
-Tamam ama yinede Internetin nasıl gözüktğünü görmek istersiniz değil mi?
+Tamam ama yinede Internetin nasıl gözüktüğünü görmek istersiniz değil mi?
 
 Size bir resmini çizdik, İnternet işte buna benzer:
 
@@ -22,7 +22,7 @@ Size bir resmini çizdik, İnternet işte buna benzer:
 
 ![Şekil 1.2](images/internet_3.png)
 
-Büyüleyici, değil mi? Ama açıkça belli ki, İnternet'e bağlanan tüm makineler arasında kablolar olması mümkün değil. Yani, bir makineye erişmek için (örneğin, https://djangogirls.org sitesinin kayıtlı olduğu) birçok farklı makine üzerinden istek geçmesi gereklidir.
+Büyüleyici, değil mi? Ama, İnternet'e bağlanan her makine arasında bir kablo olması mümkün değil. Yani, bir makineye erişmek için (örneğin, https://djangogirls.org sitesinin kayıtlı olduğu) birçok farklı makine üzerinden istek geçmesi gereklidir.
 
 Şöyle gözükmekte:
 
@@ -34,13 +34,13 @@ Mektubunuz size en yakın postaneye gider. Daha sonra sizden biraz daha uzak bir
 
 ![Şekil 1.4](images/internet_4.png)
 
-Bu işler böyle yürür. Mesajlar gönderirsiniz ve cevap beklersiniz. Tabiiki, kağıt ve kalem yerine veri baytları kullanırsınız, fakat fikir aynıdır!
+Evet, bu kadar basit. Bir mektup yollarsınız ve cevap beklersin. Tabii ki, kağıt kalem yerine bayt biriminde veri kullanırsınız, fakat fikir aynı!
 
 Sokak adı, şehir, alan kodu ve ülke adı yerine, biz IP adreslerini kullanırız. Bilgisayarınız ilk olarak DNS'den (Domain Name System - Alan Adı Sistemi) djangogirls.org adresini bir IP adresine çevirmesini ister. Bu bir nebze burada iletişim kurmak istediğiniz kişinin adına bakarak telefon numarası ve adresini bulabildiğiniz eski telefon rehberleri gibi çalışır.
 
 Bir mektup gönderdiğinizde, bazı özelliklerin doğru olarak teslim edilecek olması gerekir: bir adres, bir pul vs. Ayrıca alıcının anlayacağı bir dil kullanıyorsunuz, değil mi? Aynısı bir web sitesini görmek için gönderdiğiniz *veri paketleri* için de geçerli. HTTP(Hypertext Transfer Protocol - HiperMetin transfer protokolü) adı verilen bir protokol kullanırız.
 
-Basit olarak, bir web siteniz olduğunuzda, içinde yaşayacağı bir *sunucu* makineniz olması gerekli. *Sunucu* (bir mektupla gelen) bir *istek* aldığında, (başka bir mektupla) size web sitenizi gönderir.
+Basit olarak, bir web siteniz olduğunda, içinde yaşayacağı bir *sunucu* makineniz olması gerekli. *Sunucu* (bir mektupla gelen) bir *istek* aldığında, (başka bir mektupla) size web sitenizi gönderir.
 
 Bu bir Django eğitimi olduğundan, Django'nun ne yaptığını sorabilirsiniz. Bir yanıt gönderirken, herkese her zaman aynı şeyi göndermek istemezsiniz. Mektupları özellikle size yazan kişi için kişiselleştirmek çok daha iyi, değil mi? Django bu kişiselleştirilmiş, ilginç mektupları yazmanıza yardımcı olur. :)
 

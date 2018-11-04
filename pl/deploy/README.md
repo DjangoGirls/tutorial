@@ -47,9 +47,9 @@ Git będzie śledzić zmiany we wszyskich plikach i folderach w tym katalogu, al
 
 I zapisz go jako `.gitignore` w katalogu "djangogirls".
 
-> **Uwaga** Ta kropka na początku nazwy pliku jest ważna! Jeżeli masz problem podczas tworzenia tego pliku (MacOS ma na przykład problem z tworzeniem plików zaczynających się od kropki za pomocą Findera), to spróbuj użyć polecenia "Zapisz jako" w swoim edytorze, to akurat jest niezawodne.
+> **Uwaga** Ta kropka na początku nazwy pliku jest ważna! Jeżeli masz problem podczas tworzenia tego pliku (MacOS ma na przykład problem z tworzeniem plików zaczynających się od kropki za pomocą Findera), to spróbuj użyć polecenia "Zapisz jako" w swoim edytorze, to akurat jest niezawodne. I upewnij się, że nie dodałaś .txt, .py lub jakiegokolwiek innego rozszerzenia do nazwy pliku. Zostanie on rozpoznany przez Gita tylko wtedy, gdy jego nazwą jest po prostu .gitignore.
 > 
-> **Uwaga** Jednym z plików, który wyszczególniliśmy w `.gitignore` to `db.sqlite3`. Ten plik to twoja lokalna baza danych, gdzie będą się znajdować wszystkie artykuły z twojego bloga. Nie chcemy dodawać tego pliku do repozytorium, ponieważ twoja strona na PythonAnywhere będzie korzystać z innnej bazy danych. Tą bazą może być SQLite, tak jak na twojej maszynie deweloperskiej, ale najczęściej będziesz korzystać z bazy MySQL, która radzi sobie z dużą większą ilością odwiedzających. W każdym razie, zignotowanie twojej bazy SQLite w kopii na GitHubie, oznacza że wszystkie artykuły, które stworzyłaś do tej pory zostaną i będą widoczne tylko lokalnie, i będziemy musiały dodać je ponownie na środowisku produkcyjnym. Powinnaś myśleć o swojej lokalnej bazie danych jako o dobrym placu zabaw, na którym możesz testować różne rzeczy nie bojąc się, że skasujesz prawdziwe artykuły ze swojego bloga.
+> **Uwaga** Jednym z plików, który wyszczególniliśmy w `.gitignore` to `db.sqlite3`. Ten plik to Twoja lokalna baza danych, w której przechowywani są wszyscy Twoi użytkownicy i posty. Będziemy podążać za standardem praktyki programowania webowego, co oznacza, że będziemy używać oddzielnych baz danych dla naszej lokalnej strony testowej oraz produkcyjnej witryny na PythonAnywhere. Bazą danych dla PythonAnywhere może być SQLite, tak jak na Twojej lokalnej maszynie. Najczęściej natomiast będziesz korzystać z bazy MySQL, która potrafi poradzić sobie z dużo większą ilością odwiedzających niż SQLite. W każdym razie, zignorowanie Twojej bazy SQLite w kopii dla GitHuba oznacza, że wszystkie posty i użytkownicy, których do tej pory stworzyłaś, będą dostępne jedynie lokalnie i będziemy musiały dodać ich ponownie na środowisku produkcyjnym. Powinnaś myśleć o swojej lokalnej bazie danych jako o dobrym placu zabaw, na którym możesz testować różne rzeczy nie bojąc się, że skasujesz prawdziwe artykuły ze swojego bloga.
 
 Dobrym nawykiem jest wpisywanie polecenia `git status` zanim wpiszesz `git add` albo gdy nie jesteś pewna co się zmieniło. Pozwala ono zabezpieczyć się przed niespodziankami takimi, jak chociażby dodanie lub skomitowanie błędnego pliku. Polecenie `git status` zwraca informację o wszystkich nieśledzonych/zmienionych/zaplanowanych do najbliższego commita plików, statusie brancha i wiele innych. Wynik powinien wyglądać podobnie do następującego:
 
@@ -95,13 +95,13 @@ Następnie utwórz nowe repozytorium i nadaj mu nazwę "my-first-blog" (ang. "m�
 
 > **Uwaga** Nazwa `my-first-blog` jest ważna - mogłabyś wybrać jakąś inną, ale będziemy tej nazwy używać wiele razy i za każdym razem musiałabyś pamiętać, żeby zastępować "my-first-blog" swoją wybraną nazwą. Z tego powodu najłatwiej będzie jak użyjesz nazwy `my-first-blog`.
 
-Na następnej stronie wyświetli Ci się adres URL do klonowania Twojego repozytorium. Wybierz wersję "HTTPS", skopiuj go i niedługo będziemy go wklejać do terminala:
+Na następnym obrazku zostanie wyświetlony Twój URL do klonowania repozytorium, którego będziesz używać w niektórych poleceniach.
 
 ![](images/github_get_repo_url_screenshot.png)
 
 Teraz musimy podpiąć repozytorium Git na komputerze do tego na GitHubie.
 
-Wpisz następujące polecenie do konsoli (Zamień `<your-github-username>` na swoją nazwę użytkownika, którą podałaś przy tworzeniu konta na GitHubie, ale bez nawiasów ostrokątnych, czyli "<" i ">"):
+Wpisz następujące polecenie do konsoli (zamień <your-github-username> na swoją nazwę użytkownika, którą podałaś przy tworzeniu konta na GitHubie. Nie zapomnij o usunięciu nawiasów ("<" i ">"), ten URL powinien pasować do URL-a klonującego Twoje repozytorium.
 
 {% filename %}command-line{% endfilename %}
 
@@ -109,12 +109,10 @@ Wpisz następujące polecenie do konsoli (Zamień `<your-github-username>` na sw
     $ git push -u origin master
     
 
-Wpisz swoją nazwę użytkownika GitHub oraz hasło, a wtedy powinnaś zobaczyć coś takiego:
+Po wykonaniu komendy push na GitHuba zostaniesz zapytana o swoją nazwę użytkownika i hasło (albo bezpośrednio w wierszu poleceń w oknie terminala albo w wyskakującym okienku). Po poprawnym wpisaniu użytkownika i hasła powinnaś zobaczyć coś takiego:
 
 {% filename %}command-line{% endfilename %}
 
-    Username for 'https://github.com': ola
-    Password for 'https://ola@github.com':
     Counting objects: 6, done.
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
@@ -153,7 +151,7 @@ Wdrożenie aplikacji internetowej w PythonAnywhere polega na ściągnięciu kodu
 
 To powinno wydrukować rzeczy takie jak `Collecting pythonanywhere`, a skończyć się na linii z napisem `Successfully installed (...) pythonanywhere- (...)`.
 
-Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHubem. Wpisz następujące polecenie do konsoli w PythonAnywhere (nie zapomnij zamienić `<your-github-username>` na swoją nazwę użytkownika):
+Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację z GitHubem. Wpisz następujące polecenie do konsoli w PythonAnywhere (nie zapomnij zamienić <your-github-username> na Twoją nazwę użytkownika GitHub, tak by Twój URL pasował do klonowanego URL-a z GitHuba).
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -169,9 +167,9 @@ Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
 - Konfigurowanie plików statycznych (dowiemy się o nich później)
 - I konfigurowanie PythonAnywhere do obsługi aplikacji internetowej za pomocą interfejsu API
 
-W PythonAnywhere wszystkie te kroki są zautomatyzowane, ale są to te same kroki, które trzeba wykonać z dowolnym innym dostawcą serwera. Najważniejsze, aby zauważyć, że baza danych w PythonAnywhere jest całkowicie oddzielona od bazy danych na własnym komputerze, co oznacza, że może mieć inne posty i konta administracyjne.
+W PythonAnywhere wszystkie te kroki są zautomatyzowane, ale są to te same kroki, które trzeba wykonać z dowolnym innym dostawcą serwera.
 
-W rezultacie, tak jak zrobiłyśmy to na własnym komputerze, musimy zainicjować konto administratora za pomocą `createsuperuser`. PythonAnywhere automatycznie aktywował Twój virtualenv dla Ciebie, więc wszystko, co musisz zrobić, to uruchomić:
+Najważniejszym w tej chwili jest to, aby zapamiętać, że baza danych w PythonAnywhere jest całkowicie oddzielona od bazy danych na Twoim komputerze, co oznacza, że może mieć inne posty i konta administracyjne. W rezultacie, tak jak zrobiłyśmy to wcześniej na własnym komputerze, musimy zainicjować konto administratora za pomocą `createsuperuser`. PythonAnywhere automatycznie aktywował dla Ciebie Twojego virtualenva, więc jedyne, co musisz zrobić, to uruchomić:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -191,11 +189,11 @@ Teraz, jeśli chcesz, możesz również rzucić okiem na swój kod w PythonAnywh
     templates  tests.py  urls.py  views.py
     
 
-Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudowanej przeglądarki plików w PythonAnywhere.
+Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudowanej przeglądarki plików w PythonAnywhere. (Ze strony konsoli możesz przejść do innych stron PythonAnywhere za pomocą przycisku menu w prawym górnym rogu. Po przejściu na jedną ze stron, w pobliżu góry zobaczysz linki do innych.)
 
 ## Jesteś na żywo!
 
-Twoja strona powinna teraz być dostępna w publicznym Internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się nim z kimkolwiek chcesz :)
+Twoja strona powinna teraz być dostępna w publicznym internecie! Przejdź do zakładki "Sieć" PythonAnywhere, aby uzyskać link do niej. Możesz podzielić się tym, z kimkolwiek chcesz! :)
 
 > **Uwaga:** Jest to poradnik dla początkujących, a podczas wdrażania tej witryny użyłyśmy kilka skrótów, które nie są idealnym rozwiązaniem z punktu widzenia bezpieczeństwa. Jeśli zdecydujesz się zbudować ten projekt lub rozpocząć nowy, powinnaś przejrzeć [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/), aby uzyskać jakieś wskazówki dotyczące zabezpieczania witryny.
 
@@ -207,7 +205,7 @@ Jeśli widzisz błąd podczas uruchamiania skryptu `pa_autoconfigure_django.py`,
 - Robisz błąd w GitHub URL
 - Jeśli zobaczysz komunikat o błędzie *"Could not find your settings.py"*, prawdopodobnie nie udało Ci się dodać wszystkich plików do Git, i / lub nie przekazałeś ich do pomyślnie do GitHuba. Jeszcze raz spójrz na sekcję Git powyżej
 
-Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało, jest Twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na karcie [Web](https://www.pythonanywhere.com/web_app_setup/) w PythonAnywhere. Sprawdź, czy znajdują się tam jakieś komunikaty o błędach - te najświeższe znajdują się na samym dole.
+Jeśli odwiedzając swoją stronę zobaczysz błąd, to pierwszym miejscem, w którym powinnaś poszukać informacji o tym, co się stało, jest Twój **dziennik błędów** (ang. "error log"). Znajdziesz do niego link na stronie [Web](https://www.pythonanywhere.com/web_app_setup/) w PythonAnywhere. Sprawdź, czy znajdują się tam jakieś komunikaty o błędach - te najświeższe znajdują się na samym dole.
 
 Są tam też dostępne [generalne porady odnośnie debugowania na stronie pomocy PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
@@ -215,7 +213,7 @@ I pamiętaj, Twój mentor jest tutaj, by Ci pomóc!
 
 # Sprawdź swoją stronę!
 
-Domyślna strona Twojej witryny powinna brzmieć "It worked!", tak jak na Twoim lokalnym komputerze. Spróbuj dodać `/admin/` na koniec swojego adresu URL - powinnaś się przenieść do panelu admina. Zaloguj się przy użyciu nazwy użytkownika i hasła, a zobaczysz, że możesz dodawać nowe posty na serwerze.
+Domyślna strona Twojej witryny powinna brzmieć "It worked!", tak jak na Twoim lokalnym komputerze. Spróbuj dodać `/admin/` na koniec swojego adresu URL - powinnaś się przenieść do panelu admina. Zaloguj się za pomocą nazwy użytkownika i hasła. Zobaczysz, że możesz dodać nowy Post na serwerze - pamiętaj, posty z Twojej lokalnej, testowej bazy danych nie będą wysyłane na Twojego produkcyjnego bloga.
 
 Po utworzeniu kilku postów możesz wrócić do konfiguracji lokalnej (nie PythonAnywhere). Od teraz powinnaś pracować na swoim lokalnym komputerze, jeżeli będziesz chciała dokonać zmian na stronie. To częsty sposób pracy w rozwijaniu stron WWW - wprowadzaj zmiany lokalnie, wypychaj je na GitHuba i zaciągaj na swój internetowy serwer WWW. Pozwala to na pracę i eksperymentowanie bez obawy, że zepsujesz działającą stronę. Całkiem nieźle, co nie?
 

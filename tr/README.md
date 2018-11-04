@@ -2,7 +2,7 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> Bu eser Creative Commons Attribution-ShareAlike 4.0 International License ile lisanslıdır. Bu lisansın bir örneğini görmek için https://creativecommons.org/licenses/by-sa/4.0/ adresine gidebilirsiniz.
+> Bu eser Creative Commons Attribution-ShareAlike 4.0 International License ile lisanslıdır. Bu lisansın bir örneğini görmek için https://creativecommons.org/licenses/by-sa/4.0/ adresine gidebilirsiniz
 
 ## Hoşgeldiniz
 

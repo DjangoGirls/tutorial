@@ -37,17 +37,17 @@ Cevaplamamız gereken soru: Bir blog gönderisi nedir? Özellikleri ne olmalıd�
 Tabii ki blog gönderimizin içeriği için yazı ve bir de başlık lazım, değil mi? Kimin yazdığını da bilsek iyi olur - dolayısı ile bir de yazara ihtiyacımız var. Son olarak, gönderinin ne zaman yaratıldığını ve yayınlandığını da bilmek isteyebiliriz.
 
     Post
-    ------
-    baslik
-    yazi
-    yazar
-    yaratilma_tarihi
-    yayinlanma_tarihi
+    --------
+    title
+    text
+    author
+    created_date
+    published_date
     
 
 Bir blog gönderisi ile ne tür şeyler yapılabilir? Gönderiyi yayınlayan bir `method` olması güzel olurdu, değil mi?
 
-Bu yüzden `yayinla` metoduna ihtiyacımız olacak.
+Bu yüzden `publish` metoduna ihtiyacımız olacak.
 
 Ne elde etmek istediğimizi bildiğimize göre, haydi bunu Django'da modellemeye başlayalım!
 
@@ -55,13 +55,13 @@ Ne elde etmek istediğimizi bildiğimize göre, haydi bunu Django'da modellemeye
 
 Nesnenin ne olduğunu bildiğimize göre, blog gönderimiz için bir Django modeli oluşturabiliriz.
 
-Django'da modeller özel bir çeşit nesnedir - `veritabanı`'na kaydedilir. Veritabanı ise veri topluluğuna verdiğimiz isim. Veritabanında, kullanıcılar, blog gönderileri, vs. ile ilgili bilgileri saklarız. Verilerimizi depolamak için SQLite veritabanını kullanacağız. Bu varsayılan Django veritabanı adaptörü - şimdilik bizim için yeterli olacaktır.
+Django'da modeller özel bir çeşit nesnedir - `veritabanı`'na kaydedilir. Veritabanı (database) belirli bir veri topluluğuna verdiğimiz isim. Veritabanında, kullanıcılar, blog gönderileri, vs. ile ilgili bilgileri saklarız. Verilerimizi depolamak için SQLite veritabanını kullanacağız. Bu varsayılan Django veritabanı adaptörü - şimdilik bizim için yeterli olacaktır.
 
 Veritabanındaki bir modeli, sütunları (alan adı) ve satırları (veri) olan bir hesap çizelgesi olarak düşünebilirsiniz.
 
 ### Uygulama oluşturma
 
-Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşturacağız. Her şeyin en başından düzenli olması çok iyidir. Bir uygulama oluşturmak için aşağıdaki komutu konsolda çalıştırmamız gerekiyor ( `djangogirls` dizininden `manage.py` dosyasının bulunduğu yer):
+Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşturacağız. Her şeyin en başından düzenli olması çok iyidir. Bir uygulama oluşturmak için aşağıdaki komutu konsolda çalıştırmamız gerekiyor (`djangogirls` dizininden `manage.py` dosyasının bulunduğu yer):
 
 {% filename %}Mac OS X ve Linux:{% endfilename %}
 
@@ -73,28 +73,29 @@ Her şeyi derli toplu tutmak için, projemizin içinde ayrı bir uygulama oluşt
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-Şimdi oluşturulmuş yeni bir `blog` dizinini göreceksiniz ve bu, dizinlerin bir numarasını içerir. Bizim projemizdeki dizinler ve dosyalar bunun gibi görünmeli:
+Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark edeceksiniz. Projemizdeki dizinler ve dosyalar şu sekilde görünüyor olmalı:
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
-Bir uygulamayı oluşturduktan sonra, Django’ya da onu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasında yapıyoruz. `INSTALLED_APPS`‘ı bulmalı ve `]`’ın tam üzerine `'blog',`‘ı içeren bir satır eklemeliyiz. Sonunda ürün bunun gibi görünmeli:
+Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasından yapacağız -- kod editörümüzde açalım. `INSTALLED_APPS`'ı bulup `]` karakterinin üzerindeki satıra `'blog',` yazmamız lazım. Sonuç aşağıdaki gibi görünmeli:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -112,7 +113,7 @@ INSTALLED_APPS = [
 
 ### Post (Blog gönderisi) modeli oluşturma
 
-`blog/models.py` dosyasında `Models` denilen bütün nesneleri tanımlıyoruz - bu blog postumuzu tanımlayacağımız bir yerdir.
+`blog/models.py` dosyasında `Models` denilen bütün nesneleri tanımlıyoruz - burası blog postumuzu tanımlayacağımız yer.
 
 Şimdi `blog/models.py` dosyasını açalım ve içindeki her şeyi silip şu kodu yazalım:
 
@@ -140,40 +141,40 @@ class Post(models.Model):
         return self.title
 ```
 
-> `str`'nin her iki tarafında da 2 tane alt çizgi (`_`) kullandığınızdan emin olun. İki alt çizgi Python dilinde sık kullanılır, bazen "dunder" olarak da anılır ("double-underscore"un kısaltması).
+> `str`'nin her iki tarafında da 2 tane alt çizgi (`_`) kullandığımızdan emin olalım. İki alt çizgi Python dilinde sık kullanılır, bazen "dunder" olarak da anılır ("double-underscore"un kısaltması).
 
-Korkutucu, değil mi? Fakat endişelenmeyin - Bu satırların ne anlama geldiğini açıklayacağız!
+Biraz korkunç görünüyor, değil mi? Ama merak etmeyin - hepsinin ne anlama geldiğini tek tek anlatacağız!
 
-`from` veya `import` ile başlayan tüm satırlar başka yerlerden bir şeyleri projemize dahil eder. Yani her dosyada aynı şeyleri kopyalayıp yapıştırmak yerine, `‘la bazı bölümleri de ekleyebiliriz... import ...`
+`from` veya `import` ile başlayan tüm satırlar başka yerlerden bir şeyleri projemize dahil eder. Yani, başka yerlerde tanımlanmış kodları dosyalarımıza kopyalamak yerine, bu kodların bir kısmını `from ... import ...` kullanarak kodumuza dahil edebiliriz.
 
-`class Post(models.Model):` - bu satır modelimizi tanımlar (bu bir `nesne`‘dir).
+`class Post(models.Model):` - bu satır modelimizi tanımlıyor (bir `nesne`).
 
-- `class` bir nesne tanımladığımızı belirten bir anahtar kelimedir.
-- `Post` modelimizin ismi. Başka bir isim de verebilirdik (yeter ki özel karakterler ve boşluk kullanmayalım). Class isimleri her zaman büyük harf ile başlamalıdır.
+- `class` bir nesne tanımladığımızı belirten anahtar kelime.
+- `Post` modelimizin ismi. Başka bir isim de verebilirdik (yeter ki özel karakterler ve boşluk kullanmayalım). class isimleri her zaman büyük harf ile başlamalıdır.
 - `models.Model` Post'un bir Django Modeli olduğunu belirtir, bu şekilde Django onu veritabanında tutması gerektiğini bilir.
 
-Şimdi daha önce bahsettiğimiz özellikleri tanımlayabiliriz: `title`, `text`, `created_date`, `published_date` ve `author`. Bunun için her alanın türünü tanımlamamız gerekir (Bu metin mi? Bir numara mı? Bir tarih mi? Bir kullanıcı gibi, başka bir nesne ile bağlantılı mı?)
+Şimdi daha önce bahsettiğimiz özellikleri tanımlayabiliriz: `title`, `text`, `created_date`, `published_date` ve `author`. Bunun için her alanın türünü tanımlamamız gerekir (Bir metin mi? Bir numara mı? Bir tarih mi? Başka bir nesneye referans mı, örneğin User?)
 
 - `models.CharField` - belirli bir uzunluktaki metinleri tanımlamak için kullanılır.
 - `models.TextField` - bu da uzun metinleri tanımlar. Blog gönderileri için biçilmiş kaftan, değil mi?
 - `models.DateTimeField` - bu da gün ve saati tanımlamada kullanılır.
 - `models.ForeignKey` - başka bir modele referans tanımlar.
 
-Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Eğer detayları merak ederseniz veya farklı tür alanlar tanımlamak isterseniz Django'nun dokümantasyonlarına bakabilirsiniz (https://docs.djangoproject.com/en/1.11/ref/models/fields/#field-types).
+Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Model alanları (model fields) hakkında daha fazla bilgi edinmek ve yukarıda açıklananların dışındaki alanları nasıl tanımlayacağınızı öğrenmek istiyorsanız Django dokümantasyonuna bir göz atabilirsiniz (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field -types).
 
-Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz tam olarak `publish` yöntemidir. `def` bunun bir fonksiyon/metod olduğunu söyler. `publish` ise metodun adıdır. Eğer isterseniz metodun adını değiştirebilirsiniz. Adlandırma kuralı boşluk yerine küçük harf ve alt çizgi kullanmamızdır. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
+Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz `publish` metodu. `def` bunun bir fonksiyon/method olduğunu söylüyor. `publish` ise methodumuzun ismi. Eğer isterseniz metodun adını değiştirebilirsiniz. Methodlara isim verirken küçük harf kullanmaya ve boşluk yerine alt çizgi kullanmaya dikkat ediyoruz. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
 
-Genellikle methodlar bir şeyler döndürür (`return` anahtar kelimesi döndür anlamına gelir). `__str__` methodunda bunun örneğini görebiliriz. Bu durumda `__str__()` methodunu çağırdığımızda Post başlığının içeren bir metin (**string**) elde ederiz.
+Genellikle methodlar bir şeyler döndürür (`return` anahtar kelimesi döndür anlamına gelir). `__str__` methodunda bunun örneğini görebiliriz. Bu durumda, `__str__()` methodunu çağırdığımızda Post başlığını içeren bir metin (**string**) elde ederiz.
 
-Aynı zamanda hem `def publish(self):` satırının, hem de `def __str__(self):` satırının sınıfımızın içinde girintili bir şekilde yazıldığına dikkat edin. Python boşluklara duyarlı olduğu için class'ın içindeki metodları girintili olarak yazmamız gerekiyor. Aksi takdirde metodlar class'a ait olmaz ve beklenmedik davranışlarla karşılaşabilirsiniz.
+Aynı zamanda hem `def publish(self):` satırının, hem de `def __str__(self):` satırının sınıfımızın içinde girintili (indented) bir şekilde yazıldığına dikkat edin. Python boşluklara duyarlı olduğu için class'ın içindeki metodları girintili olarak yazmamız gerekiyor. Aksi takdirde methodlar class'a ait olmaz ve beklenmedik davranışlarla karşılaşabilirsiniz.
 
 Buraya kadar model hakkında anlamadığın bir şeyler varsa mentörüne sormaktan çekinme! Bu konuların biraz karmaşık olduğunun farkındayız. Özellikle hem nesneleri hem de fonksiyonları aynı anda öğrenmek kolay değil. Umarız gizemi biraz azalmaya başlamıştır!
 
 ### Modeller için veritabanında tablo oluşturma
 
-Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. Öncelikle Django'nun modelimizde bazı değişiklikler yaptığımızı bilmesini sağlamalıyız. (Daha yeni oluşturduk!) Konsol penceresine gidin ve `python manage.py makemigrations blog` yazın. Şöyle görünmeli:
+Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. Öncelikle Django'nun modelimizde bazı değişiklikler yaptığımızı bilmesini sağlamalıyız. (Daha yeni oluşturduk!) Komut satırına gidelim ve `python manage.py makemigrations blog` yazalım. Şöyle görünmeli:
 
-{% filename %}komut-satır{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py makemigrations blog
     Migrations for 'blog':
@@ -184,15 +185,14 @@ Son adımımız yeni modelimizin veritabanına eklenmesini sağlamak. Öncelikle
 
 **Not:** Düzenlediğiniz dosyaları kaydetmeyi unutmayın. Aksi takdirde, bilgisayarınız önceki sürümü çalıştırarak beklenmedik hatalar verebilir.
 
-Django bize veritabanımıza uygulayabileceğimiz bir taşıma (migrasyon) dosyası oluşturdu. `python manage.py migrate blog` yazdığın zaman şunu görmelisin:
+Django bize veritabanımıza uygulayabileceğimiz bir taşıma (migration) dosyası oluşturdu. `python manage.py migrate blog` yazdığın zaman şunu görmelisin:
 
-{% filename %}komut-satır{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py migrate blog
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
-      Rendering model states... DONE
       Applying blog.0001_initial... OK
     
 

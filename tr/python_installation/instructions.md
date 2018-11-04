@@ -1,4 +1,4 @@
-> Evdeki okuyucular için: bu bölüm [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) isimli videoda kapsanmıştır.
+> Evdeki okuyucular için: bu bölüm [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) isimli videoda anlatılmıştır.
 > 
 > Bu bölüm Geek Girls Carrots (https://github.com/ggcarrots/django-carrots) tarafından hazırlanmış bir öğreticiye dayanmaktadır
 
@@ -6,7 +6,7 @@ Django, Python dilinde yazılmıştır. Django'da herhangi bir şey yapmak için
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Öncelikle Windows + Pause/Break tuş kombinasyonlarına basarak bilgisayarınızın Windows'un 32-bit versyionunu mu 64-bit versiyonu mu çalıştırdığını kontrol edin. Bu size Sistem bilgisini açacak. Açılan bu pencerede "Sistem tipi" satırına bakın. Windows için Python'ı şu web sitesinden indirebilirsinizhttps://www.python.org/downloads/windows/. "Son Python 3 Sürümü - Python x.x.x" bağlantısına tıklayın. Eğer bilgisayarınız **64-bit** versiyon Windows çalıştırıyorsa, **Windows x86-64 çalıştırılabilir yükleyici**'yi indirin. Değilse, **Windows x86 çalıştırılabilir yükleyici**'yi indirin. Yükleyiciyi indirdikten sonra, çalıştırmalısınız (üzerine çift tıklayarak) ve oradaki talimatları takip etmelisiniz.
+Öncelikle Windows + Pause/Break tuş kombinasyonlarına basarak bilgisayarınızın Windows'un 32-bit versyionunu mu 64-bit versiyonu mu çalıştırdığını kontrol edin. Bu size Sistem bilgisini açacak. Açılan bu pencerede "Sistem tipi" satırına bakın. Windows için Python'ı indirmek için resmi siteyi ziyaret edebilirsiniz: https://www.python.org/downloads/windows/. "Son Python 3 Sürümü - Python x.x.x" bağlantısına tıklayın. Eğer bilgisayarınız **64-bit** versiyon Windows çalıştırıyorsa, **Windows x86-64 çalıştırılabilir yükleyici**'yi indirin. Değilse, **Windows x86 çalıştırılabilir yükleyici**'yi indirin. Yükleyiciyi indirdikten sonra, çalıştırmalısınız (üzerine çift tıklayarak) ve oradaki talimatları takip etmelisiniz.
 
 Dikkat edilmesi gereken bir şey: Yükleme esnasında "Setup" ("Kur") işaretli bir pencere farkedeceksiniz. "Add Python 3.6 to PATH" ("PATH'e Python 3.6'yı ekle) kutucuğunun işaretli olduğundan emin olun ve aşağıda gösterildiği gibi "Install Now" ("Şimdi Yükle") 'a tıklayın:
 
@@ -75,7 +75,7 @@ Terminalde kullanmanız gereken komut:
     $ sudo dnf install python3
     
 
-Eğer eski bir Fedora sürümünüz varsa `dnf` komutu bulunamadı hatasını alabilirsiniz. Bu durumda, yum kullanmanız gerekir.
+Eğer eski bir Fedora sürümünüz varsa `dnf` komutu bulunamadı hatasını alabilirsiniz. Bu durumda, `yum` kullanmanız gerekir.
 
 <!--endsec-->
 
