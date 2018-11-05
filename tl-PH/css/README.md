@@ -66,19 +66,20 @@ Oras na para magsulat ng CSS! Buksan ang `blog/static/css/blog.css` na file sa l
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-Pero gumawa naman tayo kahit kaunti lang. Siguro maaari nating baguhin ang kulay ng header? Para maunawaan ang mga kulay, ang kompyuter ay sumusunod sa mga special codes o mga numero at letra na nagsisimbolo ng kulay. Ang mga code na ito ay nagsimula sa `#` at sinundan ng 6 na letra (A-F) at mga numero (0-9). Halimbawa, ang code para sa asul ay `#0000FF`. Maari mong makita ang mga color code sa iba't ibang kulay dito: http://www.colorpicker.com/. Maari ka ding gumamit ng mga [nakatakdang mga kulay](http://www.w3schools.com/colors/colors_names.asp), tulad ng `red (o pula)` at `green (o berde)`.
+Pero gumawa naman tayo kahit kaunti lang. Maybe we could change the color of our headers? Para maunawaan ang mga kulay, ang kompyuter ay sumusunod sa mga special codes o mga numero at letra na nagsisimbolo ng kulay. Ang mga code na ito ay nagsimula sa `#` at sinundan ng 6 na letra (A-F) at mga numero (0-9). Halimbawa, ang code para sa asul ay `#0000FF`. Maari mong makita ang mga color code sa iba't ibang kulay dito: http://www.colorpicker.com/. Maari ka ding gumamit ng mga [nakatakdang mga kulay](http://www.w3schools.com/colors/colors_names.asp), tulad ng `red (o pula)` at `green (o berde)`.
 
 Sa iyong `blog/static/css/blog.css` na file, kailangan mong idagdag ang sumusunod na code:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` ay isang Selector ng CSS. Ibig sabihin nito na kinakapit natin ang ating mga estilo sa kahit ano na `a` na elemento na nasa loob ng `h1` na elemento. Kung mayroon kang `<h1><a href="">link</a></h1>` na gaya nito, ang estilo na `h1 a` ay magagamit. Sa kaso na ito, sinabihan natin ito na palitan ang kulay nito nang `#FCA205`, ang orange (o dalandan). Or you can put your own color here!
+`h1 a` ay isang Selector ng CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Kung mayroon kang `<h1><a href="">link</a></h1>` na gaya nito, ang estilo na `h1 a` ay magagamit. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 Sa loob ng CSS file nakabase ang estilo ng mga elemento sa loob ng HTML na file. Ang unang pamamaraan na makilala natin ang mga elemento ay gamit ang pangalan ng elemento. Maari mong naalala ang mga tag na ito mula sa pangkat ng HTML. Mga bagay gaya ng `a`, `h1`, at `body` ay puro mga halimbawa ng mga pangalan ng elemento. Maaari din nating kilalanin ang mga elemento sa pamamagitan ng katangian na `class` o sa katangian na `id`. Ang class at id ay mga pangalan na sarili mong ibinigay sa mga elemento. Ang mga class ay nagbibigay kahulugan sa mga grupo ng mga elemento, at ang id ay nagtuturo sa mga tiyak na mga elemento. Halimbawa, maari mong kilalanin ang sumusunod na tag sa pamamagitan ng paggamit ng pangalan ng tag na `a`, sa `external_link` na class, o sa `link_to_wiki_page` na id:
 
@@ -127,7 +128,7 @@ Ang file mo ay dapat maging katulad nito:
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Hanapin ang `h1 a` na deklerasyon na bloke (ang code sa pagitan ng braces `{` at
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -196,8 +197,8 @@ At ngayon, magdagdag ng class na `post` sa iyong `div` na naglalaman ng iyong bl
 
 ```html
 <div class="post">
-    <p>nailathala: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <p>published: {{ post.published_date }}</p>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ Ngayon, aming idadagdag ang deklerasyon na mga bloke sa iba ibang mga selector. 
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -262,8 +263,8 @@ Pagkatapos, palibutan ang HTML code na nagdidisplay ng mga post nang mga deklera
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>nailathala: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -280,9 +281,9 @@ sa loob ng `blog/templates/blog/post_list.html` nito:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        <p>nailathala: {{ post.published_date }}</p>
+                        <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
