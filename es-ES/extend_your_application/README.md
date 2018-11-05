@@ -23,7 +23,7 @@ Empezaremos añadiendo un enlace al fichero `blog/templates/blog/post_list.html`
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -148,15 +148,15 @@ Se verá así:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <h1>{{ post.title }}</h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endblock %}
 ```
 
@@ -185,7 +185,7 @@ Sería bueno verificar que tu sitio web aún funcionará en PythonAnywhere, ¿ci
 
 Luego, en una [consola Bash de PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
@@ -200,7 +200,7 @@ Normalmente, los servidores como PythonAnywhere tratan los ficheros estáticos (
 
 Activa el virtualenv si no estaba activado de antes (en PythonAnywhere se usa el comando `workon`, es igual que el comando `source myenv/bin/activate` que usamos en local):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ workon <your-pythonanywhere-username>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
