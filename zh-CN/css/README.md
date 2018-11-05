@@ -66,19 +66,20 @@ Django会自动找出你项目文件夹中所有名为“static”的文件夹�
 
 在这里，我们不会太深入的去学习CSS的相关知识。如果你想了解更多内容，可以参考本页末尾提供的CSS免费课程的建议。
 
-但我们至少还会涉及到一些CSS的代码。 让我们试试改变网页标题的颜色？ 为了理解颜色，计算机使用了一些特殊的代码。 这些代码是由`#`开始，后面跟着六位A到F的字母或0到9的数字。 例如，蓝色的代码是`#0000FF`。 你可以在这个网站找到不同颜色的代码：http://www.colorpicker.com/。 你也可以使用一些[预定义颜色](http://www.w3schools.com/colors/colors_names.asp)，比如`red`和`green`.
+但我们至少还会涉及到一些CSS的代码。 Maybe we could change the color of our headers? 为了理解颜色，计算机使用了一些特殊的代码。 这些代码是由`#`开始，后面跟着六位A到F的字母或0到9的数字。 例如，蓝色的代码是`#0000FF`。 你可以在这个网站找到不同颜色的代码：http://www.colorpicker.com/。 你也可以使用一些[预定义颜色](http://www.w3schools.com/colors/colors_names.asp)，比如`red`和`green`.
 
 在你的`blog/static/css/blog.css`文件中添加下面的代码:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a`是CSS选择器。 这样，我们可以把样式应用到`h1`中的任意`a`元素中。 所以，如果我们有这样的代码`<h1><a href="">link</a></h1>`，通过`h1 a`描述的样式就将会生效。 在这段样式代码中我们把它的颜色设为`#FCA205`, 这代表着橙色。 Or you can put your own color here!
+`h1 a`是CSS选择器。 This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. 所以，如果我们有这样的代码`<h1><a href="">link</a></h1>`，通过`h1 a`描述的样式就将会生效。 In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 在CSS文件中我们指明了HTML文件里各种元素的样式。 我们识别元素的第一种方法是使用元素的名称。 你可能还记得那些HTML部分中的标签。 诸如`a`，`h1`和`body`等都是元素的名称。 我们也可以用`class`属性和`id`属性来定义元素。 class和id是你自己给该元素定义的名称。 class定义一组元素，而id则指定特定的元素。 例如，下面的标签使用了 `a` 作为标签名,`external_link` 为 class 名, id 名则是 `link_to_wiki_page`.
 
@@ -127,7 +128,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ body {
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ h1 a {
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ h1 a {
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ h1, h2, h3, h4 {
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ h1, h2, h3, h4 {
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
