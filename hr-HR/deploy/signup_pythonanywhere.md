@@ -6,7 +6,7 @@ Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you d
 
 ![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Napomena** Kada ovdje odabireš svoje korisničko ime, znaj da će ti URL bloga izgledati kao `tvojekosrisnickoime.pythonanywhere.com`, pa odaberi ili svoj nadimak ili ime koje govori o čemu je tvoj blog.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## Stvaranje PythonAnywhere API tokena
 
