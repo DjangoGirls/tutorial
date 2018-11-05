@@ -161,7 +161,7 @@ Agora vamos executar a ferramenta para configurar a nossa aplicação a partir d
 Enquanto assiste a execução da ferramenta, você pode ver o que ela está fazendo:
 
 - Baixando o seu código do GitHub;
-- Criando um virtualenv no PythonAnywhere, igual ao que existe no seu computador;
+- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
 - Atualizando o seu arquivo de configuração com algumas configurações sobre o deploy;
 - Criando um banco de dados no PythonAnywhere usando o comando `manage.py migrate`;
 - Criando os seus arquivos estáticos (nós aprenderemos sobre eles mais tarde)
@@ -169,7 +169,7 @@ Enquanto assiste a execução da ferramenta, você pode ver o que ela está faze
 
 No PythonAnywhere, todos esses passos são automatizados, mas são os mesmos que você executaria ao utilizar qualquer outro provedor.
 
-O importante agora é reparar que o seu banco de dados no PythonAnywhere é na verdade completamente separado do banco de dados no seu computador — isso significa que eles têm posts e contas de admin completamente diferentes. Por causa disso, da mesma forma que tivemos que fazer no nosso computador, precisamos criar a conta de admin com *createsuperuser*. O PythonAnywhere já ativou o seu virtualenv automaticamente, então tudo o que você precisa fazer é executar o comando:
+The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. Por causa disso, da mesma forma que tivemos que fazer no nosso computador, precisamos criar a conta de admin com *createsuperuser*. O PythonAnywhere já ativou o seu virtualenv automaticamente, então tudo o que você precisa fazer é executar o comando:
 
 {% filename %}linha de comando do PythonAnywhere{% endfilename %}
 
