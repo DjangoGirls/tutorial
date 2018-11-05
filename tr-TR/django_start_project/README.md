@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Not**: Eğer Chromebook kullanıyorsanız bu satırı settings.py dosyanızın en altına ekleyiniz: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Ayrıca eğer cloud9 kullanıyorsanız `ALLOWED_HOSTS`'a `.c9users.io` 'i ekleyin
+> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
 ## Bir veritabanı kur
 
@@ -148,6 +148,8 @@ Blogumuzun veritabanını oluşturmak için konsolda şu komutu çalıştırın:
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying auth.0008_alter_user_username_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -176,18 +178,18 @@ Eğer Windows'taysanız ve `UnicodeDecodeError` hatası varsa, bu komutu kullan�
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Şimdi tek yapmanız gereken sitenizin çalışıp çalışmadığına bakmak. Tarayıcınızı açın (Firefox, Chrome, Safari, Internet Explorer veya ne tercih ediyorsanız) ve bu adresi girin:
+Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
 {% filename %}tarayıcı{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Eğer Chromebook kullanıyorsanız, her seferinde test sunucusunu ziyaret edeceksiniz ve erişeceksiniz:
+If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
 
 {% filename %}tarayıcı{% endfilename %}
 
-    https://django-girls-<your cloud9 username>.c9users.io
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 Tebrikler! ilk web siteni oluşturdun ve web sunucusu kullanarak çalıştırdın! Harika, değil mi?
