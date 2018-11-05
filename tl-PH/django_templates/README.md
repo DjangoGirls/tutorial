@@ -52,13 +52,13 @@ Gumana ito! Pero gusto nating i-display ang mga post gaya ng mga static na post 
 
 ```html
 <div>
-    <h1><a href="/">Blog ng Django Girls</a></h1>
+    <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 
 {% for post in posts %}
     <div>
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
