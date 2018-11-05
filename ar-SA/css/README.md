@@ -66,19 +66,20 @@ Django already knows where to find the static files for the built-in "admin" app
 
 لن نذهب عميقاً في تخصيص وتعلم CSS هنا. هناك توصية بدورة CSS مجانية في نهاية هذه الصفحة إذا كنت ترغب في معرفة المزيد.
 
-لكن لنقم بالقليل على الاقل. ربما نريد تغيير لون الترويسة؟ لفهم الالوان, الحاسوب يستعمل شيفرات خاصة. الشيفرات تبتدأ ب `#` و تليها 6 حروف (A-F) و أرقام (0-9). مثلا ، رمز اللون الأزرق هو `#0000FF`. يمكنك العثور على هذه الشيفرات في هذا الموقع: http://www.colorpicker.com/. يمكنك استعمال الالوان المحددة مسبقا ك `red` و `green`.
+لكن لنقم بالقليل على الاقل. Maybe we could change the color of our headers? لفهم الالوان, الحاسوب يستعمل شيفرات خاصة. الشيفرات تبتدأ ب `#` و تليها 6 حروف (A-F) و أرقام (0-9). مثلا ، رمز اللون الأزرق هو `#0000FF`. يمكنك العثور على هذه الشيفرات في هذا الموقع: http://www.colorpicker.com/. يمكنك استعمال الالوان المحددة مسبقا ك `red` و `green`.
 
 داخل الملف `blog/static/css/blog.css` يجب عليك اضافة التعليمات البرمجية التالية:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` هو محدد CSS. وهذا يعني أننا تقوم بتطبيقالأنماط لدينا لأي ` عنصر داخل عنصر <code>h1`</code>. حتى عندما يكون لدينا شيء مثل `<h1><a href="">link</a></h1>`، `h1` سيتم تطبيق النمط. في هذه الحالة نأمرها بتغيير الون الى `#FCA205`,وهو اللون البرتقالي. Or you can put your own color here!
+`h1 a` هو محدد CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. حتى عندما يكون لدينا شيء مثل `<h1><a href="">link</a></h1>`، `h1` سيتم تطبيق النمط. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 داخل ملف CSS نحدد أنماط العناصر التي توجد داخل ملف HTML. الطريقة الأولى التي نستخدمها لتحديد العناصر هي عبر الإسم. يمكن أن تذكر هذه tags من قسم HTML. أشياء مثل`a`, `h1` و `body` هي كلها امثلة لأسماء العناصر. نحن نحدد العناصر ايضا عبر `class` او عبر `id`. Class و id هي الأسماء التي يمكنك إعطائها للعنصر بنفسك. تحدد class مجموعات من العناصر، و id تشير إلى عناصر محددة. على سبيل المثال، يمكن تحديد tag التالية باستخدام سمة `a`, المصنف `external_link` (class), أو المعرف `link_to_wiki_page` (id):
 
@@ -127,7 +128,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ body {
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ h1 a {
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ h1 a {
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ h1, h2, h3, h4 {
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ h1, h2, h3, h4 {
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
