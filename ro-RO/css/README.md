@@ -66,19 +66,20 @@ E timpul pentru a scrie niște CSS! Deschidem fișierul `blog/static/css/blog.cs
 
 Nu ne vom adînci prea mult în personalizarea și învățarea CSS. La sfîrșitul acestei pagini este o recomandare pentru un curs gratis de CSS dacă este dorința de a afla mai multe.
 
-Dar hai să facem cel puțin ceva. Poate am putea schimba culoarea header-ului? Pentru a înțelege culorile, calculatoarele ulilizează niște coduri speciale. Aceste coduri încep cu `#` urmate de 6 litere (A-F) și numere (0-9). De exemplu, codul pentru culoarea albastră este `#0000FF`. Putem găsi codurile a multe culori aici: http://www.colorpicker.com/. Poți de asemenea utiliza [culori predefinite](http://www.w3schools.com/colors/colors_names.asp), precum `red` - roșu și `green` - verde.
+Dar hai să facem cel puțin ceva. Maybe we could change the color of our headers? Pentru a înțelege culorile, calculatoarele ulilizează niște coduri speciale. Aceste coduri încep cu `#` urmate de 6 litere (A-F) și numere (0-9). De exemplu, codul pentru culoarea albastră este `#0000FF`. Putem găsi codurile a multe culori aici: http://www.colorpicker.com/. Poți de asemenea utiliza [culori predefinite](http://www.w3schools.com/colors/colors_names.asp), precum `red` - roșu și `green` - verde.
 
 Adaugăm următorul cod în fișierul `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {     
-    color: #FCA205; 
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` este un Selector CSS. Aceasta înseamnă că folosim stilul nostru la orice element `a` înăuntru la un element `h1`. Așa că atunci cînd vom avea ceva ca `<h1><a href="">link</a></h1>`, stilul `h1 a` va fi folosit. În acest caz, noi îi spunem să își schimbe culoarea în `#FCA205`, care reprezintă culoarea oranj. Or you can put your own color here!
+`h1 a` este un Selector CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Așa că atunci cînd vom avea ceva ca `<h1><a href="">link</a></h1>`, stilul `h1 a` va fi folosit. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 Într-un fișier CSS determinăm stilurile pentru elementele într-un fișier HTML. Prima metodă de a identifica elementele e prin numele unui element. Le ținem minte ca tag-urile din secția despre HTML. Astfel de lucruri ca `a`, `h1`, și `body` sunt exemple de nume de elemente. De asemenea putem identifica elementele după atributul `class` sau atributul `id`. Numele de clase și id le definim singuri. Clasele definesc grupuri de elemente, și id-urile indică la niște elemente anumite. De exemplu, am putea identifica următorul tag folosind numele tag-ului `a`, clasa `external_link` sau id-ul id `link_to_wiki_page`:
 
@@ -127,7 +128,7 @@ Fișierul nostru trebuie să arate așa:
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,9 +169,9 @@ Găsim declarația blocului `h1 a` (codul între parantezele `{` și `}`) în fi
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {     
-    color: #FCA205;     
-    font-family: 'Lobster'; 
+h1 a, h2 a {
+    color: #C25100;
+    font-family: 'Lobster';
 }
 ```
 
@@ -197,7 +198,7 @@ Acum adaugăm o clasă `post` la `div`-ul care conține un post de blog.
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ Acum vom adăuga blocuri de declarare la selectoare diferite. Selectoarele care 
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ Apoi selectează codul HTML care afișează posturile cu declarațiile de clase.
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ Apoi selectează codul HTML care afișează posturile cu declarațiile de clase.
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
