@@ -35,8 +35,8 @@ admin.site.register(Post)
 
 プロンプトが表示されたら、ユーザー名 (小文字、スペースなし)、電子メール アドレス、およびパスワードを入力します。 **タイプしてる間パスワードは見えなくても大丈夫、それが正常です。**タイプして`Enter`を押して続けましょう。 そうすればこのように見えるはずです。（ユーザーネームとパスワードは今あなたがタイプしたものです。）
 
-    Username: admin
-    Email address: admin@admin.com
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.
