@@ -35,8 +35,8 @@ Para fazer login, você precisa criar um *superusuário (superuser)* - uma conta
 
 Quando for solicitado, insira seu nome de usuário (letras minúsculas, sem espaços), e-mail e senha. **Não se preocupe por não conseguir ver a senha que está digitando - é assim mesmo.** Digite a senha e aperte a tecla `enter` para continuar. A saída deve parecer com isso (onde o nome de usuário e o email devem ser os seus):
 
-    Username: admin
-    Email address: admin@admin.com
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.
