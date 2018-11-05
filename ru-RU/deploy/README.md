@@ -85,7 +85,7 @@ Git будет отслеживать изменения всех файлов �
 
 ## Публикация твоего кода на GitHub
 
-Перейди на сайт [GitHub.com](https://www.github.com) и зарегистрируй новый бесплатный аккаунт. (Если ты уже это сделала в рамках подготовки к воркшопу, то это отлично!)
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
 
 Дальше создай новый репозиторий с именем "my-first-blog". Не ставь галочку на пункте "initialize with a README" и отметь опции .gitignore(мы создадим этот файл вручную) и License как None.
 
