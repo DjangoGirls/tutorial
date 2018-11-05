@@ -4,7 +4,7 @@
 
 คุณกำลังจะเขียนบรรทัดแรกของ code ดังนั้น ได้เวลาที่จะดาวน์โหลด code editor ซักตัวนึง
 
-> **หมายเหตุ** ถ้าคุณใช้ Chromebook ข้ามบทนี้ และแน่ใจว่าคุณทำตามบทแนะนำ [ติดตั้ง Chromebook](../chromebook_setup/README.md)
+> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
 > 
 > **หมายเหตุ** คุณอาจได้ทำก่อนหน้านี้ในบทการติดตั้งเสร็จแล้ว – ถ้าดังนั้น คุณสามารถข้ามไปข้างหน้า ในบทถัดไป
 
