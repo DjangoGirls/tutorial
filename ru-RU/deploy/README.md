@@ -159,7 +159,7 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 Когда ты увидишь, как это работает, то ты сможешь понять, что именно оно делает:
 
 - Скачивает твой код с GitHub
-- Создает virtualenv на PythonAnywhere, такое же, как на твоем компьютере
+- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
 - Обновляет твой файл настроек с некоторыми параметрами развертывания
 - Создаем базу данных на PythonAnywhere, используя команду `manage.py migrate`
 - Настраивает твои статичные файлы(мы узнаем об этом позже)
@@ -167,7 +167,7 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}command-line{% endfilename %}
 
