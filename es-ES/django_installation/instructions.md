@@ -165,7 +165,7 @@ Antes de hacer eso, debemos asegurarnos que tenemos la última versión de `pip`
 
 Un fichero de requisitos (requirements) tiene una lista de dependencias que se deben instalar mediante `pip install`:
 
-Lo primero, crea un fichero `requirements.txt` dentro del directorio `djangogirls/`, usando el editor de código que hemos instalado hace un momento:
+First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     └───requirements.txt
