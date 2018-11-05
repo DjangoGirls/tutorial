@@ -1,6 +1,6 @@
 PythonAnywhere ist ein Dienst, mittels dem Python auf Servern "in der Cloud" ausgeführt werden kann. Wir werden ihn verwenden, um unsere Seite zu hosten, live und im Internet.
 
-Registriere ein "Beginner"-Benutzerkonto auf PythonAnywhere (die kostenlose Variante genügt völlig, du brauchst also keine Kreditkarte).
+We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
