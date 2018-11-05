@@ -2,7 +2,7 @@
 > 
 > Niniejszy podrozdział powstał w oparciu o kurs Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django jest napisane w Pythonie. Musimy posiadać Pythona, by zrobić cokolwiek w Django. Zacznijmy od jego instalacji! Chcemy zainstalować Python 3.6, więc jeżeli posiadasz jakąkolwiek wcześniejszą wersję, będziesz musiała ją uaktualnić.
+Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
@@ -14,7 +14,7 @@ First check whether your computer is running a 32-bit version or a 64-bit versio
 
 Możesz ściągnąć Pythona dla Windowsa ze strony https://www.python.org/downloads/windows/. Kliknij w link "Latest Python 3 Release - Python x.x.x". Jeżeli twój komputer pracuje na **64-bitowej** wersji Windowsa, ściągnij **Windows x86-64 executable installer**. W innym wypadku ściągnij **Windows x86 executable installer**. Po ściągnięciu instalatora, powinnaś go uruchomić (klikając dwukrotnie w niego) i postępować według wyświetlanych instrukcji.
 
-Na jedną rzecz będziesz musiała uważać: Podczas instalacji zauważysz ekran oznaczony jako "Setup". Upewnij się, że zaznaczyłaś checkbox "Add Python 3.6 to PATH" oraz kliknęłaś "Install Now", tak jak tutaj:
+One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
 ![Nie zapomnij dodać Pythona do ścieżki systemowej (ang. Path)](../python_installation/images/python-installation-options.png)
 
@@ -26,7 +26,7 @@ W nadchodzących krokach, będziesz używać "Wiersza polecenia" Windowsa (o kt�
 
 Uwaga: Jeżeli używasz starszej wersji Windowsa (7, Vista lub jakikolwiek starszy) i podczas instalacji Python 3.6.x dostaniesz błąd, możesz:
 
-1. zainstalować wszystkie uaktualnienia systemu Windows a spróbować instalacji Pythona 3.6 jeszcze raz; lub
+1. install all Windows Updates and try to install Python again; or
 2. zainstalować [starszą wersję Pythona](https://www.python.org/downloads/windows/), np. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
 Jeżeli zainstalujesz starszą wersję Pythona, ekrany instalatora mogą wyglądać nieznacznie inaczej niż pokazane wyżej. Upewnij się, że przewinęłaś do "Add python.ext to Path", kliknęłaś przycisk po lewej i wybrałaś "Will be installed on local hard drive":
@@ -58,7 +58,7 @@ Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem
     Python 3.6.1
     
 
-Jeżeli masz zainstalowaną inną 'mikrowersję' Pythona, np. 3.6.0, to nie ma potrzeby, byś dokonywała aktualizacji. Jeżeli nie masz zainstalowanego Pythona lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
+If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a newer version, you can install it as follows:
 
 <!--endsec-->
 
@@ -68,7 +68,7 @@ Wpisz w konsoli poniższe polecenie:
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo apt install python3.6
+    $ sudo apt install python3
     
 
 <!--endsec-->
@@ -107,8 +107,10 @@ Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz wiersz polecenia
     Python 3.6.1
     
 
-**Uwaga:** Jeżeli pracujesz na Windowsie i dostajesz wiadomość o błędzie, że `python3` nie został znaleziony, spróbuj użyć `python` (bez `3`) oraz sprawdź, czy być może w taki sposób uruchomisz Pythona 3.6.
+The version shown may be different from 3.6.1 -- it should match the version you installed.
+
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
 
 * * *
 
-W razie jakichkolwiek wątpliwości albo jeśli coś poszło nie tak i nie wiesz, co dalej robić, zapytaj mentora lub osobę prowadzącą kurs! Czasami nie wszystko idzie tak, jak powinno i najlepszym wyjściem z sytuacji jest poprosić o pomoc kogoś bardziej doświadczonego.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
