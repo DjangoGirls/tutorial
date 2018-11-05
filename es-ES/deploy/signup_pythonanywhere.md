@@ -6,7 +6,7 @@ Crea una cuenta de Principiante ("Beginner") en PythonAnywhere (el nivel gratuit
 
 ![La página de inicio de PythonAnywhere con un botón para crear una cuenta de principiante ("Beginner") gratuita](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Nota** Cuando elijas un nombre de usuario, recuerda que la URL de tu blog tendrá la forma `tunombredeusuario.pythonanywhere.com`, así que lo mejor será usar tu apodo o elegir un nombre que indique de qué trata tu blog.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## Crear un token para la API de PythonAnywhere
 
