@@ -162,7 +162,7 @@ Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere` den
 Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 
 - Kodunuz GitHub'dan çekiliyor
-- Tıpkı kendi bilgisayarındaki gibi PythonAnywhere üzerinde bir virtualenv oluşturuluyor
+- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
 - Yayına almak için gerekli ayarlar (settings) dosyası güncelleniyor
 - Yine `manage.py migrate` komutu ile PythonAnywhere üzerinde veritabanı oluşturuluyor
 - Sabit dosyaların (bunları daha sonra öğreneceğiz) oluşturuluyor
@@ -170,7 +170,7 @@ Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 
 On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
