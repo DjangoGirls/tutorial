@@ -35,8 +35,8 @@ admin.site.register(Post)
 > 
 > เมื่อได้รับแจ้ง ให้พิมพ์ username (ด้วยตัวพิมพ์เล็ก ไม่เว้นช่องว่าง) อีเมล์ และรหัสผ่าน **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. ผมลัพธ์ควรมีหน้าตาแบบนี้ (username และอีเมล์ควรจะเป็นของคุณเอง)
 > 
->     Username: admin
->     Email address: admin@admin.com
+>     Username: ola
+>     Email address: ola@example.com
 >     Password:
 >     Password (again):
 >     Superuser created successfully.
