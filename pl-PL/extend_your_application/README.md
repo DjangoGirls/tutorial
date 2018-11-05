@@ -23,7 +23,7 @@ Zaczniemy od dodania linku wewnątrz pliku `blog/templates/blog/post_list.html`.
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -154,7 +154,7 @@ Będzie to wyglądać tak:
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -185,7 +185,7 @@ Dobrze byłoby sprawdzić, czy Twoja strona dalej będzie dobrze działać na Py
 
 Następnie w konsoli [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
@@ -200,7 +200,7 @@ Serwery takie jak PythonAnywhere lubią traktować "pliki statyczne" (takie jak 
 
 Zacznij od aktywacji swojego virtualenva, jeżeli nie jest on jeszcze aktywny (PythonAnywhere używa polecenia `workon` w celu aktywacji, dokładnie tak jak komenda `source myenv/bin/activate`, której używasz na swoim komputerze):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ workon <your-pythonanywhere-username>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
