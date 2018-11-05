@@ -6,7 +6,7 @@ Créez un compte "Débutant" sur PythonAnywhere (la partie gratuite est suffisan
 
 ![La page de login de PythonAnywhere contenant un bouton pour créer le compte gratuit pour 'Débutant'](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** Lorsque vous choisissez votre nom d'utilisateur, gardez à l'esprit que l'URL de votre blog prendra la forme `nomutilisateur.pythonanywhere.com`, alors choisissez un pseudonyme ou un nom pour votre blog.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## Création d’un jeton API pour PythonAnywhere
 
