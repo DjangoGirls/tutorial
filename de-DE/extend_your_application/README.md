@@ -23,7 +23,7 @@ Wir beginnen damit, einen Link in der `blog/templates/blog/post_list.html`-Datei
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -154,7 +154,7 @@ Das sieht dann so aus:
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -185,7 +185,7 @@ Es wäre schön zu sehen, ob deine Website noch auf PythonAnywhere funktioniert,
 
 Dann führe Folgendes in der [PythonAnywhere-Bash-Konsole](https://www.pythonanywhere.com/consoles/) aus:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
@@ -200,7 +200,7 @@ Server wie PythonAnywhere behandeln statische Dateien ("static files", z.B. CSS-
 
 Aktiviere also deine virtuelle Umgebung, wenn sie nicht vom letzten Mal noch aktiv ist (PythonAnywhere benutzt dazu das Kommando `workon`, das ist ähnlich wie `source myenv/bin/activate`, das du auf deinem Computer verwendest):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ workon <your-pythonanywhere-username>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
