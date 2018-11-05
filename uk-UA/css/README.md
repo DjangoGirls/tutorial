@@ -66,19 +66,20 @@ Let's create a CSS file now, to add your own style to your web page. Створ�
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-Але принаймні попрацюємо трохи. Можливо, ми могли б змінити колір заголовка? Щоб зрозуміти кольори, комп'ютери використовують спеціальні коди. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Також можете користуватися вже [визначеними кольорами ](http://www.w3schools.com/colors/colors_names.asp), такими як `red` та `green`.
+Але принаймні попрацюємо трохи. Maybe we could change the color of our headers? Щоб зрозуміти кольори, комп'ютери використовують спеціальні коди. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Також можете користуватися вже [визначеними кольорами ](http://www.w3schools.com/colors/colors_names.asp), такими як `red` та `green`.
 
 У вашому файлі `static/css/blog.css` потрібно додати наступний код:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` -- CSS селектор. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. У цьому випадку, ми повідомляємо про те, що треба змінити колір на `#FCA205`, тобто помаранчевий. Or you can put your own color here!
+`h1 a` -- CSS селектор. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 В CSS файлі ми визначаємо стилі для елементів файлу HTML. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class і id -- імена, які ви присвоюєте елементам власноруч. Класи (сlasses) визначають групи елементів, а ідентифікатори (id), в свою чергу, вказують на специфічні елементи. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -127,7 +128,7 @@ The browser reads the files in the order they're given, so we need to make sure 
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Find the `h1 a` declaration block (the code between braces `{` and `}`) in the C
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ h1, h2, h3, h4 {
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ h1, h2, h3, h4 {
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
