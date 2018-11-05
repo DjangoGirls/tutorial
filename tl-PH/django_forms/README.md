@@ -155,10 +155,10 @@ Sige, tingnan natin kung ano dapat ang hitsura ng HTML sa `post_edit.html`:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>Bagong Post</h1>
+    <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Mag-save</button>
+        <button type="submit" class="save btn btn-default">Save</button>
     </form>
 {% endblock %}
 ```
@@ -302,7 +302,7 @@ nang sa gayon ang template ay magmumukhang ganito:
             </div>
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -431,7 +431,7 @@ Tingnan natin kung gagana ito sa PythonAnywhere. Oras na para gumawa ng isa pang
 
 * Pagkatapos, sa loob ng [PythonAnywhere na Bash console](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
