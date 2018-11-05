@@ -610,7 +610,7 @@ $
 
 To će te vratiti u naredbeni redak.
 
-Ranije, izabrali smo uređivač koda iz sekcije [uređivača koda](../code_editor/README.md). Sada moramo otvoriti uređivač i napsati neki kod u novu datoteku:
+Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
 
 {% filename %}editor{% endfilename %}
 
