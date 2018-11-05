@@ -32,10 +32,11 @@ Untuk masuk, Anda perlu membuat * superuser </ 0> - akun pengguna yang memiliki 
 > 
 > Saat diminta, ketik nama akun anda (huruf kecil, tidak ada spasi), alamat email, dan kata sandi. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. Outputnya akan terlihat seperti ini (dimana nama akun dan emailnya seharusnya menjadi milik anda):
 > 
->     Nama akun: admin
->     Alamat Email: admin@admin.com
->     Kata Sandi: Kata Sandi (lagi): 
->     Superuser berhasil dibuat.
+>     Username: ola
+>     Email address: ola@example.com
+>     Password:
+>     Password (again):
+>     Superuser created successfully.
 >     
 > 
 > Kembali ke browser anda. Masuklah dengan kredensial superuser yang anda pilih; anda harus melihat dasbor admin Django.
