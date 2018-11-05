@@ -65,19 +65,20 @@ Django otomatik olarak uygulama klasörlerinizdeki "static" adlı klasörleri bu
 
 Burada CSS'yi özelleştirme ve öğrenmeyle ilgili çok derinlemesine gidemeyeceğiz. Daha fazla bilgi edinmek isterseniz, bu sayfanın sonunda ücretsiz CSS kursu için bir tavsiye var.
 
-Ama, biraz da yapalım. Acaba başlığımızın rengini mi değiştirsek? Bilgisayarlar renkleri anlamak için özel kodlar kullanır. Bu kodlar `#` ile başlar ve 6 harf(A-F) ve sayıyla(0-9) devam eder. Örneğin, mavinin renk kodu `#0000FF` dur. Birçok renk için renk kodlarını buradan bulabilirsiniz: http://www.colorpicker.com/. Ayrıca [tanımlı renkler](http://www.w3schools.com/colors/colors_names.asp)i de kullanabilirsiniz, `red` (kırmızı) ve `green` (yeşil) gibi.
+Ama, biraz da yapalım. Maybe we could change the color of our headers? Bilgisayarlar renkleri anlamak için özel kodlar kullanır. Bu kodlar `#` ile başlar ve 6 harf(A-F) ve sayıyla(0-9) devam eder. Örneğin, mavinin renk kodu `#0000FF` dur. Birçok renk için renk kodlarını buradan bulabilirsiniz: http://www.colorpicker.com/. Ayrıca [tanımlı renkler](http://www.w3schools.com/colors/colors_names.asp)i de kullanabilirsiniz, `red` (kırmızı) ve `green` (yeşil) gibi.
 
 `blog/static/css/blog.css` dosyanıza şu kodu eklemelisiniz:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` bir CSS seçicisidir (selector). Bu, stillerimizi `h1` öğesi içerisindeki `a` öğelerine uyguladığımız anlamına geliyor. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Bu durumda, rengi `#FCA205` yani turuncu yapmasını söylüyoruz. Ya da buraya kendi istediğin rengi koyabilirsin!
+`h1 a` bir CSS seçicisidir (selector). This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiket olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` class'ı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
@@ -125,8 +126,8 @@ Tarayıcı, dosyaları verilen sırada okuyor. O yüzden doğru yerde olduğunda
 
         {% for post in posts %}
             <div>
-                <p>Yayın tarihi: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <p>published: {{ post.published_date }}</p>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -167,8 +168,8 @@ Daha önce yaptığımız gibi, sıralamayı ve yerini kontrol edelim `blog/stat
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -195,8 +196,8 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
 
 ```html
 <div class="post">
-    <p>Yayın tarihi: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <p>published: {{ post.published_date }}</p>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -207,7 +208,7 @@ Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -261,8 +262,8 @@ Sonra, blog gönderilerini gösteren HTML kodunu, class bildirimleri içine alı
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>Yayın tarihi: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -279,9 +280,9 @@ Sonra, blog gönderilerini gösteren HTML kodunu, class bildirimleri içine alı
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        <p>Yayın tarihi: {{ post.published_date }}</p>
+                        <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
