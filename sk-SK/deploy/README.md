@@ -87,7 +87,7 @@ A nakoniec uložíme naše zmeny. Teraz prejdi na konzolu a zadaj nasledujúce p
 
 ## Pushing your code to GitHub
 
-Choď na [GitHub.com](https://www.github.com) a zaregistruj sa na nové bezplatné konto. (Ak si to už urobila v prípravke na workshop, tak to je skvelé!)
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
 
 Potom vytvor nové úložisko a pomenuj ho "my-first-blog". Checkbox "inicializuj s README" nechaj nezaškrtnutý, voľbu .gitignore nechaj prázdnu (urobili sme to manuálne) a Licenciu nechaj ako None.
 
