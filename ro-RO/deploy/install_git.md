@@ -1,4 +1,4 @@
-Git este un "sistem de versionare" folosit de mulți programatori. Acest software poate să urmărească schimbările făcute în fișiere de-a lungul timpului, pentru a putea reveni la anumite versiuni mai târziu. Seamănă cu funcția de "urmărire a modificărilor" din Microsoft Word, dar este mult mai puternic.
+Git este un "sistem de versionare" folosit de mulți programatori. Acest software poate să urmărească schimbările făcute în fișiere de-a lungul timpului, pentru a putea reveni la anumite versiuni mai târziu. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## Instalarea Git
 
