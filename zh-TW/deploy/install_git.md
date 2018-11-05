@@ -1,4 +1,4 @@
-Git 是一個被很多程式設計師使用的 ”版本控制系統"(version control system)。 這個軟體可以追蹤檔案在過去時間的變化，所以以後你可召回特定的版本。 有點像 Microsoft Word 中 ”追蹤改變” 的特性，但功能更強大。
+Git 是一個被很多程式設計師使用的 ”版本控制系統"(version control system)。 這個軟體可以追蹤檔案在過去時間的變化，所以以後你可召回特定的版本。 A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## 安裝 Git
 
