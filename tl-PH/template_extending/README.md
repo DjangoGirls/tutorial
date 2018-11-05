@@ -44,7 +44,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
                         <div class="date">
                             {{ post.published_date }}
                         </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
+                        <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
@@ -96,7 +96,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
         <div class="date">
             {{ post.published_date }}
         </div>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -115,7 +115,7 @@ Gusto nating gagamitin ito isip parte ng ating template para sa lahat ng mga con
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -135,7 +135,7 @@ Isang bagay na lang ang natira. Kailangan nating ikonekta ang dalawang templates
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
