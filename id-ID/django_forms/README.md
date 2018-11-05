@@ -150,7 +150,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 <pre><code class="html">{% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>New post</h1>
+    <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
@@ -298,7 +298,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
                 </div>
             {% endif %}
             <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-            <h1>{{ post.title }}</h1>
+            <h2>{{ post.title }}</h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endblock %}
@@ -422,7 +422,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
     
     * Kemudian dalam konsol Bash [PythonAnywhere](https://www.pythonanywhere.com/consoles/):
     
-    {% filename%} baris perintah {% endfilename%}
+    {% filename %}PythonAnywhere command-line{% endfilename %}
     
         $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
         $ git pull
