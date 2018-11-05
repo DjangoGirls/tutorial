@@ -2,28 +2,28 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE هو أداة توفر لك محرر للشفرة البرمجية والوصول إلى جهاز كمبيوتر يعمل على شبكة الإنترنت حيث يمكنك تثبيت، وكتابة، وتشغيل البرامج. خلال مدة البرنامج التعليمي،Cloud IDE سيكون بمثابة *الجهاز المحلي* الخاص بك. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE هو أداة توفر لك محرر للشفرة البرمجية والوصول إلى جهاز كمبيوتر يعمل على شبكة الإنترنت حيث يمكنك تثبيت، وكتابة، وتشغيل البرامج. خلال مدة البرنامج التعليمي،Cloud IDE سيكون بمثابة *الجهاز المحلي* الخاص بك. سوف تقوم بتنفيذ الأوامر في الواجهة الطرفية مثل زملائك على OS X, Ubuntu, أو Windows, لكن محطتك الطرفية ستكون متصلة بجهاز كومبيوتر يعمل في مكان اخر تقوم Cloud IDE بإعداده لك. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). يمكنك اختيار إحدى بيئات التطوير المتكاملة الخاصة ب Cloud, واتبع تعليمات بيئة التطوير المتكاملة Cloud.
 
 #### PaizaCloud Cloud IDE
 
 1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+2. إنشاء حساب جديد
+3. اضغط *خادم جديد *
+4. اضغط زر الواجهة الطرفية (على الجانب الأيسر من النافذة)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+الآن سترى واجهة مع الشريط جانبي، أزرار على اليسار. انقر فوق زر "المحطة الطرفية" لفتح إطار المحطة الطرفية مع موجه مثل هذا:
 
-{% filename %}Terminal{% endfilename %}
+{% filename %}المحطة الطرفية{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+المحطة الطرفية في IDE سحابة بايزاكلاود مستعدة للتعليمات الخاصة بك. يمكنك تغيير حجم أو تكبير هذا الإطار لجعله أكبر قليلاً.
 
 #### AWS Cloud9
 
 1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
+2. إنشاء حساب جديد
 3. Click *Create Environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
