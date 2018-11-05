@@ -66,19 +66,20 @@ Končno lahko začnemo s pisanjem CSS kode! V svojem urejevalniku odpri prej ust
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-Malce pa si vseeno poglejmo že zdaj. Si želiš recimo spremeniti barvo glave tvojega bloga? Za barve računalniki uporabljajo posebne kode. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Obstajajo pa tudi [vnaprej določene barve](http://www.w3schools.com/colors/colors_names.asp), ki jih lahko opišeš kar z angleškimi imeni, kot recimo `red` za rdečo in `green` za zeleno.
+Malce pa si vseeno poglejmo že zdaj. Maybe we could change the color of our headers? Za barve računalniki uporabljajo posebne kode. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Obstajajo pa tudi [vnaprej določene barve](http://www.w3schools.com/colors/colors_names.asp), ki jih lahko opišeš kar z angleškimi imeni, kot recimo `red` za rdečo in `green` za zeleno.
 
 V datoteko `blog/static/css/blog.css` dodaj sledečo kodo:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` je oznaka, ki pove, kateri del HTML kode želimo s CSS kodo, ki oznaki sledi, spremeniti. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Koda, ki je znotraj zavitih oklepajev, bo spremenila barvo pisave v `#FCA205`, ki je odtenek oranžne. Or you can put your own color here!
+`h1 a` je oznaka, ki pove, kateri del HTML kode želimo s CSS kodo, ki oznaki sledi, spremeniti. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 V datoteki CSS bomo torej določili slog za vsak del HTML kode. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class in id sta oznaki, ki ju za nek element določiš sama. Oznaka class opisuje skupino značk, id pa le eno samo značko. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -127,7 +128,7 @@ Naša CSS datoteka trenutno zgleda takole:
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Find the `h1 a` declaration block (the code between braces `{` and `}`) in the C
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ Znački `div`, ki vsebuje objavo na blogu, dodaj razred `objava`.
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ Zdaj lahko opisanim delom strani dodamo CSS kodo, ki bo določala oblikovanje le
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ Dodane CSS razrede moramo dodati še v našo HTML kodo. Zamenjaj tale del kode:
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ Dodane CSS razrede moramo dodati še v našo HTML kodo. Zamenjaj tale del kode:
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
