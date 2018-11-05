@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > ** Uwaga **: jeśli używasz Chromebooka, dodaj ten wiersz u dołu pliku settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Dodaj również `.c9users.io` do `ALLOWED_HOSTS` jeżeli używasz cloud9
+> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
 ## Inicjalizacja bazy danych
 
@@ -148,6 +148,8 @@ Aby utworzyć bazę danych dla naszego bloga, wykonajmy następujące polecenie 
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying auth.0008_alter_user_username_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -176,18 +178,18 @@ Jeśli pracujesz na Windowsie i zobaczysz w tym momencie `UnicodeDecodeError`, u
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Teraz wszystko, co musisz zrobić, to sprawdzić, czy Twoja strona działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer lub jakąkolwiek inną) i wprowadź ten adres:
+Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Jeśli używasz Chromebooka, zawsze odwiedzasz serwer testowy, uzyskując dostęp do:
+If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
 
 {% filename %}browser{% endfilename %}
 
-    https://django-girls-<your cloud9 username>.c9users.io
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 Gratulacje! Właśnie stworzyłaś swoją pierwszą stronę i uruchomiłaś ją za pomocą serwera! Prawda, że wspaniale?
