@@ -35,8 +35,8 @@ Afin de vous connecter, vous allez devoir créer un *superuser*, c'est à dire u
 
 Tapez votre nom d'utilisateur (en minuscules, sans espace), votre email et votre mot de passe. **Ne soyez pas surpris de ne pas voir le mot de passe quand vous le saisissez, c'est normal.** Saisissez le à l'aveugle et appuyez sur `Entrée` pour continuer. Vous devrez obtenir quelque chose comme ceci (où le nom d'utilisateur et le mail correspond à ce que vous avez saisi) :
 
-    Username: admin
-    Email address: admin@admin.com
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.
