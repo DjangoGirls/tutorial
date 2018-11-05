@@ -1,4 +1,4 @@
-Git adalah "sistem kawalan versi" yang digunakan oleh banyak pengaturcara. Perisian ini boleh menjejaki perubahan pada fail dari semasa ke semasa supaya anda boleh mengimbas kembali versi tertentu kemudian. Sedikit seperti ciri "perubahan trek" dalam Microsoft Word, tetapi lebih berkuasa.
+Git adalah "sistem kawalan versi" yang digunakan oleh banyak pengaturcara. Perisian ini boleh menjejaki perubahan pada fail dari semasa ke semasa supaya anda boleh mengimbas kembali versi tertentu kemudian. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## Memasang Git
 
