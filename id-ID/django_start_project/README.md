@@ -112,7 +112,7 @@ LANGUAGE_CODE = 'de-ch'
 > > 
 > > > ** Catatan </ 0> : Jika Anda menggunakan Chromebook, tambahkan baris ini di bagian bawah file settings.py Anda: ` MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage' </ 1>  </p>
   
-  <p>Also add <code>.c9users.io` to the `ALLOWED_HOSTS` if you are using cloud9</p> </blockquote> 
+  <p>Also add <code>.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9</p> </blockquote> 
 > > > 
 > > > ## Buat database
 > > > 
@@ -147,7 +147,9 @@ LANGUAGE_CODE = 'de-ch'
    Menerapkan auth.0005_alter_user_last_login_null ... OK
    Menerapkan auth.0006_require_contenttypes_0002 ... OK
    Menerapkan auth.0007_alter_validators_add_error_messages ... OK
-   Menerapkan sesi.0001_initial ... baik
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying sessions.0001_initial... OK
 `</pre> 
 > > > 
 > > > Dan kita sudah selesai! Waktunya memulai web server dan melihat apakah website kita bekerja!
@@ -175,18 +177,18 @@ LANGUAGE_CODE = 'de-ch'
 <pre><code>(myvenv) ~/djangogirls$ python manage.py runserver 0:8000
 `</pre> 
 > > > 
-> > > Sekarang yang perlu Anda lakukan hanyalah memeriksa apakah situs Anda berjalan. Buka browser Anda (Firefox, Chrome, Safari, Internet Explorer atau apapun yang Anda gunakan) dan masukkan alamat ini:
+> > > Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 > > > 
 > > > {% filename %}browser{% endfilename %}
 > > > 
 > > >     http://127.0.0.1:8000/
 > > >     
 > > > 
-> > > Jika menggunakan Chromebook, Anda akan selalu mengunjungi server uji dengan mengakses:
+> > > If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
 > > > 
 > > > {% filename %}browser{% endfilename %}
 > > > 
-> > >     https://django-girls-<your cloud9 username>.c9users.io
+> > >     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
 > > >     
 > > > 
 > > > Selamat! Anda baru saja membuat situs web pertama dan menjalankannya menggunakan server web! Bukankah itu mengagumkan?
