@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Observação:** Se você estiver utilizando um Chromebook, adicione esta linha ao final do arquivo settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Também inclua `.c9users.io` à lista de `ALLOWED_HOSTS` se você estiver utilizando o cloud9.
+> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
 ## Configurando um banco de dados
 
@@ -148,6 +148,8 @@ Para criar um banco de dados para o nosso blog, vamos executar o seguinte comand
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying auth.0008_alter_user_username_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -176,18 +178,18 @@ Se você estiver no Windows e o comando falhar com `UnicodeDecodeError`, use o c
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Agora, precisamos verificar se o nosso site está rodando. Abra seu browser (Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você utilizar) e digite o endereço:
+Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Se você estiver com um Chromebook, sempre visite o servidor de teste acessando:
+If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
 
 {% filename %}browser{% endfilename %}
 
-    https://django-girls-<your cloud9 username>.c9users.io
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
