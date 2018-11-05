@@ -57,8 +57,8 @@ Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos que
 
 {% for post in posts %}
     <div>
-        <p>publicado em: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
