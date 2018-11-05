@@ -1,4 +1,4 @@
-Git je "systém na správu verzií", ktorý využíva množstvo programátorov. Tento softvér sleduje v priebehu času zmeny v tvojich súboroch, takže sa kedykoľvek môžeš vrátiť ku konkrétnej verzii. Niečo ako funkcia "sledovať zmeny" vo Worde, ale oveľa výkonnejšie.
+Git je "systém na správu verzií", ktorý využíva množstvo programátorov. Tento softvér sleduje v priebehu času zmeny v tvojich súboroch, takže sa kedykoľvek môžeš vrátiť ku konkrétnej verzii. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## Inštalácia Gitu
 
