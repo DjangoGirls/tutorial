@@ -41,7 +41,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Create a GitHub account
 
-Abre a página [GitHub.com](https://www.github.com) e cria uma nova conta grátis.
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
 # Create a PythonAnywhere account
 
