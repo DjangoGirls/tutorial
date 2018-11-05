@@ -66,19 +66,20 @@ Hora de escrever um pouco de CSS! Abra o arquivo `blog/static/css/blog.css` no s
 
 Nós não vamos nos aprofundar muito no aprendizado do CSS aqui. No final desta página há uma recomendação para um curso gratuito de CSS se você quiser aprender mais.
 
-Mas vamos fazer pelo menos um pouco. Vamos mudar a cor do nosso cabeçalho? Para entender as cores, os computadores usam códigos especiais. Esses códigos começam com `#` e são seguidos de 6 letras (A-F) e números (0-9). Por exemplo, o código para o azul é `#0000FF`. Você pode encontrar os códigos de diversas cores aqui: http://www.colorpicker.com/. Você pode também usar [cores predefinidas](http://www.w3schools.com/colors/colors_names.asp), como `red` e `green`.
+Mas vamos fazer pelo menos um pouco. Maybe we could change the color of our headers? Para entender as cores, os computadores usam códigos especiais. Esses códigos começam com `#` e são seguidos de 6 letras (A-F) e números (0-9). Por exemplo, o código para o azul é `#0000FF`. Você pode encontrar os códigos de diversas cores aqui: http://www.colorpicker.com/. Você pode também usar [cores predefinidas](http://www.w3schools.com/colors/colors_names.asp), como `red` e `green`.
 
 Em seu arquivo `blog/static/css/blog.css`, adicione o seguinte código:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` é um seletor CSS. Isto significa que estamos aplicando nossos estilos a qualquer elemento `a` dentro de um elemento `h1`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, nós estamos dizendo para mudar a cor para `#FCA205`, que é laranja. Mas você pode colocar sua própria cor aqui!
+`h1 a` é um seletor CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 Em um arquivo CSS, nós determinamos estilos para elementos do arquivo HTML. A primeira maneira de identificar elementos é usando seus nomes. Você pode se lembrar desses nomes porque são a mesma coisa que as tags da seção HTML. `a`, `h1` e `body` são exemplos de nomes de elementos. Também identificamos elementos pelo atributo `class` ou pelo atributo `id`. Class e id são nomes que você mesma dá ao elemento. Classes definem grupos de elementos e ids apontam para elementos específicos. Por exemplo, a tag a seguir pode ser identificada usando a tag de nome `a`, a classe `external_link` ou o id de `link_to_wiki_page`:
 
@@ -111,7 +112,7 @@ Agora, seu arquivo deve estar assim:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% load staticfiles %}
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -127,7 +128,7 @@ Agora, seu arquivo deve estar assim:
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Encontre o bloco de declaração `h1 a` (o código entre chaves `{` e `}`) no ar
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -196,8 +197,8 @@ E agora, adicione uma classe `post` em sua `div` que contém um post de blog.
 
 ```html
 <div class="post">
-    <p>publicado: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <p>published: {{ post.published_date }}</p>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ Agora, adicionaremos blocos de declaração a seletores diferentes. Seletores co
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -262,8 +263,8 @@ Agora inclua declarações de classes no código HTML que exibe os posts. No arq
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>publicado: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ por isto:
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
