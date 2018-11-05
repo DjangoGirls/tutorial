@@ -44,7 +44,7 @@ Sonra bunu açalım ve `post_list.html` dosyasındaki her şeyi aşağıdaki gib
                         <div class="date">
                             {{ post.published_date }}
                         </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
+                        <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
@@ -96,7 +96,7 @@ Ama neden? Bir `blok` oluşturdunuz! `{% block %}` içinde HTML ekleyecek alan y
         <div class="date">
             {{ post.published_date }}
         </div>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -115,7 +115,7 @@ Bunu, bütün içerik blokları için şablonumuzun bir parçası olarak kullanm
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -135,7 +135,7 @@ Geriye tek bir şey kaldı. Bu iki şablonu birbirine bağlamamız gerekiyor. Ge
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
