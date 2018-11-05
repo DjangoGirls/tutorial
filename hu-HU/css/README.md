@@ -66,19 +66,20 @@ Itt az ideje, hogy a CSS fájlunkba írjunk is valamit! Nyisd meg a `blog/static
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-De azért egy pár dolgot megmutatunk. Például megváltoztathatnánk a címsor színét? Hogy a számítógépek megértsék a színeket, speciális kódokat használnak. `#` jellel kezdődnek, majd 6 betű (A-F) és szám (0-9) következik. For example, the code for blue is `#0000FF`. Színkódokat például itt találhatsz: http://www.colorpicker.com/. [Előre meghatározott színeket](http://www.w3schools.com/colors/colors_names.asp) is használhatsz, mint a `red` vagy a `green`.
+De azért egy pár dolgot megmutatunk. Maybe we could change the color of our headers? Hogy a számítógépek megértsék a színeket, speciális kódokat használnak. `#` jellel kezdődnek, majd 6 betű (A-F) és szám (0-9) következik. For example, the code for blue is `#0000FF`. Színkódokat például itt találhatsz: http://www.colorpicker.com/. [Előre meghatározott színeket](http://www.w3schools.com/colors/colors_names.asp) is használhatsz, mint a `red` vagy a `green`.
 
 A `blog/static/css/blog.css` fájlba írd bele a következő kódot:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-A `h1 a` egy CSS szelektor. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Ebben az esetben azt mondjuk, hogy változtasd meg a kiválasztott elem színét `#FCA205`-re, ami narancssárgát jelent. Or you can put your own color here!
+A `h1 a` egy CSS szelektor. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 A CSS fájlban mondjuk meg, hogy nézzenek ki a HTML fájl elemei. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. A class és az id olyan nevek, amelyeket te adhatsz meg az elemeknek. A class attribútum elemek egy csoportjára vonatkozik, míg az id-val kifejezetetten egy elemet tudunk beazonosítani. A következő tag például beazonosítható akár az "`a`" tag névvel, az `external_link` class-szal vagy a `link_to_wiki_page` id-val:
 
@@ -127,7 +128,7 @@ The browser reads the files in the order they're given, so we need to make sure 
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Find the `h1 a` declaration block (the code between braces `{` and `}`) in the C
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ Menj végig és nevezd el egy részét a HTML kódodnak. Adj egy `page-header` n
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ Most pedig adjunk stílusblokkokat a különböző szelektorokhoz. A `.` -tal ke
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ Ezután jelöld ki a HTML kódot, ami a post-okat jeleníti meg egy class="post"
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ a `blog/templates/blog/post_list.html` fájlban ezzel:
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
