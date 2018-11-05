@@ -36,7 +36,7 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
 
 ```
 Username: ola
-Email address: ola@admin.com
+Email address: ola@example.com
 Password:
 Password (again):
 Superuser created successfully.
