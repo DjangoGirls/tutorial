@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **ملاحظة**: إذا كنت تستخدم Chromebook، أضف هذا السطر في الجزء السفلي من الملف settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> اضف ايضا `.c9users.io` الى `ALLOWED_HOSTS` اذا كنت تستخدم cloud9
+> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
 ## إعداد قاعدة البيانات
 
@@ -148,6 +148,8 @@ DATABASES = {
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying auth.0008_alter_user_username_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -176,18 +178,18 @@ DATABASES = {
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-الآن كل ما عليك القيام به هو الاختيار الذي يقوم بتشغيل موقع الويب الخاص بك. قم بفتح المتصفح (فايرفوكس، كروم، سفاري، إنترنت إكسبلورر أو مهما كنت تستخدم) وأدخل هذا العنوان:
+Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-إذا كنت تستخدم Chromebook، عليك دائماً زيارة خادم الاختبار الخاص بك عن طريق الوصول إلى:
+If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
 
 {% filename %}browser{% endfilename %}
 
-    https://django-girls-<your cloud9 username>.c9users.io
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 تهانينا! قمت بإنشاء موقعك الأول وتشغيله باستخدام خادم الويب! أليس هذا رائع؟
