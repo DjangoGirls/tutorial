@@ -1,4 +1,4 @@
-Git är ett versionshanteringssystem som används av många programmerare. Med Git kan ändringar som gjorts i dina filer spåras över tiden så att du kan komma åt specifika versioner senare. Lite som funktionen "Spåra ändringar" i Microsoft Word, men mycket mer kraftfullt.
+Git är ett versionshanteringssystem som används av många programmerare. Med Git kan ändringar som gjorts i dina filer spåras över tiden så att du kan komma åt specifika versioner senare. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## Installera Git
 
