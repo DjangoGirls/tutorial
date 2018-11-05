@@ -83,7 +83,7 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 
 ## ارسال برنامجك الى GitHub
 
-إذهب إلى [GitHub.com](https://www.github.com) و أنشئ حساب بالموقع, إن كان لديك حساب مسبقا ذلك يفي بالغرض
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
 
 بعدها أنشئ مستودع جديد. واعطه اسم "my-first-blog". اترك خانة "initialize with a README" دون اختيارها واترك الخيار.gitignore فارغ (لقد فعلنا ذلك يدوياً) وأترك الترخيص على أنه لا شيء.
 
