@@ -35,8 +35,8 @@ Pre prihlásenie musíš vytvoriť *superusera* - užívateľa, ktorý má kontr
 
 Po výzve zadaj svoje meno (malé písmená, bez medzier), emailovú adresu a heslo. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. Výstup by mal vyzerať asi takto (kde užívateľské meno a email by mali byť tvoje vlastné):
 
-    Username: admin
-    Email address: admin@admin.com
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.
