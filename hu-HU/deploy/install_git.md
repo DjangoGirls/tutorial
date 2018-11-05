@@ -1,4 +1,4 @@
-A Git egy "version control system" (VCS, magyarul verziókezelő rendszer), amit sok programozó használ. Ez a szoftver nyomon követ minden változást a fájlokban, így a későbbiekben is visszatérhetünk egy bizonyos régebbi verzióhoz. Valamelyest hasonlít a "változások nyomon követése" funkcióhoz a Microsoft Wordben, de ez jóval hatékonyabb.
+A Git egy "version control system" (VCS, magyarul verziókezelő rendszer), amit sok programozó használ. Ez a szoftver nyomon követ minden változást a fájlokban, így a későbbiekben is visszatérhetünk egy bizonyos régebbi verzióhoz. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## Git telepítése
 
