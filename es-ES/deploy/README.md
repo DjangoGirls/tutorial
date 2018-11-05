@@ -161,7 +161,7 @@ Ahora ejecutaremos el asistente para configurar automáticamente nuestra aplicac
 A medida que se ejecuta, podrás ver lo que hace:
 
 - Se descarga tu código de GitHub
-- Crea un virtualenv en PythonAnywhere, igual que el de tu ordenador local
+- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
 - Actualiza tus ficheros de settings con algunos settings de despliegue
 - Crea la base de datos en PythonAnywhere ejecutando el comando `manage.py migrate`
 - Configura los archivos estáticos (static) (luego hablaremos de éstos con más detalle)
@@ -169,7 +169,7 @@ A medida que se ejecuta, podrás ver lo que hace:
 
 En PythonAnywhere todos estos pasos están automatizados, pero son los mismos que tendrías que seguir en cualquier otro proveedor de servidores.
 
-Lo más importante que debes tener en cuenta es que tu base de datos en PythonAnywhere es totalmente independiente de la base de datos de tu propio ordenador, puede tener diferentes posts y cuentas de administrador. Como consecuencia, igual que lo hicimos en tu ordenador, tenemos que crear la cuenta de administrador con el comando `createsuperuser`. PythonAnywhere ya ha activado el virtualenv automáticamente, así que lo único que tienes que hacer es ejecutar:
+The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. Como consecuencia, igual que lo hicimos en tu ordenador, tenemos que crear la cuenta de administrador con el comando `createsuperuser`. PythonAnywhere ya ha activado el virtualenv automáticamente, así que lo único que tienes que hacer es ejecutar:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
