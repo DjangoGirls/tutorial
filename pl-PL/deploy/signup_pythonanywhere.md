@@ -6,7 +6,7 @@ Utwórz konto dla "Beginner" na PythonAnywhere (darmowy poziom jest dobry, nie p
 
 ![Strona rejestracji PythonAnywhere z przyciskiem, aby utworzyć bezpłatne konto "Beginner"](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> ** Uwaga ** Wybierając tutaj swoją nazwę użytkownika, należy pamiętać, że adres URL bloga będzie miał postać `yourusername.pythonanywhere.com`, więc wybierz swój własny nick lub nazwę tego, o czym będzie blog.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## Tworzenie tokenu PythonAnywhere API
 
