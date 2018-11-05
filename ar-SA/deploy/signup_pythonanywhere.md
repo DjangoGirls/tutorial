@@ -6,7 +6,7 @@ Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you d
 
 ![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **ملاحظة** عند اختيار اسم المستخدم الخاص بك هنا، ضع في اعتبارك أن الموقع (URL) الخاص بك سوف يتخذ شكل `yourusername.pythonanywhere.com`،إذا أما أن تختار الاسم المستعار الخاص بك، أو اسم يليق بالموقع الخاص بك.
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## إنشان قطعة واجهة التطبيق البرمجية - (وابر) PythonAnywhere
 
