@@ -155,7 +155,7 @@ Legal, então vamos ver como ficou o HTML `post_edit.html`:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>Nova postagem</h1>
+    <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
@@ -299,16 +299,16 @@ agora, o template estará parecido com:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-     <div class="post">
-         {% if post.published_date %}
-             <div class="date">
-                 {{ post.published_date }}
-             </div>
-         {% endif %}
-         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-         <h1>{{ post.title }}</h1>
-         <p>{{ post.text|linebreaksbr }}</p>
-     </div>
+    <div class="post">
+        {% if post.published_date %}
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+        {% endif %}
+        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+        <h2>{{ post.title }}</h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endblock %}
 ```
 
@@ -435,7 +435,7 @@ Vamos ver se tudo isso funciona no PythonAnywhere. Hora de fazer outro deploy!
 
 * Então, em um [console Bash do PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
