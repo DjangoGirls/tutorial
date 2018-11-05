@@ -1,6 +1,6 @@
 PythonAnywhere, "bulutta" bulunan sunucularda Python kodunu çalıştırmak için kullanılan bir hizmettir. Sitemizi, canlı ve internette barındırmak için bunu kullanacağız.
 
-PythonAnywhere'de bir "Beginner" hesabı için açın (ücretsiz seviye yeterli, kredi kartına ihtiyacınız yok).
+We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
