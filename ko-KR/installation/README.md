@@ -41,7 +41,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Create a GitHub account
 
-[GitHub.com](https://www.github.com)에 가서 무료 사용자 계정으로 회원가입을 하세요.
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
 # Create a PythonAnywhere account
 
