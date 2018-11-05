@@ -37,8 +37,8 @@ admin.site.register(Post)
 
 هنگام درخواست، نام کاربری خود را (حروف کوچک، فضایی)، آدرس ایمیل و رمز عبور تایپ کنید. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. خروجی باید مانند این باشد (که در آن نام کاربری و ایمیل باید خود شما باشد):
 
-    Username: admin
-    Email address: admin@admin.com
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.
