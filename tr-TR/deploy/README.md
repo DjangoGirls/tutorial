@@ -88,7 +88,7 @@ Ve son olarak değişikliklerimizi kaydediyoruz. Komut satırına gidin ve aşa�
 
 ## Kodunu GitHub'a yollama (Push)
 
-Şimdi [Github.com](https://www.github.com) adresine gidip bir Github hesabı açmalıyız. (Eğer daha önceden hesap açtıysanız süper!)
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
 
 Sıra depomuzu oluşturmaya geldi. 'New Repository' tuşuna tıklayıp "my-first-blog" adında bir Github deposu oluşturalım. "initialize with a README" ve ".gitignore" kutularının seçili olmadığından emin olalım (zaten .gitignore dosyamızı kendimiz oluşturmuştuk). Son olarak License seçeneğinde 'None' ı seçelim.
 
