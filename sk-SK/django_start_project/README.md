@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Poznámka**: Ak používaš Chromebook, pridaj nasledovný riadok na koniec settings.py súboru: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Tiež pridaj `. c9users.io` na `ALLOWED_HOSTS` ak používaš cloud9
+> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
 ## Nastavenie databázy
 
@@ -148,6 +148,8 @@ Databázu pre náš blog vytvoríme spustením tohto príkazu v konzole: `python
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying auth.0008_alter_user_username_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -176,18 +178,18 @@ Ak si vo Windowse a padne ti to s chybovou hláškou `UnicodeDecodeError`, použ
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Teraz už musíš len skontrolovať, či tvoja web stránka funguje. Otvor si prehliadač (Firefox, Chrome, Safari, Internet Explorer alebo čokoľvek používaš) a zadaj adresu:
+Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Ak používaš Chromebook, budeš vždy pristupovať na test server zadaním nasledovnej adresy:
+If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
 
 {% filename %}browser{% endfilename %}
 
-    https://django-girls-<your cloud9 username>.c9users.io
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 Blahoželáme! Práve si vytvorila svoju prvú web stránku, ktorá beží na tvojom webovom serveri. Nie je to úžasné?
