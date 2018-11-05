@@ -1,6 +1,6 @@
 PythonAnyway это сервис позволяющий запускать код написанный на языке Python на сервере в "облаке". Мы используем его для хостинга нашего веб-сайта в интернете.
 
-По ссылке вы сможете открыть счёт для "начинающего" на PythonAnywhere (бесплатный аккаунт вполне подойдёт, вам не понадобится кредитная карта).
+We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
