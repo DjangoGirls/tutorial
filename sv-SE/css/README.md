@@ -66,19 +66,20 @@ Dags att skriva lite CSS! Öppna upp filen `blog/static/css/blog.css` i din kod-
 
 Vi kommer inte gå djupare in på att skräddarsy och lära oss CSS här. Det finns en rekommendation för en gratis CSS kurs på slutet av denna sida om du är sugen på att lära dig mer.
 
-Men låt oss ändra åtminstone lite grann. Vi kanske kan ändra färgen på rubriken? För att förstå färger använder datorer speciella koder. De börjar med `#` följt av 6 bokstäver (A-F) och siffror (0-9). Till exempel är koden för blå `#0000FF`. Du kan hitta exempel på färgkoder här: http://www.colorpicker.com/. Du kan också använda [fördefinierade färger](http://www.w3schools.com/colors/colors_names.asp), som `red` och `green`.
+Men låt oss ändra åtminstone lite grann. Maybe we could change the color of our headers? För att förstå färger använder datorer speciella koder. De börjar med `#` följt av 6 bokstäver (A-F) och siffror (0-9). Till exempel är koden för blå `#0000FF`. Du kan hitta exempel på färgkoder här: http://www.colorpicker.com/. Du kan också använda [fördefinierade färger](http://www.w3schools.com/colors/colors_names.asp), som `red` och `green`.
 
 Lägg till följande i filen `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` är en CSS Selector. Detta innebär att vi tillämpar våra stilar till alla `a`-element inne i ett `h1`-element. Så när vi har något i stil med `<h1><a href="">länk</a></h1>`, kommer `h1 a`-stilen gälla. I detta fall säger vi åt den att ändra sin färg till `#FCA205`, vilket är orange. Or you can put your own color here!
+`h1 a` är en CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Så när vi har något i stil med `<h1><a href="">länk</a></h1>`, kommer `h1 a`-stilen gälla. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 I en CSS-fil bestämmer vi stilar för element i HTML-filen. Det första sättet vi identifierar element är med elementnamnet. Du kanske minns dessa som taggar från HTML-avsnittet. Saker som `a`, `h1` och `body` är alla exempel på elementnamn. Vi identifierar även element genom attributet `class` eller attributet `id`. Class och id är namn du själv ger elementet. Class definierar grupper av element, medan id pekar på specifika element. Till exempel, följande tagg kan identifieras i CSS genom dess elementnamn `a`, dess class-attribut `external_link` eller genom dess id `link_to_wiki_page`:
 
@@ -127,7 +128,7 @@ Filen ska nu se ut såhär:
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Hitta deklarationsblocket till `h1 a` (koden mellan klammerparenteserna `{` och 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ Och lägg till klassen `post` till den `div` som innehåller en blogg-post.
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ Vi kommer nu lägga till deklarations-block till olika selektorer. Selektorer so
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ Sen omger vi HTML-koden som visar inlägg med deklarationer av klasser. Ersätt 
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ i filen `blog/templates/blog/post_list.html` med detta:
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
