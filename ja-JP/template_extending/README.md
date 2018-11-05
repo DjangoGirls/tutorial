@@ -44,7 +44,7 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
                         <div class="date">
                             {{ post.published_date }}
                         </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
+                        <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
@@ -96,7 +96,7 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
         <div class="date">
             {{ post.published_date }}
         </div>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -115,7 +115,7 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -135,7 +135,7 @@ Djangoのまた別の素敵なところは**テンプレート拡張**です。�
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
