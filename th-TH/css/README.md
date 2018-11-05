@@ -66,19 +66,20 @@ Django จะค้นหาโฟลเดอร์ชื่อ "static" ใน
 
 ในที่นี้เราจะไม่ลงรายละเอียดไปถึงการปรับแต่งและการเรียนเกี่ยวกับ CSS ที่ลึกมากเกินไป ที่ด้านล่างของเพจนี้จะมีรายละเอียดเกี่ยวกับคอร์ส CSS ฟรี ถ้าคุณต้องการที่จะเรียนรู้เพิ่มเติม
 
-แต่ตอนนี้เราจะลองตกแต่งสักเล็กน้อย บางทีเราอาจจะลองเปลี่ยนสีข้อความส่วนหัวของเรา? การจะเข้าใจสีนั้น คอมพิวเตอร์จะใช้รหัสพิเศษ โค้ดเหล่านี้ขึ้นต้นด้วย `#` แล้วตามด้วยตัวอักษร 6 ตัว (A ถึง F) และตัวเลข (0 ถึง 9) ตัวอย่างเช่น โค้ดสำหรับสีฟ้าคือ `#0000FF` คุณสามารถหารหัสสีต่างๆได้จากเว๊บนี้ http://www.colorpicker.com/ คุณอาจใช้ [สีที่กำหนดไว้แล้ว](http://www.w3schools.com/colors/colors_names.asp) เช่น `red` และ `green`.
+แต่ตอนนี้เราจะลองตกแต่งสักเล็กน้อย Maybe we could change the color of our headers? การจะเข้าใจสีนั้น คอมพิวเตอร์จะใช้รหัสพิเศษ โค้ดเหล่านี้ขึ้นต้นด้วย `#` แล้วตามด้วยตัวอักษร 6 ตัว (A ถึง F) และตัวเลข (0 ถึง 9) ตัวอย่างเช่น โค้ดสำหรับสีฟ้าคือ `#0000FF` คุณสามารถหารหัสสีต่างๆได้จากเว๊บนี้ http://www.colorpicker.com/ คุณอาจใช้ [สีที่กำหนดไว้แล้ว](http://www.w3schools.com/colors/colors_names.asp) เช่น `red` และ `green`.
 
 ในไฟล์ `blog/static/css/blog.css` ของคุณ ควรเพิ่มโค้ดต่อไปนี้ลงไป:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` คือการเลือกโดย CSS This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. ในกรณีนี้ คือการบอกว่า เราต้องการให้เปลี่ยนสีให้เป็นรหัส `#FCA205` ซึ่งคือสีส้มนั่นเอง Or you can put your own color here!
+`h1 a` คือการเลือกโดย CSS This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 ในไฟล์ CSS เราจะกำหนดลักษณะรูปแบบต่างๆ ให้กับองค์ประกอบที่อยู่ในไฟล์ HTML The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. class และ id คือชื่อที่คุณตั้งให้กับองค์ประกอบในหน้าเว็บเอง class กำหนดกลุ่มขององค์ประกอบ และ id ระบุไปยังองค์ประกอบที่จำเพาะเจาะจง ตัวอย่างเช่น tag ต่อไปนี้อาจะถูกระบุโดย Css โดยใช้ ชื่อ tag `a`, class `external_link`, หรือ id `link_to_wiki_page`:
 
@@ -127,7 +128,7 @@ The browser reads the files in the order they're given, so we need to make sure 
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Find the `h1 a` declaration block (the code between braces `{` and `}`) in the C
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ As mentioned above, CSS has a concept of classes. These allow you to name a part
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -253,9 +254,6 @@ h1, h2, h3, h4 {
 .post h1 a, .post h1 a:visited {
     color: #000000;
 }
- 
-Text
-XPath: /pre[14]/code
 ```
 
 จากนั้นแทนที่โค้ด HTML ที่แสดงโพสต์ของเราด้วยโค้ดที่เราได้ทำกับปรับแต่งหน้าตา:
@@ -266,7 +264,7 @@ XPath: /pre[14]/code
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -285,7 +283,7 @@ XPath: /pre[14]/code
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
