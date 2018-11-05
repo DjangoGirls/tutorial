@@ -1,4 +1,4 @@
-Git adalah suatu "sistem kontrol versi" yang digunakan oleh banyak sekali programmer. Software ini dapat mencatat perubahan file dari waktu ke waktu sehingga anda dapat mencari versi tertentu di kemudian hari. Ini mirip dengan fitur "track changes" pada Microsoft Word, tapi jauh lebih baik.
+Git adalah suatu "sistem kontrol versi" yang digunakan oleh banyak sekali programmer. Software ini dapat mencatat perubahan file dari waktu ke waktu sehingga anda dapat mencari versi tertentu di kemudian hari. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## Menginstal Git
 
