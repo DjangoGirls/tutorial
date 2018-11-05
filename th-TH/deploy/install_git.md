@@ -1,4 +1,4 @@
-Git คือ "version control system" ถูกใช้โดยโปรแกรมเมอร์จำนวนมาก ซอฟต์แวร์นี้สามารถติดตามการเปลี่ยนแปลงของไฟล์ในทุกช่วงเวลาเพื่อให้คุณสามารถย้อนกลับไปยังเวอร์ชันเก่าๆ ได้ในภายหลัง คล้ายกับฟีเจอร์ "track changes" ใน Microsoft Word แต่มีประสิทธิภาพมากกว่า
+Git คือ "version control system" ถูกใช้โดยโปรแกรมเมอร์จำนวนมาก ซอฟต์แวร์นี้สามารถติดตามการเปลี่ยนแปลงของไฟล์ในทุกช่วงเวลาเพื่อให้คุณสามารถย้อนกลับไปยังเวอร์ชันเก่าๆ ได้ในภายหลัง A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## ติดตั้ง Git
 
