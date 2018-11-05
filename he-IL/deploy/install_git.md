@@ -1,4 +1,4 @@
-Git היא תוכנת version control (ובעברית, בקרת גרסאות), שמתכנתים רבים משתמשים בה. התוכנה הזו יודעת לעקוב אחרי שינויים בקבצים לאורך זמן, כך שתמיד אפשר לעבור לגרסה אחרת מאוחר יותר. זה קצת כמו track changes ב-Microsoft Word, אבל הרבה יותר חזק.
+Git היא תוכנת version control (ובעברית, בקרת גרסאות), שמתכנתים רבים משתמשים בה. התוכנה הזו יודעת לעקוב אחרי שינויים בקבצים לאורך זמן, כך שתמיד אפשר לעבור לגרסה אחרת מאוחר יותר. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## התקנת Git
 
