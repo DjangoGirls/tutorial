@@ -66,19 +66,20 @@ Zeit, ein wenig CSS zu schreiben! Öffne die `blog/static/css/blog.css` Datei in
 
 Wir gehen nicht zu sehr auf die Details von CSS ein. Für diejenigen, die mehr über CSS lernen möchten, haben wir am Ende des Kapitels einen Link auf eine Empfehlung für einen kostenlosen CSS-Kurs angefügt.
 
-Aber lass uns wenigstens etwas Kleines probieren. Beispielsweise könnten wir die Farbe unserer Kopfzeile ändern. Computer benutzen spezielle Codes, um Farben zu verstehen. Diese Codes starten immer mit `#`, danach folgen sechs Buchstaben (A-F) und Zahlen (0-9). Blau zum Beispiel ist `#0000FF`. Beispiele für solche Farbcodes findest du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/colors/colors_names.asp) wie `red` und `green` benutzen.
+Aber lass uns wenigstens etwas Kleines probieren. Maybe we could change the color of our headers? Computer benutzen spezielle Codes, um Farben zu verstehen. Diese Codes starten immer mit `#`, danach folgen sechs Buchstaben (A-F) und Zahlen (0-9). Blau zum Beispiel ist `#0000FF`. Beispiele für solche Farbcodes findest du hier: http://www.colorpicker.com/. Du kannst auch [vordefinierte Farben](http://www.w3schools.com/colors/colors_names.asp) wie `red` und `green` benutzen.
 
 In deiner `blog/static/css/blog.css` Datei änderst du den folgenden Code:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-  color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` ist ein CSS-Selektor. Das bedeutet, dass wir unsere Styles auf alle `a` Elemente innerhalb von einem `h1` Element anwenden. Wenn wir also etwas haben wie: `<h1><a href="">link</a></h1>` wird der `h1 a` Style angewendet. In diesem Fall sagen wir, dass die Farbe in `#FCA205` geändert werden soll, was für Orange steht. Du kannst hier auch deine eigene Farbe angeben!
+`h1 a` ist ein CSS-Selektor. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Wenn wir also etwas haben wie: `<h1><a href="">link</a></h1>` wird der `h1 a` Style angewendet. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 In einer CSS-Datei werden Stile für Elemente der HTML-Datei festgelegt. Ein Weg, HTML-Elemente zu identifizieren, ist der Name des Elements. Du erinnerst dich vielleicht an diese Namen, die wir als 'Tags' im HTML Kapitel bezeichnet haben. Zum Beispiel sind `a`, `h1` und `body` solche Elementnamen. Wir identifizieren Elemente auch über die Attribute `class` oder `id`. Klassen (`class`) und IDs (`id`) sind Namen, die du den Elementen selbst gibst. Klassen definieren dabei Gruppen von Elementen und IDs verweisen auf bestimmte Elemente. Du könntest zum Beispiel den folgenden Tag anhand des Elementnamens `a`, der Klasse `external_link` oder der ID `link_to_wiki_page` identifizieren:
 
@@ -127,7 +128,7 @@ Deine Datei sollte jetzt so aussehen:
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Suche den Anweisungsblock: `h1 a` (der Code zwischen den geschweiften Klammern `
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ Jetzt fügen wir dem `div` für den Blog-Inhalt (Post) noch eine Klasse `post` h
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -207,51 +208,51 @@ Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-.page-header {     
-  background-color: #ff9400;     
-  margin-top: 0;     
-  padding: 20px 20px 20px 40px; 
-} 
+.page-header {
+    background-color: #C25100;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
+}
 
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {     
-  color: #ffffff;     
-  font-size: 36pt;     
-  text-decoration: none; 
-} 
+.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
+}
 
-.content {     
-  margin-left: 40px; 
-} 
+.content {
+    margin-left: 40px;
+}
 
-h1, h2, h3, h4 {     
-  font-family: 'Lobster', cursive; 
-} 
+h1, h2, h3, h4 {
+    font-family: 'Lobster', cursive;
+}
 
-.date {     
-  color: #828282; 
-} 
+.date {
+    color: #828282;
+}
 
-.save {     
-  float: right; 
-} 
+.save {
+    float: right;
+}
 
-.post-form textarea, .post-form input {     
-  width: 100%; 
-} 
+.post-form textarea, .post-form input {
+    width: 100%;
+}
 
-.top-menu, .top-menu:hover, .top-menu:visited {     
-  color: #ffffff;     
-  float: right;     
-  font-size: 26pt;     
-  margin-right: 20px; 
-} 
+.top-menu, .top-menu:hover, .top-menu:visited {
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
+}
 
-.post {     
-  margin-bottom: 70px; 
-} 
+.post {
+    margin-bottom: 70px;
+}
 
-.post h1 a, .post h1 a:visited {     
-  color: #000000; 
+.post h1 a, .post h1 a:visited {
+    color: #000000;
 }
 ```
 
@@ -263,7 +264,7 @@ Der HTML-Code, der für die Anzeige der Blogposts verantwortlich ist, soll durch
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ in `blog/templates/blog/post_list.html` durch diesen:
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
