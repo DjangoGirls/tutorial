@@ -24,22 +24,22 @@ Cloud IDE هو أداة توفر لك محرر للشفرة البرمجية و�
 
 1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. إنشاء حساب جديد
-3. Click *Create Environment*
+3. اضغط *اصنع بيئة *
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+الآن سترى واجهة مع الشريط جانبي ونافذة رئيسية كبيرة مع بعض النصوص، ونافذة صغيرة في الجزء السفلي التي تبدو كالتالي:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+هذه المنطقة السفلية هي *الطرفية*، الخاصة بك التي ستحصل فيها علي Cloud 9 مستعدا بتوجيهاتك. يمكنك تغيير حجم هذه النافذة لجعلها أكبر قليلاً.
 
 ### البيئة الافتراضية
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+بيئة افتراضية (وتسمى أيضا فيرتوالينف) هو مثل مربع خاص يمكننا ملئه بأشياء مفيدة مثل اكواد البرمجة من اجل مشروع نعمل عليه. نستخدم البيئة الإفتراضية للحفاض على مجموعة من اكواد البرمجة من مشروع ما ، حتى لا تختلط مع مشاريع اخرى.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+في التيرمينال في الجزء السفلي من واجهة Cloud 9، قم بتشغيل ما يلي:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+اذا لم يعمل معك هذا، اسأل المدرب الخاص بك للحصول على بعض المساعدة.
 
-Next, run:
+وبعد ذلك، قم بتشغيل:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,16 +60,16 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(لاحظ أنه على السطر الأخير نستخدم تيلدا تليها علامة مساواة:~=).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+إنشاء حساب [GitHub](https://github.com).
 
 ### بايثون في كل مكان
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+يتضمن برنامج جانغو لتعليم الفتيات قسما حول ما يسمى النشر، وهي عملية أخذ الكود البرمجي الذي يشغل تطبيق الويب ونقلها إلى جهاز كمبيوتر يمكن الوصول إليه بشكل عام (يسمى الخادم) حتى يتمكن غيرك من للناس من أن يرو عملك.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+هذا الجزء غريب بعض الشيء عند تنفيذ البرنامج التعليمي على جهاز كروم بوك بما أننا نستخدم جهاز كمبيوتر موجود على الإنترنت (على سبيل المثال، جهاز كمبيوتر محمول). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
