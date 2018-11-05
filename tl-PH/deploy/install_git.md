@@ -1,4 +1,4 @@
-Ang Git ay isang "version control system" na ginagamit ng napakaraming mga programmer. Ang software na ito ay maaring magsubaybay sa mga pagbabago sa mga files sa paglipas ng panahon para matandaan mo ang mga bersyon mamaya. Parang katulad ng "track changes" na katangian ng Microsoft Word, pero mas malakas pa.
+Ang Git ay isang "version control system" na ginagamit ng napakaraming mga programmer. Ang software na ito ay maaring magsubaybay sa mga pagbabago sa mga files sa paglipas ng panahon para matandaan mo ang mga bersyon mamaya. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## Pag-install ng Git
 
