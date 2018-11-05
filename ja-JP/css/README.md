@@ -66,19 +66,20 @@ CSSファイルを作って、Webサイトにあなたのスタイルを設定�
 
 ここではCSSのカスタマイズや学習方法については詳しく説明しません。さらに知りたい場合は、このページの最後に無料のCSSの学習コースを紹介していますので、そちらを参考にしてください。
 
-ただ、せめて少しはここでやってみましょう。 ヘッダーの色を変えてみるのもいいかもしれませんね。 色を理解するために、コンピュータは特殊なコードを使います。 コードは、`#` で始まり、6種類のアルファベット（A-F）や数字（0-9）が続きます。 たとえば、青色のコードは `#0000FF` です。 カラーコードのサンプルはこのサイト http://www.colorpicker.com/ で確認できます。 `red` や `green` といった[定義済みの色](http://www.w3schools.com/colors/colors_names.asp)を利用することもできます.
+ただ、せめて少しはここでやってみましょう。 Maybe we could change the color of our headers? 色を理解するために、コンピュータは特殊なコードを使います。 コードは、`#` で始まり、6種類のアルファベット（A-F）や数字（0-9）が続きます。 たとえば、青色のコードは `#0000FF` です。 カラーコードのサンプルはこのサイト http://www.colorpicker.com/ で確認できます。 `red` や `green` といった[定義済みの色](http://www.w3schools.com/colors/colors_names.asp)を利用することもできます.
 
 `blog/static/css/blog.css` ファイルに、次のコードを追加しましょう。
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` はCSSセレクタと呼ばれるものです。 `h1` 要素の中にある `a` 要素にスタイルを適用します、という意味になります。 よって `<h1><a href="">link</a></h1>`となっているとき、 `h1 a` スタイルが適用されます。 この場合、その要素を `#FCA205` に、つまりオレンジ色にしようとしています。 またはあなたの好きな色に変えられます！
+`h1 a` はCSSセレクタと呼ばれるものです。 This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. よって `<h1><a href="">link</a></h1>`となっているとき、 `h1 a` スタイルが適用されます。 In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 CSSファイルには、HTMLファイルの各要素のスタイルを指定していきます。 まずは要素名でもって、その要素を識別します。 HTMLのタグ名は覚えがあるでしょう。 例えば `a`, `h1`, `body` などが要素名の例です。 また、`class` 属性や、`id` 属性によって要素を識別することができます。 classやidは、あなたが自分で要素につけることができる名前です。 classは要素のグループを定義して、idは特定の要素を指定します。 例えば、次のタグは、タグ名 `a`、class名 `external_link`、id名 ` link_to_wiki_page`、どれを使ってもCSSによって識別されます。
 
@@ -127,7 +128,7 @@ CSSセレクタについては[CSS Selectors in w3schools](http://www.w3schools.
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ body {
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ h1 a {
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ h1 a {
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ h1, h2, h3, h4 {
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ h1, h2, h3, h4 {
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
