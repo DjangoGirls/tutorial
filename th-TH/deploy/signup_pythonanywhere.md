@@ -6,7 +6,7 @@ Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you d
 
 ![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **หมายเหตุ** เมื่อคุณตั้งชื่อ username ของคุณตรงนี้ ให้นึกไว้เสมอว่า URL ของบล็อกคุณจะมีลักษณะเป็น `yourusername.pythonanywhere.com` เพราะฉะนั้นคุณจะใช้ชื่อเล่นหรือชื่ออะไรก็ได้ที่บอกว่าบล็อกของคุณนั้นเป็นเรื่องเกี่ยวกับอะไร
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## การสร้าง PythonAnywhere API token
 
