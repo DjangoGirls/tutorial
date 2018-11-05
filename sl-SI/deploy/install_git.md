@@ -1,4 +1,4 @@
-Git je "sistem za porazdeljeno dokumentiranje sprememb in izdajanje različic datotek", ki ga uporablja veliko programerjev. Ta programska oprema sledi spremembam v vaših datotekah, kar vam omogoča, da lahko v nadaljevanju prikličete prejšnje različice. Delovanje je podobno "Sledi spremembam" v programu Microsoft Word, vendar veliko bolj zmogljivo.
+Git je "sistem za porazdeljeno dokumentiranje sprememb in izdajanje različic datotek", ki ga uporablja veliko programerjev. Ta programska oprema sledi spremembam v vaših datotekah, kar vam omogoča, da lahko v nadaljevanju prikličete prejšnje različice. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
 
 ## Namestitev Git
 
