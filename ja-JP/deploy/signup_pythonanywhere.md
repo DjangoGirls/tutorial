@@ -6,7 +6,7 @@ PythonAnywhere で「Beginner」アカウントにサインアップしましょ
 
 ![PythonAnywhere サインアップページが表示する無料の「Beginner」アカウント作成ボタン](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **注** ユーザー名を選ぶとき、あなたのブログのURLが`あなたのユーザー名.pythonanywhere.com`になることを覚えておいて下さい。ですから、自分のニックネームかあなたのブログが何についてのブログか分かるような名前を選んでみて下さい。
+> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## PythonAnywhere APIトークンの作成
 
