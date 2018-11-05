@@ -49,7 +49,17 @@ Prueba esto en tu plantilla.
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-< div >< h1 >< a href = "/" > Django chicas Blog < /a >< / h1 >< / div >{% for post in posts %} < div >< p > publicado: {{ post.published_date }} < /p >< h1 >< a href = "" >{{ post.title }} < /a >< / h1 >< p >{{ post.text|linebreaksbr }} < /p >< / div >{% endfor %}
+<div>
+    <h1><a href="/">Django Girls Blog</a></h1>
+</div>
+
+{% for post in posts %}
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
+{% endfor %}
 ```
 
 {% raw %}Todo lo que pongas entre `{% for %}` y `{% endfor %}` se repetirá para cada objeto de la lista. Refresca la página:{% endraw %}
