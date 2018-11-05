@@ -35,8 +35,8 @@ Giriş yapabilmek için, sitedeki her şey üzerinde kontrolü olan *superuser* 
 
 Giriş satırı geldiğinde, kullanıcı adınızı (küçük harfler ile ve boşluksuz), email adresinizi ve parolanızı girin. **Yazdığınız şifreyi göremezseniz endişelenmeyin - olması gereken budur.** Devam etmek için şifreyi yazıp `enter` 'a basın. Çıktı şunun gibi olmalıdır ( belirtilen kullanıcı adı ve eposta size ait olmalı):
 
-    Username: admin
-    Email address: admin@admin.com
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.
