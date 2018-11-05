@@ -87,7 +87,7 @@ Et pour finir, nous allons enregistrer nos modifications. Tapez ces commandes da
 
 ## Publier votre code sur GitHub
 
-Allez sur [GitHub.com](https://www.github.com) et inscrivez-vous gratuitement (si vous possédez déjà un compte, c'est parfait!)
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
 
 Ensuite, créez un nouveau dépôt en lui donnant le nom "mon-nouveau-blog". Laissez la case "initialisation avec README" décochée, laissez l'option .gitignore vide (nous l'avons fait manuellement) et laissez la Licence en tant que Aucune.
 
