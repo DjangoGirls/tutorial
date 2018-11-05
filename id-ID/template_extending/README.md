@@ -43,7 +43,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
                         <div class="date">
                             {{ post.published_date }}
                         </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
+                        <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
@@ -94,7 +94,7 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
         <div class="date">
             {{ post.published_date }}
         </div>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -113,7 +113,7 @@ Kami akan menggunakan ini sebagai bagian dari template kami untuk semua konten b
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -125,7 +125,7 @@ Hanya tersisa satu hal. Kita perlu menghubungkan dua template ini bersama-sama. 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% memperluas 'blog/base.html' %}
+{% extends 'blog/base.html' %}
 
 {% block content %}
     {% for post in posts %}
@@ -133,7 +133,7 @@ Hanya tersisa satu hal. Kita perlu menghubungkan dua template ini bersama-sama. 
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
