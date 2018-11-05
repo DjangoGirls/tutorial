@@ -87,7 +87,7 @@ Y finalmente guardamos nuestros cambios. Ve a la consola y ejecuta estos comando
 
 ## Subiendo tu código a Github
 
-Ve a [GitHub.com](https://www.github.com) y regístrate para tener una cuenta gratuita. (Si ya tienes una o lo hiciste en la preparación del taller, ¡genial!)
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
 
 A continuación, crea un nuevo repositorio con el nombre "my-first-blog". Deja el checkbox "initialize with a README" sin marcar, deja la opción de .gitignore vacía (ya lo hemos hecho manualmente) y deja la licencia como None.
 
