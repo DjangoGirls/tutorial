@@ -155,10 +155,10 @@ Tamam, hadi `post_edit.html` deki HTML'e bakalım:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>Yeni post</h1>
+    <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Kaydet</button>
+        <button type="submit" class="save btn btn-default">Save</button>
     </form>
 {% endblock %}
 ```
@@ -306,7 +306,7 @@ böylece şablon şöyle görünecektir:
             </div>
         {% endif %}
         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -435,7 +435,7 @@ Bakalım PythonAnywhere'de de çalışacak mı? Tekrar yayına alalım!
 
 * Sonra bir [PythonAnywhere Bash konsol](https://www.pythonanywhere.com/consoles/) una gidip:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
