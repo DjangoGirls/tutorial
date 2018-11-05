@@ -65,19 +65,20 @@ Django автоматически найдет все папки с именем
 
 Мы не будем слишком углубляться в настройки и изучение CSS здесь. В конце страницы находятся рекомендованные бесплатные CSS курсы, если вы захотите изучить CSS самостоятельно.
 
-Но давай сделаем хотя бы немного. Возможно, мы могли бы изменить цвет заголовка? Чтобы понимать цвета, компьютеры используют специальные коды. Эти коды начинаются с `#`, состоят из букв (A-F) и цифр (0-9). Например, код для синего цвета - `#0000FF`. Коды многих цветов можно найти здесь: http://www.colorpicker.com/. Также можешь пользоваться [предопределенными цветами](http://www.w3schools.com/colors/colors_names.asp), такими как `red` и `green`.
+Но давай сделаем хотя бы немного. Maybe we could change the color of our headers? Чтобы понимать цвета, компьютеры используют специальные коды. Эти коды начинаются с `#`, состоят из букв (A-F) и цифр (0-9). Например, код для синего цвета - `#0000FF`. Коды многих цветов можно найти здесь: http://www.colorpicker.com/. Также можешь пользоваться [предопределенными цветами](http://www.w3schools.com/colors/colors_names.asp), такими как `red` и `green`.
 
 В файле `blog/static/css/blog.css` тебе нужно добавить следующий код:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` это CSS селектор. Это означает, что мы применяем наши стили к `любому элементу внутри элемента <code>h1`</code>. Поэтому, когда у нас есть `<h1><a href="">ссылка</a></h1>`, `h1` будет применяться стиль. В этом случае мы говорим о том, что нужно изменить цвет элемента на `#FCA205`, то есть на оранжевый. Или вы можете добавить сюда любой ваш цвет!
+`h1 a` это CSS селектор. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Поэтому, когда у нас есть `<h1><a href="">ссылка</a></h1>`, `h1` будет применяться стиль. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 В CSS файле мы определяем стили для элементов файла HTML. Первый способ определить элементы — по имени. Ты должна помнить эти теги из HTML. `a`, `h1`, `head` - все это примеры имен элементов. Мы также назначить элементу `класс` или атрибут `id`. Class и id – это имена, которые ты сама присваиваешь элементам. Классы (сlass) определяют группы элементов, а идентификаторы (id) указывают на конкретные элементы. Например, следующий тег может быть идентифицирован CSS с использованием имени тега `a`, класса `external_link` или идентификатора `link_to_wiki_page`:
 
@@ -126,7 +127,7 @@ h1 a {
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -167,9 +168,9 @@ body {
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
-    font-family: 'Lobster';
+h1 a, h2 a {
+    color: #C25100;
+    font-family: 'Lobster';
 }
 ```
 
@@ -195,9 +196,9 @@ h1 a {
 
 ```html
 <div class="post">
-    <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
-    <p>{{ post.text|linebreaksbr }}</p>
+    <p>published: {{ post.published_date }}</p>
+    <h2><a href="">{{ post.title }}</a></h2>
+    <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
 
@@ -207,51 +208,50 @@ h1 a {
 
 ```css
 .page-header {
-    background-color: #ff9400;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
+    background-color: #C25100;
+    margin-top: 0;
+    padding: 20px 20px 20px 40px;
 }
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
+    color: #ffffff;
+    font-size: 36pt;
+    text-decoration: none;
 }
 
 .content {
-    margin-left: 40px;
+    margin-left: 40px;
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
+    font-family: 'Lobster', cursive;
 }
 
 .date {
-    float: right;
-    color: #828282;
+    color: #828282;
 }
 
 .save {
-    float: right;
+    float: right;
 }
 
 .post-form textarea, .post-form input {
-    width: 100%;
+    width: 100%;
 }
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
+    color: #ffffff;
+    float: right;
+    font-size: 26pt;
+    margin-right: 20px;
 }
 
 .post {
-    margin-bottom: 70px;
+    margin-bottom: 70px;
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #000000;
+    color: #000000;
 }
 ```
 
@@ -261,11 +261,11 @@ h1, h2, h3, h4 {
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <div class="post">
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endfor %}
 ```
 
@@ -275,19 +275,19 @@ h1, h2, h3, h4 {
 
 ```html
 <div class="content container">
-    <div class="row">
-        <div class="col-md-8">
-            {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        {{ post.published_date }}
-                    </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
-                    <p>{{ post.text|linebreaks }}</p>
-                </div>
-            {% endfor %}
-        </div>
-    </div>
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        <p>published: {{ post.published_date }}</p>
+                    </div>
+                    <h2><a href="">{{ post.title }}</a></h2>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
 </div>
 ```
 
