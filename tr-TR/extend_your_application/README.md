@@ -23,7 +23,7 @@ Halihazırda bir `Post` modelimiz var, dolayısıyla `models.py` dosyasına bir 
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -154,7 +154,7 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -185,7 +185,7 @@ Sitenizin hala PythonAnywhere'de çalışıp çalışmadığına bakmakta fayda 
 
 Sonra bir [PythonAnywhere Bash konsol](https://www.pythonanywhere.com/consoles/) una gidip:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
@@ -200,7 +200,7 @@ PythonAynwhere gibi sunucular "statik dosyalar"a (CSS dosyaları gibi) Python do
 
 Daha önceden çalıştırdığın virtualenv'in hala etkin değilse tekrar aktive ederek başlayın. (PythonAnywhere bunu yapmak için `workon` adlı bir komut kullanır. Kendi bilgisayarında kullandığın `source myenv/bin/activate` komutu gibi.):
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ workon <your-pythonanywhere-username>.pythonanywhere.com
     (kullaniciadiniz.pythonanywhere.com)$ python manage.py collectstatic
