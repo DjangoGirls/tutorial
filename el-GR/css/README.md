@@ -66,19 +66,20 @@ Django already knows where to find the static files for the built-in "admin" app
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-Αλλά ας δοκιμάσουμε μερικά πράγματα. Ίσως θα μπορούσαμε να αλλάξουμε το χρώμα του τίτλου της σελίδας μας; Για να καταλάβουν τα χρώματα, οι υπολογιστές χρησιμοποιούν ειδικούς κώδικες. Αυτοί οι κώδικες ξεκινάνε με `` και ακολουθούνται από 6 γράμματα (A-F) και αριθμούς (0-9). Για παράδειγμα, ο κωδικός για το μπλε είναι `#0000FF`. Μπορείτε να βρείτε τους κωδικούς των χρωμάτων για πολλά χρώματα εδώ: http://www.colorpicker.com/. Context | Request Context. Μπορείς επίσης να χρησιμοποιήσεις [προκαθορισμένα χρώματα](http://www.w3schools.com/colors/colors_names.asp) με το αγγλικό όνομά τους, όπως το `red` (κόκκινο) και το `green` (πράσινο.
+Αλλά ας δοκιμάσουμε μερικά πράγματα. Maybe we could change the color of our headers? Για να καταλάβουν τα χρώματα, οι υπολογιστές χρησιμοποιούν ειδικούς κώδικες. Αυτοί οι κώδικες ξεκινάνε με `` και ακολουθούνται από 6 γράμματα (A-F) και αριθμούς (0-9). Για παράδειγμα, ο κωδικός για το μπλε είναι `#0000FF`. Μπορείτε να βρείτε τους κωδικούς των χρωμάτων για πολλά χρώματα εδώ: http://www.colorpicker.com/. Context | Request Context. Μπορείς επίσης να χρησιμοποιήσεις [προκαθορισμένα χρώματα](http://www.w3schools.com/colors/colors_names.asp) με το αγγλικό όνομά τους, όπως το `red` (κόκκινο) και το `green` (πράσινο.
 
 Στο αρχείο `blog/static/css/blog.css` πρέπει να προσθέσεις τον παρακάτω κώδικα:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-Το `h1 a` είναι ένας επιλογέας CSS. This means we're applying our styles to any `a` element inside of an `h1` element. Έτσι όταν έχουμε κάτι σαν `<h1><a href="">σύνδεσμο</a></h1>`, το `h1 a ` στυλ θα εφαρμοστεί. Σε αυτή τη περίπτωση, του λέμε να αλλάξει το χρώμα του σε `#FCA205`, που είναι πορτοκαλί. Or you can put your own color here!
+Το `h1 a` είναι ένας επιλογέας CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Έτσι όταν έχουμε κάτι σαν `<h1><a href="">σύνδεσμο</a></h1>`, το `h1 a ` στυλ θα εφαρμοστεί. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 Μέσα σε ενα αρχείο CSS καθορίζουμε τα στύλ για τα στοιχεία μέσα στο HTML αρχείο. Ο πρώτος τρόπος που αναγνωρίζουμε στοιχεία είναι με το όνομα στοιχείου. Μπορεί να τα θυμάστε αυτά ως ετικέτες από το τμήμα HTML. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Η τάξη (class) και η ταυτότητα (id) είναι ονόματα που δίνεις εσύ στο κάθε στοιχείο. Οι τάξεις αναφέρονται σε ομάδες στοιχείων και οι ταυτότητες σε συγκεκριμένα στοιχεία. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -127,7 +128,7 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Find the `h1 a` declaration block (the code between braces `{` and `}`) in the C
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ h1 a {
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ h1 a {
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ h1, h2, h3, h4 {
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ h1, h2, h3, h4 {
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
