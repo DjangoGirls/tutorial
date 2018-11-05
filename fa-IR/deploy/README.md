@@ -165,7 +165,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > As you watch that running, you'll be able to see what it's doing:
 > 
 > - Downloading your code from GitHub
-> - Creating a virtualenv on PythonAnywhere, just like the one on your own PC
+> - Creating a virtualenv on PythonAnywhere, just like the one on your own computer
 > - Updating your settings file with some deployment settings
 > - Setting up a database on PythonAnywhere using the `manage.py migrate` command
 > - Setting up your static files (we'll learn about these later)
@@ -173,7 +173,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > 
 > On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
 > 
-> The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own PC, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+> The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
