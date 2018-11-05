@@ -66,19 +66,20 @@ Tijd om wat CSS te schrijven! Open het `blog/static/css/blog.css` bestand in je 
 
 We zullen hier niet te diep ingaan op het customiseren en leren over CSS. Er staan een aanbeveling voor een gratis cursus CSS op het einde van deze pagina als je meer wil leren hierover.
 
-Maar laten we wat details veranderen. Misschien kunnen we de kleur van onze header veranderen? Om kleuren te begrijpen gebruiken computers speciale kleurcodes. Deze codes beginnen met `#`, gevolgd door een combinatie van 6 letters (A-F) en cijfers (0-9). De code voor de kleur blauw is bijvoorbeeld `#0000FF`. Je vindt een groot overzicht van kleurcodes hier: http://www.colorpicker.com/. Je kunt ook voorgedefinieerde kleuren gebruiken zoals `red` en `green`.
+Maar laten we wat details veranderen. Maybe we could change the color of our headers? Om kleuren te begrijpen gebruiken computers speciale kleurcodes. Deze codes beginnen met `#`, gevolgd door een combinatie van 6 letters (A-F) en cijfers (0-9). De code voor de kleur blauw is bijvoorbeeld `#0000FF`. Je vindt een groot overzicht van kleurcodes hier: http://www.colorpicker.com/. Je kunt ook voorgedefinieerde kleuren gebruiken zoals `red` en `green`.
 
 In je `blog/static/css/blog.css` bestand moet je de volgende code toevoegen:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a{
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` is een CSS Selector. Dit betekent dat we onze stijl toepassen op elk `a` element binnen een `h1` element. Dus als we bijvoorbeeld iets hebben als `<h1><a href="">link</a></h1>`, wordt de `h1 a` stijl die we hebben opgegeven toegepast. In dit geval vertellen we het element zijn kleur te veranderen naar `#FCA205`, wat oranje is. Or you can put your own color here!
+`h1 a` is een CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Dus als we bijvoorbeeld iets hebben als `<h1><a href="">link</a></h1>`, wordt de `h1 a` stijl die we hebben opgegeven toegepast. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 In een CSS bestand bepalen we de stijl voor de elementen in het HTML bestand. De eerste manier waarop we elementen identificeren, is met de naam van het element. Je hebt deze eerder voorbij zien komen als tags uit het HTML hoofdstuk. Dingen zoals `a`, `h1` en `body` zijn allemaal namen van elementen. We kunnen elementen ook identificeren bij het attribuut `class` of het attribuut `id`. Class en id zijn namen die je zelf aan een element geeft. Een class definieert een groep van elementen, en id's verwijzen naar specifieke elementen. Je kunt bijvoorbeeld de volgende tag identificeren door de tag naam `a`, de class `external_link`, of het id `link_to_wiki_page` te gebruiken:
 
@@ -127,7 +128,7 @@ Je bestand zou er nu zo uit moeten zien:
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Zoek het `h1 a` declaratieblok op (de code tussen de haken `{` en `}`) in het CS
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ En voeg nu de klasse `post` toe aan de `div` die je blog post bevat.
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ We gaan nu declaratieblokken toevoegen aan verschillende selectors. Selectors di
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ Vervolgens omring je de HTML code die die posts weergeeft met klassedeclaraties.
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ in `blog/templates/blog/post_list.html` met dit:
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
