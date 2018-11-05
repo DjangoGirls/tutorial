@@ -110,7 +110,7 @@ ALLOWED_HOSTS = ['127.0.0.1', ' . pythonanywhere.com']
 > **Nota**: si estas usando un Chromebook, añade esta linea al final del archivo settings.py: `MESSAGE_STORAGE =
 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Añade también `.c9users.io` a `ALLOWED_HOSTS` si estás usando cloud9
+> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
 ## Configurar una base de datos
 
@@ -149,6 +149,8 @@ Para crear una base de datos para nuestro blog, ejecutemos lo siguiente en la co
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying auth.0008_alter_user_username_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -177,18 +179,18 @@ Si estás en Windows y te falla con un error `UnicodeDecodeError`, utiliza en su
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Ahora todo lo que tienes que hacer es comprobar que tu sitio se esté ejecutando. Abre tu navegador (Firefox, Chrome, Safari, Internet Explorer o el que utilices) y escribe la dirección:
+Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Si estàs usando un Chromebook, siempre visitaras tu servidor de pruebas accediendo a:
+If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
 
 {% filename %}browser{% endfilename %}
 
-    https://django-girls-<your cloud9 username>.c9users.io
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 ¡Enhorabuena! ¡Has creado tu primer sitio web y lo has iniciado usando un servidor web! ¿No es genial?
