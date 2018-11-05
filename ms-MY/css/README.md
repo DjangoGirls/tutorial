@@ -66,19 +66,20 @@ Masa untuk menulis beberapa CSS! Buka fail `blog/static/css/blog.css` dalam Peny
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-Tetapi mari kita lakukan sekurang-kurangnya sedikit. Mungkin kita boleh menukar warna header? Untuk memahami warna, komputer menggunakan kod khas. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Anda juga boleh menggunakan [warna-warna yang telah ditetapkan](http://www.w3schools.com/colors/colors_names.asp), seperti `red` dan `green`.
+Tetapi mari kita lakukan sekurang-kurangnya sedikit. Maybe we could change the color of our headers? Untuk memahami warna, komputer menggunakan kod khas. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Anda juga boleh menggunakan [warna-warna yang telah ditetapkan](http://www.w3schools.com/colors/colors_names.asp), seperti `red` dan `green`.
 
 Dalam fail `blog/static/css/blog.css`, anda perlu menambah kod berikut:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
+
 ```
 
-`h1 a` adalah Pilihan CSS. This means we're applying our styles to any `a` element inside of an `h1` element. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. Dalam kes ini, kita sedang memberitahunya untuk menukar warna kepada `#FCA205`, iaitu warna oren. Or you can put your own color here!
+`h1 a` adalah Pilihan CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 Di dalam sebuah fail CSS, kita tentukan gaya bagi unsur-unsur dalam fail HTML. Cara pertama kami mengenal pasti elemen adalah dengan nama elemen. Anda mungkin ingat ini sebagai tanda dari bahagian HTML. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class dan id adalah nama-nama yang anda berikan pada unsur sendiri. Kelas menentukan kumpulan elemen, dan id titik untuk unsur-unsur tertentu. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
@@ -127,7 +128,7 @@ File anda sekarang harus kelihatan seperti ini:
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -168,8 +169,8 @@ Find the `h1 a` declaration block (the code between braces `{` and `}`) in the C
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
@@ -197,7 +198,7 @@ And now add a class `post` to your `div` containing a blog post.
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
@@ -208,7 +209,7 @@ Sekarang kita akan menambah deklarasi blok untuk berbeza pemilih. Selectors star
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -263,7 +264,7 @@ Kemudian mengelilingi HTML kod yang memaparkan catatan dengan deklarasi kelas. M
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -282,7 +283,7 @@ in the `blog/templates/blog/post_list.html` with this:
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
