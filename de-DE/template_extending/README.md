@@ -44,7 +44,7 @@ Wir erstellen jetzt eine `base.html`-Datei in `blog/templates/blog/`:
                         <div class="date">
                             {{ post.published_date }}
                         </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
+                        <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
@@ -92,13 +92,13 @@ Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <div class="date">
-            {{ post.published_date }}
-        </div>
-        <h1><a href="">{{ post.title }}</a></h1>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <div class="post">
+        <div class="date">
+            {{ post.published_date }}
+        </div>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endfor %}
 ```
 
@@ -115,7 +115,7 @@ Dieser Teil unseres Templates soll nun das Basis-Template erweitern. Wir müssen
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -130,15 +130,15 @@ Nur eine Sache noch. Wir müssen die beiden Templates miteinander verknüpfen. D
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
 {% endblock %}
 ```
 
