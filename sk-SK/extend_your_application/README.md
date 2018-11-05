@@ -23,7 +23,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -154,7 +154,7 @@ Bude to vyzerať takto:
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -185,7 +185,7 @@ Bolo by dobré vedieť, či tvoja stránka stále funguje na PythonAnywhere, vš
 
 Potom v [Bash konzole PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
@@ -200,7 +200,7 @@ Servre ako PythonAnywhere sa ku "statickým súborom" (ako CSS súbory) správaj
 
 Začni spustením virtualenvu, ak už nie je aktívny (PythonAnywhere používa príkaz `workon`, je to presne ako `source myenv/bin/activate` príkaz, ktorý si použila na vlastnom počítači):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ workon <your-pythonanywhere-username>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
