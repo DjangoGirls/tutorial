@@ -4,7 +4,7 @@
 
 את עומדת לכתוב את שורת הקוד הראשונה שלך, אז הגיע הזמן להוריד עורך קוד!
 
-> **הערה** אם את משתמשת בChromebook, דלגי על הפרק הזה ועקבי אחר ההוראות בפרק [קנפוג Chromebook](../chromebook_setup/README.md).
+> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
 > 
 > **הערה** ייתכן כי כבר עשית זאת בשלב מוקדם יותר של פרק ההתקנה - אם כן, ניתן לדלג ישירות לפרק הבא!
 
