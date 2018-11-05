@@ -44,7 +44,7 @@ Em seguida, abra o arquivo no editor de código e copie tudo de `post_list.html`
                         <div class="date">
                             {{ post.published_date }}
                         </div>
-                        <h1><a href="">{{ post.title }}</a></h1>
+                        <h2><a href="">{{ post.title }}</a></h2>
                         <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
@@ -96,7 +96,7 @@ Agora, salve `base.html` e abra novamente o seu `blog/templates/blog/post_list.h
         <div class="date">
             {{ post.published_date }}
         </div>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -115,7 +115,7 @@ Queremos usar isso como parte do nosso template para todos os blocos de conteúd
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -135,7 +135,7 @@ Só falta uma coisa. Precisamos juntar estes dois templates. Isto é o que signi
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
