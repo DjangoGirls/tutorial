@@ -15,7 +15,19 @@ We already have a `Post` model, so we don't need to add anything to `models.py`.
 We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-{% meluas 'blog/base.html' %}{% block content %} {% for post in posts %} <div class="post"><div class="date">{{ post.published_date }}</div> <h1><a href="">{{ post.title }}</a></h1> <p>{{ post.text|linebreaksbr }}</p></div> {% endfor %}{% endblock %}
+{% extends 'blog/base.html' %}
+
+{% block content %}
+    {% for post in posts %}
+        <div class="post">
+            <div class="date">
+                {{ post.published_date }}
+            </div>
+            <h2><a href="">{{ post.title }}</a></h2>
+            <p>{{ post.text|linebreaksbr }}</p>
+        </div>
+    {% endfor %}
+{% endblock %}
 ```
 
 {% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
@@ -142,7 +154,7 @@ It will look like this:
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -173,7 +185,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
 
 Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
@@ -188,7 +200,7 @@ Servers like PythonAnywhere like to treat "static files" (like CSS files) differ
 
 Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ workon <your-pythonanywhere-username>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
