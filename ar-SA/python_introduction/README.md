@@ -878,7 +878,7 @@ data-collapse=true ces-->
     - إذا حصلت على `IndentationError`، تحقق من أن كلا من خطوط <`print` لها نفس المسافة البيضاء في بداية السطر: بايثون يريد أن تكون كل شفرة داخل الدالة محاذية بدقة.
     - إذا لم يكن هناك أي إخراج على الإطلاق، تحقق من أن آخر `hi()` *isn't* مسنن - إذا كان كذلك، فسيصبح هذا السطر جزءا من الوظيفة أيضا، ولن يتم تشغيله ابدا.
     
-    Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+    Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
     
     {% filename %}python_intro.py{% endfilename %}
     
@@ -954,7 +954,7 @@ data-collapse=true ces-->
     
     This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
     
-    Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+    Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
     
     {% filename %}python_intro.py{% endfilename %}
     
