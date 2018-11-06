@@ -156,7 +156,7 @@ Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere` den
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
-    $ git clone https://github.com/<github-kullanıcı-adınız>/my-first-blog.git
+    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
 Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
