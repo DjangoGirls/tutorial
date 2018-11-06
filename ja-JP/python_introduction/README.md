@@ -877,7 +877,7 @@ hi()
 - `IndentationError` が出ている場合、`print` 関数の2行が同じ数のスペースでインデントされているかチェックしましょう。関数の中のコードは同じ数のスベースでインデントされているとPythonは考えます。
 - 画面に何も表示されていない場合、最後の `hi()` がインデントされて *いない* かチェックしましょう - もしインデントされていたら、関数の一部になってしまっています。関数が呼び出されていません。
 
-次に引数をつかった関数を作ってみましょう。先ほどの例を使います。'hi' という挨拶をする関数に、挨拶をする人の名前をいれてみます。
+Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -953,7 +953,7 @@ hi("Sonja")
 
 すばらしいですね。 挨拶をする人の名前を変えるたびに繰り返しコードを書く必要がなくなりました。 これが関数を作る理由です。何度も繰り返してコードを書く必要はありません！
 
-もっとスマートなやり方を試してみましょう – ２人以上の名前があり、それぞれに対して条件をつけるのは大変ですよね。
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
