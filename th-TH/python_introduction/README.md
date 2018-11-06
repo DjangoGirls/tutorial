@@ -877,7 +877,7 @@ hi()
 - ถ้าโปรแกรมโชว์ว่า `IndentationError` ให้ตรวจสอบว่าบรรทัดทั้งสองบรรทัดที่คุณพิมพ์ว่า `print` นั้น มีการเคาะเว้นวรรคที่เท่ากัน: Python ต้องการให้โค้ดทั้งหมดที่อยู่ในฟังก์ชั่นสอดคคล้องกันอย่างเรียบร้อย
 - ถ้าหากโปรแกรมไม่แสดงเอาต์พุตใดๆเลย ให้ตรวจสอบว่า `hi()` *ไม่*ได้ถูกเยื้อง ถ้ามันถูกเยื้อง บรรทัดนี้จะถูกรวมเป็นส่วนหนึ่งของฟังก์ชั่นด้วย และมันจะไม่ถูกรัน
 
-เรามาลองสร้างฟังก์ชันที่มีพารามิเตอร์หลายๆตัวกัน เราจะใช้ตัวอย่างก่อนหน้านี้ - ฟังก์ชันที่จะพูด 'hi กับคนที่รันมัน - แล้วตามด้วยชื่อ:
+Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -953,7 +953,7 @@ hi("Sonja")
 
 มันเจ๋งสุดๆไปเลยใช่ป่ะ? ด้วยวิธีนี้ คุณไม่จำเป็นต้องพิมพ์ซ้ำทุกครั้งที่คุณต้องการเปลี่ยนชื่อของบุคคลที่เราต้องการทักทาย และนั่นคือเหตุผลที่เราต้องการฟังก์ชั่น - คุณไม่อยากจะเขียนโค้ดของคุณซ้ำๆ ไงล่ะ!
 
-เรามาลองทำอะไรเจ๋งๆกัน - เรามีชื่อมากกว่าสองชื่อและการเขียนเงื่อนไขให้แต่ละชื่อมันอยากใช่ป่ะ?
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
