@@ -877,7 +877,7 @@ Note: if it didn't work, don't panic! The output will help you to figure why:
 - Kung nakakuha ka ng `IndentationError`, tingnan kung ang dalawang `print` na mga linya ay mayroong whitespace sa simula ng linya: gusto ni python na maganda ang pagkalinya ng mga code sa loob ng function.
 - Kung wala talagang output, tingnan kung ang huling `hi()` *ay hindi* naka-indent - kung naka-indent, ang linyang iyan ay magiging parte din ng function, at hindi ito mapatakbo kahit kailan.
 
-Let's build our first function with parameters. We will use the previous example – a function that says 'hi' to the person running it – with a name:
+Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -953,7 +953,7 @@ Now, what do you think will happen if you write another name in there? (Not Ola 
 
 This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right?
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
