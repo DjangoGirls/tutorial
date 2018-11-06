@@ -12,17 +12,17 @@ Wie alles Unbekannte wird das ein Abenteuer sein - aber keine Sorge: Da du berei
 
 ## Einleitung
 
-Hattest du auch schon einmal das Gefühl, dass Technik in der Welt immer wichtiger wird und du da nicht ganz mithalten kannst?"("? Wolltest du schon immer einmal eine Website bauen, aber hattest dann nicht genug Motivation, damit anzufangen? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Hattest du auch schon einmal das Gefühl, dass Technik in der Welt immer wichtiger wird und du da nicht ganz mithalten kannst?"("? Wolltest du schon immer einmal eine Website bauen, aber hattest dann nicht genug Motivation, damit anzufangen? Hast du dir irgendwann schon einmal gedacht, dass die Computerwelt zu kompliziert für dich ist, so dass du noch nicht einmal den Versuch unternommen hast, dort selbst etwas zu tun?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Dann haben wir hier gute Neuigkeiten für dich! Programmieren ist nicht so schwer, wie du denkst und wir zeigen dir hier, wie viel Spaß es machen kann.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Dieses Tutorial wird dich nicht auf zauberhafte Weise in eine Programmiererin verwandeln. Wenn du gut darin sein willst, brauchst du Monate oder sogar Jahre des Lernens und Übens. Aber wir wollen dir zeigen, dass Programmieren oder Webseitenerstellen nicht so kompliziert ist, wie es scheint. Wir versuchen, dir auf einfache Art verschiedene, kleine Teile zu zeigen, so dass du davon nicht eingeschüchtert wirst.
 
-We hope that we'll be able to make you love technology as much as we do!
+Wir hoffen, dass du danach diese Technik und Technologien so sehr mögen wirst wie wir!
 
-## What will you learn during the tutorial?
+## Was lernst du in diesem Tutorial?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Wenn du mit dem Tutorial fertig bist, hast du eine einfache, aber funktionierende Webanwendung: deinen eigenen Blog. Wir zeigen dir, wie man ihn online stellt, andere können dein Werk also sehen!
 
 It will (more or less) look like this:
 
