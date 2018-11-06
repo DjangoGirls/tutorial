@@ -1,6 +1,6 @@
 # Editor de código
 
-> Para los lectores en casa: este capitulo se explica en el video [Instalando Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
+> Para los lectores en casa: este capitulo se explica en el video [Instalando Python & Editor de Código](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
 
 Estás a punto de escribir tu primera línea de código, así que ¡ya toca descargar un editor de código!
 
