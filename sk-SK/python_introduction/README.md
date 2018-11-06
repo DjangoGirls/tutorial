@@ -877,7 +877,7 @@ Poznámka: Ak nefunguje, nepanikár! Výstup ti pomôže zistiť dôvod, prečo:
 - Ak sa ti zjaví `IndentationError`, uisti sa, že oba `print` riadky, majú rovnaký počet medzier od začiatku riadku: python vyžaduje aby všetky riadky boli pedatne zarovnané.
 - Ak nevidíš žiaden výstup, tak sa pozri či posledné `hi()` *nie je* odsadené - ak je, ten riadok sa stal súčasťou funkcie a nikdy nedojde k jeho spusteniu.
 
-Poďme vytvoriť našu prvú funkciu s parametrami. Použijeme predchádzajúci príklad - funkcia, ktorá hovorí "ahoj" osobe, ktorá ju spustí - s menom:
+Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -953,7 +953,7 @@ No a čo si myslíš, čo sa stane, ak tam napíšeš iné meno? (Nie Ola ani So
 
 Úžasné, nie? Vďaka tomu nemusíš prepisovať dokola to isté zakaždým, keď chceš zmeniť meno osoby, ktorú má funkcia pozdraviť. A to je presne dôvod, prečo potrebujeme funkcie - aby sme nemuseli opakovať svoj kód!
 
-Urobme to teda trochu rozumnejšie - existujú viac ako dve mená a písať podmienku pre každé by bolo trochu náročné, však?
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
