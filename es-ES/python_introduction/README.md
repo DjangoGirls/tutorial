@@ -877,7 +877,7 @@ Nota: Si no funcionó, no te preocupes! La salida le ayudará a entender por qu�
 - Si te sale un `IndentationError`, comprueba que las líneas del `print` tienen el mismo espacio en blanco al comienzo de línea: python requiere que todo el código dentro de la función esté perfectamente alineado.
 - Si no hay ninguna salida, comprueba que el último `hi()` *no esté* identado - si lo está, esa línea también sera parte de la función, y nunca se ejecutará.
 
-Escribamos nuestra primera función con parametros. Usaremos el ejemplo anterior - una funcion que dice 'hi' a la persona ejecutandola - con un nombre:
+Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -953,7 +953,7 @@ Ahora, ¿qué crees que suceda si escribes otro nombre ahí? (No Ola ni Sonja) I
 
 Esto es increíble, ¿verdad? De esta forma no tienes que repetir todo cada vez que deseas cambiar el nombre de la persona a la que la función debería saludar. Y esa es exactamente la razón por la que necesitamos funciones - ¡para no repetir tu código!
 
-Vamos a hacer algo más inteligente - hay más de dos nombres, y escribir una condición para cada uno sería difícil, ¿no?
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
