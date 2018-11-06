@@ -2,17 +2,17 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
+> Dieses Werk ist unter der Creative Commons Attribution-ShareAlike 4.0 International License lizensiert. Eine Kopie dieser Lizenz finden Sie auf http://creativecommons.org/licenses/by-sa/4.0/
 
-## Welcome
+## Willkommen
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Willkommen beim Django Girls Tutorial! Wir freuen uns, dass du hier bist :) In diesem Tutorial schauen wir gemeinsam unter die Haube der Technologien im Internet, geben dir einen Einblick in die Bits und Bytes, die zusammen das Internet bilden, wie wir es heute kennen.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Wie alles Unbekannte wird das ein Abenteuer sein - aber keine Sorge: Da du bereits den Mut aufgebracht hast, hier zu sein, wirst du das schon meistern :)
 
-## Introduction
+## Einleitung
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Hattest du auch schon einmal das Gefühl, dass Technik in der Welt immer wichtiger wird und du da nicht ganz mithalten kannst?"("? Wolltest du schon immer einmal eine Website bauen, aber hattest dann nicht genug Motivation, damit anzufangen? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
 Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
 
