@@ -4,7 +4,7 @@
 
 أنت على وشك كتابة أول سطر كود خاص بك، لذا حمل برنامج محرر الكود!
 
-> **ملاحضة**إذا كنت تستخدم كروم بوك تخطى هذا القسم وتابع الإرشادات الموجودة في [إعداد كروم بوك](../chromebook_setup/README.md). The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **ملاحضة**إذا كنت تستخدم كروم بوك تخطى هذا القسم وتابع الإرشادات الموجودة في [إعداد كروم بوك](../chromebook_setup/README.md). بيئة التطوير المتكاملة IDE السحابية التي اخترتها (PaizaCloud Cloud IDE or AWS Cloud9) تحتوي على محرر أكواد، وعندما تفتح ملف في بيئة التطوير خاصتك عن طريق قائمة ملف، سوف تقوم تلقائياً باستخدام المحرر.
 > 
 > **ملاحظة** من الممكن أنك فعلت هذا بوقت سابق في فصل التثبيت، بأمكانك تخطي هذا إلى الفصل التالي!
 
