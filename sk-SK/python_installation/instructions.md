@@ -26,7 +26,7 @@ In upcoming steps, you'll be using the Windows Command Line (which we'll also te
 
 Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
-1. install all Windows Updates and try to install Python again; or
+1. nainštalovať všetky Windows aktualizácie a skúsiť nainštalovať Python znovu; alebo
 2. nainštalovať [staršiu Python verziu](https://www.python.org/downloads/windows/), napr., [3.4.6](https://www.python.org/downloads/release/python-346/).
 
 If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
