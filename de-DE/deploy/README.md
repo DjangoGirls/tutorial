@@ -87,7 +87,7 @@ Nun speichern wir unsere Änderungen durch folgende Eingabe in der Konsole:
 
 ## Den Code auf GitHub veröffentlichen
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+Gehe auf [GitHub.com](https://www.github.com) eröffne ein neues, kostenloses Nutzerkonto. (Falls Du es bereits während der Workshop Vorbereitung eingerichtet hast, ist das großartig!) Stelle sicher, dass Du Dein Passwort nicht vergisst (füge es zu zu Deinem Passwort-Manager hinzu, falls Du einen solchen verwendest).
 
 Erstelle dann ein neues Repository und gib ihm den Namen "my-first-blog". Lass das Kontrollkästchen "initialise with a README" deaktiviert und die Einstellung der Option .gitignore leer (das haben wir schon von Hand gemacht) und lass die Lizenz auf "None".
 
