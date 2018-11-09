@@ -2,16 +2,16 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Το CloudIDE είναι ένα εργαλείο το οποίο σου παρέχει έναν επεξεργαστή κώδικα καθώς και πρόσβαση σε έναν υπολογιστή στο internet στον οποίο μπορείς να εγκαταστήσεις, να γράψεις και να τρέξεις το λογισμικό. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Το CloudIDE είναι ένα εργαλείο το οποίο σου παρέχει έναν επεξεργαστή κώδικα καθώς και πρόσβαση σε έναν υπολογιστή στο internet στον οποίο μπορείς να εγκαταστήσεις, να γράψεις και να τρέξεις το λογισμικό. Κατά τη διάρκεια του οδηγού, το CloudIDE θα παίζει το ρόλο του *local machine* (δηλαδή του τοπικού υπολογιστή σας). Παραταύτα, θα χρειαστεί να γράφετε εντολές στο τερματικό όπως ακριβώς οι συμμαθητές σας που χρησιμοποιούν OS X, Ubuntu ή Windows, με την μόνη διαφορά ότι το τερματικό δεν θα τρέχει στον υπολογιστή που κάθεστε αλλά στο cloud (σύννεφο), εκεί που το όρισε το CloudIDE (σε κάποιον εικονικό υπολογιστή, δηλαδή, στο internet). Εδώ είναι οι οδηγίες για τα cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). Μπορείτε να επιλέξετε ένα από τα cloud IDEs και να ακολουθήσετε τις αντίστοιχες οδηγίες του.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+1. Πηγαίνετε στο [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Δημιούργησε λογαριασμό
+3. Κάντε κλικ στο κουμπί *New Server*
+4. Κάντε κλικ στο κουμπί Terminal (στην αριστερή πλευρά του παραθύρου)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Τώρα θα πρέπει να δείτε ένα interface με ένα πλευρικό τμήμα και κουμπιά στα αριστερά. Κάντε κλικ στο κουμπί «Terminal» για να ανοίξετε το παράθυρο του τερματικού (ή αλλιώς "κοσνόλα" ή "γραμμή εντολών") όπως παρακάτω:
 
 {% filename %}Terminal{% endfilename %}
 
