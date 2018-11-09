@@ -10,26 +10,26 @@
 
 ### Μπορείς να προτείνεις τυχόν επιπρόσθετες πηγές;
 
-Ναι! Υπάρχουν *πολλές* πηγές στο διαδίκτυο σχετικά με την εκμάθηση γλωσσών προγραμματισμού όλων των ειδών. Ίσως να είναι δύσκολη η επιλογή του επόμενου βήματος αλλά μην ανησυχείτε. Σας καλύπτουμε. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Ναι! Υπάρχουν *πολλές* πηγές στο διαδίκτυο σχετικά με την εκμάθηση γλωσσών προγραμματισμού όλων των ειδών. Ίσως να είναι δύσκολη η επιλογή του επόμενου βήματος αλλά μην ανησυχείτε. Σας καλύπτουμε. Όποια και αν ήταν τα ενδιαφέροντα σας προτού έρθετε στην κοινότητα των Django Girls και οποιαδήποτε ενδιαφέροντα αναπτύξατε κατά τη διάρκεια του οδηγού, παρακάτω σας παρουσιάζουμε μερικές δωρεάν πηγές (κάποιες από τις οποίες δεν είναι αμιγώς δωρεάν αλλά περιέχουν δωρεάν κομμάτια) τις οποίες μπορείτε να χρησιμοποιήσετε προκειμένου να πετύχετε τον στόχο σας.
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – the course costs money but you can request a free eBook licence by contacting author Tracy Osborn at <tracy@limedaring.com>
+- Το άλλο μας βιβλίο, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [Ο επίσημος οδηγός του Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Ξεκινώντας με το Django με μαθήματα βίντεο](http://www.gettingstartedwithdjango.com/)
+- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – το μάθημα δεν είναι δωρεάν αλλά μπορείτε να ζητήσετε μια δωρεάν eBook άδεια από την συγγραφέα Tracy Osborn στο <tracy@limedaring.com>
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS και JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Μάθημα web development από την εταιρεία Codecademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
+- [Μάθημα Python από την εταιρεία Codecademy](https://www.codecademy.com/learn/learn-python)
+- [Μάθημα Python από την Google](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – οι πρώτες ασκήσεις είναι δωρεάν
+- [New Coder tutorials](http://newcoder.io/tutorials/) – είναι μια ποικιλία πρακτικών παραδειγμάτων του πως μπορεί να χρησιμοποιηθεί η γλώσσα προγραμματισμού Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python courses](https://www.coursera.org/specializations/python) – some video lectures can be audited for free
 
