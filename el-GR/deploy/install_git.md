@@ -1,11 +1,11 @@
-Το Git είναι ένα «σύστημα ελέγχου έκδοσης» και χρησιμοποιείται από πολλούς προγραμματιστές. Αυτό το λογισμικό μπορεί να παρακολουθήσει τις αλλαγές στα αρχεία με την πάροδο του χρόνου έτσι ώστε να μπορείτε να ανακαλέσετε συγκεκριμένες εκδόσεις σε μεταγενέστερο στάδιο. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Το Git είναι ένα «σύστημα ελέγχου έκδοσης» και χρησιμοποιείται από πολλούς προγραμματιστές. Αυτό το εργαλείο μπορεί να παρακολουθήσει τις αλλαγές στα αρχεία με την πάροδο του χρόνου έτσι ώστε να μπορείτε να ανακαλέσετε συγκεκριμένες εκδόσεις σε μεταγενέστερο στάδιο. Είναι κάπως σαν την δυνατότητα "παρακολούθηση αλλαγών" σε προγράμματα επεξεργασίας κειμένου (όπως το Microsoft Word ή το LibreOffice Writer) αλλά πολύ πιο δυνατό.
 
 ## Εγκαθιστώντας το Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-You can download Git from [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Εκτός από αυτό, οι προκαθορισμένες ρυθμίσεις είναι σωστές. Επίσης η επιλογές Checkout Windows-style και Commit Unix-style κατά το τέλος μίας γραμμής είναι προτεινόμενες.
+Μπορείτε να κατεβάσετε το Git από το [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Εκτός από αυτό, οι προκαθορισμένες ρυθμίσεις είναι σωστές. Επίσης η επιλογές Checkout Windows-style και Commit Unix-style κατά το τέλος μίας γραμμής είναι προτεινόμενες.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
