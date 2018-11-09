@@ -144,41 +144,41 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Θα ξέρετε ότι έχετε ξεκινήσει το `virtualenv` όταν δείτε ότι γραμμή εντολών στην κονσόλα σας είναι προκαθορισμένη με `(myvenv)`.
+Θα ξέρετε ότι είστε μέσα σε ένα `virtualenv` όταν δείτε την γραμμή εντολών στην κονσόλα σας να είναι συμπληρωμένη με το όνομα του μέσα σε παρένθεση, πχ `(myvenv)`.
 
-Όταν δουλεύετε μέσα σε ένα εικονικό περιβάλλον, `python` θα αναφέρετε αυτόματα στην σωστή έκδοση ώστε να μπορείτε να χρησιμοποιήσετε `python` αντί για `python3`.
+Όταν δουλεύετε μέσα σε ένα εικονικό περιβάλλον, η εντολή `python` θα αναφέρετε αυτόματα στην σωστή έκδοση ώστε να μπορείτε να χρησιμοποιήσετε την εντολή `python` αντί για `python3`.
 
-Εντάξει, έχουμε τοποθετήσει όλες τις σημαντικές εξαρτήσεις. Μπορούμε επιτέλους να εγκαταστήσουμε το Django!
+Εντάξει, μέχρι τώρα έχουμε τακτοποιήσει το περιβάλλον εργασίας μας. Μπορούμε επιτέλους να εγκαταστήσουμε το Django!
 
 ## Εγκατάσταση Django
 
-Τώρα που έχετε ξεκινήσει το `virtualenv` σας, μπορείτε να εγκαταστήσετε το Django.
+Τώρα που είστε μέσα στο `virtualenv`, μπορείτε να εγκαταστήσετε το Django.
 
-Πριν κάνουμε αυτό, πρέπει να σιγουρευτούμε ότι έχουμε την τελευταία έκδοση του `pip`, το λογισμικό που χρησιμοποιούμε για να εγκαταστήσουμε το Django:
+Πριν κάνουμε αυτό, πρέπει να σιγουρευτούμε ότι έχουμε την τελευταία έκδοση του `pip`, το εργαλείο που χρησιμοποιούμε για να εγκαταστήσουμε το Django (και οποιοδήποτε άλλο Python πακέτο όπως θα δούμε αργότερα):
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Εγκατάσταση πακέτων με τα requirements
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Το αρχείο requirements είναι μια λίστα από dependencies (δυστυχώς, πάλι, δεν υπάρχει αντίστοιχος ελληνικός όρος αλλά φανταστείτε το ως τις "απαιτήσεις" της εφαρμογής σας - απαιτήσεις όχι σε μνήμη, σκληρό δίσκο κλπ αλλά σε άλλα προγράμματα) προς εγκατάσταση χρησιμοποιώντας την εντολή `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Δημιουργήστε πρώτα ένα αρχείο `requirements.txt` μέσα στο φάκελο `djangogirls /` χρησιμοποιώντας το πρόγραμμα επεξεργασίας κώδικα που εγκαταστήσατε νωρίτερα. Μπορείτε να το κάνετε αυτό, ανοίγοντας ένα νέο αρχείο στο πρόγραμμα επεξεργασίας κώδικα και στη συνέχεια αποθηκεύοντάς το ως `requirements.txt` στο φάκελο `djangogirls /`. Ο φάκελός σας θα μοιάζει κάπως έτσι:
 
     djangogirls
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Στο αρχείο `djangogirls/requirements.txt` θα πρέπει να προσθέσετε τα ακόλουθα:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Τώρα τρέξτε `pip install -r requirements.txt` για να ξεκινήσει η εγκατάσταση του Django.
 
 {% filename %}command-line{% endfilename %}
 
