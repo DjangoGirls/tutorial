@@ -30,13 +30,13 @@
 - [Μάθημα Python από την Google](https://developers.google.com/edu/python/)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – οι πρώτες ασκήσεις είναι δωρεάν
 - [New Coder tutorials](http://newcoder.io/tutorials/) – είναι μια ποικιλία πρακτικών παραδειγμάτων του πως μπορεί να χρησιμοποιηθεί η γλώσσα προγραμματισμού Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python courses](https://www.coursera.org/specializations/python) – some video lectures can be audited for free
+- [edX](https://www.edx.org/course?search_query=python) – σε αυτό το γνωστό site, μπορείτε να παρακολουθήσετε τα περισσότερα μαθήματα δωρεάν αλλά για την απόκτηση κάποιου πιστοποιητικού τότε θα χρειαστεί να καταβάλετε κάποιο ποσό ανάλογα το μάθημα και το πιστοποιτικό
+- [Μαθήματα για Python από το Coursera](https://www.coursera.org/specializations/python) – μερικά μαθήματα βίντεο είναι δωρεάν
 
-#### Working with data
+#### Δουλεύοντας με δεδομένα
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Μάθημα επιστημονικών δεδομένων από την εταιρία Codecademy](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – σε αυτό το γνωστό site, μπορείτε να παρακολουθήσετε τα περισσότερα μαθήματα δωρεάν αλλά για την απόκτηση κάποιου πιστοποιητικού τότε θα χρειαστεί να καταβάλετε κάποιο ποσό ανάλογα το μάθημα και το πιστοποιτικό
+- [Dataquest](https://www.dataquest.io/) – οι πρώτες 30 "αποστολές" είναι δωρεάν
 
-We can't wait to see what you build next!
+Ανυπομονούμε να δούμε το επόμενο σας project!
