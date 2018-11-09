@@ -10,13 +10,13 @@
 
 ## Ας χρησιμοποιήσουμε το Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Το Bootstrap είναι μια από τις πιο δημοφιλή HTML / CSS εργαλειοθήκες (framework) που αποσκοπούν στην εύκολη και γρήγορη ανάπτυξη όμορφων ιστοσελίδων: https://getbootstrap.com/
 
 Γράφτηκε από προγραμματιστές που εργάστηκαν στο Twitter. Τώρα αναπτύσσεται από εθελοντές από ολόκληρο το κόσμο!
 
 ## Εγκατάσταση του Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Για την εγκατάσταση του Bootstrap, ανοίξτε το αρχείο `.html` στον επεξεργαστή κώδικα και προσθέστε αυτό στην ενότητα `<head>`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Αυτό δεν προσθέτει κάποια αρχεία στο project σας. Απλώς, δείχνει σε αρχεία που υπάρχουν στο διαδίκτυο. Πηγαίνετε, λοιπόν, επισκεφτείτε την ιστοσελίδα σας και ανανεώστε τη σελίδα. Νάτο!
 
 ![Σχήμα 14.1](images/bootstrap1.png)
 
@@ -33,13 +33,13 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ## Στατικά αρχεία στο Django
 
-Τέλος, ας ρίξουμε μια πιο προσεκτική ματιά στα λεγόμενα **στατικά αρχεία**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Τέλος, ας ρίξουμε μια πιο προσεκτική ματιά στα λεγόμενα **στατικά αρχεία**. Τα στατικά αρχεία (static files) είναι όλα τα αρχεία CSS και όλα τα αρχεία εικόνας (φωτογραφίες). Το περιεχόμενο τους δεν εξαρτάται από το εκάστοτε request και έτσι μένει ίδιο για κάθε χρήστη.
 
-### Πού βρίσκονται τα στατικά αρχεία στο Django
+### Πού να τοποθετήσετε τα στατικά αρχεία στο Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Το Django ήδη ξέρει πού να βρει τα στατικά αρχεία για την ενσωματωμένη εφαρμογή «admin». Τώρα πρέπει να προσθέσουμε κάποια στατικά αρχεία για την δική μας εφαρμογή, `blog`.
 
-Για να το κάνουμε αυτό πρέπει να δημιουργήσουμε ένα φάκελο με το όνομα `static` μέσα στο φάκελο του app blog:
+Για να το κάνουμε αυτό πρέπει να δημιουργήσουμε ένα φάκελο με το όνομα `static` μέσα στο φάκελο blog της εφαρμογής μας:
 
     djangogirls
     ├── blog
@@ -53,7 +53,7 @@ Django already knows where to find the static files for the built-in "admin" app
 
 ## Το πρώτο CSS αρχείο σας!
 
-Ας δημιουργήσουμε ένα CSS αρχείο τώρα, για να προσθέσετε το δικό σας στυλ στην ιστοσελίδα σας. Δημιουργήστε έναν νέο κατάλογο που ονομάζεται `css` μέσα στο `static` κατάλογο. Στη συνέχεια, δημιουργήστε ένα νέο αρχείο που ονομάζεται `blog.css` μέσα σε αυτόν τον κατάλογο `css`. Είστε έτοιμη;
+Ας δημιουργήσουμε ένα CSS αρχείο τώρα, για να προσθέσετε το δικό σας στυλ στην ιστοσελίδα σας. Δημιουργήστε έναν νέο φάκελο που ονομάζεται `css` μέσα στο `static` φάκελο. Στη συνέχεια, δημιουργήστε ένα νέο αρχείο που ονομάζεται `blog.css` μέσα σε αυτόν τον φάκελο `css`. Είστε έτοιμοι;
 
     djangogirls
     └─── blog
@@ -62,9 +62,9 @@ Django already knows where to find the static files for the built-in "admin" app
                    └─── blog.css
     
 
-Ώρα να γράψουμε λίγη CSS! Άνοιξε το αρχείο `blog/static/css/blog.css` στον επεξεργαστή.
+Ώρα να γράψουμε λίγο CSS! Άνοιξτε το αρχείο `blog/static/css/blog.css` στον επεξεργαστή.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Δεν θα εμβαθύνουμε πολύ σχετικά με την γλώσσα CSS. Υπάρχει μια πρόταση σχετικά με μάθημα CSS στο τέλος αυτής της σελίδας αν θέλετε να μάθετε περισσότερα.
 
 Αλλά ας δοκιμάσουμε μερικά πράγματα. Maybe we could change the color of our headers? Για να καταλάβουν τα χρώματα, οι υπολογιστές χρησιμοποιούν ειδικούς κώδικες. Αυτοί οι κώδικες ξεκινάνε με `` και ακολουθούνται από 6 γράμματα (A-F) και αριθμούς (0-9). Για παράδειγμα, ο κωδικός για το μπλε είναι `#0000FF`. Μπορείτε να βρείτε τους κωδικούς των χρωμάτων για πολλά χρώματα εδώ: http://www.colorpicker.com/. Context | Request Context. Μπορείς επίσης να χρησιμοποιήσεις [προκαθορισμένα χρώματα](http://www.w3schools.com/colors/colors_names.asp) με το αγγλικό όνομά τους, όπως το `red` (κόκκινο) και το `green` (πράσινο.
 
