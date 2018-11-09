@@ -11,33 +11,33 @@
 3. Κάντε κλικ στο κουμπί *New Server*
 4. Κάντε κλικ στο κουμπί Terminal (στην αριστερή πλευρά του παραθύρου)
 
-Τώρα θα πρέπει να δείτε ένα interface με ένα πλευρικό τμήμα και κουμπιά στα αριστερά. Κάντε κλικ στο κουμπί «Terminal» για να ανοίξετε το παράθυρο του τερματικού (ή αλλιώς "κοσνόλα" ή "γραμμή εντολών") όπως παρακάτω:
+Τώρα θα πρέπει να δείτε μια σελίδα με πλαϊνή μπάρα εργασίων και κουμπιά στα αριστερά. Κάντε κλικ στο κουμπί «Terminal» για να ανοίξετε το παράθυρο του τερματικού (ή αλλιώς "κοσνόλα" ή "γραμμή εντολών") όπως παρακάτω:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Το τερματικό στο PaizaCloud Cloud IDE είναι έτοιμο να δεχτεί τις εντολές σας. Μπορείτε να αλλάξετε το μέγεθος του παραθύρου ή να το μεγιστοποιήσετε, αν θέλετε.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. Μεταβείτε στο [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Δημιούργησε λογαριασμό
+3. Κάντε κλικ στο κουμπί *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Τώρα θα πρέπει να δείτε μια σελίδα με πλαϊνή μπάρα εργασίων, ένα μεγάλο κύριο παράθυρο με κείμενο και ένα μικρό παράθυρο στο κάτω μέρος της που μοιάζει κάπως έτσι:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+Αυτή η περιοχή κάτω είναι το *τερματικό*, όπου θα μπορείτε να δίνετε εντολές στον υπολογιστή που έφτιαξε για εσάς το Cloud 9. Μπορείτε να αλλάξετε τις διαστάσεις του παραθύρου ανάλογα τις ανάγκες σας.
 
 ### Εικονικό Περιβάλλον
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Το εικονικό περιβάλλον (επίσης και ως virtualenv - virtual environment) είναι σαν ένα κουτί όπου μπορούμε να βάλουμε μέσα κώδικα για ένα project χωρίς αυτό να αλληλεπιδρά με κώδικα του συστήματος. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
