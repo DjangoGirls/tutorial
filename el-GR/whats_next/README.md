@@ -6,11 +6,11 @@
 
 Κάνε ένα διάλλειμα και χαλάρωσε! Μόλις έφερες εις πέρας κάτι πραγματικά μεγάλο.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Μετά, ακολούθησε την κοινότητα Django Girls στο [Facebook](http://facebook.com/djangogirls) ή/και στο [Twitter](https://twitter.com/djangogirls) ούτως ώστε να μένεις ενημερωμένος.
 
-### Can you recommend any further resources?
+### Μπορείς να προτείνεις τυχόν επιπρόσθετες πηγές;
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Ναι! Υπάρχουν *πολλές* πηγές στο διαδίκτυο σχετικά με την εκμάθηση γλωσσών προγραμματισμού όλων των ειδών. Ίσως να είναι δύσκολη η επιλογή του επόμενου βήματος αλλά μην ανησυχείτε. Σας καλύπτουμε. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
