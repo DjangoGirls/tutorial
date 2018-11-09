@@ -68,8 +68,8 @@
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Ο οδηγός της κοινότητας Django Girls περιλαμβάνει μια ενότητα αυτού που ονομάζεται Deployment (δυστυχώς δεν υπάρχει κάποιος ακριβής ελληνικός όρος, οπότε θα αναφερόμαστε σε αυτόν με την αγγλική λέξη) που είναι η δυνατότητα του να "ανεβάσεις" τον κώδικα σου - αυτόν που είναι γραμμένη η εφαρμογή σου - σε κάποιον διακομιστή (server) ο οποίος είναι προσβάσιμος από όλους, ούτως ώστε οι άλλοι να δουν τη δουλειά σας.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Αυτό το κομμάτι είναι λίγο περίεργο όταν ακολουθείτε αυτόν τον οδηγό σε ένα Chromebook, δεδομένου ότι χρησιμοποιείτε ήδη έναν υπολογιστή που βρίσκεται στο διαδίκτυο (σε αντίθεση με την περίπτωση του φορητού ή επιτραπέζιου υπολογιστή). Ωστόσο, θεωρείται ακόμα χρήσιμος ο όρος αυτός (deployment), καθώς μπορούμε να αναλογιστούμε το χώρο εργασίας του Cloud 9 ως το «προς εξέλιξη έργο» και την εταιρεία PythonAnywhere ως ένα μέρος για να "ανεβάσουμε" την εργασία μας καθώς αυτή θα ολοκληρώνεται.
 
-Κάνε λοιπόν, ένα νέο λογαριασμό στο PythonAnywhere ακολουθώντας αυτόν τον σύνδεσμο [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Δημιουργήστε λοιπόν έναν νέο λογαριασμό στο PythonAnywhere ακολουθώντας αυτόν τον σύνδεσμο [www.pythonanywhere.com](https://www.pythonanywhere.com).
