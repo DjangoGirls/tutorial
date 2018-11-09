@@ -161,7 +161,7 @@ Agora vamos executar a ferramenta para configurar a nossa aplicação a partir d
 Enquanto assiste a execução da ferramenta, você pode ver o que ela está fazendo:
 
 - Baixando o seu código do GitHub;
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
+- Criando um virtualenv no PythonAnywhere, igual ao que existe no seu computador
 - Atualizando o seu arquivo de configuração com algumas configurações sobre o deploy;
 - Criando um banco de dados no PythonAnywhere usando o comando `manage.py migrate`;
 - Criando os seus arquivos estáticos (nós aprenderemos sobre eles mais tarde)
