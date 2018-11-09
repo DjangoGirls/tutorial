@@ -89,7 +89,7 @@ h1 a, h2 a {
 
 Διαβάστε περισσότερα για τους επιλογείς CSS στο [w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Στη συνέχεια, πρέπει να πούμε στο HTML αρχείο οτι θέλουμε να συμπεριλάβουμε αρχείο/α CSS. Ανοίξτε το αρχείο `blog/templates/blog/post_list.html` και προσθέστε αυτή τη γραμμή στην αρχή:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -97,7 +97,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load static %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Απλά "φορτώνουμε" στατικά αρχεία σε αυτό το σημείο :) Μεταξύ του `<head>` και `</head>` ετικετών (tags), μετά τα links με τα Bootstrap αρχεία CSS, προσθέστε αυτή τη γραμμή:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -105,9 +105,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Ο browser διαβάζει τα αρχεία με την σειρά που δίνονται, οπότε πρέπει να σιγουρευτούμε ότι αυτή είναι η σωστή θέση. Διαφορετικά ο κωδικός στο αρχείο μας μπορεί να παρακαμφθεί από τον κώδικα στα αρχεία Bootstrap. Είπαμε στο template μας που βρίσκεται το CSS αρχείο μας.
+Ο browser διαβάζει τα αρχεία με την σειρά που δίνονται, οπότε πρέπει να σιγουρευτούμε ότι αυτή είναι η σωστή θέση. Διαφορετικά ο κώδικας στο αρχείο μας μπορεί να παρακαμφθεί από τον κώδικα στα αρχεία Bootstrap. Μόλις είπαμε στο template μας που βρίσκεται το CSS αρχείο μας.
 
-Το αρχείο σου πρέπει τώρα να μοιάζει κάπως έτσι:
+Το αρχείο σας πρέπει τώρα να μοιάζει κάπως έτσι:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -136,11 +136,11 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 </html>
 ```
 
-Εντάξει, αποθηκεύσε το αρχείο και να ανανεώσε την σελίδα!
+Εντάξει, αποθηκεύστε το αρχείο και ανανεώστε τη σελίδα!
 
 ![Σχήμα 14.2](images/color2.png)
 
-Πολύ καλά! Ίσως να θέλουμε να δώσουμε λίγο αέρα στην ιστιοσελίδα μας και να αυξήσουμε το περιθώριο στα αριστερά; Ας το δοκιμάσουμε!
+Πολύ καλά! Θα θέλατε να δώσουμε λίγο αέρα στην ιστοσελίδα μας και να αυξήσουμε το περιθώριο στα αριστερά; Ας το δοκιμάσουμε!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -150,11 +150,11 @@ body {
 }
 ```
 
-Προσθέστε αυτό στο CSS σας, αποθηκεύστε τον φάκελο και δείτε πως λειτουργεί!
+Προσθέστε αυτό στο CSS σας, αποθηκεύστε τον αρχείο και δείτε πως λειτουργεί!
 
 ![Σχήμα 14.3](images/margin2.png)
 
-'Ισως μπορούμε να αλλάξουμε την γραμματοσειρά της επικεφαλίδας μας. Μεσα στο `<head>` που βρίσκεται μεσα στο αρχείο `blog/templates/blog/post_list.html` βάλε αυτό:
+'Ισως μπορούμε να αλλάξουμε την γραμματοσειρά της επικεφαλίδας μας. Μεσα στο `<head>` που βρίσκεται μεσα στο αρχείο `blog/templates/blog/post_list.html` βάλτε αυτό:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -162,9 +162,9 @@ body {
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Όπως πριν, ελέγξτε τη σειρά και τοποθετήστε το πριν τον σύνδεσμο `blog/static/css/blog.css`. Αυτή η γραμμή θα εισάγει μια γραμματοσειρά που λέγεται *Lobster* από τα Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Βρείτε το `h1 a` μπλοκ (τον κώδικα μεταξύ `{` και `}`) μέσα στο αρχείο CSS `blog/static/css/blog.css`. Τώρα προσθέστε την γραμμή `font-family: 'Lobster';` μεταξύ των αγκύλων και ανανεώστε τη σελίδα:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -179,7 +179,7 @@ h1 a, h2 a {
 
 Τέλεια!
 
-Όπως αναφέρθηκε παραπάνω, CSS έχει μια έννοια των τάξεων. Αυτά σας επιτρέπουν να ονομάσετε ένα μέρος του κώδικα HTML και να εφαρμόσετε στυλ μόνο σε αυτό το μέρος, χωρίς να επηρεάσετε άλλα μέρη. Αυτό μπορεί να είναι εξαιρετικά χρήσιμο! Maybe you have two divs that are doing something different (like your header and your post). Μια κατηγορία μπορεί να σε βοηθήσει να τα κάνετε να μοιάζουν διαφορετικά.
+Όπως αναφέρθηκε παραπάνω, το CSS έχει την έννοια των κλάσεων (classes). Αυτές σας επιτρέπουν να ονομάσετε ένα μέρος του κώδικα HTML και να εφαρμόσετε στυλ μόνο σε αυτό το μέρος, χωρίς να επηρεάσετε άλλα μέρη. Αυτό μπορεί να είναι εξαιρετικά χρήσιμο! Ίσως να έχετε δύο divs τα οποία περιγράφουν κάτι διαφορετικό το καθένα (όπως πχ μια επικεφαλίδα και ένα post). Μια class μπορεί να σας βοηθήσει να τα κάνετε να μοιάζουν διαφορετικά.
 
 Ονόμασε μερικά μέρη του HTML. Πρόσθεσε μια τάξη που ονομάζεται `page-header` στο `div` που περιέχει την επικεφαλίδα σου, έτσι:
 
