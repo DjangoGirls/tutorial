@@ -1,10 +1,10 @@
-# What's next?
+# Τι υπάρχει μετά;
 
-Να συγχαρείς τον εαυτό σου! **Είσαι φοβερή**. Είμαστε περήφανοι! <3
+Επιβράβευσε τον εαυτό σου! **Είσαι φοβερή**. Είμαστε περήφανοι! <3
 
 ### Τι μπορείς να κάνεις τώρα;
 
-Take a break and relax! You have just done something really huge.
+Κάνε ένα διάλλειμα και χαλάρωσε! Μόλις έφερες εις πέρας κάτι πραγματικά μεγάλο.
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
