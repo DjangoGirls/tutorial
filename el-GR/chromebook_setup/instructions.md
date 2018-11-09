@@ -37,9 +37,9 @@
 
 ### Εικονικό Περιβάλλον
 
-Το εικονικό περιβάλλον (επίσης και ως virtualenv - virtual environment) είναι σαν ένα κουτί όπου μπορούμε να βάλουμε μέσα κώδικα για ένα project χωρίς αυτό να αλληλεπιδρά με κώδικα του συστήματος. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Το εικονικό περιβάλλον (επίσης και ως virtualenv - virtual environment) είναι σαν ένα κουτί όπου μπορούμε να βάλουμε μέσα κώδικα για ένα project χωρίς αυτό να αλληλεπιδρά με κώδικα του συστήματος. Τα χρησιμοποιούμε ούτως ώστε κάθε project να έχει τα δικά του κομμάτια κώδικα και έτσι επιτυγχάνουμε απομόνωση των projects. Φανταστείτε να είχατε ένα project που εξαρτάται από την έκδοση Django 2.0 και ένα άλλο που εξαρτάται από το Django 2.1. Πως θα ικανοποιούσατε τις απαιτήσεις κάθε project; Η απάντηση είναι τα virtualenvs!
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Στο τερματικό σας στο κάτω μέρος, γράψτε τα εξής:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Αν αυτό εξακολουθεί να μην λειτουργεί, θα πρέπει να ζητήσετε βοήθεια από κάπου.
 
-Next, run:
+Στη συνέχεια, τρέξτε τις ακόλουθες εντολές:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,7 +60,7 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(παρατήρησε ότι στην τελευταία γραμμή χρησιμοποιούμε μία περισπωμένη, την οποία ακολουθεί ένα ίσον:~=).
+(παρατήρησε ότι στην τελευταία γραμμή χρησιμοποιούμε μία περισπωμένη, την οποία ακολουθεί ένα ίσον: ~=).
 
 ### GitHub
 
