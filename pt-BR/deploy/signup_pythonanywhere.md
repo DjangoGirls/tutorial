@@ -1,6 +1,6 @@
 PythonAnywhere é um serviço para execução de código Python em servidores "na nuvem". Nós vamos usar para hospedar nosso site e deixá-lo online na internet.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+Iremos hospedar o blog que estamos construindo em PythonAnywhere. Cadastre-se para uma conta de "Iniciante" no PythonAnywhere (O pacote gratuito está bom, você não ira precisar de um cartão de crédito).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
