@@ -59,22 +59,22 @@ data-collapse=true ces-->
 > 
 >     The virtual environment was not created successfully because ensurepip is not available.  Στα λειτουργικά συστήματα Debian/Ubuntu, θα χρειαστεί να εγκαταστήσετε το πακέτο python3-venv χρησιμοποιώντας την ακόλουθη εντολή.
 >        apt install python3-venv
->     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
+>     Ίσως χρειαστεί να χρηιμοποιήσετε sudo με αυτή την εντολή.  Αφού εγκατασταθεί επιτυχώς το πακέτο python3-venv, επαναδημιουργήστε το εικονικό σας περιβάλλον.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> Σε αυτή την περίπτωση, ακολουθήστε τις οδηγίες παραπάνω και εγκαταστήστε το πακέτο `python3-venv`: {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
 > 
-> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> **ΣΗΜΕΙΩΣΗ:** Σε μερικές εκδόσεις των Debian/Ubuntu η ενεργοποίηση του virtual environment με αυτόν τον τρόπο, παράγει το ακόλουθο σφάλμα:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> To get around this, use the `virtualenv` command instead.
+> Για την επίλυση του χρησιμοποιήστε την εντολή `virtualenv`.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -82,14 +82,14 @@ data-collapse=true ces-->
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **ΣΗΜΕΙΩΣΗ:** Αν λάβετε κάποιο σφάλμα όπως
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> τότε τρέξτε:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -100,7 +100,7 @@ data-collapse=true ces-->
 
 ## Δουλεύοντας με το virtualenv
 
-Η παραπάνω εντολή θα δημιουργήσει ένα κατάλογο που ονομάζεται `myvenv` (ή όποιο άλλο όνομα διαλέξετε) που περιέχει το εικονικό μας περιβάλλον (βασικά ένα μάτσο καταλόγων και αρχείων).
+Η παραπάνω εντολή θα δημιουργήσει έναν φάκελο που ονομάζεται `myvenv` (ή όποιο άλλο όνομα διαλέξετε) που περιέχει το εικονικό μας περιβάλλον (βασικά ένα μάτσο φακέλων και αρχείων).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -112,7 +112,7 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **ΣΗΜΕΙΩΣΗ:** στα Windows 10 μπορεί να λάβετε ένα σφάλμα στο Windows PowerShell που λέει ` η εκτέλεση των σεναρίων έχει απενεργοποιηθεί σε αυτό το σύστημα `. Σε αυτή την περίπτωση, ανοίξτε ένα άλλο Windows PowerShell με την επιλογή "Εκτέλεση ως διαχειριστής". Έπειτα δοκιμάστε να πληκτρολογήσετε την ακόλουθη εντολή πριν ξεκινήσετε το εικονικό περιβάλλον σας:
+> **ΣΗΜΕΙΩΣΗ:** στα Windows 10 μπορεί να λάβετε ένα σφάλμα στο Windows PowerShell που λέει `η εκτέλεση των σεναρίων έχει απενεργοποιηθεί σε αυτό το σύστημα`. Σε αυτή την περίπτωση, ανοίξτε ένα άλλο Windows PowerShell με την επιλογή "Εκτέλεση ως διαχειριστής". Έπειτα δοκιμάστε να πληκτρολογήσετε την ακόλουθη εντολή πριν ξεκινήσετε το εικονικό σας περιβάλλον:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -133,7 +133,7 @@ data-collapse=true ces-->
     $ source myvenv/bin/activate
     
 
-Θυμηθείτε να αντικαταστήσετε το `myvenv` με το επιλεγμένο `virtualenv` όνομα σας!
+Θυμηθείτε να αντικαταστήσετε το `myvenv` με το επιλεγμένο `virtualenv` όνομα που επιλέξατε!
 
 > **ΣΗΜΕΙΩΣΗ:** μερικές φορές `πηγή` μπορεί να μην είναι διαθέσιμη. Σε αυτές τις περιπτώσεις προσπαθήστε να κάνετε αυτό:
 > 
