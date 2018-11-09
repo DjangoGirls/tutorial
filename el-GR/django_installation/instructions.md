@@ -6,13 +6,13 @@
 
 Πριν την εγκατάσταση του Django, θα εγκαταστήσουμε ενα εξαιρετικά χρήσιμο εργαλείο για να κρατήσουμε το περιβάλλον του υπολογιστή σας τακτοποιημένο και καθαρό. Μπορείτε να παραβλέψετε αυτό το βήμα, αλλά προτείνουμε να το ακολουθήσετε καθώς αν δεν το ακολουθήσετε υπάρχει σοβαρή πιθανότητα να προκύψουν σφάλματα αργότερα. Ξεκινώντας με την καλύτερη δυνατή εγκατάσταση, θα αποφύγετε πολλά προβλήματα στο μέλλον!
 
-Ας δημιουργήσουμε λοιπόν ενα **εικονικό περιβάλλον** (το αποκαλούμενο *virtualenv*). Το virtualenv θα απομονώσει την κάθε εγκατάσταση Python/Django ανά έργο (project). Αυτό σημαίνει οι αλλαγές που κάνεις σε μια ιστιοσελίδα δεν επηρεάζουν οποιεσδήποτε άλλες ιστιοσελίδες που επίσης αναπτύσσεις παράλληλα. Καλό, ε;
+Ας δημιουργήσουμε λοιπόν ενα **εικονικό περιβάλλον** (το αποκαλούμενο *virtualenv*). Το virtualenv θα απομονώσει την κάθε εγκατάσταση Python/Django ανά έργο (project). Αυτό σημαίνει ότι οι αλλαγές που κάνετε σε μια ιστοσελίδα (έργο - project) δεν θα επηρεάζουν οποιεσδήποτε άλλες ιστοσελίδες που αναπτύσσετε παράλληλα. Κάθε ιστοσελίδα θα έχει τα δικά της πακέτα και κάθε πακέτο την δική του έκδοση (version). Καλό, ε;
 
-Το μόνο που χρειάζεται να κάνεις είναι να βρείς έναν κατάλογο στον οποίο θέλεις να δημιουργήσεις το `virtualenv`. Το home directory σου, για παράδειγμα. Στα Windows, θα μοιάζει κάπως έτσι `C:\Users\Name` ( όπου `Name` είναι το όνομα της σύνδεσης σας).
+Το μόνο που χρειάζεται να κάνετε είναι να βρείτε έναν φάκελο στον οποίο θέλετε να δημιουργήσετε το `virtualenv`. Για παράδειγμα, το home directory σας. Στα Windows, θα μοιάζει κάπως έτσι `C:\Users\Name` ( όπου `Name` είναι το όνομα της σύνδεσης σας).
 
-> **ΣΗΜΕΙΩΣΗ:** Στα Windows, σιγουρευτείτε ότι αυτός ο κατάλογος δεν περιέχει χαρακτήρες που τονίζονται ή ειδικούς χαρακτήρες, αν το όνομα χρήστη σας περιέχει χαρακτήρες που τονίζονται, χρησιμοποιείστε ένα διαφορετικό κατάλογο, για παράδειγμα, `C:\djangogirls`.
+> **ΣΗΜΕΙΩΣΗ:** Στα Windows, σιγουρευτείτε ότι αυτός ο κατάλογος δεν περιέχει χαρακτήρες που τονίζονται ή ειδικούς χαρακτήρες. Αν το όνομα χρήστη σας περιέχει χαρακτήρες που τονίζονται, χρησιμοποιείστε ένα διαφορετικό φάκελο, για παράδειγμα `C:\djangogirls`.
 
-Για αυτό το tutorial θα χρησιμοποιήσουμε ένα νεο κατάλογο `djangogirls` από το home directory σου:
+Για αυτό το tutorial θα χρησιμοποιήσουμε ένα νεο φάκελο `djangogirls` από το home directory σας:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@
     $ cd djangogirls
     
 
-Θα δημιουργήσουμε ένα virtualenv που ονομάζεται `myvenv`. Η γενική εντολή είναι:
+Θα δημιουργήσουμε ένα virtualenv με το όνομα `myvenv`. Η γενική εντολή είναι:
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,34 +30,34 @@
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+Για την δημιουργία ενός νέου `virtualenv`, θα χρειαστεί να ανοίξετε την γραμμή εντολών στον υπολογιστή σας (κονσόλα) και να τρέξετε την εντολή `python -m venv myvenv`. Θα μοιάζει κάπως έτσι:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Όπου `myvenv` είναι το όνομα του `virtualenv` σας. Μπορείς να χρησιμοποιήσεις οποιοδήποτε άλλο όνομα, αλλά πρέπει να είναι σε πεζά, χωρίς κενά, εμφάσεις ή ειδικούς χαρακτήρες. Είναι επίσης καλή ιδέα να κρατήσετε το όνομα μικρό - θα το αναφέρετε συχνά!
+Όπου `myvenv` είναι το όνομα του `virtualenv` σας. Μπορείτε να χρησιμοποιήσετε οποιοδήποτε άλλο όνομα, αλλά πρέπει να είναι αγγλικοί χαρακτήρες, πεζά, χωρίς κενά, εμφάσεις ή άλλους ειδικούς χαρακτήρες. Είναι επίσης καλή ιδέα να κρατήσετε το όνομα μικρό - θα το αναφέρετε συχνά!
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Μπορούμε να δημιουργήσουμε ένα `virtualenv` σε Linux και σε OS X τρέχοντας την εντολή `python3 -m venv myvenv`. Θα μοιάζει κάπως έτσι:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-Το `myvenv` είναι το όνομα του `virtualenv` σου. Μπορείς να χρησιμοποιήσεις οποιοδήποτε άλλο όνομα, αλλα πρέπει να είναι σε πεζά και χωρίς κενά. It is also a good idea to keep the name short as you'll be referencing it a lot!
+Το `myvenv` είναι το όνομα του `virtualenv` σας. Μπορείτε να χρησιμοποιήσετε οποιοδήποτε άλλο όνομα, αλλα πρέπει να είναι αγγλικοί χαρακτήρες, πεζά, χωρίς κενά και χωρίς άλλους ειδικούς χαρακτήρες. Είναι επίσης καλή ιδέα να κρατήσετε το όνομα μικρό - θα το αναφέρετε συχνά!
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **ΣΗΜΕΙΩΣΗ:** Σε μερικές εκδόσεις των Debian/Ubuntu ίσως εμφανιστεί το ακόλουθο σφάλμα:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     The virtual environment was not created successfully because ensurepip is not available.  On Debian/Ubuntu systems, you need to install the python3-venv package using the following command.
+>     The virtual environment was not created successfully because ensurepip is not available.  Στα λειτουργικά συστήματα Debian/Ubuntu, θα χρειαστεί να εγκαταστήσετε το πακέτο python3-venv χρησιμοποιώντας την ακόλουθη εντολή.
 >        apt install python3-venv
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
