@@ -5,16 +5,16 @@
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Μπορείτε να κατεβάσετε το Git από το [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Εκτός από αυτό, οι προκαθορισμένες ρυθμίσεις είναι σωστές. Επίσης η επιλογές Checkout Windows-style και Commit Unix-style κατά το τέλος μίας γραμμής είναι προτεινόμενες.
+Μπορείτε να κατεβάσετε το Git από το [git-scm.com](https://git-scm.com/). Μπορείτε να πατάτε "επόμενο" σε όλα τα στάδια εκτός από δύο: στο στάδιο που ρωτάει για τον προτιμώμενο επεξεργαστή κειμένου θα πρέπει να επιλέξετε το Nano και στο στάδιο με το όνομα "Adjusting your PATH environment", θα πρέπει να επιλέξετε το "Use Git and optional Unix tools from the Windows Command Prompt" (την τελευταία επιλογή). Εκτός από αυτό, οι προκαθορισμένες ρυθμίσεις είναι μια χαρά. Επίσης, οι επιλογές Checkout Windows-style και Commit Unix-style είναι μια χαρά.
 
-Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
+Μη ξεχάσετε να επανεκκινήσετε τη γραμμή εντολών ή το powershell μετά την επιτυχής εγκατάσταση. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
+Κατεβάστε το Git από το [git-scm.com](https://git-scm.com/) και ακολουθήστε τις οδηγίες.
 
-> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **Σημείωση** Αν έχετε OS X 10.6, 10.7, ή 10.8, θα χρειαστεί να εγκαταστήσετε την έκδοση του git από εδώ: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
