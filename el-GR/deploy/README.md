@@ -205,7 +205,7 @@
 - Έχετε κάνει λάθος στο GitHub URL
 - Αν δείτε ένα σφάλμα που λέει *«Could not find your settings.py»*, είναι πιθανώς επειδή δεν συμπεριλάβατε όλα τα αρχεία σας στο repo ή/και δεν έχετε κάνει push τις αλλαγές σας στο GitHub επιτυχώς. Δείτε ξανά την ενότητα Git παραπάνω
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Αν δείτε ένα σφάλμα όταν προσπαθείτε να επισκεφθείτε την ιστοσελίδα σας, το πρώτο μέρος για debbuging είναι το αρχείο **error log**. Θα βρείτε ένα σύνδεσμο για το error log στο ["Web" page](https://www.pythonanywhere.com/web_app_setup/) του PythonAnywhere. Δείτε εάν υπάρχουν μηνύματα σφάλματος εκεί. Τα πιο πρόσφατα είναι στο κάτω μέρος.
 
 There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
