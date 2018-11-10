@@ -155,7 +155,7 @@ NameError: name 'Post' is not defined
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+Δυστυχώς, το post που αναρτήσαμε από την Python κονσόλα δεν είναι δημοσιευμένο ακόμα. Αλλά μπορούμε να το αλλάξουμε αυτό. Πρώτα, πάρτε ένα instance από το post που θέλετε να δημοσιεύσετε:
 
 {% filename %}command-line{% endfilename %}
 
@@ -163,7 +163,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-And then publish it with our `publish` method:
+Και έπειτα δημοσιεύστε το με την μέθοδο `publish`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,7 +171,7 @@ And then publish it with our `publish` method:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+Τώρα προσπαθήστε να πάρετε μια λίστα από δημοσιευμένα posts ξανά (πιέστε το πάνω βελάκι στο πληκτρολόγιο 3 φορές και έπειτα `enter`):
 
 {% filename %}command-line{% endfilename %}
 
@@ -180,9 +180,9 @@ Now try to get list of published posts again (press the up arrow key three times
 <QuerySet [<Post: Sample title>]>
 ```
 
-### Ordering objects
+### Ταξινόμηση objects
 
-Τα QuerySets επίσης σου επιτρέπουν να ταξινομήσεις την λίστα των αντικειμένων. Ας προσπαθήσουμε να τα ταξινομήσουμε με το πεδίο `ημερομηνία_δημιουργίας`:
+Τα QuerySets επίσης σου επιτρέπουν να ταξινομήσεις την λίστα των αντικειμένων. Ας προσπαθήσουμε να τα ταξινομήσουμε ως προς πεδίο `created_date`:
 
 {% filename %}command-line{% endfilename %}
 
