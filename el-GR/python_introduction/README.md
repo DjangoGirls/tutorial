@@ -2,19 +2,19 @@
 
 # Εισαγωγή στην Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Μέρος αυτού του κεφαλαίου είναι βασισμένο στους οδηγούς από την κοινότητα Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Ας γράψουμε λίγο κώδικα!
 
 ## Παράθυρο εντολών Python
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Για τους αναγνώστες στο σπίτι: αυτό το μέρος που καλύπτεται από το βίντεο [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Για να αρχίσετε να παίζετε με την Python, πρέπει να ανοίξετε μια *γραμμή εντολών* στον υπολογιστή σας. Πρέπει ήδη να ξέρετε πως το κάνουμε αυτό. Το μάθαμε στο κεφάλαιο [Εισαγωγή στη γραμμή εντολών](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+Μόλις είστε έτοιμοι, ακολουθήστε τις παρακάτω οδηγίες.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Θέλουμε να ανοίξουμε μια κονσόλα Python. Πληκτρολογήστε `python` αν είστε σε Windows ή `python3` αν είστε σε Mac OS/Linux και πατήστε `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -24,11 +24,11 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Η πρώτη σου Python εντολή!
+## Η πρώτη σας Python εντολή!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Αφού εκτελέσετε την εντολή Python, το prompt θα αλλάξει σε `>>>`. Για εμάς αυτό σημαίνει ότι τώρα μπορεί να χρησιμοποιούμε μόνο εντολές για τη γλώσσα Python. Δεν χρειάζεται να πληκτρολογήσετε `>>>`. Θα το κάνει η Python για σας.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Εάν θέλετε να τερματίσετε την κονσόλα Python σε οποιοδήποτε σημείο, απλά πληκτρολόγηστε `exit()` ή `Ctrl + Z` για Windows και `Ctrl + D` για Mac/Linux. Τότε δεν θα μπορείτε να δείτε το `>>>` πια.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
