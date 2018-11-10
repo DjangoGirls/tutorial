@@ -256,9 +256,9 @@ Maria
 
 Όταν απλώς πληκτρολογείτε `name`, η Python ανταποκρίνεται με το λεγόμενο string *representation* της τιμής της μεταβλητής 'name', η οποία είναι τα γράμματα M-a-r-i-a, περικυκλωμένα με τα μονά "αυτάκια", ''. Όταν λέτε `print(name)`, η Python θα "εκτυπώσει στην οθόνη" τα περιεχόμενα της μεταβλητής, χωρίς τα "αυτάκια", κάτι το οποίο είναι πιο ωραίο.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Όπως θα δούμε και αργότερα, η συνάρτηση `print()` είναι χρήσιμη όταν θέλουμε να εκτυπώσουμε πράγματα μέσα σε συναρτήσεις ή όταν θέλουμε να εκτυπώσουμε πράγματα σε πολλαπλές γραμμές αντί μιας.
 
-## Lists
+## Λίστες
 
 Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
