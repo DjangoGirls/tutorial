@@ -154,12 +154,12 @@ class Post(models.Model):
 
 Τώρα ορίζουμε τα properties που λέγαμε: `title`, `text`, `created_date`, `published_date` και `author`. Για να το κάνουμε αυτό θα πρέπει να ορίσουμε τον τύπο τιμών που θα δέχεται το κάθε πεδίο (είναι κείμενο; αριθμός; ημερομηνία; κάποια συσχέτιση με ένα άλλο object, όπως ένας χρήστης;)
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField`- αυτό είναι για μεγάλα κείμενα χωρίς ένα όριο. Ακούγεται ιδανικό για περιεχόμενο δημοσιεύσεων blog, έτσι δεν είναι;
-- `models.DateTimeField`- αυτό είναι μια ημερομηνία και ώρα.
+- `models.CharField` – έτσι δηλώνετε ότι θέλετε να ορίσετε ένα κείμενο με συγκεκριμένο αριθμό χαρακτήρων.
+- `models.TextField`- αυτό είναι για μεγάλα κείμενα χωρίς όριο. Ακούγεται ιδανικό για περιεχόμενο δημοσιεύσεων blog, έτσι δεν είναι;
+- `models.DateTimeField`- αυτό είναι για ημερομηνία και ώρα.
 - `models.ForeignKey`- αυτό είναι ένας σύνδεσμος για ένα άλλο μοντέλο.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Δεν θα εξηγήσουμε κάθε κομμάτι του κώδικα διότι θα πάρει αρκετό χρόνο. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
 What about `def publish(self):`? Αυτή είναι ακριβώς η μέθοδος `publish` για την οποία μιλούσαμε πριν. `def` σημαίνει ότι είναι αυτή είναι μια λειτουργία/μέθοδος και `publish` είναι το όνομα της μεθόδου. Μπορείτε να αλλάξετε το όνομα της μεθόδου αν θέλετε. Ο κανόνας ονομασίας είναι ότι χρησιμοποιούμε μικρά γράμματα και κάτω παύλες αντί για κενά. Για παράδειγμα, μια μέθοδος που υπολογίζει την μέση τιμή θα λεγόταν `υπολογισμός_μέσης_τιμής`.
 
