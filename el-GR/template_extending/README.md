@@ -104,7 +104,7 @@
 
 Θέλουμε να χρησιμοποιήσουμε αυτό το κομμάτι ως μέρος του template μας για όλα τα blocks με περιεχόμενο. Ήρθε η ώρα να προσθέσουμε blocks σε αυτό το αρχείο!
 
-{% raw %}Πρέπει το όνομα του block να είναι το ίδιο με αυτό που δηλώσαμε στο template `base.html`. Πρέπει επίσης να συμπεριλάβουμε όλο τον κώδικα που ανήκει σε αυτά τα blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Έτσι:{% endraw %}
+{% raw %}Πρέπει το όνομα του block να είναι το ίδιο με αυτό που δηλώσαμε στο template `base.html`. Πρέπει επίσης να συμπεριλάβουμε όλο τον κώδικα που ανήκει σε αυτά τα blocks. Για να γίνει αυτό, βάλτε τα όλα μεταξύ `{% block content %}` και `{% endblock %}`. Έτσι:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Μόνο ένα πράγμα έμεινε. Πρέπει να "συνδέσουμε" αυτά τα δύο templates μαζί. Αυτή είναι η έννοια της επέκτασης των template! Θα το κάνουμε αυτό προσθέτοντας τη λέξη-κλειδί "extends" στην αρχή του αρχείου. Κάπως έτσι:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+Αυτό ήταν! Αποθηκεύστε το αρχείο και επιβεβαιώστε ότι η ιστοσελίδα σας λειτουργεί όπως πριν. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Αν λέβετε κάποιο σφάλμα όπως `TemplateDoesNotExist`, αυτό σημαίνει ότι δεν υπάρχει το αρχείο `blog/base.html` και ότι ο `server` τρέχει στην κονσόλα. Προσπαθήστε να τον σταματήσετε (πιέζοντας Ctrl + C) και επανεκκινήστε τον τρέχοντας την εντολή `python manage.py runserver`.
