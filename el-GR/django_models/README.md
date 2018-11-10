@@ -140,19 +140,19 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Σιγουρευτείτε ότι χρησιμοποιείτε δύο φορές την κάτω παύλα (`_`) σε κάθε πλευρά του `str`. Αυτό είναι απαραίτητο και συχνά θα το συναντάτε στην Python. Συνηθίζεται να ονομάζεται "dunder" (σύντμηση για "double-underscore").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Μη φοβάστε. Θα εξηγήσουμε τι συμβαίνει!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Όλες οι γραμμές που ξεκινούν με τις λέξεις `from` ή `import` είναι γραμμές που εισάγουν λειτουργίες από άλλα Python αρχεία (αυτά με την κατάληξη .py). Έτσι αντί να κάνουμε αντιγραφή-επικόλληση κώδικα, πολύ απλά συμπεριλαμβάνουμε κώδικα από άλλα αρχεία με τη χρήση του `from ... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` – αυτή η γραμμή ορίζει το μοντέλο μας (είναι μια κλάση που με τη σειρά της είναι και αυτή ένα `object`).
 
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- Η λέξη `class` είναι μια ιδιαίτερη λέξη-κλειδί που καθορίζει τον ορισμό μιας κλάσης.
+- Η λέξη `Post` είναι το όνομα του μοντέλου μας. Μπορούμε να του δώσουμε όποιο όνομα θέλουμε (αλλά πρέπει να αποφεύγουμε ιδιαίτερους χαρακτήρες και κενά). Πάντα το όνομα μιας κλάσης να ξεκινάει με ένα κεφαλαίο γράμμα.
+- Η γραμμή `models.Model` σημαίνει ότι το Post είναι ένα Django Model. Με αυτό τον τρόπο το Django θα ξέρει ότι θα πρέπει να αποθηκεύεται σε μια βάση δεδομένων.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Τώρα ορίζουμε τα properties που λέγαμε: `title`, `text`, `created_date`, `published_date` και `author`. Για να το κάνουμε αυτό θα πρέπει να ορίσουμε τον τύπο τιμών που θα δέχεται το κάθε πεδίο (είναι κείμενο; αριθμός; A date? A relation to another object, like a User?)
 
 - `models.CharField` – this is how you define text with a limited number of characters.
 - `models.TextField`- αυτό είναι για μεγάλα κείμενα χωρίς ένα όριο. Ακούγεται ιδανικό για περιεχόμενο δημοσιεύσεων blog, έτσι δεν είναι;
