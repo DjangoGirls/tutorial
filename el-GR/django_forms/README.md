@@ -30,21 +30,21 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Θα χρειαστεί να κάνουμε import τις Django forms πρώτα (`from django import forms`) καθώς και το μοντέλο μας `Post` (`from .models import Post`).
 
-Οπώς πιθανόν να υποψιάζεστε το `PostForm`, είναι το όνομα της φόρμας εισαγωγής. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+Οπώς πιθανόν να υποψιάζεστε το `PostForm`, είναι το όνομα της φόρμας εισαγωγής. Θα χρειαστεί να πούμε στο Django ότι αυτή η φόρμα είναι μια `ModelForm` (ούτως ώστε το Django να κάνει τα "μαγικά" του για εμάς). Η κλάση `forms.ModelForm` είναι υπεύθυνη γι'αυτό.
 
-Στην συνέχεια, έχουμε `class Meta`, όπου "λέμε" στο Django για ποίο μοντέλο πρέπει να δημιουργήσει την φόρμα εισαγωγής δεδομένων).
+Στην συνέχεια, έχουμε `class Meta`, όπου "λέμε" στο Django για ποιο μοντέλο πρέπει να δημιουργήσει την φόρμα εισαγωγής δεδομένων (`model = Post`).
 
-Τέλος, πρέπει να ορίσουμε ποίο/α πεδίο/α πρέπει να διαθέσουμε στην φόρμα μας. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Τέλος, πρέπει να ορίσουμε ποιο/α πεδίο/α πρέπει να διαθέσουμε στην φόρμα μας. Σε αυτό το σενάριο θέλουμε μόνο το `title` και το `text` να εμφανίζονται. Το `author` θα πρέπει να είναι το πρόσωπο που είναι συνδεδεμένο εκείνη τη στιγμή (εσείς!) και το `created_date` θα παράγεται αυτόματα όταν δημιουργούμε ένα post (πχ μέσω κώδικα), σωστά;
 
 Αυτό ήταν! Αυτό που μας απομένει είναι να χρησιμοποιήσουμε την φόρμα μας μέσα σε ένα *view* ώστε να είναι διαθεσίμη μέσω ενός template.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Οπότε, για ακόμα μια φορά, θα χρειαστεί να συνδέσουμε τη σελίδα με ένα url, ένα view και ένα template.
 
 ## Πως συνδέουμε μια σελίδα με την φόρμα μας
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+Ανοίξτε το template `blog/templates/blog/base.html`. Θα προσθέσουμε έναν σύνδεσμο στο `div` με το όνομα `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -52,9 +52,9 @@ It's time to open `blog/templates/blog/base.html` in the code editor. We will ad
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Σημειώστε ότι θέλουμε να ονομάσουμε το view ως `post_new`. Η κλάση `"glyphicon glyphicon-plus"` παρέχεται από το bootstrap και θα εμφανίσει το σύμβολο της πρόσθεσης.
 
-After adding the line, your HTML file should now look like this:
+Αφού προσθέσουμε τη γραμμή, το HTML αρχείο θα δείχνει κάπως έτσι:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
