@@ -98,7 +98,7 @@ Usar comillas dobles:
 "Runnin' down the hill"
 ```
 
-o escapar el apóstrofe con la diagonal inversa (``):
+o escapar el apóstrofe con la diagonal inversa ( \ ):
 
 {% filename %}command-line{% endfilename %}
 
