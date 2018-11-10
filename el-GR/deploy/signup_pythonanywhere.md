@@ -6,7 +6,7 @@
 
 ![Το σελίδα εγγραφής του PythonAnywhere δείχνει ένα κουμπί για να δημιουργήσετε έναν δωρεάν «Beginner» λογαριασμό](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Επίσης, σιγουρευτείτε ότι θα θυμάστε τον κωδικό πρόσβασης σας.
+> **Σημείωση** Όταν επιλέξετε όνομα χρήστη θυμηθείτε ότι τα urls του blog σας θα έχουν τη μορφή `yourusername.pythonanywhere.com`. Οπότε επιλέξτε είτε το συνηθισμένο σας όνομα χρήστη (πχ αυτό που βάλατε στο GitHub) είτε κάποιο που να ταιριάζει με τη θεματολογία του blog σας. Επίσης, σιγουρευτείτε ότι θα θυμάστε τον κωδικό πρόσβασης σας.
 
 ## Δημιουργώντας ένα PythonAnywhere API token
 
