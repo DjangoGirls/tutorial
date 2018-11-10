@@ -2,14 +2,14 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE - это инструмент, предоставляющий вам редактор кода и доступ к компьютеру в интернете, на котором вы можете установить, записать и установить программу. На протяжении данного урока Cloud IDE будет использоваться как ваш *локальный компьютер*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+1. Перейдите на [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Зарегистрируйте аккаунт
+3. Нажмите *New Server*
+4. Нажмите кнопку запуска (в левой части окна)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
@@ -49,7 +49,7 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 If this still doesn't work, ask your coach for some help.
 
-Next, run:
+Далее запустите:
 
 {% filename %}Cloud 9{% endfilename %}
 
