@@ -265,25 +265,25 @@ def post_new(request):
 
 Αυτό είναι απίθανο!
 
-> Επειδή έχουμε χρησιμοποιήσει το Django Admin πρόσφατα, το σύστημα υποθέτει ότι είμαστε ακόμα συνδεδεμένοι. Υπάρχουν μερικοί τρόποι που μπορεί να μας οδηγήσουν εκτός σύνδεσης (κλείνοντας τον browser, επανεκκινώντας την βάση δεδομένων κλπ). Αν, κατά τη διάρκεια δημιουργίας ενός post, λαμβάνετε σφάλματα ότι είστε εκτός σύνδεσης, πηγαίνετε στη σελίδα admin http://127.0.0.1:8000/admin και συνδεθείτε ξανά. Αυτό θα διορθώσει το πρόβλημα, προσωρινά. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Επειδή έχουμε χρησιμοποιήσει το Django Admin πρόσφατα, το σύστημα υποθέτει ότι είμαστε ακόμα συνδεδεμένοι. Υπάρχουν μερικοί τρόποι που μπορεί να μας οδηγήσουν εκτός σύνδεσης (κλείνοντας τον browser, επανεκκινώντας την βάση δεδομένων κλπ). Αν, κατά τη διάρκεια δημιουργίας ενός post, λαμβάνετε σφάλματα ότι είστε εκτός σύνδεσης, πηγαίνετε στη σελίδα admin http://127.0.0.1:8000/admin και συνδεθείτε ξανά. Αυτό θα διορθώσει το πρόβλημα, προσωρινά. Υπάρχει, ωστόσο, η μόνιμη λύση του προβλήματος η οποία σας περιμένει στο κεφάλαιο **Εργασία: ασφάλεια για το site σας!** μετά από αυτόν τον οδηγό.
 
 ![Logged in error](images/post_create_error.png)
 
 ## Form validation
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Τώρα θα σας δείξουμε πόσο ωραίες είναι οι Django φόρμες. Ένα post χρειάζεται να έχει τουλάχιστον τα εξής πεδία: `title` και `text`. Στο μοντέλο μας `Post` δεν δηλώσαμε ότι θέλουμε αυτά τα πεδία να είναι προαιρετικά (εν εντιθέση με το πεδίο `published_date`). Έτσι το Django, από προεπιλογή, αναμένει αυτά τα πεδία να υπάρχουν.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Προσπαθήστε να αποθηκεύσετε τη φόρμα δίχως τιμές για τα πεδία `title` και `text`. Τι θα συμβεί;
 
 ![Form validation](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Το Django χειρίζεται την εγκυρότητα της φόρμας. Με άλλα λόγια κάνει το λεγόμενο form validation. Δεν είναι φοβερό αυτό;
 
-## Edit form
+## Επεξεργασία φόρμας
 
-Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Τώρα ξέρουμε πως να προσθέσουμε μια νέα φόρμα. Αλλά πως επεξεργαζόμαστε μια ήδη υπάρχουσα; Αυτό είναι παρόμοιο με αυτό που κάναμε. Ας δημιουργήσουμε, γρήγορα, μερικά σημαντικά πράγματα. (Αν δεν καταλαβαίνετε κάτι, θα πρέπει να ζητήσετε τη βοήθεια του επιτηρητή σας ή να κοιτάξετε στα προηγούμενα κεφάλαια, δεδομένου ότι καλύψαμε ήδη όλα αυτά τα βήματα.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Ανοίξτε το αρχείο `blog/templates/blog/post_detail.html` και προσθέστε τη γραμμή
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+ούτως ώστε το template να δείχνει κάπως έτσι:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
