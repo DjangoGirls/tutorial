@@ -178,28 +178,28 @@ DATABASES = {
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Τώρα θα χρειαστεί να ελέγξετε αν το site σας δουλεύει. Ανοίξτε έναν browser (Firefox, Chrome, Safari ή Internet Explorer ή οτιδήποτε άλλο χρησιμοποιείτε) και πληκτρολογήστε την παρακάτω διεύθυνση:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Αν χρησιμοποιείτε Chromebook και Cloud9, αντί κλικάρετε στο παράθυρο που εμφανίστηκε στην πάνω δεξιά γωνία όπου ο server τρέχει. Το url θα δείχνει κάπως έτσι:
 
 {% filename %}browser{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Συγχαρητήρια! Μόλις δημιουργήσατε το πρώτο σας website το οποίο τρέχει χρησιμοποιώντας έναν web server! Δεν είναι φοβερό;
 
-![Install worked!](images/install_worked.png)
+![Η εγκατάσταση πέτυχε!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Σημειώστε ότι ένα παράθυρό εντολών μπορεί να εκτελεί μόνο μια εντολή κάθε φορά και η εντολή που τρέχει αυτή τη στιγμή είναι ένας web server. Όσο ο server τρέχει και αναμένει εισερχόμενα requests το τερματικό θα εμφανίζει κάποια μηνύματα αλλά δεν θα εκτελεί νέες εντολές.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Είδαμε πως λειτουργούν οι web servers στο κεφάλαιο **Πως λειτουργεί το internet**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Για να γράψετε άλλες εντολές όσο ο server τρέχει, ανοίξτε ένα νέο παράθυρο και ενεργοποιήστε το virtualenv σας. Για να σταματήσετε τον server, μεταβείτε στο παράθυρο που τρέχει και πιέστε Ctrl + C (σε Windows θα πρέπει να πιέσετε Ctrl + Break).
 
-Ready for the next step? It's time to create some content!
+Έτοιμοι για το επόμενο βήμα; Ώρα να δημιουργήσουμε περιεχόμενο για το blog μας!
