@@ -175,7 +175,7 @@ TypeError: object of type 'int' has no len()
 
 Ένα σημαντικό έννοια στον προγραμματισμό είναι οι μεταβλητές. Μια μεταβλητή δεν είναι τίποτε άλλο από ένα όνομα που μπορεί να επαναχρησιμοποιηθεί αργότερα. Οι προγραμματιστές χρησιμοποιούν τις μεταβλητές για την αποθήκευση δεδομένων, κάνοντας τον κώδικα πιο ευανάγνωστο χωρίς να χρειάζεται να θυμούνται τι ήταν τι.
 
-Let's say we want to create a new variable called `name`:
+Ας υποθέσουμε ότι θέλετε να δημιουργήσετε μια μεταβλητή με το όνομα `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,9 +183,9 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+Γράφουμε name ίσον με Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Όπως θα παρατηρήσατε, το πρόγραμμα δεν επέστρεψε τίποτα όπως πριν. Πως ξέρουμε, λοιπόν, ότι η μεταβλητή υπάρχει; Πληκτρολογήστε`name` και μετά πιέστε `enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Ναιιι! Η πρώτη σας μεταβλητή! :) Μπορείτε πάντα να αλλάξετε την τιμή αυτής της μεταβλητής:
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Μπορείτε να χρησιμοποιήσετε μεταβλητές σε συναρτήσεις:
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Φοβερό, έτσι; Οι μεταβλητές μπορεί να είναι οτιδήποτε (ακόμα και αριθμοί). Δοκιμάστε το εξής:
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Now, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Αλλά τι θα γινόταν αν χρησιμοποιούσαμε λάθος όνομα; Τι θα συμβεί; Ας το δοκιμάσουμε!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -236,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Ένα σφάλμα! Όπως μπορείτε να δείτε, η Python έχει διαφορετικού τύπου σφάλματα (τα έχει κατατάξει σε κατηγορίες). Αυτό εδώ ονομάζεται **NameError**. Η Python θα σας εμφανίσει αυτό το σφάλμα αν προσπαθήσετε να χρησιμοποιήσετε κάποια μεταβλητή της οποίας το όνομα δεν έχει δηλωθεί. Αν εμφανίστηκε αυτό το σφάλμα νωρίτερα σε εσάς, δείτε τον κώδικά σας μήπως και έχετε κάνει λάθος σε κάποιο όνομα μεταβλητής.
 
-Play with this for a while and see what you can do!
+Παίξτε για λίγο με αυτό και δείτε τι μπορείτε να κάνετε!
 
-## The print function
+## Η συνάρτηση print
 
-Try this:
+Δοκιμάστε αυτό:
 
 {% filename %}command-line{% endfilename %}
 
@@ -254,7 +254,7 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Όταν απλώς πληκτρολογείτε `name`, η Python ανταποκρίνεται με το λεγόμενο string *representation* της τιμής της μεταβλητής 'name', η οποία είναι τα γράμματα M-a-r-i-a, περικυκλωμένα με τα μονά "αυτάκια", ''. Όταν λέτε `print(name)`, η Python θα "εκτυπώσει στην οθόνη" τα περιεχόμενα της μεταβλητής, χωρίς τα "αυτάκια", κάτι το οποίο είναι πιο ωραίο.
 
 As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
