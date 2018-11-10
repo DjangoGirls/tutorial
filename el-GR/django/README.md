@@ -20,8 +20,8 @@
 
 Φανταστείτε έναν ταχυδρόμο με ένα γράμμα. Περπατάει στην οδό και ελέγχει κάθε αριθμό σπιτιού αν είναι ίδιος με τον αντίστοιχο αριθμό στο γράμμα. Αν ταιριάζει, βάζει το γράμμα εκεί. Αυτός είναι ο τρόπος που λειτουργεί ο urlresolver!
 
-Στο *view*, γίνονται όλα τα ενδιαφέροντα πράγματα: μπορούμε να δούμε μια βάση δεδομένων για να ψάξουμε για μερικές πληροφορίες. Μήπως ο χρήστης ζήτησε να αλλάξει κάτι στα δεδομένα; Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+Στο *view*, γίνονται όλα τα ενδιαφέροντα πράγματα: μπορούμε να δούμε μια βάση δεδομένων για να ψάξουμε για μερικές πληροφορίες. Μήπως ο χρήστης ζήτησε να αλλάξει κάτι στα δεδομένα; Όπως ένα γράμμα που λέει "Παρακαλώ, αλλάξτε την περιγραφή της δουλειάς μου.» Το *view* μπορεί να ελέγξει αν επιτρέπεται να το κάνετε αυτό και στη συνέχεια ενημερώνει την περιγραφή της δουλειάς σας και στείλνει πίσω ένα μήνυμα: "Έγινε!". Έπειτα το *view* παράγει ένα response και το Django το στέλνει πίσω στον web browser του χρήστη και προβάλεται στην οθόνη.
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Φυσικά, η παραπάνω περιγραφή είναι λίγο απλοποιημένη, αλλά δεν χρειάζεται να γνωρίζετε όλα τα τεχνικά ζητήματα ακόμη. Μια γενική ιδέα είναι αρκετή.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+Έτσι αντί να αφιερώνουμε πάρα πολύ χρόνο σε λεπτομέρειες, θα ξεκινήσουμε απλά δημιουργώντας κάτι με το Django και θα μάθουμε όλα τα σημαντικά κομμάτια καθοδόν!
