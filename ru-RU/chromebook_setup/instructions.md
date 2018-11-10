@@ -37,9 +37,9 @@ Cloud IDE - это инструмент, предоставляющий вам �
 
 ### Виртуальное окружение
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Виртуальное окружение (также называемое virtualenv или venv) является некой личной "коробкой". Мы можем вложить полезный компьютерный код в проект, в котором мы работаем. Мы используем его, чтобы держать различные биты кода, которые мы хотим использовать для нашего проекта отдельно, не смешивая с другими проектами.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+В вашем терминале в нижней части интерфейса Cloud9 выполните следующую команду:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,7 +47,7 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Если это по-прежнему не работает, попросите вашего наставника помочь.
 
 Далее запустите:
 
@@ -60,16 +60,16 @@ If this still doesn't work, ask your coach for some help.
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(обратите внимание, что в последней строке мы используем знак равенства после знака тильды: ~=).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Создайте аккаунт на [GitHub](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls пособие включает в себя раздел о "развертывании". Это процесс взятия кода, на котором работает ваше новой веб-приложение, и перемещения его на общедоступный компьютер (называемый сервером), чтобы другие люди могли видеть вашу работу.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Эта часть является немного странной, когда у нас Chromebook, поскольку мы используем компьютер, который находится в Интернете (в отличие от, скажем, ноутбука). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
