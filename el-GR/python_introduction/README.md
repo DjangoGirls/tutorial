@@ -138,11 +138,11 @@
 - **operators** – όπως `+` και `*`, συνδυάζουν τιμές και παράγουν μια νέα τιμή
 - **functions** – όπως η `upper()` και η `len()`, εκτελούν κάποιες ενέργειες στα objects.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Αυτά είναι τα βασικά για κάθε γλώσσα προγραμματισμού. Είστε έτοιμοι για κάτι πιο δύσκολο; Είμαστε σίγουροι ότι είστε!
 
-## Errors
+## Σφάλματα
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Ας δοκιμάσουμε κάτι καινούργιο. Μπορούμε να βρούμε το μήκος ενός αριθμού ακριβώς όπως κάναμε με το όνομα σας νωρίτερα; Πληκτρολογήστε `len(304023)` και πατήστε `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Μόλις λάβατε το πρώτο σας σφάλμα! Το εικονίδιο {{ warning_icon }} είναι ο δικός μας τρόπος να σας πούμε ότι ο κώδικάς που πρόκειται να τρέξετε δεν θα έχει τα αναμενόμενα αποτελέσματα. Κάνοντας λάθη (ακόμα και εσκεμμένα) είναι σημαντικό κομμάτι κατά τη διάρκεια της εκμάθησης!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Το συγκεκριμένο σφάλμα λέει ότι τα objects τύπου "int" (από τη λέξη integers, που σημαίνει ακέραιοι αριθμοί) δεν έχουν μήκος. Οπότε τι κάνουμε τώρα; Μήπως να γράψουμε τον αριθμό ως ένα string; Τα strings έχουν μήκος, έτσι;
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,16 +164,16 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Δούλεψε! Χρησιμοποιήσαμε τη συνάρτηση `str` μέσα στην `len`. Η `str()` μετατρέπει τα πάντα σε strings.
 
-- The `str` function converts things into **strings**
-- The `int` function converts things into **integers**
+- Η συνάρτηση `str` μετατρέπει πράγματα σε **strings**
+- Η συνάρτηση `int` μετατρέπει πράγματα σε **integers**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Σημαντικό: μπορούμε να μετατρέψουμε αριθμούς σε κείμενο (strings) αλλά όχι απαραίτητα το αντίστροφο. Τι θα συνέβαινε αν τρέχατε `int('hello')`;
 
-## Variables
+## Μεταβλητές
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Ένα σημαντικό έννοια στον προγραμματισμό είναι οι μεταβλητές. Μια μεταβλητή δεν είναι τίποτε άλλο από ένα όνομα που μπορεί να επαναχρησιμοποιηθεί αργότερα. Οι προγραμματιστές χρησιμοποιούν τις μεταβλητές για την αποθήκευση δεδομένων, κάνοντας τον κώδικα πιο ευανάγνωστο χωρίς να χρειάζεται να θυμούνται τι ήταν τι.
 
 Let's say we want to create a new variable called `name`:
 
