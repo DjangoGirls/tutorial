@@ -227,10 +227,10 @@ if form.is_valid():
 {% filename %}blog/views.py{% endfilename %}
 
 ```python
-από ανακατεύθυνση εισαγωγής django.shortcuts
+from django.shortcuts import redirect
 ```
 
-Προσθέστε το στην αρχή του αρχείου σας. Και τώρα μπορούμε να πούμε, "πηγαίνετε στη `post_detail` σελίδα για το νεοσυσταθέν post":
+Προσθέστε το στην αρχή του αρχείου σας. Και τώρα μπορούμε να πούμε, "πηγαίνε στη σελίδα `post_detail` για το νεοσυσταθέν post":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +238,9 @@ if form.is_valid():
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` είναι το όνομα της προβολής στο οποίο θέλουμε να πάμε. Θυμηθείτε ότι αυτή η *άποψη * απαιτεί μία μεταβλητή `pk`; Για να το περάσουμε στις απόψεις, χρησιμοποιούμε `pk=post.pk`, όπου `post` είναι το νεοσύστατο blog post!
+Το `post_detail` είναι το όνομα του view στο οποίο θέλουμε να πάμε. Θυμηθείτε ότι αυτό το *view* απαιτεί μία μεταβλητή `pk`; Για να το περάσουμε στα views, χρησιμοποιούμε το `pk=post.pk`, όπου `post` είναι το νεοσύστατο blog post!
 
-Εντάξει. έχουμε μιλήσει πολύ. αλλά μάλλον θέλουμε να δούμε πως μοιάζει το *view*, σωστά;
+Εντάξει. Έχουμε μιλήσει πολύ. Αλλά μάλλον θέλουμε να δούμε πως μοιάζει το *view*, σωστά;
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,13 +259,13 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Ας δούμε αν λειτουργεί. Πηγαίνετε στην σελίδα http://127.0.0.1:8000/post/new/, προσθέστε ένα `τίτλο` και `κείμενο`, αποθηκεύστε το… και voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Ας δούμε αν λειτουργεί. Πηγαίνετε στην σελίδα http://127.0.0.1:8000/post/new/ και προσθέστε ένα `title` και ένα `text`, αποθηκεύστε το… και voilà! Το νέο σας post προστέθηκε και αυτόματως ανακατευθυνόμαστε στη σελίδα του `post_detail`!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+Ίσως να προσέξατε ότι ορίζουμε την ημ/νια έκδοσης (publish date) πριν την αποθήκευση του post. Αργότερα θα παρουσιάσουμε ένα *publish button* στην ενότητα **Οδηγός Django Girls: Επεκτάσεις**.
 
-That is awesome!
+Αυτό είναι απίθανο!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Επειδή έχουμε χρησιμοποιήσει το Django Admin πρόσφατα, το σύστημα υποθέτει ότι είμαστε ακόμα συνδεδεμένοι. Υπάρχουν μερικοί τρόποι που μπορεί να μας οδηγήσουν εκτός σύνδεσης (κλείνοντας τον browser, επανεκκινώντας την βάση δεδομένων κλπ). Αν, κατά τη διάρκεια δημιουργίας ενός post, λαμβάνετε σφάλματα ότι είστε εκτός σύνδεσης, πηγαίνετε στη σελίδα admin http://127.0.0.1:8000/admin και συνδεθείτε ξανά. Αυτό θα διορθώσει το πρόβλημα, προσωρινά. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
 ![Logged in error](images/post_create_error.png)
 
