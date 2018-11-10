@@ -312,7 +312,7 @@ def post_new(request):
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Ανοίξτε το αρχείο `blog/urls.py` και προσθέστε τη γραμμή:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +320,9 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+Θα ξαναχρησιμοποιήσουμε το template `blog/templates/blog/post_edit.html`, οπότε λείπει μόνο το *view*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Ανοίξτε το αρχείο `blog/views.py` και προσθέστε αυτό στο τέλος του αρχείου:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Αυτό μοιάζει σχεδόν ίδιο με την `post_new` προβολή, σωστά; Αλλά όχι εντελώς. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Αυτό μοιάζει σχεδόν το ίδιο με το view `post_new`, σωστά; Αλλά όχι εντελώς. Για το πρώτο, περνάμε μια έξτρα παράμετρο `pk` από τα urls. Στη συνέχεια, παίρνουμε το μοντέλο `Post` που θέλουμε να επεξεργαστούμε με την συνάρτηση `get_object_or_404 (Post, pk=pk)` και στη συνέχεια όταν δημιουργούμε μια φόρμα, περνάμε το post αυτό ως ένα `instance`, τόσο όταν αποθηκεύουμε τη φόρμα...
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-… και όταν έχουμε μόλις ανοίξει μία αίτηση με αυτή τη δημοσίευση για να επεξεργαστούμε:
+… όσο και όταν έχουμε μόλις ανοίξει μία φόρμα προς επεξεργασία με αυτό το post:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -366,15 +366,15 @@ form = PostForm(instance=post)
 
 ![Επεξεργαστείτε αίτηση](images/edit_form2.png)
 
-Νιώστε ελεύθεροι να αλλάξετε τον τίτλο η το κείμενο και να αποθηκεύσετε τις αλλαγές!
+Νιώστε ελεύθεροι να αλλάξετε τον τίτλο ή το κείμενο και να αποθηκεύσετε τις αλλαγές!
 
 Συγχαρητήρια! Η εφαρμογή σας γίνεται όλο και πιο πλήρης!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Εάν χρειάζεστε περισσότερες πληροφορίες για τις φόρμες Django, θα πρέπει να διαβάσετε το: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Ασφάλεια
 
-Being able to create new posts by clicking a link is awesome! Αλλά τώρα, οποιοσδήποτε επισκεφθεί την σελίδα σας θα μπορεί να φτιάξει μία καινούρια δημοσίευση blog, και αυτό είναι κάτι που πιθανώς δεν θέλετε. Ας το κάνουμε έτσι ώστε το κουμπί εμφανίζεται για εσάς αλλά για κανέναν άλλο.
+Το να μπορείς να δημιουργήσεις νέες δημοσιεύσεις κάνοντας απλώς ένα κλικ σε ένα σύνδεσμο είναι φοβερό! Αλλά τώρα, οποιοσδήποτε επισκεφθεί την σελίδα σας θα μπορεί να φτιάξει μία καινούρια δημοσίευση blog, και αυτό είναι κάτι που πιθανώς δεν θέλετε. Ας το κάνουμε έτσι ώστε το κουμπί να εμφανίζεται μόνο για εσάς και για κανέναν άλλο.
 
 Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
