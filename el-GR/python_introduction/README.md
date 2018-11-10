@@ -30,7 +30,7 @@
 
 Εάν θέλετε να τερματίσετε την κονσόλα Python σε οποιοδήποτε σημείο, απλά πληκτρολόγηστε `exit()` ή `Ctrl + Z` για Windows και `Ctrl + D` για Mac/Linux. Τότε δεν θα μπορείτε να δείτε το `>>>` πια.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Για τώρα δεν θέλουμε να φύγουμε από αυτό το περιβάλλον. Θέλουμε να μάθουμε περισσότερα γι'αυτό. Ας ξεκινήσουμε να γράφουμε μερικές μαθηματικές πράξεις, όπως `2 + 3` και μετά πατάμε `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,46 +39,46 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Ωραία! Είδατε την απάντηση από κάτω; Η Python ξέρει μαθηματικά! Μπορείτε να δοκιμάσετε και άλλες εντολές, όπως:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Για να εκτελέσετε εκθετικούς υπολογισμούς, πχ 2 στη δύναμη του 3, γράφουμε: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Διασκέδασε με αυτό για λίγο και στη συνέχεια συνεχίστε πίσω εδώ. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Όπως μπορείτε να δείτε, η Python είναι μια πολύ καλή αριθμομηχανή. Αν αναρωτιέστε τι άλλο μπορείτε να κάνετε…
 
 ## Strings
 
-How about your name? Type your first name in quotes like this:
+Τι θα λέγατε για το όνομα σας; Πληκτρολογήστε το μικρό σας όνομα μέσα σε "αυτάκια", όπως παρακάτω:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
 >>> "Ola"
-'Ola'
+"Ola"
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Μόλις δημιουργήσατε το πρώτο σας string! Είναι μια ακολουθία χαρακτήρων η οποία επεξεργάζεται από τον υπολογιστή. Ένα string πρέπει πάντα να ξεκινά και να τελειώνει με τον ίδιο χαρακτήρα. Αυτό μπορεί να είναι είτε μονά "αυτάκια" (`'`) ή διπλά (`"`) (καμία διαφορά!). Τα "αυτάκια" λένε στην Python το εξής: ότι υπάρχει ανάμεσα θεώρησε το ως ένα string.
 
-Strings can be strung together. Try this:
+Τα strings μπορούν να ενωθούν. Δοκιμάστε το ακόλουθο:
 
 {% filename %}command-line{% endfilename %}
 
 ```python
 >>> "Hi there " + "Ola"
-'Hi there Ola'
+"Hi there Ola"
 ```
 
-You can also multiply strings with a number:
+Μπορείτε επίσης να πολλαπλασιάσετε strings με αριθμό:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Αν χρειαστεί να βάλετε κάποια απόστροφο μέσα στο string, υπάρχουν δύο τρόποι να το κάνετε.
 
-Using double quotes:
+Χρησιμοποιώντας διπλά "αυτάκια":
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+ή κάνοντας escape την απόστροφο με ένα backslash (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Ωραίο εε; Για να δείτε το όνομα σας σε κεφαλαία, γράψτε:
 
 {% filename %}command-line{% endfilename %}
 
