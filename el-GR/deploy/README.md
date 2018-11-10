@@ -51,7 +51,7 @@
 > 
 > **Σημείωση** Ένα από τα ονόματα αρχείων που συμπεριλάβατε στο αρχείο `.gitignore` είναι το αρχείο `db.sqlite3`. Αυτό το αρχείο είναι μια τοπική βάση δεδομένων (database), όπου όλοι οι χρήστες και τα posts σας είναι αποθηκευμένα. Ακολουθούμε μια κοινή πρακτική όσον αφορά τον προγραμματισμό ιστού (web programming) η οποία απαιτεί την χρήση ξεχωριστής βάσης δεδομένων τοπικά στον υπολογιστή μας και στον server όπου θα ανεβάσουμε την εφαρμογή μας (PythonAnywhere). Η βάση δεδομένων του PythonAnywhere θα μπορούσε να είναι και αυτή SQLite, όπως στον υπολογιστή σας αλλά συχνά θα χρησιμοποιείτε μια πιο ευρέως διαδεδομένη και εμπλουτισμένη με πιο πολλά χαρακτηριστικά και δυνατότητες όπως η PostgresQL ή η MySQL. Όπως και να 'χει, μη συμπεριλαμβάνοντας την SQLite βάση στο repo, σημαίνει ότι όλα τα posts και οι χρήστες που δημιουργήσατε μέχρι τώρα θα είναι διαθέσιμα τοπικά στον υπολογιστή σας και θα χρειαστεί να τα ξαναδημιουργήσετε όταν ανεβάσετε το project σας. Να σκέφτεστε την τοπική βάση δεδομένων σας ως ένα παιδότοπο όπου μπορείτε να δοκιμάσετε διαφορετικά πράγματα και να μην φοβάστε ότι πρόκειται να διαγράψετε τις αληθινές σας δημοσιεύσεις από το blog σας.
 
-Είναι καλή ιδέα να χρησιμοποιήσετε την εντολή `git status` πριν από την εντολή`git add` ή όποτε δεν είστε βέβαιοι για το τι έχει αλλάξει. Αυτό θα βοηθήσει να αποτραπούν οποιεσδήποτε εκπλήξεις, όπως το να προστεθούν ή να αποθηκευτούν λανθασμένα αρχεία. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. Τα δεδομένα εξόδου πρέπει να είναι παρόμοια με τα ακόλουθα:
+Είναι καλή ιδέα να χρησιμοποιήσετε την εντολή `git status` πριν από την εντολή`git add` ή όποτε δεν είστε βέβαιοι για το τι έχει αλλάξει. Αυτό θα βοηθήσει να αποτραπούν οποιεσδήποτε εκπλήξεις, όπως το να προστεθούν ή να αποθηκευτούν λανθασμένα αρχεία. Η εντολή `git status` επιστρέφει πληροφορίες σχετικά με το ποια αρχεία είναι untracked/modified/staged files, το status του branch και πολλές ακόμη πληροφορίες. Η έξοδος πρέπει να είναι παρόμοια με τα ακόλουθα:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,7 +72,7 @@
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-Και τέλος σώζουμε τις αλλαγές μας. Πηγαίνετε στην κονσόλα σας και να εκτελέσετε αυτές τις εντολές:
+Και τέλος αποθηκεύουμε τις αλλαγές μας. Πηγαίνετε στην κονσόλα σας και εκτελέστε αυτές τις εντολές:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,21 +85,21 @@
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Ανεβάζοντας τον κώδικα σας στο GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+Πηγαίνετε στο [https://github.com](https://www.github.com) και δημιουργήστε έναν δωρεάν λογαριασμό. (Αν το έχετε ήδη κάνει αυτό, τέλεια!). Σιγουρευτείτε ότι θυμάστε τον κωδικό πρόσβασης σας (προσθέστε τον σε κάποιον διαχειριστή κωδικών πρόσβασης, αν έχετε κάποιον).
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Έπειτα, δημιουργήστε ένα νέο repo, δίνοντας του το όνομα "my-first-blog". Αφήστε το κουτάκι "initialize with a README" κενό. Αφήστε, επίσης την επιλογή .gitignore κενή (το έχουμε ήδη αυτό το αρχείο) και τέλος αφήστε το License ως None.
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> **Σημείωση** Το όνομα `my-first-blog` είναι σημαντικό. Θα μπορούσατε να διαλέξετε ένα άλλο, αλλά επειδή θα το χρησιμοποιείτε αρκετά στις ακόλουθες εντολές, καλό να είναι χρησιμοποιήσετε το ίδιο εκτός και αν είστε λάτρης του πληκτρολογίου και σας αρέσει να γράφετε! Είναι πιο εύκολο να μείνετε με το όνομα `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+Στην επόμενη οθόνη θα δείτε το url (την διεύθυνση) του repo σας την οποία θα χρησιμοποιήσουμε παρακάτω:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Τώρα το μόνο που μένει είναι να συνδέσουμε το τοπικό repo μας με το remote (απομακρυσμένο).
 
 Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 
