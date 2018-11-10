@@ -89,7 +89,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+Αυτός είναι ο χρήστης superuser που δημιουργήσαμε νωρίτερα! Ας πάρουμε ένα instance από την κλάση User τώρα (αντικαταστείστε το όνομα με το όνομα χρήστη που βάλατε νωρίτερα ως superuser):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,9 +97,9 @@ This is the superuser we created earlier! Let's get an instance of the user now 
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Όπως βλέπετε, κάνουμε ένa `get` για έναν `User` με ένα `username` το οποίο ισούται με 'ola'. Καλό!
 
-Now we can finally create our post:
+Τώρα μπορούμε, επιτέλους να δημιουργήσουμε το post:
 
 {% filename %}command-line{% endfilename %}
 
@@ -117,15 +117,15 @@ Now we can finally create our post:
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-Αυτό είναι, άλλη μια δημοσίευση στην λίστα!
+Αυτό είναι, άλλη ένα post στη λίστα!
 
-### Προσθέστε περισσότερες δημοσιεύσεις
+### Προσθέστε περισσότερα posts
 
 Τώρα μπορείτε να διασκεδάσετε λίγο και να προσθέσετε περισσότερες δημοσιεύσεις για να δείτε πως δουλεύει. Προσθέστε δυο-τρεις ακόμα και μετά προχωρήστε στο επόμενο μέρος.
 
 ### Φιλτράρισμα αντικειμένων
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+Ένα μεγάλο μέρος των χαρακτηριστικών των QuerySets είναι η δυνατότητα να τα φιλτράρουμε. Ας υποθέσουμε ότι θέλουμε να βρούμε όλα τα posts όπου ο χρήστης ola έγραψε. Θα χρησιμοποιήσουμε την μέθοδο `filter` αντί της `all` στην εντολή `Post.objects.all()`. Μέσα στις παρενθέσεις της μεθόδου filter δηλώνουμε τα κριτήρια αναζήτησης για αυτό που ψάχνουμε. Στην περίπτβση μας, το κριτήριο είναι ένα `author` και θέλουμε να είναι ίσο με `me`. Ο τρόπος που το γράφουμε στο Django είναι `author=me`. Τώρα ο κώδικας μοιάζει κάπως έτσι:
 
 {% filename %}command-line{% endfilename %}
 
@@ -134,7 +134,7 @@ A big part of QuerySets is the ability to filter them. Let's say we want to find
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+Ή ίσως θα θέλαμε να δούμε όλα τα posts τα οποία περιέχουν τη λέξη 'title' μέσα στο πεδίο `title`;
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,9 +143,9 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Σημείωση** Υπάρχουν δύο κάτω παύλες (`_`) μεταξύ του `title` και του `contains`. Το Django ORM χρησιμοποιεί αυτόν τον κανόνα για να διαχωρίσει τα ονόματα των πεδίων των μοντέλων ("title") με τους διαχωριστές ή τα φίλτρα ("contains"). Αν χρησιμποιούσατε μόνο μια κάτω παύλα θα λαμβάνατε το σφάλμα "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+Μπορείτε επίσης να πάρετε μια λίστα από δημοσιευμένα posts. Το κάνουμε αυτό φιλτράροντας όλα τα posts που έχουν παρελθοντική ημ/νια `published_date`:
 
 {% filename %}command-line{% endfilename %}
 
