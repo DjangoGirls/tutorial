@@ -1,8 +1,8 @@
-# Template extending
+# Επεκτείνοντας τα template
 
-Ένα άλλο ωραίο πράγμα που προσφέρει το Django είναι η **επέκταση των templates**. Τι σημαίνει αυτό; Αυτό σημαίνει ότι μπορείς να χρησιμοποιήσεις τα ίδια κομμάτια HTML για διαφορετικές σελίδες του διαδυκτιακού σου τόπου.
+Ένα άλλο ωραίο πράγμα που προσφέρει το Django είναι η **επέκταση των templates**. Τι σημαίνει αυτό; Αυτό σημαίνει ότι μπορείτε να χρησιμοποιείτε τα ίδια κομμάτια HTML για διαφορετικές σελίδες του διαδυκτιακού σας τόπου.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Τα templates σας βοηθάνε στο να επαναχρησιμοποιήσετε το ίδιο τμήμα HTML (την ίδια, δηλαδή, πληροφορία) σε περισσότερα από ένα μέρη. Δεν χρειάζεται να επαναλαμβάνεται τον εαυτό σας σε κάθε αρχείο. And if you want to change something, you don't have to do it in every template, just one!
 
 ## Create a base template
 
