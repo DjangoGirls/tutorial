@@ -2,13 +2,13 @@
 
 Ένα άλλο ωραίο πράγμα που προσφέρει το Django είναι η **επέκταση των templates**. Τι σημαίνει αυτό; Αυτό σημαίνει ότι μπορείτε να χρησιμοποιείτε τα ίδια κομμάτια HTML για διαφορετικές σελίδες του διαδυκτιακού σας τόπου.
 
-Τα templates σας βοηθάνε στο να επαναχρησιμοποιήσετε το ίδιο τμήμα HTML (την ίδια, δηλαδή, πληροφορία) σε περισσότερα από ένα μέρη. Δεν χρειάζεται να επαναλαμβάνεται τον εαυτό σας σε κάθε αρχείο. And if you want to change something, you don't have to do it in every template, just one!
+Τα templates σας βοηθάνε στο να επαναχρησιμοποιήσετε το ίδιο τμήμα HTML (την ίδια, δηλαδή, πληροφορία) σε περισσότερα από ένα μέρη. Δεν χρειάζεται να επαναλαμβάνεται τον εαυτό σας σε κάθε αρχείο. Και αν χρειαστεί να αλλάξετε κάτι, δεν χρειάζεται να το κάνετε σε κάθε template παρά μόνο σε ένα!
 
-## Create a base template
+## Δημιουργία ενός βασικού (base) template
 
-Το base template είναι το πιο βασικό template που μπορείς να επεκτείνεις σε κάθε σελίδα του ιστιότοπού σου.
+Το base template είναι το πιο βασικό template που μπορείτε να επεκτείνετε σε κάθε σελίδα του ιστότοπού σας.
 
-Ας δημιουργήσουμε ένα αρχείο `base.html` μεσα στο `blog/templates/blog/`:
+Ας δημιουργήσουμε ένα αρχείο `base.html` μέσα στο `blog/templates/blog/`:
 
     blog
     └───templates
@@ -17,7 +17,7 @@
                 post_list.html
     
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+Στη συνέχεια, άνοιξε το και να αντίγραψε τα πάντα από το αρχείο `post_list.html` στο `base.html`, όπως ακολούθως:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -55,7 +55,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
 </html>
 ```
 
-Στη συνέχεια στο `base.html`, αντικατάστησε τα περιεχόμενα `<body>`(τα πάντα μεταξύ `<body>`και `</body>`) με αυτό:
+Στη συνέχεια στο αρχείο `base.html`, αντικαταστήστε τα περιεχόμενα των: `<body>`(τα πάντα μεταξύ `<body>` και `</body>`) με αυτό:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -75,7 +75,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}Ίσως παρατηρήσατε ότι αυτό αντικατέστησε τα πάντα από το `{% for post in posts %}` μέχρι το `{% endfor %}` με αυτό: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,9 +84,9 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Θα σου δείξουμε πως να το κάνεις αυτο σε μια στιγμή.
+Αλλά γιατί; Μόλις δημιουργήσατε ένα `block`! Χρησιμοποιήσατε ένα template tag με το όνομα `{% block %}` για να δημιουργήσετε μια περιοχή όπου μέσα θα εισαχθεί HTML. Η HTML θα έρθει από άλλο αρχείο template το οποίο κάνει extend (επεκτείνει) αυτό το template (`base.html`). Θα σας δείξουμε πως να το κάνετε αυτο σε λίγο.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Αποθηκεύστε το template `base.html` και ανοίξτε το αρχείο `blog/templates/blog/post_list.html` ξανά. {% raw %}Θα χρειαστεί να διαγράψετε τα πάντα πάνω από το `{% for post in posts %}` και κάτω από το `{% endfor %}`. Όταν είστε έτοιμοι, το αρχείο θα δείχνει κάπως έτσι:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,9 +102,9 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Θέλουμε να χρησιμοποιήσουμε αυτό το κομμάτι ως μέρος του template μας για όλα τα blocks με περιεχόμενο. Ήρθε η ώρα να προσθέσουμε blocks σε αυτό το αρχείο!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Έτσι:{% endraw %}
+{% raw %}Πρέπει το όνομα του block να είναι το ίδιο με αυτό που δηλώσαμε στο template `base.html`. Πρέπει επίσης να συμπεριλάβουμε όλο τον κώδικα που ανήκει σε αυτά τα blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Έτσι:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
