@@ -21,28 +21,28 @@
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> Η τελεία `.` είναι ζωτικής σημασίας επειδή λέει στο σενάριο να εγκαταστήσει το Django στο τρέχον κατάλογο σας ( για το οποίο η τελεία `.` είναι μία βραχυπρόθεσμη αναφορά).
+> Η τελεία `.` είναι ζωτικής σημασίας επειδή λέει στην εντολή να εγκαταστήσει το Django στο τρέχον φάκελο σας ( για το οποίο η τελεία `.` είναι μία συντόμευση).
 > 
-> **Σημείωση** Όταν πληκτρολογείτε την παραπάνω εντολή, θυμηθείτε ότι πληκτρολογείτε το κομμάτι που ξεκινά με `διαχειριστής-django`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Σημείωση** Όταν πληκτρολογείτε την παραπάνω εντολή, θυμηθείτε ότι πληκτρολογείτε το κομμάτι που ξεκινά με `django-admin`. Το κομμάτι κονσόλας που εμφανίζεται εδώ `(myvenv) ~/djangogirls$` είναι απλώς ένα παράδειγμα.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-Στα Windows πρέπει να εκτελέσετε την ακόλουθη εντολή. **(Μην ξεχάσετε να προσθέσετε την περίοδο (ή τελεία)`.` στο τέλος)**:
+Στα Windows πρέπει να εκτελέσετε την ακόλουθη εντολή. **(Μην ξεχάσετε να προσθέσετε την τελεία `.` στο τέλος)**:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Η τελεία `.` είναι ζωτικής σημασίας επειδή λέει στην εντολή να εγκαταστήσει το Django στο τρέχον φάκελο σας ( για το οποίο η τελεία `.` είναι μία συντόμευση).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Σημείωση** Όταν πληκτρολογείτε την παραπάνω εντολή, θυμηθείτε ότι πληκτρολογείτε το κομμάτι που ξεκινά με `django-admin.exe`. Το κομμάτι κονσόλας που εμφανίζεται εδώ `(myvenv) ~/djangogirls$` είναι απλώς ένα παράδειγμα.
 
 <!--endsec-->
 
-`διαχειριστής-django.py` είναι ένα σενάριο που θα δημιουργήσει τους καταλόγους και τα αρχεία για εσάς, Θα πρέπει τώρα να έχετε μια δομή καταλόγου που μοιάζει κάπως έτσι:
+Η εντολή `django-admin.py` μπορεί να δημιουργήσει τους φακέλους και τα αρχεία για εσάς. Θα πρέπει τώρα να έχετε μια δομή φακέλων που μοιάζει κάπως έτσι:
 
     djangogirls
     ├───manage.py
@@ -54,21 +54,21 @@
     └───requirements.txt
     
 
-> **Σημείωση**: Στην δομή καταλόγου σας, θα δείτε επίσης τον κατάλογο σας `εικονικό περιβάλλον` που δημιουργήσαμε προηγουμένως.
+> **Σημείωση**: Στην δομή φακέλων σας, θα δείτε επίσης τον `venv` φάκελο σας που δημιουργήσαμε προηγουμένως.
 
-`διαχείριση.py` είναι ένα σενάριο που βοηθά με την διαχείριση της σελίδας. Με αυτό θα μπορούμε να (μεταξύ άλλων πραγμάτων) ξεκινήσουμε ένα διακομιστή ιστού στον υπολογιστή μας χωρίς να εγκαταστήσουμε οτιδήποτε άλλο.
+Το `manage.py` είναι ένα script που βοηθά με την διαχείριση του project σας. Με αυτό θα μπορούμε να (μεταξύ άλλων πραγμάτων) ξεκινήσουμε έναν server στον υπολογιστή μας χωρίς να εγκαταστήσουμε οτιδήποτε άλλο.
 
-Το αρχείο `ρυθμίσεις.py` περιέχει την διαμόρφωση παραμέτρων της ιστοσελίδας σας.
+Το αρχείο `settings.py` περιέχει τις διάφορες παραμέτρους του project σας.
 
-Θυμάστε όταν μιλήσαμε σχετικά με ένα μεταφορέα αλληλογραφίας που ελέγχει που να παραδώσει ένα γράμμα; Το αρχείο `urls.py` περιέχει μία λίστα από σχέδια που χρησιμοποιούνται από το `urlresolver`.
+Θυμάστε όταν μιλήσαμε σχετικά με ένα μεταφορέα αλληλογραφίας που ελέγχει που να παραδώσει ένα γράμμα; Το αρχείο `urls.py` περιέχει μία λίστα από σχέδια που χρησιμοποιούνται από τον `urlresolver`.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+Ας αφνοήσουμε τα υπόλοιπα αρχεία προς το παρόν καθώς δεν θα τα αλλάξουμε καθόλου. Το μόνο πράγμα που πρέπει να θυμάστε είναι να μην τα διαγράψετε κατά λάθος!
 
-## Changing settings
+## Αλλάζοντας τις ρυθμίσεις
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Ας κάνουμε μερικές αλλαγές στο αρχείο `mysite/settings.py`. Ανοίξτε το.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Σημείωση**: Κρατήστε στο μυαλό σας ότι το αρχείο `settings.py` είναι ένα κοινό Python αρχείο όπως όλα τα άλλα Python αρχεία (έχουν, δηλαδή, την κατάληξη .py). Μπορείτε να το ανοίξετε μέσα από τον επεξεργαστή κώδικα που χρησιμοποιείτε, κλικάροντας στο "File -> Open". Αυτό θα εμφανίσει ένα παράθυρο εξερεύνησης αρχείων μέσα από το οποίο επιλέγετε το αρχείο `settings.py` και το ανοίγετε. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
 It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
