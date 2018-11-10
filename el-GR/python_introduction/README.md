@@ -116,9 +116,9 @@
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Μόλις χρησιμοποιήσατε την `upper` **method** πάνω στο string σας! Η μέθοδος (όπως η `upper()`) είναι μια ακολουθία από οδηγίες/εντολές που η Python πρέπει να εκτελέσει πάνω σε ένα συγκεκριμένο object (`"Ola"`) μόλις την καλέσετε.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Αν θέλετε να μάθετε τον αριθμό των γραμμάτων που περιέχονται στο όνομα σας, υπάρχει συνάρτηση **function** και γι'αυτό!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,16 +127,16 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Αναρρωτιέστε γιατί μερικές φορές καλείτε συναρτήσεις με την τελεία `.` στο τέλος ενός string (όπως `"Ola".upper()`) και άλλες καλείτε μια συνάρτηση και τοποθετείτε μέσα στις παρενθέσεις το string; Λοιπόν, σε κάποια σημεία οι συναρτήσεις ανήκουν σε objects, όπως η `upper()` η οποία επιδρά μόνο πάνω σε strings. Σε αυτή την περίπτωση, ονομάζουμε τις συναρτήσεις αυτές μεθόδους (**method**). Άλλες, πάλι, φορές οι συναρτήσεις δεν ανήκουν σε κάτι συγκεκριμένο και μπορούν να χρησιμοποιηθούν σε οποιουδήποτε τύπου object, όπως η `len()`. Γι'αυτό δίνουμε το string `"Ola"` ως παράμετρο στη συνάρτηση `len`.
 
 ### Περίληψη
 
-OK, enough of strings. So far you've learned about:
+Αρκετά με τα strings. Μέχρι τώρα μάθατε:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **το prompt** – γράφοντας εντολές (κώδικα) μέσα σε περειβάλλον της Python έχει ως αποτέλεσμα να παίρνετε απαντήσεις από την Python
+- **αριθμούς και strings** – στην Python οι αριθμοί χρησιμοποιούνται για μαθηματικά και τα strings για χαρακτήρες
+- **operators** – όπως `+` και `*`, συνδυάζουν τιμές και παράγουν μια νέα τιμή
+- **functions** – όπως η `upper()` και η `len()`, εκτελούν κάποιες ενέργειες στα objects.
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
