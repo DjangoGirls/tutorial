@@ -165,11 +165,11 @@
 - Εμπλουτίζει το αρχείο settings.py με κάποιες ρυθμίσεις για το deployment
 - Ρυθμίζει τη βάση δεδομένων στο PythonAnywhere χρησιμοποιώντας την εντολή `manage.py migrate`
 - Ρυθμίζει τα στατικά αρχεία (θα μάθουμε γι'αυτά αργότερα)
-- And configuring PythonAnywhere to serve your web app via its API
+- Τέλος ρυθμίζει το PythonAnywhere για να εξυπηρετήσει την εφαρμογή σας
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+Παρόλο που στο PythonAnywhere όλα αυτά τα βήματα είναι αυτοματοποιημένα, όλα αυτά δεν αλλάζουν αν επιλέξετε κάποιον άλλον server provider.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Αυτό που πρέπει να τονίσουμε είναι ότι η βάση δεδομένων στο PythonAnywhere είναι διαφορετική από αυτήν στον υπολογιστή σας. Ως αποτέλεσμα αυτού, θα χρειαστεί να αρχικοποιήσουμε τον λογαριασμό διαχειριστή με την εντολή `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
