@@ -68,11 +68,11 @@
 
 Ας κάνουμε μερικές αλλαγές στο αρχείο `mysite/settings.py`. Ανοίξτε το.
 
-**Σημείωση**: Κρατήστε στο μυαλό σας ότι το αρχείο `settings.py` είναι ένα κοινό Python αρχείο όπως όλα τα άλλα Python αρχεία (έχουν, δηλαδή, την κατάληξη .py). Μπορείτε να το ανοίξετε μέσα από τον επεξεργαστή κώδικα που χρησιμοποιείτε, κλικάροντας στο "File -> Open". Αυτό θα εμφανίσει ένα παράθυρο εξερεύνησης αρχείων μέσα από το οποίο επιλέγετε το αρχείο `settings.py` και το ανοίγετε. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Σημείωση**: Κρατήστε στο μυαλό σας ότι το αρχείο `settings.py` είναι ένα κοινό Python αρχείο όπως όλα τα άλλα Python αρχεία (έχουν, δηλαδή, την κατάληξη .py). Μπορείτε να το ανοίξετε μέσα από τον επεξεργαστή κώδικα που χρησιμοποιείτε, κλικάροντας στο "File -> Open". Αυτό θα εμφανίσει ένα παράθυρο εξερεύνησης αρχείων μέσα από το οποίο επιλέγετε το αρχείο `settings.py` και το ανοίγετε. Εναλλακτικά, μπορείτε να μεταβείτε μέσα από τον φάκελο djangogirls και με δεξί κλικ να το ανοίξετε. Έπειτα, επιλέξτε τον επεξεργαστή κώδικα από την προτινώμενη λίστα προγραμμάτων. Η επιλογή του επεξεργαστή κώδικα είναι σημαντική καθώς μπορεί να έχετε άλλα προγράμματα εγκατεστημένα.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Θα ήτνα καλό να έχουμε τη σωστή ώρα στην ιστοσελίδα μας. Πηγαίνετε στο [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) και αντιγράψτε την ζώνη ώρας σας (TZ) (πχ `Europe/Athens`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+Στο αρχείο `settings.py`, βρείτε τη γραμμή που λέει `TIME_ZONE` και αλλάξτε την τιμή της σε αυτή που αντιγράψατε. Για παράδειγμα:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -80,17 +80,17 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Ο κωδικό γλώσσας (language code) αποτελείται από την γλώσσα, πχ `en` για Αγγλικά ή `el` για Ελληνικά και τον κωδικό χώρας πχ `gr` για Ελλάδα ή `ch` για την Ελβετία. Αν τα Ελληνικά είναι η μητρική σας γλώσσα, μπορείτε να προσθέσετε το παρακάτω για να αλλάξετε την γλώσσα σε Ελληνικά: Μπορείτε, δηλαδή, να έχετε ένα κουμπί "Άκυρο" μεταφρασμένο στην γλώσσα σας. [Το Django έρχεται με προεγκατεστημένες κάποιες μεταφράσεις](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Αν θέλετε κάποια διαφορετική γλώσσα, αλλάξτε το string LANGUAGE_CODE όπως παρακάτω με την τική που εσείς επιθυμείτε:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-LANGUAGE_CODE = 'de-ch'
+LANGUAGE_CODE = 'el-GR'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Χρειάζεται επίσης να ρυθμίσουμε τα στατικά αρχεία μας. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
