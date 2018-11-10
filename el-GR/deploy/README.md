@@ -18,21 +18,21 @@
 
 ## Ξεκινώντας με το Git repo
 
-Το Git παρακολουθεί τις αλλαγές σε ένα συγκεκριμένο σύνολο αρχείων που αποκαλείται αρχείο αποθήκευσης κώδικα (ή «ρεπό» εν συντομία). Ας ξεκινήσουμε ένα για την εφαρμογή μας. Ανοίξτε την κονσόλα σας και να εκτελέσετε αυτές τις εντολές, στον φάκελο`djangogirls`:
+Το Git παρακολουθεί τις αλλαγές σε ένα συγκεκριμένο σύνολο αρχείων που αποκαλείται αρχείο αποθήκευσης κώδικα (ή «repo» εν συντομία, όπως είπαμε παραπάνω). Ας δημιουργήσουμε ένα για την εφαρμογή μας. Ανοίξτε την κονσόλα σας, μεταβείτε στον φάκελο`djangogirls` και εκτελέστε αυτές τις εντολές:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. Θα πρέπει να βρίσκεστε στο φάκελο `djangogirls`.
+> **Σημείωση** Ελέγξτε που βρίσκεστε στην κονσόλα (δηλαδή σε ποιον φάκελο) με την εντολή `pwd` (Mac OS X/Linux) ή `cd` (Windows) πριν αρχικοποιήσετε το repo σας. Θα πρέπει να βρίσκεστε στο φάκελο `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Το όνομά σας"
+    $ git config --global user.name "Your Name"
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Η αρχικοποίηση του repo είναι κάτι που πρέπει να γίνεται μόνο μια φορά ανά project (δίχως να χρειάζεται να εισάγετε το όνομα χρήστη και το email σας, ποτέ ξανά).
 
-Το Git θα παρακολουθείσει τις αλλαγές σε όλα τα αρχεία και τους φακέλους σε αυτόν τον κατάλογο, ωστόσο υπάρχουν ορισμένα αρχεία που θέλουμε να τα αγνοήσει. Το κάνουμε αυτό δημιουργώντας ένα αρχείο που ονομάζεται `.gitignore` στον αρχικό κατάλογο. Ανοίξτε το πρόγραμμα επεξεργασίας κειμένου και δημιουργήστε ένα νέο αρχείο με το ακόλουθο περιεχόμενο:
+Το Git θα παρακολουθήσει τις αλλαγές σε όλα τα αρχεία και τους φακέλους σε αυτόν τον φάκελο (σε αυτό το project). Ωστόσο υπάρχουν ορισμένα αρχεία που θέλουμε να τα αγνοήσει και να μην συμπεριληφθούν στο repo. Το κάνουμε αυτό δημιουργώντας ένα αρχείο που ονομάζεται `.gitignore` στον αρχικό φάκελο. Ανοίξτε το πρόγραμμα επεξεργασίας κειμένου και δημιουργήστε ένα νέο αρχείο με το ακόλουθο περιεχόμενο:
 
 {% filename %}.gitignore{% endfilename %}
 
@@ -45,9 +45,9 @@ Initializing the git repository is something we need to do only once per project
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+Αποθηκεύστε το ως `.gitignore` μέσα στον φάκελο "djangogirls".
 
-> **Σημείωση** Η τελεία στην αρχή του ονόματος του αρχείου είναι σημαντική! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
+> **Σημείωση** Η τελεία στην αρχή του ονόματος του αρχείου είναι σημαντική! Αν έχετε κάποιο πρόβλημα στη δημιουργία του (στο Finder, για παράδειγμα, των Mac υπολογιστών, δεν αρέσει να δημιουργούνται αρχεία με την τελεία ως πρώτο χαρακτήρα), τότε χρησιμοποιήστε το "Αποθήκευση ως...". Σιγουρευτείτε, πάντως, να μην προσθέσετε `.txt`, `.py`, ή οποιοδήποτε άλλη κατάληξη στο όνομα του αρχείου. Θα αναγνωριστεί από το Git μόνο αν το όνομα του είναι ακριβώς `.gitignore`.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. Να σκέφτεστε την τοπική βάση δεδομένων σας ως ένα παιδότοπο όπου μπορείτε να δοκιμάσετε διαφορετικά πράγματα και να μην φοβάστε ότι πρόκειται να διαγράψετε τις αληθινές σας δημοσιεύσεις από το blog σας.
 
