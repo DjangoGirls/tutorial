@@ -90,7 +90,7 @@ TIME_ZONE = 'Europe/Berlin'
 LANGUAGE_CODE = 'el-GR'
 ```
 
-Χρειάζεται επίσης να ρυθμίσουμε τα στατικά αρχεία μας. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Χρειάζεται επίσης να ρυθμίσουμε τα στατικά αρχεία μας. (Θα βρείτε τα πάντα για τα στατικά αρχεία και το CSS αργότερα στον οδηγό.) Πηγαίνετε προς τα κάτω μέχρι το *τέλος* του αρχείου και ακριβώς κάτω από την καταχώρηση `STATIC_URL`, προσθέστε μια νέα που ονομάζεται `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+Όταν το flag `DEBUG` είναι `True` και η λίστα `ALLOWED_HOSTS` είναι κενή, ο host επικυρώνεται μέσα από την ακόλουθη λίστα `[«localhost', '127.0.0.1', ' [:: 1]']`. Αυτό δεν θα ταιριάξει το hostname μας στο PythonAnywhere μόλις κάνουμε deploy την εφαρμογή μας. Οπότε θα χρειαστεί να κάνουμε την ακόλουθη αλλαγή:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -107,15 +107,15 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Σημείωση**: Αν χρησιμοποιείτε ένα Chromebook, προσθέστε αυτή τη γραμμή στο τέλος του αρχείου σας settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Σημείωση**: Αν χρησιμοποιείτε ένα Chromebook, προσθέστε αυτή τη γραμμή στο τέλος του αρχείου settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Επίσης προσθέστε `".amazonaws.com"` στη λίστα `ALLOWED_HOSTS` αν χρησιμοποιείτε το cloud9
 
 ## Δημιουργία μιας βάσης δεδομένων
 
-Υπάρχουν πολλά διαφορετικά λογισμικά βάσης δεδομένων που μπορούν να αποθηκεύσουν δεδομένα για την σελίδα σας. Θα χρησιμοποιήσουμε το προεπιλεγμένο, `sqlite3`.
+Υπάρχουν πολλές διαφορετικές βάσεις δεδομένων που μπορούν να αποθηκεύσουν δεδομένα για την σελίδα σας. Θα χρησιμοποιήσουμε την προεπιλεγμένη, `sqlite3`.
 
-Αυτό έχει ήδη εγκατασταθεί σε αυτό το τμήμα του αρχείου σας `mysite/settings.py`:
+Αυτό έχει ήδη δηλωθεί στο αρχείο `mysite/settings.py`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -128,7 +128,7 @@ DATABASES = {
 }
 ```
 
-Για να δημιουργήσετε μία βάση δεδομένων για το blog μας, ας εκτελέσουμε το ακόλουθο στην κονσόλα: `python manage.py migrate` ( χρειάζεται να είμαστε στον κατάλογο `djangogirls` που περιέχει το αρχείο `manage.py`). Αν αυτό πάει καλά, θα πρέπει να δείτε κάτι σαν αυτό:
+Για να δημιουργήσετε μία βάση δεδομένων για το blog σας, ας εκτελέσουμε το ακόλουθο στην κονσόλα: `python manage.py migrate` ( χρειάζεται να είμαστε στον φάκελο `djangogirls` που περιέχει το αρχείο `manage.py`). Αν αυτό πάει καλά, θα πρέπει να δείτε κάτι σαν αυτό:
 
 {% filename %}command-line{% endfilename %}
 
@@ -150,14 +150,14 @@ DATABASES = {
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying auth.0008_alter_user_username_max_length... OK
       Applying auth.0009_alter_user_last_name_max_length... OK
-      Applying sessions.0001_initial... OK
+      Applying sessions.0001_initial... ΟΚ
     
 
-Και τελειώσαμε! Ώρα να ξεκινήσουμε τον διακομιστή ιστού και να δούμε εάν η ιστοσελίδα μας λειτουργεί!
+Και τελειώσαμε! Ώρα να ξεκινήσουμε τον server και να δούμε εάν η ιστοσελίδα μας λειτουργεί!
 
-## Εκκίνηση του διακομιστή ιστού
+## Εκκίνηση του development server
 
-Θα πρέπει να είστε στον κατάλογο που περιέχει το αρχείο `manage.py` ( στον κατάλογο `djangogirls`). Στην κονσόλα, μπορούμε να ξεκινήσουμε τον διακομιστή ιστού εκτελώντας `python manage.py runserver`:
+Θα πρέπει να είστε στον φάκελο που περιέχει το αρχείο `manage.py` (στον φάκελο `djangogirls`). Στην κονσόλα, μπορούμε να ξεκινήσουμε τον server εκτελώντας `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,7 +171,7 @@ DATABASES = {
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-Αν είστε σε Windows και αυτή η ενέργεια αποτύχει με το `UnicodeDecodeError`, χρησιμοποιείστε αντί για αυτό, αυτή την εντολή:
+Αν είστε σε Windows και αυτή η ενέργεια αποτύχει με σφάλμα `UnicodeDecodeError`, χρησιμοποιείστε αντί για αυτό, αυτή την εντολή:
 
 {% filename %}command-line{% endfilename %}
 
