@@ -142,29 +142,29 @@
 
 > **Σημείωση** Το PythonAnywhere είναι βασισμένο στο Linux, οπότε αν τρέχετε Windows, η κονσόλα ίσως να σας φανεί διαφορετική από αυτή που έχετε συνηθίσει.
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+Η διαδικασία του ανεβάσματος της εφαρμογή σας (το blog) στο PythonAnywhere περιλαμβάνει τα εξής βήματα: το PythonAnywhere να μπορεί να "διαβάσει" τον κώδικα σας στο GitHub, να τον "κατεβάσει" και να τον αποθηκεύσει σε κάποιον από τους σκληρούς του δίσκους (pull) και στο τέλος να κάνει serve την εφαρμογή αυτή. Υπάρχουν οι χειροκίνητοι τρόποι για να επιτευχθούν αυτά τα βήματα αλλά το PythonAnywhere προσφέρει εργαλεία για αυτόν ακριβώς το λόγο. Ας το εγκαταστήσουμε πρώτα:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pip3.6 install --user pythonanywhere
     
 
-That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+Αυτό θα εμφανίσει κάτι σαν `Collecting pythonanywhere` και στο τέλος θα τελειώσει με μια γραμμή η οποία θα λέει `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Τώρα θα τρέξουμε το βοηθητικό εργαλείο ούτως ώστε να παραμετροποιήσει την εφαρμογή μας από το GitHub. Πληκτρολογήστε τα ακόλουθα στην κονσόλα του PythonAnywhere (μην ξεχάσετε να χρησιμοποιήσετε αντί του `<your-github-username>` το όνομα χρήστη σας του GitHub ούτως ώστε τα urls να είναι τα ίδια):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+Μπορείτε να βλέπετε τι γίνεται καθώς το πρόγραμμα τρέχει:
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
-- Updating your settings file with some deployment settings
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
+- Κατεβάζει τον κώδικα σας από το GitHub
+- Δημιουργεί ένα virtualenv στο PythonAnywhere όπως ακριβώς αυτό στον υπολογιστή σας
+- Εμπλουτίζει το αρχείο settings.py με κάποιες ρυθμίσεις για το deployment
+- Ρυθμίζει τη βάση δεδομένων στο PythonAnywhere χρησιμοποιώντας την εντολή `manage.py migrate`
+- Ρυθμίζει τα στατικά αρχεία (θα μάθουμε γι'αυτά αργότερα)
 - And configuring PythonAnywhere to serve your web app via its API
 
 On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
