@@ -85,11 +85,11 @@ class PostForm(forms.ModelForm):
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Αφού αποθηκεύσετε και ανανέωσετε τη σελίδα http://127.0.0.1:8000 θα δείτε τη γνωστή σελίδα σφάλματος `NoReverseMatch`. Αν ναι, τότε ωραία!
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Ανοίξτε το αρχείο `blog/urls.py` και προσθέστε τη γραμμή:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,7 +97,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+Ο ολοκληρωμένος κώδικας θα δείχνει κάπως έτσι:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -112,11 +112,11 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Αφού ανανεώσετε τη σελίδα θα δείτε ένα σφάλμα `AttributeError`, αφού δεν έχουμε φτιάξει ακόμα το view `post_new`. Ας το φτιάξουμε τώρα.
 
 ## post_new view
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Ανοίξτε το αρχείο`blog/views.py` και προσθέστε τις ακόλουθες γραμμές μαζί με τις γραμμές `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +124,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+Στη συνέχεια το *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,9 +134,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. Θα επιστρέψουμε σε αυτή την *άποψη*, αλλά για τώρα, ας δημιουργήσουμε γρήγορα ένα πρότυπο για την αίτηση.
+Για να δημιουργήσετε μια νέα `Post` φόρμα, θα χρειαστεί να αρχικοποιήσουμε την κλάση `PostForm()` όπως επίσης και να δηλώσουμε ένα template. Θα επιστρέψουμε σε αυτό το *view* αλλά για τώρα, ας δημιουργήσουμε γρήγορα ένα template για την φόρμα.
 
-## Πρότυπο
+## Template
 
 We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
