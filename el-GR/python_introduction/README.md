@@ -592,14 +592,14 @@ False
 
 > Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Τόση ώρα γράφαμε τον κώδικα στην κονσόλα η οποία μας περιορίζει στο να εισάγουμε μια γραμμή κάθε φορά. Τα περισσότερα προγράμματα αποθηκεύονται σε αρχεία και τρέχουν όταν τους ζητηθεί από τον **interpreter** ή τον **compiler** της αντίστοιχης γλώσσας προγραμματισμού. Τόση ώρα τρέχαμε τα προγράμματα μας σε μια γραμμή κάθε φορά μέσα στον Python **interpreter**. Θα χρειαστούμς περισσότερες από μια γραμμές κώδικα για τα επόμενα στάδια. Οπότε θα χρειαστεί εν συντομία να κάνουμε τα εξής:
 
-- Exit the Python interpreter
-- Open up our code editor of choice
-- Save some code into a new python file
-- Run it!
+- Να φύγουμε από τον Python interpreter
+- Να ανοίξουμε τον επεξεργαστή κώδικα της αρέσκειας μας
+- Να αποθηκεύσουμε κάποιο κομμάτι κώδικα σε ένα python αρχείο (με την κατάληξη .py)
+- Να το τρέξουμε!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Για να φύγουμε από τον Python interpreter θα γράψουμε `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -608,9 +608,9 @@ To exit from the Python interpreter that we've been using, type the `exit()` fun
 $
 ```
 
-This will put you back into the command prompt.
+Αυτό θα σας επαναφέρει στη γραμμή εντολών.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Νωρίτερα, επιλέξαμε έναν επεξεργαστή κώδικα από την ενότητα [επεξεργαστής κώδικα](../code_editor/README.md). Θα χρειαστεί να ανοίξουμε τον επεξεργαστή κώδικα και να γράψουμε κώδικα σε ένα νέο αρχείο (ή αν χρησιμοποιείτε Chromebook, δημιουργήστε ένα νέο αρχείο μέσω του Cloud IDE και ανοίξτε το αρχείο):
 
 {% filename %}editor{% endfilename %}
 
@@ -618,9 +618,9 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Προφανώς, είστε ένας αρκετά έμπειρος Python developer τώρα, οπότε γράφτε κάποιον κώδικα μέσα στο αρχείο.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Τώρα θέλουμε να αποθηκεύσουμε το αρχείο και να του δώσουμε ένα περιγραφικό όνομα. Ας το ονομάσουμς **python_intro.py** και ας το αποθηκεύσουμε στην επιφάνεια εργασίας. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
