@@ -66,7 +66,7 @@ Et c'est parti pour un peu de CSS ! Ouvrez le fichier `static/css/blog.css` dans
 
 Nous n'irons pas trop loin dans la personnalisation et l'apprentissage du CSS ici. Il y a à la fin de cette page une recommandation pour un cours CSS gratuit si vous souhaitez en savoir plus.
 
-Que pourrions-nous faire rapidement ? Maybe we could change the color of our headers? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. Ce code commence par un `#` suivi de 6 lettres (A-F) et chiffres (0-9). Par exemple, le code pour du bleu est `#0000FF`. Afin de trouver le code associé à la couleur de votre choix, vous pouvez consulter le site http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies](http://www.w3schools.com/colors/colors_names.asp), comme `red` ou `green`.
+Que pourrions-nous faire rapidement ? Pourquoi ne pas changer la couleur de notre en-tête ? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. Ce code commence par un `#` suivi de 6 lettres (A-F) et chiffres (0-9). Par exemple, le code pour du bleu est `#0000FF`. Afin de trouver le code associé à la couleur de votre choix, vous pouvez consulter le site http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies](http://www.w3schools.com/colors/colors_names.asp), comme `red` ou `green`.
 
 Dans votre fichier `blog/static/css/blog.css`, ajoutez le code suivant :
 
