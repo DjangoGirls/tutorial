@@ -161,17 +161,17 @@ Maintenant, nous allons pouvoir définir les propriétés dont nous parlions au 
 
 Malheureusement, nous n'avons pas le temps de vous expliquer tous les bouts de code que nous allons manipuler dans ce tutoriel. Si vous voulez en savoir plus sur les modèles Django, n'hésitez pas à consulter la documentation officielle de Django (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-Et sinon, c'est quoi `def publish(self):` ? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+Et sinon, c'est quoi `def publish(self):` ? Il s'agit de notre méthode `publish` dont nous parlions tout à l'heure. `def` signifie que nous créons une fonction/méthode qui porte le nom `publish`. Vous pouvez changer le nom de la méthode si vous le souhaitez. La règle de nommage est d'utiliser des minuscules et des tirets bas à la place des espaces. Par exemple, une méthode qui calcule le prix moyen d'un produit pourrait s'appeler `calcul_prix_moyen`.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Les méthodes renvoient (`return`) souvent quelque chose. C'est le cas de la méthode `__str__`. Dans notre tutoriel, lorsque nous appellerons la méthode `__str__()`, nous allons obtenir du texte (**string**) avec un titre de Post.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Notez également que les deux lignes `def publish(self) :` et `def __str__(self) :` sont mises en retrait à l’intérieur de notre classe. Parce que Python est sensible aux espaces, nous devons mettre en retrait (ou "indenter") nos méthodes à l'intérieur de la classe. Sinon, les méthodes ne sont pas considérées comme appartenantes à la classe, et vous pouvez obtenir un comportement inattendu.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Si quelque chose ne vous parait pas clair au sujet des modèles, n'hésitez pas à demander à votre coach ! Cela peut être compliqué à comprendre la première fois, surtout lorsque l'on apprend les objets et les fonctions en même temps. Gardez espoir ! Avec le temps, tout cela vous paraitra de moins en moins magique et de plus en plus évident !
 
 ### Créer des tables pour votre modèle dans votre base de données
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+La dernière étape pour cette section est d'ajouter notre nouveau modèle à notre base de données. Tout d'abord, nous devons signaler à Django que nous venons de créer notre modèle. (Nous venons de le terminer !). Allez sur votre terminal et tapez `python manage.py makemigrations blog`. Le résultat devrait ressembler à ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -182,7 +182,7 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Remarque :** N’oubliez pas de sauvegarder les fichiers que vous modifiez. Dans le cas contraire, votre ordinateur exécute la version précédente, ce qui pourrait vous donner des messages d’erreur inattendus.
 
 Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
 
