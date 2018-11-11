@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Θυμάστε όταν είπαμε να συμπεριλαμβάνουμε κώδικα γραμμένο σε διαφορετικά αρχεία; Τώρα είναι η στιγμή να συπεριλάβουμε το μοντέλο που είχαμε γράψει στο αρχείο `models.py`. We will add the line `from .models import Post` like this:
+Θυμάστε όταν είπαμε να συμπεριλαμβάνουμε κώδικα γραμμένο σε διαφορετικά αρχεία; Τώρα είναι η στιγμή να συπεριλάβουμε το μοντέλο που είχαμε γράψει στο αρχείο `models.py`. Θα προσθέσουμε τη γραμμή `from .models import Post`, όπως κάτωθι:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -26,15 +26,15 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+Η τελεία πριν τη λέξη `models` σημαίνει ο *παρόν φάκελος* ή το *παρόν application*. Και τα δύο αρχεία `views.py` και `models.py` βρίσκονται στον ίδιο φάκελο. Αυτό σημαίνει ότι μπορούμε να χρησιμοποιήσουμε την τελεία `.` και μετά το όνομα του αρχείου (δίχως την κατάληξη `.py`). Έπειτα κάνουμε import το όνομα του μοντέλου, δηλαδή της κλάσης (`Post`).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+Και μετά; Για να εξάγουμε τα posts από το μοντέλο `Post` χρειαζόμαστε κάτι που ονομάζεται `QuerySet`.
 
 ## QuerySet
 
-You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+Θα πρέπει να είστε ήδη εξοικειωμένοι με τον όρο QuerySet και πως αυτό λειτουργεί. Μιλήσαμε γι'αυτά στο κεφάλαιο [Django ORM (QuerySets)](../django_orm/README.md).
 
-So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
+Οπότε τώρα θέλουμε δημοσιευμένα posts ταξινομημένα κατά `published_date`, σωστά; Αυτό το κάναμε ήδη στο κεφάλαιο με τα QuerySets!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ So now we want published blog posts sorted by `published_date`, right? We alread
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
+Επομένως, ας ανοίξουμε το αρχείο `blog/views.py` και ας προσθέσουμε αυτό το κομμάτι κώδικα στη συνάρτηση `def post_list(request)`. Αλλά μην παραλείψετε να προσθέσετε `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -56,11 +56,11 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
+Το τελευταίο κομμάτι του παζλ είναι να περάσουμε το `posts` QuerySet στο template. Μην ανησυχείτε. Θα δούμε πως να το παρουσιάσουμε σε επόμενο κεφάλαιο.
 
-Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
+Παρακαλούμε σημειώστε ότι δημιουργούμε μια *μεταβλητή* για το QuerySet: `posts`. Μεταχειριστείτε τη ως το όνομα του QuerySet. Απο δω και στο εξής μπορούμε να αναφερόμαστε σε αυτό με το όνομα αυτό.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+Στη συνάρτηση `render` έχουμε μια παράμετρο `request` (οτιδήποτε λαμβάνουμε από το χρήστη μέσω του Internet) και άλλη μια ακόμα, εκείνη του αρχείου template (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
 So finally our `blog/views.py` file should look like this:
 
