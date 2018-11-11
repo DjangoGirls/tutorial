@@ -1,18 +1,18 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> Για τους αναγνώστες στο σπίτι: αυτό το κεφάλαιο καλύπτεται στο βίντεο [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Αυτή η ενότητα βασίζεται σε tutorials από tην κοινότητα Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Το Django είναι γραμμένο σε Python. Χρειαζόμαστε την Python για να κάνουμε το οτιδήποτε στο Django. Ακόμη και να το εγκαταστήσουμε. Ας ξεκινήσουμε εγκαθιστώντας την Python! Θέλουμε να εγκαταστήσετε την τελευταία έκδοση της Python 3. Αν έχετε κάποια παλαιότερη έκδοση θα θέλαμε να την αναβαθμίσετε. Αν έχετε ήδη την έκδοση 3.4 ή υψηλότερη τότε θα είστε μια χαρά.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Πρώτα ελέγξτε αν ο υπολογιστής σας τρέχει το λειτουργικό σύστημα 32-bit ή 64-bit των Windows. Επιλέξτε "System type" από τη σελίδα System Info. Για να φτάσετε σε αυτή τη σελίδα με μια από τις ακόλουθες μεθόδους:
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
+* Πιέστε το κουμπί των Windows (δίπλα από το αριστερό Alt) και το Pause/Break ταυτόχρονα.
+* Ανοίξτε τον πίνακα ελέγχου (Control Panel) από το Windows μενού και περιηγηθείτε στο System & Security, έπειτα επιλέξτε System
+* Πιέστε το πλήκτρο των Windows και έπειτα περιηγηθείτε στο Settings > System > About
 
-You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Μπορείτε να κατεβάσετε την Python για Windows από τη σελίδα https://www.python.org/downloads/windows/. Κλικάρετε στο σύνδεσμο "Latest Python 3 Release - Python x.x.x". Αν ο υπολογιστής σας τρέχει **64-bit** Windows, τότε κατεβάστε το αρχείο **Windows x86-64 executable installer**. Ειδάλλως, κατεβάστε το αρχείο **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
