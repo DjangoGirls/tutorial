@@ -1,14 +1,14 @@
-# Django views – time to create!
+# Django views – ώρα να δημιουργήσουμε!
 
-Time to get rid of the bug we created in the last chapter! :)
+Ώρα να ξεφορτωθούμε το σφάλμα που δημιουργήσαμε στο προηγούμενο κεφάλαιο! :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+Ένα *view* είναι το μέρος όπου βάζουμε την "λογική" της εφαρμογής μας. Θα ζητήσει πληροφορίες από το μοντέλο μας (`model`) που δημιουργήσαμε νωρίτερα και θα το περάσει στο `template`. Θα δημιουργήσουμε ένα template στο επόμενο κεφάλαιο. Τα views είναι απλώς Python συναρτήσεις οι οποίες είναι ελαφρώς πιο περίπλοκες από αυτές που γράψαμε στο κεφάλαιο **Εισαγωγή στην Python**.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Τα views τοποθετούνται σε ένα αρχείο (ανα εφαρμογή) με το όνομα `views.py`. Θα προσθέσουμε τα δικά μας *views* στο αρχείο `blog/views.py`.
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+Ωραία. Ας ανοίξουμε το αρχείο να δούμε τι έχει μέσα:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -18,11 +18,11 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Not too much stuff here yet.
+Όχι και πολλά πράγματα, ακόμα.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+Θυμηθείτε ότι οι γραμμές που ξεκινούν με δίεση `#` είναι σχόλια. Αγνοούνται πλήρως από την Python.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+Ας δημιουργήσουμε ένα *view* όπως προτείνει και το σχόλιο. Προσθέστε τα επόμενα από κάτω:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -31,7 +31,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
+Όπως βλέπετε, δημιουργήσαμε μια συνάρτηση (`def`) με το όνομα `post_list` η οποία παίρνει την παράμετρο `request` και επιστρέφει `return` την τιμή που παίρνει από άλλη συνάρτηση, την `render`, η οποία κάνει render ("χτίζει") το template `blog/post_list.html`.
 
 Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
