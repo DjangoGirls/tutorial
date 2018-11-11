@@ -41,17 +41,17 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Η γραμμή αυτή σημαίνει ότι για κάθε URL που ξεκινά με τη λέξη `admin/`, το Django θα ψάξει να βρει το αντίστοιχο *view*. Σε αυτή την περίπτωση συμπεριλαμβάνουμε αρκετά admin URLs ούτως ώστε να μην εμφανίζονται όλα σε αυτό το αρχείο. Είναι περισσότερο ευανάγνωστο κατ' αυτό τον τρόπο.
 
-## Your first Django URL!
+## Το πρώτο σας Django URL!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+Ώρα να δημιουργήσουμε το πρώτο σας URL! Θέλουμε η διεύθυνση 'http://127.0.0.1:8000/' να είναι η αρχική μας σελίδα για το blog, η οποία θα εμφανίζει όλα τα posts.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+Θέλουμε, επίσης, να κρατήσουμε το αρχείο `mysite/urls.py` καθαρό. Οπότε, θα κάνουμε import τα URLs από το `blog` application στο αρχείο `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+Πηγαίνετε λοιπόν, και προσθέστε αυτή τη γραμμή στο αρχείο `blog.urls`. Θα χρειαστεί, επίσης, να αλλάξετε την πρώτη γραμμή επειδή χρησιμοποιούμε την συνάρτηση `include`. Επομένως, θα χρειαστεί να προσθέσετε αυτή τη γραμμή.
 
-Your `mysite/urls.py` file should now look like this:
+Το αρχείο σας `mysite/urls.py` θα μοιάζει κάπως έτσι:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -65,11 +65,11 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Το Django, τώρα, θα ανακατευθύνει οτιδήποτε έρχεται στο 'http://127.0.0.1:8000/' προς το αρχείο `blog.urls` και από κει και πέρα θα πράττει αναλόγως.
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+Δημιουργήστε ένα κενό αρχείο `urls.py` μέσα στο φάκελο `blog` και ανοίξτε το. Τέλεια! Προσθέστε αυτές τις δύο γραμμές:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -78,9 +78,9 @@ from django.urls import path
 from . import views
 ```
 
-Here we're importing Django's function `path` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+Εδώ κάνουμε import τη συνάρτηση `path` του Django και όλα τα `views` από το `blog` application. (Δεν κάποια views ακόμα αλλά θα φτάσουμε εκεί σε λίγο!)
 
-After that, we can add our first URL pattern:
+Μετά από αυτό, μπορούμε να προσθέσουμε το πρώτο μας URL μοτίβο (URL pattern):
 
 {% filename %}blog/urls.py{% endfilename %}
 
