@@ -90,14 +90,14 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the root URL. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+Όπως μπορείτε να δείτε, αναθέτουμε ένα `view` με το όνομα `post_list` στο πηγαίο URL. Αυτό το μοτίβο θα ταιριάξει το κενό string και ο Django URL resolver θα αγνοήσει το domain name (πχ http://127.0.0.1:8000/) που το πρόθεμα του ενιαίου URL μονοπατιού. Αυτό το μοτίβο θα πει στο Django ότι το view `views.post_list` είναι το σωστό μέρος να πας αν κάποιος επισκεφτεί τη διεύθυνση 'http://127.0.0.1:8000/'.
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+Το τελευταίο μέρος, `name='post_list'`, είναι το όνομα του URL το οποίο θα χρησιμοποιηθεί για να αναγνωρίσουμε αυτό το URL. Αυτό μπορεί να είναι το ίσιο όπως το όνομα του view αλλά μπορεί να είναι κάτι τελείως το διαφορετικό αν θέλετε. Θα χρησιμοποιούμε τα URLs με όνομα (named URLs) αργότερα στο project, οπότε είναι σημαντικό να ονομάσετε κάθε URL στην εφαρμογή σας. Θα προσπαθήσουμε, επίσης, να κρατήσουμε τα ονόματα μοναδικά μεταξύ τους και εύκολα να τα θυμόμαστε.
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+Αν προσπαθήσετε να επισκεφτείτε τη διεύθυνση http://127.0.0.1:8000/, τότε θα δείτε ένα σφάλμα τύπου 'web page not available'. Αυτό προκύπτει επειδή ο server (θυμάστε όταν γράψατε `runserver`?) δεν τρέχει. Δείτε στην κονσόλα που έτρεχε ο server σας και δείτε το γιατί.
 
 ![Error](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Η κονσόλα, σας εμφάνισε σφάλμα αλλά μην ανησυχείτε. Είναι στην ουσία πολύ χρήσιμο: σας λέει **no attribute 'post_list'**. Αυτό είναι το όνομα του *view* το οποίο προσπαθεί να βρει και να χρησιμοποιήσει το Django αλλά δεν το έχουμε δημιουργήσει ακόμα. Σε αυτό το σημείο, ούτε η σελίδα `/admin/` δεν θα λειτουργεί. Μην ανησυχείτε. Θα φτάσουμε και εκεί. Αν δείτε κάποιο διαφορετικό σφάλμα προσπαθείστε να επανεκκινήσετε τον τοπικό server σας. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
