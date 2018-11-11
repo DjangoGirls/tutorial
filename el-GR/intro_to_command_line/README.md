@@ -68,15 +68,15 @@
 
 Πριν από κάθε εντολή θα προηγείται ο χαρακτήρας `$` ή `>` και ένα κενό αλλά εσείς δεν πρέπει να τα γράφετε. Ο υπολογιστής σας θα το κάνει για εσάς. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Μια μικρή σημείωση: στην περίπτωση σας μπορεί να δείτε κάτι σαν `C:\Users\ola>` ή `Olas-MacBook-Air:~ ola$` πριν το σύμβολο του prompt. Αυτό είναι 100% OK.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Το σημείο μέχρι το (και συμπεριλαμβανομένου) `$` ή το `>` ονομάζεται *command line prompt*, ή σκέτο *prompt* εν συντομία. Σας προτρέπει να εισάγεται κάτι εκεί.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+Στον οδηγό, όταν θέλουμε εσείς να γράψετε μια εντολή, θα συμπεριλαμβάνουμε και το `$` ή `>` και, κατά περίπτωση, περισσότερα πιο αριστερά. Αγνοήστε, λοιπόν, το αριστερό κομμάτι και πληκτρολογείτε μόνο την εντολή ως έχει η οποία θα ξεκινά μετά το prompt.
 
-## Your first command (YAY!)
+## Η πρώτη σας εντολή (ΝΑΙ!)
 
-Let's start by typing this command:
+Ας ξεκινήσουμε με αυτή την εντολή:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -96,7 +96,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Και μετά πατήστε `enter`. Αυτό είναι το αποτέλεσμα:
 
 {% filename %}command-line{% endfilename %}
 
@@ -104,7 +104,7 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Όπως μπορείτε να δείτε, ο υπολογιστής μόλις εκτύπωσε το όνομα χρήστη σας. Ωραίο, εε; :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
