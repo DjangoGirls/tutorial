@@ -499,7 +499,7 @@ True
 
 Αναρρωτιέστε γιατί βάλαμε `==` (δύο ίσον σύμβολα) για να εξακριβώσουμε αν οι αριθμοί είναι ίσοι; Χρησιμοποιούμε το μονό ίσον `=` για να αναθέσουμε μια τιμή σε μια μεταβλητή. Πάντα, **πάντα** θα χρειάζεται να βάζετε διπλό ίσον – `==` – αν θέλετε να δείτε αν δύο πράγματα είναι ίσα μεταξύ τους. Αν οι τιμές τους, δηλαδή, είναι ίδιες. Μπορούμε επίσης να εξακριβώσουμε αν οι τιμές τους δεν είναι ίσες. Γι'αυτό χρησιμοποιούμε το σύμβολο `!=`, όπως φαίνεται παραπάνω.
 
-Ας δώσουμε στην Python δύο ακόμα αποστολές:
+Ας δώσουμε στην Python δύο ακόμα εντολές:
 
 {% filename %}command-line{% endfilename %}
 
@@ -510,14 +510,14 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+Είδαμε ότι τα σύμβολα `>` και `<`, αλλά τα ακόλουθα σύμβολα τι σημαίνουν: `>=`, `<=`; Διαβάστε τα κάπως έτσι:
 
-- x `>` y means: x is greater than y
-- x `<` y means: x is less than y
-- x `<=` y means: x is less than or equal to y
-- x `>=` y means: x is greater than or equal to y
+- x `>` y σημαίνει: το x είναι μεγαλύτερο το y
+- x `<` y σημαίνει: το x είναι μικρότερο του y
+- x `<=` y σημαίνει: το x είναι μικρότερο ή ίσο του y
+- x `>=` y σημαίνει: το x είναι μεγαλύτερο ή ίσο του y
 
-Awesome! Wanna do one more? Try this:
+Τέλεια! Θέλετε να δοκιμάσετε άλλο ένα; Δοκιμάστε αυτό:
 
 {% filename %}command-line{% endfilename %}
 
@@ -530,10 +530,10 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Μπορείτε να δώσετε στην Python όσα νούμερα θέλετε προς σύγκριση και θα σας δώσει την απάντηση! Πολύ καλό, έτσι;
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** – αν χρησιμοποιήσετε τον operator `and`, τότε και οι δύο συγκρίσεις θα πρέπει να είναι αληθείς (True) για να είναι όλη η εντολή True
+- **and** – αν χρησιμοποιήσετε τον operator `or`, τότε αρκεί μόνο μια από τις συγκρίσεις να είναι αληθής (True) για να είναι όλη η εντολή True
 
 Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
 
