@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` est un sélecteur CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Donc lorsque nous avons quelque chose comme `<h1><a href="">lien</a></h1>`, le style `h1 a` est appliqué. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` est un sélecteur CSS. Cela signifie que nous allons appliquer nos styles à tout élément `a` qui se trouve dans un élément `h1` ; le sélecteur `h2 a` fait la même chose pour les éléments `h2`. Donc lorsque nous avons quelque chose comme `<h1><a href="">lien</a></h1>`, le style `h1 a` est appliqué. Dans notre cas, nous indiquons de changer sa couleur en `#C25100`, c'est à dire en orange foncé. Ou vous pouvez mettre votre propre couleur ici, mais assurez-vous qu’il contraste bien avec le fond blanc !
 
 Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. La première façon pour identifier des éléments, c'est avec leur nom d'élément. Vous vous en souviendrez car ces noms proviennent des balises HTML. Exemple : `a`, `h1` et `body` sont tous des noms d'élément. Vous pouvez aussi identifier les éléments par leur attribut `class` ou `id`. La classe et l'identifiant sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les identifiants pointent un élément spécifique. Par exemple, vous pouvez identifier la ligne suivant par le nom `a`, la classe `.external_link`, ou l'identifiant `#link_to_wiki_page` :
 
