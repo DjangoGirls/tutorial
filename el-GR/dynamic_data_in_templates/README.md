@@ -1,12 +1,12 @@
-# Dynamic data in templates
+# Δυναμικά δεδομένα στα templates
 
-We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+Μέχρι τώρα έχουμε διαφορετικά κομμάτια έτοιμα να συναρμολογηθούν: το μοντέλο `Post` είναι δηλωμένο στο αρχείο `models.py`, την συνάρτηση `post_list` στο αρχείο `views.py` το template. Αλλά πως θα κάνουμε τα posts να εμφανιστούν στο HTML template; Επειδή αυτό θέλουμε να κάνουμε. Να αντλήσουμε δεδομένα (αποθηκευμένα μοντέλα στη βάση δεδομένων) και να τα παρουσιάσουμε όμορφα μέσα από ένα template, σωστά;
 
-This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+Αυτό ακριβώς κάνουν τα *views*: συνδέουν τα μοντέλα με τα templates. Μέσα στη συνάρτηση `post_list` *view* πρέπει να προσπελάσουμε τα μοντέλα που θέλουμε και να τα δώσουμε στο template. Μέσα στο *view* αποφασίσαμε τι (μοντέλο) θα εμφανιστεί στο template.
 
-OK, so how will we achieve this?
+Ωραία, πως το κάνουμε αυτό;
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+Πρέπει να ανοίξουμε το αρχείο `blog/views.py`. Μέχρι τώρα η συνάρτηση `post_list` *view* δείχνει κάπως έτσι:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+Θυμάστε όταν είπαμε να συμπεριλαμβάνουμε κώδικα γραμμένο σε διαφορετικά αρχεία; Τώρα είναι η στιγμή να συπεριλάβουμε το μοντέλο που είχαμε γράψει στο αρχείο `models.py`. We will add the line `from .models import Post` like this:
 
 {% filename %}blog/views.py{% endfilename %}
 
