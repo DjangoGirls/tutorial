@@ -944,16 +944,16 @@ hi("Sonja")
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Τώρα τι νομίζετε ότι θα γίνει αν γράψετε άλλο όνομα εκεί μέσα; (Όχι το Ola ή το Sonja). Δοκιμάστε το και προβλέψτε την έξοδο. Θα εκτυπώσει το εξής:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+This is awesome, right? Με αυτό τον τρόπο δεν χρειάζεται να επαναλαμβάνεστε κάθε φορά που θέλετε να αλλάξετε το όνομα του προσώπου που η συνάρτηση υποτίθεται ότι χαιρετά. Και γι'αυτό το λόγο χρησιμοποιούμε τις συναρτήσεις. Δεν θέλετε ποτέ να επαναλάβετε τον κώδικα σας!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Ας κάνουμε κάτι πιο έξυπνο. Υπάρχουν περισσότερα ονόματα από δύο και το να γράφουμε συνθήκες για καθένα χωριστά καταντά κουραστικό και ευάλωτο σε λάθη. Αντικαταστήστε το περιεχόμενο του αρχείου σας με τα κατώθι:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -964,7 +964,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+Ας τρέξουμε τον κώδικα τώρα:
 
 {% filename %}command-line{% endfilename %}
 
@@ -972,17 +972,17 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Συγχαρητήρια! Μόλις μάθατε πως να γράφετε συναρτήσεις! :)
 
-## Loops
+## Επαναλήψεις
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-This is the last part already. That was quick, right? :)
+Αυτό είναι το τελευταίο κομμάτι. Ήταν σύντομο, έτσι; :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Οι προγραμματιστές δεν θέλουν να επαναλαμβάνουν τα ίδια και τα ίδια. Ο προγραμματισμός έχει να κάνει με την αυτοματοποίηση των πραγμάτων. Οπότε δεν θέλουμε να χαιρετάμε κάθε πρόσωπο με το όνομα τους χειροκίνητα, έτσι; Εδώ, λοιπόν, έρχονται οι επαναλήψεις (ή loops ή βρόγχοι).
 
-Still remember lists? Let's do a list of girls:
+Θυμάστε τις λίστες; Ας φτιάξουμε μια λίστα με ονόματε κοριτσιών:
 
 {% filename %}python_intro.py{% endfilename %}
 
