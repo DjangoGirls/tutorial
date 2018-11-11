@@ -1,16 +1,16 @@
 # Για σένα που κάνεις το tutorial από το σπίτι
 
-Αν κάνεις το tutorial στο σπίτι και όχι στο πλαίσιο ενός [Django Girls event](https://djangogirls.org/events/), μπορείς να αγνοήσεις εντελώς αυτό το κεφάλαιο και να πας κατευθείαν στο κεφάλαιο [Πώς δουλεύει το internet](../how_the_internet_works/README.md).
+Αν κάνεις το tutorial στο σπίτι και όχι στο πλαίσιο ενός από τα [Django Girls events](https://djangogirls.org/events/), μπορείς να αγνοήσεις εντελώς αυτό το κεφάλαιο και να πας κατευθείαν στο κεφάλαιο [Πώς δουλεύει το internet](../how_the_internet_works/README.md).
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+Αυτό οφείλεται στο γεγονός ότι καλύπτουμε γνωστικά ένα αντικείμενο καθώς το συναντάμε και όχι όλα μαζεμένα. Αυτή είναι μια σελίδα που συγκεντρώνει όλες τις οδηγίες εγκατάστασης σε ένα μέρος (το οποίο είναι χρήσιμο για ορισμένες μορφές των εργαστηρίων). Μπορείτε να διαλέξετε να τα εγκαταστήσετε όλα όσα είναι σε αυτή τη σελίδα αν θέλετε. Αλλά αν θέλετε να μαθαίνετε πράγματα καθώς εγκαθιστάτε πράγματα στον υπολογιστή σας, αγνοήστε αυτό το κεφάλαιο και θα εξηγήσουμε τη διαδικασία εγκατάστασης διαφόρων εργαλείων καθώς τα συναντάμε μπροστά μας.
 
-Good luck!
+Καλή τύχη!
 
-# If you're attending a workshop
+# Αν παρακαλουθείτε ένα εργαστήριο
 
-If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
+Εάν παρακολουθείτε ένα από τα [Django Girls events](https://djangogirls.org/events/):
 
-* Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
+* Το εργαστήριο μπορεί να έχει μια "ομάδα εγκατάστασης" πριν το κυρίως εργαστήριο. Αν ανήκετε στην ομάδα εγκατάστασης, τότε αυτή η σελίδα είναι για εσάς! Ακολουθήστε τις οδηγίες εδώ, για να έχετε όλα όσα χρειάζεστε για το εργαστήριο εγκατεστημένα, με τη βοήθεια των βοηθών αν χρειαστεί. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
 * The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
 * If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
 
