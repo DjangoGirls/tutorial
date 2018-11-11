@@ -990,7 +990,7 @@ hi("Rachel")
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Θέλουμε να τις χαιρετίσουμε όλες με το όνομα τους. Έχουμε, ήδη, μια συνάρτηση με το όνομα `hi`, οπότε θα χρησιμοποιήσουμε αυτή:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -998,9 +998,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+Η λέξη κλειδί της Python `for` συμπεριφέρεται περίπου όπως το `if`. Το κυρίως σώμα του κώδικα που ακολουθεί θα πρέπει να είναι στοιχισμένο με 4 κενά.
 
-Here is the full code that will be in the file:
+Αυτός θα είναι ο κώδικας που θα υπάρχει στο αρχείο:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1014,7 +1014,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+Και όταν το τρέχουμε:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1031,9 +1031,9 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Όπως βλέπετε οτιδήποτε βάλτε μέσα σε ένα statement `for` με την ανάλογη στοίχιση θα επαναληφθεί για κάθε στοιχείο της λίστας `girls`.
 
-You can also use `for` on numbers using the `range` function:
+Μπορείτε να χρησιμοποιήσετε το `for` και για αριθμούς χρησιμοποιώντας της συνάρτηση `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,7 +1042,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Το οποίο θα εκτυπώσει:
 
 {% filename %}command-line{% endfilename %}
 
