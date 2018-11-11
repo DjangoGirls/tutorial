@@ -72,9 +72,9 @@
 
 ## Ένα ακόμα πράγμα
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Θα ήταν καλό να βλέπαμε αν το site σας εξακολουθεί να λειτουργεί ακόμα στο internet, σωστά; Ας το κάνουμε deploy στο PythonAnywhere για ακόμη μια φορά. Παρακάτω φαίνεται μια περίληψη των βημάτων…
 
-* First, push your code to GitHub
+* Πρώτα κάντε push τον κώδικα σας στο GitHub
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,7 +88,7 @@ It'd be good to see if your website will still be working on the public Internet
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+* Έπειτα συνδεθείτε στο [PythonAnywhere](https://www.pythonanywhere.com/consoles/), μεταβείτε στο **Bash console** (ή ανοίξτε ένα νέο) και τρέξτε:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -97,10 +97,10 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
     
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Τέλος, πηγαίνετε στο ["Web" page](https://www.pythonanywhere.com/web_app_setup/) και κλικάρετε **Reload** στην εφαρμογή σας. (Για να δείτε άλλες σελίδες του PythonAnywhere από την κονσόλα χρησιμοποιήστε το κουμπί του μενού στην πάνω δεξιά γωνία.) Η αλλαγή σας θα πρέπει να φαίνεται στο https://yourname.pythonanywhere.com. Δείτε το στο browser! Δεν πειράζει αν τα posts στο PythonAnywhere δεν είναι τα ίδια με τα posts που εμφανίζονται τοπικά στον υπολογιστή σας. Οι βάσεις δεδομένων στον τοπικό υπολογιστή σας και στο PythonAnywhere δεν είναι συγχρονισμένες μεταξύ τους.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Συγχαρητήρια! Τώρα, πηγαίντε και προσθέστε μερικά posts μέσω του Django admin (θυμηθείτε να προσθέσετε το published_date!) Σιγουρευτείτε ότι βρίσκεστε στο Django admin του pythonanywhere site, https://yourname.pythonanywhere.com/admin (και όχι του τοπικού υπολογιστή σας). Έπειτα, ανανεώστε τη σελίδα και δείτε αν αυτά τα posts εμφανίστηκαν.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+Δουλεύει μια χαρά, έτσι; Είμαστε περήφανοι! Απομακρυνθείτε από τον υπολογιστή σας για λίγο. Αξίζετε ένα διάλλειμα. :)
 
 ![Σχήμα 13.4](images/donut.png)
