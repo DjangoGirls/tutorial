@@ -1,15 +1,15 @@
-# Let’s start with Python
+# Ας ξεκινήσουμε με την Python
 
-We're finally here!
+Είμαστε επιτέλους εδώ!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Αλλά πρώτα θα θέλαμε να σας εξηγήσουμε τι είναι η Python. Η Python είναι μια πολύ δημοφιλής γλώσσα προγραμματισμού η οποία μπορεί να χρησιμοποιηθεί σε πολλούς τομείς όπως δημιουργία ιστοσελίδων, παιχνίδια, επιστημονικό λογισμικό, γραφικά και πολλά πολλά άλλα.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Η Python δημιουργήθηκε στα τέλη της δεκαετίας του 1980 και ο κύριος σκοπός της είναι να είναι ευανάγνωστη από ανθρώπους (και όχι από μηχανές!). Γι'αυτό το λόγο φαίνεται απλούστερη από άλλες γλώσσες προγραμματισμού, αλλά μην ανησυχείτε. Η Python είναι πραγματικά δυνατή!
 
-# Python installation
+# Εγκατάσταση Python
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Σημείωση** Αν χρησιμοποιείτε Chromebook, μεταβείτε στο κεφάλαιο [Εγκατάσταση Chromebook](../chromebook_setup/README.md).
 > 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Σημείωση** Αν έχετε ήδη ολοκληρώσει τα βήματα εγκατάστασης, δεν υπάρχει λόγος να τα ξανακάνετε. Μπορείτε να διαβάσετε το ακόλουθο κεφάλαιο!
 
 {% include "/python_installation/instructions.md" %}
