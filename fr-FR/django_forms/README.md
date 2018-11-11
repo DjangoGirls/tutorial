@@ -444,6 +444,6 @@ Nos modifications fonctionnent-elles sur PythonAnywhere ? Pour le savoir, déplo
 
 (N’oubliez pas de remplacer `<your-pythonanywhere-username>` avec votre propre nom d’utilisateur sur PythonAnywhere, sans les chevrons).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
+* Enfin, allez sur ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (utilisez le bouton de menu en haut à droite de la console) et cliquez **Reload**. Actualisez votre blog https://yourname.pythonanywhere.com pour voir les changements.
 
 Normalement, ça devrait suffire ! Encore bravo :)
