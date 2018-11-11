@@ -672,9 +672,9 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Αν κολλήσετε, ζητήστε βοήθεια. Για αυτόν ακριβώς το λόγο βρίσκονται οι βοηθοί!
 
-Now use Python to execute the code in the file like this:
+Τώρα χρησιμοποιήστε την Python για να τρέξετε τον κώδικα στο αρχείο όπως κατώθι:
 
 {% filename %}command-line{% endfilename %}
 
@@ -682,7 +682,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Σημείωση: στα Windows η εντολή 'python3' δεν αναγνωρίζεται. Αντ'αυτού χρησιμοποιήστε την εντολή 'python':
 
 {% filename %}command-line{% endfilename %}
 
@@ -690,15 +690,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Τέλεια! Μόλις τρέξατε το πρώτο σας Python πρόγραμμα το οποίο είναι αποθηκευμένο σε αρχείο. Αισθάνεστε ωραία;
 
-You can now move on to an essential tool in programming:
+Μπορείτε, τώρα, να μεταβείτε σε ένα σημαντικό εργαλείο στον προγραμματισμό:
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Μερικές φορές, πολλά πράγματα στον κώδικα θα πρέπει να εκτελούνται αν ισχύουν συγκεκριμένες συνθήκες. Γι'αυτό το λόγο η Python (και κάθε άλλη γλώσσα προγραμματισμού) έχει κάτι που ονομάζει **if statements**.
 
-Replace the code in your **python_intro.py** file with this:
+Αντικαταστήστε τον κώδικα στο αρχείο **python_intro.py** με αυτό:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,7 +706,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Αν το αποθηκεύσουμε και το τρέξουμε, θα δούμε το ακόλουθο σφάλμα:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
