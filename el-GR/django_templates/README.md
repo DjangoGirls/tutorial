@@ -20,11 +20,11 @@
 {{ posts }}
 ```
 
-Δοκιμάστε αυτό μέσα στο template `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Δοκιμάστε αυτό μέσα στο template `blog/templates/blog/post_list.html`. Ανοίξτε το και αντικαταστήστε τα πάντα από το δεύτερο `<div>` to the third `</div>` με το `{{ posts }}`. Αποθηκεύστε το αρχείο και ανανεώστε τη σελίδα για να δείτε τα αποτελέσματα:
 
 ![Σχήμα 13.1](images/step1.png)
 
-As you can see, all we've got is this:
+Όπως βλέπετε, το μόνο που έχουμε είναι το εξής:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +32,7 @@ As you can see, all we've got is this:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Αυτό σημαίνει ότι το Django το εκλαμβάνει ως μια λίστα από objects. Θυμηθείτε στο κεφάλαιο **Εισαγωγή στην Python** πως προβάλαμε λίστες; Ναι, με επαναλήψεις! Στα Django template το κάνετε ως εξής:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,11 +42,11 @@ This means that Django understands it as a list of objects. Remember from **Intr
 {% endfor %}
 ```
 
-Try this in your template.
+Δοκιμάστε αυτό στο template.
 
 ![Σχήμα 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+Δούλεψε! Αλλά θέλουμε τα posts μα εμφανίζονται όπως τα στατικά posts που φτιάξαμε νωρίτερα στο κεφάλαιο **Εισαγωγή στην HTML**. Μπορείτε να μιξάρετε HTML και template tags μαζί. Έτσι, το `body` θα μοιάζει κάπως έτσι:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,13 +64,13 @@ It works! But we want the posts to be displayed like the static posts we created
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw %}Οτιδήποτε βάζετε ανάμεσα στο `{% for %}` και το `{% endfor %}` θα επαναληφθεί για κάθε object στη λίστα. Ανανεώστε τη σελίδα:{% endraw %}
 
 ![Σχήμα 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Παρατηρήσατε ότι χρησιμοποιούμε έναν διαφορετικό τρόπο πρόσβασης αυτή τη φορά (`{{ post.title }}` ή `{{ post.text }}`); Αποκτούμε πρόσβαση στα δεδομένα κάθε πεδίου που είναι ορισμένα στο μοντέλο `Post`. Επίσης, η κάθετη γραμμή `|linebreaksbr` φιλτράρει το κείμενο του posts όπου μετατρέπει τις αλλαγές γραμμής σε παράγράφους.
 
-## One more thing
+## Ένα ακόμα πράγμα
 
 It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
