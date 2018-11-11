@@ -271,7 +271,7 @@ Maria
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Ναι, αυτή είναι μια κενή λίστα. Όχι πολύ χρήσιμη έτσι; Ας δημιουργήσουμε μια λίστα με αριθμούς. Δεν θέλουμε να επαναλαμβανόμαστε όλη την ώρα, οπότε θα βάλουμε τη λίστα μέσα σε μια μεταβλητή:
 
 {% filename %}command-line{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Τέλεια, έχουμε μια λίστα! Τι μπορούμε να κάνουμε με αυτή; Ας δούμε πόσοι αριθμοί υπάρχουν μέσα στη λίστα. Ξέρετε, μήπως, ποια συνάρτηση μπορούμε να χρησιμοποιήσουμε γι'αυτό; Το ξέρετε ήδη!
 
 {% filename %}command-line{% endfilename %}
 
@@ -288,7 +288,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Ναι! Η συνάρτηση `len()` σας δίνει τον αριθμό των objects μέσα σε μια λίστα. Ωραίο, έτσι; Ίσως να μπορούμε να ταξινομήσουμε τους αριθμούς:
 
 {% filename %}command-line{% endfilename %}
 
@@ -296,7 +296,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Αυτό δεν επιστρέφει τίποτα, απλώς άλλαξε τη σειρά με την οποία εμφανίζονται οι αριθμοί στη λίστα. Ας εκτυπώσουμε τη λίστα να δούμε πως άλλαξαν τα δεδομένα της:
 
 {% filename %}command-line{% endfilename %}
 
@@ -305,9 +305,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Όπως βλέπετε, οι αριθμοί μέσα στη λίστα είναι πλέον ταξινομημένοι κατά αύξοντα αριθμό. Συγχαρητήρια!
 
-Maybe we want to reverse that order? Let's do that!
+Ίσως να θέλουμε να αντιστρέψουμε αυτή τη σειρά. Ας το κάνουμε!
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Αν θέλετε να προσθέσετε κάτι στη λίστα σας, μπορείτε να το κάνετε με την ακόλουθη εντολή:
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Αν θέλετε να εμφανίσετε μόνο το πρώτο στοιχείο της λίστας, μπορείτε να το κάνετε χρησιμοποιώντας τα λεγόμενα **indexes**. Ένα index είναι ένας αριθμός ο οποίος δηλώνει σε ποιο σημείο ένα στοιχείο υπάρχει σε μια λίστα. Οι προγραμματιστές προτιμούν να ξεκινούν από το 0, οπότε το πρώτο στοιχείο θα βρίσκεται στη θέση (index) 0, το επόμενο στη θέση 1 κοκ. Δοκιμάστε αυτό:
 
 {% filename %}command-line{% endfilename %}
 
@@ -338,9 +338,9 @@ If you want to show only the first number, you can do this by using **indexes**.
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Όπως μπορείτε να δείτε, μπορείτε να έχετε πρόσβαση στα διαφορετικά στοιχεία μια λίστας γνωρίζοντας το όνομα της λίστας και τη θέση (index) του κάθε στοιχείου, δηλώνοντας το μέσα σε αγκύλες ([]).
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Για να διαγράψετε κάτι από τη λίστα, θα χρειαστεί να χρησιμοποιήσετε τα **indexes** καθώς και την μέθοδο `pop()`. Δηλαδή, θα πρέπει να ξέρετε ποιο στοιχείο να διαγράψετε. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
 {% filename %}command-line{% endfilename %}
 
