@@ -10,44 +10,44 @@
 
 Εάν παρακολουθείτε ένα από τα [Django Girls events](https://djangogirls.org/events/):
 
-* Το εργαστήριο μπορεί να έχει μια "ομάδα εγκατάστασης" πριν το κυρίως εργαστήριο. Αν ανήκετε στην ομάδα εγκατάστασης, τότε αυτή η σελίδα είναι για εσάς! Ακολουθήστε τις οδηγίες εδώ, για να έχετε όλα όσα χρειάζεστε για το εργαστήριο εγκατεστημένα, με τη βοήθεια των βοηθών αν χρειαστεί. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
-* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* Το εργαστήριο μπορεί να έχει μια "ομάδα εγκατάστασης" πριν το κυρίως εργαστήριο. Αν ανήκετε στην ομάδα εγκατάστασης, τότε αυτή η σελίδα είναι για εσάς! Ακολουθήστε τις οδηγίες εδώ, για να έχετε όλα όσα χρειάζεστε για το εργαστήριο εγκατεστημένα, με τη βοήθεια των βοηθών αν χρειαστεί. Στη συνέχεια, στο κυρίως εργαστήριο, θα είστε σε θέση να παρακάμψετε τις οδηγίες εγκατάστασης που θα συναντήσετε στον οδηγό.
+* Μπορεί να σας έχουν ζητήσει οι διοργανωτές του εργαστηρίου να δοκιμάσετε στο σπίτι να εγκαταστήσετε τα πάντα στον υπολογιστή σας, πριν ξεκινήσει το εργαστήρι. Εάν σας έχει ζητηθεί να το κάνετε αυτό, η σελίδα αυτή είναι για εσάς! Ακολουθήστε τις οδηγίες εδώ, όσο καλύτερα μπορείτε. Στη συνέχεια, στο κυρίως εργαστήριο, όταν φτάνετε σε ένα βήμα εγκατάσταση στον οδηγό, αν δεν έχει συμπεριληφθεί από εμάς μπορείτε να λάβετε βοήθεια από το λεωφορείο.
+* Αν το εργαστήριο σας δεν έχει ομάδα εγκατάστασης (ή δεν μπορούσατε να παρευρεθείτε) και οι διοργανωτές δεν σας ζήτησαν να εγκαταστήσετε όσα χρειάζεται πριν φτάσετε, αγνοήστε αυτή τη σελίδα και πηγαίνετε στον κεφάλαιο [Πως δουλεύει το internet](../how_the_internet_works/README.md). Θα εγκαθιστάτε οτιδήποτε χρειάζεται καθώς το συναντάτε στον οδηγό.
 
-# Installation
+# Εγκατάσταση
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Σε αυτό τον οδηγό θα φτιάξουμε ένα blog. Για να το κάνουμε αυτό, καθώς προχωράμε θα σας ζητηθεί να εγκαταστήσετε διάφορα προγράμματα στον υπολογιστή σας και να δημιουργήσετε μερικούς λογαριασμούς. Αυτή η σελίδα συγκεντρώνει όλες τις εγκαταστάσεις και τις δημιουργίες λογαριασμών σε ένα μέρος (το οποίο είναι χρήσιμο για μερικούς τύπους εργαστηρίων).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Install Python
+# Εγκατάσταση Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Εγκατάσταση επεξεργαστή κώδικα
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Εγκατάσταση virtualenv και Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Εγκατάσταση Git
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Δημιουργία GitHub λογαριασμού
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Πηγαίνετε στο [GitHub.com](https://www.github.com) και φτιάξτε έναν δωρεάν λογαριασμό. Σιγουρευτείτε ότι θα θυμάστε τον κωδικό πρόσβασης (προσθέστε τον σε κάποιον password manager, αν χρησιμοποιείτε κάποιον).
 
-# Create a PythonAnywhere account
+# Δημιουργία λογαριασμού στο PythonAnywhere
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Αρχίστε να διαβάζετε
 
 Συγχαρητήρια, όλα έχουν ρυθμιστεί σωστά και είσαι πανέτοιμη! Αν έχεις ακόμα χρόνο πριν το workshop, ίσως να σε βοηθούσε να ξεκινήσεις να διαβάζεις μερικά από τα εισαγωγικά κεφάλαια:
 
