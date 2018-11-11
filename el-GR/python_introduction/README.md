@@ -716,7 +716,7 @@ if 3 > 2:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Η Python περιμένει από εμάς να της δώσουμε περαιτέρω οδηγίες για το τι θα γίνει (τι θα εκτελεστεί) αν η συνθήκε `3 > 2` είναι αληθής (ή αλλιώς `True`). Ας προσπαθήσουμε να εκτυπώσουμε τη λέξη "It works!". Αλλάξτε τον κώδικα στο αρχείο **python_intro.py** ως εξής:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -725,9 +725,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Παρατηρήστε ότι προσθέσαμε τέσσερα κενά (4 spaces) για να κάνουμε indent την τελευταία γραμμη. Πρέπει να το κάνουμε αυτό ούτως ώστε να πούμε στην Python τι να κάνει αν η συνθήκη είναι αληθής. Μπορείτε να βάλετε ένα διάστημα (έναν κενό χαρακτήρα) αλλά όλοι οι προγραμματιστές Python χρησιμοποιούν τέσσερα για να φαίνεται πιο όμορφο και ευανάγνωστο. Η χρήση του Tab λαμβάνεται ως 4 κενά αρκεί ο επεξεργαστής κώδικα να είναι ρυθμισμένος γι'αυτό. Όταν κάνετε την επιλογή σας (Tab ή κενοί χαρακτήρες), μην την αλλάξετε! Αν χρησιμοποιείτε τα 4 κενά τότε να χρησιμοποιείτε τα 4 κενά για πάντα. Αλλιώς θα προκύψουν προβλήματα (mixed Tabs and spaces).
 
-Save it and give it another run:
+Αποθηκεύστε το και δοκιμάστε να το ξανατρέξετε:
 
 {% filename %}command-line{% endfilename %}
 
@@ -736,11 +736,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Σημείωση: θυμηθείτε ότι στα Windows η εντολή 'python3' δεν αναγνωρίζεται. Χρησιμοποιείτε την 'python' για να τρέχετε αρχεία.
 
-### What if a condition isn't True?
+### Αν όμως η συνθήκη δεν είναι True;
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+Στα προηγούμενα παραδείγματα, ο κώδικας έτρεχε μόνο όταν η σνυθήκη ήταν αληθής. Αλλά η Python έχει και άλλα statements όπως το `elif` και το `else`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -751,7 +751,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+Όταν αυτό τρέχει θα εκτυπώσει:
 
 {% filename %}command-line{% endfilename %}
 
