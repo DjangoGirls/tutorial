@@ -877,7 +877,7 @@ hi()
 - Αν λάβατε ένα σφάλμα τύπου `IndentationError`, ελέγξτε ότι και οι γραμμές που καλούνται οι δύο συναρτήσεις `print` έχουν τον ίδιο αριθμό κενών στην αρχή: η Python απαιτεί όλος ο κώδικας μέσα στις συναρτήσεις να είναι στοιχισμένος το ίδιο.
 - Αν δεν βλέπετε κάποια έξοδο τότε είτε έχετε παραλείψει να καλέσετε την συνάρτηση χρησιμοποιώντας τις παρενθέσεις `hi()` είτε το έχετε κάνει αλλά η κλήση της συνάρτησης (hi()) έχει *κενό* στην αρχή και αποτελεί μέρος του κυρίου σώματος της συνάρτησης (def hi():).
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Ας φτιάξουμε την πρώτη μας συνάρτηση με παραμέτρους. Θα αλλάξουμε το προηγούμενο παράδειγμα συμπεριλαμβάνοντας ένα όνομα. Θα φτιάξουμε μια συνάρτηση που να λέει 'hi' στο πρόσωπο που την καλεί:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -885,7 +885,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Όπως βλέπετε, δώσαμε μια παράμετρο στην συνάρτηση με το όνομα `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -901,7 +901,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Θυμηθείτε: Η συνάρτηση `print` είναι στοιχισμένη με 4 κενά μέσα στο statement `if`. Αυτό το κάνουμε διότι θέλουμε να εκτελεστεί η συνάρτηση όταν η συνθήκη στο if είναι αληθής. Ας δούμε πως δουλεύει τώρα:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -912,7 +912,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Ώπα, ένα σφάλμα. Ευτυχώς, η Python μας δίνει ένα αρκετά χρήσιμο σφάλμα. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
