@@ -1,18 +1,18 @@
 # Django URLs
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+Είμαστε έτοιμοι να χτίσουμε την πρώτη μας σελίδα: μια αρχική σελίδα (homepage) για το blog μας! Αλλά πρώτα πρέπει να μάθουμε λίγα πράγματα για τα Django URLs.
 
-## What is a URL?
+## Τι είναι ένα URL;
 
-A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+Ένα URL είναι μια διεύθυνση ιστού. Μπορείτε να δείτε ένα URL κάθε φορά που επισκέπτεστε μια σελίδα. Είναι ορατό στην γραμμή διεύθυνσης. (Ναι! `127.0.0.1:8000` είναι ένα URL! Και το `https://djangogirls.org` είναι, επίσης, ένα URL.)
 
 ![Url](images/url.png)
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Κάθε σελίδα στο ιντερνετ χρειάζεται το δικό της URL. Με αυτό τον τρόπο η εφαρμογή σας θα ξέρει τι να δείξει στον χρήστη που ανοίγει αυτό το URL. Στο Django, χρησιμοποιούμε κάτι που το ονομάζουμε `URLconf` (URL configuration). Το URLconf είναι ένα σετ από μοτίβα που το Django θα προσπαθήσει να ταιριάξει με το ζητούμενο URL ούτως ώστε να βρει το κατάλληλο view.
 
-## How do URLs work in Django?
+## Πως δουλεύουν τα URLs στο Django;
 
-Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
+Ας ανοίξουμε το αρχείο `mysite/urls.py` και να δούμε τι έχει μέσα:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -29,11 +29,11 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+Όπως βλέπετε, το Django έχει γράψει μέσα κάποια πράγματα για εμάς.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+Οι γραμμές μεταξύ των τριπλών εισαγωγικών (`'''` ή `"""`) ονομάζονται docstrings. Μπορείτε να τα γράψετε στην αρχή κάθε Python αρχείου, κλάσης, μεθόδου ή συνάρτησης για να περιγράψετε το τι κάνει. Δεν θα εκτελεστούν από την Python.
 
-The admin URL, which you visited in the previous chapter, is already here:
+Το admin URL, το οποίο επισκεφτήκατε σε προηγούμενο κεφάλαιο, είναι ήδη εκεί:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
