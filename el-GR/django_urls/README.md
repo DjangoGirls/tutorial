@@ -96,8 +96,8 @@ urlpatterns = [
 
 Αν προσπαθήσετε να επισκεφτείτε τη διεύθυνση http://127.0.0.1:8000/, τότε θα δείτε ένα σφάλμα τύπου 'web page not available'. Αυτό προκύπτει επειδή ο server (θυμάστε όταν γράψατε `runserver`?) δεν τρέχει. Δείτε στην κονσόλα που έτρεχε ο server σας και δείτε το γιατί.
 
-![Error](images/error1.png)
+![Σφάλμα](images/error1.png)
 
-Η κονσόλα, σας εμφάνισε σφάλμα αλλά μην ανησυχείτε. Είναι στην ουσία πολύ χρήσιμο: σας λέει **no attribute 'post_list'**. Αυτό είναι το όνομα του *view* το οποίο προσπαθεί να βρει και να χρησιμοποιήσει το Django αλλά δεν το έχουμε δημιουργήσει ακόμα. Σε αυτό το σημείο, ούτε η σελίδα `/admin/` δεν θα λειτουργεί. Μην ανησυχείτε. Θα φτάσουμε και εκεί. Αν δείτε κάποιο διαφορετικό σφάλμα προσπαθείστε να επανεκκινήσετε τον τοπικό server σας. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Η κονσόλα, σας εμφάνισε σφάλμα αλλά μην ανησυχείτε. Είναι στην ουσία πολύ χρήσιμο: σας λέει **no attribute 'post_list'**. Αυτό είναι το όνομα του *view* το οποίο προσπαθεί να βρει και να χρησιμοποιήσει το Django αλλά δεν το έχουμε δημιουργήσει ακόμα. Σε αυτό το σημείο, ούτε η σελίδα `/admin/` δεν θα λειτουργεί. Μην ανησυχείτε. Θα φτάσουμε και εκεί. Αν δείτε κάποιο διαφορετικό σφάλμα προσπαθείστε να επανεκκινήσετε τον τοπικό server σας. Για να το κάνετε αυτό, στην κονσόλα που τρέχει ο server, σταματήστε τον πιέζοντας Ctrl+C και επανεκκινήστε τον γράφοντας `python manage.py runserver` και μετά πιέστε enter.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> Αν θέλετε να περισσότερα σχετικά με τα Django URLconfs, δείτε στο επίσημο documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
