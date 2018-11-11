@@ -388,9 +388,9 @@ Maria
 
 - Το πρώτο κλειδί είναι το `name` το οποίο αντιστοιχεί την τιμή `'Ola'` (είναι ένα `string` object),
 - Το δεύτερο κλειδί με το όνομα `country` αντιστοιχεί στην τιμή `'Poland'` (άλλο ένα `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- και το τρίτο κλειδί `favorite_numbers` αντιστοιχεί στην τιμή `[7, 42, 92]` (μια λίστα `list` με τρεις αριθμούς μέσα της).
 
-You can check the content of individual keys with this syntax:
+Μπορείτε να δείτε τις τιμές κάθε κλειδιού με την ακόλουθη σύνταξη:
 
 {% filename %}command-line{% endfilename %}
 
@@ -399,9 +399,9 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Βλέπετε ότι είναι όμοια με μια λίστα. Απλώς δεν χριάζεται να θυμάστε τη θέση - μόνο το όνομα.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Τι θα συμβεί αν ζητήσουμε μια τιμή ενός κλειδιού η οποία δεν υπάρχει; Μπορείτε να μαντέψετε; Ας δοκιμάσουμε να δούμε!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,14 +412,14 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Είδατε, άλλο ένα σφάλμα το οποίο λέγεται **KeyError**. Η Python είναι αρκετά καλή σε αυτό. Δηλαδή στην περιγραφικότητα των σφαλμάτων της. Σας λέει ότι το κλειδί `'age'` δεν υπάρχει στο λεξικό.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Πότε πρέπει να χρησιμοποιείτε λεξικό έναντι μιας λίστας; Αυτό είναι ένα καλό ερώτημα. Σκεφτείτε λίγο την απάντηση πριν προχωρήσετε.
 
-- Do you just need an ordered sequence of items? Go for a list.
-- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
+- Χρειάζεστε μια ταξινομημένη ακολουθία από στοιχεία; Η απάντηση είναι λίστα.
+- Χρειάζεστε να συσχετίζετε κλειδιά ούτως ώστε να τα αναζητείτε αργότερα μόνο με το όνομα τους και όχι με τη θέση τους; Η απάντηση είναι dict.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Τα dicts όπως και οι λίστες είναι *mutable*, που σημαίνει ότι μπορούν να αλλάξουν μετά τη δημιουργία τους. Μπορείτε να προσθέσετε ένα νέο κλειδί-τιμή στο λεξικό αφού δημιουργηθεί, όπως παρακάτω:
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Όπως στις λίστες, χρησιμοποιώντας τη μέθοδο `len()` σε λεξικά, θα πάρετε τον αριθμό των ζευγαριών κλειδί-τιμή μέσα σε ένα λεξικό. Γράφτε το παρακάτω:
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,7 +436,7 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+Ελπίζουμε να βγάζουν νόημα όλα αυτά μέχρι τώρα. :) Είστε έτοιμοι για περισσότερη διασκέδαση με τα λεξικά; Συνεχίστε να διαβάζετε για περισσότερα πράγματα που μπορείτε να κάνετε.
 
 You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
 
