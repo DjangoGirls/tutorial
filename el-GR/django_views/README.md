@@ -33,12 +33,12 @@ def post_list(request):
 
 Όπως βλέπετε, δημιουργήσαμε μια συνάρτηση (`def`) με το όνομα `post_list` η οποία παίρνει την παράμετρο `request` και επιστρέφει `return` την τιμή που παίρνει από άλλη συνάρτηση, την `render`, η οποία κάνει render ("χτίζει") το template `blog/post_list.html`.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+Αποθηκεύστε το αρχείο και επισκεφτείτε τη σελίδα http://127.0.0.1:8000/ να δούμε τι εμφανίζεται.
 
-Another error! Read what's going on now:
+Κι άλλο σφάλμα! Διαβάστε το γιατί:
 
-![Error](images/error.png)
+![Σφάλμα](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Αυτή τη φορά δείχνει ότι ο server, τουλάχιστον, τρέχει αλλά κάτι δεν πάει καλά, σωστά; Μην ανησυχείτε. Είναι απλώς μια σελίδα σφάλματος! Όπως ακριβώς τα μηνύματα σφάλματος στην κονσόλα, αυτά τα σφάλματα στον browser είναι στην πραγματικότητα πολύ χρήσιμα. Διαβάζετε ότι *TemplateDoesNotExist*. Ας το φτιάξουμε δημιουργώντας ένα template στο επόμενο κεφάλαιο!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Διαβάστε περισσότερα για τα Django views στο επίσημο documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
