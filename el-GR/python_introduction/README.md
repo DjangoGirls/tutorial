@@ -1053,16 +1053,16 @@ for i in range(1, 6):
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+Η συνάρτηση `range` δημιουργεί μια λίστα από αριθμούς (αυτοί οι αριθμοί εισάγονται από εσάς ως παράμετροι).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Σημειώστε ότι η δεύτερη παράμετρος δεν περιλαμβάνεται στην λίστα που επιστρέφει (δηλαδή το `range(1, 6)` θα μετρήσει από το 1 έως το 5, αλλά δεν θα συμπεριλάβει το 6). Αυτό γίνεται διότι η συνάρτηση "range" είναι τύπου κλειστό-ανοιχτό, δηλαδή συμπεριλαμβάνει την πρώτη τιμή αλλά όχι την τελευταία.
 
 ## Περίληψη
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Αυτό ήταν. **Τα σπάτε!** Αυτό ήταν ένα δύσκολο κεφάλαιο, οπότε θα πρέπει να νιώθετε περίφανοι με τον εαυτό σας. Είμαστε πολύ περήφανοι που τα καταφέρατε μέχρι εδώ!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Για τον επίσημο και πλήρης Python οδηγό επισκεφτείτε την σελίδα https://docs.python.org/3/tutorial/. Αυτό θα σας δώσει μια πιο ολοκληρωμένη και εις βάθος γνώση αυτής της γλώσσας προγραμματισμού. Γεια σας :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Ίσως θα θέλατε να κάνετε κάτι κάτι άλλο, πχ τεντωθείτε, να περπατήσετε λίγο, να ξεκουράσετε τα μάτια σας, πριν συνεχίσετε στο επόμενο κεφάλαιο. :)
 
-![Cupcake](images/cupcake.png)
+![Κεκάκι](images/cupcake.png)
