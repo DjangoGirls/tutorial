@@ -620,16 +620,16 @@ print('Hello, Django girls!')
 
 Προφανώς, είστε ένας αρκετά έμπειρος Python developer τώρα, οπότε γράφτε κάποιον κώδικα μέσα στο αρχείο.
 
-Τώρα θέλουμε να αποθηκεύσουμε το αρχείο και να του δώσουμε ένα περιγραφικό όνομα. Ας το ονομάσουμς **python_intro.py** και ας το αποθηκεύσουμε στην επιφάνεια εργασίας. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Τώρα θέλουμε να αποθηκεύσουμε το αρχείο και να του δώσουμε ένα περιγραφικό όνομα. Ας το ονομάσουμς **python_intro.py** και ας το αποθηκεύσουμε στην επιφάνεια εργασίας. Μπορούμε να ονομάσουμε το αρχείο όπως θέλουμε αλλά το σημαντικό εδώ είναι η κατάληξηξ **.py** που πρέπει να έχει. Η κατάληξη **.py** λέει στο λειτουργικό μας σύστημα ότι αυτό το αρχείο αποτελεί ένα **εκτελέσιμο Python αρχείο** και έτσι η Python μπορεί να το τρέξει.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **Σημείωση** Θα πρέπει να είδατε ήδη ένα από τα πιο ωραία πράγματα στους επεξεργαστές κώδικα: τα χρώματα! Στην Python κονσόλα, όλα ήταν το ίδιο χρώμα. Τώρα βλέπετε ότι η συνάρτηση `print` έχει διαφορετικό χρώμα από ένα string. Αυτό ονομάζεται "syntax highlighting" και είναι ένα πολύ χρήσιμο χαρακτηριστικό καθώς προγραμματίζετε. Τα χρώματα θα σας δίνουν βοήθεια, όπως ένα string που του λείπει ένα "αυτάκι" ή ένα τυπογραφικό λάθος (typo) σε κάποια λέξε κλειδί της Python όπως `def` κλπ). Αυτός είναι ένας λόγος που χρησιμοποιούμε έναν επεξεργαστή κώδικα. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Με αποθηκευμένο το αρχείο, είναι ώρα να το τρέξουμε! Χρησιμοποιώντας τις δεξιότητες που μάθατε στη γραμμή εντολών, χρησιμοποιήστε την κονσόλα για να **αλλάξετε φάκελο** και να μεταβείτε στην επιφάνεια εργασίας.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Σε Mac, η εντολή θα μοιάζει κάπως έτσι:
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,7 +641,7 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+Σε Linux, θα μοιάζει κάπως έτσι (η λέξη "Desktop" ίσως να είναι μεταφρασμένη στη γλώσσα σας ως "Επιφάνεια Εργασίας"):
 
 {% filename %}command-line{% endfilename %}
 
@@ -652,7 +652,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Στα Windows θα μοιάζει κάπως έτσι:
 
 {% filename %}command-line{% endfilename %}
 
@@ -663,7 +663,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Και στα Windows Powershell, θα μοιάζει κάπως έτσι:
 
 {% filename %}command-line{% endfilename %}
 
