@@ -184,7 +184,7 @@ La dernière étape pour cette section est d'ajouter notre nouveau modèle à no
 
 **Remarque :** N’oubliez pas de sauvegarder les fichiers que vous modifiez. Dans le cas contraire, votre ordinateur exécute la version précédente, ce qui pourrait vous donner des messages d’erreur inattendus.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django vient de nous préparer un fichier de migration que nous allons pouvoir appliquer dès maintenant à notre base de données. Pour cela, tapez `python manage.py migrate blog`. Normalement, vous devrez voir ceci s'afficher dans votre console :
 
 {% filename %}command-line{% endfilename %}
 
@@ -195,4 +195,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Youpi ! Notre modèle Post est maintenant intégré à la base de données. Ce serait cool de voir à quoi il ressemble réellement ! Pour ça, il va falloir attaquer la section suivante ! Au boulot ;)!
