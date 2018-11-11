@@ -260,9 +260,9 @@ Maria
 
 ## Λίστες
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Πέρα από τα strings και τους αριθμούς, η Python προσφέρει αρκετά ακόμα διαφορετικούς τύπους objects. Παρακάωτ θα περιγράψουμε αυτό που αποκαλούμε λίστα (**list**). Οι λίστες είναι αυτό που φαντάζεστε: objects τα οποία είναι λίστες άλλων objects. :)
 
-Go ahead and create a list:
+Πηγαίνετε και δημιουργήστε μια λίστα:
 
 {% filename %}command-line{% endfilename %}
 
