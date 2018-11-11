@@ -813,9 +813,9 @@ else:
 
 ## Σχόλια
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Τα χόλια είναι γραμμές οι οποίοες ξεκινούν με την δίεση `#`. Μπορείτε να γράψετε ότι θέλετε μετά την δίεση `#` και πολύ απλά η Python θα το αγνοήσει. Τα σχόλια μπορούνα να κάνουν τον κώδικα σας πιο ευανάγνωστο σε άλλους προγραμματιστές και όχι μόνο.
 
-Let's see how that looks:
+Ας δούμε πως φαίνεται:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -826,7 +826,7 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Δεν χρειάζεται να γράφεται σχόλιο για κάθε γραμμή κώδικα (άλλωστε δεν είναι καλή πρακτική ούτως ή άλλως) αλλά τα σχόλια είναι χρήσιμα ως προς το να εξηγήσουν το τι κάνει ο κώδικας ή να δώσουν κάποιου είδους περίληψη όταν κάνετε κάτι περίπλοκο.
 
 ### Περίληψη
 
