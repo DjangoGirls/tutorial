@@ -113,9 +113,9 @@ INSTALLED_APPS = [
 
 ### Créer un modèle de blog post
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+Le fichier `blog/models.py` permet de définir les objets que nous appelons des `modèles`. C'est à cet endroit que nous allons définir ce que c'est qu'un un blog post.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+Ouvrez le fichier `blog/models.py` dans l'éditeur de code, supprimez tout ce qui s'y trouve et copiez-y le morceau de code suivant :
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -140,11 +140,11 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. C'est une convention fréquemment utilisée en Python qui porte même un petit nom en anglais : "dunder", pour "double-underscore".
+> Vérifiez que vous avez bien utilisé deux tirets bas (`_`) autour de `str`. C'est une convention fréquemment utilisée en Python qui porte même un petit nom en anglais : "dunder", pour "double-underscore".
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Ce gros morceau de code a l'air effrayant mais, ne vous inquiétez pas : nous allons vous expliquer ce que signifie chacune de ces lignes!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Toutes les lignes qui commencent par `from` ou `import` sont des lignes qui permettent d'importer des morceaux d'autres fichiers. Concrètement, au lieu de recopier ou de copier-coller la même chose dans différents fichiers, nous pouvons tout simplement faire référence à certains morceaux d'autres fichiers à l'aide de `from ... import ...`.
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
