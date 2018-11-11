@@ -87,7 +87,7 @@ Et pour finir, nous allons enregistrer nos modifications. Tapez ces commandes da
 
 ## Publier votre code sur GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+Allez sur [GitHub.com](https://www.github.com) et créez-vous un nouveau compte gratuitement. (Si vous l'avez déjà fait lors de la préparation pour l’atelier, c’est très bien !) N’oubliez pas de mémoriser votre mot de passe (ajoutez-le à votre gestionnaire de mot de passe, si vous en utilisez un).
 
 Ensuite, créez un nouveau dépôt en lui donnant le nom "mon-nouveau-blog". Laissez la case "initialisation avec README" décochée, laissez l'option .gitignore vide (nous l'avons fait manuellement) et laissez la Licence en tant que Aucune.
 
@@ -161,7 +161,7 @@ Maintenant, nous exécutez l'assistant pour configurer automatiquement votre app
 En regardant la commande s'exécuter, vous devriez voir ce qui ce passe:
 
 - Téléchargement de votre code depuis GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
+- Création d'un virtualenv chez PythonAnywhere, comme celui sur votre propre ordinateur
 - Mise à jour de votre fichier de paramètres avec des paramètres de déploiement
 - Mise en place d’une base de données sur PythonAnywhere en utilisant la commande `manage.py migrate`
 - Mise en place de vos fichiers statiques (nous verrons ce que c'est plus tard)
@@ -169,7 +169,7 @@ En regardant la commande s'exécuter, vous devriez voir ce qui ce passe:
 
 Sur PythonAnywhere toutes ces étapes sont automatisées, mais ce sont les mêmes étapes que vous auriez à faire avec n'importe quel autre fournisseur de serveurs.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. Et donc, exactement comme on l'avait fait sur votre ordinateur, on doit initialiser le compte administrateur avec `createsuperuser`. PythonAnywhere a initialisé votre virtualenv pour vous automatiquement, donc la seule chose que vous avez à faire est d'exécuter:
+La principale chose à remarquer maintenant est que votre base de donnée sur PythonAnywhere est complètement séparée de votre base de données sur votre propre ordinateur. Cela veut dire qu'elle peut contenir des messages différents et avoir des comptes administrateurs différents. Et donc, exactement comme on l'avait fait sur votre ordinateur, on doit initialiser le compte administrateur avec `createsuperuser`. PythonAnywhere a initialisé votre virtualenv pour vous automatiquement, donc la seule chose que vous avez à faire est d'exécuter:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
