@@ -106,15 +106,15 @@
 
 Όπως μπορείτε να δείτε, ο υπολογιστής μόλις εκτύπωσε το όνομα χρήστη σας. Ωραίο, εε; :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Προσπαθείτε να γράφετε ξάθε εντολή. Μην κάνετε αντιγραγή-επικόλληση. Θα θυμάστε περισσότερα με αυτό τον τρόπο!
 
-## Basics
+## Βασικά
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Κάθε υπολογιστικό σύστημα ένα διαφορετικό ρεπερτόριο εντολών στη γραμμή εντολών. Οπότε, φροντίστε να ακολουθάτε τις οδηγίες του δικού σας λειτουργικού συστήματος. Ας το δοκιμάσουμε, έτσι;
 
-### Current directory
+### Παρόν φάκελος
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Θα ήταν ωραίο να γνωρίζουμε πού βρισκόμαστε τώρα, έτσι; Ας δούμε. Πληκτρολογήσετε αυτή την εντολή πατήστε `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -124,7 +124,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Σημείωση: 'pwd' σημαίνει 'print working directory'.
 
 <!--endsec-->
 
@@ -136,11 +136,11 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Σημείωση: 'cd' σημαίνει 'change directory'. Με το powershell μπορείτε να χρησιμοποιήσετε την εντολή pwd όπως στο Linux ή το Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Κατά πάσα πιθανότητα θα δείτε κάτι παρόμοιο στο μηχάνημά σας. Μόλις ανοίγετε τη γραμμή εντολών, θα ξεκινάτε στον φάκελο του χρήστη (home folder).
 
 * * *
 
