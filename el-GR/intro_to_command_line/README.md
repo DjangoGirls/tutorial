@@ -1,34 +1,34 @@
-# Introduction to the command-line interface
+# Εισαγωγή στην γραμμή εντολών
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Είναι φοβερό έτσι; Θα γράψετε την πρώτη γραμμή κώδικα σε μερικά λεπτά! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**Αφήστε μας να σας παρουσιάσουμε το νέο σας φίλο πρώτα: τη γραμμή εντολών!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+Τα επόμενα βήματα θα σας δείξουν πώς να χρησιμοποιήσετε το μαύρο παράθυρο που όλοι οι χάκερ χρησιμοποιούν. Αυτό μπορεί να μοιάζει λίγο τρομακτικό στην αρχή αλλά πραγματικά αυτό είναι απλά ένα prompt σε αναμονή για εντολές από εσάς.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Σημείωση** Παρακαλούμε να σημειώσετε ότι σε όλο το βιβλίο αυτό χρησιμοποιούμε το τους όρους «φάκελος» και «κατάλογος» αλλά στην ουσία είναι το ίδιο πράγμα.
 
-## What is the command line?
+## Τι είναι η γραμμή εντολών;
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+Το παράθυρο, το οποίο συνήθως ονομάζεται **γραμμή εντολών** ή **περιβάλλον γραμμής εντολών**, είναι μια εφαρμογή που βασίζεται σε κείμενο για προβολή, διαχείριση και χειρισμό αρχείων στον υπολογιστή σας. Είναι κάπως σαν το Windows Explorer ή το Finder στα Mac αλλά χωρίς το γραφικό κομμάτι (κουμπιά, βελάκια, σχήματα κλπ). Άλλα ονόματα για την γραμμή εντολών είναι: *cmd*, *CLI*, *prompt*, *console* ή *terminal*.
 
-## Open the command-line interface
+## Άνοιγμα της γραμμής εντολών
 
-To start some experiments we need to open our command-line interface first.
+Για να πειραματιστείτε πρέπει πρώτα να ανοίξετε μια γραμμή εντολών (ή κονσόλα, πιο σύντομα).
 
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Go to Start menu → Windows System → Command Prompt.
+Πηγαίνετε στο Start menu → Windows System → Command Prompt.
 
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
+> Σε παλαιότερες εκδόσεις των Windows, κοιτάχτε στο Start menu → All Programs → Accessories → Command Prompt.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Πηγαίνετε στο Applications → Utilities → Terminal.
 
 <!--endsec-->
 
