@@ -4,13 +4,13 @@ Maintenant, nous aimerions créer quelque chose qui permet stocker les articles 
 
 ## Les objets
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Il existe un concept en programmation qu'on appelle la `programmation orientée objets`. L'idée, c'est de modéliser les choses et de définir comment elles interagissent entre elles plutôt que de tout voir comme une séquence d'instructions.
 
 Du coup, c'est quoi un objet ? C'est une collection de propriétés et d'actions. Ça a l'air bizarre dit comme ça. Un exemple devrait vous permettre d'y voir un peu plus clair.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Si on veut modéliser un chat, nous allons créer un objet `Chat` qui a des propriétés comme `couleur`, `âge`, `humeur` (bonne humeur, mauvaise humeur, fatigué ;)) et `propriétaire` (ce qui pourrait être un objet `Personne`, ou, s'il s'agit d'un chat sauvage, cette propriété pourrait être simplement vide).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+Ensuite, nous pouvons donner des actions au `Chat` : `ronronner`, `gratter` ou `manger`. (Dans ce dernier cas, on donne au chat de la `NourriturePourChat`, ce qui peut être un objet séparé avec ses propres propriétés, comme le `goût`).
 
     Cat
     --------
@@ -34,7 +34,7 @@ Du coup, comment modéliser les articles de blog ? C'est bien gentil les chats, 
 
 Pour ça, il faut réponde à la question : qu'est-ce qu'un article de blog ? Quelles propriétés devrait-il avoir ?
 
-Pour commencer, notre blog post doit avoir du texte : il a bien du contenu et un titre, n'est-ce pas ? It would be also nice to know who wrote it – so we need an author. Enfin, on aimerait aussi savoir quand l'article a été écrit et publié.
+Pour commencer, notre blog post doit avoir du texte : il a bien du contenu et un titre, n'est-ce pas ? Et puis, ce serait bien de savoir aussi qui l'a écrit. On a donc besoin d'un auteur. Enfin, on aimerait aussi savoir quand l'article a été écrit et publié.
 
     Post
     --------
