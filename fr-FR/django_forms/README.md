@@ -14,7 +14,7 @@ Nous allons devoir créer un fichier avec ce nom dans notre dossier `blog`.
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+Ouvrez maintenant ce fichier dans l'éditeur de code et tapez le code suivant :
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Tout d'abord, nous avons besoin d'importer les formulaires Django (`from django import forms`), puis notre modèle `Post` (`from .models import Post`).
 
 Comme vous l'avez probablement deviné, `PostForm` est le nom de notre formulaire. Nous avons besoin d'indiquer à Django que ce formulaire est un `ModelForm` (pour que Django fasse certaines choses automatiquement pour nous). Pour cela, nous utilisons `forms.ModelForm`.
 
@@ -44,7 +44,7 @@ Nous allons donc une nouvelle fois suivre le processus suivant et créer : un li
 
 ## Lien vers une page contenant le formulaire
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+C'est le moment d'ouvrir le fichier `blog/templates/blog/base.html` dans l'éditeur de code. Nous allons ajouter un lien dans un `div` appelé `page-header` :
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ Après avoir ajouté cette ligne, votre fichier HTML devrait maintenant ressembl
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Normalement, après avoir sauvegardé et rechargé la page http://127.0.0.1:8000, vous devriez encore tomber sur l'erreur `NoReverseMatch`. Est-ce le cas ? Très bien !
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Ouvrez le fichier `blog/urls.py` dans l'éditeur de code et ajoutez cette ligne :
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Une fois la page rechargée, vous allez voir une `AttributeError`, ce qui est no
 
 ## La vue post_new
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Ouvrez maintenant le fichier `blog/views.py` dans l'éditeur de code et ajoutez les lignes suivantes avec celles du `from` qui existent déjà :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Afin de pouvoir créer un nouveau formulaire `Post`, nous avons besoin d'appeler
 
 ## Template
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Pour cela, nous avons besoin de créer un fichier `post_edit.html` dans le dossier `blog/templates/blog` et de l'ouvrir dans l'éditeur de code. Afin que notre formulaire fonctionne, nous avons besoin de plusieurs choses :
 
 * Nous avons besoin d'afficher le formulaire. Pour cela, nous n'avons qu'à utiliser {% raw %}`{{ form.as_p }}`{% endraw %}.
 * La ligne précédente va avoir besoin d'être enveloppée des balises HTML `<form method="POST">...</form>`.
