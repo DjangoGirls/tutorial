@@ -912,7 +912,7 @@ hi()
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Ώπα, ένα σφάλμα. Ευτυχώς, η Python μας δίνει ένα αρκετά χρήσιμο σφάλμα. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Ώπα, ένα σφάλμα. Ευτυχώς, η Python μας δίνει ένα αρκετά χρήσιμο σφάλμα. Μας λέει ότι η συνάρτηση `hi()` (αυτή που ορίσαμε) δέχεται μια απαραίτητη παράμετρο (με το όνομα `name`) και ότι ξεχάσαμε να την ορίσουμε καθώς την καλούσαμε. Ας το φτιάξουμε αυτό στο τέλος του αρχείου:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -920,7 +920,7 @@ hi()
 hi("Ola")
 ```
 
-And run it again:
+Και ας το τρέξουμε ξανά:
 
 {% filename %}command-line{% endfilename %}
 
@@ -928,7 +928,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+Και αν μπορούμε να αλλάξουμε το όνομα;
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -936,7 +936,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+Και το τρέξουμε:
 
 {% filename %}command-line{% endfilename %}
 
