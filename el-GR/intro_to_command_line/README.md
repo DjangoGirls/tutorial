@@ -66,7 +66,7 @@
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Πριν από κάθε εντολή θα προηγείται ο χαρακτήρας `$` ή `>` και ένα κενό αλλά εσείς δεν πρέπει να τα γράφετε. Ο υπολογιστής σας θα το κάνει για εσάς. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
