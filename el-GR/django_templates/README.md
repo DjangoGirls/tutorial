@@ -1,18 +1,18 @@
 # Django templates
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+Ήρθε η ώρα να παρουσιάσουμε ορισμένα δεδομένα! Το Django μας δίνει κάποια προεγκατεστημένα **template tags**.
 
-## What are template tags?
+## Τι είναι τα template tags;
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+Βλέπετε, στην HTML δεν μπορείτε να γράψετε κώδικα σε Python επειδή οι browsers δεν καταλαβαίνουν αυτή τη γλώσσα. Εκείνοι ξέρουν μόνο HTML, CSS και Javascript. Ξέρουμε ότι η HTML είναι στατική γλώσσα ενώ η Python περισσότερο δυναμική.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+Τα **Django template tags** μας επιτρέπουν να μεταφέρουμε πράγματα της Python μέσα στην HTML, ούτως ώστε να χτίσετε δυναμικές ιστοσελίδες γρηγορότερα. Τέλεια!
 
-## Display post list template
+## Template προβολή λίστας των post
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+Σε προηγούμενο κεφάλαιο δώσαμε στο template μας μια λίστα από posts μέσα σε μια μεταβλητή με το όνομα `posts`. Τώρα θα την προβάλουμε στην HTML. Άλλωστε αυτό θέλαμε να κάνουμε από την αρχή.
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+Για να εκτυπώσουμε μια μεταβλητή μέσα στα Django templates, χρησιμοποιούμε διπλές αγκύλες ({{ }}) με το όνομα της μεταβλητής ανάμεσα:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,7 +20,7 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Δοκιμάστε αυτό μέσα στο template `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
 ![Σχήμα 13.1](images/step1.png)
 
