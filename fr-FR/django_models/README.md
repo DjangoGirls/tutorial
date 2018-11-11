@@ -55,7 +55,7 @@ Voilà, nous avons une idée de ce que nous avons besoin. Allons modéliser tout
 
 Maintenant que nous savons ce qu'est un objet, nous allons pouvoir créer un modèle Django pour notre post de blog.
 
-A model in Django is a special kind of object – it is saved in the `database`. Une base de données est une collection de données. C'est à cet endroit que l'on stocke toutes les informations au sujet des utilisateurs, des blog posts, etc. Pour stocker nos données, nous allons utiliser une base de données SQLite. This is the default Django database adapter – it'll be enough for us right now.
+Un modèle Django est un type particulier d'objet : il est sauvegardé dans la `base de données`. Une base de données est une collection de données. C'est à cet endroit que l'on stocke toutes les informations au sujet des utilisateurs, des blog posts, etc. Pour stocker nos données, nous allons utiliser une base de données SQLite. C'est la base de données par défaut dans Django. Elle sera largement suffisante pour ce que nous voulons faire.
 
 Pour vous aider à visualiser ce qu'est une base de données, pensez à un tableur avec des colonnes (champs) et des lignes (données).
 
@@ -73,7 +73,7 @@ Pour éviter le désordre, nous allons créer une application séparée à l'int
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Vous pouvez voir qu'un nouveau dossier `blog` a été créé et qu'il contient différents fichiers. Les dossiers et fichiers liés à votre projet doivent maintenant être organisés selon cette structure :
 
     djangogirls
     ├── blog
@@ -95,7 +95,7 @@ You will notice that a new `blog` directory is created and it contains a number 
     └── requirements.txt
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+Après avoir créé une nouvelle application, vous devez dire à Django de l'utiliser. Nous faisons cela via le fichier `mysite/settings.py`. Ouvrez-le dans votre éditeur de code. Trouvez la section `INSTALLED_APPS` et ajoutez une ligne `'blog',` juste avant `]`. La section doit maintenant ressembler à ceci :
 
 {% filename %}mysite/settings.py{% endfilename %}
 
