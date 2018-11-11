@@ -438,7 +438,7 @@ KeyError: 'age'
 
 Ελπίζουμε να βγάζουν νόημα όλα αυτά μέχρι τώρα. :) Είστε έτοιμοι για περισσότερη διασκέδαση με τα λεξικά; Συνεχίστε να διαβάζετε για περισσότερα πράγματα που μπορείτε να κάνετε.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Μπορείτε να χρησιμοποιήσετε την μέθοδο `pop()` για να διαγράψετε ένα στοιχείο (ζευγάρι από κλειδί-τιμή) από ένα dict. Για παράδειγμα, αν θέλετε να διαγράψετε το ζευγάρι με το κλειδί `'favorite_numbers'`, γράψτε την ακόλουθη εντολή:
 
 {% filename %}command-line{% endfilename %}
 
@@ -449,9 +449,9 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Όπως μπορείτε να δείτε από την έξοδο, το ζευγάρι του κλειδιού 'favorite_numbers' διαγράφηκε επιτυχώς.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+Επίσης, μπορείτε να αλλάξετε την τιμή σε μια τιμή μέσα σε ένα λεξικό (αλλά όχι το ίδιο το κλειδί). Δοκιμάστε το εξής:
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,22 +461,22 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Όπως βλέπετε, η τιμή του κλειδιού `'country'` αλλάξε από `'Poland'` σε `'Germany'`. :) Φοβερό έτσι; Μπράβο! Μόλις μάθατε άλλο ένα απίθανο πράγμα.
 
 ### Περίληψη
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Τέλεια! Ξέρετε πολλά σχετικά με τον προγραμματισμό τώρα. Στην τελευταία ενότητα μάθατε τα εξής:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **errors** – μάθατε πως να διαβάζετε και να καταλαβαινέτε τα σφάλματα τα οποία εμφανίζονται αν η Python δεν καταλαβαίνει κάποια εντολή που της δώσατε
+- **variables** – ονόματα για objects τα οποία σας επιτρέπουν να γράφετε κώδικα πιο εύκολα αλλά και να είναι ο κώδικας σας πιο ευανάγνωστος
+- **lists** – λίστες από objects που αποθηκεύονται σε μια συγκεκριμένη σειρά
+- **dictionaries** – αντικείμενα τα οποία αποθηκεύονται υπό τη μορφή ζευγαριού κλειδί-τιμή
 
-Excited for the next part? :)
+Ενθουσιασμένοι για το επόμενο μέρος; :)
 
-## Compare things
+## Σύγκριση πραγμάτων
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
 A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
