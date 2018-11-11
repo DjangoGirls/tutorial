@@ -340,7 +340,7 @@ Maria
 
 Όπως μπορείτε να δείτε, μπορείτε να έχετε πρόσβαση στα διαφορετικά στοιχεία μια λίστας γνωρίζοντας το όνομα της λίστας και τη θέση (index) του κάθε στοιχείου, δηλώνοντας το μέσα σε αγκύλες ([]).
 
-Για να διαγράψετε κάτι από τη λίστα, θα χρειαστεί να χρησιμοποιήσετε τα **indexes** καθώς και την μέθοδο `pop()`. Δηλαδή, θα πρέπει να ξέρετε ποιο στοιχείο να διαγράψετε. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Για να διαγράψετε κάτι από τη λίστα, θα χρειαστεί να χρησιμοποιήσετε τα **indexes** καθώς και την μέθοδο `pop()`. Δηλαδή, θα πρέπει να ξέρετε ποιο στοιχείο να διαγράψετε. Ας δοκιμάσουμε ένα παράδειγμα. Θα διαγράψουμε το πρώτο στοιχείο της λίστας.
 
 {% filename %}command-line{% endfilename %}
 
@@ -355,17 +355,17 @@ Maria
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Δούλεψε μια χαρά!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+Παίξτε λίγο παραπάνω: δοκιμάστε μερικές άλλες θέσεις (αριθμός μέσα στην αγκύλη) όπως 6, 7, 1000, -1, -6 ή -1000. Δείτε αν μπορείτε να προβλέψετε το αποτέλεσμα πριν πατήσετε enter. Συμφωνούν τα αποτελέσματα με την πρόβλεψη σας;
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Μπορείτε να βρείτε την λίστα με όλες διαθέσιμες μεθόδους για μια λίστα στο Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## Λεξικά
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Ένα λεξικό (dictionary ή όπως έχει επικρατήσει, dict εν συντομία) είναι όμοιο με μια λίστα αλλά έχετε πρόσβαση στις τιμές όχι κατά θέση (index) αλλά κατά ένα κλειδί (key). Ένα κλειδί μπορεί να είναι ένα string ή ένας αριθμός. Η σύνταξη για ένα κενό λεξικό είναι:
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,9 +374,9 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Αυτό σηλώνει ότι μόλις δημιουργήσατε ένα κενό dict. Συγχαρητήρια!
 
-Now, try writing the following command (try substituting your own information, too):
+Τώρα, προσπαθήστε να εκτελέσετε την ακόλουθη εντολή (αντικαθιστώντας με δικά σας στοιχεία):
 
 {% filename %}command-line{% endfilename %}
 
@@ -384,10 +384,10 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Με αυτή την εντολή μόλις δημιουργήσατε μια μεταβλητή με το όνομα `participant` με τρια ζευγάρια κλειδι-τιμή (key value pairs):
 
-- The key `name` points to the value `'Ola'` (a `string` object),
-- `country` points to `'Poland'` (another `string`),
+- Το πρώτο κλειδί είναι το `name` το οποίο αντιστοιχεί την τιμή `'Ola'` (είναι ένα `string` object),
+- Το δεύτερο κλειδί με το όνομα `country` αντιστοιχεί στην τιμή `'Poland'` (άλλο ένα `string`),
 - and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
 
 You can check the content of individual keys with this syntax:
