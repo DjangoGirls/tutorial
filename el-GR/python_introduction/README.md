@@ -846,7 +846,7 @@ if volume < 20 or volume > 80:
 
 Θυμάστε τις συναρτήσεις όπως τη `len()` που εκτελούσατε; Λοιπόν, σας έχουμε καλά νέα! Θα μάθετε πως να δημιουργείτε τις δικές σας!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Μια συνάρτηση είναι μια σειρά από οδηγίες που η Python πρέπει να εκτελέσει. Κάθε συνάρτηση ξεκινά με τη λέξη κλειδί της Python `def`, μετά ακολουθεί το όνομα αυτής και μετά δίνονται τυχόν παράμετροι. Ας το προσπαθήσουμε. Αντικαταστήστε τον κώδικα στο αρχείο **python_intro.py** με το ακόλουθο:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -858,11 +858,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Ωραία. Η πρώτη μας συνάρτηση είναι έτοιμη!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Θα αναρρωτιέστε γιατί γράψαμε το όνομα της συνάρτησης στο τέλος του αρχείου. Αυτό γίνεται επειδή η Python διαβάζει το αρχείο και το τρέχει από την κορυφή έως το τέλος. Για να χρησιμοποιήσουμε, λοιπόν, την συνάρτηση μας θα πρέπει να την ξαναγράψουμε στο τέλος.
 
-Let's run this now and see what happens:
+Ας το τρέξουμε για να δούμε το αποτέλεσμα:
 
 {% filename %}command-line{% endfilename %}
 
@@ -871,9 +871,9 @@ Let's run this now and see what happens:
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Σημείωση: αν δεν δούλεψε, μην πανικοβάλεστε! Η έξοδος θα σας βοηθήσει να καταλάβετε το γιατί:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
+- Αν λέβετε ένα σφάλμα τύπου `NameError`, τότε ίσως γράψατε κάτι λάθος όπως το όνομα της συνάρτηση στο τέλος του αρχείου. Επιβεβαιώστε ότι το όνομα στη δήλωση της συνάρτηση `def hi():` είναι το ίδιο με το όνομα όταν την καλείτε `hi()`.
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
 - If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
 
