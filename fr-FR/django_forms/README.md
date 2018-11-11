@@ -175,7 +175,7 @@ La réponse est encore : rien ! Nous avons juste encore un peu de travail à acc
 
 ## Sauvegarder le contenu du formulaire
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Ouvrez à nouveau `blog/views.py` dans l'éditeur de code. Actuellement, `post_new` n'est composé que des lignes de code suivantes :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -283,7 +283,7 @@ Django va s'occuper de la validation : il va regarder si tous les champs de notr
 
 Maintenant, nous savons comment ajouter un nouveau formulaire. Comment faire si nous voulons éditer un formulaire déjà existant ? C'est très similaire à ce que nous venons de faire. Tout d'abord, faisons rapidement quelques choses importantes. (Si vous ne comprenez pas quelque chose, vous devriez demander à votre entraîneur ou regarder les chapitres précédents, car nous avons déjà traité toutes ces étapes.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Ouvrez le fichier `blog/templates/blog/post_detail.html` dans l'éditeur de code et ajoutez la ligne suivante :
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ Votre template doit ressembler à ceci :
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Ouvrez le fichier `blog/urls.py` dans l'éditeur de code et ajoutez cette ligne :
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ Open `blog/urls.py` in the code editor, and add this line:
 
 Nous allons réutiliser le template de `blog/templates/blog/post_edit.html`. Il ne va donc nous manquer qu'une *vue*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Ouvrons `blog/views.py` dans l'éditeur de code et ajoutons à la toute fin du fichier :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -374,9 +374,9 @@ Si vous souhaitez en apprendre plus sur les formulaires Django, n'hésitez pas �
 
 ## Sécurité
 
-Being able to create new posts by clicking a link is awesome! Mais maintenant, toute personne visitant votre site sera en mesure de créer un nouveau blog, et ce n'est peut-être pas ce que vous voulez. Faisons en sorte que les boutons apparaissent pour vous mais pas pour les autres.
+C’est génial de pouvoir créer de nouveaux posts juste en cliquant sur un lien ! Mais maintenant, toute personne visitant votre site sera en mesure de créer un nouveau post, et ce n'est peut-être pas ce que vous voulez. Faisons en sorte que les boutons apparaissent pour vous mais pas pour les autres.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Ouvrez `blog/templates/blog/base.html` dans l'éditeur de code, trouvez notre `page-header` `div` et la balise ancre que vous y avez mis plus tôt. Ça doit ressembler à ça :
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -398,7 +398,7 @@ Ce `{% if %}` fait en sorte de n’envoyer le lien au navigateur que si l’util
 
 Rappelez-vous l'icône de modification que nous venons d'ajouter à notre page de détails? Nous souhaitons également ajouter les mêmes modifications, afin que les autres utilisateurs ne puissent pas modifier les publications existantes.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Ouvrez le fichier `blog/templates/blog/post_detail.html` dans l'éditeur de code et trouvez la ligne suivante :
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Changez-le en ceci:
+Changez-la en ceci:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,7 +416,7 @@ Changez-le en ceci:
 {% endif %}
 ```
 
-Parce vous êtes sans doute déjà connecté, vous ne verrez aucune différence si vous rafraîchissez la page. Mais si vous chargez la page dans un navigateur web différent ou dans une fenêtre en mode "navigation privée" ou "incognito", vous verrez que le lien ne s'affiche plus, et l’icône non plus !
+Parce vous êtes sans doute déjà connectées, vous ne verrez aucune différence si vous rafraîchissez la page. Mais si vous chargez la page dans un navigateur web différent ou dans une fenêtre en mode "navigation privée" ou "incognito", vous verrez que le lien ne s'affiche plus, et l’icône non plus !
 
 ## Encore un petit effort : déployons !
 
