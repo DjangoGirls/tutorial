@@ -60,9 +60,9 @@ def post_list(request):
 
 Παρακαλούμε σημειώστε ότι δημιουργούμε μια *μεταβλητή* για το QuerySet: `posts`. Μεταχειριστείτε τη ως το όνομα του QuerySet. Απο δω και στο εξής μπορούμε να αναφερόμαστε σε αυτό με το όνομα αυτό.
 
-Στη συνάρτηση `render` έχουμε μια παράμετρο `request` (οτιδήποτε λαμβάνουμε από το χρήστη μέσω του Internet) και άλλη μια ακόμα, εκείνη του αρχείου template (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+Στη συνάρτηση `render` έχουμε μια παράμετρο `request` (οτιδήποτε λαμβάνουμε από το χρήστη μέσω του Internet) και άλλη μια ακόμα, εκείνη του αρχείου template (`'blog/post_list.html'`). Η τελευταία παράμετρος `{}`, είναι το σημείο που μπορούμε να προσθέσουμε πράγματα για να τα αξιοποιήσει το template. Χρειαζόμαστε να τους δώσουμε ονόματα (θα μείνουμε με το όνομα `'posts'`). :) Θα δείχνει κάπως έτσι: `{'posts': posts}`. Παρακαλούμε σημειώστε ότι το κομμάτι πριν το `:` είναι ένα string; πρέπει να το περικυκλώσετε με "αυτάκια": `''`.
 
-So finally our `blog/views.py` file should look like this:
+Εν τέλει, το αρχείο `blog/views.py` θα δείχνει κάπως έτσι:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -76,6 +76,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
-That's it! Time to go back to our template and display this QuerySet!
+Αυτό ήταν! Ήρθε η ώρα να πάμε πίσω στο template και να εμφανίσουμε αυτό το QuerySet!
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
+Θέλετε να διαβάσετε περισσότερα για τα QuerySets στο Django; Θα πρέπει να διαβάσετε εδώ: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
