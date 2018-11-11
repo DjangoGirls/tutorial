@@ -34,17 +34,17 @@
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Συνήθως είναι κάτω από το Applications → Accessories → Terminal, αλλά αυτό εξαρτάται από το σύστημα σας. Αν δεν είναι εκεί ψάξτε το στο Google. :)
 
 <!--endsec-->
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+Θα πρέπει, τώρα, να βλέπετε ένα άσπρο ή μαύρο παράθυρο που αναμένει εντολές από εσάς.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Αν είστε σε Mac ή Linux, θα βλέπετε το `$`, όπως αυτό:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,14 +55,14 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+Στα Windows, θα βλέπετε το `>`, όπως:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Ρίξτε μια ματιά τώρα στο τμήμα του Linux από πάνω. Θα δείτε κάτι παρόμοιο με αυτό του PythonAnywhere αργότερα στον οδηγό.
 
 <!--endsec-->
 
