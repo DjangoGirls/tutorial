@@ -12,22 +12,22 @@
 * Ανοίξτε τον πίνακα ελέγχου (Control Panel) από το Windows μενού και περιηγηθείτε στο System & Security, έπειτα επιλέξτε System
 * Πιέστε το πλήκτρο των Windows και έπειτα περιηγηθείτε στο Settings > System > About
 
-Μπορείτε να κατεβάσετε την Python για Windows από τη σελίδα https://www.python.org/downloads/windows/. Κλικάρετε στο σύνδεσμο "Latest Python 3 Release - Python x.x.x". Αν ο υπολογιστής σας τρέχει **64-bit** Windows, τότε κατεβάστε το αρχείο **Windows x86-64 executable installer**. Ειδάλλως, κατεβάστε το αρχείο **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Μπορείτε να κατεβάσετε την Python για Windows από τη σελίδα https://www.python.org/downloads/windows/. Κλικάρετε στο σύνδεσμο "Latest Python 3 Release - Python x.x.x". Αν ο υπολογιστής σας τρέχει **64-bit** Windows, τότε κατεβάστε το αρχείο **Windows x86-64 executable installer**. Ειδάλλως, κατεβάστε το αρχείο **Windows x86 executable installer**. Αφού κατεβάσετε το αρχείο εγκατάστασης, κάντε διπλό κλικ πάνω του και ακολουθήστε τις οδηγίες.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Ένα πράγμα να προσέξετε: Κατά τη διάρκεια της εγκατάστασης, θα παρατηρήσετε ένα παράθυρο με το όνομα "Setup". Σιγουρευτείτε ότι είναι επιλεγμένο το κουτάκι "Add Python 3.6 to PATH" ή 'Add Python to your environment variables" και έπειτα κλικάρετε στην επιλογή "Install Now", όπως φαίνεται εδώ (ίσως να φαίνεται διαφορετικά σε εσάς αν εγκαθιστάτε διαφορετική έκδοση):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Όταν ολοκληρωθεί η εγκατάσταση, ενδέχεται να δείτε ένα παράθυρο διαλόγου με μια σύνδεση που μπορείτε να ακολουθήσετε για να μάθετε περισσότερα σχετικά με την Python ή σχετικά με την έκδοση που έχετε εγκαταστήσει. Κλείστε ή πατήστε "Άκυρο" σε αυτό το παράθυρο διαλόγου. Θα μάθετε περισσότερα σε αυτό τον οδηγό!
 
-In upcoming steps, you'll be using the Windows Command Line (which we'll also tell you about). For now, if you need to type in some commands, go to Start menu and enter "Command Prompt" into the search field there. (On older versions of Windows, you can start the Command Line with Start menu → Windows System → Command Prompt.) You can also hold in the Windows key and press the "R"-key until the "Run" window pops up. To open the Command Line, type "cmd" and press enter in the "Run" window.
+Στα επερχόμενα βήματα, θα χρησιμοποιείτε τη γραμμή εντολών των Windows (το οποίο, επίσης, θα σας πούμε). Για τώρα, εάν χρειάζεται να πληκτρολογήσετε μερικές εντολές, πηγαίνετε στο μενού Έναρξη και πληκτρολογήστε στο πεδίο Αναζήτηση «Command Prompt» (Γραμμή Εντολών). (Σε παλαιότερες εκδόσεις των Windows, μπορείτε να ξεκινήσετε τη γραμμή εντολών με το Start menu → Windows System → Command Prompt.) Μπορείτε να επίσης κρατήστε πατημένο το πλήκτρο των Windows και το πλήκτρο «R» μέχρι να εμφανιστεί το παράθυρο «Εκτέλεση» (Run). Για να ανοίξετε τη γραμμή εντολών, πληκτρολογήστε "cmd" και πατήστε enter στο παράθυρο «Εκτέλεση» (Run).
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Σημείωση: Εάν χρησιμοποιείτε μια παλαιότερη έκδοση των Windows (7, Vista ή οποιαδήποτε παλαιότερη έκδοση) και το πρόγραμμα εγκατάστασης της Python 3.6.x αποτύχει με σφάλμα, τότε μπορείτε να δοκιμάσετε τα εξής:
 
-1. install all Windows Updates and try to install Python again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. Εγκαταστήστε όλες τις ενημερώσεις των Windows και προσπαθήστε ξανά να εγκαταστήσετε Python ή
+2. εγκαταστήστε μια [παλαιότερη έκδοση της Python](https://www.python.org/downloads/windows/), π.χ. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
 If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
