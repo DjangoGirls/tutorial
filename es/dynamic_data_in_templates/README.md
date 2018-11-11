@@ -56,7 +56,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-La última parte es pasar el QuerySet `posts` a la plantilla context. No te preocupes, mostraremos como mostrarlo más adelante.
+La última parte que nos falta es pasar el QuerySet `posts` a la plantilla context. No te preocupes, enseñaremos como mostrarlo más adelante.
 
 Fíjate en que creamos una *variable* para el QuerySet: `posts`. Trátala como si fuera el nombre de nuestro QuerySet. De aquí en adelante vamos a referirnos al QuerySet con ese nombre.
 
