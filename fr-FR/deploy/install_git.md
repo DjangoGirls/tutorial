@@ -1,4 +1,4 @@
-Git est un " système de gestion de versions" utilisé par de nombreux développeurs. Ce logiciel permet de garder une trace des modifications apportées à chaque fichier afin que vous puissiez facilement revenir en arrière ou à une version spécifique. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git est un " système de gestion de versions" utilisé par de nombreux développeurs. Ce logiciel permet de garder une trace des modifications apportées à chaque fichier afin que vous puissiez facilement revenir en arrière ou à une version spécifique. Un peu comme la fonction « suivi des modifications » dans les programmes de traitement de texte (par exemple, Microsoft Word ou LibreOffice Writer), mais beaucoup plus puissant.
 
 ## Installer Git
 
