@@ -874,8 +874,8 @@ hi()
 Σημείωση: αν δεν δούλεψε, μην πανικοβάλεστε! Η έξοδος θα σας βοηθήσει να καταλάβετε το γιατί:
 
 - Αν λέβετε ένα σφάλμα τύπου `NameError`, τότε ίσως γράψατε κάτι λάθος όπως το όνομα της συνάρτηση στο τέλος του αρχείου. Επιβεβαιώστε ότι το όνομα στη δήλωση της συνάρτηση `def hi():` είναι το ίδιο με το όνομα όταν την καλείτε `hi()`.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- Αν λάβατε ένα σφάλμα τύπου `IndentationError`, ελέγξτε ότι και οι γραμμές που καλούνται οι δύο συναρτήσεις `print` έχουν τον ίδιο αριθμό κενών στην αρχή: η Python απαιτεί όλος ο κώδικας μέσα στις συναρτήσεις να είναι στοιχισμένος το ίδιο.
+- Αν δεν βλέπετε κάποια έξοδο τότε είτε έχετε παραλείψει να καλέσετε την συνάρτηση χρησιμοποιώντας τις παρενθέσεις `hi()` είτε το έχετε κάνει αλλά η κλήση της συνάρτησης (hi()) έχει *κενό* στην αρχή και αποτελεί μέρος του κυρίου σώματος της συνάρτησης (def hi():).
 
 Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
