@@ -759,7 +759,7 @@ else:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Αν το 2 ήταν μεγαλύτερο του 5 τότε η δεύτερη εντολή θα έτρεχε. Ας δούμε πως λειτουργεί η `elif`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -773,7 +773,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+και τρέξτε το:
 
 {% filename %}command-line{% endfilename %}
 
@@ -781,9 +781,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Είδατε τι έγινε εδώ; Το `elif` σας επέτρεψε να προσθέσετε έξτρα συνθήκες σε περίπτωση που οι προηγούμενες αποτύχουν.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Μπορείτε να προσθέσετε όσα `elif` θέλετε μετά το αρχικό `if`. Για παράδειγμα:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -803,7 +803,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Η Python τρέχει κάθε τεστ με τη σειρά και εκτυπώνει:
 
 {% filename %}command-line{% endfilename %}
 
@@ -811,7 +811,7 @@ Python runs through each test in sequence and prints:
     Perfect, I can hear all the details
     
 
-## Comments
+## Σχόλια
 
 Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
