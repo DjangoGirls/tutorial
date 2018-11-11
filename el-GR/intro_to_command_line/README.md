@@ -144,7 +144,7 @@
 
 * * *
 
-### Learn more about a command
+### Μάθετε περισσότερα σχετικά με μια εντολή
 
 Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
