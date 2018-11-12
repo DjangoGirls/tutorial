@@ -160,19 +160,19 @@ def post_detail(request, pk):
 {% endblock %}
 ```
 
-Για μια ακόμη φορά θα επεκτείνουμε το template `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Για μια ακόμη φορά θα επεκτείνουμε το template `base.html`. Στο block`content` θέλουμε να εμφανίσουμε την ημ/νια έκδοσης του post (αν υπάρχει) τον τίτλο και το κυρίως κείμενο. Αλλά θα πρέπει να συζητήσουμε ορισμένα σημαντικά πράγματα, έτσι;
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` είναι ένα template tag που μας επιτρέπει να ελέγξουμε κάτι - με άλλα λόγια είναι μια συνθήκη. (Θυμάστε το `if ... else ..` από το κεφάλαιο **Εισαγωγή στην Python**?) Σε αυτό το σενάριο θέλουμε να δούμε αν το πεδίο `published_date` του post έχει κάποια τιμή.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+Ωραία, μπορούμε να ανανεώσουμε τη σελίδα και να δούμε, για αρχή, αν το σφάλμα `TemplateDoesNotExist` έχει φύγει.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+Ναι! Έφυγε!
 
-# Deploy time!
+# Ώρα για deploy!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Θα ήταν καλό να δούμε εάν η σελίδα σας εξακολουθεί να λειτουργεί στο PythonAnywhere, σωστά; Ας δοκιμάσουμε να το κάνουμε deploy ξανά.
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,7 +183,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Έπειτα, στην [κονσόλα Bash του PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -192,13 +192,13 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Θυμηθείτε να αντικαταστήσετε με το `<your-pythonanywhere-username>`πραγματικό όνομα χρήστη σας του PythonAnywhere χωρίς τα <>).
 
-## Updating the static files on the server
+## Ενημέρωση των στατικών αρχείων στο διακομιστή
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Οι διακομιστές όπως το PythonAnywhere τους αρέσει να διαχειρίζονται τα «στατικά αρχεία» (όπως τα αρχεία CSS) διαφορετικά από τα αρχεία της Python επειδή μπορεί να βελτιστοποιηθούν ούτως ώστε να φορτώνονται πιο γρήγορα. Ως αποτέλεσμα, κάθε φορά που μπορούμε να κάνουμε αλλαγές στα αρχεία CSS, θα πρέπει να εκτελούμε μια πρόσθετη εντολή στο διακομιστή η οποία του λέει να τα ενημερώσει. Η εντολή ονομάζεται `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Ξεκινήστε με το να ενεργοποιήσετε το virtualenv σας, αν δεν είναι ήδη ενεργό (το PythonAnywhere χρησιμοποιεί μια εντολή που ονομάζεται `workon` για να γίνει αυτό, είναι ακριβώς σαν την εντολή `source myenv/bin/activate` που χρησιμοποιείτε στον υπολογιστή σας):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
