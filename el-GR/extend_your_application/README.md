@@ -52,9 +52,9 @@
 
 Ας δημιουργήσουμε μια διεύθυνση URL στο αρχείο `urls.py` για το `post_detail` *view* μας!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+Θέλουμε οι λεπτομέρειες του πρώτου μας post να εμφανίζονται σε αυτό το **URL**: http://127.0.0.1:8000/θέση/1 /
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Ας δημιουργήσουμε ένα URL μέσα στο αρχείο `blog/urls.py` που θα κατευθύνει το Django στο *view* με το όνομα `post_detail`, που με τη σειρά του θα δείξει ένα ολόκληρο blog post. Ανοίξτε το αρχείο `blog/urls.py` στο πρόγραμμα επεξεργασίας κώδικα και προσθέστε τη γραμμή `path('post/<int:pk>/'), views.post_detail, name='post_detail'),` έτσι ώστε το αρχείο να μοιάζει με αυτό:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -68,15 +68,15 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+Το μέρος `post/<int:pk>/` καθορίζει ένα URL μοτίβο. Θα σας το εξηγήσουμε:
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- Το μέρος `post/` σημαίνει ότι το URL θα πρέπει να ξεκινά με τη λέξη **post** ακολουθούμενο από μια κάθετο **/**. Μέχρι τώρα όλα καλά.
+- `<int:pk>` – Αυτό το μέρος είναι πιο δύσκολο. Σημαίνει ότι το Django περιμένει έναν ακέραιο όπου με την σειρά του θα το μεταφέρει ως παράμετρο με το όνομα `pk` στο αντίστοιχο view.
+- `/` – έπειτα χρειαζόματε άλλη μια κάθετο **/** πριν να κλείσει το URL.
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+Αυτό σημαίνει ότι αν μεταβείτε στο `http://127.0.0.1:8000/post/5/` στον browser σας, το Django θα καταλάβει ότι ψάχνετε το *view* με το όνομα `post_detail` και θα μεταφέρει την πληροφορία του `pk` που ισούται με το `5` σε αυτό το *view*.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+Ωραία. Προσθέσαμε ένα νέο URL μοτίβο στο αρχείο `blog/urls.py`! Ας ανανεώσουμε τη σελίδα: http://127.0.0.1:8000/ Μπαμ! Ο server σταμάτησε να τρέχει ξανά. Ρίξτε μια ματιά στην κονσόλα. Όπως ήταν αναμενόμενο, υπάρχει ακόμα ένα σφάλμα!
 
 ![AttributeError](images/attribute_error2.png)
 
