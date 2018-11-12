@@ -8,11 +8,11 @@
 
 Το πρώτο πράγμα που χρειαζόμαστε στο blog μας είναι, προφανώς, μια σελίδα για το εκάστοτε post (της οποίας η εμφάνιση θα είναι η ίδια για όλα post και το μόνο που θα αλλάζει θα είναι το περιεχόμενο), σωστά;
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+Έχουμε ήδη ένα μοντέλο `Post`, έτσι δεν χρειάζεται να προσθέσετε τίποτα στο αρχείο `models.py`.
 
-## Create a template link to a post's detail
+## Δημιουργία ενός συνδέσμου template με τις λεπτομέρειες του post
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Θα ξεκινήσουμε με την προσθήκη ενός συνδέσμου στο αρχείο `blog/templates/blog/post_list.html`. Ανοίξτε το. Θα δείχνει κάπως έτσι: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -30,7 +30,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
+{% raw %}Θέλουμε να έχουμε έναν σύνδεσμο (link) για κάθε τίτλο του post μέσα στη λίστα ο οποίος όταν κλικάρετε να μεταβαίνει στη σελίδα λεπτομερειών του post. Ας αλλάξουμε το `<h1><a href="">{{ post.title }}</a></h1>` έτσι ώστε να συνδέεται με τη σελίδα λεπτομερειών του post:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,7 +38,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %}Ώρα να εξηγήσουμε το μυστηριώδης `{% url 'post_detail' pk=post.pk %}`. Όπως υποψιάζεστε, το `{% %}` σημαίνει ότι χρησιμοποιούμε τα Django template tags. Αυτή τη φορά θα χρησιμοποιήσουμε ένα που δημιουργεί μια διεύθυνση URL για εμάς!{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
