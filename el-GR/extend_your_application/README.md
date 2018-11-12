@@ -98,7 +98,7 @@ Post.objects.get(pk=pk)
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-Δεν το θέλουμε αυτό! Αλλά ευτυχώς το Django περιλαμβάνει με κάτι που θα μας φανεί χρήσιμο: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Δεν το θέλουμε αυτό! Αλλά ευτυχώς το Django περιλαμβάνει με κάτι που θα μας φανεί χρήσιμο: `get_object_or_404`. Σε αυτή την περίπτωση δεν υπάρχει κάποιο `Post` με αυτό το `pk`, θα εμφανίσει μια πολύ πιο όμορφη σελίδα, την σελίδα `Page Not Found 404`.
 
 ![Page not found](images/404_2.png)
 
