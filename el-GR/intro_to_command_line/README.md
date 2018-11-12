@@ -156,13 +156,13 @@
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Προσθέτοντας το πρόθεμα `/?` στις περισσότερες εντολές θα εκτυπώσετε τη σελίδα βοήθειας. Ίσως να χρειαστεί να κάνετε scroll στο παράθυρο σας για να δείτε όλα. Δοκιμάστε `cd /;`.
 
 <!--endsec-->
 
-### List files and directories
+### Προβολή αρχείων και φακέλων
 
-So what's in it? It'd be cool to find out. Let's see:
+Τι είναι, λοιπόν, μέσα; Θα ήταν ωραίο να μάθουμε. Ας δούμε:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -191,13 +191,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Σημείωση: Σε powershell μπορείτε επίσης να χρησιμοποιήσετε το 'ls' όπως στο Linux και στο Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### Αλλαγή του τρέχοντος φακέλου
 
-Now, let's go to our Desktop directory:
+Τώρα, ας μεταβούμε στον φάκελο επιφάνεια εργασίας:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -217,7 +217,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+Δείτε αν όντως άλλαξε:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -239,15 +239,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Εδώ είναι!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO tip: Εάν πληκτρολογήσετε `cd D` και στη συνέχεια πατήσετε το πλήκτρο `tab`, τότε η γραμμή εντολών θα συμπληρώσει αυτόματα το υπόλοιπο όνομα του. Έτσι μπορείτε να πλοηγηθείτε ταχύτερα. Εάν υπάρχουν περισσότεροι από ένας φάκελος που ξεκινάει με το «D», πατήστε το πλήκτρο `tab` δύο φορές για να εμφανιστεί μια λίστα επιλογών.
 
 * * *
 
-### Create directory
+### Δημιουργία φακέλου
 
-How about creating a practice directory on your desktop? You can do it this way:
+Τι θα λέγατε να δημιουργούσαμε έναν φάκελο για σκοπούς εξάσκησης στην επιφάνεια εργασίας; Μπορείτε να το κάνετε κατ' αυτό τον τρόπο:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -267,7 +267,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Αυτή η μικρή εντολή θα δημιουργήσει ένα φάκελο με το όνομα `practice` στην επιφάνεια εργασίας. Μπορείτε να ελέγξετε αν είναι εκεί εξετάζοντας την επιφάνεια εργασίας σας ή εκτελώντας την εντολή `ls` ή `dir`! Δοκιμάστε το. :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
