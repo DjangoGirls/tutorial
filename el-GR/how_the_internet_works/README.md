@@ -30,18 +30,18 @@
 
 Φανταστείτε ότι όταν πληκτρολογείτε https://djangogirls.org, στέλνετε ένα γράμμα που λέει: "Αγαπητά Django Girls, θα ήθελα να δω την σελίδα djangogirls.org. Στείλτε τη μου, παρακαλώ!"
 
-Το γράμμα σας πηγαίνει στο πλησιέστερο ταχυδρομικό γραφείο. Μετά το γράμμα σας πηγαίνει σε άλλο γραφείο που είναι πιο κοντά στον παραλήπτη, μετά σε άλλον κοκ μέχρις ότου φτάσει στον προορισμό του. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+Το γράμμα σας πηγαίνει στο πλησιέστερο ταχυδρομικό γραφείο. Μετά το γράμμα σας πηγαίνει σε άλλο γραφείο που είναι πιο κοντά στον παραλήπτη, μετά σε άλλον κοκ μέχρις ότου φτάσει στον προορισμό του. Το μόνο μοναδικό πράγμα είναι ότι αν στέλνετε πολλά γράμματα (*data packets*) στο ίδιο σημείο, τότε ίσως φτάσουν στον προορισμό τους μέσα από διαφορετικές διαδρομές και ταχυδρομικά γραφεία (*routers*). Αυτό εξαρτάται από το πως είναι ταξινομημένα σε κάθε γραφείο.
 
 ![Σχήμα 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+Έτσι λειτουργεί. Μπορείτε να στείλετε μηνύματα και να περιμένετε κάποια απάντηση. Αντί για χαρτί και στυλό χρησιμοποιείτε byte δεδομένων αλλά η ιδέα είναι η ίδια!
 
-Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Αντί για διευθύνσεις με όνομα οδού, πόλη, ταχυδρομικό κώδικα και χώρα, χρησιμοποιούμε διευθύνσεις IP. Ο υπολογιστής σας ρωτά πρώτα το DNS (Domain Name System) για να μεταφραστεί η λέξη djangogirls.org σε μια διεύθυνση IP. Λειτουργεί λίγο σαν τους παλιούς τηλεφωνικούς καταλόγους όπου μπορείτε να αναζητήσετε το όνομα του ατόμου που θέλετε να επικοινωνήσετε και να βρείτε τον αριθμό τηλεφώνου και τη διεύθυνση τους.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
+Όταν στέλνετε ένα γράμμα, πρέπει να έχει ορισμένα χαρακτηριστικά πρέπει για να παραδοθεί σωστά: μια διεύθυνση, μια σφραγίδα, κλπ. Χρησιμοποιείτε επίσης μια γλώσσα που κατανοεί ο παραλήπτης, σωστά; Το ίδιο ισχύει για τα *data packets* που μπορείτε να στείλετε για να δείτε μια ιστοσελίδα. Χρησιμοποιούμε ένα πρωτόκολλο που ονομάζεται HTTP (Hypertext Transfer Protocol).
 
-So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
+Έτσι, βασικά, όταν έχετε μια ιστοσελίδα, θα πρέπει να έχετε έναν *server* (συσκευή). Όταν ο *server* λαμβάνει μια εισερχόμενη *αίτηση* (σε ένα γράμμα), στέλνει πίσω την ιστοσελίδα σας (σε άλλη επιστολή).
 
-Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
+Δεδομένου ότι αυτό είναι ένας Django οδηγός, μπορείτε να ρωτήσετε τι κάνει Django. Όταν στέλνετε μια απάντηση, δεν θέλετε να στέλνετε την ίδια σε όλους. Είναι πολύ καλύτερα αν τα γράμματα είναι εξατομικευμένα, ειδικά για το πρόσωπο που έχει γράψει αποκλειστικά για εσάς, σωστά; Το Django, σας βοηθά με τη δημιουργία αυτών των εξατομικευμένων, ενδιαφέροντων γραμμάτων. :)
 
-Enough talk – time to create!
+Αρκετά μιλήσαμε. Πάμε να δημιουργήσουμε!
