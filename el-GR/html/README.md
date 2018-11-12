@@ -89,11 +89,11 @@ H δημιουργία ενός template σημαίνει τη δημιουργ�
 
 Παρατηρήσατε πως ο browser κατάλαβε το "Ola's blog" ως τίτλο για την σελίδα σας; Ερμήνευσε το κείμενο `<title>Ola's blog</title>` και το τοποθέτησε στην μπάρα τίτλων του browser σας (το ίδιο κείμενο θα λειτουργήσει και ως όνομα σελιδοδείκτη κλπ).
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Πιθανώς να έχετε παρατηρήσει ότι κάθε tag αντιστοιχίζεται με ένα *tag κλεισίματος*, με μια κάθετο `/` και ότι τα στοιχεία είναι *ένθετα* (δηλαδή δεν μπορείτε να κλείσετε μια συγκεκριμένη ετικέτα μέχρι να έχουν κλείσει όλα αυτά που ήταν μέσα σε αυτό).
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Είναι σαν να βάζουμε πράγματα μέσα σε κουτιά. Έχετε ένα μεγάλο κουτί, `<html></html>`. Στο εσωτερικό του υπάρχει το `<body></body>` το οποίο με τη σειρά του περιέχει ακόμα μικρότερα κουτιά: `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Θα πρέπει να ακολουθείτε αυτούς τους κανόνες *κλεισίματος ετικέτας* και *"φωλιάσματος"* των elements. Αν δεν το κάνετε, ο browser ενδέχεται να μην μπορεί να τα ερμηνεύσει ορθά και η σελίδα να μην εμφανίζεται σωστά.
 
 ## Παραμετροποιώντας το template
 
@@ -150,29 +150,29 @@ You need to follow these rules of *closing* tags, and of *nesting* elements – 
 
 Ναιιι! Αλλά μέχρι στιγμής, το template μας εμφανίζει **τις ίδιες πληροφορίες** – ενώ προηγουμένως μιλούσαμε για templates που μας επέτρεπαν να εμφανίσουμε **διαφορετικές/δυναμικές** πληροφορίες με την **ίδια μορφή**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Αυτό που θέλουμε να κάνουμε είναι να εμφανίσουμε πραγματικά posts τα οποία θα τα προσθέτουμε μέσω του Django admin. Και αυτό ακριβώς θα κάνουμε μετά.
 
-## One more thing: deploy!
+## Ένα πράγμα ακόμα: ώρα να το ανεβάσετε!
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+Θα ήταν καλό να το δούμε όλο αυτό στο internet, σωστά; Ας κάνουμε άλλο ένα deploy στο PythonAnywhere:
 
-### Commit, and push your code up to GitHub
+### Κάντε commit και έπειτα push τον κώδικα σας στο GitHub
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+Πρώτ'απ'όλα ας δούμε ποια αρχεία έχουν αλλάξει από την τελευταία φορά που κάναμε deploy (τρέξτε αυτές τις εντολές τοπικά, όχι στο PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Σιγουρευτείτε ότι βρίσκεστε μέσα στο φάκελο `djangogirls` και ας πούμε στο `git` να συμπεριλάβει όλες τις αλλαγές μέσα σε αυτό το φάκελο:
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> **Σημείωση** `--all` σημαίνει ότι το `git` θα αναγνωρίσει, επίσης, και τυχόν διεγραμμένα αρχεία/φακέλους (από προεπιλογή, αναγνωρίζει μόνο νέα/τροποποιημένα αρχεία). Also remember (from chapter 3) that `.` means the current directory.
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
