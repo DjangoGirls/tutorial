@@ -2,15 +2,15 @@
 
 Ίσως αναρρωτιέστε, τι είναι ένα template;
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Ένα template είναι ένα αρχείο που μπορούμε να επαναχρησιμοποιούμε για να παρουσιάζουμε διαφορετικές πληροφορίες μέσα από μια συνεπή μορφή. Για παράδειγμα, θα μπορούσατε να χρησιμοποιήσετε ένα πρότυπο (template) για να σας βοηθήσει να γράψετε μια επιστολή, γιατί αν και κάθε επιστολή μπορεί να περιέχει διαφορετικό μήνυμα και να απευθύνεται σε ένα διαφορετικό πρόσωπο, μερικά σημεία θα μοιραστούν την ίδια μορφή.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+Η μορφή ενός Django template περιγράφεται με μια γλώσσα που ονομάζεται HTML (που είναι η HTML που αναφέραμε στο πρώτο κεφάλαιο, **Πώς λειτουργεί το Internet**).
 
 ## Τι είναι η HTML;
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+Η HTML είναι ένας κώδικας που ερμηνεύεται από τον web browser σας – όπως ο Chrome, Firefox ή Safari - για να εμφανιστεί μια ιστοσελίδα στον χρήστη.
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML σημαίνει "HyperText Markup Language". Η λέξη **HyperText** σημαίνει ότι είναι ένας τύπος κειμένου που υποστηρίζει υπερ-συνδέσεις μεταξύ των σελιδών. **Markup** σημαίνει ότι έχουμε λάβει ένα έγγραφο και το έχουμε επισημάνει με κώδικα ούτως ώστε να πει κάτι (στην προκειμένη περίπτωση, ένας browser) πώς να ερμηνεύσει τη σελίδα. Ο HTML κώδικας είναι χτισμένος με **tags**, όπου καθένα αρχίζει με `<` και τελειώνει με `>`. Αυτά τα tags αντιπροσωπεύουν τα markup **elements**.
 
 ## Το πρώτο σας template!
 
@@ -23,11 +23,11 @@ H δημιουργία ενός template σημαίνει τη δημιουργ�
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(Ίσως να αναρωτηθείτε γιατί χρειαζόμαστε δύο φακέλους που και οι δύο ονομάζονται `blog`. Όπως θα ανακαλύψετε αργότερα, αυτό είναι μια τεχνική ονομασίας που κάνει τη ζωή ευκολότερη όταν τα πράγματα αρχίζουν να περιπλέκονται.)
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+Και τώρα δημιουργήστε ένα αρχείο `post_list.html` (απλά αφήστε το κενό για τώρα) μέσα στον φάκελο `blog/templates/blog`.
 
-See how your website looks now: http://127.0.0.1:8000/
+Δείτε πώς εμφανίζεται η ιστοσελίδα σας στο: http://127.0.0.1:8000 /
 
 > If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
 
