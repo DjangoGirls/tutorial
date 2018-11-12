@@ -420,29 +420,29 @@
 
 <!--endsec-->
 
-Cool, huh? :)
+Ωραίο, ε; :)
 
 ## Περίληψη
 
-Here is a summary of some useful commands:
+Παρακάτω φαίνεται μια περίληψη μερικών χρήσιμων εντολών:
 
-| Εντολή (Windows) | Εντολή (Mac OS / Linux) | Περιγραφή                     | Παράδειγμα                                         |
-| ---------------- | ----------------------- | ----------------------------- | -------------------------------------------------- |
-| exit             | exit                    | κλείσιμο παραθύρου            | **exit**                                           |
-| cd               | cd                      | αλλάξτε κατάλογο              | **cd test**                                        |
-| cd               | pwd                     | show the current directory    | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
-| dir              | ls                      | λίστα καταλόγων/αρχείων       | **dir**                                            |
-| copy             | cp                      | αντιγραφή αρχείου             | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move             | mv                      | move file                     | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir            | mkdir                   | δημιούργησε έναν νέο κατάλογο | **mkdir testdirectory**                            |
-| rmdir (or del)   | rm                      | delete a file                 | **del c:\test\test.txt**                         |
-| rmdir /S         | rm -r                   | delete a directory            | **rm -r testdirectory**                            |
-| [CMD] /?         | man [CMD]               | get help for a command        | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Εντολή (Windows) | Εντολή (Mac OS / Linux) | Περιγραφή                              | Παράδειγμα                                        |
+| ---------------- | ----------------------- | -------------------------------------- | ------------------------------------------------- |
+| exit             | exit                    | κλείσιμο παραθύρου                     | **exit**                                          |
+| cd               | cd                      | αλλαγή φακέλου                         | **cd test**                                       |
+| cd               | pwd                     | προβολή τρέχοντος φακέλου              | **cd** (Windows) ή **pwd** (Mac OS / Linux)       |
+| dir              | ls                      | προβολή λίστας φακέλων/αρχείων         | **dir**                                           |
+| copy             | cp                      | αντιγραφή αρχείου                      | **copy c:\test\test.txt c:\windows\test.txt** |
+| move             | mv                      | μετακίνηση/μετονομασία αρχείου/φακέλου | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir            | mkdir                   | δημιουργία φακέλου                     | **mkdir testdirectory**                           |
+| rmdir (or del)   | rm                      | διαγραφή αρχείου                       | **del c:\test\test.txt**                        |
+| rmdir /S         | rm -r                   | διαγραφή φακέλου                       | **rm -r testdirectory**                           |
+| [CMD] /?         | man [CMD]               | προβολή βοήθειας για μια εντολή        | **cd /?** (Windows) ή **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Αυτό είναι ένα πολύ μικρό κομμάτι από τις διαθέσιμες εντολές που μπορείτε να τρέξετε στην γραμμή εντολών. Αλλά δεν θα χρειαστεί να χρησιμποιήσετε περισσότερες από αυτές σήμερα.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Αν είστε περίεργοι δείτε το [ss64.com](http://ss64.com) που περιέχει μια πλήρη αναφορά σε όλες τις εντολές όλων των λειτουργικών συστημάτων.
 
-## Είστε έτοιμη;
+## Είστε έτοιμοι;
 
-Let's dive into Python!
+Ας μάθουμε λίγο Python!
