@@ -12,25 +12,25 @@
 
 Όπως με κάθε αρχείο, χρειαζόμαστε να αποθηκεύουμε τα HTML αρχεία κάπου στον σκληρό δίσκο. Για το Internet, χρησιμοποιούμε ειδικούς υπολογιστές γι'αυτό, με το όνομα *servers*. Δεν έχουν οθόνη, ποντίκι ή πληκτρολόγιο επειδή ο μοναδικός σκοπός τους είναι να αποθηκεύουν δεδομένα και να τα εξυπηρετούν. Γι' αυτό το λόγο ονομάζονται *εξυπηρετητές*. Επειδή *εξυπηρετούν την μεταφορά* δεδομένων.
 
-OK, but you want to know how the Internet looks, right?
+ΟΚ, αλλά θέλετε να μάθετε πως φαίνεται το Internet, σωστά;
 
-We drew you a picture! It looks like this:
+Ζωγραφίσαμε μια εικόνα! Φαίνεται κάπως έτσι:
 
 ![Σχήμα 1.1](images/internet_1.png)
 
-Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+Λίγο χαοτική, έτσι; Στην πραγματικότητα είναι ένα δίκτυο συνδεδεμένων συσκευών (των προαναφερομένων *servers*). Εκατοντάδες χιλιάδες συσκευές! Πολλά πολλά χιλιόμετρα καλωδίων γύρω από ολόκληρο τον κόσμο! Μπορείτε να επισκεφτείτε την ιστοσελίδα του Submarine Cable Map (http://submarinecablemap.com) και να δείτε πόσο περίπλοκο είναι το δίκτυο. Παρακάτω φαίνεται ένα στιγμιότυπο από το website:
 
 ![Σχήμα 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Φανταστικό, έτσι; Αλλά δεν είναι δυνατόν να έχουμε καλώδια ανάμεσα σε κάθε ζευγάρι συσκευών που είναι συνδεδμένο στο Internet. Οπότε, για να συνδεθούμε με μία συσκευή (για παράδειγμα, αυτή που είναι αποθηκευμένο το site https://djangogirls.org) θα χρειαστεί να περάσουμε ένα αίτημα (request) μέσα από πολλές πολλές διαφορετικές συσκευές.
 
-It looks like this:
+Δείχνει κάπως έτσι:
 
 ![Σχήμα 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+Φανταστείτε ότι όταν πληκτρολογείτε https://djangogirls.org, στέλνετε ένα γράμμα που λέει: "Αγαπητά Django Girls, θα ήθελα να δω την σελίδα djangogirls.org. Στείλτε τη μου, παρακαλώ!"
 
-Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+Το γράμμα σας πηγαίνει στο πλησιέστερο ταχυδρομικό γραφείο. Μετά το γράμμα σας πηγαίνει σε άλλο γραφείο που είναι πιο κοντά στον παραλήπτη, μετά σε άλλον κοκ μέχρις ότου φτάσει στον προορισμό του. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
 
 ![Σχήμα 1.4](images/internet_4.png)
 
