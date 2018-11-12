@@ -269,15 +269,15 @@
 
 Αυτή η μικρή εντολή θα δημιουργήσει ένα φάκελο με το όνομα `practice` στην επιφάνεια εργασίας. Μπορείτε να ελέγξετε αν είναι εκεί εξετάζοντας την επιφάνεια εργασίας σας ή εκτελώντας την εντολή `ls` ή `dir`! Δοκιμάστε το. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> PRO tip: Αν δεν θέλετε να γράφετε την ίδια εντολή ξανά και ξανά, πιέστε το `πάνω βελάκι` ή/και το `κάτω βελάκι` στο πληκτρολόγιο σας για να περιηγηθείτε στο ιστορικό των εντολών σας.
 
 * * *
 
-### Exercise!
+### Εξασκηθείτε!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Μια μικρή πρόκληση για εσάς: στον καινούργιο σας φάκελο με το όνομα `practice`, δημιουργήστε έναν φάκελο με το όνομα `test`. (Χρησιμοποιήστε τις εντολές `cd` και `mkdir`.)
 
-#### Solution:
+#### Λύση:
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -303,15 +303,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Συγχαρητήρια! :)
 
 * * *
 
-### Clean up
+### Διαγραφή
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Δεν θέλουμε να αφήσουμε πίσω μας άχρηστα αρχεία/φακέλους. Ας διαγράψουμε ότι έχουμε δημιουργήσει μέχρι τώρα.
 
-First, we need to get back to Desktop:
+Πρώτα, πρέπει να πάμε πίσω στην Επιφάνεια Εργασίας:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -331,9 +331,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Χρησιμοποιώντας τις δύο τελίτσες `..` παρέα με την εντολή `cd` αλλάζετε την θέση σας από τον παρόν φάκελο σε 1 επίπεδο πιο ψηλά (δηλαδή στον φάκελο που περιέχει τον τρέχων φάκελο).
 
-Check where you are:
+Δείτε που είστε:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -355,9 +355,9 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Ώρα να διαγράψουμε τον φάκελο `practice`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Προσοχή**: Η διαγραφή των αρχείων χρησιμοποιώντας τις εντολές `del`, `rmdir` ή `rm` είναι μη αναστρέψιμες, δηλαδή *τα διεγραμμένα αρχεία δεν μπορούν να επανακτηθούν*! Οπότε να είστε προσεκτικοί με αυτή την εντολή.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -378,7 +378,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Έγινε! Για να βεβαιωθείτε ότι όντως διαγράφηκε, ας το δούμε:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -398,9 +398,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Έξοδος
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Αυτά για τώρα! Μπορείτε να κλείσετε τη γραμμή εντολών με ασφάλεια τώρα. Ας το κάνουμε με τον τρόπο του χάκερ, εντάξει;:)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
