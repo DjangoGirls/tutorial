@@ -4,13 +4,13 @@
 > 
 > Αυτό το κεφάλαιο είναι εμπνευσμένο από την ομιλία της Jessica McKellar με τίτλο "How the Internet works" (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Στοιχηματίζουμε ότι δουλεύετε το Internet κάθε μέρα. Αλλά ξέρετε τι συμβαίνει όταν πληκτρολογείτε μια διεύθυνση όπως https://djangogirls.org στο browser σας και μετά πατήσετε `enter`;
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+Το πρώτο πράγμα που πρέπει να καταλάβετε είναι ότι ένα website αποτελείτε από ένα σωρό από φακέλους αποθηκευμένους σε έναν σκληρό δίσκο. Όπως ακριβώς οι ταινίες, η μουσική και οι φωτογραφίες σας. Ωστόσο, υπάρχει ένα κομμάτι που είναι μοναδικό για τα websites: περιλαμβάνουν κώδικα υπολογιστή με το όνομα HTML.
 
-If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+Αν δεν είστε εξοικειωμένοι με προγραμματισμό θα σας φανεί λίγο δύσκολη η HTML στην αρχή. Αλλά οι web browsers (όπως Chrome, Safari, Firefox, κλπ) την αγαπούν. Οι web browsers σχεδιάστηκαν για να κατανοούν αυτό τον κώδικα, να ακολουθούν τις εντολές του και να παρουσιάζουν αυτά τα αρχεία από τα οποία είναι φτιαγμένα το website σας με τον τρόπο που εσείς θέλετε.
 
-As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+Όπως με κάθε αρχείο, χρειαζόμαστε να αποθηκεύουμε τα HTML αρχεία κάπου στον σκληρό δίσκο. Για το Internet, χρησιμοποιούμε ειδικούς υπολογιστές γι'αυτό, με το όνομα *servers*. Δεν έχουν οθόνη, ποντίκι ή πληκτρολόγιο επειδή ο μοναδικός σκοπός τους είναι να αποθηκεύουν δεδομένα και να τα εξυπηρετούν. Γι' αυτό το λόγο ονομάζονται *εξυπηρετητές*. Επειδή *εξυπηρετούν την μεταφορά* δεδομένων.
 
 OK, but you want to know how the Internet looks, right?
 
