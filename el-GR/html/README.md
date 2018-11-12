@@ -141,14 +141,14 @@ You need to follow these rules of *closing* tags, and of *nesting* elements – 
 
 Δημιουργήσαμε τρία `div` εδώ.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Το πρώτο `div` περιέχει τον τίτλο του blog μας – είναι μια επικεφαλίδα και ένας σύνδεσμος
+* Τα υπόλοιπα δύο `div` περιέχουν τα posts μας με ημ/νια δημοσίευσης, το `h2` με τον τίτλο του post ο οποίος μπορεί να κλικαριστεί και επίσης δύο `p`s (παραγράφους) κείμενα, ένα για την ημ/νια και το άλλο για το κυρίως κείμενο.
 
-It gives us this effect:
+Δίνει αυτή την αίσθηση:
 
 ![Σχήμα 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Ναιιι! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
