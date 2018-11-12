@@ -46,7 +46,7 @@
 
 Τώρα, όταν πάμε στη διεύθυνση http://127.0.0.1:8000 / θα εμφανιστεί σφάλμα (όπως ήταν αναμενόμενο, καθώς δεν έχουμε ακόμη διεύθυνση URL ή κάποιο *view* για το `post_detail`). Αυτό θα μοιάζει κάπως έτσι:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![Σφάλμα NoReverseMatch](images/no_reverse_match2.png)
 
 ## Δημιουργία ενός URL για τις λεπτομέρειες του post
 
@@ -96,7 +96,7 @@ Post.objects.get(pk=pk)
 
 Αλλά αυτός ο κώδικας έχει πρόβλημα. Αν δεν υπάρχει κάποιο `Post` με το δεδομένο `primary key` (`pk`) θα έχουμε ένα άσχημο σφάλμα!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![Σφάλμα DoesNotExist](images/does_not_exist2.png)
 
 Δεν το θέλουμε αυτό! Αλλά ευτυχώς το Django περιλαμβάνει με κάτι που θα μας φανεί χρήσιμο: `get_object_or_404`. Σε αυτή την περίπτωση δεν υπάρχει κάποιο `Post` με αυτό το `pk`, θα εμφανίσει μια πολύ πιο όμορφη σελίδα, την σελίδα `Page Not Found 404`.
 
@@ -128,11 +128,11 @@ def post_detail(request, pk):
 
 Ναι. Ήρθε η ώρα να ανανεώσουμε τη σελίδα: http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![view για την λίστα των post](images/post_list2.png)
 
 Δούλεψε! Αλλά τι συμβαίνει όταν κλικάρετε στον σύνδεσμο σε κάποιον τίτλο ενός post;
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![Σφάλμα TemplateDoesNotExist](images/template_does_not_exist2.png)
 
 Ω όχι! Άλλο ένα άλλο σφάλμα! Αλλά ήδη γνωρίζουμε πώς να το αντιμετωπίσουμε, έτσι; Πρέπει να προσθέσουμε ένα template!
 
@@ -166,7 +166,7 @@ def post_detail(request, pk):
 
 Ωραία, μπορούμε να ανανεώσουμε τη σελίδα και να δούμε, για αρχή, αν το σφάλμα `TemplateDoesNotExist` έχει φύγει.
 
-![Post detail page](images/post_detail2.png)
+![Σελίδα λεπτομέρειας του post](images/post_detail2.png)
 
 Ναι! Έφυγε!
 
@@ -207,8 +207,8 @@ def post_detail(request, pk):
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+Η εντολή `manage.py collectstatic` είναι λίγο σαν την `manage.py migrate`. Κάνουμε κάποιες αλλαγές στον κώδικα και στη συνέχεια λέμε στο Django να *εφαρμόσει* αυτές τις αλλαγές είτε στον αντίστοιχο φάκελο στατικών αρχείων του server είτε στη βάση δεδομένων.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
+Σε κάθε περίπτωση, είμαστε τώρα έτοιμοι να κλικάρουμε ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (από το κουμπί του μενού στην επάνω δεξιά μεριά της κονσόλας) και κλικάρουμε στο **Reload**. Δείτε τη σελίδα https://yourname.pythonanywhere.com με το αποτέλεσμα.
 
-And that should be it! Congrats :)
+Αυτό ήταν! Συγχαρητήρια :)
