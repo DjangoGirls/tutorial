@@ -40,17 +40,17 @@
 
 {% raw %}Ώρα να εξηγήσουμε το μυστηριώδης `{% url 'post_detail' pk=post.pk %}`. Όπως υποψιάζεστε, το `{% %}` σημαίνει ότι χρησιμοποιούμε τα Django template tags. Αυτή τη φορά θα χρησιμοποιήσουμε ένα που δημιουργεί μια διεύθυνση URL για εμάς!{% endraw %}
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+Το μέρος `post_detail` σημαίνει ότι θα πρέπει το Django θα περιμένει μια διεύθυνση URL με το όνομα αυτό στο αρχείο `blog/urls.py` με το όνομα=post_detail
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+Τι γίνεται όμως με το `pk=post.pk`; Το `pk` είναι σύντμηση για τη λέξη primary key, το οποίο είναι ένα μοναδικό όνομα για κάθε εγγραφή σε μια βάση δεδομένων. Επειδή δεν ορίσαμε κάποιο primary key στο μοντέλο μας `Post`, το Django δημιουργεί ένα για μας (από προεπιλογή, ένας αριθμός που αυξάνεται κατά ένα για κάθε εγγραφή, δηλαδή 1, 2, 3) και το προσθέτει ως ένα πεδίο που ονομάζεται `pk` σε κάθε μία από τα post μας. Μπορούμε να έχουμε πρόσβαση σε κάθε primary key γράφοντας `post.pk`, με τον ίδιο τρόπο που έχουμε πρόσβαση σε άλλα πεδία (`title`, `author`, κ.λπ.) του `Post` object μας!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+Τώρα, όταν πάμε στη διεύθυνση http://127.0.0.1:8000 / θα εμφανιστεί σφάλμα (όπως ήταν αναμενόμενο, καθώς δεν έχουμε ακόμη διεύθυνση URL ή κάποιο *view* για το `post_detail`). Αυτό θα μοιάζει κάπως έτσι:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
-## Create a URL to a post's detail
+## Δημιουργία ενός URL για τις λεπτομέρειες του post
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+Ας δημιουργήσουμε μια διεύθυνση URL στο αρχείο `urls.py` για το `post_detail` *view* μας!
 
 We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
