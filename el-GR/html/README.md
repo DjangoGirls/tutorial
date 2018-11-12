@@ -148,7 +148,7 @@ You need to follow these rules of *closing* tags, and of *nesting* elements – 
 
 ![Σχήμα 11.4](images/step6.png)
 
-Ναιιι! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Ναιιι! Αλλά μέχρι στιγμής, το template μας εμφανίζει **τις ίδιες πληροφορίες** – ενώ προηγουμένως μιλούσαμε για templates που μας επέτρεπαν να εμφανίσουμε **διαφορετικές/δυναμικές** πληροφορίες με την **ίδια μορφή**.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
