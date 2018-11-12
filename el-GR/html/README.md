@@ -29,13 +29,13 @@ H δημιουργία ενός template σημαίνει τη δημιουργ�
 
 Δείτε πώς εμφανίζεται η ιστοσελίδα σας στο: http://127.0.0.1:8000 /
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Αν παρουσιάζεται ακόμα το σφάλμα `TemplateDoesNotExist`, δοκιμάστε να επανεκκινήσετε τον server σας. Προσπαθήστε να τον σταματήσετε (πιέζοντας Ctrl + C) και επανεκκινήστε τον τρέχοντας την εντολή `python manage.py runserver`.
 
 ![Σχήμα 11.1](images/step1.png)
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+Δεν υπάρχει σφάλμα πια! Συγχαρητήρια :) Ωστόσο, ιστοσελίδα σας δεν δείχνει κάτι παρά μια κενή σελίδα επειδή το template σας είναι κενό. Πρέπει να το διορθώσουμε αυτό.
 
-Open the new file in the code editor, and add the following:
+Ανοίξτε το νέο αρχείο και προσθέστε τα εξής:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -48,13 +48,13 @@ Open the new file in the code editor, and add the following:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Οπότε πως φαίνεται τώρα η ιστοσελίδα μας; Επισκεφθείτε το για να μάθετε: http://127.0.0.1:8000/
 
 ![Σχήμα 11.2](images/step3.png)
 
-It worked! Nice work there :)
+Λειτουργεί! Καλή δουλειά :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* Το πιο βασικό tag, `<html>`, είναι πάντα η αρχή οποιασδήποτε ιστοσελίδας και `</html>` είναι πάντα στο τέλος. Όπως μπορείτε να δείτε, όλο το περιεχόμενο της σελίδας ενσωματώνεται μεταξύ της αρχής του tag `<html>` και του tag κλεισίματος `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
 
 ## Head and body
