@@ -146,11 +146,11 @@
 
 ### Μάθετε περισσότερα σχετικά με μια εντολή
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Πολλές εντολές που πληκτρολογείτε στη γραμμή εντολών έχουν ενσωματωμένη βοήθεια που μπορείτε να εμφανίσετε και να διαβάσετε! Για παράδειγμα, για να μάθετε περισσότερα σχετικά με τον τρέχων φάκελο:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+Τα λειτουργικά συστήματα OS X και Linux έχουν μια εντολή `man`, η οποία δίνει βοήθεια στις εντολές. Δοκιμάστε `man pwd` και δείτε τι λέει ή βάλτε την εντολή `man` πριν από άλλες εντολές για να δείτε τη βοήθειά τους. Η έξοδος της εντολής `man` παρουσιάζεται, συνήθως, ως σελιδοποιημένη (paged). Χρησιμοποιήστε το κουμπί του διαστήματος για να κινηθείτε προς την επόμενη σελίδα και το πλήκτρο `q` για να βγείτε από την "σελιδοποιημένη" βοήθεια, πίσω στην γραμμή εντολών.
 
 <!--endsec-->
 
