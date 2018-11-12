@@ -55,19 +55,19 @@ H δημιουργία ενός template σημαίνει τη δημιουργ�
 Λειτουργεί! Καλή δουλειά :)
 
 * Το πιο βασικό tag, `<html>`, είναι πάντα η αρχή οποιασδήποτε ιστοσελίδας και `</html>` είναι πάντα στο τέλος. Όπως μπορείτε να δείτε, όλο το περιεχόμενο της σελίδας ενσωματώνεται μεταξύ της αρχής του tag `<html>` και του tag κλεισίματος `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* `<p>`είναι ένα tag για στοιχεία κειμένου παραγράφου. Το tag `</p>` κλείνει κάθε παράγραφο
 
-## Head and body
+## Head και body
 
-Each HTML page is also divided into two elements: **head** and **body**.
+Κάθε σελίδα HTML χωρίζεται σε δύο στοιχεία: το **head** και το **body**.
 
-* **head** is an element that contains information about the document that is not displayed on the screen.
+* To **head** είναι ένα στοιχείο (element) που περιέχει πληροφορίες σχετικά με το έγγραφο αλλά αυτές οι πληροφορίες δεν εμφανίζονται στην οθόνη.
 
-* **body** is an element that contains everything else that is displayed as part of the web page.
+* Το **body** είναι ένα στοιχείο που περιέχει όλα τα υπόλοιπα που εμφανίζονται ως μέρος της ιστοσελίδας.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+Χρησιμοποιούμε το tag `<head>`για να πούμε στον browser σχετικά με τη διαμόρφωση της σελίδας και το tag `<body>` για να πούμε για το περιεχόμενο της.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+Για παράδειγμα, μπορείτε να προσθέσετε τίτλο στην ιστοσελίδα σας μέσα από το tag `<head>`, όπως παρακάτω:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -83,11 +83,11 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Save the file and refresh your page.
+Αποθηκεύστε το αρχείο και ανανέωστε την σελίδα σας.
 
 ![Σχήμα 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Παρατηρήσατε πως ο browser κατάλαβε το "Ola's blog" ως τίτλο για την σελίδα σας; Ερμήνευσε το κείμενο `<title>Ola's blog</title>` και το τοποθέτησε στην μπάρα τίτλων του browser σας (το ίδιο κείμενο θα λειτουργήσει και ως όνομα σελιδοδείκτη κλπ).
 
 Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
@@ -95,22 +95,22 @@ It's like putting things into boxes. You have one big box, `<html></html>`; insi
 
 You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-## Customize your template
+## Παραμετροποιώντας το template
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+Μπορείτε, τώρα, να διασκεδάσετε λιγάκι και να τροποιήσετε το template σας! Παρακάτω παρουσιάζονται μερικά χρήσιμα tags γι'αυτό:
 
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
+* `<h1>A heading</h1>` για επικεφαλίδες
+* `<h2>A sub-heading</h2>` για επικεφαλίδες χαμηλότερου επιπέδου
+* `<h3>A sub-sub-heading</h3>` …κοκ μέχρι την `<h6>`
+* `<p>Μια παράγραφος κειμένου</p>`
+* `<em>text</em>` δίνει έμφαση στο κείμενο σας
+* `<strong>text</strong>` κάνει τα γράμματα πιο έντονα
+* `<br>` αλλάζει γραμμή (δεν μπορείτε να βάλετε τίποτα ανάμεσα και δεν υπάρχει αντίστοιχο tag που να το κλείνει)
+* `<a href="https://djangogirls.org">link</a>` δημιουργεί έναν σύνδεσμο
+* `<ul><li>first item</li><li>second item</li></ul>` δημιουργεί μια λίστα, όπως αυτή εδώ που διαβάζετε τώρα!
+* `<div></div>` ορίζει ένα τμήμα στη σελίδα
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Παρακάτω φαίνεται ένα πλήρες παράδειγμα ενός template. Αντιγράψτε-επικολλήστε το μέσα στο αρχείο `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -139,7 +139,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 </html>
 ```
 
-We've created three `div` sections here.
+Δημιουργήσαμε τρία `div` εδώ.
 
 * The first `div` element contains the title of our blog – it's a heading and a link
 * Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
