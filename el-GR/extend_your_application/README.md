@@ -80,13 +80,13 @@ urlpatterns = [
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+Θυμάστε το επόμενο βήμα; Προσθήκη ενός view!
 
-## Add a post's detail view
+## Προσθήκη ενός view για τις λεπτομέρειες του post
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+Αυτή τη φορά το *view* δέχεται μια έξτρα παράμετρο, το `pk`. Το *view* μας χρειάζεται με κάποιο τρόπο να αιχμαλωτίσει αυτή την παράμετρο, σωστά; Έτσι, λοιπόν, θα ορίσουμε την συνάρτηση μας ως `def post_detail(request, pk):`. Σημειώστε ότι χρειάζεται να ορίσουμε την παράμετρο με το ίδιο ακριβώς όνομα που δώσαμε στο URL μέσα στο αρχείο urls (`pk`). Η απουσία της παραμέτρου είναι λάθος και θα παρουσιάσει σφάλμα!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+Τώρα, θέλουμε να πάρουμε ένα και μόνο ένα post. Για να το κάνουμε αυτό, μπορούμε να χρησιμοποιήσουμε τα querysets, όπως παρακάτω:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -94,11 +94,11 @@ Now, we want to get one and only one blog post. To do this, we can use querysets
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+Αλλά αυτός ο κώδικας έχει πρόβλημα. Αν δεν υπάρχει κάποιο `Post` με το δεδομένο `primary key` (`pk`) θα έχουμε ένα άσχημο σφάλμα!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Δεν το θέλουμε αυτό! Αλλά ευτυχώς το Django περιλαμβάνει με κάτι που θα μας φανεί χρήσιμο: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Page not found](images/404_2.png)
 
