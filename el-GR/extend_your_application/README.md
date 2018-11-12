@@ -1,12 +1,12 @@
 {% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
 
-# Extend your application
+# Επεκτείνετε την εφαρμογή σας
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+Έχουμε ήδη ολοκληρώσει όλα τα βήματα που είναι απαραίτητα για τη δημιουργία της ιστοσελίδας μας: γνωρίζουμε πώς να γράψουμε ένα μοντέλο, ένα url, ένα view και ένα template. Γνωρίζουμε επίσης πώς να κάνουμε το website μας όμορφο.
 
-Time to practice!
+Ώρα για εξάσκηση!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+Το πρώτο πράγμα που χρειαζόμαστε στο blog μας είναι, προφανώς, μια σελίδα για το εκάστοτε post (της οποίας η εμφάνιση θα είναι η ίδια για όλα post και το μόνο που θα αλλάζει θα είναι το περιεχόμενο), σωστά;
 
 We already have a `Post` model, so we don't need to add anything to `models.py`.
 
