@@ -102,13 +102,13 @@ Post.objects.get(pk=pk)
 
 ![Page not found](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+Τα καλά νέα είναι ότι μπορείτε να δημιουργήσετε τη δική σας σελίδα `Page not found` και να την κάνετε όσο όμορφη θέλετε. Αλλά δεν είναι εξαιρετικά σημαντικό αυτή τη στιγμή, οπότε θα το παραλείψουμε τώρα.
 
-OK, time to add a *view* to our `views.py` file!
+Ωραία, ώρα να προσθέσουμε ένα *view* στο αρχείο `views.py`!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+Στο αρχείο `blog/urls.py` δημιουργήσαμε ένα URL με το όνομα `post_detail`, που αναφέρεται σε ένα view με το όνομα `views.post_detail`. Αυτό σημαίνει ότι το Django θα περιμένει να υπάρχει μια συνάρτηση με το όνομα `post_detail` μέσα στο αρχείο `blog/views.py`.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+Ανοίξτε το αρχείο`blog/views.py` και προσθέστε τις ακόλουθες γραμμές μαζί με τις γραμμές `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +116,7 @@ We should open `blog/views.py` in the code editor and add the following code nea
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+Και στο τέλος του αρχείου θα προσθέσουμε το *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -126,21 +126,21 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Ναι. Ήρθε η ώρα να ανανεώσουμε τη σελίδα: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+Δούλεψε! Αλλά τι συμβαίνει όταν κλικάρετε στον σύνδεσμο σε κάποιον τίτλο ενός post;
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+Ω όχι! Άλλο ένα άλλο σφάλμα! Αλλά ήδη γνωρίζουμε πώς να το αντιμετωπίσουμε, έτσι; Πρέπει να προσθέσουμε ένα template!
 
-## Create a template for the post details
+## Δημιουργία template για τις λεπτομέρειες του post
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+Θα δημιουργήσoυμε ένα αρχείο μέσα στο φάκελο `blog/πρότυπα/blog` με το όνομα `post_detail.html`. Ανοίξτε το.
 
-It will look like this:
+Θα μοιάζει κάπως έτσι:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,7 +160,7 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Για μια ακόμη φορά θα επεκτείνουμε το template `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
