@@ -1,6 +1,6 @@
 # Comment fonctionne Internet
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Pour les lectrices autodidactes : ce chapitre est traité dans la vidéo [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
 > Ce chapitre s’inspire de la conférence « Comment fonctionne Internet » de Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
