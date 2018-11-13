@@ -28,20 +28,20 @@ Fascinant, non ? Cependant, il n'est pas possible de tirer un câble entre chaqu
 
 ![Figure 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+C'est un peu comme si, quand vous tapiez https://djangogirls.org, vous envoyiez une lettre qui dit "Chères Django Girls, je voudrais voir le site djangogirls.org. Pouvez-vous me l'envoyer ?"
 
 Votre lettre part vers le bureau de poste le plus proche. Ensuite, il file vers un autre, qui est plus proche de votre destinataire. Puis un autre, et encore un autre, jusqu'à sa destination. Une chose à retenir : si vous envoyez beaucoup de lettres (*data packets*) au même endroit, il se pourrait qu'elles transitent par des postes différentes (*routers*). Cela dépend de la manière dont elles sont distribuées à chaque bureau de poste.
 
 ![Figure 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+Cela fonctionne comme ça - vous envoyez des messages et attendez une réponse. Vous utilisez des octets de données à la place du papier et du crayon, mais l'idée est la même !
 
-À la place des adresses postales (nom de rue, ville, code postal), nous utilisons des adresses IP. Votre ordinateur commence par demander au DNS (Domaine Name System) de traduire djangogirls.org en une adresse IP. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+À la place des adresses postales (nom de rue, ville, code postal), nous utilisons des adresses IP. Votre ordinateur commence par demander au DNS (Domaine Name System) de traduire djangogirls.org en une adresse IP. Ça marche un peu comme un de ces vieux annuaires où l'on peut chercher le nom d'une personne et trouver son numéro de téléphone et son adresse.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. Vous devez aussi utiliser une langue que votre destinataire comprend. C'est la même chose pour les paquets de données que vous envoyez pour voir un site web. Vous utilisez un protocole appelé HTTP (Hypertext Tranfer Protocol).
+Quand vous envoyez une lettre, elle a besoin de certaines choses pour transiter correctement : une adresse, un timbre, etc. Vous devez aussi utiliser une langue que votre destinataire comprend. C'est la même chose pour les paquets de données que vous envoyez pour voir un site web. Vous utilisez un protocole appelé HTTP (Hypertext Tranfer Protocol).
 
 Donc, au final, pour avoir un site web il faut qu'il soit sur un *serveur* (c'est une machine). Lorsque le *serveur* reçoit une *requête/0> (dans une lettre), il envoie votre site Web (dans une autre lettre).</p> 
 
-Since this is a Django tutorial, you might ask what Django does. Quand vous envoyez une réponse, vous ne renvoyez pas toujours la même réponse à tout le monde. C'est bien mieux quand les lettres sont personnalisées, surtout quand elles s'adressent à quelqu'un qui vient de vous écrire, non ? Et bien Django vous aide à écrire les lettres personnalisées et intéressantes. :)
+Puisqu'on est dans un tutoriel sur Django, vous devez vous demander ce que Django fait. Quand vous envoyez une réponse, vous ne renvoyez pas toujours la même réponse à tout le monde. C'est bien mieux quand les lettres sont personnalisées, surtout quand elles s'adressent à quelqu'un qui vient de vous écrire, non ? Et bien Django vous aide à écrire les lettres personnalisées et intéressantes. :)
 
-Enough talk – time to create!
+Assez parlé, il est temps de commencer à créer des trucs !
