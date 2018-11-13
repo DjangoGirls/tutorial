@@ -376,114 +376,74 @@ form = PostForm(instance=post)
 
 Το να μπορείς να δημιουργήσεις νέες δημοσιεύσεις κάνοντας απλώς ένα κλικ σε ένα σύνδεσμο είναι φοβερό! Αλλά τώρα, οποιοσδήποτε επισκεφθεί την σελίδα σας θα μπορεί να φτιάξει μία καινούρια δημοσίευση blog, και αυτό είναι κάτι που πιθανώς δεν θέλετε. Ας το κάνουμε έτσι ώστε το κουμπί να εμφανίζεται μόνο για εσάς και για κανέναν άλλο.
 
-Ανοίξτε το αρχείο `Blog/templates/blog/base.html` και βρείτε το `page-header` `div` καθώς και το tag του link (<a>). Θα μοιάζει κάπως έτσι:</p> 
+Ανοίξτε το αρχείο `Blog/templates/blog/base.html` και βρείτε το `page-header` `div` καθώς και το tag a του link. Θα μοιάζει κάπως έτσι:
 
-<p>
-  {% filename %}blog/templates/blog/base.html{% endfilename %}
-</p>
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
-<pre><code class="html">&lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt;&lt;/span&gt;&lt;/a&gt;
-</code></pre>
+```html
+<a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
+```
 
-<p>
-  Πρόκειται να προσθέσουμε άλλη μία ετικέτα <code>{% if %}</code> σε αυτό, το οποίο θα κάνει τον σύνδεσμο να εμφανίζεται μόνο για χρήστες που είναι συνδεδεμένοι στο Django Admin. Προς το παρόν, είστε μόνο εσείς! Αλλάξτε το tag <code>&lt;a&gt;</code> να μοιάζει σαν αυτό:
-</p>
+Πρόκειται να προσθέσουμε άλλη μία ετικέτα `{% if %}` σε αυτό, το οποίο θα κάνει τον σύνδεσμο να εμφανίζεται μόνο για χρήστες που είναι συνδεδεμένοι στο Django Admin. Προς το παρόν, είστε μόνο εσείς! Αλλάξτε το tag `<a>` να μοιάζει σαν αυτό:
 
-<p>
-  {% filename %}blog/templates/blog/base.html{% endfilename %}
-</p>
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
-<pre><code class="html">{% if user.is_authenticated %}
-    &lt;a href="{% url 'post_new' %}" class="top-menu"&gt;&lt;span class="glyphicon glyphicon-plus"&gt;&lt;/span&gt;&lt;/a&gt;
+```html
+{% if user.is_authenticated %}
+    <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 {% endif %}
-</code></pre>
+```
 
-<p>
-  Αυτό το <code>{% if %}</code> θα προκαλέσει τον σύνδεσμο να σταλθεί στο πρόγραμμα περιήγησης μόνο αν ο χρήστης που ζητά την σελίδα είναι συνδεδεμένος. Αυτό δεν προστατεύει την δημιουργία νέων δημοσιεύσεων εντελώς, αλλά είναι ένα καλό πρώτο βήμα. Θα καλύψουμε περισσότερα σχετικά με την ασφάλεια στα μαθήματα επέκτασης.
-</p>
+Αυτό το `{% if %}` θα προκαλέσει τον σύνδεσμο να σταλθεί στο πρόγραμμα περιήγησης μόνο αν ο χρήστης που ζητά την σελίδα είναι συνδεδεμένος. Αυτό δεν προστατεύει την δημιουργία νέων δημοσιεύσεων εντελώς, αλλά είναι ένα καλό πρώτο βήμα. Θα καλύψουμε περισσότερα σχετικά με την ασφάλεια στα μαθήματα επέκτασης.
 
-<p>
-  Θυμάστε το εικονίδιο επεξεργασίας που μόλις προσθέσαμε στην σελίδα λεπτομερειών; Θέλουμε επίσης να προσθέσουμε την ίδια αλλαγή εκεί, ώστε άλλα άτομα δεν θα μπορούν να επεξεργαστούν τις υπάρχουσες δημοσιεύσεις.
-</p>
+Θυμάστε το εικονίδιο επεξεργασίας που μόλις προσθέσαμε στην σελίδα λεπτομερειών; Θέλουμε επίσης να προσθέσουμε την ίδια αλλαγή εκεί, ώστε άλλα άτομα δεν θα μπορούν να επεξεργαστούν τις υπάρχουσες δημοσιεύσεις.
 
-<p>
-  Ανοίξτε το αρχείο <code>blog/templates/blog/post_detail.html</code> και προσθέστε τη γραμμή:
-</p>
+Ανοίξτε το αρχείο `blog/templates/blog/post_detail.html` και προσθέστε τη γραμμή:
 
-<p>
-  {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
-</p>
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
-<pre><code class="html">&lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt;&lt;/span&gt;&lt;/a&gt;
-</code></pre>
+```html
+<a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+```
 
-<p>
-  Αλλάξτε το σε αυτό:
-</p>
+Αλλάξτε το σε αυτό:
 
-<p>
-  {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
-</p>
+{% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
-<pre><code class="html">{% if user.is_authenticated %}
-     &lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt;&lt;/span&gt;&lt;/a&gt;
+```html
+{% if user.is_authenticated %}
+     <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 {% endif %}
-</code></pre>
+```
 
-<p>
-  Μιας και είστε πιθανότατα συνδεδεμένοι, εάν ανανεώσετε την σελίδα, δεν θα δείτε τίποτα διαφορετικό. Φορτώστε την σελίδα σε ένα διαφορετικό πρόγραμμα περιήγησης ή ένα παράθυρο ανώνυμης περιήγησης (που ονομάζεται "InPrivate" στο Windows Edge), όμως, και θα δείτε ότι ο σύνδεσμος δεν εμφανίζεται, ούτε και το εικονίδιο!
-</p>
+Μιας και είστε πιθανότατα συνδεδεμένοι, εάν ανανεώσετε την σελίδα, δεν θα δείτε τίποτα διαφορετικό. Φορτώστε την σελίδα σε ένα διαφορετικό πρόγραμμα περιήγησης ή ένα παράθυρο ανώνυμης περιήγησης (που ονομάζεται "InPrivate" στο Windows Edge), όμως, και θα δείτε ότι ο σύνδεσμος δεν εμφανίζεται, ούτε και το εικονίδιο!
 
-<h2>
-  Ένα πράγμα ακόμα: ώρα να το ανεβάσετε!
-</h2>
+## Ένα πράγμα ακόμα: ώρα να το ανεβάσετε!
 
-<p>
-  Για να δούμε αν όλα αυτά λειτουργούν στο PythonAnywhere. Ώρα για άλλο ένα deploy!
-</p>
+Για να δούμε αν όλα αυτά λειτουργούν στο PythonAnywhere. Ώρα για άλλο ένα deploy!
 
-<ul>
-  <li>
-    Πρώτα κάντε commit τον νέο σας κώδικα και έπειτα push στο GitHub:
-  </li>
-</ul>
+* Πρώτα κάντε commit τον νέο σας κώδικα και έπειτα push στο GitHub:
 
-<p>
-  {% filename %}command-line{% endfilename %}
-</p>
+{% filename %}command-line{% endfilename %}
 
-<pre><code>$ git status
-$ git add --all .
-$ git status
-$ git commit -m "Added views to create/edit blog post inside the site."
-$ git push
-</code></pre>
+    $ git status
+    $ git add --all .
+    $ git status
+    $ git commit -m "Added views to create/edit blog post inside the site."
+    $ git push
+    
 
-<ul>
-  <li>
-    Έπειτα, στην <a href="https://www.pythonanywhere.com/consoles/">κονσόλα Bash του PythonAnywhere</a>:
-  </li>
-</ul>
+* Έπειτα, στην [κονσόλα Bash του PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-<p>
-  {% filename %}PythonAnywhere command-line{% endfilename %}
-</p>
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-<pre><code>$ cd ~/&lt;your-pythonanywhere-username&gt;.pythonanywhere.com
-$ git pull
-[...]
-</code></pre>
+    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ git pull
+    [...]
+    
 
-<p>
-  (Θυμηθείτε να αντικαταστήσετε με το <code>&lt;your-pythonanywhere-username&gt;</code>πραγματικό όνομα χρήστη σας του PythonAnywhere χωρίς τα <>).
-</p>
+(Θυμηθείτε να αντικαταστήσετε με το `<your-pythonanywhere-username>`πραγματικό όνομα χρήστη σας του PythonAnywhere χωρίς τα <>).
 
-<ul>
-  <li>
-    Τέλος, επισκεφτείτε τη σελίδα σας <a href="https://www.pythonanywhere.com/web_app_setup/">"Web" page</a> (χρησιμοποιήστε το κουμπί του menu στην πάνω δεξιά γωνία της κονσόλας) και κλικάρετε <strong>Reload</strong>. Ανανεώστε τη σελίδα https://yourname.pythonanywhere.com και δείτε τις αλλαγές.
-  </li>
-</ul>
+* Τέλος, επισκεφτείτε τη σελίδα σας ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (χρησιμοποιήστε το κουμπί του menu στην πάνω δεξιά γωνία της κονσόλας) και κλικάρετε **Reload**. Ανανεώστε τη σελίδα https://yourname.pythonanywhere.com και δείτε τις αλλαγές.
 
-<p>
-  Αυτό ήταν! Συγχαρητήρια :)
-</p>
+Αυτό ήταν! Συγχαρητήρια :)
