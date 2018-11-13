@@ -435,7 +435,7 @@
 | copy             | cp                      | αντιγραφή αρχείου                      | **copy c:\test\test.txt c:\windows\test.txt** |
 | move             | mv                      | μετακίνηση/μετονομασία αρχείου/φακέλου | **move c:\test\test.txt c:\windows\test.txt** |
 | mkdir            | mkdir                   | δημιουργία φακέλου                     | **mkdir testdirectory**                           |
-| rmdir (or del)   | rm                      | διαγραφή αρχείου                       | **del c:\test\test.txt**                        |
+| rmdir (ή del)    | rm                      | διαγραφή αρχείου                       | **del c:\test\test.txt**                        |
 | rmdir /S         | rm -r                   | διαγραφή φακέλου                       | **rm -r testdirectory**                           |
 | [CMD] /?         | man [CMD]               | προβολή βοήθειας για μια εντολή        | **cd /?** (Windows) ή **man cd** (Mac OS / Linux) |
 
