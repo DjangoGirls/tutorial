@@ -427,7 +427,7 @@ Aquí hay una lista de algunos comandos útiles:
 
 | Comando (Windows) | Comando (Mac OS / Linux) | Descripción                   | Ejemplo                                            |
 | ----------------- | ------------------------ | ----------------------------- | -------------------------------------------------- |
-| salida            | salida                   | Cierra la ventana             | **salida**                                         |
+| exit              | exit                     | Cierra la ventana             | **exit**                                           |
 | cd                | cd                       | Cambia el directorio          | **cd test**                                        |
 | cd                | pwd                      | Mostrar el directorio actual  | **cd** (Windows) o **pwd** (Mac OS / Linux)        |
 | dir               | ls                       | Lista directorios/archivos    | **dir**                                            |
