@@ -18,13 +18,13 @@ Lalu amati sidebar, terdapat tombol di sebelah kiri. Klik tombol "Terminal" untu
     $
     
 
-Terminal PaizaCloud Cloud IDE, bisa Anda diatur ukurannya dan 
+Terminal PaizaCloud Cloud IDE, bisa Anda atur ulang ukuran jendela terminalnya dan pula bisa diperbesar hingga memenuhi layar.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. Buka situs [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Buatlah akun baru
+3. Klik *Create Environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
