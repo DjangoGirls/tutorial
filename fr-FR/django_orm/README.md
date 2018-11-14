@@ -4,7 +4,7 @@ Dans ce chapitre, nous allons apprendre comment Django se connecte à la base de
 
 ## Qu'est-ce qu'un QuerySet ?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+Un QuerySet est, par essence, une liste d'objets d'un modèle donné. C'est ce qui vous permet de lire, trier et organiser, des données présentes dans une base de données.
 
 Il est plus simple d'apprendre avec un exemple. Et si nous nous intéressions à celui-ci ?
 
@@ -26,7 +26,7 @@ Ceci devrait maintenant s'afficher dans votre console :
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+Vous êtes maintenant dans la console interactive de Django. C'est comme celle de Python, mais avec toute la magie qu'apporte Django :). Les commandes Python sont aussi utilisables dans cette console.
 
 ### Lister tous les objets
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Oups ! Voilà que ça nous renvoie une erreur qui nous dit qu'il n'existe pas de Post. En effet, nous avons oublié de commencer par un "import" !
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Nous importons le modèle `Post` depuis notre `blog.models`. Essayons à nouveau la commande précédente :
 
 {% filename %}command-line{% endfilename %}
 
