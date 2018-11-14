@@ -70,6 +70,6 @@ Buatlah akun di [Github](https://github.com).
 
 Tutorial Django Girls berisi materi Deployment, yang merupakan prosedur pemindahan kode dari aplikasi web Anda ke komputer yang bisa diakses oleh publik (sebut saja server), jadi orang lain bisa melihat aplikasi web yang telah Anda buat.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Di bagian ini agak aneh saat kita mempraktikan tutorial di perangkat Chromebook (katakan saja laptop atau komputer pribadi), karena kita sudah mempraktikannya di situs ini yang mana sudah ada di dalam internet. However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
