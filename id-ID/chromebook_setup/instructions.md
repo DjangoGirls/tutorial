@@ -18,7 +18,7 @@ Lalu amati sidebar, terdapat tombol di sebelah kiri. Klik tombol "Terminal" untu
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Terminal PaizaCloud Cloud IDE, bisa Anda diatur ukurannya dan 
 
 #### AWS Cloud9
 
