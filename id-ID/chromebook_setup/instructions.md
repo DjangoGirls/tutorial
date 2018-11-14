@@ -37,19 +37,19 @@ Di area bawah ini adalah *terminal* Cloud 9 yang Anda gunakan. Ukuran jendela te
 
 ### Lingkungan Virtual
 
-Lingkungan virtual (disebut juga virtualenv) seperti sebuah kotak khusus yang bisa kita gunakan untuk menulis kode ke dalam proyek yang sedang kita kerjakan. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Lingkungan virtual (disebut juga virtualenv) seperti sebuah kotak khusus yang bisa kita gunakan untuk menulis kode ke dalam proyek yang sedang kita kerjakan. Kita menggunakannya untuk menyimpan berbagai kode yang kita inginkan untuk berbagai proyek, sehingga hal-hal lain yang tidak ada hubungannya dengan proyek tidak bercampur.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Jalankan perintah di bawah ini di terminal Cloud 9:
 
-{% filename%} Cloud 9 {% endfilename%}
+{% filename %}Cloud 9{% endfilename %}
 
     sudo apt update
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Bila tetap tidak bekerja, tanyakan pada instruktur.
 
-Next, run:
+Kemudian, jalankan:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,7 +60,7 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(perhatikan di baris terakhir kita menggunakan karakter tilde diikuti karakter sama dengan: ~=).
 
 ### GitHub
 
