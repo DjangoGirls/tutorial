@@ -48,4 +48,4 @@ Saat ini, terjemahan disimpan di platform crowdin.com di:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Bila bahasa Anda tidak terdaftar di [crowdin](https://crowdin.com/), silakan [buat pengajuan baru](https://github.com/DjangoGirls/tutorial/issues/new) yang menginformasikan terkait bahasa supaya kami bisa menambahkannya.
