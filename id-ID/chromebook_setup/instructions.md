@@ -7,11 +7,11 @@ Cloud IDE merupakan sebuah layanan berupa editor kode dan diakses lewat komputer
 #### PaizaCloud Cloud IDE
 
 1. Buka situs [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+2. Buatlah akun baru
+3. Klik *New Server*
+4. Klik tombol Terminal (yang terletak di samping kiri)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Lalu amati sidebar, terdapat tombol di sebelah kiri. Klik tombol "Terminal" untuk membuka terminal dengan prompt seperti ini:
 
 {% filename %}Terminal{% endfilename %}
 
