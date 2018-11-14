@@ -55,7 +55,7 @@ Prueba esto en tu plantilla.
 
 {% for post in posts %}
     <div>
-        <p>published: {{ post.published_date }}</p>
+        <p> publicado: {{ post.published_date }}</p>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
