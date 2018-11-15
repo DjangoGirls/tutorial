@@ -197,7 +197,7 @@ Y ahora añade una clase `post` a tu `div` que contiene una publicación del blo
 
 ```html
 <div class="post">
-    <p>published: {{ post.published_date }}</p>
+    <p>publicado: {{ post.published_date }}</p>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
@@ -263,7 +263,7 @@ Luego rodea el código HTML que muestra los posts con declaraciones de clases. C
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>published: {{ post.published_date }}</p>
+        <p>publicado: {{ post.published_date }}</p>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
@@ -281,7 +281,7 @@ en `blog/templates/blog/post_list.html` por esto:
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        <p>published: {{ post.published_date }}</p>
+                        <p>publicado: {{ post.published_date }}</p>
                     </div>
                     <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
