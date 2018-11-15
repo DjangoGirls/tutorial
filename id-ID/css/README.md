@@ -30,7 +30,7 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
 </code></pre>
   
   <p>
-    This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+    Kode di atas tidak akan ditambahkan ke dalam setiap file dalam proyek Anda. Ini hanyalah sebagai rujukan ke sebuah file yang ada di internet. Jadi, kembali lagi, buka situs web Anda dan <i>refresh</i> (muat ulang) halamanya. Inilah hasilnya!
   </p>
   
   <p>
@@ -38,15 +38,15 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
   </p>
   
   <p>
-    Melihat lebih baik sudah!
+    Terlihat lebih menarikkan!
   </p>
   
   <h2>
-    Static files di Django
+    File statis di Django
   </h2>
   
   <p>
-    Mari kita bahas apa itu <strong>static files</strong>. Static files are all your CSS and images. Konten mereka tidak bergantung pada konteks permintaan dan akan sama untuk setiap pengguna.
+    Akhirnya kita bisa lebih dekat dengan sesuatu yang dipanggil <strong>static files</strong> atau file statis. Statis file ini adalah semua hal yang berhubungan dengan CSS dan gambar. Konten mereka tidak bergantung pada konteks permintaan dan akan sama untuk setiap pengguna.
   </p>
   
   <h3>
