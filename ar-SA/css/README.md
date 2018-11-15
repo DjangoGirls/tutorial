@@ -16,7 +16,7 @@ Bootstrap اطار عمل الأكثر شعبية لـ HTML و CSS لتطوير 
 
 ## تثبيت Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+لتحميل Bootstrap ، افتح ملف `.html` خاصتك في محرر الكود وأضف هذا في جزء `<head>`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+هذا لا يضيف أي ملفات إلى المشروع الخاص بك. بل يشير فقط إلى الملفات الموجودة على شبكة الإنترنت. افتح موقع الويب الخاص بك وقم بتحديث الصفحة. لاحظت الفرق!
 
 ![الرقم 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ### اين توضع الملفات الثابتة لمشروع Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+جانغو عرف مسبقا أين يجد الملفات الثابتة للتطبيق المضمن "admin". الان لايلزمنا سوى اضافة بعض الملفات الثابتة للتطبيق الخاص بنا,`blog`.
 
 نقوم بذلك بانشاء مجلد نسميه `static` داخل تطبيق المدونة:
 
@@ -66,16 +66,14 @@ Django already knows where to find the static files for the built-in "admin" app
 
 لن نذهب عميقاً في تخصيص وتعلم CSS هنا. هناك توصية بدورة CSS مجانية في نهاية هذه الصفحة إذا كنت ترغب في معرفة المزيد.
 
-لكن لنقم بالقليل على الاقل. Maybe we could change the color of our headers? لفهم الالوان, الحاسوب يستعمل شيفرات خاصة. الشيفرات تبتدأ ب `#` و تليها 6 حروف (A-F) و أرقام (0-9). مثلا ، رمز اللون الأزرق هو `#0000FF`. يمكنك العثور على هذه الشيفرات في هذا الموقع: http://www.colorpicker.com/. يمكنك استعمال الالوان المحددة مسبقا ك `red` و `green`.
+لكن لنقم بالقليل على الاقل. ربما نريد تغيير لون الترويسة؟ لفهم الالوان, الحاسوب يستعمل شيفرات خاصة. الشيفرات تبتدأ ب `#` و تليها 6 حروف (A-F) و أرقام (0-9). مثلا ، رمز اللون الأزرق هو `#0000FF`. يمكنك العثور على هذه الشيفرات في هذا الموقع: http://www.colorpicker.com/. يمكنك استعمال الالوان المحددة مسبقا ك `red` و `green`.
 
 داخل الملف `blog/static/css/blog.css` يجب عليك اضافة التعليمات البرمجية التالية:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a, h2 a {
-    color: #C25100;
-}
+h1 a, h2 a {     color: #C25100; }
 
 ```
 
