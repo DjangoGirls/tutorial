@@ -610,7 +610,7 @@ $
 
 Esto te llevará de vuelta a la línea de comandos.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Anteriormente, seleccionamos un editor de código de la sección </a>editor de código</0>. Necesitaremos abrir el editor ahora y escribir algo de código en un nuevo archivo (o si está usando un Chromebook, cree un nuevo archivo en el IDE de la nube y abra el archivo, que estará en el editor de código incluido):
 
 {% filename %}editor{% endfilename %}
 
@@ -877,7 +877,7 @@ Nota: Si no funcionó, no te preocupes! La salida le ayudará a entender por qu�
 - Si te sale un `IndentationError`, comprueba que las líneas del `print` tienen el mismo espacio en blanco al comienzo de línea: python requiere que todo el código dentro de la función esté perfectamente alineado.
 - Si no hay ninguna salida, comprueba que el último `hi()` *no esté* identado - si lo está, esa línea también sera parte de la función, y nunca se ejecutará.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Construyamos nuestra primera función con parámetros. Cambiaremos el ejemplo anterior, una función que dice 'hola' a la persona que lo ejecuta, con un nombre:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -953,7 +953,7 @@ Ahora, ¿qué crees que suceda si escribes otro nombre ahí? (No Ola ni Sonja) I
 
 Esto es increíble, ¿verdad? De esta forma no tienes que repetir todo cada vez que deseas cambiar el nombre de la persona a la que la función debería saludar. Y esa es exactamente la razón por la que necesitamos funciones - ¡para no repetir tu código!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Hagamos algo más inteligente: hay más de dos nombres, y escribir una condición para cada uno sería difícil, ¿verdad? Reemplace el contenido de su archivo con lo siguiente:
 
 {% filename %}python_intro.py{% endfilename %}
 
