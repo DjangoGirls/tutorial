@@ -1,6 +1,6 @@
 # CSS - mempercantik tampilan!
 
-Blog yang kita buat masih terlihat jelek, kan? Sekarang waktunya untuk mempercantik tampilannya! Kita akan menggunakan CSS untuk itu.
+Blog yang kita buat masih terlihat monoton, bukan? Nah, sekarang waktunya untuk mempercantik tampilannya! Kita akan menggunakan CSS untuk itu.
 
 ## Apa itu CSS?
 
