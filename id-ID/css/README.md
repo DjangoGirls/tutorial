@@ -46,34 +46,34 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
   </h2>
   
   <p>
-    Akhirnya kita bisa lebih dekat dengan sesuatu yang dipanggil <strong>static files</strong> atau file statis. Statis file ini adalah semua hal yang berhubungan dengan CSS dan gambar. Konten mereka tidak bergantung pada konteks permintaan dan akan sama untuk setiap pengguna.
+    Akhirnya kita bisa lebih dekat dengan sesuatu yang dipanggil <strong>static files</strong> atau file statis. Statis file ini adalah semua hal yang berhubungan dengan CSS dan gambar. Ini berarti setiap pengguna atau mereka yang melakukan <i>request</i> akan disuguhkan tampilan yang sama.
   </p>
   
   <h3>
-    Dimana menyimpan static files untuk Django
+    Lokasi untuk menempatkan file statis di Django
   </h3>
   
   <p>
-    Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, <code>blog</code>.
+    Django sudah mengetahui di mana menemukan file statis ini. Sekarang kita perlu untuk menambahkan beberapa file statis ke dalam aplikasi kita, direktori <code>blog</code>.
   </p>
   
   <p>
-    Kita melakukan itu dengan cara membuat folder bernama <code>static</code> didalam blog app:
+    Lakukan dengan cara membuat folder bernama <code>static</code> di dalam direktori blog:
   </p>
   
   <pre><code>djangogirls ├── blog │ ├── migrasi │ ├── static │   └── template └── mysite
 </code></pre>
   
   <p>
-    Django secara otomatis akan menemukan folder yang disebut "statis" di dalam folder aplikasi Anda. Maka akan bisa menggunakan isinya sebagai file statis.
+    Django secara otomatis akan menemukan folder yang disebut "static" di dalam folder aplikasi Anda. Dan kemudian file ini bisa digunakan isinya sebagai file statis.
   </p>
   
   <h2>
-    File CSS pertama mu!
+    File CSS pertamamu!
   </h2>
   
   <p>
-    Mari buat file CSS sekarang, untuk menambahkan gaya Anda sendiri ke halaman web Anda. Buat sebuah folder bernama <code>css</code> di dalam folder <code>static</code>. Kemudian buat sebuah file bernama <code>blog.css</code> di dalam folder <code>css</code>. Siap?
+    Sekarang, mari kita buat file CSS, untuk mempercantik halaman web Anda. Buat sebuah folder bernama <code>css</code> di dalam folder <code>static</code>. Kemudian buat sebuah file bernama <code>blog.css</code> di dalam folder <code>css</code>. Siap?
   </p>
   
   <pre><code>djangogirls
