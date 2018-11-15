@@ -22,7 +22,7 @@
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+1. اذهب الي [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. إنشاء حساب جديد
 3. اضغط *اصنع بيئة *
 
