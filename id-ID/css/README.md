@@ -4,7 +4,7 @@ Blog yang kita buat masih terlihat monoton, bukan? Nah, sekarang waktunya untuk 
 
 ## Apa itu CSS?
 
-Cascading Style Sheets (CSS) adalah bahasa yang digunakan untuk menggambarkan tampilan dan format situs web yang ditulis dalam bahasa markup (seperti HTML). Perlakukan itu sebagai make-up untuk halaman web kita. ;)
+Cascading Style Sheets (CSS) adalah bahasa yang digunakan untuk mempresentasikan tampilan dan format situs web yang ditulis dalam bahasa markup (seperti HTML). Gunakan itu sebagai mekap untuk halaman web kita. ;)
 
 Tapi kita tidak ingin memulai dari nol lagi kan? Sekali lagi, kita akan menggunakan sesuatu yang diprogramkan oleh programer di Internet secara gratis. Reinventing the wheel tidak menyenangkan, lho.
 
