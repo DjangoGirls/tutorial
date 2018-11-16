@@ -88,7 +88,8 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
   </p>
   
   <p>
-    Kami tidak akan terlalu mendalam dalam menyesuaikan dan mempelajari tentang CSS di sini. Ada rekomendasi untuk pembelajaran CSS secara gratis di akhir halaman ini jika anda ingin belajar lebih banyak.
+    Kita tidak akan terlalu mendalam dalam mempelajari tentang CSS di sini. Bila ingin belajar lebih mendalam terkait CSS ini Anda bisa kunjungi <a href="https://www.w3schools.com/css/
+">halaman ini</a>.
   </p>
   
   <p>
