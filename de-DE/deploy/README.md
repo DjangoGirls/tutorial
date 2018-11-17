@@ -161,7 +161,7 @@ Nun können wir mit dem Hilfstool unsere App von GitHub automatisch konfiguriere
 Während du die Ausführung verfolgst, wirst du sehen, was passiert:
 
 - Den Code von GitHub herunterladen
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
+- Eine virtuelle Umgebung auf PythonAnywhere einrichten, genau wie die auf deinem eigenen Computer
 - Deine Einstellungen mit ein paar Veröffentlichungseinstellungen aktualisieren
 - Eine Datenbank auf PythonAnywhere einrichten mit dem Befehl `manage.py migrate`
 - Deine statischen Dateien einrichten (darüber lernen wir später etwas)
