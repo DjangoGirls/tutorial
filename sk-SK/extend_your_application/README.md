@@ -54,7 +54,7 @@ Vytvorme URL v `urls.py` pre náš `post_detail` *view*!
 
 Chceme, aby sa detaily nášho prvého príspevku zobrazili na tomto **URL**: http://127.0.0.1:8000/post/1/
 
-Vytvorme URL v súbore `blog/urls.py` tak, aby odkazoval Django na *view* nazvaný `post_detail`, ktorý zobrazí celý príspevok blogu. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Vytvorme URL v súbore `blog/urls.py` tak, aby odkazoval Django na *view* nazvaný `post_detail`, ktorý zobrazí celý príspevok blogu. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_urls.py{% endfilename %}
 
