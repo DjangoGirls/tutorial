@@ -21,8 +21,8 @@ URLはWeb上のアドレスです。 サイトのURLは、ブラウザのアド�
 
 [...]
 """
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -49,15 +49,15 @@ urlpatterns = [
 
 `mysite/urls.py` ファイルは簡潔なままにしておきたいので、`mysite/urls.py` では`blog` アプリからURLをインポートするだけにしましょう。
 
-まず、`blog.urls` をインポートする行を追加しましょう。 また、ここで`include`関数を使うので、最初の行を変更し、そのインポートも追加する必要があります。
+まず、`blog.urls` をインポートする行を追加しましょう。 You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
 
 `mysite/urls.py` ファイルはこのようになります：
 
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
