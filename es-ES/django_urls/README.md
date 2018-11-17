@@ -21,8 +21,8 @@ Vamos a abrir el archivo `mysite/urls.py` en el editor de código de tu elecció
 
 [...]
 """
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -49,15 +49,15 @@ Esta linea dice que para cada URL que empieza con `admin/` Django encontrará su
 
 También queremos mantener limpio el archivo `mysite/urls.py`, así que vamos a importar las urls de nuestra aplicación `blog` en el archivo principal `mysite/urls.py`.
 
-Vamos, añade la línea para importar `blog.urls`. También tienes que cambiar la primera línea, porque vamos a usar la función `include` y tenemos que importarla.
+Vamos, añade la línea para importar `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
 
 El archivo `mysite/urls.py` debería verse ahora así:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
