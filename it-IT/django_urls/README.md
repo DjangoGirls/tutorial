@@ -21,8 +21,8 @@ Apriamo il file `mysite/urls.py` nel code editor che hai scelto e vediamo com'è
 
 [...]
 """
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -49,15 +49,15 @@ Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home pa
 
 We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
 
 Your `mysite/urls.py` file should now look like this:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
