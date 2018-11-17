@@ -54,7 +54,7 @@ And how about `pk=post.pk`? `pk` is short for primary key, which is a unique nam
 
 เราต้องการให้ละเอียดของโพสต์แรกของเรา แสดงที่นี่ **URL**: http://127.0.0.1:8000/post/1/
 
-เรามาสร้าง URL ในไฟล์ `blog/urls.py` ที่ชี้ให้ Django ไปยัง *view* ที่ใช้ชื่อ `post_detail`, ซึ่งจะแสดงหน้าโพสต์ Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
+เรามาสร้าง URL ในไฟล์ `blog/urls.py` ที่ชี้ให้ Django ไปยัง *view* ที่ใช้ชื่อ `post_detail`, ซึ่งจะแสดงหน้าโพสต์ Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
