@@ -21,8 +21,8 @@ Otvorme súbor `mysite/urls.py` v editore kódu a pozrime sa, ako vyzerá:
 
 [...]
 """
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -49,15 +49,15 @@ Je čas vytvoriť našu prvú URL! Chceme, aby 'http://127.0.0.1:8000/' bola dom
 
 Tiež chceme udržiavať súbor `mysite/urls.py` čistý, takže naimportujeme URL z našej aplikácie `blog` do hlavného súboru `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the first line because we are using the `include` function here, so you will need to add that import to the line.
+Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
 
 Súbor `mysite/urls.py` by mal teraz vyzerať takto:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
