@@ -77,7 +77,7 @@ h1 a, h2 a {     color: #C25100; }
 
 ```
 
-`h1 a` هو محدد CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. حتى عندما يكون لدينا شيء مثل `<h1><a href="">link</a></h1>`، `h1` سيتم تطبيق النمط. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` هو محدد CSS. وهذا يعني أننا تقوم بتطبيق أنماط لدينا إلى أي عنصر من عناصر `a` داخل عنصر `h1`؛ محدد `h2 a` يفعل الشيء نفسه لعناصر `h2`. حتى عندما يكون لدينا شيء مثل `<h1><a href="">link</a></h1>`، `h1` سيتم تطبيق النمط. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 داخل ملف CSS نحدد أنماط العناصر التي توجد داخل ملف HTML. الطريقة الأولى التي نستخدمها لتحديد العناصر هي عبر الإسم. يمكن أن تذكر هذه tags من قسم HTML. أشياء مثل`a`, `h1` و `body` هي كلها امثلة لأسماء العناصر. نحن نحدد العناصر ايضا عبر `class` او عبر `id`. Class و id هي الأسماء التي يمكنك إعطائها للعنصر بنفسك. تحدد class مجموعات من العناصر، و id تشير إلى عناصر محددة. على سبيل المثال، يمكن تحديد tag التالية باستخدام سمة `a`, المصنف `external_link` (class), أو المعرف `link_to_wiki_page` (id):
 
