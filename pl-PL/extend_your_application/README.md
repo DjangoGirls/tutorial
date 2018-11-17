@@ -54,7 +54,7 @@ Dodajmy adres URL w pliku `urls.py` dla naszego *widoku (ang.view)* `post_detail
 
 Chcemy, aby nasz wpis i wszystkie informacje o nim, były widoczne pod tym adresem **URL**: http://127.0.0.1:8000/post/1/
 
-W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Otwórz plik `blog/urls.py` w edytorze i dodaj wiersz: `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` tak, żeby otrzymać:
+W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
