@@ -21,8 +21,8 @@ Kod editörümüzde `mysite/urls.py` dosyasını açalım ve neye benzediğine b
 
 [...]
 """
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -49,15 +49,15 @@ Bu satırın anlamı Django, `admin` ile başlayan her URL için ona uyan bir *v
 
 Aynı zamanda `mysite/urls.py` dosyasını temiz tutmak istiyoruz, bu yüzden `blog` uygulamamızdan `mysite/urls.py` ana dosyamıza URL'leri aktarıyoruz (import).
 
-Devam edip, `blog.urls`'i import edecek bir satır ekleyelim. Ayrıca, ilk satırı değiştirmelisiniz çünkü burada `include` fonksiyonunu kullanıyoruz, bu yüzden bu içe aktarmayı (import) satırlara eklemeniz gerekecek.
+Devam edip, `blog.urls`'i import edecek bir satır ekleyelim. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
 
 `mysite/urls.py` dosyamız şöyle olmalı:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
