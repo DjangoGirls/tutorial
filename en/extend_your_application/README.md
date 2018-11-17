@@ -53,7 +53,7 @@ Let's create a URL in `urls.py` for our `post_detail` *view*!
 
 We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 ```python
