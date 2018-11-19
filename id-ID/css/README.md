@@ -93,9 +93,9 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
   </p>
   
   <p>
-    Tapi kita akan sedikit modifikasi. Mungkin kita akan mengubah warna <i>headers</i> kita. Untuk mengetahui warna, komputer menggunakan kode unik. Kode ini dimulai dengan <code> # &lt;/ 0> diikuti oleh 6 huruf (A-F) dan angka (0-9). Misalnya, kode untuk warna biru adalah &lt;code> #0000FF &lt;/ 0> . Anda dapat menemukan kode warna untuk banyak warna di sini: http://www.colorpicker.com/. Anda juga dapat menggunakan &lt;a href="http://www.w3schools.com/colors/colors_names.asp"> warna yang telah ditetapkan &lt;/ 0> , seperti &lt;code> merah &lt;/ 1> dan &lt;code> hijau &lt;/ 1> .&lt;/p>
+    Tapi kita akan sedikit modifikasi. Mungkin kita akan mengubah warna <i>headers</i> kita. Untuk mengetahui warna, komputer menggunakan kode unik. Kode ini dimulai dengan <code> # &lt;/ 0> diikuti oleh 6 huruf (A-F) dan angka (0-9). Misalnya, kode untuk warna biru adalah &lt;code> #0000FF &lt;/ 0> . Anda dapat menemukan kode warna untuk berbagai warna di sini: http://www.colorpicker.com/. Anda juga dapat menggunakan &lt;a href="http://www.w3schools.com/colors/colors_names.asp"> warna yang telah ditetapkan&lt;/ 0> , seperti &lt;code>red&lt;/ 1> dan &lt;code>green&lt;/ 1> .&lt;/p>
 
-&lt;p>Dalam berkas &lt;code>blog/static/css/blog.css</code> kamu harus ditambahkan kode seperti berikut:
+&lt;p>Dalam berkas &lt;code>blog/static/css/blog.css</code> kamu mesti menambahkan kode seperti berikut:
   </p>
   
   <p>
