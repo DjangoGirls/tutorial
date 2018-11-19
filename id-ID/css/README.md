@@ -88,12 +88,12 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
   </p>
   
   <p>
-    Kita tidak akan terlalu mendalam dalam mempelajari tentang CSS di sini. Bila ingin belajar lebih mendalam terkait CSS ini Anda bisa kunjungi <a href="https://www.w3schools.com/css/
+    Kita tidak akan terlalu mendalam mempelajari tentang CSS di sini. Bila ingin belajar lebih mendalam terkait CSS ini Anda bisa kunjungi <a href="https://www.w3schools.com/css/
 ">halaman ini</a>.
   </p>
   
   <p>
-    Tapi mari kita lakukan setidaknya sedikit. Maybe we could change the color of our headers? Untuk memahami warna, komputer menggunakan kode khusus. Kode ini dimulai dengan <code> # &lt;/ 0> diikuti oleh 6 huruf (A-F) dan angka (0-9). Misalnya, kode biru adalah &lt;code> # 0000FF &lt;/ 0> . Anda dapat menemukan kode warna untuk banyak warna di sini: http://www.colorpicker.com/. Anda juga dapat menggunakan &lt;a href="http://www.w3schools.com/colors/colors_names.asp"> warna yang telah ditetapkan &lt;/ 0> , seperti &lt;code> merah &lt;/ 1> dan &lt;code> hijau &lt;/ 1> .&lt;/p>
+    Tapi kita akan sedikit modifikasi. Mungkin kita akan mengubah warna <i>headers</i> kita. Untuk mengetahui warna, komputer menggunakan kode unik. Kode ini dimulai dengan <code> # &lt;/ 0> diikuti oleh 6 huruf (A-F) dan angka (0-9). Misalnya, kode untuk warna biru adalah &lt;code> #0000FF &lt;/ 0> . Anda dapat menemukan kode warna untuk banyak warna di sini: http://www.colorpicker.com/. Anda juga dapat menggunakan &lt;a href="http://www.w3schools.com/colors/colors_names.asp"> warna yang telah ditetapkan &lt;/ 0> , seperti &lt;code> merah &lt;/ 1> dan &lt;code> hijau &lt;/ 1> .&lt;/p>
 
 &lt;p>Dalam berkas &lt;code>blog/static/css/blog.css</code> kamu harus ditambahkan kode seperti berikut:
   </p>
