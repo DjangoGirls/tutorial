@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Hinweis**: Wenn du ein Chromebook verwendest, füge noch diese Zeile am Ende deiner settings.py-Datei hinzu: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Füge auch `.amazonaws.com` zu den `ALLOWED_HOSTS` hinzu, wenn du Cloud9 benutzt.
 
 ## Eine Datenbank erstellen
 
@@ -145,7 +145,7 @@ Um eine Datenbank für unseren Blog zu erstellen, müssen wir folgenden Befehl i
       Applying auth.0002_alter_permission_name_max_length... OK 
       Applying auth.0003_alter_user_email_max_length... OK 
       Applying auth.0004_alter_user_username_opts... OK  
-     Applying auth.0005_alter_user_last_login_null... OK 
+      Applying auth.0005_alter_user_last_login_null... OK 
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying auth.0008_alter_user_username_max_length... OK
@@ -178,7 +178,7 @@ Wenn du Windows benutzt und dies mit dem `UnicodeDecodeError` fehlschläft, verw
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Jetzt wollen wir schauen, ob unsere Website funktioniert: Öffne deinen Browser (Firefox, Chrome, Safari, Edge oder was du sonst nutzt) und gib diese Adresse ein:
 
 {% filename %}browser{% endfilename %}
 
