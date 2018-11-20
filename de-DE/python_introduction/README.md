@@ -609,7 +609,7 @@ Um den Python-Interpreter zu beenden, nutze die `exit()`-Funktion
 
 Nun siehst du wieder den normalen Kommandozeilen-Prompt.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Im Kapitel [Code-Editor](../code_editor/README.md) haben wir uns bereits einen Code-Editor ausgewählt. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
 
 {% filename %}editor{% endfilename %}
 
