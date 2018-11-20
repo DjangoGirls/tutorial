@@ -14,7 +14,7 @@ Bitte schau zuerst auf der "Systemtyp"-Zeile der Systeminformationsseite nach, o
 
 Du kannst Python für Windows von der Webseite https://www.python.org/downloads/windows/ herunterladen. Klicke auf den "Latest Python 3 Release - Python x.x.x" Link. Wenn du eine **64-bit** Version von Windows benutzt, lade die Datei **Windows x86-64 executable installer** herunter. Andernfalls lade den **Windows x86 executable installer** herunter. Führe den Installer nach dem Download (per Doppelklick) aus und folge den Anweisungen des Installationsprogramms.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Auf eine Sache solltest du achten: Während der Installation wird ein Setup-Fenster auftauchen. Stell sicher, dass du die Checkbox mit "Add Python 3.6 to PATH" oder "Add Python to your environment variables" aktiviert hast und klicke dann auf "Install Now" wie hier gezeigt (es kann bei dir etwas anders aussehen, wenn du eine andere Version installierst):
 
 ![Vergiss nicht, Python zu dem Pfad hinzuzufügen](../python_installation/images/python-installation-options.png)
 
@@ -26,7 +26,7 @@ Während der nächsten Schritte werden wir die Windows-Kommandozeile verwenden (
 
 Hinweis: Falls du eine ältere Version von Windows verwendest (7, Vista oder älter) und die Installation von Python 3.6.x mit einer Fehlermeldung fehlschlägt, kannst du Folgendes versuchen:
 
-1. install all Windows Updates and try to install Python again; or
+1. Installiere alle Windows-Updates und versuche erneut, Python zu installieren; oder
 2. Installiere eine [ältere Version von Python](https://www.python.org/downloads/windows/), z. B. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
 Wenn du eine ältere Version von Python installierst, kann es sein, dass die Installationsanzeige etwas anders aussieht als oben gezeigt. Stell sicher, dass du nach unten scrollst bis du "Add python.exe to Path" siehst, klicke den Button und wähle "Will be installed on local hard drive":
@@ -58,7 +58,7 @@ Es ist ziemlich wahrscheinlich, dass du Python schon automatisch installiert has
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a newer version, you can install it as follows:
+Wenn du eine andere 'Mikroversion' von Python installiert hast, z.B. 3.6.0, dann brauchst du die Version nicht zu aktualisieren. Wenn Python bei dir nicht installiert ist, oder du eine andere Version willst, kannst du das folgendermaßen tun:
 
 <!--endsec-->
 
@@ -107,7 +107,7 @@ Prüfe, ob die Installation erfolgreich war, indem du ein Kommandozeilenfenster 
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+Die angezeigte Version kann bei dir eine andere sein als 3.6.1 -- sie sollte aber der entsprechen, die du installiert hast.
 
 **NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
 
