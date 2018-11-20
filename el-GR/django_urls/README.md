@@ -49,7 +49,7 @@ urlpatterns = [
 
 Θέλουμε, επίσης, να κρατήσουμε το αρχείο `mysite/urls.py` καθαρό. Οπότε, θα κάνουμε import τα URLs από το `blog` application στο αρχείο `mysite/urls.py`.
 
-Πηγαίνετε λοιπόν, και προσθέστε αυτή τη γραμμή στο αρχείο `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Πηγαίνετε λοιπόν, και προσθέστε αυτή τη γραμμή στο αρχείο `blog.urls`. Θα χρειαστεί, επίσης, να αλλάξετε την γραμμή `from django.urls…` επειδή χρησιμοποιούμε την συνάρτηση `include`. Επομένως, θα χρειαστεί να προσθέσετε αυτή τη γραμμή.
 
 Το αρχείο σας `mysite/urls.py` θα μοιάζει κάπως έτσι:
 
