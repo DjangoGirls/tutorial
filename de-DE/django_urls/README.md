@@ -49,7 +49,7 @@ Es wird Zeit, unsere erste URL zu erstellen! Wir wollen, dass 'http://127.0.0.1:
 
 Wir wollen auch, dass die `mysite/urls.py`-Datei sauber bleibt. Deshalb importieren wir die URLs unserer `Blog`-Applikation in die `mysite/urls.py`-Hauptdatei.
 
-Also los: Füge eine Zeile hinzu, die `blog.urls` importiert. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Also los: Füge eine Zeile hinzu, die `blog.urls` importiert. Ausserdem wirst du die Zeile `from django.urls…` ändern müssen, da wir hier die Funktion `include` verwenden, die du in dieser Zeile noch importieren musst.
 
 Deine `mysite/urls.py`-Datei sollte jetzt so aussehen:
 
