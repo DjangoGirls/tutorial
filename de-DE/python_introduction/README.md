@@ -952,7 +952,7 @@ Nun, was denkst du, wird passieren, wenn du einen anderen Namen dort hinein schr
 
 Das ist genial, oder? Auf diese Weise musst du dich nicht jedesmal wiederholen, wenn du den Namen der Person änderst, die die Funktion grüßen soll. Und das ist genau der Grund, warum wir Funktionen brauchen – du willst auf keinem Fall deinen Code wiederholen!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Lass uns noch etwas Eleganteres probieren - es gibt schließlich mehr als zwei Namen und für jeden eine eigene Bedingung aufzuschreiben, wäre ziemlich aufwendig, oder? Ersetze also deinen Code in der Datei durch den folgenden:
 
 {% filename %}python_intro.py{% endfilename %}
 
