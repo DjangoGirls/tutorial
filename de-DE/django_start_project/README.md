@@ -185,7 +185,7 @@ Jetzt wollen wir schauen, ob unsere Website funktioniert: Öffne deinen Browser 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Wenn du ein Chromebook und Cloud9 verwendest, dann klicke stattdessen die URL in dem erschienenen Fenster in der oberen rechten Ecke des Kommandozeilenfensters, in dem der Webserver läuft. Die URL sollte etwa so aussehen:
 
 {% filename %}browser{% endfilename %}
 
