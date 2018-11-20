@@ -20,6 +20,12 @@ Atom は、GitHubによる新しいエディタです。無料で、オープン
 
 [ダウンロード](https://atom.io/)
 
+## Visual Studio Code
+
+Visual Studio Code は、Windows、Linux、および MacOS 対応の Microsoft が開発した新しいオープンソースのエディタです。
+
+[ダウンロード](https://code.visualstudio.com/)
+
 ## なんでコードエディタをインストールするの？
 
 なんでWordやNotepadのようなものを使わず、特別なコードエディタをインストールするのかなと思うかもしれません。
