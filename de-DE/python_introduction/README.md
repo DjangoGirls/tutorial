@@ -609,7 +609,7 @@ Um den Python-Interpreter zu beenden, nutze die `exit()`-Funktion
 
 Nun siehst du wieder den normalen Kommandozeilen-Prompt.
 
-Im Kapitel [Code-Editor](../code_editor/README.md) haben wir uns bereits einen Code-Editor ausgewählt. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Im Kapitel [Code-Editor](../code_editor/README.md) haben wir uns bereits einen Code-Editor ausgewählt. Nun öffnen wir den Code-Editor und schreiben folgenden Code in eine neue Datei (wenn du ein Chromebook benutzt, dann erstelle eine neue Datei in der Cloud-IDE, öffne sie und du befindest dich automatisch im integrierten Code-Editor):
 
 {% filename %}editor{% endfilename %}
 
@@ -876,7 +876,7 @@ Falls das nicht funktionert hat, keine Panik! Die Ausgabe wird dir dabei helfen,
 - Wenn du einen `IndentationError` bekommst, prüfe, ob beide `print`-Zeilen die gleichen Whitespaces am Zeilenanfang haben: Python will den ganzen Code in einer Funktion hübsch ausgerichtet haben.
 - Wenn du gar keine Ausgabe erhältst, stelle sicher, dass `hallo()` am Datei-Ende *nicht* eingerückt ist. Wenn es eingerückt ist, ist dieser Aufruf selbst Teil der Funktion und sie wird gar nicht ausgeführt.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Als Nächstes bauen wir Funktionen mit sogenannten Argumenten. Wir werden das gerade gebaute Beispiel benutzen – eine Funktion, die die ausführende Person begrüßt – aber diesmal mit Namen:
 
 {% filename %}python_intro.py{% endfilename %}
 
