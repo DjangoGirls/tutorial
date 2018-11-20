@@ -1,12 +1,12 @@
 PythonAnywhere ist ein Dienst, mittels dem Python auf Servern "in der Cloud" ausgeführt werden kann. Wir werden ihn verwenden, um unsere Seite zu hosten, live und im Internet.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+Wir werden den Blog, den wir bauen, auf PythonAnywhere hosten. Registriere dich auf PythonAnywhere für ein "Beginner"-Konto (die kostenfreie Stufe ist ausreichend, du brauchst keine Kreditkarte).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
 ![Die PythonAnywhere-Anmelde-Seite mit einem Knopf, um ein kostenloses 'Beginner'-Benutzerkonto anzulegen](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Hinweis** Wenn du dort deinen Benutzernamen aussuchst, dann denke daran, dass sich die URL zu deinem Blog aus deinem Benutzernamen und pythonanywhere zusammensetzt zu: `deinBenutzerName.pythonanywhere.com.` Deshalb solltest du einen sinnvollen Nutzernamen wählen. Und vergiss dein Passwort nicht (füge es deinem Passwortmanager hinzu, wenn du einen benutzt).
 
 ## Erstellen eines PythonAnywhere API-Tokens
 
