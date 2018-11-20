@@ -92,13 +92,13 @@ Speichere nun die Datei `base.html` und öffne wieder `blog/templates/blog/post_
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <div class="date">
-            {{ post.published_date }}
-        </div>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <div class="post">
+        <div class="date">
+            {{ post.published_date }}
+        </div>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endfor %}
 ```
 
