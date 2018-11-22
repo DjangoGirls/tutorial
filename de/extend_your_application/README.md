@@ -23,7 +23,7 @@ Wir beginnen damit, einen Link in der `blog/templates/blog/post_list.html`-Datei
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -54,7 +54,7 @@ Lass uns eine URL in `urls.py` für unsere `post_detail`-*View* erstellen!
 
 Wir wollen, dass unsere erste Blogpost-Detailseite unter dieser **URL** angezeigt wird: http://127.0.0.1:8000/post/1/
 
-Lass uns eine URL in der Datei `blog/urls.py` anlegen, um Django auf die *View* `post_detail` zu verweisen, welche dann den ganzen Blogpost anzeigen wird. Öffne die Datei `blog/urls.py` im Code-Editor und füge die Zeile `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` hinzu, so dass die Datei wie folgt aussieht:
+Lass uns eine URL in der Datei `blog/urls.py` anlegen, um Django auf die *View* `post_detail` zu verweisen, welche dann den ganzen Blogpost anzeigen wird. Öffne die Datei `blog/urls.py` im Code-Editor und füge die Zeile `path('post/<int:pk>/', views.post_detail, name='post_detail'),` hinzu, so dass die Datei wie folgt aussieht:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -154,7 +154,7 @@ Das sieht dann so aus:
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -185,7 +185,7 @@ Es wäre schön zu sehen, ob deine Website noch auf PythonAnywhere funktioniert,
 
 Dann führe Folgendes in der [PythonAnywhere-Bash-Konsole](https://www.pythonanywhere.com/consoles/) aus:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
     $ git pull
@@ -200,7 +200,7 @@ Server wie PythonAnywhere behandeln statische Dateien ("static files", z.B. CSS-
 
 Aktiviere also deine virtuelle Umgebung, wenn sie nicht vom letzten Mal noch aktiv ist (PythonAnywhere benutzt dazu das Kommando `workon`, das ist ähnlich wie `source myenv/bin/activate`, das du auf deinem Computer verwendest):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ workon <your-pythonanywhere-username>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic

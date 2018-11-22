@@ -1,4 +1,4 @@
-Git ist ein "Versionsverwaltungssystem" für Dateien und Code, das von vielen Programmierern benutzt wird. Diese Software kann Änderungen an Dateien über die Zeit verfolgen, so dass du bestimmte Versionen im Nachhinein wieder aufrufen kannst. So ähnlich wie die Veränderungsverfolgung in der Textverarbeitung (z.B. Microsoft Word oder LibreOffice), aber viel mächtiger.
+Git ist ein "Versionsverwaltungssystem" für Dateien und Code, das von vielen Programmierern benutzt wird. Diese Software kann Änderungen an Dateien über die Zeit verfolgen, so dass du bestimmte Versionen im Nachhinein wieder aufrufen kannst. Sie hat Ähnlichkeit mit der Funktion "Änderungen nachverfolgen" in Textverarbeitungsprogrammen (z. B. Microsoft Word oder LibreOffice Writer), ist jedoch weitaus leistungsfähiger.
 
 ## Git installieren
 

@@ -609,7 +609,7 @@ Um den Python-Interpreter zu beenden, nutze die `exit()`-Funktion
 
 Nun siehst du wieder den normalen Kommandozeilen-Prompt.
 
-Ein paar Kapitel zuvor hatten wir uns bereits einen [Code-Editor](../code_editor/README.md) ausgesucht. Diesen öffnest du nun und gibst Folgendes ein:
+Im Kapitel [Code-Editor](../code_editor/README.md) haben wir uns bereits einen Code-Editor ausgewählt. Nun öffnen wir den Code-Editor und schreiben folgenden Code in eine neue Datei (wenn du ein Chromebook benutzt, dann erstelle eine neue Datei in der Cloud-IDE, öffne sie und du befindest dich automatisch im integrierten Code-Editor):
 
 {% filename %}editor{% endfilename %}
 
@@ -876,7 +876,7 @@ Falls das nicht funktionert hat, keine Panik! Die Ausgabe wird dir dabei helfen,
 - Wenn du einen `IndentationError` bekommst, prüfe, ob beide `print`-Zeilen die gleichen Whitespaces am Zeilenanfang haben: Python will den ganzen Code in einer Funktion hübsch ausgerichtet haben.
 - Wenn du gar keine Ausgabe erhältst, stelle sicher, dass `hallo()` am Datei-Ende *nicht* eingerückt ist. Wenn es eingerückt ist, ist dieser Aufruf selbst Teil der Funktion und sie wird gar nicht ausgeführt.
 
-Das war einfach! Als Nächstes bauen wir Funktionen mit sogenannten Argumenten. Wir werden das gerade gebaute Beispiel benutzen – eine Funktion, die die ausführende Person begrüßt – aber diesmal mit Namen:
+Als Nächstes bauen wir Funktionen mit sogenannten Argumenten. Wir werden das gerade gebaute Beispiel benutzen – eine Funktion, die die ausführende Person begrüßt – aber diesmal mit Namen:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -952,7 +952,7 @@ Nun, was denkst du, wird passieren, wenn du einen anderen Namen dort hinein schr
 
 Das ist genial, oder? Auf diese Weise musst du dich nicht jedesmal wiederholen, wenn du den Namen der Person änderst, die die Funktion grüßen soll. Und das ist genau der Grund, warum wir Funktionen brauchen – du willst auf keinem Fall deinen Code wiederholen!
 
-Lass uns etwas Klügeres machen – es gibt mehr Namen als nur zwei und für jeden eine Bedingung zu schreiben, wäre recht aufwändig, oder?
+Lass uns noch etwas Eleganteres probieren - es gibt schließlich mehr als zwei Namen und für jeden eine eigene Bedingung aufzuschreiben, wäre ziemlich aufwendig, oder? Ersetze also deinen Code in der Datei durch den folgenden:
 
 {% filename %}python_intro.py{% endfilename %}
 

@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Hinweis**: Wenn du ein Chromebook verwendest, füge noch diese Zeile am Ende deiner settings.py-Datei hinzu: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Füge außerdem `.c9users.io` zu deinen `ALLOWED_HOSTS` hinzu, wenn du cloud9 verwendest.
+> Füge auch `.amazonaws.com` zu den `ALLOWED_HOSTS` hinzu, wenn du Cloud9 benutzt.
 
 ## Eine Datenbank erstellen
 
@@ -145,9 +145,11 @@ Um eine Datenbank für unseren Blog zu erstellen, müssen wir folgenden Befehl i
       Applying auth.0002_alter_permission_name_max_length... OK 
       Applying auth.0003_alter_user_email_max_length... OK 
       Applying auth.0004_alter_user_username_opts... OK  
-     Applying auth.0005_alter_user_last_login_null... OK 
+      Applying auth.0005_alter_user_last_login_null... OK 
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying auth.0008_alter_user_username_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -183,11 +185,11 @@ Jetzt wollen wir schauen, ob unsere Website funktioniert: Öffne deinen Browser 
     http://127.0.0.1:8000/
     
 
-Wenn du ein Chromebook verwendest, wirst du den Test-Server immer unter folgender Adresse finden:
+Wenn du ein Chromebook und Cloud9 verwendest, dann klicke stattdessen die URL in dem erschienenen Fenster in der oberen rechten Ecke des Kommandozeilenfensters, in dem der Webserver läuft. Die URL sollte etwa so aussehen:
 
 {% filename %}browser{% endfilename %}
 
-    https://django-girls-<your cloud9 username>.c9users.io
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Webserver laufen! Ist das nicht toll?
