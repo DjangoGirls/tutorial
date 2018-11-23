@@ -109,7 +109,7 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
 </code></pre>
   
   <p>
-    <code>h1 a</code> adalah selector dalam CSS. This means we're applying our styles to any <code>a</code> element inside of an <code>h1</code> element; the <code>h2 a</code> selector does the same thing for <code>h2</code> elements. Jadi ketika kita memiliki sesuatu seperti <code>&lt;h1&gt;&lt;a href=""&gt; link &lt;/ 0> , style &lt;code> h1 a &lt;/ 1> akan berlaku. In this case, we're telling it to change its color to &lt;code>#C25100</code>, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+    <code>h1 a</code> adalah selector dalam CSS. Ini berarti kita akan memberikan gaya pada setiap elemen <code>a/0> Jadi ketika kita memiliki sesuatu seperti &lt;code>&lt;h1&gt;&lt;a href=""&gt; link &lt;/ 0> , style &lt;code> h1 a &lt;/ 1> akan berlaku. In this case, we're telling it to change its color to &lt;code>#C25100</code>, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
   </p>
   
   <p>
