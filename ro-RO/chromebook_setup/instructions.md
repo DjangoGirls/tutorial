@@ -2,16 +2,16 @@ Poți [sări peste această secțiune](http://tutorial.djangogirls.org/en/instal
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE este un instrument care îți oferă un editor de cod şi acces la un calculator care rulează pe Internet, în care poți scrie, și unde poți instala şi executa software-ul. Pe durata acestui tutorial, Cloud IDE se va comporta ca și *calculatorul tău local *. Tu vei rula comenzile în interfața terminalului la fel ca și colegii ce vor folosi Os X, Ubuntu, sau Windows, dar terminalul pe care îl vei folosi tu, este conectat la un calculator care rulează în altă parte, pe care Cloud IDE ți la configurat. Aici sunt instrucţiunile pentru Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). Poţi alege unul dintre programele Cloud IDE, şi să urmăreşti instrucţiunile programului Cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+1. Deschide aplicaţia [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Înregistrează-te
+3. Fă un click pe * Server nou *
+4. Fă un click pe butonul "Terminal" (din partea stângă a ferestrei)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Acum ar trebui să vezi o interfaţă cu o bară laterală cu butoane în stânga. Fă click pe butonul "Terminal" pentru a deschide fereastra terminală ce va afişa:
 
 {% filename %}Terminal{% endfilename %}
 
