@@ -70,7 +70,7 @@ Voici comment créer un nouveau objet Post dans la base de données :
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+Cependant, il nous manque un petit quelque chose : `moi`. Nous avons besoin de lui passer une instance du modèle `User` en guise d'auteur (author). Comment faire ?
 
 Tout d'abord, il nous faut importer le modèle User :
 
@@ -89,7 +89,7 @@ Avons-nous des utilisateurs dans notre base de données ? Voyons voir :
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+Il s'agit du superutilisateur que nous avons crée tout à l'heure ! Sauvegardons une instance de cet utilisateur (modifie la ligne suivante avec ton nom d'utilisateur) :
 
 {% filename %}command-line{% endfilename %}
 
