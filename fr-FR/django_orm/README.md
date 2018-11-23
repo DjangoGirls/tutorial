@@ -97,7 +97,7 @@ Il s'agit du superutilisateur que nous avons crée tout à l'heure ! Sauvegardon
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Comme vous pouvez le constater, nous avons maintenant obtenu (`get`) un utilisateur (`User`) avec un nom d’utilisateur `username` qui est égale à « ola ». Très bien !
 
 Nous allons enfin pouvoir créer notre post :
 
@@ -121,11 +121,11 @@ Et voilà : un post de plus dans la liste !
 
 ### Ajouter plus de posts
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+Amusez-vous à ajouter d'autres posts pour vous entrainer un peu. Essayez d'ajouter deux ou trois posts en plus puis passez à la partie suivante.
 
 ### Filtrer les objets
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. Pour cela, nous allons utiliser `filter` à la place de `all` dans `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Maintenant, votre bout de code doit ressembler à ceci:
+L'intérêt des QuerySets, c'est que l'on peut les filtrer. Disons que nous aimerions retrouver tous les posts écrits par l'utilisateur Ola. Pour cela, nous allons utiliser `filter` à la place de `all` dans `Post.objects.all()`. Les parenthèses vont nous servir à préciser quelles sont les conditions auxquelles un post de blog doit se conformer pour être retenu par notre queryset. Dans notre exemple, la condition est que `author` soit égal à `me`. La manière de le dire en Django c'est : `author=me`. Maintenant, votre bout de code doit ressembler à ceci:
 
 {% filename %}command-line{% endfilename %}
 
@@ -134,7 +134,7 @@ A big part of QuerySets is the ability to filter them. Let's say we want to find
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+Et si nous voulions chercher les posts qui contiennent uniquement le mot "titre" ("title" en anglais) dans le champs `title`?
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,9 +143,9 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Note** Il y a deux tirets bas (`_`) entre `title` et `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Note** Il y a deux tirets bas (`_`) entre `title` et `contains`. L'ORM de Django utilise cette règle afin de séparer les noms de champ ("title") et les opérations ou les filtres ("contains"). Si vous n'utilisez qu'un seul tiret bas, vous allez obtenir une erreur du type : "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+Vous pouvez aussi obtenir une liste de tous les posts publiés. Pour cela, nous allons filtrer les posts qui possèdent une date de publication (`published_date`) dans le passé :
 
 {% filename %}command-line{% endfilename %}
 
