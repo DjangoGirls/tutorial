@@ -250,21 +250,25 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
   </p>
   
   <p>
-    Seperti disebutkan di atas, CSS memiliki konsep class. Ini memungkinkan kamu memberi atribut ke dalam bagian kode HTML dan mempercantik hanya pada elemen tertentu, sehingga tidak memengaruhi elemen lain. Ini bisa sangat membantu! Mungkin kamu memiliki dua <code>div</code> dengan fungsi berbeda (seperti header dan postingan kamu). Sebuah kelas dapat membantu Anda membuat mereka terlihat berbeda.
+    Seperti disebutkan di atas, CSS memiliki konsep class. Ini memungkinkan kamu memberi atribut ke dalam bagian kode HTML dan mempercantik hanya pada elemen tertentu, sehingga tidak memengaruhi elemen lain. Ini bisa sangat membantu! Mungkin kamu memiliki dua <code>div</code> dengan fungsi berbeda (seperti header dan postingan kamu). Sebuah class dapat membantu kamu membuatnya telihat berbeda.
   </p>
   
   <p>
-    Silakan dan beri nama beberapa bagian kode HTML. Tambahkan sebuah kelas yang disebut <code> header halaman &lt;/ 0> ke &lt;code> div &lt;/ 0> yang berisi header Anda, seperti ini:&lt;/p>
+    Silakan beri atribut class ke beberapa bagian HTML. Tambahkan sebuah kelas yang disebut <code>page-header</code> ke <code>div</code> yang berisi header kamu, seperti ini:
+  </p>
+  
+  <p>
+    {% filename%}blog/templates/blog/post_list.html{% endfilename%}
+  </p>
+  
+  <pre><code class="html">&lt;div class="page-header"&gt;
+    &lt;h1&gt;&lt;a href="/"&gt;Django Girls Blog&lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
 
-&lt;p>{% filename%} blog / templates / blog / post_list.html {% endfilename%}&lt;/p>
-
-&lt;pre>&lt;code class="html">&lt;div class="page-header"&gt; 
-&lt;h1&gt;&lt;a href="/"&gt; Django Girls Blog &lt;/ 1> &lt;/ 0>    
-
-</code></pre> 
-    
-    <p>
-      Dan sekarang tambahkan sebuah kelas <code> pos &lt;/ 0> ke &lt;code> div &lt;/ 0> berisi sebuah posting blog.&lt;/p>
+</code></pre>
+  
+  <p>
+    Dan sekarang tambahkan sebuah kelas <code> pos &lt;/ 0> ke &lt;code> div &lt;/ 0> berisi sebuah posting blog.&lt;/p>
 
 &lt;p>{% filename%} blog / templates / blog / post_list.html {% endfilename%}&lt;/p>
 
@@ -274,16 +278,16 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
     &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
 &lt;/div&gt;
 </code></pre> 
-      
-      <p>
-        Kami sekarang akan menambahkan blok deklarasi ke penyeleksi yang berbeda. Pemilih dimulai dengan <code> . &lt;/ 0> berhubungan dengan kelas. Ada banyak tutorial dan penjelasan bagus tentang CSS di Web yang dapat membantu Anda memahami kode berikut. For now, copy and paste it into your &lt;code>blog/static/css/blog.css</code> file:
-      </p>
-      
-      <p>
-        {% filename%} blog / static / css / blog.css {% endfilename%}
-      </p>
-      
-      <pre><code class="css">.page-header {
+    
+    <p>
+      Kami sekarang akan menambahkan blok deklarasi ke penyeleksi yang berbeda. Pemilih dimulai dengan <code> . &lt;/ 0> berhubungan dengan kelas. Ada banyak tutorial dan penjelasan bagus tentang CSS di Web yang dapat membantu Anda memahami kode berikut. For now, copy and paste it into your &lt;code>blog/static/css/blog.css</code> file:
+    </p>
+    
+    <p>
+      {% filename%} blog / static / css / blog.css {% endfilename%}
+    </p>
+    
+    <pre><code class="css">.page-header {
     background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
@@ -330,16 +334,16 @@ h1, h2, h3, h4 {
     color: #000000;
 }
 </code></pre>
-      
-      <p>
-        Kemudian hubungilah kode HTML yang menampilkan tulisan dengan deklarasi kelas. Ganti ini:
-      </p>
-      
-      <p>
-        {% filename%} blog / templates / blog / post_list.html {% endfilename%}
-      </p>
-      
-      <pre><code class="html">{% for post in posts %}
+    
+    <p>
+      Kemudian hubungilah kode HTML yang menampilkan tulisan dengan deklarasi kelas. Ganti ini:
+    </p>
+    
+    <p>
+      {% filename%} blog / templates / blog / post_list.html {% endfilename%}
+    </p>
+    
+    <pre><code class="html">{% for post in posts %}
     &lt;div class="post"&gt;
         &lt;p&gt;published: {{ post.published_date }}&lt;/p&gt;
         &lt;h2&gt;&lt;a href=""&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;
@@ -347,9 +351,9 @@ h1, h2, h3, h4 {
     &lt;/div&gt;
 {% endfor %}
 </code></pre>
-      
-      <p>
-        di <code> blog / templates / blog / post_list.html &lt;/ 0> dengan ini:&lt;/p>
+    
+    <p>
+      di <code> blog / templates / blog / post_list.html &lt;/ 0> dengan ini:&lt;/p>
 
 &lt;p>{% filename%} blog / templates / blog / post_list.html {% endfilename%}&lt;/p>
 
@@ -369,26 +373,26 @@ h1, h2, h3, h4 {
     &lt;/div&gt;
 &lt;/div&gt;
 </code></pre> 
+      
+      <p>
+        Simpan file tersebut dan segarkan situs Anda.
+      </p>
+      
+      <p>
+        <img src="images/final.png" alt="Gambar 14.4" />
+      </p>
+      
+      <p>
+        Woo hoo! Terlihat mengagumkan, kan? Lihatlah kode yang baru kita tempel untuk menemukan tempat di mana kita menambahkan kelas dalam HTML dan menggunakannya di CSS. Di mana Anda akan membuat perubahan jika Anda ingin tanggal menjadi turquoise?
+      </p>
+      
+      <p>
+        Jangan takut untuk bermain-main dengan CSS ini sedikit dan mencoba untuk mengubah beberapa hal. Bermain dengan CSS dapat membantu Anda memahami hal-hal yang berbeda. Jika Anda memecahkan sesuatu, jangan khawatir - Anda selalu bisa membatalkannya!
+      </p>
+      
+      <p>
+        Kami sangat merekomendasikan untuk mengambil online gratis ini <a href="https://www.codecademy.com/tracks/web"> Codeacademy HTML & amp; Kursus CSS </ 0> . Ini dapat membantu Anda mempelajari semua tentang membuat situs web Anda lebih cantik dengan CSS.</p> 
         
         <p>
-          Simpan file tersebut dan segarkan situs Anda.
+          Siap untuk bab berikutnya ?! :)
         </p>
-        
-        <p>
-          <img src="images/final.png" alt="Gambar 14.4" />
-        </p>
-        
-        <p>
-          Woo hoo! Terlihat mengagumkan, kan? Lihatlah kode yang baru kita tempel untuk menemukan tempat di mana kita menambahkan kelas dalam HTML dan menggunakannya di CSS. Di mana Anda akan membuat perubahan jika Anda ingin tanggal menjadi turquoise?
-        </p>
-        
-        <p>
-          Jangan takut untuk bermain-main dengan CSS ini sedikit dan mencoba untuk mengubah beberapa hal. Bermain dengan CSS dapat membantu Anda memahami hal-hal yang berbeda. Jika Anda memecahkan sesuatu, jangan khawatir - Anda selalu bisa membatalkannya!
-        </p>
-        
-        <p>
-          Kami sangat merekomendasikan untuk mengambil online gratis ini <a href="https://www.codecademy.com/tracks/web"> Codeacademy HTML & amp; Kursus CSS </ 0> . Ini dapat membantu Anda mempelajari semua tentang membuat situs web Anda lebih cantik dengan CSS.</p> 
-          
-          <p>
-            Siap untuk bab berikutnya ?! :)
-          </p>
