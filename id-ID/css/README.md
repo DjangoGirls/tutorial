@@ -93,9 +93,11 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
   </p>
   
   <p>
-    Tapi kita akan sedikit modifikasi. Mungkin kita akan mengubah warna <i>headers</i> kita. Untuk mengetahui warna, komputer menggunakan kode unik. Kode ini dimulai dengan <code> # &lt;/ 0> diikuti oleh 6 huruf (A-F) dan angka (0-9). Misalnya, kode untuk warna biru adalah &lt;code> #0000FF &lt;/ 0> . Anda dapat menemukan kode warna untuk berbagai warna di sini: http://www.colorpicker.com/. Anda juga dapat menggunakan &lt;a href="http://www.w3schools.com/colors/colors_names.asp"> warna yang telah ditetapkan&lt;/ 0> , seperti &lt;code>red&lt;/ 1> dan &lt;code>green&lt;/ 1> .&lt;/p>
-
-&lt;p>Dalam berkas &lt;code>blog/static/css/blog.css</code> kamu mesti menambahkan kode seperti berikut:
+    Tapi kita akan sedikit modifikasi. Mungkin kita akan mengubah warna <i>headers</i> kita. Untuk mengetahui warna, komputer menggunakan kode unik. Kode ini dimulai dengan <code> # &lt;/ 0> diikuti oleh 6 huruf (A-F) dan angka (0-9). Misalnya, kode untuk warna biru adalah &lt;code> #0000FF &lt;/ 0> . Anda dapat menemukan kode warna untuk berbagai warna di sini: http://www.colorpicker.com/. Kamu juga dapat menggunakan &lt;a href="http://www.w3schools.com/colors/colors_names.asp">warna yang telah ditetapkan&lt;/a>, seperti &lt;code>red</code> dan <code>green</code>.
+  </p>
+  
+  <p>
+    Dalam berkas <code>blog/static/css/blog.css</code> kamu mesti menambahkan kode seperti berikut:
   </p>
   
   <p>
@@ -109,11 +111,11 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
 </code></pre>
   
   <p>
-    <code>h1 a</code> adalah selector dalam CSS. Ini berarti kita akan memberikan gaya pada setiap elemen <code>a</code> yang terdapat dalam elemen <code>h1</code>; begitu pula dengan selector <code>h2 a</code>, melakukan hal yang sama. Jadi ketika kita memiliki sesuatu seperti <code>&lt;h1&gt;&lt;a href=""&gt;link&lt;/a&gt;&lt;/h1&gt;</code>, gaya elemen <code>h1 a</code> akanberubah. In this case, we're telling it to change its color to <code>#C25100</code>, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+    <code>h1 a</code> adalah selector dalam CSS. Ini berarti kita akan memberikan gaya pada setiap elemen <code>a</code> yang terdapat dalam elemen <code>h1</code>; begitu pula dengan selector <code>h2 a</code>, melakukan hal yang sama. Jadi ketika kita memiliki sesuatu seperti <code>&lt;h1&gt;&lt;a href=""&gt;link&lt;/a&gt;&lt;/h1&gt;</code>, gaya elemen <code>h1 a</code> akanberubah. Dalam kasus ini, kita akan mengubah warnanya menjadi <code>#C25100</code>, ini menandakan warna jingga gelap. Atau kamu bisa memilih sendiri warnanya, tapi pastikan warna tersebut berbeda dengan warna putih dari latar!
   </p>
   
   <p>
-    Dalam berkas CSS kita menentukan styles untuk elemen yang berada pada berkas HTML. Cara pertama kita mengidentifikasi elemen adalah dengan nama elemen. Anda mungkin ingat ini sebagai tag dari bagian HTML. Hal-hal seperti <code> a &lt;/ 0> , &lt;code> h1 &lt;/ 0> , dan &lt;code> body &lt;/ 0> adalah contoh nama elemen.
+    Dalam file CSS kita menentukan gaya untuk elemen yang berada pada file HTML. Mulanya kita menuliskan elemen dengan nama elemen itu sendiri. Anda mungkin ingat ini sebagai tag dari bagian HTML. Hal-hal seperti <code> a &lt;/ 0> , &lt;code> h1 &lt;/ 0> , dan &lt;code> body &lt;/ 0> adalah contoh nama elemen.
 Kami juga mengidentifikasi elemen dengan atribut &lt;code> class &lt;/ 0> atau atribut &lt;code> id &lt;/ 0> . Class dan id adalah nama-nama elemen yang kamu berikan sendiri. Class-class mendefinisikan kelompok-kelompok elemen, dan id menunjuk pada elemen khusus. Misalnya, Anda dapat mengidentifikasi tag berikut dengan menggunakan nama tag &lt;code> a &lt;/ 0> , kelas &lt;code> external_link &lt;/ 0> , atau id &lt;code> link_to_wiki_page &lt;/ 0> :&lt;/p>
 
 &lt;pre>&lt;code class="html">&lt;a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page"&gt;
