@@ -155,7 +155,7 @@ Vous pouvez aussi obtenir une liste de tous les posts publiés. Pour cela, nous 
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+Malheureusement, le post que nous avons créé dans la console Python n'est pas encore publié. Allons corriger ce problème ! Dans un premier temps, nous aimerions obtenir une instance du post que nous voulons publier :
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,7 +171,7 @@ Ensuite, publions-le grâce à notre méthode `publish`:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+Maintenant, essayez d'obtenir à nouveau la liste des posts publiés (appuyez trois fois sur la flèche du haut, puis `entrée`) :
 
 {% filename %}command-line{% endfilename %}
 
