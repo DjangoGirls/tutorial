@@ -23,22 +23,22 @@ Retournons à la création de notre premier projet. Tapez la commande suivant da
 
 > Le point `.` est très important : c'est lui qui permet de dire au script d'installer Django dans votre répertoire courant (le point `.` est une référence abrégée à celui-ci).
 > 
-> **Note** : lorsque vous tapez la commande précédente dans votre console, vous ne devez recopier que la partie qui commence par `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Note** : lorsque vous tapez la commande précédente dans votre console, vous ne devez recopier que la partie qui commence par `django-admin`. La partie `(myvenv) ~/djangogirls$` montrée ici n'est qu'un exemple pour vous rappeler de taper la commande dans votre console.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+Sur Windows, vous devez taper la commander suivante. ** (N'oubliez pas le point `.` à la fin) ** :
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Le point `.` est très important : c'est lui qui permet de dire au script d'installer Django dans votre répertoire courant (le point `.` est une référence abrégée à celui-ci).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Note** : lorsque vous tapez la commande précédente dans votre console, vous ne devez recopier que la partie qui commence par `django-admin.exe`. La partie `(myvenv) C:\Users\Name\djangogirls>` montrée ici n'est qu'un exemple pour vous rappeler de taper la commande dans votre console.
 
 <!--endsec-->
 
@@ -54,9 +54,9 @@ On Windows you should run the following command. **(Don't forget to add the peri
     └───requirements.txt
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Note** : dans votre structure de dossier, vous pourrez voir également le répertoire `venv` que nous avons créé avant.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` est un script qui aide à gérer ou maintenir le site. Entre autres, il permet notamment de lancer un serveur web sur notre ordinateur sans rien installer d'autre.
 
 Le fichier `settings.py` contient la configuration de votre site web.
 
