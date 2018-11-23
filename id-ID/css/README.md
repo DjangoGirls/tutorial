@@ -126,7 +126,7 @@ Untuk memasang Bootstap, bukan file berekstensi `.html` di editor kode dan tamba
   </p>
   
   <p>
-    We also need to tell our HTML template that we added some CSS. Open the <code>blog/templates/blog/post_list.html</code> file in the code editor and add this line at the very beginning of it:
+    Kita juga mesti memberti tahu template HTML kita yang telah ditambahkan beberapa CSS. Buka file <code>blog/templates/blog/post_list.html</code> di kode editor dan tambahkan baris ini di paling atas dalam file tersebut:
   </p>
   
   <p>
