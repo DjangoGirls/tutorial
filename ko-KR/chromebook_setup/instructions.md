@@ -37,7 +37,7 @@ PaizaCloud Cloud IDE 의 터미널은 당신의 명령어를 기다리고 있습
 
 ### 가상 환경
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+virtualenv라고도 불리는 가상환경은 우리가 진행하고 있는 프로젝트를 위해 유용한 컴퓨터 코드를 담아놓을 수 있는 개인 상자와도 같습니다. 우리는 여러 코드의 일부분이 프로젝트들 사이에서 섞이지 않을 수 있도록 다양한 프로젝트들을 분리하여 저장하는데에 사용합니다.
 
 터미널에서 클라우드 9 인터페이스 아래에 다음의 명령어를 입력합니다:
 
@@ -47,7 +47,7 @@ A virtual environment (also called a virtualenv) is like a private box we can st
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+만약 이래도 작동 되지 않는다면, 코치에게 도움을 요청하세요.
 
 Next, run:
 
@@ -68,8 +68,8 @@ Next, run:
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+장고걸스 튜토리얼에는 배포라는 섹션이 있습니다. 여기서는 다른 사람이 여러분의 작업물을 볼 수 있도록, 여러분이 만든 새로운 서버라고 불리는 웹 어플리케이션에 공개적으로 접근할 수 있는 컴퓨터로 옮기는 과정을 설명합니다.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+크롬북에서 튜토리얼을 진행하고 있다면 이 부분은 약간 이상할 수 도 있습니다. 왜냐하면 우리는 이미 인터넷 상에서 작동하는 일반적인 노트북과 다른 컴퓨터를 사용하고 있기 때문입니다. 그러나 우리가 만든 Cloud 9 작업 공간을 "진행 중인" 작업 공간이라고 생각하고, Python Anywhere가 좀 더 완성된 작업물을 보여주는 공간이라고 생각하면 여전히 유용할 것입니다.
 
 그러므로, Python Anywhere의 새 계정을 [www.pythonanywhere.com](https://www.pythonanywhere.com) 에서 만들어 보세요.
