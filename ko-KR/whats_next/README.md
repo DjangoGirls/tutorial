@@ -1,6 +1,6 @@
 # 다음은?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+모두 축하합니다! 저는 여러분이 정말 멋지고 아주 자랑스러워요!! >_< <3
 
 ### 이제 무엇을 해야하나요?
 
