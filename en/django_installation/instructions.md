@@ -34,11 +34,20 @@ $ python3 -m venv myvenv
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+To ease usage of `virtualenv` on Windows, we will install `virtualenvwrapper-win`.
+
+You need to open your command prompt and run `pip install virtualenvwrapper-win`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 ```
-C:\Users\Name\djangogirls> python -m venv myvenv
+C:\Users\Name\djangogirls> pip install virtualenvwrapper-win
+```
+
+Then, to create a new `virtualenv`, run `mkvirtualenv myvenv`. It will look like this:
+
+{% filename %}command-line{% endfilename %}
+```
+C:\Users\Name\djangogirls> mkvirtualenv myvenv
 ```
 
 Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
@@ -116,6 +125,13 @@ Start your virtual environment by running:
 {% filename %}command-line{% endfilename %}
 ```
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
+```
+
+If you installed `virtualenvwrapper-win` (in the section above), you can start your virtual environment by running:
+
+{% filename %}command-line{% endfilename %}
+```
+C:\Users\Name\djangogirls> workon myvenv
 ```
 
 > __NOTE:__ on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option.  Then try typing the following command before starting your virtual environment:
