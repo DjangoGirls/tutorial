@@ -147,19 +147,19 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > 
 > يجب أنت ترى بعض الملاحظات ك`Collecting pythonanywhere` و تنتهي بالعبارة `Successfully installed (...) pythonanywhere- (...)`.
 > 
-> الان نستخدم الادات المساعدة, لإعداد التطبيق مباشرة من GitHub و بشكل ألي. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+> الان نستخدم الادات المساعدة, لإعداد التطبيق مباشرة من GitHub و بشكل ألي. اكتب الأمر التالي في وحدة التحكم على PythonAnywhere(لا تنسى أن استخدام اسم المستخدم الخاص بك في GitHub بدلاً من `<your-github-username>`، حتى يتشابه الURL بالURL المنسوخ من Github):
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
 >     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 >     
 > 
-> As you watch that running, you'll be able to see what it's doing:
+> بينما تشاهد ذلك يعمل، سوف يمكنك رؤية ماذا يفعل:
 > 
-> - Downloading your code from GitHub
-> - Creating a virtualenv on PythonAnywhere, just like the one on your own computer
-> - Updating your settings file with some deployment settings
-> - Setting up a database on PythonAnywhere using the `manage.py migrate` command
+> - تحميل الكود خاصتك من Github
+> - إنشاء virtualenv على PythonAnywhere، تماما مثل الذي على جاهز الكمبيوتر خاصتك
+> - تحديث ملف الإعدادات مع بعض إعدادات النشر
+> - إعداد قاعدة بيانات على PythonAnywhere باستخدام الأمر `manage.py migrate`
 > - Setting up your static files (we'll learn about these later)
 > - And configuring PythonAnywhere to serve your web app via its API
 > 
