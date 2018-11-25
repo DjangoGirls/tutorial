@@ -185,23 +185,23 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 >     templates  tests.py  urls.py  views.py
 >     
 > 
-> يمكنك أيضا الذهاب إلى صفحة "ملف"(Files) وتصفح حولها باستخدام متصفح الملفات المبني في PythonAnywhere. (من صفحة وحدة التحكم، يمكنك الحصول على صفحات أخرى في PythonAnywhere من زر القائمة في الزاوية العلوية اليمنى. وعند تواجدك في إحدى الصفحات، هناك روابط لبعضها الآخر بالقرب من الأعلى.)
+> يمكنك أيضا الذهاب إلى صفحة "ملف" وتصفح حولها باستخدام متصفح الملفات المبني في PythonAnywhere. (من صفحة وحدة التحكم، يمكنك الحصول على صفحات أخرى في PythonAnywhere من زر القائمة في الزاوية العلوية اليمنى. وعند تواجدك في إحدى الصفحات، هناك روابط لبعضها الآخر بالقرب من الأعلى.)
 > 
 > ## أنت على الهواء الأن!
 > 
-> Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+> الآن ينبغي أن يكون موقع الويب الخاص بك مباشرة على شبكة الإنترنت العامة! من خلال النقر على صفحة "ويب" PythonAnywhere للحصول على رابط إليها. يمكنك مشاركة هذا مع أي شخص تريد:)
 > 
-> > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> > **ملاحظة** هذا برنامج تعليمي للمبتدئين، وفي نشر هذا الموقع لقد اتخذنا بعض التجاوزات التي لم تكن مثالية من وجهة نظر أمنية. إذا كنت ترغب في البناء على هذا المشروع، أو بدء مشروع جديد، يجب عليك مراجعة [Django قائمة تدقيق النشر](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) لبعض النصائح حول تأمين موقع الويب الخاص بك.
 > 
-> ## Debugging tips
+> ## نصائح لتصحيح الأخطاء
 > 
-> If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+> إذا كنت ترى خطأ أثناء تشغيل البرنامج النصي `pa_autoconfigure_django.py`، فيما يلي بعض الأسباب الشائعة:
 > 
-> - Forgetting to create your PythonAnywhere API token.
-> - Making a mistake in your GitHub URL
-> - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+> - نسيان إنشاء رمز API الخاص بPythonAnywhere.
+> - إرتكاب خطأ في عنوان Github URL الخاص بك
+> - إذا كنت ترى خطأ يقول *"تعذر العثور على settings.py الخاص بك"*، على الأرجح لأنك لم تتمكن من إضافة كافة الملفات الخاصة بك إلى Git، و/أو لم ترفعهم إلى GitHub بنجاح. ألقي نظرة أخرى على قسم Git أعلاه
 > 
-> If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+> إذا كنت ترى خطأ عند محاولة زيارة موقع الويب الخاص بك، المكان الأول للبحث عن بعض معلومات التصحيح هو **سجل الأخطاء** الخاص بك. ستجد رابط لهذا في PythonAnywhere [صفحة "الويب"](https://www.pythonanywhere.com/web_app_setup/). إذا كان هناك أية رسائل أخطاء هناك؛ أحدثها يوجد في الأسفل.
 > 
 > There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 > 
