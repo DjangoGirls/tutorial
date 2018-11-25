@@ -80,9 +80,9 @@ Dans `settings.py`, recherchez la ligne qui contient `TIME_ZONE` et modifiez-la 
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Un code de langue se compose de la langue, par exemple `en` pour l’anglais ou `de` pour l’allemand et du code du pays, p. ex. `de` pour l’Allemagne ou `ch` pour la Suisse. Si l’anglais n’est pas votre langue maternelle, vous pouvez ajouter votre code de langue afin que les boutons par défaut et les notifications de Django soient traduits. Vous auriez alors le bouton « Cancel » traduits dans la langue que vous avez définie. [Django est livré avec un grand nombre de traductions disponibles](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Si vous voulez changer la langue, modifiez le code de langue comme montré dans la ligne suivante :
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -90,7 +90,7 @@ If you want a different language, change the language code by changing the follo
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Nous allons avoir besoin aussi d'un chemin d’accès pour les fichiers statiques. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
