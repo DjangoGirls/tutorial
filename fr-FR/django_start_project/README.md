@@ -90,7 +90,7 @@ Si vous voulez changer la langue, modifiez le code de langue comme montré dans 
 LANGUAGE_CODE = 'de-ch'
 ```
 
-Nous allons avoir besoin aussi d'un chemin d’accès pour les fichiers statiques. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Nous allons avoir besoin aussi d'un chemin d’accès pour les fichiers statiques. (Nous allons découvrir les fichiers statiques et CSS plus tard dans le tutoriel) Allez à la *fin* du fichier et juste en dessous de `STATIC_URL`, ajoutez une nouvelle entrée `STATIC_ROOT` :
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+Lorsque `DEBUG` a valeur `True` et `ALLOWED_HOSTS` est vide, les noms d'hôte acceptés sont `[« localhost », '127.0.0.1 », ' [ :: 1]']`. Notre nom d’hôte sur PythonAnywhere ne sera donc pas accepté une fois que notre application sera déployée. Pour éviter cela, nous allons changer le paramètre suivant :
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -107,7 +107,7 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Note** : Si vous utilisez un Chromebook, ajoutez cette ligne à la fin de votre fichier settings.py : `MESSAGE_STORAGE = « django.contrib.messages.storage.session.SessionStorage »`
 > 
 > Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
 
