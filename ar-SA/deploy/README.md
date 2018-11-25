@@ -91,13 +91,13 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 
 > ** * * ملاحظة * * اسم 'my-first-blog' مهم – يمكن أن تختار شيئا آخر، لكن هذا سيأخد الكثير من الوقت في الإرشادات الموجودة أدناه، وسيكون عليك استبداله كل مرة. ربما من الأسهل الإبقاء على اسم 'my-first-blog'.</p> </blockquote> 
 > 
-> On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+> في الشاشة التالية، سوف يظهر لك URL استنساخ الريبو الخاص بك، الذي سيتم استخدامه في بعض الأوامر التالية:
 > 
 > ![](images/github_get_repo_url_screenshot.png)
 > 
 > الآن نحن بحاجة إلى ربط مستودع Git على جهاز الكمبيوتر الخاص بك مع المستودع الذي أنشأته على GitHub.
 > 
-> Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+> اكتب الأمر التالي في وحدة التحكم الخاصة بك (استبدل `<your-github-username>` مع اسم المستخدم الذي قمت بإدخاله عند إنشاء حساب GitHub الخاص بك، ولكن دون أقواس -- هذا الURL يجب أن يشابه الURL المنسوخ الذي رأيته قبل قليل):
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -105,7 +105,7 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 >     $ git push -u origin master
 >     
 > 
-> When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+> عند الرفع إلى GitHub، سيطلب منك GitHub اسم المستخدم وكلمة المرور (أما في نافذة سطر الأوامر أو في نافذة منبثقة)، وبعد إدخال بيانات الاعتماد يجب أن ترى شيئا مثل هذا:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
