@@ -196,9 +196,9 @@ Bravo ! Vous venez de créer votre premier site web, et de le lancer avec un ser
 
 ![Install worked!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Notez qu’une fenêtre de commande ne peut exécuter qu’une chose à la fois, et la fenêtre de commande que vous avez ouvert précédemment est en train d'exécuter le serveur web. Tant que le serveur web est en cours d’exécution et en attente des demandes entrantes, le terminal acceptera du nouveau texte mais ne l'exécutera pas.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Nous avons vu le fonctionnement des serveurs web dans le chapitre **Comment fonctionne Internet**.
 
 To type additional commands while the web server is running, open a new terminal window and activate your virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
