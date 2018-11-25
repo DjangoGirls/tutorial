@@ -68,11 +68,11 @@ Ignorons les autres fichiers pour l'instant, nous n'allons pas avoir besoin d'y 
 
 Apportons quelques changements à `mysite/settings.py`. Ouvrez le fichier avec l'éditeur de code que vous avez installé tout à l'heure.
 
-**Note** : Gardez à l’esprit que `settings.py` est un fichier ordinaire, comme les autres. Vous pouvez l’ouvrir depuis l’éditeur de code, en cliquant sur « file-> open » dans le menu. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Note** : Gardez à l’esprit que `settings.py` est un fichier ordinaire, comme les autres. Vous pouvez l’ouvrir depuis l’éditeur de code, en cliquant sur « file-> open » dans le menu. Cela devrait ouvrir la fenêtre habituelle de navigation, où vous allez pouvoir chercher votre fichier `settings.py` et le sélectionner. Autrement, vous pouvez naviguer jusqu’au dossier djangogirls sur votre bureau et faire un clic droit sur le nom du fichier. Sélectionnez ensuite votre éditeur de code dans la liste qui s'affiche. Sélectionner l’éditeur est important car vous pourriez avoir d’autres programmes installés qui peuvent ouvrir le fichier, mais qui ne vous permettraient pas de le modifier.
 
-Ça serait sympa d'avoir l'heure correcte sur notre site Web. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Ça serait sympa d'avoir l'heure correcte sur notre site Web. Allez sur la [liste Wikipedia des fuseaux horaires](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) et copiez votre fuseau horaire (TZ) (par exemple `Europe/Berlin`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+Dans `settings.py`, recherchez la ligne qui contient `TIME_ZONE` et modifiez-la pour choisir votre propre fuseau horaire. Par exemple :
 
 {% filename %}mysite/settings.py{% endfilename %}
 
