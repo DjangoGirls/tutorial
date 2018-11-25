@@ -165,16 +165,16 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > 
 > في PythonAnywhere جميع تلك الخطوات أتوماتيكية، بل أنهم نفس الخطوات التي عليك أن تذهب من خلالها مع أي موفر خدمة آخر.
 > 
-> The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+> الشيء الرئيسي الذي يجب ملاحظته الآن هو أن قاعدة البيانات الخاصة بك في PythonAnywhere في الواقع منفصلة تماما من قاعدة البيانات على جهاز الكمبيوتر الخاص بك، حتى تتمكن من أن يكون لها وظائف وحسابات المسؤول(admin) مختلفين. نتيجة لذلك، تماما كما فعلت على جهاز الكمبيوتر خاصتك، علينا بدأ حساب المسؤول(admin) ب `createsuperuser`. قام PythonAnywhere بتفعيل Virtualenv خاصتك أتوماتيكيا، لذلك كل ما تحتاج لفعله هو تشغيل:
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
 >     (ola.pythonanywhere.com) $ python manage.py createsuperuser
 >     
 > 
-> Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+> اكتب التفاصيل للمستخدم المسؤول(admin) الخاص بك. أفضل الطرق لاستخدام نفس الذي تستخدمه على الكمبيوتر الخاص بك لتجنب أي التباس، إلا إذا كنت تريد أن تجعل كلمة المرور على PythonAnywhere أكثر أمنا.
 > 
-> Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+> الان، اذا أردت، يمكنك النظر إلى الكود خاصتك على PythonAnywhere باستخدام `ls`:
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
@@ -185,9 +185,9 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 >     templates  tests.py  urls.py  views.py
 >     
 > 
-> You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+> يمكنك أيضا الذهاب إلى صفحة "ملف"(Files) وتصفح حولها باستخدام متصفح الملفات المبني في PythonAnywhere. (من صفحة وحدة التحكم، يمكنك الحصول على صفحات أخرى في PythonAnywhere من زر القائمة في الزاوية العلوية اليمنى. وعند تواجدك في إحدى الصفحات، هناك روابط لبعضها الآخر بالقرب من الأعلى.)
 > 
-> ## You are now live!
+> ## أنت على الهواء الأن!
 > 
 > Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 > 
