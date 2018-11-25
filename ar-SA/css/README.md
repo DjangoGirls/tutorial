@@ -87,7 +87,7 @@ h1 a, h2 a {     color: #C25100; }
 
 اقرأ عن [محددات CSS في w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+نحن بحاجة إلى أن نقول أيضا لقالب HTML أننا أضفنا بعض ال CSS. افتح الملف `blog/templates/blog/post_list.html` في محرر الأكواد وأضف هذا السطر في البداية:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
