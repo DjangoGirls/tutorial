@@ -203,14 +203,14 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > 
 > إذا كنت ترى خطأ عند محاولة زيارة موقع الويب الخاص بك، المكان الأول للبحث عن بعض معلومات التصحيح هو **سجل الأخطاء** الخاص بك. ستجد رابط لهذا في PythonAnywhere [صفحة "الويب"](https://www.pythonanywhere.com/web_app_setup/). إذا كان هناك أية رسائل أخطاء هناك؛ أحدثها يوجد في الأسفل.
 > 
-> There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+> وهناك أيضا بعض [نصائح عامة لتصحيح الأخطاء في موقع المساعدة لPythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 > 
-> And remember, your coach is here to help!
+> وتذكر أن المدرب هنا للمساعدة!
 > 
-> # Check out your site!
+> # تحقق من موقع الويب الخاص بك!
 > 
-> The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+> الصفحة الرئيسية لموقعك يجب ان تقول "لقد نجح!" تماما كما تقول على حاسوبك الخاص. حاول إضافة `/admin/` إلى نهاية عنوان URL، وسوف يتم نقلك إلى موقع المشرف. قم بتسجيل الدخول باستخدام اسم المستخدم وكلمة المرور، وسترى أنه يمكنك إضافة وظائف جديدة على الخادم -- تذكر، مشاركاتك من قاعدة البيانات المحلية الخاصة بك لم يتم إرسالها إلى مدونتك المباشرة.
 > 
-> Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+> وبمجرد الانتهاء من إنشاء عدد قليل من المشاركات، يمكنك العودة إلى الإعداد المحلي الخاص بك (ليس PythonAnywhere). من هنا يجب أن تعمل على الإعدادات المحلية خاصتك لإجراء التغييرات. هذا سير عمل مشترك في تطيور المواقع -- قم بالتغييرات محلياً، ارفع تلك التغييرات إلى GitHub، وارسل هذه التغييرات إلى خادم الويب المباشر خاصتك. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 > 
 > Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
