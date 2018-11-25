@@ -160,10 +160,10 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 > - إنشاء virtualenv على PythonAnywhere، تماما مثل الذي على جاهز الكمبيوتر خاصتك
 > - تحديث ملف الإعدادات مع بعض إعدادات النشر
 > - إعداد قاعدة بيانات على PythonAnywhere باستخدام الأمر `manage.py migrate`
-> - Setting up your static files (we'll learn about these later)
-> - And configuring PythonAnywhere to serve your web app via its API
+> - إعداد الملفات الثابتة (سوف نتعلم عن هذه في وقت لاحق)
+> - وتهيئة PythonAnywhere لخدمة التطبيق الويب الخاص بك عبر API،
 > 
-> On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+> في PythonAnywhere جميع تلك الخطوات أتوماتيكية، بل أنهم نفس الخطوات التي عليك أن تذهب من خلالها مع أي موفر خدمة آخر.
 > 
 > The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 > 
