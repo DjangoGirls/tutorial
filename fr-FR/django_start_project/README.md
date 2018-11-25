@@ -68,7 +68,7 @@ Ignorons les autres fichiers pour l'instant, nous n'allons pas avoir besoin d'y 
 
 Apportons quelques changements à `mysite/settings.py`. Ouvrez le fichier avec l'éditeur de code que vous avez installé tout à l'heure.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Note** : Gardez à l’esprit que `settings.py` est un fichier ordinaire, comme les autres. Vous pouvez l’ouvrir depuis l’éditeur de code, en cliquant sur « file-> open » dans le menu. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
 Ça serait sympa d'avoir l'heure correcte sur notre site Web. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
