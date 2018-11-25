@@ -109,9 +109,9 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Note** : Si vous utilisez un Chromebook, ajoutez cette ligne à la fin de votre fichier settings.py : `MESSAGE_STORAGE = « django.contrib.messages.storage.session.SessionStorage »`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Ajoutez `.amazonaws.com` à `ALLOWED_HOSTS` si vous utilisez cloud9
 
-## Set up a database
+## Configuration de la base de données
 
 Il existe tout un tas de systèmes de gestion de bases de données qu'il est possible d'utiliser pour stocker les données de votre site. Nous allons va utiliser celui par défaut : `sqlite3`.
 
@@ -155,7 +155,7 @@ Pour créer la base de donnée de notre blog, il faut lancer la commande suivant
 
 Et voilà ! Il ne reste plus qu'à lancer le serveur et voir si notre site web fonctionne !
 
-## Starting the web server
+## Lancer le serveur web
 
 Pour cela, vous avez besoin d'être dans le dossier qui contient le fichier `manage.py` (le dossier `djangogirls`). Dans votre console, vous pouvez lancer le serveur en tapant `python manage.py runserver`:
 
@@ -164,7 +164,7 @@ Pour cela, vous avez besoin d'être dans le dossier qui contient le fichier `man
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Si vous avez un Chromebook, utilisez plutôt la commande suivante :
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -178,16 +178,16 @@ Si vous utilisez Windows et que vous obtenez l'erreur `UnicodeDecodeError`, tape
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Ensuite, vous allez vérifier que votre site fonctionne. Pour cela, ouvrez votre navigateur (Firefox, Chrome, Safari, Internet Explorer, ou n'importe quel autre), et entrez l'adresse suivante :
 
-{% filename %}browser{% endfilename %}
+{% filename %}navigateur{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Si vous utilisez un Chromebook et Cloud9, cliquez plutôt sur l’URL dans la fenêtre pop-up qui devrait figurer dans le coin supérieur droit de la fenêtre de commande où le serveur web est en cours d’exécution. Le URL ressemble à ceci :
 
-{% filename %}browser{% endfilename %}
+{% filename %}navigateur{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
