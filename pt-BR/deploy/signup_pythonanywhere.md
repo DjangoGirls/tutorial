@@ -10,6 +10,10 @@ Iremos hospedar o blog que estamos construindo em PythonAnywhere. Cadastre-se pa
 
 ## Criando um token de API do PythonAnywhere
 
-Você só precisa fazer isso uma única vez. Assim que tiver concluído seu cadastro no PythonAnywhere, você será redirecionado para seu painel de controle. Encontre o link perto do canto superior para a página de "Account" (sua conta) e selecione a aba chamada "API token". Clique no botão que diz "Create a new API token" (Criar um novo token de API).
+This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
 
-![Aba de token de API na página da conta](../deploy/images/pythonanywhere_create_api_token.png)
+![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+
+then select the tab named "API token", and hit the button that says "Create new API token".
+
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
