@@ -10,6 +10,10 @@ We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beg
 
 ## Crear un token para la API de PythonAnywhere
 
-Solo tendrás que hacer esto la primera vez. Cuando entres en PythonAnywhere, verás el panel de control ("dashboard"). En la esquina superior derecha, busca el enlace la página de tu cuenta ("Account"), selecciona una pestaña llamada "API token" y pulsa el botón que pone "Create new API token".
+This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
 
-![La pestaña de "API token" en la página de tu cuenta ("Account")](../deploy/images/pythonanywhere_create_api_token.png)
+![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+
+then select the tab named "API token", and hit the button that says "Create new API token".
+
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
