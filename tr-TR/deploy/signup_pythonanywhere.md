@@ -10,6 +10,10 @@ We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beg
 
 ## PythonAnywhere API token oluşturma
 
-Bu sadece bir kez yapmanız gereken bir şey. PythonAnywhere'e kaydolduğunuzda, dashboard sayfasına yönlendirileceksiniz. "Account" sayfanızın sağ üstüne yakın link'i bulun ve "API token" isimli sekmeyi seçerek "Create new API token" butonuna basın.
+This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
 
-![Hesaplar sayfasındaki API token sekmesi](../deploy/images/pythonanywhere_create_api_token.png)
+![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+
+then select the tab named "API token", and hit the button that says "Create new API token".
+
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
