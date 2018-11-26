@@ -10,6 +10,10 @@
 
 ## Δημιουργώντας ένα PythonAnywhere API token
 
-Αυτό είναι κάτι που χρειάζεται να κάνετε μόνο μια φορά. Όταν εγγραφείτε στο PythonAnywhere, θα οδηγηθείτε στο dashboard. Βρείτε το σύνδεσμο κοντά στην κορυφή δεξιά στη σελίδα «Account» και επιλέξτε την καρτέλα που ονομάζεται «API token». Πατήστε το κουμπί που λέει «Create new API token».
+This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
 
-![Η καρτέλα API token στη σελίδα Account](../deploy/images/pythonanywhere_create_api_token.png)
+![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+
+then select the tab named "API token", and hit the button that says "Create new API token".
+
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
