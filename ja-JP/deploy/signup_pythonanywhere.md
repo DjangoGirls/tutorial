@@ -10,6 +10,10 @@ We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beg
 
 ## PythonAnywhere APIトークンの作成
 
-これはあなたが一度だけ行う必要があるものです。 PythonAnywhere にサインアップしたとき、ダッシュボードページが表示されます。 右上にある「Account」ページへのリンクをクリックし、それから「API Token」タブを選択し、「Create new API token」ボタンをクリックします。
+This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
 
-![アカウントページのAPIトークンタブ](../deploy/images/pythonanywhere_create_api_token.png)
+![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+
+then select the tab named "API token", and hit the button that says "Create new API token".
+
+![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
