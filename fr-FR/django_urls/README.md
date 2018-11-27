@@ -49,9 +49,9 @@ Il est temps de créer notre première URL ! Nous voulons que 'http://127.0.0.1:
 
 Nous aimerions aussi garder notre fichier `mysite/urls.py` propre. Pour cela, nous allons importer les URLs de notre application `blog` dans notre fichier principal `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Allez-y ! Ajoutez une ligne qui importera `blog.urls`. Vous devrez également modifier la ligne ` from django.urls...` car nous utiliseront la fonction `include`. Il vous faudra ajouter cet import à la ligne.
 
-Your `mysite/urls.py` file should now look like this:
+Votre fichier `mysite/urls.py` devrait maintenant ressembler à ceci :
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -65,11 +65,11 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Django va maintenant rediriger tout ce qui arrive sur "http://127.0.0.1:8000/" vers `blog.urls` puis regardera dans ce fichier pour y trouver la suite des instructions à suivre.
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+Créez un nouveau fichier vide nommé `urls.py` dans le répertoire `blog`, et ouvrez-le dans l'éditeur de code. Très bien ! Ajoutez ces deux premières lignes :
 
 {% filename %}blog/urls.py{% endfilename %}
 
