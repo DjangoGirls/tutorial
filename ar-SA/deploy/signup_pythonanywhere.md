@@ -1,6 +1,6 @@
 PythonAnywhere هي خدمة لتشغيل أكواد بايثون على خوادم سحابية. سوف نستخدمها لنشر موقعك، مباشرة وعلى الانترنت.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+سوف نقوم بنشر المدونة التي سنبنيها على PythonAnywhere. أنشئ حساب "مبتدأ" على PythonAnywhere (الحساب المجاني كافي، لا تحتاج بطاقة ائتمان).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
