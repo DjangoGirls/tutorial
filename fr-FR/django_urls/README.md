@@ -1,14 +1,14 @@
-# Django URLs
+# Les URL de Django
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+Nous sommes sur le point de créer notre première page web : une page d'accueil pour votre blog ! Mais d'abord, commençons par en apprendre un peu plus sur les URL de Django.
 
 ## Qu'est-ce qu'une URL ?
 
-A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` est aussi une URL ! And `https://djangogirls.org` is also a URL.)
+Une URL est une adresse web. Vous pouvez voir une URL chaque fois que vous visitez un site web. Elle est visible dans la barre d'adresse de votre navigateur. (Oui ! `127.0.0.1:8000` est aussi une URL ! Et `https://djangogirls.org` est aussi une URL.)
 
 ![Url](images/url.png)
 
-Chaque page internet a besoin de sa propre URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Chaque page internet a besoin de sa propre URL. C'est grâce à cela que votre application sait ce qu'elle doit afficher à un utilisateur qui ouvre cette URL. Dans Django, nous utilisons un outil appelé `URLconf` (Configuration d'URL). URLconf est un ensemble de modèles que Django va essayé de faire correspondre à l'URL demandée afin de trouver la vue adaptée.
 
 ## Comment les URLs fonctionnent-elles dans Django ?
 
