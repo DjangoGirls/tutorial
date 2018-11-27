@@ -10,10 +10,10 @@ Nous allons donc mettre le blog que nous sommes en train de construire sur Pytho
 
 ## Création d’un jeton API pour PythonAnywhere
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+C'est quelque chose que vous n'aurez à faire qu'une seule fois. Lorsque vous serez inscrit à PythonAnywhere, vous vous retrouverez sur votre tableau de bord. Trouvez le lien en haut à droit de votre page "Compte":
 
 ![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+sélectionnez l'onglet nommé "API token", et cliquez sur le bouton "Créer un nouveau jeton API".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![L'onglet API sur la page Compte](../deploy/images/pythonanywhere_create_api_token.png)
