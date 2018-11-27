@@ -29,11 +29,11 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+Comme vous pouvez le voir ici, Django a déjà préparé quelque chose pour nous.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+Les lignes entre triples guillemets (`'''` or `"""`) sont appelées docstrings. Vous pouvez les écrire en haut d'un fichier, d'une classe ou d'une méthode pour décrire son fonctionnement. Elle ne seront pas exécutées par Python.
 
-The admin URL, which you visited in the previous chapter, is already here:
+L'URL admin, que vous avez abordé dans le chapitre précédent est déjà là :
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,13 +41,13 @@ The admin URL, which you visited in the previous chapter, is already here:
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Cette ligne signifie que pour toutes les URL commençant par `admin/`, Django trouvera une *vue* correspondante. Dans cet exemple, nous incluons de nombreuses URL admin. Elles ne sont donc pas toutes contenues dans ce petit fichier. C'est plus lisible et plus propre.
 
-## Your first Django URL!
+## Votre première URL Django !
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+Il est temps de créer notre première URL ! Nous voulons que 'http://127.0.0.1:8000/' soit la page d'accueil de notre blog et qu'elle affiche la liste des articles.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+Nous aimerions aussi garder notre fichier `mysite/urls.py` propre. Pour cela, nous allons importer les URLs de notre application `blog` dans notre fichier principal `mysite/urls.py`.
 
 Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
 
