@@ -169,9 +169,9 @@ Suche den Anweisungsblock: `h1 a` (der Code zwischen den geschweiften Klammern `
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a, h2 a {     
+h1 a, h2 a {
     color: #C25100;
-    font-family: 'Lobster'; 
+    font-family: 'Lobster';
 }
 ```
 
@@ -211,48 +211,48 @@ Wir erweitern jetzt unser CSS mit entsprechenden Selektoren. Selektoren, die mit
 .page-header {
     background-color: #C25100;
     margin-top: 0;
-    padding: 20px 20px 20px 40px; 
-} 
+    padding: 20px 20px 20px 40px;
+}
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
     color: #ffffff;
-    font-size: 36pt;     
-    text-decoration: none; 
-} 
+    font-size: 36pt;
+    text-decoration: none;
+}
 
 .content {
-    margin-left: 40px; 
-} 
+    margin-left: 40px;
+}
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive; 
-} 
+    font-family: 'Lobster', cursive;
+}
 
 .date {
-    color: #828282; 
-} 
+    color: #828282;
+}
 
 .save {
-    float: right; 
+    float: right;
 }
 
 .post-form textarea, .post-form input {
-    width: 100%; 
-} 
+    width: 100%;
+}
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;     
+    color: #ffffff;
     float: right;
     font-size: 26pt;
-    margin-right: 20px; 
-} 
+    margin-right: 20px;
+}
 
 .post {
-    margin-bottom: 70px; 
+    margin-bottom: 70px;
 }
 
 .post h1 a, .post h1 a:visited {
-    color: #000000; 
+    color: #000000;
 }
 ```
 
