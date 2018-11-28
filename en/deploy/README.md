@@ -30,7 +30,7 @@ $ git config --global user.name "Your Name"
 $ git config --global user.email you@example.com
 ```
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Initializing the git repository is something we need to do only once per project. (And you won't have to re-enter the username and email ever again.)
 
 Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
 
@@ -88,7 +88,7 @@ $ git commit -m "My Django Girls app, first commit"
 
 ## Pushing your code to GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password. (Add it to your password manager, if you use one.)
 
 Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 

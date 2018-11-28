@@ -34,7 +34,7 @@ data-id="chromebook_setup" data-collapse=true ces-->
 {% include "/deploy/install_git.md" %}
 
 # Create a GitHub account
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password. (Add it to your password manager, if you use one.)
 
 # Create a PythonAnywhere account
 {% include "/deploy/signup_pythonanywhere.md" %}

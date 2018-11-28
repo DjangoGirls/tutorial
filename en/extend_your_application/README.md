@@ -186,7 +186,7 @@ $ git pull
 [...]
 ```
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets.)
 
 
 ## Updating the static files on the server

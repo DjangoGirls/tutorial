@@ -4,7 +4,7 @@ What's a template, you may ask?
 
 A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, __How the Internet works__).
+A Django template's format is described in a language called HTML. (That's the HTML we mentioned in the first chapter, __How the Internet works__.)
 
 ## What is HTML?
 
@@ -86,7 +86,7 @@ Save the file and refresh your page.
 
 ![Figure 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser. (It will also be used for bookmarks and so on.)
 
 Probably you have also noticed that each opening tag is matched by a _closing tag_, with a `/`, and that elements are _nested_ (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
@@ -170,7 +170,7 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 $ git add --all .
 ```
 
-> __Note__ `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> __Note__ `--all` means that `git` will also recognize if you've deleted files. (By default, it only recognizes new/modified files.) Also remember (from chapter 3) that `.` means the current directory.
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
@@ -206,9 +206,9 @@ $ git pull
 [...]
 ```
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets.)
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere. (You can reach other PythonAnywhere pages from the menu button on the console page.)
 
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.

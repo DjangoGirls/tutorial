@@ -998,7 +998,7 @@ Which would print:
 5
 ```
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` is a function that creates a list of numbers following one after the other. (These numbers are provided by you as parameters.)
 
 Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
