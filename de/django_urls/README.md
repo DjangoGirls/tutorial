@@ -21,8 +21,8 @@ Jede Seite im Internet braucht ihre eigene URL. Dadurch weiß deine Applikation,
 
 [...]
 """
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -49,15 +49,15 @@ Es wird Zeit, unsere erste URL zu erstellen! Wir wollen, dass 'http://127.0.0.1:
 
 Wir wollen auch, dass die `mysite/urls.py`-Datei sauber bleibt. Deshalb importieren wir die URLs unserer `Blog`-Applikation in die `mysite/urls.py`-Hauptdatei.
 
-Also los: Füge eine Zeile hinzu, die `blog.urls` importiert. Ausserdem wirst du die erste Zeile ändern müssen, da wir hier die Funktion `include` verwenden, die du auf dieser Zeile noch importieren musst.
+Also los: Füge eine Zeile hinzu, die `blog.urls` importiert. Ausserdem wirst du die Zeile `from django.urls…` ändern müssen, da wir hier die Funktion `include` verwenden, die du in dieser Zeile noch importieren musst.
 
 Deine `mysite/urls.py`-Datei sollte jetzt so aussehen:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),

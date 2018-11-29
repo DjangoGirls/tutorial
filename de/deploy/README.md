@@ -87,7 +87,7 @@ Nun speichern wir unsere Änderungen durch folgende Eingabe in der Konsole:
 
 ## Den Code auf GitHub veröffentlichen
 
-Öffne [GitHub.com](https://www.github.com) und registriere dich für ein neues, kostenloses Benutzerkonto. (Wenn du das bereits in deiner Vorbereitung auf den Workshop getan hast, dann ist das großartig!)
+Gehe auf [GitHub.com](https://www.github.com) eröffne ein neues, kostenloses Nutzerkonto. (Falls Du es bereits während der Workshop Vorbereitung eingerichtet hast, ist das großartig!) Stelle sicher, dass Du Dein Passwort nicht vergisst (füge es zu zu Deinem Passwort-Manager hinzu, falls Du einen solchen verwendest).
 
 Erstelle dann ein neues Repository und gib ihm den Namen "my-first-blog". Lass das Kontrollkästchen "initialise with a README" deaktiviert und die Einstellung der Option .gitignore leer (das haben wir schon von Hand gemacht) und lass die Lizenz auf "None".
 
@@ -161,7 +161,7 @@ Nun können wir mit dem Hilfstool unsere App von GitHub automatisch konfiguriere
 Während du die Ausführung verfolgst, wirst du sehen, was passiert:
 
 - Den Code von GitHub herunterladen
-- Eine virtualenv auf PythonAnywhere erstellen wie du sie auf deinem PC hast
+- Eine virtuelle Umgebung auf PythonAnywhere einrichten, genau wie die auf deinem eigenen Computer
 - Deine Einstellungen mit ein paar Veröffentlichungseinstellungen aktualisieren
 - Eine Datenbank auf PythonAnywhere einrichten mit dem Befehl `manage.py migrate`
 - Deine statischen Dateien einrichten (darüber lernen wir später etwas)
@@ -169,7 +169,7 @@ Während du die Ausführung verfolgst, wirst du sehen, was passiert:
 
 Diese Schritte wurden auf PythonAnywhere automatisiert, aber es sind die selben Schritte, die du bei jedem anderen Server-Provider machen müsstest.
 
-Das Wichtigste ist, dass du weisst, dass deine Datenbank auf PythonAnywhere komplett von deiner Datenbank auf deinem eigenen PC getrennt ist. Das bedeutet, sie kann unterschiedliche Posts und Administratorenkonten haben. Aus diesem Grund müssen wir das Administratorenkonto mittels `createsuperuser` initialisieren - wie wir das auf deinem eigenen Computer getan haben. PythonAnywhere hat deine virtualenv automatisch für dich aktiviert. Du musst nur noch Folgendes ausführen:
+Das Wichtigste im Moment ist, dass du weißt, dass Deine Datenbank auf PythonAnywhere vollständig unabhängig von deiner Datenbank auf deinem eigenen PC ist, so dass sie unterschiedliche Posts und Administratorenkonten haben kann. Aus diesem Grund müssen wir das Administratorenkonto mittels `createsuperuser` initialisieren - wie wir das auf deinem eigenen Computer getan haben. PythonAnywhere hat deine virtualenv automatisch für dich aktiviert. Du musst nur noch Folgendes ausführen:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -189,7 +189,7 @@ Nun kannst auch einen Blick auf deinen Code auf PythonAnywhere werfen mittels `l
     templates  tests.py  urls.py  views.py
     
 
-Du kannst auch auf die "Files"-Seite gehen und mit PythonAnywheres eingebautem Datei-Manager navigieren. (Von der "Console"-Seite gelangst über das Menü in der rechten oberen Ecke zu anderen PythonAnywhere-Seiten. Sobald du auf einer dieser Seiten bist, findest du die Links zu den anderen Seiten oben über dem Seiteninhalt.)
+Du kannst auch auf die "Files"-Seite gehen und mit PythonAnywheres eingebautem Datei-Manager navigieren. (Von der "Console"-Seite gelangst du über das Menü in der rechten oberen Ecke zu anderen PythonAnywhere-Seiten. Sobald du auf einer dieser Seiten bist, findest du die Links zu den anderen Seiten oben über dem Seiteninhalt.)
 
 ## Du bist jetzt live!
 

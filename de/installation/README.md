@@ -41,7 +41,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Einen GitHub-Account erstellen
 
-Gehe auf [GitHub.com](https://www.github.com) eröffne ein neues, kostenloses Konto.
+Gehe zu [GitHub.com](https://www.github.com) und registriere dich für ein neues, kostenfreies Benutzerkonto. Achte darauf, dass du dein Passwort nicht vergisst (füge es deinem Passwortmanager hinzu, wenn du einen benutzt).
 
 # Einen PythonAnywhere-Account erstellen
 
