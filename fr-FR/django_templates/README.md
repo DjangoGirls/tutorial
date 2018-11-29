@@ -46,7 +46,7 @@ Essayez ceci dans votre template.
 
 ![Figure 13.2](images/step2.png)
 
-Ça marche ! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. Vous pouvez mixer HTML et balises de template. Notre `body` ressemble maintenant à ceci :
+Ça marche ! Cependant, nous aimerions plutôt afficher les posts à la manière des posts statiques, comme lorsque nous les avions créés dans le chapitre **Introduction au HTML**. Vous pouvez mixer HTML et balises de template. Notre `body` ressemble maintenant à ceci :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -68,13 +68,13 @@ Essayez ceci dans votre template.
 
 ![Figure 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Nous accédons aux données associées à chaque champ défini dans notre modèle `Post`. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Avez-vous remarqué que nous avons utilisé une notation légèrement différente cette fois-ci (`{{ post.title }}` ou `{{ post.text }}`) ? Nous accédons aux données associées à chaque champ défini dans notre modèle `Post`. De même, le `|linebreaksbr` nous permet de rediriger le texte des posts à travers un filtre qui convertit automatiquement les fins de lignes en paragraphes.
 
 ## Une dernière chose
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur Internet. Nous allons essayer de le re-déployer sur PythonAnywhere. Voici un récapitulatif des étapes…
 
-* First, push your code to GitHub
+* En premier lieu, envoyez votre code sur GitHub (push)
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
     
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Pour finir, n'oubliez pas de recharger votre application web : onglet [Web](https://www.pythonanywhere.com/web_app_setup/) puis cliquez sur le bouton **Reload**. (Pour rejoindre les autres pages de PythonAnywhere à partir de la console, utilisez le bouton de menu dans le coin supérieur droit). Votre mise à jour devrait apparaître sur https://yourname.pythonanywhere.com--Allez regarder dans le navigateur ! Si les posts sur PythonAnywhere ne correspondent pas à ceux qui apparaissent dans votre version locale du blog, ne vous inquiétez pas. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 Félicitations! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
