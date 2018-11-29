@@ -21,8 +21,8 @@
 
 [...]
 """
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -49,15 +49,15 @@ urlpatterns = [
 
 Θέλουμε, επίσης, να κρατήσουμε το αρχείο `mysite/urls.py` καθαρό. Οπότε, θα κάνουμε import τα URLs από το `blog` application στο αρχείο `mysite/urls.py`.
 
-Πηγαίνετε λοιπόν, και προσθέστε αυτή τη γραμμή στο αρχείο `blog.urls`. Θα χρειαστεί, επίσης, να αλλάξετε την πρώτη γραμμή επειδή χρησιμοποιούμε την συνάρτηση `include`. Επομένως, θα χρειαστεί να προσθέσετε αυτή τη γραμμή.
+Πηγαίνετε λοιπόν, και προσθέστε αυτή τη γραμμή στο αρχείο `blog.urls`. Θα χρειαστεί, επίσης, να αλλάξετε την γραμμή `from django.urls…` επειδή χρησιμοποιούμε την συνάρτηση `include`. Επομένως, θα χρειαστεί να προσθέσετε αυτή τη γραμμή.
 
 Το αρχείο σας `mysite/urls.py` θα μοιάζει κάπως έτσι:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),

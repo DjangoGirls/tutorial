@@ -54,7 +54,7 @@
 
 Θέλουμε οι λεπτομέρειες του πρώτου μας post να εμφανίζονται σε αυτό το **URL**: http://127.0.0.1:8000/θέση/1 /
 
-Ας δημιουργήσουμε ένα URL μέσα στο αρχείο `blog/urls.py` που θα κατευθύνει το Django στο *view* με το όνομα `post_detail`, που με τη σειρά του θα δείξει ένα ολόκληρο blog post. Ανοίξτε το αρχείο `blog/urls.py` στο πρόγραμμα επεξεργασίας κώδικα και προσθέστε τη γραμμή `path('post/<int:pk>/'), views.post_detail, name='post_detail'),` έτσι ώστε το αρχείο να μοιάζει με αυτό:
+Ας δημιουργήσουμε ένα URL μέσα στο αρχείο `blog/urls.py` που θα κατευθύνει το Django στο *view* με το όνομα `post_detail`, που με τη σειρά του θα δείξει ένα ολόκληρο blog post. Ανοίξτε το αρχείο `blog/urls.py` και προσθέστε τη γραμμή `path('post/<int:pk>/', views.post_detail, name='post_detail'),` έτσι ώστε το αρχείο να μοιάζει κάπως έτσι:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
