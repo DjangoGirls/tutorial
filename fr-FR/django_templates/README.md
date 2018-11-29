@@ -4,9 +4,9 @@ Il est temps d'afficher des données ! Pour nous aider, Django fournit des balis
 
 ## Qu'est-ce que c'est que des balises de template ?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+En HTML, vous ne pouvez pas mettre directement du code Python car les navigateurs seraient incapables de le comprendre. Les navigateurs ne connaissent que le HTML. Nous vous avons signalé précédemment que HTML est du genre statique, alors que Python est bien plus dynamique.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+Les **Balises de template Django** nous permettent de transferer des choses ressemblant à du Python dans du HTML afin de nous permettre de construire des sites web plus rapidement. Cool, non ?
 
 ## Template d'affichage de la liste des posts
 
@@ -20,7 +20,7 @@ Afin d'afficher une variable dans un template Django, nous utiliserons des doubl
 {{ posts }}
 ```
 
-Essayez de faire la même chose avec votre template `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Sauvegardez votre fichier et rafraichissez votre page pour voir le résultat :
+Essayez de faire la même chose avec votre template `blog/templates/blog/post_list.html`. Ouvrez-le avec votre éditeur et remplacez tout ce qui se trouve entre la seconde balise `<div>` jusqu'au troisième `</div>` avec la ligne `{{ posts }}`. Sauvegardez votre fichier et rafraichissez votre page pour voir le résultat :
 
 ![Figure 13.1](images/step1.png)
 
