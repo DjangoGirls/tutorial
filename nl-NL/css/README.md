@@ -37,7 +37,7 @@ Tenslotte zullen we een kijkje nemen naar de bestanden die we **statische bestan
 
 ### Waar zet je statische bestanden in Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django weet al waar het de statische bestanden voor de ingebouwde "admin" app kan vinden. Nu moeten we slechts wat statische bestanden voor onze eigen app, `blog`, toe te voegen.
 
 We doen dit door een folder met de naam `static` aan te maken binnenin de blog applicatie:
 
@@ -66,7 +66,7 @@ Tijd om wat CSS te schrijven! Open het `blog/static/css/blog.css` bestand in je 
 
 We zullen hier niet te diep ingaan op het customiseren en leren over CSS. Er staan een aanbeveling voor een gratis cursus CSS op het einde van deze pagina als je meer wil leren hierover.
 
-Maar laten we wat details veranderen. Maybe we could change the color of our headers? Om kleuren te begrijpen gebruiken computers speciale kleurcodes. Deze codes beginnen met `#`, gevolgd door een combinatie van 6 letters (A-F) en cijfers (0-9). De code voor de kleur blauw is bijvoorbeeld `#0000FF`. Je vindt een groot overzicht van kleurcodes hier: http://www.colorpicker.com/. Je kunt ook voorgedefinieerde kleuren gebruiken zoals `red` en `green`.
+Maar laten we wat details veranderen. Misschien kunnen we de kleur van onze header aanpassen? Om kleuren te begrijpen gebruiken computers speciale kleurcodes. Deze codes beginnen met `#`, gevolgd door een combinatie van 6 letters (A-F) en cijfers (0-9). De code voor de kleur blauw is bijvoorbeeld `#0000FF`. Je vindt een groot overzicht van kleurcodes hier: http://www.colorpicker.com/. Je kunt ook voorgedefinieerde kleuren gebruiken zoals `red` en `green`.
 
 In je `blog/static/css/blog.css` bestand moet je de volgende code toevoegen:
 
@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` is een CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Dus als we bijvoorbeeld iets hebben als `<h1><a href="">link</a></h1>`, wordt de `h1 a` stijl die we hebben opgegeven toegepast. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` is een CSS Selector. Dit betekent dat we onze styling op alle `a` elementen binnen een `h1` element toepassen; de `h2 a` selector doet hetzelfde voor de `h2` elementen. Dus als we bijvoorbeeld iets hebben als `<h1><a href="">link</a></h1>`, wordt de `h1 a` stijl die we hebben opgegeven toegepast. In dit geval geven we de opdracht om de kleur te veranderen naar `#C25100`, een donkere kleur oranje. Je kunt natuurlijk ook je eigen kleur kiezen, maar zorg ervoor dat een een goed contrast heeft met de witte achtergrond!
 
 In een CSS bestand bepalen we de stijl voor de elementen in het HTML bestand. De eerste manier waarop we elementen identificeren, is met de naam van het element. Je hebt deze eerder voorbij zien komen als tags uit het HTML hoofdstuk. Dingen zoals `a`, `h1` en `body` zijn allemaal namen van elementen. We kunnen elementen ook identificeren bij het attribuut `class` of het attribuut `id`. Class en id zijn namen die je zelf aan een element geeft. Een class definieert een groep van elementen, en id's verwijzen naar specifieke elementen. Je kunt bijvoorbeeld de volgende tag identificeren door de tag naam `a`, de class `external_link`, of het id `link_to_wiki_page` te gebruiken:
 
@@ -89,7 +89,7 @@ In een CSS bestand bepalen we de stijl voor de elementen in het HTML bestand. De
 
 Je kunt meer over CSS lezen op [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+We moeten ook ons HTML template laten weten dat we wat CSS hebben toegevoegd. Open het `blog/templates/blog/post_list.html` bestand in de code editor en voeg deze regel helemaal aan het begin toe:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -203,7 +203,7 @@ En voeg nu de klasse `post` toe aan de `div` die je blog post bevat.
 </div>
 ```
 
-We gaan nu declaratieblokken toevoegen aan verschillende selectors. Selectors die beginnen met `.` hebben betrekking op klassen. Er is heel veel goede uitleg en tutorials over CSS te vinden op het web die je kunnen helpen om de volgende code te begrijpen. For now, copy and paste it into your `blog/static/css/blog.css` file:
+We gaan nu declaratieblokken toevoegen aan verschillende selectors. Selectors die beginnen met `.` hebben betrekking op klassen. Er is heel veel goede uitleg en tutorials over CSS te vinden op het web die je kunnen helpen om de volgende code te begrijpen. Voor nu, knip-en-plak de onderstaande code in je `blog/static/css/blog.css` bestand:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
