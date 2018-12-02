@@ -4,16 +4,16 @@
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![Το σελίδα εγγραφής του PythonAnywhere δείχνει ένα κουμπί για να δημιουργήσετε έναν δωρεάν «Beginner» λογαριασμό](../deploy/images/pythonanywhere_beginner_account_button.png)
+![H σελίδα εγγραφής του PythonAnywhere δείχνει ένα κουμπί για να δημιουργήσετε έναν δωρεάν «Beginner» λογαριασμό](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Σημείωση** Όταν επιλέξετε όνομα χρήστη θυμηθείτε ότι τα urls του blog σας θα έχουν τη μορφή `yourusername.pythonanywhere.com`. Οπότε επιλέξτε είτε το συνηθισμένο σας όνομα χρήστη (πχ αυτό που βάλατε στο GitHub) είτε κάποιο που να ταιριάζει με τη θεματολογία του blog σας. Επίσης, σιγουρευτείτε ότι θα θυμάστε τον κωδικό πρόσβασης σας.
 
 ## Δημιουργώντας ένα PythonAnywhere API token
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+Αυτό είναι κάτι που πρέπει να κάνετε μόνο μια φορά. Μετά την εγραφή σας στο  PythonAnywhere θα μεταφερθείτε στο ταμπλό σας. Βρείτε το σύνδεσμο "Λογαριασμός" πάνω δεξιά στη σελίδα σας:
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+![Σύνδεσμος λογαριασμού πάνω δεξιά στη σελίδα](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+στη συνέχεια επιλέξτε την καρτέλα που ονομάζεται "API Token" και πατήστε το κουμπί που λεει "Δημιουργία νέου  API Token".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![Η καρτέλα "API Token" στη σελίδα λογαριασμού](../deploy/images/pythonanywhere_create_api_token.png)
