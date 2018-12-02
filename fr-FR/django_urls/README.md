@@ -96,8 +96,8 @@ La dernière partie, `name='post_list'`, est le nom de l'URL qui sera utilisée 
 
 Si vous essayez d'aller sur http://127.0.0.1:8000/ maintenant, vous trouverez un message du style « page web non disponible ». C’est parce que le serveur (vous vous souvenez d'avoir tapé `runserver` ?) n'est plus en exécution. Jetez un oeil à la console pour savoir pourquoi.
 
-![Error](images/error1.png)
+![Erreur](images/error1.png)
 
-Votre console affiche une erreur, mais ne vous inquiétez pas – c’est en fait très utile : elle vous dit qu’il n’existe aucun attribut « post_list » (**no attribute 'post_list'**). C’est le nom de la *vue* que Django essaie de trouver et d’utiliser, or nous ne l'avons pas encore créée. À ce stade, votre `/admin/` ne fonctionnera pas non plus. Pas de problème, on y vient. Si vous voyez un message d’erreur différent, essayez de redémarrer votre serveur web. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Votre console affiche une erreur, mais ne vous inquiétez pas – c’est en fait très utile : elle vous dit qu’il n’existe aucun attribut « post_list » (**no attribute 'post_list'**). C’est le nom de la *vue* que Django essaie de trouver et d’utiliser, or nous ne l'avons pas encore créée. À ce stade, votre `/admin/` ne fonctionnera pas non plus. Pas de problème, on y vient. Si vous voyez un message d’erreur différent, essayez de redémarrer votre serveur web. Pour ce faire, appuyez Ctrl + C (les touches contrôle et C ensemble) dans la fenêtre de console qui exécute le serveur web, puis redémarrez le serveur en exécutant la commande `python manage.py runserver`.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> Si vous voulez en savoir plus au sujet de la configuration des URLs dans Django, vous pouvez consulter la documentation officielle : https://docs.djangoproject.com/en/2.0/topics/http/urls/
