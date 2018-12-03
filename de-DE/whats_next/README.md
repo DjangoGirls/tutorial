@@ -30,13 +30,13 @@ Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Program
 - [Googles Python-Kurs](https://developers.google.com/edu/python/)
 - [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) – die ersten Übungen sind kostenlos
 - [New Coder Tutorials](http://newcoder.io/tutorials/) – eine Vielzahl von praktischen Beispielen, wie Python verwendet werden kann
-- [edX](https://www.edx.org/course?search_query=python) – die meisten Kurse sind kostenfrei, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
+- [edX](https://www.edx.org/course?search_query=python) – die meisten Kurse kannst du kostenfrei testen, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
 - [Courseras Python-Kurse](https://www.coursera.org/specializations/python) – einige Video-Vorträge sind kostenlos
 
 #### Mit Daten arbeiten
 
-- [Der Data Science Kurs von Codecademy](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – die meisten Kurse sind kostenfrei, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
+- [Der Data-Science-Kurs von Codecademy](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – die meisten Kurse kanst du kostenfrei testen, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
 - [Dataquest](https://www.dataquest.io/) – die ersten 30 "Missionen" sind frei
 
-Wir können es nicht abwarten zu sehen, was du als Nächstes baust!
+Wir gespannt darauf, was du als Nächstes baust!
