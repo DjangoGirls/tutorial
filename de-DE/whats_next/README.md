@@ -10,7 +10,7 @@ Und dann folge Django Girls doch auf [Facebook](http://facebook.com/djangogirls)
 
 ### Könnt ihr weiteres Lernmaterial empfehlen?
 
-Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Programmierfähigkeiten - es kann ziemlich entmutigend sein, herauszufinden, was man als Nächstes machen sollte, aber wir helfen dir dabei. Was auch immer du für Interessen hattest, bevor du zu Django Girls gekommen bist und was auch immer du für Interessen während des Tutorials entwickelt hast, hier sind einige kostenfreie Ressourcen (oder solche mit kostenlosen Komponenten), die du nutzen kannst, um auf deinem Weg voranzukommen.
+Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Programmierfähigkeiten – es kann ziemlich entmutigend sein, herauszufinden, was man als Nächstes machen sollte, aber wir helfen dir dabei. Was auch immer du für Interessen hattest, bevor du zu Django Girls gekommen bist und was auch immer du für Interessen während des Tutorials entwickelt hast, hier sind einige kostenfreie Ressourcen (oder solche mit kostenlosen Komponenten), die du nutzen kannst, um auf deinem Weg voranzukommen.
 
 #### Django
 
