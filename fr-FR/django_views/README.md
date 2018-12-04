@@ -2,13 +2,13 @@
 
 Il est enfin temps de se débarrasser du bug que nous avons créé dans le chapitre précédent! :)
 
-C'est dans la *vue* que nous allons ranger toute la partie "logique" de notre application. C'est elle qui va se charger d'aller chercher les informations liées à notre `modèle `que nous venons de créer et de les passer à un `template`. Nous allons créer ce template dans le chapitre suivant. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+C'est dans la *vue* que nous allons ranger toute la partie "logique" de notre application. C'est elle qui va se charger d'aller chercher les informations liées à notre `modèle `que nous venons de créer et de les passer à un `template`. Nous allons créer ce template dans le chapitre suivant. Concrètement, les vues ne sont que des fonctions Python un peu plus élaborées que celles que nous avons créées dans la partie **Introduction à Python**.
 
 Les vues sont placées dans le fichier `views.py`. Nous allons créer nos *vues* dans le fichier `blog/views.py`.
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+Ok, allons-y ! Ouvrons ce fichier dans notre éditeur de code pour voir ce qu'il contient :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -18,7 +18,7 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Not too much stuff here yet.
+Pas beaucoup de choses pour l'instant.
 
 Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
 
