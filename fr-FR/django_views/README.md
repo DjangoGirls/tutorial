@@ -1,4 +1,4 @@
-# Django views – time to create!
+# Vues Django - C'est l'heure de créer !
 
 Il est enfin temps de se débarrasser du bug que nous avons créé dans le chapitre précédent! :)
 
@@ -20,9 +20,9 @@ from django.shortcuts import render
 
 Pas beaucoup de choses pour l'instant.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+N’oubliez pas que les lignes commençant par `#` sont des commentaires, ce qui signifie qu'elles ne sont pas exécutées par Python.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+Nous allons créer une *vue* comme l’indique le commentaire. Ajoutez la vue minimale suivante :
 
 {% filename %}blog/views.py{% endfilename %}
 
