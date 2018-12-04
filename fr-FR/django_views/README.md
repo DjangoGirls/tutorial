@@ -31,14 +31,14 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
+Comme vous pouvez le voir, nous avons créé une fonction (`def`) appelée `post_list` qui prend une `request (requête)` et qui va `return (retourner)` la valeur donnée par une autre fonction `render` qui va assembler notre template `blog/post_list.html`.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+Sauvegardez votre fichier et allez à l'adresse http://127.0.0.1:8000/ pour voir ce qui s'affiche maintenant.
 
 Une autre erreur ! Voyons ce qu'elle nous dit :
 
 ![Erreur](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Cela indique que le serveur tourne, ce qui est bien, mais il y a quelque chose qui ne va pas, non ? Ne vous inquiétez pas, c’est juste une page d’erreur, il ne faut pas avoir peur d'elle ! Au contraire, tout comme les messages d’erreur dans la console, elle nous est très utile. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
 > Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
