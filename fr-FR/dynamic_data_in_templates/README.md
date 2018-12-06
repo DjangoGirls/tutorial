@@ -32,7 +32,7 @@ Ok, et après ? Afin de pouvoir aller chercher les véritables posts de blog de 
 
 ## QuerySet
 
-You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+Normalement, ce mot doit vous évoquer quelque chose. Nous en avons un peu parlé dans la section [Django ORM (QuerySets)](../django_orm/README.md).
 
 So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
 
