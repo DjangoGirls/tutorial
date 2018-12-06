@@ -60,7 +60,7 @@ Il nous manque encore un petit quelque chose : passer notre QuerySet `posts` à 
 
 Veuillez noter que nous créons une *variable* pour notre QuerySet : `posts`. Considérez que c'est le nom de notre QuerySet. À partir de maintenant, nous allons pouvoir faire référence à notre QuerySet en utilisant ce nom.
 
-Dans la fonction `render`, nous avons un paramètre `request`, qui désigne tout ce que nous recevons d'un utilisateur par l'intermédiaire d'Internet, et un autre qui signale le fichier template (`'blog/post_list.html'`). Le dernier paramètre, `{}`, va nous permettre de glisser des instructions que notre template va suivre. Nous avons par exemple de lui donner des noms : nous allons rester sur `'posts'` pour le moment). :) Ça va ressembler à ça : `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+Dans la fonction `render`, nous avons un paramètre `request`, qui désigne tout ce que nous recevons d'un utilisateur par l'intermédiaire d'Internet, et un autre qui signale le fichier template (`'blog/post_list.html'`). Le dernier paramètre, `{}`, va nous permettre de glisser des informations que notre template va utiliser. Nous devons donner des noms à ces informations (nous allons rester sur `'posts'` pour le moment). :) Ça va ressembler à ça : `{'posts': posts}`. La partie située avant `:` est une chaine de caractères ; vous devez donc l'entourer de guillemets : `''`.
 
 Au final, notre fichier `blog/views.py` doit ressembler à ceci maintenant :
 
@@ -78,4 +78,4 @@ def post_list(request):
 
 Et voilà, c'est bon ! Nous allons retourner du côté de notre template pour que notre QuerySet puisse s'afficher correctement !
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
+Si vous voulez en savoir plus sur les QuerySets, n'hésitez pas à consulter la documentation officielle du framework : https://docs.djangoproject.com/en/2.0/ref/models/querysets/
