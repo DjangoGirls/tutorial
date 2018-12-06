@@ -2,11 +2,11 @@
 
 Nous avons différents morceaux en place : le modèle `Post` qui est définit dans le fichier `models.py`, la vue `post_list` dans `views.py` et nous venons de créer notre template. Mais comment allons-nous faire pour faire apparaître nos posts dans notre template HTML ? Car au final, n'est-ce pas le but que nous souhaiterions atteindre ? Nous aimerions prendre du contenu, en l’occurrence notre modèle sauvegardé dans notre base de données, et réussir à joliment l'afficher dans notre template.
 
-C'est à ça que servent les *vues* : connecter les modèles et les templates. Dans notre *vue* `post_list`, nous allons avoir besoin de prendre les modèles dont nous avons besoin et de les passer au template. In a *view* we decide what (model) will be displayed in a template.
+C'est à ça que servent les *vues* : connecter les modèles et les templates. Dans notre *vue* `post_list`, nous allons avoir besoin de prendre les modèles dont nous avons besoin et de les passer au template. C'est dans la *vue* que nous allons décider ce qui va s'afficher (quel modèle) dans un template.
 
-OK, so how will we achieve this?
+Ok, et sinon, on fait comment ?
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+Nous allons avoir besoin d'ouvrir le fichier `blog/views.py` dans l'éditeur de code. Pour l'instant, la *vue* `post_list` ressemble à ceci :
 
 {% filename %}blog/views.py{% endfilename %}
 
