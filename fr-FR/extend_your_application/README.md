@@ -54,7 +54,7 @@ Allons créer notre URL dans le fichier `urls.py` pour notre *vue* `post_detail`
 
 Nous aimerions que le contenu de notre premier post s'affiche à cette **URL** : http://127.0.0.1:8000/post/1/
 
-Allons créer une URL dans le fichier `blog/urls.py` qui dirigera Django vers une *vue* appelée `post_detail`. Cela nous permettra d'afficher l'intégralité d'un post de blog. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Allons créer une URL dans le fichier `blog/urls.py` qui dirigera Django vers une *vue* appelée `post_detail`. Cela nous permettra d'afficher l'intégralité d'un post de blog. Ouvrez le fichier `blog/urls.py` dans l’éditeur de code et ajoutez la ligne `path('post/<int:pk>/', views.post_detail, name='post_detail'),` afin que le fichier ressemble à ceci :
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
