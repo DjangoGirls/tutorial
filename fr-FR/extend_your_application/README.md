@@ -30,7 +30,7 @@ Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templa
 {% endblock %}
 ```
 
-{% raw %}Nous aimerions pouvoir cliquer sur le titre du post et arriver sur une page avec le contenu de celui-ci. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
+{% raw %}Nous aimerions pouvoir cliquer sur le titre du post et arriver sur une page avec le contenu de celui-ci. Pour cela, changeons `<h1><a href="">{{ post.title }}</a></h1>` pour qu'il pointe vers la page de contenu du post :{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,21 +38,21 @@ Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templa
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %}C'est le moment parfait pour expliquer ce mystérieux `{% url 'post_detail' pk=post.pk %}`. Vous vous souvenez peut-être que la notation `{% %}` nous permet d'utiliser les balises de template Django. Cette fois-ci, nous allons utiliser des balises qui vont s'occuper de créer des URLs à notre place !{% endraw %}
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+La partie `post_detail` signifie que Django s'attend de trouver une URL en `blog/urls.py` avec nom = post_detail
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+Et qu’en est-il de `pk=post.pk` ? `pk` est l’abréviation de clé primaire ("primary key" en anglais), qui est une référence unique pour chaque élément enregistré dans une base de données. Comme nous n'avons pas spécifiée de clé primaire dans notre modèle `Post`, Django en crée une pour nous (par défaut, un nombre qui augmente d’un pour chaque enregistrement, c'est-à-dire 1, 2, 3 etc..) et l’ajoute comme un champ nommé `pk` à chacun de nos posts. Nous accédons à la clé primaire en écrivant `post.pk`, de la même manière que nous pouvons accéder à d'autres champs (`titre`, `auteur`, etc...) dans notre objet `Post` !
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+Maintenant si nous jetons un coup d’œil à http://127.0.0.1:8000/, nous rencontrons une erreur. Ceci est prévisible, puisque nous n'avons ni d'URL ni de *view* pour `post_detail`. L'erreur ressemble à ceci :
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
 ## Créer une URL vers le contenu d'un post
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+Allons créer notre URL dans le fichier `urls.py` pour notre *vue* `post_detail`!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+Nous aimerions que le contenu de notre premier post s'affiche à cette **URL** : http://127.0.0.1:8000/post/1/
 
 Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
