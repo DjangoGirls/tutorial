@@ -2,17 +2,17 @@
 
 # Finaliser votre application
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+Nous avons déjà franchi toutes les étapes nécessaires à la création de notre site web : nous savons maintenant comment écrire un modèle, une URL, une vue et un template. Nous avons même réussi à rendre notre site web plus joli !
 
-Time to practice!
+C'est le moment de pratiquer tout ce que vous avez appris !
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+Tout d'abord, il faudrait que notre blog possède une page qui permet d'afficher un post, n'est-ce pas ?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+Nous avons déjà un modèle `Post`, nous n'avons donc pas besoin d'ajouter quoi que ce soit à `models.py`.
 
 ## Créer un lien dans un template
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Nous allons tout d'abord ajouter un lien à l'intérieur du fichier `blog/templates/blog/post_list.html`. Ouvrez-le dans l’éditeur de code et voyez qu'il devrait ressembler à ceci : {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
