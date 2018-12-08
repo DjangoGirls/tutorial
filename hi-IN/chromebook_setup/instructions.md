@@ -11,14 +11,14 @@ Cloud IDE एक ऐसा उपकरण है जो आपको कोड 
 3. *नया सर्वर* क्लिक करें
 4. टर्मिनल बटन पर क्लिक करें (विंडो के बाईं तरफ)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+अब आपको बाईं ओर बटन, एक साइडबार के साथ एक इंटरफ़ेस देखना चाहिए। इस तरह के प्रॉम्प्ट से टर्मिनल विंडो खोलने के लिए "Terminal" बटन पर क्लिक करें:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+PaizaCloud Cloud IDE का टर्मिनल आपके निर्देशों के लिए तैयार हो जाता है। आप इसे थोड़ा बड़ा बनाने के लिए विंडो को resize या maximize कर सकते हैं।
 
 #### AWS Cloud9
 
