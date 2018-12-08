@@ -64,12 +64,12 @@ Cloud 9 इंटरफ़ेस के नीचे अपने टर्म�
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+एक [GitHub](https://github.com) खाता बनाएँ.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls ट्यूटोरियल में एक सेक्शन शामिल है जिसे परिनियोजन(Deployment) कहा जाता है, जो कोड को लेने की प्रक्रिया है, जो आपके नए वेब एप्लिकेशन को सशक्त करती है और इसे सार्वजनिक रूप से सुलभ कंप्यूटर (सर्वर कहा जाता है) में ले जाती है ताकि अन्य लोग आपका काम देख सकें।
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Chromebook पर ट्यूटोरियल करते के लिए यह हिस्सा थोड़ी अजीब है क्योंकि हम एक कंप्यूटर का उपयोग कर रहे हैं जो इंटरनेट से पहले से ही जुड़ा है (या एक लैपटॉप कहे)। However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
