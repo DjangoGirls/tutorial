@@ -37,7 +37,7 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 ### Virtual Environment
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+virtual environment (जिसे virtualenv भी कहा जाता है) एक निजी बॉक्स की तरह है जहाँ हम एक प्रोजेक्ट के लिए उपयोगी कंप्यूटर कोड रख सकते है, जिस पर हम काम कर रहे हो। We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
