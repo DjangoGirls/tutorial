@@ -2,11 +2,11 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE एक ऐसा उपकरण है जो आपको कोड एडिटर और इंटरनेट से कंप्यूटर चलाने देता है जहाँ आप सॉफ़्टवेयर इंस्टॉल, लिख और चला सकते हैं। ट्यूटोरियल के दौरान, cloud IDE आपके लिए *स्थानीय मशीन* की तरह कार्य करेगा। आप अभी भी OS X, Ubuntu, or Windows पर अपने सहपाठियों की तरह टर्मिनल इंटरफ़ेस में कमांड चला पा रहे होंगे, लेकिन आपका टर्मिनल कहीं और चलने वाले कंप्यूटर से कनेक्ट होगा जो cloud IDE आपके लिए सेट अप करता है। Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE एक ऐसा उपकरण है जो आपको कोड एडिटर और इंटरनेट से कंप्यूटर चलाने देता है जहाँ आप सॉफ़्टवेयर इंस्टॉल, लिख और चला सकते हैं। ट्यूटोरियल के दौरान, cloud IDE आपके लिए *स्थानीय मशीन* की तरह कार्य करेगा। आप अभी भी अपने सहपाठियों की तरह OS X, Ubuntu, या Windows पर टर्मिनल इंटरफ़ेस में कमांड चला पा रहे होंगे, लेकिन आपका टर्मिनल कहीं और चलने वाले कंप्यूटर से कनेक्ट होगा जो cloud IDE आपके लिए सेट अप करता है। cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9) के लिए निर्देश यहाँ दिए गए हैं। आप cloud IDEs में से एक चुन सकते हैं, और cloud IDE के निर्देशों का पालन कर सकते हैं।
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
+1. [PaizaCloud Cloud IDE](https://paiza.cloud/) पर जाएँ
 2. Sign up for an account
 3. Click *New Server*
 4. Click Terminal button(on the left side of the window)
