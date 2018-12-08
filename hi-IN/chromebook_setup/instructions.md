@@ -22,11 +22,11 @@ PaizaCloud Cloud IDE का टर्मिनल आपके निर्द�
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. [AWS Cloud9](https://aws.amazon.com/cloud9/) पर जाएँ
+2. खाता के लिए साइन अप करें
+3. *Create Environment* क्लिक करें
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+अब आपको साइडबार के साथ एक इंटरफेस देखना चाहिए, कुछ टेक्स्ट के साथ एक बड़ी मुख्य विंडो, और नीचे छोटी विंडो जो इस तरह दिखती है
 
 {% filename %}bash{% endfilename %}
 
