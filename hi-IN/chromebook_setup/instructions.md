@@ -2,7 +2,7 @@
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE एक ऐसा उपकरण है जो आपको कोड एडिटर और इंटरनेट से कंप्यूटर चलाने देता है जहाँ आप सॉफ़्टवेयर इंस्टॉल, लिख और चला सकते हैं। ट्यूटोरियल के दौरान, cloud IDE आपके लिए *स्थानीय मशीन* की तरह कार्य करेगा। आप अभी भी OS X, Ubuntu, or Windows पर अपने सहपाठियों की तरह टर्मिनल इंटरफ़ेस में कमांड चला पा रहे होंगे, लेकिन आपका टर्मिनल कहीं और चलने वाले कंप्यूटर से कनेक्ट होगा जो cloud IDE आपके लिए सेट अप करता है। Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
