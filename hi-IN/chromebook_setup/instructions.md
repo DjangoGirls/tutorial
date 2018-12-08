@@ -37,9 +37,9 @@ This bottom area is your *terminal*, where you will give the computer Cloud 9 ha
 
 ### Virtual Environment
 
-virtual environment (जिसे virtualenv भी कहा जाता है) एक निजी बॉक्स की तरह है जहाँ हम एक प्रोजेक्ट के लिए उपयोगी कंप्यूटर कोड रख सकते है, जिस पर हम काम कर रहे हो। We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+virtual environment (जिसे virtualenv भी कहा जाता है) एक निजी बॉक्स की तरह है जहाँ हम एक प्रोजेक्ट के लिए उपयोगी कंप्यूटर कोड रख सकते है, जिस पर हम काम कर रहे हो। हम विभिन्न कोडों के बिट को रखने के लिए उनका उपयोग करते हैं जिन्हें हम अपनी विभिन्न परियोजनाओं के लिए अलग उपयोग करना चाहते है, ताकि चीजें कई परियोजनाओं में मिश्रित न हो सके।
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Cloud 9 इंटरफ़ेस के नीचे अपने टर्मिनल में, निम्न रन करें:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+यदि यह अभी भी काम नहीं करता है, तो कोच से कुछ मदद मांगे।
 
-Next, run:
+अगला, रन करें:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,7 +60,7 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(ध्यान दें कि आखिरी पंक्ति पर हम एक टिल्ड का उपयोग करते हैं जिसके बाद बराबर चिह्न होता है: ~ =)।
 
 ### GitHub
 
