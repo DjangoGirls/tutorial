@@ -1,4 +1,4 @@
-आपके पास टेक्स्ट एडिटर (जहाँ आप कोड लिखेंगे) के कई चुनाव उपलब्ध हैं। आप अपनी पसंद के अनुसार किसी भी टेक्स्ट एडिटर का प्रयोग कर सकते हैं। ज्यादातर प्रोग्रामर काफी जटिल परंतु शक्तिशाली IDE (जिसमे कई कार्य करने की क्षमता हो) का प्रयोग करते हैं जैसे की PyCharm। एक नए व्यक्ति के लिए हम किसी वैसे टेक्स्ट एडिटर का सुझाव देंगे, जो समझने में सरल हो और जो साथ साथ में शक्तिशाली भी हो।
+आपके पास टेक्स्ट एडिटर (जहाँ आप कोड लिखेंगे) के कई चुनाव उपलब्ध हैं। आप अपनी पसंद के अनुसार किसी भी टेक्स्ट एडिटर का प्रयोग कर सकते हैं। अधिकांश पायथन प्रोग्रामर जटिल लेकिन अत्यंत शक्तिशाली IDEs (Integrated Development Environments) का उपयोग करते हैं, जैसे कि PyCharm। एक नए व्यक्ति के लिए हम किसी वैसे टेक्स्ट एडिटर का सुझाव देंगे, जो समझने में सरल हो और जो साथ साथ में शक्तिशाली भी हो।
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
@@ -22,7 +22,7 @@ Atom is another popular editor. It's free, open-source and available for Windows
 
 ## हम क्यों एक कोड एडिटर इनस्टॉल रहे हैं ?
 
-हो सकता है आप सोच रहे हो की भला हम नया कोड एडिटर सॉफ्टवेयर क्यों इनस्टॉल कर रहे है वर्ड (Word) या नोटपैड (Notepad) इस्तेमाल क्यों नहीं कर रहे। 
+आप सोच रहे होंगे कि हम Word या Notepad जैसे कुछ का उपयोग करने के बजाय, इस विशेष कोड एडिटर सॉफ़्टवेयर को क्यों इंस्टॉल कर रहे हैं।
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
