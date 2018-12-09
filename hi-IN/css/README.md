@@ -10,13 +10,13 @@ Cascading Style Sheets (CSS) एक भाषा है जो मार्क�
 
 ## चलिए बूटस्ट्रैप का उपयोग करें!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+बूटस्ट्रैप बढ़िया वेबसाइटों के विकास के लिए सबसे लोकप्रिय HTML और CSS फ्रेमवर्कोंं से एक है: वेबसाइट: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+यह प्रोग्रामर द्वारा लिखे गए थे जिन्होंने ट्विटर के लिए काम किया था। अब यह दुनिया भर से स्वयंसेवकों द्वारा विकसित किया जा रहा है!
 
 ## बूटस्ट्रैप इनस्टॉल करें। 
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+बूटस्ट्रैप को इनस्टॉल करने के लिए, कोड एडिटर में अपनी `.html` फ़ाइल खोलें और इसे `<head>` अनुभाग से जोड़ें:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,15 +25,15 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+यह आपकी परियोजना में कोई भी फाइल नहीं जोड़ता है। यह सिर्फ इंटरनेट पर मौजूद फ़ाइलों को इंगित करता है। तो आगे बढ़ें, अपनी वेबसाइट खोलें और पेज रीफ्रेश करें। यह रहा!
 
 ![Figure 14.1](images/bootstrap1.png)
 
-पहले से ही अच्छे नहीं लग रहा !
+पहले से ही अच्छे दिख रहा हैं!
 
 ## Django में static फ़ाइलें
 
-आखिर कर हम अब उस चीज पे भी एक करीबी निगाह डालते है जिससे हम **Static Files** कहते है। Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+आखिरकार हम इन चीजों पर नज़र डालेंगे जिन्हें हम **static files** कह रहे हैं। Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
 ### Django के लिए Static Files कहाँ रखें । 
 
