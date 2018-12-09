@@ -194,9 +194,9 @@ Puis, dans la console bash de [PythonAnywhere](https://www.pythonanywhere.com/co
 
 ## Mise à jour des fichiers statiques sur le serveur
 
-Des serveurs comme PythonAnywhere réservent un traitement particuliers aux "fichiers statiques" (par exemple les fichiers CSS), notamment afin de les charger plus rapidement. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Des serveurs comme PythonAnywhere réservent un traitement particuliers aux "fichiers statiques" (par exemple les fichiers CSS), notamment afin de les charger plus rapidement. En conséquence, à chaque fois que nos fichiers CSS changent, nous devons executer une commande pour que le serveur les mette à jour. Cette commande s'appelle `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Démarrez en activant votre virtualenv, s'il n'est pas toujours actif (PythonAnywhere propose la commande `workon`, ce qui est l'équivalent de `source myenv/bin/activate` sur votre ordinateur) :
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -205,7 +205,7 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+La commande `manage.py collectstatic` nous rappelle un peu `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
 
 In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
 
