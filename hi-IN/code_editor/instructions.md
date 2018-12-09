@@ -26,6 +26,6 @@ Atom एक और लोकप्रिय एडिटर है। यह म
 
 पहला कारण यह है कि कोड को **plain text** होना चाहिए, और Word और Textedit जैसे प्रोग्रामों की समस्या यह है कि वे वास्तव में plain टेक्स्ट नहीं बनाते हैं, वे rich टेक्स्ट (फोंट और फॉर्मेटिंग के साथ) कस्टम फॉरमेट उत्पन्न करते हैं, जैसे [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format) 
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+दूसरा कारण यह है कि कोड एडिटर कोड के सम्पादन के लिए विशिष्ट हैं, इसलिए वे सहायक फ़ीचर्स प्रदान कर सकते हैं जैसे कि कोड को उसके अर्थ के अनुसार रंग से हाइलाइट करना, या स्वचालित ही आपके लिए उद्धरण-चिह्न को लगाना।
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+हम इसे बाद की कार्रवाई में देखेंगे। जल्द ही, आप अपने भरोसेमंद पुराने कोड एडिटर को अपने पसंदीदा टूल मानने लगेंगें। :)
