@@ -164,10 +164,8 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~$ python3 -m pip install --upgrade pip
+(myvenv) ~$ python -m pip install --upgrade pip
 ```
-
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) instead.
 
 ### Installing packages with requirements
 
