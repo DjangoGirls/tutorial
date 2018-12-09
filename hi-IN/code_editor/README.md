@@ -1,11 +1,11 @@
 # कोड एडिटर
 
-> घर पर पाठकों के लिए: इस अध्याय अधिष्ठापन पायथन वर्ग में शामिल है
+> घर के पाठकों के लिए: यह अध्याय [ Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) वीडियो में पूरा किया गया है।
 
 आप कोड की पहली लाइन लिखने जा रहे है इसलिए अब आप को कोड एडिटर डाउनलोड कर लेना चाहिये।
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> ** नोट:- </ strong> यदि आप Chromebook का उपयोग कर रहे हैं, तो इस अध्याय को छोड़ दें और सुनिश्चित करें कि आप [ Chromebook सेटअप ](../chromebook_setup/README.md) निर्देशों का पालन करें। आपके द्वारा चुने गए cloud IDE (PaizaCloud Cloud IDE or AWS Cloud9) में कोड संपादक शामिल है, और जब आप फ़ाइल मेनू से अपने IDE में कोई फ़ाइल खोलते हैं, तो आप स्वचालित ही संपादक का उपयोग कर पाएँगे।</p> 
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
-
-{% include "/code_editor/instructions.md" %}
+> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!</blockquote> 
+> 
+> {% include "/code_editor/instructions.md" %}
