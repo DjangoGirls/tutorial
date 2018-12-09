@@ -106,9 +106,9 @@ La bonne nouvelle, c'est que vous pouvez créer vous-mêmes votre page `Page non
 
 Ok, ajoutons notre *vue* à notre fichier `views.py`!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+Dans le fichier `blog/urls.py` nous avons crée un modèle d'URL `post_detail` qui fait référence à la vue `views.post_detail`. En conséquence, Django s'attend à qu'une fonction `post_detail` soit définie dans le fichier `blog/views.py`.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+Ouvrez maintenant le fichier `blog/views.py` dans l'éditeur de code et ajoutez la ligne suivante après les autres lignes du type `from` qui existent déjà :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +116,7 @@ We should open `blog/views.py` in the code editor and add the following code nea
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+A la fin du fichier nous ajoutons finalement notre *view* :
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -126,17 +126,17 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Hop, réactualisons la page http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+C'est bon, ça a marché ! Mais que ce passe-t-il lorsque nous cliquons sur un lien dans un titre de blog post ?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+Oh non ! Encore une erreur ! Mais cette fois, vous savez quoi faire : nous avons besoin d'un template !
 
-## Create a template for the post details
+## Créer un template pour le contenu du post
 
 We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
