@@ -4,11 +4,11 @@
 
 ## CSS क्या है ?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Cascading Style Sheets (CSS) एक भाषा है जो मार्कअप भाषा (जैसे HTML) में लिखी गई वेबसाइट के स्वरूप और फॉर्मेट का बताने के लिए प्रयोग की जाती है। इसे हमारे वेब पेज के लिए मेक-अप की तरह देखें। ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+लेकिन हम फिर से स्क्रैच से शुरू नहीं करना चाहते हैं, है ना? एक बार और, हम इंटरनेट पर प्रोग्रामर द्वारा मुफ्त में रिलीज़ किए गए किसी चीज़ का इस्तेमाल करेंगे। पहिया का अविष्कार फिर से करना कोई खेल नहीं है, आपको पता है।
 
-## चलो बूटस्ट्रैप का उपयोग करें!
+## चलिए बूटस्ट्रैप का उपयोग करें!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
