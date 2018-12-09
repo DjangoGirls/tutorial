@@ -66,9 +66,9 @@ Django स्वचालित रूप से आपके किसी भ�
 
 हम यहाँँ CSS के बारे में अनुकूलित करने(customizing) और सीखने में बहुत गहरा नहीं जाएँगे। यदि आप और जानना चाहते हैं तो इस पृष्ठ के अंत में एक मुफ्त CSS पाठ्यक्रम की संस्तुति है।
 
-लेकिन चलिए कम से कम थोड़ा करते हैं। शायद हम अपने हेडर का रंग बदल सकें ? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+लेकिन चलिए कम से कम थोड़ा करते हैं। शायद हम अपने हेडर का रंग बदल सकें? रंगों को समझने के लिए, कंप्यूटर विशेष कोड का उपयोग करते हैं। ये कोड `#` के बाद 6 अक्षर (A–F) और संख्याएँ (0-9) के साथ शुरू होते हैं। उदाहरण के लिए, नीले रंग का कोड `#0000FF` है। आप http://www.colorpicker.com/ पर कई रंगों के लिए रंग कोड पा सकते हैं। आप [पूर्वनिर्धारित रंग](http://www.w3schools.com/colors/colors_names.asp) का भी उपयोग कर सकते हैं, जैसे कि `लाल` और `हरा`।
 
-In your `blog/static/css/blog.css` file you should add the following code:
+आपको `blog/static/css/blog.css` फ़ाइल में निम्न कोड जोड़ना चाहिए:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` एक CSS Selector है। This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
