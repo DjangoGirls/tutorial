@@ -162,15 +162,15 @@ Une nouvelle fois, nous faisons hériter de `base.html`. Dans le `content` block
 
 {% raw %}`{% if ... %} ... {% endif %}` est une balise de template que nous pouvons utiliser si nous voulons vérifier quelque chose. (Vous souvenez-vous de `if ... else ..` que nous avons appris dans le chapitre **Introduction à Python** ?) Dans ce cas spécifique, nous voulons vérifier que `published_date` existe.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+Ok, vous pouvez maintenant actualiser votre page et voir si `TemplateDoesNotExist` a enfin disparu.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+Yay ! Ça marche!
 
-# Deploy time!
+# C'est le moment de deployer !
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Ce serait bien de mettre à jour la version de notre site sur PythonAnywhere. On s'accroche et on déploie encore une fois :)
 
 {% filename %}command-line{% endfilename %}
 
@@ -181,7 +181,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Puis, dans la console bash de [PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -190,11 +190,11 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(N’oubliez pas de remplacer `<your-pythonanywhere-username>` avec votre propre nom d’utilisateur sur PythonAnywhere, sans les chevrons).
 
-## Updating the static files on the server
+## Mise à jour des fichiers statiques sur le serveur
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Des serveurs comme PythonAnywhere réservent un traitement particuliers aux "fichiers statiques" (par exemple les fichiers CSS), notamment afin de les charger plus rapidement. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
 
 Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
