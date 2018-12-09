@@ -1,8 +1,8 @@
-# CSS – make it pretty!
+# CSS – इसे सुंदर बनाएँ!
 
-अभी भी हमारा ब्लॉग अच्छा नहीं दिख रहा है। सही बात है ना ? इसीलिए अब समय आ गया है की हम इसे सुन्दर बनाये। इसके लिए हम CSS का इस्तेमाल करेंगे। 
+अभी भी हमारा ब्लॉग अच्छा नहीं दिख रहा है। सही बात है ना ? इसीलिए अब समय आ गया है की हम इसे सुन्दर बनाएँ। इसके लिए हम CSS का इस्तेमाल करेंगे। 
 
-## सीएसएस क्या है?
+## CSS क्या है ?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
