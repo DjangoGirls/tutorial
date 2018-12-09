@@ -53,7 +53,7 @@ Django स्वचालित रूप से आपके किसी भ�
 
 ## आपकी पहली CSS फ़ाइल!
 
-चलिए अपने वेब पेज पर अपनी शैली जोड़ने के लिए अब एक CSS फ़ाइल बनाएँँ। Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+चलिए अपने वेब पेज पर अपनी शैली जोड़ने के लिए अब एक CSS फ़ाइल बनाएँँ। अपनी `static` डायरेक्टरी के अंदर `css` नामक एक नई डायरेक्टरी बनाएँँ। फिर इस `css` डायरेक्टरी के अंदर `blog.css` नामक एक नई फ़ाइल बनाएँँ। तैयार?
 
     djangogirls
     └─── blog
@@ -62,11 +62,11 @@ Django स्वचालित रूप से आपके किसी भ�
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+कुछ CSS! लिखने का समय आ गया। अपने कोड एडिटर में `blog/static/css/blog.css` फ़ाइल खोलें
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+हम यहाँँ CSS के बारे में अनुकूलित करने(customizing) और सीखने में बहुत गहरा नहीं जाएँगे। यदि आप और जानना चाहते हैं तो इस पृष्ठ के अंत में एक मुफ्त CSS पाठ्यक्रम की संस्तुति है।
 
-But let's do at least a little. Maybe we could change the color of our headers? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+लेकिन चलिए कम से कम थोड़ा करते हैं। शायद हम अपने हेडर का रंग बदल सकें ? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
 In your `blog/static/css/blog.css` file you should add the following code:
 
