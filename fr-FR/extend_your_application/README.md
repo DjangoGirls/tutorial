@@ -46,7 +46,7 @@ Et qu’en est-il de `pk=post.pk` ? `pk` est l’abréviation de clé primaire 
 
 Maintenant si nous jetons un coup d’œil à http://127.0.0.1:8000/, nous rencontrons une erreur. Ceci est prévisible, puisque nous n'avons ni d'URL ni de *view* pour `post_detail`. L'erreur ressemble à ceci :
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![Erreur NoReverseMatch](images/no_reverse_match2.png)
 
 ## Créer une URL vers le contenu d'un post
 
@@ -96,11 +96,11 @@ Post.objects.get(pk=pk)
 
 Cependant, il y a un petit problème dans cette ligne de code. Si aucun de nos `Posts` ne possèdent cette `primary key (clef primaire)` (`pk`), nous allons nous retrouver avec une super erreur bien cracra!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![Erreur DoesNotExist](images/does_not_exist2.png)
 
 Dans l'idéal, nous aimerions pouvoir éviter ça! Encore une fois, Django nous offre l'outil parfait pour ça : `get_object_or_404`. Dans le cas où il n'existerait pas de `Post` avec le `pk` indiqué, une page d'erreur beaucoup plus sympathique s'affichera : c'est ce qu'on appelle une `erreur 404 : page non trouvée`.
 
-![Page not found](images/404_2.png)
+![Page non trouvée](images/404_2.png)
 
 La bonne nouvelle, c'est que vous pouvez créer vous-mêmes votre page `Page non trouvée` et en faire ce que vous voulez ! Reconnaissez que ce n'est pas le plus important pour le moment donc nous allons zapper cette partie ;).
 
@@ -128,11 +128,11 @@ def post_detail(request, pk):
 
 Hop, réactualisons la page http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![Vue post_list](images/post_list2.png)
 
 C'est bon, ça a marché ! Mais que ce passe-t-il lorsque nous cliquons sur un lien dans un titre de blog post ?
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![Erreur TemplateDoesNotExist](images/template_does_not_exist2.png)
 
 Oh non ! Encore une erreur ! Mais cette fois, vous savez quoi faire : nous avons besoin d'un template !
 
@@ -164,7 +164,7 @@ Une nouvelle fois, nous faisons hériter de `base.html`. Dans le `content` block
 
 Ok, vous pouvez maintenant actualiser votre page et voir si `TemplateDoesNotExist` a enfin disparu.
 
-![Post detail page](images/post_detail2.png)
+![Page détaillée d'un post](images/post_detail2.png)
 
 Yay ! Ça marche!
 
@@ -205,8 +205,8 @@ Démarrez en activant votre virtualenv, s'il n'est pas toujours actif (PythonAny
     [...]
     
 
-La commande `manage.py collectstatic` nous rappelle un peu `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+La commande `manage.py collectstatic` nous rappelle un peu `manage.py migrate`. Nous apportons des changements à notre code, puis nous disons à Django *d'appliquer* ces changements, que ce soit pour la gestion des fichiers statiques ou pour la structure de la base de données.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
+Maintenant nous sommes prêtes à aller sur ["Web"](https://www.pythonanywhere.com/web_app_setup/) (depuis le menu en haut à droite de la console), appuyer sur **Reload** et voir les résultats à votre adresse https://yourname.pythonanywhere.com.
 
-And that should be it! Congrats :)
+Normalement, ça devrait suffire ! Encore bravo :)
