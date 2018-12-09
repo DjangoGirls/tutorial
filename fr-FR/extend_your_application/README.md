@@ -138,15 +138,13 @@ Oh non ! Encore une erreur ! Mais cette fois, vous savez quoi faire : nous avons
 
 ## Créer un template pour le contenu du post
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+Nous allons créer un fichier `post_detail.html` dans le dossier `blog/templates/blog` et nous l'ouvrons ensuite avec notre éditeur de code.
 
-It will look like this:
+Ça devrait ressembler à ceci:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
 ```html
-{% extends 'blog/base.html' %}
-
 {% block content %}
     <div class="post">
         {% if post.published_date %}
@@ -160,9 +158,9 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+Une nouvelle fois, nous faisons hériter de `base.html`. Dans le `content` block, nous voulons afficher la date de publication d'un post (si elle existe), son titre et son texte. Mais vous souhaitez peut-être quelques éclaircissements avant, non?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` est une balise de template que nous pouvons utiliser si nous voulons vérifier quelque chose. (Vous souvenez-vous de `if ... else ..` que nous avons appris dans le chapitre **Introduction à Python** ?) Dans ce cas spécifique, nous voulons vérifier que `published_date` existe.{% endraw %}
 
 OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
