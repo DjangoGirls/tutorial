@@ -67,7 +67,7 @@ Chaque page HTML est divisée en deux éléments : **head** (entête) et **body*
 
 Nous utilisons `<head>` pour transmettre la configuration de la page au navigateur tandis que `<body>` l'informe sur le contenu de la page.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+Par exemple, vous pouvez donner un titre à votre page web en utilisant l'élément titre dans le `<head>` :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -93,16 +93,16 @@ Vous avez aussi probablement remarqué que chaque balise ouvrante possède sa *b
 
 Pensez à lorsque vous mettez des choses à l'intérieur de boîtes. Vous avez une grosse boîte, `<html></html>`; à l'intérieur de celle-ci, on trouve une plus petite boîte, `<body></body>`, qui contient elle-même d'autres petites boîtes, `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Essayez de vous rappeler de cet exemple lorsque vous utilisez les balises *fermantes* et que vous avez des éléments *imbriqués*. Si vous ne suivez pas ces règles, votre navigateur risque de ne pas être capable d'interpréter votre code correctement et votre page web sera mal affichée.
 
 ## Personnaliser votre template
 
 Et si nous en profitions pour nous amuser un peu ? Essayons de personnaliser notre template ! Voici quelques balises que vous pouvez utiliser :
 
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>Titre 2</h2>` - pour les sous-titres
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
+* `<h1>Titre 1</h1>` pour vos titres les plus importants
+* `<h2>Titre 2</h2>` pour les sous-titres
+* `<h3>Titre 3</h3>` ... et ainsi de suite jusqu'à `<h6>`
+* `<p>Un paragraphe contenant du texte</p>`
 * `<em>texte</em>` permet de mettre l'accent sur une partie du texte
 * `<strong>texte</strong>` permet de mettre encore plus l'accent sur une partie de texte
 * `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
