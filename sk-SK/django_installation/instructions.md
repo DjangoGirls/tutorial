@@ -158,7 +158,7 @@ Predtým ako to urobíme, mali by sme sa uistiť, že je nainštalovaná najnov�
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ python3 -m pip install --upgrade pip
+    (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### Installing packages with requirements
