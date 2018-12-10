@@ -158,7 +158,7 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 {% filename %}خط فرمان{% endfilename %}
 
-    (myvenv) ~$ python3 -m pip install --upgrade pip
+    (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### Installing packages with requirements
