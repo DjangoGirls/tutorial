@@ -158,7 +158,7 @@ data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ python3 -m pip install --upgrade pip
+    (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### Installing packages with requirements
