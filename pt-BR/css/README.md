@@ -74,12 +74,12 @@ Em seu arquivo `blog/static/css/blog.css`, adicione o seguinte código:
 
 ```css
 h1 a, h2 a {
-    color: #C25100;
+     color: #C25100; 
 }
 
 ```
 
-`h1 a` é um seletor CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` é um seletor CSS. Isso significa que estamos aplicando nosso estilo em qualquer elemento `a` dentro de um elemento `h1`; o seletor `h2 a` faz a mesma coisa com elementos `h2`. Então quando tivermos algo como um `<h1><a href="">link</a></h1>`, o estilo `h1 a` será aplicado. Neste caso, estamos dizendo para ele mudar sua cor para `#C25100`, que seria um laranja escuro. Ou você pode por sua própria cor ali, mas certifique-se de que ela tem um bom contraste com a cor de fundo!
 
 Em um arquivo CSS, nós determinamos estilos para elementos do arquivo HTML. A primeira maneira de identificar elementos é usando seus nomes. Você pode se lembrar desses nomes porque são a mesma coisa que as tags da seção HTML. `a`, `h1` e `body` são exemplos de nomes de elementos. Também identificamos elementos pelo atributo `class` ou pelo atributo `id`. Class e id são nomes que você mesma dá ao elemento. Classes definem grupos de elementos e ids apontam para elementos específicos. Por exemplo, a tag a seguir pode ser identificada usando a tag de nome `a`, a classe `external_link` ou o id de `link_to_wiki_page`:
 
@@ -127,7 +127,7 @@ Agora, seu arquivo deve estar assim:
 
         {% for post in posts %}
             <div>
-                <p>published: {{ post.published_date }}</p>
+                <p>publicado: {{ post.published_date }}</p>
                 <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
@@ -197,7 +197,7 @@ E agora, adicione uma classe `post` em sua `div` que contém um post de blog.
 
 ```html
 <div class="post">
-    <p>published: {{ post.published_date }}</p>
+    <p>publicado: {{ post.published_date }}</p>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
@@ -263,7 +263,7 @@ Agora inclua declarações de classes no código HTML que exibe os posts. No arq
 ```html
 {% for post in posts %}
     <div class="post">
-        <p>published: {{ post.published_date }}</p>
+        <p>publicado: {{ post.published_date }}</p>
         <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
