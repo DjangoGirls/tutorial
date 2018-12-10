@@ -4,13 +4,13 @@ Parabéns! Você **arrasou**. Estamos orgulhosas! <3
 
 ### O que fazer agora?
 
-Take a break and relax! You have just done something really huge.
+Tire uma pausa e relaxe! Você acabou de fazer algo realmente grande.
 
 Depois disso, certifique-se de seguir o Django Girls no [Facebook](http://facebook.com/djangogirls) ou no [Twitter](https://twitter.com/djangogirls) para se manter atualizada.
 
 ### Vocês podem recomendar outras fontes de informação?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Sim! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
@@ -33,10 +33,10 @@ Yes! There are a *lot* of resources online for learning all kinds of programming
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python courses](https://www.coursera.org/specializations/python) – some video lectures can be audited for free
 
-#### Working with data
+#### Trabalhando com dados
 
 - [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
 
-We can't wait to see what you build next!
+Mal podemos esperar para ver o que você vai construir da próxima vez!
