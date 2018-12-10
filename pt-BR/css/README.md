@@ -66,7 +66,7 @@ Hora de escrever um pouco de CSS! Abra o arquivo `blog/static/css/blog.css` no s
 
 Nós não vamos nos aprofundar muito no aprendizado do CSS aqui. No final desta página há uma recomendação para um curso gratuito de CSS se você quiser aprender mais.
 
-Mas vamos fazer pelo menos um pouco. Maybe we could change the color of our headers? Para entender as cores, os computadores usam códigos especiais. Esses códigos começam com `#` e são seguidos de 6 letras (A-F) e números (0-9). Por exemplo, o código para o azul é `#0000FF`. Você pode encontrar os códigos de diversas cores aqui: http://www.colorpicker.com/. Você pode também usar [cores predefinidas](http://www.w3schools.com/colors/colors_names.asp), como `red` e `green`.
+Mas vamos fazer pelo menos um pouco. Talvez possamos mudar as cores dos nossos títulos? Para entender as cores, os computadores usam códigos especiais. Esses códigos começam com `#` e são seguidos de 6 letras (A-F) e números (0-9). Por exemplo, o código para o azul é `#0000FF`. Você pode encontrar os códigos de diversas cores aqui: http://www.colorpicker.com/. Você pode também usar [cores predefinidas](http://www.w3schools.com/colors/colors_names.asp), como `red` e `green`.
 
 Em seu arquivo `blog/static/css/blog.css`, adicione o seguinte código:
 
