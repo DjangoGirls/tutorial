@@ -29,13 +29,13 @@ Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le momen
 
 Allons regarder à quoi ressemble notre site maintenant : http://127.0.0.1:8000/
 
-> Si vous avez encore l'erreur `TemplateDoesNotExist`, essayez de redémarrer votre serveur. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Si vous avez encore l'erreur `TemplateDoesNotExist`, essayez de redémarrer votre serveur. Allez sur votre ligne de commande et arrêtez votre server en appuyant simultanément sur Ctrl+C (les touches Control et C de votre clavier). Vous pouvez le relancer en tapant la commande `python manage.py runserver`.
 
 ![Figure 11.1](images/step1.png)
 
 Et voilà, il n'y a plus d'erreurs ! Bravo :) Cependant, notre site ne peut rien faire d'autre pour le moment qu'afficher une page blanche. La faute à notre template que nous avons laissé vide. Allons corriger ça.
 
-Open the new file in the code editor, and add the following:
+Ouvrez le nouveau fichier dans l’éditeur de code et ajoutez le morceau suivant :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -48,16 +48,16 @@ Open the new file in the code editor, and add the following:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Alors, à quoi ressemble notre site web maintenant ? Allons le découvrir : http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
 Ça marche ! Bon boulot :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Comme vous pouvez le constater, l'intégralité du contenu de notre page web est située entre la balise de départ, `<html>`, et la balise fermante, `</html>`
+* La balise la plus élémentaire, `<html>`, figure toujours au début de n'importe quelle page web tandis que `</html>` est toujours située à la fin. Comme vous pouvez le constater, l'intégralité du contenu de notre page web est située entre la balise de départ, `<html>`, et la balise fermante, `</html>`
 * `<p>` est la balise pour les éléments de type paragraphe. `</p>` permet de fermer chaque paragraphe.
 
-## Head and body
+## Head et body
 
 Chaque page HTML est divisée en deux éléments : **head** (entête) et **body** (corps.
 
