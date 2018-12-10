@@ -14,8 +14,8 @@ Sim! There are a *lot* of resources online for learning all kinds of programming
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- Nosso outro livro: [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [Tutorial oficial do Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
 - [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – the course costs money but you can request a free eBook licence by contacting author Tracy Osborn at <tracy@limedaring.com>
 
@@ -35,8 +35,8 @@ Sim! There are a *lot* of resources online for learning all kinds of programming
 
 #### Trabalhando com dados
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Codecademy curso de data science](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – você pode assistir a maior parte dos cursos de graça, porem se você quiser um certificado ou créditos para validação em curso superior, então haverá um custo
+- [Dataquest](https://www.dataquest.io/) – as primeiras 30 "missões" são gratuitas
 
 Mal podemos esperar para ver o que você vai construir da próxima vez!
