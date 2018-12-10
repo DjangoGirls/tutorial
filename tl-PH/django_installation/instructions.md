@@ -158,7 +158,7 @@ Pero bago yan, dapat nakasiguro tayo na pinakabago ang bersyon natin ng `pip`, a
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ python3 -m pip install --upgrade pip
+    (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### Installing packages with requirements
