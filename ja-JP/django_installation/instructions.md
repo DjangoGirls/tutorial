@@ -159,7 +159,7 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ python3 -m pip install --upgrade pip
+    (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### Requirementsファイルによってパッケージをインストールする
