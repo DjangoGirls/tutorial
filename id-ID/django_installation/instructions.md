@@ -162,7 +162,7 @@ data-collapse=true ces-->
 
 <p>{% filename%} baris perintah {% endfilename%}</p>
 
-<pre><code>(myvenv) ~$ python3 -m pip install --upgrade pip
+<pre><code>(myvenv) ~$ python -m pip install --upgrade pip
 `</pre> 
 > > > 
 > > > ### Installing packages with requirements
