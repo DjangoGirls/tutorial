@@ -158,7 +158,7 @@ Antes de hacer eso, debemos asegurarnos que tenemos la última versión de `pip`
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ python3 -m pip install --upgrade pip
+    (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### Instalar paquetes con un fichero de requisitos (requirements)
