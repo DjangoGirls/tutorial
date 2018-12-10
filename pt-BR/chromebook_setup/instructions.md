@@ -18,7 +18,7 @@ Agora você deve ver uma interface com uma barra lateral, botões no canto esque
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+O terminal na PaizaCloud Cloud IDE está pronto para suas instruções. Você pode reajustar o tamanho ou maximizar a janela para torná-la um pouco maior.
 
 #### AWS Cloud9
 
