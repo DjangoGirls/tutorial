@@ -10,7 +10,7 @@ Depois disso, certifique-se de seguir o Django Girls no [Facebook](http://facebo
 
 ### Vocês podem recomendar outras fontes de informação?
 
-Sim! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Sim! Existem *muitos* recursos online para aprender todos os tipos de habilidade de programação – pode ser bastante assustador decidir para onde prosseguir, mas nos te damos cobertura. Quaisquer que fossem seus interesses antes de vir à Django Girls, e quaisquer interesses você tenha adquirido ao longo do tutorial, aqui estão alguns recursos gratuitos (ou recursos com grandes partes gratuitas) que você pode usar para chegar até onde deseja estar.
 
 #### Django
 
