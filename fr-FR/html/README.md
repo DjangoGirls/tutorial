@@ -154,9 +154,9 @@ Ce qu'on aimerait pouvoir faire maintenant, c'est d'afficher les posts que nous 
 
 ## Une dernière chose : déployer !
 
-Ne serait-il pas génial de pouvoir voir tout ces changements en ligne ? Hop, déployons à nouveau !
+Ne serait-il pas génial de pouvoir voir tous ces changements en ligne ? Hop, déployons à nouveau !
 
-### Commit, and push your code up to GitHub
+### Commiter et pusher votre code sur GitHub
 
 Tout d'abord, allons voir quels sont les fichiers qui ont changé depuis notre dernier déploiement (lancez ces commandes dans votre console locale et non celle de PythonAnywhere) :
 
@@ -165,14 +165,14 @@ Tout d'abord, allons voir quels sont les fichiers qui ont changé depuis notre d
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Assurez-vous d'être dans le dossier `djangogirls`. Voici la commande qui permet de dire à `git` d'inclure tout les changements qui ont eu lieu dans ce dossier :
 
 {% filename %}command-line{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.
+> **Note** `--all` signifie que `git` va aussi voir si vous avez supprimé des fichiers (par défaut, il ne s'intéresse qu'aux nouveaux fichiers ou à ceux modifiés). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.
 
 Avant que nous puissions uploader nos fichiers, regardons ce que `git` à l'intention de faire (tous les fichiers que `git` va uploader vont apparaître en vert) :
 
@@ -190,7 +190,7 @@ On y est presque : nous devons maintenant lui dire de sauvegarder ces changement
 
 > **Note** N'oubliez pas d'utiliser de doubles guillemets autour de votre message de commit.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+Une fois que nous avons fait cela, nous pouvons mettre en ligne (pusher) nos modifications sur GitHub :
 
 {% filename %}command-line{% endfilename %}
 
@@ -208,9 +208,9 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(N’oubliez pas de remplacer `<your-pythonanywhere-username>` avec votre propre nom d’utilisateur sur PythonAnywhere, sans les chevrons).
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+Et voyez que votre code est en train d'être téléchargé. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
