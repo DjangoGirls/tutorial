@@ -142,15 +142,15 @@ Voici un exemple d’un modèle complet, copiez et collez-le dans `blog/template
 Nous avons créé trois sections à l'aide de `div`.
 
 * Le premier `div` contient le titre de notre blogpost - c'est à la fois un titre et un lien
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Les deux autres `div` contiennent nos posts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p`s (paragraphe) de texte : un pour la date et l'autre pour notre post.
 
 Ce qui nous donne :
 
 ![Figure 11.4](images/step6.png)
 
-Yaaay ! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay ! Pour l'instant, notre template nous permet seulement d'afficher les **mêmes informations** alors que nous disions précédemment qu'il doit nous permettre d'afficher des informations **différentes** utilisant le **même format**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Ce qu'on aimerait pouvoir faire maintenant, c'est d'afficher les posts que nous avons créés précédemment dans l'interface d'administration de Django. Penchons-nous là dessus.
 
 ## Une dernière chose : déployer !
 
