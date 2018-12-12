@@ -1,8 +1,8 @@
-You can [skip right over this section](http://tutorial.djangogirls.org/en/installation/#install-python) if you're not using a Chromebook. Sekiranya anda berada, pengalaman pemasangan anda akan sedikit berbeza. Anda boleh mengabaikan sisa arahan pemasangan.
+Anda boleh [melangkau terus dari bahagian ini](http://tutorial.djangogirls.org/en/installation/#install-python) jika anda tidak menggunakan Chromebook. Sekiranya anda berada, pengalaman pemasangan anda akan sedikit berbeza. Anda boleh mengabaikan sisa arahan pemasangan.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE adalah alat yang meyediakan penyunting kod dan akses kepada komputer yang digunakan di Internet dimana anda boleh memasang, menulis, dan menggunakan perisian. Semasa tempoh tutorial, Cloud IDE akan bertindak sebagai *local machine* anda. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
