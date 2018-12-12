@@ -10,33 +10,33 @@ Und dann folge Django Girls doch auf [Facebook](http://facebook.com/djangogirls)
 
 ### Könnt ihr weiteres Lernmaterial empfehlen?
 
-Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Programmierfähigkeiten - es kann ziemlich entmutigend sein, herauszufinden, was man als Nächstes machen sollte, aber wir helfen dir dabei. Was auch immer du für Interessen hattest, bevor du zu Django Girls gekommen bist und was auch immer du für Interessen während des Tutorials entwickelt hast, hier sind einige kostenfreie Ressourcen (oder solche mit kostenlosen Komponenten), die du nutzen kannst, um auf deinem Weg voranzukommen.
+Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Programmierfähigkeiten – es kann ziemlich entmutigend sein, herauszufinden, was man als Nächstes machen sollte, aber wir helfen dir dabei. Was auch immer du für Interessen hattest, bevor du zu Django Girls gekommen bist und was auch immer du für Interessen während des Tutorials entwickelt hast, hier sind einige kostenfreie Ressourcen (oder solche mit größeren kostenlosen Teilen), die du nutzen kannst, um auf deinem Weg voranzukommen.
 
 #### Django
 
 - Unser anderes Buch, [Django Girls Tutorial: Erweiterungen](https://tutorial-extensions.djangogirls.org/)
 - [Das offizielle Django-Tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- ["Getting Started With Django" Video-Lektionen](http://www.gettingstartedwithdjango.com/)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) - du kannst auch eine kostenlose eBook-Lizenz beantragen, indem du der Autorin Tracy Osborn auf <tracy@limedaring.com> schreibst
+- [Video-Lektionen "Getting Started With Django"](http://www.gettingstartedwithdjango.com/)
+- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – du kannst auch eine kostenlose eBook-Lizenz beantragen, indem du der Autorin Tracy Osborn auf <tracy@limedaring.com> schreibst
 
 #### HTML, CSS und JavaScript
 
-- [Web Development Kurs auf Codeacademy](https://www.codecademy.com/learn/paths/web-development)
+- [Web-Development-Kurs auf Codeacademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Python-Kurs auf Codeacademy](https://www.codecademy.com/learn/learn-python)
-- [Googles Python Kurs](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) – die ersten Übungen sind frei
+- [Python-Kurs auf Codecademy](https://www.codecademy.com/learn/learn-python)
+- [Googles Python-Kurs](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) – die ersten Übungen sind kostenlos
 - [New Coder Tutorials](http://newcoder.io/tutorials/) – eine Vielzahl von praktischen Beispielen, wie Python verwendet werden kann
-- [edX](https://www.edx.org/course?search_query=python) – die meisten Kurse sind kostenfrei, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
+- [edX](https://www.edx.org/course?search_query=python) – die meisten Kurse kannst du kostenfrei testen, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
 - [Courseras Python-Kurse](https://www.coursera.org/specializations/python) – einige Video-Vorträge sind kostenlos
 
 #### Mit Daten arbeiten
 
-- [Der Data Science Kurs von Codecademy](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – die meisten Kurse sind kostenfrei, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
+- [Der Data-Science-Kurs von Codecademy](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – die meisten Kurse kannst du kostenfrei testen, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
 - [Dataquest](https://www.dataquest.io/) – die ersten 30 "Missionen" sind frei
 
-Wir können es nicht abwarten zu sehen, was du als Nächstes baust!
+Wir sind gespannt darauf, was du als Nächstes baust!
