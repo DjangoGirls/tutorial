@@ -2,11 +2,11 @@
 
 Si vous suivez ce tutoriel chez vous et non dans un [évènement Django Girls](https://djangogirls.org/events/), vous pouvez passer directement au chapitre [Comment fonctionne Internet](../how_the_internet_works/README.md).
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+La raison est que toutes les informations nécessaires aux installations seront données au fur et à mesure dans les différents chapitres du tutoriel. Celle-ci est juste une page supplémentaire qui rassemble toutes les instructions d’installation en un seul endroit (ce qui est utile pour certains formats d’atelier). Vous pouvez choisir d’installer tout ce qui est sur cette page dès maintenant si vous le souhaitez. Cependant, si vous avez envie d'apprendre des choses avant d'installer plein de trucs sur votre ordinateur : passez ce chapitre et installez ce dont vous avez besoin au fil des chapitres.
 
-Good luck!
+Bonne chance !
 
-# If you're attending a workshop
+# Si vous participez à un atelier
 
 If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
 
