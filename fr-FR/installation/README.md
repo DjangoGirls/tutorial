@@ -61,4 +61,4 @@ Félicitations, vous avez tout installé et êtes prête ! Si vous avez toujours
 
 # Profitez de l’atelier !
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Lors de l’atelier, vous serez en mesure d'attaquer directement le chapitre [Votre premier projet Django !](../django_start_project/README.md) parce que vous aurez déjà couvert le matériel dans les chapitres précédents.
