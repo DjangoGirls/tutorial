@@ -11,7 +11,7 @@ Bonne chance !
 Si vous participez à un [événement Django Girls](https://djangogirls.org/events/) :
 
 * Dans certains cas un « party d’installation » a lieu avant l’atelier principal. Si vous vous trouvez à un party d’installation, cette page est pour vous ! Suivez les instructions ici pour installer tout ce dont vous avez besoin pour l’atelier. Demandez de l'aide aux coaches si nécessaire. Ensuite, pendant l'atelier vous pourrez ignorer les instructions d’installation que vous rencontrerez dans le tutoriel.
-* Les organisateurs de votre atelier vous ont peut-être proposé de procéder aux installations chez vous. Si c'est le cas, cette page est pour vous ! Suivez les instructions ici, autant que vous le pouvez. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
+* Les organisateurs de votre atelier vous ont peut-être proposé de procéder aux installations chez vous. Si c'est le cas, cette page est pour vous ! Suivez les instructions ici, autant que vous le pouvez. Pendant l’atelier principal, quand vous arrivez à une étape nécessitant d'un logiciel que vous n'avez pas réussi à installer toute seule, vous pourrez demander à votre coach.
 * If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
 
 # Installation
