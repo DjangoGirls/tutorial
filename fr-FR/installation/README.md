@@ -16,38 +16,38 @@ Si vous participez à un [événement Django Girls](https://djangogirls.org/even
 
 # Installation
 
-Dans ce tutoriel, vous allez apprendre comment créer un blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Dans ce tutoriel, vous allez apprendre comment créer un blog. Le tutoriel vous guidera à travers toute les étapes d'installation des différents logiciels, ansi que de création de comptes en ligne nécessaires. Cette page regroupe l’ensemble des instructions concernant installations et comptes en ligne en un seul endroit (ce qui est utile pour certains formats d’atelier).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Install Python
+# Installer Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Installer un éditeur de code
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Mettre en place virtualenv et installer Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Installer Git
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Créer un compte GitHub
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
-# Create a PythonAnywhere account
+# Créer un compte PythonAnywhere
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Commencer à lire
 
 Félicitations, vous avez tout installé et êtes prête ! Si vous avez toujours du temps avant l'atelier, il peut être utile de commencer à lire les premiers chapitres :
 
