@@ -12,11 +12,11 @@ Si vous participez à un [événement Django Girls](https://djangogirls.org/even
 
 * Dans certains cas un « party d’installation » a lieu avant l’atelier principal. Si vous vous trouvez à un party d’installation, cette page est pour vous ! Suivez les instructions ici pour installer tout ce dont vous avez besoin pour l’atelier. Demandez de l'aide aux coaches si nécessaire. Ensuite, pendant l'atelier vous pourrez ignorer les instructions d’installation que vous rencontrerez dans le tutoriel.
 * Les organisateurs de votre atelier vous ont peut-être proposé de procéder aux installations chez vous. Si c'est le cas, cette page est pour vous ! Suivez les instructions ici, autant que vous le pouvez. Pendant l’atelier principal, quand vous arrivez à une étape nécessitant d'un logiciel que vous n'avez pas réussi à installer toute seule, vous pourrez demander à votre coach.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* Si votre atelier n’a pas de party d'installation (ou si vous l'avez raté), et si les organisateurs ne vous ont pas demandé d’essayer de tout installer en amont, ignorez cette page et allez directement au chapitre [Comment fonctionne Internet](../how_the_internet_works/README.md). Vous allez installer tout ce dont vous avez besoin au fur et à mesure que vous avancez dans le tutoriel.
 
 # Installation
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Dans ce tutoriel, vous allez apprendre comment créer un blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
