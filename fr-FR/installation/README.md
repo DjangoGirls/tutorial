@@ -41,7 +41,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Créer un compte GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Allez sur [GitHub.com](https://www.github.com) et créez un compte d’utilisateur gratuitement. N’oubliez pas votre mot de passe (ajoutez-le à votre gestionnaire de mots de passe, si vous utilisez un).
 
 # Créer un compte PythonAnywhere
 
@@ -51,14 +51,14 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 Félicitations, vous avez tout installé et êtes prête ! Si vous avez toujours du temps avant l'atelier, il peut être utile de commencer à lire les premiers chapitres :
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Comment fonctionne Internet](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Introduction à la ligne de commande](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Introduction à Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Qu'est-ce que Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Profitez de l’atelier !
 
 When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
