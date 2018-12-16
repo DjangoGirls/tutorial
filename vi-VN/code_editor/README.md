@@ -1,4 +1,4 @@
-# Code editor
+# Trình biên tập code
 
 > Dành cho các bạn đọc ở nhà: Chương này sẽ được trình bày ở video về [ Cách cài đặt trình viết code ](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
 
