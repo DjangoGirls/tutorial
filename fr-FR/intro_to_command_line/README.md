@@ -1,18 +1,18 @@
 # Introduction à l'interface en ligne de commande
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Pour les lectrices à la maison : ce chapitre est traité dans la vidéo [Votre nouvel ami : la ligne de commande](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+C'est un peu exaltant, non ? Dans quelques instants, vous allez écrire votre première ligne de code! :)
 
 **Commençons par vous présenter un nouvel ami : la ligne de commande !**
 
-Les étapes suivantes vont vous montrer comment utiliser la fenêtre noire que tous les bidouilleurs·euses utilisent. Elle est un peu effrayante à première vue, mais en fait, c'est un tout simplement un programme qui attend qu'on lui donne des commandes.
+Les étapes suivantes vont vous montrer comment utiliser la fenêtre noire que tous les bidouilleurs·euses utilisent. Elle est un peu effrayante à première vue, mais en fait, c'est tout simplement un programme qui attend qu'on lui donne des commandes.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Note :** Il existe deux mots pour parler de dossier : dossier ou répertoire. Il se peut que nous utilisions les deux dans le tutoriel mais, pas de panique : ils signifient la même chose.
 
 ## Qu'est-ce qu'une ligne de commande ?
 
-Cette fenêtre, qu'on appelle aussi **ligne de commande** ou **interface en ligne de commande**, est une application textuelle qui permet de voir et de manipuler des fichiers sur votre ordinateur. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. On l'appelle parfois aussi : *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
+Cette fenêtre, qu'on appelle aussi **ligne de commande** ou **interface en ligne de commande**, est une application textuelle qui permet de voir et de manipuler des fichiers sur votre ordinateur. C'est un peu la même chose que l'Explorateur Windows ou Finder dans Mac, mais sans interface graphique. On l'appelle parfois aussi : *cmd*, *CLI*, *prompt*, *console* ou *terminal*.
 
 ## Ouvrir l'interface en ligne de commande
 
