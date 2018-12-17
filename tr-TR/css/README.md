@@ -10,11 +10,11 @@ Fakat tekrar sıfırdan başlamak istemiyoruz, değil mi? Bir kez daha, programc
 
 ## Haydi Bootstrap kullanalım!
 
-Bootstrap HTML and CSS tabanlı çok güzel websiteleri geliştirmek için en yaygın olarak kullanılan çözümlerden biridir https://getbootstrap.com/
+Bootstrap HTML ve CSS tabanlı çok güzel websiteleri geliştirmek için en yaygın olarak kullanılan çözümlerden biridir https://getbootstrap.com/
 
 Twitter yazılımcıları tarafından geliştirilmeye başlanmış ve şu anda dünyanın her yerinden gönüllüler tarafından geliştirilmektedir!
 
-## Bootstrap kurulumu
+## Bootstrap Kurulumu
 
 Bootstrap yüklemek için `.html` uzantılı dostamızı kod düzenleyicisinde açalım ve `<head>` bölümüne şunları ekleyelim:
 
