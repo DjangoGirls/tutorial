@@ -162,7 +162,7 @@ Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere` den
 Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 
 - Kodunuz GitHub'dan çekiliyor
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
+- PythonAnywhere üzerinde kendi bilgisayarınızdaki gibi bir virtualenv oluşturuluyor
 - Yayına almak için gerekli ayarlar (settings) dosyası güncelleniyor
 - Yine `manage.py migrate` komutu ile PythonAnywhere üzerinde veritabanı oluşturuluyor
 - Sabit dosyaların (bunları daha sonra öğreneceğiz) oluşturuluyor
