@@ -1,6 +1,6 @@
 PythonAnywhere is a service for running Python code on servers "in the cloud". We'll use it for hosting our site, live and on the Internet.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+우리는 우리가 만든 블로그를 PythonAnywhere에서 서비스를 제공할 것 입니다. PythonAnywhere에 "Beginner"계정을 등록하세요. (무료사용자등급도 좋습니다. 신용카드가 필요하지 않아요.)
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
