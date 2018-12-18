@@ -1,6 +1,6 @@
 # Django란 무엇일까요?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. 쉽고 빠르게 웹사이트를 개발할 수 있도록 돕는 구성요소로 이루어진 웹 프레임워크인 것이죠.
+Django(/ˈdʒæŋɡoʊ/ *jang-goh*) 는 파이썬으로 만들어진 무료이며 오프손스 웹 어플리케이션 프래임웍입니다. 쉽고 빠르게 웹사이트를 개발할 수 있도록 돕는 구성요소로 이루어진 웹 프레임워크인 것이죠.
 
 웹사이트를 구축할 때, 비슷한 유형의 요소들이 항상 필요합니다. 회원가입, 로그인, 로그아웃과 같이 사용자 인증을 다루는 방법이나 웹사이트의 관리자 패널, 폼, 파일 업로드와 같은 것들 말이지요.
 
@@ -22,6 +22,6 @@ When a request comes to a web server, it's passed to Django which tries to figur
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. 그런데 만약 사용자가 데이터를 바꿔달라고 수정을 요청한다면 어떻게 될까요? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+물론 지금까지의 설명은 아주 간단히 설명한 것에 불과해요. 하지만 모든 기술적인 부분까지 자세히 알 필요가 없답니다. 이 정도 아는 것만으로도 충분하답니다.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+좀 더 자세히 아는 것보다, 지금부터는 장고를 이용해 간단하게 조그만 것부터 만들어봐요. 그렇게 하면서 중요한 모든 것들을 하나씩 배워나가도록 해요.
