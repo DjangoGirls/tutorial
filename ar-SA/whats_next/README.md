@@ -17,7 +17,6 @@
 - Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [المحتوى التعليمي الخاص بDjango](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [ابدأ مع دروس الفيديو لDjango](http://www.gettingstartedwithdjango.com/)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – the course costs money but you can request a free eBook licence by contacting author Tracy Osborn at <tracy@limedaring.com>
 
 #### HTML, CSS and JavaScript
 
