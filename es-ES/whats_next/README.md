@@ -17,8 +17,7 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
 - En nuestro libro Django Girls Tutorial:Extensions>/0></li> 
     
     - [El tutorial oficial de Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-    - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-    - [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – the course costs money but you can request a free eBook licence by contacting author Tracy Osborn at <tracy@limedaring.com></ul> 
+    - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)</ul> 
     
     #### HTML, CSS y JavaScript
     
