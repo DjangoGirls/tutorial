@@ -17,7 +17,6 @@ Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Program
 - Unser anderes Buch, [Django Girls Tutorial: Erweiterungen](https://tutorial-extensions.djangogirls.org/)
 - [Das offizielle Django-Tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Video-Lektionen "Getting Started With Django"](http://www.gettingstartedwithdjango.com/)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – du kannst auch eine kostenlose eBook-Lizenz beantragen, indem du der Autorin Tracy Osborn auf <tracy@limedaring.com> schreibst
 
 #### HTML, CSS und JavaScript
 
