@@ -66,7 +66,7 @@ Donnez un coup d'oeil à la section Linux ci-dessus : c'est à cela que la ligne
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Chaque commande que vous taperez sera automatiquement précédée par un `$` ou `>` et un espace. Vous ne devez pas les rentrer vous même, votre ordinateur le fera pour vous :-)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
