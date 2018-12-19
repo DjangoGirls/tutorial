@@ -17,7 +17,6 @@
 - Το άλλο μας βιβλίο, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Ο επίσημος οδηγός του Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Ξεκινώντας με το Django με μαθήματα βίντεο](http://www.gettingstartedwithdjango.com/)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – το μάθημα δεν είναι δωρεάν αλλά μπορείτε να ζητήσετε μια δωρεάν eBook άδεια από την συγγραφέα Tracy Osborn στο <tracy@limedaring.com>
 
 #### HTML, CSS και JavaScript
 
