@@ -17,7 +17,6 @@ Sim! Existem *muitos* recursos online para aprender todos os tipos de habilidade
 - Nosso outro livro: [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Tutorial oficial do Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – the course costs money but you can request a free eBook licence by contacting author Tracy Osborn at <tracy@limedaring.com>
 
 #### HTML, CSS and JavaScript
 
