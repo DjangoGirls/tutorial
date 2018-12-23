@@ -4,7 +4,7 @@ Iremos hospedar o blog que estamos construindo em PythonAnywhere. Cadastre-se pa
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![Página do PythonAnywhere mostrando o botão para criar a conta "Beginner" (iniciante)](../deploy/images/pythonanywhere_beginner_account_button.png)
+![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
