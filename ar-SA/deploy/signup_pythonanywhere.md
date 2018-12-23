@@ -4,7 +4,7 @@ PythonAnywhere هي خدمة لتشغيل أكواد بايثون على خوا�
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a the free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. أيضا، تأكد من تذكر كلمة المرور الخاصة بك (اضفها الى مدير كلمات السر خاصتك، إذا كنت تستخدم أحدهم).
 
