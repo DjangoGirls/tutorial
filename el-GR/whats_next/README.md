@@ -30,7 +30,8 @@
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – οι πρώτες ασκήσεις είναι δωρεάν
 - [New Coder tutorials](http://newcoder.io/tutorials/) – είναι μια ποικιλία πρακτικών παραδειγμάτων του πως μπορεί να χρησιμοποιηθεί η γλώσσα προγραμματισμού Python
 - [edX](https://www.edx.org/course?search_query=python) – σε αυτό το γνωστό site, μπορείτε να παρακολουθήσετε τα περισσότερα μαθήματα δωρεάν αλλά για την απόκτηση κάποιου πιστοποιητικού τότε θα χρειαστεί να καταβάλετε κάποιο ποσό ανάλογα το μάθημα και το πιστοποιτικό
-- [Μαθήματα για Python από το Coursera](https://www.coursera.org/specializations/python) – μερικά μαθήματα βίντεο είναι δωρεάν
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
 
 #### Δουλεύοντας με δεδομένα
 
