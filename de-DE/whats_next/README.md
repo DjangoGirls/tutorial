@@ -30,7 +30,8 @@ Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Program
 - [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) – die ersten Übungen sind kostenlos
 - [New Coder Tutorials](http://newcoder.io/tutorials/) – eine Vielzahl von praktischen Beispielen, wie Python verwendet werden kann
 - [edX](https://www.edx.org/course?search_query=python) – die meisten Kurse kannst du kostenfrei testen, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
-- [Courseras Python-Kurse](https://www.coursera.org/specializations/python) – einige Video-Vorträge sind kostenlos
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
 
 #### Mit Daten arbeiten
 
