@@ -20,11 +20,8 @@ Luego, el `Gato` tiene algunas acciones como: `ronronear`, `arañar` o `alimenta
     dueño 
     ronronear() 
     rasguñar() 
-    alimentarse(comida_de_gato) 
+    alimentarse(comida_de_gato)
     
-    ComidaDeGato
-    ----------
-    sabor
     
 
     ComidaDeGato
