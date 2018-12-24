@@ -90,7 +90,7 @@ Si quieres un idioma diferente, cambia el código de idioma cambiando la siguien
 LANGUAGE_CODE = 'es-es'
 ```
 
-También tenemos que añadir una ruta para archivos estáticos. (Veremos todo acerca de archivos estáticos y CSS más adelante.) Ve al *final* del archivo, y justo debajo de la entrada `STATIC_URL`, añade una nueva llamada `STATIC_ROOR`:
+También tenemos que añadir una ruta para archivos estáticos. (Veremos todo acerca de archivos estáticos y CSS más adelante.) Ve al *final* del archivo, y justo debajo de la entrada `STATIC_URL`, añade una nueva llamada `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
