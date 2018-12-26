@@ -4,7 +4,7 @@
 
 Приступаем к написанию первых строк кода - пора загрузить текстовый редактор!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **Примечание:** Если вы используете Chromebook, то пропустите эту главу и убедитесь, что вы следуете инструкциям по установке [Chromebook Setup](../chromebook_setup/README.md). Выбранная вами облачное IDE (PaizaCloud Cloud IDE или AWS Cloud9) содержит редактор кода, и когда вы открываете файл в вашем IDE из меню File, вы автоматически используете редактор.
 > 
 > **Примечание**: Если ты уже все сделала в главе, посвященной установке, то можешь смело переходить к следующей главе!
 
