@@ -1,12 +1,12 @@
 PythonAnyway это сервис позволяющий запускать код написанный на языке Python на сервере в "облаке". Мы используем его для хостинга нашего веб-сайта в интернете.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+Зарегистрируй на PythonAnywhere аккаунт как "Beginner" ("новичок") (бесплатной версии достаточно, кредитная карточка не понадобится).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
 ![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Примечание**: При выборе имени пользователя, помни, что URL блога примет вид `yourusername.pythonanywhere.com`, так что остановись либо на своём нике, либо на имени, связанном с тематикой блога. Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## Создание API ключа на PythonAnywhere
 
