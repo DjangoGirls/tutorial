@@ -4,16 +4,16 @@ PythonAnyway это сервис позволяющий запускать ко�
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![На странице регистрации PythonAnywhere имеется кнопка для создания бесплатной учетной записи «Beginner»](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Примечание**: При выборе имени пользователя, помни, что URL блога примет вид `yourusername.pythonanywhere.com`, так что остановись либо на своём нике, либо на имени, связанном с тематикой блога. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Примечание**: При выборе имени пользователя, помни, что URL блога примет вид `yourusername.pythonanywhere.com`, так что остановись либо на своём нике, либо на имени, связанном с тематикой блога. Кроме того, убедись, что запомнила свой пароль (добавь его в свой менеджер паролей, если пользуешься таковым).
 
 ## Создание API ключа на PythonAnywhere
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+Это то, что вам только нужно сделать один раз. Когда вы зарегистрировались на PythonAnywhere, вы переместитесь на dashboard. Найди ссылку расположенную вверху справа на свою страницу "Account":
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+![Ссылка на аккаунт расположена вверху справа на странице](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+затем выберите вкладку с именем «API token» и нажмите кнопку с надписью "Create new API token".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![API token вкладка на странице Аккаунт](../deploy/images/pythonanywhere_create_api_token.png)
