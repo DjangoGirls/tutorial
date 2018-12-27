@@ -149,7 +149,7 @@ Git будет отслеживать изменения всех файлов �
 
 В консоли должно напечататься что-то подобное`Collecting pythonanywhere` и в конце `Successfully installed (...) pythonanywhere- (...)`.
 
-Теперь мы запустим помощника для автоматической настройки нашего приложения с GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Теперь мы запустим помощника для автоматической настройки нашего приложения с GitHub. Введи следующую команду в консоли на PythonAnywhere (не забудь использовать свою учетную запись на GitHub в `&lt;your-github-username&gt;`, так чтобы URL совпадал с URL клона на GitHub):
 
 {% filename %}command-line{% endfilename %}
 
@@ -165,9 +165,9 @@ Git будет отслеживать изменения всех файлов �
 - Настраивает твои статичные файлы(мы узнаем об этом позже)
 - И настраивает PythonAnywhere для обслуживания твоего веб-приложения через API
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+На PythonAnywhere все эти шаги автоматизированы, но это те же самые шаги, которые необходимо будет выполнить с любым другим сервер-провайдером.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Главное, что сейчас нужно отметить - база данных PythonAnywhere на самом деле полностью отделена от базы данных на твоем компьютере. Это значит, что они могут иметь разные посты и админские учетные записи. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}command-line{% endfilename %}
 
