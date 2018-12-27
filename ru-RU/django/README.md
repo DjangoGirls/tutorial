@@ -22,6 +22,6 @@ Django - бесплатный web-фреймворк, написанный на 
 
 Но самые интересные вещи происходят в функции *view*: мы, например, можем обращаться к базе данных за определенной информацией. Может быть пользователь попросил изменить какую-нибудь информацию? Как будто в письме написано: "Пожалуйста, поменяйте описание моей работы". Функция *view* может проверить, имеете ли вы разрешение делать это, а затем обновит описание работы и отправит обратно ответ: "Готово!"
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Вышеуказанное описание немного упрощено, но вам сейчас нет необходимости знать все технические "тонкости". Достаточно понимать основную идею.
 
 So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
