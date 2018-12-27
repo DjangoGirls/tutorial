@@ -24,4 +24,4 @@ Django - бесплатный web-фреймворк, написанный на 
 
 Вышеуказанное описание немного упрощено, но вам сейчас нет необходимости знать все технические "тонкости". Достаточно понимать основную идею.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+Так что, не углубляясь слишком в детали, начнем что-то создавать с Django и будем изучать важные особенности по мере продвижения!
