@@ -99,7 +99,7 @@ Git будет отслеживать изменения всех файлов �
 
 Теперь нам нужно связать твой локальный Git репозиторий на компьютере с репозиторием на GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Напечатай в консоль (замени `&lt;your-github-username&gt;`имя пользователя на свое, то есть на то, которое указала при создании аккаунта GitHub, но без угловых скобок - URL должен совпадать с клоном URL, которое ты видишь):
 
 {% filename %}command-line{% endfilename %}
 
