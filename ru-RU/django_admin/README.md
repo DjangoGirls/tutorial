@@ -21,7 +21,7 @@ admin.site.register(Post)
 
 Чтобы залогиниться, тебе сначала нужно создать суперпользователя *superuser* - пользователя, который имеет полный доступ к управлению сайтом. Вернись к консоли, напечатай `python manage.py createsuperuser`, и нажми Enter.
 
-> Помните о том, что вводить новые команды нужно в режиме работающего сервера, откройте новое окно терминала и активируйте ваше вируальное окружение (virtualenv). We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Помните о том, что вводить новые команды нужно в режиме работающего сервера, откройте новое окно терминала и активируйте ваше вируальное окружение (virtualenv). Мы рассмотрели, как писать новые команды **вашего первого проекта Django!** главе, в разделе **Запуск веб-сервера**.
 
 {% filename %}Mac OS X или Linux:{% endfilename %}
 
@@ -33,7 +33,7 @@ admin.site.register(Post)
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+При появлении запроса введи имя пользователя (строчными буквами, без пробелов), адрес электронной почты и пароль. **Не беспокойся, что ты не видишь печатаемый пароль - так и должно быть.** Напечатай его и нажми `enter` чтобы продолжить. Результат должен выглядеть следующим образом (имя пользователя и почта соответственно будут твоими):
 
     Username: ola
     Email address: ola@example.com
@@ -46,7 +46,7 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Перейди к записям (Post) и поэкспериментируй немного с ними. Добавь 5-6 записей в блог. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Убедитесь, чтобы хотя бы у двух-трёх постов (но не у всех) была дата публикации. Это может быть полезным в будущем.
 
