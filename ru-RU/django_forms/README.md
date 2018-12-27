@@ -1,6 +1,6 @@
 # Формы в Django
 
-Последним, что нам стоит сделать для нашего веб-сайта является удобный способ добавления и редактирования записей. Django `admin`-панель удобна, но её дизайн сложно изменять. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Последним, что нам стоит сделать для нашего веб-сайта является удобный способ добавления и редактирования записей. Django `admin`-панель удобна, но её дизайн сложно изменять. С `forms` (формами) мы будем иметь абсолютную власть над нашим интерфейсом - мы сможем сделать практически все, что только можно придумать!
 
 В формах Django удобно то, что мы можем создать новую форму с нуля или воспользоваться `ModelForm` для сохранения содержимого форм в модель.
 
@@ -14,7 +14,7 @@
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+OK, давайте откроем его в редакторе кода и напечатаем следующий код:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,9 +30,9 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Для начала нам нужно импортировать формы Django (`from django import forms`) и, разумеется, нашу модель `Post` (`from .models import Post`).
 
-`PostForm`, как ты, вероятно, подозреваешь, это имя для нашей формы. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm`, как ты, вероятно, подозреваешь, это имя для нашей формы. Нам нужно также сообщить Django, что эта форма относится к `ModelForm` (чтобы он смог поколдовать для нас) - `forms.ModelForm` поможет с этим.
 
 Затем, мы имеем `class Meta`, где мы определяем какая модель будет использоваться для создания формы (`model = Post`).
 
