@@ -107,7 +107,7 @@ Git будет отслеживать изменения всех файлов �
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+Когда ты отправляешь (push) на GitHub, тебе придется указать имя пользователя и пароль (либо прямо здесь в командной строке или во всплывающем окне), после ввода учетных данных, должно появиться что-то вроде этого:
 
 {% filename %}command-line{% endfilename %}
 
