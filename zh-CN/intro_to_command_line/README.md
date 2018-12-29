@@ -16,31 +16,11 @@ It's exciting, right?! You'll write your first line of code in just a few minute
 
 ## 打开命令行界面
 
-为了进行一些实验，我们需要首先打开我们的命令行界面。
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Go to Start menu → Windows System → Command Prompt.
-
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Go to Applications → Utilities → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## 提示符
 
-你现在应该看到一个白色或黑色的窗口，正等待着你的命令。
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -124,7 +104,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> 注： 'pwd' 代表 '打印工作目录'。
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -269,7 +249,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> 进阶提示： 如果你不想要一遍又一遍地键入相同的命令，试着按 `向上箭头键` 和 `向下箭头` 下循环查看最近你使用过的命令。
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
