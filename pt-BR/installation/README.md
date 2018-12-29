@@ -23,6 +23,10 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
+# Open a command window
+
+Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up. {% include "/intro_to_command_line/open_instructions.md" %}
+
 # Install Python
 
 {% include "/python_installation/instructions.md" %}
@@ -49,7 +53,7 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 # Start reading
 
-Parabéns, você tem tudo configurado e pronto para começar! Se ainda tem tempo antes do workshop, comece a ler alguns dos capítulos iniciais:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [How the internet works](../how_the_internet_works/README.md)
 
@@ -61,4 +65,4 @@ Parabéns, você tem tudo configurado e pronto para começar! Se ainda tem tempo
 
 # Enjoy the workshop!
 
-Quando você começar a oficina, já será capaz de ir direto para o [seu primeiro projeto Django!](../django_start_project/README.md) porque já vai ter visto todo o material dos capítulos anteriores.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
