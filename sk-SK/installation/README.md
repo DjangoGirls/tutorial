@@ -23,6 +23,10 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
+# Open a command window
+
+Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up. {% include "/intro_to_command_line/open_instructions.md" %}
+
 # Install Python
 
 {% include "/python_installation/instructions.md" %}
@@ -49,7 +53,7 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 # Start reading
 
-Gratulujeme, si pripravená začať! Pokiaľ máš stále zvyšný čas pred začiatkom workshopu, bolo by užitočné, ak by si si prečítala pár začiatočníckych kapitol:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [How the internet works](../how_the_internet_works/README.md)
 
@@ -61,4 +65,4 @@ Gratulujeme, si pripravená začať! Pokiaľ máš stále zvyšný čas pred za�
 
 # Enjoy the workshop!
 
-Keď začne workshop, budeš môcť prejsť priamo na [Tvoj prvý Django projekt!](../django_start_project/README.md), lebo si už absolvovala látku v predchádzajucích kapitol.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
