@@ -16,31 +16,11 @@ Prozor koji se obično naziva ** komandna linija** ili **interfejs komandne lini
 
 ## Otvorite interfejs komandne linije
 
-Da bismo započeli eksperimentisanje, moramo prvo otvoriti naš interfejs komandne linije.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Go to Start menu → Windows System → Command Prompt.
-
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Go to Applications → Utilities → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
-Trebalo bi da vidite beli ili crni prozor koji čeka vaše komande.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -124,7 +104,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Napomena 'pwd' znači 'print working directory'.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -269,7 +249,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> PRO saver> Ako ne želite da kucate istu komandu ponovo i ponovo, pritisnite `strelicu na gore` i `strelicu na dole` na vašoj tastaturi da biste se kretali kroz skoro unete komande.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
