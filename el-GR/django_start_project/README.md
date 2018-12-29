@@ -200,6 +200,6 @@ DATABASES = {
 
 > Είδαμε πως λειτουργούν οι web servers στο κεφάλαιο **Πως λειτουργεί το internet**.
 
-Για να γράψετε άλλες εντολές όσο ο server τρέχει, ανοίξτε ένα νέο παράθυρο και ενεργοποιήστε το virtualenv σας. Για να σταματήσετε τον server, μεταβείτε στο παράθυρο που τρέχει και πιέστε Ctrl + C (σε Windows θα πρέπει να πιέσετε Ctrl + Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Για να σταματήσετε τον server, μεταβείτε στο παράθυρο που τρέχει και πιέστε Ctrl + C (σε Windows θα πρέπει να πιέσετε Ctrl + Break).
 
 Έτοιμοι για το επόμενο βήμα; Ώρα να δημιουργήσουμε περιεχόμενο για το blog μας!
