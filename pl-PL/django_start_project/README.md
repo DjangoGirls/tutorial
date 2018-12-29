@@ -200,6 +200,6 @@ Note that a command window can only run one thing at a time, and the command win
 
 > Sprawdziliśmy, jak działają serwery internetowe w rozdziale **"Jak działa Internet"**.
 
-Aby wpisać dodatkowe polecenia podczas działania serwera, otwórz nowe okno terminala i aktywuj virtualenv. Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).
 
 Gotowa na następny krok? Czas stworzyć treść!
