@@ -16,31 +16,11 @@ It's exciting, right?! You'll write your first line of code in just a few minute
 
 ## Відкриваємо інтерфейс командного рядка
 
-Щоб почати експериментувати, нам потрібно спочатку відкрити наш інтерфейс командного рядка.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Go to Start menu → Windows System → Command Prompt.
-
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Go to Applications → Utilities → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Командний рядок
 
-Має з'явитися біле або чорне вікно, що очікує на ваші команди.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -124,7 +104,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Зауваження: 'pwd' відповідає 'print working directory' (англ. надрукувати робочу папку).
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -269,7 +249,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> ПРОФІ хитрощі: Якщо ви не хочете кожного разу набирати одну й ту ж команду, спробуйте натиснути кнопки `стрілка вгору` та `стрілка вниз` на своїй клавіатурі щоб повторити нещодавно використовувані команди.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
