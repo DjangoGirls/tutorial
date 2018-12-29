@@ -16,35 +16,15 @@ A janela, que geralmente é chamada de **linha de comando** ou **interface de li
 
 ## Abra a interface de linha de comando
 
-Para começar alguns experimentos, precisamos abrir a nossa interface de linha de comando.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Vá para Menu iniciar → Sistema do Windows → Prompt de comando.
-
-> Em versões antigas do Windows, procure em Menu iniciar → Todos programas → Acessórios → Prompt de comando.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Vá para Aplicações → Utilidades → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-Provavelmente você vai encontrá-la em Aplicativos → Acessórios → Terminal, mas depende do seu sistema operacional. Qualquer coisa, é só procurar no Google. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
-Agora você deve ver uma janela branca ou preta que está à espera de seus comandos.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Se você está usando Mac ou Linux, você provavelmente verá um `$`, como esse:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,28 +35,28 @@ Se você está usando Mac ou Linux, você provavelmente verá um `$`, como esse:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-No Windows, você provavelmente verá um `>`, assim:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Dê uma olhada na seção Linux logo acima -- você verá algo mais como isso quando você chegar ao PythonAnywhere depois no tutorial.
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
 
 <!--endsec-->
 
-Cada comando vai ser precedido por um `$` ou `>` e um espaço, mas você não deve digitar isso. Seu computador vai fazer isso por você. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
-> Uma pequena observação: pode ser que apareça algo como `C:\Users\ola>` ou `Olas-MacBook-Air:~ ola$` antes do cursor e isso está 100% correto.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
-Até a parte que inclui o `$` ou o `>` é chamada de *linha de comando prompt *, ou simplesmente *prompt*. Ele está incentivando você a inserir algo ali.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-No tutorial, quando queremos que você digite algo em um comando, vamos incluir `$` ou `>`, e por vezes mais a esquerda. Ignore a parte esquerda e apenas digite no comando, que começa depois do prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Seu primeiro comando (Uhuu!)
 
-Vamos começar digitando este comando:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -96,7 +76,7 @@ Vamos começar digitando este comando:
 
 <!--endsec-->
 
-Então aperte `enter`. Esse é o nosso resultado:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -106,15 +86,15 @@ Então aperte `enter`. Esse é o nosso resultado:
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Tente escrever cada comando, não copie e cole. Assim você vai se lembrar melhor deles!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## O Básico
 
-Cada sistema operacional tem uma série de comandos um pouco diferentes para a linha de comando, então tenha certeza de seguir as instruções do seu sistema operacional. Vamos tentar?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Pasta atual
 
-Seria bom saber onde nós estamos agora, certo? Vamos ver. Digite esse comando e aperte `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -124,7 +104,7 @@ Seria bom saber onde nós estamos agora, certo? Vamos ver. Digite esse comando e
     /Users/olasitarska
     
 
-> Observação: 'pwd' significa 'print working directory' (imprima/mostre o diretório de trabalho).
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -136,27 +116,27 @@ Seria bom saber onde nós estamos agora, certo? Vamos ver. Digite esse comando e
     C:\Users\olasitarska
     
 
-> Observação: 'cd' significa 'change directory' em inglês, o que se traduz para 'mudar de diretório'. Com o powershell, você pode utilizar pwd da mesma forma como no Linux ou Mac OS X.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
-Você provavelmente verá algo similar na sua máquina. Uma vez que você abre a linha de comando você geralmente começa em sua pasta de usuário local, conhecido como "home".
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Aprenda mais sobre um comando
 
-Muitos comandos que você digita no Prompt de comand possuem um painel de ajuda integrada que você pode abrir e ler! Por exemplo, para entender melhor sobre o comando do diretório atual:
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-SO X e Linux tem um comando `man`, que ajuda você nos comandos. Tente `mand pwd` e veja o que ele diz, ou coloque `man` antes de outros comandos para ver seus menus de ajuda. A saída `man` é normalmente paginada. Use a barra de espaço para ir para a próxima página, e `q` para sair do menu de ajuda.
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Colocando um sufixo `/?` para a maioria dos comandos, irá imprimir uma página de ajuda. Você pode precisar rolar a janela do seu comando para ver tudo. Tente `cd /?`.
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
 
 <!--endsec-->
 
@@ -191,13 +171,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Observação: No powershell, você também pode usar 'ls' como no Linux e Mac OS X. <!--endsec-->
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
 ### Mudar a pasta atual
 
-Agora, vamos para nossa pasta Desktop (Área de Trabalho):
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -217,7 +197,7 @@ Agora, vamos para nossa pasta Desktop (Área de Trabalho):
 
 <!--endsec-->
 
-Verifique se realmente mudamos de pasta:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -241,13 +221,13 @@ Verifique se realmente mudamos de pasta:
 
 Here it is!
 
-> Dica de profissional: se você digitar `cd D` e apertar a tecla `tab` no seu teclado, a linha de comando preencherá automaticamente o resto do nome para que você possa navegar rapidamente. Se houver mais de uma pasta cujo nome comece com "D", aperte a tecla `tab` duas vezes para obter uma lista de opções.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
 ### Criando Pastas
 
-Que tal criar uma pasta para praticarmos em sua área de trabalho? Você pode fazer assim:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -267,15 +247,15 @@ Que tal criar uma pasta para praticarmos em sua área de trabalho? Você pode fa
 
 <!--endsec-->
 
-Esse pequeno comando criará uma pasta com o nome `practice` na sua área de trabalho. Você pode verificar se está la olhando na sua Área de trabalho ou executando o comando `ls` ou `dir`! Try it. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
 ### Pratique!
 
-Um pequeno desafio para você: em sua recém criada pasta `practice`, crie uma pasta chamada `test`. (Use os comandos `cd` e `mkdir`.)
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### Solução:
 
@@ -309,9 +289,9 @@ Congrats! :)
 
 ### Arrumando
 
-Nós não queremos que você deixe uma bagunça, então vamos remover tudo que fizemos até aqui.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Primeiro, precisamos voltar para a Área de trabalho:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -331,9 +311,9 @@ Primeiro, precisamos voltar para a Área de trabalho:
 
 <!--endsec-->
 
-Usando o comando `..` com o `cd` irá mudar sua pasta atual para o diretório pai (ou seja, a pasta que contém sua pasta atual).
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Verifique onde você está:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -355,9 +335,9 @@ Verifique onde você está:
 
 <!--endsec-->
 
-Agora é hora de deletar a pasta `practice`:
+Now time to delete the `practice` directory:
 
-> **Atenção**: A exclusão de arquivos usando `del`, `rmdir` ou `rm` é irreversível; ou seja, os *arquivos excluídos são perdidos para sempre*! Então, tenha cuidado com este comando.
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -400,7 +380,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Exit
 
-Isso é tudo por agora! Você pode fechar a janela da sua linha de comando agora sem medo. Vamos fazer isso do jeito hacker, certo? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -420,11 +400,11 @@ Isso é tudo por agora! Você pode fechar a janela da sua linha de comando agora
 
 <!--endsec-->
 
-Massa, né? :)
+Cool, huh? :)
 
 ## Sumário
 
-Aqui vai uma lista com alguns comandos úteis:
+Here is a summary of some useful commands:
 
 | Comando (Windows) | Comando (Mac OS / Linux) | Descrição                     | Exemplo                                            |
 | ----------------- | ------------------------ | ----------------------------- | -------------------------------------------------- |
@@ -439,10 +419,10 @@ Aqui vai uma lista com alguns comandos úteis:
 | rmdir /S          | rm -r                    | Exclui diretório              | **rm -r testdirectory**                            |
 | [CMD] /?          | man [CMD]                | obtém ajuda para um comando   | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
-Essas são apenas alguns poucos comandos que você pode executar em sua linha de comando, mas você não irá usar nada mais que isso hoje.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Se você é curiosa, [ss.com](http://ss64.com) contém uma referência completa de comandos para todos os sistemas operacionais.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Pronta?
 
-Vamos mergulhar no mundo do Python!
+Let's dive into Python!
