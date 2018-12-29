@@ -200,6 +200,6 @@ Note that a command window can only run one thing at a time, and the command win
 
 > We reviewed how web servers work in the **How the Internet works** chapter.
 
-โปรดจำไว้ว่า ในการเขียนคำสั่งใหม่ในขณะที่เว๊บเซอร์เวอร์กำลังรันอยู่นั้น ให้เปิดหน้าต่างเทอร์มินัลใหม่และเปิดใช้งาน virtualenv ในการหยุดเว็บเซิร์ฟเวอร์ ให้สลับกลับไปที่หน้าต่างที่รันอยู่ แล้วกดปุ่ม CTRL+C - ปุ่ม Control และปุ่ม C พร้อมกัน (บน Windows คุณอาจต้องกดปุ่ม Ctrl+Break)
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). ในการหยุดเว็บเซิร์ฟเวอร์ ให้สลับกลับไปที่หน้าต่างที่รันอยู่ แล้วกดปุ่ม CTRL+C - ปุ่ม Control และปุ่ม C พร้อมกัน (บน Windows คุณอาจต้องกดปุ่ม Ctrl+Break)
 
 พร้อมสำหรับขั้นถัดไปแล้วใช่มั้ย? ถึงเวลาสร้างเนื้อในเว็บกันแล้ว!
