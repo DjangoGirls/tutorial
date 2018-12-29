@@ -16,35 +16,15 @@ Cette fenêtre, qu'on appelle aussi **ligne de commande** ou **interface en lign
 
 ## Ouvrir l'interface en ligne de commande
 
-Pour commencer à expérimenter, nous avons d'abord besoin d'ouvrir notre interface en ligne de commande.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Go to Start menu → Windows System → Command Prompt.
-
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Go to Applications → Utilities → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
-Vous devriez maintenant voir une fenêtre noire ou blanche qui attend vos commandes.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Si vous êtes sous Mac ou Linux, vous verrez probablement un `$`, comme ça :
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,18 +35,18 @@ Si vous êtes sous Mac ou Linux, vous verrez probablement un `$`, comme ça :
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Si vous êtes sous Windows, vous verrez probablement un `>`, comme ça :
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Donnez un coup d'oeil à la section Linux ci-dessus : c'est à cela que la ligne de commande ressemblera une fois que vous serez sur PythonAnywhere.
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
 
 <!--endsec-->
 
-Chaque commande que vous taperez sera automatiquement précédée par un `$` ou `>` et un espace. Vous ne devez pas les rentrer vous même, votre ordinateur le fera pour vous :-)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -124,7 +104,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Remarque : "pwd" veut dire "print working directory" (afficher le dossier courant).
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -267,9 +247,9 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Essayez donc. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> Pro tip : Si vous voulez éviter de taper les mêmes commandes plein de fois, essayez d'appuyer sur les touches `flèche haut` et `flèche bas` pour retrouver les dernières commandes que vous avez tapé.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
