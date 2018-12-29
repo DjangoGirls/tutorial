@@ -16,31 +16,11 @@ It's exciting, right?! You'll write your first line of code in just a few minute
 
 ## 커맨드라인 열기
 
-커맨드라인을 열고 몇 가지 실험을 해봅시다.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Go to Start menu → Windows System → Command Prompt.
-
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Go to Applications → Utilities → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## 프롬프트
 
-이제 까만 배경이나 하얀 배경에 윈도우가 뭔가를 지시해주길 기다리고 있을 거에요.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -124,7 +104,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> 참고: 'pwd' 는 'print working directory' 의 줄임말임.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -269,7 +249,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> 전문가 팁: 같은 명령어를 여러 번 반복해서 입력하고 싶지 않다면, 키보드의 `위 화살표`와 `아래 화살표`를 눌러서 최근 사용한 명령어들을 볼 수 있어요.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
