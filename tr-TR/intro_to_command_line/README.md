@@ -16,37 +16,17 @@ Genellikle **komut satırı** veya **komut satırı arabirimi** adı verilen pen
 
 ## Komut satırı arabirimini açın
 
-Birkaç deneme yapmak için önce komut satırı arabirimini açmamız gerekir.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Başlat'a gidin → Windows sistemi → Komut istemcisi.
-
-> Daha eski bir windows sistemi için, Başlat menüsü →Tüm programlar → Aksesuarlar → Komut istemcisi.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Uygulamalar → Araçlar →Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-Muhtemelen Uygulamalar → Donatılar → Terminal altında olmalı, fakat sistemler arası farklılık gösterebilir. Eğer orada değilse İnternet'te arayın. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## İstemci
 
-Şu anda yüksek ihtimalle sizden komut bekleyen siyah ya da beyaz bir ekran görüyor olmalısınız.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 If you're on Mac or Linux, you probably see a `$`, like this:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $
     
@@ -57,7 +37,7 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 On Windows, you probably see a `>`, like this:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     >
     
@@ -68,7 +48,7 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
-> Küçük bir not: sizin durumunuzda `C:\Users\ola>` veya `Olas-MacBook-Air:~ ola$` benzeri bir durumda olabilir ve kesinlikle sorun yok.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
@@ -80,7 +60,7 @@ Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ whoami
     
@@ -98,14 +78,14 @@ Let's start by typing this command:
 
 And then hit `enter`. This is our result:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     $ whoami zeynep
     
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Her komutu yazmaya çalışın; kopyala - yapıştır yapmayın. Böylece daha akılda kalıcı olur!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Temeller
 
@@ -117,13 +97,13 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/zeynep
     
 
-> Not: 'pwd'nin anlamı "print working directory" yani "çalışma dizinini yazdır"dır.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -135,7 +115,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\zeynep
     
 
-> Not: 'cd' komutu 'dizin değiştir' anlamındadır. Powershell ile Linux veya Mac OS X'teki gibi pwd komutunu kullanabilirsiniz.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -165,7 +145,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ ls
     Uygulamalar
@@ -189,7 +169,7 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Not: Ayrıca powershell kullanırken Linux ve Mac OS X'teki gibi 'ls' komutunu kullanabilirsiniz. <!--endsec-->
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
@@ -219,7 +199,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     $ pwd
     C:\Users\zeynep\Masaüstü
@@ -229,7 +209,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd 
     C:\Users\zeynep\Masaüstü
@@ -239,7 +219,7 @@ Check if it's really changed:
 
 Here it is!
 
-> Profesyonel İpucu: Eğer `cd D` yazarsanız ve klavyenizden `tab`'a basarsanız, komut satırı ismin geri kalanını tamamlar ve daha hızlı gezersiniz. Eğer "D" ile başlayan birden fazla klasör varsa, diğer seçenekleri görmek için `tab` tuşuna iki kez basın.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
@@ -249,7 +229,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut-satırı{% endfilename %}
 
     $ mkdir uygulama
     
@@ -258,7 +238,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > mkdir uygulama
     
@@ -267,7 +247,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> Profesyonel ipucu: Eğer aynı komutları tekrar tekrar yazmak istemiyorsanız, `yukarı ok` ve `aşağı ok` tuşlarına basarak yazdığınız komutlar arasında geçiş yapabilirsiniz.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
@@ -279,7 +259,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ cd uygulama
     $ mkdir test
@@ -322,7 +302,7 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd ..
     
@@ -355,7 +335,7 @@ Check where you are:
 
 Now time to delete the `practice` directory:
 
-> **Dikkat**: `del`, `rmdir` veya `rm` komutları kullanılarak yapılan silme işlemleri geri alınamaz, bunun anlamı: *silinen dosyalar sonsuza dek yok olur*! Yani bu komutları kullanırken çok dikkatli olun.
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -402,7 +382,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ exit
     
