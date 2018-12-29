@@ -16,31 +16,11 @@
 
 ## إفتح واجهة سطر الأوامر
 
-لبدء بعض التجارب نحن بحاجة إلى فتح واجهة سطر الأوامر لدينا أولاً.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-إذهب الى نافدة البداية ← نضام وندوز ← موجه الأوامر.
-
-> على الإصدارات القديمة من ويندوز، ابحث في قائمة ابدأ > كافة البرامج > ملحقات > موجه الأوامر.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-انتقل إلى التطبيقات → الأدوات المساعدة → تيرمينال.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## موجه
 
-يجب أن تشاهد الآن نافذة بيضاء أو سوداء تنتظر الأوامر الخاصه بك.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -68,7 +48,7 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
-> مجرد ملاحظة صغيرة: في الحالة الخاصة بك قد يكون هناك شيء من هذا القبيل `C:\Users\ola >` أو `Olas-MacBook-Air:~ ola$` قبل التوقيع الفوري، وهذا موافق 100 ٪.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
@@ -106,7 +86,7 @@ And then hit `enter`. This is our result:
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
-> حاول كتابة كل أمر؛ لا نسخ ولصق. عليك أن تتذكر هذه الطريقة أكثر!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## الأساسيات
 
@@ -124,7 +104,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> ملاحظة: 'pwd' تعني 'دليل عمل الطباعة'.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -136,7 +116,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> ملاحظة: 'cd' تعني 'تغيير الدليل'. تماما مثل pwd مع powershell يمكنك استخدامه في لينكس أو نظام التشغيل Mac OS X.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -191,7 +171,7 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> ملاحظة: في powershell يمكنك أيضا استخدام 'ls' مثل لينكس، ونظام التشغيل Mac OS X. <!--endsec-->
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
@@ -241,7 +221,7 @@ Check if it's really changed:
 
 Here it is!
 
-> نصيحة المحترفين: إذا كتبت <`cd D`، ثم ضغطت في `tab` على لوحة المفاتيح، فسيملأ سطر الأوامر تلقائيا بقية الاسم حتى تتمكن من التنقل بشكل أسرع. إذا كان هناك أكثر من مجلد واحد بدءاً من"D"، اضغط مفتاح `tab` مرتين للحصول على قائمة الخيارات.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
@@ -269,7 +249,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> نصيحة للمحترفين: إذا كنت لا تريد كتابة الأوامر نفسها مرارا وتكرارا، فجرب الضغط على `up arrow` و `down arrow` على لوحة المفاتيح للتنقل عبر الأوامر المستخدمة مؤخرا.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
@@ -357,7 +337,7 @@ Check where you are:
 
 Now time to delete the `practice` directory:
 
-> **انتباه**: حذف الملفات باستخدام `del`, `rmdir` أو `rm` غير قابلة للاسترداد، مما يعني * الملفات ستزول إلى الأبد*! لذا كن حدرا جدا مع هذه الأوامر.
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
