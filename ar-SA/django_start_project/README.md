@@ -200,6 +200,6 @@ Note that a command window can only run one thing at a time, and the command win
 
 > لقد استعرضنا كيف تعمل خادمات الويب في الفصل **How the Internet works**.
 
-لكتابة أوامر إضافية أثناء تشغيل خادم الويب، افتح نافذة طرفية جديدة وقم بتنشيط virtualenv الخاص بك. لإيقاف خادم الويب، قم بالتبديل مرة أخرى إلى النافذة التي يتم تشغيلها واضغط على CTRL+C - مفاتيح التحكم و C معا (على ويندوز، قد تضطر إلى الضغط على Ctrl+Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). لإيقاف خادم الويب، قم بالتبديل مرة أخرى إلى النافذة التي يتم تشغيلها واضغط على CTRL+C - مفاتيح التحكم و C معا (على ويندوز، قد تضطر إلى الضغط على Ctrl+Break).
 
 أنت مستعد للخطوة التالية؟ لقد حان الوقت لإنشاء بعض المحتوى!
