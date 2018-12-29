@@ -23,33 +23,37 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Zainstaluj Pythona
+# Open a command window
+
+Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up. {% include "/intro_to_command_line/open_instructions.md" %}
+
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Zainstaluj edytor kodu
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
 
-# Utwórz środowisko wirtualne i zainstaluj Django
+# Set up virtualenv and install Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Zainstaluj Gita
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# Utwórz konto na GitHubie
+# Create a GitHub account
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
-# Utwórz konto na PythonAnywhere
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Zacznij czytać
+# Start reading
 
-Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed warsztatami, możesz przeczytać początkowe rozdziały:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [Jak działa internet](../how_the_internet_works/README.md)
 
@@ -59,6 +63,6 @@ Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed 
 
 * [Czym jest Django?](../django/README.md)
 
-# Ciesz się warsztatami!
+# Enjoy the workshop!
 
-Kiedy zaczniesz warsztaty, będziesz mogła przejść od razu do rozdziału [Twój pierwszy projekt w Django!](../django_start_project/README.md) ponieważ już przebrnęłaś przez materiał z wcześniejszych rozdziałów.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
