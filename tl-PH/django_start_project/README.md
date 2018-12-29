@@ -200,6 +200,6 @@ Note that a command window can only run one thing at a time, and the command win
 
 > Ating pinagbalik-aralan kung paano gumagana ang mga web server sa **How the Internet words** na kabanata.
 
-Para magtype ng karagdagang mga command habang tumatakbo ang web server, magbukas ng bagong terminal window at i-activate ang iyong virtualenv. Para pahintuin ang web server, bumalik sa window kung saan ito napatakbo at pindutin ang CTRL+C - Control at C na mga key ng sabay-sabay (sa Windows, maaring kailangan mong pinduting ang Ctrl+Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Para pahintuin ang web server, bumalik sa window kung saan ito napatakbo at pindutin ang CTRL+C - Control at C na mga key ng sabay-sabay (sa Windows, maaring kailangan mong pinduting ang Ctrl+Break).
 
 Handa na ba sa sunod na hakbang? Oras na para maglikha ng mga nilalaman!
