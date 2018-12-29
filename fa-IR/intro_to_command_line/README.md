@@ -16,27 +16,7 @@ The window, which is usually called the **command line** or **command-line inter
 
 ## Open the command-line interface
 
-To start some experiments we need to open our command-line interface first.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Go to Start menu → Windows System → Command Prompt.
-
-> On older versions of Windows, look in Start menu → All Programs → Accessories → Command Prompt.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Go to Applications → Utilities → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
@@ -46,7 +26,7 @@ You now should see a white or black window that is waiting for your commands.
 
 If you're on Mac or Linux, you probably see a `$`, like this:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $
     
@@ -57,7 +37,7 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 On Windows, you probably see a `>`, like this:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     >
     
@@ -80,7 +60,7 @@ Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ whoami
     
@@ -98,7 +78,7 @@ Let's start by typing this command:
 
 And then hit `enter`. This is our result:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ whoami
     olasitarska
@@ -118,7 +98,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ pwd
     /Users/olasitarska
@@ -166,7 +146,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ ls
     Applications
@@ -221,7 +201,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ pwd
     /Users/olasitarska/Desktop
@@ -231,7 +211,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
@@ -251,7 +231,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ mkdir practice
     
@@ -260,7 +240,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > mkdir practice
     
@@ -281,7 +261,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ cd practice
     $ mkdir test
@@ -324,7 +304,7 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd ..
     
@@ -404,7 +384,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ exit
     
