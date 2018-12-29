@@ -16,31 +16,11 @@ La ventana, que generalmente es llamada **línea de comandos** ó **interfaz de 
 
 ## Abrir la interfaz de línea de comandos
 
-Lo primero que debemos hacer para empezar a experimentar con nuestra interfaz de línea de comandos es abrirla.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Ve a Menú de inicio → Windows System → Command Prompt.
-
-> En versiones anteriores de Windows, busca en Menú de inicio → Todos los programas → Accesorios → Command Prompt.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Ve a Aplicaciones → Utilidades → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-Probablemente estará en Aplicaciones → Accesorios → Terminal, pero en tu sistema puede estar en un sitio distinto. Si no lo encuentras, busca en Google. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Símbolo del Sistema (Prompt)
 
-Ahora deberías ver una ventana blanca o negra que está esperando tus órdenes.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -68,7 +48,7 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
-> Sólo una pequeña nota: en tu caso puede que haya algo como `C:\Users\ola>` o `Olas-MacBook-Air:~ ola$` antes del símbolo prompt y eso está perfecto.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
@@ -76,7 +56,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## Tu primer comando (¡BIEN!)
 
-Comencemos escribiendo este comando:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -96,24 +76,24 @@ Comencemos escribiendo este comando:
 
 <!--endsec-->
 
-Y pulsa `enter`. Este es nuestro resultado:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
     $ whoami olasitarska
     
 
-Como puedes ver, el ordenador ha imprimido tu nombre de usuario. Genial, ¿eh? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Trata de escribir cada comando, no copies y pegues. ¡Te acordarás más de esta manera!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Fundamentos
 
-Cada sistema operativo tiene un conjunto diferente de comandos para la línea de comandos, así que asegúrate de seguir las instrucciones para tu sistema operativo. Vamos a intentarlo, ¿de acuerdo?
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Directorio actual
 
-Estaría bien saber dónde estamos ahora, ¿verdad? Vamos a ver. Escribe este comando y pulsa `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -123,7 +103,7 @@ Estaría bien saber dónde estamos ahora, ¿verdad? Vamos a ver. Escribe este co
     /Users/olasitarska
     
 
-> Nota: 'pwd' significa 'print working directory' - en español, 'mostrar directorio de trabajo'.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -135,7 +115,7 @@ Estaría bien saber dónde estamos ahora, ¿verdad? Vamos a ver. Escribe este co
     C:\Users\olasitarska
     
 
-> Nota: 'cd' significa 'cambiar directorio'. Con powershell se puede utilizar pwd al igual que en Linux o Mac OS X.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -161,7 +141,7 @@ Adding a `/?` suffix to most commands will print the help page. You may need to 
 
 ### Listar ficheros y directorios
 
-¿Qué hay aquí? Sería bueno saber. Veamos:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -190,7 +170,7 @@ Adding a `/?` suffix to most commands will print the help page. You may need to 
     ...
     
 
-> Nota: En powershell también puedes utilizar 'ls' como en Linux y Mac OS X. <!--endsec-->
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
@@ -216,7 +196,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Comprueba si realmente ha cambiado:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -238,15 +218,15 @@ Comprueba si realmente ha cambiado:
 
 <!--endsec-->
 
-¡Aquí está!
+Here it is!
 
-> Truco pro: si escribes `cd D` y luego pulsas `tab` en el teclado, la línea de comandos automáticamente completará el resto del nombre para que puedas navegar más rápido. Si hay más de una carpeta que empiece con "D", dale al botón `tab` dos veces para obtener una lista de opciones.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
 ### Crear un directorio
 
-¿Qué tal si creamos un directorio de práctica en el escritorio? Lo puedes hacer de esta manera:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -266,9 +246,9 @@ Comprueba si realmente ha cambiado:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Inténtalo. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> Truco pro: Si no quieres escribir una y otra vez los mismos comandos, prueba pulsando la `flecha arriba` y la `flecha abajo` de tu teclado para ir pasando por los comandos utilizados recientemente.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
@@ -302,15 +282,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-¡Felicidades!
+Congrats! :)
 
 * * *
 
 ### Clean up
 
-No queremos dejar un lío, así que vamos a eliminar todo lo que hemos hecho hasta este momento.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-En primer lugar, tenemos que volver al escritorio:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -332,7 +312,7 @@ En primer lugar, tenemos que volver al escritorio:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Revisa dónde estás:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -356,7 +336,7 @@ Revisa dónde estás:
 
 Now time to delete the `practice` directory:
 
-> **Atención**: Eliminar archivos utilizando `del`, `rmdir` o `rm` hace que no puedan recuperarse, lo que significa que los *archivos borrados desaparecerán para siempre*! Así que ten mucho cuidado con este comando.
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -399,7 +379,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Salir
 
-¡Esto es todo por ahora! Ya puedes cerrar la línea de comandos sin problema. Vamos a hacerlo al estilo hacker, ¿vale?:)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -419,11 +399,11 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-Genial, ¿no? :)
+Cool, huh? :)
 
 ## Resumen
 
-Aquí hay una lista de algunos comandos útiles:
+Here is a summary of some useful commands:
 
 | Comando (Windows) | Comando (Mac OS / Linux) | Descripción                   | Ejemplo                                            |
 | ----------------- | ------------------------ | ----------------------------- | -------------------------------------------------- |
@@ -438,10 +418,10 @@ Aquí hay una lista de algunos comandos útiles:
 | rmdir /S          | rm -r                    | Eliminar un Directorio        | **rm -r testdirectory**                            |
 | [CMD] /?          | man [CMD]                | Obtener ayuda para un comando | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
-Estos son solo algunos de los comandos que puedes ejecutar en la línea de comandos. No vas a usar nada más que esos por ahora.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Si tienes curiosidad, [ss64.com](http://ss64.com) contiene una referencia completa de comandos para todos los sistemas operativos.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## ¿Listo?
 
-¡Vamos a sumergirnos en Python!
+Let's dive into Python!
