@@ -23,33 +23,37 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Installer Python
+# Open a command window
+
+Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up. {% include "/intro_to_command_line/open_instructions.md" %}
+
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Installer un éditeur de code
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
 
-# Mettre en place virtualenv et installer Django
+# Set up virtualenv and install Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Installer Git
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# Créer un compte GitHub
+# Create a GitHub account
 
-Allez sur [GitHub.com](https://www.github.com) et créez un compte d’utilisateur gratuitement. N’oubliez pas votre mot de passe (ajoutez-le à votre gestionnaire de mots de passe, si vous utilisez un).
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
-# Créer un compte PythonAnywhere
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Commencer à lire
+# Start reading
 
-Félicitations, vous avez tout installé et êtes prête ! Si vous avez toujours du temps avant l'atelier, il peut être utile de commencer à lire les premiers chapitres :
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [Comment fonctionne Internet](../how_the_internet_works/README.md)
 
@@ -59,6 +63,6 @@ Félicitations, vous avez tout installé et êtes prête ! Si vous avez toujours
 
 * [Qu'est-ce que Django?](../django/README.md)
 
-# Profitez de l’atelier !
+# Enjoy the workshop!
 
-Lors de l’atelier, vous serez en mesure d'attaquer directement le chapitre [Votre premier projet Django !](../django_start_project/README.md) parce que vous aurez déjà couvert le matériel dans les chapitres précédents.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
