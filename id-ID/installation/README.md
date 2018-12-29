@@ -23,9 +23,13 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
+# Open a command window
+
+Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up. {% include "/intro_to_command_line/open_instructions.md" %}
+
 # Install Python
 
-{% include "/python_installation/instructions.md"%}
+{% include "/python_installation/instructions.md" %}
 
 # Install a code editor
 
@@ -37,7 +41,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Install Git
 
-{% include "/deploy/install_git.md"%}
+{% include "/deploy/install_git.md" %}
 
 # Create a GitHub account
 
@@ -45,11 +49,11 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 # Create a PythonAnywhere account
 
-{% include "/deploy/signup_pythonanywhere.md"%}
+{% include "/deploy/signup_pythonanywhere.md" %}
 
 # Start reading
 
-Selamat, Anda sudah siap dan siap untuk pergi! Jika Anda masih memiliki beberapa waktu sebelum lokakarya, akan berguna untuk mulai membaca beberapa bab awal:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [How the internet works](../how_the_internet_works/README.md)
 
@@ -61,4 +65,4 @@ Selamat, Anda sudah siap dan siap untuk pergi! Jika Anda masih memiliki beberapa
 
 # Enjoy the workshop!
 
-Ketika Anda memulai lokakarya, Anda akan bisa langsung menuju [proyek Django pertama Anda!](../django_start_project/README.md) karena Anda telah membahas materi di bab-bab sebelumnya.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
