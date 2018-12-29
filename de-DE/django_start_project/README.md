@@ -200,6 +200,6 @@ Beachte, dass ein Terminalfenster immer nur eine Sache zur selben Zeit erledigen
 
 > Wie Webserver funktionieren, haben wir im Kapitel **"Wie das Internet funktioniert"** angesehen.
 
-Öffne ein neues Terminal und aktiviere dort dein virtualenv, damit du – auch während der Webserver läuft – neue Kommandos eingeben kannst. Um den Webserver zu stoppen, wechsel zurück in das Fenster, in dem er läuft, und drücke STRG+C - Steuerung und C gleichzeitig. (In Windows kann es sein, dass du STRG und "Pause"-Taste drücken musst).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Um den Webserver zu stoppen, wechsel zurück in das Fenster, in dem er läuft, und drücke STRG+C - Steuerung und C gleichzeitig. (In Windows kann es sein, dass du STRG und "Pause"-Taste drücken musst).
 
 Bereit für den nächsten Schritt? Es wird Zeit, ein paar Inhalte hinzuzufügen!
