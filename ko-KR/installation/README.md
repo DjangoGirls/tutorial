@@ -23,6 +23,10 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
+# Open a command window
+
+Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up. {% include "/intro_to_command_line/open_instructions.md" %}
+
 # Install Python
 
 {% include "/python_installation/instructions.md" %}
@@ -49,7 +53,7 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 # Start reading
 
-축하합니다. 드디어 여러분은 시작할 준비가 되었답니다! 워크샵 사전에 튜토리얼 앞 부분을 미리 읽어두면 도움이 될 거에요:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [How the internet works](../how_the_internet_works/README.md)
 
@@ -61,4 +65,4 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 # Enjoy the workshop!
 
-워크샵이 시작하면, 앞의 내용은 이미 다 이해했다고 생각하고 [나의 첫 번째 Django 프로젝트!](../django_start_project/README.md)로 넘어가세요.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
