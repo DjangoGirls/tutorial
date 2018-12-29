@@ -21,8 +21,8 @@ data-id="chromebook_setup" data-collapse=true ces-->
 {% include "/chromebook_setup/instructions.md" %}
 <!--endsec-->
 
-# Open a command window
-Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up.
+# Brief intro to the command line
+Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like:
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Install Python
