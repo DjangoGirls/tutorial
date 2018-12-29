@@ -199,6 +199,6 @@ LANGUAGE_CODE = 'de-ch'
 > > > 
 > > > > Kami meninjau bagaimana server web bekerja di ** Bagaimana Internet bekerja** bab.
 > > > 
-> > > Untuk mengetikkan perintah tambahan saat server web berjalan, buka jendela terminal baru dan aktifkan virtualenv Anda. Untuk menghentikan server web, kembali ke jendela tempat ia menjalankan dan tekan tombol CTRL + C - Control dan C bersama-sama (di Windows, Anda mungkin harus menekan Ctrl + Break).
+> > > To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Untuk menghentikan server web, kembali ke jendela tempat ia menjalankan dan tekan tombol CTRL + C - Control dan C bersama-sama (di Windows, Anda mungkin harus menekan Ctrl + Break).
 > > > 
 > > > Siap untuk langkah selanjutnya? Saatnya untuk membuat beberapa konten!
