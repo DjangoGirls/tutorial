@@ -200,6 +200,6 @@ Note that a command window can only run one thing at a time, and the command win
 
 > Webサーバーの仕組みについては、「インターネットの仕組み」の章を参照してください。
 
-Webサーバーの実行中に追加のコマンドを入力するには、新しいターミナルウィンドウを開き、virtualenvをアクティブにします。 Webサーバーを停止するには、実行中のウィンドウに戻り、CTRL + C - ControlキーとCキーを同時に押します（WindowsではCtrl + Breakキーを押す必要があります）。
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Webサーバーを停止するには、実行中のウィンドウに戻り、CTRL + C - ControlキーとCキーを同時に押します（WindowsではCtrl + Breakキーを押す必要があります）。
 
 次のステップに進む準備はできましたか？ 今度は実際にコンテンツを作り始めましょう！
