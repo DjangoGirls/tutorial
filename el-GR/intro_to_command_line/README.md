@@ -16,35 +16,15 @@
 
 ## Άνοιγμα της γραμμής εντολών
 
-Για να πειραματιστείτε πρέπει πρώτα να ανοίξετε μια γραμμή εντολών (ή κονσόλα, πιο σύντομα).
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Πηγαίνετε στο Start menu → Windows System → Command Prompt.
-
-> Σε παλαιότερες εκδόσεις των Windows, κοιτάχτε στο Start menu → All Programs → Accessories → Command Prompt.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Πηγαίνετε στο Applications → Utilities → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-Συνήθως είναι κάτω από το Applications → Accessories → Terminal, αλλά αυτό εξαρτάται από το σύστημα σας. Αν δεν είναι εκεί ψάξτε το στο Google. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
-Θα πρέπει, τώρα, να βλέπετε ένα άσπρο ή μαύρο παράθυρο που αναμένει εντολές από εσάς.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Αν είστε σε Mac ή Linux, θα βλέπετε το `$`, όπως αυτό:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -55,28 +35,28 @@
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Στα Windows, θα βλέπετε το `>`, όπως:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Ρίξτε μια ματιά τώρα στο τμήμα του Linux από πάνω. Θα δείτε κάτι παρόμοιο με αυτό του PythonAnywhere αργότερα στον οδηγό.
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
 
 <!--endsec-->
 
-Πριν από κάθε εντολή θα προηγείται ο χαρακτήρας `$` ή `>` και ένα κενό αλλά εσείς δεν πρέπει να τα γράφετε. Ο υπολογιστής σας θα το κάνει για εσάς. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
-> Μια μικρή σημείωση: στην περίπτωση σας μπορεί να δείτε κάτι σαν `C:\Users\ola>` ή `Olas-MacBook-Air:~ ola$` πριν το σύμβολο του prompt. Αυτό είναι 100% OK.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
-Το σημείο μέχρι το (και συμπεριλαμβανομένου) `$` ή το `>` ονομάζεται *command line prompt*, ή σκέτο *prompt* εν συντομία. Σας προτρέπει να εισάγεται κάτι εκεί.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-Στον οδηγό, όταν θέλουμε εσείς να γράψετε μια εντολή, θα συμπεριλαμβάνουμε και το `$` ή `>` και, κατά περίπτωση, περισσότερα πιο αριστερά. Αγνοήστε, λοιπόν, το αριστερό κομμάτι και πληκτρολογείτε μόνο την εντολή ως έχει η οποία θα ξεκινά μετά το prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Η πρώτη σας εντολή (ΝΑΙ!)
 
-Ας ξεκινήσουμε με αυτή την εντολή:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -96,7 +76,7 @@
 
 <!--endsec-->
 
-Και μετά πατήστε `enter`. Αυτό είναι το αποτέλεσμα:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -104,17 +84,17 @@
     olasitarska
     
 
-Όπως μπορείτε να δείτε, ο υπολογιστής μόλις εκτύπωσε το όνομα χρήστη σας. Ωραίο, εε; :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Προσπαθείτε να γράφετε ξάθε εντολή. Μην κάνετε αντιγραγή-επικόλληση. Θα θυμάστε περισσότερα με αυτό τον τρόπο!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Βασικά
 
-Κάθε υπολογιστικό σύστημα ένα διαφορετικό ρεπερτόριο εντολών στη γραμμή εντολών. Οπότε, φροντίστε να ακολουθάτε τις οδηγίες του δικού σας λειτουργικού συστήματος. Ας το δοκιμάσουμε, έτσι;
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Παρόν φάκελος
 
-Θα ήταν ωραίο να γνωρίζουμε πού βρισκόμαστε τώρα, έτσι; Ας δούμε. Πληκτρολογήσετε αυτή την εντολή πατήστε `enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -124,7 +104,7 @@
     /Users/olasitarska
     
 
-> Σημείωση: 'pwd' σημαίνει 'print working directory'.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -136,33 +116,33 @@
     C:\Users\olasitarska
     
 
-> Σημείωση: 'cd' σημαίνει 'change directory'. Με το powershell μπορείτε να χρησιμοποιήσετε την εντολή pwd όπως στο Linux ή το Mac OS X.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
-Κατά πάσα πιθανότητα θα δείτε κάτι παρόμοιο στο μηχάνημά σας. Μόλις ανοίγετε τη γραμμή εντολών, θα ξεκινάτε στον φάκελο του χρήστη (home folder).
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Μάθετε περισσότερα σχετικά με μια εντολή
 
-Πολλές εντολές που πληκτρολογείτε στη γραμμή εντολών έχουν ενσωματωμένη βοήθεια που μπορείτε να εμφανίσετε και να διαβάσετε! Για παράδειγμα, για να μάθετε περισσότερα σχετικά με τον τρέχων φάκελο:
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-Τα λειτουργικά συστήματα OS X και Linux έχουν μια εντολή `man`, η οποία δίνει βοήθεια στις εντολές. Δοκιμάστε `man pwd` και δείτε τι λέει ή βάλτε την εντολή `man` πριν από άλλες εντολές για να δείτε τη βοήθειά τους. Η έξοδος της εντολής `man` παρουσιάζεται, συνήθως, ως σελιδοποιημένη (paged). Χρησιμοποιήστε το κουμπί του διαστήματος για να κινηθείτε προς την επόμενη σελίδα και το πλήκτρο `q` για να βγείτε από την "σελιδοποιημένη" βοήθεια, πίσω στην γραμμή εντολών.
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Προσθέτοντας το πρόθεμα `/?` στις περισσότερες εντολές θα εκτυπώσετε τη σελίδα βοήθειας. Ίσως να χρειαστεί να κάνετε scroll στο παράθυρο σας για να δείτε όλα. Δοκιμάστε `cd /;`.
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
 
 <!--endsec-->
 
 ### Προβολή αρχείων και φακέλων
 
-Τι είναι, λοιπόν, μέσα; Θα ήταν ωραίο να μάθουμε. Ας δούμε:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -191,13 +171,13 @@
     ...
     
 
-> Σημείωση: Σε powershell μπορείτε επίσης να χρησιμοποιήσετε το 'ls' όπως στο Linux και στο Mac OS X. <!--endsec-->
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
 ### Αλλαγή του τρέχοντος φακέλου
 
-Τώρα, ας μεταβούμε στον φάκελο επιφάνεια εργασίας:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -217,7 +197,7 @@
 
 <!--endsec-->
 
-Δείτε αν όντως άλλαξε:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -239,15 +219,15 @@
 
 <!--endsec-->
 
-Εδώ είναι!
+Here it is!
 
-> PRO tip: Εάν πληκτρολογήσετε `cd D` και στη συνέχεια πατήσετε το πλήκτρο `tab`, τότε η γραμμή εντολών θα συμπληρώσει αυτόματα το υπόλοιπο όνομα του. Έτσι μπορείτε να πλοηγηθείτε ταχύτερα. Εάν υπάρχουν περισσότεροι από ένας φάκελος που ξεκινάει με το «D», πατήστε το πλήκτρο `tab` δύο φορές για να εμφανιστεί μια λίστα επιλογών.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
 ### Δημιουργία φακέλου
 
-Τι θα λέγατε να δημιουργούσαμε έναν φάκελο για σκοπούς εξάσκησης στην επιφάνεια εργασίας; Μπορείτε να το κάνετε κατ' αυτό τον τρόπο:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -267,15 +247,15 @@
 
 <!--endsec-->
 
-Αυτή η μικρή εντολή θα δημιουργήσει ένα φάκελο με το όνομα `practice` στην επιφάνεια εργασίας. Μπορείτε να ελέγξετε αν είναι εκεί εξετάζοντας την επιφάνεια εργασίας σας ή εκτελώντας την εντολή `ls` ή `dir`! Δοκιμάστε το. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> PRO tip: Αν δεν θέλετε να γράφετε την ίδια εντολή ξανά και ξανά, πιέστε το `πάνω βελάκι` ή/και το `κάτω βελάκι` στο πληκτρολόγιο σας για να περιηγηθείτε στο ιστορικό των εντολών σας.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
 ### Εξασκηθείτε!
 
-Μια μικρή πρόκληση για εσάς: στον καινούργιο σας φάκελο με το όνομα `practice`, δημιουργήστε έναν φάκελο με το όνομα `test`. (Χρησιμοποιήστε τις εντολές `cd` και `mkdir`.)
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### Λύση:
 
@@ -303,15 +283,15 @@
 
 <!--endsec-->
 
-Συγχαρητήρια! :)
+Congrats! :)
 
 * * *
 
 ### Διαγραφή
 
-Δεν θέλουμε να αφήσουμε πίσω μας άχρηστα αρχεία/φακέλους. Ας διαγράψουμε ότι έχουμε δημιουργήσει μέχρι τώρα.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Πρώτα, πρέπει να πάμε πίσω στην Επιφάνεια Εργασίας:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -331,9 +311,9 @@
 
 <!--endsec-->
 
-Χρησιμοποιώντας τις δύο τελίτσες `..` παρέα με την εντολή `cd` αλλάζετε την θέση σας από τον παρόν φάκελο σε 1 επίπεδο πιο ψηλά (δηλαδή στον φάκελο που περιέχει τον τρέχων φάκελο).
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Δείτε που είστε:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -355,9 +335,9 @@
 
 <!--endsec-->
 
-Ώρα να διαγράψουμε τον φάκελο `practice`:
+Now time to delete the `practice` directory:
 
-> **Προσοχή**: Η διαγραφή των αρχείων χρησιμοποιώντας τις εντολές `del`, `rmdir` ή `rm` είναι μη αναστρέψιμες, δηλαδή *τα διεγραμμένα αρχεία δεν μπορούν να επανακτηθούν*! Οπότε να είστε προσεκτικοί με αυτή την εντολή.
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -378,7 +358,7 @@
 
 <!--endsec-->
 
-Έγινε! Για να βεβαιωθείτε ότι όντως διαγράφηκε, ας το δούμε:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -400,7 +380,7 @@
 
 ### Έξοδος
 
-Αυτά για τώρα! Μπορείτε να κλείσετε τη γραμμή εντολών με ασφάλεια τώρα. Ας το κάνουμε με τον τρόπο του χάκερ, εντάξει;:)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -420,11 +400,11 @@
 
 <!--endsec-->
 
-Ωραίο, ε; :)
+Cool, huh? :)
 
 ## Περίληψη
 
-Παρακάτω φαίνεται μια περίληψη μερικών χρήσιμων εντολών:
+Here is a summary of some useful commands:
 
 | Εντολή (Windows) | Εντολή (Mac OS / Linux) | Περιγραφή                              | Παράδειγμα                                        |
 | ---------------- | ----------------------- | -------------------------------------- | ------------------------------------------------- |
@@ -439,10 +419,10 @@
 | rmdir /S         | rm -r                   | διαγραφή φακέλου                       | **rm -r testdirectory**                           |
 | [CMD] /?         | man [CMD]               | προβολή βοήθειας για μια εντολή        | **cd /?** (Windows) ή **man cd** (Mac OS / Linux) |
 
-Αυτό είναι ένα πολύ μικρό κομμάτι από τις διαθέσιμες εντολές που μπορείτε να τρέξετε στην γραμμή εντολών. Αλλά δεν θα χρειαστεί να χρησιμποιήσετε περισσότερες από αυτές σήμερα.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Αν είστε περίεργοι δείτε το [ss64.com](http://ss64.com) που περιέχει μια πλήρη αναφορά σε όλες τις εντολές όλων των λειτουργικών συστημάτων.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Είστε έτοιμοι;
 
-Ας μάθουμε λίγο Python!
+Let's dive into Python!
