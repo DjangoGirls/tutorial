@@ -16,37 +16,17 @@ Jendela, yang biasanya disebut **command line**atau** antarmuka baris perintah**
 
 ## Buka antarmuka baris perintah
 
-Untuk memulai beberapa percobaan kita perlu membuka antarmuka baris perintah kita terlebih dahulu.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Buka menu Start → Windows System → Command Prompt.
-
-> Pada versi Windows yang lama, lihat pada menu Start → All Programs → Accessories → Command Prompt.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Arahkan ke Applications → Utilities → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Jendela Perintah
 
-Sekarang Anda akan melihat jendala hitam atau putih yang menunggu perintah yang Anda ketikkan.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 If you're on Mac or Linux, you probably see a `$`, like this:
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $
     
@@ -57,7 +37,7 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 On Windows, you probably see a `>`, like this:
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     >
     
@@ -68,7 +48,7 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
-> Catatan kecil: dalam kasus Anda mungkin kelihatan seperti `C:\Users\ola>` atau `Olas-MacBook-Air:~ ola$` sebelum tanda prompt, itu tidak menjadi masalah.
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
@@ -80,7 +60,7 @@ Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ whoami
     
@@ -98,7 +78,7 @@ Let's start by typing this command:
 
 And then hit `enter`. This is our result:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ whoami 
     olasitarska
@@ -106,7 +86,7 @@ And then hit `enter`. This is our result:
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Coba ketik setiap baris peintah; jangan disalin-tempel. Anda akan ingat lebih banyak dengan cara ini!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## Hal-hal dasar
 
@@ -118,13 +98,13 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ pwd /
     Users/olasitarska
     
 
-> Catatan: 'pwd' singkatan dari 'print working directory'.
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -136,7 +116,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Catatan: 'cd' singkatan dari 'change directory'. Dengan powershell Anda dapat menggunakn pwd seperti halnya pada Linux atau Mac OS X.
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -166,7 +146,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ ls 
     Applications 
@@ -191,7 +171,7 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Catatan: di powershell Anda juga dapat menggunakan 'ls' seperti pada Linux dan Mac OS X. <!--endsec-->
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
@@ -221,7 +201,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ pwd 
     /Users/olasitarska/Desktop
@@ -231,7 +211,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd 
     C:\Users\olasitarska\Desktop
@@ -241,7 +221,7 @@ Check if it's really changed:
 
 Here it is!
 
-> PRO tip: jika Anda ketik `cd D` dan kemudian menekan `tab` pada keyboard Anda, perintah tersebut akan secara otomatis mengisi sisa dari perintah yang akan diketik sehingga Anda dapat bekerja lebih cepat. Jika ada lebih daru satu folder yang dimulai dengan "D", tekan tombol `tab` dua kali untuk melihat daftar pilihan yang tersedia.
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
@@ -251,7 +231,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ mkdir praktik
     
@@ -260,7 +240,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > mkdir praktik
     
@@ -269,7 +249,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> PRO tip: Jika Anda tidak ingin mengetikkan perintah yang sama berulangkali, coba tekan `panah atas` dan `panah bawah` pada keyboard Anda untuk melihat perintah yang baru saja Anda gunakan.
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
@@ -281,7 +261,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ cd practice 
     $ mkdir test 
@@ -324,7 +304,7 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd ..
     
@@ -337,7 +317,7 @@ Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
-{% filename %}baris-perinah{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ pwd 
     /Users/olasitarska/Desktop
@@ -357,11 +337,11 @@ Check where you are:
 
 Now time to delete the `practice` directory:
 
-> **Perhatian**: Menghapus berkas dengan menggunakan `del`, `rmdir ` atau `rm ` tidak dapat dipulihkan, artinya *berkas yang dihapus akan hilang selamanya*! Jadi berhati-hatilah dengan perintah ini.
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}baris-perinah{% endfilename %}
 
     $ rm -r practice
     
@@ -404,7 +384,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}baris-perintah{% endfilename %}
 
     $ exit
     
