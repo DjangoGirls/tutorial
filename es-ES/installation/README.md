@@ -23,33 +23,37 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Instalar Python
+# Open a command window
+
+Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up. {% include "/intro_to_command_line/open_instructions.md" %}
+
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Instalar un editor de código
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
 
-# Configurar virtualenv e instalar Django
+# Set up virtualenv and install Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Instalar Git
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# Crear una cuenta de GitHub
+# Create a GitHub account
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
-# Crear una cuenta de PythonAnywhere
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Comienza a leer
+# Start reading
 
-Felicitaciones, ya tienes todo configurado y listo para seguir! Si aún tienes tiempo antes del taller, sería útil comenzar a leer algunos de los capítulos iniciales:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [¿Cómo funciona internet?](../how_the_internet_works/README.md)
 
@@ -59,6 +63,6 @@ Felicitaciones, ya tienes todo configurado y listo para seguir! Si aún tienes t
 
 * [¿Qué es Django?](../django/README.md)
 
-# ¡Disfruta el taller!
+# Enjoy the workshop!
 
-Al comenzar el taller, podrás ir directamente a [Tu primer proyecto en Django!](../django_start_project/README.md) porque ya cubriste el material de los capítulos anteriores.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
