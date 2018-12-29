@@ -23,33 +23,37 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Εγκατάσταση Python
+# Open a command window
+
+Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up. {% include "/intro_to_command_line/open_instructions.md" %}
+
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Εγκατάσταση επεξεργαστή κώδικα
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
 
-# Εγκατάσταση virtualenv και Django
+# Set up virtualenv and install Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Εγκατάσταση Git
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# Δημιουργία GitHub λογαριασμού
+# Create a GitHub account
 
-Πηγαίνετε στο [GitHub.com](https://www.github.com) και φτιάξτε έναν δωρεάν λογαριασμό. Σιγουρευτείτε ότι θα θυμάστε τον κωδικό πρόσβασης (προσθέστε τον σε κάποιον password manager, αν χρησιμοποιείτε κάποιον).
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
-# Δημιουργία λογαριασμού στο PythonAnywhere
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Αρχίστε να διαβάζετε
+# Start reading
 
-Συγχαρητήρια, όλα έχουν ρυθμιστεί σωστά και είστε πανέτοιμοι! Αν έχετε ακόμα χρόνο πριν το workshop, ίσως να σας βοηθούσε να ξεκινήσετε να διαβάζετε μερικά από τα εισαγωγικά κεφάλαια:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [Πως λειτουργεί το internet](../how_the_internet_works/README.md)
 
@@ -59,6 +63,6 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 * [Τι είναι το Django;](../django/README.md)
 
-# Καλά να περάσετε στο workshop!
+# Enjoy the workshop!
 
-Όταν ξεκινήσει το workshop, μπορείτε να πατε αμέσως στο [Το πρώτο σας Django project!](../django_start_project/README.md), αφού έχετε ήδη καλύψει το υλικό των ενδιάμεσων ενοτήτων στα προηγούμενα κεφάλαια.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
