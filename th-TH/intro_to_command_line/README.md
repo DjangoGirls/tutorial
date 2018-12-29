@@ -16,31 +16,11 @@
 
 ## การเปิด command-line interface
 
-ก่อนจะเริ่มทดลองใช้ เราก็จะต้องต้องเปิด command-line interface ขึ้นมาซะก่อน
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-ไปที่เมนู Start → Windows System → Command Prompt
-
-> สำหรับ Windows รุ่นเก่า ให้ไปที่เมนู Start → All Programs → Accessories → Command Prompt
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-ไปที่ Applications → Utilities → Terminal
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-It's probably under Applications → Accessories → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
-ตอนนี้คุณควรเห็นหน้าต่างสีขาวหรือสีดำที่รอคุณป้อนคำสั่งอยู่
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -68,7 +48,7 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
-> หมายเหตุเล็กๆ: บางกรณีคุณอาจจะเจอ `C:\Users\ola>` หรือ `Olas-MacBook-Air:~ ola$` ก่อนเครื่องหมายเหล่านี้ มันไม่ได้ปัญหาอะไรหรอกนะ มันโอเค 100% เลย
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
@@ -106,7 +86,7 @@ And then hit `enter`. This is our result:
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
-> ลองพิมพ์คำสั่งแต่ละคำสั่งดู ห้ามก็อปมาวางนะ ทำแบบนี้แล้วคุณจะจำได้เอง!
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## พื้นฐาน
 
@@ -124,7 +104,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> หมายเหตุ: 'pwd' ย่อมาจาก 'print working directory'
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -136,7 +116,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> หมายเหตุ: 'cd' ย่อมาจาก 'change directory' ใน powershell คุณสามรถใช้ pwd เหมือนในระบบปฏิบัติการ Linux หรือ Mac OS X
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -191,7 +171,7 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> หมายเหตุ: ใน powershell คุณสามาถใช้ 'ls' ได้เหมือนที่คุณใช้ในระบบปฏิบัติการ Linux หรือ Mac OS X <!--endsec-->
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
@@ -241,7 +221,7 @@ Check if it's really changed:
 
 Here it is!
 
-> คำแนะนำจากมือโปร: ถ้าคุณพิมพ์ `cd D` และกดปุ่ม `tab` บนแป้นพิมพ์ command line หรือบรรทัดคำสั่งจะเติมส่วนที่เหลือให้โดยอัตโนมัติ เพราะฉะนั้นคุณจะสามารถพิมพ์คำสั่งได้เร็วขึ้น ถ้าเกิดว่ามันมีมากกว่าหนึ่งโฟลเดอร์ที่เริ่มด้วย "D" ให้กดปุ่ม `tab` สองครั้งเพื่อดูรายการโฟลเดอร์เหล่านั้น
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
@@ -269,7 +249,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> คำแนะนำจากโปร: ถ้าคุณไม่อยากพิมพ์คำสั่งเดิมซ้ำๆ ลองกดปุ่ม `ลูกศรขึ้น` และ `ลูกศรลง` บนแป้นพิมพ์ของคุณ เพื่อดูว่าคุณใช้คำสั่งล่าสุดอะไรบ้าง
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
@@ -357,7 +337,7 @@ Check where you are:
 
 Now time to delete the `practice` directory:
 
-> **คำเตือน**: การลบไฟล์โดยใช้คำสั่ง `del`, `rmdir` หรือ `rm` เราจะไม่สามารถกู้คืนมาได้ ฉะนั้น *ไฟล์เหล่านี้จะหายไปตลอดกาล*! เพราะฉะนั้นต้องคุณระวังให้มากๆ ก่อนใช้คำสั่งเหล่านี้
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
