@@ -200,6 +200,6 @@ Note that a command window can only run one thing at a time, and the command win
 
 > Megnéztük, hogy milyen web szerver működik, a **Hogyan működik az Internet** fejezet.
 
-A típus további parancsokat, míg a web szerver fut, nyitva egy új terminál ablakban aktiváljuk a virtualenv. To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
 Készen állsz a következő lépésre? Itt az ideje, hogy létrehozzunk némi tartalmat!
