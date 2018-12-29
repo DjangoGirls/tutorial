@@ -23,33 +23,37 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Python installieren
+# Open a command window
+
+Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up. {% include "/intro_to_command_line/open_instructions.md" %}
+
+# Install Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Einen Code-Editor installieren
+# Install a code editor
 
 {% include "/code_editor/instructions.md" %}
 
-# Virtualenv einrichten und Django installieren
+# Set up virtualenv and install Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Git installieren
+# Install Git
 
 {% include "/deploy/install_git.md" %}
 
-# Einen GitHub-Account erstellen
+# Create a GitHub account
 
-Gehe zu [GitHub.com](https://www.github.com) und registriere dich für ein neues, kostenfreies Benutzerkonto. Achte darauf, dass du dein Passwort nicht vergisst (füge es deinem Passwortmanager hinzu, wenn du einen benutzt).
+Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
-# Einen PythonAnywhere-Account erstellen
+# Create a PythonAnywhere account
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Fang an zu lesen!
+# Start reading
 
-Herzlichen Glückwunsch, du hast alles eingerichtet und bist nun bereit loszulegen! Wenn du vor dem Workshop noch etwas Zeit hast, wäre es hilfreich, einige der einführenden Kapitel zu lesen:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [Wie das Internet funktioniert](../how_the_internet_works/README.md)
 
@@ -59,6 +63,6 @@ Herzlichen Glückwunsch, du hast alles eingerichtet und bist nun bereit loszuleg
 
 * [Django - Was ist das?](../django/README.md)
 
-# Viel Spaß beim Workshop!
+# Enjoy the workshop!
 
-Wenn du mit dem Workshop anfängst, kannst du direkt zum Kapitel [Dein erstes Django-Projekt!](../django_start_project/README.md) gehen, weil du den Inhalt der vorhergehenden Kapitel schon bearbeitet hast.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
