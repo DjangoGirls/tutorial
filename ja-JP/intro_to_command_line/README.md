@@ -16,31 +16,11 @@
 
 ## コマンドラインインタフェースを開く
 
-では、実際にコマンドラインを開いて、触ってみることとしましょう。
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-［スタート］→［Windowsシステムツール］→［コマンドプロンプト］を選択しましょう
-
-> Windowsの古いバージョンの場合、[スタート] → [アクセサリ] → [コマンドプロンプト] です。
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-［アプリケーション］→［ユーティリティ］→［ターミナル］を選択しましょう。
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-おそらく ［アプリケーション］→［アクセサリ］→［ターミナル］と選択し起動できるでしょう。あなたのシステムによってはこの通りではないことがあります。見つからないときは、Google先生にきいてみましょう. :)
-
-<!--endsec-->
+To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## プロンプト
 
-おそらく今、真っ白または真っ黒な画面が開かれていることでしょう。この画面はあなたの命令を待っています。
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -68,7 +48,7 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
-> ちょっと補足です。プロンプト記号の前に `C:\Users\ola>` や `Olas-MacBook-Air:~ ola$` のような表示がありますね。これは間違いではありません。100%正解です。このチュートリアルでは、シンプルにわかりやすくするために、その部分を省略して記述します。
+> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
@@ -106,7 +86,7 @@ And then hit `enter`. This is our result:
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
-> コピー＆ペーストではなく、コマンドを入力して試してみてください。そのうち自然と覚えられるようになりますからね！
+> Try to type each command; do not copy-paste. You'll remember more this way!
 
 ## 基本
 
@@ -124,7 +104,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> 補足: 'pwd' は'print working directory'を意味しており、現在いる作業ディレクトリを取得することです。
+> Note: 'pwd' stands for 'print working directory'.
 
 <!--endsec-->
 
@@ -136,7 +116,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> 補足: 'cd' は、'change directory' を意味しています。Powershellを使うと、LinuxやMac OS Xのようにpwdコマンドを使えます。
+> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
 
 <!--endsec-->
 
@@ -191,7 +171,7 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> 補足：Powershellでは、lsコマンドをLinux や Mac OS X同様に使えます。 <!--endsec-->
+> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
 
 * * *
 
@@ -241,7 +221,7 @@ Check if it's really changed:
 
 Here it is!
 
-> PRO tip: `cd D`と入力して、キーボードの`tab`ボタンを押してください。すると、Dに続く残りの部分が自動的に補完されて入力されます。 もし、Dから始まるディレクトリ名が他にもあれば、`tabボタン`を繰り返し押すと候補が次々と表示されます。入力が楽になりますね。
+> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
@@ -269,7 +249,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
-> PRO tip: 同じコマンドを何度もなんども入力したくない時は、上下矢印キー`↑`、`↓`を押せば、先ほどキーボードから入力したものが現れます。内容を修正したい場合には，左右矢印キー←，→を利用して修正したい位置にカーソルを移動させて，修正することができますよ。
+> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
@@ -357,7 +337,7 @@ Check where you are:
 
 Now time to delete the `practice` directory:
 
-> **注意！: **　`del`や `rmdir `、`rm` のコマンドを使って削除したファイルは、復活できません。完全に消えてしまいます。 このコマンドを使う時は、よく気をつけてくださいね。
+> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
