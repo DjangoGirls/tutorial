@@ -200,6 +200,6 @@ Note that a command window can only run one thing at a time, and the command win
 
 > Ako webový server funguje sme si povedali v kapitole **Ako funguje Internet**.
 
-Ak chceš zadať ďalšie príkazy, kým webový server beží, otvor nové terminálové okno a aktivuj svoj virtualenv. Ak chceš zastaviť webový server, prepni sa späť do okna, v ktorom beží a stlač Ctrl + C súčasne (na Windowse možno budeš musiť stlačiť Ctrl + Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Ak chceš zastaviť webový server, prepni sa späť do okna, v ktorom beží a stlač Ctrl + C súčasne (na Windowse možno budeš musiť stlačiť Ctrl + Break).
 
 Pripravená na ďalší krok? Je na čase vytvoriť nejaký obsah!
