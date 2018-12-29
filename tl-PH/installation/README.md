@@ -23,6 +23,10 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
+# Open a command window
+
+Several of the steps below will involve typing into a "console" or "command window". This will be explained later; for now, just open one up. {% include "/intro_to_command_line/open_instructions.md" %}
+
 # Install Python
 
 {% include "/python_installation/instructions.md" %}
@@ -49,7 +53,7 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 # Start reading
 
-Maligayang bati, tapos ka na sa pag-setup at handa ka na! Kung may oras ka pa bago ang workshop, mas makabubuti kung magsimula ka nang magbasa ng iilan sa mga nauunang mga kabanata:
+Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
 * [How the internet works](../how_the_internet_works/README.md)
 
@@ -61,4 +65,4 @@ Maligayang bati, tapos ka na sa pag-setup at handa ka na! Kung may oras ka pa ba
 
 # Enjoy the workshop!
 
-Kung magsimula ka na ng workshop, magagawa mong dumiretso sa [Unang Django na proyekto mo!](../django_start_project/README.md) dahil kalakip na ang materyal sa mga naunang kabanata.
+When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
