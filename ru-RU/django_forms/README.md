@@ -134,13 +134,13 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Чтобы создать новую форму `Post`, нам потребуется вызвать `PostForm()` и передать её шаблону. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Чтобы создать новую форму `Post`, нам потребуется вызвать `PostForm()` и передать её шаблону. Мы еще вернемся к этому *view*, но пока давай быстренько создадим шаблон для формы.
 
 ## Шаблон
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Нам необходимо создать файл `post_edit.html` в папке `blog/templates/blog`, и открыть его в редакторе кода. Чтобы форма работала, нам нужно несколько вещей:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
+* Нам необходимо отобразить форму на страницу. Это можно сделать (например) с помощью {% raw %}`{{ form.as_p }}`{% endraw %}
 * Строка выше должна быть обернута в HTML-теги `<form method="POST">...</form>`.
 * Нам потребуется кнопка `Save`. Мы реализуем при помощи HTML-кнопки: `<button type="submit">Save</button>`.
 * And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. Это очень важно, поскольку так мы делаем форму защищенной! If you forget about this bit, Django will complain when you try to save the form:
