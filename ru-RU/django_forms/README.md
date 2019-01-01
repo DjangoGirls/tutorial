@@ -52,9 +52,9 @@ class PostForm(forms.ModelForm):
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Обрати внимание, что мы хотим вызвать наше новое представление `post_new`. Класс `"glyphicon glyphicon-plus"` предоставляется темой bootstrap, которую мы используем, и она отобразит значок "плюс" для нас.
 
-After adding the line, your HTML file should now look like this:
+После добавления строки, твой HTML-файл должен выглядеть следующим образом:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -89,7 +89,7 @@ After adding the line, your HTML file should now look like this:
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Мы открываем `blog/urls.py` в редакторе кода и добавляем строку:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -112,7 +112,7 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+После обновления сайта, мы видим `AttributeError`, так как у нас не добавлено представление для `post_new`. Добавим прямо сейчас.
 
 ## Представление post_new
 
