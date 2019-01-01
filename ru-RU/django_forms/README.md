@@ -116,7 +116,7 @@ urlpatterns = [
 
 ## Представление post_new
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Пришло время открыть `blog/views.py` файл в редакторе кода и добавить следующие строки из остальных строк `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +124,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+Затем наше *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
