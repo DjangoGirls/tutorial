@@ -36,15 +36,15 @@ class PostForm(forms.ModelForm):
 
 Затем, мы имеем `class Meta`, где мы определяем какая модель будет использоваться для создания формы (`model = Post`).
 
-В завершении мы можем указать, какие поля должны присутствовать в нашей форме. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+В завершении мы можем указать, какие поля должны присутствовать в нашей форме. В этом сценарии мы хотим, чтобы только `title` и `text` отображались - `author` должен быть пользователем, который вошел в систему под своим логином (ты!) и `created_date` должна автоматически устанавливаться при создании записи (то есть в коде), верно?
 
 Вот и все! Всё, что нам теперь осталось сделать - это использовать форму в *представлении* и отобразить её в шаблоне.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Итак, еще раз мы создадим ссылку на страницу, URL, представление и шаблон.
 
 ## Ссылка на страницу с формой
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+Пришло время открыть `blog/templates/blog/base.html` в редакторе кода. Мы добавим ссылку в `div`, который называется `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
