@@ -6,13 +6,13 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Сначала проверьте, работает ли ваш компьютер на 32-разрядной или 64-разрядной версии Windows, в строке «Тип системы» на странице Информация о системе. Чтобы перейти на эту страницу, попробуйте один из следующих методов:
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
+* Нажмите одновременно клавишу Windows и клавишу Pause/Break
+* Откройте панель управления из меню Windows, затем перейдите в Система & Безопасность, затем перейдите в Система
+* Нажмите на кнопку Windows, а затем перейдите в Настройки > Система > О системе
 
-You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Вы можете скачать Python для Windows с сайта https://www.python.org/downloads/windows/. Кликните по ссылке «Последняя версия Python 3 - релиз Python x.x.x». Если ваш компьютер работает на **64-разрядной** версии Windows, загрузите **исполняемый файл установщика для Windows x86-64**. В противном случае загрузите **исполняемый файл установщика для Windows x86**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
