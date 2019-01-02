@@ -45,7 +45,7 @@ text, and a small window at the bottom that looks something like this:
 yourusername:~/workspace $
 ```
 
-This bottom area is your _terminal_. You can use the terminal to send instructions
+This bottom area is your terminal. You can use the terminal to send instructions
 to the remote Cloud 9 computer. You can resize that window to make it a bit
 bigger.
 
