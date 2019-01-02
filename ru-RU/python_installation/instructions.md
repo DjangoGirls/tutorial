@@ -12,20 +12,20 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 * Откройте панель управления из меню Windows, затем перейдите в Система & Безопасность, затем перейдите в Система
 * Нажмите на кнопку Windows, а затем перейдите в Настройки > Система > О системе
 
-Вы можете скачать Python для Windows с сайта https://www.python.org/downloads/windows/. Кликните по ссылке «Последняя версия Python 3 - релиз Python x.x.x». Если ваш компьютер работает на **64-разрядной** версии Windows, загрузите **исполняемый файл установщика для Windows x86-64**. В противном случае загрузите **исполняемый файл установщика для Windows x86**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Вы можете скачать Python для Windows с сайта https://www.python.org/downloads/windows/. Кликните по ссылке «Последняя версия Python 3 - релиз Python x.x.x». Если ваш компьютер работает на **64-разрядной** версии Windows, загрузите **исполняемый файл установщика для Windows x86-64**. В противном случае загрузите **исполняемый файл установщика для Windows x86**. После загрузки инсталлятора, его необходимо запустить (с помощью двойного клика по нему) и следуй инструкциям.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Единственная вещь, за которой необходимо следить: во время установки вы увидите окно с пометкой "Setup". Убедитесь, что вы отметили «Добавить Python 3.6 в PATH» или «добавить Python в ваши переменные среды» флажок и нажмите кнопку «Установить сейчас», как показано здесь (это может выглядеть немного иначе, если вы устанавливаете другую версию):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+После завершения установки, может появиться диалоговое окно с ссылкой, по которой вы можете следовать, чтобы узнать больше о Python или о версии, которую вы установили. Закройте или отмените диалоговое окно--вы будете изучать больше в этом учебнике!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Примечание: Если вы используете старую версию Windows (7, Vista, или любой старой версии) и Python 3.6.x установка завершается с ошибкой, вы можете попробовать так:
 
-1. install all Windows Updates and try to install Python again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. установить все обновления Windows и попытайтесь установить Python заново; или
+2. установите [более старую версию Python](https://www.python.org/downloads/windows/), например, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Если вы установите старую версию Python, экран установки может выглядеть несколько иначе, чем показано выше. Убедитесь, что вы прокрутили вниз, чтобы увидеть «Добавить python.exe в PATH», а затем нажмите кнопку на левой стороне и выберите "Будет установлено на локальный жесткий диск":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -34,7 +34,7 @@ If you install an older version of Python, the installation screen may look a bi
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Примечание** Прежде чем установить Python на OS X, следует убедиться, что ваш Mac параметры позволяют устанавливать пакеты, которые не из App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
 
 You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
