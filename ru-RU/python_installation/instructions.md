@@ -16,7 +16,7 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 
 Единственная вещь, за которой необходимо следить: во время установки вы увидите окно с пометкой "Setup". Убедитесь, что вы отметили «Добавить Python 3.6 в PATH» или «добавить Python в ваши переменные среды» флажок и нажмите кнопку «Установить сейчас», как показано здесь (это может выглядеть немного иначе, если вы устанавливаете другую версию):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Не забудьте добавить Python в системную переменную Path](../python_installation/images/python-installation-options.png)
 
 После завершения установки, может появиться диалоговое окно с ссылкой, по которой вы можете следовать, чтобы узнать больше о Python или о версии, которую вы установили. Закройте или отмените диалоговое окно--вы будете изучать больше в этом учебнике!
 
@@ -27,7 +27,7 @@ Django написан на Python. Нам нужен Python, чтобы сдел
 
 Если вы установите старую версию Python, экран установки может выглядеть несколько иначе, чем показано выше. Убедитесь, что вы прокрутили вниз, чтобы увидеть «Добавить python.exe в PATH», а затем нажмите кнопку на левой стороне и выберите "Будет установлено на локальный жесткий диск":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Добавить Python в Path, для старых версий](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -79,14 +79,14 @@ data-collapse=true ces-->
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Если вы находитесь на более старых версиях Fedora, вы можете получить сообщение об ошибке, что команда `dnf` не найдена. В этом случае вам нужно использовать `yum` вместо dnf.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Используй следующую команду в консоли:
 
 {% filename %}command-line{% endfilename %}
 
@@ -95,7 +95,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Убедись, что установка прошла успешно, открыв приложение *Терминал* и запустив команду `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -103,10 +103,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+Показана версия может отличаться от 3.6.1--он должен соответствовать версии, которую вы установили.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
+**ПРИМЕЧАНИЕ:** Если вы на Windows, и вы получите сообщение об ошибке, `python3` не был найден, попробуйте использовать `python` (без `3`) и проверить, если он все еще может быть версия Python, которая является 3.4.0 или выше.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Если у тебя остались какие-либо сомнения, или что-то пошло не так и ты понятия не имеешь что делать дальше - спроси своего тренера! Иногда дела идут не совсем гладко, поэтому лучше попросить помощи у кого-то с большим опытом.
