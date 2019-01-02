@@ -2,7 +2,7 @@
 > 
 > Этот подраздел основан на руководстве Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django написан на Python. Нам нужен Python, чтобы сделать что-нибудь в Django. Начнем с его установки! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django написан на Python. Нам нужен Python, чтобы сделать что-нибудь в Django. Начнем с его установки! Мы хотим, чтобы ты установила последнюю версию Python 3, поэтому, если у тебя уже есть более ранняя версия, то её придется обновить. Если у вас уже есть версия 3.4 или выше, тогда все хорошо.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
