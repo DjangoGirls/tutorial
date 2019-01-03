@@ -33,7 +33,7 @@ Now you should see an interface with a sidebar, a big main window with some text
     yourusername:~/workspace $
     
 
-This bottom area is your *terminal*, where you will give the computer Cloud 9 has prepared for your instructions. You can resize that window to make it a bit bigger.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### محیط مجازی
 
