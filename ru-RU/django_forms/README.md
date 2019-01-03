@@ -265,25 +265,25 @@ def post_new(request):
 
 Это круто!
 
-> Поскольку мы недавно использовали панель администратора Django, системы до сих пор думает, что мы авторизованы. Существует несколько случаев, когда мы можем случайно выйти из аккаунта (закрытие браузера, перезапуск базы данных и т. д.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. Это решит проблему. В главе **Домашнее задание: добавляем безопасность нашему веб-сайту!** после основного учебника приводится перманентное исправление.
+> Поскольку мы недавно использовали панель администратора Django, системы до сих пор думает, что мы авторизованы. Существует несколько случаев, когда мы можем случайно выйти из аккаунта (закрытие браузера, перезапуск базы данных и т. д.). Если в процессе создания записи ты получаешь ошибку, которая ссылается на отсутствие вошедшего в систему пользователя, то потребуется перейти на страницу http://127.0.0.1:8000/admin и авторизоваться в системе снова. Это решит проблему. В главе **Домашнее задание: добавляем безопасность нашему веб-сайту!** после основного учебника приводится перманентное исправление.
 
 ![Ошибка при выходе из аккаунта](images/post_create_error.png)
 
 ## Валидация формы
 
-Теперь мы покажем тебе насколько круты формы в Django. Запись в блоге должна иметь поля `title` и `text`. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Теперь мы покажем тебе насколько круты формы в Django. Запись в блоге должна иметь поля `title` и `text`. В нашей модели `Post` мы не указываем, что эти поля необязательны (в отличии от `published_date`), так Django по умолчанию будет ожидать их заполнение пользователем.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Попробуй сохранить форму с незаполненными полями `title` и `text`. Угадай, что произойдет!
 
 ![Валидация формы](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django заботится о проверке всех полей в нашей форме на корректность. Разве не шикарно?
 
 ## Форма редактирования
 
-Теперь мы знаем как добавить новую форму. Но что, если мы хотим внести исправления в уже существующую запись? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Теперь мы знаем как добавить новую форму. Но что, если мы хотим внести исправления в уже существующую запись? По сути это схожая с предыдущей задача. Давайте создадим некоторые важные вещи быстро. (Если ты чего то не понимаешь, то тебе следует спросить своего тренера или просмотреть предыдущие главы, так как мы уже выполняли все данные шаги раньше.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Открой `blog/templates/blog/post_detail.html` в редакторе кода и добавь следующую строку
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+итак, шаблон будет выглядеть следующим образом:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -299,20 +299,20 @@ so that the template will look like this:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    &lt;div class="post"&gt;
         {% if post.published_date %}
-            <div class="date">
+            &lt;div class="date"&gt;
                 {{ post.published_date }}
-            </div>
+            &lt;/div&gt;
         {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+        &lt;a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"&gt;&lt;span class="glyphicon glyphicon-pencil"&gt;&lt;/span&gt;&lt;/a&gt;
+        &lt;h2&gt;{{ post.title }}&lt;/h2&gt;
+        &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
+    &lt;/div&gt;
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Открой `blog/urls.py` в редакторе кода и добавь строку:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ Open `blog/urls.py` in the code editor, and add this line:
 
 Мы будем использовать повторно шаблон `blog/templates/blog/post_edit.html`, так что осталось лишь отсутствующее *представление*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Давай откроем `blog/views.py` в редакторе кода и добавим в конец файла:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Выглядит практически идентично представлению `post_new`, верно? Но не совсем. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Выглядит практически идентично представлению `post_new`, верно? Но не совсем. Первое: мы передаем дополнительный параметр `pk` из Url-адреса. Следующее: мы получаем модель `Post` для редактирования при помощи `get_object_or_404(Post, pk=pk)` и передаем экземпляр post в качестве `instance` форме для сохранения…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+…и когда мы только что открыли форму с этой записью для редактирования:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,7 +358,7 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Хорошо, давай проверим что все работает! Перейди на страницу `post_detail`. Ты должна увидеть кнопку редактирования в правом верхнем углу:
 
 ![Кнопка редактирования](images/edit_button2.png)
 
@@ -366,11 +366,11 @@ OK, let's test if it works! Let's go to the `post_detail` page. There should be 
 
 ![Форма редактирования](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Смело поменяй заголовок или текст и сохрани изменения!
 
 Поздравляем! Твое приложение становится все более сложным!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Если тебе нужно больше информации о формах в Django, то обратись к официальной документации: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Безопасность
 
