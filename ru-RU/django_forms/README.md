@@ -374,9 +374,9 @@ form = PostForm(instance=post)
 
 ## Безопасность
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Круто иметь возможность создавать новые посты просто нажав на ссылку! Однако, сейчас кто угодно из посетителей вашего сайта может создать новую запись в блоге, а это, скорее всего, совсем не то, чего бы вам хотелось. Давай сделаем так, чтобы кнопка показывалась для нас, а не кого-либо еще.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Открой файл `blog/templates/blog/base.html` в редакторе кода, найди наш `page-header` `div` и тег &lta&gt который мы добавили ранее. Должно выглядеть примерно так:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -384,7 +384,7 @@ Open `blog/templates/blog/base.html` in the code editor, find our `page-header` 
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Измени тег `< >`, чтобы получилось так:
+Мы собираемся добавить еще один `{% if %}` тег, который сделает так, чтобы ссылка показывалась только авторизованным в панель администратора пользователям. Прямо сейчас это только ты! Измени тег `< >`, чтобы получилось так:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,7 +394,7 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. Это не обезопасит создание новых постов полностью, но для начала и это неплохо. Мы подробнее рассмотрим вопросы безопасности в дополнении к учебнику.
+Из-за этого `{% if %}` ссылка будет отправлена в браузер, только если запрашивающий страницу пользователь вошёл в систему. Это не обезопасит создание новых постов полностью, но для начала и это неплохо. Мы подробнее рассмотрим вопросы безопасности в дополнении к учебнику.
 
 Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
