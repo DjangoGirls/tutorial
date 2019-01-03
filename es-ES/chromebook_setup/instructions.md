@@ -33,7 +33,7 @@ Deberías ver un interfaz con una barra lateral, una ventana principal grande co
     yourusername:~/workspace $
     
 
-La parte inferior es tu *terminal*, donde escribirás las instrucciones para el ordenador que Cloud 9 te ha preparado. Puedes redimensionar la ventana para hacerla un poco más grande.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### Entorno Virtual
 
