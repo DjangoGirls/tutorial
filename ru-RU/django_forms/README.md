@@ -416,13 +416,13 @@ form = PostForm(instance=post)
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+С тех пор как ты авторизована, если ты перезагрузишь страницу, ты не увидишь ничего нового. Загрузи страницу в любом другом браузере или в режиме "инкогнито" просмотра окна (для Windows Edge называется "InPrivate"), и ты увидишь, что ссылка не показана и иконка также отсутствует!
 
 ## Еще одна вещь: развертывание!
 
 Теперь давай посмотрим как это будет работать на PythonAnywhere. Пришло время для очередного развертывания!
 
-* First, commit your new code, and push it up to GitHub:
+* Сначала нам нужно сделать commit и push нового кода в репозиторий Github:
 
 {% filename %}command-line{% endfilename %}
 
@@ -442,8 +442,8 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Не забудьте заменить `&lt;your-pythonanywhere-username&gt;`на ваше фактическое имя пользователя PythonAnywhere, без угловых скобок).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://yourname.pythonanywhere.com blog to see the changes.
+* Наконец, прыжок на [страницу «Веб»](https://www.pythonanywhere.com/web_app_setup/) (используйте кнопку меню в верхнем правом углу консоли) и клик по **Reload**. Обновите ваш https://yourname.pythonanywhere.com блог, чтобы увидеть изменения.
 
 And that should be it! Congrats :)
