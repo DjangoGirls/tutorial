@@ -33,7 +33,7 @@ Agora, a sua tela deve exibir uma interface com uma barra lateral, uma grande ja
     seunomedeusuário:~/workspace $
     
 
-Esta área inferior é seu *terminal* (ou prompt de comando), onde você dará as instruções para o computador que o Cloud 9 preparou. Você pode redimensionar a janela para torná-la um pouco maior.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### Ambiente Virtual
 
