@@ -222,7 +222,7 @@ if form.is_valid():
 
 Практически мы выполняем две операции: сохраняем форму `form.save` и добавляем автора (поскольку обязательного поля `author` нет в `PostForm`). `commit=False` означает, что мы пока не хотим сохранять модель `Post` - сначала нужно добавить автора. В основном ты будешь использовать `form.save()`, без `commit=False`, но в данном случае нам это пригодится. `post.save()` сохранит изменения (добавление автора) и новая запись будет создана!
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+Наконец, будет прекрасно, если мы сможем сразу переходить к странице `post_detail` после добавления новой записи, согласна? Для этого нам понадобится еще один импорт:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +230,7 @@ Finally, it would be awesome if we could immediately go to the `post_detail` pag
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Добавь эту строку в начало файла. Теперь мы можем сказать "иди на страницу `post_detail` для новой созданной записи":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +238,9 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Помнишь, что это *представление* требует переменную `pk`? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`blog. views. post_detail`это имя представления, на которое мы хотим перейти. Помнишь, что это *представление* требует переменную `pk`? Чтобы передать её представлению мы используем аргумент `pk=post.pk`, где `post` - это новая созданная запись в блоге!
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+Хорошо, мы многое обсудили, пора взглянуть на *представление* полностью, верно?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,13 +259,13 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Проверим, все ли работает. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Проверим, все ли работает. Перейди по адресу http://127.0.0.1:8000/post/new/, добавь текст в поля `title` и `text`, затем сохрани… и вуаля! Новая запись создана и мы перешли на страницу `post_detail`!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+Возможно, ты заметила, что мы устанавливаем дату публикации перед сохранением поста. В последствии мы сделаем *кнопку публикации* в **Django Girls Tutorial: Extensions**.
 
 Это круто!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. Это решит проблему. В главе **Домашнее задание: добавляем безопасность нашему веб-сайту!** после основного учебника приводится перманентное исправление.
+> Поскольку мы недавно использовали панель администратора Django, системы до сих пор думает, что мы авторизованы. Существует несколько случаев, когда мы можем случайно выйти из аккаунта (закрытие браузера, перезапуск базы данных и т. д.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. Это решит проблему. В главе **Домашнее задание: добавляем безопасность нашему веб-сайту!** после основного учебника приводится перманентное исправление.
 
 ![Ошибка при выходе из аккаунта](images/post_create_error.png)
 
