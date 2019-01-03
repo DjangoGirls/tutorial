@@ -33,7 +33,7 @@ PaizaCloud Cloud IDE 의 터미널은 당신의 명령어를 기다리고 있습
     yourusername:~/workspace $
     
 
-이 하단의 영역은 당신이 사용할 수 있는 *터미널*입니다. 크기를 키우기 위해 창의 크기를 조절 할 수 있습니다.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### 가상 환경
 
