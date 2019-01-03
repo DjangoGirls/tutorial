@@ -143,11 +143,11 @@ def post_new(request):
 * Нам необходимо отобразить форму на страницу. Это можно сделать (например) с помощью {% raw %}`{{ form.as_p }}`{% endraw %}
 * Строка выше должна быть обернута в HTML-теги `<form method="POST">...</form>`.
 * Нам потребуется кнопка `Save`. Мы реализуем при помощи HTML-кнопки: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. Это очень важно, поскольку так мы делаем форму защищенной! If you forget about this bit, Django will complain when you try to save the form:
+* Наконец, после открытия `&lt;form ...&gt;` тега, нам необходимо добавить {% raw %}`{% csrf_token %}`{% endraw %}. Это очень важно, поскольку так мы делаем форму защищенной! Если вы забудете об этой части, Django будет "жаловаться", когда вы попытаетесь сохранить форму:
 
 ![Страница CSFR Forbidden](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Хорошо, давай посмотрим, как должен выглядеть HTML-код в файле `post_edit.html`:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -155,11 +155,11 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h2>New post</h2>
-    <form method="POST" class="post-form">{% csrf_token %}
+    &lt;h2&gt;New post&lt;/h2&gt;
+    &lt;form method="POST" class="post-form"&gt;{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
-    </form>
+        &lt;button type="submit" class="save btn btn-default"&gt;Save&lt;/button&gt;
+    &lt;/form&gt;
 {% endblock %}
 ```
 
@@ -167,15 +167,15 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 
 ![Новая форма](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Но подожди минутку! Если ты наберешь что-нибудь в полях `title` и `text` и попробуешь сохранить - что произойдет?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Ничего! Мы снова на той же странице и наш текст пропал... и новая запись не была добавлена. Так что же пошло не так?
 
 Ответ прост: ничего. Нам нужно сделать кое-что еще, чтобы новое *представление* заработало.
 
 ## Сохраняем данные из формы
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Снова открой файл `blog/views.py` в редакторе кода. Все что у нас есть в представлении `post_new` выглядит пока следующим образом:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? Все поля формы теперь находятся в `request.POST`. Ты не должна переименовывать `POST` во что-то другое (другое доступное значение параметра `method` - `GET`, но у нас нет времени объяснять разницу сейчас).
+После отправки формы мы возвращаемся к тому же представлению, но в этот раз с новыми данными в `request`, а точнее в `request.POST` (имя POST не имеет ничего общего с "постом" в блоге, оно связано с тем, что мы "посылаем" данные). Помнишь, что в HTML-файле, определение `< form>` имеет параметр `method="POST"`? Все поля формы теперь находятся в `request.POST`. Ты не должна переименовывать `POST` во что-то другое (другое доступное значение параметра `method` - `GET`, но у нас нет времени объяснять разницу сейчас).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. Таким образом, нам потребуется ввести условие (мы будем использовать условный оператор `if` для этой цели):
 
