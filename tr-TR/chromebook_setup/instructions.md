@@ -33,7 +33,7 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
     yourusername:~/workspace $
     
 
-Bu alt alan * terminalinizdir </ 0>, Cloud 9'un sizin için hazırladığı talimatlarınızı yazacağınız yer. Biraz daha büyük yapmak için bu pencereyi yeniden boyutlandırabilirsiniz.</p> 
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### Sanal ortam (Virtual environment)
 
