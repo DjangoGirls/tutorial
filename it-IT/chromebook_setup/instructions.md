@@ -33,7 +33,7 @@ Verrà visualizzata un'interfaccia con una barra laterale, una grossa finestra c
     yourusername:~/workspace $
     
 
-L'area in basso è il *terminale* dove dare istruzioni al computer che Cloud 9 ha configurato. E' possibile ridimensionare la finistra per ingrandirla.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### Ambiente virtuale
 
