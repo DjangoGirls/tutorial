@@ -206,7 +206,7 @@ else:
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Далее нужно проверить, корректна ли форма (все необходимые поля заполнены и нет неверных данных, отосланных на обработку). Это выполняется с помощью `form.is_valid()`.
 
 Мы проверяем допустимо ли содержание формы и, если все в порядке, сохраняем её!
 
