@@ -33,7 +33,7 @@
     yourusername:~/workspace $
     
 
-Αυτή η περιοχή κάτω είναι το *τερματικό*, όπου θα μπορείτε να δίνετε εντολές στον υπολογιστή που έφτιαξε για εσάς το Cloud 9. Μπορείτε να αλλάξετε τις διαστάσεις του παραθύρου ανάλογα τις ανάγκες σας.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### Εικονικό Περιβάλλον
 
