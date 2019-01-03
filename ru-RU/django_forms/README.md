@@ -396,9 +396,9 @@ form = PostForm(instance=post)
 
 Из-за этого `{% if %}` ссылка будет отправлена в браузер, только если запрашивающий страницу пользователь вошёл в систему. Это не обезопасит создание новых постов полностью, но для начала и это неплохо. Мы подробнее рассмотрим вопросы безопасности в дополнении к учебнику.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Помнишь иконку редактирования, которую мы только что добавили в нашу страницу detail? Мы хотим внести такое же изменение сюда, чтобы другие люди не могли редактировать уже существующие записи.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Открой `blog/templates/blog/post_detail.html` в редакторе кода и найди следующую строку:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Замени это на эту строку:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
