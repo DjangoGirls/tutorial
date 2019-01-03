@@ -187,7 +187,7 @@ def post_new(request):
 
 После отправки формы мы возвращаемся к тому же представлению, но в этот раз с новыми данными в `request`, а точнее в `request.POST` (имя POST не имеет ничего общего с "постом" в блоге, оно связано с тем, что мы "посылаем" данные). Помнишь, что в HTML-файле, определение `< form>` имеет параметр `method="POST"`? Все поля формы теперь находятся в `request.POST`. Ты не должна переименовывать `POST` во что-то другое (другое доступное значение параметра `method` - `GET`, но у нас нет времени объяснять разницу сейчас).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. Таким образом, нам потребуется ввести условие (мы будем использовать условный оператор `if` для этой цели):
+Итак, в нашем *view* у нас имеется 2 отдельных ситуации для обработки: первая, когда мы получаем доступ к странице в первый раз и хотим пустую форму; и вторая, когда мы возвращаемся к *view* со всеми данными формы, которые мы только что напечатали. Таким образом, нам потребуется ввести условие (мы будем использовать условный оператор `if` для этой цели):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Пришло время заполнить в точках `[...]`. Если используется `method` `POST`, тогда мы хотим построить `PostForm` с данными из формы, верно? Вы можете сделать это следующим образом:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -220,7 +220,7 @@ if form.is_valid():
     post.save()
 ```
 
-Практически мы выполняем две операции: сохраняем форму `form.save` и добавляем автора (поскольку обязательного поля `author` нет в `PostForm`). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+Практически мы выполняем две операции: сохраняем форму `form.save` и добавляем автора (поскольку обязательного поля `author` нет в `PostForm`). `commit=False` означает, что мы пока не хотим сохранять модель `Post` - сначала нужно добавить автора. В основном ты будешь использовать `form.save()`, без `commit=False`, но в данном случае нам это пригодится. `post.save()` сохранит изменения (добавление автора) и новая запись будет создана!
 
 Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
