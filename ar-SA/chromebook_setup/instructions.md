@@ -33,7 +33,7 @@
     yourusername:~/workspace $
     
 
-هذه المنطقة السفلية هي *الطرفية*، الخاصة بك التي ستحصل فيها علي Cloud 9 مستعدا بتوجيهاتك. يمكنك تغيير حجم هذه النافذة لجعلها أكبر قليلاً.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### البيئة الافتراضية
 
