@@ -171,14 +171,14 @@ data-collapse=true ces-->
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+В файл `static/css/requirements.txt` следует добавить следующий код:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Теперь наберите `pip install -r requirements.txt` для установки Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -192,7 +192,7 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Создай новый virtualenv в новой директории, а затем удали старый и повтори команды выше. (Перемещение директории virtualenv не будет работать, потому что virtualenv использует абсолютные пути.)
+> Если ты получаешь сообщение об ошибке при запуске pip в Windows, проверь что путь к директории с проектом не содержит пробелы или специальные символы (например, `C:\Users\User Name\djangogirls`). Если проблема в этом, то, пожалуйста, перенеси свой проект в другое место, адрес которого не будет содержать пробелы и специальные символы (советуем в: `C:\djangogirls`). Создай новый virtualenv в новой директории, а затем удали старый и повтори команды выше. (Перемещение директории virtualenv не будет работать, потому что virtualenv использует абсолютные пути.)
 
 <!--endsec-->
 
@@ -215,4 +215,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Вот и все! Теперь ты (наконец-то) готова создать свое Django приложение!
