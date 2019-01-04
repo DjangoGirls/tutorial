@@ -1,6 +1,6 @@
 > Отдельные части этой главы основаны на учебных пособиях Geek Girls Carrots (http://django.carrots.pl/).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Руководство django-marcador защищено авторским правом Markus Zapke-Gründemann et al.
+> Отдельные части этой главы основаны на [учебном пособии django-marcador](http://django-marcador.keimlink.de/), лицензированном под Creative Commons Attribution-ShareAlike 4.0 International License. Руководство django-marcador защищено авторским правом Markus Zapke-Gründemann et al.
 
 ## Виртуальное окружение
 
@@ -8,9 +8,9 @@
 
 Итак, давай создадим **виртуальное окружение** (оно также называется *virtualenv*). Virtualenv будет изолировать зависимости Python/Django для каждого отдельного проекта. Это значит, что изменения одного сайта никогда не затронут другие сайты, которые вы разрабатываете. Удобно, правда?
 
-Все что тебе нужно сделать -- найти директорию, в которой мы создадим `virtualenv`; домашний каталог вполне подойдет. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Все что тебе нужно сделать -- найти директорию, в которой мы создадим `virtualenv`; домашний каталог вполне подойдет. Для Windows адрес будет выглядеть так: `C:\Users\Name` (где `Name` твое имя пользователя).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **ПРИМЕЧАНИЕ:** На Windows убедитесь, что этот каталог не содержит в имени специальные символы; Если ваше имя пользователя содержит кириллические знаки, используйте другой каталог, например `C:\djangogirls`.
 
 Мы будем использовать отдельную директорию `djangogirls` в домашнем каталоге:
 
@@ -44,14 +44,14 @@ data-collapse=true ces-->
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Для Linux и OS X достаточно набрать `python3 -m venv myvenv`, чтобы создать `virtualenv`. Это будет выглядеть так:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` -- имя виртуального окружения `virtualenv`. Опять же, только строчные буквы и никаких пробелов. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` -- имя виртуального окружения `virtualenv`. Опять же, только строчные буквы и никаких пробелов. Имя виртуального окружения лучше выбирать покороче — его часто придется набирать!
 
 > **ПРИМЕЧАНИЕ:** В некоторых версиях Debian/Ubuntu может появиться следующее сообщение об ошибке:
 > 
@@ -62,7 +62,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> В этом случае, следуй нижеуказанной инструкции и установи пакет `python3-venv`: {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
@@ -152,9 +152,9 @@ data-collapse=true ces-->
 
 ## Установка Django
 
-Now that you have your `virtualenv` started, you can install Django.
+Теперь, когда твой `virtualenv` запущен, ты можешь установить Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Но перед этим мы должны убедиться, что у нас установлена последняя версия `pip`, программа, которую мы будем использовать для установки Django:
 
 {% filename %}command-line{% endfilename %}
 
