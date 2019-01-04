@@ -161,11 +161,11 @@ data-collapse=true ces-->
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Установка пакетов с требованиями
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Файл требований хранит список зависимостей для установки с использованием `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Сначала создайте файл `requirements.txt` внутри `djangogirls /` папки, используя редактор кода, который вы установили ранее. Вы делаете это, открыв новый файл в редакторе кода и затем сохранив его как `requirements.txt` в `djangogirls /` папке. Ваша папка будет выглядеть следующим образом:
 
     djangogirls
     └───requirements.txt
