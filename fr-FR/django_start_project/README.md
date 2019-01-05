@@ -200,6 +200,6 @@ Notez qu’une fenêtre de commande ne peut exécuter qu’une chose à la fois,
 
 > Nous avons vu le fonctionnement des serveurs web dans le chapitre **Comment fonctionne Internet**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Pour arrêter votre serveur web, retournez dans la fenêtre où il tourne et appuyez sur CTRL+C : gardez les boutons Control et C appuyés en même temps. (Sous Windows, vous devrez peut-être appuyer sur CTRL+Arrêt défil.)
+Pour taper et executer des nouvelles commandes pendant que le serveur web est en fonction, ouvrez une nouvelle fenêtre dans votre terminal et activez votre virtualenv. Pour reviser comment ouvrir une nouvelle fenêtre, rendez-vous au chapitre [Introduction à la ligne de commande](../intro_to_command_line/README.md). Pour arrêter votre serveur web, retournez dans la fenêtre où il tourne et appuyez sur CTRL+C : gardez les boutons Control et C appuyés en même temps. (Sous Windows, vous devrez peut-être appuyer sur CTRL+Arrêt défil.)
 
 Prête pour la suite ? Il est temps de créer du contenu!
