@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/configuração
 
 # Breve introdução à linha de comando
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Muitos dos passos abaixo, referenciam "console", "terminal", "janela de comando" ou "linha de comando" -- todos significam a mesma coisa: uma janela no teu computador onde podes digitar comandos. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Install Python
 
@@ -51,18 +51,18 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Começar a ler
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Parabéns, está tudo preparado e pronto a começar! Se ainda tens algum tempo antes do workshop, seria útil começares a ler alguns dos capítulos iniciais:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Como funciona a Internet](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Introdução à linha de comandos](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Introdução ao Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [O que é o Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Disfruta do workshop!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Quando iniciares o workshop, poderás de ir, diretamente, para o [O teu primeiro projeto em Django!](../django_start_project/README.md) porque já realizaste o material nos capítulos anteriores.
