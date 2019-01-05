@@ -11,19 +11,19 @@ Boa sorte!
 Se estiveres a um dos eventos [Dango Girls](https://djangogirls.org/events/):
 
 * O teu workshop deve ter uma "secção de instalação" antes do workshop principal. Se estiveres na secção de instalação, esta página é para ti! Segue as instruções aqui para obteres tudo o que precisas para o ter o workshop, com a ajuda dos monitores caso necessites. Então, no workshop principal, poderás saltar as intruções de instalação que encontrares no tutorial principal, quando aparecerem.
-* A organização do workshop poderá ter-te perguntado se tentaste reslizar a instalação no computador, em casa antes de vires para o workshop. Se te oriposeram a isso, esta página é para ti! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* A organização do workshop poderá ter-te perguntado se tentaste reslizar a instalação no computador, em casa antes de vires para o workshop. Se te oriposeram a isso, esta página é para ti! Segue estas instruções, o melhor que poderes. Então, no workshop principal, quando chegares ao passo da instalação no tutorial principal, se tiveste alguma dificuldade na instalação poderás encontrar ajuda junto do teu monitor.
+* Se o teu workshop n tem uma secção de instalação (ou não conseguiste obtê-la), e se os organizadores não te pediram para tentar instalar tudo antes de chegares, salta esta página e segue diretamente para o capítulo [Como funciona a internet](../how_the_internet_works/README.md). Irás instalar tudo o que precisas no seguimento do tutorial.
 
-# Installation
+# Instalação
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Neste tutorial isrás construir um blog. Nesse sentido, no seguimento do tutorial terás as instruções de como instalar o software no teu computador e configurar algumas contas online conforme serão necessárias. Esta página reune toda a instalação e instruções de inscrição (que será útil para laguns formatos de workshop).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
-data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
+data-id="chromebook_setup" data-collapse=true ces--> {% include "/configuração_chromebook/instrucoes.md" %} 
 
 <!--endsec-->
 
-# Brief intro to the command line
+# Breve introdução à linha de comando
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
