@@ -6,12 +6,12 @@ Isto porque enunciamos como instalar as coisas no decorrer dos tutoriais -- esta
 
 Boa sorte!
 
-# If you're attending a workshop
+# Se estiveres a assistir a um workshop
 
-If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
+Se estiveres a um dos eventos [Dango Girls](https://djangogirls.org/events/):
 
-* Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
-* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
+* O teu workshop deve ter uma "secção de instalação" antes do workshop principal. Se estiveres na secção de instalação, esta página é para ti! Segue as instruções aqui para obteres tudo o que precisas para o ter o workshop, com a ajuda dos monitores caso necessites. Então, no workshop principal, poderás saltar as intruções de instalação que encontrares no tutorial principal, quando aparecerem.
+* A organização do workshop poderá ter-te perguntado se tentaste reslizar a instalação no computador, em casa antes de vires para o workshop. Se te oriposeram a isso, esta página é para ti! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
 * If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
 
 # Installation
