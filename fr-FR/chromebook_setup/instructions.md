@@ -33,7 +33,7 @@ Maintenant, vous devriez voir une interface dotée d'une barre latérale, une gr
     nomutilisateur:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Cette fenêtre en bas est votre terminal. Vous pouvez l'utiliser pour donner des instructions à l'ordinateur Cloud9. Vous pouvez changer la taille de la fenêtre et l'agrandir un peu.
 
 ### Environnement virtuel
 
