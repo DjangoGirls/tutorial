@@ -25,35 +25,35 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Brève introduction à la ligne de commande
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Dans les étapes ci-dessous vous allez rencontrer les noms « console », « terminal », « invite de commande » ou « ligne de commande ». Tous ces termes signifient la même chose : une fenêtre sur votre ordinateur où vous pouvez rentrer des commandes. Une fois que vous aurez démarré le tutoriel principal, vous apprendrez plus sur la ligne de commande. Pour l’instant, le plus important est que vous appreniez à ouvrir un terminal et que vous voyez à quoi cela ressemble : {% comprennent « / intro_to_command_line/open_instructions.md » %}
 
-# Install Python
+# Installer Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Installer un éditeur de code
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Mettre en place virtualenv et installer Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Installer Git
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Créer un compte GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Allez sur [GitHub.com](https://www.github.com) et créez un compte d’utilisateur gratuitement. N’oubliez pas votre mot de passe (ajoutez-le à votre gestionnaire de mots de passe, si vous utilisez un).
 
-# Create a PythonAnywhere account
+# Créer un compte PythonAnywhere
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Commencer à lire
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Félicitations, vous avez tout installé et êtes prête ! Si vous avez toujours du temps avant l'atelier, il peut être utile de commencer à lire les premiers chapitres :
 
 * [Comment fonctionne Internet](../how_the_internet_works/README.md)
 
@@ -63,6 +63,6 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 * [Qu'est-ce que Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Profitez de l’atelier !
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Lors de l’atelier, vous serez en mesure d'attaquer directement le chapitre [Votre premier projet Django !](../django_start_project/README.md) parce que vous aurez déjà couvert le matériel dans les chapitres précédents.
