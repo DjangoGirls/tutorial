@@ -4,7 +4,7 @@ Nous allons donc mettre le blog que nous sommes en train de construire sur Pytho
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![La page de login de PythonAnywhere contenant un bouton pour créer le compte gratuit pour 'Débutant'](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Note** Lorsque vous choisissez votre nom d'utilisateur, gardez à l'esprit que l'URL de votre blog prendra la forme `nomutilisateur.pythonanywhere.com`, alors choisissez un pseudonyme ou un nom adapté pour votre blog. Mémorisez votre mot de passe (ajoutez-le à votre gestionnaire de mot de passe, si vous en utilisez un).
 
