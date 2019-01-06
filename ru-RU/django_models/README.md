@@ -184,7 +184,7 @@ class Post(models.Model):
 
 **Примечание:** Не забудьте сохранить файлы, которые вы редактировали. В противном случае ваш компьютер будет выполнять предыдущие версии, которые могут вызвать неожиданные сообщения об ошибках.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django создал для нас файл с миграцией для базы данных. Набери `python manage.py migrate blog`, результат должен быть следующим:
 
 {% filename %}command-line{% endfilename %}
 
@@ -195,4 +195,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Ура! Модель записи для блога теперь в базе данных, было бы неплохо посмотреть на неё, верно? Тогда переходи к следующей главе!
