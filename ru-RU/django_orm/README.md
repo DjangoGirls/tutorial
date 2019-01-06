@@ -4,7 +4,7 @@
 
 ## Что такое QuerySet?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+QuerySet, по сути, список объектов заданной Модели. QuerySet позволяет читать данные из базы данных, фильтровать и изменять их порядок.
 
 Проще научиться на примере. Давай попробуем, согласна?
 
@@ -26,7 +26,7 @@ A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow y
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+Ты находишься в интерактивной консоли Django. По сути, это та же интерактивная консоль Python, но с дополнительной магией от Django :). Здесь ты также можешь использовать весь синтаксис Python, разумеется.
 
 ### Все объекты
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Упс! Появилось сообщение об ошибке. Она говорит, что не существует объекта с именем Post. И это верно -- мы забыли импортировать его!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Все просто: мы импортируем модель `Post` из `blog.models`. Давай попробуем получить все записи блога еще раз:
 
 {% filename %}command-line{% endfilename %}
 
@@ -89,7 +89,7 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+Это же суперюзер, которого мы создали ранее! Теперь давай создадим экземпляр пользователя (скорректируй эту строку под свое собственное имя пользователя):
 
 {% filename %}command-line{% endfilename %}
 
