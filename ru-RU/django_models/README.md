@@ -159,19 +159,19 @@ class Post(models.Model):
 - `models.DateTimeField` -- дата и время.
 - `models.ForeignKey` -- ссылка на другую модель.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Мы не будем объяснять каждый участок кода, поскольку на это уйдет слишком много времени. Ознакомься с официальной документаций Django — если хочешь узнать больше о полях моделей и о том как определять разные объекты, то эта ссылка может помочь: (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+Что насчет `def publish(self):`? Это как раз метод `публикации` для записи, о котором мы говорили. `def` означает, что создаётся функция/метод, а `publish` — это название этого метода. Можно изменить имя метода, если хочешь. Существует правило для имён функций: нужно использовать строчные буквы, а пробелы заменять на подчёркивания. Например метод, вычисляющий среднюю цену может называться `calculate_average_price`.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Методы часто `возвращают` что-то. Например, метод `__str__`. В наше случае, после вызова метода `__str__()` мы получим текст (**строку**) с заголовком записи.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Также заметь, что оба метода `def publish(self):` и `ef __str__(self):` расположены с отступом внутри нашего класса. Поскольку Python чувствителен к пробелы, нам нужно использовать отступы для методов внутри класса. В противном случае методы не будут принадлежать к классу, и вы можете получить некоторое неожиданное поведение.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Если тема моделей тебе до сих пор непонятна -- не стесняйся обратиться к тренеру! Мы знаем, что она действительно сложна, особенно когда ты изучаешь параллельно что такое объекты и функции. Но мы надеемся, что все это кажется тебе теперь не магией!
 
 ### Создаем таблицы моделей в базе данных
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Последним шагом будет добавление нашей модели в базу данных. Сначала мы должны дать Django знать, что сделали изменения в нашей модели (мы её только что создали. (Мы только что создали его!) Перейдите в окно консоли и тип `python manage.py makemigrations blog`. Должно получиться примерно так:
 
 {% filename %}command-line{% endfilename %}
 
@@ -182,7 +182,7 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Примечание:** Не забудьте сохранить файлы, которые вы редактировали. В противном случае ваш компьютер будет выполнять предыдущие версии, которые могут вызвать неожиданные сообщения об ошибках.
 
 Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
 
