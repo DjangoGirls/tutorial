@@ -73,29 +73,29 @@
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Обрати внимание, что в нашем проекте появилась новая папка `blog`, которая содержит некоторые файлы. Итак, структура нашего проекта будет выглядеть следующим образом:
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    │   └── views.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     └── requirements.txt
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+После того как приложение создано, нам нужно сообщить Django, что теперь он должен его использовать. Мы делаем это в файле `mysite/settings.py`, откройте его в своем редакторе кода. Нам нужно найти `INSTALLED_APPS` и добавить к списку `'blog',` прямо перед `]`. Конечный результат должен выглядеть следующим образом:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -113,9 +113,9 @@ INSTALLED_APPS = [
 
 ### Создание модели записи в блоге
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+В файле `blog/models.py` мы определяем все объекты называемые`Models` - в этом месте мы определим наши записи для блога.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+Открой файл `blog/models.py` в редакторе кода, удали весь текст и вставь на его место следующий код:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -140,24 +140,24 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. Это соглашение часто используется при программировании на Python, и иногда его называют "dunder" (сокращение от англ. "double-underscore").
+> Убедись, что использовала два символа нижнего подчеркивания (`_`) с обоих сторон от метода `str`. Это соглашение часто используется при программировании на Python, и иногда его называют "dunder" (сокращение от англ. "double-underscore").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Смотрится страшно, да? Но не волнуйся, мы объясним что значит каждая строка кода!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Строки, начинающиеся с `from` или `import`, открывают доступ к коду из других файлов. Так что, вместо того, чтобы копировать и вставлять один и тот же код во все файлы, мы можешь сослаться на него при помощи `from ... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` -- эта строка определяет нашу модель (`объект`).
 
 - `class` это специальное ключевое слово для определения объектов.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `Post` это имя нашей модели, мы можем поменять его при желании (специальные знаки и пробелы использовать нельзя). Всегда начинай имена классов с большой буквы.
 - `models.Model` означает что объект Post является моделью Django, так Django поймет, что он должен сохранить его в базу данных.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Дальше мы задаем свойства, о которых уже говорили: `title`, `text`, `created_date`, `published_date` и `author`. Чтобы это сделать нам нужно определиться с типом полей (это текст? число? дата? ссылка на другой объект? например, на пользователя?)
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `models.CharField` -- так мы определяем текстовое поле с ограничением на количество символов.
+- `models.TextField` - так определяется поле для неограниченно длинного текста. Выглядит подходящим для содержимого поста, верно?
+- `models.DateTimeField` -- дата и время.
+- `models.ForeignKey` -- ссылка на другую модель.
 
 We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
