@@ -145,7 +145,7 @@ NameError: name 'Post' is not defined
 
 > **Примечание**: Обрати внимание на два символа нижнего подчеркивания (`_`) между `title` и `contains`. Django's ORM использует этот синтаксис для разделения имен полей ("title") и операций или фильтров ("contains"). Если ты используешь только один символ нижнего подчеркивания, то получишь ошибку "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+Ты также можешь получить список всех опубликованных записей. Мы просто отфильтруем записи по полю `published_date`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -155,7 +155,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+К сожалению, пост, который мы добавили в консоли Python еще не опубликован. Мы можем изменить это! Сначала выберем запись, которую мы хотим опубликовать:
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,7 +171,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+Теперь попробуй получить список опубликованных сообщений снова (нажмите стрелку вверх 3 раза и затем `enter`):
 
 {% filename %}command-line{% endfilename %}
 
