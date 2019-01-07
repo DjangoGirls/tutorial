@@ -97,7 +97,7 @@ NameError: name 'Post' is not defined
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Как ты видишь, теперь мы`get` `User` с именем `username`, которое равно "ola". Аккуратно!
 
 Теперь мы наконец можем создать наш пост:
 
@@ -121,11 +121,11 @@ As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 
 ### Добавляем записи
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+Можешь немножко повеселиться и добавить еще записей, чтобы увидеть как система работает. Добавь 2 или 3, затем переходи к новой части.
 
 ### Фильтрация объектов
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. Мы используем метод `filter` вместо метода `all` в `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Теперь наш код выглядит следующим образом:
+Важной особенностью QuerySets является возможность фильтровать объекты. Предположим, нам нужно найти все записи пользователя ola. Мы используем метод `filter` вместо метода `all` в `Post.objects.all()`. В кавычках мы укажем условия, по которым будет построена выборка записей. В нашей ситуации условием будет являться равенство поля `author` переменной `me`. В Django мы можем написать это следующим образом: `author=me`. Теперь наш код выглядит следующим образом:
 
 {% filename %}command-line{% endfilename %}
 
@@ -134,7 +134,7 @@ A big part of QuerySets is the ability to filter them. Let's say we want to find
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+А может быть мы хотим получить все записи, содержащие слово 'title' в поле `title`?
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,7 +143,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Примечание**: Обрати внимание на два символа нижнего подчеркивания (`_`) между `title` и `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Примечание**: Обрати внимание на два символа нижнего подчеркивания (`_`) между `title` и `contains`. Django's ORM использует этот синтаксис для разделения имен полей ("title") и операций или фильтров ("contains"). Если ты используешь только один символ нижнего подчеркивания, то получишь ошибку "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
