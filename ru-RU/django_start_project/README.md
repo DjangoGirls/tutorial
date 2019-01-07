@@ -1,8 +1,8 @@
 # Твой первый проект на Django!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Часть этой главы основана на учебных пособиях Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Руководство django-marcador защищено авторским правом Markus Zapke-Gründemann et al.
+> Отдельные части этой главы основаны на учебном пособии [django-marcador ](http://django-marcador.keimlink.de/), лицензированном под Creative Commons Attribution-ShareAlike 4.0 International License. Руководство django-marcador защищено авторским правом Markus Zapke-Gründemann et al.
 
 Давайте сделаем небольшой блог!
 
@@ -10,11 +10,11 @@
 
 Имена этих каталог и файлов очень важны для Django. Ты не должна переименовывать их. Перемещать их в другое место тоже не самая удачная идея. Django необходима определенная структуру, чтобы иметь возможность найти важные вещи.
 
-> Не забудьте: вы должны запускать все команды в virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. Мы объясняли как это сделать в разделе **Работаем с virtualenv** главы **Установка Django**. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Не забудьте: вы должны запускать все команды в virtualenv. Если ты не видишь в командной строке префикс `(myvenv)`, то необходимо активировать virtualenv. Мы объясняли как это сделать в разделе **Работаем с virtualenv** главы **Установка Django**. Для этого нужно набрать `myvenv\Scripts\activate` в Windows или `source myvenv/bin/activate` в Mac OS / Linux.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+В консоли Mac OS или Linux нужно запустить следующую команду; **не забудьте добавить точку `.` в конце**
 
 {% filename %}command-line{% endfilename %}
 
@@ -149,7 +149,8 @@ DATABASES = {
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying auth.0008_alter_user_username_max_length... OK
-      Applying auth.0009_alter_user_last_name_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length...
+     OK
       Applying sessions.0001_initial... OK
     
 
