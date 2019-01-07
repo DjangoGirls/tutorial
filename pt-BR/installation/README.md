@@ -10,22 +10,22 @@ Boa sorte!
 
 Se você está participando de uma oficina de um [ Evento Django Girls ](https://djangogirls.org/events/):
 
-* Sua oficina pode ter um "grupo de instalação" antes da oficina principal. Se você está com um grupo de instalação, essa página é para você! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
-* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* Sua oficina pode ter um "grupo de instalação" antes da oficina principal. Se você está com um grupo de instalação, essa página é para você! Siga as instruções aqui contidas para ter tudo que precisa para a oficina instalada, com a ajuda de instrutores, se necessário. Então, no workshop principal, poderás saltar as intruções de instalação que encontrares no tutorial principal, quando aparecerem.
+* A organização do workshop poderá ter-te perguntado se tentaste reslizar a instalação no computador, em casa antes de vires para o workshop. Se te oriposeram a isso, esta página é para ti! Segue estas instruções, o melhor que poderes. Então, no workshop principal, quando chegares ao passo da instalação no tutorial principal, se tiveste alguma dificuldade na instalação poderás encontrar ajuda junto do teu monitor.
+* Se o teu workshop n tem uma secção de instalação (ou não conseguiste obtê-la), e se os organizadores não te pediram para tentar instalar tudo antes de chegares, salta esta página e segue diretamente para o capítulo [Como funciona a internet](../how_the_internet_works/README.md). Irás instalar tudo o que precisas no seguimento do tutorial.
 
-# Installation
+# Instalação
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Neste tutorial isrás construir um blog. Nesse sentido, no seguimento do tutorial terás as instruções de como instalar o software no teu computador e configurar algumas contas online conforme serão necessárias. Esta página reune toda a instalação e instruções de inscrição (que será útil para laguns formatos de workshop).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Brief intro to the command line
+# Breve introdução à linha de comando
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Muitos dos passos abaixo, referenciam "console", "terminal", "janela de comando" ou "linha de comando" -- todos significam a mesma coisa: uma janela no teu computador onde podes digitar comandos. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Install Python
 
@@ -51,18 +51,18 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Começar a ler
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Parabéns, está tudo preparado e pronto a começar! Se ainda tens algum tempo antes do workshop, seria útil começares a ler alguns dos capítulos iniciais:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Como funciona a Internet](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Introdução à linha de comandos](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Introdução ao Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [O que é o Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Disfruta do workshop!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Quando iniciares o workshop, poderás de ir, diretamente, para o [O teu primeiro projeto em Django!](../django_start_project/README.md) porque já realizaste o material nos capítulos anteriores.
