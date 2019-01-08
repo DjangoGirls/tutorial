@@ -91,17 +91,15 @@ Der Titel "Olas Blog" wird nun im Browser angezeigt. Hast du es bemerkt? Der Bro
 
 Wie du vielleicht bemerkt hast, hat jedes Element zu Beginn einen öffnenden Tag und einen zugehörigen *schließenden Tag* mit `/` und innerhalb davon sind Elemente *eingebettet*. Ein innerer Tag kann nicht außerhalb des umschließenden Tags geschlossen werden, die Reihenfolge muss immer stimmen.
 
-Es ist wie, wenn man Sachen in Kisten steckt. In die größte Box: `<html></html>` kommt eine kleinere Box: `<body></body>`, und dort wiederum packen wir viele kleine Kisten hinein: </code>`&lt;p&gt;&lt;/p&gt;</0>.</p>
+Es ist wie, wenn man Sachen in Kisten steckt. Du hast eine große Kiste, `&lt;html&gt;&lt;/html&gt;`. In der ist `&lt;body&gt;&lt;/body&gt;` drin, und in der wiederum weitere kleine Kistchen: `&lt;p&gt;&lt;/p&gt;`.
 
-<p>Die Regeln und Reihenfolgen von <em>schließenden</em> Tags und <em>Verschachtelung</em> der Elemente musst du immer einhalten. Anderenfalls können Browser die Seite nicht richtig interpretieren und darstellen.</p>
+Die Regeln und Reihenfolgen von *schließenden* Tags und *Verschachtelung* der Elemente musst du immer einhalten. Anderenfalls können Browser die Seite nicht richtig interpretieren und darstellen.
 
-<h2>Dein Template anpassen</h2>
+## Dein Template anpassen
 
-<p>Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier sind ein paar nützliche Tags dafür:</p>
+Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier sind ein paar nützliche Tags dafür:
 
-<ul>
-<li><code><h1>Überschrift</h1>` (headline) für wichtigste Überschriften</li> 
-
+* `<h1>Überschrift</h1>` (headline) für wichtigste Überschriften
 * `<h2>Unter-Überschrift</h2>` die nächst tiefere Überschiftenebene
 * `<h3>Unter-Unter-Überschrift</h3>` ... und so weiter bis `<h6>`
 * `<p>Ein Fliesstext-Absatz</p>`
@@ -110,7 +108,7 @@ Es ist wie, wenn man Sachen in Kisten steckt. In die größte Box: `<html></html
 * `<br>` fängt eine neue Zeile an (du kannst nichts in das br schreiben und es gibt keinen schließenden Tag)
 * `<a href="https://djangogirls.org">link</a>` erstellt einen Link
 * `<ul><li>Erster Punkt</li><li>second item</li></ul>` generiert eine Liste so wie diese hier!
-* `<div></div>` definiert einen Abschnitt auf einer Seite</ul> 
+* `<div></div>` definiert einen Abschnitt auf einer Seite
 
 Hier ist ein vollständiges Beispiel eines Templates. Kopiere es und füge es in `blog/templates/blog/post_list.html` ein:
 
