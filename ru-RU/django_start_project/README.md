@@ -23,13 +23,13 @@
 
 > `.` Точка крайне важна, потому что говорит скрипту устанавливать Django в вашем текущем каталоге (который и обозначается сокращённо точкой `.`).
 > 
-> **Примечание** При вводе команд выше, помните что вам нужно набирать только часть, начинающуюся с `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Примечание** При вводе команд выше, помните что вам нужно набирать только часть, начинающуюся с `django-admin`. (myvenv) ~/djangogirls$ и `(myvenv) C:\Users\Name\djangogirls` — это просто примеры строк-приглашений терминала для последующего ввода команд.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+В Windows тебе необходимо запустить следующую команду **(Не забудь добавить точку `.` в конце)**:
 
 {% filename %}command-line{% endfilename %}
 
@@ -38,7 +38,7 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 > `.` Точка крайне важна, потому что говорит скрипту устанавливать Django в вашем текущем каталоге (который и обозначается сокращённо точкой `.`).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Примечание** При вводе команд выше, помните что вам нужно набирать только часть, начинающуюся с `django-admin.exe`. (myvenv) ~/djangogirls$ и `(myvenv) C:\Users\Name\djangogirls` — это просто примеры строк-приглашений терминала для последующего ввода команд.
 
 <!--endsec-->
 
@@ -54,9 +54,9 @@ On Windows you should run the following command. **(Don't forget to add the peri
     └───requirements.txt
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Примечание**: в структуре каталогов, вы также увидите ваш `venv` каталог, который мы создали раньше.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` это скрипт, который помогает управлять сайтом. С помощью него мы сможем запустить веб-сервер на твоем компьютере без установки дополнительных программ.
 
 Файл `settings.py` содержит настройки для твоего веб-сайта.
 
