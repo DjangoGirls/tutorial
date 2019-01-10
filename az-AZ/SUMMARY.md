@@ -2,9 +2,9 @@
 
 * [Giriş](README.md)
 * [Quraşdırma](installation/README.md)
-* [Quraşdırma(chromebook)](chromebook_setup/README.md)
-* [How the Internet works](how_the_internet_works/README.md)
-* [Introduction to command line](intro_to_command_line/README.md)
+* [Quraşdırma (chromebook)](chromebook_setup/README.md)
+* [İnternet necə işləyir](how_the_internet_works/README.md)
+* [Əmrlər sətrinə giriş](intro_to_command_line/README.md)
 * [Python installation](python_installation/README.md)
 * [Kod redaktoru](code_editor/README.md)
 * [Introduction to Python](python_introduction/README.md)
