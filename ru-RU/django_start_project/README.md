@@ -90,7 +90,7 @@ TIME_ZONE = 'Europe/Berlin'
 LANGUAGE_CODE = 'de-ch'
 ```
 
-Также необходимо добавить путь (path) для статичных файлов (static files). (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Также необходимо добавить путь (path) для статичных файлов (static files). (Со статических файлах и CSS мы разберемся чуть позже в тьюториале.) Иди вниз к *концу* файла, и прямо под `STATIC_URL` данными, добавь новые `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -200,6 +200,6 @@ Note that a command window can only run one thing at a time, and the command win
 
 > We reviewed how web servers work in the **How the Internet works** chapter.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Чтобы остановить веб-сервер, перейдите обратно в окно, в котором он работает и нажмите CTRL + C - кнопки Control и C вместе (в Windows, может потребоваться нажать клавиши Ctrl + Break).
 
 Готова к следующему шагу? Пришло время создать наполнение для нашего блога!
