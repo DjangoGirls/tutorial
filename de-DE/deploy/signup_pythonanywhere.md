@@ -4,7 +4,7 @@ Wir werden den Blog, den wir bauen, auf PythonAnywhere hosten. Registriere dich 
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![Die PythonAnywhere-Anmelde-Seite mit einem Knopf, um ein kostenloses 'Beginner'-Benutzerkonto anzulegen](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Hinweis** Beachte bei der Wahl deines PythonAnywhere-Benutzernamens, dass die URL deines Blogs die Form `deinbenutzername.pythonanywhere.com` haben wird. Wähle also einen Namen, unter dem du veröffentlichen willst, oder einen Namen, der den Inhalt deines Blogs beschreibt. Und vergiss dein Passwort nicht (füge es deinem Passwortmanager hinzu, wenn du einen benutzt).
 
