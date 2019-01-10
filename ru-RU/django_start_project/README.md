@@ -68,11 +68,11 @@
 
 Давай внесем изменения в `mysite/settings.py`. Открой файл в текстовом редакторе, который ты выбрала ранее.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Примечание**: Имейте в виду, что `settings.py` является обычным файлом, как и любой другой. Вы можете открыть его из редактора кода, используя «файл-> открыть» меню действия. Вы должны попасть в привычное окно программы, в котором можно перейти к файлу `settings.py` и выбрать его. Кроме того можно открыть файл, перейдя к папке djangogirls на вашем рабочем столе и щелкнув правой кнопкой мыши на файле. Затем выберите ваш редактор кода из списка. Выбор редактора имеет важное значение, так как, возможно, у вас имеются другие установленные программы, которыми можно открыть файл, но нельзя редактировать его.
 
-Было бы неплохо установить корректный часовой пояс на нашем сайте. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Было бы неплохо установить корректный часовой пояс на нашем сайте. Перейди к [Списку часовых поясов Википедии](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) и скопируй соответствующий вам часовой пояс (TZ) (например, `Europe/Berlin`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+В файле settings.py найди строку, содержащую `TIME_ZONE`, и модифицируй её в соответствии со своим часовым поясом. Например:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -80,7 +80,7 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Код языка состоят из языка, например `en` для английского или `de` для немецкого языка и код страны, например `de` для Германии или `ch` для Швейцарии. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
 If you want a different language, change the language code by changing the following line:
 
