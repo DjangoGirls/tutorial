@@ -1,8 +1,8 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+Une des procédures suivantes, selon votre version de Windows et votre clavier, devrait vous permettre d'ouvrir l'invite de commande (il est possible que vous deviez vous débrouiller un peu jusqu'à ce que vous trouvez la bonne) :
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
+- Allez dans le menu ou écran de démarrage et tapez "Invite de commande" dans l'outil de recherche.
 - Go to Start menu → Windows System → Command Prompt.
 - Go to Start menu → All Programs → Accessories → Command Prompt.
 - Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
