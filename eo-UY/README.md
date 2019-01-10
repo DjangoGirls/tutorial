@@ -2,11 +2,11 @@
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> Ĉi tiu verko estas disponebla laŭ permesilo Krea Komunaĵo Atribuite-Samkondiĉe 4.0 Tutmonda. Por vidi kopion de ĉi tiu permesilo, vizitu https://creativecommons.org/licenses/by-sa/4.0/
+> Ĉi-tiu verko estas licencita laŭ la tutmonda licenco Krea Komunaĵ-Atribuad-Divido Samkondiĉa 4.0. Por vidi kopion de ĉi-tiu licenco vizitu https://creativecommons.org/licenses/by-sa/4.0/
 
 ## Bonvenon
 
-Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Bonvenon al la Django-Knabino-Lernilo! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
