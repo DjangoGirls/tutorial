@@ -154,11 +154,11 @@ Ok, also schauen wir mal, wie der HTML-Code in `post_edit.html` aussehen sollte:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h2>New post</h2>
-    <form method="POST" class="post-form">{% csrf_token %}
+    &lt;h2&gt;New post&lt;/h2&gt;
+    &lt;form method="POST" class="post-form"&gt;{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
-    </form>
+        &lt;button type="submit" class="save btn btn-default"&gt;Save&lt;/button&gt;
+    &lt;/form&gt;
 {% endblock %}
 ```
 
