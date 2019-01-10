@@ -35,10 +35,10 @@ Para iniciar sesión, deberás crear un *superusuario (superuser)*, que es un us
 
 Cuando te lo pida, escribe tu nombre de usuario (en minúscula, sin espacios), email y contraseña. **No te preocupes si no puedes ver la password que estás tecleando - así es como debe ser.** Tecléalo y pulsa `intro` para continuar. Luego, verás algo así (Donde username y email serán los que escribiste anteriormente):
 
-    Username: ola
-    Email address: ola@example.com
-    Password:
-    Password (again):
+    Username: ola 
+    Email address: ola@example.com 
+    Password: 
+    Password (again): 
     Superuser created successfully.
     
 
