@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Hinweis**: Wenn du ein Chromebook verwendest, füge noch diese Zeile am Ende deiner settings.py-Datei hinzu: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Füge auch `.amazonaws.com` zu den `ALLOWED_HOSTS` hinzu, wenn du Cloud9 benutzt.
+> Falls du Cloud9 benutzt, füge auch `.amazonaws.com` zu den `ALLOWED_HOSTS` hinzu
 
 ## Eine Datenbank erstellen
 
@@ -185,11 +185,11 @@ Jetzt wollen wir schauen, ob unsere Website funktioniert: Öffne deinen Browser 
     http://127.0.0.1:8000/
     
 
-Wenn du ein Chromebook und Cloud9 verwendest, dann klicke stattdessen die URL in dem erschienenen Fenster in der oberen rechten Ecke des Kommandozeilenfensters, in dem der Webserver läuft. Die URL sollte etwa so aussehen:
+Wenn du ein Chromebook und Cloud9 verwendest, dann klicke stattdessen die URL im erschienenen Fenster in der oberen rechten Ecke des Kommandozeilenfensters, in dem der Webserver läuft. Die URL sollte etwa so aussehen:
 
 {% filename %}browser{% endfilename %}
 
-    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
+    https://&lt;a bunch of letters and numbers&gt;.vfs.cloud9.us-west-2.amazonaws.com
     
 
 Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Webserver laufen! Ist das nicht toll?
@@ -200,6 +200,6 @@ Beachte, dass ein Terminalfenster immer nur eine Sache zur selben Zeit erledigen
 
 > Wie Webserver funktionieren, haben wir im Kapitel **"Wie das Internet funktioniert"** angesehen.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Um den Webserver zu stoppen, wechsel zurück in das Fenster, in dem er läuft, und drücke STRG+C - Steuerung und C gleichzeitig. (In Windows kann es sein, dass du STRG und "Pause"-Taste drücken musst).
+Um weitere Kommandos einzugeben während der Webserver läuft, öffne ein neues Kommandozeilen-Fenster und aktiviere dort dein virtualenv. Siehe [Einführung in die Kommandozeile](../intro_to_command_line/README.md), um nachzulesen, wie du ein zweites Kommandozeilen-Fenster öffnen kannst. Um den Webserver zu stoppen, wechsel zurück in das Fenster, in dem er läuft, und drücke STRG+C - Steuerung und C gleichzeitig. (In Windows kann es sein, dass du STRG und "Pause"-Taste drücken musst).
 
 Bereit für den nächsten Schritt? Es wird Zeit, ein paar Inhalte hinzuzufügen!
