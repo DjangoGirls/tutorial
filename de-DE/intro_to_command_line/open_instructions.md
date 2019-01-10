@@ -9,7 +9,7 @@ Abhängig von deiner Windows-Version und deiner Tastatur sollte eine der folgend
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
 - Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Tippe "cmd" in das "Run"-Fenster](../python_installation/images/windows-plus-r.png)
 
 Später im Tutorial wirst du zwei offene Kommandozeilen-Fenster gleichzeitig brauchen. Wenn du aber schon ein Kommandozeilen-Fenster offen hast, schicken dich manche Windows-Versionen einfach zu diesem, wenn du mit derselben Methode versuchst, ein zweites zu öffnen. Probiere das nun aus und achte darauf, was passiert! Wenn du nur ein Kommandozeilen-Fenster bekommst, versuche eine der anderen Methoden aus der Liste oben. Mindestens eine der Methoden sollte dazu führen, dass ein neues (zweites) Kommandozeilen-Fenster geöffnet wird.
 
@@ -23,6 +23,6 @@ Später im Tutorial wirst du zwei offene Kommandozeilen-Fenster gleichzeitig bra
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Wahrscheinlich ist es unter Programme → Zubehör → Terminal, aber das ist von deinem System abhängig. Wenn es nicht da ist, kannst du versuchen, danach zu googlen. :)
 
 <!--endsec-->
