@@ -80,9 +80,9 @@
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Код языка состоят из языка, например `en` для английского или `de` для немецкого языка и код страны, например `de` для Германии или `ch` для Швейцарии. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Код языка состоят из языка, например `en` для английского или `de` для немецкого языка и код страны, например `de` для Германии или `ch` для Швейцарии. Если английский - это не ваш родной язык, то можно добавить язык, чтобы изменить кнопки по умолчанию и уведомления с Django на ваш родной языке. Таким образом, кнопка «Отмена» будет переведена на язык, который вы определили здесь. [Django предоставляет множество готовых переводов](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Если вам нужен другой язык, измените код языка, изменив следующую строку:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -90,7 +90,7 @@ If you want a different language, change the language code by changing the follo
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Также необходимо добавить путь (path) для статичных файлов (static files). (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -107,9 +107,9 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Примечание**: Если пользуешься Хромбуком, то добавь эту строку в конец своего settings.py файла: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Также добавь `.amazonaws.com` в `ALLOWED_HOSTS` если используешь cloud9
 
 ## Создание базы данных
 
@@ -164,7 +164,7 @@ DATABASES = {
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Если вы работаете на Хромбуке, то используйте эту команду:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -178,7 +178,7 @@ If you are on a Chromebook, use this command instead:
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Теперь тебе нужно проверить работает ли веб-сайт - открой браузер (Firefox, Chrome, Safari, Internet Explorer или любой другой) и набери следующий адрес:
 
 {% filename %}browser{% endfilename %}
 
@@ -189,7 +189,7 @@ If you're using a Chromebook and Cloud9, instead click the URL in the pop-up win
 
 {% filename %}browser{% endfilename %}
 
-    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
+    https://&lt;a bunch of letters and numbers&gt;.vfs.cloud9.us-west-2.amazonaws.com
     
 
 Поздравляем! Ты только что создала свой первый веб-сайт и запустила его на веб-сервере! Ну не круто ли?
