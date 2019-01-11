@@ -16,7 +16,7 @@ Das Fenster, welches gewöhnlich die **Kommandokonsole** (command line) oder **K
 
 ## Öffnen der Konsole
 
-To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
+Um mit ein paar Experimenten zu beginnen, müssen wir erstmal die Kommandozeile öffnen. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Eingabeaufforderung (Prompt)
 
@@ -282,15 +282,15 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 
 <!--endsec-->
 
-Congrats! :)
+Glückwunsch! :)
 
 * * *
 
 ### Aufräumen
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Wir wollen kein Chaos hinterlassen, also lass uns das bislang Geschaffene wieder löschen.
 
-First, we need to get back to Desktop:
+Zuerst müssen wir zurück zum Desktop wechseln:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -310,9 +310,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Durch Verwendung von `..` mit dem `cd` Kommando wechselst du von deinem aktuellen Verzeichnis zum übergeordneten Verzeichnis (dies ist das Verzeichnis, das das aktuelle Verzeichnis enthält).
 
-Check where you are:
+Schau nach, wo du gerade bist:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -334,9 +334,9 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Achtung**: Wenn du Daten mit `del`, `rmdir` oder `rm` löschst, kannst du das nicht mehr rückgängig machen, das bedeutet *die gelöschten Dateien sind für immer weg*! Sei also sehr vorsichtig mit diesem Befehl.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -357,7 +357,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -379,7 +379,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Beenden
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -399,11 +399,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Cool, was? :)
 
 ## Zusammenfassung
 
-Here is a summary of some useful commands:
+Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 
 | Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                    | Beispiel                                             |
 | ---------------- | ----------------------- | ------------------------------- | ---------------------------------------------------- |
@@ -418,10 +418,10 @@ Here is a summary of some useful commands:
 | rmdir /S         | rm -r                   | Verzeichnis löschen             | **rm -r testdirectory**                              |
 | [CMD] /?         | man [CMD]               | Hilfe für ein Kommando aufrufen | **cd /?** (Windows) oder **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Das sind nur sehr wenige der Befehle, welche du in deiner Konsole verwenden kannst, aber du wirst heute nicht mehr brauchen.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Falls du neugierig bist, findest du auf [ss64.com](http://ss64.com) eine vollständige Übersicht über alle Kommandozeilen-Befehle für alle Betriebssysteme.
 
 ## Fertig?
 
-Let's dive into Python!
+Lass uns mit Python anfangen!
