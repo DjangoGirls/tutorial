@@ -291,7 +291,7 @@
 
 Мы не хотим оставлять беспорядок, поэтому давай удалим всё, что мы создали до этого момента.
 
-First, we need to get back to Desktop:
+Во-первых, мы должны вернуться на рабочий стол:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -311,9 +311,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Используя `..` с командой `cd`, ты можешь сменить текущий каталог на родительский (то есть каталог, который содержит в себе текущий).
 
-Check where you are:
+Проверь, где ты находишься:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -335,9 +335,9 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Пришло время удалить каталог `practice`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Внимание:** удаление файлов с помощью `del`, `rmdir` или `rm` необратимо. Это означает, что *удалённые файлы будут потеряны навсегда!* Поэтому будь очень осторожна с этими командами.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -358,7 +358,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Готово! Давай проверим, что папка действительно удалена:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -378,9 +378,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Выход
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Вот и всё на данный момент! Теперь можно безопасно закрыть командную строку. Давай сделаем это как хакеры, согласна? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -400,24 +400,24 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Круто, да? :)
 
-## Содержание
+## Подведём итоги
 
-Here is a summary of some useful commands:
+Вот краткий обзор некоторых полезных команд:
 
-| Команда (Windows) | Команда (Mac OS / Linux) | Описание                   | Пример                                             |
-| ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
-| выход             | выход                    | Закрыть окно               | **выход**                                          |
-| cd                | cd                       | изменить каталог           | **cd test**                                        |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
-| dir               | ls                       | список каталогов/файлов    | **dir**                                            |
-| copy              | cp                       | копировать файл            | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move              | mv                       | переместить файл           | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir             | mkdir                    | создать новый каталог      | **mkdir testdirectory**                            |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                         |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                            |
-| [CMD] /?          | man [CMD]                | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Команда (Windows) | Команда (Mac OS / Linux) | Описание                | Пример                                             |
+| ----------------- | ------------------------ | ----------------------- | -------------------------------------------------- |
+| выход             | выход                    | Закрыть окно            | **выход**                                          |
+| cd                | cd                       | изменить каталог        | **cd test**                                        |
+| cd                | pwd                      | вывести текущий каталог | **cd** (Windows) или **pwd** (Mac OS / Linux)      |
+| dir               | ls                       | список каталогов/файлов | **dir**                                            |
+| copy              | cp                       | копировать файл         | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move              | mv                       | переместить файл        | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir             | mkdir                    | создать новый каталог   | **mkdir testdirectory**                            |
+| rmdir (or del)    | rm                       | удалить файл            | **del c:\test\test.txt**                         |
+| rmdir /S          | rm -r                    | удалить папку           | **rm -r testdirectory**                            |
+| [CMD] /?          | man [CMD]                | get help for a command  | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
