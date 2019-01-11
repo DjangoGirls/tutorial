@@ -104,7 +104,7 @@
     /Users/olasitarska
     
 
-> Примечание: pwd означает print working directory, вывести рабочий каталог.
+> Примечание: 'pwd' означает 'print working directory' (вывести рабочий каталог).
 
 <!--endsec-->
 
@@ -116,11 +116,11 @@
     C:\Users\olasitarska
     
 
-> Примечание: cd означает change directory, сменить каталог. Если у тебя Windows PowerShell, можешь пользоваться командой pwd, как на Linux или Mac OS X.
+> Примечание: 'cd' означает 'change directory' (сменить каталог). Если ты пользуешься powershell, можешь ввести pwd — как на Linux или Mac OS X.
 
 <!--endsec-->
 
-Нечто похожее ты увидишь и на своём компьютере. Обычно, когда открываешь командную строку, ты находишься в домашнем каталоге своего пользователя.
+Ты, вероятно, увидишь нечто похожее на своем компьютере. Когда ты открываешь командную строку, то обычно находишься в домашнем каталоге текущего пользователя.
 
 * * *
 
@@ -130,19 +130,19 @@
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-В OS X и Linux есть команда `man` — справка о других командах (на английском языке). Набери `man pwd` и посмотри, что пишут о команде pwd. Используй `man` с другими командами, чтобы посмотреть для них справку. Как правило, справки команды `man` выводятся постранично. Нажми пробел, чтобы перейти на следующую страницу. Чтобы выйти, нажми `q`.
+В OS X и Linux есть команда `man` — справка о других командах (на английском языке). Набери `man pwd` и посмотри, что пишут о команде pwd. Используй `man` с другими командами, чтобы посмотреть для них справку. Как правило, справки `man` выводятся постранично. Нажми пробел, чтобы перейти на следующую страницу. Чтобы выйти, нажми `q`.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Чтобы вывести справку, почти к любой команде можно добавить `/?`. Чтобы прочитать всю справку, возможно, придётся прокрутить текст вниз. Попробуй набрать `cd /?`.
 
 <!--endsec-->
 
-### List files and directories
+### Список файлов и каталогов
 
-So what's in it? It'd be cool to find out. Let's see:
+Так что же в нем? Было бы здорово узнать. Давай посмотрим:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -171,13 +171,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Примечание: в powershell можешь использовать ls — как в Linux или Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### Смена текущего каталога
 
-Now, let's go to our Desktop directory:
+Теперь вернёмся в наш каталог рабочего стола:
 
 <!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
 
@@ -197,7 +197,7 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-Check if it's really changed:
+Проверь, что рабочий каталог действительно изменился:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -219,13 +219,13 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Вот и он!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> Совет от профи: если ты введешь `cd D` и затем нажмешь `Tab` на клавиатуре, в командной строке будет автоматически набрана остальная часть имени, что позволит быстрее перемещаться по каталогам. Если c «D» начинается название не одной папки, нажми `Tab` дважды, чтобы получить список вариантов.
 
 * * *
 
-### Create directory
+### Создание каталога
 
 How about creating a practice directory on your desktop? You can do it this way:
 
