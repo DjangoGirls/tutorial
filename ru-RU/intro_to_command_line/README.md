@@ -12,7 +12,7 @@
 
 ## Что такое командная строка?
 
-Окно, которое обычно называют **командной строкой** или **интерфейсом командной строки (англ. CLI, Command Line Interface)**, является текстовым приложением для просмотра, обработки и манипулирования файлами на вашем компьютере. Она делает то же, что и Проводник в Windows или Finder в MacOS, но у неё нет графического интерфейса. Другими названиями для командной строки являются: *cmd*, *CLI*, *prompt*, *консоль* или *терминал*.
+Окно, которое обычно называют **командной строкой** или **интерфейсом командной строки (англ. CLI, Command Line Interface)**, является текстовым приложением для просмотра, обработки и манипулирования файлами на вашем компьютере. Она делает то же, что и Проводник в Windows или Finder в Mac OS X, но у неё нет графического интерфейса. Другими названиями для командной строки являются: *cmd*, *CLI*, *prompt*, *консоль* или *терминал*.
 
 ## Открываем интерфейс командной строки
 
@@ -50,13 +50,13 @@
 
 > Небольшое примечание: перед курсором командной строки может быть написано что-то вроде `C:\Users\ola>` или `Olas-MacBook-Air:~ola$`. Это абсолютно нормально.
 
-То, что написано до знака `$` или `>`, плюс сам знак, всё вместе называется *приглашением командной строки*. Как правило, оно включает адрес папки, в которой ты сейчас находишься. Оно приглашает тебя ввести команду.
+То, что написано до знака `$` или `>`, плюс сам знак, всё вместе называется *приглашением командной строки*. Как правило, оно включает адрес папки, в которой ты сейчас находишься. Оно приглашает тебя ввести в окно команду.
 
-Далее в руководстве перед каждой командой, которую тебе нужно будет ввести, мы будем писать символ `$` или `>`. Иногда мы будем включать и приглашение целиком. Не обращай внимания на левую часть и просто печатай команду — она начинается после специального символа.
+Далее в руководстве перед каждой командой, которую тебе нужно будет ввести, мы будем писать символ `$` или `>`. Иногда слева от него мы будем добавлять ещё немного текста. Не обращай внимания на левую часть и просто печатай команду — она начинается после специального символа.
 
 ## Твоя первая команда (УРА!)
 
-Let's start by typing this command:
+Давай введём следующую команду:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -76,7 +76,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Теперь нажми `Enter`. Вот что получилось:
 
 {% filename %}command-line{% endfilename %}
 
@@ -84,17 +84,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Как видишь, компьютер только что вывел на экран твоё имя пользователя. Классно, а? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Постарайся набирать каждую команду вручную, а не копировать и вставлять. Так ты больше запомнишь!
 
 ## Основы
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+В каждой операционной системе набор команд для командной строки немного отличается, поэтому не забывай следовать инструкциям для своей операционной системы. Давай попробуем, готова?
 
 ### Текущий каталог
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Было бы неплохо знать, где мы находимся сейчас, верно? Давай посмотрим. Набери эту команду и нажми `Enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -104,7 +104,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Примечание: pwd означает print working directory, напечатать рабочий каталог.
 
 <!--endsec-->
 
@@ -116,15 +116,15 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Примечание: cd означает change directory, сменить каталог. Если у тебя Windows PowerShell, можешь пользоваться командой pwd, как на Linux или Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Нечто похожее ты увидишь и на своём компьютере. Обычно, когда открываешь командную строку, ты находишься в домашнем каталоге своего пользователя.
 
 * * *
 
-### Learn more about a command
+### Как узнать больше о командах
 
 Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
