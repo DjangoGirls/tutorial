@@ -50,7 +50,7 @@
 
 > Небольшое примечание: перед курсором командной строки может быть написано что-то вроде `C:\Users\ola>` или `Olas-MacBook-Air:~ola$`. Это абсолютно нормально.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+То, что написано до знака `$` или `>`, плюс сам знак, всё вместе называется *приглашением командной строки*. Оно приглашает тебя ввести команду.
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
