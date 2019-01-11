@@ -406,23 +406,23 @@
 
 Вот краткий обзор некоторых полезных команд:
 
-| Команда (Windows) | Команда (Mac OS / Linux) | Описание                | Пример                                             |
-| ----------------- | ------------------------ | ----------------------- | -------------------------------------------------- |
-| выход             | выход                    | Закрыть окно            | **выход**                                          |
-| cd                | cd                       | изменить каталог        | **cd test**                                        |
-| cd                | pwd                      | вывести текущий каталог | **cd** (Windows) или **pwd** (Mac OS / Linux)      |
-| dir               | ls                       | список каталогов/файлов | **dir**                                            |
-| copy              | cp                       | копировать файл         | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move              | mv                       | переместить файл        | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir             | mkdir                    | создать новый каталог   | **mkdir testdirectory**                            |
-| rmdir (or del)    | rm                       | удалить файл            | **del c:\test\test.txt**                         |
-| rmdir /S          | rm -r                    | удалить папку           | **rm -r testdirectory**                            |
-| [CMD] /?          | man [CMD]                | get help for a command  | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Команда (Windows) | Команда (Mac OS / Linux) | Описание                | Пример                                              |
+| ----------------- | ------------------------ | ----------------------- | --------------------------------------------------- |
+| выход             | выход                    | Закрыть окно            | **выход**                                           |
+| cd                | cd                       | изменить каталог        | **cd test**                                         |
+| cd                | pwd                      | вывести текущий каталог | **cd** (Windows) или **pwd** (Mac OS / Linux)       |
+| dir               | ls                       | список каталогов/файлов | **dir**                                             |
+| copy              | cp                       | копировать файл         | **copy c:\test\test.txt c:\windows\test.txt**   |
+| move              | mv                       | переместить файл        | **move c:\test\test.txt c:\windows\test.txt**   |
+| mkdir             | mkdir                    | создать новый каталог   | **mkdir testdirectory**                             |
+| rmdir (or del)    | rm                       | удалить файл            | **del c:\test\test.txt**                          |
+| rmdir /S          | rm -r                    | удалить папку           | **rm -r testdirectory**                             |
+| [CMD] /?          | man [CMD]                | справка для команды     | **cd /?** (Windows) или **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Это лишь некоторые из команд, которые можно использовать в командной строке, но сегодня тебе больше и не пригодится.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Если тебе интересно, [ss64.com](http://ss64.com) содержит полный справочник команд для всех операционных систем.
 
-## Готова?
+## Готова продолжить?
 
-Let's dive into Python!
+Давай погрузимся в мир Python!
