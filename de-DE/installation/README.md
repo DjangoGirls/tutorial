@@ -23,37 +23,37 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Brief intro to the command line
+# Kurze Einführung in die Kommandozeile
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python
+# Python installieren
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Einen Code-Editor installieren
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Virtualenv einrichten und Django installieren
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Git installieren
 
 {% include "/deploy/install_git.md" %}
 
 # Create a GitHub account
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Gehe zu [GitHub.com](https://www.github.com) und registriere dich für ein neues, kostenfreies Benutzerkonto. Achte darauf, dass du dein Passwort nicht vergisst (füge es deinem Passwortmanager hinzu, wenn du einen benutzt).
 
-# Create a PythonAnywhere account
+# Einen PythonAnywhere-Account erstellen
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Fang an zu lesen!
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Herzlichen Glückwunsch, du hast alles eingerichtet und bist nun bereit loszulegen! Wenn du vor dem Workshop noch etwas Zeit hast, wäre es hilfreich, einige der einführenden Kapitel zu lesen:
 
 * [Wie das Internet funktioniert](../how_the_internet_works/README.md)
 
@@ -63,6 +63,6 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 * [Django - Was ist das?](../django/README.md)
 
-# Enjoy the workshop!
+# Viel Spaß beim Workshop!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Wenn du mit dem Workshop anfängst, kannst du direkt zum Kapitel [Dein erstes Django-Projekt!](../django_start_project/README.md) gehen, weil du den Inhalt der vorhergehenden Kapitel schon bearbeitet hast.
