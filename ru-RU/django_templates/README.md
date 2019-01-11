@@ -51,16 +51,16 @@
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div>
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+&lt;div&gt;
+    &lt;h1&gt;&lt;a href="/"&gt;Django Girls Blog&lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
 
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    &lt;div&gt;
+        &lt;p&gt;published: {{ post.published_date }}&lt;/p&gt;
+        &lt;h2&gt;&lt;a href=""&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;
+        &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
+    &lt;/div&gt;
 {% endfor %}
 ```
 
@@ -68,13 +68,13 @@
 
 ![Рисунок 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Мы обращаемся к различным полям нашей модели `Post`. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Ты заметила, что мы использовали немного другую запись в этот раз `{{ post.title }}` или `{{ post.text }}`)? Мы обращаемся к различным полям нашей модели `Post`. Также `|linebreaks` прогоняет текст через фильтр, для преобразования переносов строк в параграфы.
 
 ## Еще один момент
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Пришло время еще раз убедиться, что наш сайт будет работать в сети, согласна? Попробуем развернуть новую версию сайта на PythonAnywhere. Краткий обзор необходимых шагов...
 
-* First, push your code to GitHub
+* Сначала загрузи свой код на GitHub
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
     
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://yourname.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Наконец, переключись на вкладку [Web](https://www.pythonanywhere.com/web_app_setup/) и нажми кнопку **Reload**. (Для перехода на другие страницы PythonAnywhere из консоли, воспользуйся кнопкой меню, расположенной справа в верхнем углу.) Твое обновление должно быть на https://yourname.pythonanywhere.com - проверь это в браузере! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 Поздравляем! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
