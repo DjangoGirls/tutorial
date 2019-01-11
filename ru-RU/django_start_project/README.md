@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+Когда `DEBUG` установлен в значение `True` и `ALLOWED_HOSTS` не установлен, то хост располагается на `['localhost', '127.0.0.1', '[::1]']`. Это не соответствуют нашему имени хоста на PythonAnywhere после того, как мы развернули наше приложение, поэтому мы поменяем следующие настройки:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
