@@ -33,7 +33,7 @@ Jetzt solltest du eine Benutzeroberfläche mit Seitenleiste, ein grosses Fenster
     deinbenutzername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Dieser untere Bereich ist dein Terminal. Dort kannst du Kommandos für den Computer eingeben kannst, den dir Cloud 9 zur Verfügung stellt. Du kannst dieses Fenster vergrößern oder verkleinern.
 
 ### Virtuelle Umgebung
 
