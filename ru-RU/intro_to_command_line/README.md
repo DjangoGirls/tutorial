@@ -1,30 +1,30 @@
 # Знакомство с командной строкой
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Для тех, кто проходит руководство дома: о материале этой главы рассказывает видео [Ваш новый друг — командная строка](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Вот это да! Всего через несколько минут ты напишешь свою первую строку кода! :)
 
 **Позволь представить нашего первого нового друга: командную строку!**
 
 Следующие шаги покажут как использовать черное окно, которым пользуются все хакеры. В начале оно может показаться немного пугающим, но, на самом деле это просто окно, которое ждет от тебя команды.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Примечание** Пожалуйста, обрати внимание, что в этом руководстве мы используем термины «каталог» и «папка» взаимозаменяемо: эти слова обозначают одно и то же.
 
 ## Что такое командная строка?
 
-Окно, которое обычно называют **командной строкой** или **интерфейсом командной строки (англ. CLI, Command Line Interface)**, является текстовым приложением для просмотра, обработки и манипулирования файлами на вашем компьютере. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Другими названиями для командной строки являются: *cmd*, *CLI*, *prompt*, *консоль* или *терминал*.
+Окно, которое обычно называют **командной строкой** или **интерфейсом командной строки (англ. CLI, Command Line Interface)**, является текстовым приложением для просмотра, обработки и манипулирования файлами на вашем компьютере. Она делает то же, что и Проводник в Windows или Finder в MacOS, но у неё нет графического интерфейса. Другими названиями для командной строки являются: *cmd*, *CLI*, *prompt*, *консоль* или *терминал*.
 
 ## Открываем интерфейс командной строки
 
-To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
+Для начала немного поэкспериментируем. Открой интерфейс командной строки. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Командная строка
 
-You now should see a white or black window that is waiting for your commands.
+Перед тобой должно появиться белое или чёрное окошко. Оно ожидает, когда ты введёшь команду.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Если у тебя Mac или Linux, ты, скорее всего, увидишь знак `$` в конце строки:
 
 {% filename %}command-line{% endfilename %}
 
