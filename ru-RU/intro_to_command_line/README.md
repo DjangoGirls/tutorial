@@ -104,7 +104,7 @@
     /Users/olasitarska
     
 
-> Примечание: pwd означает print working directory, напечатать рабочий каталог.
+> Примечание: pwd означает print working directory, вывести рабочий каталог.
 
 <!--endsec-->
 
@@ -126,11 +126,11 @@
 
 ### Как узнать больше о командах
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+У многих команд для командной строки есть встроенная справка! Например, вот как узнать подробнее о команде, которая показывает, в какой папке ты сейчас находишься:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+В OS X и Linux есть команда `man` — справка о других командах (на английском языке). Набери `man pwd` и посмотри, что пишут о команде pwd. Используй `man` с другими командами, чтобы посмотреть для них справку. Как правило, справки команды `man` выводятся постранично. Нажми пробел, чтобы перейти на следующую страницу. Чтобы выйти, нажми `q`.
 
 <!--endsec-->
 
