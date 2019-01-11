@@ -9,7 +9,7 @@
 - Удерживая клавишу Windows на клавиатуре, нажми X. В появившемся меню выбери пункт "Командная строка".
 - Удерживая клавишу Windows, нажми R, чтобы появилось окно "Выполнить". Набери в строке cmd и нажми OK.
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Набери "cmd" в окне "Выполнить"](../python_installation/images/windows-plus-r.png)
 
 В какой-то момент тебе понадобятся два окна командной строки одновременно. Однако в некоторых версиях Windows, если ты попытаешься запустить вторую командную строку, когда одна уже запущена тем же способом, ты вместо этого попадёшь в уже открытое окно командной строки. Попробуй у себя на компьютере и посмотри, что будет! Если у тебя получается открыть только одно окно командной строки, попробуй какой-нибудь другой из вышеприведённых способов в списке. По крайней мере один из них сможет открыть новое окно командной строки.
 
@@ -17,12 +17,12 @@
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Перейди в Приложения → Прочие → Терминал.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Вероятно, командная строка скрывается по адресу: Приложения → Стандартные → Терминал или Приложения → Система → Терминал, но это может зависеть от конкретной системы. Если не сможешь найти — Google поможет :)
 
 <!--endsec-->
