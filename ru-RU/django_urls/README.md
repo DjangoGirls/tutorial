@@ -41,17 +41,17 @@ URL-адрес администрирования, который мы посе�
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Эта черточка означает, что для каждого URL-адреса, начинающегося с `admin`, Django найдет соответствующий ему *view* (представление). В этом случае мы охватываем большое количество различных URL-адресов, которые явно не прописаны в этом маленьком файле -- так гораздо аккуратней и более читабельно.
 
-## Your first Django URL!
+## Твой первый URL-адрес в Django!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+Пришло время создать твой первый URL-адрес! Мы хотим, чтобы 'http://127.0.0.1:8000/' возвращал домашнюю страничку нашего блога со списком записей в ней.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+Мы также хотим сохранить файл `mysite/urls.py` в максимально аккуратном виде, так что мы импортируем URL-адреса для нашего приложения `blog` в файл `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Смелее, добавь строку, которая будет импортировать `blog.urls`. Вам также нужно будет изменить строки `from django.urls...`, потому что мы будем использовать функцию `include`, так что вам нужно добавить этот import в строку.
 
-Your `mysite/urls.py` file should now look like this:
+Ваш файл `mysite/urls.py` должен выглядеть следующим образом:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -65,11 +65,11 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Django теперь будет перенаправлять все запросы 'http://127.0.0.1:8000/' к `blog.urls` и искать там дальнейшие инструкции.
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+Создайте новый пустой файл с именем `urls.py` в каталоге `blog` и откройте его в редакторе кода. Хорошо! Добавьте эти две первые строки:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -96,7 +96,7 @@ The last part, `name='post_list'`, is the name of the URL that will be used to i
 
 If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
-![Error](images/error1.png)
+![Ошибка](images/error1.png)
 
 Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
 
