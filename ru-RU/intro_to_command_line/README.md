@@ -35,20 +35,20 @@
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+Если у тебя Windows, строка будет оканчиваться символом `>`, вот так:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Можешь заглянуть в инструкцию для пользовательниц Linux чуть выше — нам что-то подобное ещё встретится, когда мы дойдём до PythonAnywhere.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Перед каждой твоей командой будет стоять знак `$` или `>` и пробел. Но тебе не нужно их печатать! Компьютер уже сделал это за тебя. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Небольшое примечание: перед курсором командной строки может быть написано что-то вроде `C:\Users\ola>` или `Olas-MacBook-Air:~ola$`. Это абсолютно нормально.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
