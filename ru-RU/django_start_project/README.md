@@ -185,7 +185,7 @@ DATABASES = {
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Если вы используете Chromebook и Cloud9, вместо этого нажмите на URL-адрес во всплывающем окне, которое должно появиться в правом верхнем углу окна команд, где выполняется веб-сервер. URL-адрес будет выглядеть примерно так:
 
 {% filename %}browser{% endfilename %}
 
@@ -196,10 +196,10 @@ If you're using a Chromebook and Cloud9, instead click the URL in the pop-up win
 
 ![Установка работает!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Обратите внимание, что в окне команд в одно время можно запускать только один процесс, и в окне, которое вы открыли чуть раньше, запущен веб-сервер. До тех пор, пока веб-сервер запущен и ждет дополнительных входящих запросов, терминал будет принимать новый текст, но не будет выполнять новые команды.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Мы сделали обзор того, как работает веб-сервер в главе **Как работает Интернет**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Чтобы остановить веб-сервер, перейдите обратно в окно, в котором он работает и нажмите CTRL + C - кнопки Control и C вместе (в Windows, может потребоваться нажать клавиши Ctrl + Break).
+Чтобы набрать дополнительные команды, пока веб-сервер работает, откройте новое окно терминала и активируйте ваш virtualenv - для просмотра инструкций о том, как открыть второе окно терминала, смотрите [Знакомство с командной строкой](../intro_to_command_line/README.md). Чтобы остановить веб-сервер, перейдите обратно в окно, в котором он работает и нажмите CTRL + C - кнопки Control и C вместе (в Windows, может потребоваться нажать клавиши Ctrl + Break).
 
 Готова к следующему шагу? Пришло время создать наполнение для нашего блога!
