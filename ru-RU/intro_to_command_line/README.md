@@ -283,13 +283,13 @@
 
 <!--endsec-->
 
-Congrats! :)
+Поздравляем! :)
 
 * * *
 
-### Clean up
+### Чистка
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Мы не хотим оставлять беспорядок, поэтому давай удалим всё, что мы создали до этого момента.
 
 First, we need to get back to Desktop:
 
