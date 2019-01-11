@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Kurze Einführung in die Kommandozeile
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Viele der folgenden Schritte beziehen sich auf die "Konsole", das "Terminal", das "Kommandozeilen-Fenster" oder die "Kommandozeile" -- all diese Begriffe bezeichnen dasselbe: Ein Fenster auf deinem Computer, in das du Kommandos eingeben kannst. Im Hauptteil des Tutorials wirst du mehr über die Kommandozeile lernen. Vorerst musst du nur wissen, wie du ein Kommandozeilenfester öffnen kannst und wie eines aussieht: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Python installieren
 
@@ -43,7 +43,7 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Einen GitHub-Account erstellen
 
 Gehe zu [GitHub.com](https://www.github.com) und registriere dich für ein neues, kostenfreies Benutzerkonto. Achte darauf, dass du dein Passwort nicht vergisst (füge es deinem Passwortmanager hinzu, wenn du einen benutzt).
 
