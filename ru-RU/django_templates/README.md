@@ -97,10 +97,10 @@
     [...]
     
 
-* Наконец, переключись на вкладку [Web](https://www.pythonanywhere.com/web_app_setup/) и нажми кнопку **Reload**. (Для перехода на другие страницы PythonAnywhere из консоли, воспользуйся кнопкой меню, расположенной справа в верхнем углу.) Твое обновление должно быть на https://yourname.pythonanywhere.com - проверь это в браузере! Если сообщения в блоге на сайте PythonAnywhere не соответствуют сообщениям, появляющимся на блоге, размещенном на локальном сервере, то это нормально. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Наконец, переключись на вкладку [Web](https://www.pythonanywhere.com/web_app_setup/) и нажми кнопку **Reload**. (Для перехода на другие страницы PythonAnywhere из консоли, воспользуйся кнопкой меню, расположенной справа в верхнем углу.) Твое обновление должно быть на https://yourname.pythonanywhere.com - проверь это в браузере! Если сообщения в блоге на сайте PythonAnywhere не соответствуют сообщениям, появляющимся на блоге, размещенном на локальном сервере, то это нормально. Базы данных на локальном компьютере и на PythonAnywhere не синхронизируются с остальными вашими файлами.
 
-Поздравляем! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Поздравляем! Теперь иди вперед и попробуй добавить новую должность в Django admin (не забудь добавить published_date!) Убедитесь, что вы находитесь на Django admin для вашего сайта pythonanywhere, https://yourname.pythonanywhere.com/admin. Затем обновите вашу страницу, чтобы увидеть, появляется ли там сообщение.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+Работает как по волшебству? Есть чем гордиться! Отойди от компьютера ненадолго - ты заслужила перерыв. :)
 
 ![Рисунок 13.4](images/donut.png)
