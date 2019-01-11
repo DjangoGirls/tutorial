@@ -11,7 +11,7 @@
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+В какой-то момент тебе понадобятся два окна командной строки одновременно. Однако в некоторых версиях Windows, если ты попытаешься запустить вторую командную строку, когда одна уже запущена тем же способом, ты вместо этого попадёшь в уже открытое окно командной строки. Попробуй у себя на компьютере и посмотри, что будет! Если у тебя получается открыть только одно окно командной строки, попробуй какой-нибудь другой из вышеприведённых способов в списке. По крайней мере один из них сможет открыть новое окно командной строки.
 
 <!--endsec-->
 
