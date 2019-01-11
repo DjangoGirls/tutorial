@@ -5,9 +5,9 @@
 - Перейди в меню Пуск (или на экран Пуск), в строке поиска набери "Командная строка".
 - Перейди в меню Пуск → Windows → Командная строка.
 - Перейди в меню Пуск → Все программы → Служебные → Командная строка.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Перейди на экран Пуск, наведи мышь на нижний левый угол экрана и нажми на стрелочку вниз, которая появится там. (Если у тебя тачскрин, листни пальцем снизу вверх.) Откроется страница "Приложения". Выбери пункт "Командная строка" в разделе "Windows".
+- Удерживая клавишу Windows на клавиатуре, нажми X. В появившемся меню выбери пункт "Командная строка".
+- Удерживая клавишу Windows, нажми R, чтобы появилось окно "Выполнить". Набери в строке cmd и нажми OK.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
