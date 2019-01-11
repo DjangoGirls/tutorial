@@ -97,7 +97,7 @@
     [...]
     
 
-* Наконец, переключись на вкладку [Web](https://www.pythonanywhere.com/web_app_setup/) и нажми кнопку **Reload**. (Для перехода на другие страницы PythonAnywhere из консоли, воспользуйся кнопкой меню, расположенной справа в верхнем углу.) Твое обновление должно быть на https://yourname.pythonanywhere.com - проверь это в браузере! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Наконец, переключись на вкладку [Web](https://www.pythonanywhere.com/web_app_setup/) и нажми кнопку **Reload**. (Для перехода на другие страницы PythonAnywhere из консоли, воспользуйся кнопкой меню, расположенной справа в верхнем углу.) Твое обновление должно быть на https://yourname.pythonanywhere.com - проверь это в браузере! Если сообщения в блоге на сайте PythonAnywhere не соответствуют сообщениям, появляющимся на блоге, размещенном на локальном сервере, то это нормально. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
 Поздравляем! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://yourname.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
