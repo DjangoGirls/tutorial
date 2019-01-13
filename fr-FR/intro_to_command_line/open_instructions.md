@@ -3,9 +3,9 @@
 Une des procédures suivantes, selon votre version de Windows et votre clavier, devrait vous permettre d'ouvrir l'invite de commande (il est possible que vous deviez vous débrouiller un peu jusqu'à ce que vous trouvez la bonne) :
 
 - Allez dans le menu ou écran de démarrage et tapez "Invite de commande" dans l'outil de recherche.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
+- Cliquez sur le Menu démarrer→ Système Windows → Invite de commandes.
+- Aller dans Menu démarrer → Tous les programmes → Accessoires → Invite de commandes.
+- Allez sur l’écran de démarrage, passez votre souris dans le coin inférieur gauche de l’écran et cliquez sur la flèche qui s’affiche (sur un écran tactile, plutôt balayer du bas vers le haut de l’écran). La page Apps doit s’ouvrir. Cliquez sur invite de commandes dans la section Système Windows.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
 - Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
 
