@@ -2,9 +2,9 @@
 
 > **Зауваження** Цей розділ інколи може бути дещо складним для освоєння. Наполегливо продовжуйте і дійдіть до кінця; розгортання -- важлива частина процесу розробки веб-сайту. Цей розділ розташований посередині посібника, щоб ваш наставник зміг допомогти із дещо хитрим процесом випуску веб-сайту в Інтернет. Це означає, що ви все ще можете завершити цей курс самостійно, якщо раптом не встигаєте. 
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Розгортання -- це процес публікації вашого додатку в Інтернеті таким чином, що люди можуть зрештою зайти і побачити його. :)
+До цього часу, ваш вебсайт бул лише на вашому комп’ютері. Тепер прийшов час навчитися як розгорнути його (задеплоїти)! Розгортання -- це процес публікації вашого додатку в Інтернеті таким чином, що люди можуть зрештою зайти і побачити його. :)
 
-Як ви вже знаєте, веб-сайт має бути розміщений на сервері. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Як ви вже знаєте, веб-сайт має бути розміщений на сервері. В Інтернеті є багато хостингів (server providers), ми ж будемо використовувати [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere безкоштовний для малих додатків, в яких не дуже багато користувачів, тож нам цього точно буде достатньо.
 
 Інший зовнішній інструмент, який ми будемо використовувати - це [GitHub](https://www.github.com), платформа для розміщення коду. У нього є альтернативи, але майже кожен програміст зараз має GitHub профіль, і скоро ви будете серед них!
 
@@ -45,9 +45,9 @@ Git стежитиме за змінам у всіх файлах у цій ди
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+І збережи його як `.gitignore` в базовій директорії "djangogirls".
 
-> **Примітка** Крапка на початку імені файлу важлива! У разі виникнення будь-яких труднощів при створенні (наприклад Mac не любить коли створюють файли, імена яких починаються з крапки через Finder), тоді використати "Зберегти як" у редакторі, це повинно спрацювати. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
+> **Примітка** Крапка на початку імені файлу важлива! У разі виникнення будь-яких труднощів при створенні (наприклад Mac не любить коли створюють файли, імена яких починаються з крапки через Finder), тоді використати "Зберегти як" у редакторі, це повинно спрацювати. І впевніться, що не додали `.txt`, `.py` або будь-які інші розширення до імені файлу. Для Git потрібно саме назва `.gitignore`, так він її розпізнає.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
@@ -74,7 +74,7 @@ And save it as `.gitignore` in the "djangogirls" folder.
 
 Зрештою, зберігаємо наші зміни. Перейдіть до консолі і виконайте наступні команди:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}blog/admin.py{% endfilename %}
 
     $ git add --all .
     $ git commit -m "My Django Girls app, first commit"
