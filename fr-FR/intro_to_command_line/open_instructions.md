@@ -9,20 +9,20 @@ Une des procédures suivantes, selon votre version de Windows et votre clavier, 
 - Maintenez la touche Windows enfoncée et appuyez sur la touche « X » de votre clavier. Choisissez « Invite de commandes » dans le menu contextuel.
 - Maintenez la touche Windows enfoncée et appuyez sur la touche « R » pour ouvrir une fenêtre « Exécuter ». Tapez « cmd », puis cliquez sur la touche OK.
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Tapez "cmd" dans la fenêtre "Exécuter"](../python_installation/images/windows-plus-r.png)
 
-Plus loin dans ce tutoriel, vous aurez besoin de deux fenêtres ouvertes en même temps. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+Plus loin dans ce tutoriel, vous aurez besoin de deux fenêtres ouvertes en même temps. Toutefois, sur certaines versions de Windows, si vous avez déjà une fenêtre de commande ouverte et que vous essayez d’en ouvrir une seconde utilisant la même méthode, vous serez renvoyées vers la fenêtre de commande que vous avez déjà ouvert. Essayez-le maintenant sur votre ordinateur pour voir ce qui se passe ! Si vous obtenez seulement une fenêtre de commande, essayez l’une des autres méthodes dans la liste ci-dessus. Au moins une d'entre elles devrait vous donner une nouvelle fenêtre de commande.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Allez sur Applications → Utilitaires → Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+C’est probablement sous Applications → Accessoires → Terminal ou Applications → Système → Terminal, mais cela peut dépendre de votre système. Si toujours rien, vous pouvez demander à Google. :)
 
 <!--endsec-->
