@@ -91,17 +91,15 @@ Der Titel "Olas Blog" wird nun im Browser angezeigt. Hast du es bemerkt? Der Bro
 
 Wie du vielleicht bemerkt hast, hat jedes Element zu Beginn einen öffnenden Tag und einen zugehörigen *schließenden Tag* mit `/` und innerhalb davon sind Elemente *eingebettet*. Ein innerer Tag kann nicht außerhalb des umschließenden Tags geschlossen werden, die Reihenfolge muss immer stimmen.
 
-Es ist wie, wenn man Sachen in Kisten steckt. In die größte Box: `<html></html>` kommt eine kleinere Box: `<body></body>`, und dort wiederum packen wir viele kleine Kisten hinein: </code>`&lt;p&gt;&lt;/p&gt;</0>.</p>
+Es ist wie, wenn man Sachen in Kisten steckt. In die größte Box: `<html></html>` kommt eine kleinere Box: `<body></body>`, und dort wiederum packen wir viele kleine Kisten hinein: `<p></p>`.
 
-<p>Die Regeln und Reihenfolgen von <em>schließenden</em> Tags und <em>Verschachtelung</em> der Elemente musst du immer einhalten. Anderenfalls können Browser die Seite nicht richtig interpretieren und darstellen.</p>
+Die Regeln und Reihenfolgen von _schließenden_ Tags und _Verschachtelung_ der Elemente musst du immer einhalten. Anderenfalls können Browser die Seite nicht richtig interpretieren und darstellen.
 
-<h2>Dein Template anpassen</h2>
+## Dein Template anpassen
 
-<p>Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier sind ein paar nützliche Tags dafür:</p>
+Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier sind ein paar nützliche Tags dafür:
 
-<ul>
-<li><code><h1>Überschrift</h1>` (headline) für wichtigste Überschriften</li> 
-
+* `<h1>Überschrift</h1>` (headline) für wichtigste Überschriften
 * `<h2>Unter-Überschrift</h2>` die nächst tiefere Überschiftenebene
 * `<h3>Unter-Unter-Überschrift</h3>` ... und so weiter bis `<h6>`
 * `<p>Ein Fliesstext-Absatz</p>`
