@@ -7,7 +7,7 @@ Abhängig von deiner Windows-Version und deiner Tastatur sollte eine der folgend
 - Geh ins Start Menü → Alle Programme → Zubehör → Eingabeaufforderung.
 - Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
 - Drücke die Windows-Taste und gleichzeitig "x" auf deiner Tastatur. Wähle "Eingabeaufforderung" aus dem Menü aus.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Drücke die Windows-Taste und gleichzeitig "r", um das "Ausführen"-Fenster zu erhalten. Tippe "cmd" in das Feld und klicke OK.
 
 ![Tippe "cmd" in das "Run"-Fenster](../python_installation/images/windows-plus-r.png)
 
