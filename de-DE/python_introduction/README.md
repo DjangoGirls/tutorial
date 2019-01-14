@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Wir haben unsere erste Fehlermeldung (Error) erhalten! Das {{ warning_icon }} Icon ist das Zeichen von Python, dass der eingegebene Code nicht den Programmierregeln von Python entspricht und damit nicht das tut, was wir erwarten würden. Fehler zu machen (selbst absichtlich) ist ein wesentlicher Teil beim Lernen!
+Wir haben unsere erste Fehlermeldung (Error) erhalten! Mit dem Icon {{ warning_icon }} teilen wir dir in diesem Tutorial jeweils mit, dass der einzugebende Code nicht wie erwartet funktionieren wird. Fehler zu machen (selbst absichtlich) ist ein wesentlicher Teil beim Lernen!
 
 Unser erster Fehler sagt, dass Objekte vom Typ "int" (Integers, das sind ganze Zahlen) keine Länge haben. Was also nun? Vielleicht sollten wir unsere Zahl als String schreiben? Denn bei Strings funktioniert es ja, wie wir wissen.
 
