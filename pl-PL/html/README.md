@@ -91,7 +91,7 @@ Zauważyłaś, że przeglądarka zrozumiała, że "Ola's blog" jest tytułem Two
 
 Zapewne zauważyłaś także, że każdy znacznik otwierający posiada *znacznik zamykający*, z `/`, a także to, że elementy są *zagnieżdżane * (czyli nie możesz zamknąć danego znacznika zanim nie zostaną zamknięte znaczniki znajdujące się wewnątrz niego).
 
-To trochę jak wkładanie rzeczy do pudełek. Masz jedno wielkie pudło, `<html></html>`; wewnątrz niego znajduje się `<body></body>`, a w środku tegoż są kolejne mniejsze pudełka: `<p></p>`.
+To trochę jak wkładanie rzeczy do pudełek. Masz jedno wielkie pudło, `&lt;html&gt;&lt;/html&gt;`; wewnątrz niego znajduje się `&lt;body&gt;&lt;/body&gt;`, a w środku tegoż są kolejne mniejsze pudełka: `&lt;p&gt;&lt;/p&gt;`.
 
 Musisz przestrzegać zasad *zamykania* znaczników i *zagnieżdżania* elementów - przeciwnym razie przeglądarka może mieć problem z ich poprawnym zinterpretowaniem i Twoja strona będzie wyświetlać się niepoprawnie.
 
