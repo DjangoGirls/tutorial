@@ -4,13 +4,13 @@
 
 ### Что делать дальше?
 
-Take a break and relax! You have just done something really huge.
+Сделай перерыв и расслабься. Ты только что закончила огромную работу.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Подпишись на страничку Django Girls в [Facebook](http://facebook.com/djangogirls) и [Twitter](https://twitter.com/djangogirls), чтобы оставаться в курсе новостей.
 
 ### Можем ли мы посоветовать дополнительные ресурсы для обучения?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Да! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
