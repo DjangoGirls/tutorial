@@ -78,9 +78,9 @@ from django.urls import path
 from . import views
 ```
 
-Here we're importing Django's function `path` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+Так мы импортировали все методы Django `path` и все `views` (представления) из приложения `blog` (у нас их пока нет, но через минуту они появятся!)
 
-After that, we can add our first URL pattern:
+После этого мы можем добавить наш первый URL-шаблон:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the root URL. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+Как ты можешь заметить, мы связали `view` с именем `post_list` и корневой URL-адрес. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
 
 The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
