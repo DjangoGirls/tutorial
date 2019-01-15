@@ -27,11 +27,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python
+# Установка Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Установка редактора кода
 
 {% include "/code_editor/instructions.md" %}
 
@@ -39,11 +39,11 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Установка Git
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Создание учётной записи на GitHub
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
