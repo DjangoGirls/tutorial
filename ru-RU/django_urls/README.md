@@ -6,7 +6,7 @@
 
 URL — это просто адрес в интернете. Ты можешь видеть URL каждый раз при посещении веб-сайта - он отображается в адресной строке. (Да! `127.0.0.1:8000` это URL-адрес! И `https://djangogirls.org` — тоже URL.)
 
-![URL-адрес](images/url.png)
+![Url-адрес](images/url.png)
 
 Любая страница в Интернете нуждается в собственном URL-адресе. Таким образом, ваше приложение знает, что оно должно показать пользователю, который открывает этот URL-адрес. В Django, мы используем кое-что под названием `URLconf` (URL configuration). URLconf — это набор шаблонов, которые Django попробует сопоставить с полученным URL, чтобы выбрать правильный метод для отображения (view).
 
@@ -90,14 +90,14 @@ urlpatterns = [
 ]
 ```
 
-Как ты можешь заметить, мы связали `view` с именем `post_list` и корневой URL-адрес. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+Как ты можешь заметить, мы связали `view` с именем `post_list` и корневой URL-адрес. Этот шаблон URL-адреса будет соответствовать пустой строке и URL распознаватель Django будет игнорировать имя домена (например, http://127.0.0.1:8000 /), с префиксом полного пути url. Этот шаблон скажет Django, что `views.post_list` — это правильное направление для запроса к твоему веб-сайту расположенного по адресу 'http://127.0.0.1:8000/'.
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+Последняя часть `name='post_list'` — это имя URL, которое будет использовано чтобы идентифицировать представление (view). Оно может быть таким же, как имя представления (англ. view), а может и чем-то совершенно другим. Мы будем использовать именованные URL позднее в проекте, так что, важно указывать их имена в приложении уже сейчас. Мы также должны попытаться сохранить имена URL-адресов уникальными и легко запоминающимися.
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+Если вы попытаетесь зайти на http://127.0.0.1:8000 теперь, то вы сможете увидите сообщение, что-то вроде «веб-страницы не доступны». Это потому, что сервер (Помните, набрав `runserver`?) больше не работает. Взгляните на окно консоли вашего сервера, чтобы выяснить, почему.
 
 ![Ошибка](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Ваша консоль показывает ошибку, но не волнуйтесь – это на самом деле очень полезно: вам сообщают, что **no attribute 'post_list'** ("отсутствует атрибут 'post_list'"). Это имя *view*, что Django пытается найти и использовать, но мы его еще не создали. На данном этапе ваша `/admin/` также не будет работать. Не беспокойся, мы этим займемся. Если вы видите другое сообщение об ошибке, попробуйте перезагрузить веб-сервер. Чтобы сделать это, в окне консоли, где работает веб-сервер, остановите его, нажав Ctrl+C (одновременное нажатие клавиш Control и клавиши с буквой C); и перезапустите его набрав команду `Python manage.py runserver`.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> Если хочешь узнать больше о Django URLconfs, посмотри официальную документацию: https://docs.djangoproject.com/en/2.0/topics/http/urls/
