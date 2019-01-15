@@ -20,7 +20,7 @@ This tutorial will not magically turn you into a programmer. If you want to be g
 
 We hope that we'll be able to make you love technology as much as we do!
 
-## What will you learn during the tutorial?
+## Kion vi lernos dum la lernilo?
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
