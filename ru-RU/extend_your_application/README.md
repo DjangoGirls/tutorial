@@ -4,7 +4,7 @@
 
 We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
 
-Time to practice!
+Время практики!
 
 The first thing we need in our blog is, obviously, a page to display one post, right?
 
@@ -19,13 +19,13 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 
 {% block content %}
     {% for post in posts %}
-        <div class="post">
-            <div class="date">
+        &lt;div class="post"&gt;
+            &lt;div class="date"&gt;
                 {{ post.published_date }}
-            </div>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
+            &lt;/div&gt;
+            &lt;h2&gt;&lt;a href=""&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;
+            &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
+        &lt;/div&gt;
     {% endfor %}
 {% endblock %}
 ```
@@ -116,7 +116,7 @@ We should open `blog/views.py` in the code editor and add the following code nea
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+И в конце файла мы добавим наше *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -126,17 +126,17 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Да. Пришло время обновить страницу: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+Заработало! Только что произойдет, если ты попробуешь перейти по ссылке из заголовка записи?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+Ой, нет! Другая ошибка! Но мы уже знаем как с ней справиться, верно? Нам нужно добавить шаблон!
 
-## Create a template for the post details
+## Создадим шаблон для страницы поста
 
 We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
@@ -148,15 +148,15 @@ It will look like this:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
+    &lt;div class="post"&gt;
         {% if post.published_date %}
-            <div class="date">
+            &lt;div class="date"&gt;
                 {{ post.published_date }}
-            </div>
+            &lt;/div&gt;
         {% endif %}
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+        &lt;h2&gt;{{ post.title }}&lt;/h2&gt;
+        &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
+    &lt;/div&gt;
 {% endblock %}
 ```
 
@@ -168,7 +168,7 @@ OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+Ура! Все работает!
 
 # Deploy time!
 
@@ -183,7 +183,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Затем набери в [Bash консоли PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
 
 (Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
 
-## Updating the static files on the server
+## Обновление статических файлов на сервере
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
 
