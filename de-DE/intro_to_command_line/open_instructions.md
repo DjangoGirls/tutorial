@@ -5,11 +5,11 @@ Abhängig von deiner Windows-Version und deiner Tastatur sollte eine der folgend
 - Gehe zum Start-Menü oder Start-Bildschirm und gib "Eingabeaufforderung" in das Suchfeld ein.
 - Klicke Start-Menü → Windows System → Eingabeaufforderung.
 - Geh ins Start Menü → Alle Programme → Zubehör → Eingabeaufforderung.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
+- Gehe zum Startbildschirm, bewege deinen Mauszeiger zur unteren linken Bildschirmecke und klicke auf den nach unten zeigenden Pfeil, der erscheint ist (auf einem Touch-Screen, streiche mit dem Finger vom unteren Bildschirmrand nach oben). Die Apps-Seite sollte geöffnet werden. Klicke auf Eingabeaufforderung im Windows System Abschnitt.
 - Drücke die Windows-Taste und gleichzeitig "x" auf deiner Tastatur. Wähle "Eingabeaufforderung" aus dem Menü aus.
 - Drücke die Windows-Taste und gleichzeitig "r", um das "Ausführen"-Fenster zu erhalten. Tippe "cmd" in das Feld und klicke OK.
 
-![Tippe "cmd" in das "Run"-Fenster](../python_installation/images/windows-plus-r.png)
+![Tippe "cmd" in das "Ausführen"-Fenster](../python_installation/images/windows-plus-r.png)
 
 Später im Tutorial wirst du zwei offene Kommandozeilen-Fenster gleichzeitig brauchen. Wenn du aber schon ein Kommandozeilen-Fenster offen hast, wirst du bei manchen Windows-Versionen einfach zu diesem geschickt, wenn du mit derselben Methode versuchst, ein zweites Fenster zu öffnen. Probiere das nun aus und achte darauf, was passiert! Wenn du nur ein Kommandozeilen-Fenster bekommst, versuche eine der anderen Methoden aus der Liste oben. Mindestens eine der Methoden sollte dazu führen, dass ein neues (zweites) Kommandozeilen-Fenster geöffnet wird.
 
