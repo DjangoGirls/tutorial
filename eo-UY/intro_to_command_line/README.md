@@ -164,10 +164,10 @@ So what's in it? It'd be cool to find out. Let's see:
 
     > dir
      Directory of C:\Users\olasitarska
-    05/08/2014 07:28 PM <DIR>      Applications
-    05/08/2014 07:28 PM <DIR>      Desktop
-    05/08/2014 07:28 PM <DIR>      Downloads
-    05/08/2014 07:28 PM <DIR>      Music
+    05/08/2014 07:28 PM &lt;DIR&gt;      Applications
+    05/08/2014 07:28 PM &lt;DIR&gt;      Desktop
+    05/08/2014 07:28 PM &lt;DIR&gt;      Downloads
+    05/08/2014 07:28 PM &lt;DIR&gt;      Music
     ...
     
 
@@ -278,7 +278,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
     > cd practice
     > mkdir test
     > dir
-    05/08/2014 07:28 PM <DIR>      test
+    05/08/2014 07:28 PM &lt;DIR&gt;      test
     
 
 <!--endsec-->
@@ -353,7 +353,7 @@ Now time to delete the `practice` directory:
 {% filename %}command-line{% endfilename %}
 
     > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+    practice, Are you sure &lt;Y/N&gt;? Y
     
 
 <!--endsec-->
