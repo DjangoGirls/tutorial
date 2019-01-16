@@ -18,7 +18,7 @@ Cloud IDE, size İnternette yazılım yükleyebileceğiniz, yazabileceğiniz ve 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+PaizaCloud Cloud IDE'nin terminali sizin komutlarınızı girmeniz icin hazırlanacak. Terminal penceresinin boyunu değiştirebilir ve en büyük boyuta getirebilirsiniz.
 
 #### AWS Cloud9
 
