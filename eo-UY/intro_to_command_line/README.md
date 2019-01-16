@@ -400,7 +400,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Mojose, ĉu ne? :)
 
 ## Summary
 
@@ -415,7 +415,7 @@ Here is a summary of some useful commands:
 | copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt**  |
 | move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt**  |
 | mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                            |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                         |
+| rmdir (aŭ del)    | rm                       | delete a file              | **del c:\test\test.txt**                         |
 | rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                            |
 | [CMD] /?          | man [CMD]                | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
