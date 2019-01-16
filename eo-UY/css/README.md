@@ -186,9 +186,9 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="page-header">
-    <h1><a href="/">Django Girls Blog</a></h1>
-</div>
+&lt;div class="page-header"&gt;
+    &lt;h1&gt;&lt;a href="/"&gt;Django Girls Blog&lt;/a&gt;&lt;/h1&gt;
+&lt;/div&gt;
 ```
 
 And now add a class `post` to your `div` containing a blog post.
@@ -196,11 +196,11 @@ And now add a class `post` to your `div` containing a blog post.
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="post">
-    <p>published: {{ post.published_date }}</p>
-    <h2><a href="">{{ post.title }}</a></h2>
-    <p>{{ post.text|linebreaksbr }}</p>
-</div>
+&lt;div class="post"&gt;
+    &lt;p&gt;published: {{ post.published_date }}&lt;/p&gt;
+    &lt;h2&gt;&lt;a href=""&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;
+    &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
+&lt;/div&gt;
 ```
 
 We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
@@ -262,11 +262,11 @@ Then surround the HTML code which displays the posts with declarations of classe
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    &lt;div class="post"&gt;
+        &lt;p&gt;published: {{ post.published_date }}&lt;/p&gt;
+        &lt;h2&gt;&lt;a href=""&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;
+        &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
+    &lt;/div&gt;
 {% endfor %}
 ```
 
@@ -275,21 +275,21 @@ in the `blog/templates/blog/post_list.html` with this:
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<div class="content container">
-    <div class="row">
-        <div class="col-md-8">
+&lt;div class="content container"&gt;
+    &lt;div class="row"&gt;
+        &lt;div class="col-md-8"&gt;
             {% for post in posts %}
-                <div class="post">
-                    <div class="date">
-                        <p>published: {{ post.published_date }}</p>
-                    </div>
-                    <h2><a href="">{{ post.title }}</a></h2>
-                    <p>{{ post.text|linebreaksbr }}</p>
-                </div>
+                &lt;div class="post"&gt;
+                    &lt;div class="date"&gt;
+                        &lt;p&gt;published: {{ post.published_date }}&lt;/p&gt;
+                    &lt;/div&gt;
+                    &lt;h2&gt;&lt;a href=""&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;
+                    &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
+                &lt;/div&gt;
             {% endfor %}
-        </div>
-    </div>
-</div>
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
 ```
 
 Save those files and refresh your website.
