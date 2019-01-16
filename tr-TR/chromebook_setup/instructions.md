@@ -33,7 +33,7 @@ PaizaCloud Cloud IDE'nin terminali sizin komutlarınızı girmeniz icin hazırla
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Arayüzün aşağı kısmı terminaliniz. Bu terminali uzaktaki bir Cloud 9 bilgisayarina komut göndermek için kullanabilirsiniz. Bu pencerenin boyutunu değiştirip büyütebilirsiniz.
 
 ### Sanal ortam (Virtual environment)
 
