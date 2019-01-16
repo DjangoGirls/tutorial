@@ -30,7 +30,7 @@ It will (more or less) look like this:
 
 > If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+Bone, [ni komencu ĉe la komenco…](./how_the_internet_works/README.md)
 
 ## Following the tutorial at home
 
