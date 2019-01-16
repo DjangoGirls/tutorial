@@ -6,6 +6,6 @@
 
 > **Not** Eğer Chromebook kullanıyorsanız, bu bölümü atlayın ve [Chromebook Kurulumu](../chromebook_setup/README.md)'ndaki talimatları takip ettiğinizden emin olun. Seçtiğiniz bulut IDE (PaizaCloud Bulut IDE veya AWS Cloud9) bir kod editörü içerir ve IDE'nizde dosya menüsünden bir dosyayı açtığınızda, otomatik olarak bu editörü kullanıyor olacaksınız.
 > 
-> **Note** Bunları Kurulum bölümünde yapmış olabilirsin, öyle ise hemen bir sonraki bölüme atlayabilirsin!
+> **Not** Bu adımları kurulum bölümünde izlemiş olabilirsin - öyle ise hemen bir sonraki bölüme atlayabilirsin!
 
 {% include "/code_editor/instructions.md" %}
