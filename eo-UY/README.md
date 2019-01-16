@@ -18,7 +18,7 @@ Well, we have good news for you! Programming is not as hard as it seems and we w
 
 This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
 
-We hope that we'll be able to make you love technology as much as we do!
+Ni esperas, ke ni povos igi, ke vi amos teĥnikaron tiom ege kiom ni!
 
 ## Kion vi lernos dum la lernilo?
 
