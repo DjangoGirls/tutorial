@@ -21,8 +21,8 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+&lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt;
+&lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"&gt;
 ```
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
@@ -102,7 +102,7 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+&lt;link rel="stylesheet" href="{% static 'css/blog.css' %}"&gt;
 ```
 
 The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
@@ -113,27 +113,27 @@ Your file should now look like this:
 
 ```html
 {% load static %}
-<html>
-    <head>
-        <title>Django Girls blog</title>
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
-    </head>
-    <body>
-        <div>
-            <h1><a href="/">Django Girls Blog</a></h1>
-        </div>
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;title&gt;Django Girls blog&lt;/title&gt;
+        &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"&gt;
+        &lt;link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"&gt;
+        &lt;link rel="stylesheet" href="{% static 'css/blog.css' %}"&gt;
+    &lt;/head&gt;
+    &lt;body&gt;
+        &lt;div&gt;
+            &lt;h1&gt;&lt;a href="/"&gt;Django Girls Blog&lt;/a&gt;&lt;/h1&gt;
+        &lt;/div&gt;
 
         {% for post in posts %}
-            <div>
-                <p>published: {{ post.published_date }}</p>
-                <h2><a href="">{{ post.title }}</a></h2>
-                <p>{{ post.text|linebreaksbr }}</p>
-            </div>
+            &lt;div&gt;
+                &lt;p&gt;published: {{ post.published_date }}&lt;/p&gt;
+                &lt;h2&gt;&lt;a href=""&gt;{{ post.title }}&lt;/a&gt;&lt;/h2&gt;
+                &lt;p&gt;{{ post.text|linebreaksbr }}&lt;/p&gt;
+            &lt;/div&gt;
         {% endfor %}
-    </body>
-</html>
+    &lt;/body&gt;
+&lt;/html&gt;
 ```
 
 OK, save the file and refresh the site!
@@ -159,7 +159,7 @@ Maybe we can customize the font in our header? Paste this into your `<head>` in 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+&lt;link href="//fonts.googleapis.com/css?family=Lobster&amp;subset=latin,latin-ext" rel="stylesheet" type="text/css"&gt;
 ```
 
 As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
@@ -177,7 +177,7 @@ h1 a, h2 a {
 
 ![Figure 14.3](images/font.png)
 
-Great!
+Bonega!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
