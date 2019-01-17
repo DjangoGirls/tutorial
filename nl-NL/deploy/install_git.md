@@ -1,4 +1,4 @@
-Git is een "version control system" ("versie controle systeem") dat door veel programmeurs gebruikt wordt. Deze software houdt de wijzigingen in een bestand bij zodat je later weer een specifieke versie kunt opvragen. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git is een "version control system" ("versie controle systeem") dat door veel programmeurs gebruikt wordt. Deze software houdt de wijzigingen in een bestand bij zodat je later weer een specifieke versie kunt opvragen. Een beetje zoals de "wijzigingen bijhouden" functie in een wordprocessor (zoals Microsoft Word of LibreOffice Writer), maar veel geavanceerder.
 
 ## Git Installeren
 
