@@ -5,14 +5,14 @@ Git is een "version control system" ("versie controle systeem") dat door veel pr
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Je kunt Git downloaden van [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Op die na zijn alle standaardinstellingen prima. "Checkout Windows-style, commit Unix-style line endings" is goed.
+Je kunt Git downloaden van [git-scm.com](https://git-scm.com/). Je kunt bij alle stappen op "volgende" drukken behalve bij deze twee: in de stap waar je gevraagd wordt je editor te kiezen, kies je voor Nano, en in de stap genaamd "Adjusting your PATH environment" kies je voor "Use Git and optional Unix tools from the Windows Command Prompt" (de laatste optie). Op die na zijn alle standaardinstellingen prima. "Checkout Windows-style, commit Unix-style line endings" is goed.
 
 Vergeet niet om de command prompt of powershell te herstarten nadat de installatie succesvol afgerond is. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
+Download Git van [git-scm.com](https://git-scm.com/) en volg de aanwijzingen.
 
 > **Opmerking** Als je OS X 10.6, 10.7 of 10.8 gebruikt, moet je de versie van git hiervandaan installeren: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
