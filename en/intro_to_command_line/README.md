@@ -185,12 +185,28 @@ Music
 
 Now, let's go to our Desktop directory:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change directory: OS X" data-id="python_OSX"
+data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
 $ cd Desktop
 ```
+<!--endsec-->
+
+<!--sec data-title="Change directory: Linux" data-id="python_linux"
+data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+```
+$ cd Desktop
+```
+
+(The directory name "Desktop" might be translated
+to the language of your Linux account.
+If that's the case, you'll need to replace `Desktop`
+with the translated name, e.g. `Schreibtisch` for German.)
+
 <!--endsec-->
 
 <!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
