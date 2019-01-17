@@ -1,12 +1,12 @@
 # Динамически изменяющиеся данные в шаблонах
 
-Отдельные части уже размещены в нужных местах: модель `Post`, определенна в файле `models.py`, `post_list` - в файле `views.py` и добавлен шаблон. Но как нам отобразить записи в шаблоне HTML-страницы? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+Отдельные части уже размещены в нужных местах: модель `Post`, определенна в файле `models.py`, `post_list` - в файле `views.py` и добавлен шаблон. Но как нам отобразить записи в шаблоне HTML-страницы? Ведь именно это нам мы и хотим добиться: взять определенный контент (модели, сохраненные в базе данных) и аккуратно отобразить их в шаблоне, верно?
 
-Для этого и предназначены *представления*: соединять между собой модели и шаблоны. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+Для этого и предназначены *представления*: соединять между собой модели и шаблоны. В `post_list` *view* нужно будет взять модели, которые мы хотим отобразить и затем передать их шаблону. Таким образом, в *представлениях (view)* мы определяем что (какая модель) будет отображена в шаблоне.
 
-OK, so how will we achieve this?
+Хорошо, так как мы этого добьемся?
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+Нам нужно открыть файл `blog/views.py` в редакторе кода. Так что *представление* `post_list` будет выглядеть следующим образом:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Помнишь мы говорили о включении кода из других файлов? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+Помнишь мы говорили о включении кода из других файлов? Теперь нам нужно включить модель, которую мы определили в файле `models.py`. Мы добавим строку `from .models import Post` следующим образом:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -26,9 +26,9 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Затем мы импортируем модель (`Post`).
+Точка перед `models` означает *текущую директорию* или *текущее приложение*. Оба файла `Views.py` и `models.py` находятся в одном и том же каталоге. Это значит, что мы можем использовать точку `.` и имя файла (без `.py`). Затем мы импортируем модель (`Post`).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+Но что дальше? Чтобы получить реальную запись из модели `Post`, нам нужен так называемый `QuerySet`.
 
 ## QuerySet
 
