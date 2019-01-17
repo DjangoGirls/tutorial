@@ -190,9 +190,10 @@ We can also reverse the ordering by adding `-` at the beginning:
 ```
 
 
-### Chaining QuerySets 
+### Complex queries through method-chaining
 
-You can also combine QuerySets by **chaining** them together:
+As you saw, some QuerySet methods return a new QuerySet.
+You can combine their effect by **chaining** them together:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
