@@ -4,14 +4,14 @@ Je kunt [deze sectie overslaan](http://tutorial.djangogirls.org/en/installation/
 
 Cloud 9 is een hulpmiddel die je een code editor aanbiedt op een computer op het Internet. Hierop kan je de programmatuur installeren en uitvoeren. In deze gids beschouwen we Cloud 9 dan ook als jouw *lokale machine*. Je zult opdrachten nog steeds, net als je klasgenoten met OS X, Ubuntu, of Windows, in een terminalscherm typen. Maar jouw terminal is dan verbonden met een computer ergens anders, zoals Cloud 9 dat voor jou heeft ingesteld. Hier is de instructie voor cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). Je kan kiezen uit de een van de volgende IDEs. Volg een van onderstaande instructies.
 
-#### PaizaCloud Cloud IDE
+#### Ga naar de PaizaCloud wolk IDE
 
 1. Ga naar de [PaizaCloud wolk IDE](https://paiza.cloud/)
 2. Meld je aan voor een account
 3. Klik op *nieuwe Server*
 4. Klik op Terminal knop (aan de linkerkant van het venster)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Nu moet u een interface met een zijbalk, knoppen aan de linkerkant. klikt u op "Terminal" knop te openen van de terminal venster met prompt zoals dit:
 
 {% filename %}Terminal{% endfilename %}
 
