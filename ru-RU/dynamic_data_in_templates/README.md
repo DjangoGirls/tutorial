@@ -32,9 +32,9 @@ from .models import Post
 
 ## QuerySet
 
-You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+Ты уже должна быть знакома с принципом работы QuerySets. Мы говорили о нем в главе [Django ORM (QuerySets)](../django_orm/README.md).
 
-So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
+Сейчас вы хотим список записей блога, отсортированный по `published_date`, верно? Мы уже делали это в главе QuerySets!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -42,7 +42,7 @@ So now we want published blog posts sorted by `published_date`, right? We alread
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
+Итак, давай откроем файл `blog/views.py` в редакторе кода, и добавим этот фрагмент кода в функцию `def post_list(request)` - но не забудь в начало файла добавить `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -56,11 +56,11 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
+Нам осталось передать QuerySet `posts` в шаблон. Не беспокойся, мы расскажем о том, как отобразить его на странице в следующей главе.
 
 Пожалуйста, обрати внимание, что мы создали *переменную* для QuerySet: `posts`. Можешь думать о неё как об имени для нашего QuerySet. Теперь мы можем обращаться к нему, используя имя.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. Мы должны задавать имена, передаваемым шаблону вещам (мы будем придерживаться `'posts'` прямо сейчас). :) В итоге параметр будет выглядеть следующим образом: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+В функции `render` мы уже имеем параметр `request` (т.е. все что мы получим от пользователя в качестве запроса через Интернет) и файл шаблона `'blog/post_list.html'`). Последний параметр, который выглядит как `{}`, это место, куда мы можем добавить что-нибудь для использования в шаблоне. Мы должны задавать имена, передаваемым шаблону вещам (мы будем придерживаться `'posts'` прямо сейчас). :) В итоге параметр будет выглядеть следующим образом: `{'posts': posts}`. Обрати внимание, что часть перед `:` является строкой; её нужно обернуть в кавычки: `"`.
 
 В результате файл `blog/views.py` должен выглядеть следующим образом:
 
@@ -78,4 +78,4 @@ def post_list(request):
 
 Вот и все! Теперь пришло время перейти к шаблону и отобразить QuerySet на странице!
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
+Хочешь подробнее узнать о QuerySets в Django? Тогда тебе пригодится официальная документация: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
