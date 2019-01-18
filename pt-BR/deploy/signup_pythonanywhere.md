@@ -6,7 +6,7 @@ Iremos hospedar o blog que estamos construindo em PythonAnywhere. Cadastre-se pa
 
 ![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> ** Nota ** Quando escolher seu nome de usuário aqui, não esqueça que a URL do blog assumira a forma `seuusuário.pythonanywhere.com `, então ponha o seu apelido ou um nome que descreva o assunto do blog. Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## Criando um token de API do PythonAnywhere
 
