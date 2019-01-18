@@ -196,7 +196,7 @@ Parabéns! Você criou seu primeiro site e o executou usando um servidor web! N�
 
 ![Instalação funcionou!](images/install_worked.png)
 
-Note que a janela de comando só pode rodar uma coisa de cada vez, e a janela de comando que você abriu anteriormente já está rodando o servidor. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Note que a janela de comando só pode rodar uma coisa de cada vez, e a janela de comando que você abriu anteriormente já está rodando o servidor. Enquanto o servidor web estiver executando e esperando por solicitações de entrada, o terminal vai aceitar o novo testo mas não executará novos comandos.
 
 > Nós revisamos como servidores web funcionam no capítulo **Como a Internet funciona**.
 
