@@ -1,10 +1,10 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+Dependendo da sua versão do Windows e do seu teclado, um dos seguintes deverá abrir uma janela de comando (você talvez tenha experimentado um pouco, mas não deu uma chance à todas essas sugestões):
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
+- Vá para o menu ou tela de Iniciar, e digite "Prompt de comando" no campo de busca.
+- Vá para o menu Iniciar → Sistema Windows → Prompt de comando.
+- Vá em Iniciar → Todos os Programas → Acessórios → Prompt de comando.
 - Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
 - Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
