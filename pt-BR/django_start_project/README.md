@@ -178,14 +178,14 @@ Se você estiver no Windows e o comando falhar com `UnicodeDecodeError`, use o c
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Agora você precisa checar se o o seu site está funcionando. Abra o seu navegador (Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você usa) e coloque esse endereço:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Se você esta usando um Chromebook e o Cloud9, em vez disso clique no URL na janela "pop-up" que deve ter aparecido no canto superior direito da janela de comando onde o servidor está funcionando. A URL vai ser algo como:
 
 {% filename %}browser{% endfilename %}
 
@@ -196,10 +196,10 @@ Parabéns! Você criou seu primeiro site e o executou usando um servidor web! N�
 
 ![Instalação funcionou!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Note que a janela de comando só pode rodar uma coisa de cada vez, e a janela de comando que você abriu anteriormente já está rodando o servidor. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > Nós revisamos como servidores web funcionam no capítulo **Como a Internet funciona**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C -- botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
+Para digitar comandos adicionais enquanto o servidor está rodando, abra uma nova janela de terminal e ative seu ambiente virtual, para revisar as instruções de como abrir uma segunda janela de terminal, veja [Introdução à linha de comando](../intro_to_command_line/README.md). Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C -- botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
 
 Pronta para o próximo passo? Está na hora de criar conteúdo!
