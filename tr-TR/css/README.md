@@ -10,9 +10,9 @@ Fakat tekrar sıfırdan başlamak istemiyoruz, değil mi? Bir kez daha, programc
 
 ## Haydi Bootstrap kullanalım!
 
-Bootstrap HTML ve CSS tabanlı çok güzel websiteleri geliştirmek için en yaygın olarak kullanılan çözümlerden biridir https://getbootstrap.com/
+Bootstrap güzel websiteleri geliştirmek için en yaygın olarak kullanılan HTML ve CSS tabanlı çözümlerden biridir: https://getbootstrap.com/
 
-Twitter yazılımcıları tarafından geliştirilmeye başlanmış ve şu anda dünyanın her yerinden gönüllüler tarafından geliştirilmektedir!
+Bootstrap Twitter yazılımcıları tarafından geliştirilmeye başlanmış. Şu anda dünyanın her yerinden gönüllüler tarafından geliştirilmektedir!
 
 ## Bootstrap Kurulumu
 
