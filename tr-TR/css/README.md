@@ -32,11 +32,11 @@ Bu satırlar projeye yeni dosya eklemez. Ancak İnternet'te var olan dosyalara i
 
 ## Django'da statik dosyalar
 
-Son olarak **statik dosyalar** dediğimiz şeylere daha yakından bakalım. Statik dosyalar, tüm CSS dosyaları ve resimlerindir. İçerikleri istek bağlamından (request context) bağımsızdır ve her kullanıcı için aynıdır.
+Son olarak **statik dosyalar** dediğimiz şeylere daha yakından bakalım. Statik dosyalar, tüm CSS dosyaları ve resimlerindir. İçeriklerini istek içeriğine bağlı değildir ve her kullanıcı için aynıdır.
 
 ### Django'da statik dosyaları nereye koymalı
 
-Django dahili "admin" uygulaması için statik dosyaları nerede bulacağını biliyor. Şimdi sadece kendi `blog` uygulamamız için bazı statik dosyalar eklememiz gerekiyor.
+Django dahili "admin" uygulaması için statik dosyaları önceden nerede bulacağını biliyor. Şimdi kendi `blog` uygulamamız için bazı statik dosyalar eklememiz gerekiyor.
 
 Bunu blog uygulamamızın içine `static` isimli bir klasör oluşturarak yapacağız:
 
@@ -48,11 +48,11 @@ Bunu blog uygulamamızın içine `static` isimli bir klasör oluşturarak yapaca
     └── mysite
     
 
-Django otomatik olarak uygulama klasörlerinizdeki "static" adlı klasörleri bulur. Böylece bunların içerikleri statik dosya olarak kullanabilir.
+Django otomatik olarak uygulama klasörlerinizin içindeki "static" adlı klasörleri bulur. Böylece bunların içeriklerini statik dosya olarak kullanabilir.
 
 ## İlk CSS dosyanız!
 
-Şimdi web sayfana kendi stilini eklemen için bir CSS dosyası oluşturalım. `static` klasörü içinde `css` adlı yeni bir klasör oluştur. Şimdi de `css` klasörü içinde `blog.css` adlı yeni bir dosya oluşturalım. Hazır mısınız?
+Şimdi web sayfana kendi stilini eklemen için bir CSS dosyası oluşturalım. `static` klasörü içinde `css` adlı yeni bir klasör oluştur. Şimdi de `css` klasörü içinde `blog.css` adlı yeni bir dosya oluştur. Hazır mısınız?
 
     djangogirls
     └─── blog
