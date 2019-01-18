@@ -5,13 +5,13 @@ Dependendo da sua versão do Windows e do seu teclado, um dos seguintes deverá 
 - Vá para o menu ou tela de Iniciar, e digite "Prompt de comando" no campo de busca.
 - Vá para o menu Iniciar → Sistema Windows → Prompt de comando.
 - Vá em Iniciar → Todos os Programas → Acessórios → Prompt de comando.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Vá para a tela Iniciar, passe o mouse sobre o canto inferior esquerdo da tela, e clique na seta para baixo que aparecerá (Em telas de toque, passe o dedo sobre a parte inferior da tela). A página "Aplicativos" deve abrir. Clique em Prompt de comando na seção Sistema Windows.
+- Pressione a tecla Windows no seu teclado e aperte a tecla "X" em seguida. Escolha "Prompt de comando" no menu pop-up.
+- Mantenha pressionada a tecla Windows e pressione a tecla "R" para obter uma janela de "Executar". Digite "cmd" na caixa e clique no botão OK.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+Ainda neste tutorial, você precisará ter duas janelas de comando abertas ao mesmo tempo. Entretanto, em algumas versões do Windows, se você já tem uma janela de comando aberta e tentar abrir uma segunda usando o mesmo método, Ao invés de abrir o sistema apontará para a que você já tem aberto. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
 
 <!--endsec-->
 
