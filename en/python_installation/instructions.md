@@ -53,7 +53,14 @@ $ python3 --version
 Python 3.6.1
 ```
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a newer version, you can install it as follows:
+If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed or if you want a newer version, you could first check what Linux distribution you are using with the following command:
+
+{% filename %}command-line{% endfilename %}
+```
+$ hostnamectl
+```
+
+Afterwards, depending on the result, follow one of the following installation guides below this section.
 
 <!--endsec-->
 
