@@ -4,11 +4,11 @@
 
 This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
-Good luck!
+Удачи!
 
-# If you're attending a workshop
+# Если вы посещаете семинар
 
-If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
+Если вы посещаете одно из мероприятий [Django Girls events](https://djangogirls.org/events/):
 
 * Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
 * The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
@@ -23,7 +23,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Brief intro to the command line
+# Кратко о командной строке
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
@@ -45,7 +45,7 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 # Создание учётной записи на GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Иди на [GitHub.com](https://www.github.com) и зарегистрируй новый бесплатный аккаунт. Убедись, что запомнила свой пароль (добавь его в менеджер паролей, если пользуешься им).
 
 # Создание учётной записи на PythonAnywhere
 
@@ -53,7 +53,7 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 # Начинай читать
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Поздравляем, всё готово к работе! Если у тебя ещё осталось немного свободного времени до семинара, было бы полезно прочитать несколько первых глав:
 
 * [Как работает Интернет](../how_the_internet_works/README.md)
 
@@ -65,4 +65,4 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 # Наслаждайся воркшопом!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Когда начнется семинар, ты сможешь сразу перейти к главе [Твой первый проект на Django!](../django_start_project/README.md), так как ты уже освоила материал предыдущих глав.
