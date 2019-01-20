@@ -106,9 +106,9 @@ Post.objects.get(pk=pk)
 
 Хорошо, пришло время добавить *view* в файл `views.py`!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+В `blog/urls.py` мы создали URL-правило с именем `post_detail`, которое отсылает в представление, названное `views.post_detail`. Это означает, что Django будет ожидать представления функция с именем `post_detail` внутри `blog/views.py`.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+Пришло время открыть `blog/views.py` файл в редакторе кода и добавить следующие строки рядом со строками `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -160,9 +160,9 @@ def post_detail(request, pk):
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+И снова мы расширяем `base.html`. В блоке `content` мы отображаем дату публикации (published_date, если она существует), заголовок и текст. Нам также нужно обсудить пару важных вещей, хорошо?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` это тег шаблона, который мы можем использовать, если нам нужно что-то проверить. (Помнишь конструкцию `if ... else ..` из главы **Введение в Python**?) В этом сценарии мы хотим проверить, содержит ли `published_date` нашей записи данные или нет.{% endraw %}
 
 Отлично, можешь перезагрузить страницу и проверить пропала ли теперь ошибка `TemplateDoesNotExist`.
 
@@ -192,7 +192,7 @@ Once again we are extending `base.html`. In the `content` block we want to displ
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Не забудьте заменить `<your-pythonanywhere-username>` на ваше имя пользователя PythonAnywhere, без угловых скобок).
 
 ## Обновление статических файлов на сервере
 
@@ -211,4 +211,4 @@ The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make
 
 In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
 
-And that should be it! Congrats :)
+Вот и все! Поздравляем :)
