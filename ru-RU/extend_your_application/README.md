@@ -68,13 +68,13 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+Эта часть `post/<int:pk>/` указывает шаблон URL-адреса – далее мы объясним это для тебя:
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- `post/` означает, что URL-адрес должен начинаться со слова **post** и далее следует **/**. Пока все в порядке.
+- `<int:pk>`– эта часть сложнее. Она означает, что Django ожидает целое числовое значение и передаст его в представление как переменную с именем `pk`.
+- `/`- затем нам нужно **/** снова, до окончания URL-адреса.
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+Это значит, что если ты введешь адрес `http://127.0.0.1:8000/post/5/` в браузер, Django должен понять, что тебе требуется *view* с именем `post_detail`, и передать информацию о переменной `pk` (равной `5`) этому *view*.
 
 OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
