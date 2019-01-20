@@ -78,7 +78,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` bir CSS seçicisidir (selector). Bu bizim stillerimizi `h1` öğesi içindeki herhangi bir `a` öğesine uyguladığınız anlamına gelir; `h2 a` seçicisi `h2` öğeleri için aynı şeyi yapar. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` bir CSS seçicisidir (selector). Bu bizim stillerimizi `h1` öğesi içindeki herhangi bir `a` öğesine uyguladığınız anlamına gelir; `h2 a` seçicisi `h2` öğeleri için aynı şeyi yapar. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Böylelikle, o öğeye rengini`#Fca205` yani koyu turuncu olarak değiştirmesini söylüyoruz. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiket olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` class'ı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
