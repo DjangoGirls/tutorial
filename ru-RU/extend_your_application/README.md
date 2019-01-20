@@ -46,7 +46,7 @@
 
 Теперь, когда мы перейдем по адресу http://127.0.0.1:8000/ мы получим ошибку (как и ожидается, поскольку у нас нет прописанного URL и *view* для `post_detail`). Она будет выглядеть следующим образом:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![NoReverseMatch ошибка](images/no_reverse_match2.png)
 
 ## Создадим URL для страницы поста
 
@@ -96,11 +96,11 @@ Post.objects.get(pk=pk)
 
 But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![DoesNotExist ошибка](images/does_not_exist2.png)
 
 We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
-![Page not found](images/404_2.png)
+![Страница не найдена](images/404_2.png)
 
 The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
@@ -132,7 +132,7 @@ def post_detail(request, pk):
 
 Заработало! Только что произойдет, если ты попробуешь перейти по ссылке из заголовка записи?
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![TemplateDoesNotExist ошибка](images/template_does_not_exist2.png)
 
 Ой, нет! Другая ошибка! Но мы уже знаем как с ней справиться, верно? Нам нужно добавить шаблон!
 
@@ -166,13 +166,13 @@ Once again we are extending `base.html`. In the `content` block we want to displ
 
 Отлично, можешь перезагрузить страницу и проверить пропала ли теперь ошибка `TemplateDoesNotExist`.
 
-![Post detail page](images/post_detail2.png)
+![Post detail страница](images/post_detail2.png)
 
 Ура! Все работает!
 
-# Deploy time!
+# Время развертывания!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Было бы неплохо проверить, что веб-сайт все еще работает на PythonAnywhere, верно? Давай еще раз проведем развертывание.
 
 {% filename %}command-line{% endfilename %}
 
