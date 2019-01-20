@@ -202,12 +202,12 @@ Hadi HTML kodunun bazı kısımlarına isim verelim. Başlığı içeren `div`'e
 </div>
 ```
 
-Şimdi farklı seçicilere (selectors) bildirim (deklarasyon) blokları ekleyeceğiz. `.` ile başlayan seçiciler sınıflara işaret eder. Web'de, aşağıdaki kodu anlamanıza yardımcı olacak pek çok güzel CSS öğreticisi ve açıklama mevcut. Şimdilik sadece bu kodu kopyalayıp `blog/static/css/blog.css` dosyamıza yapıştıralım:
+Şimdi farklı seçicilere (selectors) bildirim (deklarasyon) blokları ekleyeceğiz. `.` ile başlayan seçiciler sınıflara işaret eder. Web'de, aşağıdaki kodu anlamanıza yardımcı olacak pek güzel CSS öğreticileri ve açıklamaları mevcut. Şimdilik sadece bu kodu kopyalayıp `blog/static/css/blog.css` dosyamıza yapıştıralım:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-.page-header {
+page-header {
     background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
@@ -255,7 +255,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Sonra, blog gönderilerini gösteren HTML kodunu, class bildirimleri içine alın. <0>blog/templates/blog/post_list.html</0> içindeki şu kısmı,
+Sonra, blog gönderilerini gösteren HTML kodunu, sınıf bildirimleri içine alın. Şu kısmı değiştirin:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -295,7 +295,7 @@ Bu dosyaları kaydedin ve web sayfanızı yenileyin.
 
 ![Şekil 14.4](images/final.png)
 
-Yaşasın! Harika görünüyor değil mi? Şimdi yapıştırdığımız koda bakıp CSS tarafından kullanılan ve HTML eklenmiş olan nesneleri bulalım. Tarihi turkuaz rengine çevirmek için nereyi değiştirmen gerekir?
+Yaşasın! Harika görünüyor değil mi? Şimdi yapıştırdığımız koda bakıp CSS tarafından kullanılan sınıf eklediğimiz HTML bölümlerini bulalım. Tarihi turkuaz rengine çevirmek için nereyi değiştirirdiniz?
 
 CSS ile biraz oynamaktan çekinme ve birkaç şeyi değiştirmeye calış. CSS ile oynamak neyin neyi etkilediğini anlamak için çok faydalı. Bir şey bozarsanız, merak etmeyin- her zaman geri alabilirsiniz!
 
