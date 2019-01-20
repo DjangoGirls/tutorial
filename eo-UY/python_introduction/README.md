@@ -512,12 +512,12 @@ False
 
 We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
 
-- x `>` y means: x is greater than y
-- x `<` y means: x is less than y
-- x `<=` y means: x is less than or equal to y
-- x `>=` y means: x is greater than or equal to y
+- x `>` y signifas: x estas pli ol y
+- x `<` y signifas: x estas malpli ol y
+- x `<=` y signifas: x estas malpli ol aŭ egala al y
+- x `>=` y signifas: x estas pli ol aŭ egala al y
 
-Awesome! Wanna do one more? Try this:
+Bonege! Ĉu vi volas fari plu? Provu ĉi-tio:
 
 {% filename %}command-line{% endfilename %}
 
