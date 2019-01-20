@@ -50,11 +50,11 @@
 
 ## Создадим URL для страницы поста
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+Давай создадим URL в `urls.py` для *представления* `post_detail`!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+Мы хотим, чтобы адрес страницы нашего первого поста был таким: **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Давай создадим URL в файле `blog/urls.py` и укажем Django на *представление* под названием `post_detail`, которое будет отображать пост целиком. Открой файл `blog/urls.py` в редакторе кода и добавь строку `path('post/<int:pk>/', views.post_detail, name='post_detail'),` так, что файл должен выглядить следующим образом:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -138,9 +138,9 @@ def post_detail(request, pk):
 
 ## Создадим шаблон для страницы поста
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+Мы создадим файл `post_detail.html` в директории `blog/templates/blog`, и откроем его в редакторе кода.
 
-It will look like this:
+Должно получиться примерно так:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -164,7 +164,7 @@ Once again we are extending `base.html`. In the `content` block we want to displ
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ..` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+Отлично, можешь перезагрузить страницу и проверить пропала ли теперь ошибка `TemplateDoesNotExist`.
 
 ![Post detail page](images/post_detail2.png)
 
