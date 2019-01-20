@@ -733,7 +733,7 @@ Save it and give it another run:
 
 ```python
 $ python3 python_intro.py
-It works!
+Ĝi funkcias!
 ```
 
 Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
@@ -746,9 +746,9 @@ In previous examples, code was executed only when the conditions were True. But 
 
 ```python
 if 5 > 2:
-    print('5 is indeed greater than 2')
+    print('5 ja estas pli granda ol 2')
 else:
-    print('5 is not greater than 2')
+    print('5 ne estas pli granda ol 2')
 ```
 
 When this is run it will print out:
@@ -756,7 +756,7 @@ When this is run it will print out:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    5 is indeed greater than 2
+    5 ja estas pli granda ol 2
     
 
 If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
