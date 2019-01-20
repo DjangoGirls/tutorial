@@ -555,7 +555,7 @@ Incidentally, you just learned about a new type of object in Python. It's called
 There are only two Boolean objects:
 
 - True (vera)
-- False
+- False (malvera)
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
@@ -615,7 +615,7 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 {% filename %}editor{% endfilename %}
 
 ```python
-print('Hello, Django girls!')
+print('Saluton, Djangoaj virinoj!')
 ```
 
 Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
@@ -679,7 +679,7 @@ Now use Python to execute the code in the file like this:
 {% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
-    Hello, Django girls!
+    Saluton, Djangoaj virinoj!
     
 
 Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
@@ -722,7 +722,7 @@ Python expects us to give further instructions to it which are executed if the c
 
 ```python
 if 3 > 2:
-    print('It works!')
+    print('Ĝi funkcias!')
 ```
 
 Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
