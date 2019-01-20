@@ -65,7 +65,7 @@ Django otomatik olarak uygulama klasörlerinizin içindeki "static" adlı klasö
 
 Burada CSS'yi özelleştirme ve öğrenmeyle ilgili çok derinlemesine gidemeyeceğiz. Daha fazla bilgi edinmek isterseniz, bu sayfanın sonunda ücretsiz CSS kursu için bir tavsiye var.
 
-Ama, biraz da yapalım. Maybe we could change the color of our headers? Bilgisayarlar renkleri anlamak için özel kodlar kullanır. Bu kodlar `#` ile başlar ve 6 harf(A-F) ve sayıyla(0-9) devam eder. Örneğin, mavinin renk kodu `#0000FF` dur. Birçok renk için renk kodlarını buradan bulabilirsiniz: http://www.colorpicker.com/. Ayrıca [tanımlı renkler](http://www.w3schools.com/colors/colors_names.asp)i de kullanabilirsiniz, `red` (kırmızı) ve `green` (yeşil) gibi.
+Ama, en azından biraz yapalım. Acaba başlık renklerimizi mi değiştirsek? Bilgisayarlar renkleri anlamak için özel kodlar kullanır. Bu kodlar `#` ile başlar ve 6 harf(A-F) ve sayıyla(0-9) devam eder. Örneğin, mavinin renk kodu `#0000FF` dur. Birçok renk için renk kodlarını buradan bulabilirsiniz: http://www.colorpicker.com/. Ayrıca [tanımlı renkler](http://www.w3schools.com/colors/colors_names.asp)i de kullanabilirsiniz, `red` (kırmızı) ve `green` (yeşil) gibi.
 
 `blog/static/css/blog.css` dosyanıza şu kodu eklemelisiniz:
 
@@ -78,7 +78,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` bir CSS seçicisidir (selector). This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` bir CSS seçicisidir (selector). Bu bizim stillerimizi `h1` öğesi içindeki herhangi bir `a` öğesine uyguladığınız anlamına gelir; `h2 a` seçicisi `h2` öğeleri için aynı şeyi yapar. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiket olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir elemente senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` class'ı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
 
