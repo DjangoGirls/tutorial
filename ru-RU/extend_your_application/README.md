@@ -2,17 +2,17 @@
 
 # Расширяем свое приложение
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+Мы уже выполнили часть необходимых шагов для создания веб-сайта: мы знаем как создать модель, Url, представление и шаблон. Мы также знаем как улучшить визуальный дизайн с помощью Css.
 
 Время практики!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+Первое, что нам потребуется в блоге - страница для отображения конкретной записи, верно?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+У нас уже есть модель `Post`, так что нам не нужно добавлять дополнительный код в файл `models.py`.
 
 ## Создадим в шаблоне ссылку на страницу поста
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Мы начнем с добавления ссылки внутри файла `blog/templates/blog/post_list.html`. Откройте его в редакторе кода, и сейчас он должен выглядеть следующим образом: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -30,7 +30,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
+{% raw %}Нам хотелось бы иметь ссылку с заголовка поста в списке на страницу подробной информации о посте. Давай изменим `<h1><a href="">{{ post.title }}</a></h1>` чтобы получилась ссылка на страницу с полным содержанием поста:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,11 +38,11 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %}Самое время разобраться с загадочным `{% url 'post_detail' pk=post.pk %}`. Как можешь предположить, синтаксис `{% %}` означает использование тегов шаблонов Django. На этот раз мы используем тот, что создаст для нас URL!{% endraw %}
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+Часть `post_detail` означает, что Django будет ожидать URL в `blog/urls.py` с именем =post_detail
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+А что же `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
