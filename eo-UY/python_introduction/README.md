@@ -94,8 +94,8 @@ Using double quotes:
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> "Runnin' down the hill"
-"Runnin' down the hill"
+>>> "Ho, mia kor'."
+"Ho, mia kor'."
 ```
 
 or escaping the apostrophe with a backslash (``):
@@ -103,8 +103,8 @@ or escaping the apostrophe with a backslash (``):
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> 'Runnin\' down the hill'
-"Runnin' down the hill"
+>>> 'Ho, mia kor\'.'
+"Ho, mia kor'."
 ```
 
 Nice, huh? To see your name in uppercase letters, type:
