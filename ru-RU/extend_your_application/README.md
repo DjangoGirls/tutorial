@@ -76,17 +76,17 @@ urlpatterns = [
 
 Это значит, что если ты введешь адрес `http://127.0.0.1:8000/post/5/` в браузер, Django должен понять, что тебе требуется *view* с именем `post_detail`, и передать информацию о переменной `pk` (равной `5`) этому *view*.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+ОК мы добавили новый шаблон URL-адреса для `blog/urls.py`! Давайте обновите страницу: http://127.0.0.1:8000 / Бууум! Сервер снова остановил работу. Посмотрим в консоль – как и ожидалось, теперь еще есть другая ошибка!
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+Помнишь, каким должен быть следующий шаг? Конечно: добавить представление!
 
 ## Добавим представление для страницы поста
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+В этот раз наше *view* получит дополнительный параметр `pk`. Но как дать нашему *view* знать о нем? Для этого мы определим функцию как `def post_detail(request, pk):`. Обрати внимание, что мы должны использовать тоже имя переменной, что мы выбрали для обработки URL (`pk`). Пропуск переменной будет неправилен и приведет к ошибке!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+Теперь мы хотим получить одну конкретную запись из блога. Для этого потребуется использовать QuerySet, примерно такую:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -94,17 +94,17 @@ Now, we want to get one and only one blog post. To do this, we can use querysets
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+Однако в этом коде есть проблема. Если не существует экземпляра объекта `Post` с заданным `primary key` (`pk`) мы получим очень страшную ошибку!
 
 ![DoesNotExist ошибка](images/does_not_exist2.png)
 
-We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+Мы этого не хотим! К счастью, Django, конечно, имеет средство, которое позволит нам её обойти: `get_object_or_404`. В случае, если не существует экземпляра объекта `Post` с заданным `pk`, мы получим намного более приятную страницу (которая называется `Page Not Found 404`.
 
 ![Страница не найдена](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+Хорошая новость в том, что ты можешь сделать свою собственную страницу `Page not found`, и сделать ее достаточно привлекательной на свой вкус. Но для нас сейчас это не самая важная задача, и поэтому мы её пропустим.
 
-OK, time to add a *view* to our `views.py` file!
+Хорошо, пришло время добавить *view* в файл `views.py`!
 
 In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
