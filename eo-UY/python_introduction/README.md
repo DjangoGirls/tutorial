@@ -554,7 +554,7 @@ Incidentally, you just learned about a new type of object in Python. It's called
 
 There are only two Boolean objects:
 
-- True
+- True (vera)
 - False
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
