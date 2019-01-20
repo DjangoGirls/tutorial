@@ -42,9 +42,9 @@
 
 Часть `post_detail` означает, что Django будет ожидать URL в `blog/urls.py` с именем =post_detail
 
-А что же `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+А что же `pk=post.pk`? `pk` это сокращение от primary key ("первичный ключ"), что является уникальным именем для каждой записи в базе данных. Так как мы не определили специальный primary key в нашей модели `Post`, Django создаст один для нас (по умолчанию это будет число, которое увеличивается на единицу для каждой записи, например 1, 2, 3) и добавит его в поле с именем `pk` для каждой из наших записей. Мы получаем доступ к первичному ключу напечатав `post.pk`, таким же образом мы получаем доступ и к другим полям (`title`, `author`, и т.д.) в нашем объекте `Post`!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+Теперь, когда мы перейдем по адресу http://127.0.0.1:8000/ мы получим ошибку (как и ожидается, поскольку у нас нет прописанного URL и *view* для `post_detail`). Она будет выглядеть следующим образом:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
