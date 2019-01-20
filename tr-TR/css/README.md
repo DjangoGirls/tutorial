@@ -80,7 +80,7 @@ h1 a, h2 a {
 
 `h1 a` bir CSS seçicisidir (selector). Bu bizim stillerimizi `h1` öğesi içindeki herhangi bir `a` öğesine uyguladığınız anlamına gelir; `h2 a` seçicisi `h2` öğeleri için aynı şeyi yapar. Yani `<h1><a href="">bağlantı</a></h1>` gibi bir öğemiz olduğunda, ona `h1 a` stilimiz uygulanıyor. Böylelikle, o öğeye rengini`#Fca205` yani koyu turuncu olarak değiştirmesini söylüyoruz. Ya da burada kendi renginizi koyabilirsiniz ama beyaz arka plan ile iyi bir kontrastı olmasına dikkat edin!
 
-Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiketler olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir öğeye senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiket CSS tarafından, `a` etiket adı, `external_link` class'ı ya da `link_to_wiki_page` id'si kullanılarak tanımlanabilir:
+Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeleri tanımlamanın ilk yolu öğe adıdır. Bunları HTML bölümünden etiketler olarak hatırlıyor olabilirsiniz. Bunların hepsi öğe adına örnektir: `a`, `h1` ve `body`. Öğeleri aynı zamanda `class` ve `id` öznitelikleri ile tanımlarız. Sınıf ve id (kimlik), bir öğeye senin tarafından verilen isimlerdir. Sınıflar bir öğe grubunu tanımlar, id'ler ise belirli bir öğeye işaret ederler. Örneğin şu aşağıdaki etiketi `a` etiket adı, `external_link` sınıfı ya da `link_to_wiki_page` id'si kullanarak tanımlayabilirsiniz:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -88,7 +88,7 @@ Bir CSS dosyasında, HTML dosyasındaki öğeler için stil belirleriz. Öğeler
 
 CSS hakkında daha fazla bilgi edinmek için [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp) u okuyabilirsin.
 
-Sonrasında, ayrıca HTML şablonumuza (template) birtakım CSS eklemeleri yaptığımızı bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını açıp en başına şu satırı ekleyelim:
+HTML şablonumuza (template) da birtakım CSS eklemeleri yaptığımızı bildirmemiz gerekiyor. `blog/templates/blog/post_list.html` dosyasını kod editöründe açıp en başına şu satırı ekleyin:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -96,7 +96,7 @@ Sonrasında, ayrıca HTML şablonumuza (template) birtakım CSS eklemeleri yapt�
 {% load static %}
 ```
 
-Burada sadece statik dosya ekliyoruz :) `<head>` ve `</head>` etiketleri arasına, bootstrap linklerinden sonra, şu satırı ekleyelim:
+Burada sadece statik dosyalar ekliyoruz :) `<head>` ve `</head>` etiketleri arasına, bootstrap CSS dosyalarından sonra, şu satırı ekleyin:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,9 +104,9 @@ Burada sadece statik dosya ekliyoruz :) `<head>` ve `</head>` etiketleri arasın
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Tarayıcı, dosyaları verilen sırada okuyor. O yüzden doğru yerde olduğundan emin olmalıyız. Aksi takdirde dosyadaki kod, Bootstrap dosyası tarafından üzerine yazılabilir. Az evvel şablonumuza (template) CSS dosyamızın nerede olduğunu söylemiş olduk.
+Tarayıcı, dosyaları verilen sırada okuyor. O yüzden doğru yerde olduğundan emin olmalıyız. Aksi takdirde Bootstrap dosyalar bizim kodumuzun üzerine yazabilir. Az evvel şablonumuza (template) CSS dosyamızın sadece nerede olduğunu söyledik.
 
-Şimdi dosyanız şöyle olmalı:
+Şimdi dosyanız şöyle görünmeli:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +135,11 @@ Tarayıcı, dosyaları verilen sırada okuyor. O yüzden doğru yerde olduğunda
 </html>
 ```
 
-Tamamdır, dosyayı kaydedip sayfayı yenileyebilirsiniz.
+Tamam, dosyayı kaydedip sayfayı yenileyin!
 
 ![Şekil 14.2](images/color2.png)
 
-Güzel! Şimdi de sitemizi biraz rahatlatıp sol kenar boşluğunu arttırsak mı? Hadi deneyelim!
+Güzel bir iş çıkardınız! Şimdi de sitemizi biraz rahatlatıp sol kenar boşluğunu arttırsak mı? Hadi deneyelim!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -149,7 +149,7 @@ body {
 }
 ```
 
-Bunu CSS dosyana ekleyip kaydet ve bak bakalım! Nasıl da oldu!
+Bunu CSS dosyana ekleyip kaydet ve bak bakalım nasıl çalışıyor!
 
 ![Şekil 14.3](images/margin2.png)
 
