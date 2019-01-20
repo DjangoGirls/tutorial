@@ -163,7 +163,7 @@ Belki de başlığımızın yazı tipini özelleştirebiliriz? Aşağıdaki sat�
 
 Daha önce yaptığımız gibi, sıralamayı ve yerini kontrol edelim `blog/static/css/blog.css` den önce olmalı. Bu satır Google Fonts'tan *Lobster* adlı bir font yükler (https://www.google.com/fonts).
 
-`blog/static/css/blog.css` CSS dosyasında `h1 isimli ` tanımlama bölümünü bulalım ( `{` ve `}` sembolleri arasındaki kod). `font-family: 'Lobster';` satırını parantezler arasına kopyalayıp sayfayı yenileyelim:
+`blog/static/css/blog.css` CSS dosyasında `h1 a` tanımlama bölümünü bulalım ( `{` ve `}` sembolleri arasındaki kod). `font-family: 'Lobster';` satırını parantezler arasına kopyalayıp sayfayı yenileyin:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -178,9 +178,9 @@ h1 a, h2 a {
 
 Harika!
 
-Yukarıda bahsettiğimiz üzere, CSS'te class (sınıf) diye bir kavram var. Class'lar, temel olarak HTML kodunuzun bir kısmına isim vermenize yarar ve diğer kısımların stilini değiştirmeden yalnızca o kısmın stilini değiştirmenizi sağlar. Bu süper yararlı olabilir! Çok farklı şeyler yapan iki div'iniz var diyelim (örneğin biri başlık diğeri gönderinin metni). Class, farklı görünmelerini sağlamana yardımcı olur.
+Yukarıda bahsettiğimiz üzere, CSS'te sınıf (class) diye bir kavram var. Sınıflar, HTML kodunuzun bir kısmına isim vermenize yarar ve diğer kısımların stilini değiştirmeden yalnızca o kısmın stilini değiştirmenizi sağlar. Bu çok yararlı olabilir! Çok farklı şeyler yapan iki div'iniz var diyelim (örneğin biri başlık diğeri gönderinin metni). Sınıf farklı görünmelerini sağlamana yardımcı olur.
 
-Devam edelim ve HTML kodumuzun bir kısmına isim verelim. Başlığı içeren `div`'e `page-header` isimli bir class ekleyelim:
+Hadi HTML kodunun bazı kısımlarına isim verelim. Başlığı içeren `div`'e `page-header` isimli bir sınıf ekleyelim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
