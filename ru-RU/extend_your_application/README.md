@@ -196,9 +196,9 @@ def post_detail(request, pk):
 
 ## Обновление статических файлов на сервере
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Серверы, такие как PythonAnywhere любят обрабатывать "статичные файлы" (такие как CSS-файлы) отдельно от Python-файлов, потому что они могут оптимизировать их загружаться быстрее. В результате всякий раз, когда мы вносим изменения в наши CSS-файлы, нам нужно выполнить дополнительную команду на сервере, чтобы сказать ему обновить их. Команда называется `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Начните с активации вашего virtualenv, если она еще не активна (PythonAnywhere использует для этого команду под названием `workon`, это также как и `source myenv/bin/activate` команда, которую вы используете на вашем собственном компьютере):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -207,8 +207,8 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+Команда `manage.py collectstatic` немного похожа `manage.py migrate`. Мы вносим некоторые изменения в наш код, а затем мы говорим Django чтобы он *применил* эти изменения для коллекции статических файлов на сервере, либо в базе данных.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
+В любом случае, мы теперь готовы перепрыгнуть на ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (из меню кнопки в верхнем правом углу консоли) и кликнуть **Reload**, а затем смотри на страницу https://yourname.pythonanywhere.com чтобы увидеть результат.
 
 Вот и все! Поздравляем :)
