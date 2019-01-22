@@ -640,12 +640,14 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+On Linux, it will be like this:
 
 {% filename %}خط فرمان{% endfilename %}
 
     $ cd ~/Desktop
     
+
+(Remember that the word "Desktop" might be translated to your local language.)
 
 <!--endsec-->
 
@@ -653,7 +655,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 On Windows Command Prompt, it will be like this:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd %HomePath%\Desktop
     
@@ -664,7 +666,7 @@ On Windows Command Prompt, it will be like this:
 
 And on Windows Powershell, it will be like this:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd $Home\Desktop
     
@@ -675,7 +677,7 @@ If you get stuck, ask for help. That's exactly what the coaches are here for!
 
 Now use Python to execute the code in the file like this:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Hello, Django girls!
@@ -683,7 +685,7 @@ Now use Python to execute the code in the file like this:
 
 Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 > python python_intro.py
@@ -728,7 +730,7 @@ Notice how we've indented the next line of code by 4 spaces? We need to do this 
 
 Save it and give it another run:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 $ python3 python_intro.py
@@ -752,7 +754,7 @@ else:
 
 When this is run it will print out:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     5 is indeed greater than 2
@@ -774,7 +776,7 @@ else:
 
 and executed:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Hey Sonja!
@@ -804,7 +806,7 @@ else:
 
 Python runs through each test in sequence and prints:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Perfect, I can hear all the details
@@ -863,7 +865,7 @@ You may wonder why we've written the name of the function at the bottom of the f
 
 Let's run this now and see what happens:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Hi there!
@@ -921,7 +923,7 @@ hi("Ola")
 
 And run it again:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Hi Ola!
@@ -937,7 +939,7 @@ hi("Sonja")
 
 And run it:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Hi Sonja!
@@ -945,7 +947,7 @@ And run it:
 
 Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
@@ -965,7 +967,7 @@ hi("Rachel")
 
 Let's call the code now:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -1015,7 +1017,7 @@ for name in girls:
 
 And when we run it:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -1043,7 +1045,7 @@ for i in range(1, 6):
 
 Which would print:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     1
     2
