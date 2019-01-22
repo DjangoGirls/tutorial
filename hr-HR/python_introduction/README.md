@@ -641,18 +641,20 @@ Na Macu, naredba će izgledati ovako nekako:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Na Linuxu, bit će ovako (riječ "Desktop" može biti prevedena na tvoj lokalni jezik):
+On Linux, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
 
+(Remember that the word "Desktop" might be translated to your local language.)
+
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-U Windowsovoj konzoli (Command Prompt, cmd), bit će ovako:
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -663,7 +665,7 @@ U Windowsovoj konzoli (Command Prompt, cmd), bit će ovako:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-A u Windowsovom Powershellu izgledat će ovako:
+And on Windows Powershell, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -674,7 +676,7 @@ A u Windowsovom Powershellu izgledat će ovako:
 
 If you get stuck, ask for help. That's exactly what the coaches are here for!
 
-Sada iskoristi Python za pokretanje koda u datoteci:
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -682,7 +684,7 @@ Sada iskoristi Python za pokretanje koda u datoteci:
     Hello, Django girls!
     
 
-Napomena: na Windowsima 'python3' nije prepoznato kao naredba. Umjesto toga, iskoristi 'python' za pokretanje datoteke:
+Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
 {% filename %}command-line{% endfilename %}
 
@@ -690,15 +692,15 @@ Napomena: na Windowsima 'python3' nije prepoznato kao naredba. Umjesto toga, isk
 > python python_intro.py
 ```
 
-Uredu! Upravo si pokrenula svoj prvi Python program koji je spremljen u datoteku. Osjećaš li se super?
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-Sada možeš krenuti dalje na osnovni alat u programiranju:
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Zamijeni kod u svojoj **python_intro.py** datoteci ovime:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,7 +708,7 @@ Zamijeni kod u svojoj **python_intro.py** datoteci ovime:
 if 3 > 2:
 ```
 
-Da ovo spremimo i pokrenemo, vidjeli bismo ovakvu grešku:
+If we were to save and run this, we'd see an error like this:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -751,7 +753,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-Kada se to pokrene, ispisat će:
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
@@ -759,7 +761,7 @@ Kada se to pokrene, ispisat će:
     5 is indeed greater than 2
     
 
-Da je 2 broj veći od 5, onda bi se izvela druga naredba. Idemo vidjeti kako `elif` radi:
+If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -773,7 +775,7 @@ else:
     print('Hey anonymous!')
 ```
 
-i pokrenut:
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
@@ -781,9 +783,9 @@ i pokrenut:
     Hey Sonja!
     
 
-Vidiš što se dogodilo? `elif` ti dopušta dodavanje dodatnih uvjeta koji se izvedu ako prethodni ne prođu.
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-Možeš dodati koliko god `elif` izraza želiš poslije početnog `if` izraza. Na primjer:
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
