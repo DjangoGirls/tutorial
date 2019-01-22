@@ -641,20 +641,22 @@ Mac'de bu komut şunun gibi görünecektir:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Linux'ta ise bu şekilde ("Desktop" kelimesi "Masaüstü" olarak da görünebilir):
+On Linux, it will be like this:
 
 {% filename %}komut-satırı{% endfilename %}
 
     $ cd ~/Desktop
     
 
+(Remember that the word "Desktop" might be translated to your local language.)
+
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-Windows Komut İstemi’nde, bunun gibi olacak:
+On Windows Command Prompt, it will be like this:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd %HomePath%\Desktop
     
@@ -663,42 +665,42 @@ Windows Komut İstemi’nde, bunun gibi olacak:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-Ve Windows Powershell’de, bunun gibi olacak:
+And on Windows Powershell, it will be like this:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd $Home\Desktop
     
 
 <!--endsec-->
 
-Takılırsanız, yardım isteyin. Eğitmenler bunun için var!
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
-Şimdi dosyadaki komutları çalıştırmak için Python'u kulllanın:
+Now use Python to execute the code in the file like this:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Merhaba, Django girls!
     
 
-Not: Windows'ta 'python3' bir komut olarak geçmez. Onun yerine, dosyayı çalıştırmak için 'python'ı kullanın:
+Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 > python python_intro.py
 ```
 
-Tamam! Bir dosyaya kaydedilen ilk Python programınızı çalıştırdınız. Harika hissediyor musunuz?
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-Şimdi programlamanın olmazsa olmaz bir aracını öğrenme zamanı:
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
-Kodunuzdaki bir çok şeyi sadece belirli bir durum sağlanıyorsa çalıştırmayı isteyeceksiniz. İşte tam da bu yüzden Python'da **if deyimi** isminde bir yapı bulunuyor.
+Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-**python_intro.py** dosyasındaki kodunuzu şununla değiştirin:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,9 +708,9 @@ Kodunuzdaki bir çok şeyi sadece belirli bir durum sağlanıyorsa çalıştırm
 if 3 > 2:
 ```
 
-Eğer bunu kaydetmiş ve çalıştırmış olsaydık, bunun gibi bir hata görecektik:
+If we were to save and run this, we'd see an error like this:
 
-{% filename %}{{ warning_icon }} komut satırı{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
@@ -716,7 +718,7 @@ Eğer bunu kaydetmiş ve çalıştırmış olsaydık, bunun gibi bir hata görec
     SyntaxError: unexpected EOF while parsing
     
 
-Python bizden kendisine `3 > 2` durumu (veya `True`) sağlandığında neyi çalıştıracağını söylememizi bekliyor. Python'a "Çalışıyor!" yazmasını söyleyelim. **python_intro.py** dosyanızdaki kodu şununla değiştirin:
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -725,22 +727,22 @@ if 3 > 2:
     print('Çalışıyor!')
 ```
 
-4 tane boşluk karakteri bıraktığımıza dikkat ettiniz mi? Bunu yaparak if ifadesine yazılan durum doğru olduğunda neyi çalıştırması gerektiğini Python'a söylemiş oluyoruz. Aslında tek bir boşlukla da yapabilirsiniz, ama hemen hemen bütün Python programcıları kodlarının temiz görünmesi için 4 boşluk bırakıyor. Metin düzenleyiciniz ayarlıysa bir tab karakteri de 4 boşluk karakteri olarak sayılacaktır. Seçiminizi yaptıktan sonra değiştirmeyin! Eğer girintilerde 4 boşluk kullandıysanız, gelecek girintilerde de 4 boşluk kullanmaya devam edin - aksi halde sorunlarla karşılaşabilirsiniz.
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
-Kaydedip çalıştırmayı deneyelim:
+Save it and give it another run:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
 ```python
 $ python3 python_intro.py
 Çalışıyor!
 ```
 
-Not: Windows'ta 'python3'ün komut olarak geçerli olmadığını unutmayın. Bundan böyle dosyayı çalıştırmak için 'python3'ü 'python'la değiştirin.
+Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
 ### Ya bir koşul True (Doğru) değilse?
 
-Önceki örneklerde kod sadece koşullar sadece True (doğru) olduğunda çalışıyordu. Ama Python ayrıca `elif` ve `else` ifadelerine de sahip:
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -751,15 +753,15 @@ else:
     print("5  2'den büyük değildir")
 ```
 
-Bu kod çalıştığında aşağıdaki çıktıyı verecektir:
+When this is run it will print out:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     5 gerçekten de 2'den büyüktür
     
 
-Eğer 2 5'ten büyük bir sayı olsaydı, ikinci komut çalıştırılmış olacaktı. Bakalım `elif` nasıl çalışıyor:
+If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -773,17 +775,17 @@ else:
     print('Selam yabancı!')
 ```
 
-ve çalıştırılınca:
+and executed:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Selam Zeynep!
     
 
-Gördünüz mü? Eğer önceki if ifadeleriniz doğru olmazsa kontrol edilmek üzere `elif` ifadeleri ekleyebilirsiniz.
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-`if` ifadesinden sonra istediğiniz kadar `elif` ifadesi ekleyebilirsiniz. Mesela:
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -803,9 +805,9 @@ else:
     print("Kulaklarım ağrıyor! :(")
 ```
 
-Python sırayla her sorguyu çalıştırır ve sonucu ona göre yazar:
+Python runs through each test in sequence and prints:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Harika, her notayı duyabiliyorum
@@ -813,9 +815,9 @@ Python sırayla her sorguyu çalıştırır ve sonucu ona göre yazar:
 
 ## Yorumlar
 
-Yorumlar `#` ile başlayan satırlardır. İstediğiniz her neyse `#` den sonra yazabilirsiniz ve Python onu gözardı eder. Yorumlar kodunuzu diğer insanların anlamasını daha kolaylaştırabilir.
+Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
-Bakalım nasıl gözüküyor:
+Let's see how that looks:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -826,11 +828,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-Kodun her satırı için bir açıklama yazmaya ihtiyacınız yoktur, ama kodunuzun niçin birşey yaptığını açıklamak ya da kompleks bir şey yaptığında bir özet sunmak için faydalıdırlar.
+You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
 ### Özet
 
-En son yaptığınız alıştırmalarda öğrendikleriniz:
+In the last few exercises you learned about:
 
 - **kıyaslama yapmak** - Python'da `>`, `>=`, `==`, `<=`, `<` ve `ve`, `veya` operatörlerini kullanarak kıyaslama yapabilirsiniz
 - **Boolean** - İki farklı değer alabilen bir nesne tipidir: Ya `True` (doğru) olur ya da `False` (yanlış)
@@ -838,15 +840,15 @@ En son yaptığınız alıştırmalarda öğrendikleriniz:
 - **if ... elif ... else** - ifadelerini sadece belirli durumlar sağlandığında çalıştırmak istediğimiz komutlar için kullanabiliriz.
 - **yorumlar** - kodunuzu belgelemenize izin verecek şekilde Python’un çalışmayacağı satırlar
 
-Bu bölümün son kısmının zamanı geldi!
+Time for the last part of this chapter!
 
 ## Kendi fonksiyonlarınız!
 
 > Evdeki okuyucular için: Bu kısım [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) videosunda işlenmiştir.
 
-Python'da çalıştırabileceğin `len()` gibi fonksiyonları hatırlıyor musun? Güzel, iyi haber - Şimdi kendi fonksiyonlarını nasıl yazacağını öğreneceksin!
+Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-Fonksiyon Python tarafından işlenmesi gereken yönergeler dizisidir. Python'da her fonksiyon `def` anahtar kelimesi ile başlar, bir isim verilir ve bazı parameterleri olabilir. Hadi başlayalım. **python_intro.py** içindeki kodu aşağıdaki ile değiştirelim:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -859,20 +861,20 @@ def hi():
 hi()
 ```
 
-Tamam, ilk fonksiyonumuz hazır!
+Okay, our first function is ready!
 
-Fonksiyon adını neden dosyanın en altına yazdığımızı merak edebilirsiniz. Bunun nedeni, Python'ın dosyayı okuyup, onu yukarıdan aşağı doğru işlemesi. Yani fonksiyonumuzu kullanabilmek için, onu en alt kısımda yeniden yazmalıyız.
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-Haydi şimdi bunu çalıştıralım ve neler olacağını görelim:
+Let's run this now and see what happens:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Merhaba!
     Nasılsın?
     
 
-Not: Eğer çalışmadıysa panik yapmayın! Çıktı neden olduğu hakkında bir fikir verir:
+Note: if it didn't work, don't panic! The output will help you to figure why:
 
 - Eğer bir `NameError` alırsanız, muhtemelen yanlış bir şey yazdığınız anlamına gelir, bu nedenle `def hi():` lı fonksiyonu oluştururken ve `hi()` lıyı çağırırken aynı adı kullanıp kullanmadığınızı kontrol etmelisiniz.
 - Eğer bir `IndentationError` alırsanız,`print` dizelerinin her ikisinin de satır başında aynı boşluğa sahip olduğunu kontrol et: python fonksiyonun içindeki tüm kodların düzenli bir şekilde hizalanmasını ister.
@@ -886,7 +888,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-Gördüğünüz gibi, fonksiyonumuza `name` (isim) adında bir parametre ekledik:
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -902,9 +904,9 @@ def hi(name):
 hi()
 ```
 
-Unutmayın: `if` içerisindeki `print` fonksiyonundan önce dört tane boşluk var. Bunun sebebi sadece durum sağlandığında çalışmasını istememiz. Bakalım nasıl çalışıyor:
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
-{% filename %}{{ warning_icon }} komut satırı{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -913,7 +915,7 @@ Unutmayın: `if` içerisindeki `print` fonksiyonundan önce dört tane boşluk v
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Üzgünüz, bir hata. Neyse ki, Python bize oldukça yararlı bir hata mesajı veriyor. `hi()` fonksiyonun (yukarıda tanımladığımız) bir değişken kullanımını gerektirdiğini (`name` isimli) ve bizim o değişkeni fonksiyonu çağırırken iletmeyi unuttuğumuzu söylüyor. Dosyanın alt kısmında hatayı düzeltelim:
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -921,15 +923,15 @@ Unutmayın: `if` içerisindeki `print` fonksiyonundan önce dört tane boşluk v
 hi("Ayşe")
 ```
 
-Ve tekrar çalıştıralım:
+And run it again:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Selam Ayşe!
     
 
-Eğer ismi değiştirirsek ne olur?
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -937,22 +939,22 @@ Eğer ismi değiştirirsek ne olur?
 hi("Zeynep")
 ```
 
-Ve çalıştırın:
+And run it:
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Selam Zeynep!
     
 
-Peki Ayşe veya Zeynep dışında başka bir isim yazdığımızda ne olacağını tahmin edebiliyor musunuz? Deneyin ve tahmininizin doğru olup olmadığını görün. Şunun gibi bir şey yazmalı:
+Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     Selam yabancı!
     
 
-Süper değil mi? Böylece fonksiyona göndereceğiniz isim değiştiğinde aynı kodu tekrar tekrar yazmanıza gerek kalmayacak. İşte fonksiyonlara tam da bu yüzden ihtiyacımız var - aynı kodu tekrar yazmaya gerek yok!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
@@ -965,25 +967,25 @@ def hi(name):
 hi("Seda")
 ```
 
-Şimdi kodu çağıralım:
+Let's call the code now:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Merhaba Seda!
     
 
-Tebrikler! Az önce fonksiyonları nasıl yazacağınızı öğrendiniz! :)
+Congratulations! You just learned how to write functions! :)
 
 ## Döngüler
 
 > Evdeki okuyucular için: Bu kısım [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) videosunda işlenmiştir.
 
-Bu da zaten son parça. Hızlı oldu, değil mi? :)
+This is the last part already. That was quick, right? :)
 
-Programcılar kendilerini tekrar etmeyi sevmezler. Programlama tamamen işleri otomatize etmedir, bu yüzden her insanı ismiyle selamlamak istemeyiz, değil mi? İşte burası döngülerin devreye girdiği yerdir.
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -991,7 +993,7 @@ Hala listeleri hatırlıyoruz değil mi? Haydi bir kızlar listesi yapalım:
 kızlar = ['Seda', 'Gül', 'Pınar', 'Ayşe', 'Sen']
 ```
 
-Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiyonunu döngü içinde kullanabiliriz:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -999,9 +1001,9 @@ Diyelim ki hepsine merhaba demek istiyoruz. Az önce yazdığımız `hi` fonksiy
 for name in girls:
 ```
 
-`for` un davranışı `if` e benziyor; aşağıdaki kodda her iki satır girintili olmalı (dört boşluk ile).
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-Dosyada yer alacak tam kod aşağıdadır:
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1015,9 +1017,9 @@ for name in girls:
     print('Sıradaki kız')
 ```
 
-Ve onu çalıştırdığımız zaman:
+And when we run it:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Selam Seda!
@@ -1032,9 +1034,9 @@ Ve onu çalıştırdığımız zaman:
     Sıradaki kız
     
 
-Gördüğünüz gibi, `for` cümlesinin içine boşluk karakteri ile koyduğunuz her şey `girls` listesi için tekrarlanıyor.
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-Ayrıca `for`'u `range` fonksiyonuyla beraber sayılar üzerinde de kullanabilirsiniz:
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1043,9 +1045,9 @@ for i in range(1, 6):
     print(i)
 ```
 
-Çalıştırırsak:
+Which would print:
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     1
     2
@@ -1054,16 +1056,16 @@ for i in range(1, 6):
     5
     
 
-`range` fonksiyonu birbirini takip eden sayılardan bir liste oluşturur (bu sayıları da siz parametre olarak yazarsınız).
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Sizin verdiğiniz ikinci parametrenin listede olmadığına dikkat edin. Yani `range(1, 6)` 1'den 5'e kadar sayıyor, 6 dahil edilmiyor. Çünkü “aralık” yarı açıktır, ve yani ilk değeri içerir, ama son değeri içermez.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## Özet
 
-İşte bu. **Harikasın, süpersin!** Bu bölüm biraz zordu, kendinle gurur duymalısın. Biz buraya kadar geldiğin için seninle gurur duyuyoruz!
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
-Resmi ve tam python tutorialı için https://docs.python.org/3/tutorial/ adresini ziyaret edin. Bu size dil hakkında daha kapsamlı ve eksiksiz bir çalışma sunacaktır. Teşekkürler :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
-Sonraki bölüme geçmeden başka bir şey yapmak isteyebilirsin. -gerin, biraz etrafta gezin, gözlerini dinlendir- :)
+You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)
