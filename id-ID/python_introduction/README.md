@@ -637,12 +637,14 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+On Linux, it will be like this:
 
 {% filename %}garis komando{% endfilename %}
 
     $ cd ~/Desktop
     
+
+(Remember that the word "Desktop" might be translated to your local language.)
 
 <!--endsec-->
 
@@ -650,7 +652,7 @@ On Linux, it will be like this (the word "Desktop" might be translated to your l
 
 On Windows Command Prompt, it will be like this:
 
-{% filename %}baris perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     > cd %HomePath%\Deskop
     
@@ -672,7 +674,7 @@ If you get stuck, ask for help. That's exactly what the coaches are here for!
 
 Now use Python to execute the code in the file like this:
 
-{% filename %}baris-perintah{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py Halo, Django girls!
     
@@ -932,7 +934,7 @@ hi("Sonja")
 
 And run it:
 
-{% filename %} baris perintah {% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ python3 python_intro.py
     Hi Sonja!
