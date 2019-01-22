@@ -782,9 +782,9 @@ und ausgeführt erhalten wir:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Hast du bemerkt, was passiert ist? `elif` lässt dich zusätzliche Bedingungen hinzufügen, die geprüft werden, falls die vorherige fehlschlägt.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Du kannst so viele `elif` Bedingungen nach der anfänglichen `if` Anweisung hinzufügen, wie du magst. Zum Beispiel:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -804,7 +804,7 @@ else:
     print("Mir tun die Ohren weh! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python läuft durch jeden Test der Reihe nach und gibt dann aus:
 
 {% filename %}command-line{% endfilename %}
 
@@ -814,9 +814,9 @@ Python runs through each test in sequence and prints:
 
 ## Kommentare
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Kommentare sind Zeilen, die mit `#` beginnen. Du kannst nach dem `#` schreiben, was auch immer du willst, und Python wird es ignorieren. Kommentare können deinen Code für andere Leute einfacher zu verstehen machen.
 
-Let's see how that looks:
+Schauen wir, wie das aussieht:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -827,11 +827,11 @@ if volume < 20 or volume > 80:
     print("So ist's besser!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Du musst nicht für jede Codezeile einen Kommentar schreiben, aber Kommentare sind nützlich um zu erklären, wieso dein Code etwas macht, oder um zusammenzufassen, wenn er etwas Komplexes tut.
 
 ### Zusammenfassung
 
-In the last few exercises you learned about:
+In den letzten paar Übungen hast du gelernt:
 
 - **Vergleiche vorzunehmen** – in Python kannst du Vergleiche mit den folgenden Operatoren `>`, `>=`, `==`, `<=`, `<` sowie `and` und `or` vornehmen
 - **Boolsche Datentypen** zu verwenden – dies sind Objekte, die nur zwei Werte annehmen können: `True` bzw. `False`
@@ -839,15 +839,15 @@ In the last few exercises you learned about:
 - **if … elif … else** – Anweisungen, die dir erlauben, bestimmte Programmteile nur auszuführen, wenn bestimmte Bedingungen erfüllt sind.
 - **Kommentare** – Zeilen, die Python nicht ausführt und die dir ermöglichen deinen Code zu dokumentieren
 
-Time for the last part of this chapter!
+Zeit für den letzten Teil dieses Kapitels!
 
 ## Deine eigenen Funktionen!
 
 > Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) behandelt.
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Erinnerst du dich an Funktionen wie `len()`, die du in Python aufrufen kannst? Prima! Du wirst nun lernen, eigene Funktionen zu schreiben!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Eine Funktion ist eine Folge von Anweisungen, die Python ausführen soll. Jede Funktions-Definition beginnt mit dem Schlüsselwort (engl. "Keyword") `def`, bekommt einen Namen und kann Argumente (manchmal auch "Parameter" genannt) haben. Probieren wir's aus! Ersetze den Code in der Datei **python_intro.py** mit dem folgenden:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -859,11 +859,11 @@ def hallo():
 hallo()
 ```
 
-Okay, our first function is ready!
+Und schon hast du deine erste Funktion erstellt!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Nun fragst du dich vielleicht, warum wir am Ende der Datei den Namen der Funktion nochmal hingeschrieben haben. Python liest die Datei und führt sie von oben nach unten aus. Um die Funktion also auch zu benutzen, müssen wir sie noch einmal unten hinschreiben.
 
-Let's run this now and see what happens:
+Schauen wir, was passiert, wenn wir die Datei ausführen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -872,13 +872,13 @@ Let's run this now and see what happens:
     Wie geht's?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Falls das nicht funktionert hat, keine Panik! Die Ausgabe wird dir dabei helfen, herauszufinden wieso:
 
 - Wenn du einen `NameError` erhältst, hast du dich vermutlich irgendwo im Code vertippt. Prüfe also, ob du bei der Funktionsdefinition `def hallo():` und beim Funktionsaufruf `hallo()` den Funktionsnamen gleich geschrieben hast.
 - Wenn du einen `IndentationError` bekommst, prüfe, ob beide `print`-Zeilen die gleichen Whitespaces am Zeilenanfang haben: Python will den ganzen Code in einer Funktion hübsch ausgerichtet haben.
 - Wenn du gar keine Ausgabe erhältst, stelle sicher, dass `hallo()` am Datei-Ende *nicht* eingerückt ist. Wenn es eingerückt ist, ist dieser Aufruf selbst Teil der Funktion und sie wird gar nicht ausgeführt.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Als Nächstes bauen wir Funktionen mit sogenannten Argumenten. Wir werden das gerade gebaute Beispiel benutzen – eine Funktion, die die ausführende Person begrüßt – aber diesmal mit Namen:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -886,7 +886,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hallo(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Wie du siehst geben wir der Funktion jetzt einen Parameter, den wir `name` nennen:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -902,7 +902,7 @@ def hallo(name):
 hallo()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Denk daran: Die `print` Funktion ist 4 Leerzeichen innerhalb der `if`-Anweisung eingerückt. Das ist sinnvoll, da die Funktion ausgeführt wird, wenn die Bedingung eintritt. Mal sehen, wie das jetzt funktioniert:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -913,7 +913,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hallo() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Hoppla, ein Fehler. Zum Glück gibt uns Python eine recht nützliche Fehlermeldung. Diese besagt, dass die Funktion `hallo()` (welche wir definiert haben) ein erforderliches Argument (namens `name`) hat und dass wir vergessen haben, dieses beim Funktionsaufruf mitzugeben. Lass uns das am unteren Ende der Datei schnell beheben:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -921,7 +921,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hallo("Ola")
 ```
 
-And run it again:
+Und wir führen sie erneut aus:
 
 {% filename %}command-line{% endfilename %}
 
@@ -929,7 +929,7 @@ And run it again:
     Hallo Ola!
     
 
-And if we change the name?
+Und wenn wir den Namen ändern?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -937,7 +937,7 @@ And if we change the name?
 hallo("Sonja")
 ```
 
-And run it:
+Und ausgeführt:
 
 {% filename %}command-line{% endfilename %}
 
@@ -945,7 +945,7 @@ And run it:
     Hallo Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Nun, was denkst du, wird passieren, wenn du einen anderen Namen dort hinein schreibst? (Weder Ola noch Sonja.) Probier es aus und schau, ob du richtig liegst. Es sollte das Folgende herauskommen:
 
 {% filename %}command-line{% endfilename %}
 
