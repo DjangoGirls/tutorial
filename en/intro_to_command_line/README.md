@@ -202,11 +202,12 @@ data-collapse=true ces-->
 $ cd Desktop
 ```
 
-(The directory name "Desktop" might be translated
+Note that
+the directory name "Desktop" might be translated
 to the language of your Linux account.
 If that's the case, you'll need to replace `Desktop`
 with the translated name,
-for example `Schreibtisch` for German.)
+for example `Schreibtisch` for German.
 
 <!--endsec-->
 
