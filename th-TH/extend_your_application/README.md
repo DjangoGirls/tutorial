@@ -162,7 +162,7 @@ We will create a file in `blog/templates/blog` called `post_detail.html`, and op
 
 เป็นอีกครั้งที่เรา extend ไฟล์ `base.html` ใน block `content` เราต้องการแสดง published_date ของโพสต์ (ถ้ามี), หัวข้อ และ เนื้อหา แต่เราควรจะมาปรึกษากันถึงเรื่องสำคัญอีกอย่างก่อน ดีมั้ย?
 
-{% raw %}`{% if ... %} ... {% endif %}` คือ template tag ที่เราสามารถใช้ เมื่อเราต้องการตรวจสอบบางอย่าง (จำ `if ... else ..` จากบท **ความรู้เบื้องต้นเกี่ยวกับ Python** ได้มั้ย) ในสถานการณ์นี้เราต้องการตรวจสอบว่าโพสต์ `published_date` นั้นไม่ว่างเปล่า {% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` คือ template tag ที่เราสามารถใช้ เมื่อเราต้องการตรวจสอบบางอย่าง (จำ `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
 เอาล่ะ เรามาลองโหลดหน้าเว็บของเราอีกครั้ง ตอนนี้หน้า `Page not found` ควรจะหายไปแล้ว
 
