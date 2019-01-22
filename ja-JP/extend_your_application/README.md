@@ -162,7 +162,7 @@ def post_detail(request, pk):
 
 もう一度`base.html`を拡張します。 `content`ブロックでは、投稿の公開日（存在する場合）、タイトル、およびテキストを表示します。 ここで重要なポイントについて見てみます。
 
-{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else...` を**Python入門**のチャプターでやったのを覚えていますか？) この場合、私たちは投稿の`公開日（published_date）`が空でないかを確認したいです。{% endraw %}
+{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
 これで、ページを更新して`TemplateDoesNotExist`がもうなくなったかどうか確認できます。
 
