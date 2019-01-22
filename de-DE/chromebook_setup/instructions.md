@@ -59,7 +59,7 @@ Führe dann die folgenden Befehle aus:
     pip install django~={{ book.django_version }}
     
 
-(Beachte, dass wir im letzten Befehl eine Tilde gefolgt von einem Gleichheitssymbol benutzen: ~=).
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
