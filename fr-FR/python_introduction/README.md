@@ -641,12 +641,14 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+On Linux, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
+
+(Remember that the word "Desktop" might be translated to your local language.)
 
 <!--endsec-->
 
@@ -1031,9 +1033,9 @@ And when we run it:
     Next girl
     
 
-Comme vous pouvez le constater, tout ce que vous mettez dans la déclaration `for` avec une indentation sera répétée pour chaque élément de la liste `filles`.
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-Vous pouvez toujours utiliser une déclaration `for` pour des chiffres, en utilisant la fonction `range` :
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,7 +1044,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Ce qui imprimerait :
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,15 +1055,15 @@ Ce qui imprimerait :
     5
     
 
-`range` est une fonction créant une liste de nombres consécutifs (ces nombres sont paramétrés par vous-même).
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Veuillez noter que le second de ces deux nombres n'est pas inclus dans la liste produite par Python (ce qui signifie que `range(1, 6)` compte de 1 à 5, en omettant le nombre 6). Cela est du au fait que "range" est semi-ouvert, c'est-à-dire qu'il prend en compte la première valeur mais pas la dernière.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## Résumé
 
-Et voilà ! **Vos assurez un max !** C'était un chapitre difficile, donc vous pouvez être fier de vous. De notre côté, nous sommes fiers de vous, pour être parvenu-e si loin dans le cours. Bravo !
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
-Pour accéder au tutoriel officiel et complet de Python, visitez https://docs.python.org/3/tutorial/. Cela vous donnera un accès plus exhaustif à l'étude du langage. A bientôt :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
