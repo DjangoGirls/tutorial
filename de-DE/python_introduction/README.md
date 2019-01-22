@@ -952,9 +952,9 @@ Nun, was denkst du, wird passieren, wenn du einen anderen Namen dort hinein schr
     Hallo Unbekannte(r)!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Das ist genial, oder? Auf diese Weise musst du dich nicht jedesmal wiederholen, wenn du den Namen der Person änderst, die die Funktion grüßen soll. Und das ist genau der Grund, warum wir Funktionen brauchen – du willst auf keinem Fall deinen Code wiederholen!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Lass uns noch etwas Schlaueres probieren – es gibt schließlich mehr als zwei Namen und für jeden eine eigene Bedingung aufzuschreiben, wäre ziemlich aufwendig, oder? Ersetze also deinen Code in der Datei durch den folgenden:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -965,7 +965,7 @@ def hallo(name):
 hallo("Rachel")
 ```
 
-Let's call the code now:
+Lass uns den Code aufrufen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -973,17 +973,17 @@ Let's call the code now:
     Hallo Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Herzlichen Glückwunsch! Du hast gerade gelernt, wie du Funktionen schreibst! :)
 
 ## Schleifen
 
 > Für die Leser zu Hause: Dieses Kapitel wird im Video [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) behandelt.
 
-This is the last part already. That was quick, right? :)
+Dies ist bereits der letzte Teil. Das ging doch schnell, oder? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Programmierer wiederholen sich nicht gerne. Beim Programmieren geht es darum, Dinge zu automatisieren. Wir wollen also nicht jede Person mit ihrem Namen manuell grüßen müssen, oder? Für so etwas kommen Schleifen gelegen.
 
-Still remember lists? Let's do a list of girls:
+Erinnerst du dich noch an Listen? Lass uns eine Liste mit Mädchennamen erstellen:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -991,7 +991,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Wir wollen alle mit ihrem Namen grüßen. Wir besitzen bereits die `hallo`-Funktion, um dies zu tun, also lass sie uns in einer Schleife verwenden:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -999,9 +999,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+Die `for`-Anweisung verhält sich ähnlich wie die `if`-Anweisung; Code unter beiden muss 4 Leerzeichen eingerückt werden.
 
-Here is the full code that will be in the file:
+Hier ist der vollständige Code für die Datei:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1015,7 +1015,7 @@ for name in girls:
     print('Nächstes Mädchen')
 ```
 
-And when we run it:
+Und wenn wir es ausführen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1032,9 +1032,9 @@ And when we run it:
     Nächstes Mädchen
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Wie du sehen kannst, wird alles, was du innerhalb einer `for`-Anweisung eingerückt hast, für jedes Element der Liste `girls` wiederholt.
 
-You can also use `for` on numbers using the `range` function:
+Du kannst auch `for` auf Ganzzahlen beziehen, wenn du die `range`-Funktion benutzt:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1043,7 +1043,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Das würde ausgeben:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1054,16 +1054,16 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` ist eine Funktion, die eine Liste von aufeinander folgenden Zahlen erschafft (die Randwerte werden von dir als Argumente bereitgestellt).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Beachte, dass der zweite der Werte, die du als Argumente übergibst, nicht in der Liste enthalten ist, die von Python ausgegeben wird. (Das bedeutet, dass `range(1, 6)` von 1 bis 5 zählt, aber nicht die Zahl 6 enthält). Die liegt daran, dass "range" halboffen ist, was wiederum bedeutet, dass es den ersten Wert enthält, aber nicht den letzten.
 
 ## Zusammenfassung
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Das ist alles. **Du rockst total!** Das war ein kniffliges Kapitel, du darfst also ruhig stolz auf dich sein. Wir sind definitiv stolz auf dich und darauf, dass du es so weit geschafft hast!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Besuche https://docs.python.org/3/tutorial/ , wenn du zum offiziellen und vollständigen Python-Tutorial willst. Dort gibt's (bislang jedoch noch nicht auf Deutsch) eine gründlichere und umfassendere Einführung in diese Programmiersprache. :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Bevor du zum nächsten Kapitel übergehst, mach kurz 'was anderes – streck dich, lauf etwas 'rum, ruh' deine Augen aus. :)
 
 ![Cupcake](images/cupcake.png)
