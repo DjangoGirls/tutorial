@@ -77,7 +77,7 @@ source myvenv/bin/activate
 pip install django~={{ book.django_version }}
 ```
 
-(note that on the last line we use a tilde followed by an equal sign: ~=).
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
