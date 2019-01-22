@@ -205,7 +205,7 @@ $ cd Desktop
 (The directory name "Desktop" might be translated
 to the language of your Linux account.
 If that's the case, you'll need to replace `Desktop`
-with the translated name, e.g. `Schreibtisch` for German.)
+with the translated name, for example `Schreibtisch` for German.)
 
 <!--endsec-->
 
