@@ -162,7 +162,7 @@ Of hayır! Başka bir hata! Ama onu nasıl halledeceğimizi biliyoruz, di mi? Bi
 
 Bir kere daha `base.html` dosyasıa ekleme yapacağız. `content` blogunda bir gönderinin varsa published_date, title ve text'ini göstermek istiyoruz. Ama daha önemli şeyleri konuşmalıyız, değil mi?
 
-{% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir şablon etiketidir. ( `if ... else ..` ifadelerini **Python'a Giriş** bölümünden hatırladın mı?) Bu durumda eğer gönderinin `published_date` kısmı boş değilse kontrol etmek isteriz.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` bir şeyi kontrol etmek istediğimizde kullanabileceğimiz bir şablon etiketidir. ( `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
 Tamam, şimdi sayfamızı yenileyerek `TemplateDoesNotExist` hatası kaybolmuş mu görebiliriz.
 
