@@ -647,13 +647,13 @@ Unter Linux ist es ähnlich:
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(Denk daran, dass das "Desktop"-Verzeichnis bei dir "Schreibtisch" heißen kann.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+In der Eingabeaufforderung von Windows wird's so sein:
 
 {% filename %}command-line{% endfilename %}
 
@@ -664,7 +664,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Und in der Powershell von Windows so:
 
 {% filename %}command-line{% endfilename %}
 
@@ -673,9 +673,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Wenn du nicht weiterkommst, frag' um Hilfe. Denn genau dafür sind die Coaches da!
 
-Now use Python to execute the code in the file like this:
+Benutze jetzt Python, um den Code in der Datei auszuführen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -683,7 +683,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Hinweis: Unter Windows gibt es den 'python3'-Befehl nicht. Verwende stattdessen 'python', um die Datei auszuführen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -691,15 +691,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Prima! Du hast soeben dein erstes Python-Programm aus einer Datei heraus ausgeführt. Großartig, oder?
 
-You can now move on to an essential tool in programming:
+Nun wollen wir uns einem wichtigen Teil der Programmierung zuwenden:
 
 ## Wenn ... sonst-wenn ... sonst (If … elif … else)
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Oft sollen manche Programmteile nur ausgeführt werden, wenn bestimmte Vorbedingungen erfüllt sind. Dafür gibt es in Python sogenannte **if-Anweisungen**.
 
-Replace the code in your **python_intro.py** file with this:
+Nun ändere den Code in deiner **python_intro.py** Datei:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -707,17 +707,17 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Würden wir das nun speichern und anschließend ausführen, würden wir einen Fehler erhalten:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
-    $ python3 python_intro.py 
-    File "python_intro.py", line 2   
-             ^ 
+    $ python3 python_intro.py
+    File "python_intro.py", line 2
+             ^
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python erwartet hier noch weiteren Programmcode, der ausgeführt werden soll, wenn die Bedingung `3 > 2` wahr ist (also `True` ergibt). Versuchen wir, Python “It works!” ausgeben zu lassen. Ändere den Code in **python_intro.py** zu:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -726,9 +726,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Du fragst dich nun, warum wir die angefügte Zeile mit 4 Leerzeichen eingerückt haben? Damit teilen wir Python mit, dass dieser Code ausgeführt werden soll, wenn die vorhergehende Bedingung True ergeben hat. Du könntest auch eine andere Anzahl von Leerzeichen wählen, aber fast alle Python-Programmier nutzen 4 Leerzeichen, damit's gut aussieht. Ein einfaches Tab zählt auch wie 4 Leerzeichen, sofern dies in deinem Editor so eingestellt ist. Wenn du dich einmal entschieden hast, bleib dabei! Wenn du mit 4 Leerzeichen angefangen hast, solltest du alle weiteren Einrückungen auch mit 4 Leerzeichen machen, anderweitig könnte das Probleme verursachen.
 
-Save it and give it another run:
+Nun sichere die Datei und führe sie noch einmal aus:
 
 {% filename %}command-line{% endfilename %}
 
@@ -737,11 +737,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Hinweis: Denk daran, dass Windows den 'python3'-Befehl nicht kennt. Falls du auf Windows arbeitest, verwende ab jetzt immer 'python', wenn in dieser Anleitung 'python3' steht.
 
 ### Was passiert, wenn eine Bedingung nicht wahr (not True) ist?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+In den vorigen Beispielen wurde Code ausgeführt, wenn eine vorhergehende Bedingung True (wahr) ergab. Aber Python kennt auch `elif`- und `else`-Anweisungen:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -752,7 +752,7 @@ else:
     print('5 ist nicht größer als 2')
 ```
 
-When this is run it will print out:
+Wenn dies ausgeführt wird, wird es anzeigen:
 
 {% filename %}command-line{% endfilename %}
 
@@ -760,21 +760,21 @@ When this is run it will print out:
     5 ist wirklich größer als 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Wenn 2 größer als 5 wäre, würde die zweite Anweisung (die nach dem else) ausgeführt. Schauen wir uns nun an, wie `elif` funktioniert:
 
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-name = 'Sonja' 
-if name == 'Ola': 
+name = 'Sonja'
+if name == 'Ola':
     print('Hey Ola!')
-elif name == 'Sonja': 
-    print('Hey Sonja!') 
-else: 
+elif name == 'Sonja':
+    print('Hey Sonja!')
+else:
     print('Hey anonymous!')
 ```
 
-and executed:
+und ausgeführt erhalten wir:
 
 {% filename %}command-line{% endfilename %}
 
