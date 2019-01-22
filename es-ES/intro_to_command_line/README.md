@@ -178,12 +178,23 @@ So what's in it? It'd be cool to find out. Let's see:
 
 Now, let's go to our Desktop directory:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ cd Desktop
     
+
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd Desktop
+    
+
+Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
 
 <!--endsec-->
 
@@ -202,7 +213,7 @@ Check if it's really changed:
 
 {% filename %}command-line{% endfilename %}
 
-    $ pwd 
+    $ pwd
     /Users/olasitarska/Desktop
     
 
@@ -212,7 +223,7 @@ Check if it's really changed:
 
 {% filename %}command-line{% endfilename %}
 
-    > cd 
+    > cd
     C:\Users\olasitarska\Desktop
     
 
@@ -277,7 +288,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
     > cd practice
     > mkdir test
     > dir
-    05/08/2014 07:28 PM <DIR> test
+    05/08/2014 07:28 PM <DIR>      test
     
 
 <!--endsec-->
@@ -318,7 +329,7 @@ Check where you are:
 
 {% filename %}command-line{% endfilename %}
 
-    $ pwd 
+    $ pwd
     /Users/olasitarska/Desktop
     
 
@@ -328,7 +339,7 @@ Check where you are:
 
 {% filename %}command-line{% endfilename %}
 
-    > cd 
+    > cd
     C:\Users\olasitarska\Desktop
     
 
