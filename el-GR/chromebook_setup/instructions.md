@@ -60,7 +60,7 @@ This bottom area is your terminal. You can use the terminal to send instructions
     pip install django~={{ book.django_version }}
     
 
-(παρατήρησε ότι στην τελευταία γραμμή χρησιμοποιούμε μία περισπωμένη, την οποία ακολουθεί ένα ίσον: ~=).
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
