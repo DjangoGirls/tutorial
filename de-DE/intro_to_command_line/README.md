@@ -194,7 +194,7 @@ Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Wenn dein Linux-Benutzerkonto auf deutsch eingestellt ist, kann es sein, dass auch der Name des Desktop-Verzeichnisses übersetzt ist. Wenn dem so ist, musst du im obigen Befehl `Desktop` durch den übersetzten Verzeichnisnamen `Schreibtisch` ersetzen.
 
 <!--endsec-->
 
@@ -207,7 +207,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
