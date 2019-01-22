@@ -602,12 +602,14 @@ $ cd ~/Desktop
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this (the word "Desktop" might be translated to your local language):
+On Linux, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 ```
 $ cd ~/Desktop
 ```
+
+(Remember that the word "Desktop" might be translated to your local language.)
 
 <!--endsec-->
 
