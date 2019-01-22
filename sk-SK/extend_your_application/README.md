@@ -162,7 +162,7 @@ Bude to vyzerať takto:
 
 Znova raz rozširujeme `base.html`. V bloku `content` chceme zobraziť published_date príspevku (pokiaľ existuje), titulok a text. Ale mali by sme prebrať pár dôležitých vecí, však?
 
-{% raw %}`{% if ... %} ... {% endif %}` je tag šablóny, ktorý môžeme použiť ak chceme niečo skontrolovať. (Pamätáš si `if ... else ..` z **Úvodu do Pythonu**?) V tomto prípade chceme overiť či `published_date` príspevku nie je prázdny.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` je tag šablóny, ktorý môžeme použiť ak chceme niečo skontrolovať. (Pamätáš si `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
 Dobre, môžeme obnoviť našu stránku a pozrieť sa, či `TemplateDoesNotExist` zmizlo.
 
