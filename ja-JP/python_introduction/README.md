@@ -641,18 +641,20 @@ Macでは、コマンドは次のようになります。
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Linuxでは、次のようになります。("Desktop"のところは"デスクトップ"と表示されているかも知れません)
+On Linux, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
 
+(Remember that the word "Desktop" might be translated to your local language.)
+
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-Windowsのコマンドプロンプトでは、次のようになります。
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -663,7 +665,7 @@ Windowsのコマンドプロンプトでは、次のようになります。
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-WindowsのPowerShellでは、次のようになります。
+And on Windows Powershell, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,9 +674,9 @@ WindowsのPowerShellでは、次のようになります。
 
 <!--endsec-->
 
-うまくできない時は、質問してください。まさにそのためにコーチがここにいます！
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
-次に、ファイルのコードを実行します。
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -682,7 +684,7 @@ WindowsのPowerShellでは、次のようになります。
     Hello, Django girls!
     
 
-メモ：Windowsでファイルのコードを実行するときは、'python3' の代わりに 'python' とタイプしましょう。
+Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
 {% filename %}command-line{% endfilename %}
 
@@ -690,15 +692,15 @@ WindowsのPowerShellでは、次のようになります。
 > python python_intro.py
 ```
 
-できました！これで、あなたはファイルに保存されたPythonプログラムを実行できましたね。いい気分ですね。
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-では、ここからプログラミングに不可欠のツールを学んでいきましょう。
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
-ある条件が成立するときに処理を行いたいという時に用いるのが、**if 条件式** です。
+Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-では、**python_intro.py** ファイルのコードを次のように書き換えてください。
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,7 +708,7 @@ WindowsのPowerShellでは、次のようになります。
 if 3 > 2:
 ```
 
-これを保存して実行すると、次のようなエラーがでます。
+If we were to save and run this, we'd see an error like this:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -716,7 +718,7 @@ if 3 > 2:
     SyntaxError: unexpected EOF while parsing
     
 
-条件式 `3 > 2` が `True` の時、どのように処理をすべきかが記述されていませんね。 では、Python に “It works!” と出力してもらいましょう。 **python_intro.py** ファイルの中身を、次のとおりに書き換えてください。
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -725,9 +727,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-２行目をスペース４つでインデントしていることに気が付きましたか？ 条件式が True の時、どのコードを実行するかPythonに知らせる必要があります。 スペース１つでもできますが、ほぼ全員のPythonプログラマーはスペース４つとしています。 タブ１つも、スペース４つと同じです。 タブかスペースか決めたら、変えないようにしましょう。 例えばスペース４つでインデントにしたら、この後もスペース４つでインデントするようにしましょう。インデントにスペースとタブを混ぜてしまうと問題が発生してしまうことがあります。
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
-保存して、もう一度実行してみましょう。
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -736,11 +738,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-メモ：Windowsでは 'python3' とタイプしてもうまくいかないことを思い出してください。この後ファイルを実行するときは 'python3' の代わりに 'python' とタイプしてくださいね。
+Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
 ### 条件がTrueじゃないときは？
 
-前述の例では、if文の条件式が True の時だけ、コードが実行されました。Pythonは、`elif` や `else` といった記述もできます。
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -751,7 +753,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-これを実行した場合、次のように出力されます。
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
@@ -759,7 +761,7 @@ else:
     5 is indeed greater than 2
     
 
-もし２が５より大きかったら、４行目のコマンドが実行されます。では、`elif` はどうなるのでしょうか？
+If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -773,7 +775,7 @@ else:
     print('Hey anonymous!')
 ```
 
-実行すると...
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
@@ -781,9 +783,9 @@ else:
     Hey Sonja!
     
 
-どうなったかわかりましたか？ `elif` を追加する事で、上記の条件（`name == 'Ola'`）が True でない場合に実行する条件を追加することができます。
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-最初の `if` の条件分岐の後に、好きなだけ `elif` を追加する事ができます。例えば...
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -803,7 +805,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Pythonは上から順番に各条件をテスト、実行し、出力します。
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
@@ -813,9 +815,9 @@ Pythonは上から順番に各条件をテスト、実行し、出力します�
 
 ## コメント
 
-コメントは `#` で始まる行です。`#` の後にはなんでも書くことができ、Pythonはそれを無視します。コメントを書いたコードは、ほかの人にとってもわかりやすくなります。
+Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
-コメントを書いてみましょう。
+Let's see how that looks:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -826,11 +828,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-コードのすべての行にコメントを書く必要はありません。コメントには、コードの中である処理をする理由や、複雑なコードの動きのまとめを書くと役に立ちます。
+You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
 ### まとめ
 
-直近のエクササイズを通して、学んだことは、、、
+In the last few exercises you learned about:
 
 - **比較** – 比較に用いる `>`, `>=`, `==`, `<=`, `<` そして`and`, `or` といった演算子があります。
 - **ブール型** – `True` と `False` ２つの値のみを持ちます。
@@ -838,15 +840,15 @@ if volume < 20 or volume > 80:
 - **if … elif … else** – 条件分岐することで、特定の条件によって処理を分けて実行することができます。
 - **コメント** – あなたがコードについて記述できる行。Pythonは実行しません。
 
-では、このチャプターの最後のパートに挑戦していきましょう！
+Time for the last part of this chapter!
 
 ## 自作の関数！
 
 > 家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。[Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0)
 
-Pythonには `len()` のように関数があったのを覚えていますか？ ここでは、自分で関数を作る方法を学びます。
+Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-実行する処理をひとまとめにしたものを関数といいます。 Pythonでは、関数は `def` というキーワードからはじまり、引数（ひきすう）を含むことができます。 簡単なものからはじめてみましょう。 **python_intro.py** の中身を下記のコードに置き換えてください。
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -858,11 +860,11 @@ def hi():
 hi()
 ```
 
-あなたの最初の関数を実行する準備ができましたね！
+Okay, our first function is ready!
 
-ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 これは、Pythonがファイルを読み、上から下へ実行していくからです。 関数を定義したあとに、もう一度その関数を書いて呼び出します。
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-では実行して、どうなるか見てみましょう。
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
@@ -871,7 +873,7 @@ hi()
     How are you?
     
 
-メモ：思ったように動かなくても慌てないで！画面の出力は動かない理由をつかむのに役立ちます。
+Note: if it didn't work, don't panic! The output will help you to figure why:
 
 - `NameError` が出ている場合、おそらく何かミスタイプがあります。同じ名前を使っているかチェックしましょう。関数を定義するときは `def hi():` としていますか？関数を実行するときは `hi()` としていますか？
 - `IndentationError` が出ている場合、`print` 関数の2行が同じ数のスペースでインデントされているかチェックしましょう。関数の中のコードは同じ数のスベースでインデントされているとPythonは考えます。
@@ -885,7 +887,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-このとおり、関数に `name` という引数を足します。
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -901,7 +903,7 @@ def hi(name):
 hi()
 ```
 
-`if` 文では `print` 関数は４つのスペースでインデントしていましたね。条件式が True のときに print 関数が実行されました。関数の中の if 文で実行する print 関数の前には、上記のように、スペースを８ついれて２回分インデントします。 実行して、どのように動くか見てみましょう。
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -912,7 +914,7 @@ hi()
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-おっと、エラーがでてしまいました。 Pythonがエラーメッセージを表示してくれています。 定義した関数 `hi()` は、`name` という引数が必要ですが、関数を呼び出す時に引数を忘れてしまっています。 最後の行を修正しましょう。
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -920,7 +922,7 @@ hi()
 hi("Ola")
 ```
 
-実行してください。
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
@@ -928,7 +930,7 @@ hi("Ola")
     Hi Ola!
     
 
-では、名前を変えてみたらどうなりますか？
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -936,7 +938,7 @@ hi("Ola")
 hi("Sonja")
 ```
 
-再度実行してください。
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -944,14 +946,14 @@ hi("Sonja")
     Hi Sonja!
     
 
-では、OlaやSonja以外の名前を入れた時、どうなるかわかりますか？やってみて、予測が正しいか確認して下さい。このように出力されましたか。
+Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-すばらしいですね。 挨拶をする人の名前を変えるたびに繰り返しコードを書く必要がなくなりました。 これが関数を作る理由です。何度も繰り返してコードを書く必要はありません！
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
@@ -964,7 +966,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-では、実行してみましょう。
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -972,17 +974,17 @@ hi("Rachel")
     Hi Rachel!
     
 
-おめでとうございます！関数の書き方を学びましたね！:)
+Congratulations! You just learned how to write functions! :)
 
 ## ループ
 
 > 家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。[Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0)
 
-さぁ、もう最後のパートですよ。あっという間ですね。 :)
+This is the last part already. That was quick, right? :)
 
-先ほどお話ししたとおり、プログラマーはめんどくさがりで、同じことを繰り返すことは好きではありません。プログラミングはすべてを自動的に処理したい。私たちはすべての人の名前ひとつひとつに対して挨拶をしたくないですよね？こういう時にループが便利です。
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-リストを覚えていますか？女の子の名前をリストにしてみましょう。
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -990,7 +992,7 @@ hi("Rachel")
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-名前を呼んで、全員にあいさつをしてみましょう。`hi` 関数が使えますね。ループの中で使いましょう。
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -998,9 +1000,9 @@ girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 for name in girls:
 ```
 
-この `for` は `if` に似ています。この次に続くコードは、４つスペースを入れる必要があります。
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-ファイルに書かれるコードはこのようになります。
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1014,7 +1016,7 @@ for name in girls:
     print('Next girl')
 ```
 
-実行してみましょう。
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1031,9 +1033,9 @@ for name in girls:
     Next girl
     
 
-ご覧のとおり、`girls` リストのすべての要素に対して、`for` の中にインデントして書いたことが繰り返されています。
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-`for` 文では、`range` 関数を使って指定した回数だけ繰り返すこともできます。
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,7 +1044,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-これを実行すると、次のように出力されます。
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,16 +1055,16 @@ for i in range(1, 6):
     5
     
 
-`range` 関数は、連続する数値を要素とするリストを作ります。引数に指定した開始の数値から終了の数値までのリストです。
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-2つ目の引数（終了の数値）は、リストに含まれないことに注意してください。 つまり、 `range(1, 6)` は、１から５のことであり、６は含まれません。
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## まとめ
 
-以上です！**おめでとう！頑張りました！** これは簡単ではなかったと思います。自分を褒めてあげてくださいね。ここまで進めることができたのは、本当に素晴らしいことです！
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
-ご参考に、公式の完全なPythonチュートリアルは https://docs.python.org/3/tutorial/ にあります。挑戦するとPythonの理解をもっと深められるでしょう。ここまで頑張りました！
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
-次のチャプターにうつるまえに、少し気晴らしに、ストレッチやお散歩をして、目や身体を休ませてあげてくださいね。
+You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![カップケーキ](images/cupcake.png)
+![Cupcake](images/cupcake.png)
