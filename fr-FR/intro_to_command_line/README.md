@@ -179,7 +179,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 Now, let's go to our Desktop directory:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
@@ -188,11 +188,22 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
+<!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd Desktop
+    
+
+Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+
+<!--endsec-->
+
 <!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    > cd Bureau
+    > cd Desktop
     
 
 <!--endsec-->
@@ -204,7 +215,7 @@ Check if it's really changed:
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/olasitarska/Bureau
+    /Users/olasitarska/Desktop
     
 
 <!--endsec-->
@@ -214,7 +225,7 @@ Check if it's really changed:
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Users\olasitarska\Bureau
+    C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
@@ -233,7 +244,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir exercices
+    $ mkdir practice
     
 
 <!--endsec-->
@@ -242,7 +253,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir exercices
+    > mkdir practice
     
 
 <!--endsec-->
@@ -263,7 +274,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd exercices
+    $ cd practice
     $ mkdir test
     $ ls
     test
@@ -275,7 +286,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd exercices
+    > cd practice
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -320,7 +331,7 @@ Check where you are:
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/olasitarska/Bureau
+    /Users/olasitarska/Desktop
     
 
 <!--endsec-->
@@ -330,7 +341,7 @@ Check where you are:
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Users\olasitarska\Bureau
+    C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
@@ -343,7 +354,7 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r exercices
+    $ rm -r practice
     
 
 <!--endsec-->
@@ -352,8 +363,8 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S exercices
-    exercices, Are you sure <Y/N>? Y
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
