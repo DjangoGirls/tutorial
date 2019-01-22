@@ -178,12 +178,23 @@ Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden.
 
 Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ cd Desktop
     
+
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd Desktop
+    
+
+Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
 
 <!--endsec-->
 
@@ -196,7 +207,7 @@ Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
 
 <!--endsec-->
 
-Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -218,7 +229,7 @@ Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
 <!--endsec-->
 
-Hier ist es!
+Here it is!
 
 > Profi-Tipp: Wenn du `cd D` tippst und dann `tab` auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit "D" beginnt, drücke die `tab`-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.
 
@@ -226,7 +237,7 @@ Hier ist es!
 
 ### Erstellen eines Verzeichnisses
 
-Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -246,7 +257,7 @@ Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kan
 
 <!--endsec-->
 
-Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > Profi-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die `Pfeil aufwärts`- und `Pfeil abwärts`-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.
 
@@ -254,7 +265,7 @@ Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem D
 
 ### Übung!
 
-Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practice`-Ordner ein Verzeichnis namens `test`. (Verwende dazu die Kommandos `cd` und `mkdir`.)
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### Lösung:
 
@@ -263,8 +274,8 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 {% filename %}command-line{% endfilename %}
 
     $ cd practice
-    $ mkdir test 
-    $ ls test
+    $ mkdir test
+    $ ls
     test
     
 
@@ -274,23 +285,23 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice 
-    > mkdir test 
-    > dir 
-    05/08/2014 07:28 PM <DIR>   test
+    > cd practice
+    > mkdir test
+    > dir
+    05/08/2014 07:28 PM <DIR>      test
     
 
 <!--endsec-->
 
-Glückwunsch! :)
+Congrats! :)
 
 * * *
 
 ### Aufräumen
 
-Wir wollen kein Chaos hinterlassen, also lass uns das bislang Geschaffene wieder löschen.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Zuerst müssen wir zurück zum Desktop wechseln:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -310,9 +321,9 @@ Zuerst müssen wir zurück zum Desktop wechseln:
 
 <!--endsec-->
 
-Durch Verwendung von `..` mit dem `cd` Kommando wechselst du von deinem aktuellen Verzeichnis zum übergeordneten Verzeichnis (dies ist das Verzeichnis, das das aktuelle Verzeichnis enthält).
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Schau nach, wo du gerade bist:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -334,7 +345,7 @@ Schau nach, wo du gerade bist:
 
 <!--endsec-->
 
-Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
+Now time to delete the `practice` directory:
 
 > **Achtung**: Wenn du Daten mit `del`, `rmdir` oder `rm` löschst, kannst du das nicht mehr rückgängig machen, das bedeutet *die gelöschten Dateien sind für immer weg*! Sei also sehr vorsichtig mit diesem Befehl.
 
@@ -351,13 +362,13 @@ Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S practice 
+    > rmdir /S practice
     practice, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -379,7 +390,7 @@ Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 ### Beenden
 
-Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -399,11 +410,11 @@ Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es 
 
 <!--endsec-->
 
-Cool, was? :)
+Cool, huh? :)
 
 ## Zusammenfassung
 
-Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
+Here is a summary of some useful commands:
 
 | Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                    | Beispiel                                             |
 | ---------------- | ----------------------- | ------------------------------- | ---------------------------------------------------- |
@@ -418,10 +429,10 @@ Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 | rmdir /S         | rm -r                   | Verzeichnis löschen             | **rm -r testdirectory**                              |
 | [CMD] /?         | man [CMD]               | Hilfe für ein Kommando aufrufen | **cd /?** (Windows) oder **man cd** (Mac OS / Linux) |
 
-Das sind nur sehr wenige der Befehle, welche du in deiner Konsole verwenden kannst, aber du wirst heute nicht mehr brauchen.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Falls du neugierig bist, findest du auf [ss64.com](http://ss64.com) eine vollständige Übersicht über alle Kommandozeilen-Befehle für alle Betriebssysteme.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Fertig?
 
-Lass uns mit Python anfangen!
+Let's dive into Python!
