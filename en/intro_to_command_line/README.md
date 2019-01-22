@@ -185,7 +185,7 @@ Music
 
 Now, let's go to our Desktop directory:
 
-<!--sec data-title="Change directory: OS X" data-id="python_OSX" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -193,7 +193,7 @@ $ cd Desktop
 ```
 <!--endsec-->
 
-<!--sec data-title="Change directory: Linux" data-id="python_linux" data-collapse=true ces-->
+<!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 ```
