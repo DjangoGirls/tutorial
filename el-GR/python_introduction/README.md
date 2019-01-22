@@ -641,18 +641,20 @@ data-collapse=true ces-->
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Σε Linux, θα μοιάζει κάπως έτσι (η λέξη "Desktop" ίσως να είναι μεταφρασμένη στη γλώσσα σας ως "Επιφάνεια Εργασίας"):
+On Linux, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
 
+(Remember that the word "Desktop" might be translated to your local language.)
+
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-Στα Windows θα μοιάζει κάπως έτσι:
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -663,7 +665,7 @@ data-collapse=true ces-->
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-Και στα Windows Powershell, θα μοιάζει κάπως έτσι:
+And on Windows Powershell, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,9 +674,9 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Αν κολλήσετε, ζητήστε βοήθεια. Για αυτόν ακριβώς το λόγο βρίσκονται οι βοηθοί!
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
-Τώρα χρησιμοποιήστε την Python για να τρέξετε τον κώδικα στο αρχείο όπως κατώθι:
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -682,7 +684,7 @@ data-collapse=true ces-->
     Hello, Django girls!
     
 
-Σημείωση: στα Windows η εντολή 'python3' δεν αναγνωρίζεται. Αντ'αυτού χρησιμοποιήστε την εντολή 'python':
+Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
 {% filename %}command-line{% endfilename %}
 
@@ -690,15 +692,15 @@ data-collapse=true ces-->
 > python python_intro.py
 ```
 
-Τέλεια! Μόλις τρέξατε το πρώτο σας Python πρόγραμμα το οποίο είναι αποθηκευμένο σε αρχείο. Αισθάνεστε ωραία;
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-Μπορείτε, τώρα, να μεταβείτε σε ένα σημαντικό εργαλείο στον προγραμματισμό:
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
-Μερικές φορές, πολλά πράγματα στον κώδικα θα πρέπει να εκτελούνται αν ισχύουν συγκεκριμένες συνθήκες. Γι'αυτό το λόγο η Python (και κάθε άλλη γλώσσα προγραμματισμού) έχει κάτι που ονομάζει **if statements**.
+Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Αντικαταστήστε τον κώδικα στο αρχείο **python_intro.py** με αυτό:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,7 +708,7 @@ data-collapse=true ces-->
 if 3 > 2:
 ```
 
-Αν το αποθηκεύσουμε και το τρέξουμε, θα δούμε το ακόλουθο σφάλμα:
+If we were to save and run this, we'd see an error like this:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -716,7 +718,7 @@ if 3 > 2:
     SyntaxError: unexpected EOF while parsing
     
 
-Η Python περιμένει από εμάς να της δώσουμε περαιτέρω οδηγίες για το τι θα γίνει (τι θα εκτελεστεί) αν η συνθήκε `3 > 2` είναι αληθής (ή αλλιώς `True`). Ας προσπαθήσουμε να εκτυπώσουμε τη λέξη "It works!". Αλλάξτε τον κώδικα στο αρχείο **python_intro.py** ως εξής:
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -725,9 +727,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-Παρατηρήστε ότι προσθέσαμε τέσσερα κενά (4 spaces) για να κάνουμε indent την τελευταία γραμμη. Πρέπει να το κάνουμε αυτό ούτως ώστε να πούμε στην Python τι να κάνει αν η συνθήκη είναι αληθής. Μπορείτε να βάλετε ένα διάστημα (έναν κενό χαρακτήρα) αλλά όλοι οι προγραμματιστές Python χρησιμοποιούν τέσσερα για να φαίνεται πιο όμορφο και ευανάγνωστο. Η χρήση του Tab λαμβάνεται ως 4 κενά αρκεί ο επεξεργαστής κώδικα να είναι ρυθμισμένος γι'αυτό. Όταν κάνετε την επιλογή σας (Tab ή κενοί χαρακτήρες), μην την αλλάξετε! Αν χρησιμοποιείτε τα 4 κενά τότε να χρησιμοποιείτε τα 4 κενά για πάντα. Αλλιώς θα προκύψουν προβλήματα (mixed Tabs and spaces).
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
-Αποθηκεύστε το και δοκιμάστε να το ξανατρέξετε:
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -736,11 +738,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Σημείωση: θυμηθείτε ότι στα Windows η εντολή 'python3' δεν αναγνωρίζεται. Χρησιμοποιείτε την 'python' για να τρέχετε αρχεία.
+Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
 ### Αν όμως η συνθήκη δεν είναι True;
 
-Στα προηγούμενα παραδείγματα, ο κώδικας έτρεχε μόνο όταν η σνυθήκη ήταν αληθής. Αλλά η Python έχει και άλλα statements όπως το `elif` και το `else`:
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -751,7 +753,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-Όταν αυτό τρέχει θα εκτυπώσει:
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
@@ -759,7 +761,7 @@ else:
     5 is indeed greater than 2
     
 
-Αν το 2 ήταν μεγαλύτερο του 5 τότε η δεύτερη εντολή θα έτρεχε. Ας δούμε πως λειτουργεί η `elif`:
+If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -773,7 +775,7 @@ else:
     print('Hey anonymous!')
 ```
 
-και τρέξτε το:
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
@@ -781,9 +783,9 @@ else:
     Hey Sonja!
     
 
-Είδατε τι έγινε εδώ; Το `elif` σας επέτρεψε να προσθέσετε έξτρα συνθήκες σε περίπτωση που οι προηγούμενες αποτύχουν.
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-Μπορείτε να προσθέσετε όσα `elif` θέλετε μετά το αρχικό `if`. Για παράδειγμα:
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -803,7 +805,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Η Python τρέχει κάθε τεστ με τη σειρά και εκτυπώνει:
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
@@ -813,9 +815,9 @@ else:
 
 ## Σχόλια
 
-Τα χόλια είναι γραμμές οι οποίοες ξεκινούν με την δίεση `#`. Μπορείτε να γράψετε ότι θέλετε μετά την δίεση `#` και πολύ απλά η Python θα το αγνοήσει. Τα σχόλια μπορούνα να κάνουν τον κώδικα σας πιο ευανάγνωστο σε άλλους προγραμματιστές και όχι μόνο.
+Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
-Ας δούμε πως φαίνεται:
+Let's see how that looks:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -826,11 +828,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-Δεν χρειάζεται να γράφεται σχόλιο για κάθε γραμμή κώδικα (άλλωστε δεν είναι καλή πρακτική ούτως ή άλλως) αλλά τα σχόλια είναι χρήσιμα ως προς το να εξηγήσουν το τι κάνει ο κώδικας ή να δώσουν κάποιου είδους περίληψη όταν κάνετε κάτι περίπλοκο.
+You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
 ### Περίληψη
 
-Στις τελευταίες ασκήσεις μάθατε τα εξής:
+In the last few exercises you learned about:
 
 - **να συγκρίνετε πράγματα** – στην Python μπορείτε να συγκρίνετε πράγματα χρησιμοποιώντας `>`, `>=`, `==`, `<=`, `<` και `and`, `or`
 - **Boolean** – ένας τύπος object το οποίο μπορεί να πάρει μόνο δύο τιμές: `True` ή `False`
@@ -838,15 +840,15 @@ if volume < 20 or volume > 80:
 - **if … elif … else** – αυτά τα statements σας επιτρέπουν να εκτελείτε κώδικα υπό συγκεκριμένες συνθήκες.
 - **σχόλια** - γραμμές στην Python οι οποίες δεν εκτελούνται και σας επιτρέπουν να κάνετε τον κώδικα σας πιο περιγραφικό και ευανάγνωστο
 
-Ώρα για το τελευταίο μέρος του κεφαλαίου!
+Time for the last part of this chapter!
 
 ## Οι δικές σας συναρτήσεις!
 
 > Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Θυμάστε τις συναρτήσεις όπως τη `len()` που εκτελούσατε; Λοιπόν, σας έχουμε καλά νέα! Θα μάθετε πως να δημιουργείτε τις δικές σας!
+Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-Μια συνάρτηση είναι μια σειρά από οδηγίες που η Python πρέπει να εκτελέσει. Κάθε συνάρτηση ξεκινά με τη λέξη κλειδί της Python `def`, μετά ακολουθεί το όνομα αυτής και μετά δίνονται τυχόν παράμετροι. Ας το προσπαθήσουμε. Αντικαταστήστε τον κώδικα στο αρχείο **python_intro.py** με το ακόλουθο:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -858,11 +860,11 @@ def hi():
 hi()
 ```
 
-Ωραία. Η πρώτη μας συνάρτηση είναι έτοιμη!
+Okay, our first function is ready!
 
-Θα αναρρωτιέστε γιατί γράψαμε το όνομα της συνάρτησης στο τέλος του αρχείου. Αυτό γίνεται επειδή η Python διαβάζει το αρχείο και το τρέχει από την κορυφή έως το τέλος. Για να χρησιμοποιήσουμε, λοιπόν, την συνάρτηση μας θα πρέπει να την ξαναγράψουμε στο τέλος.
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-Ας το τρέξουμε για να δούμε το αποτέλεσμα:
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
@@ -871,13 +873,13 @@ hi()
     How are you?
     
 
-Σημείωση: αν δεν δούλεψε, μην πανικοβάλεστε! Η έξοδος θα σας βοηθήσει να καταλάβετε το γιατί:
+Note: if it didn't work, don't panic! The output will help you to figure why:
 
 - Αν λέβετε ένα σφάλμα τύπου `NameError`, τότε ίσως γράψατε κάτι λάθος όπως το όνομα της συνάρτηση στο τέλος του αρχείου. Επιβεβαιώστε ότι το όνομα στη δήλωση της συνάρτηση `def hi():` είναι το ίδιο με το όνομα όταν την καλείτε `hi()`.
 - Αν λάβατε ένα σφάλμα τύπου `IndentationError`, ελέγξτε ότι και οι γραμμές που καλούνται οι δύο συναρτήσεις `print` έχουν τον ίδιο αριθμό κενών στην αρχή: η Python απαιτεί όλος ο κώδικας μέσα στις συναρτήσεις να είναι στοιχισμένος το ίδιο.
 - Αν δεν βλέπετε κάποια έξοδο τότε είτε έχετε παραλείψει να καλέσετε την συνάρτηση χρησιμοποιώντας τις παρενθέσεις `hi()` είτε το έχετε κάνει αλλά η κλήση της συνάρτησης (hi()) έχει *κενό* στην αρχή και αποτελεί μέρος του κυρίου σώματος της συνάρτησης (def hi():).
 
-Ας φτιάξουμε την πρώτη μας συνάρτηση με παραμέτρους. Θα αλλάξουμε το προηγούμενο παράδειγμα συμπεριλαμβάνοντας ένα όνομα. Θα φτιάξουμε μια συνάρτηση που να λέει 'hi' στο πρόσωπο που την καλεί:
+Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -885,7 +887,7 @@ hi()
 def hi(name):
 ```
 
-Όπως βλέπετε, δώσαμε μια παράμετρο στην συνάρτηση με το όνομα `name`:
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -901,7 +903,7 @@ def hi(name):
 hi()
 ```
 
-Θυμηθείτε: Η συνάρτηση `print` είναι στοιχισμένη με 4 κενά μέσα στο statement `if`. Αυτό το κάνουμε διότι θέλουμε να εκτελεστεί η συνάρτηση όταν η συνθήκη στο if είναι αληθής. Ας δούμε πως δουλεύει τώρα:
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -912,7 +914,7 @@ hi()
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Ώπα, ένα σφάλμα. Ευτυχώς, η Python μας δίνει ένα αρκετά χρήσιμο σφάλμα. Μας λέει ότι η συνάρτηση `hi()` (αυτή που ορίσαμε) δέχεται μια απαραίτητη παράμετρο (με το όνομα `name`) και ότι ξεχάσαμε να την ορίσουμε καθώς την καλούσαμε. Ας το φτιάξουμε αυτό στο τέλος του αρχείου:
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -920,7 +922,7 @@ hi()
 hi("Ola")
 ```
 
-Και ας το τρέξουμε ξανά:
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
@@ -928,7 +930,7 @@ hi("Ola")
     Hi Ola!
     
 
-Και αν μπορούμε να αλλάξουμε το όνομα;
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -936,7 +938,7 @@ hi("Ola")
 hi("Sonja")
 ```
 
-Και το τρέξουμε:
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -944,16 +946,16 @@ hi("Sonja")
     Hi Sonja!
     
 
-Τώρα τι νομίζετε ότι θα γίνει αν γράψετε άλλο όνομα εκεί μέσα; (Όχι το Ola ή το Sonja). Δοκιμάστε το και προβλέψτε την έξοδο. Θα εκτυπώσει το εξής:
+Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-Αυτό είναι φοβερό, έτσι; Με αυτό τον τρόπο δεν χρειάζεται να επαναλαμβάνεστε κάθε φορά που θέλετε να αλλάξετε το όνομα του προσώπου που η συνάρτηση υποτίθεται ότι χαιρετά. Και γι'αυτό το λόγο χρησιμοποιούμε τις συναρτήσεις. Δεν θέλετε ποτέ να επαναλάβετε τον κώδικα σας!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
-Ας κάνουμε κάτι πιο έξυπνο. Υπάρχουν περισσότερα ονόματα από δύο και το να γράφουμε συνθήκες για καθένα χωριστά καταντά κουραστικό και ευάλωτο σε λάθη. Αντικαταστήστε το περιεχόμενο του αρχείου σας με τα κατώθι:
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -964,7 +966,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Ας τρέξουμε τον κώδικα τώρα:
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -972,17 +974,17 @@ hi("Rachel")
     Hi Rachel!
     
 
-Συγχαρητήρια! Μόλις μάθατε πως να γράφετε συναρτήσεις! :)
+Congratulations! You just learned how to write functions! :)
 
 ## Επαναλήψεις
 
 > Για τους αναγνώστες στο σπίτι: αυτή η ενότητα καλύπτεται στο βίντεο [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-Αυτό είναι το τελευταίο κομμάτι. Ήταν σύντομο, έτσι; :)
+This is the last part already. That was quick, right? :)
 
-Οι προγραμματιστές δεν θέλουν να επαναλαμβάνουν τα ίδια και τα ίδια. Ο προγραμματισμός έχει να κάνει με την αυτοματοποίηση των πραγμάτων. Οπότε δεν θέλουμε να χαιρετάμε κάθε πρόσωπο με το όνομα τους χειροκίνητα, έτσι; Εδώ, λοιπόν, έρχονται οι επαναλήψεις (ή loops ή βρόγχοι).
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-Θυμάστε τις λίστες; Ας φτιάξουμε μια λίστα με ονόματε κοριτσιών:
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -990,7 +992,7 @@ hi("Rachel")
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-Θέλουμε να τις χαιρετίσουμε όλες με το όνομα τους. Έχουμε, ήδη, μια συνάρτηση με το όνομα `hi`, οπότε θα χρησιμοποιήσουμε αυτή:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -998,9 +1000,9 @@ girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 for name in girls:
 ```
 
-Η λέξη κλειδί της Python `for` συμπεριφέρεται περίπου όπως το `if`. Το κυρίως σώμα του κώδικα που ακολουθεί θα πρέπει να είναι στοιχισμένο με 4 κενά.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-Αυτός θα είναι ο κώδικας που θα υπάρχει στο αρχείο:
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1014,7 +1016,7 @@ for name in girls:
     print('Next girl')
 ```
 
-Και όταν το τρέχουμε:
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1031,9 +1033,9 @@ for name in girls:
     Next girl
     
 
-Όπως βλέπετε οτιδήποτε βάλτε μέσα σε ένα statement `for` με την ανάλογη στοίχιση θα επαναληφθεί για κάθε στοιχείο της λίστας `girls`.
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-Μπορείτε να χρησιμοποιήσετε το `for` και για αριθμούς χρησιμοποιώντας της συνάρτηση `range`:
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,7 +1044,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Το οποίο θα εκτυπώσει:
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,16 +1055,16 @@ for i in range(1, 6):
     5
     
 
-Η συνάρτηση `range` δημιουργεί μια λίστα από αριθμούς (αυτοί οι αριθμοί εισάγονται από εσάς ως παράμετροι).
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Σημειώστε ότι η δεύτερη παράμετρος δεν περιλαμβάνεται στην λίστα που επιστρέφει (δηλαδή το `range(1, 6)` θα μετρήσει από το 1 έως το 5, αλλά δεν θα συμπεριλάβει το 6). Αυτό γίνεται διότι η συνάρτηση "range" είναι τύπου κλειστό-ανοιχτό, δηλαδή συμπεριλαμβάνει την πρώτη τιμή αλλά όχι την τελευταία.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## Περίληψη
 
-Αυτό ήταν. **Τα σπάτε!** Αυτό ήταν ένα δύσκολο κεφάλαιο, οπότε θα πρέπει να νιώθετε περίφανοι με τον εαυτό σας. Είμαστε πολύ περήφανοι που τα καταφέρατε μέχρι εδώ!
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
-Για τον επίσημο και πλήρης Python οδηγό επισκεφτείτε την σελίδα https://docs.python.org/3/tutorial/. Αυτό θα σας δώσει μια πιο ολοκληρωμένη και εις βάθος γνώση αυτής της γλώσσας προγραμματισμού. Γεια σας :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
-Ίσως θα θέλατε να κάνετε κάτι κάτι άλλο, πχ τεντωθείτε, να περπατήσετε λίγο, να ξεκουράσετε τα μάτια σας, πριν συνεχίσετε στο επόμενο κεφάλαιο. :)
+You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
-![Κεκάκι](images/cupcake.png)
+![Cupcake](images/cupcake.png)
