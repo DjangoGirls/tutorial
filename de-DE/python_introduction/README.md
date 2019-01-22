@@ -640,7 +640,7 @@ Auf einem Mac sieht das etwa so aus:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+Unter Linux ist es ähnlich:
 
 {% filename %}command-line{% endfilename %}
 
