@@ -179,12 +179,23 @@
 
 Теперь вернёмся в наш каталог рабочего стола:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ cd Desktop
     
+
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd Desktop
+    
+
+Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
 
 <!--endsec-->
 
@@ -197,7 +208,7 @@
 
 <!--endsec-->
 
-Проверь, что рабочий каталог действительно изменился:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -219,7 +230,7 @@
 
 <!--endsec-->
 
-Вот и он!
+Here it is!
 
 > Совет от профи: если ты введешь `cd D` и затем нажмешь `Tab` на клавиатуре, в командной строке будет автоматически набрана остальная часть имени, что позволит быстрее перемещаться по каталогам. Если c «D» начинается название не одной папки, нажми `Tab` дважды, чтобы получить список вариантов.
 
@@ -227,7 +238,7 @@
 
 ### Создание каталога
 
-Как насчет создания каталога practice на рабочем столе? Ты можешь сделать это так:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -247,7 +258,7 @@
 
 <!--endsec-->
 
-Эта маленькая команда создаст папку с именем `practice` на рабочем столе. Ты можешь проверить, появилась ли она, просто взглянув на рабочий стол или введя команду `ls` (для Linux и macOS) или `dir` (если у тебя Windows)! Попробуй. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > Совет от профи: если ты не хочешь вводить одни и те же команды снова и снова, попробуй нажать на стрелку вверх и стрелку вниз на клавиатуре для просмотра недавно использованных команд.
 
@@ -255,7 +266,7 @@
 
 ### Тренируемся!
 
-Небольшая задачка: в недавно созданной папке `practice` создай папку с названием `test`. Используй команды `cd` и `mkdir`.
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### Решение:
 
@@ -283,15 +294,15 @@
 
 <!--endsec-->
 
-Поздравляем! :)
+Congrats! :)
 
 * * *
 
 ### Чистка
 
-Мы не хотим оставлять беспорядок, поэтому давай удалим всё, что мы создали до этого момента.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Во-первых, мы должны вернуться на рабочий стол:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -306,14 +317,14 @@
 
 {% filename %}command-line{% endfilename %}
 
-    > cd..
+    > cd ..
     
 
 <!--endsec-->
 
-Используя `..` с командой `cd`, ты можешь сменить текущий каталог на родительский (то есть каталог, который содержит в себе текущий).
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Проверь, где ты находишься:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -335,7 +346,7 @@
 
 <!--endsec-->
 
-Пришло время удалить каталог `practice`:
+Now time to delete the `practice` directory:
 
 > **Внимание:** удаление файлов с помощью `del`, `rmdir` или `rm` необратимо. Это означает, что *удалённые файлы будут потеряны навсегда!* Поэтому будь очень осторожна с этими командами.
 
@@ -358,7 +369,7 @@
 
 <!--endsec-->
 
-Готово! Давай проверим, что папка действительно удалена:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -380,7 +391,7 @@
 
 ### Выход
 
-Вот и всё на данный момент! Теперь можно безопасно закрыть командную строку. Давай сделаем это как хакеры, согласна? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -400,11 +411,11 @@
 
 <!--endsec-->
 
-Круто, да? :)
+Cool, huh? :)
 
 ## Подведём итоги
 
-Вот краткий обзор некоторых полезных команд:
+Here is a summary of some useful commands:
 
 | Команда (Windows) | Команда (Mac OS / Linux) | Описание                | Пример                                              |
 | ----------------- | ------------------------ | ----------------------- | --------------------------------------------------- |
@@ -419,10 +430,10 @@
 | rmdir /S          | rm -r                    | удалить папку           | **rm -r testdirectory**                             |
 | [CMD] /?          | man [CMD]                | справка для команды     | **cd /?** (Windows) или **man cd** (Mac OS / Linux) |
 
-Это лишь некоторые из команд, которые можно использовать в командной строке, но сегодня тебе больше и не пригодится.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Если тебе интересно, [ss64.com](http://ss64.com) содержит полный справочник команд для всех операционных систем.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Готова продолжить?
 
-Давай погрузимся в мир Python!
+Let's dive into Python!
