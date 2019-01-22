@@ -177,7 +177,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 Now, let's go to our Desktop directory:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}komut-satırı{% endfilename %}
 
@@ -186,11 +186,22 @@ Now, let's go to our Desktop directory:
 
 <!--endsec-->
 
-<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    > cd Masaüstü
+    $ cd Desktop
+    
+
+Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
+
+{% filename %}komut-satırı{% endfilename %}
+
+    > cd Desktop
     
 
 <!--endsec-->
@@ -199,10 +210,10 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ pwd
-    C:\Users\zeynep\Masaüstü
+    /Users/olasitarska/Desktop
     
 
 <!--endsec-->
@@ -211,8 +222,8 @@ Check if it's really changed:
 
 {% filename %}command-line{% endfilename %}
 
-    > cd 
-    C:\Users\zeynep\Masaüstü
+    > cd
+    C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
@@ -229,9 +240,9 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}komut-satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
-    $ mkdir uygulama
+    $ mkdir practice
     
 
 <!--endsec-->
@@ -240,7 +251,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir uygulama
+    > mkdir practice
     
 
 <!--endsec-->
@@ -259,9 +270,9 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
-    $ cd uygulama
+    $ cd practice
     $ mkdir test
     $ ls
     test
@@ -273,7 +284,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd uygulama
+    > cd practice
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -315,20 +326,20 @@ Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ pwd
-    C:\Users\zeynep\Masaüstü
+    /Users/olasitarska/Desktop
     
 
 <!--endsec-->
 
 <!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
-    > cd 
-    C:\Users\zeynep\Masaüstü
+    > cd
+    C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
@@ -339,19 +350,19 @@ Now time to delete the `practice` directory:
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
-    $ rm -r uygulama
+    $ rm -r practice
     
 
 <!--endsec-->
 
 <!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
-    > rmdir /S uygulama
-    uygulama, Emin misiniz <E/H>? E
+    > rmdir /S practice
+    practice, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
@@ -360,7 +371,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ ls
     
@@ -369,7 +380,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     > dir
     
@@ -382,7 +393,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}komut satırı{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ exit
     
