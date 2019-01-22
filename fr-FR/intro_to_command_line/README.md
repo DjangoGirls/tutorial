@@ -50,9 +50,9 @@ Chaque commande que vous taperez sera automatiquement précédée par un `$` ou 
 
 > Petite remarque : il se peut que vous voyiez quelque chose comme `C:\Users\ola>` ou `Olas-MacBookAir:~ola$` avant le signe de prompt. Pas de problème : c'est parfaitement normal.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+La partie jusques et y compris le `$` ou le `>` est appelée *l’invite de commande*, ou *prompt* pour faire court. Elle vous invite à entrer une commande.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+Dans le tutoriel, lorsque nous voulons que vous tapiez une commande, nous allons inclure le `$` ou `>` et parfois d'autres information juste avant, à sa gauche. Ignorez cette partie à gauche et tapez uniquement la commande, qui commence après l’invite.
 
 ## Votre première commande (YAY !)
 
