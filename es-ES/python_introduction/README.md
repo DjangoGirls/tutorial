@@ -641,18 +641,20 @@ En una Mac, el comando se verá algo como esto:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-En Linux, va a ser así (la palabra "Desktop" puede estar traducida a tu idioma, escritorio en español):
+On Linux, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
 
+(Remember that the word "Desktop" might be translated to your local language.)
+
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-En Command Prompt en windows, sera así:
+On Windows Command Prompt, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -663,7 +665,7 @@ En Command Prompt en windows, sera así:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-Y en Powershell, será así:
+And on Windows Powershell, it will be like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -672,9 +674,9 @@ Y en Powershell, será así:
 
 <!--endsec-->
 
-Si te atoras, pide ayuda. ¡Justo para eso están aquí los asesores!
+If you get stuck, ask for help. That's exactly what the coaches are here for!
 
-Ahora usa Python para ejecutar el código en el archivo así:
+Now use Python to execute the code in the file like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -682,7 +684,7 @@ Ahora usa Python para ejecutar el código en el archivo así:
     Hello, Django girls!
     
 
-Nota: En Windows 'python3' no es reconocido como comando. En vez usa 'python' para ejecutar el archivo:
+Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
 
 {% filename %}command-line{% endfilename %}
 
@@ -690,15 +692,15 @@ Nota: En Windows 'python3' no es reconocido como comando. En vez usa 'python' pa
 > python python_intro.py
 ```
 
-¡Muy bien! Ejecutaste tu primer programa de Python desde un archivo. ¿Te sientes increíble?
+Alright! You just ran your first Python program that was saved to a file. Feel awesome?
 
-Ahora puedes moverte a una herramienta esencial en la programación:
+You can now move on to an essential tool in programming:
 
 ## If … elif … else
 
-Un montón de cosas en el código sólo deberían ser ejecutadas cuando se cumplan ciertas condiciones. Por eso Python tiene algo llamado **sentencias if**.
+Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Reemplaza el código en tu archivo **python_intro.py** con esto:
+Replace the code in your **python_intro.py** file with this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -706,7 +708,7 @@ Reemplaza el código en tu archivo **python_intro.py** con esto:
 if 3 > 2:
 ```
 
-Si lo guardáramos y lo ejecutáramos, veríamos un error como este:
+If we were to save and run this, we'd see an error like this:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -716,7 +718,7 @@ Si lo guardáramos y lo ejecutáramos, veríamos un error como este:
     SyntaxError: unexpected EOF while parsing
     
 
-Python espera que le demos más instrucciones las cuales se ejecutan si la condición `3 > 2` es verdadera (o `True`). Intentemos hacer que Python imprima "It works!". Cambia tu código en el archivo **python_intro.py** para que se vea como esto:
+Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -725,9 +727,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-¿Observas cómo hemos indentado la siguiente línea de código con 4 espacios? Necesitamos hacer esto para que Python sepa que código ejecutar cuando la condición es verdadera. Podrías poner un solo espacio, pero casi todas las programadores y programadores de Python ponen 4 espacios para que el código sea más legible. Un tabulador también cuenta como 4 espacios (dependiendo de la configuración de tu editor). Elige una forma para indentar, ¡y hazlo siempre igual! Si ya has indentado el código con 4 espacios, hazlo siempre igual. Es importante que la indentación del código sea consistente para evitar problemas.
+Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
-Guárdalo y ejecútalo de nuevo:
+Save it and give it another run:
 
 {% filename %}command-line{% endfilename %}
 
@@ -736,11 +738,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Nota: Recuerda que en Windows, 'python3' no es reconocido como comando. De ahora en adelante, reemplaza 'python3' con 'python' para ejecutar el archivo.
+Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
 
 ### ¿Qué pasa si una condición no es verdadera?
 
-En ejemplos anteriores, el código fue ejecutado sólo cuando las condiciones eran ciertas. Pero Python también tiene declaraciones `elif` y `else`:
+In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -751,7 +753,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-Cuando esto se ejecute imprimirá:
+When this is run it will print out:
 
 {% filename %}command-line{% endfilename %}
 
@@ -759,7 +761,7 @@ Cuando esto se ejecute imprimirá:
     5 is indeed greater than 2
     
 
-Si 2 fuera mayor que 5, entonces se ejecutaría el segundo comando. Vamos a ver como funciona `elif`:
+If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -773,7 +775,7 @@ else:
     print('Hey anonymous!')
 ```
 
-y al ejecutarlo:
+and executed:
 
 {% filename %}command-line{% endfilename %}
 
@@ -781,9 +783,9 @@ y al ejecutarlo:
     Hey Sonja!
     
 
-¿Ves lo que pasó allí?`elif` te permite agregar condiciones adicionales que se ejecutan si la condición previa falla.
+See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
 
-Puede agregar tantas sentencias `elif` como quieras despues de la sentencia `if` inicial. Por ejemplo:
+You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -803,7 +805,7 @@ else:
     print("Me duelen las orejas! :(")
 ```
 
-Python corre a través de cada prueba en secuencia e imprime:
+Python runs through each test in sequence and prints:
 
 {% filename %}command-line{% endfilename %}
 
@@ -813,9 +815,9 @@ Python corre a través de cada prueba en secuencia e imprime:
 
 ## Comentarios
 
-Las líneas que empiezan por `#` son comentarios. Puedes escribir lo que quieres detrás del `#` y Python lo ignorará. Los comentarios sirven para explicar el código a la gente que lo lea en el futuro (¡o incluso a ti misma!).
+Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
-A ver qué pinta tiene:
+Let's see how that looks:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -826,11 +828,11 @@ if volume < 20 or volume > 80:
     print("Mucho mejor!")
 ```
 
-No es necesario que escribas un comentario por cada linea de código, pero son muy útiles para explicar por qué tu código hace algo, o para resumir cuando esta haciendo algo complejo.
+You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
 
 ### Resumen
 
-En los últimos tres ejercicios aprendiste acerca de:
+In the last few exercises you learned about:
 
 - **Comparar cosas** - en Python puedes comparar cosas haciendo uso de `>`, `>=`, `==`, `<=`, `<` y de los operatores `and` y `or`
 - **Boolean** - un tipo de objeto que sólo puede tener uno de dos valores: `True` o `False`
@@ -838,15 +840,15 @@ En los últimos tres ejercicios aprendiste acerca de:
 - **if... elif... else** - sentencias que te permiten ejecutar código sólo cuando se cumplen ciertas condiciones.
 - **comentarios** - líneas que Python no ejecutará que permiten documentar el código
 
-¡Es hora de leer la última parte de este capítulo!
+Time for the last part of this chapter!
 
 ## ¡Tus propias funciones!
 
 > Para lectores en casa: este capítulo está cubierto en el video [Bases de Python: Funciones](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-¿Recuerdas funciones como `len()` que puedes ejecutar en Python? Bueno, te tenemos buenas noticias, ¡ahora aprenderás a escribir tus propias funciones!
+Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
-Una función es una secuencia de instrucciones que Python debe ejecutar. Cada función en Python comienza con la palabra clave `def`, se le asigna un nombre y puede tener algunos parámetros. Vamos a probar. Reemplaza el código en **python_intro.py** con lo siguiente:
+A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -858,11 +860,11 @@ def hi():
 hi()
 ```
 
-Bien, ¡nuestra primera función está lista!
+Okay, our first function is ready!
 
-Te preguntarás por qué hemos escrito el nombre de la función en la parte inferior del archivo. Esto es porque Python lee el archivo y lo ejecuta desde arriba hacia abajo. Así que para poder utilizar nuestra función, tenemos que reescribir su nombre en la parte inferior.
+You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
 
-Ejecutemos esto y veamos qué sucede:
+Let's run this now and see what happens:
 
 {% filename %}command-line{% endfilename %}
 
@@ -871,13 +873,13 @@ Ejecutemos esto y veamos qué sucede:
     How are you?
     
 
-Nota: Si no funcionó, no te preocupes! La salida le ayudará a entender por qué:
+Note: if it didn't work, don't panic! The output will help you to figure why:
 
 - Si te sale `NameError`, probablemente significa que escribiste algo mal, así que deberias comprobar si utilizaste el mismo nombre para crear la función con `def hi():` y al llamarla con `hi()`.
 - Si te sale un `IndentationError`, comprueba que las líneas del `print` tienen el mismo espacio en blanco al comienzo de línea: python requiere que todo el código dentro de la función esté perfectamente alineado.
 - Si no hay ninguna salida, comprueba que el último `hi()` *no esté* identado - si lo está, esa línea también sera parte de la función, y nunca se ejecutará.
 
-Construyamos nuestra primera función con parámetros. Cambiaremos el ejemplo anterior, una función que dice 'hola' a la persona que lo ejecuta, con un nombre:
+Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -885,7 +887,7 @@ Construyamos nuestra primera función con parámetros. Cambiaremos el ejemplo an
 def hi(name):
 ```
 
-Como puedes ver, ahora dimos a nuestra función un parámetro que llamamos `name`:
+As you can see, we now gave our function a parameter that we called `name`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -901,7 +903,7 @@ def hi(name):
 hi()
 ```
 
-Recuerda: La función `print` está indentada cuatro espacios dentro del `if`. Esto es porque la función corre cuando la condición se cumple. Veremos como funciona ahora:
+Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -912,7 +914,7 @@ Recuerda: La función `print` está indentada cuatro espacios dentro del `if`. E
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, un error. Por suerte, Python nos da un mensaje de error bastante útil. Nos dice que la función `hi()` (la que definimos) tiene un argumento requerido (llamado `name`) y que se nos olvidó pasarlo al llamar a la función. Vamos a arreglarlo en la parte inferior del archivo:
+Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -920,7 +922,7 @@ Oops, un error. Por suerte, Python nos da un mensaje de error bastante útil. No
 hi("Ola")
 ```
 
-Y lo ejecutamos de nuevo:
+And run it again:
 
 {% filename %}command-line{% endfilename %}
 
@@ -928,7 +930,7 @@ Y lo ejecutamos de nuevo:
     Hi Ola!
     
 
-¿Y si cambiamos el nombre?
+And if we change the name?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -936,7 +938,7 @@ Y lo ejecutamos de nuevo:
 hi("Sonja")
 ```
 
-Y lo ejecutamos:
+And run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -944,16 +946,16 @@ Y lo ejecutamos:
     Hi Sonja!
     
 
-Ahora, ¿qué crees que suceda si escribes otro nombre ahí? (No Ola ni Sonja) Inténtalo y ve si tienes razón. Debería imprimir esto:
+Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-Esto es increíble, ¿verdad? De esta forma no tienes que repetir todo cada vez que deseas cambiar el nombre de la persona a la que la función debería saludar. Y esa es exactamente la razón por la que necesitamos funciones - ¡para no repetir tu código!
+This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
-Hagamos algo más inteligente: hay más de dos nombres, y escribir una condición para cada uno sería difícil, ¿verdad? Reemplace el contenido de su archivo con lo siguiente:
+Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -964,7 +966,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Ahora vamos a llamar al código:
+Let's call the code now:
 
 {% filename %}command-line{% endfilename %}
 
@@ -972,17 +974,17 @@ Ahora vamos a llamar al código:
     Hi Rachel!
     
 
-¡Felicidades! Acabas de aprender cómo escribir funciones :)
+Congratulations! You just learned how to write functions! :)
 
 ## Bucles
 
 > Para lectores en casa: este capítulo está cubierto en el video [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-Esta es la última parte. ¡Qué rápido! ¿no? :)
+This is the last part already. That was quick, right? :)
 
-A las programadoras no les gusta repetirse a si mismas. Programar es sobre automatizar cosas, entonces no queremos saludar a cada persona por su nombre manualmente, ¿no? Ahí es donde los loops son útiles.
+Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
 
-¿Todavía recuerdas las listas? Hagamos una lista de las chicas:
+Still remember lists? Let's do a list of girls:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -990,7 +992,7 @@ A las programadoras no les gusta repetirse a si mismas. Programar es sobre autom
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-Queremos saludar a todas ellas por su nombre. Tenemos la función `hi` que hace eso, así que vamos a usarla en un bucle:
+We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -998,9 +1000,9 @@ Queremos saludar a todas ellas por su nombre. Tenemos la función `hi` que hace 
 for name in girls:
 ```
 
-La sentencia `for` funciona de forma parecida a la sentencia `if`; el código de dentro tiene que estar indentado con cuatro espacios en ambas.
+The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-Aquí está el código completo que estará en el archivo:
+Here is the full code that will be in the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1014,7 +1016,7 @@ for name in girls:
     print('Next girl')
 ```
 
-Y cuando lo ejecutamos:
+And when we run it:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1031,9 +1033,9 @@ Y cuando lo ejecutamos:
     Next girl
     
 
-Como puedes ver, todo lo que pones con una indentación dentro de una sentencia `for` será repetido para cada elemento de la lista `girls`.
+As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
 
-También se puede usar `for` con números, usando la función `range`:
+You can also use `for` on numbers using the `range` function:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1042,7 +1044,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Lo que imprimirá:
+Which would print:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1053,16 +1055,16 @@ Lo que imprimirá:
     5
     
 
-`range` es una función que crea una lista de números en serie (estos números son proporcionados por ti como parámetros).
+`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
 
-Ten en cuenta que el segundo de estos dos números no será incluido en la lista que retornará Python (es decir, `range(1, 6)` cuenta desde 1 a 5, pero no incluye el número 6). Eso pasa porque "range" está medio-abierto, y con eso queremos decir que incluye el primer valor, pero no el último.
+Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## Resumen
 
-Eso es todo. **¡Eres genial!** Este fue un capítulo difícil, por lo que debes sentirte orgullosa de ti misma. ¡Nosotras estamos orgullosas de ti porque has llegado lejos!
+That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
-Si quieres ver un tutorial de Python oficial y completo, puedes visitar https://docs.python.org/3/tutorial/. Este tutorial te enseñará conocimientos más completos y detallados del lenguaje. ¡Bravo! :)
+For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
 
-Tal vez quieras hacer algo distinto por un momento - estirarte, caminar un poco, descansar tus ojos - antes de pasar al siguiente capítulo. :)
+You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
 ![Cupcake](images/cupcake.png)
