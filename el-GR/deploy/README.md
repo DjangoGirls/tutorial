@@ -185,8 +185,8 @@
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
-    templates  tests.py  urls.py  views.py
+    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+    tests.py  views.py
     
 
 Μπορείτε, επίσης, να μεταβείτε στη σελίδα "Files" και απο κει να περιηγηθείτε χρησιμοποιώντας τον browser του PythonAnywhere. (Από την σελίδα Console, μπορείτε να μεταβείτε στις άλλες σελίδες του PythonAnywhere από το κουμπί menu στην πάνω δεξιά γωνία. Μόλις είστε σε μία από τις σελίδες, υπάρχουν συνδέσεις με τις άλλες πάνω στην κορυφή.)
