@@ -35,11 +35,11 @@ Aby móc się zalogować, musisz utworzyć konto administratora (*superuser*) - 
 
 Po wyświetleniu komunikatu, wpisz swoją nazwę użytkownika (małymi literami, bez spacji), adres e-mail i hasło. ** Nie martw się, że nie widzisz hasła, które wpisujesz - tak powinno być.** Wpisz je i naciśnij klawisz `Enter`, aby kontynuować. Dane wyjściowe powinny wyglądać tak (gdzie nazwa użytkownika i adres e-mail powinny być Twoje):
 
-    Username: ola
-    Email address: ola@example.com
-    Password:
-    Password (again):
-    Superuser created successfully.
+    Username (Nazwa użytkownika): admin
+    Email address: admin@admin.com
+    Password (hasło):
+    Password (again) (hasło (powtórz):
+    Superuser created successfully (Superużytkownik został utworzony).
     
 
 Wróć do przeglądarki. Zaloguj się za pomocą danych logowania administratora, które wybrałaś; powinnaś zobaczyć panel administracyjny Django.
