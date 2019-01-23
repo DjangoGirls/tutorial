@@ -33,7 +33,7 @@ Teraz powinnaś zobaczyć interfejs z bocznym paskiem, duże główne okno z tek
     twojanazwaużytkownika:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Dolny obszar jest twój terminal. Mozęsz użyć go do wysyłania instrukcji do zdalnego zarządzania Cloud 9. Można zmienić rozmiar tego okna, aby je trochę powiększyć.
 
 ### Środowisko wirtualne
 
@@ -60,7 +60,7 @@ Następnie uruchom:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(zauważ, że w ostatniej linii użyliśmy tyldy, za którą następuje znak równości: ~=).
 
 ### GitHub
 
