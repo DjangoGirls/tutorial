@@ -185,8 +185,8 @@ Agora, se quiser, você pode dar uma olhada no seu código no PythonAnywhere usa
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
-    templates  tests.py  urls.py  views.py
+    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+    tests.py  views.py
     
 
 Você também pode visitar a aba "Files" e dar uma olhada usando o gerenciador de arquivos do PythonAnywhere. (Na página do console, você pode navegar para outras páginas do PythonAnywhere pelo botão de menu do canto superior direito. Assim que você estiver em uma das páginas, outros links serão exibidos perto do topo.)
