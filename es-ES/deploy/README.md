@@ -185,8 +185,8 @@ Ahora, si quieres, también puedes ver tu código en PythonAnywhere con el coman
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
-    templates  tests.py  urls.py  views.py
+    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+    tests.py  views.py
     
 
 También puedes ir a la página de ficheros ("Files") y navegar por los ficheros y directorios usando el visor de PythonAnywhere. (Desde la página de la consola ("Console"), puedes ir a cualquier otra página de PythonAnywhere usando el botón de la esquina superior derecha. Desde el resto de páginas, también hay enlaces a las otras en la parte superior.)
