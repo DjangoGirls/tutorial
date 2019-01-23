@@ -200,9 +200,9 @@ Başına `-` ekleyerek sıralamayı tersine de çevirebiliriz:
 [<Post: Nefis bir gönderi>, <Post: Harika bir gönderi>, <Post: Gönderi 2>, <Post: Gönderi 1>]>
 ```
 
-### QuerySets (SorguSetlerini) Zincirlemek (Chaining)
+### Complex queries through method-chaining
 
-Sorgu setlerini **zincirleyerek** beraber kullanabilirsiniz:
+As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
