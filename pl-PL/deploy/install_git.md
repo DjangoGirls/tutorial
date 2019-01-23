@@ -1,11 +1,11 @@
-Git jest "systemem kontroli wersji", którego używa wielu programistów. Program ten śledzi zmiany w plikach na przestrzeni czasu, dzięki czemu możesz później przywracać wybrane wersje tych plików. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git jest "systemem kontroli wersji", którego używa wielu programistów. Program ten śledzi zmiany w plikach na przestrzeni czasu, dzięki czemu możesz później przywracać wybrane wersje tych plików. Jest on podobne do funkcji z "Śledź zmiany" w programach do edytorów tekstu (np. programu Microsoft Word lub LibreOffice Writer), ale znacznie bardziej skuteczny.
 
 ## Instalacja Gita
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Możesz ściągnąć Gita z [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Poza tym domyślne ustawienia są w porządku. Upewnij się jeszcze, że w kroku "Configuring the line ending conversions" wybrana jest opcja "Checkout Windows-style, commit Unix-style line endings".
+Możesz ściągnąć Gita z [git-scm.com](https://git-scm.com/). Możesz nacisnąć "next" na wszystkich krokach z wyjątkiem dwóch: w kroku, w którym prosi o wybranie edytora, powinieneś wybrać Nano, aw kroku zatytułowanym "Adjusting your PATH environment" wybrać "Use Git and optional Unix tools from the Windows Command Prompt" (dolna opcja). Poza tym domyślne ustawienia są w porządku. Upewnij się jeszcze, że w kroku "Configuring the line ending conversions" wybrana jest opcja "Checkout Windows-style, commit Unix-style line endings".
 
 Nie zapomnij zrestartować wiersza polecenia lub Powershell po instalacji zakończonej sukcesem. <!--endsec-->
 
