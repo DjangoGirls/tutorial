@@ -3,9 +3,9 @@
 W zależności od wersji systemu Windows i klawiatury, jedna z poniższych powinna otworzyć okno poleceń (być może trzeba trochę poeksperymentować, ale nie musisz wypróbowywać wszystkich tych sugestii):
 
 - Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
+- Idź do Start menu → Windows System → Command Prompt.
+- Idź do Start menu → All Programs → Accessories → Command Prompt.
+- Idź do początkowego ekranu, najedź myszą w lewym dolnym rogu ekranu i kliknij strzałkę w dół, która się pojawi (na ekranie dotykowym, zamiast tego utwórz ekran z dołu ekranu). Strona aplikacji powinna się otworzyć. Click on Command Prompt in the Windows System section.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
 - Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
 
