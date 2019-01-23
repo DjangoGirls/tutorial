@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > ** Uwaga **: jeśli używasz Chromebooka, dodaj ten wiersz u dołu pliku settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Dodaj również `.c9users.io` do `ALLOWED_HOSTS` jeżeli używasz cloud9
 
 ## Inicjalizacja bazy danych
 
@@ -178,7 +178,7 @@ Jeśli pracujesz na Windowsie i zobaczysz w tym momencie `UnicodeDecodeError`, u
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Teraz musisz sprawdzić, czy Twoja witryna działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer lub cokolwiek, z czego korzystasz) i wprowadź ten adres:
 
 {% filename %}browser{% endfilename %}
 
