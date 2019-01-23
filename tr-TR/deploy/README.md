@@ -186,8 +186,8 @@ Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızd
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
-    templates  tests.py  urls.py  views.py
+    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+    tests.py  views.py
     
 
 "Files" sekmesine giderek de PythonAnywhere in sunduğu arayüz ile dosyaları gezinebilirsiniz. (Sağ üst köşedeki menü butonunu kullanarak, konsol sayfasından diğer PythonAnywhere sayfalarına geçebilirsiniz. Bu sayfaların birindeyken, sayfanın yukarısında diğer sayfalara olan linkleri görebilirsiniz.)
