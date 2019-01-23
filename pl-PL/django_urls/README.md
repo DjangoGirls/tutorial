@@ -21,8 +21,8 @@ Otwórzmy plik `mysite/urls.py` i przyjrzyjmy się jego treści:
 
 [...]
 """
-from django.contrib import admin
-from django.urls import path
+from django.contrib import path, include
+from django.urls import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -56,8 +56,8 @@ Twój plik `mysite/urls.py` powinien teraz wyglądać tak:
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.contrib import admin
-from django.urls import path, include
+from django.contrib import path, include
+from django.urls import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
