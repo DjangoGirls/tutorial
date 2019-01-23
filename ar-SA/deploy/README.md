@@ -181,8 +181,8 @@ Git سوف يتعقب التغييرات لكافة الملفات والمجل�
 >     (ola.pythonanywhere.com) $ ls
 >     blog  db.sqlite3  manage.py  mysite requirements.txt static
 >     (ola.pythonanywhere.com) $ ls blog/
->     __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
->     templates  tests.py  urls.py  views.py
+>     __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+>     tests.py  views.py
 >     
 > 
 > يمكنك أيضا الذهاب إلى صفحة "ملف" وتصفح حولها باستخدام متصفح الملفات المبني في PythonAnywhere. (من صفحة وحدة التحكم، يمكنك الحصول على صفحات أخرى في PythonAnywhere من زر القائمة في الزاوية العلوية اليمنى. وعند تواجدك في إحدى الصفحات، هناك روابط لبعضها الآخر بالقرب من الأعلى.)
