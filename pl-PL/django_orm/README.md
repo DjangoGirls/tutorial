@@ -200,7 +200,7 @@ Możemy także odwrócić kolejność poprzez dodanie `-` na początku:
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Complex queries through method-chaining
+### Złożone kwerendy za pomocą łańcuchów metod
 
 As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
 
