@@ -200,9 +200,9 @@ Now try to get list of published posts again (press the up arrow key three times
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### 쿼리셋(QuerySets) 연결하기
+### Complex queries through method-chaining
 
-쿼리셋들을 함께 **연결(chaining)**할 수도 있어요.
+As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
