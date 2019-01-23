@@ -183,8 +183,8 @@ Git будет отслеживать изменения всех файлов �
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
-    templates  tests.py  urls.py  views.py
+    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+    tests.py  views.py
     
 
 Ты также можешь перейти во вкладку "Files" и перемещаться по PythonAnywhere с помощью встроенного в браузер файлового менеджера. (Со страницы Console ты можешь перейти на другие страницы PythonAnywhere из кнопки меню, расположенной в верхнем правом углу. Если ты находишься на одной из страниц, ссылки на другие страницы расположены рядом сверху.)
