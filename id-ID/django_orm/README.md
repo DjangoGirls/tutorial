@@ -193,9 +193,9 @@ Kita juga bisa membalik pemesanan dengan menambahkan ` - </ 0> di awal:</p>
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 `</pre> 
 
-### Chaining QuerySets
+### Complex queries through method-chaining
 
-Anda juga dapat menggabungkan QuerySets dengan ** chaining </ 0> bersama-sama:</p> 
+As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
