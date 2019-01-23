@@ -44,7 +44,7 @@ Następnie otwórz ten plik w edytorze kodu i skopiuj całą zawartość pliku `
                         <div class="date">
                             {{ post.published_date }}
                         </div>
-                        <h2><a href="">{{ post.title }}</a></h2>
+                        <h1><a href="">{{ post.title }}</a></h1>
                         <p>{{ post.text|linebreaksbr }}</p>
                     </div>
                 {% endfor %}
