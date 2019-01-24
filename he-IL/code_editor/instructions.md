@@ -10,13 +10,13 @@ Our suggestions are below, but feel free to ask your coach what their preference
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+סאבליים הוא עורך קוד מאוד פופולרי עם תקופת נסיון חינמית, מתאים לכל מערכות ההפעלה.
 
 [לחצי כאן להורדה](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+אטום - עוד עורך קוד פופולרי, חינמי, מבוסס קוד פתוח אשר מתאים לכל מערכות ההפעלה. אטום מפותח על ידי GitHub.
 
 [לחצי כאן להורדה](https://atom.io/)
 
