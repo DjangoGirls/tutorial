@@ -182,7 +182,7 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-경고: 당신이 편집한 파일들을 저장하는것을 잊지 마세요. 만약 그렇지 않으면 에러 메시지가 보이는 이전 코드가 실행될거에요.
+주의: 수정한 파일들을 저장하는것을 잊지 마세요. 만약 그렇지 않으면 에러 메시지가 보이는 이전 코드가 실행될거에요.
 
 Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
 
