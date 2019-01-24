@@ -99,18 +99,18 @@ HTML (от англ. "HyperText Markup Language") - язык гипертекс�
 
 Ты можешь немного повеселиться сейчас и попробовать настроить шаблон по своему вкусу! Вот несколько полезных тегов:
 
-* `<h1>A heading</h1>` for your most important heading
+* `<h1>Заголовок</h1>` - главный заголовок страницы
 * `<h2>Подзаголовок</h2>` для заголовков второго уровня
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
+* `<h3>Заголовок третьего уровня</h3>` ... и так далее, вплоть до `<h6>`
+* `<p>Текстовый параграф</p>`
 * `<em>текст</em>` подчеркивает твой текст
 * `<strong>текст</strong>` - жирный шрифт
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<br>` переход на следующую строку (внутрь br тега нельзя ничего поместить и закрывающий тег отсутствует)
 * `<a href="https://djangogirls.org">link</a>` создает ссылку
 * `<ul><li>первый элемент</li><li>второй элемент</li></ul>` создает список, такой же как этот!
 * `<div></div>` определяет раздел страницы
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Вот пример полного шаблона, скопируйте и вставьте его в `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -141,22 +141,22 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
 Мы создали три `div` элемента.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Первый элемент `div` содержит название нашего блока, которое также является ссылкой
+* Два других `div` элемента содержат текст записи блога и дату публикации, `h2` тег с заголовком записи, который также является ссылкой, и два `p` (параграфа) с текстом, один для даты и другой для самого текста записи.
 
 Это даст нам следующий эффект:
 
 ![Рисунок 11.4](images/step6.png)
 
-Ура! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Ура! Однако, до сих пор наш шаблон отображал лишь **одну и ту же информацию** - тогда как раньше мы говорили, что шаблоны позволяют нам отображать **различную** информацию в **одном и том же формате**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Что мы действительно хотим - это отображать существующие записи, добавленные через панель администратора Django, этим и займемся в следующий раз.
 
 ## Еще одно: развертывание!
 
 Хотелось бы увидеть все это в живую в интернете, согласна? Давай проведем еще одно развертывание веб-сайта на PythonAnywhere:
 
-### Commit, and push your code up to GitHub
+### Commit и push кода в репозиторий Github
 
 Во-первых, давай посмотрим, какие файлы были изменены с момента последнего развертывания (выполни эти команды локально, не на PythonAnywhere):
 
@@ -165,7 +165,7 @@ What we really want to do is display real posts added in our Django admin – an
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Убедись, что находишься в директории `djangogirls` и сообщи `git` выбрать все изменения в пределах этой папки:
 
 {% filename %}command-line{% endfilename %}
 
@@ -190,7 +190,7 @@ Make sure you're in the `djangogirls` directory and let's tell `git` to include 
 
 > **Примечание**: Убедись что используешь двойные кавычки вокруг комментария.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+После того, как мы сделали это, мы загрузим (сделаем push) изменения на Github:
 
 {% filename %}command-line{% endfilename %}
 
@@ -208,9 +208,9 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Не забудьте заменить `<your-pythonanywhere-username>` на ваше фактическое имя пользователя PythonAnywhere, без угловых скобок).
 
-And watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+Наблюдайте как ваш код загружается. Если хочешь проверить, загрузился ли он, можешь перейти в **"Files" page** и посмотреть свой код на PythonAnywhere (можешь также переходить на другие страницы PythonAnywhere из кнопки меню на странице с консолью).
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
 
