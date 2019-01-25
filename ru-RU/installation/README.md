@@ -2,7 +2,7 @@
 
 Если ты занимаешься по этому руководству дома, а не на одной из [встреч Django Girls](https://djangogirls.org/events/), то можешь пропустить этот раздел и сразу перейти к главе [Как работает интернет](../how_the_internet_works/README.md).
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+Это потому, что мы раскрываем тему установок, так как они необходимы в тьюториалах -- это просто дополнительная страница, которая собирает все инструкции по установке в одном месте (что полезно для некоторых форматов воркшопов). Вы можете выбрать для установки все, что находится на этой странице прямо сейчас, если хотите. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
 Удачи!
 
