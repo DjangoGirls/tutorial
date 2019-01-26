@@ -189,7 +189,7 @@ Wenn du ein Chromebook und Cloud9 verwendest, dann klicke stattdessen die URL im
 
 {% filename %}browser{% endfilename %}
 
-    https://&lt;a bunch of letters and numbers&gt;.vfs.cloud9.us-west-2.amazonaws.com
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 Glückwunsch! Du hast gerade deine erste Website erstellt und sie auf deinem Webserver laufen! Ist das nicht toll?
