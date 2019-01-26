@@ -91,7 +91,7 @@ Der Titel "Olas Blog" wird nun im Browser angezeigt. Hast du es bemerkt? Der Bro
 
 Wie du vielleicht bemerkt hast, hat jedes Element zu Beginn einen öffnenden Tag und einen zugehörigen *schließenden Tag* mit `/` und innerhalb davon sind Elemente *eingebettet*. Ein innerer Tag kann nicht außerhalb des umschließenden Tags geschlossen werden, die Reihenfolge muss immer stimmen.
 
-Es ist wie, wenn man Sachen in Kisten steckt. Du hast eine große Kiste, `&lt;html&gt;&lt;/html&gt;`. In der ist `&lt;body&gt;&lt;/body&gt;` drin, und in der wiederum weitere kleine Kistchen: `&lt;p&gt;&lt;/p&gt;`.
+Es ist wie, wenn man Sachen in Kisten steckt. Du hast eine große Kiste, `<html></html>`. In der ist als weitere Kiste `<body></body>` drin, und in der wiederum weitere kleine Kistchen: `<p></p>`.
 
 Die Regeln und Reihenfolgen von *schließenden* Tags und *Verschachtelung* der Elemente musst du immer einhalten. Anderenfalls können Browser die Seite nicht richtig interpretieren und darstellen.
 
