@@ -11,12 +11,12 @@ Viel Erfolg!
 Wenn du an einer [Django Girls Veranstaltung](https://djangogirls.org/events/) teilnimmst:
 
 * Vielleicht hat deine Veranstaltung eine "Installationsparty" vor dem eigentlichen Workshoptag. Wenn du gerade auf einer Installationsparty bist, ist das deine Seite! Folge den Anweisungen hier, um alles Notwendige für den Workshop zu installieren. Frage deinen Coach, wenn du Hilfe brauchst. Am Workshoptag kannst du dann die Installationsanweisungen überspringen, wenn du im Tutorial darauf stößt.
-* Vielleicht haben die Organisatoren des Workshops dich gebeten, zu versuchen, schon zu Hause möglichst alles benötigte auf deinem Computer zu installieren. Wenn du dazu aufgefordert wurdest, dann ist das deine Seite! Folge den Anweisungen hier so gut, wie du kannst. Wenn du am Workshoptag dann im Tutorial auf einen Installationsschritt triffst, der dir zu Hause nicht gelungen ist, fragst du deinen Coach um Hilfe.
+* Vielleicht haben die Organisatoren des Workshops dich gebeten, zu versuchen, schon zu Hause möglichst alles benötigte auf deinem Computer zu installieren. Wenn du dazu aufgefordert wurdest, dann ist das deine Seite! Folge den Anweisungen hier so gut, wie du kannst. Wenn du am Workshoptag dann im Tutorial auf einen Installationsschritt triffst, der dir zu Hause nicht gelungen ist, frage deinen Coach um Hilfe.
 * Wenn dein Workshop keine Installationsparty hat (oder du nicht teilnehmen konntest) und die Organisatorien dich nicht gebeten haben, alles zu Hause zu installieren, dann überspring die Seite und geh direkt zum Kapitel [Wie das Internet funktioniert](../how_the_internet_works/README.md). Denn du wirst dann alles installieren, während du das Tutorial durcharbeitest.
 
 # Installation
 
-In diesem Tutorial wirst du einen Blog bauen. Dafür wirst du während des Tutorials aufgefordert, verschiedene Software auf deinem Computer zu installieren und auch einige Online-Konten anzulegen, wenn sie gebraucht werden. Diese Seite fasst alle Installations- und Kontoeinrichtungsanweisungen an einer Stelle zusammen (das ist für einige Workshopformate sinnvoll).
+In diesem Tutorial wirst du einen Blog bauen. Dafür wirst du während des Tutorials aufgefordert, verschiedene Software auf deinem Computer zu installieren und auch einige Online-Konten anzulegen, wenn sie gebraucht werden. Diese Seite fasst alle Installations- und Kontoeinrichtungs-Anweisungen an einer Stelle zusammen (das ist für einige Workshopformate sinnvoll).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
