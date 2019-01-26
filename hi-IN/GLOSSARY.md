@@ -1,3 +1,3 @@
 # कोड एडिटर
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the Coding is for girls YouTube channel. In every chapter already covered, there is a link that points to the correct video. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
