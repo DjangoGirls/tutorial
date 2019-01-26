@@ -91,9 +91,9 @@ Der Titel "Olas Blog" wird nun im Browser angezeigt. Hast du es bemerkt? Der Bro
 
 Wie du vielleicht bemerkt hast, hat jedes Element zu Beginn einen öffnenden Tag und einen zugehörigen *schließenden Tag* mit `/` und innerhalb davon sind Elemente *eingebettet*. Ein innerer Tag kann nicht außerhalb des umschließenden Tags geschlossen werden, die Reihenfolge muss immer stimmen.
 
-Es ist wie, wenn man Sachen in Kisten steckt. In die größte Box: `<html></html>` kommt eine kleinere Box: `<body></body>`, und dort wiederum packen wir viele kleine Kisten hinein: `<p></p>`.
+Es ist, wie wenn man Sachen in Kisten steckt. Du hast eine große Kiste, `<html></html>`. In der ist als weitere, etwas kleinere Kiste `<body></body>` drin, und in der wiederum weitere kleine Kistchen: `<p></p>`.
 
-Die Regeln und Reihenfolgen von _schließenden_ Tags und _Verschachtelung_ der Elemente musst du immer einhalten. Anderenfalls können Browser die Seite nicht richtig interpretieren und darstellen.
+Die Regeln und Reihenfolgen von *schließenden* Tags und *Verschachtelung* der Elemente musst du immer einhalten. Anderenfalls können Browser die Seite nicht richtig interpretieren und darstellen.
 
 ## Dein Template anpassen
 
@@ -108,7 +108,7 @@ Jetzt kannst du ein bisschen rumprobieren und dein Template umgestalten! Hier si
 * `<br>` fängt eine neue Zeile an (du kannst nichts in das br schreiben und es gibt keinen schließenden Tag)
 * `<a href="https://djangogirls.org">link</a>` erstellt einen Link
 * `<ul><li>Erster Punkt</li><li>second item</li></ul>` generiert eine Liste so wie diese hier!
-* `<div></div>` definiert einen Abschnitt auf einer Seite</ul> 
+* `<div></div>` definiert einen Abschnitt auf einer Seite
 
 Hier ist ein vollständiges Beispiel eines Templates. Kopiere es und füge es in `blog/templates/blog/post_list.html` ein:
 

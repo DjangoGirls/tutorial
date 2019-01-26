@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-Wir haben unsere erste Fehlermeldung (Error) erhalten! Das {{ warning_icon }} Icon ist das Zeichen von Python, dass der eingegebene Code nicht den Programmierregeln von Python entspricht und damit nicht das tut, was wir erwarten würden. Fehler zu machen (selbst absichtlich) ist ein wesentlicher Teil beim Lernen!
+Wir haben unsere erste Fehlermeldung (Error) erhalten! Mit dem Icon {{ warning_icon }} teilen wir dir in diesem Tutorial jeweils mit, dass der einzugebende Code nicht wie erwartet funktionieren wird. Fehler zu machen (selbst absichtlich) ist ein wesentlicher Teil beim Lernen!
 
 Unser erster Fehler sagt, dass Objekte vom Typ "int" (Integers, das sind ganze Zahlen) keine Länge haben. Was also nun? Vielleicht sollten wir unsere Zahl als String schreiben? Denn bei Strings funktioniert es ja, wie wir wissen.
 
@@ -609,7 +609,7 @@ Um den Python-Interpreter zu beenden, nutze die `exit()`-Funktion
 
 Nun siehst du wieder den normalen Kommandozeilen-Prompt.
 
-Im Kapitel [Code-Editor](../code_editor/README.md) haben wir uns bereits einen Code-Editor ausgewählt. Nun öffnen wir den Code-Editor und schreiben folgenden Code in eine neue Datei (wenn du ein Chromebook benutzt, dann erstelle eine neue Datei in der Cloud-IDE, öffne sie und du befindest dich automatisch im integrierten Code-Editor):
+Im Kapitel [Code-Editor](../code_editor/README.md) haben wir uns bereits einen Code-Editor ausgesucht. Nun öffnen wir den Code-Editor und schreiben folgenden Code in eine neue Datei (wenn du ein Chromebook benutzt, dann erstelle eine neue Datei in der Cloud-IDE, öffne sie und du befindest dich automatisch im integrierten Code-Editor):
 
 {% filename %}editor{% endfilename %}
 
@@ -640,12 +640,14 @@ Auf einem Mac sieht das etwa so aus:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Unter Linux ist es ähnlich ("Desktop" könnte bei Dir allerdings "Schreibtisch" heißen):
+Unter Linux ist es ähnlich:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
+
+(Denk daran, dass das "Desktop"-Verzeichnis bei dir "Schreibtisch" heißen kann.)
 
 <!--endsec-->
 
@@ -709,13 +711,13 @@ Würden wir das nun speichern und anschließend ausführen, würden wir einen Fe
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
-    $ python3 python_intro.py 
-    File "python_intro.py", line 2   
-             ^ 
+    $ python3 python_intro.py
+    File "python_intro.py", line 2
+             ^
     SyntaxError: unexpected EOF while parsing
     
 
-Python erwartet hier noch weiteren Programmcode, der ausgeführt werden soll, wenn die Bedingung `3 > 2` wahr ist (also `True` ergibt). Lassen wir Python “It works!” ausgeben. Ändere den Code in **python_intro.py** zu:
+Python erwartet hier noch weiteren Programmcode, der ausgeführt werden soll, wenn die Bedingung `3 > 2` wahr ist (also `True` ergibt). Versuchen wir, Python “It works!” ausgeben zu lassen. Ändere den Code in **python_intro.py** zu:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -724,7 +726,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Du fragst dich nun, warum wir die angefügte Zeile mit 4 Leerzeichen eingerückt haben? Damit teilen wir Python mit, dass dieser Code ausgeführt werden soll, wenn die vorhergehende Bedingung True ergeben hat. Du könntest auch eine andere Anzahl von Leerzeichen wählen, aber fast alle Python-Programmier nutzen 4 Leerzeichen, damit's gut aussieht. Ein einfaches Tab zählt auch wie 4 Leerzeichen, insofern dies in deinem Editor so eingestellt ist. Wenn du dich einmal entschieden hast, bleib dabei! Wenn du mit 4 Leerzeichen angefangen hast, solltest du alle weiteren Einrückungen auch mit 4 Leerzeichen machen, anderweitig könnte das Probleme verursachen.
+Du fragst dich nun, warum wir die angefügte Zeile mit 4 Leerzeichen eingerückt haben? Damit teilen wir Python mit, dass dieser Code ausgeführt werden soll, wenn die vorhergehende Bedingung True ergeben hat. Du könntest auch eine andere Anzahl von Leerzeichen wählen, aber fast alle Python-Programmier nutzen 4 Leerzeichen, damit's gut aussieht. Ein einfaches Tab zählt auch wie 4 Leerzeichen, sofern dies in deinem Editor so eingestellt ist. Wenn du dich einmal entschieden hast, bleib dabei! Wenn du mit 4 Leerzeichen angefangen hast, solltest du alle weiteren Einrückungen auch mit 4 Leerzeichen machen, anderweitig könnte das Probleme verursachen.
 
 Nun sichere die Datei und führe sie noch einmal aus:
 
@@ -763,12 +765,12 @@ Wenn 2 größer als 5 wäre, würde die zweite Anweisung (die nach dem else) aus
 {% filename %}python_intro.py{% endfilename %}
 
 ```python
-name = 'Sonja' 
-if name == 'Ola': 
+name = 'Sonja'
+if name == 'Ola':
     print('Hey Ola!')
-elif name == 'Sonja': 
-    print('Hey Sonja!') 
-else: 
+elif name == 'Sonja':
+    print('Hey Sonja!')
+else:
     print('Hey anonymous!')
 ```
 
@@ -782,7 +784,7 @@ und ausgeführt erhalten wir:
 
 Hast du bemerkt, was passiert ist? `elif` lässt dich zusätzliche Bedingungen hinzufügen, die geprüft werden, falls die vorherige fehlschlägt.
 
-Du kannst so viele `elif` Bedingungen nach der anfänglichen `if` Anweisung hinzufügen, wie du magst. Zum Beispiel:
+Du kannst so viele `elif`-Bedingungen nach der anfänglichen `if`-Anweisung hinzufügen, wie du magst. Zum Beispiel:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -884,7 +886,7 @@ Als Nächstes bauen wir Funktionen mit sogenannten Argumenten. Wir werden das ge
 def hallo(name):
 ```
 
-Wie du siehst geben wir der Funktion jetzt einen Parameter, den wir `name` nennen:
+Wie du siehst, geben wir der Funktion jetzt einen Parameter, den wir `name` nennen:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -900,7 +902,7 @@ def hallo(name):
 hallo()
 ```
 
-Denk daran: Die `print` Funktion ist 4 Leerzeichen innerhalb der `if`-Anweisung eingerückt. Das ist sinnvoll, da die Funktion ausgeführt wird, wenn die Bedingung eintritt. Mal sehen, wie das jetzt funktioniert:
+Denk daran: Die `print`-Funktion ist 4 Leerzeichen innerhalb der `if`-Anweisung eingerückt. Das ist sinnvoll, da die Funktion ausgeführt wird, wenn die Bedingung eintritt. Mal sehen, wie das jetzt funktioniert:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -952,7 +954,7 @@ Nun, was denkst du, wird passieren, wenn du einen anderen Namen dort hinein schr
 
 Das ist genial, oder? Auf diese Weise musst du dich nicht jedesmal wiederholen, wenn du den Namen der Person änderst, die die Funktion grüßen soll. Und das ist genau der Grund, warum wir Funktionen brauchen – du willst auf keinem Fall deinen Code wiederholen!
 
-Lass uns noch etwas Eleganteres probieren - es gibt schließlich mehr als zwei Namen und für jeden eine eigene Bedingung aufzuschreiben, wäre ziemlich aufwendig, oder? Ersetze also deinen Code in der Datei durch den folgenden:
+Lass uns noch etwas Schlaueres probieren – es gibt schließlich mehr als zwei Namen und für jeden eine eigene Bedingung aufzuschreiben, wäre ziemlich aufwendig, oder? Ersetze also deinen Code in der Datei durch den folgenden:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1054,7 +1056,7 @@ Das würde ausgeben:
 
 `range` ist eine Funktion, die eine Liste von aufeinander folgenden Zahlen erschafft (die Randwerte werden von dir als Argumente bereitgestellt).
 
-Beachte, dass der zweite der Werte, die du als Argumente übergibst, nicht in der Liste enthalten ist, die von Python ausgegeben wird. (Das bedeutet, dass `range(1, 6)` von 1 bis 5 zählt, aber nicht die Zahl 6 enthält). Die liegt daran, dass "range" halboffen ist, was wiederum bedeutet, dass es den ersten Wert enthält, aber nicht den letzten.
+Beachte, dass der zweite der Werte, die du als Argumente übergibst, nicht in der Liste enthalten ist, die von Python ausgegeben wird. (Das bedeutet, dass `range(1, 6)` von 1 bis 5 zählt, aber nicht die Zahl 6 enthält). Das liegt daran, dass "range" halboffen ist, was wiederum bedeutet, dass es den ersten Wert enthält, aber nicht den letzten.
 
 ## Zusammenfassung
 

@@ -16,27 +16,7 @@ Das Fenster, welches gewöhnlich die **Kommandokonsole** (command line) oder **K
 
 ## Öffnen der Konsole
 
-Um mit unserem Tutorial zu starten, musst du als Erstes das Kommandozeilenprogramm starten.
-
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Windows 10: Drücke die Windows-Taste → gib in die Suchleiste “cmd” ein → bestätige mit Enter.
-
-> Ältere Versionen von Windows: Start Menu → Alle Programme → Zubehör → Eingabeaufforderung.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Mac: Öffne das Launchpad → Andere → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-Wahrscheinlich ist es unter Programme → Zubehör → Terminal, aber das ist von deinem System abhängig. Wenn es nicht da ist, kannst du versuchen, danach zu googlen. :)
-
-<!--endsec-->
+Um mit ein paar Experimenten zu beginnen, müssen wir erstmal die Kommandozeile öffnen. {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Eingabeaufforderung (Prompt)
 
@@ -62,11 +42,11 @@ Auf einem Windows-Rechner siehst du wahrscheinlich ein `>`, so hier:
     >
     
 
-Schau mal in den Linux-Abschnitt hier obendrüber -- so etwas wirst du wieder im Abschnitt PythonAnywhere später im Tutorial antreffen.
+Schau 'mal in den Linux-Abschnitt hier obendrüber -- so etwas wirst du wieder im Abschnitt PythonAnywhere später im Tutorial antreffen.
 
 <!--endsec-->
 
-Vor jedem Kommando wird das Zeichen `$` oder `>` und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich. :-)
+Vor jedem Kommando wird das Zeichen `$` oder `>` und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich. :)
 
 > Ein kleiner Hinweis: Falls du etwas in der Art wie `C:\Users\ola>` oder `Olas-MacBook-Air:~ ola$` sehen solltest, ist das auch 100%ig korrekt.
 
@@ -104,7 +84,7 @@ Und dann bestätige mit `Enter`. Das ist unser Ergebnis:
     olasitarska
     
 
-Wie du siehst, der Computer hat deinen Nutzernamen ausgegeben. Toll, was? :-)
+Wie du sehen kannst, hat der Computer gerade deinen Benutzernamen ausgegeben. Toll, was? :)
 
 > Versuch, jeden Befehl abzuschreiben und nicht zu kopieren und einzufügen. Auf diese Weise wirst du dir mehr merken!
 
@@ -150,7 +130,7 @@ Viele Befehle, die du in der Kommandozeile nutzen kannst, haben eine eingebaute 
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X und Linux haben einen `man`-Befehl, mit dem du die Hilfe über die Kommandos aufrufen kannst. Gib `man pwd` ein und schau, was angezeigt wird oder setzte `man` vor andere Kommandos und sieh dir deren Hilfe an. Das Ergebnis von `man` wird in der Regel seitenweise ausgegeben. Du kannst die Leertaste benutzen, um auf die nächste Seite zu gelangen und `q`, um die Hilfeseiten zu schließen.
+OS X und Linux haben einen `man`-Befehl, mit dem du die Hilfe über die Kommandos aufrufen kannst. Gib `man pwd` ein und schau, was angezeigt wird oder setzte `man` vor andere Kommandos und sieh dir deren Hilfe an. Das Ergebnis von `man` wird in der Regel seitenweise ausgegeben. Du kannst die Leertaste benutzen, um auf die nächste Seite zu gelangen und `q` (für engl. "quit", was "verlassen"/"rausgehen" heisst), um die Hilfeseiten zu schließen.
 
 <!--endsec-->
 
@@ -190,7 +170,7 @@ Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden.
      05/08/2014 07:28 PM <DIR> Music ...
     
 
-> Hinweis: Mit Powershell kannst du auch 'ls' vwerden, wie auf Linux oder Mac OS X. <!--endsec-->
+> Hinweis: Mit Powershell kannst du auch 'ls' verwenden, wie auf Linux oder Mac OS X. <!--endsec-->
 
 * * *
 
@@ -198,12 +178,23 @@ Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden.
 
 Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ cd Desktop
     
+
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd Desktop
+    
+
+Wenn dein Linux-Benutzerkonto auf Deutsch eingestellt ist, kann es sein, dass auch der Name des Desktop-Verzeichnisses übersetzt ist. Wenn dem so ist, musst du im obigen Befehl `Desktop` durch den übersetzten Verzeichnisnamen `Schreibtisch` ersetzen.
 
 <!--endsec-->
 
@@ -238,9 +229,9 @@ Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
 <!--endsec-->
 
-Hier ist es!
+Passt!
 
-> Pro-Tipp: Wenn du `cd D` tippst und dann `tab` auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit "D" beginnt, drücke die `tab`-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.
+> Profi-Tipp: Wenn du `cd D` tippst und dann `tab` auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit "D" beginnt, drücke die `tab`-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.
 
 * * *
 
@@ -266,9 +257,9 @@ Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kan
 
 <!--endsec-->
 
-Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :-)
+Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :)
 
-> Pro-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die `Pfeil aufwärts`- und `Pfeil abwärts`-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.
+> Profi-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die `Pfeil aufwärts`- und `Pfeil abwärts`-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.
 
 * * *
 
@@ -283,8 +274,8 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 {% filename %}command-line{% endfilename %}
 
     $ cd practice
-    $ mkdir test 
-    $ ls test
+    $ mkdir test
+    $ ls
     test
     
 
@@ -294,15 +285,15 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice 
-    > mkdir test 
-    > dir 
-    05/08/2014 07:28 PM <DIR>   test
+    > cd practice
+    > mkdir test
+    > dir
+    05/08/2014 07:28 PM <DIR>      test
     
 
 <!--endsec-->
 
-Glückwunsch! :-)
+Glückwunsch! :)
 
 * * *
 
@@ -330,7 +321,7 @@ Zuerst müssen wir zurück zum Desktop wechseln:
 
 <!--endsec-->
 
-Durch Verwendung von `..` mit dem `cd` Kommando wechselst du von deinem aktuellen Verzeichnis zum übergeordneten Verzeichnis (dies ist das Verzeichnis, das das aktuelle Verzeichnis enthält).
+Durch Verwendung von `..` mit dem `cd`-Kommando wechselst du von deinem aktuellen Verzeichnis zum übergeordneten Verzeichnis (dies ist das Verzeichnis, das das aktuelle Verzeichnis enthält).
 
 Schau nach, wo du gerade bist:
 
@@ -356,7 +347,7 @@ Schau nach, wo du gerade bist:
 
 Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
 
-> **Achtung**: Wenn du Daten mit `del`, `rmdir` oder `rm` löschst, kannst du das nicht mehr rückgängig machen, das bedeutet *die gelöschten Dateien sind für immer weg*! Sei also sehr vorsichtig mit diesem Befehl.
+> **Achtung**: Wenn du Daten mit `del`, `rmdir` oder `rm` löschst, kannst du das nicht mehr rückgängig machen, das bedeutet, *die gelöschten Dateien sind für immer weg*! Sei also sehr vorsichtig mit diesem Befehl.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -371,7 +362,7 @@ Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S practice 
+    > rmdir /S practice
     practice, Are you sure <Y/N>? Y
     
 
@@ -399,7 +390,7 @@ Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 ### Beenden
 
-Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :-)
+Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -419,7 +410,7 @@ Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es 
 
 <!--endsec-->
 
-Cool, was? :-)
+Cool, was? :)
 
 ## Zusammenfassung
 
