@@ -2,9 +2,9 @@
 
 Еще одной удобной вещью в Django является **расширение шаблонов**. Что это значит? Ты можешь использовать различные блоки HTML-кода для разных частей своего веб-сайта.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Шаблоны помогают, когда вы хотите использовать одну и ту же информацию или один и тот же макет в более чем одном месте. Вам не придется повторяться в каждом файле. И если вы хотите что-то изменить, то вы не должны делать это в каждом шаблоне, так как он всего один!
 
-## Create a base template
+## Создаем базовый шаблон
 
 Базовый шаблон - это наиболее общая типовая форма страницы, которую ты расширяешь для отдельных случев.
 
@@ -17,7 +17,7 @@ Templates help when you want to use the same information or layout in more than 
                 post_list.html
     
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+Теперь открой его в редакторе кода и скопируй все из `post_list.html` файла в `base.html` файл примерно так:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+Готово! Сохрани файл и проверь, работает ли твой веб-сайт нормально. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Если у тебя появилась ошибка `TemplateDoesNotExist`, это означает, что отсутствует файл `blog/base.html` и в консоли работает `runserver`. Попробуй остановить его (одновременным нажатием Ctrl+C - клавиш Control и C одновременно) и перезапусти сервер с помощью команды `Python manage.py runserver`.
