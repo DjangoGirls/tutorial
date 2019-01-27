@@ -39,4 +39,4 @@
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – вы можете просмотреть большинство курсов бесплатно, но если вы хотите сертификат или подтверждение квалификации высшего образования, то это будет стоить денег
 - [Dataquest](https://www.dataquest.io/) – первые 30 «миссий» бесплатно
 
-We can't wait to see what you build next!
+Ждем с нетерпением твой следующий проект!
