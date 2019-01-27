@@ -56,7 +56,7 @@ Dans le tutoriel, lorsque nous voulons que vous tapiez une commande, nous allons
 
 ## Votre première commande (YAY !)
 
-Let's start by typing this command:
+Commençons en tapant cette commande :
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -76,7 +76,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Puis, appuyez sur la touche `entrée`. Voilà ce qui s'affiche chez moi :
 
 {% filename %}command-line{% endfilename %}
 
@@ -84,17 +84,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Comme vous pouvez le voir, l'ordinateur vient d'afficher votre nom d'utilisateur. Sympa, non ? ;)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Essayez de taper chaque commande sans copier-coller. Ça aide à les retenir !
 
 ## Les bases
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Les différents systèmes d'exploitation ont des commandes légèrement différentes, donc faites attention à suivre les instructions pour votre système d'exploitation. Allons-y !
 
 ### Dossier courant
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Ce serait pratique de savoir dans quel répertoire nous nous trouvons. Pour le savoir, tapez la commande suivante et appuyez sur `entrée` :
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -104,7 +104,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Remarque : "pwd" veut dire "print working directory" (afficher le dossier courant).
 
 <!--endsec-->
 
@@ -116,21 +116,21 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Remarque : "cd" veut dire "change directory" (changer de répertoire). Avec powershell vous pouvez utiliser la commande pwd exactement comme sur Linux ou Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Vous verrez probablement quelque chose de similaire sur votre machine. Quand vous ouvrez une ligne de commande, vous démarrez habituellement dans le dossier personnel de votre utilisateur.
 
 * * *
 
-### Learn more about a command
+### En savoir plus sur une commande
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+De nombreuses commandes que vous pouvez taper à l’invite de commande ont une aide intégrée que vous pouvez afficher et lire ! Par exemple, pour en savoir plus sur la commande pwd :
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X et Linux ont une commande `man`, qui donne des informations sur les commandes. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
