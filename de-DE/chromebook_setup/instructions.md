@@ -33,7 +33,7 @@ Jetzt solltest du eine Benutzeroberfläche mit Seitenleiste, ein grosses Fenster
     deinbenutzername:~/workspace $
     
 
-Dieser untere Bereich ist dein Terminal. Dort kannst du Kommandos für den Computer eingeben kannst, den dir Cloud 9 zur Verfügung stellt. Du kannst dieses Fenster vergrößern oder verkleinern.
+Dieser untere Bereich ist dein Terminal. Dort kannst du Kommandos für den Computer eingeben, den dir Cloud 9 zur Verfügung stellt. Du kannst dieses Fenster vergrößern oder verkleinern.
 
 ### Virtuelle Umgebung
 
