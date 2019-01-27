@@ -10,17 +10,17 @@
 
 ### Можем ли мы посоветовать дополнительные ресурсы для обучения?
 
-Да! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Да! Есть *много* онлайн-ресурсов для изучения всех видов языков программирования - это может быть довольно сложно определиться, куда идти дальше, но мы поможем разобраться с этим. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- Еще одна наша книга, [Django Girls Учебник: расширения](https://tutorial-extensions.djangogirls.org/)
+- [Django официальный учебник](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Начало работы с Django видео уроки](http://www.gettingstartedwithdjango.com/)
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS и JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Курс веб-разработки на Codecademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
