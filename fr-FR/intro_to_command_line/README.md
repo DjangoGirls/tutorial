@@ -322,16 +322,16 @@ D'abord, revenons au Bureau :
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Grâce à `...` et la commande `cd`, vous pouvez aller directement dans le dossier parent de votre répertoire courant (c'est à dire le dossier qui contient le dossier dans lequel vous étiez).
 
-Check where you are:
+Vérifiez où vous êtes :
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/olasitarska/Desktop
+    /Users/olasitarska/Bureau
     
 
 <!--endsec-->
@@ -341,20 +341,20 @@ Check where you are:
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Users\olasitarska\Desktop
+    C:\Users\olasitarska\Bureau
     
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Maintenant, il est temps de supprimer notre dossier `exercices` :
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Attention** : Supprimer des fichiers avec `del`, `rmdir` ou `rm` est irrévocable, ce qui veut dire que *les fichiers supprimés sont perdus à jamais* ! Du coup, faites très attention avec cette commande.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r practice
+    $ rm -r exercices
     
 
 <!--endsec-->
@@ -363,13 +363,13 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+    > rmdir /S exercices
+    exercices, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Et voilà. Pour être sure que le dossier a bien été supprimé, vérifiez :
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -389,9 +389,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Sortir
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+C'est tout pour le moment ! Vous pouvez maintenant fermer la ligne de commande. Faisons-le à la manière des bidouilleurs⋅euses, OK ? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -411,29 +411,29 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Cool, non ? :)
 
 ## Résumé
 
-Here is a summary of some useful commands:
+Voici un résumé de quelques commandes utiles :
 
-| Commande (Windows) | Commande (Mac OS / Linux) | Description                 | Exemple                                            |
-| ------------------ | ------------------------- | --------------------------- | -------------------------------------------------- |
-| sortir             | sortir                    | ferme la fenêtre            | **sortir**                                         |
-| cd                 | cd                        | change le dossier courant   | **cd test**                                        |
-| cd                 | pwd                       | show the current directory  | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
-| dir                | ls                        | liste des fichiers/dossiers | **dir**                                            |
-| copy               | cp                        | copie un fichier            | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move               | mv                        | déplace un fichier          | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir              | mkdir                     | crée un nouveau dossier     | **mkdir testdirectory**                            |
-| rmdir (or del)     | rm                        | delete a file               | **del c:\test\test.txt**                         |
-| rmdir /S           | rm -r                     | delete a directory          | **rm -r testdirectory**                            |
-| [CMD] /?           | man [CMD]                 | get help for a command      | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Commande (Windows) | Commande (Mac OS / Linux) | Description                      | Exemple                                            |
+| ------------------ | ------------------------- | -------------------------------- | -------------------------------------------------- |
+| exit               | exit                      | ferme la fenêtre                 | **exit**                                           |
+| cd                 | cd                        | change le dossier courant        | **cd test**                                        |
+| cd                 | pwd                       | montre le dossier courant        | **cd** (Windows) ou **pwd** (Mac OS / Linux)       |
+| dir                | ls                        | liste des fichiers/dossiers      | **dir**                                            |
+| copy               | cp                        | copie un fichier                 | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move               | mv                        | déplace un fichier               | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir              | mkdir                     | crée un nouveau dossier          | **mkdir testdirectory**                            |
+| rmdir (or del)     | rm                        | supprime un fichier              | **del c:\test\test.txt**                         |
+| rmdir /S           | rm -r                     | supprime un répertoire           | **rm -r testdirectory**                            |
+| [CMD] /?           | man [CMD]                 | affiche l'aide pour une commande | **cd /?** (Windows) ou **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Ce ne sont que quelques-unes des commandes que vous pouvez utiliser dans votre ligne de commande. Cette liste est suffisante pour réaliser ce tutoriel.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Si vous êtes curieuse, [ss64.com](http://ss64.com) contient une référence complète de toutes les commandes pour tous les systèmes d'exploitation.
 
 ## Vous êtes prête ?
 
-Let's dive into Python!
+Nous allons plonger dans Python !
