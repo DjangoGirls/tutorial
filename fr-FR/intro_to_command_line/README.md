@@ -195,7 +195,7 @@ Maintenant, essayons d'aller sur notre bureau :
     $ cd Bureau
     
 
-Notez que le nom du répertoire « Bureau » pourrait être traduit dans la langue de votre compte Linux. Si c'est le cas, vous devrez remplacer `Bureau` par sa traduction. Par exemple, `Schreibtisch` pour l’allemand ou <0>Desktop</0> pour l'anglais.
+Notez que le nom du répertoire « Bureau » pourrait être traduit dans la langue de votre compte Linux. Si c'est le cas, vous devrez remplacer `Bureau` par sa traduction. Par exemple, `Schreibtisch` pour l’allemand ou Desktop pour l'anglais.
 
 <!--endsec-->
 
@@ -203,19 +203,19 @@ Notez que le nom du répertoire « Bureau » pourrait être traduit dans la la
 
 {% filename %}command-line{% endfilename %}
 
-    > cd Desktop
+    > cd Bureau
     
 
 <!--endsec-->
 
-Check if it's really changed:
+Vérifions que nous y sommes :
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ pwd
-    /Users/olasitarska/Desktop
+    /Users/olasitarska/Bureau
     
 
 <!--endsec-->
@@ -225,26 +225,26 @@ Check if it's really changed:
 {% filename %}command-line{% endfilename %}
 
     > cd
-    C:\Users\olasitarska\Desktop
+    C:\Users\olasitarska\Bureau
     
 
 <!--endsec-->
 
-Here it is!
+Et voilà !
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> Pro tip : si vous tapez `cd B` puis que vous appuyez sur la touche `tabulation`, la ligne de commande va automatiquement compléter le reste du nom. Cela va vous permettre d'aller plus vite et d'éviter des fautes de frappe. Si plusieurs dossiers commencent par un « B », appuyez sur la touche `tabulation` deux fois pour avoir une liste des options.
 
 * * *
 
-### Create directory
+### Créer un dossier
 
-How about creating a practice directory on your desktop? You can do it this way:
+Que diriez-vous de créer un répertoire dédié aux exercices sur votre bureau ? Vous pouvez le faire de cette façon :
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir practice
+    $ mkdir exercices
     
 
 <!--endsec-->
@@ -253,20 +253,20 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir practice
+    > mkdir exercices
     
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Cette petite commande crée un dossier nommé `exercices` sur votre bureau. Vous pouvez vérifier qu'il est bien là en regardant votre bureau, ou en lançant la commande `ls` ou `dir` ! Essayez donc. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> Pro tip : Si vous voulez éviter de taper les mêmes commandes plein de fois, essayez d'appuyer sur les touches `flèche haut` et `flèche bas` pour retrouver les dernières commandes que vous avez tapées.
 
 * * *
 
 ### Exercice !
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Un petit défi pour vous : dans votre nouveau dossier `exercices`, créez un dossier appelé `test`. (Pour ça, utilisez les commandes `cd` et `mkdir`.)
 
 #### Solutions :
 
@@ -274,7 +274,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd practice
+    $ cd exercices
     $ mkdir test
     $ ls
     test
@@ -286,7 +286,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice
+    > cd exercices
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -294,15 +294,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Félicitations ! :)
 
 * * *
 
-### Clean up
+### Nettoyage
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Supprimons tout ce qu'on vient de faire, histoire d'éviter de laisser du bazar.
 
-First, we need to get back to Desktop:
+D'abord, revenons au Bureau :
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
