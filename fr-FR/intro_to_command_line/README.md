@@ -130,19 +130,19 @@ De nombreuses commandes que vous pouvez taper à l’invite de commande ont une 
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X et Linux ont une commande `man`, qui donne des informations sur les commandes. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X et Linux ont une commande `man`, qui donne des informations sur les commandes. Essayez `man pwd` et regardez ce qui s'affiche, ou ajoutez `man` devant une autre commande pour voir sa documentation. La sortie de `man` est normalement paginée. Utilisez la barre d’espace pour passer à la page suivante et `q` pour quitter l’aide.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Ajouter un `/ ?` à la fin de la commande devrait également permettre d'afficher la page d’aide. Vous devrez peut-être faire défiler votre fenêtre de commande vers le haut pour tout voir. Essayez `cd / ?`.
 
 <!--endsec-->
 
-### List files and directories
+### Lister les fichiers et les dossiers
 
-So what's in it? It'd be cool to find out. Let's see:
+Du coup, que pouvons-nous trouver dans ce dossier personnel ? Pour le savoir, essayons ceci :
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -171,13 +171,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Remarque : dans powershell vous pouvez aussi utiliser "ls" comme sur Linux et Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### Changer le dossier courant
 
-Now, let's go to our Desktop directory:
+Maintenant, essayons d'aller sur notre bureau :
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -192,10 +192,10 @@ Now, let's go to our Desktop directory:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd Desktop
+    $ cd Bureau
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Notez que le nom du répertoire « Bureau » pourrait être traduit dans la langue de votre compte Linux. Si c'est le cas, vous devrez remplacer `Bureau` par sa traduction. Par exemple, `Schreibtisch` pour l’allemand ou <0>Desktop</0> pour l'anglais.
 
 <!--endsec-->
 
