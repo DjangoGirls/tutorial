@@ -195,7 +195,7 @@
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Обрати внимание, что название каталога "Desktop" может быть переведено на язык твоей учётной записи в системе Linux. В таком случае набери вместо `Desktop` переводное название: например, `"Рабочий стол"` (в кавычках — они нужны, чтобы командная строка поняла кириллицу).
 
 <!--endsec-->
 
