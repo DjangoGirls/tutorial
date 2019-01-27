@@ -2,19 +2,19 @@
 
 # Введение в Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Часть этой главы основана на учебных пособиях Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Давай напишем немного кода!
 
 ## Консоль Python
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Для читателей дома: Эта часть объясняется в видео [основы Python: целые числа, строки, списки, переменных и ошибки](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Чтобы начать играть с Python, нам нужно открыть *командную строку* на твоем компьютере. Ты уже должна знать, как это сделать -- мы изучали это в главе [Введение в интерфейс командой строки](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+После того, как будешь готова, следуйте приведенным ниже инструкциям.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Мы хотим открыть консоль Python, так что набери `python` если работаешь в Windows, или `python3` для Mac OS/Linux, и нажми `enter`.
 
 {% filename %}command-line{% endfilename %}
 
