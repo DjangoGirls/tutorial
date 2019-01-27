@@ -26,7 +26,7 @@ O terminal na PaizaCloud Cloud IDE está pronto para suas instruções. Você po
 2. Registre-se
 3. Clique em *Create Environment*
 
-Agora, a sua tela deve exibir uma interface com uma barra lateral, uma grande janela principal com algum texto e uma pequena janela na parte inferior, semelhante a isto:
+Agora, você pode ver uma interface com uma barra lateral, uma grande janela principal com algum texto e uma pequena janela na parte inferior, semelhante a isto:
 
 {% filename %}bash{% endfilename %}
 
@@ -60,7 +60,7 @@ Em seguida, execute:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(observe que, na última linha, utilizamos um til seguido de um sinal de igual: ~=).
 
 ### GitHub
 
