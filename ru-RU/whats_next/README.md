@@ -25,18 +25,18 @@
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [Курс Python в Codecademy](https://www.codecademy.com/learn/learn-python)
+- [Python курс в Google](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) - начальные упражнения бесплатно
+- [Новый кодер учебники](http://newcoder.io/tutorials/) – это целый ряд практических примеров того, как вы могли бы использовать Python
+- [edX](https://www.edx.org/course?search_query=python) – вы можете просмотреть большинство курсов бесплатно, но если вы хотите сертификат или подтверждение квалификации высшего образования, то это будет стоить денег
+- [Python специализация в Coursera](https://www.coursera.org/specializations/python) – некоторые видео лекции могут просматриваться бесплатно и вы можете заработать сертификат Coursera, прослушивая эти курсы
+- [Python для всех](https://www.py4e.com/) - свободные и открытые версии Coursera Python для всех специализации
 
-#### Working with data
+#### Работа с данными
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Codecademy курс по data science ](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – вы можете просмотреть большинство курсов бесплатно, но если вы хотите сертификат или подтверждение квалификации высшего образования, то это будет стоить денег
+- [Dataquest](https://www.dataquest.io/) – первые 30 «миссий» бесплатно
 
 We can't wait to see what you build next!
