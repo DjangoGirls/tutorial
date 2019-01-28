@@ -48,11 +48,12 @@
 ```
 djangogirls
 ├───manage.py
-└───mysite
-        settings.py
-        urls.py
-        wsgi.py
-        __init__.py
+├───mysite
+│        settings.py
+│        urls.py
+│        wsgi.py
+│        __init__.py
+└───requirements.txt
 ```
 > **Примечание:** в своей структуре директорий ты также увидишь ранее созданную нами директорию с виртуальным окружением.
 
