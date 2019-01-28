@@ -25,7 +25,7 @@
 
 > - 4차 : 2018. 1. 23.
 
-    [Nila](https://github.com/jeo19)
+    [데이비드 정](https://github.com/jeo19)
 
 ## 환영합니다
 
