@@ -27,11 +27,11 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python
+# Instalar Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Instala un Editor de Código
 
 {% include "/code_editor/instructions.md" %}
 
@@ -39,19 +39,19 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Instalar Git
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Crear una cuenta de GitHub
 
 Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
 
-# Create a PythonAnywhere account
+# Crear una cuenta de PythonAnywhere
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Comienza a leer
 
 Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
@@ -63,6 +63,6 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 * [¿Qué es Django?](../django/README.md)
 
-# Enjoy the workshop!
+# ¡Disfrutar el taller!
 
 When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
