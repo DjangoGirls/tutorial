@@ -170,7 +170,7 @@ Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden.
      05/08/2014 07:28 PM <DIR> Music ...
     
 
-> Hinweis: Mit Powershell kannst du auch 'ls' vwerden, wie auf Linux oder Mac OS X. <!--endsec-->
+> Hinweis: Mit Powershell kannst du auch 'ls' verwenden, wie auf Linux oder Mac OS X. <!--endsec-->
 
 * * *
 
@@ -194,7 +194,7 @@ Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
     $ cd Desktop
     
 
-Wenn dein Linux-Benutzerkonto auf deutsch eingestellt ist, kann es sein, dass auch der Name des Desktop-Verzeichnisses übersetzt ist. Wenn dem so ist, musst du im obigen Befehl `Desktop` durch den übersetzten Verzeichnisnamen `Schreibtisch` ersetzen.
+Wenn dein Linux-Benutzerkonto auf Deutsch eingestellt ist, kann es sein, dass auch der Name des Desktop-Verzeichnisses übersetzt ist. Wenn dem so ist, musst du im obigen Befehl `Desktop` durch den übersetzten Verzeichnisnamen `Schreibtisch` ersetzen.
 
 <!--endsec-->
 
