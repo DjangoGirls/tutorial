@@ -784,7 +784,7 @@ und ausgeführt erhalten wir:
 
 Hast du bemerkt, was passiert ist? `elif` lässt dich zusätzliche Bedingungen hinzufügen, die geprüft werden, falls die vorherige fehlschlägt.
 
-Du kannst so viele `elif` Bedingungen nach der anfänglichen `if` Anweisung hinzufügen, wie du magst. Zum Beispiel:
+Du kannst so viele `elif`-Bedingungen nach der anfänglichen `if`-Anweisung hinzufügen, wie du magst. Zum Beispiel:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -886,7 +886,7 @@ Als Nächstes bauen wir Funktionen mit sogenannten Argumenten. Wir werden das ge
 def hallo(name):
 ```
 
-Wie du siehst geben wir der Funktion jetzt einen Parameter, den wir `name` nennen:
+Wie du siehst, geben wir der Funktion jetzt einen Parameter, den wir `name` nennen:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -902,7 +902,7 @@ def hallo(name):
 hallo()
 ```
 
-Denk daran: Die `print` Funktion ist 4 Leerzeichen innerhalb der `if`-Anweisung eingerückt. Das ist sinnvoll, da die Funktion ausgeführt wird, wenn die Bedingung eintritt. Mal sehen, wie das jetzt funktioniert:
+Denk daran: Die `print`-Funktion ist 4 Leerzeichen innerhalb der `if`-Anweisung eingerückt. Das ist sinnvoll, da die Funktion ausgeführt wird, wenn die Bedingung eintritt. Mal sehen, wie das jetzt funktioniert:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
