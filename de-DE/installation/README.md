@@ -2,7 +2,7 @@
 
 Wenn du das Tutorial zu Hause bearbeitest, und nicht auf einer der [Django Girls Veranstaltungen](https://djangogirls.org/events/), kannst du dieses Kapitel komplett überspringen und direkt mit dem Kapitel [Wie funktioniert das Internet?](../how_the_internet_works/README.md) fortfahren.
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. Wenn du jedoch mit dem Lernen beginnen willst, bevor du eine Hand voll Sachen auf deinem Computer installierst, überspringe dieses Kapitel und lies unsere Erklärungen zur Installation später im Tutorial.
+Dem ist so, weil wir die Dinge jeweils installieren werden, wenn sie im Tutorial benötigt werden. Das hier ist nur eine zusätzliche Seite, die alle Installationsanleitungen an einem Ort bündelt (was für manche Veranstaltungsformate nützlich ist). Falls du willst, kannst du alles auf dieser Seite bereits jetzt installieren. Wenn du jedoch mit dem Lernen beginnen willst, bevor du eine Hand voll Sachen auf deinem Computer installierst, überspringe dieses Kapitel und lies unsere Erklärungen zur Installation später im Tutorial.
 
 Viel Erfolg!
 
