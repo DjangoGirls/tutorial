@@ -199,9 +199,9 @@ Wir können die Reihenfolge auch umdrehen, indem wir "`-`" davor schreiben:
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Verkettung von QuerySets
+### Komplexe Queries durch Methoden-Verkettung
 
-Du kannst auch QuerySets kombinieren, indem du sie **verkettest**:
+Wie du gesehen hast, geben einige Methoden auf `Post.objects` ein QuerySet zurück. Die selben Methoden können wiederum auch auf einem QuerySet aufgerufen werden und geben dann ein neues QuerySet zurück. Das ermöglicht es, ihre Wirkung zu kombinieren, indem du die Methoden **verkettest**:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

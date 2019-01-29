@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Hinweis**: Wenn du ein Chromebook verwendest, füge noch diese Zeile am Ende deiner settings.py-Datei hinzu: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Füge auch `.amazonaws.com` zu den `ALLOWED_HOSTS` hinzu, wenn du Cloud9 benutzt.
+> Falls du Cloud9 benutzt, füge auch `.amazonaws.com` zu den `ALLOWED_HOSTS` hinzu
 
 ## Eine Datenbank erstellen
 
@@ -185,7 +185,7 @@ Jetzt wollen wir schauen, ob unsere Website funktioniert: Öffne deinen Browser 
     http://127.0.0.1:8000/
     
 
-Wenn du ein Chromebook und Cloud9 verwendest, dann klicke stattdessen die URL in dem erschienenen Fenster in der oberen rechten Ecke des Kommandozeilenfensters, in dem der Webserver läuft. Die URL sollte etwa so aussehen:
+Wenn du ein Chromebook und Cloud9 verwendest, dann klicke stattdessen die URL im erschienenen Fenster in der oberen rechten Ecke des Kommandozeilenfensters, in dem der Webserver läuft. Die URL sollte etwa so aussehen:
 
 {% filename %}browser{% endfilename %}
 
@@ -200,6 +200,6 @@ Beachte, dass ein Terminalfenster immer nur eine Sache zur selben Zeit erledigen
 
 > Wie Webserver funktionieren, haben wir im Kapitel **"Wie das Internet funktioniert"** angesehen.
 
-Öffne ein neues Terminal und aktiviere dort dein virtualenv, damit du – auch während der Webserver läuft – neue Kommandos eingeben kannst. Um den Webserver zu stoppen, wechsel zurück in das Fenster, in dem er läuft, und drücke STRG+C - Steuerung und C gleichzeitig. (In Windows kann es sein, dass du STRG und "Pause"-Taste drücken musst).
+Um weitere Kommandos einzugeben, während der Webserver läuft, öffne ein neues Kommandozeilen-Fenster und aktiviere dort deine Virtualenv-Umgebung. Siehe [Einführung in die Kommandozeile](../intro_to_command_line/README.md), um nachzulesen, wie du ein zweites Kommandozeilen-Fenster öffnen kannst. Um den Webserver zu stoppen, wechsel zurück in das Fenster, in dem er läuft, und drücke STRG+C - Steuerung und C gleichzeitig. (In Windows kann es sein, dass du STRG und "Pause"-Taste drücken musst).
 
 Bereit für den nächsten Schritt? Es wird Zeit, ein paar Inhalte hinzuzufügen!

@@ -17,7 +17,6 @@ Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Program
 - Unser anderes Buch, [Django Girls Tutorial: Erweiterungen](https://tutorial-extensions.djangogirls.org/)
 - [Das offizielle Django-Tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Video-Lektionen "Getting Started With Django"](http://www.gettingstartedwithdjango.com/)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebbooks.com/learn-django/) – du kannst auch eine kostenlose eBook-Lizenz beantragen, indem du der Autorin Tracy Osborn auf <tracy@limedaring.com> schreibst
 
 #### HTML, CSS und JavaScript
 
@@ -31,7 +30,8 @@ Ja! Es gibt *sehr* viele Online-Ressourcen zum Erlernen aller möglichen Program
 - [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) – die ersten Übungen sind kostenlos
 - [New Coder Tutorials](http://newcoder.io/tutorials/) – eine Vielzahl von praktischen Beispielen, wie Python verwendet werden kann
 - [edX](https://www.edx.org/course?search_query=python) – die meisten Kurse kannst du kostenfrei testen, aber wenn du ein Zertifikat oder Credits für eine Weiterbildung erhalten willst, dann kostet das etwas
-- [Courseras Python-Kurse](https://www.coursera.org/specializations/python) – einige Video-Vorträge sind kostenlos
+- [Courseras Python-Spezialisierung](https://www.coursera.org/specializations/python) – einige Video-Lektionen können kostenlos getestet werden und du kannst ein Coursera-Zertifikat erlangen, wenn du diesen Kurs belegst
+- [Python for Everybody](https://www.py4e.com/) - eine kostenlose und offene Version der Coursera-Python-Spezialisierung
 
 #### Mit Daten arbeiten
 
