@@ -5,7 +5,7 @@ Abhängig von deiner Windows-Version und deiner Tastatur sollte eine der folgend
 - Gehe zum Start-Menü oder Start-Bildschirm und gib "Eingabeaufforderung" in das Suchfeld ein.
 - Klicke Start-Menü → Windows System → Eingabeaufforderung.
 - Geh ins Start Menü → Alle Programme → Zubehör → Eingabeaufforderung.
-- Gehe zum Startbildschirm, bewege deinen Mauszeiger zur unteren linken Bildschirmecke und klicke auf den nach unten zeigenden Pfeil, der erscheint ist (auf einem Touch-Screen, streiche mit dem Finger vom unteren Bildschirmrand nach oben). Die Apps-Seite sollte geöffnet werden. Klicke auf Eingabeaufforderung im Windows System Abschnitt.
+- Gehe zum Startbildschirm, bewege deinen Mauszeiger zur unteren linken Bildschirmecke und klicke auf den nach unten zeigenden Pfeil, der erschienen ist (auf einem Touch-Screen streichst du mit dem Finger vom unteren Bildschirmrand nach oben). Die Apps-Seite sollte sich öffnen. Klicke auf Eingabeaufforderung im Abschnitt Windows System.
 - Drücke die Windows-Taste und gleichzeitig "x" auf deiner Tastatur. Wähle "Eingabeaufforderung" aus dem Menü aus.
 - Drücke die Windows-Taste und gleichzeitig "r", um das "Ausführen"-Fenster zu erhalten. Tippe "cmd" in das Feld und klicke OK.
 
