@@ -26,11 +26,11 @@
 
 ## Твоя первая команда Python!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+После запуска Python, консоль изменилась на `>>>`. Для нас это означает, что сейчас мы можем использовать только команды на языке Python. Тебе не нужно вводить `>>>` - Python будет делать это за нас.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Если ты хочешь выйти из консоли Python, в любой момент -- просто введи `exit()` или используй сочетание клавиш `Ctrl + Z` для Windows и `Ctrl + D` для Mac/Linux. Тогда ты больше не будешь видеть `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Сейчас мы не хотим выходить из консоли Python. Мы хотим больше узнать о нем. Начнем с ввода математических действий, таких как `2 + 3` и нажмем `enter`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,26 +39,26 @@ For now, we don't want to exit the Python console. We want to learn more about i
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Хорошо! Видела как появился ответ? Python знает математику! Можешь попробовать и другие команды, например:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Для вычисления экспоненциала, скажем, 2 в степени 3, мы набираем в консоли: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Поиграй с этим немного и затем вернись сюда. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Как видишь, Python является прекрасным калькулятором. Если тебе интересно, что еще можно сделать…
 
 ## Строки
 
-How about your name? Type your first name in quotes like this:
+Как насчет твоего имени? Введи свое имя в кавычках, вот так:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Сейчас ты создала свою первую строку! Это последовательность символов, которые могут быть обработаны компьютером. Строка должна всегда начинаться и заканчиваться одинаковым символом. Им может быть как одинарная (`'`), так и двойная (`"`) кавычка (разницы нет!) Кавычки говорят Python'у, что внутри них находится строка.
 
-Strings can be strung together. Try this:
+Строки можно объединять. Попробуй так:
 
 {% filename %}command-line{% endfilename %}
 
