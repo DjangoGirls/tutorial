@@ -640,7 +640,7 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+На Линукс это будет так:
 
 {% filename %}command-line{% endfilename %}
 
