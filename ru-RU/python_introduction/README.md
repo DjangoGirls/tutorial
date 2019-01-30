@@ -78,7 +78,7 @@
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+Ты также можешь умножать строки на число:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Если тебе нужно поставить апостроф внутри строки, то есть два способа сделать это.
 
-Using double quotes:
+Используя двойные кавычки:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+или экранировав апостроф обратной косой чертой (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Прикольно, да? Чтобы увидеть своё имя прописными буквами, просто набери:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +116,9 @@ Nice, huh? To see your name in uppercase letters, type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Ты только что использовала **функцию** `upper` для своей строки! Функция (такая как `upper()`) представляет собой набор инструкций, который должен выполнить Python на заданном объекте (в нашем случае: `"Ola"`) при её вызове.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Если ты хочешь узнать количество букв в своём имени, то и для этого тоже существует **функция**!
 
 {% filename %}command-line{% endfilename %}
 
