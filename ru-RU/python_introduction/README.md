@@ -135,14 +135,14 @@ OK, достаточно о строках. Пока ты узнала о:
 
 - **консоль** - ввод команд (кода) в интерактивную командную строку Python приводит к ответам на Python
 - **числа и строки** - в Python числа используются для вычислений, а строки - для текстовых объектов
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **операторы** - такие как `+` и `*`, производят действия над значениями для получения нового
+- **функции** - такие как `upper()` и `len()`, выполняют действия над объектами.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Таковы основы каждого языка программирования, который ты можешь выучить. Готова к чему-то посложнее? Мы уверены, что готова!
 
 ## Ошибки
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Давай попробуем кое-что новенькое. Можем ли мы получить длину числа так же, как длину твоего имени? Введи `len(304023)` и нажми `Enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,9 +153,9 @@ File "<stdin>", line 1, in <module>
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Мы получили нашу первую ошибку! {{ warning_icon }} иконка в нашем случае показывает, что код, который мы пытаемся запустить, не будет работать так, как мы этого ожидаем. Делать ошибки (даже преднамеренные) - это неотъемлемая часть процесса обучения!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Наша ошибка говорит о том, что у объектов типа «int» (целые числа) нет длины. Так что же мы можем сейчас сделать? Может быть мы можем написать наше число в виде строки? У строк ведь есть длина, верно?
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,18 +164,18 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Сработало! Мы использовали функцию `str` внутри функции `len`. `str()` преобразует все в строки.
 
 - Функция `str` преобразует объекты в **строки**
 - Функция `int` преобразует объекты в **целые числа**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Важно: мы можем преобразовать число в текст, но не всегда удается преобразовать текст в числа - например, каков будет результат `int('hello')`?
 
 ## Переменные
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Переменные -- важное понятие в программировании. Переменная -- это не более чем имя для чего-то, чтобы использовать его позднее. Программисты используют переменные для хранения данных, чтобы их код был более читабельным, и для того, чтобы им не пришлось запоминать что есть что.
 
-Let's say we want to create a new variable called `name`:
+Допустим, мы хотим создать новую переменную с именем `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,9 +183,9 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+Мы указали, что имя равно Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Как ты уже заметила, твоя программа не возвращает ничего, как было ранее. Так откуда мы знаем, что переменная действительно существует? Просто введи `name` и нажми `Enter`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Ура! Твоя первая переменная:)! Ты всегда можешь изменить то, к чему она относится:
 
 {% filename %}command-line{% endfilename %}
 
@@ -203,7 +203,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 >>> name
 ```
 
-You can use it in functions too:
+Ты можешь использовать их также и в функциях:
 
 {% filename %}command-line{% endfilename %}
 
@@ -212,7 +212,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Круто, правда? Переменными, конечно, может быть что угодно, и цифры тоже! Попробуй следующее:
 
 {% filename %}command-line{% endfilename %}
 
