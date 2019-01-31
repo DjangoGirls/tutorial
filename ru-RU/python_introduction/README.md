@@ -223,7 +223,7 @@ TypeError: object of type 'int' has no len()
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Но что делать, если мы использовали неправильное имя? Можешь догадаться, что произойдет? Давай попробуем!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -235,13 +235,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Ошибка! Как ты можешь видеть, в Python есть различные типы ошибок, эта называется **NameError**. Python выдаст эту ошибку при попытке использовать переменную, которая пока не определена. При возникновении этой ошибки проверь свой код, чтобы узнать, не написала ли ты неправильно имя переменной.
 
-Play with this for a while and see what you can do!
+Попрактикуйся в этом какое-то время и посмотри, что ты сможешь сделать!
 
 ## Функция print
 
-Try this:
+Попробуй ввести:
 
 {% filename %}command-line{% endfilename %}
 
