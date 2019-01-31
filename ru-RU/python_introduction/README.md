@@ -127,14 +127,14 @@
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Интересно, почему иногда мы вызываем функцию добавлением `.` к концу строки (как `"Ola".upper()`), а иногда сначала пишем имя функции и затем помещаем строку в скобки? Итак, в некоторых случаях функции принадлежат объектам, например функция `upper()`, которая может быть применена только к строкам. В этом случае мы называем функцию **методом**. В другом случае, функции не относятся к чему-то конкретному и могут использоваться для различных типов объектов, например функция `len()`. Вот почему мы передаем `"Ola"` в качестве параметра функции `len`.
 
 ### Содержание
 
-OK, enough of strings. So far you've learned about:
+OK, достаточно о строках. Пока ты узнала о:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
+- **консоль** - ввод команд (кода) в интерактивную командную строку Python приводит к ответам на Python
+- **числа и строки** - в Python числа используются для вычислений, а строки - для текстовых объектов
 - **operators** – like `+` and `*`, combine values to produce a new one
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
