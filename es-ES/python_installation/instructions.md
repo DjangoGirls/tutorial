@@ -72,7 +72,7 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Usa este comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
