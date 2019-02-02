@@ -4,7 +4,7 @@ If you're doing the tutorial at home, not at one of the [Django Girls events](ht
 
 This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
-Good luck!
+Bonŝancon!
 
 # If you're attending a workshop
 
