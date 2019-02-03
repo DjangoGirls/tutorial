@@ -236,7 +236,7 @@ Here it is!
 
 * * *
 
-### Create directory
+### Luo hakemisto
 
 How about creating a practice directory on your desktop? You can do it this way:
 
@@ -417,9 +417,9 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                            |
+| Command (Windows) | Command (Mac OS / Linux) | Kuvaus                     | Example                                            |
 | ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                           |
+| exit              | exit                     | sulje ikkuna               | **exit**                                           |
 | cd                | cd                       | change directory           | **cd test**                                        |
 | cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
 | dir               | ls                       | list directories/files     | **dir**                                            |
