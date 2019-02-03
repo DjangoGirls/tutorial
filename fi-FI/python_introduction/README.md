@@ -140,7 +140,7 @@ OK, enough of strings. So far you've learned about:
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
-## Errors
+## Virheet
 
 Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
@@ -813,7 +813,7 @@ Python runs through each test in sequence and prints:
     Perfect, I can hear all the details
     
 
-## Comments
+## Kommentit
 
 Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
