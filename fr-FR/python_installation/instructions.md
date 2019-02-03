@@ -20,12 +20,12 @@ Une chose à surveiller : lors de l’installation, vous remarquerez une fenêt
 
 Une fois l’installation terminée, vous verrez une boîte de dialogue contenant un lien que vous pouvez suivre pour en savoir plus sur Python ou sur la version que vous avez installée. Fermez ou annulez cette boîte de dialogue -- vous en apprendrez plus dans ce tutoriel !
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Note: si vous utilisez une ancienne version de Windows (7, Vista ou une version antérieure) et que l'installateur Python 3.6.x échoue avec une erreur, vous pouvez essayer une des solutions suivantes :
 
-1. install all Windows Updates and try to install Python again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. Installer toutes les mises à jour Windows et essayer d'installer à nouveau Python ;
+2. Installer une [version antérieure de Python](https://www.python.org/downloads/windows/), par exemple, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Si vous installez une ancienne version de Python, l'écran d'installation peut sembler un peu différent de ce qui est affiché ci-dessus. Assurez-vous de défiler vers le bas jusqu'à "Add python.exe to Path", puis cliquez sur le bouton à gauche et choisissez "Will be installed on local hard drive" :
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
