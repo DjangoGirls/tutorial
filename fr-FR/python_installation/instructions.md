@@ -16,7 +16,7 @@ Vous pouvez télécharger Python pour Windows depuis le site web https://www.pyt
 
 Une chose à surveiller : lors de l’installation, vous remarquerez une fenêtre marquée « Setup ». Assurez-vous de cocher la case "Add Python 3.6 to PATH" ou "Add Python to your environment variables" et cliquez sur "Install Now", comme indiqué ici (il peut sembler un peu différent si vous installez une autre version):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![N'oubliez pas d'ajouter Python à votre chemin (path)](../python_installation/images/python-installation-options.png)
 
 Une fois l’installation terminée, vous verrez une boîte de dialogue contenant un lien que vous pouvez suivre pour en savoir plus sur Python ou sur la version que vous avez installée. Fermez ou annulez cette boîte de dialogue -- vous en apprendrez plus dans ce tutoriel !
 
@@ -27,7 +27,7 @@ Note: si vous utilisez une ancienne version de Windows (7, Vista ou une version 
 
 Si vous installez une ancienne version de Python, l'écran d'installation peut sembler un peu différent de ce qui est affiché ci-dessus. Assurez-vous de défiler vers le bas jusqu'à "Add python.exe to Path", puis cliquez sur le bouton à gauche et choisissez "Will be installed on local hard drive" :
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Ajouter Python au chemin, anciennes versions](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -79,14 +79,14 @@ Tapez cette commande dans votre terminal :
     sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Si vous utilisez une ancienne version de Fedora, vous pourriez avoir une erreur disant que la commande `dnf` n'est pas trouvée. Dans ce cas, vous devez utiliser la commande `yum` à la place.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Tapez cette commande dans votre terminal :
 
 {% filename %}command-line{% endfilename %}
 
@@ -95,7 +95,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Vérifiez que l'installation s'est bien déroulée en ouvrant votre terminal et en lançant la commande `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -103,10 +103,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+La version affichée peut être différente de 3.6.1 -- elle devrait correspondre à la version que vous avez installée.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
+**NOTE:** Si vous êtes sur Windows et que vous obtenez un message d'erreur disant que `python3` n'a pas été trouvé, essayez d'utiliser `python` (sans `3`) et vérifiez si elle lance une version de Python qui est toujours 3.4.0 ou supérieur.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Si vous avez des questions ou si quelque chose ne fonctionne pas et que vous ne savez pas quoi faire : demandez de l'aide à votre coach ! Il arrive parfois que les choses ne se déroulent pas comme prévu et il est alors préférable de demander à quelqu'un qui a plus d'expérience.
