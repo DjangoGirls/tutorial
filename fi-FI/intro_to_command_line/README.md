@@ -423,8 +423,8 @@ Here is a summary of some useful commands:
 | cd                | cd                       | change directory           | **cd test**                                        |
 | cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
 | dir               | ls                       | list directories/files     | **dir**                                            |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt**  |
+| copy              | cp                       | kopioi tiedosto            | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move              | mv                       | siirrä tiedosto            | **move c:\test\test.txt c:\windows\test.txt**  |
 | mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                            |
 | rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                         |
 | rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                            |
