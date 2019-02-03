@@ -171,7 +171,7 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
 
 > Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
 
-## Variables
+## Muuttujat
 
 An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
@@ -236,7 +236,7 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Virhe! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
 Play with this for a while and see what you can do!
 
@@ -361,7 +361,7 @@ For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you c
 
 You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## Sanakirjat
 
 > For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
 
@@ -950,7 +950,7 @@ Now, what do you think will happen if you write another name in there? (Not Ola 
 
 {% filename %}command-line{% endfilename %}
 
-    Hi anonymous!
+    Hei Anonyymi!
     
 
 This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
