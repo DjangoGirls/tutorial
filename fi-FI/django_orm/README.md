@@ -28,7 +28,7 @@ The effect should be like this:
 
 You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
-### All objects
+### Kaikki objektit
 
 Let's try to display all of our posts first. You can do that with the following command:
 
