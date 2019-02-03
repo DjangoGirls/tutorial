@@ -2,7 +2,7 @@
 
 Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
 
-## What is CSS?
+## Mikä on CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
@@ -27,7 +27,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 
 This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
 
-![Figure 14.1](images/bootstrap1.png)
+![Kuva 14.1](images/bootstrap1.png)
 
 Looking nicer already!
 
@@ -138,7 +138,7 @@ Your file should now look like this:
 
 OK, save the file and refresh the site!
 
-![Figure 14.2](images/color2.png)
+![Kuva 14.2](images/color2.png)
 
 Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
 
@@ -152,7 +152,7 @@ body {
 
 Add that to your CSS, save the file and see how it works!
 
-![Figure 14.3](images/margin2.png)
+![Kuva 14.3](images/margin2.png)
 
 Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
 
@@ -175,7 +175,7 @@ h1 a, h2 a {
 }
 ```
 
-![Figure 14.3](images/font.png)
+![Kuva 14.3](images/font.png)
 
 Great!
 
@@ -294,7 +294,7 @@ in the `blog/templates/blog/post_list.html` with this:
 
 Save those files and refresh your website.
 
-![Figure 14.4](images/final.png)
+![Kuva 14.4](images/final.png)
 
 Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
