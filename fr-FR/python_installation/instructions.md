@@ -34,19 +34,19 @@ Si vous installez une ancienne version de Python, l'écran d'installation peut s
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Note** Avant d'installer Python sur OS X, vous devriez vous assurer que vos paramètres Mac permettent d'installer des programmes qui ne proviennent pas de l'App Store. Allez dans Préférences Système (c'est dans le dossier Applications), cliquez sur "Sécurité & Confidentialité", puis sur l'onglet "Général". Si votre "Autoriser les applications téléchargées de:" est défini sur "Mac App Store", changez-le à "Mac App Store et développeurs identifiés".
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Vous devez aller sur le site https://www.python.org/downloads/release/python-361/ et télécharger l'installateur python:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Téléchargez le fichier *Mac OS X 64-bit/32-bit installer*,
+* Double-cliquez sur le fichier *python-3.6.1-macosx10.6.pkg* pour lancer l'installateur.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Il est très probable que Python soit déjà installé sur votre machine. Afin de vérifier qu'il est bien installé (et surtout quelle version vous avez), ouvrez une console et tapez la commande suivante :
 
 {% filename %}command-line{% endfilename %}
 
@@ -54,13 +54,13 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a newer version, you can install it as follows:
+Si vous avez une version différente de Python installée, au moins 3.4.0 (par exemple 3.6.0), alors il n'y a pas besoin de mettre à jour. Si Python n'est pas installé ou si vous souhaitez une version plus récente, vous pouvez l'installer en suivant les instructions suivantes :
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Tapez cette commande dans votre terminal :
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,7 +72,7 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Tapez cette commande dans votre terminal :
 
 {% filename %}command-line{% endfilename %}
 
