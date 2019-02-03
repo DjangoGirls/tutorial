@@ -100,7 +100,7 @@ But this code has a problem. If there is no `Post` with the given `primary key` 
 
 We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
-![Page not found](images/404_2.png)
+![Sivua ei löydy](images/404_2.png)
 
 The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
