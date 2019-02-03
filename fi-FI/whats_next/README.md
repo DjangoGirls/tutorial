@@ -1,4 +1,4 @@
-# What's next?
+# Mitä seuraavaksi?
 
 Congratulate yourself! **You're totally awesome**. We're proud! <3
 
