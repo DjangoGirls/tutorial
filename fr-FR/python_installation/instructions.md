@@ -10,15 +10,15 @@ Vérifiez d'abord si votre ordinateur exécute une version 32 bits ou une versio
 
 * Appuyez sur la touche Windows et la touche Pause/Attn en même temps
 * Ouvrez votre panneau de configuration depuis le menu Windows, puis naviguez vers Système et sécurité, puis Système
-* Press the Windows button, then navigate to Settings > System > About
+* Appuyez sur la touche Windows, puis accédez à Paramètres > Système > A propos
 
-You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Vous pouvez télécharger Python pour Windows depuis le site web https://www.python.org/downloads/windows/. Cliquez sur le lien "Latest Python 3 Release - Python x.x.x". Si votre ordinateur exécute une version **64-bit** de Windows, téléchargez l'installateur exécutable **Windows x86-64 executable installer**. Sinon, téléchargez **Windows x86 executable installer**. Après avoir téléchargé l'installateur, vous devriez l'exécuter (double-cliquez dessus) et suivre les instructions.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Une chose à surveiller : lors de l’installation, vous remarquerez une fenêtre marquée « Setup ». Assurez-vous de cocher la case "Add Python 3.6 to PATH" ou "Add Python to your environment variables" et cliquez sur "Install Now", comme indiqué ici (il peut sembler un peu différent si vous installez une autre version):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Une fois l’installation terminée, vous verrez une boîte de dialogue contenant un lien que vous pouvez suivre pour en savoir plus sur Python ou sur la version que vous avez installée. Fermez ou annulez cette boîte de dialogue -- vous en apprendrez plus dans ce tutoriel !
 
 Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
