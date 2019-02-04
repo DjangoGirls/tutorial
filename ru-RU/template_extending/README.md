@@ -102,9 +102,9 @@
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Мы хотим использовать это как часть нашего шаблона для всех блоков контента. Пришло время добавить теги блока в этот файл!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Таким образом:{% endraw %}
+{% raw %}Вы хотите, чтобы ваш тег блока соответствовал тегу в файле `base.html`. Вы также хотите включить весь код, который принадлежит к блокам контента. Для этого поместите все между `{% block content %}` и `{% endblock %}`. Таким образом:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ We want to use this as part of our template for all the content blocks. Time to 
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Осталось только одно. Нам нужно соединить эти два шаблона друг с другом. Это то, что называется "расширить шаблон"! Мы сделаем это, добавив тег расширения к началу файла. Вот так:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
