@@ -16,7 +16,7 @@
 
 # Установка
 
-В этом руководстве вы будете создавать блог. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+В этом руководстве вы будете создавать блог. Для того чтобы сделать это, по ходу тьюториала вам будет поручено установить различные программы на вашем компьютере, и настроить некоторые учетные записи в сети, по мере их необходимости. Эта страница содержит в себе все инструкции по установке и регистрации (что полезно для некоторых форматов воркшопов).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Кратко о командной строке
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Многие из нижеследующих шагов ссылаются на "консоль", "терминал", "командное окно" или "командная строка" -- это означает то же самое: окно на компьютере, где вы можете ввести команды. Когда вы дойдете до главного руководства, вы узнаете больше о командной строке. Сейчас главное, что необходимо знать - как открыть окно команды и как оно выглядит: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Установка Python
 
