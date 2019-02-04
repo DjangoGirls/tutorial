@@ -287,7 +287,7 @@ Maria
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Точно! `len()` вернет тебе количество объектов в списке. Удобно, правда? Может быть мы теперь отсортируем его:
 
 {% filename %}command-line{% endfilename %}
 
@@ -295,7 +295,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Эта команда не возвращает ничего, она просто меняет порядок номеров в списке. Давайте выведем его на экран и посмотрим что получилось:
 
 {% filename %}command-line{% endfilename %}
 
@@ -304,9 +304,9 @@ This doesn't return anything, it just changed the order in which the numbers app
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Как видишь, номера в списке теперь отсортированы от меньшего к большему. Поздравляем!
 
-Maybe we want to reverse that order? Let's do that!
+Может быть нам нужно изменить порядок? Давай сделаем это!
 
 {% filename %}command-line{% endfilename %}
 
@@ -316,7 +316,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Если хочешь добавить что-то к своему списку, то можешь воспользоваться этой командой:
 
 {% filename %}command-line{% endfilename %}
 
@@ -326,7 +326,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Если ты хочешь получить первый номер в списке, то можешь воспользоваться **индексами**. Индекс - это номер позиции в списке, на котором находится нужное нам значение. Программисты предпочитают начать считать с 0, так что первому объекту в списке соответствует индекс 0, следующему —1, и так далее. Попробуй ввести:
 
 {% filename %}command-line{% endfilename %}
 
@@ -337,9 +337,9 @@ If you want to show only the first number, you can do this by using **indexes**.
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Как видишь, ты можешь обратиться к различным объектам в своем списке используя имя списка и индекс объекта в квадратных скобках.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Чтобы удалить что-то из вашего списка, нужно использовать **индексы**, как мы узнали выше, и метод `pop()`. Давай попробуем закрепить пройденное примером; мы будем удалять первый элемент из нашего списка.
 
 {% filename %}command-line{% endfilename %}
 
@@ -354,11 +354,11 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Сработало как по волшебству!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+В качестве дополнительной тренировки попробуй следующие индексы: 6, 7, 1000, -1, -6 и -1000. Сможешь предсказать результат? Видишь логику работы?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+Ты можешь найти перечень всех методов, относящихся к списку, в этой главе официальной документации Python: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Словари
 
