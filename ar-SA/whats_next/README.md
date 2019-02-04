@@ -30,13 +30,13 @@
 - [كتاب "تعلم بايثون الطريقة الصعبة"](http://learnpythonthehardway.org/book/) –التدريبات الأولية مجانية
 - [دروس المبرمج الجديد](http://newcoder.io/tutorials/) – هذا مجموعة متنوعة من أمثلة عملية عن كيف يمكنك استخدام بايثون
 - [edX](https://www.edx.org/course?search_query=python) – يمكنك أخذ معظم الدورات مجاناً، لكن إذا كنت تريد شهادة أو تصديق نحو مؤهل تعليم عالي هذا سيكلف المال
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [مجموعة كورسات بايثون على كورسيرا](https://www.coursera.org/specializations/python)--يمكن أن يكون حضور بعض محاضرات الفيديو مجاناً، ويمكنك الحصول على شهادة كورسيرا بأخذ هذه الدورات
+- [بايثون للجميع](https://www.py4e.com/)--نسخة مجانية ومفتوحة من مجموعة كورسات بايثون للجميع على كورسيرا
 
-#### Working with data
+#### التعامل مع البيانات
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [كورس Codecademy في علم البيانات](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – يمكنك أخذ معظم الدورات مجاناً، لكن إذا كنت تريد شهادة أو تصديق نحو مؤهل تعليم عالي هذا سيكلف المال
+- [Dataquest](https://www.dataquest.io/)- أول ٣٠ مهمة مجانية
 
-We can't wait to see what you build next!
+لا يسعنا إنتظار ما ستفعل بعد!
