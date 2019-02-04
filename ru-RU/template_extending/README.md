@@ -86,7 +86,7 @@
 
 Но почему? Ты только что создала `блок`! Ты использовала тег шаблона `{% block %}`, чтобы создать область, в которую будет вставляться HTML. Что HTML будет поступать из другого шаблона, который расширяет этот шаблон (`base.html`). Мы покажем как это сделать через секунду.
 
-Теперь сохрани `base.html` и снова открой ваш `blog/templates/blog/post_list.html` файл в редакторе кода. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Теперь сохрани `base.html` и снова открой ваш `blog/templates/blog/post_list.html` файл в редакторе кода. {% raw %}Тебе предстоит удалить все, что выше `{% for post in posts %}` и ниже `{% endfor %}`. Когда ты закончишь, файл будет выглядеть следующим образом:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
