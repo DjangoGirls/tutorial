@@ -12,11 +12,11 @@
 
 * Ваш воркшоп может включать в себя «вечеринку установки» перед основным воркшопом. Если вы находитесь на вечеринке установки, эта страница именно для вас! Следуйте инструкциям здесь, чтобы получить все, что вам нужно установить для воркшопа, прибегайте к помощи тренеров при необходимости. Затем на основном воркшопе, вы сможете пропустить инструкции по установке; также вы будете встречаться с ними в основном тьюториале, когда вы его получите.
 * Организаторы вашего воркшопа могут попросить вас, чтобы вы попробовали у себя дома установить все на вашем компьютере до начала воркшопа. Если вас попросили сделать, эта страница именно для вас! Следуйте здесь инструкциям изо всех сил. Затем на основном воркшопе, когда вы получите шаги для установки в основном тьюториале, если вы не смогли установить какие-то элементы, то вы можете получить помощь от вашего наставника.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* Если ваш воркшоп не проводит "вечеринку установки" (или вы не смогли присутствовать), и, если организаторы не просят вас установить все, прежде чем вы приехали; пропустите эту страницу и переходите прямо к главе [как Интернет работает](../how_the_internet_works/README.md). Вы будете устанавливать все, что вам нужно, так как вы работаете через тьюториал.
 
 # Установка
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+В этом руководстве вы будете создавать блог. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
