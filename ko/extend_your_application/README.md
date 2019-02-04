@@ -1,3 +1,5 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # 프로그램 애플리케이션 확장하기
 
 지금까지 웹 사이트 제작 단계를 모두 마쳤어요. 모델, url, 뷰와 템플릿을 만드는 방법을 알게 되었고요. 웹 사이트를 예쁘게 꾸미는 방법도 알게 되었어요.
@@ -31,7 +33,7 @@
 
 {% raw %} `post`제목 목록이 보이고 해당 링크를 클릭하면, `post`상세 페이지로 이동하게 만들어 볼 거에요. `<h1><a href="">{{ post.title }}</a></h1>`부분을 수정해 봅시다. {% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{warning_icon}}blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
@@ -52,29 +54,25 @@
 
 첫 게시물의 상세 페이지 **URL**이 http://127.0.0.1:8000/post/1/가 되게 만들 거에요.
 
-`blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail` *뷰*로 보내, 게시글이 보일 수 있게 해봅시다. `url(r'^post/(?P<pk>[0-9]+)/$', views.post_detail, name='post_detail')`코드를 `blog/urls.py`파일에 추가하면 아래와 같을 보일 거에요.
+`blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail` *뷰*로 보내, 게시글이 보일 수 있게 해봅시다. `path('post/<int:pk>/', views.post_detail, name='post_detail')`코드를 `blog/urls.py`파일에 추가하면 아래와 같을 보일 거에요.
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{warning_icon}}blog/urls.py{% endfilename %}
 ```python
-from django.conf.urls import url
+from django.urls import path
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
 ]
 ```
 
-`^post/(?P<pk>\d+)/$`부분이 복잡하게 보이지만, 걱정하지 마세요. 하나씩 차근차근 알아봅시다.
- - `^`은 "시작"을 뜻합니다.
+여기서 `post/<int:pk/>/`는 URL 패턴을 나타내요. 하나씩 차근차근 알아볼 거에요.
  - `post/`란 URL이 **post** 문자를 포함해야 한다는 것을 말합니다. 아직 할 만하죠?
- - `(?P<pk>\d+)`는 조금 까다롭습니다. 이 정규표현식은 장고가 `pk`변수에 모든 값을 넣어 뷰로 전송하겠다는 뜻입니다. `\d`은 문자를 제외한 숫자 0부터 9 중, 한 가지 숫자만 올 수 있다는 것을 말합니다. `+`는 하나 또는 그 이상의 숫자가 올 수 있습니다.. 따라서 `http://127.0.0.1:8000/post/`라고 하면 post/ 다음에 숫자가 없으므로 해당 사항이 아니지만, `http://127.0.0.1:8000/post/1234567890/`는 완벽하게 매칭됩니다.
+ - `<int:pk>`는 조금 까다롭습니다. 장고는 숫자로 나타낼 수 있는 값을 읽어들이며, 이를 뷰에 `pk`라는 변수로써 전달할 수 있다는 것을 의미합니다.
  - `/`은 다음에 **/** 가 한 번 더 와야 한다는 의미입니다.
- - `$`는 "마지막"을 말합니다. 그 뒤로 더는 문자가 오면 안 됩니다.
 
 브라우저에 `http://127.0.0.1:8000/post/5/`라고 입력하면, 장고는 `post_detail` *뷰*를 찾아 매개변수 `pk`가 `5`인 값을 찾아 *뷰*로 전달합니다.
-
-`pk`는 `primary key`의 약자로, 장고에서 많이 사용되는 변수명입니다. 변수명은 내가 원하는 것으로 변경할 수 있어요. (변수명에 공백문자는 사용할 수 없으며 소문자와 `_`를 사용할 수 있음을 주의하세요) 예를 들어, `(?P<pk>\d+)`변수를 `post_id`으로 바꾸면, 정규표현식도 `(?P<post_id>\d+)`으로 바뀌게 됩니다.
 
 좋아요, 새로운 URL 패턴을 `blog/urls.py`에 추가했어요! 페이지를 새로고침 하세요. http://127.0.0.1:8000/ 쾅! 또 에러가 났어요! 예상했던 대로에요!
 
@@ -88,7 +86,7 @@ urlpatterns = [
 
 블로그 게시글 한 개만 보려면, 아래와 같이 쿼리셋(queryset)을 작성해야해요.
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{warning_icon}}blog/views.py{% endfilename %}
 ```python
 Post.objects.get(pk=pk)
 ```
@@ -105,14 +103,16 @@ Post.objects.get(pk=pk)
 
 좋아요. 이제 `views.py`파일에 새로운 *뷰*를 추가합시다!
 
-`blog/views.py`파일을 열고 아래 코드를 추가하세요.
+`blog/urls.py`파일에서 `views.post_detail`라는 뷰를 `post_detail`이라 이름을 붙이도록 URL 법칙을 만들었어요. 이는 장고가 `post_detail`이라는 이름을 해석할 때, `blog/views.py`파일 내부의 `post_detail`이라는 뷰 함수로 이해하도록 해줍니다.
+
+`blog/views.py`파일을 열고, `from`으로 시작하는 행에서 다음과 같이 코드를 추가해주세요:
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
 from django.shortcuts import render, get_object_or_404
 ```
 
-`from`행 가서, 파일 마지막 부분에 *뷰*를 추가하세요.
+그리고, 파일 마지막 부분에 *뷰*를 추가하세요.
 
 {% filename %}blog/views.py{% endfilename %}
 ```python

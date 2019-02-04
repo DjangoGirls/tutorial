@@ -92,20 +92,20 @@ class PostForm(forms.ModelForm):
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
-url(r'^post/new/$', views.post_new, name='post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
 전체 코드는 아래와 같을 거예요.
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
-from django.conf.urls import url
+from django.urls import path 
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new'),
 ]
 ```
 
@@ -224,15 +224,10 @@ from django.shortcuts import redirect
 
 {% filename %}blog/views.py{% endfilename %}
 ```python
-from django.shortcuts import redirect
+return redirect('post_detail', pk=post.pk)
 ```
 
 `post_detail`은 우리가 이동해야 할 뷰의 이름이에요 *post_detail 뷰* 는 `pk`변수가 필요한 거 기억하고 있겠죠? `pk=post.pk`를 사용해서 뷰에게 값을 넘겨줄 거에요. 여기서 `post`는 새로 생성한 블로그 글이에요.
-
-{% filename %}blog/views.py{% endfilename %}
-```python
-return redirect('post_detail', pk=post.pk)
-```
 
 잘했어요. 너무 설명이 길어졌네요. 이제 *view* 전체 코드를 확인할게요.
 
@@ -309,7 +304,7 @@ def post_new(request):
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
 우리는 `blog/templates/blog/post_edit.html` 템플릿을 재사용할 거에요. 마지막으로 할 일은 *view* 를 만드는 것입니다.
@@ -363,13 +358,13 @@ form = PostForm(instance=post)
 축하합니다! 여러분의 어플리케이션이 점점 더 완벽해지고 있어요!
 
 장고 폼에 대해 자세한 정보가 필요하다면 공식 문서를 읽어보세요. :
-https://docs.djangoproject.com/en/1.11/topics/forms/
+https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## 보안
 
 링크를 클릭해 새로운 포스트가 나오게 만드는 것은 멋진 일이에요! 지금은 웹사이트를 방문하는 누구든지 글을 쓸 수 있지만, 그렇게 하고 싶지 않을 수 있어요. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어 볼게요.
 
-`blog/templates/blog/base.html` 파일에서, `page-header` `div`를 찾아 그 위에 아래와 같이 입력합니다 :
+`blog/templates/blog/base.html` 파일에서, `page-header` `div`를 찾아 아래와 같이 작성된 앵커 태그를 찾습니다:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 ```html
@@ -389,7 +384,7 @@ https://docs.djangoproject.com/en/1.11/topics/forms/
 
 세부 페이지에 있는 수정 아이콘이 기억나죠? 이번에도 동일하게 다른 사람들이 게시글을 수정하지 못하게 할 거에요.
 
-`blog/templates/blog/post_detail.html`파일을 열어 아래 내용을 추가하세요.
+`blog/templates/blog/post_detail.html`파일을 열어 아래와 같이 작성된 라인을 찾아주세요:
 
 ```html
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>

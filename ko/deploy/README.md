@@ -186,10 +186,10 @@ Installing setuptools, pip...done.
 
 $ source myvenv/bin/activate
 
-(myvenv) $  pip install django~=1.11.0
+(myvenv) $  pip install django~=2.0
 Collecting django
 [...]
-Successfully installed django-1.11.3
+Successfully installed django-2.0.6
 ```
 
 > **Note** `pip install`은 설치가 될 때까지 인내심이 조금 필요해요. 하지만 몇 분 안에 완료될 거니 조금만 기다려보세요. 만약 5분 이상 시간이 지났다면, 무엇인가 잘못된 거니 코치에게 물어보세요.

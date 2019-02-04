@@ -47,6 +47,6 @@ Superuser created successfully.
 
 ![Django admin](images/edit_post3.png)
 
-장고 관리자에 대해서 좀 더 알고 싶다면 장고 공식 문서를 읽어보세요 : https://docs.djangoproject.com/en/1.8/ref/contrib/admin/
+장고 관리자에 대해서 좀 더 알고 싶다면 장고 공식 문서를 읽어보세요 : https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 자, 우리는 내 첫 번째 장고 모델을 만들었어요! 잠깐 쉴 시간이 필요해요. 열심히 했으니 재충전을 위해 커피 한 잔(또는 차 한 잔) 또는 뭔가 먹고 돌아오세요.
