@@ -33,7 +33,7 @@
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+هذه المنطقة السفلى هي المحطة الطرفية الخاصة بك. يمكنك استخدام المحطة الطرفية لإرسال تعليمات إلى حاسوب Cloud9 عن بعد. يمكنك تغيير حجم هذا الإطار لجعله أكبر قليلا.
 
 ### البيئة الافتراضية
 
