@@ -253,15 +253,15 @@ NameError: name 'ctiy' is not defined
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Если просто ввести `name`, интерпретатор Python вернет строковое *представление* переменной 'name', которым, в нашем случае, являются буквы M-a-r-i-a, окруженные одинарными кавычками, ''. Когда ты вводишь `print(name)`, Python "печатает" содержание переменной на экран, без кавычек, что удобнее.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Как мы увидим позднее, `print()` пригодится, когда нам будет нужно печатать что-то изнутри функций, или когда мы захотим напечатать что-то на нескольких строчках.
 
 ## Списки
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Помимо строк и целых чисел Python имеет богатую коллекцию других типов объектов. Сейчас мы собираемся представить тебе один из них - **list** (список). Списки - это именно то, о чем ты подумала: объекты, которые являются списками других объектов. :)
 
-Go ahead and create a list:
+Давай начнем с создания списка:
 
 {% filename %}command-line{% endfilename %}
 
@@ -270,7 +270,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Да, это пустой список. Не особенно полезен, да? Давай создадим список лотерейных номеров. Мы не хотим повторять их каждый раз, так что присвоим список переменной:
 
 {% filename %}command-line{% endfilename %}
 
@@ -278,7 +278,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Замечательно, у нас есть список! Что мы можем с ним сделать? Для начала посмотрим как много лотерейных номеров в нашем списке. Есть идеи какую функцию можно использовать для этого? Ты её уже знаешь!
 
 {% filename %}command-line{% endfilename %}
 
