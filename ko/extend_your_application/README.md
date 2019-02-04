@@ -54,7 +54,7 @@
 
 첫 게시물의 상세 페이지 **URL**이 http://127.0.0.1:8000/post/1/가 되게 만들 거에요.
 
-`blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail` *뷰*로 보내, 게시글이 보일 수 있게 해봅시다. `path('post/<int:pk>/', views.post_detail, name='post_detail')`코드를 `blog/urls.py`파일에 추가하면 아래와 같을 보일 거에요.
+`blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail` *뷰*로 보내, 게시글이 보일 수 있게 해봅시다. `path('post/<int:pk>/', views.post_detail, name='post_detail')`코드를 `blog/urls.py`파일에 추가하면 아래와 같이 보일 거에요.
 
 {% filename %}{{warning_icon}}blog/urls.py{% endfilename %}
 ```python
