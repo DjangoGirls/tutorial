@@ -94,7 +94,7 @@ Vamos abrir o arquivo *blog/urls.py* e escrever:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-path('post/new', views.post_new, name='post_new'),
+path('post/new/', views.post_new, name='post_new'),
 ```
 
 O código final deve se parecer com isso:
