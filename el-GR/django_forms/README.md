@@ -94,7 +94,7 @@ class PostForm(forms.ModelForm):
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-path('post/new', views.post_new, name='post_new'),
+path('post/new/', views.post_new, name='post_new'),
 ```
 
 Ο ολοκληρωμένος κώδικας θα δείχνει κάπως έτσι:
