@@ -31,7 +31,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
+방금 `post_list`라는 함수(`def`)를 만들었습니다. 이 함수는 `요청(request)`을 넘겨받아 `render`메서드를 호출합니다. 이 함수는 `render` 메서드를 호출하여 받은(return) `blog/post_list.html`템플릿을 보여줍니다.
 
 Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
@@ -39,6 +39,6 @@ Save the file, go to http://127.0.0.1:8000/ and see what we've got.
 
 ![Error](images/error.png)
 
-서버가 사디 실행했지만, 아직도 보여지지 않네요, 그렇죠? 걱정하지마세요, 이건 단순한 오류 페이지에요, 전혀 두려워하지 않아도 돼요! 콘솔에 에러 메세지가 나타나는 것은, 실제로 정말 유용하답니다! *TemplateDoesNotExist (템플릿이 존재하지 않습니다)*라고 읽을 수 있으니까요. 버그를 잡고 다음 장에서 템플릿을 만들어보아요!
+서버가 다시 실행했지만, 아직도 보여지지 않네요, 그렇죠? 걱정하지마세요, 이건 단순한 오류 페이지에요, 전혀 두려워하지 않아도 돼요! 콘솔에 에러 메세지가 나타나는 것은, 실제로 정말 유용하답니다! *TemplateDoesNotExist (템플릿이 존재하지 않습니다)*라고 읽을 수 있으니까요. 버그를 잡고 다음 장에서 템플릿을 만들어보아요!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> > 장고 뷰에 대해 더 알고 싶다면 장고 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/2.0/topics/http/views/
