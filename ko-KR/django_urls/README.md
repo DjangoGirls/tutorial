@@ -31,7 +31,7 @@ urlpatterns = [
 
 As you can see, Django has already put something here for us.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. 파이썬은 이 구문을 읽지 않아요.
+세 개의 따옴표들(`"""`, `'''`) 사이에 있는 줄들은 독스트링(docstring)이라 불려요. 파일의 최상단이나 클래스 혹은 메서드 위에 적어두면, 그것이 어떤 역할을 하는지 알려주는 역할을 합니다. 파이썬은 이 구문을 읽지 않아요.
 
 The admin URL, which you visited in the previous chapter, is already here:
 
@@ -45,11 +45,11 @@ This line means that for every URL that starts with `admin/`, Django will find a
 
 ## Your first Django URL!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+첫 번째 URL을 만들어 봅시다! 우리는 '<http://127.0.0.1:8000/>' 이 주소를 우리 블로그의 홈페이지 주소로 쓸 것이고, 이 주소로 들어가면 글 목록이 보이게 만들어 볼 거에요.
 
 We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+먼저, `blog.urls`를 가져오는 행을 추가해 봅시다. `blog.urls`를 가져오려면, `include` 함수를 이용해야 합니다. 그 함수를 이용하려면, `from django.urls` 로 시작하는 행을 수정해야 할 거에요.
 
 Your `mysite/urls.py` file should now look like this:
 
@@ -78,7 +78,7 @@ from django.urls import path
 from . import views
 ```
 
-Here we're importing Django's function `path` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+우리는 장고에서 제공되는 함수 `path`와 `blog` 애플리케이션에서 사용할 모든 `views`를 불러오고 있어요. (물론 아직 뷰를 하나도 안 만들었지만, 곧 만들거니 조금만 기다리세요!)
 
 After that, we can add our first URL pattern:
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the root URL. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+이제 `post_list`라는 이름의 `view`가 루트 URL에 할당되었습니다. 이러한 URL 패턴은 빈 문자열에 매칭이 되며, 장고 URL 확인자(resolver)는 전체 URL 경로에서 접두어(prefix)에 포함되는 도메인 이름(i.e. <http://127.0.0.1:8000/>)을 무시해서 받아들입니다. 따라서, 이 패턴은 장고에게 누군가 웹사이트에 'http://127.0.0.1:8000/' 주소로 들어왔을 때 `views.post_list`를 보여주라고 말할 거에요.
 
 The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
@@ -98,6 +98,6 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 ![Error](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+콘솔에서 에러가 발생했네요. 하지만 걱정하지 마세요. 에러는 해결할 방법을 알려준답니다. : __no attribute 'post_list'__ 라는 메시지가 보일 텐데요. 이것은 장고가 찾고 사용하려고하는 *뷰*가 아직 없다는 거에요. 이 단계에서 `/admin/`로도 접속되지 않을 거에요. 앞으로 고쳐볼 테니 걱정하지 마세요. 혹시 여러분이 다른 에러 메시지를 보게 된다면, 웹서버를 껐다 켜보세요. 그러기 위해서는, 커맨드라인(혹은 콘솔)으로 가서 `Ctrl + C`를 눌러 웹 서버를 중단합니다. 다시 `python manage.py runserver`명령을 실행해 서버를 재시작합니다.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
