@@ -376,7 +376,7 @@ If you need more information about Django forms, you should read the documentati
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. 나에게만 보이고 다른 사람에게는 보이지 않는 버튼을 만들어볼게요.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+`blog/templates/blog/base.html` 파일에서, `page-header` `div`를 찾아 아래와 같이 작성된 앵커 태그를 찾습니다:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
