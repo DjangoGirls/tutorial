@@ -398,7 +398,7 @@ This `{% if %}` will cause the link to be sent to the browser only if the user r
 
 세부 페이지에 있는 수정 아이콘이 기억나죠? 이번에도 동일하게 다른 사람들이 게시글을 수정하지 못하게 할 거에요.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+`blog/templates/blog/post_detail.html`파일을 열어 아래와 같이 작성된 라인을 찾아주세요:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
