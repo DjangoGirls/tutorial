@@ -142,6 +142,6 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+다 되었어요! 여러분의 웹사이트가 잘 작동하는지 확인해보세요. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> 만약 `TemplateDoesNotExists(템플릿파일이 존재하지 않습니다)`라는 에러 메세지가 난다면 `blog/base.html`파일이 없이 콘솔에서 `runserver`가 작동되고 있는 경우입니다. 이런 경우, (Ctrl+C)를 눌러서 멈춘 후 `python manage.py runserver`명령어로 다시 서버를 실행하세요.
