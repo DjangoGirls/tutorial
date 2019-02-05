@@ -94,7 +94,7 @@ Abrimos `blog/urls.py` en el editor para añadir una línea:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-path('post/new', views.post_new, name='post_new'),
+path('post/new/', views.post_new, name='post_new'),
 ```
 
 Y el código final tendrá este aspecto:
