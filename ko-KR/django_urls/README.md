@@ -100,4 +100,4 @@ If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'w
 
 콘솔에서 에러가 발생했네요. 하지만 걱정하지 마세요. 에러는 해결할 방법을 알려준답니다. : __no attribute 'post_list'__ 라는 메시지가 보일 텐데요. 이것은 장고가 찾고 사용하려고하는 *뷰*가 아직 없다는 거에요. 이 단계에서 `/admin/`로도 접속되지 않을 거에요. 앞으로 고쳐볼 테니 걱정하지 마세요. 혹시 여러분이 다른 에러 메시지를 보게 된다면, 웹서버를 껐다 켜보세요. 그러기 위해서는, 커맨드라인(혹은 콘솔)으로 가서 `Ctrl + C`를 눌러 웹 서버를 중단합니다. 다시 `python manage.py runserver`명령을 실행해 서버를 재시작합니다.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> > 장고 URL 설정에 대해 더 알고 싶다면 장고 공식 문서를 읽어보세요. :https://docs.djangoproject.com/en/2.0/topics/http/urls/
