@@ -93,7 +93,7 @@ We open `blog/urls.py` in the code editor and add a line:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-path('post/new', views.post_new, name='post_new'),
+path('post/new/', views.post_new, name='post_new'),
 ```
 
 و کد نهایی مانند این خواهد بود:
