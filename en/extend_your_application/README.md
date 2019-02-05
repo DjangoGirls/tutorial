@@ -181,12 +181,12 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+$ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
 $ git pull
 [...]
 ```
 
-(Remember to substitute `<your-pythonanywhere-username>` with your actual PythonAnywhere username, without the angle-brackets).
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere domain, without the angle-brackets.)
 
 
 ## Updating the static files on the server
