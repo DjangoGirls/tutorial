@@ -94,7 +94,7 @@ Dosyayı kaydedip http://127.0.0.1:8000 sayfasını yeniledikten sonra, siz de b
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-path('post/new', views.post_new, name='post_new'),
+path('post/new/', views.post_new, name='post_new'),
 ```
 
 Ve kodun son hali şu şekilde görünecektir:
