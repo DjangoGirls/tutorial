@@ -54,7 +54,7 @@ Let's create a URL in `urls.py` for our `post_detail` *view*!
 
 We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
+`blog/urls.py`파일에 URL을 만들어, 장고가 `post_detail` *뷰*로 보내, 게시글이 보일 수 있게 해봅시다. `path('post/<int:pk>/', views.post_detail, name='post_detail')`코드를 `blog/urls.py`파일에 추가하면 아래와 같이 보일 거에요.
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -68,11 +68,11 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+여기서 `post/<int:pk/>/`는 URL 패턴을 나타내요. 하나씩 차근차근 알아볼 거에요.
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- `post/`란 URL이 **post** 문자를 포함해야 한다는 것을 말합니다. 아직 할 만하죠?
+- `<int:pk>`<int:pk></0>는 조금 까다롭습니다. 장고는 숫자로 나타낼 수 있는 값을 읽어들이며, 이를 뷰에 `pk`라는 변수로써 전달할 수 있다는 것을 의미합니다.
+- `/`은 다음에 **/** 가 한 번 더 와야 한다는 의미입니다.
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
 
@@ -106,9 +106,9 @@ The good news is that you can actually create your own `Page not found` page and
 
 OK, time to add a *view* to our `views.py` file!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+`blog/urls.py`파일에서 `views.post_detail`라는 뷰를 `post_detail`이라 이름을 붙이도록 URL 법칙을 만들었어요. 이는 장고가 `post_detail`이라는 이름을 해석할 때, `blog/views.py`파일 내부의 `post_detail`이라는 뷰 함수로 이해하도록 해줍니다.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+`blog/views.py`파일을 열고, `from`으로 시작하는 행에서 다음과 같이 코드를 추가해주세요:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +116,7 @@ We should open `blog/views.py` in the code editor and add the following code nea
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+`blog/views.py`파일을 열고, `from`으로 시작하는 행에서 다음과 같이 코드를 추가해주세요:
 
 {% filename %}blog/views.py{% endfilename %}
 
