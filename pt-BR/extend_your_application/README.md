@@ -187,12 +187,12 @@ Agora, em um [console Bash do PythonAnywhere](https://www.pythonanywhere.com/con
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
 ## Atualizando os arquivos estáticos no servidor
 
@@ -202,13 +202,13 @@ Comece ativando seu virtualenv, se ele já não estiver ativo (para isso, o Pyth
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
 O comando `manage.py collectstatic` é mais ou menos como `manage.py migrate`. Agora, fazemos algumas mudanças no nosso código e dizemos ao Django que as aplique (*apply*) à coleção de arquivos estáticos, ou ao banco de dados.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://yourname.pythonanywhere.com page to see the result.
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
 
 Deve estar pronto! Arrasou :)
