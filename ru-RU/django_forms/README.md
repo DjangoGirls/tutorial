@@ -437,13 +437,13 @@ form = PostForm(instance=post)
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Не забудьте заменить `&lt;your-pythonanywhere-username&gt;`на ваше фактическое имя пользователя PythonAnywhere, без угловых скобок).
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-* Наконец, прыжок на [страницу «Веб»](https://www.pythonanywhere.com/web_app_setup/) (используйте кнопку меню в верхнем правом углу консоли) и клик по **Reload**. Обновите ваш https://yourname.pythonanywhere.com блог, чтобы увидеть изменения.
+* Наконец, прыжок на [страницу «Веб»](https://www.pythonanywhere.com/web_app_setup/) (используйте кнопку меню в верхнем правом углу консоли) и клик по **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
 Вот и все! Поздравляем :)
