@@ -208,7 +208,7 @@ Nachdem wir das gemacht haben, laden (push) wir unsere Änderungen auf GitHub:
     [...]
     
 
-Du musst `<deine pythonanywere-Domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern. Normalerweise ist deine Subdomain dein PythonAnywhere-Benutzername, aber in manchen Fällen ist sie leicht anders (z.B. wenn dein Benutzername Großbuchstaben enthält). Wen dieser Befehl also nicht funktioniert, verwende den Befehl `ls` (listet Dateien auf), um den tatsächlichen Subdomain-/Ordner-Name herauszufinden, und verwende dann `cd`, um dorthin zu wechseln.
+Du musst `<deine pythonanywere-Domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern. Normalerweise ist deine Subdomain dein PythonAnywhere-Benutzername, aber in manchen Fällen ist sie leicht anders (z.B. wenn dein Benutzername Großbuchstaben enthält). Wenn dieser Befehl also nicht funktioniert, verwende den Befehl `ls` (listet Dateien auf), um den tatsächlichen Subdomain-/Ordner-Name herauszufinden, und verwende dann `cd`, um dorthin zu wechseln.
 
 Nun sieh zu, wie dein Code heruntergeladen wird. Wenn du überprüfen willst, dass er angekommen ist, geh' hinüber zur **Seite "Files"** and schau deinen Code auf PythonAnywhere an (du kannst andere PythonAnywhere-Seiten über den Menü-Knopf auf der Konsolen-Seite erreichen).
 
