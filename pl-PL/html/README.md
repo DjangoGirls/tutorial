@@ -203,14 +203,14 @@ Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
+You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
-Widzisz, jak ściąga się Twój kod. Jeśli chcesz sprawdzić, czy zmiany zostały ściągnięte, możesz przejść do strony **"Files"** i sprawdzić swój kod na PythonAnywhere (możesz przejść do innych stron na PythonAnywhere korzystając z menu na stronie konsoli).
+Now watch your code get downloaded. Jeśli chcesz sprawdzić, czy zmiany zostały ściągnięte, możesz przejść do strony **"Files"** i sprawdzić swój kod na PythonAnywhere (możesz przejść do innych stron na PythonAnywhere korzystając z menu na stronie konsoli).
 
 * Na koniec przejdź do strony ["Web"](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**.
 
