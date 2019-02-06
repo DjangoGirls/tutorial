@@ -203,14 +203,14 @@ HTML (от англ. "HyperText Markup Language") - язык гипертекс�
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Не забудьте заменить `<your-pythonanywhere-username>` на ваше фактическое имя пользователя PythonAnywhere, без угловых скобок).
+You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
-Наблюдайте как ваш код загружается. Если хочешь проверить, загрузился ли он, можешь перейти в **"Files" page** и посмотреть свой код на PythonAnywhere (можешь также переходить на другие страницы PythonAnywhere из кнопки меню на странице с консолью).
+Now watch your code get downloaded. Если хочешь проверить, загрузился ли он, можешь перейти в **"Files" page** и посмотреть свой код на PythonAnywhere (можешь также переходить на другие страницы PythonAnywhere из кнопки меню на странице с консолью).
 
 * Наконец, переключись на вкладку [Web](https://www.pythonanywhere.com/web_app_setup/) и нажми кнопку **Reload** на своем веб-приложении.
 
