@@ -437,13 +437,13 @@ form = PostForm(instance=post)
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Θυμηθείτε να αντικαταστήσετε με το `<your-pythonanywhere-username>`πραγματικό όνομα χρήστη σας του PythonAnywhere χωρίς τα <>).
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-* Τέλος, επισκεφτείτε τη σελίδα σας ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (χρησιμοποιήστε το κουμπί του menu στην πάνω δεξιά γωνία της κονσόλας) και κλικάρετε **Reload**. Ανανεώστε τη σελίδα https://yourname.pythonanywhere.com και δείτε τις αλλαγές.
+* Τέλος, επισκεφτείτε τη σελίδα σας ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (χρησιμοποιήστε το κουμπί του menu στην πάνω δεξιά γωνία της κονσόλας) και κλικάρετε **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
 Αυτό ήταν! Συγχαρητήρια :)
