@@ -203,14 +203,14 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
+You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
-そのうえで、自分のコードがダウンロードされたことを確認しましょう。 それをチェックしたい場合は、**「Files」ページ** を押して、自分のコードをPythonAnywhereの中で見てみましょう（コンソールページのメニューボタンから他のPythonAnywhereページにアクセスできます）。
+Now watch your code get downloaded. それをチェックしたい場合は、**「Files」ページ** を押して、自分のコードをPythonAnywhereの中で見てみましょう（コンソールページのメニューボタンから他のPythonAnywhereページにアクセスできます）。
 
 * 最後に、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を押して、自分のアプリの**Reload**を押します。
 
