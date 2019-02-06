@@ -436,12 +436,12 @@ Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weit
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<deine pythonanywere-Domain>.pythonanywhere.com
+    $ cd ~/<deine-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Denk daran, `<deine pythonanywere-Domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)
+(Denk daran, `<deine-pythonanywhere-Domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)
 
 * Gehe schließlich noch rüber [auf die Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) (benutze den Menü-Knopf in der rechten oberen Ecke der Konsole) und klicke **Reload**. Lade deinen Blog https://subdomain.pythonanywhere.com neu, um die Änderungen zu sehen.
 
