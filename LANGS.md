@@ -9,7 +9,7 @@
 * [🇯🇵 日本語](ja/)
 * [🇰🇵/🇰🇷 한국어 (beta)](ko/)
 * [🇵🇱 Polski](pl/)
-* [🇵🇹 Português-brasileiro](pt/)
+* [🇧🇷 Português-brasileiro](pt/)
 * [🇷🇺 Русский (beta)](ru/)
 * [🇸🇰 Slovenčina (beta)](sk)
 * [🇹🇷 Türkçe (beta)](tr/)
