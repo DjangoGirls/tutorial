@@ -437,13 +437,13 @@ Dobrze byłoby wiedzieć, że nasza witryna nadal działa na PythonAnywhere, pra
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-* Nareszcie przeskakujemy do do ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (użyj przycisku menu w prawym górnym rogu konsoli) i naciśnij **Reload**. Odśwież swoj blog https://yourname.pythonanywhere.com, aby zobaczyć zmiany.
+* Nareszcie przeskakujemy do do ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (użyj przycisku menu w prawym górnym rogu konsoli) i naciśnij **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
 I to już wszystko! Gratulacje :)
