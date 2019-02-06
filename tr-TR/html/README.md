@@ -203,14 +203,14 @@ Bunu bir kez yapıp, değişikliklerimizi GitHub'a yükledik (ittik):
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
+You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
-Ve kodunuzun indirilmesini izleyin. Kontrol etmek istersen, **Files** sekmesine gidip kodunu PythonAnywhere üzerinde görebilirsin (Konsol sayfasındaki menü butonundan diğer PythonAnywhere sayfalarına ulaşabilirsin).
+Now watch your code get downloaded. Kontrol etmek istersen, **Files** sekmesine gidip kodunu PythonAnywhere üzerinde görebilirsin (Konsol sayfasındaki menü butonundan diğer PythonAnywhere sayfalarına ulaşabilirsin).
 
 * Son olarak, [Web sekmesi](https://www.pythonanywhere.com/web_app_setup/)ne gidip uygulamanızın **Yenile** butonuna basın.
 
