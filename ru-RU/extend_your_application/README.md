@@ -187,12 +187,12 @@ def post_detail(request, pk):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Не забудьте заменить `<your-pythonanywhere-username>` на ваше имя пользователя PythonAnywhere, без угловых скобок).
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
 ## Обновление статических файлов на сервере
 
@@ -202,13 +202,13 @@ def post_detail(request, pk):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
 Команда `manage.py collectstatic` немного похожа `manage.py migrate`. Мы вносим некоторые изменения в наш код, а затем мы говорим Django чтобы он *применил* эти изменения для коллекции статических файлов на сервере, либо в базе данных.
 
-В любом случае, мы теперь готовы перепрыгнуть на ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (из меню кнопки в верхнем правом углу консоли) и кликнуть **Reload**, а затем смотри на страницу https://yourname.pythonanywhere.com чтобы увидеть результат.
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
 
 Вот и все! Поздравляем :)
