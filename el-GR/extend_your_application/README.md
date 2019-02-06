@@ -187,12 +187,12 @@ def post_detail(request, pk):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Θυμηθείτε να αντικαταστήσετε με το `<your-pythonanywhere-username>`πραγματικό όνομα χρήστη σας του PythonAnywhere χωρίς τα <>).
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
 ## Ενημέρωση των στατικών αρχείων στο διακομιστή
 
@@ -202,13 +202,13 @@ def post_detail(request, pk):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
 Η εντολή `manage.py collectstatic` είναι λίγο σαν την `manage.py migrate`. Κάνουμε κάποιες αλλαγές στον κώδικα και στη συνέχεια λέμε στο Django να *εφαρμόσει* αυτές τις αλλαγές είτε στον αντίστοιχο φάκελο στατικών αρχείων του server είτε στη βάση δεδομένων.
 
-Σε κάθε περίπτωση, είμαστε τώρα έτοιμοι να κλικάρουμε ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (από το κουμπί του μενού στην επάνω δεξιά μεριά της κονσόλας) και κλικάρουμε στο **Reload**. Δείτε τη σελίδα https://yourname.pythonanywhere.com με το αποτέλεσμα.
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
 
 Αυτό ήταν! Συγχαρητήρια :)
