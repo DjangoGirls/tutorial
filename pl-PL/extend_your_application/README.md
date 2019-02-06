@@ -187,12 +187,12 @@ Następnie w konsoli [PythonAnywhere Bash console](https://www.pythonanywhere.co
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Pamiętaj, aby zastąpić `<your-pythonanywhere-username>` aktualną nazwą użytkownika PythonAnywhere, bez ostrych nawiasów).
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
 ## Aktualizacja plików statycznych na serwerze
 
@@ -202,13 +202,13 @@ Zacznij od aktywacji swojego virtualenva, jeżeli nie jest on jeszcze aktywny (P
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
 Komenda `manage.py collectstatic` jest trochę podobna do `manage.py migrate`. Wcześniej dokonałyśmy jakichś zmian w naszym kodzie, a teraz informujemy Django, by *zastosował* te zmiany, albo w kolekcji plików statycznych na serwerze albo w bazie danych.
 
-W każdym razie, jesteśmy już gotowe do przejścia na stronę ["Web"](https://www.pythonanywhere.com/web_app_setup/) (klikając w menu umieszczonym w prawym górnym rogu). Następnie kliknij **Reload** i spójrz na stronę https://yourname.pythonanywhere.com aby zobaczyć rezultat.
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
 
 I to już wszystko! Gratulacje :)
