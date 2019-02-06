@@ -203,14 +203,14 @@ H δημιουργία ενός template σημαίνει τη δημιουργ�
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Θυμηθείτε να αντικαταστήσετε με το `<your-pythonanywhere-username>`πραγματικό όνομα χρήστη σας του PythonAnywhere χωρίς τα <>).
+You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
-Και δείτε τον κώδικα σας να κατεβαίνει. Αν θέλετε να δείτε ότι ολοκληρώθηκε, μεταβείτε στη σελίδα **"Files" page** και δείτε τον κώδικα σας στο PythonAnywhere (μπορείτε να ανοίξετε και άλλες σελίδες του PythonAnywhere από το κουμπί του μενού στην σελίδα της κονσόλας).
+Now watch your code get downloaded. Αν θέλετε να δείτε ότι ολοκληρώθηκε, μεταβείτε στη σελίδα **"Files" page** και δείτε τον κώδικα σας στο PythonAnywhere (μπορείτε να ανοίξετε και άλλες σελίδες του PythonAnywhere από το κουμπί του μενού στην σελίδα της κονσόλας).
 
 * Τέλος, πηγαίνετε στο ["Web" page](https://www.pythonanywhere.com/web_app_setup/) και κλικάρετε **Reload** στην εφαρμογή σας.
 
