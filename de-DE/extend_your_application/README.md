@@ -187,12 +187,12 @@ Dann führe Folgendes in der [PythonAnywhere-Bash-Konsole](https://www.pythonany
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<deine pythonanywere-Domain>.pythonanywhere.com
+    $ cd ~/<deine-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Denk daran, `<deine pythonanywere-Domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)
+(Denk daran, `<deine-pythonanywhere-Domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)
 
 ## Die statischen Dateien auf dem Server aktualisieren
 
@@ -202,7 +202,7 @@ Aktiviere also deine virtuelle Umgebung, wenn sie nicht vom letzten Mal noch akt
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <deine pythonanywere-Domain>.pythonanywhere.com
+    $ workon <deine-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
