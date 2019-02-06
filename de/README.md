@@ -14,7 +14,7 @@ Wie alles Unbekannte wird das ein Abenteuer sein - aber keine Sorge: Da du berei
 
 Hattest du auch schon einmal das Gefühl, dass Technik in der Welt immer wichtiger wird und du da nicht ganz mithalten kannst? Wolltest du schon immer einmal eine Website bauen, aber hattest dann nicht genug Motivation, damit anzufangen? Hast du dir irgendwann schon einmal gedacht, dass die Computerwelt zu kompliziert für dich ist, so dass du noch nicht einmal den Versuch unternommen hast, dort selbst etwas zu tun?
 
-Dann haben wir hier gute Neuigkeiten für dich! Programmieren ist nicht so schwer, wie du denkst und wir zeigen dir hier, wie viel Spaß es machen kann.
+Dann haben wir hier gute Neuigkeiten für dich! Programmieren ist nicht so schwer, wie du denkst, und wir zeigen dir hier, wie viel Spaß es machen kann.
 
 Dieses Tutorial wird dich nicht auf zauberhafte Weise in eine Programmiererin verwandeln. Wenn du gut darin sein willst, brauchst du Monate oder sogar Jahre des Lernens und Übens. Aber wir wollen dir zeigen, dass Programmieren oder Webseitenerstellen nicht so kompliziert ist, wie es scheint. Wir versuchen, dir auf einfache Art verschiedene, kleine Teile zu zeigen, so dass du davon nicht eingeschüchtert wirst.
 
