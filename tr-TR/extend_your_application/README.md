@@ -187,12 +187,12 @@ Sonra bir [PythonAnywhere Bash konsol](https://www.pythonanywhere.com/consoles/)
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Açı parantezleri olmadan `<your-pythonanywhere-username>`'i gerçek PythonAnywhere kullanıcı isminizle değiştirmeyi unutmayın).
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
 ## Sunucudaki statik dosyaları güncelleyelim
 
@@ -202,13 +202,13 @@ Daha önceden çalıştırdığın virtualenv'in hala etkin değilse tekrar akti
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
-    (kullaniciadiniz.pythonanywhere.com)$ python manage.py collectstatic
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
+    (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
 `manage.py collectstatic` komutu biraz `manage.py migrate` komutu gibidir. Kodumuzda bazı değişiklikler yapıp Django'ya bu değişiklikleri sunucunun statik dosyalar yığınına ya da veritabanına uygulamasını söyledik.
 
-Her durumda, artık ["Web" sayfasına](https://www.pythonanywhere.com/web_app_setup/) (konsolun sağ üstündeki menü düğmesinden) atlamaya ve **Yeniden Yükle** seçeneğine tıklamaya hazırız ve sonucu görmek için https://adınız.pythonanywhere.com sayfasına bakın.
+In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
 
 İşte bu kadar! Tebrikler :)
