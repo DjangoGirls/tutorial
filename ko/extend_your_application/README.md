@@ -69,7 +69,7 @@ urlpatterns = [
 
 여기서 `post/<int:pk/>/`는 URL 패턴을 나타내요. 하나씩 차근차근 알아볼 거에요.
  - `post/`란 URL이 **post** 문자를 포함해야 한다는 것을 말합니다. 아직 할 만하죠?
- - `<int:pk>`는 조금 까다롭습니다. 장고는 숫자로 나타낼 수 있는 값을 읽어들이며, 이를 뷰에 `pk`라는 변수로써 전달할 수 있다는 것을 의미합니다.
+ - `<int:pk>`는 조금 까다롭습니다. 장고는 정수 값을 기대하고 이를 `pk`라는 변수로 뷰로 전송하는 것을 말합니다.
  - `/`은 다음에 **/** 가 한 번 더 와야 한다는 의미입니다.
 
 브라우저에 `http://127.0.0.1:8000/post/5/`라고 입력하면, 장고는 `post_detail` *뷰*를 찾아 매개변수 `pk`가 `5`인 값을 찾아 *뷰*로 전달합니다.
@@ -105,7 +105,7 @@ Post.objects.get(pk=pk)
 
 `blog/urls.py`파일에서 `views.post_detail`라는 뷰를 `post_detail`이라 이름을 붙이도록 URL 법칙을 만들었어요. 이는 장고가 `post_detail`이라는 이름을 해석할 때, `blog/views.py`파일 내부의 `post_detail`이라는 뷰 함수로 이해하도록 해줍니다.
 
-`blog/views.py`파일을 열고, `from`으로 시작하는 행에서 다음과 같이 코드를 추가해주세요:
+`blog/views.py`파일을 열고, `from`으로 시작하는 행에서 다음과 같이 코드를 추가해주세요. :
 
 {% filename %}blog/views.py{% endfilename %}
 ```python

@@ -14,7 +14,7 @@
     [이수진](https://github.com/sujinleeme)
 > - 3차 : 2017. 5. 19.
     [이수진](https://github.com/sujinleeme)
-> - 4차 : 2019. 2. 5. [이재열](https://github.com/malkoG)(Django 1.x 버전에서 Django 2.0 버전으로 업데이트)
+> - 4차 : 2019. 2. 5. [이재열](https://github.com/malkoG)
 
 
 ## 환영합니다
