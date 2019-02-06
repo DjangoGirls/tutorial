@@ -92,15 +92,17 @@ Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur In
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd $USER.pythonanywhere.com
+    $ cd <your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-* Pour finir, n'oubliez pas de recharger votre application web : onglet [Web](https://www.pythonanywhere.com/web_app_setup/) puis cliquez sur le bouton **Reload**. (Pour rejoindre les autres pages de PythonAnywhere à partir de la console, utilisez le bouton de menu dans le coin supérieur droit). Votre mise à jour devrait apparaître sur https://yourname.pythonanywhere.com--Allez regarder dans le navigateur ! Si les posts sur PythonAnywhere ne correspondent pas à ceux qui apparaissent dans votre version locale du blog, ne vous inquiétez pas. Les deux bases de données, la locale et celle sur PythonAnywhere, ne sont pas synchronisées comme le reste des fichiers.
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-Félicitations! Continuez à ajouter des nouveaux posts depuis votre Django admin (n'oubliez pas d'ajouter la date de publication, published_date). Faites gaffe d'utiliser le Django admin de votre site pythonanywhere, https://yourname.pythonanywhere.com/admin. Réactualisez la page pour vérifier que les nouveau posts y sont bien publiés.
+* Pour finir, n'oubliez pas de recharger votre application web : onglet [Web](https://www.pythonanywhere.com/web_app_setup/) puis cliquez sur le bouton **Reload**. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! Si les posts sur PythonAnywhere ne correspondent pas à ceux qui apparaissent dans votre version locale du blog, ne vous inquiétez pas. Les deux bases de données, la locale et celle sur PythonAnywhere, ne sont pas synchronisées comme le reste des fichiers.
 
-Ça a marché ? Nous sommes super fière de vous ! Éloignez vous un peu de votre clavier maintenant : vous avez mérité de faire une pause. :)
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
 ![Figure 13.4](images/donut.png)
