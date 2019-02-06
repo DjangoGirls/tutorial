@@ -92,15 +92,17 @@ Dobrze byłoby sprawdzić, czy twoja strona wciąż będzie działała w publicz
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd $USER.pythonanywhere.com
+    $ cd <your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-* Na koniec przeskocz do strony [Web](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**. (Aby dotrzeć do innych stron PythonAnywhere przez konsolę, użyj przycisku menu w prawym górnym rogu.) Twoja aktualizacja powinna być już pod adresem https://yourname.pythonanywhere.com - sprawdź to w swojej przeglądarce! Jeśli posty na blogu w witrynie PythonAnywhere nie pasują do postów znajdujących się na blogu hostowane na lokalnym serwerze, jest to OK. Bazy danych na komputerze lokalnym i Python Anywhere nie synchronizują się z resztą plików.
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-Gratulacje! Teraz możesz dodać nowy wpis do swojego administratora Django (pamiętaj, aby dodać publish_date!). Upewnij się, że jesteś administratorem Django dla swojej strony pythonanywhere, https://yourname.pythonanywhere.com/admin. Następnie odśwież stronę, aby sprawdzić, czy pojawia się tam wiadomość.
+* Na koniec przeskocz do strony [Web](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! Jeśli posty na blogu w witrynie PythonAnywhere nie pasują do postów znajdujących się na blogu hostowane na lokalnym serwerze, jest to OK. Bazy danych na komputerze lokalnym i Python Anywhere nie synchronizują się z resztą plików.
 
-Poszło jak z płatka? Jesteśmy dumne! Odejdź na chwilkę od komputera - zasłużyłaś na przerwę! :)
+Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
-![Rysunek 13.4](images/donut.png)
+Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+
+![Figure 13.4](images/donut.png)
