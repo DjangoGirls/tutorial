@@ -420,7 +420,7 @@ $ git pull
 [...]
 ```
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere domain, without the angle-brackets.)
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
