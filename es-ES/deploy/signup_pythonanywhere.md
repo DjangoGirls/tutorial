@@ -12,8 +12,8 @@ Almacenaremos del blog que estamos construyendo sobre Python Anywhere. Crea una 
 
 Este paso solo necesita ser completado una vez. Una vez que te hayas registrado en PythonAnywhere, serás llevado a tu tablón principal. Encontrarás el enlace a la página de tu "Cuenta" en la esquina superior derecha:
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+![Enlace de cuenta en la parte superior derecha de la pagina](../deploy/images/pythonanywhere_account.png)
 
 Después selecciona la lengueta llamada "API token", y haz click en el botón que dice "Crear nueva API token"
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![Lengüeta de la API token en la pagina de cuenta](../deploy/images/pythonanywhere_create_api_token.png)
