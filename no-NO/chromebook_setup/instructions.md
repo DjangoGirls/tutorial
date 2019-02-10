@@ -24,20 +24,20 @@ Terminalen på PaizaCloud Cloud IDE er klar for dine instruksjoner. Du kan endre
 
 1. Gå til [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. Registrer en konto
-3. Click *Create Environment*
+3. Klikk *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Nå skal du se et grensesnitt med en sidebar, et stort hovedvindu med noe tekst, og et lite vindu i bunnen som ser ut omtrent som dette:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Det nederste området er terminalen din. Du kan bruke terminalen for å sende instruksjoner til den eksterne Cloud9-maskinen. Du kan endre størrelse på vinduet for å gjøre det større.
 
-### Virtual Environment
+### Virtual Environment (virtuelt miljø)
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Et virtuelt miljø (også kalt virtualenv) er som en privat boks som vi kan fylle med nyttig datamaskinkode for prosjektene vi jobber med. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
