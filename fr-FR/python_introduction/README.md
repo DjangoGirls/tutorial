@@ -142,7 +142,7 @@ Ce sont des bases présentes dans tous les langages de programmation existants. 
 
 ## Les erreurs
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Essayons quelque chose de nouveau. Pouvons-nous obtenir la longueur d’un nombre de la même façon que celle de notre nom ? Tapez `len(304023)` et appuyez sur `entrée` :
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Nous avons eu notre première erreur! L'icône {{ warning_icon }} est notre façon de vous alerter que le code que vous êtes sur le point d'exécuter ne fonctionnera pas comme prévu. Faire des erreurs (même intentionnellement) est une partie importante de l'apprentissage!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+L'erreur que nous venons d'avoir nous dit que les objets de type "int" (integers, ce qui signifie nombre entier) n'ont pas de longueur. Que pouvons-nous faire, du coup ? Pourquoi ne pas essayer d'écrire notre nombre comme une chaine de caractères ? Après tout, les chaînes de caractères ont bien une taille, non ?
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,18 +164,18 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Ça a marché ! Nous avons utilisé la fonction `str` à l'intérieur de la fonction `len`. La fonction `str()` convertit n'importe quoi en chaine de caractères.
 
 - La fonction `str` convertit des choses en **chaines de caractères**
 - La fonction `int` convertit des choses en **entiers**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Important : il est possible de convertir des nombres en texte, mais il n'est pas toujours possible de convertir du texte en nombres. Parce que, bon, ça vaudrait quoi `int('salut')` ?
 
 ## Variables
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Il y existe un concept super important en programmation : les variables. Une variable, c'est juste un nom pour quelque chose que l'on aimerait utiliser plus tard. Les programmeurs⋅euses utilisent des variables pour stocker des données, rendre leur code plus lisible, et pour ne pas avoir à se rappeler de ce que sont les choses.
 
-Let's say we want to create a new variable called `name`:
+Disons que nous aimerions créer une variable appelée `name` :
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,9 +183,9 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+Nous tapons name égale Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Vous avez peut-être remarqué que contrairement à tout à l'heure, le programme ne renvoie rien. Du coup, comment faire pour vérifier que la variable existe vraiment ? Tapez `name` et appuyez sur `entrée` :
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Youpi ! Votre première variable ! :) Vous pouvez toujours changer ce à quoi elle fait référence :
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+Vous pouvez aussi l'utiliser avec des fonctions :
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Génial, non ? Et bien sûr, les variables peuvent être n'importe quoi, y compris des chiffres ! Essayez ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -224,7 +224,7 @@ Awesome, right? Now, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Mais que ce passe-t-il si nous utilisons le mauvais nom ? Essayez de deviner ! C'est parti !
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -236,13 +236,13 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Une erreur ! Comme vous pouvez le voir, Python a différents types d'erreurs, et celle-ci est une **NameError**. Python vous donne cette erreur quand vous essayez d'utiliser une variable qui n'a pas encore été définie. Si vous rencontrez cette erreur par la suite, vérifiez dans votre code que vous n'avez pas fait une faute de frappe dans une variable.
 
-Play with this for a while and see what you can do!
+Jouez un peu avec les variables et essayez de voir ce que vous pouvez en faire !
 
 ## La fonction print
 
-Try this:
+Essayez ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -254,13 +254,13 @@ Try this:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Quand vous tapez `name`, l'interpréteur Python répond avec la *représentation* de la chaine de caractères associée à la variable "name", c'est à dire les lettres M-a-r-i-a, entourées par des guillemets simples. Quand vous dites `print(name)`, Python va "imprimer" le contenu de la variable sur l'écran, sans les guillemets, ce qui est plus sympa.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Comme nous le verrons plus tard, `print()` est aussi utile lorsque l'on veut afficher des choses depuis l'intérieur de fonctions ou des choses sur plusieurs lignes.
 
 ## Les listes
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+En plus des chaines de caractères et des entiers, Python possède tout un tas d'autres types d'objets. Nous allons maintenant vous présenter un type appelé **list** (liste). Les listes sont exactement ce que vous pensez : des objets qui sont des listes d’autres objets. :)
 
 Go ahead and create a list:
 
