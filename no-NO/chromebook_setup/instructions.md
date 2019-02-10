@@ -1,29 +1,29 @@
-Du kan hoppe over[denne delen](http://tutorial.djangogirls.org/en/installation/#install-python) om du ikke bruker en Chromebook. Om du bruker en Chromebook, vill installasjons prosessen bli litt anderledes. Du kan ignorerer resten av installasjons instruksene.
+Du kan hoppe over [denne delen](http://tutorial.djangogirls.org/en/installation/#install-python) hvis du ikke bruker en Chromebook. Hvis du bruker en Chromebook, vil installasjonsprosessen bli litt annerledes. Du kan ignorere resten av installasjonsinstruksene.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE er et verktøy som gir en kodeeditor og tilgang til en datamaskin som kjører på internett der du kan installere, skrive, og kjøre programvaren. Gjennom hele opplæringen, vil Cloud IDE fungere som din *lokale datamaskin*. Du vil fortsatt kjøre kommandoer i en terminal akkurat som dine klassekamerater på OS X, Ubuntu eller Windows, men terminalen din vil være koblet til en datamaskin som kjører et annet sted som Cloud IDE setter opp for deg. Her er instruksjoner for Cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). Du kan velge en Cloud IDE, og følge instruksjonene for Cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+1. Gå til [PaizaCloud IDE](https://paiza.cloud/)
+2. Registrer en konto
+3. Klikk *New Server*
+4. Klikk knappen Terminal (på venstre side av vinduet)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Nå skal du se et grensesnitt med en sidebar, knapper til venstre. Klikk på knappen "Terminal" for å åpne et terminalvindu med en prompt som dette:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Terminalen på PaizaCloud Cloud IDE er klar for dine instruksjoner. Du kan endre størrelsen eller maksimere vinduet for å gjøre det større.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
+1. Gå til [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Registrer en konto
 3. Click *Create Environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
