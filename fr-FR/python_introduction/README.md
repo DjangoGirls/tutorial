@@ -414,12 +414,12 @@ KeyError: 'age'
 
 Oh, une autre erreur ! Celle-ci est une **KeyError**. Python nous donne un coup de main et nous dit que la clef `'age'` n'existe pas dans le dictionnaire.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+Vous vous demandez peut-être quand est-ce qu'il faut utiliser un dictionnaire ou une liste ? C'est une bonne question. Réfléchissez-y un instant avant de regarder la réponse à la ligne suivante.
 
 - Vous avez besoin d'une suite ordonnée d'éléments ? Utilisez une liste.
 - Vous avez besoin d'associer des valeurs à des clefs, de manière à pouvoir les retrouver efficacement (par clef) par la suite ? Utilisez un dictionnaire.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+Comme les listes, les dictionnaires sont *mutables*, ce qui signifie qu'ils peuvent être modifiés après leur création. Vous pouvez ajouter de nouvelles paires clé–valeur au dictionnaire après sa création, comme ceci :
 
 {% filename %}command-line{% endfilename %}
 
@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+Comme pour les listes, la fonction `len()` permet d'obtenir le nombre de paires clef–valeur du dictionnaire. Essayez et tapez la commande suivante :
 
 {% filename %}command-line{% endfilename %}
 
@@ -436,9 +436,9 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+J'espère que c'est compréhensible pour l'instant :) Prête pour s'amuser un peu plus avec les dictionnaires ? Passez à la ligne suivante pour voir des trucs géniaux.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+Vous pouvez utiliser la méthode `pop()` pour supprimer un élément du dictionnaire. Par exemple, si vous voulez supprimer l'entrée correspondant à la clé `« favorite_numbers »`, tapez la commande suivante :
 
 {% filename %}command-line{% endfilename %}
 
@@ -449,9 +449,9 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 {'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+Comme vous pouvez le voir dans votre console, la paire clef–valeur correspondant à "favorite_numbers" a été supprimée.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+De même, vous pouvez changer la valeur associée à une clef déjà créée dans le dictionnaire. Tapez ceci :
 
 {% filename %}command-line{% endfilename %}
 
@@ -461,24 +461,24 @@ As well as this, you can also change a value associated with an already-created 
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+Voilà, la valeur de la clé `"country"` a été modifiée de `"Poland"` à `"Germany"`. :) Ce n'est pas cool ça ? Yep ! Un autre truc génial d'appris.
 
 ### Résumé
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+C'est super ! Vous savez plein de choses sur la programmation maintenant. Dans cette partie, vous avez appris :
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **les erreurs** – vous savez maintenant comment lire et comprendre les erreurs qui apparaissent quand Python ne comprend pas l'une de vos commandes
+- **les variables** – des noms pour les objets qui vous permettent de coder plus facilement et de rendre votre code plus lisible
+- **les listes** – des listes d'objets stockés dans un ordre particulier
+- **les dictionnaires** – des objets stockés sous forme de paires clef–valeur
 
-Excited for the next part? :)
+On continue ? :)
 
 ## Comparer des choses
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Pour les lectrices autodidactes : cette partie est traitée dans la vidéo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Comparer des choses est très important en programmation. Quelle serait la chose la plus facile à comparer ? Les chiffres, bien sûr ! Allons voir comment ça marche :
 
 {% filename %}command-line{% endfilename %}
 
