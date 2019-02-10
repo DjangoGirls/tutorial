@@ -10,7 +10,7 @@
 
 > 家で１人でこのパートに挑戦している方へ：このパートと続くパートは、動画（英語）もあるので参考にしてください。 [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U)
 
-Pythonであそぶために、*コマンドライン* を開きましょう。 やり方は、チャプター [Intro to Command Line](../intro_to_command_line/README.md) で学びましたね。
+Pythonであそぶために、*コマンドライン* を開きましょう。 やり方は、チャプター [コマンドラインを使ってみよう](../intro_to_command_line/README.md) で学びましたね。
 
 準備ができたら、次の指示に従ってやってみましょう。
 
