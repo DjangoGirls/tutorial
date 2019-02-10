@@ -6,17 +6,17 @@ Bloggen vår ser fortsatt litt stygg ut, sant? På tide å gjøre den penere! Vi
 
 Cascading Style Sheets (CSS) er et språk brukt for å beskrive utseendet og formatteringen av en webside skrevet i et 'markup language' (som HTML). Behandle det som en makeup for websiden vår. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Men vil ønsker ikke å starte fra begynnelsen igjen, sant? Igjen, vi skal bruke noe som programmerere ga ut på internett gratis. Å finne opp hjulet på nytt er jo ikke noe gøy.
 
-## Let's use Bootstrap!
+## La oss bruke Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap er en av de mest populære rammeverkene for HTML og CSS, for å utvikle nydelige websider: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Det ble skrevet av utviklere som jobber for Twitter. Nå blir det videreutviklet av frivillige fra hele verden!
 
-## Install Bootstrap
+## Installere Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+For å installere Bootstrap må du åpne din `.html`-fil i kodeeditoren og legge dette til `<head>`-delen:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,33 +25,33 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Dette legger ikke noen filer til i prosjektet ditt. Det peker bare på filer som finnes på internett. Så kom igjen, åpne websiden din og oppdater siden. Her er det!
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Ser bedre ut allerede!
 
-## Static files in Django
+## Static-filer i Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Til slutt skal vi se nærmere på det som vi kaller **static files**. Static files er alle dine CSS-filer og bilder. Innholdet avhenger ikke av forespørselkonteksten, og vil være det samme for alle brukere.
 
-### Where to put static files for Django
+### Hvor legger man static files for Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django vet allerede hvor static-filene er for den innebygde admin-appen. Nå trenger vi å legge til noen static files for vår egen app, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+Dette gjør vi ved å opprette en mappe kalt `static` inni blog-appen:
 
     djangogirls
     ├── blog
     │   ├── migrations
     │   ├── static
-    │   └── templates
+    │   └── templates
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django vil automatisk finne enhver mappe kalt "static" inni noen av de andre app-mappene. Deretter vil det kunne bruke innholdet som static-filer.
 
-## Your first CSS file!
+## Din først CSS-fil!
 
 Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
