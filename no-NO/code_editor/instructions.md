@@ -24,8 +24,8 @@ Atom er en annen populær editor. Den er gratis, open-source og tilgjengelig for
 
 Du lurer kanskje på hvorfor vi installerer denne spesielle programvaren for å redigere kode, i stedet for noe sånn som Word eller Notepad.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Den første årsaken er at koden trenger å være i **klartekst**, og problemet med Word og Textedit er at de faktisk ikke produserer klartekst, men rik tekst med fonter og formattering, og bruker egendefinerte formater som [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Den andre årsaken er at kodeeditorer er spesialisert for å redigere kode, slik at de har nyttige funksjoner som å utheve koder med farger etter type kode, eller automatisk lukke sitater.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Vi skal se dette senere. Snart vil du komme til å tenke på din trofaste gamle kodeeditor som et av dine favorittverktøy. :)
