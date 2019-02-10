@@ -363,9 +363,9 @@ Vous pouvez trouver une liste complète des méthodes disponibles pour les liste
 
 ## Dictionnaires
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Pour les lectrices autodidactes : cette partie est traitée dans la vidéo [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+Un dictionnaire est un peu comme une liste. Cependant, nous utilisons des clefs plutôt que des indices numériques pour accéder aux valeurs. Une clef peut être n'importe quelle chaîne de caractères ou n'importe quel chiffre. La syntaxe pour définir un dictionnaire vide est la suivante :
 
 {% filename %}command-line{% endfilename %}
 
@@ -374,9 +374,9 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+Cela montre que vous venez de créer un dictionnaire vide. Hurray !
 
-Now, try writing the following command (try substituting your own information, too):
+Maintenant, essayez d'écrire la commande suivante (et essayez aussi de remplacer le contenu par vos informations) :
 
 {% filename %}command-line{% endfilename %}
 
@@ -384,13 +384,13 @@ Now, try writing the following command (try substituting your own information, t
 >>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+Avec cette commande, vous venez de créer une variable nommée `participant` avec trois paires clef–valeur :
 
 - La clef `name` pointe vers la valeur `'Ola'` (un objet `chaine de caractères`),
 - `country` pointe vers `'Poland'` (une autre `chaine de caractères`),
 - et `favorite_numbers` pointe vers `[7, 42, 92]` (une `liste` contenant trois nombres).
 
-You can check the content of individual keys with this syntax:
+Vous pouvez vérifier le contenu de chaque clef avec cette syntaxe :
 
 {% filename %}command-line{% endfilename %}
 
@@ -399,9 +399,9 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Vous voyez, c'est un peu comme une liste; Cependant, vous n'avez pas besoin de vous souvenir de l'indice, juste de son nom.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+Que ce passe-t-il lorsque nous demandons à Python la valeur correspondant à une clef qui n'existe pas ? Pouvez-vous le deviner ? Essayons voir !
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -412,7 +412,7 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+Oh, une autre erreur ! Celle-ci est une **KeyError**. Python nous donne un coup de main et nous dit que la clef `'age'` n'existe pas dans le dictionnaire.
 
 When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
 
