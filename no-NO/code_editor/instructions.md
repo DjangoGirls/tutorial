@@ -1,28 +1,28 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Det finnes mange forskjellige editorer og det koker hovedsakelig ned til personlige preferanser. De fleste Python-programmerere bruker avanserte men svært kraftige IDEs (Integrated Development Environments), som for eksempel PyCharm. Som en nybegynner, er det sannsynligvis mindre egnet. Våre anbefalinger er like kraftige, men veldig mye enklere.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Våre forslag er nedenfor, men spør gjerne din instruktør hva de foretrekker - da vil det være enklere å få hjelp fra dem.
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit er en open-source, gratis editor, tilgjengelig for alle operativsystemer.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[Last den ned her](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text er en veldig populær editor med en gratis prøveperiode, og den er tilgjengelig for alle operativsystemer.
 
-[Download it here](https://www.sublimetext.com/3)
+[Last den ned her](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom er en annen populær editor. Den er gratis, open-source og tilgjengelig for Windows, OS X og Linux. Atom er utviklet av [GitHub](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Last den ned her](https://atom.io/)
 
-## Why are we installing a code editor?
+## Hvorfor skal vi installere en kodeeditor?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Du lurer kanskje på hvorfor vi installerer denne spesielle programvaren for å redigere kode, i stedet for noe sånn som Word eller Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
