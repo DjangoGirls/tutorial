@@ -53,7 +53,7 @@ Django vil automatisk finne enhver mappe kalt "static" inni noen av de andre app
 
 ## Din først CSS-fil!
 
-La oss opprette en CSS-fil nå, for å legge til din egen stil på websiden. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+La oss opprette en CSS-fil nå, for å legge til din egen stil på websiden. Opprett en ny mappe kalt `css` inni `static`-mappen. Deretter oppretter du en ny fil som du kaller `blog.css` inni `css`-mappen. Klar?
 
     djangogirls
     └─── blog
@@ -62,13 +62,13 @@ La oss opprette en CSS-fil nå, for å legge til din egen stil på websiden. Cre
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Det er på tide å skrive litt CSS! Åpne filen `blog/static/css/blog.css` i kodeeditoren.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Vi kommer ikke til å gå i dybden på tilpasning og lære alt om CSS her. Det finnes en anbefaling for et gratis CSS-kurs på slutten av denne siden hvis du ønsker å lære mer.
 
-But let's do at least a little. Maybe we could change the color of our headers? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+Men la oss i det minste gjøre litt. Kanskje vi kan endre farge på overskriftene? For å forstå farger bruker datamaskiner spesielle koder. Disse kodene starter med `#` etterfulgt av 6 bokstaver (A-F) og nummer (0-9). For eksempel er koden for blå `#0000FF`. Du kan finne fargekodene for mange farger her: http://www.colorpicker.com/. Du kan også bruke [ forhåndsdefinerte farger](http://www.w3schools.com/colors/colors_names.asp), som for eksempel `rød` og `grønn`.
 
-In your `blog/static/css/blog.css` file you should add the following code:
+I filen `blog/static/css/blog.css` legger du til følgende kode:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` er en CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
