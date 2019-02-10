@@ -26,11 +26,11 @@ Afin d'ouvrir une console Python, tapez `python` sous Windows ou `python3` sous 
 
 ## Votre première commande Python !
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Après avoir lancé la commande Python, votre prompt (ou invite de commandes) a changé en `>>>`. Cela signifie que maintenant, les seules commandes que nous pouvons taper sont des commandes appartenant au langage Python. Vous n'avez pas besoin de taper `>>>` - Python fait ça pour vous.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Si vous voulez quitter la console Python, tapez `exit()` ou utilisez le raccourci `Ctrl + Z` pour Windows ou `Ctrl + D` pour Mac/Linux. Après ça, vous ne verrez plus le `>>>`.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+Pour l'instant, nous ne voulons pas quitter la console Python. Nous voulons en savoir plus. Commençons par écrire quelques operations mathématiques, comme `2 + 3` suivi par `entrée`.
 
 {% filename %}command-line{% endfilename %}
 
