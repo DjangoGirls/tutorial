@@ -127,18 +127,18 @@ Si vous voulez savoir combien il y a de lettres dans votre nom, il y a une **fon
 3
 ```
 
-Vous avez peut-être remarqué que parfois, on appelle la fonction avec `.` en la plaçant après la chaine de caractères (comme `"Ola".upper()`) alors qu'à d'autres moment, on appelle d'abord la fonction puis la chaine de caractères entre parenthèses. Il s'avère que dans certains cas, les fonctions appartiennent à des objets (c'est le cas de `upper()`) et qu'elles ne peuvent être appliquées qu'à des chaines de caractères. Dans ce cas, on appelle la fonction une **méthode**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Vous avez peut-être remarqué que parfois, on appelle la fonction avec `.` en la plaçant après la chaine de caractères (comme `"Ola".upper()`) alors qu'à d'autres moment, on appelle d'abord la fonction puis la chaine de caractères entre parenthèses. Il s'avère que dans certains cas, les fonctions appartiennent à des objets (c'est le cas de `upper()`) et qu'elles ne peuvent être appliquées qu'à des chaines de caractères. Dans ce cas, on appelle la fonction une **méthode**. D'autres fois, les fonctions n’appartiennent à rien de particulier et peuvent être utilisées sur différents types d'objets (c'est le cas de `len()`). C'est pour ça que nous passons `"Ola"` comme argument à la fonction `len`.
 
 ### Résumé
 
-OK, enough of strings. So far you've learned about:
+OK, assez parlé de chaines de caractères. Jusque-là, nous avons découvert :
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **le prompt** – taper des commandes (du code) dans le prompt Python donne des réponses dans Python
+- **les nombres et les chaines de caractères** – dans Python, les nombres sont utilisés pour faire des calculs, et les chaines de caractères pour manipuler du texte
+- **opérateurs** – comme `+` et `*`, ils combinent des valeurs pour en produire une nouvelle
+- **les fonctions** – comme `upper()` et `len()` qui effectuent des actions sur les objets.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Ce sont des bases présentes dans tous les langages de programmation existants. Prête pour quelque chose de plus compliqué ? Allons-y !
 
 ## Les erreurs
 
