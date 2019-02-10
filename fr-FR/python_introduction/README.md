@@ -30,7 +30,7 @@ Après avoir lancé la commande Python, votre prompt (ou invite de commandes) a 
 
 Si vous voulez quitter la console Python, tapez `exit()` ou utilisez le raccourci `Ctrl + Z` pour Windows ou `Ctrl + D` pour Mac/Linux. Après ça, vous ne verrez plus le `>>>`.
 
-Pour l'instant, nous ne voulons pas quitter la console Python. Nous voulons en savoir plus. Commençons par écrire quelques operations mathématiques, comme `2 + 3` suivi par `entrée`.
+Pour l'instant, nous ne voulons pas quitter la console Python. Nous voulons en savoir plus. Commençons par écrire quelques operations mathématiques, comme `2 + 3` suivi par la touche `entrée`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -39,26 +39,26 @@ Pour l'instant, nous ne voulons pas quitter la console Python. Nous voulons en s
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Pas mal, non ? Vous avez vu comment la réponse a surgi ? Python s'y connait en math ! Vous pouvez essayer d’autres commandes comme :
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Pour effectuer un calcul exponentiel, disons 2 à la puissance 3, nous tapons : {% filename %}ligne de commande{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Amusez-vous un peu avec ça, et revenez ici après. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Comme vous pouvez le constater, Python est une très bonne calculette. Comme vous vous en doutez, il est aussi capable de faire autre chose…
 
 ## Chaines de caractères (Strings)
 
-How about your name? Type your first name in quotes like this:
+Et si nous essayions avec votre nom ? Tapez votre prénom entre guillemets, comme cela :
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Vous venez de créer votre première chaîne de caractères ! C'est une suite de caractères qui peut être traitée par un ordinateur. Une chaine de caractères doit toujours commencer et terminer par le même caractère. Çela peut être un guillemet simple (`'`) ou un guillemet double (`"`), ça n'a pas d'importance. Cela permet à Python de savoir que tout ce qui se trouve à l'intérieur de ces guillemets est une chaîne de caractères.
 
-Strings can be strung together. Try this:
+Il est possible d'assembler des chaines de caractères comme ceci :
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Salut Ola'
 ```
 
-You can also multiply strings with a number:
+Vous pouvez aussi multiplier une chaîne de caractères par un chiffre :
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Si vous avez besoin de mettre une apostrophe dans votre chaine de caractères, vous avez deux possibilités.
 
-Using double quotes:
+Vous pouvez utiliser des guillemets doubles :
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "J'aime la mousse au chocolat"
 ```
 
-or escaping the apostrophe with a backslash (``):
+ou échapper l’apostrophe avec une barre oblique inversée (un backslash, ``) :
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "J'aime la mousse au chocolat"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Pas mal, non ? Pour voir votre nom en majuscules, tapez juste :
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,9 +116,9 @@ Nice, huh? To see your name in uppercase letters, type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Vous venez d'utiliser la **fonction** `upper` sur votre chaine de caractères! Une méthode (comme `upper()`) est un ensemble d'instructions que Python va effectuer sur un objet donné (`"Ola"`) lorsque vous l’appellerez.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Si vous voulez savoir combien il y a de lettres dans votre nom, il y a une **fonction** pour ça !
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Vous avez peut-être remarqué que parfois, on appelle la fonction avec `.` en la plaçant après la chaine de caractères (comme `"Ola".upper()`) alors qu'à d'autres moment, on appelle d'abord la fonction puis la chaine de caractères entre parenthèses. Il s'avère que dans certains cas, les fonctions appartiennent à des objets (c'est le cas de `upper()`) et qu'elles ne peuvent être appliquées qu'à des chaines de caractères. Dans ce cas, on appelle la fonction une **méthode**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Résumé
 
