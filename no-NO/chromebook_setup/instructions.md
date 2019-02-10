@@ -37,9 +37,9 @@ Det nederste området er terminalen din. Du kan bruke terminalen for å sende in
 
 ### Virtual Environment (virtuelt miljø)
 
-Et virtuelt miljø (også kalt virtualenv) er som en privat boks som vi kan fylle med nyttig datamaskinkode for prosjektene vi jobber med. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Et virtuelt miljø (også kalt virtualenv) er som en privat boks som vi kan fylle med nyttig datamaskinkode for prosjektene vi jobber med. Vi bruker dem til å holde de forskjellige kodebitene separat som vi trenger til de forskjellige prosjektene, slik at det ikke blir blandet sammen.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+I terminalen på bunnen av grensesnittet til Cloud 9 kjører du følgende:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Hvis det fortsatt ikke fungerer, kan du spørre din instruktør om hjelp.
 
-Next, run:
+Neste steg er å kjøre:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,11 +60,11 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(legg merke til at på den siste linjen bruker vi tilde etterfulgt av et likhetstegn: `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Opprett en [GitHub](https://github.com)-konto.
 
 ### PythonAnywhere
 
