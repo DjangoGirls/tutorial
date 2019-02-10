@@ -495,11 +495,11 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+Nous avons donné à Python des chiffres à comparer. Comme vous pouvez le voir, Python peut comparer des chiffres, mais aussi les résultats de méthodes. Pas mal, non ?
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+Vous vous demandez probablement pourquoi nous avons mis deux signes `==` côte à côte pour savoir si deux nombres étaient égaux ? On utilise déjà `=` pour assigner des valeurs aux variables. Du coup, il faut toujours, oui **toujours**, mettre deux `==` si vous voulez savoir si deux choses sont égales. Nous pouvons aussi dire que certaines choses ne sont pas égales à d'autres. Pour cela, nous utilisons le symbole `! =`, comme illustré dans l'exemple ci-dessus.
 
-Give Python two more tasks:
+Donnons encore un peu de boulot à Python :
 
 {% filename %}command-line{% endfilename %}
 
@@ -510,14 +510,14 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+`>` et `<` sont faciles, mais qu'est ce que `>=` et `<=` veulent dire ? Ils se lisent comment ça :
 
 - x `>` y veut dire : x est plus grand que y
 - x `<` y signifie: x est inférieure à y
 - x `< =` y signifie: x est inférieur ou égal à y
 - x `>=` y veut dire : x est supérieur ou égal à y
 
-Awesome! Wanna do one more? Try this:
+Super ! Un dernier ? Essayez ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -530,12 +530,12 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+Vous pouvez donner à Python autant de nombres à comparer que vous le souhaitez et il vous donnera une réponse. Plutôt malin, non ?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** – si vous utilisez l'opérateur `and` (et), les deux comparaisons doivent être True (vraies) pour que la commande toute entière soit True
+- **or** – si vous utilisez l'opérateur `or` (ou), il suffit qu'une des deux comparaisons soit True (vraie) pour que la commande toute entière soit True
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Vous connaissez l'expression "on ne compare pas les choux et les carottes" ? Essayons l'équivalent en Python :
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -546,7 +546,7 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+Comme vous le voyez, Python n'est pas capable de comparer un nombre (`int`) et une chaine de caractères (`str`). À la place, il nous montre une **TypeError** et nous dit que les deux types ne peuvent pas être comparés.
 
 ## Booléen
 
