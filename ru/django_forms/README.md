@@ -91,20 +91,20 @@ class PostForm(forms.ModelForm):
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
-url(r'^post/new/$', views.post_new, name='post_new'),
+path('post/new/', views.post_new, name='post_new'),
 ```
 
 Окончательная версия файла будет выглядеть следующим образом:
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
-from django.conf.urls import url
+from django.urls import path 
 from . import views
 
 urlpatterns = [
-    url(r'^$', views.post_list, name='post_list'),
-    url(r'^post/(?P<pk>\d+)/$', views.post_detail, name='post_detail'),
-    url(r'^post/new/$', views.post_new, name='post_new'),
+    path('', views.post_list, name='post_list'),
+    path('post/<int:pk>/', views.post_detail, name='post_detail'),
+    path('post/new/', views.post_new, name='post_new'),
 ]
 ```
 
@@ -308,7 +308,7 @@ Django заботится о проверке всех полей в нашей 
 
 {% filename %}blog/urls.py{% endfilename %}
 ```python
-    url(r'^post/(?P<pk>\d+)/edit/$', views.post_edit, name='post_edit'),
+    path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
 Мы будем использовать повторно шаблон `blog/templates/blog/post_edit.html`, так что осталось лишь отсутствующее *представление*.
@@ -362,7 +362,7 @@ form = PostForm(instance=post)
 
 Поздравляем! Твое приложение становится всё более сложным!
 
-Если тебе нужно больше информации о формах в Django, обратись к официальной документации: https://docs.djangoproject.com/en/1.11/topics/forms/
+Если тебе нужно больше информации о формах в Django, обратись к официальной документации: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Безопасность
 
@@ -410,7 +410,7 @@ form = PostForm(instance=post)
 
 Теперь давай посмотрим, как это будет работать на PythonAnywhere. Пришло время для очередного развёртывания!
 
-*   Сначала нам нужно сделать commit и push нового кода в репозиторий GitHub
+*   Сначала нам нужно сделать commit и push нового кода в репозиторий GitHub:
 
 {% filename %}command-line{% endfilename %}
 ```
@@ -425,14 +425,17 @@ $ git push
 
  [7]: https://www.pythonanywhere.com/consoles/
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ cd my-first-blog
+$ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
 $ git pull
 [...]
 ```
 
-*   И нажми **Reload** на вкладке [Web tab][8].
+(Не забудь подставить вместо <your-pythonanywhere-domain> свой поддомен на PythonAnywhere без угловых скобок.)
+
+*   Наконец, зайди на страницу ["Web" page][8] (используй кнопку меню в правом верхнем углу консоли) и нажми **Reload**. Обнови страницу блога http://subdomain.pythonanywhere.com/, чтобы увидеть изменения.
+
 
  [8]: https://www.pythonanywhere.com/web_app_setup/
 
