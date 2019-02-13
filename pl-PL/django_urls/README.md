@@ -49,7 +49,7 @@ Czas utworzyć nasz pierwszy adres URL! Chcemy, aby adres 'http://127.0.0.1:8000
 
 Zależy nam również, aby zachować porządek w pliku `mysite/urls.py`, dlatego zaimportujemy URL-e z naszej aplikacji `blog` do głównego pliku `mysite/urls.py`.
 
-Śmiało, dodaj linię, która spowoduje zaimportowanie `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Śmiało, dodaj linię, która spowoduje zaimportowanie `blog.urls`. Będziesz musiała także zmienić pierwszy wiersz, ` from django.urls...` ponieważ użyjemy tutaj funkcji `include`, którą musimy najpierw zaimportować.
 
 Twój plik `mysite/urls.py` powinien teraz wyglądać tak:
 
