@@ -12,8 +12,8 @@ Będziemy zarządzać blogiem, który budujemy na PythonAnywhere. Zarejestruj ko
 
 To jest coś, co musisz zrobić tylko jeden raz. Kiedy masz konto na PythonAnywhere, przejdziesz do panelu zarządzania. Znajdź link u góry prawej strony "Account":
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+![Link do konta na górze strony](../deploy/images/pythonanywhere_account.png)
 
 następnie wybierz zakładkę o nazwie "API token" i naciśnij przycisk z napisem "Create new API token".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![Zakładka z tokenem API w koncie użytkownika](../deploy/images/pythonanywhere_create_api_token.png)
