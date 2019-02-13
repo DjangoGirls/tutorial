@@ -141,6 +141,8 @@ Branch master set up to track remote branch master from origin.
 
 # Настройка нашего блога на PythonAnywhere
 
+## Регистрация на PythonAnywhere
+
 > **Примечание:** возможно, ты уже завела учётную запись на PythonAnywhere ранее — если так, нет нужды повторять это вновь.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
