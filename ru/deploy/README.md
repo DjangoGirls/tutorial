@@ -147,11 +147,11 @@ Branch master set up to track remote branch master from origin.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Загружаем код на PythonAnywhere
+## Настройка нашего сайта на PythonAnywhere
 
-После регистрации на PythonAnywhere ты будешь перемещена на страницу «Consoles». Выбери опцию старта консоли «Bash» — это версия консоли PythonAnywhere, аналогичная твоему локальному терминалу.
+Вернись на [главную страницу PythonAnywhere](https://www.pythonanywhere.com/), кликнув логотип. Затем запусти `$ Bash` консоль — это такая командная строка, которая находится на серверах PythonAnywhere. Эта командная строка аналогична тому, что есть на твоём собственном компьютере.
 
-<img src="images/pythonanywhere_bash_console.png" alt="Указатель на Bash при выборе консоли" />
+<img src="images/pythonanywhere_bash_console.png" alt="Раздел «New Console» (новая консоль) в веб-интерфейсе PythonAnywhere с кнопкой «bash»" />
 
 > **Примечание:** PythonAnywhere использует Linux, так что если ты используешь Windows, то терминал и команды могут немного отличаться от того, к чему ты привыкла на своём компьютере.
 
