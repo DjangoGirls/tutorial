@@ -654,7 +654,7 @@ Na Linuxie, będzie to wyglądać w ten sposób:
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+W wierszu polecań Windows będzie tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -665,7 +665,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+A w Windows Powershell będzie tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -674,9 +674,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Jeżeli utknęłaś, poproś o pomoc. To właśnie od tego są mentorzy!
 
-Now use Python to execute the code in the file like this:
+Teraz użyj Pythona do uruchomienia kodu z pliku w następujący sposób:
 
 {% filename %}command-line{% endfilename %}
 
@@ -684,7 +684,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Uwaga: w Windowsie 'python3' nie będzie rozpoznawany jako polecenie. W takim wypadku użyj 'python' by wykonać ten plik:
 
 {% filename %}command-line{% endfilename %}
 
@@ -692,15 +692,15 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Super! Właśnie uruchomiłaś z pliku swój pierwszy program w Pythonie. Wspaniałe uczucie, co?
 
-You can now move on to an essential tool in programming:
+Teraz możemy przejść do niezwykle istotnego narzędzia w programowaniu:
 
 ## If… elif… else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Dużo różnych rzeczy w kodzie powinno być uruchamiane tylko wtedy, kiedy zostaną spełnione określone warunki. Dlatego Python posiada coś, co nazywa się **instrukcjami warunkowymi**.
 
-Replace the code in your **python_intro.py** file with this:
+Zastąp kod w pliku **python_intro.py** następującym:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -708,7 +708,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poniższego:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -718,33 +718,33 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python oczekuje od nas dalszych instrukcji, które mają zostać wykonane w przypadku, gdy warunek `3 > 2` okaże się prawdziwy (czyli przyjmie wartość `True`). Sprawmy, żeby Python wypisał na ekranie "To działa!". Zmień kod w pliku **python_intro.py** na poniższy:
 
-{% filename %}python_intro.py{% endfilename %}
+{% filename %}python_intro.py{% endfilename %} 
 
 ```python
 if 3 > 2:
     print('To działa!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Zauważyłaś, że w kolejnym wierszu nasz kod posiada wcięcie 4 spacji? Musimy tak robić, aby Python wiedział, co ma uruchomić, gdy warunek jest prawdziwy. Możesz używać jednej spacji, ale prawie każdy programista Pythona stosuje 4 spacje, aby kod wyglądał czytelniej. Pojedynczy tabulator również będzie liczył się jako 4 spacje, o ile Twój edytor tekstu został w taki sposób skonfigurowany. Jeżeli dokonałaś już wyboru, nie zmieniaj go! Jeżeli używasz już 4 spacji jako wcięć, wszystkie przyszłe wcięcia wykonuj też za pomocą 4 spacji - inaczej możesz wpaść w kłopoty.
 
-Save it and give it another run:
+Zapisz plik i uruchom go jeszcze raz:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}command-line{% endfilename %} 
 
 ```python
 $ python3 python_intro.py
 To dziala!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Uwaga: Pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. Od tego momenty zamieniaj 'python3' na 'python' by wykonać plik.
 
 ### A co jeśli warunek nie jest prawdziwy?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+W poprzednich przykładach kod był wykonywany wtedy, gdy warunki okazywały się prawdziwe (True). Ale Python posiada również wyrażenia `elif` i `else`:
 
-{% filename %}python_intro.py{% endfilename %}
+{% filename %}python_intro.py{% endfilename %} 
 
 ```python
 if 5 > 2:
@@ -753,7 +753,7 @@ else:
     print('5 nie jest większe od 2')
 ```
 
-When this is run it will print out:
+Po uruchomieniu wyświetli się:
 
 {% filename %}command-line{% endfilename %}
 
@@ -761,9 +761,9 @@ When this is run it will print out:
     5 jest jednak większe od 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Gdyby 2 było większą liczbą niż 5, wtedy zostałaby wykonana druga instrukcja. Zobaczmy, jak działa `elif`:
 
-{% filename %}python_intro.py{% endfilename %}
+{% filename %}python_intro.py{% endfilename %} 
 
 ```python
 name = 'Sonja'
@@ -775,7 +775,7 @@ else:
     print('Hej anonimie!')
 ```
 
-and executed:
+i uruchommy go:
 
 {% filename %}command-line{% endfilename %}
 
@@ -783,11 +783,11 @@ and executed:
     Hej Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Widzisz co się tutaj wydarzyło? `elif` pozwala Ci na dodanie dodatkowego warunku, jeśli poprzedni warunek nie został spełniony.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif`, ile tylko Ci się podoba. Na przykład:
 
-{% filename %}python_intro.py{% endfilename %}
+{% filename %}python_intro.py{% endfilename %} 
 
 ```python
 volume = 57
@@ -805,7 +805,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python zbada każdy warunek i wyświetli:
 
 {% filename %}command-line{% endfilename %}
 
@@ -815,9 +815,9 @@ Python runs through each test in sequence and prints:
 
 ## Komentarze
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą uczyć twój kod łatwiejszym do zrozumienia przez innych.
 
-Let's see how that looks:
+Zobaczmy, jak to wygląda:
 
 {% filename %}python_intro.py{% endfilename %}
 
