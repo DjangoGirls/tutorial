@@ -6,7 +6,7 @@
 
 Перед установкой Django мы попросим тебя установить крайне полезный инструмент, который поможет тебе содержать среду разработки в чистоте. Можно пропустить этот шаг, но мы очень советуем этого не делать. Использование лучших рекомендаций с самого начала убережёт от многих проблем в будущем!
 
-Итак, давай создадим **виртуальное окружение** (оно также называется *virtualenv*). Virtualenv будет изолировать зависимости Python/Django для каждого отдельного проекта. Это значит, что изменения одного сайта никогда не затронут другие сайты, которые вы разрабатываете. Удобно, правда?
+Итак, давай создадим **виртуальное окружение** (оно также называется *virtualenv*). Virtualenv будет изолировать настройки Python/Django для каждого отдельного проекта. Это значит, что изменения одного сайта не затронут другие сайты, которые ты разрабатываешь. Удобно, правда?
 
 Всё, что тебе нужно сделать — найти директорию, в которой мы создадим `virtualenv`; домашний каталог вполне подойдёт. Для Windows адрес будет выглядеть так: `C:\Users\Name` (где `Name` — твоё имя пользователя).
 
@@ -27,7 +27,7 @@ $ cd djangogirls
 $ python3 -m venv myvenv
 ```
 
-<!--sec data-title="Windows" data-id="virtualenv_installation_windows"
+<!--sec data-title="Виртуальное окружение: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
 Чтобы создать новое `virtualenv`, тебе нужно открыть командную строку и набрать `python -m venv myvenv`. Это будет выглядеть так:
@@ -37,11 +37,11 @@ data-collapse=true ces-->
 C:\Users\Name\djangogirls> python -m venv myvenv
 ```
 
-Здесь `myvenv` — имя твоего `virtualenv`. Ты можешь выбрать другое имя, но используй можно только прописные буквы, без пробелов и специальных символов. Имя виртуального окружения выбирай покороче — тебе придётся часто его набирать!
+Здесь `myvenv` — имя твоего `virtualenv`. Ты можешь выбрать другое имя, но используй только строчные буквы, без пробелов и специальных символов. Имя виртуального окружения выбирай покороче — тебе придётся часто его набирать!
 
 <!--endsec-->
 
-<!--sec data-title="Linux и OS X" data-id="virtualenv_installation_linuxosx"
+<!--sec data-title="Виртуальное окружение: Linux и OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
 В Linux и OS X достаточно набрать `python3 -m venv myvenv`, чтобы создать `virtualenv`:
@@ -68,7 +68,7 @@ $ python3 -m venv myvenv
 >$ sudo apt install python3-venv
 >```
 
-> __Примечание:__ В некоторых версиях of Debian/Ubuntu при таком способе создания виртуального окружения ты можешь получить такую ошибку:
+> __Примечание:__ В некоторых версиях Debian/Ubuntu при таком способе создания виртуального окружения ты можешь получить такую ошибку:
 
 >{% filename %}command-line{% endfilename %}
 >```
@@ -90,7 +90,7 @@ $ python3 -m venv myvenv
 >E: Unable to locate package python3-venv
 >```
 
-> то тогда запусти команду:
+> то запусти команду:
 >
 >{% filename %}command-line{% endfilename %}
 >```
@@ -103,7 +103,7 @@ $ python3 -m venv myvenv
 
 Указанная выше команда создаст директорию `myvenv` (или другую, в зависимости от выбранного имени), которая будет содержать виртуальное окружение (по сути — набор файлов и папок).
 
-<!--sec data-title="Windows" data-id="virtualenv_windows"
+<!--sec data-title="Работаем с virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
 Запусти виртуальное окружение, выполнив:
@@ -113,7 +113,7 @@ data-collapse=true ces-->
 C:\Users\Name\djangogirls> myvenv\Scripts\activate
 ```
 
-> __ПРИМЕЧАНИЕ:__ в Windows 10 при работе в Windows PowerShell ты можешь получить ошибку вида `execution of scripts is disabled on this system`. В этом случае открой ещё другое окно Windows PowerShell, выбрав опцию «Запустить от имени Администратора». Перед использованием виртуального окружения попробуй запустить следующую команду:
+> __ПРИМЕЧАНИЕ:__ в Windows 10 при работе в Windows PowerShell ты можешь получить ошибку вида `execution of scripts is disabled on this system`. В этом случае открой ещё одно окно Windows PowerShell, выбрав опцию «Запустить от имени Администратора». Затем перед использованием виртуального окружения попробуй запустить следующую команду:
 >
 >{% filename %}command-line{% endfilename %}
 >```
@@ -124,7 +124,7 @@ C:\Users\Name\djangogirls> myvenv\Scripts\activate
 
 <!--endsec-->
 
-<!--sec data-title="Linux и OS X" data-id="virtualenv_linuxosx"
+<!--sec data-title="Работаем с virtualenv: Linux и OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
 Запусти виртуальное окружение, выполнив:
@@ -147,7 +147,7 @@ $ source myvenv/bin/activate
 
 Ты поймёшь, что `virtualenv` запущено, когда увидишь префикс `(myvenv)` в начале приглашения командной строки.
 
-При работе с виртуальным окружением команда `python` будет автоматически обращаться к правильной версии языка, так что тебе не обязательно использовать `python3`.
+При работе с виртуальным окружением команда `python` будет автоматически обращаться к правильной версии языка, так что ты можешь использовать просто `python` вместо `python3`.
 
 Отлично, теперь мы будем хранить все важные зависимости в одном месте. Наконец можно установить Django!
 
@@ -162,37 +162,57 @@ $ source myvenv/bin/activate
 (myvenv) ~$ python3 -m pip install --upgrade pip
 ```
 
-Затем запусти команду `pip install django~=1.11.0` (обрати внимание на тильду со знаком равенства: `~=`), чтобы установить Django.
+### Установка библиотек через указание требований
+
+Файл с требованиями (requirements) хранит список зависимостей, которые нужно установить с использованием
+`pip install`:
+
+Для начала создай файл `requirements.txt` внутри директории `djangogirls/`, используя текстовый редактор, который ты установила ранее.  Это можно сделать, создав в редакторе новый файл, а зачем сохранив его под именем `requirements.txt` в директории `djangogirls/`. После этого твоя директория будет выглядеть так:
+
+```
+djangogirls
+└───requirements.txt
+```
+
+В файл `djangogirls/requirements.txt` нужно добавить такой текст:
+
+{% filename %}djangogirls/requirements.txt{% endfilename %}
+```
+Django~={{ book.django_version }}
+```
+
+Теперь выполни команду `pip install -r requirements.txt`, чтобы установить Django.
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~$ pip install django~=1.11.0
-Collecting django~=1.11.0
-  Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
-Installing collected packages: django
-Successfully installed django-1.11.3
+(myvenv) ~$ pip install -r requirements.txt
+Collecting Django~={{ book.django_version }} (from -r requirements.txt (line 1))
+  Downloading Django-{{ book.django_version }}-py3-none-any.whl (7.1MB)
+Installing collected packages: Django
+Successfully installed Django-{{ book.django_version }}
 ```
 
-<!--sec data-title="Windows" data-id="django_err_windows"
+
+<!--sec data-title="Установка Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Если ты получаешь сообщение об ошибке при запуске pip, проверь, что путь к директории с проектом не содержит пробелов или специальных символов (`C:\Users\User Name\djangogirls`). Если проблема в этом, то, пожалуйста, перенеси свой проект в другое место, адрес которого не будет содержать пробелов и специальных символов (предлагаем `C:\djangogirls`). Создай новое виртуальное окружене в новой директории, после этого удали старое и попробуй запустить команду установки Django заново (перемещение виртуального окружения не сработает, поскольку в нём используются абсолютные пути).
+> Если работая в Windows ты получаешь сообщение об ошибке при запуске pip, проверь, что путь к директории с проектом не содержит пробелов или специальных символов (`C:\Users\User Name\djangogirls`). Если проблема в этом, то, пожалуйста, перенеси свой проект в другое место, адрес которого не будет содержать пробелов и специальных символов (предлагаем `C:\djangogirls`). Создай новое виртуальное окружение в новой директории, после этого удали старое и попробуй запустить команды выше заново (перемещение виртуального окружения не сработает, поскольку в нём используются абсолютные пути).
 
 <!--endsec-->
 
-<!--sec data-title="Windows 8 и Windows 10" data-id="django_err_windows8and10"
+<!--sec data-title="Установка Django: Windows 8 и Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
 > При попытке установки Django твоя командная строка может зависнуть. Если это произошло, вместо приведённой выше команды используй:
 >
 >{% filename %}command-line{% endfilename %}
 >```
->C:\Users\Name\djangogirls> python -m pip install django~=1.11.0
+>C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >```
 
 <!--endsec-->
 
-<!--sec data-title="Linux" data-id="django_err_linux"
+<!--sec data-title="Установка Django: Linux" data-id="django_err_linux"
 
 > При возникновении ошибки при вызове pip под Ubuntu 12.04, пожалуйста, запусти `python -m pip install -U --force-reinstall pip`, чтобы исправить установку pip в virtualenv.
 
