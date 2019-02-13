@@ -185,7 +185,7 @@ Teraz musisz sprawdzić, czy Twoja witryna działa. Otwórz przeglądarkę (Fire
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Jeśli używasz Chromebooka i Cloud9, kliknij adres URL w wyskakującym okienku, które powinno pojawić się w prawym górnym rogu okna poleceń, w którym działa serwer WWW. Adres URL powinien wygladąc tak:
 
 {% filename %}browser{% endfilename %}
 
