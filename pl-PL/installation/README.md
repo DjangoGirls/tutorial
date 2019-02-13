@@ -10,40 +10,40 @@ Powodzenia!
 
 Jeśli uczestniczysz w wydarzeniu Django Girls:
 
-* Twój warsztat może mieć "część instalacyjną" przed głównym warsztatem. Jeśli jesteś w części instalacyjnej, to ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami, aby uzyskać wszystko, czego potrzebujesz do warsztatów, w razie potrzeby poproś o pomocą trenerów. Następnie na warsztatach głównych, będzie można pominąć instrukcje instalacji, jakie napotkasz w głównym samouczek, kiedy dojdziesz do nich.
+* Twój warsztat może mieć "część instalacyjną" przed głównym warsztatem. Jeśli jesteś w części instalacyjnej, to ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami, aby uzyskać wszystko, czego potrzebujesz do warsztatów, w razie potrzeby poproś o pomocą mentorów. Następnie na warsztatach, będziesz mogła pominąć instrukcje instalacji, jakie napotkasz w głównym tutorialu, kiedy dojdziesz do nich.
 * Organizatorzy warsztatów mogą Cię prosić, abyś w domu spróbowała zainstalować wszytskie potrzebne rzeczy na komputerze przed rozpoczęciem warsztatów. Jeśli zostałaś poproszoną aby to zrobić, ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami tutaj, najlepiej jak potrafisz. Następnie, podczas głównego warsztatu, gdy dojdziesz do etapu instalacji w głównym samouczku, jeśli nie możesz go zainstalować, możesz uzyskać pomoc od swojego mentora.
 * Jeśli twój warsztat nie ma części instalacyjnej (lub nie mogłaś wziąć w niej udziału) i jeśli organizatorzy nie prosili Cię o zainstalowanie wszystkiego przed twoim przyjazdem, pomiń tę stronę i przejdź bezpośrednio do rozdziału  Jak Internet działa </ 0>. Podczas pracy nad tutorialem będziesz instalować wszystko, czego potrzebujesz.</li> </ul> 
     
     # Instalacja
     
-    In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+    W tym tutorialu będzie budować blog. W tym celu, podczas przechodzenia przez tutorial, zostaniesz poproszona o instalację różnego oprogramowania na twoim komputerze i skonfigurowanie kilku kont online, gdy będą potrzebne. Ta strona zbiera wszystkie instrukcje dotyczące instalacji i rejestracji w jednym miejscu (co jest przydatne w niektórych formach warsztatów).
     
     <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
     
     <!--endsec-->
     
-    # Brief intro to the command line
+    # Krótkie wprowadzenie do wiersza polecenia
     
-    Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+    Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "okna poleceń" lub "linii poleceń" - wszystkie one oznaczają to samo: okno na komputerze, w którym można wprowadzać polecenia. Gdy dojdziesz do głównego tutoriala, dowiesz się więcej o linii poleceń. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
     
-    # Install Python
+    # Zainstaluj Pythona
     
     {% include "/python_installation/instructions.md" %}
     
-    # Install a code editor
+    # Zainstaluj edytor kodu
     
     {% include "/code_editor/instructions.md" %}
     
-    # Set up virtualenv and install Django
+    # Utwórz środowisko wirtualne i zainstaluj Django
     
     {% include "/django_installation/instructions.md" %}
     
-    # Install Git
+    # Zainstaluj Gita
     
     {% include "/deploy/install_git.md" %}
     
-    # Create a GitHub account
+    # Utwórz konto na GitHubie
     
     Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
     
