@@ -828,11 +828,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Nie musisz pisać komentarza dla każdej linijki kodu, ale pamiętaj, że są one pomocne, by wytłumaczyć, czemu program coś robi lub by dodać podsumowanie, gdy program robi coś skomplikowanego.
 
 ### Podsumowanie
 
-In the last few exercises you learned about:
+W ostatnich kilku ćwiczeniach nauczyłaś się:
 
 - **porównywać rzeczy** - w Pythonie do porównywania rzeczy możesz używać operatorów `>`, `>=`, `==`, `<=`, `<` oraz `and`, `or`
 - **Boolean** - typ obiektu, który może przyjmować jedną z dwóch wartości: `True` (prawda) lub `False` (fałsz)
@@ -840,13 +840,13 @@ In the last few exercises you learned about:
 - **if...elif...else** - wyrażenia, które pozwalają Ci uruchamiać kod tylko wtedy, gdy zostaną spełnione określone warunki.
 - **komentarze** - linie, których Python nie wykona, a które pozwalają Ci dokumentować kod programu
 
-Time for the last part of this chapter!
+Czas na ostatnią część tego rozdziału!
 
 ## Twoje własne funkcje!
 
 > Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Pamiętasz funkcje takie jak `len()`, które możesz uruchamiać w Pythonie? Dobra wiadomość: teraz nauczysz się pisać swoje własne funkcje!
 
 A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
