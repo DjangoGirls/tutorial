@@ -196,10 +196,10 @@ Gratulacje! Właśnie stworzyłaś swoją pierwszą stronę i uruchomiłaś ją 
 
 ![Install worked!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Należy zauważyć, że okno wiersza polecenia można uruchomić tylko jedną rzecz na raz, i okno polecenia, który został otwarte wcześniej jest uruchomione na serwerze Www. Tak długo, jak serwer sieci web jest uruchomiona i czekam na dodatkowe żądania przychodzące, terminal przyjmie nowy tekst, ale nie wykona polecenia nowy.
 
 > Sprawdziliśmy, jak działają serwery internetowe w rozdziale **"Jak działa Internet"**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).
+Aby wpisać dodatkowe polecenia podczas działania serwera Www, otwórz nowe okno terminala i aktywuj swóje wirtualne środowisko(virtualenv) - aby przejrzeć instrukcje dotyczące otwierania drugiego okna terminala, patrz  Wprowadzenie do wiersza poleceń </ 0>. Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).</p> 
 
 Gotowa na następny krok? Czas stworzyć treść!
