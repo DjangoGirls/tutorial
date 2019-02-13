@@ -162,7 +162,7 @@ Będzie to wyglądać tak:
 
 Po raz kolejny rozszerzamy `base.html`. W bloku `content` chcemy wyświetlić datę opublikowania wpisu (o ile istnieje), tytuł oraz treść. Ale powinnyśmy omówić kilka ważnych rzeczy, prawda?
 
-{% raw %}`{% if ... %} ... {% endif %}` jest tagiem szablonu, którego możemy użyć, gdy chcemy coś sprawdzić. (Pamiętasz `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` jest tagiem szablonu, którego możemy użyć, gdy chcemy coś sprawdzić. (Pamiętasz `if ... else ..` z rozdziału **Wprowadzenie do Pythona**?) W tym wypadku chcemy sprawdzić czy `published_date` posta nie jest pusta.{% endraw %}
 
 OK, możemy teraz odświeżyć naszą stronę i sprawdzić, czy `TemplateDoesNotExist` już zniknął.
 
