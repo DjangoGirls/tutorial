@@ -45,15 +45,15 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
     
     # Utwórz konto na GitHubie
     
-    Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+    Przejdź do strony [ GitHub.com ](https://www.github.com) i zarejestruj nowe bezpłatne konto użytkownika. Pamiętaj, aby zapamiętać swoje hasło (dodaj go do swojego menedżera haseł, jeśli go używasz).
     
-    # Create a PythonAnywhere account
+    # Utwórz konto na PythonAnywhere
     
     {% include "/deploy/signup_pythonanywhere.md" %}
     
-    # Start reading
+    # Zacznij czytać
     
-    Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+    Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed warsztatami, możesz przeczytać początkowe rozdziały:
     
     * [Jak działa internet](../how_the_internet_works/README.md)
     
@@ -63,6 +63,6 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
     
     * [Czym jest Django?](../django/README.md)
     
-    # Enjoy the workshop!
+    # Ciesz się warsztatami!
     
-    When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+    Kiedy zaczniesz warsztaty, będziesz mogła przejść od razu do rozdziału [Twój pierwszy projekt w Django!](../django_start_project/README.md) ponieważ już przebrnęłaś przez materiał z wcześniejszych rozdziałów.
