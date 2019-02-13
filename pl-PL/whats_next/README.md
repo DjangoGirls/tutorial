@@ -10,32 +10,32 @@ Potem, upewnij się, że śledzisz Django Girls na [Facebooku](http://facebook.c
 
 ### Czy możesz polecić kolejne materiały?
 
-Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programistycznych - może to być całkiem zniechęcające, gdy trzeba wybrać, co zrobić następne, ale my mamy o to zadbałyśmy. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programistycznych - może to być całkiem zniechęcające, gdy trzeba wybrać, co zrobić następne, ale my mamy o to zadbałyśmy. Niezależnie od tego czym interesowałaś się zanim przybyłaś na Django Girls i niezależnie od tego co zainteresowało Cię podczas przechodzenia tutorialu, oto kilka wolnych zasobów (lub zasobów z dużymi wolnymi komponentami), których możesz używać aby dostać się tam, gdzie chciałabyś być.
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- Nasze inne książki, [Django Girls Tutorial: Extensions ](https://tutorial-extensions.djangogirls.org/)
 - [Oficjalny tutorial Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Wideolekcje Getting Started with Django](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS i JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Kurs programowania webowego na Codeacademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
+- [Kurs Pythona na Codeacademy](https://www.codecademy.com/learn/learn-python)
+- [Kurs Pythona od Googla](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) - wstępne ćwiczenia są bezpłatne 
+- [New Coder tutorials](http://newcoder.io/tutorials/) - tu znajdziesz wiele praktycznych przykładów jak używać Pythona
+- [edX](https://www.edx.org/course?search_query=python) - możesz sprawdzić większość kursów za darmo, lecz jeśli chciałabyś otrzymać certyfikat lub zdobyć punkty zwiększające Twoje kwalifikacje, to może to trochę kosztować
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [Python for Everybody](https://www.py4e.com/) - wolna i otwarta wersja Coursera Pythona dla każdej specjalizacji
 
-#### Working with data
+#### Praca z danymi
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
+- [Kurs data science na Codeacademy](https://www.codecademy.com/learn/paths/data-science)
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
 
