@@ -610,7 +610,7 @@ $
 
 W ten sposób znajdziesz się z powrotem w wierszu polecenia.
 
-Wcześniej wybraliśmy się Edytor kodu z sekcji [Edytor kodu](../code_editor/README.md). We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Wcześniej wybraliśmy się Edytor kodu z sekcji [Edytor kodu](../code_editor/README.md). Otwórzmy teraz edytor i napiszmy trochę kody wewnątrz nowego pliku (lub jeśli używasz Chromebook, stwórz nowy plik w chmurze IDE i otwórz plik, który będzie zawarty w edytorze kodu):
 
 {% filename %}editor{% endfilename %}
 
@@ -641,14 +641,14 @@ Na Macu polecenie będzie wyglądać mniej-więcej tak:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+Na Linuxie, będzie to wyglądać w ten sposób:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(Pamiętaj, że słowo "Desktop" może zostać przetłumaczone na polski jako "Pulpit"):
 
 <!--endsec-->
 
