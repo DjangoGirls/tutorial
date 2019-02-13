@@ -99,7 +99,7 @@ Dobrze byłoby sprawdzić, czy twoja strona wciąż będzie działała w publicz
 
 (Pamiętaj by podmienić `<your-pythonanywhere-domain>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez ostrych nawiasów.)
 
-* Na koniec przeskocz do strony [Web](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! Jeśli posty na blogu w witrynie PythonAnywhere nie pasują do postów znajdujących się na blogu hostowane na lokalnym serwerze, jest to OK. Bazy danych na komputerze lokalnym i Python Anywhere nie synchronizują się z resztą plików.
+* Na koniec przeskocz do strony [Web](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**. (Aby dotrzeć do innych stron PythonAnywhere przez konsolę, użyj przycisku menu w prawym górnym rogu.) Twoja aktualizacja powinna być już pod adresem https://subdomain.pythonanywhere.com - sprawdź to w swojej przeglądarce! Jeśli posty na blogu w witrynie PythonAnywhere nie pasują do postów znajdujących się na blogu hostowane na lokalnym serwerze, jest to OK. Bazy danych na komputerze lokalnym i Python Anywhere nie synchronizują się z resztą plików.
 
 Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
