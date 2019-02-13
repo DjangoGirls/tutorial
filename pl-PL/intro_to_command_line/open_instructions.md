@@ -1,17 +1,17 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-W zależności od wersji systemu Windows i klawiatury, jedna z poniższych powinna otworzyć okno poleceń (być może trzeba trochę poeksperymentować, ale nie musisz wypróbowywać wszystkich tych sugestii):
+W zależności od wersji systemu Windows i klawiatury, jedna z poniższych instrukcji powinna otworzyć okno poleceń (być może trzeba trochę poeksperymentować, ale nie musisz wypróbowywać wszystkich tych sugestii):
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
+- Przejdź do menu Start lub ekranu i wpisz "Command Prompt" w polu wyszukiwania.
 - Idź do Start menu → Windows System → Command Prompt.
 - Idź do Start menu → All Programs → Accessories → Command Prompt.
-- Idź do początkowego ekranu, najedź myszą w lewym dolnym rogu ekranu i kliknij strzałkę w dół, która się pojawi (na ekranie dotykowym, zamiast tego utwórz ekran z dołu ekranu). Strona aplikacji powinna się otworzyć. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Idź do początkowego ekranu, najedź myszą w lewym dolnym rogu ekranu i kliknij strzałkę w dół, która się pojawi (na ekranie dotykowym, zamiast tego utwórz ekran z dołu ekranu). Strona aplikacji powinna się otworzyć. Kliknij w Command Prompt (wiersz polecenia) w sekcji System Windows.
+- Przytrzymaj specjalny klawisz Windows na klawiaturze i naciśnij klawisz "X". Wybierz "Command Prompy" (wiersz poleceń) z wyskakującego menu.
+- Przytrzymaj klawisz Windows i naciśnij klawisz "R", aby uzyskać okno "Run"('Uruchom"). Wpisz "cmd" w polu i kliknij przycisk OK.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+W dalszej części tego tutorialu konieczne będzie otwarcie dwóch okien poleceń jednocześnie. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
 
 <!--endsec-->
 
