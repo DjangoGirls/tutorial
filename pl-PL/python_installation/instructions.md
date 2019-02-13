@@ -2,11 +2,11 @@
 > 
 > Niniejszy podrozdział powstał w oparciu o kurs Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django został w napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić cokolwiek w Django. Zacznijmy zatem od zainstalowania go! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django został w napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić cokolwiek w Django. Zacznijmy zatem od zainstalowania go! Chcemy, zainstalować najnowszą wersję Python 3, więc jeśli masz starszą wersje, należy ją uaktualnić. Jeśli masz już w wersji 3.4 lub nowszej, powinno być dobrze.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Najpierw sprawdź, czy na komputerze działa wersja 32-bitowa lub 64-bitowa wersja systemu Windows, w linijce "Typ systemu" w oknie o informacjach o systemie. Aby przejść do tego okna wypróbuj jedną z następujących metod:
 
 * Press the Windows key and Pause/Break key at the same time
 * Open your Control Panel from the Windows menu, then navigate to System & Security, then System
