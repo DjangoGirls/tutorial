@@ -202,7 +202,7 @@ Możemy także odwrócić kolejność poprzez dodanie `-` na początku:
 
 ### Złożone kwerendy za pomocą łańcuchów metod
 
-As you saw, some methods on `Post.objects` return a QuerySet. Te same metody z kolei również może być wywoływana na QuerySet, a następnie zwróci nam nowy QuerySet. Thus, you can combine their effect by **chaining** them together:
+Jak widzieliśmy, niektóre metody `Post.objects` zwracają nam QuerySet. Te same metody z kolei również może być wywoływana na QuerySet, a następnie zwróci nam nowy QuerySet. W związku z tym, można połączyć ich wpływ przez **złączenie** ich razem:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
