@@ -10,8 +10,8 @@ Powodzenia!
 
 Jeśli uczestniczysz w wydarzeniu Django Girls:
 
-* Twój warsztat może mieć "część instalacyjną" przed głównym warsztatem. Jeśli jesteś w części instalacyjnej, to ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami, aby uzyskać wszystko, czego potrzebujesz do warsztatów, w razie potrzeby poproś o pomocą trenerów. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
-* The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
+* Twój warsztat może mieć "część instalacyjną" przed głównym warsztatem. Jeśli jesteś w części instalacyjnej, to ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami, aby uzyskać wszystko, czego potrzebujesz do warsztatów, w razie potrzeby poproś o pomocą trenerów. Następnie na warsztatach głównych, będzie można pominąć instrukcje instalacji, jakie napotkasz w głównym samouczek, kiedy dojdziesz do nich.
+* Organizatorzy warsztatów mogą Cię prosić, abyś w domu spróbowała zainstalować wszytskie potrzebne rzeczy na komputerze przed rozpoczęciem warsztatów. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
 * If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
 
 # Instalacja
