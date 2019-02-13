@@ -30,13 +30,13 @@ Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programi
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) - wstępne ćwiczenia są bezpłatne 
 - [New Coder tutorials](http://newcoder.io/tutorials/) - tu znajdziesz wiele praktycznych przykładów jak używać Pythona
 - [edX](https://www.edx.org/course?search_query=python) - możesz sprawdzić większość kursów za darmo, lecz jeśli chciałabyś otrzymać certyfikat lub zdobyć punkty zwiększające Twoje kwalifikacje, to może to trochę kosztować
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) - niektóre wykłady wideo są dostępne za darmo i możesz uzyskać Certyfikat Kursanta przechodząc przez ten kurs
 - [Python for Everybody](https://www.py4e.com/) - wolna i otwarta wersja Coursera Pythona dla każdej specjalizacji
 
 #### Praca z danymi
 
 - [Kurs data science na Codeacademy](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) - możesz sprawdzić większość kursów za darmo, lecz jeśli chciałabyś otrzymać certyfikat lub zdobyć punkty zwiększające Twoje kwalifikacje, to może to trochę kosztować
+- [Dataquest](https://www.dataquest.io/) – pierwsze 30 "misji" jest darmowych 
 
-We can't wait to see what you build next!
+Nie możemy się doczekać, aby zobaczyć, co zbudujesz następnym razem!
