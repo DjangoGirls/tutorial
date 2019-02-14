@@ -244,7 +244,7 @@ Co powiesz na stworzenie folderu na swoim pulpicie? Zrób to w ten sposób:
 
 {% filename %}command-line{% endfilename %}
 
-    $ mkdir practice
+    $ mkdir cwiczenie
     
 
 <!--endsec-->
@@ -253,20 +253,20 @@ Co powiesz na stworzenie folderu na swoim pulpicie? Zrób to w ten sposób:
 
 {% filename %}command-line{% endfilename %}
 
-    > mkdir practice
+    > mkdir cwiczenie
     
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+To niepozorne polecenie doda do Twojego pulpitu folder o nazwie `cwiczenie`. Możesz sprawdzić, czy na pewno został tam dodany - spójrz na swój pulpit albo uruchom polecenie `ls` lub `dir`! Spróbuj. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> PRO tip: Jeżeli nie chcesz w kółko wpisywać tych samych poleceń, wciśnij na klawiaturze klawisz ze `strzałką w górę` i `strzałką w dół` aby przewinąć listę poprzednio użytych poleceń.
 
 * * *
 
 ### Ćwiczenie!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` stwórz katalog o nazwie `test`. Użyj poleceń `cd` i `mkdir`.)
 
 #### Rozwiązanie:
 
