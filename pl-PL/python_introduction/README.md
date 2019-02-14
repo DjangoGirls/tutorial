@@ -848,7 +848,7 @@ Czas na ostatnią część tego rozdziału!
 
 Pamiętasz funkcje takie jak `len()`, które możesz uruchamiać w Pythonie? Dobra wiadomość: teraz nauczysz się pisać swoje własne funkcje!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Funkcja jest zestawem poleceń, które powinien wykonać Python. Każda funkcja w Pythonie zaczyna się słowem kluczowym `def`, posiada nazwę i może przyjmować parametry. Spróbujmy! Zastąp kod w pliku **python_intro.py** następującym:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -860,11 +860,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+OK, nasza pierwsza funkcja gotowa!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Być może zastanawiasz się, czemu napisałyśmy nazwę funkcji na końcu pliku. Zrobiłyśmy tak, ponieważ Python odczytuje plik i wykonuje go od góry do dołu. Zatem w celu użycia naszej funkcji, musimy ponownie wpisać ją na dole.
 
-Let's run this now and see what happens:
+Uruchommy to teraz i sprawdźmy, co się stanie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -873,7 +873,7 @@ Let's run this now and see what happens:
     Jak się masz?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Uwaga: Jeżeli to nie zadziała, nie panikuj! Wynik działania pozwoli Ci ustalić dlaczego:
 
 - Jeżeli dostajesz `NameError`, znaczy to że prawdopodobnie niepoprawnie coś wpisałaś, więc powinnaś sprawdzić czy użyłaś tej samej nazwy tworząc funkcję w `def hi():` oraz gdy ją wykonujesz w `hi()`.
 - Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tę samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty. 
