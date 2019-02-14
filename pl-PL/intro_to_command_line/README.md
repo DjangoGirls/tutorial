@@ -16,15 +16,15 @@ Okno zwane **wierszem polecenia** lub **interfejsem wiersza polecenia** jest apl
 
 ## Uruchamiamy interfejs wiersza polecenia
 
-To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
+Aby trochę poeksperymentować musimy najpierw otworzyć interfejs linii poleceń. {% include "/intro_to_command_line/open_instructions.md" %} 
 
 ## Znak zachęty
 
-You now should see a white or black window that is waiting for your commands.
+Teraz powinnaś zobaczyć białe lub czarne okno, które czeka na Twoje polecenia.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Jeżeli używasz Maca lub Linuksa, powinnaś zobaczyć `$`, tak jak poniżej:
 
 {% filename %}command-line{% endfilename %}
 
