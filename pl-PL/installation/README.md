@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
     
     # Krótkie wprowadzenie do wiersza polecenia
     
-    Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "okna poleceń" lub "linii poleceń" - wszystkie one oznaczają to samo: okno na komputerze, w którym można wprowadzać polecenia. Gdy dojdziesz do głównego tutoriala, dowiesz się więcej o linii poleceń. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+    Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "okna poleceń" lub "linii poleceń" - wszystkie one oznaczają to samo: okno na komputerze, w którym można wprowadzać polecenia. Gdy dojdziesz do głównego tutoriala, dowiesz się więcej o linii poleceń. Na razie najważniejszą rzeczą jaką musisz wiedzieć to, to jak otworzyć okno wiersza polecenia i jak ono wygląda: {% obejmują "/ intro_to_command_line/open_instructions.md" %}
     
     # Zainstaluj Pythona
     
@@ -33,7 +33,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
     
     # Zainstaluj edytor kodu
     
-    {% include "/code_editor/instructions.md" %}
+    {% include "/code_editor/instructions.md" %} 
     
     # Utwórz środowisko wirtualne i zainstaluj Django
     
