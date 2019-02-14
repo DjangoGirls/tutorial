@@ -1,4 +1,4 @@
-Git, birçok programcı tarafından kullanılan bir "sürüm kontrol sistemi"dir. Bu yazılım dosyaların zaman içindeki değişimlerini izler, böylelikle sonradan eski sürümlere ulaşabilirsiniz. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git, birçok programcı tarafından kullanılan bir "sürüm kontrol sistemi"dir. Bu yazılım dosyaların zaman içindeki değişimlerini izler, böylelikle sonradan eski sürümlere ulaşabilirsiniz. Bir parça, kelime işlemcisi programlarındaki (Microsoft Word ve ya LibreOffice Writer v.b.) "değişikleri izleme" özelliği gibi, ama çok daha güçlü.
 
 ## Git'i kurmak
 
