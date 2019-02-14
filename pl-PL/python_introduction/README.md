@@ -879,7 +879,7 @@ Uwaga: Jeżeli to nie zadziała, nie panikuj! Wynik działania pozwoli Ci ustali
 - Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tę samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty. 
 - Jeżeli nie ma żadnego wyniku działania, sprawdź czy ostanie `hi()` *nie* jest przypadkiem wcięte - jeżeli jest, to ta linia stała się również częścią funkcji i nigdy nie zostanie wykonana. 
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Zbudujmy naszą pierwszą funkcję z parametrami. Posłużymy się wcześniejszym przykładem - funkcją, która wita każdego, kto ją uruchomi, wraz z imieniem:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -887,7 +887,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(imie):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Jak widać, teraz nasza funkcja przyjmuje parametr, który nazwałyśmy `imie`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -903,7 +903,7 @@ def hi(imie):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Pamiętaj: Musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz jak to działa:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -914,7 +914,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'imie'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hi()` (ta, którą stworzyliśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -922,7 +922,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+I wykonajmy ponownie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -930,7 +930,7 @@ And run it again:
     Hej Ola!
     
 
-And if we change the name?
+A gdybyśmy zmieniły imię?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -938,7 +938,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+I wykonajmy:
 
 {% filename %}command-line{% endfilename %}
 
@@ -946,14 +946,14 @@ And run it:
     Hej Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+A jak myślisz - co się stanie, jak wprowadzimy tam inne imię (jeszcze inne niż Ola i Sonja)? Spróbuj i przekonaj się, czy miałaś rację. Powinno się wyświetlić coś takiego:
 
 {% filename %}command-line{% endfilename %}
 
     Hej nieznajoma!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Prawda, że fajnie? W ten sposób nie musisz powtarzać się za każdym razem, gdy zechcesz zmienić imię osoby, która ma zostać powitana. To właśnie dlatego funkcje są nam potrzebne - żeby nie powtarzać kodu!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
