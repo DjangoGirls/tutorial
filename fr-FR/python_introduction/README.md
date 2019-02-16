@@ -550,16 +550,16 @@ Comme vous le voyez, Python n'est pas capable de comparer un nombre (`int`) et u
 
 ## Booléen
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Vous venez d'apprendre un nouveau type d'objet en Python. Il s'appelle **Boolean**.
 
-There are only two Boolean objects:
+Il n'y a que deux objets Booléens :
 
-- True
-- False
+- True (vrai)
+- False (faux)
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Pour que Python comprenne qu'il s'agit d'un Boléen, il faut toujours l'écrire 'True' (première lettre en majuscule, les autres en minuscule). **true, TRUE, tRUE ne marchent pas -- seul True est correct.** (Et c'est aussi vrai pour False.)
 
-Booleans can be variables, too! See here:
+Les Booléens aussi peuvent être des variables ! Regardez :
 
 {% filename %}command-line{% endfilename %}
 
@@ -569,7 +569,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+Vous pouvez aussi faire ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -579,20 +579,20 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Entraînez-vous et amusez-vous avec les Booleéns en essayant de lancer les commandes suivantes :
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Bravo ! Les Booléens sont l'une des fonctionnalités les plus cools en programmation et vous venez juste d'apprendre comment les utiliser !
 
 # Sauvegardez tout ça !
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> Pour les lectrices autodidactes : cette partie est traitée dans la vidéo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Pour l'instant, nous avons écrit tout notre code Python directement dans l'interpréteur, ce qui nous limite à une ligne de code à la fois. Les programmes sont typiquement sauvegardés dans des fichiers et sont exécutés par **l'interpréteur** ou le **compilateur** de notre langage de programmation. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Quitter l'interpréteur Python
 - Ouvrir l'éditeur de code de notre choix
