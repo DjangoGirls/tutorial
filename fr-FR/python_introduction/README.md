@@ -620,16 +620,16 @@ print('Hello, Django girls!')
 
 Vous avez maintenant pas mal de connaissances en Python : n'hésitez pas à écrire du code avec ce que vous avez appris aujourd'hui !
 
-Maintenant, nous devons sauvegarder le fichier et lui donner un nom descriptif. Appelons le fichier **python_intro.py** et sauvegardons-le sur votre bureau. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Maintenant, nous devons sauvegarder le fichier et lui donner un nom descriptif. Appelons le fichier **python_intro.py** et sauvegardons-le sur votre bureau. Vous pouvez donner le nom que vous souhaitez à ce fichier mais il est important qu'il se termine par **.py**. L'extension **.py** permet de signaler à votre système d'exploitation que ce fichier est un **fichier exécutable Python** et que Python peut le lancer.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. C'est ce qu'on appelle « la coloration syntaxique ». C'est une fonctionnalité très utile lorsque l'on programme. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). C'est ce genre de fonctionnalités qui font que vous aimerez rapidement programmer avec un éditeur de code. :)
+> **Note :** Vous avez probablement constaté que votre code se pare de multiples couleurs : ça fait partie des choses qui rendent la programmation dans un éditeur de texte bien plus agréable ! Votre console Python n'avait pas cette fonctionnalité : tout était donc de la même couleur. Dans votre éditeur de texte, vous devriez voir que la fonction `print`, par exemple, n'a pas la même couleur d'une chaîne de caractères. C'est ce qu'on appelle « la coloration syntaxique ». C'est une fonctionnalité très utile lorsque l'on programme. La couleur des choses va vous permettre de détecter des problèmes : une chaine de caractères non fermée, une faute dans un mot (ce sera par exemple le cas dans la fonction `def` que vous verrez un peu plus tard). C'est ce genre de fonctionnalités qui font que vous aimerez rapidement programmer avec un éditeur de code. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+Une fois que le fichier est sauvegardé, vous pouvez le lancer ! En utilisant les compétences que vous avez apprises dans la section sur la ligne de commande, utilisez le terminal pour **changer le dossier courant** vers le bureau.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Sur Mac, ça ressemblera à :
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,20 +641,20 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+Sur Linux, ce sera comme ça :
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(N'oubliez pas que le mot "Bureau" peut être traduit dans votre langue locale.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Dans l'invite de commande Windows, ce sera comme ceci :
 
 {% filename %}command-line{% endfilename %}
 
@@ -665,7 +665,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Et sur Windows Powershell, ce sera comme ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -674,9 +674,9 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Si vous êtes coincées, demandez de l'aide. C'est exactement pour ça que les coaches sont là !
 
-Now use Python to execute the code in the file like this:
+Maintenant, utilisez Python pour exécuter le code contenu dans votre fichier :
 
 {% filename %}command-line{% endfilename %}
 
@@ -684,7 +684,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Note: sur Windows 'python3' n'est pas reconnu comme une commande. Au lieu de cela, utilisez 'python' pour exécuter le fichier :
 
 {% filename %}command-line{% endfilename %}
 
@@ -692,9 +692,9 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+Super ! Vous venez de lancer votre premier programme python à partir d'un fichier. Cool non ?
 
-You can now move on to an essential tool in programming:
+Et maintenant, passons à un autre outil essentiel de la programmation :
 
 ## If … elif … else
 
