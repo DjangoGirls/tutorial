@@ -592,14 +592,14 @@ Bravo ! Les Booléens sont l'une des fonctionnalités les plus cools en programm
 
 > Pour les lectrices autodidactes : cette partie est traitée dans la vidéo [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk).
 
-Pour l'instant, nous avons écrit tout notre code Python directement dans l'interpréteur, ce qui nous limite à une ligne de code à la fois. Les programmes sont typiquement sauvegardés dans des fichiers et sont exécutés par **l'interpréteur** ou le **compilateur** de notre langage de programmation. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+Pour l'instant, nous avons écrit tout notre code Python directement dans l'interpréteur, ce qui nous limite à une ligne de code à la fois. Les programmes sont typiquement sauvegardés dans des fichiers et sont exécutés par **l'interpréteur** ou le **compilateur** de notre langage de programmation. Jusqu'à présent, nous avons lancé nos programmes une ligne à la fois dans **l'interprèteur** Python. Nous aurons besoin de plus d'une ligne de code pour les prochaines tâches, donc nous aurons rapidement besoin de :
 
-- Quitter l'interpréteur Python
-- Ouvrir l'éditeur de code de notre choix
-- Sauvegarder du code dans un nouveau fichier Python
+- Quitter l'interpréteur Python ;
+- Ouvrir l'éditeur de code de notre choix ;
+- Sauvegarder du code dans un nouveau fichier Python ;
 - Le lancer !
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Pour quitter l'interpréteur Python que nous sommes en train d'utiliser, il suffit de taper la fonction `exit()`
 
 {% filename %}command-line{% endfilename %}
 
@@ -608,9 +608,9 @@ To exit from the Python interpreter that we've been using, type the `exit()` fun
 $
 ```
 
-This will put you back into the command prompt.
+Cela vous ramènera dans la ligne de commande de votre système d'exploitation.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Tout à l'heure, nous avions choisi un éditeur de code de la section [code editor](../code_editor/README.md). Nous allons maintenant ouvrir l'éditeur et écrire du code dans un nouveau fichier (ou, si vous utilisez un Chromebook, créez un nouveau fichier dans le cloud IDE et ouvrez le fichier, qui sera dans l'éditeur de code inclus) :
 
 {% filename %}editor{% endfilename %}
 
@@ -618,9 +618,9 @@ Earlier, we picked out a code editor from the [code editor](../code_editor/READM
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Vous avez maintenant pas mal de connaissances en Python : n'hésitez pas à écrire du code avec ce que vous avez appris aujourd'hui !
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Maintenant, nous devons sauvegarder le fichier et lui donner un nom descriptif. Appelons le fichier **python_intro.py** et sauvegardons-le sur votre bureau. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. C'est ce qu'on appelle « la coloration syntaxique ». C'est une fonctionnalité très utile lorsque l'on programme. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). C'est ce genre de fonctionnalités qui font que vous aimerez rapidement programmer avec un éditeur de code. :)
 
