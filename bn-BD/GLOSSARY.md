@@ -1,3 +1,3 @@
-# code editor
+# কোড এডিটর
 
-Code editor is an application that allows you to save your code so you will be able to get back to it later. You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
+কোড এডিটর এমন একটি অ্যাপ্লিকেশন যা আপনাকে আপনার কোড সংরক্ষণ করতে দেয় যাতে আপনি পরে এটিতে ফিরে আসতে সক্ষম হবেন। You can learn where to get one from the [Code editor chapter](./code_editor/README.md)
