@@ -10,7 +10,7 @@ The other external service we'll be using is [GitHub](https://www.github.com), w
 
 These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
-# Git
+# গিট
 
 > **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
 
@@ -26,7 +26,7 @@ Git tracks changes to a particular set of files in what's called a code reposito
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
-    $ git config --global user.name "Your Name"
+    $ git config --global user.name "আপনার নাম"
     $ git config --global user.email you@example.com
     
 
