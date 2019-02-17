@@ -708,7 +708,7 @@ Remplacez le code dans votre fichier **python_intro.py** avec ceci :
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Si nous sauvegardons ce fichier et que nous l'exécutons, nous obtiendrons l'erreur suivante :
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -718,7 +718,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python s'attend à ce que nous lui donnions des instructions sur ce qu'il faut exécuter lorsque la condition `3 > 2` est vraie (ou plutôt, `True`). Essayons de lui faire afficher "Ça marche !". Remplacez le code dans **python_intro.py** par ceci :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -727,9 +727,9 @@ if 3 > 2:
     print('Ça marche !')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Avez-vous remarqué que nous avions décalé la ligne suivante de quatre espaces ? C'est ce que l'on appelle indenter. Nous avons besoin d'indenter pour que Python sache quel code exécuter si le résultat est vrai. Un seul espace suffirait, mais à peu près tous⋅tes les programmeurs⋅euses Python pensent que 4 espaces sont plus clairs. La touche de tabulation (Tab) devrait ajouter automatiquement 4 espaces, mais cela peut dépendre du paramétrage de votre éditeur de texte. Lorsque vous avez fait votre choix, ne le changez pas ! Si vous avez déjà indenté avec 4 espaces, faites de même dans le reste du fichier - sinon vous risquez de rencontrer des problèmes.
 
-Save it and give it another run:
+Sauvegardez le fichier et relancez le :
 
 {% filename %}command-line{% endfilename %}
 
@@ -738,7 +738,7 @@ $ python3 python_intro.py
 Ça marche !
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Note: N'oubliez pas que sur Windows, 'python3' n'est pas reconnu comme une commande. À partir de maintenant, remplacez 'python3' par 'python' pour exécuter le fichier.
 
 ### Et que se passe-t-il si une condition n’est pas vraie ?
 
