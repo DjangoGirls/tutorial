@@ -698,9 +698,9 @@ Et maintenant, passons à un autre outil essentiel de la programmation :
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Quand on code, il y a plein de choses qui ne doivent être exécutées que dans certaines conditions. Pour cela, Python possède ce qu'on appelle l'instruction **if** (si).
 
-Replace the code in your **python_intro.py** file with this:
+Remplacez le code dans votre fichier **python_intro.py** avec ceci :
 
 {% filename %}python_intro.py{% endfilename %}
 
