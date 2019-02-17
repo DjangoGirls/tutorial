@@ -147,17 +147,60 @@ Branch master set up to track remote branch master from origin.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Настройка нашего сайта на PythonAnywhere
+## Настройка сайта на PythonAnywhere
 
-Вернись на [главную страницу PythonAnywhere](https://www.pythonanywhere.com/), кликнув логотип. Затем запусти `$ Bash` консоль — это такая командная строка, которая находится на серверах PythonAnywhere. Эта командная строка аналогична тому, что есть на твоём собственном компьютере.
+Вернись на [главную страницу PythonAnywhere](https://www.pythonanywhere.com/), кликнув логотип. Затем запусти Bash-консоль. Нажав на кнопку bash ты запускаешь командную строку, которая находится на серверах PythonAnywhere. Эта командная строка аналогична тому, что есть на твоём собственном компьютере.
 
 <img src="images/pythonanywhere_bash_console.png" alt="Раздел «New Console» (новая консоль) в веб-интерфейсе PythonAnywhere с кнопкой «bash»" />
 
 > **Примечание:** PythonAnywhere использует Linux, так что если ты используешь Windows, то терминал и команды могут немного отличаться от того, к чему ты привыкла на своём компьютере.
 
-# Rest of the updated configuration would be here
+Чтобы опубликовать сайт на PythonAnywhere, нужно загрузить на PythonAnywhere твой код с Github и затем настроить PythonAnywhere так, чтобы он распознал твой код и запустил твоё веб-приложение. Существуют способы сделать это «вручную», но для PythonAnywhere есть программа-помощник, которая сделает это для тебя. Давай её установим.
 
-TODO: translate.
+{% filename %}PythonAnywhere command-line{% endfilename %}
+```
+$ pip3.6 install --user pythonanywhere
+```
+
+Когда ты это запустишь, в консоли будет печататься лог установки. Он начнётся с чего-то вроде `Collecting pythonanywhere`, а последней будет строчка `Successfully installed (...) pythonanywhere- (...)`.
+
+Теперь запустим эту вспомогательную утилиту, которую ты только что установила. Она настроит твоё приложение, скачав его код с GitHub. Напечатай следующее в консоли PythonAnywhere (не забудь использовать свой ник на GitHub вместо `<your-github-username>`, URL в консольной команде должен совпадать с URL, используемый в команде clone):
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+```
+$ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+```
+
+Утилита будет печатать в консоль, что она делает:
+
+- Скачивает твой код с GitHub
+- Создаёт виртуальное окружение на PythonAnywhere, такое же, как на твоём компьютере
+- Обновляет твой файл настроек с настройками деплоя
+- Создаёт базу данных на PythonAnywhere, используя команду `manage.py migrate`
+- Разбирается с твоими статическими файлами (о них будет дальше)
+- Настраивает PythonAnywhere так, чтобы твоё приложение было доступно в интернете
+
+Главное, на что нужно обратить внимание сейчас, — это то что твоя база данных на PythonAnywhere никак не связана с базой данных на твоём компьютере. Поэтому там будут разные посты и разные аккаунты администраторов. Как следствие, для базы на PythonAnywhere необходимо создать аккаунт администратора так же, как ты это делала у себя локально с помощью команды `createsuperuser`. На PythonAnywhere заранее активировано вирутальное окружение, так что всё, что тебе нужно сделать — это запустить в консоли PythonAnhywhere команду:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+```
+(ola.pythonanywhere.com) $ python manage.py createsuperuser
+```
+
+Введи параметры для своего пользователя-админа. Лучше всего использовать те же самые данные, что и у тебя на локальном компьютере, чтобы избежать путаницы, если ты конечно не хочешь сделать пароль на сервере PythonAnywhere более надёжным.
+
+Сейчас, если хочешь, посмотри на файлы на PythonAnywhere с помощью команды `ls`:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+```
+(ola.pythonanywhere.com) $ ls
+blog  db.sqlite3  manage.py  mysite requirements.txt static
+(ola.pythonanywhere.com) $ ls blog/
+__init__.py  __pycache__  admin.py  apps.py  migrations  models.py
+tests.py  views.py
+```
+
+Ты также можешь заглянуть на страницу «Files» и посмотреть, что лежит на сервере, используя встроенный в PythonAnywhere файловый менеджер. (Со страницы «Console» ты можешь попасть на другие страницы PythonAnywhere используя кнопку меню в правом верхнем углу. Находясь на какой-либо странице, ты можешь найти ссылки на другие вверху.)
 
 # Ты в сети!
 
