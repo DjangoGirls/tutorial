@@ -64,7 +64,7 @@ Next, run:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+একটি [Github](https://github.com) অ্যাকাউন্ট তৈরি করুন।
 
 ### পাইথন সর্বত্র
 
