@@ -742,7 +742,7 @@ Note: N'oubliez pas que sur Windows, 'python3' n'est pas reconnu comme une comma
 
 ### Et que se passe-t-il si une condition n’est pas vraie ?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+Dans les exemples précédents, Python a exécuté du code parce que celui-ci se trouvait sous une condition qui était vraie. Cependant, Python possède aussi des instructions `elif` (sinon si) et `else` (sinon) :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -753,7 +753,7 @@ else:
     print("5 n'est pas plus grand que 2")
 ```
 
-When this is run it will print out:
+Lorsque vous exécuterez le code, ceci s'affichera :
 
 {% filename %}command-line{% endfilename %}
 
@@ -761,7 +761,7 @@ When this is run it will print out:
     5 est effectivement plus grand que 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Et si 2 était plus grand que 5, la seconde commande serait exécutée. Voyons comment `elif` fonctionne :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -775,7 +775,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+Exécutons le code :
 
 {% filename %}command-line{% endfilename %}
 
@@ -783,9 +783,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+Que s'est-il passé ? `elif` vous permet d'ajouter d'autres conditions à exécuter si les précédentes échouent.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Vous pouvez ajouter autant de `elif` que vous le souhaitez après le premier `if`. Voici un exemple :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -805,7 +805,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python va tester les différentes conditions puis il affichera ceci :
 
 {% filename %}command-line{% endfilename %}
 
