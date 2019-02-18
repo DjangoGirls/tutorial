@@ -813,11 +813,11 @@ Python va tester les différentes conditions puis il affichera ceci :
     Parfait, je peux entendre tous les détails du morceau.
     
 
-## Comments
+## Commentaires
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Les commentaires sont des lignes commençant par `#`. Vous pouvez écrire ce que vous voulez après le `#` et Python va l'ignorer. Les commentaires peuvent rendre votre code plus facile à comprendre pour d'autres personnes.
 
-Let's see how that looks:
+Voyons à quoi cela ressemble :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -828,15 +828,15 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Vous n'avez pas besoin d'écrire un commentaire pour chaque ligne de code, mais il est utile parfois d'expliquer pourquoi votre code fait une certaine chose, ou de fournir un résumé pour les parties les plus complexes.
 
 ### Résumé
 
-In the last few exercises you learned about:
+Avec ces derniers exercices, vous avez appris :
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
+- **Comment comparer des choses** – en Python, vous pouvez comparer des choses avec `>`, `>=`, `==`, `<=`, `<` et avec les opérateurs `and`, `or`
+- **Booléen** – un type d'objet qui n'a que deux valeurs possibles : `True` et `False`
+- **Comment sauvegarder des fichiers** – stocker votre code dans des fichiers pour pouvoir écrire des programmes plus longs.
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
 - **comments** - lines that Python won't run which let you document your code
 
