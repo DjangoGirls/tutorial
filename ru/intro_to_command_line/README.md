@@ -26,7 +26,7 @@ __Позволь представить нашего первого нового
 <!--sec data-title="OS X и Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
 
-Если у тебя Mac или Linux, ты, скорее всего, увидишь знак `$` в конце строки:
+Если у тебя Mac или Linux, ты, скорее всего, увидишь знак `$` в конце строки (перед курсором):
 
 {% filename %}command-line{% endfilename %}
 ```
