@@ -96,6 +96,7 @@ NameError: name 'Post' is not defined
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
+<Post: Sample title>
 ```
 
 Ура! Хочешь проверить, что всё работает?
@@ -119,7 +120,7 @@ NameError: name 'Post' is not defined
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.filter(author=me)
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 А может быть мы хотим получить все записи со словом 'title' в поле `title`?
@@ -127,7 +128,7 @@ NameError: name 'Post' is not defined
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.filter(title__contains='title')
-[<Post: Sample title>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
 > **Примечание**: обрати внимание на два символа нижнего подчёркивания (`_`) между `title` и `contains`. Django ORM использует этот синтаксис для разделения имён полей ("title") и операций или фильтров ("contains"). Если ты используешь только один символ нижнего подчёркивания, то получишь ошибку "FieldError: Cannot resolve keyword title_contains".
@@ -138,7 +139,7 @@ NameError: name 'Post' is not defined
 ```python
 >>> from django.utils import timezone
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[]
+<QuerySet []>
 ```
 
 К сожалению, пост, который мы добавили в консоли Python, ещё не опубликован. Мы можем изменить это! Сначала выберем запись, которую мы хотим опубликовать:
@@ -160,7 +161,7 @@ NameError: name 'Post' is not defined
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now())
-[<Post: Sample title>]
+<QuerySet [<Post: Sample title>]>
 ```
 
 
@@ -171,7 +172,7 @@ QuerySets позволяет сортировать объекты. Давай �
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.order_by('created_date')
-[<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]
+<QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
 Мы также можем изменить порядок на противоположный, добавив `-` в начало условия:
@@ -179,7 +180,7 @@ QuerySets позволяет сортировать объекты. Давай �
 {% filename %}command-line{% endfilename %}
 ```python
 >>> Post.objects.order_by('-created_date')
-[<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]
+<QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
 
@@ -189,6 +190,7 @@ QuerySets можно **сцеплять**, создавая цепочки:
 
 ```
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
+<QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
 Это мощный и удобный инструмент, позволяющий писать сложные запросы.
