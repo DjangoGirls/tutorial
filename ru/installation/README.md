@@ -32,7 +32,7 @@ data-id="chromebook_setup" data-collapse=true ces-->
 {% include "/code_editor/instructions.md" %}
 
 # Настрока virtualenv и установка Django
-{% include "/django_installation/instructions.md" %}}
+{% include "/django_installation/instructions.md" %}
 
 # Установка Git
 {% include "/deploy/install_git.md" %}
