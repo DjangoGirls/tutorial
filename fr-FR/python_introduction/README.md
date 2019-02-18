@@ -837,10 +837,10 @@ Avec ces derniers exercices, vous avez appris :
 - **Comment comparer des choses** – en Python, vous pouvez comparer des choses avec `>`, `>=`, `==`, `<=`, `<` et avec les opérateurs `and`, `or`
 - **Booléen** – un type d'objet qui n'a que deux valeurs possibles : `True` et `False`
 - **Comment sauvegarder des fichiers** – stocker votre code dans des fichiers pour pouvoir écrire des programmes plus longs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **if … elif … else** – des instructions que vous permettent de n'exécuter du code que dans certaines conditions.
+- **commentaires** – lignes que Python n'exécutera pas et qui vous permettent de documenter votre code.
 
-Time for the last part of this chapter!
+Il est temps d'attaquer la dernière partie de ce chapitre !
 
 ## Vos propres fonctions !
 
