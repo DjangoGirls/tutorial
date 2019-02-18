@@ -48,11 +48,12 @@
 ```
 djangogirls
 ├───manage.py
-└───mysite
-        settings.py
-        urls.py
-        wsgi.py
-        __init__.py
+├───mysite
+│        settings.py
+│        urls.py
+│        wsgi.py
+│        __init__.py
+└───requirements.txt
 ```
 > **Примечание:** в своей структуре директорий ты также увидишь ранее созданную нами директорию с виртуальным окружением.
 
@@ -107,6 +108,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```python
 ALLOWED_HOSTS = ['127.0.0.1', '<твоё_имя_пользователя>.pythonanywhere.com']
 ```
+
+> **Примечание**: В случае если вы используете Chromebook, добавьте следующую строку в конец файла settings.py:
+> `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 
 ## Настройка базы данных
 
@@ -173,7 +177,12 @@ Running migrations:
 ```
 http://127.0.0.1:8000/
 ```
+Если ты используешь Chromebook или Cloud9, вместо этого нажми на ссылку во всплывающем окне, которая должна появиться в правом верхнем углу командного окна, в котором запущен веб сервер. Ссылка может выглядеть так:
 
+{% filename %}browser{% endfilename %}
+```
+https://<странные буквы и цифры>.vfs.cloud9.us-west-2.amazonaws.com
+```
 Поздравляем! Ты только что создала свой первый веб-сайт и запустила его на веб-сервере! Ну не круто ли?
 
 ![Сработало!][3]
