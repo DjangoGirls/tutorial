@@ -1,22 +1,22 @@
-Existeixen gran quantitat d'editors diferents, i l'elecció d'un de particular es redueix principalment a gustos personals. La majoria de programadors de Python utilitzen IDEs (Entorns de Desenvolupament Integrat) complexos però extremadament potents, com ara PyCharm. Com a principiant, això és segurament menys adequat; les nostres recomanacions són igualment potents, però molt més simples.
+Existeixen gran quantitat d'editors diferents, i l'elecció d'un de particular es redueix principalment a gustos personals. La majoria de programadors de Python utilitzen IDEs (Entorns de Desenvolupament Integrat) complexos però extremadament potents, com ara PyCharm. Com a principiant, això és segurament menys adient; les nostres recomanacions són igualment potents, però molt més simples.
 
 A continuació trobaràs les nostres recomanacions. Pots demanar a la teva instructora si té alguna preferència, així li serà més fàcil ajudar-te.
 
 ## Gedit
 
-El Gedit és un editor gratuït, de codi obert, disponible per a tots els sistemes operatius.
+El Gedit és un editor gratuït, de codi obert, disponible en tots els sistemes operatius.
 
 [Descarrega'l aquí](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text és un editor molt popular del que trobem versions pels principals sistemes operatius. Pot ser descarregat i utilitzat gratuïtament durant un període d'avaluació indefinit.
 
 [Descarrega'l aquí](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom és un altre editor popular. És gratuït, de codi obert i disponible a Windows, OS X i Linux. Atom està desenvolupat per [GitHub](https://github.com/).
 
 [Descarrega'l aquí](https://atom.io/)
 
