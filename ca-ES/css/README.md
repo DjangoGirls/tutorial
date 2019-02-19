@@ -1,4 +1,4 @@
-# CSS - fes-ho maco!
+# CSS - fes-lo maco!
 
 El nostre blog encara sembla una mica lleig, oi? És hora de fer-lo maco! Per a això farem servir els CSS.
 
