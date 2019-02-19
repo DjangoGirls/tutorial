@@ -844,11 +844,11 @@ Il est temps d'attaquer la dernière partie de ce chapitre !
 
 ## Vos propres fonctions !
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> Pour les lectrices autodidactes : cette partie est traitée dans la vidéo [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Vous vous souvenez des fonctions comme `len()` que vous pouvez exécuter en Python ? Et bien, bonne nouvelle : vous allez apprendre à écrire vos propres fonctions!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Une fonction est un ensemble d'instructions que Python va exécuter. Chaque fonction en Python commence par le mot-clef `def`. On lui donne un nom, et elle peut avoir des paramètres. Essayons ! Remplacer le code de **python_intro.py** par ceci :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -860,11 +860,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Voilà, notre première fonction est prête !
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Vous vous demandez peut-être pourquoi nous avons écrit le nom de la fonction à la fin du fichier. C'est parce que Python lit le fichier et l'exécute du haut vers le bas. Donc pour pouvoir utiliser notre fonction, nous devons la réécrire en bas.
 
-Let's run this now and see what happens:
+Lançons notre code pour voir ce qui se passe :
 
 {% filename %}command-line{% endfilename %}
 
@@ -873,7 +873,7 @@ Let's run this now and see what happens:
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Note : si cela n'a pas fonctionné, ne paniquez pas ! Le message d'erreur vous aidera à comprendre pourquoi :
 
 - If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
