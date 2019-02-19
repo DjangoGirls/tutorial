@@ -6,9 +6,9 @@ El nostre blog encara sembla una mica lleig, oi? És hora de fer-lo maco! Per a 
 
 Els fulls d’estil en cascada (Cascading Style Sheets -CSS-) es fan servir per definir com es formatarà i veurà un lloc web escrit en un llenguatge de marcat (com l'HTML). Els pots considerar com el maquillatge de la nostra pàgina web. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Però no volem tornar a començar des de zero, oi? Un cop més, farem servir una eina gratuïta distribuïda per Internet. Saps, reinventar la roda no és divertit.
 
-## Let's use Bootstrap!
+## Utilitzem Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
