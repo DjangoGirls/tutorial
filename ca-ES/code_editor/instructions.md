@@ -24,7 +24,7 @@ Atom és un altre editor popular. És gratuït, de codi obert i disponible per W
 
 Segurament et preguntes per què estem instal·lant un programari especial d'edició de codi enlloc de fer servir alguna cosa com el Word o el Notepad.
 
-La primera raó és que el codi ha de ser en **text plà**. El problema amb programes com el Word o el TextEdit és que, per defecte, no produeixen text plà. Produeixen text enriquit (amb fonts i format), utilitzant formats personalitzats com el [RTF (Format de Text Enriquit -Rich Text Format -)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La primera raó és que el codi s'ha d'emmagatzemar en **text pla**. El problema amb programes com el Word o el TextEdit és que, per defecte, no produeixen text pla. Produeixen text enriquit (amb fonts i format), utilitzant formats personalitzats com el [RTF (Format de Text Enriquit -Rich Text Format -)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
 La segona raó és que els editors de codi s'han especialitzat precisament en això, en editar codi. Així doncs, proporcionen característiques útils com acolorir el text del codi en funció del seu significat o tancar-te automàticament els parèntesis.
 
