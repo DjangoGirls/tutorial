@@ -12,7 +12,7 @@
 *   [Твой первый проект на Django!](django_start_project/README.md)
 *   [Модели Django](django_models/README.md)
 *   [Администрирование Django](django_admin/README.md)
-*   [Публикация!](deploy/README.md)
+*   [Публикация в Интернет!](deploy/README.md)
 *   [URL-адреса Django](django_urls/README.md)
 *   [Представления в Django – время создавать!](django_views/README.md)
 *   [Введение в HTML](html/README.md)
