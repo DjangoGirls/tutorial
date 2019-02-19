@@ -1,4 +1,4 @@
-Existeixen gran quantitat d'editors diferents, i l'elecció d'un de particular es redueix principalment a gustos personals. La majoria de programadors de Python utilitzen IDEs (Entorns de Desenvolupament Integrat) complexos però extremadament potents, com ara PyCharm. Com a principiant, això és segurament poc adient; les nostres recomanacions són igualment potents, però molt més simples.
+Existeixen gran quantitat d'editors de codi diferents. L'elecció d'un o d'altre editor dependrà bàsicament de preferèncials personals. La majoria de programadores de Python van més enllà i utilitzen IDEs (Entorns de Desenvolupament Integrat) complexos però extremadament potents, com ara PyCharm. Aquesta darrera opció, però, és segurament poc adient per algú que tot just comença a programar. Les nostres recomanacions són igualment potents, però molt més simples.
 
 A continuació trobaràs les nostres recomanacions. Pots demanar a la teva instructora si té alguna preferència, així li serà més fàcil ajudar-te.
 
