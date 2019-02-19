@@ -1,8 +1,8 @@
-# CSS – make it pretty!
+# CSS - fes-ho maco!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+El nostre blog encara sembla una mica lleig, oi? És hora de fer-lo maco! Per això, farem servir els CSS.
 
-## What is CSS?
+## Què són els CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
