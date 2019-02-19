@@ -1,10 +1,10 @@
 # CSS - fes-ho maco!
 
-El nostre blog encara sembla una mica lleig, oi? És hora de fer-lo maco! Per això, farem servir els CSS.
+El nostre blog encara sembla una mica lleig, oi? És hora de fer-lo maco! Per a això farem servir els CSS.
 
 ## Què són els CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Els fulls d’estil en cascada (Cascading Style Sheets -CSS-) es fan servir per definir com es formatarà i veurà un lloc web escrit en un llenguatge de marcat (com l'HTML). Els pots considerar com el maquillatge de la nostra pàgina web. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
