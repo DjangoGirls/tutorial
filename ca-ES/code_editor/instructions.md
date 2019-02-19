@@ -1,4 +1,4 @@
-Existeixen gran quantitat d'editors diferents, i l'elecció d'un de particular es redueix principalment a gustos personals. La majoria de programadors de Python utilitzen IDEs (Entorns de Desenvolupament Integrat) complexos però extremadament potents, com ara PyCharm. Com a principiant, això és segurament menys adient; les nostres recomanacions són igualment potents, però molt més simples.
+Existeixen gran quantitat d'editors diferents, i l'elecció d'un de particular es redueix principalment a gustos personals. La majoria de programadors de Python utilitzen IDEs (Entorns de Desenvolupament Integrat) complexos però extremadament potents, com ara PyCharm. Com a principiant, això és segurament poc adient; les nostres recomanacions són igualment potents, però molt més simples.
 
 A continuació trobaràs les nostres recomanacions. Pots demanar a la teva instructora si té alguna preferència, així li serà més fàcil ajudar-te.
 
@@ -26,6 +26,6 @@ Et deus estar preguntant per què estem instal·lant un programari especial d'ed
 
 La primera raó és que el codi necessita estar en **text plà**. El problema amb programes com el Word o el TextEdit és que, per defecte, no produeixen text plà. Produeixen text enriquit (amb fonts i format), utilitzant formats personalitzats com el [RTF (Format de Text Enriquit -Rich Text Format -)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+La segona raó és que els editors de codi s'han especialitzat precisament en això, en editar codi. Així doncs, proporcionen característiques útils com acolorir el text del codi en funció del seu significat o tancar-te automàticament els parèntesis.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Més endavant veurem tot això a la pràctica. Aviat veuràs el teu antic i fidel editor de codi com una de les teves eines favorites. :)
