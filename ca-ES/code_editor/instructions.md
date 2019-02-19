@@ -20,11 +20,11 @@ Atom és un altre editor popular. És gratuït, de codi obert i disponible a Win
 
 [Descarrega'l aquí](https://atom.io/)
 
-## Why are we installing a code editor?
+## Com és que instal·lem un editor de codi?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Et deus estar preguntant per què estem instal·lant un programari especial d'edició de codi enlloc de fer servir alguna cosa com el Word o el Notepad.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La primera raó és que el codi necessita estar en **text plà**. El problema amb programes com el Word o el TextEdit és que, per defecte, no produeixen text plà. Produeixen text enriquit (amb fonts i format), utilitzant formats personalitzats com el [RTF (Format de Text Enriquit -Rich Text Format -)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
 The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
