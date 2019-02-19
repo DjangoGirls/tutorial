@@ -2,7 +2,7 @@ Chromebookをお持ちでない場合は、[このセクションをスキップ
 
 ### クラウドIDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. チュートリアルを通して、クラウドIDEはまるであなたのローカルマシンのように動作するでしょう。 みんながOS XやUbuntuやWindowsでやるのと同じようにターミナルからコマンドを入力できますが、そのターミナルはIDEがセットアップされたどこかのコンピュータに接続されています。 さて、いろいろなクラウドIDE（PaizaCloud Cloud IDE,AWS Cloud9）について見ていきましょう。 クラウドIDEのうちどれかを選んで、指示に従ってください。
+クラウドIDEはコードエディタであり、どこからでも何かをインストールできたり、コードを書いたり、ソフトウェアを動かしたりできるインターネットにつながったコンピュータへアクセスできます。 チュートリアルを通して、クラウドIDEはまるであなたのローカルマシンのように動作するでしょう。 みんながOS XやUbuntuやWindowsでやるのと同じようにターミナルからコマンドを入力できますが、そのターミナルはIDEがセットアップされたどこかのコンピュータに接続されています。 さて、いろいろなクラウドIDE（PaizaCloud Cloud IDE,AWS Cloud9）について見ていきましょう。 クラウドIDEのうちどれかを選んで、指示に従ってください。
 
 #### PaizaCloud Cloud IDE
 
@@ -11,14 +11,14 @@ Cloud IDE is a tool that gives you a code editor and access to a computer runnin
 3. Click *New Server*
 4. Click Terminal button(on the left side of the window)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+さて、左側にサイドバーとボタンがついた画面が見えていると思います。 下記のようなプロンプトが表示されたターミナルウィンドウを開くために、“Terminal”ボタンをクリックしてください。
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+これでPaizaCloud Cloud IDEのターミナルは準備できました。 ウィンドウのサイズを変えたり、ちょっと大きくしたいときは最大化したりできますよ。
 
 #### AWS Cloud9
 
@@ -26,20 +26,20 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 2. Sign up for an account
 3. Click *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+インターフェイスには、サイドバー、テキストが書かれた大きなメインウィンドウ、下部に小さなウィンドウがあり、次の表示が見えると思います。
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+下部がターミナルです。 Cloud 9コンピュータにリモートで指示を送るためにターミナルを使えます。 ウィンドウはサイズ変更可能です。
 
 ### 仮想環境
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+仮想環境 (virtualenvとも呼ばれます) は、取り組んでいるプロジェクト用に、便利なコンピューターコードを詰め込んでおけるプライベートボックスのようなものです。 様々なプロジェクトの様々なコードがプロジェクト間で混ざってしまわないようにこれを使います。
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Cloud 9のインターフェイスのうち、下部のターミナルで次を実行します。
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,7 +47,7 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+それでも問題が解決しない場合は、コーチに相談してください。
 
 Next, run:
 
