@@ -1,4 +1,4 @@
-Pots [saltar fins aquesta secció](http://tutorial.djangogirls.org/en/installation/#install-python) si no fas servir un Chromebook. Si el fas servir, la teva experiència d'instal·lació serà una mica diferent. Pots ignorar la resta d'instruccions d'instal·lació.
+Pots [ometre aquest apartat](http://tutorial.djangogirls.org/en/installation/#install-python) si no estàs fent servir un Chromebook. Si el fas servir, la teva experiència d'instal·lació serà una mica diferent. Pots ignorar la resta d'instruccions d'instal·lació.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
