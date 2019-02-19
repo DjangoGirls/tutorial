@@ -1,10 +1,10 @@
 # Editor de codi
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> Per les lectores que són a casa: el vídeo [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) tracta sobre aquest tema.
 
 En breu escriuràs la teva primera línia de codi, així que ha arribat l'hora de descarregar un editor de codi!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **Nota** Si estàs fent servir un Chromebook, salta't aquest capítol i segueix les instruccions que trobaràs a [Chromebook Setup](../chromebook_setup/README.md). L'IDE cloud que has triat (PaizaCloud Cloud IDE o AWS Cloud9) inclou un editor de codi. Així doncs, quan obris un fitxer al teu IDE des del menú d'arxiu ja estaràs emprant l'editor.
 > 
 > **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
 
