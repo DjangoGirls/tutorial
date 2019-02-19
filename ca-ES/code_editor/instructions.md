@@ -10,7 +10,7 @@ El Gedit és un editor gratuït, de codi obert, disponible en tots els sistemes 
 
 ## Sublime Text 3
 
-Sublime Text és un editor molt popular del que trobem versions pels principals sistemes operatius. Pot ser descarregat i utilitzat gratuïtament durant un període d'avaluació indefinit.
+Sublime Text és un editor molt popular del que trobem versions pels principals sistemes operatius. Es pot descarregar i utilitzar gratuïtament durant un període d'avaluació indefinit.
 
 [Descarrega'l aquí](https://www.sublimetext.com/3)
 
@@ -28,4 +28,4 @@ La primera raó és que el codi necessita estar en **text plà**. El problema am
 
 La segona raó és que els editors de codi s'han especialitzat precisament en això, en editar codi. Així doncs, proporcionen característiques útils com acolorir el text del codi en funció del seu significat o tancar-te automàticament els parèntesis.
 
-Més endavant veurem tot això a la pràctica. Aviat veuràs el teu antic i fidel editor de codi com una de les teves eines favorites. :)
+Més endavant veurem tot això a la pràctica. Aviat consideraràs el teu antic i fidel editor de codi com una de les teves eines favorites. :)
