@@ -1,10 +1,10 @@
-Existeixen gran quantitat d'editors diferents, i l'elecció d'un de particular es redueix principalment a gustos personals. La majoria de programdors de Python utilitzen IDEs (Entorns de Desenvolupament Integrat) complexos però extremadament potents, com ara PyCharm. Com a principiant, això és segurament menys adequat; les nostres recomanacions són igualment potents, però molt més simples.
+Existeixen gran quantitat d'editors diferents, i l'elecció d'un de particular es redueix principalment a gustos personals. La majoria de programadors de Python utilitzen IDEs (Entorns de Desenvolupament Integrat) complexos però extremadament potents, com ara PyCharm. Com a principiant, això és segurament menys adequat; les nostres recomanacions són igualment potents, però molt més simples.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+A continuació trobaràs les nostres recomanacions. Pots demanar a la teva instructora si té alguna preferència, així li serà més fàcil ajudar-te.
 
 ## Gedit
 
-El Gedit és un editor gratuït, open-source, disponible per a tots els sistemes operatius.
+El Gedit és un editor gratuït, de codi obert, disponible per a tots els sistemes operatius.
 
 [Descarrega'l aquí](https://wiki.gnome.org/Apps/Gedit#Download)
 
