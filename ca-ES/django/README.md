@@ -18,9 +18,9 @@ Imagina una bústia de correu (port) que s'observa per saber quan arriben cartes
 
 Quan una petició arriba al servidor web, s'envia a Django, que tracta d'entendre que és el que s'està sol·licitant. Primer agafa l'adreça d'una pàgina web i intenta esbrinar què n'ha de fer. D'això s'encarrega un component de Django que anomenem **urlresolver** (fixa't que l'adreça d'un lloc web es diu URL (localitzador uniforme de recursos – Uniform Resource Locator –. Per tant, el mot *urlresolver* té el seu sentit). Aquest component no és gaire llest: disposa d'un llistat de patrons i mira d'esbrinar amb quin d'ells coincideix la URL en qüestió. Django comprova els patrons d'adalt a baix i si algun coincideix, aleshores envia la petició a la funció associada (que anomenem *view* – vista –).
 
-Imagina una cartera amb una carta. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Imagina una cartera amb una carta per entregar. Va caminant pel carrer tot mirant els números dels edificis per trobar el que coincideix amb el que hi ha escrit a la carta. Si en troba un que coincideix, allà entrega la carta. Així és com funciona l'urlresolver!
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+In the *view* function, all the interesting things are done: we can look at a database to look for some information. Potser l'usuari ha demanat canviar alguna dada? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
 The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
