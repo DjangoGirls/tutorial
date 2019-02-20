@@ -22,6 +22,6 @@ Imagina una cartera amb una carta per entregar. Va caminant pel carrer tot miran
 
 A la funció *view* és on es fan les coses interessants: podem buscar informació en una base de dades. L'usuari potser demana canviar alguna dada? Com una carta que digui: "Si us plau, canvia la descripció de la meva feina." La *view* pot comprovar si estàs autoritzada a fer-ho i, si és el cas, actualitzar la descripció per tu i enviar-te un missatge: "Fet!" Aleshores la *view* genera una resposta i Django la pot enviar al navegador de l'usuari.
 
-L'anterior explicació s'ha simplificat una mica, però no necessites saber tots els detalls tècnics encara. Amb que tinguis una idea general n'hi ha prou.
+L'anterior explicació s'ha simplificat una mica ja que encara no necessites saber tots els detalls tècnics. Amb que tinguis una idea general n'hi ha prou.
 
-Així doncs, enlloc d'aprofundir massa en els detalls, començarem creant alguna cosa amb Django i aprendrem com funcionen els components importants alhora!
+Així doncs, enlloc d'aprofundir massa en els detalls, començarem creant alguna cosa amb Django i alhora aprendrem com funcionen els components importants!
