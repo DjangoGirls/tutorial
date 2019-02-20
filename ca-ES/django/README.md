@@ -16,7 +16,7 @@ Imagina una bústia de correu (port) que s'observa per saber quan arriben cartes
 
 ## Què és el que passa quan algú demana per un lloc web al teu servidor?
 
-Quan una petició arriba al servidor web, s'envia a Django que tracta d'entendre que és el que s'està sol·licitant. Agafa primer l'adreça d'una pàgina web i intenta esbrinar què n'ha de fer. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Quan una petició arriba al servidor web, s'envia a Django que tracta d'entendre que és el que s'està sol·licitant. Agafa primer l'adreça d'una pàgina web i intenta esbrinar què n'ha de fer. D'això s'encarrega un component de Django que anomenem **urlresolver** (fixa't que l'adreça d'un lloc web es diu URL (localitzador uniforme de recursos – Uniform Resource Locator –. Per tant, el mot *urlresolver* té el seu sentit). No és gaire intel·ligent – té llistat de patrons i prova d'esbrinar amb quin coincideix la URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
 Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
