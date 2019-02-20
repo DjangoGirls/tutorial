@@ -1,4 +1,4 @@
-# Django Girls Tutorial
+# Tutorial de les Django Girls
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
