@@ -876,8 +876,8 @@ Lançons notre code pour voir ce qui se passe :
 Note : si cela n'a pas fonctionné, ne paniquez pas ! Le message d'erreur vous aidera à comprendre pourquoi :
 
 - Si vous obtenez un `NameError`, cela est du probablement à une faute de frappe, donc vous devriez vérifier d'avoir utilisé le même nom lors de la création de la fonction avec `def hi():` et lors de l'appel avec `hi()`.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- Si vous obtenez un `IndentationError`, vérifiez que les deux `print` sont à la même distance du début de leur ligne: python veut que tout le code à l'intérieur de la fonction soit bien aligné.
+- Si vous n'obtenez rien du tout, vérifiez que le `hi()` à la fin *n'est pas indenté*. Si c'est le cas, cette ligne est considérée par Python comme faisant partie de la fonction, et elle ne sera donc jamais exécutée.
 
 Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
