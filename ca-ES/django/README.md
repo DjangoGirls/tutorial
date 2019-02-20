@@ -18,7 +18,7 @@ Imagina una bústia de correu (port) que s'observa per saber quan arriben cartes
 
 Quan una petició arriba al servidor web, s'envia a Django, que tracta d'entendre que és el que se li està demanant. Primer agafa l'adreça de la pàgina web i intenta esbrinar què n'ha de fer. D'això s'encarrega un component de Django anomenat **urlresolver** (fixa't que l'adreça d'un lloc web es diu URL (localitzador uniforme de recursos – Uniform Resource Locator –. Per tant, el mot *urlresolver* sembla ben triat). Aquest component no és gaire llest: disposa d'un llistat de patrons i mira d'esbrinar a quin d'ells s'ajusta la URL en qüestió. Django revisa els patrons d'adalt a baix i si en troba un de coincident, aleshores envia la petició a la funció associada (que anomenem *view* – vista –).
 
-Imagina una cartera que ha d'entregar una carta. Va caminant pel carrer tot mirant els números dels edificis per trobar el que coincideix amb el que duu a la carta. Si en troba un que coincideix, allà entrega la carta. Així és com funciona l'urlresolver!
+Imagina una cartera que ha d'entregar una carta. Va caminant pel carrer tot mirant els números dels edificis per trobar el que coincideix amb el que duu la carta. Si en troba un que coincideix, allà l'entrega. Així és com funciona l'urlresolver!
 
 A la funció *view* és on es fan les coses interessants: podem buscar informació en una base de dades. L'usuari potser demana que es canviï alguna dada? Com una carta que digui: "Si us plau, canvia la descripció de la meva feina." La *view* pot comprovar si s'està autoritzat a fer-ho i, si és el cas, actualitzar la descripció i enviar un missatge de confirmació: "Fet!" Aleshores la *view* genera una resposta i Django la pot enviar al navegador de l'usuari.
 
