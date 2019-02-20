@@ -2,11 +2,11 @@
 
 # Introducció a Python
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Algunes parts d'aquest capítol es basen en els tutorials de les Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Anem a escriure una mica de codi!
 
-## Python prompt
+## Línia de comandes (prompt) de Python
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
