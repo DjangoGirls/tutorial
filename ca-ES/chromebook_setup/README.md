@@ -1,4 +1,4 @@
-# Instal·lació a Chromebook
+# Instal·lació en Chromebook
 
 > **Nota** Si ja has seguit les passes d'instal·lació, no cal que ho facis un altre cop - pots anar directament a [Introducció a Python](../python_introduction/README.md).
 
