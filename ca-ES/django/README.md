@@ -10,13 +10,13 @@ Els frameworks existeixen per estalviar-te haver de reinventar la roda i ajudar-
 
 ## Per què necessites un framework?
 
-Per entendre la finalitat de Django necessitem entendre una mica els servidors. La primera cosa que un servidor necessita és saber que vols que et proporcioni una pàgina web.
+Per entendre la finalitat de Django necessitem entendre una mica els servidors. La primera cosa que un servidor necessita saber és que vols que et proporcioni una pàgina web.
 
 Imagina una bústia de correu (port) que s'observa per saber quan arriben cartes (peticions). Això ho fa un servidor web. El servidor web llegeix la carta i envia una resposta amb una pàgina web. Quan vols enviar alguna cosa, però, necessites un contingut. Contingut que Django t'ajuda a crear.
 
 ## Què és el que passa quan algú demana per un lloc web al teu servidor?
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Quan una petició arriba al servidor web, s'envia a Django que tracta d'entendre que és el que s'està sol·licitant. Agafa primer l'adreça d'una pàgina web i intenta esbrinar què n'ha de fer. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
 Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
