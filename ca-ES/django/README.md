@@ -10,11 +10,11 @@ Els frameworks existeixen per estalviar-te haver de reinventar la roda i ajudar-
 
 ## Per què necessites un framework?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Per entendre la finalitat de Django necessitem entendre una mica els servidors. La primera cosa que un servidor necessita és saber que vols que et proporcioni una pàgina web.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+Imagina una bústia de correu (port) que s'observa per saber quan arriben cartes (peticions). Això ho fa un servidor web. El servidor web llegeix la carta i envia una resposta amb una pàgina web. Quan vols enviar alguna cosa, però, necessites un contingut. Contingut que Django t'ajuda a crear.
 
-## What happens when someone requests a website from your server?
+## Què és el que passa quan algú demana per un lloc web al teu servidor?
 
 When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
