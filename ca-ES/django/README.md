@@ -1,6 +1,6 @@
 # Què és Django?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) és un entorn de treball per aplicacions web (framework web) de codi lliure i gratuït escrit en Python. Un framework web consta d'un conjunt de components que t'ajuden a desenvolupar llocs web d'una forma més ràpida i fàcil.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) és un entorn de treball per aplicacions web (framework web) de codi lliure i gratuït escrit en Python. Un framework web consta d'un seguit de components que t'ajuden a desenvolupar llocs web d'una forma més ràpida i fàcil.
 
 En la construcció d'un lloc web necessitem sempre un conjunt de components semblant: una forma de gestionar l'autenticació d'usuaris (registre, inici i tancament de sessió), un panell de control, formularis, un sistema per carregar fitxers, etc.
 
@@ -16,7 +16,7 @@ Imagina una bústia de correu (port) que s'observa per saber quan arriben cartes
 
 ## Què és el que passa quan algú demana per un lloc web al teu servidor?
 
-Quan una petició arriba al servidor web, s'envia a Django, que tracta d'entendre que és el que s'està sol·licitant. Primer agafa l'adreça d'una pàgina web i intenta esbrinar què n'ha de fer. D'això s'encarrega un component de Django que anomenem **urlresolver** (fixa't que l'adreça d'un lloc web es diu URL (localitzador uniforme de recursos – Uniform Resource Locator –. Per tant, el mot *urlresolver* té el seu sentit). Aquest component no és gaire llest: disposa d'un llistat de patrons i mira d'esbrinar amb quin d'ells coincideix la URL en qüestió. Django comprova els patrons d'adalt a baix i si algun coincideix, aleshores envia la petició a la funció associada (que anomenem *view* – vista –).
+Quan una petició arriba al servidor web, s'envia a Django, que tracta d'entendre que és el que se li està demanant. Primer agafa l'adreça de la pàgina web i intenta esbrinar què n'ha de fer. D'això s'encarrega un component de Django anomenat **urlresolver** (fixa't que l'adreça d'un lloc web es diu URL (localitzador uniforme de recursos – Uniform Resource Locator –. Per tant, el mot *urlresolver* té el seu sentit). Aquest component no és gaire llest: disposa d'un llistat de patrons i mira d'esbrinar amb quin d'ells coincideix la URL en qüestió. Django revisa els patrons d'adalt a baix i si en troba un de coincident, aleshores envia la petició a la funció associada (que anomenem *view* – vista –).
 
 Imagina una cartera que ha d'entregar una carta. Va caminant pel carrer tot mirant els números dels edificis per trobar el que coincideix amb el que hi ha escrit a la carta. Si en troba un que coincideix, allà entrega la carta. Així és com funciona l'urlresolver!
 
