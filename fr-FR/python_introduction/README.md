@@ -875,7 +875,7 @@ Lançons notre code pour voir ce qui se passe :
 
 Note : si cela n'a pas fonctionné, ne paniquez pas ! Le message d'erreur vous aidera à comprendre pourquoi :
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
+- Si vous obtenez un `NameError`, cela est du probablement à une faute de frappe, donc vous devriez vérifier d'avoir utilisé le même nom lors de la création de la fonction avec `def hi():` et lors de l'appel avec `hi()`.
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
 - If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
 
