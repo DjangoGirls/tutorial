@@ -1,6 +1,6 @@
 # Què és Django?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) és un entorn de treball per aplicacions web (framework web) escrit en Python, de codi lliure i gratuït. Un framework web consta d'un conjunt de components que t'ajuden a desenvolupar llocs web d'una forma més ràpida i fàcil.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) és un entorn de treball per aplicacions web (framework web) de codi lliure i gratuït escrit en Python. Un framework web consta d'un conjunt de components que t'ajuden a desenvolupar llocs web d'una forma més ràpida i fàcil.
 
 En la construcció d'un lloc web necessitem sempre un conjunt de components semblant: una forma de gestionar l'autenticació d'usuaris (registre, inici i tancament de sessió), un panell de control, formularis, un sistema per carregar fitxers, etc.
 
@@ -18,7 +18,7 @@ Imagina una bústia de correu (port) que s'observa per saber quan arriben cartes
 
 Quan una petició arriba al servidor web, s'envia a Django, que tracta d'entendre que és el que s'està sol·licitant. Primer agafa l'adreça d'una pàgina web i intenta esbrinar què n'ha de fer. D'això s'encarrega un component de Django que anomenem **urlresolver** (fixa't que l'adreça d'un lloc web es diu URL (localitzador uniforme de recursos – Uniform Resource Locator –. Per tant, el mot *urlresolver* té el seu sentit). Aquest component no és gaire llest: disposa d'un llistat de patrons i mira d'esbrinar amb quin d'ells coincideix la URL en qüestió. Django comprova els patrons d'adalt a baix i si algun coincideix, aleshores envia la petició a la funció associada (que anomenem *view* – vista –).
 
-Imagina una cartera amb una carta per entregar. Va caminant pel carrer tot mirant els números dels edificis per trobar el que coincideix amb el que hi ha escrit a la carta. Si en troba un que coincideix, allà entrega la carta. Així és com funciona l'urlresolver!
+Imagina una cartera que ha d'entregar una carta. Va caminant pel carrer tot mirant els números dels edificis per trobar el que coincideix amb el que hi ha escrit a la carta. Si en troba un que coincideix, allà entrega la carta. Així és com funciona l'urlresolver!
 
 A la funció *view* és on es fan les coses interessants: podem buscar informació en una base de dades. L'usuari potser demana canviar alguna dada? Com una carta que digui: "Si us plau, canvia la descripció de la meva feina." La *view* pot comprovar si estàs autoritzada a fer-ho i, si és el cas, actualitzar la descripció per tu i enviar-te un missatge: "Fet!" Aleshores la *view* genera una resposta i Django la pot enviar al navegador de l'usuari.
 
