@@ -16,7 +16,7 @@ CSS(Cascading Style Sheets)는 웹사이트의 보여지는 부분 나타낼 때
 
 ## Bootstrap 설치하기
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Bootstrap을 설치하려면 코드 편집기에서 `.html ` 파일을 열고 이 파일을 `<head>` 섹션에 추가하십시오.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+당신의 프로젝트에 어떤 파일도 추가하지 않는다. 인터넷에 존재하는 파일만 가리키고 있다. 그러니 웹사이트를 열고 페이지를 새로 고치세요. 여기있다!
 
 ![그림 14.1](images/bootstrap1.png)
 
