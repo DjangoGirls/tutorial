@@ -138,11 +138,11 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 点击图标回到 [PythonAnywhere 主控制面板](https://www.pythonanywhere.com/) ，然后选着启动 "Bash" 控制台的选项-即PythonAnywhere版本的命令行，就像你的计算机的命令行一样。
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![在 PythonAnywher 网页界面上 '新建控制台' 部分，按钮为 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **注意** PythonAnywhere 基于 Linux系统，因此如果你使用 Windows系统，控制台将会和你本地电脑上的略有不同。
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+在 pythonanywhere 上部署 web 应用程序涉及从 github 中提取代码, 然后配置 pythonanywhere 以识别它并开始将其作为 web 应用程序提供。 There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
