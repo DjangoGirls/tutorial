@@ -23,8 +23,8 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 #### AWS Cloud9（AWS云开发9）
 
 1. 转到 [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+2. 创建一个用户
+3. 点击 *Create Environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
