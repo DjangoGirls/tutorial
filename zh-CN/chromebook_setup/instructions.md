@@ -68,7 +68,7 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 
 ### Python无处不在
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls课程包含一个称谓部署的部分。这是个令代码在你新的网页生效并使其转移到一个可公开访问的计算机的过程，以便其他人均可看到你的作品。
 
 This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
