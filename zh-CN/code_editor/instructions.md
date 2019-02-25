@@ -28,4 +28,4 @@ Atom是另一个流行的编辑器。免费，开源，并且支持Windows，OS 
 
 第二个原因是，代码编辑器是专门用来编辑代码的，因此它们会提供一些有用的功能，比如根据代码的含义高亮代码，或者帮你自动匹配引号。
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+以上这些我们将会在后期的实践中体会。很快，你就会觉得你那似乎过时的老版本的编辑器正是你使用得最得心应手的工具。:)
