@@ -15,7 +15,7 @@
 * [Django admin 管理后台](django_admin/README.md)
 * [部署！](deploy/README.md)
 * [Django urls](django_urls/README.md)
-* [Django views – time to create!](django_views/README.md)
+* [Django 视野-快来创造吧！ ](django_views/README.md)
 * [HTML简介](html/README.md)
 * [Django ORM (查询集)](django_orm/README.md)
 * [模板中的动态数据](dynamic_data_in_templates/README.md)
