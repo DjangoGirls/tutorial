@@ -124,19 +124,19 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+现在你的代码已经在GitHub上了。 快去确认一下吧！ 你会发现这是一个很好的平台-[Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial)，还有很多其他非常棒的开源软件项目也将他们的代码放在GitHub上。 :)
 
-# Setting up our blog on PythonAnywhere
+# 在 PythonAnywhere 设置我们的博客
 
-## Sign up for a PythonAnywhere account
+## 注册一个 PythonAnywher 帐户
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Note**您可能已经在安装步骤的早期创建了 pythonanywhere 帐户-如果是的话, 则无需重复。
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## 在 pythonanywhere 配置我们的网站
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+点击图标回到 [PythonAnywhere 主控制面板](https://www.pythonanywhere.com/) ，然后选着启动 "Bash" 控制台的选项-即PythonAnywhere版本的命令行，就像你的计算机的命令行一样。
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
