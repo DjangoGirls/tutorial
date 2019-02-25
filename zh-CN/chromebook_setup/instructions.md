@@ -70,6 +70,6 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 
 Django Girls课程包含一个称谓部署的部分。这是个令代码在你新的网页生效并使其转移到一个可公开访问的计算机的过程，以便其他人均可看到你的作品。
 
-当我们在Chromebook上做课程的时候，这部分就显得有些怪异了，因为我们已经用计算机上网（而不是，例如，笔记本） However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+当我们在Chromebook上做课程的时候，这部分就显得有些怪异了，因为我们已经用计算机上网（而不是，例如，笔记本） 然而，它仍然有用的。因为当我们将cloud9 工作区当做一个作为我们“进行中”的工作。Python Anywhere作为一个展示我们工作的地方，因为其更加完整。
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+因此，在[www.pythonanywhere.com](https://www.pythonanywhere.com).注册一个新的 Python Anywhere账户
