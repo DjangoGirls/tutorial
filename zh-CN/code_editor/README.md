@@ -4,8 +4,8 @@
 
 你马上就要写下第一行代码，现在该下载一个代码编辑器了！
 
-> **注意** 如果你用的是Chromebook，请跳过本章，并确保你遵循 [Chromebook Setup](../chromebook_setup/README.md)的指示进行操作 The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **注意** 如果你用的是Chromebook，请跳过本章，并确保你遵循 [Chromebook Setup](../chromebook_setup/README.md)的指示进行操作 你所选择的cloud IDE(PaizaCloud Cloud IDE or AWS Cloud9) 包含一个代码编辑器，当你在你的IDE的文件菜单中打开一个文件，你将自动使用此编辑器。
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **注意**你可能在早前的安装中已完成了这一步-如果是的话，你可以跳过直接进入下一章节。
 
 {% include "/code_editor/instructions.md" %}
