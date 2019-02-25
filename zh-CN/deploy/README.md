@@ -161,13 +161,13 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 当你看到其运行时，你会看到它所做的事情：
 
 - 从GitHub下载你的代码
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
-- Updating your settings file with some deployment settings
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- 在 PythonAnywhere上创建一个virtualenv，就像你自己在你的电脑上的那个一样
+- 使用一些部署设置来更新您的设置文件。
+- 使用 `manage.py migrate` 命令来在 PythonAnywhere创建一个数据库
+- 是指你的静态文件（我们稍后会了解这些文件）
+- 配置PythonAnywhere，并通过其API来为你的网页程序提供服务
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+在 PythonAnywhere上，所有的这些步骤都会自动的，但是他们和你在其他服务器提供的步骤是一样的。
 
 The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
