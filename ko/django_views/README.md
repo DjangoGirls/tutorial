@@ -25,7 +25,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-방금 `post_list`라는 함수(`def`) 만들어 `요청(request)`을 넘겨받아 `render`메서드를 호출합니다. 이 함수는 호출하여 받은(return) `blog/post_list.html`템플릿을 보여줍니다.
+방금 `post_list`라는 함수(`def`)를 만들었습니다. 이 함수는 `요청(request)`을 넘겨받아 `render`메서드를 호출합니다. 이 함수는 `render` 메서드를 호출하여 받은(return) `blog/post_list.html`템플릿을 보여줍니다.
 
 
 파일을 저장하고, http://127.0.0.1:8000/ 로 접속해 확인해보세요.
@@ -36,5 +36,5 @@ def post_list(request):
 
 *TemplateDoesNotExist*는 쉽게 해결할 수 있습니다. 잘 따라왔다면 방금 에러가 보이는게 맞아요. 다음 장에서 버그를 해결하기 위해 템플릿 파일을 만들 거에요!
 
-> 장고 뷰에 대해 더 알고 싶다면 장고 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/1.11/topics/http/views/
+> 장고 뷰에 대해 더 알고 싶다면 장고 공식 문서를 읽어보세요. : https://docs.djangoproject.com/en/2.0/topics/http/views/
 

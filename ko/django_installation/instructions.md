@@ -156,15 +156,15 @@ $ . myvenv/bin/activate
 ```
 (myvenv) ~$ python3 -m pip install --upgrade pip
 ```
-그런 다음 `pip install django~=1.11.0`(Django를 설치하려면 물결표 뒤에 등호 :`~=`)를 입력해 장고를 설치하세요.
+그런 다음 `pip install django~=2.0.0`(Django를 설치하려면 물결표 뒤에 등호 :`~=`)를 입력해 장고를 설치하세요.
 
 {% filename %}command-line{% endfilename %}
 ```
-(myvenv) ~$ pip install django~=1.11.0
-Collecting django~=1.11.0
-  Downloading Django-1.11.3-py2.py3-none-any.whl (6.8MB)
-Installing collected packages: django
-Successfully installed django-1.11.3
+(myvenv) ~$ pip install django~=2.0.0
+Collecting Django~=2.0.6
+  Downloading Django-2.0.6-py3-none-any.whl (7.1MB)
+Installing collected packages: Django
+Successfully installed Django-2.0.6
 ```
 
 <!--sec data-title="Windows" data-id="django_err_windows" data-collapse=true ces-->

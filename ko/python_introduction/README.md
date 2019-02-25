@@ -1,3 +1,5 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # 파이썬 시작하기
 
 > **Note** 이 장의 일부는 [Geek Girls Carrots 튜토리얼](https://github.com/ggcarrots/django-carrots)을 기초로 작성되었습니다. 
@@ -134,7 +136,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 새로운 것을 배워봅시다. 총 글자 수도 알아냈듯이 숫자 수도 알 수 있을까요? `len(304023)`을 입력하고 `엔터`를 입력하세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{warning_icon}}command-line{% endfilename %}
 ```python
 >>> len(304023)
 Traceback (most recent call last):
@@ -142,7 +144,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-첫 번째 에러가 나타났어요! "int"(정수)객체는 길이가 없기 때문이지요. 이제 어떻게 할 수 있을까요? 숫자(number)를 문자열(String)로 바꿔 쓸 수 있지 않을까요? 문자열은 길이를 갖고 있으니까요, 그렇죠?
+첫 번째 에러가 나타났어요! 여기서 {{warning_icon}} 아이콘은 `이 코드는 여러분이 예상하는 대로 실행되지 않을 것입니다.`를 의미합니다. (의도적으로 만들어낸 것이라도) 실수도 배움의 중요한 과정 중 하나랍니다!
+
+"int"(정수)객체는 길이가 없기 때문이지요. 이제 어떻게 할 수 있을까요? 숫자(number)를 문자열(String)로 바꿔 쓸 수 있지 않을까요? 문자열은 길이를 갖고 있으니까요, 그렇죠?
 
 {% filename %}command-line{% endfilename %}
 ```python
@@ -207,7 +211,7 @@ TypeError: object of type 'int' has no len()
 
 그런데 만약 잘못된 변수명을 입력하면 어떻게 나올까요?
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{warning_icon}}command-line{% endfilename %}
 ```python
 >>> city = "Tokyo"
 >>> ctiy
@@ -373,7 +377,7 @@ Ola
 
 만약 파이썬에 키(key)에 대응하는 값이 없다면 어떻게 될까요? 그럼 테스트 해봅시다!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{warning_icon}}command-line{% endfilename %}
 ```python
 >>> participant['age']
 Traceback (most recent call last):
@@ -500,7 +504,7 @@ True
 
 "사과를 오렌지에 비교하기"라는 말을 들어본 적이 있나요? 파이썬에게 시켜봅시다.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{warning_icon}}command-line{% endfilename %}
 ```python
 >>> 1 > 'django'
 Traceback (most recent call last):
@@ -647,7 +651,7 @@ if 3 > 2:
 
 저장하고 실행하면 아래와 같은 에러가 보일 거에요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{warning_icon}}command-line{% endfilename %}
 ```
 $ python3 python_intro.py
 File "python_intro.py", line 2
@@ -827,7 +831,7 @@ hi()
 
 > **Note**: `if`문 안의 `print()`함수는 4칸을 들여쓰기 했습니다. 조건문에 해당하는 경우에만 실행되게 만들기 위해서에요. 이제 어떻게 되는지 보세요.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{warning_icon}}command-line{% endfilename %}
 ```
 $ python3 python_intro.py
 Traceback (most recent call last):

@@ -14,6 +14,8 @@
     [이수진](https://github.com/sujinleeme)
 > - 3차 : 2017. 5. 19.
     [이수진](https://github.com/sujinleeme)
+> - 4차 : 2019. 2. 5. 
+	[이재열](https://github.com/malkoG), [정수민](https://github.com/soomin-jeong)
 
 
 ## 환영합니다
