@@ -33,11 +33,11 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
     你的用户名：~工作区 $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+底部的区域是你的终端。你可以用终端来向远程的cloude9计算机发送指示。你可以调整该窗口使之更大。
 
 ### 虚拟环境
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+虚拟环境（也称virtualenv）就像个私人的盒子，我们可以将正在做的项目中有用的计算机代码储存进去。 We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
