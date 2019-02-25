@@ -60,13 +60,13 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+（请注意，在最后一行，我们使用一个倾斜，后面跟着一份等号： `~=`.）
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+创建一个[GitHub](https://github.com)账户
 
-### PythonAnywhere
+### Python无处不在
 
 The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
