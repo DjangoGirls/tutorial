@@ -16,7 +16,7 @@ Bootstrap是最受欢迎的前端框架之一，可以被用来开发美观的�
 
 ## 安装 Boostrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+要安装Bootstrap，请在代码编辑器中打开 `.html`文件并将其添加到 `<head>`部分：
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+这不会将任何文件添加到你的项目中。它只是指向在互联网上已经存在的文件。接着，你只需要打开你的网站并刷新页面。你看！
 
 ![图 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ This doesn't add any files to your project. It just points to files that exist o
 
 ### Django的静态文件放在哪儿呢？
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django已经知道哪里去寻找内设的 "admin" 应用的静态文件。现在我们只需为我们的应用增加一些静态文件， `blog`.
 
 我们在blog应用的目录下创建一个名为`static`的文件夹，创建后目录结构如下：
 
@@ -66,7 +66,7 @@ Django会自动找出你项目文件夹中所有名为“static”的文件夹�
 
 在这里，我们不会太深入的去学习CSS的相关知识。如果你想了解更多内容，可以参考本页末尾提供的CSS免费课程的建议。
 
-但我们至少还会涉及到一些CSS的代码。 Maybe we could change the color of our headers? 为了理解颜色，计算机使用了一些特殊的代码。 这些代码是由`#`开始，后面跟着六位A到F的字母或0到9的数字。 例如，蓝色的代码是`#0000FF`。 你可以在这个网站找到不同颜色的代码：http://www.colorpicker.com/。 你也可以使用一些[预定义颜色](http://www.w3schools.com/colors/colors_names.asp)，比如`red`和`green`.
+但我们至少还会涉及到一些CSS的代码。 让我们尝试改变网页标题的颜色？ 为了理解颜色，计算机使用了一些特殊的代码。 这些代码是由`#`开始，后面跟着六位A到F的字母或0到9的数字。 例如，蓝色的代码是`#0000FF`。 你可以在这个网站找到不同颜色的代码：http://www.colorpicker.com/。 你也可以使用一些[预定义颜色](http://www.w3schools.com/colors/colors_names.asp)，比如`red`和`green`.
 
 在你的`blog/static/css/blog.css`文件中添加下面的代码:
 
