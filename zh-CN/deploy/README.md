@@ -113,7 +113,7 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 {% filename %}command-line{% endfilename %}
 
-    Counting objects: 6, done.
+    计数对象：6, 完成。
     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
     Total 3 (delta 0), reused 0 (delta 0)
     To https://github.com/ola/my-first-blog.git
