@@ -151,16 +151,16 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 这应该列印出一些内容，例如 `收集 pythonanywhere`，并最终以 `Successfully installed (...) pythonanywhere- (...)`结束.
 
-现在我们运行帮助来自动配置我们在GitHub的应用程序。 Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+现在我们运行帮助来自动配置我们在GitHub的应用程序。 在 PythonAnywhere 控制台输入以下(不要忘记用你在GitHub用户名来代替 `<your-github-username>`, 以便URL 与GitHub克隆的URL匹配）：
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere 命令行{% endfilename %}
 
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+当你看到其运行时，你会看到它所做的事情：
 
-- Downloading your code from GitHub
+- 从GitHub下载你的代码
 - Creating a virtualenv on PythonAnywhere, just like the one on your own computer
 - Updating your settings file with some deployment settings
 - Setting up a database on PythonAnywhere using the `manage.py migrate` command
