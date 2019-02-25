@@ -26,11 +26,11 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 2. 创建一个用户
 3. 点击 *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+现在你应该看见一个拥有侧边栏，一个包含文本的大主窗口，以及一个位于底部的小窗口-看起来像这样：
 
 {% filename %}bash{% endfilename %}
 
-    yourusername:~/workspace $
+    你的用户名：~工作区 $
     
 
 This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
