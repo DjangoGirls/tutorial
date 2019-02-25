@@ -142,16 +142,16 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 > **注意** PythonAnywhere 基于 Linux系统，因此如果你使用 Windows系统，控制台将会和你本地电脑上的略有不同。
 
-在 pythonanywhere 上部署 web 应用程序涉及从 github 中提取代码, 然后配置 pythonanywhere 以识别它并开始将其作为 web 应用程序提供。 There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+在 pythonanywhere 上部署 web 应用程序涉及从 github 中提取代码, 然后配置 pythonanywhere 以识别它并开始将其作为 web 应用程序提供。 有许多手工操作方式，但是 PythonAnywhere已经提供了帮助工具为你代劳。 让我们先安装它：
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere 命令行{% endfilename %}
 
     $ pip3.6 install --user pythonanywhere
     
 
-That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+这应该列印出一些内容，例如 `收集 pythonanywhere`，并最终以 `Successfully installed (...) pythonanywhere- (...)`结束.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+现在我们运行帮助来自动配置我们在GitHub的应用程序。 Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
