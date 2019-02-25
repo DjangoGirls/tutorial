@@ -37,7 +37,7 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 
 ### 虚拟环境
 
-虚拟环境（也称virtualenv）就像个私人的盒子，我们可以将正在做的项目中有用的计算机代码储存进去。 We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+虚拟环境（也称virtualenv）就像个私人的盒子，我们可以将正在做的项目中有用的计算机代码储存进去。 我们使用虚拟环境来区分开我们不同项目里所用的各种各样代码，以免不同项目的代码相互混淆。
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
