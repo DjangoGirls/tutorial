@@ -7,22 +7,22 @@ Cloude IDE (云集成开发环境）是为你提供代码编辑器并可以访�
 #### PaizaCloud 云集成开发环境
 
 1. 转到 [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+2. 注册一个账户
+3. 点击*New Server*
+4. 点击“终端‘’按钮（在窗口的左侧）
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+现在你可看见一个带有侧边栏、左边按钮的界面。 点击“Terminal”按钮打开终端窗口，如下所示：
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗口大小或者最大化窗口，令其显示更大。
 
-#### AWS Cloud9
+#### AWS Cloud9（AWS云开发9）
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
+1. 转到 [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. Sign up for an account
 3. Click *Create Environment*
 
