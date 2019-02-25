@@ -39,17 +39,17 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 
 虚拟环境（也称virtualenv）就像个私人的盒子，我们可以将正在做的项目中有用的计算机代码储存进去。 我们使用虚拟环境来区分开我们不同项目里所用的各种各样代码，以免不同项目的代码相互混淆。
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+在cloude9的终端界面的底部，进行以下操作：
 
 {% filename %}Cloud 9{% endfilename %}
 
-    sudo apt update
-    sudo apt install python3.6-venv
+    sudo apt 更新
+    sudo apt 安装 python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+如果仍然行不通，求助你的教练获得帮助。
 
-Next, run:
+下一步，运行：
 
 {% filename %}Cloud 9{% endfilename %}
 
