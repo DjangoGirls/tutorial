@@ -126,17 +126,17 @@ Prawdopodobnie ujrzysz coś podobnego na swoim komputerze. Kiedy otwierasz wiers
 
 ### Dowiedz się więcej o komendach
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Wiele poleceń, które można wpisać w wierszu polecenia ma wbudowaną funkcję pomocy, który można wyświetlić i przeczytać! Na przykład, aby dowiedzieć się więcej na temat polecenia cd:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X i Linux posiada polecenie `man`, który wyświetla Ci pomoc dla danego polecenia. Spróbuj `man pwd` i zobacz, co mówi lub umieścić `man` przed innim poleceniem aby zobaczyć jego pomoc. Wynikiem `man` jest normalna strona. Użyj spacji, aby przejść do następnej strony i `q` rzucić, patrząc na pomoc.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Dodawanie przyrostka`/?` do większości poleceń, powoduje, że zostają wydrukowane strony pomocy. Konieczne może być przewinięcie okna polecenia aby zobaczyć to wszystko. Spróbuj `cd /?`.
 
 <!--endsec-->
 
