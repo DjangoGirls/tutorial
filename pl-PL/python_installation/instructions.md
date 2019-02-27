@@ -8,24 +8,24 @@ Django został w napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić c
 
 Najpierw sprawdź, czy na komputerze działa wersja 32-bitowa lub 64-bitowa wersja systemu Windows, w linijce "Typ systemu" w oknie o informacjach o systemie. Aby przejść do tego okna wypróbuj jedną z następujących metod:
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
+* Wciśnij klawisz Windows i klawisz Pause/Break w tym samym czasie
+* Otwórz panelu sterowania z menu systemu Windows, a następnie przejdź do system & zabezpieczenia, następnie System
+* Wciśnij przycisk Windows, a następnie przejdź do Settings >System >About
 
 Możesz ściągnąć Pythona dla Windowsa ze strony https://www.python.org/downloads/windows/. Kliknij w link "Latest Python 3 Release - Python x.x.x". Jeżeli twój komputer pracuje na **64-bitowej** wersji Windowsa, ściągnij **Windows x86-64 executable installer**. W innym wypadku ściągnij **Windows x86 executable installer**. Po ściągnięciu instalatora, powinnaś go uruchomić (klikając dwukrotnie w niego) i postępować według wyświetlanych instrukcji.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Jedna rzecz na którą trzeba uważać: Podczas instalacji zauważysz okno oznaczona jako "Setup". Upewnij się, że zaznaczyłeś opcję "Add Python 3.6 to PATH" lub ''Add Python to your environment variables" i kliknąłeś "Install Now", jak pokazano tutaj (może to wyglądać trochę inaczej, jeśli instalujesz inną wersję).
 
 ![Nie zapomnij dodać Pythona do ścieżki systemowej (ang. Path)](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Kiedy instalacja się zakończy, możesz zobaczyć okienko dialogowe z linkiem, który możesz śledzić aby dowiedzieć się więcej o Pythonie lub wersji, którą zainstalowałeś. Zamknij lub anuluj to okienko - nauczysz się więcej w tym tutorialu!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Uwaga: Jeżeli używasz starszej wersji Windowsa (7, Vista lub jakikolwiek starszy) i podczas instalacji Python 3.6.x dostaniesz błąd, możesz:
 
-1. install all Windows Updates and try to install Python again; or
+1. zainstalować wszystkie uaktualnienia systemu Windows a spróbować instalacji Pythona jeszcze raz; lub
 2. zainstalować [starszą wersję Pythona](https://www.python.org/downloads/windows/), np. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Jeżeli zainstalujesz starszą wersję Pythona, ekrany instalatora mogą wyglądać nieznacznie inaczej niż pokazane wyżej. Upewnij się, że przewinęłaś do "Add python.ext to Path", kliknęłaś przycisk po lewej i wybrałaś "Will be installed on local hard drive":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -36,7 +36,7 @@ data-collapse=true ces-->
 
 > **Uwaga** Zanim zainstalujesz Pythona na OS X, musisz się upewnić, że ustawienia twojego Maca pozwolą na instalację pakietów, które nie pochodzą z App Store'a. Przejdź do Preferencji systemowych (znajdziesz je w folderze Aplikacje), kliknij "Ochrona i prywatność" i przejdź do zakładki "Ogólne". Jeżeli w "Dopuszczaj aplikacje pobrane z:" jest ustawione na "App Store", zmień to na "App Store i od zidentyfikowanych deweloperów".
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Przejdź na stronę https://www.python.org/downloads/release/python-361/ i pobierz instalator Pythona:
 
 * Pobierz plik o nazwie *Mac OS X 64-bit/32-bit installer*,
 * Kliknij dwukrotnie na *python-3.6.1-macosx10.6.pkg*, by uruchomić instalator.
@@ -46,7 +46,7 @@ You need to go to the website https://www.python.org/downloads/release/python-36
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Jest bardzo prawdopodobne, że masz już zainstalowanego Pythona wraz z systemem. Aby się upewnić (a także sprawdzić jego wersję) otwórz konsolę i wpisz następujące polecenie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -54,13 +54,13 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a newer version, you can install it as follows:
+Jeżeli masz zainstalowaną inną wersję Pythona, np. 3.6.0, to nie ma potrzeby, byś dokonywała aktualizacji. Jeżeli nie masz zainstalowanego Pythona lub chciałabyś zainstalować go w innej wersji, skorzystaj z jednego z poniższych sposobów:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Wpisz w konsoli poniższe polecenie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,21 +72,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Użyj następującego polecenia w konsoli:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Jeżeli używasz starszej wersji Fedory, możesz dostać wiadomość o błędzie, że polecenie `dnf` nie zostało znalezione. W takim wypadku zamiast tego użyj polecenia `yum`.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Użyj następującego polecenia w konsoli:
 
 {% filename %}command-line{% endfilename %}
 
@@ -95,7 +95,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz wiersz polecenia i uruchom polecenie `python3`:
 
 {% filename %}command-line{% endfilename %}
 
