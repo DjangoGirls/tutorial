@@ -195,7 +195,7 @@ Przejdźmy teraz do naszego folderu Pulpit:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Zapamiętaj, że katalog "Desktop" może być przetłumaczony na język twojego systemu Linux. W takim przypadku, musisz wymienić `Desktop` na przetłumaczoną nazwę; na przykład dla niemieckiego tłumaczenia `Schreibtisch`.
 
 <!--endsec-->
 
@@ -230,7 +230,7 @@ Sprawdźmy, czy coś się faktycznie zmieniło:
 
 <!--endsec-->
 
-Here it is!
+Tak, to tutaj!
 
 > PRO tip: gdy wpiszesz `cd D` i wciśniesz przycisk `Tab` na klawiaturze, wiersz polecenia automatycznie uzupełni resztę nazwy, dzięki czemu będziesz mogła nawigować szybciej. Jeżeli istnieje więcej niż jeden folder o nazwie zaczynającej się na "D", wciśnij `Tab` dwukrotnie, aby wyświetlić listę możliwości.
 
@@ -294,15 +294,15 @@ Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` s
 
 <!--endsec-->
 
-Congrats! :)
+Gratulacje! :)
 
 * * *
 
 ### Sprzątanie
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Nie chcemy zostawić bałaganu, a zatem wyrzućmy wszystko, co do tej pory zrobiłyśmy.
 
-First, we need to get back to Desktop:
+Najpierw musimy wrócić do Pulpitu:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -322,9 +322,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Wykonanie `cd` wraz z `..` przeniesie Cię do katalogu nadrzędnego (czyli tego, w którym znajduje się Twój aktualny katalog).
 
-Check where you are:
+Sprawdź, gdzie jesteś:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -346,15 +346,15 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Teraz czas usunąć katalog `cwiczenie`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Uwaga**: Usuwanie plików za pomocą `del`, `rmdir` lub `rm` jest nieodwracalne. To znaczy, że *Twoje pliki zostaną bezpowrotnie utracone*! Tak więc bądź ostrożna z tymi poleceniami.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ rm -r practice
+    $ rm -r cwiczenie
     
 
 <!--endsec-->
@@ -363,13 +363,13 @@ Now time to delete the `practice` directory:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+    > rmdir /S cwiczenie
+    cwiczenie, Are you sure <Y/N>? Y
     
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Gotowe! Dla pewności, że został on naprawdę usunięty, sprawdźmy to:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -391,7 +391,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Wyjście
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+To na razie tyle! Możesz teraz spokojnie zamknąć wiersz polecenia. To co, zrobimy to jak prawdziwy haker? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -411,11 +411,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Fajnie, nie? :)
 
 ## Podsumowanie
 
-Here is a summary of some useful commands:
+Oto podsumowanie przydatnych poleceń:
 
 | Polecenie (Windows) | Polecenie (Mac OS / Linux) | Opis                                | Przykład                                            |
 | ------------------- | -------------------------- | ----------------------------------- | --------------------------------------------------- |
@@ -430,10 +430,10 @@ Here is a summary of some useful commands:
 | rmdir /S            | rm -r                      | usuwanie katalogu                   | **rm -r testdirectory**                             |
 | [CMD] /?            | man [CMD]                  | uzyskiwanie pomocy na temat komendy | **cd /?** (Windows) lub **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu polecenia, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Jeżeli temat Cię zainteresował, to [ss64.com](http://ss64.com) zawiera kompletny spis poleceń dla wszystkich systemów operacyjnych.
 
 ## Gotowa?
 
-Let's dive into Python!
+No to poznajmy Pythona!
