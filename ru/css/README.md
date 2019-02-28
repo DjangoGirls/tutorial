@@ -168,7 +168,7 @@ body {
 <link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,cyrillic" rel="stylesheet" type="text/css">
 ```
 
-Как и ранее, проверь порядок и вставь эту строку перед ссылкой на `blog/statid/css/blog.css`. Эта строка импортирует шрифт под названием *Lobster* из шрифтов Google (https://www.google.com/fonts).
+Как и ранее, проверь порядок и вставь эту строку перед ссылкой на `blog/static/css/blog.css`. Эта строка импортирует шрифт под названием *Lobster* из шрифтов Google (https://www.google.com/fonts).
 
 Теперь добавь строку `font-family: 'Lobster';` в CSS файле `blog/static/css/blog.css` внутри блока определения стиля `h1 a` (код помещается между скобками `{` и `}`) и обнови страницу:
 
