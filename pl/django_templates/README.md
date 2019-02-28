@@ -58,7 +58,7 @@ Działa! Ale chcemy, aby posty były wyświetlane jak statyczne posty, które st
 {% for post in posts %}
     <div>
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -92,14 +92,16 @@ Dobrze byłoby sprawdzić, czy twoja strona wciąż będzie działała w publicz
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd $USER.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-* Na koniec przeskocz do strony [Web](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**. (Aby dotrzeć do innych stron PythonAnywhere przez konsolę, użyj przycisku menu w prawym górnym rogu.) Twoja aktualizacja powinna być już pod adresem https://yourname.pythonanywhere.com - sprawdź to w swojej przeglądarce! Jeśli posty na blogu w witrynie PythonAnywhere nie pasują do postów znajdujących się na blogu hostowane na lokalnym serwerze, jest to OK. Bazy danych na komputerze lokalnym i Python Anywhere nie synchronizują się z resztą plików.
+(pamiętaj, by podmienić `<your-pythonanywhere-domain>` na Twoją właściwą nazwę użytkownika PythonAnywhere, bez ostrych nawiasów)
 
-Gratulacje! Teraz możesz dodać nowy wpis do swojego administratora Django (pamiętaj, aby dodać publish_date!). Upewnij się, że jesteś administratorem Django dla swojej strony pythonanywhere, https://yourname.pythonanywhere.com/admin. Następnie odśwież stronę, aby sprawdzić, czy pojawia się tam wiadomość.
+* Na koniec przeskocz do strony [Web](https://www.pythonanywhere.com/web_app_setup/) i naciśnij **Reload**. Aby dotrzeć do innych stron PythonAnywhere przez konsolę, użyj przycisku menu w prawym górnym rogu. Twoja zaktualizowana aplikacja powinna być już dostępna pod adresem https://subdomain.pythonanywhere.com - sprawdź to w swojej przeglądarce! Jeśli posty na blogu w witrynie PythonAnywhere nie są takie same jak posty znajdujące się na lokalnym serwerze, jest to OK. Bazy danych na komputerze lokalnym i PythonAnywhere nie synchronizują się z resztą plików.
+
+Gratulacje! Teraz śmiało, spróbuj dodać nowy post w panelu administracyjnym Django (pamiętaj, aby dodać datę publikacji (published_date)). Upewnij się, że jesteś w zalogowana jako administrator w Django dla Twojej witryny PythonAnywhere, https://subdomain.pythonanywhere.com/admin. Następnie odśwież stronę, aby zobaczyć, czy post się pojawił.
 
 Poszło jak z płatka? Jesteśmy dumne! Odejdź na chwilkę od komputera - zasłużyłaś na przerwę! :)
 

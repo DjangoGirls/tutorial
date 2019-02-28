@@ -35,8 +35,8 @@ Aby móc się zalogować, musisz utworzyć konto administratora (*superuser*) - 
 
 Po wyświetleniu komunikatu, wpisz swoją nazwę użytkownika (małymi literami, bez spacji), adres e-mail i hasło. ** Nie martw się, że nie widzisz hasła, które wpisujesz - tak powinno być.** Wpisz je i naciśnij klawisz `Enter`, aby kontynuować. Dane wyjściowe powinny wyglądać tak (gdzie nazwa użytkownika i adres e-mail powinny być Twoje):
 
-    Username: admin
-    Email address: admin@admin.com
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.

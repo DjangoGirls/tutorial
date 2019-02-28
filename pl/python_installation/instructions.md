@@ -2,23 +2,27 @@
 > 
 > Niniejszy podrozdział powstał w oparciu o kurs Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django jest napisane w Pythonie. Musimy posiadać Pythona, by zrobić cokolwiek w Django. Zacznijmy od jego instalacji! Chcemy zainstalować Python 3.6, więc jeżeli posiadasz jakąkolwiek wcześniejszą wersję, będziesz musiała ją uaktualnić.
+Framework Django został napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić cokolwiek w Django. Zacznijmy zatem od zainstalowania go! Chcemy zainstalować Pythona 3.6, więc jeżeli posiadasz jakąkolwiek wcześniejszą wersję, będziesz musiała ją uaktualnić. Jeśli masz już w wersji 3.4 lub nowszej, powinno być dobrze.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Na początku sprawdź, czy twój komputer działa na 32-bitowej czy 64-bitowej wersji Windowsa, poprzez wciśnięcie kombinacji przycisków Windows + Pause/Break, które otworzą Właściwości systemu - sprawdź w linii "Typ systemu". Możesz ściągnąć Pythona dla Windowsa ze strony https://www.python.org/downloads/windows/. Kliknij w link "Latest Python 3 Release - Python x.x.x". Jeżeli twój komputer pracuje na **64-bitowej** wersji Windowsa, ściągnij **Windows x86-64 executable installer**. W innym wypadku ściągnij **Windows x86 executable installer**. Po ściągnięciu instalatora, powinnaś go uruchomić (klikając dwukrotnie w niego) i postępować według wyświetlanych instrukcji.
+Najpierw sprawdź, czy na komputerze działa 32- lub 64-bitowa wersja systemu Windows, w linijce "Typ systemu" w oknie o informacjach o systemie. Aby przejść do tego okna, wypróbuj jedną z następujących metod:
 
-Na jedną rzecz będziesz musiała uważać: Podczas instalacji zauważysz ekran oznaczony jako "Setup". Upewnij się, że zaznaczyłaś checkbox "Add Python 3.6 to PATH" oraz kliknęłaś "Install Now", tak jak tutaj:
+* Wciśnij klawisz Windows i klawisz Pause/Break w tym samym czasie
+* Otwórz panel sterowania z menu systemu Windows, a następnie przejdź do Zabezpieczenia Systemu, a następnie System
+* Wciśnij przycisk Windows, a następnie przejdź do Settings>System>About
+
+Możesz ściągnąć Pythona dla Windowsa ze strony https://www.python.org/downloads/windows/. Kliknij w link "Latest Python 3 Release - Python x.x.x". Jeżeli Twój komputer pracuje na **64-bitowej** wersji Windowsa, ściągnij **Windows x86-64 executable installer**. W innym wypadku ściągnij **Windows x86 executable installer**. Po ściągnięciu instalatora, powinnaś go uruchomić (klikając dwukrotnie w niego) i postępować według wyświetlanych instrukcji.
+
+Jedna rzecz, na którą trzeba uważać: podczas instalacji zauważysz okno zaznaczone jako "Setup". Upewnij się, że zaznaczyłaś opcję "Add Python 3.6 to PATH" lub ''Add Python to your environment variables" i kliknęłaś "Install Now", jak pokazano tutaj (może to wyglądać trochę inaczej, jeśli instalujesz inną wersję).
 
 ![Nie zapomnij dodać Pythona do ścieżki systemowej (ang. Path)](../python_installation/images/python-installation-options.png)
 
-W nadchodzących krokach, będziesz używać "Wiersza polecenia" Windowsa (o którym też Ci zaraz opowiemy). Na tę chwilę, jeżeli potrzebujesz wykonać jakąś komendę, przejdź do menu Start i wpisz "Wiersz polecenia" w pole wyszukiwania. (Na starszych wersjach Windowsa możesz uruchomić "Wiersz polecenia" wyszukując w menu Start → System → Wiesz polecenia.) Możesz też przytrzymać klawisz Windows wciskając jednocześnie przycisk "R" do momentu pojawienia się okna "Uruchamianie". W celu otworzenia Wiersza polecenia, wpisz "cmd" i wciśnij przycisk enter w oknie "Uruchamianie".
+Kiedy instalacja się zakończy, możesz zobaczyć okienko dialogowe z linkiem, który możesz śledzić, aby dowiedzieć się więcej o Pythonie lub wersji, którą zainstalowałaś. Zamknij lub anuluj to okienko - nauczysz się więcej w tym tutorialu!
 
-![Wpisz "cmd" w oknie "Uruchom""](../python_installation/images/windows-plus-r.png)
+Uwaga: jeżeli używasz starszej wersji Windowsa (7, Vista lub jakikolwiek starszy) i podczas instalacji Python 3.6.x dostaniesz błąd, możesz:
 
-Uwaga: Jeżeli używasz starszej wersji Windowsa (7, Vista lub jakikolwiek starszy) i podczas instalacji Python 3.6.x dostaniesz błąd, możesz:
-
-1. zainstalować wszystkie uaktualnienia systemu Windows a spróbować instalacji Pythona 3.6 jeszcze raz; lub
+1. zainstalować wszystkie uaktualnienia systemu Windows i spróbować instalacji Pythona 3.6 jeszcze raz; lub
 2. zainstalować [starszą wersję Pythona](https://www.python.org/downloads/windows/), np. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
 Jeżeli zainstalujesz starszą wersję Pythona, ekrany instalatora mogą wyglądać nieznacznie inaczej niż pokazane wyżej. Upewnij się, że przewinęłaś do "Add python.ext to Path", kliknęłaś przycisk po lewej i wybrałaś "Will be installed on local hard drive":
@@ -60,7 +64,7 @@ Wpisz w konsoli poniższe polecenie:
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo apt install python3.6
+    $ sudo apt install python3
     
 
 <!--endsec-->
@@ -99,7 +103,9 @@ Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz wiersz polecenia
     Python 3.6.1
     
 
-**Uwaga:** Jeżeli pracujesz na Windowsie i dostajesz wiadomość o błędzie, że `python3` nie został znaleziony, spróbuj użyć `python` (bez `3`) oraz sprawdź, czy być może w taki sposób uruchomisz Pythona 3.6.
+Pokazana wersja może różnić się od 3.6.1 - powinna pasować do wersji, którą zainstalowałeś.
+
+**Uwaga:** jeżeli pracujesz na Windowsie i dostajesz wiadomość o błędzie, że `python3` nie został znaleziony, spróbuj użyć `python` (bez `3`) oraz sprawdź, czy być może w taki sposób uruchomisz Pythona 3.4.
 
 * * *
 

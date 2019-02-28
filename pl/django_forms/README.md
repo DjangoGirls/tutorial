@@ -155,7 +155,7 @@ OK. Podsumujmy, jak powinien wyglądać kod HTML w pliku `post_edit.html`:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h1>New post</h1>
+    <h2>New post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
         <button type="submit" class="save btn btn-default">Save</button>
@@ -435,15 +435,15 @@ Dobrze byłoby wiedzieć, że nasza witryna nadal działa na PythonAnywhere, pra
 
 * Potem, w konsoli [PythonAnywhere Bash](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Pamiętaj by podmienić `<your-pythonanywhere-username>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
+(Pamiętaj by podmienić `<your-pythonanywhere-domain>` na Twoją właściwą nazwę użytkownika PythonAnywhere, bez nawiasów ostrokątnych).
 
-* Nareszcie przeskakujemy do do ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (użyj przycisku menu w prawym górnym rogu konsoli) i naciśnij **Reload**. Odśwież swoj blog https://yourname.pythonanywhere.com, aby zobaczyć zmiany.
+* Nareszcie przeskakujemy do do ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (użyj przycisku menu w prawym górnym rogu konsoli) i naciśnij **Reload**. Odśwież swój blog https://yourname.pythonanywhere.com, aby zobaczyć zmiany.
 
 I to już wszystko! Gratulacje :)
