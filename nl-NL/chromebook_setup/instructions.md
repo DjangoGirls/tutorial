@@ -37,7 +37,7 @@ This bottom area is your terminal. You can use the terminal to send instructions
 
 ### Virtuele omgeving
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Een virtuele omgeving (ook wel virtualenv genoemd) is als een privé map waar we bruikbare computercodes kunnen bewaren voor het project waar we aan werken. We gebruiken ze om delen van de code voor onze diverse projecten gesepareerd te bewaren zodat ze niet in de war raken met andere projecten.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Als dit nog steeds niet werkt, vraag dan je coach om hulp.
 
-Next, run:
+Vervolgens voer uit:
 
 {% filename %}Cloud 9{% endfilename %}
 
