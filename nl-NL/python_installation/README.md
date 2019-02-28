@@ -1,6 +1,6 @@
-# Let’s start with Python
+# Laten we beginnen met Python
 
-We're finally here!
+We zijn er eindelijk!
 
 But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
 
