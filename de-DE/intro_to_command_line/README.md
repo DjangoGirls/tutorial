@@ -96,7 +96,7 @@ Jedes Betriebssystem hat einen geringfügig anderen Bestand an Befehlen für die
 
 ### Aktuelles Verzeichnis
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Es wäre schön zu sehen, wo wir uns befinden, oder? Lass uns nachsehen. Gib diesen Befehl in die Konsole ein und bestätige ihn mit `Enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -122,29 +122,29 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Du wirst wahrscheinlich etwas Ähnliches auf deinem Gerät sehen. Wenn du die Konsole öffnest, befindest du dich normalerweise im Heimverzeichnis deines Benutzers.
 
 * * *
 
 ### Mehr über ein Kommando lernen
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Viele Befehle, die du in der Kommandozeile nutzen kannst, haben eine eingebaute Hilfe, die du anzeigen und lesen kannst! Zum Beispiel kannst du etwas über den eben verwendeten Befehl lernen:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X und Linux haben einen `man`-Befehl, mit dem du die Hilfe über die Kommandos aufrufen kannst. Gib `man pwd` ein und schau, was angezeigt wird oder setzte `man` vor andere Kommandos und sieh dir deren Hilfe an. Das Ergebnis von `man` wird in der Regel seitenweise ausgegeben. Du kannst die Leertaste benutzen, um auf die nächste Seite zu gelangen und `q` (für engl. "quit", was "verlassen"/"rausgehen" heisst), um die Hilfeseiten zu schließen.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Wenn du Windows benutzt, dann wird dir der Suffix `/?` für die meisten Kommandos die Hilfeseite ausgeben. Gegebenenfalls musst du nach oben scrollen, um alles zu sehen. Versuch es mal mit `cd /?`.
 
 <!--endsec-->
 
 ### Anzeigen von Dateien und Unterordnern
 
-So what's in it? It'd be cool to find out. Let's see:
+Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden. Lass uns mal schauen:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -178,7 +178,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 ### Wechseln des Verzeichnisses
 
-Now, let's go to our Desktop directory:
+Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -196,7 +196,7 @@ Now, let's go to our Desktop directory:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Wenn dein Linux-Benutzerkonto auf Deutsch eingestellt ist, kann es sein, dass auch der Name des Desktop-Verzeichnisses übersetzt ist. Wenn dem so ist, musst du im obigen Befehl `Desktop` durch den übersetzten Verzeichnisnamen `Schreibtisch` ersetzen.
 
 <!--endsec-->
 
@@ -209,7 +209,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -231,7 +231,7 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Passt!
 
 > Profi-Tipp: Wenn du `cd D` tippst und dann `tab` auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit "D" beginnt, drücke die `tab`-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.
 
@@ -239,7 +239,7 @@ Here it is!
 
 ### Erstellen eines Verzeichnisses
 
-How about creating a practice directory on your desktop? You can do it this way:
+Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -259,7 +259,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :)
 
 > Profi-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die `Pfeil aufwärts`- und `Pfeil abwärts`-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.
 
@@ -267,7 +267,7 @@ This little command will create a folder with the name `practice` on your deskto
 
 ### Übung!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practice`-Ordner ein Verzeichnis namens `test`. (Verwende dazu die Kommandos `cd` und `mkdir`.)
 
 #### Lösung:
 
@@ -295,15 +295,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Glückwunsch! :)
 
 * * *
 
 ### Aufräumen
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Wir wollen kein Chaos hinterlassen, also lass uns das bislang Geschaffene wieder löschen.
 
-First, we need to get back to Desktop:
+Zuerst müssen wir zurück zum Desktop wechseln:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -323,9 +323,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Durch Verwendung von `..` mit dem `cd` Kommando wechselst du von deinem aktuellen Verzeichnis zum übergeordneten Verzeichnis (dies ist das Verzeichnis, das das aktuelle Verzeichnis enthält).
 
-Check where you are:
+Schau nach, wo du gerade bist:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -347,7 +347,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
 
 > **Achtung**: Wenn du Daten mit `del`, `rmdir` oder `rm` löschst, kannst du das nicht mehr rückgängig machen, das bedeutet, *die gelöschten Dateien sind für immer weg*! Sei also sehr vorsichtig mit diesem Befehl.
 
@@ -370,7 +370,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -392,7 +392,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Beenden
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -412,11 +412,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Cool, was? :)
 
 ## Zusammenfassung
 
-Here is a summary of some useful commands:
+Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 
 | Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                    | Beispiel                                             |
 | ---------------- | ----------------------- | ------------------------------- | ---------------------------------------------------- |
