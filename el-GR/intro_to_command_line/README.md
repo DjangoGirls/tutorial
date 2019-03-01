@@ -16,7 +16,9 @@
 
 ## Άνοιγμα της γραμμής εντολών
 
-To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
+To start some experiments we need to open our command-line interface first.
+
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
