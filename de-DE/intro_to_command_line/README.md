@@ -16,15 +16,17 @@ Das Fenster, welches gewöhnlich die **Kommandokonsole** (command line) oder **K
 
 ## Öffnen der Konsole
 
-Um mit ein paar Experimenten zu beginnen, müssen wir erstmal die Kommandozeile öffnen. {% include "/intro_to_command_line/open_instructions.md" %}
+To start some experiments we need to open our command-line interface first.
+
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Eingabeaufforderung (Prompt)
 
-Du solltest nun ein weißes oder schwarzes Fenster sehen, das auf deine Anweisungen wartet.
+You now should see a white or black window that is waiting for your commands.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-Auf einem Mac- oder Linux-Rechner siehst du wahrscheinlich ein `$`, also so:
+If you're on Mac or Linux, you probably see a `$`, like this:
 
 {% filename %}command-line{% endfilename %}
 
@@ -35,28 +37,28 @@ Auf einem Mac- oder Linux-Rechner siehst du wahrscheinlich ein `$`, also so:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Auf einem Windows-Rechner siehst du wahrscheinlich ein `>`, so hier:
+On Windows, you probably see a `>`, like this:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Schau 'mal in den Linux-Abschnitt hier obendrüber -- so etwas wirst du wieder im Abschnitt PythonAnywhere später im Tutorial antreffen.
+Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
 
 <!--endsec-->
 
-Vor jedem Kommando wird das Zeichen `$` oder `>` und ein Leerzeichen vorangestellt, aber du musst das nicht hinschreiben. Dein Computer macht das für dich. :)
+Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
 
 > Ein kleiner Hinweis: Falls du etwas in der Art wie `C:\Users\ola>` oder `Olas-MacBook-Air:~ ola$` sehen solltest, ist das auch 100%ig korrekt.
 
-Der Teil bis und einschließlich `$` oder `>` heißt *Kommandozeilen-Eingabeaufforderung* oder kurz *Eingabeaufforderung*. Sie fordert dich auf, hier etwas einzugeben.
+The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-Wenn wir im Tutorial wollen, dass du einen Befehl eingibst, schreiben wir `$` oder `>` mit hin, gelegentlich auch noch die anderen Angaben links davon. Ignoriere den linken Teil und gib nur das Kommando ein, welches rechts der Eingabeaufforderung steht.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
 ## Dein erstes Kommando (YAY!)
 
-Lass uns mit diesem Kommando beginnen:
+Let's start by typing this command:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -76,7 +78,7 @@ Lass uns mit diesem Kommando beginnen:
 
 <!--endsec-->
 
-Und dann bestätige mit `Enter`. Das ist unser Ergebnis:
+And then hit `enter`. This is our result:
 
 {% filename %}command-line{% endfilename %}
 
@@ -84,17 +86,17 @@ Und dann bestätige mit `Enter`. Das ist unser Ergebnis:
     olasitarska
     
 
-Wie du sehen kannst, hat der Computer gerade deinen Benutzernamen ausgegeben. Toll, was? :)
+As you can see, the computer has just printed your username. Neat, huh? :)
 
 > Versuch, jeden Befehl abzuschreiben und nicht zu kopieren und einzufügen. Auf diese Weise wirst du dir mehr merken!
 
 ## Grundlagen
 
-Jedes Betriebssystem hat einen geringfügig anderen Bestand an Befehlen für die Kommandozeile, beachte daher die Anweisungen für dein Betriebssystem. Lass uns das ausprobieren.
+Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
 ### Aktuelles Verzeichnis
 
-Es wäre schön zu sehen, wo wir uns befinden, oder? Lass uns nachsehen. Gib diesen Befehl in die Konsole ein und bestätige ihn mit `Enter`:
+It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -120,29 +122,29 @@ Es wäre schön zu sehen, wo wir uns befinden, oder? Lass uns nachsehen. Gib die
 
 <!--endsec-->
 
-Du wirst wahrscheinlich etwas Ähnliches auf deinem Gerät sehen. Wenn du die Konsole öffnest, befindest du dich normalerweise im Heimverzeichnis deines Benutzers.
+You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
 
 * * *
 
 ### Mehr über ein Kommando lernen
 
-Viele Befehle, die du in der Kommandozeile nutzen kannst, haben eine eingebaute Hilfe, die du anzeigen und lesen kannst! Zum Beispiel kannst du etwas über den eben verwendeten Befehl lernen:
+Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X und Linux haben einen `man`-Befehl, mit dem du die Hilfe über die Kommandos aufrufen kannst. Gib `man pwd` ein und schau, was angezeigt wird oder setzte `man` vor andere Kommandos und sieh dir deren Hilfe an. Das Ergebnis von `man` wird in der Regel seitenweise ausgegeben. Du kannst die Leertaste benutzen, um auf die nächste Seite zu gelangen und `q` (für engl. "quit", was "verlassen"/"rausgehen" heisst), um die Hilfeseiten zu schließen.
+OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Wenn du Windows benutzt, dann wird dir der Suffix `/?` für die meisten Kommandos die Hilfeseite ausgeben. Gegebenenfalls musst du nach oben scrollen, um alles zu sehen. Versuch es mal mit `cd /?`.
+Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
 
 <!--endsec-->
 
 ### Anzeigen von Dateien und Unterordnern
 
-Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden. Lass uns mal schauen:
+So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -176,7 +178,7 @@ Nun, was befindet sich in deinem Verzeichnis? Es wäre toll, das herauszufinden.
 
 ### Wechseln des Verzeichnisses
 
-Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
+Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -194,7 +196,7 @@ Lass uns jetzt zu unserem Desktop-Verzeichnis wechseln:
     $ cd Desktop
     
 
-Wenn dein Linux-Benutzerkonto auf Deutsch eingestellt ist, kann es sein, dass auch der Name des Desktop-Verzeichnisses übersetzt ist. Wenn dem so ist, musst du im obigen Befehl `Desktop` durch den übersetzten Verzeichnisnamen `Schreibtisch` ersetzen.
+Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
 
 <!--endsec-->
 
@@ -207,7 +209,7 @@ Wenn dein Linux-Benutzerkonto auf Deutsch eingestellt ist, kann es sein, dass au
 
 <!--endsec-->
 
-Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
+Check if it's really changed:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -229,7 +231,7 @@ Schau, ob das Wechseln des Verzeichnisses funktioniert hat:
 
 <!--endsec-->
 
-Passt!
+Here it is!
 
 > Profi-Tipp: Wenn du `cd D` tippst und dann `tab` auf deiner Tastatur drückst, wird die Kommandozeile automatisch den Rest des Namens vervollständigen, wodurch du schneller navigieren kannst. Wenn es mehr als einen Ordner gibt, dessen Name mit "D" beginnt, drücke die `tab`-Taste zweimal, um eine Liste der Möglichkeiten anzuzeigen.
 
@@ -237,7 +239,7 @@ Passt!
 
 ### Erstellen eines Verzeichnisses
 
-Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kannst du das tun:
+How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -257,7 +259,7 @@ Wie wär's damit, ein Übungsverzeichnis auf deinem Desktop zu erstellen? So kan
 
 <!--endsec-->
 
-Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem Desktop. Du kannst nun überprüfen, ob er wirklich dort ist, indem du auf deinem Desktop nachschaust oder indem du den Befehl `ls` oder `dir` ausführst! Versuch es. :)
+This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > Profi-Tipp: Wenn du die selben Befehle nicht immer wieder und wieder schreiben willst, verwende die `Pfeil aufwärts`- und `Pfeil abwärts`-Tasten deiner Tastatur, um durch die zuletzt verwendeten Befehle zu blättern.
 
@@ -265,7 +267,7 @@ Dieser kleine Befehl erstellt einen Ordner mit dem Namen `practice` auf deinem D
 
 ### Übung!
 
-Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practice`-Ordner ein Verzeichnis namens `test`. (Verwende dazu die Kommandos `cd` und `mkdir`.)
+A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
 #### Lösung:
 
@@ -293,15 +295,15 @@ Eine kleine Herausforderung für dich: Erstelle in deinem neu erstellten `practi
 
 <!--endsec-->
 
-Glückwunsch! :)
+Congrats! :)
 
 * * *
 
 ### Aufräumen
 
-Wir wollen kein Chaos hinterlassen, also lass uns das bislang Geschaffene wieder löschen.
+We don't want to leave a mess, so let's remove everything we did until that point.
 
-Zuerst müssen wir zurück zum Desktop wechseln:
+First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -321,9 +323,9 @@ Zuerst müssen wir zurück zum Desktop wechseln:
 
 <!--endsec-->
 
-Durch Verwendung von `..` mit dem `cd`-Kommando wechselst du von deinem aktuellen Verzeichnis zum übergeordneten Verzeichnis (dies ist das Verzeichnis, das das aktuelle Verzeichnis enthält).
+Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Schau nach, wo du gerade bist:
+Check where you are:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -345,7 +347,7 @@ Schau nach, wo du gerade bist:
 
 <!--endsec-->
 
-Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
+Now time to delete the `practice` directory:
 
 > **Achtung**: Wenn du Daten mit `del`, `rmdir` oder `rm` löschst, kannst du das nicht mehr rückgängig machen, das bedeutet, *die gelöschten Dateien sind für immer weg*! Sei also sehr vorsichtig mit diesem Befehl.
 
@@ -368,7 +370,7 @@ Jetzt ist es an der Zeit, dein `practice`-Verzeichnis zu löschen:
 
 <!--endsec-->
 
-Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
+Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -390,7 +392,7 @@ Geschafft! Lass uns schauen, ob es wirklich gelöscht ist:
 
 ### Beenden
 
-Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es uns wie die Hacker machen, okay? :)
+That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -410,11 +412,11 @@ Das wärs fürs Erste. Du kannst nun beruhigt deine Konsole schließen. Lass es 
 
 <!--endsec-->
 
-Cool, was? :)
+Cool, huh? :)
 
 ## Zusammenfassung
 
-Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
+Here is a summary of some useful commands:
 
 | Befehl (Windows) | Befehl (Mac OS / Linux) | Beschreibung                    | Beispiel                                             |
 | ---------------- | ----------------------- | ------------------------------- | ---------------------------------------------------- |
@@ -429,10 +431,10 @@ Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 | rmdir /S         | rm -r                   | Verzeichnis löschen             | **rm -r testdirectory**                              |
 | [CMD] /?         | man [CMD]               | Hilfe für ein Kommando aufrufen | **cd /?** (Windows) oder **man cd** (Mac OS / Linux) |
 
-Das sind nur sehr wenige der Befehle, welche du in deiner Konsole verwenden kannst, aber du wirst heute nicht mehr brauchen.
+These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
-Falls du neugierig bist, findest du auf [ss64.com](http://ss64.com) eine vollständige Übersicht über alle Kommandozeilen-Befehle für alle Betriebssysteme.
+If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
 ## Fertig?
 
-Lass uns mit Python anfangen!
+Let's dive into Python!
