@@ -16,7 +16,9 @@ La ventana, que generalmente es llamada **línea de comandos** ó **interfaz de 
 
 ## Abrir la interfaz de línea de comandos
 
-To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
+To start some experiments we need to open our command-line interface first.
+
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Símbolo del Sistema (Prompt)
 
