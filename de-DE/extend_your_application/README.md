@@ -192,7 +192,7 @@ Dann führe Folgendes in der [PythonAnywhere-Bash-Konsole](https://www.pythonany
     [...]
     
 
-(Denk daran, `<deine-pythonanywhere-Domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)
+(Denk daran, `<deine-pythonanywhere-domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)
 
 ## Die statischen Dateien auf dem Server aktualisieren
 
