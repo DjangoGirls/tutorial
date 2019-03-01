@@ -16,7 +16,9 @@ A janela, que geralmente é chamada de **linha de comando** ou **interface de li
 
 ## Abra a interface de linha de comando
 
-To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
+To start some experiments we need to open our command-line interface first.
+
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
