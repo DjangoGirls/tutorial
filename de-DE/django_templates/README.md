@@ -92,12 +92,12 @@ Es wäre gut zu sehen, ob deine Website noch immer im öffentlichen Internet fun
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd <deine-pythonanywhere-Domain>.pythonanywhere.com
+    $ cd <deine-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Denk daran, `<deine-pythonanywhere-Domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)
+(Denk daran, `<deine-pythonanywhere-domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)
 
 * Spring anschließend rüber zur [Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) und klick auf **Neu laden** in deinem Browser. (Um von der Konsolen-Seite aus zu anderen PythonAnywhere-Seiten zu gelangen, benutze den Menü-Knopf in der rechten oberen Ecke.) Ein Update sollte auf https://subdomain.pythonanywhere.com live sein -- guck's dir im Browser an! Wenn die Blogposts auf deiner PythonAnywhere-Seite anders sind als die auf deinem lokalen Server, ist das in Ordnung so. Die Datenbanken auf deinem lokalen Computer und auf PythonAnywhere werden nicht zusammen mit den restlichen Dateien abgeglichen.
 
