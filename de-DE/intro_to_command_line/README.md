@@ -431,10 +431,10 @@ Hier ist eine Zusammenfassung einiger nützlicher Kommandos:
 | rmdir /S         | rm -r                   | Verzeichnis löschen             | **rm -r testdirectory**                              |
 | [CMD] /?         | man [CMD]               | Hilfe für ein Kommando aufrufen | **cd /?** (Windows) oder **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Das sind nur sehr wenige der Befehle, welche du in deiner Konsole verwenden kannst, aber du wirst heute nicht mehr brauchen.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Falls du neugierig bist, findest du auf [ss64.com](http://ss64.com) eine vollständige Übersicht über alle Kommandozeilen-Befehle für alle Betriebssysteme.
 
 ## Fertig?
 
-Let's dive into Python!
+Lass uns mit Python anfangen!
