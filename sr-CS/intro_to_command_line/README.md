@@ -16,7 +16,9 @@ Prozor koji se obično naziva ** komandna linija** ili **interfejs komandne lini
 
 ## Otvorite interfejs komandne linije
 
-To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
+To start some experiments we need to open our command-line interface first.
+
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
