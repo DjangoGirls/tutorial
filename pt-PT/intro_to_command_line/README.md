@@ -16,7 +16,9 @@ A janela a que chamamos **linha de comandos**, é uma aplicação de texto para 
 
 ## Abre a interface da linha de comandos
 
-To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
+To start some experiments we need to open our command-line interface first.
+
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Linha de Comandos
 
