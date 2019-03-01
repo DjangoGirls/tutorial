@@ -441,7 +441,7 @@ Mal sehen, ob das alles auch auf PythonAnywhere funktioniert. Zeit für ein weit
     [...]
     
 
-(Denk daran, `<deine-pythonanywhere-Domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)
+(Denk daran, `<deine-pythonanywhere-domain>` durch deine tatsächliche PythonAnywhere-Subdomain zu ersetzen - ohne die spitzen Klammern.)
 
 * Gehe schließlich noch rüber [auf die Seite "Web"](https://www.pythonanywhere.com/web_app_setup/) (benutze den Menü-Knopf in der rechten oberen Ecke der Konsole) und klicke **Reload**. Lade deinen Blog https://subdomain.pythonanywhere.com neu, um die Änderungen zu sehen.
 
