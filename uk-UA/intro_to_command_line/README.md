@@ -16,7 +16,9 @@ It's exciting, right?! You'll write your first line of code in just a few minute
 
 ## Відкриваємо інтерфейс командного рядка
 
-To start some experiments we need to open our command-line interface first. {% include "/intro_to_command_line/open_instructions.md" %}
+To start some experiments we need to open our command-line interface first.
+
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Командний рядок
 
