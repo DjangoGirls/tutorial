@@ -946,16 +946,16 @@ Exécutez votre code à nouveau :
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Maintenant, que pensez-vous qu'il se passera lorsque nous écrivrons un autre nom (ni Ola, ni Sonja) ? Faites un essai et regardez si vous avez raison. Ceci devrait s'afficher :
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Super, non ? Avec ça, vous n'avez pas besoin de répéter de lignes de code lorsque vous voulez changer le nom de la personne à saluer. C'est pour cette raison que nous avons besoin de fonctions : vous ne voulez pas avoir à répéter votre code !
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Faisons quelque chose de plus intelligent – il existe bien plus que deux noms, et écrire une condition pour chacun d'entre eux serait difficile, non ? Remplacez le contenu de votre fichier avec les suivants :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -966,7 +966,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+Exécutons à nouveau notre code :
 
 {% filename %}command-line{% endfilename %}
 
@@ -974,7 +974,7 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Félicitations ! Vous venez juste d’apprendre à écrire des fonctions ! :)
 
 ## Les boucles
 
