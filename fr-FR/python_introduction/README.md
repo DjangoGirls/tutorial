@@ -914,7 +914,7 @@ Rappelez-vous : la fonction `print` est indentée de quatre espaces dans le bloc
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Oups, une erreur. Heureusement, Python nous donne un message d'erreur assez utile. Il nous dit que la fonction `hi()` (celle que nous avons définie) a besoin d'un argument (que nous avons appelé `name`). Nous avons oublié de passer cet argument lorsque nous avons appelé notre fonction. Corrigeons la dernière ligne du fichier :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -922,7 +922,7 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+Et exécutez votre code à nouveau :
 
 {% filename %}command-line{% endfilename %}
 
@@ -930,7 +930,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+Et que se passe-t-il quand on change de nom ?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -938,7 +938,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+Exécutez votre code à nouveau :
 
 {% filename %}command-line{% endfilename %}
 
