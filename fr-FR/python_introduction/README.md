@@ -879,7 +879,7 @@ Note : si cela n'a pas fonctionné, ne paniquez pas ! Le message d'erreur vous a
 - Si vous obtenez un `IndentationError`, vérifiez que les deux `print` sont à la même distance du début de leur ligne: python veut que tout le code à l'intérieur de la fonction soit bien aligné.
 - Si vous n'obtenez rien du tout, vérifiez que le `hi()` à la fin *n'est pas indenté*. Si c'est le cas, cette ligne est considérée par Python comme faisant partie de la fonction, et elle ne sera donc jamais exécutée.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Construisons maintenant notre première fonction avec des paramètres. Dans l'exemple précédent, nous avions une fonction que disait "Hi there!" à la personne qui la lançait. Faisons une fonction identique, mais ajoutons un nom cette fois-ci :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -887,7 +887,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Comme vous le voyez, nous avons donné à notre fonction un paramètre appelé `name` :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -903,7 +903,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Rappelez-vous : la fonction `print` est indentée de quatre espaces dans le bloc `if`, car elle est exécutée uniquement quand la condition est remplie. Voyons comment ça marche :
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
