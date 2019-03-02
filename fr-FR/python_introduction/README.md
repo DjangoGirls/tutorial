@@ -1057,14 +1057,14 @@ Cela va afficher :
 
 `range` est une fonction qui crée une liste de nombres qui se suivent (c'est vous qui définissez l’intervalle à l'aide de paramètres).
 
-Vous pouvez remarquer que le second de ces nombres n'est pas inclus dans la liste que Python nous donne (ce qui signifie que `range(1, 6)` compte de 1 à 5, mais n'inclue pas 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Vous pouvez remarquer que le second de ces nombres n'est pas inclus dans la liste que Python nous donne (ce qui signifie que `range(1, 6)` compte de 1 à 5, mais n'inclue pas 6). Cela est du au fait que "range" est semi-ouvert, c'est-à-dire qu'il prend en compte la première valeur mais pas la dernière.
 
 ## Résumé
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Et voilà ! **Vos assurez un max !** C'était un chapitre difficile, donc vous pouvez être fières de vous. De notre côté, nous sommes fières de vous, pour être parvenu-e si loin dans le cours. Bravo !
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Pour accéder au tutoriel officiel et complet de Python, visitez https://docs.python.org/3/tutorial/. Cela vous donnera un accès plus exhaustif à l'étude du langage. A bientôt :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+N'hésitez pas à prendre une pause : étirez-vous, marchez un peu ou reposez-vous les yeux. Une fois que vous avez un peu rechargé vos batteries, vous pouvez attaquer le chapitre suivant :)
 
 ![Cupcake](images/cupcake.png)
