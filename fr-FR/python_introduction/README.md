@@ -978,13 +978,13 @@ Félicitations ! Vous venez juste d’apprendre à écrire des fonctions ! :)
 
 ## Les boucles
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> Pour les lectrices autodidactes : cette partie est traitée dans la vidéo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-This is the last part already. That was quick, right? :)
+C’est déjà la dernière partie. C’était rapide, non ? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Les programmeurs⋅euses n'aiment pas devoir se répéter. L'essence de la programmation est d'automatiser les choses. Pour reprendre l'exemple précédent, nous aimerions pouvoir saluer automatiquement chaque personne. Pour cela, nous allons utiliser des boucles.
 
-Still remember lists? Let's do a list of girls:
+Vous vous souvenez des listes ? Faisons une liste de filles :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -992,7 +992,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Nous voulons saluer chacune d'entre elles par son nom. Nous avons déjà la fonction `hi` pour faire ça, utilisons-la donc dans une boucle :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1000,9 +1000,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+L'instruction `for` se comporte un peu comme `if`. Le code qui suit doit donc être indenté de quatre espaces.
 
-Here is the full code that will be in the file:
+Voilà le code complet à mettre dans votre fichier :
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1016,7 +1016,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+Exécutez votre code :
 
 {% filename %}command-line{% endfilename %}
 
@@ -1033,9 +1033,9 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Comme vous pouvez le constater, tout ce que vous mettez dans la déclaration `for` avec une indentation sera répété pour chaque élément de la liste `filles`.
 
-You can also use `for` on numbers using the `range` function:
+Vous pouvez aussi utiliser `for` sur des nombres grâce à la fonction `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1044,7 +1044,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Cela va afficher :
 
 {% filename %}command-line{% endfilename %}
 
@@ -1055,9 +1055,9 @@ Which would print:
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` est une fonction qui crée une liste de nombres qui se suivent (c'est vous qui définissez l’intervalle à l'aide de paramètres).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Vous pouvez remarquer que le second de ces nombres n'est pas inclus dans la liste que Python nous donne (ce qui signifie que `range(1, 6)` compte de 1 à 5, mais n'inclue pas 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
 ## Résumé
 
