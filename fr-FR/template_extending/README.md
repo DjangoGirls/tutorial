@@ -84,9 +84,9 @@ Puis, dans le fichier `base.html`, remplacez tout ce qui se trouve dans `<body>`
 {% endblock %}
 ```
 
-Mais pourquoi? Vous venez de créer un `block` ! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Nous vous expliquerons comment faire dans un instant.
+Mais pourquoi? Vous venez de créer un `block` ! Vous avez utilisé la balise de modèle `{% block %}` pour créer une partie qui va contenir du HTML. Ce HTML viendra d'un autre modèle qui étendra ce modèle-ci (`base.html`). Nous vous expliquerons comment faire cela dans un instant.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Enregistrez `base.html` et ouvrez votre `blog/templates/blog/post_list.html` à nouveau dans l'éditeur de code. {% raw %}Vous allez tout supprimer au-dessus de `{% for post in posts %}` et en dessous de `{% endfor %}`. Lorsque vous avez terminé, le fichier ressemblera à ceci :{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,9 +102,9 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+Nous voulons utiliser ceci dans le cadre de notre modèle pour tous les blocks 'content'. Il est temps d'ajouter ajouter des balises block à ce fichier !
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Comme ceci :{% endraw %}
+{% raw %}Vous voulez que votre balise block corresponde à la balise dans votre fichier `base.html` . You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Comme ceci :{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
