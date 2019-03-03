@@ -4,7 +4,7 @@
 > 
 > 이 챕터는 Jessica McKellar의 "인터넷은 어떻게 작동할까요"(http://web.mit.edu/jesstess/www/)에 영감을 받아 작성되었습니다.
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+당신은 매일 인터넷을 사용하실거에요. 하지만 당신이 브라우저 주소창에 https://djangogirls.org 를 입력하고 `enter` 키를 누르면 어떤 일이 일어나는지 확실히 알고 있나요?
 
 The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. 동영상, 음악, 사진 파일처럼요. 웹사이트가 다른 파일과 다른 점은 HTML이라는 컴퓨터 코드가 들어있다는 것이에요.
 
@@ -44,4 +44,4 @@ When you send a letter, it needs to have certain features to be delivered correc
 
 Since this is a Django tutorial, you might ask what Django does. 여러분이 답장을 보낼 때, 모든 사람에게 항상 동일한 내용을 보내고 싶지 않을 거에요. 받는 사람에 따라 각각 다른 답장을 보내면 더 좋지 않을까요? 이와 같이 장고는 맞춤형 편지를 보낼 수 있도록 도와준답니다. :)
 
-Enough talk – time to create!
+이제 수다는 그만하고– 뭔가 만들어볼까요!
