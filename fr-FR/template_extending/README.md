@@ -2,9 +2,9 @@
 
 Django vous réserve encore bien des surprises : une assez géniale est **l'héritage de template**. Qu'est ce que ça signifie ? C'est une fonctionnalité qui vous permet de réutiliser certains morceaux de HTML dans différentes pages de votre site web.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Les modèles permettent d'utiliser les mêmes informations ou mises en page en plusieurs endroits. Vous n'avez pas à vous répéter dans chaque fichier. Et si vous voulez changer quelque chose, vous n'avez pas à le faire dans chaque modèle, mais juste un!
 
-## Create a base template
+## Créer un template de base
 
 Un template de base est le template le plus simple que vous pouvez faire hériter à chaque page de votre site web.
 
@@ -17,7 +17,7 @@ Créons le fichier `base.html` dans le dossier `blog/templates/blog/` :
                 post_list.html
     
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+Ensuite, ouvrez ce fichier dans l'éditeur de code et collez-y tout ce qui se trouve dans le fichier `post_list.html`. Ça devrait ressembler à ça :
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -75,7 +75,7 @@ Puis, dans le fichier `base.html`, remplacez tout ce qui se trouve dans `<body>`
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}Vous pouvez remarquer qu'on vient de remplacer tout ce qui était entre `{% for post in posts %}` et `{% endfor %}` avec : {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -84,7 +84,7 @@ Puis, dans le fichier `base.html`, remplacez tout ce qui se trouve dans `<body>`
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Nous vous expliquerons comment faire dans un instant.
+Mais pourquoi? Vous venez de créer un `block` ! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). Nous vous expliquerons comment faire dans un instant.
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
