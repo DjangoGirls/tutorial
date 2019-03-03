@@ -16,7 +16,9 @@ Das Fenster, welches gewöhnlich die **Kommandokonsole** (command line) oder **K
 
 ## Öffnen der Konsole
 
-Um mit ein paar Experimenten zu beginnen, müssen wir erstmal die Kommandozeile öffnen. {% include "/intro_to_command_line/open_instructions.md" %}
+Um mit unserem Tutorial zu starten, musst du als Erstes das Kommandozeilenprogramm starten.
+
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Eingabeaufforderung (Prompt)
 
