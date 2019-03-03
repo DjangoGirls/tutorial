@@ -1,8 +1,8 @@
 # 인터넷은 어떻게 작동할까요
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> 집에서 공부하시는 분은: 이번 챕터에서 [인터넷은 어떻게 작동할까요](https://www.youtube.com/watch?v=oM9yAA09wdc) 영상을 참고하세요.
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> 이 챕터는 Jessica McKellar의 "인터넷은 어떻게 작동할까요"(http://web.mit.edu/jesstess/www/)에 영감을 받아 작성되었습니다.
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
