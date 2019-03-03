@@ -102,9 +102,9 @@ Enregistrez `base.html` et ouvrez votre `blog/templates/blog/post_list.html` à 
 {% endfor %}
 ```
 
-Nous voulons utiliser ceci dans le cadre de notre modèle pour tous les blocks 'content'. Il est temps d'ajouter ajouter des balises block à ce fichier !
+Nous voulons utiliser ceci dans le cadre de notre modèle pour tous les blocs 'content'. Il est temps d'ajouter ajouter des balises block à ce fichier !
 
-{% raw %}Vous voulez que votre balise block corresponde à la balise dans votre fichier `base.html` . You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Comme ceci :{% endraw %}
+{% raw %}Vous voulez que votre balise block corresponde à la balise dans votre fichier `base.html` . Vous voulez aussi qu'il inclue tout le code qui appartient à vos blocs de contenu. Pour faire cela, entourez tout le code de `{% block content %}` et `{% endblock %}`. Comme ceci :{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@ Nous voulons utiliser ceci dans le cadre de notre modèle pour tous les blocks '
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Seule une chose reste à faire. Nous devons connecter ces deux modèles ensemble. C'est ça, étendre des modèles ! Nous allons le faire en ajoutant une balise 'extends' au début du fichier. Comme cela :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+Et voilà ! Enregistrez le fichier et vérifiez que votre site fonctionne toujours correctement. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Si vous obtenez l'erreur `TemplateDoesNotExist`, cela signifie qu'il n'y a pas de fichier `blog/base.html` et que vous avez `runserver` en cours d'exécution dans la console. Arrêtez-le (en appuyant simultanément sur Ctrl+C, les touches Control et C de votre clavier) et relancez-le en tapant la commande `python manage.py runserver`.
