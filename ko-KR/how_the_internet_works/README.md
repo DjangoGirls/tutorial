@@ -10,7 +10,7 @@ The first thing you need to understand is that a website consists of a bunch of 
 
 만약 프로그래밍에 익숙하지 않다면, HTML을 이해하는 게 어려울 수도 있어요. 하지만 브라우저들(크롬, 사파리, 파이어폭스 같은 것들요) 은 HTML을 사랑한답니다. 웹 프라우저는 코드를 이해하고 지시에 따르고, 내가 원하는 방식으로 정확하게 구현될 수 있도록 설계되었어요.
 
-다른 파일처럼 HTML 파일도 하드 디스크 어딘가에 저장해야합니다. 인터넷에선 *서버*라는 특별하고 강력한 컴퓨터를 사용해요. 데이터를 저장하고 제공하는 것이 주된 목적이기 때문에 모니터나 마우스, 키보드가 필요없지요. That's why they're called *servers* – because they *serve* you data.
+다른 파일처럼 HTML 파일도 하드 디스크 어딘가에 저장해야합니다. 인터넷에선 *서버*라는 특별하고 강력한 컴퓨터를 사용해요. 데이터를 저장하고 제공하는 것이 주된 목적이기 때문에 모니터나 마우스, 키보드가 필요없지요. 데이터를 *제공(servers)* 하기때문에 – *서버(serve)* 라고 부릅니다.
 
 OK, but you want to know how the Internet looks, right?
 
