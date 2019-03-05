@@ -103,4 +103,4 @@ Congrats! Now go ahead and try adding a new post in your Django admin (remember 
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-![Figure 13.4](images/donut.png)
+![Figura 13.4](images/donut.png)
