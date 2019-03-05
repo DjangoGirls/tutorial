@@ -2,7 +2,7 @@ Du kan [hoppa över denna sektion](http://tutorial.djangogirls.org/en/installati
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE är ett verktyg som ger användaren en kodredigeringsprogram och tillgång till en dator på internet på vilken du kan installera, skriva och köra mjukvara. Under denna introduktion kommer Cloud IDE vara din *lokala maskin*. Du kommer fortfarande att köra din kommandon i terminalen, precis som dina klasskamrater som sitter på OS X, Ubuntu, eller Windows, men din terminal kommer vara kopplat till en dator som Cloud IDE har satt upp till dig. Här är instruktionerna för Cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). Du kan välja en Cloud IDE och följ anvisningen för den Cloud IDE.
+Cloud IDE är ett verktyg som ger användaren en kod-editor och tillgång till en dator på internet på vilken du kan installera, skriva och köra mjukvara. Under denna introduktion kommer Cloud IDE vara din *lokala maskin*. Du kommer fortfarande att köra din kommandon i terminalen, precis som dina klasskamrater som sitter på OS X, Ubuntu, eller Windows, men din terminal kommer vara kopplat till en dator som Cloud IDE har satt upp till dig. Här är instruktionerna för Cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). Du kan välja en Cloud IDE och följ anvisningen för den Cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
@@ -70,6 +70,6 @@ Skapa ett [Github](https://github.com) konto.
 
 Django Girls introduktionen innehåller en sektion på vad som kallas Deployment, vilket menas med processen av att ta koden för din nya applikation och flyttar den till en publik dator (en server) så att andra personer kan se applikationen.
 
-Denna biten av introduktionen är lite annorlunda för dig som sitter på en Chromebook, eftersom din dator redan utgår ifrån internet (i motsats till en vanlig laptop som är en dator i sig). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Denna biten av introduktionen är lite annorlunda för dig som sitter på en Chromebook, eftersom din dator redan utgår ifrån internet (i motsats till en vanlig laptop som är en dator i sig). Men Cloud 9 är fortfarande användbart för dig eftersom vi kan tänka att vår Cloud 9 arbetsyta är ett ställe för vårt "pågående" arbete, och då är Python Anywhere ett ställe där vi kan visa upp vårt arbete som är mer klart.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Således, skapa ett konto på Python Anywhere på [www.pythonanywhere.com](https://www.pythonanywhere.com).
