@@ -36,7 +36,7 @@ Oui ! Il y a *énormément* de ressources en ligne pour apprendre toutes sortes 
 #### Travailler avec les données
 
 - [Cours de science des données de la Codecademy](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – vous pouvez accéder à la plupart des cours gratuitement, mais si vous voulez un certificat ou des crédits pour une qualification supérieure, cela coûtera de l'argent
+- [Dataquest](https://www.dataquest.io/) – les 30 premières "missions" sont gratuites
 
-We can't wait to see what you build next!
+On a hâte de voir votre prochaine création !
