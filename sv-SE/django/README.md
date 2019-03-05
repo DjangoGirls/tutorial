@@ -18,10 +18,10 @@ Föreställ dig en brevlåda (port) som övervakas för inkommande brev (begära
 
 När en begäran kommer till en webbserver, skickas det till Django som försöker räkna ut vad begärs faktiskt. Den tar en webbadress först och försöker räkna ut vad ska göras. Denna del görs av Django's **urlresolver** (observera att en webbadress kallas en URL – Uniform Resource Locator – så namnen *urlresolver* är vettigt). Den är inte så smart – den tar en lista med mönster och försöker matcha URL-adressen. Django kontrollerar mönster från topp till botten och om något matchas, överförs Django begäran till den associerade funktionen (som kallas *vy*).
 
-Föreställ dig en brevbärare med ett brev. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Föreställ dig en brevbärare med ett brev. Hon går längs gatan och kontrollerar varje husnummer mot den på brevet. Om det matchar, sätter hon brevet där. Så här fungerar urlresolvern!
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+Det är i funktionen *vy* som alla intressanta saker görs: vi kan titta på en databas för att leta efter information. Kanske begärde användaren att ändra något i datan? Som ett brev som säger "Ändra beskrivningen av mitt jobb." *Vyn* kan kontrollera om du får göra det, kan sedan uppdatera jobbbeskrivningen för dig och skicka tillbaka ett meddelande: "Klar!" Då genererar *vyn* ett svar och Django kan skicka det till användarens webbläsare.
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Beskrivningen ovan är lite förenklad, men du behöver inte veta alla tekniska saker än. Att ha en allmän idé är nog.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+Så istället för att dyka för mycket in i detaljer, börjar vi skapa något med Django och vi kommer att lära oss alla viktiga delar längs vägen!
