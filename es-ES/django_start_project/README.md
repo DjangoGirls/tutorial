@@ -186,7 +186,7 @@ Ahora necesitas revisar que tu website se esta ejecutando. Abre tu navegador (Fi
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. La URL se verá parecida a:
 
 {% filename %}browser{% endfilename %}
 
