@@ -1,19 +1,19 @@
-PythonAnywhere is a service for running Python code on servers "in the cloud". We'll use it for hosting our site, live and on the Internet.
+PythonAnywhere är en tjänst för att köra Python-kod på servrar "i molnet". Vi ska använda det som värd för vår webbplats, live och på Internet.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+Vi kommer att värda den blogg som vi bygger på PythonAnywhere. Anmäl dig till ett "Beginner" konto på PythonAnywhere (gratis nivån är bra, du behöver inte ett kreditkort).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![PythonAnywhere registreringssidan som visar knappen för att skapa ett gratis "Beginner"-konto](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Obs** När du väljer ditt användarnamn, kom ihåg att din bloggadress kommer att ta formen `ditt användarnamn.pythonallwhere.com`, välj antingen ditt eget smeknamn eller ett namn på vad din blogg handlar om. Också, kom ihåg ditt lösenord (lägg till det i din lösenordshanterare, om du använder en).
 
-## Creating a PythonAnywhere API token
+## Skapa en PythonAnywhere API-token
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+Det här är något du bara behöver göra en gång. När du har anmält dig till PythonAnywhere kommer du att tas till din instrumentpanel. Hitta länken längst upp till höger på sidan "Account":
 
 ![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+välj sedan fliken som heter "API token" och tryck på knappen som heter "Create new API token".
 
 ![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
