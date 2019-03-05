@@ -11,35 +11,35 @@ Cloud IDE är ett verktyg som ger användaren en kodredigeringsprogram och tillg
 3. Klicka på *New Server*
 4. Klicka på Terminal knappen (på vänster sida av fönstret)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Nu bör du se ett gränssnitt med en sidofält, och några knappar på vänster. Klicka ”Terminal” knappen för att öppna terminal-fönstret som ser ut såhär:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Terminalen på PaizaCloud Cloud IDE är förberedd för dina instruktioner. Du kan ändra storlek på eller maximera fönstret för att göra det lite större.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. Gå till [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Skapa ett konto
+3. Klicka på *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Nu bör du se ett gränssnitt med en sidofält, ett stort huvudfönster med text, och ett litet fönster längst ner som ser ut så här:
 
 {% filename %}bash{% endfilename %}
 
-    yourusername:~/workspace $
+    dittanvändarnamn:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Detta bottenyta är din terminal. Du kan använda terminalen för att sända instruktioner till Cloud 9 på fjärrdatorn. Du kan ändra storlek på fönstret för att göra det lite större.
 
 ### Virtuell miljö
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+En virtuell miljö (också kallad virtualenv) är som en typ av privat dator som man kan använda för att spara data och program som man använder i sitt projekt. Vi kommer använda den för att spara olika bitar av kod som tillhör olika projekt. På detta sätt kommer koden till projekten hållas separat från varandra så att vi inte blandar ihop de olika projekt-koden.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+I din terminal, placerad längst ned i Cloud 9 rutan, kör följande kommando:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Om detta kommando inte fungerar, fråga din lärare om hjälp.
 
-Next, run:
+Nästa steg, kör:
 
 {% filename %}Cloud 9{% endfilename %}
 
