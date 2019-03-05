@@ -94,7 +94,7 @@ Abrimos `blog/urls.py` en el editor para añadir una línea:
 {% filename %}blog/urls.py{% endfilename %}
 
 ```python
-path('post/new/', views.post_new, name='post_new'),
+path('post/new', views.post_new, name='post_new'),
 ```
 
 Y el código final tendrá este aspecto:
@@ -444,6 +444,6 @@ Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegu
 
 (Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-* Para terminar ve a ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (usa el botón del menú de la esquina superior derecha, encima de la consola) y haz click en **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* Para terminar ve a ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (usa el botón del menú de la esquina superior derecha, encima de la consola) y haz click en **Reload**. Recarga tu https://subdomain.pythonanywhere.com blog para ver los cambios.
 
 ¡Y eso debería ser todo! Felicidades :)
