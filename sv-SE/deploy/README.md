@@ -4,15 +4,15 @@
 
 Fram tills nu var din hemsida endast tillgänglig på din dator. Nu lär du dig att publicera det! Publicering är processen att göra din applikation tillgänglig på internet så att andra kan se och använda din app. :)
 
-Som du lärt dig behöver en hemsida ligga på en server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Som du lärt dig behöver en hemsida ligga på en server. Det finns många serverleverantörer tillgängliga på internet, vi ska använda [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere är gratis för små applikationer som inte har alltför många besökare så det kommer definitivt räcka för dig nu.
 
 Den andra externa tjänsten som vi kommer att använda är [GitHub](https://www.github.com), vilket är en tjänst för kodlagring. Det finns andra tjänster, men nästan alla programmerare har ett GitHub-konto dessa dagar, och snart har även du ett!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Dessa tre platser kommer att vara viktiga för dig. Din lokala dator kommer vara den plats där du gör utveckling och testning. När du är nöjd med ändringarna lägger du en kopia av ditt program på GitHub. Din webbplats kommer att finnas på PythonAnywhere och du uppdaterar den genom att få en ny kopia av din kod från GitHub.
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Obs** Om du redan gått igenom installationsstegen behöver du inte göra detta igen - du kan hoppa till nästa avsnitt och börja skapa ditt Git-repositorium.
 
 {% include "/deploy/install_git.md" %}
 
@@ -20,7 +20,7 @@ These three places will be important to you. Your local computer will be the pla
 
 Git spårar ändringar i en viss uppsättning filer i vad som kallas ett kod-repositorium (eller kort sagt "repo"). Låt oss skapa ett för vårt projekt. Öppna din konsol och köra dessa kommandon, i katalogen `djangogirls`:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. Du bör vara i mappen `djangogirls`.
+> **Obs** Kontrollera din aktuella arbetskatalog med `pwd` (Mac OS X/Linux) eller `cd` (Windows) innan du initierar repot. Du bör vara i mappen `djangogirls`.
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,7 +30,7 @@ Git spårar ändringar i en viss uppsättning filer i vad som kallas ett kod-rep
     $ git config --global user.email din.epost@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Initiera git-repot är något vi bara behöver göra en gång per projekt (och du behöver inte ange användarnamn och e-post någonsin igen).
 
 Git kommer spåra ändringar över alla filer och mappar i den här katalogen, men det finns några filer som vi vill ignorera. Vi gör detta genom att skapa en fil som heter `.gitignore` i baskatalogen. Öppna din editor och skapa en ny fil med följande innehåll:
 
@@ -45,9 +45,9 @@ Git kommer spåra ändringar över alla filer och mappar i den här katalogen, m
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+Och spara den som `.gitignore` i topp-nivån av mappen "djangogirls".
 
-> **Obs** Punkten i början av filnamnet är viktigt! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
+> **Obs** Punkten i början av filnamnet är viktigt! Om du får problem med att skapa filen (Mac-datorer gillar inte att du skapar filer som börjar med en punkt via Finder, till exempel), använd funktionen "Spara som" i din redaktör; det är skottsäkert. Och var noga med att inte lägga till `.txt`, `.py` eller någon annan tillägg till filnamnet - det kommer endast att erkännas av Git om namnet bara är `.gitignore`.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
