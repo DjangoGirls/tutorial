@@ -12,8 +12,8 @@ Vi kommer att värda den blogg som vi bygger på PythonAnywhere. Anmäl dig till
 
 Det här är något du bara behöver göra en gång. När du har anmält dig till PythonAnywhere kommer du att tas till din instrumentpanel. Hitta länken längst upp till höger på sidan "Account":
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+!["Account" länken längst upp till höger på webbsidan](../deploy/images/pythonanywhere_account.png)
 
 välj sedan fliken som heter "API token" och tryck på knappen som heter "Create new API token".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![API-token fliken på "Account" webbsidan](../deploy/images/pythonanywhere_create_api_token.png)
