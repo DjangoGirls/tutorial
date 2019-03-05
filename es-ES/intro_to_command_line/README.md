@@ -125,7 +125,7 @@ You'll probably see something similar on your machine. Once you open the command
 
 * * *
 
-### Learn more about a command
+### Aprende más sobre un comando
 
 Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
@@ -412,7 +412,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Genial, ¿no? :)
 
 ## Resumen
 
