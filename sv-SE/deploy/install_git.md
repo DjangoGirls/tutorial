@@ -5,7 +5,7 @@ Git är ett versionshanteringssystem som används av många programmerare. Med G
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Du kan ladda ner Git från [git-scm.com](https://git-scm.com/). Du kan trycka ”nästa” på alla åtgärder utom två: i steget där den frågar att välja din kod-redaktör, du bör välja Nano, och i steget med titeln ”Adjusting your PATH environment", välj ”Use Git and optional Unix tools from the Windows Command Prompt” (alternativet längst ned). Annars är resten av standardvärdena bra. Checkout Windows-style, commit Unix-style line endings is good.
+Du kan ladda ner Git från [git-scm.com](https://git-scm.com/). Du kan trycka ”nästa” på alla åtgärder utom två: i steget där den frågar att välja din kod-redaktör, du bör välja Nano, och i steget med titeln ”Adjusting your PATH environment", välj ”Use Git and optional Unix tools from the Windows Command Prompt” (alternativet längst ned). Annars är resten av standardvärdena bra. Lämna kryssrutan fylld för alternativet "Checkout Windows-style, commit Unix-style line endings".
 
 Glöm inte att starta om i kommandotolken eller powershell när installationen har slutförts. <!--endsec-->
 
