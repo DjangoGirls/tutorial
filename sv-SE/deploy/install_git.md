@@ -1,11 +1,11 @@
-Git är ett versionshanteringssystem som används av många programmerare. Med Git kan ändringar som gjorts i dina filer spåras över tiden så att du kan komma åt specifika versioner senare. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git är ett versionshanteringssystem som används av många programmerare. Med Git kan ändringar som gjorts i dina filer spåras över tiden så att du kan komma åt specifika versioner senare. Lite som ”spåra ändringar” funktionen i ordbehandlare program (t ex Microsoft Word eller LibreOffice Writer), men mycket mer kraftfull.
 
 ## Installera Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Du kan ladda ner Git från [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+Du kan ladda ner Git från [git-scm.com](https://git-scm.com/). Du kan trycka ”nästa” på alla åtgärder utom två: i steget där den frågar att välja din kod-redaktör, du bör välja Nano, och i steget med titeln ”Adjusting your PATH environment", välj ”Use Git and optional Unix tools from the Windows Command Prompt” (alternativet längst ned). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
