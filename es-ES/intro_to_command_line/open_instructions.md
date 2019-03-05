@@ -17,7 +17,7 @@ Later in this tutorial, you will need to have two command windows open at the sa
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Ve a Aplicaciones → Utilidades → Terminal.
 
 <!--endsec-->
 
