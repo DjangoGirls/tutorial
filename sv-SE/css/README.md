@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` är en CSS Selektor. Det innebär att vi tillämpar våra stilar på alla `a`-element inom ett `h1`-element; `h2 a` selektoren gör samma sak för `h2`-elementen. Så när vi har något i stil med `<h1><a href="">länk</a></h1>`, kommer `h1 a`-stilen gälla. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` är en CSS Selektor. Det innebär att vi tillämpar våra stilar på alla `a`-element inom ett `h1`-element; `h2 a` selektoren gör samma sak för `h2`-elementen. Så när vi har något i stil med `<h1><a href="">länk</a></h1>`, kommer `h1 a`-stilen gälla. I detta fall säger vi åt den att ändra sin färg till `#C25100`, vilket är mörk orange. Eller så kan du lägga din egen färg här, men se till att den har god kontrast mot en vit bakgrund!
 
 I en CSS-fil bestämmer vi stilar för element i HTML-filen. Det första sättet vi identifierar element är med elementnamnet. Du kanske minns dessa som taggar från HTML-avsnittet. Saker som `a`, `h1` och `body` är alla exempel på elementnamn. Vi identifierar även element genom attributet `class` eller attributet `id`. Class och id är namn du själv ger elementet. Class definierar grupper av element, medan id pekar på specifika element. Till exempel, följande tagg kan identifieras i CSS genom dess elementnamn `a`, dess class-attribut `external_link` eller genom dess id `link_to_wiki_page`:
 
@@ -89,7 +89,7 @@ I en CSS-fil bestämmer vi stilar för element i HTML-filen. Det första sättet
 
 Du kan läsa mer om [CSS Selektorer hos w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Vi behöver också berätta för vår HTML-mall att vi har lagt till lite CSS. Öppna filen `blog/templates/blog/post_list.html` och lägg till denna rad i början:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -203,7 +203,7 @@ Och lägg till klassen `post` till den `div` som innehåller en blogg-post.
 </div>
 ```
 
-Vi kommer nu lägga till deklarations-block till olika selektorer. Selektorer som börjar med `.` avser klasser. Det finns mängder av bra guider och förklaringar om CSS på webben som kan hjälpa dig förstå följande kod. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Vi kommer nu lägga till deklarations-block till olika selektorer. Selektorer som börjar med `.` avser klasser. Det finns mängder av bra guider och förklaringar om CSS på webben som kan hjälpa dig förstå följande kod. Men för stunden, kopiera den bara till filen `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
