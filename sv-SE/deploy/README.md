@@ -2,7 +2,7 @@
 
 > **Obs!** Detta kapitel kan bitvis vara besvärligt att ta sig igenom. Försök härda ut och ta dig igenom det, distribution är en viktig del av att utveckla webbsidor. Det här kapitlet är placerat i mitten av totorialen så att din mentor kan hjälpa dig med den något besvärligare processen att publicera din webbsida på nätet. Detta innebär att du kan avsluta tutorialen på egen hand om tiden tar slut.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Publicering är processen att göra din applikation tillgänglig på internet så att andra kan se och använda din app. :)
+Fram tills nu var din hemsida endast tillgänglig på din dator. Nu lär du dig att publicera det! Publicering är processen att göra din applikation tillgänglig på internet så att andra kan se och använda din app. :)
 
 Som du lärt dig behöver en hemsida ligga på en server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
