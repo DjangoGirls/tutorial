@@ -2,13 +2,13 @@
 
 Django (/ˈdʒæŋɡoʊ/ *jang-goh*) är ett fritt webbapplikations-ramverk med öppen källkod, skrivet i Python. Ett webb-ramverk är en uppsättning komponenter som hjälper dig att utveckla webbplatser snabbare och enklare.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+När du bygger en webbplats, måste du alltid ha en liknande uppsättning av komponenter: ett sätt att hantera användarautentisering (registrera dig, logga in, logga ut), en förvaltningspanel för din webbplats, blanketter, ett sätt att ladda upp filer, osv.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Lyckligtvis för dig, andra personer märkte för länge sedan att webbutvecklare står inför liknande problem när man bygger en ny webbplats, så att de slagit sig ihop och skapat webb-ramverk (Django är en av dem) som ger dig färdiga komponenter att använda.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Ramverk finns för att rädda dig från att ha uppfinna hjulet på nytt och för att lindra några av allmänna omkostnader när du bygger en ny webbplats.
 
-## Why do you need a framework?
+## Varför behöver du en ramverk?
 
 To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
