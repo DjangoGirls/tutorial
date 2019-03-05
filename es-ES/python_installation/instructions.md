@@ -36,7 +36,7 @@ data-collapse=true ces-->
 
 > **Nota** Antes de instalar Python en OS X, debes asegurarte de que la configuración del Mac permita instalar paquetes que no estén en la App Store. ve a preferencias del sistema (System Preferences, está en la carpeta Aplicaciones), da click en "Seguridad y privacidad" (Security & Privacy) y luego la pestaña "General". Si tu "Permitir aplicaciones descargadas desde:" (Allow apps downloaded from:) está establecida a "Mac App Store," cambia a "Mac App Store y desarrolladores identificados." (Mac App Store and identified developers)
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Debes ir al sitio web https://www.python.org/downloads/release/python-361/ y descargar el instalador de Python:
 
 * Download the *Mac OS X 64-bit/32-bit installer* file,
 * Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
@@ -79,14 +79,14 @@ Usa este comando en tu consola:
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+En versiones anteriores de Fedora tal vez te salga un error de que no se encuentra el comando `dnf`. En ese caso utiliza `yum` en su lugar.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Usa este comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
