@@ -103,6 +103,6 @@ Maintenant, ça serait bien de voir si votre site Web fonctionne toujours sur In
 
 Félicitations ! Maintenant, allez de l'avant et essayez d'ajouter un nouveau message dans votre administrateur Django (rappelez-vous d'ajouter publication_date!) Assurez-vous que vous êtes dans l'administrateur Django pour votre site pythonanywhere, https://subdomain.pythonanywhere.com/admin. Ensuite, rafraîchissez votre page pour voir si le message apparaît.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+Ça a marché ? Nous sommes super fière de vous ! Éloignez vous un peu de votre clavier maintenant : vous avez mérité de faire une pause. :)
 
 ![Figure 13.4](images/donut.png)
