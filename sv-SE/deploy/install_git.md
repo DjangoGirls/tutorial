@@ -5,16 +5,16 @@ Git är ett versionshanteringssystem som används av många programmerare. Med G
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Du kan ladda ner Git från [git-scm.com](https://git-scm.com/). Du kan trycka ”nästa” på alla åtgärder utom två: i steget där den frågar att välja din kod-redaktör, du bör välja Nano, och i steget med titeln ”Adjusting your PATH environment", välj ”Use Git and optional Unix tools from the Windows Command Prompt” (alternativet längst ned). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.
+Du kan ladda ner Git från [git-scm.com](https://git-scm.com/). Du kan trycka ”nästa” på alla åtgärder utom två: i steget där den frågar att välja din kod-redaktör, du bör välja Nano, och i steget med titeln ”Adjusting your PATH environment", välj ”Use Git and optional Unix tools from the Windows Command Prompt” (alternativet längst ned). Annars är resten av standardvärdena bra. Checkout Windows-style, commit Unix-style line endings is good.
 
-Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
+Glöm inte att starta om i kommandotolken eller powershell när installationen har slutförts. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
+Ladda ner Git från [git-scm.com](https://git-scm.com/) och följ instruktionerna.
 
-> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **Obs** Om du kör OS X 10.6, 10.7 eller 10.8, du kommer att behöva installera versionen av git härifrån: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
