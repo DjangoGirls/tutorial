@@ -276,7 +276,7 @@ Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` s
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd practice
+    $ cd excercise
     $ mkdir test
     $ ls
     test
@@ -288,7 +288,7 @@ Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` s
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice
+    > cd excercise
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
