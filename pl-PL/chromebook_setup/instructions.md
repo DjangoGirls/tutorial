@@ -18,7 +18,7 @@ Teraz powinnaś zobaczyć interfejs z bocznym paskiem i przyciski po lewej stron
     $
     
 
-Terminal PaizaCloud Cloud ID jest przygtowany na twoje instrukcje. Możesz zmienić rozmiar tego okna, powiększyć jej aby było troszkę większe.
+Terminal PaizaCloud Cloud ID jest przygtowany na Twoje instrukcje. Możesz zmienić rozmiar tego okna i powiększyć je aby było troszkę większe.
 
 #### AWS Cloud9
 
@@ -33,7 +33,7 @@ Teraz powinnaś zobaczyć interfejs z bocznym paskiem, duże główne okno z tek
     twojanazwaużytkownika:~/workspace $
     
 
-Dolny obszar jest twój terminal. Mozęsz użyć go do wysyłania instrukcji do zdalnego zarządzania Cloud 9. Można zmienić rozmiar tego okna, aby je trochę powiększyć.
+Dolny obszar jest Twoim terminalem. Możesz użyć go do wysyłania instrukcji do zdalnego komputera Cloud 9. Możesz zmienić rozmiar tego okna, aby je trochę powiększyć.
 
 ### Środowisko wirtualne
 
