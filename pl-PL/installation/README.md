@@ -16,7 +16,7 @@ Jeśli uczestniczysz w wydarzeniu Django Girls:
 
 # Instalacja
 
-Na tych warsztatach będziesz budować blog. W tym celu, podczas przechodzenia przez tutorial, zostaniesz poproszona o instalację różnego oprogramowania na twoim komputerze i skonfigurowanie kilku kont online, gdy będą potrzebne. Ta strona zbiera wszystkie instrukcje dotyczące instalacji i rejestracji w jednym miejscu (co jest przydatne w niektórych formach warsztatów).
+Na tych warsztatach będziesz budować blog. W tym celu, podczas przechodzenia przez tutorial, zostaniesz poinstruowana o tym, jak zainstalować na Twoim komputerze różnego rodzaju oprogramowanie i jak skonfigurować kilka kont online, które będą Ci potrzebne. Ta strona zbiera wszystkie instrukcje dotyczące instalacji i rejestracji w jednym miejscu (co jest przydatne w niektórych formach warsztatów).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Krótkie wprowadzenie do wiersza polecenia
 
-Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "okna poleceń" lub "linii poleceń" - wszystkie one oznaczają to samo: okno na komputerze, w którym można wprowadzać polecenia. Gdy dojdziesz do głównego tutoriala, dowiesz się więcej o linii poleceń. Na razie najważniejszą rzeczą jaką musisz wiedzieć to, to jak otworzyć okno wiersza polecenia i jak ono wygląda: {% include "/intro_to_command_line/open_instructions.md" %}
+Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "wiersza poleceń" lub "linii poleceń" - wszystkie one oznaczają to samo: okno na komputerze, w którym można wprowadzać polecenia. Gdy dojdziesz do głównego tutoriala, dowiesz się więcej o linii poleceń. Na razie najważniejszą rzeczą jaką musisz wiedzieć to, to jak otworzyć okno wiersza polecenia i jak ono wygląda: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Zainstaluj Pythona
 
@@ -65,4 +65,4 @@ Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed 
 
 # Ciesz się warsztatami!
 
-Kiedy zaczniesz warsztaty, będziesz mogła przejść od razu do rozdziału [Twój pierwszy projekt w Django!](../django_start_project/README.md) ponieważ już przebrnęłaś przez materiał z wcześniejszych rozdziałów.
+Kiedy zaczniesz warsztaty, będziesz mogła przejść od razu do rozdziału [Twój pierwszy projekt w Django!](../django_start_project/README.md), ponieważ już przebrnęłaś przez materiał z wcześniejszych rozdziałów.
