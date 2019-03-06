@@ -158,14 +158,14 @@ Zanim jednak to zrobimy, powinniśmy się upewnić, że mamy najnowszą wersję 
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ python -m pip install --upgrade pip
+    (myvenv) ~$ python3 -m pip install --upgrade pip
     
 
 ### Instalacja pakietów z pliku wymagań
 
 Plik wymagań zawiera listę zależności, które zainstalujemy za pomocą polecenia `pip install`:
 
-Najpierw stwórz plik `requirements.txt` wewnątrz katalogu `djangogirls/` używając edytora kodu, który wcześniej zainstalowałaś. Aby to zrobić otwórz nowy plik w edytorze kodu, a następnie zapisując go jako ` requirements.txt </ 0> w folderze <code> djangogirls / </ 0>. Twój katalog będzie wyglądał następująco:</p>
+Najpierw stwórz plik `requirements.txt` wewnątrz katalogu `djangogirls/` używając edytora kodu, który wcześniej zainstalowałaś. Aby to zrobić, otwórz nowy plik w edytorze kodu , a następnie zapisz go jako ` requirements.txt ` w folderze ` djangogirls / </ 0>. Twój katalog będzie wyglądał następująco:</p>
 
 <pre><code>djangogirls
 └───requirements.txt
