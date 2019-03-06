@@ -196,10 +196,10 @@ Gratulacje! Właśnie stworzyłaś swoją pierwszą stronę i uruchomiłaś ją 
 
 ![Install worked!](images/install_worked.png)
 
-Należy zauważyć, że okno wiersza polecenia można uruchomić tylko jedną rzecz na raz, i okno polecenia, który został otwarte wcześniej jest uruchomione na serwerze Www. Tak długo, jak serwer sieci web jest uruchomiona i czekam na dodatkowe żądania przychodzące, terminal przyjmie nowy tekst, ale nie wykona polecenia nowy.
+Kiedy serwer internetowy jest uruchomiony, nie możesz zobaczyć nowego wiersza polecenia do wprowadzania dodatkowych poleceń. Terminal przyjmie nowy tekst, ale nie wykona nowego polecenia. Dzieje się tak dlatego, że serwer internetowy ciągle działa, aby nasłuchiwać przychodzących żądań.
 
 > Sprawdziliśmy, jak działają serwery internetowe w rozdziale **"Jak działa Internet"**.
 
-Aby wpisać dodatkowe polecenia podczas działania serwera Www, otwórz nowe okno terminala i aktywuj swóje wirtualne środowisko(virtualenv) - aby przejrzeć instrukcje dotyczące otwierania drugiego okna terminala, patrz  Wprowadzenie do wiersza poleceń </ 0>. Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).</p> 
+Aby wpisać dodatkowe polecenia podczas działania serwera WWW, otwórz nowe okno terminala i aktywuj swoje wirtualne środowisko(virtualenv) - aby przejrzeć instrukcje dotyczące otwierania drugiego okna terminala, patrz[ Wprowadzenie do wiersza poleceń ](../intro_to_command_line/README.md). Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).
 
 Gotowa na następny krok? Czas stworzyć treść!
