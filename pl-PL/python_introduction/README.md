@@ -641,7 +641,7 @@ Na Macu polecenie będzie wyglądać mniej-więcej tak:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-Na Linuxie, będzie to wyglądać w ten sposób:
+W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski jako "Pulpit"):
 
 {% filename %}command-line{% endfilename %}
 
