@@ -848,7 +848,7 @@ Czas na ostatnią część tego rozdziału!
 
 Pamiętasz funkcje takie jak `len()`, które możesz uruchamiać w Pythonie? Dobra wiadomość: teraz nauczysz się pisać swoje własne funkcje!
 
-Funkcja jest zestawem poleceń, które powinien wykonać Python. Każda funkcja w Pythonie zaczyna się słowem kluczowym `def`, posiada nazwę i może przyjmować parametry. Spróbujmy! Zastąp kod w pliku **python_intro.py** następującym:
+Funkcja jest zestawem poleceń, które Python ma wykonać. Każda funkcja w Pythonie zaczyna się słowem kluczowym `def`, posiada nazwę i może przyjmować parametry. Spróbujmy! Zastąp kod w pliku **python_intro.py** następującym:
 
 {% filename %}python_intro.py{% endfilename %}
 
