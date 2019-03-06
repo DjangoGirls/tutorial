@@ -161,7 +161,7 @@ Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację 
 Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
 
 - Pobieranie kodu z GitHuba
-- Tworzenie środowiska wirtualnego na PythonAnywhere, podobnie jak na twoim komputerze
+- Tworzenie środowiska wirtualnego na PythonAnywhere, podobnie jak na Twoim komputerze.
 - Aktualizowanie pliku ustawień z niektórych ustawień wdrażania
 - Konfigurowanie bazy danych w PythonAnywhere za pomocą polecenia `manage.py migrate`
 - Konfigurowanie plików statycznych (dowiemy się o nich później)
@@ -169,7 +169,7 @@ Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
 
 W PythonAnywhere wszystkie te kroki są zautomatyzowane, ale są to te same kroki, które trzeba wykonać z dowolnym innym dostawcą serwera.
 
-Najważniejszym w tej chwili jest to, aby zapamiętać, że baza danych w PythonAnywhere jest całkowicie oddzielona od bazy danych na twoim komputerze, co oznacza, że może mieć inne posty i konta administracyjne. W rezultacie, tak jak zrobiłyśmy to wcześniej na własnym komputerze, musimy zainicjować konto administratora za pomocą `createsuperuser`. PythonAnywhere automatycznie aktywował dla Ciebie Twojego virtualenva, więc jedyne, co musisz zrobić, to uruchomić:
+Najważniejszym w tej chwili jest to, aby zapamiętać, że baza danych w PythonAnywhere jest całkowicie oddzielona od bazy danych na Twoim komputerze, co oznacza, że może mieć inne posty i konta administracyjne. W rezultacie, tak jak zrobiłyśmy to wcześniej na własnym komputerze, musimy zainicjować konto administratora za pomocą `createsuperuser`. PythonAnywhere automatycznie aktywował dla Ciebie Twojego virtualenva, więc jedyne, co musisz zrobić, to uruchomić:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -185,7 +185,7 @@ Teraz, jeśli chcesz, możesz również rzucić okiem na swój kod w PythonAnywh
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  apps.py  migrations  models.pytests.py  static
+    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py tests.py  static
     templates  views.py
     
 
