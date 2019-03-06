@@ -37,18 +37,18 @@ Jeżeli używasz Maca lub Linuksa, powinnaś zobaczyć `$`, tak jak poniżej:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-Na Windowsie prawdopodobnie zobaczysz `>` coś takiego:
+W systemie Windows ujrzysz znak `>`, o tak:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Spójrz na powyższą sekcję Linux -- Zobaczysz coś więcej gdy dojdziesz do dalszej części tutorialu.
+Spójrz, na powyższą sekcję Linux -- Zobaczysz coś więcej, gdy dojdziesz do dalszej części tutorialu.
 
 <!--endsec-->
 
-Każda komenda będzie poprzedzona przez `$` lub `>` i jedną spację, czego nie powinieneś wpisywać. Twój komputer zrobi to za Ciebie. :)
+Każda komenda będzie poprzedzona przez `$` lub `>` i jedną spację, czego nie powinnaś wpisywać. Twój komputer zrobi to za Ciebie. :)
 
 > Jedna mała uwaga: w Twoim przypadku prompt może być poprzedzony czymś jeszcze, np. `C:\Users\ola>` lub `Olas-MacBook-Air:~ ola$` i jest to w 100% poprawne.
 
@@ -128,17 +128,17 @@ Prawdopodobnie ujrzysz coś podobnego na swoim komputerze. Kiedy otwierasz wiers
 
 ### Dowiedz się więcej o komendach
 
-Wiele poleceń, które można wpisać w wierszu polecenia ma wbudowaną funkcję pomocy, który można wyświetlić i przeczytać! Na przykład, aby dowiedzieć się więcej na temat polecenia cd:
+Wiele poleceń, które można wpisać w wierszu polecenia ma wbudowane funkcje pomocy, które można wyświetlić i przeczytać! Na przykład, aby dowiedzieć się więcej na temat polecenia cd:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X i Linux posiada polecenie `man`, który wyświetla Ci pomoc dla danego polecenia. Spróbuj `man pwd` i zobacz, co mówi lub umieścić `man` przed innim poleceniem aby zobaczyć jego pomoc. Wynikiem `man` jest normalna strona. Użyj spacji, aby przejść do następnej strony i `q` rzucić, patrząc na pomoc.
+OS X i Linux posiada polecenie `man`, który wyświetla Ci pomoc dla danego polecenia. Spróbuj `man pwd` i zobacz, co mówi lub umieścić `man` przed innim poleceniem, aby zobaczyć jego pomoc. Wynikiem `man` jest normalna strona. Użyj spacji, aby przejść do następnej strony i `q` rzucić, patrząc na pomoc.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Dodawanie przyrostka`/?` do większości poleceń, powoduje, że zostają wydrukowane strony pomocy. Konieczne może być przewinięcie okna polecenia aby zobaczyć to wszystko. Spróbuj `cd /?`.
+Dodawanie przyrostka`/?` do większości poleceń, powoduje, że zostają wyświetlone strony pomocy. Konieczne może być przewinięcie okna polecenia, aby zobaczyć to wszystko. Spróbuj `cd /?`.
 
 <!--endsec-->
 
@@ -197,7 +197,7 @@ Przejdźmy teraz do naszego folderu Pulpit:
     $ cd Desktop
     
 
-Zapamiętaj, że katalog "Desktop" może być przetłumaczony na język twojego systemu Linux. W takim przypadku, musisz wymienić `Desktop` na przetłumaczoną nazwę; na przykład dla niemieckiego tłumaczenia `Schreibtisch`.
+Zapamiętaj, że katalog "Desktop" może być przetłumaczony na język Twojego systemu Linux. W takim przypadku, musisz wymienić `Desktop` na przetłumaczoną nazwę; na przykład dla niemieckiego tłumaczenia `Schreibtisch`.
 
 <!--endsec-->
 
@@ -268,7 +268,7 @@ To niepozorne polecenie doda do Twojego pulpitu folder o nazwie `cwiczenie`. Mo�
 
 ### Ćwiczenie!
 
-Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` stwórz katalog o nazwie `test`. (Użyj poleceń `cd` i `mkdir`.)
+Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` stwórz katalog o nazwie `test`. Użyj poleceń `cd` i `mkdir`
 
 #### Rozwiązanie:
 
