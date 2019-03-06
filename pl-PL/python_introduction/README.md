@@ -654,7 +654,7 @@ Na Linuxie, będzie to wyglądać w ten sposób:
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-W wierszu polecań Windows będzie tak:
+W wierszu poleceń Windows będzie tak:
 
 {% filename %}command-line{% endfilename %}
 
