@@ -10,7 +10,7 @@ Potem, upewnij się, że śledzisz Django Girls na [Facebooku](http://facebook.c
 
 ### Czy możesz polecić kolejne materiały?
 
-Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programistycznych - może to być całkiem zniechęcające, gdy trzeba wybrać, co zrobić następne, ale my mamy o to zadbałyśmy. Niezależnie od tego czym interesowałaś się zanim przybyłaś na Django Girls i niezależnie od tego co zainteresowało Cię podczas przechodzenia tutorialu, oto kilka wolnych zasobów (lub zasobów z dużymi wolnymi komponentami), których możesz używać aby dostać się tam, gdzie chciałabyś być.
+Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programistycznych - może to być całkiem zniechęcające, gdy trzeba wybrać, co zrobić następne, ale my mamy o to zadbałyśmy. Niezależnie od tego czym interesowałaś się zanim przybyłaś na Django Girls i niezależnie od tego, co zainteresowało Cię podczas przechodzenia tutorialu, oto kilka wolnych zasobów (lub zasobów z dużymi wolnymi komponentami), których możesz używać aby dostać się tam, gdzie chciałabyś być.
 
 #### Django
 
@@ -28,7 +28,7 @@ Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programi
 - [Kurs Pythona na Codeacademy](https://www.codecademy.com/learn/learn-python)
 - [Kurs Pythona od Googla](https://developers.google.com/edu/python/)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) - wstępne ćwiczenia są bezpłatne 
-- [New Coder tutorials](http://newcoder.io/tutorials/) - tu znajdziesz wiele praktycznych przykładów jak używać Pythona
+- [Nowy koder Poradniki](http://newcoder.io/tutorials/)-jest wiele praktycznych przykładów, jak można użyć Pythona
 - [edX](https://www.edx.org/course?search_query=python) - możesz sprawdzić większość kursów za darmo, lecz jeśli chciałabyś otrzymać certyfikat lub zdobyć punkty zwiększające Twoje kwalifikacje, to może to trochę kosztować
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) - niektóre wykłady wideo są dostępne za darmo i możesz uzyskać Certyfikat Kursanta przechodząc przez ten kurs
 - [Python for Everybody](https://www.py4e.com/) - wolna i otwarta wersja Coursera Pythona dla każdej specjalizacji
