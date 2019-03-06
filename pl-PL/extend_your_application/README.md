@@ -192,7 +192,7 @@ Następnie w konsoli [PythonAnywhere Bash console](https://www.pythonanywhere.co
     [...]
     
 
-(Pamiętaj by podmienić `<your-pythonanywhere-domain>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez ostrych nawiasów.)
+(Pamiętaj, by podmienić `<your-pythonanywhere-domain>` na Twoją właściwą nazwę użytkownika PythonAnywhere, bez ostrych nawiasów).
 
 ## Aktualizacja plików statycznych na serwerze
 
