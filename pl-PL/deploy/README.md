@@ -87,7 +87,7 @@ I na końcu zapisujemy zmiany. Przejdź do konsoli i wykonaj poniższe polecenia
 
 ## Przesyłanie kodu do GitHuba
 
-Wejdź na stronę [GitHub.com](https://www.github.com) i załóż darmowe konto użytkownika. (Jeśli zrobiłeś to na warsztatach przygotowawczych to świetnie). Zapamiętaj hasło do swojego konta (dodaj go do swojego menedżera haseł, jeśli go używasz).
+Wejdź na stronę [GitHub.com](https://www.github.com) i załóż darmowe konto użytkownika. (Jeśli zrobiłaś to na warsztatach przygotowawczych to świetnie). Zapamiętaj hasło do swojego konta (dodaj je do swojego menedżera haseł, jeśli go używasz).
 
 Następnie utwórz nowe repozytorium i nadaj mu nazwę "my-first-blog" (ang. "mój-pierwszy-blog"). Pozostaw niezaznaczone pole wyboru "initialize with README", pozostaw opcję .gitignore pustą (zrobiłyśmy to ręcznie) i pozostaw licencję jako None.
 
