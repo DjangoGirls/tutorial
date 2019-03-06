@@ -178,7 +178,7 @@ Jeśli pracujesz na Windowsie i zobaczysz w tym momencie `UnicodeDecodeError`, u
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Teraz musisz sprawdzić, czy Twoja witryna działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer lub cokolwiek, z czego korzystasz) i wprowadź ten adres:
+Teraz wszystko, co musisz zrobić, to sprawdzić, czy Twoja strona działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer lub jakąkolwiek inną) i wprowadź ten adres:
 
 {% filename %}browser{% endfilename %}
 
