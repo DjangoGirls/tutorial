@@ -708,7 +708,7 @@ Zastąp kod w pliku **python_intro.py** następującym:
 if 3 > 2:
 ```
 
-Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poniższego:
+Gdybyśmy to teraz zapisały i uruchomiły, pojawiłby się błąd podobny do poniższego:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -720,7 +720,7 @@ Gdybyśmy to teraz zapisały i uruchomiły, pojawił się błąd podobny do poni
 
 Python oczekuje od nas dalszych instrukcji, które mają zostać wykonane w przypadku, gdy warunek `3 > 2` okaże się prawdziwy (czyli przyjmie wartość `True`). Sprawmy, żeby Python wypisał na ekranie "To działa!". Zmień kod w pliku **python_intro.py** na poniższy:
 
-{% filename %}python_intro.py{% endfilename %} 
+{% filename %}python_intro.py{% endfilename %}
 
 ```python
 if 3 > 2:
@@ -731,7 +731,7 @@ Zauważyłaś, że w kolejnym wierszu nasz kod posiada wcięcie 4 spacji? Musimy
 
 Zapisz plik i uruchom go jeszcze raz:
 
-{% filename %}command-line{% endfilename %} 
+{% filename %}command-line{% endfilename %}
 
 ```python
 $ python3 python_intro.py
@@ -744,7 +744,7 @@ Uwaga: Pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. O
 
 W poprzednich przykładach kod był wykonywany wtedy, gdy warunki okazywały się prawdziwe (True). Ale Python posiada również wyrażenia `elif` i `else`:
 
-{% filename %}python_intro.py{% endfilename %} 
+{% filename %}python_intro.py{% endfilename %}
 
 ```python
 if 5 > 2:
@@ -787,7 +787,7 @@ Widzisz co się tutaj wydarzyło? `elif` pozwala Ci na dodanie dodatkowego warun
 
 Po początkowej instrukcji `if` możesz dodać tyle instrukcji `elif`, ile tylko Ci się podoba. Na przykład:
 
-{% filename %}python_intro.py{% endfilename %} 
+{% filename %}python_intro.py{% endfilename %}
 
 ```python
 volume = 57
@@ -815,7 +815,7 @@ Python zbada każdy warunek i wyświetli:
 
 ## Komentarze
 
-Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą uczyć twój kod łatwiejszym do zrozumienia przez innych.
+Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą spowodować, że twój kod będzie łatwiejszy do zrozumienia przez innych.
 
 Zobaczmy, jak to wygląda:
 
