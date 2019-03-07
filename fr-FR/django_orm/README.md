@@ -202,7 +202,7 @@ On peut aussi inverser l'ordre de tri en ajouter `-` au début:
 
 ### Requêtes complexes grâce au chaînage des méthodes
 
-Comme vous l'avez vu, quand on applique certaines méthodes à `Post.objects` on obtient un QuerySet en résultat. Les mêmes méthodes peuvent également être appliquées sur un QuerySet, ce qui ensuite donnera lieu à un nouveau QuerySet. Thus, you can combine their effect by **chaining** them together:
+Comme vous l'avez vu, quand on applique certaines méthodes à `Post.objects` on obtient un QuerySet en résultat. Les mêmes méthodes peuvent également être appliquées sur un QuerySet, ce qui ensuite donnera lieu à un nouveau QuerySet. Ainsi, vous pouvez combiner leur effet en les **enchaînant** l'une après l'autre :
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
