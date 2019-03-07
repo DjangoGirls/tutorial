@@ -64,7 +64,7 @@ Next, run:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Készíts egy [GitHub](https://github.com) fiókot.
 
 ### PythonAnywhere
 
