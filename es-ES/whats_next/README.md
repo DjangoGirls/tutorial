@@ -22,21 +22,21 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
     #### HTML, CSS y JavaScript
     
     - [El curso de desarrollo web de Codeacademy](https://www.codecademy.com/learn/paths/web-development)
-    - [freeCodeCamp](https://www.freecodecamp.org/)
+    - [FreeCodeCamp](https://www.freecodecamp.org/)
     
     #### Python
     
-    - [El curso de Pyhton en Codeacademy](https://www.codecademy.com/learn/learn-python)
-    - [Google's Python course](https://developers.google.com/edu/python/)
+    - [El curso de Python en Codeacademy](https://www.codecademy.com/learn/learn-python)
+    - [Curso de Python de Google](https://developers.google.com/edu/python/)
     - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
     - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
     - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
     - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
     - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
     
-    #### Working with data
+    #### Trabajar con datos
     
-    - [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
+    - [Curso de ciencia de datos de Codecademy](https://www.codecademy.com/learn/paths/data-science)
     - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
     - [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
     
