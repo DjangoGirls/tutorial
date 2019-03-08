@@ -23,6 +23,6 @@ Ve a Aplicaciones → Utilidades → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. Si no lo encuentras allí, intenta buscarlo en Google. :)
 
 <!--endsec-->
