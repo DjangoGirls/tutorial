@@ -1,4 +1,4 @@
-# ¿Qué sigue?
+# ¿Y ahora qué?
 
 Date muchas felicitaciones. **¡Eres increíble!** ¡Estamos orgullosas! <3
 
@@ -17,7 +17,7 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
 - En nuestro libro Django Girls Tutorial:Extensions>/0></li> 
     
     - [El tutorial oficial de Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-    - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)</ul> 
+    - [Comienza a usar las lecciones en video de Django](http://www.gettingstartedwithdjango.com/)</ul> 
     
     #### HTML, CSS y JavaScript
     
