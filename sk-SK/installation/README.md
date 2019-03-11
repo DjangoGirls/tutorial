@@ -39,30 +39,30 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Inštalácia Gitu
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Vytvorenie GitHub účtu
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Prejdite na adresu [ GitHub.com ](https://www.github.com) a zaregistrujte si nový bezplatný používateľský účet. Nezabudnite si heslo zapamätať (ak používate správcu hesiel, pridajte si ho tam).
 
-# Create a PythonAnywhere account
+# Vytvor si PythonAnywhere účet
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Začni si čítať
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Gratulujeme, si pripravená začať! Pokiaľ máš stále zvyšný čas pred začiatkom workshopu, bolo by užitočné, ak by si si prečítala pár začiatočníckych kapitol:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Ako funguje Internet](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Úvod do príkazového riadku](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Úvod do jazyka Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Čo je Django?](../django/README.md)
 
-# Enjoy the workshop!
+# Uži si workshop!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Keď začne workshop, budeš môcť prejsť priamo na [Tvoj prvý Django projekt!](../django_start_project/README.md), lebo si už absolvovala látku v predchádzajucích kapitol.
