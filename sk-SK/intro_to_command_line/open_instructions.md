@@ -7,22 +7,22 @@ V závislosti od vašej verzie systému Windows a klávesnice, jedna z týchto m
 - Choď na menu Štart → Všetky programy → Príslušenstvo → Príkazový riadok.
 - Prejdite na domovskú obrazovku, umiestnite kurzor myši v ľavom dolnom rohu obrazovky a kliknite na šípku nadol, ktorá sa zobrazí (na dotykovej obrazovke, rýchlymi pohybmi prsta nahor z dolnej časti obrazovky). Zoznam aplikácii by sa mal zobraziť. Kliknite na príkazový riadok v časti systému Windows.
 - Podržte špeciálnu klávesu Windows na klávesnici a stlačte klávesu "X". Výber "Príkazový riadok" z kontextového menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Podržte klávesu Windows a stlačte tlačidlo "R" sa zobrazí okno "Run". Zadajte "cmd" do poľa a kliknite na tlačidlo OK.
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Zadaj "cmd" v "Run" okne](../python_installation/images/windows-plus-r.png)
 
-Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+Ďalej v tomto tutoriále, budete musieť mať dva príkazové okná otvorené súčasne. Avšak v niektorých verziách systému Windows, ak už máte otvorené jedno okno príkazového riadku a pokúsite sa otvoriť druhé pomocou rovnakej metódy, to spôsobí zobrazenie príkazového okna, ktoré už máte otvorené. Skúste to teraz na vašom počítači a uvidíte, čo sa stane! Ak sa zobrazí len jedno príkazové okno, skúste jeden z ďalších postupov v zozname vyššie. Aspoň jeden z nich by mať za následok otvorenie nového príkazového okna.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Choď do Aplikácie → Nástroje → Terminál.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Je to pravdepodobne aplikácie → Príslušenstvo → terminál, alebo aplikácie → systém → terminál, ale to môže závisieť na vašom systéme. Ak to tam nie je, môžete sa pokúsiť to vyhladať na Google. :)
 
 <!--endsec-->
