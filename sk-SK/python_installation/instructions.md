@@ -2,15 +2,15 @@
 > 
 > Táto časť je založená na príručke Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django je napísaný v jazyku Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django je napísaný v jazyku Python. Python potrebujeme na všetko, čo chceme robiť v Djangu. Začnime teda s inštaláciou! Chceme, aby si si nainštalovala Python 3,, takže ak máš staršiu verziu, budeš ju musieť upgradovať. Ak už máš verziu 3.4 alebo vyššiu, malo by to byť v poriadku.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Najprv si skontroluj, či je na počítači v riadku Systémové informácie na stránke Informácie o systéme spustená 32-bitová verzia alebo 64-bitová verzia systému Windows. Ak chceš prejsť na túto stránku, vyskúšaj jednu z týchto metód:
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
+* Stlač klávesu Windows a klávesu Pause/Break v rovnakom čase
+* Otvor v ovládacom paneli v ponuke Windows, potom prejdi do Systém a Zabezpečenia, potom Systém
+* Stlačte klávesu Windows a potom prejdite do Nastavenia > Systém > O Systéme
 
 You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
