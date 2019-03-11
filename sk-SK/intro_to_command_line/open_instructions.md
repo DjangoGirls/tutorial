@@ -1,12 +1,12 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+V závislosti od vašej verzie systému Windows a klávesnice, jedna z týchto možností by mala otvoriť príkazové okno (budete musieť trochu experimentovať, ale nemusíte vyskúšať všetky tieto návrhy):
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
+- Prejdite do ponuky Štart alebo obrazovky a do poľa Hľadať zadajte "Príkazový riadok".
+- Prejdite na Štart menu → Systém Windows → Príkazový riadok.
+- Choď na menu Štart → Všetky programy → Príslušenstvo → Príkazový riadok.
+- Prejdite na domovskú obrazovku, umiestnite kurzor myši v ľavom dolnom rohu obrazovky a kliknite na šípku nadol, ktorá sa zobrazí (na dotykovej obrazovke, rýchlymi pohybmi prsta nahor z dolnej časti obrazovky). Zoznam aplikácii by sa mal zobraziť. Kliknite na príkazový riadok v časti systému Windows.
+- Podržte špeciálnu klávesu Windows na klávesnici a stlačte klávesu "X". Výber "Príkazový riadok" z kontextového menu.
 - Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
