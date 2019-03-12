@@ -16,7 +16,7 @@ Python pre Windows si môžeš stiahnuť z webstránky https://www.python.org/do
 
 Jedna vec, na ktorú treba dávať pozor: Počas inštalácie si všimnete okno označené "Setup". Uisti sa, že začiarktneš políčko "Pridať Python 3.6 do PATH" alebo "Pridať Python do premenných prostredia" a klikneš na "Inštalovať", ako je zobrazené tu (môže to byť trochu iné, ak inštalujete inú verziu):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Nezabudni pridať Python do Cesty](../python_installation/images/python-installation-options.png)
 
 Po dokončení inštalácie sa môže zobraziť dialógové okno s odkazom, pomocou ktorého sa môžeš dozvedieť viac o Pythone alebo o verzii, ktorú si nainštalovala. Zatvor alebo zruš dialógové okno - v tomto návode sa budeš učiť viac!
 
@@ -27,7 +27,7 @@ Poznámka: Ak používaš staršiu verziu systému Windows (7, Vista alebo ktor�
 
 Ak si nainštaluješ staršiu Python verziu, inštalačně okno môže vyzerať inak ako je to zobrazené hore. Uisti sa, že označíš "Add python.exe to Path", následne klikni na tlačidlo vľavo a zvoľ "Will be installed on local hard drive" ("Bude nainštalované na lokálny pevný disk"):
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Pridaj Python do Path, staršie verzie](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -79,14 +79,14 @@ Zadaj do konzoly tento príkaz:
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Ak používaš staršiu verziu Fedora, možno sa ti objaví chyba, že príkaz `dnf` neexistuje. V tomto prípade musíš použiť príkaz `yum`.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Zadaj do konzoly tento príkaz:
 
 {% filename %}command-line{% endfilename %}
 
@@ -95,7 +95,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Ak si chceš overiť, že inštalácia bola úspešná, otvor príkazový riadok a spusti príkaz `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -103,10 +103,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+Zobrazená verzia sa môže líšiť od verzie 3.6.1 - mala by zodpovedať verzii, ktorú si nainštalovala.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
+**POZNÁMKA:** Ak používaš Windows a objavý sa ti chybová hláška, že `python3` nebol najdený, skús použiť `python` (bez čísla `3`) a over či to náhodou nie je Python 3.4 verzia alebo vyššia.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+V prípade nejakých pochybností, alebo ak sa niečo pokazilo a nemáš tušenie, čo robiť ďalej - opýtaj sa svojho trénera! Niekedy veci nejdú úplne hladko a je lepšie požiadať o pomoc niekoho, kto má viac skúseností.
