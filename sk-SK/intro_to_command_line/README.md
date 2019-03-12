@@ -16,17 +16,17 @@ Okno, ktoré sa zvyčajne nazýva **príkazový riadok** alebo **rozhranie prík
 
 ## Otvor rozhranie príkazového riadku
 
-To start some experiments we need to open our command-line interface first.
+Aby sme mohli trochu experimentovať, musíme najskôr rozhranie príkazového riadku otvoriť.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Príkazový riadok
 
-You now should see a white or black window that is waiting for your commands.
+Teraz by si už mala vidieť biele alebo čierne okno, ktoré čaká na tvoje príkazy.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Ak si na Macu alebo Linuxe, zrejme uvidíš `$`, presne takto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -173,13 +173,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Poznámka: V powershelli môžeš použiť aj 'ls' ako na Linuxe alebo Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### Zmena aktuálneho adresára
 
-Now, let's go to our Desktop directory:
+Teraz prejdime do adresára Plochy:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
