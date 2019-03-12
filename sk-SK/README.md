@@ -42,7 +42,7 @@ V každej kapitole ktorá už bola spracovaná sa nachádza odkaz na príslušn�
 
 Tento návod vytvorili a udržiavajú [DjangoGirls](https://djangogirls.org/). Ak nájdeš chyby alebo by si chcela aktualizovať tento návod, prosím [postupuj podľa pokynov](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Chceš pomôcť s prekladom do iných jayzkov?
+## Chceš pomôcť s prekladom do iných jazykov?
 
 V súčasnosti koordinujeme preklady cez platformu crowdin.com:
 
