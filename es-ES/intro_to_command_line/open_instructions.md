@@ -7,7 +7,7 @@ Dependiendo de tu versión de Windows y tu teclado, una de las opciones siguient
 - Ve al menú de Inicio → Todos los Programas → Accessorios → Símbolo del Sistema.
 - Ve a la pantalla de Inicio, pasa el ratón sobre la esquina inferior izquierda de la pantalla, y haz click en la flecha hacia abajo (en una pantalla táctil, desliza hacia arriba desde la parte baja de la pantalla). La página de la Aplicación debería abrirse. Haz click en Símbolo del Sistema en la sección Sistema de Windows.
 - Mantén la tecla especial de Windows de tu teclado y pulsa "X". Elige "Símbolo del Sistema" del menú emergente.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Mantén pulsada la tecla de Windows y pulsa "R" para abrir una ventana "Ejecutar". Escribe "cmd" en la caja, y haz click en OK.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
