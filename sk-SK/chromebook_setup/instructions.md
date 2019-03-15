@@ -37,9 +37,9 @@ This bottom area is your terminal. You can use the terminal to send instructions
 
 ### Virtuálne prostredie
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Virtuálne prostredie (tiež nazývané virtualenv) je ako súkromná krabica, do ktorej môžeme uložiť užitočný počítačový kód patriaci projektu na ktorom pracujeme. Používame ho na oddelenie rôznych častí kódu pre rôzne projekty, aby sa nám medzi nimi nepomiešali veci.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+V termináli, v spodnej časti Cloud 9 rozhrania, spusti nasledovné:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Ak to ešte stále nefunguje, požiadaj svojho mentora/ku o pomoc.
 
-Next, run:
+Ďalej zadaj nasledovné príkazy:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,16 +60,16 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(všimni si, že v poslednom riadku sme použili vlnovku a za ňou znamienko rovnosti - `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Vytvor si [GitHub](https://github.com) účet.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls tutoriál obsahuje kapitolu o tom čomu sa hovorí nasadenie (Deployment). Je to proces prenesenia kódu, ktorý používa tvoja nová webová aplikácia, na verejne dostupný počítač (ešte nazývaný aj server), aby aj ostatní ľudia videli tvoju prácu.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Táto časť je trochu divná, keď pracuješ s týmto tutoriálom na Chromebooku, lebo už používaš počítač, ktorý je na internete (na rozdiel od notebooku). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
