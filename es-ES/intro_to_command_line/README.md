@@ -44,7 +44,7 @@ En Windows, probablemente veas un `>`, como éste:
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Echa un vistazo a la sección anterior sobre Linux -- podrás consultar más cuando llegues a PythonAnywhere más adelante en este tutorial.
 
 <!--endsec-->
 
