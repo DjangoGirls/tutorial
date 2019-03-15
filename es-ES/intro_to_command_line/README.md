@@ -1,10 +1,10 @@
 # Introducción a la interfaz de línea de comandos
 
-> Para los lectores en casa: este capitulo es visto en el video [Tu nuevo amigo: línea de comandos](https://www.youtube.com/watch?v=jvZLWhkzX-8).
+> Para los lectores en casa: este capítulo puede verse en el vídeo [Tu nuevo amigo: Línea de Comandos](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-Es emocionante, ¿verdad? Vas a escribir tu primera línea de código en pocos minutos! :)
+Es emocionante, ¿verdad? ¡Vas a escribir tu primera línea de código en pocos minutos! :)
 
-**Permítenos presentarte a tu primer nuevo amigo: ¡la línea de comandos!**
+**Permítenos presentarte a tu primer amigo nuevo: ¡la línea de comandos!**
 
 Los siguientes pasos te mostrarán cómo usar aquella ventana negra que todos los hackers usan. Puede parecer un poco aterrador al principio pero es solo un mensaje en pantalla que espera a que le des órdenes.
 
@@ -16,17 +16,17 @@ La ventana, que generalmente es llamada **línea de comandos** ó **interfaz de 
 
 ## Abrir la interfaz de línea de comandos
 
-To start some experiments we need to open our command-line interface first.
+Para empezar con algunos experimentos necesitarás abrir nuestra interfaz de línea de comandos en primer lugar.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Símbolo del Sistema (Prompt)
 
-You now should see a white or black window that is waiting for your commands.
+Ahora deberías ver una pantalla blanca o negra que espera a que introduzcas tus comandos.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Si estás en Mac o Linux, probablemente veas una `$`, como ésta:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,7 +37,7 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+En Windows, probablemente veas un `>`, como éste:
 
 {% filename %}command-line{% endfilename %}
 
