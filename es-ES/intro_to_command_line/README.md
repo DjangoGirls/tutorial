@@ -48,9 +48,9 @@ Echa un vistazo a la sección anterior sobre Linux -- podrás consultar más cua
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Cada comando vendrá precedido por un `$` o un `>` y un espacio, pero no debes escribirlos tú mismo. El ordenador lo hará por ti. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Solo una pequeña anotación: en tu caso puede que haya algo como `C:\Users\ola>` o `Olas-MacBook-Air:~ ola$` antes del símbolo de introducción, lo cual es 100% NORMAL.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
