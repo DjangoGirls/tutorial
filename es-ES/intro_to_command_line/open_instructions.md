@@ -9,9 +9,9 @@ Dependiendo de tu versión de Windows y tu teclado, una de las opciones siguient
 - Mantén la tecla especial de Windows de tu teclado y pulsa "X". Elige "Símbolo del Sistema" del menú emergente.
 - Mantén pulsada la tecla de Windows y pulsa "R" para abrir una ventana "Ejecutar". Escribe "cmd" en la caja, y haz click en OK.
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Escribe "cmd" en la ventana "Ejecutar"](../python_installation/images/windows-plus-r.png)
 
-Más adelante en este tutorial, necesitarás tener dos consolas de comandos abiertas a la misma vez. Sin embargo, en algunas versiones de Windows, si ya tienes abierta una ventana de comandos e intentas abrir otra usando el mismo método, simplemente maximizará la que ya tienes abierta. ¡Inténtalo ahora en tu ordenador y mira qué ocurre! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+Más adelante en este tutorial, necesitarás tener dos consolas de comandos abiertas a la misma vez. Sin embargo, en algunas versiones de Windows, si ya tienes abierta una ventana de comandos e intentas abrir otra usando el mismo método, simplemente maximizará la que ya tienes abierta. ¡Inténtalo ahora en tu ordenador y mira qué ocurre! Si solo se abre una ventana de comandos, intenta alguno de los otros métodos explicados anteriormente. Al menos uno de ellos debería abrir una nueva ventana de comandos.
 
 <!--endsec-->
 
@@ -23,6 +23,6 @@ Ve a Aplicaciones → Utilidades → Terminal.
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. Si no lo encuentras allí, intenta buscarlo en Google. :)
+Probablemente se encuentre en Aplicaciones → Accesorios → Terminal, o Aplicaciones → Sistema → Terminal, aunque esto dependerá de tu sistema. Si no lo encuentras allí, intenta buscarlo en Google. :)
 
 <!--endsec-->
