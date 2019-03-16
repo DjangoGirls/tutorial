@@ -22,6 +22,13 @@ Atom is another popular editor. It's free, open-source and available for Windows
 [Download it here](https://atom.io/)
 
 
+## Visual Studio Code
+
+VS Code is a popular and free editor provided by Microsoft, which works on Windows, OS X and Linux.
+
+[Download it here](https://code.visualstudio.com/download)
+
+
 ## Why are we installing a code editor?
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
