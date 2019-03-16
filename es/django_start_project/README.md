@@ -1,7 +1,7 @@
 # ¡Tu primer proyecto en Django!
 
 > Parte de este capítulo se basa en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
-> 
+>
 > Parte de este capítulo está basado en el [ tutorial django-marcador](http://django-marcador.keimlink.de/) bajo licencia de Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
 
 ¡Vamos a crear un blog sencillo!
@@ -19,10 +19,10 @@ En MacOS o Linux deberías ejecutar el siguiente comando en la consola. **no te 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
-    
+
 
 > El punto `.` es crucial porque le dice al script que instale Django en el directorio actual (para el cual el punto `.` sirve de abreviatura).
-> 
+>
 > **Nota** Cuando escribas los comandos de arriba acuérdate de que sólo tienes que escribir la parte que empieza por `django-admin`. La parte de `(myvenv) ~/djangogirls$` que mostramos aquí es sólo un ejemplo del mensaje que aparecerá en tu línea de comandos.
 
 <!--endsec-->
@@ -34,10 +34,10 @@ En Windows debes ejecutar el siguiente comando. **(No olvides incluir el punto `
 {% filename %}command-line{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
-    
+
 
 > El punto `.` es crucial porque le dice al script que instale Django en el directorio actual (para el cual el punto `.` sirve de abreviatura).
-> 
+>
 > **Nota** Cuando teclees los comandos de arriba, recuerda que sólo tienes que escribir la parte que empieza por `django-admin.exe`. La parte de `(myvenv) C:\Users\Name\djangogirls>` que mostramos aquí es sólo un ejemplo del mensaje que aparecerá en tu línea de comandos.
 
 <!--endsec-->
@@ -52,7 +52,7 @@ En Windows debes ejecutar el siguiente comando. **(No olvides incluir el punto `
     │        wsgi.py
     │        __init__.py
     └───requirements.txt
-    
+
 
 > **Nota**: en tu estructura de directorios, tambièn veràs el directorio `venv` que creamos anteriormente.
 
@@ -104,12 +104,12 @@ Cuando `DEBUG` es `True` y `ALLOWED_HOST` esta vacìo, el host es validado contr
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-ALLOWED_HOSTS = ['127.0.0.1', ' . pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
 > **Nota**: si estas usando un Chromebook, añade esta linea al final del archivo settings.py: `MESSAGE_STORAGE =
 'django.contrib.messages.storage.session.SessionStorage'`
-> 
+>
 > Añade también `.c9users.io` a `ALLOWED_HOSTS` si estás usando cloud9
 
 ## Configurar una base de datos
@@ -150,7 +150,7 @@ Para crear una base de datos para nuestro blog, ejecutemos lo siguiente en la co
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying sessions.0001_initial... OK
-    
+
 
 Y, ¡terminamos! Es hora de iniciar el servidor web y ver si está funcionando nuestro sitio web!
 
@@ -161,35 +161,35 @@ Debes estar en el directorio que contiene el archivo `manage.py` (en la carpeta 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
-    
+
 
 Si estas usando un Chromebook, utiliza este comando:
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
-    
+
 
 Si estás en Windows y te falla con un error `UnicodeDecodeError`, utiliza en su lugar este comando:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
-    
+
 
 Ahora todo lo que tienes que hacer es comprobar que tu sitio se esté ejecutando. Abre tu navegador (Firefox, Chrome, Safari, Internet Explorer o el que utilices) y escribe la dirección:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
-    
+
 
 Si estàs usando un Chromebook, siempre visitaras tu servidor de pruebas accediendo a:
 
 {% filename %}browser{% endfilename %}
 
     https://django-girls-<your cloud9 username>.c9users.io
-    
+
 
 ¡Enhorabuena! ¡Has creado tu primer sitio web y lo has iniciado usando un servidor web! ¿No es genial?
 
