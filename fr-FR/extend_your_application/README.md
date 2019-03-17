@@ -160,7 +160,7 @@ Nous allons créer un fichier `post_detail.html` dans le dossier `blog/templates
 
 Une nouvelle fois, nous faisons hériter de `base.html`. Dans le `content` block, nous voulons afficher la date de publication d'un post (si elle existe), son titre et son texte. Mais vous souhaitez peut-être quelques éclaircissements avant, non?
 
-{% raw %}`{% if ... %} ... {% endif %}` est une balise de template que nous pouvons utiliser si nous voulons vérifier quelque chose. (Vous souvenez-vous de `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` est une balise de template que nous pouvons utiliser si nous voulons vérifier quelque chose. (Vous souvenez-vous de `if ... else ..` que nous avons appris dans le chapitre **Introduction à Python** ?) Dans ce cas spécifique, nous voulons vérifier que `published_date` existe.{% endraw %}
 
 Ok, vous pouvez maintenant actualiser votre page et voir si `TemplateDoesNotExist` a enfin disparu.
 
@@ -190,7 +190,7 @@ Puis, dans la console bash de [PythonAnywhere](https://www.pythonanywhere.com/co
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(N’oubliez pas de remplacer `<your-pythonanywhere-domain>` avec votre propre sous-domaine PythonAnywhere, sans les chevrons.)
 
 ## Mise à jour des fichiers statiques sur le serveur
 
