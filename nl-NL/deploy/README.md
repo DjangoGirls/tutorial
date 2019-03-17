@@ -169,16 +169,16 @@ Als je kijkt wat er gebeurt, zie je wat het doet:
 
 Op PythonAnywhere zijn al deze stappen geautomatiseerd, maar het zijn dezelfde stappen die je met een andere provider zou moeten doorlopen.
 
-Het voornaamste wat je nu moet onhouden is dat je database op PythonAnywhere totaal gescheiden is van de database op je eigen computer, dus je kunt verschillende posts en admin accounts hebben. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Het voornaamste wat je nu moet onhouden is dat je database op PythonAnywhere volledig gescheiden is van de database op je eigen computer, dus je kunt verschillende posts en admin accounts hebben. Daarom moeten we, net zoals we net op je eigen computer gedaan hebben, de admin account weer initialiseren met `createsuperuser`. PythonAnywhere heeft al automatisch je virtualenv voor je gestart, dus alles wat je hoeft te doen is:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Typ de details in voor je admin gebruiker. Het is het handigst als je dezelfde gebruikt als op je eigen computer om verwarring te voorkomen, tenzij je het wachtwoord op PythonAnywhere veiliger wil maken.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Als je wil kun je nu ook kijken naar je code op PythonAnywhere door `ls` te gebruiken:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -189,13 +189,13 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
     tests.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Je kunt ook naar de "Files" pagina gaan en door je bestanden navigeren met behulp van de ingebouwde PythonAnywhere bestandsbrowser. (vanaf de Console pagina kun je naar andere pagina's in PythonAnywhere via de menuknop in de rechterbovenhoek. Zodra je op één van de pagina's bent zijn er links naar de andere pagina's aan de bovenkant.)
 
-## You are now live!
+## Je bent live!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+Je site zou nu live moeten zijn op het openbare internet! Klik door naar de PythonAnywhere "Web" pagina om de link te verkrijgen. Je kunt die met iedereen delen die je wilt :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> **Opmerking**Dit is een tutorial voor beginners, en tijdens het deployen hebben we een aantal stappen genomen die vanuit een veiligheidsoogpunt niet ideaal zijn. Als en wanneer je besluit om dit project voort te zetten, of met een nieuw project begint, is het handig om de [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) te bekijken voor wat tips om je site beter te beveiligen.
 
 ## Debugging tips
 
