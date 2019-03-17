@@ -26,6 +26,6 @@ Možda se pitate zašto instaliramo poseban editor koda umesto da koristimo neš
 
 Prvi razlog je taj što kod treba da bude **običan tekst**, a problem sa programima poput Word-a i Textedit-a je taj da zapravo ne proizvode običan tekst, nego tekst obogaćen fontovima i formatiranjem, koristeći posebne formate poput [RTF-a (eng. Rich Text Format) ](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Drugi razlog je taj da su editori specijalizovani za unos koda i mogu pružiti korisne funkcionalnosti poput bojenja koda prema njegovom značenju ili automatskog zatvaranja navodnika.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Videćemo sve ovo kasnije na primeru. Uskoro ćete posmatrati svoj stari dobri editor kao jedan od omiljenih alata. :)
