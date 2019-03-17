@@ -208,9 +208,9 @@ Une fois que nous avons fait cela, nous pouvons mettre en ligne (pusher) nos mod
     [...]
     
 
-You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+N’oubliez pas de remplacer `<your-pythonanywhere-domain>` avec votre propre sous-domaine PythonAnywhere, sans les chevrons. Votre nom de sous-domaine est normalement votre nom d'utilisateur PythonAnywhere, mais dans certains cas, il peut être un peu différent (par exemple si votre nom d'utilisateur contient des lettres capitales). Donc, si cette commande ne fonctionne pas, utilisez la commande `ls` (lister fichiers) pour trouver votre sous-domaine/nom de dossier, puis `cd` jusque là.
 
-Now watch your code get downloaded. Si vous voulez vérifier que le nouveau code est arrivé sur PythonAnywhere, vous pouvez aller sur la page **"Files"** et y retrouver les fichiers (vous pouvez naviguer dans les différentes pages de PythonAnywhere depuis le menu).
+Maintenant, vous voyez votre code en train d'être téléchargé. Si vous voulez vérifier que le nouveau code est arrivé sur PythonAnywhere, vous pouvez aller sur la page **"Files"** et y retrouver les fichiers (vous pouvez naviguer dans les différentes pages de PythonAnywhere depuis le menu).
 
 * Pour finir, n'oubliez pas de recharger votre application web : onglet [Web](https://www.pythonanywhere.com/web_app_setup/) puis cliquez sur le bouton **Reload**.
 
