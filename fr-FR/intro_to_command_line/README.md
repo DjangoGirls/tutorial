@@ -26,7 +26,7 @@ Vous devriez maintenant voir une fenêtre noire ou blanche qui attend vos comman
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Si vous êtes sous Mac ou Linux, vous verrez probablement un `$`, comme ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -52,13 +52,13 @@ Chaque commande que vous taperez sera automatiquement précédée par un `$` ou 
 
 > Petite remarque : il se peut que vous voyiez quelque chose comme `C:\Users\ola>` ou `Olas-MacBookAir:~ola$` avant le signe de prompt. Pas de problème : c'est parfaitement normal.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+La partie jusque et y compris le `$` ou le `>` est appelée *l’invite de commande*, ou *prompt* (en anglais) pour faire court. Elle vous invite à entrer une commande.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+Dans le tutoriel, lorsque nous voulons que vous tapiez une commande, nous allons inclure le `$` ou `>` et parfois d'autres information juste avant, à sa gauche. Ignorez cette partie à gauche et tapez uniquement la commande, qui commence après l’invite.
 
 ## Votre première commande (YAY !)
 
-Let's start by typing this command:
+Commençons en tapant cette commande :
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -78,7 +78,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Puis appuyez sur la touche `entrée`. Voilà ce qui s'affiche chez moi :
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,7 +86,7 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Comme vous pouvez le voir, l'ordinateur vient d'afficher votre nom d'utilisateur. Sympa, non ? ;)
 
 > Essayez de taper chaque commande sans copier-coller. Ça aide à les retenir !
 
@@ -96,7 +96,7 @@ Each operating system has a slightly different set of commands for the command l
 
 ### Dossier courant
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Ce serait pratique de savoir dans quel répertoire nous nous trouvons. Pour le savoir, tapez la commande suivante et appuyez sur `entrée` :
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -106,7 +106,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Remarque : "pwd" veut dire "print working directory" (afficher le dossier courant).
+> Remarque : « pwd » veut dire « print working directory » (afficher le dossier courant).
 
 <!--endsec-->
 
