@@ -11,19 +11,19 @@ Cloud IDE je alatka koja vam omogućava uređivanje kodova i pristup računaru u
 3. Kliknite *New Server*
 4. Kliknite na dugme sa nazivom "Terminal"(sa leve strane prozora)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Sada bi trebalo da vidite interfejs sa trakom sa opcijama sa leve strane. Kliknite "Terminal" dugme kako biste otvorili terminal sa komandama:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Terminal na PaizaCloud Cloud IDE je sada spreman za vaše komande. Možete da promenite veličinu prozora kako biste ga učinili malo većim.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
+1. Idite na [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Napravite Vaš nalog
 3. Click *Create Environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
