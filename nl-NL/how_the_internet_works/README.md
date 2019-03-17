@@ -6,7 +6,7 @@
 
 Gokje: je gebruikt het Internet zeker elke dag? Maar weet je écht wat er gebeurt als je een adres zoals https://djangogirls.org in je browser ingeeft en op de `enter` knop drukt?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Net zoals je video's, muziek of afbeeldingen. Echter is er één dingetje dat uniek is voor websites: ze bevatten computer code genaamd HTML.
+Het eerste wat je moet begrijpen is dat een website gewoon een stelletje opgeslagen bestanden op een harde schijf zijn. Net zoals je video's, muziek of afbeeldingen. Echter is er één dingetje dat uniek is voor websites: ze bevatten computer code genaamd HTML.
 
 Als je niet bekend bent met programmeren kan het moeilijk zijn om in eerste instantie HTML te begrijpen. Je web browsers(zoals Chrome, Safari, Firefox, etc.) zijn er anders wel gek op. Web browsers zijn ontwerpen om deze code te begrijpen. Ze volgen de instructies die omschreven staan in de code en presenteren de bestanden waar jouw website uit bestaat, precies zoals jij het wilt.
 
@@ -22,7 +22,7 @@ Ziet er uit als een puinhoop, toch? In feite is het een netwerk van aaneengeslot
 
 ![Figuur 1.2](images/internet_3.png)
 
-Het is fascinerend, nietwaar? But it is not possible to have a wire between every machine connected to the Internet. Dus, om een machine te bereiken (bijvoorbeeld degene waarop https://djangogirls.org staat), moeten we een verzoek versturen dat langs vele, vele verschillende machines gaat.
+Het is fascinerend, nietwaar? Maar het is uiteraard niet mogelijk om een kabel te hebben tussen elk apparaat wat verbonden is met het internet. Dus, om een machine te bereiken (bijvoorbeeld degene waarop https://djangogirls.org staat), moeten we een verzoek versturen dat langs vele, vele verschillende machines gaat.
 
 Het ziet er zo uit:
 
