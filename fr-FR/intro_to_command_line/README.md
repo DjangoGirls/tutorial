@@ -296,7 +296,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Félicitations ! :)
 
 * * *
 
@@ -348,7 +348,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Maintenant, il est temps de supprimer le dossier `exercices` :
 
 > **Attention** : Supprimer des fichiers avec `del`, `rmdir` ou `rm` est irrévocable, ce qui veut dire que *les fichiers supprimés sont perdus à jamais* ! Du coup, faites très attention avec cette commande.
 
@@ -413,11 +413,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Cool, non ? :)
 
 ## Résumé
 
-Here is a summary of some useful commands:
+Voici un résumé de quelques commandes utiles :
 
 | Commande (Windows) | Commande (Mac OS / Linux) | Description                      | Exemple                                            |
 | ------------------ | ------------------------- | -------------------------------- | -------------------------------------------------- |
@@ -438,4 +438,4 @@ If you're curious, [ss64.com](http://ss64.com) contains a complete reference of 
 
 ## Vous êtes prête ?
 
-Let's dive into Python!
+Plongeons dans Python !
