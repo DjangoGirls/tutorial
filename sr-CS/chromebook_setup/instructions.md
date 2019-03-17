@@ -24,7 +24,7 @@ Terminal na PaizaCloud Cloud IDE je sada spreman za vaše komande. Možete da pr
 
 1. Idite na [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. Napravite Vaš nalog
-3. Click *Create Environment*
+3. Kliknite na *Kreiraj okruženje *
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
