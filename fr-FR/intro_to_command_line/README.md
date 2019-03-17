@@ -92,7 +92,7 @@ Comme vous pouvez le voir, l'ordinateur vient d'afficher votre nom d'utilisateur
 
 ## Les bases
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Les différents systèmes d'exploitation ont des commandes légèrement différentes, donc faites attention à suivre les instructions pour votre système d'exploitation. Allons-y !
 
 ### Dossier courant
 
@@ -122,23 +122,23 @@ Ce serait pratique de savoir dans quel répertoire nous nous trouvons. Pour le s
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Vous verrez probablement quelque chose de similaire sur votre machine. Quand vous ouvrez une ligne de commande, vous démarrez habituellement dans le dossier personnel de votre utilisateur.
 
 * * *
 
 ### En savoir plus sur une commande
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+De nombreuses commandes que vous pouvez taper à l’invite de commande ont une aide intégrée que vous pouvez afficher et lire ! Par exemple, pour en savoir plus sur le répertoire actuel :
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+macOS et Linux ont une commande `man`, qui donne des informations sur les commandes. Essayez `man pwd` et regardez ce qui s'affiche, ou ajoutez `man` devant une autre commande pour voir sa documentation. La sortie de `man` est normalement paginée. Utilisez la barre d’espace pour passer à la page suivante et `q` pour quitter l’aide.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Ajouter un `/ ?` à la fin de la commande devrait également permettre d'afficher la page d’aide. Vous devrez peut-être faire défiler votre fenêtre de commande vers le haut pour tout voir. Essayez `cd / ?`.
 
 <!--endsec-->
 
@@ -179,7 +179,7 @@ Du coup, que pouvons-nous trouver dans ce dossier personnel ? Voyons voir :
 
 ### Changer le dossier courant
 
-Now, let's go to our Desktop directory:
+Maintenant, essayons d'aller sur notre Bureau :
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -197,7 +197,7 @@ Now, let's go to our Desktop directory:
     $ cd Bureau
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Notez que le nom du répertoire « Bureau » pourrait être traduit dans la langue de votre compte Linux. Si c'est le cas, vous devrez remplacer `Bureau` par sa traduction. Par exemple, `Schreibtisch` pour l’allemand ou <0>Desktop</0> pour l'anglais.
 
 <!--endsec-->
 
@@ -210,7 +210,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Vérifions que ça a bien changé :
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -232,7 +232,7 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Et voilà !
 
 > Pro tip : si vous tapez `cd B` puis que vous appuyez sur la touche `tabulation`, la ligne de commande va automatiquement compléter le reste du nom. Cela va vous permettre d'aller plus vite et d'éviter des fautes de frappe. Si plusieurs dossiers commencent par un « B », appuyez sur la touche `tabulation` deux fois pour avoir une liste des options.
 
@@ -240,7 +240,7 @@ Here it is!
 
 ### Créer un dossier
 
-How about creating a practice directory on your desktop? You can do it this way:
+Que diriez-vous de créer un répertoire dédié aux exercices sur votre bureau ? Vous pouvez le faire de cette façon :
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -260,7 +260,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Cette petite commande crée un dossier nommé `exercices` sur votre bureau. Vous pouvez vérifier qu'il est bien là en regardant votre Bureau, ou en lançant la commande `ls` ou `dir` ! Essayez donc. :)
 
 > Pro tip : Si vous voulez éviter de taper les mêmes commandes plein de fois, essayez d'appuyer sur les touches `flèche haut` et `flèche bas` pour retrouver les dernières commandes que vous avez tapées.
 
@@ -268,7 +268,7 @@ This little command will create a folder with the name `practice` on your deskto
 
 ### Exercice !
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Un petit défi pour vous : dans votre nouveau dossier `exercices`, créez un dossier appelé `test`. (Pour ça, utilisez les commandes `cd` et `mkdir`.)
 
 #### Solutions :
 
@@ -302,9 +302,9 @@ Félicitations ! :)
 
 ### Nettoyage
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Supprimons tout ce qu'on vient de faire, histoire d'éviter de laisser du bazar.
 
-First, we need to get back to Desktop:
+D'abord, revenons au Bureau :
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -324,9 +324,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Grâce à `...` et la commande `cd`, vous pouvez aller directement dans le dossier parent de votre répertoire courant (c'est-à-dire le dossier qui contient le dossier dans lequel vous étiez).
 
-Check where you are:
+Vérifiez où vous êtes :
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -432,9 +432,9 @@ Voici un résumé de quelques commandes utiles :
 | rmdir /S           | rm -r                     | supprime un répertoire           | **rm -r testdirectory**                            |
 | [CMD] /?           | man [CMD]                 | affiche l'aide pour une commande | **cd /?** (Windows) ou **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Ce ne sont que quelques-unes des commandes que vous pouvez utiliser dans votre ligne de commande. Cette liste est suffisante pour réaliser ce tutoriel.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Si vous êtes curieuse, [ss64.com](http://ss64.com) contient une référence complète de toutes les commandes pour tous les systèmes d'exploitation.
 
 ## Vous êtes prête ?
 
