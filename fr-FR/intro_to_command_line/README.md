@@ -118,7 +118,7 @@ Ce serait pratique de savoir dans quel répertoire nous nous trouvons. Pour le s
     C:\Users\olasitarska
     
 
-> Remarque : "cd" veut dire "change directory" (changer de répertoire). Avec powershell vous pouvez utiliser la commande pwd exactement comme sur Linux ou Mac OS X.
+> Note : « cd » signifie « changer répertoire ». Avec PowerShell vous pouvez utiliser pwd comme sur Linux ou macOS.
 
 <!--endsec-->
 
@@ -173,7 +173,7 @@ Du coup, que pouvons-nous trouver dans ce dossier personnel ? Voyons voir :
     ...
     
 
-> Remarque : dans powershell vous pouvez aussi utiliser "ls" comme sur Linux et Mac OS X. <!--endsec-->
+> Remarque : dans powershell vous pouvez aussi utiliser "ls" comme sur Linux et macOS. <!--endsec-->
 
 * * *
 
@@ -419,18 +419,18 @@ Cool, non ? :)
 
 Voici un résumé de quelques commandes utiles :
 
-| Commande (Windows) | Commande (Mac OS / Linux) | Description                      | Exemple                                            |
-| ------------------ | ------------------------- | -------------------------------- | -------------------------------------------------- |
-| exit               | exit                      | ferme la fenêtre                 | **exit**                                           |
-| cd                 | cd                        | change le dossier courant        | **cd test**                                        |
-| cd                 | pwd                       | montre le dossier courant        | **cd** (Windows) ou **pwd** (Mac OS / Linux)       |
-| dir                | ls                        | liste des fichiers/dossiers      | **dir**                                            |
-| copy               | cp                        | copie un fichier                 | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move               | mv                        | déplace un fichier               | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir              | mkdir                     | crée un nouveau dossier          | **mkdir testdirectory**                            |
-| rmdir (or del)     | rm                        | supprime un fichier              | **del c:\test\test.txt**                         |
-| rmdir /S           | rm -r                     | supprime un répertoire           | **rm -r testdirectory**                            |
-| [CMD] /?           | man [CMD]                 | affiche l'aide pour une commande | **cd /?** (Windows) ou **man cd** (Mac OS / Linux) |
+| Commande (Windows) | Commande (macOS / Linux) | Description                      | Exemple                                           |
+| ------------------ | ------------------------ | -------------------------------- | ------------------------------------------------- |
+| exit               | exit                     | ferme la fenêtre                 | **exit**                                          |
+| cd                 | cd                       | change le dossier courant        | **cd test**                                       |
+| cd                 | pwd                      | montre le dossier courant        | **cd** (Windows) ou **pwd** (macOS / Linux)       |
+| dir                | ls                       | liste des fichiers/dossiers      | **dir**                                           |
+| copy               | cp                       | copie un fichier                 | **copy c:\test\test.txt c:\windows\test.txt** |
+| move               | mv                       | déplace un fichier               | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir              | mkdir                    | crée un nouveau dossier          | **mkdir testdirectory**                           |
+| rmdir (or del)     | rm                       | supprime un fichier              | **del c:\test\test.txt**                        |
+| rmdir /S           | rm -r                    | supprime un répertoire           | **rm -r testdirectory**                           |
+| [CMD] /?           | man [CMD]                | affiche l'aide pour une commande | **cd /?** (Windows) ou **man cd** (macOS / Linux) |
 
 Ce ne sont que quelques-unes des commandes que vous pouvez utiliser dans votre ligne de commande. Cette liste est suffisante pour réaliser ce tutoriel.
 
