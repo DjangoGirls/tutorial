@@ -1,6 +1,6 @@
 Postoji puno različitih editora i izbor se uglavnom svodi na lične preference. Većina Python programera koriste veoma kompleksne IDE (Integrated Development Environments), poput PyCharm-a. Početniku su, međutim, manje podesni. Naše preporuke su jednako moćne, ali znatno jednostavnije.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Naše sugestije slede u nastavku, ali slobodno možete da pitate svog instruktora za njegove preporuke - jer bi tako bilo dosta lakše da dobijete njegovu pomoć.
 
 ## Gedit
 
@@ -10,13 +10,13 @@ Gedit je besplatni editor otvorenog koda, dostupan za sve operativne sisteme.
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text je veoma popularan editor sa besplatnim probnim periodom i dostupan je za sve operativne sisteme.
 
 [Skinite ga ovde](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom je još jedan popularan editor, koji je besplatan, open-source i dostupan za Windows, OS X i Linux. Atom je razvijen od strane [GitHub-a](https://github.com/).
 
 [Skinite ga ovde](https://atom.io/)
 
@@ -24,7 +24,7 @@ Atom is another popular editor. It's free, open-source and available for Windows
 
 Možda se pitate zašto instaliramo poseban editor koda umesto da koristimo nešto poput Word-a ili Notepad-a.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Prvi razlog je taj što kod treba da bude **običan tekst**, a problem sa programima poput Word-a i Textedit-a je taj da zapravo ne proizvode običan tekst, nego tekst obogaćen fontovima i formatiranjem, koristeći posebne formate poput [RTF-a (eng. Rich Text Format) ](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
 The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
