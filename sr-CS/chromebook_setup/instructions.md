@@ -60,7 +60,7 @@ Zatim, pokrenite:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(Obratite pažnju da smo u poslednjoj liniji koristili tildu i znak jednakosti: `~=`).
 
 ### GitHub
 
@@ -68,8 +68,8 @@ Napravi [GitHub](https://github.com) nalog.
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girls priručnik sadrži sekciju o nečemu što se zove Razvijanje (eng. Deployment), što je predstavlja proces postavljanja koda koji pokreće Vašu novu veb aplikaciju na javno dostupan računar (server), tako da i drugi ljudi mogu da vide Vaš rad.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Ovaj deo je malo čudan ukoliko se priručnik prati radeći na Chromebook-u jer već koristimo računar koji je na Internetu (nasuprot, na primer, laptopu). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
 Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
