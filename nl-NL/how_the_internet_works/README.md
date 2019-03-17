@@ -34,7 +34,7 @@ Je brief gaat naar het dichtsbijzijnde postkantoor. Dan gaat 'ie naar een ander 
 
 ![Figuur 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+Zo werkt het - je verstuurt een bericht en verwacht een antwoord. In plaats van pen en papier gebruik je bytes met gegevens, maar het idee is hetzelfde!
 
 In plaats van adressen met een straatnaam, woonplaats, postcode en landnaam gebruiken we IP-adressen. Je computer vraagt eerst aan het DNS (Domein Naam Systeem) om 'djangogirls.org' om te zetten naar een IP-adres. Dat werkt een beetje als een ouderwets telefoonboek waarin je de naam kunt opzoeken van de persoon die je wilt bellen en dan diens telefoonnummer en adres vindt.
 
