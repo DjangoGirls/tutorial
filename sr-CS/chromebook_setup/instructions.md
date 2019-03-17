@@ -26,7 +26,7 @@ Terminal na PaizaCloud Cloud IDE je sada spreman za vaše komande. Možete da pr
 2. Napravite Vaš nalog
 3. Kliknite na *Kreiraj okruženje *
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Sada bi trebalo da vidite interfejs sa opcijama sa strane, veliki glavni prozor sa tekstom i mali prozor u dnu koji izgleda ovako:
 
 {% filename %}bash{% endfilename %}
 
