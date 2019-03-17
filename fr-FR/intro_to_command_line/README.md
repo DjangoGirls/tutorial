@@ -16,13 +16,13 @@ Cette fenêtre, qu'on appelle aussi **ligne de commande** ou **interface en lign
 
 ## Ouvrir l'interface en ligne de commande
 
-To start some experiments we need to open our command-line interface first.
+Pour commencer à expérimenter, nous avons d'abord besoin d'ouvrir notre interface en ligne de commande.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
-## Prompt
+## Invite de commande
 
-You now should see a white or black window that is waiting for your commands.
+Vous devriez maintenant voir une fenêtre noire ou blanche qui attend vos commandes.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -37,7 +37,7 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+Si vous êtes sous Windows, vous verrez probablement un `>`, comme ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -48,7 +48,7 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Chaque commande que vous taperez sera automatiquement précédée par un `$` ou `>` et une espace. Vous ne devez pas les rentrer vous-même, votre ordinateur le fera pour vous. :)
 
 > Petite remarque : il se peut que vous voyiez quelque chose comme `C:\Users\ola>` ou `Olas-MacBookAir:~ola$` avant le signe de prompt. Pas de problème : c'est parfaitement normal.
 
@@ -371,7 +371,7 @@ Maintenant, il est temps de supprimer le dossier `exercices` :
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Et voilà ! Pour être sure que le dossier a bien été supprimé, vérifions :
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -393,7 +393,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Sortir
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+C'est tout pour le moment ! Vous pouvez maintenant fermer la ligne de commande. Faisons-le à la manière des bidouilleurs⋅euses, d’accord ? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
