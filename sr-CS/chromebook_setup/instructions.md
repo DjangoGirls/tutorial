@@ -37,9 +37,9 @@ Ovaj prostor u dnu je Vaš terminal. Možete da ga koristite kako biste poslali 
 
 ### Virutalno okruženje
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Virtualno okruženje (eng. virtual environment, virtualenv) je nešto poput privatne kutije u koju možemo da smeštamo koristan kompjuterski kod za projekat na kom radimo. Koristimo ih da bismo razdvojili razne delove koda koji se tiču različitih projekata, tako da nema opasnosti da ćemo pomešati nešto što pripada različitim projektima.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+U svom terminalu, u dnu Cloud 9 interfejsa, pokrenite sledeću komandu:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Ako nakon ovoga i dalje ne funkcioniše, pitajte svog instruktora za pomoć.
 
-Next, run:
+Zatim, pokrenite:
 
 {% filename %}Cloud 9{% endfilename %}
 
