@@ -2,14 +2,14 @@ Možeš da [preskočiš preko ovog poglavlja](http://tutorial.djangogirls.org/en
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE je alatka koja vam omogućava uređivanje kodova i pristup računaru umreženom na internet, gde možete da instalirate, pišete, i pokrenete softver. For the duration of the tutorial, cloud IDE will act as your *local machine*. I dalje ćes pokretati naredbe u terminalu, baš kao i Vaše kolege koje koriste OS X, Ubuntu ili Windows, ali će Vaš terminal biti povezan sa pokrenutim računarom negde gde je cloud IDE to podesio za tebe. Evo su uputstva za oblak IDEs (PaizaCloud oblak IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE je alatka koja vam omogućava uređivanje kodova i pristup računaru umreženom na internet, gde možete da instalirate, pišete, i pokrenete softver. Tokom ovog priručnika, Cloud IDE će poslužiti kao Vaš *lokalni računar*. I dalje ćes pokretati naredbe u terminalu, baš kao i Vaše kolege koje koriste OS X, Ubuntu ili Windows, ali će Vaš terminal biti povezan sa pokrenutim računarom negde gde je cloud IDE to podesio za tebe. Evo su uputstva za oblak IDEs (PaizaCloud oblak IDE, AWS Cloud9). Možete da izaberete jedan od Cloud IDE-jeva i da pratite njegove instrukcije.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+1. Idite na[PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Napravite Vaš nalog
+3. Kliknite *New Server*
+4. Kliknite na dugme sa nazivom "Terminal"(sa leve strane prozora)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
