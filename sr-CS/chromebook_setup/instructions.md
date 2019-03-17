@@ -33,7 +33,7 @@ Sada bi trebalo da vidite interfejs sa opcijama sa strane, veliki glavni prozor 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Ovaj prostor u dnu je Vaš terminal. Možete da ga koristite kako biste poslali instrukcije Cloud 9 računaru. Možete da promenite veličinu prozora kako biste ga malo uvećali.
 
 ### Virutalno okruženje
 
