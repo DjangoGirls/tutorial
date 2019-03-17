@@ -93,15 +93,15 @@ Maak dan een nieuwe repository aan, en geef hem de naam "my-first-blog". Het vak
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> **Note** De naam `my-first-blog` is belangrijk - je kunt je repo natuurlijk ook anders noemen, maar je gaat de naam heel veel tegenkomen in onderstaande instructies, dus let dan op dat je de naam elke keer goed vervangt. Het is waarschijnlijk makkelijker om gewoon de naam `'my-first-blog'` aan te houden.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+Op het volgende scherm zul je de clone URL van je repo zien, wat we in de volgende commando's zullen gebruiken:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Nu moeten we de GitHub repository op je computer koppelen aan de repo op GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Typ het volgende in je console (vervang `<your-github-username>` met de gebruikersnaam die je hebt gekozen toen je je GitHub account creëerde, maar zonder de haken -- de URL moet overeenkomen met de URL die je zojuist gezien hebt):
 
 {% filename %}command-line{% endfilename %}
 
@@ -109,7 +109,7 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+Wanneer je naar GitHub pusht, wordt gevraagd naar je GitHub gebruikersnaam en wachtwoord (of rechtstreeks in je terminal, of in een pop-up), nadat je je wachtwoord en gebruikersnaam hebt ingevuld zie je ongeveer zoiets:
 
 {% filename %}command-line{% endfilename %}
 
@@ -124,19 +124,19 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Je code staat nu op GitHub. Kijk maar! Je zult zien dat het in goed gezelschap verkeert - [Django](https://github.com/django/django), de [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), en vele andere gave open source projecten hebben ook hun code op GitHub staan. :)
 
-# Setting up our blog on PythonAnywhere
+# Je blog op PythonAnywhere zetten
 
-## Sign up for a PythonAnywhere account
+## Meld je aan voor een PythonAnywhere account
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Opmerking** Het zou kunnen dat je al eerder een PythonAnywhere account hebt aangemaakt tijdens de installatiestappen. Als dat zo is, hoef je dat niet nog een keer te doen.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## Het configureren van de site op PythonAnywhere
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+Ga terug naar het hoofd [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) door op het logo te klikken, en kies de optie om een "Bash" console op te starten - dat is de PythonAnywhere versie van de terminal, net zoals die op je eigen computer.
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
