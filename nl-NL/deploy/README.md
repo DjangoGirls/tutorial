@@ -199,17 +199,17 @@ Je site zou nu live moeten zijn op het openbare internet! Klik door naar de Pyth
 
 ## Debugging tips
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Als je een error ziet terwijl je het `pa_autoconfigure_django.py` script draait, zijn dit de meest voorkomende oorzaken:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- Vergeten om je PythonAnywhere API token aan te maken.
+- Een foutje in je GitHub URL
+- Als je een error ziet die meldt *"Could not find your settings.py"*, komt dat waarschijnlijk omdat het niet gelukt is om al je bestanden aan Git toe te voegen, en/of het is niet gelukt om ze naar GitHub te sturen. Kijk nog eens naar het Git hoofdstuk hierboven
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Als je een errormelding krijgt als je je site probeert te bezoeken is de eerste plek om te kijken voor wat debugging informatie is in de **error log**. Je vindt een link naar de logs op de PythongAnywhere ["Web" pagina](https://www.pythonanywhere.com/web_app_setup/). Kijk of er daar errormeldingen zijn; de meest recente staan onderaan.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Er zijn ook wat meer [algemene debugging tips op de PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+En vergeet niet, je coach is hier om je te helpen!
 
 # Check out your site!
 
