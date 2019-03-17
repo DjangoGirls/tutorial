@@ -151,25 +151,25 @@ Voor het deployen van de applicatie op PythonAnywhere moeten we de code van GitH
 
 Dat zou enkele dingen als `Collecting pythonanywhere` moeten printen, en uiteindelijk eindigen met een regel die zegt `Successfully installed (...) pythonanywhere- (...)`.
 
-Nu draaien we het hulpmiddel om onze app automatisch vanaf GitHub te configureren. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Nu draaien we het hulpmiddel om onze app automatisch vanaf GitHub te configureren. Typ het volgende in de console op PythonAnywhere (vergeet niet om je GitHub gebruikersnaam in te vullen in plaats van `<your-github-username>`, zodat de URL overeenkomt met de URL van GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+Als je kijkt wat er gebeurt, zie je wat het doet:
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
-- Updating your settings file with some deployment settings
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Je code wordt van GitHub gedownload
+- Er wordt een virtualenv aangemaakt op PythonAnywhere, net als op je eigen computer
+- Het bestand met settings wordt geupdatet met wat settings voor de deploy
+- Er wordt een database opgesteld op PythonAnywhere met behulp van het `manage.py migrate` commando
+- Je statische bestanden worden klaargezet (je leert hier straks meer over)
+- PythonAnywhere wordt geconfigureerd om via de API jouw webapplicatie te tonen
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+Op PythonAnywhere zijn al deze stappen geautomatiseerd, maar het zijn dezelfde stappen die je met een andere provider zou moeten doorlopen.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Het voornaamste wat je nu moet onhouden is dat je database op PythonAnywhere totaal gescheiden is van de database op je eigen computer, dus je kunt verschillende posts en admin accounts hebben. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
