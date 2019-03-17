@@ -16,12 +16,12 @@ Stel je een postbus (port) voor die binnenkomende brieven (requests) controleert
 
 ## Wat gebeurt er als iemand een website opvraagt van jouw server?
 
-Wanneer een request wordt ingediend bij de webserver, wordt het doorgespeeld naar Django, wat vervolgens probeert uit te zoeken wat er precies gevraagd wordt. Het kijkt eerst naar het adres van de webpagina om te bepalen wat er moet gebeuren. Dit gedeelte wordt gedaan door Djangos **urlresolver** (het adres van een website wordt ook wel URL genoemd - Uniform Resource Locator - dus de naam *urlresolver* betekent 'url oplosser'). De urlresolver is niet heel slim: het kijkt gewoon naar patronen en probeert een overeenkomst met de URL te vinden. Django controleert de patronen van boven naar beneden en als er een overeenkomst is gevonden wordt de request doorgestuurd naar de bijbehorende functie (die een *view* genoemd wordt).
+Wanneer een request wordt ingediend bij de webserver, wordt het doorgespeeld naar Django, wat vervolgens probeert uit te zoeken wat er precies gevraagd wordt. Het kijkt eerst naar het adres van de webpagina om te bepalen wat er moet gebeuren. Dit gedeelte wordt gedaan door Django's **urlresolver** (het adres van een website wordt ook wel URL genoemd - Uniform Resource Locator - dus de naam *urlresolver* betekent 'url oplosser'). De urlresolver is niet heel slim: het kijkt gewoon naar patronen en probeert een overeenkomst met de URL te vinden. Django controleert de patronen van boven naar beneden en als er een overeenkomst is gevonden wordt de request doorgestuurd naar de bijbehorende functie (die een *view* genoemd wordt).
 
 Stel je een postbode met een brief voor. Ze loopt langs de straat en controleert elk huisnummer met die op de brief. Wanneer het overeenkomt, brengt ze de brief daar. Dit is hoe de urlresolver werkt!
 
 In de *view* functie worden alle interessante dingen gedaan: we kunnen de database bekijken en er informatie uit opvragen. Misschien heeft de gebruiker gevraagd om iets in de data te wijzigen? Net zoals een brief met het verzoek "verander alsjeblieft de omschrijving van mijn baan", kan de *view* controleren of je daar wel toestemming voor hebt. Als je die toestemming hebt wordt de omschrijving geüpdatet en wordt een bericht teruggestuurd met: "Gedaan!" Vervolgens genereert de *view* een antwoord wat Django naar de webbrowser van de gebruiker kan sturen.
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Bovenstaande beschrijving is een beetje versimpeld, maar je hoeft nog niet alle technische details te weten. Een algemeen beeld hebben is voor nu voldoende.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+Dus in plaats van dat we de details induiken, beginnen we met het maken van iets met Django en leren we alle belangrijke dingen terwijl we er mee bezig zijn!
