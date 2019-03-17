@@ -49,7 +49,7 @@ En sla het op als `.gitignore` in de "djangogirls" map.
 
 > **Opmerking** De punt aan het begin van de bestandsnaam is belangrijk! Als je tegen problemen aanloopt bij het creëren van het bestand (Macs vinden het niet leuk als je via de Finder een bestand dat begint met een punt aanmaakt, bijvoorbeeld), gebruik dan de "Opslaan als" functie in je editor; daar kan niks misgaan. En zorg ervoor dat je geen `.txt`, `.py`, of een andere extensie aan de bestandsnaam toevoegt -- het wordt alleen herkend door Git als de naam alléén `.gitignore` is.
 > 
-> **Opmerking** Een van de besanden die je genoemd hebt in je `.gitignore` bestand is `db.sqlite3`. Dit bestand is je lokale database waar al je gebruikers en posts worden opgeslagen. We zullen de standaard web programmeer praktijk volgen, wat betekent dat we aparte databases voor je lokale site en je live website op PythonAnywhere zullen gebruiken. De database voor PythonAnywhere zou SQLite kunnen zijn, zoals je lokale omgeving, maar meestal gebruik je een die MySQL heet. Die kan met veel meer bezoekers overweg dan SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. Zie je lokale database als een speeltuin waar je veel verschillende dingen kunt uitproberen, zonder dat je bang hoeft te zijn dat je al je echte posts perongeluk verwijdert van je blog.
+> **Opmerking** Een van de besanden die je genoemd hebt in je `.gitignore` bestand is `db.sqlite3`. Dit bestand is je lokale database waar al je gebruikers en posts worden opgeslagen. We zullen de standaard web programmeer praktijk volgen, wat betekent dat we aparte databases voor je lokale site en je live website op PythonAnywhere zullen gebruiken. De database voor PythonAnywhere zou SQLite kunnen zijn, zoals je lokale omgeving, maar meestal gebruik je een die MySQL heet. Die kan met veel meer bezoekers overweg dan SQLite. Omdat we de SQLite database negeren voor de GitHub kopie, betekent het dat de superuser en alle posts die je aangemaakt hebt alleen maar lokaal (op je eigen laptop) beschikbaar zullen zijn, en dat je voor de live website nieuwe moet creëren. Zie je lokale database als een speeltuin waar je veel verschillende dingen kunt uitproberen, zonder dat je bang hoeft te zijn dat je al je echte posts perongeluk verwijdert van je blog.
 
 Het is een goed idee om een `git status` commando te gebruiken voor `git add` of wanneer je niet meer helemaal zeker weet welke bestanden je ookalweer hebt gewijzigd. Dit voorkomt nare verrassingen, zoals het toevoegen en committen van verkeerde bestanden. Het `git status` commando weergeeft informatie over alle gewijzigde en klaargezette bestanden, de status van de 'tak' (branch) en nog veel meer. Het resultaat zou hierop moeten lijken:
 
@@ -85,11 +85,11 @@ Als laatste stap slaan we onze wijzigingen op. Ga naar je console en draai de vo
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Je code op GitHub zetten
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+Ga naar [GitHub.com](https://www.github.com) en registreer een nieuwe, gratis, account. (als je dat tijdens de workshop voorbereidingen al gedaan hebt, tof!) Zorg er dan voor dat je je wachtwoord onthoudt (voeg het toe aan je wachtwoordbeheerder, als je die gebruikt).
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Maak dan een nieuwe repository aan, en geef hem de naam "my-first-blog". Het vakje met "initialize with a README" kun je uitgevinkt laten, de .gitignore optie kun je ook leeg laten (we hebben dat al handmatig gedaan) en laat de licentie op 'None' staan.
 
 ![](images/new_github_repo.png)
 
