@@ -44,7 +44,7 @@ Si vous êtes sous Windows, vous verrez probablement un `>`, comme ça :
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Jetez un coup d'œil à la section Linux ci-dessus : c'est à cela que la ligne de commande ressemblera une fois que vous serez sur PythonAnywhere.
 
 <!--endsec-->
 
@@ -144,7 +144,7 @@ Adding a `/?` suffix to most commands will print the help page. You may need to 
 
 ### Lister les fichiers et les dossiers
 
-So what's in it? It'd be cool to find out. Let's see:
+Du coup, que pouvons-nous trouver dans ce dossier personnel ? Voyons voir :
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
