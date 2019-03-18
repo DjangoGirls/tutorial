@@ -33,11 +33,11 @@ Već izgleda lepše!
 
 ## Statički fajlovi u Djangu (Django)
 
-Najzad ćemo detaljnije pogledati ono što smo zvali **statički fajlovi**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Najzad ćemo detaljnije pogledati ono što smo zvali **statički fajlovi**. To predstavlja sav Vaš CSS i sve slike. Njihov sadržaj ne zavisi od konteksta zahteva i jednak je za svakog korisnika.
 
-### Gde staviti statične fajlove u Django-u
+### Gde staviti statičke fajlove u Django-u
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django sam zna gde da nađe statičke fajlove za ugrađene "admin" aplikacije. Sada samo treba da dodamo neke statičke fajlove za našu novu aplikaciju, `blog`.
 
 To ćemo uraditi tako što ćemo kreirati folder pod nazivom `static` unutar blog aplikacije:
 
