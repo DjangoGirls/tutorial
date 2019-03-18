@@ -6,9 +6,9 @@ Cloud IDE je alatka koja vam omogućava uređivanje kodova i pristup računaru u
 
 #### PaizaCloud Cloud IDE
 
-1. Idite na[PaizaCloud Cloud IDE](https://paiza.cloud/)
+1. Idite na [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Napravite Vaš nalog
-3. Kliknite *New Server*
+3. Kliknite na *Novi server* (eng. New Server)
 4. Kliknite na dugme sa nazivom "Terminal"(sa leve strane prozora)
 
 Sada bi trebalo da vidite interfejs sa trakom sa opcijama sa leve strane. Kliknite "Terminal" dugme kako biste otvorili terminal sa komandama:
@@ -24,7 +24,7 @@ Terminal na PaizaCloud Cloud IDE je sada spreman za vaše komande. Možete da pr
 
 1. Idite na [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. Napravite Vaš nalog
-3. Kliknite na *Kreiraj okruženje *
+3. Kliknite na *Kreiraj okruženje* (eng. Create Environment)
 
 Sada bi trebalo da vidite interfejs sa opcijama sa strane, veliki glavni prozor sa tekstom i mali prozor u dnu koji izgleda ovako:
 
