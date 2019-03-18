@@ -1,12 +1,12 @@
-# CSS – make it pretty!
+# CSS - vreme je za ulepšavanje!
 
 Naš blog izgleda poprilično ružno, zar ne? Vreme je da ga osvežimo! Iskoristićemo CSS za to.
 
 ## Šta je CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+CSS (eng. Cascading Style Sheets) je jezik koji se koristi za opisivanje izgleda i formatiranje veb sajta napisanog u jeziku za označavanje (poput HTML-a). Možete smatrati da je to šminka za Vaš veb sajt. :)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Ali ne želimo da počnemo sve ispočetka, zar ne? Da napomenemo još jednom, koristićemo nešto što su programeri objavili ranije na internetu, potpuno besplatno. Izmišljanje tople vode ponovo nije baš zabavno.
 
 ## Hajde da koristimo Bootstrap!
 
