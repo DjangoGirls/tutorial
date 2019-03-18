@@ -49,11 +49,11 @@ To ćemo uraditi tako što ćemo kreirati folder pod nazivom `static` unutar blo
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django će automatski da pronađe bilo koji folder koji je nazvan "static" (statički) unutar nekog od foldera Vaše aplikacije. Zatim će biti moguće da koristite pronađeni sadržaj kao statičke fajlove.
 
 ## Vaš prvi CSS dokument!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Spremni?
+Hajde da kreiramo sada CSS fajl, kako bismo dodali malo stila veb stranici. Kreirajte novi direktorijum koji se zove `css` unutar Vašeg `static` direktorijuma. Zatim kreirajte novi fajl po imenu `blog.css` unutar tog `css` direktorijuma. Spremni?
 
     djangogirls
     └─── blog
@@ -62,9 +62,9 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Vreme je da napišete neki CSS! Otvorite `blog/static/css/blog.css` fajl u svom editoru.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+Nećemo pričati opširno o personalizovanju i učenju CSS-a ovde, jer postoji preporuka za besplatan CSS kurs na kraju ove stranice, ukoliko želite da naučite više.
 
 But let's do at least a little. Maybe we could change the color of our headers? To understand colors, computers use special codes. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
