@@ -24,7 +24,7 @@ Atom je još jedan popularan editor, koji je besplatan, open-source i dostupan z
 
 Možda se pitate zašto instaliramo poseban editor koda umesto da koristimo nešto poput Word-a ili Notepad-a.
 
-Prvi razlog je taj što kod treba da bude **običan tekst**, a problem sa programima poput Word-a i Textedit-a je taj da zapravo ne proizvode običan tekst, nego tekst obogaćen fontovima i formatiranjem, koristeći posebne formate poput [RTF-a (eng. Rich Text Format) ](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Prvi razlog je taj što kod treba da bude **običan tekst**, a problem sa programima poput Word-a i Textedit-a je taj da zapravo ne proizvode običan tekst, već tekst obogaćen fontovima i formatiranjem, koristeći posebne formate poput [RTF-a (eng. Rich Text Format) ](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
 Drugi razlog je taj da su editori specijalizovani za unos koda i mogu pružiti korisne funkcionalnosti poput bojenja koda prema njegovom značenju ili automatskog zatvaranja navodnika.
 
