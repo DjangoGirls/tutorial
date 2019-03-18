@@ -10,13 +10,13 @@ Ali ne želimo da počnemo sve ispočetka, zar ne? Da napomenemo još jednom, ko
 
 ## Hajde da koristimo Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap je jedna od najpopularnijih HTML i CSS biblioteka za razvoj lepih veb sajtova: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Inicijalno je napisana je od strane programera koji su radili u Twitter-u. Trenutno se razvija od strane developera širom sveta.
 
 ## Instalacija Bootstrap-a
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Kako biste instalirali Bootstrap, otvorite Vaš `.html` fajl u editoru i u `<head>` odeljku dodajte ovo:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Ova naredba ne dodaje ni jedan novi fajl u Vaš projekat. Umesto toga, samo pokazuje fajlove koji postoje na Internetu. Samo napred, otvorite svoj veb sajt i osvežite stranicu. Evo ga!
 
 ![Slika 14.1](images/bootstrap1.png)
 
@@ -33,7 +33,7 @@ Već izgleda lepše!
 
 ## Statički fajlovi u Djangu (Django)
 
-Najzad ćemo detaljnije pogledati ono što smo zvali **static files** (statični fajlovi). Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
+Najzad ćemo detaljnije pogledati ono što smo zvali **statički fajlovi**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
 ### Gde staviti statične fajlove u Django-u
 
