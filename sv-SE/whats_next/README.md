@@ -1,16 +1,16 @@
 # Vad kommer härnäst?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Gratulera dig själv! **Du är helt fantastisk**. Vi är stolta! <3
 
-### What to do now?
+### Vad gör du härnäst?
 
-Take a break and relax! You have just done something really huge.
+Ta en paus och koppla av! Du har just gjort något riktigt stort.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Efter det, se till att följa Django Girls på [Facebook](http://facebook.com/djangogirls) eller [Twitter](https://twitter.com/djangogirls) för att hålla dig uppdaterad.
 
-### Can you recommend any further resources?
+### Kan du rekommendera några ytterligare resurser?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Ja! Det finns en *hel* del resurser på nätet för att lära sig alla typer av kunskaper i programmering – det kan vara ganska skrämmande att hitta du ska titta på härnäst, men vi hjälper dig. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
