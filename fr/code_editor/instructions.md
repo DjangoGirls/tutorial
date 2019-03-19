@@ -1,6 +1,6 @@
-Choisir un éditeur de texte parmi tous ceux qui sont disponibles est surtout une histoire de goûts personnels. La plupart des programmeurs·ses Python utilisent des IDE (Environnements de développement intégrés) complexes mais très puissants, comme Pycharm par exemple. Ce n'est pas forcément le meilleur choix pour débuter : ceux que nous vous recommandons sont tout aussi puissants, mais beaucoup plus simples à utiliser.
+Choisir un éditeur de texte parmi tous ceux qui sont disponibles est surtout une histoire de goûts personnels. La plupart des programmeurs·ses Python utilisent des IDE (Environnements de Développement Intégrés) complexes mais très puissants, comme PyCharm par exemple. Ce n'est pas forcément le meilleur choix pour débuter : ceux que nous vous recommandons sont tout aussi puissants, mais beaucoup plus simples à utiliser.
 
-Vous pouvez choisir l'un des éditeurs de la liste ci-dessous, mais n'hésitez pas à demander à votre coach l'éditeur qu'il·elle préfère.
+Nos suggestions sont listées ci-dessous, mais n'hésitez pas à demander à vos coachs quelles sont leurs préférences - il sera plus facile d'obtenir de l'aide de leur part.
 
 ## Gedit
 
@@ -10,13 +10,13 @@ Gedit est un éditeur libre et gratuit disponible pour tout les systèmes d'expl
 
 ## Sublime Text 3
 
-Sublime text est un éditeur très populaire : il est disponible gratuitement sous forme de version d'évaluation pour tout les systèmes d'exploitation. Il est facile à installer et à utiliser.
+Sublime Text est un éditeur très populaire avec une période d'évaluation gratuite et il est disponible pour tous les systèmes d'exploitation.
 
 [Télécharger](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom est un éditeur très récent créé par [GitHub](https://github.com/). Disponible pour tout les systèmes d'exploitation, il est libre, gratuit, facile à installer et à utiliser.
+Atom est un autre éditeur populaire. Il est gratuit, ouvert et disponible pour Windows, macOS et Linux. Atom est développé par [GitHub](https://github.com/).
 
 [Télécharger](https://atom.io/)
 
@@ -24,8 +24,8 @@ Atom est un éditeur très récent créé par [GitHub](https://github.com/). Dis
 
 Vous vous demandez sûrement pourquoi nous vous faisons installer un éditeur spécialement créé pour écrire du code. Pourquoi ne pourrions nous pas simplement utiliser un éditeur de texte comme Word ou Notepad ?
 
-La première raison est que votre code doit être écrit en **texte brut**. Le problème avec les applications comme Word ou Textedit, c'est qu'elles ne produisent pas du texte brut mais du texte enrichi (avec des polices et de la mise en page), basé sur un standard comme [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La première raison est que le code doit être écrit en **texte brut**. Le problème avec des applications comme Word ou Textedit, c'est qu'elles ne produisent pas de texte brut mais du texte enrichi (avec des polices et de la mise en page), basé sur des standards du type[RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-La seconde raison est que les éditeurs de texte dédiés à la programmation contiennent de nombreuses fonctions très utiles. Ils peuvent colorer le texte en fonction du sens de celui-ci (coloration syntaxique) ou ajouter automatiquement un guillemet fermant à chaque fois que vous ouvrez un guillemet.
+La deuxième raison est que les éditeurs de code sont spécialisés pour l'édition de code, de sorte qu'ils peuvent fournir des fonctionnalités utiles telles que surligner du code avec de la couleur en fonction de son sens, ou fermer automatiquement des guillemets pour vous.
 
-Vous allez bientôt vous rendre compte à quel point un logiciel dédié à la programmation peut être pratique ! Prenez un peu de temps pour trouver l'éditeur qui vous convient, car il deviendra rapidement l'un de vos outils préférés :)
+Nous allons voir tout cela en action plus tard. Bientôt, vous allez venir à penser à votre bon vieux éditeur de code comme l'un de vos outils préférés. :)

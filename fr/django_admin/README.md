@@ -1,48 +1,57 @@
-# L'interface d'administration de Django
+# Django admin
 
-Pour ajouter, éditer et supprimer les posts que nous venons de modéliser, nous allons utiliser l'interface d'administration de Django.
+Pour ajouter, modifier et supprimer les posts que nous venons de créer, nous allons utiliser l'interface Django admin.
 
-Ouvrons le fichier `blog/admin.py` et remplaçons son contenu par ceci :
+Ouvrons le fichier `blog/admin.py` dans l'éditeur de code et remplaçons son contenu par ceci :
+
+{% filename %}blog/admin.py{% endfilename %}
 
 ```python
 from django.contrib import admin
 from .models import Post
 
 admin.site.register(Post)
-```    
+```
 
 Comme vous pouvez le voir, nous importons le modèle « Post » que nous avons écrit dans le chapitre précédent. Afin que notre modèle soit visible dans l'interface d'administration, nous avons besoin d'enregistrer notre modèle à l'aide de `admin.site.register(Post)`.
 
-Voilà, il est temps de jeter un œil à notre modèle Post. N'oubliez pas d'exécuter `python manage.py runserver` dans votre console afin de lancer le serveur web. Dans votre navigateur, entrez l'adresse http://127.0.0.1:8000/admin/. Si tout va bien, vous verrez une page comme celle-ci:
+Voilà, il est temps de jeter un œil à notre modèle Post. N'oubliez pas d'exécuter `python manage.py runserver` dans votre console afin de lancer le serveur web. Retourner sur votre navigateur et taper l'adresse http://127.0.0.1:8000/admin/. Vous verrez une page de login qui ressemble à celle-ci :
 
-![Page de login][1]
+![Page de login](images/login_page2.png)
 
- [1]: images/login_page2.png
+Afin de vous connecter, vous allez devoir créer un *superuser*, c'est à dire un utilisateur qui contrôlera l'intégralité du site. Retournez à votre ligne de commande : tapez `python manage.py createsuperuser` puis appuyez sur entrée.
 
-Afin de vous connecter, vous allez devoir créer un *superuser*, c'est à dire un utilisateur qui contrôlera l'intégralité du site. Retournez à votre ligne de commande : tapez `python manage.py createsuperuser` puis appuyez sur entrée. Tapez votre nom d'utilisateur (en minuscules, sans espace), votre email et votre mot de passe. Vous ne voyez pas le mot de passe que vous êtes en train de taper ? C'est tout à fait normal, ne vous inquiétez pas ! Tapez simplement votre mot de passe et appuyez sur `entrée` pour continuer. La sortie que vous allez obtenir doit ressembler à celle-ci. Notez que le nom d'utilisateur et l'adresse email doivent correspondre aux informations que vous venez d'entrer.
+> Conseil : pour pouvoir taper de nouvelles commandes pendant que le serveur tourne, ouvrez une nouvelle console et activez à nouveau votre virtualenv. La section **Démarrer le serveur web** du chapitre **Votre premier projet Django !** explique comment écrire de nouvelles commandes.
+
+{% filename %}Mac OS X or Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
-    Username: admin
-    Email address: admin@admin.com
+    
+
+{% filename %}Windows:{% endfilename %}
+
+    (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
+    
+
+Tapez votre nom d'utilisateur (en minuscules, sans espace), votre email et votre mot de passe. **Ne soyez pas surpris de ne pas voir le mot de passe quand vous le saisissez, c'est normal.** Saisissez le à l'aveugle et appuyez sur `Entrée` pour continuer. Vous devrez obtenir quelque chose comme ceci (où le nom d'utilisateur et le mail correspond à ce que vous avez saisi) :
+
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.
-
+    
 
 Retournez dans votre navigateur et connectez-vous en tant que superutilisateur grâce à l'utilisateur que vous venez de créer. Vous devriez accéder à l'interface d'administration de Django.
 
-![Django admin][2]
+![Django admin](images/django_admin3.png)
 
- [2]: images/django_admin3.png
+Allons du côté des Posts et jouons un peu avec. Créez 5 ou 6 blog posts. Ne vous inquiétez pas trop du contenu, qui ne sera visible que depuis votre ordinateur. Vous pouvez copier-coller des morceaux du tutoriel pour aller plus vite. :)
 
-Allez voir vos posts et expérimentez un peu avec. Ajoutez 5 ou 6 posts. Ne vous occupez pas du contenu - vous pouvez juste copier du texte de ce tutoriel pour aller plus vite :).
+Assurez-vous quelques posts (mais pas tous) aient une date de publication. Cela sera utile plus tard.
 
-Sur vos 5 posts, faites en sorte qu'au moins 2 ou 3 posts possèdent une date de publication. Prenez garde à ne pas en donner à tous vos posts car nous allons avoir besoin de ces deux différents cas plus tard.
+![Django admin](images/edit_post3.png)
 
-![Django admin][3]
+Si vous voulez en savoir plus sur l'interface d'administration de Django, n'hésitez pas à consulter la documentation du framework : https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
- [3]: images/edit_post3.png
-
-Si jamais vous voulez en savoir un peu plus sur l'interface d'administration de Django, vous pouvez lire la documentation qui lui est associée : https://docs.djangoproject.com/fr/1.11/ref/contrib/admin/
-
-Il est probablement temps d'aller recharger vos batteries avec un café, un thé ou un truc à grignoter. Vous venez de créer votre modèle Django : vous méritez bien une petite pause !
+Cela peut être un bon moment pour prendre un café (ou un thé) ou quelque chose à manger pour vous redynamiser. Vous avez créé votre premier modèle Django - vous méritez une petite pause!
