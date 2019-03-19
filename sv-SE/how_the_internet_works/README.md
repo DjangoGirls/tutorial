@@ -4,31 +4,31 @@
 > 
 > Detta kapitlet är inspirerat av Jessica McKellars föredrag "How the Internet Works" (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Vi satsar på att du använder Internet varje dag. Men vet du vad som faktiskt händer när du skriver in en adress som https://djangogirls.org i din webbläsare och trycker på `retur`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Precis som dina filmklipp, musik och bilder. Men det finns en sak som är unikt för hemsidor: de innehåller programkod som kallas HTML.
+Det första du måste förstå är att en hemsida bara är ett gäng filer sparade på en hårddisk. Precis som dina filmklipp, musik och bilder. Men det finns en sak som är unikt för hemsidor: de innehåller programkod som kallas HTML.
 
 Om du inte är van vid programmering kan det vara svårt att förstå HTML till en början, men din webbläsare (t.ex. Chrome, Safari, Firefox, etc.) älskar det. Webbläsare är designade för att förstå denna kod, följa dess instruktioner och presentera alla filer som din hemsida är gjord av precis på det sättet som du vill att de ska presenteras.
 
-Precis som med alla filer måste vi lagra HTML-filer någonstans på en hårddisk. För Internet använder vi speciella kraftfulla datorer som kallas *servrar*. De har ingen skärm, mus eller tangentbord, för deras huvudsyfte är att lagra data och göra den åtkomlig. That's why they're called *servers* – because they *serve* you data.
+Precis som med alla filer måste vi lagra HTML-filer någonstans på en hårddisk. För Internet använder vi speciella kraftfulla datorer som kallas *servrar*. De har ingen skärm, mus eller tangentbord, för deras huvudsyfte är att lagra data och göra den åtkomlig. Det är därför de kallas *servrar* - eftersom de *serverar* din information.
 
-OK, but you want to know how the Internet looks, right?
+Okej, men du vill säkert veta hur Internet ser ut, eller hur?
 
 Vi har ritat en bild åt dig! Så här ser det ut:
 
 ![Figur 1.1](images/internet_1.png)
 
-Visst ser det stökigt ut? In fact it is a network of connected machines (the above-mentioned *servers*). Hundratusentals datorer! Många, många mil av kabel runt världen! Du kan besöka en karta över undervattenskablar (http://submarinecablemap.com) som visar hur komplicerat nätet är. Här är en skärmdump från hemsidan:
+Visst ser det stökigt ut? Egentligen är det ett nätverk av anslutna datorer (ovan nämnda *servers*). Hundratusentals datorer! Många, många mil av kabel runt världen! Du kan besöka en karta över undervattenskablar (http://submarinecablemap.com) som visar hur komplicerat nätet är. Här är en skärmdump från hemsidan:
 
 ![Figur 1.2](images/internet_3.png)
 
-Visst är det fascinerande? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Visst är det fascinerande? Men självklart går det inte att ha en kabel mellan varje dator som är ansluten till Internet. Så får att nå en dator (till exempel den där https://djangogirls.org finns sparad) måste vi skicka en begäran genom många olika datorer.
 
 Så här ser det ut:
 
 ![Figur 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+Tänk dig att, när du skriver https://djangogirls.org, skickar du ett brev där det står: "Hej Django Girls, jag vill se hemsidan djangogirls.org. Snälla skicka den till mig!"
 
 Ditt brev går till postkontoret närmast dig. Sen skickas det vidare till ett kontor som är lite närmare adressaten, och så vidare tills det når sin destination. Det unika är att även om du skickar många brev (*datapaket*) till samma plats kan de transporteras via helt olika postkontor (*routrar*). Det beror på hur de distribueras vid varje kontor.
 
