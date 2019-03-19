@@ -34,14 +34,14 @@ Ditt brev går till postkontoret närmast dig. Sen skickas det vidare till ett k
 
 ![Figur 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+Ja, så simpelt är det. Du skickar meddelanden och förväntar dig ett svar. Istället för papper och penna använder du byte data, men idén är den samma!
 
-Istället för adresser med gatunamn, ort, postnummer och land, använder vi IP-adresser. Din dator ber en DNS-server (Domain Name System) att översätta djangogirls.org till en IP-adress. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Istället för adresser med gatunamn, ort, postnummer och land, använder vi IP-adresser. Din dator ber en DNS-server (Domain Name System) att översätta djangogirls.org till en IP-adress. Det fungerar lite som en gammaldags telefonkatalog där du kan leta efter namnet på en person du vill kontakta och hitta deras telefonnummer och adress.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. Du använder även ett språk som mottagaren förstår, eller hur? Detsamma gäller de *datapaket* som du skickar till en webbplats. Vi använder ett protokoll som kallas HTTP (Hypertext Transfer Protocol).
+När du skickar ett brev behövs några olika saker för att det ska komma fram ordentligt: en adress, frimärke osv. Du använder även ett språk som mottagaren förstår, eller hur? Detsamma gäller de *datapaket* som du skickar till en webbplats. Vi använder ett protokoll som kallas HTTP (Hypertext Transfer Protocol).
 
 Så när du har en hemsida måste du helt enkelt ha en *server* där den bor. När *servern* tar emot en inkommande *begäran* (i ett brev), skickar den tillbaka din webbplats (i ett annat brev).
 
-Since this is a Django tutorial, you might ask what Django does. När du skickar ett svar, vill du inte alltid skicka samma sak till alla. Det är mycket bättre om dina brev är personliga till personen som precis har skrivit till dig, eller hur? Django hjälper dig att skapa dessa personliga, intressanta brev. :)
+Eftersom detta är en tutorial för Django, kommer du säkert fråga vad Django gör. När du skickar ett svar, vill du inte alltid skicka samma sak till alla. Det är mycket bättre om dina brev är personliga till personen som precis har skrivit till dig, eller hur? Django hjälper dig att skapa dessa personliga, intressanta brev. :)
 
-Enough talk – time to create!
+Nog med prat- dags att skapa något!
