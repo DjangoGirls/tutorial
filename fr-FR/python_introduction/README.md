@@ -78,7 +78,7 @@ Il est possible d'assembler des chaines de caractères comme ceci :
 'Salut Ola'
 ```
 
-Vous pouvez aussi multiplier une chaîne de caractères par un chiffre :
+Vous pouvez aussi multiplier une chaîne de caractères par un nombre :
 
 {% filename %}command-line{% endfilename %}
 
@@ -213,7 +213,7 @@ Vous pouvez aussi l'utiliser avec des fonctions :
 5
 ```
 
-Génial, non ? Et bien sûr, les variables peuvent être n'importe quoi, y compris des chiffres ! Essayez ça :
+Génial, non ? Et bien sûr, les variables peuvent être n'importe quoi, y compris des nombres ! Essayez ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -327,7 +327,7 @@ Si vous voulez ajouter quelque chose à la liste, vous pouvez le faire en tapant
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-Si vous ne souhaitez afficher que le premier élément, vous pouvez le faire en utilisant des **indices**. Un indice est un chiffre qui indique où se trouve un élément dans la liste. Les programmeurs⋅euses préfèrent compter à partir de 0 : le premier objet dans notre liste a donc pour indice 0, le suivant 1 et ainsi de suite. Essayez ça :
+Si vous ne souhaitez afficher que le premier élément, vous pouvez le faire en utilisant des **indices**. Un indice est un nombre qui indique où se trouve un élément dans la liste. Les programmeurs⋅euses préfèrent compter à partir de 0 : le premier objet dans notre liste a donc pour indice 0, le suivant 1 et ainsi de suite. Essayez ça :
 
 {% filename %}command-line{% endfilename %}
 
@@ -365,7 +365,7 @@ Vous pouvez trouver une liste complète des méthodes disponibles pour les liste
 
 > Pour les lectrices autodidactes : cette partie est traitée dans la vidéo [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
-Un dictionnaire est un peu comme une liste. Cependant, nous utilisons des clefs plutôt que des indices numériques pour accéder aux valeurs. Une clef peut être n'importe quelle chaîne de caractères ou n'importe quel chiffre. La syntaxe pour définir un dictionnaire vide est la suivante :
+Un dictionnaire est un peu comme une liste. Cependant, nous utilisons des clefs plutôt que des indices numériques pour accéder aux valeurs. Une clef peut être n'importe quelle chaîne de caractères ou n'importe quel nombre. La syntaxe pour définir un dictionnaire vide est la suivante :
 
 {% filename %}command-line{% endfilename %}
 
@@ -478,7 +478,7 @@ On continue ? :)
 
 > Pour les lectrices autodidactes : cette partie est traitée dans la vidéo [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-Comparer des choses est très important en programmation. Quelle serait la chose la plus facile à comparer ? Les chiffres, bien sûr ! Allons voir comment ça marche :
+Comparer des choses est très important en programmation. Quelle serait la chose la plus facile à comparer ? Les nombres, bien sûr ! Allons voir comment ça marche :
 
 {% filename %}command-line{% endfilename %}
 
