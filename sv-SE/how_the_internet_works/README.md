@@ -1,8 +1,8 @@
 # Hur Internet fungerar
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> För läsare hemma: detta kapitel är täckt i filmen [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Detta kapitlet är inspirerat av Jessica McKellars föredrag "How the Internet Works" (http://web.mit.edu/jesstess/www/).
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
