@@ -10,24 +10,24 @@ Efter det, se till att följa Django Girls på [Facebook](http://facebook.com/dj
 
 ### Kan du rekommendera några ytterligare resurser?
 
-Ja! Det finns en *hel* del resurser på nätet för att lära sig alla typer av kunskaper i programmering – det kan vara ganska skrämmande att hitta du ska titta på härnäst, men vi hjälper dig. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Ja! Det finns en *hel* del resurser på nätet för att lära sig alla typer av kunskaper i programmering – det kan vara ganska skrämmande att hitta du ska titta på härnäst, men vi hjälper dig. Oavsett dina intressen var innan du kom till Django Girls, och vilka intresserar du har utvecklat under handledningen, här är några gratis resurser (eller resurser med stora fria komponenter) du kan använda för att komma dit du vill vara.
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- Vår andra bok, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [Djangos officiella handledning](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Komma igång med Django videolektioner](http://www.gettingstartedwithdjango.com/)
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS och JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Codecademys webbutveckling kurs](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [Codecademys Python kurs](https://www.codecademy.com/learn/learn-python)
+- [Googles Python kurs](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way bok](http://learnpythonthehardway.org/book/) – de inledande övningarna är gratis
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
