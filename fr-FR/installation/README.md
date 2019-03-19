@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Brève introduction à la ligne de commande
 
-Dans les étapes ci-dessous vous allez rencontrer les noms « console », « terminal », « invite de commande » ou « ligne de commande ». Tous ces termes signifient la même chose : une fenêtre sur votre ordinateur où vous pouvez rentrer des commandes. Une fois que vous aurez démarré le tutoriel principal, vous apprendrez plus sur la ligne de commande. Pour l’instant, le plus important est que vous appreniez à ouvrir un terminal et que vous voyez à quoi cela ressemble : {% comprennent « / intro_to_command_line/open_instructions.md » %}
+Dans les étapes ci-dessous vous allez rencontrer les noms « console », « terminal », « invite de commande » ou « ligne de commande ». Tous ces termes signifient la même chose : une fenêtre sur votre ordinateur où vous pouvez rentrer des commandes. Une fois que vous aurez démarré le tutoriel principal, vous apprendrez plus sur la ligne de commande. Pour l’instant, le plus important est que vous appreniez à ouvrir un terminal et que vous voyez à quoi cela ressemble : {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Installer Python
 
