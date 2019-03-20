@@ -37,9 +37,9 @@ PaizaCloud Cloud IDE ގައިވާ ޓާރމިނަލްވަނީ ތިޔަފަރާތ�
 
 ### ވާރޗުއަލް އެންވަރމަންޓް
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+ވާރޗުއަލް އެންވަޔަރމަންޓް ( virtualenv ކިޔާއުޅޭ) އަކީ އަމިއްލަ ފޮއްޓެއް ގޮތައް މަސައްކަތް ކުރަމުންދާ ޕްރޮޖެކްޓެއްގެ މުހިންމު ކޮމްޕިއުޓަރ ކޯޑު އެޅޭނެ އެއްޗެކެވެ. މީތި ބޭނުންކުރަނީ އެކި ޕްރޮޖެކްޓްތަކުގައި ބޭނުންކުރާ ކޯޑުތައް ވަކި ކޮށް މަސްހުނި ނުވާގޮތައް ގެންގުޅުމަށެވެ.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Cloud 9 އިންޓަރފޭސްގެ ގެ ތިރީގައިވާ ޓަރމިނަލްގައި، ތިރީގައިވާ ކޮމާންްޑް ޖައްސާ:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -47,9 +47,9 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+މަސައްކަތް ނުކުރާނަމަ، ކޯޗުގެ އެހީހޯދާ.
 
-Next, run:
+ދެން، run:
 
 {% filename %}Cloud 9{% endfilename %}
 
