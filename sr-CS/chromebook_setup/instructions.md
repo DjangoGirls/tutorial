@@ -68,7 +68,7 @@ Napravi [GitHub](https://github.com) nalog.
 
 ### PythonAnywhere
 
-Django Girls priručnik sadrži sekciju o nečemu što se zove Razvijanje (eng. Deployment), što je predstavlja proces postavljanja koda koji pokreće Vašu novu veb aplikaciju na javno dostupan računar (server), tako da i drugi ljudi mogu da vide Vaš rad.
+Django Girls priručnik sadrži sekciju o nečemu što se zove Razvijanje (eng. Deployment), što predstavlja proces postavljanja koda koji pokreće Vašu novu veb aplikaciju na javno dostupan računar (server), tako da i drugi ljudi mogu da vide Vaš rad.
 
 Ovaj deo je malo čudan ukoliko se priručnik prati radeći na Chromebook-u jer već koristimo računar koji je na Internetu (nasuprot, na primer, laptopu). Međutim, i dalje je koristan ukoliko posmatramo naš Cloud 9 radni prostor kao mesto za rad koji je "u toku" i Python Aniwhere kao mesto gde će se prikazati napredak naših stvari.
 
