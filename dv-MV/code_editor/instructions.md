@@ -1,4 +1,4 @@
-There are a lot of different editors and it largely boils down to personal preference. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+ވަރަށް ގިނަ އެޑިޓަރތައް ހުންނައިރު ބޭނުންކުރާނެ އެޑިޓަރ އެއްއޮންނަނީ އަމިއްލަ އިޚްތިޔާރުގައެވެ. ގިނަ ޕައިތަން ޕްރޮގްރާމް ހަދާ މީހުން ބޭނުންކުރަނީ PyCharm ފަދަ އުނދަގޫ އެކަމަކު ވަރަށް ބާރުގަދަ އައިޑީއީ ތަކެއް( Integrated Development Environments). As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
