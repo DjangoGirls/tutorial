@@ -6,25 +6,25 @@
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+1. 1. paizaCloud Cloud IDE [](https://paiza.cloud/)ނަގާ
+2. އެކައުންޓެއްހަދާ
+3. *New Server* ނަގާ
+4. ޓާރމިނަލް ބަޓަން( ވިންޑޯގެ ވާތްފަރާތުގައި) އަށް ފިތާލާ
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+މީހާރު ސައިޑްބާރ އާއެކު އިންޓަރފޭސްއެއް ފެންނާނެ، ބަޓަންތައް ވާތްފަރާތުގައި. މި މެސެޖް ފެންނަ ޓަރމިނަލް ހުޅުވުމަށް "Terminal" ބަޓަން އަށް ފިތާލާ:
 
-{% filename %}Terminal{% endfilename %}
+{% filename %} ޓަރމިނަލް{% endfilename %}
 
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+PaizaCloud Cloud IDE ގައިވާ ޓާރމިނަލްވަނީ ތިޔަފަރާތުގެ އިރުޝާދުތަކަށް ތައްޔާރުވެފައި. ވިންޑޯގެ ސައިޒުބޮޑުކޮށް ނުވަތަ ބަދަލުކުރެވޭނެ.
 
-#### AWS Cloud9
+#### އެމޭޒަން ވެބްސަރަވިސް ކްލައުޑު 9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. [AWS Cloud9](https://aws.amazon.com/cloud9/) ނަގާ
+2. އެކައުންޓެއް ހަދާ
+3. *Create Environment* އަށް ފިތާލާ
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
