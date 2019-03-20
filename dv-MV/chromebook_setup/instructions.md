@@ -2,7 +2,7 @@
 
 ### ކްލައުޑް އަޑީއީ ނުވަތަ ސޮފްޓްވެއަރ ތައްޔާރުކުރުމަށް ބޭނުންކުރާ އެޕްލިކޭޝަން ( ޕައިޒާކްލައުޑު ކްލައުޑު އައިޑީއީ، އެމޭޒަން ވެބް ސަރވިސް ކްލައުޑް 9)
 
-ކްލައުޑް އައިޑީއީ ނުވަތަ ކްލައުޑުގައި ސޮްފްޓްވެއަރ ތައްޔާރުކުރުމަށް ބޭނުންކުރާ އެޕްލިކޭޝަން އަކީ ކޯޑު ލިޔެ އަދި އިންޓަރނެޓުގައިވާ ކޮމްޕިއުޓަރކަށް ވަދެ ، ސޮފްޓްވެއަރ އިންސްޓޯލްކޮށް، ލިޔެ އަދި ސޮފްޓްވެއަރ ރަން ކުރެވޭނެ ގޮތް ހަދާއެއްޗެއް. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+ކްލައުޑް އައިޑީއީ ނުވަތަ ކްލައުޑުގައި ސޮްފްޓްވެއަރ ތައްޔާރުކުރުމަށް ބޭނުންކުރާ އެޕްލިކޭޝަން އަކީ ކޯޑު ލިޔެ އަދި އިންޓަރނެޓުގައިވާ ކޮމްޕިއުޓަރކަށް ވަދެ ، ސޮފްޓްވެއަރ އިންސްޓޯލްކޮށް، ލިޔެ އަދި ސޮފްޓްވެއަރ ރަން ކުރެވޭނެ ގޮތް ހަދާއެއްޗެއް. މިޓިއުޓޯރިއަލް ހަދާއިރު،*local machine* އަކީ ކްލައުޑް އައިޑީއީ. ކްލާހުގައިތިބި OS X, Ubuntu, or Windows ބޭނުންކުރާ އެހެންބައިވެރިންނެކޭ އެއްގޮތަށް ތިބާވެސް ކޮމާންޑުތައް ޖައްސާނީ ޓަރމިނަލް އިންޓަރފޭސްގައި. އެކަމަކު މިޓަރމިނަލް ގުޅިފައި އިންނާނީ ކްލައުޑް އަޑީއީއިން ހަމަޖައްސައިދޭ އެހެންތަނެއްގައި އިން ކޮމްޕިއުޓަރަކާއެވެ. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
