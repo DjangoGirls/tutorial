@@ -4,42 +4,42 @@ Soyons honnêtes : notre blog est plutôt moche, non ? Un peu de CSS devrait nou
 
 ## Qu'est-ce que le CSS ?
 
-Les feuilles de style, ou Cascading Style Sheets (CSS), sont un langage informatique utilisé pour décrire l'apparence et le formatage d'un document écrit en langage markup (ex : HTML). Pour faire simple : des produits cosmétiques pour pages web ;)
+Les feuilles de style (CSS : Cascading Style Sheets) sont un langage utilisé pour décrire l'apparence et la disposition d'un site écrit en langage de balisage (comme HTML). Considérez-le comme le maquillage de notre page web. ;)
 
-Je suppose que vous n'avez pas particulièrement envie de partir de rien et de devoir tout construire vous-même. Pour éviter cela, nous allons une nouvelle fois utiliser différentes ressources créées et mises à disposition gratuitement sur Internet par d'autres développeurs·ses. Réinventer à chaque fois la roue n'est pas vraiment fun, en plus, c'est absolument inutile.
+Mais on ne souhaite pas repartir de zéro. Une fois de plus, nous utiliserons quelque chose que les programmeurs ont publié gratuitement sur Internet. Réinventer la roue n'est pas amusant, n'est-ce pas ?
 
 ## Utilisons Bootstrap !
 
-Bootsrap est l'un des frameworks HTML et CSS les plus populaires. Il est utilisé pour créer de très beaux sites web : https://getbootstrap.com/
+Bootstrap est l'un des frameworks HTML/CSS les plus populaires pour développer de beaux sites web : https://getbootstrap.com/
 
-Il a été créé par d'anciens programmeurs·ses de chez Twitter et est maintenant développé par des bénévoles aux quatre coins du monde.
+Il a été créé par d'anciens développeurs de Twitter. Il est maintenant développé par des bénévoles aux quatre coins du monde !
 
 ## Installer Bootstrap
 
-Pour installer Bootstrap, vous avez besoin d'ajouter ceci dans le `<head>` de votre fichier `.html` (`blog/templates/blog/post_list.html`) :
+Pour installer Bootstrap, ouvrez votre fichier `.html` dans l'éditeur de code et ajoutez cela à la section `<head>` :
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-En faisant ceci, vous n'ajoutez aucun nouveau fichier à votre projet : vous reliez simplement des fichiers hébergés sur Internet à votre projet. Essayez maintenant de rafraichir votre page. Et voilà !
+Cela n'ajoute pas de fichier à votre projet, mais crée seulement un lien vers des fichiers existant sur internet. Allez-y, ouvrez votre site web et rafraichissez la page. Et voilà !
 
-![Figure 14.1][1]
-
- [1]: images/bootstrap1.png
+![Figure 14.1](images/bootstrap1.png)
 
 C'est déjà un peu mieux !
 
 ## Les fichiers statiques dans Django
 
-Enfin, allons jeter un coup d'œil à ces **fichiers statiques** dont nous n'arrêtons pas de vous parler. Votre CSS et vos images sont des fichiers statiques et non dynamiques. Cela signifie que leur contenu ne dépend pas du contexte de la requête et qu'il sera donc identique pour chaque utilisateur.
+Enfin, allons jeter un coup d'œil à ces **fichiers statiques** dont nous n'arrêtons pas de vous parler. Les fichiers statiques correspondent à tous vos CSS et vos images. Leur contenu ne dépend pas du contexte de la requête et sera le même pour tous les utilisateurs.
 
 ### Où ranger les fichiers statiques dans Django ?
 
-Comme vous l'avez probablement remarqué lorsque nous avons exécuté la commande `collectstatic` sur le serveur, Django sait déjà où trouver les fichiers statiques pour la partie "admin". Maintenant, il ne nous reste plus qu'à ajouter les fichiers statiques liés à notre app `blog`.
+Django sait déjà où trouver les fichiers statiques pour l'application "admin" intégrée. Maintenant, nous devons ajouter quelques fichiers statiques pour notre propre application, `blog`.
 
-Pour cela, nous allons créer un dossier appelé `static` à l'intérieur de notre blog app :
+Pour cela, nous allons créer un dossier appelé `static` à l'intérieur de notre appli blog :
 
     djangogirls
     ├── blog
@@ -47,66 +47,69 @@ Pour cela, nous allons créer un dossier appelé `static` à l'intérieur de not
     │   ├── static
     │   └── templates
     └── mysite
+    
 
+Django va rechercher automatiquement tous les dossiers dits "statiques" à l'intérieur de vos dossiers d'appli. Ensuite, il sera en mesure d'utiliser leur contenu sous forme de fichiers statiques.
 
-Django est capable de détecter automatiquement tout les dossiers appelés "static" dans l'arborescence de votre app. Il sera ainsi capable d'utiliser les fichiers présents à l'intérieur de ces dossiers comme des fichiers statiques.
+## Votre premier fichier CSS !
 
-## Votre première CSS !
-
-Nous allons créer un fichier CSS afin de personnaliser notre page web. Créez un nouveau dossier appelé `css` à l'intérieur de votre dossier `static`. Ensuite, créez un nouveau fichier appelé `blog.css` à l'intérieur du dossier `css`. Vous êtes prête ?
+Nous allons maintenant créer un fichier CSS afin de personnaliser votre page. Créez un nouveau dossier appelé `css` à l'intérieur de votre dossier `static`. Ensuite, créez un nouveau fichier appelé `blog.css` à l'intérieur du dossier `css`. Vous êtes prêt ?
 
     djangogirls
     └─── blog
          └─── static
               └─── css
                    └─── blog.css
-
+    
 
 Et c'est parti pour un peu de CSS ! Ouvrez le fichier `static/css/blog.css` dans votre éditeur de texte.
 
-Nous n'allons pas trop nous attarder sur les CSS aujourd'hui. Nous vous invitons, une fois rentrée chez vous, à vous plonger dans d'autres tutoriels de CSS. Vous verrez, c'est assez simple à comprendre ! Vous pouvez par exemple consulter le cours [Codeacademy HTML & CSS course][2] qui est une excellente ressource et qui vous permettra d'en apprendre plus sur la personnalisation de site web à l'aide de CSS.
+Nous n'irons pas trop loin dans la personnalisation et l'apprentissage du CSS ici. Il y a à la fin de cette page une recommandation pour un cours CSS gratuit si vous souhaitez en savoir plus.
 
- [2]: https://www.codecademy.com/tracks/web
+Que pourrions-nous faire rapidement ? Pourquoi ne pas changer la couleur de notre en-tête ? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. Ce code commence par un `#` suivi de 6 lettres (A-F) et chiffres (0-9). Par exemple, le code pour du bleu est `#0000FF`. Afin de trouver le code associé à la couleur de votre choix, vous pouvez consulter le site http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies](http://www.w3schools.com/colors/colors_names.asp), comme `red` ou `green`.
 
-Que pourrions-nous faire rapidement ? Pourquoi ne pas changer la couleur de notre entête ? Pour indiquer la couleur que nous souhaitons utiliser, nous devons utiliser un code particulier. Ces codes commencent par `#` et sont suivis de 6 lettres (A-F) et chiffres (0-9). Afin de trouver le code associé à la couleur de votre choix, vous pouvez consulter le site http://www.colorpicker.com/. Vous pouvez aussi utiliser des [couleurs prédéfinies][3], comme `red` ou `green`.
+Dans votre fichier `blog/static/css/blog.css`, ajoutez le code suivant :
 
- [3]: http://www.w3schools.com/cssref/css_colornames.asp
-
-Ajoutez le code suivant dans votre fichier `blog/static/css/blog.css` :
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
 }
-```  
 
-`h1 a` est un sélecteur CSS. Cela signifie que nous appliquons ce style pour chaque élément `a` présent à l'intérieur d'un élément `h1` (ce qui est le cas de `<h1><a href="">link</a></h1>`). Dans notre exemple précédent, nous indiquions notre souhait de changer la couleur du texte en `#FCA205`, c'est à dire en orange. Bien évidemment, vous êtes libre de choisir n'importe quelle couleur !
+```
 
-Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. Les différents éléments sont identifiés par leur nom (`a`, `h1`, `body`), l’attribut `class` ou l’attribut `id`. Class et id sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les ids désignent des éléments précis. Par exemple, l'élément suivant peut être identifié par CSS à la fois par son nom `a`, sa classe `external_link`, ou son identifiant `link_to_wiki_page` :
+`h1 a` est un sélecteur CSS. Cela signifie que nous allons appliquer nos styles à tout élément `a` qui se trouve dans un élément `h1` ; le sélecteur `h2 a` fait la même chose pour les éléments `h2`. Donc lorsque nous avons quelque chose comme `<h1><a href="">lien</a></h1>`, le style `h1 a` est appliqué. Dans notre cas, nous indiquons de changer sa couleur en `#C25100`, c'est à dire en orange foncé. Ou vous pouvez mettre votre propre couleur ici, mais assurez-vous qu’il contraste bien avec le fond blanc !
+
+Un fichier CSS permet de déterminer le style des éléments présents dans un fichier HTML. La première façon pour identifier des éléments, c'est avec leur nom d'élément. Vous vous en souviendrez car ces noms proviennent des balises HTML. Exemple : `a`, `h1` et `body` sont tous des noms d'élément. Vous pouvez aussi identifier les éléments par leur attribut `class` ou `id`. La classe et l'identifiant sont des noms que vous choisissez vous-même. Les classes définissent des groupes d'éléments tandis que les identifiants pointent un élément spécifique. Par exemple, vous pouvez identifier la ligne suivant par le nom `a`, la classe `.external_link`, ou l'identifiant `#link_to_wiki_page` :
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-Nous vous conseillons d'en apprendre un peu plus sur les sélecteurs CSS sur [w3schools][4].
+Apprenez-en plus à propos des [Sélecteurs CSS sur W3Schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
- [4]: http://www.w3schools.com/cssref/css_selectors.asp
+Nous devons aussi dire à notre modèle HTML que nous avons utilisé un peu de CSS. Ouvrez le fichier `blog/templates/blog/post_list.html` dans l'éditeur de code et ajoutez cette ligne au tout début :
 
-Afin que nos modifications fonctionnent, nous devons aussi signaler à notre template HTML que nous utilisons des CSS. Ouvrez le fichier `blog/templates/blog/post_list.html` et ajoutez cette ligne au tout début de celui-ci :
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load static %}
 ```
 
-Hop, nous chargeons les fichiers statiques :). Pour l'ajout de code suivant, gardez en tête que le navigateur lit vos fichiers dans l'ordre dans lequel ils lui sont donnés : en le plaçant à l'endroit que nous vous indiquons, vous allez pouvoir remplacer du code provenant des fichiers Boostrap par le vôtre. Donc, entre le `<head>` et le `</head>` et après les liens vers les fichiers CSS de Boostrap, ajoutez ceci :
+On vient tout juste de charger les fichiers statiques :). Entre les balises `<head>` et `</head>`, après les liens vers les fichiers CSS de Bootstrap, ajoutez cette ligne :
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Nous venons simplement de dire à notre template où nous avons rangé notre fichier CSS.
+Le navigateur lit les fichiers dans l'ordre où ils sont donnés, donc nous devons nous assurer que c'est dans le bon endroit. Dans le cas contraire, le code dans notre fichier peut être écrasé par le code des fichiers Bootstrap. Nous venons simplement de dire à notre template où trouver notre fichier CSS.
 
 Maintenant, votre fichier doit ressembler à ceci :
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% load static %}
@@ -125,7 +128,7 @@ Maintenant, votre fichier doit ressembler à ceci :
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h1><a href="">{{ post.title }}</a></h1>
+                <h2><a href="">{{ post.title }}</a></h2>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -133,13 +136,13 @@ Maintenant, votre fichier doit ressembler à ceci :
 </html>
 ```
 
-Ok, on sauvegarde et on rafraichit la page !
+Ok, on sauvegarde et on rafraîchit la page !
 
-![Figure 14.2][5]
+![Figure 14.2](images/color2.png)
 
- [5]: images/color2.png
+Bravo ! Peut-être que nous pourrions aérer un peu notre page web en augmentant la marge du côté gauche ? Essayons pour voir !
 
-Bravo ! Peut-être que nous pourrions un peu aérer notre page web en augmentant la marge du côté gauche ? Essayons pour voir !
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 body {
@@ -147,60 +150,66 @@ body {
 }
 ```
 
-Ajoutez ceci à votre fichier CSS, sauvegardez-le et voyons le résultat !
+Ajoutez ceci à votre CSS, enregistrez le fichier et regarder comment cela fonctionne !
 
-![Figure 14.3][6]
+![Figure 14.3](images/margin2.png)
 
- [6]: images/margin2.png
+Et si nous changions aussi la police de caractères de notre entête ? Collez ceci dans le `<head>` de votre fichier `blog/templates/blog/post_list.html` :
 
-Et si nous changions aussi la police de caractères de notre entête ? Collez ceci dans la partie `<head>` de votre fichier `blog/templates/blog/post_list.html` :
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link href="https://fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-Cette ligne nous permet d'importer la police de caractères *Lobster* depuis Google Fonts (https://www.google.com/fonts).
+Comme précédemment, vérifiez l'ordre et placez le avant `blog/static/css/blog.css`. Cette ligne importera une police appelée *Lobster* à partir de Google Fonts (https://www.google.com/fonts).
 
-Maintenant, ajoutons `font-family: 'Lobster';` à l'intérieur du bloc déclaratif `h1 a` dans le fichier CSS `blog/static/css/blog.css`. Le bloc déclaratif est le code situé à l'intérieur des accolades `{` et `}`. N'oubliez pas ensuite de rafraichir la page.
+Retrouvez le bloc de règles `h1 a` (délimité par les accolades `{` `}`) dans le fichier css `blog/static/css/blog.css`. Ajoutez maintenant la ligne `font-family; 'Lobster',` dans les accolades et rafraîchissez la page :
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a {
-    color: #FCA205;
+h1 a, h2 a {
+    color: #C25100;
     font-family: 'Lobster';
 }
 ```
 
-![Figure 14.3][7]
-
- [7]: images/font.png
+![Figure 14.3](images/font.png)
 
 Super !
 
-Comme nous l'avions mentionné précédemment, il existe une notion de classe dans CSS. En gros, cela vous permet de donner un nom à un morceau de code HTML auquel vous souhaitez appliquer un style particulier sans que cela ne concerne le reste du code. C'est particulièrement pratique lorsque vous avez deux divs qui font quelque chose de différent (par exemple, votre entête et votre post) et que vous ne voulez pas qu'ils soient identiques.
+Comme mentionné ci-dessus, CSS a un concept de classe. Ce concept vous permet de nommer une partie de code HTML et d'y appliquer des styles, uniquement pour cette partie, sans affecter le reste. Cela peut être très utile ! Peut-être que vous avez deux divs qui sont en train de faire quelque chose de différent (comme votre en-tête et votre contenu). Une classe peut vous aider à leur donner un aspect différent.
 
-Allons donner des noms à certaines parties de notre code html. Ajouter la classe `page-header` à votre `div` qui contient votre entête. Votre fichier doit ressembler maintenant à ceci :
+Allons donner des noms à certaines parties de notre code html. Ajouter la classe `page-header` à votre `div` qui contient votre en-tête. Votre fichier doit ressembler maintenant à ceci :
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="page-header">
     <h1><a href="/">Django Girls Blog</a></h1>
 </div>
- ```
+```
 
-Maintenant, ajoutez la classe `post` à votre `div` contenant votre blog post.
+Maintenant, ajoutez la classe `post` à votre `div` contenant votre billet de blog.
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="post">
     <p>published: {{ post.published_date }}</p>
-    <h1><a href="">{{ post.title }}</a></h1>
+    <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
 ```
 
-Nous allons maintenant ajouter des blocs déclaratifs à différents sélecteurs. Les sélecteurs qui commencent par `.` sont reliés aux classes. Le net regorge de bons tutoriels sur CSS qui vous permettront de comprendre le code que nous allons rajouter à notre fichier. Pour l'instant, copier-coller le code qui suit dans votre fichier `blog/static/css/blog.css` :
+Nous allons maintenant ajouter des blocs de règles aux différents sélecteurs. Les sélecteurs qui commencent par `.` désignent des classes. De nombreux tutoriels et explications sur le CSS existent sur le Web, cela pourra vous aider qui à comprendre le code suivant. Pour le moment, copiez et collez-le dans votre fichier `blog/static/css/blog.css` :
+
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -220,7 +229,6 @@ h1, h2, h3, h4 {
 }
 
 .date {
-    float: right;
     color: #828282;
 }
 
@@ -243,24 +251,30 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h1 a, .post h1 a:visited {
+.post h2 a, .post h2 a:visited {
     color: #000000;
 }
+ 
+Context | Request Context
 ```
 
-Nous allons maintenant nous intéresser au code concernant les posts. Il va falloir remplacer le code suivant :
+Nous allons maintenant nous intéresser au code concernant les posts. Il va falloir remplacer le code le code suivant :
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
     <div class="post">
         <p>published: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
 ```
 
-Ce code se trouve dans le fichier `blog/templates/blog/post_list.html`. Il doit être remplacé par le code suivant :
+se trouvant dans le fichier `blog/templates/blog/post_list.html` par :
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="content container">
@@ -269,9 +283,9 @@ Ce code se trouve dans le fichier `blog/templates/blog/post_list.html`. Il doit 
             {% for post in posts %}
                 <div class="post">
                     <div class="date">
-                        {{ post.published_date }}
+                        <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h1><a href="">{{ post.title }}</a></h1>
+                    <h2><a href="">{{ post.title }}</a></h2>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
@@ -280,16 +294,14 @@ Ce code se trouve dans le fichier `blog/templates/blog/post_list.html`. Il doit 
 </div>
 ```
 
-Sauvegardez les fichiers modifiés et rafraichissez votre site web.
+Sauvegardez les fichiers modifiés et rafraîchissez votre page.
 
-![Figure 14.4][8]
+![Figure 14.4](images/final.png)
 
- [8]: images/final.png
+Woohoo ! Ça a l'air génial, non ? Intéressez-vous au code que nous venons juste de coller pour trouver quelles règles CSS sont appliquées aux sélecteurs HTML que nous avons nommés précédemment. Où feriez-vous le changement si l'on souhaite mettre la date en turquoise ?
 
-Woohoo ! C'est pas mal, non ? Le code que nous avons collé n'est pas bien compliqué à comprendre et vous devriez pouvoir en saisir l'essentiel rien qu'en le lisant (ce n'est pas grave si ce n'est pas le cas ! ).
+N'ayez pas peur de bricoler un peu le CSS et essayer de changer certaines choses. Jouer avec le CSS peut vous aider à comprendre comment et qui agit sur quoi. Si vous cassez quelque chose, ne vous inquiétez pas – vous pouvez toujours faire marche arrière !
 
-N'ayez pas peur et jouez un peu avec la CSS : essayez par exemple d'en changer des morceaux. Vous avez cassé quelque chose ? Pas de problème : vous pouvez toujours annuler vos modifications !
+N’hésitez-pas à vous renseigner sur le CSS et à pratiquer des exercices, de nombreux sites existent. Ils vous aideront à en apprendre plus sur le sujet et à créer de magnifiques sites web.
 
-Voilà pour la partie CSS. Nous vous encourageons vivement à suivre le tutoriel gratuit de [Code Academy][2] : considérez ce tutoriel comme un petit travail à faire une fois rentrée chez vous. Vous connaitrez ainsi tout ce qu'il y a à savoir pour rendre son site bien plus joli !
-
-Prête pour le chapitre suivant ? :)
+Prêt pour le chapitre suivant ? :)

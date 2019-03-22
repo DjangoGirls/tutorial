@@ -8,7 +8,7 @@ Le format d'un template Django est décrit grâce à un langage qui s'appelle HT
 
 ## Qu'est-ce que le HTML ?
 
-HTML est un code simple qui est interprété par votre navigateur (Chrome, Firefox ou Safari) et qui permet d'afficher une page web à l'utilisateur.
+HTML est un code qui est interprété par votre navigateur (Chrome, Firefox ou Safari) et qui permet d'afficher une page web à l'utilisateur.
 
 L'abréviation HTML signifie « HyperText Markup Language ». **HyperText** signifie que c'est un type de texte qui supporte les hyperliens entre les pages. **Markup** signifie que nous avons pris un document et que nous avons balisé le code pour signifier (ici, au navigateur) comment il faut interpréter la page. Le code HTML est construit à l'aide de **balises**, chacune commençant par `<` et finissant par `>`. Ces balises représentent des **éléments** markup.
 
@@ -21,58 +21,60 @@ Les templates sont sauvegardés dans le dossier `blog/templates/blog`. Tout d'ab
     blog
     └───templates
         └───blog
+    
 
+Vous pourriez vous demander pourquoi nous avons besoin de deux dossiers portant tous les deux le nom `blog`. Comme vous le découvrirez plus tard, c'est une convention de nommage qui va nous faciliter la vie quand les choses vont commencer à devenir compliquées.
 
-Vous pourriez vous demander pourquoi nous avons besoin de deux dossiers portant tous les deux le nom `blog`. Comme vous le découvrirez plus tard, c'est une simple convention de nommage qui va nous faciliter la vie quand les choses vont commencer à devenir compliquées.
-
-Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `blog/templates/blog`.
+Et maintenant, créez un fichier `post_list.html` (laisser le vide pour le moment) dans le dossier `templates/blog/blog`.
 
 Allons regarder à quoi ressemble notre site maintenant : http://127.0.0.1:8000/
 
-> Si vous avez une erreur `TemplateDoesNotExists`, essayez de redémarrer votre serveur. Prenez votre ligne de commande et arrêtez votre serveur en appuyant simultanément sur Ctrl+C (les touches Control et C de votre clavier). Vous pouvez le relancer en tapant la commande `python manage.py runserver`.
+> Si vous avez encore l'erreur `TemplateDoesNotExist`, essayez de redémarrer votre serveur. Allez sur votre ligne de commande et arrêtez votre server en appuyant simultanément sur Ctrl+C (les touches Control et C de votre clavier). Vous pouvez le relancer en tapant la commande `python manage.py runserver`.
 
-![Figure 11.1][1]
-
- [1]: images/step1.png
+![Figure 11.1](images/step1.png)
 
 Et voilà, il n'y a plus d'erreurs ! Bravo :) Cependant, notre site ne peut rien faire d'autre pour le moment qu'afficher une page blanche. La faute à notre template que nous avons laissé vide. Allons corriger ça.
 
-Ajoutez ce qui suit à votre fichier template :
+Ouvrez le nouveau fichier dans l’éditeur de code et ajoutez le morceau suivant :
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <html>
+<body>
     <p>Hi there!</p>
     <p>It works!</p>
+</body>
 </html>
 ```
 
 Alors, à quoi ressemble notre site web maintenant ? Allons le découvrir : http://127.0.0.1:8000/
 
-![Figure 11.2][2]
-
- [2]: images/step3.png
+![Figure 11.2](images/step3.png)
 
 Ça marche ! Bon boulot :)
 
-*   La balise la plus élémentaire, `<html>`, figure toujours au début de n'importe quelle page web tandis que `</html>` est toujours située à la fin. Comme vous pouvez le constater, l'intégralité du contenu de notre page web est située entre la balise de départ, `<html>`, et la balise fermante, `</html>`
-*   `<p>` est la balise pour les éléments de type paragraphe. `</p>` permet de fermer chaque paragraphe.
+* La balise la plus élémentaire, `<html>`, figure toujours au début de n'importe quelle page web tandis que `</html>` est toujours située à la fin. Comme vous pouvez le constater, l'intégralité du contenu de notre page web est située entre la balise de départ, `<html>`, et la balise fermante, `</html>`
+* `<p>` est la balise pour les éléments de type paragraphe. `</p>` permet de fermer chaque paragraphe.
 
-## Head & body
+## Head et body
 
-Chaque page HTML est divisée en deux éléments : **head** (entête) et **body** (corps).
+Chaque page HTML est divisée en deux éléments : **head** (entête) et **body** (corps.
 
-*   **head** est un élément qui contient des informations sur le document : son contenu ne s'affichera pas à l'écran.
+* **head** est un élément qui contient des informations sur le document : son contenu ne s'affichera pas à l'écran.
 
-*   **body** est un élément qui contient tout le reste. Son contenu s'affichera à l'écran et constituera notre page web.
+* **body** est un élément qui contient tout le reste. Son contenu s'affichera à l'écran et constituera notre page web.
 
 Nous utilisons `<head>` pour transmettre la configuration de la page au navigateur tandis que `<body>` l'informe sur le contenu de la page.
 
-Par exemple, vous pouvez donner un titre à votre site en utilisant l'élément titre dans le `<head>` :
+Par exemple, vous pouvez donner un titre à votre page web en utilisant l'élément titre dans le `<head>` :
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <html>
     <head>
-        <title>Le Blog d'Ola</title>
+        <title>Ola's blog</title>
     </head>
     <body>
         <p>Hi there!</p>
@@ -83,9 +85,7 @@ Par exemple, vous pouvez donner un titre à votre site en utilisant l'élément 
 
 Sauvegardez votre fichier et actualisez la page.
 
-![Figure 11.3][3]
-
- [3]: images/step4.png
+![Figure 11.3](images/step4.png)
 
 Vous avez vu comment le navigateur a compris que « Le Blog d'Ola » est le titre de votre page ? Il a interprété `<title>Le blog d'Ola</title>` et a placé ce texte dans la barre de titre de votre navigateur (c'est ce titre qui va être aussi utilisé lorsque vous créez un marque-page, etc.).
 
@@ -93,23 +93,26 @@ Vous avez aussi probablement remarqué que chaque balise ouvrante possède sa *b
 
 Pensez à lorsque vous mettez des choses à l'intérieur de boîtes. Vous avez une grosse boîte, `<html></html>`; à l'intérieur de celle-ci, on trouve une plus petite boîte, `<body></body>`, qui contient elle-même d'autres petites boîtes, `<p></p>`.
 
-Essayez de vous rappeler cet exemple lorsque vous utilisez les balises *fermantes* et que vous avez des éléments *imbriqués*. Si vous ne suivez pas ces règles, votre navigateur risque de ne pas être capable d'interpréter votre code correctement et risque de mal afficher votre page web.
+Essayez de vous rappeler de cet exemple lorsque vous utilisez les balises *fermantes* et que vous avez des éléments *imbriqués*. Si vous ne suivez pas ces règles, votre navigateur risque de ne pas être capable d'interpréter votre code correctement et votre page web sera mal affichée.
 
 ## Personnaliser votre template
 
 Et si nous en profitions pour nous amuser un peu ? Essayons de personnaliser notre template ! Voici quelques balises que vous pouvez utiliser :
 
-*   `<h1>Titre 1</h1>` - pour vos titres les plus importants
-*   `<h2>Titre 2</h2>` - pour les sous-titres
-*   `<h3>Titre 3</h3>` ... et ainsi de suite jusqu'à `<h6>`
-*   `<em>texte</em>` permet de mettre l'accent sur une partie du texte
-*   `<strong>texte</strong>` permet de mettre encore plus l'accent sur une partie de texte
-*   `<br />` permet d'insérer un saut de ligne (vous ne pouvez rien mettre à l'intérieur d'un élément br)
-*   `<a href="https://djangogirls.org">link</a>` permet de créer un lien
-*   `<ul><li>premier item</li><li>second item</li></ul>` permet de créer des listes, comme celle que nous sommes en train de faire !
-*   `<div></div>` permet de créer une section au sein de la page
+* `<h1>Titre 1</h1>` pour vos titres les plus importants
+* `<h2>Titre 2</h2>` pour les sous-titres
+* `<h3>Titre 3</h3>` ... et ainsi de suite jusqu'à `<h6>`
+* `<p>Un paragraphe contenant du texte</p>`
+* `<em>texte</em>` permet de mettre l'accent sur une partie du texte
+* `<strong>texte</strong>` permet de mettre encore plus l'accent sur une partie de texte
+* `<br>` permet d'insérer un saut de ligne (vous ne pouvez rien mettre à l'intérieur d'un élément br et il n'y a pas de balise fermante)
+* `<a href="https://djangogirls.org">link</a>` permet de créer un lien
+* `<ul><li>premier item</li><li>second item</li></ul>` permet de créer des listes, comme celle que nous sommes en train de faire !
+* `<div></div>` permet de créer une section au sein de la page
 
-Voici un exemple de template utilisant plusieurs balises :
+Voici un exemple d’un modèle complet, copiez et collez-le dans `blog/templates/blog/post_list.html` :
+
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <html>
@@ -118,7 +121,7 @@ Voici un exemple de template utilisant plusieurs balises :
     </head>
     <body>
         <div>
-            <h1><a href="">Django Girls Blog</a></h1>
+            <h1><a href="/">Django Girls Blog</a></h1>
         </div>
 
         <div>
@@ -138,72 +141,77 @@ Voici un exemple de template utilisant plusieurs balises :
 
 Nous avons créé trois sections à l'aide de `div`.
 
-*   Le premier `div` contient le titre de notre blog - c'est à la fois un titre et un lien
-*   Les deux autres `div` contiennent nos posts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p` (paragraphe) de texte : un pour la date et l'autre pour notre post.
+* Le premier `div` contient le titre de notre blogpost - c'est à la fois un titre et un lien
+* Les deux autres `div` contiennent nos posts avec leur date de publication, un titre de post `h2` qui est cliquable ainsi que deux `p`s (paragraphe) de texte : un pour la date et l'autre pour notre post.
 
 Ce qui nous donne :
 
-![Figure 11.4][4]
-
- [4]: images/step6.png
+![Figure 11.4](images/step6.png)
 
 Yaaay ! Pour l'instant, notre template nous permet seulement d'afficher les **mêmes informations** alors que nous disions précédemment qu'il doit nous permettre d'afficher des informations **différentes** utilisant le **même format**.
 
-Ce qu'on aimerait pouvoir maintenant, c'est afficher les posts que nous avons créés précédemment dans l'interface d'administration de Django. Penchons-nous là dessus.
+Ce qu'on aimerait pouvoir faire maintenant, c'est d'afficher les posts que nous avons créés précédemment dans l'interface d'administration de Django. Penchons-nous là dessus.
 
 ## Une dernière chose : déployer !
 
-Ne serait-il pas génial de pouvoir voir tout ces changements en ligne ? Hop, déployons à nouveau !
+Ne serait-il pas génial de pouvoir voir tous ces changements en ligne ? Hop, déployons à nouveau !
 
 ### Commiter et pusher votre code sur GitHub
 
 Tout d'abord, allons voir quels sont les fichiers qui ont changé depuis notre dernier déploiement (lancez ces commandes dans votre console locale et non celle de PythonAnywhere) :
 
+{% filename %}command-line{% endfilename %}
+
     $ git status
+    
 
+Assurez-vous d'être dans le dossier `djangogirls`. Voici la commande qui permet de dire à `git` d'inclure tout les changements qui ont eu lieu dans ce dossier :
 
-Assurez-vous que vous êtes bien dans le dossier `djangogirls`. Voici la commande qui permet de dire à `git` d'inclure tout les changements qui ont eu lieu dans ce dossier :
+{% filename %}command-line{% endfilename %}
 
     $ git add --all .
+    
 
+> **Note** `--all` signifie que `git` va aussi voir si vous avez supprimé des fichiers (par défaut, il ne s'intéresse qu'aux nouveaux fichiers ou à ceux modifiés). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.
 
-> **Note** `--all` (traduction de "tout") signifie que `git` va aussi analyser si vous avez supprimé des fichiers (par défaut, il ne s'intéresse qu'aux nouveaux fichiers ou à ceux modifiés). Essayez de vous rappeler du chapitre 3 : `.` permet de désigner le dossier courant.
+Avant que nous puissions uploader nos fichiers, regardons ce que `git` à l'intention de faire (tous les fichiers que `git` va uploader vont apparaître en vert) :
 
-Avant que nous puissions uploader nos fichiers, regardons ce que `git` à l'intention de faire (tous les fichiers que `git` va uploader vont apparaitre en vert) :
+{% filename %}command-line{% endfilename %}
 
     $ git status
-
+    
 
 On y est presque : nous devons maintenant lui dire de sauvegarder ces changements dans son historique. Nous allons y ajouter un "message de commit" qui nous permettra de décrire ce qui a été changé. Vous pouvez mettre ce que vous voulez dans un message de commit. Généralement, il est préférable de mettre quelque chose d'utile qui vous permettra de vous souvenir plus tard de ce que vous avez fait.
 
-    $ git commit -m "Modification du HTML du site"
+{% filename %}command-line{% endfilename %}
 
+    $ git commit -m "Modification du HTML du site"
+    
 
 > **Note** N'oubliez pas d'utiliser de doubles guillemets autour de votre message de commit.
 
 Une fois que nous avons fait cela, nous pouvons mettre en ligne (pusher) nos modifications sur GitHub :
 
-    git push
+{% filename %}command-line{% endfilename %}
 
+    $ git push
+    
 
 ### Puller les modifications sur PythonAnywhere et recharger son appli web
 
-*   Allez sur la page des [consoles de PythonAnywhere][5]. Retournez dans votre **console Bash** ou ouvrez-en une nouvelle puis tapez la commande suivante :
+* Allez sur la page des [consoles de PythonAnywhere](https://www.pythonanywhere.com/consoles/). Retournez dans votre **console Bash** ou ouvrez-en une nouvelle puis tapez la commande suivante :
 
- [5]: https://www.pythonanywhere.com/consoles/
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/my-first-blog
-    $ source myvenv/bin/activate
-    (myvenv)$ git pull
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
+    $ git pull
     [...]
-    (myvenv)$ python manage.py collectstatic
-    [...]
+    
 
+N’oubliez pas de remplacer `<your-pythonanywhere-domain>` avec votre propre sous-domaine PythonAnywhere, sans les chevrons. Votre nom de sous-domaine est normalement votre nom d'utilisateur PythonAnywhere, mais dans certains cas, il peut être un peu différent (par exemple si votre nom d'utilisateur contient des lettres capitales). Donc, si cette commande ne fonctionne pas, utilisez la commande `ls` (lister fichiers) pour trouver votre sous-domaine/nom de dossier, puis `cd` jusque là.
 
-Voilà ! Votre code modifié est téléchargé. Si vous voulez vérifier ce que vous venez de récupérer, vous pouvez aller jeter un coup d’œil dans l'onglet **Files** de PythonAnywhere.
+Maintenant, vous voyez votre code en train d'être téléchargé. Si vous voulez vérifier que le nouveau code est arrivé sur PythonAnywhere, vous pouvez aller sur la page **"Files"** et y retrouver les fichiers (vous pouvez naviguer dans les différentes pages de PythonAnywhere depuis le menu).
 
-*   Pour finir, n'oubliez pas de recharger votre application web : onglet [web][6] puis cliquez sur le bouton **Reload**.
+* Pour finir, n'oubliez pas de recharger votre application web : onglet [Web](https://www.pythonanywhere.com/web_app_setup/) puis cliquez sur le bouton **Reload**.
 
- [6]: https://www.pythonanywhere.com/web_app_setup/
-
-Retournez sur votre site en cliquant sur l'adresse en haut de la page : normalement, vous devriez voir la dernière version. Si ce n'est pas le cas, ce n'est pas grave : n'hésitez pas à demander de l'aide à votre coach :)
+Retournez sur votre site en cliquant sur l'adresse en haut de la page : normalement, vous devriez voir la dernière version. Si ce n'est pas le cas, ce n'est pas grave : n'hésitez pas à demander de l'aider à votre coach. :)
