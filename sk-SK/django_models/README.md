@@ -89,6 +89,7 @@ Uvidíš, že pribudne nový adresár `blog`, ktorý obsahuje množstvo súborov
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
+    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
