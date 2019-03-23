@@ -85,6 +85,7 @@ Notarás que se ha creado un nuevo directorio `blog` y ahora contiene una cantid
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
+    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
