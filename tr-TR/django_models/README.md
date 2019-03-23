@@ -84,6 +84,7 @@ Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark 
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
+    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
