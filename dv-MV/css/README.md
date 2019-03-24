@@ -1,8 +1,8 @@
-# CSS – make it pretty!
+# ސީއެސް އެސް - ރީތިކުރުމަށް!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+އަހަރެމެންގެ ބްލޮގް ހަޑިދޯ؟ މިއީ ބްލޮގް ރީތި ކޮށްލާ ވަގުތު! މިކަމަށް ބޭނުން ކުރާނީ ސީއެސްއެސް.
 
-## What is CSS?
+## ސީ އެސް އެސް އަކީ ކޯއްޗެއް؟
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
