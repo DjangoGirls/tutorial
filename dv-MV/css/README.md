@@ -4,7 +4,7 @@
 
 ## ސީ އެސް އެސް އަކީ ކޯއްޗެއް؟
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+ކެސްކޭޑިން ސްޓައިލްޝީޓްސް ( ސީއެސް އެސް) އަކީ މާރކްއަޕް ލެންގުއޭޖުން ( އެޗްޓީއެމްއެލް ފަދަ) ލިޔަފައި ހުންނަ ވެބަސައިޓް ފެންނަގޮތް އަދި ފޯރމެޓިން އިންނަންވާގޮތް ކިޔައިދޭ ލެންގުއޭޖެކެވެ. ވެބްޕޭޖްގެ މޭކަޕް ގެ ގޮތަށް ގެންގުޅުން ރަނގަޅުވާނެ :)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
