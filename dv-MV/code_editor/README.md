@@ -1,11 +1,11 @@
-# Code editor
+# ކޯޑު އެޑިޓަރ
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> ކިޔުންތެރިންނަށް: [އިންސްޓޯލިން ޕައިތަން & ކޯޑު އެޑިޓަރ ](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) ވީޑިއޯގައި މިޗެޕްޓަރ ހިމެނިފައިވާނެއެވެ.
 
-You're about to write your first line of code, so it's time to download a code editor!
+މިހާރު ތިއުޅެނީ އެންމެ ފުރަމަ ކޯޑުގެ ލައިން ލިޔާށެވެ. ކޯޑު އެޑިޓަރ އެއް ޑައުންލޯޑު ކުރާ ވަގުތު ޖެހުނީއެވެ!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **ނޯޓު** ކްރޯމްބުކް ބޭނުންކުރާނަމަ، މިޗެޕްޓަރ ދޫކޮށްލާށެވެ. އަދި [ކްރޯމްބުކް ސެޓަޕް](../chromebook_setup/README.md) ގެ އިރުޝާދުތައް ބަލާށެވެ. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **ނޯޓު** މިކަންތައް ކުރިންދިޔަ އިންސްޓޮލޭޝަން ޗެޕްޓަރ- ގައި ނިންމާފައި އޮވެދާނެވެ. ނިންމާފައި އޮތްނަމަ ދެން އިން ޗެޕްޓަރއަށް ދޭ!
 
 {% include "/code_editor/instructions.md" %}
