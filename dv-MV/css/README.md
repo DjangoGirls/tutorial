@@ -48,9 +48,9 @@
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+އެއްވެސް އެޕް ފޯލްޑަރ އެއްގައި "static" ފޯލްޑަރ އެއް އިންތޯ ޖެންގޯއިން ހޯދާނެ. ސްޓެޓިކް ފައިލްގައި ހުރި އެއްޗެއް ބޭނުންކުރެވޭނެ.
 
-## Your first CSS file!
+## އެންމެ ފުރަތަމަ ސީއެސްއެސް ފައިލް!
 
 Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
