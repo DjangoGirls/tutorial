@@ -78,9 +78,9 @@
 
 ```
 
-`h1 a` އަކީ ސީއެސްއެސް ސިލެކްޓަރ އެއް. މީގެ މާނައަކީ އަހަރެމެންގެ ސްޓައިލްތައް `h1` ތެރޭގައި ހިމެނޭ `a` ބަޔަކަށް ލަނީއޭ: `h2 a` ސިލެކްޓަރ ވެސް `h2` ގެ ބައިތަކަށް ހަމަ މިގޮތަށް ހަަދަނީ. އެހެންވީމާ `<h1><a href="">link</a></h1>` ގޮތަށް ހުންނަ ތަންތަނަށް`h1 a` ސްޓައިލް އެޕްލައިވާނެ. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` އަކީ ސީއެސްއެސް ސިލެކްޓަރ އެއް. މީގެ މާނައަކީ އަހަރެމެންގެ ސްޓައިލްތައް `h1` ތެރޭގައި ހިމެނޭ `a` ބަޔަކަށް ލަނީއޭ: `h2 a` ސިލެކްޓަރ ވެސް `h2` ގެ ބައިތަކަށް ހަމަ މިގޮތަށް ހަަދަނީ. އެހެންވީމާ `<h1><a href="">link</a></h1>` ގޮތަށް ހުންނަ ތަންތަނަށް`h1 a` ސްޓައިލް އެޕްލައިވާނެ. މިހާރު، މިބުނަނީ ކުލަ `C25100</0#> ކަޅު އޮރެންޖް ކުަލައަށް ބަދަލުކުރުމަށް. ނޫނީ އަމިއްލަޔަށް ބޭނުންވާ ކުަލައެއްވެސް ލިޔެވިދާނެ، އެކަމަކު ހުދު ބެކްގްރައުންޑެއްގައި ބޭނުންކުރީމައި ރަނގަޅަށް ފެންނަ ކުލައެއްތޯ ބަލާތި!</p>
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+<p>އެޗްޓީއެމްއެލްގައިވާ ބައިތަކަށް ބޭނުންވާ ސްޓްއިލްތައް ސީއެސްއެސް ފައިލް އިން ކިޔައިދޭ. ކޮންމެ ބައެއްވެސް ވަކިކުރަނީ އެބަޔަކަށް ކިޔާނަމުން. އެޗްޓީއެމްއެލް ސެކްޝަންއިން ޓެގްސްގެ ގޮތުގައި ހަނދާން ވެދާނެ. މިގޮތުން <code>a`، `h1` އަދި `body` އަކީ މިފަދަ ބައިތަކުގެ ނަންތައް. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
