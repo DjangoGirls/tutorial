@@ -28,4 +28,4 @@ The first reason is that code needs to be **plain text**, and the problem with p
 
 ދެވަނަ ކަމަކީ ކޯޑު އެޑިޓަރތއް ޚާއްސަވެގެންވަނީ ހަމައަކަނީ ކޯޑު އެޑިޓްކުރުމަށެވެ. އެހެންކަމުން ކޯޑު ގެ މާނަ އެކުލެވޭގޮތަށް ކުލަ ކުލައިން ހައިލައިޓްކުރުމާއި، ކޯޓުތައް އޮޓޯއިން ބަންދުކޮށްދީ މިފަދަ ފަސޭހަ ކަންކަން އެކުލެވިގެންވެއެވެ.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+މިހުރިހާ ކަމެއް ފަހުން ކުރެވޭނެއެވެ. ވަރަށް އަވަހަށް، ކޯޑު އެޑިޓަރަކީ ތިބާއަށް އެންމެ ޚާއްސަ ޓޫލް އަށް ވެގެންދާނެއެވެ. :)
