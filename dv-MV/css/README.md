@@ -65,20 +65,20 @@
 
 މިތަނުގައި ސީއެސްއެސް ތަފްސީލުކޮށް ކަސްޓަމައިޒްކޮށް ދަސްކުރަން ކިޔައެއް ނުދޭނެ. އިތުރަށް ދަސްކުރަން ބޭނުންނަމަ މި ޕޭޖްގެ ތިރީގައި ހިލޭ ކިޔެވޭ ސީއެސްއެސް ކޯސްތައް ކިޔައިދީފައި ހުންނާނެ.
 
-އެކަމަކު ކުޑަކޮށް ކަސްޓަމައިޒް ކުރެވިދާނެ. ހެޑަރސްގެ ކުލަ ބަދަލުކޮށްލެވިދާނެ ދޯ? ކުލަ ދަސްކުރުމަށް، ޚާއްސަ ކޯޑުތަކެއް ކޮމްޕިއުޓަރ ގެންގުޅޭ. މިކޯޑުތައް ފެށޭނީ `#` އިން ދެން ފަހަތަށް 6 އަކުރު (A–F) އަދި ނަމްބަރު(0–9). މިސާލަކަށް، ނޫކުލައިގެ ކޯޑަކީ0000FF `#` ގިނަ ކުލަތަކުގެ ކޯޑު ލިބޭނީ http://www.colorpicker.com. `green`އަދި `red<1> ފަދަ <a href="http://www.w3schools.com/colors/colors_names.asp">ޕްރީޑިފައިންޑް ކުލަތައް</a> ބޭނުންކުރެވޭނެ.</p>
+އެކަމަކު ކުޑަކޮށް ކަސްޓަމައިޒް ކުރެވިދާނެ. ހެޑަރސްގެ ކުލަ ބަދަލުކޮށްލެވިދާނެ ދޯ? ކުލަ ދަސްކުރުމަށް، ޚާއްސަ ކޯޑުތަކެއް ކޮމްޕިއުޓަރ ގެންގުޅޭ. މިކޯޑުތައް ފެށޭނީ `#` އިން ދެން ފަހަތަށް 6 އަކުރު (A–F) އަދި ނަމްބަރު(0–9). މިސާލަކަށް، ނޫކުލައިގެ ކޯޑަކީ0000FF `#` ގިނަ ކުލަތަކުގެ ކޯޑު ލިބޭނީ http://www.colorpicker.com. `green ` އަދި `red` ފަދަ [ޕްރީޑިފައިންޑް ކުލަތައް](http://www.w3schools.com/colors/colors_names.asp) ބޭނުންކުރެވޭނެ.
 
-<p>In your <code>blog/static/css/blog.css` file you should add the following code:
+`blog/static/css/blog.css` ފައިލް އަށް ތިރީގައިވާ ކޯޑު އިތުރުކުރޭ:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a, h2 a {
-    color: #C25100;
-}
+} h1 a, h2 
+; color: #C25100
+{
 
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` އަކީ ސީއެސްއެސް ސިލެކްޓަރ އެއް. މީގެ މާނައަކީ އަހަރެމެންގެ ސްޓައިލްތައް `h1` ތެރޭގައި ހިމެނޭ `a` ބަޔަކަށް ލަނީއޭ: `h2 a` ސިލެކްޓަރ ވެސް `h2` ގެ ބައިތަކަށް ހަމަ މިގޮތަށް ހަަދަނީ. އެހެންވީމާ `<h1><a href="">link</a></h1>` ގޮތަށް ހުންނަ ތަންތަނަށް`h1 a` ސްޓައިލް އެޕްލައިވާނެ. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
