@@ -36,15 +36,15 @@
 
 ### ޖެންގޯގައި ސްޓެޓިކް ފައިލްތައް ލާނީ ކޮންތަނަކަށް
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+"އެޑްމިން" އެޕްގެ ސްޓެޓިކް ފައިލްތައް ލާން ޖެހޭތަން ޖެންގޯއަށް އިނގޭނެއެވެ. އަހަރެމެންގެ އަމިއްލަ `blog` އެޕްއަށް ސްޓެޓިކް ފައިލްތައް ލާންވީ.
 
-We do that by creating a folder called `static` inside the blog app:
+ފައިލްތައް ލާނީ ބްލޮގް އެޕްގައި `static`ނަމުގައި ފޯލްޑަރ އެއް ހަދައިގެން:
 
     djangogirls
     ├── blog
     │   ├── migrations
     │   ├── static
-    │   └── templates
+    │   └── templates
     └── mysite
     
 
