@@ -1,26 +1,26 @@
 ވަރަށް ގިނަ އެޑިޓަރތައް ހުންނައިރު ބޭނުންކުރާނެ އެޑިޓަރ އެއްއޮންނަނީ އަމިއްލަ އިޚްތިޔާރުގައެވެ. ގިނަ ޕައިތަން ޕްރޮގްރާމް ހަދާ މީހުން ބޭނުންކުރަނީ PyCharm ފަދަ އުނދަގޫ އެކަމަކު ވަރަށް ބާރުގަދަ އައިޑީއީ ތަކެއް( Integrated Development Environments). ފަށައިގަންނަ މީހަކަށް އެފަދަ އައިޑީއެއް ބޭނުން ނުވާނެ: އަހަރެމެން ކިޔައިދޭނީ ހަމަ އެފަދަ ބާރުގަދަ އެކަމަކު އާދައިގެ އައީޑީތަކެކެވެ.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+ތިރީގައި އެވަނީ އަހަރެމެންނަށް ފެންނަ އެޑިތަރުތަކެވެ. ކޯޗު ބޭނުން ވަކި އެޑިޓަރ އެއް އިންތޯ އަހާށެވެ. އެއީ ކޯޗުގެ އެހީ ހޯދަން ފަސޭހަވާނެތީވެ.
 
-## Gedit
+## ޖީ އެޑިޓް
 
-Gedit is an open-source, free editor, available for all operating systems.
+ޖީއެޑިޓް އަކީ އޯޕަންސޯސް އަދި ހުރިހާ އޮޕަރޭޓިންގް ސިސްޓަމްއެއްގައިވެސް ބޭނުންކުރެވޭ ި ފްރީ އެޑިޓަރ އެކެވެ.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[މިތަނުން ޑައުންލޯޑު ކުރޭ](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3
+## ސަބްލައިމް ޓެކްސްޓް 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+ސަބްލައިމް އަކީ މީހުންގެ ތެރޭގައި މަގުބޫލު، އަދި އަންދާޒާކުރުމުގެ ގޮތުން ދުވަސްކޮޅަކަށް ހިލޭ ބޭނުންކުރެވޭ އަދި ހުރިހާ އޮޕަރޭޓިން ސިސްޓަމެއްގައިވެސް ބޭނުކުރެވޭ އެޑިޓަރ އެކެވެ.
 
-[Download it here](https://www.sublimetext.com/3)
+[މިތަނުން ޑައުންލޯޑު ކުރޭ](https://www.sublimetext.com/3)
 
-## Atom
+## އެޓަމް
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+އެޓަމް އަކީ ވެސް މީހުންގެ ތެރޭގައި މަގުބޫލު އެޑިޓަރ އެކެވެ. މިވެސް ހިލޭ ބޭނުންކުރެވޭ، އޯޕަން ސޯސް އަދި ވިންޑޯސް، އޯއެސް އެކްސް އަދި ލިނަކްސްގައިވެސް ބޭނުންކުރެވޭ އެޑިޓަރއެކެވެ. އެޓަަމް ޑިވެލްކޮށްފައިވަނީ [ގިޓްހަބް](https://github.com/).
 
-[Download it here](https://atom.io/)
+[މިތަނުން ޑައުންލޯޑު ކުރޭ](https://atom.io/)
 
-## Why are we installing a code editor?
+## ކޯޑް އެޑިޓަރ އެއް އިންސްޓޯލް ކުރަނީ ކީއްވެ?
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
