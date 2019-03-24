@@ -6,32 +6,31 @@
 
 ކެސްކޭޑިން ސްޓައިލްޝީޓްސް ( ސީއެސް އެސް) އަކީ މާރކްއަޕް ލެންގުއޭޖުން ( އެޗްޓީއެމްއެލް ފަދަ) ލިޔަފައި ހުންނަ ވެބަސައިޓް ފެންނަގޮތް އަދި ފޯރމެޓިން އިންނަންވާގޮތް ކިޔައިދޭ ލެންގުއޭޖެކެވެ. ވެބްޕޭޖްގެ މޭކަޕް ގެ ގޮތަށް ގެންގުޅުން ރަނގަޅުވާނެ :)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+އެކަމަކު އަލުން ފަށާކަށް ބޭނުމެއް ނޫންދޯ؟ އަދި އެއްފަހަރު، އެކި ޕްރޮގްރާމަރުން އިންޓަރނެޓްއަށް ދޫކޮށްފައިހުރި ހިލޭ ބޭނުންކުރެވޭ ތަކެތި ބޭނުންކޮށްލާނަމެވެ. އަލުން ހުރިހާ އެއްޗެއް ހެދުމަކީ މަޖާކަމެއް ނޫން.
 
-## Let's use Bootstrap!
+## ބޫްޓް ސްޓްރެޕް ބޭނުންކުރަން ހިނގާ!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+ބޫޓްސްޓްރެޕްއަކީ ރީތި ވެބްސައިޓް ހެދުމަށްޓަކައި ބޭނުންކުރާ އެޗްޓީއެމްއެލް އަދި ސީއެސްއެސް ފްރޭމްވޯރކްއެވެ.: /https://getbootstrap.com
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+މީތި ލިޔެފައިވަނީ ޓުވިޓާއަށް ކުރިން މަސައްކަތްކުރި ޕްރޮގްރާމަރުން ތަކެކެވެ. މިހާރު މީތި ތައްޔާރުކުރަނީ ދުނިޔޭގެ އެކިތަންތަނުގައި ތިބި ހިލޭ ސާބަހަށް މަސައްކަތްކުރާ މީހުންނެވެ!
 
-## Install Bootstrap
+## ބޫޓްސްޓްރެޕް އިންސްޓޯލް ކުރޭ
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+ބޫޓްސްޓްރެޕް އިންސްޓޯލްކުރުމަށް، `.html` ފައިލް ކޯޑު އެޑިޓަރގައި ހުޅުވާ އަދި `<head>` މީތި ސެކްޝަން އަށް ލާށެވެ:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"><link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+މީގެއިން ޕްރޮޖެކްޓްއަށް އެއްވެސް ފައިލްއެއް ނޭޅޭނެއެވެ. މީގެއިން އިންޓަރނެޓްގައި ވާ ފައިލްތަކަށް ޕޮއިންޓްކުރާނެއެވެ. އެހެންވީމާ، ވެބްސައިޓް ހުޅުވާފައި ޕޭޖް ރީފްރެޝް ކޮށްލާށެވެ. މިއޮތީ!
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+މިހާރުވެސް ރީތިވެއްޖެ!
 
-## Static files in Django
+## ޖެންގޯގައިވާ ސްޓެޓިކް ( ބަދަލުނުވާ) ފައިލްތައް
 
 Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
