@@ -22,10 +22,10 @@
 
 ## ކޯޑް އެޑިޓަރ އެއް އިންސްޓޯލް ކުރަނީ ކީއްވެ?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+ހިތައް އަރާފާނެ ވޯޑު ނުވަތަ ނޯޓުޕެޑު ބޭނުންނުކޮށް ކީއްވެހޭ ވަކި ޚާއްސަ ކޯޑު އެޑިޓްކުރާ ސޮފްޓްވެއަރ އެއް ބޭނުްކުރަނީ.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+ދެވަނަ ކަމަކީ ކޯޑު އެޑިޓަރތއް ޚާއްސަވެގެންވަނީ ހަމައަކަނީ ކޯޑު އެޑިޓްކުރުމަށެވެ. އެހެންކަމުން ކޯޑު ގެ މާނަ އެކުލެވޭގޮތަށް ކުލަ ކުލައިން ހައިލައިޓްކުރުމާއި، ކޯޓުތައް އޮޓޯއިން ބަންދުކޮށްދީ މިފަދަ ފަސޭހަ ކަންކަން އެކުލެވިގެންވެއެވެ.
 
 We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
