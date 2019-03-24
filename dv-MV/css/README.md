@@ -65,7 +65,7 @@
 
 މިތަނުގައި ސީއެސްއެސް ތަފްސީލުކޮށް ކަސްޓަމައިޒްކޮށް ދަސްކުރަން ކިޔައެއް ނުދޭނެ. އިތުރަށް ދަސްކުރަން ބޭނުންނަމަ މި ޕޭޖްގެ ތިރީގައި ހިލޭ ކިޔެވޭ ސީއެސްއެސް ކޯސްތައް ކިޔައިދީފައި ހުންނާނެ.
 
-އެކަމަކު ކުޑަކޮށް ކަސްޓަމައިޒް ކުރެވިދާނެ. ހެޑަރސްގެ ކުލަ ބަދަލުކޮށްލެވިދާނެ ދޯ? ކުލަ ދަސްކުރުމަށް، ޚާއްސަ ކޯޑުތަކެއް ކޮމްޕިއުޓަރ ގެންގުޅޭ. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+އެކަމަކު ކުޑަކޮށް ކަސްޓަމައިޒް ކުރެވިދާނެ. ހެޑަރސްގެ ކުލަ ބަދަލުކޮށްލެވިދާނެ ދޯ? ކުލަ ދަސްކުރުމަށް، ޚާއްސަ ކޯޑުތަކެއް ކޮމްޕިއުޓަރ ގެންގުޅޭ. މިކޯޑުތައް ފެށޭނީ `#` އިން ދެން ފަހަތަށް 6 އަކުރު (A–F) އަދި ނަމްބަރު(0–9). މިސާލަކަށް، ނޫކުލައިގެ ކޯޑަކީ0000FF `#` ގިނަ ކުލަތަކުގެ ކޯޑު ލިބޭނީ http://www.colorpicker.com. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
 In your `blog/static/css/blog.css` file you should add the following code:
 
