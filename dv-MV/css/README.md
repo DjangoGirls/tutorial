@@ -88,7 +88,7 @@
 
 އިތުރަށް ކިޔާލަން [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+ސީއެސް އެސް އިތިރުކުރި އެޗްޓީއެމްއެލް ޓެމްޕްލޭޓް އާއި ގުޅޭގޮތުން ކިޔައިދޭން އެބަޖެހޭ. `blog/templates/blog/post_list.html` ފައިލް ކޯޑު އެޑިޓަރގައި ހުޅުވާ އަދި ފަށާބަޔަށް މިލައިން އިތުރުކުރޭ:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
