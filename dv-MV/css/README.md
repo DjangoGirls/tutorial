@@ -190,7 +190,7 @@ h1 a, h2 a {
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+ބްލޮގް ޕޯސްޓުގެ `div` ހިމެނޭ ބަޔަށް ކްލާސް `post` އެއް އިތުރުކުރޭ.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -202,7 +202,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
+ދެން އެކި ސެލެކްޓަރސް އަށް ވަކިވަކި ޑެކްލެރޭޝަން ބްލޮކް ލާނީ. ފުރަތަމަ `.` އާއި ގުުޅުންހުރި ސެލެކްޓަރސް އިން ފަށާނީ. މިކޯޑުތައް ދަސްކުރުމަށް އިންޓަރނެޓުގައި ސީއެސްއެސްއާއި ގުޅުންހުރި ވަރަށްގިނަ ޓިއުޓޯރިއަލްއާއި ތަފްސީލުތައް އެބަހުރި. މިހާރަށް، `blog/static/css/blog.css` file: ކޮޕީކޮށްފައި ޕޭސްޓުކޮށްލާ:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
