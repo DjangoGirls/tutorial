@@ -96,7 +96,7 @@
 {% load static %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+މިތަނުން ލޯޑު މިކުރަނީ ހަމައެކަނި ސްޓެޓިކް ފައިލްސް :) `<head>`and`</head>` ޓެގުތަކުގެ ދޭތެރޭ އަދި ބޫޓުސްޓްރެޕް ސީއެސް އެސް ފައިލްސްގެ ލިންކު ފަހަތަށް މިލައިން އިތުރުކުރޭ:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -104,9 +104,9 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+ބްރައުޒާއިން ނަގާނީ ފައިލްތައް ދޭ ތަރުތީބުން، އެހެންވީމާ ރަނގަޅަށް ދޭން ޔަގީންކުރަންޖެހޭ. ނޫނީ އަހަރެމެންގެ ފައިލްގެ މައްޗަށް ބޫޓްސްޓްރެޕް ފައިލް ލެވިދާނެ. އަހަރެމެންގެ ޓެމްޕްލޭޓަށް މިކިޔައިދިނީ ސީއެސްއެސް ފައިލް އިންތަން.
 
-Your file should now look like this:
+މިހާރު ފައިލް އިންނަންވާނީ މިހެން:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -135,11 +135,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+އޯކޭ، ފައިލް ސޭވްކޮށްފައި ސައިޓް ރީފްރެށްކޮށްލާ!
 
 ![Figure 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+ސަޅި: މިހާރު ކުޑަކޮށް ވެބްސައިޓް ބޮޑުކޮށްލާ އަދި ކަނާތްފަރާތުގެ މާރޖިން ބޮޑުކޮށްލަން މަސައްކަތްކޮށްލަންވީ. މިހެން ހަދަން ހިނގާ!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -149,7 +149,7 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+ސީއެސްއެސް ފައިލް އަށް ކޯޑުކޮޅު އިތުރުކޮށްފައި ސޭވްކޮށްލީމާ މަސައްކަތްކުރޭތޯ ބަލަންވީއެންނު!
 
 ![Figure 14.3](images/margin2.png)
 
