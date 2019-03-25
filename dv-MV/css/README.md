@@ -178,9 +178,9 @@ h1 a, h2 a {
 
 ގަދަ!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+މަތީގައިވެސް ބުނިގޮތަށް، ސީއެސްއެސްގައި އިންނަނީ ކްލާސްތަކުގެ ކޮންސެޕްޓް. އެޗްޓީއެމްއެލްގެ ކޯޑުގެ ވަކިބަޔަކަށް ސްޓައިލް އެޕްލައިކުރާއިރު އަނެއް ބަޔަށް އަސަރު ނުކުރާ ގޮތަށް އެޕްލައިކުރެވޭނެ. މިއީ ވަރަށް ބޮޑު އެހީއެއް! ފަހަރެއްގައި ދެ ޑިވް އެއް އިނދެފާނެ ތަފާތު ދެކަމެއް ކުރާ ( ހެޑަރ އަދި ޕޯސްޓް ގޮތައް). ކިލާހަކުން މިދޭތި ފެންނަގޮތް ތަފާތުކުރަން އެހީތެރިވޭ.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+ކުރިޔަށްގޮސް އެޗްޓީއެމްއެލްގެ ކޯޑުގެ ބައިތަކަށް ނަން ދީ. އިތުރު ކްލާސް އެއް `page-header` ޖަހާފައި `div` ހެޑަރ އެކުލެވޭ ބަޔަށް މިގޮތަށް ލާ:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
