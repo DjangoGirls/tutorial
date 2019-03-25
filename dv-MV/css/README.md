@@ -163,7 +163,7 @@ body {
 
 ކުރިންވެސް ހެދި ގޮތށް، އޯރޑަރޗެކްކޮށްފައި މިލިންކު `blog/static/css/blog.css` ގެ ކުރިޔަށް އިތުރުކުރޭ. މިލައިންއިން *Lobster* ނަމުގައި އިން ފޮންޓެއް ގޫގުލް ފޮންޓް އިން އިމްޕޯރޓް ކުރާނެ. (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+`blog/static/css/blog.css` ސީއެސް އެސްފައިލްގެ ޑިކްލެރޭޝަން ބްލޮކް ( ބްރެކެޓް ދޭތެރޭގައިވާ ކޯޑުތައް `{` and `}`) އިން `h1 a` ހޯދާ. ދެން `font-family: 'Lobster';` މިލައިން ބްރެކެޓްތަކުގެ ދޭތެރެއަށް އިތުރުކޮށްފައި ޕޭޖު ރިފްރެޝްކޮށްލާ:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -176,7 +176,7 @@ h1 a, h2 a {
 
 ![Figure 14.3](images/font.png)
 
-Great!
+ގަދަ!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
