@@ -5,16 +5,16 @@
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-</a>git-scm.com އިން ގިޓު ޑައުންލޯޑު ކުރެވޭނެ. You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Other than that, the defaults are fine. Checkout Windows-style, commit Unix-style line endings is good.</p> 
+</a>git-scm.com އިން ގިޓު ޑައުންލޯޑު ކުރެވޭނެ. ދެ ސްޓެޕް ފިޔަވައި ދެން ހުރި ހުރިހާ ބަޔަކަށް"ނެކްސްޓް" ނެގޭނެ: އެޑިޓަރ އެއް ނަގަން ބުނާ ސްޓެޕްގައި ، ނެނޯ ނަގާފައި އަދި " އެޖަސްޓިން ޔުައަރ ޕާތް އެންވަޔަރމަންޓް" ގައި " ޔޫޒް ގިޓް އެންޑް އޮޕްޝަނަލް ޔުނިކްސް ޓޫލްސް ފްރޮމް ވިންޑޯސް ކޮމާންޑް ޕްރޮމްޕުޓް" ( ތިރީގައިވާ އޮޕްޝަން) ނަގާ. އެބައިތައް ނުލާ، އެހެން ހުރިހާތަނަކަށް ޑީފޯލްޓް ރަނަގޅުވާނެ. ވިންޑޯސް-ސްޓައިލްގެ ، ކޮމިޓް ޔުނިކްސް-ސްޓައިލް ލައިންގެ ނިންމުން ރަނގަޅު.</p> 
 
-Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
+އިންސްޓޮލޭޝަން ނިމުނީމާ ކޮމާންޑު ޕްރޮމްޕްޓު ނުވަތަ ޕަވަރޝެލް ރީސްޓާރޓު ކުރަން ހަނދާންނައްތާނުލާތި. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
+[git-scm.com](https://git-scm.com/) ގިޓު ޑައުންލޯޑުކޮށްފައ އިރުޝާދުތައް ބަލާ.
 
-> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **ނޯޓު** އޯއެސް އެކްސް 10.6، 10.7، ނުވަތަ 10.8 ބޭނުންކުރާނަމަ، ގިޓުގެ ވާރޝަން މިތަނުން ޑައުންލޯޑުކުރޭ:[Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
