@@ -79,9 +79,9 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` je CSS selektor. To znači da primenjujemo naš stil na bilo koji `a` element unutar `h1` elementa; selektor `h2 a` radi potpuno istu stvar za `h2` elemente. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` je CSS selektor. To znači da primenjujemo naš stil na bilo koji `a` element unutar `h1` elementa; selektor `h2 a` radi potpuno istu stvar za `h2` elemente. Dakle, kada imamo liniju koda kao što je `<h1><a href="">link</a></h1>`, tada će se primeniti `h1 a` stil. U ovom slučaju, uneli smo naredbu da se boja promeni u `#C25100`, što je zapravo tamno narandžasta. Možete da unesete i Vašu željenu boju, ali se postarajte da ima dobar kontrast naspram bele pozadine!
 
-In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
+U CSS fajlovima određujemo stilove za elemente u HTML fajlovima. Prvi način na koji možemo da identifikujemo elemente je pomoću imena elementa. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
