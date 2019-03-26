@@ -87,9 +87,9 @@ U CSS fajlovima određujemo stilove za elemente u HTML fajlovima. Prvi način na
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
 ```
 
-You can read more about [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
+Možete da pročitate više o tome na linku [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Takođe, moramo da na neki način obavestimo HTML obrazac da smo dodali neki CSS. Otvorite `blog/templates/blog/post_list.html` fajl u editoru i dodajte ovu liniju na samom početku:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -97,7 +97,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load static %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Sada samo učitavamo statičke fajlove. :) Između `<head>` i `</head>` tagova, nakon linkova do Bootstrap CSS fajlova, dodajte sledeću liniju:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
