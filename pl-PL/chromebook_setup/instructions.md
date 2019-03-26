@@ -18,7 +18,7 @@ Teraz powinnaś zobaczyć interfejs z bocznym paskiem i przyciski po lewej stron
     $
     
 
-Terminal PaizaCloud Cloud ID jest przygtowany na Twoje instrukcje. Możesz zmienić rozmiar tego okna i powiększyć je aby było troszkę większe.
+Terminal PaizaCloud Cloud ID jest gotowy na Twoje instrukcje. Możesz zmienić rozmiar tego okna i powiększyć je, aby było troszkę większe.
 
 #### AWS Cloud9
 
