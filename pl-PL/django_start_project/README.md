@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > ** Uwaga **: jeśli używasz Chromebooka, dodaj ten wiersz u dołu pliku settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Dodaj również `.c9users.io` do `ALLOWED_HOSTS` jeżeli używasz cloud9
+> Dodaj również `.c9users.io` do `ALLOWED_HOSTS`, jeżeli używasz cloud9
 
 ## Inicjalizacja bazy danych
 
@@ -178,14 +178,14 @@ Jeśli pracujesz na Windowsie i zobaczysz w tym momencie `UnicodeDecodeError`, u
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Teraz wszystko, co musisz zrobić, to sprawdzić, czy Twoja strona działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer lub jakąkolwiek inną) i wprowadź ten adres:
+Teraz sprawdź, czy Twoja strona działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer lub jakąkolwiek inną) i wprowadź ten adres:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Jeśli używasz Chromebooka i Cloud9, kliknij adres URL w wyskakującym okienku, które powinno pojawić się w prawym górnym rogu okna poleceń, w którym działa serwer WWW. Adres URL powinien wygladąc tak:
+Jeśli używasz Chromebooka i Cloud9, kliknij adres URL w wyskakującym okienku, które powinno pojawić się w prawym górnym rogu okna poleceń, w którym działa serwer WWW. Adres URL powinien wygladąć tak:
 
 {% filename %}browser{% endfilename %}
 
@@ -196,10 +196,10 @@ Gratulacje! Właśnie stworzyłaś swoją pierwszą stronę i uruchomiłaś ją 
 
 ![Install worked!](images/install_worked.png)
 
-Kiedy serwer internetowy jest uruchomiony, nie możesz zobaczyć nowego wiersza polecenia do wprowadzania dodatkowych poleceń. Terminal przyjmie nowy tekst, ale nie wykona nowego polecenia. Dzieje się tak dlatego, że serwer internetowy ciągle działa, aby nasłuchiwać przychodzących żądań.
+Kiedy serwer internetowy jest uruchomiony, nie możesz zobaczyć nowego wiersza polecenia do wprowadzania dodatkowych poleceń. Terminal przyjmie nowy tekst, ale nie wykona nowego polecenia. Dzieje się tak dlatego, że serwer internetowy ciągle działa oraz oczekuje nowych żądań.
 
 > Sprawdziliśmy, jak działają serwery internetowe w rozdziale **"Jak działa Internet"**.
 
-Aby wpisać dodatkowe polecenia podczas działania serwera WWW, otwórz nowe okno terminala i aktywuj swoje wirtualne środowisko(virtualenv) - aby przejrzeć instrukcje dotyczące otwierania drugiego okna terminala, patrz[ Wprowadzenie do wiersza poleceń ](../intro_to_command_line/README.md). Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).
+Aby wpisać dodatkowe polecenia podczas działania serwera WWW, otwórz nowe okno terminala i aktywuj swoje wirtualne środowisko (virtualenv) - aby przejrzeć instrukcje dotyczące otwierania drugiego okna terminala, patrz [Wprowadzenie do wiersza poleceń](../intro_to_command_line/README.md). Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).
 
 Gotowa na następny krok? Czas stworzyć treść!
