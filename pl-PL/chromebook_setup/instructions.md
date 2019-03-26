@@ -60,7 +60,7 @@ Następnie uruchom:
     pip install django~={{ book.django_version }}
     
 
-(zauważ, że w ostatniej linii użyliśmy tyldy, za którą następuje znak równości: ~=).
+(zauważ, że w ostatniej linii użyłyśmy tyldy, za którą następuje znak równości: ~=).
 
 ### GitHub
 
