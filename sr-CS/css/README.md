@@ -105,9 +105,9 @@ Sada samo učitavamo statičke fajlove. :) Između `<head>` i `</head>` tagova, 
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Pretraživač učitava fajlove po redosledu od početka do kraja, tako da moramo da budemo sigurni da je ova linija koda na pravom mestu. U suprotnom, kod u našem fajlu može da bude "pregažen" od strane koda iz Bootstrap fajla. We just told our template where our CSS file is located.
+Pretraživač učitava fajlove po redosledu od početka do kraja, tako da moramo da budemo sigurni da je ova linija koda na pravom mestu. U suprotnom, kod u našem fajlu može da bude "pregažen" od strane koda iz Bootstrap fajla. Ovim smo na neki način rekli našem obrascu gde je lociran naš CSS fajl.
 
-Your file should now look like this:
+Vaš fajl bi trebalo sada da izgleda ovako:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -136,11 +136,11 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+U redu, sada sačuvajte fajl i osvežite sajt!
 
 ![Slika 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+Lepo urađeno! Možda bismo mogli da damo našem sajtu malo prostora i da povećamo marginu sa leve strane? Hajde da to pokušamo!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
