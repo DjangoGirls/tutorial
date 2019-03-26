@@ -162,9 +162,9 @@ Možda bismo mogli da podesimo željeni font u našem zaglavlju? Nalepite ovo u 
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Kao i prošli put, proverite redosled i mesto na koje postavljate link, unutar `blog/static/css/blog.css` fajla. Ova linija koda će iz Google Fontova (https://www.google.com/fonts) uvesti font koji se zove *Lobster*.
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Pronađite blok u kojem je deklarisan `h1 a` (deo koda između zagrada `{` and `}`) u CSS fajlu `blog/static/css/blog.css`. Dodajte liniju `font-family: 'Lobster';` između zagrada i osvežite stranicu:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -177,7 +177,7 @@ h1 a, h2 a {
 
 ![Slika 14.3](images/font.png)
 
-Great!
+Odlično!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
