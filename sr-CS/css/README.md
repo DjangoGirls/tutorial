@@ -179,9 +179,9 @@ h1 a, h2 a {
 
 Odlično!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+Kao što je napomenuto ranije, u CSS-u postoje klase. One omogućavaju da odredite deo HTML koda i da primenite određene stilove na taj deo, bez ikakvog uticaja na ostale delove. To može da bude jako korisno! Možda imate dve celine (div-ovi) koje rade potpuno različite stvari (kao na primer zaglavlje i post). Klase mogu da Vam pomognu da učinite da ti delovi izgledaju drugačije.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Pokušajte da imenujete neke delove vašeg HTML koda. Dodajte klasu koja se zove `page-header` u Vaš `div` koji sadrži zaglavlje:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
