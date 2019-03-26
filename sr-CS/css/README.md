@@ -105,7 +105,7 @@ Sada samo učitavamo statičke fajlove. :) Između `<head>` i `</head>` tagova, 
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+Pretraživač učitava fajlove po redosledu od početka do kraja, tako da moramo da budemo sigurni da je ova linija koda na pravom mestu. U suprotnom, kod u našem fajlu može da bude "pregažen" od strane koda iz Bootstrap fajla. We just told our template where our CSS file is located.
 
 Your file should now look like this:
 
