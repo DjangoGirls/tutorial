@@ -68,7 +68,7 @@ Nećemo pričati opširno o personalizovanju i učenju CSS-a ovde, jer postoji p
 
 Ali, hajde ipak da uradimo neke stvari. Možda bismo mogli da promenimo boju zaglavlja? Kako bi razumeli boje, računari koriste određene kodove. Ti kodovi počinju sa `#`, nakon čega sledi 6 slova (A–F) i brojeva (0–9). Na primer, kod za plavu boju je `#0000FF`. Za mnoge boje, možete da pronađete kodove na ovom linku: http://www.colorpicker.com/. Moguće je i koristiti [unapred podešene boje](http://www.w3schools.com/colors/colors_names.asp) kao što su `red` (crvena) i `green` (zelena).
 
-In your `blog/static/css/blog.css` file you should add the following code:
+Trebalo bi da dodate sledeću liniju koda u vašem `blog/static/css/blog.css` fajlu:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` is a CSS Selector. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` je CSS selektor. To znači da primenjujemo naš stil na bilo koji `a` element unutar `h1` elementa; selektor `h2 a` radi potpuno istu stvar za `h2` elemente. So when we have something like `<h1><a href="">link</a></h1>`, the `h1 a` style will apply. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 In a CSS file we determine styles for elements in the HTML file. The first way we identify elements is with the element name. You might remember these as tags from the HTML section. Things like `a`, `h1`, and `body` are all examples of element names. We also identify elements by the attribute `class` or the attribute `id`. Class and id are names you give the element by yourself. Classes define groups of elements, and ids point to specific elements. For example, you could identify the following tag by using the tag name `a`, the class `external_link`, or the id `link_to_wiki_page`:
 
