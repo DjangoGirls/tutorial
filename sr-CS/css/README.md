@@ -154,7 +154,7 @@ Dodajte to Vašem CSS-u, sačuvajte fajl i pogledajte šta ste dobili!
 
 ![Slika 14.3](images/margin2.png)
 
-Možda možemo da podesimo željeni font u našem zaglavlju? Nalepite ovo u Vaš `<head>` in `blog/templates/blog/post_list.html` fajl:
+Možda bismo mogli da podesimo željeni font u našem zaglavlju? Nalepite ovo u Vaš `<head>` in `blog/templates/blog/post_list.html` fajl:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
