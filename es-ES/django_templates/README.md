@@ -95,9 +95,9 @@ Sería bueno ver si tu sitio web seguirá funcionando en la Internet pública, �
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Recuerda sustituir `<your-pythonanywhere-domain>` con tu subdominio de PythonAnywhere real, sin los paréntesis angulares.)
 
-* Y finalmente, ve a la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) y haz click en **Reload** en tu aplicación web. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! Si ves distintas publicaciones en el sitio en PythonAnywhere de las que tienes en tu servidor local, es lo normal. Tienes dos bases de datos, una en tu ordenador local y otra en PythonAnywhere y no tienen por qué tener el mismo contenido.
+* Y finalmente, dirígete a la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) y haz click en **Reload** en tu aplicación web. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! Si ves distintas publicaciones en el sitio en PythonAnywhere de las que tienes en tu servidor local, es lo normal. Tienes dos bases de datos, una en tu ordenador local y otra en PythonAnywhere y no tienen por qué tener el mismo contenido.
 
 Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
