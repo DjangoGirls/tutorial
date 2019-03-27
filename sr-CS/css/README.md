@@ -296,10 +296,10 @@ Sačuvajte ove fajlove i osvežite svoj sajt.
 
 ![Slika 14.4](images/final.png)
 
-Vauuu! Izgleda odlično, zar ne? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Vauuu! Izgleda odlično, zar ne? Pogledajte kod koji smo nalepili kako biste videli gde su dodate klase u HTML-u i upotrebljene u CSS-u. Gde biste načinili izmenu, ako biste želeli da obojite datum u tirkizno?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Ne plašite se da malo eksperimentišete sa CSS-om i da pokušate da promenite neke stvari. Igranje CSS-om može da Vam pomogne da razumete kako različite stvari funkcionišu. Ako negde pogrešite, ne brinite - uvek možete da se vratite korak unazad!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+Preporučujemo Vam pohađanje ovog besplatnog kusa [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). To može da Vam pomogne da naučite sve o ulepšavanju Vašeg sajta pomoću CSS.
 
-Ready for the next chapter?! :)
+Da li ste spremni za sledeće poglavlje?! :)
