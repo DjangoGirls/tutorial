@@ -66,9 +66,9 @@ Vreme je da napišete neki CSS! Otvorite `blog/static/css/blog.css` fajl u svom 
 
 Nećemo pričati opširno o personalizovanju i učenju CSS-a ovde, jer postoji preporuka za besplatan CSS kurs na kraju ove stranice, ukoliko želite da naučite više.
 
-Ali, hajde ipak da uradimo neke stvari. Možda bismo mogli da promenimo boju zaglavlja? Kako bi razumeli boje, računari koriste određene kodove. Ti kodovi počinju sa `#`, nakon čega sledi 6 slova (A–F) i brojeva (0–9). Na primer, kod za plavu boju je `#0000FF`. Za mnoge boje, možete da pronađete kodove na ovom linku: http://www.colorpicker.com/. Moguće je i koristiti [unapred podešene boje](http://www.w3schools.com/colors/colors_names.asp) kao što su `red` (crvena) i `green` (zelena).
+Ali, hajde da ipak uradimo neke stvari. Možda bismo mogli da promenimo boju zaglavlja? Kako bi razumeli boje, računari koriste određene kodove. Ti kodovi počinju sa `#`, nakon čega sledi 6 slova (A–F) i brojeva (0–9). Na primer, kod za plavu boju je `#0000FF`. Za mnoge boje, možete da pronađete kodove na ovom linku: http://www.colorpicker.com/. Moguće je i koristiti [unapred podešene boje](http://www.w3schools.com/colors/colors_names.asp) kao što su `red` (crvena) i `green` (zelena).
 
-Trebalo bi da dodate sledeću liniju koda u vašem `blog/static/css/blog.css` fajlu:
+Trebalo bi da dodate sledeću liniju koda u Vašem `blog/static/css/blog.css` fajlu:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -81,7 +81,7 @@ h1 a, h2 a {
 
 `h1 a` je CSS selektor. To znači da primenjujemo naš stil na bilo koji `a` element unutar `h1` elementa; selektor `h2 a` radi potpuno istu stvar za `h2` elemente. Dakle, kada imamo liniju koda kao što je `<h1><a href="">link</a></h1>`, tada će se primeniti `h1 a` stil. U ovom slučaju, uneli smo naredbu da se boja promeni u `#C25100`, što je zapravo tamno narandžasta. Možete da unesete i Vašu željenu boju, ali se postarajte da ima dobar kontrast naspram bele pozadine!
 
-U CSS fajlovima određujemo stilove za elemente u HTML fajlovima. Prvi način na koji možemo da identifikujemo elemente je pomoću imena elementa. Možda Vam je to poznatije pod nazivom tagovi, iz dela sa HTML-om. Stvari kao što su `a`, `h1`, i `body` su primeri imena elemenata. Takođe, identifikujemo elemente i prema atributu `class` ili atributu `id`. Class (klasa) i id (identifikacioni broj) su imena koja sami dodeljujete elementima. Klase predstavljaju grupe elemenata, a identifikacioni brojevi pokazuju jedan određeni element. Na primer, možete da odredite sledeći tag koristeći naziv taga `a`, klasu `external_link`, ili identifikacioni broj `link_to_wiki_page`:
+U CSS fajlovima određujemo stilove za elemente u HTML fajlovima. Prvi način na koji možemo da identifikujemo elemente je pomoću imena elemenata. Možda Vam je to poznatije pod nazivom tagovi, iz dela sa HTML-om. Stvari kao što su `a`, `h1`, i `body` su primeri imena elemenata. Takođe, identifikujemo elemente i prema atributu `class` ili atributu `id`. Class (klasa) i id (identifikacioni broj) su imena koja sami dodeljujete elementima. Klase predstavljaju grupe elemenata, a identifikacioni brojevi pokazuju jedan određeni element. Na primer, možete da odredite sledeći tag koristeći naziv taga `a`, klasu `external_link`, ili identifikacioni broj `link_to_wiki_page`:
 
 ```html
 <a href="https://en.wikipedia.org/wiki/Django" class="external_link" id="link_to_wiki_page">
@@ -154,7 +154,7 @@ Dodajte to Vašem CSS-u, sačuvajte fajl i pogledajte šta ste dobili!
 
 ![Slika 14.3](images/margin2.png)
 
-Možda bismo mogli da podesimo željeni font u našem zaglavlju? Nalepite ovo u Vaš `<head>` in `blog/templates/blog/post_list.html` fajl:
+Možda bismo mogli da podesimo željeni font u našem zaglavlju? Nalepite ovo u Vaš `<head>` u fajlu `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
