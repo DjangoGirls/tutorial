@@ -191,7 +191,7 @@ Pokušajte da imenujete neke delove vašeg HTML koda. Dodajte klasu koja se zove
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+Sada dodajte klasu `post` u Vaš `div` koji sadrži post.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -203,7 +203,7 @@ And now add a class `post` to your `div` containing a blog post.
 </div>
 ```
 
-We will now add declaration blocks to different selectors. Selectors starting with `.` relate to classes. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Sada ćemo dodati deklaracione blokove različitim selektorima. Selektori počinju `.` (tačkom) za razliku od klasa. Postoje mnogi odlični priručnici i objašnjenja o CSS-u na internetu koji mogu da Vam pomognu da razumete sledeći kod. Za sada, kopirajte ga i nalepite u Vaš `blog/static/css/blog.css` fajl:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -256,7 +256,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+Zatim umetnite HTML kod koji prikazuje post između deklaracija klasa. Zamenite sledeći deo:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -270,7 +270,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+u `blog/templates/blog/post_list.html` fajlu ovim:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -292,11 +292,11 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+Sačuvajte ove fajlove i osvežite svoj sajt.
 
 ![Slika 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Vauuu! Izgleda odlično, zar ne? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
 Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
