@@ -164,7 +164,7 @@ Možda bismo mogli da podesimo željeni font u našem zaglavlju? Nalepite ovo u 
 
 Kao i prošli put, proverite redosled i mesto na koje postavljate link, unutar `blog/static/css/blog.css` fajla. Ova linija koda će iz Google Fontova (https://www.google.com/fonts) uvesti font koji se zove *Lobster*.
 
-Pronađite blok u kojem je deklarisan `h1 a` (deo koda između zagrada `{` and `}`) u CSS fajlu `blog/static/css/blog.css`. Dodajte liniju `font-family: 'Lobster';` između zagrada i osvežite stranicu:
+Pronađite blok u kojem je deklarisan `h1 a` (deo koda između zagrada `{` `}`) u CSS fajlu `blog/static/css/blog.css`. Dodajte liniju `font-family: 'Lobster';` između zagrada i osvežite stranicu:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
@@ -181,7 +181,7 @@ Odlično!
 
 Kao što je napomenuto ranije, u CSS-u postoje klase. One omogućavaju da odredite deo HTML koda i da primenite određene stilove na taj deo, bez ikakvog uticaja na ostale delove. To može da bude jako korisno! Možda imate dve celine (div-ovi) koje rade potpuno različite stvari (kao na primer zaglavlje i post). Klase mogu da Vam pomognu da učinite da ti delovi izgledaju drugačije.
 
-Pokušajte da imenujete neke delove vašeg HTML koda. Dodajte klasu koja se zove `page-header` u Vaš `div` koji sadrži zaglavlje:
+Pokušajte da imenujete neke delove Vašeg HTML koda. Dodajte klasu koja se zove `page-header` u Vaš `div` koji sadrži zaglavlje:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -270,7 +270,7 @@ Zatim umetnite HTML kod koji prikazuje post između deklaracija klasa. Zamenite 
 {% endfor %}
 ```
 
-u `blog/templates/blog/post_list.html` fajlu ovim:
+u `blog/templates/blog/post_list.html` fajlu ovim delom:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -300,6 +300,6 @@ Vauuu! Izgleda odlično, zar ne? Pogledajte kod koji smo nalepili kako biste vid
 
 Ne plašite se da malo eksperimentišete sa CSS-om i da pokušate da promenite neke stvari. Igranje CSS-om može da Vam pomogne da razumete kako različite stvari funkcionišu. Ako negde pogrešite, ne brinite - uvek možete da se vratite korak unazad!
 
-Preporučujemo Vam pohađanje ovog besplatnog kusa [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). To može da Vam pomogne da naučite sve o ulepšavanju Vašeg sajta pomoću CSS.
+Preporučujemo Vam pohađanje ovog besplatnog kusa [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). To može da Vam pomogne da naučite sve o ulepšavanju Vašeg sajta pomoću CSS-a.
 
 Da li ste spremni za sledeće poglavlje?! :)
