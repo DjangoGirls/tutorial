@@ -444,6 +444,6 @@ Bakalım PythonAnywhere'de de çalışacak mı? Tekrar yayına alalım!
 
 (Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-* Son olarak, ["Web" page](https://www.pythonanywhere.com/web_app_setup/) bölümüne geçin (konsolun sağ üst tarafındaki menü düğmesini kullanın) ve **Yeniden yükle** tuşuna basın. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* Son olarak, ["Web" page](https://www.pythonanywhere.com/web_app_setup/) bölümüne geçin (konsolun sağ üst tarafındaki menü düğmesini kullanın) ve **Yeniden yükle** tuşuna basın. Değişiklikleri görmek için https://subdomain.pythonanywhere.com blogunuzu yenileyin.
 
 İşte bu kadar! Tebrikler :)
