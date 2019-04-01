@@ -1,11 +1,11 @@
-Git je "kontrolni sistem za ažuriranje programa" koji koristi veliki broj programera. Ovaj softver može da prati promene u fajlovima tako da u nekom trenutku možete da pozovete neku od prošlih verzija programa. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git je "kontrolni sistem za ažuriranje programa" koji koristi veliki broj programera. Ovaj softver može da prati promene u fajlovima tako da u nekom trenutku možete da pozovete neku od prošlih verzija programa. To je slično opciji "praćenja promena" u programima za obradu teksta (kao što su npr. Microsoft Word ili LibreOffice Writer), samo što je mnogo moćnije.
 
-## Installing Git
+## Instaliranje Git-a
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Možete da preuzmete Git sa [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Osim toga, podrazumevane opcije su u redu. Checkout Windows-style, commit Unix-style line endings is good.
+Možete da preuzmete Git sa [git-scm.com](https://git-scm.com/). Možete da kliknete na "next" (sledeći korak) tokom svakog koraka, osim u dva slučaja: u koraku gde treba da izaberete editor (potrebno je da izaberete Nano) i u koraku koji se zove "Adjusting your PATH environment" (prilagođavanje Vašeg PATH okruženja), gde treba da izaberete opciju na dnu, "Use Git and optional Unix tools from the Windows Command Prompt" (Koristite Git i Unix alate iz Windows komandne linije). Osim toga, podrazumevane opcije su u redu. Checkout Windows-style, commit Unix-style line endings is good.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
