@@ -1,10 +1,10 @@
-# Razvij!
+# Obezbedite dostupnost!
 
-> **Napomena** Sledeće poglavlje može ponekad da bude zahtevno. Istrajte i završite ga; razvijanje je važan deo procesa pravljenja sajtova. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Napomena** Sledeće poglavlje može ponekad da bude zahtevno. Istrajte i završite ga; dostupnost je važan deo procesa pravljenja sajtova. Ovo poglavlje je postavljeno u sredinu priručnika kako bi Vaš mentor mogao da Vam pomogne u vezi sa postavljanjem sajta na internet. To znači da i dalje možete da završite priručnik sami, ukoliko Vam ponestane vremena.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Do sada, Vaš sajt je bio dostupan isključivo na Vašem računaru. Sada ćete naučiti kako da ga dopremite na internet! Ovaj proces se odnosi na objavljivanje Vaše aplikacije na internetu, tako da ljudi konačno mogu da je vide. :)
 
-As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Kao što ste do sada naučili, sajt mora da se nalazi na nekom serveru. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
 The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
