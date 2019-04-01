@@ -45,9 +45,9 @@ Git će pratiti sve izmene na svim fajlovima i folderima u ovom direktorijumu, a
     .DS_Store
     
 
-And save it as `.gitignore` in the "djangogirls" folder.
+Sačuvajte to kao `.gitignore` u "djangogirls" folderu.
 
-> **Note** The dot at the beginning of the file name is important! If you're having any difficulty creating it (Macs don't like you to create files that begin with a dot via the Finder, for example), then use the "Save As" feature in your editor; it's bulletproof. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
+> **Napomena** Tačka na početku naziva fajla je važna! Ukoliko imate poteškoće tokom kreiranja (Apple-ovi računari ne vole kada kreirate fajlove koji počinju tačkom putem Finder-a) koristite "Save As" (sačuvajte kao) opciju u editoru, to bi trebalo da pomogne. And be sure not to add `.txt`, `.py`, or any other extension to the file name -- it will only be recognized by Git if the name is just `.gitignore`.
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
