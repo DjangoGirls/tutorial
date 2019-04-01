@@ -16,11 +16,11 @@ Ta tri mesta će Vam biti važna. Vaš lokalni računar će biti mesto gde razvi
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Pokretanje Git skladišta
 
-Git prati izmene na određenom skupu fajlova koji se nalaze u nečemu što se naziva skladište za kodove (eng. code repository). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git prati izmene na određenom skupu fajlova koji se nalaze u nečemu što se naziva skladište za kodove (eng. code repository). Hajde da kreiramo jedno skladište za naš projekat. Otvorite konzolu i ukucajte sledeće komande, u `djangogirls` direktorijumu:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Napomena** Proverite trenutni radni direktorijum pomoću `pwd` (Mac OS/Linux) ili `cd` (Windows) komande, pre inicijalizovanja skladišta. Trebalo bi da se nalazite u `djangogirls` folderu.
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,9 +30,9 @@ Git prati izmene na određenom skupu fajlova koji se nalaze u nečemu što se na
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Inicijalizovanje Git skladišta je nešto što treba da se uradi samo jednom tokom jednog projekta (nakon toga nećete više morati da unosite korisničko ime i email).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git će pratiti sve izmene na svim fajlovima i folderima u ovom direktorijumu, ali postoje neki fajlovi za koje želimo da budu ignorisani. To se radi kreiranjem fajla `.gitignore` u osnovnom direktorijumu. Otvorite editor i kreirajte novi fajl sa sledećim sadržajem:
 
 {% filename %}.gitignore{% endfilename %}
 
