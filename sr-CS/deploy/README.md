@@ -4,11 +4,11 @@
 
 Do sada, Vaš sajt je bio dostupan isključivo na Vašem računaru. Sada ćete naučiti kako da ga dopremite na internet! Ovaj proces se odnosi na objavljivanje Vaše aplikacije na internetu, tako da ljudi konačno mogu da je vide. :)
 
-Kao što ste do sada naučili, sajt mora da se nalazi na nekom serveru. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Kao što ste do sada naučili, sajt mora da se nalazi na nekom serveru. Postoji dosta provajdera za servere koji su dostupni na internetu, a mi ćemo koristiti [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere je besplatan za male aplikacije koje nemaju puno posetilaca, tako da će to za sada biti dovoljno.
 
-The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+Drugi servis koji ćemo koristiti je [GitHub](https://www.github.com), koji će nam omogućiti hostovanje kodova. Postoje i drugi servisi, ali ovih dana skoro svi programeri imaju GitHub nalog, tako da ćete i Vi napraviti jedan!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Ta tri mesta će Vam biti važna. Vaš lokalni računar će biti mesto gde razvijate program i testirate ga. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
 # Git
 
