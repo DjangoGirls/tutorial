@@ -8,17 +8,17 @@ Kao što ste do sada naučili, sajt mora da se nalazi na nekom serveru. Postoji 
 
 Drugi servis koji ćemo koristiti je [GitHub](https://www.github.com), koji će nam omogućiti hostovanje kodova. Postoje i drugi servisi, ali ovih dana skoro svi programeri imaju GitHub nalog, tako da ćete i Vi napraviti jedan!
 
-Ta tri mesta će Vam biti važna. Vaš lokalni računar će biti mesto gde razvijate program i testirate ga. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Ta tri mesta će Vam biti važna. Vaš lokalni računar će biti mesto gde razvijate program i testirate ga. Kada budete bili zadovoljni izmenama, možete da postavite kopiju svog programa na GitHub. Vaš sajt će biti na PythonAnywhere i ažuriraćete ga preuzimanjem nove kopije koda sa GitHub-a.
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Napomena** Ako ste već prošli kroz sve instalacione korake, nema potrebe da ovo radite ponovo - možete da odmah pređete na sledeći deo i da počnete da pravite svoje Git skladište.
 
 {% include "/deploy/install_git.md" %}
 
 ## Starting our Git repository
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git prati izmene na određenom skupu fajlova koji se nalaze u nečemu što se naziva skladište za kodove (eng. code repository). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
 
 > **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
