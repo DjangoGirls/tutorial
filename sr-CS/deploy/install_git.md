@@ -7,14 +7,14 @@ data-collapse=true ces-->
 
 Možete da preuzmete Git sa [git-scm.com](https://git-scm.com/). Možete da kliknete na "next" (sledeći korak) tokom svakog koraka, osim u dva slučaja: u koraku gde treba da izaberete editor (potrebno je da izaberete Nano) i u koraku koji se zove "Adjusting your PATH environment" (prilagođavanje Vašeg PATH okruženja), gde treba da izaberete opciju na dnu, "Use Git and optional Unix tools from the Windows Command Prompt" (Koristite Git i Unix alate iz Windows komandne linije). Osim toga, podrazumevane opcije su u redu. Opcija "Checkout Windows-style, commit Unix-style line endings" je dobra.
 
-Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
+Ne zaboravite da restartujete komandnu liniju ili powershell nakon uspešno obavljene instalacije. <!--endsec-->
 
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
+Preuzmite Git sa linka [git-scm.com](https://git-scm.com/) i pratite instrukcije.
 
-> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **Napomena** Ukoliko imate operativni sistem X 10.6, 10.7 ili 10.8, potrebno je da preuzmete verziju sa ovog linka: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
