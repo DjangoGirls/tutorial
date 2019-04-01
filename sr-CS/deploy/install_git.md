@@ -5,7 +5,7 @@ Git je "kontrolni sistem za ažuriranje programa" koji koristi veliki broj progr
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-Možete da preuzmete Git sa [git-scm.com](https://git-scm.com/). Možete da kliknete na "next" (sledeći korak) tokom svakog koraka, osim u dva slučaja: u koraku gde treba da izaberete editor (potrebno je da izaberete Nano) i u koraku koji se zove "Adjusting your PATH environment" (prilagođavanje Vašeg PATH okruženja), gde treba da izaberete opciju na dnu, "Use Git and optional Unix tools from the Windows Command Prompt" (Koristite Git i Unix alate iz Windows komandne linije). Osim toga, podrazumevane opcije su u redu. Checkout Windows-style, commit Unix-style line endings is good.
+Možete da preuzmete Git sa [git-scm.com](https://git-scm.com/). Možete da kliknete na "next" (sledeći korak) tokom svakog koraka, osim u dva slučaja: u koraku gde treba da izaberete editor (potrebno je da izaberete Nano) i u koraku koji se zove "Adjusting your PATH environment" (prilagođavanje Vašeg PATH okruženja), gde treba da izaberete opciju na dnu, "Use Git and optional Unix tools from the Windows Command Prompt" (Koristite Git i Unix alate iz Windows komandne linije). Osim toga, podrazumevane opcije su u redu. Opcija "Checkout Windows-style, commit Unix-style line endings" je dobra.
 
 Do not forget to restart the command prompt or powershell after the installation finished successfully. <!--endsec-->
 
