@@ -95,13 +95,13 @@ Zatim, kreirajte novo skladište i nazovite ga "my-first-blog". Ostavite "initia
 
 > **Napomena** Naziv `my-first-blog` je važan - možete da izaberete neki drugi naziv, ali biste u tom slučaju kasnije morali svaki put da ga menjate jer je tokom sledećih instrukcija svuda korišćen navedeni naziv. Verovatno je lakše ostaviti ga kao `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+Na sledećem prikazu, videćete URL za kloniranje Vašeg skladišta, koji ćete koristiti u nekim od sledećih komandi:
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Sada treba da povežemo Git skladište na Vašem računaru sa onim na GitHub-u.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Ukucajte sledeće komande u konzolu (zamenite `<your-github-username>` sa korisničkim imenom koje ste uneli kada ste kreirali GitHub nalog, ali bez uglastih zagrada - URL bi trebalo da se poklapa sa URL-om za kloniranje koji ste videli):
 
 {% filename %}command-line{% endfilename %}
 
