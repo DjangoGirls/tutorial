@@ -89,11 +89,11 @@ I na kraju, možemo da sačuvamo izmene pomoću sledećih komandi:
 
 Idite na [GitHub.com](https://www.github.com) i napravite nov, besplatan nalog. (Ako ste to već odradili tokom priprema za ovu radionicu, utoliko bolje!) Postarajte se da zapamtite Vašu šifru (dodajte je u svoj organizator za šifre (eng. password manager) ukoliko ga koristite).
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Zatim, kreirajte novo skladište i nazovite ga "my-first-blog". Ostavite "initialize with a README" polje prazno, takođe ostavite .gitignore opciju nepopunjenu (to smo već uradili ručno) i postavite licencu kao "None".
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> **Napomena** Naziv `my-first-blog` je važan - možete da izaberete neki drugi naziv, ali biste u tom slučaju kasnije morali svaki put da ga menjate jer je tokom sledećih instrukcija svuda korišćen navedeni naziv. Verovatno je lakše ostaviti ga kao `my-first-blog`.
 
 On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
