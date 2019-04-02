@@ -72,7 +72,7 @@ Dobra ideja je da koristite `git status` komandu pre komande `git add` ili kada 
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+I na kraju, možemo da sačuvamo izmene pomoću sledećih komandi:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,9 +85,9 @@ And finally we save our changes. Go to your console and run these commands:
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Objavljivanje koda na GitHub-u
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+Idite na [GitHub.com](https://www.github.com) i napravite nov, besplatan nalog. (Ako ste to već odradili tokom priprema za ovu radionicu, utoliko bolje!) Postarajte se da zapamtite Vašu šifru (dodajte je u svoj organizator za šifre (eng. password manager) ukoliko ga koristite).
 
 Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
