@@ -30,7 +30,7 @@ Git prati izmene na određenom skupu fajlova koji se nalaze u nečemu što se na
     $ git config --global user.email you@example.com
     
 
-Inicijalizovanje Git skladišta je nešto što treba da se uradi samo jednom tokom jednog projekta (nakon toga nećete više morati da unosite korisničko ime i email).
+Inicijalizovanje Git skladišta je nešto što treba da se uradi samo jednom tokom rada na projektu (nakon toga nećete više morati da unosite korisničko ime i email).
 
 Git će pratiti sve izmene na svim fajlovima i folderima u ovom direktorijumu, ali postoje neki fajlovi za koje želimo da budu ignorisani. To se radi kreiranjem fajla `.gitignore` u osnovnom direktorijumu. Otvorite editor i kreirajte novi fajl sa sledećim sadržajem:
 
