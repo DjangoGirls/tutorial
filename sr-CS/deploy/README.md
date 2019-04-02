@@ -4,7 +4,7 @@
 
 Do sada, Vaš sajt je bio dostupan isključivo na Vašem računaru. Sada ćete naučiti kako da ga dopremite na internet! Ovaj proces se odnosi na objavljivanje Vaše aplikacije na internetu, tako da ljudi konačno mogu da je vide. :)
 
-Kao što ste do sada naučili, sajt mora da se nalazi na nekom serveru. Postoji dosta provajdera za servere koji su dostupni na internetu, a mi ćemo koristiti [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere je besplatan za male aplikacije koje nemaju puno posetilaca, tako da će to za sada biti dovoljno.
+Kao što ste do sada naučili, sajt mora da se nalazi na nekom serveru. Postoji dosta provajdera za servere koji su dostupni na internetu, a mi ćemo koristiti [PythonAnywhere](https://www.pythonanywhere.com/). On je besplatan za male aplikacije koje nemaju puno posetilaca, tako da će to za sada biti dovoljno.
 
 Drugi servis koji ćemo koristiti je [GitHub](https://www.github.com), koji će nam omogućiti hostovanje kodova. Postoje i drugi servisi, ali ovih dana skoro svi programeri imaju GitHub nalog, tako da ćete i Vi napraviti jedan!
 
@@ -140,9 +140,9 @@ Vratite se natrag na glavnu [PythonAnywhere kontrolnu tablu](https://www.pythona
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **Napomena** PythonAnywhere se zasniva na Linux-u, tako da će konzola izgledati drugačije od one na Vašem računaru ukoliko koristite Windows.
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+Dopremanje veb aplikacije na PythonAnywhere uključuje povlačenje koda sa GitHub-a i zatim konfigurisanje okruženja kako bi kod bio prepoznat kao veb aplikacija. Postoje načini na koje to može ručno da se uradi, ali PythonAnywhere obezbeđuje pomoćni alat koji će to sve uraditi umesto Vas. Hajde da ga prvo instaliramo:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
