@@ -128,15 +128,15 @@ Vaš kod je sada na GitHub-u. Pogledajte! Naćićete ga u dobrom društvu - [Dja
 
 # Podešavanje bloga na PythonAnywhere
 
-## Sign up for a PythonAnywhere account
+## Napravite nalog na PythonAnywhere
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Napomena** možda ste već kreirali nalog na PythonAnywhere ranije, tokom instalacije - ukoliko je to slučaj, nema potreba da ga kreirate ponovo.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## Podešavanje sajta na PythonAnywhere
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+Vratite se natrag na glavnu [PythonAnywhere kontrolnu tablu](https://www.pythonanywhere.com/) klikom na logo i izaberite opciju da pokrenete "Bash" konzolu - to je PythonAnywhere verzija komandne linije, koja izgleda kao ona na Vašem računaru.
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
