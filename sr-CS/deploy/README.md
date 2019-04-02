@@ -109,7 +109,7 @@ Ukucajte sledeće komande u konzolu (zamenite `<your-github-username>` sa korisn
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+Kada objavljujete na GitHubu, moraćete da unesete korisničko ime i šifru (ili u komandnoj liniji ili u pop-up prozoru) i nakon unošenja podataka ćete videti nešto što bi trebalo ovako da izgleda:
 
 {% filename %}command-line{% endfilename %}
 
@@ -124,9 +124,9 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Vaš kod je sada na GitHub-u. Pogledajte! Naćićete ga u dobrom društvu - [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) i mnogi drugi dobri projekti otvorenog koda takođe drže svoj kod na GitHub-u. :)
 
-# Setting up our blog on PythonAnywhere
+# Podešavanje bloga na PythonAnywhere
 
 ## Sign up for a PythonAnywhere account
 
