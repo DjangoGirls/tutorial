@@ -195,14 +195,14 @@ Možete takođe da odete na stranicu "Files" (fajlovi) i da je pretražujete kor
 
 Vaš sajt bi trebalo da ide sada uživo i javno na internetu! Prođite kroz PythonAnywhere "Web" stranicu da nađete link koji možete da podelite s kim god želite :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> **Napomena** Ovo je priručnik za početnike i zbog toga smo tokom dopremanja ovog sajta primenili nekoliko prečica koje nisu baš idealne, gledano sa stanovišta sigurnosti. Ako odlučite da dalje razvijate projekat, ili da započnete novi, trebalo bi da pogledate [razvojnu Django listu](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) zbog nekih korisnih saveta o sigurnosti Vašeg sajta.
 
-## Debugging tips
+## Saveti za otklanjanje grešaka
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Ukoliko vidite grešku tokom pokretanja skripte `pa_autoconfigure_django.py`, evo nekoliko uobičajenih razloga:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
+- Možda ste zaboravili da kreirate PythonAnywhere API token.
+- Možda ste pogrešili u GitHub URL-u
 - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
 
 If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
