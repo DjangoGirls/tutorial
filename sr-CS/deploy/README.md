@@ -193,7 +193,7 @@ Možete takođe da odete na stranicu "Files" (fajlovi) i da je pretražujete kor
 
 ## Oživeli ste projekat!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+Vaš sajt bi trebalo da ide sada uživo i javno na internetu! Prođite kroz PythonAnywhere "Web" stranicu da nađete link koji možete da podelite s kim god želite :)
 
 > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
 
