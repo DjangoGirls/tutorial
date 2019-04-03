@@ -158,11 +158,11 @@ Sada treba da pokrenemo alat koji će nam pomoći da automatski konfigurišemo n
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+Dok posmatrate kako se to izvršava, moći ćete da vidite šta se dešava:
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
-- Updating your settings file with some deployment settings
+- Preuzimanje Vašeg koda sa GitHub-a
+- Kreiranje virtuelnog okruženja na PythonAnywhere, koje je kao ono na Vašem računaru
+- Ažuriranje fajla sa podešavanjima
 - Setting up a database on PythonAnywhere using the `manage.py migrate` command
 - Setting up your static files (we'll learn about these later)
 - And configuring PythonAnywhere to serve your web app via its API
