@@ -169,16 +169,16 @@ Dok posmatrate kako se to izvršava, moći ćete da vidite šta se dešava:
 
 Na PythonAnywhere su svi ovi koraci automatizovani i isti su kao i svi koraci kroz koje biste trebali da prođete ako koristite nekog drugog server provajdera.
 
-Glavna stvar koju treba da primetite je da je Vaša baza podataka na PythonAnywhere u potpunosti razdvojena od baze podataka na Vašem računaru, tako da može da ima drugačije naloge za postovanje i za administratore. Kao rezultat, trebalo bi da inicijalizujemo admin nalog pomoću `createsuperuser`, kao što smo to uradili na Vašem računaru. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Glavna stvar koju treba da primetite je da je Vaša baza podataka na PythonAnywhere u potpunosti razdvojena od baze podataka na Vašem računaru, tako da može da ima drugačije naloge za postovanje i za administratore. Kao rezultat, trebalo bi da inicijalizujemo admin nalog pomoću `createsuperuser`, kao što smo to uradili na Vašem računaru. PythonAnywhere je automatski pokrenuo virtuelno okruženje za Vas, tako da je sve što treba da uradite pokretanje sledećih komandi:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Unesite podatke o administratoru. Najbolje je da koristite iste one kao na Vašem računaru, kako bi se izbegla bilo kakva zabuna, osim ako ne želite da šifru na PythonAnywhere dodatno osigurate.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Sada, ukoliko to želite, možete da pogledate Vaš kod na PythonAnywhere korišćenjem naredbe `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
