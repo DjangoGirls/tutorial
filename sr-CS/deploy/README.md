@@ -4,7 +4,7 @@
 
 Do sada, Vaš sajt je bio dostupan isključivo na Vašem računaru. Sada ćete naučiti kako da ga dopremite na internet! Ovaj proces se odnosi na objavljivanje Vaše aplikacije na internetu, tako da ljudi konačno mogu da je vide. :)
 
-Kao što ste do sada naučili, sajt mora da se nalazi na nekom serveru. Postoji dosta provajdera za servere koji su dostupni na internetu, a mi ćemo koristiti [PythonAnywhere](https://www.pythonanywhere.com/). On je besplatan za male aplikacije koje nemaju puno posetilaca, tako da će to za sada biti dovoljno.
+Kao što ste do sada naučili, sajt mora da se nalazi na nekom serveru. Postoji dosta provajdera za servere koji su dostupni na internetu, a mi ćemo koristiti [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere je besplatan za male aplikacije koje nemaju puno posetilaca, tako da će to za sada biti dovoljno.
 
 Drugi servis koji ćemo koristiti je [GitHub](https://www.github.com), koji će nam omogućiti hostovanje kodova. Postoje i drugi servisi, ali ovih dana skoro svi programeri imaju GitHub nalog, tako da ćete i Vi napraviti jedan!
 
@@ -149,9 +149,9 @@ Dopremanje veb aplikacije na PythonAnywhere uključuje povlačenje koda sa GitHu
     $ pip3.6 install --user pythonanywhere
     
 
-That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+Ovo bi trebalo da ispiše neke stvari kao `Collecting pythonanywhere` i da se eventualno da završi natpisom `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Sada treba da pokrenemo alat koji će nam pomoći da automatski konfigurišemo našu aplikaciju sa GitHub-a. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
