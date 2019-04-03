@@ -189,9 +189,9 @@ Sada, ukoliko to želite, možete da pogledate Vaš kod na PythonAnywhere koriš
     tests.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Možete takođe da odete na stranicu "Files" (fajlovi) i da je pretražujete koristeći ugrađeni PythonAnywhere pretraživač. (Sa stranice sa konzolom možete da odete do ostalih PythonAnywhere stranica iz menija u gornjem desnom uglu). Kada se jednom nađete na nekoj od stranica, blizu vrha možete da pronađete linkove do ostalih)
 
-## You are now live!
+## Oživeli ste projekat!
 
 Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 
