@@ -163,13 +163,13 @@ Dok posmatrate kako se to izvršava, moći ćete da vidite šta se dešava:
 - Preuzimanje Vašeg koda sa GitHub-a
 - Kreiranje virtuelnog okruženja na PythonAnywhere, koje je kao ono na Vašem računaru
 - Ažuriranje fajla sa podešavanjima
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Pokretanje baze podataka na PythonAnywhere korišćenjem `manage.py migrate` komande
+- Podešavanje statičkih fajlova (pričaćemo više o njima kasnije)
+- Konfigurisanje PythonAnywhere da radi sa Vašom aplikacijom putem API-ja
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+Na PythonAnywhere su svi ovi koraci automatizovani i isti su kao i svi koraci kroz koje biste trebali da prođete ako koristite nekog drugog server provajdera.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+Glavna stvar koju treba da primetite je da je Vaša baza podataka na PythonAnywhere u potpunosti razdvojena od baze podataka na Vašem računaru, tako da može da ima drugačije naloge za postovanje i za administratore. Kao rezultat, trebalo bi da inicijalizujemo admin nalog pomoću `createsuperuser`, kao što smo to uradili na Vašem računaru. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
