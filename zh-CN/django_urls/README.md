@@ -1,18 +1,18 @@
-# Django URLs
+# Django 的 URL！
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+我们下面要来建立自己的第一个网页：你的博客主页！但是首先，我们要来了解一下Django的URL。
 
 ## 什么是 URL？
 
-A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` 是一个URL！ And `https://djangogirls.org` is also a URL.)
+URL是一个网页地址。 每次你登录一个网页时，你都可以在浏览器地址栏上看到一个URL。 (对！ `127.0.0.1:8000` 是一个URL！ 同时 `https://djangogirls.org` 也是一个 URL。)
 
 ![URL](images/url.png)
 
-每一个互联网的网页都需要自己的 URL。 This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+每一个互联网的网页都需要自己的 URL。 这样当用户打开一个 URL 时，你的应用程序才知道应该展现什么内容。 在 Django 中，我们使用一种叫做 `URLconf` (URL 配置) 的机制 。 URLconf 是一套模式，Django 会用它来把用户请求的 URL 匹配成相对应的界面。
 
 ## URL 在 Django 中如何工作？
 
-使用你喜欢的编辑器打开 `mysite/urls.py` 就能看到它长什么样子了：
+选一个编辑器打开 `mysite/urls.py` 就能看到它长什么样子了：
 
 {% filename %}mysite/urls.py{% endfilename %}
 
