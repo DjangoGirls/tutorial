@@ -138,7 +138,7 @@ Vaš kod je sada na GitHub-u. Pogledajte! Naćićete ga u dobrom društvu - [Dja
 
 Vratite se natrag na glavnu [PythonAnywhere kontrolnu tablu](https://www.pythonanywhere.com/) klikom na logo i izaberite opciju da pokrenete "Bash" konzolu - to je PythonAnywhere verzija komandne linije, koja izgleda kao ona na Vašem računaru.
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![Odeljak "New Console" (nova konzola) na PythonAnywhere interfejsu, sa dugmetom za "bash"](images/pythonanywhere_bash_console.png)
 
 > **Napomena** PythonAnywhere se zasniva na Linux-u, tako da će konzola izgledati drugačije od one na Vašem računaru ukoliko koristite Windows.
 
@@ -217,4 +217,4 @@ Na podrazumevanoj stranici za Vaš sajt bi trebalo da piše "It worked!" (Uspeh!
 
 Jednom kada kreirate nekoliko postova, možete da se vratite na Vaša lokalna podešavanja (ne na PythonAnywhere). Odatle bi trebalo da radite na lokalnim podešavanjima, ukoliko biste želeli da napravite neku izmenu. To je uobičajeni tok rada u veb programiranju - napravite izmene lokalno, postavite to na GitHub i zatim ih pošaljete dalje na vaš veb server. To omogućava da radite i eksperimentišete bez obustavljanja rada Vašeg sajta. Prilično kul, zar ne?
 
-Potapšite sebe po ramenu, jer to i zaslužujete! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
+Potapšite sebe po ramenu, jer to i zaslužujete! Dopremanje na server je jedna od težih stvari u veb razvoju i često je potrebno ljudima po nekoliko dana da to savladaju. Ali Vi ste uspeli da pokrenete svoj sajt uživo na internetu!
