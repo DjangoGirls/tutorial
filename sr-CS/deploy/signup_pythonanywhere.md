@@ -4,7 +4,7 @@ Hostovaćemo blog koji pravimo na PythonAnywhere. Ulogujte se na nalog za "poče
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![PythonAnywhere stranica za prijavljivanje ima dugme za kreiranje naloga za "početnike"](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Napomena** Prilikom izbora korisničkog imena, imajte na umu da će URL Vašeg bloga imati formu `korisničkoime.pythonanywhere.com`, tako da bi trebalo da birate ili Vaše ime, nadimak ili naziv onoga o čemu je taj blog. Takođe, pobrinite se da zapamtite šifru (dodajte je u Vaš oraganizator šifara (eng. password manager), ako ga koristite).
 
