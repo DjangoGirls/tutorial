@@ -49,9 +49,9 @@ urlpatterns = [
 
 我们也想保持 `mysite/urls.py` 文件整洁一些，所以我们要从 `博客` 应用把URL导出到主文件`mysite/urls.py`。
 
-下面继续, 添加一行代码来导入 `blog.urls` 。 You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+下面继续, 添加一行代码来导入 `blog.urls` 。 你还需要更改 `from django.urls…`中的代码。因为我们现在要使用 `include`函数，所以你需要添加一行代码来导入。
 
-Your `mysite/urls.py` file should now look like this:
+你的 `mysite/urls.py` 文件现在应该看起来像这样：
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -65,7 +65,7 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+现在，Django 会把访问 'http://127.0.0.1:8000/' 的请求转到 `blog.urls`，并看看有没有进一步的指示。
 
 ## blog.urls
 
