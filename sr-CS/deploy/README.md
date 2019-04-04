@@ -205,15 +205,15 @@ Ukoliko vidite grešku tokom pokretanja skripte `pa_autoconfigure_django.py`, ev
 - Možda ste pogrešili u GitHub URL-u
 - Ukoliko vidite poruku *"Could not find your settings.py"*, verovatno niste uspeli da dodate sve Vaše fajlove na Git i/ili ih niste postavili uspešno na GitHub. Pogledajte još jednom prethodni deo koji se odnosi na Git
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Ako dobijate poruku o grešci kada pokušate da odete na sajt, prvo mesto na kom biste trebali da potražite više informacija o otklanjanju greške je **evidencija o greškama** (eng. error log). Možete da pronađete link do te evidencije na PythonAnywhere ["Web" stranici](https://www.pythonanywhere.com/web_app_setup/). Pogledajte da li se tu nalaze bilo kakve poruke o greškama; one najnovije se nalaze na dnu.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Takođe postoje i neki [opšti saveti o uklanjanju grešaka na PythonAnywhere sajtu za pomoć](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+I zapamtite, Vaš instruktor je tu da Vam pomogne!
 
-# Check out your site!
+# Pogledajte svoj sajt!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+Na podrazumevanoj stranici za Vaš sajt bi trebalo da piše "It worked!" (Uspeh!), kao i na Vašem lokalnom računaru. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 
 Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
