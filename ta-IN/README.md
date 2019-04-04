@@ -1,4 +1,4 @@
-# Django Girls Tutorial
+# டான்ஜோ மாணவியர் பயிற்சி
 
 [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
