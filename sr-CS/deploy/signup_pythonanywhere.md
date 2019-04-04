@@ -12,8 +12,8 @@ Hostovaćemo blog koji pravimo na PythonAnywhere. Ulogujte se na nalog za "poče
 
 Ovo je nešto što treba da se uradi samo jednom. Kada napravite nalog na PythonAnywhere, bićete prebačeni na Vašu kontrolnu tablu. Sa gornje desne strane pronađite link do stranice sa Vašim nalogom:
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+![Link do naloga na gornjem desnom delu stranice](../deploy/images/pythonanywhere_account.png)
 
 Zatim izaberite karticu koja se zove "API token" i kliknite na dugme koje se zove "Create new API token" (kreiraj novi API token).
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![Kartica API tokena na stranici naloga](../deploy/images/pythonanywhere_create_api_token.png)
