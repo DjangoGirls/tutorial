@@ -149,7 +149,7 @@ Dopremanje veb aplikacije na PythonAnywhere uključuje povlačenje koda sa GitHu
     $ pip3.6 install --user pythonanywhere
     
 
-Ovo bi trebalo da ispiše neke stvari kao `Collecting pythonanywhere` i da se eventualno da završi natpisom `Successfully installed (...) pythonanywhere- (...)`.
+Ovo bi trebalo da ispiše neke stvari kao `Collecting pythonanywhere` i da se eventualno završi natpisom `Successfully installed (...) pythonanywhere- (...)`.
 
 Sada treba da pokrenemo alat koji će nam pomoći da automatski konfigurišemo našu aplikaciju sa GitHub-a. Ukucajte sledeće u konzolu na PythonAnywhere (ne zaboravite da upotrebite Vaše GitHub korisničko ime umesto `<your-github-username>`, tako da se URL poklapa sa URL-om za kloniranje sa GitHub-a):
 
