@@ -213,8 +213,8 @@ I zapamtite, Vaš instruktor je tu da Vam pomogne!
 
 # Pogledajte svoj sajt!
 
-Na podrazumevanoj stranici za Vaš sajt bi trebalo da piše "It worked!" (Uspeh!), kao i na Vašem lokalnom računaru. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+Na podrazumevanoj stranici za Vaš sajt bi trebalo da piše "It worked!" (Uspeh!), kao i na Vašem lokalnom računaru. Pokušajte da dodate nastavak `/admin/` na kraju URL-a i to će vas odvesti na sajt za administratore. Ulogujte se sa korisničkim imenom i šifrom i videćete da možete da dodate nove postove na server, samo zapamtite - postovi sa Vaše lokalne baze podataka za testiranje se ne šalju na Vaš blog.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Jednom kada kreirate nekoliko postova, možete da se vratite na Vaša lokalna podešavanja (ne na PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
