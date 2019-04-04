@@ -29,11 +29,11 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+正如你所看到的，Django 已经为我们在里面放了一些东西。
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+三重引号之间的语句 (` '''` 或 `''''''`) 称为文档字符串--你可以在文件、分类或算法的最上面写这些来描述它的作用。 Python不会运行它们。
 
-The admin URL, which you visited in the previous chapter, is already here:
+你在上一章节中学到的 admin URL 已经放在里面了：
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,15 +41,15 @@ The admin URL, which you visited in the previous chapter, is already here:
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+这一行表示对于每一个以 `admin/` 开头的 URL，Django 都会找到一个相对应的 *界面*。 在这些代码中，我们写入了许多 admin URL ，所以这些 URL 不需要全被打包进这个小文件中。这使得代码更具可读性和简洁性。
 
-## Your first Django URL!
+## 你的第一个 Django URL！
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+是时候创建第一个 URL 了！我们想用 'http://127.0.0.1:8000/' 作为博客的首页，并展示一个帖子列表。
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+我们也想保持 `mysite/urls.py` 文件整洁一些，所以我们要从 `博客` 应用把URL导出到主文件`mysite/urls.py`。
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+下面继续, 添加一行代码来导入 `blog.urls` 。 You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
 
 Your `mysite/urls.py` file should now look like this:
 
