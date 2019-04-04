@@ -1,19 +1,19 @@
 PythonAnywhere je servis za pokretanje Python kodova na cloud serverima. Mi ćemo ga koristiti za hostovanje našeg sajta, uživo i na internetu.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+Hostovaćemo blog koji pravimo na PythonAnywhere. Ulogujte se na nalog za "početnike" na PythonAnywhere (najniži nivo je u redu, neće Vam trebati kreditna kartica).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
 ![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Napomena** Prilikom izbora korisničkog imena, imajte na umu da će URL Vašeg bloga imati formu `korisničkoime.pythonanywhere.com`, tako da bi trebalo da birate ili Vaše ime, nadimak ili naziv onoga o čemu je taj blog. Takođe, pobrinite se da zapamtite šifru (dodajte je u Vaš oraganizator šifara (eng. password manager), ako ga koristite).
 
-## Creating a PythonAnywhere API token
+## Kreiranje PythonAnywhere API tokena
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+Ovo je nešto što treba da se uradi samo jednom. Kada napravite nalog na PythonAnywhere, bićete prebačeni na Vašu kontrolnu tablu. Sa gornje desne strane pronađite link do stranice sa Vašim nalogom:
 
 ![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+Zatim izaberite karticu koja se zove "API token" i kliknite na dugme koje se zove "Create new API token" (kreiraj novi API token).
 
 ![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
