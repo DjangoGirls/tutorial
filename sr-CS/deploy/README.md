@@ -167,7 +167,7 @@ Dok posmatrate kako se to izvršava, moći ćete da vidite šta se dešava:
 - Podešavanje statičkih fajlova (pričaćemo više o njima kasnije)
 - Konfigurisanje PythonAnywhere da radi sa Vašom aplikacijom putem API-ja
 
-Na PythonAnywhere su svi ovi koraci automatizovani i isti su kao i svi koraci kroz koje biste trebali da prođete ako koristite nekog drugog server provajdera.
+Na PythonAnywhere su svi ovi koraci automatizovani i isti su kao i svi koraci kroz koje bi trebalo da prođete ako koristite nekog drugog server provajdera.
 
 Glavna stvar koju treba da primetite je da je Vaša baza podataka na PythonAnywhere u potpunosti razdvojena od baze podataka na Vašem računaru, tako da može da ima drugačije naloge za postovanje i za administratore. Kao rezultat, trebalo bi da inicijalizujemo admin nalog pomoću `createsuperuser`, kao što smo to uradili na Vašem računaru. PythonAnywhere je automatski pokrenuo virtuelno okruženje za Vas, tako da je sve što treba da uradite pokretanje sledećih komandi:
 
@@ -205,7 +205,7 @@ Ukoliko vidite grešku tokom pokretanja skripte `pa_autoconfigure_django.py`, ev
 - Možda ste pogrešili u GitHub URL-u
 - Ukoliko vidite poruku *"Could not find your settings.py"*, verovatno niste uspeli da dodate sve Vaše fajlove na Git i/ili ih niste postavili uspešno na GitHub. Pogledajte još jednom prethodni deo koji se odnosi na Git
 
-Ako dobijate poruku o grešci kada pokušate da odete na sajt, prvo mesto na kom biste trebali da potražite više informacija o otklanjanju greške je **evidencija o greškama** (eng. error log). Možete da pronađete link do te evidencije na PythonAnywhere ["Web" stranici](https://www.pythonanywhere.com/web_app_setup/). Pogledajte da li se tu nalaze bilo kakve poruke o greškama; one najnovije se nalaze na dnu.
+Ako dobijate poruku o grešci kada pokušate da odete na sajt, prvo mesto na kom bi trebalo da potražite više informacija o otklanjanju greške je **evidencija o greškama** (eng. error log). Možete da pronađete link do te evidencije na PythonAnywhere ["Web" stranici](https://www.pythonanywhere.com/web_app_setup/). Pogledajte da li se tu nalaze bilo kakve poruke o greškama; one najnovije se nalaze na dnu.
 
 Takođe postoje i neki [opšti saveti o uklanjanju grešaka na PythonAnywhere sajtu za pomoć](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
@@ -217,4 +217,4 @@ Na podrazumevanoj stranici za Vaš sajt bi trebalo da piše "It worked!" (Uspeh!
 
 Jednom kada kreirate nekoliko postova, možete da se vratite na Vaša lokalna podešavanja (ne na PythonAnywhere). Odatle bi trebalo da radite na lokalnim podešavanjima, ukoliko biste želeli da napravite neku izmenu. To je uobičajeni tok rada u veb programiranju - napravite izmene lokalno, postavite to na GitHub i zatim ih pošaljete dalje na vaš veb server. To omogućava da radite i eksperimentišete bez obustavljanja rada Vašeg sajta. Prilično kul, zar ne?
 
-Potapšite sebe po ramenu, jer to i zaslužujete! Dopremanje na server je jedna od težih stvari u veb razvoju i često je potrebno ljudima po nekoliko dana da to savladaju. Uspeli ste da pokrenete svoj sajt uživo na internetu!
+Potapšite sebe po ramenu, jer to i zaslužujete! Dopremanje na server je jedna od težih stvari u veb razvoju i često je potrebno ljudima po nekoliko dana da to savladaju. Ali Vi ste uspeli da pokrenete svoj sajt uživo na internetu!
