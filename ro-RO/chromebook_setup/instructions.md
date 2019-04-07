@@ -18,13 +18,13 @@ Acum ar trebui să vezi o interfaţă cu o bară laterală cu butoane în stâng
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Terminalul din PaizaCloud Cloud IDE este gata pentru comenzile dumneavoastră. Puteți redimensiona sau extinde la maxim ferestra pentru o mai bună vizualizare.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. Accesați [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Înregistrați-vă pentru a crea un cont
+3. Faceți click pe *Create Environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
