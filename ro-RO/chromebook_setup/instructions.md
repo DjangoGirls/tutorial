@@ -26,11 +26,11 @@ Terminalul din PaizaCloud Cloud IDE este gata pentru comenzile dumneavoastră. P
 2. Înregistrați-vă pentru a crea un cont
 3. Faceți click pe *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Acum ar trebui să vizualizați o interfață cu o bară laterală, o fereastră principală mare conțințnd un text, și o fereastră mică în partea de jos, care arată aproximativ așa:
 
 {% filename %}bash{% endfilename %}
 
-    yourusername:~/workspace $
+    nume utilizator:~/workspace $
     
 
 This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
