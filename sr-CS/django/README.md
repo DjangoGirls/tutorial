@@ -16,9 +16,9 @@ Zamislite poštansko sanduče (u ovom slučaju port) koje se nadgleda zbog nadol
 
 ## Šta se desi kada neko uputi zahtev veb sajtu sa Vašeg servera?
 
-Kada zahtev dođe do veb servera, prosleđuje se Django-u koji pokušava da otkrije šta je zapravo sadržaj tog zahteva. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Kada zahtev dođe do veb servera, prosleđuje se Django-u koji pokušava da otkrije šta je zapravo sadržaj tog zahteva. Prvo uzima adresu veb stranice i pokušava da shvati šta s tim da radi. Ovaj deo se obavlja pomoću Django **urlresolver-a** (primetite da se veb adresa zapravo zove URL (eng. Uniform Resource Locator), tako da je ime *urlresolver* prilično smisleno). To nije preterano komplikovano - uzima se lista šablona i pokušava se da se pronađe odgovarajući URL. Django pregleda šablone od vrha ka dnu i ukoliko pronađe poklapanje, tada se prosleđuje zahtev nekoj dodeljenoj funkciji (koja se naziva *view* (prikaz)).
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Zamislite poštara sa pismom. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
