@@ -21,9 +21,9 @@ Ok, vreme je da pogledamo naš model. Ne zaboravite da pokrenete `python manage.
 
 Kako biste se ulogovali, potrebno je da kreirate *superuser-a* (super korisnika) - korisnički nalog koji ima kontrolu nad svim stvarima na tom sajtu. Zatim se vratite na komandnu liniju i ukucajte `python manage.py createsuperuser` i pritisnite enter.
 
-> Ne zaboravite da napišete nove komande dok je veb server pokrenut, da otvorite nov prozor terminala i da aktivirate virtuelno okruženje. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Ne zaboravite da napišete nove komande dok je veb server pokrenut, da otvorite nov prozor terminala i da aktivirate virtuelno okruženje. Pokazali smo kako da napišete nove komande u poglavlju **Vaš prvi Django projekat!**, u delu **Pokretanje veb servera**.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}Mac OS X ili Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     
