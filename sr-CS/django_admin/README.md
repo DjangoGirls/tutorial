@@ -2,7 +2,7 @@
 
 Kako bismo dodali, izmenili ili izbrisali postove koje smo upravo podesili, koristićemo Django admina.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Hajde da otvorimo `blog/admin.py` fajl u editoru i da zamenimo njegov sadržaj ovim:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -13,15 +13,15 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Kao što možete da vidite, uvozimo model posta koji je definisan u prethodnom poglavlju. Kako bi naš model bio vidljiv na admin stranici, potrebno je da ga registrujemo pomoću `admin.site.register(Post)`.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+Ok, vreme je da pogledamo naš model. Ne zaboravite da pokrenete `python manage.py runserver` u konzoli kako biste pokrenuli veb server. Idite na Vaš pretraživač i ukucajte adresu http://127.0.0.1:8000/admin/. Trebalo bi da vidite stranicu koja ovako izgleda:
 
 ![Login page](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+Kako biste se ulogovali, potrebno je da kreirate *superuser-a* (super korisnika) - korisnički nalog koji ima kontrolu nad svim stvarima na tom sajtu. Zatim se vratite na komandnu liniju i ukucajte `python manage.py createsuperuser` i pritisnite enter.
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Ne zaboravite da napišete nove komande dok je veb server pokrenut, da otvorite nov prozor terminala i da aktivirate virtuelno okruženje. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
