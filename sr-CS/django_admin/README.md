@@ -1,6 +1,6 @@
 # Django Admin
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+Kako bismo dodali, izmenili ili izbrisali postove koje smo upravo podesili, koristićemo Django admina.
 
 Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
 
