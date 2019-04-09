@@ -33,16 +33,16 @@ Kako biste se ulogovali, potrebno je da kreirate *superuser-a* (super korisnika)
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Nakon toga, ukucajte svoje korisničko ime (malim slovima, bez razmaka), e-mail adresu i šifru. **Ne brinite ako ne možete da vidite šifru dok je kucate - to tako i treba da bude.** Zatim pritisnite `enter` da biste nastavili. Izlaz bi trebalo da izgleda ovako (gde bi korisničko ime i e-mail trebalo da budu Vaši):
 
-    Username: ola
-    Email address: ola@example.com
-    Password:
-    Password (again):
-    Superuser created successfully.
+    Korisničko ime: ola
+    E-mail adresa ola@example.com
+    Šifra:
+    Šifra (ponovo):
+    Super korisnik je uspešno kreiran.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Vratite se na svoj pretraživač. Ulogujte se sa podacima super korisnika koje ste odabrali; trebalo bi da vidite Django kontrolnu tablu za admine.
 
 ![Django admin](images/django_admin3.png)
 
