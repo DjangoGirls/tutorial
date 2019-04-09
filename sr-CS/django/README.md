@@ -2,15 +2,15 @@
 
 Django (/ˈdʒæŋɡoʊ/ *jang-goh*) je besplatna aplikacija i biblioteka otvorenog koda, napisana u Python-u. Veb biblioteka je skup napisanih komponenata koje pomažu da brže i lakše razvijete sajtove.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+Kada pravite veb sajt, uvek Vam je potreban sličan skup komponenata: način na koji ćete da se izborite sa potvrđivanjem autentičnosti korisnika (npr. logovanje ili pravljanje naloga), kontrolni panel za veb sajt, forme, načini učitavanja fajlova itd.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Srećom, ljudi su davno primetili da se veb developeri suočavaju sa sličnim problemima tokom pravljenja nekog sajta, tako da su se udružili i stvorili biblioteke (Django je jedna od njih) koje Vam obezbeđuju gotove komponente koje mogu da se koriste.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Biblioteke postoje kako bi Vas poštedele izmišljanja stvari koje već postoje i da bi Vam ublažile indirektne troškove tokom pravljenja novog sajta.
 
-## Why do you need a framework?
+## Zašto Vam je potrebna biblioteka?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Kako biste razumeli za šta Django služi, moramo da malo bolje pogledamo servere i njihov način rada. Prva stvar koju server treba da zna je to da želite da podrži vašu veb stranicu.
 
 Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
 
