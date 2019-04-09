@@ -24,4 +24,4 @@ U *view* funkciji se dešavaju sve zanimljive stvari: možemo da pogledamo u baz
 
 Prethodni opis je malo pojednostavljen, ali Vam još uvek nije potrebno da znate sve tehničke stvari. Trenutno je opšta slika dovoljna.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+Umesto da ulazimo previše u detalje, počećemo da pravimo nešto uz pomoć Django-a i naučićemo usput važne lekcije!
