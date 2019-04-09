@@ -12,11 +12,11 @@ Biblioteke postoje kako bi Vas poštedele izmišljanja stvari koje već postoje 
 
 Kako biste razumeli za šta Django služi, moramo da malo bolje pogledamo servere i njihov način rada. Prva stvar koju server treba da zna je to da želite da podrži vašu veb stranicu.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+Zamislite poštansko sanduče (u ovom slučaju port) koje se nadgleda zbog nadolazećih pisama (u ovom slučaju su to zahtevi). To se obavlja pomoću veb servera. Veb server će da pročita pristiglo pismo i zatim da pošalje odgovor pomoću veb stranice. Međutim, kada nešto želite da pošaljete, morate da imate nekakav sadržaj te pošiljke. Django je upravo nešto što Vam pomaže da kreirate taj sadržaj.
 
-## What happens when someone requests a website from your server?
+## Šta se desi kada neko uputi zahtev veb sajtu sa Vašeg servera?
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Kada zahtev dođe do veb servera, prosleđuje se Django-u koji pokušava da otkrije šta je zapravo sadržaj tog zahteva. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
 Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
