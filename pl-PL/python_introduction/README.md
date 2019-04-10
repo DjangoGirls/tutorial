@@ -610,7 +610,7 @@ $
 
 W ten sposób znajdziesz się z powrotem w wierszu polecenia.
 
-Wcześniej wybraliśmy się Edytor kodu z sekcji [Edytor kodu](../code_editor/README.md). Otwórzmy teraz edytor i napiszmy trochę kody wewnątrz nowego pliku (lub jeśli używasz Chromebook, stwórz nowy plik w chmurze IDE i otwórz plik, który będzie zawarty w edytorze kodu):
+Wcześniej wybrałyśmy Edytor kodu z sekcji [Edytor kodu](../code_editor/README.md). Otwórzmy teraz edytor i napiszmy trochę kodu wewnątrz nowego pliku (lub jeśli używasz Chromebooka, stwórz nowy plik w chmurze IDE i otwórz plik, który będzie zawarty w edytorze kodu):
 
 {% filename %}editor{% endfilename %}
 
