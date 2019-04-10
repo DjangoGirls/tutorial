@@ -20,7 +20,7 @@ Kada zahtev dođe do veb servera, prosleđuje se Django-u koji pokušava da otkr
 
 Zamislite poštara sa pismom. On prolazi kroz ulicu i proverava svaki broj kuće u odnosu na onaj na pismu. Ukoliko nađe poklapanje, tu dostavi pismo. To je način na koji radi urlresolver!
 
-U *view* funkciji se dešavaju sve zanimljive stvari: možemo da pogledamo bazu podataka kako bismo potražili neku informaciju. Možda korisnik želi da promeni neke podatke? Isto kao što bi u tom metaforičkom pismu bilo napisano "Molim Vas, promenite opis mog posla". *View* funkcija može da proveri da li ste ovlašćeni da to uradite, a zatim da promeni opis posla za Vas i da Vam pošalje poruku - "Urađeno!" Tada *view* generiše odgovor, a Django može da ga pošalje do korisnikovog pretraživača.
+U *view* funkciji se dešavaju sve zanimljive stvari: možemo da pogledamo bazu podataka kako bismo potražili neku informaciju. Možda korisnik želi da promeni neke podatke? Isto kao što bi u tom metaforičkom pismu bilo napisano "Molim Vas, promenite opis mog posla", *view* funkcija može da proveri da li ste ovlašćeni da to uradite, a zatim da promeni opis posla za Vas i da Vam pošalje poruku - "Urađeno!" Tada *view* generiše odgovor, a Django može da ga pošalje do korisnikovog pretraživača.
 
 Prethodni opis je malo pojednostavljen, ali Vam još uvek nije potrebno da znate sve tehničke stvari. Trenutno je opšta slika dovoljna.
 
