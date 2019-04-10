@@ -132,7 +132,7 @@ Wiele poleceń, które można wpisać w wierszu polecenia ma wbudowane funkcje p
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X i Linux posiada polecenie `man`, które wyświetla Ci pomoc dla danego polecenia. Spróbuj `man pwd` i zobacz, co mówi lub umieścić `man` przed innim poleceniem, aby zobaczyć jego pomoc. Wynikiem `man` jest normalna strona. Użyj spacji, aby przejść do następnej strony i `q` aby zakończyć.
+OS X i Linux posiada polecenie `man`, które wyświetla Ci pomoc dla danego polecenia. Spróbuj `man pwd` i zobacz, co mówi lub umieścić `man` przed innim poleceniem, aby zobaczyć jego pomoc. Wynikiem `man` jest normalna strona. Użyj spacji, aby przejść do następnej strony i `q`, aby zakończyć.
 
 <!--endsec-->
 
@@ -240,7 +240,7 @@ Tak, to tutaj!
 
 ### Tworzenie folderu
 
-Co powiesz na stworzenie folderu cwiczenie na swoim pulpicie? Zrób to w ten sposób:
+Co powiesz na stworzenie folderu "cwiczenie" na swoim pulpicie? Zrób to w ten sposób:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -432,7 +432,7 @@ Oto podsumowanie przydatnych poleceń:
 | rmdir /S            | rm -r                      | usuwanie katalogu                   | **rm -r testdirectory**                             |
 | [CMD] /?            | man [CMD]                  | uzyskiwanie pomocy na temat komendy | **cd /?** (Windows) lub **man cd** (Mac OS / Linux) |
 
-To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu polecenia, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
+To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu polecenia, ale dzisiaj nie będziesz potrzebowała niczego więcej.
 
 Jeżeli temat Cię zainteresował, to [ss64.com](http://ss64.com) zawiera kompletny spis poleceń dla wszystkich systemów operacyjnych.
 
