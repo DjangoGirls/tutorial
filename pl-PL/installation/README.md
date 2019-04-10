@@ -45,7 +45,7 @@ Wiele z poniższych kroków odnosi się do "konsoli", "terminala", "wiersza pole
 
 # Utwórz konto na GitHubie
 
-Przejdź do strony [ GitHub.com ](https://www.github.com) i zarejestruj nowe bezpłatne konto użytkownika. Pamiętaj, aby zapamiętać swoje hasło (dodaj go do swojego menedżera haseł, jeśli go używasz).
+Przejdź do strony [ GitHub.com ](https://www.github.com) i zarejestruj nowe bezpłatne konto użytkownika. Pamiętaj, aby zapamiętać swoje hasło (dodaj je do swojego menedżera haseł, jeśli go używasz).
 
 # Utwórz konto na PythonAnywhere
 
@@ -55,7 +55,7 @@ Przejdź do strony [ GitHub.com ](https://www.github.com) i zarejestruj nowe bez
 
 Gratulacje, jesteś gotowa, by zacząć pracę! Jeśli masz trochę czasu przed warsztatami, możesz przeczytać początkowe rozdziały:
 
-* [Jak działa internet](../how_the_internet_works/README.md)
+* [Jak działa internet?](../how_the_internet_works/README.md)
 
 * [Wprowadzenie do wiersza polecenia](../intro_to_command_line/README.md)
 
