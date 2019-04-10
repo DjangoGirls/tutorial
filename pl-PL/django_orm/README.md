@@ -202,7 +202,7 @@ Możemy także odwrócić kolejność poprzez dodanie `-` na początku:
 
 ### Łączenie QuerySetów
 
-Jak widziałyśmy, niektóre metody `Post.objects` zwracają nam QuerySet. Te same metody z kolei również może być wywoływana na QuerySet, a następnie zwróci nam nowy QuerySet. W związku z tym można połączyć ich efekt poprzez **złączenie** ich razem:
+Jak widziałyśmy, niektóre metody `Post.objects` zwracają nam QuerySet. Te same metody z kolei również mogą być wywoływane na QuerySetcie, co zwróci nam nowy QuerySet. W związku z tym można połączyć ich efekt poprzez **złączenie** ich razem:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
