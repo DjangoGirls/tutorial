@@ -4,7 +4,7 @@
 
 Zaraz napiszesz swoją pierwszą linijkę kodu, więc najwyższy czas zainstalować edytor kodu!
 
-> **Uwaga** Jeśli używasz już Chromebook, pomiń ten rozdział i upewnij się, że postąpiłaś zgodnie z instrukcją [Instalacja Chromebooka](../chromebook_setup/README.md). Cloud IDE, którą wybrałaś (PaizaCloud Cloud IDE or AWS Cloud9), zawiera edytor kodu, więc kiedy otworzysz plik z menu w swoim IDE, automatycznie zostanie on otworzony w edytorze.
+> **Uwaga** Jeśli używasz już Chromebooka, pomiń ten rozdział i upewnij się, że postąpiłaś zgodnie z instrukcją [Instalacja Chromebooka](../chromebook_setup/README.md). Cloud IDE, które wybrałaś (PaizaCloud Cloud IDE or AWS Cloud9) zawiera edytor kodu, więc kiedy otworzysz plik z menu w swoim IDE, automatycznie zostanie on otworzony w edytorze.
 > 
 > **Uwaga** Jeśli zrobiłaś to już wcześniej w rozdziale 'Instalacja' - możesz przejść od razu do następnego rozdziału!
 
