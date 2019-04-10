@@ -10,11 +10,11 @@ Potem, upewnij się, że śledzisz Django Girls na [Facebooku](http://facebook.c
 
 ### Czy możesz polecić kolejne materiały?
 
-Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programistycznych - może to być całkiem zniechęcające, gdy trzeba wybrać, co zrobić następne, ale my mamy o to zadbałyśmy. Niezależnie od tego czym interesowałaś się zanim przybyłaś na Django Girls i niezależnie od tego, co zainteresowało Cię podczas przechodzenia tutorialu, oto kilka wolnych zasobów (lub zasobów z dużymi wolnymi komponentami), których możesz używać aby dostać się tam, gdzie chciałabyś być.
+Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programistycznych - może to być całkiem zniechęcające, gdy trzeba wybrać, co zrobić następne, ale my o to zadbałyśmy. Niezależnie od tego, czym interesowałaś się, zanim przybyłaś na Django Girls i niezależnie od tego, co zainteresowało Cię podczas przechodzenia tutoriala, oto kilka wolnych zasobów (lub zasobów z dużymi darmowymi komponentami), których możesz używać, aby się podszkolić.
 
 #### Django
 
-- Nasze inne książki, [Django Girls Tutorial: Extensions ](https://tutorial-extensions.djangogirls.org/)
+- Nasze inna książka, [Django Girls Tutorial: Extensions ](https://tutorial-extensions.djangogirls.org/)
 - [Oficjalny tutorial Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Wideolekcje Getting Started with Django](http://www.gettingstartedwithdjango.com/)
 
@@ -26,17 +26,17 @@ Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programi
 #### Python
 
 - [Kurs Pythona na Codeacademy](https://www.codecademy.com/learn/learn-python)
-- [Kurs Pythona od Googla](https://developers.google.com/edu/python/)
+- [Kurs Pythona od Google'a](https://developers.google.com/edu/python/)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) - wstępne ćwiczenia są bezpłatne 
-- [Nowy koder Poradniki](http://newcoder.io/tutorials/)-jest wiele praktycznych przykładów, jak można użyć Pythona
+- [New Coder tutorials](http://newcoder.io/tutorials/)-jest wiele praktycznych przykładów, jak można użyć Pythona
 - [edX](https://www.edx.org/course?search_query=python) - możesz sprawdzić większość kursów za darmo, lecz jeśli chciałabyś otrzymać certyfikat lub zdobyć punkty zwiększające Twoje kwalifikacje, to może to trochę kosztować
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) - niektóre wykłady wideo są dostępne za darmo i możesz uzyskać Certyfikat Kursanta przechodząc przez ten kurs
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) - niektóre wykłady wideo są dostępne za darmo i możesz uzyskać Certyfikat Kursanta, przechodząc przez niego
 - [Python for Everybody](https://www.py4e.com/) - wolna i otwarta wersja Coursera Pythona dla każdej specjalizacji
 
 #### Praca z danymi
 
 - [Kurs data science na Codeacademy](https://www.codecademy.com/learn/paths/data-science)
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) - możesz sprawdzić większość kursów za darmo, lecz jeśli chciałabyś otrzymać certyfikat lub zdobyć punkty zwiększające Twoje kwalifikacje, to może to trochę kosztować
-- [Dataquest](https://www.dataquest.io/) – pierwsze 30 "misji" jest darmowych 
+- [Dataquest](https://www.dataquest.io/) – pierwszych 30 "misji" jest darmowych 
 
 Nie możemy się doczekać, aby zobaczyć, co zbudujesz następnym razem!
