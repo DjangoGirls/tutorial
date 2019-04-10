@@ -17,7 +17,7 @@ Kao što možete da vidite, uvozimo model posta koji je definisan u prethodnom p
 
 Ok, vreme je da pogledamo naš model. Ne zaboravite da pokrenete `python manage.py runserver` u konzoli kako biste pokrenuli veb server. Idite na Vaš pretraživač i ukucajte adresu http://127.0.0.1:8000/admin/. Trebalo bi da vidite stranicu koja ovako izgleda:
 
-![Login page](images/login_page2.png)
+![Stranica za prijavljivanje](images/login_page2.png)
 
 Kako biste se ulogovali, potrebno je da kreirate *superuser-a* (super korisnika) - korisnički nalog koji ima kontrolu nad svim stvarima na tom sajtu. Zatim se vratite na komandnu liniju i ukucajte `python manage.py createsuperuser` i pritisnite enter.
 
@@ -44,14 +44,14 @@ Nakon toga, ukucajte svoje korisničko ime (malim slovima, bez razmaka), e-mail 
 
 Vratite se na svoj pretraživač. Ulogujte se sa podacima super korisnika koje ste odabrali; trebalo bi da vidite Django kontrolnu tablu za admine.
 
-![Django admin](images/django_admin3.png)
+![Django Admin](images/django_admin3.png)
 
-Idite na postove i eksperimentišite malo s njima. Dodajte pet ili šest postova na blogu. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Idite na postove i eksperimentišite malo s njima. Dodajte pet ili šest postova na blogu. Ne brinite za sadržaj - to je vidljivo isključivo na Vašem lokalnom računaru. Možete da prekopirate neki tekst iz ovog priručnika, kako biste uštedeli vreme. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Pobrinite se da najmanje dva ili tri posta (ali ne svi) imaju podešen datum objave. To će kasnije biti od koristi.
 
-![Django admin](images/edit_post3.png)
+![Django Admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+Ako želite da saznate nešto više o Django adminu, pogledajte Django dokumentaciju na sledećem linku: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Ovo je verovatno zgodan trenutak da uzmete kafu (ili čaj) ili nešto da pojedete i da se osvežite. Uspeli ste da napravite Vaš prvi Django model - zaslužujete da se malo odmorite!
