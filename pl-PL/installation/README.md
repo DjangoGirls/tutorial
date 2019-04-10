@@ -10,13 +10,13 @@ Powodzenia!
 
 Jeśli uczestniczysz w wydarzeniu Django Girls:
 
-* Twój warsztat może mieć "część instalacyjną" przed głównym warsztatem. Jeśli jesteś w części instalacyjnej, to ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami, aby uzyskać wszystko, czego potrzebujesz do warsztatów. W razie potrzeby poproś o pomoc mentorów. Następnie na warsztatach, będziesz mogła pominąć instrukcje instalacji, jakie napotkasz w głównym tutorialu, kiedy dojdziesz do nich.
-* Organizatorzy warsztatów mogą Cię prosić, abyś w domu spróbowała zainstalować wszytskie potrzebne rzeczy na komputerze przed rozpoczęciem warsztatów. Jeśli zostałaś poproszoną aby to zrobić, ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami tutaj, najlepiej jak potrafisz. Następnie, podczas głównego warsztatu, gdy dojdziesz do etapu instalacji w głównym samouczku, jeśli nie możesz go zainstalować, możesz uzyskać pomoc od swojego mentora.
-* Jeśli na Twoich warsztatach nie ma części instalacyjnej (lub nie mogłaś wziąć w niej udziału) i jeśli organizatorzy nie prosili Cię o zainstalowanie wszystkiego przed twoim przyjazdem, pomiń tę stronę i przejdź bezpośrednio do rozdziału [ Jak Internet działa ](../how_the_internet_works/README.md). Podczas pracy nad tutorialem będziesz instalować wszystko, czego potrzebujesz.
+* Twój warsztat może mieć "część instalacyjną" przed głównym warsztatem. Jeśli jesteś w części instalacyjnej, to ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami, aby uzyskać wszystko, czego potrzebujesz do warsztatów. W razie potrzeby poproś o pomoc mentorów. Na warsztatach będziesz mogła pominąć tutoriale instalacji, które już wykonałaś.
+* Organizatorzy warsztatów mogą Cię prosić, abyś w domu spróbowała zainstalować wszytskie potrzebne rzeczy na komputerze przed rozpoczęciem warsztatów. Jeśli zostałaś poproszona aby to zrobić, ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami umieszczonymi tutaj, najlepiej jak potrafisz! Następnie, podczas głównego warsztatu, gdy dojdziesz do etapu instalacji w głównym samouczku, jeśli nie możesz go zainstalować, możesz uzyskać pomoc od swojego mentora.
+* Jeśli na Twoich warsztatach nie ma części instalacyjnej (lub nie mogłaś wziąć w niej udziału) i jeśli organizatorzy nie prosili Cię o zainstalowanie wszystkiego przed Twoim przyjazdem, pomiń tę stronę i przejdź bezpośrednio do rozdziału [ Jaj działa internet?](../how_the_internet_works/README.md). Podczas pracy nad tutorialem będziesz instalować wszystko, czego potrzebujesz.
 
 # Instalacja
 
-Na tych warsztatach będziesz budować blog. W tym celu, podczas przechodzenia przez tutorial, zostaniesz poinstruowana o tym, jak zainstalować na Twoim komputerze różnego rodzaju oprogramowanie i jak skonfigurować kilka kont online, które będą Ci potrzebne. Ta strona zbiera wszystkie instrukcje dotyczące instalacji i rejestracji w jednym miejscu (co jest przydatne w niektórych formach warsztatów).
+Na tych warsztatach będziesz budować blog. W tym celu, podczas przechodzenia przez tutorial, zostaniesz poinstruowana, jak zainstalować na Twoim komputerze różnego rodzaju oprogramowanie i jak skonfigurować kilka kont online, które będą Ci potrzebne. Ta strona zbiera wszystkie instrukcje dotyczące instalacji i rejestracji w jednym miejscu (co jest przydatne w niektórych formach warsztatów).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
