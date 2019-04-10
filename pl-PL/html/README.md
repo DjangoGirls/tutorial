@@ -208,7 +208,7 @@ Jak już wszystko to zrobimy, możemy wysłać (push) nasze zmiany na Githuba:
     [...]
     
 
-Pamiętaj by podmienić `<your-pythonanywhere-domain>` na twoją właściwą nazwę użytkownika PythonAnywhere, bez ostrych nawiasów. Twoja nazwa poddomeny jest zwykle Twoją nazwą użytkownika PythonAnywhere, ale w niektórych przypadkach może być nieco inna (np. Jeśli Twoja nazwa użytkownika zawiera wielkie litery). Więc jeśli to polecenie nie działa, należy użyć polecenia `ls` (lista plików), aby znaleźć rzeczywistą subdomenę/nazwę folderu, a następnie `cd`, aby tam przejść.
+Pamiętaj by podmienić `<your-pythonanywhere-domain>` na Twoją właściwą nazwę użytkownika PythonAnywhere, bez ostrych nawiasów. Twoja nazwa poddomeny jest zwykle Twoją nazwą użytkownika PythonAnywhere, ale w niektórych przypadkach może być nieco inna (np. jeśli Twoja nazwa użytkownika zawiera wielkie litery). Więc jeśli to polecenie nie działa, należy użyć polecenia `ls` (lista plików), aby znaleźć rzeczywistą subdomenę/nazwę folderu, a następnie `cd`, aby tam przejść.
 
 Widzisz, jak ściąga się Twój kod. Jeśli chcesz sprawdzić, czy zmiany zostały ściągnięte, możesz przejść do strony **"Files"** i sprawdzić swój kod na PythonAnywhere (możesz przejść do innych stron na PythonAnywhere korzystając z menu na stronie konsoli).
 
