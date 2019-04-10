@@ -2,19 +2,19 @@
 
 Na kraju, stvar koju želimo da uradimo na našem blogu je da omogućimo da se lako dodaju i izmenjuju postovi. Django `admin` je kul, ali ga je teško prilagoditi i učiniti lepim. Uz pomoć `formi` možemo da imam apsolutnu kontrolu nad našim interfejsom - možemo da uradimo skoro sve što zamislimo!
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+Dobra stvar u vezi sa Django formama je ta što možemo ili da ih definišemo ispočetka ili možemo da definišemo `formu modela` koja će sačuvati rezultat forme za model.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+To je upravo ono što želimo da uradimo: da kreiramo formu za naš `Post` model.
 
-Like every important part of Django, forms have their own file: `forms.py`.
+Kao i svaki važan deo Django biblioteke, forme imaju svoj fajl: `forms.py`.
 
-We need to create a file with this name in the `blog` directory.
+Moramo da kreiramo fajl sa ovakvim nazivom u `blog` direktorijumu.
 
     blog
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+Ok, hajde da to otvorimo u editoru i da ukucamo sledeći kod:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Prvo moramo da uvezemo listu sa Django formama (ukucaćemo `from django import forms`) i naš `Post` model (naredbom `from .models import Post`).
 
 `PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
