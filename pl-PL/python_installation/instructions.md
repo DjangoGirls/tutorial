@@ -2,27 +2,27 @@
 > 
 > Niniejszy podrozdział powstał w oparciu o kurs Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django został w napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić cokolwiek w Django. Zacznijmy zatem od zainstalowania go! Chcemy zainstalować Python 3.6, więc jeżeli posiadasz jakąkolwiek wcześniejszą wersję, będziesz musiała ją uaktualnić. Jeśli masz już w wersji 3.4 lub nowszej, powinno być dobrze.
+Framework Django został w napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić cokolwiek w Django. Zacznijmy zatem od zainstalowania go! Chcemy zainstalować Pythona 3.6, więc jeżeli posiadasz jakąkolwiek wcześniejszą wersję, będziesz musiała ją uaktualnić. Jeśli masz już w wersji 3.4 lub nowszej, powinno być dobrze.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Najpierw sprawdź, czy na komputerze działa wersja 32-bitowa lub 64-bitowa wersja systemu Windows, w linijce "Typ systemu" w oknie o informacjach o systemie. Aby przejść do tego okna wypróbuj jedną z następujących metod:
+Najpierw sprawdź, czy na komputerze działa 32- lub 64-bitowa wersja systemu Windows, w linijce "Typ systemu" w oknie o informacjach o systemie. Aby przejść do tego okna, wypróbuj jedną z następujących metod:
 
 * Wciśnij klawisz Windows i klawisz Pause/Break w tym samym czasie
-* Otwórz panel sterowania z menu systemu Windows, a następnie przejdź do system & zabezpieczenia, następnie System
+* Otwórz panel sterowania z menu systemu Windows, a następnie przejdź do Zabezpieczenia Systemu, a następnie System
 * Wciśnij przycisk Windows, a następnie przejdź do Settings>System>About
 
 Możesz ściągnąć Pythona dla Windowsa ze strony https://www.python.org/downloads/windows/. Kliknij w link "Latest Python 3 Release - Python x.x.x". Jeżeli Twój komputer pracuje na **64-bitowej** wersji Windowsa, ściągnij **Windows x86-64 executable installer**. W innym wypadku ściągnij **Windows x86 executable installer**. Po ściągnięciu instalatora, powinnaś go uruchomić (klikając dwukrotnie w niego) i postępować według wyświetlanych instrukcji.
 
-Jedna rzecz, na którą trzeba uważać: Podczas instalacji zauważysz okno zaznaczone jako "Setup". Upewnij się, że zaznaczyłeś opcję "Add Python 3.6 to PATH" lub ''Add Python to your environment variables" i kliknąłeś "Install Now", jak pokazano tutaj (może to wyglądać trochę inaczej, jeśli instalujesz inną wersję).
+Jedna rzecz, na którą trzeba uważać: podczas instalacji zauważysz okno zaznaczone jako "Setup". Upewnij się, że zaznaczyłaś opcję "Add Python 3.6 to PATH" lub ''Add Python to your environment variables" i kliknęłaś "Install Now", jak pokazano tutaj (może to wyglądać trochę inaczej, jeśli instalujesz inną wersję).
 
 ![Nie zapomnij dodać Pythona do ścieżki systemowej (ang. Path)](../python_installation/images/python-installation-options.png)
 
 Kiedy instalacja się zakończy, możesz zobaczyć okienko dialogowe z linkiem, który możesz śledzić, aby dowiedzieć się więcej o Pythonie lub wersji, którą zainstalowałaś. Zamknij lub anuluj to okienko - nauczysz się więcej w tym tutorialu!
 
-Uwaga: Jeżeli używasz starszej wersji Windowsa (7, Vista lub jakikolwiek starszy) i podczas instalacji Python 3.6.x dostaniesz błąd, możesz:
+Uwaga: jeżeli używasz starszej wersji Windowsa (7, Vista lub jakikolwiek starszy) i podczas instalacji Python 3.6.x dostaniesz błąd, możesz:
 
-1. zainstalować wszystkie uaktualnienia systemu Windows a spróbować instalacji Pythona 3.6 jeszcze raz; lub
+1. zainstalować wszystkie uaktualnienia systemu Windows i spróbować instalacji Pythona 3.6 jeszcze raz; lub
 2. zainstalować [starszą wersję Pythona](https://www.python.org/downloads/windows/), np. [3.4.6](https://www.python.org/downloads/release/python-346/).
 
 Jeżeli zainstalujesz starszą wersję Pythona, ekrany instalatora mogą wyglądać nieznacznie inaczej niż pokazane wyżej. Upewnij się, że przewinęłaś do "Add python.ext to Path", kliknęłaś przycisk po lewej i wybrałaś "Will be installed on local hard drive":
@@ -105,7 +105,7 @@ Sprawdź, czy instalacja zakończyła się pomyślnie - otwórz wiersz polecenia
 
 Pokazana wersja może różnić się od 3.6.1 - powinna pasować do wersji, którą zainstalowałeś.
 
-**Uwaga:** Jeżeli pracujesz na Windowsie i dostajesz wiadomość o błędzie, że `python3` nie został znaleziony, spróbuj użyć `python` (bez `3`) oraz sprawdź, czy być może w taki sposób uruchomisz Pythona 3.4.
+**Uwaga:** jeżeli pracujesz na Windowsie i dostajesz wiadomość o błędzie, że `python3` nie został znaleziony, spróbuj użyć `python` (bez `3`) oraz sprawdź, czy być może w taki sposób uruchomisz Pythona 3.4.
 
 * * *
 
