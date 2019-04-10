@@ -738,7 +738,7 @@ $ python3 python_intro.py
 To dziala!
 ```
 
-Uwaga: Pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. Od tego momenty zamieniaj 'python3' na 'python' by wykonać plik.
+Uwaga: pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. Od tego momenty zamieniaj 'python3' na 'python' by wykonać plik.
 
 ### A co jeśli warunek nie jest prawdziwy?
 
@@ -815,7 +815,7 @@ Python zbada każdy warunek i wyświetli:
 
 ## Komentarze
 
-Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą spowodować, że twój kod będzie łatwiejszy do zrozumienia przez innych.
+Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą spowodować, że Twój kod będzie łatwiejszy do zrozumienia przez innych.
 
 Zobaczmy, jak to wygląda:
 
@@ -903,7 +903,7 @@ def hi(imie):
 hi()
 ```
 
-Pamiętaj: Musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz jak to działa:
+Pamiętaj: musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz, jak to działa:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -914,7 +914,7 @@ Pamiętaj: Musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkc
     TypeError: hi() missing 1 required positional argument: 'imie'
     
 
-Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hi()` (ta, którą stworzyliśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
+Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hi()` (ta, którą stworzyłyśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -974,13 +974,13 @@ Teraz wywołajmy ten kod:
     Hej Rachel!
     
 
-Gratulacje! Właśnie nauczyłaś się pisać funkcje :)
+Gratulacje! Właśnie nauczyłaś się pisać funkcje! :)
 
 ## Pętle
 
 > Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-To już ostatnia cześć. Prawda, że szybko poszło? :)
+To już ostatnia część. Prawda, że szybko poszło? :)
 
 Jak już wspomniałyśmy, programiści są leniwi i nie lubią się powtarzać. W programowaniu chodzi o automatyzowanie różnych rzeczy, więc nie chcemy witać ręcznie każdej osoby po imieniu, prawda? I tu właśnie przydają nam się pętle.
 
