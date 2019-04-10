@@ -46,7 +46,7 @@ Vratite se na svoj pretraživač. Ulogujte se sa podacima super korisnika koje s
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Idite na postove i eksperimentišite malo s njima. Dodajte pet ili šest postova na blogu. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
