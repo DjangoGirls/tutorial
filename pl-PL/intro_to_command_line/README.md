@@ -44,7 +44,7 @@ W systemie Windows ujrzysz znak `>`, o tak:
     >
     
 
-Spójrz, na powyższą sekcję Linux -- Zobaczysz coś więcej, gdy dojdziesz do dalszej części tutorialu.
+Spójrz na powyższą sekcję Linux -- Zobaczysz coś więcej, gdy dojdziesz do dalszej części tutoriala.
 
 <!--endsec-->
 
@@ -132,7 +132,7 @@ Wiele poleceń, które można wpisać w wierszu polecenia ma wbudowane funkcje p
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X i Linux posiada polecenie `man`, który wyświetla Ci pomoc dla danego polecenia. Spróbuj `man pwd` i zobacz, co mówi lub umieścić `man` przed innim poleceniem, aby zobaczyć jego pomoc. Wynikiem `man` jest normalna strona. Użyj spacji, aby przejść do następnej strony i `q` rzucić, patrząc na pomoc.
+OS X i Linux posiada polecenie `man`, które wyświetla Ci pomoc dla danego polecenia. Spróbuj `man pwd` i zobacz, co mówi lub umieścić `man` przed innim poleceniem, aby zobaczyć jego pomoc. Wynikiem `man` jest normalna strona. Użyj spacji, aby przejść do następnej strony i `q` aby zakończyć.
 
 <!--endsec-->
 
