@@ -6,12 +6,12 @@
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .book-header .fa-align-justify::after {
-    content: ' Show Contents';
+    content: ' Show Outline';
     text-transform: none;
     font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .book.with-summary .book-header .fa-align-justify::after {
-    content: ' Hide Contents';
+    content: ' Hide Outline';
 }
 .book-header .fa-globe::after {
     content: ' Language';
@@ -19,7 +19,14 @@
 .book-header .fa-font::after {
     content: ' Font Settings';
 }
-
+@media (max-width:600px) {
+    .book-header .fa-font::after {
+        content: ' Font';
+    }
+    .book-header .js-toolbar-action.pull-right {  /* social sharing links */
+        display: none;
+    }
+}
 
 /* add text to the Next & Prev arrows */
 
