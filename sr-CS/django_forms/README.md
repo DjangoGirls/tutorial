@@ -1,6 +1,6 @@
 # Django Forme
 
-Na kraju, stvar koju želimo da uradimo na našem blogu je da omogućimo da se lako dodaju i izmenjuju postovi. Django `admin` je kul, ali ga je teško prilagoditi i učiniti lepim. Uz pomoć `formi` možemo da imam apsolutnu kontrolu nad našim interfejsom - možemo da uradimo skoro sve što zamislimo!
+Na kraju, stvar koju želimo da uradimo na našem blogu je da omogućimo da se lako dodaju i izmenjuju postovi. Django `admin` je kul, ali ga je teško prilagoditi i učiniti lepim. Uz pomoć `formi` možemo da imamo apsolutnu kontrolu nad našim interfejsom - možemo da uradimo skoro sve što zamislimo!
 
 Dobra stvar u vezi sa Django formama je ta što možemo ili da ih definišemo ispočetka ili možemo da definišemo `formu modela` koja će sačuvati rezultat forme za model.
 
