@@ -2,7 +2,7 @@
 
 Django (/ˈdʒæŋɡoʊ/ *jang-goh*) je besplatna aplikacija i biblioteka otvorenog koda, napisana u Python-u. Veb biblioteka je skup napisanih komponenata koje pomažu da brže i lakše razvijete sajtove.
 
-Kada pravite veb sajt, uvek Vam je potreban sličan skup komponenata: način na koji ćete da se izborite sa potvrđivanjem autentičnosti korisnika (npr. logovanje ili pravljanje naloga), kontrolni panel za veb sajt, forme, načini učitavanja fajlova itd.
+Kada pravite veb sajt, uvek Vam je potreban sličan skup komponenata: način na koji ćete da se izborite sa potvrđivanjem autentičnosti korisnika (npr. logovanje ili pravljenje naloga), kontrolni panel za veb sajt, forme, načini učitavanja fajlova itd.
 
 Srećom, ljudi su davno primetili da se veb developeri suočavaju sa sličnim problemima tokom pravljenja nekog sajta, tako da su se udružili i stvorili biblioteke (Django je jedna od njih) koje Vam obezbeđuju gotove komponente koje mogu da se koriste.
 
