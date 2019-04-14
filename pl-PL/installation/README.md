@@ -12,7 +12,7 @@ Jeśli uczestniczysz w wydarzeniu Django Girls:
 
 * Twój warsztat może mieć "część instalacyjną" przed głównym warsztatem. Jeśli jesteś w części instalacyjnej, to ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami, aby uzyskać wszystko, czego potrzebujesz do warsztatów. W razie potrzeby poproś o pomoc mentorów. Na warsztatach będziesz mogła pominąć tutoriale instalacji, które już wykonałaś.
 * Organizatorzy warsztatów mogą Cię prosić, abyś w domu spróbowała zainstalować wszytskie potrzebne rzeczy na komputerze przed rozpoczęciem warsztatów. Jeśli zostałaś poproszona aby to zrobić, ta strona jest dla Ciebie! Postępuj zgodnie z instrukcjami umieszczonymi tutaj, najlepiej jak potrafisz! Następnie, podczas głównego warsztatu, gdy dojdziesz do etapu instalacji w głównym samouczku, jeśli nie możesz go zainstalować, możesz uzyskać pomoc od swojego mentora.
-* Jeśli na Twoich warsztatach nie ma części instalacyjnej (lub nie mogłaś wziąć w niej udziału) i jeśli organizatorzy nie prosili Cię o zainstalowanie wszystkiego przed Twoim przyjazdem, pomiń tę stronę i przejdź bezpośrednio do rozdziału [ Jaj działa internet?](../how_the_internet_works/README.md). Podczas pracy nad tutorialem będziesz instalować wszystko, czego potrzebujesz.
+* Jeśli na Twoich warsztatach nie ma części instalacyjnej (lub nie mogłaś wziąć w niej udziału) i jeśli organizatorzy nie prosili Cię o zainstalowanie wszystkiego przed Twoim przyjazdem, pomiń tę stronę i przejdź bezpośrednio do rozdziału [ Jak działa internet?](../how_the_internet_works/README.md). Podczas pracy nad tutorialem będziesz instalować wszystko, czego potrzebujesz.
 
 # Instalacja
 
