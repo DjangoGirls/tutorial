@@ -10,11 +10,11 @@ Potem, upewnij się, że śledzisz Django Girls na [Facebooku](http://facebook.c
 
 ### Czy możesz polecić kolejne materiały?
 
-Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programistycznych - może to być całkiem zniechęcające, gdy trzeba wybrać, co zrobić następne, ale my o to zadbałyśmy. Niezależnie od tego, czym interesowałaś się, zanim przybyłaś na Django Girls i niezależnie od tego, co zainteresowało Cię podczas przechodzenia tutoriala, oto kilka wolnych zasobów (lub zasobów z dużymi darmowymi komponentami), których możesz używać, aby się podszkolić.
+Tak! Jest *wiele* materiałów online do nauki dowolnych umiejętności programistycznych - może to być całkiem zniechęcające, gdy trzeba wybrać spośród wielu stron. My wybrałyśmy te najciekawsze. Niezależnie od tego, czym interesowałaś się, zanim przybyłaś na Django Girls i niezależnie od tego, co zainteresowało Cię podczas przechodzenia tutoriala, oto kilka darmowych zasobów (lub zasobów z dużymi darmowymi komponentami), których możesz używać, aby się podszkolić.
 
 #### Django
 
-- Nasze inna książka, [Django Girls Tutorial: Extensions ](https://tutorial-extensions.djangogirls.org/)
+- Nasza inna książka, [Django Girls Tutorial: Extensions ](https://tutorial-extensions.djangogirls.org/)
 - [Oficjalny tutorial Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Wideolekcje Getting Started with Django](http://www.gettingstartedwithdjango.com/)
 
