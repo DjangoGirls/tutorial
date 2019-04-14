@@ -654,7 +654,7 @@ W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-W wierszu poleceń Windows będzie tak:
+W wierszu polecenia w systemie Windows będzie tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -738,7 +738,7 @@ $ python3 python_intro.py
 To dziala!
 ```
 
-Uwaga: pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. Od tego momenty zamieniaj 'python3' na 'python' by wykonać plik.
+Uwaga: pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. Od tego momentu zamieniaj 'python3' na 'python' by wykonać plik.
 
 ### A co jeśli warunek nie jest prawdziwy?
 
