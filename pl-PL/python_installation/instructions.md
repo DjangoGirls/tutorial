@@ -2,7 +2,7 @@
 > 
 > Niniejszy podrozdział powstał w oparciu o kurs Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Framework Django został w napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić cokolwiek w Django. Zacznijmy zatem od zainstalowania go! Chcemy zainstalować Pythona 3.6, więc jeżeli posiadasz jakąkolwiek wcześniejszą wersję, będziesz musiała ją uaktualnić. Jeśli masz już w wersji 3.4 lub nowszej, powinno być dobrze.
+Framework Django został napisany w Pythonie. Potrzebujemy Pythona, żeby móc zrobić cokolwiek w Django. Zacznijmy zatem od zainstalowania go! Chcemy zainstalować Pythona 3.6, więc jeżeli posiadasz jakąkolwiek wcześniejszą wersję, będziesz musiała ją uaktualnić. Jeśli masz już w wersji 3.4 lub nowszej, powinno być dobrze.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
