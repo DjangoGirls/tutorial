@@ -18,25 +18,7 @@ Okno zwane **wierszem polecenia** lub **interfejsem wiersza polecenia** jest apl
 
 Aby zacząć nasze eksperymenty, musimy najpierw otworzyć nasz wiersz polecenia.
 
-<!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
-
-Przejdź do menu Start → System → Wiersz polecenia.
-
-> Na starszych wersjach Windowsa szukaj w menu Start → Wszystkie programy → Akcesoria → Wiersz polecenia.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
-
-Przejdź do Aplikacje → Narzędzia → Terminal.
-
-<!--endsec-->
-
-<!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
-
-Prawdopodobnie gdzieś w menu Aplikacje → Akcesoria → Terminal, ale to może zależeć od wersji Twojego systemu. Jeżeli tam nie znajdziesz, możesz spróbować zapytać Google'a. :)
-
-<!--endsec-->
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Znak zachęty
 
@@ -62,9 +44,11 @@ W systemie Windows ujrzysz znak `>`, o tak:
     >
     
 
+Spójrz na powyższą sekcję Linux -- Zobaczysz coś więcej, gdy dojdziesz do dalszej części tutoriala.
+
 <!--endsec-->
 
-Każde polecenie będzie poprzedzone tym znakiem oraz jedną spacją, ale nie musisz ich przepisywać. Twój komputer zrobi to za Ciebie. :)
+Każda komenda będzie poprzedzona przez `$` lub `>` i jedną spację, czego nie powinnaś wpisywać. Twój komputer zrobi to za Ciebie. :)
 
 > Jedna mała uwaga: w Twoim przypadku prompt może być poprzedzony czymś jeszcze, np. `C:\Users\ola>` lub `Olas-MacBook-Air:~ ola$` i jest to w 100% poprawne.
 
@@ -142,6 +126,22 @@ Prawdopodobnie ujrzysz coś podobnego na swoim komputerze. Kiedy otwierasz wiers
 
 * * *
 
+### Dowiedz się więcej o komendach
+
+Wiele poleceń, które można wpisać w wierszu polecenia ma wbudowane funkcje pomocy, które można wyświetlić i przeczytać! Na przykład, aby dowiedzieć się więcej na temat polecenia cd:
+
+<!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
+
+OS X i Linux posiada polecenie `man`, które wyświetla Ci pomoc dla danego polecenia. Spróbuj `man pwd` i zobacz, co mówi lub umieścić `man` przed innim poleceniem, aby zobaczyć jego pomoc. Wynikiem `man` jest normalna strona. Użyj spacji, aby przejść do następnej strony i `q`, aby zakończyć.
+
+<!--endsec-->
+
+<!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
+
+Dodawanie przyrostka`/?` do większości poleceń powoduje, że zostają wyświetlone strony pomocy. Konieczne może być przewinięcie okna polecenia, aby zobaczyć wszystkie informacje. Spróbuj `cd /?`.
+
+<!--endsec-->
+
 ### Lista plików i folderów
 
 Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
@@ -181,12 +181,23 @@ Co znajduje się w środku? Fajnie byłoby się tego dowiedzieć. Sprawdźmy:
 
 Przejdźmy teraz do naszego folderu Pulpit:
 
-<!--sec data-title="Change current directory: OS X and Linux" data-id="OSX_Linux_move_to" data-collapse=true ces-->
+<!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
     $ cd Desktop
     
+
+<!--endsec-->
+
+<!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
+
+{% filename %}command-line{% endfilename %}
+
+    $ cd Desktop
+    
+
+Zapamiętaj, że katalog "Desktop" może być przetłumaczony na język Twojego systemu Linux. W takim przypadku, musisz wymienić `Desktop` na przetłumaczoną nazwę; na przykład dla niemieckiego tłumaczenia `Schreibtisch`.
 
 <!--endsec-->
 
@@ -229,7 +240,7 @@ Tak, to tutaj!
 
 ### Tworzenie folderu
 
-Co powiesz na stworzenie folderu cwiczenie na swoim pulpicie? Zrób to w ten sposób:
+Co powiesz na stworzenie folderu "cwiczenie" na swoim pulpicie? Zrób to w ten sposób:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -257,7 +268,7 @@ To niepozorne polecenie doda do Twojego pulpitu folder o nazwie `cwiczenie`. Mo�
 
 ### Ćwiczenie!
 
-Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` stwórz katalog o nazwie `test`. Użyj poleceń `cd` i `mkdir`.)
+Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` stwórz katalog o nazwie `test`. Użyj poleceń `cd` i `mkdir`
 
 #### Rozwiązanie:
 
@@ -265,7 +276,7 @@ Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` s
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd cwiczenie
+    $ cd excercise
     $ mkdir test
     $ ls
     test
@@ -277,7 +288,7 @@ Małe wyzwanie dla Ciebie: wewnątrz świeżo utworzonego katalogu `cwiczenie` s
 
 {% filename %}command-line{% endfilename %}
 
-    > cd cwiczenie
+    > cd excercise
     > mkdir test
     > dir
     05/08/2014 07:28 PM <DIR>      test
@@ -408,19 +419,20 @@ Fajnie, nie? :)
 
 Oto podsumowanie przydatnych poleceń:
 
-| Polecenie (Windows) | Polecenie (Mac OS / Linux) | Opis                          | Przykład                                          |
-| ------------------- | -------------------------- | ----------------------------- | ------------------------------------------------- |
-| wyjście             | wyjście                    | zamknięcie okna               | **wyjście**                                       |
-| cd                  | cd                         | zmiana katalogu               | **cd test**                                       |
-| cd                  | pwd                        | pokazywane bieżącego katalogu | **cd** (Windows) lub **pwd** (Mac OS / Linux)     |
-| dir                 | ls                         | lista katalogów/plików        | **dir**                                           |
-| copy                | cp                         | kopiowanie pliku              | **copy c:\test\test.txt c:\windows\test.txt** |
-| move                | mv                         | przenoszenie pliku            | **move c:\test\test.txt c:\windows\test.txt** |
-| mkdir               | mkdir                      | tworzenie nowego katalogu     | **mkdir testdirectory**                           |
-| rmdir (lub del)     | rm                         | usuwanie pliku                | **del c:\test\test.txt**                        |
-| rmdir /S            | rm -r                      | usuwanie katalogu             | **rm -r testdirectory**                           |
+| Polecenie (Windows) | Polecenie (Mac OS / Linux) | Opis                                | Przykład                                            |
+| ------------------- | -------------------------- | ----------------------------------- | --------------------------------------------------- |
+| wyjście             | wyjście                    | zamknięcie okna                     | **wyjście**                                         |
+| cd                  | cd                         | zmiana katalogu                     | **cd test**                                         |
+| cd                  | pwd                        | pokazywane bieżącego katalogu       | **cd** (Windows) lub **pwd** (Mac OS / Linux)       |
+| dir                 | ls                         | lista katalogów/plików              | **dir**                                             |
+| copy                | cp                         | kopiowanie pliku                    | **copy c:\test\test.txt c:\windows\test.txt**   |
+| move                | mv                         | przenoszenie pliku                  | **move c:\test\test.txt c:\windows\test.txt**   |
+| mkdir               | mkdir                      | tworzenie nowego katalogu           | **mkdir testdirectory**                             |
+| rmdir (lub del)     | rm                         | usuwanie pliku                      | **del c:\test\test.txt**                          |
+| rmdir /S            | rm -r                      | usuwanie katalogu                   | **rm -r testdirectory**                             |
+| [CMD] /?            | man [CMD]                  | uzyskiwanie pomocy na temat komendy | **cd /?** (Windows) lub **man cd** (Mac OS / Linux) |
 
-To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu polecenia, ale na dzień dzisiejszy nie będziesz potrzebowała niczego więcej.
+To tylko garstka wszystkich poleceń, z których możesz skorzystać w wierszu polecenia, ale dzisiaj nie będziesz potrzebowała niczego więcej.
 
 Jeżeli temat Cię zainteresował, to [ss64.com](http://ss64.com) zawiera kompletny spis poleceń dla wszystkich systemów operacyjnych.
 

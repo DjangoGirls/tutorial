@@ -1,8 +1,8 @@
-Możesz [pominąć tę sekcję](http://tutorial.djangogirls.org/en/installation/#install-python) jeżeli nie używasz Chromebooka. W przeciwnym wypadku, proces instalacji będzie wyglądał nieco inaczej. Możesz zignorować pozostałe elementy instrukcji dotyczące instalacji.
+Możesz [pominąć tę sekcję](http://tutorial.djangogirls.org/en/installation/#install-python), jeżeli nie używasz Chromebooka. W przeciwnym wypadku, proces instalacji będzie wyglądał nieco inaczej. Możesz zignorować pozostałe elementy instrukcji dotyczące instalacji.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud IDE będzie działać jako *komputer lokalny*. Będziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windows, z tym że Twój terminal będzie podłączony do komputera, który ustawi dla Ciebie Cloud IDE. Oto instrukcje dotyczące różnych Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). Możesz wybrać jedno z poniższych Cloud IDE i postepować zgodnie z instrukcją.
+Cloud IDE jest narzędziem, które pełni funkcję edytora kodu oraz umożliwia dostęp do komputera uruchomionego w internecie, gdzie możesz instalować, pisać oraz uruchamiać programy. Na czas trwania tutoriala Cloud IDE będzie działać jako *komputer lokalny*. Będziesz mogła uruchamiać komendy w terminalu, tak jak inne osoby korzystające z systemu OS X, Ubuntu czy Windows, z tym że Twój terminal będzie podłączony do komputera, który ustawi dla Ciebie Cloud IDE. Oto instrukcje dotyczące różnych Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). Możesz wybrać jedno z poniższych Cloud IDE i postępować zgodnie z instrukcją.
 
 #### PaizaCloud Cloud IDE
 
@@ -18,7 +18,7 @@ Teraz powinnaś zobaczyć interfejs z bocznym paskiem i przyciski po lewej stron
     $
     
 
-Terminal przekaże Twoje komendy do komputera Cloud9, który jest przygotowany na Twoje instrukcje. Możesz manipulować rozmiarem okienka, tak by było nieco większe lub mniejsze.
+Terminal PaizaCloud Cloud ID jest gotowy na Twoje instrukcje. Możesz zmienić rozmiar tego okna i powiększyć je, aby było troszkę większe.
 
 #### AWS Cloud9
 
@@ -33,7 +33,7 @@ Teraz powinnaś zobaczyć interfejs z bocznym paskiem, duże główne okno z tek
     twojanazwaużytkownika:~/workspace $
     
 
-Dolny obszar jest Twoim *terminalem*, gdzie będziesz wpisywać komendy do Cloud 9, który jest przygotowany na Twoje instrukcje. Możesz też zmienić rozmiar tego okna, aby było nieco większe.
+Dolny obszar jest Twoim terminalem. Możesz użyć go do wysyłania instrukcji do zdalnego komputera Cloud 9. Możesz zmienić rozmiar tego okna, aby je trochę powiększyć.
 
 ### Środowisko wirtualne
 
@@ -60,7 +60,7 @@ Następnie uruchom:
     pip install django~={{ book.django_version }}
     
 
-(zauważ, że w ostatniej linii użyliśmy tyldy, za którą następuje znak równości: ~=).
+(zauważ, że w ostatniej linii użyłyśmy tyldy, za którą następuje znak równości: ~=).
 
 ### GitHub
 

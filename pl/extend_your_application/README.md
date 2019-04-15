@@ -23,7 +23,7 @@ Zaczniemy od dodania linku wewnątrz pliku `blog/templates/blog/post_list.html`.
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -54,7 +54,7 @@ Dodajmy adres URL w pliku `urls.py` dla naszego *widoku (ang.view)* `post_detail
 
 Chcemy, aby nasz wpis i wszystkie informacje o nim, były widoczne pod tym adresem **URL**: http://127.0.0.1:8000/post/1/
 
-W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Otwórz plik `blog/urls.py` w edytorze i dodaj wiersz: `path('post/<int:pk>)/', views.post_detail, name='post_detail'),` tak, żeby otrzymać:
+W pliku `blog/urls.py` stwórzmy adres URL wskazujący na *widok* o nazwie `post_detail`, który wyświetli nam cały wpis. Otwórz plik `blog/urls.py` w edytorze i dodaj wiersz: `path('post/<int:pk>/', views.post_detail, name='post_detail'),` tak, żeby otrzymać:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -154,7 +154,7 @@ Będzie to wyglądać tak:
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -185,14 +185,14 @@ Dobrze byłoby sprawdzić, czy Twoja strona dalej będzie dobrze działać na Py
 
 Następnie w konsoli [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Pamiętaj, aby zastąpić `<your-pythonanywhere-username>` aktualną nazwą użytkownika PythonAnywhere, bez ostrych nawiasów).
+(Pamiętaj, by podmienić `<your-pythonanywhere-domain>` na Twoją właściwą nazwę użytkownika PythonAnywhere, bez ostrych nawiasów).
 
 ## Aktualizacja plików statycznych na serwerze
 
@@ -200,15 +200,15 @@ Serwery takie jak PythonAnywhere lubią traktować "pliki statyczne" (takie jak 
 
 Zacznij od aktywacji swojego virtualenva, jeżeli nie jest on jeszcze aktywny (PythonAnywhere używa polecenia `workon` w celu aktywacji, dokładnie tak jak komenda `source myenv/bin/activate`, której używasz na swoim komputerze):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
 Komenda `manage.py collectstatic` jest trochę podobna do `manage.py migrate`. Wcześniej dokonałyśmy jakichś zmian w naszym kodzie, a teraz informujemy Django, by *zastosował* te zmiany, albo w kolekcji plików statycznych na serwerze albo w bazie danych.
 
-W każdym razie, jesteśmy już gotowe do przejścia na stronę ["Web"](https://www.pythonanywhere.com/web_app_setup/) (klikając w menu umieszczonym w prawym górnym rogu). Następnie kliknij **Reload** i spójrz na stronę https://yourname.pythonanywhere.com aby zobaczyć rezultat.
+W każdym razie, jesteśmy już gotowe do przejścia na stronę ["Web"](https://www.pythonanywhere.com/web_app_setup/) (klikając w menu umieszczonym w prawym górnym rogu). Następnie kliknij **Reload** i spójrz na stronę https://subdomain.pythonanywhere.com, aby zobaczyć rezultat.
 
 I to już wszystko! Gratulacje :)

@@ -610,7 +610,7 @@ $
 
 W ten sposób znajdziesz się z powrotem w wierszu polecenia.
 
-Nieco wcześniej, w sekcji [Edytor kodu](../code_editor/README.md), dokonałyśmy wyboru programu używanego przez nas do pisania kodu. Musimy go teraz otworzyć i zapisać kod w nowym pliku:
+Wcześniej wybrałyśmy Edytor kodu z sekcji [Edytor kodu](../code_editor/README.md). Otwórzmy teraz edytor i napiszmy trochę kodu wewnątrz nowego pliku (lub jeśli używasz Chromebooka, stwórz nowy plik w chmurze IDE i otwórz plik, który będzie zawarty w edytorze kodu):
 
 {% filename %}editor{% endfilename %}
 
@@ -648,11 +648,13 @@ W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski
     $ cd ~/Desktop
     
 
+(Pamiętaj, że słowo "Desktop" może zostać przetłumaczone na polski jako "Pulpit"):
+
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-W wierszu polecenia Windows będzie tak:
+W wierszu polecenia w systemie Windows będzie tak:
 
 {% filename %}command-line{% endfilename %}
 
@@ -736,7 +738,7 @@ $ python3 python_intro.py
 To dziala!
 ```
 
-Uwaga: Pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. Od tego momenty zamieniaj 'python3' na 'python' by wykonać plik.
+Uwaga: pamiętaj, na Windowsie 'python3' nie jest rozpoznawane jako polecenie. Od tego momentu zamieniaj 'python3' na 'python' by wykonać plik.
 
 ### A co jeśli warunek nie jest prawdziwy?
 
@@ -761,7 +763,7 @@ Po uruchomieniu wyświetli się:
 
 Gdyby 2 było większą liczbą niż 5, wtedy zostałaby wykonana druga instrukcja. Zobaczmy, jak działa `elif`:
 
-{% filename %}python_intro.py{% endfilename %}
+{% filename %}python_intro.py{% endfilename %} 
 
 ```python
 name = 'Sonja'
@@ -813,7 +815,7 @@ Python zbada każdy warunek i wyświetli:
 
 ## Komentarze
 
-Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą spowodować, że twój kod będzie łatwiejszy do zrozumienia przez innych.
+Komentarze to linie zaczynające się od `#`. Możesz napisać cokolwiek będziesz chciała za `#`, a Python to zignoruje. Komentarze mogą spowodować, że Twój kod będzie łatwiejszy do zrozumienia przez innych.
 
 Zobaczmy, jak to wygląda:
 
@@ -846,7 +848,7 @@ Czas na ostatnią część tego rozdziału!
 
 Pamiętasz funkcje takie jak `len()`, które możesz uruchamiać w Pythonie? Dobra wiadomość: teraz nauczysz się pisać swoje własne funkcje!
 
-Funkcja jest zestawem poleceń, które Python ma wykonać. Każda funkcja w Pythonie zaczyna się słowem `def`, posiada nazwę i może przyjmować parametry. Spróbujmy! Zastąp kod w pliku **python_intro.py** następującym:
+Funkcja jest zestawem poleceń, które Python ma wykonać. Każda funkcja w Pythonie zaczyna się słowem kluczowym `def`, posiada nazwę i może przyjmować parametry. Spróbujmy! Zastąp kod w pliku **python_intro.py** następującym:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -871,7 +873,7 @@ Uruchommy to teraz i sprawdźmy, co się stanie:
     Jak się masz?
     
 
-Uwaga: Jeżeli to nie zadziała, nie ma powodu panikować! Wynik działania pozwoli Ci ustalić czemu:
+Uwaga: Jeżeli to nie zadziała, nie panikuj! Wynik działania pozwoli Ci ustalić dlaczego:
 
 - Jeżeli dostajesz `NameError`, znaczy to że prawdopodobnie niepoprawnie coś wpisałaś, więc powinnaś sprawdzić czy użyłaś tej samej nazwy tworząc funkcję w `def hi():` oraz gdy ją wykonujesz w `hi()`.
 - Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tę samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty. 
@@ -901,7 +903,7 @@ def hi(imie):
 hi()
 ```
 
-Pamiętaj: Musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz jak to działa:
+Pamiętaj: musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkcją `print`, ponieważ `if` musi dostać informację o tym, co powinno się wydarzyć, gdy warunek zostanie spełniony. Zobaczmy teraz, jak to działa:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -912,7 +914,7 @@ Pamiętaj: Musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkc
     TypeError: hi() missing 1 required positional argument: 'imie'
     
 
-Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hi()` (ta, którą stworzyliśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
+Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hi()` (ta, którą stworzyłyśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -953,7 +955,7 @@ A jak myślisz - co się stanie, jak wprowadzimy tam inne imię (jeszcze inne ni
 
 Prawda, że fajnie? W ten sposób nie musisz powtarzać się za każdym razem, gdy zechcesz zmienić imię osoby, która ma zostać powitana. To właśnie dlatego funkcje są nam potrzebne - żeby nie powtarzać kodu!
 
-Zróbmy coś sprytniejszego -- istnieje znacznie więcej niż dwa imiona i raczej ciężko byłoby pisać warunek dla każdego, co?
+Zróbmy coś mądrzejszego - mamy więcej niż dwa imiona, a podanie warunku dla każdego byłoby trudne, prawda? Zastąp zawartość pliku następującym kodem:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -972,13 +974,13 @@ Teraz wywołajmy ten kod:
     Hej Rachel!
     
 
-Gratulacje! Właśnie nauczyłaś się pisać funkcje :)
+Gratulacje! Właśnie nauczyłaś się pisać funkcje! :)
 
 ## Pętle
 
 > Dla czytelniczek w domu: tę część uwzględnia wideo [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-To już ostatnia cześć. Prawda, że szybko poszło? :)
+To już ostatnia część. Prawda, że szybko poszło? :)
 
 Jak już wspomniałyśmy, programiści są leniwi i nie lubią się powtarzać. W programowaniu chodzi o automatyzowanie różnych rzeczy, więc nie chcemy witać ręcznie każdej osoby po imieniu, prawda? I tu właśnie przydają nam się pętle.
 
@@ -1033,7 +1035,7 @@ A gdy go uruchomimy:
 
 Jak widzisz, cokolwiek umieścisz wewnątrz wyrażenia `for` wraz z wcięciem - zostanie powtórzone dla każdego elementu listy `dziewczyny`.
 
-Możesz także użyć `for` na liczbach, używając funkcji `range`:
+Możesz także użyć `for` na liczbach, używając metody `range`:
 
 {% filename %}python_intro.py{% endfilename %}
 

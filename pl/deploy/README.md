@@ -87,7 +87,7 @@ I na końcu zapisujemy zmiany. Przejdź do konsoli i wykonaj poniższe polecenia
 
 ## Przesyłanie kodu do GitHuba
 
-Wejdź na stronę [GitHub.com](https://www.github.com) i utwórz nowe, darmowe konto. (Jeśli już to wcześniej zrobiłaś, to super!)
+Wejdź na stronę [GitHub.com](https://www.github.com) i załóż darmowe konto użytkownika. (Jeśli zrobiłaś to na warsztatach przygotowawczych to świetnie). Zapamiętaj hasło do swojego konta (dodaj je do swojego menedżera haseł, jeśli go używasz).
 
 Następnie utwórz nowe repozytorium i nadaj mu nazwę "my-first-blog" (ang. "mój-pierwszy-blog"). Pozostaw niezaznaczone pole wyboru "initialize with README", pozostaw opcję .gitignore pustą (zrobiłyśmy to ręcznie) i pozostaw licencję jako None.
 
@@ -161,7 +161,7 @@ Teraz uruchamiamy pomocnika, aby automatycznie skonfigurować naszą aplikację 
 Jeżeli patrzysz na proces, będziesz mogła zobaczyć:
 
 - Pobieranie kodu z GitHuba
-- Tworzenie środowiska wirtualnego na PythonAnywhere, podobnie jak na Twoim PC
+- Tworzenie środowiska wirtualnego na PythonAnywhere, podobnie jak na Twoim komputerze.
 - Aktualizowanie pliku ustawień z niektórych ustawień wdrażania
 - Konfigurowanie bazy danych w PythonAnywhere za pomocą polecenia `manage.py migrate`
 - Konfigurowanie plików statycznych (dowiemy się o nich później)
@@ -185,8 +185,8 @@ Teraz, jeśli chcesz, możesz również rzucić okiem na swój kod w PythonAnywh
     (ola.pythonanywhere.com) $ ls
     blog  db.sqlite3  manage.py  mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  forms.py  migrations  models.py  static
-    templates  tests.py  urls.py  views.py
+    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py tests.py  static
+    templates  views.py
     
 
 Możesz także przejść do zakładki "Pliki" i poruszać się za pomocą wbudowanej przeglądarki plików w PythonAnywhere. (Ze strony konsoli możesz przejść do innych stron PythonAnywhere za pomocą przycisku menu w prawym górnym rogu. Po przejściu na jedną ze stron, w pobliżu góry zobaczysz linki do innych.)

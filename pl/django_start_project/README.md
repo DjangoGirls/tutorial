@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > ** Uwaga **: jeśli używasz Chromebooka, dodaj ten wiersz u dołu pliku settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Dodaj również `.c9users.io` do `ALLOWED_HOSTS` jeżeli używasz cloud9
+> Dodaj również `.c9users.io` do `ALLOWED_HOSTS`, jeżeli używasz cloud9
 
 ## Inicjalizacja bazy danych
 
@@ -148,6 +148,8 @@ Aby utworzyć bazę danych dla naszego bloga, wykonajmy następujące polecenie 
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying auth.0008_alter_user_username_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -176,28 +178,28 @@ Jeśli pracujesz na Windowsie i zobaczysz w tym momencie `UnicodeDecodeError`, u
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Teraz wszystko, co musisz zrobić, to sprawdzić, czy Twoja strona działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer lub jakąkolwiek inną) i wprowadź ten adres:
+Teraz sprawdź, czy Twoja strona działa. Otwórz przeglądarkę (Firefox, Chrome, Safari, Internet Explorer lub jakąkolwiek inną) i wprowadź ten adres:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Jeśli używasz Chromebooka, zawsze odwiedzasz serwer testowy, uzyskując dostęp do:
+Jeśli używasz Chromebooka i Cloud9, kliknij adres URL w wyskakującym okienku, które powinno pojawić się w prawym górnym rogu okna poleceń, w którym działa serwer WWW. Adres URL powinien wygladąć tak:
 
 {% filename %}browser{% endfilename %}
 
-    https://django-girls-<your cloud9 username>.c9users.io
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 Gratulacje! Właśnie stworzyłaś swoją pierwszą stronę i uruchomiłaś ją za pomocą serwera! Prawda, że wspaniale?
 
 ![Install worked!](images/install_worked.png)
 
-Kiedy serwer internetowy jest uruchomiony, nie możesz zobaczyć nowego wiersza polecenia do wprowadzania dodatkowych poleceń. Terminal przyjmie nowy tekst, ale nie wykona nowego polecenia. Dzieje się tak dlatego, że serwer internetowy ciągle działa, aby nasłuchiwać przychodzących żądań.
+Kiedy serwer internetowy jest uruchomiony, nie możesz zobaczyć nowego wiersza polecenia do wprowadzania dodatkowych poleceń. Terminal przyjmie nowy tekst, ale nie wykona nowego polecenia. Dzieje się tak dlatego, że serwer internetowy ciągle działa oraz oczekuje nowych żądań.
 
 > Sprawdziliśmy, jak działają serwery internetowe w rozdziale **"Jak działa Internet"**.
 
-Aby wpisać dodatkowe polecenia podczas działania serwera, otwórz nowe okno terminala i aktywuj virtualenv. Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).
+Aby wpisać dodatkowe polecenia podczas działania serwera WWW, otwórz nowe okno terminala i aktywuj swoje wirtualne środowisko (virtualenv) - aby przejrzeć instrukcje dotyczące otwierania drugiego okna terminala, patrz [Wprowadzenie do wiersza poleceń](../intro_to_command_line/README.md). Aby zatrzymać serwer, wróć do okienka, w którym został on uruchomiony i wciśnij CTRL+C - klawisze Control i C jednocześnie (jeśli używasz systemu Windows to możesz też spróbować skrótu Ctrl+Break).
 
 Gotowa na następny krok? Czas stworzyć treść!
