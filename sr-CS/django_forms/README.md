@@ -52,9 +52,9 @@ Vreme je da otvorite `blog/templates/blog/base.html` u editoru. Dodaćemo link u
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Primetimo da želimo da zovemo naš novi pregled `post_new`. Klasa `"glyphicon glyphicon-plus"` je obezbeđena od strane bootstrap teme koju koristimo i prikazaće znak plus.
 
-After adding the line, your HTML file should now look like this:
+Nakon dodavanja odgovarajuće linije, vaš HTML bi trebalo da izgleda ovako:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -85,11 +85,11 @@ After adding the line, your HTML file should now look like this:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Nakon memorisanja i osveževanja stranice http://127.0.0.1:8000, videćete poznatu `NoReverseMatch` grešku. Da li je tako? Odlično!
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Otvorimo `blog/urls.py` u editoru kako bismo dodali liniju:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,7 +97,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+A krajnji rezultat u kodu bi trebalo da izgleda ovako:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -112,11 +112,11 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Nakon osveževanja sajta, vidimo grešku `AttributeError`, jer nemamo još uvek implementiran prikaz `post_new`. Hajde da ga dodamo.
 
-## post_new view
+## post_new prikaz
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Vreme je da otvorite `blog/views.py` fajl u editoru i da dodate sledeće linije sa ostatkom `from` redova:
 
 {% filename %}blog/views.py{% endfilename %}
 
