@@ -124,7 +124,7 @@ Vreme je da otvorite `blog/views.py` fajl u editoru i da dodate sledeće linije 
 from .forms import PostForm
 ```
 
-And then our *view*:
+I zatim naš *pregled*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,16 +134,16 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Da biste kreirali novu `Post` formu, potrebno je da pozovete `PostForm()` funkciju i da je prosledite obrascu. Vratićemo se na ovaj *pregled*, ali za sada, hajde da na brzinu kreiramo obrazac za formu.
 
-## Template
+## Obrazac
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Moramo da kreiramo fajl `post_edit.html` u `blog/templates/blog` direktorijumu i da ga otvorimo u editoru. Da bi forma funkcionisala, potrebno je nekoliko stvari:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+* Moramo da prikažemo formu. To možemo da uradimo (na primer) uz pomoć linije {% raw %}`{{ form.as_p }}`{% endraw %}.
+* Prethodna linija mora da bude obuhvaćena HTML tagovima `<form method="POST">...</form>`.
+* Potrebno nam je `Sačuvaj` dugme. To radimo pomoću HTML dugmeta: `<button type="submit">Sačuvaj</button>`.
+* I na kraju, odmah nakon otvaranja `<form ...>` taga, moramo da dodamo {% raw %}`{% csrf_token %}`{% endraw %}. Ovo je veoma važno jer čini Vašu formu bezbednom! Ako to zaboravite, Django će da se žali kada pokušate da sačuvate formu:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
