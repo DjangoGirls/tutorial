@@ -36,15 +36,15 @@ Prvo moramo da uvezemo listu sa Django formama (ukucaćemo `from django import f
 
 Zatim, imamo `class Meta` naredbu, gde kažemo Django-u koji model bi trebalo da se koristi da se napravi ova forma (`model = Post`).
 
-Konačno, možemo da kažemo koja polja bi trebalo da budu u našoj formi. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Konačno, možemo da kažemo koja polja bi trebalo da budu u našoj formi. U ovom slučaju želimo da jedino `naslov` i `tekst` budu vidljivi - `autor` bi trebalo da bude osoba koja je trenutno ulogovana (Vi), a `datum` bi trebalo da bude automatski podešen kada kreiramo post (npr. u kodu).
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+To je sve! Sve što treba sada da uradimo je da iskoristimo formu u *pregledu* i da je prikažemo u obrascu.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Dakle, još jednom ćemo kreirati link do stranice, URL, pregled i obrazac.
 
-## Link to a page with the form
+## Link do stranice sa formom
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+Vreme je da otvorite `blog/templates/blog/base.html` u editoru. Dodaćemo link u `div` i nazvaćemo ga `zaglavlje stranice`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
