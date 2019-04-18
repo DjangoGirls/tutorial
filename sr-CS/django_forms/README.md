@@ -32,11 +32,11 @@ class PostForm(forms.ModelForm):
 
 Prvo moramo da uvezemo listu sa Django formama (ukucaćemo `from django import forms`) i naš `Post` model (naredbom `from .models import Post`).
 
-`PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm` je, kao što možete i da pretpostavite, naziv naše forme. Moramo da kažemo Django-u da je ta forma `forma modela` (tako da Django može da odradi magičan deo posla za nas) - za to je odgovorna `forms.ModelForm` komanda.
 
-Next, we have `class Meta`, where we tell Django which model should be used to create this form (`model = Post`).
+Zatim, imamo `class Meta` naredbu, gde kažemo Django-u koji model bi trebalo da se koristi da se napravi ova forma (`model = Post`).
 
-Finally, we can say which field(s) should end up in our form. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Konačno, možemo da kažemo koja polja bi trebalo da budu u našoj formi. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
 And that's it! All we need to do now is use the form in a *view* and display it in a template.
 
