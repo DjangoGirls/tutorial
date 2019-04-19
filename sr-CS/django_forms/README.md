@@ -187,7 +187,7 @@ def post_new(request):
 
 Kada predamo formu, vraćamo se na isti prikaz, ali ovog puta imamo više podataka u `zahtevu`, tačnije unutar `request.POST` (naziv nema veze sa blog "postom", već sa time što "postujemo" podatke). Sećate se kako je u HTML naša `<form>` definicija imala promenljivu `method="POST"`? Sva polja iz forme se sada nalaze unutar `request.POST`. Ne bi trebalo da preimenujete `POST` ni u šta drugo (jedina preostala validna vrednost za `metod` je `GET`, ali nemamo sada dovoljno vremena da objašnjavamo u čemu je razlika).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+U našem *pregledu* imamo dve različite situacije sa kojima moramo da izadjemo na kraj: prvo - kada prvi put posetimo stranicu i želimo praznu formu i drugo - kada se vratimo na *pregled* sa svim podacima sa forme koje smo upravo uneli. Zato, treba da podesimo uslov (za to ćemo koristiti `if`):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Vreme je da popunimo mesto obeleženo tačkama `[...]`. Ako je `metod` isto što i `POST`, onda želimo da napravimo `PostForm` pomoću podataka iz forme, zar ne? To ćemo uraditi na sledeći način:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,7 +206,7 @@ It's time to fill in the dots `[...]`. If `method` is `POST` then we want to con
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Sledeće što treba da uradimo je da proverimo da li je forma ispravna (proveravamo da li su sva neophodna polja popunjena i da li su unete ispravne vrednosti). To radimo uz pomoć funkcije `form.is_valid()`.
 
 We check if the form is valid and if so, we can save it!
 
