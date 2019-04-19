@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Kada predamo formu, vraćamo se na isti prikaz, ali ovog puta imamo više podataka u `zahtevu`, tačnije unutar `request.POST` (naziv nema veze sa blog "postom", već sa time što "postujemo" podatke). Sećate se kako je u HTML naša `<form>` definicija imala promenljivu `method="POST"`? Sva polja iz forme se sada nalaze unutar `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Kada predamo formu, vraćamo se na isti prikaz, ali ovog puta imamo više podataka u `zahtevu`, tačnije unutar `request.POST` (naziv nema veze sa blog "postom", već sa time što "postujemo" podatke). Sećate se kako je u HTML naša `<form>` definicija imala promenljivu `method="POST"`? Sva polja iz forme se sada nalaze unutar `request.POST`. Ne bi trebalo da preimenujete `POST` ni u šta drugo (jedina preostala validna vrednost za `metod` je `GET`, ali nemamo sada dovoljno vremena da objašnjavamo u čemu je razlika).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
