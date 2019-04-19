@@ -173,9 +173,9 @@ Ništa! Ponovo se nalazimo na istoj stranici i tekst je nestao, a novi post uop�
 
 Odgovor je - ništa- Moramo da odradimo još nešto u našem *prikazu*.
 
-## Saving the form
+## Čuvanje forme
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Otvorite ponovo `blog/views.py` u editoru. Trenutno je sve što imamo u `post_new` prikazu sledeće:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Kada predamo formu, vraćamo se na isti prikaz, ali ovog puta imamo više podataka u `zahtevu`, tačnije unutar `request.POST` (naziv nema veze sa blog "postom", već sa time što "postujemo" podatke). Sećate se kako je u HTML naša `<form>` definicija imala promenljivu `method="POST"`? Sva polja iz forme se sada nalaze unutar `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
