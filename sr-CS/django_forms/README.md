@@ -134,9 +134,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Da biste kreirali novu `Post` formu, potrebno je da pozovete `PostForm()` funkciju i da je prosledite obrascu. Vratićemo se na ovaj *pregled*, ali za sada, hajde da na brzinu kreiramo obrazac za formu.
+Da biste kreirali novu `Post` formu, potrebno je da pozovete `PostForm()` funkciju i da je prosledite obrascu. Vratićemo se na ovaj *pregled*, ali za sada, hajde da na brzinu kreiramo šablon za formu.
 
-## Obrazac
+## Šablon
 
 Moramo da kreiramo fajl `post_edit.html` u `blog/templates/blog` direktorijumu i da ga otvorimo u editoru. Da bi forma funkcionisala, potrebno je nekoliko stvari:
 
@@ -171,7 +171,7 @@ Ali, samo trenutak - šta će se desiti kada pokušate da ukucate nešto u polja
 
 Ništa! Ponovo se nalazimo na istoj stranici i tekst je nestao, a novi post uopšte nije dodat. Dakle, šta je krenulo naopako?
 
-Odgovor je - ništa- Moramo da odradimo još nešto u našem *prikazu*.
+Odgovor je - ništa. Moramo da odradimo još nešto u našem *prikazu*.
 
 ## Čuvanje forme
 
@@ -222,7 +222,7 @@ if form.is_valid():
 
 Praktično, ovde imamo dve stvari: čuvamo formu pomoću funkcije `form.save` i dodajemo autora (s obzirom na to da ne postoji polje `autor` unutar `PostForm`, a ovo polje je neophodno). `commit=False` znači da nećemo još uvek da sačuvamo `Post` model - prvo želimo da dodamo autora. U najvećem broju slučajeva ćete koristiti funkciju `form.save()` bez `commit=False`, ali u ovom slučaju moramo to da dodamo. Funkcija `post.save()` će da sačuva izmene (autora) i novi blog post je kreiran!
 
-Na kraju, bilo bi odlično ako bismi mogli da odmah odemo do `post_detail` stranice za naš novi blog, zar ne? Da bismo to uradili, potrebno je da još nešto uvezemo:
+Na kraju, bilo bi odlično ako bismo mogli da odmah odemo do `post_detail` stranice za naš novi blog, zar ne? Da bismo to uradili, potrebno je da još nešto uvezemo:
 
 {% filename %}blog/views.py{% endfilename %}
 
