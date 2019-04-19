@@ -222,7 +222,7 @@ if form.is_valid():
 
 Praktično, ovde imamo dve stvari: čuvamo formu pomoću funkcije `form.save` i dodajemo autora (s obzirom na to da ne postoji polje `autor` unutar `PostForm`, a ovo polje je neophodno). `commit=False` znači da nećemo još uvek da sačuvamo `Post` model - prvo želimo da dodamo autora. U najvećem broju slučajeva ćete koristiti funkciju `form.save()` bez `commit=False`, ali u ovom slučaju moramo to da dodamo. Funkcija `post.save()` će da sačuva izmene (autora) i novi blog post je kreiran!
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+Na kraju, bilo bi odlično ako bismi mogli da odmah odemo do `post_detail` stranice za naš novi blog, zar ne? Da bismo to uradili, potrebno je da još nešto uvezemo:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -230,7 +230,7 @@ Finally, it would be awesome if we could immediately go to the `post_detail` pag
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Dodajte to na samom početku Vašeg fajla. Onda tek možemo da kažemo "idite na stranicu `post_detail` za novi post":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,7 +238,7 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+Naziv prikaza na koji želimo da odemo je `post_detail`. Da li se sećate da je za ovaj *prikaz* neophodna `pk` promenljiva? Da bismo je prosledili, koristimo `pk=post.pk`, gde je `post` naš post koji smo skoro kreirali.
 
 OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
