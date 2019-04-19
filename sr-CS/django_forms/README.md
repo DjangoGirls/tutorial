@@ -32,13 +32,13 @@ class PostForm(forms.ModelForm):
 
 Prvo moramo da uvezemo listu sa Django formama (ukucaćemo `from django import forms`) i naš `Post` model (naredbom `from .models import Post`).
 
-`PostForm` je, kao što možete i da pretpostavite, naziv naše forme. Moramo da kažemo Django-u da je ta forma `forma modela` (tako da Django može da odradi magičan deo posla za nas) - za to je odgovorna `forms.ModelForm` komanda.
+`PostForm` je, kao što možete i da pretpostavite, naziv naše forme. Moramo da kažemo Django-u da je ta forma u stvari `forma modela` (tako da Django može da odradi magičan deo posla za nas) - za to je odgovorna `forms.ModelForm` komanda.
 
 Zatim, imamo `class Meta` naredbu, gde kažemo Django-u koji model bi trebalo da se koristi da se napravi ova forma (`model = Post`).
 
 Konačno, možemo da kažemo koja polja bi trebalo da budu u našoj formi. U ovom slučaju želimo da jedino `naslov` i `tekst` budu vidljivi - `autor` bi trebalo da bude osoba koja je trenutno ulogovana (Vi), a `datum` bi trebalo da bude automatski podešen kada kreiramo post (npr. u kodu).
 
-To je sve! Sve što treba sada da uradimo je da iskoristimo formu u *pregledu* i da je prikažemo u obrascu.
+To je sve! Ono što treba sada da uradimo je da iskoristimo formu u *pregledu* i da je prikažemo u obrascu.
 
 Dakle, još jednom ćemo kreirati link do stranice, URL, pregled i obrazac.
 
@@ -52,7 +52,7 @@ Vreme je da otvorite `blog/templates/blog/base.html` u editoru. Dodaćemo link u
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Primetimo da želimo da zovemo naš novi pregled `post_new`. Klasa `"glyphicon glyphicon-plus"` je obezbeđena od strane bootstrap teme koju koristimo i prikazaće znak plus.
+Primetite da želimo da naš novi pregled imenujemo kao `post_new`. Klasa `"glyphicon glyphicon-plus"` je obezbeđena od strane bootstrap teme koju koristimo i prikazaće znak plus.
 
 Nakon dodavanja odgovarajuće linije, vaš HTML bi trebalo da izgleda ovako:
 
@@ -85,11 +85,11 @@ Nakon dodavanja odgovarajuće linije, vaš HTML bi trebalo da izgleda ovako:
 </html>
 ```
 
-Nakon memorisanja i osveževanja stranice http://127.0.0.1:8000, videćete poznatu `NoReverseMatch` grešku. Da li je tako? Odlično!
+Nakon memorisanja i osvežavanja stranice http://127.0.0.1:8000, videćete poznatu `NoReverseMatch` grešku. Da li je tako? Odlično!
 
 ## URL
 
-Otvorimo `blog/urls.py` u editoru kako bismo dodali liniju:
+Otvorite `blog/urls.py` u editoru kako biste dodali liniju:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -116,7 +116,7 @@ Nakon osveževanja sajta, vidimo grešku `AttributeError`, jer nemamo još uvek 
 
 ## post_new prikaz
 
-Vreme je da otvorite `blog/views.py` fajl u editoru i da dodate sledeće linije sa ostatkom `from` redova:
+Vreme je da otvorite `blog/views.py` fajl u editoru i da dodate sledeće linije, zajedno sa ostalim `from` redovima:
 
 {% filename %}blog/views.py{% endfilename %}
 
