@@ -147,7 +147,7 @@ Moramo da kreiramo fajl `post_edit.html` u `blog/templates/blog` direktorijumu i
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Okej, hajde sada da vidimo kako bi trebalo da izgleda HTML u `post_edit.html`:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -163,15 +163,15 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+Vreme je da osvežite stranicu! Opa! Forma se prikazala!
 
 ![New form](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Ali, samo trenutak - šta će se desiti kada pokušate da ukucate nešto u polja za `naslov` i `tekst` i probate to da sačuvate?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Ništa! Ponovo se nalazimo na istoj stranici i tekst je nestao, a novi post uopšte nije dodat. Dakle, šta je krenulo naopako?
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+Odgovor je - ništa- Moramo da odradimo još nešto u našem *prikazu*.
 
 ## Saving the form
 
