@@ -1,4 +1,4 @@
-如果您不是使用 Chromebook 的話，您可以 [跳過這個章節](http://tutorial.djangogirls.org/en/installation/#install-python)。 如果是的話，您的安裝過程將會有些許的不同。 您可以忽略其餘的安裝導覽說明。
+如果您不是使用 Chromebook 的話，您可以 [跳過這個章節](http://tutorial.djangogirls.org/en/installation/#install-python)。 如果是的話，您的安裝過程將會有些許的不同。 您可以忽略其餘的安裝說明。
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
