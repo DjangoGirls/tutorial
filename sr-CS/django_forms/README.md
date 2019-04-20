@@ -112,7 +112,7 @@ urlpatterns = [
 ]
 ```
 
-Nakon osveževanja sajta, vidimo grešku `AttributeError`, jer nemamo još uvek implementiran prikaz `post_new`. Hajde da ga dodamo.
+Nakon osvežavanja sajta, vidimo grešku `AttributeError`, jer nemamo još uvek implementiran prikaz `post_new`. Hajde da ga dodamo.
 
 ## post_new prikaz
 
