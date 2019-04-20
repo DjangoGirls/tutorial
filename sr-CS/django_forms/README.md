@@ -240,7 +240,7 @@ return redirect('post_detail', pk=post.pk)
 
 Naziv prikaza na koji želimo da odemo je `post_detail`. Da li se sećate da je za ovaj *prikaz* neophodna `pk` promenljiva? Da bismo je prosledili, koristimo `pk=post.pk`, gde je `post` naš post koji smo skoro kreirali.
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+Okej, dosta smo pričali, vreme je da vidimo kako ceo *prikaz* zaista izgleda, zar ne?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,7 +259,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Hajde da vidimo da li radi. Idite na stranicu http://127.0.0.1:8000/post/new/, dodajte `naslov` i `tekst`, sačuvajte ga i... voilà! Novi blog post je dodat, a mi smo preusmereni na stranicu `post_detail`!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
