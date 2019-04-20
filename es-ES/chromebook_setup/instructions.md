@@ -2,7 +2,7 @@ Puedes [saltarte esta sección](http://tutorial.djangogirls.org/en/installation/
 
 ### IDE en la nube (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Un IDE en la nube es una herramienta que te proporciona un editor de código y acceso a un ordenador conectado a internet en el que puedes instalar, escribir y ejecutar software. Durante este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás ejecutando comandos en una terminal igual que tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal en realidad estará conectada a un ordenador corriendo en otro sitio que el IDE en la nube gestionará para ti. Aquí están las instrucciones para IDEs en la nube (PaizaCloud Cloud IDE, AWS Cloud9). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
+Nube de IDE es una herramienta que te ofrece un editor de código y el acceso por medio de internet a una computadora donde puedes instalar, escribir y ejecutar el software. Durante este tutorial, el IDE en la nube te servirá como tu *máquina local*. Seguirás ejecutando comandos en una terminal igual que tus compañeros de clase en OS X, Ubuntu, o Windows, pero tu terminal en realidad estará conectada a una computadora trabajando en algún otro lugar, que el IDE en la nube configura para ti. Aquí están las instrucciones para IDEs en la nube (PaizaCloud Cloud IDE, AWS Cloud9). Puedes elegir uno de los IDEs en la nube, y seguir sus instrucciones.
 
 #### PaizaCloud Cloud IDE
 
