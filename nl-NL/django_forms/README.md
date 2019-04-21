@@ -1,6 +1,6 @@
-# Django Forms
+# Django formulieren
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Het laatste wat we nog willen doen op onze website is een mooie manier maken om blogposts toe te voegen en te bewerken. Django's `admin` is cool, maar het is nogal moeilijk om aan te passen en mooi te maken. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
 The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
 
