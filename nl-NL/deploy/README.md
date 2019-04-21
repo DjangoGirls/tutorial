@@ -138,7 +138,7 @@ Je code staat nu op GitHub. Kijk maar! Je zult zien dat het in goed gezelschap v
 
 Ga terug naar het hoofd [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) door op het logo te klikken, en kies de optie om een "Bash" console op te starten - dat is de PythonAnywhere versie van de terminal, net zoals die op je eigen computer.
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![De 'Nieuwe console' sectie op de PythonAnywhere web interface, met een knop voor 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Opmerking** PythonAnywhere is gebaseerd op Linux, dus als je op Windows werkt zal de terminal er een beetje anders uitzien dan die op je eigen computer.
 
@@ -213,8 +213,8 @@ En vergeet niet, je coach is hier om je te helpen!
 
 # Bekijk je site!
 
-De standaardpagina voor uw site zou "It worked" moeten zeggen, net zoals het op uw lokale computer doet. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+De standaardpagina voor uw site zou "It worked" moeten zeggen, net zoals het op uw lokale computer doet. Probeer `/admin/` toe te voegen aan het einde van de URL, en je zal worden meegenomen naar de admin site. Log in met de gebruikersnaam en wachtwoord, en u ziet dat u nieuwe posts kunt toevoegen op de server -- Vergeet niet dat de berichten van uw lokale testdatabase niet naar uw live blog zijn verzonden.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Zodra u een paar posts hebt aangemaakt, kunt u terugkeren naar uw lokale setup (niet PythonAnywhere). Vanaf hier moet u werken aan uw lokale setup om veranderingen te maken. Dit is een veel gebruikte workflow in de webontwikkeling – maak lokaal veranderingen, push deze wijzigingen naar GitHub en trek de wijzigingen naar uw live Web server. Dit stelt je in staat om te werken en te experimenteren zonder je live Web site te breken. Gaaf, toch?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
+Geef jezelf een *FLINK* schouderklopje! Serverimplementaties zijn een van de moeilijkste onderdelen van de webontwikkeling en het kost vaak enkele dagen voordat ze werken. Maar je site is live, op het echte internet!
