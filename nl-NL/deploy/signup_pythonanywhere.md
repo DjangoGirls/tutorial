@@ -4,16 +4,16 @@ We zullen de blog die we bouwen op PythonAnywhere hosten. Meld je aan voor een "
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![De PythonAnywhere aanmeldingspagina met de knop om een gratis 'Beginner' account te maken](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Opmerking** Bij het kiezen van uw gebruikersnaam, vergeet niet dat de URL van uw blog de vorm `jouwgebruikersnaam.pythonanywhere.com` zal aannemen, dus kies ofwel uw eigen (bij)naam of een naam met waar uw blog over gaat. Sla uw wachtwoord goed op (voeg deze eventueel toe aan uw wachtwoordbeheerder, als u er een gebruikt).
 
-## Creating a PythonAnywhere API token
+## Een PythonAnywhere API-token maken
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+Dit is iets wat je maar één keer hoeft te doen. Wanneer je je hebt aangemeld voor PythonAnywhere, zal je worden meegenomen naar je dashboard. Vind de link in de buurt van de rechterbovenkant van je "Account" pagina:
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+![Account link rechts boven op de pagina](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+selecteer dan het tabblad "API token" en druk op de knop die zegt "Nieuwe API token maken".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![De API token tab op de accountpagina](../deploy/images/pythonanywhere_create_api_token.png)
