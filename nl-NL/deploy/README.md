@@ -195,7 +195,7 @@ Je kunt ook naar de "Files" pagina gaan en door je bestanden navigeren met behul
 
 Je site zou nu live moeten zijn op het openbare internet! Klik door naar de PythonAnywhere "Web" pagina om de link te verkrijgen. Je kunt die met iedereen delen die je wilt :)
 
-> **Opmerking**Dit is een tutorial voor beginners, en tijdens het deployen hebben we een aantal stappen genomen die vanuit een veiligheidsoogpunt niet ideaal zijn. Als en wanneer je besluit om dit project voort te zetten, of met een nieuw project begint, is het handig om de [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) te bekijken voor wat tips om je site beter te beveiligen.
+> **Opmerking** Dit is een tutorial voor beginners, en tijdens het deployen hebben we een aantal stappen genomen die vanuit een veiligheidsoogpunt niet ideaal zijn. Als en wanneer je besluit om dit project voort te zetten, of met een nieuw project begint, is het handig om de [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) te bekijken voor wat tips om je site beter te beveiligen.
 
 ## Debugging tips
 
@@ -211,9 +211,9 @@ Er zijn ook wat meer [algemene debugging tips op de PythonAnywhere help site](ht
 
 En vergeet niet, je coach is hier om je te helpen!
 
-# Check out your site!
+# Bekijk je site!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+De standaardpagina voor uw site zou "It worked" moeten zeggen, net zoals het op uw lokale computer doet. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 
 Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
