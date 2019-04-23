@@ -145,7 +145,7 @@ Moramo da kreiramo fajl `post_edit.html` u `blog/templates/blog` direktorijumu i
 * Potrebno nam je `Sačuvaj` dugme. To radimo pomoću HTML dugmeta: `<button type="submit">Sačuvaj</button>`.
 * I na kraju, odmah nakon otvaranja `<form ...>` taga, moramo da dodamo {% raw %}`{% csrf_token %}`{% endraw %}. Ovo je veoma važno jer čini Vašu formu bezbednom! Ako to zaboravite, Django će da se žali kada pokušate da sačuvate formu:
 
-![CSFR Forbidden page](images/csrf2.png)
+![CSFR Zabranjena stranica](images/csrf2.png)
 
 Okej, hajde sada da vidimo kako bi trebalo da izgleda HTML u `post_edit.html`:
 
@@ -165,7 +165,7 @@ Okej, hajde sada da vidimo kako bi trebalo da izgleda HTML u `post_edit.html`:
 
 Vreme je da osvežite stranicu! Opa! Forma se prikazala!
 
-![New form](images/new_form2.png)
+![Nova forma](images/new_form2.png)
 
 Ali, samo trenutak - šta će se desiti kada pokušate da ukucate nešto u polja za `naslov` i `tekst` i probate to da sačuvate?
 
@@ -267,7 +267,7 @@ To je kul!
 
 > Pošto smo skoro koristili Django admin interfejs, sistem trenutno misli da smo još uvek ulogovani. Postoji nekoliko situacija koje bi mogle da prouzrokuju da budemo izlogovani - zatvaranje pretraživača, restartovanje DB-a itd. Ukoliko u toku kreiranja posta dobijate poruke o grešci, koje ukazuju na nepostojanje ulogovanih korisnika, idite na admin stranicu http://127.0.0.1:8000/admin i ponovo se ulogujte. Ovo će privremeno da reši problem. Postoji stalno rešenje problema koje možete pronaći u poglavlju **Domaći zadatak: obezbeđivanje sigurnosti veb sajta!**, na kraju glavnog dela priručnika.
 
-![Logged in error](images/post_create_error.png)
+![Greška o logovanju](images/post_create_error.png)
 
 ## Validacija forme
 
@@ -275,7 +275,7 @@ Sada ćemo Vam pokazati koliko su kul Django forme. Blog post mora da sadrži po
 
 Pokušajte da sačuvate forum bez `naslova` i `teksta`. Pogodite šta će se desiti!
 
-![Form validation](images/form_validation2.png)
+![Validacija forme](images/form_validation2.png)
 
 Django se pobrinuo da potvrdi da su sva polja u našoj formi ispravna. Zar to nije neverovatno?
 
@@ -416,13 +416,13 @@ Promenite je u ovo:
 {% endif %}
 ```
 
-Budući da ste verovatno ulogovani, ukoliko osvežite stranicu nećete videti nikakvu razliku. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Budući da ste verovatno ulogovani, ukoliko osvežite stranicu nećete videti nikakvu razliku. Učitajte stranicu u drugom pretraživaču ili u inkognito prozoru (koji se naziva još "InPrivate" u Windows Edge-u) i videćete da se link ne prikazuje, kao i to da se ni ikonice takođe ne vide!
 
-## One more thing: deploy time!
+## Još jedna stvar: vreme razvijanja!
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+Hajde da vidimo da li ovo radi na PythonAnywhere. Vreme je za još jedno razvijanje!
 
-* First, commit your new code, and push it up to GitHub:
+* Prvo otkucajte Vaš kod i postavite ga na GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -433,7 +433,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     $ git push
     
 
-* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+* Tada u [PythonAnywhere Bash konzoli](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -442,8 +442,8 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Zapamtite da zamenite `<your-pythonanywhere-domain>` svojim stvarnim PythonAnywhere domenom, bez uglastih zagrada)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* Konačno, idite na [veb stranicu](https://www.pythonanywhere.com/web_app_setup/) (koristite dugme za meni u gornjem desnom uglu konzole) i kliknite na **osveži**. Osvežite Vaš https://subdomain.pythonanywhere.com blog da vidite izmene.
 
-And that should be it! Congrats :)
+I to je sve! Čestitamo :)
