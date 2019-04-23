@@ -271,19 +271,19 @@ To je kul!
 
 ## Validacija forme
 
-Sada ćemo Vam pokazati koliko su kul Django forme. Blog post mora da sadrži polja za `naslov` i `tekst`. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Sada ćemo Vam pokazati koliko su kul Django forme. Blog post mora da sadrži polja za `naslov` i `tekst`. U našem `Post` modelu nismo napomenuli da ova polja nisu obavezna (za razliku od `published_date`), tako da Django podrazumeva da ona budu podešena.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Pokušajte da sačuvate forum bez `naslova` i `teksta`. Pogodite šta će se desiti!
 
 ![Form validation](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django se pobrinuo da potvrdi da su sva polja u našoj formi ispravna. Zar to nije neverovatno?
 
-## Edit form
+## Uređivanje forme
 
-Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Sada znamo kako da dodamo novu formu. Ali, šta ako želimo da izmenimo postojeću? To je nešto što je veoma slično onome što smo upravo uradili. Hajde da kreiramo brzo neke bitne stvari. (Ukoliko Vam nešto nije jasno, trebalo bi da pitate Vašeg instruktora ili da pogledate prethodna poglavlja, budući da smo već pokrili sve ove korake)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Otvorite `blog/templates/blog/post_detail.html` u editoru i dodajte liniju
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+Tako da će šablon sada da izgleda ovako:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
