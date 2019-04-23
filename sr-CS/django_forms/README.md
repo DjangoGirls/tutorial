@@ -384,7 +384,7 @@ Otvorite `blog/templates/blog/base.html` u editoru, pronađite `page-header` `di
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+Dodaćemo još jedan `{% if %}` tag, što će učiniti da link bude vidljiv samo za korisnike koji su ulogovani kao administratori. Trenutno ste to samo Vi. Promenite `<a>` tag da izgleda ovako:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,11 +394,11 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+Ovaj `{% if %}` tag će podesiti da link može da bude poslat pretraživaču jedino ako je korisnik, koji šalje zahtev za stranicom, ulogovan. Ovo i dalje ne štiti u potpunosti kreiranje novih postova, ali je dobar prvi korak. Pokrićemo više stvari o sigurnosti u dodatnim lekcijama.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Sećate li se ikonice za uređivanje koju smo dodali na stranicu sa detaljima? Takođe želimo da tu dodamo istu izmenu, tako da ljudi ne mogu da uređuju postojeće postove.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Otvorite `blog/templates/blog/post_detail.html` u editoru i pronađite ovu liniju:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Promenite je u ovo:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,7 +416,7 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Budući da ste verovatno ulogovani, ukoliko osvežite stranicu nećete videti nikakvu razliku. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## One more thing: deploy time!
 
