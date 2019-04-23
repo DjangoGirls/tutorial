@@ -312,7 +312,7 @@ Tako da će šablon sada da izgleda ovako:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Otvorite `blog/urls.py` u editoru, i dodajte ovu liniju:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +320,9 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+Ponovo ćemo iskoristiti šablon `blog/templates/blog/post_edit.html`, tako da je poslednja stvar koja nam nedostaje *pregled*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Hajde da otvorimo `blog/views.py` u editoru i da dodamo ovo na samom kraju fajla:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Ovo izgleda skoro identično kao naš `post_new` pregled, zar ne? Ne baš u potpunosti. Za početak, prosleđujemo dodatni `pk` parametar od URL-ova. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
