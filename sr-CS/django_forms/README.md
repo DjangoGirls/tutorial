@@ -261,9 +261,9 @@ def post_new(request):
 
 Hajde da vidimo da li radi. Idite na stranicu http://127.0.0.1:8000/post/new/, dodajte `naslov` i `tekst`, sačuvajte ga i... voilà! Novi blog post je dodat, a mi smo preusmereni na stranicu `post_detail`!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+Možda ste primetili da postavljamo datum objavljivanja pre nego što smo sačuvali post. Kasnije ćemo predstaviti *dugme za objavljivanje* u **Django Girls Priručniku: Ekstenzije**.
 
-That is awesome!
+To je kul!
 
 > As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
