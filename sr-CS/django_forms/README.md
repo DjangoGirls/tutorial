@@ -360,11 +360,11 @@ form = PostForm(instance=post)
 
 Okej, hajde da proverimo da li radi! Idite na `post_detail` stranicu. Tamo bi trebalo da postoji dugme za uređivanje, u gornjem desnom uglu:
 
-![Edit button](images/edit_button2.png)
+![Dugme za uređivanje](images/edit_button2.png)
 
 Kada kliknete, videćete formu sa našim blog postom:
 
-![Edit form](images/edit_form2.png)
+![Forma za uređivanje](images/edit_form2.png)
 
 Slobodno izmenite naziv ili tekst i sačuvajte izmene!
 
