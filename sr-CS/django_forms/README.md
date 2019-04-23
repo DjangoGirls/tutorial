@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Ovo izgleda skoro identično kao naš `post_new` pregled, zar ne? Ne baš u potpunosti. Za početak, prosleđujemo dodatni `pk` parametar od URL-ova. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Ovo izgleda skoro identično kao naš `post_new` pregled, zar ne? Ne baš u potpunosti. Za početak, prosleđujemo dodatni `pk` parametar od URL-ova. Sledeće, imamo `Post` model koji želimo da izmenimo sa `get_object_or_404(Post, pk=pk)`, a zatim kada kreiramo formu, prosleđujemo post kao `instancu`, kada sačuvamo formu.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ Ovo izgleda skoro identično kao naš `post_new` pregled, zar ne? Ne baš u potp
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+Zatim, kada otvorimo formu sa ovim postom za izmenu:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,25 +358,25 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Okej, hajde da proverimo da li radi! Idite na `post_detail` stranicu. Tamo bi trebalo da postoji dugme za uređivanje, u gornjem desnom uglu:
 
 ![Edit button](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+Kada kliknete, videćete formu sa našim blog postom:
 
 ![Edit form](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Slobodno izmenite naziv ili tekst i sačuvajte izmene!
 
-Congratulations! Your application is getting more and more complete!
+Čestitamo! Vaša aplikacija postaje sve kompletnija!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Ako Vam je potrebno više informacija o Django formama, trebalo bi da pročitate dokumentaciju: https://docs.djangoproject.com/en/2.0/topics/forms/
 
-## Security
+## Sigurnost
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Močućnost da kreirate nove postove klikom na link je odlična! Ali za sada, svako ko poseti Vaš sajt može da napravi novi post, a to verovatno nije ono što ste želeli. Hajde da to sredimo tako da dugme bude vidljivo samo za Vas i ni za koga drugog.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Otvorite `blog/templates/blog/base.html` u editoru, pronađite `page-header` `div` i odgovarajući tag koji ste ranije tu stavili. Trebalo bi da to izgleda ovako:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
