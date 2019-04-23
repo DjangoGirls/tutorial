@@ -265,13 +265,13 @@ Možda ste primetili da postavljamo datum objavljivanja pre nego što smo sačuv
 
 To je kul!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Pošto smo skoro koristili Django admin interfejs, sistem trenutno misli da smo još uvek ulogovani. Postoji nekoliko situacija koje bi mogle da prouzrokuju da budemo izlogovani - zatvaranje pretraživača, restartovanje DB-a itd. Ukoliko u toku kreiranja posta dobijate poruke o grešci, koje ukazuju na nepostojanje ulogovanih korisnika, idite na admin stranicu http://127.0.0.1:8000/admin i ponovo se ulogujte. Ovo će privremeno da reši problem. Postoji stalno rešenje problema koje možete pronaći u poglavlju **Domaći zadatak: obezbeđivanje sigurnosti veb sajta!**, na kraju glavnog dela priručnika.
 
 ![Logged in error](images/post_create_error.png)
 
-## Form validation
+## Validacija forme
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Sada ćemo Vam pokazati koliko su kul Django forme. Blog post mora da sadrži polja za `naslov` i `tekst`. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
