@@ -2,7 +2,7 @@
 
 ### IDE ابری (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE یک ابزار است که به شما یک ویرایشگر کد و دسترسی به کامپیوتر در حال اجرا است در اینترنت که در آن شما می توانید نصب، نوشتن و اجرای نرم افزار را انجام دهید. در زمان این آموزش، cloud IDE به عنوان * دستگاه محلی شما * عمل خواهد کرد. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+IDE ابری ابزاری است که به شما دسترسی به یک ویرایشگر کد و یک کامپیوتر فعال می‌دهد که می‌توانید نصب، نوشتن و اجرای برنامه‌ها را در آن انجام دهید. در زمان این آموزش، IDE ابری به عنوان * دستگاه محلی شما * عمل خواهد کرد. شما همچنان مانند سایر همکلاسی‌ها که از OS X، اوبونتو یا ویندوز استفاده می‌کنند، دستورات را در ترمینال اجرا خواهید کرد اما ترمینال شما به کامپیوتری که IDE ابری برای شما آماده کرده متصل است. در اینحا دستورالعمل استفاده از IDE های ابری را خواهید دید (PaizaCloud Cloud IDE, AWS Cloud9). شما می‌توانید یکی از IDE های ابری را انتخاب کنید و دستورالعمل را دنبال کنید.
 
 #### PaizaCloud Cloud IDE
 
