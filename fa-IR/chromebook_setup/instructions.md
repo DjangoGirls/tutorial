@@ -18,22 +18,22 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+ترمینال در IDE ابری PiazaCloud برای دستورات شما آماده شده است. شما می‌توانید اندازه این پنجره را تغییر دهید تا کمی بزرگتر دیده شود.
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. به [AWS Cloud9](https://aws.amazon.com/cloud9/) بروید
+2. یک حساب کاربری بسازید
+3. *Create Environment* را کلیک کنید
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+حالا شما باید یک صفحه با یک ستون کناری، یک پنجره اصلی بزرگ به همراه مقداری نوشته و یک پنجره کوچک در پایین، شبیه به این ببینید:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+این پنجره پایینی ترمینال شما است. شما می‌توانید برای فرستادن دستورات به کامپیوتر Cloud9 از این پنجره استفاده کنید. با تغییر اندازه این پنجره می‌توانید آن را کمی بزرگتر ببینید.
 
 ### محیط مجازی
 
