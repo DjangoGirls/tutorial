@@ -88,7 +88,7 @@ Ve son olarak değişikliklerimizi kaydediyoruz. Komut satırına gidin ve aşa�
 
 ## Kodunu GitHub'a yollama (Push)
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+[GitHub.com](https://www.github.com)'a gidin ve ücretsiz yeni bir kullanıcı hesabı oluşturun. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
 
 Sıra depomuzu oluşturmaya geldi. 'New Repository' tuşuna tıklayıp "my-first-blog" adında bir Github deposu oluşturalım. "initialize with a README" ve ".gitignore" kutularının seçili olmadığından emin olalım (zaten .gitignore dosyamızı kendimiz oluşturmuştuk). Son olarak License seçeneğinde 'None' ı seçelim.
 
@@ -168,9 +168,9 @@ Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 - Sabit dosyaların (bunları daha sonra öğreneceğiz) oluşturuluyor
 - Ve web uygulamanızın API sinin PythonAnywhere tarafından sunulması için ayarlar yapılıyor
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+Bu adımlar PythonAnywhere'de otomatikleştirilmiştir, ancak farklı sunucu sağlayıcıları ile yapılacak olan adımlarla aynıdır.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. Bu nedenle, aynen kendi bilgisayarımızda yapmış olduğumuz gibi, `createsuperuser` ile bir admin kullacısını oluşturmamız gerekiyor. PythonAnywhere otomatik olarak virtualenv i başlatmış olduğu için, bu kullanıcıyı hemen oluşturabiliriz:
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
