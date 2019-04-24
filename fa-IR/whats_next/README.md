@@ -2,13 +2,13 @@
 
 از پسش بر اومدی! **ایول داری**. ما بهت افتخار می کنیم! <3
 
-### حالا چیکار کنم؟
+### حالا چه باید کرد؟
 
-Take a break and relax! You have just done something really huge.
+یک نفس راحت بکش. همین حالا هم یک کار واقعاٌ بزرگ انجام دادی.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+بعد از این مطمئن شو که جنگو گرلز را در [فیسبوک](http://facebook.com/djangogirls) یا [توییتر](https://twitter.com/djangogirls) دنبال میکنی تا در جریان تازه‌ترین‌ها باشی.
 
-### شما می تونید یک منبع دیگه معرفی کنید؟
+### آیا می‌توانید منابع دیگری معرفی کنید؟
 
 Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
