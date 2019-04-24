@@ -155,10 +155,10 @@ Tamam, hadi `post_edit.html` deki HTML'e bakalım:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h2>New post</h2>
+    <h2>Yeni post</h2>
     <form method="POST" class="post-form">{% csrf_token %}
         {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
+        <button type="submit" class="save btn btn-default">Kaydet</button>
     </form>
 {% endblock %}
 ```
@@ -435,14 +435,14 @@ Bakalım PythonAnywhere'de de çalışacak mı? Tekrar yayına alalım!
 
 * Sonra bir [PythonAnywhere Bash konsol](https://www.pythonanywhere.com/consoles/) una gidip:
 
-{% filename %}PythonAnywhere command-line{% endfilename %}
+{% filename %}PythonAnywhere komut-satırı{% endfilename %}
 
     $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Açı parantezleri olmadan `<your-pythonanywhere-domain>`'i gerçek PythonAnywhere alt alan adınzla değiştirmeyi unutmayın.)
 
 * Son olarak, ["Web" page](https://www.pythonanywhere.com/web_app_setup/) bölümüne geçin (konsolun sağ üst tarafındaki menü düğmesini kullanın) ve **Yeniden yükle** tuşuna basın. Değişiklikleri görmek için https://subdomain.pythonanywhere.com blogunuzu yenileyin.
 
