@@ -70,6 +70,6 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
 
 تمرین جنگو گرلز شامل بخشی است که به آن انتشار یا Deployment، می‌گوییم که در این فرایند کد مربوط به وب اپلیکیشن را به یک کامپیوتر در دسترس و عمومی (به نام سرور) منتقل می‌کنیم تا سایرین بتوانند کار شما را ببینند.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+اگر تمرین را بر روی یک Chromebook انجام می‌دهید ممکن است این بخش کمی عجیب باشد هرچند که ما از یک کامپیوتر بر روی اینترنت استفاده می‌کنیم (در مقایسه با مثلا یک لپ تاپ). با اینکه ما از Cloud 9 به عنوان یک محیط کاری برای کارهای در جریان و از Python Anywhere به عنوان یک فضای معرفی و نمایش کارهای درحال کامل شدن استفاده می‌کنیم با اینهمه همچنان یک ابزار مفید است.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+یک حساب کاربری در [www.pythonanywhere.com](https://www.pythonanywhere.com) ایجاد کنید.
