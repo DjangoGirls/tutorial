@@ -35,11 +35,11 @@ Giriş yapabilmek için, sitedeki her şey üzerinde kontrolü olan *superuser* 
 
 Giriş satırı geldiğinde, kullanıcı adınızı (küçük harfler ile ve boşluksuz), email adresinizi ve parolanızı girin. **Yazdığınız şifreyi göremezseniz endişelenmeyin - olması gereken budur.** Devam etmek için şifreyi yazıp `enter` 'a basın. Çıktı şunun gibi olmalıdır ( belirtilen kullanıcı adı ve eposta size ait olmalı):
 
-    Username: ola
-    Email address: ola@example.com
-    Password:
-    Password (again):
-    Superuser created successfully.
+    Kullanıcı Adı: admin
+    Eposta adresi: admin@admin.com
+    Parola:
+    Parola (tekrar)
+    Süper kullanıcı başarıyla oluşturuldu.
     
 
 Tarayıcınıza dönün. Oluşturduğunuz superuser'ın bilgileri ile giriş yaptığınızda Django'nun admin panelini göreceksiniz.
