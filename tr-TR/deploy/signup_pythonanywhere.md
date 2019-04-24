@@ -4,9 +4,9 @@ We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beg
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![Ücretsiz 'Beginner' hesabı oluşturmak için PythonAnywhere kayıt sayfası düğmesi](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Ayrıca, parolanızı hatırladığınızdan emin olun (sadece bir kişi kullanıyorsa, şifre yöneticinize ekleyin).
+> **Not** Burada kullanıcı adınızı seçerken, blogunuzun URL'sinin `yourusername.pythonanywhere.com`, şeklini alacağını unutmayın, bu nedenle ya blogunuzun neyle ilgili ise ona uygun isim veya kendi isminizi kullanabilirsiniz. Ayrıca, parolanızı hatırladığınızdan emin olun (sadece bir kişi kullanıyorsa, şifre yöneticinize ekleyin).
 
 ## PythonAnywhere API token oluşturma
 
@@ -16,4 +16,4 @@ Bu yalnızca bir kere yapmanız gereken bir şey. PythonAnywhere için kaydoldu�
 
 then select the tab named "API token", and hit the button that says "Create new API token".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![Hesaplar sayfasındaki API token sekmesi](../deploy/images/pythonanywhere_create_api_token.png)
