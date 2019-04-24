@@ -150,7 +150,7 @@ Blogumuzun veritabanını oluşturmak için konsolda şu komutu çalıştırın:
       Applying auth.0007_alter_validators_add_error_messages... OK
       Applying auth.0008_alter_user_username_max_length... OK
       Applying auth.0009_alter_user_last_name_max_length... OK
-      Applying sessions.0001_initial... OK
+      Applying sessions.0001_initial... Tamam
     
 
 Hepsi bu kadar! Web sunucusunu (web server) çalıştırma ve websitemizin çalıştığını görme zamanı!
