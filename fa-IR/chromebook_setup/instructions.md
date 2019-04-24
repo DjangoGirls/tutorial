@@ -37,19 +37,19 @@ IDE ابری ابزاری است که به شما دسترسی به یک ویر�
 
 ### محیط مجازی
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+یک محیط مجازی (Virtual Environment یا virtualenv) شبیه یک جعبه شخصی است که ما می‌توانیم کدهای کامپیوتری مربوط به یک پروژه را در آن جمع کنیم. ما از آن‌ها استفاده می‌کنیم تا تکه‌های مختلف کدهای هر پروژه را جدا از پروژه دیگر نگه داریم تا بین پروژه‌ها تداخل پیش نیاید.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+در ترمینال پایین صفحه Cloud9 دستور زیر را اجرا کنید:
 
-% filename %}Cloud 9{% endfilename %}}
+{% filename %}Cloud 9{% endfilename %}
 
-    sudo apt update
+    sudo apt update 
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+اگر این دستور کار نکرد از مربی خود کمک بگیرید.
 
-اجرای بعدی:
+بعد، دستور زیر را اجراکنید:
 
 {% filename %}Cloud 9{% endfilename %}
 
