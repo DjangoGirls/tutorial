@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Not**: Eğer Chromebook kullanıyorsanız bu satırı settings.py dosyanızın en altına ekleyiniz: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Ayrıca eğer amazon kullanıyorsanız `ALLOWED_HOSTS`'a `.amazonaws.com` 'i ekleyin
 
 ## Bir veritabanı kur
 
