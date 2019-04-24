@@ -58,11 +58,11 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## İlk komutunuz (Yaşasın!)
 
-Let's start by typing this command:
+Aşağıdaki komutu yazarak başlayalım:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}komut satırı{% endfilename %}
 
     $ whoami
     
