@@ -10,13 +10,13 @@ CSS یا (Cascading Style Sheets) زبان مورد استفاده برای تو
 
 ## با بوت‌ استرپ شروع کنیم!
 
-بوت استرپ یکی از محبوب ترین چارچوب های HTML و CSS برای توسعه وب سایت های زیبا است: https://getbootstrap.com/
+بوت استرپ یکی از محبوب‌ترین چارچوب‌های HTML و CSS برای توسعه وب سایت‌های زیبا است: https://getbootstrap.com/
 
-توسط برنامه نویسانی که در توییتر کار می کردند نوشته شده بود. در حال حاضر توسط داوطلبان از سراسر جهان توسعه یافته است!
+توسط برنامه نویسانی که در توییتر کار می کردند نوشته شده بود. در حال حاضر توسط داوطلبانی از سراسر جهان توسعه یافته است!
 
 ## نصب بوت استرپ
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+برای نصب بوت استرپ فایل `.html` را در ویرایشگر متن باز کنید و به بخش `<head>` خط‌های زیر را اضافه کنید:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+هیچ فایلی به پروژه شما اضافه نشده است. این کد به فایلی که در اینترنت وجود دارد اشاره می‌کند. بنابراین به پیش بروید وبسایت خود را باز کنید و صفحه را ریفرش کنید. بفرمایید!
 
 ![عدد 14.1](images/bootstrap1.png)
 
