@@ -4,8 +4,8 @@
 
 به نوشتن اولین خط کدتان نزدیک می‌شوید، زمان مناسبی برای دانلود یک ویرایشگر کد است!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **نکته** اگر از Chromebook استفاده میکنید، این فصل را رد کنید و مطمئن شوید که دستورالعمل [نصب Chromebook](../chromebook_setup/README.md) را دنبال کنید. IDE ابری که شما انتخاب کرده‌اید (PaizaCloud Cloud IDE یا AWS Cloud9) شامل یک ویرایشگر کد هم هست و هنگامی که یک فایل را در IDE خودتان باز می‌کنید به صورت اتوماتیک از ویرایشگر استفاده می‌کنید.
 > 
-> ** نکته </ 0> شما ممکن است این را قبلا در فصل نصب نصب کرده اید - اگر چنین باشد، می توانید به فصل بعدی بروید!</p> </blockquote> 
-> 
-> % include "/code_editor/instructions.md" %}}
+> ** نکته ** شما ممکن است قبلاً در فصل نصب، ویرایشگر کد را نصب کرده‌باشید - اگر چنین است، می‌توانید به فصل بعدی بروید!
+
+{% include "/code_editor/instructions.md" %}
