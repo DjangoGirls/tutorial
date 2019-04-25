@@ -1,8 +1,8 @@
 # ویرایشگر کد
 
-> برای خوانندگان در خانه: این فصل در ویدئو [نصب پایتون و کد ویرایشگر](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) توضیح داده شده است.
+> برای خوانندگان در خانه: این فصل در ویدئو [نصب پایتون و ویرایشگر کد](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) توضیح داده شده است.
 
-دارید به نوشتن اولین خط کدتان نزدیک می‌شوید، زمان مناسبی برای دانلود یک ویرایشگر متن است!
+به نوشتن اولین خط کدتان نزدیک می‌شوید، زمان مناسبی برای دانلود یک ویرایشگر کد است!
 
 > **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
 > 
