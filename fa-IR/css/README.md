@@ -158,17 +158,18 @@ body { padding-left: 15px; }
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-همانطور که قبلا، سفارش و محل قبل از پیوند را بررسی کنید ` blog / static / css / blog.css </ 0>این خط یک فونت را به نام وارد می کند <em> خرچنگ </ 1> از فونت های گوگل https://www.google.com/fonts)).</p>
+همانند قبل ترتیب قرار دادن لینک‌ها را چک کنید و این خط را قبل پیوند به `blog/static/css/blog.css` قرار دهید. این خط، فونتی به نام *Lobster* را از مجموعه فونت‌های گوگل فراخوانی می‌کند (https://www.google.com/fonts).
 
-<p>پیدا کنید <code> h1 a </ 0>اعلام بلوک (این کد بین تجدیدکارو <code> {</ 0> و <code>} </ 0>)در این فایل CSS <code> blog / static / css / blog.css </ 0>.  حالا خط <code> خانواده فونت را اضافه کنید: 'لفظی'؛ </ 0> بین تجدید کار و تازه کردن صفحه:</p>
+در فایل CSS به آدرس `blog/static/css/blog.css`، بخش تعریف عنصر ` h1 a ` را پیدا کنید (قطعه کدی که بین `{` و `}` قرار دارد). حالا خط `font-family: 'Lobster';` را بین آکولادها اضافه کنید و صفحه وب را دوباره بارگیری کنید:
 
-<p>{% filename %}blog/static/css/blog.css{% endfilename %}</p>
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
-<pre><code class="css">h1 a, h2 a {
+```css
+h1 a, h2 a {
     color: #C25100;
     font-family: 'Lobster';
 }
-`</pre> 
+```
 
 ![عدد 14.3](images/font.png)
 
