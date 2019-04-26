@@ -273,7 +273,7 @@ To je kul!
 
 Sada ćemo Vam pokazati koliko su kul Django forme. Blog post mora da sadrži polja za `naslov` i `tekst`. U našem `Post` modelu nismo napomenuli da ova polja nisu obavezna (za razliku od `published_date`), tako da Django podrazumeva da ona budu podešena.
 
-Pokušajte da sačuvate forum bez `naslova` i `teksta`. Pogodite šta će se desiti!
+Pokušajte da sačuvate formu bez `naslova` i `teksta`. Pogodite šta će se desiti!
 
 ![Validacija forme](images/form_validation2.png)
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Ovo izgleda skoro identično kao naš `post_new` pregled, zar ne? Ne baš u potpunosti. Za početak, prosleđujemo dodatni `pk` parametar od URL-ova. Sledeće, imamo `Post` model koji želimo da izmenimo sa `get_object_or_404(Post, pk=pk)`, a zatim kada kreiramo formu, prosleđujemo post kao `instancu`, kada sačuvamo formu.
+Ovo izgleda skoro identično kao naš `post_new` pregled, zar ne? Ne baš u potpunosti. Za početak, prosleđujemo dodatni `pk` parametar od URL-ova. Sledeće, imamo `Post` model koji želimo da izmenimo pomoću `get_object_or_404(Post, pk=pk)`, a zatim kada kreiramo formu, prosleđujemo post kao `instancu`, kada sačuvamo formu.
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -364,7 +364,7 @@ Okej, hajde da proverimo da li radi! Idite na `post_detail` stranicu. Tamo bi tr
 
 Kada kliknete, videćete formu sa našim blog postom:
 
-![Forma za uređivanje](images/edit_form2.png)
+![Uređivanje forme](images/edit_form2.png)
 
 Slobodno izmenite naziv ili tekst i sačuvajte izmene!
 
