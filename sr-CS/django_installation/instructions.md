@@ -2,11 +2,11 @@
 > 
 > Takođe, jedan deo je zasnovan na [django-marcador priručniku](http://django-marcador.keimlink.de/) pod Creative Commons Attribution-ShareAlike 4.0 International licencom. Sva prava za django-marcador priručnik zadržava Markus Zapke-Gründemann.
 
-## Virutelno okruženje
+## Virtuelno okruženje
 
-Pre nego šro instaliramo Django, potrebno je instalirati prilično koristan alat koji je odgovoran za preglednost okruženja u kom se kodira. Ovaj korak se može preskočiti, ali to nije preporučljivo. Počinjanje sa najboljim mogućim podešavanjima će Vas poštedeti dosta muka u budućnosti!
+Pre nego što instaliramo Django, potrebno je instalirati prilično koristan alat koji je odgovoran za preglednost okruženja u kom se kodira. Ovaj korak se može preskočiti, ali to nije preporučljivo. Počinjanje sa najboljim mogućim podešavanjima će Vas poštedeti dosta muka u budućnosti!
 
-Hajde da napravimo **virtuelno okruženje** (koje se takođe naziva još i *virtualenv*). Virtualenv će izolovati podešavanja za Python/Django za svaki projekat posebno. To znači da bilo koja izmena koju naparavite na jednom sajtu neće imati uticaja na ostale sajtove koje trenutno pravite. Lepo, zar ne?
+Hajde da napravimo **virtuelno okruženje** (koje se takođe naziva još i *virtualenv*). Virtualenv će izolovati podešavanja za Python/Django za svaki projekat posebno. To znači da bilo koja izmena koju napravite na jednom sajtu neće imati uticaja na ostale sajtove koje trenutno pravite. Lepo, zar ne?
 
 All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
