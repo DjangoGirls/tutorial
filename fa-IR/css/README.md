@@ -66,19 +66,18 @@ CSS یا (Cascading Style Sheets) زبان مورد استفاده برای تو
 
 ما در اینجا، سفارشی سازی و یادگیری CSS را خیلی عمیق بررسی نخواهیم کرد. اگر بخواهید بیشتر در باره CSS بدانید، یک توصیه برای یک دوره رایگان، در پایین این صفحه وجود دارد.
 
-اما بیایید حداقل کمی به آن بپردازیم. شاید بتوانیم رنگ هدر هایمان را تغییر دهیم؟ برای درک رنگ‌ها، رایانه‌ها از کدهای ویژه استفاده می‌کنند. این کدها با `#` شروع می‌شوند و به ترتیب شامل 6 حرف (A-F) و اعداد (0-9) هستند. به عنوان مثال، کد آبی ` # 0000FFو </ 0> است. شما می توانید کد رنگ برای بسیاری از رنگ ها را پیدا کنید http://www.colorpicker.com:/. شما همچنین ممکن است از <a href="http://www.w3schools.com/colors/colors_names.asp"> رنگ های از پیش تعریف شده </a> از جمله <code> قرمز </ 1> و <code> سبز ` استفاده کنید.
+اما بیایید حداقل کمی به آن بپردازیم. شاید بتوانیم رنگ هدر هایمان را تغییر دهیم؟ برای درک رنگ‌ها، رایانه‌ها از کدهای ویژه استفاده می‌کنند. این کدها با `#` شروع می‌شوند و به ترتیب شامل 6 حرف (A-F) و اعداد (0-9) هستند. به عنان مثال، کد رنگ آبی `#0000FF` است. شما میتوانید در این آدرس کد رنگ بسیاری از رنگ‌ها را پیدا کنید http://www.colorpicker.com:/. شما همچنین ممکن است از [رنگ‌های از پیش تعریف شده](http://www.w3schools.com/colors/colors_names.asp) از جمله `قرمز` و `سبز` استفاده کنید.
 
-در ` blog/static/css/blog.cssو </ 0> شما باید کد زیر را اضافه کنید:</p>
+در فایل ` blog/static/css/blog.css ` کد زیر را اضافه کنید:
 
-<p>% filename %}blog/static/css/blog.css{% endfilename %}}</p>
+% filename %}blog/static/css/blog.css{% endfilename %}}
 
-<pre><code class="css">h1 a, h2 a {
-    color: #C25100;
-}
+```css
+h1 a, h2 a {color: #C25100; }
 
-`</pre> 
+```
 
-`h1 a` انتخابگر CSS است. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. بنابراین وقتی ما چیزی شبیه `<h1><a href=""> لینک </a></h1>` داریم، سبک `اچ 1 آ`اعمال خواهد شد. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` انتخابگر یا selector در یک فایل CSS است. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. بنابراین وقتی ما چیزی شبیه `<h1><a href=""> لینک </a></h1>` داریم، سبک `اچ 1 آ`اعمال خواهد شد. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
 
 در یک فایل CSS، سبک ها را برای عناصر در فایل HTML تعیین می کنیم. اولین روش شناسایی عناصر با نام عنصر است. شما ممکن است به عنوان برچسب از بخش HTML بخاطر داشته باشید. چیزهایی مانند ` a </ 0>، <code> h1 </ 0>، و <code> چهارچوب </ 0> همه نمونه هایی از نام عناصر هستند.
 ما همچنین عناصر را با ویژگی <code> کلاس </ 0> یا صفت <code> آیدی </ 0> شناسایی می کنیم. کلاس و شناسه نام شما را به عنصر خودتان می دهد. کلاس ها گروه های عناصر را تعریف می کنند و شناسه ها به عناصر خاص اشاره می کنند. برای مثال، می توانید برچسب زیر را با استفاده از نام تگ <code> آ </ 0>، کلاس <code> لینک خارجی </ 0> یا آیدی <code>پیوند به صفحه ویکی </ 0> شناسایی کنید:</p>
