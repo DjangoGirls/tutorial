@@ -4,9 +4,9 @@
 
 ## Virutelno okruženje
 
-Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
+Pre nego šro instaliramo Django, potrebno je instalirati prilično koristan alat koji je odgovoran za preglednost okruženja u kom se kodira. Ovaj korak se može preskočiti, ali to nije preporučljivo. Počinjanje sa najboljim mogućim podešavanjima će Vas poštedeti dosta muka u budućnosti!
 
-So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+Hajde da napravimo **virtuelno okruženje** (koje se takođe naziva još i *virtualenv*). Virtualenv će izolovati podešavanja za Python/Django za svaki projekat posebno. To znači da bilo koja izmena koju naparavite na jednom sajtu neće imati uticaja na ostale sajtove koje trenutno pravite. Lepo, zar ne?
 
 All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
