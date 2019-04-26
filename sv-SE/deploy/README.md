@@ -51,7 +51,7 @@ Och spara den som `.gitignore` i topp-nivån av mappen "djangogirls".
 > 
 > **Note** One of the files you specified in your `.gitignore` file is `db.sqlite3`. That file is your local database, where all of your users and posts are stored. We'll follow standard web programming practice, meaning that we'll use separate databases for your local testing site and your live website on PythonAnywhere. The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
 
-Det är en bra idé att använda kommandot `git status` före `git add` eller om du är osäker på vad som har förändrats. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+Det är en bra idé att använda kommandot `git status` före `git add` eller om du är osäker på vad som har förändrats. Detta kommer hjälpa till att förhindra att överraskningar inträffar, till exempel att fel filer läggs till eller commitas. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. Resultatet bör likna följande:
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,11 +85,11 @@ Och slutligen sparar vi våra ändringar. Gå till din konsol och kör dessa kom
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## Skjuta din kod till GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+Gå till [GitHub.com](https://www.github.com) och anmäl dig för en ny, gratis användarkonto. (Om du gjorde det redan i workshop prep, det är bra!) Se till att komma ihåg ditt lösenord (lägga till i din lösenordshanterare, om du använder en).
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Skapa sedan en ny databas, ge det namnet ”my-first-blog”. Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 ![](images/new_github_repo.png)
 
