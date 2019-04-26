@@ -374,7 +374,7 @@ Ako Vam je potrebno više informacija o Django formama, trebalo bi da pročitate
 
 ## Sigurnost
 
-Močućnost da kreirate nove postove klikom na link je odlična! Ali za sada, svako ko poseti Vaš sajt može da napravi novi post, a to verovatno nije ono što ste želeli. Hajde da to sredimo tako da dugme bude vidljivo samo za Vas i ni za koga drugog.
+Mogućnost da kreirate nove postove klikom na link je odlična! Ali za sada, svako ko poseti Vaš sajt može da napravi novi post, a to verovatno nije ono što ste želeli. Hajde da to sredimo tako da dugme bude vidljivo samo za Vas i ni za koga drugog.
 
 Otvorite `blog/templates/blog/base.html` u editoru, pronađite `page-header` `div` i odgovarajući tag koji ste ranije tu stavili. Trebalo bi da to izgleda ovako:
 
@@ -433,7 +433,7 @@ Hajde da vidimo da li ovo radi na PythonAnywhere. Vreme je za još jedno razvija
     $ git push
     
 
-* Tada u [PythonAnywhere Bash konzoli](https://www.pythonanywhere.com/consoles/):
+* Zatim, u [PythonAnywhere Bash konzoli](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
