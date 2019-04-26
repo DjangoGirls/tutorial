@@ -143,21 +143,20 @@ h1 a, h2 a {color: #C25100; }
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-چهارچوب{
-    چسباندن به سمت چپ 15px;
-}
+body { padding-left: 15px; }
 ```
 
-اضافه کردن آن به CSS خود، ذخیره فایل و ببینید که چگونه کار می کند!
+این کد را به فایل CSS خود اضافه کنید، و ببینید چگونه کار می‌کند!
 
 ![عدد 14.3](images/margin2.png)
 
-شاید ما بتوانیم فونت را در هدر ما سفارشی کنیم؟ این را وارد کنید `<head>` در ` وبلاگ / قالب / وبلاگ / لیست پست</ 1> فایل:</p>
+شاید ما بتوانیم فونت را در هدر صفحه مان سفارشی کنیم؟ این قطعه کد را در بخش `<head>` فایل `blog/templates/blog/post_list.html` وارد کنید:
 
-<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<pre><code class="html"><link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
-`</pre> 
+```html
+<link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+```
 
 همانطور که قبلا، سفارش و محل قبل از پیوند را بررسی کنید ` blog / static / css / blog.css </ 0>این خط یک فونت را به نام وارد می کند <em> خرچنگ </ 1> از فونت های گوگل https://www.google.com/fonts)).</p>
 
