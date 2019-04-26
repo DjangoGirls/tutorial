@@ -165,10 +165,7 @@ body { padding-left: 15px; }
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a, h2 a {
-    color: #C25100;
-    font-family: 'Lobster';
-}
+h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 ```
 
 ![عدد 14.3](images/font.png)
