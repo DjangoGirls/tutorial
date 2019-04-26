@@ -87,7 +87,7 @@ h1 a, h2 a {color: #C25100; }
 
 شما می‌توانید در این موارد بیشتر بخوانید [CSS Selectors at w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+ما همچنین باید به قالب HTML خودمان بگوییم که یک فایل CSS اضافه کرده‌ایم. فایل `blog/templates/blog/post_list.html` را در ویرایشگر کد باز کنید و خط زیر را به ابتدای آن اضافه کنید:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -95,14 +95,15 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load static %}
 ```
 
-ما فقط فایلهای استاتیک را در اینجا بارگیری میکنیم :) بین برچسب `<head>` و ` </ 2> </ 1>، پس از پیوند به فایل های CSS بوت استرپ، این خط را اضافه کنید:</p>
+ما فقط فایل‌های ثابت یا static را در اینجا بارگیری می‌کنیم. :) بین برچسب `<head>` و `</head>`، پس از پیوند به فایل‌های بوت استرپ، این خط را اضافه کنید:
 
-<p>{% filename %}blog/templates/blog/post_list.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<pre><code class="html"><link rel="stylesheet" href="{% static 'css/blog.css' %}">
-`</pre> 
+```html
+<link rel="stylesheet" href="{% static 'css/blog.css' %}">
+```
 
-مرورگر فایل ها را به ترتیب داده می کند، بنابراین ما باید مطمئن شویم که این در جای مناسب است. در غیر این صورت کد در فایل شما ممکن است توسط کد در فایل های بوت استرپ لغو شود. ما فقط به قالب ما که در آن فایل CSS شما واقع شده است صحبت کردیم.
+مرورگر فایل‌ها را به ترتیب می‌خواند، بنابراین ما باید مطمئن شویم که این خط در جای مناسب قرار گرفته است. در غیر این صورت کد در فایل شما ممکن است توسط کد در فایل‌های بوت استرپ لغو شود. ما فقط به قالب HTML مان می‌گوییم که فایل CSS کجا قرار دارد.
 
 اکنون فایل شما باید مانند این باشد:
 
