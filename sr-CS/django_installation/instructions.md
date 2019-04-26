@@ -1,8 +1,8 @@
-> Part of this section is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Deo ove sekcije je zasnovan na Geek Girls Carrots priručnicima (https://github.com/ggcarrots/django-carrots/).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Takođe, jedan deo je zasnovan na [django-marcador priručniku](http://django-marcador.keimlink.de/) pod Creative Commons Attribution-ShareAlike 4.0 International licencom. Sva prava za django-marcador priručnik zadržava Markus Zapke-Gründemann.
 
-## Virtual environment
+## Virutelno okruženje
 
 Before we install Django we will get you to install an extremely useful tool to help keep your coding environment tidy on your computer. It's possible to skip this step, but it's highly recommended. Starting with the best possible setup will save you a lot of trouble in the future!
 
