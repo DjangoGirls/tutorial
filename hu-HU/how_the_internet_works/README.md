@@ -10,7 +10,7 @@ The first thing you need to understand is that a website consists of a bunch of 
 
 Ha nem igazán ismered a programozást, akkor nehéz lehet megértened először a HTML-t, de ne aggódj a böngésződ (Chrome, Safari, Firefox, stb.) imádja. A webböngészőket úgy tervezték, hogy megértsék ezt a kódot, kövessék azt, ami abban van, és megjelenítsenek mindent pont úgy, ahogy szeretnéd.
 
-Mint minden fájlt, a HTML-t is merevlemezen kell tárolni. Az Internethez speciális, erős számítógépeket használunk, a *szervereket*. Ezekhez a gépekhez nem tartozik képernyő, egér vagy billentyűzet, mert a fő feladatuk az adatok tárolása és szolgáltatása. That's why they're called *servers* – because they *serve* you data.
+Mint minden fájlt, a HTML-t is merevlemezen kell tárolni. Az Internethez speciális, erős számítógépeket használunk, a *szervereket*. Ezekhez a gépekhez nem tartozik képernyő, egér vagy billentyűzet, mert a fő feladatuk az adatok tárolása és szolgáltatása. Ezért hívják őket *szervereknek* -- ők *szervíroznak* neked adatot.
 
 OK, but you want to know how the Internet looks, right?
 
