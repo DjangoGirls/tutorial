@@ -144,17 +144,17 @@ Ne zaboravite da zamenite `myvenv` imenom koje ste odabrali za Vaš `virtualenv`
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Znaćete da je `virtualenv` pokrenut kada vidite da `(myvenv)` prethodi mestu za unos na konzoli.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Kada radite sa virtuelnim okruženjem, `python` automatski referiše na ispravnu verziju, tako da možete da koristite `python` umesto `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+Okej, ispunili smo sve neophodne uslove. Sada konačno možemo da instaliramo Django!
 
-## Installing Django
+## Instaliranje Django-a
 
-Now that you have your `virtualenv` started, you can install Django.
+Sada, kada je Vaš `virtualenv` pokrenut, možete da instalirate Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Pre nego što to uradite, trebalo bi da budete sigurni da imate najnoviju verziju `pip-a`, softvera koji koristimo da instaliramo Django:
 
 {% filename %}command-line{% endfilename %}
 
