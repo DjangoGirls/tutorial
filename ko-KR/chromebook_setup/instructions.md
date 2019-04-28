@@ -33,7 +33,7 @@ PaizaCloud Cloud IDE 의 터미널은 당신의 명령어를 기다리고 있습
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+이 하단영역은 터미널입니다. 이 터미널을 이용해 원격 Cloud 9 컴퓨터에 커맨드를 보낼 수 있습니다. 창을 더 크게 조절할 수도 있습니다.
 
 ### 가상 환경
 
@@ -49,7 +49,7 @@ virtualenv라고도 불리는 가상환경은 우리가 진행하고 있는 프�
 
 만약 이래도 작동 되지 않는다면, 코치에게 도움을 요청하세요.
 
-Next, run:
+다음, 실행 명령어:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,7 +60,7 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(마지막 줄에서 물결표 다음 등호를 사용한 것을 주목하세요. `~=`)
 
 ### GitHub
 
