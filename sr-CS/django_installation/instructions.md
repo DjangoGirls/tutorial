@@ -98,21 +98,21 @@ Možemo da kreiramo `virtualenv` i na Linux-u i na OS X, pokretanjem `python3 -m
 
 <!--endsec-->
 
-## Working with virtualenv
+## Rad sa virtualenv-om
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+Prethodne komande će da kreiraju direktorijum po imenu `myvenv` (ili možete da izaberete neko drugo ime) koje sadrži naše virtuelno okruženje (u suštini pregršt direktorijuma i fajlova).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Pokrenite Vaše virtuelno okruženje komandom:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **NAPOMENA:** na Windows 10 OS-u možete da dobijete grešku u Windows PowerShell-u koja kaže `izvršavanje skripti je onemogućeno na ovom sistemu`. U tom slučaju, otvorite još jedan Windows PowerShell pomoću opcije "Pokreni kao administrator". Then try typing the following command before starting your virtual environment:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
