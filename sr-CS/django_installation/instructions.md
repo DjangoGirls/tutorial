@@ -12,7 +12,7 @@ Sve što treba da uradite je da pronađete direktorijum u kom želite da kreirat
 
 > **NAPOMENA:** Ukoliko koristite Windows, pobrinite se da ovaj direktorijum ne sadrži akcentovane ili neke specijalne karaktere. Ako Vaše korisničko ime sadrži akcentovane karaktere, upotrebite drugi direktorijum, npr. `C:\djangogirls`.
 
-For this tutorial we will be using a new directory `djangogirls` from your home directory:
+Za ovaj priručnik ćemo koristiti novi direktorijum `djangogirls`, iz Vašeg početnog direktorijuma:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@ For this tutorial we will be using a new directory `djangogirls` from your home 
     $ cd djangogirls
     
 
-We will make a virtualenv called `myvenv`. The general command will be in the format:
+Napravićemo virtualenv po imenu `myvenv`. Glavna komanda će biti u formatu:
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,14 +30,14 @@ We will make a virtualenv called `myvenv`. The general command will be in the fo
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+Kako biste kreirali novi `virtualenv`, potrebno je da otvorite komandnu liniju i da pokrenete `python -m venv myvenv`. To bi trebalo da izgleda ovako:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+Gde je `myvenv` ime Vašeg `virtualenv-a`. Možete da koristite bilo koje drugo ime, ali je potrebno da sadrži isključivo mala slova i da nema razmake, akcente ili neke specijalne karaktere. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
