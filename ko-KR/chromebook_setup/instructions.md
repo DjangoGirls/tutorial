@@ -1,4 +1,4 @@
-만약 크롬북을 사용하고 있지 않다면, [이 섹션은 바로 넘어가도 됩니다.](http://tutorial.djangogirls.org/en/installation/#install-python) 사용하고 있다면, 여러분의 설치 경험은 약간 다를 것입니다. 여러분은 설치 안내의 나머지 부분을 무시하셔도 됩니다.
+크롬북 유저가 아니라면 [이번 섹션은 넘어가도 상관없습니다.](http://tutorial.djangogirls.org/en/installation/#install-python) 유저시라면, 설치 방법이 평소와 다소 다를 것입니다. 여러분은 설치 안내의 나머지 부분을 무시하셔도 됩니다.
 
 ### 클라우드 IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
