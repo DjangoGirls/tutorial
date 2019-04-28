@@ -161,7 +161,7 @@ Pre nego što to uradite, trebalo bi da budete sigurni da imate najnoviju verzij
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Instaliranje paketa i neophodnih stavki
 
 A requirements file keeps a list of dependencies to be installed using `pip install`:
 
