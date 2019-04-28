@@ -12,7 +12,7 @@ Ha nem igazán ismered a programozást, akkor nehéz lehet megértened először
 
 Mint minden fájlt, a HTML-t is merevlemezen kell tárolni. Az Internethez speciális, erős számítógépeket használunk, a *szervereket*. Ezekhez a gépekhez nem tartozik képernyő, egér vagy billentyűzet, mert a fő feladatuk az adatok tárolása és szolgáltatása. Ezért hívják őket *szervereknek* -- ők *szervíroznak* neked adatot.
 
-OK, but you want to know how the Internet looks, right?
+Rendben, de te azt szeretnéd tudni, hogyan néz ki az internet, ugye?
 
 Rajzoltunk neked egy képet! Így néz ki:
 
