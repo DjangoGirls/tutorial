@@ -178,7 +178,7 @@ U Vašem `djangogirls/requirements.txt` fajlu bi trebalo da dodate sledeći teks
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Zatim pokrenite `pip install -r requirements.txt` da biste instalirali Django.
 
 {% filename %}command-line{% endfilename %}
 
@@ -192,7 +192,7 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Ako dobijete grešku tokom pozivanja pip-a na Windows-u, molimo proverite da li putanja Vašeg projekta sadrži u nazivu razmake, akcente ili neke specijalne karaktere (npr. `C:\Users\User Name\djangogirls`). Ako sadrži, molimo da iskoristite neko drugo odredište bez razmaka, akcenata ili specijalnih karaktera (predlog: `C:\djangogirls`). Kreirajte nov virtualenv u novom direktorijumu, a zatim izbrišite stari i pokušajte da ponovite prethodno navedenu komandu. (Menjanje virtualenv direktorijuma neće imati uticaja, jer virtualenv koristi apsolutne putanje.)
 
 <!--endsec-->
 
