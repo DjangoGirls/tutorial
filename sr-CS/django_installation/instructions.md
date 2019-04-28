@@ -163,15 +163,15 @@ Pre nego što to uradite, trebalo bi da budete sigurni da imate najnoviju verzij
 
 ### Instaliranje paketa i neophodnih stavki
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Fajl sa neophodnim stavkama sadrži listu stvari koje bi trebalo da budu instalirane, koristeći `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Prvo kreirajte fajl `requirements.txt` unutar foldera `djangogirls/`, koristeći editor koji je već instaliran. To možete da uradite tako što otvorite novi fajl u editoru i zatim ga sačuvate kao `requirements.txt` u `djangogirls/` folderu. Vaš direktorijum bi sada trebalo da izgleda ovako:
 
     djangogirls
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+U Vašem `djangogirls/requirements.txt` fajlu bi trebalo da dodate sledeći tekst:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
