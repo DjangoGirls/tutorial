@@ -37,23 +37,23 @@ Kako biste kreirali novi `virtualenv`, potrebno je da otvorite komandnu liniju i
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Gde je `myvenv` ime Vašeg `virtualenv-a`. Možete da koristite bilo koje drugo ime, ali je potrebno da sadrži isključivo mala slova i da nema razmake, akcente ili neke specijalne karaktere. It is also good idea to keep the name short – you'll be referencing it a lot!
+Gde je `myvenv` ime Vašeg `virtualenv-a`. Možete da koristite bilo koje drugo ime, ali je potrebno da sadrži isključivo mala slova i da nema razmake, akcente ili neke specijalne karaktere. Takođe je dobra ideja da ime bude kratko, jer ćete ga često pisati.
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Možemo da kreiramo `virtualenv` i na Linux-u i na OS X, pokretanjem `python3 -m venv myvenv`. To bi trebalo da izgleda ovako:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` je ime Vašeg `virtualenv-a`. Možete da koristite bilo koje drugo ime, ali je potrebno da sadrži isključivo mala slova i da nema razmake. Takođe je dobra ideja da ime bude kratko, jer ćete ga često pisati!
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **NAPOMENA:** Na nekim verzijama Debian/Ubuntu-a možete da dobijete sledeću grešku:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -62,19 +62,19 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> U tom slučaju, pratite instrukcije koje su prethodno navedene i instalirajte `python3-venv` paket: {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
 > 
-> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> **NAPOMENA:** Na nekim verzijama Debian/Ubuntu-a, pokretanje virtuelnog okruženja vraća sledeću grešku:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> To get around this, use the `virtualenv` command instead.
+> Kako biste to zaobišli, koristite komandu `virtualenv`.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -82,14 +82,14 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **NAPOMENA:** Ukoliko dobijete grešku
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> Tada pokrenite:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
