@@ -8,9 +8,9 @@ Pre nego što instaliramo Django, potrebno je instalirati prilično koristan ala
 
 Hajde da napravimo **virtuelno okruženje** (koje se takođe naziva još i *virtualenv*). Virtualenv će izolovati podešavanja za Python/Django za svaki projekat posebno. To znači da bilo koja izmena koju napravite na jednom sajtu neće imati uticaja na ostale sajtove koje trenutno pravite. Lepo, zar ne?
 
-Sve što treba da uradite je da pronađete direktorijum u kom želite da kreirate `virtualenv`; na primer, vaš početni direktorijum. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Sve što treba da uradite je da pronađete direktorijum u kom želite da kreirate `virtualenv`; na primer, vaš početni direktorijum. Na Windows-u, to bi trebalo da izgleda ovako `C:\Users\Name` (gde je `Name` ime vašeg naloga).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **NAPOMENA:** Ukoliko koristite Windows, pobrinite se da ovaj direktorijum ne sadrži akcentovane ili neke specijalne karaktere. Ako Vaše korisničko ime sadrži akcentovane karaktere, upotrebite drugi direktorijum, npr. `C:\djangogirls`.
 
 For this tutorial we will be using a new directory `djangogirls` from your home directory:
 
