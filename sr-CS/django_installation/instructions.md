@@ -112,7 +112,7 @@ Pokrenite Vaše virtuelno okruženje komandom:
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NAPOMENA:** na Windows 10 OS-u možete da dobijete grešku u Windows PowerShell-u koja kaže `izvršavanje skripti je onemogućeno na ovom sistemu`. U tom slučaju, otvorite još jedan Windows PowerShell pomoću opcije "Pokreni kao administrator". Then try typing the following command before starting your virtual environment:
+> **NAPOMENA:** na Windows 10 OS-u možete da dobijete grešku u Windows PowerShell-u koja kaže `izvršavanje skripti je onemogućeno na ovom sistemu`. U tom slučaju, otvorite još jedan Windows PowerShell pomoću opcije "Pokreni kao administrator". Zatim, pre pokretanja virtuelnog okruženja, ukucajte sledeću komandu:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -126,16 +126,16 @@ Pokrenite Vaše virtuelno okruženje komandom:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Pokrenite Vaše virtuelno okruženje komandom:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+Ne zaboravite da zamenite `myvenv` imenom koje ste odabrali za Vaš `virtualenv`.
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **NAPOMENA:** ponekad `source` nije dostupan. U tom slučaju, pokušajte sledeće:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
