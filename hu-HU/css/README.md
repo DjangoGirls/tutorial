@@ -6,7 +6,7 @@ Egyelőre nem túl szép a blogunk, igaz? Itt az ideje, hogy kicsinosítsd! Erre
 
 A CSS (Cascading Style Sheets) egy nyelv, amit a HTML-ben megírt weboldalak kinézetének leírására használunk. Vagyis mintha kisminkelnéd a weboldaladat. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+De ugye mi nem akarunk mindent elölről kezdeni? Megint csak egy olyat fogunk használni, amit a programozók kitettek az internetre, ingyenesen. A kerék újra feltalálás tudod nem olyan jó dolog.
 
 ## Használjunk Bootstrapet!
 
