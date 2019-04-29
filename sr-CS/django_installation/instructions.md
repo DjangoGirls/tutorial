@@ -100,7 +100,7 @@ Možemo da kreiramo `virtualenv` i na Linux-u i na OS X, pokretanjem `python3 -m
 
 ## Rad sa virtualenv-om
 
-Prethodne komande će da kreiraju direktorijum po imenu `myvenv` (ili možete da izaberete neko drugo ime) koje sadrži naše virtuelno okruženje (u suštini pregršt direktorijuma i fajlova).
+Prethodne komande će da kreiraju direktorijum po imenu `myvenv` (ili možete da izaberete neko drugo ime) koje sadrži naše virtuelno okruženje (u suštini, pregršt direktorijuma i fajlova).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
