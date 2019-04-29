@@ -172,29 +172,31 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 
 عالی!
 
-همانطور که در بالا ذکر شد CSS دارای مفهوم کلاس است. این به شما اجازه می دهد تا بخشی از کد HTML را نامگذاری کنید و تنها به این قسمت سبک بدهید، بدون اینکه به سایر قسمت ها آسیب برساند. این می تواند فوق العاده مفید باشد! شاید شما دو divs دارید که کاری متفاوت انجام می دهند (مانند هدر و پست شما). یک کلاس می تواند به شما کمک کند آنها را متفاوت نگاه کنید.
+همانطور که در بالا ذکر شد CSS دارای مفهوم کلاس است. کلاس‌ها به شما اجازه می‌دهند تا بخشی از کد HTML را نامگذاری کنید و تنها فرمت این قسمت از کد را تغییر بدهید، بدون اینکه به سایر قسمت‌ها آسیبی برسد. کلاس‌ها می‌توانند فوق‌العاده مفید باشند! شاید شما دو div دارید که کاری متفاوت انجام می دهند (مانند header و post). یک کلاس می‌تواند به شما کمک کند آن‌ها را متفاوت نگاه کنید.
 
-برو جلو و نام بخش هایی از کد HTML را بنویسید. ` عنوان صفحه </ 0> را به <code> div </ 0> اضافه کنید که شامل هدر شما است، مانند این:</p>
+پیش برویم و بخش هایی از کد HTML را نام گذاری کنیم. کلاسی به نام `page-header` را به `div` اضافه کنید که شامل هدر شما است، مانند این:
 
-<p>% filename %}blog/templates/blog/post_list.html{% endfilename %}}</p>
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
-<pre><code class="html"><div class="page-header">
-    <h1><a href="/">وبلاگ دختران جنگجو</a></h1>
+```html
+<div class="page-header">
+    <h1><a href="/">Django Girls Blog</a></h1>
 </div>
-`</pre> 
+```
 
-و اکنون کلاس ` پست </ 0> را به <code> div </ 0> اضافه کنید که حاوی یک پست وبلاگ است.</p>
+و اکنون کلاس `post` را به `div` اضافه کنید که حاوی یک پست وبلاگ است.
 
-<p>% filename %}blog/templates/blog/post_list.html{% endfilename %}}</p>
+% filename %}blog/templates/blog/post_list.html{% endfilename %}}
 
-<pre><code class="html"><div class="post">
+```html
+<div class="post">
     <p>published: {{ post.published_date }}</p>
     <h2><a href="">{{ post.title }}</a></h2>
     <p>{{ post.text|linebreaksbr }}</p>
 </div>
-`</pre> 
+```
 
-ما اکنون بلوک های اعلامیه را به انتخاب کننده های مختلف اضافه خواهیم کرد. انتخابگرها شروع با `. </ 0> مربوط به کلاس ها. بسیاری از آموزش های عالی و توضیحات درباره CSS در وب وجود دارد که می تواند به شما در درک کد زیر کمک کند. For now, copy and paste it into your <code>blog/static/css/blog.css` file:
+ما اکنون بلوک‌های معرفی کننده را به انتخاب کننده‌های selector مختلف اضافه خواهیم کرد. انتخابگرها با `.` مربوط به هر کلاس آغاز می‌شوند. بسیاری از آموزش های عالی و توضیحات درباره CSS در وب وجود دارد که می تواند به شما در درک کد زیر کمک کند. For now, copy and paste it into your `blog/static/css/blog.css` file:
 
 % filename %}blog/static/css/blog.css{% endfilename %}}
 
