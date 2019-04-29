@@ -28,13 +28,13 @@ Zatim, `Mačka` ima određene akcije: `predenje`, `grebanje` ili `hranjenje` (u 
     taste
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+U suštini, ideja je da opišemo realne stvari u kodu pomoću svojstava (koja se nazivaju `svojstva objekta`) i akcija (koje se nazivaju `metode`).
 
-How will we model blog posts then? We want to build a blog, right?
+Kako ćemo u tom slučaju da modelujemo postove na blogu? Želimo da napravimo blog, zar ne?
 
-We need to answer the question: What is a blog post? What properties should it have?
+Moramo da odgovorimo na pitanje: šta je to zapravo blog post? Koja svojsta bi trebalo da ima?
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+Pa, naš blog sigurno treba da ima tekst sa svojim sadržajem i naslovom, zar ne? Takođe, bilo bi dobro da znamo ko je napisao tekst - znači potreban nam je autor. Finally, we want to know when the post was created and published.
 
     Post
     --------
