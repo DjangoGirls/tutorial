@@ -1,12 +1,12 @@
 # Django modeli
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+Ono što želimo sada da napravimo je nešto što će da skladišti sve postove sa našeg bloga. Da bismo to uradili, potrebno je da se upoznamo sa stvarima koje se nazivaju `objekti`.
 
-## Objects
+## Objekti
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+U programiranju postoji jedan koncept koji se naziva `objektno-orijentisano programiranje`. Ideja je da možemo da modelujemo stvari i definišemo način na koji interaguju međusobno, umesto da pišemo sve kao deo jedne sekvence programskog koda.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+Dakle, šta je to objekat? To je skup svojstava i akcija. Možda to zvuči čudno, ali daćemo Vam primer.
 
 If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
 
