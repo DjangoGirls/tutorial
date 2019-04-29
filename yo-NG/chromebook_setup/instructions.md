@@ -1,4 +1,4 @@
-O lè [fo abala yìí kọjá](http://tutorial.djangogirls.org/en/installation/#install-python) tí ìwọ kò bá lo Chromebook kan. If you are, your installation experience will be a little different. You can ignore the rest of the installation instructions.
+O lè [fo abala yìí kọjá](http://tutorial.djangogirls.org/en/installation/#install-python) tí ìwọ kò bá lo Chromebook kan. Tí o bá n lo, ìrírí ìṣàgbékalẹ̀ rẹ yíò yàtọ̀ díẹ̀. O lè fojú fo àwọn àlàyé ìṣàgbékalẹ̀ yòókù náà.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
