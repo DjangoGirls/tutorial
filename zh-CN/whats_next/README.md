@@ -4,9 +4,9 @@
 
 ### 现在要做什么？
 
-Take a break and relax! You have just done something really huge.
+休息一下! 你刚刚做了一件大事。
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+在 [Facebook](http://facebook.com/djangogirls) 或 [Twitter](https://twitter.com/djangogirls) 上关注 Django Girls来获取最新消息。
 
 ### 你能推荐更进一步的资源吗？
 
