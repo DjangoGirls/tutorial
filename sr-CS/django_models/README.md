@@ -32,7 +32,7 @@ U suštini, ideja je da opišemo realne stvari u kodu pomoću svojstava (koja se
 
 Kako ćemo u tom slučaju da modelujemo postove na blogu? Želimo da napravimo blog, zar ne?
 
-Moramo da odgovorimo na pitanje: šta je to zapravo blog post? Koja svojsta bi trebalo da ima?
+Moramo da odgovorimo na pitanje: šta je to zapravo blog post? Koja svojstva bi trebalo da ima?
 
 Pa, naš blog sigurno treba da ima tekst sa svojim sadržajem i naslovom, zar ne? Takođe, bilo bi dobro da znamo ko je napisao tekst - znači potreban nam je autor. Finally, we want to know when the post was created and published.
 
