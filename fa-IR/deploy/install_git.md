@@ -1,11 +1,11 @@
-گیت یک "سیستم کنترل نسخه" است که توسط بسیاری از برنامه‌نویسان مورد استفاده قرار می‌گیرد. این نرم افزار می تواند تغییرات روی فایل ها را در طول زمان دنبال کند بنابراین میتوانید نسخه خاصی را بعدا بازیابی کنید. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+گیت یک "سیستم کنترل نسخه" است که توسط بسیاری از برنامه‌نویسان مورد استفاده قرار می‌گیرد. این نرم افزار می تواند تغییرات روی فایل ها را در طول زمان دنبال کند بنابراین میتوانید نسخه خاصی را بعدا بازیابی کنید. این قابلیت تقریباً شبیه ابزار "track changes" در برنامه‌های ویرایش متن (مانند Microsoft Word و LibreOffice Writer) است اما به مراتب از آن‌ها قویتر است.
 
 ## نصب گیت
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-برای نصب گیت می توانید آن را از [git-scm.com](https://git-scm.com/) دانلود کنید. You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). در بقیه موارد, پیش فرض ها مناسب هستند. استایل ویندوز را مورد بررسی قرار دهید ولی استایل یونیکس تا انتها مناسب می باشد و تغییر ندهید.
+برای نصب گیت می‌توانید آن را از [git-scm.com](https://git-scm.com/) دانلود کنید. همه جا میتوانید کلید next را بزنید به غیر از دو جا: جایی که در مورد ویرایشگر متن از شما می‌پرسد شما باید ویرایشگر Nano را انتخاب کنید و در مرحله‌ای که عنوان آن "Adjusting your PATH environment" است، گزینه "Use Git and optional Unix tools from the Windows Command Prompt" (گزینه آخر) را انتخاب کنید. در بقیه موارد، پیش فرض‌ها مناسب هستند. استایل ویندوز را مورد بررسی قرار دهید ولی استایل یونیکس تا انتها مناسب می باشد و تغییر ندهید.
 
 فراموش نکنید که بعد از اینکه نصب به پایان رسید دوباره command prompt یا powershell را راه اندازی کنید. <!--endsec-->
 
