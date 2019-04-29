@@ -12,16 +12,18 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
+گیت را از [git-scm.com](https://git-scm.com/) دانلود کنید و فقط دستورالعمل‌ها را دنبال کنید.
 
-> ** نکته </ 0> اگر شما OS X 10.6، 10.7 یا 10.8 را اجرا می کنید، باید نسخه GIT را از اینجا نصب کنید:  نصب Git برای OS X Snow Leopard </ 1></p> </blockquote> <!--endsec-->
-> 
-> <!--sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu"
+> ** نکته ** اگر شما از OS X 10.6، 10.7 یا 10.8 استفاده می‌کنید باید نسخه GIT را از اینجا نصب کنید: [ نصب Git برای OS X Snow Leopard ](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+
+<!--endsec-->
+
+<!--sec data-title="Installing Git: Debian or Ubuntu" data-id="git_install_debian_ubuntu"
 data-collapse=true ces-->
-> 
-> {% filename %}command-line{% endfilename %}
-> 
-> ```bash
+
+{% filename %}command-line{% endfilename %}
+
+```bash
 $ sudo apt install git
 ```
 
