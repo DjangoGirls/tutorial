@@ -196,60 +196,15 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 </div>
 ```
 
-ما اکنون بلوک‌های معرفی کننده را به انتخاب کننده‌های selector مختلف اضافه خواهیم کرد. انتخابگرها با `.` مربوط به هر کلاس آغاز می‌شوند. بسیاری از آموزش های عالی و توضیحات درباره CSS در وب وجود دارد که می تواند به شما در درک کد زیر کمک کند. For now, copy and paste it into your `blog/static/css/blog.css` file:
+ما اکنون بلوک‌های معرفی کننده را به انتخاب کننده‌های selector مختلف اضافه خواهیم کرد. انتخابگرها با `.` مربوط به هر کلاس آغاز می‌شوند. آموزش‌ها و توضیحات بسیار خوبی درباره CSS در اینترنت وجود دارد که می‌تواند به شما در درک کد زیر کمک کند. حالا این قطعه کد را در فایل `blog/static/css/blog.css` کپی کنید:
 
 % filename %}blog/static/css/blog.css{% endfilename %}}
 
 ```css
-.page-header {
-    background-color: #C25100;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
-
-.page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
-}
-
-.content {
-    margin-left: 40px;
-}
-
-h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
-}
-
-.date {
-    color: #828282;
-}
-
-.save {
-    float: right;
-}
-
-.post-form textarea, .post-form input {
-    width: 100%;
-}
-
-.top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
-
-.post {
-    margin-bottom: 70px;
-}
-
-.post h2 a, .post h2 a:visited {
-    color: #000000;
-}
+.page-header {     background-color: #C25100;     margin-top: 0;     padding: 20px 20px 20px 40px; } .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {     color: #ffffff;     font-size: 36pt;     text-decoration: none; } .content {     margin-left: 40px; } h1, h2, h3, h4 {     font-family: 'Lobster', cursive; } .date {     color: #828282; } .save {     float: right; } .post-form textarea, .post-form input {     width: 100%; } .top-menu, .top-menu:hover, .top-menu:visited {     color: #ffffff;     float: right;     font-size: 26pt;     margin-right: 20px; } .post {     margin-bottom: 70px; } .post h2 a, .post h2 a:visited {     color: #000000; }
 ```
 
-سپس کد HTML را که نمایش پست ها با اعلان کلاس ها را نشان می دهد احاطه کرده است. جایگزین این:
+سپس کد HTML زیر را که نمایش پست‌ها با اسامی کلاس‌ها را نشان می‌دهد:
 
 % filename %}blog/templates/blog/post_list.html{% endfilename %}}
 
@@ -263,11 +218,12 @@ h1, h2, h3, h4 {
 {% endfor %}
 ```
 
-در ` وبلاگ / قالب / وبلاگ / post_list.html </ 0> با این:</p>
+در فایل `blog/templates/blog/post_list.html` با قطعه کد زیر عوض کنید:
 
-<p>% filename %}blog/templates/blog/post_list.html{% endfilename %}}</p>
+% filename %}blog/templates/blog/post_list.html{% endfilename %}}
 
-<pre><code class="html"><div class="content container">
+```html
+<div class="content container">
     <div class="row">
         <div class="col-md-8">
             {% for post in posts %}
@@ -282,13 +238,13 @@ h1, h2, h3, h4 {
         </div>
     </div>
 </div>
-`</pre> 
+```
 
-این فایل ها را ذخیره و وبسایت خود را تازه سازی کنید.
+این فایل‎‌ها را ذخیره کنید و وبسایت خود را دوباره بارگیری کنید.
 
 ![عدد 14.4](images/final.png)
 
-ووهو! به نظر عالی، درست است؟ به کدی که ما فقط کشیده ایم، نگاه کنید تا مکان هایی را پیدا کنید که کلاس ها را در HTML اضافه کردیم و آنها را در CSS استفاده کردیم. اگر می خواهید تاریخ را فیروزه ای تغییر دهید کجا می توانید تغییر دهید؟
+یووهو! به نظر عالی می‌آید، درست است؟ به کدی که ما فقط کشیده ایم، نگاه کنید تا مکان هایی را پیدا کنید که کلاس ها را در HTML اضافه کردیم و آنها را در CSS استفاده کردیم. اگر می خواهید تاریخ را فیروزه ای تغییر دهید کجا می توانید تغییر دهید؟
 
 نگران نباشید کمی با این CSS کار کنید و سعی کنید برخی از چیزها را تغییر دهید. بازی با CSS می تواند به شما کمک کند که چیزهای مختلفی را بدانید. اگر چیزی را شکستن، نگران نباشید - همیشه می توانید آن را لغو کنید!
 
