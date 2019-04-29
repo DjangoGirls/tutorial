@@ -8,9 +8,9 @@ U programiranju postoji jedan koncept koji se naziva `objektno-orijentisano prog
 
 Dakle, šta je to objekat? To je skup svojstava i akcija. Možda to zvuči čudno, ali daćemo Vam primer.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Ako želimo da modelujemo mačku, kreiraćemo objekat `Mačka` koji ima svojstva kao što su `boja`, `godine`, `raspoloženje` (npr. dobro, loše ili pospano ;)) i `vlasnik` (što može biti pripisano objektu `Osoba`, ili možda u slučaju mačke lutalice, ovo može da ostane prazno polje).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+Zatim, `Mačka` ima određene akcije: `predenje`, `grebanje` ili `hranjenje` (u tom slučaju ćemo da damo mački `HranuZaMačke`, što može da bude poseban objekat sa svojstvima kao što je npr. `ukus`).
 
     Cat
     --------
