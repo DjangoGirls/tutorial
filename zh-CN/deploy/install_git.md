@@ -1,4 +1,4 @@
-Git是一个被大量程序员使用的"版本控制系统"。 此软件可以跟踪任何时间文件的改变，这样你以后可以随时召回某个特定版本。 A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git是一个被大量程序员使用的"版本控制系统"。 此软件可以跟踪任何时间文件的改变，这样你以后可以随时召回某个特定版本。 这有点像文本编辑器中的“文档历史”功能（比如 Microso Word 或 LibreOffice Writer），但更强大。
 
 ## 安装Git
 
