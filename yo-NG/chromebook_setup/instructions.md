@@ -64,7 +64,7 @@ Next, run:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Ṣẹ̀dá account [GitHub](https://github.com) kan.
 
 ### PythonAnywhere
 
