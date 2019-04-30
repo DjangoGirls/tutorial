@@ -1,13 +1,13 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+Ανάλογα με την έκδοση των Windows και το πληκτρολόγιό σας, μια από τις παρακάτω επιλογές ανοίγει ένα παράθυρο εντολών (ίσως χρειαστεί να πειραματιστείτε λίγο, αλλά δεν χρειάζεται να δοκιμάσετε όλες αυτές τις προτάσεις):
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Μεταβείτε στο μενού "Έναρξη" ή στην οθόνη και πληκτρολογήστε "Command Prompt" ("γραμμή εντολών") στο πεδίο αναζήτησης.
+- Πηγαίνετε στο Start menu → Windows System → Command Prompt.
+- Πηγαίνετε στο Start menu → All Programs → Accessories → Command Prompt.
+- Μεταβείτε στην οθόνη έναρξης (Start screen), τοποθετήστε το δείκτη του ποντικιού στην κάτω αριστερή γωνία της οθόνης και κάντε κλικ στο κάτω βέλος που εμφανίζεται (σε μια οθόνη αφής, μετακινείστε το δάχτυλο σας από το κάτω μέρος της οθόνης προς τα επάνω). Η σελίδα "εφαρμογές" (Apps) πρέπει να ανοίξει. Κάντε κλικ στη γραμμή εντολών στην ενότητα Σύστημα των Windows (Windows System).
+- Κρατήστε πατημένο το ειδικό πλήκτρο των Windows στο πληκτρολόγιό σας και πατήστε το πλήκτρο "X". Επιλέξτε "γραμμή εντολών" ("Command Prompt") από το αναδυόμενο μενού.
+- Κρατήστε πατημένο το πλήκτρο Windows και πατήστε το πλήκτρο "R" για να εμφανιστεί το παράθυρο "εκτέλεση" ("Run"). Type "cmd" in the box, and click the OK key.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
