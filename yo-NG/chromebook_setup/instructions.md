@@ -22,9 +22,9 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+1. Lọ sí [AWS Cloud9](https://aws.amazon.com/cloud9/)
+2. Forúkọ sílẹ̀ fún account kan
+3. Tẹ *Create Environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
