@@ -47,7 +47,7 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Tí èyí kò bá tún ṣiṣẹ́, béèrè lọ́wọ́ olùkọ́ rẹ fún ìrànlọ́wọ́ díẹ̀.
 
 Next, run:
 
