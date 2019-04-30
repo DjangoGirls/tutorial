@@ -7,8 +7,8 @@ Cloud IDE jẹ́ irinṣẹ́ kan èyí tí yíò fún ẹ ní olóòtú kóòd�
 #### PaizaCloud Cloud IDE
 
 1. Lọ sí [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
+2. Forúkọ sílẹ̀ fún account kan
+3. Tẹ *New Server*
 4. Click Terminal button(on the left side of the window)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
