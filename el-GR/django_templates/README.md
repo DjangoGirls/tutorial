@@ -97,12 +97,12 @@
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Θυμηθείτε να αντικαταστήσετε με το `<your-pythonanywhere-domain>`πραγματικό όνομα χρήστη σας του PythonAnywhere χωρίς τα <>)
 
-* Τέλος, πηγαίνετε στο ["Web" page](https://www.pythonanywhere.com/web_app_setup/) και κλικάρετε **Reload** στην εφαρμογή σας. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! Δεν πειράζει αν τα posts στο PythonAnywhere δεν είναι τα ίδια με τα posts που εμφανίζονται τοπικά στον υπολογιστή σας. Οι βάσεις δεδομένων στον τοπικό υπολογιστή σας και στο PythonAnywhere δεν είναι συγχρονισμένες μεταξύ τους.
+* Τέλος, πηγαίνετε στο ["Web" page](https://www.pythonanywhere.com/web_app_setup/) και κλικάρετε **Reload** στην εφαρμογή σας. (Για να δείτε άλλες σελίδες του PythonAnywhere από την κονσόλα χρησιμοποιήστε το κουμπί του μενού στην πάνω δεξιά γωνία). Η αλλαγή σας θα πρέπει να φαίνεται στο https://subdomain.pythonanywhere.com. Δείτε το στο browser! Δεν πειράζει αν τα posts στο PythonAnywhere δεν είναι τα ίδια με τα posts που εμφανίζονται τοπικά στον υπολογιστή σας. Οι βάσεις δεδομένων στον τοπικό υπολογιστή σας και στο PythonAnywhere δεν είναι συγχρονισμένες μεταξύ τους.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Συγχαρητήρια! Τώρα προχωρήστε και προσθέστε μερικά posts μέσω του Django admin (θυμηθείτε να προσθέσετε το published_date! -ημερομηνία δημοσίευσης). Σιγουρευτείτε ότι βρίσκεστε στο Django admin της ιστοσελίδας pythonanywhere, https://subdomain.pythonanywhere.com/admin. Έπειτα, ανανεώστε τη σελίδα και δείτε αν αυτά τα posts εμφανίστηκαν.
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-![Figure 13.4](images/donut.png)
+![Σχήμα 13.4](images/donut.png)
