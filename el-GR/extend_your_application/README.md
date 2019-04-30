@@ -162,7 +162,7 @@ def post_detail(request, pk):
 
 Για μια ακόμη φορά θα επεκτείνουμε το template `base.html`. Στο block`content` θέλουμε να εμφανίσουμε την ημ/νια έκδοσης του post (αν υπάρχει) τον τίτλο και το κυρίως κείμενο. Αλλά θα πρέπει να συζητήσουμε ορισμένα σημαντικά πράγματα, έτσι;
 
-{% raw %}`{% if ... %} ... {% endif %}` είναι ένα template tag που μας επιτρέπει να ελέγξουμε κάτι - με άλλα λόγια είναι μια συνθήκη. (Θυμάστε το `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` είναι ένα template tag που μας επιτρέπει να ελέγξουμε κάτι - με άλλα λόγια είναι μια συνθήκη. (Θυμάστε το `if ... else ..` από το κεφάλαιο **Εισαγωγή στην Python**?) Σε αυτό το σενάριο θέλουμε να δούμε αν το πεδίο `published_date` του post έχει κάποια τιμή.{% endraw %}
 
 Ωραία, μπορούμε να ανανεώσουμε τη σελίδα και να δούμε, για αρχή, αν το σφάλμα `TemplateDoesNotExist` έχει φύγει.
 
@@ -192,7 +192,7 @@ def post_detail(request, pk):
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Θυμηθείτε να αντικαταστήσετε με το `<your-pythonanywhere-domain>`πραγματικό όνομα χρήστη σας του PythonAnywhere χωρίς τα <>)
 
 ## Ενημέρωση των στατικών αρχείων στο διακομιστή
 
@@ -209,6 +209,6 @@ def post_detail(request, pk):
 
 Η εντολή `manage.py collectstatic` είναι λίγο σαν την `manage.py migrate`. Κάνουμε κάποιες αλλαγές στον κώδικα και στη συνέχεια λέμε στο Django να *εφαρμόσει* αυτές τις αλλαγές είτε στον αντίστοιχο φάκελο στατικών αρχείων του server είτε στη βάση δεδομένων.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
+Σε κάθε περίπτωση, είμαστε τώρα έτοιμοι να κλικάρουμε ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (από το κουμπί του μενού στην επάνω δεξιά μεριά της κονσόλας) και κλικάρουμε στο **Reload**. Δείτε τη σελίδα https://subdomain.pythonanywhere.com με το αποτέλεσμα.
 
 Αυτό ήταν! Συγχαρητήρια :)
