@@ -33,7 +33,7 @@
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Αυτή η κάτω περιοχή είναι το τερματικό σας. Μπορείτε να χρησιμοποιήσετε το τερματικό για να στείλετε οδηγίες στον απομακρυσμένο υπολογιστή Cloud 9. Μπορείτε να αλλάξετε το μέγεθος αυτού του παραθύρου για να το κάνετε μεγαλύτερο.
 
 ### Εικονικό Περιβάλλον
 
@@ -60,7 +60,7 @@ This bottom area is your terminal. You can use the terminal to send instructions
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(Σημειώστε ότι στην τελευταία γραμμή χρησιμοποιούμε μια περισπωμένη ακολουθούμενη από ένα σύμβολο ίσον: ` ~ = `).
 
 ### GitHub
 
