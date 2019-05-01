@@ -10,9 +10,9 @@ Haideți să creăm un **virtual environment** (de asemenea numit *virtualenv*).
 
 Tot ce trebuie să faceţi este să găsiți un directoriu, în care doriţi să creaţi `virtualenv`; directoriul home, de exemplu. Pe Windows, acesta ar putea arăta ca `C:\Users\Name` (unde `Name` este numele vostru de utilizator).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **NOTĂ:** Pe Windows, asiguraţi-vă că acest directoriu nu conţine caractere accentuate sau speciale; în cazul în care numele de utilizator conţine caractere accentuate, folosiţi un alt directoriu, de exemplu, `C:\djangogirls`.
 
-For this tutorial we will be using a new directory `djangogirls` from your home directory:
+Pentru acest tutorial vom folosi un directoriu nou `djangogirls` din directoriul home:
 
 {% filename %}command-line{% endfilename %}
 
@@ -20,7 +20,7 @@ For this tutorial we will be using a new directory `djangogirls` from your home 
     $ cd djangogirls
     
 
-We will make a virtualenv called `myvenv`. The general command will be in the format:
+Vom face un virtualenv numit `myvenv`. Comanda generală va fi în format:
 
 {% filename %}command-line{% endfilename %}
 
