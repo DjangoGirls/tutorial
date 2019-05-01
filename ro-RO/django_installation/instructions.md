@@ -165,20 +165,20 @@ Acum, când `virtualenv` este pornit, se poate instala Django.
 
 Un requirements-fişier este o listă a dependenţelor care trebuie să fie instalate folosind `pip install`:
 
-Mai întâi, creaţi un fişier `requirements.txt` în directoriu `djangogirls/`, utilizând editorul de cod pe care aţi instalat mai devreme. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Mai întâi, creaţi un fişier `requirements.txt` în directoriu `djangogirls/`, utilizând editorul de cod pe care aţi instalat mai devreme. Faceţi acest lucru deschizând un fişier nou în editorul de cod şi apoi salvați-l ca `requirements.txt` în directoriu `djangogirls/`. Structura directoriu-lui va fi următoare:
 
     djangogirls
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Adăugați textul următor în fișier-ul `djangogirls/requirements.txt`:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Acum executați `pip install -r requirements.txt` pentru a instala Django.
 
 {% filename %}command-line{% endfilename %}
 
