@@ -73,7 +73,7 @@ Kako bismo sve držali uredno, kreiraćemo posebnu aplikaciju unutar našeg proj
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Primetićete da je kreiran novi `blog` direktorijum i da sadrži broj fajlova. Direktorijumi i fajlovi u našem projektu bi trebalo da izgledaju ovako:
 
     djangogirls
     ├── blog
@@ -96,7 +96,7 @@ You will notice that a new `blog` directory is created and it contains a number 
     └── requirements.txt
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+Nakon kreiranja aplikacije, moramo na neki način da kažemo Django-u da treba da je koristi. To radimo u fajlu `mysite/settings.py` - otvorite ga u editoru. Moramo da pronađemo `INSTALLED_APPS` i da dodamo liniju koja sadrži `'blog',` odmah iznad `]`. Tako da na kraju to treba da izgleda ovako:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -112,11 +112,11 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### Kreiranje modela posta
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+U fajlu `blog/models.py` definišemo sve objekte koji se nazivaju `Modeli` - to je mesto u kom ćemo da definišemo naš blog post.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+Hajde da otvorimo `blog/models.py` u editoru, uklonimo sve iz fajla i da napišemo kod koji izgleda ovako:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -141,9 +141,9 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Proverite da li koristite dve donje crte (`_`) na svakoj strani `str`. Ova konvencija se često koristi u Python-u i ponekad to nazivamo "dunder" (skraćeno od "double-underscore").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Izgleda zastrašujuće, zar ne? Ali, ne brinite - objasnićemo Vam šta ove linije znače!
 
 All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
