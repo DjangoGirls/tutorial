@@ -144,15 +144,15 @@ Nu uitați să înlocuiţi `myvenv` cu numele `virtualenv`-ului ales!
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+O să aflați că `virtualenv` s-a pornit când veți vedea că prompt-ul în linie de comandă este prefixat cu `(myvenv)`.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Atunci când lucrați într-un environment-ul virtual, `python` se va refera automat la versiunea corectă astfel încât puteţi utiliza `python` în loc de `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+OK, avem toate dependenţele importante instalate. Acum putem instala Django!
 
-## Installing Django
+## Instalarea Django
 
-Now that you have your `virtualenv` started, you can install Django.
+Acum, când `virtualenv` este pornit, se poate instala Django.
 
 Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
