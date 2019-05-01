@@ -154,18 +154,18 @@ OK, avem toate dependenţele importante instalate. Acum putem instala Django!
 
 Acum, când `virtualenv` este pornit, se poate instala Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Înainte de a face acest lucru, trebuie să ne asigurăm că cea mai recentă versiune de `pip` este instalată, software-ul pe care o folosim pentru a instala Django:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Instalarea pachetelor cu requirements
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Un requirements-fişier este o listă a dependenţelor care trebuie să fie instalate folosind `pip install`:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Mai întâi, creaţi un fişier `requirements.txt` în directoriu `djangogirls/`, utilizând editorul de cod pe care aţi instalat mai devreme. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     └───requirements.txt
