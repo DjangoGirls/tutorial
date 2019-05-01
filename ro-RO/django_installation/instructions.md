@@ -112,7 +112,7 @@ Porniţi environment-ul virtual prin executarea:
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **Notă:** Pe Windows 10 e posibil să primiţi o eroare în Windows PowerShell care spune `execution of scripts is disabled on this system`. În cazul acesta deschideți un alt Windows PowerShell, selectând opțiunea "Run as Administrator". Apoi, încercaţi să executați următoarea comandă înainte de a porni environment-ul virtual:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -126,16 +126,16 @@ Porniţi environment-ul virtual prin executarea:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Porniți environment-ul virtual prin executarea:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+Nu uitați să înlocuiţi `myvenv` cu numele `virtualenv`-ului ales!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **Notă:** uneori `sursă` poate să nu fie disponibilă. În acest caz încercaţi să executați comandă repectivă:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
