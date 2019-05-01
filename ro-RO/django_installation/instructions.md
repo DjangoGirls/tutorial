@@ -30,14 +30,14 @@ Vom face un virtualenv numit `myvenv`. Comanda generală va fi în format:
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+Pentru a crea un nou `virtualenv`, aveți nevoie de a deschide linie de comandă și să executați `python -m venv myvenv`. El va arăta în mod următor:
 
 {% filename %}command-line{% endfilename %}
 
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+Unde `myvenv` este numele `virtualenv` vostru. Puteţi utiliza orice alt nume, dar preferați caracterele mici şi nu folosiți spații, accente sau caractere speciale. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
