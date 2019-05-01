@@ -4,9 +4,9 @@
 
 ## Virtual environment
 
-Înainte de a instala Django o să treceți prin pașii de instalare a unui instrument extrem de folos pentru a păstra mediu de programare ordonat pe calculatorul vostru. Este posibil să omiteți acest pas, dar el este foarte recomandat. Starting with the best possible setup will save you a lot of trouble in the future!
+Înainte de a instala Django o să treceți prin pașii de instalare a unui instrument extrem de folos pentru a păstra mediu de programare ordonat pe calculatorul vostru. Este posibil să omiteți acest pas, dar el este foarte recomandat. Porinind de la cea mai buna metodă de configurare o să vă păstrați de mulțime de probleme în viitor!
 
-So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+Haideți să creăm un **virtual environment** (de asemenea numit *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
 All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
