@@ -199,7 +199,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Linie de comandă poate fi blocată în timp ce încercați să instalați Django. Dacă aceasta s-a întâmplat, în loc de comandă de mai sus, utilizați:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -211,8 +211,8 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Dacă primiţi o eroare, când utilizați pip pe Ubuntu 12.04 executați `python -m pip install -U --force-reinstall pip` pentru a repara instalarea pip-ului în virtualenv.
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Asta e! Acum sunteți (în sfîrșit) gată pentru a crea o aplicație Django!
