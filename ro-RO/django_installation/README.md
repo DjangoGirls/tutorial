@@ -1,6 +1,6 @@
 # Instalarea Django
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Notă** Dacă utilizați un Chromebook, treceți peste acest capitol și asigurați-vă că urmați instrucțunile de [setare a Chromebook-ului](../chromebook_setup/README.md).
 > 
 > **Note** If you already worked through the Installation steps then you've already done this – you can go straight to the next chapter!
 
