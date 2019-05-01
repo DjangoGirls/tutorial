@@ -100,12 +100,12 @@ Unde `myvenv` este numele `virtualenv` vostru. Puteţi utiliza orice alt nume, d
 
 ## Lucru cu virtualenv
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+Comanda de sus va crea un directoriu numit `myvenv` (sau alt nume pe care ați ales) care conține environment-ul virtual (în principiu o colecție de directoriu și fișiere).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Porniţi environment-ul virtual prin executarea:
 
 {% filename %}command-line{% endfilename %}
 
