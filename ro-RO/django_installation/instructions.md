@@ -67,14 +67,14 @@ Unde `myvenv` este numele `virtualenv` vostru. Puteţi utiliza orice alt nume, d
 >     $ sudo apt install python3-venv
 >     
 > 
-> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> **NOTĂ:** Pe unele versiuni de Debian/Ubuntu crearea environment-ului virtual în fel respectiv dă eroarea următoare:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> To get around this, use the `virtualenv` command instead.
+> Pentru a rezolva problema respectivă, folosiți de comanda `virtualenv`.
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -82,14 +82,14 @@ Unde `myvenv` este numele `virtualenv` vostru. Puteţi utiliza orice alt nume, d
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **NOTĂ:** Dacă primiţi eroarea următoare
 > 
 > {% filename %}command-line{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> atunci executați:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -98,7 +98,7 @@ Unde `myvenv` este numele `virtualenv` vostru. Puteţi utiliza orice alt nume, d
 
 <!--endsec-->
 
-## Working with virtualenv
+## Lucru cu virtualenv
 
 The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
