@@ -1,8 +1,8 @@
-O lè [fo abala yìí kọjá](http://tutorial.djangogirls.org/en/installation/#install-python) tí ìwọ kò bá lo Chromebook kan. Tí o bá n lo, ìrírí ìṣàgbékalẹ̀ rẹ yíò yàtọ̀ díẹ̀. O lè fojú fo àwọn àlàyé ìṣàgbékalẹ̀ yòókù náà.
+O lè [fo abala yìí kọjá](http://tutorial.djangogirls.org/en/installation/#install-python) tí ìwọ kò bá lo Chromebook kan. Tí o bá n lo, ìrírí ìṣàgbékalẹ̀ rẹ yíò yàtọ̀ díẹ̀. O lè fojú fo àwọn ìtọ́sọ́nà ìṣàgbékalẹ̀ yòókù náà.
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE jẹ́ irinṣẹ́ kan èyí tí yíò fún ẹ ní olóòtú kóòdù kan àti anfààní sí kọ̀mpútà kan tó n ṣiṣẹ́ lórí íntánẹ́ẹ̀tì níbi tí o ti lè ṣàgbékalẹ̀, kọ, àti mú ètò náà ṣiṣẹ́. Fún àkókò ti àlàyé náà, cloud IDE yíò ṣiṣẹ́ gẹ́gẹ́ bí *kọ̀mpútà agbègbè* rẹ. Yóò ṣeéṣe fún ẹ láti ma ṣiṣẹ́ pẹ̀lú àwọn àṣẹ nínú atọ́kùn èbúté kan gẹ́gẹ́ bí àwọn ọmọ kíláàsì rẹ lórí OS X, Ubuntu, tàbí Windows, ṣùgbọ́n èbúté rẹ yíò gba ìsopọ̀ mọ́ kọ̀mpútà kan tó n ṣiṣẹ́ ní ibòmíràn tí cloud IDE gbé kalẹ̀ fún ẹ. Àwọn alaye náà rèé fún àwọn cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). O lè yan ẹyọkan nínú àwọn cloud IDE náà, kí o sì tẹ̀lé ìlànà ti cloud IDE náà.
+Cloud IDE jẹ́ irinṣẹ́ kan èyí tí yíò fún ẹ ní olóòtú kóòdù kan àti anfààní sí kọ̀mpútà kan tó n ṣiṣẹ́ lórí íntánẹ́ẹ̀tì níbi tí o ti lè ṣàgbékalẹ̀, kọ, àti mú ètò náà ṣiṣẹ́. Fún àkókò ti àlàyé náà, cloud IDE yíò ṣiṣẹ́ gẹ́gẹ́ bí *kọ̀mpútà agbègbè* rẹ. Yóò ṣeéṣe fún ẹ láti ma ṣiṣẹ́ pẹ̀lú àwọn àṣẹ nínú atọ́kùn èbúté kan gẹ́gẹ́ bí àwọn ọmọ kíláàsì rẹ lórí OS X, Ubuntu, tàbí Windows, ṣùgbọ́n èbúté rẹ yíò gba ìsopọ̀ mọ́ kọ̀mpútà kan tó n ṣiṣẹ́ ní ibòmíràn tí cloud IDE gbé kalẹ̀ fún ẹ. Àwọn ìtọ́sọ́nà náà rèé fún àwọn cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9). O lè yan ẹyọkan nínú àwọn cloud IDE náà, kí o sì tẹ̀lé ìtọ́sọ́nà ti cloud IDE náà.
 
 #### PaizaCloud Cloud IDE
 
@@ -33,7 +33,7 @@ Now you should see an interface with a sidebar, a big main window with some text
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Agbègbè ìsàlẹ̀ yìí ni èbúté rẹ. O lè lo èbúté náà láti fi àwọn ìtọ́sọ́nà ránṣẹ́ sí kọ̀mpútà Cloud 9 tó jìnnà náà. O lè ṣàtúnṣe ìwọ̀n Ferese náà láti mú kó tóbi díẹ̀ si.
 
 ### Virtual Environment
 
