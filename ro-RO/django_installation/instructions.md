@@ -6,9 +6,9 @@
 
 Înainte de a instala Django o să treceți prin pașii de instalare a unui instrument extrem de folos pentru a păstra mediu de programare ordonat pe calculatorul vostru. Este posibil să omiteți acest pas, dar el este foarte recomandat. Porinind de la cea mai buna metodă de configurare o să vă păstrați de mulțime de probleme în viitor!
 
-Haideți să creăm un **virtual environment** (de asemenea numit *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+Haideți să creăm un **virtual environment** (de asemenea numit *virtualenv*). Virtualenv va izola setarea Python/Django pe bază a proiectului. Acest lucru înseamnă că orice modificare a unui singur site nu va afecta pe alte care sunt în curs de dezvoltare. Ordonat, corect?
 
-All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Tot ce trebuie să faceţi este să găsiți un directoriu, în care doriţi să creaţi `virtualenv`; directoriul home, de exemplu. Pe Windows, acesta ar putea arăta ca `C:\Users\Name` (unde `Name` este numele vostru de utilizator).
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
 
