@@ -34,7 +34,7 @@ Kako ćemo u tom slučaju da modelujemo postove na blogu? Želimo da napravimo b
 
 Moramo da odgovorimo na pitanje: šta je to zapravo blog post? Koja svojstva bi trebalo da ima?
 
-Pa, naš blog sigurno treba da ima tekst sa svojim sadržajem i naslovom, zar ne? Takođe, bilo bi dobro da znamo ko je napisao tekst - znači potreban nam je autor. Finally, we want to know when the post was created and published.
+Pa, naš blog sigurno treba da ima tekst sa svojim sadržajem i naslovom, zar ne? Takođe, bilo bi dobro da znamo ko je napisao tekst - znači potreban nam je autor. I na kraju, želimo da znamo kada je post kreiran i objavljen.
 
     Post
     --------
@@ -45,9 +45,9 @@ Pa, naš blog sigurno treba da ima tekst sa svojim sadržajem i naslovom, zar ne
     published_date
     
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+Kakve sve stvari mogu da se urade sa postom? Bilo bi lepo da postoji neki `metod` koji objavljuje post, zar ne?
 
-So we will need a `publish` method.
+To znači da će nam trebati metod za `objavljivanje`.
 
 Since we already know what we want to achieve, let's start modeling it in Django!
 
