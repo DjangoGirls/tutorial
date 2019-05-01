@@ -37,23 +37,23 @@ Pentru a crea un nou `virtualenv`, aveți nevoie de a deschide linie de comandă
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Unde `myvenv` este numele `virtualenv` vostru. Puteţi utiliza orice alt nume, dar preferați caracterele mici şi nu folosiți spații, accente sau caractere speciale. It is also good idea to keep the name short – you'll be referencing it a lot!
+Unde `myvenv` este numele `virtualenv` vostru. Puteţi utiliza orice alt nume, dar preferați caracterele mici şi nu folosiți spații, accente sau caractere speciale. De asemenea, este o idee bună să păstrați numele scurt - voi o să-l menționați mult!
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Putem crea un `virtualenv` atât pe Linux şi OS X prin executarea `python3 -m venv myvenv`. Acesta se va arăta astfel:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+Unde `myvenv` este numele `virtualenv` vostru. Puteţi utiliza orice alt nume, dar preferați caracterele mici şi nu folosiți spații. De asemenea, este o idee bună să păstrați numele scurt - voi o să-l menționați mult!
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **NOTĂ:** Pe unele versiuni de Debian/Ubuntu este posibil să primiţi următoarea eroare:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -62,7 +62,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> În acest caz, urmaţi instrucţiunile de mai sus şi instalați pachetul de `python3-venv`: {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
