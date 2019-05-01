@@ -49,19 +49,19 @@ Kakve sve stvari mogu da se urade sa postom? Bilo bi lepo da postoji neki `metod
 
 To znači da će nam trebati metod za `objavljivanje`.
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+Pošto znamo šta želimo da postignemo, hajde da krenemo da to modelujemo u Django-u!
 
 ## Django model
 
-Knowing what an object is, we can create a Django model for our blog post.
+Ako znamo šta nam je objekat, možemo da kreiramo Django model za naš blog post.
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+Model u Django-u je posebna vrsta objekta i čuva se u `bazi podataka`. To je skup podataka. Takoreći, to je mesto gde se skladište informacije o korisnicima, postovima itd. Za skladištenje naših podataka ćemo koristiti SQLite bazu podataka. To je podrazumevani Django adapter za bazu podataka i za sada nam je to sasvim dovoljno.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+Možete da zamislite model u bazi podataka kao jednu veliku tabelu sa kolonama koje predstavljaju polja i redovima koji predstavljaju podatke.
 
-### Creating an application
+### Kreiranje aplikacije
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+Kako bismo sve držali uredno, kreiraćemo posebnu aplikaciju unutar našeg projekta. Veoma je lepo imati sve organizovano od samog početka. Da bismo kreirali aplikaciju, potrebno je da pokrenemo sledeću komandu u konzoli (iz `djangogirls` direktorijuma, gde se nalazi fajl `manage.py`):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
