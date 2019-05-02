@@ -96,7 +96,7 @@ Primetićete da je kreiran novi `blog` direktorijum i da sadrži broj fajlova. D
     └── requirements.txt
     
 
-Nakon kreiranja aplikacije, moramo na neki način da kažemo Django-u da treba da je koristi. To radimo u fajlu `mysite/settings.py` - otvorite ga u editoru. Moramo da pronađemo `INSTALLED_APPS` i da dodamo liniju koja sadrži `'blog',` odmah iznad `]`. Tako da na kraju to treba da izgleda ovako:
+Nakon kreiranja aplikacije, moramo na neki način da kažemo Django-u da treba da je koristi. To radimo u fajlu `mysite/settings.py` - otvorite ga u editoru. Moramo da pronađemo `INSTALLED_APPS` i da dodamo liniju koja sadrži `'blog',` odmah iznad `]`. Tako da, na kraju to treba da izgleda ovako:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -162,7 +162,7 @@ Zatim, definišemo svojstva o kojima smo pričali: `naslov`, `tekst`, `datum_kre
 
 Ovde nećemo objašnjavati svaku sitnicu u kodu, jer bi za to trebalo previše vremena. Trebalo bi da pogledate Django dokumentaciju ukoliko želite da saznate više o poljima Modela i kako da definišete i ostale stvari, koje nismo prethodno naveli (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-Šta je sa `def publish(self):`? Ovo je upravo metod za `objavljivanje` o kom smo pričali ranije. `def` znači da je u pitanju funkcija/metod, a `publish` je ime metoda. Ako želite, možete da promenite ime metoda. Jedino pravilo je da koristite mala slova i donje crte umesto razmaka. Na primer, metod koji izračunava prosečnu cenu bi se mogao nazvati `calculate_average_price`.
+Šta je sa `def publish(self):`? Ovo je upravo metod za `objavljivanje` o kom smo pričali ranije. `def` znači da je u pitanju funkcija/metod, a `publish` je ime metoda. Ako želite, možete da ga promenite. Jedino pravilo je da koristite mala slova i donje crte umesto razmaka. Na primer, metod koji izračunava prosečnu cenu bi se mogao nazvati `calculate_average_price`.
 
 Metodi često vraćaju nešto naredbom `return`. Postoji jedan primer toga u `__str__` metodu. U tom slučaju, kada pozovemo `__str__()` dobijamo tekst (**string**) sa naslovom posta.
 
