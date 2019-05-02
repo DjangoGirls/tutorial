@@ -33,7 +33,7 @@ Lihat antarmuka *sidebar*, ada jendela utama yang besar dengan sejumlah teks, da
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Bagian bawah darah ini adalah termina Anda. Anda bisa menggunakannya untuk mengirimkan perintah kepada komputer remote Cloud9. Anda bisa menyesuaikan ukuran jendela untuk membuatnya sedikit lebih besar.
 
 ### Lingkungan Virtual
 
