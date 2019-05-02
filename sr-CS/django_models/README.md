@@ -162,9 +162,9 @@ Zatim, definišemo svojstva o kojima smo pričali: `naslov`, `tekst`, `datum_kre
 
 Ovde nećemo objašnjavati svaku sitnicu u kodu, jer bi za to trebalo previše vremena. Trebalo bi da pogledate Django dokumentaciju ukoliko želite da saznate više o poljima Modela i kako da definišete i ostale stvari, koje nismo prethodno naveli (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+Šta je sa `def publish(self):`? Ovo je upravo metod za `objavljivanje` o kom smo pričali ranije. `def` znači da je u pitanju funkcija/metod, a `publish` je ime metoda. Ako želite, možete da promenite ime metoda. Jedino pravilo je da koristite mala slova i donje crte umesto razmaka. Na primer, metod koji izračunava prosečnu cenu bi se mogao nazvati `calculate_average_price`.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Metodi često vraćaju nešto naredbom `return`. Postoji jedan primer toga u `__str__` metodu. U tom slučaju, kada pozovemo `__str__()` dobijamo tekst (**string**) sa naslovom posta.
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
