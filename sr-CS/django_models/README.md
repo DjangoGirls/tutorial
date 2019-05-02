@@ -172,7 +172,7 @@ Ukoliko Vam nešto još uvek nije jasno u vezi sa modelima, slobodno pitajte svo
 
 ### Kreiranje tabela za modele u Vašoj bazi podataka
 
-U poslednjem koraku ćemo dodati naš novi model u bazu podataka. Prvo, moramo da obavestimo Django-a da imamo neke izmene u našem modelu. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+U poslednjem koraku ćemo dodati naš novi model u bazu podataka. Prvo, moramo da obavestimo Django-a da imamo neke izmene u našem modelu. (Upravo smo ih napravili!) Idite na prozor sa konzolom i ukucajte `python manage.py makemigrations blog`. To bi trebalo da izgleda ovako:
 
 {% filename %}command-line{% endfilename %}
 
