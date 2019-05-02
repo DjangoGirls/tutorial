@@ -145,15 +145,15 @@ class Post(models.Model):
 
 Izgleda zastrašujuće, zar ne? Ali, ne brinite - objasnićemo Vam šta ove linije znače!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Sve linije koje počinju sa `from` ili `import` su linije koje dodaju neke bite iz drugih fajlova. Tako da, umesto da kopirate uvek istu stvar u svakom fajlu, sada možete da jednostavno uključite neke delove pomoću `from... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` – ova linija definiše naš model (kao `objekat`).
 
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- `class` je specijalna reč koja ukazuje na to da definišemo objekat.
+- `Post` je ime našeg modela. Možemo da mu damo drugačiji naziv (ali moramo da izbegnemo specijalne karaktere i razmake). Uvek treba pisati ime klase velikim početnim slovom.
+- `models.Model` znači da je Post u stvari Django Model, tako da Django zna da bi trebalo da ga sačuva u bazi podataka.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Zatim, definišemo svojstva o kojima smo pričali: `naslov`, `tekst`, `datum_kreiranja`, `datum_objave` i `autor`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
 - `models.CharField` – this is how you define text with a limited number of characters.
 - `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
