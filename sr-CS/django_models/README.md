@@ -166,7 +166,7 @@ Ovde nećemo objašnjavati svaku sitnicu u kodu, jer bi za to trebalo previše v
 
 Metodi često vraćaju nešto naredbom `return`. Postoji jedan primer toga u `__str__` metodu. U tom slučaju, kada pozovemo `__str__()` dobijamo tekst (**string**) sa naslovom posta.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Takođe, primetite da su i `def publish(self):` i `def __str__(self):` uvučeni unutar naše klase. Pošto je Python osetljiv na razmake, moramo da uvučemo metode unutar klase. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
 If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
