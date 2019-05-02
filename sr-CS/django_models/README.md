@@ -166,13 +166,13 @@ Ovde nećemo objašnjavati svaku sitnicu u kodu, jer bi za to trebalo previše v
 
 Metodi često vraćaju nešto naredbom `return`. Postoji jedan primer toga u `__str__` metodu. U tom slučaju, kada pozovemo `__str__()` dobijamo tekst (**string**) sa naslovom posta.
 
-Takođe, primetite da su i `def publish(self):` i `def __str__(self):` uvučeni unutar naše klase. Pošto je Python osetljiv na razmake, moramo da uvučemo metode unutar klase. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Takođe, primetite da su i `def publish(self):` i `def __str__(self):` uvučeni unutar naše klase. Pošto je Python osetljiv na razmake, moramo da uvučemo metode unutar klase. U suprotnom, metodi neće pripadati klasi i može da se dogodi neko neočekivano ponašanje.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Ukoliko Vam nešto još uvek nije jasno u vezi sa modelima, slobodno pitajte svog mentora. Znamo da je komplikovano, naročito kada učite o objektima i funkcijama u isto vreme. Ali, nadamo se da sada vidite malo jasniju sliku!
 
-### Create tables for models in your database
+### Kreiranje tabela za modele u Vašoj bazi podataka
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+U poslednjem koraku ćemo dodati naš novi model u bazu podataka. Prvo, moramo da obavestimo Django-a da imamo neke izmene u našem modelu. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
