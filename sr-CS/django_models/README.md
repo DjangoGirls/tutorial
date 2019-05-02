@@ -183,9 +183,9 @@ U poslednjem koraku ćemo dodati naš novi model u bazu podataka. Prvo, moramo d
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Napomena:** Ne zaboravite da zapamtite fajlove koje izmenite. U suprotnom će Vaš računar da izvrši prethodnu verziju i mogu da se jave neke neočekivane greške.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django je pripremio fajl za nas, koji sada treba da upotrebimo u našoj bazi podataka. Ukucajte `python manage.py migrate blog` i izlaz bi trebalo da izgleda ovako:
 
 {% filename %}command-line{% endfilename %}
 
@@ -196,4 +196,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Uspeli smo! Naš post model se sada nalazi u bazi podataka! Bilo bi lepo da možemo da ga vidimo, zar ne? Pogledajte u sledećem poglavlju kako naš post sada izgleda!
