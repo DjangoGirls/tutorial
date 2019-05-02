@@ -153,14 +153,14 @@ Sve linije koje počinju sa `from` ili `import` su linije koje dodaju neke bite 
 - `Post` je ime našeg modela. Možemo da mu damo drugačiji naziv (ali moramo da izbegnemo specijalne karaktere i razmake). Uvek treba pisati ime klase velikim početnim slovom.
 - `models.Model` znači da je Post u stvari Django Model, tako da Django zna da bi trebalo da ga sačuva u bazi podataka.
 
-Zatim, definišemo svojstva o kojima smo pričali: `naslov`, `tekst`, `datum_kreiranja`, `datum_objave` i `autor`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Zatim, definišemo svojstva o kojima smo pričali: `naslov`, `tekst`, `datum_kreiranja`, `datum_objave` i `autor`. Da bismo to uradili, potrebno je da definišemo tip svakog polja (da li je to tekst? Broj? Datum? Relacija sa drugim objektom, kao npr. korisnik?)
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `models.CharField` - ovo je način da definišete tekst sa ograničenim brojem karaktera.
+- `models.TextField` - ovo je način da predstavite dug tekst, bez ograničenja. Zvuči savršeno za sadržaj posta, zar ne?
+- `models.DataTimeField` - ovo predstavlja datum i vreme.
+- `models.ForeignKey` - ovo je link do drugog modela.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Ovde nećemo objašnjavati svaku sitnicu u kodu, jer bi za to trebalo previše vremena. Trebalo bi da pogledate Django dokumentaciju ukoliko želite da saznate više o poljima Modela i kako da definišete i ostale stvari, koje nismo prethodno naveli (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
 What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
 
