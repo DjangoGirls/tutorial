@@ -1,18 +1,18 @@
 # டிஜாங்க் என்றால் என்ன?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. A web framework is a set of components that helps you to develop websites faster and easier.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) பைதான் இல் எழுதப்பட்ட ஒரு இலவச மற்றும் திறந்த மூல வலை பயன்பாட்டு கட்டமைப்பாகும். வலைத்தள கட்டமைப்பானது வலைத்தளங்களை வேகமாகவும் எளிதாகவும் உருவாக்க உதவுகின்ற ஒரு கூறுகளின் தொகுப்பு ஆகும்.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+நீங்கள் ஒரு வலைத்தளத்தை உருவாக்கும் போது, நீங்கள் எப்போதும் இதே போன்ற கூறுகளின் தொகுப்பு தேவை: பயனர் அங்கீகாரத்தை (கையொப்பமிடுதல், உள்நுழைதல், வெளியேறுதல்), உங்கள் வலைத்தளத்திற்கான நிர்வாக குழு, வடிவங்கள், கோப்புகளை பதிவேற்ற ஒரு வழி.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+நீங்கள் அதிர்ஷ்டவசமாக, மற்றவர்கள் ஒரு புதிய தளத்தை உருவாக்கும் போது இதே போன்ற சிக்கல்களை வலை டெவலப்பர்கள் எதிர்கொள்கிறார்கள் என்பதைக் கவனித்திருக்கிறார்கள், அதனால் அவர்கள் அணிவகுத்து, கட்டமைக்கப்பட்ட கூறுகளை உருவாக்கியுள்ளனர்(Django).
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+சக்கரங்களை புதிதாக்குவதற்கும், ஒரு புதிய தளத்தை உருவாக்கும்போது மேல்நிலை சிலவற்றைத் தணிப்பதற்கும் உதவுவதற்கு கட்டமைப்புகள் உள்ளன.
 
-## Why do you need a framework?
+## உங்களுக்கு ஒரு கட்டமைப்பை ஏன் வேண்டும்?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+டான்ஜோ உண்மையில் என்னவென்று புரிந்துகொள்ள, சேவையகங்களில் ஒரு நெருக்கமான பார்வை எடுக்க வேண்டும். முதல் விஷயம் என்னவென்றால், சர்வர் உங்களுக்கு ஒரு வலைப்பக்கத்தை சேவை செய்ய வேண்டும் என்று தெரிந்து கொள்ள வேண்டும்.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+உள்வரும் எழுத்துக்கள் (கோரிக்கைகள்) கண்காணிக்கப்படும் ஒரு அஞ்சல் பெட்டி (துறைமுகம்) கற்பனை செய்து பாருங்கள். இது வலை சேவையகத்தால் செய்யப்படுகிறது. வலை சேவையகம் கடிதத்தை படித்து, ஒரு வலைப்பக்கத்தில் பதிலை அனுப்புகிறது. ஆனால் நீங்கள் ஏதாவது அனுப்ப விரும்பும் போது, நீங்கள் சில உள்ளடக்கங்களைக் கொண்டிருக்க வேண்டும். And Django is something that helps you create the content.
 
 ## What happens when someone requests a website from your server?
 
