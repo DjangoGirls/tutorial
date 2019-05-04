@@ -141,11 +141,11 @@ class Post(models.Model):
         return self.title
 ```
 
-> Verificați că utilzați două bare de jos (`_`) în fiecare parte a `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Verificați că utilzați două bare de jos (`_`) în fiecare parte a `str`. Acest standard este utilizat frecvent în Python și uneori este numit "dunder" (scurtare pentru "double-underscore").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+E înfricoșător? Dar nu vă îngrijorați - o să explicăm ce înseamnă codul dat!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Toate liniile, începând cu `from` or `import` sunt liniile ce adaugă niște biți din alte fișire. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
