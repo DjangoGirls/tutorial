@@ -147,9 +147,9 @@ E înfricoșător? Dar nu vă îngrijorați - o să explicăm ce înseamnă codu
 
 Toate liniile, începând cu `from` or `import` sunt liniile ce adaugă niște biți din alte fișire. De aceea în loc de a copia și a inserta aceeași lucruri în fiecare fișier, noi putem iclude niște părți cu `from ... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` – linie această definește modelul nostru (el este `un obiect`).
 
-- `class` is a special keyword that indicates that we are defining an object.
+- `class` este un cuvânt special care indică că noi definim un obiect.
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
 - `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
 
