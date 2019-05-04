@@ -4,20 +4,20 @@
 
 ## Ce este un QuerySet?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+QuerySet este, în genere, o listă de obiecte de anumit model. QuerySets dă posibilitate de a citi, filtra și ordona date dintr-o bază de date.
 
-It's easiest to learn by example. Let's try this, shall we?
+E mai ușo să învățăm după exemplu. Să ne încercăm?
 
 ## Django shell
 
-Open up your local console (not on PythonAnywhere) and type this command:
+Deschideți linie de comandă pe calculatorul vostru (nu pe PythonAnywhere) și executați comandă următoare:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+Rezultatul trebuie să fie următor:
 
 {% filename %}command-line{% endfilename %}
 
