@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+நாம் முதலில் டிஜாங்கோ வடிவங்களை(`ஜான் இறக்குமதி வடிவங்களில் இருந்து`)மற்றும் எங்கள் ` போஸ்ட்`மாதிரி (` இருந்து. மாடல்கள் இறக்குமதி இடுகை`)இறக்குமதி செய்ய வேண்டும்.
 
 `PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
