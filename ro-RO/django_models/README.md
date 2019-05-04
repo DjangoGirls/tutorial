@@ -166,7 +166,7 @@ Ce despre `def publish(self):`? Acesta este metodă `publish` despre care am vor
 
 Metode returnează des niște valori utilizând cuvântul cheie `return`. Un exemplu este metoda `__str__`. În cazul dat, când executăm `__str__()` primim text (**string**) cu titlu postului.
 
-Observați că `def publish(self):` și `def __str__(self):` sunt aliniate in clasa. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Observați că `def publish(self):` și `def __str__(self):` sunt aliniate in clasa. Din motivul că Python este sensitiv la spații, este necesar să aliniem metodele în clase. Altfel, metode nu va fi a clasei și puteți să primiți o funcționare neașteptată.
 
 If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
