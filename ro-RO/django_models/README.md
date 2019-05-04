@@ -172,7 +172,7 @@ Dacă ceva despre modele nu este clar, întrebați-l pe mentorul vostru! Noi sț
 
 ### Crearea tabelelor pentru modele în baza de date
 
-Ultimul lucru este de a adăuga modelul nou la baza de date. Cel dintâi trebuie să facem ca Django să știe despre shimbari în model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Ultimul lucru este de a adăuga modelul nou la baza de date. Cel dintâi trebuie să facem ca Django să știe despre shimbari în model. (Noi tocmai am făcut schimbare!) În linie de comandă executați `python manage.py makemigrations blog`. Este urmatoare:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,9 +183,9 @@ Ultimul lucru este de a adăuga modelul nou la baza de date. Cel dintâi trebuie
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Notă:** Nu uitați să sălvați fișierele pe care le editați. Altfel, calculatorul va executa versiunea anterioară ce poate da erori neașteptate.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django a generat fișierul de migrare pe care trebuie s-o aplicăm la baza de date. Executați `python manage.py migrate blog` și rezultatul trebuie să fie următor:
 
 {% filename %}command-line{% endfilename %}
 
