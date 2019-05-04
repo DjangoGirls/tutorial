@@ -96,7 +96,7 @@ Veți observa că directoriu nou `blog` este creat și conține niște fișiere.
     └── requirements.txt
     
 
-După crearea aplicației avem nevoie ca Django o să utilizeze. Noi facem acest lucru în fișierul `mysite/settings.py` -- el trebuie să fie deschis în editorul de cod. Trebuie să găsim `INSTALLED_APPS` și să adăugăm o linie care conține `'blog',` mai sus de `]`. So the final product should look like this:
+După crearea aplicației avem nevoie ca Django o să utilizeze. Noi facem acest lucru în fișierul `mysite/settings.py` -- el trebuie să fie deschis în editorul de cod. Trebuie să găsim `INSTALLED_APPS` și să adăugăm o linie care conține `'blog',` mai sus de `]`. Rezultatul final trebuie să arate în fel următor:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -112,7 +112,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### Crearea modelului de un post de blog
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
