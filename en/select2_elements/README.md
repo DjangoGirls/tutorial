@@ -38,7 +38,7 @@ modified   blog/models.py
      author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
      title = models.CharField(max_length=200)
      text = models.TextField()
-+    category = models.CharField(default="geek", max_length=4, choices=POST_CATEGORIES)
++    category = models.CharField(default="geek", max_length=4, choices=CATEGORIES)
      created_date = models.DateTimeField(default=timezone.now)
      published_date = models.DateTimeField(blank=True, null=True)
 ```
