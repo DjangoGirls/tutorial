@@ -1,21 +1,21 @@
-# Django admin
+# டான்ஜோ நிர்வாகி
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+நாங்கள் மாதிரியுள்ள பதில்களைச் சேர்க்க, திருத்த மற்றும் நீக்க, நாங்கள் டிஜாங்கோ நிர்வாகியைப் பயன்படுத்துவோம்.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+குறியீட்டு ஆசிரியர் உள்ள`வலைப்பதிவு/ admin.py`கோப்பைத் திறந்து, அதனுடன் அதன் உள்ளடக்கங்களை மாற்றலாம்:
 
-{% filename %}blog/admin.py{% endfilename %}
+{% filename%}வலைப்பதிவு/admin.py {%endfilename%}
 
 ```python
-from django.contrib import admin
-from .models import Post
+django.contrib இறக்குமதி நிர்வாகி இருந்து
+இருந்து. மோடல்கள் இறக்குமதி போஸ்ட்
 
-admin.site.register(Post)
+admin.site.register (போஸ்ட்)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+நீங்கள் பார்க்க முடியும் என, நாம் முந்தைய அத்தியாயத்தில் வரையறுக்கப்பட்ட போஸ்ட் மாதிரி (அடங்கும்) இறக்குமதி. நிர்வாகி பக்கத்தில் எங்கள் மாதிரி தெரியும், நாங்கள்`admin.site.register`உடன் மாதிரி பதிவு செய்ய வேண்டும்.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+சரி, எங்கள் போஸ்ட் மாதிரி பார்க்க நேரம். Remember to run `python manage.py runserver` in the console to run the web server. உங்கள் உலாவிக்கு சென்று, முகவரி http://127.0.0.1.100000/admin/. You will see a login page like this:
 
 ![Login page](images/login_page2.png)
 
