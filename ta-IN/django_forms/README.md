@@ -1,20 +1,20 @@
-# Django Forms
+# டிஜாங்க் படிவங்கள்
 
-The final thing we want to do on our website is create a nice way to add and edit blog posts. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+நாங்கள் எங்கள் வலைத்தளத்தில் செய்ய வேண்டும் இறுதி விஷயம் இடுகைகள் சேர்க்க மற்றும் திருத்த ஒரு நல்ல வழி உருவாக்க வேண்டும். Django's`admin`குளிர்ச்சியாக உள்ளது, ஆனால் தனிப்பயனாக்க மற்றும் அழகாக செய்ய கடினமாக உள்ளது. `படிவங்களுடன்`எங்களின் இடைமுகத்தின் மீது முழு அதிகாரம் இருக்கும் - நாம் கற்பனை செய்யக்கூடிய எதையும் செய்யமுடியும்!
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+டிஜாங்க் வடிவங்களைப் பற்றிய நல்ல விஷயம் என்னவென்றால், நாம் புதிதாக ஒன்றை வரையறுக்கலாம் அல்லது ஒரு மாதிரி`ModelForm` உருவாக்கலாம், இது படிவத்தின் விளைவாக மாதிரியாக சேமிக்கப்படும்.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+இதுதான் நாம் செய்ய வேண்டியது: நாங்கள் எங்கள்`Post`மாதிரிக்காக ஒரு படிவத்தை உருவாக்கும்.
 
-Like every important part of Django, forms have their own file: `forms.py`.
+டிஜாங்கின் முக்கியமான ஒவ்வொரு பகுதியையும் போல, படிவங்கள் அவற்றின் சொந்த கோப்பைக் கொண்டுள்ளன:`forms.py`.
 
-We need to create a file with this name in the `blog` directory.
+` வலைப்பதிவின்`கோப்பகத்தில் இந்த பெயருடன் ஒரு கோப்பை உருவாக்க வேண்டும்.
 
-    blog
-       └── forms.py
+    வலைப்பதிவு
+        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+சரி, அதை குறியீடு ஆசிரியர் திறக்க மற்றும் பின்வரும் குறியீடு தட்டச்சு செய்யலாம்:
 
 {% filename %}blog/forms.py{% endfilename %}
 
