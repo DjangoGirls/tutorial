@@ -61,7 +61,7 @@ Puteți imagina un model din bază de date ca un tabel cu coloane (atribute) și
 
 ### Crearea aplicației
 
-Pentru a păstra totul ordonat, o să creăm o aplicație sepărată în proiectul nostru. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+Pentru a păstra totul ordonat, o să creăm o aplicație sepărată în proiectul nostru. E bine să avem totul ordonat de la început. Pentru a crea aplicație avem nevoie de a executa următoare comandă în linie de comandă (din directoriu `djangogirls` unde este fișierul `manage.py`):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -73,30 +73,30 @@ Pentru a păstra totul ordonat, o să creăm o aplicație sepărată în proiect
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Veți observa că directoriu nou `blog` este creat și conține niște fișiere. Directoriile și fișierele în proiectul nostru trebuie să arată în felul următor:
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
     |   ├── urls.py
-    │   └── views.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     └── requirements.txt
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+După crearea aplicației avem nevoie ca Django o să utilizeze. Noi facem acest lucru în fișierul `mysite/settings.py` -- el trebuie să fie deschis în editorul de cod. Trebuie să găsim `INSTALLED_APPS` și să adăugăm o linie care conține `'blog',` mai sus de `]`. So the final product should look like this:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
