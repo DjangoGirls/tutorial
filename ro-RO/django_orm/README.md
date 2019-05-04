@@ -1,4 +1,4 @@
-# Django ORM and QuerySets
+# Django ORM și QuerySets
 
 În acest capitol veţi învăţa cum Django se conectează la baza de date şi stochează informație în ea. Haideti sa începem!
 
