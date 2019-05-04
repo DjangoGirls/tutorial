@@ -34,7 +34,7 @@ Cum vom modela posturile din blog? Dorim să creăm un blog, corect?
 
 Trebuie să răspundem la o întrebare: Ce este un post din blog? Care proprietăți el trebuie să aibă?
 
-Ok, într-adevăr, un post din blog are nevoie de text, care este conținutul și titlu, corect? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+Ok, într-adevăr, un post din blog are nevoie de text, care este conținutul și titlu, corect? Ar fi bine să cunoaștem cine l-a scris – de aceea avem nevoie și de autor. Finally, we want to know when the post was created and published.
 
     Post
     --------
