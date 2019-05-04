@@ -167,12 +167,9 @@ modified   blog/forms.py
 +            'category': Select2Widget
 +        }
 modified   blog/templates/blog/base.html
-@@ -4,8 +4,10 @@
-     <title>Django Girls blog</title>
-     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+@@ -6,8 +6,10 @@
      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
--    <link href='//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
-+    <link href=""//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel=""stylesheet" type=""text/css">
+     <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
      <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 +    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 +    {{ form.media.css }}
@@ -213,12 +210,11 @@ modified   requirements.txt
 This is indeed very little code, but a lot is going on here, and we're not
 even ready yet.
 
-We corrected some single quotes with double quotes, we added jQuery to our
-network imports, we mention ``django_select2`` both in the requirements file
-and in the INSTALLED_APPS, we added the url patterns from
-``django_select2``, and finally, the possibly most relevant change, we
-attach some extra information to our ``category`` field in the PostForm,
-instructing the ``forms.ModelForm`` base class to use the
+We added jQuery to our network imports, we mention ``django_select2`` both
+in the requirements file and in the INSTALLED_APPS, we added the url
+patterns from ``django_select2``, and finally, the possibly most relevant
+change, we attach some extra information to our ``category`` field in the
+PostForm, instructing the ``forms.ModelForm`` base class to use the
 ``django_select2.Select2Widget`` widget class instead of its default widget.
 
 And that was it basically.  The rest is handled by the frameworks we are
