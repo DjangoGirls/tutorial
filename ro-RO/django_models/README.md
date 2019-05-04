@@ -145,7 +145,7 @@ class Post(models.Model):
 
 E înfricoșător? Dar nu vă îngrijorați - o să explicăm ce înseamnă codul dat!
 
-Toate liniile, începând cu `from` or `import` sunt liniile ce adaugă niște biți din alte fișire. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Toate liniile, începând cu `from` or `import` sunt liniile ce adaugă niște biți din alte fișire. De aceea în loc de a copia și a inserta aceeași lucruri în fiecare fișier, noi putem iclude niște părți cu `from ... import ...`.
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
