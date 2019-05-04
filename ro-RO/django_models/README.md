@@ -196,4 +196,4 @@ Django a generat fișierul de migrare pe care trebuie s-o aplicăm la baza de da
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Ura! Modelul Post este în baza de date! Va fi bine s-o vedem, corect? În capitolul următor o să aflați, cum este Post!
