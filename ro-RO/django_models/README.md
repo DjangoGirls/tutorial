@@ -28,11 +28,11 @@ Deci, ce este un obiect? Este o colecţie de proprietăţi şi acţiuni. Sună c
     taste
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+În principiu, idea este de a descrie lucruri reale cu cod, utilizînd proprietăți (numite `proprietățile obiectului`) și acțiuni (numite `metode`).
 
-How will we model blog posts then? We want to build a blog, right?
+Cum vom modela posturile din blog? Dorim să creăm un blog, corect?
 
-We need to answer the question: What is a blog post? What properties should it have?
+Trebuie să răspundem la o întrebare: Ce este un post din blog? Care proprietăți el trebuie să aibă?
 
 Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
 
