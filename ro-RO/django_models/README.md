@@ -1,10 +1,10 @@
 # Modele în Django
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+Ceea ce ne dorim să creăm acum este ceva ce va păstra toate posturile blog-ului nostru. Dar pentru a putea face acest lucru trebuie să vorbim un pic despre lucruri numite `obiecte`.
 
-## Objects
+## Obiecte
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+În programare există un concept numit `programare orientată pe obiecte`. Ideea este că în loc de a scrie totul ca o secvenţă plictisitoare de instrucţiuni de programare, putem modela lucruri şi defini modul în care ei interacţionează unul cu altul.
 
 So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
 
