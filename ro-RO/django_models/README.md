@@ -28,13 +28,13 @@ Deci, ce este un obiect? Este o colecţie de proprietăţi şi acţiuni. Sună c
     taste
     
 
-În principiu, idea este de a descrie lucruri reale cu cod, utilizînd proprietăți (numite `proprietățile obiectului`) și acțiuni (numite `metode`).
+În principiu, idea este de a descrie lucruri reale cu cod, utilizând proprietăți (numite `proprietățile obiectului`) și acțiuni (numite `metode`).
 
 Cum vom modela posturile din blog? Dorim să creăm un blog, corect?
 
 Trebuie să răspundem la o întrebare: Ce este un post din blog? Care proprietăți el trebuie să aibă?
 
-Ok, într-adevăr, un post din blog are nevoie de text, care este conținutul și titlu, corect? Ar fi bine să cunoaștem cine l-a scris – de aceea avem nevoie și de autor. Finally, we want to know when the post was created and published.
+Ok, într-adevăr, un post din blog are nevoie de text, care este conținutul și titlu, corect? Ar fi bine să cunoaștem cine l-a scris – de aceea avem nevoie și de autor. În sfârșit, dorim să știm când postul a fost creat și publicat.
 
     Post
     --------
@@ -45,9 +45,9 @@ Ok, într-adevăr, un post din blog are nevoie de text, care este conținutul ș
     published_date
     
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+Care lucruri ar putea fi făcute cu un post de blog? Ar fi bine să avem `o metodă` care publică un post, corect?
 
-So we will need a `publish` method.
+O să avem nevoie de o metodă numită `publish`.
 
 Since we already know what we want to achieve, let's start modeling it in Django!
 
