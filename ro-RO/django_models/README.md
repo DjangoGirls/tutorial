@@ -55,13 +55,13 @@ Pentru că noi deja știm ce noi dorim să obținem, trebuie să începem să fa
 
 Știînd ce este un obiect, putem crea un model în Django pentru postul de blog.
 
-Model în Django este un tip special de obiect – el este salvat în `baza de date`. O bază de date este o colecție de date. Acesta este un loc în care o să păstrăm informație despre utilizatorii, posturile de blog, ș.a. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+Model în Django este un tip special de obiect – el este salvat în `baza de date`. O bază de date este o colecție de date. Acesta este un loc în care o să păstrăm informație despre utilizatorii, posturile de blog, ș.a. Noi o să utilizăm baza de date SQLite pentru a păstra date. Acesta este conector de baza de date implicit din Django - va fi suficient pentru scopurile nostre.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+Puteți imagina un model din bază de date ca un tabel cu coloane (atribute) și rânduri (date).
 
-### Creating an application
+### Crearea aplicației
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+Pentru a păstra totul ordonat, o să creăm o aplicație sepărată în proiectul nostru. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
