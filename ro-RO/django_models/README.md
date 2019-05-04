@@ -150,10 +150,10 @@ Toate liniile, începând cu `from` or `import` sunt liniile ce adaugă niște b
 `class Post(models.Model):` – linie această definește modelul nostru (el este `un obiect`).
 
 - `class` este un cuvânt special care indică că noi definim un obiect.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- `Post` este denumirea modelului nostru. Putem s-o numim altfel (dar trebuie să evităm caractere speciale și spații libere). Mereu începeți denumirea clasei cu o majusculă.
+- `models.Model` însemnă că Post este un model în Django, de aceea Django știe că el trebuie să fie păstrat în bază de date.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Acum noi definim proprietăți despre care noi am vorbit: `title`, `text`, `created_date`, `published_date` și `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
 - `models.CharField` – this is how you define text with a limited number of characters.
 - `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
