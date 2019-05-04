@@ -168,11 +168,11 @@ Metode returnează des niște valori utilizând cuvântul cheie `return`. Un exe
 
 Observați că `def publish(self):` și `def __str__(self):` sunt aliniate in clasa. Din motivul că Python este sensitiv la spații, este necesar să aliniem metodele în clase. Altfel, metode nu va fi a clasei și puteți să primiți o funcționare neașteptată.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Dacă ceva despre modele nu este clar, întrebați-l pe mentorul vostru! Noi sțim că e complicat, în dosebit când aflați despre obiecte și funcții deodată. Dar sperăm că atunci este mai clar!
 
-### Create tables for models in your database
+### Crearea tabelelor pentru modele în baza de date
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+Ultimul lucru este de a adăuga modelul nou la baza de date. Cel dintâi trebuie să facem ca Django să știe despre shimbari în model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
