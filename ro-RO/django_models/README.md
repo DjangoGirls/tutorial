@@ -160,9 +160,9 @@ Acum noi definim proprietăți despre care noi am vorbit: `title`, `text`, `crea
 - `models.DateTimeField` – este dată și timp.
 - `models.ForeignKey` – este relație cu un alt model.
 
-Noi n-o să explicăm toate detaliile aici, pentru că va lua mult timp. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Noi n-o să explicăm toate detaliile aici, pentru că va lua mult timp. Trebuie să studiați documentație de Django dacă doriți să aflați mai mult despre tipurile atributelor de model și cum să definiți lucruri defirite de cele descrise mai sus (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+Ce despre `def publish(self):`? Acesta este metodă `publish` despre care am vorbit anterior. `def` înseamnă că acesta este o funcție/metodă și `publish` este denumirea acestei metode. Puteți să schimbați denumirea metodei, dacă doriți. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
 
 Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
