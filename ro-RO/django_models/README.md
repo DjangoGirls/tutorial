@@ -49,13 +49,13 @@ Care lucruri ar putea fi făcute cu un post de blog? Ar fi bine să avem `o meto
 
 O să avem nevoie de o metodă numită `publish`.
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+Pentru că noi deja știm ce noi dorim să obținem, trebuie să începem să facem modele în Django!
 
-## Django model
+## Modele în Django
 
-Knowing what an object is, we can create a Django model for our blog post.
+Știînd ce este un obiect, putem crea un model în Django pentru postul de blog.
 
-A model in Django is a special kind of object – it is saved in the `database`. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+Model în Django este un tip special de obiect – el este salvat în `baza de date`. O bază de date este o colecție de date. Acesta este un loc în care o să păstrăm informație despre utilizatorii, posturile de blog, ș.a. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
 
 You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
 
