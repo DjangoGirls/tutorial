@@ -58,11 +58,11 @@ Importăm model `Post` din `blog.models`.Hai să afișăm pe toate posturile în
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+Acesta este o listă de posturi pe ca le-am creat înainte! Noi am creat aceste posturi, utilizând interfața Django admin. Dar acum dorim să creăm posturi noi, utilizând Python. Cum obținem asta?
 
-### Create object
+### Crearea obiectului
 
-This is how you create a new Post object in database:
+Acesta este cum să creați un nou obiect Post în baza de date:
 
 {% filename %}command-line{% endfilename %}
 
