@@ -26,11 +26,11 @@ Rezultatul trebuie să fie următor:
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+Sunteți acum în linie de comandă Django. Este ca Python prompt, dar cu niște funcții magice adiționale. :) Python și aici.
 
-### All objects
+### Toate obiecte
 
-Let's try to display all of our posts first. You can do that with the following command:
+Hai să încercăm să afișăm toate posturile noastre. Executați comandă următoare:
 
 {% filename %}command-line{% endfilename %}
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Oops! Am primit o eroare. Ea ne arată că nu numele Post nu e definit. E corect - noi am uitat să-l importăm!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Importăm model `Post` din `blog.models`.Hai să afișăm pe toate posturile încă o dată:
 
 {% filename %}command-line{% endfilename %}
 
