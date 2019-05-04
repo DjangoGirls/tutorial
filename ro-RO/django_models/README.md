@@ -114,9 +114,9 @@ INSTALLED_APPS = [
 
 ### Crearea modelului de un post de blog
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+În fișierul `blog/models.py` definim pe toate obiectele numite `Models` – acesta este locul, unde o să definim un post de blog.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+Deschideți fișierul `blog/models.py` în editorul de cod și ștergeți totul din el și scrieți codul ca urmează:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -141,7 +141,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Verificați că utilzați două bare de jos (`_`) în fiecare parte a `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 
 It looks scary, right? But don't worry – we will explain what these lines mean!
 
