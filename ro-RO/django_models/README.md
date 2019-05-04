@@ -6,11 +6,11 @@ Ceea ce ne dorim să creăm acum este ceva ce va păstra toate posturile blog-ul
 
 În programare există un concept numit `programare orientată pe obiecte`. Ideea este că în loc de a scrie totul ca o secvenţă plictisitoare de instrucţiuni de programare, putem modela lucruri şi defini modul în care ei interacţionează unul cu altul.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+Deci, ce este un obiect? Este o colecţie de proprietăţi şi acţiuni. Sună ciudat, dar vă vom da un exemplu.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+În cazul în care dorim să modelăm o pisică, vom crea un obiect `Cat`, care are unele proprietăţi, cum ar fi `color`, `age`, `mood` (cum ar fi bun, rău sau somnoros ;)), şi `owner` (care ar putea fi asociat cu un obiect de `Person` – sau, poate, în cazul pisicii abandonate, proprietatea această ar putea fi goală).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+`Cat` are niște acțiuni: `purr`, `scratch`, or `feed` (în cazul, în care noi vom da pisicii niște `CatFood`, care ar putea fi un obiect sepărat cu diferite proprietăți, de exemplu, `taste`).
 
     Cat
     --------
