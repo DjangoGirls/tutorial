@@ -167,7 +167,7 @@ modified   blog/forms.py
 +            'category': Select2Widget
 +        }
 modified   blog/templates/blog/base.html
-@@ -6,8 +6,10 @@
+@@ -6,6 +6,8  @@
      <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
      <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
      <link rel="stylesheet" href="{% static 'css/blog.css' %}">
