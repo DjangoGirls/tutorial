@@ -162,11 +162,11 @@ Acum noi definim proprietăți despre care noi am vorbit: `title`, `text`, `crea
 
 Noi n-o să explicăm toate detaliile aici, pentru că va lua mult timp. Trebuie să studiați documentație de Django dacă doriți să aflați mai mult despre tipurile atributelor de model și cum să definiți lucruri defirite de cele descrise mai sus (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-Ce despre `def publish(self):`? Acesta este metodă `publish` despre care am vorbit anterior. `def` înseamnă că acesta este o funcție/metodă și `publish` este denumirea acestei metode. Puteți să schimbați denumirea metodei, dacă doriți. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+Ce despre `def publish(self):`? Acesta este metodă `publish` despre care am vorbit anterior. `def` înseamnă că acesta este o funcție/metodă și `publish` este denumirea acestei metode. Puteți să schimbați denumirea metodei, dacă doriți. Regulă de a crea denumirele corecte este că trebuie să utilizăm caractere mici și bare de jos în loc de spații. De exemplu, o metodă care calculează preț mediu ar putea fi numită `calculate_average_price`.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Metode returnează des niște valori utilizând cuvântul cheie `return`. Un exemplu este metoda `__str__`. În cazul dat, când executăm `__str__()` primim text (**string**) cu titlu postului.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Observați că `def publish(self):` și `def __str__(self):` sunt aliniate in clasa. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
 If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
