@@ -145,7 +145,7 @@ Sau poate dorim să afișăm pe toate posturile care conțin cuvântul 'title' �
 
 > **Notă** Între `title` și `contains` este două bare de jos (`_`). Regulă aceasta este utilizată de Django's ORM pentru a sepăra denumirea atributului ("title") și operațiilor sau filtrelor ("contains"). Dacă utilizați numai una bară de jos, o să primiți o eroare de tip "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+Puteți să afișați o listă de posturi publicate. Facem asta, filtrând posturile care au `published_date` cu dată în trecut:
 
 {% filename %}command-line{% endfilename %}
 
