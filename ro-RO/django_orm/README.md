@@ -70,9 +70,9 @@ Acesta este cum să creați un nou obiect Post în baza de date:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+Dar un ingredient lipsește: `me`. Avem nevoie să transmitem un exemplar de modelul `User` ca autor. Cum putem să obținem acesta?
 
-Let's import User model first:
+Hai să facem un import a modelului User:
 
 {% filename %}command-line{% endfilename %}
 
@@ -80,7 +80,7 @@ Let's import User model first:
 >>> from django.contrib.auth.models import User
 ```
 
-What users do we have in our database? Try this:
+Care utilizatorii avem în baza de date? Încercați codul următor:
 
 {% filename %}command-line{% endfilename %}
 
