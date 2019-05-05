@@ -97,9 +97,9 @@ Acesta este utilizator cu super privilegiu, pe care i-am creat înainte! Hai să
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Acum noi facem `get` a utilizatorului `User` cu `username` care este 'ola'. Ordonat!
 
-Now we can finally create our post:
+Acum putem să cream un post de blog:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,7 +108,7 @@ Now we can finally create our post:
 <Post: Sample title>
 ```
 
-Hurray! Wanna check if it worked?
+Ura! Doriți să verificați dacă s-a primit?
 
 {% filename %}command-line{% endfilename %}
 
@@ -117,11 +117,11 @@ Hurray! Wanna check if it worked?
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-There it is, one more post in the list!
+Avem un alt post in listă!
 
-### Add more posts
+### Adaugați mai multe posturi
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+Acum puteți să adăugați mai multe posturi pentru a se adopta la acest proces. Mai adăugați doi sau trei posturi și trecem la capitolul următor.
 
 ### Filter objects
 
