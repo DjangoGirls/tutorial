@@ -89,7 +89,7 @@ Care utilizatorii avem în baza de date? Încercați codul următor:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+Acesta este utilizator cu super privilegiu, pe care i-am creat înainte! Hai să obținem un exemplar de utilizator (schimbați linie următoare ca să utilizați numele vostru de utilizator):
 
 {% filename %}command-line{% endfilename %}
 
