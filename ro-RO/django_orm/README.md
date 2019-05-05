@@ -123,9 +123,9 @@ Avem un alt post in listă!
 
 Acum puteți să adăugați mai multe posturi pentru a se adopta la acest proces. Mai adăugați doi sau trei posturi și trecem la capitolul următor.
 
-### Filter objects
+### Filtrarea obiectelor
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+Functie importantă a QuerySets este abilitate de filtrare. Hai să găsim toate posturile utilizatorului ola. O să utilizăm `filter` în loc de `all` în `Post.objects.all()`. În paranteze o să indicăm condiție(ile) de filtrare la cere un post de blog trebuie să corespundă. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
 
 {% filename %}command-line{% endfilename %}
 
