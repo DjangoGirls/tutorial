@@ -7,7 +7,7 @@ Cloud IDE is a tool that gives you a code editor and access to a computer runnin
 #### PaizaCloud Cloud IDE
 
 1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
+2. Prijavi se za brezplačni račun
 3. Click *New Server*
 4. Click Terminal button(on the left side of the window)
 
@@ -23,7 +23,7 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 #### AWS Cloud9
 
 1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
+2. Prijavi se za brezplačni račun
 3. Click *Create Environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
@@ -35,7 +35,7 @@ Now you should see an interface with a sidebar, a big main window with some text
 
 This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
-### Virtual Environment
+### Virtualno okolje
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
