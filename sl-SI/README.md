@@ -44,7 +44,7 @@ Ta vodič je delo organizacije [DjangoGirls](https://djangogirls.org/). Če najd
 
 ## Would you like to help us translate the tutorial into other languages?
 
-Currently, translations are being kept on crowdin.com platform at:
+Prevodi se trenutno nahajajo v aplikaciji crowdin.com na naslovu:
 
 https://crowdin.com/project/django-girls-tutorial
 
