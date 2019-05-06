@@ -1,0 +1,17 @@
+# default:
+*	@DjangoGirls/committers
+
+# language PR review teams for the respective translations:
+/de/	@DjangoGirls/de-pr
+/en/	@DjangoGirls/en-pr
+/es/	@DjangoGirls/es-pr
+/fr/	@DjangoGirls/fr-pr
+/it/	@DjangoGirls/it-pr
+/ja/	@DjangoGirls/ja-pr
+/ko/	@DjangoGirls/ko-pr
+/pl/	@DjangoGirls/pl-pr
+/pt/	@DjangoGirls/pt-pr
+/ru/	@DjangoGirls/ru-pr
+/tr/	@DjangoGirls/tr-pr
+/uk/	@DjangoGirls/uk-pr
+/zh/	@DjangoGirls/cn-pr
