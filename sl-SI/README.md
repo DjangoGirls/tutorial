@@ -4,7 +4,7 @@
 
 > This work is licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. To view a copy of this license, visit https://creativecommons.org/licenses/by-sa/4.0/
 
-## Welcome
+## Dobrodošli
 
 Welcome to the Django Girls Tutorial! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
 
@@ -30,7 +30,7 @@ Zgledal bo (približno) tako:
 
 > If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Naše mentorje in bivše udeležence delavnic smo prosili, da sodelujejo na tem forumu in ti pomagajo, če rabiš pomoč! Nič se ne boj, brez sramu vprašaj za pomoč!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+OK, [pa začnimo...](./how_the_internet_works/README.md)
 
 ## Following the tutorial at home
 
