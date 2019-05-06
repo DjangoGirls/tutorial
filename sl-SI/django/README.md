@@ -1,22 +1,22 @@
 # Kaj je Django?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. Ogrodje je skupek že napisanih programov, ki ti pomagajo spletne strani graditi hitreje in lažje.
+Django (*džango*) je brezplačno odprtokodno ogrodje, narejeno v programskem jeziku Python. Ogrodje je skupek že napisanih programov, ki ti pomagajo spletne strani graditi hitreje in lažje.
 
 Kot si opazila, obstajajo določeni gradniki, ki jih ima vsaka spletna stran: sistem za registriranje, plošča za upravljanje spletne strani, kontaktni obrazec, sistem za nalaganje datotek in podobno.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Na srečo so se našli ljudje, ki so to ugotovili in so skupaj razvili ogrodja (kot je Django), ki nam nudijo že narejene določene komponente spletne strani.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Ogrodja nas torej rešujejo pred ponovnim odkrivanjem stvari, ki so že dolgo znane oziroma narejene. To jasno precej pospeši postopek razvoja spletnih strani.
 
 ## Zakaj potrebujemo ogrodja?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Da bi res dobro razumeli, kaj pravzaprav je Django, si podrobneje oglejmo spletni strežnik. Prva stvar, ki jo mora strežnik vedeti je, da od njega želiš podatke o spletni strani.
 
-Predstavljaj si nabiralnik, ki čaka na prejeta pisma. Točno to počno spletni strežniki. The web server reads the letter and then sends a response with a webpage. Ta spletna stran pa mora jasno imeti neko vsebino. Pri ustvarjanju le-te, ti bo pomagal Django.
+Predstavljaj si nabiralnik, ki čaka na prejeta pisma. Točno to počno spletni strežniki. Preberejo pismo in pošljejo odgovor v obliki spletne strani. Ta spletna stran pa mora jasno imeti neko vsebino. Pri ustvarjanju le-te, ti bo pomagal Django.
 
 ## Kaj se zgodi, ko nekdo od našega strežnika zahteva spletno stran?
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Ko strežnik dobi prošnjo po spletni strani, jo preda Djangu, ta pa poskuša ugotoviti, kaj točno ta prošnja od njega hoče. Najprej pogleda naslov spletne strani in poskuša na podlagi le-tega ugotoviti, kaj se od njega zahteva. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
 Predstavljaj si poštarja, ko dostavlja pismo. Ko hodi po ulici, da bi ga dostavil, mora za vsak naslov preveriti, če je isti, kot tisti na pismu. Ko najde pravi naslov, pismo tam odloži. Django deluje povsem enako!
 
