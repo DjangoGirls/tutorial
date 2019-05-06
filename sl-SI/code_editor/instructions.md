@@ -1,6 +1,6 @@
 Obstaja veliko različnih urejevalnikov programske kode. Izbira je bolj ali manj stvar okusa. Python programerji običajno uporabljajo zmogljiva integrirana razvojna okolja (IDE - Integrated Development Environment) kot je PyCharm. Kot začetnici ti uporabe teh okolij ne priporočamo, saj so za tvoje potrebe dovolj preprostejši urejevalniki, ki so prav tako zmogljivi, vendar precej prijaznejši za uporabo.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Naši predlogi so našteti spodaj. Če nisi prepričana, katerega bi izbrala, za mnenje vprašaj še svojo mentorico. Z veseljem ti bo pomagala.
 
 ## Gedit
 
