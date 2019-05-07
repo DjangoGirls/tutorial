@@ -155,7 +155,7 @@ Puteți să afișați o listă de posturi publicate. Facem asta, filtrând postu
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+Din păcate, postul pe care noi i-am adăugat din linie de comandă Python încă nu este publicat. Dar putem schimba acesta! Dintâi trebuie să obținem postul pe care dorim să-l publicăm:
 
 {% filename %}command-line{% endfilename %}
 
@@ -163,7 +163,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-And then publish it with our `publish` method:
+Apoi îl publicăm, utilizând metoda `publish`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,7 +171,7 @@ And then publish it with our `publish` method:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+Acum încercăm să obținem o listă de posturile (apăsați săgeată trei ori și apoi `enter`):
 
 {% filename %}command-line{% endfilename %}
 
