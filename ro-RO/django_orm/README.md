@@ -180,9 +180,9 @@ Acum încercăm să obținem o listă de posturile (apăsați săgeată trei ori
 <QuerySet [<Post: Sample title>]>
 ```
 
-### Ordering objects
+### Ordonarea obiectelor
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+Utilizând QuerySets puteți să sortați listă de obiecte. Pentru a le sorta după tribubutul `created_date`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -191,7 +191,7 @@ QuerySets also allow you to order the list of objects. Let's try to order them b
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-We can also reverse the ordering by adding `-` at the beginning:
+Putem să inversăm sortare, adăugând `-` la început:
 
 {% filename %}command-line{% endfilename %}
 
