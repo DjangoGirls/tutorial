@@ -4,7 +4,7 @@
 
 ## Ce este un QuerySet?
 
-QuerySet este, în genere, o listă de obiecte de anumit model. QuerySets dă posibilitate de a citi, filtra și ordona date dintr-o bază de date.
+QuerySet este, în genere, o listă de obiecte de anumit model. QuerySets dă posibilitate de a citi, filtra și sorta date dintr-o bază de date.
 
 E mai ușo să învățăm după exemplu. Să ne încercăm?
 
@@ -180,7 +180,7 @@ Acum încercăm să obținem o listă de posturile (apăsați săgeată trei ori
 <QuerySet [<Post: Sample title>]>
 ```
 
-### Ordonarea obiectelor
+### Sortarea obiectelor
 
 Utilizând QuerySets puteți să sortați listă de obiecte. Pentru a le sorta după tribubutul `created_date`:
 
@@ -202,16 +202,16 @@ Putem să inversăm sortare, adăugând `-` la început:
 
 ### Interogările complexe, utilizând o serie de metode
 
-După cum ați văzut, niște metode ale `Post.objects` returnează QuerySet. Aceași metode pot să fie utilizate pentru filtrarea a QuerySet-ului, și voi returna un nou QuerySet. Thus, you can combine their effect by **chaining** them together:
+După cum ați văzut, niște metode ale `Post.objects` returnează QuerySet. Aceași metode pot să fie utilizate pentru filtrarea a QuerySet-ului, și voi returna un nou QuerySet. Astfel, puteți să combinați efectul, utilizând o serie (**chaining**) de filtre:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 <QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
-This is really powerful and lets you write quite complex queries.
+Acesta dă posibilitate de a executa interogările complexe.
 
-Cool! You're now ready for the next part! To close the shell, type this:
+Acum sunteți gată de următorul capitol! Pentru a închide linie de comandă executați:
 
 {% filename %}command-line{% endfilename %}
 
