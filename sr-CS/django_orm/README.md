@@ -80,7 +80,7 @@ Hajde da prvo uvezemo model korisnika:
 >>> from django.contrib.auth.models import User
 ```
 
-What users do we have in our database? Try this:
+Koje sve korisnike imamo u našoj bazi podataka? Pokušajte ovo da ukucate:
 
 {% filename %}command-line{% endfilename %}
 
@@ -89,7 +89,7 @@ What users do we have in our database? Try this:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+Ovo je super korisnik, kog smo kreirali ranije! Hajde da sada dobijemo instancu korisnika (prilagodite ovu liniju tako da u njoj piše Vaše korisničko ime):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,9 +97,9 @@ This is the superuser we created earlier! Let's get an instance of the user now 
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Kao što možete da vidite, sada dobijamo `korisnika` sa `korisničkim imenom` 'ola'. Odlično!
 
-Now we can finally create our post:
+Sada konačno možemo da kreiramo naš post:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,7 +108,7 @@ Now we can finally create our post:
 <Post: Sample title>
 ```
 
-Hurray! Wanna check if it worked?
+Uspeli smo! Želite li da proverite da li radi?
 
 {% filename %}command-line{% endfilename %}
 
@@ -117,9 +117,9 @@ Hurray! Wanna check if it worked?
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-There it is, one more post in the list!
+Evo ga, još jedan post na listi!
 
-### Add more posts
+### Dodajte još postova
 
 You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
 
