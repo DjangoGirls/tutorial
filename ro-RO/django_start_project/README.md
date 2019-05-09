@@ -1,6 +1,6 @@
 # Primul proiect Django!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> O parte capitolului acesta este bazată pe tutoriale realizate de Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
 > Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
