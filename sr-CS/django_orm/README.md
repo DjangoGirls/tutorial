@@ -30,7 +30,7 @@ Sada ste u Django interaktivnoj konzoli. To je nešto slično Python konzoli, sa
 
 ### Svi objekti
 
-Let's try to display all of our posts first. You can do that with the following command:
+Hajde prvo da pokušamo da prikažemo sve naše postove. To možete da uradite sledećom komandom:
 
 {% filename %}command-line{% endfilename %}
 
@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Ups! Pojavila se greška koja nam govori da post ne postoji. To je tačno - zaboravili smo da ga prvo uvezemo!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+Uvešćemo model `Post` iz `blog.models`. Hajde da sada ponovo pokušamo da prikažemo sve postove:
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,11 +58,11 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+Ovo je lista postova koje smo ranije kreirali. To smo učinili koristeći Django admin interfejs. Ali sada želimo da kreiramo nove postove koristeći Python. Kako ćemo to da uradimo?
 
-### Create object
+### Kreirajte objekat
 
-This is how you create a new Post object in database:
+Ovo je način na koji kreirate novi post objekat u bazi podataka:
 
 {% filename %}command-line{% endfilename %}
 
@@ -70,9 +70,9 @@ This is how you create a new Post object in database:
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+Ali nam nešto ovde nedostaje: `mi`. Potrebno je da prosledimo instancu modela `korisnik` kao autora. Kako da to uradimo?
 
-Let's import User model first:
+Hajde da prvo uvezemo model korisnika:
 
 {% filename %}command-line{% endfilename %}
 
