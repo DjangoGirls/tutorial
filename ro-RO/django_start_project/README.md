@@ -23,7 +23,7 @@ Denumirele unor fișiere și directorii sunt foarte importante în Django. Nu tr
 
 > Punct `.` este important pentru că el indică ca Django să fie instalat în directoriu curent (punct `.` este o referență).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Notă** Când executați comandă de mai sus, țineți minte că trebuie să tapați numai o parte care începe cu `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
