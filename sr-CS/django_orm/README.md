@@ -121,11 +121,11 @@ Evo ga, još jedan post na listi!
 
 ### Dodajte još postova
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+Sada možete i da se malo zabavite i da dodajete još postova kako biste razumeli kako ovo funkcioniše. Dodajte još 2-3 posta i pređite na naredni deo.
 
-### Filter objects
+### Filtrirajte objekte
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+Važan deo Query postavki je mogućnost da ih filtrirate. Hajde da pokušamo da pronađemo sve postove koje je kreirao korisnik "ola". Koristićemo `filter` umesto `all` u `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
 
 {% filename %}command-line{% endfilename %}
 
