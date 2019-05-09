@@ -125,7 +125,7 @@ Sada možete i da se malo zabavite i da dodajete još postova kako biste razumel
 
 ### Filtrirajte objekte
 
-Važan deo Query postavki je mogućnost da ih filtrirate. Hajde da pokušamo da pronađemo sve postove koje je kreirao korisnik "ola". Koristićemo `filter` umesto `all` u `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+Važan deo Query postavki je mogućnost da ih filtrirate. Hajde da pokušamo da pronađemo sve postove koje je kreirao korisnik "ola". Koristićemo `filter` umesto `all` u `Post.objects.all()`. U zagradama navodimo uslove koje postovi treba da zadovolje kako bi završili u našim query stavkama. U ovom slučaju, uslov je da `autor` treba da bude isto što i `ja`. Način na koji ćemo to predstaviti U Django-u je `author=me`. Sada, naš deo koda izgleda ovako:
 
 {% filename %}command-line{% endfilename %}
 
@@ -134,7 +134,7 @@ Važan deo Query postavki je mogućnost da ih filtrirate. Hajde da pokušamo da 
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+Ili možda želimo da vidimo sve postove koji sadrže reč "naslov" (eng. title) u `naslovu`?
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,7 +143,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Napomena** Postoje dve donje crte (`_`) između `naslova` i `sadržaja`. Django ORM korisnici koriste to pravilo da razdvoje nazive ("title") i operacije ili filtere ("contains"). Ukoliko koristite samo jednu donju crtu, dobićete grešku koja govori da ne posotje te ključne reči (eng. "FieldError: Cannot resolve keyword title_contains").
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
