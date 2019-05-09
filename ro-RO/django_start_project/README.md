@@ -8,9 +8,9 @@ O să creăm un mic blog!
 
 Primul pas este de a crea un nou proiect Django. În principiu, acesta înseamnă că o să executăm niște Django scripturi care vor crea o structură proiectului Django. Acesta este numai un număr de directoriile și fișierile pe care vom utiliza în viitor.
 
-Denumirele unor fișiere și directorii sunt foarte importante în Django. Nu trebuie să redenumiți fișierile pe care urmați o să le creați. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+Denumirele unor fișiere și directorii sunt foarte importante în Django. Nu trebuie să redenumiți fișierile pe care urmați o să le creați. Mutarea lor într-un loc diferit nu este o idee bună. Django trebuie să mențină o structură anumită pentru a afla lucruri importante.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Trebuie să țineți minte să executați toate comenzile în virtualenv. Dacă nu vedeți prefix-ul `(myvenv)` în linie de comandă, trebuie să activați virtualenv. Am explicat cum să faceți acesta în secțiune **Django installation** în capitolul **Working with virtualenv**. Executând `myvenv\Scripts\activate` în Windows sau `source myvenv/bin/activate` în Mac OS X sau Linux va face acesta.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
