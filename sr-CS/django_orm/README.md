@@ -1,23 +1,23 @@
 # Django ORM i Query postavke
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+U ovom poglavlju ćemo naučiti kako se Django povezuje sa bazom podataka i kako čuva te podatke. Hajde da to otkrijemo!
 
-## What is a QuerySet?
+## Šta su to Query postavke?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+Query postavke (eng. QuerySets) su lista objekata za dati model. One omogućavaju da čitate podatke iz baze, da ih filtrirate i sortirate.
 
-It's easiest to learn by example. Let's try this, shall we?
+Najlakše je da to naučite na primeru. Hajde da to pokušamo, hoćemo li?
 
 ## Django shell
 
-Open up your local console (not on PythonAnywhere) and type this command:
+Otvorite Vašu lokalnu konzolu (ne onu na PythonAnywhere) i ukucajte ovu komandu:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+Trebalo bi da dobijete ovo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -26,9 +26,9 @@ The effect should be like this:
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+Sada ste u Django interaktivnoj konzoli. To je nešto slično Python konzoli, samo sa dodatnim Django efektima :) Ovde takođe možete da koristite Python naredbe.
 
-### All objects
+### Svi objekti
 
 Let's try to display all of our posts first. You can do that with the following command:
 
