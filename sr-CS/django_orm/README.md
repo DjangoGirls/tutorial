@@ -145,7 +145,7 @@ Ili možda želimo da vidimo sve postove koji sadrže reč "naslov" (eng. title)
 
 > **Napomena** Postoje dve donje crte (`_`) između `naslova` i `sadržaja`. Django ORM korisnici koriste to pravilo da razdvoje nazive ("title") i operacije ili filtere ("contains"). Ukoliko koristite samo jednu donju crtu, dobićete grešku koja govori da ne posotje te ključne reči (eng. "FieldError: Cannot resolve keyword title_contains").
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+Možete takođe da dobijete listu svih objavljenih postova. To radimo filtriranjem svih postova koji imaju `published_date` podešen u prošlosti:
 
 {% filename %}command-line{% endfilename %}
 
