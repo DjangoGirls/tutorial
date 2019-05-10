@@ -89,11 +89,11 @@
 > 
 > به [GitHub.com](https://www.github.com) بروید و یک حساب کاربری رایگان برای خود بسازید. اگر این کار را در کارگاه برای اولین بار انجام می‌دهید حواستان باشد که رمز عبور خود را حفظ کنید یا به نر‌م‌افزار مدیریت رمز عبور خود بسپرید.
 > 
-> حالا یک مخزن یا repository بسازید و نام آن را "my-first-blog" بگذارید. Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+> حالا یک مخزن یا repository بسازید و نام آن را "my-first-blog" بگذارید. گزینه "initialize with a README" را علامت نخورده باقی بگذارید و هم چنین گزینه .gitignore را هم خالی بگذارید (ما بعداً آن را اضافه خواهیم کرد). هم چنین گزینه License را None بگذارید.
 > 
 > ![](images/new_github_repo.png)
 > 
-> > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> > **توجه** نام `my-first-blog` مهم است. شما می‌توانید اسم دیگری انتخاب کنید اما از این اسم زیاد استفاده خواهیم کرد و به یاد داشته باشید که اگر اسم دیگری گذاشتید هرجا لازم بود اسم انتخابی خود را استفاده کنید. It's probably easier to stick with the name `my-first-blog`.
 > 
 > On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 > 
