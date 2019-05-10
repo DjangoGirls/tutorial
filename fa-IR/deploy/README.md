@@ -51,30 +51,30 @@
 > 
 > **توجه** یکی از فایل هایی که در فایل `.gitignore` مشخص شده است فایل `db.sqlite3`<0><0> است. این فایل پایگاه داده محلی شماست جایی که تمام اطلاعات مربوط به کاربر و پست‌های وبلاگ شما در آن ذخیره می‌شود. ما از روش استاندارد برنامه نویسی استفاده خواهیم کرد به این معنی که ما از پایگاه داده‌های متفاوتی برای توسعه بر روی کامپیوتر محلی و سپس وبسایت اصلی که روی PythonAnywhere هست استفاده خواهیم کرد. پایگاه داده بر روی PythonAnywhere می‌تواند SQLite باشد همانند آنچه بر روی کامپیوتر خود از آن استفاده می‌کنید اما معمولاً از پایگاه داده MySQL برای وبسایت اصلی استفاده می‌کنیم که می‌تواند تعداد بسیار زیاد بازدیدکننده از سایت را مدیریت کند. علاوه بر این حذف کردن فایل SQLite در کپی مربوط به GitHub به این معنی است که تمام پست‌های وبلاگی و superuser هایی که تا الان ساخته‌اید فقط روی کامپیوتر خودتان مورد استفاده خواهد بود و برای محیط اصلی وبسایت باید دوباره آن‌ها را بسازید. شما باید از پایگاه داده محلی خود به عنوان یک زمین بازی خوب استفاده کنید که در آن می‌توانید چیزهای مختلف را آزمایش کنید و نگران نباشید که پست‌های واقعی خود را از وبلاگ اصلی خذف خواهید کرد.</blockquote> 
 > 
-> ایده خوبی است که همیشه قبل از زدن دستور `git add` یا هر وقت که مطمئن نیستید چه چیزی تغییر کرده، دستور `git status` را بزنید. این کار کمک می‌کند که از هر نوع غافلگیری مانند اضافه کردن یا commit کردن فایل اشتباه، جلوگیری شود. دستور ` وضعیت گیت </ 0> اطلاعاتی را در مورد هر گونه فایل های غیر قابل شناسایی / تغییر یافته / مرتب شده، وضعیت شاخه و موارد دیگر باز می گرداند. خروجی باید شبیه به موارد زیر باشد:</p>
-
-<p>% filename %}}خط فرمان% endfilename %}}</p>
-
-<pre><code>$ git status
-On branch master
-
-Initial commit
-
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-
-        .gitignore
-        blog/
-        manage.py
-        mysite/
-        requirements.txt
-
-nothing added to commit but untracked files present (use "git add" to track)
-`</pre> 
+> ایده خوبی است که همیشه قبل از زدن دستور `git add` یا هر وقت که مطمئن نیستید چه چیزی تغییر کرده، دستور `git status` را بزنید. این کار کمک می‌کند که از هر نوع غافلگیری مانند اضافه کردن یا commit کردن فایل اشتباه، جلوگیری شود. دستور `git status` اطلاعاتی در مورد فایل‌های ردگیری نشده untracked، اصلاح شده modified، استیج شده staged و نیز درمورد وضعیت شاخه ای که در آن هستیم اطلاعات می‌دهد. خروجی باید شبیه به موارد زیر باشد:
 > 
-> و در نهایت ما تغییرات ما را ذخیره می کنیم. به کنسول خود بروید و این دستورات را اجرا کنید:
+> {% filename %}command-line{% endfilename %}
 > 
-> % filename %}}خط فرمان %endfilename %}}
+>     $ git status
+>     On branch master
+>     
+>     Initial commit
+>     
+>     Untracked files:
+>       (use "git add <file>..." to include in what will be committed)
+>     
+>             .gitignore
+>             blog/
+>             manage.py
+>             mysite/
+>             requirements.txt
+>     
+>     nothing added to commit but untracked files present (use "git add" to track)
+>     
+> 
+> و در نهایت ما تغییرات را ذخیره می‌کنیم. به کنسول خود بروید و این دستورات را اجرا کنید:
+> 
+> {% filename %}command-line{% endfilename %}
 > 
 >     $ git add --all .
 >     $ git commit -m "My Django Girls app, first commit"
@@ -85,11 +85,11 @@ nothing added to commit but untracked files present (use "git add" to track)
 >      create mode 100644 mysite/wsgi.py
 >     
 > 
-> ## Pushing your code to GitHub
+> ## کدهای خود را به GitHub انتقال دهید
 > 
-> Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+> به [GitHub.com](https://www.github.com) بروید و یک حساب کاربری رایگان برای خود بسازید. اگر این کار را در کارگاه برای اولین بار انجام می‌دهید حواستان باشد که رمز عبور خود را حفظ کنید یا به نر‌م‌افزار مدیریت رمز عبور خود بسپرید.
 > 
-> Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+> حالا یک مخزن یا repository بسازید و نام آن را "my-first-blog" بگذارید. Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 > 
 > ![](images/new_github_repo.png)
 > 
