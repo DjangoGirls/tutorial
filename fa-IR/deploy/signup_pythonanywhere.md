@@ -1,6 +1,6 @@
 PythonAnywhere (پایتون همه جا) سرویسی است که برای اجرای کدهای نوشته شده با پایتون در سرورهای ابری استفاده می شود. ما از آن برای میزبانی سایت خود و قرار دادن آن بر روی اینترنت استفاده خواهیم کرد.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+بلاگی که در حال ساختن آن هستیم را بر روی PythonAnywhere قرار خواهیم داد. برای استفاده از سرویس PythonAnywhere میتوانید به صورت رایگان به عنوان تازه کار در آن ثبت نام کنید (ثبت نام به صورت تازه کار برای کار ما کفایت می کند. نیازی به ورود کارت اعتباری نیست).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
