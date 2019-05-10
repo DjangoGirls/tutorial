@@ -4,16 +4,16 @@ PythonAnywhere (پایتون همه جا) سرویسی است که برای اج
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![صفحه ثبت نام PythonAnywhere دارای امکان ثبت نام رایگان برای کاربران تازه کار می باشد](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> نکته: هنگام انتخاب نام کاربری خود به این نکته توجه داشته باشید که آدرس بلاگ شما با نام کاربری شما به صورت yourusername.pythonanywhere.com مشخص خواهد شد. بنابراین علاوه بر استفاده از نام خود به عنوان نام کاربری، میتوانید از یک اسم دلخواه برای بلاگ خود استفاده کنید. هچینین رمز عبور خود را به خاطر داشته باشید.
 
-## Creating a PythonAnywhere API token
+## ایجاد API توکن PythonAnywhere
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+این کار را فقط یکبار هنگام شروع انجام خواهید داد. پس از اینکه در PythonAnywhere ثبت نام کردید به داشبورد خود هدایت خواهید شد. در سمت راست بالای صفحه بر روی Account خود کلیک کنید:
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+![لینک رفتن به بالای صفحه](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+سپس به تب "API token" رفته و "Create new API token" را بزنید.
 
 ![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
