@@ -16,4 +16,4 @@ PythonAnywhere (پایتون همه جا) سرویسی است که برای اج
 
 سپس به تب "API token" رفته و "Create new API token" را بزنید.
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![تب API token در صفحه Account](../deploy/images/pythonanywhere_create_api_token.png)
