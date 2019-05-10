@@ -93,9 +93,9 @@
 > 
 > ![](images/new_github_repo.png)
 > 
-> > **توجه** نام `my-first-blog` مهم است. شما می‌توانید اسم دیگری انتخاب کنید اما از این اسم زیاد استفاده خواهیم کرد و به یاد داشته باشید که اگر اسم دیگری گذاشتید هرجا لازم بود اسم انتخابی خود را استفاده کنید. It's probably easier to stick with the name `my-first-blog`.
+> > **توجه** نام `my-first-blog` مهم است. شما می‌توانید اسم دیگری انتخاب کنید اما از این اسم زیاد استفاده خواهیم کرد و به یاد داشته باشید که اگر اسم دیگری گذاشتید هرجا لازم بود اسم انتخابی خود را استفاده کنید. احتمالاً راحت‌تر است که از همین اسم `my-first-blog` استفاده نمایید.
 > 
-> On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+> در صفحه بعد شما URL مخزن خود را خواهید دید که در برخی دستورات بعدی از آن استفاده خواهیم کرد:
 > 
 > ![](images/github_get_repo_url_screenshot.png)
 > 
