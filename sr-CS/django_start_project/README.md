@@ -21,9 +21,9 @@ Potrebno je da pokrenete sledeću komandu u Vašoj Mac OS ili Linux konzoli.** N
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Tačka `.` je izuzetno važna jer govori skripti da instalira Django u trenutnom direktorijumu (za koji je ta tačka `.` referenca).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Napomena** Kada kucate prethodnu komandu, zapamtite da kucate samo deo koji počinje sa `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
