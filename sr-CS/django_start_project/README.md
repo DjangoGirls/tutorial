@@ -8,7 +8,7 @@ Napravićemo mali blog!
 
 Prvi korak je da pokrenemo novi Django projekat. U suštini, to znači da ćemo pokrenuti neke skripte napisane u Django-u koje će kreirati kostur našeg Django projekta. To je samo skup direktorijuma i fajlova koji ćemo kasnije koristiti.
 
-Imena nekih fajlova i direktorijuma su veoma važna. Ne biste smeli da menjate nazive tih fajlova, koje ćemo sada kreirati. Takođe, njihovo premeštanje u druge foldere nije dobra ideja. Django treba da održi određenu strukturu kako bi mogao da pronađe važne stvari.
+Imena nekih fajlova i direktorijuma su veoma važna. Ne biste smeli da menjate nazive tih fajlova, koje ćemo sada kreirati. Takođe, ni njihovo premeštanje u druge foldere nije dobra ideja. Django treba da održi određenu strukturu kako bi mogao da pronađe važne stvari.
 
 > Ne zaboravite da sve pokrenete u virtualenv-u. Ukoliko ne vidite u svojoj konzoli prefiks `(myvenv)`, potrebno je da aktivirate svoj virtualenv. Objasnili smo kako da to uradite u poglavlju **Django instalacija** u delu **Rad sa virtualenv-om**. To možete da uradite kucanjem `myvenv\Scripts\activate` na Windows-u ili `source myvenv/bin/activate` na Mac OS X ili Linux-u.
 
