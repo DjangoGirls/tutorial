@@ -6,9 +6,9 @@
 
 Napravićemo mali blog!
 
-Prvi korak je da pokrenemo novi Django projekat. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+Prvi korak je da pokrenemo novi Django projekat. U suštini, to znači da ćemo pokrenuti neke skripte napisane u Django-u koje će kreirati kostur našeg Django projekta. To je samo skup direktorijuma i fajlova koji ćemo kasnije koristiti.
 
-The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
+Imena nekih fajlova i direktorijuma su veoma važna. Ne biste smeli da menjate nazive tih fajlova, koje ćemo sada kreirati. Takođe, njihovo premeštanje u druge foldere nije dobra ideja. Django treba da održi određenu strukturu kako bi mogao da pronađe važne stvari.
 
 > Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
