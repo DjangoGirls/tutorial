@@ -1,10 +1,10 @@
 # Vaš prvi Django projekat!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Deo ovog poglavlja je zasnovan na priručnicima iz Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> Delovi ovog poglavlja su takođe zasnovani na [django-marcador priručniku](http://django-marcador.keimlink.de/), pod Creative Commons Attribution-ShareAlike 4.0 Internacionalnom Licencom. Sva prava za django-marcador priručnik zadržava Markus Zapke-Gründemann.
 
-We're going to create a small blog!
+Napravićemo mali blog!
 
 The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
