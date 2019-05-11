@@ -180,9 +180,9 @@ Pokušajte sada da ponovo dobijete listu objavljenih postova (pritisnite tri put
 <QuerySet [<Post: Sample title>]>
 ```
 
-### Ordering objects
+### Sortiranje objekata
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+Query stavke Vam takođe omogućavaju da sortirate listu objekata. Hajde da pokušamo da ih sortiramo pomoću `created_date` polja:
 
 {% filename %}command-line{% endfilename %}
 
@@ -191,7 +191,7 @@ QuerySets also allow you to order the list of objects. Let's try to order them b
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-We can also reverse the ordering by adding `-` at the beginning:
+Možemo takođe i da obrnemo redosled sortiranog niza, dodavanjem `-` na samom početku:
 
 {% filename %}command-line{% endfilename %}
 
@@ -200,18 +200,18 @@ We can also reverse the ordering by adding `-` at the beginning:
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Complex queries through method-chaining
+### Kompleksni upiti i ulančane metode
 
-As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+Kao što ste i videli, neke metode iz `Post.objects` vraćaju query stavke. Iste metode se zapravo mogu pozivati i za querz stavke, nakon čega bi vraćale nove query stavke. Tako da, možete da to kombinujete **ulančavanjem** tih metoda zajedno:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 <QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
-This is really powerful and lets you write quite complex queries.
+Ovo je prilično moćno svojstvo i omogućava Vam da pišete prilično kompleksne upite.
 
-Cool! You're now ready for the next part! To close the shell, type this:
+Odlično! Sada ste spremni za sledeći deo! Da zatvorite shell, ukucajte sledeće:
 
 {% filename %}command-line{% endfilename %}
 
