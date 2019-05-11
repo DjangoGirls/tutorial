@@ -10,11 +10,11 @@ Prvi korak je da pokrenemo novi Django projekat. U suštini, to znači da ćemo 
 
 Imena nekih fajlova i direktorijuma su veoma važna. Ne biste smeli da menjate nazive tih fajlova, koje ćemo sada kreirati. Takođe, njihovo premeštanje u druge foldere nije dobra ideja. Django treba da održi određenu strukturu kako bi mogao da pronađe važne stvari.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Ne zaboravite da sve pokrenete u virtualenv-u. Ukoliko ne vidite u svojoj konzoli prefiks `(myvenv)`, potrebno je da aktivirate svoj virtualenv. Objasnili smo kako da to uradite u poglavlju **Django instalacija** u delu **Rad sa virtualenv-om**. To možete da uradite kucanjem `myvenv\Scripts\activate` na Windows-u ili `source myvenv/bin/activate` na Mac OS X ili Linux-u.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+Potrebno je da pokrenete sledeću komandu u Vašoj Mac OS ili Linux konzoli.** Ne zaboravite da dodate tačku `.` na kraju!**
 
 {% filename %}command-line{% endfilename %}
 
