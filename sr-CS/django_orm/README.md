@@ -143,7 +143,7 @@ Ili možda želimo da vidimo sve postove koji sadrže reč "naslov" (eng. title)
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Napomena** Postoje dve donje crte (`_`) između `naslova` i `sadržaja`. Django ORM korisnici koriste to pravilo da razdvoje nazive ("title") i operacije ili filtere ("contains"). Ukoliko koristite samo jednu donju crtu, dobićete grešku koja govori da ne posotje te ključne reči (eng. "FieldError: Cannot resolve keyword title_contains").
+> **Napomena** Postoje dve donje crte (`_`) između `naslova` i `sadržaja`. Django ORM korisnici koriste to pravilo da razdvoje nazive ("title") i operacije ili filtere ("contains"). Ukoliko koristite samo jednu donju crtu, dobićete grešku koja govori da te ključne reči ne postoje (eng. "FieldError: Cannot resolve keyword title_contains").
 
 Možete takođe da dobijete listu svih objavljenih postova. To radimo filtriranjem svih postova koji imaju `published_date` podešen u prošlosti:
 
@@ -202,7 +202,7 @@ Možemo takođe i da obrnemo redosled sortiranog niza, dodavanjem `-` na samom p
 
 ### Kompleksni upiti i ulančane metode
 
-Kao što ste i videli, neke metode iz `Post.objects` vraćaju query stavke. Iste metode se zapravo mogu pozivati i za querz stavke, nakon čega bi vraćale nove query stavke. Tako da, možete da to kombinujete **ulančavanjem** tih metoda zajedno:
+Kao što ste i videli, neke metode iz `Post.objects` vraćaju query stavke. Iste metode se zapravo mogu pozivati i za same query stavke, nakon čega bi vraćale nove query stavke. Tako da, možete to da kombinujete **ulančavanjem** tih metoda zajedno:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
