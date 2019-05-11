@@ -155,7 +155,7 @@ Možete takođe da dobijete listu svih objavljenih postova. To radimo filtriranj
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+Nažalost, post koji smo dodali pomoću Python konzole nije još uvek objavljen. Ali, to možemo da promenimo! Prvo je potrebno da dobijemo instancu željenog posta:
 
 {% filename %}command-line{% endfilename %}
 
@@ -163,7 +163,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-And then publish it with our `publish` method:
+A zatim da ga objavimo pomoću našeg `publish` metoda (metoda za objavljivanje):
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,7 +171,7 @@ And then publish it with our `publish` method:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+Pokušajte sada da ponovo dobijete listu objavljenih postova (pritisnite tri puta strelicu na gore, a zatim pritisnite `enter`):
 
 {% filename %}command-line{% endfilename %}
 
