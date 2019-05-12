@@ -4,9 +4,9 @@ Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application f
 
 Per costruire un sito web ci vogliono sempre componenti molto simili: il sistema per gestire l'autenticazione dell'utente (registrazione, accesso, logout), il pannello di amministrazione del sito, il sistema per caricare i file, ecc.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Non sei la prima e non sarai l'ultima persona ad affrontare questi problemi: altri programmatori prima di te li hanno affrontati e risolti, tanto spesso e tanto ripetitivamente da aver distillato varie *web framework* (Django è una delle tante) che mettono a disposizione tutti gli elementi necessari, pronti per l'uso.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+La funzione dei *framework* è evitare di dover reinventare l'acqua calda, e risparmiar tempo nel mettere in piedi un nuovo progetto.
 
 ## Perché ho bisogno di un framework?
 
