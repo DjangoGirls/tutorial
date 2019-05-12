@@ -39,26 +39,26 @@ Per il momento, non vogliamo uscire dalla console di Python. Vogliamo saperne di
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Bello! Hai visto come le risposte spuntano fuori? Python conosce la matematica! Prova altri comandi come:
 
 - `4 * 5`
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Per eseguire un calcolo esponenziale, per esempio 2 elevato alla potenza 3, digitiamo: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Giochicchia un po' con Python, e poi torna a leggere qui. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Come puoi vedere, Python è una buona calcolatrice. Ora ti starai sicuramente chiedendo cos'altro è capace di fare…
 
 ## Stringhe
 
-How about your name? Type your first name in quotes like this:
+Che ne dici di scrivere il tuo nome? Digitalo tra virgolette così:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,9 +67,9 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+Hai appena creato la tua prima stringa! Una stringa è una sequenza di caratteri che possono essere elaborati da un computer. La stringa deve sempre iniziare e finire con lo stesso carattere. Che può essere una virgoletta semplice (`'`) o doppia (`"`) (non c'è differenza!) Le virgolette dicono a Python che il contenuto al loro interno è una stringa.
 
-Strings can be strung together. Try this:
+Le stringhe possono essere legate assieme. Prova questo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Ciao Ola'
 ```
 
-You can also multiply strings with a number:
+Puoi anche moltiplicare le stringhe con un numero:
 
 {% filename %}command-line{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Se devi mettere un apostrofo nella tua stringa, hai due modi per farlo.
 
-Using double quotes:
+Utilizzando le virgolette doppie:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "L'ape Maja va"
 ```
 
-or escaping the apostrophe with a backslash (``):
+o facendo l'escape dell'apostrofo (cioè evitando che concluda la stringa) con una barra rovesciata (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "L'ape Maja va"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Bello, eh? Per vedere il tuo nome in maiuscolo, digita:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,7 +116,7 @@ Nice, huh? To see your name in uppercase letters, type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+Hai appena applicato il **metodo** `upper` sulla tua stringa! Un metodo (come `upper()`) è una sequenza di istruzioni che Python deve compiere su un oggetto dato (la stringa `"Ola"`) nel momento in cui viene applicato.
 
 If you want to know the number of letters contained in your name, there is a **function** for that too!
 
