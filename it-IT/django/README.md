@@ -16,11 +16,11 @@ Immagina una cassetta delle lettere (port), che venga continuamente tenuta d'occ
 
 ## Cosa succede quando qualcuno richiede un sito Web dal tuo server?
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Quando una richiesta arriva ad un server web, questi lo passa a Django, che la interpreta, per capire cosa si stia richiedendo precisamente. Django esamina prima di tutto l'indirizzo della pagina web richiesta, e decide come proseguire. Di questa parte si occupa lo **urlresolver** di Django, (nota che un indirizzo di una pagina web si chiama URL, che sta per Localizzatore Uniforme di Risorse, cosa che spiega il nome *urlresolver*). Questo urlresolver non è nulla di trascendentale, non fa che raccogliere una serie di schemi e prova a trovare la corrispondenza per lo URL. Django passa in rassegna gli schemi disponibili, ed al primo che si adatti, passa la richiesta alla funzione associata (che si chiama *view*).
 
 Immagina un postino con una lettera. Sta camminando per la strada e controlla ogni numero civico mettendolo a confronto con quello sulla lettera. Se corrisponde, mette lì la lettera. Questo è il modo in cui l'urlresolver funziona!
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Forse l'utente ha richiesto di cambiare qualcosa all'interno dei suoi dati? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+Nella funzione *view*, è lì che avviene il vero lavoro: per esempio cercare in una base dati l'informazione richiesta. Forse l'utente ha richiesto di cambiare qualcosa all'interno dei suoi dati? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
 The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
