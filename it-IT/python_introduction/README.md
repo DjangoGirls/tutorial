@@ -118,7 +118,7 @@ Bello, eh? Per vedere il tuo nome in maiuscolo, digita:
 
 Hai appena applicato il **metodo** `upper` sulla tua stringa! Un metodo (come `upper()`) è una sequenza di istruzioni che Python deve compiere su un oggetto dato (la stringa `"Ola"`) nel momento in cui viene applicato.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Se vuoi sapere il numero di lettere nel tuo nome, per questo c'è una **funzione**!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,22 +127,22 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+Ti stai chiedendo la differenza fra il chiamare una funzione con un `.` alla fine di una stringa (come `"Ola".upper()`) ed il chiamare prima la funzione e poi mettere la stringa tra parentesi? Beh, ci sono funzioni che appartengono ad oggetti, come `upper()`, che può essere eseguita solo su stringhe. In questo caso, chiamiamo la funzione **metodo**. Altre volte, le funzioni non appartengono a niente di specifico e possono essere utilizzate su diversi tipi di oggetti, proprio come `len()`. Ecco perché stiamo passando `"Ola"` come parametro alla funzione `len`.
 
 ### Indice
 
-OK, enough of strings. So far you've learned about:
+OK, basta con le stringhe. Ecco fino ad ora quanto hai imparato:
 
 - Il **prompt** -- Digitare i comandi (codice) nel prompt di Python restituisce risposte in Python
 - **Numeri e stringhe** -- In Python i numeri vengono utilizzati per la matematica e le stringhe per oggetti testuali
-- Gli **operatori** -- come + e *, combinano più valori per produrne uno nuovo
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- Gli **operatori** -- come `+` e `*`, combinano più valori per produrne uno nuovo
+- **funzioni** -- come `upper()` e `len()`, eseguono azioni su oggetti.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Fin qui le basi del linguaggio di programmazione che stiamo imparando. Pronta per qualcosa di più complicato? Scommetto di sì!
 
 ## Errori
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Proviamo una cosa diversa. Possiamo ottenere la lunghezza di un numero nella stessa forma in cui abbiamo potuto scoprire la lunghezza del nostro nome? Digita `len(304023)` e premi `Invio`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+Abbiamo ottenuto il nostro primo errore! L'icona {{ warning_icon }} è il nostro modo per suggerirti che il codice che stai per eseguire non funzionerà come ti aspetti. Fare errori (anche intenzionali) è un elemento importante dell'apprendimento!
 
 It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
