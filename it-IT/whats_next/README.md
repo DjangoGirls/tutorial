@@ -10,24 +10,24 @@ Dopodichè, assicurati di seguire Django Girls in [ Facebook ](http://facebook.c
 
 ### Mi puoi consigliare ulteriori risorse?
 
-Ma certo che sì! C'è una quantità *enorme* a dir poco, di risorse online per imparare i vari aspetti della programmazione — da farti perdere l'orientamento, tanto da impedirti di decidere in che direzione andare. Le Django Girls ti hanno preparato una selezione. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Ma certo che sì! C'è una quantità *enorme* a dir poco, di risorse online per imparare i vari aspetti della programmazione — da farti perdere l'orientamento, tanto da impedirti di decidere in che direzione andare. Le Django Girls ti hanno preparato una selezione. Qualunque fosse il tuo interesse prima di iniziare questo tutorial, e qualunque sia l'interesse che questo tutorial ha maggiormente stimolato in te, qui ci sono un paio di risorse libere (o risorse con buona parte libera) per tornare ad orientarti, ed andare nella direzione che t'interessa.
 
 #### Django
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- Il nostro altro libro, [Django Girls Tutorial: Estensioni](https://tutorial-extensions.djangogirls.org/)
+- [Il tutorial ufficiale di Django's](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Le lezioni video su come incominciare con Django](http://www.gettingstartedwithdjango.com/)
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS e JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Corso di sviluppo web di Codecademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [Corso Python di Codecademy](https://www.codecademy.com/learn/learn-python)
+- [Corso Python di Google](https://developers.google.com/edu/python/)
+- [Libro: Impara Python The Hard Way](http://learnpythonthehardway.org/book/) – gli esercizi iniziali sono gratuiti
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
