@@ -155,7 +155,7 @@ TypeError: object of type 'int' has no len()
 
 Abbiamo ottenuto il nostro primo errore! L'icona {{ warning_icon }} è il nostro modo per suggerirti che il codice che stai per eseguire non funzionerà come ti aspetti. Fare errori (anche intenzionali) è un elemento importante dell'apprendimento!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Il testo dice che gli oggetti di tipo "int" (interi, numeri interi) non hanno lunghezza. Quindi cosa possiamo fare ora? Forse possiamo scrivere il nostro numero come stringa? Le stringhe hanno una lunghezza, giusto?
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,7 +164,7 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Ha funzionato! Abbiamo utilizzato la funzione `str` all'interno della funzione `len`. `str()` converte tutto in stringhe.
 
 - La funzione `str` converte le cose in **stringhe**
 - La funzione `int` converte le cose in **numeri interi**
@@ -173,9 +173,9 @@ It worked! We used the `str` function inside of the `len` function. `str()` conv
 
 ## Variabili
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Un concetto importante nella programmazione è quello delle variabili. Una variabile non è altro che un nome per qualcosa, così puoi usarla più tardi. I programmatori usano le variabili per memorizzare dati, rendere il loro codice più leggibile in modo da non dover continuare a ricordare le cose.
 
-Let's say we want to create a new variable called `name`:
+Diciamo che vogliamo creare una nuova variabile chiamata `nome`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,9 +183,9 @@ Let's say we want to create a new variable called `name`:
 >>> nome = "Ola"
 ```
 
-We type name equals Ola.
+Praticamente, poniamo il valore della variabile <tt>nome</tt> uguale alla stringa "Ola".
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Come hai notato, il tuo programma non ha dato nessun risultato come ha fatto prima. Allora come facciamo a sapere che la variabile esiste veramente? semplicemente digita `nome` e premi `Invio`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Urrà! La tua prima variabile! :) E puoi anche cambiare il valore a cui essa si riferisce:
 
 {% filename %}command-line{% endfilename %}
 
