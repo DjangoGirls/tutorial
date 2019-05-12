@@ -10,11 +10,11 @@ Let's write some code!
 
 > Per chi ci segue da casa: questa parte si trova nel video [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Per iniziare a giocare con Python, devi avviare sul tuo computer una *linea di comando*. Dovresti già sapere come farlo – l'hai imparato nel capitolo [Introduzione alla riga di comando](../intro_to_command_line/README.md).
 
-Once you're ready, follow the instructions below.
+Una volta pronta, segui le istruzioni riportate di seguito.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3` su Mac OS/Linux e premi `invio`.
 
 {% filename %}command-line{% endfilename %}
 
