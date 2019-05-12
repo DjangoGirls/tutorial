@@ -29,7 +29,7 @@ Denumirele unor fișiere și directorii sunt foarte importante în Django. Nu tr
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+În Windows puteți să executați comandă următoare **(Nu uitați să adăugați punct `.` la sfârșit)**:
 
 {% filename %}command-line{% endfilename %}
 
