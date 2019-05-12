@@ -2,7 +2,7 @@
 
 Per aggiungere, modificare ed eliminare le pubblicazioni che abbiamo appena modellato, useremo l'amministratore di Django.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Apriamo `blog/admin.py` nell'editore testi e cambiamo il contenuto così:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -15,11 +15,11 @@ admin.site.register(Post)
 
 Come puoi vedere, stiamo importando (include) il modello di Post che abbiamo definito nel capitolo precedente. Per far si che il nostro modello sia visibile nella pagina di admin, dobbiamo registrare questo modello con `admin.site.register(Post)`.
 
-OK, è tempo di guardare il nostro Post. Ricorda di eseguire `python manage.py runserver` nella console per avviare il web server. Vai al tuo browser e digitare l'indirizzo http://127.0.0.1:8000/admin/. Vedrai una pagina login simile a questa:
+OK, è tempo di guardare il nostro Post. Ricorda di eseguire `python manage.py runserver` nella console per avviare il web server. Vai al tuo browser e digita l'indirizzo http://127.0.0.1:8000/admin/. Vedrai una pagina login simile a questa:
 
 ![Login page](images/login_page2.png)
 
-Per accedere, devi creare un * superutente* - una conta utente che ha il controllo su tutto sul sitio. Torna alla riga di comando, digita` python manage.py crearesuperutente`, e premi invio.
+Per accedere, devi creare un *superuser* - un utente che ha pieno controllo di tutto quello che c'è sul sito. Torna alla riga di comando, digita` python manage.py crearesuperutente`, e premi invio.
 
 > Ricorda, per scrivere nuovi comandi mentre il web server è insecuzione, apri una nuova finestra di terminale e attiva il tuo virtualenv. Esaminiamo come scrivere nuovi comandi nel capitolo ** Il tuo primo progetto Django! **, nel ** Avvio del server web** sezione.
 
