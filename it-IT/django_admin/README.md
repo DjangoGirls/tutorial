@@ -21,7 +21,7 @@ OK, è tempo di guardare il nostro Post. Ricorda di eseguire `python manage.py r
 
 Per accedere, devi creare un *superuser* - un utente che ha pieno controllo di tutto quello che c'è sul sito. Torna alla riga di comando, digita` python manage.py crearesuperutente`, e premi invio.
 
-> Ricorda, per scrivere nuovi comandi mentre il web server è insecuzione, apri una nuova finestra di terminale e attiva il tuo virtualenv. Esaminiamo come scrivere nuovi comandi nel capitolo ** Il tuo primo progetto Django! **, nel ** Avvio del server web** sezione.
+> Ricorda, per eseguire comandi lasciando in esecuzione il server web, apri una nuova finestra di terminale e attiva il tuo virtualenv. Abbiamo presentato come scrivere nuovi comandi nel capitolo **Il tuo primo progetto Django!**, nella sezione **Avvio del server web**.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
@@ -33,7 +33,7 @@ Per accedere, devi creare un *superuser* - un utente che ha pieno controllo di t
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Quando te lo richiede, digita il tuo username (minuscole, senza spazi), il indirizzo email, e la password che vorrai utilizzare. **Non allarmarti se non vedi la password mentre scrivi, così funziona.** Digitala, premi `enter`, e continua. Il risultato dovrebbe assomigliare a questo (dove il nome utente e l'email saranno quelli che hai inserito):
 
     Username: ola
     Email address: ola@example.com
@@ -42,13 +42,13 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Torna al navigatore web. Fai log in con le credenziali di superuser che hai appena definito, dovresti vedere il pannello di amministrazione di Django.
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Vai su Posts e giocaci un po', per capire come funziona. Aggiungi cinque o sei post. Non preoccuparti del contenuto — questo è visibile solo a te sul tuo computer personale — puoi fare copia-incolla di parti di questo tutorial per far presto. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Fa in modo di avere per lo meno un paio di post (non tutti però) con data di pubblicazione. Ci tornerà utile poi.
 
 ![Django admin](images/edit_post3.png)
 
