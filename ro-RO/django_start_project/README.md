@@ -23,7 +23,7 @@ Denumirele unor fișiere și directorii sunt foarte importante în Django. Nu tr
 
 > Punct `.` este important pentru că el indică ca Django să fie instalat în directoriu curent (punct `.` este o referență).
 > 
-> **Notă** Când executați comandă de mai sus, țineți minte că trebuie să tapați numai o parte care începe cu `django-admin`. `(myvenv) ~/djangogirls$` este doar un exemplu de prompt în linie de comandă care va arăta că trebuie de introdus comandă.
+> **Notă** Când executați comandă de mai sus, țineți minte că trebuie să tapați numai o parte care începe cu `django-admin`. `(myvenv) ~/djangogirls$` este doar un exemplu de prompt în linie de comandă care va arăta că trebuie de a tapa comandă.
 
 <!--endsec-->
 
@@ -38,11 +38,11 @@ Denumirele unor fișiere și directorii sunt foarte importante în Django. Nu tr
 
 > Punct `.` este foarte important pentru că astfel Django va fi instalat în directoriu curent (punct `.` este o abreviere).
 > 
-> **Notă** Când executați comandă de mai sus, țineți minte că trebuie să tapați numai o parte care începe cu `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Notă** Când executați comandă de mai sus, țineți minte că trebuie să tapați numai o parte care începe cu `django-admin.exe`. Parte `(myvenv) C:\Users\Name\djangogirls>` este un exemplu de prompt care va arăta că trebuie de a tapa o comandă în linie de comandă.
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` este un script care va crea directoriile și fișierile. Acum trebuie să aveți următoare structura directoriilor:
 
     djangogirls
     ├───manage.py
