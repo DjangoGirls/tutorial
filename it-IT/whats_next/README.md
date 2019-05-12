@@ -2,15 +2,15 @@
 
 Complimenti! **Sei veramente incredibile**. Siamo orgogliosi! <3
 
-### Cosa si fa ora?
+### E ora cosa si fa?
 
-Take a break and relax! You have just done something really huge.
+Per prima cosa: Pausa, Relax! Hai veramente appena fatto passi da gigante.
 
-Dopodichè, assicurati di seguire Django Girls in [ Facebook ](http://facebook.com/djangogirls) o [ Twitter](https://twitter.com/djangogirls) per essere aggiornato.
+Dopodichè, assicurati di seguire Django Girls in [ Facebook ](http://facebook.com/djangogirls) o [ Twitter](https://twitter.com/djangogirls) per restare aggiornata.
 
 ### Mi puoi consigliare ulteriori risorse?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Ma certo che sì! C'è una quantità *enorme* a dir poco, di risorse online per imparare i vari aspetti della programmazione — da farti perdere l'orientamento, tanto da impedirti di decidere in che direzione andare. Le Django Girls ti hanno preparato una selezione. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
