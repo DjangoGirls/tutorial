@@ -16,9 +16,9 @@ Hai mai avuto l'impressione che il mondo stia diventando sempre più tecnologico
 
 Beh, abbiamo buone notizie per te! La programmazione non è così complicata come sembra e vogliamo dimostrati quanto può essere divertente.
 
-Questo tutorial non ti trasformerà magicamente in un programmatore. Se vuoi diventare bravo/a, ci vorranno mesi o addirittura anni di apprendimento e pratica. Ma ti vogliamo dimostrare che la programmazione o creare siti web non è complicato come sembra. Proveremo a spiegarti diversi argomenti come meglio possiamo, in modo che non ti senta più intimidito/a dalla tecnologia.
+Questo tutorial non ti trasformerà magicamente in un programmatore. Se vuoi diventare bravo/a, ci vorranno mesi o addirittura anni di apprendimento e pratica. Ma ti vogliamo dimostrare che scrivere programmi o creare siti web non è complicato come sembra. Proveremo a spiegarti diversi argomenti come meglio possiamo, in modo che non ti senta più intimidito/a dalla tecnologia.
 
-Speriamo di essere in grado di farti amare la tecnologia come lo facciamo noi!
+Speriamo di riuscire a farti amare la tecnologia come la amiamo noi!
 
 ## Cosa imparerai durante questo tutorial?
 
@@ -28,7 +28,7 @@ Assomiglierà (più o meno) a questo:
 
 ![Figure 0.1](images/application.png)
 
-> Se lavori da solo/a al tutorial e non hai un insegnante che ti possa aiutare nel caso avessi qualche problema, abbiamo una chat per te: [!(Chat.svg)![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Abbiamo chiesto ai nostri insegnanti e partecipanti precedenti di esserci di volta in volta ed aiutare gli altri con il tutorial! Non aver paura di fare domande!
+> Se lavori da solo/a al tutorial e non hai un insegnante che ti possa aiutare nel caso avessi qualche problema, abbiamo una chat per te: [!(Chat.svg)![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Abbiamo chiesto ai nostri insegnanti e partecipanti precedenti di visitare la chat di tanto in tanto per aiutare gli altri con il tutorial! Non aver paura di fare domande!
 
 OK, [cominciamo dall'inizio...](./how_the_internet_works/README.md)
 
@@ -36,7 +36,7 @@ OK, [cominciamo dall'inizio...](./how_the_internet_works/README.md)
 
 È fantastico prendere parte a un workshop Django Girls, ma siamo consapevoli che non sempre è possibile essere presenti a un workshop. Questo è il motivo per cui ti invitiamo a provare seguendo il tutorial da casa. Per chi ci segue da casa, stiamo preparando alcuni video che renderanno più facile seguire il tutorial da sole. È ancora un lavoro in corso d'opera, ma col tempo ci saranno sempre saranno più argomenti trattati sul nostro canale YouTube, [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-In ogni capitolo già trattato, c'è un link che punta al video corretto.
+In ogni capitolo già trattato, c'è un link che punta al video corrispondente.
 
 ## Informazioni e contribuzioni
 
