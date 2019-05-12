@@ -2,7 +2,7 @@
 
 Django (/ˈdʒæŋɡoʊ/ *jang-goh*) is a free and open source web application framework, written in Python. Un web framework è un insieme di componenti che ti aiuta a sviluppare siti web più velocemente e facilmente.
 
-Quando si costruisce un sito web, si ha sempre bisogno di un insieme di componenti simili: un sistema per gestire l'autenticazione dell'utente (registrazione, accesso, logout), un pannello di amministrazione per il tuo sito web, un sistema per caricare i file, ecc.
+Per costruire un sito web ci vogliono sempre componenti molto simili: il sistema per gestire l'autenticazione dell'utente (registrazione, accesso, logout), il pannello di amministrazione del sito, il sistema per caricare i file, ecc.
 
 Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
