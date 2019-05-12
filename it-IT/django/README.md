@@ -10,9 +10,9 @@ La funzione dei *framework* è evitare di dover reinventare l'acqua calda, e ris
 
 ## Perché ho bisogno di un framework?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Per capire bene cosa è Django, a cosa serve davvero, diamo uno sguardo più da vicino ai server. Tanto per incominciare, bisogna che il server sappia che gli si sta chiedendo qualcosa, per esempio una pagina web.
 
-Immagina una cassetta delle lettere che monitora tutte le lettere in entrata (richieste). Questo è ciò che fa un web server. The web server reads the letter and then sends a response with a webpage. Ma quando vuoi inviare qualcosa, hai bisogno di avere qualche contenuto. E Django è ciò che ti aiuta a creare questo contenuto.
+Immagina una cassetta delle lettere (port), che venga continuamente tenuta d'occhio, nel caso arrivino lettere (request). Questo è ciò che fa un server: tiene d'occhio un *port* e sbriga le *request* in arrivo. Un server web legge il contenuto della richiesta ed invia una risposta, sotto forma di pagina web. Ma quando vuoi inviare qualcosa, hai bisogno di avere qualche contenuto. E Django è ciò che ti aiuta a creare questo contenuto.
 
 ## Cosa succede quando qualcuno richiede un sito Web dal tuo server?
 
