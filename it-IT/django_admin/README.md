@@ -52,6 +52,6 @@ Fa in modo di avere per lo meno un paio di post (non tutti però) con data di pu
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+Se vuoi saperne di più sulla applicazione Django admin, il punto di riferimento è la documentazione del progetto Django: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Arrivati a questo punto, wow, mi sembra proprio il caso di prendersi un buon caffè ri-energizzante, una frutta (o magari una camomilla). Hai appena creato il tuo primo modello Django — ti meriti una pausa!
