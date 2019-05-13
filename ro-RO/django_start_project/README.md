@@ -72,7 +72,7 @@ Hai să facem niște schimbări în fișier `mysite/settings.py`. Deschideți fi
 
 Ar fi plăcut să avem timp corect pe site-ul nostru. Deschideți [listă de fusuri orare din Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) și copiați fusul apropiat (TZ) (de exemplu `Europe/Berlin`).
 
-În `settings.py`, găsiți o linie care conține `TIME_ZONE` și o modificați ca ea să conțină fusul ales, De exemplu:
+În `settings.py`, găsiți o linie care conține `TIME_ZONE` și o modificați ca ea să conțină fusul ales. De exemplu:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
