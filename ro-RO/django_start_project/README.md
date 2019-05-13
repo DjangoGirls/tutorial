@@ -60,7 +60,7 @@ Denumirele unor fișiere și directorii sunt foarte importante în Django. Nu tr
 
 Fișierul `settings.py` conține configurația site-ului.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Ținteți minte am vorbit despre trasmiterea corespondenței, verificând unde să livrăm scriisoare? Fișierul `urls.py` conține o listă de scheme, utlizate de `urlresolver`.
 
 Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
 
