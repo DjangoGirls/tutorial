@@ -54,11 +54,11 @@ Denumirele unor fișiere și directorii sunt foarte importante în Django. Nu tr
     └───requirements.txt
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Notă**: în structura directoriului o să vedeți directoriu `venv` care a fost creat înainte.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` este un script care ajută în managementul site-ului. Cu ajutorul lui putem (printre alte lucruri) să pornim web serverul pe calculatorul fără a instala instrumente adăugătoare.
 
-The `settings.py` file contains the configuration of your website.
+Fișierul `settings.py` conține configurația site-ului.
 
 Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
 
