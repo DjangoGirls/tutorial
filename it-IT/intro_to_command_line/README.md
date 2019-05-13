@@ -22,13 +22,13 @@ Per cominciare a sperimentare, dobbiamo prima aprire la nostra interfaccia della
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+Dovreste vedere ora una finestra nera o bianca in attesa dei vostri comandi.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Se state utilizzando un Mac o Linux, vedrete probabilmente un`$` come questo:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}riga di comando{% endfilename %}
 
     $
     
@@ -37,9 +37,9 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+Su Windows, probebilmente vedrete un`>` come questo:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}riga di comando{% endfilename %}
 
     >
     
