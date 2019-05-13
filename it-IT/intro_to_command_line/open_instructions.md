@@ -5,13 +5,13 @@ A seconda della versione di Windows utilizzata e della propria tastiera, una del
 - Andare al menù Start o alla schermata Start e digitare "Prompt dei comandi" nella barra di ricerca.
 - Andare al menù Start-->Sistema Windows-->Prompt dei Comandi.
 - Andare a menù Start-->Tutti i Programmi-->Accessori-->Prompt dei Comandi.
-- Andare alla schermata Start, spostare il mouse nell'angolo in basso a sinistra dello schermo e cliccare sulla freccia in basso che comparirà (per i dispositivi touch screen, scorrere verso l'alto dal fondo dello schermo). La pagina App dovrebbe aprirsi. Click on Command Prompt in the Windows System section.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Andare alla schermata Start, spostare il mouse nell'angolo in basso a sinistra dello schermo e cliccare sulla freccia in basso che comparirà (per i dispositivi touch screen, scorrere verso l'alto dal fondo dello schermo). La pagina App dovrebbe aprirsi. Cliccare su Prompt dei Comandi nella sezione Sistema Windows.
+- Tenere premuto il tasto Windows e cliccare "X". Scegliere "Prompt dei Comandi" dal menù popup.
+- Tenere premuto il tasto Windows e premere "R" per aprire la finestra "Esegui". Digitare "cmd" nella casella di testo e premere OK.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+Più avanti in questo tutorial, dovrete avere due finestre di comando aperte contemporaneamente. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
 
 <!--endsec-->
 
