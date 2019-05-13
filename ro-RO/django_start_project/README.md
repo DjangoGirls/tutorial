@@ -62,13 +62,13 @@ Fișierul `settings.py` conține configurația site-ului.
 
 Ținteți minte am vorbit despre trasmiterea corespondenței, verificând unde să livrăm scriisoare? Fișierul `urls.py` conține o listă de scheme, utlizate de `urlresolver`.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+Hai să ignorăm până când alte fișierile pentru că n-o să le modificăm. Un lucru de care trebuie să ținem minte este ca să nu le ștergem!
 
-## Changing settings
+## Modificarea setărilor
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Hai să facem niște schimbări în fișier `mysite/settings.py`. Deschideți fișierul, utilizând editorul de cod pe care l-ai instalat.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Notă**: Țineți minte că fișierul `settings.py` este un fișier obiișnuit, ca și alte. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
 It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
