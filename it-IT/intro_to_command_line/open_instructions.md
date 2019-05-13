@@ -11,18 +11,18 @@ A seconda della versione di Windows utilizzata e della propria tastiera, una del
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Più avanti in questo tutorial, dovrete avere due finestre di comando aperte contemporaneamente. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+Più avanti in questo tutorial, dovrete avere due finestre di comando aperte contemporaneamente. In ogni caso, in alcune versioni di Windows, se già si ha una finestra di comando aperta e si cerca di aprirne un'altra con lo stesso metodo, vi mostrerà la finestra di comando già aperta. Provate adesso sul vostro computer e vedete cosa accade! Se si riesce ad aprire solo una finestra di comando, provare un altro dei metodi sopra indicati. Almeno uno permetterà l'apertura di una nuova finestra di comando.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Andare ad Applicazioni-->Funzionalità-->Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Probabilmente si troverà in Applicazioni--> Funzionalità--> Terminal, ma dipende dal sistema operativo. Nel caso in cui non si trovasse, provare a fare una ricerca Google. :)
 
 <!--endsec-->
