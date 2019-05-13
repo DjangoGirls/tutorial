@@ -1,6 +1,6 @@
-# Introduzione alla linea di comando
+# Introduzione all'interfaccia a riga di comando
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Messaggio per i lettori: questo capitolo si trova nel video [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
