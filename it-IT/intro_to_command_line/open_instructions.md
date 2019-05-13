@@ -2,10 +2,10 @@
 
 A seconda della versione di Windows utilizzata e della propria tastiera, una delle azioni seguenti dovrebbe aprire una finestra di comando (probabilmente sarà necessario fare più prove, ma non è necessario provare tutti i suggerimenti proposti):
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
+- Andare al menù Start o alla schermata Start e digitare "Prompt dei comandi" nella barra di ricerca.
+- Andare al menù Start-->Sistema Windows-->Prompt dei Comandi.
+- Andare a menù Start-->Tutti i Programmi-->Accessori-->Prompt dei Comandi.
+- Andare alla schermata Start, spostare il mouse nell'angolo in basso a sinistra dello schermo e cliccare sulla freccia in basso che comparirà (per i dispositivi touch screen, scorrere verso l'alto dal fondo dello schermo). La pagina App dovrebbe aprirsi. Click on Command Prompt in the Windows System section.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
 - Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
 
