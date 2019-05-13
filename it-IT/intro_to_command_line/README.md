@@ -2,21 +2,21 @@
 
 > Messaggio per i lettori: questo capitolo si trova nel video [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Non è grandioso? avete appena scritto la vostra prima linea di codice in pochi minuti! :)
 
-**Ti presentiamo il tuo primo nuovo amico: la linea di comando!**
+**Ti presentiamo il tuo primo nuovo amico: la riga di comando!**
 
 I prossimi passaggi ti mostreranno come utilizzare quella 'finestra nera' che tutti gli hacker utilizzano. Ti potrà sembrare un po' allarmante all'inizio, ma è solamente un prompt in attesa dei tuoi comandi.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Nota**: si prega di notare che in questo libro useremo il termine "directory" e "cartella" in maniera intercambiabile, ma sono la medesima cosa.
 
-## Cos'è la command line?
+## Cos'è la riga di comando?
 
-La finestra solitamente chiamata **comand-line** o **interfaccia della command-line**, è un'applicazione basata su testo che ti permette di visualizzare, gestire e manipolare i file sul tuo computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Altri nomi per la command line sono: *cmd*, *CLI*, *prompt*, *console* o *terminal*.
+La finestra solitamente chiamata **riga di comando** o **interfaccia della riga di comando**, è un'applicazione basata su testo che ti permette di visualizzare, gestire e modificare i file sul tuo computer. È simile a Windows Explorer o Finder su Mac, ma senza interfaccia grafica. Altri nomi della riga di comando sono: *cmd*, *CLI*, *prompt*, *console* o *terminal*.
 
-## Aprire l'interfaccia di command-line
+## Aprire l'interfaccia della riga di comando
 
-To start some experiments we need to open our command-line interface first.
+Per cominciare a sperimentare, dobbiamo prima aprire la nostra interfaccia della riga di comando.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
