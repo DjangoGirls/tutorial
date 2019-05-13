@@ -68,11 +68,11 @@ Hai să ignorăm până când alte fișierile pentru că n-o să le modificăm. 
 
 Hai să facem niște schimbări în fișier `mysite/settings.py`. Deschideți fișierul, utilizând editorul de cod pe care l-ai instalat.
 
-**Notă**: Țineți minte că fișierul `settings.py` este un fișier obiișnuit, ca și alte. Puteți să-l deschideți din editorul de cod, utilizând meniu "file -> open". O fereastră obișnuită trebuie să fie deschisă în care puteți să alegeți fișierul `settings.py`. Un alt mod de a deschide este de a merge la directoriu djangogirls de pe desktop și a face dublu-click pe el. Apoi alegeți editorul de cod din listă. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Notă**: Țineți minte că fișierul `settings.py` este un fișier obiișnuit, ca și alte. Puteți să-l deschideți din editorul de cod, utilizând meniu "file -> open". O fereastră obișnuită trebuie să fie deschisă în care puteți să alegeți fișierul `settings.py`. Un alt mod de a deschide este de a merge la directoriu djangogirls de pe desktop și a face dublu-click pe el. Apoi alegeți editorul de cod din listă. Este important să alegeți editorul de cod pentru că există programe care pot să deschidă fișierul, dar n-o să vă da voie să-l editați.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Ar fi plăcut să avem timp corect pe site-ul nostru. Deschideți [listă de fusuri orare din Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) și copiați fusul apropiat (TZ) (de exemplu `Europe/Berlin`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+În `settings.py`, găsiți o linie care conține `TIME_ZONE` și o modificați ca ea să conțină fusul ales, De exemplu:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
