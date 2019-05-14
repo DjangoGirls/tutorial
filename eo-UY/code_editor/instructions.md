@@ -1,6 +1,6 @@
 Estas multaj diversaj redaktiloj kaj la elekto esence bazu sur persona prefero. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Nia sugestoj trovis sube, sed bonvolu demandi al via trejnisto, kio estas ria prefero – plifalicos ricevi helpon de ri.
 
 ## Gedit
 
