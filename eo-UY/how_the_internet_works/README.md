@@ -1,4 +1,4 @@
-# How the Internet works
+# Kiel la interreto funkcias
 
 > For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
 > 
@@ -14,7 +14,7 @@ As with every file, we need to store HTML files somewhere on a hard disk. For th
 
 OK, but you want to know how the Internet looks, right?
 
-We drew you a picture! It looks like this:
+Ni desegnis bildon por vi. Ĝi aspektas tiel:
 
 ![Figure 1.1](images/internet_1.png)
 
@@ -22,9 +22,9 @@ Looks like a mess, right? In fact it is a network of connected machines (the abo
 
 ![Figure 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Ĝi fascinas, ĉu? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
-It looks like this:
+Ĝi aspektas tiel:
 
 ![Figure 1.3](images/internet_2.png)
 
