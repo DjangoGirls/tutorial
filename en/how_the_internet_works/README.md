@@ -9,7 +9,7 @@ We bet you use the Internet every day. But do you actually know what happens whe
 The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Just like your movies, music, or pictures.
 However, there is one part that is unique for websites: they include computer code called HTML.
 
-If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code,
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code,
 follow its instructions, and present these files that your website is made of, exactly the way you want.
 
 As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have
