@@ -2,7 +2,7 @@
 
 If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). Se vi volas, vi povas elekti instali tuj ĉion, kio estas en ĉi tio paĝo. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). Se vi volas, vi povas elekti instali tuj ĉion, kio estas en ĉi tio paĝo. Sed se vi volas komenci lerni aferojn antaŭ ol instali aron da aĵoj en vian komputilon, preterlasu ĉi tion ĉapitron kaj ni ekspliku al vi la instalerojn poste, kiam ili bezonatos.
 
 Bonŝancon!
 
@@ -55,13 +55,13 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Kiel la interreto funkcias](../how_the_internet_works/README.md)
 
 * [Introduction to the command line](../intro_to_command_line/README.md)
 
 * [Introduction to Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Kio estas Django?](../django/README.md)
 
 # Enjoy the workshop!
 
