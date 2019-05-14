@@ -28,4 +28,4 @@ The first reason is that code needs to be **plain text**, and the problem with p
 
 The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Ni poste vidos ĉion ĉi age. Baldaŭ vi iĝos pensanta pri via amata redaktilo kiel unu el viaj preferataj iloj. :)
