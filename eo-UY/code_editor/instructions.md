@@ -6,19 +6,19 @@ Our suggestions are below, but feel free to ask your coach what their preference
 
 Gedit is an open-source, free editor, available for all operating systems.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[Elŝutu ĝin ĉi tie](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
 Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
-[Download it here](https://www.sublimetext.com/3)
+[Elŝutu ĝin ĉi tie](https://www.sublimetext.com/3)
 
 ## Atom
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Elŝutu ĝin ĉi tie](https://atom.io/)
 
 ## Why are we installing a code editor?
 
