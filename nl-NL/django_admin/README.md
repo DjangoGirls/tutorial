@@ -33,7 +33,7 @@ Om in te loggen moet je eerst een *superuser* aanmaken: een gebruikersaccount wa
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Wanneer gevraagd, voer je username (kleine letters, zonder spaties), email adres en wachtwoord in. **Maak je geen zorgen als je niet kunt zien wat je typt bij het invoeren van je wachtwoord - dat hoort.** Typ het in en druk op `enter` om verder te gaan. De uitvoer zou er als volgt uit moeten zien (met natuurlijk je eigen gebruikersnaam en email):
 
     Username: ola
     Email address: ola@example.com
@@ -42,7 +42,7 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Ga weer terug naar je browser. Log in met de gegevens van de superuser die je zojuist hebt aangemaakt; je zou nu het dashboard van de Django admin moeten zien.
 
 ![Django admin](images/django_admin3.png)
 
