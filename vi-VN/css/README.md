@@ -16,7 +16,7 @@ Thuở đầu, nó được viết bởi một lập trình viên làm việc t�
 
 ## Cài đặt Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Để cài đặt Bootstrap, mở file `.html` trong trình biên tập code và thêm những dòng sau vào `<head>` :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
