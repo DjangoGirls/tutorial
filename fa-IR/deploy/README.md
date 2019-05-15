@@ -101,7 +101,7 @@
 > 
 > حالا وقت آن است که مخزن Git روی کامپیوتر شما را به مخزن موجود در Github وصل کنیم.
 > 
-> Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+> خط زیر را در کنسول خود تایپ کنید (این را `<your-github-username>` با نام کاربری و گذر واژه خود که در GitHub تعریف کرده این عوض کنید. علامت‌های کوچکتر و بزرگتر را استفاده نکنید. URL باید دقیقاً همان آدرسی باشد که کمی قبل‌تر دیده‌اید):
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
