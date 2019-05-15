@@ -1,14 +1,14 @@
 # Django formulieren
 
-Het laatste wat we nog willen doen op onze website is een mooie manier maken om blogposts toe te voegen en te bewerken. Django's `admin` is cool, maar het is nogal moeilijk om aan te passen en mooi te maken. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Het laatste wat we nog willen doen op onze website is een mooie manier maken om blogposts toe te voegen en te bewerken. Django's `admin` is cool, maar het is nogal moeilijk om aan te passen en mooi te maken. Met `forms` hebben we absolute controle over onze interface - we kunnen bijna alles doen wat we willen!
 
-The nice thing about Django forms is that we can either define one from scratch or create a `ModelForm` which will save the result of the form to the model.
+Het mooie aan Django formulieren is dat we óf één helemaal zelf kunnen definiëren, óf een `ModelForm` kunnen maken waarmee de inhoud van het formulier in het model opgeslagen wordt.
 
-This is exactly what we want to do: we will create a form for our `Post` model.
+Dit is precies wat we willen doen: we gaan een formulier maken voor ons `Post` model.
 
-Like every important part of Django, forms have their own file: `forms.py`.
+Zoals elk belangrijk onderdeel van Django, hebben formulieren hun eigen bestand: `forms.py`.
 
-We need to create a file with this name in the `blog` directory.
+Eerst maken we een bestand aan met deze naam in de `blog` map.
 
     blog
        └── forms.py
