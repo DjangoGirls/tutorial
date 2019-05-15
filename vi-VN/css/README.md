@@ -25,13 +25,13 @@ Thuở đầu, nó được viết bởi một lập trình viên làm việc t�
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Việc này không thêm file vào bộ code của bạn mà trỏ đến các file đang tồn tại trên internet. Nên cứ mạnh dạn thêm vào code của bạn và tải lại trang. Xem có gì nào!
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Trông cũng được đấy chứ!
 
-## Static files in Django
+## Các thành phần cố định (Static) trong Django
 
 Finally we will take a closer look at these things we've been calling **static files**. Static files are all your CSS and images. Their content doesn't depend on the request context and will be the same for every user.
 
