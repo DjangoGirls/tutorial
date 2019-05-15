@@ -14,7 +14,7 @@ Eerst maken we een bestand aan met deze naam in de `blog` map.
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+Ok, open het bestand in je editor en schrijf de volgende code:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,7 +30,7 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+We moeten eerst Django formulieren importeren (`from django import forms`), net zoals ons `Post` model (`from .models import Post`).
 
 `PostForm`, as you probably suspect, is the name of our form. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
 
