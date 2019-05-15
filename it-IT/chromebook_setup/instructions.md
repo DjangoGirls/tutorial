@@ -47,24 +47,24 @@ Nel terminale, in fondo all'interfaccia Cloud9, esegui il seguente codice:
     sudo apt install python3.6-venv
     
 
-If this still doesn't work, ask your coach for some help.
+Se non funziona, chiedi aiuto all'insegnante.
 
-Next, run:
+Poi esegui:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    mkdir djangogirls
+    mkdir djangogirls 
     cd djangogirls
-    python3.6 -mvenv myvenv
-    source myvenv/bin/activate
+    python3.6 -mvenv myvenv 
+    source myvenv/bin/activate 
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(nota che nell'ultima linea abbiamo usato una tilde seguita dal segno 'uguale':`~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Crea un account [GitHub](https://github.com).
 
 ### PythonAnywhere
 
