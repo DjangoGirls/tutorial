@@ -1,4 +1,4 @@
-# دیپلوی!
+# منتشر کردن!
 
 > **توجه داشته باشید** که قسمت های پیش رو ممکن است کمی سخت به نظر برسد. یکی از مهم ترین قسمت های توسعه وب سایت, دیپلوی می باشد. این فصل در وسط آموزش قرار گرفته است، بنابراین مربی شما می تواندبه شما در راه اندازی آنلاین وبسایتتان کمک کند. این به این معنی است که شما می‌توانید به تنهایی ادامه‌ی تمرین خود را به اتمام برسانید حتی اگر زمان کارگاه به پایان برسد.
 
@@ -151,20 +151,20 @@
 > 
 > این دستور باید چیزهایی شبیه به `Collecting pythonanywhere` بر روی صفحه نشان دهد و در انتها نیز این پیغام `Successfully installed (...) pythonanywhere- (...)` نمایش داده خواهد شد.
 > 
-> حالا ما برنامه کمکی را اجرا میکنیم تا به طور اتوماتیک برنامه ما را از GitHub بخواند. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+> حالا ما برنامه کمکی را اجرا میکنیم تا به طور اتوماتیک برنامه ما را از GitHub بخواند. خطوط زیر را در کنسول PythonAnywhere بنویسید (فراموش نکنید که نام کاربری GitHub را به جای `<your-github-username>`بنویسید در نتیجه URL شما مانند URL اختصاصی شما در GitHub میشود):
 > 
-> {% filename %}PythonAnywhere command-line{% endfilename %}
+> {% filename %}command-line{% endfilename %}
 > 
 >     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 >     
 > 
-> As you watch that running, you'll be able to see what it's doing:
+> همینطور که به اجراشدن آن نگاه می‌کنید می‌توانید بفهمید که چه کاری انجام می‌دهد:
 > 
-> - Downloading your code from GitHub
-> - Creating a virtualenv on PythonAnywhere, just like the one on your own computer
-> - Updating your settings file with some deployment settings
-> - Setting up a database on PythonAnywhere using the `manage.py migrate` command
-> - Setting up your static files (we'll learn about these later)
+> - دانلود کردن کد شما از GitHub
+> - ساختن یک محیط مجازی virtualenv بر روی PythonAnywhere شبیه آنچه که بر روی کامپیوتر خود داشتید
+> - به روزرسانی برخی از تنظیمات شما با تنظیمات مورد نیاز برای انتشار
+> - تنظیم کردن یک دیتابیس در PythonAnywhere با استفاده از دستور `manage.py migrate`
+> - تنظیم کردن فایل‌های ثابت شما (بعداً درمورد آن‌ها یاد خواهیم گرفت)
 > - And configuring PythonAnywhere to serve your web app via its API
 > 
 > On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
