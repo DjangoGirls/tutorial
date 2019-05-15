@@ -140,18 +140,18 @@
 > 
 > ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 > 
-> > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> > **توجه** PythonAnywhere بر مبنای لینوکس است، بنابراین اگر روی ویندوز کار می‌کنید این محیط خط فرمان با آنچه در ویندوز دارید کمی متفاوت است.
 > 
-> Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+> منتشر کردن یک اپلیکیشن تحت وی بر روی PythonAnywhere شامل آوردن کدها از GitHub و تنظیم کردن PythonAnywher برای تشخیص آن و اجرا کردنش به عنوان یک برنامه تحت وب است. روش های دستی برای این کار وجود دارد اما PythonAnywhere یک ابزار کمکی دارد که همه این کارها را برای شما انجام می‌دهد. اجازه بدهید اول از همه این ابزار را نصب کنیم:
 > 
-> {% filename %}PythonAnywhere command-line{% endfilename %}
+> {% filename %}command-line{% endfilename %}
 > 
 >     $ pip3.6 install --user pythonanywhere
 >     
 > 
-> That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+> این دستور باید چیزهایی شبیه به `Collecting pythonanywhere` بر روی صفحه نشان دهد و در انتها نیز این پیغام `Successfully installed (...) pythonanywhere- (...)` نمایش داده خواهد شد.
 > 
-> Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+> حالا ما برنامه کمکی را اجرا میکنیم تا به طور اتوماتیک برنامه ما را از GitHub بخواند. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 > 
 > {% filename %}PythonAnywhere command-line{% endfilename %}
 > 
