@@ -2,7 +2,7 @@ Bạn có thể [bỏ qua phần này](http://tutorial.djangogirls.org/en/instal
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE là một công cụ hỗ trợ viết code và giúp bạn truy cập vào máy tính đang chạy trên Internet, nơi mà bạn có thể cài đặt, viết và chạy chương trình trên đó. Trong suốt bài hướng dẫn này, cloud IDE sẽ hoạt động như *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+Cloud IDE là một công cụ hỗ trợ viết code và giúp bạn truy cập vào máy tính đang chạy trên Internet, nơi mà bạn có thể cài đặt, viết và chạy chương trình trên đó. Trong suốt bài hướng dẫn này, cloud IDE sẽ hoạt động như *local machine*. Bạn vẫn sẽ chạy lệnh trên terminal như trên OS X, Ubuntu, hay Windows, chỉ khác là terminal của bạn được kết nối với một máy tính đang nằm trên cloud của IDE và đã được cloud IDE sắp xếp cho bạn. running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Đây là hướng dẫn cho cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). Bạn có thể chọn 1 trong số các IDE này, hướng dẫn như sau.
 
 #### PaizaCloud Cloud IDE
 
