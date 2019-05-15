@@ -99,7 +99,7 @@
 > 
 > ![](images/github_get_repo_url_screenshot.png)
 > 
-> Now we need to hook up the Git repository on your computer to the one up on GitHub.
+> حالا وقت آن است که مخزن Git روی کامپیوتر شما را به مخزن موجود در Github وصل کنیم.
 > 
 > Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
 > 
