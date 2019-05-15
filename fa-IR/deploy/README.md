@@ -103,7 +103,7 @@
 > 
 > خط زیر را در کنسول خود تایپ کنید (این را `<your-github-username>` با نام کاربری و گذر واژه خود که در GitHub تعریف کرده این عوض کنید. علامت‌های کوچکتر و بزرگتر را استفاده نکنید. URL باید دقیقاً همان آدرسی باشد که کمی قبل‌تر دیده‌اید):
 > 
-> {% filename %}خط فرمان{% endfilename %}
+> {% filename %}command-line{% endfilename %}
 > 
 >     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
 >     $ git push -u origin master
@@ -124,11 +124,11 @@
 > 
 > <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 > 
-> Your code is now on GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+> کد شما الان روی GitHub است. بروید و آن را کنترل کنید! خواهید دید که کدهای شما در جای خوبی است، کدهای [Django](https://github.com/django/django)، [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) و بسیاری نرم‌افزارهای متن باز فوق العاده دیگر هم کدهایشان را در GitHub قرار داده‌اند. :)
 > 
-> # Setting up our blog on PythonAnywhere
+> # تنظیم کردن وبلاگ بر روی PythonAnywhere
 > 
-> ## Sign up for a PythonAnywhere account
+> ## یک حساب کاربری بر روی PythonAnywhere بسازید
 > 
 > > **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
 > 
