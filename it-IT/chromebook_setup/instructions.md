@@ -70,6 +70,6 @@ Crea un account [GitHub](https://github.com).
 
 Il tutorial Django Girls comprende una sezione della cosiddetta distribuzione, che consiste nel prendere il codice della tua nuova applicazione web e spostarlo su un computer pubblicamente accessibile (chiamato server) in modo che altre persone possano vedere il tuo lavoro.
 
-Questa parte risulterà un po' strana se segui il tutorial su un Chromebook, in quanto stiamo già usando un computer collegato a Internet (a differenza, ad esempio, di un laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Questa parte risulterà un po' strana se segui il tutorial su un Chromebook, in quanto stiamo già usando un computer collegato a Internet (a differenza, ad esempio, di un laptop). Tuttavia è importante, se pensiamo al nostro Cloud9 come a uno spazio dove abbiamo il nostro "lavoro in corso", e a Python Anywhere come a uno spazio dove mostrare i nostri programmi quando sono più completi.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Quindi, crea un nuovo account Python Anywhere su [www.pythonanywhere.com](https://www.pythonanywhere.com).
