@@ -37,13 +37,13 @@ This bottom area is your terminal. You can use the terminal to send instructions
 
 ### Ambiente virtuale
 
-Un ambiente virtuale (in inglese virtual environment, abbreviato spesso in virtualenv) è come una scatola privata in cui possiamo mettere del codice per un progetto su cui stiamo lavorando. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un ambiente virtuale (in inglese virtual environment, abbreviato spesso in virtualenv) è come una scatola privata in cui possiamo mettere del codice per un progetto su cui stiamo lavorando. Lo usiamo per tenere separate le diverse parti di codice che ci servono per i nostri progetti, in modo da non creare confusione tra un progetto e l'altro.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Nel terminale, in fondo all'interfaccia Cloud9, esegui il seguente codice:
 
 {% filename %}Cloud 9{% endfilename %}
 
-    sudo apt update
+    sudo apt update 
     sudo apt install python3.6-venv
     
 
