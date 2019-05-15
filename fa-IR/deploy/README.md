@@ -130,13 +130,13 @@
 > 
 > ## یک حساب کاربری بر روی PythonAnywhere بسازید
 > 
-> > **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> > **توجه** شما ممکن است کم قبل‌تر و در مراحل نصب یک حساب کاربری در PythonAnywhere درست کرده باشید. اگر چنین است نیاز نیست که حساب کاربری دیگری بسازید.
 > 
 > {% include "/deploy/signup_pythonanywhere.md" %}
 > 
-> ## Configuring our site on PythonAnywhere
+> ## وبسایت‌مان را بر روی PythonAnywhere تنظیم کنیم
 > 
-> Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+> با کلیک کردن بر روی لوگو و انتخاب گزینه شروع کنسول "Bash" به [داشبورد PythonAnywhere ](https://www.pythonanywhere.com/) بروید. این نسخه PythonAnywhere از محیط خط فرمان است، شبیه آنچه در کامپیوتر خود دارید.
 > 
 > ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 > 
