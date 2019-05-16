@@ -60,7 +60,7 @@ Next, run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(ṣe àkíyèsí pé lórí ìlà ìkẹyìn a lo àmì fàágùn tí àmì ìdọ́gba sì tẹ̀le: `~=`).
 
 ### GitHub
 
