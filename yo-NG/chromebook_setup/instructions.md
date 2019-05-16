@@ -11,7 +11,7 @@ Cloud IDE jẹ́ irinṣẹ́ kan èyí tí yíò fún ẹ ní olóòtú kóòd�
 3. Tẹ *New Server*
 4. Tẹ bọ́tìnnì Terminal (ní apá òsì ti fèrèsé náà)
 
-Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
+Ní báyìí ó yẹ ko rí atọ́kùn kan pẹ̀lú pẹpẹ-ẹ̀gbẹ́ kan, àwọn bọ́tìnnì ní apá òsì náà. Tẹ bọ́tìnnì "Terminal" láti ṣí fèrèsé èbúté pẹ̀lú ìṣítí bíi èyí:
 
 {% filename %}Terminal{% endfilename %}
 
