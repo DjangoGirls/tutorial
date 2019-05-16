@@ -4,7 +4,7 @@ Selamatkan dirimu! ** Anda benar-benar hebat </ 0> . Kami bangga <3</p>
 
 ### Apa yang harus dilakukan sekarang?
 
-Take a break and relax! You have just done something really huge.
+Istirahat sejenak dan santai! Anda baru saja melakukan hal besar.
 
 Setelah itu, pastikan untuk mengikuti Django Girls di  Facebook </ 0> atau  Twitter </ 1> untuk tetap mengikuti perkembangan.</p> 
 
