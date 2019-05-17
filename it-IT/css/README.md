@@ -203,7 +203,7 @@ E ora aggiungi una classe `post` al tuo `div` che contiene un articolo del blog.
 </div>
 ```
 
-Ora aggiungiamo dei blocchi di codice ai nostri nuovi selettori. I selettori che iniziano con `.` indicano una classe. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Ora aggiungiamo dei blocchi di codice ai nostri nuovi selettori. I selettori che iniziano con `.` indicano una classe. Sul Web ci sono diversi ottimi tutorial e spiegazioni sui CSS che possono aiutarti a capire il codice che stiamo per scrivere. Per ora, copia e incolla quanto segue nel tuo file `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
