@@ -164,7 +164,7 @@ Devi essere nella directory che contiene il file di `manage.py` (la directory `d
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Se invece stai usando un Chromebook, digita questo comando:
 
 {% filename %}Cloud 9{% endfilename %}
 
