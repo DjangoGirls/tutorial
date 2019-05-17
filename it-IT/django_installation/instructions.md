@@ -152,9 +152,9 @@ OK, abbiamo tutte le dipendenze importanti pronte. Finalmente possiamo installar
 
 ## Installare Django
 
-Now that you have your `virtualenv` started, you can install Django.
+Ora che hai avviato il tuo `virtualenv`, puoi installare Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Prima però dobbiamo assicurarci di avere la versione più recente di `pip`, il software che useremo per installare Django:
 
 {% filename %}command-line{% endfilename %}
 
@@ -171,14 +171,14 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Nel tuo file `djangogirls/requirements.txt` aggiungi il testo seguente:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+Ora esegui `pip install -r requirements.txt` per installare Django.
 
 {% filename %}command-line{% endfilename %}
 
