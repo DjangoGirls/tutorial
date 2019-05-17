@@ -37,7 +37,7 @@ Agbègbè ìsàlẹ̀ yìí ni èbúté rẹ. O lè lo èbúté náà láti fi �
 
 ### Àyíká Àìrí
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Àyíká àìrí kan (tí a tún pè ní virtualenv) dà bíi àpótí àdáni kan tí a lè kó kóòdù kọ̀mpútà tó wúlò sínú rẹ̀ fún iṣé kan tí a n ṣiṣẹ́ lórí. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
 In your terminal at the bottom of the Cloud 9 interface, run the following:
 
