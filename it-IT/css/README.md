@@ -16,7 +16,7 @@ Bootstrap è uno dei framework HTML e CSS più poplari per sviluppare bellissimi
 
 ## Installare Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Per installare Bootstrap, apri il tuo file `.html` nell'editor di codice e aggiungi la riga seguente alla sezione `<head>`:
 
 {% filename %}blog/templates/blog/post_list{% endfilename %}
 
@@ -74,7 +74,7 @@ Aggiungi il seguente codice nel tuo file `static/css/blog.css`:
 
 ```css
 h1 a, h2 a {
-    color: #C25100;
+   color: #C25100;
 }
 
 ```
