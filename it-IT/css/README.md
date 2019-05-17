@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` è un esempio di selettore CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Quindi quando si ha qualcosa come `<h1><a href="">link</a></h1>`, lo stile `h1 a` verrà applicato. In questo caso stiamo impostando il colore `#C25100`, che corrisponde all'arancione scuro. Puoi inserire il colore che preferisci, ma assicurati che ci sia un buon contrasto con lo sfondo bianco!
+`h1 a` è un esempio di selettore CSS. Significa che stiamo applicando i nostri fogli di stile ad ogni elemento `a` all'interno di un elemento `h1`; il selettore `h2 a` si comporta allo stesso modo con gli elementi `h2`. Quindi quando si ha qualcosa come `<h1><a href="">link</a></h1>`, lo stile `h1 a` verrà applicato. In questo caso stiamo impostando il colore `#C25100`, che corrisponde all'arancione scuro. Puoi inserire il colore che preferisci, ma assicurati che ci sia un buon contrasto con lo sfondo bianco!
 
 In un file CSS definiamo lo stile degli elementi presenti nel file HTML. Il primo modo per identificare gli elementi è attraverso il loro nome. Potresti ricordarli come tags dalla sezione sull'HTML. Cose come `a`, `h1` e `body` sono tutti esempi di nomi di elementi. Possiamo identificare anche con l'attributo `class` o l'attributo `id`. Class e id sono i nomi che assegni agli elementi. Le classi definiscono gruppi di elementi mentre gli id indicano uno specifico elemento. Per esempio puoi identificare il tag seguente usando il nome `a`, la classe `external_link` o l'id `link_to_wiki_page`:
 
@@ -209,50 +209,49 @@ Ora aggiungiamo dei blocchi di codice ai nostri nuovi selettori. I selettori che
 
 ```css
 .page-header {
-    background-color: #C25100;
-    margin-top: 0;
-    padding: 20px 20px 20px 40px;
-}
+     background-color: #C25100;
+     margin-top: 0;
+     padding: 20px 20px 20px 40px; 
+} 
 
 .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {
-    color: #ffffff;
-    font-size: 36pt;
-    text-decoration: none;
-}
+     color: #ffffff;
+     font-size: 36pt;
+     text-decoration: none; 
+} 
 
 .content {
-    margin-left: 40px;
-}
+     margin-left: 40px; 
+} 
 
 h1, h2, h3, h4 {
-    font-family: 'Lobster', cursive;
-}
+     font-family: 'Lobster', cursive; 
+} 
 
 .date {
-    color: #828282;
+     color: #828282; 
 }
-
+ 
 .save {
-    float: right;
-}
+     float: right; } 
 
 .post-form textarea, .post-form input {
-    width: 100%;
-}
+     width: 100%; 
+} 
 
 .top-menu, .top-menu:hover, .top-menu:visited {
-    color: #ffffff;
-    float: right;
-    font-size: 26pt;
-    margin-right: 20px;
-}
+     color: #ffffff;
+     float: right;
+     font-size: 26pt;
+     margin-right: 20px; 
+} 
 
 .post {
-    margin-bottom: 70px;
-}
+     margin-bottom: 70px; 
+} 
 
 .post h2 a, .post h2 a:visited {
-    color: #000000;
+     color: #000000; 
 }
 ```
 
