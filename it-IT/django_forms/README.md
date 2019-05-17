@@ -14,7 +14,7 @@ Dobbiamo creare un file con questo nome all'interno della cartella `blog`.
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+Ok, apriamolo nell'editor di codice e digitiamo quanto segue:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -54,7 +54,7 @@ It's time to open `blog/templates/blog/base.html` in the code editor. We will ad
 
 Nota che noi vogliamo chiamare la nostra vista `post_new`. La classe `"glyphicon glyphicon-plus"` è data dal tema di bootstrap che stiamo usando e visualizzerà un segno più per noi.
 
-After adding the line, your HTML file should now look like this:
+Dopo aver aggiunto la riga di codice il tuo file HTML dovrebbe apparire così:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
