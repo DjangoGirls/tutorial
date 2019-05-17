@@ -22,7 +22,7 @@ Atom jẹ́ olóòtú tó gbajúmọ̀ mìíràn. Ọ̀fẹ́ ni, ó ní orísun
 
 ## Kí nìdí tí a fí n ṣàgbékalẹ̀ olóòtú kóòdù kan?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+O lè máa ṣe kàyéfì pé kí nìdí tí a fí n ṣàgbékalẹ̀ àkànṣe ètò olóòtú kóòdù yìí, dípò lílo nnkan bíi Word tàbí Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
