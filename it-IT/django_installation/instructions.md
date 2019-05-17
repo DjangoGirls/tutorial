@@ -89,7 +89,7 @@ Possiamo creare un `virtualenv` sia su Linux che su OS X eseguendo `python3 -m m
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> allora esegui:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
