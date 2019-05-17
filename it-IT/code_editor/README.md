@@ -4,7 +4,7 @@
 
 Stai per scrivere la tua prima riga di codice, per cui è il momento di scaricare il tuo editor!
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **Nota** Se utilizzi un Chromebook, salta questo capitolo e segui le istruzioni in [Configurazione di Chromebook](../chromebook_setup/README.md). L'IDE cloud che sceglierai (PaizaCloud Cloud IDE o AWS Cloud9) include un editor di codice, e quando aprirai un file nel tuo IDE dal menu File, utilizzerai automaticamente l'editor.
 > 
 > **Nota** Potresti aver già effettuato questo passaggio nel capitolo sull'installazione - in questo caso, puoi andare al prossimo capitolo!
 
