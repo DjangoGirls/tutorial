@@ -26,7 +26,7 @@ Ní báyìí ó yẹ ko rí atọ́kùn kan pẹ̀lú pẹpẹ-ẹ̀gbẹ́ kan,
 2. Forúkọ sílẹ̀ fún account kan
 3. Tẹ *Create Environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Ní báyìí ó yẹ ko rí atọ́kùn kan pẹ̀lú pẹpẹ-ẹ̀gbẹ́ kan, fèrèsé pàtàkì nlá kan pẹ̀lú àwọn ọ̀rọ̀, àti fèrèsé kékeré kan ní ìsàlẹ̀ tó rí bíi èyí:
 
 {% filename %}bash{% endfilename %}
 
