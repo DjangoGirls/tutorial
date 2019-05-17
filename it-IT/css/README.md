@@ -297,7 +297,7 @@ Salva entrambi i file e ricarica la pagina web.
 
 Woohoo! È fantastico, vero? Guarda il codice che abbiamo appena incollato, per trovare i punti dove abbiamo aggiunto le classi nell'HTML usate nel CSS. Dove dovremmo modificare se volessimo la data in azzurro?
 
-Non aver paura di fare qualche esperimento con i CSS, prova a fare qualche modifica. Giocare con i CSS può aiutarti a capire cosa fanno le varie cose. If you break something, don't worry – you can always undo it!
+Non aver paura di fare qualche esperimento con i CSS, prova a fare qualche modifica. Giocare con i CSS può aiutarti a capire cosa fanno le varie cose. Se fai qualche errore, non preoccuparti - puoi sempre tornare indietro!
 
 Ti raccomandiamo di fare questo corso gratuito: [Codeacademy HTML & CSS](https://www.codecademy.com/tracks/web). Può aiutarti a imparare tutto ciò che ti serve per rendere carini i tuoi siti con CSS.
 
