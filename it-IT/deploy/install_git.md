@@ -14,7 +14,7 @@ data-collapse=true ces-->
 
 Scarica Git da [git-scm.com](https://git-scm.com/) e segui le istruzioni.
 
-> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **Nota** Se stai usando OS X 10.6, 10.7 o 10.8, dovrai installare la versione di Git da qui: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
