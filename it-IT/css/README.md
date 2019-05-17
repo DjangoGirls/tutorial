@@ -89,7 +89,7 @@ In un file CSS definiamo lo stile degli elementi presenti nel file HTML. Il prim
 
 Puoi leggere di più su i [Selettori CSS su w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+Inoltre dobbiamo dire al nostro template HTML che abbiamo aggiunto del codice CSS. Apri il file `blog/templates/blog/post_list.html` nell'editor di codice e aggiungi questa riga all'inizio:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -97,7 +97,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
 {% load static %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+Qui stiamo semplicemente caricando file statici. :) Tra i tag `<head>` e `</head>`, dopo il link ai file CSS di Bootstrap, aggiungi la riga seguente:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
