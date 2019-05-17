@@ -89,7 +89,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Apriamo `blog/urls.py` nell'editor di codice e aggiungiamo:
 
 {% filename %}blog/urls.py{% endfilename %}
 
