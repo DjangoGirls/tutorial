@@ -37,7 +37,7 @@ Infine, daremo uno sguardo più approfondito a quelli che abbiamo chiamato **fil
 
 ### Dove mettere i file statici in Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django sa già dove trovare file statici per l'app integrata "admin". Ora dobbiamo aggiungere alcuni file statici per la nostra app, `blog`.
 
 Lo facciamo creando una cartella denominata `static` all'interno dela nostra app blog:
 
@@ -66,7 +66,7 @@ Creiamo un file CSS, per aggiungere uno stile alla tua pagina web. Crea una nuov
 
 Non andremmo troppo a fondo nel modificare e imparare il CSS qui. Alla fine di questa pagina c'è una raccomandazione per un corso gratuito di CSS se ti piacerebbe conoscere di più.
 
-Facciamo comunque un esempio. Maybe we could change the color of our headers? Per decifrare i colori, i computer usano dei codici speciali. Questi codici iniziano con `#` seguiti da 6 lettere (A–F) e numeri (0–9). Per esempio, questo è il codice per il blu `#0000FF`. Puoi trovare i codici per molti colori qui: http://www.colorpicker.com/. Puoi anche usare [colori predefiniti](http://www.w3schools.com/colors/colors_names.asp) come ad esempio `red` e `green`.
+Facciamo comunque un esempio. Vogliamo cambiare il colore del nostro header? Per decifrare i colori, i computer usano dei codici speciali. Questi codici iniziano con `#` seguiti da 6 lettere (A–F) e numeri (0–9). Per esempio, questo è il codice per il blu `#0000FF`. Puoi trovare i codici per molti colori qui: http://www.colorpicker.com/. Puoi anche usare [colori predefiniti](http://www.w3schools.com/colors/colors_names.asp) come ad esempio `red` e `green`.
 
 Aggiungi il seguente codice nel tuo file `static/css/blog.css`:
 
