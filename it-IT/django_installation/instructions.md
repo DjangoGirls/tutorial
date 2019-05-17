@@ -30,7 +30,7 @@ Ora creeremo un virtualenv dal nome `myvenv`. Questo è il formato del comando g
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+Per creare un nuovo `virtualenv` devi aprire il prompt dei comandi ed eseguire `python -m venv myvenv`. Apparirà così:
 
 {% filename %}command-line{% endfilename %}
 
