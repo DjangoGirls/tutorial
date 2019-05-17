@@ -1,6 +1,6 @@
 # Form Django
 
-Infine vogliamo creare un bel modo per poter aggiungere e cambiare in nostri blog posts. Django `admin` è bello, ma è alquanto difficile da personalizzare e rendere carino. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Infine vogliamo creare un bel modo per poter aggiungere e cambiare in nostri blog posts. Django `admin` è bello, ma è alquanto difficile da personalizzare e rendere carino. Con `forms` avremo il controllo totale sulla nostra interfaccia - possiamo fare praticamente tutto quello ce vogliamo!
 
 La bella cosa dei Django forms è che possiamo sia inventare un nuovo form da zero che creare un `ModelForm` che salverà il risultato del form sul nostro modello.
 
@@ -40,7 +40,7 @@ Finalmente, possiamo indicare uno o più campi che il nostro form deve avere. In
 
 E questo è tutto! Tutto quello che dobbiamo fare ora é usare il form nella nostra *view* e visualizzarlo nel template.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Quindi creeremo di nuovo un link alla pagina, un URL, una view e un template.
 
 ## Link ad una pagina usando il form
 
