@@ -105,7 +105,7 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Il browser legge i file nell'ordine in cui sono messi, quindi dobbiamo essere sicuri che sia nel posto giusto. Otherwise the code in our file may be overriden by code in Bootstrap files. Stiamo dicendo al nostro template dove trovare i nostri file CSS.
+Il browser legge i file nell'ordine in cui sono messi, quindi dobbiamo essere sicuri che sia nel posto giusto. Altrimenti il codice del nostro file potrebbe essere sovrascritto dal codice dei file di Bootstrap. Stiamo dicendo al nostro template dove trovare i nostri file CSS.
 
 Il tuo file dovrebbe avere questo aspetto:
 
@@ -150,7 +150,7 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Aggiungi queste righe al tuo CSS, salva il file e guarda il risultato!
 
 ![Figura 14.3](images/margin2.png)
 
@@ -170,8 +170,8 @@ Find the `h1 a` declaration block (the code between braces `{` and `}`) in the C
 
 ```css
 h1 a, h2 a {
-    color: #C25100;
-    font-family: 'Lobster';
+   color: #C25100;
+   font-family: 'Lobster';
 }
 ```
 
