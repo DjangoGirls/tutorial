@@ -4,13 +4,13 @@
 > 
 > Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Il tutorial di django-marcador è protetto da copyright di Markus Zapke-Gründemann et al.
 
-We're going to create a small blog!
+Creeremo un piccolo blog!
 
 Il primo passo è quello di iniziare un nuovo progetto di Django. Fondamentalmente, questo significa che eseguiremo alcuni script forniti da Django che creerà per noi lo scheletro di un progetto Django. Si tratta solo di un insieme di directory e file che verranno utilizzati dopo.
 
 I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti modificare i nomi dei file che stiamo per creare. Neanche spostarli in un altro posto è una buona idea. Django deve mantenere una determinata struttura per essere in grado di trovare le cose importanti.
 
-> Ricordati di eseguire tutto nel virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. Abbiamo spiegato come farlo nel capitolo **istallazione Django** nella parte **Lavorando con virtualenv**. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Ricordati di eseguire tutto nel virtualenv. Se non vedi il prefisso `(myvenv)` nella tua console, devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **istallazione Django** nella parte **Lavorando con virtualenv**. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
