@@ -37,21 +37,21 @@ Per creare un nuovo `virtualenv` devi aprire il prompt dei comandi ed eseguire `
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. Puoi utilizzare qualsiasi altro nome, ma attieniti a utilizzare le minuscole, a non usare spazi, accenti o caratteri speciali. It is also good idea to keep the name short – you'll be referencing it a lot!
+Qui `myvenv` è il nome del tuo `virtualenv`. Puoi utilizzare qualsiasi altro nome, ma attieniti a utilizzare le minuscole, a non usare spazi, accenti o caratteri speciali. Inoltre è meglio scegliere un nome breve, dato che dovrai digitarlo molte volte!
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+Possiamo creare un `virtualenv` sia su Linux che su OS X eseguendo `python3 -m myvenv`. Apparirà così:
 
 {% filename %}command-line{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` è il nome del tuo `virtualenv`. Puoi usare qualsiasi altro nome, ma utilizza solo minuscole e niente spazi. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` è il nome del tuo `virtualenv`. Puoi usare qualsiasi altro nome, ma utilizza solo minuscole e niente spazi. Inoltre è meglio scegliere un nome breve, in quanto dovrai digitarlo molte volte!
 
 > **NOTA:** Su alcune versioni di Debian/Ubuntu potresti vedere il seguente errore:
 > 
@@ -62,7 +62,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> In questo caso, segui le istruzioni sopra e installa il pacchetto `python3-venv`: {% filename %}riga di comando{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
