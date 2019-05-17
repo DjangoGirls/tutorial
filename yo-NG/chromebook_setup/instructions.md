@@ -18,7 +18,7 @@ Ní báyìí ó yẹ ko rí atọ́kùn kan pẹ̀lú pẹpẹ-ẹ̀gbẹ́ kan,
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+Èbúté náà lórí PaizaCloud Cloud IDE ti ṣetán fún àwọn àṣẹ rẹ. O lè ṣàtúnṣe ìwọ̀n fèrèsé yẹn láti mu kó tóbi díẹ̀ si.
 
 #### AWS Cloud9
 
@@ -33,9 +33,9 @@ Now you should see an interface with a sidebar, a big main window with some text
     yourusername:~/workspace $
     
 
-Agbègbè ìsàlẹ̀ yìí ni èbúté rẹ. O lè lo èbúté náà láti fi àwọn ìtọ́sọ́nà ránṣẹ́ sí kọ̀mpútà Cloud 9 tó jìnnà náà. O lè ṣàtúnṣe ìwọ̀n Ferese náà láti mú kó tóbi díẹ̀ si.
+Agbègbè ìsàlẹ̀ yìí ni èbúté rẹ. O lè lo èbúté náà láti fi àwọn àṣẹ ránṣẹ́ sí kọ̀mpútà Cloud 9 tó jìnnà náà. O lè ṣàtúnṣe ìwọ̀n Ferese náà láti mú kó tóbi díẹ̀ si.
 
-### Virtual Environment
+### Àyíká Àìrí
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
