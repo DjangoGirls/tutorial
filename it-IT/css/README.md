@@ -162,9 +162,9 @@ Potremmo anche personalizzare lo stile calligrafico nel nostro header. Incolla q
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Come prima, controlla l'ordine e la posizione prima del link a `blog/static/css/blog.css`. Questa riga di codice importerà un carattere chiamato *Lobster* da Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Trova il blocco `h1 a` (il codice tra parentesi `{` e `}`) nel file CSS `blog/static/css/blog.css`. Ora aggiungi la riga `font-family: 'Lobster';` tra le parentesi e ricarica la pagina:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
