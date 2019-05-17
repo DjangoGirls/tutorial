@@ -8,9 +8,9 @@ Prima di installare Django, ti vogliamo far installare uno strumento estremament
 
 Per cui, creiamo ora un **ambiente virtuale** (chiamato anche un *virtualenv*). Virtualenv isolerà la tua configurazione di Python/Django in base ai diversi progetti. Questo significa che qualunque modifica farai su un sito non avrà alcun effetto su tutti gli altri che stai sviluppando. Chiaro ora?
 
-Tutto quello che devi fare è trovare una cartella in cui vuoi creare il `virtualenv`; la tua home directory, ad esempio. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
+Tutto quello che devi fare è trovare una cartella in cui vuoi creare il `virtualenv`; la tua home directory, ad esempio. Su Windows potrebbe apparire come `C:\Users\Name` (dove `Name` è il nome del tuo login).
 
-> **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
+> **Nota:** Su Windows, assicurati che la cartella non contenga caratteri accentati o speciali; se il tuo username contiene cartteri accentati, usa una cartella diversa, ad esempio `C:\djangogirls`.
 
 Per questo tutorial useremo una nuova directory `djangogirls` dalla tua home directory:
 
@@ -82,7 +82,7 @@ Possiamo creare un `virtualenv` sia su Linux che su OS X eseguendo `python3 -m m
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **NOTA:** Se ottieni un errore come
 > 
 > {% filename %}command-line{% endfilename %}
 > 
