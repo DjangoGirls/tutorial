@@ -130,16 +130,16 @@ Un'ultima cosa. Dobbiamo collegare questi due template. È questo che vuol dire 
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-{% endblock %}
+     {% for post in posts %}
+         <div class="post">
+             <div class="date">
+                 {{ post.published_date }}
+             </div>
+             <h2><a href="">{{ post.title }}</a></h2>
+             <p>{{ post.text|linebreaksbr }}</p>
+         </div>
+     {% endfor %}
+ {% endblock %}
 ```
 
 That's it! Save the file, and check if your website is still working properly. :)
