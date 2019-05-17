@@ -37,9 +37,9 @@ Agbègbè ìsàlẹ̀ yìí ni èbúté rẹ. O lè lo èbúté náà láti fi �
 
 ### Àyíká Àìrí
 
-Àyíká àìrí kan (tí a tún pè ní virtualenv) dà bíi àpótí àdáni kan tí a lè kó kóòdù kọ̀mpútà tó wúlò sínú rẹ̀ fún iṣé kan tí a n ṣiṣẹ́ lórí. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Àyíká àìrí kan (tí a tún pè ní virtualenv) dà bíi àpótí àdáni kan tí a lè kó kóòdù kọ̀mpútà tó wúlò sínú rẹ̀ fún iṣé kan tí a n ṣiṣẹ́ lórí. A má n lò wọ́n láti tọ́jú onírúurú àwọn ẹyọ kóòdù tí a fẹ́ fún onírúurú àwọn iṣẹ́ wa lọ́tọ̀ọ̀tọ̀ kí àwọn nnkan má lè dàpọ̀ láàrin àwọn iṣẹ́.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
+Nínú èbúté rẹ ní ìsàlẹ̀ atọ́kùn Cloud 9 náà, ṣe àwọn tó tẹ̀lé yìí:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -49,7 +49,7 @@ In your terminal at the bottom of the Cloud 9 interface, run the following:
 
 Tí èyí kò bá tún ṣiṣẹ́, béèrè lọ́wọ́ olùkọ́ rẹ fún ìrànlọ́wọ́ díẹ̀.
 
-Next, run:
+Lẹ́yìn náà, ṣe:
 
 {% filename %}Cloud 9{% endfilename %}
 
