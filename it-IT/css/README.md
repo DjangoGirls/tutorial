@@ -261,12 +261,12 @@ Ora aggiungi all'esterno del codice HTML riguardante i posts all'interno del blo
 
 ```html
 {% for post in posts %}
-    <div class="post">
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
+     <div class="post">
+         <p>published: {{ post.published_date }}</p>
+         <h2><a href="">{{ post.title }}</a></h2> 
         <p>{{ post.text|linebreaksbr }}</p>
-    </div>
-{% endfor %}
+     </div>
+ {% endfor %}
 ```
 
 nel file `blog/templates/blog/post_list.html` con quanto segue:
