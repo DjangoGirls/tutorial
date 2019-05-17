@@ -4,7 +4,7 @@
 
 > Parte di questo capitolo è tratto dal tutorial delle Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Scriviamo un po' di codice!
 
 ## La linea di comando di Python
 
