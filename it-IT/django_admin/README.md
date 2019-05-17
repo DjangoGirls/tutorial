@@ -23,7 +23,7 @@ Per accedere, devi creare un *superuser* - un utente che ha pieno controllo di t
 
 > Ricorda, per eseguire comandi lasciando in esecuzione il server web, apri una nuova finestra di terminale e attiva il tuo virtualenv. Abbiamo presentato come scrivere nuovi comandi nel capitolo **Il tuo primo progetto Django!**, nella sezione **Avvio del server web**.
 
-{% filename %}Mac OS X or Linux:{% endfilename %}
+{% filename %}Mac OS X o Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py createsuperuser
     
@@ -36,7 +36,7 @@ Per accedere, devi creare un *superuser* - un utente che ha pieno controllo di t
 Quando te lo richiede, digita il tuo username (minuscole, senza spazi), il indirizzo email, e la password che vorrai utilizzare. **Non allarmarti se non vedi la password mentre scrivi, così funziona.** Digitala, premi `enter`, e continua. Il risultato dovrebbe assomigliare a questo (dove il nome utente e l'email saranno quelli che hai inserito):
 
     Username: ola
-    Email address: ola@example.com
+    Email address: ola@example.com 
     Password:
     Password (again):
     Superuser created successfully.
