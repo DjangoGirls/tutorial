@@ -124,7 +124,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+E poi la nostra *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -147,7 +147,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Ok, il tuo HTML `post_edit.html` dovrebbe apparire così:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
