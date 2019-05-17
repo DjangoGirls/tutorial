@@ -155,11 +155,11 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <h2>New post</h2>
-    <form method="POST" class="post-form">{% csrf_token %}
-        {{ form.as_p }}
-        <button type="submit" class="save btn btn-default">Save</button>
-    </form>
+     <h2>New post</h2>
+     <form method="POST" class="post-form">{% csrf_token %}
+         {{ form.as_p }}
+         <button type="submit" class="save btn btn-default">Save</button>
+     </form>
 {% endblock %}
 ```
 
@@ -299,16 +299,16 @@ so that the template will look like this:
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    <div class="post">
-        {% if post.published_date %}
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-        {% endif %}
-        <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
-        <h2>{{ post.title }}</h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+     <div class="post">
+         {% if post.published_date %}
+             <div class="date">
+                 {{ post.published_date }}
+             </div>
+         {% endif %}
+         <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
+         <h2>{{ post.title }}</h2>
+         <p>{{ post.text|linebreaksbr }}</p>
+     </div>
 {% endblock %}
 ```
 
