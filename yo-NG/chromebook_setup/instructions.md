@@ -70,6 +70,6 @@ Lẹ́yìn náà, ṣe:
 
 Àlàyé Django Girls náà ní abala kan lórí nnkan tí a n pè ní Ìṣàgbékalẹ̀ (Deployment), eyi tó jẹ́ ìlànà mímú kóòdù tó n mú ètò ayélujára tuntun rẹ ṣiṣẹ́ àti gbígbé rẹ̀ sí kọ̀mpútà tó wà lárọ̀ọ́wọ́tó gbangba kan (tí a n pè ní server) kí àwọn èèyàn mìíràn le rí iṣẹ́ rẹ.
 
-Apá yìí má jẹ́ àjèjì nígbà tí o bá n ṣe àlàyé náà lórí Chromebook kan níwọ̀n bí a ti n lo kọ̀mpútà kan tó ti wà lórí íńtánẹ́ẹ̀tì (tó jẹ́ òdìkejì sí, ká sọ pé, kọ̀mpútà àgbélétan kan). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Apá yìí má jẹ́ àjèjì nígbà tí o bá n ṣe àlàyé náà lórí Chromebook kan níwọ̀n bí a ti n lo kọ̀mpútà kan tó ti wà lórí íńtánẹ́ẹ̀tì (tó jẹ́ òdìkejì sí, ká sọ pé, kọ̀mpútà àgbélétan kan). Àmọ́ o, ó ṣì wúlò, tí a bá ronú nípa ààyè-iṣẹ́ Cloud 9 wa gẹ́gẹ́ bíi ibi kan fún iṣé wa "ti ń lọ lọ́wọ́" àti Python Anywhere gẹ́gẹ́ bíi ibi kan láti ṣàfihàn iṣẹ́ wa bó ṣe n túbọ̀ péye.
 
 Nítorí náà, forúkọ sílẹ̀ fún account Python Anywhere tuntun kan ní [www.pythonanywhere.com](https://www.pythonanywhere.com).
