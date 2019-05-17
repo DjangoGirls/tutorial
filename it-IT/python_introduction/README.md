@@ -28,7 +28,7 @@ Vogliamo aprire una console Python, quindi digita `python` su Windows o `python3
 
 Dopo aver eseguito il comando Python, il prompt è cambiato in `>>>`. Questo ci informa che ora dovremo utilizzare comandi propri del linguaggio Python. Non devi digitare `>>>` - Python lo farà per te.
 
-Se ad un certo punto vuoi uscire dalla console di Python, digita `exit()` oppure usa la scorciatoia `Ctrl + Z` per Windows e `Ctrl + D` per Mac/Linux. Then you won't see `>>>` any longer.
+Se ad un certo punto vuoi uscire dalla console di Python, digita `exit()` oppure usa la scorciatoia `Ctrl + Z` per Windows e `Ctrl + D` per Mac/Linux. Dopo non vedrai più `>>>`.
 
 Per il momento, non vogliamo uscire dalla console di Python. Vogliamo saperne di più. Iniziamo digitando qualche espressione matematica, come `2 + 3` e premiamo `invio`.
 
@@ -204,7 +204,7 @@ Urrà! La tua prima variabile! :) E puoi anche cambiare il valore a cui essa si 
 'Sonja'
 ```
 
-You can use it in functions too:
+La puoi utilizzare anche nelle funzioni:
 
 {% filename %}command-line{% endfilename %}
 
