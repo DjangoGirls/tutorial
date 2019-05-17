@@ -33,7 +33,7 @@ Verrà visualizzata un'interfaccia con una barra laterale, una grossa finestra c
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Questa finestra in basso è il tuo terminale. Puoi usare il terminale per inviare istuzioni al computer remoto Cloud9. Puoi cambiare le dimesioni della finestra e renderla più grande.
 
 ### Ambiente virtuale
 
