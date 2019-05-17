@@ -16,11 +16,11 @@ Sublime Text jẹ́ olóòtú kan tó gbajúmọ̀ gan-an pẹ̀lú àkókò àg
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom jẹ́ olóòtú tó gbajúmọ̀ mìíràn. Ọ̀fẹ́ ni, ó ní orísun gbangba àti pé ó wà fún Windows, OS X àti Linux. [GitHub](https://github.com/) ló gbé Atom jáde.
 
 [Gbà á níbí](https://atom.io/)
 
-## Why are we installing a code editor?
+## Kí nìdí tí a fí n ṣàgbékalẹ̀ olóòtú kóòdù kan?
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
