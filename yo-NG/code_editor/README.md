@@ -1,6 +1,6 @@
-# Code editor
+# Olóòtú kóòdù
 
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s) video.
+> Fún àwọn òǹkàwé ní ilé: a ti ṣàlàyé àkòrí yìí nínú fídíò [Ṣíṣe àgbékalẹ̀ Python & Olóòtú Kóòdù](https://www.youtube.com/watch?v=pVTaqzKZCdA&t=4m43s).
 
 You're about to write your first line of code, so it's time to download a code editor!
 
