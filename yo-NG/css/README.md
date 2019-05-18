@@ -292,7 +292,7 @@ in the `blog/templates/blog/post_list.html` with this:
 </div>
 ```
 
-Save those files and refresh your website.
+Tọ́jú àwọn fáìlì yẹn kí o sì ṣe ìmúdójúìwọ̀n ojú-ìwé ààyè ayélujára rẹ.
 
 ![Figure 14.4](images/final.png)
 
