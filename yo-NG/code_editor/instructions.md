@@ -1,4 +1,4 @@
-Oríṣiríṣi àwọn olóòtú ló wà àti pe ó dá lórí èyí tó yàn láàyò. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Oríṣiríṣi àwọn olóòtú ló wà àti pe ó dá lórí èyí tó yàn láàyò. Ọ̀pọ̀lọpọ̀ àwọn onímọ̀ nípa kóòdù Python má n lo àwọn IDE (Integrated Development Environments - àwọn Àyíká Ìgbéjáde tó Papọ̀) tó ṣòro ṣùgbọ́n tó lágbára púpọ̀, gẹ́gẹ́ bíi PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
