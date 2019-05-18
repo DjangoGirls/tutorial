@@ -6,6 +6,6 @@ O ti fẹ́ kọ ilà kóòdù àkọ́kọ́ rẹ, nítorí náà àkókò ti t
 
 > **Àkíyèsí** Tí o bá n lo Chromebook kan, fojú fo àkòrí yìí kí o sì rí dájú pé o tẹ̀lé àwọn ìtọ́sọ́nà [Àgbékalẹ̀-ètò Chromebook](../chromebook_setup/README.md) náà. The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **Àkíyèsí** O lè ti ṣe èyí sẹ́yìn nínú àkòrí ìṣàgbékalẹ̀ náà - tó bá jẹ́ bẹ́ẹ̀, o lè fojú fo tààrà lọ sí àkòrí tó kàn náà!
 
 {% include "/code_editor/instructions.md" %}
