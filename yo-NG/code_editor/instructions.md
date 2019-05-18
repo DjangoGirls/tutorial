@@ -1,6 +1,6 @@
-Oríṣiríṣi àwọn olóòtú ló wà àti pe ó dá lórí èyí tó yàn láàyò. Ọ̀pọ̀lọpọ̀ àwọn onímọ̀ nípa kóòdù Python má n lo àwọn IDE (Integrated Development Environments - àwọn Àyíká Ìgbéjáde tó Papọ̀) tó ṣòro ṣùgbọ́n tó lágbára púpọ̀, gẹ́gẹ́ bíi PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Oríṣiríṣi àwọn olóòtú ló wà àti pe ó dá lórí èyí tó yàn láàyò. Ọ̀pọ̀lọpọ̀ àwọn onímọ̀ nípa kóòdù Python má n lo àwọn IDE (Integrated Development Environments - àwọn Àyíká Ìgbéjáde tó Papọ̀) tó ṣòro ṣùgbọ́n tó lágbára púpọ̀, gẹ́gẹ́ bíi PyCharm. Ṣùgbọ́n, gẹ́gẹ́ bí ṣẹ̀ṣẹ̀bẹ̀rẹ̀ kan, ó ṣeéṣe kó má ṣeé lò fún ẹ; àwọn àmọ̀ràn wa lágbára bákannáà, ṣùgbọ́n wọ́n rọrùn púpọ̀.
 
-Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
+Àwọn àbá wa wà nísàlẹ̀, ṣùgbọ́n má tijú láti béèrè lọ́wọ́ olùkọ́ rẹ nípa nnkan tí ààyò wọ́n jẹ́ - yóò rọrùn láti gba ìrànlọ́wọ́ láti lọ́dọ̀ wọn.
 
 ## Gedit
 
