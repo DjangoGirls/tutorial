@@ -136,7 +136,7 @@ Your file should now look like this:
 </html>
 ```
 
-OK, save the file and refresh the site!
+Ó dáa, tọ́jú fáìlì náà kí o sì ṣe ìmúdójúìwọ̀n ojú-ìwé ààyè ayélujára náà!
 
 ![Figure 14.2](images/color2.png)
 
@@ -150,7 +150,7 @@ body {
 }
 ```
 
-Add that to your CSS, save the file and see how it works!
+Ṣàfikún ìyẹn sí CSS rẹ, tọ́jú fáìlì náà kí o sì wo bó tí n ṣiṣẹ́!
 
 ![Figure 14.3](images/margin2.png)
 
