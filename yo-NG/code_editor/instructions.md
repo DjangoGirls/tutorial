@@ -28,4 +28,4 @@ O lè máa ṣe kàyéfì pé kí nìdí tí a fí n ṣàgbékalẹ̀ àkànṣ
 
 Ìdí kejì náà ni pé àwọn olóòtú kóòdù jẹ́ àkànṣe fún títẹ̀jáde kóòdù, kí wọ́n ba lè pèsè àwọn ohun tó wúlò bíi ṣíṣe àgbéyọ kóòdù pẹ̀lú àwọ̀ ní ìbámu pẹ̀lú ìtumọ̀ rẹ̀, tàbí píparí àwọn àmì àyọlò fún ẹ fúnra wọn.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+A ma rí gbogbo èyí nínú iṣẹ́ tó bá yá. Láìpẹ́, ìwọ yóò wá ronú nípa olóòtú kóòdù àtijọ́ rẹ tó gbẹ́kẹ̀lẹ́ gẹ́gẹ́ bí ọ̀kan nínú àwọn irinṣẹ́ tó yàn láàyò. :)
