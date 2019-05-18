@@ -26,6 +26,6 @@ O lè máa ṣe kàyéfì pé kí nìdí tí a fí n ṣàgbékalẹ̀ àkànṣ
 
 Ìdí àkọ́kọ́ náà ni pé kóòdù nílò láti jẹ́ **ọ̀rọ̀ lásán**, àti pé ìṣòro tó wà pẹ̀lú àwọn ètò bíi Word àti Textedit ni pé wọn kìí gbé ọ̀rọ̀ lásán jáde, wọ́n má n gbé ọ̀rọ̀ tó lẹ́wà jáde (pẹ̀lú àwọn ìrísí-lẹ́tà àti gbígbé kalẹ̀), pẹ̀lú lílo àwọn àkànṣe àgbékalẹ̀ bíi [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Ìdí kejì náà ni pé àwọn olóòtú kóòdù jẹ́ àkànṣe fún títẹ̀jáde kóòdù, kí wọ́n ba lè pèsè àwọn ohun tó wúlò bíi ṣíṣe àgbéyọ kóòdù pẹ̀lú àwọ̀ ní ìbámu pẹ̀lú ìtumọ̀ rẹ̀, tàbí píparí àwọn àmì àyọlò fún ẹ fúnra wọn.
 
 We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
