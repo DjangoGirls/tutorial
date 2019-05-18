@@ -24,7 +24,7 @@ Atom jẹ́ olóòtú tó gbajúmọ̀ mìíràn. Ọ̀fẹ́ ni, ó ní orísun
 
 O lè máa ṣe kàyéfì pé kí nìdí tí a fí n ṣàgbékalẹ̀ àkànṣe ètò olóòtú kóòdù yìí, dípò lílo nnkan bíi Word tàbí Notepad.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Ìdí àkọ́kọ́ náà ni pé kóòdù nílò láti jẹ́ **ọ̀rọ̀ lásán**, àti pé ìṣòro tó wà pẹ̀lú àwọn ètò bíi Word àti Textedit ni pé wọn kìí gbé ọ̀rọ̀ lásán jáde, wọ́n má n gbé ọ̀rọ̀ tó lẹ́wà jáde (pẹ̀lú àwọn ìrísí-lẹ́tà àti gbígbé kalẹ̀), pẹ̀lú lílo àwọn àkànṣe àgbékalẹ̀ bíi [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
 The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
