@@ -270,7 +270,7 @@ Then surround the HTML code which displays the posts with declarations of classe
 {% endfor %}
 ```
 
-in the `blog/templates/blog/post_list.html` with this:
+nínú `blog/templates/blog/post_list.html` náà pẹ̀lú èyí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
