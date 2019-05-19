@@ -12,13 +12,13 @@ Se non hai familiarità con la programmazione, può essere difficile da capire l
 
 Come per tutti i file, dobbiamo archiviare i file HTML da qualche parte su un hard disk. Per l'Internet, utilizziamo computer speciali e potenti chiamati *servers*. Non hanno uno schermo, un mouse o una tastiera, perché il loro unico proposito è quello di archiviare i dati e fornirli. Per questo vengono chiamati *server* -- perché *servono* i tuoi dati.
 
-OK, but you want to know how the Internet looks, right?
+Ok, ma tu vuoi sapere com'è Internet, vero?
 
-Abbiamo creato un'immagine! Ecco com'è:
+Abbiamo creato un'immagine! Ecco:
 
 ![Figura 1.1](images/internet_1.png)
 
-Sembra caotico, vero? In fact it is a network of connected machines (the above-mentioned *servers*). Centinaia di migliaia di macchine! Molti, molti chilometri di cavi in tutto il mondo! Puoi visitare un sito di Submarine Cable Map (http://submarinecablemap.com) per vedere quanto è complicata la rete. Ecco uno screenshot dal sito web:
+Sembra complicato, vero? Infatti è una rete di macchine collegate (i *server* di cui parlavamo prima). Centinaia di migliaia di macchine! Molti, molti chilometri di cavi in tutto il mondo! Puoi visitare un sito di Submarine Cable Map (http://submarinecablemap.com) per vedere quanto è complicata la rete. Ecco uno screenshot dal sito web:
 
 ![Figura 1.2](images/internet_3.png)
 
