@@ -12,11 +12,11 @@
 
 * ワークショップDayの前に「インストールDay」が開催される場合があります。 あなたがインストールDayに参加しているなら、このページをご参照ください！ 必要ならコーチの助けを借りて、このチャプターに書いてあるとおりに、ワークショップに必要なすべてのものをインストールしてみましょう。 メインのワークショップでは、以降のチュートリアルの中に出てくるインストールに関連する部分をスキップすることができます。
 * ワークショップの主催者が、ワークショップ前に自宅であらかじめすべてをインストールしてくるようにお願いしているかもしれません。 もし、そのように言われていたのなら、このページをご参照ください！ できる限り、このチャプターに書いてあるようにやってみましょう。 その後メインのワークショップで、チュートリアルの中でインストールする場面がでてきたときに、もしあなたができていなかったとしたら、コーチの助けを借りましょう。
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* インストールDayが開催されない場合（またはあなたが参加できなかった場合）、そして主催者が事前のインストールをお願いしていない場合、このページはとばして、[インターネットのしくみ](../how_the_internet_works/README.md)のチャプターに進みましょう。 チュートリアルを進めながら、必要なものをすべてインストールします。
 
-# Installation
+# インストール
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+このチュートリアルではブログを作成します。 In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
