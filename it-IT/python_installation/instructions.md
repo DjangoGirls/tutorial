@@ -18,14 +18,14 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Quando l'installazione è completata, potresti vedere una finestra di dialogo con un link che puoi seguire per saperne di più su Python o sulla versione installata. Chiudi o annulla questa finestra -- imparerai molto di più in questo tutorial!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Nota: se stai usando una versione precedente di Windows (7, Vista o qualsiasi versione precedente) e l'installazione Python 3.6.x fallisce e restituisce un errore, puoi provare a:
 
-1. install all Windows Updates and try to install Python again; or
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+1. installare tutti gli aggiornamenti di Windows e provare a installare di nuovo Python; oppure
+2. installare una [versione precedente di Python](https://www.python.org/downloads/windows/), ad esempio la [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Se installi una versione precedente di Python, la schermata di installazione potrebbe apparire un po' diversa da quella mostrata sopra. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
