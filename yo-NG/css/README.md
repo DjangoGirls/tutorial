@@ -29,7 +29,7 @@ Láti ṣàgbékalẹ̀ Bootstrap, ṣí fáìlì `.html` rẹ nínú olóòtú 
 
 ![Figure 14.1](images/bootstrap1.png)
 
-Looking nicer already!
+Ó tí n dára ní wíwò!
 
 ## Static files in Django
 
