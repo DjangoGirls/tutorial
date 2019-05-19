@@ -17,7 +17,7 @@ Creiamo un file `base.html` in `blog/templates/blog/`:
                 post_list.html
     
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+Poi aprilo nell'editor di codice e copia tutto da `post_list.html` al file `base.html`, in questo modo:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -86,7 +86,7 @@ Poi nel `base.html`, rimpiazza tutto il tuo `<body>` (tutto quello che si trova 
 
 Perchè? Hai appena creato un blocco! Hai appena usato un template tag `{% block %}` per creare un area che che avrà dell'HTML all'interno. That HTML will come from another template that extends this template (`base.html`). Ti mostreremo come farlo tra un attimo.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}Rimuovi tutto quello che c'è prima di `{% for post in posts %}` e dopo `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Ora salva `base.html` e apri di nuovo il tuo `blog/templates/blog/post_list.html` nell'editor di codice. {% raw %}Rimuovi tutto quello che c'è prima di `{% for post in posts %}` e dopo `{% endfor %}`. Quando hai finito, il file apparirà così:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
