@@ -66,7 +66,7 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-Ṣùgbọ́n jẹ́ kí a ṣe ó kéré tán díẹ̀ nínú rẹ̀. Bóyá a le ṣàyípadà àwọ̀ ti àwọn àkọsórí wa? Láti lóye nípa àwọn àwọ̀, àwọn kọ̀mpútà má n lo àwọn àkànṣe kóòdù. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
+Ṣùgbọ́n jẹ́ kí a ṣe ó kéré tán díẹ̀ nínú rẹ̀. Bóyá a le ṣàyípadà àwọ̀ ti àwọn àkọsórí wa? Láti lóye nípa àwọn àwọ̀, àwọn kọ̀mpútà má n lo àwọn àkànṣe kóòdù. Àwọn kóòdù wọ̀nyí ma bẹ̀rẹ̀ pẹ̀lú `#` tí àwọn lẹ́tà 6 (A–F) àti àwọn nọ́mbà (0–9) sì tẹ̀le. Fún àpẹẹrẹ, kóòdù náà fún àwọ̀ búlúù jẹ́ `#0000FF`. O lè rí àwọn kóòdù àwọ̀ fún oríṣiríṣi àwọ̀ níbí: http://www.colorpicker.com/. You may also use [predefined colors](http://www.w3schools.com/colors/colors_names.asp), such as `red` and `green`.
 
 In your `blog/static/css/blog.css` file you should add the following code:
 
