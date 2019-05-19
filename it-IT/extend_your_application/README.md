@@ -18,16 +18,16 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 {% extends 'blog/base.html' %}
 
 {% block content %}
-    {% for post in posts %}
-        <div class="post">
-            <div class="date">
-                {{ post.published_date }}
-            </div>
-            <h2><a href="">{{ post.title }}</a></h2>
-            <p>{{ post.text|linebreaksbr }}</p>
-        </div>
-    {% endfor %}
-{% endblock %}
+     {% for post in posts %}
+         <div class="post">
+             <div class="date">
+                 {{ post.published_date }}
+             </div>
+             <h2><a href="">{{ post.title }}</a></h2>
+             <p>{{ post.text|linebreaksbr }}</p>
+         </div>
+     {% endfor %}
+ {% endblock %}
 ```
 
 {% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h1><a href="">{{ post.title }}</a></h1>` so that it links to the post's detail page:{% endraw %}
@@ -80,7 +80,7 @@ OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: htt
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+Ti ricordi di quale è il prossimo passo? Ma certo: aggiungere una view!
 
 ## Aggiungi una view del post
 
@@ -126,7 +126,7 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Sì. È ora di aggiornare la pagina: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
@@ -183,7 +183,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Poi, in una [console PythonAnywhere Bash](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
