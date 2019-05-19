@@ -12,9 +12,9 @@ Do not forget to restart the command prompt or powershell after the installation
 <!--sec data-title="Installing Git: OS X" data-id="git_install_OSX"
 data-collapse=true ces-->
 
-Download Git from [git-scm.com](https://git-scm.com/) and follow the instructions.
+Gba Git láti [git-scm.com](https://git-scm.com/) kí o sì tẹ̀lé àwọn ìtọ́sọ́nà náà.
 
-> **Note** If you are running OS X 10.6, 10.7, or 10.8, you will need to install the version of git from here: [Git installer for OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
+> **Àkíyèsí** Tí o bá n lo OS X 10.6, 10.7, tàbí 10.8, o ma nílò láti ṣàgbékalẹ̀ ẹ̀yà git náà láti ibí: [Ètò ìṣàgbékalẹ̀ Git fún OS X Snow Leopard](https://sourceforge.net/projects/git-osx-installer/files/git-2.3.5-intel-universal-snow-leopard.dmg/download)
 
 <!--endsec-->
 
