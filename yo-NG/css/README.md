@@ -302,4 +302,4 @@ Don't be afraid to tinker with this CSS a little bit and try to change some thin
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
-Ready for the next chapter?! :)
+Ṣé o ti ṣetán fún àkòrí tó kàn náà?! :)
