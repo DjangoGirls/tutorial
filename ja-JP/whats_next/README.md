@@ -16,7 +16,7 @@
 
 - Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Django 公式チュートリアル](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Getting Started With Django 動画レッスン](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS ならびに JavaScript
 
