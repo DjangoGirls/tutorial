@@ -89,7 +89,7 @@ E finalmente salviamo le nostre modifiche. vai alla tua console ed esegui questi
 
 Vai su [GitHub.com](https://www.github.com) e crea un nuovo account gratuito. (Se lo hai già fatto nella preparazione al workshop, benissimo!) Assicurati di ricordare la tua password (aggiungila al tuo password manager, se ne usi uno).
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Quindi, crea un nuovo repository con il il nome "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 ![](images/new_github_repo.png)
 
@@ -124,7 +124,7 @@ When you push to GitHub, you'll be asked for your GitHub username and password (
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Adesso Il tuo codice è su GitHub. Go and check it out! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Adesso Il tuo codice è su GitHub. Guarda! Lo troverai in buona compagnia - [Django](https://github.com/django/django), il [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) e molti grandi progetti di software open source caricano il proprio codice su GitHub. :)
 
 # Configurare il nostro blog su PythonAnywhere
 
@@ -140,7 +140,7 @@ Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) 
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **Nota** PythonAnywhere si basa su Linux, quindi se sei su Windows, la console apparirà un po' diversa da quella del tuo computer.
 
 Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 
