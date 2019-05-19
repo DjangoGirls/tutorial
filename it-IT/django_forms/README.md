@@ -175,7 +175,7 @@ La risposta è: nulla. Dobbiamo solo fare un po' di lavoro in più nella nostra 
 
 ## Salvare il form
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Apri di nuovo `blog/views.py` nell'editor di codice. Ora nella view `post_new` abbiamo quanto segue:
 
 {% filename %}blog/views.py{% endfilename %}
 
