@@ -4,7 +4,7 @@ Vogliamo creare un qualcosa che raccoglierà tutti i post del nostro blog. Per f
 
 ## Oggetti
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Esiste un concetto nella programmazione che è quello di `programmazione orientata agli oggetti`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
 Quindi cos'è un oggetto? È un insieme di proprietà ed azioni. Suona strano, ma ti faremo un esempio.
 
