@@ -47,7 +47,7 @@ Nel terminale, in fondo all'interfaccia Cloud9, esegui il seguente codice:
     sudo apt install python3.6-venv
     
 
-Se non funziona, chiedi aiuto all'insegnante.
+Se non funziona, chiedi aiuto al tuo coach.
 
 Poi esegui:
 
