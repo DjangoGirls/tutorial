@@ -1,4 +1,4 @@
-Git jẹ́ "ètò ìdarí ẹ̀yà" kan tó jẹ́ lílò nípasẹ̀ ọ̀pọ̀lọpọ̀ àwọn onímọ̀ nípa kóòdù. Ètò yìí lè ṣàmójútó àwọn ìyípadà sí àwọn fáìlì bí àkókò ti ń lọ kí o ba lè rántí àwọn ẹ̀yà pàtó lẹ́yìn náà. A bit like the "track changes" feature in word processor programs (e.g., Microsoft Word or LibreOffice Writer), but much more powerful.
+Git jẹ́ "ètò ìdarí ẹ̀yà" kan tó jẹ́ lílò nípasẹ̀ ọ̀pọ̀lọpọ̀ àwọn onímọ̀ nípa kóòdù. Ètò yìí lè ṣàmójútó àwọn ìyípadà sí àwọn fáìlì bí àkókò ti ń lọ kí o ba lè rántí àwọn ẹ̀yà pàtó lẹ́yìn náà. Ó fẹ́ dàbí ẹ̀ka "ṣàmójútó àwọn ìyípadà" tó wà nínú àwọn ètò aṣaáyan ọ̀rọ̀ (bí àpẹẹrẹ, Microsoft Word tàbí LibreOffice Writer), ṣùgbọ́n ó lágbára jù bẹ́ẹ̀ lọ.
 
 ## Ṣíṣe àgbékalẹ̀ Git
 
