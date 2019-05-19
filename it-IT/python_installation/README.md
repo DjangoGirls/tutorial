@@ -4,7 +4,7 @@ Finalmente siamo qui!
 
 Ma prima, permettici di introdurre brevemente cos'è Python. Python è un linguaggio di programmazione molto popolare che può essere utilizzato per creare siti web, giochi, sofware scientifici, graffici e molto, molto altro.
 
-Python ha avuto origine alla fine degli anni '80 ed il suo obiettivo principale è quello di essere leggibile dagli esseri umani (non solo dalle macchine!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python è stato creato alla fine degli anni '80 ed il suo obiettivo principale è quello di essere leggibile dalle persone (e non solo dalle macchine!). Per questo motivo sembra più semplice di altri linguaggi di programmazione, ma non preoccuparti -- Python è anche molto potente!
 
 # Istallazione di Python
 
