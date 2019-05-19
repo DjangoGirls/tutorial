@@ -4,7 +4,7 @@ Blog wa ṣì burẹ́wà ní wíwò, àbí bẹ́ẹ̀ kọ? Àkókò láti mú
 
 ## Kíni CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Cascading Style Sheets (CSS) jẹ́ èdè kan tí a n lò fún ṣíṣe àpèjúwe ìrísí àti àgbékalẹ̀ ti ààyè ayélujára kan tí a kọ ní èdè ìṣàmìsí (markup) kan (bíi HTML). Wò ó gẹ́gẹ́ bí èròjà ìṣaralóge fún ojú-ìwé ayélujára wa. ;)
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
@@ -14,9 +14,9 @@ Bootstrap is one of the most popular HTML and CSS frameworks for developing beau
 
 It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
 
-## Install Bootstrap
+## Ṣàgbékalẹ̀ Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Láti ṣàgbékalẹ̀ Bootstrap, ṣí fáìlì `.html` rẹ nínú olóòtú kóòdù náà kí o sì ṣàfikún èyí sí abala `<head>` náà:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
