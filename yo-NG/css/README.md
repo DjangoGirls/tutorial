@@ -107,7 +107,7 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 
 The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
 
-Your file should now look like this:
+Ó yẹ kí fáìlì rẹ rí báyìí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -154,7 +154,7 @@ body {
 
 ![Figure 14.3](images/margin2.png)
 
-Maybe we can customize the font in our header? Paste this into your `<head>` in `blog/templates/blog/post_list.html` file:
+Bóyá a lè ṣe ìrísí-lẹ́tà náà bí a ṣe fẹ́ nínú àkọsórí wa? Lẹ èyí sínú `<head>` rẹ nínú fáìlì `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
