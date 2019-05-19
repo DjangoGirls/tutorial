@@ -20,13 +20,13 @@
 
 #### HTML, CSS ならびに JavaScript
 
-- [Codecademy / web development コース](https://www.codecademy.com/learn/paths/web-development)
+- [Codecademy - web development コース](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
+- [CodecademyのPythonコース](https://www.codecademy.com/learn/learn-python)
+- [GoogleのPythonコース](https://developers.google.com/edu/python/)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
@@ -35,7 +35,7 @@
 
 #### Working with data
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
+- [Codecademyのdata scienceコース](https://www.codecademy.com/learn/paths/data-science)
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
 
