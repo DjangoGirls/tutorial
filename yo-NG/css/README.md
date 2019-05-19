@@ -6,7 +6,7 @@ Blog wa ṣì burẹ́wà ní wíwò, àbí bẹ́ẹ̀ kọ? Àkókò láti mú
 
 Cascading Style Sheets (CSS) jẹ́ èdè kan tí a n lò fún ṣíṣe àpèjúwe ìrísí àti àgbékalẹ̀ ti ààyè ayélujára kan tí a kọ ní èdè ìṣàmìsí (markup) kan (bíi HTML). Wò ó gẹ́gẹ́ bí èròjà ìṣaralóge fún ojú-ìwé ayélujára wa. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Ṣùgbọ́n a kò fẹ́ bẹ̀rẹ̀ láti ìbẹ̀rẹ̀ padà, àbí bẹ́ẹ̀ kọ? Lẹ́ẹ̀kan síi, a ma lo nnkan kan tí àwọn onímọ̀ nípa kóòdù ti gbé jáde sórí íńtánẹ́ẹ̀tì lọ́fẹ̀ẹ́. Ṣíṣe nnkan tí ẹnìkan ti ṣe kalẹ̀ tẹ́lẹ̀ kìí ṣe ìgbádùn, o mọ̀.
 
 ## Ẹ jẹ́ ká lo Bootstrap!
 
@@ -39,7 +39,7 @@ Finally we will take a closer look at these things we've been calling **static f
 
 Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
 
-We do that by creating a folder called `static` inside the blog app:
+A ma ṣe ìyẹn nípasẹ̀ ṣíṣẹ̀dá fódà kan tí a n pè ní `static` sínú ètò blog náà:
 
     djangogirls
     ├── blog
@@ -62,7 +62,7 @@ Let's create a CSS file now, to add your own style to your web page. Create a ne
                    └─── blog.css
     
 
-Time to write some CSS! Open up the `blog/static/css/blog.css` file in your code editor.
+Àkókò láti kọ àwọn CSS! Ṣí fáìlì `blog/static/css/blog.css` náà nínú olóòtú kóòdù rẹ.
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
