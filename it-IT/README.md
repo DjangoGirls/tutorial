@@ -28,13 +28,13 @@ Assomiglierà (più o meno) a questo:
 
 ![Figure 0.1](images/application.png)
 
-> Se lavori da solo/a al tutorial e non hai un insegnante che ti possa aiutare nel caso avessi qualche problema, abbiamo una chat per te: [!(Chat.svg)![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Abbiamo chiesto ai nostri insegnanti e partecipanti precedenti di visitare la chat di tanto in tanto per aiutare gli altri con il tutorial! Non aver paura di fare domande!
+> Se lavori da sola al tutorial e non hai un insegnante che ti possa aiutare nel caso avessi qualche problema, abbiamo una chat per te: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Abbiamo chiesto ai nostri coach e a coloro che hanno già partecipato di visitare la chat di tanto in tanto per aiutare gli altri con il tutorial! Non aver paura di fare domande!
 
 OK, [cominciamo dall'inizio...](./how_the_internet_works/README.md)
 
 ## Seguire il tutorial da casa
 
-È fantastico prendere parte a un workshop Django Girls, ma siamo consapevoli che non sempre è possibile essere presenti a un workshop. Questo è il motivo per cui ti invitiamo a provare seguendo il tutorial da casa. Per chi ci segue da casa, stiamo preparando alcuni video che renderanno più facile seguire il tutorial da sole. È ancora un lavoro in corso d'opera, ma col tempo ci saranno sempre saranno più argomenti trattati sul nostro canale YouTube, [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
+È fantastico prendere parte a un workshop Django Girls, ma siamo consapevoli che non sempre è possibile essere presenti a un workshop. Questo è il motivo per cui ti invitiamo a provare a seguire il tutorial da casa. Per chi ci segue da casa, stiamo preparando alcuni video che renderanno più facile seguire il tutorial da sole. È un progetto ancora in corso, ma col tempo gli argomenti trattati sul nostro canale YouTube [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) saranno sempre di più.
 
 In ogni capitolo già trattato, c'è un link che punta al video corrispondente.
 
@@ -44,7 +44,7 @@ Questo tutorial è mantenuto da [DjangoGirls](https://djangogirls.org/). Se trov
 
 ## Vuoi aiutarci a tradurre il tutorial in altre lingue?
 
-Attualmente, le traduzioni vengono mantenute sulla piattaforma crowdin.com presso:
+Attualmente le traduzioni vengono svolte sulla piattaforma crowdin.com all'indirizzo:
 
 https://crowdin.com/project/django-girls-tutorial
 
