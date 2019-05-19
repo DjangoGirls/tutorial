@@ -1,8 +1,8 @@
 # CSS – mú kí ó rẹwà!
 
-Our blog still looks pretty ugly, right? Time to make it nice! We will use CSS for that.
+Blog wa ṣì burẹ́wà ní wíwò, àbí bẹ́ẹ̀ kọ? Àkókò láti mú kí ó dára! A ma lo CSS fún yẹn.
 
-## What is CSS?
+## Kíni CSS?
 
 Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
 
