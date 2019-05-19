@@ -16,13 +16,13 @@ Hai mai avuto l'impressione che il mondo stia diventando sempre più tecnologico
 
 Beh, abbiamo buone notizie per te! La programmazione non è così complicata come sembra e vogliamo dimostrarti quanto può essere divertente.
 
-Questo tutorial non ti trasformerà magicamente in un programmatore. Se vuoi diventare bravo/a, ci vorranno mesi o addirittura anni di apprendimento e pratica. Ma ti vogliamo dimostrare che scrivere programmi o creare siti web non è complicato come sembra. Proveremo a spiegarti diversi argomenti come meglio possiamo, in modo che non ti senta più intimidito/a dalla tecnologia.
+Questo tutorial non ti trasformerà magicamente in una programmatrice. Se vuoi diventare brava, ci vorranno mesi o addirittura anni di apprendimento e pratica. Ma ti vogliamo dimostrare che scrivere programmi o creare siti web non è complicato come sembra. Proveremo a spiegarti diversi argomenti come meglio possiamo, in modo che non ti senta più intimidita dalla tecnologia.
 
 Speriamo di riuscire a farti amare la tecnologia come la amiamo noi!
 
 ## Cosa imparerai durante questo tutorial?
 
-Una volta che avrai terminato il tutorial, avrai a disposizione una semplice applicazione web: il tuo blog personale. Ti mostreremo come metterlo in linea, in modo che gli altri possano vedere il tuo lavoro!
+Una volta terminato il tutorial, avrai creato una piccola applicazione web funzionante: il tuo blog personale. Ti mostreremo come metterlo online, in modo che gli altri possano vedere il tuo lavoro!
 
 Assomiglierà (più o meno) a questo:
 
