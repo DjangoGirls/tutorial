@@ -197,7 +197,7 @@ Your site should now be live on the public Internet! Click through to the Python
 
 > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
 
-## Debugging tips
+## Suggerimenti per il debug
 
 If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
 
@@ -209,7 +209,7 @@ If you see an error when you try to visit your site, the first place to look for
 
 There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+E ricorda, il tuo coach è qui per aiutarti!
 
 # Check out your site!
 
