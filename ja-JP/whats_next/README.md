@@ -4,13 +4,13 @@
 
 ### 今何をする？
 
-Take a break and relax! You have just done something really huge.
+休憩してリラックスしてください！本当に大きなことを成し遂げました。
 
 休んだ後は、[Facebook](http://facebook.com/djangogirls)や[Twitter](https://twitter.com/djangogirls)でDjango Girlsをぜひフォローしてくださいね。最新の情報を入手できます。
 
 ### さらにオススメの資料はありますか？
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+あります！ There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
