@@ -53,7 +53,7 @@ Django will automatically find any folders called "static" inside any of your ap
 
 ## Fáìlì CSS àkọ́kọ́ rẹ!
 
-Let's create a CSS file now, to add your own style to your web page. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
+Ẹ jẹ́ ká ṣẹ̀dá fáìlì CSS kan ní báyìí, láti ṣàfikún àrà tìẹ sí ojú-ìwé ayélujára rẹ. Create a new directory called `css` inside your `static` directory. Then create a new file called `blog.css` inside this `css` directory. Ready?
 
     djangogirls
     └─── blog
