@@ -1,6 +1,6 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+使用しているWindowsとキーボードのバージョンによって、以下のいずかれかの方法でコマンドウィンドウを開けるはずです(いくつか試さないといけないかもしれませんが、これらの提案のすべてを試す必要はありません):
 
 - Go to the Start menu or screen, and enter "Command Prompt" in the search field.
 - Go to Start menu → Windows System → Command Prompt.
@@ -17,12 +17,12 @@ Depending on your version of Windows and your keyboard, one of the following sho
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+[アプリケーション] → [ユーティリティ] → [ターミナル] を選択しましょう。
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. もしそこで見当たらない場合は、Googleで検索してみましょう。 :)
 
 <!--endsec-->
