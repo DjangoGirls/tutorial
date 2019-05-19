@@ -554,8 +554,8 @@ Incidentally, you just learned about a new type of object in Python. It's called
 
 There are only two Boolean objects:
 
-- True
-- False
+- Vero
+- Falso
 
 But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
@@ -629,7 +629,7 @@ With the file saved, it's time to run it! Using the skills you've learned in the
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+Su un Mac, il comando sarà più o meno così:
 
 {% filename %}command-line{% endfilename %}
 
@@ -641,7 +641,7 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+Su Linux, sarà così:
 
 {% filename %}command-line{% endfilename %}
 
@@ -654,7 +654,7 @@ On Linux, it will be like this:
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Nel prompt dei comandi di Windows, sarà così:
 
 {% filename %}command-line{% endfilename %}
 
@@ -676,7 +676,7 @@ And on Windows Powershell, it will be like this:
 
 If you get stuck, ask for help. That's exactly what the coaches are here for!
 
-Now use Python to execute the code in the file like this:
+Ora usa Python per eseguire il codice nel file:
 
 {% filename %}command-line{% endfilename %}
 
@@ -813,7 +813,7 @@ Python runs through each test in sequence and prints:
     Perfetto, posso apprezzare ogni dettaglio
     
 
-## Comments
+## Commenti
 
 Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
 
@@ -930,7 +930,7 @@ And run it again:
     Ciao Ola!
     
 
-And if we change the name?
+E se cambiamo il nome?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -974,7 +974,7 @@ Let's call the code now:
     Ciao Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Complimenti! Hai appena imparato a scrivere le funzioni! :)
 
 ## Loop
 
@@ -1016,7 +1016,7 @@ for name in girls:
     print('Prossima ragazza')
 ```
 
-And when we run it:
+E quando lo eseguiamo:
 
 {% filename %}command-line{% endfilename %}
 
