@@ -16,7 +16,7 @@
 
 # インストール
 
-このチュートリアルではブログを作成します。 In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+このチュートリアルではブログを作成します。 そのために、チュートリアルを進める上で、さまざまなソフトウェアをコンピュータにインストールし、必要に応じていくつかのオンラインアカウントを設定する方法について説明していきます。 This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
