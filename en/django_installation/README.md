@@ -4,4 +4,6 @@
 
 > **Note** If you already worked through the Installation steps then you've already done this – you can go straight to the next chapter!
 
+> **Note** If you installed Python with Anaconda, skip this chapter and make sure you follow the [Django installation (for Anaconda users)](../django_installation_anaconda/README.md) instructions.
+
 {% include "/django_installation/instructions.md" %}

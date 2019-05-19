@@ -10,6 +10,7 @@
 * [Introduction to Python](python_introduction/README.md)
 * [What is Django?](django/README.md)
 * [Django installation](django_installation/README.md)
+* [Django installation (for Anaconda users)](django_installation_anaconda/README.md)
 * [Your first Django project!](django_start_project/README.md)
 * [Django models](django_models/README.md)
 * [Django admin](django_admin/README.md)
