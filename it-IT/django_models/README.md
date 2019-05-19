@@ -121,24 +121,24 @@ Let's open `blog/models.py` in the code editor, remove everything from it, and w
 {% filename %}blog/models.py{% endfilename %}
 
 ```python
-from django.conf import settings
-from django.db import models
-from django.utils import timezone
+from django.conf import settings 
+from django.db import models 
+from django.utils import timezone 
 
 
 class Post(models.Model):
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    title = models.CharField(max_length=200)
-    text = models.TextField()
-    created_date = models.DateTimeField(default=timezone.now)
-    published_date = models.DateTimeField(blank=True, null=True)
+     author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+     title = models.CharField(max_length=200)
+     text = models.TextField()
+     created_date = models.DateTimeField(default=timezone.now)
+     published_date = models.DateTimeField(blank=True, null=True)
 
-    def publish(self):
-        self.published_date = timezone.now()
-        self.save()
+     def publish(self):
+         self.published_date = timezone.now()
+         self.save()
 
-    def __str__(self):
-        return self.title
+     def __str__(self):
+         return self.title
 ```
 
 > Assicurati di aver usato 2 underscore (`_`) da entrambi i lati di `str`. Questa convenzione viene utilizzata spesso in Python e a volte li chiamiamo anche "dunder" (abbreviazione di "doppio carattere di sottolineatura").
