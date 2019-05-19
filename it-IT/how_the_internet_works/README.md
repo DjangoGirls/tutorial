@@ -1,12 +1,12 @@
-# Come funziona l'Internet
+# Come funziona Internet
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Per le lettrici a casa: questo capitolo viene trattato nel video [Come funziona Internet](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Questo capitolo trae ispirazione dal discorso di Jessica McKellar "Come funziona Internet" (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Scommettiamo che usi Internet tutti i giorni. Ma sai davvero cosa succede quando digiti un indirizzo come https://djangogirls.org nel tuo browser e premi `invio`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Proprio come i tuoi film, la tua musica e le tue immagini. Tuttavia, c'è una caratteristica tipica dei siti web: includono un codice chiamato HTML.
+La prima cosa da capire è che un sito è è composto da un gruppo di file salvati su un hard disk. Proprio come i tuoi film, la tua musica e le tue immagini. Tuttavia, c'è una caratteristica tipica dei siti web: includono un codice chiamato HTML.
 
 Se non hai familiarità con la programmazione, può essere difficile da capire l'HTML all'inizio, ma i tuoi web browser (come Chrome, Safari, Firefox, ecc) lo adorano. I browser sono progettati per capire questo codice, seguire le sue istruzioni e presentare questi file che costituiscono il tuo sito web esattamente nel modo desiderato.
 
