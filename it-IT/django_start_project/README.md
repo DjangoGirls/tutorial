@@ -2,7 +2,7 @@
 
 > Parte di questo capitolo è tratto dal tutorial delle Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Il tutorial di django-marcador è protetto da copyright di Markus Zapke-Gründemann et al.
+> Parti di questo capitolo si basano sul [django-marcador tutorial](http://django-marcador.keimlink.de/) con licenza Creative Commons Attributions-ShareAlike 4.0 International License. Il tutorial di django-marcador è protetto da copyright di Markus Zapke-Gründemann et al.
 
 Creeremo un piccolo blog!
 
@@ -14,7 +14,7 @@ I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti 
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
-In your Mac OS X or Linux console, you should run the following command. **Don't forget to add the period (or dot) `.` at the end!**
+Dovresti eseguire il seguente comando nella tua console MacOS X o Linux; **non dimenticarti di aggiungere il punto `.` alla fine! **
 
 {% filename %}command-line{% endfilename %}
 
