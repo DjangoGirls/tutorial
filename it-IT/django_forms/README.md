@@ -85,7 +85,7 @@ Dopo aver aggiunto la riga di codice il tuo file HTML dovrebbe apparire così:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+Dopo aver salvato e aggiornato la pagina http://127.0.0.1:8000 vedrai un errore che già conosci: `NoReverseMatch`. Lo vedi? Bene!
 
 ## URL
 
