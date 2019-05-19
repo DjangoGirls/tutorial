@@ -25,35 +25,35 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # コマンドラインの簡単な紹介
 
-以下の手順の多くは、 "コンソール"、 "ターミナル"、 "コマンドウィンドウ"、または "コマンドライン"を参照しています。これらはすべて同じことを意味します。コンピュータ上のコマンドを入力できるウィンドウです。 メインのチュートリアルに進むと、コマンドラインについてさらに学ぶことができます。 まずは、コマンドウィンドウの開き方と、それがどのように見えるかを覚えましょう。 {% include "/intro_to_command_line/open_instructions.md" %} 
+以下の手順の多くは、 "コンソール"、 "ターミナル"、 "コマンドウィンドウ"、または "コマンドライン"を参照しています。これらはすべて同じことを意味します。コンピュータ上のコマンドを入力できるウィンドウです。 メインのチュートリアルに進むと、コマンドラインについてさらに学ぶことができます。 まずは、コマンドウィンドウの開き方と、それがどのように見えるかを覚えましょう： {% include "/intro_to_command_line/open_instructions.md" %} 
 
-# Install Python
+# Pythonのインストール
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# コードエディタのインストール
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# 仮想環境のセットアップとDjangoのインストール
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Gitのインストール
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# GitHubのアカウント作成
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+[GitHub.com](https://www.github.com)を開いて、新しくフリーのユーザーアカウントを登録しましょう。パスワードを忘れないようにしてください（もしパスワードマネージャーを使っているなら、それに追加しましょう）。
 
-# Create a PythonAnywhere account
+# PythonAnywhereのアカウント作成
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# 読んでみよう
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+お疲れ様でした！これで準備が整いました。ワークショップが始まるまで時間あれば、いくつかのチャプターを読んでおくとよいでしょう。
 
 * [How the internet works](../how_the_internet_works/README.md)
 
