@@ -2,7 +2,7 @@
 
 [Django Girls のイベント](https://djangogirls.org/events/)ではなく、あなたが一人家でこのチュートリアルに挑戦しているのであれば、このチャプターは無視して次のチャプター [インターネットのしくみ](../how_the_internet_works/README.md) に進みましょう。
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+このチャプターがある理由は、チュートリアルで必要なもののインストールについてカバーしているからです。これは、インストール手順のすべてを一ヶ所にまとめた追加のページです（ワークショップのやり方によっては、このページは便利です）。 ご希望であれば、このページにあるすべてのものを今すぐインストールすることができます。 But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
 Good luck!
 
