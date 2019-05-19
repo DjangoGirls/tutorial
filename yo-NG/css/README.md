@@ -12,7 +12,7 @@ But we don't want to start from scratch again, right? Once more, we'll use somet
 
 Bootstrap jẹ́ ọ̀kan lára àwọn ètò HTML àti CSS tó gbajúmọ̀ púpọ̀ fún gbígbé àwọn ààyè ayélujára tó rẹwà jáde: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Ó gba kíkọ nípasẹ̀ àwọn onímọ̀ nípa kóòdù tó ṣiṣẹ́ fún Twitter. Ní báyìí ó ní àgbéjáde nípasẹ̀ àwọn tó yọ̀ǹda ara wọn káàkiri àgbáyé!
 
 ## Ṣàgbékalẹ̀ Bootstrap
 
