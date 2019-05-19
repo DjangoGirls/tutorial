@@ -4,7 +4,7 @@ Vogliamo creare un qualcosa che raccoglierà tutti i post del nostro blog. Per f
 
 ## Oggetti
 
-Esiste un concetto nella programmazione che è quello di `programmazione orientata agli oggetti`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Esiste un concetto nella programmazione che è quello di `programmazione orientata agli oggetti`. L'idea di base è che invece di scrivere una noiosa sequenza di istruzioni di programmazione, possiamo modellare le cose e decidere come devono interagire l'una con l'altra.
 
 Quindi cos'è un oggetto? È un insieme di proprietà ed azioni. Suona strano, ma ti faremo un esempio.
 
@@ -34,7 +34,7 @@ Quindi come faremo a modellare i post del blog? vogliamo costruire un blog, gius
 
 Dobbiamo rispondere alla domanda: cos'è un post? Quali proprietà dovrebbe avere?
 
-Beh, sicuramente il nostro post ha bisogno di qualche testo con il suo contenuto ed un titolo, vero? It would be also nice to know who wrote it – so we need an author. Infine, vogliamo sapere quando il post è stato creato e pubblicato.
+Beh, sicuramente il nostro post ha bisogno di qualche testo con il suo contenuto ed un titolo, vero? Sarebbe bello sapere anche chi l'ha scritto - quindi abbiamo bisogno di un autore. Infine, vogliamo sapere quando il post è stato creato e pubblicato.
 
     Post
     --------
