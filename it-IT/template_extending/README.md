@@ -2,11 +2,11 @@
 
 Un'altra cosa bella di Django è l'**estensione del template**. Cosa significa? Significa che puoi usare le stesse parti del tuo HTML per pagine diverse del tuo sito.
 
-Templates help when you want to use the same information or layout in more than one place. Non devi ripeterti in ogni file. And if you want to change something, you don't have to do it in every template, just one!
+I template ti aiutano quando vuoi usare le stesse informazioni o gli stessi layout in pagine diverse. Non devi ripetere lo stesso codice in ogni file. E se vuoi cambiare qualcosa, non lo devi fare in ogni template, ma solo in uno!
 
-## Create a base template
+## Creare un template di base
 
-Un template base è il template più semplice. Lo puoi estendere su ogni pagina del tuo sito.
+Un template di base è il template più semplice. Lo puoi estendere ad ogni pagina del tuo sito.
 
 Creiamo un file `base.html` in `blog/templates/blog/`:
 
