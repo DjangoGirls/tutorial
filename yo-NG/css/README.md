@@ -25,7 +25,7 @@ Láti ṣàgbékalẹ̀ Bootstrap, ṣí fáìlì `.html` rẹ nínú olóòtú 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Èyí kò ní ṣàfikún fáìlì kankan sí iṣẹ́ rẹ. Yóò kàn tọ́ka sí àwọn fáìlì tó wà lórí Íńtánẹ́ẹ̀tì náà. Nítorí náà tẹ̀síwájú, ṣí ààyè ayélujára rẹ kí o sì ṣe ìmúdójúìwọ̀n ojú-ìwé náà. Òhun nìyí!
 
 ![Figure 14.1](images/bootstrap1.png)
 
