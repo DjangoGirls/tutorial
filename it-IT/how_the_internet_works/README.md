@@ -34,14 +34,14 @@ La tua lettera arriva nell'ufficio postale più vicino a te. Dopo di che va in u
 
 ![Figura 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+Funziona così - invii un messaggio e aspetti una risposta. Solo che al posto di carta e penna usi byte di dati, ma il concetto è lo stesso!
 
-Al posto di indirizzi fisici, ovvero del nome della via, della città, del Cap, e del nome del Paese, usiamo indirizzi IP. Il tuo computer prima chiede il DNS (Domain Name System) per tradurre djangogirls.org in un indirizzo IP. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Al posto di indirizzi fisici, ovvero del nome della via, della città, del Cap, e del nome del Paese, usiamo indirizzi IP. Il tuo computer prima chiede il DNS (Domain Name System) per tradurre djangogirls.org in un indirizzo IP. Funziona un po' come i vecchi elenchi telefonici, dove puoi cercare il nome della persona che vuoi contattare e trovare il numero telefonico e l'indirizzo.
 
 When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. Inoltre utilizzi un linguaggio che il destinatario è in grado di capire, vero? Lo stesso vale per i *pacchi di dati* che invii per vedere un sito Web. Usiamo un protocollo chiamato HTTP (Hypertext Transfer Protocol).
 
 Quindi, praticamente, quando hai un sito, devi avere un *server* (macchina) dove archiviarlo. Quando il *server* riceve una *richiesta* (in una lettera), restituisce il tuo sito (in un'altra lettera).
 
-Since this is a Django tutorial, you might ask what Django does. Quando invii una risposta, non vuoi inviare la stessa cosa a tutti. E' molto meglio se le tue lettere son personalizzate, soprattutto per la persona che ti ha appena scritto, giusto? Django ti aiuta con la creazione di queste interessanti lettere personalizzate. :)
+Dal momento che questo è il tutorial di Django, ti starai chiedendo che cosa fa Django. Quando invii una risposta, non vuoi inviare la stessa cosa a tutti. E' molto meglio se le tue lettere son personalizzate, soprattutto per la persona che ti ha appena scritto, giusto? Django ti aiuta con la creazione di queste interessanti lettere personalizzate. :)
 
 Enough talk – time to create!
