@@ -11,7 +11,7 @@ Depending on your version of Windows and your keyboard, one of the following sho
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-このチュートリアルのあとの方では、2つのコマンドウィンドウを同時に開く場面があります。 しかし、Windowsのいくつかのバージョンでは、1つ目のコマンドウィンドウをすでに開いている状態で2つ目のコマンドウィンドウを同じ方法で開こうとした場合、すでに開いている1つ目の方が参照されてしまうことがあります。 Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+このチュートリアルのあとの方では、2つのコマンドウィンドウを同時に開く場面があります。 しかし、Windowsのいくつかのバージョンでは、1つ目のコマンドウィンドウをすでに開いている状態で2つ目のコマンドウィンドウを同じ方法で開こうとした場合、すでに開いている1つ目の方が参照されてしまうことがあります。 あなたのコンピュータで試してみて何が起こるか見てみましょう！ コマンドウィンドウが一つしか開かない場合は、上で挙げたリストにある他の方法を試してみてください。 少なくとも、上で挙げたいずれかの方法で新しいコマンドウィンドウを開けるはずです。
 
 <!--endsec-->
 
