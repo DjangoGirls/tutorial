@@ -8,7 +8,7 @@ Cascading Style Sheets (CSS) jẹ́ èdè kan tí a n lò fún ṣíṣe àpèj�
 
 But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
 
-## Let's use Bootstrap!
+## Ẹ jẹ́ ká lo Bootstrap!
 
 Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
 
