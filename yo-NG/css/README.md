@@ -177,7 +177,7 @@ h1 a, h2 a {
 
 ![Figure 14.3](images/font.png)
 
-Great!
+Ó dára!
 
 As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
 
