@@ -27,7 +27,7 @@
 
 - [CodecademyのPythonコース](https://www.codecademy.com/learn/learn-python)
 - [GoogleのPythonコース](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – 最初のエクササイズは無料です。
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – ほとんどのコースを無料で視聴できますが修了証書や単位が欲しい場合有料になります。
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
@@ -37,6 +37,6 @@
 
 - [Codecademyのdata scienceコース](https://www.codecademy.com/learn/paths/data-science)
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – ほとんどのコースを無料で視聴できますが修了証書や単位が欲しい場合有料になります。
-- [Dataquest](https://www.dataquest.io/) – はじめの30 "分" 無料
+- [Dataquest](https://www.dataquest.io/) – はじめの30 "分" 無料です。
 
 次になにを作るか楽しみにしてますね！
