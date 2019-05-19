@@ -36,7 +36,7 @@
 #### データ操作
 
 - [Codecademyのdata scienceコース](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – ほとんどのコースを無料で視聴できますが修了証書や単位が欲しい場合有料になります。
 - [Dataquest](https://www.dataquest.io/) – はじめの30 "分" 無料
 
-We can't wait to see what you build next!
+次になにを作るか楽しみにしてますね！
