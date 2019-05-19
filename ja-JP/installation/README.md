@@ -16,16 +16,16 @@
 
 # インストール
 
-このチュートリアルではブログを作成します。 そのために、チュートリアルを進める上で、さまざまなソフトウェアをコンピュータにインストールし、必要に応じていくつかのオンラインアカウントを設定する方法について説明していきます。 This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+このチュートリアルではブログを作成します。 そのために、チュートリアルを進める上で、さまざまなソフトウェアをコンピュータにインストールし、必要に応じていくつかのオンラインアカウントを設定する方法について説明していきます。 このページでは、インストールとサインアップの手順すべてを一ヶ所にまとめています（ワークショップのやり方によっては、このページは便利です）。
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Brief intro to the command line
+# コマンドラインの簡単な紹介
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+以下の手順の多くは、 "コンソール"、 "ターミナル"、 "コマンドウィンドウ"、または "コマンドライン"を参照しています。これらはすべて同じことを意味します。コンピュータ上のコマンドを入力できるウィンドウです。 メインのチュートリアルに進むと、コマンドラインについてさらに学ぶことができます。 まずは、コマンドウィンドウの開き方と、それがどのように見えるかを覚えましょう。 {% include "/intro_to_command_line/open_instructions.md" %} 
 
 # Install Python
 
