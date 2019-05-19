@@ -4,7 +4,7 @@
 
 Fino ad ora, il tuo sito web era presente solo sul tuo computer. Adesso imparerai come fare il deploy! Il deploy è il processo di pubblicazione online del tuo progetto in modo tale che sia visibile anche da altre persone. :)
 
-Come si è appreso, un sito Web deve trovarsi su un server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Come si è appreso, un sito Web deve trovarsi su un server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere è gratuito per le piccole applicazioni che non hanno troppi visitatori, sarà quindi perfetto per te al momento.
 
 L'altro servizio esterno che useremo è [GitHub](https://www.github.com), che è un servizio di hosting di codice. Ne esistono altri, ma di questi tempi quasi tutti i programmatori hanno un account GitHub e ora lo avrai anche tu!
 
