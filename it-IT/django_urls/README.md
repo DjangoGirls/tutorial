@@ -43,7 +43,7 @@ The admin URL, which you visited in the previous chapter, is already here:
 
 This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
-## Your first Django URL!
+## Il tuo primo URL Django!
 
 Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
 
@@ -65,7 +65,7 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Ora Django reindirizzerà tutto ciò che viene da 'http://127.0.0.1:8000/' verso `blog.urls` e cercherà qui ulteriori istruzioni.
 
 ## blog.urls
 
