@@ -579,14 +579,14 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Esercitati e divertiti con i valori booleani provando a eseguire i seguenti comandi:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Congratulazioni! I valori Booleani sono tra le cose più interessanti della programmazione e tu hai appena imparato ad utilizzarli!
 
 # Salvalo!
 
@@ -599,7 +599,7 @@ So far we've been writing all our python code in the interpreter, which limits u
 - Salvare un po' di codice in un file python
 - Eseguirlo!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Per uscire dall'interprete di Python che abbiamo utilizzato, digita la funzione `exit()`
 
 {% filename %}command-line{% endfilename %}
 
