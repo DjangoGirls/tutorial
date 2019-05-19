@@ -1,6 +1,6 @@
 > Parte di questa sezione è basata sul tutorial delle Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
-> Part of this section is based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. Il tutorial di django-marcador è protetto da copyright di Markus Zapke-Gründemann et al.
+> Una parte di questo capitolo di basa sul [django-marcador tutorial](http://django-marcador.keimlink.de/), con licenza Creative Commons Attribution-ShareAlike 4.0 International License. Il tutorial di django-marcador è protetto da copyright di Markus Zapke-Gründemann et al.
 
 ## Ambiente virtuale
 
@@ -215,4 +215,4 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-That's it! You're now (finally) ready to create a Django application!
+Questo è tutto! Ora sei (finalmente) pronta a creare un'applicazione Django!
