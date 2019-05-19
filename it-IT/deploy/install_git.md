@@ -1,11 +1,11 @@
-Git è un "sistema di controllo versione" utilizzato da molti programmatori. Questo software può tracciare le modifiche nel corso del tempo ad i file, in questo modo puoi ripristinare successivamente una specifica versione. Un po' come la funzione "revisioni" nei programmi di elaborazione di testi (come Microsoft Word o LibreOffice), ma molto più potente.
+Git è un "sistema di controllo versione" utilizzato da molti programmatori. Questo software può tracciare le modifiche ai file nel corso del tempo, così da poter ripristinare successivamente una specifica versione. Un po' come la funzione "revisioni" nei programmi di elaborazione di testi (come Microsoft Word o LibreOffice), ma molto più potente.
 
 ## Installare Git
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-È possibile scaricare Git da [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). A parte questo, i valori predefiniti vanno bene. 'Checkout Windows-style' e 'commit Unix-style line endings' vanno bene.
+È possibile scaricare Git da [git-scm.com](https://git-scm.com/). Puoi saltare tutti i passaggi tranne due: nel passaggio dove ti chiede di scegliere l'editor, dovrai selezionare Nano, e nel passaggio "Regolazione della variabile di ambiente PATH", seleziona "Esegui Git e gli strumenti Unix opzionali dal prompt dei comandi di Windows" (l'opzione in basso). A parte questo, i valori predefiniti vanno bene. 'Checkout Windows-style' e 'commit Unix-style line endings' vanno bene.
 
 Non dimenticare di riavviare il prompt dei comandi o la powershell dopo che l'installazione è terminata con successo. <!--endsec-->
 
