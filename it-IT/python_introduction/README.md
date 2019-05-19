@@ -648,7 +648,7 @@ Su Linux, sarà così:
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(Ricorda che la parola "Desktop" potrebbe essere tradotta nella tua lingua.)
 
 <!--endsec-->
 
