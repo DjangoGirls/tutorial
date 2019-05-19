@@ -46,7 +46,7 @@ admin.site.register(Post)
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Postsに移動し少し試してみましょう。 Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 少なくとも 2 つまたは 3 つの記事 (すべてではない) は公開日がセットされているようにしてください。後ほど役に立ちます。
 
