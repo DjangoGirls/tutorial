@@ -1,10 +1,10 @@
 # CSS - rendilo carino!
 
-Il nostro blog sembra ancora un pochino brutto, vero? È arrivato il momento di abbellirlo! Per fare ciò useremo CSS.
+Il nostro blog sembra ancora bruttino, vero? È arrivato il momento di abbellirlo! Per fare ciò useremo i CSS.
 
-## Che cos'è CSS?
+## Che cosa sono i CSS?
 
-Il CSS (Cascading Style Sheet, fogli di stile a cascata) è un linguaggio usato per descrivere l'aspetto e la formattazione di un sito web scritto in un linguaggio di Markup (come l'HTML). Vedilo come il trucco per la nostra pagina. ;)
+I CSS (Cascading Style Sheet, fogli di stile a cascata) servono a descrivere l'aspetto e la formattazione di un sito web scritto in un linguaggio di Markup (come l'HTML). Vedilo come il make-up per la nostra pagina web. ;)
 
 Ma non vogliamo iniziare di nuovo dalle basi, vero? Ancora una volta, useremo qualcosa che i programmatori hanno rilasciato su internet gratuitamente. Reinventare la ruota non è divertente, come saprai.
 
