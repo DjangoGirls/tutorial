@@ -1,6 +1,6 @@
 # منتشر کردن!
 
-> **توجه داشته باشید** که قسمت های پیش رو ممکن است کمی سخت به نظر برسد. یکی از مهم ترین قسمت های توسعه وب سایت, دیپلوی می باشد. این فصل در وسط آموزش قرار گرفته است، بنابراین مربی شما می تواندبه شما در راه اندازی آنلاین وبسایتتان کمک کند. این به این معنی است که شما می‌توانید به تنهایی ادامه‌ی تمرین خود را به اتمام برسانید حتی اگر زمان کارگاه به پایان برسد.
+> **توجه داشته باشید** که قسمت های پیش رو ممکن است کمی سخت به نظر برسد. یکی از مهم ترین قسمت های توسعه وب سایت منتشرکردن یا Deploy می‌باشد. این فصل در وسط آموزش قرار گرفته است، بنابراین مربی شما می تواندبه شما در راه اندازی آنلاین وبسایتتان کمک کند. این به این معنی است که شما می‌توانید به تنهایی ادامه‌ی تمرین خود را به اتمام برسانید حتی اگر زمان کارگاه به پایان برسد.
 
 تا به اینجا وب سایت شما فقط در رایانه شما قابل مشاهده است. حالا شما یاد خواهید گرفت که چگونه آن را دیپلوی کنید! دیپلوی یعنی فرآیند انتشار پروژه شما در اینترنت است تا مردم بتوانند در نهایت پروژه شما را ببینند. :)
 
@@ -109,9 +109,9 @@
 >     $ git push -u origin master
 >     
 > 
-> When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+> وقتی شما فایلی را به GitHub می‌فرستید یا push می‌کنید نام کاربری و گذرواژه از شما پرسیده می‌شود (ممکن است در همان کنسول خط فرمان یا در یک پنجره جدید از شما پرسیده شود) پس از وارد کردن اطلاعات ورود، چیزی شبیه به این خواهید دید:
 > 
-> {% filename %}خط فرمان{% endfilename %}
+> {% filename %}command-line{% endfilename %}
 > 
 >     Counting objects: 6, done.
 >     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
@@ -124,19 +124,19 @@
 > 
 > <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 > 
-> کد شما الان روی GitHub است. بروید و آن را کنترل کنید! خواهید دید که کدهای شما در جای خوبی است، کدهای [Django](https://github.com/django/django)، [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) و بسیاری نرم‌افزارهای متن باز فوق العاده دیگر هم کدهایشان را در GitHub قرار داده‌اند. :)
+> کد شما الان روی GitHub است. بروید و آن را کنترل کنید! خواهید دید که کدهای شما در جای خوبی است، [Django](https://github.com/django/django)، [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) و بسیاری نرم‌افزارهای متن باز فوق العاده دیگر هم کدهایشان را در GitHub قرار داده‌اند. :)
 > 
 > # تنظیم کردن وبلاگ بر روی PythonAnywhere
 > 
 > ## یک حساب کاربری بر روی PythonAnywhere بسازید
 > 
-> > **توجه** شما ممکن است کم قبل‌تر و در مراحل نصب یک حساب کاربری در PythonAnywhere درست کرده باشید. اگر چنین است نیاز نیست که حساب کاربری دیگری بسازید.
+> > **توجه** شما ممکن است کمی قبل‌تر و در مراحل نصب یک حساب کاربری در PythonAnywhere درست کرده باشید. اگر چنین است نیاز نیست که حساب کاربری دیگری بسازید.
 > 
 > {% include "/deploy/signup_pythonanywhere.md" %}
 > 
 > ## وبسایت‌مان را بر روی PythonAnywhere تنظیم کنیم
 > 
-> با کلیک کردن بر روی لوگو و انتخاب گزینه شروع کنسول "Bash" به [داشبورد PythonAnywhere ](https://www.pythonanywhere.com/) بروید. این نسخه PythonAnywhere از محیط خط فرمان است، شبیه آنچه در کامپیوتر خود دارید.
+> با کلیک کردن بر روی لوگو و انتخاب گزینه شروع کنسول "Bash" به [داشبورد PythonAnywhere ](https://www.pythonanywhere.com/) بروید. این محیط خط فرمان مخصوص PythonAnywhere است، شبیه آنچه در کامپیوتر خود دارید.
 > 
 > ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 > 
