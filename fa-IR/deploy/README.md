@@ -193,9 +193,9 @@
 > 
 > ## اکنون آنلاین هستید!
 > 
-> Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+> وبسایت شما هم اکنون بر روی اینترنت و به صورت عمومی قابل دسترس است! از طریق صفحه "Web" در PythonAnywhere یک لینک به پروژه خود دریافت کنید. شما میتوانید این لینک را با هرکسی که دوست داشته باشید به اشتراک بگذارید :)
 > 
-> > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> > **توجه** این یک تمرین ابتدایی است و ما در هنگام انتشار، برخی میانبرهایی را استفاده کرده‌ایم که از جنبه امنیت وبسایت، روش‌های ایده‌آلی نیستند. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
 > 
 > ## Debugging tips
 > 
