@@ -151,7 +151,7 @@
 > 
 > این دستور باید چیزهایی شبیه به `Collecting pythonanywhere` بر روی صفحه نشان دهد و در انتها نیز این پیغام `Successfully installed (...) pythonanywhere- (...)` نمایش داده خواهد شد.
 > 
-> حالا ما برنامه کمکی را اجرا میکنیم تا به طور اتوماتیک برنامه ما را از GitHub بخواند. خطوط زیر را در کنسول PythonAnywhere بنویسید (فراموش نکنید که نام کاربری GitHub را به جای `<your-github-username>`بنویسید در نتیجه URL شما مانند URL اختصاصی شما در GitHub میشود):
+> حالا ما برنامه کمکی را اجرا می‌کنیم تا به طور اتوماتیک برنامه ما را از GitHub بخواند. خطوط زیر را در کنسول PythonAnywhere بنویسید (فراموش نکنید که نام کاربری GitHub را به جای `<your-github-username>` بنویسید در نتیجه URL شما مانند URL اختصاصی شما در GitHub میشود):
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -169,29 +169,29 @@
 > 
 > در PythonAnywhere تمام این مراحل اتوماتیک انجام می‌شود اما برای سایر سرورها شما باید دقیقا تمام این اقدامات را انجام دهید.
 > 
-> مهم‌ترین چیزی که اینجا باید به آن توجه کنید آن است که پایگاه داده شما در اینجا از چیزی که بر روی کامپیوتر خود دارید کاملا مستقل است در نتیجه ممکن است اینجا حساب کاربری ادمین یا پست‌های متفاوتی نسبت به کامپیوتر شخصی خود داشته باشید. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+> مهم‌ترین چیزی که اینجا باید به آن توجه کنید آن است که پایگاه داده شما در اینجا از چیزی که بر روی کامپیوتر خود دارید کاملا مستقل است در نتیجه ممکن است اینجا حساب کاربری ادمین یا پست‌های متفاوتی نسبت به کامپیوتر شخصی خود داشته باشید. در نتیجه همان طور که بر روی کامپیوتر خودمان انجام داده ایم باید یک کاربر admin با دستور `createsuperuser` بسازیم. PythonAnywhere به صورت اتوماتیک محیط مجازی یا virtulenv شما را فعال کرده است درنتیجه تنها چیزی که لازم دارید این است که خط زیر را اجرا کنید:
 > 
-> {% filename %}PythonAnywhere command-line{% endfilename %}
+> {% filename %}command-line{% endfilename %}
 > 
 >     (ola.pythonanywhere.com) $ python manage.py createsuperuser
 >     
 > 
-> Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+> مشخصات کاربر ادمین را وارد کنید. می‌توانید این اطلاعات را شبیه اطلاعات ادمین که قبلاً در کامپیوتر خود زده‌اید در نظر بگیرید مگر اینکه بخواهید گذره واژه امن‌تری در PythonAnywhere در نظر بگیرید.
 > 
-> Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+> حالا اگر بخواهید می‌‌توانید نگاهی به کدهای خود در PythonAnywhere بیندازید دستور `ls` را بزنید:
 > 
-> {% filename %}PythonAnywhere command-line{% endfilename %}
+> {% filename %}command-line{% endfilename %}
 > 
 >     (ola.pythonanywhere.com) $ ls
 >     blog  db.sqlite3  manage.py  mysite requirements.txt static
 >     (ola.pythonanywhere.com) $ ls blog/
->     __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
->     tests.py  views.py
+>     __init__.py  __pycache__  admin.py  apps.py  migrations  models.pytests.py  static
+>     templates  views.py
 >     
 > 
-> You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+> علاوه بر این می‌توانید به صفحه File بروید و به کمک مرورگر فایل پیش‌ساخته که در PythonAnywhere قرار داده شده به فایل‌های خود نگاهی بیاندازید. از صفحه کنسول و به کمک کلید منو در گوشه بالا و سمت راست، می توانید به سایر صفحات PythonAnywhere بروید. وقتی شما در یک صفحه هستید، نزدیک به بالای صفحه، لینک‌هایی به سایر صفحات وجود دارد.
 > 
-> ## You are now live!
+> ## اکنون آنلاین هستید!
 > 
 > Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 > 
