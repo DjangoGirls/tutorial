@@ -11,14 +11,14 @@ Cloud IDE è uno strumento che mette a disposizione un editor di codice e l'acce
 3. Cliccare su *New Server*
 4. Fare click sul pulsante Terminal (sul lato sinistro della finestra)
 
-Verrà visualizzata un'interfaccia con una barra laterale e dei bottoni sulla sinistra. Fare click sul pulante "Terminal" una nuova finestra simile a questa verrà visualizzata:
+Ora dovresti vedere un'interfaccia con una barra laterale e dei pulsanti sulla sinistra. Fai click sul pulante "Terminal" per aprire la finestra del terminale con il prompt, così:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-Il terminale PaizaCloud Cloud IDE è pronto per ricevere istruzioni. E' possibile ridimensionare o massimizzare la finiestra per renderla più grande.
+Il terminale su PaizaCloud Cloud IDE è pronto a ricevere istruzioni. Puoi ridimensionare la finestra o renderla un po' più più grande.
 
 #### AWS Cloud9
 
@@ -26,7 +26,7 @@ Il terminale PaizaCloud Cloud IDE è pronto per ricevere istruzioni. E' possibil
 2. Creare un account
 3. Fare click su *Create Environment*
 
-Verrà visualizzata un'interfaccia con una barra laterale, una grossa finestra con del testo e una finestra più piccola in basso che assomiglia a questa:
+Ora dovresti vedere un'interfaccia con una barra laterale, una finestra principale con del testo e una finestra più piccola in basso che assomiglia a questa:
 
 {% filename %}bash{% endfilename %}
 
