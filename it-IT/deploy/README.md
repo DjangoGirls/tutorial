@@ -6,9 +6,9 @@ Fino ad ora, il tuo sito web era presente solo sul tuo computer. Adesso imparera
 
 Come abbiamo imparato, un sito Web deve trovarsi su un server. Ci sono molti server provider disponibili su Internet, noi useremo [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere è gratuito per le piccole applicazioni che non hanno troppi visitatori, sarà quindi perfetto per te al momento.
 
-L'altro servizio esterno che useremo è [GitHub](https://www.github.com), che è un servizio di hosting di codice. Ne esistono altri, ma di questi tempi quasi tutti i programmatori hanno un account GitHub e ora lo avrai anche tu!
+L'altro servizio esterno che useremo è [GitHub](https://www.github.com), che è un servizio di hosting di codice. Ne esistono altri, ma oggigiorno quasi tutti i programmatori hanno un account GitHub e ora lo avrai anche tu!
 
-Questi tre servizi saranno importantissimi per te. Il tuo computer in locale sarà il posto in cui svilupperai e farai test. Quando sei soddisfatto delle modifiche, caricherai una copia del programma su GitHub. Il tuo sito Web sarà su PythonAnywhere e lo aggiornerai con una nuova copia del codice da GitHub.
+Questi tre servizi saranno importantissimi per te. Userai il tuo computer locale per sviluppare e fare test. Quando sarai soddisfatto delle modifiche, caricherai una copia del tuo programma su GitHub. Il tuo sito Web sarà su PythonAnywhere e lo aggiornerai con una nuova copia del codice da GitHub.
 
 # Git
 
