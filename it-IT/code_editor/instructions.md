@@ -1,4 +1,4 @@
-Ci sono un sacco di editor diversi e la scelta di quale usare dipende perlopiù dai gusti personali. La maggior parte dei programmatori Python usa IDE (ambienti di sviluppo integrati) complessi ma estremamente potenti, come PyCharm. Tuttavia, dal momento che sei ancora agli inizi, questo non è l'editor più appropriato; quelli che ti suggeriremo noi sono ugualmente potenti, ma molto più semplici da utilizzare.
+Ci sono moltissimi editor diversi e la scelta dipende in gran parte dalle proprie preferenze. La maggior parte dei programmatori Python usa IDE (in inglese Integrated Development Environments, ambienti di sviluppo integrati) complessi ma estremamente potenti, come PyCharm. Tuttavia questo non è l'editor più appropriato per una principiante; quelli che ti suggeriremo noi sono ugualmente potenti, ma molto più semplici.
 
 I nostri suggerimenti sono riportati qui di seguito, ma sentiti libera di chiedere al tuo coach quali sono le sue preferenze in materia di editor - in questo modo sarà più semplice per il tuo coach aiutarti.
 
