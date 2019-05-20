@@ -195,15 +195,15 @@
 > 
 > وبسایت شما هم اکنون بر روی اینترنت و به صورت عمومی قابل دسترس است! از طریق صفحه "Web" در PythonAnywhere یک لینک به پروژه خود دریافت کنید. شما میتوانید این لینک را با هرکسی که دوست داشته باشید به اشتراک بگذارید :)
 > 
-> > **توجه** این یک تمرین ابتدایی است و ما در هنگام انتشار، برخی میانبرهایی را استفاده کرده‌ایم که از جنبه امنیت وبسایت، روش‌های ایده‌آلی نیستند. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> > **توجه** این یک تمرین ابتدایی است و ما در هنگام انتشار، برخی میانبرهایی را استفاده کرده‌ایم که از جنبه امنیت وبسایت، روش‌های ایده‌آلی نیستند. هرگاه خواستید که این پروژه را تکمیل کنید یا پروژه جدیدی را شروع کنید بهتر است دستور العمل‌های انتشار یک پروژه جنگو [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) را مطالعه کنید تا با راهنمایی‌هایی در مورد امن‌تر کردن وبسایت آشنا شوید.
 > 
-> ## Debugging tips
+> ## نکاتی در عیب یابی
 > 
-> If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+> اگر شما با خطایی در هنگام اجرا کردن دستور `pa_autoconfigure_django.py` مواجه شدید ممکن است به دلایل زیر باشد:
 > 
-> - Forgetting to create your PythonAnywhere API token.
-> - Making a mistake in your GitHub URL
-> - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+> - فراموشی در ساخت توکن API در PythonAnywhere.
+> - اشتباه در URL مربوط به GitHub
+> - اگر خطایی با این مضمون *"Could not find your settings.py"* مشاهده کردید، احتمالاً تمام فایل‌های خود را به Git اضافه نکرده‌اید یا همه آن‌ها را (به کمک دستور push) به GitHub نفرستاده‌اید. دوباره به بخش Git نگاهی بیندازید
 > 
 > If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 > 
