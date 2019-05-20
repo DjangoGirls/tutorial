@@ -2,7 +2,7 @@ Puoi [saltare questa sezione](http://tutorial.djangogirls.org/en/installation/#i
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud9 è uno strumento che mette a disposizione un editor e l'accesso ad un computer su Internet su cui installare, scrivere ed eseguire il software. In questo tutorial, Cloud9 sarà come un *computer locale*. I comandi verranno digitati sul terminale come i compagni di classe che eseguino OS X, Ubuntu o Windows ma, il terminale, sarà connesso ad una macchina remota in esecuzione da qualche latra parte configurata dal cloud IDE. Di seguito le istruzioni per gli IDE cloud (PaizaCloud Cloud IDE, AWS Cloud9). E' possibile selezionare uno degli IDE Cloud e seguire le relative istruzioni.
+Cloud IDE è uno strumento che mette a disposizione un editor di codice e l'accesso ad un computer virtuale su cui installare, scrivere ed eseguire il software. In questo tutorial, Cloud IDE avrà la funzione di un *computer locale*. I comandi verranno digitati sul terminale come i compagni di classe che eseguino OS X, Ubuntu o Windows ma, il terminale, sarà connesso ad una macchina remota in esecuzione da qualche latra parte configurata dal cloud IDE. Di seguito le istruzioni per gli IDE cloud (PaizaCloud Cloud IDE, AWS Cloud9). E' possibile selezionare uno degli IDE Cloud e seguire le relative istruzioni.
 
 #### PaizaCloud Cloud IDE
 
