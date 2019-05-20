@@ -2,7 +2,7 @@
 
 > **Nota** Il seguente capitolo è abbastanza difficile da capire fino in fondo. Non mollare e cerca di portarlo a termine; l'implementazione è una parte importante nel processo di costruzione di un sito web. Questo capitolo è inserito a metà del tutorial per far sì che il tuo tutor possa aiutarti con il processo leggermente più complesso di messa online del sito. Questo significa che puoi ancora finire il tutorial da sola se sei a corto di tempo.
 
-Fino ad ora, il tuo sito web era presente solo sul tuo computer. Adesso imparerai come fare il deploy! Il deploy è il processo di pubblicazione online del tuo progetto in modo tale che sia visibile anche da altre persone. :)
+Fino ad ora, il tuo sito web era presente solo sul tuo computer. Adesso imparerai come implementarlo! L'implementazione è il processo di pubblicazione online del tuo progetto in modo tale che sia visibile anche da altre persone. :)
 
 Come abbiamo imparato, un sito Web deve trovarsi su un server. Ci sono molti server provider disponibili su Internet, noi useremo [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere è gratuito per le piccole applicazioni che non hanno troppi visitatori, sarà quindi perfetto per te al momento.
 
