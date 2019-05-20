@@ -64,7 +64,7 @@ Creiamo un file CSS, per aggiungere uno stile alla tua pagina web. Crea una nuov
 
 È il giunto il momento di scrivere un po' di CSS! Apri il file `static/css/blog.css` nel tuo editor di codice.
 
-Non andremmo troppo a fondo nel modificare e imparare il CSS qui. Alla fine di questa pagina c'è una raccomandazione per un corso gratuito di CSS se ti piacerebbe conoscere di più.
+Non approfondiremo l'apprendimento dei CSS in questa sede. Se vuoi saperne di più, in fondo a questa pagina ti consigliamo un corso gratuito.
 
 Facciamo comunque un esempio. Vogliamo cambiare il colore del nostro header? Per decifrare i colori, i computer usano dei codici speciali. Questi codici iniziano con `#` seguiti da 6 lettere (A–F) e numeri (0–9). Per esempio, questo è il codice per il blu `#0000FF`. Puoi trovare i codici per molti colori qui: http://www.colorpicker.com/. Puoi anche usare [colori predefiniti](http://www.w3schools.com/colors/colors_names.asp) come ad esempio `red` e `green`.
 
