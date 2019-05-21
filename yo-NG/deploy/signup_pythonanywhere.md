@@ -14,6 +14,6 @@ This is something you only need to do once. When you've signed up for PythonAnyw
 
 ![Ìsopọ̀ account ní òkè lápá ọ̀tún lórí ojú-ìwé náà](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+lẹ́yìn náà yan táàbù tó ń jẹ́ "API token", kí o tẹ bọ́tìnnì tó sọ pé "Create new API token".
 
 ![Táàbù token API lórí ojú-ìwé Account náà](../deploy/images/pythonanywhere_create_api_token.png)
