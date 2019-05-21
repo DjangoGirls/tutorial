@@ -6,7 +6,7 @@ A ó máa ṣe ìpèsè blog tí a n kọ́ náà sórí PythonAnywhere. Forúk�
 
 ![Ojú-ìwé ìforúkọsílẹ̀ PythonAnywhere tó n ṣàfihàn bọ́tìnnì láti ṣẹ̀dá account 'Beginner' ọ̀fẹ́ kan](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Àkíyèsí** Nígbà tí o bá n yan orúkọ aṣàmúlò rẹ níbí, fi sọ́kàn wípé URL ti blog rẹ yíò wáyé lọ́nà `yourusername.pythonanywhere.com`, nítorí náà yan bóyá orúkọ ìnagijẹ tìẹ tàbí orúkọ kan fún nnkan tí blog rẹ dá lé lórí. Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## Ṣíṣẹ̀dá token API PythonAnywhere kan
 
