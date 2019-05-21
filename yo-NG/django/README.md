@@ -2,7 +2,7 @@
 
 Django (/ˈdʒæŋɡoʊ/ *jang-goh*) jẹ́ àgbékalẹ̀ ètò ayélujára ọ̀fẹ́ kan tó ní orísun gbangba, tí a kọ ní Python. Àgbékalẹ̀ ayélujára kan jẹ́ àwọn èròjà tí yóò ràn ọ́ lọ́wọ́ láti gbé àwọn ààyè ayélujára jáde ní kíákíá àti nírọ̀rùn.
 
-When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
+Nígbà tí o bá n kọ́ ààyè ayélujára kan, o gbọ́dọ̀ máa nílò àwọn èròjà tó jọra kan: ọnà kan láti yanjú ìfàṣẹsí aṣàmúlò (ìforúkọsílẹ̀, wíwọlé, jíjáde), pánẹ́ẹ̀lì ìṣàkóso kan fún ààyè ayélujára rẹ, àwọn fọ́ọ̀mù, ọnà kan láti gbé àwọn fáìlì sórí ayélujára, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ.
 
 Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
