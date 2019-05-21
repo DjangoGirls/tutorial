@@ -6,11 +6,11 @@ Caricheremo il blog che stiamo realizzando su PythonAnywhere. Crea un account "b
 
 ![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Nota** Quando scegli il tuo nome utente, tieni presente che l'URL del tuo blog assumerá la forma` tuonomeutente.pythonanywhere.com`, quindi scegli il tuo soprannome o un nome che riguardi l'argomento del blog. Inoltre, assicurati di ricordare la tua password (aggiungilo al tuo password manager, se ne usi uno).
 
 ## Creazione di un token API PythonAnywhere
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+Dovrai compiere questo passaggio solo una volta. Dopo aver creato un account su PythonAnywhere, verrai indirizzata alla tua dashboard. Trova il link in alto a destra nella pagina "Account":
 
 ![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
 
