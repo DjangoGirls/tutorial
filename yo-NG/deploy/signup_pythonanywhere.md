@@ -1,6 +1,6 @@
 PythonAnywhere jẹ́ ìpèsè kan fún lílo kóòdù Python lórí àwọn server "nínú cloud náà". A máa lò ó fún ṣíṣe ìpèsè ààyè ayélujára wa, tààrà àti sórí íńtánẹ́ẹ̀tì náà.
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+A ó máa ṣe ìpèsè blog tí a n kọ́ náà sórí PythonAnywhere. Forúkọ sílẹ̀ fún account "Beginner" kan lórí PythonAnywhere (ìpele ọ̀fẹ́ náà ti dára, o kò nílò káàdì arọ́pò owó kan).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
