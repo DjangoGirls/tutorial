@@ -149,7 +149,7 @@ Per implementare un'applicazione web su PythonAnywhere devi prendere il codice d
     $ pip3.6 install --user pythonanywhere
     
 
-That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
+Ora dovresti leggere: `Collecting pythonanywhere` e un'eventuale riga finale che dice `Successfully installed (...) pythonanywhere- (...)`.
 
 Ora eseguiamo l'helper per configurare automaticamente la nostra applicazione da GitHub. Digita quanto segue nella console su PythonAnywhere (non dimenticare di usare il tuo nome utente di GitHub al posto di `<your-github-username>`) in modo che l'URL corrisponda all'URL clone di GitHub:
 
@@ -178,7 +178,7 @@ The main thing to notice right now is that your database on PythonAnywhere is ac
 
 Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Ora, se vuoi, puoi anche dare un'occhiata al tuo codice su PythonAnywhere utilizzando `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -191,7 +191,7 @@ Now, if you like, you can also take a look at your code on PythonAnywhere using 
 
 You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
 
-## You are now live!
+## Ora sei online!
 
 Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 
