@@ -4,7 +4,7 @@ A ó máa ṣe ìpèsè blog tí a n kọ́ náà sórí PythonAnywhere. Forúk�
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
+![Ojú-ìwé ìforúkọsílẹ̀ PythonAnywhere tó n ṣàfihàn bọ́tìnnì láti ṣẹ̀dá account 'Beginner' ọ̀fẹ́ kan](../deploy/images/pythonanywhere_beginner_account_button.png)
 
 > **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
 
@@ -12,8 +12,8 @@ A ó máa ṣe ìpèsè blog tí a n kọ́ náà sórí PythonAnywhere. Forúk�
 
 This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
 
-![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
+![Ìsopọ̀ account ní òkè lápá ọ̀tún lórí ojú-ìwé náà](../deploy/images/pythonanywhere_account.png)
 
 then select the tab named "API token", and hit the button that says "Create new API token".
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![Táàbù token API lórí ojú-ìwé Account náà](../deploy/images/pythonanywhere_create_api_token.png)
