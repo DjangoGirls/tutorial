@@ -142,7 +142,7 @@ Torna alla [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) principal
 
 > **Nota** PythonAnywhere si basa su Linux, quindi se sei su Windows, la console apparirà un po' diversa da quella del tuo computer.
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+Per implementare un'applicazione web su PythonAnywhere devi prendere il codice da GitHub, e configurare PythonAnywhere in modo che lo riconosca come un'applicazione web. Puoi farlo manualmente, ma PythonAnywhere ti fornisce uno strumento che farà tutto il lavoro al posto tuo. Prima di tutto installiamolo:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -151,7 +151,7 @@ Deploying a web app on PythonAnywhere involves pulling down your code from GitHu
 
 That should print out some things like `Collecting pythonanywhere`, and eventually end with a line saying `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Ora eseguiamo l'helper per configurare automaticamente la nostra applicazione da GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
