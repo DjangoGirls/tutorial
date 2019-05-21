@@ -1,6 +1,6 @@
 # Kíni Django?
 
-Django (/ˈdʒæŋɡoʊ/ *jang-goh*) jẹ́ àgbékalẹ̀ ètò ayélujára ọ̀fẹ́ kan tó ní orísun gbangba, tí a kọ ní Python. A web framework is a set of components that helps you to develop websites faster and easier.
+Django (/ˈdʒæŋɡoʊ/ *jang-goh*) jẹ́ àgbékalẹ̀ ètò ayélujára ọ̀fẹ́ kan tó ní orísun gbangba, tí a kọ ní Python. Àgbékalẹ̀ ayélujára kan jẹ́ àwọn èròjà tí yóò ràn ọ́ lọ́wọ́ láti gbé àwọn ààyè ayélujára jáde ní kíákíá àti nírọ̀rùn.
 
 When you're building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc.
 
