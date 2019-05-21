@@ -6,7 +6,7 @@ A ó máa ṣe ìpèsè blog tí a n kọ́ náà sórí PythonAnywhere. Forúk�
 
 ![Ojú-ìwé ìforúkọsílẹ̀ PythonAnywhere tó n ṣàfihàn bọ́tìnnì láti ṣẹ̀dá account 'Beginner' ọ̀fẹ́ kan](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Àkíyèsí** Nígbà tí o bá n yan orúkọ aṣàmúlò rẹ níbí, fi sọ́kàn wípé URL ti blog rẹ yíò wáyé lọ́nà `yourusername.pythonanywhere.com`, nítorí náà yan bóyá orúkọ ìnagijẹ tìẹ tàbí orúkọ kan fún nnkan tí blog rẹ dá lé lórí. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **Àkíyèsí** Nígbà tí o bá n yan orúkọ aṣàmúlò rẹ níbí, fi sọ́kàn wípé URL ti blog rẹ yíò wáyé lọ́nà `yourusername.pythonanywhere.com`, nítorí náà yan bóyá orúkọ ìnagijẹ tìẹ tàbí orúkọ kan fún nnkan tí blog rẹ dá lé lórí. Àti pé, ri dájú láti rántí ọ̀rọ̀ aṣínà rẹ (ṣàfikún rẹ̀ sínú alákòóso ọ̀rọ̀ aṣínà rẹ, tí o bá lo ọ̀kan).
 
 ## Ṣíṣẹ̀dá token API PythonAnywhere kan
 
