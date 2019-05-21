@@ -136,7 +136,7 @@ Adesso Il tuo codice è su GitHub. Guarda! Lo troverai in buona compagnia - [Dja
 
 ## Configurare il nostro sito su PythonAnywhere
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+Torna alla [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) principale cliccando sul logo e scegli l'opzione per avviare una console "Bash” - questa è la versione PythonAnywhere di una riga di comando, proprio come quella sul tuo computer.
 
 ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
