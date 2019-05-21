@@ -10,7 +10,7 @@ A ó máa ṣe ìpèsè blog tí a n kọ́ náà sórí PythonAnywhere. Forúk�
 
 ## Ṣíṣẹ̀dá token API PythonAnywhere kan
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+Èyí jẹ́ nnkan tí o nílò láti ṣe lẹ́ẹ̀kanṣoṣo. Nígbà tí o bá ti forúkọ sílẹ̀ fún PythonAnywhere, ìwọ yóò wọnú pánẹ́ẹ̀lì ìdarí rẹ. Wá atọ́ka náà nítòsí òke lápá ọtún sí ojú-ìwé "Account" rẹ:
 
 ![Ìsopọ̀ account ní òkè lápá ọ̀tún lórí ojú-ìwé náà](../deploy/images/pythonanywhere_account.png)
 
