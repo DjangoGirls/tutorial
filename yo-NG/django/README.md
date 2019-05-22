@@ -8,7 +8,7 @@ Luckily for you, other people long ago noticed that web developers face similar 
 
 Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
 
-## Why do you need a framework?
+## Kí nìdí tó o fi nílò àgbékalẹ̀ (framework) kan?
 
 To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
