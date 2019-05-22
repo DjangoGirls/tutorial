@@ -10,7 +10,7 @@ Frameworks exist to save you from having to reinvent the wheel and to help allev
 
 ## Kí nìdí tó o fi nílò àgbékalẹ̀ (framework) kan?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Láti lóye nípa nnkan tí Django wà fún gan-an, a nílò láti ṣàgbéyẹ̀wò àwọn server náà. Nnkan àkọ́kọ́ ní pé server náà yíò nílò láti mọ̀ wípé o fẹ́ kí ó pèsè ojú-ìwé ayélujára kan fún ẹ.
 
 Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
 
