@@ -20,7 +20,7 @@ Nígbà tí ìbéèrè kan bá wá sí server ayélujára kan, yóò kọjá sí
 
 Wòye sí òṣìṣẹ́ méèlì kan pẹ̀lú lẹ́tà kan. Ó n rìn lọ ní òpópónà náà tó sì n ṣàyẹ̀wò nọ́mbà ilé kọ̀ọ̀kan sí èyí tó wà lórí lẹ́tà náà. Tó bá báramu, yíò fi lẹ́tà náà síbẹ̀. Báyìí ni urlresolver náà ṣe n ṣiṣẹ́!
 
-Nínú iṣẹ́ *view* náà, gbogbo àwọn nnkan tó dára ma jẹ́ ṣíṣe: a lè wo àkójọpọ̀ dátà kan láti wá àwọn àlàyé díẹ̀. Bóyá aṣàmúlò náà béèrè láti ṣàyípadà nnkan kan nínú dátà náà? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+Nínú iṣẹ́ *view* náà, gbogbo àwọn nnkan tó dára ma jẹ́ ṣíṣe: a lè wo àkójọpọ̀ dátà kan láti wá àwọn àlàyé díẹ̀. Bóyá aṣàmúlò náà béèrè láti ṣàyípadà nnkan kan nínú dátà náà? Bíi lẹ́tà kan tó n sọ pé, "Jọ̀wọ́ ṣàyípadà àpèjúwe iṣẹ́ mi." *View* náà lè ṣàyẹ̀wò tí o bá ní ìyọ̀nda láti ṣe bẹ́ẹ̀, ṣe ìmúdójúìwọ̀n àpèjúwe iṣẹ́ náà fún ẹ lẹ́yìn náà àti fi ìkéde kan ránṣẹ́ padà: "Ti gba ṣíṣe!" Lẹ́yìn náà *view* náà yíò pèsè ìdáhùn kan tí Django le fi ránṣẹ́ sí aṣàwákiri ayélujára ti aṣàmúlò náà.
 
 The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
