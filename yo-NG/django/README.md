@@ -16,7 +16,7 @@ Wòye sí àpótì méèlì kan (port) èyí tí a n ṣàmójútó fún àwọn
 
 ## Kíni yíò ṣẹlẹ̀ nígbà tí ẹnìkan bá béèrè ààyè ayélujára kan láti server rẹ?
 
-Nígbà tí ìbéèrè kan bá wá sí server ayélujára kan, yóò kọjá sí Django tí yíò gbìyànjú láti mọ ohun tí a béèrè fún gan-an. Yíò kọ́kọ́ mú àdírẹ́ẹ̀sì ojú-ìwé ayélujára kan tí yíò sì gbìyànjú láti mọ ohun tó yẹ kó ṣe. Apá yìí jẹ́ ṣíṣe nípasẹ̀ **urlresolver** ti Django (ṣàkíyèsí pé àdírẹ́ẹ̀sì ààyè ayélujára kan ni a n pè ní URL – Uniform Resource Locator – nítorí náà orúkọ *urlresolver* náà bọ́gbọ́n mu). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Nígbà tí ìbéèrè kan bá wá sí server ayélujára kan, yóò kọjá sí Django tí yíò gbìyànjú láti mọ ohun tí a béèrè fún gan-an. Yíò kọ́kọ́ mú àdírẹ́ẹ̀sì ojú-ìwé ayélujára kan tí yíò sì gbìyànjú láti mọ ohun tó yẹ kó ṣe. Apá yìí jẹ́ ṣíṣe nípasẹ̀ **urlresolver** ti Django (ṣàkíyèsí pé àdírẹ́ẹ̀sì ààyè ayélujára kan ni a n pè ní URL – Uniform Resource Locator – nítorí náà orúkọ *urlresolver* náà bọ́gbọ́n mu). It is not very smart – it takes a list of patterns and tries to match the URL. Django yíò ma ṣàyẹ̀wò àwọn àpẹẹrẹ láti òkè sí ìsàlẹ̀, tí nnkan kan bá sì báramu, Django yíò darí ìbéèrè náà sí iṣẹ́ tó sopọ̀ mọ náà (èyí tí a n pè ní *view*).
 
 Wòye sí òṣìṣẹ́ méèlì kan pẹ̀lú lẹ́tà kan. Ó n rìn lọ ní òpópónà náà tó sì n ṣàyẹ̀wò nọ́mbà ilé kọ̀ọ̀kan sí èyí tó wà lórí lẹ́tà náà. Tó bá báramu, yíò fi lẹ́tà náà síbẹ̀. Báyìí ni urlresolver náà ṣe n ṣiṣẹ́!
 
