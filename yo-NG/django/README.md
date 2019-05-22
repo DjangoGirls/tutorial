@@ -12,9 +12,9 @@ Frameworks exist to save you from having to reinvent the wheel and to help allev
 
 Láti lóye nípa nnkan tí Django wà fún gan-an, a nílò láti ṣàgbéyẹ̀wò àwọn server náà. Nnkan àkọ́kọ́ ní pé server náà yíò nílò láti mọ̀ wípé o fẹ́ kí ó pèsè ojú-ìwé ayélujára kan fún ẹ.
 
-Wòye sí àpótì méèlì kan (port) èyí tí a n ṣàmójútó fún àwọn lẹ́tà tí ń bọ̀ (requests). Èyí jẹ́ ṣíṣe nípasẹ̀ server ayélujára kan. Server ayélujára náà yíò ka lẹ́tà náà àti lẹ́yìn náà yíò fi ìdáhùn kan ránṣẹ́ pẹ̀lú ojú-ìwé ayélujára kan. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+Wòye sí àpótì méèlì kan (port) èyí tí a n ṣàmójútó fún àwọn lẹ́tà tí ń bọ̀ (requests). Èyí jẹ́ ṣíṣe nípasẹ̀ server ayélujára kan. Server ayélujára náà yíò ka lẹ́tà náà àti lẹ́yìn náà yíò fi ìdáhùn kan ránṣẹ́ pẹ̀lú ojú-ìwé ayélujára kan. Ṣùgbọ́n nígbà tí o bá fẹ́ fi nnkan ránṣẹ́, o nílò láti ní àwọn àkóónú kan. Django jẹ́ nnkan kan tí yóò ràn ọ́ lọ́wọ́ láti ṣẹ̀dá àkóónú náà.
 
-## What happens when someone requests a website from your server?
+## Kíni yíò ṣẹlẹ̀ nígbà tí ẹnìkan bá béèrè ààyè ayélujára kan láti server rẹ?
 
 When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
