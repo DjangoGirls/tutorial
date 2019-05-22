@@ -6,7 +6,7 @@ Nígbà tí o bá n kọ́ ààyè ayélujára kan, o gbọ́dọ̀ máa nílò 
 
 Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Àwọn àgbékalẹ̀ wà láti gbà ọ́ sílẹ̀ lọ́wọ́ ṣíṣe nnkan tí ẹnìkan ti ṣe kalẹ̀ tẹ́lẹ̀ àti láti lè dín ìṣòro tí o lè kojú kù nígbà tí o bá n kọ́ ààyè ayélujára tuntun kan.
 
 ## Kí nìdí tó o fi nílò àgbékalẹ̀ (framework) kan?
 
