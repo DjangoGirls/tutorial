@@ -12,7 +12,7 @@ Frameworks exist to save you from having to reinvent the wheel and to help allev
 
 Láti lóye nípa nnkan tí Django wà fún gan-an, a nílò láti ṣàgbéyẹ̀wò àwọn server náà. Nnkan àkọ́kọ́ ní pé server náà yíò nílò láti mọ̀ wípé o fẹ́ kí ó pèsè ojú-ìwé ayélujára kan fún ẹ.
 
-Imagine a mailbox (port) which is monitored for incoming letters (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
+Wòye sí àpótì méèlì kan (port) èyí tí a n ṣàmójútó fún àwọn lẹ́tà tí ń bọ̀ (requests). This is done by a web server. The web server reads the letter and then sends a response with a webpage. But when you want to send something, you need to have some content. And Django is something that helps you create the content.
 
 ## What happens when someone requests a website from your server?
 
