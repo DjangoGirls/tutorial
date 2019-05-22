@@ -16,9 +16,9 @@ Wòye sí àpótì méèlì kan (port) èyí tí a n ṣàmójútó fún àwọn
 
 ## Kíni yíò ṣẹlẹ̀ nígbà tí ẹnìkan bá béèrè ààyè ayélujára kan láti server rẹ?
 
-Nígbà tí ìbéèrè kan bá wá sí server ayélujára kan, yóò kọjá sí Django tí yíò gbìyànjú láti mọ ohun tí a béèrè fún gan-an. Yíò kọ́kọ́ mú àdírẹ́ẹ̀sì ojú-ìwé ayélujára kan tí yíò sì gbìyànjú láti mọ ohun tó yẹ kó ṣe. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Nígbà tí ìbéèrè kan bá wá sí server ayélujára kan, yóò kọjá sí Django tí yíò gbìyànjú láti mọ ohun tí a béèrè fún gan-an. Yíò kọ́kọ́ mú àdírẹ́ẹ̀sì ojú-ìwé ayélujára kan tí yíò sì gbìyànjú láti mọ ohun tó yẹ kó ṣe. Apá yìí jẹ́ ṣíṣe nípasẹ̀ **urlresolver** ti Django (ṣàkíyèsí pé àdírẹ́ẹ̀sì ààyè ayélujára kan ni a n pè ní URL – Uniform Resource Locator – nítorí náà orúkọ *urlresolver* náà bọ́gbọ́n mu). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
 
-Imagine a mail carrier with a letter. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
+Wòye sí òṣìṣẹ́ méèlì kan pẹ̀lú lẹ́tà kan. She is walking down the street and checks each house number against the one on the letter. If it matches, she puts the letter there. This is how the urlresolver works!
 
 In the *view* function, all the interesting things are done: we can look at a database to look for some information. Maybe the user asked to change something in the data? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
 
