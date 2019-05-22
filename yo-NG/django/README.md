@@ -22,6 +22,6 @@ Wòye sí òṣìṣẹ́ méèlì kan pẹ̀lú lẹ́tà kan. Ó n rìn lọ n
 
 Nínú iṣẹ́ *view* náà, gbogbo àwọn nnkan tó dára ma jẹ́ ṣíṣe: a lè wo àkójọpọ̀ dátà kan láti wá àwọn àlàyé díẹ̀. Bóyá aṣàmúlò náà béèrè láti ṣàyípadà nnkan kan nínú dátà náà? Bíi lẹ́tà kan tó n sọ pé, "Jọ̀wọ́ ṣàyípadà àpèjúwe iṣẹ́ mi." *View* náà lè ṣàyẹ̀wò tí o bá ní ìyọ̀nda láti ṣe bẹ́ẹ̀, ṣe ìmúdójúìwọ̀n àpèjúwe iṣẹ́ náà fún ẹ lẹ́yìn náà àti fi ìkéde kan ránṣẹ́ padà: "Ti gba ṣíṣe!" Lẹ́yìn náà *view* náà yíò pèsè ìdáhùn kan tí Django le fi ránṣẹ́ sí aṣàwákiri ayélujára ti aṣàmúlò náà.
 
-The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
+Àpèjúwe tó wà lókè náà jẹ́ èyí tí a mú rọrùn níwọ̀nba, ṣùgbọ́n ìwọ kò tíì nílò láti mọ gbogbo àwọn nnkan tó jẹ́ iṣẹ́ ẹ̀rọ náà. Níní òye àpapọ̀ kan ti tó.
 
 Nítorí náà dípò kí a ṣàlàyé lẹ́kùn-únrẹ́rẹ́, a ó bẹ̀rẹ̀ ṣíṣẹ̀dá nnkan pẹ̀lú Django tí a ó sì kẹ́kọ̀ọ́ nípa gbogbo àwọn apá tó ṣe pàtàkì náà bí a ṣe ń tẹ̀síwájú!
