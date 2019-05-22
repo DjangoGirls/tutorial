@@ -4,6 +4,8 @@
 
 Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
 
+Please install normal Python as follows, even when you have Anaconda installed on your computer.
+
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
 First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
@@ -36,7 +38,7 @@ data-collapse=true ces-->
 
 > **Nota** Antes de instalar Python en OS X, debes asegurarte de que la configuración del Mac permita instalar paquetes que no estén en la App Store. ve a preferencias del sistema (System Preferences, está en la carpeta Aplicaciones), da click en "Seguridad y privacidad" (Security & Privacy) y luego la pestaña "General". Si tu "Permitir aplicaciones descargadas desde:" (Allow apps downloaded from:) está establecida a "Mac App Store," cambia a "Mac App Store y desarrolladores identificados." (Mac App Store and identified developers)
 
-Debes ir al sitio web https://www.python.org/downloads/release/python-361/ y descargar el instalador de Python:
+You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
 * Download the *Mac OS X 64-bit/32-bit installer* file,
 * Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
@@ -72,21 +74,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Usa este comando en tu consola:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-En versiones anteriores de Fedora tal vez te salga un error de que no se encuentra el comando `dnf`. En ese caso utiliza `yum` en su lugar.
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Usa este comando en tu consola:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
