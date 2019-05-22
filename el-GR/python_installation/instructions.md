@@ -4,21 +4,23 @@
 
 Το Django είναι γραμμένο σε Python. Χρειαζόμαστε την Python για να κάνουμε το οτιδήποτε στο Django. Ακόμη και να το εγκαταστήσουμε. Ας ξεκινήσουμε εγκαθιστώντας την Python! Θέλουμε να εγκαταστήσετε την τελευταία έκδοση της Python 3. Αν έχετε κάποια παλαιότερη έκδοση θα θέλαμε να την αναβαθμίσετε. Αν έχετε ήδη την έκδοση 3.4 ή υψηλότερη τότε θα είστε μια χαρά.
 
+Please install normal Python as follows, even when you have Anaconda installed on your computer.
+
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Πρώτα ελέγξτε αν ο υπολογιστής σας τρέχει το λειτουργικό σύστημα 32-bit ή 64-bit των Windows. Επιλέξτε "System type" από τη σελίδα System Info. Για να φτάσετε σε αυτή τη σελίδα με μια από τις ακόλουθες μεθόδους:
+First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
 
 * Πιέστε το κουμπί των Windows (δίπλα από το αριστερό Alt) και το Pause/Break ταυτόχρονα.
 * Ανοίξτε τον πίνακα ελέγχου (Control Panel) από το Windows μενού και περιηγηθείτε στο System & Security, έπειτα επιλέξτε System
 * Πιέστε το πλήκτρο των Windows και έπειτα περιηγηθείτε στο Settings > System > About
 
-Μπορείτε να κατεβάσετε την Python για Windows από τη σελίδα https://www.python.org/downloads/windows/. Κλικάρετε στο σύνδεσμο "Latest Python 3 Release - Python x.x.x". Αν ο υπολογιστής σας τρέχει **64-bit** Windows, τότε κατεβάστε το αρχείο **Windows x86-64 executable installer**. Ειδάλλως, κατεβάστε το αρχείο **Windows x86 executable installer**. Αφού κατεβάσετε το αρχείο εγκατάστασης, κάντε διπλό κλικ πάνω του και ακολουθήστε τις οδηγίες.
+You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
-Ένα πράγμα να προσέξετε: Κατά τη διάρκεια της εγκατάστασης, θα παρατηρήσετε ένα παράθυρο με το όνομα "Setup". Σιγουρευτείτε ότι είναι επιλεγμένο το κουτάκι "Add Python 3.6 to PATH" ή 'Add Python to your environment variables" και έπειτα κλικάρετε στην επιλογή "Install Now", όπως φαίνεται εδώ (ίσως να φαίνεται διαφορετικά σε εσάς αν εγκαθιστάτε διαφορετική έκδοση):
+One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-Όταν ολοκληρωθεί η εγκατάσταση, ενδέχεται να δείτε ένα παράθυρο διαλόγου με μια σύνδεση που μπορείτε να ακολουθήσετε για να μάθετε περισσότερα σχετικά με την Python ή σχετικά με την έκδοση που έχετε εγκαταστήσει. Κλείστε ή πατήστε "Άκυρο" σε αυτό το παράθυρο διαλόγου. Θα μάθετε περισσότερα σε αυτό τον οδηγό!
+When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
 Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
