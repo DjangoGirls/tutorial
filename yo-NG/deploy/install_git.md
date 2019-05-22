@@ -5,7 +5,7 @@ Git jẹ́ "ètò ìdarí ẹ̀yà" kan tó jẹ́ lílò nípasẹ̀ ọ̀pọ�
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-O lè gba Git láti [git-scm.com](https://git-scm.com/). You can hit "next" on all steps except for two: in the step where it asks to choose your editor, you should pick Nano, and in the step entitled "Adjusting your PATH environment", choose "Use Git and optional Unix tools from the Windows Command Prompt" (the bottom option). Yàtọ̀ sí ìyẹn, àwọn ìpìlẹ̀ náà dára. Checkout Windows-style, commit Unix-style line endings is good.
+O lè gba Git láti [git-scm.com](https://git-scm.com/). O lè tẹ "next" lórí gbogbo àwọn ìgbésẹ̀ àyàfi méjì: ní ìgbésẹ̀ tí yíò ti béèrè láti yan olóòtú rẹ, ó yẹ kí o mú Nano, àti ní ìgbésẹ̀ tí àkọlé rẹ̀ jẹ́ "Adjusting your PATH environment", yan "Use Git and optional Unix tools from the Windows Command Prompt" (àṣàyàn ìsàlẹ̀ náà). Yàtọ̀ sí ìyẹn, àwọn ìpìlẹ̀ náà dára. Checkout Windows-style, commit Unix-style line endings is good.
 
 Má gbàgbé láti ṣàtúnbẹ̀rẹ̀ command prompt tàbí powershell náà lẹ́yìn tí ìṣàgbékalẹ̀ náà bá parí pẹ̀lú àṣeyọrí. <!--endsec-->
 
