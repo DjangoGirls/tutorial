@@ -4,15 +4,17 @@
 
 Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
 
+Please install normal Python as follows, even when you have Anaconda installed on your computer.
+
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Primeiramente, verifique se o seu computador está rodando uma versão 32-bit ou 64-bit do Windows, na linha "Tipo de Sistema" na página de informação do Sistema. Para chegar a essa página, tente um desses métodos:
+First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
 
 * Aperte as teclas do Windows e "Pause/Break" ao mesmo tempo
 * Abra o seu Painel de Controle pelo menu do Windows, e navegue para "Sistema e Segurança", depois "Sistema"
 * Aperte o botão do Windows no seu teclado, então navegue para Configurações > Sistema > Sobre
 
-Você pode fazer o download do Python para Windows pelo website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
