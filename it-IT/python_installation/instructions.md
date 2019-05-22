@@ -4,6 +4,8 @@
 
 Django è scritto in Python. Python ci serve per fare qualunque cosa in Django. Iniziamo con l'istallazione! Dovresti installare la versione più recente di Python 3, quindi se hai una versione precendente dovrai aggiornarla. Se hai già la versione 3.4 o una versione successiva non servono aggiornamenti.
 
+Please install normal Python as follows, even when you have Anaconda installed on your computer.
+
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
 First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
@@ -18,14 +20,14 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-Quando l'installazione è completata, potresti vedere una finestra di dialogo con un link che puoi seguire per saperne di più su Python o sulla versione installata. Chiudi o annulla questa finestra -- imparerai molto di più in questo tutorial!
+When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
-Nota: se stai usando una versione precedente di Windows (7, Vista o qualsiasi versione precedente) e l'installazione Python 3.6.x fallisce e restituisce un errore, puoi provare a:
+Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
 1. installare tutti gli aggiornamenti di Windows e provare a installare di nuovo Python; oppure
 2. installare una [versione precedente di Python](https://www.python.org/downloads/windows/), ad esempio la [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-Se installi una versione precedente di Python, la schermata di installazione potrebbe apparire un po' diversa da quella mostrata sopra. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -60,7 +62,7 @@ If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0)
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Digita questo comando nella tua console:
+Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -72,7 +74,7 @@ Digita questo comando nella tua console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Digita questo comando nella tua console:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,7 +88,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Digita questo comando nella tua console:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
