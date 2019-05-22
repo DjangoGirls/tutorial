@@ -4,7 +4,7 @@ Django (/ˈdʒæŋɡoʊ/ *jang-goh*) jẹ́ àgbékalẹ̀ ètò ayélujára ọ
 
 Nígbà tí o bá n kọ́ ààyè ayélujára kan, o gbọ́dọ̀ máa nílò àwọn èròjà tó jọra kan: ọnà kan láti yanjú ìfàṣẹsí aṣàmúlò (ìforúkọsílẹ̀, wíwọlé, jíjáde), pánẹ́ẹ̀lì ìṣàkóso kan fún ààyè ayélujára rẹ, àwọn fọ́ọ̀mù, ọnà kan láti gbé àwọn fáìlì sórí ayélujára, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ.
 
-Luckily for you, other people long ago noticed that web developers face similar problems when building a new site, so they teamed up and created frameworks (Django being one of them) that give you ready-made components to use.
+Èyí tó jẹ́ oríre fún ẹ, àwọn èèyàn kan ti ṣàkíyèsí tipẹ́tipẹ́ wípé àwọn olùgbéjáde ayélujára má n kojú àwọn ìṣòro tó jọra nígbà kíkọ́ ààyè ayélujára tuntun kan, nítorí náà wọ́n pèrò pọ̀ láti ṣẹ̀dá àwọn àgbékalẹ̀ (Django jẹ́ ọ̀kan lára wọn) tó ma fún ẹ ní àwọn èròjà tó wà nílẹ̀ láti lò.
 
 Àwọn àgbékalẹ̀ wà láti gbà ọ́ sílẹ̀ lọ́wọ́ ṣíṣe nnkan tí ẹnìkan ti ṣe kalẹ̀ tẹ́lẹ̀ àti láti lè dín ìṣòro tí o lè kojú kù nígbà tí o bá n kọ́ ààyè ayélujára tuntun kan.
 
