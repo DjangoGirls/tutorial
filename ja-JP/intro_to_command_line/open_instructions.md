@@ -3,7 +3,7 @@
 使用しているWindowsとキーボードのバージョンによって、以下のいずかれかの方法でコマンドウィンドウを開けるはずです(いくつか試さないといけないかもしれませんが、これらの提案のすべてを試す必要はありません):
 
 - Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
+- [スタート] → [Windows システムツール] → [コマンドプロンプト]
 - Go to Start menu → All Programs → Accessories → Command Prompt.
 - Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
