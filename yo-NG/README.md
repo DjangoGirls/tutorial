@@ -6,11 +6,11 @@
 
 ## Káàbọ̀
 
-Káàbọ̀ sí Àlàyé Django Girls náà! We are happy to see you here :) In this tutorial, we will take you on a journey under the hood of web technologies, offering you a glimpse of all the bits and pieces that need to come together to make the web work as we know it.
+Káàbọ̀ sí Àlàyé Django Girls náà! Inú wa dùn láti ri ẹ níbí :) Nínú àlàyé yìí, a óò mú ẹ rin ìrìn àjò kan wọnú agbègbè àwọn ìmọ̀-ẹ̀rọ ayélujára, tí o sì máa mọ díẹ̀ nípa gbogbo àwọn èròjà tó nílò láti parapọ̀ kí ayélujára tó lè ṣiṣẹ́ gẹ́gẹ́ bí a ṣe mọ̀.
 
 As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
 
-## Introduction
+## Ìfihàn
 
 Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
