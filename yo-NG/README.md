@@ -38,13 +38,13 @@ It is amazing to take part in a Django Girls workshop, but we are aware that it 
 
 In every chapter already covered, there is a link that points to the correct video.
 
-## About and contributing
+## Nípa àti dídásí
 
 This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Ṣó o fẹ́ ràn wá lọ́wọ́ láti túmọ̀ àlàyé náà sí àwọn èdè mìíràn?
 
-Currently, translations are being kept on crowdin.com platform at:
+Lọ́wọ́lọ́wọ́, a ń fi àwọn ìtumọ̀ pamọ́ sórí ètò crowdin.com ní:
 
 https://crowdin.com/project/django-girls-tutorial
 
