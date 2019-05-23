@@ -42,10 +42,10 @@ In every chapter already covered, there is a link that points to the correct vid
 
 This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## Ṣó o fẹ́ ràn wá lọ́wọ́ láti túmọ̀ àlàyé náà sí àwọn èdè mìíràn?
 
 Currently, translations are being kept on crowdin.com platform at:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Tí èdè rẹ kò bá sí lórí [crowdin](https://crowdin.com/), jọ̀wọ́ [ṣí ìbéèrè tuntun kan](https://github.com/DjangoGirls/tutorial/issues/new) láti sọ fún wa nípa èdè naa kí a lè ṣàfikún rẹ̀.
