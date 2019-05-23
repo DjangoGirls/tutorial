@@ -7,7 +7,7 @@
 - [スタート] → [すべてのプログラム] → [アクセサリ] → [コマンドプロンプト]
 - Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- Hold the Windows key and press the "R" key to get a "Run" window. "cmd" と入力して [OK] をクリック。
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
