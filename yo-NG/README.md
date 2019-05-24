@@ -30,7 +30,7 @@ It will (more or less) look like this:
 
 > If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+Ó dáa, [ẹ jẹ́ ká bẹ̀rẹ̀ láti ìbẹ̀rẹ̀ náà…](./how_the_internet_works/README.md)
 
 ## Following the tutorial at home
 
@@ -40,7 +40,7 @@ In every chapter already covered, there is a link that points to the correct vid
 
 ## Nípa àti dídásí
 
-Àlàyé yìí ní àbójútó nípasẹ̀ [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Àlàyé yìí ní àbójútó nípasẹ̀ [DjangoGirls](https://djangogirls.org/). Tí o bá rí àṣìṣe kankan tàbí fẹ́ ṣe ìmúdójúìwọ̀n àlàyé náà, jọ̀wọ́ [tẹ̀lé àwọn ìlànà dídásí náà](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Ṣó o fẹ́ ràn wá lọ́wọ́ láti túmọ̀ àlàyé náà sí àwọn èdè mìíràn?
 
