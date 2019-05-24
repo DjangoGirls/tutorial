@@ -34,7 +34,7 @@ It will (more or less) look like this:
 
 ## Títẹ̀lé àlàyé náà nílé
 
-Ó má n dára láti kópa nínú àpérò Django Girls kan, ṣùgbọ́n a mọ̀ pé kò ṣeéṣe ní gbogbo ìgbà láti wá síbẹ̀. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Ó má n dára láti kópa nínú àpérò Django Girls kan, ṣùgbọ́n a mọ̀ pé kò ṣeéṣe ní gbogbo ìgbà láti wá síbẹ̀. Ìdí nìyí tí a fi gbà ọ́ níyànjú láti gbìyànjú títẹ̀lé àlàyé yìí nílé. Fún àwọn tó ń ka nílé, a n ṣètò àwọn fídíò lọ́wọ́lọ́wọ́ tí yíò mu kí ó rọrùn láti tẹ̀lé àlàyé náà fúnra rẹ. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
