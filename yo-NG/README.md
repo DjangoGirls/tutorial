@@ -16,9 +16,9 @@ Have you ever felt that the world is more and more about technology to which you
 
 Ó dáa, a ní ìròyìn rere fún ẹ! Kóòdù kíkọ kò nira tó bóo ṣe rò àti pé a fẹ́ fi hàn ọ́ bí ó ṣe lè dùn tó.
 
-Àlàyé yìí kò ní sọ ọ́ di onímọ̀ nípa kóòdù kan lẹ́sẹ̀kẹsẹ̀. Tí o bá fẹ́ mọ dáadáa, o nílò àwọn oṣù tàbí kódà àwọn ọdún fún kíkẹ́kọ̀ọ́ àti lílò rẹ̀. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Àlàyé yìí kò ní sọ ọ́ di onímọ̀ nípa kóòdù kan lẹ́sẹ̀kẹsẹ̀. Tí o bá fẹ́ mọ dáadáa, o nílò àwọn oṣù tàbí kódà àwọn ọdún fún kíkẹ́kọ̀ọ́ àti lílò rẹ̀. Ṣùgbọ́n a fẹ́ fi hàn ọ́ pé kóòdù kíkọ tàbí ṣíṣẹ̀dá àwọn ààyè ayélujára kò ṣòro tó bóo ṣe rò. A ó gbìyànjú láti ṣàlàyé oríṣiríṣi àwọn nnkan níwọ̀nba bí a bá ṣe lè ṣeé tó, kí o lè bà máa bẹ̀rù nípa ìmọ̀-ẹ̀rọ.
 
-We hope that we'll be able to make you love technology as much as we do!
+A lérò pé a ó lè mú ẹ nífẹ̀ẹ́ sí ìmọ̀-ẹ̀rọ gẹ́gẹ́ bí a ṣe nífẹ̀ẹ́ si!
 
 ## Kí lo máa rí kọ́ lásìkò àlàyé náà?
 
