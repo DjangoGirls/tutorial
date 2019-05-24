@@ -4,9 +4,9 @@ Gbóríyìn fún ara rẹ! **O ṣiṣẹ́ tó dára gan-an**. Inú wa dùn! <3
 
 ### Kíni ṣíṣe báyìí?
 
-Take a break and relax! You have just done something really huge.
+Yọwọ́ kúrò nínú iṣé kí o sì sinmi! O ṣẹ̀ṣẹ̀ ṣe nnkan kan tó tóbi gan-an.
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+Lẹ́yìn ìyẹn, ri dájú láti tẹ̀lé Django Girls lórí [Facebook](http://facebook.com/djangogirls) tàbí [Twitter](https://twitter.com/djangogirls) láti máa mọ ohun tó ń lọ.
 
 ### Can you recommend any further resources?
 
@@ -18,7 +18,7 @@ Yes! There are a *lot* of resources online for learning all kinds of programming
 - [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS àti JavaScript
 
 - [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
