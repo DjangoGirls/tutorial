@@ -24,7 +24,7 @@ We hope that we'll be able to make you love technology as much as we do!
 
 Tó o bá ti parí àlàyé náà, ìwọ yóò ní ètò ayélujára kékeré kan tó n ṣiṣẹ́: blog tìẹ. A óò sì fi hàn ọ́ bí o ṣe lè gbe sórí íńtánẹ́ẹ̀tì, kí àwọn ẹlòmíràn lè rí iṣẹ́ rẹ!
 
-It will (more or less) look like this:
+Yóò (fẹ́rẹ̀ẹ́) rí báyìí:
 
 ![Figure 0.1](images/application.png)
 
