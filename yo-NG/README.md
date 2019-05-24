@@ -20,7 +20,7 @@ This tutorial will not magically turn you into a programmer. If you want to be g
 
 We hope that we'll be able to make you love technology as much as we do!
 
-## What will you learn during the tutorial?
+## Kí lo máa rí kọ́ lásìkò àlàyé náà?
 
 Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
 
@@ -36,7 +36,7 @@ It will (more or less) look like this:
 
 Ó má n dára láti kópa nínú àpérò Django Girls kan, ṣùgbọ́n a mọ̀ pé kò ṣeéṣe ní gbogbo ìgbà láti wá síbẹ̀. Ìdí nìyí tí a fi gbà ọ́ níyànjú láti gbìyànjú títẹ̀lé àlàyé yìí nílé. Fún àwọn tó ń ka nílé, a n ṣètò àwọn fídíò lọ́wọ́lọ́wọ́ tí yíò mu kí ó rọrùn láti tẹ̀lé àlàyé náà fúnra rẹ. Ó ṣì jẹ́ iṣẹ́ kan ti ń lọ lọ́wọ́, ṣùgbọ́n ọ̀pọ̀lọpọ̀ nnkan ni a ó máa ṣàlàyé láìpẹ́ ní ìkànnì [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) lórí YouTube.
 
-In every chapter already covered, there is a link that points to the correct video.
+Nínú gbogbo àkòrí tí a ti ṣàlàyé tẹ́lẹ̀, atọ́ka kan wà tó n tọ́ka sí fídíò tó yẹ.
 
 ## Nípa àti dídásí
 
