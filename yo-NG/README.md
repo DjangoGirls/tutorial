@@ -40,7 +40,7 @@ In every chapter already covered, there is a link that points to the correct vid
 
 ## Nípa àti dídásí
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Àlàyé yìí ní àbójútó nípasẹ̀ [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
 ## Ṣó o fẹ́ ràn wá lọ́wọ́ láti túmọ̀ àlàyé náà sí àwọn èdè mìíràn?
 
