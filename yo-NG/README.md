@@ -28,7 +28,7 @@ It will (more or less) look like this:
 
 ![Figure 0.1](images/application.png)
 
-> Tí o bá ṣiṣẹ́ pẹ̀lú àlàyé náà fúnra rẹ láìní olùkọ́ kan tí yíò ràn ọ́ lọ́wọ́ lórí èyíkéyìí ìṣòro, a ní ètò ìfọ̀rọ̀wérọ̀ kan fún ẹ: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Tí o bá ṣiṣẹ́ pẹ̀lú àlàyé náà fúnra rẹ láìní olùkọ́ kan tí yíò ràn ọ́ lọ́wọ́ lórí èyíkéyìí ìṣòro, a ní ètò ìfọ̀rọ̀wérọ̀ kan fún ẹ: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). A béèrè lọ́wọ́ àwọn olùkọ́ wa àti àwọn tó ti wá sí àpéjọ tẹ́lẹ̀ láti wà níbẹ̀ lẹ́ẹ̀kọ̀ọ̀kan àti ran àwọn ẹlòmíràn lọ́wọ́ pẹ̀lú àlàyé náà! Má bẹ̀rù láti béèrè ìbéèrè rẹ níbẹ̀!
 
 Ó dáa, [ẹ jẹ́ ká bẹ̀rẹ̀ láti ìbẹ̀rẹ̀ náà…](./how_the_internet_works/README.md)
 
