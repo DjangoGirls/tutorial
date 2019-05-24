@@ -22,7 +22,7 @@ We hope that we'll be able to make you love technology as much as we do!
 
 ## Kí lo máa rí kọ́ lásìkò àlàyé náà?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Tó o bá ti parí àlàyé náà, ìwọ yóò ní ètò ayélujára kékeré kan tó n ṣiṣẹ́: blog tìẹ. A óò sì fi hàn ọ́ bí o ṣe lè gbe sórí íńtánẹ́ẹ̀tì, kí àwọn ẹlòmíràn lè rí iṣẹ́ rẹ!
 
 It will (more or less) look like this:
 
