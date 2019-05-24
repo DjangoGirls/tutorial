@@ -1,8 +1,8 @@
 # Kí ló kàn?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+Gbóríyìn fún ara rẹ! **O ṣiṣẹ́ tó dára gan-an**. Inú wa dùn! <3
 
-### What to do now?
+### Kíni ṣíṣe báyìí?
 
 Take a break and relax! You have just done something really huge.
 
