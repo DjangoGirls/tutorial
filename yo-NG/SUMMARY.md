@@ -4,7 +4,7 @@
 * [Ìṣàgbékalẹ̀](installation/README.md)
 * [Ìṣàgbékalẹ̀ (chromebook)](chromebook_setup/README.md)
 * [Bí íńtánẹ́ẹ̀tì ṣé n ṣiṣẹ́](how_the_internet_works/README.md)
-* [Ìfihàn sí command line](intro_to_command_line/README.md)
+* [Ìfihàn sí ìlà ìpàṣẹ (command line)](intro_to_command_line/README.md)
 * [Ìṣàgbékalẹ̀ Python](python_installation/README.md)
 * [Olóòtú kóòdù](code_editor/README.md)
 * [Ìfihàn sí Python](python_introduction/README.md)
