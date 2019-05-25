@@ -28,7 +28,7 @@ Yes! There are a *lot* of resources online for learning all kinds of programming
 - [Ìdánilẹ́kọ̀ọ́ Python ti Codecademy](https://www.codecademy.com/learn/learn-python)
 - [Ìdánilẹ́kọ̀ọ́ Python ti Google](https://developers.google.com/edu/python/)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – ọ̀fẹ́ ni àwọn ìdánrawò àkọ́kọ́ náà
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
+- [New Coder tutorials](http://newcoder.io/tutorials/) – èyí jẹ́ onírúurú àwọn àpẹẹrẹ tó ṣeé mú lò ti bí o ṣe lè lo Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
