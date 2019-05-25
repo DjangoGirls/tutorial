@@ -30,7 +30,7 @@ Yes! There are a *lot* of resources online for learning all kinds of programming
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – ọ̀fẹ́ ni àwọn ìdánrawò àkọ́kọ́ náà
 - [New Coder tutorials](http://newcoder.io/tutorials/) – èyí jẹ́ onírúurú àwọn àpẹẹrẹ tó ṣeé mú lò ti bí o ṣe lè lo Python
 - [edX](https://www.edx.org/course?search_query=python) – o lè ṣàyẹ̀wò púpọ̀ lára àwọn ìdánilékọ̀ọ́ náà lófẹ̀ẹ́, ṣùgbọ́n tí o bá fẹ́ ìwé-ẹ̀rí kan tàbí àwọn ìyìn fún ẹ̀rí ilé ẹ̀kọ́ gíga, nígbà náà yíò ná ẹ lówó
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – o lè ṣàyẹ̀wò àwọn fídíò ìdánilékọ̀ọ́ kan lófẹ̀ẹ́ àti pé o lè gba Ìwé-ẹ̀rí Coursera kan nípasẹ̀ kíkópa nínú àwọn ìdánilékọ̀ọ́ wọ̀nyí
 - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
 
 #### Ìṣiṣẹ́ pẹ̀lú dátà
