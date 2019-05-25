@@ -16,13 +16,13 @@
 
 ## Открываем интерфейс командной строки
 
-To start some experiments we need to open our command-line interface first.
+Для того, чтобы начать экспериментировать, нам нужно сначала открыть интерфейс командной строки.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Командная строка
 
-You now should see a white or black window that is waiting for your commands.
+Теперь ты должна увидеть окно белого или черного цвета, которое ожидает команд.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -37,7 +37,7 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+Если у тебя Windows, строка скорее всего будет оканчиваться символом `>`, вот так:
 
 {% filename %}command-line{% endfilename %}
 
