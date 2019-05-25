@@ -16,7 +16,7 @@ Yes! There are a *lot* of resources online for learning all kinds of programming
 
 - Ìwé wa mìíràn, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Àkànṣe àlàyé ti Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Àwọn ẹ̀kọ́ fídíò - Getting Started With Django](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS àti JavaScript
 
@@ -27,7 +27,7 @@ Yes! There are a *lot* of resources online for learning all kinds of programming
 
 - [Ìdánilẹ́kọ̀ọ́ Python ti Codecademy](https://www.codecademy.com/learn/learn-python)
 - [Ìdánilẹ́kọ̀ọ́ Python ti Google](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – ọ̀fẹ́ ni àwọn ìdánrawò àkọ́kọ́ náà
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
