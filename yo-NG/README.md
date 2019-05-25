@@ -12,7 +12,7 @@ Gẹ́gẹ́ bó ti rí pẹ̀lú gbogbo nǹkan àjèjì, èyí yóò jẹ́ ìd
 
 ## Ìfihàn
 
-Ṣé ó ti ṣe ẹ́ rí bíi pé ayé kún púpọ̀ fún ìmọ̀ ẹ̀rọ èyí tí ìwọ kò (tíì) lè ṣiṣẹ́ pẹ̀lú? Ṣé o ti ronú nípa bí o ṣe lè ṣẹ̀dá ààyè ayélujára kan sùgbọ́n kò tíì ní ìwúrí tó pọ̀ tó láti bẹ̀rẹ̀? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Ṣé ó ti ṣe ẹ́ rí bíi pé ayé kún púpọ̀ fún ìmọ̀ ẹ̀rọ èyí tí ìwọ kò (tíì) lè ṣiṣẹ́ pẹ̀lú? Ṣé o ti ronú nípa bí o ṣe lè ṣẹ̀dá ààyè ayélujára kan sùgbọ́n kò tíì ní ìwúrí tó pọ̀ tó láti bẹ̀rẹ̀? Ṣé o ti ronú rí wípé ayé ètò kọ̀mpútà ṣòro púpọ̀ fún ẹ kódà láti gbìyànjú ṣíṣe nnkan kan fúnra rẹ?
 
 Ó dáa, a ní ìròyìn rere fún ẹ! Kóòdù kíkọ kò nira tó bóo ṣe rò àti pé a fẹ́ fi hàn ọ́ bí ó ṣe lè dùn tó.
 
