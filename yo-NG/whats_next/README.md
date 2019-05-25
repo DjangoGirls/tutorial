@@ -39,4 +39,4 @@ Yes! There are a *lot* of resources online for learning all kinds of programming
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – o lè ṣàyẹ̀wò púpọ̀ lára àwọn ìdánilékọ̀ọ́ náà lófẹ̀ẹ́, ṣùgbọ́n tí o bá fẹ́ ìwé-ẹ̀rí kan tàbí àwọn ìyìn fún ẹ̀rí ilé ẹ̀kọ́ gíga kan, nígbà náà yíò ná ẹ lówó
 - [Dataquest](https://www.dataquest.io/) – ọ̀fẹ́ ni "àwọn iṣẹ́" 30 àkọ́kọ́ náà
 
-We can't wait to see what you build next!
+A ò lè dúró láti rí ohun tó kàn ní ṣíṣe fún ẹ!
