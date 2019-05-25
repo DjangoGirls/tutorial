@@ -8,9 +8,9 @@ Yọwọ́ kúrò nínú iṣé kí o sì sinmi! O ṣẹ̀ṣẹ̀ ṣe nnkan k
 
 Lẹ́yìn ìyẹn, ri dájú láti tẹ̀lé Django Girls lórí [Facebook](http://facebook.com/djangogirls) tàbí [Twitter](https://twitter.com/djangogirls) láti máa mọ ohun tó ń lọ.
 
-### Can you recommend any further resources?
+### Ṣé o lè dábàá èyíkéyìí àwọn ìrànlọ́wọ́ síwájú síi?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Bẹ́ẹ̀ ni! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
 
 #### Django
 
