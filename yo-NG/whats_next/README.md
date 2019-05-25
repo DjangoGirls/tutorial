@@ -20,22 +20,22 @@ Yes! There are a *lot* of resources online for learning all kinds of programming
 
 #### HTML, CSS àti JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Ìdánilẹ́kọ̀ọ́ ìgbéjáde ayélujára ti Codecademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
+- [Ìdánilẹ́kọ̀ọ́ Python ti Codecademy](https://www.codecademy.com/learn/learn-python)
+- [Ìdánilẹ́kọ̀ọ́ Python ti Google](https://developers.google.com/edu/python/)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
 - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
 
-#### Working with data
+#### Ìṣiṣẹ́ pẹ̀lú dátà
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
+- [Ìdánilẹ́kọ̀ọ́ sáyẹ́nsì dátà ti Codecademy](https://www.codecademy.com/learn/paths/data-science)
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
 
