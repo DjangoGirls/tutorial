@@ -31,12 +31,12 @@ Yes! There are a *lot* of resources online for learning all kinds of programming
 - [New Coder tutorials](http://newcoder.io/tutorials/) – èyí jẹ́ onírúurú àwọn àpẹẹrẹ tó ṣeé mú lò ti bí o ṣe lè lo Python
 - [edX](https://www.edx.org/course?search_query=python) – o lè ṣàyẹ̀wò púpọ̀ lára àwọn ìdánilékọ̀ọ́ náà lófẹ̀ẹ́, ṣùgbọ́n tí o bá fẹ́ ìwé-ẹ̀rí kan tàbí àwọn ìyìn fún ẹ̀rí ilé ẹ̀kọ́ gíga, nígbà náà yíò ná ẹ lówó
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – o lè ṣàyẹ̀wò àwọn fídíò ìdánilékọ̀ọ́ kan lófẹ̀ẹ́ àti pé o lè gba Ìwé-ẹ̀rí Coursera kan nípasẹ̀ kíkópa nínú àwọn ìdánilékọ̀ọ́ wọ̀nyí
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [Python for Everybody](https://www.py4e.com/) - ẹ̀yà ọ̀fẹ́ àti gbangba kan ti ẹ̀kà àyàsọ́tọ̀ Coursera Python for Everybody náà
 
 #### Ìṣiṣẹ́ pẹ̀lú dátà
 
 - [Ìdánilẹ́kọ̀ọ́ sáyẹ́nsì dátà ti Codecademy](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – o lè ṣàyẹ̀wò púpọ̀ lára àwọn ìdánilékọ̀ọ́ náà lófẹ̀ẹ́, ṣùgbọ́n tí o bá fẹ́ ìwé-ẹ̀rí kan tàbí àwọn ìyìn fún ẹ̀rí ilé ẹ̀kọ́ gíga kan, nígbà náà yíò ná ẹ lówó
+- [Dataquest](https://www.dataquest.io/) – ọ̀fẹ́ ni "àwọn iṣẹ́" 30 àkọ́kọ́ náà
 
 We can't wait to see what you build next!
