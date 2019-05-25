@@ -10,7 +10,7 @@ Lẹ́yìn ìyẹn, ri dájú láti tẹ̀lé Django Girls lórí [Facebook](htt
 
 ### Ṣé o lè dábàá èyíkéyìí àwọn ìrànlọ́wọ́ síwájú síi?
 
-Bẹ́ẹ̀ ni! *Ọ̀pọ̀lọpọ̀* àwọn ìrànlọ́wọ́ ló wà lórí íńtánẹ́ẹ̀tì fún ìkẹ́kọ̀ọ́ nípa oríṣiríṣi àwọn ìmọ̀ kóòdù kíkọ – ó lè ṣòro púpọ̀ láti mọ ibi tó kàn, ṣùgbọ́n a ó ràn ọ́ lọ́wọ́ lórí rẹ̀. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+Bẹ́ẹ̀ ni! *Ọ̀pọ̀lọpọ̀* àwọn ìrànlọ́wọ́ ló wà lórí íńtánẹ́ẹ̀tì fún ìkẹ́kọ̀ọ́ nípa oríṣiríṣi àwọn ìmọ̀ kóòdù kíkọ – ó lè ṣòro púpọ̀ láti mọ ibi tó kàn, ṣùgbọ́n a ó ràn ọ́ lọ́wọ́ lórí rẹ̀. Ohun yòówù kí o nífẹ̀ẹ́ sí ṣáájú kó o tó wá sí Django Girls, àti ìfẹ́ yòówù tí o ti ní lásìkò àlàyé náà, àwọn ìrànlọ́wọ́ ọ̀fẹ́ díẹ̀ nìyí (tàbí àwọn ìrànlọ́wọ́ pẹ̀lú àwọn èròjà ọ̀fẹ́ nlá) tí o lè lò láti dé ibi tí o fẹ́.
 
 #### Django
 
