@@ -12,7 +12,7 @@ Gẹ́gẹ́ bó ti rí pẹ̀lú gbogbo nǹkan àjèjì, èyí yóò jẹ́ ìd
 
 ## Ìfihàn
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Ṣé ó ti ṣe ẹ́ rí bíi pé ayé kún púpọ̀ fún ìmọ̀ ẹ̀rọ èyí tí ìwọ kò (tíì) lè ṣiṣẹ́ pẹ̀lú? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
 
 Ó dáa, a ní ìròyìn rere fún ẹ! Kóòdù kíkọ kò nira tó bóo ṣe rò àti pé a fẹ́ fi hàn ọ́ bí ó ṣe lè dùn tó.
 
