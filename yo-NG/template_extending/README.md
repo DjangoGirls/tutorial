@@ -2,7 +2,7 @@
 
 Nnkan tó dára mìíràn tí Django ní fún ẹ jẹ́ **mímú kí àwòṣe gbòòrò síi**. Kíni èyí túmọ̀sí? Ó túmọ̀ sí pé o lè lo àwọn apá kannáà ti HTML rẹ fún oríṣiríṣi ojú-ìwé ti ààyè ayélujára rẹ.
 
-Àwọn àwòṣe wúlò nígbà tí o bá fẹ́ lo àlàyé tàbí àgbékalẹ̀ kannáà lọ́nà tó ju ẹyọkan lọ. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Àwọn àwòṣe wúlò nígbà tí o bá fẹ́ lo àlàyé tàbí àgbékalẹ̀ kannáà lọ́nà tó ju ẹyọkan lọ. Ìwọ kò nílò láti pààrà ara rẹ nínú gbogbo fáìlì. Àti pé tí o bá fẹ́ ṣàyípadà nnkan kan, ìwọ kò nílò láti ṣeé nínú gbogbo àwòṣe, ẹyọkan ṣoṣo ti tó!
 
 ## Ṣẹ̀dá àwòṣe ìpìlẹ̀ kan
 
@@ -84,7 +84,7 @@ Lẹ́yìn náà nínú `base.html`, rọ́pò gbogbo `<body>` rẹ (gbogbo nnka
 {% endblock %}
 ```
 
-But why? You just created a `block`! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+Ṣùgbọ́n kí nìdí? O ṣẹ̀ṣẹ̀ ṣẹ̀dá `block` kan! You used the template tag `{% block %}` to make an area that will have HTML inserted in it. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
