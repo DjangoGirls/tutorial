@@ -75,7 +75,7 @@ Lẹ́yìn náà nínú `base.html`, rọ́pò gbogbo `<body>` rẹ (gbogbo nnka
 </body>
 ```
 
-{% raw %}You might notice this replaced everything from `{% for post in posts %}` to `{% endfor %}` with: {% endraw %}
+{% raw %}O lè ṣàkíyèsí pé èyí rọ́pò gbogbo nnkan láti `{% for post in posts %}` sí `{% endfor %}` pẹ̀lú: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
