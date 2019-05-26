@@ -6,9 +6,9 @@ Templates help when you want to use the same information or layout in more than 
 
 ## Ṣẹ̀dá àwòṣe ìpìlẹ̀ kan
 
-A base template is the most basic template that you extend on every page of your website.
+Àwòṣe ìpìlẹ̀ kan jẹ́ àwòṣe tó ṣe pàtàkì jù lọ tí o lè mú gbòòrò sórí gbogbo ojú-ìwé ààyè ayélujára rẹ.
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+Ẹ jẹ́ ká ṣẹ̀dá fáìlì `base.html` kan sínú `blog/templates/blog/`:
 
     blog
     └───templates
