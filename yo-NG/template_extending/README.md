@@ -86,7 +86,7 @@ Lẹ́yìn náà nínú `base.html`, rọ́pò gbogbo `<body>` rẹ (gbogbo nnka
 
 Ṣùgbọ́n kí nìdí? O ṣẹ̀ṣẹ̀ ṣẹ̀dá `block` kan! O ti lo àmì àwòṣe `{% block %}` náà láti ṣe agbègbè kan tí a ó fi HTML sínú rẹ̀. HTML yẹn yíò wá láti àwòṣe mìíràn tí yíò mú àwòṣe yìí gbòòrò (`base.html`). A ó fi hàn ọ́ bí o ṣe lè se èyí ní ìṣẹ́jú kan.
 
-Ní báyìí tọ́jú `base.html` kí o ṣí `blog/templates/blog/post_list.html` rẹ lẹ́ẹ̀kan síi nínú olóòtú kóòdù náà. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+Ní báyìí tọ́jú `base.html` kí o ṣí `blog/templates/blog/post_list.html` rẹ lẹ́ẹ̀kan síi nínú olóòtú kóòdù náà. {% raw %}Ìwọ yóò yọ gbogbo nnkan tó wà lókè `{% for post in posts %}` àti nísàlẹ̀ `{% endfor %}` kúrò. Nígbà tí o bá parí, fáìlì náà yíò rí báyìí:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
