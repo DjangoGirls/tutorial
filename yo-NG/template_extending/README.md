@@ -17,7 +17,7 @@ Templates help when you want to use the same information or layout in more than 
                 post_list.html
     
 
-Then open it up in the code editor and copy everything from `post_list.html` to `base.html` file, like this:
+Lẹ́yìn náà ṣí sílẹ̀ nínú olóòtú kóòdù náà kí o sì ṣàdàkọ gbogbo rẹ̀ láti fáìlì `post_list.html` sí `base.html`, bíi èyí:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -55,7 +55,7 @@ Then open it up in the code editor and copy everything from `post_list.html` to 
 </html>
 ```
 
-Then in `base.html`, replace your whole `<body>` (everything between `<body>` and `</body>`) with this:
+Lẹ́yìn náà nínú `base.html`, rọ́pò gbogbo `<body>` rẹ (gbogbo nnkan tó wà láàrin `<body>` àti `</body>`) pẹ̀lú èyí:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
