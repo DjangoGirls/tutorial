@@ -4,7 +4,7 @@ Another nice thing Django has for you is **template extending**. What does this 
 
 Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
-## Create a base template
+## Ṣẹ̀dá àwòṣe ìpìlẹ̀ kan
 
 A base template is the most basic template that you extend on every page of your website.
 
