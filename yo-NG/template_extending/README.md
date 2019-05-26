@@ -2,7 +2,7 @@
 
 Nnkan tó dára mìíràn tí Django ní fún ẹ jẹ́ **mímú kí àwòṣe gbòòrò síi**. Kíni èyí túmọ̀sí? Ó túmọ̀ sí pé o lè lo àwọn apá kannáà ti HTML rẹ fún oríṣiríṣi ojú-ìwé ti ààyè ayélujára rẹ.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+Àwọn àwòṣe wúlò nígbà tí o bá fẹ́ lo àlàyé tàbí àgbékalẹ̀ kannáà lọ́nà tó ju ẹyọkan lọ. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
 ## Ṣẹ̀dá àwòṣe ìpìlẹ̀ kan
 
