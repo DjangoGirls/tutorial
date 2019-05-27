@@ -68,9 +68,9 @@ Zanemarimo za sada ostale fajlove, tako da ih nećemo menjati. Jedina stvar koju
 
 Hajde da napravimo izmene u `mysite/settings.py`. Otvorite fajl pomoću editora koji ste ranije instalirali.
 
-**Napomena**: Ne zaboravite da je `settings.py` običan fajl, kao i svaki drugi. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Napomena**: Ne zaboravite da je `settings.py` običan fajl, kao i svaki drugi. Možete da ga otvorite u editoru pomoću opcije "file -> open". Zatim bi trebalo da se otvori prozor pomoću kog možete da pronađete i izaberete `settings.py` fajl. Takođe, možete da otvorite fajl pronalaženjem djangogirls foldera na desktopu i desnim klikom na isti. Onda, sa liste izaberite editor. Važno je da izaberete editor jer možda imate druge programe koji su instalirani i koji mogu da otvore fajl ali ne mogu da ga izmene.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Bilo bi lepo da imamo ispravno podešeno vreme na sajtu. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
 In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
 
