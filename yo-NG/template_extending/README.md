@@ -144,4 +144,4 @@ Nnkan kan ṣoṣo ló kù. A nílò láti ṣe ìsopọ̀ àwọn àwòṣe mé
 
 Ó parí! Tọ́jú fáìlì náà, kí o sì ṣàyẹ̀wò tí ààyè ayélujára rẹ bá sì n ṣiṣẹ́ dáadáa. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Tí o bá rí àṣìṣe `TemplateDoesNotExist`, ìyẹn túmọ̀ sí pé kò sí fáìlì `blog/base.html` àti pé o ní `runserver` tó n ṣiṣẹ́ nínú console náà. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
