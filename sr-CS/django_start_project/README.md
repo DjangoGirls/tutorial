@@ -90,7 +90,7 @@ Ako želite neki drugi jezik, promenite jezički kod tako što ćete izmeniti sl
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Takođe treba da dodamo putanju za statičke fajlove. (Naučićemo sve o njima i o CSS-u kasnije) Idite do kraja fajla i ispod `STATIC_URL` dela dodajte novi deo `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
