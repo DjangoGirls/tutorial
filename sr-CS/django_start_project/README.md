@@ -54,21 +54,21 @@ Na Windowsu bi trebalo da pokrenete sledeću komandu **(ne zaboravite da dodate 
     └───requirements.txt
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Napomena**: U Vašoj strukturi direktorijuma, videćete takođe `venv` direktorijum koji smo ranije kreirali.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` je skripta koja pomaže u vezi sa organizovanjem sajta. Ona nam omogućava između ostalog da pokrenemo veb server na našem računaru bez dodatnih instalacija.
 
-The `settings.py` file contains the configuration of your website.
+Fajl `settings.py` sadrži konfiguraciju Vašeg veb sajta.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Sećate li se priče o poštaru koji proverava gde da dostavi pismo? Fajl `urls.py` sadrži listu šablona koje koristi `urlresolver`.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+Zanemarimo za sada ostale fajlove, tako da ih nećemo menjati. Jedina stvar koju treba da zapamtite je da ne smete da ih obrišete!
 
-## Changing settings
+## Promena podešavanja
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Hajde da napravimo izmene u `mysite/settings.py`. Otvorite fajl pomoću editora koji ste ranije instalirali.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Napomena**: Ne zaboravite da je `settings.py` običan fajl, kao i svaki drugi. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
 It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
