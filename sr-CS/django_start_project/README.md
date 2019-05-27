@@ -70,9 +70,9 @@ Hajde da napravimo izmene u `mysite/settings.py`. Otvorite fajl pomoću editora 
 
 **Napomena**: Ne zaboravite da je `settings.py` običan fajl, kao i svaki drugi. Možete da ga otvorite u editoru pomoću opcije "file -> open". Zatim bi trebalo da se otvori prozor pomoću kog možete da pronađete i izaberete `settings.py` fajl. Takođe, možete da otvorite fajl pronalaženjem djangogirls foldera na desktopu i desnim klikom na isti. Onda, sa liste izaberite editor. Važno je da izaberete editor jer možda imate druge programe koji su instalirani i koji mogu da otvore fajl ali ne mogu da ga izmene.
 
-Bilo bi lepo da imamo ispravno podešeno vreme na sajtu. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Bilo bi lepo da imamo ispravno podešeno vreme na sajtu. Idite na [Wikipedia listu vremenskih zona](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) i kopirajte određenu vremensku zonu (eng. Time Zone) (npr. ` Evropa/Berlin`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+U fajlu `settings.py` pronađite liniju koja sadrži `TIME_ZONE` i izmenite je tako da se odnosi na Vašu izabranu vremensku zonu. Na primer:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -80,9 +80,9 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Jezički kod se sastoji od jezika, npr. `en` za engleski ili `de` za Nemački, dok je državni kod npr. `de` za Nemačku ili `ch` za Švajcarsku. Ukoliko engleski nije Vaš maternji jezik, možete da dodate ovaj deo kako biste učinili da opcije i obaveštenja u Django-u budu na Vašem jeziku. Tako da biste imali "Cancel" dugme prevedeno na Vaš jezik koji ste tu definisali. [Uz Django ide i dosta gotovih prevoda](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Ako želite neki drugi jezik, promenite jezički kod tako što ćete izmeniti sledeću liniju:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
