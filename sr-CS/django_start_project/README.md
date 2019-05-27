@@ -36,13 +36,13 @@ Na Windowsu bi trebalo da pokrenete sledeću komandu **(ne zaboravite da dodate 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Tačka je jako važna jer govori skripti da instalira Django u trenutnom direktorijumu (za koji je ta tačka referenca).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Napomena** Kada unosite prethodnu komandu, zapamtite da samo unosite deo koji počinje sa `django-admin.exe`. Deo `(myvenv) C:\Users\Name\djangogirls>` koji je ovde prikazan je samo primer ulaza koji očekuje Vaš input u komandnoj liniji.
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` je skripta koja za Vas kreira direktorijume i fajlove. Sada bi trebalo da imate strukturu direktorijuma koja izgleda ovako:
 
     djangogirls
     ├───manage.py
