@@ -104,7 +104,7 @@ Ní báyìí tọ́jú `base.html` kí o ṣí `blog/templates/blog/post_list.ht
 
 A fẹ́ lo èyí gẹ́gẹ́ bí ara àwòṣe wa fún gbogbo àwọn búlọ́ọ̀kù àkóónú náà. Àkókò láti ṣàfikún àwọn àmì búlọ́ọ̀kù sí fáìlì yìí!
 
-{% raw %}O fẹ́ kí àmì búlọ́ọ̀kù rẹ dọ́gba pẹ̀lú àmì tó wà nínú fáìlì `base.html` rẹ. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %}O fẹ́ kí àmì búlọ́ọ̀kù rẹ dọ́gba pẹ̀lú àmì tó wà nínú fáìlì `base.html` rẹ. O tún fẹ́ kí ó ní gbogbo kóòdù tó wà nínú àwọn búlọ́ọ̀kù àkóónú rẹ. Láti ṣe ìyẹn, kó gbogbo rẹ̀ sí àárín `{% block content %}` àti `{% endblock %}`. Báyìí:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
