@@ -23,13 +23,13 @@ Potrebno je da pokrenete sledeću komandu u Vašoj Mac OS ili Linux konzoli.** N
 
 > Tačka `.` je izuzetno važna jer govori skripti da instalira Django u trenutnom direktorijumu (za koji je ta tačka `.` referenca).
 > 
-> **Napomena** Kada kucate prethodnu komandu, zapamtite da kucate samo deo koji počinje sa `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Napomena** Kada kucate prethodnu komandu, zapamtite da kucate samo deo koji počinje sa `django-admin`. Deo `(myvenv) ~/djangogirls$` koji je ovde prikazan je samo primer ulaza gde treba da unesete input na Vašoj komandnoj liniji.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+Na Windowsu bi trebalo da pokrenete sledeću komandu **(ne zaboravite da dodate tačku na kraju)**:
 
 {% filename %}command-line{% endfilename %}
 
