@@ -122,7 +122,7 @@ A fẹ́ lo èyí gẹ́gẹ́ bí ara àwòṣe wa fún gbogbo àwọn búlọ�
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+Nnkan kan ṣoṣo ló kù. A nílò láti ṣe ìsopọ̀ àwọn àwòṣe méjèèjì wọ̀nyí papọ̀. Èyí ni ohun tí ṣíṣe ìmúgbòòrò àwọn àwòṣe dá lé lórí! A ó ṣe èyí nípasẹ̀ ṣíṣe àfikún àmì ìmúgbòòrò kan sí ìbẹ̀rẹ̀ fáìlì náà. Báyìí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+Ó parí! Tọ́jú fáìlì náà, kí o sì ṣàyẹ̀wò tí ààyè ayélujára rẹ bá sì n ṣiṣẹ́ dáadáa. :)
 
 > If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
