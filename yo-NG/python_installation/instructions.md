@@ -1,8 +1,8 @@
-> For readers at home: this chapter is covered in the [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA) video.
+> Fún àwọn òǹkàwé ní ilé: a ti ṣàlàyé àkòrí yìí nínú fídíò [Ṣíṣe àgbékalẹ̀ Python & Olóòtú Kóòdù](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
-> This section is based on a tutorial by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
+> Abala yìí dá lórí àlàyé kan ti Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django gba kíkọ ní Python. A nílò Python láti ṣe ohunkóhun nínú Django. Ẹ jẹ́ ká bẹ̀rẹ̀ nípasẹ̀ ṣíṣe àgbékalẹ̀ rẹ̀! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
 
 Please install normal Python as follows, even when you have Anaconda installed on your computer.
 
