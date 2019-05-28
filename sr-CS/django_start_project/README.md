@@ -107,15 +107,15 @@ Kada je `DEBUG` podešen na `True` i kada je `ALLOWED_HOSTS` prazan, host se por
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Napomena**: Ukoliko koristite Chromebook, dodajte ovu liniju na dnu podešavanja settings.py fajla: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Takođe dodajte `.amazonaws.com` u `ALLOWED_HOSTS` ukoliko koristite cloud9
 
-## Set up a database
+## Podesite bazu podataka
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Postoji puno različitih softvera koji rade sa bazama podataka. Mi ćemo koristiti podrazumevani - `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+Ovo je već podešeno unutar `mysite/settings.py` fajla:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -128,7 +128,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+Hajde da ukucamo sledeću liniju u konzolu kako bismo kreirali bazu podataka za naš blog: `python manage.py migrate` (moramo da budemo u `djangogirls` direktorijumu koji sadrži `manage.py` fajl). Ukoliko je sve prošlo kako treba, trebalo bi da dobijete ovako nešto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+I gotovi smo! Vreme je da pokrenemo veb server i da vidimo da li naš sajt radi!
 
 ## Starting the web server
 
