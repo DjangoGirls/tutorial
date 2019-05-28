@@ -2,7 +2,7 @@
 > 
 > Abala yìí dá lórí àlàyé kan ti Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django gba kíkọ ní Python. A nílò Python láti ṣe ohunkóhun nínú Django. Ẹ jẹ́ ká bẹ̀rẹ̀ nípasẹ̀ ṣíṣe àgbékalẹ̀ rẹ̀! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django gba kíkọ ní Python. A nílò Python láti ṣe ohunkóhun nínú Django. Ẹ jẹ́ ká bẹ̀rẹ̀ nípasẹ̀ ṣíṣe àgbékalẹ̀ rẹ̀! A fẹ́ kí o ṣàgbékalẹ̀ ẹyà tó jáde gbẹ̀yìn ti Python 3, nítorí náà tí o bá ní èyíkéyìí ẹyà tàtijọ́, ìwọ yíò nílò láti ṣe ìmúdójúìwọ̀n rẹ̀. Tí o bá ti ní ẹyà 3.4 tàbí jù bẹ́ẹ̀ lọ tẹ́lẹ̀, ó yẹ kó ṣiṣẹ́ dáadáa.
 
 Please install normal Python as follows, even when you have Anaconda installed on your computer.
 
