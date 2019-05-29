@@ -11,7 +11,7 @@ Jọ̀wọ́ ṣàgbékalẹ̀ ojúlówó Python báyìí, kódà nígbà tí o 
 Kọ́kọ́ ṣàyẹ̀wò bóyá kọ̀mpútà rẹ n ṣiṣẹ́ pẹ̀lú ẹyà 32-bit kan tàbí ẹyà 64-bit kan ti Windows, lórí ìlà "System type" ti ojú-ìwé Ìròyìn Ètò náà. Láti dé ojú-ìwé yìí, gbìyànjú ọ̀kan lára àwọn ọ̀nà wọ̀nyí:
 
 * Tẹ bọ́tìnnì Windows àti bọ́tìnnì Pause/Break lẹ́ẹ̀kan náà
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
+* Ṣí Control Panel rẹ láti àkójọ àṣàyàn Windows náà, lẹ́yìn náà lọ sí System & Security, lẹ́yìn náà System
 * Press the Windows button, then navigate to Settings > System > About
 
 O lè gba Python fún Windows láti ààyè ayélujára náà https://www.python.org/downloads/windows/. Tẹ orí atọ́ka "Latest Python 3 Release - Python x.x.x" náà. Tí kọ̀mpútà rẹ bá n ṣiṣẹ́ pẹ̀lú ẹyà **64-bit** ti Windows kan, gba **Windows x86-64 executable installer** náà. Bí bẹ́ẹ̀ kọ́, gba **Windows x86 executable installer** náà. Lẹ́yìn tí o bá gba aṣàgbékalẹ̀ náà, ó yẹ kí o mú u ṣiṣẹ́ (ṣíra tẹ̀ẹ́ lẹ́ẹ̀mejì) àti tẹ̀lé àwọn ìtọ́sọ́nà tó wà níbẹ̀.
@@ -27,7 +27,7 @@ Note: if you are using an older version of Windows (7, Vista, or any older versi
 1. ṣàgbékalẹ̀ gbogbo àwọn Ìmúdójúìwọ̀n Windows kí o gbìyànjú láti tún ṣàgbékalẹ̀ Python lẹ́ẹ̀kan si; tàbí
 2. ṣàgbékalẹ̀ [ẹyà tàtijọ́ ti Python](https://www.python.org/downloads/windows/) kan, fún àpẹẹrẹ, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Tí o bá ṣàgbékalẹ̀ ẹyà tàtijọ́ ti Python kan, ojú àwòrán ìṣàgbékalẹ̀ náà le yàtọ̀ díẹ̀ sí èyí tí a ṣàfihàn lókè. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
