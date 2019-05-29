@@ -21,37 +21,37 @@ admin.site.register(Post)
 
 برای ورود به سیستم، باید یک کاربر *superuser* ایجاد کنید - یک حساب کاربری که بر روی همه چیز در سایت کنترل داشته باشد. به محیط خط فرمان بازگردید و دستور `python manage.py createsuperuser` را تایپ کنید و Enter را فشار دهید.
 
-> به یاد داشته باشید، برای نوشتن دستورات جدید در حالی که وب سرور در حال اجرا است، یک پنجره ترمینال جدید را باز کرده و محیط مجازی خود را فعال کنید. ما در مورد نحوه نوشتن دستورات جدید در بخش ** اولین پروژه جانانو شما! </ 0> در بخش ** شروع وب سرور </ 0> بررسی کردیم.</p> </blockquote> 
-> 
-> {% filename %}Mac OS X or Linux:{% endfilename %}
-> 
->     (myvenv) ~/djangogirls$ python manage.py createsuperuser
->     
-> 
-> % filename %}}ویندوز% endfilename %}}
-> 
->     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
->     
-> 
-> هنگام درخواست، نام کاربری خود را (حروف کوچک، فضایی)، آدرس ایمیل و رمز عبور تایپ کنید. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. خروجی باید مانند این باشد (که در آن نام کاربری و ایمیل باید خود شما باشد):
-> 
->     Username: ola
->     Email address: ola@example.com
->     Password:
->     Password (again):
->     Superuser created successfully.
->     
-> 
-> به مرورگر خود برگردید با اعتبار کاربری کاربر که انتخاب کرده اید وارد شوید شما باید داشبورد مدیر جنگجو را ببینید.
-> 
-> ![جنگجو مدیر](images/django_admin3.png)
-> 
-> Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
-> 
-> اطمینان حاصل کنید که حداقل دو یا سه پست (اما نه همه) تاریخ انتشار را تعیین کنید. بعدا مفید خواهد بود.
-> 
-> ![جنگجو مدیر](images/edit_post3.png)
-> 
-> If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
-> 
-> این احتمالا لحظه ای مناسب برای گرفتن یک قهوه (یا چای) یا چیزی برای خوردن است تا انرژی خود را دوباره تحریک کنید. شما اولین مدل جانگو را ایجاد کردید - شما شایسته یک استراحت کوتاه هستید!
+> به یاد داشته باشید، برای نوشتن دستورات جدید در حالی که وب سرور در حال اجرا است، یک پنجره ترمینال جدید را باز کرده و محیط مجازی خود را فعال کنید. ما در مورد نحوه نوشتن دستورات جدید در قسمت ** اولین پروژه جنگو شما! **از بخش ** راه اندازی وب سرور **، صحبت کردیم.
+
+{% filename %}Mac OS X or Linux:{% endfilename %}
+
+    (myvenv) ~/djangogirls$ python manage.py createsuperuser
+    
+
+% filename %}}ویندوز% endfilename %}}
+
+    (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
+    
+
+هنگام درخواست، نام کاربری (با حروف کوچک و بدون فاصله)، آدرس ایمیل و رمز عبور تایپ کنید. **نگران نباشید که تایپ شدن گذر واژه را نمی‌بینید، همانطور است که باید باشد.** گذرواژه را وارد کنید و `Enter` را بزنید. خروجی باید مانند این باشد (که در آن نام کاربری و ایمیل خود را باید ببینید):
+
+    Username: ola
+    Email address: ola@example.com
+    Password:
+    Password (again):
+    Superuser created successfully.
+    
+
+به مرورگر خود برگردید با اعتبار کاربری کاربر که انتخاب کرده اید وارد شوید شما باید داشبورد مدیر جنگجو را ببینید.
+
+![جنگجو مدیر](images/django_admin3.png)
+
+Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+
+اطمینان حاصل کنید که حداقل دو یا سه پست (اما نه همه) تاریخ انتشار را تعیین کنید. بعدا مفید خواهد بود.
+
+![جنگجو مدیر](images/edit_post3.png)
+
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+
+این احتمالا لحظه ای مناسب برای گرفتن یک قهوه (یا چای) یا چیزی برای خوردن است تا انرژی خود را دوباره تحریک کنید. شما اولین مدل جانگو را ایجاد کردید - شما شایسته یک استراحت کوتاه هستید!
