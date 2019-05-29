@@ -36,7 +36,7 @@ Tí o bá ṣàgbékalẹ̀ ẹyà tàtijọ́ ti Python kan, ojú àwòrán ì�
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **Àkíyèsí** Ṣáájú kí o tó ṣàgbékalẹ̀ Python sórí OS X, ó yẹ ki o ri dájú pé ìṣèto Mac rẹ fi ààyè gba ṣíṣe àgbékalẹ̀ àwọn ètò tí kò wá láti App Store náà. Lọ sí System Preferences (ó wà nínú fódà Applications náà), tẹ "Security & Privacy," lẹ́yìn náà táàbù "General" náà. Tí "Allow apps downloaded from:" rẹ bá wà ní "Mac App Store," ṣàyípadà rẹ̀ sí "Mac App Store and identified developers."
 
 O ní láti lọ sórí ààyè ayélujára https://www.python.org/downloads/release/python-361/ àti gba aṣàgbékalẹ̀ Python náà:
 
