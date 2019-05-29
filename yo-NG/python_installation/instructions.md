@@ -27,7 +27,7 @@ Note: if you are using an older version of Windows (7, Vista, or any older versi
 1. ṣàgbékalẹ̀ gbogbo àwọn Ìmúdójúìwọ̀n Windows kí o gbìyànjú láti tún ṣàgbékalẹ̀ Python lẹ́ẹ̀kan si; tàbí
 2. ṣàgbékalẹ̀ [ẹyà tàtijọ́ ti Python](https://www.python.org/downloads/windows/) kan, fún àpẹẹrẹ, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-Tí o bá ṣàgbékalẹ̀ ẹyà tàtijọ́ ti Python kan, ojú àwòrán ìṣàgbékalẹ̀ náà le yàtọ̀ díẹ̀ sí èyí tí a ṣàfihàn lókè. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Tí o bá ṣàgbékalẹ̀ ẹyà tàtijọ́ ti Python kan, ojú àwòrán ìṣàgbékalẹ̀ náà le yàtọ̀ díẹ̀ sí èyí tí a ṣàfihàn lókè. Ri dájú pé o sún wálẹ̀ láti rí "Add python.exe to Path", nígbà náà tẹ bọ́tìnnì tó wà lápá òsì kí o sì mú "Will be installed on local hard drive":
 
 ![Ṣàfikún Python sí Atọ́nà náà, àwọn ẹyà tàtijọ́](../python_installation/images/add_python_to_windows_path.png)
 
