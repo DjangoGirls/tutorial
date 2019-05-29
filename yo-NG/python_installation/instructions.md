@@ -48,7 +48,7 @@ O ní láti lọ sórí ààyè ayélujára https://www.python.org/downloads/rel
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+Ó ṣeéṣe kí o ti ṣàgbékalẹ̀ Python tẹ́lẹ̀ láti ìpìlẹ̀. Láti ṣàyẹ̀wò bóyá o ti ṣàgbékalẹ̀ rẹ̀ tẹ́lẹ̀ (àti ẹyà tó jẹ́), ṣí console kan kí o tẹ àṣẹ tó tẹ̀lé yìí:
 
 {% filename %}command-line{% endfilename %}
 
