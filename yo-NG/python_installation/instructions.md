@@ -8,7 +8,7 @@ Jọ̀wọ́ ṣàgbékalẹ̀ ojúlówó Python báyìí, kódà nígbà tí o 
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Kọ́kọ́ ṣàyẹ̀wò bóyá kọ̀mpútà rẹ n ṣiṣẹ́ pẹ̀lú ẹyà 32-bit kan tàbí ẹyà 64-bit kan ti Windows, lórí ìlà "System type" ti ojú-ìwé Ìròyìn Ètò náà. Láti dé ojú-ìwé yìí, gbìyànjú ọ̀kan lára àwọn ọ̀nà wọ̀nyí:
+Kọ́kọ́ ṣàyẹ̀wò bóyá kọ̀mpútà rẹ n ṣiṣẹ́ pẹ̀lú ẹyà 32-bit kan tàbí ẹyà 64-bit kan ti Windows, lórí ìlà "System type" ti ojú-ìwé System Info náà. Láti dé ojú-ìwé yìí, gbìyànjú ọ̀kan lára àwọn ọ̀nà wọ̀nyí:
 
 * Tẹ bọ́tìnnì Windows àti bọ́tìnnì Pause/Break lẹ́ẹ̀kan náà
 * Ṣí Control Panel rẹ láti àkójọ àṣàyàn Windows náà, lẹ́yìn náà lọ sí System & Security, lẹ́yìn náà System
