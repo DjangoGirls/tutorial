@@ -20,9 +20,9 @@ One thing to watch out for: During the installation, you will notice a window ma
 
 ![Má gbàgbé láti ṣàfikún Python sí Atọ́nà náà](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Nígbà tí ìṣàgbékalẹ̀ náà bá parí, o lè rí àpótí ìsọ̀rọ̀gbèsì kan pẹ̀lú atọ́ka kan tí o lè tẹ̀lé láti kẹ́kọ̀ọ́ síi nípa Python tàbí nípa ẹyà tí o ṣàgbékalẹ̀ náà. Pa àpótí ìsọ̀rọ̀gbèsì yẹn dé tàbí fagi lé -- ìwọ yíò ma kẹ́kọ̀ọ́ síi nínú àlàyé yìí!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Àkíyèsí: tí o bá n lo ẹyà Windows tàtijọ́ kan (7, Vista, tàbí èyíkéyìí ẹyà tàtijọ́) àti tí aṣàgbékalẹ̀ Python 3.6.x náà bá kùnà pẹ̀lú àṣìṣe kan, o lè gbìyànjú yálà:
 
 1. ṣàgbékalẹ̀ gbogbo àwọn Ìmúdójúìwọ̀n Windows kí o gbìyànjú láti tún ṣàgbékalẹ̀ Python lẹ́ẹ̀kan si; tàbí
 2. ṣàgbékalẹ̀ [ẹyà tàtijọ́ ti Python](https://www.python.org/downloads/windows/) kan, fún àpẹẹrẹ, [3.4.6](https://www.python.org/downloads/release/python-346/).
