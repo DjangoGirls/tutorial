@@ -16,7 +16,7 @@ Kọ́kọ́ ṣàyẹ̀wò bóyá kọ̀mpútà rẹ n ṣiṣẹ́ pẹ̀lú �
 
 O lè gba Python fún Windows láti ààyè ayélujára náà https://www.python.org/downloads/windows/. Tẹ orí atọ́ka "Latest Python 3 Release - Python x.x.x" náà. Tí kọ̀mpútà rẹ bá n ṣiṣẹ́ pẹ̀lú ẹyà **64-bit** ti Windows kan, gba **Windows x86-64 executable installer** náà. Bí bẹ́ẹ̀ kọ́, gba **Windows x86 executable installer** náà. Lẹ́yìn tí o bá gba aṣàgbékalẹ̀ náà, ó yẹ kí o mú u ṣiṣẹ́ (ṣíra tẹ̀ẹ́ lẹ́ẹ̀mejì) àti tẹ̀lé àwọn ìtọ́sọ́nà tó wà níbẹ̀.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Ri dájú pé o ṣàmì sí àpótí adarí yíyàn "Add Python 3.6 to PATH" tàbí "Add Python to your environment variables" kí o sì tẹ "Install Now", gẹ́gẹ́ bí a ṣe fihàn níbí (ó lè yàtọ̀ díẹ̀ tí o bá n ṣàgbékalẹ̀ ẹyà tó yàtọ̀ kan):
+Nnkan kan láti ṣọ́ra fún: Lásìkò ìṣàgbékalẹ̀ náà, ìwọ yíò ṣàkíyèsí fèrèsé kan pẹ̀lú àmì "Setup". Ri dájú pé o ṣàmì sí àpótí adarí yíyàn "Add Python 3.6 to PATH" tàbí "Add Python to your environment variables" kí o sì tẹ "Install Now", gẹ́gẹ́ bí a ṣe fihàn níbí (ó lè yàtọ̀ díẹ̀ tí o bá n ṣàgbékalẹ̀ ẹyà tó yàtọ̀ kan):
 
 ![Má gbàgbé láti ṣàfikún Python sí Atọ́nà náà](../python_installation/images/python-installation-options.png)
 
