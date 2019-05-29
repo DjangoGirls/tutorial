@@ -1,10 +1,10 @@
 # Jẹ́ ká bẹ̀rẹ̀ pẹ̀lú Python
 
-We're finally here!
+A ti dé ibí yìí nígbẹ̀yìn!
 
 Ṣùgbọ́n lákọ̀ọ́kọ́, jẹ́ kí a sọ ohun tí Python jẹ́ fún ọ. Python jẹ́ èdè kóòdù kíkọ kan tó gbajúmọ̀ púpọ̀ tí a lè lò fún ṣíṣẹ̀dá àwọn ààyè ayélujára, àwọn eré, àwọn ètò ìmọ̀ sáyẹ́ǹsì, àwọn àwòrán, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+Python pilẹ̀ṣẹ̀ ní apá ìparí àwọn ọdún 1980 àti pé àfojúsùn pàtàkì rẹ̀ ni láti rọrùn láti kà fún àwọn èèyàn (kìí ṣe àwọn ẹ̀rọ nìkan!). Ìdí nìyí tó fi dàbí pé ó rọrùn ju àwọn èdè kóòdù kíkọ mìíràn, sùgbọ́n má dààmú – Python lágbára púpọ̀ bákannáà!
 
 # Ìṣàgbékalẹ̀ Python
 
