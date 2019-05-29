@@ -16,4 +16,4 @@ PythonAnywhere هي خدمة لتشغيل أكواد بايثون على خوا�
 
 ثم اختر خلية تسمى قطعة واجهة التطبيق البرمجية (API token)، واضغط على الزر الذي يقول: "أنشىء قطعة واجهة تطبيق برمجية جديدة" (Create new API token).
 
-![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
+![خلية قطعة واجهة التطبيق البرمجية (API token) في صفحة الحساب](../deploy/images/pythonanywhere_create_api_token.png)
