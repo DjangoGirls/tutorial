@@ -10,10 +10,10 @@ PythonAnywhere هي خدمة لتشغيل أكواد بايثون على خوا�
 
 ## إنشاء قطعة واجهة التطبيق البرمجية (API) من PythonAnywhere
 
-This is something you only need to do once. When you've signed up for PythonAnywhere, you'll be taken to your dashboard. Find the link near the top right to your "Account" page:
+هذا شيء تحتاج لفعله مرة واحدة فقط. عندما تنتهي من إنشاء حساب PythonAnywhere، سوف يتم أخذك إلى اللوحة الرئيسية. ابحث عن رابط في أعلى الصفحة، على يمين صفحة الحساب:
 
 ![Account link on the top right on the page](../deploy/images/pythonanywhere_account.png)
 
-then select the tab named "API token", and hit the button that says "Create new API token".
+ثم اختر خلية تسمى قطعة واجهة التطبيق البرمجية (API token)، واضغط على الزر الذي يقول: "أنشىء قطعة واجهة تطبيق برمجية جديدة" (Create new API token).
 
 ![The API token tab on the Account page](../deploy/images/pythonanywhere_create_api_token.png)
