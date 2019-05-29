@@ -24,4 +24,4 @@
 
 توضحیحات بالا کمی ساده شده‌اند اما شما نیازی ندارید که همه ریزه‌کاری‌های فنی را بدانید. یک درک کلی از فرآیند کافی است.
 
-So instead of diving too much into details, we will start creating something with Django and we will learn all the important parts along the way!
+پس به جای آن که بیش از این سراغ جزییات برویم می‌خواهیم با جنگو چیزی بسازیم و بخش‌های مهم آن را در این مسیر یاد بگیریم!
