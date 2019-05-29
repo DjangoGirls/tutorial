@@ -81,7 +81,7 @@ Lo àṣẹ yìí nínú console rẹ:
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Tí o bá wà lórí àwọn ẹyà Fedora tàtijọ́, o lè rí àṣìṣe kan wípé àṣẹ `dnf` náà kò sí. Tó bá rí bẹ́ẹ̀, o nílò láti lo `yum` dípò.
 
 <!--endsec-->
 
@@ -97,7 +97,7 @@ Lo àṣẹ yìí nínú console rẹ:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Ri dájú pé ìṣàgbékalẹ̀ náà jẹ́ àṣeyọrí nípasẹ̀ ṣíṣí command prompt kan àti lílo àṣẹ `python3` náà:
 
 {% filename %}command-line{% endfilename %}
 
