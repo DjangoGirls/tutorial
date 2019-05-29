@@ -56,7 +56,7 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a newer version, you can install it as follows:
+Tí o bá ti sàgbékalẹ̀ ẹyà Python tó yàtọ̀ kan tẹ́lẹ̀, ó kéré tán 3.4.0 (fún àpẹẹrẹ 3.6.0), á jẹ́ pé ìwọ kò nílò láti ṣe ìmúdójúìwọ̀n. Tí ìwọ kò bá tíì ṣàgbékalẹ̀ Python, tàbí tí o bá fẹ́ ẹyà tuntun kan, o lè ṣàgbékalẹ̀ rẹ̀ báyìí:
 
 <!--endsec-->
 
