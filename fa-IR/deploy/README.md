@@ -138,7 +138,7 @@
 > 
 > با کلیک کردن بر روی لوگو و انتخاب گزینه شروع کنسول "Bash" به [داشبورد PythonAnywhere ](https://www.pythonanywhere.com/) بروید. این محیط خط فرمان مخصوص PythonAnywhere است، شبیه آنچه در کامپیوتر خود دارید.
 > 
-> ![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+> ![بخش 'New Console' در صفحه وبسایت PythonAnywhere با دکمه‌ای برای 'bash'](images/pythonanywhere_bash_console.png)
 > 
 > > **توجه** PythonAnywhere بر مبنای لینوکس است، بنابراین اگر روی ویندوز کار می‌کنید این محیط خط فرمان با آنچه در ویندوز دارید کمی متفاوت است.
 > 
