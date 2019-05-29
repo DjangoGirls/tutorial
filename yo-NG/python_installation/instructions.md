@@ -111,4 +111,4 @@ Ri dájú pé ìṣàgbékalẹ̀ náà jẹ́ àṣeyọrí nípasẹ̀ ṣí�
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Tí o bá ní iyèméjì kankan, tàbí tí nnkan kan kò bá lọ déédéé tí ìwọ kò mọ̀ ohun tó kàn láti ṣe, jọ̀wọ́ béèrè lọ́wọ́ olùkọ́ rẹ! Nígbà míràn, àwọn nnkan kìí lọ déédéé àti pé ó dára láti béèrè fún ìrànlọ́wọ́ láti ọ̀dọ̀ ẹnì kan tó ní ìrírí jù ọ́ lọ.
