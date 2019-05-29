@@ -18,7 +18,7 @@ O lè gba Python fún Windows láti ààyè ayélujára náà https://www.python
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Má gbàgbé láti ṣàfikún Python sí Atọ́nà náà](../python_installation/images/python-installation-options.png)
 
 When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
 
@@ -29,7 +29,7 @@ Note: if you are using an older version of Windows (7, Vista, or any older versi
 
 Tí o bá ṣàgbékalẹ̀ ẹyà tàtijọ́ ti Python kan, ojú àwòrán ìṣàgbékalẹ̀ náà le yàtọ̀ díẹ̀ sí èyí tí a ṣàfihàn lókè. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Ṣàfikún Python sí Atọ́nà náà, àwọn ẹyà tàtijọ́](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
