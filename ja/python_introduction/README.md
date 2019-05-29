@@ -230,10 +230,10 @@ name イコール（=）"Ola" とタイプします。
 
 ```python
 >>> city = "Tokyo"
->>> ctiy
+>>> citty
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
-NameError: name 'ctiy' is not defined
+NameError: name 'citty' is not defined
 ```
 
 エラーになりました！ 前回とは違うエラータイプです。**NameError** という、初めてみるエラータイプですね。 作成されていない変数を使った時は、Pythonがエラーを教えてくれます。 もし、このエラーに出くわしたら、記述したコードにタイプミスがないか確認してください。
