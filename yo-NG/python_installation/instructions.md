@@ -107,7 +107,7 @@ Ri dájú pé ìṣàgbékalẹ̀ náà jẹ́ àṣeyọrí nípasẹ̀ ṣí�
 
 Ẹyà tó fihàn náà lè yàtọ̀ sí 3.6.1 -- ó yẹ kó dọ́gba pẹ̀lú ẹyà tí o ṣàgbékalẹ̀.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
+**ÀKÍYÈSÍ:** Tí o bá wà lórí Windows tí o sì rí ìròyìn àṣìṣe kan wípé `python3` kò ṣeé ṣàwárí, gbìyànjú lílo `python` (láìsí `3` náà) kí o sì ṣàyẹ̀wò tó bá ṣì máa jẹ́ ẹyà Python kan tó jẹ́ 3.4.0 tàbí jù bẹ́ẹ̀.
 
 * * *
 
