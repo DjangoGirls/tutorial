@@ -105,7 +105,7 @@ Ri dájú pé ìṣàgbékalẹ̀ náà jẹ́ àṣeyọrí nípasẹ̀ ṣí�
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+Ẹyà tó fihàn náà lè yàtọ̀ sí 3.6.1 -- ó yẹ kó dọ́gba pẹ̀lú ẹyà tí o ṣàgbékalẹ̀.
 
 **NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
 
