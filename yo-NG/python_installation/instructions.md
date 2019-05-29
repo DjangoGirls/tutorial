@@ -8,7 +8,7 @@ Jọ̀wọ́ ṣàgbékalẹ̀ ojúlówó Python báyìí, kódà nígbà tí o 
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Kọ́kọ́ ṣàyẹ̀wò bóyá kọ̀mpútà rẹ n ṣiṣẹ́ pẹ̀lú ẹyà 32-bit kan tàbí ẹyà 64-bit kan ti Windows, lórí ìlà "System type" ti ojú-ìwé Ìròyìn Ètò náà. Láti dé ojú-ìwé yìí, gbìyànjú ọ̀kan lára àwọn ọ̀nà wọ̀nyí:
 
 * Press the Windows key and Pause/Break key at the same time
 * Open your Control Panel from the Windows menu, then navigate to System & Security, then System
