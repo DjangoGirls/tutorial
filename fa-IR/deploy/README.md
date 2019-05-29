@@ -215,6 +215,6 @@
 > 
 > صفحه اصلی سایت شما باید "It worked" را نشان دهد همانطور که بر روی کامپیوتر خودتان کار می‌کرد. سعی کنید ` /admin/ ` را به انتهای آدرس اینترنتی اضافه کنید و به سایت مدیریت برسید. با نام کاربری و گذرواژه خود وارد شوید خواهید دید که می‌توانید پست جدیدی ایجاد کنید. به یاد داشته باشید که پست‌هایی که در پایگاه داده کامپیوتر خود ایجاد کرده اید بر روی وبسایت آنلاین شما منتقل نشده است.
 > 
-> وقتی چند پست جدید ایجاد کردید به تنظیمات بر روی کامپیوتر خود (local و نه تنظیمات روی PythonAnywhere) برگردید. از اینجا می‌توانید تنظیمات محلی را تغییر دهید. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+> وقتی چند پست جدید ایجاد کردید به تنظیمات بر روی کامپیوتر خود (local و نه تنظیمات روی PythonAnywhere) برگردید. از اینجا می‌توانید تنظیمات محلی را تغییر دهید. این یک روش رایج در توسعه وبسایت است؛ تغییرات را روی کامپیوتر خود اعمال کنید، آن‌ها را به GitHub بفرستید و سپس این تغییرات را از گیتهاب، بر روی وب سرور کپی کنید. این روش کمک می‌کند که بدون ایجاد خرابی در وبسایت آنلاین بتوان آن را به روز رسانی کرد. جالب نیست!
 > 
-> Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
+> یک *خسته نباشید* حسابی به خودتان بگویید! راه اندازی سرور یکی از مهارتی‌ترین بخش‌های توسعه وبسایت است و گاهی برای برخی افراد روزها زمان می‌برد تا بتوانند آن را راه اندازی کنند. اما شما توانستید سایت خود را بر روی اینترنت واقعی راه اندازی کنید!
