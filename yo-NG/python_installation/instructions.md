@@ -74,7 +74,7 @@ Tẹ àṣẹ yìí sínú console rẹ:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Lo àṣẹ yìí nínú console rẹ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,7 +88,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Lo àṣẹ yìí nínú console rẹ:
 
 {% filename %}command-line{% endfilename %}
 
