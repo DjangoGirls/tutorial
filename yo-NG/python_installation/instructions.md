@@ -14,7 +14,7 @@ Kọ́kọ́ ṣàyẹ̀wò bóyá kọ̀mpútà rẹ n ṣiṣẹ́ pẹ̀lú �
 * Open your Control Panel from the Windows menu, then navigate to System & Security, then System
 * Press the Windows button, then navigate to Settings > System > About
 
-You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+O lè gba Python fún Windows láti ààyè ayélujára náà https://www.python.org/downloads/windows/. Tẹ orí atọ́ka "Latest Python 3 Release - Python x.x.x" náà. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
 
 One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
