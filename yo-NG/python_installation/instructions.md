@@ -12,7 +12,7 @@ Kọ́kọ́ ṣàyẹ̀wò bóyá kọ̀mpútà rẹ n ṣiṣẹ́ pẹ̀lú �
 
 * Tẹ bọ́tìnnì Windows àti bọ́tìnnì Pause/Break lẹ́ẹ̀kan náà
 * Ṣí Control Panel rẹ láti àkójọ àṣàyàn Windows náà, lẹ́yìn náà lọ sí System & Security, lẹ́yìn náà System
-* Press the Windows button, then navigate to Settings > System > About
+* Tẹ bọ́tìnnì Windows náà, lẹ́yìn náà lọ sí Settings > System > About
 
 O lè gba Python fún Windows láti ààyè ayélujára náà https://www.python.org/downloads/windows/. Tẹ orí atọ́ka "Latest Python 3 Release - Python x.x.x" náà. Tí kọ̀mpútà rẹ bá n ṣiṣẹ́ pẹ̀lú ẹyà **64-bit** ti Windows kan, gba **Windows x86-64 executable installer** náà. Bí bẹ́ẹ̀ kọ́, gba **Windows x86 executable installer** náà. Lẹ́yìn tí o bá gba aṣàgbékalẹ̀ náà, ó yẹ kí o mú u ṣiṣẹ́ (ṣíra tẹ̀ẹ́ lẹ́ẹ̀mejì) àti tẹ̀lé àwọn ìtọ́sọ́nà tó wà níbẹ̀.
 
