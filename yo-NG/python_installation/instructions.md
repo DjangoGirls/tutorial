@@ -40,8 +40,8 @@ data-collapse=true ces-->
 
 O ní láti lọ sórí ààyè ayélujára https://www.python.org/downloads/release/python-361/ àti gba aṣàgbékalẹ̀ Python náà:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Gba fáìlì *Mac OS X 64-bit/32-bit installer* náà,
+* Tẹ *python-3.6.1-macosx10.6.pkg* lẹ́ẹ̀mejì láti mú aṣàgbékalẹ̀ náà ṣiṣẹ́.
 
 <!--endsec-->
 
