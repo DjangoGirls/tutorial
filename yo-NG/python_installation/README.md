@@ -1,8 +1,8 @@
-# Let’s start with Python
+# Jẹ́ ká bẹ̀rẹ̀ pẹ̀lú Python
 
 We're finally here!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+Ṣùgbọ́n lákọ̀ọ́kọ́, jẹ́ kí a sọ ohun tí Python jẹ́ fún ọ. Python jẹ́ èdè kóòdù kíkọ kan tó gbajúmọ̀ púpọ̀ tí a lè lò fún ṣíṣẹ̀dá àwọn ààyè ayélujára, àwọn eré, àwọn ètò ìmọ̀ sáyẹ́ǹsì, àwọn àwòrán, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ.
 
 Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
