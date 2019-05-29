@@ -6,10 +6,10 @@ We're finally here!
 
 Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
-# Python installation
+# Ìṣàgbékalẹ̀ Python
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **Àkíyèsí** Tí o bá n lo Chromebook kan, fojú fo àkòrí yìí kí o sì rí dájú pé o tẹ̀lé àwọn ìtọ́sọ́nà [Àgbékalẹ̀-ètò Chromebook](../chromebook_setup/README.md) náà.
 > 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **Àkíyèsí** Tí o bá ti yanjú àwọn ìgbésẹ̀ ìṣàgbékalẹ̀ náà tẹ́lẹ̀, kò sídìí láti tún ṣe èyí mọ́ – o lè fò lọ tààrà sí àkòrí tó kàn náà!
 
 {% include "/python_installation/instructions.md" %}
