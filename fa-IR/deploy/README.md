@@ -211,10 +211,10 @@
 > 
 > و به یاد داشته باشید که مربی شما اینجاست تا به شما کمک کند!
 > 
-> # Check out your site!
+> # وبسایت خود را بررسی کنید!
 > 
-> The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+> صفحه اصلی سایت شما باید "It worked" را نشان دهد همانطور که بر روی کامپیوتر خودتان کار می‌کرد. سعی کنید ` /admin/ ` را به انتهای آدرس اینترنتی اضافه کنید و به سایت مدیریت برسید. با نام کاربری و گذرواژه خود وارد شوید خواهید دید که می‌توانید پست جدیدی ایجاد کنید. به یاد داشته باشید که پست‌هایی که در پایگاه داده کامپیوتر خود ایجاد کرده اید بر روی وبسایت آنلاین شما منتقل نشده است.
 > 
-> Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+> وقتی چند پست جدید ایجاد کردید به تنظیمات بر روی کامپیوتر خود (local و نه تنظیمات روی PythonAnywhere) برگردید. از اینجا می‌توانید تنظیمات محلی را تغییر دهید. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 > 
 > Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
