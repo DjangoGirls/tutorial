@@ -194,12 +194,12 @@ Ako koristite Chromebook i Cloud9, kliknite na URL u pop-up prozoru koji bi treb
 
 Čestitamo! Upravo ste kreirali Vaš prvi veb sajt i pokrenuli ga pomoću veb servera! Zar to nije dobar osećaj?
 
-![Install worked!](images/install_worked.png)
+![Instalacija je uspela!](images/install_worked.png)
 
 Primetite da komandni prozor može da sadrži samo jednu stvar u jednom trenutku i da se komandni prozor koji ste ranije otvorili odnosi na veb server. Sve dok veb server radi i očekuje pristizanje zahteva, terminal će prihvatati novi tekst ali neće izvršavati nove komande.
 
 > Napravili smo pregled toga kako server radi u poglavlju **Kako internet funkcioniše**.
 
-Da bi ste uneli dodatne komande dok je server pokrenut, otvorite novi terminalni prozor i pokrenite svoj virtualenv. Da bi ste pogledali instrukcije kako da otovrite drugi terminalni prozor, pogledajte [Uvod u komandnu liniju](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Da bi ste uneli dodatne komande dok je server pokrenut, otvorite novi terminalni prozor i pokrenite svoj virtualenv. Da bi ste pogledali instrukcije kako da otovrite drugi terminalni prozor, pogledajte [Uvod u komandnu liniju](../intro_to_command_line/README.md). Da zaustavite veb server, vratite se na prozor u kom je pokrenut i pritisnite CTRL+C (na Windows-u mozda treba da pritisnete CTRL+Break).
 
-Ready for the next step? It's time to create some content!
+Da li ste spremni za sledeći korak? Vreme je da kreiramo neki sadržaj!
