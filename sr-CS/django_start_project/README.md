@@ -185,21 +185,21 @@ Sada treba da proverite da li vaš sajt funkcioniše. Otvorite pretraživač (Fi
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Ako koristite Chromebook i Cloud9, kliknite na URL u pop-up prozoru koji bi trebalo da se pojavio u gornjem desnom uglu komandnog prozora, u kojem je pokrenut server. URL bi trebalo da izgleda otprilike ovako:
 
 {% filename %}browser{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Čestitamo! Upravo ste kreirali Vaš prvi veb sajt i pokrenuli ga pomoću veb servera! Zar to nije dobar osećaj?
 
 ![Install worked!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Primetite da komandni prozor može da sadrži samo jednu stvar u jednom trenutku i da se komandni prozor koji ste ranije otvorili odnosi na veb server. Sve dok veb server radi i očekuje pristizanje zahteva, terminal će prihvatati novi tekst ali neće izvršavati nove komande.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Napravili smo pregled toga kako server radi u poglavlju **Kako internet funkcioniše**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Da bi ste uneli dodatne komande dok je server pokrenut, otvorite novi terminalni prozor i pokrenite svoj virtualenv. Da bi ste pogledali instrukcije kako da otovrite drugi terminalni prozor, pogledajte [Uvod u komandnu liniju](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
 Ready for the next step? It's time to create some content!
