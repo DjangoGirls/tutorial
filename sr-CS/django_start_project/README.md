@@ -171,7 +171,7 @@ Ako koristite Chromebook, koristite sledeću komandu umesto prethodno navedene:
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Ako se nalazite na Windows-u i pojavi vam se greška `UnicodeDecodeError`, pokušajte sa ovom komandom:
 
 {% filename %}command-line{% endfilename %}
 
