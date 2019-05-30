@@ -1,8 +1,8 @@
-# دجانغو المشرف
+# مشرف Django
 
 لإضافة وتعديل وحذف المشاركات التي قمنا بإضافتها، سوف نستخدم دجانغو المشرف.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+دعنا نفتح ملف `blog/admin.py` في محرر الأكواد ونبدل محتوياته بهذا:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -33,7 +33,7 @@ admin.site.register(Post)
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-عند الطلب، اكتب اسم المستخدم (أحرف صغيرة، لا مسافات)، وعنوان البريد الإلكتروني، وكلمة المرور. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. يجب أن يظهر الناتج على هذا النحو (حيث يجب أن يكون اسم المستخدم والبريد الإلكتروني هو اسم المستخدم الخاص بك):
+عند الطلب، اكتب اسم المستخدم (أحرف صغيرة، لا مسافات)، وعنوان البريد الإلكتروني، وكلمة المرور. **لا تقلق لأنك لا تستطيع رؤية كلمة السر التي تكتبها- هذا ما يجب ان يحصل. ** اكتبها واضغط `ادخل` لتكمل. يجب أن يظهر الناتج على هذا النحو (حيث يجب أن يكون اسم المستخدم والبريد الإلكتروني هو اسم المستخدم الخاص بك):
 
     Username: ola
     Email address: ola@example.com
