@@ -155,16 +155,16 @@ Hajde da ukucamo sledeću liniju u konzolu kako bismo kreirali bazu podataka za 
 
 I gotovi smo! Vreme je da pokrenemo veb server i da vidimo da li naš sajt radi!
 
-## Starting the web server
+## Pokretanje veb servera
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+Potrebno je da se nalazite u direktorijumu koji sadrži fajl `manage.py` (`djangogirls` direktorijum). U konzoli, možemo da pokrenemo server komandom `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Ako koristite Chromebook, koristite sledeću komandu umesto prethodno navedene:
 
 {% filename %}Cloud 9{% endfilename %}
 
