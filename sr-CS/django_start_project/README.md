@@ -178,7 +178,7 @@ Ako se nalazite na Windows-u i pojavi vam se greška `UnicodeDecodeError`, poku�
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Sada treba da proverite da li vaš sajt funkcioniše. Otvorite pretraživač (Firefox, Chrome, Safari ili šta već koristite) i unesite sledeću adresu:
 
 {% filename %}browser{% endfilename %}
 
