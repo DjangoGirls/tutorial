@@ -16,13 +16,13 @@ Fèrèsé náà, èyí tí a sábà má n pè ní **ìlà ìpàṣẹ** tàbí *
 
 ## Ṣí atọ́kùn ìlà ìpàṣẹ náà
 
-To start some experiments we need to open our command-line interface first.
+Láti bẹ̀rẹ̀ àwọn ìdánrawò kan, a nílò láti kọ́kọ́ ṣí atọ́kùn ìlà ìpàṣẹ wa.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+Ní báyìí, ó yẹ kí o rí fèrèsé funfun tàbí dúdú kan tó n dúró de àwọn àṣẹ rẹ.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
