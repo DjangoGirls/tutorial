@@ -200,6 +200,6 @@ Primetite da komandni prozor može da sadrži samo jednu stvar u jednom trenutku
 
 > Napravili smo pregled toga kako server radi u poglavlju **Kako internet funkcioniše**.
 
-Da biste uneli dodatne komande dok je server pokrenut, otvorite novi terminalni prozor i pokrenite svoj virtualenv. Da biste pogledali instrukcije kako da otvorite drugi terminalni prozor, pogledajte [Uvod u komandnu liniju](../intro_to_command_line/README.md). Da zaustavite veb server, vratite se na prozor u kom je pokrenut i pritisnite CTRL+C (na Windows-u mozda treba da pritisnete CTRL+Break).
+Da biste uneli dodatne komande dok je server pokrenut, otvorite novi terminalni prozor i pokrenite svoj virtualenv. Da biste pogledali instrukcije kako da otvorite drugi terminalni prozor, pogledajte [Uvod u komandnu liniju](../intro_to_command_line/README.md). Da zaustavite veb server, vratite se na prozor u kom je pokrenut i pritisnite CTRL+C (na Windows-u možda treba da pritisnete CTRL+Break).
 
 Da li ste spremni za sledeći korak? Vreme je da kreiramo neki sadržaj!
