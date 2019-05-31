@@ -11,7 +11,7 @@ Ní èyí tó dá lórí ẹyà Windows rẹ àti pẹpẹ bọ́tìnnì rẹ, �
 
 ![Tẹ "cmd" sínú fèrèsé "Run" náà](../python_installation/images/windows-plus-r.png)
 
-Tó bá yá nínú àlàyé yìí, ìwọ yíò nílò láti ní fèrèsé ìpàṣẹ méjì ní ṣíṣí lásìkò kannáà. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Gbìyànjú rẹ̀ ní báyìí lórí kọ̀mpútà rẹ kí o rí ohun tí yíò ṣẹlẹ̀! Tí o bá rí fèrèsé ìpàṣẹ kan ṣoṣo, gbìyànjú ọ̀kan lára àwọn ọ̀nà mìíràn nínú àkójọ tó wà lókè náà. Ó kéré tán, ó yẹ kí ọ̀kan lára wọn yọrí sí ṣíṣí fèrèsé ìpàṣẹ tuntun kan.
+Tó bá yá nínú àlàyé yìí, ìwọ yíò nílò láti ní fèrèsé ìpàṣẹ méjì ní ṣíṣí lásìkò kannáà. Àmọ́ o, lórí àwọn ẹyà Windows kan, tí o bá ti ṣí fèrèsé ìpàṣẹ kan tẹ́lẹ̀ tí o wá n gbìyànjú láti ṣí ẹlẹ́ẹ̀kejì pẹ̀lú lílo ọ̀nà kannáà, yóò ma tọ́ka rẹ sí fèrèsé ìpàṣẹ tí o ti ṣí kalẹ̀ tẹ́lẹ̀. Gbìyànjú rẹ̀ ní báyìí lórí kọ̀mpútà rẹ kí o rí ohun tí yíò ṣẹlẹ̀! Tí o bá rí fèrèsé ìpàṣẹ kan ṣoṣo, gbìyànjú ọ̀kan lára àwọn ọ̀nà mìíràn nínú àkójọ tó wà lókè náà. Ó kéré tán, ó yẹ kí ọ̀kan lára wọn yọrí sí ṣíṣí fèrèsé ìpàṣẹ tuntun kan.
 
 <!--endsec-->
 
