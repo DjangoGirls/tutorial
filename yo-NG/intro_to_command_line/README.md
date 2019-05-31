@@ -238,7 +238,7 @@ Here it is!
 
 * * *
 
-### Create directory
+### Ṣẹ̀dá àkójọpọ̀ fáìlì
 
 How about creating a practice directory on your desktop? You can do it this way:
 
