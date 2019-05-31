@@ -1,8 +1,8 @@
 # Ìfihàn sí atọ́kùn ìlà ìpàṣẹ náà
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> Fún àwọn òǹkàwé ní ilé: a ti ṣàlàyé àkòrí yìí nínú fídíò [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8).
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+Ó ń dùn mọ́ni, àbí bẹ́ẹ̀ kọ? Ìwọ yíò kọ ìlà kóòdù àkọ́kọ́ rẹ láàárín ìṣẹ́jú díẹ̀! :)
 
 **Let us introduce you to your first new friend: the command line!**
 
