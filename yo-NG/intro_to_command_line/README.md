@@ -26,7 +26,7 @@ Ní báyìí, ó yẹ kí o rí fèrèsé funfun tàbí dúdú kan tó n dúró 
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Tí o bá wà lórí Mac tàbí Linux, ó ṣeéṣe kí o rí `$` kan, báyìí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -37,7 +37,7 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+Lórí Windows, ó ṣeéṣe kí o rí `>` kan, báyìí:
 
 {% filename %}command-line{% endfilename %}
 
