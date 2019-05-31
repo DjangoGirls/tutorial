@@ -4,9 +4,9 @@
 
 Ó ń dùn mọ́ni, àbí bẹ́ẹ̀ kọ? Ìwọ yíò kọ ìlà kóòdù àkọ́kọ́ rẹ láàárín ìṣẹ́jú díẹ̀! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**Jẹ́ kí a mú ọ mọ ọ̀rẹ́ tuntun àkọ́kọ́ rẹ: ìlà ìpàṣẹ náà!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+Àwọn ìgbésẹ̀ wọ̀nyí yíò fihàn ọ́ bí o ṣe lè lo fèrèsé dúdú tí gbogbo àwọn hacker má n lò. Ó lè dẹ́rù bà ọ́ díẹ̀ lákọ̀ọ́kọ́ ṣùgbọ́n lóòótọ́ ó kàn jẹ́ ètò kan tó n dúró de àwọn àṣẹ láti ọ̀dọ̀ rẹ.
 
 > **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
 
