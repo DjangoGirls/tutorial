@@ -12,9 +12,9 @@
 
 ## Kíni ìlà ìpàṣẹ náà?
 
-Fèrèsé náà, èyí tí a sábà má n pè ní **ìlà ìpàṣẹ** tàbí **atọ́kùn ìlà ìpàṣẹ**, jẹ́ ètò kan tó dá lórí ọ̀rọ̀ fún wíwo, bíbójútó, àti dídarí àwọn fáìlì lórí kọ̀mpútà rẹ. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+Fèrèsé náà, èyí tí a sábà má n pè ní **ìlà ìpàṣẹ** tàbí **atọ́kùn ìlà ìpàṣẹ**, jẹ́ ètò kan tó dá lórí ọ̀rọ̀ fún wíwo, bíbójútó, àti dídarí àwọn fáìlì lórí kọ̀mpútà rẹ. Ó dà bíi Windows Explorer tàbí Finder lórí Mac, ṣùgbọ́n láìsí atọ́kùn aláwòrán náà. Àwọn orúkọ mìíràn fún ìlà ìpàṣẹ náà jẹ́: *cmd*, *CLI*, *prompt*, *console* tàbí *terminal*.
 
-## Open the command-line interface
+## Ṣí atọ́kùn ìlà ìpàṣẹ náà
 
 To start some experiments we need to open our command-line interface first.
 
