@@ -419,18 +419,18 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| Àṣẹ (Windows)  | Àṣẹ (Mac OS / Linux) | Àpèjúwe                                    | Àpẹẹrẹ                                             |
-| -------------- | -------------------- | ------------------------------------------ | -------------------------------------------------- |
-| exit           | exit                 | pa fèrèsé náà dé                           | **exit**                                           |
-| cd             | cd                   | ṣàyípadà àkójọpọ̀ fáìlì                    | **cd test**                                        |
-| cd             | pwd                  | ṣàfihàn àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́ náà    | **cd** (Windows) tàbí **pwd** (Mac OS / Linux)     |
-| dir            | ls                   | ṣe àkọsílẹ̀ àwọn àkójọpọ̀ fáìlì/àwọn fáìlì | **dir**                                            |
-| copy           | cp                   | ṣe àdàkọ fáìlì                             | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move           | mv                   | gbé fáìlì                                  | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir          | mkdir                | create a new directory                     | **mkdir testdirectory**                            |
-| rmdir (or del) | rm                   | delete a file                              | **del c:\test\test.txt**                         |
-| rmdir /S       | rm -r                | delete a directory                         | **rm -r testdirectory**                            |
-| [CMD] /?       | man [CMD]            | get help for a command                     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Àṣẹ (Windows)  | Àṣẹ (Mac OS / Linux) | Àpèjúwe                                    | Àpẹẹrẹ                                               |
+| -------------- | -------------------- | ------------------------------------------ | ---------------------------------------------------- |
+| exit           | exit                 | pa fèrèsé náà dé                           | **exit**                                             |
+| cd             | cd                   | ṣàyípadà àkójọpọ̀ fáìlì                    | **cd test**                                          |
+| cd             | pwd                  | ṣàfihàn àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́ náà    | **cd** (Windows) tàbí **pwd** (Mac OS / Linux)       |
+| dir            | ls                   | ṣe àkọsílẹ̀ àwọn àkójọpọ̀ fáìlì/àwọn fáìlì | **dir**                                              |
+| copy           | cp                   | ṣe àdàkọ fáìlì                             | **copy c:\test\test.txt c:\windows\test.txt**    |
+| move           | mv                   | gbé fáìlì                                  | **move c:\test\test.txt c:\windows\test.txt**    |
+| mkdir          | mkdir                | ṣẹ̀dá àkójọpọ̀ fáìlì tuntun kan            | **mkdir testdirectory**                              |
+| rmdir (or del) | rm                   | yọ fáìlì kan kúrò                          | **del c:\test\test.txt**                           |
+| rmdir /S       | rm -r                | yọ àkójọpọ̀ fáìlì kan kúrò                 | **rm -r testdirectory**                              |
+| [CMD] /?       | man [CMD]            | gba ìrànlọ́wọ́ fún àṣẹ kan                 | **cd /?** (Windows) tàbí **man cd** (Mac OS / Linux) |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
