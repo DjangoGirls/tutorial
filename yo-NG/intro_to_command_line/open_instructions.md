@@ -6,7 +6,7 @@ Ní èyí tó dá lórí ẹyà Windows rẹ àti pẹpẹ bọ́tìnnì rẹ, �
 - Lọ sí àkójọ àṣàyàn Start → Windows System → Command Prompt.
 - Lọ sí àkójọ àṣàyàn Start → All Programs → Accessories → Command Prompt.
 - Lọ sí ojú àwòrán Start náà, gbé àmì-atọ́ka rẹ sí igun ìsàlẹ̀ lápá òsì ojú àwòrán náà, kí o tẹ àmì ìtọ́ka ìsàlẹ̀ tó bá farahàn (lórí ojú àwòrán aláfọwọ́kàn kan, wọ sókè láti ìsàlẹ̀ ojú àwòrán náà). Ó yẹ kí ojú-ìwé Apps náà ṣí. Tẹ Command Prompt nínú abala Windows System náà.
-- Hold the special Windows key on your keyboard and press the "X" key. Yan "Command Prompt" láti àkójọ àṣàyàn aṣẹ́yọsókè náà.
+- Tẹ bọ́tìnnì àkànṣe Windows náà mólẹ̀ lórí pẹpẹ bọ́tìnnì rẹ kí o sì tẹ bọ́tìnnì "X" náà. Yan "Command Prompt" láti àkójọ àṣàyàn aṣẹ́yọsókè náà.
 - Hold the Windows key and press the "R" key to get a "Run" window. Tẹ "cmd" sínú àpótí náà, kí o sì tẹ bọ́tìnnì OK náà.
 
 ![Tẹ "cmd" sínú fèrèsé "Run" náà](../python_installation/images/windows-plus-r.png)
