@@ -1,4 +1,4 @@
-# Introduction to the command-line interface
+# Ìfihàn sí atọ́kùn ìlà ìpàṣẹ náà
 
 > For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
 
@@ -44,11 +44,11 @@ On Windows, you probably see a `>`, like this:
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Ṣàyẹ̀wò abala Linux tí a ṣẹ̀ṣẹ̀ kọjá sókè -- ìwọ yíò rí nnkan kan tó jọ bẹ́ẹ̀ nígbà tí o bá dé PythonAnywhere tó bá yá nínú àlàyé náà.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Àṣẹ kọ̀ọ̀kan yíò bẹ̀rẹ̀ pẹ̀lú `$` tàbí `>` àti àlàfo kan, ṣùgbọ́n ìwọ kò gbọ́dọ̀ tẹ̀ ẹ́. Kọ̀mpútà rẹ yíò ṣe fún ọ. :)
 
 > Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
 
@@ -419,18 +419,18 @@ Cool, huh? :)
 
 Here is a summary of some useful commands:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                            |
-| ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                           |
-| cd                | cd                       | change directory           | **cd test**                                        |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
-| dir               | ls                       | list directories/files     | **dir**                                            |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                            |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                         |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                            |
-| [CMD] /?          | man [CMD]                | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Àṣẹ (Windows)  | Àṣẹ (Mac OS / Linux) | Àpèjúwe                                    | Àpẹẹrẹ                                             |
+| -------------- | -------------------- | ------------------------------------------ | -------------------------------------------------- |
+| exit           | exit                 | pa fèrèsé náà dé                           | **exit**                                           |
+| cd             | cd                   | ṣàyípadà àkójọpọ̀ fáìlì                    | **cd test**                                        |
+| cd             | pwd                  | ṣàfihàn àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́ náà    | **cd** (Windows) tàbí **pwd** (Mac OS / Linux)     |
+| dir            | ls                   | ṣe àkọsílẹ̀ àwọn àkójọpọ̀ fáìlì/àwọn fáìlì | **dir**                                            |
+| copy           | cp                   | ṣe àdàkọ fáìlì                             | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move           | mv                   | gbé fáìlì                                  | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir          | mkdir                | create a new directory                     | **mkdir testdirectory**                            |
+| rmdir (or del) | rm                   | delete a file                              | **del c:\test\test.txt**                         |
+| rmdir /S       | rm -r                | delete a directory                         | **rm -r testdirectory**                            |
+| [CMD] /?       | man [CMD]            | get help for a command                     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
 These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
 
