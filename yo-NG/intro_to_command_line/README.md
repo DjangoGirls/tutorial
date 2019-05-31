@@ -8,11 +8,11 @@
 
 Àwọn ìgbésẹ̀ wọ̀nyí yíò fihàn ọ́ bí o ṣe lè lo fèrèsé dúdú tí gbogbo àwọn hacker má n lò. Ó lè dẹ́rù bà ọ́ díẹ̀ lákọ̀ọ́kọ́ ṣùgbọ́n lóòótọ́ ó kàn jẹ́ ètò kan tó n dúró de àwọn àṣẹ láti ọ̀dọ̀ rẹ.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **Àkíyèsí** Jọ̀wọ́ ṣàkíyèsí pé káàkiri ìwé yìí, a lo àwọn ọ̀rọ̀ 'àkójọpọ̀ fáìlì' (directory) àti 'fódà' (folder) ní pàṣípààrọ̀ ṣùgbọ́n wọn jẹ́ ohun kannáà.
 
-## What is the command line?
+## Kíni ìlà ìpàṣẹ náà?
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+Fèrèsé náà, èyí tí a sábà má n pè ní **ìlà ìpàṣẹ** tàbí **atọ́kùn ìlà ìpàṣẹ**, jẹ́ ètò kan tó dá lórí ọ̀rọ̀ fún wíwo, bíbójútó, àti dídarí àwọn fáìlì lórí kọ̀mpútà rẹ. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
 ## Open the command-line interface
 
