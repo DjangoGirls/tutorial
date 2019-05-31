@@ -58,7 +58,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## Your first command (YAY!)
 
-Let's start by typing this command:
+Jẹ́ ká bẹ̀rẹ̀ nípasẹ̀ títẹ̀ àṣẹ yìí:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
