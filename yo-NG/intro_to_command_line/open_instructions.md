@@ -5,7 +5,7 @@ Ní èyí tó dá lórí ẹyà Windows rẹ àti pẹpẹ bọ́tìnnì rẹ, �
 - Lọ sí àkójọ àṣàyàn Start tàbí ojú àwòrán Start náà, kí o sì tẹ "Command Prompt" sínú ààyè ìṣàwárí náà.
 - Lọ sí àkójọ àṣàyàn Start → Windows System → Command Prompt.
 - Lọ sí àkójọ àṣàyàn Start → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
+- Lọ sí ojú àwòrán Start náà, gbé àmì-atọ́ka rẹ sí igun ìsàlẹ̀ lápá òsì ojú àwòrán náà, kí o tẹ àmì ìtọ́ka ìsàlẹ̀ tó bá farahàn (lórí ojú àwòrán aláfọwọ́kàn kan, wọ sókè láti ìsàlẹ̀ ojú àwòrán náà). Ó yẹ kí ojú-ìwé Apps náà ṣí. Tẹ Command Prompt nínú abala Windows System náà.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
 - Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
 
