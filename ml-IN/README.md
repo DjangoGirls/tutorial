@@ -12,11 +12,11 @@ Django Girls ട്യൂട്ടോറിയലിലോട്ട് സ്വ
 
 ## ആമുഖം
 
-നിങൾക്ക് തോന്നിയിട്ടുണ്ടോ ഈ ലോകത്ത് നിങൾക്ക് (ഇതുവരെ) മനസ്സിലാവാത്ത ടെക്ക്നോളജിയാണ് അതികവുമെന്ന്? എപ്പോഴെങ്കിലും ഒരു വെബ്സൈറ്റ് ഉണ്ടാക്കാൻ നിങൾക്ക് തോന്നുകയും എന്നാൽ അതിനുള്ള പ്രജോധനം ഇല്ലാതെയിരിക്കുകയും ചെയ്തിട്ടുണ്ടോ? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+നിങൾക്ക് തോന്നിയിട്ടുണ്ടോ ഈ ലോകത്ത് നിങൾക്ക് (ഇതുവരെ) മനസ്സിലാവാത്ത ടെക്ക്നോളജിയാണ് അതികവുമെന്ന്? എപ്പോഴെങ്കിലും ഒരു വെബ്സൈറ്റ് ഉണ്ടാക്കാൻ നിങൾക്ക് തോന്നുകയും എന്നാൽ അതിനുള്ള പ്രജോധനം ഇല്ലാതെയിരിക്കുകയും ചെയ്തിട്ടുണ്ടോ? നിങ്ങൾ സ്വന്തമായി എന്തെങ്കിലും ചെയ്യാൻ ശ്രമിക്കുന്നതിനായി സോഫ്റ്റ്വെയർ ലോകം വളരെ സങ്കീർണ്ണമാണെന്ന് താങ്കൾ എപ്പോഴെങ്കിലും ചിന്തിച്ചിട്ടുണ്ടോ?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+നന്നായി, ഞങ്ങൾ നിങ്ങൾക്ക് ശുഭവാർത്ത അറിയിക്കുന്നു! പ്രോഗ്രാമിംഗ് അത് തോന്നുന്നത് പോലെ ബുദ്ധിമുട്ടുള്ളതല്ല മാത്രമല്ല അത് എത്രമാത്രം രസകരമാണെന്നു കാണിച്ചുതരാൻ ഞങ്ങൾ ആഗ്രഹിക്കുന്നു.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+ഈ ട്യൂട്ടോറിയൽ നിങ്ങളെ ഒരു പ്രോഗ്രാമറിലേക്ക് അത്ഭുതകരമാക്കി മാറ്റുകയില്ല. നിങ്ങൾക്കതിൽ നല്ലതാകണമെങ്കിൽ, നിങ്ങൾക്ക് മാസങ്ങളോ വർഷങ്ങളോ പഠനവും പ്രയോഗവും വേണം. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
 
 We hope that we'll be able to make you love technology as much as we do!
 
