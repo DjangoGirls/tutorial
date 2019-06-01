@@ -54,7 +54,7 @@ Lórí Windows, ó ṣeéṣe kí o rí `>` kan, báyìí:
 
 Apá náà títí dé àti pẹ̀lú `$` tàbí `>` náà ní a pè ní *command line prompt*, tàbí *prompt* ní kúkúrú. Yíò fún ọ ní ìṣítí láti tẹ nnkan kan síbẹ̀.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+Nínú àlàyé náà, nígbà tí a bá fẹ́ kí o tẹ àṣẹ kan, a ó ṣàfikún `$` tàbí `>` náà, àti àwọn nnkan mìíràn sí apá òsì lẹ́ẹ̀kọ̀ọ̀kan. Fojú fo apá òsì náà kí o sì tẹ àṣẹ náà nìkan, èyí tí yíò bẹ̀rẹ̀ lẹ́yìn prompt náà.
 
 ## Àṣẹ àkọ́kọ́ rẹ (YAY!)
 
@@ -86,7 +86,7 @@ Lẹ́yìn náà tẹ `enter`. Èyí ni èsì wa:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Gẹ́gẹ́ bó o ṣe rí i, kọ̀mpútà náà ṣẹ̀ṣẹ̀ ṣàtẹ̀jáde orúkọ aṣàmúlò rẹ. Ó já fáfá, àbí bẹ́ẹ̀ kọ? :)
 
 > Gbìyànjú láti tẹ àṣẹ kọ̀ọ̀kan; má ṣàdàkọ rẹ̀. Ìwọ yíò rántí ní ìrọ̀rùn lọ́nà yìí!
 
