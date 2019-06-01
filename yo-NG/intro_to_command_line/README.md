@@ -393,7 +393,7 @@ Check where you are:
 
 ### Jáde
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+A ó dúró síbí lásìkò yìí! O lè pa ìlà ìpàṣẹ náà dé ní báyìí láìséwu. Jẹ́ ká ṣé lọ́nà àwọn hacker, ó dára? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
