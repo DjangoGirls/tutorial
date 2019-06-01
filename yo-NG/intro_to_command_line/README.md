@@ -197,7 +197,7 @@ Ní báyìí, ẹ jẹ́ ká lọ sí àkójọpọ̀ fáìlì Desktop wa:
     $ cd Desktop
     
 
-Ṣàkíyèsí pé ó ṣeéṣe kí a túmọ̀ orúkọ àkójọpọ̀ fáìlì "Desktop" náà sí èdè account Linux rẹ. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Ṣàkíyèsí pé ó ṣeéṣe kí a túmọ̀ orúkọ àkójọpọ̀ fáìlì "Desktop" náà sí èdè account Linux rẹ. Tó bá rí bẹ́ẹ̀, ìwọ yíò nílò láti rọ́pò `Desktop` pẹ̀lú orúkọ tí a túmọ̀ rẹ̀ sí; fún àpẹẹrẹ, `Schreibtisch` fún èdè Jẹ́mánì.
 
 <!--endsec-->
 
