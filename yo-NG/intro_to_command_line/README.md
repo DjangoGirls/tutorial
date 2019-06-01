@@ -432,7 +432,7 @@ Kókó pàtàkì kan ti àwọn àṣẹ tó wúlò nìyí:
 | rmdir /S       | rm -r                | yọ àkójọpọ̀ fáìlì kan kúrò                 | **rm -r testdirectory**                              |
 | [CMD] /?       | man [CMD]            | gba ìrànlọ́wọ́ fún àṣẹ kan                 | **cd /?** (Windows) tàbí **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Àwọn wọ̀nyí jẹ́ díẹ̀ lára àwọn àṣẹ tí o lè lò nínú ìlà ìpàṣẹ rẹ, ṣùgbọ́n ìwọ kò ní lo ju ìyẹn lọ lónìí.
 
 If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
