@@ -413,7 +413,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Ó dára, àbí bẹ́ẹ̀ kọ? :)
 
 ## Kókó pàtàkì
 
@@ -434,7 +434,7 @@ Kókó pàtàkì kan ti àwọn àṣẹ tó wúlò nìyí:
 
 Àwọn wọ̀nyí jẹ́ díẹ̀ lára àwọn àṣẹ tí o lè lò nínú ìlà ìpàṣẹ rẹ, ṣùgbọ́n ìwọ kò ní lo ju ìyẹn lọ lónìí.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Tí o bá fẹ́ mọ síi, [ss64.com](http://ss64.com) ní ìtọ́kasí pípé kan tí àwọn àṣẹ fún gbogbo àwọn ètò ìṣiṣẹ́ kọ̀mpútà.
 
 ## Ṣé o ti ṣetán?
 
