@@ -52,7 +52,7 @@ Lórí Windows, ó ṣeéṣe kí o rí `>` kan, báyìí:
 
 > Àkíyèsí kékeré kan: ó ṣeéṣe kí o rí nnkan kan bíi `C:\Users\ola>` tàbí `Olas-MacBook-Air:~ ola$` ṣáájú àmì prompt náà, èyí dára 100%.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+Apá náà títí dé àti pẹ̀lú `$` tàbí `>` náà ní a pè ní *command line prompt*, tàbí *prompt* ní kúkúrú. Yíò fún ọ ní ìṣítí láti tẹ nnkan kan síbẹ̀.
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
@@ -96,7 +96,7 @@ Each operating system has a slightly different set of commands for the command l
 
 ### Àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Yíò dára láti mọ ibi tí a wà ní báyìí, àbí bẹ́ẹ̀ kọ? Jẹ́ ká ri. Tẹ àṣẹ yìí kí o sì tẹ `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
