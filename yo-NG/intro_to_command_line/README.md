@@ -179,7 +179,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 ### Change current directory
 
-Now, let's go to our Desktop directory:
+Ní báyìí, ẹ jẹ́ ká lọ sí àkójọpọ̀ fáìlì Desktop wa:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -197,7 +197,7 @@ Now, let's go to our Desktop directory:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Ṣàkíyèsí pé ó ṣeéṣe kí a túmọ̀ orúkọ àkójọpọ̀ fáìlì "Desktop" náà sí èdè account Linux rẹ. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
 
 <!--endsec-->
 
