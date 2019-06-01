@@ -210,7 +210,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Ṣàyẹ̀wò bóyá ó ti yípadà lóòótọ́:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -232,7 +232,7 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Òhun nìyí!
 
 > PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
