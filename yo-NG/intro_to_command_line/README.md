@@ -78,7 +78,7 @@ Jẹ́ ká bẹ̀rẹ̀ nípasẹ̀ títẹ̀ àṣẹ yìí:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Lẹ́yìn náà tẹ `enter`. Èyí ni èsì wa:
 
 {% filename %}command-line{% endfilename %}
 
