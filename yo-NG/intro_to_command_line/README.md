@@ -88,9 +88,9 @@ Lẹ́yìn náà tẹ `enter`. Èyí ni èsì wa:
 
 As you can see, the computer has just printed your username. Neat, huh? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Gbìyànjú láti tẹ àṣẹ kọ̀ọ̀kan; má ṣàdàkọ rẹ̀. Ìwọ yíò rántí ní ìrọ̀rùn lọ́nà yìí!
 
-## Basics
+## Àwọn ìpìlẹ̀
 
 Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
