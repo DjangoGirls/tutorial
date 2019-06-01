@@ -106,7 +106,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Àkíyèsí: 'pwd' dúró fún 'print working directory' (ṣàtẹ̀jáde àkójọpọ̀ fáìlì tó n ṣiṣẹ́).
 
 <!--endsec-->
 
@@ -118,7 +118,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Àkíyèsí: 'cd' dúró fún 'change directory' (ṣàyípadà àkójọpọ̀ fáìlì). Pẹ̀lú powershell, o lè lo pwd gẹ́gẹ́ bíi orí Linux tàbí Mac OS X.
 
 <!--endsec-->
 
