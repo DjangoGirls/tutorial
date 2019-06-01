@@ -92,7 +92,7 @@ Gẹ́gẹ́ bó o ṣe rí i, kọ̀mpútà náà ṣẹ̀ṣẹ̀ ṣàtẹ̀j
 
 ## Àwọn ìpìlẹ̀
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Ètò ìṣiṣẹ́ kọ̀mpútà kọ̀ọ̀kan ló ní ìlànà àwọn àṣẹ tó yàtọ̀ síra fún ìlà ìpàṣẹ náà, nítorí náà ri dájú láti tẹ̀lé àwọn ìtọ́sọ́nà fún ètò ìṣiṣẹ́ rẹ. Jẹ́ ká gbìyànjú èyí, ṣé ká bẹ̀rẹ̀?
 
 ### Àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́
 
