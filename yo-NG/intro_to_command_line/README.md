@@ -260,7 +260,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-Àṣẹ kékeré yìí yíò ṣẹ̀dá fódà kan pẹ̀lú orúkọ `practice` náà sórí desktop rẹ. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Àṣẹ kékeré yìí yíò ṣẹ̀dá fódà kan pẹ̀lú orúkọ `practice` náà sórí desktop rẹ. O lè ṣàyẹ̀wò bóyá ó wà níbẹ̀ nípasẹ̀ wíwo orí Desktop rẹ tàbí nípasẹ̀ lílo àṣẹ `ls` tàbí `dir` kan! Try it. :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
