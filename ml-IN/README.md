@@ -16,36 +16,36 @@ Django Girls ട്യൂട്ടോറിയലിലോട്ട് സ്വ
 
 നന്നായി, ഞങ്ങൾ നിങ്ങൾക്ക് ശുഭവാർത്ത അറിയിക്കുന്നു! പ്രോഗ്രാമിംഗ് അത് തോന്നുന്നത് പോലെ ബുദ്ധിമുട്ടുള്ളതല്ല മാത്രമല്ല അത് എത്രമാത്രം രസകരമാണെന്നു കാണിച്ചുതരാൻ ഞങ്ങൾ ആഗ്രഹിക്കുന്നു.
 
-ഈ ട്യൂട്ടോറിയൽ നിങ്ങളെ ഒരു പ്രോഗ്രാമറിലേക്ക് അത്ഭുതകരമാക്കി മാറ്റുകയില്ല. നിങ്ങൾക്കതിൽ നല്ലതാകണമെങ്കിൽ, നിങ്ങൾക്ക് മാസങ്ങളോ വർഷങ്ങളോ പഠനവും പ്രയോഗവും വേണം. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+ഈ ട്യൂട്ടോറിയൽ നിങ്ങളെ ഒരു പ്രോഗ്രാമറിലേക്ക് അത്ഭുതകരമാക്കി മാറ്റുകയില്ല. നിങ്ങൾക്കതിൽ നല്ലതാകണമെങ്കിൽ, നിങ്ങൾക്ക് മാസങ്ങളോ വർഷങ്ങളോ പഠനവും പ്രയോഗവും വേണം. പക്ഷെ പ്രോഗ്രാമുകളെയോ വെബ്സൈറ്റുകൾ സൃഷ്ടിക്കുന്നതോ സങ്കീർണ്ണമായേക്കാവുന്നതോ എന്ന് ഞങ്ങൾ നിങ്ങളെ കാണിച്ചു തരാം. ഞങ്ങൾ വിവിധ ബിറ്റുകളും കഷങ്ങളെയും വിശദീകരിക്കാൻ ശ്രമിക്കും, അതിനാൽ നിങ്ങൾക്ക് സാങ്കേതികവിദ്യ ഭയപ്പെടുത്തുന്നതായി തോന്നില്ല.
 
-We hope that we'll be able to make you love technology as much as we do!
+ഞങ്ങൾ നിങ്ങളെ പോലെ തന്നെ സാങ്കേതികവിദ്യയെ സ്നേഹിക്കാൻ കഴിയുമെന്ന് ഞങ്ങൾ പ്രതീക്ഷിക്കുന്നു!
 
-## What will you learn during the tutorial?
+## ട്യൂട്ടോറിയലിൽ നിങ്ങൾ എന്ത് പഠിക്കും?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+നിങ്ങൾ ട്യൂട്ടോറിയൽ പൂർത്തിയാക്കി കഴിഞ്ഞാൽ, നിങ്ങൾക്ക് ഒരു ചെറിയ വർക്ക് വെബ് ആപ്ലിക്കേഷൻ ഉണ്ടായിരിക്കും: നിങ്ങളുടെ സ്വന്തം ബ്ലോഗ്. ഓൺലൈനിൽ എങ്ങനെ ഇട്ടുവെന്ന് ഞങ്ങൾ നിങ്ങൾക്ക് കാണിച്ചുതരാം, അതിനാൽ മറ്റുള്ളവർ നിങ്ങളുടെ ജോലി കാണും!
 
-It will (more or less) look like this:
+ഇത് (കൂടുതലോ കുറവോ) ഇങ്ങനെയായിരിക്കും:
 
-![Figure 0.1](images/application.png)
+![ചിത്രം 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
-
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
-
-## Following the tutorial at home
-
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
-
-In every chapter already covered, there is a link that points to the correct video.
-
-## About and contributing
-
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
-
-## Would you like to help us translate the tutorial into other languages?
-
-Currently, translations are being kept on crowdin.com platform at:
-
-https://crowdin.com/project/django-girls-tutorial
-
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+> നിങ്ങളുടെ സ്വന്തമായ ട്യൂട്ടോറിയൽ ഉപയോഗിച്ച് പ്രവർത്തിക്കുന്നുണ്ടെങ്കിൽ, നിങ്ങൾക്ക് എന്തെങ്കിലും പ്രശ്നമുണ്ടെങ്കിൽ നിങ്ങളെ സഹായിക്കുന്ന ഒരു കോച്ച് ഇല്ലെങ്കിൽ ഞങ്ങൾക്ക് നിങ്ങളുടെ ഒരു ചാറ്റ് സിസ്റ്റം ഉണ്ട്:  <1 /> </ 0>. ഞങ്ങളുടെ കോച്ചുകളും മുൻ പങ്കാളികളും സമയം ചെലവഴിക്കാൻ ട്യൂട്ടോറിയൽ ഉപയോഗിച്ച് മറ്റുള്ളവരെ സഹായിക്കാൻ ഞങ്ങൾ ആവശ്യപ്പെട്ടു! നിങ്ങളുടെ ചോദ്യം ചോദിക്കാൻ ഭയപ്പെടേണ്ടതില്ല!</p> </blockquote> 
+> 
+> ശരി, തുടക്കത്തിൽ നമുക്ക് ആരംഭിക്കാം
+> 
+> ## വീട്ടിൽ ട്യൂട്ടോറിയൽ പിന്തുടരുന്നു
+> 
+> ഒരു ഡാൻജോ ഗേൾസ് വർക്ക്ഷോപ്പിൽ പങ്കെടുക്കാൻ ഇത് വിസ്മയാവഹമാണ്. പക്ഷേ, പങ്കെടുക്കാൻ ഞങ്ങൾക്ക് എപ്പോഴും കഴിയില്ല. ഇതുകൊണ്ടാണ് വീട്ടിൽ ഈ ട്യൂട്ടോറിയൽ പിന്തുടരാൻ ശ്രമിക്കുക ഞങ്ങൾ പ്രോത്സാഹിപ്പിക്കുന്നു. വീട്ടിൽ വായനക്കാർക്ക്, ഞങ്ങൾ നിലവിൽ വീഡിയോ തയ്യാറാക്കുന്നു, നിങ്ങളുടേതായ ട്യൂട്ടോറിയൽ പിന്തുടരുന്നത് എളുപ്പമാക്കും. ഇപ്പോഴും അത് പുരോഗതിയിലാണ്, എന്നാൽ  പെൺകുട്ടികൾക്കായുള്ള കോഡിംഗ് </ u> YouTube ചാനലിലെ കൂടുതൽ കാര്യങ്ങൾ ഉടൻ തന്നെ മറയ്ക്കപ്പെടും.</p> 
+> 
+> ഇതിനകം മൂടിയ ഓരോ അധ്യായങ്ങളിലും, കൃത്യമായ വീഡിയോ സൂചിപ്പിക്കുന്ന ഒരു ലിങ്കുണ്ട്.
+> 
+> ## ആമുഖവും സംഭാവനയും
+> 
+> ഈ ട്യൂട്ടോറിയൽ DjangoGirls ആണ്. എന്തെങ്കിലും പിശകുകൾ കണ്ടെത്തുമ്പോൾ അല്ലെങ്കിൽ ട്യൂട്ടോറിയൽ അപ്ഡേറ്റ് ചെയ്യാൻ ആഗ്രഹിക്കുന്നുണ്ടെങ്കിൽ സംഭാവന മാർഗ്ഗരേഖകൾ പിന്തുടരുക 
+> 
+> ## മറ്റ് ഭാഷകളിലേക്ക് ട്യൂട്ടോറിയൽ വിവർത്തനം ചെയ്യാൻ ഞങ്ങളെ സഹായിക്കാൻ നിങ്ങൾക്ക് താല്പര്യമുണ്ടോ?
+> 
+> നിലവിൽ, translations at crowdin.com പ്ലാറ്റ്ഫോം സൂക്ഷിച്ചിരിക്കുന്നത്:
+> 
+> https://crowdin.com/project/django-girls-tutorial
+> 
+> നിങ്ങളുടെ ഭാഷ ജനകീയ എന്നതിൽ ലിസ്റ്റുചെയ്തിട്ടില്ലെങ്കിൽ, അത് ഞങ്ങൾക്ക് ചേർക്കാൻ കഴിയുന്നതിനായി ഒരു പുതിയ ലക്കം തുറന്ന് ഞങ്ങളെ അറിയിക്കുക.
