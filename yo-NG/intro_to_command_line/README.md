@@ -138,13 +138,13 @@ OS X àti Linux ní àṣẹ `man` kan, èyí tí yíò fún ọ ní ìrànlọ�
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Ṣíṣe àfikún `/?` kan sẹ́yìn ọ̀pọ̀lọpọ̀ àwọn àṣẹ yíò ṣàtẹ̀jáde ojú-ìwé ìrànlọ́wọ́ náà. O lè nílò láti sún fèrèsé ìpàṣẹ rẹ sókè láti rí gbogbo rẹ̀. Gbìyànjú `cd /?`.
 
 <!--endsec-->
 
-### List files and directories
+### Ṣe àkọsílẹ̀ àwọn fáìlì àti àwọn àkójọpọ̀ fáìlì
 
-So what's in it? It'd be cool to find out. Let's see:
+Nítorí náà kí ló wà nínú rẹ̀? Yíò dára láti rí ìdáhùn sí i. Jẹ́ ká ri:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
