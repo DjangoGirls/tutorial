@@ -296,7 +296,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Kú oríire! :)
 
 * * *
 
@@ -304,7 +304,7 @@ Congrats! :)
 
 We don't want to leave a mess, so let's remove everything we did until that point.
 
-First, we need to get back to Desktop:
+Lákọ̀ọ́kọ́, a nílò láti padà sí Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -324,9 +324,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Lílo `..` pẹ̀lú àṣẹ `cd` náà yíò ṣàyípadà àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́ rẹ sí àkójọpọ̀ fáìlì ìpìlẹ̀ (ìyẹn ni pé, àkójọpọ̀ fáìlì tó kó àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́ rẹ sínú).
 
-Check where you are:
+Ṣàyẹ̀wò ibi tí o wà:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -350,7 +350,7 @@ Check where you are:
 
 Àkókò láti yọ àkójọpọ̀ fáìlì `practice` náà kúrò:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Àkíyèsí**: Yíyọ àwọn fáìlì kúrò pẹ̀lú lílo `del`, `rmdir` tàbí `rm` kò sẹ́ rí gbà padà mọ́, tó túmọ̀sí pé *àwọn fáìlì tí o yọ kúrò náà máa di àwátì*! Nítorí náà, ṣọ́ra gidigidi pẹ̀lú àṣẹ yìí.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
