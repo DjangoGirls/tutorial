@@ -132,7 +132,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X àti Linux ní àṣẹ `man` kan, èyí tí yíò fún ọ ní ìrànlọ́wọ́ lórí àwọn àṣẹ. Gbìyànjú `man pwd` kí o sì rí ohun tí yíò sọ, tàbí tẹ `man` ṣáájú àwọn àṣẹ mìíràn láti rí ìrànlọ́wọ́ wọn. Èsì `man` náà má n sábà ní àwọn ojú-ìwé. Lo bọ́tìnnì àlàfo náà láti bọ́ sí ojú-ìwé tó kàn, àti `q` láti jáwọ́ nínú wíwo ìrànlọ́wọ́ náà.
 
 <!--endsec-->
 
