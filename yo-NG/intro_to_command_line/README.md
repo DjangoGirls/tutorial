@@ -122,13 +122,13 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Ó ṣeéṣe kí o rí ohun tó jọ bẹ́ẹ̀ lórí ẹ̀rọ rẹ. Tó o bá ṣí ìlà ìpàṣẹ náà, o sábà máa ń bẹ̀rẹ̀ láti àkójọpọ̀ fáìlì ìpìlẹ̀ ti aṣàmúlò rẹ.
 
 * * *
 
-### Learn more about a command
+### Kẹ́kọ̀ọ́ sí i nípa àṣẹ kan
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Ọ̀pọ̀lọpọ̀ àwọn àṣẹ tí o lè tẹ̀ ní command prompt náà ní ìrànlọ́wọ́ tó ba wá tí o lè ṣàfihàn àti kà! Fún àpẹẹrẹ, láti kẹ́kọ̀ọ́ sí i nípa àṣẹ àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́ náà:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
