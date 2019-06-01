@@ -415,9 +415,9 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## Summary
+## Kókó pàtàkì
 
-Here is a summary of some useful commands:
+Kókó pàtàkì kan ti àwọn àṣẹ tó wúlò nìyí:
 
 | Àṣẹ (Windows)  | Àṣẹ (Mac OS / Linux) | Àpèjúwe                                    | Àpẹẹrẹ                                               |
 | -------------- | -------------------- | ------------------------------------------ | ---------------------------------------------------- |
