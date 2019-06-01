@@ -234,7 +234,7 @@ Ní báyìí, ẹ jẹ́ ká lọ sí àkójọpọ̀ fáìlì Desktop wa:
 
 Òhun nìyí!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> Àmọ̀ràn akọ́ṣẹ́mọṣẹ́: tí o bá tẹ `cd D` tí o tún wá tẹ `tab` lórí pẹpẹ bọ́tìnnì rẹ, ìlà ìpàṣẹ náà yíò parí ìyókù orúkọ náà fúnra rẹ̀ kí o lè yàrá ṣiṣẹ́. Tí fódà tó ju ẹyọkan lọ bá wà tó n bẹ̀rẹ̀ pẹ̀lú "D", tẹ bọ́tìnnì `tab` náà lẹ́ẹ̀mejì láti rí àkójọ àwọn àṣàyàn kan.
 
 * * *
 
@@ -268,7 +268,7 @@ Ní báyìí, ẹ jẹ́ ká lọ sí àkójọpọ̀ fáìlì Desktop wa:
 
 ### Ìdánrawò!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Ìdánrawò kékeré kan fún ẹ: nínú àkójọpọ̀ fáìlì `practice` tí o ṣẹ̀ṣẹ̀ ṣẹ̀dá, ṣẹ̀dá àkójọpọ̀ fáìlì kan tí a pè ní `test`. (Lo àwọn àṣẹ `cd` àti `mkdir` náà.)
 
 #### Ojútùú:
 
