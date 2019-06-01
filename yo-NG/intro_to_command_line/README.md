@@ -270,7 +270,7 @@ Ní báyìí, ẹ jẹ́ ká lọ sí àkójọpọ̀ fáìlì Desktop wa:
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
-#### Solution:
+#### Ojútùú:
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
@@ -300,9 +300,9 @@ Kú oríire! :)
 
 * * *
 
-### Clean up
+### Ìpalẹ̀mọ́
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+A kò fẹ́ fi gbogbo rẹ̀ sílẹ̀ rádaràda, nítorí náà jẹ́ ká yọ gbogbo ohun tí a ti ṣe títí dìgbà yẹn kúrò.
 
 Lákọ̀ọ́kọ́, a nílò láti padà sí Desktop:
 
