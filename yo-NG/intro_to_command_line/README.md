@@ -262,7 +262,7 @@ Ní báyìí, ẹ jẹ́ ká lọ sí àkójọpọ̀ fáìlì Desktop wa:
 
 Àṣẹ kékeré yìí yíò ṣẹ̀dá fódà kan pẹ̀lú orúkọ `practice` náà sórí desktop rẹ. O lè ṣàyẹ̀wò bóyá ó wà níbẹ̀ nípasẹ̀ wíwo orí Desktop rẹ tàbí nípasẹ̀ lílo àṣẹ `ls` tàbí `dir` kan! Gbìyànjú rẹ̀. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> Àmọ̀ràn akọ́ṣẹ́mọṣẹ́: Tí ìwọ kò bá fẹ́ tẹ àwọn àṣẹ kannáà léraléra, gbìyànjú títẹ `up arrow` àti `down arrow` lórí pẹpẹ bọ́tìnnì rẹ láti yípo àwọn àṣẹ tí o lò láìpẹ́.
 
 * * *
 
