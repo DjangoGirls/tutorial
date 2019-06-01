@@ -173,7 +173,7 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Àkíyèsí: Nínú powershell, o tún lè lo 'ls' gẹ́gẹ́ bíi orí Linux àti Mac OS X. <!--endsec-->
 
 * * *
 
