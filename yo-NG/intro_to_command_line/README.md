@@ -50,13 +50,13 @@ Lórí Windows, ó ṣeéṣe kí o rí `>` kan, báyìí:
 
 Àṣẹ kọ̀ọ̀kan yíò bẹ̀rẹ̀ pẹ̀lú `$` tàbí `>` àti àlàfo kan, ṣùgbọ́n ìwọ kò gbọ́dọ̀ tẹ̀ ẹ́. Kọ̀mpútà rẹ yíò ṣe fún ọ. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Àkíyèsí kékeré kan: ó ṣeéṣe kí o rí nnkan kan bíi `C:\Users\ola>` tàbí `Olas-MacBook-Air:~ ola$` ṣáájú àmì prompt náà, èyí dára 100%.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
 In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
 
-## Your first command (YAY!)
+## Àṣẹ àkọ́kọ́ rẹ (YAY!)
 
 Jẹ́ ká bẹ̀rẹ̀ nípasẹ̀ títẹ̀ àṣẹ yìí:
 
