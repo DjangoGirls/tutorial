@@ -94,7 +94,7 @@ As you can see, the computer has just printed your username. Neat, huh? :)
 
 Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
 
-### Current directory
+### Àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́
 
 It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
 
@@ -177,7 +177,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 * * *
 
-### Change current directory
+### Ṣàyípadà àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́
 
 Ní báyìí, ẹ jẹ́ ká lọ sí àkójọpọ̀ fáìlì Desktop wa:
 
@@ -348,7 +348,7 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Àkókò láti yọ àkójọpọ̀ fáìlì `practice` náà kúrò:
 
 > **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
 
@@ -371,7 +371,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Ó ti gba ṣíṣe! Láti rí dájú pé ó ti gba yíyọ kúrò lóòótọ́, jẹ́ ká ṣàyẹ̀wò rẹ̀:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -391,7 +391,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Jáde
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
