@@ -1,13 +1,13 @@
-# Summary
+# സംഗ്രഹം
 
-* [Introduction](README.md)
-* [Installation](installation/README.md)
-* [Installation (chromebook)](chromebook_setup/README.md)
-* [How the Internet works](how_the_internet_works/README.md)
-* [Introduction to command line](intro_to_command_line/README.md)
-* [Python installation](python_installation/README.md)
+* [ആമുഖം](README.md)
+* [ഇൻസ്റ്റാളേഷൻ](installation/README.md)
+* [ഇൻസ്റ്റാളേഷൻ (Chromebook)](chromebook_setup/README.md)
+* [ഇന്റർനെറ്റ് എങ്ങനെ പ്രവർത്തിക്കുന്നു](how_the_internet_works/README.md)
+* [കമാൻഡ് ലൈനിനുള്ള ആമുഖം](intro_to_command_line/README.md)
+* [പൈഥൺ ഇൻസ്റ്റലേഷൻ](python_installation/README.md)
 * [കോട് എടിറ്റര്‍](code_editor/README.md)
-* [Introduction to Python](python_introduction/README.md)
+* [പൈത്തണിലേക്ക് ആമുഖം](python_introduction/README.md)
 * [What is Django?](django/README.md)
 * [Django installation](django_installation/README.md)
 * [Your first Django project!](django_start_project/README.md)
