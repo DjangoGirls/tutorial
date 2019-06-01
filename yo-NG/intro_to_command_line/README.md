@@ -240,7 +240,7 @@ Ní báyìí, ẹ jẹ́ ká lọ sí àkójọpọ̀ fáìlì Desktop wa:
 
 ### Ṣẹ̀dá àkójọpọ̀ fáìlì
 
-How about creating a practice directory on your desktop? You can do it this way:
+Ṣíṣẹ̀dá àkójọpọ̀ fáìlì practice (ìdánrawò) kan lórí desktop rẹ ńkọ́? O lè ṣe é lọ́nà yìí:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -260,13 +260,13 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-Àṣẹ kékeré yìí yíò ṣẹ̀dá fódà kan pẹ̀lú orúkọ `practice` náà sórí desktop rẹ. O lè ṣàyẹ̀wò bóyá ó wà níbẹ̀ nípasẹ̀ wíwo orí Desktop rẹ tàbí nípasẹ̀ lílo àṣẹ `ls` tàbí `dir` kan! Try it. :)
+Àṣẹ kékeré yìí yíò ṣẹ̀dá fódà kan pẹ̀lú orúkọ `practice` náà sórí desktop rẹ. O lè ṣàyẹ̀wò bóyá ó wà níbẹ̀ nípasẹ̀ wíwo orí Desktop rẹ tàbí nípasẹ̀ lílo àṣẹ `ls` tàbí `dir` kan! Gbìyànjú rẹ̀. :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
 * * *
 
-### Exercise!
+### Ìdánrawò!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
