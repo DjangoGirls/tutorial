@@ -1,6 +1,6 @@
 # Bí Íńtánẹ́ẹ̀tì ṣé n ṣiṣẹ́
 
-> For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
+> Fún àwọn òǹkàwé ní ilé: a ti ṣàlàyé àkòrí yìí nínú fídíò [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
 > This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
