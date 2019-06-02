@@ -36,7 +36,7 @@ Lẹ́tà rẹ yíò lọ sí ilé iṣẹ́ ìfìwéránṣẹ́ tó súnmọ́
 
 Bí ó ṣé n ṣiṣẹ́ nìyẹn - o fi àwọn ìròyìn ránṣẹ́ àti pé o retí ìdáhùn kan. Dípò ìwé àti gègé o lo àwọn byte ti dátà, ṣùgbọ́n èrò kannáà ló jẹ́!
 
-Dípò àwọn àdírẹ́ẹ̀sì pẹ̀lú orúkọ òpópónà kan, ìlú, kóòdù ìpínlẹ́tà àti orúkọ orílẹ̀-èdè, a lo àwọn àdírẹ́ẹ̀sì IP. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Dípò àwọn àdírẹ́ẹ̀sì pẹ̀lú orúkọ òpópónà kan, ìlú, kóòdù ìpínlẹ́tà àti orúkọ orílẹ̀-èdè, a lo àwọn àdírẹ́ẹ̀sì IP. Kọ̀mpútà rẹ yíò kọ́kọ́ béèrè lọ́wọ́ DNS (Domain Name System, Ètò Orúkọ Agbègbè) náà láti túmọ̀ djangogirls.org sí àdírẹ́ẹ̀sì IP kan. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
 When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
 
