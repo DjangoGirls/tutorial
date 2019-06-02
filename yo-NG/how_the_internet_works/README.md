@@ -24,13 +24,13 @@ Looks like a mess, right? In fact it is a network of connected machines (the abo
 
 It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
-It looks like this:
+Ó rí báyìí:
 
 ![Figure 1.3](images/internet_2.png)
 
 Wòye pé nígbà tí o bá tẹ https://djangogirls.org, o fi lẹ́tà kan ránṣẹ́ tó sọ wípé: "Django Girls Ọ̀wọ́n, Mo fẹ́ rí ààyè ayélujára djangogirls.org náà. Fi ránṣẹ́ sí mi, jọ̀wọ́!"
 
-Lẹ́tà rẹ yíò lọ sí ilé iṣẹ́ ìfìwéránṣẹ́ tó súnmọ́ ẹ jù. Lẹ́yìn náà yíò lọ sí òmíràn tó tún súnmọ́ díẹ̀ sí olùgbà lẹ́tà rẹ, lẹ́yìn náà sí òmíràn, àti òmíràn títí dìgbà tí yíò fi dé ibi tó n lọ. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+Lẹ́tà rẹ yíò lọ sí ilé iṣẹ́ ìfìwéránṣẹ́ tó súnmọ́ ẹ jù. Lẹ́yìn náà yíò lọ sí òmíràn tó tún súnmọ́ díẹ̀ sí olùgbà lẹ́tà rẹ, lẹ́yìn náà sí òmíràn, àti òmíràn títí dìgbà tí yíò fi dé ibi tó n lọ. Nnkan àkànṣe kan ṣoṣo náà ni pé tí o bá fi ọ̀pọ̀lọpọ̀ àwọn lẹ́tà (*àwọn àkópapọ̀ dátà (data packets)*) ránṣẹ́ sí ibi kannáà, wọ́n lè gba àwọn ilé iṣẹ́ ìfìwéránṣẹ́ (*àwọn alànà (routers)*) tó yàtọ̀ síra pátápátá kọjá. Èyí dá lórí bí wọ́n ṣe gba pínpín ní ilé iṣé kọ̀ọ̀kan.
 
 ![Figure 1.4](images/internet_4.png)
 
