@@ -22,7 +22,7 @@ Looks like a mess, right? In fact it is a network of connected machines (the abo
 
 ![Figure 1.2](images/internet_3.png)
 
-Ó fani mọ́ra, àbí kò rí bẹ́ẹ̀? Ṣùgbọ́n kò ṣeéṣe láti ní wáyà kan láàrin gbogbo ẹ̀rọ tó sopọ̀ mọ́ Íńtánẹ́ẹ̀tì náà. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Ó fani mọ́ra, àbí kò rí bẹ́ẹ̀? Ṣùgbọ́n kò ṣeéṣe láti ní wáyà kan láàrin gbogbo ẹ̀rọ tó sopọ̀ mọ́ Íńtánẹ́ẹ̀tì náà. Nítorí náà, láti dé ẹ̀rọ kan (fún àpẹẹrẹ, èyí tí a tọ́jú https://djangogirls.org sí), a nílò láti darí ìbéèrè kan káàkiri oríṣiríṣi ẹ̀rọ.
 
 Ó rí báyìí:
 
