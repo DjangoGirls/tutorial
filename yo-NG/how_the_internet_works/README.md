@@ -38,7 +38,7 @@ Bí ó ṣé n ṣiṣẹ́ nìyẹn - o fi àwọn ìròyìn ránṣẹ́ àti 
 
 Dípò àwọn àdírẹ́ẹ̀sì pẹ̀lú orúkọ òpópónà kan, ìlú, kóòdù ìpínlẹ́tà àti orúkọ orílẹ̀-èdè, a lo àwọn àdírẹ́ẹ̀sì IP. Kọ̀mpútà rẹ yíò kọ́kọ́ béèrè lọ́wọ́ DNS (Domain Name System, Ètò Orúkọ Agbègbè) náà láti túmọ̀ djangogirls.org sí àdírẹ́ẹ̀sì IP kan. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
+Nígbà tí o bá fi lẹ́tà kan ránṣẹ́, ó nílò láti ní àwọn ohun pàtó kan láti fi jíṣẹ́ bó ṣe yẹ: àdírẹ́ẹ̀sì kan, òǹtẹ̀ kan, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ. O tún ma lo èdè kan tí olùgbà náà mọ̀, àbí bẹ́ẹ̀ kọ? Bákannáà ló ṣe rí fún *àwọn àkópapọ̀ dátà* tí o fi ránṣẹ́ láti rí ààyè ayélujára kan. We use a protocol called HTTP (Hypertext Transfer Protocol).
 
 So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
 
