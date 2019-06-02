@@ -4,7 +4,7 @@
 > 
 > Ọ̀rọ̀ àsọyé "How the Internet works" ti Jessica McKellar (http://web.mit.edu/jesstess/www/) ló gbà wá níyànjú láti kọ àkòrí yìí.
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+A lérò pé o n lo Íńtánẹ́ẹ̀tì náà lójoojúmọ́. Ṣùgbọ́n ṣé o mọ ohun tó ṣẹlẹ̀ nígbà tí o tẹ àdírẹ́ẹ̀sì kan bíi https://djangogirls.org sínú aṣàwákiri rẹ tí o sì tẹ `enter`?
 
 Nnkan àkọ́kọ́ tí o nílò láti mọ̀ ni pé ààyè ayélujára kan jẹ́ àpapọ̀ àwọn fáìlì kan tí a tọ́jú sórí ibi ìpamọ́ kan. Gẹ́gẹ́ bí àwọn fídíò, orin, tàbí àwòrán rẹ. Àmọ́ o, apá kan wà tó jẹ́ àkànṣe fún àwọn ààyè ayélujára: wọ́n kó kóòdù kọ̀mpútà tí a n pè ní HTML sínú.
 
