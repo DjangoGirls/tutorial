@@ -22,7 +22,7 @@ Looks like a mess, right? In fact it is a network of connected machines (the abo
 
 ![Figure 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+Ó fani mọ́ra, àbí kò rí bẹ́ẹ̀? Ṣùgbọ́n kò ṣeéṣe láti ní wáyà kan láàrin gbogbo ẹ̀rọ tó sopọ̀ mọ́ Íńtánẹ́ẹ̀tì náà. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
 
 Ó rí báyìí:
 
@@ -36,7 +36,7 @@ Lẹ́tà rẹ yíò lọ sí ilé iṣẹ́ ìfìwéránṣẹ́ tó súnmọ́
 
 Bí ó ṣé n ṣiṣẹ́ nìyẹn - o fi àwọn ìròyìn ránṣẹ́ àti pé o retí ìdáhùn kan. Dípò ìwé àti gègé o lo àwọn byte ti dátà, ṣùgbọ́n èrò kannáà ló jẹ́!
 
-Dípò àwọn àdírẹ́ẹ̀sì pẹ̀lú orúkọ òpópónà kan, ìlú, kóòdù ìpínlẹ́tà àti orúkọ orílẹ̀-èdè, a lo àwọn àdírẹ́ẹ̀sì IP. Kọ̀mpútà rẹ yíò kọ́kọ́ béèrè lọ́wọ́ DNS (Domain Name System, Ètò Orúkọ Agbègbè) náà láti túmọ̀ djangogirls.org sí àdírẹ́ẹ̀sì IP kan. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+Dípò àwọn àdírẹ́ẹ̀sì pẹ̀lú orúkọ òpópónà kan, ìlú, kóòdù ìpínlẹ́tà àti orúkọ orílẹ̀-èdè, a lo àwọn àdírẹ́ẹ̀sì IP. Kọ̀mpútà rẹ yíò kọ́kọ́ béèrè lọ́wọ́ DNS (Domain Name System, Ètò Orúkọ Agbègbè) náà láti túmọ̀ djangogirls.org sí àdírẹ́ẹ̀sì IP kan. Ó ń ṣiṣẹ́ bíi àwọn ìwé tẹlifóònù ti àtijọ́, níbi tí o ti lè wo orúkọ ẹni tí o fẹ́ pè náà tí o sì ma rí nọ́ḿbà fóònù àti àdírẹ́ẹ̀sì wọn.
 
 Nígbà tí o bá fi lẹ́tà kan ránṣẹ́, ó nílò láti ní àwọn ohun pàtó kan láti fi jíṣẹ́ bó ṣe yẹ: àdírẹ́ẹ̀sì kan, òǹtẹ̀ kan, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ. O tún ma lo èdè kan tí olùgbà náà mọ̀, àbí bẹ́ẹ̀ kọ? Bákannáà ló ṣe rí fún *àwọn àkópapọ̀ dátà* tí o fi ránṣẹ́ láti rí ààyè ayélujára kan. A lo ìlànà kan tí a n pè ní HTTP (Hypertext Transfer Protocol, Ìlànà Ìfiránṣẹ́ Ọ̀rọ̀-atọ̀ka).
 
