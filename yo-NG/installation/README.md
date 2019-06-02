@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Ìfihàn ní ṣókí sí ìlà ìpàṣẹ náà
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Ọ̀pọ̀lọpọ̀ àwọn ìgbésẹ̀ tó wà nísàlẹ̀ tọ́ka sí "console", "èbúté" (terminal), "fèrèsé ìpàṣẹ" (command window), tàbí "ìlà ìpàṣẹ" (command line) -- ohun kannáà ní gbogbo àwọn wọ̀nyí: fèrèsé kan lórí kọ̀mpútà rẹ níbi tí o lè tẹ àwọn àṣẹ sí. Nígbà tí o bá dé àlàyé pàtàkì náà, ìwọ yíò kẹ́kọ̀ọ́ síi nípa ìlà ìpàṣẹ náà. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Ṣàgbékalẹ̀ Python
 
