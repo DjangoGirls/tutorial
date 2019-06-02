@@ -1,4 +1,4 @@
-# If you're doing the tutorial at home
+# Tí o bá n ṣe àlàyé náà nílé
 
 If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
 
@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Ìfihàn ní ṣókí sí ìlà ìpàṣẹ náà
 
-Ọ̀pọ̀lọpọ̀ àwọn ìgbésẹ̀ tó wà nísàlẹ̀ tọ́ka sí "console", "èbúté" (terminal), "fèrèsé ìpàṣẹ" (command window), tàbí "ìlà ìpàṣẹ" (command line) -- ohun kannáà ní gbogbo àwọn wọ̀nyí: fèrèsé kan lórí kọ̀mpútà rẹ níbi tí o lè tẹ àwọn àṣẹ sí. Nígbà tí o bá dé àlàyé pàtàkì náà, ìwọ yíò kẹ́kọ̀ọ́ síi nípa ìlà ìpàṣẹ náà. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Ọ̀pọ̀lọpọ̀ àwọn ìgbésẹ̀ tó wà nísàlẹ̀ tọ́ka sí "console", "èbúté" (terminal), "fèrèsé ìpàṣẹ" (command window), tàbí "ìlà ìpàṣẹ" (command line) -- ohun kannáà ní gbogbo àwọn wọ̀nyí: fèrèsé kan lórí kọ̀mpútà rẹ níbi tí o lè tẹ àwọn àṣẹ sí. Nígbà tí o bá dé àlàyé pàtàkì náà, ìwọ yíò kẹ́kọ̀ọ́ síi nípa ìlà ìpàṣẹ náà. Ní báyìí, ohun pàtàkì tí o nílò láti mọ̀ ní bí o ṣe lè ṣí fèrèsé ìpàṣẹ kan àti bó ṣe rí: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Ṣàgbékalẹ̀ Python
 
