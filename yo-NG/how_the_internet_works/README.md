@@ -12,7 +12,7 @@ Tí ìwọ kò bá fi bẹ́ẹ̀ mọ̀ nípa kóòdù kíkọ ó lè ṣòro l
 
 Gẹ́gẹ́ bí ó ti rí pẹ̀lú gbogbo fáìlì, a nílò láti tọ́jú àwọn fáìlì HTML sí ibìkan lórí ibi ìpamọ́ kan. Fún Íńtánẹ́ẹ̀tì náà, a má n lo àwọn àkànṣe kọ̀mpútà tó lágbára púpọ̀ tí a n pè ní àwọn *server*. Wọn kò ní ojú àwòrán kan, atọ́ka tàbí pẹpẹ bọ́tìnnì kan, nítorí pé ìdí pàtàkì wọn ní láti tọ́jú dátà àti pèsè rẹ̀. Ìdí nìyẹn tí a fí n pè wọ́n ní àwọn *server* – nítorí pé wọ́n *pèsè (serve)* dátà fún ẹ.
 
-OK, but you want to know how the Internet looks, right?
+Ó dáa, ṣùgbọ́n o fẹ́ mọ bí Íńtánẹ́ẹ̀tì náà ṣe rí, àbí bẹ́ẹ̀ kọ?
 
 A ya àwòrán kan fún ọ! Ó rí báyìí:
 
