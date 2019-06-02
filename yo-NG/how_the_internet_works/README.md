@@ -10,11 +10,11 @@ Nnkan àkọ́kọ́ tí o nílò láti mọ̀ ni pé ààyè ayélujára kan j�
 
 Tí ìwọ kò bá fi bẹ́ẹ̀ mọ̀ nípa kóòdù kíkọ ó lè ṣòro láti mọ HTML lákọ̀ọ́kọ́, ṣùgbọ́n àwọn aṣàwákiri ayélujára rẹ (bíi Chrome, Safari, Firefox, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ) nífẹ̀ẹ́ sí i. A ṣètò àwọn aṣàwákiri ayélujára láti lóye kóòdù yìí, tẹ̀lé àwọn ìtọ́sọ́nà rẹ̀, àti ṣàgbékalẹ̀ àwọn fáìlì wọ̀nyí tí ààyè ayélujára rẹ kó sínú, bí o ṣe fẹ́ kó rí gan-an.
 
-Gẹ́gẹ́ bí ó ti rí pẹ̀lú gbogbo fáìlì, a nílò láti tọ́jú àwọn fáìlì HTML sí ibìkan lórí ibi ìpamọ́ kan. Fún Íńtánẹ́ẹ̀tì náà, a má n lo àwọn àkànṣe kọ̀mpútà tó lágbára púpọ̀ tí a n pè ní àwọn *server*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+Gẹ́gẹ́ bí ó ti rí pẹ̀lú gbogbo fáìlì, a nílò láti tọ́jú àwọn fáìlì HTML sí ibìkan lórí ibi ìpamọ́ kan. Fún Íńtánẹ́ẹ̀tì náà, a má n lo àwọn àkànṣe kọ̀mpútà tó lágbára púpọ̀ tí a n pè ní àwọn *server*. Wọn kò ní ojú àwòrán kan, atọ́ka tàbí pẹpẹ bọ́tìnnì kan, nítorí pé ìdí pàtàkì wọn ní láti tọ́jú dátà àti pèsè rẹ̀. Ìdí nìyẹn tí a fí n pè wọ́n ní àwọn *server* – nítorí pé wọ́n *pèsè (serve)* dátà fún ẹ.
 
 OK, but you want to know how the Internet looks, right?
 
-We drew you a picture! It looks like this:
+A ya àwòrán kan fún ọ! Ó rí báyìí:
 
 ![Figure 1.1](images/internet_1.png)
 
