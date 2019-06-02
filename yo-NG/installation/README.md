@@ -45,9 +45,9 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 # Ṣẹ̀dá account GitHub kan
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Lọ sí [GitHub.com](https://www.github.com) kí o sì forúkọ sílẹ̀ fún account aṣàmúlò ọ̀fẹ́ tuntun kan. Ri dájú láti rántí ọ̀rọ̀ aṣínà rẹ (ṣàfikún rẹ̀ sínú alákòóso ọ̀rọ̀ aṣínà rẹ, tí o bá lo ọ̀kan).
 
-# Create a PythonAnywhere account
+# Ṣẹ̀dá account PythonAnywhere kan
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
