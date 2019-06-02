@@ -38,9 +38,9 @@ Bí ó ṣé n ṣiṣẹ́ nìyẹn - o fi àwọn ìròyìn ránṣẹ́ àti 
 
 Dípò àwọn àdírẹ́ẹ̀sì pẹ̀lú orúkọ òpópónà kan, ìlú, kóòdù ìpínlẹ́tà àti orúkọ orílẹ̀-èdè, a lo àwọn àdírẹ́ẹ̀sì IP. Kọ̀mpútà rẹ yíò kọ́kọ́ béèrè lọ́wọ́ DNS (Domain Name System, Ètò Orúkọ Agbègbè) náà láti túmọ̀ djangogirls.org sí àdírẹ́ẹ̀sì IP kan. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
 
-Nígbà tí o bá fi lẹ́tà kan ránṣẹ́, ó nílò láti ní àwọn ohun pàtó kan láti fi jíṣẹ́ bó ṣe yẹ: àdírẹ́ẹ̀sì kan, òǹtẹ̀ kan, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ. O tún ma lo èdè kan tí olùgbà náà mọ̀, àbí bẹ́ẹ̀ kọ? Bákannáà ló ṣe rí fún *àwọn àkópapọ̀ dátà* tí o fi ránṣẹ́ láti rí ààyè ayélujára kan. We use a protocol called HTTP (Hypertext Transfer Protocol).
+Nígbà tí o bá fi lẹ́tà kan ránṣẹ́, ó nílò láti ní àwọn ohun pàtó kan láti fi jíṣẹ́ bó ṣe yẹ: àdírẹ́ẹ̀sì kan, òǹtẹ̀ kan, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ. O tún ma lo èdè kan tí olùgbà náà mọ̀, àbí bẹ́ẹ̀ kọ? Bákannáà ló ṣe rí fún *àwọn àkópapọ̀ dátà* tí o fi ránṣẹ́ láti rí ààyè ayélujára kan. A lo ìlànà kan tí a n pè ní HTTP (Hypertext Transfer Protocol, Ìlànà Ìfiránṣẹ́ Ọ̀rọ̀-atọ̀ka).
 
-So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
+Nítorí náà, pàtàkì jùlọ, nígbà tí o bá ní ààyè ayélujára kan, o nílò láti ní *server* (ẹ̀rọ) kan níbi tí yíò ma gbé. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
 
 Torí pé èyí jẹ́ àlàyé Django kan, o lè béèrè ohun tí Django n ṣe. Nígbà tí o bá fi ìdáhùn kan ránṣẹ́, ìwọ kò ní fẹ́ fi ohun kannáà ránṣẹ́ sí gbogbo èèyàn ní gbogbo ìgbà. Yíò dára púpọ̀ tí àwọn lẹ́tà rẹ bá jẹ́ àkànṣe, pàápàá jù lọ fún ẹni tó ṣẹ̀ṣẹ̀ kọ̀wé sí ọ, àbí bẹ́ẹ̀ kọ? Django yíò ràn ọ lọ́wọ́ pẹ̀lú ṣíṣẹ̀dá àwọn lẹ́tà àkànṣe tó dára wọ̀nyí. :)
 
