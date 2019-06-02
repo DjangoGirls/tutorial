@@ -8,9 +8,9 @@ We bet you use the Internet every day. But do you actually know what happens whe
 
 Nnkan àkọ́kọ́ tí o nílò láti mọ̀ ni pé ààyè ayélujára kan jẹ́ àpapọ̀ àwọn fáìlì kan tí a tọ́jú sórí ibi ìpamọ́ kan. Gẹ́gẹ́ bí àwọn fídíò, orin, tàbí àwòrán rẹ. Àmọ́ o, apá kan wà tó jẹ́ àkànṣe fún àwọn ààyè ayélujára: wọ́n kó kóòdù kọ̀mpútà tí a n pè ní HTML sínú.
 
-Tí ìwọ kò bá fi bẹ́ẹ̀ mọ̀ nípa kóòdù kíkọ ó lè ṣòro láti mọ HTML lákọ̀ọ́kọ́, ṣùgbọ́n àwọn aṣàwákiri ayélujára rẹ (bíi Chrome, Safari, Firefox, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ) nífẹ̀ẹ́ sí i. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+Tí ìwọ kò bá fi bẹ́ẹ̀ mọ̀ nípa kóòdù kíkọ ó lè ṣòro láti mọ HTML lákọ̀ọ́kọ́, ṣùgbọ́n àwọn aṣàwákiri ayélujára rẹ (bíi Chrome, Safari, Firefox, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ) nífẹ̀ẹ́ sí i. A ṣètò àwọn aṣàwákiri ayélujára láti lóye kóòdù yìí, tẹ̀lé àwọn ìtọ́sọ́nà rẹ̀, àti ṣàgbékalẹ̀ àwọn fáìlì wọ̀nyí tí ààyè ayélujára rẹ kó sínú, bí o ṣe fẹ́ kó rí gan-an.
 
-As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+Gẹ́gẹ́ bí ó ti rí pẹ̀lú gbogbo fáìlì, a nílò láti tọ́jú àwọn fáìlì HTML sí ibìkan lórí ibi ìpamọ́ kan. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
 OK, but you want to know how the Internet looks, right?
 
