@@ -42,6 +42,6 @@ When you send a letter, it needs to have certain features to be delivered correc
 
 So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
 
-Since this is a Django tutorial, you might ask what Django does. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
+Torí pé èyí jẹ́ àlàyé Django kan, o lè béèrè ohun tí Django n ṣe. When you send a response, you don't always want to send the same thing to everybody. It is so much better if your letters are personalized, especially for the person that has just written to you, right? Django helps you with creating these personalized, interesting letters. :)
 
-Enough talk – time to create!
+Ọ̀rọ̀ tí a sọ ti tó – àkọ́kọ́ láti ṣẹ̀dá!
