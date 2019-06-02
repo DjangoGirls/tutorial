@@ -1,4 +1,4 @@
-# How the Internet works
+# Bí Íńtánẹ́ẹ̀tì ṣé n ṣiṣẹ́
 
 > For readers at home: this chapter is covered in the [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc) video.
 > 
