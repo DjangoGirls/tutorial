@@ -18,7 +18,7 @@ A ya àwòrán kan fún ọ! Ó rí báyìí:
 
 ![Figure 1.1](images/internet_1.png)
 
-Ó rí rádaràda, àbí bẹ́ẹ̀ kọ? Ní tòótọ́, ó jẹ́ ìkànnì àwọn ẹ̀rọ tí a sopọ̀ kan (*àwọn server* tí a dárúkọ lókè náà). Hundreds of thousands of machines! Many, many kilometers of cables around the world! O lè ṣèbẹ̀wò ààyè ayélujára Submarine Cable Map kan (http://submarinecablemap.com) láti rí bí íńtánẹ́ẹ̀tì náà ṣe lọ́jú pọ̀ tó. Àwòrán kan láti ààyè ayélujára náà nìyí:
+Ó rí rádaràda, àbí bẹ́ẹ̀ kọ? Ní tòótọ́, ó jẹ́ ìkànnì àwọn ẹ̀rọ tí a sopọ̀ kan (*àwọn server* tí a dárúkọ lókè náà). Ẹgbẹẹgbẹ̀rún lọ́nà ọgọ́rọ̀ọ̀rún àwọn ẹ̀rọ! Ọ̀pọ̀lọpọ̀ kìlómítà àwọn wáyà káàkiri àgbáyé! O lè ṣèbẹ̀wò ààyè ayélujára Submarine Cable Map kan (http://submarinecablemap.com) láti rí bí íńtánẹ́ẹ̀tì náà ṣe lọ́jú pọ̀ tó. Àwòrán kan láti ààyè ayélujára náà nìyí:
 
 ![Figure 1.2](images/internet_3.png)
 
