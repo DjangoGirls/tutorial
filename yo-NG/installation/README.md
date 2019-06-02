@@ -23,7 +23,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 <!--endsec-->
 
-# Brief intro to the command line
+# Ìfihàn ní ṣókí sí ìlà ìpàṣẹ náà
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
@@ -51,17 +51,17 @@ Lọ sí [GitHub.com](https://www.github.com) kí o sì forúkọ sílẹ̀ fún
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# Bẹ̀rẹ̀ kíkà
 
 Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Bí íńtánẹ́ẹ̀tì ṣé n ṣiṣẹ́](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Ìfihàn sí ìlà ìpàṣẹ náà](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Ìfihàn sí Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Kíni Django?](../django/README.md)
 
 # Enjoy the workshop!
 
