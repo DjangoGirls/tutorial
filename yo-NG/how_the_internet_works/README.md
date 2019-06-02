@@ -18,7 +18,7 @@ A ya àwòrán kan fún ọ! Ó rí báyìí:
 
 ![Figure 1.1](images/internet_1.png)
 
-Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! O lè ṣèbẹ̀wò ààyè ayélujára Submarine Cable Map kan (http://submarinecablemap.com) láti rí bí íńtánẹ́ẹ̀tì náà ṣe lọ́jú pọ̀ tó. Àwòrán kan láti ààyè ayélujára náà nìyí:
 
 ![Figure 1.2](images/internet_3.png)
 
