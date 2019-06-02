@@ -2,7 +2,7 @@
 
 > Fún àwọn òǹkàwé ní ilé: a ti ṣàlàyé àkòrí yìí nínú fídíò [How the Internet Works](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Ọ̀rọ̀ àsọyé "How the Internet works" ti Jessica McKellar (http://web.mit.edu/jesstess/www/) ló gbà wá níyànjú láti kọ àkòrí yìí.
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
