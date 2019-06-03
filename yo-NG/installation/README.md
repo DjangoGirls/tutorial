@@ -65,4 +65,4 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 # Gbádùn àpérò náà!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Nígbà tí o bá bẹ̀rẹ̀ àpérò náà, ìwọ yíò lè lọ tààrà sí [Iṣẹ́ Django àkọ́kọ́ rẹ!](../django_start_project/README.md) nítorí pé o ti mọ àlàyé tó wà nínú àwọn àkòrí ìṣáájú náà tẹ́lẹ̀.
