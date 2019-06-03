@@ -16,7 +16,7 @@ Tí o bá n kópa nínú ọ̀kan lára àwọn [àpérò Django Girls](https://
 
 # Ìṣàgbékalẹ̀
 
-Nínú àlàyé yìí, ìwọ yíò ma kọ́ blog kan. Láti lè ṣe ìyẹn, bí o ṣé n ka àlàyé náà lọ, ìwọ yíò gba ìtọ́sọ́nà lórí bí o ṣe lè ṣàgbékalẹ̀ oríṣiríṣi ètò sórí kọ̀mpútà rẹ àti ṣètò àwọn account kan lórí íńtánẹ́ẹ̀tì bíi a bá ṣe nílò wọn. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Nínú àlàyé yìí, ìwọ yíò ma kọ́ blog kan. Láti lè ṣe ìyẹn, bí o ṣé n ka àlàyé náà lọ, ìwọ yíò gba ìtọ́sọ́nà lórí bí o ṣe lè ṣàgbékalẹ̀ oríṣiríṣi ètò sórí kọ̀mpútà rẹ àti ṣètò àwọn account kan lórí íńtánẹ́ẹ̀tì bíi a bá ṣe nílò wọn. Ojú-ìwé yìí ṣàkójọ gbogbo àwọn ìtọ́sọ́nà ìṣàgbékalẹ̀ àti ìforúkọsílẹ̀ náà sójú kan (èyí tó wúlò fún àwọn àgbékalẹ̀ àpérò kan).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
