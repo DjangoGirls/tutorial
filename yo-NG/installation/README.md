@@ -2,7 +2,7 @@
 
 Tí o bá n ṣe àlàyé náà nílé, tí kìí ṣe ní ọ̀kan lára àwọn [àpérò Django Girls](https://djangogirls.org/events/) náà, o lè fojú fo àkòrí yìí pátápátá ní báyìí kí o lọ tààrà sí àkòrí [Bí Íńtánẹ́ẹ̀tì ṣé n ṣiṣẹ́](../how_the_internet_works/README.md) náà.
 
-Ìdí ni pé a sọ̀rọ̀ nípa ṣíṣe àgbékalẹ̀ àwọn nnkan bí a ṣe nílò wọn nínú àlàyé náà -- èyí wulẹ̀ jẹ́ ojú-ìwé àfikún kan tó ṣàkójọ gbogbo àwọn ìtọ́sọ́nà ìṣàgbékalẹ̀ náà sójú kan (èyí tó wúlò fún àwọn àgbékalẹ̀ àpérò kan). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+Ìdí ni pé a sọ̀rọ̀ nípa ṣíṣe àgbékalẹ̀ àwọn nnkan bí a ṣe nílò wọn nínú àlàyé náà -- èyí wulẹ̀ jẹ́ ojú-ìwé àfikún kan tó ṣàkójọ gbogbo àwọn ìtọ́sọ́nà ìṣàgbékalẹ̀ náà sójú kan (èyí tó wúlò fún àwọn àgbékalẹ̀ àpérò kan). O lè yàn láti ṣàgbékalẹ̀ gbogbo ohun tó wà lórí ojú-ìwé yìí ní báyìí tí o bá fẹ́. Ṣùgbọ́n tí o bá fẹ́ bẹ̀rẹ̀ síí kẹ́kọ̀ọ́ nípa àwọn nnkan ṣáájú ṣíṣe àgbékalẹ̀ wọn sórí kọ̀mpútà rẹ, fojú fo àkòrí yìí, a ó sì sàlàyé àwọn apá ìṣàgbékalẹ̀ náà fún ọ tó bá yá, tí a bá ti nílò wọn.
 
 Good luck!
 
