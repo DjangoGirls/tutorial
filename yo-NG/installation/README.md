@@ -14,9 +14,9 @@ If you are attending one of the [Django Girls events](https://djangogirls.org/ev
 * The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
 * If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
 
-# Installation
+# Ìṣàgbékalẹ̀
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Nínú àlàyé yìí, ìwọ yíò ma kọ́ blog kan. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
@@ -53,7 +53,7 @@ Lọ sí [GitHub.com](https://www.github.com) kí o sì forúkọ sílẹ̀ fún
 
 # Bẹ̀rẹ̀ kíkà
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Kú oríire, o ti ṣètò gbogbo rẹ̀ àti pé o ṣetán láti bẹ̀rẹ̀! Tí o bá ṣì ní àkókò díẹ̀ ṣáájú àpérò náà, yóò wúlò láti bẹ̀rẹ̀ kíka díẹ̀ lára àwọn àkòrí ìbẹ̀rẹ̀ náà:
 
 * [Bí íńtánẹ́ẹ̀tì ṣé n ṣiṣẹ́](../how_the_internet_works/README.md)
 
