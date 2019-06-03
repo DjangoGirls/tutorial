@@ -4,11 +4,11 @@ Tí o bá n ṣe àlàyé náà nílé, tí kìí ṣe ní ọ̀kan lára àwọ
 
 Ìdí ni pé a sọ̀rọ̀ nípa ṣíṣe àgbékalẹ̀ àwọn nnkan bí a ṣe nílò wọn nínú àlàyé náà -- èyí wulẹ̀ jẹ́ ojú-ìwé àfikún kan tó ṣàkójọ gbogbo àwọn ìtọ́sọ́nà ìṣàgbékalẹ̀ náà sójú kan (èyí tó wúlò fún àwọn àgbékalẹ̀ àpérò kan). O lè yàn láti ṣàgbékalẹ̀ gbogbo ohun tó wà lórí ojú-ìwé yìí ní báyìí tí o bá fẹ́. Ṣùgbọ́n tí o bá fẹ́ bẹ̀rẹ̀ síí kẹ́kọ̀ọ́ nípa àwọn nnkan ṣáájú ṣíṣe àgbékalẹ̀ wọn sórí kọ̀mpútà rẹ, fojú fo àkòrí yìí, a ó sì sàlàyé àwọn apá ìṣàgbékalẹ̀ náà fún ọ tó bá yá, tí a bá ti nílò wọn.
 
-Good luck!
+Oríire fún ọ!
 
-# If you're attending a workshop
+# Tí o bá n kópa nínú àpérò kan
 
-If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
+Tí o bá n kópa nínú ọ̀kan lára àwọn [àpérò Django Girls](https://djangogirls.org/events/) náà:
 
 * Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
 * The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
