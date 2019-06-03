@@ -11,7 +11,7 @@ Oríire fún ọ!
 Tí o bá n kópa nínú ọ̀kan lára àwọn [àpérò Django Girls](https://djangogirls.org/events/) náà:
 
 * Àpérò rẹ lè ní "ìdánilékọ̀ọ́ ìṣàgbékalẹ̀" kan ṣáájú àpérò pàtàkì náà. Tí o bá wà ní ìdánilékọ̀ọ́ ìṣàgbékalẹ̀ kan, ojú-ìwé yìí wà fún ọ! Tẹ̀lé àwọn ìtọ́sọ́nà tó wà níbí láti ṣàgbékalẹ̀ gbogbo ohun tí o nílò fún àpérò náà, pẹ̀lú ìrànlọ́wọ́ àwọn olùkọ tí o bá nílò wọn. Ní àpérò pàtàkì náà, ìwọ yíò lè fojú fo àwọn ìtọ́sọ́nà ìṣàgbékalẹ̀ tí o ma bá pàdé nínú àlàyé pàtàkì náà nígbà tí o bá débẹ̀.
-* Àwọn olùdarí àpérò rẹ le ti sọ fún ẹ pé kó o gbìyànjú láti ṣàgbékalẹ̀ gbogbo nnkan sórí kọ̀mpútà rẹ nílé ṣáájú kí àpérò náà tó bẹ̀rẹ̀. Tí wọ́n bá ti sọ fún ẹ pé kó o ṣe ìyẹn, ojú-ìwé yìí wà fún ọ! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
+* Àwọn olùdarí àpérò rẹ le ti sọ fún ẹ pé kó o gbìyànjú láti ṣàgbékalẹ̀ gbogbo nnkan sórí kọ̀mpútà rẹ nílé ṣáájú kí àpérò náà tó bẹ̀rẹ̀. Tí wọ́n bá ti sọ fún ẹ pé kó o ṣe ìyẹn, ojú-ìwé yìí wà fún ọ! Tẹ̀lé àwọn ìtọ́sọ́nà tó wà níbí, láti ṣe ohun tí o lè ṣe. Ní àpérò pàtàkì náà, nígbà tí o bá dé ìgbésẹ̀ ìṣàgbékalẹ̀ kan nínú àlàyé pàtàkì náà, tí kò sì ṣeéṣe fún ọ láti ṣàgbékalẹ̀ nnkan yẹn tẹ́lẹ̀, o lè béèrè fún ìrànlọ́wọ́ lọ́dọ̀ olùkọ rẹ.
 * If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
 
 # Ìṣàgbékalẹ̀
