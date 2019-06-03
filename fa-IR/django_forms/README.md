@@ -11,10 +11,10 @@
 ما باید یک فایل با این نام در پوشه ` blog` ایجاد کنیم.
 
     blog
-       └── forms.py
+       ┘── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+خوب، اجازه دهید آن را در ویرایشگر کد باز کنیم و خطوط زیر را تایپ کنیم:
 
 {% filename %}blog/forms.py{% endfilename %}
 
