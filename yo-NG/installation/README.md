@@ -2,7 +2,7 @@
 
 Tí o bá n ṣe àlàyé náà nílé, tí kìí ṣe ní ọ̀kan lára àwọn [àpérò Django Girls](https://djangogirls.org/events/) náà, o lè fojú fo àkòrí yìí pátápátá ní báyìí kí o lọ tààrà sí àkòrí [Bí Íńtánẹ́ẹ̀tì ṣé n ṣiṣẹ́](../how_the_internet_works/README.md) náà.
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+Ìdí ni pé a sọ̀rọ̀ nípa ṣíṣe àgbékalẹ̀ àwọn nnkan bí a ṣe nílò wọn nínú àlàyé náà -- èyí wulẹ̀ jẹ́ ojú-ìwé àfikún kan tó ṣàkójọ gbogbo àwọn ìtọ́sọ́nà ìṣàgbékalẹ̀ náà sójú kan (èyí tó wúlò fún àwọn àgbékalẹ̀ àpérò kan). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
 Good luck!
 
