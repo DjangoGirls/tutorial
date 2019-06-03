@@ -52,13 +52,14 @@ class PostForm(forms.ModelForm):
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-توجه داشته باشید که ما می خواهیم با نمایش جدید ما ` post_new </ 0> تماس بگیریم. کلاس <code> "گلیفیکن گلیفیکن به علاوه" </ 0> توسط تم بوت استرپ ما استفاده می شود و علامت پلاس را برای ما نمایش می دهد.</p>
+توجه داشته باشید که ما می خواهیم با نام نمایه جدیدمان`post_new`باشد. کلاس `"glyphicon glyphicon-plus"` که توسط تم بوت‌استرپ استفاده می‌شود علامت پلاس را برای ما نمایش می‌دهد.
 
-<p>پس از اضافه کردن خط، فایل HTML شما باید اینگونه باشد:</p>
+پس از اضافه کردن خط، فایل HTML شما باید اینگونه باشد:
 
-<p>{% filename %}blog/templates/blog/base.html{% endfilename %}</p>
+{% filename %}blog/templates/blog/base.html{% endfilename %}
 
-<pre><code class="html">{% load static %}
+```html
+{% load static %}
 <html>
     <head>
         <title>Django Girls blog</title>
@@ -82,13 +83,13 @@ class PostForm(forms.ModelForm):
         </div>
     </body>
 </html>
-`</pre> 
+```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+پس از ذخیره و بازخوانی صفحه http://127.0.0.1:8000 شما با یک خطای شناخته شده `NoReverseMatch` مواجه خواهید شد، درست است؟ بسیار عالی!
 
 ## آدرس اینترنتی
 
-We open `blog/urls.py` in the code editor and add a line:
+فایل `blog/urls.py` را باز کنید و خط زیر را به آن اضافه کنید:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -111,11 +112,11 @@ urlpatterns = [
 ]
 ```
 
-پس از طراوت سایت، ما یک ` صفت خطا </ 0> را مشاهده می کنیم، زیرا ما نمای <code> پست_جدید </ 0> را اجرا نکرده ایم. بگذارید آن را در حال حاضر اضافه کنید.</p>
+پس از بازخوانی سایت، ما یک خطای `AttributeError` را مشاهده می‌کنیم، زیرا ما نمای `post_new` را به کار نبرده‌ایم. بگذارید آن را اضافه کنیم.
 
-<h2>دیدگاه پست_جدید</h2>
+## نمای post_new
 
-<p>Time to open the <code>blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
 {% filename %}blog/views.py{% endfilename %}
 
