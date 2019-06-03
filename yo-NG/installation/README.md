@@ -16,7 +16,7 @@ If you are attending one of the [Django Girls events](https://djangogirls.org/ev
 
 # Ìṣàgbékalẹ̀
 
-Nínú àlàyé yìí, ìwọ yíò ma kọ́ blog kan. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+Nínú àlàyé yìí, ìwọ yíò ma kọ́ blog kan. Láti lè ṣe ìyẹn, bí o ṣé n ka àlàyé náà lọ, ìwọ yíò gba ìtọ́sọ́nà lórí bí o ṣe lè ṣàgbékalẹ̀ oríṣiríṣi ètò sórí kọ̀mpútà rẹ àti ṣètò àwọn account kan lórí íńtánẹ́ẹ̀tì bíi a bá ṣe nílò wọn. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
