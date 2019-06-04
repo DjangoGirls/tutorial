@@ -90,7 +90,7 @@ Dacă doriți o altă limbă, schimbați codul de limbă, schimbând linie urmă
 LANGUAGE_CODE = 'de-ch'
 ```
 
-Avem nevoie să adăugăm o cale pentru fișiere statice. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Avem nevoie să adăugăm o cale pentru fișiere statice. (O să aflăm despre fișiere statice și CSS mai târziu în tutorial.) La *sfârșitul* fișierului, sub textul `STATIC_URL` adăugați o linie nouă `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+Când `DEBUG` este `True` și `ALLOWED_HOSTS` n-are valoare, host este validat în domeniu `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
