@@ -4,7 +4,7 @@
 
 ## Àyíká àìrí
 
-Ṣáájú kí a tó ṣàgbékalẹ̀ Django, a ó mú ọ ṣàgbékalẹ̀ irinṣẹ́ kan tó wúlò púpọ̀ láti ṣe ìrànlọ́wọ́ mímú kí àyíká kóòdù kíkọ rẹ wà létòlétò lórí kọ̀mpútà rẹ. Ó ṣeéṣe láti fo ìgbésẹ̀ yìí, ṣùgbọ́n òhun ló dáa jù. Starting with the best possible setup will save you a lot of trouble in the future!
+Ṣáájú kí a tó ṣàgbékalẹ̀ Django, a ó mú ọ ṣàgbékalẹ̀ irinṣẹ́ kan tó wúlò púpọ̀ láti ṣe ìrànlọ́wọ́ mímú kí àyíká kóòdù kíkọ rẹ wà létòlétò lórí kọ̀mpútà rẹ. Ó ṣeéṣe láti fo ìgbésẹ̀ yìí, ṣùgbọ́n òhun ló dáa jù. Bíbẹ̀rẹ̀ pẹ̀lú àgbékalẹ̀-ètò tó dára jù lọ yíò gbà ọ́ sílẹ̀ lọ́wọ́ ọ̀pọ̀lọpọ̀ wàhálà lọ́jọ́ iwájú!
 
 So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
