@@ -2,11 +2,11 @@
 
 Avem câteva lucruri: model `Post` care este definit în `models.py`, `post_list` în `views.py` și template. Dar cum să facem ca posturile noastre să apare în template-ul HTML? Pentru că ceea ce noi dorim este de a arăta careva content (modele salvate în baza de date) în template-ul, corect?
 
-Acesta este ceea ce *views* trebuie să facă: conecta modele și template-uri. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+Acesta este ceea ce *views* trebuie să facă: conecta modele și template-uri. În *view* `post_list` trebuie să obținem pe toate modele, pe care vream să le afișăm și să le transmitem la template. În *view* noi decidem care modele va fi afișate în template.
 
-OK, so how will we achieve this?
+OK, dar cum obținem asta?
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+Trebuie să deschidem `blog/views.py` în editorul de cod. Până când `post_list` *view* este următor:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+Țineți minte am vorbit despre încorporarea codului care este scris în fișiere diferite? Acum este momentul când trebuie să includem modelul pe care l-am scris în `models.py`. O să adăugăm linie `from .models import Post` în mod următor:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -26,7 +26,7 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+Punct înainte de `models` înseamnă *directoriu curent* sau *aplicație curentă*. `views.py` și `models.py` sunt în același directoriu. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
 
 But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
 
