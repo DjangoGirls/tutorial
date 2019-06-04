@@ -80,9 +80,9 @@ Ar fi plăcut să avem timp corect pe site-ul nostru. Deschideți [listă de fus
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Codul de limbă constă din limbă, de exemplu `en` pentru engleză sau `de` pentru germană, și codul de țară, de exemplu `de` pentru germană sau `ch` pentru for Elveția. Dacă engleză nu este limbă nativă, puteți să adăugați codul de mai jos pentru a face ca butoanele standarde și notificațiile de la Django să fie în limba voastră. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Codul de limbă constă din limbă, de exemplu `en` pentru engleză sau `de` pentru germană, și codul de țară, de exemplu `de` pentru germană sau `ch` pentru for Elveția. Dacă engleză nu este limbă nativă, puteți să adăugați codul de mai jos pentru a face ca butoanele standarde și notificațiile de la Django să fie în limba voastră. În astfel mod, butonul "Cancel" va fi tradus în limbă definită aici. [Django are multe traduceri predefinite](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Dacă doriți o altă limbă, schimbați codul de limbă, schimbând linie următoare:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
