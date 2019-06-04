@@ -113,9 +113,9 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 ## Setare bazei de date
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Există multe baze de date pentru a păstra dată pentru site-ul vostru. O să utilizăm opțiune standartă, `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+Acesta este deja predifinit în parte acesta a fișierului `mysite/settings.py`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -128,7 +128,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+Pentru a crea baza de date pentru blogul vostru, hai să executăm comandă următoare în linie de comandă: `python manage.py migrate` (trebuie să fim în directoriu `djangogirls` care conține fișierul `manage.py`). Dacă totul va fi bine, o să vedeți codul următor:
 
 {% filename %}command-line{% endfilename %}
 
