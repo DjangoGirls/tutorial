@@ -12,7 +12,7 @@ All you need to do is find a directory in which you want to create the `virtuale
 
 > **NOTE:** On Windows, make sure that this directory does not contain accented or special characters; if your username contains accented characters, use a different directory, for example, `C:\djangogirls`.
 
-For this tutorial we will be using a new directory `djangogirls` from your home directory:
+Fún àlàyé yìí, a ó máa lo àkójọpọ̀ fáìlì `djangogirls` tuntun kan láti àkójọpọ̀ fáìlì ìpìlẹ̀ rẹ:
 
 {% filename %}command-line{% endfilename %}
 
