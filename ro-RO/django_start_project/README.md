@@ -194,12 +194,12 @@ Dacă utilizați Chromebook și Cloud9, în schimb faceți click pe URL în fere
 
 Felicitări! Ați creat primul site-ul web și ați porinit utilizând serverul web! Nu este minunat?
 
-![Install worked!](images/install_worked.png)
+![Instalare a fost cu success!](images/install_worked.png)
 
 Observați că fereastră cu linie de comandă poate să execute numai un singur lucru și în fereastră cu linie de comandă pe care ați deschis mai devreme este pornit serverul web. Atât timp cât serverul web este pornit și așteaptă pe cereri de intrare, în linie de comandă se poate de introdus textul, dar comenzile noi nu va fi executate.
 
 > Am făcut cunoștință cum lucrează serverul web în capitolul **Cum lucrează Internet**.
 
-Pentru a executa comenzile adiționale când serverul web este pornit, deschideți o fereastră nouă cu linie de comandă și activați virtualenv -- pentru a revizui instrucțiile cum să deschideți al doilea fereastră cu linie de comandă, vedeți capitolulul [Introducere în linie de comandă](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Pentru a executa comenzile adiționale când serverul web este pornit, deschideți o fereastră nouă cu linie de comandă și activați virtualenv -- pentru a revizui instrucțiile cum să deschideți al doilea fereastră cu linie de comandă, vedeți capitolulul [Introducere în linie de comandă](../intro_to_command_line/README.md). Pentru a stopa serverul web, deschideți fereastră unde el este pornit și apăsați CTRL+C - taste Control și C împreună (pe Windows, poate o să aveți nevoie să apăsați Ctrl+Break).
 
-Ready for the next step? It's time to create some content!
+Sunteți gata de pasul următor? Este timp să creăm careva conținut!
