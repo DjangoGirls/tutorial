@@ -196,10 +196,10 @@ Felicitări! Ați creat primul site-ul web și ați porinit utilizând serverul 
 
 ![Install worked!](images/install_worked.png)
 
-Observați că fereastră cu linie de comandă poate să execute numai un singur lucru și în fereastră cu linie de comandă pe care ați deschis mai devreme este pornit serverul web. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Observați că fereastră cu linie de comandă poate să execute numai un singur lucru și în fereastră cu linie de comandă pe care ați deschis mai devreme este pornit serverul web. Atât timp cât serverul web este pornit și așteaptă pe cereri de intrare, în linie de comandă se poate de introdus textul, dar comenzile noi nu va fi executate.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Am făcut cunoștință cum lucrează serverul web în capitolul **Cum lucrează Internet**.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Pentru a executa comenzile adiționale când serverul web este pornit, deschideți o fereastră nouă cu linie de comandă și activați virtualenv -- pentru a revizui instrucțiile cum să deschideți al doilea fereastră cu linie de comandă, vedeți capitolulul [Introducere în linie de comandă](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
 Ready for the next step? It's time to create some content!
