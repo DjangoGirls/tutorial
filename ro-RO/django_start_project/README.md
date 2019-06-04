@@ -192,11 +192,11 @@ Dacă utilizați Chromebook și Cloud9, în schimb faceți click pe URL în fere
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Felicitări! Ați creat primul site-ul web și ați porinit utilizând serverul web! Nu este minunat?
 
 ![Install worked!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Observați că fereastră cu linie de comandă poate să execute numai un singur lucru și în fereastră cu linie de comandă pe care ați deschis mai devreme este pornit serverul web. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
 > We reviewed how web servers work in the **How the Internet works** chapter.
 
