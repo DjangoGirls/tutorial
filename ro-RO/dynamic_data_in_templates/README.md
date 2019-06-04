@@ -1,8 +1,8 @@
-# Dynamic data in templates
+# Date dinamice în template-uri
 
-We have different pieces in place: the `Post` model is defined in `models.py`, we have `post_list` in `views.py` and the template added. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+Avem câteva lucruri: model `Post` care este definit în `models.py`, `post_list` în `views.py` și template. Dar cum să facem ca posturile noastre să apare în template-ul HTML? Pentru că ceea ce noi dorim este de a arăta careva content (modele salvate în baza de date) în template-ul, corect?
 
-This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+Acesta este ceea ce *views* trebuie să facă: conecta modele și template-uri. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
 
 OK, so how will we achieve this?
 
