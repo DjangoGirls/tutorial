@@ -20,7 +20,7 @@ Fún àlàyé yìí, a ó máa lo àkójọpọ̀ fáìlì `djangogirls` tuntun 
     $ cd djangogirls
     
 
-We will make a virtualenv called `myvenv`. The general command will be in the format:
+A ó ṣẹ̀dá virtualenv kan tí a n pè ní `myvenv`. Àṣẹ tí a sábà náà yíò rí báyìí:
 
 {% filename %}command-line{% endfilename %}
 
