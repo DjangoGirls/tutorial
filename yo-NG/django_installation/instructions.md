@@ -30,7 +30,7 @@ A ó ṣẹ̀dá virtualenv kan tí a n pè ní `myvenv`. Àṣẹ tí a sábà 
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-To create a new `virtualenv`, you need to open the command prompt and run `python -m venv myvenv`. It will look like this:
+Láti ṣẹ̀dá `virtualenv` tuntun kan, o nílò láti ṣí command prompt náà kí o sì ṣe `python -m venv myvenv`. Yíò rí báyìí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -44,7 +44,7 @@ Where `myvenv` is the name of your `virtualenv`. You can use any other name, but
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+A lè ṣẹ̀dá `virtualenv` kan lórí Linux àti OS X nípasẹ̀ lílo `python3 -m venv myvenv`. Yíò rí báyìí:
 
 {% filename %}command-line{% endfilename %}
 
