@@ -90,7 +90,7 @@ Dacă doriți o altă limbă, schimbați codul de limbă, schimbând linie urmă
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Avem nevoie să adăugăm o cale pentru fișiere statice. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
