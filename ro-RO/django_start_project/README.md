@@ -164,28 +164,28 @@ Trebuie să fiți în directoriu care conține fișierul `manage.py` (directoriu
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Dacă utilizați Chromebook, executați comandă de mai jos:
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Dacă utilizați Windows și primiți eroare `UnicodeDecodeError`, utilizați comandă următoare:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Acum trebuie să verificați că website-ul lucrează. Deschideți browser (Firefox, Chrome, Safari, Internet Explorer sau orice alt pe care îl utilizați) și întroduceți adresa următoare:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Dacă utilizați Chromebook și Cloud9, în schimb faceți click pe URL în fereastră pop-up care trebuie să apare în colțul din dreapta sus a liniei de comandă, unde serverul web este pornit. URL va arăta în mod următor:
 
 {% filename %}browser{% endfilename %}
 
