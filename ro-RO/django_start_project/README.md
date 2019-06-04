@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-Când `DEBUG` este `True` și `ALLOWED_HOSTS` n-are valoare, host este validat în domeniu `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+Când `DEBUG` este `True` și `ALLOWED_HOSTS` n-are valoare, host este validat în domeniu `['localhost', '127.0.0.1', '[::1]']`. Acesta v-a fi diferit de denumirea domeniului pe PythonAnywhere când o să publicăm aplicație, de aceea schimbăm configurație următoare:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -107,11 +107,11 @@ Când `DEBUG` este `True` și `ALLOWED_HOSTS` n-are valoare, host este validat �
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Notă**: Dacă utilizați pe Chromebook, adăugați linie aceasta la sfârșitul fișierului settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Mai adăugați `.amazonaws.com` la sfârșitul `ALLOWED_HOSTS`, dacă utilizați cloud9
 
-## Set up a database
+## Setare bazei de date
 
 There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
 
