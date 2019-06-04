@@ -6,7 +6,7 @@
 
 Ṣáájú kí a tó ṣàgbékalẹ̀ Django, a ó mú ọ ṣàgbékalẹ̀ irinṣẹ́ kan tó wúlò púpọ̀ láti ṣe ìrànlọ́wọ́ mímú kí àyíká kóòdù kíkọ rẹ wà létòlétò lórí kọ̀mpútà rẹ. Ó ṣeéṣe láti fo ìgbésẹ̀ yìí, ṣùgbọ́n òhun ló dáa jù. Bíbẹ̀rẹ̀ pẹ̀lú àgbékalẹ̀-ètò tó dára jù lọ yíò gbà ọ́ sílẹ̀ lọ́wọ́ ọ̀pọ̀lọpọ̀ wàhálà lọ́jọ́ iwájú!
 
-So, let's create a **virtual environment** (also called a *virtualenv*). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
+Nítorí náà, jẹ́ ká ṣẹ̀dá **àyíká àìrí** kan (tí a tún pè ní *virtualenv* kan). Virtualenv will isolate your Python/Django setup on a per-project basis. This means that any changes you make to one website won't affect any others you're also developing. Neat, right?
 
 All you need to do is find a directory in which you want to create the `virtualenv`; your home directory, for example. On Windows, it might look like `C:\Users\Name` (where `Name` is the name of your login).
 
