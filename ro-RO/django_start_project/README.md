@@ -153,11 +153,11 @@ Pentru a crea baza de date pentru blogul vostru, hai să executăm comandă urm�
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+Și am terminat! Este timp să pornim serverul web și să vedem că website-ul lucrează!
 
-## Starting the web server
+## Pornirea serverului web
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+Trebuie să fiți în directoriu care conține fișierul `manage.py` (directoriu `djangogirls`). În linie de comandă, putem să pornim serverul web, executând `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
