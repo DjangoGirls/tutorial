@@ -279,7 +279,7 @@ Sì, questa lista è vuota. Abbastanza inutile, vero? Creiamo una lista di numer
 >>> lotteria = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Bene, abbiamo una lista! Cosa possiamo farne? Vediamo quanti numeri della lotteria contiene. Quale funzione potresti utilizzare per questo compito? Lo hai già imparato!
 
 {% filename %}command-line{% endfilename %}
 
