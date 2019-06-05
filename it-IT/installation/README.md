@@ -2,7 +2,7 @@
 
 Se stai seguendo il tutorial a casa, e non durante uno degli [eventi Django Girls](https://djangogirls.org/events/), puoi saltare completamente questo capitolo e andare direttamente al capitolo [Come funziona Internet](../how_the_internet_works/README.md).
 
-Questo perché nel tutorial spieghiamo l'installazione dei programmi passo passo - questa è una pagina aggiuntiva che raccoglie tutte le istruzioni di installzaione (e che può tornare utile in alcuni workshop). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+Questo perché nel tutorial spieghiamo come installare i programmi passo passo -- questa è una pagina aggiuntiva che raccoglie tutte le istruzioni di installazione (e che può tornare utile in alcuni workshop). Se vuoi puoi decidere di installare subito il materiale che trovi in questa pagina. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
 Buona fortuna!
 
