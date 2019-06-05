@@ -58,7 +58,7 @@ def post_list(request):
 
 Ultimul lucru ce lipsește este a transmite `posts` QuerySet context-ului din template. Nu faceți grijă – o să aflăm cum se face acesta în capitolul următor.
 
-Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
+Trebuie să atrageți atenția că creați o *variabilă* pentru QuerySet: `posts`. Acesta va fi denumirea QuerySet-ului. De acum puteți să-l referiți după dunumire.
 
 In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
