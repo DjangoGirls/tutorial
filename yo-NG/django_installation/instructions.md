@@ -62,7 +62,7 @@ A lè ṣẹ̀dá `virtualenv` kan lórí Linux àti OS X nípasẹ̀ lílo `pyt
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> Ní irú ìṣẹ̀lẹ̀ yìí, tẹ̀lé àwọn ìtọ́sọ́nà tó wà lókè kí o sì ṣàgbékalẹ̀ ètò `python3-venv` náà: {% filename %}command-line{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
@@ -89,7 +89,7 @@ A lè ṣẹ̀dá `virtualenv` kan lórí Linux àti OS X nípasẹ̀ lílo `pyt
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> ṣe èyí dípò:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
