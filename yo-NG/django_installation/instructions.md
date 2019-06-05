@@ -165,7 +165,7 @@ Before we do that, we should make sure we have the latest version of `pip`, the 
 
 A requirements file keeps a list of dependencies to be installed using `pip install`:
 
-Kọ́kọ́ ṣẹ̀dá fáìlì `requirements.txt` kan sínú fódà `djangogirls/` náà, pẹ̀lú lílo olóòtú kóòdù tí o ti ṣàgbékalẹ̀ ṣáájú. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+Kọ́kọ́ ṣẹ̀dá fáìlì `requirements.txt` kan sínú fódà `djangogirls/` náà, pẹ̀lú lílo olóòtú kóòdù tí o ti ṣàgbékalẹ̀ ṣáájú. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Àkójọpọ̀ fáìlì rẹ yíò rí báyìí:
 
     djangogirls
     └───requirements.txt
