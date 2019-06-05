@@ -171,7 +171,7 @@ First create a `requirements.txt` file inside of the `djangogirls/` folder, usin
     └───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+Nínú fáìlì `djangogirls/requirements.txt` rẹ, ó yẹ kí o ṣàfikún ọ̀rọ̀ tó tẹ̀le yìí:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
