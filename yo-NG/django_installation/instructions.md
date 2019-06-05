@@ -82,7 +82,7 @@ A lè ṣẹ̀dá `virtualenv` kan lórí Linux àti OS X nípasẹ̀ lílo `pyt
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **ÀKÍYÈSÍ:** Tí o bá rí àṣìṣe kan bíi
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -98,7 +98,7 @@ A lè ṣẹ̀dá `virtualenv` kan lórí Linux àti OS X nípasẹ̀ lílo `pyt
 
 <!--endsec-->
 
-## Working with virtualenv
+## Ìṣiṣẹ́ pẹ̀lú virtualenv
 
 The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
 
