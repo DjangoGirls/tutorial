@@ -89,11 +89,11 @@ E finalmente salviamo le nostre modifiche. vai alla tua console ed esegui questi
 
 Vai su [GitHub.com](https://www.github.com) e crea un nuovo account gratuito. (Se lo hai già fatto nella preparazione al workshop, benissimo!) Assicurati di ricordare la tua password (aggiungila al tuo password manager, se ne usi uno).
 
-Quindi, crea un nuovo repository con il il nome "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Quindi, crea un nuovo repository con il il nome "my-first-blog". Lascia deselezionata la casella di controllo "initialise with a README", lascia vuota l'opzione .gitignore (lo abbiamo già fatto manualmente) e lascia License su None.
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> **Nota** Il nome `my-first-blog` è importante -- potresti sceglierne un altro, ma il nome verrà ripetuto un sacco di volte nelle istruzioni qui sotto, e dovresti sostituirlo ogni volta. It's probably easier to stick with the name `my-first-blog`.
 
 On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
