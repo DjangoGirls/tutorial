@@ -271,7 +271,7 @@ Go ahead and create a list:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Sì, questa lista è vuota. Abbastanza inutile, vero? Creiamo una lista di numeri della lotteria. Non vogliamo ripetere la sequenza ogni volta, quindi metteremo anche la lista in una variabile:
 
 {% filename %}command-line{% endfilename %}
 
