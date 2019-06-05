@@ -37,7 +37,7 @@ Láti ṣẹ̀dá `virtualenv` tuntun kan, o nílò láti ṣí command prompt n
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+Níbi tí `myvenv` jẹ́ orúkọ `virtualenv` rẹ. O lè lo èyíkéyìí orúkọ mìíràn, ṣùgbọ́n dúró lórí lílo lẹ́tà kékeré láìsí àwọn àlàfo, àmì ohùn tàbí àkànṣe ẹyọ ọ̀rọ̀. Ó tún jẹ́ èrò tó dára kan láti mú kí orúkọ náà kéré – ìwọ yíò ma tọ́ka rẹ̀ lọ́pọ̀ ìgbà!
 
 <!--endsec-->
 
@@ -51,7 +51,7 @@ A lè ṣẹ̀dá `virtualenv` kan lórí Linux àti OS X nípasẹ̀ lílo `pyt
     $ python3 -m venv myvenv
     
 
-`myvenv` ni orúkọ `virtualenv` rẹ. O lè lo èyíkéyìí orúkọ mìíràn, ṣùgbọ́n dúró lórí lílo lẹ́tà kékeré láìsí àwọn àlàfo. It is also a good idea to keep the name short as you'll be referencing it a lot!
+`myvenv` ni orúkọ `virtualenv` rẹ. O lè lo èyíkéyìí orúkọ mìíràn, ṣùgbọ́n dúró lórí lílo lẹ́tà kékeré láìsí àwọn àlàfo. Ó tún jẹ́ èrò tó dára kan láti mú kí orúkọ náà kéré nítorí pé ìwọ yíò ma tọ́ka rẹ̀ lọ́pọ̀ ìgbà!
 
 > **ÀKÍYÈSÍ:** Lórí àwọn ẹyà Debian/Ubuntu kan, o lè rí àṣìṣe tó tẹ̀lé yìí:
 > 
