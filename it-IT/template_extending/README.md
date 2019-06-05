@@ -144,4 +144,4 @@ Un'ultima cosa. Dobbiamo collegare questi due template. È questo che vuol dire 
 
 Ecco fatto! Salva il file e controlla se il tuo sito web funziona ancora correttamente. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Se ottieni l'errore `TemplateDoesNotExist`, significa che non c'è nessun file `blog/base.html` e `runserver` è in esecuzione nella console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
