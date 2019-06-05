@@ -2,11 +2,11 @@
 
 > Pentru cititorii de acasă: acest capitol este acoperit în video [Cum funcționează Internetul](https://www.youtube.com/watch?v=oM9yAA09wdc).
 > 
-> This chapter is inspired by the talk "How the Internet works" by Jessica McKellar (http://web.mit.edu/jesstess/www/).
+> Acest capitol este inspirat de o discuție "Cum funcționează Internetul" de Jessica McKellar (http://web.mit.edu/jesstess/www/).
 
-We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
+Suntem siguri că utilizați Internetul în fiecare zi. Dar știți ce anume se întâmplă când voi întroduceți o adresă, de exemplu, https://djangogirls.org, în browser și apăsați pe `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Just like your movies, music, or pictures. Totuși, paginile web au ceva special: conțin un cod numit HTML.
+Primul lucru pe care trebuie să înțelegeți este că un website constă din fișiere păstrate pe discul hard. Precum sunt filme, musica sau fotografiile voastre. Totuși, paginile web au ceva special: conțin un cod numit HTML.
 
 If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
