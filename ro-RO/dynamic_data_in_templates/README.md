@@ -60,7 +60,7 @@ Ultimul lucru ce lipsește este a transmite `posts` QuerySet context-ului din te
 
 Trebuie să atrageți atenția că creați o *variabilă* pentru QuerySet: `posts`. Acesta va fi denumirea QuerySet-ului. De acum puteți să-l referiți după dunumire.
 
-În funcția `render` avem un parametru `request` (tot ce primim de la utilizatorul din Internet) și al doilea parametru cu denumirea template-ului (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+În funcția `render` avem un parametru `request` (tot ce primim de la utilizatorul din Internet) și al doilea parametru cu denumirea template-ului (`'blog/post_list.html'`). În ultimul parametru, `{}`, putem adăuga niște variabile care vor fi utilizate în template. Trebuie să le denumim (o să utilizăm `'posts'` până când). :) Trebuie să aibă următoare structură: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
 So finally our `blog/views.py` file should look like this:
 
