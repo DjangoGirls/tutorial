@@ -93,7 +93,7 @@ Quindi, crea un nuovo repository con il il nome "my-first-blog". Lascia deselezi
 
 ![](images/new_github_repo.png)
 
-> **Nota** Il nome `my-first-blog` è importante -- potresti sceglierne un altro, ma il nome verrà ripetuto un sacco di volte nelle istruzioni qui sotto, e dovresti sostituirlo ogni volta. It's probably easier to stick with the name `my-first-blog`.
+> **Nota** Il nome `my-first-blog` è importante -- potresti sceglierne un altro, ma il nome verrà ripetuto un sacco di volte nelle istruzioni qui sotto, e dovresti sostituirlo ogni volta. Probabilmente è più facile mantenere il nome `my-first-blog`.
 
 On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
@@ -101,7 +101,7 @@ On the next screen, you'll be shown your repo's clone URL, which you will use in
 
 Now we need to hook up the Git repository on your computer to the one up on GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Digita quanto segue sulla tua console (sostituisci `<your-github-username>` con il nome utente che hai inserito quando hai creato l'account GitHub, ma senza le parentesi angolari -- l'URL dovrebbe coincidere con L'URL clone che hai appena visto):
 
 {% filename %}command-line{% endfilename %}
 
@@ -169,7 +169,7 @@ Guardando l'esecuzione, potrai vedere cosa sta facendo:
 
 Su PythonAnywhere tutti questi passaggi sono automatizzati, ma sono gli stessi passaggi che dovresti effettuare con qualsiasi altro server provider.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+La cosa principale da notare ora è che il tuo database su PythonAnywhere è completamente separato dal database sul tuo computer, e quindi può avere post e account di amministrazione differenti. Di conseguenza, come abbiamo fatto sul computer, dobbiamo inizializzare l'account di amministrazione con `createsuperuser`. PythonAnywhere ha attivato automaticamente il tuo virtualenv, quindi ora devi solo eseguire il codice seguente:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
