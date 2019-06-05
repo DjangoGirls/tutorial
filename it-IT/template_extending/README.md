@@ -84,7 +84,7 @@ Poi nel `base.html`, rimpiazza tutto il tuo `<body>` (tutto quello che si trova 
 {% endblock %}
 ```
 
-Perchè? Hai appena creato un blocco! Hai appena usato un template tag `{% block %}` per creare un area che che avrà dell'HTML all'interno. That HTML will come from another template that extends this template (`base.html`). Ti mostreremo come farlo tra un attimo.
+Perchè? Hai appena creato un blocco! Hai appena usato un template tag `{% block %}` per creare un area che che avrà dell'HTML all'interno. Questo codice HTML verrà da altri template che estenderanno questo (`base.html`). Ti mostreremo come farlo tra un attimo.
 
 Ora salva `base.html` e apri di nuovo il tuo `blog/templates/blog/post_list.html` nell'editor di codice. {% raw %}Rimuovi tutto quello che c'è prima di `{% for post in posts %}` e dopo `{% endfor %}`. Quando hai finito, il file apparirà così:{% endraw %}
 
@@ -144,4 +144,4 @@ Un'ultima cosa. Dobbiamo collegare questi due template. È questo che vuol dire 
 
 Ecco fatto! Salva il file e controlla se il tuo sito web funziona ancora correttamente. :)
 
-> Se ottieni l'errore `TemplateDoesNotExist`, significa che non c'è nessun file `blog/base.html` e `runserver` è in esecuzione nella console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> Se ottieni l'errore `TemplateDoesNotExist`, significa che non c'è nessun file `blog/base.html` e `runserver` è in esecuzione nella console. Prova ad arrestarlo (premendo Ctrl+C, i tasti Control e C insieme) e riavvialo utilizzando il comando `python manage.py runserver`.
