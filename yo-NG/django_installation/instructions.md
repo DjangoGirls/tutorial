@@ -105,7 +105,7 @@ The command above will create a directory called `myvenv` (or whatever name you 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Bẹ̀rẹ̀ àyíká àìrí rẹ nípasẹ̀ ṣíṣe:
 
 {% filename %}command-line{% endfilename %}
 
@@ -126,14 +126,14 @@ Start your virtual environment by running:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+Bẹ̀rẹ̀ àyíká àìrí rẹ nípasẹ̀ ṣíṣe:
 
 {% filename %}command-line{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+Rántí láti rọ́pò `myvenv` pẹ̀lú orúkọ `virtualenv` rẹ tó o yàn!
 
 > **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
 > 
