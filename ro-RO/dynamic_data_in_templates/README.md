@@ -32,7 +32,7 @@ Dar ce urmează? Pentru a obține posturile de blog din modelul `Post` noi avem 
 
 ## QuerySet
 
-Trebuie să știți cum QuerySets lucrează. Am vorbit despre ei în [capitolul Django ORM (QuerySets)](../django_orm/README.md).
+Trebuie să știți cum QuerySets lucrează. Acest subiect s-a discutat în [capitolul Django ORM (QuerySets)](../django_orm/README.md).
 
 Acum dorim să obținem posturile de blog sortate după `published_date`, corect? Deja am făcut acesta în capitolul QuerySets!
 
@@ -60,7 +60,7 @@ Ultimul lucru ce lipsește este a transmite `posts` QuerySet context-ului din te
 
 Trebuie să atrageți atenția că creați o *variabilă* pentru QuerySet: `posts`. Acesta va fi denumirea QuerySet-ului. De acum puteți să-l referiți după dunumire.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+În funcția `render` avem un parametru `request` (tot ce primim de la utilizatorul din Internet) și al doilea parametru cu denumirea template-ului (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
 So finally our `blog/views.py` file should look like this:
 
