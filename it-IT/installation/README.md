@@ -45,7 +45,7 @@ Many of the steps below reference the "console", "terminal", "command window", o
 
 # Creare un account GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Vai su [GitHub.com](https://www.github.com) e crea un nuovo account gratuito. Assicurati di ricordare la tua password (aggiungila al tuo password manager, se ne usi uno).
 
 # Creare un account PythonAnywhere
 
@@ -55,13 +55,13 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [Come funziona Internet](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [Introduzione alla riga di comando](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [Introduzione a Python](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [Che cos'è Django?](../django/README.md)
 
 # Divertiti al workshop!
 
