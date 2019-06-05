@@ -53,7 +53,7 @@ A lè ṣẹ̀dá `virtualenv` kan lórí Linux àti OS X nípasẹ̀ lílo `pyt
 
 `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **ÀKÍYÈSÍ:** Lórí àwọn ẹyà Debian/Ubuntu kan, o lè rí àṣìṣe tó tẹ̀lé yìí:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
