@@ -100,7 +100,7 @@ A lè ṣẹ̀dá `virtualenv` kan lórí Linux àti OS X nípasẹ̀ lílo `pyt
 
 ## Ìṣiṣẹ́ pẹ̀lú virtualenv
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+Àṣẹ tó wà lókè náà yíò ṣẹ̀dá àkójọpọ̀ fáìlì kan tí a n pè ní `myvenv` (tàbí orúkọ yòówù tí o yàn) tí yíò kó àyíká àìrí wa sínú (ní pàtàkì àpapọ̀ àkójọpọ̀ fáìlì àti àwọn fáìlì kan).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
@@ -112,7 +112,7 @@ Bẹ̀rẹ̀ àyíká àìrí rẹ nípasẹ̀ ṣíṣe:
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **ÀKÍYÈSÍ:** lórí Windows 10, o lè rí àṣìṣe kan nínú Windows PowerShell náà tó sọ pé `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
