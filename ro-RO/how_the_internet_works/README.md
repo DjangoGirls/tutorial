@@ -38,10 +38,10 @@ Da, e atât de simplu. Trimiți mesaje și aștepți răspunsuri. Desigur, în l
 
 În loc de adrese cu numele străzii, oraș, cod și numele țării, folosim adrese IP. Computerul tău cere de la DNS (Domain Name System) să traducă djangogirls.org într-o adresă IP. Seamănă puțin cu vechile cărți de telefoane în care ați putut să căutați numele persoanei pe care ați dorit s-o contactați și îi găsiți numărul de telefon și adresa.
 
-When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. De asemeni, folosești un limbaj pe care destinatarul îl înțelege, nu? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
+Când trimiteți o scrisoare, trebuie să aibă anumite elemente ca să fie expediată corect: adresă, timbru etc. De asemeni, folosești un limbaj pe care destinatarul îl înțelege, nu? Aceeași aplică și pentru *pachete de date* pe care transmiteți ca să vedeți pe website. Este utilizat protocolul numit HTTP (Hypertext Transfer Protocol).
 
-So, basically, when you have a website, you need to have a *server* (machine) where it lives. When the *server* receives an incoming *request* (in a letter), it sends back your website (in another letter).
+Deci, practic, atunci când aveți un site, trebuie să aveți un *server* (calculator) unde să-l țineți. Când *server* primește o cerere *request* (în scriisoare), el transmite înapoi website-ul (în altă scriisoare).
 
-Since this is a Django tutorial, you might ask what Django does. Când trimiți un răspuns, nu vrei întotdeauna să trimiți același lucru tuturor. E mult mai bine dacă scrisorile tale sunt personalizate special pentru persoana care tocmai ți-a scris, nu? Django te ajută să creezi aceste scrisori personalizate și interesante. :)
+Pentru că acesta e un tutorial Django, poate vă întrebați ce face Django. Când trimiți un răspuns, nu vrei întotdeauna să trimiți același lucru tuturor. E mult mai bine dacă scrisorile tale sunt personalizate special pentru persoana care tocmai ți-a scris, nu? Django te ajută să creezi aceste scrisori personalizate și interesante. :)
 
-Enough talk – time to create!
+Gata cu vorba, e timpul să creăm!
