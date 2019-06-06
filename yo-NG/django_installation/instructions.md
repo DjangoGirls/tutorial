@@ -161,7 +161,7 @@ Ní báyìí tí o ti bẹ̀rẹ̀ `virtualenv` rẹ, o lè ṣàgbékalẹ̀ Dj
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### Ṣíṣe àgbékalẹ̀ àwọn ètò pẹ̀lú àwọn ohun tí a béèrè fún (requirements)
 
 A requirements file keeps a list of dependencies to be installed using `pip install`:
 
