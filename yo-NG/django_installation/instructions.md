@@ -154,7 +154,7 @@ OK, we have all important dependencies in place. We can finally install Django!
 
 Ní báyìí tí o ti bẹ̀rẹ̀ `virtualenv` rẹ, o lè ṣàgbékalẹ̀ Django.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+Ṣáájú kí a tó ṣe ìyẹn, ó yẹ kí a ri dájú pé a ní ẹyà `pip` tó jáde gbẹ̀yìn náà, ètò tí a n lò láti ṣàgbékalẹ̀ Django:
 
 {% filename %}command-line{% endfilename %}
 
