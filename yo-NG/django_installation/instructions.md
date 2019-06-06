@@ -163,7 +163,7 @@ Ní báyìí tí o ti bẹ̀rẹ̀ `virtualenv` rẹ, o lè ṣàgbékalẹ̀ Dj
 
 ### Ṣíṣe àgbékalẹ̀ àwọn ètò pẹ̀lú àwọn ohun tí a béèrè fún (requirements)
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+Fáìlì àwọn ohun tí a béèrè fún (requirements) kan máa ṣàkọsílẹ̀ àwọn ohun tí a nílò láti ṣàgbékalẹ̀ pẹ̀lú lílo `pip install`:
 
 Kọ́kọ́ ṣẹ̀dá fáìlì `requirements.txt` kan sínú fódà `djangogirls/` náà, pẹ̀lú lílo olóòtú kóòdù tí o ti ṣàgbékalẹ̀ ṣáájú. O lè ṣe èyí nípasẹ̀ ṣíṣí fáìlì tuntun kan nínú olóòtú kóòdù náà àti títọ́jú rẹ gẹ́gẹ́ bí `requirements.txt` sínú fódà `djangogirls/` náà. Àkójọpọ̀ fáìlì rẹ yíò rí báyìí:
 
