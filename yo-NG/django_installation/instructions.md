@@ -148,7 +148,7 @@ You will know that you have `virtualenv` started when you see that the prompt in
 
 When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
 
-OK, we have all important dependencies in place. We can finally install Django!
+Ó dáa, a ti ní gbogbo ohun pàtàkì tí a nílò. A lè wá ṣàgbékalẹ̀ Django!
 
 ## Ṣíṣe àgbékalẹ̀ Django
 
