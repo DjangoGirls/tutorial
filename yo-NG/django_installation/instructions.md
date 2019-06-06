@@ -192,7 +192,7 @@ Ní báyìí, ṣe `pip install -r requirements.txt` láti ṣàgbékalẹ̀ Dja
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Ṣẹ̀dá virtualenv tuntun kan sínú àkójọpọ̀ fáìlì tuntun náà, lẹ́yìn náà yọ ti tẹ́lẹ̀ kúrò kí o sì gbìyànjú àṣẹ tó wà lókè náà lẹ́ẹ̀kan si. (Gbígbé àkójọpọ̀ fáìlì virtualenv náà kò ní ṣiṣẹ́ nítorí pé virtualenv má n lo àwọn atọ́nà pípé.)
 
 <!--endsec-->
 
