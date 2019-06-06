@@ -112,7 +112,7 @@ Bẹ̀rẹ̀ àyíká àìrí rẹ nípasẹ̀ ṣíṣe:
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **ÀKÍYÈSÍ:** lórí Windows 10, o lè rí àṣìṣe kan nínú Windows PowerShell náà tó sọ pé `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **ÀKÍYÈSÍ:** lórí Windows 10, o lè rí àṣìṣe kan nínú Windows PowerShell náà tó sọ pé `execution of scripts is disabled on this system`. Ní irú ìṣẹ̀lẹ̀ yìí, ṣí Windows PowerShell mìíràn pẹ̀lú àṣàyàn "Run as Administrator" (Ṣiṣẹ́ gẹ́gẹ́ bí Alákòóso) náà. Lẹ́yìn náà gbìyànjú títẹ àṣẹ tó tẹ̀le yìí ṣáájú kí o tó bẹ̀rẹ̀ àyíká àìrí rẹ:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
