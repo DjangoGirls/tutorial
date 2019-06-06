@@ -67,7 +67,7 @@ A lè ṣẹ̀dá `virtualenv` kan lórí Linux àti OS X nípasẹ̀ lílo `pyt
 >     $ sudo apt install python3-venv
 >     
 > 
-> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> **ÀKÍYÈSÍ:** Lórí àwọn ẹyà Debian/Ubuntu kan, bíbẹ̀rẹ̀ àyíká àìrí náà báyìí yíò fúnni ní àṣìṣe tó tẹ̀lé yìí:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
