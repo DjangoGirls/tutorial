@@ -6,7 +6,7 @@
 
 Ṣáájú kí a tó ṣàgbékalẹ̀ Django, a ó mú ọ ṣàgbékalẹ̀ irinṣẹ́ kan tó wúlò púpọ̀ láti ṣe ìrànlọ́wọ́ mímú kí àyíká kóòdù kíkọ rẹ wà létòlétò lórí kọ̀mpútà rẹ. Ó ṣeéṣe láti fo ìgbésẹ̀ yìí, ṣùgbọ́n òhun ló dáa jù. Bíbẹ̀rẹ̀ pẹ̀lú àgbékalẹ̀-ètò tó dára jù lọ yíò gbà ọ́ sílẹ̀ lọ́wọ́ ọ̀pọ̀lọpọ̀ wàhálà lọ́jọ́ iwájú!
 
-Nítorí náà, jẹ́ ká ṣẹ̀dá **àyíká àìrí** kan (tí a tún pè ní *virtualenv* kan). Virtualenv yíò ṣe ìpínyà àgbékalẹ̀-ètò Python/Django rẹ lọ́tọ̀ọ̀tọ̀ lórí ìpìlẹ̀ iṣẹ́ kọ̀ọ̀kan. This means that any changes you make to one website won't affect any others you're also developing. Ó dáa, àbí bẹ́ẹ̀ kọ?
+Nítorí náà, jẹ́ ká ṣẹ̀dá **àyíká àìrí** kan (tí a tún pè ní *virtualenv* kan). Virtualenv yíò ṣe ìpínyà àgbékalẹ̀-ètò Python/Django rẹ lọ́tọ̀ọ̀tọ̀ lórí ìpìlẹ̀ iṣẹ́ kọ̀ọ̀kan. Èyí túmọ̀ sí pé èyíkéyìí ìyípadà tí o bá ṣe sí ààyè ayélujára kan kò ní nípa lórí àwọn mìíràn tí o bá tún n gbé jáde. Ó dáa, àbí bẹ́ẹ̀ kọ?
 
 Gbogbo ohun tí o nílò láti ṣe ni láti wá àkójọpọ̀ fáìlì kan tí o ti fẹ́ ṣẹ̀dá `virtualenv` náà; àkójọpọ̀ fáìlì ìpìlẹ̀ rẹ, fún àpẹẹrẹ. Lórí Windows, ó lè rí bíi `C:\Users\Name` (níbi tí `Name` jẹ́ orúkọ ìwọlé rẹ).
 
