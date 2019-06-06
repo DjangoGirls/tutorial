@@ -150,9 +150,9 @@ When working within a virtual environment, `python` will automatically refer to 
 
 OK, we have all important dependencies in place. We can finally install Django!
 
-## Installing Django
+## Ṣíṣe àgbékalẹ̀ Django
 
-Now that you have your `virtualenv` started, you can install Django.
+Ní báyìí tí o ti bẹ̀rẹ̀ `virtualenv` rẹ, o lè ṣàgbékalẹ̀ Django.
 
 Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
 
