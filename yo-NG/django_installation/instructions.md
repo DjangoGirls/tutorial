@@ -192,7 +192,7 @@ Ní báyìí, ṣe `pip install -r requirements.txt` láti ṣàgbékalẹ̀ Dja
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Ṣẹ̀dá virtualenv tuntun kan sínú àkójọpọ̀ fáìlì tuntun náà, lẹ́yìn náà yọ ti tẹ́lẹ̀ kúrò kí o sì gbìyànjú àṣẹ tó wà lókè náà lẹ́ẹ̀kan si. (Gbígbé àkójọpọ̀ fáìlì virtualenv náà kò ní ṣiṣẹ́ nítorí pé virtualenv má n lo àwọn atọ́nà pípé.)
+> Tí o bá rí àṣìṣe kan nígbà tí o n pe pip lórí ètò Windows, jọ̀wọ́ ṣàyẹ̀wò bóyá orúkọ atọ́nà iṣẹ́ rẹ ní àwọn àlàfo, àmì ohùn tàbí àkànṣe ẹyọ ọ̀rọ̀ (fún àpẹẹrẹ, `C:\Users\User Name\djangogirls`). Tó bá ní, jọ̀wọ́ ṣàgbéyẹ̀wò lílo ibòmíràn láìsí àwọn àlàfo, àmì ohùn tàbí àkànṣe ẹyọ ọ̀rọ̀ (àbá: `C:\djangogirls`). Ṣẹ̀dá virtualenv tuntun kan sínú àkójọpọ̀ fáìlì tuntun náà, lẹ́yìn náà yọ ti tẹ́lẹ̀ kúrò kí o sì gbìyànjú àṣẹ tó wà lókè náà lẹ́ẹ̀kan si. (Gbígbé àkójọpọ̀ fáìlì virtualenv náà kò ní ṣiṣẹ́ nítorí pé virtualenv má n lo àwọn atọ́nà pípé.)
 
 <!--endsec-->
 
