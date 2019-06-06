@@ -144,9 +144,9 @@ Rántí láti rọ́pò `myvenv` pẹ̀lú orúkọ `virtualenv` rẹ tó o yàn
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+Ìwọ yíò mọ̀ pé o ti bẹ̀rẹ̀ `virtualenv` nígbà tí o bá rí `(myvenv)` níwájú prompt náà nínú console rẹ.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+Nígbà tí o bá n ṣiṣẹ́ nínú àyíká àìrí kan, `python` fúnra rẹ̀ yíò tọ́ka sí ẹyà tó yẹ, nítorí náà o lè lo `python` dípò `python3`.
 
 Ó dáa, a ti ní gbogbo ohun pàtàkì tí a nílò. A lè wá ṣàgbékalẹ̀ Django!
 
