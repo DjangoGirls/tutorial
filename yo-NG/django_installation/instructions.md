@@ -135,7 +135,7 @@ Bẹ̀rẹ̀ àyíká àìrí rẹ nípasẹ̀ ṣíṣe:
 
 Rántí láti rọ́pò `myvenv` pẹ̀lú orúkọ `virtualenv` rẹ tó o yàn!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **ÀKÍYÈSÍ:** nígbà míì `source` lè má wà lárọ̀ọ́wọ́tó. Ní irú àwọn ìṣẹ̀lẹ̀ yẹn, gbìyànjú ṣíṣe èyí dípò:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
