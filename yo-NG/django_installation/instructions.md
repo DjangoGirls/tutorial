@@ -199,7 +199,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Ìlà ìpàṣẹ rẹ lè dúró gbọn-in lẹ́yìn ìgbà tí o gbìyànjú láti ṣàgbékalẹ̀ Django. Tí èyí bá ṣẹlẹ̀, dípò àṣẹ tó wà lókè náà, lo:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
