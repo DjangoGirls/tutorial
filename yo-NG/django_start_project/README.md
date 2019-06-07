@@ -107,9 +107,9 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Àkíyèsí**: Tí o bá n lo Chromebook kan, ṣàfikún ìlà yìí nísàlẹ̀ fáìlì settings.py rẹ: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Tún ṣàfikún `.amazonaws.com` sí `ALLOWED_HOSTS` náà tí o bá n lo cloud9
 
 ## Set up a database
 
