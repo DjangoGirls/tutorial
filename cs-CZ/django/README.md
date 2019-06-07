@@ -12,7 +12,7 @@ Frameworks exist to save you from having to reinvent the wheel and to help allev
 
 To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
 
-Představ si poštovní schránku (port), která na zvoleném portu sleduje příchozí zprávy (požadavky). Podobně se chová webový server. The web server reads the letter and then sends a response with a webpage. Ale když chceš něco poslat, musíš mít nějaký obsah. A Django je něco, co ti pomůže vytvořit tento obsah.
+Představ si poštovní schránku (port). Ta sleduje příchozí zprávy (požadavky). Podobně se chová webový server. The web server reads the letter and then sends a response with a webpage. Ale když chceš něco poslat, musíš mít nějaký obsah. A Django je něco, co ti pomůže vytvořit tento obsah.
 
 ## Co se stane, když někdo požaduje webové stránky ze serveru?
 
