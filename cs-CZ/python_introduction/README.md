@@ -598,7 +598,7 @@ So far we've been writing all our python code in the interpreter, which limits u
 - Ulož nějaký kód do nového pythnovského souboru
 - Spusť ho!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+Chceš-li opustit interaktivní režim Pythonu, který jsme dosud používali jednoduše zadej funkci `exit()`
 
 {% filename %}command-line{% endfilename %}
 
