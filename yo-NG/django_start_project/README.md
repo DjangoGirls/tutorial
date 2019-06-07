@@ -200,6 +200,6 @@ Note that a command window can only run one thing at a time, and the command win
 
 > A ti ṣàgbéyẹ̀wò bí àwọn server ayélujára ṣé n ṣiṣẹ́ nínú àkòrí **Bí Íńtánẹ́ẹ̀tì ṣé n ṣiṣẹ́** náà.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Láti tẹ àwọn àṣẹ mìíràn nígbà tí server ayélujára náà bá n ṣiṣẹ́, ṣí fèrèsé èbúté tuntun kan kí o sì mú virtualenv rẹ ṣiṣẹ́ -- láti ṣàgbéyẹ̀wò àwọn ìtọ́sọ́nà lórí bí o ṣe lè ṣí fèrèsé èbúté kejì kan, wo [Ìfihàn sí ìlà ìpàṣẹ náà](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
 Ready for the next step? It's time to create some content!
