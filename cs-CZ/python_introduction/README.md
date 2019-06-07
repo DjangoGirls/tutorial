@@ -999,7 +999,7 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+Příkaz `for` se chová podobně jako příkaz `if ` v následujícím kódu musíme oba řádky odsadit o čtyři mezery.
 
 Here is the full code that will be in the file:
 
