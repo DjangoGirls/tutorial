@@ -164,21 +164,21 @@ You need to be in the directory that contains the `manage.py` file (the `djangog
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+Tí o bá wà lórí Chromebook kan, lo àṣẹ yìí dípò:
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+Tí o bá wà lórí Windows tí èyí sì kùnà pẹ̀lú àṣìṣe `UnicodeDecodeError`, lo àṣẹ yìí dípò:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Ní báyìí, o nílò láti ṣàyẹ̀wò tí ààyè ayélujára rẹ bá n ṣiṣẹ́. Ṣí aṣàwákiri rẹ (Firefox, Chrome, Safari, Internet Explorer tàbí èyíkéyìí tó bá n lò) kí o sì tẹ àdírẹ́ẹ̀sì yìí:
 
 {% filename %}browser{% endfilename %}
 
