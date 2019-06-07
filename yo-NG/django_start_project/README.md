@@ -155,9 +155,9 @@ To create a database for our blog, let's run the following in the console: `pyth
 
 And we're done! Time to start the web server and see if our website is working!
 
-## Starting the web server
+## Bíbẹ̀rẹ̀ server ayélujára náà
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+O nílò láti wà nínú àkójọpọ̀ fáìlì tó kó fáìlì `manage.py` náà sínú (àkójọpọ̀ fáìlì `djangogirls` náà). Nínú console náà, a lè bẹ̀rẹ̀ server ayélujára náà nípasẹ̀ ṣíṣe `python manage.py runserver`:
 
 {% filename %}command-line{% endfilename %}
 
