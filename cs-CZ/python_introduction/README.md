@@ -238,7 +238,7 @@ NameError: name 'ctiy' is not defined
 
 An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
-Play with this for a while and see what you can do!
+Hraj si s tím chvilku, ať vidíš co se s tím dá dělat!
 
 ## Funkce print
 
@@ -752,7 +752,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+Pokud je výraz pravdivý po spuštění se vytiskne:
 
 {% filename %}command-line{% endfilename %}
 
