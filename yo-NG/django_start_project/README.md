@@ -56,7 +56,7 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 > **Àkíyèsí**: nínú ìgbékalẹ̀ àkójọpọ̀ fáìlì rẹ, ìwọ yíò tún rí àkójọpọ̀ fáìlì `venv` rẹ tí a ti ṣẹ̀dá ṣáájú.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` jẹ́ ìlànà ìṣe (script) kan tí yíò ṣe ìrànlọ́wọ́ pẹ̀lú ìṣàkóso ààyè náà. Pẹ̀lú rẹ̀, a ó lè (láàrín àwọn nnkan mìíràn) bẹ̀rẹ̀ server ayélujára kan lórí kọ̀mpútà wa láìsí ṣíṣe àgbékalẹ̀ ohunkóhun mìíràn.
 
 Fáìlì `settings.py` náà yíò ní ìṣètò ààyè ayélujára rẹ.
 
