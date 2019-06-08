@@ -128,7 +128,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). Tí ìyẹn bá ń lọ bí ó ti yẹ, ó yẹ kí o rí nnkan kan báyìí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+Àti pé a ti parí! Àkókò láti bẹ̀rẹ̀ server ayélujára náà àti ṣàyẹ̀wò tí ààyè ayélujára wa bá n ṣiṣẹ́!
 
 ## Bíbẹ̀rẹ̀ server ayélujára náà
 
