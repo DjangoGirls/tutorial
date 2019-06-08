@@ -10,7 +10,7 @@ A óò ṣẹ̀dá blog kékeré kan!
 
 Orúkọ àwọn fáìlì àti àkójọpọ̀ fáìlì kan ṣe pàtàkì gan-an fún Django. Ìwọ kò gbọ́dọ̀ ṣàtúnṣe orúkọ àwọn fáìlì tí a fẹ́ ṣẹ̀dá náà. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
-> Rántí láti ṣe gbogbo nnkan nínú virtualenv náà. Tí ìwọ kò bá rí `(myvenv)` níbẹ̀rẹ̀ nínú console rẹ, o nílò láti mú virtualenv rẹ ṣiṣẹ́. A ti ṣàlàyé bí o ṣe lè ṣe ìyẹn nínú àkòrí **Ìṣàgbékalẹ̀ Django** ní apá **Ìṣiṣẹ́ pẹ̀lú virtualenv** náà. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Rántí láti ṣe gbogbo nnkan nínú virtualenv náà. Tí ìwọ kò bá rí `(myvenv)` níbẹ̀rẹ̀ nínú console rẹ, o nílò láti mú virtualenv rẹ ṣiṣẹ́. A ti ṣàlàyé bí o ṣe lè ṣe ìyẹn nínú àkòrí **Ìṣàgbékalẹ̀ Django** ní apá **Ìṣiṣẹ́ pẹ̀lú virtualenv** náà. Títẹ `myvenv\Scripts\activate` lórí Windows tàbí `source myvenv/bin/activate` lórí Mac OS X tàbí Linux yíò ṣe èyí fún ọ.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
