@@ -185,7 +185,7 @@ Ní báyìí, o nílò láti ṣàyẹ̀wò tí ààyè ayélujára rẹ bá n �
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Tí o bá n lo Chromebook kan àti Cloud9, dípò, tẹ URL tó wà nínú fèrèsé aṣẹ́yọsókè tó yẹ kó ti farahàn ní igun òkè lápá ọ̀tún ti fèrèsé ìpàṣẹ níbi tí server ayélujára náà tí n ṣiṣẹ́. URL náà yíò rí báyìí:
 
 {% filename %}browser{% endfilename %}
 
