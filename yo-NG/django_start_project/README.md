@@ -58,9 +58,9 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 `manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
 
-The `settings.py` file contains the configuration of your website.
+Fáìlì `settings.py` náà yíò ní ìṣètò ààyè ayélujára rẹ.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+Rántí ìgbà tí a sọ̀rọ̀ nípa òṣìṣẹ́ méèlì kan tó n ṣàyẹ̀wò ibi tí yíò fi lẹ́tà kan jíṣẹ́ sí? Fáìlì `urls.py` yíò ní àkójọ àwọn àpẹẹrẹ kan tó n jẹ́ lílò nípasẹ̀ `urlresolver`.
 
 Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
 
