@@ -72,7 +72,7 @@ Let's make some changes in `mysite/settings.py`. Open the file using the code ed
 
 It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+Nínú `settings.py`, wá ìlà tó ní `TIME_ZONE` kí o ṣàtúnṣe rẹ̀ láti yan agbègbè àkókò tìẹ. Fún àpẹẹrẹ:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -128,7 +128,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). Tí ìyẹn bá ń lọ bí ó ti yẹ, ó yẹ kí o rí nnkan kan báyìí:
+Láti ṣẹ̀dá àkójọpọ̀ dátà kan fún blog wa, jẹ́ ká ṣe èyí nínú console náà: `python manage.py migrate` (a nílò láti wà nínú àkójọpọ̀ fáìlì `djangogirls` tó kó fáìlì `manage.py` náà sínú). Tí ìyẹn bá ń lọ bí ó ti yẹ, ó yẹ kí o rí nnkan kan báyìí:
 
 {% filename %}command-line{% endfilename %}
 
