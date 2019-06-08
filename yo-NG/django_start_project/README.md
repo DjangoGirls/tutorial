@@ -77,7 +77,7 @@ Nínú `settings.py`, wá ìlà tó ní `TIME_ZONE` kí o ṣàtúnṣe rẹ̀ l
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-TIME_ZONE = 'Europe/Berlin'
+TIME_ZONE = 'Africa/Lagos'
 ```
 
 A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
