@@ -192,7 +192,7 @@ If you're using a Chromebook and Cloud9, instead click the URL in the pop-up win
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+Kú oríire! O ṣẹ̀ṣẹ̀ ṣẹ̀dá ààyè ayélujára àkọ́kọ́ rẹ tí o sì mú u ṣiṣẹ́ pẹ̀lú lílo server ayélujára kan! Ṣe ìyẹn kò dára ni?
 
 ![Àgbékalẹ̀ ti ṣiṣẹ́!](images/install_worked.png)
 
