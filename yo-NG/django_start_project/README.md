@@ -111,11 +111,11 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 > 
 > Tún ṣàfikún `.amazonaws.com` sí `ALLOWED_HOSTS` náà tí o bá n lo cloud9
 
-## Set up a database
+## Ṣàgbékalẹ̀ àkójọpọ̀ dátà kan
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+Oríṣiríṣi ètò àkójọpọ̀ dátà ló wà tó lè tọ́jú dátà fún ààyè rẹ. A ó lo ti ìpìlẹ̀ náà, `sqlite3`.
 
-This is already set up in this part of your `mysite/settings.py` file:
+Èyí ti wà ní àgbékalẹ̀ tẹ́lẹ̀ nínú apá yìí ti fáìlì `mysite/settings.py` rẹ:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
