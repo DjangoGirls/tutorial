@@ -38,7 +38,7 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 > The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
 > 
-> **Àkíyèsí** Nígbà tí o bá n tẹ àṣẹ tó wà lókè náà, rántí pé apá tó bẹ̀rẹ̀ pẹ̀lú `django-admin.exe` nìkan ni o ma tẹ. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Àkíyèsí** Nígbà tí o bá n tẹ àṣẹ tó wà lókè náà, rántí pé apá tó bẹ̀rẹ̀ pẹ̀lú `django-admin.exe` nìkan ni o ma tẹ. Apá `(myvenv) C:\Users\Name\djangogirls>` náà tí a ṣàfihàn níbí wulẹ̀ jẹ́ àpẹẹrẹ prompt náà tí yíò ma dúró de ohun tí o fẹ́ tẹ̀ sórí ìlà ìpàṣẹ rẹ.
 
 <!--endsec-->
 
