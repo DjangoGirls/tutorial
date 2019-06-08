@@ -196,7 +196,7 @@ Congratulations! You've just created your first website and run it using a web s
 
 ![Àgbékalẹ̀ ti ṣiṣẹ́!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Ṣàkíyèsí pé fèrèsé ìpàṣẹ kan lè ṣe ohun kan ṣoṣo ní àkókò kan, àti pé fèrèsé ìpàṣẹ tí o ṣí tẹ́lẹ̀ tí n ṣiṣẹ́ pẹ̀lú server ayélujára náà. Níwọ̀n ìgbà tí server ayélujára náà bá n ṣiṣẹ́ tó sì n dúró de àwọn ìbéèrè mìíràn tí ń bọ̀, èbúté náà yíò gba ọ̀rọ̀ tuntun ṣùgbọ́n kò ní ṣiṣẹ́ lórí àwọn àṣẹ tuntun.
 
 > A ti ṣàgbéyẹ̀wò bí àwọn server ayélujára ṣé n ṣiṣẹ́ nínú àkòrí **Bí Íńtánẹ́ẹ̀tì ṣé n ṣiṣẹ́** náà.
 
