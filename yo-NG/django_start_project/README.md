@@ -194,7 +194,7 @@ If you're using a Chromebook and Cloud9, instead click the URL in the pop-up win
 
 Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
 
-![Install worked!](images/install_worked.png)
+![Àgbékalẹ̀ ti ṣiṣẹ́!](images/install_worked.png)
 
 Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
 
