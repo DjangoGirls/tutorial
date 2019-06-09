@@ -14,7 +14,7 @@ Precisamos criar um arquivo com este nome dentro da pasta `blog`.
        └── forms.py
     
 
-Agora vamos abri-lo e digitar o seguinte código:
+Agora vamos abri-lo no editor de código e digitar o seguinte:
 
 {% filename %}blog/forms.py{% endfilename %}
 
