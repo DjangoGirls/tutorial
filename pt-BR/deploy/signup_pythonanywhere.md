@@ -1,12 +1,12 @@
-PythonAnywhere é um serviço para execução de código Python em servidores "na nuvem". Nós vamos usar para hospedar nosso site e deixá-lo online na internet.
+PythonAnywhere é um serviço para execução de código Python em servidores "na nuvem". Nós vamos utilizá-lo para hospedar nosso site e deixá-lo no ar na internet.
 
-Iremos hospedar o blog que estamos construindo em PythonAnywhere. Cadastre-se para uma conta de "Iniciante" no PythonAnywhere (O pacote gratuito está bom, você não ira precisar de um cartão de crédito).
+Vamos hospedar o blog que estamos construindo no PythonAnywhere. Cadastre uma conta de "Iniciante" no PythonAnywhere (o pacote gratuito é suficiente, você não precisa de um cartão de crédito).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
 ![Página do PythonAnywhere mostrando o botão para criar a conta "Beginner" (iniciante)](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> ** Nota ** Quando escolher seu nome de usuário aqui, não esqueça que a URL do blog assumira a forma `seuusuário.pythonanywhere.com `, então ponha o seu apelido ou um nome que descreva o assunto do blog. Além disso, certifique-se de lembrar sua senha (adicioná-lo ao seu gerenciador de senhas, se você tiver um).
+> ** Observação ** Quando escolher seu nome de usuário no PythonAnywhere, lembre que a URL do blog será `seunomedeusuário.pythonanywhere.com `, então use algo como o seu apelido ou um nome que descreva o assunto do blog. Além disso, certifique-se de lembrar sua senha (adicione-a ao seu gerenciador de senhas, se você usar um).
 
 ## Criando um token de API do PythonAnywhere
 
