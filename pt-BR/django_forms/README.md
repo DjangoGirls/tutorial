@@ -85,7 +85,7 @@ Depois de adicionar essa linha, o seu HTML vai ficar assim:
 </html>
 ```
 
-Depois de salvar e recarregar a página *http://127.0.0.1:8000* você verá, obviamente, um erro familiar `NoReverseMatch` certo?
+Depois de salvar e recarregar a página *http://127.0.0.1:8000* você verá um erro familiar `NoReverseMatch` certo? É isso!
 
 ## URL
 
@@ -116,7 +116,7 @@ Após recarregar a página, veremos um `AttributeError` por que não temos a vie
 
 ## View post_new
 
-Hora de abrir o arquivo *blog/views.py* e adicionar as linhas seguintes com o resto das linhas *from*:
+Hora de abrir o arquivo *blog/views.py* e adicionar o seguinte às linhas *from*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -138,7 +138,7 @@ Para criar um novo formulario `Post`, devemos chamar `PostForm()` e passá-lo pa
 
 ## Template
 
-Precisamos criar um arquivo *post_edit.html* na pasta *blog/templates/blog*. Pra fazer o formulário funcionar precisamos de muitas coisas:
+Precisamos criar um arquivo *post_edit.html* na pasta *blog/templates/blog*. Para fazer o formulário funcionar, precisamos de várias coisas:
 
 * Temos que exibir o formulário. Podemos fazer isso com (por exemplo) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * A linha acima precisa estar dentro de uma tag HTML form: `<form method="POST">...</form>`.
