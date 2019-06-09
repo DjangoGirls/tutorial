@@ -1,8 +1,8 @@
 Você pode [pular este capítulo](http://tutorial.djangogirls.org/en/installation/#install-python) se não estiver usando um Chromebook. Caso esteja, sua experiência de instalação será um pouco diferente. Você pode ignorar o restante das instruções de instalação.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### IDE na (PaizaCloud Cloud IDE, AWS Cloud9)
 
-O Cloud IDE é uma ferramenta que fornece um editor de código e acesso a um computador em execução na Internet, onde você pode instalar, gravar e executar o software. Para a duração do tutorial, o IDE na nuvem funcionará como sua * máquina local *. Você ainda estará executando comandos em uma interface de terminal (ou prompt de comando), como seus colegas de classe no OS X, Ubuntu ou Windows, mas seu prompt estará conectado a um computador remoto configurado pelo Cloud 9. Estas são as instruções para Cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). Você pode escolher uma das Cloud IDEs, e seguir as instruções.
+O IDE na nuvem é uma ferramenta que fornece um editor de código e acesso a um computador em execução na Internet, onde você pode instalar, gravar e executar software. Para a duração desse tutorial, o IDE na nuvem funcionará como sua * máquina local *. Você ainda estará executando comandos em uma interface de terminal (ou prompt de comando), como suas colegas de oficina no OS X, Ubuntu ou Windows, mas seu prompt estará conectado a um computador remoto configurado pelo Cloud 9. Estas são as instruções para IDEs na nuvem (PaizaCloud Cloud IDE, AWS Cloud9). Você pode escolher uma das Cloud IDEs, e seguir as instruções.
 
 #### PaizaCloud Cloud IDE
 
