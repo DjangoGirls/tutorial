@@ -33,11 +33,11 @@ Agora, a sua tela deve exibir uma interface com uma barra lateral, uma grande ja
     seunomedeusuário:~/workspace $
     
 
-Essa área inferior é o seu terminal. Você pode usá-la para enviar instruções para o computador remoto Cloud 9. Você pode redimensionar a janela para fazê-la ficar um pouco maior.
+Essa janela na parte inferior é o seu terminal. Você pode usá-la para enviar instruções para o computador remoto Cloud 9. Se preferir, você pode redimensioná-la para que fique um pouco maior.
 
 ### Ambiente Virtual
 
-Um ambiente virtual (também chamado de virtualenv) é como uma caixa privada em que podemos colocar código de computador compatível para um projeto em que estejamos trabalhando. Nós os utilizamos para manter separados uns dos outros os vários pedaços de código que queremos para nossos diferentes projetos, para que as coisas não se misturem entre eles.
+Um ambiente virtual (também chamado de virtualenv) é como uma caixa privada em que podemos colocar código de computador útil para um projeto em que estejamos trabalhando. Nós os utilizamos para manter separados uns dos outros os vários pedaços de código que queremos utilizar em nossos diferentes projetos para que eles não se misturem.
 
 No seu terminal, na parte de baixo da interface do Cloud 9, execute o seguinte:
 
@@ -47,7 +47,7 @@ No seu terminal, na parte de baixo da interface do Cloud 9, execute o seguinte:
     sudo apt install python3.6-venv
     
 
-Se não funcionar, peça ajuda ao seu treinador.
+Se não funcionar, peça ajuda à sua monitora.
 
 Em seguida, execute:
 
@@ -60,7 +60,7 @@ Em seguida, execute:
     pip install django~={{ book.django_version }}
     
 
-(observe que, na última linha, utilizamos um til seguido de um sinal de igual: ~=).
+(note que na última linha, utilizamos um til seguido de um sinal de igual: `~=`).
 
 ### GitHub
 
@@ -68,8 +68,8 @@ Crie uma conta no [GitHub](https://github.com).
 
 ### PythonAnywhere
 
-O tutorial do Django Girls inclui uma seção que chamamos de implantação, que é o processo de mover o código que da sua nova aplicação web para um computador de acesso público (chamado de servidor) para que outras pessoas possam ver o seu trabalho.
+O tutorial do Django Girls inclui uma seção que chamamos de Deploy (ou "implantação", em Português), que é o processo de mover o código que alimenta a sua nova aplicação web para um computador de acesso público (chamado de servidor) para que outras pessoas possam ver o seu trabalho.
 
-Esta parte é um pouco estranha quando o tutorial é feito num Chromebook por que já estamos usando um computador que está na Internet (ao contrário de, digamos, um laptop). No entanto, ainda é útil, já que podemos pensar no ambiente do Cloud 9 como um lugar pra nosso trabalho em andamento e no Python Anywhere como um lugar para mostrar nosso trabalho conforme ele vai ficando mais completo.
+Esta parte é um pouco estranha quando o tutorial é feito num Chromebook por que já estamos usando um computador que está na Internet (ao contrário de, digamos, um laptop). No entanto, ainda é útil, já que podemos pensar no ambiente do Cloud 9 como um lugar pra nosso trabalho em andamento e no Python Anywhere, como um lugar para mostrar nosso trabalho conforme ele vai ficando mais completo.
 
 Assim, crie uma nova conta Python Anywhere em *www.pythonanywhere.com*.
