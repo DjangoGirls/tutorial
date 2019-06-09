@@ -1,6 +1,6 @@
 PythonAnywhere é um serviço para execução de código Python em servidores "na nuvem". Nós vamos utilizá-lo para hospedar nosso site e deixá-lo no ar na internet.
 
-Vamos hospedar o blog que estamos construindo no PythonAnywhere. Cadastre uma conta de "Iniciante" no PythonAnywhere (o pacote gratuito é suficiente, você não precisa de um cartão de crédito).
+Vamos hospedar o blog que estamos construindo no PythonAnywhere. Cadastre uma conta "Begginer" (de iniciante) no PythonAnywhere (o pacote gratuito é suficiente, você não precisa de um cartão de crédito).
 
 * [www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
@@ -10,10 +10,10 @@ Vamos hospedar o blog que estamos construindo no PythonAnywhere. Cadastre uma co
 
 ## Criando um token de API do PythonAnywhere
 
-Isso é algo que você só precisará fazer uma vez. Quando você tiver se registrado no PythonAnywhere, você será levado ao seu painel de controle. Encontre o endereço no topo direito para a página de "conta":
+Você só precisará fazer isso uma vez. Depois de se registrar no PythonAnywhere, você será levada ao seu painel de controle. Encontre o link para a página de "Account" (conta, em português) próximo ao topo no lado direito:
 
-![Link para a conta no top direito da página](../deploy/images/pythonanywhere_account.png)
+![Link para a conta no topo direito na página](../deploy/images/pythonanywhere_account.png)
 
-em seguida, selecione a guia chamada "Token de API" e aperte o botão que diz "Criar novo token API".
+em seguida, selecione a guia chamada "API Token" e aperte o botão que diz "Create new API token" (criar novo token API").
 
-![O token de API na página Conta](../deploy/images/pythonanywhere_create_api_token.png)
+![Aba de token da API na página da conta](../deploy/images/pythonanywhere_create_api_token.png)
