@@ -87,7 +87,7 @@ E finalmente salvamos nossas alterações. Vá para o seu console e execute este
 
 ## Subindo o seu código para o GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+Vá para [GitHub.com](https://www.github.com) e cadastre uma conta de usuário. (Se você já fez isso em preparação para a oficina, ótimo!) Certifique-se de lembrar da sua senha (adicione-a ao seu gerenciador de senhas, se usar um).
 
 Em seguida, crie um novo repositório chamado "my-first-blog". Deixe a caixa "Initialize with a README" desmarcada, deixe a opção do .gitignore em branco (nós já fizemos isso manualmente) e deixe a licença como "None".
 
@@ -95,13 +95,13 @@ Em seguida, crie um novo repositório chamado "my-first-blog". Deixe a caixa "In
 
 > **Observação:** O nome `my-first-blog` é importante - você poderia escolher qualquer outra coisa, mas ele vai aparecer várias vezes nas instruções abaixo, e você teria que substituir todas as vezes. É mais fácil simplesmente manter o nome `my-first-blog`.
 
-Na próxima tela, você verá a URL de clonagem do seu repositório, que você usará em alguns dos comandos a seguir:
+Na próxima tela, você verá a URL de clonagem do seu repositório, que utilizará em alguns dos comandos a seguir:
 
 ![](images/github_get_repo_url_screenshot.png)
 
 Agora precisamos conectar o repositório Git no seu computador com o que existe no GitHub.
 
-Digite o seguinte no seu terminal (Substitua `<your-github-username>` pelo nome de usuário que você colocou quando criou a sua conta no GitHub, mas sem os sinais de menor e maior):
+Digite o seguinte no seu terminal (substitua `<your-github-username>` pelo nome de usuário que você escolheu quando criou sua conta no GitHub, mas sem os sinais de menor e maior):
 
 {% filename %}linha de comando{% endfilename %}
 
@@ -109,7 +109,7 @@ Digite o seguinte no seu terminal (Substitua `<your-github-username>` pelo nome 
     $ git push -u origin master
     
 
-Quando você enviar para o GitHub, será solicitado seu nome de usuário e senha do GitHub (na janela de linha de comando ou em uma janela pop-up), e depois de inserir as credenciais, você deverá ver algo assim:
+Quando você enviar para o GitHub, seu nome de usuário e senha do GitHub serão solicitados (na própria janela de linha de comando ou em uma janela pop-up), e depois de inserir suas credenciais, você deverá ver algo assim:
 
 {% filename %}linha de comando{% endfilename %}
 
@@ -189,7 +189,7 @@ Agora, se quiser, você pode dar uma olhada no seu código no PythonAnywhere usa
     tests.py  views.py
     
 
-Você também pode visitar a aba "Files" e dar uma olhada usando o gerenciador de arquivos do PythonAnywhere. (Na página do console, você pode navegar para outras páginas do PythonAnywhere pelo botão de menu do canto superior direito. Assim que você estiver em uma das páginas, outros links serão exibidos perto do topo.)
+Você também pode visitar a aba "Files" e dar uma olhada usando o gerenciador de arquivos do PythonAnywhere. (Da página do console, você pode navegar para outras páginas do PythonAnywhere utilizando o botão menu no canto superior direito. Assim que você estiver em uma das páginas, outros links serão exibidos perto do topo.)
 
 ## Estamos no ar!
 
