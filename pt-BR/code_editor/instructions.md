@@ -16,7 +16,7 @@ O Sublime Text é um editor muito popular. Ele tem um período de avaliação gr
 
 ## Atom
 
-Atom é outro editor popular. É grátis, de código aberto e disponível para Windows, OS X e Linux. Atom é desenvolvido por * GitHub *.
+Atom é outro editor popular. É gratuito, de código aberto e disponível para Windows, OS X e Linux. Atom é desenvolvido por [ GitHub ](https://github.com/).
 
 [Baixe-o aqui](https://atom.io/)
 
