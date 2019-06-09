@@ -175,7 +175,7 @@ A resposta é: nada. Precisamos trabalhar um pouco mais na nossa *view*.
 
 ## Salvando o formulário
 
-Abra *blog/views.py* mais uma vez. Atualmente tudo que temos na view *post_new* é:
+Abra *blog/views.py* no editor de código mais uma vez. No momento, tudo que temos na view *post_new* é:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -312,7 +312,7 @@ agora, o template estará parecido com:
 {% endblock %}
 ```
 
-Vamos abrir o arquivo *blog/urls.py* e escrever:
+Abra o arquivo *blog/urls.py* no editor de código e digite:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -322,7 +322,7 @@ Vamos abrir o arquivo *blog/urls.py* e escrever:
 
 Vamos reutilizar o template `blog/templates/blog/post_edit.html`, então a última coisa que falta é uma *view*.
 
-Vamos abrir *blog/views.py* e adicionar ao final do arquivo:
+Vamos abrir *blog/views.py* no editor de código e adicionar o seguinte ao final do arquivo:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -374,7 +374,7 @@ Se precisar de mais informações sobre formulários do Django, leia a documenta
 
 ## Segurança
 
-Ser capaz de criar novos posts apenas clicando em um link é ótimo! Mas nesse momento, qualquer um que visitar nosso site poderá criar um novo post, e você isso provavelmente não quer isso. Vamos fazer com que o botão apareça apenas para você e para mais ninguém.
+Poder criar novos posts apenas clicando em um link é ótimo! Mas nesse momento, qualquer um que visitar nosso site poderá criar um novo post, e você isso provavelmente não quer isso. Vamos fazer com que o botão apareça apenas para você e para mais ninguém.
 
 Em `blog/templates/blog/base.html`, procure nossa `div` `page-header` e a tag de link que você colocou mais cedo. Deve se parecer com:
 
@@ -398,7 +398,7 @@ Este `{% if %}` fará com que o link seja enviado ao navegador se o usuário que
 
 Lembra do ícone Editar que acabamos de adicionar à nossa página de detalhes? Queremos fazer a mesma coisa com ele para que outras pessoas não possam editar as mensagens já existentes.
 
-Abra `blog/templates/blog/post_detail.html` e adicione esta linha:
+Abra `blog/templates/blog/post_detail.html` e encontre esta linha:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -444,6 +444,6 @@ Vamos ver se tudo isso funciona no PythonAnywhere. Hora de fazer outro deploy!
 
 (Lembre de substituir `<your-pythonanywhere-domain>` pelo seu subdomínio PythonAnywhere, sem os símbolos < e >.)
 
-* Finalmente, suba para a [página "Web"](https://www.pythonanywhere.com/web_app_setup/) (use o botão de menu no canto superior direito do console) e pressione **Recarregar**. Atualize seu blog https://subdominio.pythonanywhere.com para ver as mudanças.
+* Finalmente, vá para a [página "Web"](https://www.pythonanywhere.com/web_app_setup/) (use o botão de menu no canto superior direito do console) e pressione **Recarregar**. Atualize seu blog https://subdominio.pythonanywhere.com para ver as mudanças.
 
 E deve ser isso! Parabéns :)
