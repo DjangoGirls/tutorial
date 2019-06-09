@@ -68,7 +68,7 @@ Jẹ́ ká fojú fo àwọn fáìlì yòókù náà nítorí pé a kò ní ṣà
 
 Jẹ́ ká ṣe àwọn ìyípadà kan nínú `mysite/settings.py`. Ṣí fáìlì náà pẹ̀lú lílo olóòtú kóòdù tí o ti ṣàgbékalẹ̀ ṣáájú.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Àkíyèsí**: Fi sọ́kàn pé `settings.py` jẹ́ fáìlì déédéé kan, bíi èyíkéyìí mìíràn. O lè ṣí i láti inú olóòtú kóòdù náà, pẹ̀lú lílo àwọn iṣẹ́ àkójọ àṣàyàn "file -> open" (fáìlì -> ṣí) náà. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
 Yíò dára láti ní àkókò tó tọ́ lórí ààyè ayélujára wa. Lọ sí [Àkọsílẹ̀ àwọn agbègbè àkókò ti Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) kí o sì ṣe àdàkọ agbègbè àkókò tó yẹ fún ọ (TZ) (fún àpẹẹrẹ `Africa/Lagos`).
 
