@@ -16,11 +16,11 @@ First check whether your computer is running a 32-bit version or a 64-bit versio
 
 Você pode baixar Python para Windows do site https://www.python.org/downloads/windows/. Clique no link "Versão mais recente do Python 3 - Python x.x.x". Se o seu computador está executando uma versão **64-bit** do Windows, baixe o instalador executável **Windows x86-64**. Caso contrário, baixe o instalador executável **Windows x86**. Depois de baixar o instalador, você deve executá-lo (com clique duplo) e seguir as instruções fornecidas.
 
-Uma coisa para prestar atenção: durante a instalação, você notará uma janela marcada "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Uma coisa para prestar atenção: durante a instalação, você notará uma janela marcada "Setup". Certifique-se de marcar a caixa "Adicionar Python 3.6 ao PATH" ou "Adicionar Python às suas variáveis de ambiente" e clicar em "Instalar Agora", como mostrado aqui (pode aparecer um pouco diferente se você estiver instalando uma outra versão):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Quando a instalação for concluída, pode aparecer uma caixa de diálogo com um link que você pode seguir para saber mais sobre Python ou sobre a versão que instalou. Feche ou cancele essa caixa de diálogo -- você vai aprender mais neste tutorial!
 
 Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
 
