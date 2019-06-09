@@ -4,13 +4,13 @@ Poate vă intrebați ce este un template?
 
 Template este un fișier pe care îl putem să reutilizăm pentru a prezenta informație într-un format consistent - de exemplu, ați putea să utilizați pe template pentru a scrie o scriisoare, dar fiecare scriisoare poate să conțină un mesaj diferit și poate să fie adresat persoanelor diferite, dar ei sunt de aceeași format.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+Format unui template din Django este descris în limbajul denumit HTML (pe care noi l-am menționat în primul capitol **Cum lucrează Internetul**).
 
-## What is HTML?
+## Ce este HTML?
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML este un cod care este interpretat de web browser – Chrome, Firefox sau Safari – pentru a afișa pagina web utilizatorului.
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML înseamnă "HyperText Markup Language". **HyperText** înseamnă că acesta este un tip de text care suportă hyper-linkuri între pagini. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
 ## Your first template!
 
