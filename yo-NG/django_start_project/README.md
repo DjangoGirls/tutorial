@@ -29,7 +29,7 @@ Nínú console Mac OS X tàbí Linux rẹ, ó yẹ kí o ṣe àṣẹ tó tẹ�
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+Lórí Windows, ó yẹ kí o ṣe àṣẹ tó tẹ̀le yìí. **(Má gbàgbé láti ṣàfikún àmì tó-ín `.` náà ní ìparí)**:
 
 {% filename %}command-line{% endfilename %}
 
