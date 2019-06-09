@@ -23,7 +23,7 @@ Nínú console Mac OS X tàbí Linux rẹ, ó yẹ kí o ṣe àṣẹ tó tẹ�
 
 > Àmì tó-ín `.` náà ṣe pàtàkì nítorí pé yíò sọ fún ìlànà ìṣe (script) náà láti ṣàgbékalẹ̀ Django sínú àkójọpọ̀ fáìlì tí o wà lọ́wọ́lọ́wọ́ (fún èyí tí àmì tó-ín `.` náà jẹ́ ìtọ́kasí tí a gé kúrú kan).
 > 
-> **Àkíyèsí** Nígbà tí o bá n tẹ àṣẹ tó wà lókè náà, rántí pé apá tó bẹ̀rẹ̀ pẹ̀lú `django-admin` nìkan ni o ma tẹ̀. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Àkíyèsí** Nígbà tí o bá n tẹ àṣẹ tó wà lókè náà, rántí pé apá tó bẹ̀rẹ̀ pẹ̀lú `django-admin` nìkan ni o ma tẹ̀. Apá `(myvenv) ~/djangogirls$` náà tí a ṣàfihàn níbí wulẹ̀ jẹ́ àpẹẹrẹ prompt náà tí yíò ma dúró de ohun tí o fẹ́ tẹ̀ sórí ìlà ìpàṣẹ rẹ.
 
 <!--endsec-->
 
@@ -36,7 +36,7 @@ Lórí Windows, ó yẹ kí o ṣe àṣẹ tó tẹ̀le yìí. **(Má gbàgbé 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Àmì tó-ín `.` náà ṣe pàtàkì nítorí pé yíò sọ fún ìlànà ìṣe (script) náà láti ṣàgbékalẹ̀ Django sínú àkójọpọ̀ fáìlì tí o wà lọ́wọ́lọ́wọ́ (fún èyí tí àmì tó-ín `.` náà jẹ́ ìtọ́kasí tí a gé kúrú kan).
 > 
 > **Àkíyèsí** Nígbà tí o bá n tẹ àṣẹ tó wà lókè náà, rántí pé apá tó bẹ̀rẹ̀ pẹ̀lú `django-admin.exe` nìkan ni o ma tẹ. Apá `(myvenv) C:\Users\Name\djangogirls>` náà tí a ṣàfihàn níbí wulẹ̀ jẹ́ àpẹẹrẹ prompt náà tí yíò ma dúró de ohun tí o fẹ́ tẹ̀ sórí ìlà ìpàṣẹ rẹ.
 
@@ -64,9 +64,9 @@ Rántí ìgbà tí a sọ̀rọ̀ nípa òṣìṣẹ́ méèlì kan tó n ṣà
 
 Jẹ́ ká fojú fo àwọn fáìlì yòókù náà nítorí pé a kò ní ṣàyípadà wọn. Ohun kan ṣoṣo láti rántí ni kí o má ṣèèṣì yọ wọ́n kúrò!
 
-## Changing settings
+## Ṣíṣe ìyípadà àwọn ìṣètò
 
-Let's make some changes in `mysite/settings.py`. Open the file using the code editor you installed earlier.
+Jẹ́ ká ṣe àwọn ìyípadà kan nínú `mysite/settings.py`. Ṣí fáìlì náà pẹ̀lú lílo olóòtú kóòdù tí o ti ṣàgbékalẹ̀ ṣáájú.
 
 **Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
 
