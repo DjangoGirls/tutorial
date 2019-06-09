@@ -2,9 +2,9 @@
 > 
 > Esta seção baseia-se em tutoriais das Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. We need Python to do anything in Django. Let's start by installing it! We want you to install the latest version of Python 3, so if you have any earlier version, you will need to upgrade it. If you already have version 3.4 or higher you should be fine.
+Django é escrito em Python. Precisamos de Python para fazer qualquer coisa no Django. Vamos começar por instalá-lo! Queremos que você instale a versão mais recente do Python 3, então, se você tiver uma versão anterior, precisará atualizá-la. Se você já tem versão 3.4 ou superior, deve estar bem.
 
-Please install normal Python as follows, even when you have Anaconda installed on your computer.
+Por favor, instale o Python normal da seguinte maneira, mesmo tenha o Anaconda instalado no seu computador.
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
