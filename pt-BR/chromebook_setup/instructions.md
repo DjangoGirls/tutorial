@@ -2,31 +2,31 @@ Você pode [pular este capítulo](http://tutorial.djangogirls.org/en/installatio
 
 ### IDE na (PaizaCloud Cloud IDE, AWS Cloud9)
 
-O IDE na nuvem é uma ferramenta que fornece um editor de código e acesso a um computador em execução na Internet, onde você pode instalar, gravar e executar software. Para a duração desse tutorial, o IDE na nuvem funcionará como sua * máquina local *. Você ainda estará executando comandos em uma interface de terminal (ou prompt de comando), como suas colegas de oficina no OS X, Ubuntu ou Windows, mas seu prompt estará conectado a um computador remoto configurado pelo Cloud 9. Estas são as instruções para IDEs na nuvem (PaizaCloud Cloud IDE, AWS Cloud9). Você pode escolher uma das Cloud IDEs, e seguir as instruções.
+O IDE na nuvem é uma ferramenta que fornece um editor de código e acesso a um computador em execução na Internet, onde você pode instalar, gravar e executar software. Pela duração desse tutorial, o IDE na nuvem funcionará como sua * máquina local *. Você ainda estará executando comandos em uma interface de terminal (ou prompt de comando), como suas colegas de oficina no OS X, Ubuntu ou Windows, mas seu prompt estará conectado a um computador remoto configurado pelo Cloud 9. Estas são as instruções para IDEs na nuvem (PaizaCloud Cloud IDE, AWS Cloud9). Você pode escolher uma das IDEs na nuvem e seguir as instruções.
 
-#### PaizaCloud Cloud IDE
+#### IDE na Nuvem PaizaCloud
 
 1. Vá para *PaizaCloud Cloud IDE *
 2. Registre-se
 3. Clique em *New Server*
 4. Clique no botão Terminal (no lado esquerdo da janela)
 
-Agora você deve ver uma interface com uma barra lateral, botões no canto esquerdo. Clique no botão "Terminal" para abrir a janela de terminal com prompt como este:
+Agora você deve ver uma interface com uma barra lateral, botões no canto esquerdo. Clique no botão "Terminal" para abrir a janela de terminal com prompt desta maneira:
 
 {% filename %}Terminal{% endfilename %}
 
     $
     
 
-O terminal na PaizaCloud Cloud IDE está pronto para suas instruções. Você pode reajustar o tamanho ou maximizar a janela para torná-la um pouco maior.
+O terminal na IDE na nuvem PaizaCloud está pronto para suas instruções. Você pode ajustar o tamanho ou maximizar a janela para torná-la um pouco maior.
 
 #### AWS Cloud9
 
-1. Ir para [AWS Cloud9](https://aws.amazon.com/cloud9/)
+1. Vá para [AWS Cloud9](https://aws.amazon.com/cloud9/)
 2. Registre-se
 3. Clique em *Create Environment*
 
-Agora, você pode ver uma interface com uma barra lateral, uma grande janela principal com algum texto e uma pequena janela na parte inferior, semelhante a isto:
+Agora, a sua tela deve exibir uma interface com uma barra lateral, uma grande janela principal com algum texto e uma pequena janela na parte inferior, semelhante a isto:
 
 {% filename %}bash{% endfilename %}
 
