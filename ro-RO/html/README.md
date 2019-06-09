@@ -1,8 +1,8 @@
-# Introduction to HTML
+# Introducere în HTML
 
-What's a template, you may ask?
+Poate vă intrebați ce este un template?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Template este un fișier pe care îl putem să reutilizăm pentru a prezenta informație într-un format consistent - de exemplu, ați putea să utilizați pe template pentru a scrie o scriisoare, dar fiecare scriisoare poate să conțină un mesaj diferit și poate să fie adresat persoanelor diferite, dar ei sunt de aceeași format.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
