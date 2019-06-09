@@ -21,9 +21,9 @@ Nínú console Mac OS X tàbí Linux rẹ, ó yẹ kí o ṣe àṣẹ tó tẹ�
     (myvenv) ~/djangogirls$ django-admin startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> Àmì tó-ín `.` náà ṣe pàtàkì nítorí pé yíò sọ fún ìlànà ìṣe (script) náà láti ṣàgbékalẹ̀ Django sínú àkójọpọ̀ fáìlì tí o wà lọ́wọ́lọ́wọ́ (fún èyí tí àmì tó-ín `.` náà jẹ́ ìtọ́kasí tí a gé kúrú kan).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Àkíyèsí** Nígbà tí o bá n tẹ àṣẹ tó wà lókè náà, rántí pé apá tó bẹ̀rẹ̀ pẹ̀lú `django-admin` nìkan ni o ma tẹ̀. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
