@@ -6,7 +6,7 @@
 
 A óò ṣẹ̀dá blog kékeré kan!
 
-Ìgbésẹ̀ àkọ́kọ́ ni láti bẹ̀rẹ̀ iṣẹ́ Django tuntun kan. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. Èyí wulẹ̀ jẹ́ àpapọ̀ àkójọpọ̀ fáìlì àti àwọn fáìlì kan tí a ó lò tó bá yá.
+Ìgbésẹ̀ àkọ́kọ́ ni láti bẹ̀rẹ̀ iṣẹ́ Django tuntun kan. Ní pàtàkì, èyí túmọ̀ sí pé a ó lo àwọn ìlànà ìṣe (script) kan tí Django pèsè tí yíò ṣẹ̀dá ìgbékalẹ̀ ti iṣé Django kan fún wa. Èyí wulẹ̀ jẹ́ àpapọ̀ àkójọpọ̀ fáìlì àti àwọn fáìlì kan tí a ó lò tó bá yá.
 
 Orúkọ àwọn fáìlì àti àkójọpọ̀ fáìlì kan ṣe pàtàkì gan-an fún Django. Ìwọ kò gbọ́dọ̀ ṣàtúnṣe orúkọ àwọn fáìlì tí a fẹ́ ṣẹ̀dá náà. Gbígbé wọn sí ibi tó yàtọ̀ kan kìí tún ṣe èrò tó dára kan. Django nílò láti máa ní ìgbékalẹ̀ pàtó kan láti lè rí àwọn nnkan pàtàkì.
 
@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. Èyí kò ní dọ́gba pẹ̀lú orúkọ olùpèsè (hostname) wa lórí PythonAnywhere nígbà tí a bá ṣàgbékalẹ̀ ètò wa, nítorí náà, a ó ṣàyípadà ìṣèto tó tẹ̀le yìí:
+Nígbà tí `DEBUG` bá jẹ́ `True` tí `ALLOWED_HOSTS` sì jẹ́ òfìfo, olùpèsè náà ma ṣiṣẹ́ lórí `['localhost', '127.0.0.1', '[::1]']`. Èyí kò ní dọ́gba pẹ̀lú orúkọ olùpèsè (hostname) wa lórí PythonAnywhere nígbà tí a bá ṣàgbékalẹ̀ ètò wa, nítorí náà, a ó ṣàyípadà ìṣèto tó tẹ̀le yìí:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
