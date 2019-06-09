@@ -90,7 +90,7 @@ Tí o bá fẹ́ èdè mìíràn kan, ṣàyípadà kóòdù èdè náà nípas�
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+A ó tún nílò láti ṣàfikún atọ́nà kan fún àwọn fáìlì tó wà lójú kan (static files). (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
