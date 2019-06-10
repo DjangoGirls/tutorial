@@ -16,7 +16,7 @@
 
 ## コマンドラインインタフェースを開く
 
-To start some experiments we need to open our command-line interface first.
+では、実際にコマンドラインを開いて、触ってみることとしましょう。
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
@@ -37,7 +37,7 @@ MacあるいはLinuxの方は、次のように `$` と表示されているの�
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+Windowsの方は、 `>` という記号が表示されていることでしょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -58,7 +58,7 @@ In the tutorial, when we want you to type in a command, we will include the `$` 
 
 ## 最初のコマンド (イェイ！)
 
-Let's start by typing this command:
+次のようにコマンドを入力してみましょう。:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -78,7 +78,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+そして最後に`Enterキー`を押してください。このような結果が返ってきます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,17 +86,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+ご覧のとおり、コンピューターがあなたのユーザーネームを表示してくれましたね。面白いでしょ? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> コピー＆ペーストではなく、コマンドを入力して試してみてください。そのうち自然と覚えられるようになりますからね！
 
 ## 基本
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+OSによってコマンドが若干違います。あなたのコンピューターのOSの方法に従って、以下は進めていってくださいね。次にいってみましょう。
 
 ### カレントディレクトリ（現在のディレクトリ）
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+今どこのディレクトリにいるか（どのフォルダで作業をしているか）、知りたいですよね？では、このようにキーボードで入力して、`Enterキー`を押してください。
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
