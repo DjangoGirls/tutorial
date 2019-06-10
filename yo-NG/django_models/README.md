@@ -172,7 +172,7 @@ If something is still not clear about models, feel free to ask your coach! We kn
 
 ### Create tables for models in your database
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (A ṣẹ̀ṣẹ̀ ṣẹ̀dá rẹ̀!) Lọ sí fèrèsé console rẹ kí o sì tẹ `python manage.py makemigrations blog`. It will look like this:
 
 {% filename %}command-line{% endfilename %}
 
