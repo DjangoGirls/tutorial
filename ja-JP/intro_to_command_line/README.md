@@ -324,9 +324,9 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+`cd` の後にある `..` で、現在の親ディレクトリに移動します。(今作業しているフォルダのひとつ上のフォルダに移動するということですね。)
 
-Check where you are:
+現在の作業ディレクトリを確認しておきましょう:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -348,9 +348,9 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+では、`practice` ディレクトリを削除しましょう:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **注意: **: `del` や `rmdir `、`rm` のコマンドを使って削除したファイルは復活できません。*完全に消えてしまいます*! このコマンドを使う時は、よく気をつけてくださいね。
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -371,7 +371,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+できました! 本当に削除されたか、確認してみましょう:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -391,9 +391,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### 終了
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+ここまでです。それではコマンドラインを終了しましょう。かっこいいやり方で終わりたいですよね? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -413,7 +413,7 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+かっこいいでしょう? :)
 
 ## まとめ
 
