@@ -17,7 +17,7 @@
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-[アプリケーション] を開き、[ユーティリティ] → [ターミナル] を選択しましょう。
+[アプリケーション] →[ユーティリティ] → [ターミナル] を選択しましょう。
 
 <!--endsec-->
 
