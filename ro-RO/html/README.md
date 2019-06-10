@@ -23,9 +23,9 @@ Templături sunt salvate în directoriu `blog/templates/blog`. Dintâi creați u
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(Poate vă întrebați de ce este nevoie de doi directorii denumite `blog` – acesta este o convenție de denumire care face lucruri mai ușoare când structura devine complicată.)
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+Acum creați fișier `post_list.html` (păstrați-l fără informație până când) în directoriu `blog/templates/blog`.
 
 See how your website looks now: http://127.0.0.1:8000/
 
