@@ -234,11 +234,11 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 できていますね！
 
-> PRO tip: `cd D`と入力して、キーボードの`Tabキー`を押してください。すると、Dに続く残りの部分が自動的に補完されるので、より早く入力することができます。 If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO tip: `cd D`と入力して、キーボードの`Tabキー`を押してください。すると、Dに続く残りの部分が自動的に補完されるので、より早く入力することができます。 もし、Dから始まるディレクトリ名が他にもあれば、`Tabキー`を繰り返し押すと候補が次々と表示されます。入力が楽になりますね。
 
 * * *
 
-### Create directory
+### ディレクトリの作成
 
 How about creating a practice directory on your desktop? You can do it this way:
 
@@ -260,7 +260,7 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+この短いコマンドで、デスクトップに`practice` という名前の新しいフォルダが作成されました。 You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
