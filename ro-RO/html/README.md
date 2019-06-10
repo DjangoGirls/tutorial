@@ -27,9 +27,9 @@ Templături sunt salvate în directoriu `blog/templates/blog`. Dintâi creați u
 
 Acum creați fișier `post_list.html` (păstrați-l fără informație până când) în directoriu `blog/templates/blog`.
 
-See how your website looks now: http://127.0.0.1:8000/
+Puteți să vedeți site-ul acum: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Dacă vedeți o eroare `TemplateDoesNotExist`, restartați serverul. În linie de comandă opriți serverul, apăsând pe Ctrl+C (Control și C keys împreună) și porniți-l executând comandă `python manage.py runserver`.
 
 ![Figura 11.1](images/step1.png)
 
