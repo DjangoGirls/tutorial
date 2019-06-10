@@ -232,9 +232,9 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Here it is!
+できていますね！
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO tip: `cd D`と入力して、キーボードの`Tabキー`を押してください。すると、Dに続く残りの部分が自動的に補完されるので、より早く入力することができます。 If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
