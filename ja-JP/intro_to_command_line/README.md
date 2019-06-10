@@ -132,13 +132,13 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X と Linux には、ヘルプページを提供する `man` コマンドがあります。 Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X と Linux には、ヘルプ情報を提供する `man` コマンドがあります。 `man pwd` を試してみましょう。他のコマンドも、コマンドの前に `man` を置くことでヘルプを見ることができます。 `man` の出力は、通常はページングされています。 次のページを見るにはスペースキーを使い、 `q` でヘルプを閉じます。
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+ほとんどのコマンドでは、コマンドの後ろに `/?` をつけて実行するとヘルプページが出力されます。すべての表示を見るには、コマンドウィンドウを上にスクロールする必要があるかもしれません。`cd /?` を入力してみましょう。
 
 <!--endsec-->
 
