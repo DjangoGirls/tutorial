@@ -234,13 +234,13 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 できていますね！
 
-> PRO tip: `cd D`と入力して、キーボードの`Tabキー`を押してください。すると、Dに続く残りの部分が自動的に補完されるので、より早く入力することができます。 もし、Dから始まるディレクトリ名が他にもあれば、`Tabキー`を繰り返し押すと候補が次々と表示されます。入力が楽になりますね。
+> PRO tip: `cd D` と入力して、キーボードの`Tabキー`を押してください。すると、Dに続く残りの部分が自動的に補完されるので、より早く入力することができます。 もし、Dから始まるディレクトリ名が他にもあれば、`Tabキー`を繰り返し押すと候補が次々と表示されます。入力が楽になりますね。
 
 * * *
 
 ### ディレクトリの作成
 
-How about creating a practice directory on your desktop? You can do it this way:
+それでは、practice ディレクトリをデスクトップに新規作成してみましょう。
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -260,13 +260,13 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-この短いコマンドで、デスクトップに`practice` という名前の新しいフォルダが作成されました。 You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+この短いコマンドで、デスクトップに `practice` という名前の新しいディレクトリが作成されました。 あなたのデスクトップを見てディレクトリが作成されていることを確認してみましょう。あるいは、先ほど学んだコマンド `ls` や `dir` を使って確認しましょう。 Try it. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> PRO tip: 同じコマンドを何度も入力したくない時は、キーボードの上下矢印キーの `↑`、`↓` を押せば、最近使用したコマンドが現れます。内容を修正したい場合には，左右矢印キー←，→を利用して修正したい位置にカーソルを移動させて，修正することができますよ。
 
 * * *
 
-### Exercise!
+### エクササイズ！
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
