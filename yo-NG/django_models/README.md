@@ -1,8 +1,8 @@
 # Àwọn àwòṣe Django
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+Ohun tí a fẹ́ ṣẹ̀dá ní báyìí jẹ́ nnkan kan tí yíò tọ́jú gbogbo àwọn àròkọ tó wà nínú blog wa. Ṣùgbọ́n láti lè ṣe ìyẹn, a nílò láti sọ̀rọ̀ díẹ̀ nípa àwọn nnkan tí a n pè ní `objects` (ohun-èlò).
 
-## Objects
+## Àwọn Ohun-èlò
 
 There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
