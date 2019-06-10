@@ -14,9 +14,9 @@ HTML înseamnă "HyperText Markup Language". **HyperText** înseamnă că acesta
 
 ## Primul template!
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+Crearea unui template înseamnă crearea unui fișier de template. Totul este compus din fișiere, corect? Probabil, deja ați observat acesta.
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+Templături sunt salvate în directoriu `blog/templates/blog`. Dintâi creați un directoriu numit `templates` în directoriu de blog. Apoi creați un alt directoriu numit `blog` în directoriu templates:
 
     blog
     └───templates
