@@ -296,11 +296,11 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+おめでとうございます！よくできました! :)
 
 * * *
 
-### Clean up
+### クリーンアップ
 
 We don't want to leave a mess, so let's remove everything we did until that point.
 
