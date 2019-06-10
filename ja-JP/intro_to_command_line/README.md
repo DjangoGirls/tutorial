@@ -106,7 +106,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> 補足: 'pwd' は'print working directory'を意味しており、現在いる作業ディレクトリを取得することです。
 
 <!--endsec-->
 
@@ -118,11 +118,11 @@ OSによってコマンドが若干違います。あなたのコンピュータ
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> 補足: 'cd' は、'change directory' を意味しています。PowerShellを使うと、LinuxやMac OS Xのようにpwdコマンドを使えます。
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+おそらく、あなたのマシン上でも似たような画面が表示されたのではないでしょうか。コマンドラインを起動すると、通常はユーザーのホームディレクトリが表示されます。
 
 * * *
 
@@ -142,9 +142,9 @@ Adding a `/?` suffix to most commands will print the help page. You may need to 
 
 <!--endsec-->
 
-### List files and directories
+### ファイルとディレクトリの一覧
 
-So what's in it? It'd be cool to find out. Let's see:
+では、その中には何があるのでしょうか？表示させてみましょう。
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -173,13 +173,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> 補足：PowersSellでは、Linux や Mac OS X同様にlsコマンドが使えます。 <!--endsec-->
 
 * * *
 
-### Change current directory
+### カレントディレクトリの変更
 
-Now, let's go to our Desktop directory:
+次に、デスクトップのディレクトリに移動してみましょう。
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -210,7 +210,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+本当に変更されたかどうか確認してみてください：
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
