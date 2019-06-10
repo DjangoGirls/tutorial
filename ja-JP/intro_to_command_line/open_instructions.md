@@ -23,6 +23,6 @@
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. もしそこで見当たらない場合は、Googleで検索してみましょう。 :)
+使用しているシステムによっては、[アプリケーション] → [アクセサリ] の下、あるいは [アプリケーション] → [システム] の下に [ターミナル] がある場合もあります。 もしそこでも見当たらない場合は、Googleで検索してみましょう。 :)
 
 <!--endsec-->
