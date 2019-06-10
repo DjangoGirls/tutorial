@@ -183,7 +183,7 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Àkíyèsí:** Rántí láti tọ́jú àwọn fáìlì tí o ṣàtúnṣe náà. Bí bẹ́ẹ̀ kọ́, kọ̀mpútà rẹ yíò ṣiṣẹ́ lórí ẹyà ti tẹ́lẹ̀ náà èyí tó lè fún ọ ní àwọn ìròyìn àṣìṣe láìròtẹ́lẹ̀.
 
 Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
 
