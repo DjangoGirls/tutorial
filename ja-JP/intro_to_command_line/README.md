@@ -126,7 +126,7 @@ OSによってコマンドが若干違います。あなたのコンピュータ
 
 * * *
 
-### Learn more about a command
+### コマンドについてもっと知る
 
 Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
 
@@ -197,7 +197,7 @@ Adding a `/?` suffix to most commands will print the help page. You may need to 
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Desktop というディレクトリ名は使用しているLinuxアカウントの言語に翻訳されているかもしれません。 その場合は、 `Desktop` に置き換えてください; たとえば、ドイツ語なら `Schreibtisch` です。
 
 <!--endsec-->
 
@@ -268,7 +268,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 ### エクササイズ！
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+練習をしてみましょう。先ほど作成した `practice` ディレクトリの中に、新たに`test` という名前のディレクトリを作成してください。(使うコマンドは、` cd ` と `mkdir` ですよ)
 
 #### 解答:
 
@@ -417,25 +417,25 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 ## まとめ
 
-Here is a summary of some useful commands:
+役立つコマンドをいくつかまとめておきます。
 
-| コマンド (Windows) | コマンド (Mac OS / Linux) | 説明                     | 例                                                  |
-| -------------- | --------------------- | ---------------------- | -------------------------------------------------- |
-| exit           | exit                  | ウインドウを閉じる              | **exit**                                           |
-| cd             | cd                    | ディレクトリを変更              | **cd test**                                        |
-| cd             | pwd                   | 現在のディレクトリを表示           | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
-| dir            | ls                    | ディレクトリ/ファイルの一覧を表示      | **dir**                                            |
-| copy           | cp                    | ファイルのコピー               | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move           | mv                    | ファイルを移動                | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir          | mkdir                 | 新しいディレクトリを作成           | **mkdir testdirectory**                            |
-| rmdir (or del) | rm                    | ファイルを削除                | **del c:\test\test.txt**                         |
-| rmdir /S       | rm -r                 | ディレクトリを削除              | **rm -r testdirectory**                            |
-| [CMD] /?       | man [CMD]             | get help for a command | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| コマンド (Windows) | コマンド (Mac OS / Linux) | 説明                | 例                                                    |
+| -------------- | --------------------- | ----------------- | ---------------------------------------------------- |
+| exit           | exit                  | ウインドウを閉じる         | **exit**                                             |
+| cd             | cd                    | ディレクトリを変更         | **cd test**                                          |
+| cd             | pwd                   | 現在のディレクトリを表示      | **cd** (Windows) or **pwd** (Mac OS / Linux)         |
+| dir            | ls                    | ディレクトリ/ファイルの一覧を表示 | **dir**                                              |
+| copy           | cp                    | ファイルのコピー          | **copy c:\test\test.txt c:\windows\test.txt**    |
+| move           | mv                    | ファイルを移動           | **move c:\test\test.txt c:\windows\test.txt**    |
+| mkdir          | mkdir                 | 新しいディレクトリを作成      | **mkdir testdirectory**                              |
+| rmdir (or del) | rm                    | ファイルを削除           | **del c:\test\test.txt**                           |
+| rmdir /S       | rm -r                 | ディレクトリを削除         | **rm -r testdirectory**                              |
+| [CMD] /?       | man [CMD]             | コマンドのヘルプを表示します。   | **cd /?** (Windows) あるいは **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+ここで勉強したのはコマンドのほんの一部でしたが、このワークショップで使うコマンドはこれだけです。
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+もっと勉強したい方は、[ss64.com](http://ss64.com) に各OSのコマンド一覧があります。ご参考までに。
 
 ## 準備OK？
 
-Let's dive into Python!
+よし、次はPythonを勉強していきましょう!
