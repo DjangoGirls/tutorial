@@ -260,7 +260,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-この短いコマンドで、デスクトップに `practice` という名前の新しいディレクトリが作成されました。 あなたのデスクトップを見てディレクトリが作成されていることを確認してみましょう。あるいは、先ほど学んだコマンド `ls` や `dir` を使って確認しましょう。 Try it. :)
+この短いコマンドで、デスクトップに `practice` という名前の新しいディレクトリが作成されました。 あなたのデスクトップを見てディレクトリが作成されていることを確認してみましょう。あるいは、先ほど学んだコマンド `ls` や `dir` を使って確認できます。 試してみましょう。 :)
 
 > PRO tip: 同じコマンドを何度も入力したくない時は、キーボードの上下矢印キーの `↑`、`↓` を押せば、最近使用したコマンドが現れます。内容を修正したい場合には，左右矢印キー←，→を利用して修正したい位置にカーソルを移動させて，修正することができますよ。
 
@@ -302,9 +302,9 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 ### クリーンアップ
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+練習がおわったら、それをそのままに置いておくと邪魔になりますね。削除しておきましょう。
 
-First, we need to get back to Desktop:
+はじめに、作業するディレクトリをデスクトップに戻しましょう。
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
