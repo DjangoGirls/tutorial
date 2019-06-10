@@ -10,9 +10,9 @@ Format unui template din Django este descris în limbajul denumit HTML (pe care 
 
 HTML este un cod care este interpretat de web browser – Chrome, Firefox sau Safari – pentru a afișa pagina web utilizatorului.
 
-HTML înseamnă "HyperText Markup Language". **HyperText** înseamnă că acesta este un tip de text care suportă hyper-linkuri între pagini. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML înseamnă "HyperText Markup Language". **HyperText** înseamnă că acesta este un tip de text care suportă hyper-linkuri între pagini. **Markup** înseamnă că am marcat pe document cu codul pentru a executa (în cazul nostru browser) codul din pagina. Codul HTML este constuit din **tăguri**, care se încep cu `<` și se termin cu `>`. Aceste tăguri reprezintă **elemente** de markup.
 
-## Your first template!
+## Primul template!
 
 Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
