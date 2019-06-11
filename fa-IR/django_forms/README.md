@@ -442,8 +442,8 @@ form = PostForm(instance=post)
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(یادتان باشد که `<your-pythonanywhere-domain>` را با زیر دامنه اصلی خود در PythonAnywhere عوض کنید البته بدون آکولادها.)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* در نهایت به صفحه ["Web" page](https://www.pythonanywhere.com/web_app_setup/) بروید (از کلید منو در بالا و سمت راست کنسول استفاده کنید) و کلید **Reload** را بزنید. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
 And that should be it! Congrats :)
