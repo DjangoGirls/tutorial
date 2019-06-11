@@ -384,7 +384,7 @@ form = PostForm(instance=post)
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+حالا ما می‌خواهیم یک تگ `{% if %}` دیگر به این اضافه کنیم که باعث خواهد شد این لینک فقط برای کاربری نشان داده شود که به عنوان ادمین وارد شده باشد که در حال حاضر فقط شما هستید! تگ `<a>` را به شکل زیر تغییر دهید:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -394,11 +394,11 @@ We're going to add another `{% if %}` tag to this, which will make the link show
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+تگ `{% if %}` باعث خواهد شد که لینک در صورتی به مرورگر ارسال شود که کاربر درخواست کننده صفحه، با حساب کاربری ادمین وارد شده باشد. این کار به طور کامل ساختن پست جدید را محافظت نمی‌کند اما قدم اولیه‌ی خوبی است. مباحث بیشتری از امنیت را در بخش‌های اضافه آموزش پوشش خواهیم داد.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+کلید edit را که به صفحه جزییات یک پست اضافه کردیم به یاد دارید؟ حالا همین کار را برای آن صفحه نیز می‌خواهیم انجام دهیم تا دیگران قادر به تغییر محتوای یک پست نباشند.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+فایل `blog/templates/blog/post_detail.html` را باز کنید و خط زیر را پیدا کنید:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+آن را به شکل زیر تغییر دهید:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,7 +416,7 @@ Change it to this:
 {% endif %}
 ```
 
-از آنجا که احتمالا وارد سیستم شوید، اگر صفحه را تازه سازی کنید، هیچ چیز دیگری را نمی بینید. هرچند صفحه را در یک مرورگر دیگر یا یک پنجره ناشناس (با نام «محرمانه» در ویندوز لبه) بارگذاری کنید، و خواهید دید که پیوند نمایش داده نمیشود و نماد نیز نمایش داده نمیشود!
+از آنجا که احتمالاً هنوز به عنوان ادمین در سیستم لاگین کرده‌اید، اگر صفحه را دوباره بازخوانی کنید، تغییر خاصی را نمی‌بینید. هرچند صفحه را در یک مرورگر دیگر یا یک پنجره ناشناس (با نام «محرمانه» در ویندوز لبه) بارگذاری کنید، و خواهید دید که پیوند نمایش داده نمیشود و نماد نیز نمایش داده نمیشود!
 
 ## یک چیز دیگر: استقرار زمان!
 
