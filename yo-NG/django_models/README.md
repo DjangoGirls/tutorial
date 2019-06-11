@@ -6,7 +6,7 @@ Ohun tí a fẹ́ ṣẹ̀dá ní báyìí jẹ́ nnkan kan tí yíò tọ́jú 
 
 There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+Nítorí náà, kíni ohun-èlò kan? Ó jẹ́ àkójọ àwọn ohun ìdánimọ̀ àti àwọn iṣẹ́ kan. Ó ṣàjèjì, ṣùgbọ́n a ó fún ọ ní àpẹẹrẹ kan.
 
 Tí a bá fẹ́ ṣe àwòṣe ológbò kan, a óò ṣẹ̀dá ohun-èlò `Cat` (Ológbò) kan tó ní àwọn ohun ìdánimọ̀ bíi `color` (àwọ̀), `age` (ọjọ́ orí), `mood` (ìṣesí) (bíi ìdùnnú, ìbànújẹ́, tàbí oorun ;)), àti `owner` (oníǹkan) (èyí tí a lè yàn ohun-èlò `Person` (Ènìyàn) kan – tàbí bóyá, ní ti ológbò tó sọnù kan, ohun ìdánimọ̀ yìí lè jẹ́ òfìfo).
 
