@@ -145,7 +145,7 @@ def post_new(request):
 <li>ما به یک دکمه <code>Save` نیاز داریم. این کار را با یک دکمه HTML انجام می دهیم: `<button type="submit">Save</button>`.
 * و در نهایت، درست بعد از باز شدن تگ `<form ...>` باید {% raw %}`{% csrf_token %}`{% endraw %} را اضافه کنیم. این بسیار مهم است، زیرا فرم های شما را امن می کند! اگر شما این تکه را فراموش کنید، جنگو هنگام تلاش برای ذخیره فرم پیغام خطا می‌دهد:
 
-![CSRF صفحه ممنوع](images/csrf2.png)
+![صفحه خطا CSRF](images/csrf2.png)
 
 خوب، بگذار ببینیم HTML در فایل `post_edit.html` چطور باید باشد:
 
@@ -275,7 +275,7 @@ def post_new(request):
 
 سعی کنید فرم را بدون `title` و `text` ذخیره کنید. حدس بزنید چه اتفاقی خواهد افتاد!
 
-![اعتبار فرم](images/form_validation2.png)
+![اعتبارسنجی فرم](images/form_validation2.png)
 
 جنگجو مواظب است که تمام فیلدهای موجود در فرم ما صحیح پر شده باشند. فوق‌العاده نیست؟
 
@@ -360,11 +360,11 @@ form = PostForm(instance=post)
 
 بسیار خوب، حالا بیایید امتحان کنیم که آیا کار می‌کند! به صفحه `post_detail` بروید. باید یک کلید edit در گوشه سمت راست بالا باشد:
 
-![Edit button](images/edit_button2.png)
+![کلید Edit](images/edit_button2.png)
 
 وقتی بر روی آن کلیک کنید یک فرم که با اطلاعات پست وبلاگی ما پر شده است نشان داده می‌شود:
 
-![Edit form](images/edit_form2.png)
+![فرم Edit](images/edit_form2.png)
 
 به راحتی محتوای پست را تغییر دهید و آن را ذخیره کنید!
 
@@ -444,6 +444,6 @@ form = PostForm(instance=post)
 
 (یادتان باشد که `<your-pythonanywhere-domain>` را با زیر دامنه اصلی خود در PythonAnywhere عوض کنید البته بدون آکولادها.)
 
-* در نهایت به صفحه ["Web" page](https://www.pythonanywhere.com/web_app_setup/) بروید (از کلید منو در بالا و سمت راست کنسول استفاده کنید) و کلید **Reload** را بزنید. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* در نهایت به صفحه ["Web" page](https://www.pythonanywhere.com/web_app_setup/) بروید (از کلید منو در بالا و سمت راست کنسول استفاده کنید) و کلید **Reload** را بزنید. آدرس وبلاگ خودتان https://subdomain.pythonanywhere.com را باز کنید تا تغییرات را ببینید.
 
-And that should be it! Congrats :)
+همین است! تبریک به شما :)
