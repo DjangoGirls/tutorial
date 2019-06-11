@@ -59,15 +59,15 @@ Lucrează! Ați lucrat bine :)
 
 ## Head și body
 
-Each HTML page is also divided into two elements: **head** and **body**.
+Fiecare pagina HTML este divizată în două elemente: **head** și **body**.
 
-* **head** is an element that contains information about the document that is not displayed on the screen.
+* **head** este un element care conține informație despre document și nu este afișat pe ecran.
 
-* **body** is an element that contains everything else that is displayed as part of the web page.
+* **body** este un element care conține totul ce este afișat pe o pagină web.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+Noi utilizăm `<head>` pentru ca browser să știe despre configurație paginii, și `<body>` pentru a arăta ce este pe o pagină.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+De exemplu, putem pune elementul pentru a afișa titlu paginii web în `<head>`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -83,7 +83,7 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Save the file and refresh your page.
+Salvează fișierele și actualizează site-ul.
 
 ![Figura 11.3](images/step4.png)
 
