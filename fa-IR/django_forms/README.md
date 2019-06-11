@@ -416,15 +416,15 @@ form = PostForm(instance=post)
 {% endif %}
 ```
 
-از آنجا که احتمالاً هنوز به عنوان ادمین در سیستم لاگین کرده‌اید، اگر صفحه را دوباره بازخوانی کنید، تغییر خاصی را نمی‌بینید. هرچند صفحه را در یک مرورگر دیگر یا یک پنجره ناشناس (با نام «محرمانه» در ویندوز لبه) بارگذاری کنید، و خواهید دید که پیوند نمایش داده نمیشود و نماد نیز نمایش داده نمیشود!
+از آنجا که احتمالاً هنوز به عنوان ادمین در سیستم لاگین کرده‌اید، اگر صفحه را دوباره بازخوانی کنید، تغییر خاصی را نمی‌بینید. صفحه را در یک مرورگر دیگر یا یک پنجره ناشناس incognito window (با نام "InPrivate" در Windows Edge) بارگذاری کنید. خواهید دید که پیوند و آیکون اصلاح، نمایش داده نمی‌شود!
 
-## یک چیز دیگر: استقرار زمان!
+## یک چیز دیگر: زمان دیپلوی است!
 
-بیایید ببینیم آیا این همه در هرکجا پایتون کار می کند. زمان برای راه اندازی دیگر!
+بیایید ببینیم آیا همه این تغییرات در PythonAnyWhere کار می‌کند. یک راه اندازی دیگر است!
 
-* First, commit your new code, and push it up to GitHub:
+* ابتدا کد جدید را کامیت کنید و آن را به GitHub بفرستید:
 
-{% filename %}خط فرمان{% endfilename %}
+{% filename %}command-line{% endfilename %}
 
     $ git status
     $ git add --all .
@@ -433,17 +433,17 @@ form = PostForm(instance=post)
     $ git push
     
 
-* سپس، در کنسول  هرکجا پایتون باش </ 0>:</li> </ul> 
+* سپس در کنسول [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/) تایپ کنید:
+
+{% filename %}PythonAnywhere command-line{% endfilename %}
+
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
+    $ git pull
+    [...]
     
-    {% filename %}PythonAnywhere command-line{% endfilename %}
-    
-        $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
-        $ git pull
-        [...]
-        
-    
-    (Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
-    
-    * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
-    
-    And that should be it! Congrats :)
+
+(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+
+* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+
+And that should be it! Congrats :)
