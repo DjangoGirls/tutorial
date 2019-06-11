@@ -33,9 +33,9 @@ Puteți să vedeți site-ul acum: http://127.0.0.1:8000/
 
 ![Figura 11.1](images/step1.png)
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+Eroare a fost eliminată! Felicitări :) Dar website-ul nu postează nimic, doar o pagină goală, pentru că în template nu este informație. Trebuie să afișăm ceva informație.
 
-Open the new file in the code editor, and add the following:
+Deschideți fișier în editor de cod și adăugați marcajul următor:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -48,11 +48,11 @@ Open the new file in the code editor, and add the following:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Cum arată website-ul acum? Vizitați-l pe http://127.0.0.1:8000/
 
 ![Figura 11.2](images/step3.png)
 
-It worked! Nice work there :)
+Lucrează! Ați lucrat bine :)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
 * `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
