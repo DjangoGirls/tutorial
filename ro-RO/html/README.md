@@ -54,10 +54,10 @@ Cum arată website-ul acum? Vizitați-l pe http://127.0.0.1:8000/
 
 Lucrează! Ați lucrat bine :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* Tag-ul de bază, `<html>`, este începutul a paginii web și `</html>` este sfârșitul. După cum vedeți, conținutul website-ului este între tăgul de început `<html>` și cel de sfârșit `</html>`
+* `<p>` este un tăg pentru elemente de paragraf; `</p>` închide fiecare paragraf
 
-## Head and body
+## Head și body
 
 Each HTML page is also divided into two elements: **head** and **body**.
 
