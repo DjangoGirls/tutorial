@@ -283,7 +283,7 @@ def post_new(request):
 
 حالا ما می دانیم که چگونه یک فرم جدید اضافه کنیم. اما اگر بخواهیم یک فرم موجود را ویرایش کنیم، چه؟ این کار بسیار شبیه آنچه ما انجام داده‌یم است. بگذارید برخی از چیزهای مهم را سریع بسازیم. (اگر چیزی را درک نمی‌کنید، باید از مربی خود بپرسید یا در فصل‌های قبلی نگاه کنید، زیرا ما قبلا همه این مراحل را پوشش دادیم.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+فایل `blog/templates/blog/post_detail.html` را در ویرایشگر کد بازکنید و خط زیر را به آن اضافه کنید
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+قالب فوق شبیه به این خواهد شد:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+فایل `blog/urls.py` را باز کنید و خط زیر را به آن اضافه کنید:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +320,9 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+ما از این قالب `blog/templates/blog/post_edit.html` مجددا استفاده خواهیم کرد پس تنها قطعه باقی مانده *view* است.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+فایل `blog/views.py` را باز کنید و خط زیر را به آن اضافه کنید:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+این نما شبیه نمای `post_new` ماست، درست است؟ اما نه دقیقاً. در ابتدا ما یک پارامتر `pk` اضافه از url به آن ارجاع می‌دهیم. سپس مدل `Post` را که می‌خواهیم اصلاح کنیم با دستور `get_object_or_404(Post, pk=pk)` می‌گیریم و بعد از آن یک فرم می‌سازیم و این فرم را به صورت `instance`ارسال می‌کنیم، هر دو این کارها وقتی اتفاق می‌افتد که فرم را ذخیره می‌کنیم…
 
 {% filename %}blog/views.py{% endfilename %}
 
