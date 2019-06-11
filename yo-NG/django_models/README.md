@@ -10,7 +10,7 @@ So what is an object? It is a collection of properties and actions. It sounds we
 
 Tí a bá fẹ́ ṣe àwòṣe ológbò kan, a óò ṣẹ̀dá ohun-èlò `Cat` (Ológbò) kan tó ní àwọn ohun ìdánimọ̀ bíi `color` (àwọ̀), `age` (ọjọ́ orí), `mood` (ìṣesí) (bíi ìdùnnú, ìbànújẹ́, tàbí oorun ;)), àti `owner` (oníǹkan) (èyí tí a lè yàn ohun-èlò `Person` (Ènìyàn) kan – tàbí bóyá, ní ti ológbò tó sọnù kan, ohun ìdánimọ̀ yìí lè jẹ́ òfìfo).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+Lẹ́yìn náà, `Cat` (Ológbò) náà ní àwọn iṣẹ́ kan: `purr` (kùn), `scratch` (èékánná híha), tàbí `feed` (oúnje) (ní èyí tí, a óò fún ológbò náà ní `CatFood` (Oúnjẹ Ológbò) kan, èyí tó lè jẹ́ ohun-èlò ọ̀tọ̀ kan pẹ̀lú àwọn ohun ìdánimọ̀, bíi `taste` (ìtọ́wò)).
 
     Cat
     --------
