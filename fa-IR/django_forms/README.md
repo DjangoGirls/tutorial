@@ -350,7 +350,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+… و هنگامی که یک فرم را به این صورت برای انجام اصلاحات باز می‌کنیم:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,25 +358,25 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+بسیار خوب، حالا بیایید امتحان کنیم که آیا کار می‌کند! به صفحه `post_detail` بروید. باید یک کلید edit در گوشه سمت راست بالا باشد:
 
 ![Edit button](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+وقتی بر روی آن کلیک کنید یک فرم که با اطلاعات پست وبلاگی ما پر شده است نشان داده می‌شود:
 
 ![Edit form](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+به راحتی محتوای پست را تغییر دهید و آن را ذخیره کنید!
 
-Congratulations! Your application is getting more and more complete!
+تبریک! برنامه شما کامل و کامل‌تر می‌شود!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+اگر اطلاعات بیشتری در مورد فرم‌ها در جنگو لازم دارید باید مستندات مربوط به آن را در این آدرس بخوانید: https://docs.djangoproject.com/en/2.0/topics/forms/
 
-## Security
+## امنیت
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+ساختن یک پست جدید فقط با یک کلیک بسیار فوق العاده است! اما همین الان هرکسی که صفحه شما را بازدید کند می‌تواند به راحتی یک پست جدید بسازد و این احتمالاً چیزی نیست که شما دوست داشته باشید. حالا بیایید کاری کنیم که این کلید فقط برای شما نشان داده شود و کس دیگری آن را نبیند.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+فایل `blog/templates/blog/base.html` را در ویرایشگر کد باز کنید بخش `div` با نام `page-header` را پیدا کنید. باید چیزی شبیه به این باشد:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
