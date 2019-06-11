@@ -116,7 +116,7 @@ urlpatterns = [
 
 ## نمای post_new
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+زمان آن است که فایل `blog/views.py` را در ویرایشگر کد بازکنید و خطوط زیر را در ردیف `from` ها اضافه کنید:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +124,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-و سپس نمایش * ما </ 0>:</p> 
+و حالا نمای *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
