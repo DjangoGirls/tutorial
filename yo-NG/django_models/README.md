@@ -34,7 +34,7 @@ Báwo ni a ṣe máa ṣe àwòṣe àwọn àròkọ blog nígbà náà? A fẹ
 
 A ní láti dáhùn ìbéèrè: Kíni àròkọ blog kan? Àwọn ohun ìdánimọ̀ wo ló yẹ kó ní?
 
-Ó dáa, ó dájú pé àròkọ blog wa nílò awọn ọ̀rọ̀ kan pẹ̀lú àkóónú rẹ̀ àti àkọlé kan, àbí bẹ́ẹ̀ kọ? Yíò tún dára láti mọ ẹni tó kọ ọ́ – nítorí náà a nílò olùdásílẹ̀ kan. Finally, we want to know when the post was created and published.
+Ó dáa, ó dájú pé àròkọ blog wa nílò awọn ọ̀rọ̀ kan pẹ̀lú àkóónú rẹ̀ àti àkọlé kan, àbí bẹ́ẹ̀ kọ? Yíò tún dára láti mọ ẹni tó kọ ọ́ – nítorí náà a nílò olùdásílẹ̀ kan. Ní ìparí, a fẹ́ mọ ìgbà tí a ṣẹ̀dá àti ṣàtẹ̀jáde àròkọ náà.
 
     Post
     --------
@@ -45,7 +45,7 @@ A ní láti dáhùn ìbéèrè: Kíni àròkọ blog kan? Àwọn ohun ìdánim�
     published_date
     
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+Kíni irú àwọn nnkan tí a lè ṣe pẹ̀lú àròkọ blog kan? Yíò dára láti ní `method` (ọ̀nà) kan tí yíò ṣàtẹ̀jáde àròkọ náà, àbí bẹ́ẹ̀ kọ?
 
 So we will need a `publish` method.
 
