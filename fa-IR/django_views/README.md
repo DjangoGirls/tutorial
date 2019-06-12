@@ -1,8 +1,8 @@
-# Django views – time to create!
+# وقت ساختن نماهای جنگو!
 
 وقتشه که از شر باگی که تو فصل قبلی ایجاد کردیم راحت بشیم :)
 
-یک *view* بخشی از برنامه است که "منطق" برنامه در آن قرار می‌گیرد. این مولفه اطلاعات مورد نیاز را از `model` هایی که قبلا ایجاد کرده‌اید گرفته و به `template` ارسال می‌کند. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+یک *view* یا نما بخشی از برنامه است که "منطق" برنامه در آن قرار می‌گیرد. این مولفه اطلاعات مورد نیاز را از `model` هایی که قبلا ایجاد کرده‌اید گرفته و به `template` ارسال می‌کند. ما در بخش بعد یک قالب یا template خواهیم ساخت. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
 Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
