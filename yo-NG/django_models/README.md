@@ -61,7 +61,7 @@ You can think of a model in the database as a spreadsheet with columns (fields) 
 
 ### Ṣíṣẹ̀dá ètò kan
 
-Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ kan sínú iṣẹ́ wa. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ kan sínú iṣẹ́ wa. Ó dára púpọ̀ láti ní gbogbo nnkan létòlétò láti ìbẹ̀rẹ̀pẹ̀pẹ̀. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
