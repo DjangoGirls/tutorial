@@ -168,11 +168,11 @@ Methods often `return` something. There is an example of that in the `__str__` m
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Tí nnkan kan kò bá tíì yé ọ nípa àwọn àwòṣe, má tijú láti béèrè lọ́wọ́ olùkọ́ rẹ! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
-### Create tables for models in your database
+### Ṣẹ̀dá àwọn tábìlì fún àwọn àwòṣe nínú àkójọpọ̀ dátà rẹ
 
-Ìgbésẹ̀ ìkẹyìn níbí ni láti ṣàfikún àwòṣe tuntun wa sínú àkójọpọ̀ dátà wa. First we have to make Django know that we have some changes in our model. (A ṣẹ̀ṣẹ̀ ṣẹ̀dá rẹ̀!) Lọ sí fèrèsé console rẹ kí o sì tẹ `python manage.py makemigrations blog`. Yóò rí báyìí:
+Ìgbésẹ̀ ìkẹyìn níbí ni láti ṣàfikún àwòṣe tuntun wa sínú àkójọpọ̀ dátà wa. Lákọ̀ọ́kọ́, a ní láti mú kí Django mọ wípé a ní àwọn ìyípadà kan nínú àwòṣe wa. (A ṣẹ̀ṣẹ̀ ṣẹ̀dá rẹ̀!) Lọ sí fèrèsé console rẹ kí o sì tẹ `python manage.py makemigrations blog`. Yóò rí báyìí:
 
 {% filename %}command-line{% endfilename %}
 
