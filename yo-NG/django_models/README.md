@@ -30,9 +30,9 @@ Lẹ́yìn náà, `Cat` (Ológbò) náà ní àwọn iṣẹ́ kan: `purr` (kùn
 
 So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
 
-How will we model blog posts then? We want to build a blog, right?
+Báwo ni a ṣe máa ṣe àwòṣe àwọn àròkọ blog nígbà náà? A fẹ́ kọ́ blog kan, àbí bẹ́ẹ̀ kọ?
 
-We need to answer the question: What is a blog post? What properties should it have?
+A ní láti dáhùn ìbéèrè: Kíni àròkọ blog kan? Àwọn ohun ìdánimọ̀ wo ló yẹ kó ní?
 
 Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
 
