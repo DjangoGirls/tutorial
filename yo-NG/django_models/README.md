@@ -47,7 +47,7 @@ A ní láti dáhùn ìbéèrè: Kíni àròkọ blog kan? Àwọn ohun ìdánim�
 
 Kíni irú àwọn nnkan tí a lè ṣe pẹ̀lú àròkọ blog kan? Yíò dára láti ní `method` (ọ̀nà) kan tí yíò ṣàtẹ̀jáde àròkọ náà, àbí bẹ́ẹ̀ kọ?
 
-So we will need a `publish` method.
+Nítorí náà a ó nílò ọ̀nà `publish` (tẹ̀jáde) kan.
 
 Since we already know what we want to achieve, let's start modeling it in Django!
 
