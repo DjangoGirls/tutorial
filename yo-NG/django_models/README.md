@@ -96,7 +96,7 @@ Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ 
     └── requirements.txt
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+Lẹ́yìn ṣíṣẹ̀dá ètò kan, a tún nílò láti sọ fún Django pé ó yẹ kó lò ó. A máa ṣe ìyẹn nínú fáìlì `mysite/settings.py` náà -- ṣí i nínú olóòtú kóòdù rẹ. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
