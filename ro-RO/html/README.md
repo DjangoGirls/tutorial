@@ -148,9 +148,9 @@ Acesta dă efectul următor:
 
 ![Figura 11.4](images/step6.png)
 
-Uau! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Uau! Dar până când template-ul nostru afișează **informație statică** – dar înainte noi am vorbit despre un template care va afișa **diferită** informație **în aceeași format**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Ceea ce noi dorim obținem mai departe este de a afișa posturi reale adăugate din panelă de administrare Django – o să facem acesta.
 
 ## One more thing: deploy!
 
