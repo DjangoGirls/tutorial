@@ -31,14 +31,14 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
+همانطور که می‌بینید ما یک تابع ساختیم ( دستور `def` تابع `post_list` را که یک آرگومان به نام `request` می‌گیرد صدا می‌زند و در نهایت به کمک یک تابع دیگر به نام `render` قالب `blog/post_list.html` را باز می‌گرداند (`return`)).
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+فایل را ذخیره کنید و در مرورگر خود آدرس http://127.0.0.1:8000/ را بزنید و ببینید چه چیزی دیده می‌شود.
 
-Another error! Read what's going on now:
+باز هم خطا! ببینید چه اتفاقی افتاده است:
 
 ![Error](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+حداقل می‌توان دید که سرور در حال کار است اما هنوز، همه چیز کامل نیست، درست است؟ نگران نباشید این فقط یک صفحه خطاست، لازم نیست بترسید! دقیقاً شبیه خطاهای موجود در کنسول، این خطاها هم کاملاً مفید هستند. شما می‌توانید ببینید که با خطای *TemplateDoesNotExist* یعنی قالب وجود ندارد، مواجه شده اید. خب بگذارید این خطا را درست کنیم و در بخش بعد یک قالب یا template بسازیم!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> برای فراگیری بیشتر در مورد نماها در جنگو مستندات رسمی جنگو را بخوانید: https://docs.djangoproject.com/en/2.0/topics/http/views/
