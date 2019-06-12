@@ -2,13 +2,13 @@
 
 وقتشه که از شر باگی که تو فصل قبلی ایجاد کردیم راحت بشیم :)
 
-یک *view* یا نما بخشی از برنامه است که "منطق" برنامه در آن قرار می‌گیرد. این مولفه اطلاعات مورد نیاز را از `model` هایی که قبلا ایجاد کرده‌اید گرفته و به `template` ارسال می‌کند. ما در بخش بعد یک قالب یا template خواهیم ساخت. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+یک *view* یا نما بخشی از برنامه است که "منطق" برنامه در آن قرار می‌گیرد. این مولفه اطلاعات مورد نیاز را از `model` هایی که قبلا ایجاد کرده‌اید گرفته و به `template` ارسال می‌کند. ما در بخش بعد یک قالب یا template خواهیم ساخت. نماها صرفاً توابع پایتونی هستند که البته از چیزهایی که در بخش **آشنایی با پایتون** نوشتیم کمی پیچیده‌تر هستند.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+نماها در فایل `views.py` قرار دارند. ما *نماهای* مورد نظرمان را در فایل `blog/views.py` اضافه خواهیم کرد.
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+خب، بیایید این فایل را در ویرایشگر کد باز کنیم و ببینیم چه چیزی در آن هست:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -18,11 +18,11 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Not too much stuff here yet.
+چیز زیادی هنوز در آن نیست.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+به یاد داشته باشید که خط هایی که با `#` شروع می‌شوند کامنت یا توضیحات هستند - به این معنی که این خط ها توسط پایتون اجرا نمی‌شوند.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+حالا بیایید همانند توصیه‌ای که در خود فایل شده است یک *نما* بسازیم. این نمای بسیار خلاصه را زیر کامنت موجود در فایل اضافه کنید:
 
 {% filename %}blog/views.py{% endfilename %}
 
