@@ -28,7 +28,7 @@ Lẹ́yìn náà, `Cat` (Ológbò) náà ní àwọn iṣẹ́ kan: `purr` (kùn
     taste
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+Ní pàtàkì, èrò náà ni láti ṣàpèjúwe àwọn nnkan gidi ní kóòdù pẹ̀lú àwọn ohun ìdánimọ̀ (tí a n pè ní `object properties` (àwọn ohun ìdánimọ̀ ohun-èlò)) àti àwọn iṣẹ́ (tí a n pè ní `methods` (ọ̀nà)).
 
 Báwo ni a ṣe máa ṣe àwòṣe àwọn àròkọ blog nígbà náà? A fẹ́ kọ́ blog kan, àbí bẹ́ẹ̀ kọ?
 
