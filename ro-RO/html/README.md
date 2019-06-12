@@ -181,25 +181,25 @@ Asigurați-vă că sunteți în directoriu `djangogirls` și hai să spunem ca `
     $ git status
     
 
-Aproape terminăm, acum este timp să-i spunem să salvăm schimbare această în istorie. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+Aproape terminăm, acum este timp să-i spunem să salvăm schimbare această în istorie. O să facem un mesaj de commit unde o să descriem ce s-a schimbat. Puteți să tapați orice, dar este folositor să tapați ceva explicativ ca să țineți minte în viitor ce ați făcut.
 
 {% filename %}command-line{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **Notă** Asigurați-vă că utilizați un citat dublu în jurul mesajului de commit.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+Când sunteți gată, încărcați (push) schimbările pe GitHub:
 
 {% filename %}command-line{% endfilename %}
 
     $ git push
     
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+### Faceți pull codului nou pe PythonAnywhere, și restartați aplicație web
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+* Deschideți [pagină de linii de comandă pe PythonAnywhere](https://www.pythonanywhere.com/consoles/) și deschideți **linie de comandă** (sau deschideți nouă). Apoi, executați:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
