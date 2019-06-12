@@ -112,7 +112,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### Ṣíṣẹ̀dá àwòṣe àròkọ blog kan
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
