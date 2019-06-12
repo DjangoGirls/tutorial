@@ -8,11 +8,11 @@
 
 بنابراین، اجازه دهید یک ** محیط مجازی ** یا virtual environment بسازیم (همچنین به آن * virtualenv* هم گفته می‌شود). محیط مجازی، تنظیمات پایتون/جنگو را برای هر پروژه و جدا از دیگر پروژه‌ها قرنطینه و حفظ خواهد کرد. یعنی هر تغییری که در تنظیمات یک وبسایت انجام می‌دهید، بر روی دیگر وبسایت‌هایی که در حال توسعه آن‌ها هستید تاثیر نخواهد گذاشت. خب، درست است؟
 
-آنچه شما باید انجام دهید این است که یک دایرکتوری را پیدا کنید که در آن می‌خواهید ` محیط مجازی` را ایجاد کنید. برای مثال، دایرکتوری home. در ویندوز، چیزی شبیه `C:\Users\Name` است (که در آن `Name` نام کاربری شما است که با آن وارد ویندوز شده‌اید).
+آنچه شما باید انجام دهید این است که یک پوشه را پیدا کنید که در آن می‌خواهید ` محیط مجازی` را ایجاد کنید. برای مثال، پوشه home. در ویندوز، چیزی شبیه `C:\Users\Name` است (که در آن `Name` نام کاربری شما است که با آن وارد ویندوز شده‌اید).
 
-> **نکته: ** در ویندوز اطمینان حاصل کنید که نام این پوشه حاوی کاراکترهای خاص یا دارای اعراب نیست؛ اگر نام کاربری شما دارای کاراکترهای خاص است، از یک دایرکتوری دیگر استفاده کنید، به عنوان مثال `C:\djangogirls`.
+> **نکته: ** در ویندوز اطمینان حاصل کنید که نام این پوشه حاوی کاراکترهای خاص یا دارای اعراب نیست؛ اگر نام کاربری شما دارای کاراکترهای خاص است، از یک پوشه دیگر استفاده کنید، به عنوان مثال `C:\djangogirls`.
 
-برای این آموزش ما از یک دایرکتوری جدید `djangogirls` در دایرکتوری اصلی شما استفاده خواهیم کرد:
+برای این آموزش ما از یک پوشه جدید `djangogirls` در پوشه اصلی شما استفاده خواهیم کرد:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -67,14 +67,14 @@ data-collapse=true ces-->
 >     $ sudo apt install python3-venv
 >     
 > 
-> **NOTE:** On some versions of Debian/Ubuntu initiating the virtual environment like this currently gives the following error:
+> **نکته: ** در بعضی نسخه‌های دبیان/اوبونتو ساختن محیط مجازی با این دستور ممکن است باعث چنین خطایی بشود:
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
 >     Error: Command '['/home/eddie/Slask/tmp/venv/bin/python3', '-Im', 'ensurepip', '--upgrade', '--default-pip']' returned non-zero exit status 1
 >     
 > 
-> To get around this, use the `virtualenv` command instead.
+> برای حل این مشکل، از دستور `virtualenv` استفاده کنید.
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
@@ -82,14 +82,14 @@ data-collapse=true ces-->
 >     $ virtualenv --python=python3.6 myvenv
 >     
 > 
-> **NOTE:** If you get an error like
+> **نکته: ** اگر چنین خطایی گرفتید
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
 >     E: Unable to locate package python3-venv
 >     
 > 
-> then instead run:
+> در عوض از این دستور استفاده کنید:
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
@@ -98,9 +98,9 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-## Working with virtualenv
+## کار کردن با محیط مجازی
 
-The command above will create a directory called `myvenv` (or whatever name you chose) that contains our virtual environment (basically a bunch of directory and files).
+دستور بالا یک پوشه به نام `myvenv` می‌سازد (یا هر نام دیگری که شما گذاشته باشید) که شامل محیط مجازی ماست (درواقع مجموعه‌ای از پوشه‌ها و فایل‌ها).
 
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
