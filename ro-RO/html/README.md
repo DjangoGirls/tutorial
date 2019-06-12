@@ -172,7 +172,7 @@ Asigurați-vă că sunteți în directoriu `djangogirls` și hai să spunem ca `
     $ git add --all .
     
 
-> **Notă** `--all` înseamnă că `git` va identifica fișierile șterse (în mod implicit el identifică numai fișiere noi sau modificate). Also remember (from chapter 3) that `.` means the current directory.
+> **Notă** `--all` înseamnă că `git` va identifica fișierile șterse (în mod implicit el identifică numai fișiere noi sau modificate). Țineți minte (din capitolul 3) că `.` înseamnă directoriu curent.
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
