@@ -87,11 +87,11 @@ Salvează fișierele și actualizează site-ul.
 
 ![Figura 11.3](images/step4.png)
 
-Vedeți cum browser a înțeles că "Ola's blog" este titlu paginii voastre? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Vedeți cum browser a înțeles că "Ola's blog" este titlu paginii voastre? El s-a înterpretat `<title>Ola's blog</title>` și a pus textul în bara de titlu a browser-ului vostru (el va fi utilizat pentru bookmark ș.a.).
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Probabil voi ați observat că fiecare tăg de început are *un tăg de sfârșit*, cu `/`, și că elemente sunt *inserate unul în altul* (voi nu puteți închide un tăg anumit până când cele care sunt în el, nu sunt închise).
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Acesta seamănă cu aranjarea lucrurilor într-o cutie. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
 
 You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
