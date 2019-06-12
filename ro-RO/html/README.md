@@ -214,4 +214,4 @@ Acum observați cum codul se descarcă. Dacă doriți să verificați dacă fiș
 
 * În sfârșit, deschideți [pagina "Web"](https://www.pythonanywhere.com/web_app_setup/) și apăsați **Reload** în aplicație web.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Acum trebuie să vedeți schimbările voastre live! Reîncărcați website-ul vostru în browser. Trebuie să vedeți schimbările. :)
