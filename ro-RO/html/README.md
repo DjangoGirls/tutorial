@@ -210,8 +210,8 @@ Când sunteți gată, încărcați (push) schimbările pe GitHub:
 
 Trebuie să substituiți `<your-pythonanywhere-domain>` cu denumirea sub-domeniului pe PythonAnywhere, fără paranteze unghiulare. Denumirea sub-domeniului este numele de utilizator vostru pe PythonAnywhere, dar în niște cazuri poate fi diferit (dacă numele de utilizator conține majuscule). Dacă codul dat nu lucrează, utilizați comandă `ls` (afișarea fișierilor) pentru a găsi denumirea sub-domeniului/directoriului, și apoi `cd` în el.
 
-Acum observați cum codul se descarcă. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+Acum observați cum codul se descarcă. Dacă doriți să verificați dacă fișierele au fost descarcate, puteți să deschideți **pagină "Files"** și vedeți codul vostru pe PythonAnywhere (pagina cu fișiere puteți să găsiți din meniu pe pagina cu linie de comandă).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* În sfârșit, deschideți [pagina "Web"](https://www.pythonanywhere.com/web_app_setup/) și apăsați **Reload** în aplicație web.
 
 Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
