@@ -99,12 +99,12 @@ Trebuie să urmați reguli de tăgurilor de *închidere*, și elementelor *inclu
 
 Acum puteți să distrați și să încercați să personalizați template-ul vostru! Acesta sunt câteva tăguri care va fi de folos:
 
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
+* `<h1>Titlu</h1>` pentru cel mai important titlu
+* `<h2>Sub-titlu</h2>` pentru un titlu de nivel următor
+* `<h3>Sub-sub-titlu</h3>` ... așa mai departe, până `<h6>`
+* `<p>Un paragraf de text</p>`
+* `<em>text</em>` accentuează textul vostru
+* `<strong>text</strong>` face textul vostru să fie evidențiat
 * `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
 * `<a href="https://djangogirls.org">link</a>` creates a link
 * `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
