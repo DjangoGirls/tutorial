@@ -30,14 +30,14 @@
 <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
-برای ایجاد یک <جدید> مجازی</ 0> جدید، باید دستور دستور را باز کنید و ` پایتون-ام ون مایون</ 0> را اجرا کنید. شبیه این خواهد شد:</p>
+برای ایجاد یک ` محیط مجازی` جدید، باید محیط دستورات command prompt را باز کنید و دستور <`python -m venv myvenv` را اجرا کنید. شبیه این خواهد شد:
 
-<p>{% filename %}خط فرمان{% endfilename %}</p>
+{% filename %}خط فرمان{% endfilename %}
 
-<pre><code>C:\Users\Name\djangogirls> python -m venv myvenv
-`</pre> 
+    C:\Users\Name\djangogirls> python -m venv myvenv
+    
 
-Where `myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces, accents or special characters. It is also good idea to keep the name short – you'll be referencing it a lot!
+در اینجا `myvenv` نام `محیط مجازی` شماست. می‌توانید هر نام دیگری انتخاب کنید اما از حروف کوچک استفاده کنید و از اسپیس، اعراب گذاری و کاراکترهای خاص استفاده نکنید. It is also good idea to keep the name short – you'll be referencing it a lot!
 
 <!--endsec-->
 
