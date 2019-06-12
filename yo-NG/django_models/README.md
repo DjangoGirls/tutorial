@@ -168,7 +168,7 @@ Methods often `return` something. There is an example of that in the `__str__` m
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
-Tí nnkan kan kò bá tíì yé ọ nípa àwọn àwòṣe, má tijú láti béèrè lọ́wọ́ olùkọ́ rẹ! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Tí nnkan kan kò bá tíì yé ọ nípa àwọn àwòṣe, má tijú láti béèrè lọ́wọ́ olùkọ́ rẹ! A mọ̀ pé ó ṣòro, pàápàá nígbà tí o bá n kẹ́kọ̀ọ́ nípa ohun tí àwọn ohun-èlò àti àwọn iṣẹ́ jẹ́ lásìkò kannáà. Ṣùgbọ́n a nírètí pé kò dàbí idán lójú ẹ mọ́ báyìí!
 
 ### Ṣẹ̀dá àwọn tábìlì fún àwọn àwòṣe nínú àkójọpọ̀ dátà rẹ
 
