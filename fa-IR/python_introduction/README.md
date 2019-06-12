@@ -10,7 +10,7 @@
 
 > > برای کسانی که در خانه مطالعه می‌کنند این بخش در ویدئو [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) توضیح داده شده است.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+برای آنکه با پایتون کار کنیم باید یک کنسول *خط فرمان* روی کامپیوتر خود باز کنید. احتمالا بلد هستید که چطور این کار را بکنید، در بخش [آشنایی با خط فرمان](../intro_to_command_line/README.md) آن را یاد گرفته‌اید.
 
 Once you're ready, follow the instructions below.
 
