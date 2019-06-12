@@ -49,7 +49,7 @@ Kíni irú àwọn nnkan tí a lè ṣe pẹ̀lú àròkọ blog kan? Yíò dár
 
 Nítorí náà a ó nílò ọ̀nà `publish` (tẹ̀jáde) kan.
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+Nígbà tí a ti mọ ohun tí a fẹ́ ṣe, jẹ́ ká bẹ̀rẹ̀ ṣíṣe àwòṣe rẹ̀ ní Django!
 
 ## Àwòṣe Django
 
