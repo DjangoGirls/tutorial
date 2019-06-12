@@ -91,13 +91,13 @@ Vedeți cum browser a înțeles că "Ola's blog" este titlu paginii voastre? El 
 
 Probabil voi ați observat că fiecare tăg de început are *un tăg de sfârșit*, cu `/`, și că elemente sunt *inserate unul în altul* (voi nu puteți închide un tăg anumit până când cele care sunt în el, nu sunt închise).
 
-Acesta seamănă cu aranjarea lucrurilor într-o cutie. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Acesta seamănă cu aranjarea lucrurilor într-o cutie. Aveți o mare cutie, `<html></html>`; în care este `<body></body>`, care conține cutii mai mici: `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Trebuie să urmați reguli de tăgurilor de *închidere*, și elementelor *incluse unul în altul* – dacă nu veți face acesta, browser-ul n-o să poată interpreta codul corect și pagina va fi afișată greșit.
 
-## Customize your template
+## Personalizați template-ul vostru
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+Acum puteți să distrați și să încercați să personalizați template-ul vostru! Acesta sunt câteva tăguri care va fi de folos:
 
 * `<h1>A heading</h1>` for your most important heading
 * `<h2>A sub-heading</h2>` for a heading at the next level
