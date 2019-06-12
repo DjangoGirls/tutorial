@@ -57,7 +57,7 @@ Pẹ̀lú mímọ ohun tí ohun-èlò (object) kan jẹ́, a lè ṣẹ̀dá àw
 
 Àwòṣe kan ní Django jẹ́ irú ohun-èlò àkànṣe kan – ó gba títọ́jú sínú `database` (àkójọpọ̀ dátà) náà. Àkójọpọ̀ dátà kan jẹ́ àkójọ dátà kan. This is a place in which you will store information about users, your blog posts, etc. A ó máa lo àkójọpọ̀ dátà SQLite kan láti tọ́jú dátà wa. Èyí jẹ́ ètò àkójọpọ̀ dátà Django ìpìlẹ̀ – yóò tó fún wa ní báyìí.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+Ó lè ronú nípa àwòṣe kan nínú àkójọpọ̀ dátà náà gẹ́gẹ́ bíi pẹpẹ ìṣirò (spreadsheet) kan pẹ̀lú àwọn ìlà òòró (ààyè) àti àwọn ìlà ìbú (dátà).
 
 ### Ṣíṣẹ̀dá ètò kan
 
