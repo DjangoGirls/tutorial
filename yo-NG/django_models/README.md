@@ -55,13 +55,13 @@ Nígbà tí a ti mọ ohun tí a fẹ́ ṣe, jẹ́ ká bẹ̀rẹ̀ ṣíṣe 
 
 Pẹ̀lú mímọ ohun tí ohun-èlò (object) kan jẹ́, a lè ṣẹ̀dá àwòṣe Django kan fún àròkọ blog wa.
 
-Àwòṣe kan ní Django jẹ́ irú ohun-èlò àkànṣe kan – ó gba títọ́jú sínú `database` (àkójọpọ̀ dátà) náà. Àkójọpọ̀ dátà kan jẹ́ àkójọ dátà kan. This is a place in which you will store information about users, your blog posts, etc. A ó máa lo àkójọpọ̀ dátà SQLite kan láti tọ́jú dátà wa. Èyí jẹ́ ètò àkójọpọ̀ dátà Django ìpìlẹ̀ – yóò tó fún wa ní báyìí.
+Àwòṣe kan ní Django jẹ́ irú ohun-èlò àkànṣe kan – ó gba títọ́jú sínú `database` (àkójọpọ̀ dátà) náà. Àkójọpọ̀ dátà kan jẹ́ àkójọ dátà kan. Èyí jẹ́ ààyè kan tí o ti lè tọ́jú àwọn ìròyìn nípa àwọn aṣàmúlò, àwọn àròkọ blog rẹ, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ. A ó máa lo àkójọpọ̀ dátà SQLite kan láti tọ́jú dátà wa. Èyí jẹ́ ètò àkójọpọ̀ dátà Django ìpìlẹ̀ – yóò tó fún wa ní báyìí.
 
 Ó lè ronú nípa àwòṣe kan nínú àkójọpọ̀ dátà náà gẹ́gẹ́ bíi pẹpẹ ìṣirò (spreadsheet) kan pẹ̀lú àwọn ìlà òòró (ààyè) àti àwọn ìlà ìbú (dátà).
 
 ### Ṣíṣẹ̀dá ètò kan
 
-Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ kan sínú iṣẹ́ wa. Ó dára púpọ̀ láti ní gbogbo nnkan létòlétò láti ìbẹ̀rẹ̀pẹ̀pẹ̀. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ kan sínú iṣẹ́ wa. Ó dára púpọ̀ láti ní gbogbo nnkan létòlétò láti ìbẹ̀rẹ̀pẹ̀pẹ̀. Láti ṣẹ̀dá ètò kan, a nílò láti ṣe àṣẹ tó tẹ̀lé yìí nínú console náà (láti àkójọpọ̀ fáìlì `djangogirls` níbi tí fáìlì `manage.py` wà):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
