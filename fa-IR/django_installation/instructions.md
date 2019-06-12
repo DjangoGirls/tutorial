@@ -105,14 +105,14 @@ data-collapse=true ces-->
 <!--sec data-title="Working with virtualenv: Windows" data-id="virtualenv_windows"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+محیط مجازی خود را با اجرای دستور زیر فعال کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
     C:\Users\Name\djangogirls> myvenv\Scripts\activate
     
 
-> **NOTE:** on Windows 10 you might get an error in the Windows PowerShell that says `execution of scripts is disabled on this system`. In this case, open another Windows PowerShell with the "Run as Administrator" option. Then try typing the following command before starting your virtual environment:
+> **نکته: ** در ویندوز 10 و در هنگام استفاده از Windows PowerShell ممکن است با این خطا مواجه شوید `execution of scripts is disabled on this system`. در این شرایط یک بار دیگر Windows PowerShell را با گزینه "Run as Administrator" اجرا کنید. سپس دستورات زیر را قبل از فعال کردن محیط مجازی خود، اجرا کنید:
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
@@ -126,16 +126,16 @@ Start your virtual environment by running:
 <!--sec data-title="Working with virtualenv: Linux and OS X" data-id="virtualenv_linuxosx"
 data-collapse=true ces-->
 
-Start your virtual environment by running:
+محیط مجازی را با دستور زیر فعال کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
     $ source myvenv/bin/activate
     
 
-Remember to replace `myvenv` with your chosen `virtualenv` name!
+به یاد داشته باشید که `myvenv` را با نامی که برای `محیط مجازی` خود انتخاب کرده‌اید عوض کنید!
 
-> **NOTE:** sometimes `source` might not be available. In those cases try doing this instead:
+> **نکته: ** گاهی اوقات ممکن است پوشه `source` در دسترس نباشد. در این مواقع دستور زیر را امتحان کنید:
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
