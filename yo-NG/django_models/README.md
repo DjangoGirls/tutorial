@@ -34,7 +34,7 @@ Báwo ni a ṣe máa ṣe àwòṣe àwọn àròkọ blog nígbà náà? A fẹ
 
 A ní láti dáhùn ìbéèrè: Kíni àròkọ blog kan? Àwọn ohun ìdánimọ̀ wo ló yẹ kó ní?
 
-Ó dáa, ó dájú pé àròkọ blog wa nílò awọn ọ̀rọ̀ kan pẹ̀lú àkóónú rẹ̀ àti àkọlé kan, àbí bẹ́ẹ̀ kọ? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+Ó dáa, ó dájú pé àròkọ blog wa nílò awọn ọ̀rọ̀ kan pẹ̀lú àkóónú rẹ̀ àti àkọlé kan, àbí bẹ́ẹ̀ kọ? Yíò tún dára láti mọ ẹni tó kọ ọ́ – nítorí náà a nílò olùdásílẹ̀ kan. Finally, we want to know when the post was created and published.
 
     Post
     --------
