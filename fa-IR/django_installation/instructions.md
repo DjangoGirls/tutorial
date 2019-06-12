@@ -14,18 +14,20 @@
 
 برای این آموزش ما از یک دایرکتوری جدید `djangogirls` در دایرکتوری اصلی شما استفاده خواهیم کرد:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ mkdir djangogirls
     $ cd djangogirls
     
 
-ما مجازی را ` مای ون</ 0> ایجاد خواهیم کرد. فرمان کلی در قالب خواهد بود:</p>
+ما یک محیط مجازی به نام `myvenv` خواهیم ساخت. فرمان کلی در این قالب خواهد بود:
 
-<p>{% filename %}خط فرمان{% endfilename %}</p>
+{% filename %}خط فرمان{% endfilename %}
 
-<pre><code>$ پایتون3-ام ون مایون
-`</pre> <!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
+    $ python3 -m venv myvenv
+    
+
+<!--sec data-title="Virtual environment: Windows" data-id="virtualenv_installation_windows"
 data-collapse=true ces-->
 
 برای ایجاد یک <جدید> مجازی</ 0> جدید، باید دستور دستور را باز کنید و ` پایتون-ام ون مایون</ 0> را اجرا کنید. شبیه این خواهد شد:</p>
