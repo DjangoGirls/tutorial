@@ -73,7 +73,7 @@ Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ 
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Ìwọ yíò ṣàkíyèsí pé a ti ṣẹ̀dá àkójọpọ̀ fáìlì `blog` tuntun kan àti pé ó ti ní àwọn fáìlì bíi mélòó kan. Ó yẹ kí àwọn àkójọpọ̀ fáìlì àti àwọn fáìlì inú iṣẹ́ wa rí báyìí:
 
     djangogirls
     ├── blog
