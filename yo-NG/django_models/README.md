@@ -96,7 +96,7 @@ Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ 
     └── requirements.txt
     
 
-Lẹ́yìn ṣíṣẹ̀dá ètò kan, a tún nílò láti sọ fún Django pé ó yẹ kó lò ó. A máa ṣe ìyẹn nínú fáìlì `mysite/settings.py` náà -- ṣí i nínú olóòtú kóòdù rẹ. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+Lẹ́yìn ṣíṣẹ̀dá ètò kan, a tún nílò láti sọ fún Django pé ó yẹ kó lò ó. A máa ṣe ìyẹn nínú fáìlì `mysite/settings.py` náà -- ṣí i nínú olóòtú kóòdù rẹ. A nílò láti wá `INSTALLED_APPS` kí a sì ṣàfikún ìlà kan tó ní `'blog',` lókè `]`. Nítorí náà, ó yẹ kí àbájáde náà rí báyìí:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
