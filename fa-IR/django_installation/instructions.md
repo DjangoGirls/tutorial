@@ -161,17 +161,17 @@ data-collapse=true ces-->
     (myvenv) ~$ python -m pip install --upgrade pip
     
 
-### Installing packages with requirements
+### نصب جنگو به کمک فایل الزامات
 
-A requirements file keeps a list of dependencies to be installed using `pip install`:
+یک فایل الزامات فایلی است که لیستی از پکیج های وابسته است که می‌باید به کمک `pip install` نصب شوند:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+در ابتدا یک فایل `requirements.txt` در پوشه `djangogirls/` بسازید. معمولاً می‌توانید از خود ویرایشگر کد که قبل‌تر نصب کرده‌اید هم برای ساختن فایل جدید استفاده کنید. یک فایل جدید در ویرایشگر کد بسازید و سپس به نام `requirements.txt`در پوشه `djangogirls/` ذخیره‌اش کنید. پوشه شما شبیه این خواهد بود:
 
     djangogirls
-    └───requirements.txt
+    ┘───requirements.txt
     
 
-In your `djangogirls/requirements.txt` file you should add the following text:
+در فایل `djangogirls/requirements.txt` باید خط زیر را اضافه کنید:
 
 {% filename %}djangogirls/requirements.txt{% endfilename %}
 
