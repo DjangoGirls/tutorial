@@ -174,14 +174,14 @@ Asigurați-vă că sunteți în directoriu `djangogirls` și hai să spunem ca `
 
 > **Notă** `--all` înseamnă că `git` va identifica fișierile șterse (în mod implicit el identifică numai fișiere noi sau modificate). Țineți minte (din capitolul 3) că `.` înseamnă directoriu curent.
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+Înainte de a încărca pe toate fișiere, hai să verificăm ce `git` va încărca (toate fișiere pe care `git` va încărca vor fi de culoare verde):
 
 {% filename %}command-line{% endfilename %}
 
     $ git status
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+Aproape terminăm, acum este timp să-i spunem să salvăm schimbare această în istorie. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
 {% filename %}command-line{% endfilename %}
 
