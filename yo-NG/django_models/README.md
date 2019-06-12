@@ -151,7 +151,7 @@ All lines starting with `from` or `import` are lines that add some bits from oth
 
 - `class` is a special keyword that indicates that we are defining an object.
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- `models.Model` túmọ̀ sí pé Post (Àròkọ) náà jẹ́ Àwòṣe Django kan, nítorí náà Django mọ̀ wípé ó yẹ kó gba títọ́jú sínú àkójọpọ̀ dátà náà.
 
 Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
@@ -196,4 +196,4 @@ Django ti ṣètò fáìlì migration (ìyípòpadà) kan fún wa tí a ní lát
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Inú wa dùn! Àwòṣe Post (Àròkọ) wa ti wà nínú àkójọpọ̀ dátà wa! Yíò dára láti rí i, àbí bẹ́ẹ̀ kọ? Fò sí àkòrí tó kàn láti wo bí Post (Àròkọ) rẹ ṣe rí!
