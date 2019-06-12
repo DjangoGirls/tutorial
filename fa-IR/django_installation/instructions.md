@@ -178,7 +178,7 @@ data-collapse=true ces-->
     Django~={{ book.django_version }}
     
 
-Now, run `pip install -r requirements.txt` to install Django.
+حالا دستور `pip install -r requirements.txt` را اجرا کنید تا جنگو نصب شود.
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -192,14 +192,14 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> اگر در هنگام اجرای دستور pip در ویندوز خطایی دریافت کردید لطفاً کنترل کنید که در مسیر نام پوشه‌ها هیچ پوشه‌ای اسپیس، اعراب گذاری یا کارکتر خاص در نام خود نداشته باشد (مثلا مانند این `C:\Users\User Name\djangogirls`). اگر چنین است لطفاً از مسیری استفاده کنید که در آن اسپیس به کار نرفته باشد (مثلا چنین مسیری `C:\djangogirls`). یک محیط مجازی در پوشه جدید درست کنید سپس محیط مجازی قبلی را پاک کنید و دستور بالا را دوباره اجرا کنید. (جابجا کردن پوشه مربوط به محیط مجازی ایده خوبی نیست و باعث می‌شود محیط مجازی کار نکند. محیط مجازی با آدرس مطلق کار می‌کند)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> ممکن است کنسول خط فرمان شما بعد از اجرای دستور فوق ثابت و بی‌حرکت شود. اگر چنین اتفاقی افتاد به جای آن از خط زیر استفاده کنید:
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
