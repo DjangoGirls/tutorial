@@ -152,13 +152,13 @@ Uau! Dar până când template-ul nostru afișează **informație statică** –
 
 Ceea ce noi dorim obținem mai departe este de a afișa posturi reale adăugate din panelă de administrare Django – o să facem acesta.
 
-## One more thing: deploy!
+## Un alt lucru: lansați site-ul!
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+Va fi bine de văzut site-ul pe Internet, corect? Hai să facem un alt PythonAnywhere deploy:
 
-### Commit, and push your code up to GitHub
+### Faceți un commit, push codului vostru pe GitHub
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+Cel dintâi, hai să vedem ce fișiere s-au schimbat în comparație cu ultimul deploy (executați comenzile aceste pe calculatorul vostru, nu pe PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
