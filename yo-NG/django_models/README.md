@@ -4,7 +4,7 @@ Ohun tí a fẹ́ ṣẹ̀dá ní báyìí jẹ́ nnkan kan tí yíò tọ́jú 
 
 ## Àwọn Ohun-èlò
 
-Ìlànà kan wà nínú kóòdù kíkọ tí a n pè ní `object-oriented programming` (kóòdù kíkọ tó dá lórí ohun-èlò). The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+Ìlànà kan wà nínú kóòdù kíkọ tí a n pè ní `object-oriented programming` (kóòdù kíkọ tó dá lórí ohun-èlò). Èrò náà ni wípé dípò kíkọ gbogbo nnkan bíi ìtòtẹ̀léra àwọn kóòdù tó lè súni kan, a lè ṣe àwòṣe àwọn nnkan kí a sì ṣàlàyé bí wọ́n ṣe máa ṣiṣẹ́ pẹ̀lú ara wọn.
 
 Nítorí náà, kíni ohun-èlò kan? Ó jẹ́ àkójọ àwọn ohun ìdánimọ̀ àti àwọn iṣẹ́ kan. Ó ṣàjèjì, ṣùgbọ́n a ó fún ọ ní àpẹẹrẹ kan.
 
