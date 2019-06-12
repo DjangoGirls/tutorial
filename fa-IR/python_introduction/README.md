@@ -2,13 +2,13 @@
 
 # آشنایی با پایتون
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> قسمت‌هایی از این بخش بر اساس دوره آموزشی Geek Girls Carrots طراحی شده است (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+حالا بیایید کمی کد بنویسیم!
 
-## Python prompt
+## پرامپت پایتون
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> > برای کسانی که در خانه مطالعه می‌کنند این بخش در ویدئو [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) توضیح داده شده است.
 
 To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
