@@ -37,23 +37,23 @@ data-collapse=true ces-->
     C:\Users\Name\djangogirls> python -m venv myvenv
     
 
-در اینجا `myvenv` نام `محیط مجازی` شماست. می‌توانید هر نام دیگری انتخاب کنید اما از حروف کوچک استفاده کنید و از اسپیس، اعراب گذاری و کاراکترهای خاص استفاده نکنید. It is also good idea to keep the name short – you'll be referencing it a lot!
+در اینجا `myvenv` نام `محیط مجازی` شماست. می‌توانید هر نام دیگری انتخاب کنید اما از حروف کوچک استفاده کنید و از اسپیس، اعراب گذاری و کاراکترهای خاص استفاده نکنید. فکر خوبی است که اسم کوتاهی نیز انتخاب کنید چون بعدتر ارجاعات زیادی به آن خواهید داشت!
 
 <!--endsec-->
 
 <!--sec data-title="Virtual environment: Linux and OS X" data-id="virtualenv_installation_linuxosx"
 data-collapse=true ces-->
 
-We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv myvenv`. It will look like this:
+می‌توانیم با دستور `python3 -m venv myvenv` هم در لینوکس و هم در OS X `محیط مجازی` بسازیم. شبیه این خواهد بود:
 
 {% filename %}خط فرمان{% endfilename %}
 
     $ python3 -m venv myvenv
     
 
-`myvenv` is the name of your `virtualenv`. You can use any other name, but stick to lowercase and use no spaces. It is also a good idea to keep the name short as you'll be referencing it a lot!
+نام `محیط مجازی` شما، `myvenv` است. می‌توانید هر نام دیگری انتخاب کنید اما از حروف کوچک استفاده کنید و از اسپیس استفاده نکنید. فکر خوبی است که اسم کوتاهی نیز انتخاب کنید چون بعدتر ارجاعات زیادی به آن خواهید داشت!
 
-> **NOTE:** On some versions of Debian/Ubuntu you may receive the following error:
+> **نکته: ** در بعضی نسخه‌های دبیان/اوبونتو ممکن است چنین پیغام خطایی دریافت کنید:
 > 
 > {% filename %}خط فرمان{% endfilename %}
 > 
@@ -62,7 +62,7 @@ We can create a `virtualenv` on both Linux and OS X by running `python3 -m venv 
 >     You may need to use sudo with that command.  After installing the python3-venv package, recreate your virtual environment.
 >     
 > 
-> In this case, follow the instructions above and install the `python3-venv` package: {% filename %}command-line{% endfilename %}
+> در این موارد دستورالعمل داده شده در بالا را دنبال کنید. پکیج `python3-venv` را نصب کنید: {% filename %}خط فرمان{% endfilename %}
 > 
 >     $ sudo apt install python3-venv
 >     
