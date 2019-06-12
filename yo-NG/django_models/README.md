@@ -55,7 +55,7 @@ Nígbà tí a ti mọ ohun tí a fẹ́ ṣe, jẹ́ ká bẹ̀rẹ̀ ṣíṣe 
 
 Pẹ̀lú mímọ ohun tí ohun-èlò (object) kan jẹ́, a lè ṣẹ̀dá àwòṣe Django kan fún àròkọ blog wa.
 
-Àwòṣe kan ní Django jẹ́ irú ohun-èlò àkànṣe kan – ó gba títọ́jú sínú `database` (àkójọpọ̀ dátà) náà. A database is a collection of data. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+Àwòṣe kan ní Django jẹ́ irú ohun-èlò àkànṣe kan – ó gba títọ́jú sínú `database` (àkójọpọ̀ dátà) náà. Àkójọpọ̀ dátà kan jẹ́ àkójọ dátà kan. This is a place in which you will store information about users, your blog posts, etc. A ó máa lo àkójọpọ̀ dátà SQLite kan láti tọ́jú dátà wa. Èyí jẹ́ ètò àkójọpọ̀ dátà Django ìpìlẹ̀ – yóò tó fún wa ní báyìí.
 
 You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
 
