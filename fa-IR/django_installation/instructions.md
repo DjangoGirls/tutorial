@@ -144,17 +144,17 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
+هنگامی که پیشوند `(myvenv)` در کنسول خط فرمان اضافه شود به معنی آن است که `محیط مجازی` شما فعال شده است.
 
-When working within a virtual environment, `python` will automatically refer to the correct version so you can use `python` instead of `python3`.
+وقتی درون یک محیط مجازی کار می‌کنید کلمه `python` به صورت اتوماتیک به نسخه صحیح پایتون ارجاع می‌دهد در نتیجه می‌توانید به جای `python3` از `python` استفاده کنید.
 
-OK, we have all important dependencies in place. We can finally install Django!
+بسیار خوب، ما همه نیازمندی‌ها را داریم حالا می‌توانیم جنگو را نصب کنیم!
 
-## Installing Django
+## نصب جنگو
 
-Now that you have your `virtualenv` started, you can install Django.
+حالا که `محیط مجازی` شما فعال شده است می‌توانید جنگو را نصب کنید.
 
-Before we do that, we should make sure we have the latest version of `pip`, the software that we use to install Django:
+قبل از آن باید مطمئن شویم که آخرین نسخه `pip` که برای نصب جنگو استفاده می‌شود در محیط مجازی فعال باشد:
 
 {% filename %}خط فرمان{% endfilename %}
 
