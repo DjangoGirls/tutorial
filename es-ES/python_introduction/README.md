@@ -641,14 +641,14 @@ En una Mac, el comando se verá algo como esto:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+En Linux, será así:
 
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(Recuerde que la palabra "Desktop" puede traducirse a su idioma local.)
 
 <!--endsec-->
 
@@ -665,7 +665,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Y en Windows Powershell, será así:
 
 {% filename %}command-line{% endfilename %}
 
