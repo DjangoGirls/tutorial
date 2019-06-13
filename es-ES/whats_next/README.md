@@ -10,7 +10,7 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
 
 ### ¿Me puedes recomendar recursos adicionales?
 
-¡ Sí! Hay un *montón* de recursos en línea para el aprendizaje de todas las clases de habilidades en programación – puede ser algo intimidante donde ir, pero le tenemos cubierto. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+¡ Sí! Hay un *montón* de recursos en línea para el aprendizaje de todas las clases de habilidades en programación – puede ser algo intimidante donde ir, pero le tenemos cubierto. Cualquiera que sean tus intereses antes de que usted viniera a Django Girls, y los intereses que haya desarrollado a lo largo del tutorial, aquí hay algunos recursos gratuitos (o recursos con grandes componentes libres) que puede utilizar para llegar a donde quiera estar.
 
 #### Django
 
@@ -28,16 +28,16 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
     
     - [El curso de Python en Codeacademy](https://www.codecademy.com/learn/learn-python)
     - [Curso de Python de Google](https://developers.google.com/edu/python/)
-    - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+    - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – Los primeros ejercicios son gratuitos
     - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-    - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-    - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+    - [edX](https://www.edx.org/course?search_query=python) – puedes auditar la mayoría de los cursos gratis, pero si desea un certificado o créditos para una calificación de educación superior, entonces eso costará dinero
+    - [La especialización Python en Coursera](https://www.coursera.org/specializations/python) – algunas videoconferencias pueden ser auditadas gratuitamente y puedes ganar un certificado de Coursera tomando estos cursos
     - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
     
     #### Trabajar con datos
     
     - [Curso de ciencia de datos de Codecademy](https://www.codecademy.com/learn/paths/data-science)
-    - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-    - [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+    - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – puedes auditar la mayoría de los cursos gratis, pero si desea un certificado o créditos para una calificación de educación superior, entonces eso costará dinero
+    - [Dataquest](https://www.dataquest.io/) – las primeras 30 "misiones" son gratuitas
     
-    We can't wait to see what you build next!
+    ¡No podemos esperar para ver lo que construyes a continuación!
