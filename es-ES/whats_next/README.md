@@ -32,7 +32,7 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
     - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
     - [edX](https://www.edx.org/course?search_query=python) – puedes auditar la mayoría de los cursos gratis, pero si desea un certificado o créditos para una calificación de educación superior, entonces eso costará dinero
     - [La especialización Python en Coursera](https://www.coursera.org/specializations/python) – algunas videoconferencias pueden ser auditadas gratuitamente y puedes ganar un certificado de Coursera tomando estos cursos
-    - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+    - [Python for Everybody](https://www.py4e.com/) - una versión libre y abierta de la especialización de Python en Coursera
     
     #### Trabajar con datos
     
