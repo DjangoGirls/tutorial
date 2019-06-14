@@ -48,9 +48,9 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+各コマンドの先頭には、`$` あるいは `>` にスペースが1つつきます。コンピューターが表示してくれるので、自分で入力する必要はありません. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> ちょっと補足です。プロンプト記号の前に `C:\Users\ola>` や `Olas-MacBook-Air:~ ola$` のような表示がありますが、これは間違いではありません。
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
