@@ -160,7 +160,7 @@ Ní báyìí, a ó ṣàlàyé àwọn ohun ìdánimọ̀ tí a tí n sọ̀rọ
 - `models.DateTimeField` – èyí jẹ́ ọjọ́ àti àkókò kan.
 - `models.ForeignKey` – èyí jẹ́ ìtọ́ka kan sí àwòṣe mìíràn.
 
-A kò ní ṣàlàyé gbogbo kóòdù níbí nítorí pé yíò gba àkókò púpọ̀. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+A kò ní ṣàlàyé gbogbo kóòdù níbí nítorí pé yíò gba àkókò púpọ̀. Ó yẹ kí o ṣàgbéyẹ̀wò àkọsílẹ̀ àlàyé ti Django tí o bá fẹ́ mọ̀ sí i nípa àwọn ààyè Àwòṣe àti bí o ṣe lè ṣàlàyé àwọn nnkan mìíràn yàtọ̀ sáwọn tí a ṣàpèjúwe lókè (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
 What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
 
