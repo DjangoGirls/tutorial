@@ -157,8 +157,8 @@ Ní báyìí, a ó ṣàlàyé àwọn ohun ìdánimọ̀ tí a tí n sọ̀rọ
 
 - `models.CharField` – báyìí ní o ṣe máa ṣàlàyé ọ̀rọ̀ pẹ̀lú iye àwọn ẹyọ ọ̀rọ̀ tó ní ààlà kan.
 - `models.TextField` – èyí wà fún ọ̀rọ̀ gígùn láìsí ààlà kan. Yíò dára láti lò fún àkóónú àròkọ blog, àbí bẹ́ẹ̀ kọ?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `models.DateTimeField` – èyí jẹ́ ọjọ́ àti àkókò kan.
+- `models.ForeignKey` – èyí jẹ́ ìtọ́ka kan sí àwòṣe mìíràn.
 
 A kò ní ṣàlàyé gbogbo kóòdù níbí nítorí pé yíò gba àkókò púpọ̀. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
