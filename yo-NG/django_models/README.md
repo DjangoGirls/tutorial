@@ -147,7 +147,7 @@ class Post(models.Model):
 
 Gbogbo àwọn ìlà tó n bẹ̀rẹ̀ pẹ̀lú `from` tàbí `import` jẹ́ àwọn ìlà tó n ṣàfikún àwọn nnkan kan láti àwọn fáìlì mìíràn. Nítorí náà, dípò ṣíṣe àdàkọ àwọn nnkan kannáà nínú gbogbo fáìlì, a lè ṣàfikún àwọn apá kan pẹ̀lú `from ... import ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` – ìlà yìí yíò ṣàlàyé àwòṣe wa (ó jẹ́ `object` (ohun-èlò) kan).
 
 - `class` is a special keyword that indicates that we are defining an object.
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
