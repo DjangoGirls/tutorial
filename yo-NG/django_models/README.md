@@ -153,7 +153,7 @@ Gbogbo àwọn ìlà tó n bẹ̀rẹ̀ pẹ̀lú `from` tàbí `import` jẹ́ 
 - `Post` jẹ́ orúkọ àwòṣe wa. A lè fún ní orúkọ mìíràn (ṣùgbọ́n a gbọ́dọ̀ yẹra fún àwọn àkànṣe ẹyọ ọ̀rọ̀ àti lẹ́tà aláàyè). Máa bẹ̀rẹ̀ orúkọ kíláàsì kan pẹ̀lú lẹ́tà-ńlá kan ní gbogbo ìgbà.
 - `models.Model` túmọ̀ sí pé Post (Àròkọ) náà jẹ́ Àwòṣe Django kan, nítorí náà Django mọ̀ wípé ó yẹ kó gba títọ́jú sínú àkójọpọ̀ dátà náà.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Ní báyìí, a ó ṣàlàyé àwọn ohun ìdánimọ̀ tí a tí n sọ̀rọ̀ nípa: `title` (àkọlé), `text` (ọ̀rọ̀), `created_date` (ọjọ́ ṣíṣẹ̀dá), `published_date` (ọjọ́ títẹ̀jáde) and `author` (olùdásílẹ̀). To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
 - `models.CharField` – this is how you define text with a limited number of characters.
 - `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
