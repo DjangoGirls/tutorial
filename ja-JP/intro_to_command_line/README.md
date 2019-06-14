@@ -52,9 +52,9 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 > ちょっと補足です。プロンプト記号の前に `C:\Users\ola>` や `Olas-MacBook-Air:~ ola$` のような表示がありますが、これは間違いではありません。
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+`$` や `>` と書かれているところまでは、 *コマンドラインプロンプト* あるいは略して*プロンプト*と呼ばれます。プロンプトは、あなたがここに何かを入力することを促しています。
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+このチュートリアルでは、コマンドを入力してほしい時は、 `$` や `>` を含めて示しています。 $ や > は無視して、プロンプト記号以降のコマンドを入力してください。
 
 ## 最初のコマンド (イェイ！)
 
