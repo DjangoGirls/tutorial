@@ -143,7 +143,7 @@ class Post(models.Model):
 
 > Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Ó n dẹ́rù bà ọ́, àbí bẹ́ẹ̀ kọ? Ṣùgbọ́n má dààmú – a ó ṣàlàyé ohun tí àwọn ìlà wọ̀nyí túmọ̀ sí!
 
 All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
