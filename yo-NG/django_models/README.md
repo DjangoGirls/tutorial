@@ -114,7 +114,7 @@ INSTALLED_APPS = [
 
 ### Ṣíṣẹ̀dá àwòṣe àròkọ blog kan
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+Nínú fáìlì `blog/models.py` náà, a máa ṣàlàyé gbogbo àwọn ohun-èlò tí a n pè ní `Models` (Àwọn àwòṣe) – èyí jẹ́ ààyè kan tí a ó ti ṣàlàyé àròkọ blog wa.
 
 Jẹ́ ká ṣí `blog/models.py` nínú olóòtú kóòdù náà, yọ gbogbo nnkan kúrò nínú rẹ̀, kí a sì tẹ kóòdù báyìí:
 
