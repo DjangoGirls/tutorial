@@ -145,7 +145,7 @@ class Post(models.Model):
 
 Ó n dẹ́rù bà ọ́, àbí bẹ́ẹ̀ kọ? Ṣùgbọ́n má dààmú – a ó ṣàlàyé ohun tí àwọn ìlà wọ̀nyí túmọ̀ sí!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Gbogbo àwọn ìlà tó n bẹ̀rẹ̀ pẹ̀lú `from` tàbí `import` jẹ́ àwọn ìlà tó n ṣàfikún àwọn nnkan kan láti àwọn fáìlì mìíràn. Nítorí náà, dípò ṣíṣe àdàkọ àwọn nnkan kannáà nínú gbogbo fáìlì, a lè ṣàfikún àwọn apá kan pẹ̀lú `from ... import ...`.
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
