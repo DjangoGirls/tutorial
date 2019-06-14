@@ -149,7 +149,7 @@ Gbogbo àwọn ìlà tó n bẹ̀rẹ̀ pẹ̀lú `from` tàbí `import` jẹ́ 
 
 `class Post(models.Model):` – ìlà yìí yíò ṣàlàyé àwòṣe wa (ó jẹ́ `object` (ohun-èlò) kan).
 
-- `class` is a special keyword that indicates that we are defining an object.
+- `class` jẹ́ àkànṣe ọ̀rọ̀ kan tó fi hàn pé a n ṣàlàyé ohun-èlò kan.
 - `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
 - `models.Model` túmọ̀ sí pé Post (Àròkọ) náà jẹ́ Àwòṣe Django kan, nítorí náà Django mọ̀ wípé ó yẹ kó gba títọ́jú sínú àkójọpọ̀ dátà náà.
 
