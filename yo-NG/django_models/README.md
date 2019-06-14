@@ -141,7 +141,7 @@ class Post(models.Model):
         return self.title
 ```
 
-> Rí dájú pé o lo àmì-dáàṣì-ìsàlẹ̀ (`_`) méjì ní ẹ̀gbẹ́ kọ̀ọ̀kan `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> Rí dájú pé o lo àmì-dáàṣì-ìsàlẹ̀ (`_`) méjì ní ẹ̀gbẹ́ kọ̀ọ̀kan `str`. Ìlànà yìí máa ń jẹ́ lílò lọ́pọ̀ ìgbà ní Python àti pé nígbà mìíràn a tún máa n pè wọ́n ní "dunder" (kékeré fún "double-underscore" (àmì-dáàṣì-ìsàlẹ̀ méjì)).
 
 Ó n dẹ́rù bà ọ́, àbí bẹ́ẹ̀ kọ? Ṣùgbọ́n má dààmú – a ó ṣàlàyé ohun tí àwọn ìlà wọ̀nyí túmọ̀ sí!
 
