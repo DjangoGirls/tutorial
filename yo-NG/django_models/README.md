@@ -116,7 +116,7 @@ INSTALLED_APPS = [
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+Jẹ́ ká ṣí `blog/models.py` nínú olóòtú kóòdù náà, yọ gbogbo nnkan kúrò nínú rẹ̀, kí a sì tẹ kóòdù báyìí:
 
 {% filename %}blog/models.py{% endfilename %}
 
