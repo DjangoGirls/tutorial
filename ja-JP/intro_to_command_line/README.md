@@ -44,7 +44,7 @@ Windowsの方は、 `>` という記号が表示されていることでしょ�
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+上のLinux のセクションを見てください。このチュートリアルのあとの方にある PythonAnywhere の章では、このような表示をもっと見ることになるでしょう。
 
 <!--endsec-->
 
