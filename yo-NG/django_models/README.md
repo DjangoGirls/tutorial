@@ -150,7 +150,7 @@ Gbogbo àwọn ìlà tó n bẹ̀rẹ̀ pẹ̀lú `from` tàbí `import` jẹ́ 
 `class Post(models.Model):` – ìlà yìí yíò ṣàlàyé àwòṣe wa (ó jẹ́ `object` (ohun-èlò) kan).
 
 - `class` jẹ́ àkànṣe ọ̀rọ̀ kan tó fi hàn pé a n ṣàlàyé ohun-èlò kan.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `Post` jẹ́ orúkọ àwòṣe wa. A lè fún ní orúkọ mìíràn (ṣùgbọ́n a gbọ́dọ̀ yẹra fún àwọn àkànṣe ẹyọ ọ̀rọ̀ àti lẹ́tà aláàyè). Máa bẹ̀rẹ̀ orúkọ kíláàsì kan pẹ̀lú lẹ́tà-ńlá kan ní gbogbo ìgbà.
 - `models.Model` túmọ̀ sí pé Post (Àròkọ) náà jẹ́ Àwòṣe Django kan, nítorí náà Django mọ̀ wípé ó yẹ kó gba títọ́jú sínú àkójọpọ̀ dátà náà.
 
 Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
