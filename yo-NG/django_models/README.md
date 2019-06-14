@@ -155,7 +155,7 @@ Gbogbo àwọn ìlà tó n bẹ̀rẹ̀ pẹ̀lú `from` tàbí `import` jẹ́ 
 
 Ní báyìí, a ó ṣàlàyé àwọn ohun ìdánimọ̀ tí a tí n sọ̀rọ̀ nípa: `title` (àkọlé), `text` (ọ̀rọ̀), `created_date` (ọjọ́ ṣíṣẹ̀dá), `published_date` (ọjọ́ títẹ̀jáde) and `author` (olùdásílẹ̀). Láti ṣe ìyẹn, a ní láti ṣàlàyé irú ààyè kọ̀ọ̀kan (Ṣé ọ̀rọ̀ ni? Nọ́mbà kan? Ọjọ́ kan? Ìbáṣepọ̀ kan pẹ̀lú ohun-èlò mìíràn, bíi Aṣàmúlò kan?)
 
-- `models.CharField` – this is how you define text with a limited number of characters.
+- `models.CharField` – báyìí ní o ṣe máa ṣàlàyé ọ̀rọ̀ pẹ̀lú iye àwọn ẹyọ ọ̀rọ̀ tó ní ààlà kan.
 - `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
 - `models.DateTimeField` – this is a date and time.
 - `models.ForeignKey` – this is a link to another model.
