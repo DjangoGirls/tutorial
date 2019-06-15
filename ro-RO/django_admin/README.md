@@ -33,7 +33,7 @@ Pentru a vă logați în consola de admin, trebuie să creați un *superuser* - 
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Vi se va cere să introduceți username (cu litere mici și fără spații), o adresă de email și parolă pentru user. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Vi se va cere să introduceți username (cu litere mici și fără spații), o adresă de email și parolă pentru user. **Nu vă faceți grijă că nu vedeți parola pe care o tapați – așa și trebuie să fie.** Introduceți-l și apăsați `enter` pentru a continua. Ceea ce veți vedea trebuie să fie asemănătoare cu (unde username și email ar trebui să fie cele introduse de voi):
 
     Username: ola
     Email address: ola@example.com
@@ -42,16 +42,16 @@ Vi se va cere să introduceți username (cu litere mici și fără spații), o a
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Întoarce-ți la browserul web. Conectează-ți cu credențialele superuserului pe care tocmai l-ați creat; veți putea să vedeți consola de admin din Django.
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Mergeți la Articolele și experementați cu ei. Adăugați cinci ori șase posturile de blog. Nu vă faceți grija de conținutul - el este vizibil numai pe calculatorul vostru local - puteți să faceți o copie de text din acest tutorial pentru a păstra timp. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Asigura-ți că cel puțin două sau trei postări (dar nu toate) au setat câmpul publish date. Va fi de folos mai târziu.
 
 ![Django admin](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+Dacă doriți să aflați mai multe despre consola de Django admin, puteți găsiți documentația de Django la: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Ăsta este un moment bun să-vi luați o cafea (sau ceai) sau ceva de mâncare pentru a prinde energie. Ați creat primul tău model de Django - meritați o pauză!
