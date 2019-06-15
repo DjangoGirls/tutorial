@@ -1,8 +1,8 @@
-# Django templates
+# Àwọn àwòṣe (template) Django
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+Àkókò láti ṣàfihàn àwọn dátà kan! Django fún wa ní **àwọn àmì àwòṣe** (template tags) tó wúlò fún ìyẹn.
 
-## What are template tags?
+## Kíni àwọn àmì àwòṣe?
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
