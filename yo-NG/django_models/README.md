@@ -164,7 +164,7 @@ A kò ní ṣàlàyé gbogbo kóòdù níbí nítorí pé yíò gba àkókò pú
 
 Kíni nípa `def publish(self):`? Èyí gan-an ni ọ̀nà `publish` (tẹ̀jáde) tí a n sọ̀rọ̀ nípa tẹ́lẹ̀. `def` túmọ̀ sí pé èyí jẹ́ iṣẹ́/ọ̀nà kan àti pé `publish` jẹ́ orúkọ ọ̀nà náà. O lè ṣàyípadà orúkọ ọ̀nà náà tí o bá fẹ́. Òfin orúkọ sísọ náà ní pé a máa lo lẹ́tà kékeré àti àwọn àmì-dáàṣì-ìsàlẹ̀ dípò àwọn àlàfo. Fún àpẹẹrẹ, a lè pe ọ̀nà kan tí yíò ṣe ìṣirò ìpíndọ́gba iye (average price) ní `calculate_average_price`.
 
-Àwọn ọ̀nà sábà máa ń dá nnkan kan padà (`return`). There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+Àwọn ọ̀nà sábà máa ń dá nnkan kan padà (`return`). Àpẹẹrẹ bẹ́ẹ̀ wà nínú ọ̀nà `__str__` náà. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
 Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
