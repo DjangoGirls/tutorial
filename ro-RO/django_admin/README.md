@@ -21,7 +21,7 @@ OK, acum este timpul să ne uităm la modelul Post. Reamintește-ți să rulezi 
 
 Pentru a vă logați în consola de admin, trebuie să creați un *superuser* - un utilizator ce are control asupra tuturor resurselor din site. Pentru a crea un superuser trebuie să executați din linia de comandă `python manage.py createsuperuser`.
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Țineți minte pentru a scrie comenzile noi când serverul web este pornit, trebuie să deschideți o nouă linie de comandă și să activați virtualenv corespunzător. Ați văzut cum să scrieți comenzile noi în capitolul **Primul proiectul Django!**, în secția **Pornirea serverului web**.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
@@ -33,7 +33,7 @@ Pentru a vă logați în consola de admin, trebuie să creați un *superuser* - 
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-When prompted, type your username (lowercase, no spaces), email address, and password. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Vi se va cere să introduceți username (cu litere mici și fără spații), o adresă de email și parolă pentru user. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
 
     Username: ola
     Email address: ola@example.com
