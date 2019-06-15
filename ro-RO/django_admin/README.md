@@ -1,8 +1,8 @@
 # Consola de admin din Django
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+Pentru adăugarea, editarea și ștergerea articolelor pe care tocmai le-am descris în modele, vom utiliza consola de admin din Django.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Deschideți fișierul `blog/admin.py` în editorul de cod și înlocuiește conținutul său cu textul următor:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -15,11 +15,11 @@ admin.site.register(Post)
 
 Așa cum poți observa, importăm (includem) modelul Post definit în capitolul anterior. Pentru a face modelul vizibil în consola de admin, trebuie să înregistrăm modelul cu instrucțiunea `admin.site.register(Post)`.
 
-OK, acum este timpul să ne uităm la modelul Post. Reamintește-ți să rulezi comanda ` python manage.py runserver ` în linia de comandă pentru a rula serverul web. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+OK, acum este timpul să ne uităm la modelul Post. Reamintește-ți să rulezi comanda ` python manage.py runserver ` în linia de comandă pentru a rula serverul web. Deschideți în browser adresa http://127.0.0.1:8000/admin/. O să vedeți pagina de login:
 
 ![Pagina de login](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+Pentru a vă logați în consola de admin, trebuie să creați un *superuser* - un utilizator ce are control asupra tuturor resurselor din site. Pentru a crea un superuser trebuie să executați din linia de comandă `python manage.py createsuperuser`.
 
 > Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
