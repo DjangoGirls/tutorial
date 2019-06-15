@@ -166,7 +166,7 @@ Kíni nípa `def publish(self):`? Èyí gan-an ni ọ̀nà `publish` (tẹ̀jád
 
 Àwọn ọ̀nà sábà máa ń dá nnkan kan padà (`return`). Àpẹẹrẹ bẹ́ẹ̀ wà nínú ọ̀nà `__str__` náà. Ní àpẹẹrẹ yìí, nígbà tí a bá pe `__str__()`, a ó gba ọ̀rọ̀ kan (**string**) pẹ̀lú àkọlé Àròkọ kan.
 
-Tún ṣàkíyèsí pé `def publish(self):` àti `def __str__(self):` ní ìtẹ̀wọnú sínú kíláàsì wa. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Tún ṣàkíyèsí pé `def publish(self):` àti `def __str__(self):` ní ìtẹ̀wọnú sínú kíláàsì wa. Nítorí pé lẹ́tà aláàyè nípa nínú Python, a nílò láti ṣe ìtẹ̀wọnú àwọn ọ̀nà wa sínú kíláàsì náà. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
 
 Tí nnkan kan kò bá tíì yé ọ nípa àwọn àwòṣe, má tijú láti béèrè lọ́wọ́ olùkọ́ rẹ! A mọ̀ pé ó ṣòro, pàápàá nígbà tí o bá n kẹ́kọ̀ọ́ nípa ohun tí àwọn ohun-èlò àti àwọn iṣẹ́ jẹ́ lásìkò kannáà. Ṣùgbọ́n a nírètí pé kò dàbí idán lójú ẹ mọ́ báyìí!
 
