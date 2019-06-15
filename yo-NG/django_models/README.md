@@ -162,7 +162,7 @@ Ní báyìí, a ó ṣàlàyé àwọn ohun ìdánimọ̀ tí a tí n sọ̀rọ
 
 A kò ní ṣàlàyé gbogbo kóòdù níbí nítorí pé yíò gba àkókò púpọ̀. Ó yẹ kí o ṣàgbéyẹ̀wò àkọsílẹ̀ àlàyé ti Django tí o bá fẹ́ mọ̀ sí i nípa àwọn ààyè Àwòṣe àti bí o ṣe lè ṣàlàyé àwọn nnkan mìíràn yàtọ̀ sáwọn tí a ṣàpèjúwe lókè (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-Kíni nípa `def publish(self):`? Èyí gan-an ni ọ̀nà `publish` (tẹ̀jáde) tí a n sọ̀rọ̀ nípa tẹ́lẹ̀. `def` túmọ̀ sí pé èyí jẹ́ iṣẹ́/ọ̀nà kan àti pé `publish` jẹ́ orúkọ ọ̀nà náà. O lè ṣàyípadà orúkọ ọ̀nà náà tí o bá fẹ́. Òfin orúkọ sísọ náà ní pé a máa lo lẹ́tà kékeré àti àwọn àmì-dáàṣì-ìsàlẹ̀ dípò àwọn àlàfo. For example, a method that calculates average price could be called `calculate_average_price`.
+Kíni nípa `def publish(self):`? Èyí gan-an ni ọ̀nà `publish` (tẹ̀jáde) tí a n sọ̀rọ̀ nípa tẹ́lẹ̀. `def` túmọ̀ sí pé èyí jẹ́ iṣẹ́/ọ̀nà kan àti pé `publish` jẹ́ orúkọ ọ̀nà náà. O lè ṣàyípadà orúkọ ọ̀nà náà tí o bá fẹ́. Òfin orúkọ sísọ náà ní pé a máa lo lẹ́tà kékeré àti àwọn àmì-dáàṣì-ìsàlẹ̀ dípò àwọn àlàfo. Fún àpẹẹrẹ, a lè pe ọ̀nà kan tí yíò ṣe ìṣirò ìpíndọ́gba iye (average price) ní `calculate_average_price`.
 
 Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
