@@ -79,7 +79,7 @@ h1 a, h2 a {
 
 ```
 
-`h1 a` este un Selector CSS. This means we're applying our styles to any `a` element inside of an `h1` element; the `h2 a` selector does the same thing for `h2` elements. Așa că atunci cînd vom avea ceva ca `<h1><a href="">link</a></h1>`, stilul `h1 a` va fi folosit. In this case, we're telling it to change its color to `#C25100`, which is a dark orange. Or you can put your own color here, but make sure it has good contrast against a white background!
+`h1 a` este un Selector CSS. Acesta înseamnă că utilizăm stilurile pentru fiecare element `a` în element `h1`; selector `h2 a` face lucru asemănător, doar pentru elemente `h2`. Așa că atunci cînd vom avea ceva ca `<h1><a href="">link</a></h1>`, stilul `h1 a` va fi folosit. În acest caz, noi îi spunem să își schimbe culoarea în `#C25100`, care reprezintă culoarea oranj. Sau puteți să utilizați altă culoare, dar să asigurați că există un contrast bun cu fundalul deschis!
 
 Într-un fișier CSS determinăm stilurile pentru elementele într-un fișier HTML. Prima metodă de a identifica elementele e prin numele unui element. Le ținem minte ca tag-urile din secția despre HTML. Astfel de lucruri ca `a`, `h1`, și `body` sunt exemple de nume de elemente. De asemenea putem identifica elementele după atributul `class` sau atributul `id`. Numele de clase și id le definim singuri. Clasele definesc grupuri de elemente, și id-urile indică la niște elemente anumite. De exemplu, am putea identifica următorul tag folosind numele tag-ului `a`, clasa `external_link` sau id-ul id `link_to_wiki_page`:
 
