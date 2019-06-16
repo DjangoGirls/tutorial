@@ -20,11 +20,11 @@ Láti ṣàtẹ̀jáde variable kan nínú àwọn àwòṣe Django, a ma lo àk
 {{ posts }}
 ```
 
-Gbìyànjú èyí nínú àwòṣe `blog/templates/blog/post_list.html` rẹ. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Gbìyànjú èyí nínú àwòṣe `blog/templates/blog/post_list.html` rẹ. Ṣí i sílẹ̀ nínú olóòtú kóòdù náà, kí o sì rọ́pò gbogbo nnkan láti `<div>` kejì sí `</div>` kẹta pẹ̀lú `{{ posts }}`. Tọ́jú fáìlì náà, kí o sì ṣe ìmúdójúìwọ̀n ojú-ìwé náà láti rí àbájáde náà:
 
 ![Figure 13.1](images/step1.png)
 
-As you can see, all we've got is this:
+Gẹ́gẹ́ bó o ṣe ríi, gbogbo ohun tí a ní ni èyí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
