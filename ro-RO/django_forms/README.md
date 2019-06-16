@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Când facem un submit a formularului, noi suntem redirecționați la aceeași funcție, dar în cazul acesta avem mai multe date în `request`, de exemplu, în `request.POST` (denumirea POST nu este din cauza postului de blog; dar din cauza că "postăm" data). Țineți minte, în fișierul HTML la definiție `<form>` am adăugat atribut `method="POST"`? Toate aceste câmpurile din formular sunt în `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Când facem un submit a formularului, noi suntem redirecționați la aceeași funcție, dar în cazul acesta avem mai multe date în `request`, de exemplu, în `request.POST` (denumirea POST nu este din cauza postului de blog; dar din cauza că "postăm" data). Țineți minte, în fișierul HTML la definiție `<form>` am adăugat atribut `method="POST"`? Toate aceste câmpurile din formular sunt în `request.POST`. Nu trebuie să renumiți `POST` pe altceva (o altă variantă validă pentru atributul `method` este `GET`, dar n-avem timp să explicăm care este diferență).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
