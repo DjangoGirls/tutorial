@@ -1,6 +1,6 @@
 # Formulare în Django
 
-La final vrem să adăugăm la proiectul nostru o metodă pentru a crea sau edita postări de blog. Consola de `admin` din Django este ajutătoare, dar este destul de greu să o perosnalizezi și să o faci frumoasă. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+La final vrem să adăugăm la proiectul nostru o metodă pentru a crea sau edita postări de blog. Consola de `admin` din Django este ajutătoare, dar este destul de greu să o perosnalizezi și să o faci frumoasă. Cu `forms` avem putere absolută în crearea interfeței noastre - putem face aproape tot ce ne putem imagina!
 
 Un lucru util la formularele (forms) Django este că putem defini unul de la zero, sau putem crea un `ModelForm` care va salva ce se găsește în formular în model.
 
@@ -14,7 +14,7 @@ Trebuie să creăm un fișier cu acest nume în directorul `blog`.
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+Hai să-l deschidem în editorul de cod și tapăm comandă următoare:
 
 {% filename %}blog/forms.py{% endfilename %}
 
@@ -30,21 +30,21 @@ class PostForm(forms.ModelForm):
         fields = ('title', 'text',)
 ```
 
-We need to import Django forms first (`from django import forms`) and our `Post` model (`from .models import Post`).
+Dintâi, Trebuie să importăm formularele Django (`from django import forms`) și, evident, modelul nostru `Post` (`from .models import Post`).
 
-După cum probabil suspectați, `PostForm` este numele formularului nostru. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+După cum probabil suspectați, `PostForm` este numele formularului nostru. Trebuie să îi spunem lui Django că acest formular este un `ModelForm` (astfel încât Django îi aplică un pic de magie pentru noi) - `forms.ModelForm` se ocupă de asta.
 
 Apoi, avem `class Meta`, unde îi spunem lui Django care model ar trebui să fie folosit pentru a creea acest formular (`model = Post`).
 
-La final, putem să spunem care câmp(uri) ar trebui să ajungă în formular. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+La final, putem să spunem care câmp(uri) ar trebui să ajungă în formular. În acest scenariu ne dorim să expundem doar `title` (titlul) și `text` (textul) - `author` (autorul) ar trebui să fie persoana care este acum autentificată (adică tu!) iar `created_date` (data de creare) ar trebui să fie setată automat când creăm postul (din cod), nu?
 
 Și gata! Tot ce trebuie să facem acum e să folosim formularul într-un *view* și să-l afișăm într-un template.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Deci încă o dată vom crea: un link către pagină, un URL, un view și un template.
 
 ## Link către o pagină cu formularul
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+Este momentul să deschidem `blog/templates/blog/base.html`. Vom adăuga un link în `div` -ul ` page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
