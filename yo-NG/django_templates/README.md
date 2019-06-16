@@ -8,9 +8,9 @@ Wòó, nínú HTML, ìwọ kò lè kọ kóòdù Python, nítorí pé àwọn a�
 
 **Àwọn àmì àwòṣe Django** fún wa láàyè láti gbé àwọn nnkan tó jẹ́ mọ́ Python sínú HTML, kó o bàa lè yára kọ́ àwọn ààyè ayélujára tó n ṣiṣẹ́. Ó dára!
 
-## Display post list template
+## Ṣàfihàn àwòṣe àkójọ àròkọ
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+Nínú àkòrí tó ṣáájú náà, a fún àwòṣe wa ní àkójọ àwọn àròkọ kan nínú variable `posts` náà. Ní báyìí, a ó ṣàfihàn rẹ̀ nínú HTML.
 
 To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
 
