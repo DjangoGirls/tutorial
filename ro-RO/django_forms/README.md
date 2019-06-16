@@ -85,11 +85,11 @@ După adăugarea liniei, fișierul HTML trebuie să arate în modul următor:
 </html>
 ```
 
-After saving and refreshing the page http://127.0.0.1:8000 you will see a familiar `NoReverseMatch` error. Is that the case? Good!
+După salvarea și actualizarea paginii http://127.0.0.1:8000 o să vedeți o eroare `NoReverseMatch`. Hai s-o rezolvăm!
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+Deschideți `blog/urls.py` în editorul de cod și adăugați o linie:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,7 +97,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+Codul final va fi următor:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -112,7 +112,7 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+După actualizarea site-ului noi vedem eroare `AttributeError`, pentru că noi n-am creat view `post_new`. Hai s-o adăugăm.
 
 ## post_new view
 
