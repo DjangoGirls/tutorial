@@ -32,7 +32,7 @@ Gẹ́gẹ́ bó o ṣe ríi, gbogbo ohun tí a ní ni èyí:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-Èyí túmọ̀ sí pé Django lóye rẹ̀ gẹ́gẹ́ bí àkójọ àwọn ohun-èlò kan. Rántí láti **Ìfihàn sí Python** bí a ṣe lè ṣàfihàn àwọn àkójọ? Bẹ́ẹ̀ni, pẹ̀lú for loops! In a Django template you do them like this:
+Èyí túmọ̀ sí pé Django lóye rẹ̀ gẹ́gẹ́ bí àkójọ àwọn ohun-èlò kan. Rántí láti **Ìfihàn sí Python** bí a ṣe lè ṣàfihàn àwọn àkójọ? Bẹ́ẹ̀ni, pẹ̀lú for loops! Nínú àwòṣe Django kan, wàá ṣe wọ́n báyìí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,11 +42,11 @@ Gẹ́gẹ́ bó o ṣe ríi, gbogbo ohun tí a ní ni èyí:
 {% endfor %}
 ```
 
-Try this in your template.
+Gbìyànjú èyí nínú àwòṣe rẹ.
 
 ![Figure 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+Ó n ṣiṣẹ́! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
