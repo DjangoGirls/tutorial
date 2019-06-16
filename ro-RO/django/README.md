@@ -10,17 +10,17 @@ Framework-urile există pentru a te salva de la necesitatea de a reinventa roata
 
 ## De ce ai nevoie de un framework?
 
-To understand what Django is actually for, we need to take a closer look at the servers. The first thing is that the server needs to know that you want it to serve you a web page.
+Pentru a înțelege de ce avem nevoie de Django, avem nevoie să aruncăm o privire mai atentă la servere. Primul lucru este că serverul trebuie să știe că tu vrei de la el să îți reprezinte o pagină web.
 
-Imaginează-ți o cutie poștală (port) căreia îi sunt monitorizate scrisorile primite (cereri). Acest lucru este făcut de un server web. The web server reads the letter and then sends a response with a webpage. Dar când dorești să transmiți ceva, trebuie să ai careva conținut. Și Django este ceva care te ajută să creezi acel conținut.
+Imaginează-ți o cutie poștală (port) căreia îi sunt monitorizate scrisorile primite (cereri). Acest lucru este făcut de un server web. Serverul web citește scrisoarea, și trimite un răspuns cu o pagină web. Dar când dorești să transmiți ceva, trebuie să ai careva conținut. Și Django este ceva care te ajută să creezi acel conținut.
 
 ## Ce se întâmplă când cineva solicită un site web de pe server?
 
-When a request comes to a web server, it's passed to Django which tries to figure out what is actually requested. It takes a web page address first and tries to figure out what to do. This part is done by Django's **urlresolver** (note that a website address is called a URL – Uniform Resource Locator – so the name *urlresolver* makes sense). It is not very smart – it takes a list of patterns and tries to match the URL. Django checks patterns from top to bottom and if something is matched, then Django passes the request to the associated function (which is called *view*).
+Când un web server primește o cerere, ea este transmisă către Django, care încearcă să-și dea seama ce de fapt este solicitat. Mai întâi primește o adresă de pagină web și încearcă să-și dea seama ce să facă. Această parte se face prin **urlresolver**-ul la Django (o adresă de pagină web se numește URL (Uniform Resource Locator) - Localizator Uniform de Resurse, deci numele de *urlresolver* are sens). Nu este prea inteligent - ia o listă de modele și încearcă să le potrivească cu URL-ul. Django verifică modelele de sus până jos și dacă se potrivește ceva, Django trimite cererea la funcția potrivită (care se numește *view*).
 
 Imaginează-ți un poștaș cu o scrisoare. Ea trece de-a lungul străzii și compară la fiecare casă numărul cu cel de pe scrisoare. Dacă coincid, ea lasă scrisoarea acolo. Așa lucrează urlresolver-ul!
 
-In the *view* function, all the interesting things are done: we can look at a database to look for some information. Poate utilizatorul a solicitat să schimbe ceva în baza de date? Like a letter saying, "Please change the description of my job." The *view* can check if you are allowed to do that, then update the job description for you and send back a message: "Done!" Then the *view* generates a response and Django can send it to the user's web browser.
+În funcția *view* se realizează toate lucrurile interesante: ne putem uita într-o bază de date pentru a căuta o informație anumită. Poate utilizatorul a solicitat să schimbe ceva în baza de date? Cum ar fi o scrisoare „Vă rog să schimbați descrierea job-ului meu.” Un *view* poate verifica dacă îți este permis să faci asta, apoi să actualizeze descrierea job-ului pentru tine și să răspundă cu un mesaj de confirmare: „Gata!”.
 
 The description above is a little bit simplified, but you don't need to know all the technical things yet. Having a general idea is enough.
 
