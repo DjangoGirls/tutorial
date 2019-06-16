@@ -220,7 +220,7 @@ if form.is_valid():
     post.save()
 ```
 
-În general, avem două lucruri: salvăm formular, utilizând `form.save` și adăugăm autor (pentru că câmpul `author` n-a fost în `PostForm` și el este obligatoriu). `commit=False` înseamnă că noi nu dorim să salvăm modelul `Post` până când – dintâi, noi dorim să adăugăm autorul. Majoritatea timpului o să utilizați `form.save()` fără `commit=False`, dar în cazul acesta, noi avem nevoie de acesta. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+În general, avem două lucruri: salvăm formular, utilizând `form.save` și adăugăm autor (pentru că câmpul `author` n-a fost în `PostForm` și el este obligatoriu). `commit=False` înseamnă că noi nu dorim să salvăm modelul `Post` până când – dintâi, noi dorim să adăugăm autorul. Majoritatea timpului o să utilizați `form.save()` fără `commit=False`, dar în cazul acesta, noi avem nevoie de acesta. `post.save()` o să păstreze schimbările (adăugând autor) și blogul nou este creat!
 
 Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
 
