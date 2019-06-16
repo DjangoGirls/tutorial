@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-Este timp să completăm bloc cu `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Este timp să completăm bloc cu `[...]`. Dacă `method` este `POST` atunci dorim să constructăm `PostForm` cu dată de la formular? O să facem în fel următor:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -206,9 +206,9 @@ Este timp să completăm bloc cu `[...]`. If `method` is `POST` then we want to 
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Următorul lucru este de a verifica că forma este corectă (toate câmpurile obligatorii sunt setate și au valorile corecte). Facem acesta cu `form.is_valid()`.
 
-We check if the form is valid and if so, we can save it!
+Verificăm dacă formular este valid, dacă este, îl salvăm!
 
 {% filename %}blog/views.py{% endfilename %}
 
