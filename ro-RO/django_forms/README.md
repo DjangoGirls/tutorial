@@ -52,9 +52,9 @@ Este momentul să deschidem `blog/templates/blog/base.html`. Vom adăuga un link
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Dorim să numim noul view `post_new`. Clasa `"glyphicon glyphicon-plus"` este de la bootstrap, pe care îl utilizăm, și va afișa un simbol de plus.
 
-After adding the line, your HTML file should now look like this:
+După adăugarea liniei, fișierul HTML trebuie să arate în modul următor:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
