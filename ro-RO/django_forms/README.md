@@ -169,13 +169,13 @@ E timp pentru a actualiza pagina! Formular este afișat!
 
 Dar așteptați un minut! Ce o să întâmplă când voi tapați ceva în `title` (titlu) și `text` (text) și o să le salvați?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Nimic! Suntem pe aceeași pagină și textul s-a dispărut... și nici un post n-a fost adăugat. Deci care este problema?
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+Răspunsul este: nu este o problemă. Trebuie să mai adăugăm codul în funcție *view*.
 
-## Saving the form
+## Salvarea formularului
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Deschideți `blog/views.py`. Acum totul ce noi avem în funcție `post_new` este următoare:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-When we submit the form, we are brought back to the same view, but this time we have some more data in `request`, more specifically in `request.POST` (the naming has nothing to do with a blog "post"; it's to do with the fact that we're "posting" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
+Când facem un submit a formularului, noi suntem redirecționați la aceeași funcție, dar în cazul acesta avem mai multe date în `request`, de exemplu, în `request.POST` (denumirea POST nu este din cauza postului de blog; dar din cauza că "postăm" data). Remember how in the HTML file, our `<form>` definition had the variable `method="POST"`? All the fields from the form are now in `request.POST`. You should not rename `POST` to anything else (the only other valid value for `method` is `GET`, but we have no time to explain what the difference is).
 
 So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
 
