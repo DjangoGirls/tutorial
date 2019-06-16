@@ -32,7 +32,7 @@ Gẹ́gẹ́ bó o ṣe ríi, gbogbo ohun tí a ní ni èyí:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Èyí túmọ̀ sí pé Django lóye rẹ̀ gẹ́gẹ́ bí àkójọ àwọn ohun-èlò kan. Rántí láti **Ìfihàn sí Python** bí a ṣe lè ṣàfihàn àwọn àkójọ? Bẹ́ẹ̀ni, pẹ̀lú for loops! In a Django template you do them like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
