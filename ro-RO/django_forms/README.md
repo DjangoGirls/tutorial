@@ -116,7 +116,7 @@ După actualizarea site-ului noi vedem eroare `AttributeError`, pentru că noi n
 
 ## post_new view
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Este timp de a deschide fișierul `blog/views.py` în editorul de cod și a adăuga linii următoare, cu liniile `from`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +124,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+Și funcție *view*:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,11 +134,11 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Pentru a crea un formular nou `Post`, noi trebuie să executăm `PostForm()` și să-l transmitem rezultat în șablon. O să mai întoarcem la acest *view*, dar acum hai să creăm un șablon pentru un formular.
 
-## Template
+## Șablon
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+Trebuie să creăm un fișier `post_edit.html` în directoriu `blog/templates/blog` și să-l deschidem în editor de cod. Pentru a face ca formularul să lucreze, trebuie să asigurăm de următoare:
 
 * We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
