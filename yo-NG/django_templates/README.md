@@ -12,7 +12,7 @@ Wòó, nínú HTML, ìwọ kò lè kọ kóòdù Python, nítorí pé àwọn a�
 
 Nínú àkòrí tó ṣáájú náà, a fún àwòṣe wa ní àkójọ àwọn àròkọ kan nínú variable `posts` náà. Ní báyìí, a ó ṣàfihàn rẹ̀ nínú HTML.
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+Láti ṣàtẹ̀jáde variable kan nínú àwọn àwòṣe Django, a ma lo àkámọ́ onídodo méjì pẹ̀lú orúkọ variable náà nínú rẹ̀, báyìí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,7 +20,7 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Gbìyànjú èyí nínú àwòṣe `blog/templates/blog/post_list.html` rẹ. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
 ![Figure 13.1](images/step1.png)
 
