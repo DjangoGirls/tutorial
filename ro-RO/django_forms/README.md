@@ -140,14 +140,14 @@ Pentru a crea un formular nou `Post`, noi trebuie să executăm `PostForm()` și
 
 Trebuie să creăm un fișier `post_edit.html` în directoriu `blog/templates/blog` și să-l deschidem în editor de cod. Pentru a face ca formularul să lucreze, trebuie să asigurăm de următoare:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+* Noi trebuie să afișăm pe formular. Putem să facem acesta (de exemplu) în mod următor {% raw %}`{{ form.as_p }}`{% endraw %}.
+* Linie de sus trebuie să fie între tăgurile HTML form: `<form method="POST">...</form>`.
+* Avem nevoie de butonul `Save` (Salvează). Facem acesta cu un buton HTML: `<button type="submit">Save</button>`.
+* Și în final, după deschiderea tăgului `<form ...>` noi trebuie să adăugăm {% raw %}`{% csrf_token %}`{% endraw %}. Acesta este foarte important pentru că face formulare protejate! Dacă nu faceți acesta, Django va da o eroare când o să încercați să-l salvați pe formular:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
-OK, so let's see how the HTML in `post_edit.html` should look:
+Hai să vedem cum HTML în `post_edit.html` trebuie să arăte:
 
 {% filename %}blog/templates/blog/post_edit.html{% endfilename %}
 
@@ -163,11 +163,11 @@ OK, so let's see how the HTML in `post_edit.html` should look:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+E timp pentru a actualiza pagina! Formular este afișat!
 
 ![New form](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Dar așteptați un minut! Ce o să întâmplă când voi tapați ceva în `title` (titlu) și `text` (text) și o să le salvați?
 
 Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
 
