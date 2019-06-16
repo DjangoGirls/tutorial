@@ -6,7 +6,7 @@
 
 Wòó, nínú HTML, ìwọ kò lè kọ kóòdù Python, nítorí pé àwọn aṣàwákiri kò loye rẹ̀. Wọ́n mọ HTML nìkan. A sì mọ̀ pé HTML má n wà lójú kan, nígbà tí Python má n ṣiṣẹ́.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**Àwọn àmì àwòṣe Django** fún wa láàyè láti gbé àwọn nnkan tó jẹ́ mọ́ Python sínú HTML, kó o bàa lè yára kọ́ àwọn ààyè ayélujára tó n ṣiṣẹ́. Ó dára!
 
 ## Display post list template
 
