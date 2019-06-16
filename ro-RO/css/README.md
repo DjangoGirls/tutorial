@@ -16,7 +16,7 @@ A fost scris de programatorii care au lucrat la Twitter. Acum e dezvoltat de vol
 
 ## Instalăm Bootstrap
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Pentru a instala Bootstrap, deschideți fișierul `.html` în editorul de cod și adăugați codul următor în secție `<head>`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Aceasta nu adaugă nici un fișier la proiect, ci doar face referință la fișiere care există pe Internet. Deschideți website-ul și actualizați pagina. Iată-l!
 
 ![Figura 14.1](images/bootstrap1.png)
 
@@ -37,7 +37,7 @@ Deja arată mai frumos!
 
 ### Unde se pun fișierele statice pentru Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django deja știe unde să găsească fișierele statice pentru aplicația "admin" preconfigurată. Acum trebuie doar să adăugați niște fișiere statice pentru aplicația `blog`.
 
 Facem asta prin crearea unui dosar numit `static` înăuntrul blog-ului:
 
@@ -66,7 +66,7 @@ E timpul pentru a scrie niște CSS! Deschidem fișierul `blog/static/css/blog.cs
 
 Nu ne vom adînci prea mult în personalizarea și învățarea CSS. La sfîrșitul acestei pagini este o recomandare pentru un curs gratis de CSS dacă este dorința de a afla mai multe.
 
-Dar hai să facem cel puțin ceva. Maybe we could change the color of our headers? Pentru a înțelege culorile, calculatoarele ulilizează niște coduri speciale. Aceste coduri încep cu `#` urmate de 6 litere (A-F) și numere (0-9). De exemplu, codul pentru culoarea albastră este `#0000FF`. Putem găsi codurile a multe culori aici: http://www.colorpicker.com/. Poți de asemenea utiliza [culori predefinite](http://www.w3schools.com/colors/colors_names.asp), precum `red` - roșu și `green` - verde.
+Dar hai să facem cel puțin ceva. Poate am putea schimba culoarea header-ului? Pentru a înțelege culorile, calculatoarele ulilizează niște coduri speciale. Aceste coduri încep cu `#` urmate de 6 litere (A-F) și numere (0-9). De exemplu, codul pentru culoarea albastră este `#0000FF`. Putem găsi codurile a multe culori aici: http://www.colorpicker.com/. Poți de asemenea utiliza [culori predefinite](http://www.w3schools.com/colors/colors_names.asp), precum `red` - roșu și `green` - verde.
 
 Adaugăm următorul cod în fișierul `blog/static/css/blog.css`:
 
