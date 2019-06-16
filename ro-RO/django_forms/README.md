@@ -187,7 +187,7 @@ def post_new(request):
 
 Când facem un submit a formularului, noi suntem redirecționați la aceeași funcție, dar în cazul acesta avem mai multe date în `request`, de exemplu, în `request.POST` (denumirea POST nu este din cauza postului de blog; dar din cauza că "postăm" data). Țineți minte, în fișierul HTML la definiție `<form>` am adăugat atribut `method="POST"`? Toate aceste câmpurile din formular sunt în `request.POST`. Nu trebuie să renumiți `POST` pe altceva (o altă variantă validă pentru atributul `method` este `GET`, dar n-avem timp să explicăm care este diferență).
 
-So in our *view* we have two separate situations to handle: first, when we access the page for the first time and we want a blank form, and second, when we go back to the *view* with all form data we just typed. So we need to add a condition (we will use `if` for that):
+Deci în funcția *view* noi avem două situații sepărate pentru a gestiona: dintâi, noi accesăm pagină pentru prima dată și dorim să afișăm formularul fără date, în al doilea rând, când ne întoarcem la *view* cu toate date care au fost întroduse. Trebuie să adăugăm o condiție (o să utilizăm `if` pentru acesta):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Este timp să completăm bloc cu `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
 
 {% filename %}blog/views.py{% endfilename %}
 
