@@ -203,7 +203,7 @@ Acum adaugăm o clasă `post` la `div`-ul care conține un post de blog.
 </div>
 ```
 
-Acum vom adăuga blocuri de declarare la selectoare diferite. Selectoarele care încep cu `.` se referă la clase. Sunt o mulțime de tutoriale și explicări a CSS pe web care ne pot ajuta să înțelegem codul următor. For now, copy and paste it into your `blog/static/css/blog.css` file:
+Acum vom adăuga blocuri de declarare la selectoare diferite. Selectoarele care încep cu `.` se referă la clase. Sunt o mulțime de tutoriale și explicări a CSS pe web care ne pot ajuta să înțelegem codul următor. Pentru moment, doar copiază-l și inserează-l in fișierul `blog/static/css/blog.css`:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
