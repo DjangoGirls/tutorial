@@ -6,7 +6,7 @@ Atunci când construiești un web site, întodeauna vei avea nevoie de un set si
 
 Din fericire pentru tine, cu mult timp în urmă alți oameni au observat că dezvoltatorii web întâmpină probleme similare atunci când construiesc un web site nou, așa că ei au făcut echipă și au creat aceste framework-uri (infrastructuri) (Django fiind unul dintre acestea) care îți oferă componente gata făcute pentru folosire.
 
-Frameworks exist to save you from having to reinvent the wheel and to help alleviate some of the overhead when you’re building a new site.
+Framework-urile există pentru a te salva de la necesitatea de a reinventa roata și a te ajuta să treci peste lucrurile de rutină când creezi site-ul tău web.
 
 ## De ce ai nevoie de un framework?
 
