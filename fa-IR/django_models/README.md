@@ -1,10 +1,10 @@
 # مدل در جنگو
 
-What we want to create now is something that will store all the posts in our blog. But to be able to do that we need to talk a little bit about things called `objects`.
+آنچه الان می‌خواهیم بسازیم چیزی است که تمام پست‌های ما در وبلاگ را ذخیره می‌کند. اما برای اینکه بتوانیم این کار را بکنیم باید کمی در مورد مفهوم `شیء` صحبت کنیم.
 
-## Objects
+## اشیاء
 
-There is a concept in programming called `object-oriented programming`. The idea is that instead of writing everything as a boring sequence of programming instructions, we can model things and define how they interact with each other.
+مفهومی در برنامه نویسی وجود دارد که به آن `برنامه‌نویسی شیء‌گرا` گفته می‌شود. به این معنی که به جای آنکه همه چیز را در ردیف‌هایی طولانی از دستورات بنویسیم می‌توانیم مدل هایی درست کنیم و تعریف کنیم که این مدل ها چگونه با هم ارتباط داشته باشند.
 
 So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
 
