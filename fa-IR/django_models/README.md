@@ -10,7 +10,7 @@
 
 اگر بخواهیم مدلی برای یک گربه بسازیم یک شیء به نام `Cat` میسازیم که دارای خصوصیاتی است مانند `رنگ`، `سن`، `حالت` (مثلاً خوب، بد یا خواب‌آلود) و `مالک` (که می‌تواند اشاره به یک شیء `Person` یا در در مورد گربه‌های ولگرد، بدون اشاره به فردی خاص، خالی بماند).
 
-Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
+یک شیء از نوع `Cat` دارای فعالیتی‌هایی مانند: `خُرخُر کردن`، `خراشیدن` و یا `غذا خوردن` است. (برخی مواقع به گربه، `غذای گربه` می‌‌دهیم که می‌تواند یک شیء جداگانه باشد که خصوصیت `مزه` داشته باشد).
 
     Cat
     --------
@@ -28,9 +28,9 @@ Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we
     taste
     
 
-So basically the idea is to describe real things in code with properties (called `object properties`) and actions (called `methods`).
+بنابراین ایده اصلی آن است که چیزهای واقعی در کدها با خصوصیات (که به آن `object properties` می‌گوییم) و اعمال (که به آن `methods` می‌گوییم) تعریف شوند.
 
-How will we model blog posts then? We want to build a blog, right?
+ما می‌خواهیم یک وبلاگ درست کنیم، درست است؟ چگونه یک مدل برای پست‌های وبلاگی بسازیم؟
 
 We need to answer the question: What is a blog post? What properties should it have?
 
