@@ -88,7 +88,7 @@ It'd be good to see if your website will still be working on the public Internet
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+* Lẹ́yìn náà, wọlé padà sí [PythonAnywhere](https://www.pythonanywhere.com/consoles/) kí o lọ sí **Bash console** rẹ (tàbí bẹ̀rẹ̀ tuntun kan), àti ṣe:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
