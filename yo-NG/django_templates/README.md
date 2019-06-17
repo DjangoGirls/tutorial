@@ -101,7 +101,7 @@ Yóò dára láti ṣàyẹ̀wò bóyá ààyè ayélujára rẹ ṣì máa ṣi
 
 * Ní ìparí, lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà kí o sì tẹ **Reload** lórí ètò ayélujára rẹ. (Láti dé àwọn ojú-ìwé PythonAnywhere mìíràn láti console náà, lo bọ́tìnnì àkójọ àṣàyàn náà ní igun òkè lápá ọ̀tún.) Ó yẹ kí ìmúdójúìwọ̀n rẹ ti máa ṣiṣẹ́ lórí https://subdomain.pythonanywhere.com -- ṣàyẹ̀wò rẹ̀ nínú aṣàwákiri náà! Tí àwọn àròkọ blog lórí ààyè PythonAnywhere rẹ kò bá dọ́gba pẹ̀lú àwọn àròkọ tó wà lórí blog tí o pèsè lórí server kọ̀mpútà rẹ, kò sóhun tó burú níbẹ̀. Àwọn àkójọpọ̀ dátà tó wà lórí kọ̀mpútà tìẹ àti Python Anywhere kò ní ìbádọ́gba pẹ̀lú àwọn fáìlì rẹ yòókù.
 
-Kú oríire! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Kú oríire! Ní báyìí, tẹ̀síwájú kí o gbìyànjú ṣíṣe àfikún àròkọ tuntun kan sínú alábòójútó Django rẹ (rántí láti ṣàfikún published_date! (ọjọ́ ìtẹ̀jáde)) Rí dájú pé o wà nínú alábòójútó Django náà fún ààyè pythonanywhere rẹ, https://subdomain.pythonanywhere.com/admin. Lẹ́yìn náà, ṣe ìmúdójúìwọ̀n ojú-ìwé rẹ láti ṣàyẹ̀wò bóyá àròkọ náà máa hàn níbẹ̀.
 
 Ó n ṣiṣẹ́ bíi oògùn kan? Inú wa dùn! kúrò níbi kọ̀mpútà rẹ fún ìgbà díẹ̀ – o lè sinmi báyìí. :)
 
