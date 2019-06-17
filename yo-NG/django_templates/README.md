@@ -64,11 +64,11 @@ Gbìyànjú èyí nínú àwòṣe rẹ.
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw %} Gbogbo nnkan tí o bá fi sí àárín `{% for %}` àti `{% endfor %}` yíò máa jẹ́ ṣíṣe fún ohun-èlò kọ̀ọ̀kan nínú àkójọ náà. Ṣe ìmúdójúìwọ̀n ojú-ìwé rẹ:{% endraw %}
 
 ![Figure 13.3](images/step3.png)
 
-Ṣe o ti ṣàkíyèsí pé a lo àkọsílẹ̀ tó yàtọ̀ díẹ̀ lọ́tẹ̀ yìí (`{{ post.title }}` tàbí `{{ post.text }}`)? A ń lo dátà tó wà nínú ọ̀kọ̀ọ̀kan àwọn ààyè tí a ṣàlàyé nínú àwòṣe `Post` wa. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Ṣe o ti ṣàkíyèsí pé a lo àkọsílẹ̀ tó yàtọ̀ díẹ̀ lọ́tẹ̀ yìí (`{{ post.title }}` tàbí `{{ post.text }}`)? A ń lo dátà tó wà nínú ọ̀kọ̀ọ̀kan àwọn ààyè tí a ṣàlàyé nínú àwòṣe `Post` wa. Àti pé, `|linebreaksbr` náà n mú ọ̀rọ̀ àwọn àròkọ náà gba asẹ́ kan kọjá láti ṣàyípadà àwọn ìdá ìlà (line-breaks) sí ìpínrọ̀ (paragraphs).
 
 ## Ó ṣì ku nnkan kan
 
