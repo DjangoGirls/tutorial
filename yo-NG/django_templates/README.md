@@ -99,7 +99,7 @@ Yóò dára láti ṣàyẹ̀wò bóyá ààyè ayélujára rẹ ṣì máa ṣi
 
 (Rántí láti rọ́pò `<your-pythonanywhere-domain>` pẹ̀lú subdomain PythonAnywhere rẹ, láìsí àwọn àkámọ́ onígun náà.)
 
-* Ní ìparí, lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà kí o sì tẹ **Reload** lórí ètò ayélujára rẹ. (Láti dé àwọn ojú-ìwé PythonAnywhere mìíràn láti console náà, lo bọ́tìnnì àkójọ àṣàyàn náà ní igun òkè lápá ọ̀tún.) Ó yẹ kí ìmúdójúìwọ̀n rẹ ti máa ṣiṣẹ́ lórí https://subdomain.pythonanywhere.com -- ṣàyẹ̀wò rẹ̀ nínú aṣàwákiri náà! Tí àwọn àròkọ blog lórí ààyè PythonAnywhere rẹ kò bá dọ́gba pẹ̀lú àwọn àròkọ tó wà lórí blog tí o pèsè lórí server kọ̀mpútà rẹ, kò sóhun tó burú níbẹ̀. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Ní ìparí, lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà kí o sì tẹ **Reload** lórí ètò ayélujára rẹ. (Láti dé àwọn ojú-ìwé PythonAnywhere mìíràn láti console náà, lo bọ́tìnnì àkójọ àṣàyàn náà ní igun òkè lápá ọ̀tún.) Ó yẹ kí ìmúdójúìwọ̀n rẹ ti máa ṣiṣẹ́ lórí https://subdomain.pythonanywhere.com -- ṣàyẹ̀wò rẹ̀ nínú aṣàwákiri náà! Tí àwọn àròkọ blog lórí ààyè PythonAnywhere rẹ kò bá dọ́gba pẹ̀lú àwọn àròkọ tó wà lórí blog tí o pèsè lórí server kọ̀mpútà rẹ, kò sóhun tó burú níbẹ̀. Àwọn àkójọpọ̀ dátà tó wà lórí kọ̀mpútà tìẹ àti Python Anywhere kò ní ìbádọ́gba pẹ̀lú àwọn fáìlì rẹ yòókù.
 
 Kú oríire! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
