@@ -68,7 +68,7 @@ Gbìyànjú èyí nínú àwòṣe rẹ.
 
 ![Figure 13.3](images/step3.png)
 
-Ṣe o ti ṣàkíyèsí pé a lo àkọsílẹ̀ tó yàtọ̀ díẹ̀ lọ́tẹ̀ yìí (`{{ post.title }}` tàbí `{{ post.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Ṣe o ti ṣàkíyèsí pé a lo àkọsílẹ̀ tó yàtọ̀ díẹ̀ lọ́tẹ̀ yìí (`{{ post.title }}` tàbí `{{ post.text }}`)? A ń lo dátà tó wà nínú ọ̀kọ̀ọ̀kan àwọn ààyè tí a ṣàlàyé nínú àwòṣe `Post` wa. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## Ó ṣì ku nnkan kan
 
