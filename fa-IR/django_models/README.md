@@ -6,9 +6,9 @@
 
 مفهومی در برنامه نویسی وجود دارد که به آن `برنامه‌نویسی شیء‌گرا` گفته می‌شود. به این معنی که به جای آنکه همه چیز را در ردیف‌هایی طولانی از دستورات بنویسیم می‌توانیم مدل هایی درست کنیم و تعریف کنیم که این مدل ها چگونه با هم ارتباط داشته باشند.
 
-So what is an object? It is a collection of properties and actions. It sounds weird, but we will give you an example.
+یک شیء چیست؟ یک شیء مجموعه‌ای از خصوصیات و اعمال است. ممکن است کمی عجیب باشد اما برای شما مثالی خواهیم زد.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+اگر بخواهیم مدلی برای یک گربه بسازیم یک شیء به نام `Cat` میسازیم که دارای خصوصیاتی است مانند `رنگ`، `سن`، `حالت` (مثلاً خوب، بد یا خواب‌آلود) و `مالک` (که می‌تواند اشاره به یک شیء `Person` یا در در مورد گربه‌های ولگرد، بدون اشاره به فردی خاص، خالی بماند).
 
 Then the `Cat` has some actions: `purr`, `scratch`, or `feed` (in which case, we will give the cat some `CatFood`, which could be a separate object with properties, like `taste`).
 
