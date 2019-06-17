@@ -46,7 +46,7 @@ Gbìyànjú èyí nínú àwòṣe rẹ.
 
 ![Figure 13.2](images/step2.png)
 
-Ó n ṣiṣẹ́! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+Ó n ṣiṣẹ́! Ṣùgbọ́n a fẹ́ kí àwọn àròkọ náà gba ìfihàn gẹ́gẹ́ bí àwọn àròkọ tó wà lójú kan tí a ti ṣẹ̀dá ṣáájú nínú àkòrí **Ìfihàn sí HTML** náà. You can mix HTML and template tags. Our `body` will look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
