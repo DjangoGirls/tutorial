@@ -70,9 +70,9 @@ Gbìyànjú èyí nínú àwòṣe rẹ.
 
 Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
-## One more thing
+## Ó ṣì ku nnkan kan
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Yóò dára láti ṣàyẹ̀wò bóyá ààyè ayélujára rẹ ṣì máa ṣiṣẹ́ lórí Íńtánẹ́ẹ̀tì gbangba náà, àbí bẹ́ẹ̀ kọ? Jẹ́ ká gbìyànjú ṣíṣe àgbékalẹ̀ sí PythonAnywhere lẹ́ẹ̀kan si. Àwọn ìgbésẹ̀ náà ní ṣókí nìyí…
 
 * Lákọ̀ọ́kọ́, ti kóòdù rẹ sí GitHub
 
