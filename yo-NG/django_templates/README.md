@@ -103,6 +103,6 @@ It'd be good to see if your website will still be working on the public Internet
 
 Kú oríire! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+Ó n ṣiṣẹ́ bíi oògùn kan? Inú wa dùn! kúrò níbi kọ̀mpútà rẹ fún ìgbà díẹ̀ – o lè sinmi báyìí. :)
 
 ![Figure 13.4](images/donut.png)
