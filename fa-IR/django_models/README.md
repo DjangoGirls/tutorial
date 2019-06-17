@@ -32,9 +32,9 @@
 
 ما می‌خواهیم یک وبلاگ درست کنیم، درست است؟ چگونه یک مدل برای پست‌های وبلاگی بسازیم؟
 
-We need to answer the question: What is a blog post? What properties should it have?
+باید به این سوال پاسخ دهیم که: یک پست وبلاگی چیست؟ چه خصوصیاتی دارد؟
 
-Well, for sure our blog post needs some text with its content and a title, right? It would be also nice to know who wrote it – so we need an author. Finally, we want to know when the post was created and published.
+خب، پست وبلاگی ما قطعاً به مقداری نوشته و یک عنوان نیاز دارد، درست است؟ بسیار خوب خواهد بود که بدانیم چه کسی مطلب را نوشته است، پس به نویسنده هم احتیاج داریم. سرانجام می‌خواهیم بدانیم که این مطلب در چه تاریخی نوشته و منتشر شده است.
 
     Post
     --------
@@ -45,11 +45,11 @@ Well, for sure our blog post needs some text with its content and a title, right
     published_date
     
 
-What kind of things could be done with a blog post? It would be nice to have some `method` that publishes the post, right?
+چه کارهایی با یک پست وبلاگی می‌توان انجام داد؟ بسیار جالب خواهد بود که `متدهایی` داشته باشیم که بتواند یک پست را منتشر کند. چطور است؟
 
-So we will need a `publish` method.
+بنابراین به یک متد انتشار یا `publish` نیاز داریم.
 
-Since we already know what we want to achieve, let's start modeling it in Django!
+حالا که می‌دانیم دقیقاً به چه چیزی احتیاچ داریم بیایید مدل سازی در جنگو را شروع کنیم!
 
 ## Django model
 
