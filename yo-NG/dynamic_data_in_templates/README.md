@@ -62,7 +62,7 @@ Please note that we create a *variable* for our QuerySet: `posts`. Treat this as
 
 In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
 
-So finally our `blog/views.py` file should look like this:
+Ní ìparí, ó yẹ kí fáìlì `blog/views.py` wa rí báyìí:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -76,6 +76,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
-That's it! Time to go back to our template and display this QuerySet!
+Ó parí! Àkókò láti padà sí àwòṣe (template) wa àti ṣàfihàn QuerySet yìí!
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
+Ṣé o fẹ́ ka díẹ̀ si nípa QuerySets nínú Django? Ó yẹ kí o wo ibí: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
