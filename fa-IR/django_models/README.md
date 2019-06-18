@@ -61,9 +61,9 @@
 
 ### ساختن یک اپلیکیشن
 
-To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
+برای آنکه همه چیز مرتب باشد ما یک برامه مجزا (اپلیکیشن) در پروژه خود خواهیم ساخت. بسیار خوب است که همه چیز از ابتدا مرتب باشد. برای ساخت یک برنامه جدید باید دستور زیر را در خط فرمان اجرا کنیم (در دایرکتوری `djangogirls` و جایی که فایل `manage.py` وجود دارد):
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}Mac OS X or Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
@@ -73,27 +73,27 @@ To keep everything tidy, we will create a separate application inside our projec
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+خواهید دید که یک پوشه جدید به نام `blog` ساخته شده و شامل تعدادی فایل است. پوشه‌ها و فایل‌ها در پروژه ما باید شبیه به این باشد:
 
     djangogirls
-    ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
-    |   ├── urls.py
-    │   └── views.py
-    ├── db.sqlite3
-    ├── manage.py
-    ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
-    └── requirements.txt
+    ┤── blog
+    │   ┤── __init__.py
+    │   ┤── admin.py
+    │   ┤── apps.py
+    │   ┤── migrations
+    │   │   ┘── __init__.py
+    │   ┤── models.py
+    │   ┤── tests.py
+    │   ┤── urls.py
+    │   ┘── views.py
+    ┤── db.sqlite3
+    ┤── manage.py
+    ┤── mysite
+    │   ┤── __init__.py
+    │   ┤── settings.py
+    │   ┤── urls.py
+    │   ┘── wsgi.py
+    ┘── requirements.txt
     
 
 After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
