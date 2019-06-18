@@ -1,6 +1,6 @@
 # Àwọn dátà tó n ṣiṣẹ́ nínú àwọn àwòṣe (template)
 
-A ní àwọn ohun oríṣiríṣi ní ipò: a ti ṣàlàyé àwòṣe `Post` náà nínú `models.py`, a ní `post_list` nínú `views.py` àti àwòṣe (template) náà ní àfikún. Ṣùgbọ́n báwo ni a ó ṣe mú àwọn àròkọ wa hàn nínú àwòṣe HTML wa? Nítorí pé ohun tí a fẹ́ ṣe nìyẹn – mú àwọn àkóónú (àwọn àwòṣe tí a tọ́jú sínú àkójọpọ̀ dátà náà) àti ṣàfihàn rẹ̀ lọ́nà tó dára nínú àwòṣe wa, àbí bẹ́ẹ̀ kọ?
+A ní àwọn ohun oríṣiríṣi ní ipò: a ti ṣàlàyé àwòṣe `Post` náà nínú `models.py`, a ní `post_list` nínú `views.py` àti àwòṣe (template) náà ní àfikún. Ṣùgbọ́n báwo ni a ó ṣe mú àwọn àròkọ wa hàn nínú àwòṣe HTML wa? Nítorí pé ohun tí a fẹ́ ṣe nìyẹn – a fẹ́ mú àkóónú kan (àwọn àwòṣe tí a tọ́jú sínú àkójọpọ̀ dátà náà) láti ṣàfihàn rẹ̀ lọ́nà tó dára nínú àwòṣe wa, àbí bẹ́ẹ̀ kọ?
 
 Èyí jẹ́ ohun tó yẹ kí àwọn *view* máa ṣe: ṣe ìsopọ̀ àwọn àwòṣe (models) àti àwọn àwòṣe (templates). Nínú *view* `post_list` wa, a máa nílò láti mú àwọn àwòṣe (model) tí a fẹ ṣàfihàn náà kí a sì darí wọn sí àwòṣe (template) náà. Nínú *view* kan, a máa pinnu ohun (àwòṣe - model) tí yíò hàn nínú àwòṣe (template) kan.
 
@@ -56,7 +56,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
+Apá ìkẹhìn tí kò sí níbẹ̀ n darí QuerySet `posts` náà sí àyíká àwòṣe náà. Má dààmú – a ó ṣàlàyé bí a ṣe lè ṣàfihàn rẹ̀ nínú àkòrí kan níwájú.
 
 Jọ̀wọ́ ṣàkíyèsí pé a ṣẹ̀dá *variable* kan fún QuerySet wa: `posts`. Mú èyí gẹ́gẹ́ bí orúkọ QuerySet wa. Láti àkókò yíì lọ, a lè tọ́ka sí i nípasẹ̀ orúkọ yìí.
 
