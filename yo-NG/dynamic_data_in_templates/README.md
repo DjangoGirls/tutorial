@@ -42,7 +42,7 @@ So now we want published blog posts sorted by `published_date`, right? We alread
 Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 ```
 
-So, let's open the `blog/views.py` file in the code editor, and add this piece of code to the function `def post_list(request)` -- but don't forget to first add `from django.utils import timezone`:
+Nítorí náà, jẹ́ ká ṣí fáìlì `blog/views.py` nínú olóòtú kóòdù náà, kí a sì ṣàfikún abala kóòdù yìí sí iṣẹ́ `def post_list(request)` náà -- ṣùgbọ́n má gbàgbé láti kọ́kọ́ ṣàfikún `from django.utils import timezone`:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -60,7 +60,7 @@ The last missing part is passing the `posts` QuerySet to the template context. D
 
 Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
 
-In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. We need to give them names (we will stick to `'posts'` right now). :) Ó yẹ kó rí báyìí: `{'posts': posts}`. Jọ̀wọ́ ṣàkíyèsí pé apá tó wà níwájú `:` jẹ́ fọ́nrán (string) kan; o nílò láti wé e pẹ̀lú àwọn àmì àyọlò: `''`.
+In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. A nílò láti fún wọn ní orúkọ (a óò fara mọ́ `'posts'` lọ́wọ́lọ́wọ́). :) Ó yẹ kó rí báyìí: `{'posts': posts}`. Jọ̀wọ́ ṣàkíyèsí pé apá tó wà níwájú `:` jẹ́ fọ́nrán (string) kan; o nílò láti wé e pẹ̀lú àwọn àmì àyọlò: `''`.
 
 Ní ìparí, ó yẹ kí fáìlì `blog/views.py` wa rí báyìí:
 
