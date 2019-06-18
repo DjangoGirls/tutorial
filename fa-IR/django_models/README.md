@@ -55,11 +55,11 @@
 
 حالا که می‌دانیم شیء چیست، می‌توانیم یک مدل جنگویی برای پست‌های وبلاگ‌مان بسازیم.
 
-یک مدل در جنگو نوعی شیء ویژه است که در `پایگاه داده` یا database ذخیره می‌شود. یک پایگاه داده مجموعه‌ای از اطلاعات است. This is a place in which you will store information about users, your blog posts, etc. We will be using a SQLite database to store our data. This is the default Django database adapter – it'll be enough for us right now.
+یک مدل در جنگو نوعی شیء ویژه است که در `پایگاه داده` یا database ذخیره می‌شود. یک پایگاه داده مجموعه‌ای از اطلاعات است. جایی است که در آن اطلاعات مربوط به کاربرها، پست‌های وبلاگی و غیره را نگهداری می‌کنیم. ما از پایگاه داده SQLite برای ذخیره اطلاعات استفاده می‌کنیم. این پایگاه داده، پایگاه داده پیشفرض در جنگو است و الان برای ما کافی است.
 
-You can think of a model in the database as a spreadsheet with columns (fields) and rows (data).
+شما می‌توانید یک مدل را در پایگاه داده، چیزی شبیه به یک صفحه گسترده با ستون‌ها (فیلدها) و ردیف‌ها(داده‌ها) تصور کنید.
 
-### Creating an application
+### ساختن یک اپلیکیشن
 
 To keep everything tidy, we will create a separate application inside our project. It is very nice to have everything organized from the very beginning. To create an application we need to run the following command in the console (from `djangogirls` directory where `manage.py` file is):
 
