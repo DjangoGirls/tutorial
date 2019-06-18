@@ -61,7 +61,7 @@
 
 ### ساختن یک اپلیکیشن
 
-برای آنکه همه چیز مرتب باشد ما یک برامه مجزا (اپلیکیشن) در پروژه خود خواهیم ساخت. بسیار خوب است که همه چیز از ابتدا مرتب باشد. برای ساخت یک برنامه جدید باید دستور زیر را در خط فرمان اجرا کنیم (در دایرکتوری `djangogirls` و جایی که فایل `manage.py` وجود دارد):
+برای آنکه همه چیز مرتب باشد ما یک برامه مجزا (اپلیکیشن) در پروژه خود خواهیم ساخت. بسیار خوب است که همه چیز از ابتدا مرتب باشد. برای ساخت یک برنامه جدید باید دستور زیر را در خط فرمان اجرا کنیم (در پوشه `djangogirls` و جایی که فایل `manage.py` وجود دارد):
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
@@ -96,7 +96,7 @@
     ┘── requirements.txt
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+بعد از ساختن این برنامه، باید به جنگو بگوییم تا از آن استفاده کند. این کار را در فایل `mysite/settings.py` انجام می‌دهیم -- این فایل را در ویرایشگر کد باز کنید. باید بخش `INSTALLED_APPS` را پیدا کنیم و یک خط شامل `'blog',` را دقیقاً قبل از علامت `]` اضافه کنیم. پس در نهایت شبیه این خواهد بود:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -112,7 +112,7 @@ INSTALLED_APPS = [
 ]
 ```
 
-### Creating a blog post model
+### ساختن مدل برای پست وبلاگ
 
 In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
 
