@@ -58,7 +58,7 @@ def post_list(request):
 
 The last missing part is passing the `posts` QuerySet to the template context. Don't worry – we will cover how to display it in a later chapter.
 
-Please note that we create a *variable* for our QuerySet: `posts`. Treat this as the name of our QuerySet. From now on we can refer to it by this name.
+Jọ̀wọ́ ṣàkíyèsí pé a ṣẹ̀dá *variable* kan fún QuerySet wa: `posts`. Mú èyí gẹ́gẹ́ bí orúkọ QuerySet wa. Láti àkókò yíì lọ, a lè tọ́ka sí i nípasẹ̀ orúkọ yìí.
 
 In the `render` function we have one parameter `request` (everything we receive from the user via the Internet) and another giving the template file (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. A nílò láti fún wọn ní orúkọ (a óò fara mọ́ `'posts'` lọ́wọ́lọ́wọ́). :) Ó yẹ kó rí báyìí: `{'posts': posts}`. Jọ̀wọ́ ṣàkíyèsí pé apá tó wà níwájú `:` jẹ́ fọ́nrán (string) kan; o nílò láti wé e pẹ̀lú àwọn àmì àyọlò: `''`.
 
