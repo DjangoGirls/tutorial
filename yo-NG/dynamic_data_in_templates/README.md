@@ -26,7 +26,7 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-Àmì tó-ín (dot) tó wà níwájú `models` túmọ̀ sí *àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́* tàbí *ètò lọ́wọ́lọ́wọ́*. `views.py` àti `models.py` wà nínú àkójọpọ̀ fáìlì kannáà. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+Àmì tó-ín (dot) tó wà níwájú `models` túmọ̀ sí *àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́* tàbí *ètò lọ́wọ́lọ́wọ́*. `views.py` àti `models.py` wà nínú àkójọpọ̀ fáìlì kannáà. Èyí túmọ̀ sí pé a lè lo `.` àti orúkọ fáìlì náà (láìsí `.py`). Lẹ́yìn náà, a máa ṣàgbéwọlé orúkọ àwòṣe náà (`Post`).
 
 Ṣùgbọ́n kí ló kàn? Láti mú àwọn àròkọ blog láti àwòṣe `Post` náà, a nílò nnkan kan tí a n pé ní `QuerySet`.
 
