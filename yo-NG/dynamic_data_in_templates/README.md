@@ -2,9 +2,9 @@
 
 A ní àwọn ohun oríṣiríṣi ní ipò: a ti ṣàlàyé àwòṣe `Post` náà nínú `models.py`, a ní `post_list` nínú `views.py` àti àwòṣe (template) náà ní àfikún. Ṣùgbọ́n báwo ni a ó ṣe mú àwọn àròkọ wa hàn nínú àwòṣe HTML wa? Nítorí pé ohun tí a fẹ́ ṣe nìyẹn – mú àwọn àkóónú (àwọn àwòṣe tí a tọ́jú sínú àkójọpọ̀ dátà náà) àti ṣàfihàn rẹ̀ lọ́nà tó dára nínú àwòṣe wa, àbí bẹ́ẹ̀ kọ?
 
-Èyí jẹ́ ohun tó yẹ kí àwọn *view* máa ṣe: ṣe ìsopọ̀ àwọn àwòṣe (models) àti àwọn àwòṣe (templates). Nínú *view* `post_list` wa, a máa nílò láti mú àwọn àwòṣe (model) tí a fẹ ṣàfihàn náà kí a sì darí wọn sí àwòṣe (template) náà. In a *view* we decide what (model) will be displayed in a template.
+Èyí jẹ́ ohun tó yẹ kí àwọn *view* máa ṣe: ṣe ìsopọ̀ àwọn àwòṣe (models) àti àwọn àwòṣe (templates). Nínú *view* `post_list` wa, a máa nílò láti mú àwọn àwòṣe (model) tí a fẹ ṣàfihàn náà kí a sì darí wọn sí àwòṣe (template) náà. Nínú *view* kan, a máa pinnu ohun (àwòṣe - model) tí yíò hàn nínú àwòṣe (template) kan.
 
-OK, so how will we achieve this?
+Ó dáa, báwo wá ni a ṣe lè ṣe èyí?
 
 We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
 
