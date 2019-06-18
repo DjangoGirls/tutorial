@@ -114,7 +114,7 @@ INSTALLED_APPS = [
 
 ### ساختن مدل برای پست وبلاگ
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+در فایل `blog/models.py` ما تمام اشیائی را که به آن `مدل Model` می‌گوییم تعریف می‌کنیم. اینجا فضایی است که قالب پست‌های وبلاگی را تعریف می‌کنیم.
 
 Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
 
