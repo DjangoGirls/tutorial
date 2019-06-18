@@ -1,6 +1,6 @@
 # Àwọn dátà tó n ṣiṣẹ́ nínú àwọn àwòṣe (template)
 
-A ní àwọn ohun oríṣiríṣi ní ipò: a ti ṣàlàyé àwòṣe `Post` náà nínú `models.py`, a ní `post_list` nínú `views.py` àti àwòṣe (template) náà ní àfikún. But how will we actually make our posts appear in our HTML template? Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+A ní àwọn ohun oríṣiríṣi ní ipò: a ti ṣàlàyé àwòṣe `Post` náà nínú `models.py`, a ní `post_list` nínú `views.py` àti àwòṣe (template) náà ní àfikún. Ṣùgbọ́n báwo ni a ó ṣe mú àwọn àròkọ wa hàn nínú àwòṣe HTML wa? Nítorí pé ohun tí a fẹ́ ṣe nìyẹn – mú àwọn àkóónú (àwọn àwòṣe tí a tọ́jú sínú àkójọpọ̀ dátà náà) àti ṣàfihàn rẹ̀ lọ́nà tó dára nínú àwòṣe wa, àbí bẹ́ẹ̀ kọ?
 
 This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
 
