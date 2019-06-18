@@ -6,7 +6,7 @@ A ní àwọn ohun oríṣiríṣi ní ipò: a ti ṣàlàyé àwòṣe `Post` n
 
 Ó dáa, báwo wá ni a ṣe lè ṣe èyí?
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+A nílò láti ṣí `blog/views.py` wa nínú olóòtú kóòdù wa. Títí di báyìí, *view* `post_list` rí báyìí:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+Rántí ìgbà tí a sọ̀rọ̀ nípa ṣíṣe àfikún kóòdù tí a kọ ní àwọn fáìlì mìíràn? Àkókò ti tó báyìí tí a ní láti ṣàfikún àwòṣe tí a ti kọ nínú `models.py`. A máa ṣàfikún ìlà `from .models import Post` náà báyìí:
 
 {% filename %}blog/views.py{% endfilename %}
 
