@@ -26,9 +26,9 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+Àmì tó-ín (dot) tó wà níwájú `models` túmọ̀ sí *àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́* tàbí *ètò lọ́wọ́lọ́wọ́*. `views.py` àti `models.py` wà nínú àkójọpọ̀ fáìlì kannáà. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+Ṣùgbọ́n kí ló kàn? Láti mú àwọn àròkọ blog láti àwòṣe `Post` náà, a nílò nnkan kan tí a n pé ní `QuerySet`.
 
 ## QuerySet
 
