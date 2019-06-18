@@ -60,7 +60,7 @@ The last missing part is passing the `posts` QuerySet to the template context. D
 
 Jọ̀wọ́ ṣàkíyèsí pé a ṣẹ̀dá *variable* kan fún QuerySet wa: `posts`. Mú èyí gẹ́gẹ́ bí orúkọ QuerySet wa. Láti àkókò yíì lọ, a lè tọ́ka sí i nípasẹ̀ orúkọ yìí.
 
-Nínú iṣẹ́ `render` náà, a ní parameter `request` kan (gbogbo nnkan tí a gbà láti ọ̀dọ̀ aṣàmúlò náà nípasẹ̀ Íńtánẹ́ẹ̀tì) àti òmíràn tó n fúnni ní fáìlì àwòṣe (template) náà (`'blog/post_list.html'`). The last parameter, `{}`, is a place in which we can add some things for the template to use. A nílò láti fún wọn ní orúkọ (a óò fara mọ́ `'posts'` lọ́wọ́lọ́wọ́). :) Ó yẹ kó rí báyìí: `{'posts': posts}`. Jọ̀wọ́ ṣàkíyèsí pé apá tó wà níwájú `:` jẹ́ fọ́nrán (string) kan; o nílò láti wé e pẹ̀lú àwọn àmì àyọlò: `''`.
+Nínú iṣẹ́ `render` náà, a ní parameter `request` kan (gbogbo nnkan tí a gbà láti ọ̀dọ̀ aṣàmúlò náà nípasẹ̀ Íńtánẹ́ẹ̀tì) àti òmíràn tó n fúnni ní fáìlì àwòṣe (template) náà (`'blog/post_list.html'`). Parameter ìkẹyìn náà, `{}`, jẹ́ ààyè kan tí a ti lè ṣàfikún àwọn nnkan mìíràn fún àwòṣe (template) náà láti lò. A nílò láti fún wọn ní orúkọ (a óò fara mọ́ `'posts'` lọ́wọ́lọ́wọ́). :) Ó yẹ kó rí báyìí: `{'posts': posts}`. Jọ̀wọ́ ṣàkíyèsí pé apá tó wà níwájú `:` jẹ́ fọ́nrán (string) kan; o nílò láti wé e pẹ̀lú àwọn àmì àyọlò: `''`.
 
 Ní ìparí, ó yẹ kí fáìlì `blog/views.py` wa rí báyìí:
 
