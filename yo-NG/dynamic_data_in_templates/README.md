@@ -32,7 +32,7 @@ But what's next? To take actual blog posts from the `Post` model we need somethi
 
 ## QuerySet
 
-You should already be familiar with how QuerySets work. We talked about them in [Django ORM (QuerySets) chapter](../django_orm/README.md).
+Ó yẹ kí o ti mọ̀ nípa bí QuerySets ṣé n ṣiṣẹ́. A ti sọ̀rọ̀ nípa wọn nínú [àkòrí Django ORM (QuerySets)](../django_orm/README.md).
 
 So now we want published blog posts sorted by `published_date`, right? We already did that in QuerySets chapter!
 
