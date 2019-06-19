@@ -1,10 +1,10 @@
-# Django URLs
+# Àwọn URL Django
 
 We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
 
-## What is a URL?
+## Kíni URL kan?
 
-A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+URL kan jẹ́ àdírẹ́ẹ̀sì ayélujára kan. O lè rí URL kan ní gbogbo ìgbà tí o bá ṣèbẹ̀wò ààyè ayélujára kan – ó fojú hàn nínú pẹpẹ àdírẹ́ẹ̀sì ti aṣàwákiri rẹ. (Bẹ́ẹ̀ ni! `127.0.0.1:8000` jẹ́ URL kan! Àti pé `https://djangogirls.org` tún jẹ́ URL kan.)
 
 ![Url](images/url.png)
 
