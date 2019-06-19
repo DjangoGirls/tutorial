@@ -12,7 +12,7 @@ Gbogbo ojú-ìwé lórí Íńtánẹ́ẹ̀tì náà ló nílò URL tirẹ̀. L�
 
 ## Báwo ni àwọn URL ṣé n ṣiṣẹ́ ní Django?
 
-Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
+Jẹ́ ká ṣí fáìlì `mysite/urls.py` náà sílẹ̀ nínú olóòtú kóòdù tó wù ẹ kí a wo bó ṣe rí:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -43,7 +43,7 @@ The admin URL, which you visited in the previous chapter, is already here:
 
 This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
-## Your first Django URL!
+## URL Django àkọ́kọ́ rẹ!
 
 Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
 
