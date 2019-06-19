@@ -8,7 +8,7 @@ URL kan jẹ́ àdírẹ́ẹ̀sì ayélujára kan. O lè rí URL kan ní gbogbo
 
 ![Url](images/url.png)
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Gbogbo ojú-ìwé lórí Íńtánẹ́ẹ̀tì náà ló nílò URL tirẹ̀. Lọ́nà yìí, ètò rẹ yíò mọ ohun tó yẹ kó gbé jáde fún aṣàmúlò kan tó bá ṣí URL yẹn. Ní Django, a máa n lo nnkan kan tí a n pè ní `URLconf` (URL configuration - ìṣètò URL). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## How do URLs work in Django?
 
