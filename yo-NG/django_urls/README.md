@@ -8,9 +8,9 @@ URL kan jẹ́ àdírẹ́ẹ̀sì ayélujára kan. O lè rí URL kan ní gbogbo
 
 ![Url](images/url.png)
 
-Gbogbo ojú-ìwé lórí Íńtánẹ́ẹ̀tì náà ló nílò URL tirẹ̀. Lọ́nà yìí, ètò rẹ yíò mọ ohun tó yẹ kó gbé jáde fún aṣàmúlò kan tó bá ṣí URL yẹn. Ní Django, a máa n lo nnkan kan tí a n pè ní `URLconf` (URL configuration - ìṣètò URL). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Gbogbo ojú-ìwé lórí Íńtánẹ́ẹ̀tì náà ló nílò URL tirẹ̀. Lọ́nà yìí, ètò rẹ yíò mọ ohun tó yẹ kó gbé jáde fún aṣàmúlò kan tó bá ṣí URL yẹn. Ní Django, a máa n lo nnkan kan tí a n pè ní `URLconf` (URL configuration - ìṣètò URL). URLconf jẹ́ àpapọ̀ àwọn àpẹẹrẹ kan tí Django yíò gbìyànjú láti báramu pẹ̀lú URL tí a béèrè fún náà láti wá ohun tó tọ́ láti ṣàfihàn.
 
-## How do URLs work in Django?
+## Báwo ni àwọn URL ṣé n ṣiṣẹ́ ní Django?
 
 Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
