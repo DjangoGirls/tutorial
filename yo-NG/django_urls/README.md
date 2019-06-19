@@ -92,9 +92,9 @@ urlpatterns = [
 
 Gẹ́gẹ́ bó o ṣe ríi, a tí n yan `view` kan tí a n pè ní `post_list` sí URL ìpìlẹ̀ náà báyìí. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. Àpẹẹrẹ yìí yíò sọ fún Django pé `views.post_list` jẹ́ ààyè tó tọ́ láti lọ tí ẹnìkan bá wọ inú ààyè ayélujára rẹ láti àdírẹ́ẹ̀sì 'http://127.0.0.1:8000/' náà.
 
-Apá ìkẹhìn náà, `name='post_list'`, jẹ́ orúkọ URL náà tí yíò máa jẹ́ lílò láti dá view náà mọ̀. Èyí lè jẹ́ bákannáà pẹ̀lú orúkọ view náà ṣùgbọ́n ó tún lè jẹ́ nnkan kan tó yàtọ̀ pátápátá. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+Apá ìkẹhìn náà, `name='post_list'`, jẹ́ orúkọ URL náà tí yíò máa jẹ́ lílò láti dá view náà mọ̀. Èyí lè jẹ́ bákannáà pẹ̀lú orúkọ view náà ṣùgbọ́n ó tún lè jẹ́ nnkan kan tó yàtọ̀ pátápátá. A ó máa lo àwọn URL tí a fún lórúko tó bá yá nínú iṣé náà, nítorí náà ó ṣe pàtàkì láti fún URL kọ̀ọ̀kan tó wà nínú ètò náà lórúko. Ó yẹ ká tún gbìyànjú láti mú kí orúkọ àwọn URL náà jẹ́ àkànṣe kó sì rọrùn láti rántí.
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+Tí o bá gbìyànjú láti ṣèbẹ̀wò http://127.0.0.1:8000/ ní báyìí, ìwọ yíò rí oríṣi àwọn ìròyìn 'web page not available' (ojú-ìwé ayélujára kò sí lárọ̀ọ́wọ́tó) kan. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
 ![Àṣìṣe](images/error1.png)
 
