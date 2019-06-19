@@ -1,6 +1,6 @@
 # Àwọn URL Django
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+A ti fẹ́ kọ́ ojú-ìwé ayélujára àkọ́kọ́ wa: ojú-ìwé ìbẹ̀rẹ̀ kan fún blog wa! Ṣùgbọ́n lákọ̀ọ́kọ́ ná, jẹ́ ká kẹ́kọ̀ọ́ díẹ̀ nípa àwọn URL Django.
 
 ## Kíni URL kan?
 
@@ -80,7 +80,7 @@ from . import views
 
 Níbí yìí, a n ṣàgbéwọlé iṣẹ́ `path` ti Django àti gbogbo `views` wa láti ètò `blog` náà. (A kò tíì ní èyíkéyìí, ṣùgbọ́n a óò débẹ̀ láàárín ìṣẹ́jú kan!)
 
-After that, we can add our first URL pattern:
+Lẹ́yìn ìyẹn, a lè ṣàfikún àpẹẹrẹ URL àkọ́kọ́ wa:
 
 {% filename %}blog/urls.py{% endfilename %}
 
