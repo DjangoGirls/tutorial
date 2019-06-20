@@ -94,10 +94,10 @@ Gẹ́gẹ́ bó o ṣe ríi, a tí n yan `view` kan tí a n pè ní `post_list`
 
 Apá ìkẹhìn náà, `name='post_list'`, jẹ́ orúkọ URL náà tí yíò máa jẹ́ lílò láti dá view náà mọ̀. Èyí lè jẹ́ bákannáà pẹ̀lú orúkọ view náà ṣùgbọ́n ó tún lè jẹ́ nnkan kan tó yàtọ̀ pátápátá. A ó máa lo àwọn URL tí a fún lórúko tó bá yá nínú iṣé náà, nítorí náà ó ṣe pàtàkì láti fún URL kọ̀ọ̀kan tó wà nínú ètò náà lórúko. Ó yẹ ká tún gbìyànjú láti mú kí orúkọ àwọn URL náà jẹ́ àkànṣe kó sì rọrùn láti rántí.
 
-Tí o bá gbìyànjú láti ṣèbẹ̀wò http://127.0.0.1:8000/ ní báyìí, ìwọ yíò rí oríṣi àwọn ìròyìn 'web page not available' (ojú-ìwé ayélujára kò sí lárọ̀ọ́wọ́tó) kan. Èyí jẹ́ nítorí pé server náà (rántí títẹ `runserver`?) kò ṣiṣẹ́ mọ́. Ṣàyẹ̀wò fèrèsé console server rẹ láti ṣèwádìí ohun tó fà á.
+Tí o bá gbìyànjú láti ṣèbẹ̀wò http://127.0.0.1:8000/ ní báyìí, ìwọ yíò rí oríṣi àwọn ìròyìn 'ojú-ìwé ayélujára kò sí lárọ̀ọ́wọ́tó' kan. Èyí jẹ́ nítorí pé server náà (rántí títẹ `runserver`?) kò ṣiṣẹ́ mọ́. Ṣàyẹ̀wò fèrèsé console server rẹ láti ṣèwádìí ohun tó fà á.
 
 ![Àṣìṣe](images/error1.png)
 
-Console rẹ n ṣàfihàn àṣìṣe kan, ṣùgbọ́n má dààmú – ó wúlò púpọ̀ gan-an: ó n sọ fún ọ pé **no attribute 'post_list'**. Ìyẹn jẹ́ orúkọ *view* tí Django n gbìyànjú láti wá àti lò, ṣùgbọ́n a kò tíì ṣẹ̀dá rẹ̀. Níbi tí a dé yìí, `/admin/` rẹ kò tún ní ṣiṣẹ́. Kò sí ìdààmú – a ó dé ibẹ̀. Tí o bá rí ìròyìn àṣìṣe tó yàtọ̀ kan, gbìyànjú láti tún server ayélujára rẹ bẹ̀rẹ̀. Láti ṣe ìyẹn, nínú fèrèsé console tó n mú server ayélujára náà ṣiṣẹ́, dá a dúró nípasẹ̀ títẹ Ctrl+C (àwọn bọ́tìnnì Control àti C papọ̀) kí o sì tun bẹ̀rẹ̀ nípasẹ̀ lílo àṣẹ `python manage.py runserver` kan.
+Console rẹ n ṣàfihàn àṣìṣe kan, ṣùgbọ́n má dààmú – ó wúlò púpọ̀ gan-an: ó n sọ fún ọ pé **no attribute 'post_list'**. Ìyẹn jẹ́ orúkọ *view* tí Django n gbìyànjú láti ṣàwárí fún lílò, ṣùgbọ́n a kò tíì ṣẹ̀dá rẹ̀. Níbi tí a dé yìí, `/admin/` rẹ kò tún ní ṣiṣẹ́. Kò sí ìdààmú – a ó dé ibẹ̀. Tí o bá rí ìròyìn àṣìṣe tó yàtọ̀ kan, gbìyànjú láti tún server ayélujára rẹ bẹ̀rẹ̀. Láti ṣe ìyẹn, nínú fèrèsé console tó n mú server ayélujára náà ṣiṣẹ́, dá a dúró nípasẹ̀ títẹ Ctrl+C (àwọn bọ́tìnnì Control àti C papọ̀) kí o sì tun bẹ̀rẹ̀ nípasẹ̀ lílo àṣẹ `python manage.py runserver` kan.
 
 > Tí o bá fẹ́ mọ̀ si nípa àwọn URLconf Django, wo àkànṣe àkọsílẹ̀ àlàyé náà: https://docs.djangoproject.com/en/2.0/topics/http/urls/
