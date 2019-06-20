@@ -442,7 +442,7 @@ Veamos si todo esto funciona en PythonAnywhere. ¡Tiempo de hacer otro despliegu
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Recuerda sustituir `<your-pythonanywhere-domain>` con tu subdominio de PythonAnywhere real, sin los paréntesis angulares.)
 
 * Para terminar ve a ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (usa el botón del menú de la esquina superior derecha, encima de la consola) y haz click en **Reload**. Recarga tu https://subdomain.pythonanywhere.com blog para ver los cambios.
 
