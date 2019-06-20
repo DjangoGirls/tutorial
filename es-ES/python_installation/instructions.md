@@ -2,7 +2,7 @@
 > 
 > Esta sección está basada en un tutorial de Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
-Django is written in Python. Necesitamos Python para hacer cualquier cosa en Django. ¡Empecemos con instalarlo! Queremos que instales la última versión de Python 3, así que si tienes una versión anterior, necesitarás actualizarla. Si ya tienes la versión 3.4 o una superior, debería ir bien.
+Django está escrito en Python. Necesitamos Python para hacer cualquier cosa en Django. ¡Empecemos con instalarlo! Queremos que instales la última versión de Python 3, así que si tienes una versión anterior, necesitarás actualizarla. Si ya tienes la versión 3.4 o una superior, debería ir bien.
 
 Por favor, instala Python normalmente de la siguiente forma, incluso si tienes Anaconda instalada en el ordenador.
 
@@ -10,13 +10,13 @@ Por favor, instala Python normalmente de la siguiente forma, incluso si tienes A
 
 Primero comprueba si tu ordenador ejecuta la versión 32 bits de Windows o la de 64, en "Tipo de sistema" en la página de "Acerca de". Para llegar a esta página, intenta uno de estos métodos:
 
-* Press the Windows key and Pause/Break key at the same time
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
+* Presiona la tecla de Windows y la tecla Pause/Break al mismo tiempo
+* Abre el Panel de Control desde el menú de Windows, después accede a Sistema & y Seguridad, luego a Sistema
+* Presiona el botón de Windows, luego accede a Configuración > Sistema > Acerca de
 
-You can download Python for Windows from the website https://www.python.org/downloads/windows/. Click on the "Latest Python 3 Release - Python x.x.x" link. If your computer is running a **64-bit** version of Windows, download the **Windows x86-64 executable installer**. Otherwise, download the **Windows x86 executable installer**. After downloading the installer, you should run it (double-click on it) and follow the instructions there.
+Puedes descargar Python para Windows desde la siguiente web https://www.python.org/downloads/windows/. Clica en el enlace "Latest Python 3 Release -Python x.x.x". Si tu ordenador ejecuta la versión de **64 bits** de Windows, descarga **Windows x86-64 executable installer**. De lo contrario, descarga **Windows x86 executable installer**. Después de descargar el instalador, deberías ejecutarlo (dándole doble click) y seguir las instrucciones.
 
-One thing to watch out for: During the installation, you will notice a window marked "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Una cosa para tener en cuenta: Durante la instalación, verás una ventana de "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
