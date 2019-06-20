@@ -21,7 +21,7 @@ Gẹ́gẹ́ bó o ṣe ríi, a ṣàgbéwọlé (ṣàfikún) àwòṣe Post t�
 
 Láti wọlé, o nílò láti ṣẹ̀dá *superuser* kan - account aṣàmúlò kan tó ní àkóso lórí gbogbo nnkan lórí ààyè náà. Padà sí ìlà ìpàṣẹ náà, tẹ `python manage.py createsuperuser`, kí o sì tẹ enter.
 
-> Rántí, láti kọ àwọn àṣẹ tuntun nígbà tí server ayélujára náà bá n ṣiṣẹ́, ṣí fèrèsé èbúté tuntun kan kí o sì mú virtualenv rẹ ṣiṣẹ́. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Rántí, láti kọ àwọn àṣẹ tuntun nígbà tí server ayélujára náà bá n ṣiṣẹ́, ṣí fèrèsé èbúté tuntun kan kí o sì mú virtualenv rẹ ṣiṣẹ́. A ti ṣàgbéyẹ̀wò bí a ṣe lè kọ àwọn àṣẹ tuntun nínú àkòrí **Iṣẹ́ Django àkọ́kọ́ rẹ!**, nínú abala **Bíbẹ̀rẹ̀ server ayélujára náà**.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
@@ -42,11 +42,11 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
     Superuser created successfully.
     
 
-Return to your browser. Log in with the superuser's credentials you chose; you should see the Django admin dashboard.
+Padà sí aṣàwákiri rẹ. Wọlé pẹ̀lú àwọn ẹ̀rí superuser tí o yàn náà; ó yẹ kí o rí pánẹ́ẹ̀lì ìdarí alábòójútó Django náà.
 
 ![Django admin](images/django_admin3.png)
 
-Go to Posts and experiment a little bit with it. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Lọ sí Posts kí o sì ṣe ìdánrawò díẹ̀ pẹ̀lú rẹ̀. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
