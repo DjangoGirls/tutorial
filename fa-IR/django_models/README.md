@@ -116,7 +116,7 @@ INSTALLED_APPS = [
 
 در فایل `blog/models.py` ما تمام اشیائی را که به آن `مدل Model` می‌گوییم تعریف می‌کنیم. اینجا فضایی است که قالب پست‌های وبلاگی را تعریف می‌کنیم.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+بیاید فایل `blog/models.py` را در کد ادیتور باز کنیم، تمام محتویات ان را پاک کینم و کد‌های مانند این را در ان بنویسی:
 
 {% filename %}blog/models.py{% endfilename %}
 
