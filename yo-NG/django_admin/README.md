@@ -13,9 +13,9 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-Gẹ́gẹ́ bó o ṣe ríi, a ṣàgbéwọlé (ṣàfikún) àwòṣe Post tí a ṣàlàyé nínú àkòrí tó ṣáájú náà. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Gẹ́gẹ́ bó o ṣe ríi, a ṣàgbéwọlé (ṣàfikún) àwòṣe Post tí a ṣàlàyé nínú àkòrí tó ṣáájú náà. Láti mú àwòṣe wa fojú hàn lórí ojú-ìwé alábòójútó náà, a nílò láti ṣe àkọsílẹ̀ àwòṣe náà pẹ̀lú `admin.site.register(Post)`.
 
-OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
+Ó dáa, àkókò láti ṣàyẹ̀wò àwòṣe Post wa. Rántí láti ṣe `python manage.py runserver` nínú console náà láti bẹ̀rẹ̀ server ayélujára náà. Lọ sí aṣàwákiri rẹ kí o tẹ àdírẹ́ẹ̀sì http://127.0.0.1:8000/admin/. Ìwọ yíò rí ojú-ìwé ìwọlé kan báyìí:
 
 ![Login page](images/login_page2.png)
 
