@@ -16,18 +16,18 @@ Primero comprueba si tu ordenador ejecuta la versión 32 bits de Windows o la de
 
 Puedes descargar Python para Windows desde la siguiente web https://www.python.org/downloads/windows/. Clica en el enlace "Latest Python 3 Release -Python x.x.x". Si tu ordenador ejecuta la versión de **64 bits** de Windows, descarga **Windows x86-64 executable installer**. De lo contrario, descarga **Windows x86 executable installer**. Después de descargar el instalador, deberías ejecutarlo (dándole doble click) y seguir las instrucciones.
 
-Una cosa para tener en cuenta: Durante la instalación, verás una ventana de "Setup". Make sure you tick the "Add Python 3.6 to PATH" or 'Add Python to your environment variables" checkbox and click on "Install Now", as shown here (it may look a bit different if you are installing a different version):
+Una cosa para tener en cuenta: Durante la instalación, verás una ventana de "Setup". Asegúrate de marcar las casillas "Add Python 3.6 to PATH" o "Add Python to your environment variables" y hacer click en "Install Now", como se muestra aquí (puede que se vea un poco diferente si estás instalando una versión diferente):
 
 ![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
 
-When the installation completes, you may see a dialog box with a link you can follow to learn more about Python or about the version you installed. Close or cancel that dialog -- you'll be learning more in this tutorial!
+Cuando la instalación de complete, verás un cuadro de diálogo con un enlace que puedes seguir para saber más sobre Python o sobre la versión que has instalado. Cierra o cancela ese dialogo -- ¡Aprenderás más en ese tutorial!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Nota: si estás usando una versión anterior de Windows (7, Vista o cualquier versión anterior) y el instalador de la versión 3.6.x de Python falla con un error, intenta también:
 
-1. install all Windows Updates and try to install Python again; or
+1. instalar todas las actualizaciones de Windows e intenta instalar Python de nuevo; o
 2. instalar una [versión de Python anterior](https://www.python.org/downloads/windows/), por ejemplo, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Si instalas una versión anterior de Python, la pantalla de instalación puede ser un poco diferente a la mostrada arriba. Asegúrate de desplazarte hacia abajo para ver "Add python.exe to Path", después haz click en el botón de la izquierda y selecciona "Will be installed on local hard drive":
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -38,10 +38,10 @@ data-collapse=true ces-->
 
 > **Nota** Antes de instalar Python en OS X, debes asegurarte de que la configuración del Mac permita instalar paquetes que no estén en la App Store. ve a preferencias del sistema (System Preferences, está en la carpeta Aplicaciones), da click en "Seguridad y privacidad" (Security & Privacy) y luego la pestaña "General". Si tu "Permitir aplicaciones descargadas desde:" (Allow apps downloaded from:) está establecida a "Mac App Store," cambia a "Mac App Store y desarrolladores identificados." (Mac App Store and identified developers)
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Necesitas ir a la página web https://www.python.org/downloads/release/python-361/ y descargar el instalador de Python:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Descarga el archivo *Mac OS X 64-bit/32-bit installer*,
+* Doble click en *python-3.6.1-macosx10.6.pkg* para ejecutar el instalador.
 
 <!--endsec-->
 
