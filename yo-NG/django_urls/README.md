@@ -41,13 +41,13 @@ URL alábòójútó náà, èyí tí o ṣèbẹ̀wò sí nínú àkòrí tó �
     path('admin/', admin.site.urls),
 ```
 
-Ìlà yìí túmọ̀ sí pé fún gbogbo URL tó bá bẹ̀rẹ̀ pẹ̀lú `admin/`, Django yíò wá *view* tó bá á mu kan. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Ìlà yìí túmọ̀ sí pé fún gbogbo URL tó bá bẹ̀rẹ̀ pẹ̀lú `admin/`, Django yíò wá *view* tó bá á mu kan. Ní irú ìṣẹ̀lẹ̀ yìí, a n ṣàfikún ọ̀pọ̀lọpọ̀ àwọn URL alábòójútó kí a má bàa kó gbogbo rẹ̀ sínú fáìlì kékeré yìí – ó ṣeé kà dáadáa ó sì wà létòlétò.
 
 ## URL Django àkọ́kọ́ rẹ!
 
 Àkókò láti ṣẹ̀dá URL àkọ́kọ́ wa! A fẹ́ kí 'http://127.0.0.1:8000/' jẹ́ ojú-ìwé ìbẹ̀rẹ̀ ti blog wa kó sì ṣàfihàn àkójọ àwọn àròkọ kan.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+A tún fẹ́ mú fáìlì `mysite/urls.py` náà wà létòlétò, nítorí náà a máa ṣàgbéwọlé àwọn URL láti ètò `blog` wa sí fáìlì `mysite/urls.py` gangan náà.
 
 Tẹ̀síwájú, ṣàfikún ìlà kan tí yíò ṣàgbéwọlé `blog.urls`. Ìwọ yíò tún nílò láti ṣàyípadà ìlà `from django.urls…` náà nítorí pé a n lo iṣẹ́ `include` náà níbí, nítorí náà ìwọ yíò nílò láti ṣàfikún àgbéwọlé yẹn sí ìlà náà.
 
