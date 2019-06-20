@@ -13,7 +13,7 @@ from .models import Post
 admin.site.register(Post)
 ```
 
-As you can see, we import (include) the Post model defined in the previous chapter. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
+Gẹ́gẹ́ bó o ṣe ríi, a ṣàgbéwọlé (ṣàfikún) àwòṣe Post tí a ṣàlàyé nínú àkòrí tó ṣáájú náà. To make our model visible on the admin page, we need to register the model with `admin.site.register(Post)`.
 
 OK, time to look at our Post model. Remember to run `python manage.py runserver` in the console to run the web server. Go to your browser and type the address http://127.0.0.1:8000/admin/. You will see a login page like this:
 
