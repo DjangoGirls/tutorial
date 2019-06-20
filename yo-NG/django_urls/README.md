@@ -51,7 +51,7 @@ We also want to keep the `mysite/urls.py` file clean, so we will import URLs fro
 
 Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
 
-Your `mysite/urls.py` file should now look like this:
+Ó yẹ kí fáìlì `mysite/urls.py` rẹ rí báyìí:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -65,7 +65,7 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Django yíò máa darí gbogbo nnkan tó bá wá sínú 'http://127.0.0.1:8000/' padà sí `blog.urls` tí yíò sì máa wá àwọn ìtọ́sọ́nà míì níbẹ̀.
 
 ## blog.urls
 
