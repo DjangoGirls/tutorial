@@ -49,7 +49,7 @@ This line means that for every URL that starts with `admin/`, Django will find a
 
 We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
 
-Tẹ̀síwájú, ṣàfikún ìlà kan tí yíò ṣàgbéwọlé `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Tẹ̀síwájú, ṣàfikún ìlà kan tí yíò ṣàgbéwọlé `blog.urls`. Ìwọ yíò tún nílò láti ṣàyípadà ìlà `from django.urls…` náà nítorí pé a n lo iṣẹ́ `include` náà níbí, nítorí náà ìwọ yíò nílò láti ṣàfikún àgbéwọlé yẹn sí ìlà náà.
 
 Ó yẹ kí fáìlì `mysite/urls.py` rẹ rí báyìí:
 
