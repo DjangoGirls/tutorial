@@ -46,7 +46,7 @@ Padà sí aṣàwákiri rẹ. Wọlé pẹ̀lú àwọn ẹ̀rí superuser tí o
 
 ![Alábòójútó Django](images/django_admin3.png)
 
-Lọ sí Posts kí o sì ṣe ìdánrawò díẹ̀ pẹ̀lú rẹ̀. Ṣàfikún àwọn àròkọ blog márùn-ún tàbí mẹ́fà. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Lọ sí Posts kí o sì ṣe ìdánrawò díẹ̀ pẹ̀lú rẹ̀. Ṣàfikún àwọn àròkọ blog márùn-ún tàbí mẹ́fà. Má dààmú nípa àkóónú náà – ó fojú hàn sí ìwọ nìkan lórí kọ̀mpútà rẹ -- o lè ṣàdàkọ àwọn ọ̀rọ̀ kan lára àlàyé yìí láti dín àkókò kù. :)
 
 Rí dájú pé ó kéré jù àwọn àròkọ méjì tàbí mẹ́ta (ṣùgbọ́n kìí ṣe gbogbo rẹ̀) ló ní ọjọ́ ìtẹ̀jáde náà. Yíò wúlò tó bá yá.
 
