@@ -1,8 +1,8 @@
 # Alábòójútó Django
 
-To add, edit and delete the posts we've just modeled, we will use Django admin.
+Láti ṣàfikún, ṣàtúnṣe àti ṣe ìyọkúrò àwọn àròkọ tí a ṣẹ̀ṣẹ̀ ṣe àwòṣe rẹ̀, a máa lo alábòójútó Django.
 
-Let's open the `blog/admin.py` file in the code editor and replace its contents with this:
+Jẹ́ ká ṣí fáìlì `blog/admin.py` náà nínú olóòtú kóòdù náà kí a sì rọ́pò àwọn àkóónú rẹ̀ pẹ̀lú èyí:
 
 {% filename %}blog/admin.py{% endfilename %}
 
