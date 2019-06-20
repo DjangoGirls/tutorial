@@ -54,4 +54,4 @@ Make sure that at least two or three posts (but not all) have the publish date s
 
 Tí o bá fẹ́ mọ̀ si nípa alábòójútó Django, ó yẹ kí o ṣàyẹ̀wò àkọsílẹ̀ àlàyé ti Django: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
-This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
+Èyí lè jẹ́ àkókò tó dára láti nawọ́ mú ife kọfí kan (tàbí tíì) tàbí oúnjẹ láti tún fún ara rẹ lókun. O ti ṣẹ̀dá àwòṣe Django àkọ́kọ́ rẹ – o tọ́ sí ìsinmi díẹ̀ kan!
