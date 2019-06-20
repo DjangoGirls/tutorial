@@ -110,7 +110,7 @@ ALLOWED_HOSTS = ['127.0.0.1', ' . pythonanywhere.com']
 > **Nota**: si estas usando un Chromebook, añade esta linea al final del archivo settings.py: `MESSAGE_STORAGE =
 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Añade también `.c9users.io` a `ALLOWED_HOSTS` si estás usando cloud9
 
 ## Configurar una base de datos
 
