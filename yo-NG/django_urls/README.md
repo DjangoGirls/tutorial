@@ -31,9 +31,9 @@ urlpatterns = [
 
 Gẹ́gẹ́ bó o ṣe ríi, Django ti gbé nnkan kan síbí fún wa tẹ́lẹ̀.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+Àwọn ìlà tó wà láàrín àwọn àmì àyọlò mẹ́ta (`'''` or `"""`) ní a n pè ní docstrings – o lè kọ wọ́n sókè fáìlì, kíláàsì tàbí ọ̀nà kan láti ṣàpèjúwe ohun tó n ṣe. Wọn kò ní jẹ́ ṣíṣe nípasẹ̀ Python.
 
-The admin URL, which you visited in the previous chapter, is already here:
+URL alábòójútó náà, èyí tí o ṣèbẹ̀wò sí nínú àkòrí tó ṣáájú náà, tí wà níbí:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
