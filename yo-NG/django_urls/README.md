@@ -29,7 +29,7 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+Gẹ́gẹ́ bó o ṣe ríi, Django ti gbé nnkan kan síbí fún wa tẹ́lẹ̀.
 
 Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
 
