@@ -41,7 +41,7 @@ URL alábòójútó náà, èyí tí o ṣèbẹ̀wò sí nínú àkòrí tó �
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Ìlà yìí túmọ̀ sí pé fún gbogbo URL tó bá bẹ̀rẹ̀ pẹ̀lú `admin/`, Django yíò wá *view* tó bá á mu kan. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## URL Django àkọ́kọ́ rẹ!
 
