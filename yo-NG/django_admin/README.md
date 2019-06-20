@@ -33,7 +33,7 @@ Láti wọlé, o nílò láti ṣẹ̀dá *superuser* kan - account aṣàmúlò
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Nígbà tó bá rí ìbéèrè, tẹ orúkọ aṣàmúlò (lẹ́tà kékeré, láìsí àlàfo), àdírẹ́ẹ̀sì ímeèlì, àti ọ̀rọ̀ aṣínà rẹ. **Don't worry that you can't see the password you're typing in – that's how it's supposed to be.** Type it in and press `enter` to continue. The output should look like this (where the username and email should be your own ones):
+Nígbà tó bá rí ìbéèrè, tẹ orúkọ aṣàmúlò (lẹ́tà kékeré, láìsí àlàfo), àdírẹ́ẹ̀sì ímeèlì, àti ọ̀rọ̀ aṣínà rẹ. **Má dààmú pé ìwọ kò lè rí ọ̀rọ̀ aṣínà tí o n tẹ̀ wọlé náà – bó ṣe yẹ kí ó rí nìyẹn.** Tẹ̀ ẹ́ wọlé kí o sì tẹ `enter` láti tẹ̀síwájú. Ó yẹ kí èsì náà rí báyìí (níbi tí orúkọ aṣàmúlò àti ímeèlì yíò jẹ́ tìrẹ):
 
     Username: ola
     Email address: ola@example.com
