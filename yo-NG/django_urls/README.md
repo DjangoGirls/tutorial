@@ -98,6 +98,6 @@ Tí o bá gbìyànjú láti ṣèbẹ̀wò http://127.0.0.1:8000/ ní báyìí, 
 
 ![Àṣìṣe](images/error1.png)
 
-Console rẹ n ṣàfihàn àṣìṣe kan, ṣùgbọ́n má dààmú – ó wúlò púpọ̀ gan-an: ó n sọ fún ọ pé **no attribute 'post_list'** (kò sí àwòmọ́ 'post_list'). That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Console rẹ n ṣàfihàn àṣìṣe kan, ṣùgbọ́n má dààmú – ó wúlò púpọ̀ gan-an: ó n sọ fún ọ pé **no attribute 'post_list'** (kò sí àwòmọ́ 'post_list'). Ìyẹn jẹ́ orúkọ *view* tí Django n gbìyànjú láti wá àti lò, ṣùgbọ́n a kò tíì ṣẹ̀dá rẹ̀. Níbi tí a dé yìí, `/admin/` rẹ kò tún ní ṣiṣẹ́. Kò sí ìdààmú – a ó dé ibẹ̀. Tí o bá rí ìròyìn àṣìṣe tó yàtọ̀ kan, gbìyànjú láti tún server ayélujára rẹ bẹ̀rẹ̀. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
 
 > Tí o bá fẹ́ mọ̀ si nípa àwọn URLconf Django, wo àkànṣe àkọsílẹ̀ àlàyé náà: https://docs.djangoproject.com/en/2.0/topics/http/urls/
