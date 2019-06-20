@@ -19,9 +19,9 @@ Gẹ́gẹ́ bó o ṣe ríi, a ṣàgbéwọlé (ṣàfikún) àwòṣe Post t�
 
 ![Login page](images/login_page2.png)
 
-To log in, you need to create a *superuser* - a user account that has control over everything on the site. Go back to the command line, type `python manage.py createsuperuser`, and press enter.
+Láti wọlé, o nílò láti ṣẹ̀dá *superuser* kan - account aṣàmúlò kan tó ní àkóso lórí gbogbo nnkan lórí ààyè náà. Padà sí ìlà ìpàṣẹ náà, tẹ `python manage.py createsuperuser`, kí o sì tẹ enter.
 
-> Remember, to write new commands while the web server is running, open a new terminal window and activate your virtualenv. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
+> Rántí, láti kọ àwọn àṣẹ tuntun nígbà tí server ayélujára náà bá n ṣiṣẹ́, ṣí fèrèsé èbúté tuntun kan kí o sì mú virtualenv rẹ ṣiṣẹ́. We reviewed how to write new commands in the **Your first Django project!** chapter, in the **Starting the web server** section.
 
 {% filename %}Mac OS X or Linux:{% endfilename %}
 
