@@ -56,8 +56,8 @@ El archivo `mysite/urls.py` debería verse ahora así:
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.contrib import admin
-from django.urls import path, include
+from django.contrib import path, include
+from django.urls import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
