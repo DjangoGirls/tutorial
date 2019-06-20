@@ -202,7 +202,7 @@ También podemos invertir el orden agregando `-` al principio:
 
 ### Consultas complejas a través de encadenamiento de métodos
 
-As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+Como ves, algunos métodos en `Post.objects` devuelven un QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. También puedes combinar QuerySets **encadenando** uno con otro:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
