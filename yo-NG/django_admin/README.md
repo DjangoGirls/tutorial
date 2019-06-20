@@ -48,7 +48,7 @@ Padà sí aṣàwákiri rẹ. Wọlé pẹ̀lú àwọn ẹ̀rí superuser tí o
 
 Lọ sí Posts kí o sì ṣe ìdánrawò díẹ̀ pẹ̀lú rẹ̀. Ṣàfikún àwọn àròkọ blog márùn-ún tàbí mẹ́fà. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
-Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
+Rí dájú pé ó kéré jù àwọn àròkọ méjì tàbí mẹ́ta (ṣùgbọ́n kìí ṣe gbogbo rẹ̀) ló ní ọjọ́ ìtẹ̀jáde náà. Yíò wúlò tó bá yá.
 
 ![Alábòójútó Django](images/edit_post3.png)
 
