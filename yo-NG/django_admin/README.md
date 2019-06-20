@@ -17,7 +17,7 @@ Gẹ́gẹ́ bó o ṣe ríi, a ṣàgbéwọlé (ṣàfikún) àwòṣe Post t�
 
 Ó dáa, àkókò láti ṣàyẹ̀wò àwòṣe Post wa. Rántí láti ṣe `python manage.py runserver` nínú console náà láti bẹ̀rẹ̀ server ayélujára náà. Lọ sí aṣàwákiri rẹ kí o tẹ àdírẹ́ẹ̀sì http://127.0.0.1:8000/admin/. Ìwọ yíò rí ojú-ìwé ìwọlé kan báyìí:
 
-![Login page](images/login_page2.png)
+![Ojú-ìwé ìwọlé](images/login_page2.png)
 
 Láti wọlé, o nílò láti ṣẹ̀dá *superuser* kan - account aṣàmúlò kan tó ní àkóso lórí gbogbo nnkan lórí ààyè náà. Padà sí ìlà ìpàṣẹ náà, tẹ `python manage.py createsuperuser`, kí o sì tẹ enter.
 
@@ -44,14 +44,14 @@ When prompted, type your username (lowercase, no spaces), email address, and pas
 
 Padà sí aṣàwákiri rẹ. Wọlé pẹ̀lú àwọn ẹ̀rí superuser tí o yàn náà; ó yẹ kí o rí pánẹ́ẹ̀lì ìdarí alábòójútó Django náà.
 
-![Django admin](images/django_admin3.png)
+![Alábòójútó Django](images/django_admin3.png)
 
-Lọ sí Posts kí o sì ṣe ìdánrawò díẹ̀ pẹ̀lú rẹ̀. Add five or six blog posts. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
+Lọ sí Posts kí o sì ṣe ìdánrawò díẹ̀ pẹ̀lú rẹ̀. Ṣàfikún àwọn àròkọ blog márùn-ún tàbí mẹ́fà. Don't worry about the content –- it's only visible to you on your local computer -- you can copy-paste some text from this tutorial to save time. :)
 
 Make sure that at least two or three posts (but not all) have the publish date set. It will be helpful later.
 
-![Django admin](images/edit_post3.png)
+![Alábòójútó Django](images/edit_post3.png)
 
-If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+Tí o bá fẹ́ mọ̀ si nípa alábòójútó Django, ó yẹ kí o ṣàyẹ̀wò àkọsílẹ̀ àlàyé ti Django: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
 
 This is probably a good moment to grab a coffee (or tea) or something to eat to re-energize yourself. You created your first Django model – you deserve a little break!
