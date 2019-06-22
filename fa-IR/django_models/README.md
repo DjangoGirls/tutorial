@@ -186,7 +186,7 @@ class Post(models.Model):
 
 **نکته: **به باد داشته باشید که فایل‌هایی که تغییر داده‌اید را ذخیره کنید وگر نه ممکن است کامپیوتر نسخه قبلی فایل را در نظر بگیرد و پیغام خطا نشان بدهد.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+جنگو یک فایل مهاجرت یا migration برای ما درست می‌کند که ما باید آن را به پایگاه داده ارسال کنیم. عبارت `python manage.py migrate blog` را اجرا کنید و خروجی باید شبیه به این باشد:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -197,4 +197,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+هورا! مدل Post ما اکنون در پایگاه داده قرار گرفته است! جالب خواهد بود که نگاهی به آن بیندازیم! پس به سراغ بخش بعدی بروید تا ببینید Post ها به چه صورتی درآمده‌اند!
