@@ -152,7 +152,7 @@ class Post(models.Model):
 
 - `class` کلید واژه‌ای است که نشان می‌دهد در حال تعریف کردن یک شیء هستیم.
 - `Post` نام مدل ما است. می‌توانیم به آن نام متفاوتی بدهیم (اما نباید از کاکترهای خاص و اسپیس استفاده کنیم). همیشه نام یک کلاس را با حروف بزرگ شروع کنید.
-- `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
+- `models.Model` به این معنی است که Post یک مدل جنگویی است، بنابراین جنگو می‌داند که این مدل باید در پایگاه داده ذخیره شود.
 
 Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
 
