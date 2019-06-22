@@ -121,17 +121,18 @@ INSTALLED_APPS = [
 {% filename %}blog/models.py{% endfilename %}
 
 ```python
-from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
 
 class Post(models.Model):
-    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
+    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
-    created_date = models.DateTimeField(default=timezone.now)
-    published_date = models.DateTimeField(blank=True, null=True)
+    created_date = models.DateTimeField(
+            default=timezone.now)
+    published_date = models.DateTimeField(
+            blank=True, null=True)
 
     def publish(self):
         self.published_date = timezone.now()
@@ -141,11 +142,11 @@ class Post(models.Model):
         return self.title
 ```
 
-> Double-check that you use two underscore characters (`_`) on each side of `str`. This convention is used frequently in Python and sometimes we also call them "dunder" (short for "double-underscore").
+> مطمئن بشوید که در هر طرف `str` دوبار از کارارکتر `_` استفاده کنید. از این قرارداد زیاد در پایتون استفاده می‌شود که به آن "dunder" هم می‌گویند که مخفف "double-underscore" است.
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+عجیب به نظر می‌رسد؟ نگران نباشید ما درباره عملکرد این خط ها توضیح خواهیم داد!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+تمام خطوطی که با `from` یا `import` شروع می‌شوند خطوطی هستند که محتوایی را از یک فایل دیگر به این فایل اضافه می‌کنند. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
 
 `class Post(models.Model):` – this line defines our model (it is an `object`).
 
