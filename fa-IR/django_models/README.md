@@ -146,12 +146,12 @@ class Post(models.Model):
 
 عجیب به نظر می‌رسد؟ نگران نباشید ما درباره عملکرد این خط ها توضیح خواهیم داد!
 
-تمام خطوطی که با `from` یا `import` شروع می‌شوند خطوطی هستند که محتوایی را از یک فایل دیگر به این فایل اضافه می‌کنند. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+تمام خطوطی که با `from` یا `import` شروع می‌شوند خطوطی هستند که محتوایی را از یک فایل دیگر به این فایل اضافه می‌کنند. پس به جای آنکه یک محتوای یکسان را از در هر فایل تکرار کنیم، می‌توانیم از این الگو استفاده کنیم `from ... import ... `.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` – این خط مدل ما را تعریف می‌کند (که یک `شیء` یا object است).
 
-- `class` is a special keyword that indicates that we are defining an object.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `class` کلید واژه‌ای است که نشان می‌دهد در حال تعریف کردن یک شیء هستیم.
+- `Post` نام مدل ما است. می‌توانیم به آن نام متفاوتی بدهیم (اما نباید از کاکترهای خاص و اسپیس استفاده کنیم). همیشه نام یک کلاس را با حروف بزرگ شروع کنید.
 - `models.Model` means that the Post is a Django Model, so Django knows that it should be saved in the database.
 
 Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
