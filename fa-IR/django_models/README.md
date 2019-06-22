@@ -163,7 +163,7 @@ class Post(models.Model):
 
 ما همه قطعات کد را توضیح نخواهیم داد برای آنکه زمان بسیار زیادی می‌گیرد. اگر بخواهید در مورد انواع نمونه‌های ستون‌های (فیلد) مدل‌ها بدانید باید به مستندات جنگو در آدرس زیر نگاهی بیندازید (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+منظور از `def publish(self):` چیست؟ این دقیقا متد یا عملیات `انتشار` است که قبل تر در مورد آن صحبت کردیم. عبارت `def`نشان دهنده آن است که یک تابع یا متد تعریف شده است و `publish` نام این تابع است. شما می‌توانید نام این تابع را به دلخواه عوض کنید. برای نامگذاری متدها، معمولاً از حروف کوچک و خط زیرین (underscore) به جای کاراکتر فاصله (space) استفاده می‌کنیم. برای مثال، تابعی که برای محاسبه قیمت متوسط لازم داریم به این صورت نامگذاری می‌شود `calculate_average_price`.
 
 Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
 
