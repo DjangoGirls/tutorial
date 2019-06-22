@@ -165,11 +165,11 @@ class Post(models.Model):
 
 منظور از `def publish(self):` چیست؟ این دقیقا متد یا عملیات `انتشار` است که قبل تر در مورد آن صحبت کردیم. عبارت `def`نشان دهنده آن است که یک تابع یا متد تعریف شده است و `publish` نام این تابع است. شما می‌توانید نام این تابع را به دلخواه عوض کنید. برای نامگذاری متدها، معمولاً از حروف کوچک و خط زیرین (underscore) به جای کاراکتر فاصله (space) استفاده می‌کنیم. برای مثال، تابعی که برای محاسبه قیمت متوسط لازم داریم به این صورت نامگذاری می‌شود `calculate_average_price`.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+توابع معمولاً یک مقدار را باز می‌گردانند که با `return` تعریف می‌شود. نمونه‌ای از این بازگرداندن در تابع `__str__` وجود دارد. در این سناریو وقتی ما تابع `__str__()` را فراخوانی می‌کنیم یک نوشته (با فرمت **string**) که حاوی عنوان پست وبلاگی است دریافت می‌کنیم.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+همچنین توجه داشته باشید که هر دو تابع `def publish(self):` و `def __str__(self):` به کمک فاصله‌گذاری ابتدای خط، درون کلاس تعریف شده‌اند. چون پایتون به فاصله‌ها حساس است نیاز داریم که میزان فاصله ابتدا خط برای متدها درست تعریف شوند تا متد، درون کلاس قرار داشته باشد. در غیر اینضورت اگر متدها بیرون از کلاس باشند ممکن است رفتار غیرمنتظره‌ای ببینید.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+اگر هنوز چیزی در مورد مدل‌ها برای شما مبهم است حتماً از مربی خود بپرسید! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
 
 ### Create tables for models in your database
 
