@@ -154,14 +154,14 @@ class Post(models.Model):
 - `Post` نام مدل ما است. می‌توانیم به آن نام متفاوتی بدهیم (اما نباید از کاکترهای خاص و اسپیس استفاده کنیم). همیشه نام یک کلاس را با حروف بزرگ شروع کنید.
 - `models.Model` به این معنی است که Post یک مدل جنگویی است، بنابراین جنگو می‌داند که این مدل باید در پایگاه داده ذخیره شود.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+حالا ویژگی‌هایی که در مورد آن‌ها صحبت کردیم را اضافه می‌کنیم: `title`، `text`، `created_date`، `published_date` و `author`. برای این کار باید ویژگی های هرکدام از این‌ها را مشخص کنیم( آیا متن است؟ یا عدد؟ یا تاریخ؟ یا ارتباطی با یک شیء دیگر، مثلا کاربر؟
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `models.CharField` – این عبارت مشخص می‌کند که ویژگی مورد نظر از جنس متن با تعداد کاراکتر محدود است.
+- `models.TextField` – این عبارت برای اختصاص دادن متن با تعداد کاراکتر نامحدود است. به نظر برای متن پست‌های وبلاگی مناسب است، درست است؟
+- `models.DateTimeField` – مشخص کننده تاریخ و زمان است.
+- `models.ForeignKey` – نشان دهنده ارتباط به یک مدل دیگر است.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+ما همه قطعات کد را توضیح نخواهیم داد برای آنکه زمان بسیار زیادی می‌گیرد. اگر بخواهید در مورد انواع نمونه‌های ستون‌های (فیلد) مدل‌ها بدانید باید به مستندات جنگو در آدرس زیر نگاهی بیندازید (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
 What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
 
