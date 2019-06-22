@@ -171,9 +171,9 @@ class Post(models.Model):
 
 اگر هنوز چیزی در مورد مدل‌ها برای شما مبهم است حتماً از مربی خود بپرسید! می‌دانیم که یادگرفتن مفاهیم اشیاء و توابع به طور همزمان، پیچیده است. ولی حداقل الان کمی برای شما واضح‌تر شده است!
 
-### Create tables for models in your database
+### ساختن جدول برای مدل‌ها در پایگاه داده‌ها
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+آخرین مرحله این است که مدل جدیدی که ساخته‌ایم را به پایگاه داده اضافه کنیم. ابتدا باید جنگو را از تغییراتی که در مدل‌ها ایجاد کرده‌ایم آگاه کنیم. (این تغییرات همین کارهایی است که انجام داده‌ایم!) به کنسول خط فرمان بروید و تایپ کنید `python manage.py makemigrations blog`. چیزی شبیه این خواهید دید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -184,7 +184,7 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**نکته: **به باد داشته باشید که فایل‌هایی که تغییر داده‌اید را ذخیره کنید وگر نه ممکن است کامپیوتر نسخه قبلی فایل را در نظر بگیرد و پیغام خطا نشان بدهد.
 
 Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
 
