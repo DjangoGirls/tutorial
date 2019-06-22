@@ -6,15 +6,15 @@ Ohun tó dára nípa àwọn fọ́ọ̀mù Django ni pé a lè ṣàlàyé ìka
 
 Èyí jẹ́ ohun tí a fẹ́ ṣe gan-an: a ó ṣẹ̀dá fọ́ọ̀mù kan fún àwòṣe `Post` wa.
 
-Like every important part of Django, forms have their own file: `forms.py`.
+Gẹ́gẹ́ bí gbogbo apá tó ṣe pàtàkì nínú Django, àwọn fọ́ọ̀mù ní fáìlì tiwọn: `forms.py`.
 
-We need to create a file with this name in the `blog` directory.
+A nílò láti ṣẹ̀dá fáìlì kan pẹ̀lú orúkọ yìí nínú àkójọpọ̀ fáìlì `blog` náà.
 
     blog
        └── forms.py
     
 
-OK, let's open it in the code editor and type the following code:
+O dáa, jẹ́ ká ṣí i nínú olóòtú kóòdù náà kí a sì tẹ kóòdù tó tẹ̀le yìí:
 
 {% filename %}blog/forms.py{% endfilename %}
 
