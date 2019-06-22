@@ -89,7 +89,7 @@ After saving and refreshing the page http://127.0.0.1:8000 you will see a famili
 
 ## URL
 
-We open `blog/urls.py` in the code editor and add a line:
+A ṣí `blog/urls.py` nínú olóòtú kóòdù náà àti ṣàfikún ìlà kan:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -97,7 +97,7 @@ We open `blog/urls.py` in the code editor and add a line:
 path('post/new/', views.post_new, name='post_new'),
 ```
 
-And the final code will look like this:
+Àti pé kóòdù ìparí náà yíò rí báyìí:
 
 {% filename %}blog/urls.py{% endfilename %}
 
