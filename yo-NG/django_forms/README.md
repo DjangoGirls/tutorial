@@ -112,9 +112,9 @@ urlpatterns = [
 ]
 ```
 
-After refreshing the site, we see an `AttributeError`, since we don't have the `post_new` view implemented. Let's add it right now.
+Lẹ́yìn ṣíṣe ìmúdójúìwọ̀n ààyè náà, a rí `AttributeError` kan, nítorí pé a kò ní view `post_new` náà ní ṣíṣe. Jẹ́ ká ṣàfikún rẹ̀ ní báyìí.
 
-## post_new view
+## view post_new
 
 Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
 
