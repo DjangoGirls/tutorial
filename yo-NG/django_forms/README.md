@@ -165,7 +165,7 @@ O dáa, jẹ́ ká wo bó ṣe yẹ kí HTML inú `post_edit.html` rí:
 
 Time to refresh! Yay! Your form is displayed!
 
-![New form](images/new_form2.png)
+![Fọ́ọ̀mù tuntun](images/new_form2.png)
 
 But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
 
@@ -267,7 +267,7 @@ That is awesome!
 
 > As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
-![Logged in error](images/post_create_error.png)
+![Àṣìṣe wíwọlé](images/post_create_error.png)
 
 ## Form validation
 
