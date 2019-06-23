@@ -384,7 +384,7 @@ Tí o bá nílò àlàyé si nípa àwọn fọ́ọ̀mù Django, ó yẹ kí o 
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+A óò ṣàfikún àmì `{% if %}` mìíràn sí èyí, tí yíò mú kí atọ́ka náà hàn fún àwọn aṣàmúlò tó bá ti wọlé sínú alábòójútó náà nìkan. Ní báyìí, ìwọ nìkan ni! Ṣàyípadà àmì `<a>` náà láti rí báyìí:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
