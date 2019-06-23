@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Èyí fẹ́rẹ̀ẹ́ rí bákannáà pẹ̀lú view `post_new` wa, àbí bẹ́ẹ̀ kọ? Ṣùgbọ́n kìí ṣe pátápátá. Lákọ̀ọ́kọ́ ná, a darí àfikún parameter `pk` kan láti urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Èyí fẹ́rẹ̀ẹ́ rí bákannáà pẹ̀lú view `post_new` wa, àbí bẹ́ẹ̀ kọ? Ṣùgbọ́n kìí ṣe pátápátá. Lákọ̀ọ́kọ́ ná, a darí àfikún parameter `pk` kan láti urls. Lẹ́yìn náà, a gba àwòṣe `Post` tí a fẹ́ ṣàtúnṣe pẹ̀lú `get_object_or_404(Post, pk=pk)` àti pé, nígbà tí a bá ṣẹ̀dá fọ́ọ̀mù kan, a máa darí àròkọ yìí gẹ́gẹ́ bí `instance` kan, nígbà tí a bá tọ́jú fọ́ọ̀mù náà…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,11 +358,11 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+Ó dáa, jẹ́ ká ṣàyẹ̀wò bóyá ó n ṣiṣẹ́! Jẹ́ ká lọ sí ojú-ìwé `post_detail` náà. Ó yẹ kí bọ́tìnnì àtúnṣe kan wà ní igun òkè lápá ọ̀tún náà:
 
 ![Bọ́tìnnì àtúnṣe](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+Nígbà tí o bá tẹ̀ ẹ́, ìwọ yíò rí fọ́ọ̀mù náà pẹ̀lú àròkọ blog wa:
 
 ![Fọ́ọ̀mù àtúnṣe](images/edit_form2.png)
 
