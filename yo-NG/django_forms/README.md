@@ -372,9 +372,9 @@ Kú oríire! Ètò rẹ túbọ̀ ń péye síi!
 
 Tí o bá nílò àlàyé si nípa àwọn fọ́ọ̀mù Django, ó yẹ kí o ka àkọsílẹ̀ àlàyé náà: https://docs.djangoproject.com/en/2.0/topics/forms/
 
-## Security
+## Ààbò
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Ṣíṣẹ̀dá àwọn àròkọ tuntun nípasẹ̀ títẹ atọ́ka kan dára púpọ̀! Ṣùgbọ́n ní báyìí, ẹnikẹ́ni tó bá ṣèbẹ̀wò sí ààyè rẹ yóò lè ṣe àròkọ blog tuntun kan, àti pé kìí ṣe ohun tí o fẹ́. Let's make it so the button shows up for you but not for anyone else.
 
 Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
