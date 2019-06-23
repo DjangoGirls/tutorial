@@ -143,7 +143,7 @@ A nílò láti ṣẹ̀dá fáìlì `post_edit.html` kan nínú àkójọpọ̀ 
 * A ní láti ṣàfihàn fọ́ọ̀mù náà. A lè ṣe ìyẹn pẹ̀lú (fún àpẹẹrẹ) {% raw %}`{{ form.as_p }}`{% endraw %}.
 * Ìlà tó wà lókè yìí nílò láti gba wíwé pẹ̀lú àmì fọ́ọ̀mù HTML kan: `<form method="POST">...</form>`.
 * A nílò bọ́tìnnì `Save` kan. A lè ṣe ìyẹn pẹ̀lú bọ́tìnnì HTML kan: `<button type="submit">Save</button>`.
-* And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
+* Ní ìparí, kété lẹ́yìn àmì `<form ...>` ṣíṣí náà, a nílò láti ṣàfikún {% raw %}`{% csrf_token %}`{% endraw %}. Èyí ṣe pàtàkì púpọ̀, nítorí pé yóò pèsè ààbò fún àwọn fọ́ọ̀mù rẹ! If you forget about this bit, Django will complain when you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
 
