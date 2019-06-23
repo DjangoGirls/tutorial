@@ -374,7 +374,7 @@ Tí o bá nílò àlàyé si nípa àwọn fọ́ọ̀mù Django, ó yẹ kí o 
 
 ## Ààbò
 
-Ṣíṣẹ̀dá àwọn àròkọ tuntun nípasẹ̀ títẹ atọ́ka kan dára púpọ̀! Ṣùgbọ́n ní báyìí, ẹnikẹ́ni tó bá ṣèbẹ̀wò sí ààyè rẹ yóò lè ṣe àròkọ blog tuntun kan, àti pé kìí ṣe ohun tí o fẹ́. Let's make it so the button shows up for you but not for anyone else.
+Ṣíṣẹ̀dá àwọn àròkọ tuntun nípasẹ̀ títẹ atọ́ka kan dára púpọ̀! Ṣùgbọ́n ní báyìí, ẹnikẹ́ni tó bá ṣèbẹ̀wò sí ààyè rẹ yóò lè ṣe àròkọ blog tuntun kan, àti pé kìí ṣe ohun tí o fẹ́. Jẹ́ ká ṣe é kí bọ́tìnnì náà máa hàn sí ìwọ ṣùgbọ́n kó pamọ́ fún ẹlòmíràn.
 
 Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
