@@ -145,7 +145,7 @@ A nílò láti ṣẹ̀dá fáìlì `post_edit.html` kan nínú àkójọpọ̀ 
 * A nílò bọ́tìnnì `Save` kan. A lè ṣe ìyẹn pẹ̀lú bọ́tìnnì HTML kan: `<button type="submit">Save</button>`.
 * Ní ìparí, kété lẹ́yìn àmì `<form ...>` ṣíṣí náà, a nílò láti ṣàfikún {% raw %}`{% csrf_token %}`{% endraw %}. Èyí ṣe pàtàkì púpọ̀, nítorí pé yóò pèsè ààbò fún àwọn fọ́ọ̀mù rẹ! Tí o bá gbàgbé nípa apá yìí, Django yíò ṣàròyé nígbà tí o bá gbìyànjú láti tọ́jú fọ́ọ̀mù náà:
 
-![CSFR Forbidden page](images/csrf2.png)
+![Ojú-ìwé Forbidden CSRF](images/csrf2.png)
 
 O dáa, jẹ́ ká wo bó ṣe yẹ kí HTML inú `post_edit.html` rí:
 
@@ -418,7 +418,7 @@ Change it to this:
 
 Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
-## One more thing: deploy time!
+## Ó ṣì ku nnkan kan: àkókò láti ṣàgbékalẹ̀!
 
 Let's see if all this works on PythonAnywhere. Time for another deploy!
 
