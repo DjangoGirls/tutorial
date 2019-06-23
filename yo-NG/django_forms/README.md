@@ -394,7 +394,7 @@ A óò ṣàfikún àmì `{% if %}` mìíràn sí èyí, tí yíò mú kí atọ
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+`{% if %}` yìí yíò fi atọ́ka náà ránṣẹ́ sí aṣàwákiri náà tí aṣàmúlò tó bá ń béèrè ojú-ìwé náà bá ti wọlé nìkan. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
 
 Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
