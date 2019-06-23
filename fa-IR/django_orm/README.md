@@ -203,7 +203,7 @@ QuerySet ها همچنین به شما اجازه می‌دهند لیستی ا�
 
 ### کوئری‌های پیچیده از طریق زنجیره توابع
 
-As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+همانطور که دیدید برخی از توابع در `Post.objects`، یک کوئری ست باز می‌گردانند. همان تابع می‌تواند مجدداً بر روی یک کوئری ست اعمال شود و کوئری ست دیگری برگرداند. Thus, you can combine their effect by **chaining** them together:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
