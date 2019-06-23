@@ -126,7 +126,7 @@ NameError: name 'Post' is not defined
 
 ### فیلتر کردن اشیاء
 
-بخش مهمی از QuerySet، توانایی فیلتر کردن آن است. در اینجا می‌خواهیم تمام پست‌هایی که کاربر ola ساخته است را پیدا کنیم. در اینجا از عبارت `filter` به جای `all` در `Post.objects.all()` استفاده می‌کنیم. در پرانتز ما شرطی (شرایطی) که لازم است وجود داشته باشد تا شیء مورد نظر به QuerySet اضافه شود را بیان می‌کنیم. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. الان یک کد به صورت زیر داریم:
+بخش مهمی از QuerySet، توانایی فیلتر کردن آن است. در اینجا می‌خواهیم تمام پست‌هایی که کاربر ola ساخته است را پیدا کنیم. در اینجا از عبارت `filter` به جای `all` در `Post.objects.all()` استفاده می‌کنیم. در پرانتز ما شرطی (شرایطی) که لازم است وجود داشته باشد تا شیء مورد نظر به QuerySet اضافه شود را بیان می‌کنیم. در اینجا، شرط ما این است که `author` برابر با `me` باشد. نحوه نوشتن آن در جنگو به این صورت است `author=me`. الان یک کد به صورت زیر داریم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -135,7 +135,7 @@ NameError: name 'Post' is not defined
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+یا شاید ما بخواهیم تمام پست‌هایی که در فیلد `title` کلمه 'title' را داشته باشند پیدا کنیم؟
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -144,7 +144,7 @@ Or maybe we want to see all the posts that contain the word 'title' in the `titl
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> دقت کنید که ۲تا کارکتر underscore ( ــ ) در میان `title` و `contains` وجود دارد. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **نکته** دقت کنید که ۲تا کاراکتر underscore ( `ـ`) در میان `title` و `contains` وجود دارد. ORM جنگو از این قانون استفاده می‌کند تا عملیات یا فیلتر مورد نظر را ("contains") از نام فیلد ("title") جدا کند. اگر فقط از یک underscore استفاده کنید خطایی مانند این دریافت خواهید کرد "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
