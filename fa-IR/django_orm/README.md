@@ -146,7 +146,7 @@ NameError: name 'Post' is not defined
 
 > **نکته** دقت کنید که ۲تا کاراکتر underscore ( `ـ`) در میان `title` و `contains` وجود دارد. ORM جنگو از این قانون استفاده می‌کند تا عملیات یا فیلتر مورد نظر را ("contains") از نام فیلد ("title") جدا کند. اگر فقط از یک underscore استفاده کنید خطایی مانند این دریافت خواهید کرد "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+همچنین می‌توانید لیستی از تمام پست‌های منتشر شده دریافت کنید. ما این کار را با فیلتر کردن همه پست‌هایی که برای آن‌ها `published_date` تعیین کرده بودیم انجام می‌دهیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -156,7 +156,7 @@ You can also get a list of all published posts. We do this by filtering all the 
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+متاسفانه پست هایی که از طریق کنسول پایتون اضافه کرده‌ایم هنوز منتشر نشده‌اند. اما می‌توانیم آن‌ها را تغییر دهیم! ابتدا یک نسخه از پست‌هایی که می‌خواهیم منتشر کنیم تهیه می‌کنیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -172,7 +172,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+الان دوباره سعی کنید لیستی از پست‌های منتشر شده را نمایش دهید (دکمه جهت بالا در کیبورد را ۳ بار زده و `enter` کنید):
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -181,9 +181,9 @@ Now try to get list of published posts again (press the up arrow key three times
 <QuerySet [<Post: Sample title>]>
 ```
 
-### سفارش اشیاء (Ordering objects)
+### مرتب‌سازی اشیاء (Ordering objects)
 
-QuerySets همچنین به شما اجازه میدهد لیستی از اشیاء را سفارش دهید.آنها را در قسمت `created_date` سفارش دهید:
+QuerySet ها همچنین به شما اجازه می‌دهند لیستی از اشیاء را مرتب کنید. بیایید آن‌ها را بر اساس `created_date`، مرتب کنیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -192,7 +192,7 @@ QuerySets همچنین به شما اجازه میدهد لیستی از اشی�
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-همچنین با اضافه کردن `-` در ابتدای دستور میتوانیم معکوس سفارش را ببینیم:
+همچنین با اضافه کردن `-` در ابتدای دستور می‌توانیم اشیاء را به صورت معکوس مرتب کنیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -201,7 +201,7 @@ QuerySets همچنین به شما اجازه میدهد لیستی از اشی�
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Complex queries through method-chaining
+### کوئری‌های پیچیده از طریق زنجیره توابع
 
 As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
 
