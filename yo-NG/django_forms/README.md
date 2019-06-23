@@ -396,7 +396,7 @@ A óò ṣàfikún àmì `{% if %}` mìíràn sí èyí, tí yíò mú kí atọ
 
 `{% if %}` yìí yíò fi atọ́ka náà ránṣẹ́ sí aṣàwákiri náà tí aṣàmúlò tó bá ń béèrè ojú-ìwé náà bá ti wọlé nìkan. Èyí kò dáàbòbò ṣíṣẹ̀dá àwọn àròkọ tuntun pátápátá, ṣùgbọ́n ó jẹ́ ìgbésẹ̀ àkọ́kọ́ tó dára kan. A ó ṣàlàyé ààbò síwájú síi nínú àwọn ẹ̀kọ́ àfikún náà.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Rántí àwòrán aṣàmì àtúnṣe náà tí a ṣẹ̀ṣẹ̀ ṣàfikún sí ojú-ìwé detail wa? A tún fẹ́ ṣàfikún ìyípadà kannáà síbẹ̀, kí àwọn èèyàn mìíràn má lè ṣàtúnṣe àwọn àròkọ tó wà tẹ́lẹ̀.
 
 Ṣí `blog/templates/blog/post_detail.html` nínú olóòtú kóòdù náà kí o sì wá ìlà yìí:
 
@@ -416,7 +416,7 @@ Remember the edit icon we just added to our detail page? We also want to add the
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Nítorí pé ó ṣeéṣe ko ti wọlé, tí o bá ṣe ìmúdójúìwọ̀n ojú-ìwé náà, ìwọ kò ní rí ìyàtọ̀ kankan. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
 
 ## Ó ṣì ku nnkan kan: àkókò láti ṣàgbékalẹ̀!
 
