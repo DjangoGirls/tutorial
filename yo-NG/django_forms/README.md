@@ -275,7 +275,7 @@ Now, we will show you how cool Django forms are. A blog post needs to have `titl
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
-![Form validation](images/form_validation2.png)
+![Fífìdí fọ́ọ̀mù múlẹ̀](images/form_validation2.png)
 
 Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
