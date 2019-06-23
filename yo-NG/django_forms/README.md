@@ -420,7 +420,7 @@ Since you're likely logged in, if you refresh the page, you won't see anything d
 
 ## Ó ṣì ku nnkan kan: àkókò láti ṣàgbékalẹ̀!
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+Jẹ́ ká wo bóyá gbogbo èyí yíò ṣiṣẹ́ lórí PythonAnywhere. Àkókò fún ṣíṣe àgbékalẹ̀ mìíràn!
 
 * Lákọ̀ọ́kọ́, ṣàrídájú kóòdù tuntun rẹ, kí o sì tì í sí GitHub:
 
