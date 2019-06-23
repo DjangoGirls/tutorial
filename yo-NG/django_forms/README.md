@@ -281,7 +281,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 ## Fọ́ọ̀mù àtúnṣe
 
-Ní báyìí, a mọ bí a ṣe lè ṣàfikún fọ́ọ̀mù tuntun kan. Ṣùgbọ́n tí a bá fẹ́ ṣàtúnṣe ìkan tó ti wà tẹ́lẹ̀ ńkọ́? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Ní báyìí, a mọ bí a ṣe lè ṣàfikún fọ́ọ̀mù tuntun kan. Ṣùgbọ́n tí a bá fẹ́ ṣàtúnṣe ìkan tó ti wà tẹ́lẹ̀ ńkọ́? This is very similar to what we just did. Let's create some important things quickly. (Tí nnkan kan kò bá yé ọ, ó yẹ kí o béèrè lọ́wọ́ olùkọ́ rẹ tàbí kí o wo àwọn àkòrí tó ṣáájú náà, nítorí pé a ti ṣàlàyé gbogbo àwọn ìgbésẹ̀ wọ̀nyí tẹ́lẹ̀.)
 
 Ṣí `blog/templates/blog/post_detail.html` nínú olóòtú kóòdù náà kí o sì ṣàfikún ìlà yìí
 
@@ -320,7 +320,7 @@ kí àwòṣe (template) náà lè rí báyìí:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+A ó tún lo àwòṣe (template) `blog/templates/blog/post_edit.html` náà, nítorí náà ohun tí a pàdánù kẹ́yìn ni *view* kan.
 
 Jẹ́ ká ṣí `blog/views.py` nínú olóòtú kóòdù náà kí a sì ṣàfikún èyí ní ìgbẹ̀yìn fáìlì náà:
 
