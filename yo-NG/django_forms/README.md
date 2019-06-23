@@ -138,11 +138,11 @@ Láti ṣẹ̀dá fọ́ọ̀mù `Post` tuntun kan, a nílò láti pe `PostForm(
 
 ## Àwòṣe (template)
 
-We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
+A nílò láti ṣẹ̀dá fáìlì `post_edit.html` kan nínú àkójọpọ̀ fáìlì `blog/templates/blog` náà, kí a sì ṣí nínú olóòtú kóòdù náà. Láti mú kí fọ́ọ̀mù kan ṣiṣẹ́, a nílò àwọn nnkan bíi mélòó kan:
 
-* We have to display the form. We can do that with (for example) {% raw %}`{{ form.as_p }}`{% endraw %}.
-* The line above needs to be wrapped with an HTML form tag: `<form method="POST">...</form>`.
-* We need a `Save` button. We do that with an HTML button: `<button type="submit">Save</button>`.
+* A ní láti ṣàfihàn fọ́ọ̀mù náà. A lè ṣe ìyẹn pẹ̀lú (fún àpẹẹrẹ) {% raw %}`{{ form.as_p }}`{% endraw %}.
+* Ìlà tó wà lókè yìí nílò láti gba wíwé pẹ̀lú àmì fọ́ọ̀mù HTML kan: `<form method="POST">...</form>`.
+* A nílò bọ́tìnnì `Save` kan. A lè ṣe ìyẹn pẹ̀lú bọ́tìnnì HTML kan: `<button type="submit">Save</button>`.
 * And finally, just after the opening `<form ...>` tag we need to add {% raw %}`{% csrf_token %}`{% endraw %}. This is very important, since it makes your forms secure! If you forget about this bit, Django will complain when you try to save the form:
 
 ![CSFR Forbidden page](images/csrf2.png)
