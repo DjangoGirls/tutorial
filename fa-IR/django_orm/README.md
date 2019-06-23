@@ -126,7 +126,7 @@ NameError: name 'Post' is not defined
 
 ### فیلتر کردن اشیاء
 
-A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. ما در اینجا به جای `all` از `filter` در تمامی `Post.objects.all()` استفاده می کنیم. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. الان یک کد به صورت زیر داریم:
+بخش مهمی از QuerySet، توانایی فیلتر کردن آن است. در اینجا می‌خواهیم تمام پست‌هایی که کاربر ola ساخته است را پیدا کنیم. در اینجا از عبارت `filter` به جای `all` در `Post.objects.all()` استفاده می‌کنیم. در پرانتز ما شرطی (شرایطی) که لازم است وجود داشته باشد تا شیء مورد نظر به QuerySet اضافه شود را بیان می‌کنیم. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. الان یک کد به صورت زیر داریم:
 
 {% filename %}خط فرمان{% endfilename %}
 
