@@ -61,9 +61,9 @@ NameError: name 'Post' is not defined
 
 لیستی از پست‌هایی که قبلا ایجاد کرده بودیم درست شد! ما این پست‌ها را با استفاده از صفحه مدیریت جنگو ایجاد کرده‌بودیم. اما حالا می‌خواهیم پست جدیدی با استفاده از پایتون درست کنیم. چطور این کار را انجام می‌دهیم؟
 
-### ایجاد شیء
+### ساختن شیء
 
-به صورت زیر می توان یک شیء پست جدید در پایگاه داده ایجاد کرد:
+به صورت زیر می‌توان یک شیء جدید از نوع Post در پایگاه داده ایجاد کرد:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -71,9 +71,9 @@ NameError: name 'Post' is not defined
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+اما ما در اینجا یک عنصر گم شده داریم: `نویسنده`. نیاز هست که یک نمونه از مدل `User` را به عنوان نویسنده برای ساخت شیء جدید تعریف کنیم. نحوه انجام کار به صورت زیر می باشد.
 
-بیایید اول مدل User را وارد کنیم:
+بیایید اول مدل User را فراخوانی کنیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -81,7 +81,7 @@ But we have one missing ingredient here: `me`. We need to pass an instance of `U
 >>> from django.contrib.auth.models import User
 ```
 
-مشاهده کاربران در پایگاه داده :
+چه کاربرانی در پایگاه داده داریم؟ این را امتحان کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -90,7 +90,7 @@ But we have one missing ingredient here: `me`. We need to pass an instance of `U
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+این همان کاربر اصلی یا superuser است که کمی قبل‌تر ساخته‌ایم! حالا بیایید نمونه ای از روی کاربر اصلی بسازیم (این خط را مطابق نام کاربر اصلی که قبلاً وارد کرده‌اید تغییر دهید):
 
 {% filename %}خط فرمان{% endfilename %}
 
