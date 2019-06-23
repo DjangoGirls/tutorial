@@ -366,7 +366,7 @@ Nígbà tí o bá tẹ̀ ẹ́, ìwọ yíò rí fọ́ọ̀mù náà pẹ̀lú 
 
 ![Fọ́ọ̀mù àtúnṣe](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Má tijú láti ṣàyípadà àkọlé náà tàbí ọ̀rọ̀ náà kí o sì tọ́jú àwọn ìyípadà náà!
 
 Congratulations! Your application is getting more and more complete!
 
