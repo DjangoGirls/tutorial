@@ -98,9 +98,9 @@ NameError: name 'Post' is not defined
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+همان طور که می‌بینید ما یک `کاربر` را به کمک دستور `get` و با ارجاع دادن مقدار 'ola' به متغیر `username` فراخوانی کردیم. خیلی دقیق!
 
-الان ما میتونیم پست خود را ایجا کنیم:
+الان ما می‌توانیم پست خود را ایجا کنیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -109,7 +109,7 @@ As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 <Post: Sample title>
 ```
 
-با هم امتحان می کنیم.
+هورا! می‌خواهید امتحان کنیم که آیا درست کار می‌کند؟
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -118,11 +118,11 @@ As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-اینگونه یک پست دیگر در لیست خواهیم داشت!
+بنابراین یک پست دیگر در لیست خواهیم داشت!
 
 ### اضافه کردن پست های بیشتر
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+حالا برای تفریح هم که شده می‌توانید پست‌های بیشتری بسازید تا با نحوه کارکرد آن بهتر آشنا شوید. دو یا سه پست دیگربسازید و سپس به مرحله بعد بروید.
 
 ### فیلتر کردن اشیاء
 
