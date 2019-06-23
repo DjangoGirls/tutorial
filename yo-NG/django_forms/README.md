@@ -1,6 +1,6 @@
 # Àwọn fọ́ọ̀mù Django
 
-Ohun tó kẹ́yìn tí a fẹ́ ṣe lórí ààyè ayélujára wa ni láti ṣẹ̀dá ọ̀nà tó dára kan láti ṣàfikún àti ṣàtúnṣe àwọn àròkọ blog. Django's `admin` is cool, but it is rather hard to customize and make pretty. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
+Ohun tó kẹ́yìn tí a fẹ́ ṣe lórí ààyè ayélujára wa ni láti ṣẹ̀dá ọ̀nà tó dára kan láti ṣàfikún àti ṣàtúnṣe àwọn àròkọ blog. `admin` ti Django dára, ṣùgbọ́n ó ṣòro láti ṣé bí o ṣe fẹ́ àti láti mú rẹwà. With `forms` we will have absolute power over our interface – we can do almost anything we can imagine!
 
 Ohun tó dára nípa àwọn fọ́ọ̀mù Django ni pé a lè ṣàlàyé ìkan láti ìbẹ̀rẹ̀ tàbí ṣẹ̀dá `ModelForm` kan èyí tí yíò tọ́jú èsì fọ́ọ̀mù náà sínú àwòṣe náà.
 
