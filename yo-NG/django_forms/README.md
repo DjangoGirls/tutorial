@@ -368,7 +368,7 @@ Nígbà tí o bá tẹ̀ ẹ́, ìwọ yíò rí fọ́ọ̀mù náà pẹ̀lú 
 
 Má tijú láti ṣàyípadà àkọlé náà tàbí ọ̀rọ̀ náà kí o sì tọ́jú àwọn ìyípadà náà!
 
-Congratulations! Your application is getting more and more complete!
+Kú oríire! Ètò rẹ túbọ̀ ń péye síi!
 
 If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
 
