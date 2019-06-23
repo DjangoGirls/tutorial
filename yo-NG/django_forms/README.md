@@ -281,7 +281,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 ## Fọ́ọ̀mù àtúnṣe
 
-Ní báyìí, a mọ bí a ṣe lè ṣàfikún fọ́ọ̀mù tuntun kan. Ṣùgbọ́n tí a bá fẹ́ ṣàtúnṣe ìkan tó ti wà tẹ́lẹ̀ ńkọ́? This is very similar to what we just did. Let's create some important things quickly. (Tí nnkan kan kò bá yé ọ, ó yẹ kí o béèrè lọ́wọ́ olùkọ́ rẹ tàbí kí o wo àwọn àkòrí tó ṣáájú náà, nítorí pé a ti ṣàlàyé gbogbo àwọn ìgbésẹ̀ wọ̀nyí tẹ́lẹ̀.)
+Ní báyìí, a mọ bí a ṣe lè ṣàfikún fọ́ọ̀mù tuntun kan. Ṣùgbọ́n tí a bá fẹ́ ṣàtúnṣe ìkan tó ti wà tẹ́lẹ̀ ńkọ́? Èyí kò fi bẹ́ẹ̀ yàtọ̀ sí ohun tí a ṣẹ̀ṣẹ̀ ṣetán. Jẹ́ ká ṣẹ̀dá àwọn nnkan tó ṣe pàtàkì ní kíákíá. (Tí nnkan kan kò bá yé ọ, ó yẹ kí o béèrè lọ́wọ́ olùkọ́ rẹ tàbí kí o wo àwọn àkòrí tó ṣáájú náà, nítorí pé a ti ṣàlàyé gbogbo àwọn ìgbésẹ̀ wọ̀nyí tẹ́lẹ̀.)
 
 Ṣí `blog/templates/blog/post_detail.html` nínú olóòtú kóòdù náà kí o sì ṣàfikún ìlà yìí
 
