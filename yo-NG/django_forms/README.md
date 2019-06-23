@@ -416,7 +416,7 @@ Rántí àwòrán aṣàmì àtúnṣe náà tí a ṣẹ̀ṣẹ̀ ṣàfikún 
 {% endif %}
 ```
 
-Nítorí pé ó ṣeéṣe ko ti wọlé, tí o bá ṣe ìmúdójúìwọ̀n ojú-ìwé náà, ìwọ kò ní rí ìyàtọ̀ kankan. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Nítorí pé ó ṣeéṣe ko ti wọlé, tí o bá ṣe ìmúdójúìwọ̀n ojú-ìwé náà, ìwọ kò ní rí ìyàtọ̀ kankan. Ṣí ojú-ìwé náà nínú aṣàwákiri mìíràn kan tàbí fèrèsé kòlólúwa kan (tí a n pè ní "InPrivate" nínú Windows Edge), ìwọ yíò si rí pé atọ́ka náà kò fojú hàn, kódà àwòrán aṣàmì náà kò fojú hàn!
 
 ## Ó ṣì ku nnkan kan: àkókò láti ṣàgbékalẹ̀!
 
