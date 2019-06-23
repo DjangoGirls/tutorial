@@ -116,7 +116,7 @@ Lẹ́yìn ṣíṣe ìmúdójúìwọ̀n ààyè náà, a rí `AttributeError` 
 
 ## view post_new
 
-Time to open the `blog/views.py` file in the code editor and add the following lines with the rest of the `from` rows:
+Àkókò láti ṣí fáìlì `blog/views.py` nínú olóòtú kóòdù náà àti ṣàfikún àwọn ìlà tó tẹ̀le yìí pẹ̀lú àwọn ìlà `from` yòókù náà:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -124,7 +124,7 @@ Time to open the `blog/views.py` file in the code editor and add the following l
 from .forms import PostForm
 ```
 
-And then our *view*:
+Lẹ́yìn náà *view* wa:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,9 +134,9 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To create a new `Post` form, we need to call `PostForm()` and pass it to the template. We will go back to this *view*, but for now, let's quickly create a template for the form.
+Láti ṣẹ̀dá fọ́ọ̀mù `Post` tuntun kan, a nílò láti pe `PostForm()` kí a sì darí rẹ̀ sí àwòṣe (template) náà. A ó padà sí *view* yìí, ṣùgbọ́n ní báyìí, jẹ́ ká tètè ṣẹ̀dá àwòṣe (template) kan fún fọ́ọ̀mù náà.
 
-## Template
+## Àwòṣe (template)
 
 We need to create a file `post_edit.html` in the `blog/templates/blog` directory, and open it in the code editor. To make a form work we need several things:
 
