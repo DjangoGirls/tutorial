@@ -398,7 +398,7 @@ This `{% if %}` will cause the link to be sent to the browser only if the user r
 
 Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Ṣí `blog/templates/blog/post_detail.html` nínú olóòtú kóòdù náà kí o sì wá ìlà yìí:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Ṣàyípadà rẹ̀ sí èyí:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -446,4 +446,4 @@ Jẹ́ ká wo bóyá gbogbo èyí yíò ṣiṣẹ́ lórí PythonAnywhere. Àk�
 
 * Ní ìparí, lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà (lo bọ́tìnnì àkójọ àṣàyàn tó wà ní òkè lápá ọ̀tún console náà) kí o sì tẹ **Reload**. Ṣe ìmúdójúìwọ̀n blog https://subdomain.pythonanywhere.com rẹ láti rí àwọn ìyípadà náà.
 
-And that should be it! Congrats :)
+A ó parí gbogbo rẹ̀ síbí! Kú oríire :)
