@@ -283,7 +283,7 @@ Django is taking care to validate that all the fields in our form are correct. I
 
 Ní báyìí, a mọ bí a ṣe lè ṣàfikún fọ́ọ̀mù tuntun kan. Ṣùgbọ́n tí a bá fẹ́ ṣàtúnṣe ìkan tó ti wà tẹ́lẹ̀ ńkọ́? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Ṣí `blog/templates/blog/post_detail.html` nínú olóòtú kóòdù náà kí o sì ṣàfikún ìlà yìí
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+kí àwòṣe (template) náà lè rí báyìí:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Ṣí `blog/urls.py` nínú olóòtú kóòdù náà, kí o sì ṣàfikún ìlà yìí:
 
 {% filename %}blog/urls.py{% endfilename %}
 
