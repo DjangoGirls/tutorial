@@ -279,9 +279,9 @@ Try to save the form without `title` and `text`. Guess what will happen!
 
 Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
 
-## Edit form
+## Fọ́ọ̀mù àtúnṣe
 
-Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Ní báyìí, a mọ bí a ṣe lè ṣàfikún fọ́ọ̀mù tuntun kan. Ṣùgbọ́n tí a bá fẹ́ ṣàtúnṣe ìkan tó ti wà tẹ́lẹ̀ ńkọ́? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
 Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 
@@ -370,7 +370,7 @@ Má tijú láti ṣàyípadà àkọlé náà tàbí ọ̀rọ̀ náà kí o sì
 
 Kú oríire! Ètò rẹ túbọ̀ ń péye síi!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Tí o bá nílò àlàyé si nípa àwọn fọ́ọ̀mù Django, ó yẹ kí o ka àkọsílẹ̀ àlàyé náà: https://docs.djangoproject.com/en/2.0/topics/forms/
 
 ## Security
 
