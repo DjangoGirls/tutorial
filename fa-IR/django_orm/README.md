@@ -27,7 +27,7 @@
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+شما در حال حاضر در کنسول تعاملی جنگو هستید. این محل کاملاً شبیه به محیط تعاملی پایتون می‌باشد با این تفاوت که چند ویژگی جادویی جنگو را در بر دارد. :) شما می‌توانید تمامی دستورات پایتون را در اینجا استفاده کنید.
 
 ### تمام اشیاء
 
@@ -42,7 +42,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+اوه اوه! به خطا خوردیم. این خطا به این معنی است که هیچ پستی وجود ندارد. درست است! فراموش کردیم که پست ها را import کنیم!
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -50,7 +50,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+مدل `Post` را از `blog.models` فراخوانی می‌کنیم. حالا دوباره تمامی پست‌ها را نمایش می‌دهیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -59,7 +59,7 @@ We import the model `Post` from `blog.models`. Let's try displaying all posts ag
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+لیستی از پست‌هایی که قبلا ایجاد کرده بودیم درست شد! ما این پست‌ها را با استفاده از صفحه مدیریت جنگو ایجاد کرده‌بودیم. اما حالا می‌خواهیم پست جدیدی با استفاده از پایتون درست کنیم. چطور این کار را انجام می‌دهیم؟
 
 ### ایجاد شیء
 
