@@ -360,11 +360,11 @@ form = PostForm(instance=post)
 
 OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
 
-![Edit button](images/edit_button2.png)
+![Bọ́tìnnì àtúnṣe](images/edit_button2.png)
 
 When you click it you will see the form with our blog post:
 
-![Edit form](images/edit_form2.png)
+![Fọ́ọ̀mù àtúnṣe](images/edit_form2.png)
 
 Feel free to change the title or the text and save the changes!
 
@@ -444,6 +444,6 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
 
 (Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* Ní ìparí, lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà (lo bọ́tìnnì àkójọ àṣàyàn tó wà ní òkè lápá ọ̀tún console náà) kí o sì tẹ **Reload**. Ṣe ìmúdójúìwọ̀n blog https://subdomain.pythonanywhere.com rẹ láti rí àwọn ìyípadà náà.
 
 And that should be it! Congrats :)
