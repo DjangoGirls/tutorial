@@ -322,7 +322,7 @@ Open `blog/urls.py` in the code editor, and add this line:
 
 We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Jẹ́ ká ṣí `blog/views.py` nínú olóòtú kóòdù náà kí a sì ṣàfikún èyí ní ìgbẹ̀yìn fáìlì náà:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ def post_edit(request, pk):
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+…àti nígbà tí a bá ṣẹ̀ṣẹ̀ ṣí fọ́ọ̀mù kan pẹ̀lú àròkọ yìí láti ṣàtúnṣe:
 
 {% filename %}blog/views.py{% endfilename %}
 
