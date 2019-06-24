@@ -33,7 +33,7 @@ Láti ṣàgbékalẹ̀ Bootstrap, ṣí fáìlì `.html` rẹ nínú olóòtú 
 
 ## Àwọn fáìlì tó wà lójú kan nínú Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Àwọn fáìlì tó wà lójú kan ni gbogbo CSS àti àwọn àwòrán rẹ. Their content doesn't depend on the request context and will be the same for every user.
+Finally we will take a closer look at these things we've been calling **static files**. Àwọn fáìlì tó wà lójú kan ni gbogbo CSS àti àwọn àwòrán rẹ. Àkóónú wọn kìí dá lórí bí ìbéèrè náà ṣe rí àti pé yíò jẹ́ bákannáà fún gbogbo aṣàmúlò.
 
 ### Where to put static files for Django
 
