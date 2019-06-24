@@ -31,9 +31,9 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
+Gẹ́gẹ́ bó o ṣe ríi, a ti ṣẹ̀dá iṣẹ́ kan (`def`) tí a n pè ní `post_list` tó máa gba `request` tí yíò sì `return` ohun tó bá gba láti pípè iṣẹ́ mìíràn `render` tí yíò ṣàfihàn (ṣàkópọ̀) àwòṣe (template) wa `blog/post_list.html`.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+Tọ́jú fáìlì náà, lọ sí http://127.0.0.1:8000/ láti wo ohun tí a ti ní.
 
 Another error! Read what's going on now:
 
