@@ -18,11 +18,11 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Not too much stuff here yet.
+Kò tíì sí nnkan púpọ̀ níbí.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+Rántí pé àwọn ìlà tó n bẹ̀rẹ̀ pẹ̀lú `#` jẹ́ àwọn àlàyé – èyí túmọ̀ sí pé àwọn ìlà yẹn kò ní jẹ́ ṣíṣe nípasẹ̀ Python.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+Jẹ́ ká ṣẹ̀dá *view* kan bíi àlàyé náà ṣe sọ. Ṣàfikún ìwọnba view tó tẹ̀le yìí sí abẹ́ rẹ̀:
 
 {% filename %}blog/views.py{% endfilename %}
 
