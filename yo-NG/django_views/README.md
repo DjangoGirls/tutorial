@@ -1,8 +1,8 @@
-# Django views – time to create!
+# Àwọn view ti Django – àkókò láti ṣẹ̀dá!
 
-Time to get rid of the bug we created in the last chapter! :)
+Àkókò láti mú àṣìṣe tí a ṣẹ̀dá nínú àkòrí tó ṣáájú náà kúrò! :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*View* jẹ́ ààyè kan tí a fi "ọgbọ́n" ètò wa sí. Yóò béèrè àlàyé lọ́wọ́ `model` tí o ti ṣẹ̀dá tẹ́lẹ̀ àti pé yíò darí àlàyé náà sí `template` kan. A ó ṣẹ̀dá àwòṣe (template) kan nínú àkòrí tó kàn náà. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
 Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
