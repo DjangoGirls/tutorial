@@ -39,6 +39,6 @@ Tọ́jú fáìlì náà, lọ sí http://127.0.0.1:8000/ láti wo ohun tí a ti
 
 ![Àṣìṣe](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Èyí fi hàn pé server náà tí n ṣiṣẹ́ padà, ṣùgbọ́n kò tíì rí bó ti yẹ, àbí ó rí bẹ́ẹ̀ ni? Má dààmú, ó kàn jẹ́ ojú-ìwé àṣìṣe kan, kò sí ohun kan láti bẹrù! Gẹ́gẹ́ bí àwọn ìròyìn àṣìṣe tó wà nínú console náà, àwọn wọ̀nyí wúlò púpọ̀ gan-an. O lè kà pé *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
 
 > Kẹ́kọ̀ọ́ síi nípa àwọn view Django nípasẹ̀ kíka àkànṣe àkọsílẹ̀ àlàyé náà: https://docs.djangoproject.com/en/2.0/topics/http/views/
