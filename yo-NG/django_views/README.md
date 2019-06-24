@@ -4,11 +4,11 @@
 
 *View* jẹ́ ààyè kan tí a fi "ọgbọ́n" ètò wa sí. Yóò béèrè àlàyé lọ́wọ́ `model` tí o ti ṣẹ̀dá tẹ́lẹ̀ àti pé yíò darí àlàyé náà sí `template` kan. A ó ṣẹ̀dá àwòṣe (template) kan nínú àkòrí tó kàn náà. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+Àwọn View máa ń wà nínú fáìlì `views.py`. A ó ṣàfikún àwọn *view* wa sínú fáìlì `blog/views.py` náà.
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+O dáa, jẹ́ ká ṣí fáìlì yìí nínú olóòtú kóòdù wa láti rí ohun tó wà níbẹ̀:
 
 {% filename %}blog/views.py{% endfilename %}
 
