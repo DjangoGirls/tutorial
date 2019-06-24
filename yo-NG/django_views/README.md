@@ -35,7 +35,7 @@ Gẹ́gẹ́ bó o ṣe ríi, a ti ṣẹ̀dá iṣẹ́ kan (`def`) tí a n pè
 
 Tọ́jú fáìlì náà, lọ sí http://127.0.0.1:8000/ láti wo ohun tí a ti ní.
 
-Another error! Read what's going on now:
+Àṣìṣe mìíràn! Ka ohun tí ń ṣẹlẹ̀ lọ́wọ́:
 
 ![Error](images/error.png)
 
