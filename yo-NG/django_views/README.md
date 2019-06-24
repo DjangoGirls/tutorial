@@ -2,7 +2,7 @@
 
 Àkókò láti mú àṣìṣe tí a ṣẹ̀dá nínú àkòrí tó ṣáájú náà kúrò! :)
 
-*View* jẹ́ ààyè kan tí a fi "ọgbọ́n" ètò wa sí. Yóò béèrè àlàyé lọ́wọ́ `model` tí o ti ṣẹ̀dá tẹ́lẹ̀ àti pé yíò darí àlàyé náà sí `template` kan. A ó ṣẹ̀dá àwòṣe (template) kan nínú àkòrí tó kàn náà. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*View* jẹ́ ààyè kan tí a fi "ọgbọ́n" ètò wa sí. Yóò béèrè àlàyé lọ́wọ́ `model` tí o ti ṣẹ̀dá tẹ́lẹ̀ àti pé yíò darí àlàyé náà sí `template` kan. A ó ṣẹ̀dá àwòṣe (template) kan nínú àkòrí tó kàn náà. Awon view wulẹ̀ jẹ́ àwọn iṣẹ́ Python tó ṣòro díẹ̀ ju àwọn tí a kọ nínú àkòrí **Ìfihàn sí Python** náà.
 
 Àwọn View máa ń wà nínú fáìlì `views.py`. A ó ṣàfikún àwọn *view* wa sínú fáìlì `blog/views.py` náà.
 
@@ -39,6 +39,6 @@ Tọ́jú fáìlì náà, lọ sí http://127.0.0.1:8000/ láti wo ohun tí a ti
 
 ![Àṣìṣe](images/error.png)
 
-Èyí fi hàn pé server náà tí n ṣiṣẹ́ padà, ṣùgbọ́n kò tíì rí bó ti yẹ, àbí ó rí bẹ́ẹ̀ ni? Má dààmú, ó kàn jẹ́ ojú-ìwé àṣìṣe kan, kò sí ohun kan láti bẹrù! Gẹ́gẹ́ bí àwọn ìròyìn àṣìṣe tó wà nínú console náà, àwọn wọ̀nyí wúlò púpọ̀ gan-an. O lè kà pé *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Èyí fi hàn pé server náà tí n ṣiṣẹ́ padà, ṣùgbọ́n kò tíì rí bó ti yẹ, àbí ó rí bẹ́ẹ̀ ni? Má dààmú, ó kàn jẹ́ ojú-ìwé àṣìṣe kan, kò sí ohun kan láti bẹrù! Gẹ́gẹ́ bí àwọn ìròyìn àṣìṣe tó wà nínú console náà, àwọn wọ̀nyí wúlò púpọ̀ gan-an. O lè kà pé *TemplateDoesNotExist*. Jẹ́ ká ṣàtúnṣe àṣìṣe yìí àti ṣẹ̀dá àwòṣe (template) kan nínú àkòrí tó kàn náà!
 
 > Kẹ́kọ̀ọ́ síi nípa àwọn view Django nípasẹ̀ kíka àkànṣe àkọsílẹ̀ àlàyé náà: https://docs.djangoproject.com/en/2.0/topics/http/views/
