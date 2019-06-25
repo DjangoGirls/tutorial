@@ -230,7 +230,7 @@ if form.is_valid():
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Adăugați-l la începutul fișierului. Acum noi putem să "facem un redirect la pagina `post_detail` pentru a vizualiza articol creat":
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -238,9 +238,9 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` is the name of the view we want to go to. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` este denumire unui view pe care vrem să o afișăm. Țineți minte că acest *view* are nevoie de o variabilă `pk`? Ca să-l transmitem la funcție utilizăm `pk=post.pk`, unde `post` este un articol nou care a fost creat!
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+OK, am vorbit mult, poate doriți să vedeți codul complet al funcției *view*?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,7 +259,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Hai să verificăm dacă lucrează. Mergeți la o pagină http://127.0.0.1:8000/post/new/, adăugați `title` și `text`, salvați-l... și voilà! Un nou articol este adăugat și noi suntem redirecționați la pagina `post_detail`!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
