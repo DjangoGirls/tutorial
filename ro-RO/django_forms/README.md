@@ -281,9 +281,9 @@ Django are grija de validare câmpurilor din formularul nostru. Nu este acesta m
 
 ## Editarea formularului
 
-Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
+Acum știm cum să adăugăm formular nou. Dar dacă dorim să shimbăm pe acela pe care îl avem? Acesta este foarte similar cu aceea, ce noi am făcut. Hai să cream niște lucruri importante. (Dacă nu înțelegeți ceva, întrebați pe mentorul vostru sau citiți capitole precedente, pentru că aceste pași au fost deja explicate.)
 
-Open `blog/templates/blog/post_detail.html` in the code editor and add the line
+Deschideți `blog/templates/blog/post_detail.html` în editorul de cod și adăugați linia
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -291,7 +291,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and add the line
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-so that the template will look like this:
+în așa mod ca un template să arăte în mod următor:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -312,7 +312,7 @@ so that the template will look like this:
 {% endblock %}
 ```
 
-Open `blog/urls.py` in the code editor, and add this line:
+Deschideți `blog/urls.py` în editorul de cod și adăugați o linie:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -320,9 +320,9 @@ Open `blog/urls.py` in the code editor, and add this line:
     path('post/<int:pk>/edit/', views.post_edit, name='post_edit'),
 ```
 
-We will reuse the template `blog/templates/blog/post_edit.html`, so the last missing thing is a *view*.
+O să utilizăm template `blog/templates/blog/post_edit.html`, urmează să scriem un *view*.
 
-Let's open `blog/views.py` in the code editor and add this at the very end of the file:
+Hai să deschidem `blog/views.py` în editor de cod și să adăugăm cod următor la sfârșitul fișierului:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-This looks almost exactly the same as our `post_new` view, right? But not entirely. For one, we pass an extra `pk` parameter from urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Este ca și view `post_new`, corect? Dar nu complet. În primul rând, adăugăm un parametru `pk` de la urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
 
 {% filename %}blog/views.py{% endfilename %}
 
