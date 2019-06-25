@@ -261,11 +261,11 @@ def post_new(request):
 
 Hai să verificăm dacă lucrează. Mergeți la o pagină http://127.0.0.1:8000/post/new/, adăugați `title` și `text`, salvați-l... și voilà! Un nou articol este adăugat și noi suntem redirecționați la pagina `post_detail`!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+Poate ați văzut că am setat data de publicare înainte de salvare a postului. Apoi, o să introducem *butonul publish* în **Django Girls Tutorial: Extensii**.
 
-That is awesome!
+Acesta este minunat!
 
-> As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Din cauză că am utilizat interfața Django admin, suntem logați în sistem. Acesta sunt câteva situații în care putem să fim deconectați (închiderea browserului, restartarea bazei de date, etc.). Dacă primiți erori, când creați articol, care se refer la absența userului care este logat în sistem, mergeți la pagina de administrare page http://127.0.0.1:8000/admin și autentificați. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
 ![Logged in error](images/post_create_error.png)
 
