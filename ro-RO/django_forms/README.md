@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Este ca și view `post_new`, corect? Dar nu complet. În primul rând, adăugăm un parametru `pk` de la urls. Next, we get the `Post` model we want to edit with `get_object_or_404(Post, pk=pk)` and then, when we create a form, we pass this post as an `instance`, both when we save the form…
+Este ca și view `post_new`, corect? Dar nu complet. În primul rând, adăugăm un parametru `pk` de la urls. Apoi, obținem modelul `Post` pe care o vrem să edităm, utilizând `get_object_or_404(Post, pk=pk)` și apoi, când creăm formular, transmitem articol ca `o instanță`, în ambele cazuri când salvăm formular…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -350,7 +350,7 @@ Este ca și view `post_new`, corect? Dar nu complet. În primul rând, adăugăm
 form = PostForm(request.POST, instance=post)
 ```
 
-…and when we've just opened a form with this post to edit:
+... și când am deschis formular cu articol selectat pentru a-l edita:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -358,21 +358,21 @@ form = PostForm(request.POST, instance=post)
 form = PostForm(instance=post)
 ```
 
-OK, let's test if it works! Let's go to the `post_detail` page. There should be an edit button in the top-right corner:
+OK, hai să testăm, dacă lucrează! Deschideți pagina `post_detail`. Acolo trebuie să fie un buton pentru editare în colț din sus-dreapta:
 
 ![Edit button](images/edit_button2.png)
 
-When you click it you will see the form with our blog post:
+Când faceți un click o să vedeți formular cu articolul nostru:
 
 ![Edit form](images/edit_form2.png)
 
-Feel free to change the title or the text and save the changes!
+Schimbați titlu sau text și salvați schimbările!
 
-Congratulations! Your application is getting more and more complete!
+Felicitări! Aplicație devine mai complicată!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+Dacă doriți mai multă informație despre formulare Django, o găsiți în documentație: https://docs.djangoproject.com/en/2.0/topics/forms/
 
-## Security
+## Securitate
 
 Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
 
