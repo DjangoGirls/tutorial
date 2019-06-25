@@ -265,21 +265,21 @@ Poate ați văzut că am setat data de publicare înainte de salvare a postului.
 
 Acesta este minunat!
 
-> Din cauză că am utilizat interfața Django admin, suntem logați în sistem. Acesta sunt câteva situații în care putem să fim deconectați (închiderea browserului, restartarea bazei de date, etc.). Dacă primiți erori, când creați articol, care se refer la absența userului care este logat în sistem, mergeți la pagina de administrare page http://127.0.0.1:8000/admin și autentificați. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Din cauză că am utilizat interfața Django admin, suntem logați în sistem. Acesta sunt câteva situații în care putem să fim deconectați (închiderea browserului, restartarea bazei de date, etc.). Dacă primiți erori, când creați articol, care se refer la absența userului care este logat în sistem, mergeți la pagina de administrare page http://127.0.0.1:8000/admin și autentificați. O să fixăm aceasta problemă temporar. O soluție este descrisă în capitolul **Tema pentru acasă: adăugați securitate la site-ul vostru!** după tutorial principal.
 
 ![Logged in error](images/post_create_error.png)
 
-## Form validation
+## Validație formularelor
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Acum o să vă arătăm cum lucrează Django formulare. Un articol de blog trebuie să aibă câmpurile `title` și `text`. În modelul `Post` noi nu am zis că aceste câmpurile nu sunt obligatorii (spre deosebire de `published_date`), deci Django, o să le considere obligatorii, în mod implicit.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Încercați să salvați formular fără `title` și `text`. Ce se va întâmpla!
 
 ![Form validation](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django are grija de validare câmpurilor din formularul nostru. Nu este acesta minunat?
 
-## Edit form
+## Editarea formularului
 
 Now we know how to add a new form. But what if we want to edit an existing one? This is very similar to what we just did. Let's create some important things quickly. (If you don't understand something, you should ask your coach or look at the previous chapters, since we covered all these steps already.)
 
