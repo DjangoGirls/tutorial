@@ -2,13 +2,13 @@
 
 Este timp să corectăm eroare pe care am creat-o în ultim capitol :)
 
-*view* este loc unde noi punem toata logica aplicației. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*view* este loc unde noi punem toata logica aplicației. El va solicita informație de la `model` pe care l-am creat mai înainte și va transmite `template`-ului. O să creăm template în capitolul următor. View-urile sunt doar funțiile Python care sunt puțin mai complicate decât cele pe care le-am scris în capitolul **Introducere în Python**.
 
-Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
+View-urile sunt plasate în fișierul `views.py`. O să adăugăm *views* în fișier `blog/views.py`.
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+OK, hai să deschidem fișierul dat în editorul de cod și să vedem ce este în el:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -18,9 +18,9 @@ from django.shortcuts import render
 # Create your views here.
 ```
 
-Not too much stuff here yet.
+Nu prea multe lucruri aici.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+Țineți minte că liniile care încep cu `#` sunt comentarii – acesta înseamnă ca ele nu vor fi interpretate de Python.
 
 Let's create a *view* as the comment suggests. Add the following minimal view below it:
 
