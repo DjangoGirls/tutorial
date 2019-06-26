@@ -8,11 +8,11 @@ URL este o adresa web. Vedeți URL fiecare dată când voi vizitați website - e
 
 ![Url](images/url.png)
 
-Fiecare pagina din Internet are nevoie de URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Fiecare pagina din Internet are nevoie de URL. În așa mod, aplicație știe ce ea trebuie să afișeze utilizatorului care deschide acest URL. În Django, noi utilizăm un instrument denumit `URLconf` (configurație URL). URLconf este un set de modeluri pe care Django va încerca să compare cu URL solicitat pentru a găsi un view corect.
 
-## How do URLs work in Django?
+## Cum URL-urile lucrează în Django?
 
-Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
+Hai să deschidem fișierul `mysite/urls.py` în editorul de cod și să vedem cum el arată:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -29,11 +29,11 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+După cum vedeți, Django deja a generat careva cod.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+Liniile între paranteze triple (`'''` sau `"""`) sunt numite docstrings (șir de documentație) – puteți să-l scrieți la începutul fișierului, clasei sau metodei pentru a descrie ce el face. Ele nu vor fi interpretate de Python.
 
-The admin URL, which you visited in the previous chapter, is already here:
+URL panelului de administrare, pe care l-ați vizitat în capitolul precedent, este deja acolo:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,7 +41,7 @@ The admin URL, which you visited in the previous chapter, is already here:
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Acesta înseamnă că pentru fiecare URL care începe cu `admin/`, Django va găsi un *view* corespunzător. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
 
 ## Your first Django URL!
 
