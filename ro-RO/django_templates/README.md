@@ -101,8 +101,8 @@ Ar fi bun să vedem dacă website-ul va lucra în Internet? Hai să-l afișăm p
 
 * În sfârșit, deschideți [pagina "Web"](https://www.pythonanywhere.com/web_app_setup/) și apăsați **Reload** în aplicație web. (Pentru a accesa alte pagine pe PythonAnywhere din consola, utilizați butonul de meniu în colțul de sus-dreapta.) Schimbările trebuie să fie live pe https://subdomain.pythonanywhere.com -- verificați în browser! Dacă articolele de pe site-ul pe PythonAnywhere nu sunt aceeași ca și cele de pe site-ul local, acesta este OK. Baza de date pe calculatorul local și Python Anywhere nu sincronizează împreună cu alte fișiere.
 
-Felicitări! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Felicitări! Acum mergem mai departe și încercăm să adăugăm articolul nou din panel de administrare Django (țineți minte că trebuie de adăugat published_date (data de publicare)!) Fiți siguri că sunteți în panel de administrare Django al site-ului vostru pe pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Faceți un refresh a paginii pentru a verifica dacă articol a fost afișat.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+Lucrează? Suntem mândri! Acum puteți să odihniți :)
 
-![Figure 13.4](images/donut.png)
+![Figura 13.4](images/donut.png)
