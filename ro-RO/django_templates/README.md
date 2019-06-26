@@ -20,11 +20,11 @@ Pentru a afișa o variabilă în Django template, utilizăm we use paranteze par
 {{ posts }}
 ```
 
-Încercați acesta în template `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Încercați acesta în template `blog/templates/blog/post_list.html`. Deschideți-l în editorul de cod, și schimbați tot cod începând cu al doilea `<div>` până la al treilea `</div>` cu `{{ posts }}`. Salvați fișierul și faceți un refresh a paginii pentru a vedea rezultate:
 
 ![Figura 13.1](images/step1.png)
 
-As you can see, all we've got is this:
+Am primit următoare:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +32,7 @@ As you can see, all we've got is this:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+Acesta înseamnă că Django știe că acesta este o listă de obiecte. Ținteți minte cum noi putem afișa liste de la capitol **Introducere în Python**? Da, utilizând cicluri! În Django template facem acesta în mod următor:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,11 +42,11 @@ This means that Django understands it as a list of objects. Remember from **Intr
 {% endfor %}
 ```
 
-Try this in your template.
+Încercați acesta în template-ul vostru.
 
 ![Figura 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+Lucrează! Dar noi dorim ca articolele să fie afișate în mod similar cu acela cum noi am afișat articolele create mai înainte în capitolul **Introducere în HTML**. You can mix HTML and template tags. Our `body` will look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
