@@ -96,8 +96,8 @@ Ultima parte, `name='post_list'`, este denumirea URL-ului care va fi utilizat pe
 
 Dacă vizitați http://127.0.0.1:8000/ o să vedeți un mesaj că 'pagină web nu este disponibilă'. Acesta este din cauza că server (țineți minte să executați comandă `runserver`?) nu lucrează. Verificați linie de comandă a server-ului vostru și găsiți cauza.
 
-![Error](images/error1.png)
+![Eroare](images/error1.png)
 
-Consola arată o eroare, dar nu faceți grijă – ea este utilă: ea vă spune că **atributul 'post_list'** nu există. Acesta este denumirea *view* pe care Django încearcă să găsească și s-o utilizeze, dar noi n-am creat-o până când. Acum `/admin/` tot nu va lucra. Nu vă faceți grijă - o s-o corectăm. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Consola arată o eroare, dar nu faceți grijă – ea este utilă: ea vă spune că **atributul 'post_list'** nu există. Acesta este denumirea *view* pe care Django încearcă să găsească și s-o utilizeze, dar noi n-am creat-o până când. Acum `/admin/` tot nu va lucra. Nu vă faceți grijă - o s-o corectăm. Dacă vedeți o altă eroare, restartați serverul. În linie de comandă opriți serverul, apăsând pe Ctrl+C (Control și C keys împreună) și porniți-l executând comandă `python manage.py runserver`.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> Dacă doriți să aflați mai multe despre consola de Django admin, puteți găsiți documentația de Django la: https://docs.djangoproject.com/en/2.0/topics/http/urls/
