@@ -49,7 +49,7 @@ A ma ṣe ìyẹn nípasẹ̀ ṣíṣẹ̀dá fódà kan tí a n pè ní `stati
     └── mysite
     
 
-Django will automatically find any folders called "static" inside any of your apps' folders. Then it will be able to use their contents as static files.
+Django yíò fúnra rẹ̀ ṣàwárí èyíkéyìí fódà tó n jẹ́ "static" nínú èyíkéyìí fódà ti àwọn ètò rẹ. Lẹ́yìn náà, yíò ní ààyè láti lo àwọn àkóónú wọn gẹ́gẹ́ bí àwọn fáìlì tó wà lójú kan.
 
 ## Fáìlì CSS àkọ́kọ́ rẹ!
 
