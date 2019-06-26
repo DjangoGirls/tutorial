@@ -46,7 +46,7 @@ Acesta înseamnă că Django știe că acesta este o listă de obiecte. Ținteț
 
 ![Figura 13.2](images/step2.png)
 
-Lucrează! Dar noi dorim ca articolele să fie afișate în mod similar cu acela cum noi am afișat articolele create mai înainte în capitolul **Introducere în HTML**. You can mix HTML and template tags. Our `body` will look like this:
+Lucrează! Dar noi dorim ca articolele să fie afișate în mod similar cu acela cum noi am afișat articolele create mai înainte în capitolul **Introducere în HTML**. Puteți să combinați HTML și tăgurile de template. `body` va arăta în mod următor:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,13 +64,13 @@ Lucrează! Dar noi dorim ca articolele să fie afișate în mod similar cu acela
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw %}Totul ce puneți între `{% for %}` și `{% endfor %}` va fi repetat pentru fiecare obiect în lista. Faceți refresh a paginii:{% endraw %}
 
 ![Figura 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+Ați observat că am utilizat o notație diferită (`{{ post.title }}` sau `{{ post.text }}`)? Accesăm data din câmpurile definite în modelul `Post`. `|linebreaksbr` este un pipe (filtru) care aplică un filtru asupra text pentru a converta linii de întrerupere în paragrafe.
 
-## One more thing
+## Încă ceva
 
 It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
