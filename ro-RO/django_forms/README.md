@@ -165,7 +165,7 @@ Hai să vedem cum HTML în `post_edit.html` trebuie să arăte:
 
 E timp pentru a actualiza pagina! Formular este afișat!
 
-![New form](images/new_form2.png)
+![Formular nou](images/new_form2.png)
 
 Dar așteptați un minut! Ce o să întâmplă când voi tapați ceva în `title` (titlu) și `text` (text) și o să le salvați?
 
@@ -267,7 +267,7 @@ Acesta este minunat!
 
 > Din cauză că am utilizat interfața Django admin, suntem logați în sistem. Acesta sunt câteva situații în care putem să fim deconectați (închiderea browserului, restartarea bazei de date, etc.). Dacă primiți erori, când creați articol, care se refer la absența userului care este logat în sistem, mergeți la pagina de administrare page http://127.0.0.1:8000/admin și autentificați. O să fixăm aceasta problemă temporar. O soluție este descrisă în capitolul **Tema pentru acasă: adăugați securitate la site-ul vostru!** după tutorial principal.
 
-![Logged in error](images/post_create_error.png)
+![Eroare de autentificare](images/post_create_error.png)
 
 ## Validație formularelor
 
@@ -275,7 +275,7 @@ Acum o să vă arătăm cum lucrează Django formulare. Un articol de blog trebu
 
 Încercați să salvați formular fără `title` și `text`. Ce se va întâmpla!
 
-![Form validation](images/form_validation2.png)
+![Validarea formularelor](images/form_validation2.png)
 
 Django are grija de validare câmpurilor din formularul nostru. Nu este acesta minunat?
 
@@ -360,11 +360,11 @@ form = PostForm(instance=post)
 
 OK, hai să testăm, dacă lucrează! Deschideți pagina `post_detail`. Acolo trebuie să fie un buton pentru editare în colț din sus-dreapta:
 
-![Edit button](images/edit_button2.png)
+![Butonul de editare](images/edit_button2.png)
 
 Când faceți un click o să vedeți formular cu articolul nostru:
 
-![Edit form](images/edit_form2.png)
+![Editarea formularului](images/edit_form2.png)
 
 Schimbați titlu sau text și salvați schimbările!
 
@@ -444,6 +444,6 @@ Hai să vedem dacă acesta lucrează pe PythonAnywhere. Este timpul să afișăm
 
 (Trebuie să substituiți `<your-pythonanywhere-domain>` cu denumirea sub-domeniului pe PythonAnywhere, fără paranteze unghiulare.)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
+* În sfârșit, mergeți la pagina ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (utilizați butonul din meniu în colțul de sus-dreapta) și apăsați **Reload**. Faceți un refresh a paginii https://subdomain.pythonanywhere.com pentru a vizualiza schimbările.
 
-And that should be it! Congrats :)
+Acesta e! Felicitări :)
