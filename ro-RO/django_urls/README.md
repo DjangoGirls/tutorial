@@ -90,11 +90,11 @@ urlpatterns = [
 ]
 ```
 
-După cum vedeți, noi atribuim `view` numit `post_list` la URL principal. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+După cum vedeți, noi atribuim `view` numit `post_list` la URL principal. Acest model de URL va fi compatibil cu un șir gol și Django URL resolver va ignora denumirea domenului (i.e., http://127.0.0.1:8000/) ce este un prefix al unui path complet. Aest model va spune lui Django că `views.post_list` este un loc corect de a începe când cineva va introduce adresa site-ului vostru 'http://127.0.0.1:8000/'.
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+Ultima parte, `name='post_list'`, este denumirea URL-ului care va fi utilizat pentru identificarea view-ului. Acesta poate fi la fel ca denumirea view-ului dar poate fi ceva complet diferit. O să utilizăm URL cu denumire mai târziu în proiect, de aceea este important să denumim fiecare URL în aplicație. Noi trebuie să păstrăm denumirile URL-urilor unice și ușor de a le aminti.
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+Dacă vizitați http://127.0.0.1:8000/ o să vedeți un mesaj că 'pagină web nu este disponibilă'. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
 
 ![Error](images/error1.png)
 
