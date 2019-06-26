@@ -8,11 +8,11 @@ Este timp să afișăm ceva date! Django are un instrument incorporat pentru ace
 
 **Tăgurile din Django template** ne dă posibilitate de a utiliza Python în HTML, deci puteți să construiți site-urile dinamice mai rapid. E bun!
 
-## Display post list template
+## Afișarea articolului în template
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+În capitolul precedent am transmis o listă de articole în template, utilizând variabilă `posts`. Acum trebuie să le afișăm în HTML.
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+Pentru a afișa o variabilă în Django template, utilizăm we use paranteze paralele duble cu denumirea variabilei în ei, în mod următor:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,7 +20,7 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+Încercați acesta în template `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
 ![Figura 13.1](images/step1.png)
 
