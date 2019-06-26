@@ -1,8 +1,8 @@
-# Django views – time to create!
+# Django views - este timpul să le creăm!
 
-Time to get rid of the bug we created in the last chapter! :)
+Este timp să corectăm eroare pe care am creat-o în ultim capitol :)
 
-A *view* is a place where we put the "logic" of our application. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*view* este loc unde noi punem toata logica aplicației. It will request information from the `model` you created before and pass it to a `template`. We'll create a template in the next chapter. Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
 Views are placed in the `views.py` file. We will add our *views* to the `blog/views.py` file.
 
