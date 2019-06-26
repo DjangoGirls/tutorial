@@ -72,9 +72,9 @@ Ați observat că am utilizat o notație diferită (`{{ post.title }}` sau `{{ p
 
 ## Încă ceva
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Ar fi bun să vedem dacă website-ul va lucra în Internet? Hai să-l afișăm pe PythonAnywhere. Acesta este un rezumat al pașilor…
 
-* First, push your code to GitHub
+* Dintâi faceți un push pe GitHub
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,7 +88,7 @@ It'd be good to see if your website will still be working on the public Internet
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+* Deschideți [pagină de linii de comandă pe PythonAnywhere](https://www.pythonanywhere.com/consoles/) și deschideți **linie de comandă** (sau deschideți nouă). Apoi, executați:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -97,11 +97,11 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Trebuie să substituiți `<your-pythonanywhere-domain>` cu denumirea sub-domeniului pe PythonAnywhere, fără paranteze unghiulare.)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* În sfârșit, deschideți [pagina "Web"](https://www.pythonanywhere.com/web_app_setup/) și apăsați **Reload** în aplicație web. (Pentru a accesa alte pagine pe PythonAnywhere din consola, utilizați butonul de meniu în colțul de sus-dreapta.) Schimbările trebuie să fie live pe https://subdomain.pythonanywhere.com -- verificați în browser! Dacă articolele de pe site-ul pe PythonAnywhere nu sunt aceeași ca și cele de pe site-ul local, acesta este OK. Baza de date pe calculatorul local și Python Anywhere nu sincronizează împreună cu alte fișiere.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Felicitări! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
