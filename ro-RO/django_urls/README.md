@@ -41,17 +41,17 @@ URL panelului de administrare, pe care l-ați vizitat în capitolul precedent, e
     path('admin/', admin.site.urls),
 ```
 
-Acesta înseamnă că pentru fiecare URL care începe cu `admin/`, Django va găsi un *view* corespunzător. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Acesta înseamnă că pentru fiecare URL care începe cu `admin/`, Django va găsi un *view* corespunzător. În cazul acesta, noi includem mai multe URL-urile din panel de administrare ca ele să nu fie într-un singur fișier - așa codul se citește mai ușor și este mai curat.
 
-## Your first Django URL!
+## Primul tău Django URL!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+Este timp să creăm primul URL! Noi dorim ca 'http://127.0.0.1:8000/' să fie pagina principală a blogului nostru și să afișează o listă de articole.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+Noi mai dorim să păstrăm fișierul `mysite/urls.py` curat, de aceea o să facem import URL-urilor din aplicație `blog` în fișierul principal `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Mergeți mai departe și adăugați o linie care va importa `blog.urls`. Înca trebuie să schimbăm linia `from django.urls…` pentru că noi utilizăm funcția `include`, de aceea trebuie să adăugăm aceasta linie de import.
 
-Your `mysite/urls.py` file should now look like this:
+Fișierul `mysite/urls.py` trebuie să arăte în mod următor:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -65,7 +65,7 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+Django va redireționa totul de 'http://127.0.0.1:8000/' la `blog.urls` și caută instrucțiunele următoare acolo.
 
 ## blog.urls
 
