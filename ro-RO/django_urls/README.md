@@ -94,10 +94,10 @@ După cum vedeți, noi atribuim `view` numit `post_list` la URL principal. Acest
 
 Ultima parte, `name='post_list'`, este denumirea URL-ului care va fi utilizat pentru identificarea view-ului. Acesta poate fi la fel ca denumirea view-ului dar poate fi ceva complet diferit. O să utilizăm URL cu denumire mai târziu în proiect, de aceea este important să denumim fiecare URL în aplicație. Noi trebuie să păstrăm denumirile URL-urilor unice și ușor de a le aminti.
 
-Dacă vizitați http://127.0.0.1:8000/ o să vedeți un mesaj că 'pagină web nu este disponibilă'. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+Dacă vizitați http://127.0.0.1:8000/ o să vedeți un mesaj că 'pagină web nu este disponibilă'. Acesta este din cauza că server (țineți minte să executați comandă `runserver`?) nu lucrează. Verificați linie de comandă a server-ului vostru și găsiți cauza.
 
 ![Error](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+Consola arată o eroare, dar nu faceți grijă – ea este utilă: ea vă spune că **atributul 'post_list'** nu există. Acesta este denumirea *view* pe care Django încearcă să găsească și s-o utilizeze, dar noi n-am creat-o până când. Acum `/admin/` tot nu va lucra. Nu vă faceți grijă - o s-o corectăm. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
