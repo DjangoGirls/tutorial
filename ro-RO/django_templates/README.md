@@ -1,12 +1,12 @@
 # Template-urile în Django
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+Este timp să afișăm ceva date! Django are un instrument incorporat pentru acesta **template tags**.
 
-## What are template tags?
+## Ce reprezintă tăgurile din template?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+În HTML nu puteți să srieți codul Python, pentru că browser-ul nu poate să-l interpreteze. Ei știu numai HTML. Noi știm că HTML este destul de static, dar Python este mai dinamic.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+**Tăgurile din Django template** ne dă posibilitate de a utiliza Python în HTML, deci puteți să construiți site-urile dinamice mai rapid. E bun!
 
 ## Display post list template
 
