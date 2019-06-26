@@ -22,7 +22,7 @@ Nu prea multe lucruri aici.
 
 Țineți minte că liniile care încep cu `#` sunt comentarii – acesta înseamnă ca ele nu vor fi interpretate de Python.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+Hai să creăm *view* cum ne propune comentariu. Adăugați un view mic:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -31,14 +31,14 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
+Am creat o funcție (`def`) numită `post_list` care are `request` ca parametry și va returna `return` o valoare care ea primește de la executarea funcției `render` care va face template-ul nostru `blog/post_list.html`.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+Salvați fișierul, mergeți la http://127.0.0.1:8000/ și vedeți ce s-a primit.
 
-Another error! Read what's going on now:
+O altă eroare! Citiți ce s-a întâmplat acum:
 
-![Error](images/error.png)
+![Eroare](images/error.png)
 
-This shows that the server is running again, at least, but it still doesn't look right, does it? Don't worry, it's just an error page, nothing to be scared of! Just like the error messages in the console, these are actually pretty useful. You can read that the *TemplateDoesNotExist*. Let's fix this bug and create a template in the next chapter!
+Acesta arată că server lucrează, dar nici acum nu arăte corect? Nu faceți grijă, acesta este doar o pagină de eroare! Ca și erorile în consola, ei sunt destul de utile. Puteți să vedeți că *TemplateDoesNotExist* (Template nu există). Hai s-o corectăm eroare această și să creăm template în capitol următor!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Dacă doriți să aflați mai multe despre consola de Django admin, puteți găsiți documentația de Django la: https://docs.djangoproject.com/en/2.0/topics/http/views/
