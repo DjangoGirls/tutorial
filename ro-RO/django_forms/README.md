@@ -376,7 +376,7 @@ Dacă doriți mai multă informație despre formulare Django, o găsiți în doc
 
 Având posibilitate de a publica aticolele noi apăsând un link este minunat! Dar acum, orice persoana care vizitează site-ul va avea posibilitate de a crea un articol nou, și acesta nu este ceea ce voi doriți. Hai să facem ca butonul va fi afișat numai pentru tine, dar pentru orice persoana.
 
-Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
+Deschideți `blog/templates/blog/base.html` în editorul de cod, găsiți `page-header` `div` și o ancoră pe care ați făcut mai înainte. El trebuie să arăte în mod următor:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
