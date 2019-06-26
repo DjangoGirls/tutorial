@@ -1,4 +1,4 @@
-# Django templates
+# Template-urile în Django
 
 Time to display some data! Django gives us some helpful built-in **template tags** for that.
 
