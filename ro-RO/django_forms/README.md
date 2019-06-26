@@ -374,7 +374,7 @@ Dacă doriți mai multă informație despre formulare Django, o găsiți în doc
 
 ## Securitate
 
-Being able to create new posts by clicking a link is awesome! But right now, anyone who visits your site will be able to make a new blog post, and that's probably not something you want. Let's make it so the button shows up for you but not for anyone else.
+Având posibilitate de a publica aticolele noi apăsând un link este minunat! Dar acum, orice persoana care vizitează site-ul va avea posibilitate de a crea un articol nou, și acesta nu este ceea ce voi doriți. Hai să facem ca butonul va fi afișat numai pentru tine, dar pentru orice persoana.
 
 Open `blog/templates/blog/base.html` in the code editor, find our `page-header` `div` and the anchor tag you put in there earlier. It should look like this:
 
