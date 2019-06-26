@@ -1,14 +1,14 @@
-# Django URLs
+# URL-urile în Django
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+Acuma putem să facem prima pagină: pagină principală pentru blogul vostru! Dar dintâi, hai să învățăm ceva despre Django URL-urile.
 
-## What is a URL?
+## Ce este URL?
 
-A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+URL este o adresa web. Vedeți URL fiecare dată când voi vizitați website - el este afișat în bara de adrese a browser-ului. (Da! `127.0.0.1:8000` este URL! Și `https://djangogirls.org` tot este URL.)
 
 ![Url](images/url.png)
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Fiecare pagina din Internet are nevoie de URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## How do URLs work in Django?
 
