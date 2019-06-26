@@ -33,11 +33,11 @@ Láti ṣàgbékalẹ̀ Bootstrap, ṣí fáìlì `.html` rẹ nínú olóòtú 
 
 ## Àwọn fáìlì tó wà lójú kan nínú Django
 
-Finally we will take a closer look at these things we've been calling **static files**. Àwọn fáìlì tó wà lójú kan ni gbogbo CSS àti àwọn àwòrán rẹ. Àkóónú wọn kìí dá lórí bí ìbéèrè náà ṣe rí àti pé yíò jẹ́ bákannáà fún gbogbo aṣàmúlò.
+Nígbẹ̀yìn, a ó ṣàgbéyẹ̀wò àwọn ohun tí a tí n pè ní **àwọn fáìlì tó wà lójú kan**. Àwọn fáìlì tó wà lójú kan ni gbogbo CSS àti àwọn àwòrán rẹ. Àkóónú wọn kìí dá lórí bí ìbéèrè náà ṣe rí àti pé yíò jẹ́ bákannáà fún gbogbo aṣàmúlò.
 
-### Where to put static files for Django
+### Ibi tí a ó fi àwọn fáìlì tó wà lójú kan sí fún Django
 
-Django already knows where to find the static files for the built-in "admin" app. Now we need to add some static files for our own app, `blog`.
+Django ti mọ ibi tó ti máa ṣàwárí àwọn fáìlì tó wà lójú kan fún ètò "alábòójútó" tó ba wá náà. Ní báyìí, a nílò láti ṣàfikún àwọn fáìlì tó wà lójú kan fún ètò tiwa, `blog`.
 
 A ma ṣe ìyẹn nípasẹ̀ ṣíṣẹ̀dá fódà kan tí a n pè ní `static` sínú ètò blog náà:
 
