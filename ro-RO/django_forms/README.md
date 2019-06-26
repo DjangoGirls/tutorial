@@ -394,11 +394,11 @@ Trebuie să adăugăm alt tag `{% if %}` care va face ca link-ul va fi afișat n
 {% endif %}
 ```
 
-This `{% if %}` will cause the link to be sent to the browser only if the user requesting the page is logged in. This doesn't protect the creation of new posts completely, but it's a good first step. We'll cover more security in the extension lessons.
+Acesta `{% if %}` va face ca link-ul va fi afișat numai în cazul când utilizatorul care accesează pagina este autorizat. Acesta nu protejează complet de la crearea articolelor noi, dar este un bun început. O să vorbim mai mult despre securitate în lecții despre extensii.
 
-Remember the edit icon we just added to our detail page? We also want to add the same change there, so other people won't be able to edit existing posts.
+Țineți minte despre o pictogramă pe care am adăugat-o pe pagina cu detalii? Noi dorim să facem acesta schimbare și aici, ca utilizatorii neautorizați să nu aibă posibilitate de a schimba articole.
 
-Open `blog/templates/blog/post_detail.html` in the code editor and find this line:
+Deschideți `blog/templates/blog/post_detail.html` în editorul de cod și adăugați linia:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -406,7 +406,7 @@ Open `blog/templates/blog/post_detail.html` in the code editor and find this lin
 <a class="btn btn-default" href="{% url 'post_edit' pk=post.pk %}"><span class="glyphicon glyphicon-pencil"></span></a>
 ```
 
-Change it to this:
+Schimbați pe cod următor:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -416,13 +416,13 @@ Change it to this:
 {% endif %}
 ```
 
-Since you're likely logged in, if you refresh the page, you won't see anything different. Load the page in a different browser or an incognito window (called "InPrivate" in Windows Edge), though, and you'll see that the link doesn't show up, and the icon doesn't display either!
+Din cauza că sunteți autorizați, dacă faceți un refresh a paginii, nu veți vedea nici o diferență. Deschideți pagină în alt browser sau pagina incognito (denumită "InPrivate" în Windows Edge) și o să vedeți că link-ul nu va fi afișat și pictograma de asemenea nu e afișată!
 
-## One more thing: deploy time!
+## Un alt lucru: lansați site-ul!
 
-Let's see if all this works on PythonAnywhere. Time for another deploy!
+Hai să vedem dacă acesta lucrează pe PythonAnywhere. Este timpul să afișăm!
 
-* First, commit your new code, and push it up to GitHub:
+* Dintâi, faceți un commit de cod și un push pe GitHub:
 
 {% filename %}command-line{% endfilename %}
 
@@ -433,7 +433,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     $ git push
     
 
-* Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+* Apoi în [linie de comandă pe PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -442,7 +442,7 @@ Let's see if all this works on PythonAnywhere. Time for another deploy!
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Trebuie să substituiți `<your-pythonanywhere-domain>` cu denumirea sub-domeniului pe PythonAnywhere, fără paranteze unghiulare.)
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (use the menu button in the upper right of the console) and hit **Reload**. Refresh your https://subdomain.pythonanywhere.com blog to see the changes.
 
