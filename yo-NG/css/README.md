@@ -64,7 +64,7 @@ Django yíò fúnra rẹ̀ ṣàwárí èyíkéyìí fódà tó n jẹ́ "static
 
 Àkókò láti kọ àwọn CSS! Ṣí fáìlì `blog/static/css/blog.css` náà nínú olóòtú kóòdù rẹ.
 
-We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
+A kò ní lọ jìnnà púpọ̀ sínú ṣíṣe bí o ṣe fẹ́ àti ìkẹ́kọ̀ọ́ nípa CSS níbí. Àmọ̀ràn kan wà fún ìdánilékọ̀ọ́ CSS ọ̀fẹ́ kan ní ìparí ojú-ìwé yìí tí o bá fẹ́ láti kẹ́kọ̀ọ́ síi.
 
 Ṣùgbọ́n jẹ́ kí a ṣe ó kéré tán díẹ̀ nínú rẹ̀. Bóyá a le ṣàyípadà àwọ̀ ti àwọn àkọsórí wa? Láti lóye nípa àwọn àwọ̀, àwọn kọ̀mpútà má n lo àwọn àkànṣe kóòdù. Àwọn kóòdù wọ̀nyí ma bẹ̀rẹ̀ pẹ̀lú `#` tí àwọn lẹ́tà 6 (A–F) àti àwọn nọ́mbà (0–9) sì tẹ̀le. Fún àpẹẹrẹ, kóòdù náà fún àwọ̀ búlúù jẹ́ `#0000FF`. O lè rí àwọn kóòdù àwọ̀ fún oríṣiríṣi àwọ̀ níbí: http://www.colorpicker.com/. O tún lè lo [àwọn àwọ̀ ìpìlẹ̀](http://www.w3schools.com/colors/colors_names.asp), bíi `red` àti `green`.
 
