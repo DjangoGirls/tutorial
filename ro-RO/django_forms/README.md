@@ -384,7 +384,7 @@ Deschideți `blog/templates/blog/base.html` în editorul de cod, găsiți `page-
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-We're going to add another `{% if %}` tag to this, which will make the link show up only for users who are logged into the admin. Right now, that's just you! Change the `<a>` tag to look like this:
+Trebuie să adăugăm alt tag `{% if %}` care va face ca link-ul va fi afișat numai utilizatorilor care sunt autorizați în panel de administrare. Acum voi sunteți autorizați! Schimbați tag `<a>` care va arăta în mod următor:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
