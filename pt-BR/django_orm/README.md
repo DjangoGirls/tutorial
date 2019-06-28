@@ -200,9 +200,9 @@ Também podemos inverter a ordem adicionando `-` no início:
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Complex queries through method-chaining
+### Consultas Complexas com Encadeamento de Métodos
 
-Como você viu, alguns métodos em `Post.objects` retornam um QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+Como você viu, alguns métodos em `Post.objects` retornam um QuerySet. Esses mesmos métodos podem, por sua vez, ser invocados num QuerySet, o que resultará num novo QuerySet. Thus, you can combine their effect by **chaining** them together:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
