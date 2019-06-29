@@ -208,9 +208,9 @@ Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
     [...]
     
 
-You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+Você precisará substituir `<your-pythonanywhere-domain>` com o seu subdomínio PythonAnywhere, sem os colchetes angulares (< >). Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
-Now watch your code get downloaded. Se você quiser verificar se ele chegou, você pode pular para a **página "Arquivos"**e visualizar seu código no PythonAnywhere (você pode acessar outras páginas do PythonAnywhere a partir do botão de menu na página do console).
+Agora veja o seu código ser baixado. Se você quiser verificar se ele chegou, você pode pular para a **página "Arquivos"**e visualizar seu código no PythonAnywhere (você pode acessar outras páginas do PythonAnywhere a partir do botão de menu na página do console).
 
 * Finalmente, pule para a aba ["Web" page](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em sua aplicação.
 
