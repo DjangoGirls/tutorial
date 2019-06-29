@@ -16,11 +16,11 @@ Sim! Existem *muitos* recursos online para aprender todos os tipos de habilidade
 
 - Nosso outro livro: [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Tutorial oficial do Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- [Começando com as aulas de vídeo do Django](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS and JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [Curso de desenvolvimento web do Codecademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
 #### Python
