@@ -296,9 +296,9 @@ Tọ́jú àwọn fáìlì yẹn kí o sì ṣe ìmúdójúìwọ̀n ojú-ìwé 
 
 ![Figure 14.4](images/final.png)
 
-Woohoo! Ó dára ní wíwò, àbí bẹ́ẹ̀ kọ? Wo kóòdù tí a ṣẹ̀ṣẹ̀ lẹ̀ náà láti wá àwọn ibi tí a ti ṣàfikún àwọn kíláàsì nínú HTML náà tí a sì lò wọ́n nínú CSS náà. Where would you make the change if you wanted the date to be turquoise?
+Woohoo! Ó dára ní wíwò, àbí bẹ́ẹ̀ kọ? Wo kóòdù tí a ṣẹ̀ṣẹ̀ lẹ̀ náà láti wá àwọn ibi tí a ti ṣàfikún àwọn kíláàsì nínú HTML náà tí a sì lò wọ́n nínú CSS náà. Ibo lo ti máa ṣàyípadà náà tí o bá fẹ́ kí ọjọ́ náà jẹ́ àwọ̀ turquoise (àdàlù àwọ̀ búlúù àti àwọ̀ ewé)?
 
-Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
+Má bẹ̀rù láti ṣàtúnṣe CSS yìí díẹ̀ kí o sì gbìyànjú láti ṣàyípadà àwọn nnkan kan. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
 We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
 
