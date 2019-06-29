@@ -296,7 +296,7 @@ Tọ́jú àwọn fáìlì yẹn kí o sì ṣe ìmúdójúìwọ̀n ojú-ìwé 
 
 ![Figure 14.4](images/final.png)
 
-Woohoo! Looks awesome, right? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
+Woohoo! Ó dára ní wíwò, àbí bẹ́ẹ̀ kọ? Look at the code we just pasted to find the places where we added classes in the HTML and used them in the CSS. Where would you make the change if you wanted the date to be turquoise?
 
 Don't be afraid to tinker with this CSS a little bit and try to change some things. Playing with the CSS can help you understand what the different things are doing. If you break something, don't worry – you can always undo it!
 
