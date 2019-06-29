@@ -97,12 +97,12 @@ Seria bom ver se seu site ainda funciona na internet, né? Vamos tentar implanta
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Lembre-se de substituir `<your-pythonanywhere-domain>` pelo seu subdomínio PythonAnywhere, mas sem os colchetes angulares, ou seja, sem < e >).
 
-* Finalmente, pule para a aba ["Web" page](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em sua aplicação. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! Tudo bem se as postagens em seu site PythonAnywhere não coincidirem com as postagens que aparecem no blog hospedado no seu servidor local. Os bancos de dados em seu computador local e no Python Anywhere não sincronizam com o resto de seus arquivos.
+* Finalmente, pule para a aba ["Web" page](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em sua aplicação. (Para acessar outras páginas do PythonAnywhere a partir do console, utilize o botão do menu na parte superior direita). A sua atualização deve estar ativa em https://subdomain.pythonanywhere.com - confira pelo navegador! Tudo bem se as postagens em seu site PythonAnywhere não coincidirem com as postagens que aparecem no blog hospedado no seu servidor local. Os bancos de dados em seu computador local e no Python Anywhere não sincronizam com o resto de seus arquivos.
 
 Parabéns! Agora vá em frente e tente adicionar um novo post no seu administrador Django (lembre-se de adicionar published_data!). Assegure-se que você está no administrador Django do seu site pythonanywhere, https://subdomain.pythonanywhere.com/admin. E então, recarregue a página para verificar se o seu post é mostrado.
 
 Funciona? Estamos orgulhosas! Saia do seu computador um pouquinho - você merece um descanso. :3
 
-![Figure 13.4](images/donut.png)
+![Figura 13.4](images/donut.png)
