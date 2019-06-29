@@ -54,7 +54,7 @@ Vamos criar uma URL em `urls.py` para a nossa `post_detail` *view*!
 
 Queremos que a página de detalhes do nosso primeiro post seja exibida por essa **URL**: http://127.0.0.1:8000/post/1/
 
-Vamos criar uma URL no arquivo `blog/urls.py` que aponta para uma *view* chamada `post_detail`, que vai nos mostrar o post completo. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Vamos criar uma URL no arquivo `blog/urls.py` que aponta para uma *view* chamada `post_detail`, que vai nos mostrar o post completo. Abra o arquivo `blog/urls.py` no editor de código e adicione a linha `path('post/<int:pk>/', views.post_detail, name='post_detail'),` para que o arquivo fique assim:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -162,7 +162,7 @@ Ele vai ter essa cara:
 
 Mais uma vez estamos estendendo `base.html`. No bloco `content`, queremos exibir a data de publicação (published_date) do post (se houver), título e texto. Mas ainda temos algumas coisas importantes para discutir, certo?
 
-{% raw %}`{% if ... %} ... {% endif %}` é uma tag de template que podemos usar quando queremos conferir alguma coisa. (Lembra de `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` é uma tag de template que podemos usar quando queremos conferir alguma coisa. (Lembra de `if ... else ...` do capítulo **Introdução ao Python**?). Neste cenário nós queremos conferir se a `published_date` de um post não está vazia.{% endraw %}
 
 Pronto, podemos atualizar nossa página e ver se aquele `Page not found` sumiu.
 
