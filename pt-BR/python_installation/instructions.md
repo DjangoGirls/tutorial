@@ -27,7 +27,7 @@ Observação: se você estiver usando uma versão antiga do Windows (7, Vista, o
 1. instalar todas as atualizações do Windows e tentar instalar o Python novamente; ou
 2. instalar uma [versão mais antiga do Python](https://www.python.org/downloads/windows/), por exemplo, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+Se você instalar uma versão mais antiga do Python, a tela de instalação pode parecer um pouco diferente da mostrada. Se certifique de rolar o botão do meio do mouse para baixo, até ver "Add python.exe to Path", então clique no botão à esquerda e selecione "Will be installed on local hard drive".
 
 ![Adicione o Python ao PATH, versões mais antigas](../python_installation/images/add_python_to_windows_path.png)
 
