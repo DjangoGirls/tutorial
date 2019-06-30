@@ -25,13 +25,13 @@ Sim! Existem *muitos* recursos online para aprender todos os tipos de habilidade
 
 #### Python
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [Curso de Python do Code Academy](https://www.codecademy.com/learn/learn-python)
+- [Curso Python do Google](https://developers.google.com/edu/python/)
+- Livro [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - os exercícios iniciais são grátis
+- [Tutoriais New Coder](http://newcoder.io/tutorials/) - uma variedade de exemplos práticos que você pode usar Python
+- [edX](https://www.edx.org/course?search_query=python) – você pode assistir a maior parte dos cursos de graça, porem se você quiser um certificado ou créditos para validação em curso superior, então haverá um custo
+- [Especialização em Python do Coursera](https://www.coursera.org/specializations/python) - alguns videos podem ser assistidos de graça e você pode ganhar um certificado por atender aos cursos
+- [Python para todos](https://www.py4e.com/) - uma versão gratuita e aberta do Coursera Python para especialização de todo mundo
 
 #### Trabalhando com dados
 
