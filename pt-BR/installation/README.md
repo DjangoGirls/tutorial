@@ -11,8 +11,8 @@ Boa sorte!
 Se você está participando de uma oficina de um [ Evento Django Girls ](https://djangogirls.org/events/):
 
 * Sua oficina pode ter um "grupo de instalação" antes da oficina principal. Se você está com um grupo de instalação, essa página é para você! Siga as instruções aqui contidas para ter tudo que precisa para a oficina instalada, com a ajuda de instrutores, se necessário. Então, no workshop principal, poderás saltar as intruções de instalação que encontrares no tutorial principal, quando aparecerem.
-* A organização do workshop poderá ter-te perguntado se tentaste reslizar a instalação no computador, em casa antes de vires para o workshop. Se te oriposeram a isso, esta página é para ti! Segue estas instruções, o melhor que poderes. Então, no workshop principal, quando chegares ao passo da instalação no tutorial principal, se tiveste alguma dificuldade na instalação poderás encontrar ajuda junto do teu monitor.
-* Se o teu workshop n tem uma secção de instalação (ou não conseguiste obtê-la), e se os organizadores não te pediram para tentar instalar tudo antes de chegares, salta esta página e segue diretamente para o capítulo [Como funciona a internet](../how_the_internet_works/README.md). Irás instalar tudo o que precisas no seguimento do tutorial.
+* A organização do workshop poderá ter-te perguntado se tentaste reslizar a instalação no computador, em casa antes de vires para o workshop. Se te oriposeram a isso, esta página é para ti! Siga as instruções. Então, no workshop principal, quando chegar à etapa de instalação, se você ainda for capaz de prosseguir você poderá pedir ajuda para a sua monitora.
+* Se o seu workshop não tem uma seção de instalação (ou você não a consegue localizar) e os organizadores não lhe pedirem para tentar instalar tudo antes que você chegue, pule esta página e vá direto para [Como a internet funciona](../how_the_internet_works/README.md). Você irá instalar tudo o que precisa no seguimento do tutorial.
 
 # Instalação
 
@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Breve introdução à linha de comando
 
-Vários dos passos abaixos referenciam o "console", "terminal", "janela de comandos", ou "linha de comandos" - todos significam a mesma coisa: uma janela no seu computador onde você pode inserir comandos. Quando você chegar ao tutorial principal, você irá aprender mais sobre a linha de comandos. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Vários dos passos abaixos referenciam o "console", "terminal", "janela de comandos", ou "linha de comandos" - todos significam a mesma coisa: uma janela no seu computador onde você pode inserir comandos. Quando você chegar ao tutorial principal, você irá aprender mais sobre a linha de comandos. Por agora, a coisa principal que você precisará saber é como abrir uma janela de comandos e como ela se parece: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Instale o Python
 
