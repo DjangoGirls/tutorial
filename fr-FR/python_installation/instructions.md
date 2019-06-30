@@ -8,7 +8,7 @@ Please install normal Python as follows, even when you have Anaconda installed o
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Vérifiez d'abord si votre ordinateur exécute une version 32 bits ou une version 64 bits de Windows, en cherchant "Type du système" dans la page d'information système. Pour accéder à cette page, essayez l'une de ces méthodes :
 
 * Appuyez sur la touche Windows et la touche Pause/Attn en même temps
 * Ouvrez votre panneau de configuration depuis le menu Windows, puis naviguez vers Système et sécurité, puis Système
@@ -29,7 +29,7 @@ Note: if you are using an older version of Windows (7, Vista, or any older versi
 
 If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Ajouter Python au chemin, anciennes versions](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -38,7 +38,7 @@ data-collapse=true ces-->
 
 > **Note** Avant d'installer Python sur OS X, vous devriez vous assurer que vos paramètres Mac permettent d'installer des programmes qui ne proviennent pas de l'App Store. Allez dans Préférences Système (c'est dans le dossier Applications), cliquez sur "Sécurité & Confidentialité", puis sur l'onglet "Général". Si votre "Autoriser les applications téléchargées de:" est défini sur "Mac App Store", changez-le à "Mac App Store et développeurs identifiés".
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Vous devez aller sur le site https://www.python.org/downloads/release/python-361/ et télécharger l'installateur Python:
 
 * Téléchargez le fichier *Mac OS X 64-bit/32-bit installer*,
 * Double-cliquez sur le fichier *python-3.6.1-macosx10.6.pkg* pour lancer l'installateur.
@@ -62,7 +62,7 @@ If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0)
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Tapez cette commande dans votre terminal :
 
 {% filename %}command-line{% endfilename %}
 
@@ -74,7 +74,7 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Tapez cette commande dans votre terminal :
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,7 +88,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Tapez cette commande dans votre terminal :
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +105,7 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+La version affichée peut être différente de 3.6.1 -- elle devrait correspondre à la version que vous avez installée.
 
 **NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
 
