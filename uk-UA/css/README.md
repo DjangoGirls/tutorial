@@ -66,7 +66,7 @@ Let's create a CSS file now, to add your own style to your web page. Створ�
 
 We won't be going too deep into customizing and learning about CSS here. There is a recommendation for a free CSS course at the end of this page if you would like to learn more.
 
-Але принаймні попрацюємо трохи. Maybe we could change the color of our headers? Щоб зрозуміти кольори, комп'ютери використовують спеціальні коди. These codes start with `#` followed by 6 letters (A–F) and numbers (0–9). For example, the code for blue is `#0000FF`. You can find the color codes for many colors here: http://www.colorpicker.com/. Також можете користуватися вже [визначеними кольорами ](http://www.w3schools.com/colors/colors_names.asp), такими як `red` та `green`.
+Але принаймні попрацюємо трохи. Maybe we could change the color of our headers? Щоб зрозуміти кольори, комп'ютери використовують спеціальні коди. Ці коди починаються з `#` та складаються з шести літер (A-F) та цифр (0-9). Наприклад, код синього це `#0000FF`. Ви можете знайти інші коди тут: http://www.colorpicker.com/. Також можете користуватися вже [визначеними кольорами ](http://www.w3schools.com/colors/colors_names.asp), такими як `red` та `green`.
 
 У вашому файлі `static/css/blog.css` потрібно додати наступний код:
 
