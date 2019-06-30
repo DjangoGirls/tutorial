@@ -8,33 +8,33 @@
 
 Ласкаво просимо до Django Girls Tutorial! Ми раді вас зустріти тут :)  В цьому курсі, ви побачите із середини як працюють веб-технології, ми пропонуємо вам огляд всіх бітів і частинок які мають об'єднатись разом щоб зробити мережу такою як ми її знаємо.
 
-As with all unknown things, this is going to be an adventure - but no worries, since you already worked up the courage to be here, you'll be just fine :)
+Як з усім невідомим, це буде пригодою - але не хвилюйся, так як в тебе вистачило сміливості бути тут, ти впораєшся :)
 
 ## Вступ
 
-Have you ever felt that the world is more and more about technology to which you cannot (yet) relate? Чи вас колись цікавило як створити веб сайт, однак, ніколи не вистачало достатньої мотивації щоб почати? Чи ви колись вважали, що світ програмування є занадто складним для вас, щоб навіть пробувати робити щось самостійно?
+Чи ви колись відчували, що світ крутиться все більше і більше навколо технологій, про які (поки) ви нічого не знайєте? Чи вас колись цікавило як створити веб сайт, однак, ніколи не вистачало достатньої мотивації щоб почати? Чи ви колись вважали, що світ програмування є занадто складним для вас, щоб навіть пробувати робити щось самостійно?
 
 Що ж, маємо гарні новини для вас! Програмування це не так складно як може здаватися і ми хочемо вам показати наскільки веселим цей процес може бути.
 
-This tutorial will not magically turn you into a programmer. Якщо ви хочете розбиратися у цьому, то вам потрібні будуть для цього місяці або навіть роки теорії та практики. Однак, ми хочемо показати вам, що програмування або створення веб сайтів не є настільки складним, як це здається. Спробуємо пояснити різні поняття настільки, наскільки зуміємо, то ж ви не будете почуватися заляканими технологіями.
+Даний навчальний посібник не перетворить вас магічним чином на програміста. Якщо ви хочете розбиратися у цьому, то вам потрібні будуть для цього місяці або навіть роки теорії та практики. Однак, ми хочемо показати вам, що програмування або створення веб сайтів не є настільки складним, як це здається. Спробуємо пояснити різні поняття настільки, наскільки зуміємо, то ж ви не будете почуватися заляканими технологіями.
 
 Сподіваємось, що що ми зможемо змусити вас полюбити технології настільки, наскільки любимо їх ми самі!
 
 ## Що ви вивчите під час освоєння посібника?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+По завершенню даного посібника, ви будете мати простий, робочий веб додаток: свій власний блог. Ми покажемо вам як опублікувати його в Інтернеті, то ж інші також зможуть оцінити вашу роботу!
 
 Це буде (в більшій чи меншій мірі) виглядати наступним чином:
 
 ![Figure 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Ми попросили наших інструкторів і попередніх учасників бути там час від часу і допомагати іншим із освоєнням матеріалу! Не бійтеся задавати свої питання!
+> Якщо ви працюєте над матеріалами самостійно і не маєте інструктора, що зміг би допомогти у разі певної проблеми, ми маємо для вас чат: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Ми попросили наших інструкторів і попередніх учасників бути там час від часу і допомагати іншим із освоєнням матеріалу! Не бійтеся задавати свої питання!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+Гаразд, [почнемо з самого початку...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Робота з посібником вдома
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Це чудово приймати участь в Django Girls workshop, але ми розуміємо, що не завжди є можливість його відвідати. Тому ми за те щоб ви намагались проходити цей посібник вдома. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
 
 In every chapter already covered, there is a link that points to the correct video.
 
