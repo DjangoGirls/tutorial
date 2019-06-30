@@ -26,7 +26,7 @@ Agora você deve ver uma janela branca ou preta que está à espera de seus coma
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Se você está usando Mac ou Linux, você provavelmente verá um `$`, como esse:
 
 {% filename %}command-line{% endfilename %}
 
@@ -432,9 +432,9 @@ Here is a summary of some useful commands:
 | rmdir /S          | rm -r                    | Exclui diretório              | **rm -r testdirectory**                            |
 | [CMD] /?          | man [CMD]                | obtém ajuda para um comando   | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Esses são apenas alguns dos comandos que você pode executar na sua linha de comandos, mas você não irá utilizar outros por hoje.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Se estiver com curiosidade, [ss64.com](http://ss64.com) contém uma referência completa dos comandos de todos os sistemas operacionais.
 
 ## Pronta?
 
