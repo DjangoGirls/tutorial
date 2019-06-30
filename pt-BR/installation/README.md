@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Breve introdução à linha de comando
 
-Muitos dos passos abaixo, referenciam "console", "terminal", "janela de comando" ou "linha de comando" -- todos significam a mesma coisa: uma janela no teu computador onde podes digitar comandos. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Vários dos passos abaixos referenciam o "console", "terminal", "janela de comandos", ou "linha de comandos" - todos significam a mesma coisa: uma janela no seu computador onde você pode inserir comandos. Quando você chegar ao tutorial principal, você irá aprender mais sobre a linha de comandos. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Instale o Python
 
