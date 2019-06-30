@@ -78,7 +78,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+E então pressione a tecla `enter`. Este é o resultado:
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,9 +86,9 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Como você pode ver, o computador acabou de mostrar seu nome de usuário na tela. Legal, né? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Tente escrever cada comando, não copie e cole. Assim você vai se lembrar melhor deles!
 
 ## O Básico
 
@@ -173,13 +173,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Observação: No powershell, você também pode usar 'ls' como no Linux e Mac OS X. <!--endsec-->
 
 * * *
 
 ### Mudar a pasta atual
 
-Now, let's go to our Desktop directory:
+Agora vamos para a pasta Desktop:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -240,7 +240,7 @@ Here it is!
 
 ### Criando Pastas
 
-How about creating a practice directory on your desktop? You can do it this way:
+Que tal criar uma pasta para praticarmos em sua área de trabalho? Você pode fazer assim:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -260,15 +260,15 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Esse pequeno comando criará uma pasta com o nome `practice` na sua área de trabalho. Você pode verificar se está lá ao olhar na sua Área de trabalho ou executando o comando `ls` ou `dir`! Experimente. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> Dica de profissional: Se você não quiser digitar o mesmo comando várias vezes, tente pressionar `seta para cima` e `seta para baixo` no teclado para percorrer comandos usados recentemente.
 
 * * *
 
 ### Pratique!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Um pequeno desafio para você: em sua recém criada pasta `practice`, crie uma pasta chamada `test`. (Use os comandos `cd` e `mkdir`.)
 
 #### Solução:
 
@@ -296,15 +296,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Boa! :)
 
 * * *
 
 ### Arrumando
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Nós não queremos que você deixe uma bagunça, então vamos remover tudo que fizemos até aqui.
 
-First, we need to get back to Desktop:
+Primeiro, precisamos voltar para a Área de trabalho:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -326,7 +326,7 @@ First, we need to get back to Desktop:
 
 Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
 
-Check where you are:
+Verifique onde você está:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -391,9 +391,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Saindo
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Isso é tudo por agora! Você pode fechar a janela da sua linha de comando agora sem medo. Vamos fazer isso do jeito hacker, certo? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -413,11 +413,11 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Massa, né? :)
 
 ## Sumário
 
-Here is a summary of some useful commands:
+Aqui vai uma lista com alguns comandos úteis:
 
 | Comando (Windows) | Comando (Mac OS / Linux) | Descrição                     | Exemplo                                            |
 | ----------------- | ------------------------ | ----------------------------- | -------------------------------------------------- |
