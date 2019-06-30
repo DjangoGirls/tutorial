@@ -16,13 +16,13 @@ A janela, que geralmente é chamada de **linha de comando** ou **interface de li
 
 ## Abra a interface de linha de comando
 
-To start some experiments we need to open our command-line interface first.
+Para começar alguns experimentos, precisamos abrir a nossa interface de linha de comando.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+Agora você deve ver uma janela branca ou preta que está à espera de seus comandos.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
@@ -438,4 +438,4 @@ If you're curious, [ss64.com](http://ss64.com) contains a complete reference of 
 
 ## Pronta?
 
-Let's dive into Python!
+Vamos mergulhar no mundo do Python!
