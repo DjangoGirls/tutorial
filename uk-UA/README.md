@@ -34,7 +34,7 @@
 
 ## Робота з посібником вдома
 
-Це чудово приймати участь в Django Girls workshop, але ми розуміємо, що не завжди є можливість його відвідати. Тому ми за те щоб ви намагались проходити цей посібник вдома. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+Це чудово приймати участь в Django Girls workshop, але ми розуміємо, що не завжди є можливість його відвідати. Тому ми за те щоб ви намагались проходити цей посібник вдома. Для тих хто навчається вдома, ми зараз готуємо відео які можуть спростити використання посібника самостійно. Вони досі знаходяться в розробці, але з часом все більше цікавих речей можна буде знайти на каналі [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) в YouTube.
 
 In every chapter already covered, there is a link that points to the correct video.
 
