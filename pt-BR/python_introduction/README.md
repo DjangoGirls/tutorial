@@ -718,7 +718,7 @@ Se você salvar e executar esse código, verá um erro como este:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+O Python espera que lhe demos instruções que devem ser executadas caso a condição `3 > 2` seja verdadeira (ou `True`). Vamos tentar fazer o Python mostrar na tela o texto "Funciona!". Altere o seu código no seu arquivo **python_intro.py** para isto:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -727,7 +727,7 @@ if 3 > 2:
     print('Funciona!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+Notou que a linha após o "if" começa com 4 espaços? Precisamos dessa endentação para que o Python saiba quais linhas executar se a condição dentro do if for verdadeira. Você pode quantos espaços quiser, mas por convenção os programadores Python usam 4, para que os códigos fiquem mais uniformes. Uma tabulação conta como quatro espaços se você configurar seu editor de texto assim. Quando escolher quantos espaços usar, não mude! Se começou a endentar com quatro espaços, siga esse padrão em todo o código - ou você poderá encontrar problemas.
 
 Salve-o e execute novamente:
 
@@ -738,7 +738,7 @@ $ python3 python_intro.py
 Funciona!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Observação: Lembre-se que no Windows 'python3' não é reconhecido como um comando. Se você usa esse sistema operacional, de agora em diante, substitua 'python3' 'python' para executar o arquivo.
 
 ### E se uma condição não for verdadeira?
 
@@ -805,7 +805,7 @@ else:
     print("Meus ouvidos doem! :(")
 ```
 
-Python runs through each test in sequence and prints:
+O Python testa cada condição na sequência em que aparece no código e então mostra:
 
 {% filename %}command-line{% endfilename %}
 
@@ -815,9 +815,9 @@ Python runs through each test in sequence and prints:
 
 ## Comentários
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Comentários são linhas que começam com `#`. Você pode escrever o que quiser após o # `` e o Python vai ignorar. Comentários podem tornar seu código mais fácil para outras pessoas entenderem.
 
-Let's see how that looks:
+Vamos ver como funciona:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -828,11 +828,11 @@ if volume < 20 or volume > 80
     print("Bem melhor!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Você não precisa escrever um comentário para cada linha de código, mas eles são úteis para explicar porque o seu código faz alguma coisa ou para fornecer um breve resumo de algo mais complexo.
 
 ### Sumário
 
-In the last few exercises you learned about:
+Nos últimos exercícios você aprendeu:
 
 - a **comparar coisas** - em Python, você pode comparar objetos usando os operadores `>`, `>=`, `==`, `<=`, `<` e `and`, `or`;
 - **booleano** - um tipo de objeto que só tem dois valores possíveis: `True` ou `False`;
@@ -846,9 +846,9 @@ In the last few exercises you learned about:
 
 > Para leitoras em casa: esta parte do capítulo é abordada no vídeo [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Lembra de funções como `len()`? Boas notícias: agora você vai aprender como escrever suas próprias funções!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Uma função é um sequência de instruções que o Python deve executar. Cada função em Python se inicia com a palavra reservada `def`, possui um nome e pode ter parâmetros. Vamos fazer uma tentativa. Substitua o código no **python_intro.py** com o seguinte:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -860,11 +860,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Ok, nossa primeira função está pronta!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Você pode se perguntar por que escrevemos o nome da função na parte inferior do arquivo. Isto é porque Python lê o arquivo e executa-lo de cima para baixo. Então, para usar a nossa função, temos re-escrevê-lo na parte inferior.
 
-Let's run this now and see what happens:
+Vamos executá-lo agora e ver o que acontece:
 
 {% filename %}command-line{% endfilename %}
 
@@ -903,7 +903,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Não esqueça: a função `print` está endentada com 4 espaços depois do `if`. Isso é necessário porque a função só rodará se a condição for verdadeira. Vamos ver como isso funciona:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -914,7 +914,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Oops, um erro. Felizmente, Python nos fornece uma mensagem de erro bastante útil. Ela diz que a função `hi()` (aquela que declaramos) tem um argumento obrigatório (chamado `name`) e que nós esquecemos de passá-lo ao chamar a função. Vamos corrigi-lo na parte inferior do arquivo:
 
 {% filename %}python_intro.py{% endfilename %}
 
