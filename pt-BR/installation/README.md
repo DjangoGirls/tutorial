@@ -16,7 +16,7 @@ Se você está participando de uma oficina de um [ Evento Django Girls ](https:/
 
 # Instalação
 
-Neste tutorial isrás construir um blog. Nesse sentido, no seguimento do tutorial terás as instruções de como instalar o software no teu computador e configurar algumas contas online conforme serão necessárias. Esta página reune toda a instalação e instruções de inscrição (que será útil para laguns formatos de workshop).
+Neste tutorial, você irá criar um blog. Para fazer isso, ao longo do tutorial você receberá instruções de como instalar diversos programas no seu computador e configurar algumas contas online conforme necessário. Esta página reune as instruções de instalação e registro em um só lugar (o que vai ser útil para a alguns formatos de workshop).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
@@ -27,42 +27,42 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 Muitos dos passos abaixo, referenciam "console", "terminal", "janela de comando" ou "linha de comando" -- todos significam a mesma coisa: uma janela no teu computador onde podes digitar comandos. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python
+# Instale o Python
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# Instale um editor de código
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Configure o virtualenv e instale o Django
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# Instale o Git
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# Crie uma conta no GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Vá para [GitHub.com](https://www.github.com) e registre uma nova conta, de graça. Assegure-se de lembrar a sua senha (e a adicione ao seu gerenciador de senhas, caso você tenha um).
 
-# Create a PythonAnywhere account
+# Crie uma conta no PythonAnywhere
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Começar a ler
+# Comece a ler
 
-Parabéns, está tudo preparado e pronto a começar! Se ainda tens algum tempo antes do workshop, seria útil começares a ler alguns dos capítulos iniciais:
+Parabéns, você tem tudo configurado e pronto para começar! Se você ainda tem algum tempo antes do workshop, seria útil começar a ler alguns dos capítulos de início:
 
-* [Como funciona a Internet](../how_the_internet_works/README.md)
+* [Como a internet funciona](../how_the_internet_works/README.md)
 
-* [Introdução à linha de comandos](../intro_to_command_line/README.md)
+* [Introdução à linha de comando](../intro_to_command_line/README.md)
 
 * [Introdução ao Python](../python_introduction/README.md)
 
-* [O que é o Django?](../django/README.md)
+* [O que é Django?](../django/README.md)
 
-# Disfruta do workshop!
+# Aproveite o workshop!
 
-Quando iniciares o workshop, poderás de ir, diretamente, para o [O teu primeiro projeto em Django!](../django_start_project/README.md) porque já realizaste o material nos capítulos anteriores.
+Quando você começar a oficina, já será capaz de ir direto para o [seu primeiro projeto Django!](../django_start_project/README.md) porque já vai ter visto todo o material dos capítulos anteriores.
