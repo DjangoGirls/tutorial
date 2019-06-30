@@ -8,7 +8,7 @@ Por favor, instale o Python normal da seguinte maneira, mesmo tenha o Anaconda i
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+Primeiramente, verifique se o seu computador está rodando uma versão 32-bit ou 64-bit do Windows, na linha "Tipo de Sistema" na página de informação do Sistema. Para chegar a essa página, tente um desses métodos:
 
 * Aperte as teclas do Windows e "Pause/Break" ao mesmo tempo
 * Abra o seu Painel de Controle pelo menu do Windows, e navegue para "Sistema e Segurança", depois "Sistema"
@@ -18,18 +18,18 @@ Você pode baixar Python para Windows do site https://www.python.org/downloads/w
 
 Uma coisa para prestar atenção: durante a instalação, você notará uma janela marcada "Setup". Certifique-se de marcar a caixa "Adicionar Python 3.6 ao PATH" ou "Adicionar Python às suas variáveis de ambiente" e clicar em "Instalar Agora", como mostrado aqui (pode aparecer um pouco diferente se você estiver instalando uma outra versão):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Não se esqueça de adicionar o Python ao Path](../python_installation/images/python-installation-options.png)
 
 Quando a instalação for concluída, pode aparecer uma caixa de diálogo com um link que você pode seguir para saber mais sobre Python ou sobre a versão que instalou. Feche ou cancele essa caixa de diálogo -- você vai aprender mais neste tutorial!
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+Observação: se você estiver usando uma versão antiga do Windows (7, Vista, ou qualquer outra mais antiga) e o instalador do 3.6. x Python falhar com um erro, você pode tentar:
 
-1. install all Windows Updates and try to install Python again; or
+1. instalar todas as atualizações do Windows e tentar instalar o Python novamente; ou
 2. instalar uma [versão mais antiga do Python](https://www.python.org/downloads/windows/), por exemplo, [3.4.6](https://www.python.org/downloads/release/python-346/).
 
 If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![Adicione o Python ao PATH, versões mais antigas](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -38,17 +38,17 @@ data-collapse=true ces-->
 
 > **Observação:** Antes de instalar o Python no Mac OS X, você deve garantir que suas configurações permitam a instalação de pacotes que não estejam na App Store. Vá para preferências do sistema (dentro da pasta Aplicativos), clique em "Segurança & Privacidade" e depois na guia "Geral". Se a configuração "Permitir que apps baixados:" estiver definida como "Mac App Store," mude para "Mac App Store e desenvolvedores identificados."
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+Você precisa visitar https://www.python.org/downloads/release/python-361/ e baixar o instalador do Python:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* Faça o download do arquivo *Mac OS X 64-bit/32-bit installer*,
+* Dê um duplo clique no arquivo *python-3.6.1-macosx10.6.pkg* para executar o instalador.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+É muito provável que você já tenha o Python instalado e configurado. Para ter certeza se ele está instalado (e qual a sua versão), abra o terminal e digite o seguinte comando:
 
 {% filename %}command-line{% endfilename %}
 
@@ -56,13 +56,13 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a newer version, you can install it as follows:
+Se você tem instalada uma outra "versão micro" do Python, por exemplo, 3.6.0, não precisa atualizá-la. Se não tiver o Python instalado ou quiser uma versão diferente, faça assim:
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Digite o seguinte comando no terminal:
 
 {% filename %}command-line{% endfilename %}
 
@@ -74,21 +74,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Use o seguinte comando no terminal:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Se você estiver em versões mais antigas do Fedora, pode receber um erro dizendo que o comando `dnf` não foi encontrado. Nesse caso, você precisa usar o `yum` em vez disso.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Use o seguinte comando no terminal:
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Verifique se a instalação foi bem sucedida abrindo o terminal e digitando o comando `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,10 +105,10 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+A versão mostrada pode ser diferente da versão 3.6.1 -- deve corresponder à versão que você instalou.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
+**Observação:** Se você estiver no Windows e receber uma mensagem de erro dizendo que o `python3` não foi encontrado, tente utilizar `python` (sem o `3`) e verifique se ela corresponde à versão Python 3.4.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Se você tem alguma dúvida ou se alguma coisa deu errado e você não tem a menor ideia do que fazer, pergunte à sua monitora! Nem sempre tudo sai conforme o esperado e é melhor pedir ajuda a alguém mais experiente.
