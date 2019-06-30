@@ -37,28 +37,28 @@ Se você está usando Mac ou Linux, você provavelmente verá um `$`, como esse:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+No Windows, você provavelmente verá um `>`, assim:
 
 {% filename %}command-line{% endfilename %}
 
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Dê uma olhada na seção Linux logo acima -- você verá algo mais como isso quando você chegar ao PythonAnywhere depois no tutorial.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Cada comando vai ser precedido por um `$` ou `>` e um espaço, mas você não deve digitar isso. Seu computador vai fazer isso por você. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Uma pequena observação: pode ser que apareça algo como `C:\Users\ola>` ou `Olas-MacBook-Air:~ ola$` antes do cursor e isso está 100% correto.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+A parte que vai até e inclui o `$` ou o `>` é chamada de *prompt de linha de comando*, ou *prompt*, de forma breve. Ele está pedindo que você digite algo.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+No tutorial, quando quisermos que você digite um comando, incluiremos o `$` ou `>` e, algumas vezes, algum texto adicional à esquerda. Ignore o que está à esquerda e apenas digite o comando que inicia após o prompt.
 
 ## Seu primeiro comando (Uhuu!)
 
-Let's start by typing this command:
+Vamos começar digitando este comando:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -92,11 +92,11 @@ Como você pode ver, o computador acabou de mostrar seu nome de usuário na tela
 
 ## O Básico
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Cada sistema operacional tem o seu próprio conjunto de instruções para a linha de comando, então certifique-se de que você está seguindo as instruções do seu sistema operacional. Vamos tentar, certo?
 
 ### Pasta atual
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Quer saber em que diretório está agora? Digite o seguinte comando e clique `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -106,7 +106,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Observação: 'pwd' significa 'print working directory' (imprima/mostre o diretório de trabalho).
 
 <!--endsec-->
 
@@ -118,33 +118,33 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Observação: 'cd' significa 'change directory' em inglês, o que se traduz para 'mudar de diretório'. Com o powershell, você pode utilizar pwd da mesma forma como no Linux ou Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Você provavelmente vai ver algo parecido em seu computador. A linha de comando geralmente inicia no diretório principal do usuário, também chamado de diretório "home", em Inglês.
 
 * * *
 
 ### Aprenda mais sobre um comando
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Muitos comandos que você digita no Prompt de comand possuem um painel de ajuda integrada que você pode abrir e ler! Por exemplo, para entender melhor sobre o comando do diretório atual:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+SO X e Linux tem um comando `man`, que ajuda você nos comandos. Tente `mand pwd` e veja o que ele diz, ou coloque `man` antes de outros comandos para ver seus menus de ajuda. A saída `man` é normalmente paginada. Use a barra de espaço para ir para a próxima página, e `q` para sair do menu de ajuda.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Colocando um sufixo `/?` para a maioria dos comandos, irá imprimir uma página de ajuda. Você pode precisar rolar a janela do seu comando para ver tudo. Tente `cd /?`.
 
 <!--endsec-->
 
 ### Listando arquivos e pastas
 
-So what's in it? It'd be cool to find out. Let's see:
+Então, o que tem no seu computador? Vamos descobrir:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -197,7 +197,7 @@ Agora vamos para a pasta Desktop:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Note que o nome do diretório "Desktop" pode estar traduzido para a linguagem da sua conta Linux. Se for o caso, você irá precisar mudar `Desktop` para o nome traduzido; como exemplo, `Área de trabalho` em português.
 
 <!--endsec-->
 
@@ -210,7 +210,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Verifique se realmente mudamos de pasta:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -232,9 +232,9 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Aqui está!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> Dica de profissional: se você digitar `cd D` e apertar a tecla `tab` no seu teclado, a linha de comando preencherá automaticamente o resto do nome para que você possa navegar rapidamente. Se houver mais de uma pasta cujo nome comece com "D", aperte a tecla `tab` duas vezes para obter uma lista de opções.
 
 * * *
 
@@ -324,7 +324,7 @@ Primeiro, precisamos voltar para a Área de trabalho:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Usando o comando `..` com o `cd` irá mudar sua pasta atual para o diretório pai (ou seja, a pasta que contém sua pasta atual).
 
 Verifique onde você está:
 
@@ -348,9 +348,9 @@ Verifique onde você está:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Agora é hora de deletar a pasta `practice`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Atenção**: A exclusão de arquivos usando `del`, `rmdir` ou `rm` é irreversível; ou seja, os *arquivos excluídos são perdidos para sempre*! Então, tenha cuidado com este comando.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -371,7 +371,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Pronto! Para ter certeza de que a pasta foi excluída, vamos checar:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
