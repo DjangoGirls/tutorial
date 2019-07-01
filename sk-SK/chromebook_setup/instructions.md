@@ -60,7 +60,7 @@ Ak to ešte stále nefunguje, požiadaj svojho mentora/ku o pomoc.
     pip install django~={{ book.django_version }}
     
 
-(všimni si, že v poslednom riadku sme použili vlnovku a za ňou znamienko rovnosti - `~=`).
+(všimni si, že v poslednom riadku sme použili vlnovku a za ňou znamienko rovnosti).
 
 ### GitHub
 
