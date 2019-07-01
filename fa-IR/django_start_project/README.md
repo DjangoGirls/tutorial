@@ -1,8 +1,8 @@
 # اولین پروژه جنگو شما!
 
-> Part of this chapter is based on tutorials by Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> قسمت‌هایی از این بخش بر اساس دوره آموزشی Geek Girls Carrots بنا شده است (https://github.com/ggcarrots/django-carrots).
 > 
-> Parts of this chapter are based on the [django-marcador tutorial](http://django-marcador.keimlink.de/) licensed under the Creative Commons Attribution-ShareAlike 4.0 International License. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> قسمت‌هایی از این بخش هم بر اساس دوره آموزشی [django-marcador tutorial](http://django-marcador.keimlink.de/) تحت مجوز بین المللی Creative Commons Attribution-ShareAlike 4.0 International License تهیه شده است. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
 
 We're going to create a small blog!
 
