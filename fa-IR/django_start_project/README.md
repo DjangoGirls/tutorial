@@ -38,7 +38,7 @@
 
 > علامت `.` مهم است برای اینکه به سیستم می‌گوید که جنگو را در همین پوشه جاری نصب کند (به نوعی یک روش ارجاع خلاصه شده است).
 > 
-> **نکته** وقتی دستور بالا را می‌نویسید به یاد داشته باشید که فقط بخشی را می‌نویسید که با `django-admin.exe` شروع می‌شود. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **نکته** وقتی دستور بالا را می‌نویسید به یاد داشته باشید که فقط بخشی را می‌نویسید که با `django-admin.exe` شروع می‌شود. بخش `(myvenv) C:\Users\Name\djangogirls>` نشان می‌دهد که شما باید دستورات ورودی را در مقابل آن بنویسید.
 
 <!--endsec-->
 
