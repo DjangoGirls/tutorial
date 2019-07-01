@@ -10,7 +10,7 @@
 
 نام برخی از این فایل‌ها و پوشه‌ها برای جنگو بسیار مهم است. شما نباید نام فایل‌‌هایی که الان می‌خواهیم بسازیم را تغییر دهید. همچنین تغییر پوشه‌های آنها هم ایده خوبی نیست. جنگو باید در یک ساختار مشخص مورد استفاده قرار گیرد تا بتواند چیزهای مهم را پیدا کند.
 
-> به یاد داشته باشید که همه دستورات را در محیط مجازی (virtualenv) اجرا کنید. اگر پیشوند `(myvenv)` را در کنسول خط فرمان نمی‌بینید، باید محیط مجازی را فعال کنید. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> به یاد داشته باشید که همه دستورات را در محیط مجازی (virtualenv) اجرا کنید. اگر پیشوند `(myvenv)` را در کنسول خط فرمان نمی‌بینید، باید محیط مجازی را فعال کنید. فعال کردن محیط مجازی را در قسمت **کارکردن با محیط مجازی** از بخش **نصب جنگو** توضیح داده‌ایم. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
