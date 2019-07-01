@@ -23,7 +23,7 @@
 
 > علامت `.` مهم است برای اینکه به سیستم می‌گوید که جنگو را در همین پوشه جاری نصب کند (به نوعی یک روش ارجاع خلاصه شده است).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **نکته** وقتی دستور بالا را می‌نویسید به یاد داشته باشید که فقط بخشی را می‌نویسید که با `django-admin` شروع می‌شود. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
