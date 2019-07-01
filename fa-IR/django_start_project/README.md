@@ -2,11 +2,11 @@
 
 > قسمت‌هایی از این بخش بر اساس دوره آموزشی Geek Girls Carrots بنا شده است (https://github.com/ggcarrots/django-carrots).
 > 
-> قسمت‌هایی از این بخش هم بر اساس دوره آموزشی [django-marcador tutorial](http://django-marcador.keimlink.de/) تحت مجوز بین المللی Creative Commons Attribution-ShareAlike 4.0 International License تهیه شده است. The django-marcador tutorial is copyrighted by Markus Zapke-Gründemann et al.
+> قسمت‌هایی از این بخش هم بر اساس دوره آموزشی [django-marcador tutorial](http://django-marcador.keimlink.de/) تحت مجوز بین المللی Creative Commons Attribution-ShareAlike 4.0 International License تهیه شده است. امتیاز دوره آموزشی django-marcador متعلق به Markus Zapke-Gründemann و همکاران است.
 
-We're going to create a small blog!
+قصد داریم تا یک وبلاگ کوچک بسازیم!
 
-The first step is to start a new Django project. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
+اولین قدم این است که یک پروژه جدید جنگو بسازیم. Basically, this means that we'll run some scripts provided by Django that will create the skeleton of a Django project for us. This is just a bunch of directories and files that we will use later.
 
 The names of some files and directories are very important for Django. You should not rename the files that we are about to create. Moving them to a different place is also not a good idea. Django needs to maintain a certain structure to be able to find important things.
 
