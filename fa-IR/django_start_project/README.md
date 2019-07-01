@@ -29,16 +29,16 @@
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+در ویندوز باید دستور زیر را بنویسید. **(فراموش نکنید که `علامت نقطه` را در انتها بگذارید)**:
 
 {% filename %}خط فرمان{% endfilename %}
 
     (myvenv) C:\Users\Name\djangogirls> django-admin.exe startproject mysite .
     
 
-> The period `.` is crucial because it tells the script to install Django in your current directory (for which the period `.` is a short-hand reference).
+> علامت `.` مهم است برای اینکه به سیستم می‌گوید که جنگو را در همین پوشه جاری نصب کند (به نوعی یک روش ارجاع خلاصه شده است).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **نکته** وقتی دستور بالا را می‌نویسید به یاد داشته باشید که فقط بخشی را می‌نویسید که با `django-admin.exe` شروع می‌شود. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
 
 <!--endsec-->
 
