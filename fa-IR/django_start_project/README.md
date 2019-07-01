@@ -8,9 +8,9 @@
 
 اولین قدم این است که یک پروژه جدید جنگو بسازیم. در وافع ساختن یک پروژه جنگو شامل اجرا کردن دستوراتی است که توسط جنگو آماده شده و با اجرای آن، بدنه اصلی پروژه ساخته می‌شود. این بدنه، شامل تعدادی پوشه و فایل است که ما بعداً از آن ها استفاده خواهیم کرد.
 
-نام برخی از این فایل‌ها و پوشه‌ها برای جنگو بسیار مهم است. شما نباید نام فایل‌‌هایی که الان می‌خواهیم بسازیم را تغییر دهید. همچنین تغییر پوشه‌های آنها هم ایده خوبی نیست. Django needs to maintain a certain structure to be able to find important things.
+نام برخی از این فایل‌ها و پوشه‌ها برای جنگو بسیار مهم است. شما نباید نام فایل‌‌هایی که الان می‌خواهیم بسازیم را تغییر دهید. همچنین تغییر پوشه‌های آنها هم ایده خوبی نیست. جنگو باید در یک ساختار مشخص مورد استفاده قرار گیرد تا بتواند چیزهای مهم را پیدا کند.
 
-> Remember to run everything in the virtualenv. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> به یاد داشته باشید که همه دستورات را در محیط مجازی (virtualenv) اجرا کنید. If you don't see a prefix `(myvenv)` in your console, you need to activate your virtualenv. We explained how to do that in the **Django installation** chapter in the **Working with virtualenv** part. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
