@@ -300,6 +300,6 @@ Woohoo! Ó dára ní wíwò, àbí bẹ́ẹ̀ kọ? Wo kóòdù tí a ṣẹ̀�
 
 Má bẹ̀rù láti ṣàtúnṣe CSS yìí díẹ̀ kí o sì gbìyànjú láti ṣàyípadà àwọn nnkan kan. Fífi CSS náà ṣeré lè ràn ọ́ lọ́wọ́ láti mọ ohun tí àwọn nnkan ọ̀tọ̀ọ̀tọ̀ n ṣe. Tí o bá ṣe àṣìṣe kan, má dààmú – o lè ṣàtúnṣe rẹ̀ padà!
 
-We really recommend taking this free online [Codeacademy HTML & CSS course](https://www.codecademy.com/tracks/web). It can help you learn all about making your websites prettier with CSS.
+A dámọ̀ràn pé kí o kópa nínú [ìdánilékọ̀ọ́ ọ̀fẹ́ lórí HTML & CSS ti Codeacademy](https://www.codecademy.com/tracks/web) yìí. It can help you learn all about making your websites prettier with CSS.
 
 Ṣé o ti ṣetán fún àkòrí tó kàn náà?! :)
