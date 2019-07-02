@@ -162,9 +162,9 @@ Bóyá a lè ṣe ìrísí-lẹ́tà náà bí a ṣe fẹ́ nínú àkọsórí
 <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
 ```
 
-As before, check the order and place before the link to `blog/static/css/blog.css`. This line will import a font called *Lobster* from Google Fonts (https://www.google.com/fonts).
+Bíi ti tẹ́lẹ̀, ṣàyẹ̀wò bí a ṣe tò wọ́n kí o sì fi síwájú atọ́ka sí `blog/static/css/blog.css` náà. Ìlà yìí yíò ṣàgbéwọlé ìrísí-lẹ́tà kan tí a n pè ní *Lobster* láti Google Fonts (https://www.google.com/fonts).
 
-Find the `h1 a` declaration block (the code between braces `{` and `}`) in the CSS file `blog/static/css/blog.css`. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Wá búlọ́ọ̀kù ìkéde `h1 a` náà (kóòdù tó wà láàrín àwọn àkámọ́ onídodo `{` àti `}`) nínú fáìlì CSS `blog/static/css/blog.css` náà. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
