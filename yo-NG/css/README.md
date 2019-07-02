@@ -179,9 +179,9 @@ h1 a, h2 a {
 
 Ó dára!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. This can be super helpful! Maybe you have two divs that are doing something different (like your header and your post). A class can help you make them look different.
+As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. Èyí lè wúlò púpọ̀! Bóyá o ní àwọn div méjì tó n ṣe nnkan ọ̀tọ̀ọ̀tọ̀ (bíi àkọsórí rẹ àti àròkọ rẹ). Kíláàsì kan lè ràn ọ́ lọ́wọ́ láti mú wọn yàtọ̀ síra.
 
-Go ahead and name some parts of the HTML code. Add a class called `page-header` to your `div` that contains your header, like this:
+Tẹ̀síwájú láti sọ àwọn apá kan lára kóòdù HTML náà lórúkọ. Ṣàfikún kíláàsì kan tí a n pè ní `page-header` sí `div` rẹ tó kó àkọsórí rẹ sínú, báyìí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
