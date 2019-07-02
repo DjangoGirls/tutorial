@@ -89,7 +89,7 @@ Nínú fáìlì CSS kan, a máa pinnu àwọn àrà fún àwọn element nínú 
 
 O lè kà síi nípa [Àwọn Selector CSS ní w3schools](http://www.w3schools.com/cssref/css_selectors.asp).
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+A tún nílò láti sọ fún awoṣe (template) HTML wa wípé a ti ṣàfikún àwọn CSS kan. Ṣí fáìlì `blog/templates/blog/post_list.html` nínú olóòtú kóòdù náà kí o sì ṣàfikún ìlà yìí ní ìbẹ̀rẹ̀ pẹ̀pẹ̀ rẹ̀:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
