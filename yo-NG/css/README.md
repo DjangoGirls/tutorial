@@ -203,7 +203,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-A máa wá ṣàfikún àwọn búlọ́ọ̀kù ìkéde sí oríṣiríṣi selector. Àwọn selector tó n bẹ̀rẹ̀ pẹ̀lú `.` jẹ mọ́ àwọn kíláàsì. There are many great tutorials and explanations about CSS on the Web that can help you understand the following code. For now, copy and paste it into your `blog/static/css/blog.css` file:
+A máa wá ṣàfikún àwọn búlọ́ọ̀kù ìkéde sí oríṣiríṣi selector. Àwọn selector tó n bẹ̀rẹ̀ pẹ̀lú `.` jẹ mọ́ àwọn kíláàsì. Ọ̀pọ̀lọpọ̀ àwọn àlàyé tó wúlò púpọ̀ nípa CSS ti wà lórí Ayélujára náà tó lè ràn ọ́ lọ́wọ́ láti mọ kóòdù tó tẹ̀le yìí. Ní báyìí, ṣàdàkọ rẹ̀ sínú fáìlì `blog/static/css/blog.css` rẹ:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
