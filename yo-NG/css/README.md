@@ -191,7 +191,7 @@ Go ahead and name some parts of the HTML code. Add a class called `page-header` 
 </div>
 ```
 
-And now add a class `post` to your `div` containing a blog post.
+Àti pé ní báyìí, ṣàfikún kíláàsì `post` kan sí `div` rẹ tó kó àròkọ blog kan sínú.
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -256,7 +256,7 @@ h1, h2, h3, h4 {
 }
 ```
 
-Then surround the HTML code which displays the posts with declarations of classes. Replace this:
+Lẹ́yìn náà, yí kóòdù HTML tó n ṣàfihàn àwọn àròkọ náà ká pẹ̀lú àwọn ìkéde ti àwọn kíláàsì. Rọ́pò èyí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
