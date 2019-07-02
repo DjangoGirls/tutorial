@@ -179,7 +179,7 @@ h1 a, h2 a {
 
 Ó dára!
 
-As mentioned above, CSS has a concept of classes. These allow you to name a part of the HTML code and apply styles only to this part, without affecting other parts. Èyí lè wúlò púpọ̀! Bóyá o ní àwọn div méjì tó n ṣe nnkan ọ̀tọ̀ọ̀tọ̀ (bíi àkọsórí rẹ àti àròkọ rẹ). Kíláàsì kan lè ràn ọ́ lọ́wọ́ láti mú wọn yàtọ̀ síra.
+Gẹ́gẹ́ bí a ṣe sọ lókè, CSS ní ìpìlẹ̀ èròngbà kan ti àwọn kíláàsì. Àwọn wọ̀nyí yíò fún ọ láàyè láti sọ apá kan lára kóòdù HTML náà lórúkọ àti lo àwọn àrà sí apá yìí nìkan, láì nípa lórí àwọn apá yòókù. Èyí lè wúlò púpọ̀! Bóyá o ní àwọn div méjì tó n ṣe nnkan ọ̀tọ̀ọ̀tọ̀ (bíi àkọsórí rẹ àti àròkọ rẹ). Kíláàsì kan lè ràn ọ́ lọ́wọ́ láti mú wọn yàtọ̀ síra.
 
 Tẹ̀síwájú láti sọ àwọn apá kan lára kóòdù HTML náà lórúkọ. Ṣàfikún kíláàsì kan tí a n pè ní `page-header` sí `div` rẹ tó kó àkọsórí rẹ sínú, báyìí:
 
