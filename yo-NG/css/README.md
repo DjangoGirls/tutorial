@@ -105,7 +105,7 @@ A kàn n gbé àwọn fáìlì tó wà lójú kan níbí. :) Láàrín àwọn �
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-Aṣàwákiri náà yíò ka àwọn fáìlì náà bí a ṣe tò wọ́n síbẹ̀, nítorí náà, a nílò láti rí dájú pé èyí wà níbi tó yẹ. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+Aṣàwákiri náà yíò ka àwọn fáìlì náà bí a ṣe tò wọ́n síbẹ̀, nítorí náà, a nílò láti rí dájú pé èyí wà níbi tó yẹ. Bí bẹ́ẹ̀ kọ́, kóòdù tó wà nínú àwọn fáìlì Bootstrap lè borí kóòdù tó wà nínú fáìlì wa. A ṣẹ̀ṣẹ̀ sọ ibi tí fáìlì CSS wa wà fún àwòṣe (template) wa.
 
 Ó yẹ kí fáìlì rẹ rí báyìí:
 
