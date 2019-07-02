@@ -164,7 +164,7 @@ Bóyá a lè ṣe ìrísí-lẹ́tà náà bí a ṣe fẹ́ nínú àkọsórí
 
 Bíi ti tẹ́lẹ̀, ṣàyẹ̀wò bí a ṣe tò wọ́n kí o sì fi síwájú atọ́ka sí `blog/static/css/blog.css` náà. Ìlà yìí yíò ṣàgbéwọlé ìrísí-lẹ́tà kan tí a n pè ní *Lobster* láti Google Fonts (https://www.google.com/fonts).
 
-Wá búlọ́ọ̀kù ìkéde `h1 a` náà (kóòdù tó wà láàrín àwọn àkámọ́ onídodo `{` àti `}`) nínú fáìlì CSS `blog/static/css/blog.css` náà. Now add the line `font-family: 'Lobster';` between the braces, and refresh the page:
+Wá búlọ́ọ̀kù ìkéde `h1 a` náà (kóòdù tó wà láàrín àwọn àkámọ́ onídodo `{` àti `}`) nínú fáìlì CSS `blog/static/css/blog.css` náà. Ní báyìí, ṣàfikún ìlà `font-family: 'Lobster';` náà sí àárín àwọn àkámọ́ onídodo náà, kí o sì ṣe ìmúdójúìwọ̀n ojú-ìwé náà:
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
