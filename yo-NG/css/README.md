@@ -97,7 +97,7 @@ A tún nílò láti sọ fún awoṣe (template) HTML wa wípé a ti ṣàfikún
 {% load static %}
 ```
 
-We're just loading static files here. :) Between the `<head>` and `</head>` tags, after the links to the Bootstrap CSS files, add this line:
+A kàn n gbé àwọn fáìlì tó wà lójú kan níbí. :) Láàrín àwọn àmì `<head>` àti `</head>` náà, lẹ́yìn àwọn atọ́ka sí àwọn fáìlì CSS Bootstrap náà, ṣàfikún ìlà yìí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -105,7 +105,7 @@ We're just loading static files here. :) Between the `<head>` and `</head>` tags
 <link rel="stylesheet" href="{% static 'css/blog.css' %}">
 ```
 
-The browser reads the files in the order they're given, so we need to make sure this is in the right place. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
+Aṣàwákiri náà yíò ka àwọn fáìlì náà bí a ṣe tò wọ́n síbẹ̀, nítorí náà, a nílò láti rí dájú pé èyí wà níbi tó yẹ. Otherwise the code in our file may be overriden by code in Bootstrap files. We just told our template where our CSS file is located.
 
 Ó yẹ kí fáìlì rẹ rí báyìí:
 
