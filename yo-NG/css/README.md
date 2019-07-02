@@ -140,7 +140,7 @@ Aṣàwákiri náà yíò ka àwọn fáìlì náà bí a ṣe tò wọ́n síb�
 
 ![Figure 14.2](images/color2.png)
 
-Nice work! Maybe we would also like to give our website a little air and increase the margin on the left side? Let's try this!
+Iṣẹ́ tó dára! Bóyá a tún lè fẹ́ fún ààyè ayélujára wa ní ìwọ̀nba àyè díẹ̀ àti ṣàfikún etí-ìwé náà ní apá òsì? Jẹ́ ká gbìyànjú èyí!
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
