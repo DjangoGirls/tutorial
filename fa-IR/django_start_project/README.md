@@ -60,9 +60,9 @@
 
 فایل `settings.py` حاوی تنظیمات وبسایت شما است.
 
-Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
+یادتان می‌آید وقتی در مورد حامل نامه صحبت می‌کردیم از این صحبت کردیم که کجا را باید نگاه کند تا بتواند نامه را به مقصد برساند؟ فایل `urls.py` شامل الگوهایی است توسط `urlresolver` استفاده می‌شوند.
 
-Let's ignore the other files for now as we won't change them. The only thing to remember is not to delete them by accident!
+اجازه بدهید الان از سایر فایل‌ها چشم‌پوشی کنیم چون آن‌ها را تغییر نخواهیم داد. تنها چیزی که باید مواظب آن باشید این است که آن‌ها را اشتباهی پاک نکنید!
 
 ## Changing settings
 
