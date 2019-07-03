@@ -208,10 +208,10 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-O máa nílò láti rọ́pò `<your-pythonanywhere-domain>` pẹ̀lú orúkọ subdomain PythonAnywhere rẹ gan-an, láìsí àwọn àkámọ́ onígun náà. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+O máa nílò láti rọ́pò `<your-pythonanywhere-domain>` pẹ̀lú orúkọ subdomain PythonAnywhere rẹ gan-an, láìsí àwọn àkámọ́ onígun náà. Orúkọ subdomain rẹ máa n sábà jẹ́ orúkọ aṣàmúlò PythonAnywhere rẹ, ṣùgbọ́n nígbà mìíràn ó lè yàtọ̀ díè (irú bíi tí orúkọ aṣàmúlò rẹ bá ní àwọn lẹ́tà ńlá). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
 Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
 * Ní ìparí, lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà kí o sì tẹ **Reload** lórí ètò ayélujára rẹ.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Ó yẹ kí ìmúdójúìwọ̀n rẹ ti máa ṣiṣẹ́! Tẹ̀síwájú láti ṣe ìmúdójúìwọ̀n ààyè ayélujára rẹ nínú aṣàwákiri náà. Ó yẹ kí àwọn ìyípadà ti fojú hàn. :)
