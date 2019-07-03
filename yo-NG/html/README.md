@@ -141,7 +141,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
 A ti ṣẹ̀dá àwọn abala `div` mẹ́ta níbí.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
+* Element `div` àkọ́kọ́ náà kó àkọlé blog wa sínú – ó jẹ́ àkọsórí kan àti atọ́ka kan
 * Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
 
 It gives us this effect:
