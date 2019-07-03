@@ -2,7 +2,7 @@
 
 Para adicionar, editar e deletar os posts que acabamos de modelar, nós usaremos o admin do Django.
 
-Vamos abrir o arquivo `blog/admin.py` e substituir seu conteúdo por isso:
+Vamos abrir o arquivo `blog/admin.py` no editor de código e substituir o conteúdo pelo seguinte:
 
 {% filename %}blog/admin.py{% endfilename %}
 
@@ -33,10 +33,10 @@ Para fazer login, você precisa criar um *superusuário (superuser)* - uma conta
     (myvenv) C:\Users\Name\djangogirls> python manage.py createsuperuser
     
 
-Quando for solicitado, insira seu nome de usuário (letras minúsculas, sem espaços), e-mail e senha. **Não se preocupe se você não conseguir ver a senha que está digitando – é assim que tem ser.** Basta digitá-la e clicar `enter` para continuar. A saída deve parecer com isso (onde o nome de usuário e o email devem ser os seus):
+Quando for solicitado, insira seu nome de usuário (letras minúsculas, sem espaços), e-mail e senha. **Não se preocupe por não conseguir ver a senha que está digitando - é assim mesmo.** Digite a senha e aperte a tecla `enter` para continuar. A saída deve parecer com isso (onde o nome de usuário e o email devem ser os seus):
 
-    Username: admin
-    Email address: admin@admin.com
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.
@@ -46,7 +46,7 @@ Volte ao seu navegador. Faça login com as credenciais de superusuário que voc�
 
 ![Django Admin](images/django_admin3.png)
 
-Vá para Posts e brinque um pouco por lá. Adicione cinco ou seis posts. Não se preocupe com o conteúdo - você pode simplesmente copiar e colar algum texto desse tutorial para economizar tempo. :)
+Vá para as postagens e experimente um pouco com elas. Adicione cinco ou seis postagens. Não se preocupe com o conteúdo -- ele só é visível para você no seu computador local -- você pode copiar e colar algum texto deste tutorial para economizar tempo. :)
 
 Certifique-se de que pelo menos duas ou três postagens (mas não todas) têm a data de publicação definida. Isso será útil depois.
 

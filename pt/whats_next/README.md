@@ -4,22 +4,39 @@ Parabéns! Você **arrasou**. Estamos orgulhosas! <3
 
 ### O que fazer agora?
 
-Antes de mais nada, faça uma pausa e relaxe. Você acabou de fazer algo realmente grande.
+Tire uma pausa e relaxe! Você acabou de fazer algo realmente grande.
 
 Depois disso, certifique-se de seguir o Django Girls no [Facebook](http://facebook.com/djangogirls) ou no [Twitter](https://twitter.com/djangogirls) para se manter atualizada.
 
 ### Vocês podem recomendar outras fontes de informação?
 
-Sim! Primeiro, vá em frente e tente nosso outro livro, chamado [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/).
+Sim! Existem *muitos* recursos online para aprender todos os tipos de habilidade de programação – pode ser bastante assustador decidir para onde prosseguir, mas nos te damos cobertura. Quaisquer que fossem seus interesses antes de vir à Django Girls, e quaisquer interesses você tenha adquirido ao longo do tutorial, aqui estão alguns recursos gratuitos (ou recursos com grandes partes gratuitas) que você pode usar para chegar até onde deseja estar.
 
-Mais pra frente, você pode tentar os recursos listados abaixo. Todos são muito bem recomendados!
+#### Django
 
+- Nosso outro livro: [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Tutorial oficial do Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Tutoriais do New Coder](http://newcoder.io/tutorials/)
-- [Curso de Python do Code Academy](https://www.codecademy.com/en/tracks/python)
-- [Curso de HTML & CSS do Code Academy](https://www.codecademy.com/tracks/web)
-- [Tutorial do Django Carrots](https://github.com/ggcarrots/django-carrots)
-- [Livro "Learn Python The Hard Way" (Aprenda Python do Jeito Difícil)](http://learnpythonthehardway.org/book/)
-- [Videoaulas "Começando com o Django"](http://www.gettingstartedwithdjango.com/)
-- [Livro "Two Scoops of Django 1.11: Best Practices for Django Web Framework" (Duas Colheres de Django 1.11: Melhores Práticas para o Framework Web Django)](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- ["Hello Web App: Learn How to Build a Web App"](https://hellowebapp.com/) (Aprenda Como Construir uma Aplicação Web) -- você também pode solicitar uma licença gratuita do eBook entrando em contato com a autora Tracy Osborn em <tracy@limedaring.com>
+- [Começando com as aulas de vídeo do Django](http://www.gettingstartedwithdjango.com/)
+
+#### HTML, CSS and JavaScript
+
+- [Curso de desenvolvimento web do Codecademy](https://www.codecademy.com/learn/paths/web-development)
+- [freeCodeCamp](https://www.freecodecamp.org/)
+
+#### Python
+
+- [Curso de Python do Code Academy](https://www.codecademy.com/learn/learn-python)
+- [Curso Python do Google](https://developers.google.com/edu/python/)
+- Livro [Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - os exercícios iniciais são grátis
+- [Tutoriais New Coder](http://newcoder.io/tutorials/) - uma variedade de exemplos práticos que você pode usar Python
+- [edX](https://www.edx.org/course?search_query=python) – você pode assistir a maior parte dos cursos de graça, porem se você quiser um certificado ou créditos para validação em curso superior, então haverá um custo
+- [Especialização em Python do Coursera](https://www.coursera.org/specializations/python) - alguns videos podem ser assistidos de graça e você pode ganhar um certificado por atender aos cursos
+- [Python para todos](https://www.py4e.com/) - uma versão gratuita e aberta do Coursera Python para especialização de todo mundo
+
+#### Trabalhando com dados
+
+- [Codecademy curso de data science](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – você pode assistir a maior parte dos cursos de graça, porem se você quiser um certificado ou créditos para validação em curso superior, então haverá um custo
+- [Dataquest](https://www.dataquest.io/) – as primeiras 30 "missões" são gratuitas
+
+Mal podemos esperar para ver o que você vai construir da próxima vez!

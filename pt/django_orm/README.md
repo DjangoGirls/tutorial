@@ -89,7 +89,7 @@ Quais usuários temos no nosso banco de dados? Experimente isso:
 <QuerySet [<User: ola>]>
 ```
 
-É o superusuário que criamos anteriormente! Vamos obter uma instância de usuário agora:
+Este é o superusuário que criamos anteriormente! Vamos pegar uma instância do usuário agora (ajuste esta linha para usar seu próprio nome de usuário):
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ Quais usuários temos no nosso banco de dados? Experimente isso:
 >>> me = User.objects.get(username='ola')
 ```
 
-Como podemos ver, agora usamos o método `get` para selecionar um `User` com o campo `username` igual a 'ola'. Claro, você tem que adaptar este comando ao seu nome de usuário.
+Como você pode ver, agora `obtém` um `Usuário` com um `nome de usuário` que é igual a 'ola'. Arrumado!
 
 Agora finalmente podemos criar nosso post:
 
@@ -200,9 +200,9 @@ Também podemos inverter a ordem adicionando `-` no início:
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Encadeando QuerySets
+### Consultas Complexas com Encadeamento de Métodos
 
-Você também pode combinar QuerySets **encadeando**-os:
+Como você viu, alguns métodos em `Post.objects` retornam um QuerySet. Esses mesmos métodos podem, por sua vez, ser invocados num QuerySet, o que resultará num novo QuerySet. Dessa forma, você pode combinar seus efeitos **encadeando-los** juntos:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')

@@ -62,7 +62,7 @@ O arquivo `settings.py` contém a configuração do seu site.
 
 Lembra de quando falamos sobre um carteiro verificando onde entregar uma carta? O arquivo `urls.py` contém uma lista dos padrões usados por `urlresolver`.
 
-Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. Só precisamos lembrar de não excluí-los acidentalmente!
+Vamos ignorar os outros arquivos por enquanto pois não vamos modificá-los. Só precisamos lembrar de não excluí-los por acidentalmente!
 
 ## Mudando as configurações
 
@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **Observação:** Se você estiver utilizando um Chromebook, adicione esta linha ao final do arquivo settings.py: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Também inclua `.c9users.io` à lista de `ALLOWED_HOSTS` se você estiver utilizando o cloud9.
+> Também inclua `.c9users.io` à lista de `ALLOWED_HOSTS` se você estiver utilizando o cloud9
 
 ## Configurando um banco de dados
 
@@ -148,6 +148,8 @@ Para criar um banco de dados para o nosso blog, vamos executar o seguinte comand
       Applying auth.0005_alter_user_last_login_null... OK
       Applying auth.0006_require_contenttypes_0002... OK
       Applying auth.0007_alter_validators_add_error_messages... OK
+      Applying auth.0008_alter_user_username_max_length... OK
+      Applying auth.0009_alter_user_last_name_max_length... OK
       Applying sessions.0001_initial... OK
     
 
@@ -176,28 +178,28 @@ Se você estiver no Windows e o comando falhar com `UnicodeDecodeError`, use o c
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Agora, precisamos verificar se o nosso site está rodando. Abra seu browser (Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você utilizar) e digite o endereço:
+Agora você precisa checar se o o seu site está funcionando. Abra o seu navegador (Firefox, Chrome, Safari, Internet Explorer ou qualquer outro que você usa) e coloque esse endereço:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-Se você estiver com um Chromebook, sempre visite o servidor de teste acessando:
+Se você esta usando um Chromebook e o Cloud9, em vez disso clique no URL na janela "pop-up" que deve ter aparecido no canto superior direito da janela de comando onde o servidor está funcionando. A URL vai ser algo como:
 
 {% filename %}browser{% endfilename %}
 
-    https://django-girls-<your cloud9 username>.c9users.io
+    https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
 Parabéns! Você criou seu primeiro site e o executou usando um servidor web! Não é impressionante?
 
 ![Instalação funcionou!](images/install_worked.png)
 
-Enquanto o servidor estiver rodando, o prompt do terminal não estará disponível para receber novos comandos. Na realidade, o terminal permite que você escreva texto, mas não irá executar nenhum comando. Isto acontece porque o servidor bloqueia o terminal enquanto ele mesmo recebe novos comandos.
+Note que a janela de comando só pode rodar uma coisa de cada vez, e a janela de comando que você abriu anteriormente já está rodando o servidor. Enquanto o servidor web estiver executando e esperando por solicitações de entrada, o terminal vai aceitar o novo testo mas não executará novos comandos.
 
 > Nós revisamos como servidores web funcionam no capítulo **Como a Internet funciona**.
 
-Para escrever novos comandos enquanto o servidor estiver rodando, abra uma nova janela do terminal e execute o virtualenv. Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C -- botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
+Para digitar comandos adicionais enquanto o servidor está rodando, abra uma nova janela de terminal e ative seu ambiente virtual, para revisar as instruções de como abrir uma segunda janela de terminal, veja [Introdução à linha de comando](../intro_to_command_line/README.md). Para interromper o seu servidor, volte para a janela onde ele está rodando e pressione CTRL+C -- botões Control e C juntos (no Windows; tente Ctrl+Break se o primeiro não funcionar).
 
 Pronta para o próximo passo? Está na hora de criar conteúdo!

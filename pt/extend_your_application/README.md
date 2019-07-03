@@ -12,7 +12,7 @@ Já temos um modelo de `Post`, então não precisamos adicionar nada ao `models.
 
 ## Criando um link para os detalhes de um post
 
-Vamos começar adicionando um link dentro do arquivo `blog/templates/blog/post_list.html`. Por enquanto, ele deve se parecer com isto: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+Vamos começar com a adição de um link dentro do arquivo `blog/templates/blog/post_list.html`. Neste momento ele deve se parecer com: Abra-o no editor de código e, até agora, deve ficar assim:{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -23,7 +23,7 @@ Vamos começar adicionando um link dentro do arquivo `blog/templates/blog/post_l
             <div class="date">
                 {{ post.published_date }}
             </div>
-            <h1><a href="">{{ post.title }}</a></h1>
+            <h2><a href="">{{ post.title }}</a></h2>
             <p>{{ post.text|linebreaksbr }}</p>
         </div>
     {% endfor %}
@@ -54,8 +54,7 @@ Vamos criar uma URL em `urls.py` para a nossa `post_detail` *view*!
 
 Queremos que a página de detalhes do nosso primeiro post seja exibida por essa **URL**: http://127.0.0.1:8000/post/1/
 
-Vamos criar uma URL no arquivo `blog/urls.py` que aponta para uma *view* chamada `post_detail`, que vai nos mostrar o post completo. Adicione a linha `url(r'^post/(?P<int:pk>+)/$', views.post_detail, name='post_detail')
- ` ao arquivo `blog/urls.py`. O arquivo deverá ficar assim:
+Vamos criar uma URL no arquivo `blog/urls.py` que aponta para uma *view* chamada `post_detail`, que vai nos mostrar o post completo. Abra o arquivo `blog/urls.py` no editor de código e adicione a linha `path('post/<int:pk>/', views.post_detail, name='post_detail'),` para que o arquivo fique assim:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -81,7 +80,7 @@ Legal, adicionamos um novo padrão de URL para `blog/urls.py`! Vamos atualizar a
 
 ![AttributeError](images/attribute_error2.png)
 
-Você lembra qual é o próximo passo? Claro: adicionar uma view!
+Você se lembra qual é o próximo passo? Claro: adicionar uma view!
 
 ## Adicionando a view de detalhes do post
 
@@ -99,7 +98,7 @@ Mas este código tem um problema. Se não houver nenhum `Post` com a `chave prim
 
 ![erro DoesNotExist](images/does_not_exist2.png)
 
-Não queremos isso! Mas é claro que o Django tem algo para lidar com isso por nós: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro -- `Page Not Found 404` (página não encontrada).
+Não queremos isso! Mas, claro, o Django vem com algo que vai lidar com isso para nós: `get_object_or_404`. Caso não haja nenhum `Post` com o `pk`, o Django exibirá uma página muito mais agradável que aquela mensagem de erro -- `Page Not Found 404` (página não encontrada).
 
 ![Página não encontrada](images/404_2.png)
 
@@ -155,7 +154,7 @@ Ele vai ter essa cara:
                 {{ post.published_date }}
             </div>
         {% endif %}
-        <h1>{{ post.title }}</h1>
+        <h2>{{ post.title }}</h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endblock %}
@@ -163,7 +162,7 @@ Ele vai ter essa cara:
 
 Mais uma vez estamos estendendo `base.html`. No bloco `content`, queremos exibir a data de publicação (published_date) do post (se houver), título e texto. Mas ainda temos algumas coisas importantes para discutir, certo?
 
-{% raw %}`{% if ... %} ... {% endif %}` é uma tag de template que podemos usar quando queremos conferir alguma coisa. (Lembra de `if ... else ..` que vimos no capítulo **Introdução ao Python**?) Aqui queremos conferir se a `published_date` de um post não está vazia.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` é uma tag de template que podemos usar quando queremos conferir alguma coisa. (Lembra de `if ... else ...` do capítulo **Introdução ao Python**?). Neste cenário nós queremos conferir se a `published_date` de um post não está vazia.{% endraw %}
 
 Pronto, podemos atualizar nossa página e ver se aquele `Page not found` sumiu.
 
@@ -186,14 +185,14 @@ Seria bom ver se seu site ainda estará trabalhando no PythonAnywhere, né? Vamo
 
 Agora, em um [console Bash do PythonAnywhere](https://www.pythonanywhere.com/consoles/):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
+(Lembre-se de substituir `<your-pythonanywhere-domain>` com o nome do seu subdomínio PythonAnywhere, sem os colchetes angulares, ou seja, sem < e >).
 
 ## Atualizando os arquivos estáticos no servidor
 
@@ -201,15 +200,15 @@ Servidores como o PythonAnywhere tratam arquivos estáticos (como os arquivos CS
 
 Comece ativando seu virtualenv, se ele já não estiver ativo (para isso, o PythonAnywhere usa um comando chamado `workon` que é bem parecido com o comando `source myenv/bin/activate` que vosê usa no seu computador):
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ workon <your-pythonanywhere-username>.pythonanywhere.com
+    $ workon <your-pythonanywhere-domain>.pythonanywhere.com
     (ola.pythonanywhere.com)$ python manage.py collectstatic
     [...]
     
 
 O comando `manage.py collectstatic` é mais ou menos como `manage.py migrate`. Agora, fazemos algumas mudanças no nosso código e dizemos ao Django que as aplique (*apply*) à coleção de arquivos estáticos, ou ao banco de dados.
 
-De qualquer forma, estamos prontas para ir para a [aba Web](https://www.pythonanywhere.com/web_app_setup/) e clicar em **Reload** (atualizar).
+Em qualquer caso, nós agora estamos prontos para saltar para a ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (do botão menu à direita do console) e pressionar **Reload**, checando a página https://subdomain.pythonanywhere.com para ver o resultado.
 
 Deve estar pronto! Arrasou :)

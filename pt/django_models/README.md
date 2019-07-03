@@ -8,9 +8,9 @@ Existe um conceito em programação chamado `programação orientada a objetos`.
 
 Então o que é um objeto? É uma coleção de propriedades e ações. Isto pode parecer estranho, mas vamos mostrar um exemplo.
 
-Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade fosse vazia).
+Se quisermos modelar um gato, podemos criar um objeto `Gato` que possui propriedades como `cor`, `idade`, `humor` (como bom, mal ou sonolento ;)), e `dono` (que seria atribuído a um objeto de `Pessoa` – ou talvez, no caso de um gato de rua, essa propriedade seja vazia).
 
-`Gato` também realiza algumas ações: `ronronar`, `arranhar` ou `alimentar`-se (no qual podemos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades como `sabor`).
+`Gato` também realiza algumas ações: `ronronar`, `arranhar` ou `alimentar`-se (em que podemos dar ao gato alguma `ComidaDeGato`, que poderia ser um objeto separado com propriedades como `sabor`).
 
     Gato
     --------
@@ -34,7 +34,7 @@ Como vamos modelar as postagens do blog, então? Queremos construir um blog, cer
 
 Para isto, precisamos responder as questões: O que é um post de blog? Que propriedades (atributos) ele deve ter?
 
-Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título, certo? Também seria legal saber quem escreveu – então precisamos de um autor. Finalmente, queremos saber quando a postagem foi criada e publicada. Para ficar chique, vamos fazer em inglês.
+Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título, certo? Também seria legal saber quem a escreveu – então precisamos de um autor. Finalmente, queremos saber quando a postagem foi criada e publicada. Para ficar chique, vamos fazer em inglês.
 
     Post
     --------
@@ -45,7 +45,7 @@ Bem, com certeza uma postagem precisa de um texto com seu conteúdo e um título
     published_date
     
 
-Que tipo de ações podem ser feitas com uma postagem? Seria legal ter algum `método` que publique a postagem, não é mesmo?
+Que tipo de ações podem ser feitas com uma postagem? Seria legal ter um `método` que publique a postagem, não é mesmo?
 
 Então, nós precisaremos de um método para publicar (`publish`).
 
@@ -55,13 +55,13 @@ Como já sabemos o que queremos alcançar, podemos começar a modelar em Django!
 
 Sabendo o que um objeto é, criamos um modelo no Django para a postagem do blog.
 
-Um modelo no Django é um tipo especial de objeto -- ele é salvo em um `banco de dados`. Um banco de dados é uma coleção de dados. Ele é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. Este é o banco de dados padrão do Django -- e ele será o suficiente neste primeiro momento.
+Um modelo no Django é um tipo especial de objeto -- ele é salvo em um `banco de dados`. Um banco de dados é uma coleção de dados. Ele é um local em que você vai salvar dados sobre usuários, suas postagens, etc. Usaremos um banco de dados chamado SQLite para armazenar as nossas informações. Este é o banco de dados padrão do Django -- e ele será suficiente neste primeiro momento.
 
 Você pode pensar em um modelo de banco de dados como uma planilha com colunas (campos) e linhas (dados).
 
 ### Criando uma aplicação
 
-Para manter tudo arrumado, vamos criar uma aplicação separada dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar uma aplicação, precisamos executar o seguinte comando no console (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
+Para manter tudo arrumado, vamos criar uma aplicação separada dentro do nosso projeto. É muito bom ter tudo organizado desde o início. Para criar uma aplicação, precisamos executar o seguinte comando no prompt (a partir do diretório `djangogirls` onde está o arquivo `manage.py`):
 
 {% filename %}Mac OS X and Linux:{% endfilename %}
 
@@ -84,17 +84,19 @@ Você vai notar que um novo diretório `blog` foi criado e que ele contém vári
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
+    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    └── mysite
-        ├── __init__.py
-        ├── settings.py
-        ├── urls.py
-        └── wsgi.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
-Depois de criar uma aplicação, também precisamos dizer ao Django que ele deve usá-la. Fazemos isso no arquivo `mysite/settings.py`. Precisamos encontrar o `INSTALLED_APPS` e adicionar uma linha com `'blog',` logo acima do `]`. O resultado final ficará assim:
+Depois de criar uma aplicação, também precisamos dizer ao Django que ele deve usá-la. Fazemos isso no arquivo `mysite/settings.py` -- abra-o no seu editor de código. Precisamos encontrar o `INSTALLED_APPS` e adicionar uma linha com `'blog',` logo acima do `]`. O resultado final ficará assim:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -114,23 +116,22 @@ INSTALLED_APPS = [
 
 No arquivo `blog/models.py` definimos todos os objetos chamados `Modelos` -- este é um lugar em que vamos definir nossa postagem do blog.
 
-Vamos abrir `blog/models.py`, remover tudo dele e escrever o código assim:
+Vamos abrir `blog/models.py` no editor de código, apagar tudo dele e escrever o seguinte código:
 
 {% filename %}blog/models.py{% endfilename %}
 
 ```python
+from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
 
 class Post(models.Model):
-    author = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    author = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     title = models.CharField(max_length=200)
     text = models.TextField()
-    created_date = models.DateTimeField(
-            default=timezone.now)
-    published_date = models.DateTimeField(
-            blank=True, null=True)
+    created_date = models.DateTimeField(default=timezone.now)
+    published_date = models.DateTimeField(blank=True, null=True)
 
     def publish(self):
         self.published_date = timezone.now()
@@ -144,15 +145,15 @@ class Post(models.Model):
 
 Parece assustador, né? Mas não se preocupe, vamos explicar o que essas linhas significam!
 
-Todas as linhas começando com `from` ou `import` são linhas que adicionam alguns pedaços de outros arquivos. Então ao invés de copiar e colar as mesmas coisas em cada arquivo, podemos incluir algumas partes com `from... import ...`.
+Todas as linhas começando com `from` ou `import` são linhas que adicionam pedaços de outros arquivos. Então ao invés de copiar e colar as mesmas coisas em cada arquivo, podemos incluir algumas partes com `from... import ...`.
 
-`class Post(models.Model):` -- esta linha define o nosso modelo (é um `objeto`).
+`class Post(models.Model):` - esta linha define o nosso modelo (é um `objeto`).
 
 - `class` é uma palavra-chave especial que indica que estamos definindo um objeto.
 - `Post` é o nome do nosso modelo. Nós podemos dar um nome diferente (mas precisamos evitar caracteres especiais e espaços em branco). Sempre inicie o nome de uma classe com uma letra em maiúsculo.
-- `models.Model` significa que o Post é um modelo de Django, então o Django sabe ele que deve ser salvo no banco de dados.
+- `models.Model` significa que o Post é um modelo de Django, então o Django sabe que ele deve ser salvo no banco de dados.
 
-Agora definimos as propriedades que comentamos acima: `title`, `text`, `created_date`, `published_date` e `author`. Para fazer isso, é necessário definir um tipo para cada campo (É um texto? Um número? Uma data? Uma relação com outro objeto, por exemplo, um usuário?)
+Agora definiremos as propriedades comentadas acima: `title`, `text`, `created_date`, `published_date` e `author`. Para fazer isso, é necessário definir um tipo para cada campo (É um texto? Um número? Uma data? Uma relação com outro objeto, por exemplo, um usuário?)
 
 - `models.CharField` - é assim que definimos um texto com um número limitado de caracteres.
 - `models.TextField` - este campo é para textos sem um limite fixo. Parece ideal para o conteúdo de um blog, né?
@@ -171,7 +172,7 @@ Se algo ainda não está claro sobre modelos, sinta-se livre para perguntar para
 
 ### Criando tabelas para nossos modelos no banco de dados
 
-O último passo é adicionar nosso novo modelo ao banco de dados. Primeiramente, precisamos fazer com que o Django entenda que fizemos algumas alterações nos nossos modelos. (Nós acabamos de criar um modelo de Post!) Vá para o console e digite `python manage.py makemigrations blog`. Deve ficar assim:
+O último passo é adicionar nosso novo modelo ao banco de dados. Primeiramente, precisamos fazer com que o Django entenda que fizemos algumas alterações nos nossos modelos. (Acabamos de criar um modelo de Post!) Vá para o console e digite `python manage.py makemigrations blog`. Deve ficar assim:
 
 {% filename %}command-line{% endfilename %}
 
@@ -192,7 +193,6 @@ O Django preparou um arquivo de migração que precisamos aplicar ao nosso banco
     Operations to perform:
       Apply all migrations: blog
     Running migrations:
-      Rendering model states... DONE
       Applying blog.0001_initial... OK
     
 
