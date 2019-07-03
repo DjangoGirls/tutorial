@@ -1,6 +1,6 @@
-# Introduction to HTML
+# Ìfihàn sí HTML
 
-What's a template, you may ask?
+Kíni àwòṣe (template) kan, o lè béèrè?
 
 A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
 
