@@ -152,7 +152,7 @@ Yaaay! But so far, our template only ever displays exactly **the same informatio
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
-## One more thing: deploy!
+## Ó ṣì ku nnkan kan: ṣàgbékalẹ̀!
 
 It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
 
@@ -199,7 +199,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 ### Pull your new code down to PythonAnywhere, and reload your web app
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+* Ṣí [ojú-ìwé àwọn console PythonAnywhere](https://www.pythonanywhere.com/consoles/) náà kálẹ̀ kí o lọ sí **Bash console** rẹ (tàbí bẹ̀rẹ̀ tuntun kan). Lẹ́yìn náà, ṣe:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
