@@ -42,23 +42,23 @@
 
 <!--endsec-->
 
-`django-admin.py` is a script that will create the directories and files for you. You should now have a directory structure which looks like this:
+`django-admin.py` دستوری است که پوشه‌ها و فایل‌ها را برای شما می‌سازد. الان باید ساختار پوشه‌ها و فایل‌های شما شبیه به این باشد:
 
     djangogirls
-    ├───manage.py
-    ├───mysite
+    ┤───manage.py
+    ┤───mysite
     │        settings.py
     │        urls.py
     │        wsgi.py
     │        __init__.py
-    └───requirements.txt
+    ┘───requirements.txt
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **نکته**: در ساختار پوشه‌ها، شما پوشه `venv` را هم که قبلاً ساخته ایم خواهید دید.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` دستوری است که به مدیریت سایت کمک می‌کند. به کمک این دستور (و برخی چیزهای دیگر) و بدون نصب نرم افزارهای دیگر می‌توانیم یک وب سرور بر روی کامپیوتر خود راه اندازی کنیم.
 
-The `settings.py` file contains the configuration of your website.
+فایل `settings.py` حاوی تنظیمات وبسایت شما است.
 
 Remember when we talked about a mail carrier checking where to deliver a letter? `urls.py` file contains a list of patterns used by `urlresolver`.
 
