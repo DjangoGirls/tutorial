@@ -2,11 +2,11 @@
 
 Kíni àwòṣe (template) kan, o lè béèrè?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Àwòṣe kan jẹ́ fáìlì kan tí a lè tún lò láti ṣàfihàn ìròyìn ọ̀tọ̀ọ̀tọ̀ ni àgbékalẹ̀ tó báramu kan – fún àpẹẹrẹ, o lè lo àwòṣe kan láti ràn ọ́ lọ́wọ́ lórí kíkọ lẹ́tà kan nítorí bó tilẹ̀ jẹ́ pé lẹ́tà kọ̀ọ̀kan lè ní ìròyìn ọ̀tọ̀ọ̀tọ̀ àti pé wọ́n lè jẹ́ kíkọ sí èèyàn ọ̀tọ̀ọ̀tọ̀, wọ́n máa lo àgbékalẹ̀ kannáà.
 
 A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
 
-## What is HTML?
+## Kíni HTML?
 
 HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
 
