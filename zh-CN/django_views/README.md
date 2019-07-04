@@ -1,4 +1,4 @@
-# Django views – time to create!
+# Django 视野-快来创造吧！
 
 是时候去解决我们在上一章所制造的Bug了! :)
 
@@ -33,7 +33,7 @@ def post_list(request):
 
 As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+保存文件，转到 http://127.0.0.1:8000/ 然后看看我们现在得到什么了。
 
 另一个错误！读读现在发生了什么：
 
