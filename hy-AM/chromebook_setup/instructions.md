@@ -2,12 +2,12 @@ You can [skip right over this section](http://tutorial.djangogirls.org/en/instal
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-Cloud IDE is a tool that gives you a code editor and access to a computer running on the Internet where you can install, write, and run the software. For the duration of the tutorial, cloud IDE will act as your *local machine*. You'll still be running commands in a terminal interface just like your classmates on OS X, Ubuntu, or Windows, but your terminal will be connected to a computer running somewhere else that cloud IDE sets up for you. Ահա Cloud IDE- ի հրահանգները (PaizaCloud Cloud IDE, AWS Cloud9) Դուք կարող եք ընտրել ամպային IDE- ներներից մեկը եւ հետեւեք IDE ամպի հրահանգին:
+Cloud IDE- ը գործիք է, որը Ձեզ հնարավորություն է տալիս կոդերի խմբագիր եւ հասանելիություն համակարգչային համակարգ ինտերնետում, որտեղ կարող եք տեղադրել, գրել եւ գործարկել ծրագրային ապահովումը: Tutorial- ի տեւողության համար ամպային IDE- ը կգործի որպես ձեր տեղական մեքենա. Դուք դեռեւս հրամաններ կստանաք տերմինալի ինտերֆեյսում, ինչպես ձեր OS X, Ubuntu կամ Windows- ի դասընկերների, բայց ձեր տերմինալը կմիացվի այլ վայրում աշխատող համակարգչին, որ ամպային IDE ստեղծում է ձեզ համար: Ահա Cloud IDE- ի հրահանգները (PaizaCloud Cloud IDE, AWS Cloud9) Դուք կարող եք ընտրել ամպային IDE- ներներից մեկը եւ հետեւեք IDE ամպի հրահանգին:
 
 #### PaizaCloud Cloud IDE
 
 1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Գրանցվեք գրանցման համար
+2. Ստեղծել հաշիվ
 3. Սեղմեք նոր սերվերը (New Server)
 4. Սեղմեք Terminal կոճակը (պատուհանի ձախ կողմում)
 
