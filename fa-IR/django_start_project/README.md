@@ -68,9 +68,9 @@
 
 می‌خواهیم کمی تغییرات در فایل `mysite/settings.py` ایجاد کنیم. این فایل را در ویرایشگر کد، که قبل‌تر نصب کرده اید باز کنید.
 
-**نکته**: به یاد داشته باشید که فایل `settings.py`، یک فایل معمولی مانند بقیه فایل‌ها است. شما می‌توانید این فایل را به کمک ویرایشگر کد با استفاده از منو "file -> open"، باز کنید. از این طریق یک پنجره معمولی باز می‌شود که می‌توانید به کمک آن فایل `settings.py` را پیدا کنید و آن را انتخاب کنید. به جای این کار، می‌توانید در بین پوشه‌ها، پوشه djangogirls را پیدا کنید بر روی آن راست کلیک کنید. سپس نام ویرایشگر کد خود را از لیست به نمایش درآمده انتخاب کنید. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**نکته**: به یاد داشته باشید که فایل `settings.py`، یک فایل معمولی مانند بقیه فایل‌ها است. شما می‌توانید این فایل را به کمک ویرایشگر کد با استفاده از منو "file -> open"، باز کنید. از این طریق یک پنجره معمولی باز می‌شود که می‌توانید به کمک آن فایل `settings.py` را پیدا کنید و آن را انتخاب کنید. به جای این کار، می‌توانید در بین پوشه‌ها، پوشه djangogirls را پیدا کنید بر روی آن راست کلیک کنید. سپس نام ویرایشگر کد خود را از لیست به نمایش درآمده انتخاب کنید. انتخاب ویرایشگر مهم است چرا که ممکن است نرم افزارهای دیگر هم فایل را باز کنند ولی اجازه ویرایش کردن به شما ندهند.
 
-It would be nice to have the correct time on our website. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+خیلی خوب خواهد بود که زمان درست را در وبسایت خود داشته باشیم. به [لیست منطقه های زمانی ویکیپدیا](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) بروید و محدوده زمانی مناسب را برای خود انتخاب کنید (TZ) (مثلاً `Asia/Tehran`).
 
 In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
 
