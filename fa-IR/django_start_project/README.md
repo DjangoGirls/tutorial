@@ -107,15 +107,15 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **نکته**: اگر از کروم بوک استفاده می‌کنید، این خط را هم به انتهای فایل settings.py اضافه کنید: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> اگر از cloud9 استفاده می‌کنید `.amazonaws.com` را به `ALLOWED_HOSTS` اضافه کنید
 
-## Set up a database
+## راه اندازی یک پایگاه داده
 
-There's a lot of different database software that can store data for your site. We'll use the default one, `sqlite3`.
+تعداد بسیار زیادی پایگاه داده وجود دارد که می‌تواند داده های وبسایت شما را ذخیره کند. ما از پایگاه داده پیشفرض `sqlite3` استفاده می‌کنیم.
 
-This is already set up in this part of your `mysite/settings.py` file:
+این پایگاه داده از قبل در این بخش از فایل `mysite/settings.py` تعریف شده است:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
