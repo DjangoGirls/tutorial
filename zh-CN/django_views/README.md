@@ -1,8 +1,8 @@
 # Django views – time to create!
 
-是是候去解决我们在上一章所制造的Bug了! :)
+是时候去解决我们在上一章所制造的Bug了! :)
 
-*view*是存放应用逻辑的地方。 它将从你之前创建的 `模型`中获取数据，并将它传递给 `模板`。 我们将在下一章创建 tempalte 模板。 Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
+*view*是存放应用逻辑的地方。 它将从你之前创建的 `模型`中获取数据，并将它传递给 `模板`。 我们将在下一章创建 template 模板。 Views are just Python functions that are a little bit more complicated than the ones we wrote in the **Introduction to Python** chapter.
 
 视图都被置放在`views.py`文件中。我们将加入我们自己的*views*到`blog/views.py`文件。
 
