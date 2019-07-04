@@ -8,9 +8,9 @@ A Django template's format is described in a language called HTML (that's the HT
 
 ## Kíni HTML?
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML jẹ́ kóòdù kan tí aṣàwákiri ayélujára rẹ - bíi Chrome, Firefox àbí Safari - máa túmọ̀ láti ṣàfihàn ojú-ìwé ayélujára kan fún aṣàmúlò náà.
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML dúró fún "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
 ## Your first template!
 
