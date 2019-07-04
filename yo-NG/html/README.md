@@ -16,7 +16,7 @@ HTML dúró fún "HyperText Markup Language". **HyperText** túmọ̀ sí pé ó
 
 Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+A máa n tọ́jú àwọn àwòṣe sínú àkójọpọ̀ fáìlì `blog/templates/blog`. Nítorí náà, kọ́kọ́ ṣẹ̀dá àkójọpọ̀ fáìlì kan tí a n pè ní `templates` sínú àkójọpọ̀ fáìlì blog rẹ. Then create another directory called `blog` inside your templates directory:
 
     blog
     └───templates
