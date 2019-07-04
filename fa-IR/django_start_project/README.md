@@ -90,7 +90,7 @@ TIME_ZONE = 'Asia/Tehran'
 LANGUAGE_CODE = 'de-ch'
 ```
 
-علاوه بر این نیاز داریم تا آدرس فایل‌های ثابت را نیز اضافه کنیم. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+علاوه بر این نیاز داریم تا آدرس فایل‌های ثابت را نیز اضافه کنیم. (بعداً به طور کامل در این دوره آموزشی به فایل‌های ثابت و CSS خواهیم پرداخت.) به *انتهای* فایل بروید و دقیقاً زیر ورودی `STATIC_URL`، یک خط جدید با عنوان `STATIC_ROOT` اضافه کنید:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+وقتی در این فایل `DEBUG` برابر با `True`باشد و `ALLOWED_HOSTS` خالی باشد، هاست با این مقدار معتبر خواهد بود `['localhost', '127.0.0.1', '[::1]']`. این هاست در هنگام انتشار وبسایت با هاست PyhtonAnywhere هماهنگ نخواهد بود پس تنظیمات را به این شکل تغییر می‌دهیم:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
