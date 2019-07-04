@@ -7,9 +7,9 @@ Cloud IDE is a tool that gives you a code editor and access to a computer runnin
 #### PaizaCloud Cloud IDE
 
 1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
-4. Click Terminal button(on the left side of the window)
+2. Գրանցվեք գրանցման համար
+3. Սեղմեք նոր սերվերը (New Server)
+4. Սեղմեք Terminal կոճակը (պատուհանի ձախ կողմում)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
@@ -18,7 +18,7 @@ Now you should see an interface with a sidebar, buttons at the left. Click "Term
     $
     
 
-The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You can resize or maximize that window to make it a bit bigger.
+PaizaCloud Cloud IDE- ի տերմինը պատրաստ է ձեր հրահանգներին: Կարող եք կրկնել կամ մեծացնել այդ պատուհանը, որպեսզի դա մի փոքր ավելի մեծ լինի:
 
 #### AWS Cloud9
 
