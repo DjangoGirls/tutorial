@@ -128,7 +128,7 @@ DATABASES = {
 }
 ```
 
-To create a database for our blog, let's run the following in the console: `python manage.py migrate` (we need to be in the `djangogirls` directory that contains the `manage.py` file). If that goes well, you should see something like this:
+برای ساختن یک پایگاه داده برای وبسایتمان، دستور زیر را در کنسول خط فرمان اجرا می‌کنیم: `python manage.py migrate` (هنگام اجرای این دستور باید در پوشه `djangogirls` باشیم جایی که فایل `manage.py` قرار دارد). اگر همه چیز خوب پیش برود باید چیزی شبیه به این را ببینیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -153,9 +153,9 @@ To create a database for our blog, let's run the following in the console: `pyth
       Applying sessions.0001_initial... OK
     
 
-And we're done! Time to start the web server and see if our website is working!
+تمام شد! وقت آن است که وب سرور را اجرا کنیم و ببینیم آیا وبسایت ما کار می‌کند!
 
-## Starting the web server
+## فعال کردن وب سرور
 
 You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
 
