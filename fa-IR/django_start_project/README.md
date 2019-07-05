@@ -157,21 +157,21 @@ DATABASES = {
 
 ## فعال کردن وب سرور
 
-You need to be in the directory that contains the `manage.py` file (the `djangogirls` directory). In the console, we can start the web server by running `python manage.py runserver`:
+شما باید در پوشه‌ای باشید که فایل `manage.py` در آن قرار دارد. (در پوشه `djangogirls`). در کنسول خط فرمان، وب سرور را به کمک این دستور فعال می‌کنیم `python manage.py runserver`:
 
 {% filename %}خط فرمان{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver
     
 
-If you are on a Chromebook, use this command instead:
+اگر در Chromebook کار می‌کنید از این دستور استفاده کنید:
 
 {% filename %}Cloud 9{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py runserver 0.0.0.0:8080
     
 
-If you are on Windows and this fails with `UnicodeDecodeError`, use this command instead:
+اگر در ویندوز کار می‌کنید و پیغام خطا `UnicodeDecodeError` را دریافت کردید، به جای دستور بالا از این دستور استفاده کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
