@@ -48,7 +48,7 @@ Kò sí àsìṣe mọ́! Kú oríire :) Àmọ́ o, ààyè ayélujára rẹ k�
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Báwo wá ni ààyè ayélujára rẹ ṣe rí ní báyìí? Ṣàbẹ̀wò rẹ láti wádìí: http://127.0.0.1:8000/
 
 ![Figure 11.2](images/step3.png)
 
