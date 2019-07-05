@@ -185,20 +185,20 @@ DATABASES = {
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+اگر از Chromebook و Cloud9 استفاده می‌کنید، به جای وارد کردن آدرس بر روی URL ظاهر شده در سمت راست بالای صفحه، جایی که وب سرور در حال اجرا شدن است، کلیک کنید. این آدرس چیزی شبیه به این است:
 
 {% filename %}browser{% endfilename %}
 
     https://<a bunch of letters and numbers>.vfs.cloud9.us-west-2.amazonaws.com
     
 
-Congratulations! You've just created your first website and run it using a web server! Isn't that awesome?
+تبریک! شما اولین وبسایت خود را ساخته اید و با یک وب سرور آن را فعال کرده اید! فوق العاده نیست؟
 
 ![Install worked!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+توجه داشته باشید که یک کنسول خط فرمان در هر لحظه فقط یک کار را می‌تواند انجام دهد و کنسول خط فرمان که شما قبل تر باز کرده اید در حال اجرای وب سرور است. تا زمانی که وب سرور در حال اجراست و منتظر است تا درخواستی به آن برسد می‌توان چیزی تایپ کرد ولی هیچ دستور جدیدی را نمی‌توان اجرا کرد.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> نحوه عملکرد وب سرور را در بخش **اینترنت چگونه کار می‌کند** دوره کرده ایم.
 
 To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
 
