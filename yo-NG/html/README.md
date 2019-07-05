@@ -4,7 +4,7 @@ Kíni àwòṣe (template) kan, o lè béèrè?
 
 Àwòṣe kan jẹ́ fáìlì kan tí a lè tún lò láti ṣàfihàn ìròyìn ọ̀tọ̀ọ̀tọ̀ ni àgbékalẹ̀ tó báramu kan – fún àpẹẹrẹ, o lè lo àwòṣe kan láti ràn ọ́ lọ́wọ́ lórí kíkọ lẹ́tà kan nítorí bó tilẹ̀ jẹ́ pé lẹ́tà kọ̀ọ̀kan lè ní ìròyìn ọ̀tọ̀ọ̀tọ̀ àti pé wọ́n lè jẹ́ kíkọ sí èèyàn ọ̀tọ̀ọ̀tọ̀, wọ́n máa lo àgbékalẹ̀ kannáà.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+Àgbékalẹ̀ àwòṣe Django kan ni a ṣàpèjúwe ní èdè kan tí a n pè ní HTML (ìyẹn ni HTML tí a dárúkọ ní àkòrí àkọ́kọ́ náà, **Bí Íńtánẹ́ẹ̀tì ṣé n ṣiṣẹ́**).
 
 ## Kíni HTML?
 
@@ -57,7 +57,7 @@ Báwo wá ni ààyè ayélujára rẹ ṣe rí ní báyìí? Ṣàbẹ̀wò rẹ
 * Àmì tó ṣe pàtàkì jù náà, `<html>`, máa n jẹ́ ìbẹ̀rẹ̀ èyíkéyìí ojú-ìwé ayélujára àti pé `</html>` máa n jẹ́ ìparí náà. Gẹ́gẹ́ bó o ṣe ríi, gbogbo àkóónú ààyè ayélujára náà máa wà láàrín àmì ìbẹ̀rẹ̀ `<html>` àti àmì ìparí `</html>` náà
 * `<p>` jẹ́ àmì kan fún àwọn element ìpínrọ: `</p>` yíò parí ìpínrọ kọ̀ọ̀kan
 
-## Head and body
+## Orí àti ara
 
 Each HTML page is also divided into two elements: **head** and **body**.
 
