@@ -97,9 +97,9 @@ You need to follow these rules of *closing* tags, and of *nesting* elements – 
 
 ## Ṣe àwòṣe rẹ bí o ṣe fẹ́
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+O lè wá ṣeré díẹ̀ báyìí kí o gbìyànjú láti ṣe àwòṣe rẹ bí o ṣe fẹ́! Díẹ lára àwọn àmì tó wúlò fún ìyẹn nìyí:
 
-* `<h1>A heading</h1>` for your most important heading
+* `<h1>Àkọsórí kan</h1>` fún àkọsórí rẹ tó ṣe pàtàkì jù
 * `<h2>A sub-heading</h2>` for a heading at the next level
 * `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
 * `<p>A paragraph of text</p>`
