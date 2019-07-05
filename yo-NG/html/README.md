@@ -59,11 +59,11 @@ Báwo wá ni ààyè ayélujára rẹ ṣe rí ní báyìí? Ṣàbẹ̀wò rẹ
 
 ## Orí àti ara
 
-Each HTML page is also divided into two elements: **head** and **body**.
+Ojú-ìwé HTML kọ̀ọ̀kan tún gba pínpín sí àwọn element méjì: **head** àti **body**.
 
-* **head** is an element that contains information about the document that is not displayed on the screen.
+* **head** jẹ́ element kan tó kó àlàyé nípa àkọsílẹ̀ náà tí kò ní hàn lórí ojú àwòrán náà sínú.
 
-* **body** is an element that contains everything else that is displayed as part of the web page.
+* **body** jẹ́ element kan tó kó gbogbo nnkan yòókù tó fojú hàn gẹ́gẹ́ bí ara ojú-ìwé ayélujára náà sínú.
 
 We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
 
