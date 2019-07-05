@@ -174,7 +174,7 @@ Ri dájú pé o wà nínú àkójọpọ̀ fáìlì `djangogirls` náà kí a s�
 
 > **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+Ṣáájú kí a tó gbé gbogbo àwọn fáìlì náà jáde, jẹ́ ká ṣàyẹ̀wò nnkan tí `git` yíò máa gbé jáde (ó yẹ kí gbogbo àwọn fáìlì tí `git` máa gbé jáde ti fojú hàn ní àwọ̀ ewé):
 
 {% filename %}command-line{% endfilename %}
 
@@ -190,7 +190,7 @@ We're almost there, now it's time to tell it to save this change in its history.
 
 > **Àkíyèsí** Ri dájú pé o lo àwọn àmì àyọlò méjì yíká ìròyìn commit náà.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+Tá a bá ti ṣe ìyẹn, a máa gbé (ti) àwọn ìyípadà wa jáde sí GitHub:
 
 {% filename %}command-line{% endfilename %}
 
