@@ -103,10 +103,10 @@ O lè wá ṣeré díẹ̀ báyìí kí o gbìyànjú láti ṣe àwòṣe rẹ 
 * `<h2>Ìsọ̀rí orí ọ̀rọ̀ kan</h2>` fún àkọsórí kan ní ìpele tó kàn
 * `<h3>Ìsọ̀rí lábẹ́ ìsọ̀rí orí ọ̀rọ̀ kan</h3>` …àti bẹ́ẹ̀ bẹ́ẹ̀ lọ, títí dé `<h6>`
 * `<p>Ìpínrọ̀ ọ̀rọ̀ kan</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
-* `<a href="https://djangogirls.org">link</a>` creates a link
+* `<em>ọ̀rọ̀</em>` yíò ṣàgbéyọ ọ̀rọ̀ rẹ pẹ̀lú lẹ́tà tó dagun
+* `<strong>ọ̀rọ̀</strong>` yíò ṣàgbéyọ ọ̀rọ̀ rẹ pẹ̀lú lẹ́tà tó nípọn
+* `<br>` yíò lọ sí ìlà mìíràn (o kò lè fi nnkan kan sínú br àti pé kò sí àmì ìparí)
+* `<a href="https://djangogirls.org">atọ́ka</a>` yíò ṣẹ̀dá atọ́ka kan
 * `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
 * `<div></div>` defines a section of the page
 
