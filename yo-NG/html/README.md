@@ -172,7 +172,7 @@ Ri dájú pé o wà nínú àkójọpọ̀ fáìlì `djangogirls` náà kí a s�
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Tún rántí (láti àkòrí 3) pé `.` túmọ̀ sí àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́ náà.
+> **Àkíyèsí** `--all` túmọ̀ sí pé `git` yíò tún mọ̀ tí o bá ní àwọn fáìlì tí o ti yọ kúrò (ní ìpìlẹ̀, yóò dá àwọn fáìlì tuntun tàbí àwọn tí o ṣàtúnṣe mọ̀ nìkan). Tún rántí (láti àkòrí 3) pé `.` túmọ̀ sí àkójọpọ̀ fáìlì lọ́wọ́lọ́wọ́ náà.
 
 Ṣáájú kí a tó gbé gbogbo àwọn fáìlì náà jáde, jẹ́ ká ṣàyẹ̀wò nnkan tí `git` yíò máa gbé jáde (ó yẹ kí gbogbo àwọn fáìlì tí `git` máa gbé jáde ti fojú hàn ní àwọ̀ ewé):
 
