@@ -165,7 +165,7 @@ First off, let's see what files have changed since we last deployed (run these c
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Ri dájú pé o wà nínú àkójọpọ̀ fáìlì `djangogirls` náà kí a sì sọ fún `git` láti ṣàfikún gbogbo àwọn ìyípadà tó wà nínú àkójọpọ̀ fáìlì yìí:
 
 {% filename %}command-line{% endfilename %}
 
