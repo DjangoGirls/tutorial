@@ -52,10 +52,10 @@ Báwo wá ni ààyè ayélujára rẹ ṣe rí ní báyìí? Ṣàbẹ̀wò rẹ
 
 ![Figure 11.2](images/step3.png)
 
-It worked! Nice work there :)
+Ó ṣiṣẹ́! Iṣẹ́ tó dáa lo ṣe :)
 
 * The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* `<p>` jẹ́ àmì kan fún àwọn element ìpínrọ: `</p>` yíò parí ìpínrọ kọ̀ọ̀kan
 
 ## Head and body
 
