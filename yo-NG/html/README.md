@@ -54,7 +54,7 @@ Báwo wá ni ààyè ayélujára rẹ ṣe rí ní báyìí? Ṣàbẹ̀wò rẹ
 
 Ó ṣiṣẹ́! Iṣẹ́ tó dáa lo ṣe :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
+* Àmì tó ṣe pàtàkì jù náà, `<html>`, máa n jẹ́ ìbẹ̀rẹ̀ èyíkéyìí ojú-ìwé ayélujára àti pé `</html>` máa n jẹ́ ìparí náà. Gẹ́gẹ́ bó o ṣe ríi, gbogbo àkóónú ààyè ayélujára náà máa wà láàrín àmì ìbẹ̀rẹ̀ `<html>` àti àmì ìparí `</html>` náà
 * `<p>` jẹ́ àmì kan fún àwọn element ìpínrọ: `</p>` yíò parí ìpínrọ kọ̀ọ̀kan
 
 ## Head and body
