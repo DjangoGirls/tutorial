@@ -10,7 +10,7 @@ A Django template's format is described in a language called HTML (that's the HT
 
 HTML jẹ́ kóòdù kan tí aṣàwákiri ayélujára rẹ - bíi Chrome, Firefox àbí Safari - máa túmọ̀ láti ṣàfihàn ojú-ìwé ayélujára kan fún aṣàmúlò náà.
 
-HTML dúró fún "HyperText Markup Language". **HyperText** túmọ̀ sí pé ó jẹ́ irú ọ̀rọ̀ kan tó n ṣàtìlẹ́yìn fún àwọn ọ̀rọ̀-atọ̀ka láàrín àwọn ojú-ìwé. **Markup** túmọ̀ sí pé a ti mú àkọsílẹ kan tí a sì ṣàmì síi pẹ̀lú kóòdù láti sọ fún nnkan kan (ní irú ìṣẹ̀lẹ̀ yìí, aṣàwákiri kan) bí ó ṣe lè túmọ̀ ojú-ìwé náà. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML dúró fún "HyperText Markup Language". **HyperText** túmọ̀ sí pé ó jẹ́ irú ọ̀rọ̀ kan tó n ṣàtìlẹ́yìn fún àwọn ọ̀rọ̀-atọ̀ka láàrín àwọn ojú-ìwé. **Markup** túmọ̀ sí pé a ti mú àkọsílẹ kan tí a sì ṣàmì síi pẹ̀lú kóòdù láti sọ fún nnkan kan (ní irú ìṣẹ̀lẹ̀ yìí, aṣàwákiri kan) bí ó ṣe lè túmọ̀ ojú-ìwé náà. Kóòdù HTML gba kíkọ́ pẹ̀lú **àwọn àmì**, ọ̀kọ̀ọ̀kan n bẹ̀rẹ̀ pẹ̀lú `<` tó sì n parí pẹ̀lú `>`. Àwọn àmì wọ̀nyí dúró fún **àwọn element** ìṣàmìsí.
 
 ## Àwòṣe àkọ́kọ́ rẹ!
 
