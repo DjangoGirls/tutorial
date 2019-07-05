@@ -100,9 +100,9 @@ You need to follow these rules of *closing* tags, and of *nesting* elements – 
 O lè wá ṣeré díẹ̀ báyìí kí o gbìyànjú láti ṣe àwòṣe rẹ bí o ṣe fẹ́! Díẹ lára àwọn àmì tó wúlò fún ìyẹn nìyí:
 
 * `<h1>Àkọsórí kan</h1>` fún àkọsórí rẹ tó ṣe pàtàkì jù
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
-* `<p>A paragraph of text</p>`
+* `<h2>Ìsọ̀rí orí ọ̀rọ̀ kan</h2>` fún àkọsórí kan ní ìpele tó kàn
+* `<h3>Ìsọ̀rí lábẹ́ ìsọ̀rí orí ọ̀rọ̀ kan</h3>` …àti bẹ́ẹ̀ bẹ́ẹ̀ lọ, títí dé `<h6>`
+* `<p>Ìpínrọ̀ ọ̀rọ̀ kan</p>`
 * `<em>text</em>` emphasizes your text
 * `<strong>text</strong>` strongly emphasizes your text
 * `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
