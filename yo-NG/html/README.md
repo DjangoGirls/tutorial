@@ -197,7 +197,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
     $ git push
     
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+### Fa kóòdù tuntun rẹ sí PythonAnywhere, kí o sì ṣe ìmúdójúìwọ̀n ètò ayélujára rẹ
 
 * Ṣí [ojú-ìwé àwọn console PythonAnywhere](https://www.pythonanywhere.com/consoles/) náà kálẹ̀ kí o lọ sí **Bash console** rẹ (tàbí bẹ̀rẹ̀ tuntun kan). Lẹ́yìn náà, ṣe:
 
@@ -210,7 +210,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 O máa nílò láti rọ́pò `<your-pythonanywhere-domain>` pẹ̀lú orúkọ subdomain PythonAnywhere rẹ gan-an, láìsí àwọn àkámọ́ onígun náà. Orúkọ subdomain rẹ máa n sábà jẹ́ orúkọ aṣàmúlò PythonAnywhere rẹ, ṣùgbọ́n nígbà mìíràn ó lè yàtọ̀ díè (irú bíi tí orúkọ aṣàmúlò rẹ bá ní àwọn lẹ́tà ńlá). Nítorí náà, tí àṣẹ yìí kò bá ṣiṣẹ́, lo àṣẹ `ls` (ṣàkọsílẹ̀ àwọn fáìlì) náà láti wá orúkọ subdomain/fódà rẹ gan-an, lẹ́yìn náà `cd` lọ síbẹ̀.
 
-Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+Ní báyìí, wo bí kóòdù rẹ ṣe n gba gbígbà. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
 * Ní ìparí, lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà kí o sì tẹ **Reload** lórí ètò ayélujára rẹ.
 
