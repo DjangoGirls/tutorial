@@ -181,7 +181,7 @@ Ri dájú pé o wà nínú àkójọpọ̀ fáìlì `djangogirls` náà kí a s�
     $ git status
     
 
-A ti fẹ́rẹ̀ẹ́ débẹ̀, àkókò ti tó báyìí láti sọ fún-un pé kí ó tọ́jú ìyípadà yìí sínú ìtàn rẹ̀. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+A ti fẹ́rẹ̀ẹ́ débẹ̀, àkókò ti tó báyìí láti sọ fún-un pé kí ó tọ́jú ìyípadà yìí sínú ìtàn rẹ̀. A máa fún-un ní "ìròyìn commit" kan níbi tí a ti máa ṣàpèjúwe ohun tí a ti yípadà. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
 
 {% filename %}command-line{% endfilename %}
 
