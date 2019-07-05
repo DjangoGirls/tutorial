@@ -33,7 +33,7 @@ Wo bí ààyè ayélujára rẹ ṣe rí ní báyìí: http://127.0.0.1:8000/
 
 ![Figure 11.1](images/step1.png)
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+Kò sí àsìṣe mọ́! Kú oríire :) Àmọ́ o, ààyè ayélujára rẹ kò fi bẹ́ẹ̀ ṣàtẹ̀jáde nnkan kan yàtọ̀ sí ojú-ìwé òfìfo kan, nítorí pé àwòṣe rẹ wà ní òfìfo pẹ̀lú. A nílò láti ṣàtúnṣe ìyẹn.
 
 Open the new file in the code editor, and add the following:
 
