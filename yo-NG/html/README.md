@@ -14,7 +14,7 @@ HTML dúró fún "HyperText Markup Language". **HyperText** túmọ̀ sí pé ó
 
 ## Your first template!
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+Ṣíṣẹ̀dá àwòṣe kan túmọ̀ sí ṣíṣẹ̀dá fáìlì àwòṣe kan. Gbogbo nnkan ni fáìlì kan, àbí bẹ́ẹ̀ kọ? Ó ṣeéṣe kí o ti ṣàkíyèsí èyí tẹ́lẹ̀.
 
 A máa n tọ́jú àwọn àwòṣe sínú àkójọpọ̀ fáìlì `blog/templates/blog`. Nítorí náà, kọ́kọ́ ṣẹ̀dá àkójọpọ̀ fáìlì kan tí a n pè ní `templates` sínú àkójọpọ̀ fáìlì blog rẹ. Lẹ́yìn náà, ṣẹ̀dá àkójọpọ̀ fáìlì mìíràn tí a n pè ní `blog` sínú àkójọpọ̀ fáìlì àwọn àwòṣe rẹ:
 
