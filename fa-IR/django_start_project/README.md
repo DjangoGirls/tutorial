@@ -178,7 +178,7 @@ DATABASES = {
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+الان لازم است تا امتحان کنید که وبسایت کار می‌کند یا نه. مرورگر خود را (فایرفاکس، کروم، سافاری، اینترنت اکسپلورر یا هر چیز دیگر) باز کنید و آدرس زیر را وارد کنید:
 
 {% filename %}browser{% endfilename %}
 
