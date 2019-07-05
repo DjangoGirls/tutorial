@@ -200,6 +200,6 @@ DATABASES = {
 
 > نحوه عملکرد وب سرور را در بخش **اینترنت چگونه کار می‌کند** دوره کرده ایم.
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+برای اینکه در زمان فعال بودن وب سرور، دستورات بیشتری را در کنسول خط فرمان تایپ کنید باید یک کنسول جدید باز کنیدو محیط مجازی خود را فعال کنید. برای آنکه روش باز کردن یک کنسول جدید را مرور کنید می‌توانید به بخش [آشنایی به خط فرمان](../intro_to_command_line/README.md) نگاهی بیندازید. برای قطع فعالیت وب سرور، به همان کنسولی بروید که وب سرور در آن فعال است و کلید CTRL و C را با هم بزنید (در ویندوز ممکن است لازم باشد کلید CTRL را با کلید Break بزنید).
 
-Ready for the next step? It's time to create some content!
+برای قدم بعدی آماده هستید؟ حالا وقت آن است که کمی محتوا بسازیم!
