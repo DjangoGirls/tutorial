@@ -35,7 +35,7 @@ Wo bí ààyè ayélujára rẹ ṣe rí ní báyìí: http://127.0.0.1:8000/
 
 Kò sí àsìṣe mọ́! Kú oríire :) Àmọ́ o, ààyè ayélujára rẹ kò fi bẹ́ẹ̀ ṣàtẹ̀jáde nnkan kan yàtọ̀ sí ojú-ìwé òfìfo kan, nítorí pé àwòṣe rẹ wà ní òfìfo pẹ̀lú. A nílò láti ṣàtúnṣe ìyẹn.
 
-Open the new file in the code editor, and add the following:
+Ṣí fáìlì tuntun náà nínú olóòtú kóòdù náà, kí o sì ṣàfikún èyí tó tẹ̀le yìí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
