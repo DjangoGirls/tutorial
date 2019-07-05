@@ -95,7 +95,7 @@ It's like putting things into boxes. You have one big box, `<html></html>`; insi
 
 You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
-## Customize your template
+## Ṣe àwòṣe rẹ bí o ṣe fẹ́
 
 You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
@@ -210,7 +210,7 @@ Once we've done that, we upload (push) our changes up to GitHub:
 
 O máa nílò láti rọ́pò `<your-pythonanywhere-domain>` pẹ̀lú orúkọ subdomain PythonAnywhere rẹ gan-an, láìsí àwọn àkámọ́ onígun náà. Orúkọ subdomain rẹ máa n sábà jẹ́ orúkọ aṣàmúlò PythonAnywhere rẹ, ṣùgbọ́n nígbà mìíràn ó lè yàtọ̀ díè (irú bíi tí orúkọ aṣàmúlò rẹ bá ní àwọn lẹ́tà ńlá). Nítorí náà, tí àṣẹ yìí kò bá ṣiṣẹ́, lo àṣẹ `ls` (ṣàkọsílẹ̀ àwọn fáìlì) náà láti wá orúkọ subdomain/fódà rẹ gan-an, lẹ́yìn náà `cd` lọ síbẹ̀.
 
-Ní báyìí, wo bí kóòdù rẹ ṣe n gba gbígbà. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+Ní báyìí, wo bí kóòdù rẹ ṣe n gba gbígbà. Tí o bá fẹ́ ṣàyẹ̀wò bóyá ó ti dé, o lè lọ sí **ojú-ìwé "Àwọn fáìlì"** náà kí o sì wo kóòdù rẹ lórí PythonAnywhere (o lè dé àwọn ojú-ìwé PythonAnywhere mìíràn láti bọ́tìnnì àkójọ àṣàyàn lórí ojú-ìwé console náà).
 
 * Ní ìparí, lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà kí o sì tẹ **Reload** lórí ètò ayélujára rẹ.
 
