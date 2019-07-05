@@ -188,7 +188,7 @@ We're almost there, now it's time to tell it to save this change in its history.
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **Àkíyèsí** Ri dájú pé o lo àwọn àmì àyọlò méjì yíká ìròyìn commit náà.
 
 Once we've done that, we upload (push) our changes up to GitHub:
 
