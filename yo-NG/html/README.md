@@ -65,9 +65,9 @@ Ojú-ìwé HTML kọ̀ọ̀kan tún gba pínpín sí àwọn element méjì: **h
 
 * **body** jẹ́ element kan tó kó gbogbo nnkan yòókù tó fojú hàn gẹ́gẹ́ bí ara ojú-ìwé ayélujára náà sínú.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+A máa n lo `<head>` láti sọ fún aṣàwákiri náà nípa ìṣètò ojú-ìwé náà, àti `<body>` láti sọ ohun tó ma wà lórí ojú-ìwé náà gan-an.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+Fún àpẹẹrẹ, o lè fi element àkọlé ojú-ìwé ayélujára kan sínú `<head>` náà, báyìí:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -91,7 +91,7 @@ Notice how the browser has understood that "Ola's blog" is the title of your pag
 
 Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+Ó dàbí fífi àwọn nǹkan sínú àwọn àpótí. O ní àpótí nlá kan, `<html></html>`; nínú rẹ̀ ni `<body></body>`wà, àti pé ìyẹn tún kó àwọn àpótí kékeré sínú: `<p></p>`.
 
 You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
 
