@@ -12,7 +12,7 @@ HTML jẹ́ kóòdù kan tí aṣàwákiri ayélujára rẹ - bíi Chrome, Firef
 
 HTML dúró fún "HyperText Markup Language". **HyperText** túmọ̀ sí pé ó jẹ́ irú ọ̀rọ̀ kan tó n ṣàtìlẹ́yìn fún àwọn ọ̀rọ̀-atọ̀ka láàrín àwọn ojú-ìwé. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
-## Your first template!
+## Àwòṣe àkọ́kọ́ rẹ!
 
 Ṣíṣẹ̀dá àwòṣe kan túmọ̀ sí ṣíṣẹ̀dá fáìlì àwòṣe kan. Gbogbo nnkan ni fáìlì kan, àbí bẹ́ẹ̀ kọ? Ó ṣeéṣe kí o ti ṣàkíyèsí èyí tẹ́lẹ̀.
 
