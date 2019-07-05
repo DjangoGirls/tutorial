@@ -83,7 +83,7 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Save the file and refresh your page.
+Tọ́jú fáìlì náà kí o sì ṣe ìmúdójúìwọ̀n ojú-ìwé rẹ.
 
 ![Figure 11.3](images/step4.png)
 
@@ -107,10 +107,10 @@ O lè wá ṣeré díẹ̀ báyìí kí o gbìyànjú láti ṣe àwòṣe rẹ 
 * `<strong>ọ̀rọ̀</strong>` yíò ṣàgbéyọ ọ̀rọ̀ rẹ pẹ̀lú lẹ́tà tó nípọn
 * `<br>` yíò lọ sí ìlà mìíràn (o kò lè fi nnkan kan sínú br àti pé kò sí àmì ìparí)
 * `<a href="https://djangogirls.org">atọ́ka</a>` yíò ṣẹ̀dá atọ́ka kan
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
+* `<ul><li>nǹkan àkọ́kọ́</li><li>nǹkan èkejì</li></ul>` yíò ṣe àkójọ kan, gẹ́gẹ́ bí eléyìí!
+* `<div></div>` yíò ṣàlàyé abala kan ti ojú-ìwé náà
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Àpẹẹrẹ àwòṣe kíkún kan nìyí, ṣàdàkọ rẹ̀ sínú `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
