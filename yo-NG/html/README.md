@@ -27,9 +27,9 @@ A máa n tọ́jú àwọn àwòṣe sínú àkójọpọ̀ fáìlì `blog/templ
 
 And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
-See how your website looks now: http://127.0.0.1:8000/
+Wo bí ààyè ayélujára rẹ ṣe rí ní báyìí: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Tí o bá ṣì ní àṣìṣe kan `TemplateDoesNotExist`, gbìyànjú láti tún server rẹ bẹ̀rẹ̀. Lọ sí ìlà ìpàṣẹ náà, dá server náà dúró nípasẹ̀ títẹ Ctrl+C (àwọn bọ́tìnnì Control àti C papọ̀) kí o sì bẹ̀rẹ̀ rẹ̀ padà nípasẹ̀ lílo àṣẹ `python manage.py runserver` kan.
 
 ![Figure 11.1](images/step1.png)
 
