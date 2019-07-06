@@ -26,7 +26,7 @@
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+Если у тебя Mac или Linux, ты, скорее всего, увидишь знак `$` в конце строки:
 
 {% filename %}command-line{% endfilename %}
 
@@ -48,7 +48,7 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Перед каждой командой будет стоять знак `$` или `>` и пробел. Но тебе не нужно их печатать! Компьютер сделает это за тебя. :)
 
 > Небольшое примечание: перед курсором командной строки может быть написано что-то вроде `C:\Users\ola>` или `Olas-MacBook-Air:~ola$`. Это абсолютно нормально.
 
