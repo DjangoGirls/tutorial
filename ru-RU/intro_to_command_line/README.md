@@ -54,11 +54,11 @@ Take a look at the Linux section just above now -- you'll see something more lik
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Не обращай внимания на левую часть и просто печатай команду — она начинается после символа приглашения.
 
 ## Твоя первая команда (УРА!)
 
-Let's start by typing this command:
+Давай введём следующую команду:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -78,7 +78,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+И затем нажми `Enter`. Вот что получилось:
 
 {% filename %}command-line{% endfilename %}
 
@@ -86,17 +86,17 @@ And then hit `enter`. This is our result:
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Как видишь, компьютер только что вывел на экран твоё имя пользователя. Классно, а? :)
 
 > Постарайся набирать каждую команду вручную, а не копировать и вставлять. Так ты больше запомнишь!
 
 ## Основы
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+В каждой операционной системе набор команд для командной строки немного отличается, поэтому не забывай следовать инструкциям для своей операционной системы. Давай попробуем, готова?
 
 ### Текущий каталог
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Было бы неплохо знать, где мы находимся сейчас, верно? Давай посмотрим. Набери эту команду и нажми `Enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
