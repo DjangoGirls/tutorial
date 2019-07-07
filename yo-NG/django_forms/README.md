@@ -187,7 +187,7 @@ def post_new(request):
 
 Nígbà tí a bá fi fọ́ọ̀mù náà ṣọwó, a tún padà wá sí view kannáà, ṣùgbọ́n ní àkókò yìí a ní àwọn dátà díẹ̀ síi nínú `request`, pàtàkì jù nínú `request.POST` (orúkọ sísọ náà kò ní nnkan kan láti ṣe pẹ̀lú "àròkọ" blog kan; ó ní í ṣe pẹ̀lú pé a n fi dátà ránṣẹ́). Rántí nínú fáìlì HTML náà, bí àlàyé `<form>` wa ṣe ní variable `method="POST"` náà? Gbogbo àwọn ààyè láti fọ́ọ̀mù náà ti wà nínú `request.POST`. Kò yẹ kí o ṣàtúnṣe orúkọ `POST` sí ohunkóhun mìíràn (ohun kan ṣoṣo mìíràn tó fẹsẹ̀múlẹ̀ fún `method` ni `GET`, ṣùgbọ́n a kò ní àkókò láti sàlàyé ìyàtọ̀ tó wà níbẹ̀).
 
-Nítorí náà, nínú *view* wa, a ní ìṣòro méjì ọ̀tọ̀ọ̀tọ̀ láti yanjú: àkọ́kọ́, nígbà tí a bá wọ ojú-ìwé náà fún ìgbà àkọ́kọ́ tí a sì fẹ́ fọ́ọ̀mù òfìfo kan, àti èkejì, nígbà tí a bá padà sí *view* náà pẹ̀lú gbogbo dátà fọ́ọ̀mù tí a ṣẹ̀ṣẹ̀ tẹ̀. So we need to add a condition (we will use `if` for that):
+Nítorí náà, nínú *view* wa, a ní ìṣòro méjì ọ̀tọ̀ọ̀tọ̀ láti yanjú: àkọ́kọ́, nígbà tí a bá wọ ojú-ìwé náà fún ìgbà àkọ́kọ́ tí a sì fẹ́ fọ́ọ̀mù òfìfo kan, àti èkejì, nígbà tí a bá padà sí *view* náà pẹ̀lú gbogbo dátà fọ́ọ̀mù tí a ṣẹ̀ṣẹ̀ tẹ̀. Nítorí náà, a nílò láti ṣàfikún ipò kan (a ó lo `if` fún ìyẹn):
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-It's time to fill in the dots `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Àkókò ti tó láti rọ́pò àwọn àmì tó-ín náà `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
 
 {% filename %}blog/views.py{% endfilename %}
 
