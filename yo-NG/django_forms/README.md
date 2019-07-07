@@ -52,7 +52,7 @@ Nítorí náà, a ó ṣẹ̀dá atọ́ka sí ojú-ìwé náà kan, URL kan, vi
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-Note that we want to call our new view `post_new`. The class `"glyphicon glyphicon-plus"` is provided by the bootstrap theme we are using, and will display a plus sign for us.
+Ṣàkíyèsí pé a fẹ́ pe view tuntun wa ní `post_new`. Kíláàsì `"glyphicon glyphicon-plus"` wà ní ìpèsè nípasẹ̀ theme bootstrap tí a n lò náà, àti pé yíò ṣàfihàn àmì ìròpọ̀ (+) kan fún wa.
 
 After adding the line, your HTML file should now look like this:
 
