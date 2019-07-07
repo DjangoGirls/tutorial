@@ -222,7 +222,7 @@ if form.is_valid():
 
 Basically, we have two things here: we save the form with `form.save` and we add an author (since there was no `author` field in the `PostForm` and this field is required). `commit=False` means that we don't want to save the `Post` model yet – we want to add the author first. Most of the time you will use `form.save()` without `commit=False`, but in this case, we need to supply it. `post.save()` will preserve changes (adding the author) and a new blog post is created!
 
-Finally, it would be awesome if we could immediately go to the `post_detail` page for our newly created blog post, right? To do that we need one more import:
+Ní ìparí, yóò dára tí a bá lè lọ tààrà sí ojú-ìwé `post_detail` náà fún àròkọ blog wa tí a ṣẹ̀ṣẹ̀ ṣẹ̀dá, àbí bẹ́ẹ̀ kọ? Láti ṣe ìyẹn, a nílò àgbéwọlé kan si:
 
 {% filename %}blog/views.py{% endfilename %}
 
