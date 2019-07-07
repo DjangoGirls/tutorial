@@ -198,7 +198,7 @@ else:
     form = PostForm()
 ```
 
-Àkókò ti tó láti rọ́pò àwọn àmì tó-ín náà `[...]`. If `method` is `POST` then we want to construct the `PostForm` with data from the form, right? We will do that as follows:
+Àkókò ti tó láti rọ́pò àwọn àmì tó-ín náà `[...]`. Tí `method` bá jẹ́ `POST` á jẹ́ pé a fẹ́ ṣàgbékalẹ̀ `PostForm` náà pẹ̀lú dátà láti fọ́ọ̀mù náà, àbí bẹ́ẹ̀ kọ? We will do that as follows:
 
 {% filename %}blog/views.py{% endfilename %}
 
