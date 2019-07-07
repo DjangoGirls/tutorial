@@ -238,7 +238,7 @@ Add it at the very beginning of your file. And now we can say, "go to the `post_
 return redirect('post_detail', pk=post.pk)
 ```
 
-`post_detail` jẹ́ orúkọ view tí a fẹ́ lọ náà. Remember that this *view* requires a `pk` variable? To pass it to the views, we use `pk=post.pk`, where `post` is the newly created blog post!
+`post_detail` jẹ́ orúkọ view tí a fẹ́ lọ náà. Rántí pé *view* yìí nílò variable `pk` kan? Láti darí rẹ̀ sí àwọn view náà, a lo `pk=post.pk`, níbi tí `post` jẹ́ àròkọ blog tí a ṣẹ̀ṣẹ̀ ṣẹ̀dá náà!
 
 OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
 
