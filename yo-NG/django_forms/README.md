@@ -220,7 +220,7 @@ if form.is_valid():
     post.save()
 ```
 
-Ní pàtàkì, a ní àwọn nnkan méjì níbí: a tọ́jú fọ́ọ̀mù náà pẹ̀lú `form.save` àti pé a ṣàfikún olùdásílẹ̀ kan (nígbà tó jẹ́ pé kò sí ààyè `author` nínú `PostForm` náà, tí a sì nílò ààyè yìí). `commit=False` túmọ̀ sí pé a kò tíì fẹ́ tọ́jú àwòṣe `Post` náà – a fẹ́ kọ́kọ́ ṣàfikún olùdásílẹ̀ náà. Lọ́pọ̀ ìgbà, o máa lo `form.save()` láìsí `commit=False`, ṣùgbọ́n ní irú ìṣẹ̀lẹ̀ yìí, a nílò láti pèsè rẹ̀. `post.save()` will preserve changes (adding the author) and a new blog post is created!
+Ní pàtàkì, a ní àwọn nnkan méjì níbí: a tọ́jú fọ́ọ̀mù náà pẹ̀lú `form.save` àti pé a ṣàfikún olùdásílẹ̀ kan (nígbà tó jẹ́ pé kò sí ààyè `author` nínú `PostForm` náà, tí a sì nílò ààyè yìí). `commit=False` túmọ̀ sí pé a kò tíì fẹ́ tọ́jú àwòṣe `Post` náà – a fẹ́ kọ́kọ́ ṣàfikún olùdásílẹ̀ náà. Lọ́pọ̀ ìgbà, o máa lo `form.save()` láìsí `commit=False`, ṣùgbọ́n ní irú ìṣẹ̀lẹ̀ yìí, a nílò láti pèsè rẹ̀. `post.save()` yíò tọ́jú àwọn ìyípadà (ṣíṣe àfikún olùdásílẹ̀ náà) àti pé a ti ṣẹ̀dá àròkọ blog tuntun kan!
 
 Ní ìparí, yóò dára tí a bá lè lọ tààrà sí ojú-ìwé `post_detail` náà fún àròkọ blog wa tí a ṣẹ̀ṣẹ̀ ṣẹ̀dá, àbí bẹ́ẹ̀ kọ? Láti ṣe ìyẹn, a nílò àgbéwọlé kan si:
 
