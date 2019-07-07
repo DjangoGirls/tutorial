@@ -208,7 +208,7 @@ form = PostForm(request.POST)
 
 Ohun tó kàn ni láti ṣàyẹ̀wò bóyá fọ́ọ̀mù náà wà bó ṣe tọ́ (a ti ṣètò gbogbo àwọn ààyè tí a nílò àti pé a kò fi ohun tí kò tọ́ ṣọwọ́). A máa ṣe ìyẹn pẹ̀lú `form.is_valid()`.
 
-We check if the form is valid and if so, we can save it!
+A máa ṣàyẹ̀wò bóyá fọ́ọ̀mù náà fẹsẹ̀múlẹ̀ àti pé tó bá rí bẹ́ẹ̀, a lè tọ́jú rẹ̀!
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -269,9 +269,9 @@ O lè ti ṣàkíyèsí pé a n ṣètò ọjọ́ ìtẹ̀jáde ṣáájú tít
 
 ![Àṣìṣe wíwọlé](images/post_create_error.png)
 
-## Form validation
+## Fífìdí fọ́ọ̀mù múlẹ̀
 
-Now, we will show you how cool Django forms are. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Ní báyìí, a ó fi hàn ọ́ bí àwọn fọ́ọ̀mù Django ṣe dára tó. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
