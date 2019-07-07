@@ -40,11 +40,11 @@ Ní ìparí, a lè sọ (àwọn) ààyè tó yẹ kó wà nínú fọ́ọ̀mù
 
 Òhun nìyẹn! Gbogbo ohun tí a nílò láti ṣe báyìí ni láti lo fọ́ọ̀mù náà nínú *view* kan kí a sì ṣàfihàn rẹ̀ nínú àwòṣe kan.
 
-So once again we will create a link to the page, a URL, a view and a template.
+Nítorí náà, a ó ṣẹ̀dá atọ́ka sí ojú-ìwé náà kan, URL kan, view kan àti àwòṣe kan lẹ́ẹ̀kan síi.
 
-## Link to a page with the form
+## Atọ́ka sí ojú-ìwé kan pẹ̀lú fọ́ọ̀mù náà
 
-It's time to open `blog/templates/blog/base.html` in the code editor. We will add a link in `div` named `page-header`:
+Àkókò ti tó láti ṣí `blog/templates/blog/base.html` nínú olóòtú kóòdù náà. A ó ṣàfikún atọ́ka kan sínú `div` tó ń jẹ́ `page-header`:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
