@@ -38,7 +38,7 @@ Lẹ́yìn náà, a ní `class Meta`, níbi tí a ti máa sọ àwòṣe tó y�
 
 Ní ìparí, a lè sọ (àwọn) ààyè tó yẹ kó wà nínú fọ́ọ̀mù wa. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
 
-And that's it! All we need to do now is use the form in a *view* and display it in a template.
+Òhun nìyẹn! Gbogbo ohun tí a nílò láti ṣe báyìí ni láti lo fọ́ọ̀mù náà nínú *view* kan kí a sì ṣàfihàn rẹ̀ nínú àwòṣe kan.
 
 So once again we will create a link to the page, a URL, a view and a template.
 
