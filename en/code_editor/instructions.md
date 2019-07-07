@@ -2,6 +2,14 @@ There are a lot of different editors and it largely boils down to personal prefe
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
+
+## Visual Studio Code (VSCode)
+
+Visual Studio Code is one of the most popular editor created by Microsoft. It's free and open source.
+Available for Windows, OS X and Linux.
+
+[Download it here](https://code.visualstudio.com/)
+
 ## Gedit
 
 Gedit is an open-source, free editor, available for all operating systems.
