@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-وقتی در این فایل `DEBUG` برابر با `True`باشد و `ALLOWED_HOSTS` خالی باشد، مقادیر هاست `['localhost', '127.0.0.1', '[::1]']` خواهد بود. این هاست در هنگام انتشار وبسایت با هاست PyhtonAnywhere هماهنگ نخواهد بود پس تنظیمات را به این شکل تغییر می‌دهیم:
+وقتی در این فایل `DEBUG` برابر با `True`باشد و `ALLOWED_HOSTS` خالی باشد، مقادیر هاست `['localhost', '127.0.0.1', '[::1]']` خواهد بود. این هاست در هنگام انتشار وبسایت روی اینترنت، با هاست PyhtonAnywhere هماهنگ نخواهد بود پس تنظیمات را به این شکل تغییر می‌دهیم:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
