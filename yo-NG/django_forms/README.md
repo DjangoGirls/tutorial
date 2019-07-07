@@ -230,7 +230,7 @@ Finally, it would be awesome if we could immediately go to the `post_detail` pag
 from django.shortcuts import redirect
 ```
 
-Add it at the very beginning of your file. And now we can say, "go to the `post_detail` page for the newly created post":
+Ṣàfikún rẹ̀ ní ìbẹ̀rẹ̀pẹ̀pẹ̀ fáìlì rẹ. Ní báyìí, a lè sọ pé, "lọ sí ojú-ìwé `post_detail` náà fún àròkọ tí a ṣẹ̀ṣẹ̀ ṣẹ̀dá náà":
 
 {% filename %}blog/views.py{% endfilename %}
 
