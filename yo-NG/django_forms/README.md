@@ -261,9 +261,9 @@ def post_new(request):
 
 Jẹ́ ká wo bóyá ó n ṣiṣẹ́. Lọ sí ojú-ìwé http://127.0.0.1:8000/post/new/ náà, ṣàfikún `title` àti `text` kan, tọ́jú rẹ̀… àti pé òhun nìyẹn! Àròkọ blog tuntun náà ti wà ní àfikún àti pé a ti darí padà sí ojú-ìwé `post_detail` náà!
 
-You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
+O lè ti ṣàkíyèsí pé a n ṣètò ọjọ́ ìtẹ̀jáde ṣáájú títọ́jú àròkọ náà. Tó bá yá, a ó ṣàfihàn *bọ́tìnnì ìtẹ̀jáde* kan nínú **Django Girls Tutorial: Extensions**.
 
-That is awesome!
+Ìyẹn dára púpọ̀!
 
 > As we have recently used the Django admin interface, the system currently thinks we are still logged in. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
