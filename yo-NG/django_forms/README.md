@@ -240,7 +240,7 @@ return redirect('post_detail', pk=post.pk)
 
 `post_detail` jẹ́ orúkọ view tí a fẹ́ lọ náà. Rántí pé *view* yìí nílò variable `pk` kan? Láti darí rẹ̀ sí àwọn view náà, a lo `pk=post.pk`, níbi tí `post` jẹ́ àròkọ blog tí a ṣẹ̀ṣẹ̀ ṣẹ̀dá náà!
 
-OK, we've talked a lot, but we probably want to see what the whole *view* looks like now, right?
+Ó dáa, a ti sọ̀rọ̀ lọ́pọ̀lọpọ̀, ṣùgbọ́n ó ṣeéṣe kí a fẹ́ wo bí gbogbo *view* náà ṣe rí ní báyìí, àbí bẹ́ẹ̀ kọ?
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -259,7 +259,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Let's see if it works. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Jẹ́ ká wo bóyá ó n ṣiṣẹ́. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
