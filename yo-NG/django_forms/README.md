@@ -271,7 +271,7 @@ O lè ti ṣàkíyèsí pé a n ṣètò ọjọ́ ìtẹ̀jáde ṣáájú tít
 
 ## Fífìdí fọ́ọ̀mù múlẹ̀
 
-Ní báyìí, a ó fi hàn ọ́ bí àwọn fọ́ọ̀mù Django ṣe dára tó. A blog post needs to have `title` and `text` fields. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Ní báyìí, a ó fi hàn ọ́ bí àwọn fọ́ọ̀mù Django ṣe dára tó. Àròkọ blog kan nílò láti ní àwọn ààyè `title` àti `text`. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
 
 Try to save the form without `title` and `text`. Guess what will happen!
 
