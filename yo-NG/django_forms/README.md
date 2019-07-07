@@ -171,7 +171,7 @@ O dáa, jẹ́ ká wo bó ṣe yẹ kí HTML inú `post_edit.html` rí:
 
 Kò sí nnkan kan! A tún wà lórí ojú-ìwé kannáà lẹ́ẹ̀kan síi àti pé ọ̀rọ̀ wa ti lọ… àti pé kò sí àròkọ tuntun tí a ṣàfikún. Nítorí náà, kí ló wá fà á?
 
-The answer is: nothing. We need to do a little bit more work in our *view*.
+Ìdáhùn náà ní pé: kò sí nnkan kan. A nílò láti ṣe iṣẹ́ díẹ̀ síi nínú *view* wa.
 
 ## Títọ́jú fọ́ọ̀mù náà
 
