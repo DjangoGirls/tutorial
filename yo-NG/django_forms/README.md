@@ -271,9 +271,9 @@ O lè ti ṣàkíyèsí pé a n ṣètò ọjọ́ ìtẹ̀jáde ṣáájú tít
 
 ## Fífìdí fọ́ọ̀mù múlẹ̀
 
-Ní báyìí, a ó fi hàn ọ́ bí àwọn fọ́ọ̀mù Django ṣe dára tó. Àròkọ blog kan nílò láti ní àwọn ààyè `title` àti `text`. In our `Post` model we did not say that these fields (as opposed to `published_date`) are not required, so Django, by default, expects them to be set.
+Ní báyìí, a ó fi hàn ọ́ bí àwọn fọ́ọ̀mù Django ṣe dára tó. Àròkọ blog kan nílò láti ní àwọn ààyè `title` àti `text`. Nínú àwòṣe `Post` wa, a kò sọ wípé a ò nílò àwọn ààyè wọ̀nyí (tó yàtọ̀ sí `published_date`), nítorí náà Django, ní ìpìlẹ̀, yíò retí kí a ṣètò wọn.
 
-Try to save the form without `title` and `text`. Guess what will happen!
+Gbìyànjú láti tọ́jú fọ́ọ̀mù náà láìsí `title` àti `text`. Kí lo rò pé yíò ṣẹlẹ̀!
 
 ![Fífìdí fọ́ọ̀mù múlẹ̀](images/form_validation2.png)
 
