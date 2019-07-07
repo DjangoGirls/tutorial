@@ -175,7 +175,7 @@ The answer is: nothing. We need to do a little bit more work in our *view*.
 
 ## Títọ́jú fọ́ọ̀mù náà
 
-Open `blog/views.py` once again in the code editor. Currently all we have in the `post_new` view is the following:
+Ṣí `blog/views.py` lẹ́ẹ̀kan síi nínú olóòtú kóòdù náà. Lọ́wọ́lọ́wọ́, gbogbo ohun tí a ní nínú view `post_new` ni èyí tó tẹ̀le yìí:
 
 {% filename %}blog/views.py{% endfilename %}
 
