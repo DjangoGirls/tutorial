@@ -185,7 +185,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Nígbà tí a bá fi fọ́ọ̀mù náà ṣọwó, a tún padà wá sí view kannáà, ṣùgbọ́n ní àkókò yìí a ní àwọn dátà díẹ̀ síi nínú `request`, pàtàkì jù nínú `request.POST` (orúkọ sísọ náà kò ní nnkan kan láti ṣe pẹ̀lú "àròkọ" blog kan; ó ní í ṣe pẹ̀lú pé a n fi dátà ránṣẹ́). Rántí nínú fáìlì HTML náà, bí àlàyé `<form>` wa ṣe ní variable `method="POST"` náà? Gbogbo àwọn ààyè láti fọ́ọ̀mù náà ti wà nínú `request.POST`. Kò yẹ kí o ṣàtúnṣe orúkọ `POST` sí ohunkóhun mìíràn (ohun kan ṣoṣo mìíràn tó fẹsẹ̀múlẹ̀ fún `method` ni `GET`, ṣùgbọ́n a kò ní àkókò láti sàlàyé ìyàtọ̀ tó wà níbẹ̀).
+Nígbà tí a bá fi fọ́ọ̀mù náà ṣọwọ́, a tún padà wá sí view kannáà, ṣùgbọ́n ní àkókò yìí a ní àwọn dátà díẹ̀ síi nínú `request`, pàtàkì jù nínú `request.POST` (orúkọ sísọ náà kò ní nnkan kan láti ṣe pẹ̀lú "àròkọ" blog kan; ó ní í ṣe pẹ̀lú pé a n fi dátà ránṣẹ́). Rántí nínú fáìlì HTML náà, bí àlàyé `<form>` wa ṣe ní variable `method="POST"` náà? Gbogbo àwọn ààyè láti fọ́ọ̀mù náà ti wà nínú `request.POST`. Kò yẹ kí o ṣàtúnṣe orúkọ `POST` sí ohunkóhun mìíràn (ohun kan ṣoṣo mìíràn tó fẹsẹ̀múlẹ̀ fún `method` ni `GET`, ṣùgbọ́n a kò ní àkókò láti sàlàyé ìyàtọ̀ tó wà níbẹ̀).
 
 Nítorí náà, nínú *view* wa, a ní ìṣòro méjì ọ̀tọ̀ọ̀tọ̀ láti yanjú: àkọ́kọ́, nígbà tí a bá wọ ojú-ìwé náà fún ìgbà àkọ́kọ́ tí a sì fẹ́ fọ́ọ̀mù òfìfo kan, àti èkejì, nígbà tí a bá padà sí *view* náà pẹ̀lú gbogbo dátà fọ́ọ̀mù tí a ṣẹ̀ṣẹ̀ tẹ̀. Nítorí náà, a nílò láti ṣàfikún ipò kan (a ó lo `if` fún ìyẹn):
 
@@ -206,7 +206,7 @@ else:
 form = PostForm(request.POST)
 ```
 
-The next thing is to check if the form is correct (all required fields are set and no incorrect values have been submitted). We do that with `form.is_valid()`.
+Ohun tó kàn ni láti ṣàyẹ̀wò bóyá fọ́ọ̀mù náà wà bó ṣe tọ́ (a ti ṣètò gbogbo àwọn ààyè tí a nílò àti pé a kò fi ohun tí kò tọ́ ṣọwọ́). A máa ṣe ìyẹn pẹ̀lú `form.is_valid()`.
 
 We check if the form is valid and if so, we can save it!
 
