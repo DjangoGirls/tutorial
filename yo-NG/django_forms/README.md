@@ -259,7 +259,7 @@ def post_new(request):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Jẹ́ ká wo bóyá ó n ṣiṣẹ́. Go to the page http://127.0.0.1:8000/post/new/, add a `title` and `text`, save it… and voilà! The new blog post is added and we are redirected to the `post_detail` page!
+Jẹ́ ká wo bóyá ó n ṣiṣẹ́. Lọ sí ojú-ìwé http://127.0.0.1:8000/post/new/ náà, ṣàfikún `title` àti `text` kan, tọ́jú rẹ̀… àti pé òhun nìyẹn! Àròkọ blog tuntun náà ti wà ní àfikún àti pé a ti darí padà sí ojú-ìwé `post_detail` náà!
 
 You might have noticed that we are setting the publish date before saving the post. Later on, we will introduce a *publish button* in **Django Girls Tutorial: Extensions**.
 
