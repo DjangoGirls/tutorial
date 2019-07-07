@@ -54,7 +54,7 @@ Nítorí náà, a ó ṣẹ̀dá atọ́ka sí ojú-ìwé náà kan, URL kan, vi
 
 Ṣàkíyèsí pé a fẹ́ pe view tuntun wa ní `post_new`. Kíláàsì `"glyphicon glyphicon-plus"` wà ní ìpèsè nípasẹ̀ theme bootstrap tí a n lò náà, àti pé yíò ṣàfihàn àmì ìròpọ̀ (+) kan fún wa.
 
-After adding the line, your HTML file should now look like this:
+Lẹ́yìn ṣíṣe àfikún ìlà náà, ó yẹ kí fáìlì HTML rẹ wá rí báyìí:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -163,7 +163,7 @@ O dáa, jẹ́ ká wo bó ṣe yẹ kí HTML inú `post_edit.html` rí:
 {% endblock %}
 ```
 
-Time to refresh! Yay! Your form is displayed!
+Àkókò láti ṣe ìmúdójúìwọ̀n! Yay! Fọ́ọ̀mù rẹ ti fojú hàn!
 
 ![Fọ́ọ̀mù tuntun](images/new_form2.png)
 
