@@ -167,9 +167,9 @@ O dáa, jẹ́ ká wo bó ṣe yẹ kí HTML inú `post_edit.html` rí:
 
 ![Fọ́ọ̀mù tuntun](images/new_form2.png)
 
-But, wait a minute! When you type something in the `title` and `text` fields and try to save it, what will happen?
+Ṣùgbọ́n, dúró ná! Nígbà tí o bá tẹ nnkan kan sínú àwọn ààyè `title` àti `text` náà, tí o sì gbìyànjú láti tọ́jú rẹ̀, kí ló máa ṣẹlẹ̀?
 
-Nothing! We are once again on the same page and our text is gone… and no new post is added. So what went wrong?
+Kò sí nnkan kan! A tún wà lórí ojú-ìwé kannáà lẹ́ẹ̀kan síi àti pé ọ̀rọ̀ wa ti lọ… àti pé kò sí àròkọ tuntun tí a ṣàfikún. Nítorí náà, kí ló wá fà á?
 
 The answer is: nothing. We need to do a little bit more work in our *view*.
 
