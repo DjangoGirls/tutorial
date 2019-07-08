@@ -158,7 +158,7 @@ Yóò dára láti rí pé gbogbo èyí n ṣiṣẹ́ lórí Íńtánẹ́ẹ̀t
 
 ### Commit, and push your code up to GitHub
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+Lákọ̀ọ́kọ́, jẹ́ ká wo àwọn fáìlì tó ti yí padà láti ìgbà tí a ti ṣàgbékalẹ̀ kẹ́yìn (ṣe àwọn àṣẹ wọ̀nyí lórí kọ̀mpútà rẹ, kìí ṣe lórí PythonAnywhere):
 
 {% filename %}command-line{% endfilename %}
 
