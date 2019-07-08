@@ -144,6 +144,13 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> The advantage is that you don't have to switch between editor windows and command-line windows
+
 Θα ξέρετε ότι είστε μέσα σε ένα `virtualenv` όταν δείτε την γραμμή εντολών στην κονσόλα σας να είναι συμπληρωμένη με το όνομα του μέσα σε παρένθεση, πχ `(myvenv)`.
 
 Όταν δουλεύετε μέσα σε ένα εικονικό περιβάλλον, η εντολή `python` θα αναφέρετε αυτόματα στην σωστή έκδοση ώστε να μπορείτε να χρησιμοποιήσετε την εντολή `python` αντί για `python3`.
@@ -192,14 +199,14 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Εάν λάβετε κάποιο σφάλμα όταν τρέχετε το pip σε Windows, παρακαλούμε ελέγξτε εάν η διαδρομή (pathname) του project σας περιέχει κενά, εμφάσεις ή ειδικούς χαρακτήρες (για παράδειγμα,`C:\Users\User Name\djangogirls`). Εάν ναι, παρακαλούμε σκεφτείτε να χρησιμοποιήσετε μία άλλη τοποθεσία χωρίς κενά, εμφάσεις ή ειδικούς χαρακτήρες (για παράδειγμα: `C:\djangogirls`). Δημιουργήστε ένα νέο virtualenv στον νέο αυτό φάκελο, σβήστε τον παλιό και δοκιμάστε την παραπάνω εντολή ξανά. (Το να μετακινήσετε τον virtualenv φάκελο δεν θα δουλέψει μιας και το virtualenv χρησιμοποιεί απόλυτες διαδρομές.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Η γραμμή εντολών μπορεί να παγώσει όταν εγκατασταθεί το Django. Εάν γίνει αυτό, αντί για την παραπάνω εντολή χρησιμοποιήστε:
+> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -211,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Αν λάβετε κάποιο σφάλμα καθώς τρέχετε την εντολή pip σε Ubuntu 12.04, παρακαλούμε τρέξτε `python -m pip install -U --force-reinstall pip` για να διορθωθεί η εγκατάσταση του pip μέσα στο virtualenv.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
