@@ -23,7 +23,7 @@ A máa n tọ́jú àwọn àwòṣe sínú àkójọpọ̀ fáìlì `blog/templ
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(O lè máa ronú pé kí nìdí tí a fi nílò àwọn àkójọpọ̀ fáìlì méjì tó n jẹ́ `blog` – bí o ṣe máa ṣàwárí tó bá yá, èyí jẹ́ ọ̀nà ìkọrúkọ tó wúlò kan tí yíò mú ayé rọrùn nígbà tí àwọn nnkan bá bẹ̀rẹ̀ sí ní ṣòro.)
 
 Ní báyìí, ṣẹ̀dá fáìlì `post_list.html` kan (fi sílẹ̀ ní òfìfo) sínú àkójọpọ̀ fáìlì `blog/templates/blog` náà.
 
