@@ -6,9 +6,9 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Таких же як ваші фільми, музика і фотографії. Проте, є одна річ унікальна для веб сайтів: вони включають комп'ютерний код, що називається HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Якщо ви не знайомі із програмуванням, спочатку може бути складно зрозуміти що таке HTML, але ваші веб-браузери (такі як Chrome, Safari, Firefox, тощо) його люблять. Веб-браузери пристосовані для того, щоб розуміти цей код, виконувати його інструкції та показувати файли, з яких складається ваш сайт, саме так як ви хочете.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Веб-браузери пристосовані для того, щоб розуміти цей код, виконувати його інструкції та показувати файли, з яких складається ваш сайт, саме так як ви хочете.
 
 Як і з кожним файлом, нам потрібно зберігати HTML файли в певному місці на жорсткому диску. В Інтернеті ми використовуємо спеціальні потужні комп'ютери, що називаються *серверами*. Вони не мають екрану, мишки чи клавіатури тому, що їхня основна ціль -- зберігати і обробляти дані. That's why they're called *servers* – because they *serve* you data.
 
