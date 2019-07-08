@@ -6,9 +6,9 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. בדיוק כמו הסרטים, המוסיקה או התמונות שלך. עם זאת, יש חלק אחד ייחודי עבור אתרי אינטרנט: הם כוללים קוד מחשב הנקרא HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-אם אתן לא מכירות תכנות זה יכול להיות קשה להבין HTML בהתחלה, אבל דפדפני האינטרנט שלך (כמו כרום, ספארי, פיירפוקס, וכו ') אוהבים את זה. דפדפני אינטרנט נועדו להבין קוד זה, לעקוב אחר ההוראות שלו, ולהציג את הקבצים מהם אתר האינטרנט שלך בנוי, בדיוק כפי שאת רוצה.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. דפדפני אינטרנט נועדו להבין קוד זה, לעקוב אחר ההוראות שלו, ולהציג את הקבצים מהם אתר האינטרנט שלך בנוי, בדיוק כפי שאת רוצה.
 
 כמו עם כל קובץ, יש לאחסן קבצי HTML איפשהו בדיסק הקשיח. עבור האינטרנט, קיימים מחשבים מיוחדים שנקראים *שרתים*. אין להם מסך, עכבר או מקלדת, כי המטרה העיקרית שלהם היא כדי לאחסן נתונים ולהנגיש אותם. That's why they're called *servers* – because they *serve* you data.
 
