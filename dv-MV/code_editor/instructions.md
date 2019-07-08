@@ -2,30 +2,36 @@
 
 ތިރީގައި އެވަނީ އަހަރެމެންނަށް ފެންނަ އެޑިތަރުތަކެވެ. ކޯޗު ބޭނުން ވަކި އެޑިޓަރ އެއް އިންތޯ އަހާށެވެ. އެއީ ކޯޗުގެ އެހީ ހޯދަން ފަސޭހަވާނެތީވެ.
 
-## ޖީ އެޑިޓް
+## Visual Studio Code
 
-ޖީއެޑިޓް އަކީ އޯޕަންސޯސް އަދި ހުރިހާ އޮޕަރޭޓިންގް ސިސްޓަމްއެއްގައިވެސް ބޭނުންކުރެވޭ ި ފްރީ އެޑިޓަރ އެކެވެ.
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[މިތަނުން ޑައުންލޯޑު ކުރޭ](https://code.visualstudio.com/download)
+
+## Gedit
+
+Gedit is an open-source, free editor, available for all operating systems.
 
 [މިތަނުން ޑައުންލޯޑު ކުރޭ](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## ސަބްލައިމް ޓެކްސްޓް 3
+## Sublime Text 3
 
-ސަބްލައިމް އަކީ މީހުންގެ ތެރޭގައި މަގުބޫލު، އަދި އަންދާޒާކުރުމުގެ ގޮތުން ދުވަސްކޮޅަކަށް ހިލޭ ބޭނުންކުރެވޭ އަދި ހުރިހާ އޮޕަރޭޓިން ސިސްޓަމެއްގައިވެސް ބޭނުކުރެވޭ އެޑިޓަރ އެކެވެ.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [މިތަނުން ޑައުންލޯޑު ކުރޭ](https://www.sublimetext.com/3)
 
-## އެޓަމް
+## Atom
 
-އެޓަމް އަކީ ވެސް މީހުންގެ ތެރޭގައި މަގުބޫލު އެޑިޓަރ އެކެވެ. މިވެސް ހިލޭ ބޭނުންކުރެވޭ، އޯޕަން ސޯސް އަދި ވިންޑޯސް، އޯއެސް އެކްސް އަދި ލިނަކްސްގައިވެސް ބޭނުންކުރެވޭ އެޑިޓަރއެކެވެ. އެޓަަމް ޑިވެލްކޮށްފައިވަނީ [ގިޓްހަބް](https://github.com/).
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[މިތަނުން ޑައުންލޯޑު ކުރޭ](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## ކޯޑް އެޑިޓަރ އެއް އިންސްޓޯލް ކުރަނީ ކީއްވެ?
+## Why are we installing a code editor?
 
-ހިތައް އަރާފާނެ ވޯޑު ނުވަތަ ނޯޓުޕެޑު ބޭނުންނުކޮށް ކީއްވެހޭ ވަކި ޚާއްސަ ކޯޑު އެޑިޓްކުރާ ސޮފްޓްވެއަރ އެއް ބޭނުްކުރަނީ.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-ދެވަނަ ކަމަކީ ކޯޑު އެޑިޓަރތއް ޚާއްސަވެގެންވަނީ ހަމައަކަނީ ކޯޑު އެޑިޓްކުރުމަށެވެ. އެހެންކަމުން ކޯޑު ގެ މާނަ އެކުލެވޭގޮތަށް ކުލަ ކުލައިން ހައިލައިޓްކުރުމާއި، ކޯޓުތައް އޮޓޯއިން ބަންދުކޮށްދީ މިފަދަ ފަސޭހަ ކަންކަން އެކުލެވިގެންވެއެވެ.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-މިހުރިހާ ކަމެއް ފަހުން ކުރެވޭނެއެވެ. ވަރަށް އަވަހަށް، ކޯޑު އެޑިޓަރަކީ ތިބާއަށް އެންމެ ޚާއްސަ ޓޫލް އަށް ވެގެންދާނެއެވެ. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
