@@ -6,9 +6,9 @@
 
 Vi satsar på att du använder Internet varje dag. Men vet du vad som faktiskt händer när du skriver in en adress som https://djangogirls.org i din webbläsare och trycker på `retur`?
 
-Det första du måste förstå är att en hemsida bara är ett gäng filer sparade på en hårddisk. Precis som dina filmklipp, musik och bilder. Men det finns en sak som är unikt för hemsidor: de innehåller programkod som kallas HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Om du inte är van vid programmering kan det vara svårt att förstå HTML till en början, men din webbläsare (t.ex. Chrome, Safari, Firefox, etc.) älskar det. Webbläsare är designade för att förstå denna kod, följa dess instruktioner och presentera alla filer som din hemsida är gjord av precis på det sättet som du vill att de ska presenteras.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Webbläsare är designade för att förstå denna kod, följa dess instruktioner och presentera alla filer som din hemsida är gjord av precis på det sättet som du vill att de ska presenteras.
 
 Precis som med alla filer måste vi lagra HTML-filer någonstans på en hårddisk. För Internet använder vi speciella kraftfulla datorer som kallas *servrar*. De har ingen skärm, mus eller tangentbord, för deras huvudsyfte är att lagra data och göra den åtkomlig. Det är därför de kallas *servrar* - eftersom de *serverar* din information.
 
