@@ -144,6 +144,13 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> The advantage is that you don't have to switch between editor windows and command-line windows
+
 คุณจะรู้ได้ว่า `virtualenv` ถูกเริ่มใช้แล้ว โดยดูที่ prompt บน console มันจะมีคำว่า `(myvenv)` อยู่ด้านหน้า
 
 เมื่อทำงานกับสภาพแวดล้อมเสมือน `python` จะอ้างถึงเวอร์ชันที่ถูกต้องให้ ซึ่งจะทำให้คุณใช้คำสั่ง `python` แทนคำสั่ง `python3` ได้เลย.
@@ -192,7 +199,7 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> หากคุณใช้ pip บน Windows แล้วเกิด error ให้ลองเช็ค project pathname ว่ามี ช่องว่าง หรืออักขระพิเศษหรือไม่ (เช่น `C:\Users\User Name\djangogirls`) If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
@@ -211,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> ถ้าเกิด error ตอนรันคำสั่ง pip บน Ubuntu 12.04 ให้ลองใช้คำสั่ง `python -m pip install -U --force-reinstall pip` เพื่อแก้ไข
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
