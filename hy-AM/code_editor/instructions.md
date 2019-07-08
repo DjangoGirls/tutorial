@@ -2,15 +2,21 @@
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Բեռնիր այն այստեղից](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit֊ը ազատ և անվճար խմբագրիչ է, որը առկա է բոլոր օպերացիոն համակարգերի համար։
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Բեռնիր այն այստեղից](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text֊ը բավականին մեծ տարածում ունեցող խմբագրիչ էր անվճար փորձարկման ժամկետով։ Այն շատ հեշտ է տեղադրման և օգտագործման մեջ և առկա է բոլոր օպերացիոն համակարգերի համար։
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Բեռնիր այն այստեղից](https://www.sublimetext.com/3)
 
@@ -18,11 +24,11 @@ Sublime Text֊ը բավականին մեծ տարածում ունեցող խմ�
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Բեռնիր այն այստեղից](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Ինչո՞ւ տեղադրել կոդի խմբագրիչներ
+## Why are we installing a code editor?
 
-Քեզ մոտ հարց կառաչանա, թե ինչու ենք տեղադրում հատուկ կոդի խմբագրիչներ, երբ կարող են օգտագործել ծրագրեր իչպես Word֊ը կամ Notepad֊ը։
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
