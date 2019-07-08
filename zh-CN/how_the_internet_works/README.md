@@ -6,9 +6,9 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. 就像你的电影、 音乐或图片一样。 然而，网站的唯一的不同之处是： 网站包含一种称为 HTML 的代码。
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-如果你不熟悉编程，一开始你会很难理解HTML。你的浏览器 (如Chrome、 Safari、 Firefox 等) 却很喜欢它。 Web浏览器懂得这些代码，遵循它的指令并如你所想的那样展示这些文件。
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web浏览器懂得这些代码，遵循它的指令并如你所想的那样展示这些文件。
 
 就像我们对待每个电脑文件一样，我们需要把HTML文件存储在硬盘的某个位置。 对于互联网，我们使用特定而功能强大的电脑，我们称之为*服务器*。 它们没有屏幕、鼠标或者键盘，因为它们的主要目的是存储数据，并用它来提供服务。 That's why they're called *servers* – because they *serve* you data.
 
