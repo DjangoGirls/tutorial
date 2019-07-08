@@ -265,7 +265,7 @@ O lè ti ṣàkíyèsí pé a n ṣètò ọjọ́ ìtẹ̀jáde ṣáájú tít
 
 Ìyẹn dára púpọ̀!
 
-> Nítorí pé a lo atọ́kùn alábòójútó Django náà láìpẹ́, ètò náà n lérò lọ́wọ́lọ́wọ́ pé a kò tíì jáde. Àwọn ìṣẹ̀lẹ̀ díẹ̀ kan wà tó lè yọrí sí jíjáde wa (pípa aṣàwákiri náà dé, ṣíṣe àtúnbẹ̀rẹ̀ DB náà, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ). Tó bá jẹ́ pé, nígbà ṣíṣẹ̀dá àròkọ kan, o rí pé o n gba àwọn àṣìṣe tó n tọ́ka sí àìsí aṣàmúlò tó ti wọlé kan, lọ sí ojú-ìwé alábòójútó náà http://127.0.0.1:8000/admin kí o sì wọlé padà. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Nítorí pé a lo atọ́kùn alábòójútó Django náà láìpẹ́, ètò náà n lérò lọ́wọ́lọ́wọ́ pé a kò tíì jáde. Àwọn ìṣẹ̀lẹ̀ díẹ̀ kan wà tó lè yọrí sí jíjáde wa (pípa aṣàwákiri náà dé, ṣíṣe àtúnbẹ̀rẹ̀ DB náà, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ). Tó bá jẹ́ pé, nígbà ṣíṣẹ̀dá àròkọ kan, o rí pé o n gba àwọn àṣìṣe tó n tọ́ka sí àìsí aṣàmúlò tó ti wọlé kan, lọ sí ojú-ìwé alábòójútó náà http://127.0.0.1:8000/admin kí o sì wọlé padà. Èyí yíò yanjú ìṣòro náà fúngbà díẹ̀. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
 ![Àṣìṣe wíwọlé](images/post_create_error.png)
 
