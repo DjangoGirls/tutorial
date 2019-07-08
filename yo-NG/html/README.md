@@ -148,7 +148,7 @@ Yóò fún wa ní àbájáde yìí:
 
 ![Figure 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay! Ṣùgbọ́n títí di báyìí, àwòṣe wa máa n ṣàfihàn **ìròyìn kannáà** nìkan – nígbà tó jẹ́ pé ní ìbẹ̀rẹ̀ a n sọ̀rọ̀ nípa àwọn àwòṣe bí wọ́n ṣe n gbà wa láàyè láti ṣàfihàn ìròyìn **ọ̀tọ̀ọ̀tọ̀** pẹ̀lú **àgbékalẹ̀ kannáà**.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
