@@ -2,30 +2,36 @@
 
 Οι προτάσεις μας φαίνονται παρακάτω αλλά μην διστάσετε να ρωτήσετε τον προπονητή σας ποιες είναι οι προτιμήσεις του. Θα είναι ευκολότερο να σας βοηθήσουν.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Κατεβάστε το εδώ](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Το Gedit είναι ένα ανοικτού κώδικα (open source) δωρεάν πρόγραμμα επεξεργασίας (free editor), διαθέσιμο για όλα τα λειτουργικά συστήματα.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Κατεβάστε το εδώ](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Το Sublime Text είναι ένας δημοφιλής επεξεργαστής με μια περίοδο δωρεάν χρήσης (στο πέρας αυτής μπορείτε να εξακολουθείτε να το χρησιμοποιείτε) και είναι διαθέσιμο για όλα τα λειτουργικά συστήματα.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Κατεβάστε το εδώ](https://www.sublimetext.com/3)
 
 ## Atom
 
-Το Atom είναι άλλος ένας δημοφιλής επεξεργαστής. Είναι δωρεάν, ανοιχτού κώδικα και διαθέσιμος για Windows, OS X και Linux. Το Atom αναπτύχθηκε από το [GitHub](https://github.com/).
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Κατεβάστε το εδώ](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Γιατί χρειαζόμαστε τον Επεξεργαστή Κώδικα;
+## Why are we installing a code editor?
 
-Μπορεί να αναρωτιέσαι γιατί εγκαθιστούμε αυτό το ειδικό πρόγραμμα επεξεργασίας κώδικα λογισμικού, αντί να χρησιμοποιήσουμε κάτι σαν το Word ή το Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Ο πρώτος λόγος είναι ότι ο κώδικας πρέπει να είναι **απλό κείμενο** (δίχως bold, italic, πίνακες, εικόνες κλπ, όπως θα χρησιμοποιούσε κανείς ένας επεξεργαστή κειμένου). Το πρόβλημα με τα προγράμματα όπως το Word και το Textedit είναι ότι δεν παράγουν στην ουσία απλό κείμενο αλλά "πλούσιο" (με γραμματοσειρές, φορμάρισμα κειμένου και αυτά που αναφέραμε παραπάνω), χρησιμοποιώντας δικές του μορφές όπως [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Δεύτερον, τα προγράμματα επεξεργασίας κώδικα είναι εξειδικευμένα στην σύνταξη κώδικα ούτως ώστε να μπορούν να παρέχουν χρήσιμα χαρακτηριστικά όπως η επισήμανση κώδικα με χρώμα σύμφωνα με την σημασία του, η αυτόματο κλείσιμο εισαγωγικών κλπ.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Θα τα δούμε όλα αυτά αργότερα. Σύντομα, θα αρχίσετε να βλέπετε τον παλιό σας, έμπιστο επεξεργαστή κώδικα ως ένα από τα αγαπημένα σας εργαλεία. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
