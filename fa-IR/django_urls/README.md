@@ -12,7 +12,7 @@
 
 ## آدرس ها در جنگو چطور کار می‌کنند؟
 
-Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
+حالا فایل `mysite/urls.py` را در ویرایشگر کد خود باز کنید و ببینید چگونه است:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
