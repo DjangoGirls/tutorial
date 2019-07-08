@@ -2,15 +2,21 @@
 
 ด้านล่างนี้คือโปรแกรมที่เราแนะนำ คุณสามารถสอบถามโค้ชของคุณ หรือ โปรแกรมเมอร์คนอื่นๆ ถึงคำแนะนำเกี่ยวกับโปรแกรมเหล่านี้ เพื่อง่ายต่อการทำความเข้าใจโปรแกรมมากยิ่งขึ้น
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[ดาวน์โหลดได้ ที่นี่](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit เป็นโปรแกรม editor โอเพนซอร์ส และ ฟรี ซึ่งรองรับทุกระบบปฎิบัติการ
+Gedit is an open-source, free editor, available for all operating systems.
 
 [ดาวน์โหลดได้ ที่นี่](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text เป็นโปรแกรม editor ที่ได้รับความนิยมเป็นอย่างมาก สามารถทดลองใช้งานได้ฟรี และรองรับทุกระบบปฏิบัติการ
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [ดาวน์โหลดได้ ที่นี่](https://www.sublimetext.com/3)
 
@@ -18,14 +24,14 @@ Sublime Text เป็นโปรแกรม editor ที่ได้รั�
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[ดาวน์โหลดได้ ที่นี่](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## ทำไมเราต้องติดตั้งโค้ด editor?
+## Why are we installing a code editor?
 
-คุณอาจจะสงสัยว่า ทำไมเราจะติดตั้งซอฟต์แวร์โค้ด editor ด้วยล่ะ ใช้ Word หรือ Notepad ก็น่าจะได้นี่
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-ประการแรก คือ code ต้องเป็น **plain text** และจะมีปัญหากับโปรแกรม เช่น Word หรือ Textedit เพราะมันไม่ได้ผลิด plain text มัน ผลิต rich text (ที่ประกอบด้วย fonts และ การจัดรูปแบบ) หรือมีการใช้รูปแบบที่กำหนดเอง เช่น [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-ประการที่สอง คือ ผู้เขียนcode จะมีความเชี่ยวชาญในการแก้ไขcode ตังนั้นอาจต้องมีfeaturesที่เป็นประโยชน์มาช่วย เช่นตัวไฮไลต์code ด้วยสีที่บอกความหมายของมัน หรือ ตัวอัญประการที่ปิดอัตโนมัติ
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-เราจะได้เห็นเหตุการณ์ทั้งหมดหลังจากนี้ คุณจะกลับมาคิดถึง code editor ตัวเก่าๆที่น่าเชื่อุถือ และเลือกตัวหนึ่งมาเป็นเครื่องมือที่คุณชอบที่สุด. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
