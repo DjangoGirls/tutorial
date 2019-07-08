@@ -2,30 +2,36 @@ Det finnes mange forskjellige editorer og det koker hovedsakelig ned til personl
 
 Våre forslag er nedenfor, men spør gjerne din instruktør hva de foretrekker - da vil det være enklere å få hjelp fra dem.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Last den ned her](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit er en open-source, gratis editor, tilgjengelig for alle operativsystemer.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Last den ned her](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text er en veldig populær editor med en gratis prøveperiode, og den er tilgjengelig for alle operativsystemer.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Last den ned her](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom er en annen populær editor. Den er gratis, open-source og tilgjengelig for Windows, OS X og Linux. Atom er utviklet av [GitHub](https://github.com/).
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Last den ned her](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Hvorfor skal vi installere en kodeeditor?
+## Why are we installing a code editor?
 
-Du lurer kanskje på hvorfor vi installerer denne spesielle programvaren for å redigere kode, i stedet for noe sånn som Word eller Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Den første årsaken er at koden trenger å være i **klartekst**, og problemet med Word og Textedit er at de faktisk ikke produserer klartekst, men rik tekst med fonter og formattering, og bruker egendefinerte formater som [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Den andre årsaken er at kodeeditorer er spesialisert for å redigere kode, slik at de har nyttige funksjoner som å utheve koder med farger etter type kode, eller automatisk lukke sitater.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Vi skal se dette senere. Snart vil du komme til å tenke på din trofaste gamle kodeeditor som et av dine favorittverktøy. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
