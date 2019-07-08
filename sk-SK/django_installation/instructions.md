@@ -144,6 +144,13 @@ Nezabudni nahradiť `myvenv` názvom svojho `virtualenv`-u!
 
 <!--endsec-->
 
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> The advantage is that you don't have to switch between editor windows and command-line windows
+
 To, že je `virtualenv` spustený, zistíš, keď bude príkazový riadok v konzole bude mať na začiatku `(myenv)`.
 
 Pri práci vo virtuálnom prostredí bude `python` automaticky odkazovať na správnu verziu, takže môžeš pokojne používať `python` namiesto `python3`.
@@ -192,14 +199,14 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Ak sa objaví chyba pri spustení pip vo Windowse, skontroluj, či cesta/názov tvojho projektu neobsahuje medzery, diakritiku alebo špeciálne znaky (napr. `C:\Users\Tvoje Meno\djangogirls`). Ak obsahuje, mala by si zvážiť použitie iného miesta, bez medzier, diakritiky a špeciálnych znakov (napríklad: `C:\djangogirls`). Vytvor nové virtualenv v novom adresári, potom odstráň starý a zopakuj vyššie uvedený príkaz. (Presunutie virtualenv adresára nebude fungovať, lebo virtualenv používa absolútne cesty.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Príkazový riadok sa možno zamrazí po tom čo sa pokúsiš nainštalovať Django. Ak sa to stane, namiesto hore uvedeného príkazu použi:
+> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -211,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Ak sa objaví chyba pri spustejní pip v Ubuntu 12.04 spusti `python -m pip install - U --force-reinstall pip`, čím sa opraví inštalácia pip vo virtualenv-e.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
