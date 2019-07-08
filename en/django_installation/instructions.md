@@ -155,7 +155,7 @@ Remember to replace `myvenv` with your chosen `virtualenv` name!
 >```
 >$ . myvenv\Scripts\activate.ps1
 >```
->The obvious advantage is that you don't have to switch between editor windows and command-line windows
+>The advantage is that you don't have to switch between editor windows and command-line windows
 
 You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
