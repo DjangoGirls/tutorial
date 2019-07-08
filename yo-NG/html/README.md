@@ -156,7 +156,7 @@ What we really want to do is display real posts added in our Django admin – an
 
 Yóò dára láti rí pé gbogbo èyí n ṣiṣẹ́ lórí Íńtánẹ́ẹ̀tì náà, àbí bẹ́ẹ̀ kọ? Jẹ́ ká ṣe àgbékalẹ̀ sí PythonAnywhere mìíràn:
 
-### Commit, and push your code up to GitHub
+### Commit, kí o sì ti kóòdù rẹ sí GitHub
 
 Lákọ̀ọ́kọ́, jẹ́ ká wo àwọn fáìlì tó ti yí padà láti ìgbà tí a ti ṣàgbékalẹ̀ kẹ́yìn (ṣe àwọn àṣẹ wọ̀nyí lórí kọ̀mpútà rẹ, kìí ṣe lórí PythonAnywhere):
 
