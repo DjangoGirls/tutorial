@@ -144,6 +144,13 @@ Huwag kalimutan na palitan ang `myenv` sa iyong napili na `virtualenv` na pangal
 
 <!--endsec-->
 
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> The advantage is that you don't have to switch between editor windows and command-line windows
+
 Malalamon mo kung ang iyong `virtualenv` ay nakatakbo na kung makikita mo ang prompt sa iyong console na may unlapi na `(myenv)`.
 
 Kung gumagamit ka ng virtual na environment, si `python` ay awtomatikong magtukoy sa tamang bersyon para magamit mo ang `python` sa halip na ang `python3`.
@@ -192,14 +199,14 @@ Now, run `pip install -r requirements.txt` to install Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Kung may problema sa pagtawag ng pip sa Windows na platform, pakitingnan kung ang pathname ng iyong proyekto ay walang mga agwat, mga tuldik o mga espesyal na titik (halimbawa, `C:\Users\User Name\djangogirls`). Kung ganon, gumamit ka ng ibang lugar na walang mg agwat, tuldik o mga espesyal na mga letra (suggestion: `C:\djangogirls`). Maglikha ng bagong virtualenv sa loob ng bagong directory, tapos burahin mo ang dati at subukan ulit ang command sa taas. (Ang paglipat sa virtualenv na directory ay hindi gagana dahil ang virtualenv ay gumagamit ng absolute na mga path.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Ang command line mo ay maaring mag-freeze habang nag-iinstall ka ng Django. Kung ganon, gamitin mo ito sa halip ng code sa taas:
+> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -211,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Kung may problema sa pagtawag ng pip sa Ubuntu 12.04, patakbuhin ang `python -m pip install -U --force-reinstall pip` para maayos ang pag-install ng pip sa loob ng virtualenv.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
