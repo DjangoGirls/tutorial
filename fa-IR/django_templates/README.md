@@ -68,9 +68,9 @@
 
 ![عدد 13.3](images/step3.png)
 
-آیا توجه کردید که این بار از نشانه گذاری متفاوتی استفاده کردیم؟ (`{{ post.title }}` یا `{{ post.text }}`)؟ We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+آیا توجه کردید که این بار از نشانه گذاری متفاوتی استفاده کردیم؟ (`{{ post.title }}` یا `{{ post.text }}`)؟ ما در حال دسترسی به داده های موجود در هر فیلد تعریف شده در مدل `Post` هستیم. همچنین، `|linebreaksbr` متن پست ها را از فیلتری رد میکند که line-break ها را به پاراگراف تبدیل میکند.
 
-## One more thing
+## یک مورد دیگر
 
 It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
 
