@@ -2,15 +2,21 @@ Ada banyak teks editor yang tersedia dan kita dapat memilih salah satu yang kita
 
 Saran kami ada di bawah, tapi jangan ragu untuk bertanya pada pelatih apa preferensi mereka - akan lebih mudah mendapatkan bantuan dari mereka.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Download disini](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit adalah sebuah aplikasi teks editor yang open-source, gratis, dan tersedia untuk semua sistem operasi.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Download disini](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Teks Sublime merupakan editor yang sangat populer dengan periode evaluasi gratis dan tersedia untuk semua sistem operasi.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Download disini](https://www.sublimetext.com/3)
 
@@ -18,14 +24,14 @@ Teks Sublime merupakan editor yang sangat populer dengan periode evaluasi gratis
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Download disini](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Mengapa Kita Perlu Memasang Aplikasi Teks Editor?
+## Why are we installing a code editor?
 
-Pembaca mungkin bertanya-tanya mengapa kita perlu memasang aplikasi teks editor dan tidak menggunakan editor biasa seperti Word atau Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Alasan pertama adalah kode itu harus ** teks biasa </ 0> , dan masalah dengan program seperti Word dan Textedit adalah bahwa mereka sebenarnya tidak menghasilkan teks biasa, mereka menghasilkan teks kaya (dengan font dan format) menggunakan format kustom seperti  RTF (Rich Text Format) </ 1> .</p> 
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Alasan kedua adalah bahwa editor kode khusus untuk mengedit kode, sehingga bisa memberikan fitur bermanfaat seperti menyoroti kode dengan warna sesuai maknanya, atau secara otomatis menutup tanda kutip untuk Anda.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Kita akan melihat semua ini dalam tindakan nanti. Segera, Anda akan memikirkan editor kode lama terpercaya Anda sebagai salah satu alat favorit Anda. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
