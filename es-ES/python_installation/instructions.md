@@ -56,13 +56,20 @@ Es muy posible que ya tengas instalado Python de serie. Para verificar que ya lo
     Python 3.6.1
     
 
-Si tienes instalada una versión diferente de Python, al menos 3.4.0 (por ejemplo 3.6.0), entonces no tienes que actualizar. Si no tienes instalado Python o si deseas una versión diferente, puedes instalarla de la siguiente manera:
+Si tienes instalada una versión diferente de Python, al menos 3.4.0 (por ejemplo 3.6.0), entonces no tienes que actualizar. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+
+{% filename %}command-line{% endfilename %}
+
+    $ grep ^NAME= /etc/os-release
+    
+
+Afterwards, depending on the result, follow one of the following installation guides below this section.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Escribe este comando en tu consola:
+Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -74,21 +81,21 @@ Escribe este comando en tu consola:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Usa este comando en tu consola:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-En versiones anteriores de Fedora tal vez te salga un error de que no se encuentra el comando `dnf`. En ese caso utiliza `yum` en su lugar.
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Usa este comando en tu consola:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +104,7 @@ Usa este comando en tu consola:
 
 <!--endsec-->
 
-Verifica que la instalación fue exitosa abriendo una terminal y ejecutando el comando `python3`:
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,10 +112,10 @@ Verifica que la instalación fue exitosa abriendo una terminal y ejecutando el c
     Python 3.6.1
     
 
-La versión mostrada puede ser diferente de 3.6.1 -- debería coincidir con la versión que ha instalado.
+The version shown may be different from 3.6.1 -- it should match the version you installed.
 
-**NOTA:** Si estás en Windows y recibes un mensaje de error no se encontró `python3`, intenta usar `python` (sin el `3`) y comprueba si todavía es una versión de Python 3.4.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
 
 * * *
 
-Si tienes alguna duda o si algo salió mal y no sabes cómo resolverlo - ¡pide ayuda a tu tutor! A veces las cosas no van fluidas y es mejor buscar ayuda de alguien con más experiencia.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
