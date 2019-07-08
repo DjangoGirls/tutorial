@@ -2,30 +2,36 @@
 
 下面是我们的建议，不过你可以随时询问你的教练有什么推荐 - 向他们寻求帮助会更简单些。
 
-## Gedit文本编辑器
+## Visual Studio Code
 
-Gedit 是开源、免费的编辑器，支持所有操作系统。
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[在这里下载](https://code.visualstudio.com/download)
+
+## Gedit
+
+Gedit is an open-source, free editor, available for all operating systems.
 
 [在这里下载](https://wiki.gnome.org/Apps/Gedit#Download)
 
-## Sublime Text 3编辑器
+## Sublime Text 3
 
-Sublime Text 是一个很受欢迎的、免费试用的编辑器，它很容易安装和使用，并且支持所有操作系统。
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [在这里下载](https://www.sublimetext.com/3)
 
-## Atom编辑器
+## Atom
 
-Atom是另一个流行的编辑器。免费，开源，并且支持Windows，OS X 和 Linux。Atom是[GitHub](https://github.com/)开发的。
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[在这里下载](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## 我们为什么要安装代码编辑器？
+## Why are we installing a code editor?
 
-你可能会疑惑为什么我们要安装代码编辑器软件，而不是使用如 Word 或记事本这样的软件。
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-第一个原因是，代码需要是**纯文本**的，类似Word和Textedit的软件有个问题是，它们生成的不是纯文本，而是使用类似[RTF(Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format)的自定义格式产生富文本(含有不同字体和格式)。
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-第二个原因是，代码编辑器是专门用来编辑代码的，因此它们会提供一些有用的功能，比如根据代码的含义高亮代码，或者帮你自动匹配引号。
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-以上这些我们将会在后期的实践中体会。很快，你就会觉得你那似乎过时的老版本的编辑器正是你使用得最得心应手的工具。:)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
