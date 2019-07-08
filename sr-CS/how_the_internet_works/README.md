@@ -6,9 +6,9 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Baš kao i vaši filmovi, muzika ili slike. Međutim, jedna stvar je jedinstvena za veb-sajtove: svi uključuju kompjuterski kod zvan HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Ako niste upoznate sa programiranjem, u početku može biti teško razumeti HTML, ali ga vaši brauzeri (poput Chrome-a, Safari-a, Firefox-a itd.) vole. Brauzeri su dizajnirani tako da razumeju ovaj kod, prate njegova uputsva i prikazuju ove fajlove od kojih se vaš veb-sajt sastoji, baš na način kako želite.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Brauzeri su dizajnirani tako da razumeju ovaj kod, prate njegova uputsva i prikazuju ove fajlove od kojih se vaš veb-sajt sastoji, baš na način kako želite.
 
 Kao i sa svakim fajlom, HTML fajlove treba čuvati negde na hard disku. Za internet se koriste posebni, jaki kompjuteri koje zovemo *serveri*. Oni nemaju ekran, miš ili tastaturu, pošto im je glavna namera čuvanje podataka koje će servirati. That's why they're called *servers* – because they *serve* you data.
 
