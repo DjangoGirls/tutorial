@@ -2,30 +2,36 @@
 
 हमारे सुझाव नीचे दिए गए हैं, लेकिन अपने कोच से पूछें कि उनकी वरीयताएंँ क्या हैं - उनसे सहायता प्राप्त करना आसान होगा।
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[इसे यहाँ से डाउनलोड करें।](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit एक ओपन सोर्स (open source), मुफ्त एडिटर है जो सभी ऑपरेटिंग सिस्टम्स (OS) के लिए उपलब्ध है।
+Gedit is an open-source, free editor, available for all operating systems.
 
 [इसे यहाँ से डाउनलोड करें।](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text एक मुफ्त मूल्यांकन अवधि के साथ एक बहुत ही लोकप्रिय एडिटर है और यह सभी ऑपरेटिंग सिस्टम के लिए उपलब्ध है।
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [इसे यहाँ से डाउनलोड करें।](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom एक और लोकप्रिय एडिटर है। यह मुफ़्त, ओपन-सोर्स और Windows, OS X और Linux के लिए उपलब्ध है। Atom [GitHub](https://github.com/) द्वारा विकसित किया गया है।
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[इसे यहाँ से डाउनलोड करें।](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## हम क्यों एक कोड एडिटर इनस्टॉल रहे हैं ?
+## Why are we installing a code editor?
 
-आप सोच रहे होंगे कि हम Word या Notepad जैसे कुछ का उपयोग करने के बजाय, इस विशेष कोड एडिटर सॉफ़्टवेयर को क्यों इंस्टॉल कर रहे हैं।
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-पहला कारण यह है कि कोड को **plain text** होना चाहिए, और Word और Textedit जैसे प्रोग्रामों की समस्या यह है कि वे वास्तव में plain टेक्स्ट नहीं बनाते हैं, वे rich टेक्स्ट (फोंट और फॉर्मेटिंग के साथ) कस्टम फॉरमेट उत्पन्न करते हैं, जैसे [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format) 
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-दूसरा कारण यह है कि कोड एडिटर कोड के सम्पादन के लिए विशिष्ट हैं, इसलिए वे सहायक फ़ीचर्स प्रदान कर सकते हैं जैसे कि कोड को उसके अर्थ के अनुसार रंग से हाइलाइट करना, या स्वचालित ही आपके लिए उद्धरण-चिह्न को लगाना।
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-हम इसे बाद की कार्रवाई में देखेंगे। जल्द ही, आप अपने भरोसेमंद पुराने कोड एडिटर को अपने पसंदीदा टूल मानने लगेंगें। :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
