@@ -2,6 +2,12 @@ There are a lot of different editors and it largely boils down to personal prefe
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Lataa se täältä](https://code.visualstudio.com/download)
+
 ## Gedit
 
 Gedit is an open-source, free editor, available for all operating systems.
@@ -18,7 +24,7 @@ Sublime Text is a very popular editor with a free evaluation period and it's ava
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Lataa se täältä](https://atom.io/)
+[Download it here](https://atom.io/)
 
 ## Why are we installing a code editor?
 
