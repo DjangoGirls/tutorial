@@ -144,6 +144,13 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> The advantage is that you don't have to switch between editor windows and command-line windows
+
 Konsolunuzda komut isteminizin başında `(myvenv)` gördüğünüzde `virtualenv`'in çalıştığını anlayabilirsiniz.
 
 Virtualenv ile çalışırken `python` otomatik olarak doğru sürümü çalıştıracaktır. Yani `python3` yerine `python` yazabilirsiniz.
@@ -192,16 +199,16 @@ Simdi, Django kurmak için `pip install -r requirements.txt` komutunu çalıstı
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Eğer Windows'ta pip komutunu kullanırken bir hata aldıysanız, lütfen projenizin isminin özel karakter içerip içermediğini kontrol edin (örneğin `C:\Users\User Name\djangogirls`). Eğer böyleyse, lütfen boşluksuz veya özel karaktersiz bir yer kullanmayı düşünün (öneri: `C:\djangogirls`). Yeni dizinde yeni bir virtualenv oluşturun, arkasından eskisini silin ve yukarıdaki komutu yeniden deneyin. (virtualenv dizinini taşımak işe yaramayacaktır çünkü virtualenv mutlak yollar kullanır.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Django kurmaya çalışırken komut satırınız donabilir. Bu durumda, yukarıdaki komut yerine şu komutu kullanın:
+> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 > 
-> {% filename %}komut-satırı{% endfilename %}
+> {% filename %}command-line{% endfilename %}
 > 
 >     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >     
@@ -211,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Eğer Ubuntu 12.04 işletim sisteminde pip komutunu çağırırken bir hata iletisiyle karşılaştıysanız `python -m pip install -U --force-reinstall pip` komutunu çalıştırarak pip kurulumunu onarmayı deneyin.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
