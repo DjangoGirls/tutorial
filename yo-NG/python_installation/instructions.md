@@ -56,13 +56,20 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-Tí o bá ti sàgbékalẹ̀ ẹyà Python tó yàtọ̀ kan tẹ́lẹ̀, ó kéré tán 3.4.0 (fún àpẹẹrẹ 3.6.0), á jẹ́ pé ìwọ kò nílò láti ṣe ìmúdójúìwọ̀n. Tí ìwọ kò bá tíì ṣàgbékalẹ̀ Python, tàbí tí o bá fẹ́ ẹyà tuntun kan, o lè ṣàgbékalẹ̀ rẹ̀ báyìí:
+Tí o bá ti sàgbékalẹ̀ ẹyà Python tó yàtọ̀ kan tẹ́lẹ̀, ó kéré tán 3.4.0 (fún àpẹẹrẹ 3.6.0), á jẹ́ pé ìwọ kò nílò láti ṣe ìmúdójúìwọ̀n. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+
+{% filename %}command-line{% endfilename %}
+
+    $ grep ^NAME= /etc/os-release
+    
+
+Afterwards, depending on the result, follow one of the following installation guides below this section.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Tẹ àṣẹ yìí sínú console rẹ:
+Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -74,21 +81,21 @@ Tẹ àṣẹ yìí sínú console rẹ:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Lo àṣẹ yìí nínú console rẹ:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-Tí o bá wà lórí àwọn ẹyà Fedora tàtijọ́, o lè rí àṣìṣe kan wípé àṣẹ `dnf` náà kò sí. Tó bá rí bẹ́ẹ̀, o nílò láti lo `yum` dípò.
+If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Lo àṣẹ yìí nínú console rẹ:
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -97,7 +104,7 @@ Lo àṣẹ yìí nínú console rẹ:
 
 <!--endsec-->
 
-Ri dájú pé ìṣàgbékalẹ̀ náà jẹ́ àṣeyọrí nípasẹ̀ ṣíṣí command prompt kan àti lílo àṣẹ `python3` náà:
+Verify the installation was successful by opening a command prompt and running the `python3` command:
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,10 +112,10 @@ Ri dájú pé ìṣàgbékalẹ̀ náà jẹ́ àṣeyọrí nípasẹ̀ ṣí�
     Python 3.6.1
     
 
-Ẹyà tó fihàn náà lè yàtọ̀ sí 3.6.1 -- ó yẹ kó dọ́gba pẹ̀lú ẹyà tí o ṣàgbékalẹ̀.
+The version shown may be different from 3.6.1 -- it should match the version you installed.
 
-**ÀKÍYÈSÍ:** Tí o bá wà lórí Windows tí o sì rí ìròyìn àṣìṣe kan wípé `python3` kò ṣeé ṣàwárí, gbìyànjú lílo `python` (láìsí `3` náà) kí o sì ṣàyẹ̀wò tó bá ṣì máa jẹ́ ẹyà Python kan tó jẹ́ 3.4.0 tàbí jù bẹ́ẹ̀.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
 
 * * *
 
-Tí o bá ní iyèméjì kankan, tàbí tí nnkan kan kò bá lọ déédéé tí ìwọ kò mọ̀ ohun tó kàn láti ṣe, jọ̀wọ́ béèrè lọ́wọ́ olùkọ́ rẹ! Nígbà míràn, àwọn nnkan kìí lọ déédéé àti pé ó dára láti béèrè fún ìrànlọ́wọ́ láti ọ̀dọ̀ ẹnì kan tó ní ìrírí jù ọ́ lọ.
+If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
