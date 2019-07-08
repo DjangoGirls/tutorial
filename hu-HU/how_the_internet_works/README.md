@@ -6,9 +6,9 @@
 
 Biztosan minden nap internetezel. De tudod, igazából mi történik, mikor beírod a böngésződbe, hogy https://djangogirls.org, és `enter`t nyomsz?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Olyanok, mint a filmjeid, a zenéid, vagy a képeid. De van valami, ami a weboldalakat egyedivé teszi: a HTML nevű számítógépes kód.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Ha nem igazán ismered a programozást, akkor nehéz lehet megértened először a HTML-t, de ne aggódj a böngésződ (Chrome, Safari, Firefox, stb.) imádja. A webböngészőket úgy tervezték, hogy megértsék ezt a kódot, kövessék azt, ami abban van, és megjelenítsenek mindent pont úgy, ahogy szeretnéd.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. A webböngészőket úgy tervezték, hogy megértsék ezt a kódot, kövessék azt, ami abban van, és megjelenítsenek mindent pont úgy, ahogy szeretnéd.
 
 Mint minden fájlt, a HTML-t is merevlemezen kell tárolni. Az Internethez speciális, erős számítógépeket használunk, a *szervereket*. Ezekhez a gépekhez nem tartozik képernyő, egér vagy billentyűzet, mert a fő feladatuk az adatok tárolása és szolgáltatása. Ezért hívják őket *szervereknek* -- ők *szervíroznak* neked adatot.
 
