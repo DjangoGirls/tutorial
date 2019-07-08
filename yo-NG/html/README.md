@@ -25,7 +25,7 @@ A máa n tọ́jú àwọn àwòṣe sínú àkójọpọ̀ fáìlì `blog/templ
 
 (You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+Ní báyìí, ṣẹ̀dá fáìlì `post_list.html` kan (fi sílẹ̀ ní òfìfo) sínú àkójọpọ̀ fáìlì `blog/templates/blog` náà.
 
 Wo bí ààyè ayélujára rẹ ṣe rí ní báyìí: http://127.0.0.1:8000/
 
@@ -87,13 +87,13 @@ Tọ́jú fáìlì náà kí o sì ṣe ìmúdójúìwọ̀n ojú-ìwé rẹ.
 
 ![Figure 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+Ṣàkíyèsí bí aṣàwákiri náà ṣe mọ̀ pé "Ola's blog" ni àkọlé ojú-ìwé rẹ? Ó ti túmọ̀ `<title>Ola's blog</title>` àti pé ó ti gbé e ọ̀rọ̀ náà sínú pẹpẹ àkọlé aṣàwákiri rẹ (yóò tún jẹ́ lílò fún àwọn àmì ìwé àti bẹ́ẹ̀ bẹ́ẹ̀ lọ).
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+Ó ṣeéṣe kí o ti tún ṣàkíyèsí pé àmì ìbẹ̀rẹ̀ kọ̀ọ̀kan ló ní *àmì ìparí* kan, pẹ̀lú `/` kan, àti pé a n fi àwọn element bọ̀ inú ara wọn (ìyẹn ni pé, o kò lè parí àmì pàtó kan títí di ìgbà tí gbogbo àwọn tó wà nínú rẹ̀ bá ti parí).</p> 
 
 Ó dàbí fífi àwọn nǹkan sínú àwọn àpótí. O ní àpótí nlá kan, `<html></html>`; nínú rẹ̀ ni `<body></body>`wà, àti pé ìyẹn tún kó àwọn àpótí kékeré sínú: `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+O nílò láti tẹ̀lé àwọn òfin ti àwọn àmì *ìparí*, àti ti fífi àwọn element bọ̀ inú ara wọn – tí ìwọ kò bá ṣe bẹ́ẹ̀, ó ṣeéṣe kí aṣàwákiri náà má lè túmọ̀ wọn dáadáa àti pé ojú-ìwé rẹ kò ní fojú hàn bó ṣe tọ́.
 
 ## Ṣe àwòṣe rẹ bí o ṣe fẹ́
 
@@ -150,7 +150,7 @@ Yóò fún wa ní àbájáde yìí:
 
 Yaaay! Ṣùgbọ́n títí di báyìí, àwòṣe wa máa n ṣàfihàn **ìròyìn kannáà** nìkan – nígbà tó jẹ́ pé ní ìbẹ̀rẹ̀ a n sọ̀rọ̀ nípa àwọn àwòṣe bí wọ́n ṣe n gbà wa láàyè láti ṣàfihàn ìròyìn **ọ̀tọ̀ọ̀tọ̀** pẹ̀lú **àgbékalẹ̀ kannáà**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Ohun tí a fẹ́ ṣe gan-an ni láti ṣàfihàn àwọn àwòṣe gidi tí a ṣàfikún nínú alábòójútó Django wa – ibi tó kàn tí a n lọ nìyẹn.
 
 ## Ó ṣì ku nnkan kan: ṣàgbékalẹ̀!
 
