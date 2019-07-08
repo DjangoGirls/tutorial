@@ -2,15 +2,21 @@ Existuje veľa rôznych editorov a zväčša sa vyberajú podľa osobných prefe
 
 Naše návrhy sú uvedené nižšie, ale neváhaj sa opýtať svojho mentora, aké sú jeho preferencie - bude ti jednoduchšie vedieť pomocť.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Stiahni si ho odtiaľto](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit je open-source, zdarma, dostupný pre všetky operačné systémy.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Stiahni si ho odtiaľto](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text je veľmi populárny editor so skúšobnou verziou zdarma. Je jednoduchý na inštaláciu a používanie, je dostupný pre všetky operačné systémy.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Stiahni si ho odtiaľto](https://www.sublimetext.com/3)
 
@@ -18,14 +24,14 @@ Sublime Text je veľmi populárny editor so skúšobnou verziou zdarma. Je jedno
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Stiahni si ho odtiaľto](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Prečo inštalujeme editor?
+## Why are we installing a code editor?
 
-Môže ťa zaujímať, prečo inštalujeme takýto špeciálny editor kódu, namiesto aby sme použili niečo ako Word alebo Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Prvý dôvod je, že kód musí byť **čistý text** a problém s editormi ako Word a Textedit je ten, že v skutočnosti nevytvárajú čistý text, produkujú obohatený text (s fontom a formátovaním), používajú vlastné formáty ako [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Druhý dôvod je, že editor kódu je špecializovaný na editáciu kódu, takže môže poskytovať pomocné funkcie ako zvýraznenie kódu farbou podľa jeho významu, alebo automaticky za teba uzatvárať úvodzovky.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Všetko uvidíme neskôr. Čoskoro budeš považovať svoj verný editor za svoj obľúbený nástroj. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
