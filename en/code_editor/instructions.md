@@ -2,6 +2,12 @@ There are a lot of different editors and it largely boils down to personal prefe
 
 Our suggestions are below, but feel free to ask your coach what their preferences are – it'll be easier to get help from them.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Download it here](https://code.visualstudio.com/download)
+
 ## Gedit
 
 Gedit is an open-source, free editor, available for all operating systems.
