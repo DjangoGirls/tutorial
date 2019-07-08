@@ -148,6 +148,13 @@ data-collapse=true ces-->
 > > > 
 > > > <!--endsec-->
 > > > 
+> > > > **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> > > > 
+> > > >     $ . myvenv\Scripts\activate.ps1
+> > > >     
+> > > > 
+> > > > The advantage is that you don't have to switch between editor windows and command-line windows
+> > > 
 > > > Anda akan tahu bahwa Anda memiliki ` virtualenv </ 0> dimulai saat Anda melihat bahwa prompt di konsol Anda diawali dengan <code> (myvenv) </ 0> .</p>
 
 <p>Ketika anda bekerja dalam sebuah virtual environment, <code>python` akan otomatis mengacu pada versi yang benar sehingga anda dapat menggunakan perintah `python` bukannya `python3`.
@@ -196,31 +203,27 @@ data-collapse=true ces-->
 > > > <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 > > > 
-> > > > Jika Anda mendapatkan pesan kesalahan saat memanggil pip pada platform Windows, periksa apakah pathname proyek Anda berisi spasi, aksen atau karakter khusus (misalnya, ` C: \ Users \ User Name \ djangogirls </ 0> ). Jika ya, mohon pertimbangkan untuk menggunakan tempat lain tanpa spasi, aksen atau karakter khusus (saran: <code> C: \ djangogirls </ 0> ). Buat virtualenv baru di direktori baru, lalu hapus yang lama dan coba perintah di atas lagi. (Memindahkan direktori virtualenv tidak akan berfungsi karena virtualenv menggunakan path absolut.)</p>
-</blockquote>
-
-<!--endsec-->
-
-
-> > > > 
-> > > > <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
+> > > > If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> > > 
+> > > <!--endsec-->
+> > > 
+> > > <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
-
-<blockquote>
-  <p>Baris perintah Anda mungkin membeku setelah Anda mencoba menginstal Django. Jika ini terjadi, alih-alih penggunaan perintah di atas:</p>
-  
-  <p>{% filename%} baris perintah {% endfilename%}</p>
-
-<pre><code>C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
-`</pre> </blockquote> 
+> > > 
+> > > > Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 > > > > 
-> > > > <!--endsec-->
+> > > > {% filename %}command-line{% endfilename %}
 > > > > 
-> > > > <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
+> > > >     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
+> > > >     
+> > > 
+> > > <!--endsec-->
+> > > 
+> > > <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
-> > > > 
-> > > > > Jika anda mengalami error saat memanggil pip pada Ubuntu 12.04 silahkan jalankan code berikut `python -m pip install -U --force-reinstall pip` untuk memperbaiki instalasi pip pada cirtualenv.
-> > > > 
-> > > > <!--endsec-->
-> > > > 
-> > > > That's it! You're now (finally) ready to create a Django application!
+> > > 
+> > > > If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> > > 
+> > > <!--endsec-->
+> > > 
+> > > That's it! You're now (finally) ready to create a Django application!
