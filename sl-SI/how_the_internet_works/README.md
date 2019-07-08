@@ -6,9 +6,9 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Povsem enako kot tvoje slike, glasba in filmi. Posebnost datotek, ki sestavljajo spletno stran, je le, da vsebujejo programsko kodo, ki ji rečemo HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Če še nisi nikoli programirala, se to morda sliši malce nenavadno, vendar pa spletni brskalniki (kot so Chrome, Safari, Firefox ipd.), programsko kodo HTML obožujejo. Narejeni so namreč tako, da to kodo razumejo. Razbrati znajo napisane ukaze, ki jih koda vsebuje, in po njihovih navodilih prikazati spletno stran.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Narejeni so namreč tako, da to kodo razumejo. Razbrati znajo napisane ukaze, ki jih koda vsebuje, in po njihovih navodilih prikazati spletno stran.
 
 Kot vsako datoteko, moramo tudi HTML datoteke shraniti na trdi disk računalnika. Računalnikom, na katerih so shranjene spletne strani, rečemo *strežniki*. Strežniki nimajo ekrana, miške in tipkovnice, saj je njihov glavni namen shraniti podatki in omogočiti, da si z njimi lahko postrežemo. That's why they're called *servers* – because they *serve* you data.
 
