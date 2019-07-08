@@ -1,8 +1,8 @@
 # templates در جنگو
 
-Time to display some data! Django gives us some helpful built-in **template tags** for that.
+وقت آن است که داده ها را در وبسایت نمایش دهیم. جنگو چندین **template tag** مفید در اختیار ما قرار می دهد.
 
-## What are template tags?
+## template tag چیست؟
 
 You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
 
