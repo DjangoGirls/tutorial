@@ -2,9 +2,15 @@ Napakarami mong pagpipilian pagdating sa pagsusulatan ng iyong mga proyekto at m
 
 Ang aming mga mungkahi ay nasa ibaba, pero huwag mag-atubiling magtanong sa iyong coach kung ano ang iyong mga kagustuhan - mas madaling makakuha ng tulong mula sa kanila.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Gamitin ang Atom](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Ang Gedit ay libreng open source na panulat na maaaring gamitin sa lahat ng klase ng operating systems.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Gamitin ang Atom](https://wiki.gnome.org/Apps/Gedit#Download)
 
@@ -18,14 +24,14 @@ Sublime Text is a very popular editor with a free evaluation period and it's ava
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Gamitin ang Atom](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Bakit natin ini-install ang editor ng code?
+## Why are we installing a code editor?
 
-Baka nagtataka ka kung bakit nag-install tayo ng espesyal na software na editor ng code, imbes na gumamit ng Word o Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Ang unang rason ay ang code ay kinakailangang **plain na teksto**, at ang problema ng mga programa gaya ng Word at Textedit ay hindi sila naglabas ng plain na teksto, sila ay naglabas ng rich na teksto ( na may mga istilo ng letra at istilo ng pagkalatag), gamit ang mga custom na format gaya ng [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Ang pangalawang rason ay ang mga editor na code ay natatangi para sa pag-edit ng code, kaya sila ay nagbibigay ng mga nakakatulong na mga katangian gaya ng pag-highlight ng code gamit ang kulay ayon sa kahulugan nito, o awtomatikong magsara ng mga quote para sa iyo.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Makikita natin ang mga ito na gumagana maya-maya, makapag-isip ka na ang lumang editor ng code na ito na isa sa mga paborito mong mga kagamitan. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
