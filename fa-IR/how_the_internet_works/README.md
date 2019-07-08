@@ -6,9 +6,9 @@
 
 مطمعنا شما هر روز از اینترنت استفاده می کنین. اما آیا می دانید در واقع وقتی شما آدرس مثل https://djangogirls.org را در مرورگر خود تایپ میکنید، چه اتفاقی می افتد?
 
-اولین نکته این است که، یک وب سایت شامل یک دسته از فایل های ذخیره شده بر روی هارد دیسک است. درست مثل خود فیلم، موسیقی و یا تصاویر. با این حال، یک بخش وجود دارد که برای ان وبسایت منحصر به فرد است که عبارتند از کد کامپیوتر به نام HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-If you're not familiar with programming it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers are designed to understand this code, follow its instructions, and present these files that your website is made of, exactly the way you want.
 
 As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
