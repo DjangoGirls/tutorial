@@ -72,9 +72,9 @@
 
 ## یک مورد دیگر
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+خوب است اگر بدانیم وب سایت شما روی اینترنت عمومی نیز به درستی کار میکند یا نه، درست است؟ بیایید تا دوباره انتشار آن را روی PythonAnywhere امتحان کنیم. خلاصه ای از مراحل در زیر آورده شده است…
 
-* First, push your code to GitHub
+* ابتدا کد خود را روی گیتهاب push کنید
 
 {% filename %}command-line{% endfilename %}
 
@@ -88,7 +88,7 @@ It'd be good to see if your website will still be working on the public Internet
     $ git push
     
 
-* Then, log back in to [PythonAnywhere](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one), and run:
+* سپس دوباره به [PythonAnywhere](https://www.pythonanywhere.com/consoles/) وارد شوید و به **Bash console** خود بروید ( یا یک کنسول خط فرمان جدید باز کنید)، و دستورات زیر را اجرا کنید:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -97,7 +97,7 @@ It'd be good to see if your website will still be working on the public Internet
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(به خاطر داشته باشید `<your-pythonanywhere-domain>` را با زیردامنه PythonAnywhere خود جایگزین کنید، بدون علامت های <>)
 
 * Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
 
