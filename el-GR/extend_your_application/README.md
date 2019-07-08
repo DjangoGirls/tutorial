@@ -30,12 +30,12 @@
 {% endblock %}
 ```
 
-{% raw %}Θέλουμε να έχουμε έναν σύνδεσμο (link) για κάθε τίτλο του post μέσα στη λίστα ο οποίος όταν κλικάρετε να μεταβαίνει στη σελίδα λεπτομερειών του post. Ας αλλάξουμε το `<h1><a href="">{{ post.title }}</a></h1>` έτσι ώστε να συνδέεται με τη σελίδα λεπτομερειών του post:{% endraw %}
+{% raw %}Θέλουμε να έχουμε έναν σύνδεσμο (link) για κάθε τίτλο του post μέσα στη λίστα ο οποίος όταν κλικάρετε να μεταβαίνει στη σελίδα λεπτομερειών του post. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
 {% raw %}Ώρα να εξηγήσουμε το μυστηριώδης `{% url 'post_detail' pk=post.pk %}`. Όπως υποψιάζεστε, το `{% %}` σημαίνει ότι χρησιμοποιούμε τα Django template tags. Αυτή τη φορά θα χρησιμοποιήσουμε ένα που δημιουργεί μια διεύθυνση URL για εμάς!{% endraw %}
