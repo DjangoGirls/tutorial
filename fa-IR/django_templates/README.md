@@ -20,11 +20,11 @@
 {{ posts }}
 ```
 
-این مورد را در قالب `blog/templates/blog/post_list.html` امتحان کنید. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+این مورد را در قالب `blog/templates/blog/post_list.html` امتحان کنید. آن را در ویرایشگر کد باز کنید، و هر چیزی از دومین `<div>` تا سومین `</div>` را با `{{ posts }}` جایگزین کنید. فایل را ذخیره کنید، و صفحه را برای دیدن نتیجه refresh کنید:
 
 ![عدد 13.1](images/step1.png)
 
-As you can see, all we've got is this:
+همینطوری که مشاهده می کنید، تمام چیزی که به دست آورده ایم این است:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -32,7 +32,7 @@ As you can see, all we've got is this:
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-This means that Django understands it as a list of objects. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+این به معنای آن است که جنگو {{ posts }} را به عنوان لیستی از اشیا در نظر میگیرد. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -105,4 +105,4 @@ Congrats! Now go ahead and try adding a new post in your Django admin (remember 
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
-![Figure 13.4](images/donut.png)
+![تصویر 13.4](images/donut.png)
