@@ -1,4 +1,4 @@
-# templates در جنگو
+# قالب‌ها در جنگو
 
 وقت آن است که داده ها را در وبسایت نمایش دهیم. جنگو چندین **template tag** مفید در اختیار ما قرار می دهد.
 
@@ -8,11 +8,11 @@
 
 ** template tags در جنگو ** ما را قادر می سازد تا اشیا پایتونی را به HTML انتقال دهیم، بنابراین شما میتوانید با سرعت بیشتری وبسایت های پویا توسعه دهید. چه خوب!
 
-## Display post list template
+## نمایش دادن قالب لیست پست‌های وبلاگ
 
-In the previous chapter we gave our template a list of posts in the `posts` variable. Now we will display it in HTML.
+در بخش قبلی، ما لیستی از پست ها را در قالب متغیر `posts` به template دادیم. حالا آن را به وسیله HTML نمایش میدهیم.
 
-To print a variable in Django templates, we use double curly brackets with the variable's name inside, like this:
+برای چاپ یک متغیر در template های جنگو، نام متغیر را درون دو جفت آکولاد {{ }} قرار می دهیم. مانند کد زیر :
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -20,7 +20,7 @@ To print a variable in Django templates, we use double curly brackets with the v
 {{ posts }}
 ```
 
-Try this in your `blog/templates/blog/post_list.html` template. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
+این مورد را در قالب `blog/templates/blog/post_list.html` امتحان کنید. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Save the file, and refresh the page to see the results:
 
 ![عدد 13.1](images/step1.png)
 
