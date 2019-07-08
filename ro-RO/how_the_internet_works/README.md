@@ -6,9 +6,9 @@
 
 Suntem siguri că utilizați Internetul în fiecare zi. Dar știți ce anume se întâmplă când voi întroduceți o adresă, de exemplu, https://djangogirls.org, în browser și apăsați pe `enter`?
 
-Primul lucru pe care trebuie să înțelegeți este că un website constă din fișiere păstrate pe discul hard. Precum sunt filme, musica sau fotografiile voastre. Totuși, paginile web au ceva special: conțin un cod numit HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Dacă nu sunteți familiare cu programare, ar putea fi greu să înțelegi HTML-ul la început, dar browserele tale (Chrome, Safari, Firefox, etc.) îl adoră. Browserele de web sunt făcute să înțeleagă acest cod, să-i urmeze instrucțiunile și să prezinte toate aceste fișiere din care e format website-ul tău exact așa cum vrei tu să fie prezentate.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Browserele de web sunt făcute să înțeleagă acest cod, să-i urmeze instrucțiunile și să prezinte toate aceste fișiere din care e format website-ul tău exact așa cum vrei tu să fie prezentate.
 
 Ca orice fișier, și cele care conțin HTML trebuie stocate undeva, pe un hard disk. În cazul internetului, folosim computere speciale foarte puternice numite *servere*. Ele nu au monitor, mouse sau tastatură pentru că principalul lor scop e să stocheze și să livreze date. De aceea se și numesc *servere* -- pentru că ne *servesc* date.
 
