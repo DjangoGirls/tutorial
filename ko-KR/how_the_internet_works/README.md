@@ -6,9 +6,9 @@
 
 당신은 매일 인터넷을 사용하실거에요. 하지만 당신이 브라우저 주소창에 https://djangogirls.org 를 입력하고 `enter` 키를 누르면 어떤 일이 일어나는지 확실히 알고 있나요?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. 동영상, 음악, 사진 파일처럼요. 웹사이트가 다른 파일과 다른 점은 HTML이라는 컴퓨터 코드가 들어있다는 것이에요.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-만약 프로그래밍에 익숙하지 않다면, HTML을 이해하는 게 어려울 수도 있어요. 하지만 브라우저들(크롬, 사파리, 파이어폭스 같은 것들요) 은 HTML을 사랑한답니다. 웹 프라우저는 코드를 이해하고 지시에 따르고, 내가 원하는 방식으로 정확하게 구현될 수 있도록 설계되었어요.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. 웹 프라우저는 코드를 이해하고 지시에 따르고, 내가 원하는 방식으로 정확하게 구현될 수 있도록 설계되었어요.
 
 다른 파일처럼 HTML 파일도 하드 디스크 어딘가에 저장해야합니다. 인터넷에선 *서버*라는 특별하고 강력한 컴퓨터를 사용해요. 데이터를 저장하고 제공하는 것이 주된 목적이기 때문에 모니터나 마우스, 키보드가 필요없지요. 데이터를 *제공(servers)* 하기때문에 – *서버(serve)* 라고 부릅니다.
 
