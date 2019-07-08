@@ -36,7 +36,7 @@ A nílò láti ṣàgbéwọlé àwọn fọ́ọ̀mù Django lákọ̀ọ́kọ
 
 Lẹ́yìn náà, a ní `class Meta`, níbi tí a ti máa sọ àwòṣe tó yẹ kí Django lò láti ṣẹ̀dá fọ́ọ̀mù yìí (`model = Post`).
 
-Ní ìparí, a lè sọ (àwọn) ààyè tó yẹ kó wà nínú fọ́ọ̀mù wa. In this scenario we want only `title` and `text` to be exposed – `author` should be the person who is currently logged in (you!) and `created_date` should be automatically set when we create a post (i.e. in the code), right?
+Ní ìparí, a lè sọ (àwọn) ààyè tó yẹ kó wà nínú fọ́ọ̀mù wa. Ní irú ìṣẹ̀lẹ̀ yìí, a fẹ́ kí `title` àti `text` nìkan hàn síta – ó yẹ kí `author` jẹ́ ẹni tó ti wọlé lọ́wọ́lọ́wọ́ (ìwọ!) àti pé ó yẹ kí `created_date` wà ní ètò fúnra rẹ̀ nígbà tí a bá ṣẹ̀dá àròkọ kan (ìyẹn ni pé, nínú kóòdù náà), àbí bẹ́ẹ̀ kọ?
 
 Òhun nìyẹn! Gbogbo ohun tí a nílò láti ṣe báyìí ni láti lo fọ́ọ̀mù náà nínú *view* kan kí a sì ṣàfihàn rẹ̀ nínú àwòṣe kan.
 
