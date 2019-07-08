@@ -2,15 +2,21 @@ Există o mulţime de programe diferite de editare şi, în mare măsură, alege
 
 Sugestiile noastre sunt mai jos, dar nu ezitați să întrebați trainer-ul dvs. ce preferințe au - va fi mai ușor să obțineți ajutor de la ei.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Descarcă-l de aici](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit este un editor gratuit, open-source, disponibil pentru toate sistemele de operare.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Descarcă-l de aici](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Subline Text este un editor popular cu o perioadă de evaluare nelimitată și gratuită și este disponibil pentru toate sistemele de operare.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Descarcă-l de aici](https://www.sublimetext.com/3)
 
@@ -18,14 +24,14 @@ Subline Text este un editor popular cu o perioadă de evaluare nelimitată și g
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Descarcă-l de aici](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## De ce instalăm un editor de cod?
+## Why are we installing a code editor?
 
-V-ați putea întreba de ce instalăm acest program special de editat coduri, în loc să folosim ceva precum Word sau Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-În primul rând, codul trebuie să fie **text simplu**, iar problema cu programele ca Word și Textedit este aceea că ele nu produc text simplu, ele produc text bogat (cu fonturi și formatare) folosind formatul ca [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Al doilea motiv este că editoarele de cod sunt specializate în editarea codului, astfel încât ele pot oferi funcționalități utile ca colorarea codului în funcție de semnificația lui, sau închiderea automată a ghilimelelor în locul tău.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Vom vedea toate acestea în acțiune mai târziu. În curând, vei ajunge să te gândești la vechiul tău editor de cod ca unul dintre instrumentele tale preferate. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
