@@ -142,9 +142,9 @@ O lè wá ṣeré díẹ̀ báyìí kí o gbìyànjú láti ṣe àwòṣe rẹ 
 A ti ṣẹ̀dá àwọn abala `div` mẹ́ta níbí.
 
 * Element `div` àkọ́kọ́ náà kó àkọlé blog wa sínú – ó jẹ́ àkọsórí kan àti atọ́ka kan
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Àwọn element `div` méjì mìíràn kó àwọn àròkọ blog wa sínú pẹ̀lú ọjọ́ ìtẹ̀jáde kan, `h2` pẹ̀lú àkọlé àròkọ kan tó lè gba títẹ̀ àti àwọn `p` (ìpínrọ̀) ọ̀rọ̀ méjì, ọ̀kan fún ọjọ́ náà àti ọ̀kan fún àròkọ blog wa.
 
-It gives us this effect:
+Yóò fún wa ní àbájáde yìí:
 
 ![Figure 11.4](images/step6.png)
 
