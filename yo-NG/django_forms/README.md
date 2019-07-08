@@ -32,7 +32,7 @@ class PostForm(forms.ModelForm):
 
 A nílò láti ṣàgbéwọlé àwọn fọ́ọ̀mù Django lákọ̀ọ́kọ́ (`from django import forms`) àti àwòṣe `Post` wa (`from .models import Post`).
 
-`PostForm`, bí o ṣe lérò, jẹ́ orúkọ fọ́ọ̀mù wa. We need to tell Django that this form is a `ModelForm` (so Django will do some magic for us) – `forms.ModelForm` is responsible for that.
+`PostForm`, bí o ṣe lérò, jẹ́ orúkọ fọ́ọ̀mù wa. A nílò láti sọ fún Django pé fọ́ọ̀mù yìí jẹ́ `ModelForm` kan (kí Django baà lè ṣe àwọn iṣẹ́ kan fún wa) – `forms.ModelForm` ló máa ṣe ìyẹn.
 
 Lẹ́yìn náà, a ní `class Meta`, níbi tí a ti máa sọ àwòṣe tó yẹ kí Django lò láti ṣẹ̀dá fọ́ọ̀mù yìí (`model = Post`).
 
