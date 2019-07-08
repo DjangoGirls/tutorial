@@ -6,7 +6,7 @@
 
 یک URL یک آدرس اینترنتی است. شما هربار که وبسایتی را بازدید می‌کنید می‌توانید آدرس آن را ببینید، این آدرس، در address bar یا پنجره آدرس مرورگر دیده می‌شود. (بله! `127.0.0.1:8000` یک آدرس است! و `https://djangogirls.org` هم یک آدرس است.)
 
-![Url](images/url.png)
+![آدرس](images/url.png)
 
 هر صفحه‌ای در اینترنت آدرس خود را لازم دارد. به این روش برنامه ما متوجه می‌شود که چه چیزی را باید به کاربری که یک آدرس را باز می‌کند نشان بدهد. در جنگو ما از چیزی به نام `URLconf` استفاده می‌کنیم (URL configuration). URLconf مجموعه‌ای از الگوها است که جنگو به کمک آن می‌تواند متوجه شود که آدرس درخواست شده باید به کدام نما، ارجاع داده شود.
 
@@ -33,7 +33,7 @@ urlpatterns = [
 
 به خطوط بین نقل قول سه تایی (`'''` یا `"""`) docstrings یا توضیحات سند گفته می‌شود. شما می‌توانید این توضیحات را در بالای فایل، کلاس یا تابع بنویسید و عملکرد آن را شرح دهید. این خطوط توسط پایتون اجرا نمی‌شوند.
 
-The admin URL, which you visited in the previous chapter, is already here:
+همچنین، آدرس بخش مدیریت که در بخش قبل دیده اید، اینجا وجود دارد:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,7 +41,7 @@ The admin URL, which you visited in the previous chapter, is already here:
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. در این مورد خاص، ما تعداد زیادی آدرس را اضافه کرده‌ایم که همه آن‌ها در این فایل نیامده‌اند - این شکل از خلاصه کردن آدرس‌ها خوانایی وتمیزی کدها را افزایش می‌دهد.
+معنی این خط این است که هر آدرسی که با `admin/` شروع شود، جنگو *view* مربوط به آن را پیدا خواهد کرد. در این مورد خاص، ما تعداد زیادی آدرس را اضافه کرده‌ایم که همه آن‌ها در این فایل نیامده‌اند - این شکل از خلاصه کردن آدرس‌ها خوانایی وتمیزی کدها را افزایش می‌دهد.
 
 ## اولین آدرس جنگویی شما!
 
@@ -96,8 +96,8 @@ urlpatterns = [
 
 اگر الان تلاش کنید تا به آدرس http://127.0.0.1:8000/ بروید احتمالاً با پیغام خطای موجود نبودن صفحه مواجه خواهید شد. این پیغام به خاطر این است که سرور (یادتان هست که تایپ می‌کردیم `runserver`؟) فعال نیست. به کنسول سرور نگاه کنید تا ببینید دلیل آن چیست.
 
-![Error](images/error1.png)
+![خطا](images/error1.png)
 
-کنسول سرور یک پیعام خطا نشان می‌دهد ولی نگران نباشید، ابزار سودمندی است: این پیغام خطا می‌گوید که **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+کنسول سرور یک پیعام خطا نشان می‌دهد ولی نگران نباشید، ابزار سودمندی است: این پیغام خطا می‌گوید که **no attribute 'post_list'**. این نام همان *view* است که جنگو تلاش می‌کند آن را پیدا و اجرا کند، اما ما هنوز آن را نساخته‌ایم. در این مرحله `/admin/` شما هم کار نمی‌کند. نگران نباشید، سراغ آن هم خواهیم رفت. اگر پیغام خطای دیگری دریافت کردید یک بار وب سرور را قطع و مجدداً فعال کنید. برای این کار در کنسولی که وب سرور فعال است Ctrl+C را بزنید (همزمان کلید Ctrl و کلید C را فشار دهید) و وب سرور را با اجرای دستور `python manage.py runserver` دوباره فعال کنید.
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> اگر دوست دارید در مورد URLconfs بیشتر بدانیدبه مستندات رسمی جنگو نگاهی بیندازید: https://docs.djangoproject.com/en/2.0/topics/http/urls/
