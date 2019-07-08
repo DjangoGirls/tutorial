@@ -2,9 +2,15 @@
 
 我們的建議如下，但是隨時去問其他熟人朋友他們的喜好是甚麼，比較能夠容易的從他們那邊得到幫助。
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[這裡下載](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit 是開放原始碼的、免費的編輯器，支援所有作業系統。
+Gedit is an open-source, free editor, available for all operating systems.
 
 [這裡下載](https://wiki.gnome.org/Apps/Gedit#Download)
 
@@ -18,14 +24,14 @@ Sublime Text is a very popular editor with a free evaluation period and it's ava
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[這裡下載](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## 為什麼我們要安裝程式碼編輯器？
+## Why are we installing a code editor?
 
-你可能會疑惑為什麼我們要安裝這特別的程式編輯器軟體，而不使用 Word 或記事本 (Notepad) 。
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-第一個原因，是因為程式碼必須是**純文字格式（plain text）**，而 Word 和 Textedit 這類軟體的問題是實際上不是產出純文字格式；它們使用客制化的[多文本 (RTF，Rich Text Format](https://en.wikipedia.org/wiki/Rich_Text_Format)) ，產生的是包含字體和編排格式多文本格式 (rich text)。
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-第二個原因，是程式編輯器專長用於編輯程式碼，所以它們能提供有用的功能，如：根據程式碼定義以明亮顏色強調某些程式碼，或自動加上後括弧。
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-上述這些，我們將會在後續實做中實際體會到；很快的，你將會認定你的可靠老舊程式編輯器是你最喜歡的工具之一 。:)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
