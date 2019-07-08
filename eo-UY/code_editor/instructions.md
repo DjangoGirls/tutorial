@@ -2,6 +2,12 @@ Estas multaj diversaj redaktiloj kaj la elekto esence bazu sur persona prefero. 
 
 Nia sugestoj trovis sube, sed bonvolu demandi al via trejnisto, kio estas ria prefero – plifalicos ricevi helpon de ri.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Elŝutu ĝin ĉi tie](https://code.visualstudio.com/download)
+
 ## Gedit
 
 Gedit is an open-source, free editor, available for all operating systems.
@@ -18,7 +24,7 @@ Sublime Text is a very popular editor with a free evaluation period and it's ava
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Elŝutu ĝin ĉi tie](https://atom.io/)
+[Download it here](https://atom.io/)
 
 ## Why are we installing a code editor?
 
@@ -28,4 +34,4 @@ The first reason is that code needs to be **plain text**, and the problem with p
 
 The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Ni poste vidos ĉion ĉi age. Baldaŭ vi iĝos pensanta pri via amata redaktilo kiel unu el viaj preferataj iloj. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
