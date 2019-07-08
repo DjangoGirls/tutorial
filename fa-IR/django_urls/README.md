@@ -41,23 +41,23 @@ The admin URL, which you visited in the previous chapter, is already here:
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. در این مورد خاص، ما تعداد زیادی آدرس را اضافه کرده‌ایم که همه آن‌ها در این فایل نیامده‌اند - این شکل از خلاصه کردن آدرس‌ها خوانایی وتمیزی کدها را افزایش می‌دهد.
 
-## Your first Django URL!
+## اولین آدرس جنگویی شما!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+زمان آن است که اولین آدرس خود را بسازید! ما می‌خواهیم که 'http://127.0.0.1:8000/' صفحه اصلی وبلاگ ما باشد که در آن لیستی از پست‌ها نمایش داده شود.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+همچنین می‌خواهیم که فایل `mysite/urls.py` را تمیز نگه داریم، در نتیجه آدرس‌ها را از اپلیکیشن `blog` ، در فایل اصلی آدرس‌ها `mysite/urls.py` فراخوانی می‌کنیم.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+به پیش برویم و خطی را اضافه کنیم که `blog.urls` را بارگذاری می‌کند. همچنین لازم است که خط `from django.urls…` را عوض کنید چرا که ما اینجا از تابع `include` استفاده می‌کنیم، بنابراین لازم است که شما دستور import را به این خط اضافه کنید.
 
-Your `mysite/urls.py` file should now look like this:
+فایل `mysite/urls.py` شما باید چیزی شبیه به این شده باشد:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.contrib import admin
-from django.urls import path, include
+from django.contrib import path, include
+from django.urls import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -65,7 +65,7 @@ urlpatterns = [
 ]
 ```
 
-Django will now redirect everything that comes into 'http://127.0.0.1:8000/' to `blog.urls` and looks for further instructions there.
+حالا جنگو هر درخواستی که به آدرس 'http://127.0.0.1:8000/' ارسال شود را به `blog.urls` ارسال می‌کند و دستورالعمل‌های بعدی را در آنجا جستجو می‌کند.
 
 ## blog.urls
 
