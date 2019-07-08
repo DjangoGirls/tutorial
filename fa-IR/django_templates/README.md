@@ -46,7 +46,7 @@
 
 ![عدد 13.2](images/step2.png)
 
-کار میکند! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+کار میکند! اما ما میخواهیم تا پست ها مانند پست های ایستایی که پیش از این در بخش **معرفی HTML** ساختیم، نمایش داده شود. میتوانید HTML و template tag را با هم استفاده کنید. قسمت `body` به صورت زیر خواهد بود:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -64,11 +64,11 @@
 {% endfor %}
 ```
 
-{% raw %}Everything you put between `{% for %}` and `{% endfor %}` will be repeated for each object in the list. Refresh your page:{% endraw %}
+{% raw %} هر چیزی که بین `{% for %}` و `{% endfor %}` قرار میدهید، برای هر شی در لیست تکرار میشود. صفحه خود را refresh کنید : {% endraw %}
 
 ![عدد 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
+آیا توجه کردید که این بار از نشانه گذاری متفاوتی استفاده کردیم؟ (`{{ post.title }}` یا `{{ post.text }}`)؟ We are accessing data in each of the fields defined in our `Post` model. Also, the `|linebreaksbr` is piping the posts' text through a filter to convert line-breaks into paragraphs.
 
 ## One more thing
 
