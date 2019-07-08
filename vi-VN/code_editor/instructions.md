@@ -2,15 +2,21 @@ Có rất nhiều chương trình viết code khác nhau, phần lớn thì nó 
 
 Dưới đây là gợi ý của chúng tôi, nhưng bạn cũng có thể tham khảo và nhờ tư vấn từ thầy/cô giáo của bạn để lựa chọn trình viết code phù hợp cho mình.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Download it here](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit là trình viết code mã nguồn mở, miễn phí và có thể hoạt động được ở tất cả các hệ điều hành.
+Gedit is an open-source, free editor, available for all operating systems.
 
-[Download it here](https://wiki.gnome.org/Apps/Gedit#Download)
+[Tải ở đây](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text là một trình viết code khá phổ biến, bạn được dùng thử miễn phí một thời gian ngắn, và sau đó phải trả phí. Có thể chạy được trên mọi hệ điều hành.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Tải ở đây](https://www.sublimetext.com/3)
 
@@ -18,14 +24,14 @@ Sublime Text là một trình viết code khá phổ biến, bạn được dùn
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Tải ở đây](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Vì sao chúng ta cài đặt trình viết code?
+## Why are we installing a code editor?
 
-Bạn có thể băn khoăn là tại sao chúng ta lại phải cài đặt những chương trình viết code kể trên, thay vì sử dụng Ms Word hoặc Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Lý do đầu tiên là các đoạn code cần được viết dưới **dạng văn bản thuần tuý**, vấn đề với các chương trình như Word hay Textedit là chúng không thực sự xuất ra văn bản thuần tuý, thay vào đó là văn bản phong phú (với các phông chữ và định dạng khác nhau).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Lý do thứ hai là các trình viết code được thiết kế riêng cho việc viết code, vì thế chúng cung cấp các chức năng hữu ích như làm nổi bật code theo từng ý nghĩa của code bằng các màu sắc khác nhau, hoặc tự động đóng các dấu ngoặc cho bạn.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Chúng ta sẽ thấy điều này khi bắt tay vào code. Sớm thôi, bạn sẽ nhận ra chúng hữu ích như thế nào. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
