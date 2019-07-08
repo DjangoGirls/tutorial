@@ -32,7 +32,7 @@
 <QuerySet [<Post: My second post>, <Post: My first post>]>
 ```
 
-این به معنای آن است که جنگو {{ posts }} را به عنوان لیستی از اشیا در نظر میگیرد. Remember from **Introduction to Python** how we can display lists? Yes, with for loops! In a Django template you do them like this:
+این به معنای آن است که جنگو {{ posts }} را به عنوان لیستی از اشیا در نظر میگیرد. آیا از بخش **معرفی پایتون** بخاطر دارید که چگونه میتوانیم لیست ها را نمایش دهیم؟ بله، با حلقه for ! در یک template جنگو شما این کار را به صورت زیر انجام خواهید داد:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -42,11 +42,11 @@
 {% endfor %}
 ```
 
-Try this in your template.
+این کار را در template خود امتحان کنید.
 
 ![عدد 13.2](images/step2.png)
 
-It works! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
+کار میکند! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. You can mix HTML and template tags. Our `body` will look like this:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
