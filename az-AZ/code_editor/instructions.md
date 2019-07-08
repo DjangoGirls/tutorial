@@ -2,9 +2,15 @@
 
 Bizim tövsiyyələrimiz aşağıdakılardır, amma öz müəlliminizdən də soruşa bilərsiniz.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Buradan yükləyin](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit açıq-qaynaq, ödənişsiz, bütün əməliyyat sistemlərini dəstəkləyən editordur.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Buradan yükləyin](https://wiki.gnome.org/Apps/Gedit#Download)
 
@@ -18,11 +24,11 @@ Sublime Text is a very popular editor with a free evaluation period and it's ava
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Buradan yükləyin](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Biz nəyə görə kod editor quraşdırırıq?
+## Why are we installing a code editor?
 
-Sizə maraqlı gələ bilər ki, biz nəyə görə Word yaxud Notepad istifadə etmək yerinə bu xüsusi kod editor proqramı quraşdırırıq.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
