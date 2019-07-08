@@ -29,9 +29,9 @@ urlpatterns = [
 ]
 ```
 
-As you can see, Django has already put something here for us.
+همانطور که می‌بینید، اینجا جنگو چیزهایی برای ما گذاشته است.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. They won't be run by Python.
+به خطوط بین نقل قول سه تایی (`'''` یا `"""`) docstrings یا توضیحات سند گفته می‌شود. شما می‌توانید این توضیحات را در بالای فایل، کلاس یا تابع بنویسید و عملکرد آن را شرح دهید. این خطوط توسط پایتون اجرا نمی‌شوند.
 
 The admin URL, which you visited in the previous chapter, is already here:
 
