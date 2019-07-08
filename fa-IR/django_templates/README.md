@@ -4,9 +4,9 @@
 
 ## template tag چیست؟
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+میدانیم که در کدهای HTML نمیتوانیم از کد های پایتون استفاده کنیم،به این دلیل که مرورگر نمیتواند کد پایتون را درک کند. مرورگرها فقط HTML را می فهمند. همینطور میدانیم که HTML ایستا است، در حالی که پایتون بسیار پویاتر است.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+** template tags در جنگو ** ما را قادر می سازد تا اشیا پایتونی را به HTML انتقال دهیم، بنابراین شما میتوانید با سرعت بیشتری وبسایت های پویا توسعه دهید. چه خوب!
 
 ## Display post list template
 
