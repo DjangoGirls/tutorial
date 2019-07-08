@@ -2,30 +2,36 @@
 
 ما موارد زیر را پیشنهاد می‌کنیم، اما می‌توانید از مربی خود، ترجیحش را بپرسید. راحت‌تر است از مربی کمک بگیرید.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[جهت دانلود کلیک نمایید](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit یک ویرایشگر متن باز و رایگان است که برای همه سیستم‌عاملها وجود دارد.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [جهت دانلود کلیک نمایید](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text یک ویرایشگر بسیار محبوب با دوره ارزیابی رایگان است و برای همه سیستم عامل‌ها موجود است.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [جهت دانلود کلیک نمایید](https://www.sublimetext.com/3)
 
 ## Atom
 
-اتم نیز یک ویرایشگر متن باز و رایگان محبوب است که برای سیستم های عامل ویندوز مکینتاش و لینوکس قابل استفاده می باشد. اتم توسط Github توسعه داده شده است.
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[جهت دانلود کلیک نمایید](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## چرا ویرایشگر متن نصب می‌کنیم؟
+## Why are we installing a code editor?
 
-ممکن است فکر کنید که چرا به جای استفاده از برنامه‌ای مثل Word یا Notepad، این نرم‌افزار خاص ویرایش کد را نصب می‌کنم.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-در ابتدا این که کدها نیاز دارند که به صورت متن ساده (**plain text**) باشند و مشکل برنامه‌هایی مثل Word یا Textedit این است که متن ساده تولید نمی‌کنند، بلکه متنی غنی (با فونت و قالب‌بندی) می‌سازند و از قالب‌های سفارشی مثل [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format) استفاده می‌کنند.
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-دلیل دوم این است که ویرایشگرهای متن به طور خاص برای ویرایش کد ساخته شده‌اند. بنابراین، امکاناتی مثل رنگ‌آمیزی کدها بر اساس معنایشان یا بستن خودکار نقل قول‌ها را دارند.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-همه این‌ها را بعدا در عمل خواهیم دید. به زودی، شما به ویرایشگر خود به عنوان ابزار محبوبتان نگاه خواهید کرد. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
