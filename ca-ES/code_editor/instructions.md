@@ -2,30 +2,36 @@ Hi ha molts editors de codi diferents. L'elecció d'un o d'altre editor dependr�
 
 A continuació trobaràs les nostres recomanacions. Pots demanar a la teva instructora si té alguna preferència, així li serà més fàcil ajudar-te.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Descarrega'l aquí](https://code.visualstudio.com/download)
+
 ## Gedit
 
-El Gedit és un editor gratuït, de codi obert, disponible en tots els sistemes operatius.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Descarrega'l aquí](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text és un editor molt popular del que trobem versions pels principals sistemes operatius. Es pot descarregar i utilitzar gratuïtament durant un període d'avaluació indefinit.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Descarrega'l aquí](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom és un altre editor popular. És gratuït, de codi obert i disponible per Windows, OS X i Linux. Atom és desenvolupat per [GitHub](https://github.com/).
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Descarrega'l aquí](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Com és que instal·lem un editor de codi?
+## Why are we installing a code editor?
 
-Segurament et preguntes per què estem instal·lant un programari especial d'edició de codi enlloc de fer servir alguna cosa com el Word o el Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-La primera raó és que el codi s'ha d'emmagatzemar en **text pla**. El problema amb programes com el Word o el TextEdit és que, per defecte, no produeixen text pla. Produeixen text enriquit (amb fonts i format), utilitzant formats personalitzats com el [RTF (Format de Text Enriquit -Rich Text Format -)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-La segona raó és que els editors de codi s'han especialitzat precisament en això, en editar codi. Així doncs, proporcionen característiques útils com acolorir el text del codi en funció del seu significat o tancar-te automàticament els parèntesis.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Més endavant veurem tot això a la pràctica. Aviat consideraràs el teu antic i fidel editor de codi com una de les teves eines favorites. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
