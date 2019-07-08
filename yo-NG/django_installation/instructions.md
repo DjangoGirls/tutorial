@@ -144,6 +144,13 @@ Rántí láti rọ́pò `myvenv` pẹ̀lú orúkọ `virtualenv` rẹ tó o yàn
 
 <!--endsec-->
 
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> The advantage is that you don't have to switch between editor windows and command-line windows
+
 Ìwọ yíò mọ̀ pé o ti bẹ̀rẹ̀ `virtualenv` nígbà tí o bá rí `(myvenv)` níwájú prompt náà nínú console rẹ.
 
 Nígbà tí o bá n ṣiṣẹ́ nínú àyíká àìrí kan, `python` fúnra rẹ̀ yíò tọ́ka sí ẹyà tó yẹ, nítorí náà o lè lo `python` dípò `python3`.
@@ -192,14 +199,14 @@ Ní báyìí, ṣe `pip install -r requirements.txt` láti ṣàgbékalẹ̀ Dja
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Tí o bá rí àṣìṣe kan nígbà tí o n pe pip lórí ètò Windows, jọ̀wọ́ ṣàyẹ̀wò bóyá orúkọ atọ́nà iṣẹ́ rẹ ní àwọn àlàfo, àmì ohùn tàbí àkànṣe ẹyọ ọ̀rọ̀ (fún àpẹẹrẹ, `C:\Users\User Name\djangogirls`). Tó bá ní, jọ̀wọ́ ṣàgbéyẹ̀wò lílo ibòmíràn láìsí àwọn àlàfo, àmì ohùn tàbí àkànṣe ẹyọ ọ̀rọ̀ (àbá: `C:\djangogirls`). Ṣẹ̀dá virtualenv tuntun kan sínú àkójọpọ̀ fáìlì tuntun náà, lẹ́yìn náà yọ ti tẹ́lẹ̀ kúrò kí o sì gbìyànjú àṣẹ tó wà lókè náà lẹ́ẹ̀kan si. (Gbígbé àkójọpọ̀ fáìlì virtualenv náà kò ní ṣiṣẹ́ nítorí pé virtualenv má n lo àwọn atọ́nà pípé.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Ìlà ìpàṣẹ rẹ lè dúró gbọn-in lẹ́yìn ìgbà tí o gbìyànjú láti ṣàgbékalẹ̀ Django. Tí èyí bá ṣẹlẹ̀, dípò àṣẹ tó wà lókè náà, lo:
+> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -211,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Tí o bá rí àṣìṣe kan nígbà to bá n pe pip lórí Ubuntu 12.04, jọ̀wọ́ ṣe `python -m pip install -U --force-reinstall pip` láti ṣàtúnṣe ìṣàgbékalẹ̀ pip nínú virtualenv náà.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
