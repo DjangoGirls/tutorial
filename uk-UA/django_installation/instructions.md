@@ -144,6 +144,13 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> The advantage is that you don't have to switch between editor windows and command-line windows
+
 You will know that you have `virtualenv` started when you see that the prompt in your console is prefixed with `(myvenv)`.
 
 Під час роботи у віртуальному середовищі, `python` буде автоматичному посилатися на правильну версію, отже ви можете використовувати `python` замість `python3`.
@@ -211,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Якщо виникла помилка під час запуску pip на Ubuntu 12.04, будь ласка, запустіть `python -m pip install -U --force-reinstall pip` щоб коректно перевстановити pip у віртуальному середовищі.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
