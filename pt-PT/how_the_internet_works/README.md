@@ -6,9 +6,9 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Tal como os teus filmes, música ou fotos. No entanto, há uma coisa que é única dos websites: incluem código chamado HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Se não és familiar com programação pode ser difícil perceber HTML ao início, mas os teus browsers (como o Chrome, Safari, Firefox, etc) adoram-no. Browsers são desenhados para perceber este código, seguir as suas instruções, e apresentar estes ficheiros que constroem o teu site exactamente da forma que queres.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Browsers são desenhados para perceber este código, seguir as suas instruções, e apresentar estes ficheiros que constroem o teu site exactamente da forma que queres.
 
 Como com qualquer outro ficheiro, precisamos de guardar ficheiros HTML num disco rígido. Para a Internet, usamos computadores especiais e poderosos chamados *servidores*. Estes não tem um monitor, rato nem teclado, porque o seu propósito principal é guardar e enviar dados. That's why they're called *servers* – because they *serve* you data.
 
