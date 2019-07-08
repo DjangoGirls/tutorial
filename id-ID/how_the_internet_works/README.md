@@ -6,9 +6,9 @@
 
 Kami yakin Anda menggunakan internet setiap hari. Tapi apakah Anda benar-benar tahu apa yang terjadi saat Anda mengetikkan alamat seperti https://djangogirls.org ke browser Anda dan tekan `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Sama seperti film, musik, atau gambar Anda. Namun, ada satu bagian yang unik untuk situs web: termasuk kode komputer yang disebut HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Jika Anda tidak terbiasa dengan pemrograman, akan sulit untuk memahami HTML pada awalnya, namun browser web Anda (seperti Chrome, Safari, Firefox, dll.) Menyukainya. Browser web dirancang untuk memahami kode ini, ikuti instruksinya, dan tunjukkan file-file ini yang dibuat oleh situs web Anda, persis seperti yang Anda inginkan.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Browser web dirancang untuk memahami kode ini, ikuti instruksinya, dan tunjukkan file-file ini yang dibuat oleh situs web Anda, persis seperti yang Anda inginkan.
 
 Seperti pada setiap file, kita perlu menyimpan file HTML di suatu tempat pada hard disk. Untuk internet, kami menggunakan khusus, kuat komputer disebut *server*. Mereka tidak memiliki layar, mouse atau keyboard, karena mereka tujuan utama adalah untuk menyimpan data dan melayani. Itu sebabnya mereka disebut *server* - karena mereka *melayani* data Anda.
 
