@@ -6,9 +6,9 @@
 
 Sa tingin namin ay araw-araw kang gumagamit ng Internet. Pero alam mo ba kung ano talaga ang nangyari kapag nag-type ka na address gaya ng https://djangogirls.org sa iyong browser at pinindot ang `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Gaya ng mga palabas, musika o mga larawan. Ngunit, may isang parte na pambihira sa mga website: naglalaman ito ng computer code na tinatawag na HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Kung hindi mo kabisado ang pagpoprogram, maaring mahirap intindihin ang HTML sa una, pero ang mga browser mo (gaya ng Chrome, Safari, Firefox, at iba pa) ay nagkagusto dito. Ang mga web browser ay ginawa para magbasa ng code, sumunod sa mga instruksyon, at magpresenta sa mga file na ito na bumuo sa iyong website, eksakto kung paano mo ito gusto.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Ang mga web browser ay ginawa para magbasa ng code, sumunod sa mga instruksyon, at magpresenta sa mga file na ito na bumuo sa iyong website, eksakto kung paano mo ito gusto.
 
 Sa bawat file, kailangan nating ilagay ang mga HTML files sa hard disk. Para sa Internet, gagamit tayo ng espesyal, malalakas na mga kompyuter na tinatawag na *servers*. Wala silang screen, mouse o keyboard, dahil ang pangunahin gamit lang nila ay magstore ng datos at magsilbi nito. Kaya sila tinawag na *servers* - dahil sila ay *tagasilbi* ng iyong mga datos.
 
