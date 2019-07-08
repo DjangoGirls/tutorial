@@ -6,9 +6,9 @@
 
 We bet you use the Internet every day. But do you actually know what happens when you type an address like https://djangogirls.org into your browser and press `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. 就像是你電腦裡的眾多影片、音樂和照片。 即便如此，網站的組成中還是有一部分是獨一無二的：他們都含有一種叫做「HTML」的程式碼。
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-如果你還不熟悉編程，你一開始可能會有點難理解什麼叫做 HTML，但是你的網站瀏覽器(像是 Chrome, Safari, Firefox 等等) 超愛它。 網站瀏覽器就是設計出來讀懂 Html 的，遵循它的架構及切切實實地展示你希望瀏覽器展示的所有檔案。
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. 網站瀏覽器就是設計出來讀懂 Html 的，遵循它的架構及切切實實地展示你希望瀏覽器展示的所有檔案。
 
 我們需要將 HTML 檔案們，及其所包含的所有檔案存在硬碟的某處。 為了放上網際網路，我們使用了特別且強悍的電腦 -- 稱為 伺服器 *server* 。 這些伺服器不需要螢幕、滑鼠甚至是鍵盤，因為這些電腦的主要目的就是儲存這些資料並且提供服務。 That's why they're called *servers* – because they *serve* you data.
 
