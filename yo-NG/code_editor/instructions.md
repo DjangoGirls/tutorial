@@ -2,30 +2,36 @@ Oríṣiríṣi àwọn olóòtú ló wà àti pe ó dá lórí èyí tó yàn l
 
 Àwọn àbá wa wà nísàlẹ̀, ṣùgbọ́n má tijú láti béèrè lọ́wọ́ olùkọ́ rẹ nípa nnkan tí ààyò wọ́n jẹ́ - yóò rọrùn láti gba ìrànlọ́wọ́ láti lọ́dọ̀ wọn.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Gbà á níbí](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit jẹ́ olóòtú orísun gbangba kan tó wà lọ́fèé fún gbogbo àwọn ètò ìṣiṣẹ́ kọ̀mpútà.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Gbà á níbí](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text jẹ́ olóòtú kan tó gbajúmọ̀ gan-an pẹ̀lú àkókò àgbéyẹ̀wò ọ̀fẹ́ kan tí ó sì wà fún gbogbo àwọn ètò ìṣiṣẹ́ kọ̀mpútà.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Gbà á níbí](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom jẹ́ olóòtú tó gbajúmọ̀ mìíràn. Ọ̀fẹ́ ni, ó ní orísun gbangba àti pé ó wà fún Windows, OS X àti Linux. [GitHub](https://github.com/) ló gbé Atom jáde.
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Gbà á níbí](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Kí nìdí tí a fí n ṣàgbékalẹ̀ olóòtú kóòdù kan?
+## Why are we installing a code editor?
 
-O lè máa ṣe kàyéfì pé kí nìdí tí a fí n ṣàgbékalẹ̀ àkànṣe ètò olóòtú kóòdù yìí, dípò lílo nnkan bíi Word tàbí Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Ìdí àkọ́kọ́ náà ni pé kóòdù nílò láti jẹ́ **ọ̀rọ̀ lásán**, àti pé ìṣòro tó wà pẹ̀lú àwọn ètò bíi Word àti Textedit ni pé wọn kìí gbé ọ̀rọ̀ lásán jáde, wọ́n má n gbé ọ̀rọ̀ tó lẹ́wà jáde (pẹ̀lú àwọn ìrísí-lẹ́tà àti gbígbé kalẹ̀), pẹ̀lú lílo àwọn àkànṣe àgbékalẹ̀ bíi [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Ìdí kejì náà ni pé àwọn olóòtú kóòdù jẹ́ àkànṣe fún títẹ̀jáde kóòdù, kí wọ́n ba lè pèsè àwọn ohun tó wúlò bíi ṣíṣe àgbéyọ kóòdù pẹ̀lú àwọ̀ ní ìbámu pẹ̀lú ìtumọ̀ rẹ̀, tàbí píparí àwọn àmì àyọlò fún ẹ fúnra wọn.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-A ma rí gbogbo èyí nínú iṣẹ́ tó bá yá. Láìpẹ́, ìwọ yóò wá ronú nípa olóòtú kóòdù àtijọ́ rẹ tó gbẹ́kẹ̀lẹ́ gẹ́gẹ́ bí ọ̀kan nínú àwọn irinṣẹ́ tó yàn láàyò. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
