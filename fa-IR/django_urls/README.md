@@ -8,9 +8,9 @@
 
 ![Url](images/url.png)
 
-Every page on the Internet needs its own URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+هر صفحه‌ای در اینترنت آدرس خود را لازم دارد. به این روش برنامه ما متوجه می‌شود که چه چیزی را باید به کاربری که یک آدرس را باز می‌کند نشان بدهد. در جنگو ما از چیزی به نام `URLconf` استفاده می‌کنیم (URL configuration). URLconf مجموعه‌ای از الگوها است که جنگو به کمک آن می‌تواند متوجه شود که آدرس درخواست شده باید به کدام نما، ارجاع داده شود.
 
-## How do URLs work in Django?
+## آدرس ها در جنگو چطور کار می‌کنند؟
 
 Let's open up the `mysite/urls.py` file in your code editor of choice and see what it looks like:
 
