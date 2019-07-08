@@ -6,9 +6,9 @@
 
 เรารู้ว่าคุณใช้อินเทอร์เน็ตแทบทุกวัน แต่คุณรู้ไหมว่าจริงๆ แล้ว เวลาที่คุณพิมพ์ที่อยู่เว็บ เช่น https://djangogirls.org และกดปุ่ม `enter` มันมีอะไรเกิดขึ้นบ้าง?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. เช่นเดียวกับไฟล์ภาพยนต์ เพลง หรือรูปภาพ แต่สิ่งที่ทำให้เว็บไซต์นั้นต่างออกไปคือ: เว็บไซต์มีการรวมรหัสคอมพิวเตอร์ไปด้วย ซึ่งเรียกว่า HTML
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-หากคุณไม่คุ้นเคยกับการเขียนโปรแกรมเลย อาจจะยากสักหน่อยที่จะเข้าใจ HTML ในครั้งแรก แต่เว็บเบราว์เซอร์ของคุณนั้น​ (เช่น Chrome, Safari, Firefox และอื่นๆ) รักมันเลยล่ะ เว็บเบราว์เซอร์ถูกออกแบบมาเพื่อทำความเข้าใจรหัสเหล่านี้ ทำตามคำสั่งและแสดงผลจาไฟล์เว็บไซต์ของคุณ ให้ตรงกับสิ่งที่คุณต้องการ
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. เว็บเบราว์เซอร์ถูกออกแบบมาเพื่อทำความเข้าใจรหัสเหล่านี้ ทำตามคำสั่งและแสดงผลจาไฟล์เว็บไซต์ของคุณ ให้ตรงกับสิ่งที่คุณต้องการ
 
 เช่นเดียวกับไฟล์ทุกไฟล์ เราต้องการเก็บไฟล์ HTML ลงบนฮาร์ดดิสก์ สำหรับอินเทอร์เน็ตนั้น เราใช้เครื่องคอมพิวเตอร์พิเศษ และทรงพลัง เรียก่วา *servers* คอมพิวเตอร์เหล่านี้ ไม่มีหน้าจอ เมาส์ หรือแป้นพิมพ์ เพราะหน้าที่หลักคือการเก็บข้อมูลและให้บริการข้อมูลเหล่านี้ นั่นคือที่มาของชื่อ *servers* เพราะพวกเขา *serve* ข้อมูลให้คุณ
 
