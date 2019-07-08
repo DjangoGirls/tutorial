@@ -2,30 +2,36 @@ Choisir un éditeur de texte parmi tous ceux qui sont disponibles est surtout un
 
 Nos suggestions sont listées ci-dessous, mais n'hésitez pas à demander à vos coachs quelles sont leurs préférences - il sera plus facile d'obtenir de l'aide de leur part.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Télécharger](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit est un éditeur libre et gratuit disponible pour tout les systèmes d'exploitation.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Télécharger](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text est un éditeur très populaire avec une période d'évaluation gratuite et il est disponible pour tous les systèmes d'exploitation.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Télécharger](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom est un autre éditeur populaire. Il est gratuit, ouvert et disponible pour Windows, macOS et Linux. Atom est développé par [GitHub](https://github.com/).
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Télécharger](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Pourquoi installer un éditeur de texte?
+## Why are we installing a code editor?
 
-Vous vous demandez sûrement pourquoi nous vous faisons installer un éditeur spécialement créé pour écrire du code. Pourquoi ne pourrions nous pas simplement utiliser un éditeur de texte comme Word ou Notepad ?
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-La première raison est que le code doit être écrit en **texte brut**. Le problème avec des applications comme Word ou Textedit, c'est qu'elles ne produisent pas de texte brut mais du texte enrichi (avec des polices et de la mise en page), basé sur des standards du type[RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-La deuxième raison est que les éditeurs de code sont spécialisés pour l'édition de code, de sorte qu'ils peuvent fournir des fonctionnalités utiles telles que surligner du code avec de la couleur en fonction de son sens, ou fermer automatiquement des guillemets pour vous.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Nous allons voir tout cela en action plus tard. Bientôt, vous allez venir à penser à votre bon vieux éditeur de code comme l'un de vos outils préférés. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
