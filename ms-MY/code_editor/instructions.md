@@ -2,9 +2,15 @@ Terdapat banyak penyunting yang berbeza dan kebanyakannya bergantung kepada pili
 
 Cadangan kami di bawah, tetapi berasa bebas untuk meminta jurulatih anda apa yang mereka suka - ia akan lebih mudah untuk mendapatkan bantuan daripada mereka.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Muat turun di sini](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit merupakan penyunting sumber terbuka yang percuma, disediakan untuk semua sistem operasi.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Muat turun di sini](https://wiki.gnome.org/Apps/Gedit#Download)
 
@@ -18,14 +24,14 @@ Sublime Text is a very popular editor with a free evaluation period and it's ava
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Muat turun di sini](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Mengapa kita memerlukan Penyunting Kod?
+## Why are we installing a code editor?
 
-Anda mungkin tertanya-tanya mengapa kami memasang perisian Penyunting Kod khas ini, dan bukannya menggunakan perisian seperti Word atau Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Alasan kedua adalah bahawa editor kod khusus untuk kod penyuntingan, sehingga mereka dapat memberikan ciri-ciri berguna seperti menyoroti kod dengan warna mengikut maknanya, atau tanda kutip secara automatik untuk anda.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Kita akan lihat semua ini dalam tindakan kemudian. Tidak lama lagi, anda akan memikirkan editor kod lama anda yang dipercayai sebagai salah satu alat kegemaran anda. :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
