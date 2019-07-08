@@ -265,7 +265,7 @@ O lè ti ṣàkíyèsí pé a n ṣètò ọjọ́ ìtẹ̀jáde ṣáájú tít
 
 Ìyẹn dára púpọ̀!
 
-> Nítorí pé a lo atọ́kùn alábòójútó Django náà láìpẹ́, ètò náà n lérò lọ́wọ́lọ́wọ́ pé a kò tíì jáde. There are a few situations that could lead to us being logged out (closing the browser, restarting the DB, etc.). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
+> Nítorí pé a lo atọ́kùn alábòójútó Django náà láìpẹ́, ètò náà n lérò lọ́wọ́lọ́wọ́ pé a kò tíì jáde. Àwọn ìṣẹ̀lẹ̀ díẹ̀ kan wà tó lè yọrí sí jíjáde wa (pípa aṣàwákiri náà dé, ṣíṣe àtúnbẹ̀rẹ̀ DB náà, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ). If, when creating a post, you find that you are getting errors referring to the lack of a logged-in user, head to the admin page http://127.0.0.1:8000/admin and log in again. This will fix the issue temporarily. There is a permanent fix awaiting you in the **Homework: add security to your website!** chapter after the main tutorial.
 
 ![Àṣìṣe wíwọlé](images/post_create_error.png)
 
