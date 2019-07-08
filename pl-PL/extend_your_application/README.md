@@ -30,12 +30,12 @@ Zaczniemy od dodania linku wewnątrz pliku `blog/templates/blog/post_list.html`.
 {% endblock %}
 ```
 
-{% raw %}Chcemy, aby tytuł wpisu był linkiem prowadzącym do strony ze szczegółami wpisu. Zmieńmy `<h1><a href="">{{ post.title }}</a></h1>`, aby zawierał link do strony szczegółów wpisu:{% endraw %}
+{% raw %}Chcemy, aby tytuł wpisu był linkiem prowadzącym do strony ze szczegółami wpisu. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
 {% raw %}Czas wyjaśnić, co oznacza tajemnicze `{% url 'post_detail' pk=post.pk %}`. Jak można podejrzewać, zapis `{% %}` oznacza, że używamy tagów szablonu Django. Tym razem używamy takiego, który generuje dla nas adres URL!{% endraw %}
