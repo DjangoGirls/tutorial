@@ -6,9 +6,9 @@
 
 Stavíme sa, že Internet používaš každý deň. Ale vieš, čo sa deje, keď napíšeš adresu, ako https://djangogirls.org do prehliadača a stlačíš `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Podobne ako tvoje filmy, hudba a obrázky. Ale je tu jedna časť, ktorá je špecifická pre webové stránky: obsahujú počítačový kód nazývaný HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Pokiaľ nemáš skúsenosti s programovaní, môže byť pochopenie HTML zo začiatku zložité, ale tvoj webový prehliadač (ako Chrome, Safari, Firefox atď.) ho milujú. Webové prehliadače sú navrhnuté na to, aby rozumeli kódu, nasledovali jeho inštrukcie a prezentovali súbory, ktoré tvoria tvoju webovú stránku presne tak, ako to chceš.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Webové prehliadače sú navrhnuté na to, aby rozumeli kódu, nasledovali jeho inštrukcie a prezentovali súbory, ktoré tvoria tvoju webovú stránku presne tak, ako to chceš.
 
 Ako s každým súborom, potrebujeme uložiť HTML súbor niekde na pevnom disku. V prípade Interntu používame špeciálne, výkonné počítače nazývane *servery*. Nemajú obrazovku, myš alebo klávesnicu, pretože ich hlavnou úlohou je ukladať dáta a poskytovať ich. Preto ich voláme *serveri* -- pretože *poskytujú* (anglicky serve) tvoje dáta.
 
