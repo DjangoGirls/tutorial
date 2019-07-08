@@ -2,30 +2,36 @@ Birçok farklı kod editörü var, hangi editörü kullanacağınız kişisel te
 
 Bizim tavsiyelerimiz aşağıdakiler, ama mentörünüze danışmak isteyebilirsiniz.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Buradan indirin](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit açık kaynaklı, ücretsiz bir editördür. Tüm işletim sistemlerinde kullanılabilir.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Buradan indirin](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text, ücretsiz deneme süresi olan çok popüler bir editördür ve tüm işletim sistemleri için mevcuttur.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Buradan indirin](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom başka bir popüler editör. Ücretsiz, açık kaynaklı ve Windows, OS X ve Linux için kullanılabilir. Atom  GitHub </ 0> tarafından geliştirilmiştir.</p> 
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Buradan indirin](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Neden bir kod editörü kuruyoruz?
+## Why are we installing a code editor?
 
-Neden Word ya da Notepad kullanmak yerine, özel bir kod editörü yazılımı kurduğumuzu merak ediyor olabilirsiniz.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Birinci nedeni yazdığımız kodun **sade yazı** olması gerektiği içindir ki Word gibi programlar sade yazı üretmezler (font ve şekillendirme desteklerler) ve [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format) gibi özel formatlar kullanılar.
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-İkinci sebep ise kod editörlerinin kod düzenlemeye destek vermek - örneğin özel kelimeleri renklendirme ve otomatik parantez kapatma gibi - için özelleşmiş olmasıdır.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Bütün bunları birazdan deneyimleyeceğiz. Yakında kod editörünüz güvenilir bir eski dostunuz gibi olacaktır :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
