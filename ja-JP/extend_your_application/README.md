@@ -30,12 +30,12 @@
 {% endblock %}
 ```
 
-{% raw %}投稿リストの投稿のタイトルから投稿の詳細ページへのリンクを作りたいです。 投稿の詳細ページにリンクするように`<h1><a href="">{{ post.title }}</a></h1>`を変更しましょう。{% endraw %}
+{% raw %}投稿リストの投稿のタイトルから投稿の詳細ページへのリンクを作りたいです。 Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
-<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
 {% raw %}不思議な` {％ url 'post_detail' pk = post.pk ％}`を説明します。 気づいたかもしれませんが、`{% %}`という表記はDjangoのテンプレートタグを使用していることを意味しています。 今私たちはこれをURLを作るために使います！{% endraw %}
