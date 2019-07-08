@@ -6,9 +6,9 @@
 
 A lérò pé o n lo Íńtánẹ́ẹ̀tì náà lójoojúmọ́. Ṣùgbọ́n ṣé o mọ ohun tó ṣẹlẹ̀ nígbà tí o tẹ àdírẹ́ẹ̀sì kan bíi https://djangogirls.org sínú aṣàwákiri rẹ tí o sì tẹ `enter`?
 
-Nnkan àkọ́kọ́ tí o nílò láti mọ̀ ni pé ààyè ayélujára kan jẹ́ àpapọ̀ àwọn fáìlì kan tí a tọ́jú sórí ibi ìpamọ́ kan. Gẹ́gẹ́ bí àwọn fídíò, orin, tàbí àwòrán rẹ. Àmọ́ o, apá kan wà tó jẹ́ àkànṣe fún àwọn ààyè ayélujára: wọ́n kó kóòdù kọ̀mpútà tí a n pè ní HTML sínú.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Tí ìwọ kò bá fi bẹ́ẹ̀ mọ̀ nípa kóòdù kíkọ ó lè ṣòro láti mọ HTML lákọ̀ọ́kọ́, ṣùgbọ́n àwọn aṣàwákiri ayélujára rẹ (bíi Chrome, Safari, Firefox, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ) nífẹ̀ẹ́ sí i. A ṣètò àwọn aṣàwákiri ayélujára láti lóye kóòdù yìí, tẹ̀lé àwọn ìtọ́sọ́nà rẹ̀, àti ṣàgbékalẹ̀ àwọn fáìlì wọ̀nyí tí ààyè ayélujára rẹ kó sínú, bí o ṣe fẹ́ kó rí gan-an.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. A ṣètò àwọn aṣàwákiri ayélujára láti lóye kóòdù yìí, tẹ̀lé àwọn ìtọ́sọ́nà rẹ̀, àti ṣàgbékalẹ̀ àwọn fáìlì wọ̀nyí tí ààyè ayélujára rẹ kó sínú, bí o ṣe fẹ́ kó rí gan-an.
 
 Gẹ́gẹ́ bí ó ti rí pẹ̀lú gbogbo fáìlì, a nílò láti tọ́jú àwọn fáìlì HTML sí ibìkan lórí ibi ìpamọ́ kan. Fún Íńtánẹ́ẹ̀tì náà, a má n lo àwọn àkànṣe kọ̀mpútà tó lágbára púpọ̀ tí a n pè ní àwọn *server*. Wọn kò ní ojú àwòrán kan, atọ́ka tàbí pẹpẹ bọ́tìnnì kan, nítorí pé ìdí pàtàkì wọn ní láti tọ́jú dátà àti pèsè rẹ̀. Ìdí nìyẹn tí a fí n pè wọ́n ní àwọn *server* – nítorí pé wọ́n *pèsè (serve)* dátà fún ẹ.
 
