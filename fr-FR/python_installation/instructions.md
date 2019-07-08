@@ -56,13 +56,20 @@ It is very likely that you already have Python installed out of the box. To chec
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a newer version, you can install it as follows:
+If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+
+{% filename %}command-line{% endfilename %}
+
+    $ grep ^NAME= /etc/os-release
+    
+
+Afterwards, depending on the result, follow one of the following installation guides below this section.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Tapez cette commande dans votre terminal :
+Type this command into your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -74,11 +81,11 @@ Tapez cette commande dans votre terminal :
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Tapez cette commande dans votre terminal :
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
-    sudo dnf install python3
+    $ sudo dnf install python3
     
 
 If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
@@ -88,7 +95,7 @@ If you're on older Fedora versions you might get an error that the command `dnf`
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Tapez cette commande dans votre terminal :
+Use this command in your console:
 
 {% filename %}command-line{% endfilename %}
 
@@ -105,7 +112,7 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-La version affichée peut être différente de 3.6.1 -- elle devrait correspondre à la version que vous avez installée.
+The version shown may be different from 3.6.1 -- it should match the version you installed.
 
 **NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
 
