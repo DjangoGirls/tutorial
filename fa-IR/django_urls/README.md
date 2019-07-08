@@ -1,10 +1,10 @@
-# Django URLs
+# آدرس دهی در جنگو
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+ما در آستانه ساخت اولین صفحه وب هستیم: یک صفحه برای وبلاگ شما! ولی قبل از آن بیایید کمی در مورد آدرس دهی در جنگو یادبگیریم.
 
-## What is a URL?
+## URL چیست؟
 
-A URL is a web address. You can see a URL every time you visit a website – it is visible in your browser's address bar. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+یک URL یک آدرس اینترنتی است. شما هربار که وبسایتی را بازدید می‌کنید می‌توانید آدرس آن را ببینید، این آدرس، در address bar یا پنجره آدرس مرورگر دیده می‌شود. (بله! `127.0.0.1:8000` یک آدرس است! و `https://djangogirls.org` هم یک آدرس است.)
 
 ![Url](images/url.png)
 
