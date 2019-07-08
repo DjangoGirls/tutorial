@@ -34,7 +34,7 @@ We will start with adding a link inside `blog/templates/blog/post_list.html` fil
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 ```html
-<h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+<h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
 {% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
