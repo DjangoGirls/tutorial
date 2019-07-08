@@ -2,30 +2,36 @@
 
 Ниже приведен перечень наших предпочтений, но также можешь попросить совета у своего наставника - будет проще получить помощь от него.
 
+## Visual Studio Code
+
+Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+
+[Скачать его можно здесь](https://code.visualstudio.com/download)
+
 ## Gedit
 
-Gedit является открытым, бесплатным редактором, доступным для всех операционных систем.
+Gedit is an open-source, free editor, available for all operating systems.
 
 [Скачать его можно здесь](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text - это очень популярный текстовый редактор с бесплатным пробным периодом. Он легко устанавливается и прост в использовании, а также доступен для всех операционных систем.
+Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
 
 [Скачать его можно здесь](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom - еще один популярный редактор. Он бесплатный, с открытым исходным кодом и доступен для Windows, OS X и Linux. Atom разработан [GitHub](https://github.com/).
+Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Скачать его можно здесь](https://atom.io/)
+[Download it here](https://atom.io/)
 
-## Зачем нам нужен редактор кода?
+## Why are we installing a code editor?
 
-Ты можешь спросить - зачем устанавливать отдельную программу для редактирования кода, если можно использовать Word или Notepad.
+You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
-Во-первых, код должен должен храниться в виде **простого текста**, а проблема таких программ, как Word или Textedit в том, что они не сохраняют файлы в этом виде, а используют "обогащенный" текст (с форматированием и шрифтами), например, [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-Вторая причина в том, что специализированные редакторы созданы именно для работы с кодом и имеют дополнительные удобные возможности, например, подсветку кода в соответствии с его значением или автоматически закрывающиеся кавычки.
+The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
-Позже мы увидим все это в действии. Скоро ты начнешь думать о своем редакторе кода как о проверенном любимом инструменте :)
+We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
