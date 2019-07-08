@@ -277,7 +277,7 @@ Gbìyànjú láti tọ́jú fọ́ọ̀mù náà láìsí `title` àti `text`. K
 
 ![Fífìdí fọ́ọ̀mù múlẹ̀](images/form_validation2.png)
 
-Django is taking care to validate that all the fields in our form are correct. Isn't it awesome?
+Django n gbìyànjú láti fẹsẹ̀múlẹ̀ pé gbogbo àwọn ààyè tó wà nínú fọ́ọ̀mù wa wà bó ṣe tọ́. Ṣé kò dára ni?
 
 ## Fọ́ọ̀mù àtúnṣe
 
