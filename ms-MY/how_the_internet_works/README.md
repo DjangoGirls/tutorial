@@ -6,9 +6,9 @@
 
 Kami yakin anda menggunakan Internet setiap hari. Tapi apakah anda benar-benar tahu apa yang terjadi ketika anda jenis alamat seperti https://djangogirls.org ke pelayar anda dan tekan `masuk`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk. Hanya seperti filem anda, music, atau gambar. Bagaimanapun, ada satu bagian yang unik untuk laman websites: mereka termasuk kode komputer yang dipanggil HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
 
-Jika anda tidak akrab dengan program itu akan sulit untuk memahami HTML pada mulanya, tetapi anda web browser (seperti Chrome, Safari, Firefox, dan lain-lain.) cinta itu. Web browser direka untuk memahami kode ini, mengikut arahan, dan sekarang ini fail bahawa laman web anda dibuat, persis seperti yang anda inginkan.
+If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browser direka untuk memahami kode ini, mengikut arahan, dan sekarang ini fail bahawa laman web anda dibuat, persis seperti yang anda inginkan.
 
 Seperti dengan setiap file, kita perlu simpan fail HTML di suatu tempat di hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
 
