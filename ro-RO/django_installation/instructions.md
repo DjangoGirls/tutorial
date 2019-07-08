@@ -144,6 +144,13 @@ Nu uitați să înlocuiţi `myvenv` cu numele `virtualenv`-ului ales!
 
 <!--endsec-->
 
+> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> The advantage is that you don't have to switch between editor windows and command-line windows
+
 O să aflați că `virtualenv` s-a pornit când veți vedea că prompt-ul în linie de comandă este prefixat cu `(myvenv)`.
 
 Atunci când lucrați într-un environment-ul virtual, `python` se va refera automat la versiunea corectă astfel încât puteţi utiliza `python` în loc de `python3`.
@@ -192,14 +199,14 @@ Acum executați `pip install -r requirements.txt` pentru a instala Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Dacă primiți o eroare când utilizați pip în Windows, verificați dacă numele directoriu-lui, în care este proiectul, conține spații, accente sau caractere speciale (de exemplu, `C:\Users\User Name\djangogirls`). În cazul în care acesta conține, utilizați un alt loc fără spații, accente sau caractere speciale (de exemplu: `C:\djangogirls`). Creaţi un virtualenv în directoriul nou, apoi ştergeți pe cel vechi și executați comenzile de mai sus încă o dată. (Transferarea directoriului nu va ajuta, întrucât virtualenv utilizează căile absolute.)
+> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Linie de comandă poate fi blocată în timp ce încercați să instalați Django. Dacă aceasta s-a întâmplat, în loc de comandă de mai sus, utilizați:
+> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
@@ -211,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Dacă primiţi o eroare, când utilizați pip pe Ubuntu 12.04 executați `python -m pip install -U --force-reinstall pip` pentru a repara instalarea pip-ului în virtualenv.
+> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
 
 <!--endsec-->
 
