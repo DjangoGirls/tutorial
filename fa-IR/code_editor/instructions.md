@@ -4,19 +4,19 @@
 
 ## Visual Studio Code
 
-Visual Studio Code یک ویرایشگر کد است که توسط مایکروسافت توسعه داده شده و برای ویندوز، لینوکس و macOS موجود است. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code یک ویرایشگر کد است که توسط مایکروسافت توسعه داده شده و برای ویندوز، لینوکس و macOS موجود است. این ویرایشگر قابلیت عیب یابی، کنترل Git از داخل نرم افزار، برجسته سازی دستورات، سیستم هوشمند کامل کردن دستورات، سیستم snippets (جلوگیری از نوشتن بخش‌های تکراری در کدها) و بازنویسی کدها است.
 
-[جهت دانلود کلیک نمایید](https://code.visualstudio.com/download)
+[از اینجا دانلود کنید](https://code.visualstudio.com/download)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit یک نرم افزار آزاد و یک ویرایشگر رایگان است که برای تمام سیستم عامل‌ها موجود است.
 
-[جهت دانلود کلیک نمایید](https://wiki.gnome.org/Apps/Gedit#Download)
+[از اینجا دانلود کنید](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text یک ویرایشگر بسیار رایج است که یک دوره آزمایشی رایگان دارد و برای تمام سیستم عامل‌ها موجود است.
 
 [جهت دانلود کلیک نمایید](https://www.sublimetext.com/3)
 
