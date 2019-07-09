@@ -60,9 +60,9 @@ def post_list(request):
 
 توجه داشته باشید که ما یک *متغیر* برای کوئری ست مان درست کردیم: `posts`. با این مانند نام کوئری ست رفتار کنید. از این به بعد ما به کمک همین نام به این کوئری ست مراجعه می‌کنیم.
 
-در تابع `render` ما یک پارامتر `request` داریم (درخواستی است که کاربر از طریق اینترنت برای ما ارسال کرده است) و یک پارامتر دیگر که نام فایل تمپلیت است (`'blog/post_list.html'`). آخرین پارامتر ما، `{}`، محلی است که می‌توانیم چیزهایی را برای استفاده در تمپلیت در آن قرار دهیم. We need to give them names (we will stick to `'posts'` right now). :) It should look like this: `{'posts': posts}`. Please note that the part before `:` is a string; you need to wrap it with quotes: `''`.
+در تابع `render` ما یک پارامتر `request` داریم (درخواستی است که کاربر از طریق اینترنت برای ما ارسال کرده است) و یک پارامتر دیگر که نام فایل تمپلیت است (`'blog/post_list.html'`). آخرین پارامتر ما، `{}`، محلی است که می‌توانیم چیزهایی را برای استفاده در تمپلیت در آن قرار دهیم. باید برای این چیزها اسم تعریف کنیم (مثلاً همین متغیر `'posts'`). :) باید به این صورت برای فایل تمپلیت ارسال شوند: `{'posts': posts}`. توجه کنید که بخش سمت چپ علامت `:` از نوع رشته یا string است و لازم است که با علامت نقل قول `''` محصور شود.
 
-So finally our `blog/views.py` file should look like this:
+در نتیجه فایل `blog/views.py` ما شبیه به این خواهد شد:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -76,6 +76,6 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {'posts': posts})
 ```
 
-That's it! Time to go back to our template and display this QuerySet!
+همین! وقت آن است که به فایل تمپلیت برگردیم و این کوئری ست را نمایش دهیم!
 
-Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
+آیا دوست دارید بیشتر در مورد کوئری ست در جنگو بخوانید؟ باید اینجا را نگاه کنید: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
