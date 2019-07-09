@@ -6,11 +6,11 @@
 
 زمان تمرین است!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+اولین چیزی که در وبلاگمان لازم داریم صفحه‌ای است که یک پست را نشان دهد، درست است؟
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+ما یک مدل `Post` داریم پس لازم نیست چیزی به فایل `models.py` اضافه کنیم.
 
-## Create a template link to a post's detail
+## ساختن لینک به جزییات پست در تمپلیت
 
 We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
