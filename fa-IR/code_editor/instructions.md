@@ -4,7 +4,7 @@
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code یک ویرایشگر کد است که توسط مایکروسافت توسعه داده شده و برای ویندوز، لینوکس و macOS موجود است. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
 [جهت دانلود کلیک نمایید](https://code.visualstudio.com/download)
 
