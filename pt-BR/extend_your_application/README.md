@@ -30,7 +30,7 @@ Vamos começar com a adição de um link dentro do arquivo `blog/templates/blog/
 {% endblock %}
 ```
 
-{% raw %} Queremos um link no título do post dentro da página de lista de posts apontando para a página de detalhes do post respectivo. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %} Queremos um link no título do post dentro da página de lista de posts apontando para a página de detalhes do post respectivo. Vamos mudar `<h2><a href="">{{ post.title }}</a></h2>` e adicionar um link para a página de detalhe:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
