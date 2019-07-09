@@ -99,9 +99,9 @@
 
 (به خاطر داشته باشید `<your-pythonanywhere-domain>` را با زیردامنه PythonAnywhere خود جایگزین کنید، بدون علامت های <>)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* سرانجام، به برگه ["Web" page](https://www.pythonanywhere.com/web_app_setup/) بروید و **Reload** را انتخاب کنید. (برای رسیدن به سایر صفحات در PythonAnywhere از دکمه منو در سمت بالا و راست صفحه استفاده کنید.) به روز رسانی شما باید در آدرس https://subdomain.pythonanywhere.com موجود باشد در مرورگر خود آن را امتحان کنید! اگر پست‌های وبلاگی شما در PythonAnywhere با پست‌های شما در سرور فعال روی کامپیوترتان یکی نیست، نگران نباشید همه چیز مرتب است. پایگاه داده موجود روی کامپیوتر شما و PythonAnywhere، برخلاف سایر فایل‌های شما، با یکدیگر یکسان سازی نمی‌شوند و یکی نیستند.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+تبریک! حالا سعی کنید که یک پست جدید از طریق پنل مدیریت جنگو (به یاد دارید که published_date را اضافه کردیم) اضافه کنید مطمئن شوید که در بخش مدیریت جنگو در وبسایت PythonAnywhere باشید، https://subdomain.pythonanywhere.com/admin. سپس صفحه خود را دوباره بارگزاری کنید و ببینید آیا پست جدید به آن اضافه شده است.
 
 Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
 
