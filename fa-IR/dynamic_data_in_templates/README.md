@@ -1,12 +1,12 @@
 # داده های پویا در templates
 
-ما قطعات مختلفی داریم: مدل `Post` که در فایل `models.py` تعریف شده است، `post_list` که در فایل `views.py` تعریف شده و یک template که ساخته ایم. ولی واقعاً چطور پست‌های وبلاگمان را در در قالب HTML تعریف شده نشان می‌دهیم؟ Because that is what we want to do – take some content (models saved in the database) and display it nicely in our template, right?
+ما قطعات مختلفی داریم: مدل `Post` که در فایل `models.py` تعریف شده است، `post_list` که در فایل `views.py` تعریف شده و یک template که ساخته ایم. ولی واقعاً چطور پست‌های وبلاگمان را در در قالب HTML تعریف شده نشان می‌دهیم؟ چون این چیزی است که ما می‌خواهیم انجام دهیم، گرفتن محتوا (مدل‌هایی که در پایگاه داده ذخیره شده اند) و نشان دادن آن در قالب مورد نظر خودمان، درست است؟
 
-This is exactly what *views* are supposed to do: connect models and templates. In our `post_list` *view* we will need to take the models we want to display and pass them to the template. In a *view* we decide what (model) will be displayed in a template.
+این دقیقاً همان چیزی است که *view*ها برای آن طراحی شده اند: وصل کردن مدل ها و قالب‌ها. در نمای(view) `post_list` ما نیاز داریم که مدل مورد نظر را بگیریم و آن را به قالب مناسب آن ارجاع دهیم. ما در *نما* تصمیم می‌گیریم که چه چیزی (model) در قالب نشان داده شود.
 
-OK, so how will we achieve this?
+بسیار خوب، چطور به این هدف برسیم؟
 
-We need to open our `blog/views.py` in our code editor. So far `post_list` *view* looks like this:
+لازم است که فایل`blog/views.py` را در ویرایشگر کد باز کنیم. تا اینجا *نمای* `post_list` شبیه به این است:
 
 {% filename %}blog/views.py{% endfilename %}
 
