@@ -17,7 +17,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-Remember when we talked about including code written in different files? Now is the moment when we have to include the model we have written in `models.py`. We will add the line `from .models import Post` like this:
+به یاد دارید که در مورد اضافه کردن کدهای نوشته شده در فایل‌های مختلف صحبت کردیم؟ حالا وقتی آن است که مدلی را که در فایل `models.py` نوشتیم به این فایل اضافه کنیم. ما خط `from .models import Post` را به این صورت اضافه می‌کنیم:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -26,9 +26,9 @@ from django.shortcuts import render
 from .models import Post
 ```
 
-The dot before `models` means *current directory* or *current application*. Both `views.py` and `models.py` are in the same directory. This means we can use `.` and the name of the file (without `.py`). Then we import the name of the model (`Post`).
+نقطه قبل از `models` به معنی *پوشه جاری* یا *اپلیکیشن جاری* است. هر دو فایل `views.py` و `models.py` در یک پوشه قرار دارند. پس به این معنی است که ما می‌توانیم از `.` به همراه نام فایل (بدون پسوند `.py`) استفاده کنیم. سپس نام مدل را فراخوانی می‌کنیم (`Post`).
 
-But what's next? To take actual blog posts from the `Post` model we need something called `QuerySet`.
+قدم بعدی چیست؟ برای اینکه پست‌های وبلاگی واقعی که قبلاً ساخته ایم را فراخوانی کنیم به چیزی نیاز داریم که به آن `کوئری ست` یا `QuerySet` می‌گوییم.
 
 ## QuerySet
 
