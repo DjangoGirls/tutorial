@@ -1,10 +1,10 @@
 {% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
 
-# توسعه application شما
+# توسعه اپلیکیشن شما
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, url, view and template. We also know how to make our website pretty.
+ما تقریباً تمام مراحل مورد نیاز برای ساخت یک وبسایت را کامل کرده ایم: می‌دانیم که چطور یک مدل، آدرس، view و تمپلیت بنویسیم. علاوه بر این می‌دانیم که چطور وبسایت خود را زیبا کنیم.
 
-Time to practice!
+زمان تمرین است!
 
 The first thing we need in our blog is, obviously, a page to display one post, right?
 
