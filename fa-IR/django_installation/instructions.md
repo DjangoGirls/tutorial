@@ -144,12 +144,12 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **نکته:** برای کاربران ویرایشگر VS Code که درون خود یک ترمینال خط فرمان منطبق بر powershell ویندوز دارد، اگر بخواهید از این ترمینال استفاده کنید باید این دستور را برای فعال کردن محیط مجازی خود بزنید:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> فایده این کار این است که لازم نیست دائم بین پنجره ویرایشگر و پنجره خط فرمان جابجا شوید
 
 هنگامی که پیشوند `(myvenv)` در کنسول خط فرمان اضافه شود به معنی آن است که `محیط مجازی` شما فعال شده است.
 
@@ -199,16 +199,16 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> اگر در هنگام اجرای دستور pip در ویندوز خطایی دریافت کردید لطفاً کنترل کنید که در مسیر نام پوشه‌ها هیچ پوشه‌ای اسپیس، اعراب گذاری یا کارکتر خاص در نام خود نداشته باشد (مثلا مانند این `C:\Users\User Name\djangogirls`). اگر چنین است لطفاً از مسیری استفاده کنید که در آن اسپیس به کار نرفته باشد (مثلا چنین مسیری `C:\djangogirls`). یک محیط مجازی در پوشه جدید درست کنید سپس محیط مجازی قبلی را پاک کنید و دستور بالا را دوباره اجرا کنید. (جابجا کردن پوشه مربوط به محیط مجازی ایده خوبی نیست و باعث می‌شود محیط مجازی کار نکند. محیط مجازی با آدرس مطلق کار می‌کند)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> ممکن است کنسول خط فرمان شما بعد از اجرای دستور فوق ثابت و بی‌حرکت شود. اگر چنین اتفاقی افتاد به جای آن از خط زیر استفاده کنید:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >     
@@ -218,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> اگر هنگام اجرای دستور pip بر روی اوبونتو نسخه 12.04 پیغام خطا گرفتید از دستور `python -m pip install -U --force-reinstall pip` برای اصلاح پکیج pip در محیط مجازی استفاده کنید.
 
 <!--endsec-->
 
