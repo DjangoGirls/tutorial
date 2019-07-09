@@ -22,16 +22,16 @@ Sublime Text یک ویرایشگر بسیار رایج است که یک دوره
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom نیز یک ویرایشگر رایج دیگر است که نرم افزاری رایگان و آزاد است و برای ویندوز، لینوکس وOS X موجود است. Atom توسط [GitHub](https://github.com/) توسعه داده شده است.
 
-[Download it here](https://atom.io/)
+[از اینجا دانلود کنید](https://atom.io/)
 
-## Why are we installing a code editor?
+## چرا ویرایشگر متن نصب می‌کنیم؟
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+ممکن است فکر کنید که چرا به جای استفاده از برنامه‌ای مثل Word یا Notepad، این نرم‌افزار خاص ویرایش کد را نصب می‌کنم.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+در ابتدا این که کدها نیاز دارند که به صورت متن ساده (**plain text**) باشند و مشکل برنامه‌هایی مثل Word یا Textedit این است که متن ساده تولید نمی‌کنند، بلکه متنی غنی (با فونت و قالب‌بندی) می‌سازند و از قالب‌های سفارشی مثل [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format) استفاده می‌کنند.
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+دلیل دوم این است که ویرایشگرهای متن به طور خاص برای ویرایش کد ساخته شده‌اند. بنابراین، امکاناتی مثل رنگ‌آمیزی کدها بر اساس معنایشان یا بستن خودکار نقل قول‌ها را دارند.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+همه این‌ها را بعدا در عمل خواهیم دید. به زودی، شما به ویرایشگر خود به عنوان ابزار محبوبتان نگاه خواهید کرد. :)
