@@ -102,11 +102,11 @@ Post.objects.get(pk=pk)
 
 ![Page not found](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+خبر خوب اینکه شما می‌توانید صفحه `Page not found` اختصاصی برای خودتان را با سلیقه خودتان بسازید. اما این الان موضوع خیلی مهمی نیست بنابراین ما از آن رد خواهیم شد.
 
-OK, time to add a *view* to our `views.py` file!
+وقت آن است که یک *ویو* به فایل `views.py` اضافه کنیم!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+در فایل `blog/urls.py` ما یک الگوی آدرس به نام `post_detail` ساختیم که به یک ویو با نام `views.post_detail` ارجاع داشت. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
 We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
