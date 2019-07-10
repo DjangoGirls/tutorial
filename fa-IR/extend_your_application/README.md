@@ -84,7 +84,7 @@ urlpatterns = [
 
 ## اضافه کردن ویو جزییات یک پست
 
-This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
+این بار *view* ما یک پارامتر اضافه دریافت کرده است، `pk`. *ویو* ما باید بتواند آن را دریافت کند، درست است؟ پس ما تابع خودمان را به این صورت تعریف می‌کنیم `def post_detail(request, pk):`. توجه داشته باشیم که باید دقیقاً همان نامی را استفاده کنیم که در آدرس تعریف کرده ایم (`pk`). حذف کردن این متغیر غلط است و باعث بروز خطا خواهد شد!
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
