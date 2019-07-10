@@ -76,13 +76,13 @@ urlpatterns = [
 
 یعنی اگر شما آدرس `http://127.0.0.1:8000/post/5/` را در مرورگر خود وارد کنید جنگو متوجه خواهد شد که شما به دنبال یک *view* به نام `post_detail` هستید و مقدار متغیر `pk` را برابر `5` قرار می‌دهد و این اطلاعات را به *view* مورد نظر ارسال می‌کند.
 
-بسیار عالی، ما یک الگوی آدرس جدید به فایل `blog/urls.py` اضافه کردیم! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+بسیار عالی، ما یک الگوی آدرس جدید به فایل `blog/urls.py` اضافه کردیم! حالا صفحه http://127.0.0.1:8000/ را دوباره بارگزاری کنید، بووم! سرور دوباره متوقف شده است. به کنسول نگاهی بیندازید، یک پیغام خطای دیگر دیده می‌شود!
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+یادتان هست که مرحله بعدی چیست؟ اضافه کردن ویو!
 
-## Add a post's detail view
+## اضافه کردن ویو جزییات یک پست
 
 This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
