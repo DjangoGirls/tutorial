@@ -41,7 +41,7 @@ Traceback (most recent call last):
 NameError: name 'Post' is not defined
 ```
 
-Oops! An error showed up. It tells us that there is no Post. It's correct – we forgot to import it first!
+Oops! Àṣìṣe kan ló fojú hàn. Ó n sọ fún wa pé kò sí Post. Òtítọ́ ni – a ti gbàgbé láti kọ́kọ́ ṣàgbéwọlé rẹ̀!
 
 {% filename %}command-line{% endfilename %}
 
@@ -49,7 +49,7 @@ Oops! An error showed up. It tells us that there is no Post. It's correct – we
 >>> from blog.models import Post
 ```
 
-We import the model `Post` from `blog.models`. Let's try displaying all posts again:
+A ṣàgbéwọlé àwòṣe `Post` náà láti `blog.models`. Jẹ́ ká gbìyànjú ṣíṣe àfihàn gbogbo àwọn àròkọ lẹ́ẹ̀kan si:
 
 {% filename %}command-line{% endfilename %}
 
