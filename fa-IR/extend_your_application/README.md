@@ -12,7 +12,7 @@
 
 ## ساختن لینک به جزییات پست در تمپلیت
 
-ما با اضافه کردن یک لینک به فایل `blog/templates/blog/post_list.html` آغاز می‌کنیم. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+ما با اضافه کردن یک لینک به فایل `blog/templates/blog/post_list.html` آغاز می‌کنیم. این فایل را در ئیرایشگر کد باز کنید و تا اینجا باید شبیه به این باشد: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -30,7 +30,7 @@
 {% endblock %}
 ```
 
-{% raw %}We want to have a link from a post's title in the post list to the post's detail page. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %} ما می‌خواهیم یک لینک از عنوان پست وبلاگی به جزییات پست داشته باشیم. عبارت `<h2><a href="">{{ post.title }}</a></h2>` را تغییر دهید تا به صفحه جزییات پست لینک شود: {% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -38,7 +38,7 @@
 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
-{% raw %}Time to explain the mysterious `{% url 'post_detail' pk=post.pk %}`. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %} زمان آن است که عبارت رازآلود `{% url 'post_detail' pk=post.pk %}` را توضیح دهیم. همانطور که ممکن است حدس زده باشید این علامت `{% %}` به معنی آن است که ما از سیستم تمپلیت تگ جنگو استفاده می‌کنیم. This time we will use one that will create a URL for us!{% endraw %}
 
 The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
 
