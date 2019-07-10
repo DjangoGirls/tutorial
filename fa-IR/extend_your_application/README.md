@@ -86,7 +86,7 @@ urlpatterns = [
 
 این بار *view* ما یک پارامتر اضافه دریافت کرده است، `pk`. *ویو* ما باید بتواند آن را دریافت کند، درست است؟ پس ما تابع خودمان را به این صورت تعریف می‌کنیم `def post_detail(request, pk):`. توجه داشته باشیم که باید دقیقاً همان نامی را استفاده کنیم که در آدرس تعریف کرده ایم (`pk`). حذف کردن این متغیر غلط است و باعث بروز خطا خواهد شد!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+حالا ما می‌خواهیم فقط و فقط یک پست وبلاگی را داشته باشیم. برای اینکار از کوئری ست به شکل زیر استفاده می‌کنیم:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -94,11 +94,11 @@ Now, we want to get one and only one blog post. To do this, we can use querysets
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+اما این کد یک مشکل دارد. اگر هیچ `Post` با `سرکلید` (`pk`) وجود نداشته باشد، یک خطای زشت دریافت خواهیم کرد!
 
 ![DoesNotExist error](images/does_not_exist2.png)
 
-We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+چنین چیزی را نمی‌خواهیم! اما خوشبختانه جنگو چیزی دارد که می‌تواند این مشکل را حل کند: `get_object_or_404`. در صورتی که هیچ `Post` با `pk` داده شده وجود نداشته باشد، یک صفحه خطای زیباتر یعنی صفحه `Page Not Found 404` را نشان خواهد داد.
 
 ![Page not found](images/404_2.png)
 
