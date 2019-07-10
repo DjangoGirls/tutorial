@@ -70,13 +70,13 @@ urlpatterns = [
 
 بخش `post/<int:pk>/` یک الگوی URL را معرفی می‌کند که برای شما توضیح خواهیم داد:
 
-- `post/` نشان می‌دهد که آدرس باید با کلمه **post**شروع شده باشد و در ادامه آن یک **/** وجود داشته باشد. تا اینجا همه چیز خوب است.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- `post/` نشان می‌دهد که آدرس باید با کلمه **post** شروع شده باشد و در ادامه آن یک **/** وجود داشته باشد. تا اینجا همه چیز خوب است.
+- `<int:pk>` این بخش ممکن است کمی گیج کننده باشد، این عبارت به این معنی است که جنگو انتظار دارد که یک عدد صحیح دریافت کند و مقدار آن را به یک متغیر به نام `pk` نسبت خواهد داد.
+- `/` - درنهایت ما به یک **/** در انتهای آدرس نیاز داریم.
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+یعنی اگر شما آدرس `http://127.0.0.1:8000/post/5/` را در مرورگر خود وارد کنید جنگو متوجه خواهد شد که شما به دنبال یک *view* به نام `post_detail` هستید و مقدار متغیر `pk` را برابر `5` قرار می‌دهد و این اطلاعات را به *view* مورد نظر ارسال می‌کند.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+بسیار عالی، ما یک الگوی آدرس جدید به فایل `blog/urls.py` اضافه کردیم! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
 ![AttributeError](images/attribute_error2.png)
 
