@@ -12,7 +12,7 @@
 
 ## ساختن لینک به جزییات پست در تمپلیت
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+ما با اضافه کردن یک لینک به فایل `blog/templates/blog/post_list.html` آغاز می‌کنیم. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
