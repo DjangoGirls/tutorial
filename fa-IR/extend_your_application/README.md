@@ -1,6 +1,6 @@
 {% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
 
-# توسعه اپلیکیشن شما
+# برنامه خود را توسعه دهید
 
 ما تقریباً تمام مراحل مورد نیاز برای ساخت یک وبسایت را کامل کرده ایم: می‌دانیم که چطور یک مدل، آدرس، view و تمپلیت بنویسیم. علاوه بر این می‌دانیم که چطور وبسایت خود را زیبا کنیم.
 
