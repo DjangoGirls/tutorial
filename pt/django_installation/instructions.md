@@ -144,6 +144,13 @@ Lembre-se de substituir `myvenv` pelo nome que você escolheu para o `virtualenv
 
 <!--endsec-->
 
+> **NOTA:** Para usuários do editor popular Código VS, que vem com um terminal baseado em janelas, se você deseja manter-se com o terminal integrado, você pode executar o seguinte comando para ativar seu ambiente virtual:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> A vantagem é que você não precisa alternar entre janelas do editor e janelas de linha de comando
+
 Você vai saber que tem um `virtualenv` funcionando quando vir que a linha de comando no seu console tem o prefixo `(myvenv)`.
 
 Ao trabalhar em de um ambiente virtual, o comando `python` irá automaticamente se referir à versão correta para que você possa digitar `python` em vez de `python3`.
@@ -211,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> Se você receber um erro ao chamar o pip no Ubuntu 12.04, execute `python -m pip install -U --force-reinstall pip` para corrigir a instalação do pip no virtualenv.
+> Se você receber um erro ao chamar pip no Ubuntu 12.04, por favor execute `python -m pip install -U --force-reinstal pip` para corrigir a instalação de pip no virtualenv.
 
 <!--endsec-->
 

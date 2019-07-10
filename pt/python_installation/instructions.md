@@ -56,7 +56,14 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-Se você tem instalada uma outra "versão micro" do Python, por exemplo, 3.6.0, não precisa atualizá-la. Se não tiver o Python instalado ou quiser uma versão diferente, faça assim:
+Se você tem instalada uma outra "versão micro" do Python, por exemplo, 3.6.0, não precisa atualizá-la. Se você não tem Python instalado, ou se você quer uma versão diferente, primeiro verifique qual distribuição Linux você está usando o seguinte comando:
+
+{% filename %}command-line{% endfilename %}
+
+    $ grep ^NAME= /etc/os-release
+    
+
+Depois, dependendo do resultado, siga um dos seguintes guias de instalação abaixo desta seção.
 
 <!--endsec-->
 
