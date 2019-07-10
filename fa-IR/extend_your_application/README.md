@@ -42,17 +42,17 @@
 
 بخش `post_detail` به معنی آن است که جنگو انتظار دارد یک آدرس به نام post_detail، در فایل `blog/urls.py` وجود داشته باشد
 
-حالا معنی `pk=post.pk` چیست؟ `pk` مخفف primary key (سرکلید یا کلید اولیه) است که یک نام منحصر به فرد برای هر ردیف از داده‌ها در پایگاه داده می‌باشد. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+حالا معنی `pk=post.pk` چیست؟ `pk` مخفف primary key (سرکلید یا کلید اولیه) است که یک نام منحصر به فرد برای هر ردیف از داده‌ها در پایگاه داده می‌باشد. چون ما سرکلیدی در مدل `Post` تعریف نکرده بودیم جنگو، یکی برای ما ساخته است (به صورت پیش فرض عددی است که به ازای هر ردیف از داده‌ها یکی اضافه می‌شود مثلاً 1، 2، 3) و آن را به عنوان یک فیلد به نام `pk` به هر پست ما اضافه کرده است. ما با نوشتن `post.pk` می‌توانیم به سرکلید شیء `Post` که قبلاً ساخته ایم، دسترسی پیدا کنیم همانطور که به سایر فیلدها دسترسی پیدا می‌کردیم (مانند `title` و `author`)!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+حالا وقتی به آدرس http://127.0.0.1:8000/ می‌رویم با خظا مواجه می‌شویم (همانطور که انتظار داشتیم، چرا که ما هنوز برای `post_detail` ، یک آدرس یا یک *view* نساخته ایم). چیزی شبیه به این:
 
 ![NoReverseMatch error](images/no_reverse_match2.png)
 
-## Create a URL to a post's detail
+## ساختن آدرس برای جزییات یک پست وبلاگ
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+بیایید یک URL برای *ویو* `post_detail` در فایل `urls.py` بسازیم!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+ما می‌خواهیم جزییات اولین پست ما در این **URL** دیده شود: http://127.0.0.1:8000/post/1/
 
 Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
 
