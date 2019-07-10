@@ -28,9 +28,9 @@ It's easiest to learn by example. Let's try this, shall we?
 
 You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
 
-### All objects
+### Gbogbo àwọn ohun èlò
 
-Let's try to display all of our posts first. You can do that with the following command:
+Jẹ́ ká gbìyànjú láti kọ́kọ́ ṣàfihàn gbogbo àwọn àròkọ wa. O lè ṣe ìyẹn pẹ̀lú àṣẹ tó tẹ̀le yìí:
 
 {% filename %}command-line{% endfilename %}
 
