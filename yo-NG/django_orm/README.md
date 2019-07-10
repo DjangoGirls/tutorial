@@ -2,7 +2,7 @@
 
 In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
 
-## What is a QuerySet?
+## Kíni QuerySet kan?
 
 A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
@@ -80,7 +80,7 @@ Jẹ́ ká kọ́kọ́ ṣàgbéwọlé àwòṣe User:
 >>> from django.contrib.auth.models import User
 ```
 
-What users do we have in our database? Try this:
+Àwọn aṣàmúlò wo la ní nínú àkójọpọ̀ dátà wa? Gbìyànjú èyí:
 
 {% filename %}command-line{% endfilename %}
 
