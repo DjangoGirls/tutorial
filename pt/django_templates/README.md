@@ -20,7 +20,7 @@ Pra mostrar uma variável em um template do Django, usamos chaves duplas com o n
 {{ posts }}
 ```
 
-Tente fazer isso no seu template `blog/templates/blog/post_list.html`. Substitua tudo desde o segundo `<div>` até o terceiro `</div>` por `{{ posts }}`. Salve o arquivo e atualize a página para ver o resultado:
+Tente fazer isso no seu template `blog/templates/blog/post_list.html`. Abra-o no editor de código e substitua tudo desde o segundo `<div>` até o terceiro `</div>` com `{{ posts }}`. Salve o arquivo e atualize a página para ver o resultado:
 
 ![Figura 13.1](images/step1.png)
 
@@ -57,8 +57,8 @@ Funciona! Mas nós queremos que eles sejam exibidos como os posts estáticos que
 
 {% for post in posts %}
     <div>
-        <p>publicado em: {{ post.published_date }}</p>
-        <h1><a href="">{{ post.title }}</a></h1>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
         <p>{{ post.text|linebreaksbr }}</p>
     </div>
 {% endfor %}
@@ -92,15 +92,17 @@ Seria bom ver se seu site ainda funciona na internet, né? Vamos tentar implanta
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd $USER.pythonanywhere.com
+    $ cd <your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-* Por fim, vá para a aba [Web app setup](https://www.pythonanywhere.com/web_app_setup/) e clique em **Reload** em sua aplicação Web. Sua atualização deve ter aparecido! Tudo bem se as postagens em seu site PythonAnywhere não coincidirem com as postagens que aparecem no blog hospedado no seu servidor local. Os bancos de dados em seu computador local e no Python Anywhere não sincronizam com o resto de seus arquivos.
+(Lembre-se de substituir `<your-pythonanywhere-domain>` pelo seu subdomínio PythonAnywhere, mas sem os colchetes angulares, ou seja, sem < e >).
 
-Parabéns! Agora vá em frente e tente adicionar um novo post em seu Django admin (Lembre-se de adicionar published_date!). Certifique-se de que você está no Django admin do seu site pythonanywhere, https://yourname.pythonanywhere.com/admin. Em seguida, atualize a página para ver se o post aparece.
+* Finalmente, pule para a aba ["Web" page](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em sua aplicação. (Para acessar outras páginas do PythonAnywhere a partir do console, utilize o botão do menu na parte superior direita). A sua atualização deve estar ativa em https://subdomain.pythonanywhere.com - confira pelo navegador! Tudo bem se as postagens em seu site PythonAnywhere não coincidirem com as postagens que aparecem no blog hospedado no seu servidor local. Os bancos de dados em seu computador local e no Python Anywhere não sincronizam com o resto de seus arquivos.
 
-Funcionou como mágica? Estamos orgulhosas! Afaste-se do seu computador um pouco, você merece uma pausa. :)
+Parabéns! Agora vá em frente e tente adicionar um novo post no seu administrador Django (lembre-se de adicionar published_data!). Assegure-se que você está no administrador Django do seu site pythonanywhere, https://subdomain.pythonanywhere.com/admin. E então, recarregue a página para verificar se o seu post é mostrado.
+
+Funciona? Estamos orgulhosas! Saia do seu computador um pouquinho - você merece um descanso. :3
 
 ![Figura 13.4](images/donut.png)

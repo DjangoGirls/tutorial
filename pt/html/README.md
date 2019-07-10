@@ -35,7 +35,7 @@ Veja como o nosso site está agora: http://127.0.0.1:8000/
 
 Acabaram-se os erros! Uhuu :) Entretanto, nosso site não mostra nada a não ser uma página em branco. Isso acontece porque o nosso template está vazio. Precisamos consertar isso.
 
-Adicione a seguinte linha ao template:
+Abra o novo arquivo no editor de código e adicione o seguinte:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -203,15 +203,15 @@ Uma vez feito isso, faremos o upload (push) das nossas mudanças para o Github:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Lembre-se de substituir o `<your-pythonanywhere-username>` pelo seu username do PythonAnywhere, sem os símbolos < e >).
+Você precisará substituir `<your-pythonanywhere-domain>` com o seu subdomínio PythonAnywhere, sem os colchetes angulares (< >). O nome do seu subdomínio normalmente é o mesmo nome de usuário do seu PythonAnywhere, mas em alguns casos este pode ser um pouco diferente (por exemplo, se o nome possuir letras maísculas). Sendo assim, caso o comando não funcione, utilize o comando `ls` (lista de arquivos) para encontrar o seu subdomínio/nome da pasta e então execute `cd` para acessá-lo.
 
-E veja seu código sendo baixado. Se você quiser verificar se ele já baixou, pode ir para a **aba Files** e ver seu código no PythonAnywhere.
+Agora veja o seu código ser baixado. Se você quiser verificar se ele chegou, você pode pular para a **página "Arquivos"**e visualizar seu código no PythonAnywhere (você pode acessar outras páginas do PythonAnywhere a partir do botão de menu na página do console).
 
-* Finalmente, pule para a aba [Web](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em sua aplicação.
+* Finalmente, pule para a aba ["Web" page](https://www.pythonanywhere.com/web_app_setup/) e aperte **Reload** em sua aplicação.
 
 Sua atualização deve estar no ar! Vá em frente e atualize seu site no navegador. As alterações devem estar visíveis. :)

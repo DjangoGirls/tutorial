@@ -158,14 +158,14 @@ Antes de fazer isto, devemos garantir que temos instalada a última versão do `
 
 {% filename %}command-line{% endfilename %}
 
-    (myvenv) ~$ python3 -m pip install --upgrade pip
+    (myvenv) ~$ python -m pip install --upgrade pip
     
 
 ### Instalando pacotes com requisitos
 
 O arquivo "requirements.txt" guarda as depenências que serão instaladas utilizando o `pip install`:
 
-Primeiramente, crie um arquivo `requirements.txt` dentro da pasta `djangogirls/`:
+Primeiro, crie um arquivo `requirements.txt` dentro da sua pasta `djangogirls/` usando o editor de código que você instalou mais cedo. Para fazer isso, abra um novo arquivo no editor e salve-o como `requirements.txt` na pasta `djangogirls`. O seu diretório vai parecer com isso:
 
     djangogirls
     └───requirements.txt
