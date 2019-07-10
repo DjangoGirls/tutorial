@@ -70,9 +70,9 @@ Báyìí ní o ṣe máa ṣẹ̀dá ohun èlò Post tuntun kan nínú àkójọ
 >>> Post.objects.create(author=me, title='Sample title', text='Test')
 ```
 
-But we have one missing ingredient here: `me`. We need to pass an instance of `User` model as an author. How do we do that?
+Ṣùgbọ́n a ṣì pàdánù èròjà kan níbí: `me`. A nílò láti darí àpẹẹrẹ kan ti àwòṣe `User` gẹ́gẹ́ bí olùdásílẹ̀ kan. Báwo la ṣe máa ṣe ìyẹn?
 
-Let's import User model first:
+Jẹ́ ká kọ́kọ́ ṣàgbéwọlé àwòṣe User:
 
 {% filename %}command-line{% endfilename %}
 
