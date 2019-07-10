@@ -38,11 +38,11 @@
 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
-{% raw %} زمان آن است که عبارت رازآلود `{% url 'post_detail' pk=post.pk %}` را توضیح دهیم. همانطور که ممکن است حدس زده باشید این علامت `{% %}` به معنی آن است که ما از سیستم تمپلیت تگ جنگو استفاده می‌کنیم. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %} زمان آن است که عبارت رازآلود `{% url 'post_detail' pk=post.pk %}` را توضیح دهیم. همانطور که ممکن است حدس زده باشید این علامت `{% %}` به معنی آن است که ما از سیستم تمپلیت تگ جنگو استفاده می‌کنیم. این بار ما از یکی استفاده خواهیم کرد که برایمان یک URL بسازد!{% endraw %}
 
-The `post_detail` part means that Django will be expecting a URL in `blog/urls.py` with name=post_detail
+بخش `post_detail` به معنی آن است که جنگو انتظار دارد یک آدرس به نام post_detail، در فایل `blog/urls.py` وجود داشته باشد
 
-And how about `pk=post.pk`? `pk` is short for primary key, which is a unique name for each record in a database. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+حالا معنی `pk=post.pk` چیست؟ `pk` مخفف primary key (سرکلید یا کلید اولیه) است که یک نام منحصر به فرد برای هر ردیف از داده‌ها در پایگاه داده می‌باشد. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
