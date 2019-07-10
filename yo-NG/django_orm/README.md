@@ -10,14 +10,14 @@ It's easiest to learn by example. Let's try this, shall we?
 
 ## Django shell
 
-Open up your local console (not on PythonAnywhere) and type this command:
+Ṣí console kọ̀mpútà rẹ kalẹ̀ (kìí ṣe lórí PythonAnywhere) kí o sì tẹ àṣẹ yìí:
 
 {% filename %}command-line{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py shell
     
 
-The effect should be like this:
+Ó yẹ kí àbájáde náà rí báyìí:
 
 {% filename %}command-line{% endfilename %}
 
