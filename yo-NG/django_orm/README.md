@@ -58,11 +58,11 @@ A ṣàgbéwọlé àwòṣe `Post` náà láti `blog.models`. Jẹ́ ká gbìy�
 <QuerySet [<Post: my post title>, <Post: another post title>]>
 ```
 
-This is a list of the posts we created earlier! We created these posts using the Django admin interface. But now we want to create new posts using Python, so how do we do that?
+Èyí jẹ́ àkójọ àwọn àròkọ tí a ti ṣẹ̀dá ṣáájú! A ṣẹ̀dá àwọn àròkọ wọ̀nyí pẹ̀lú lílo atọ́kùn alábòójútó Django náà. Ṣùgbọ́n ní báyìí, a fẹ́ ṣẹ̀dá àwọn àròkọ tuntun pẹ̀lú lílo Python, nítorí náà báwo la ṣe máa ṣe ìyẹn?
 
-### Create object
+### Ṣẹ̀dá ohun èlò
 
-This is how you create a new Post object in database:
+Báyìí ní o ṣe máa ṣẹ̀dá ohun èlò Post tuntun kan nínú àkójọpọ̀ dátà:
 
 {% filename %}command-line{% endfilename %}
 
