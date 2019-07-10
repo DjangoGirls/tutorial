@@ -54,7 +54,7 @@
 
 ما می‌خواهیم جزییات اولین پست ما در این **URL** دیده شود: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
+بیایید یک آدرس در فایل `blog/urls.py` بسازیم تا جنگو را به *view* با نام `post_detail` هدایت کند که جزییات کامل یک پست وبلاگ را نشان می‌دهد. فایل `blog/urls.py`را در ویرایشگر کد باز کنید و خط `path('post/<int:pk>/', views.post_detail, name='post_detail'),` را اضافه کنید، چیزی شبیه به این می‌شود:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
@@ -68,9 +68,9 @@ urlpatterns = [
 ]
 ```
 
-This part `post/<int:pk>/` specifies a URL pattern – we will explain it for you:
+بخش `post/<int:pk>/` یک الگوی URL را معرفی می‌کند که برای شما توضیح خواهیم داد:
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `post/` نشان می‌دهد که آدرس باید با کلمه **post**شروع شده باشد و در ادامه آن یک **/** وجود داشته باشد. تا اینجا همه چیز خوب است.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
 - `/` – then we need a **/** again before finishing the URL.
 
