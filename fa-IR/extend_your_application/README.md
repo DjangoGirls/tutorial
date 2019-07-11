@@ -46,7 +46,7 @@
 
 حالا وقتی به آدرس http://127.0.0.1:8000/ می‌رویم با خظا مواجه می‌شویم (همانطور که انتظار داشتیم، چرا که ما هنوز برای `post_detail` ، یک آدرس یا یک *view* نساخته ایم). چیزی شبیه به این:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![خطا NoReverseMatch](images/no_reverse_match2.png)
 
 ## ساختن آدرس برای جزییات یک پست وبلاگ
 
@@ -96,11 +96,11 @@ Post.objects.get(pk=pk)
 
 اما این کد یک مشکل دارد. اگر هیچ `Post` با `سرکلید` (`pk`) وجود نداشته باشد، یک خطای زشت دریافت خواهیم کرد!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![خطا DoesNotExist](images/does_not_exist2.png)
 
 چنین چیزی را نمی‌خواهیم! اما خوشبختانه جنگو چیزی دارد که می‌تواند این مشکل را حل کند: `get_object_or_404`. در صورتی که هیچ `Post` با `pk` داده شده وجود نداشته باشد، یک صفحه خطای زیباتر یعنی صفحه `Page Not Found 404` را نشان خواهد داد.
 
-![Page not found](images/404_2.png)
+![صفحه پیدا نشد](images/404_2.png)
 
 خبر خوب اینکه شما می‌توانید صفحه `Page not found` اختصاصی برای خودتان را با سلیقه خودتان بسازید. اما این الان موضوع خیلی مهمی نیست بنابراین ما از آن رد خواهیم شد.
 
@@ -132,7 +132,7 @@ def post_detail(request, pk):
 
 کار می‌کند! ولی وقتی روی لینک مربوط به عنوان یک پست کلیک کنید چه اتفاقی می‌افتد؟
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![خطا TemplateDoesNotExist](images/template_does_not_exist2.png)
 
 وای نه! یک خطای دیگر! اما حالا ما می‌دانیم که چطور با این خطا برخورد کنیم، درست است؟ ما باید یک تمپلیت اضافه کنیم!
 
@@ -166,7 +166,7 @@ def post_detail(request, pk):
 
 بسیار خوب، ما می‌توانیم صفحه وبلاگمان را دوباره بارگذاری کنیم و ببینیم آیا خطا `TemplateDoesNotExist` از بین رفته است یا نه.
 
-![Post detail page](images/post_detail2.png)
+![صفحه جزییات پست](images/post_detail2.png)
 
 واو! بالاخره کار کرد!
 
