@@ -192,11 +192,11 @@ def post_detail(request, pk):
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(یادتان باشد که `<your-pythonanywhere-domain>` را با زیر دامنه اصلی خود در PythonAnywhere عوض کنید البته بدون آکولادها.)
 
-## Updating the static files on the server
+## به روزرسانی فایل‌های ایستا در سرور
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+سرورهایی مانند PythonAnywhere دوست دارند که با فایل‌های ایستا (مانند فایل‌های CSS) به گونه‌ای متفاوت از فایل‌های پایتون برخورد کنند، چرا که می‌توانند آن ها را بهینه کنند و سرعت لود شدن آن‌ها را افزایش دهند. در نتیجه هرگاه که ما تغییری در فایل‌های CSS می‌دهیم ، باید دستوری اضافه بر روی اجرا کنیم تا به سرور بگوییم که این فایل‌ها تغییر کرده اند. این دستور `collectstatic` نام دارد.
 
 Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
