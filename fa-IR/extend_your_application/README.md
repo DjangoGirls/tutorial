@@ -198,7 +198,7 @@ def post_detail(request, pk):
 
 سرورهایی مانند PythonAnywhere دوست دارند که با فایل‌های ایستا (مانند فایل‌های CSS) به گونه‌ای متفاوت از فایل‌های پایتون برخورد کنند، چرا که می‌توانند آن ها را بهینه کنند و سرعت لود شدن آن‌ها را افزایش دهند. در نتیجه هرگاه که ما تغییری در فایل‌های CSS می‌دهیم ، باید دستوری اضافه بر روی اجرا کنیم تا به سرور بگوییم که این فایل‌ها تغییر کرده اند. این دستور `collectstatic` نام دارد.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+ابتدا با فعال کردن محیط مجازی شروع کنیم اگر از قبل هنوز فعال نیست (PythonANywhere از دستوری به نام `workon` برای این کار استفاده می‌کند این دستور دقیقاً شبیه `source myenv/bin/activate` است که شما بر روی کامپیوتر خودتان اجرا می‌کنید):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -207,7 +207,7 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+دستور `manage.py collectstatic` تقریباً شبیه دستور `manage.py migrate` است. ما تغییراتی در کدها می‌دهیم و به جنگو می‌گوییم این تغییرات را *apply* (اعمال) کند، چه در فایل‌های ایستا در سرور باشد چه در پایگاه داده.
 
 In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
 
