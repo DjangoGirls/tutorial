@@ -200,9 +200,9 @@ A tún lè yí títò náà padà pẹ̀lú ṣíṣe àfikún `-` ní ìbẹ̀r
 <QuerySet [<Post: 4th title of post>,  <Post: My 3rd post!>, <Post: Post number 2>, <Post: Sample title>]>
 ```
 
-### Complex queries through method-chaining
+### Àwọn ìbéèrè tó ṣòro nípasẹ̀ ṣíṣe ìsopọ̀ ọ̀nà
 
-As you saw, some methods on `Post.objects` return a QuerySet. The same methods can in turn also be called on a QuerySet, and will then return a new QuerySet. Thus, you can combine their effect by **chaining** them together:
+Gẹ́gẹ́ bó ti rí i, àwọn ọ̀nà kan lórí `Post.objects` dá QuerySet kan padà. Àwọn ọ̀nà kannáà tún lè jẹ́ pípè lórí QuerySet kan, tí yíò sì dá QuerySet tuntun kan padà. Thus, you can combine their effect by **chaining** them together:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
