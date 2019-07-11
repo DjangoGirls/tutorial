@@ -4,29 +4,29 @@ Bizim tavsiyelerimiz aşağıdakiler, ama mentörünüze danışmak isteyebilirs
 
 ## Visual Studio Code
 
-Visual Studio Code Microsoft tarafından Windows, Linux ve macOS işletim sistemleri için geliştirilmiş bir kod editörüdür. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code Microsoft tarafından Windows, Linux ve macOS işletim sistemleri için geliştirilmiş bir kod editörüdür. Özellikleri arasında hata ayıklama (debugging) desteği, gömülü Git yönetimi, kod renklendirme (syntax highlighting), zeki kod tamamlama (code completion), kod parçaları (snippets) yönetimi, ve kod düzenleme (refactoring) vardır.
 
 [Buradan indirin](https://code.visualstudio.com/download)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit açık kaynaklı, ücretsiz bir editördür. Tüm işletim sistemlerinde kullanılabilir.
 
 [Buradan indirin](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text, ücretsiz deneme süresi olan çok popüler bir editördür ve tüm işletim sistemleri için mevcuttur.
 
 [Buradan indirin](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom başka bir popüler editör. Ücretsiz, açık kaynaklı ve Windows, OS X ve Linux için kullanılabilir. Atom [GitHub](https://github.com/) tarafından geliştirilmiştir.
 
-[Download it here](https://atom.io/)
+[Buradan indirin](https://atom.io/)
 
-## Why are we installing a code editor?
+## Neden bir kod editörü kuruyoruz?
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
