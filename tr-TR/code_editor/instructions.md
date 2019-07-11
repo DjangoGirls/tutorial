@@ -4,7 +4,7 @@ Bizim tavsiyelerimiz aşağıdakiler, ama mentörünüze danışmak isteyebilirs
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code Microsoft tarafından Windows, Linux ve macOS işletim sistemleri için geliştirilmiş bir kod editörüdür. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
 [Buradan indirin](https://code.visualstudio.com/download)
 
