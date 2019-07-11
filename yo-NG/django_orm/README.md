@@ -26,7 +26,7 @@ QuerySet kan jẹ́, ní pàtàkì, àkójọ àwọn ohun èlò ti Àwòṣe p�
 >>>
 ```
 
-You're now in Django's interactive console. It's just like the Python prompt, but with some additional Django magic. :) You can use all the Python commands here too.
+O ti wà nínú console ìjọṣepọ̀ ti Django ní báyìí. Ó rí bíi prompt Python náà, ṣùgbọ́n pẹ̀lú àwọn iṣẹ́ Django mìíràn. :) O lè lo gbogbo àwọn àṣẹ Python náà níbí yìí.
 
 ### Gbogbo àwọn ohun èlò
 
