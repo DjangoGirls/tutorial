@@ -43,7 +43,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/deploy/install_git.md" %}
 
-# ساخت یک حساب GitHub
+# ساخت یک حساب کاربری GitHub
 
 به [GitHub.com](https://www.github.com) بروید و برای یک حساب کاربری جدید و رایگان،‌ ثبت نام کنید. از بخاطر سپردن رمز عبور خود اطمینان حاصل کنید (اگر از یک نرم افزار مدیریت رمزهای عبور استفاده میکنید، رمز عبور جدید را به آن اضافه کنید).
 
@@ -51,18 +51,18 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-# Start reading
+# شروع کنید و آموزش ها را بخوانید
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+تبریک میگویم، شما کاملا آماده شروع هستید. اگر هنوز پیش از شروع کارگاه زمان دارید، خواندن بخش های ابتدایی برایتان مفید خواهد بود:
 
-* [How the internet works](../how_the_internet_works/README.md)
+* [اینترنت چگونه کار میکند](../how_the_internet_works/README.md)
 
-* [Introduction to the command line](../intro_to_command_line/README.md)
+* [معرفی خط فرمان](../intro_to_command_line/README.md)
 
-* [Introduction to Python](../python_introduction/README.md)
+* [معرفی پایتون](../python_introduction/README.md)
 
-* [What is Django?](../django/README.md)
+* [جنگو چیست؟](../django/README.md)
 
-# Enjoy the workshop!
+# از کارگاه لذت ببرید!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+زمانی که کارگاه را شروع کردید، می توانید مستقیما به بخش [اولین پروژه جنگو شما](../django_start_project/README.md) بروید، چون قبلا مطالب بخش های پیش از آن را مرور کرده اید.
