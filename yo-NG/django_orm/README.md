@@ -1,6 +1,6 @@
 # Django ORM àti QuerySets
 
-In this chapter you'll learn how Django connects to the database and stores data in it. Let's dive in!
+Nínú àkòrí yìí, ìwọ yíò kẹ́kọ̀ọ́ bí Django ṣe n sopọ̀ mọ́ àkójọpọ̀ dátà náà àti bí ó ṣe n tọ́jú dátà sínú rẹ̀. Jẹ́ ká bẹ̀rẹ̀!
 
 ## Kíni QuerySet kan?
 
