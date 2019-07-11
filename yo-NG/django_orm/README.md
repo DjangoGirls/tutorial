@@ -134,7 +134,7 @@ A big part of QuerySets is the ability to filter them. Let's say we want to find
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-Or maybe we want to see all the posts that contain the word 'title' in the `title` field?
+Tàbí bóyá a fẹ́ rí gbogbo àwọn àròkọ tó ní ọ̀rọ̀ 'title' nínú ààyè `title` náà?
 
 {% filename %}command-line{% endfilename %}
 
