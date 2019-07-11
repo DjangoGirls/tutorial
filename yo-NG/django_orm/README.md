@@ -117,9 +117,9 @@ Inú wa dùn! Ṣé o fẹ́ ṣàyẹ̀wò bóyá ó ti ṣiṣẹ́?
 <QuerySet [<Post: my post title>, <Post: another post title>, <Post: Sample title>]>
 ```
 
-There it is, one more post in the list!
+Òhun nìyẹn, àròkọ kan síi nínú àkójọ náà!
 
-### Add more posts
+### Ṣàfikún àwọn àròkọ síi
 
 You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
 
