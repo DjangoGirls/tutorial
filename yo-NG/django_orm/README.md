@@ -4,7 +4,7 @@ Nínú àkòrí yìí, ìwọ yíò kẹ́kọ̀ọ́ bí Django ṣe n sopọ̀
 
 ## Kíni QuerySet kan?
 
-A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
+QuerySet kan jẹ́, ní pàtàkì, àkójọ àwọn ohun èlò ti Àwòṣe pàtó kan. QuerySets fún ọ láàyè láti ka dátà tó wà nínú àkójọpọ̀ dátà náà, sẹ́ ẹ àti tò ó lẹ́sẹẹsẹ.
 
 Èyí tó rọrùn jù ní láti kẹ́kọ̀ọ́ pẹ̀lú àpẹẹrẹ. Jẹ́ ká gbìyànjú èyí, ṣé ká bẹ̀rẹ̀?
 
