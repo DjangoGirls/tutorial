@@ -202,14 +202,14 @@ A tún lè yí títò náà padà pẹ̀lú ṣíṣe àfikún `-` ní ìbẹ̀r
 
 ### Àwọn ìbéèrè tó ṣòro nípasẹ̀ ṣíṣe ìsopọ̀ ọ̀nà
 
-Gẹ́gẹ́ bó ti rí i, àwọn ọ̀nà kan lórí `Post.objects` dá QuerySet kan padà. Àwọn ọ̀nà kannáà tún lè jẹ́ pípè lórí QuerySet kan, tí yíò sì dá QuerySet tuntun kan padà. Thus, you can combine their effect by **chaining** them together:
+Gẹ́gẹ́ bó ti rí i, àwọn ọ̀nà kan lórí `Post.objects` dá QuerySet kan padà. Àwọn ọ̀nà kannáà tún lè jẹ́ pípè lórí QuerySet kan, tí yíò sì dá QuerySet tuntun kan padà. Nítorí náà, o lè ṣàkópọ̀ àbájáde wọn nípasẹ̀ **ṣíṣe ìsopọ̀** wọn papọ̀:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
 <QuerySet [<Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>, <Post: Sample title>]>
 ```
 
-This is really powerful and lets you write quite complex queries.
+Èyí lágbára púpọ̀ àti pé yóò jẹ́ kí o kọ àwọn ìbéèrè tó ṣòro gan-an.
 
 Cool! You're now ready for the next part! To close the shell, type this:
 
