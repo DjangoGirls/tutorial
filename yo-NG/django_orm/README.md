@@ -182,7 +182,7 @@ Now try to get list of published posts again (press the up arrow key three times
 
 ### Títo àwọn ohun èlò lẹ́sẹẹsẹ
 
-QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
+QuerySets tún gbà ọ́ láàyè láti to àkójọ àwọn ohun èlò náà lẹ́sẹẹsẹ. Jẹ́ ká gbìyànjú láti tò wọ́n pẹ̀lú ààyè `created_date`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -191,7 +191,7 @@ QuerySets also allow you to order the list of objects. Let's try to order them b
 <QuerySet [<Post: Sample title>, <Post: Post number 2>, <Post: My 3rd post!>, <Post: 4th title of post>]>
 ```
 
-We can also reverse the ordering by adding `-` at the beginning:
+A tún lè yí títò náà padà pẹ̀lú ṣíṣe àfikún `-` ní ìbẹ̀rẹ̀:
 
 {% filename %}command-line{% endfilename %}
 
