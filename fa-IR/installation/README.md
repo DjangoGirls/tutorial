@@ -1,8 +1,8 @@
-# If you're doing the tutorial at home
+# اگر این آموزش را در خانه دنبال میکنید
 
-If you're doing the tutorial at home, not at one of the [Django Girls events](https://djangogirls.org/events/), you can completely skip this chapter now and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter.
+اگر این آموزش را در خانه دنبال میکنید و نه در یکی از رویدادهای [جنگو برای دختران](https://djangogirls.org/events/) ،میتوانید به طور کامل از این بخش بگذرید و به بخش [اینترنت چگونه کار میکند](../how_the_internet_works/README.md) بروید.
 
-This is because we cover installing things as they are needed in the tutorial -- this is just an additional page that gathers all of the installation instructions in one place (which is useful for some workshop formats). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+به دلیل اینکه ما نصب کردن هر چیزی را که در آموزش نیاز است، بیان میکنیم. این صفحه تنها برای بیان همه دستورات نصب در یک مکان، اضافه شده است (که برای یک کارگاه مناسب است). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
 
 Good luck!
 
