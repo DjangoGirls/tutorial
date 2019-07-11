@@ -25,29 +25,29 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # معرفی کوتاه کنسول خط فرمان
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+بسیاری از مراحل زیر به "کنسول"، "ترمینال"، "پنجره دستورات" یا "خط فرمان" اشاره می کنند ـ همه آنها یک معنا دارند: یک پنجره روی کامپیوتر شما که میتوانید دستوراتی را در آن وارد کنید. زمانی که به آموزش اصلی رسیدید، در مورد خط فرمان بیشتر می آموزید. فعلا، اصلی ترین موردی که باید بدانید نحوه باز کردن یک پنجره خط فرمان و شکل ظاهری آن است: {% include "/intro_to_command_line/open_instructions.md" %}
 
-# Install Python
+# نصب پایتون
 
 {% include "/python_installation/instructions.md" %}
 
-# Install a code editor
+# نصب یک ویرایشگر متنی
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# نصب محیط مجازی و نصب جنگو
 
 {% include "/django_installation/instructions.md" %}
 
-# Install Git
+# نصب گیت
 
 {% include "/deploy/install_git.md" %}
 
-# Create a GitHub account
+# ساخت یک حساب GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+به [GitHub.com](https://www.github.com) بروید و برای یک حساب کاربری جدید و رایگان،‌ ثبت نام کنید. از بخاطر سپردن رمز عبور خود اطمینان حاصل کنید (اگر از یک نرم افزار مدیریت رمزهای عبور استفاده میکنید، رمز عبور جدید را به آن اضافه کنید).
 
-# Create a PythonAnywhere account
+# ساخت یک حساب کاربری PythonAnywhere
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
