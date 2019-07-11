@@ -180,7 +180,7 @@ Now try to get list of published posts again (press the up arrow key three times
 <QuerySet [<Post: Sample title>]>
 ```
 
-### Ordering objects
+### Títo àwọn ohun èlò lẹ́sẹẹsẹ
 
 QuerySets also allow you to order the list of objects. Let's try to order them by `created_date` field:
 
