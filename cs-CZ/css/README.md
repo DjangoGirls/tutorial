@@ -4,9 +4,9 @@ Náš blog nevypadá stále dost pěkně, že? Je na čase ho udělat hezčí! P
 
 ## Co je to CSS?
 
-Cascading Style Sheets (CSS) is a language used for describing the look and formatting of a website written in a markup language (like HTML). Treat it as make-up for our web page. ;)
+Kaskádové styly (Cascading Style Sheets, CSS) je jazyk používáný pro popis vzhledu a formátu webové stránky napsané ve značkovacím jazyce (jako například HTML). Berte to jako make-up pro naši webovou stránku. ;)
 
-But we don't want to start from scratch again, right? Once more, we'll use something that programmers released on the Internet for free. Reinventing the wheel is no fun, you know.
+Ale nechceme začínat od nuly, že? Znovu použijeme něco, co už někdo vytvořil a umístil na Internet aby to mohli ostatní programátoři používat zdarma. Vymýšlení už vymyšlených věcí není zábava.
 
 ## Použijme Bootstrap!
 
