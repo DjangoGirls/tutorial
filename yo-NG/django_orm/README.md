@@ -121,7 +121,7 @@ Inú wa dùn! Ṣé o fẹ́ ṣàyẹ̀wò bóyá ó ti ṣiṣẹ́?
 
 ### Ṣàfikún àwọn àròkọ síi
 
-You can now have a little fun and add more posts to see how it works. Add two or three more and then go ahead to the next part.
+O lè wá ṣeré díẹ̀ báyìí kí o ṣàfikún àwọn àròkọ síi láti wo bó ṣe n ṣiṣẹ́. Ṣàfikún bíi méjì àbí mẹ́ta síi, lẹ́yìn náà tẹ̀síwájú sí apá tó kàn náà.
 
 ### Filter objects
 
