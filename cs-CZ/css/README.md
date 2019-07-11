@@ -10,13 +10,13 @@ Ale nechceme začínat od nuly, že? Znovu použijeme něco, co už někdo vytvo
 
 ## Použijme Bootstrap!
 
-Bootstrap is one of the most popular HTML and CSS frameworks for developing beautiful websites: https://getbootstrap.com/
+Bootstrap je jeden z nejpopulárnějších frameworků pro HTML a CSS na vytváření krásných webových stránek: https://getbootstrap.com/
 
-It was written by programmers who worked for Twitter. Now it's developed by volunteers from all over the world!
+Byl vytvořen programátory, kteří pracovali pro Twitter. Nyní je Bootstrap vyvíjen dobrovolníky po celém světě!
 
 ## Instalace Bootstrapu
 
-To install Bootstrap, open up your `.html` file in the code editor and add this to the `<head>` section:
+Pro instalaci Bootstrapu otevři svůj `.html` soubor v kódovém editoru a přidej tohle do `<head>` sekce:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -25,7 +25,7 @@ To install Bootstrap, open up your `.html` file in the code editor and add this 
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
 ```
 
-This doesn't add any files to your project. It just points to files that exist on the Internet. So go ahead, open your website and refresh the page. Here it is!
+Nepřidá to žádné soubory do tvého projektu. Jen to ukazuje na soubory, které existují na Internet. Takže do toho, otevři svoji webovou stránku a obnov ji. To je ono!
 
 ![Obrázek 14.1](images/bootstrap1.png)
 
