@@ -1,16 +1,16 @@
-# اگر این آموزش را در خانه دنبال میکنید
+# اگر این آموزش را در خانه دنبال می کنید
 
 اگر این آموزش را در خانه دنبال میکنید و نه در یکی از رویدادهای [جنگو برای دختران](https://djangogirls.org/events/) ،میتوانید به طور کامل از این بخش بگذرید و به بخش [اینترنت چگونه کار میکند](../how_the_internet_works/README.md) بروید.
 
-به دلیل اینکه ما نصب کردن هر چیزی را که در آموزش نیاز است، بیان میکنیم. این صفحه تنها برای بیان همه دستورات نصب در یک مکان، اضافه شده است (که برای یک کارگاه مناسب است). You can choose to install everything that is on this page right now if you wish. But if you want to start learning things before installing a bunch of stuff on your computer, skip this chapter and we will explain the installation parts to you later on, as they are needed.
+به دلیل اینکه ما نصب کردن هر چیزی را که دراین سری آموزشی نیاز است، بیان میکنیم. این صفحه تنها برای بیان همه دستورات نصب در یک مکان، اضافه شده است (که برای یک کارگاه مناسب است). شما میتوانید هرچیزی که در این بخش آمده است را نصب کنید. اما اگر ترجیح می دهید پیش از نصب چند ابزار و نرم افزار روی کامپیوترتان، در مورد آن ها یاد بگیرید، از این بخش عبور کنید و ما نحوه ی نصب هر چیزی را ، زمانی که به آن نیاز داشتید، توضیح میدهیم.
 
-Good luck!
+موفق باشید!
 
-# If you're attending a workshop
+# اگر در یک کارگاه شرکت کرده اید
 
-If you are attending one of the [Django Girls events](https://djangogirls.org/events/):
+اگر در یکی از رویدادهای [جنگو برای دختران](https://djangogirls.org/events/) شرکت کرده اید:
 
-* Your workshop may have an "installation party" before the main workshop. If you are at an installation party, this page is for you! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
+* ممکن است کارگاه شما یک "جلسه نصب پیش نیازها" قبل از رویداد اصلی داشته باشد. اگر در جلسه نصب پیش نیازها هستید، این بخش مخصوص شماست! Follow the instructions here to get everything you need for the workshop installed, with the help of the coaches if needed. Then at the main workshop, you'll be able to skip installation instructions you'll encounter in the main tutorial when you get to them.
 * The organizers of your workshop may have asked you to try at home to install everything on your computer before the workshop starts. If you have been asked to do that, this page is for you! Follow the instructions here, as best you can. Then at the main workshop, when you get to an installation step in the main tutorial, if you were not able to get that piece installed you can get help from your coach.
 * If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
 
