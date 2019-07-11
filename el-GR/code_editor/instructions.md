@@ -4,27 +4,27 @@
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Το Visual Studio Code είναι ένας κειμενογράφος κώδικα που αναπτύσσεται απ' τη Microsoft για Windows, Linux και macOS. Περιλαμβάνει υποστήριξη για αποσφαλμάτωση, ενσωματωμένο έλεγχο για το Git, χρωματική απεικόνιση του κώδικα, έξυπνη αυτόματη συμπλήρωση του κώδικα, κλπ.
 
 [Κατεβάστε το εδώ](https://code.visualstudio.com/download)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Το Gedit είναι ένας ανοιχτού κώδικα, ελεύθερος κειμενογράφος, διαθέσιμος για όλα τα λειτουργικά συστήματα.
 
 [Κατεβάστε το εδώ](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Το Sublime Text είναι ένας πολύ δημοφιλής κειμενογράφος με δωρεάν δοκιμαστική περίοδο και διατίθεται για όλα τα λειτουργικά συστήματα.
 
 [Κατεβάστε το εδώ](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Το Atom είναι άλλος ένας δημοφιλής κειμενογράφος. Είναι δωρεάν, ανοιχτού κώδικα και διαθέσιμος για Windows, OS X και Linux. Το Atom αναπτύσσεται από το [GitHub](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Κατεβάστε το εδώ](https://atom.io/)
 
 ## Why are we installing a code editor?
 
