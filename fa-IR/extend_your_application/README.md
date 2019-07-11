@@ -138,9 +138,9 @@ def post_detail(request, pk):
 
 ## ساختن یک تمپلیت برای جزییات پست وبلاگی
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+در پوشه `blog/templates/blog` یک فایل به نام `post_detail.html` بسازید و آن را در ویرایشگر کد باز کنید.
 
-It will look like this:
+شبیه به این خواهد بود:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
@@ -160,7 +160,7 @@ It will look like this:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
+یک بار دیگر ما فایل `base.html` را اضافه کرده ایم. ما می‌خواهیم در بلوک `content` ، جزییات یک پست منتشر شده (اگر چنین پستی وجود داشت) شامل عنوان و متن را نشان دهیم. اما باید در مورد چند موضوع مهم صحبت کنیم، خب؟
 
 {% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
