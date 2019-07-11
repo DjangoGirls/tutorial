@@ -162,17 +162,17 @@ def post_detail(request, pk):
 
 یک بار دیگر ما فایل `base.html` را اضافه کرده ایم. ما می‌خواهیم در بلوک `content` ، جزییات یک پست منتشر شده (اگر چنین پستی وجود داشت) شامل عنوان و متن را نشان دهیم. اما باید در مورد چند موضوع مهم صحبت کنیم، خب؟
 
-{% raw %}`{% if ... %} ... {% endif %}` یک تمپلیت تگ است که وقتی می‌خواهیم چیزی را چک کنیم از آن استفاده می‌کنیم. (عبارت `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` یک تمپلیت تگ است که وقتی می‌خواهیم چیزی را چک کنیم از آن استفاده می‌کنیم. (عبارت `if ... else ...` را از بخش **آشنایی با پایتون** به یاد دارید؟) در این سناریو ما می‌خواهیم بررسی کنیم آیا بخش `published_date` مربوط به یک پست خالی نیست.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+بسیار خوب، ما می‌توانیم صفحه وبلاگمان را دوباره بارگذاری کنیم و ببینیم آیا خطا `TemplateDoesNotExist` از بین رفته است یا نه.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+واو! بالاخره کار کرد!
 
-# Deploy time!
+# زمان دیپلوی!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+خوب خواهد بود اگر ببینیم وبسایت شما هنوز روی PythonAnywhere کار میکند یا نه؟پس بیایید یک بار دیگر آن را منتشر کنیم.
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -183,7 +183,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+سپس در کنسول [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/) تایپ کنید:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
