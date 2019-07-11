@@ -162,7 +162,7 @@ def post_detail(request, pk):
 
 یک بار دیگر ما فایل `base.html` را اضافه کرده ایم. ما می‌خواهیم در بلوک `content` ، جزییات یک پست منتشر شده (اگر چنین پستی وجود داشت) شامل عنوان و متن را نشان دهیم. اما باید در مورد چند موضوع مهم صحبت کنیم، خب؟
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` یک تمپلیت تگ است که وقتی می‌خواهیم چیزی را چک کنیم از آن استفاده می‌کنیم. (عبارت `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
 OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
