@@ -123,7 +123,7 @@ Inú wa dùn! Ṣé o fẹ́ ṣàyẹ̀wò bóyá ó ti ṣiṣẹ́?
 
 O lè wá ṣeré díẹ̀ báyìí kí o ṣàfikún àwọn àròkọ síi láti wo bó ṣe n ṣiṣẹ́. Ṣàfikún bíi méjì àbí mẹ́ta síi, lẹ́yìn náà tẹ̀síwájú sí apá tó kàn náà.
 
-### Filter objects
+### Sẹ́ àwọn ohun èlò
 
 A big part of QuerySets is the ability to filter them. Let's say we want to find all posts that user ola authored. We will use `filter` instead of `all` in `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
 
@@ -211,7 +211,7 @@ Gẹ́gẹ́ bó ti rí i, àwọn ọ̀nà kan lórí `Post.objects` dá QueryS
 
 Èyí lágbára púpọ̀ àti pé yóò jẹ́ kí o kọ àwọn ìbéèrè tó ṣòro gan-an.
 
-Cool! You're now ready for the next part! To close the shell, type this:
+Ó dára! O ti ṣetán báyìí fún apá tó kàn náà! Láti pa shell náà dé, tẹ èyí:
 
 {% filename %}command-line{% endfilename %}
 
