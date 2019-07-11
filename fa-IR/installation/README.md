@@ -2,7 +2,7 @@
 
 اگر این آموزش را در خانه دنبال میکنید و نه در یکی از رویدادهای [جنگو برای دختران](https://djangogirls.org/events/) ،میتوانید به طور کامل از این بخش بگذرید و به بخش [اینترنت چگونه کار میکند](../how_the_internet_works/README.md) بروید.
 
-به دلیل اینکه ما نصب کردن هر چیزی را که دراین سری آموزشی نیاز است، بیان میکنیم. این صفحه تنها برای بیان همه دستورات نصب در یک مکان، اضافه شده است (که برای یک کارگاه مناسب است). شما میتوانید هرچیزی که در این بخش آمده است را نصب کنید. اما اگر ترجیح می دهید پیش از نصب چند ابزار و نرم افزار روی کامپیوترتان، در مورد آن ها یاد بگیرید، از این بخش عبور کنید و ما نحوه ی نصب هر چیزی را ، زمانی که به آن نیاز داشتید، توضیح میدهیم.
+به دلیل اینکه ما نصب کردن هر چیزی را که دراین سری آموزشی نیاز است، بیان میکنیم. این صفحه تنها برای بیان همه دستورات نصب در یک مکان، اضافه شده است (که برای برخی کارگاه ها مفید است). شما میتوانید هرچیزی که در این بخش آمده است را نصب کنید. اما اگر ترجیح می دهید پیش از نصب چند ابزار و نرم افزار روی کامپیوترتان، در مورد آن ها یاد بگیرید، از این بخش عبور کنید و ما نحوه ی نصب هر چیزی را ، زمانی که به آن نیاز داشتید، توضیح میدهیم.
 
 موفق باشید!
 
@@ -12,18 +12,18 @@
 
 * ممکن است کارگاه شما یک "جلسه نصب پیش نیازها" قبل از رویداد اصلی داشته باشد. اگر در جلسه نصب پیش نیازها هستید، این بخش مخصوص شماست! برای نصب هرچیزی که در این رویداد نیاز دارید، دستورالعمل های این بخش را دنبال کنید، و در صورت نیاز از مربی ها کمک بگیرید. سپس در کارگاه اصلی، میتوانید از دستورالعمل های نصب که در آموزش اصلی با آنها مواجه می شوید، عبور کنید.
 * ممکن است برگزار کنندگان کارگاه، از شما بخواهند تا سعی کنید همه چیز را قبل از شروع کارگاه روی کامپیوترتان نصب کنید. اگر از شما این درخواست را داشته اند، این بخش برای شماست! به بهترین نحو دستورالعمل های این بخش را دنبال کنید. اگر نتوانستید چیزی را نصب کنید، در کارگاه اصلی، زمانی که به دستورالعمل های نصب آن بخش در آموزش اصلی می رسید، می توانید از مربی ها کمک بگیرید.
-* If your workshop does not have an installation party (or you couldn't attend), and if the organizers didn't ask you to try to install everything before you arrived, skip this page and go straight to the [How the Internet works](../how_the_internet_works/README.md) chapter. You'll be installing everything you need as you work through the tutorial.
+* اگر کارگاه شما فاقد جلسه نصب پیش نیاز ها بود (یا شما نتوانستید در آن شرکت کنید)، و اگر برگزار کنندگان از شما نخواستند که همه چیز را پیش از شروع رویداد نصب کنید، از این بخش عبور کنید و مستقیم به بخش [ اینترنت چگونه کار می کند](../how_the_internet_works/README.md) بروید. شما هر چیزی را که به آن نیاز دارید، در طول آموزش اصلی نصب خواهید کرد.
 
-# Installation
+# نصب پیش نیازها
 
-In this tutorial you will be building a blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+در این آموزش شما یک وبلاگ خواهید ساخت. برای انجام این کار، در خلال روند آموزش، به شما نحوه ی نصب نرم افزارهای مختلف روی کامپیوترتان و نحوه ی راه اندازی چند حساب اینترنتی گفته خواهد شد. این بخش شامل تمام مراحل نصب و دستورالعمل های ثبت نام است (که برای بعضی از کارگاه ها مفید است).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
 
 <!--endsec-->
 
-# Brief intro to the command line
+# معرفی کوتاه کنسول خط فرمان
 
 Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
 
