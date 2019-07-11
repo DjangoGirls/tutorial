@@ -34,4 +34,4 @@ Birinci nedeni yazdığımız kodun **düz metin** olması gerektiği içindir k
 
 İkinci sebep ise kod editörlerinin kod düzenlemek için -örneğin kodu anlamına bağlı olarak renklendirme veya otomatik parantez kapatma desteği gibi- özelleşmiş olmasıdır.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Bütün bunları birazdan deneyimleyeceğiz. Yakında emektar kod editörünüz en gözde araçlarınızdan birine dönüşecektir :)
