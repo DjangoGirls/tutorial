@@ -106,7 +106,7 @@ Post.objects.get(pk=pk)
 
 وقت آن است که یک *ویو* به فایل `views.py` اضافه کنیم!
 
-در فایل `blog/urls.py` ما یک الگوی آدرس به نام `post_detail` ساختیم که به یک ویو با نام `views.post_detail` ارجاع داشت. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+در فایل `blog/urls.py` ما یک الگوی آدرس به نام `post_detail` ساختیم که به یک ویو با نام `views.post_detail` ارجاع داشت. این به این معنی است که جنگو انتظار دارد که یک تابع با نام `post_detail` در فایل `blog/views.py` وجود داشته باشد.
 
 We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
 
