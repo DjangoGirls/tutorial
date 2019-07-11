@@ -108,7 +108,7 @@ Post.objects.get(pk=pk)
 
 در فایل `blog/urls.py` ما یک الگوی آدرس به نام `post_detail` ساختیم که به یک ویو با نام `views.post_detail` ارجاع داشت. این به این معنی است که جنگو انتظار دارد که یک تابع با نام `post_detail` در فایل `blog/views.py` وجود داشته باشد.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+زمان آن است که فایل `blog/views.py` را در ویرایشگر کد باز کنید و خطوط زیر را در ردیف `from` ها اضافه کنید:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -116,7 +116,7 @@ We should open `blog/views.py` in the code editor and add the following code nea
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+و در انتهای فایل *ویو* خودمان را اضافه خواهیم کرد:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -126,17 +126,17 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+بله، حالا وقت بارگذاری مجدد صفحه است: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+کار می‌کند! ولی وقتی روی لینک مربوط به عنوان یک پست کلیک کنید چه اتفاقی می‌افتد؟
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+وای نه! یک خطای دیگر! اما حالا ما می‌دانیم که چطور با این خطا برخورد کنیم، درست است؟ ما باید یک تمپلیت اضافه کنیم!
 
-## Create a template for the post details
+## ساختن یک تمپلیت برای جزییات پست وبلاگی
 
 We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
 
