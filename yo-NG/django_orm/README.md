@@ -97,9 +97,9 @@ Jẹ́ ká kọ́kọ́ ṣàgbéwọlé àwòṣe User:
 >>> me = User.objects.get(username='ola')
 ```
 
-As you can see, we now `get` a `User` with a `username` that equals 'ola'. Neat!
+Gẹ́gẹ́ bó o ṣe ríi, a `get` (gba) `User` kan pẹ̀lú `username` tó dọ́gba pẹ̀lú 'ola'. Ó dára!
 
-Now we can finally create our post:
+Ní báyìí, a lè wá ṣẹ̀dá àròkọ wa:
 
 {% filename %}command-line{% endfilename %}
 
@@ -108,7 +108,7 @@ Now we can finally create our post:
 <Post: Sample title>
 ```
 
-Hurray! Wanna check if it worked?
+Inú wa dùn! Ṣé o fẹ́ ṣàyẹ̀wò bóyá ó ti ṣiṣẹ́?
 
 {% filename %}command-line{% endfilename %}
 
