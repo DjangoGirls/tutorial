@@ -6,7 +6,7 @@ Nínú àkòrí yìí, ìwọ yíò kẹ́kọ̀ọ́ bí Django ṣe n sopọ̀
 
 A QuerySet is, in essence, a list of objects of a given Model. QuerySets allow you to read the data from the database, filter it and order it.
 
-It's easiest to learn by example. Let's try this, shall we?
+Èyí tó rọrùn jù ní láti kẹ́kọ̀ọ́ pẹ̀lú àpẹẹrẹ. Jẹ́ ká gbìyànjú èyí, ṣé ká bẹ̀rẹ̀?
 
 ## Django shell
 
@@ -89,7 +89,7 @@ Jẹ́ ká kọ́kọ́ ṣàgbéwọlé àwòṣe User:
 <QuerySet [<User: ola>]>
 ```
 
-This is the superuser we created earlier! Let's get an instance of the user now (adjust this line to use your own username):
+Èyí ni alábòójútó tí a ti ṣẹ̀dá ṣáájú! Jẹ́ ká gba àpẹẹrẹ kan ti aṣàmúlò náà ni báyìí (ṣàtúnṣe ìlà yìí láti lo orúkọ aṣàmúlò tìẹ):
 
 {% filename %}command-line{% endfilename %}
 
