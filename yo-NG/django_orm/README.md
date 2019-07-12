@@ -145,7 +145,7 @@ Tàbí bóyá a fẹ́ rí gbogbo àwọn àròkọ tó ní ọ̀rọ̀ 'title' 
 
 > **Ṣàkíyèsí** Àwọn àmì-dáàṣì-ìsàlẹ̀ (`_`) méjì ló wà láàrín `title` àti `contains`. ORM ti Django máa n lo òfin yìí láti fi ìyàtọ̀ sí àárín àwọn orúkọ ààyè ("title") àti àwọn iṣẹ́ tàbí asẹ́ ("contains"). Tí o bá lo àmì-dáàṣì-ìsàlẹ̀ kan ṣoṣo, ìwọ yíò rí àṣìṣe kan bíi "FieldError: Cannot resolve keyword title_contains".
 
-You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
+O tún lè gba àkójọ kan ti gbogbo àwọn àròkọ tí a ti ṣàtẹ̀jáde. A máa ṣe èyí nípasẹ̀ sísẹ́ gbogbo àwọn àròkọ tó bá ní ọjọ́ ìtẹ̀jáde, `published_date`, tẹ́lẹ̀tẹ́lẹ̀:
 
 {% filename %}command-line{% endfilename %}
 
