@@ -10,24 +10,24 @@
 
 ### آیا می‌توانید منابع دیگری معرفی کنید؟
 
-بله! حجم *بسیار زیادی* منابع آنلاین برای یادگرفتن هر نوع مهارت برنامه نویسی وجود دارد - این می‌تواند به راحتی باعث سردرگمی بشود اما ما از شما حمایت می‌کنیم. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+بله! حجم *بسیار زیادی* منابع آنلاین برای یادگرفتن هر نوع مهارت برنامه نویسی وجود دارد - این می‌تواند به راحتی باعث سردرگمی بشود اما ما از شما حمایت می‌کنیم. هرچیزی که باعث شد که شما به جنگو گرلز بیایید و یا هرچیزی که در طول دوره آموزش برایتان جالب بوده، ما منابعی کاملاً رایگان (یا با بخش‌هایی رایگان) برای آن‌ها معرفی می‌کنیم که شما می‌توانید به هر شکلی که بخواهید از آنها استفاده کنید.
 
-#### Django
+#### جنگو
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- کتاب دیگر ما، [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [دوره آموزشی رسمی جنگو](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [شروع کردن جنگو با درس‌های ویدئویی](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS and JavaScript
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
+- [دوره توسعه وبسایت Codecademy](https://www.codecademy.com/learn/paths/web-development)
 - [freeCodeCamp](https://www.freecodecamp.org/)
 
-#### Python
+#### پایتون
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
+- [دوره پایتون Codecademy](https://www.codecademy.com/learn/learn-python)
+- [دوره پایتون گوگل](https://developers.google.com/edu/python/)
+- [کتاب Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - تمرین‌های ابتدایی رایگان است
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
