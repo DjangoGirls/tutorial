@@ -143,7 +143,7 @@ Tàbí bóyá a fẹ́ rí gbogbo àwọn àròkọ tó ní ọ̀rọ̀ 'title' 
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Ṣàkíyèsí** Àwọn àmì-dáàṣì-ìsàlẹ̀ (`_`) méjì ló wà láàrín `title` àti `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Ṣàkíyèsí** Àwọn àmì-dáàṣì-ìsàlẹ̀ (`_`) méjì ló wà láàrín `title` àti `contains`. ORM ti Django máa n lo òfin yìí láti fi ìyàtọ̀ sí àárín àwọn orúkọ ààyè ("title") àti àwọn iṣẹ́ tàbí asẹ́ ("contains"). Tí o bá lo àmì-dáàṣì-ìsàlẹ̀ kan ṣoṣo, ìwọ yíò rí àṣìṣe kan bíi "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
