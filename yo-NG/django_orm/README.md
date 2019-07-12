@@ -97,7 +97,7 @@ Jẹ́ ká kọ́kọ́ ṣàgbéwọlé àwòṣe User:
 >>> me = User.objects.get(username='ola')
 ```
 
-Gẹ́gẹ́ bó o ṣe ríi, a `get` (gba) `User` kan pẹ̀lú `username` tó dọ́gba pẹ̀lú 'ola'. Ó dára!
+Gẹ́gẹ́ bó o ṣe ríi, a gba (`get`) `User` kan pẹ̀lú `username` tó dọ́gba pẹ̀lú 'ola'. Ó dára!
 
 Ní báyìí, a lè wá ṣẹ̀dá àròkọ wa:
 
@@ -171,7 +171,7 @@ Lẹ́yìn náà, ṣàtẹ̀jáde rẹ̀ pẹ̀lú ọ̀nà `publish` wa:
 >>> post.publish()
 ```
 
-Now try to get list of published posts again (press the up arrow key three times and hit `enter`):
+Ní báyìí, gbìyànjú láti gba àkójọ àwọn àròkọ tí a ti ṣàtẹ̀jáde lẹ́ẹ̀kan síi (tẹ bọ́tìnnì ìtọ́ka òkè náà lẹ́ẹ̀mẹ́ta kí o sì tẹ `enter`):
 
 {% filename %}command-line{% endfilename %}
 
