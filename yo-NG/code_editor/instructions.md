@@ -4,7 +4,7 @@ Oríṣiríṣi àwọn olóòtú ló wà àti pe ó dá lórí èyí tó yàn l
 
 ## Visual Studio Code
 
-Visual Studio Code jẹ́ olóòtú kóòdù orísun kan tí Microsoft gbé jáde fún Windows, Linux àti MacOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code jẹ́ olóòtú kóòdù orísun kan tí Microsoft gbé jáde fún Windows, Linux àti MacOS. Ó ní àtìlẹ́yìn fún wíwá ojútùú ìṣòro, ìdarí Git tó wà nínú rẹ̀, ṣíṣe àgbéyọ syntax, píparí kóòdù pẹ̀lú làákàyè, àwọn abala kóòdù kékèké, àti ṣíṣe àtúnkọ kóòdù.
 
 [Gbà á níbí](https://code.visualstudio.com/download)
 
