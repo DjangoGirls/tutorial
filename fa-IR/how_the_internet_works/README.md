@@ -2,7 +2,7 @@
 
 > برای خوانندگان در خانه: این فصل در ویدئو [نصب پایتون و کد ویرایشگر](https://www.youtube.com/watch?v=oM9yAA09wdc) توضیح داده شده است.
 > 
-> این فصل "که اینترنت چگونه کار می کند" توسط جسیکا مک کلر (http://web.mit.edu/jesstess/www/) الهام گرفته است.
+> این فصل "که اینترنت چگونه کار می‌کند" از سخنرانی جسیکا مک کلر (http://web.mit.edu/jesstess/www/) الهام گرفته است.
 
 قطعا شما هر روز از اینترنت استفاده می کنید. اما آیا می دانید در واقع وقتی شما آدرس مثل https://djangogirls.org را در مرورگر خود تایپ میکنید، چه اتفاقی می افتد؟
 
@@ -10,7 +10,7 @@
 
 اگر با برنامه نویسی آشنایی ندارید، ممکن است درک HTML در ابتدا سخت باشد، ولی مرورگر های شما (مثل گوگل کروم، سافاری، فایرفاکس و...) عاشق آن هستند. مرورگرهاطراحی شده اند تا این کدها را درک کنند، دستورات آنها را دنبال کنند، و فایل هایی که وب سایت شما از آن تشکیل شده است را دقیقا آنطور که میخواهید، نمایش دهند.
 
-As with every file, we need to store HTML files somewhere on a hard disk. For the Internet, we use special, powerful computers called *servers*. They don't have a screen, mouse or a keyboard, because their main purpose is to store data and serve it. That's why they're called *servers* – because they *serve* you data.
+مانند هر فایل دیگری، ما نیاز داریم تا فایل‌های HTML را نیز جایی بر روی هارد دیسک ذخیره کنیم. برای اینترنت ما از کامپیوترهای مخصوص و قوی به نام *servers* استفاده می‌کنیم. این کامپیوترها صفحه نمایش، کیبورد یا موس ندارند برای آنکه وظیفه اصلی آن‌ها ذخیره اطلاعات و ارائه آن‌ها است. That's why they're called *servers* – because they *serve* you data.
 
 OK, but you want to know how the Internet looks, right?
 
