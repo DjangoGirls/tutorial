@@ -30,13 +30,13 @@
 
 تصور کنید که وقتی شما https://djangogirls.org را تایپ می‌کنید، نامه‌ای فرستاده اید به این مضمون: "جنگو گرلز عزیز، من می‌خواهم وب سایت djangogirls.org را ببینم. لطفاً آن را برای من بفرستید!"
 
-نامه شما به نزدیکترین اداره پست فرستاده می‌شود. بعد به اداره پست دیگری می‌رود که کمی بیشتر به مقصد نزدیک است و همینطور پیش می‌رود تا به مقصد نهایی برسد. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+نامه شما به نزدیکترین اداره پست فرستاده می‌شود. بعد به اداره پست دیگری می‌رود که کمی بیشتر به مقصد نزدیک است و همینطور پیش می‌رود تا به مقصد نهایی برسد. تنها ویژگی این سیستم این است که اگر نامه های بسیاری به یک مقصد بفرستید (*data packets*) آن‌ها می‌توانند از مسیرهایی کاملاً متفاوت (*routers*) به مقصد برسند. این موضوع بستگی به این دارد که نامه ها در هر اداره پست چطور تقسیم شوند.
 
 ![عدد 1.4](images/internet_4.png)
 
-That's how it works - you send messages and you expect some response. Instead of paper and pen you use bytes of data, but the idea is the same!
+این روش کار است - شما پیغامی میفرستید و منتظر پاسخ می‌مانید. به جای قلم و کاغذ شما از بایت‌های داده استفاده می‌کنید اما منطق کار یکسان است!
 
-Instead of addresses with a street name, city, zip code and country name, we use IP addresses. Your computer first asks the DNS (Domain Name System) to translate djangogirls.org into an IP address. It works a little bit like old-fashioned phonebooks where you can look up the name of the person you want to contact and find their phone number and address.
+به چای آدرس با نام خیابان، شهر و کدپستی، ما از آدرس IP استفاده می‌کنیم. کامپیوتر شما ابتدا از DNS (Domain Name System) می‌خواهد که djangogirls.org را به IP address تبدیل کند. این سیستم شبیه دفترچه تلفن‌های قدیمی است که شما می‌توانستید دنبال نام یک نفر بگردید و آدرس و شماره تلفن وی را پیدا کنید.
 
 When you send a letter, it needs to have certain features to be delivered correctly: an address, a stamp, etc. You also use a language that the receiver understands, right? The same applies to the *data packets* you send to see a website. We use a protocol called HTTP (Hypertext Transfer Protocol).
 
