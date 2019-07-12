@@ -10,15 +10,15 @@
 
 اگر با برنامه نویسی آشنایی ندارید، ممکن است درک HTML در ابتدا سخت باشد، ولی مرورگر های شما (مثل گوگل کروم، سافاری، فایرفاکس و...) عاشق آن هستند. مرورگرهاطراحی شده اند تا این کدها را درک کنند، دستورات آنها را دنبال کنند، و فایل هایی که وب سایت شما از آن تشکیل شده است را دقیقا آنطور که میخواهید، نمایش دهند.
 
-مانند هر فایل دیگری، ما نیاز داریم تا فایل‌های HTML را نیز جایی بر روی هارد دیسک ذخیره کنیم. برای اینترنت ما از کامپیوترهای مخصوص و قوی به نام *servers* استفاده می‌کنیم. این کامپیوترها صفحه نمایش، کیبورد یا موس ندارند برای آنکه وظیفه اصلی آن‌ها ذخیره اطلاعات و ارائه آن‌ها است. That's why they're called *servers* – because they *serve* you data.
+مانند هر فایل دیگری، ما نیاز داریم تا فایل‌های HTML را نیز جایی بر روی هارد دیسک ذخیره کنیم. برای اینترنت ما از کامپیوترهای مخصوص و قوی به نام *servers* استفاده می‌کنیم. این کامپیوترها صفحه نمایش، کیبورد یا موس ندارند برای آنکه وظیفه اصلی آن‌ها ذخیره اطلاعات و ارائه آن‌ها است. برای همین به آن‌ها *سرور* می‌گویند برای آنکه آن‌ها داده‌ها را *ارئه* می‌کنند (serve یعنی ارائه کردن).
 
-OK, but you want to know how the Internet looks, right?
+خب، ولی شما می‌خواهید بدانید که اینترنت چطور کار می‌کند، درست است؟
 
-We drew you a picture! It looks like this:
+تصویری برای شما کشیده ایم! چیزی شبیه به این:
 
 ![عدد 1.1](images/internet_1.png)
 
-Looks like a mess, right? In fact it is a network of connected machines (the above-mentioned *servers*). Hundreds of thousands of machines! Many, many kilometers of cables around the world! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+کمی به هم ریخته است، درست است؟ در واقع این شبکه‌ای از ماشین‌های به هم متصل شده است (همانطور که در بالا اشاره شد *سرورها* هستند). صدها و هزاران دستگاه! کیلومترها سیم و کابل دور دنیا! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
 
 ![عدد 1.2](images/internet_3.png)
 
