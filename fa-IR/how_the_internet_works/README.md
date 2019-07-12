@@ -18,19 +18,19 @@
 
 ![عدد 1.1](images/internet_1.png)
 
-کمی به هم ریخته است، درست است؟ در واقع این شبکه‌ای از ماشین‌های به هم متصل شده است (همانطور که در بالا اشاره شد *سرورها* هستند). صدها و هزاران دستگاه! کیلومترها سیم و کابل دور دنیا! You can visit a Submarine Cable Map website (http://submarinecablemap.com) to see how complicated the net is. Here is a screenshot from the website:
+کمی به هم ریخته است، درست است؟ در واقع این شبکه‌ای از ماشین‌های به هم متصل شده است (همانطور که در بالا اشاره شد *سرورها* هستند). صدها و هزاران دستگاه! کیلومترها سیم و کابل دور دنیا! شما می‌توانید وبسایت نقشه کابل‌های زیردریایی (http://submarinecablemap.com) را ببینید تا با پیچیدگی شبکه آشنا شوید. این تصویری از این وبسایت است:
 
 ![عدد 1.2](images/internet_3.png)
 
-It is fascinating, isn't it? But it is not possible to have a wire between every machine connected to the Internet. So, to reach a machine (for example, the one where https://djangogirls.org is saved) we need to pass a request through many, many different machines.
+جذاب است، اینطور نیست؟ اما کشیدن یک سیم مستقیم بین هر دستگاه متصل شده به اینترنت با دیگر دستگاه‌ها ممکن نیست. بنابراین برای رسیدن به یک دستگاه (مثلاً دستگاهی که https://djangogirls.org روی آن ذخیره شده) نیاز است تا ما درخواستی (request) را از طریق دستگاه‌های بسیار زیادی ارسال کنیم.
 
-It looks like this:
+شبیه به این:
 
 ![عدد 1.3](images/internet_2.png)
 
-Imagine that when you type https://djangogirls.org, you send a letter that says: "Dear Django Girls, I want to see the djangogirls.org website. Send it to me, please!"
+تصور کنید که وقتی شما https://djangogirls.org را تایپ می‌کنید، نامه‌ای فرستاده اید به این مضمون: "جنگو گرلز عزیز، من می‌خواهم وب سایت djangogirls.org را ببینم. لطفاً آن را برای من بفرستید!"
 
-Your letter goes to the post office closest to you. Then it goes to another that is a bit nearer to your addressee, then to another, and another until it is delivered at its destination. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
+نامه شما به نزدیکترین اداره پست فرستاده می‌شود. بعد به اداره پست دیگری می‌رود که کمی بیشتر به مقصد نزدیک است و همینطور پیش می‌رود تا به مقصد نهایی برسد. The only unique thing is that if you send many letters (*data packets*) to the same place, they could go through totally different post offices (*routers*). This depends on how they are distributed at each office.
 
 ![عدد 1.4](images/internet_4.png)
 
