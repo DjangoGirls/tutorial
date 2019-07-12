@@ -125,7 +125,7 @@ O lè wá ṣeré díẹ̀ báyìí kí o ṣàfikún àwọn àròkọ síi lá
 
 ### Sẹ́ àwọn ohun èlò
 
-Apá kan tó ṣe pàtàkì nínú QuerySets ni ìkápá láti sẹ́ wọn. Jẹ́ ká sọ pé a fẹ́ wá gbogbo àwọn àròkọ tí aṣàmúlò ola jẹ́ olùdásílẹ̀ fún. A ó lo `filter` dípò `all` nínú `Post.objects.all()`. In parentheses we state what condition(s) a blog post needs to meet to end up in our queryset. In our case, the condition is that `author` should be equal to `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+Apá kan tó ṣe pàtàkì nínú QuerySets ni ìkápá láti sẹ́ wọn. Jẹ́ ká sọ pé a fẹ́ wá gbogbo àwọn àròkọ tí aṣàmúlò ola jẹ́ olùdásílẹ̀ fún. A ó lo `filter` dípò `all` nínú `Post.objects.all()`. Nínú àkámọ́, a sọ irú ipò (àwọn ipò) tí àròkọ blog kan gbọ́dọ̀ ní láti wà nínú queryset wa. Ní ìṣẹ̀lẹ̀ tiwa, ipò náà ni pé `author` ní láti dọ́gba pẹ̀lú `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
 
 {% filename %}command-line{% endfilename %}
 
