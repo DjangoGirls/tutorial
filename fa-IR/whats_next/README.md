@@ -28,14 +28,14 @@
 - [دوره پایتون Codecademy](https://www.codecademy.com/learn/learn-python)
 - [دوره پایتون گوگل](https://developers.google.com/edu/python/)
 - [کتاب Learn Python The Hard Way](http://learnpythonthehardway.org/book/) - تمرین‌های ابتدایی رایگان است
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [دوره آموزشی New Coder](http://newcoder.io/tutorials/) - مجموعه‌ای از تمرین ‌های کاربردی است که نشان می‌دهد چطور از پایتون می‌توان استفاده کرد
+- [edX](https://www.edx.org/course?search_query=python) - بسیاری از دوره‌ها را می‌توانید رایگان استفاده کنید، ولی اگر مدرک یا تأییدیه بخواهید باید هزینه بپردازید
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) - برخی از دوره‌ها رایگان هستند و با گذراندن آنها می‌توانید مدرک دوره را بگیرید
+- [Python for Everybody](https://www.py4e.com/) - یک دوره آزاد و رایگان بر اساس Coursera Python for Everybody
 
-#### Working with data
+#### کار کردن با داده‌ها
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
+- [دروه علم داده Codecademy](https://www.codecademy.com/learn/paths/data-science)
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
 - [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
 
