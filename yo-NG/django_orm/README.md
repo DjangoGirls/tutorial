@@ -155,7 +155,7 @@ O tún lè gba àkójọ kan ti gbogbo àwọn àròkọ tí a ti ṣàtẹ̀já
 <QuerySet []>
 ```
 
-Unfortunately, the post we added from the Python console is not published yet. But we can change that! First get an instance of a post we want to publish:
+Ó bani nínú jẹ́ pé, a kò tíì ṣàtẹ̀jáde àròkọ tí a ṣàfikún láti console Python náà. Ṣùgbọ́n a lè yí ìyẹn padà! Kọ́kọ́ gba àpẹẹrẹ kan ti àròkọ tí a fẹ́ ṣàtẹ̀jáde kan:
 
 {% filename %}command-line{% endfilename %}
 
@@ -163,7 +163,7 @@ Unfortunately, the post we added from the Python console is not published yet. B
 >>> post = Post.objects.get(title="Sample title")
 ```
 
-And then publish it with our `publish` method:
+Lẹ́yìn náà, ṣàtẹ̀jáde rẹ̀ pẹ̀lú ọ̀nà `publish` wa:
 
 {% filename %}command-line{% endfilename %}
 
