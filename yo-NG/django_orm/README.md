@@ -125,7 +125,7 @@ O lè wá ṣeré díẹ̀ báyìí kí o ṣàfikún àwọn àròkọ síi lá
 
 ### Sẹ́ àwọn ohun èlò
 
-Apá kan tó ṣe pàtàkì nínú QuerySets ni ìkápá láti sẹ́ wọn. Jẹ́ ká sọ pé a fẹ́ wá gbogbo àwọn àròkọ tí aṣàmúlò ola jẹ́ olùdásílẹ̀ fún. A ó lo `filter` dípò `all` nínú `Post.objects.all()`. Nínú àkámọ́, a sọ irú ipò (àwọn ipò) tí àròkọ blog kan gbọ́dọ̀ ní láti wà nínú queryset wa. Ní ìṣẹ̀lẹ̀ tiwa, ipò náà ni pé `author` ní láti dọ́gba pẹ̀lú `me`. The way to write it in Django is `author=me`. Now our piece of code looks like this:
+Apá kan tó ṣe pàtàkì nínú QuerySets ni ìkápá láti sẹ́ wọn. Jẹ́ ká sọ pé a fẹ́ wá gbogbo àwọn àròkọ tí aṣàmúlò ola jẹ́ olùdásílẹ̀ fún. A ó lo `filter` dípò `all` nínú `Post.objects.all()`. Nínú àkámọ́, a sọ irú ipò (àwọn ipò) tí àròkọ blog kan gbọ́dọ̀ ní láti wà nínú queryset wa. Ní ìṣẹ̀lẹ̀ tiwa, ipò náà ni pé `author` ní láti dọ́gba pẹ̀lú `me`. Bí a ṣe máa kọ́ ní Django jẹ́ `author=me`. Ní báyìí, abala kóòdù wa yíò rí báyìí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -143,7 +143,7 @@ Tàbí bóyá a fẹ́ rí gbogbo àwọn àròkọ tó ní ọ̀rọ̀ 'title' 
 <QuerySet [<Post: Sample title>, <Post: 4th title of post>]>
 ```
 
-> **Note** There are two underscore characters (`_`) between `title` and `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
+> **Ṣàkíyèsí** Àwọn àmì-dáàṣì-ìsàlẹ̀ (`_`) méjì ló wà láàrín `title` àti `contains`. Django's ORM uses this rule to separate field names ("title") and operations or filters ("contains"). If you use only one underscore, you'll get an error like "FieldError: Cannot resolve keyword title_contains".
 
 You can also get a list of all published posts. We do this by filtering all the posts that have `published_date` set in the past:
 
