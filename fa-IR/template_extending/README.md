@@ -1,8 +1,8 @@
-# توسعه تمپلیت
+# توسعه template
 
-چیز دیگری که جنگو برای شما دارد **توسعه تمپلیت** است. به چه معنی است؟ به این معنی است که شما می‌توانید قسمت‌های ثابتی از HTML خودتان را در صفحه‌های مختلف استفاده کنید.
+چیز دیگری که جنگو برای شما دارد **توسعه template** است. معنای آن چیست؟ به این معنی است که شما می‌توانید بخش هایی از یک کد HTML را در چندین صفحه مختلف از وب سایت خود استفاده کنید.
 
-Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+زمانی که قصد دارید از اطلاعات یا ترکیب بندی خاصی چندین بار استفاده کنید، template ها به کمک شما خواهند آمد. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
 ## Create a base template
 
