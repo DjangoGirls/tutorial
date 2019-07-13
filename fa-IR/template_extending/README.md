@@ -84,9 +84,9 @@
 {% endblock %}
 ```
 
-ولی چرا؟ شما همین الان یک `block` ساختید! شما از تمپلیت تگ `{% block %}` برای ساخت یک ناحیه استفاده کردید، که کد HTML در آن قرار می گیرد. زمانی که تمپلیت `base.html` را در فایل تمپلیت دیگری گسترش میدهیم، کدهای HTML مذکور را داخل تگ <0>{% block %}</0> می نویسیم. ما نحوه انجام کار را همین الان به شما نشان خواهیم داد.
+ولی چرا؟ شما همین الان یک `block` ساختید! شما از تمپلیت تگ `{% block %}` برای ساخت یک ناحیه استفاده کردید، که کد HTML در آن قرار می گیرد. زمانی که تمپلیت `base.html` را در فایل تمپلیت دیگری گسترش میدهیم، کدهای HTML مذکور را داخل تگ block می نویسیم. ما نحوه انجام کار را همین الان به شما نشان خواهیم داد.
 
-Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
+فایل `base.html` را ذخیره کنید و فایل `blog/templates/blog/post_list.html` را دوباره در ویرایشگر متنی باز کنید. {% raw %} شما قرار است همه چیز را از بالای `{% for post in posts %}` و زیر `{% endfor %}` حذف کنید. زمانی که کار گفته شده را انجام دادید، فایل بذین شکل خواهد بود:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -102,9 +102,9 @@ Now save `base.html` and open your `blog/templates/blog/post_list.html` again in
 {% endfor %}
 ```
 
-We want to use this as part of our template for all the content blocks. Time to add block tags to this file!
+ما میخواهیم از این بخش template برای تمام بلاک های محتوا استفاده کنیم. زمان اضافه کردن تگ های block به این فایل رسیده است!
 
-{% raw %}You want your block tag to match the tag in your `base.html` file. You also want it to include all the code that belongs in your content blocks. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %} شما میخواهید که تگ block با تگ های فایل `base.html` هماهنگ باشد. هم چنین میخواهید تا این تگ تمام کدهای متعلق به بلاک محتوا را شامل شود. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
