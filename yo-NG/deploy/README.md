@@ -4,7 +4,7 @@
 
 Títí di báyìí, ààyè ayélujára rẹ wà lórí kọ̀mpútà rẹ nìkan. Ní báyìí, o máa kọ́ bí o ṣe lè ṣàgbékalẹ̀ rẹ̀! Ṣíṣe àgbékalẹ̀ jẹ́ ìlànà ṣíṣe ìgbéjáde ètò rẹ sórí Íńtánẹ́ẹ̀tì kó lè ṣeéṣe fún àwọn èèyàn láti lọ wo ètò rẹ. :)
 
-Gẹ́gẹ́ bí o ṣe kẹ́kọ̀ọ́, ààyè ayélujára kan ní láti wà lórí server kan. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+Gẹ́gẹ́ bí o ṣe kẹ́kọ̀ọ́, ààyè ayélujára kan ní láti wà lórí server kan. Ọ̀pọ̀lọpọ̀ àwọn olùpèsè server ló wà lórí íńtánẹ́ẹ̀tì, a máa lo [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere wà lọ́fẹ̀ẹ́ fún àwọn ètò kékèké tí kò ní àwọn àlejò púpọ̀, nítorí náà yóò tó fún ọ ní báyìí.
 
 The other external service we'll be using is [GitHub](https://www.github.com), which is a code hosting service. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
 
