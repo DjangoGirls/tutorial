@@ -20,7 +20,7 @@ Gẹ́gẹ́ bí o ṣe kẹ́kọ̀ọ́, ààyè ayélujára kan ní láti wà
 
 Git máa n ṣàmójútó àwọn ìyípadà sí àpapọ̀ àwọn fáìlì pàtó kan nínú ohun tí a n pè ní repository kóòdù kan (tàbí "repo" ní kúkúrú). Jẹ́ ká bẹ̀rẹ̀ ẹyọkan fún iṣẹ́ wa. Ṣí console rẹ kalẹ̀ kí o sì ṣe àwọn àṣẹ wọ̀nyí, nínú àkójọpọ̀ fáìlì `djangogirls` náà:
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
+> **Àkíyèsí** Ṣàyẹ̀wò àkójọpọ̀ fáìlì rẹ tó n ṣiṣẹ́ lọ́wọ́lọ́wọ́ pẹ̀lú àṣẹ `pwd` (Mac OS X/Linux) tàbí `cd` (Windows) ṣáájú bíbẹ̀rẹ̀ repository náà. Ó yẹ kí o wà nínú fódà `djangogirls` náà.
 
 {% filename %}command-line{% endfilename %}
 
