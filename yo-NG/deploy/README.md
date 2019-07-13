@@ -12,11 +12,11 @@ Gẹ́gẹ́ bí o ṣe kẹ́kọ̀ọ́, ààyè ayélujára kan ní láti wà
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **Àkíyèsí** Tí o bá ti yanjú àwọn ìgbésẹ̀ ìṣàgbékalẹ̀ náà tẹ́lẹ̀, kò sídìí láti tún ṣe èyí mọ́ – o lè fò lọ sí abala tó kàn náà kí o sì bẹ̀rẹ̀ ṣíṣẹ̀dá repository Git rẹ.
 
 {% include "/deploy/install_git.md" %}
 
-## Starting our Git repository
+## Bíbẹ̀rẹ̀ repository Git wa
 
 Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
 
