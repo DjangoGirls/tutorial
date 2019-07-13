@@ -101,7 +101,7 @@ On the next screen, you'll be shown your repo's clone URL, which you will use in
 
 Now we need to hook up the Git repository on your computer to the one up on GitHub.
 
-Type the following into your console (replace `<your-github-username>` with the username you entered when you created your GitHub account, but without the angle-brackets -- the URL should match the clone URL you just saw):
+Tẹ èyí tó tẹ̀le yìí sínú console rẹ (rọ́pò `<your-github-username>` pẹ̀lú orúkọ aṣàmúlò tí o tẹ̀ nígbà tí o ṣẹ̀dá account GitHub rẹ, ṣùgbọ́n láìsí àwọn àkámọ́ onígun náà -- ó yẹ kí URL náà dọ́gba pẹ̀lú URL ìfijọ tí o ṣẹ̀ṣẹ̀ rí):
 
 {% filename %}command-line{% endfilename %}
 
