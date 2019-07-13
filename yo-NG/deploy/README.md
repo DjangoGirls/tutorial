@@ -109,7 +109,7 @@ Type the following into your console (replace `<your-github-username>` with the 
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+Nígbà tí o bá ti kóòdù rẹ sí GitHub, ìwọ yíò rí ìbéèrè fún orúkọ aṣàmúlò àti ọ̀rọ̀ aṣínà GitHub rẹ (bóyá nínú fèrèsé ìlà ìpàṣẹ náà tàbí nínú fèrèsé aṣẹ́yọsókè kan), àti pé lẹ́yìn títẹ àwọn ohun-ẹ̀rí, ó yẹ kí o rí nnkan kan báyìí:
 
 {% filename %}command-line{% endfilename %}
 
