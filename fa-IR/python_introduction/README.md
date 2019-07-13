@@ -6,15 +6,15 @@
 
 حالا بیایید کمی کد بنویسیم!
 
-## پرامپت پایتون
+## خط فرمان پایتون
 
 > > برای کسانی که در خانه مطالعه می‌کنند این بخش در ویدئو [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) توضیح داده شده است.
 
 برای آنکه با پایتون کار کنیم باید یک کنسول *خط فرمان* روی کامپیوتر خود باز کنید. احتمالا بلد هستید که چطور این کار را بکنید، در بخش [آشنایی با خط فرمان](../intro_to_command_line/README.md) آن را یاد گرفته‌اید.
 
-Once you're ready, follow the instructions below.
+زمانی که آماده بودید، دستورالعمل های زیر را دنبال کنید.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+ما میخواهیم یک کنسول پایتون باز کنیم، پس در کنسول خط فرمان ویندوز `python` و در ترمینال لینوکس/ مک `python3` را تایپ کنید و `enter` بزنید.
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -24,7 +24,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Your first Python command!
+## اولین دستور پایتونی شما!
 
 After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
