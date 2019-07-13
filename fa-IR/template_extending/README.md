@@ -84,7 +84,7 @@
 {% endblock %}
 ```
 
-ولی چرا؟ شما همین الان یک `block` ساختید! شما از تمپلیت تگ `{% block %}` برای ساخت یک ناحیه که کد HTML در آن قرار می گیرد، استفاده کردید. That HTML will come from another template that extends this template (`base.html`). We will show you how to do this in a moment.
+ولی چرا؟ شما همین الان یک `block` ساختید! شما از تمپلیت تگ `{% block %}` برای ساخت یک ناحیه استفاده کردید، که کد HTML در آن قرار می گیرد. زمانی که تمپلیت `base.html` را در فایل تمپلیت دیگری گسترش میدهیم، کدهای HTML مذکور را داخل تگ <0>{% block %}</0> می نویسیم. ما نحوه انجام کار را همین الان به شما نشان خواهیم داد.
 
 Now save `base.html` and open your `blog/templates/blog/post_list.html` again in the code editor. {% raw %}You're going to remove everything above `{% for post in posts %}` and below `{% endfor %}`. When you're done, the file will look like this:{% endraw %}
 
