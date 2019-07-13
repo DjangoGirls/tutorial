@@ -2,13 +2,13 @@
 
 چیز دیگری که جنگو برای شما دارد **توسعه template** است. معنای آن چیست؟ به این معنی است که شما می‌توانید بخش هایی از یک کد HTML را در چندین صفحه مختلف از وب سایت خود استفاده کنید.
 
-زمانی که قصد دارید از اطلاعات یا ترکیب بندی خاصی چندین بار استفاده کنید، template ها به کمک شما خواهند آمد. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
+زمانی که قصد دارید از اطلاعات یا ترکیب بندی خاصی چندین بار استفاده کنید، template ها به کمک شما خواهند آمد. نیازی نیست که یک کار تکراری را برای همه فایل ها انجام دهید. و اگر قصد داشتید چیزی را تغییر دهید، لازم نیست آن تغییر را در تک تک template ها اعمال کنید. فقط یکبار کافی است!
 
-## Create a base template
+## ساخت یک template پایه
 
-A base template is the most basic template that you extend on every page of your website.
+یک template پایه، اساسی ترین template است که شما آن را در هر صفحه وب سایت خود توسعه می دهید.
 
-Let's create a `base.html` file in `blog/templates/blog/`:
+اجازه دهید تا یک فایل `base.html` در مسیر `blog/templates/blog/` بسازیم:
 
     blog
     └───templates
