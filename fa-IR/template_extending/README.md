@@ -1,6 +1,6 @@
-# توسعه template
+# توسعه تمپلیت
 
-Another nice thing Django has for you is **template extending**. What does this mean? It means that you can use the same parts of your HTML for different pages of your website.
+چیز دیگری که جنگو برای شما دارد **توسعه تمپلیت** است. به چه معنی است؟ به این معنی است که شما می‌توانید قسمت‌های ثابتی از HTML خودتان را در صفحه‌های مختلف استفاده کنید.
 
 Templates help when you want to use the same information or layout in more than one place. You don't have to repeat yourself in every file. And if you want to change something, you don't have to do it in every template, just one!
 
