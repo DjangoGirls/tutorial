@@ -1,8 +1,8 @@
 # Ṣàgbékalẹ̀!
 
-> **Àkíyèsí** Àkòrí tó kàn yìí lè ṣòro díẹ̀ láti kọ́ yanjú nígbà mìíràn. Máa kọ́ ọ nìṣó kí o sì parí rẹ̀; ìṣàgbékalẹ̀ jẹ́ apá kan tó ṣe pàtàkì nínú ìlànà ìgbéjáde ààyè ayélujára náà. This chapter is placed in the middle of the tutorial so that your mentor can help with the slightly trickier process of getting your website online. This means you can still finish the tutorial on your own if you run out of time.
+> **Àkíyèsí** Àkòrí tó kàn yìí lè ṣòro díẹ̀ láti kọ́ yanjú nígbà mìíràn. Máa kọ́ ọ nìṣó kí o sì parí rẹ̀; ìṣàgbékalẹ̀ jẹ́ apá kan tó ṣe pàtàkì nínú ìlànà ìgbéjáde ààyè ayélujára náà. Àkòrí yìí wà ní àárín àlàyé náà kí atọ́nisọ́nà rẹ bá lè ràn ọ́ lọ́wọ́ pẹ̀lú ìlànà gbígbé ààyè ayélujára rẹ sórí íńtánẹ́ẹ̀tì tó bá ṣòro díẹ̀ náà. Èyí túmọ̀ sí pé o ṣì lè parí àlàyé náà fúnra rẹ tí kò bá sí àkókò mọ́.
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
+Títí di báyìí, ààyè ayélujára rẹ wà lórí kọ̀mpútà rẹ nìkan. Ní báyìí, o máa kọ́ bí o ṣe lè ṣàgbékalẹ̀ rẹ̀! Deploying is the process of publishing your application on the Internet so people can finally go and see your app. :)
 
 As you learned, a website has to be located on a server. There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
 
