@@ -18,7 +18,7 @@ Gẹ́gẹ́ bí o ṣe kẹ́kọ̀ọ́, ààyè ayélujára kan ní láti wà
 
 ## Bíbẹ̀rẹ̀ repository Git wa
 
-Git tracks changes to a particular set of files in what's called a code repository (or "repo" for short). Let's start one for our project. Open up your console and run these commands, in the `djangogirls` directory:
+Git máa n ṣàmójútó àwọn ìyípadà sí àpapọ̀ àwọn fáìlì pàtó kan nínú ohun tí a n pè ní repository kóòdù kan (tàbí "repo" ní kúkúrú). Jẹ́ ká bẹ̀rẹ̀ ẹyọkan fún iṣẹ́ wa. Ṣí console rẹ kalẹ̀ kí o sì ṣe àwọn àṣẹ wọ̀nyí, nínú àkójọpọ̀ fáìlì `djangogirls` náà:
 
 > **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. You should be in the `djangogirls` folder.
 
