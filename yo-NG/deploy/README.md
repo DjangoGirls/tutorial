@@ -6,9 +6,9 @@ Títí di báyìí, ààyè ayélujára rẹ wà lórí kọ̀mpútà rẹ nìka
 
 Gẹ́gẹ́ bí o ṣe kẹ́kọ̀ọ́, ààyè ayélujára kan ní láti wà lórí server kan. Ọ̀pọ̀lọpọ̀ àwọn olùpèsè server ló wà lórí íńtánẹ́ẹ̀tì, a máa lo [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere wà lọ́fẹ̀ẹ́ fún àwọn ètò kékèké tí kò ní àwọn àlejò púpọ̀, nítorí náà yóò tó fún ọ ní báyìí.
 
-Ìpèsè ìta mìíràn tí a ó máa lò ni [GitHub](https://www.github.com), èyí tó jẹ́ ìpèsè kan fún pípèsè kóòdù. There are others out there, but almost all programmers have a GitHub account these days, and now so will you!
+Ìpèsè ìta mìíràn tí a ó máa lò ni [GitHub](https://www.github.com), èyí tó jẹ́ ìpèsè kan fún pípèsè kóòdù. Àwọn mìíràn wà níbẹ̀, ṣùgbọ́n ó fẹ́rẹ̀ẹ́ jẹ́ gbogbo àwọn onímọ̀ nípa kóòdù ló ní account GitHub kan ní àkókò tá a wà yìí, ìwọ náà yíò ní báyìí!
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Àwọn ààyè mẹ́ta wọ̀nyí yíò ṣe pàtàkì sí ẹ. Kọ̀mpútà tìẹ yíò jẹ́ ààyè tí o ti máa ṣe ìgbéjáde àti ṣíṣe àyẹ̀wò. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
 # Git
 
