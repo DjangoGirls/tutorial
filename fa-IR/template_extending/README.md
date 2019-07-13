@@ -75,7 +75,7 @@
 </body>
 ```
 
-{% raw %} ممکن است توجه کرده باشید که این عمل هر چیزی بین `{% for post in posts %}` و `{% endfor %}` با: {% endraw %} جایگذاری کرده است
+{% raw %} ممکن است توجه کرده باشید که این عمل هر چیزی بین `{% for post in posts %}` و `{% endfor %}` را جایگذاری کرده است با: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -104,7 +104,7 @@
 
 ما میخواهیم از این بخش template برای تمام بلاک های محتوا استفاده کنیم. زمان اضافه کردن تگ های block به این فایل رسیده است!
 
-{% raw %} شما میخواهید که تگ block با تگ های فایل `base.html` هماهنگ باشد. هم چنین میخواهید تا این تگ تمام کدهای متعلق به بلاک محتوا را شامل شود. To do that, put everything between `{% block content %}` and `{% endblock %}`. Like this:{% endraw %}
+{% raw %} شما میخواهید که تگ block با تگ های فایل `base.html` هماهنگ باشد. هم چنین میخواهید تا این تگ تمام کدهای متعلق به بلاک محتوا را شامل شود. برای انجام این کار، همه چیز را بین `{% block content %}` و `{% endblock %}` قرار دهید. به این صورت:{% endraw %}
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -122,7 +122,7 @@
 {% endblock %}
 ```
 
-Only one thing left. We need to connect these two templates together. This is what extending templates is all about! We'll do this by adding an extends tag to the beginning of the file. Like this:
+تنها یک کار باقی مانده. ما باید این دو template را به یکدیگر متصل کنیم. هدفمان از گسترش template همین است! با اضافه کردن تگ extends در ابتدای فایل، این کار را انجام می دهیم. مانند زیر:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -142,6 +142,6 @@ Only one thing left. We need to connect these two templates together. This is wh
 {% endblock %}
 ```
 
-That's it! Save the file, and check if your website is still working properly. :)
+همین است! فایل را ذخیره کنید، و چک کنید که آیا وب سایت شما هنوز به درستی کار میکند. :)
 
-> If you get the error `TemplateDoesNotExist`, that means that there is no `blog/base.html` file and you have `runserver` running in the console. Try to stop it (by pressing Ctrl+C – the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+> اگر خطای`TemplateDoesNotExist` را دریافت کردید، به معنای آن است که فایل `blog/base.html` وجود ندارد و دستور `runserver` در کنسول خط فرمان در حال اجرا است. سعی کنید دستور را متوقف کنید (با زدن Ctrl+C - کلید Control و کلید C به صورت همزمان) و وب سرور را دوباره با دستور `python manage.py runserver` راه اندازی کنید.
