@@ -130,7 +130,7 @@ Kóòdù rẹ ti wà lórí GitHub ní báyìí. Lọ síbẹ̀ kí o ṣàyẹ�
 
 ## Forúkọ sílẹ̀ fún account PythonAnywhere kan
 
-> **Note** You might have already created a PythonAnywhere account earlier during the install steps – if so, no need to do it again.
+> **Àkíyèsí** Ó ṣeéṣe kí o ti ṣẹ̀dá account PythonAnywhere kan tẹ́lẹ̀ lásìkò àwọn ìgbésẹ̀ ìṣàgbékalẹ̀ náà – tó bá rí bẹ́ẹ̀, kò sídìí láti tún ṣe é mọ́.
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
