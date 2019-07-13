@@ -72,7 +72,7 @@ Tọ́jú rẹ̀ gẹ́gẹ́ bí `.gitignore` sínú fódà "djangogirls" náà
     nothing added to commit but untracked files present (use "git add" to track)
     
 
-And finally we save our changes. Go to your console and run these commands:
+Ní ìparí, a máa tọ́jú àwọn ìyípadà wa. Lọ sí console rẹ kí o ṣe àwọn àṣẹ wọ̀nyí:
 
 {% filename %}command-line{% endfilename %}
 
