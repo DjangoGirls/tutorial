@@ -8,7 +8,7 @@ Gẹ́gẹ́ bí o ṣe kẹ́kọ̀ọ́, ààyè ayélujára kan ní láti wà
 
 Ìpèsè ìta mìíràn tí a ó máa lò ni [GitHub](https://www.github.com), èyí tó jẹ́ ìpèsè kan fún pípèsè kóòdù. Àwọn mìíràn wà níbẹ̀, ṣùgbọ́n ó fẹ́rẹ̀ẹ́ jẹ́ gbogbo àwọn onímọ̀ nípa kóòdù ló ní account GitHub kan ní àkókò tá a wà yìí, ìwọ náà yíò ní báyìí!
 
-Àwọn ààyè mẹ́ta wọ̀nyí yíò ṣe pàtàkì sí ẹ. Kọ̀mpútà tìẹ yíò jẹ́ ààyè tí o ti máa ṣe ìgbéjáde àti ṣíṣe àyẹ̀wò. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+Àwọn ààyè mẹ́ta wọ̀nyí yíò ṣe pàtàkì sí ẹ. Kọ̀mpútà tìẹ yíò jẹ́ ààyè tí o ti máa ṣe ìgbéjáde àti ṣíṣe àyẹ̀wò. Nígbà tí inú rẹ bá dùn pẹ̀lú àwọn ìyípadà náà, ìwọ yíò fi ẹ̀dà ètò rẹ kan sórí GitHub. Ààyè ayélujára rẹ yíò wà lórí PythonAnywhere, ìwọ yíò máa ṣe ìmúdójúìwọ̀n rẹ̀ nípasẹ̀ gbígba ẹ̀dà tuntun kan ti kóòdù rẹ láti GitHub.
 
 # Git
 
