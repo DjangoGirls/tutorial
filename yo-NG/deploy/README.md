@@ -30,9 +30,9 @@ Git máa n ṣàmójútó àwọn ìyípadà sí àpapọ̀ àwọn fáìlì pà
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+Bíbẹ̀rẹ̀ repository Git náà jẹ́ nnkan kan tí a nílò láti ṣe lẹ́ẹ̀kan ṣoṣo péré lórí iṣẹ́ kan (àti pé ìwọ kò ní láti tún tẹ orúkọ aṣàmúlò àti ímeèlì náà mọ́).
 
-Git will track changes to all the files and folders in this directory, but there are some files we want it to ignore. We do this by creating a file called `.gitignore` in the base directory. Open up your editor and create a new file with the following contents:
+Git yíò ṣàmójútó àwọn ìyípadà sí gbogbo àwọn fáìlì àti fódà tó wà nínú àkójọpọ̀ fáìlì yìí, ṣùgbọ́n àwọn fáìlì kan wà tí a fẹ́ kí ó fojú fò. A máa ṣe èyí nípasẹ̀ ṣíṣẹ̀dá fáìlì kan tí a n pè ní `.gitignore` sínú àkójọpọ̀ fáìlì ìpìlẹ̀ náà. Ṣí olóòtú rẹ kalẹ̀ kí o sì ṣẹ̀dá fáìlì tuntun kan pẹ̀lú àwọn àkóónú tó tẹ̀le yìí:
 
 {% filename %}.gitignore{% endfilename %}
 
