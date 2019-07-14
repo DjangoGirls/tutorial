@@ -58,7 +58,7 @@
 
 ## رشته های متنی
 
-چطور است نام خود را بین علامت تک کوت (' ') بنویسید؟ به صورت زیر:
+چطور است نام خود را بین علامت نقل قول تکی (آپاستروف) (' ') بنویسید؟ به صورت زیر:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -67,9 +67,9 @@
 'Ola'
 ```
 
-شما همین الان اولین رشته متنی خود را ساختید! رشته متنی دنباله ای از کاراکترها است که میتوان آن ها را توسط کامپیوتر پردازش کرد. رشته متنی همواره باید با یک علامت شروع و با همان پایان یابد. این علامت ممکن است تک کوت (`'`) یا دابل کوت (`"`) باشد (در پایتون بین این دو فرقی نیست) این علامت ها به پایتون میگویند که حاوی یک رشته متنی هستند.
+شما همین الان اولین رشته متنی خود را ساختید! رشته متنی دنباله ای از کاراکترها است که میتوان آن ها را توسط کامپیوتر پردازش کرد. رشته متنی همواره باید با یک علامت شروع و با همان پایان یابد. این علامت ممکن است نقل قول تکی یا آپاستروف (`'`) یا نقل قول دوتایی (`"`) باشد (در پایتون بین این دو فرقی نیست) این علامت ها به پایتون میگویند که حاوی یک رشته متنی هستند.
 
-Strings can be strung together. Try this:
+رشته ها می توانند به همدیگر الحاق شوند. دستور زیر را امتحان کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+همچنین میتوانید یک رشته را در یک عدد ضرب کنید، رشته به تعداد آن عدد تکرار می شود:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -87,9 +87,9 @@ You can also multiply strings with a number:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+اگر نیاز داشتید تا یک علامت آپاستروف داخل رشته بیاورید، دو راه دارید.
 
-Using double quotes:
+استفاده از علامت نقل قول دوتایی:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+یا استفاده از یک بک اسلش (``) پیش از علامت آپاستروف:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+خوب است، نه؟ برای دیدن نام خود با حروف بزرگ، تایپ کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -116,7 +116,7 @@ Nice, huh? To see your name in uppercase letters, type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+شما همین الان از **متد** `upper` روی رشته متنی استفاده کردید! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
 If you want to know the number of letters contained in your name, there is a **function** for that too!
 
