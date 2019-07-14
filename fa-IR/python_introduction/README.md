@@ -52,13 +52,13 @@
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+کمی با دستورات مختلف محاسباتی تفریح کنید و دوباره آموزش را ادامه دهید. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+همانطور که میبینید، پایتون محاسبه گر بسیار خوبی است. اگر شما به این فکر می کنید که چه کارهای دیگری می شود انجام داد…
 
-## Strings
+## رشته های متنی
 
-How about your name? Type your first name in quotes like this:
+چطور است نام خود را بین علامت تک کوت (' ') بنویسید؟ به صورت زیر:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -67,7 +67,7 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+شما همین الان اولین رشته متنی خود را ساختید! رشته متنی دنباله ای از کاراکترها است که میتوان آن ها را توسط کامپیوتر پردازش کرد. رشته متنی همواره باید با یک علامت شروع و با همان پایان یابد. این علامت ممکن است تک کوت (`'`) یا دابل کوت (`"`) باشد (در پایتون بین این دو فرقی نیست) این علامت ها به پایتون میگویند که حاوی یک رشته متنی هستند.
 
 Strings can be strung together. Try this:
 
