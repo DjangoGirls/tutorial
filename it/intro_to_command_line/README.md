@@ -74,7 +74,7 @@ Ogni sistema operativo ha un insieme di comandi leggermente diverso per la comma
 
 ### Cartella corrente
 
-Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo commando e premi `invio`:
+Sarebbe bello sapere dove siamo adesso, vero? Vediamo. Digita questo comando e premi `invio`:
 
     $ pwd
     /Users/olasitarska
@@ -159,7 +159,7 @@ Windows:
     > mkdir practice
     
 
-Questo breve comando creerà una cartella con il nome `practice` sul tuo desktop. Puoi controllare se è lì semplicemente guardando sul tuo desktop oppure eseguendo un commando `ls` oppure `dir`! Provalo :)
+Questo breve comando creerà una cartella con il nome `practice` sul tuo desktop. Puoi controllare se è lì semplicemente guardando sul tuo desktop oppure eseguendo un comando `ls` oppure `dir`! Provalo :)
 
 > Suggerimento PRO: se non vuoi digitare lo stesso comando tutte le volte, prova a premere ` freccia in su ` e `freccia in giù` sulla tua tastiera per scorrere tutti i comandi che hai usato fin ora.
 
