@@ -26,7 +26,7 @@
 
 ## اولین دستور پایتونی شما!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+پس از اجرای دستور Python، خط فرمان به `>>>` تغییر می کند. این تغییر برای ما به معنای آن است که در حال حاضر فقط می توانیم از دستورات زبان پایتون استفاده کنیم. شما نیازی به تایپ `>>>` ندارید - خط فرمان پایتون این کار را برایتان میکند.
 
 If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
