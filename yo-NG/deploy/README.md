@@ -49,7 +49,7 @@ Tọ́jú rẹ̀ gẹ́gẹ́ bí `.gitignore` sínú fódà "djangogirls" náà
 
 > **Àkíyèsí** Àmì tó-ín (dot) tó wà ní ìbẹ̀rẹ̀ orúkọ fáìlì náà ṣe pàtàkì! Tí o bá n kojú ìṣòro kankan pẹ̀lú ṣíṣẹ̀dá rẹ̀ (fún àpẹẹrẹ, MacOS kò nífẹ̀ẹ́ kí o ṣẹ̀dá àwọn fáìlì tó bẹ̀rẹ̀ pẹ̀lú àmì tó-ín kan nípasẹ̀ Finder náà), nígbà náà lo ẹ̀yà "Save As" tó wà nínú olóòtú rẹ, ó máa yanjú ìṣòro náà. Ri dájú pé ìwọ kò ṣàfikún `.txt`, `.py`, tàbí èyíkéyìí àfikún mìíràn sí orúkọ fáìlì náà -- Git yíò lè dá fáìlì náà mọ̀ tí orúkọ náà bá jẹ́ `.gitignore` nìkan.
 > 
-> **Àkíyèsí** Ọ̀kan lára àwọn fáìlì tí o dárúkọ pàtó nínú fáìlì `.gitignore` rẹ jẹ́ `db.sqlite3`. Fáìlì yẹn jẹ́ àkójọpọ̀ dátà ti orí kọ̀mpútà rẹ, níbi tí gbogbo àwọn aṣàmúlò àti àwọn àròkọ rẹ gba títọ́jú sí. A ó tẹ̀lé ìlànà kíkọ kóòdù ayélujára, tó túmọ̀sí pé a ó lo àkójọpọ̀ dátà ọ̀tọ̀ọ̀tọ̀ fún ààyè ṣíṣe àyẹ̀wò lórí kọ̀mpútà rẹ àti ààyè ayélujára rẹ tó n ṣiṣẹ́ lórí PythonAnywhere. Àkójọpọ̀ dátà PythonAnywhere náà lè jẹ́ SQLite, bíi ẹ̀rọ ìgbéjáde rẹ, ṣùgbọ́n ìwọ yíò sábà máa lo ọ̀kan tí a n pè ní MySQL èyí tó lè kojú àwọn àlejò ààyè púpọ̀ ju SQLite lọ. Èyí tó wù kó jẹ́, nípasẹ̀ fífojú fo àkójọpọ̀ dátà SQLite rẹ fún ẹ̀dà GitHub náà, ó túmọ̀ sí pé gbogbo àwọn àròkọ àti alábòójútó tí o ti ṣẹ̀dá látẹ̀yìnwá máa wà lórí kọ̀mpútà rẹ nìkan, àti pé ìwọ yíò ní láti ṣẹ̀dá àwọn tuntun lásìkò iṣẹ́. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **Àkíyèsí** Ọ̀kan lára àwọn fáìlì tí o dárúkọ pàtó nínú fáìlì `.gitignore` rẹ jẹ́ `db.sqlite3`. Fáìlì yẹn jẹ́ àkójọpọ̀ dátà ti orí kọ̀mpútà rẹ, níbi tí gbogbo àwọn aṣàmúlò àti àwọn àròkọ rẹ gba títọ́jú sí. A ó tẹ̀lé ìlànà kíkọ kóòdù ayélujára, tó túmọ̀sí pé a ó lo àkójọpọ̀ dátà ọ̀tọ̀ọ̀tọ̀ fún ààyè ṣíṣe àyẹ̀wò lórí kọ̀mpútà rẹ àti ààyè ayélujára rẹ tó n ṣiṣẹ́ lórí PythonAnywhere. Àkójọpọ̀ dátà PythonAnywhere náà lè jẹ́ SQLite, bíi ẹ̀rọ ìgbéjáde rẹ, ṣùgbọ́n ìwọ yíò sábà máa lo ọ̀kan tí a n pè ní MySQL èyí tó lè kojú àwọn àlejò ààyè púpọ̀ ju SQLite lọ. Èyí tó wù kó jẹ́, nípasẹ̀ fífojú fo àkójọpọ̀ dátà SQLite rẹ fún ẹ̀dà GitHub náà, ó túmọ̀ sí pé gbogbo àwọn àròkọ àti alábòójútó tí o ti ṣẹ̀dá látẹ̀yìnwá máa wà lórí kọ̀mpútà rẹ nìkan, àti pé ìwọ yíò ní láti ṣẹ̀dá àwọn tuntun lásìkò iṣẹ́. Ó yẹ kí o ronú nípa àkójọpọ̀ dátà tó wà lórí kọ̀mpútà rẹ gẹ́gẹ́ bí ibi ìṣeré tó dára kan níbi tí o ti lè ṣàyẹ̀wò oríṣiríṣi nǹkan láìbẹ̀rù pé o máa yọ àwọn àròkọ gidi rẹ kúrò lórí blog rẹ.
 
 Ó jẹ́ èrò tó dára kan láti lo àṣẹ `git status` kan ṣáájú `git add` tàbí nígbàkígbà tí o bá rí pé o tí ń ṣiyèméjì nípa ohun tó ti yípadà. Èyí yíò ṣe ìrànlọ́wọ́ láti ṣèdíwọ́ fún èyíkéyìí ìyàlẹ́nu láti ṣẹlẹ̀, gẹ́gẹ́ bíi ṣíṣe àfikún tàbí commit àwọn fáìlì tí kò yẹ. Àṣẹ `git status` náà yíò dá ìròyìn padà nípa àwọn fáìlì ti kò ní àmójútó/tí a ṣàtúnṣe/tí a gbé kalẹ̀, ipò ẹ̀ka náà, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ. Ó yẹ kí àbájáde náà jọ èyí tó tẹ̀le yìí:
 
@@ -87,9 +87,9 @@ Ní ìparí, a máa tọ́jú àwọn ìyípadà wa. Lọ sí console rẹ kí o
 
 ## Títi kóòdù rẹ sí GitHub
 
-Lọ sí [GitHub.com](https://www.github.com) kí o sì forúkọ sílẹ̀ fún account aṣàmúlò ọ̀fẹ́ tuntun kan. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+Lọ sí [GitHub.com](https://www.github.com) kí o sì forúkọ sílẹ̀ fún account aṣàmúlò ọ̀fẹ́ tuntun kan. (Tí o bá ti ṣe ìyẹn tẹ́lẹ̀ nínú ìmúrasílẹ̀ àpérò náà, ó dára!) Ri dájú láti rántí ọ̀rọ̀ aṣínà rẹ (ṣàfikún rẹ̀ sínú alákòóso ọ̀rọ̀ aṣínà rẹ, tí o bá lo ọ̀kan).
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Lẹ́yìn náà, ṣẹ̀dá repository tuntun kan, pẹ̀lú orúkọ "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
 ![](images/new_github_repo.png)
 
@@ -99,7 +99,7 @@ On the next screen, you'll be shown your repo's clone URL, which you will use in
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Ní báyìí, a nílò láti ṣe ìsopọ̀ repository Git tó wà lórí kọ̀mpútà rẹ pẹ̀lú èyí tó wà lórí GitHub.
 
 Tẹ èyí tó tẹ̀le yìí sínú console rẹ (rọ́pò `<your-github-username>` pẹ̀lú orúkọ aṣàmúlò tí o tẹ̀ nígbà tí o ṣẹ̀dá account GitHub rẹ, ṣùgbọ́n láìsí àwọn àkámọ́ onígun náà -- ó yẹ kí URL náà dọ́gba pẹ̀lú URL ìfijọ tí o ṣẹ̀ṣẹ̀ rí):
 
