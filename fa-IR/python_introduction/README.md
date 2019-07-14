@@ -28,9 +28,9 @@
 
 پس از اجرای دستور Python، خط فرمان به `>>>` تغییر می کند. این تغییر برای ما به معنای آن است که در حال حاضر فقط می توانیم از دستورات زبان پایتون استفاده کنیم. شما نیازی به تایپ `>>>` ندارید - خط فرمان پایتون این کار را برایتان میکند.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+اگر به هر دلیلی قصد خروج از خط فرمان پایتون را داشتین، دستور `exit()` را تایپ کنید و یا از کلید میانبر `Ctrl + Z` در ویندوز و `Ctrl + D` در مک/لینوکس استفاده کنید. پس از خروج `>>>` را دیگر نمی بینید.
 
-For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
+ما الان نمیخواهیم از خط فرمان پایتون خارج شویم. ما میخواهیم چیزهای بیشتری در مورد آن یاد بگیریم. بیایید با کمی ریاضیات شروع کنیم، مانند `2 + 3` و زدن `enter`.
 
 {% filename %}خط فرمان{% endfilename %}
 
