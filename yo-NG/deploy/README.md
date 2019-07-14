@@ -124,7 +124,7 @@ Nígbà tí o bá ti kóòdù rẹ sí GitHub, ìwọ yíò rí ìbéèrè fún 
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Kóòdù rẹ ti wà lórí GitHub ní báyìí. Lọ síbẹ̀ kí o ṣàyẹ̀wò rẹ̀! You'll find it's in fine company – [Django](https://github.com/django/django), the [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial), and many other great open source software projects also host their code on GitHub. :)
+Kóòdù rẹ ti wà lórí GitHub ní báyìí. Lọ síbẹ̀ kí o ṣàyẹ̀wò rẹ̀! Ìwọ yíò ri pé ó wà ní ibi tó dáa – [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) náà, àti ọ̀pọ̀lọpọ̀ àwọn iṣẹ́ ńláńlá mìíràn tó jẹ́ ètò orísun gbangba máa n pèsè kóòdù wọn sórí GitHub. :)
 
 # Setting up our blog on PythonAnywhere
 
@@ -211,7 +211,7 @@ There are also some [general debugging tips on the PythonAnywhere help site](htt
 
 And remember, your coach is here to help!
 
-# Check out your site!
+# Ṣàyẹ̀wò ààyè rẹ!
 
 The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
 
