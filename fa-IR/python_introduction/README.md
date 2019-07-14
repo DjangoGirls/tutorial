@@ -116,9 +116,9 @@
 'OLA'
 ```
 
-شما همین الان از **متد** `upper` روی رشته متنی استفاده کردید! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+شما همین الان از **متد** `upper` روی رشته متنی استفاده کردید! یک متد (مانند `upper()`) دنباله ای از دستورات پایتونی است. زمانی که متد را صدا بزنید، آن دستورات روی یک شی ورودی (`"Ola"`) اعمال می شود.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+آیا می خواهید تعداد حروف نام خود را بدانید؟ یک **تابع** برای این کار هم هست!
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+به این فکر می کنید که چرا گاهی تابع را با یک `.` در انتهای یک رشته صدا میکنیم (مانند `"Ola".upper()`) و گاهی ابتدا یک تابع را صدا میزنیم و رشته را جلوی نام تابع داخل پرانتز می گذاریم؟ در بعضی موارد، توابع به اشیا تعلق دارند، مانند `upper()` ، که فقط میتواند روی رشته های متنی اعمال شود. در این موارد، تابع را یک **method** می نامیم. در موارد دیگر، توابع به چیری تعلق ندارند و میتوان آنها را روی انواع مختلفی از اشیا استفاده کرد، درست مانند `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### سرفصل ها
 
