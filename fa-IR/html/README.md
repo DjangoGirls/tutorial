@@ -16,14 +16,14 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 ساختن یک تمپلیت یعنی ساختن یک فایل تمپلیت. هرچیزی، یک فایل است، درست است؟ احتمالاً تا الان این موضوع را متوجه شده اید.
 
-تمپلیت‌ها در پوشه `blog/templates/blog` ذخیره می‌شوند. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+تمپلیت‌ها در دایرکتوری `blog/templates/blog` ذخیره می‌شوند. بنابراین اول یک دایرکتوری به نام `templates` در دایرکتوری وبلاگ بسازید. سپس دایرکتوری دیگری به نام `blog` در داخل آن بسازید:
 
     blog
     └───templates
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(ممکنن است فکر کنید که چرا دوتا دایرکتوری به نام `blog` لازم داریم. همانطور که بعدتر خواهیم دید این یک سیستم نامگذاری کارآمد برای وقتی است که اوضاع پیچیده‌تر می‌شود.)
 
 And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
 
