@@ -46,7 +46,7 @@ And how about `pk=post.pk`? `pk` is short for primary key, which is a unique nam
 
 Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
 
-![NoReverseMatch error](images/no_reverse_match2.png)
+![Àṣìṣe NoReverseMatch](images/no_reverse_match2.png)
 
 ## Create a URL to a post's detail
 
@@ -96,7 +96,7 @@ Post.objects.get(pk=pk)
 
 But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
 
-![DoesNotExist error](images/does_not_exist2.png)
+![Àṣìṣe DoesNotExist](images/does_not_exist2.png)
 
 We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
@@ -211,4 +211,4 @@ The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make
 
 In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
 
-And that should be it! Congrats :)
+A ó parí gbogbo rẹ̀ síbí! Kú oríire :)
