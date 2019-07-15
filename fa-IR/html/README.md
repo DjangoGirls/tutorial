@@ -10,13 +10,13 @@
 
 HTML نوعی از کد است که توسط مرورگر وب، مانند کروم و فایرفاکس یا سافاری، تفسیر و اجرا می‌شود تا یک صفحه وب را نشان دهد.
 
-HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به این معنی است که نوعی از نوشته است که هایپرلینک بین صفحات را پشتیبانی می‌کند. **Markup** یعنی ما یک متن را برمی‌داریم و آن را علامت گذاری می‌کنیم تا به سیستم دیگری (مثلاً در اینجا مرورگر وب) بگوییم چطور آن را تفسیر کند. کدهای HTML با **tag** ها ساخته شده اند که هرکدام با `>` آغاز و با `<` پایان می‌یابند. این تگ‌ها **المان‌های** نشانه گذاری هستند.
 
-## Your first template!
+## اولین تمپلیت شما!
 
-Creating a template means creating a template file. Everything is a file, right? You have probably noticed this already.
+ساختن یک تمپلیت یعنی ساختن یک فایل تمپلیت. هرچیزی، یک فایل است، درست است؟ احتمالاً تا الان این موضوع را متوجه شده اید.
 
-Templates are saved in `blog/templates/blog` directory. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
+تمپلیت‌ها در پوشه `blog/templates/blog` ذخیره می‌شوند. So first create a directory called `templates` inside your blog directory. Then create another directory called `blog` inside your templates directory:
 
     blog
     └───templates
