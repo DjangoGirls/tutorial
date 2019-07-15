@@ -2,15 +2,15 @@
 
 ممکن است بپرسید تمپلیت چیست؟
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+تمپلیت (به معنی قالب) فایلی است که می‌توانیم بارها از آن استفاده کنیم و اطلاعات مختلفی را به کمک آن و در یک فرمت ثابت ارائه کنیم. مثلاً شما می‌توانید از یک تمپلیت کمک بگیرید و یک نامه بنویسید چرا که با اینکه هر نامه‌ای پیغام و آدرس متفاوتی دارد، اما از فرمت مشابهی استفاده می‌کند.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+یک تمپلیت جنگو در زبانی تعریف می‌شود که با آن HTML می‌گوییم (همان HTML که در بخش اول، **اینترنت چگونه کار می‌کند**، به آن اشاره کرده بودیم).
 
-## What is HTML?
+## HTML چیست؟
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML نوعی از کد است که توسط مرورگر وب، مانند کروم و فایرفاکس یا سافاری، تفسیر و اجرا می‌شود تا یک صفحه وب را نشان دهد.
 
-HTML stands for "HyperText Markup Language". **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
+HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** means it's a type of text that supports hyperlinks between pages. **Markup** means we have taken a document and marked it up with code to tell something (in this case, a browser) how to interpret the page. HTML code is built with **tags**, each one starting with `<` and ending with `>`. These tags represent markup **elements**.
 
 ## Your first template!
 
