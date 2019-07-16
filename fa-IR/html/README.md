@@ -35,7 +35,7 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 پیغام خطایی نیست! تبریک :) با اینحال وبسایت شما هنوز چیزی به غیر از یک صفحه خالی نشان نمی‌دهد برای اینکه تمپلیت شما خالی است. لازم است که آن را اصلاح کنیم.
 
-Open the new file in the code editor, and add the following:
+فایل جدید را در ویرایشگر کد باز کنید و موارد زیر را به آن اضافه کنید:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -48,20 +48,20 @@ Open the new file in the code editor, and add the following:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+الان وبسایت شما چطور به نظر می‌رسد؟ به آن سری بزنید تا بفهمید: http://127.0.0.1:8000/
 
 ![تصویر 11.2](images/step3.png)
 
-It worked! Nice work there :)
+کار می‌کند! خوب شد :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. As you can see, the whole content of the website goes between the beginning tag `<html>` and closing tag `</html>`
-* `<p>` is a tag for paragraph elements; `</p>` closes each paragraph
+* `<html>` پایه‌ای ترین تگ و معمولاً اولین تگ در ابتدای صفحه است و تگ `</html>` معمولاً در انتهای صفحه می‌آید. همانطور که می‌بینید، تمام محتوای وبسایتبین این دو تگ `<html>` در ابتدا و تگ `</html>` در انتها قرار می‌گیرند
+* تگ `<p>` برای پاراگراف‌ها به کار می‌رود و تگ `</p>` پایان هر پاراگراف را مشخص می‌کند
 
 ## Head and body
 
-Each HTML page is also divided into two elements: **head** and **body**.
+هر صفحه HTML همچنین به دو بخش اصلی تقسیم می‌شود: **head** و **body**.
 
-* **head** is an element that contains information about the document that is not displayed on the screen.
+* **head** عنصری است که شامل اطلاعاتی در مورد هر فایل می‌شود که در صفحه نشان داده نمی‌شوند.
 
 * **body** is an element that contains everything else that is displayed as part of the web page.
 
