@@ -25,7 +25,7 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 (ممکنن است فکر کنید که چرا دوتا دایرکتوری به نام `blog` لازم داریم. همانطور که بعدتر خواهیم دید این یک سیستم نامگذاری کارآمد برای وقتی است که اوضاع پیچیده‌تر می‌شود.)
 
-And now create a `post_list.html` file (just leave it blank for now) inside the `blog/templates/blog` directory.
+حالا یک فایل `post_list.html` (که فعلاً خالی باشد) در دایرکتوری بسازید `blog/templates/blog`.
 
 See how your website looks now: http://127.0.0.1:8000/
 
