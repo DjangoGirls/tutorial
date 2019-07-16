@@ -27,13 +27,13 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 حالا یک فایل `post_list.html` (که فعلاً خالی باشد) در دایرکتوری بسازید `blog/templates/blog`.
 
-See how your website looks now: http://127.0.0.1:8000/
+نگاه کنید که الان وبسایت شما چه شکلی شده است: http://127.0.0.1:8000/
 
-> If you still have an error `TemplateDoesNotExist`, try to restart your server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> اگر هنوز پیغام خطا `TemplateDoesNotExist` را می‌بینید، یک بار سرور را قطع و بعد دوباره فعال کنید. به خط فرمان بروید سرور را با زدن Ctrl+C (کلید کنترل و کلید C باهم) قطع کنید و با اجرای دستور `python manage.py runserver` مجدداً فعال کنید.
 
 ![تصویر 11.1](images/step1.png)
 
-No error anymore! Congratulations :) However, your website isn't actually publishing anything except an empty page, because your template is empty too. We need to fix that.
+پیغام خطایی نیست! تبریک :) با اینحال وبسایت شما هنوز چیزی به غیر از یک صفحه خالی نشان نمی‌دهد برای اینکه تمپلیت شما خالی است. لازم است که آن را اصلاح کنیم.
 
 Open the new file in the code editor, and add the following:
 
