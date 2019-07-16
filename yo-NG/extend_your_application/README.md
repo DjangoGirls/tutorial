@@ -162,17 +162,17 @@ It will look like this:
 
 Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-{% raw %}`{% if ... %} ... {% endif %}` is a template tag we can use when we want to check something. (Remember `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` jẹ́ àmì àwòṣe kan tí a lè lò nígbà tí a bá fẹ́ ṣàyẹ̀wò nnkan kan. (Rántí `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
 
-OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
+Ó dáa, a lè ṣe ìmúdójúìwọ̀n ojú-ìwé wa láti wo bóyá `TemplateDoesNotExist` kò sí mọ́ báyìí.
 
 ![Post detail page](images/post_detail2.png)
 
 Yay! Ó n ṣiṣẹ́!
 
-# Deploy time!
+# Àkókò láti ṣàgbékalẹ̀!
 
-It'd be good to see if your website still works on PythonAnywhere, right? Let's try deploying again.
+Yóò dára láti ṣàyẹ̀wò bóyá ààyè ayélujára rẹ ṣì máa ṣiṣẹ́ lórí PythonAnywhere, àbí bẹ́ẹ̀ kọ? Jẹ́ ká gbìyànjú ṣíṣe àgbékalẹ̀ lẹ́ẹ̀kan si.
 
 {% filename %}command-line{% endfilename %}
 
