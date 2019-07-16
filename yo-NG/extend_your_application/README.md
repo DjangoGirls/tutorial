@@ -126,11 +126,11 @@ def post_detail(request, pk):
     return render(request, 'blog/post_detail.html', {'post': post})
 ```
 
-Yes. It is time to refresh the page: http://127.0.0.1:8000/
+Bẹ́ẹ̀ ni. Àkókò ti tó láti ṣe ìmúdójúìwọ̀n ojú-ìwé náà: http://127.0.0.1:8000/
 
 ![Post list view](images/post_list2.png)
 
-It worked! But what happens when you click a link in blog post title?
+Ó ṣiṣẹ́! Ṣùgbọ́n kí ló máa ṣẹlẹ̀ nígbà tí o bá tẹ atọ́ka kan nínú àkọlé àròkọ blog?
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
@@ -162,7 +162,7 @@ It will look like this:
 
 Once again we are extending `base.html`. In the `content` block we want to display a post's published_date (if it exists), title and text. But we should discuss some important things, right?
 
-{% raw %}`{% if ... %} ... {% endif %}` jẹ́ àmì àwòṣe kan tí a lè lò nígbà tí a bá fẹ́ ṣàyẹ̀wò nnkan kan. (Rántí `if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ... {% endif %}` jẹ́ àmì àwòṣe kan tí a lè lò nígbà tí a bá fẹ́ ṣàyẹ̀wò nnkan kan. (Rántí `if ... else ...` láti àkòrí **Ìfihàn sí Python**?) Nínú ìṣẹ̀lẹ̀ yìí, a fẹ́ ṣàyẹ̀wò bóyá `published_date` ti àròkọ kan kìí ṣe òfìfo.{% endraw %}
 
 Ó dáa, a lè ṣe ìmúdójúìwọ̀n ojú-ìwé wa láti wo bóyá `TemplateDoesNotExist` kò sí mọ́ báyìí.
 
