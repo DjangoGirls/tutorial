@@ -116,7 +116,7 @@ We should open `blog/views.py` in the code editor and add the following code nea
 from django.shortcuts import render, get_object_or_404
 ```
 
-And at the end of the file we will add our *view*:
+Àti pé ní ìparí fáìlì náà, a ó ṣàfikún *view* wa:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -134,13 +134,13 @@ Bẹ́ẹ̀ ni. Àkókò ti tó láti ṣe ìmúdójúìwọ̀n ojú-ìwé náà
 
 ![TemplateDoesNotExist error](images/template_does_not_exist2.png)
 
-Oh no! Another error! But we already know how to deal with it, right? We need to add a template!
+Ó tì o! Àṣìṣe mìíràn! Ṣùgbọ́n a ti mọ bí a ṣe máa kojú rẹ̀, àbí bẹ́ẹ̀ kọ? A nílò láti ṣàfikún àwòṣe kan!
 
-## Create a template for the post details
+## Ṣẹ̀dá àwòṣe kan fún àwọn àlàyé àròkọ náà
 
-We will create a file in `blog/templates/blog` called `post_detail.html`, and open it in the code editor.
+A ó ṣẹ̀dá fáìlì kan nínú `blog/templates/blog` tí a n pè ní `post_detail.html`, tí a ó sì ṣí i nínú olóòtú kóòdù náà.
 
-It will look like this:
+Yóò rí báyìí:
 
 {% filename %}blog/templates/blog/post_detail.html{% endfilename %}
 
