@@ -166,16 +166,16 @@ TypeError: object of type 'int' has no len()
 
 کار کرد! ما از تابع `str` داخل تابع `len` استفاده کردیم. `str()` هرچیزی را به رشته متنی تبدیل می کند.
 
-- The `str` function converts things into **strings**
-- The `int` function converts things into **integers**
+- تابع `str` ورودی اش را به **strings** تبدیل می کند
+- تابع `int` ورودی اش را به **integers** تبدیل می کند
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> توجه: ما می توانیم اعداد را به متن تبدیل کنیم، اما همیشه نمی توان متن را به عدد تبدیل کرد - مثلا خروجی `int('hello')` چه چیزی میتواند باشد؟
 
-## Variables
+## متغیرها
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+یکی از مفاهیم مهم در برنامه نویسی، مفهوم متغیر ها است. متغیر نامی است برای یک مقدار که بعدا بتوانید برای ارجاع به آن مقدار، از نام متغیر استفاده کنید. برنامه نویس ها از این متغیرها برای ذخیره داده، و بالا بردن خوانایی کد استفاده می کنند تا مجبور نباشند همه چیز را در ذهن نگه دارند.
 
-Let's say we want to create a new variable called `name`:
+بیایید یک متغیر جدید به نام `name` بسازیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -183,7 +183,7 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+تایپ می کنیم name مساوی Ola.
 
 As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
 
