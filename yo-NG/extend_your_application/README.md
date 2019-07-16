@@ -4,7 +4,7 @@
 
 A ti parí gbogbo àwọn ìgbésẹ̀ ọ̀tọ̀ọ̀tọ̀ tó ṣe pàtàkì fún ṣíṣẹ̀dá ààyè ayélujára wa: a mọ bí a ṣe lè kọ àwòṣe (model), url, view àti àwòṣe (template) kan. A tún mọ bí a ṣe lè mú ààyè ayélujára wa rẹwà.
 
-Time to practice!
+Àkókò láti ṣe ìdánrawò!
 
 The first thing we need in our blog is, obviously, a page to display one post, right?
 
