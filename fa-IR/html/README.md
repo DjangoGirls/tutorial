@@ -141,14 +141,14 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 ما سه بخش با تگ `div` ساخته‌ایم.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* اولین عنصر `div`، شامل عنوان وبلاگ یعنی یک تیتر و یک لینک، است
+* دو عنصر `div` بعدی شامل یک پست وبلاگی و تاریخ انتشار آن است. تگ `h2` با عنوان پست و قابل کلیک کردن و دوتا تگ متنی `p` که یکی برای تاریخ است و دیگری برای متن پست وبلاگ ما.
 
-It gives us this effect:
+چنین نتیجه ای به ما می‌دهد:
 
 ![تصویر 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+واای! ولی تا اینجا تمپلیت ما دقیقا **اطلاعات یکسانی** را نمایش می‌دهد درحالیکه جلوتر در مورد این صحبت کردیم که تمپلیت به ما اجازه می‌دهد **اطلاعات متفاوتی** را در **قالب یکسان** نمایش دهیم.
 
 What we really want to do is display real posts added in our Django admin – and that's where we're going next.
 
