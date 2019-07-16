@@ -150,29 +150,29 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 واای! ولی تا اینجا تمپلیت ما دقیقا **اطلاعات یکسانی** را نمایش می‌دهد درحالیکه جلوتر در مورد این صحبت کردیم که تمپلیت به ما اجازه می‌دهد **اطلاعات متفاوتی** را در **قالب یکسان** نمایش دهیم.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+آن چیزی که واقعاً می‌خواهیم این است که پست‌های واقعی که در جنگو ادمین اضافه کرده‌ایم را نمایش دهد و این همان چیزی است که در ادامه سراغ آن خواهیم رفت.
 
-## One more thing: deploy!
+## فقط یک چیز دیگر: دیپلوی!
 
-It'd be good to see all this out and live on the Internet, right? Let's do another PythonAnywhere deploy:
+خیلی خوب خواهد بود که همه اینها را به صورت آنلاین بر روی اینترنت ببینیم، درست است؟ پس بیایید یک بار دیگر به کمک PythonAnywhere وبسایت را منتشر کنیم:
 
-### Commit, and push your code up to GitHub
+### کامیت کنید و کد را بر روی گیتهاب پوش کنید
 
-First off, let's see what files have changed since we last deployed (run these commands locally, not on PythonAnywhere):
+اول از همه ببینیم کدام فال ها را به نسبت آخرین انتشار، تغییر داده ایم (این دستور را بر روی کامپیوتر خود اجرا کنید و نه در PythonAnywhere):
 
 {% filename %}خط فرمان{% endfilename %}
 
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+مطمئن باشید که در دایرکتوری `djangogirls` هستید و به `گیت` اجازه دهید تمام تغییرات ایجاد شده در این دایرکتوری را در نظر بگیرد:
 
 {% filename %}خط فرمان{% endfilename %}
 
     $ git add --all .
     
 
-> **Note** `--all` means that `git` will also recognize if you've deleted files (by default, it only recognizes new/modified files). Also remember (from chapter 3) that `.` means the current directory.
+> **نکته**: `--all` به معنی آن است که `git` حتی اگر فایلی را هم پاک کرده باشید متوجه آن می‌شود (در حالت عادی فقط فایل‌های جدید و فایل‌‍های تغییر کرده را دنبال می‌‎کند). همچنین به یاد داشته باشید (از بخش 3) که `.` (نقطه) به معنی دایرکتوری جاری است.
 
 Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
 
