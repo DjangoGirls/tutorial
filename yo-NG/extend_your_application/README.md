@@ -6,13 +6,13 @@ A ti parí gbogbo àwọn ìgbésẹ̀ ọ̀tọ̀ọ̀tọ̀ tó ṣe pàtàkì
 
 Àkókò láti ṣe ìdánrawò!
 
-The first thing we need in our blog is, obviously, a page to display one post, right?
+Dájúdájú, nnkan àkọ́kọ́ tí a nílò nínú blog wa ni ojú-ìwé kan láti ṣàfihàn àròkọ kan, àbí bẹ́ẹ̀ kọ?
 
-We already have a `Post` model, so we don't need to add anything to `models.py`.
+A ti ní àwòṣe `Post` kan tẹ́lẹ̀, nítorí náà a kò nílò láti ṣàfikún ohunkóhun sí `models.py`.
 
-## Create a template link to a post's detail
+## Ṣẹ̀dá atọ́ka àwòṣe kan sí àlàyé ti àròkọ kan
 
-We will start with adding a link inside `blog/templates/blog/post_list.html` file. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+A ó bẹ̀rẹ̀ pẹ̀lú ṣíṣe àfikún atọ́ka kan sínú fáìlì `blog/templates/blog/post_list.html`. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
