@@ -142,9 +142,9 @@
 
 ## خطاها
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+بیایید چیز جدید را امتحان کنیم. میتوانیم طول یک عدد را همانطور که طول نام خودمان را پیدا میکنیم، به دست آوریم؟ تایپ کنید`len(304023)` و `enter` را بزنید:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} خط فرمان{% endfilename %}
 
 ```python
 >>> len(304023)
@@ -153,9 +153,9 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+اولین خطا را دریافت کردیم! به وسیله آیکن {{ warning_icon }} به شما اعلام می کنیم کدی که قرار است اجرا کنید، مطابق انتظار شما اجرا نخواهد شد. اشتباه کردن (حتی اشتباهات عمدی) بخش مهم یادگیری است!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+خطای دریافتی می گوید اشیا نوع "int" (اعداد طبیعی)، صفت "طول" ندارند. خب پس حالا چه کاری میتوانیم بکنیم؟ میتوانیم عددمان را به عنوان یک رشته متنی بنویسیم؟ رشته های متنی دارای طول هستند، درست است؟
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -164,7 +164,7 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+کار کرد! ما از تابع `str` داخل تابع `len` استفاده کردیم. `str()` هرچیزی را به رشته متنی تبدیل می کند.
 
 - The `str` function converts things into **strings**
 - The `int` function converts things into **integers**
