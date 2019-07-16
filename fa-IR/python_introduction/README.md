@@ -138,9 +138,9 @@
 - **عملگرها** مانند `+` و `*`، ترکیب مقادیر برای ساخت یک مقدار جدید
 - **توابع**- مانند `upper()` و `len()`، که بر روی اشیا، اعمالی را انجام می دهند.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+موارد گفته شده، پایه های تمام زبان های برنامه نویسی است که ممکن است بعدا بیاموزید. برای کارهای سخت تر آماده هستید؟ مطمئنیم که آماده اید!
 
-## Errors
+## خطاها
 
 Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
 
