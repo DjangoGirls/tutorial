@@ -108,7 +108,7 @@ OK, time to add a *view* to our `views.py` file!
 
 In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
-We should open `blog/views.py` in the code editor and add the following code near the other `from` lines:
+Ó yẹ kí a ṣí `blog/views.py` nínú olóòtú kóòdù náà àti ṣàfikún kóòdù tó tẹ̀le yìí nítòsí àwọn ìlà `from` yòókù náà:
 
 {% filename %}blog/views.py{% endfilename %}
 
