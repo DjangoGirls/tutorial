@@ -180,31 +180,31 @@ TypeError: object of type 'int' has no len()
 {% filename %}خط فرمان{% endfilename %}
 
 ```python
->>> name = "Ola"
+>>> name = "sara"
 ```
 
-تایپ می کنیم name مساوی Ola.
+تایپ می کنیم name مساوی sara.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+همانطور که توجه کردید، برنامه شما مانند دفعات قبل خروجی نداد. پس از کجا بدانیم متغیر واقعا وجود دارد؟ نام متغیر `name` را وارد کنید و `enter` بزنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> name
-'Ola'
+'sara'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+بلههههه! اولین متغیر شما!‌ :) همواره میتوانید چیزی را متغیر به آن ارجاع میدهد، تغییر دهید:
 
 {% filename %}خط فرمان{% endfilename %}
 
 ```python
->>> name = "Sonja"
+>>> name = "Mahsa"
 >>> name
-'Sonja'
+'Mahsa'
 ```
 
-You can use it in functions too:
+میتوانید از آن در توابع نیز استفاده کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -213,7 +213,7 @@ You can use it in functions too:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+عالی است،نه؟ متغیرها میتوانند هرچیزی باشند- مثل اعداد! این یکی را امتحان کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -224,19 +224,19 @@ Awesome, right? Now, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+ولی اگر نام اشتباه را استفاده کنیم چه می شود؟ می توانید حدس بزنید چه اتفاقی می افتد؟ بیایید امتحان کنیم!
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} خط-فرمان{% endfilename %}
 
 ```python
->>> city = "Tokyo"
+>>> city = "Tehran"
 >>> ctiy
 Traceback (most recent call last):
   File "<stdin>", line 1, in <module>
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+یک خطا! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
 
 Play with this for a while and see what you can do!
 
