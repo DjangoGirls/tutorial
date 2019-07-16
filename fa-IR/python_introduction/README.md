@@ -236,22 +236,22 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-یک خطا! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+یک خطا! همانطور که می بینید، پایتون دارای انواع مختلفی از خطاها است و این یکی خطا **NameError** نام دارد. اگر سعی کنید از متغیری که هنوز تعریف نشده استفاده کنید، پایتون این خطا را به شما می دهد. اگر بعدا به این خطا برخورد کردید، کد خود را برای اشتباه تایپی در نام متغیرها چک کنید.
 
-Play with this for a while and see what you can do!
+کمی این موارد را امتحان کنید تا ببینید چه کارهایی می توانید با آن انجام دهید!
 
-## The print function
+## تابع print
 
-Try this:
+این را امتحان کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
 ```python
->>> name = 'Maria'
+>>> name = 'Mahsa'
 >>> name
-'Maria'
+'Mahsa'
 >>> print(name)
-Maria
+Mahsa
 ```
 
 When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
