@@ -89,13 +89,13 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 توجه کنید که چگونه مرورگر متوجه شد که "Ola's blog" عنوان صفحه شماست؟ مرورگر عبارت `<title>Ola's blog</title>` را تفسیر کرده و آن را به عنوان نام صفحه در بالای مرورگر قرار داده است (البته تایتل در جاهای دیگری مانند bookmark کردن هم استفاده می‌شود).
 
-Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
+احتمالاً تا الان توجه کرده‌اید که هر تگ شروع به همراه یک *تگ پایان* و علامت `/` می‌آید و عوامل در آن نیز *nested* می‌شوند (یعنی شما نمی‌توانید یک تگ را ببندید مگر آنکه تمام تگ‌های درون آن را بسته باشید).
 
-It's like putting things into boxes. You have one big box, `<html></html>`; inside it there is `<body></body>`, and that contains still smaller boxes: `<p></p>`.
+شبیه گذاشتن چیزها در جعبه است. شما یک جعبه بزرگ دارید، `<html></html>`؛ درون آن یک جعبه دیگر `<body></body>`، و این همینطور ادامه دارد تا به کوچکترین جعبه برسد: `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+شما باید از این قوانین *بستن تگ‌ها* و نیز *nesting*، پیروی کنید. اگر این قوانین رعایت نشوند مرورگر ممکن است نتواند فایل شما را درست تفسیر کند و صفحه HTML درست نمایش داده نخواهد شد.
 
-## Customize your template
+## تنظیم کردن تمپلیت
 
 You can now have a little fun and try to customize your template! Here are a few useful tags for that:
 
