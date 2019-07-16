@@ -97,11 +97,11 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 ## تنظیم کردن تمپلیت
 
-You can now have a little fun and try to customize your template! Here are a few useful tags for that:
+الان می‌توانید کمی تفریح کنید و تلاش کنید تا تمپلیت خود را تنظیم کنید! در اینجا تعدادی تگ مفید معرفی شده:
 
-* `<h1>A heading</h1>` for your most important heading
-* `<h2>A sub-heading</h2>` for a heading at the next level
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<h1>A heading</h1>` یک تیتر برای عنوان های مهم است
+* `<h2>A sub-heading</h2>` یک تیتر برای عنوان های کم اهمیت تر
+* `<h3>A sub-sub-heading</h3>` یک زیر عنوان که تا `<h6>` درجه اهمیت آن کمتر می‌شود
 * `<p>A paragraph of text</p>`
 * `<em>text</em>` emphasizes your text
 * `<strong>text</strong>` strongly emphasizes your text
