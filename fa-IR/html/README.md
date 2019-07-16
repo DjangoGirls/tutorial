@@ -63,11 +63,11 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 * **head** عنصری است که شامل اطلاعاتی در مورد هر فایل می‌شود که در صفحه نشان داده نمی‌شوند.
 
-* **body** is an element that contains everything else that is displayed as part of the web page.
+* **body** عنصری است که شامل هر چیزی است که در صفحه وبسایت نمایش داده می‌شوند.
 
-We use `<head>` to tell the browser about the configuration of the page, and `<body>` to tell it what's actually on the page.
+ما از `<head>` استفاده می‌کنیم تا در مورد تنظیمات فایل به مرورگر اطلاعاتی بدهیم و `<body>` نشان می‌دهد که چه چیزی واقعاً در صفحه وجود دارد.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+برای مثال شما می‌توانید تگ عنوان یا title را به این شکل در `<head>`، قرار دهید:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -83,11 +83,11 @@ For example, you can put a web page title element inside the `<head>`, like this
 </html>
 ```
 
-Save the file and refresh your page.
+این فایل‎ را ذخیره کنید و وبسایت خود را دوباره بارگذاری کنید.
 
 ![تصویر 11.3](images/step4.png)
 
-Notice how the browser has understood that "Ola's blog" is the title of your page? It has interpreted `<title>Ola's blog</title>` and placed the text in the title bar of your browser (it will also be used for bookmarks and so on).
+توجه کنید که چگونه مرورگر متوجه شد که "Ola's blog" عنوان صفحه شماست؟ مرورگر عبارت `<title>Ola's blog</title>` را تفسیر کرده و آن را به عنوان نام صفحه در بالای مرورگر قرار داده است (البته تایتل در جاهای دیگری مانند bookmark کردن هم استفاده می‌شود).
 
 Probably you have also noticed that each opening tag is matched by a *closing tag*, with a `/`, and that elements are *nested* (i.e. you can't close a particular tag until all the ones that were inside it have been closed too).
 
