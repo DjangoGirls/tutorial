@@ -12,7 +12,7 @@ A ti ní àwòṣe `Post` kan tẹ́lẹ̀, nítorí náà a kò nílò láti �
 
 ## Ṣẹ̀dá atọ́ka àwòṣe kan sí àlàyé ti àròkọ kan
 
-A ó bẹ̀rẹ̀ pẹ̀lú ṣíṣe àfikún atọ́ka kan sínú fáìlì `blog/templates/blog/post_list.html`. Open it in the code editor, and so far it should look like this: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
+A ó bẹ̀rẹ̀ pẹ̀lú ṣíṣe àfikún atọ́ka kan sínú fáìlì `blog/templates/blog/post_list.html`. Ṣí i nínú olóòtú kóòdù náà, ó sì yẹ kí o rí báyìí látẹ̀yìnwá: {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% extends 'blog/base.html' %}
@@ -168,7 +168,7 @@ OK, we can refresh our page and see if `TemplateDoesNotExist` is gone now.
 
 ![Post detail page](images/post_detail2.png)
 
-Yay! It works!
+Yay! Ó n ṣiṣẹ́!
 
 # Deploy time!
 
@@ -183,7 +183,7 @@ It'd be good to see if your website still works on PythonAnywhere, right? Let's 
     $ git push
     
 
-Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/):
+Lẹ́yìn náà, nínú [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles/) kan:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -192,7 +192,7 @@ Then, in a [PythonAnywhere Bash console](https://www.pythonanywhere.com/consoles
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Rántí láti rọ́pò `<your-pythonanywhere-domain>` pẹ̀lú subdomain PythonAnywhere rẹ, láìsí àwọn àkámọ́ onígun náà.)
 
 ## Updating the static files on the server
 
