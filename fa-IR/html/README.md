@@ -174,23 +174,23 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 
 > **نکته**: `--all` به معنی آن است که `git` حتی اگر فایلی را هم پاک کرده باشید متوجه آن می‌شود (در حالت عادی فقط فایل‌های جدید و فایل‌‍های تغییر کرده را دنبال می‌‎کند). همچنین به یاد داشته باشید (از بخش 3) که `.` (نقطه) به معنی دایرکتوری جاری است.
 
-Before we upload all the files, let's check what `git` will be uploading (all the files that `git` will upload should now appear in green):
+قبل از آنکه همه فایل‌ها را آپلود کنیم بگذارید ببینیم که `گیت` چه فایل‌هایی را آپلود خواهد کرد (تمام فایل‌هایی که `گیت` آپلود خواهد کرد الان سبز رنگ دیده می‌شوند):
 
 {% filename %}خط فرمان{% endfilename %}
 
     $ git status
     
 
-We're almost there, now it's time to tell it to save this change in its history. We're going to give it a "commit message" where we describe what we've changed. You can type anything you'd like at this stage, but it's helpful to type something descriptive so that you can remember what you've done in the future.
+الان وقت آن است که بگوییم تمام این تغییرات را در سابقه خودش ذخیره کند. الام می‌خواهیم یک "commit message" یا پیغام کامیت تعریف کنیم که تغییرات ما را توضیح می‌دهد. هرچیزی که دلتان بخواهد می‌توانید تایپ کنید، اما بهتر است توضیحاتی را بنویسید که بعداً متوجه شوید در این مرحله چه تغییراتی داده‌اید.
 
 {% filename %}خط فرمان{% endfilename %}
 
     $ git commit -m "Changed the HTML for the site."
     
 
-> **Note** Make sure you use double quotes around the commit message.
+> **نکته** مطمئن بشوید که از دابل کوت (" ") در دو طرف پیغام استفاده کنید.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+وقتی این کار را انجام دادیم تغییرات را در گیتهاب آپلود (push) می‌کنیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
