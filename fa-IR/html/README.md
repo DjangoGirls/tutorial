@@ -102,15 +102,15 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
 * `<h1>A heading</h1>` یک تیتر برای عنوان های مهم است
 * `<h2>A sub-heading</h2>` یک تیتر برای عنوان های کم اهمیت تر
 * `<h3>A sub-sub-heading</h3>` یک زیر عنوان که تا `<h6>` درجه اهمیت آن کمتر می‌شود
-* `<p>A paragraph of text</p>`
-* `<em>text</em>` emphasizes your text
-* `<strong>text</strong>` strongly emphasizes your text
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
-* `<a href="https://djangogirls.org">link</a>` creates a link
-* `<ul><li>first item</li><li>second item</li></ul>` makes a list, just like this one!
-* `<div></div>` defines a section of the page
+* `<p>پارگرافی از نوشته‌ها</p>`
+* `<em>متن</em>` بر نوشته شما تاکید می‌کند
+* `<strong>متن</strong>` تأکید بیشتر بر متن
+* `<br>` به خط بعد می‌رود (شما چیزی درون تگ br نمیتوانید بگذارید و علاوه بر این تگِ پایانی هم، ندارد)
+* `<a href="https://djangogirls.org">لینک</a>` یک لینک می‌سازد
+* `<ul><li>آیتم اول</li><li>آیتم دوم</li></ul>` یک لیست، دقیقاً مانند همین لیست درست می‌کند!
+* `<div></div>` یک بخش جدید در صفحه درست می‌کند
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+اینجا نمونه‌ای از یک تمپلیت کامل داریم. آن را در فایل `blog/templates/blog/post_list.html` کپی کنید:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -139,7 +139,7 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 </html>
 ```
 
-We've created three `div` sections here.
+ما سه بخش با تگ `div` ساخته‌ایم.
 
 * The first `div` element contains the title of our blog – it's a heading and a link
 * Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
