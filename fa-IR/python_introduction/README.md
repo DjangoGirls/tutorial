@@ -256,13 +256,13 @@ Mahsa
 
 زمانی که فقط `name` را تایپ می کنید، مفسر پایتون با *ارائه ای* از رشته متنی داخل متغیر 'name' پاسخ می دهد، که دنباله کاراکترهای M-a-h-s-a درون علامت نقل قول است. وقتی که `print(name)` را اجرا می کنید، پایتون محتوای متغیر را در خروجی چاپ میکند، البته بدون علامت های نقل قول که مرتب تر است.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+بعدا خواهیم دید که `print()` زمانی که میخواهیم از داخل توابع چیزی را چاپ کنیم،یا زمانی که میخواهیم چندین خط از متن را چاپ کنیم، نیز مفید است.
 
-## Lists
+## لیست ها
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+پایتون علاوه بر رشته ها و اعداد، انواع مختلفی از اشیا را دارد. و الان نوعی از اشیا را معرفی میکنیم که **list** نام دارند. لیست ها دقیقا همان چیزی هستند که فکرش را می کنید: یک نوع شی که خودش لیستی از اشیای دیگر است. :)
 
-Go ahead and create a list:
+حالا یک لیست بسازید:
 
 {% filename %}خط فرمان{% endfilename %}
 
