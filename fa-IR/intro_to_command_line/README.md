@@ -14,7 +14,7 @@
 
 این پنجره که معمولاً **command line** یا **صفحه خط فرمان** گفته می‌شود یک نرم افزار مبتنی بر متن است که برای مشاهده، مدیریت و تغییر فایل‌ها از آن استفاده می‌شود. شباهت زیادی به ویندوز اکسپلورر یا فایندر در مک دارد با این تفاوت که اینترفیس گرافیکی ندارد. نام های دیگر خط فرمان این‌ها هستند: *cmd*, *CLI*, *prompt*, *console* ، *terminal*.
 
-## Open the command-line interface
+## اینترفیس خط فرمان را باز کنید
 
 To start some experiments we need to open our command-line interface first.
 
