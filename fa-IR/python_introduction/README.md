@@ -305,9 +305,9 @@ Mahsa
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+همانطور که می بینید، اعداد درون لیست از کمترین مقدار به بیشترین مقدار مرتب شده اند. تبریک!
 
-Maybe we want to reverse that order? Let's do that!
+شاید بخواهیم ترتیب اعداد را برعکس کنیم. بیایید انجامش دهیم!
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+اگر می خواهید چیزی به لیست خود اضافه کنید، میتوانید این دستور را تایپ کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -327,7 +327,7 @@ If you want to add something to your list, you can do this by typing this comman
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+اگر می خواهید فقط عدد اول را نمایش دهید،می توانید این کار با استفاده از **indexes** انجام دهید. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
 
 {% filename %}خط فرمان{% endfilename %}
 
