@@ -376,12 +376,12 @@ Mahsa
 
 خروجی نشان میدهد که یک دیکشنری خالی ساخته اید. هورررااا!
 
-Now, try writing the following command (try substituting your own information, too):
+حالا سعی کنید که دستور زیر را بنویسید (سعی کنید اطلاعات خود را نیز جایگزین کنید):
 
 {% filename %}خط فرمان{% endfilename %}
 
 ```python
->>> participant = {'name': 'Ola', 'country': 'Poland', 'favorite_numbers': [7, 42, 92]}
+>>> participant = {'name': 'Mahsa', 'country': 'Iran', 'favorite_numbers': [7, 42, 92]}
 ```
 
 With this command, you just created a variable named `participant` with three key–value pairs:
