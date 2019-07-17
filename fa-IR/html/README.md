@@ -197,9 +197,9 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
     $ git push
     
 
-### Pull your new code down to PythonAnywhere, and reload your web app
+### فایل‌های جدیدتان را بر روی PythonAnywhere ببرید و صفحه وبسایت را دوباره بارگذاری کنید
 
-* Open up the [PythonAnywhere consoles page](https://www.pythonanywhere.com/consoles/) and go to your **Bash console** (or start a new one). Then, run:
+* سپس دوباره به صفحه **Bash console** خود در [PythonAnywhere](https://www.pythonanywhere.com/consoles/) بروید (یا یک کنسول خط فرمان جدید باز کنید) و دستورات زیر را اجرا کنید:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -208,7 +208,7 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
     [...]
     
 
-You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+یادتان باشد که `<your-pythonanywhere-domain>` را با زیر دامنه اصلی خود در PythonAnywhere عوض کنید البته بدون آکولادها. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
 
 Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
 
