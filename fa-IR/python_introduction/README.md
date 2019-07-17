@@ -271,7 +271,7 @@ Mahsa
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+بله، این لیست خالی است. آنقدر مفید نیست، درست است؟ بیایید یک لیست از اعداد بخت آزمایی بسازیم. ما نمی خواهیم یک عدد تکراری را انتخاب کنیم، پس اعداد بخت آزمایی را داخل یک متغیر می کذاریم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -279,7 +279,7 @@ Yes, this list is empty. Not very useful, right? Let's create a list of lottery 
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+بسیار خب، ما یک لیست داریم! چه کاری می توانیم با آن انجام دهیم؟ بیایید ببینیم چه تعداد عدد بخت آزمایی درون لیست داریم. هیچ ایده ای درمورد این که از چه تابعی باید استفاده کنیم، دارید؟ از قبل این را می دانید!
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -288,7 +288,7 @@ All right, we have a list! What can we do with it? Let's see how many lottery nu
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+بله! تابع `len()` می تواند تعداد اشیای درون لیست را بدهد. بسیار مفید، درست است؟ حالا بیایید لیستمان را مرتب کنیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -296,7 +296,7 @@ Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we 
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+این یکی هیچ خروجی نداد، بلکه فقط ترتیب قرارگرفتن اعداد در لیست را تغییر داد. بیایید دوباره لیست را چاپ کنیم و ببینیم چه اتفاقی افتاده:
 
 {% filename %}خط فرمان{% endfilename %}
 
