@@ -12,7 +12,7 @@
 
 ## خط فرمان چیست؟
 
-The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
+این پنجره که معمولاً **command line** یا **صفحه خط فرمان** گفته می‌شود یک نرم افزار مبتنی بر متن است که برای مشاهده، مدیریت و تغییر فایل‌ها از آن استفاده می‌شود. شباهت زیادی به ویندوز اکسپلورر یا فایندر در مک دارد با این تفاوت که اینترفیس گرافیکی ندارد. نام های دیگر خط فرمان این‌ها هستند: *cmd*, *CLI*, *prompt*, *console* ، *terminal*.
 
 ## Open the command-line interface
 
