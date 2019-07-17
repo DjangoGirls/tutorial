@@ -1,4 +1,4 @@
-> Parte de esta sección se basa en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
+> Parte de esta sección está basada en tutoriales por Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 > 
 > Parte de este capítulo está basada en el [django-marcador tutorial](http://django-marcador.keimlink.de/) bajo la licencia Creative Commons Attribution-ShareAlike 4.0 internacional. El tutorial de django-marcador tiene derechos de autor de Markus Zapke-Gündemann et al.
 
