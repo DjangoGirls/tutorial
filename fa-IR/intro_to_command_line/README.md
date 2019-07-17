@@ -1,6 +1,6 @@
-# Introduction to the command-line interface
+# آشنایی با خط فرمان
 
-> For readers at home: this chapter is covered in the [Your new friend: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) video.
+> برای خوانندگان در خانه: این فصل در ویدئو [دوست جدید شما: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) توضیح داده شده است.
 
 It's exciting, right?! You'll write your first line of code in just a few minutes! :)
 
