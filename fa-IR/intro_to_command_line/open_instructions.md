@@ -1,11 +1,11 @@
 <!--sec data-title="Opening: Windows" data-id="windows_prompt" data-collapse=true ces-->
 
-Depending on your version of Windows and your keyboard, one of the following should open a command window (you may have to experiment a bit, but you don't have to try all of these suggestions):
+بسته به نسخه ویندوز و نیز نوع کیبورد شما، یکی از موارد زیر برای شما یک command window یا خط فرمان باز خواهد کرد (شاید باید کمی امتحان کنید ولی لازم نیست تمام این پیشنهادات را آزمایش کنید):
 
-- Go to the Start menu or screen, and enter "Command Prompt" in the search field.
-- Go to Start menu → Windows System → Command Prompt.
-- Go to Start menu → All Programs → Accessories → Command Prompt.
-- Go to the Start screen, hover your mouse in the lower-left corner of the screen, and click the down arrow that appears (on a touch screen, instead flick up from the bottom of the screen). The Apps page should open. Click on Command Prompt in the Windows System section.
+- به منوی استارت یا screen بروید و عبارت "Command Prompt" را در بخش جستجو وارد کنید.
+- این مسیر را دنبال کنید Start menu → Windows System → Command Prompt.
+- این مسیر را دنبال کنید Start menu → All Programs → Accessories → Command Prompt.
+- به بخش Start بروید و موس را روی صفحه تکان دهید و به گوشه پایین سمت چپ بروید و بر روی فلش به سمت پایین که ظاهر می‌شود کلید کنید (در یک سیستم تاچ اسکرین باید از پایین اسکرین را لمس کنید و دست خود را بالا بکشید). صفحه App ها باید باز شود. بر روی Command Prompt در بخش Windows System کلیک کنید.
 - Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
 - Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
 
