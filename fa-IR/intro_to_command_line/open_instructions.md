@@ -6,23 +6,23 @@
 - این مسیر را دنبال کنید Start menu → Windows System → Command Prompt.
 - این مسیر را دنبال کنید Start menu → All Programs → Accessories → Command Prompt.
 - به بخش Start بروید و موس را روی صفحه تکان دهید و به گوشه پایین سمت چپ بروید و بر روی فلش به سمت پایین که ظاهر می‌شود کلید کنید (در یک سیستم تاچ اسکرین باید از پایین اسکرین را لمس کنید و دست خود را بالا بکشید). صفحه App ها باید باز شود. بر روی Command Prompt در بخش Windows System کلیک کنید.
-- Hold the special Windows key on your keyboard and press the "X" key. Choose "Command Prompt" from the pop-up menu.
-- Hold the Windows key and press the "R" key to get a "Run" window. Type "cmd" in the box, and click the OK key.
+- کلید مخصوص Windows را بر روی کیبورد نگه دارید و دکمه "X" را بزنید. "Command Prompt" را از پنجره‌ای که باز می‌شود انتخاب کنید.
+- کلید Windows را نگه دارید و دکمه "R" را بزنید تا پنجره "Run" بازشود. تایپ کنید "cmd" و کلید OK را بزنید.
 
 ![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
 
-Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+بعداً در این دوره آموزشی احتیاج دارید که دو پنجره خط فرمان به طور همزمان باز داشته باشید. با اینحال در برخی نسخه‌های ویندوز، اگر یک پنجره خط فرمان باز داشته باشید و از همان روش برای باز کردن یک پنجره خط فرمان دیگر استفاده کنید به جای باز شدن پنجره جدید همان قبلی دوباره نشان داده می‌شود. حالا روی کامپیوتر خود امتحان کنید و ببینید چه اتفاقی می‌افتد! اگر فقط یک پنجره خط فرمان دریافت کردید، یک روش دیگر از این لیست بالا را امتحان کنید. حداقل یکی از این‌ها باید یک پنجره جدید خط فرمان بازکند.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+به اینجا بروید Applications → Utilities → Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+احتمالاً Applications → Accessories → Terminal یا Applications → System → Terminal است که بستگی به سیستم کامپیوتر شما دارد. اگر در این آدرس‌ها پیدا نکردید سعی کنید با جستجو در گوگل جای آن را پیدا کنید. :)
 
 <!--endsec-->
