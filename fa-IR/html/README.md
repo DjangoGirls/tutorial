@@ -208,10 +208,10 @@ HTML مخفف عبارت "HyperText Markup Language" است. **HyperText** به 
     [...]
     
 
-یادتان باشد که `<your-pythonanywhere-domain>` را با زیر دامنه اصلی خود در PythonAnywhere عوض کنید البته بدون آکولادها. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+یادتان باشد که `<your-pythonanywhere-domain>` را با زیر دامنه اصلی خود در PythonAnywhere عوض کنید البته بدون آکولادها. نام زیردامنه شما معمولاً همان نام کاربری شما در PythonAnywhere است اما در مواردی ممکن است کمی متفاوت باشد (مثلاً اگر نام کاربری شما دارای حروف بزرگ باشد). اگر این دستور کار نکرد از `ls` (لیست کردن فایل‌ها) استفاده کنید تا زیردامنه خود را پیدا کنید و سپس با دستور `cd` به آن دایرکتوری بروید.
 
-Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+حالا منتظر شوید تا فایل‌های شما دانلود شوند. اگر می‌خواهید بدانید که فایل‌ها رسیده اند یا نه به صفحه **"Files"** بروید و کدهای خود بر روی PythonAnywhere را ببینید (شما میتوانید به بقیه فایل‌های خود در PythonAnywhere، از طریق کلید منو در کنسول دسترسی پیدا کنید).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* سرانجام به صفحه ["Web"](https://www.pythonanywhere.com/web_app_setup/) بروید و **Reload** را بزنید.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+تغییرات شما آنلاین شده اند! صفحه وبسایت خود را در مرورگرتان دوباره بارگذاری کنید. تغییرات دیده خواهند شد. :)
