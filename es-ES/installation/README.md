@@ -16,7 +16,7 @@ Si tu estás asistiendo a uno de los [Django Girls events](https://djangogirls.o
 
 # Instalación
 
-En este tutorial vas a construir un blog. In order to do that, as you go through the tutorial you'll be instructed on how to install various software on your computer and set up some online accounts as they are needed. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+En este tutorial vas a construir un blog. Según, cómo vayas a través de el tutorial tu serás instruido en cómo instalar varios softwares en tu computadora y configurar algunas cuentas online como sean necesarias. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
