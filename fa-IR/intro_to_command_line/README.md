@@ -2,7 +2,7 @@
 
 > برای خوانندگان در خانه: این فصل در ویدئو [دوست جدید شما: Command Line](https://www.youtube.com/watch?v=jvZLWhkzX-8) توضیح داده شده است.
 
-It's exciting, right?! You'll write your first line of code in just a few minutes! :)
+هیجان انگیز است! شما تا چند دقیقه دیگر اولین خط کد خود را خواهید نوشت! :)
 
 **Let us introduce you to your first new friend: the command line!**
 
