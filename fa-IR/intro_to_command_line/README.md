@@ -4,13 +4,13 @@
 
 هیجان انگیز است! شما تا چند دقیقه دیگر اولین خط کد خود را خواهید نوشت! :)
 
-**Let us introduce you to your first new friend: the command line!**
+**بگذارید شما را به اولین دوست جدیدتان معرفی کنیم: خط فرمان!**
 
-The following steps will show you how to use the black window all hackers use. It might look a bit scary at first but really it's just a prompt waiting for commands from you.
+این مراحل به شما یاد می‌دهد که چطور از این پنجره سیاهی استفاده کنید که همه هکرها از آن استفاده می‌کنند. ممکن است در ابتدا کمی ترسناک به نظر بیاید ولی این فقط یک علامت است که نشان می‌دهد سیستم منتظر فرمان‌های شماست.
 
-> **Note** Please note that throughout this book we use the terms 'directory' and 'folder' interchangeably but they are one and the same thing.
+> **نکته** توجه داشته باشید که در این دوره آموزشی ما بارها از دایرکتوری یا پوشه صحبت کرده ایم هر دو این مفاهیم یکی هستند.
 
-## What is the command line?
+## خط فرمان چیست؟
 
 The window, which is usually called the **command line** or **command-line interface**, is a text-based application for viewing, handling, and manipulating files on your computer. It's much like Windows Explorer or Finder on the Mac, but without the graphical interface. Other names for the command line are: *cmd*, *CLI*, *prompt*, *console* or *terminal*.
 
