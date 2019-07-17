@@ -327,7 +327,7 @@ Mahsa
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-اگر می خواهید فقط عدد اول را نمایش دهید،می توانید این کار با استفاده از **indexes** انجام دهید. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+اگر می خواهید فقط عدد اول را نمایش دهید،می توانید این کار با استفاده از **indexes** انجام دهید. ایندکس شماره ای است که نشان دهنده محل قرار گرفتن یک آیتم در لیست است. برنامه نویس ها ترجیح می دهند شمردن را از 0 شروع کنند. پس شماره اولین شی در لیست 0 است، بعدی 1 است و الی آخر. دستور زیر را امتحان کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -338,9 +338,9 @@ Mahsa
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+همانطور که می بینید، با استفاده از نام لیست و شماره ایندکس داخل براکت، می توانید به اشیای مختلف درون لیست دسترسی پیدا کنید.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+برای حذف چیزی از داخل لیست، باید همانطور که در بالا یاد گرفتیم، از **ایندکس** و متد `pop()` استفاده کنید. بیایید یک مثال را امتحان کنیم و چیزی را که قبلا یاد گرفتیم، بهبود دهیم؛ ما اولین عدد لیست را حذف خواهیم کرد.
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -355,7 +355,7 @@ To delete something from your list you will need to use **indexes** as we learne
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+مانند یک افسون عمل کرد!
 
 For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
 
