@@ -199,14 +199,14 @@ Ahora, ejecuta `pip install -r requirements.txt` para instalar Django.
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Si tu obtienes un error cuando llamas al pip en la plataforma de Windows, por favor verifica si el nombre de ruta de tu proyecto contiene espacios, acentos o caracteres especiales ( por ejemplo, `C:\Usuarios\NombreUsuario\djangogirls`). Si los tiene, por favor considera usar otro lugar sin espacios, acentos o caracteres especiales (sugerencia: `C:\djangogirls`). Crea un nuevo virtualenv en el nuevo directorio, luego borra el viejo y trata de escribir el comando anterior otra vez. (Moviendo el directorio virtualenv no funcionará debido a que usa rutas absolutas.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Tu línea de comando puede congelarse luego de intentar instalar Django. Si ésto sucede, usa el siguiente comando:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
