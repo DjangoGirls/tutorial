@@ -210,7 +210,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
+>     C:\Usuarios\Nombre\djangogirls> python -m pip install -r requerimientos.txt
 >     
 
 <!--endsec-->
@@ -218,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Si tu obtienes un error cuando llamas pip en Ubuntu 12.04, por favor corre `python -m pip install -U --force-reinstall pip` para reparar la instalación de pip en el virtualenv.
 
 <!--endsec-->
 
