@@ -357,15 +357,15 @@ Mahsa
 
 مانند یک افسون عمل کرد!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+برای تفریح بیشتر، باقی ایندکس ها را نیز امتحان کنید:6 ،7، 1000، -1، -6، یا -1000. ببینید می توانید نتیجه را پیش از اجرای دستور، پیش بینی کنید؟ نتایج برای شما معنایی دارند؟
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+می توانید لیستی از متدهای مربوز به لیست ها را در این بخش از مستندات پایتون پیدا کنید: https://docs.python.org/3/tutorial/datastructures.html
 
-## Dictionaries
+## دیکشنری ها
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> برای خوانندگان داخل خانه: این قسمت در ویدئو های بخش [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) پوشش داده شده است.
 
-A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
+دیکشنری شبیه به لیست است، ولی برای دسترسی به مقادیر باید از کلیدها به جای ایندکس های عددی استفاده کنید. یک کلید می تواند رشته متنی و یا عدد باشد. دستور زبان تعریف یک دیکشنری خالی این است:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -374,7 +374,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 {}
 ```
 
-This shows that you just created an empty dictionary. Hurray!
+خروجی نشان میدهد که یک دیکشنری خالی ساخته اید. هورررااا!
 
 Now, try writing the following command (try substituting your own information, too):
 
