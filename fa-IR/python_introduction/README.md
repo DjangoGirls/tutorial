@@ -254,7 +254,7 @@ NameError: name 'ctiy' is not defined
 Mahsa
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+زمانی که فقط `name` را تایپ می کنید، مفسر پایتون با *ارائه ای* از رشته متنی داخل متغیر 'name' پاسخ می دهد، که دنباله کاراکترهای M-a-h-s-a درون علامت نقل قول است. وقتی که `print(name)` را اجرا می کنید، پایتون محتوای متغیر را در خروجی چاپ میکند، البته بدون علامت های نقل قول که مرتب تر است.
 
 As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
