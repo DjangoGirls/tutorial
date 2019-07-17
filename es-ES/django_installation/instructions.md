@@ -144,12 +144,12 @@ Inicia el entorno virtual ejecutando:
 
 <!--endsec-->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **NOTA:** Para usuarios del popular editor VS Code, el cual viene con una terminal integrada basada en el poweshell de windows; si tu deseas añadir la terminal integrada, tu puedes arrancar el siguiente comando para activar tu entorno virtual:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> La ventaja es que tu no tienes que cambiar las ventanas entre el editor de código y la línea de comandos
 
 Sabrás que tienes `virtualenv` iniciado cuando veas que la línea de comando en tu consola tiene el prefijo `(myvenv)`.
 
