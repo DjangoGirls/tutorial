@@ -4,29 +4,29 @@ Abajo presentamos nuestras sugerencias pero, también puedes preguntarle a tu me
 
 ## Visual Studio Code
 
-Visual Studio Code es un recurso de edición de código desarrollado por Microsoft para Windows, Linux y macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code es un recurso de edición de código desarrollado por Microsoft para Windows, Linux y macOS. Esto incluye soporte para depuración, control de Git incrustado, sintaxis destacada, completación de código inteligente, fragmentos y refactorización de código.
 
 [Descárgalo aquí](https://code.visualstudio.com/download)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit es un editor gratuito de código abierto, disponible para todos los sistemas operativos.
 
 [Descárgalo aquí](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text es un editor muy popular con un periodo de prueba gratis, y está disponible para todos los sistemas operativos.
 
 [Descárgalo aquí](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom es otro editor popular. Es gratis, de código abierto y disponible para Windows, OS X and Linux. Atom esta desarrollado por [Github](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Descargalo aquí](https://atom.io/)
 
-## Why are we installing a code editor?
+## ¿Por qué estamos instalando un editor de código?
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
