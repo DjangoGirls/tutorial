@@ -16,7 +16,7 @@ Si tu estás asistiendo a uno de los [Django Girls events](https://djangogirls.o
 
 # Instalación
 
-En este tutorial vas a construir un blog. Según, cómo vayas a través de el tutorial tu serás instruido en cómo instalar varios softwares en tu computadora y configurar algunas cuentas online como sean necesarias. This page gathers all of the installation and sign-up instructions in one place (which is useful for some workshop formats).
+En este tutorial vas a construir un blog. Según, cómo vayas a través de el tutorial tu serás instruido en cómo instalar varios softwares en tu computadora y configurar algunas cuentas online como sean necesarias. Ésta página reune todas las instalaciones e instrucciones del registro en un lugar ( el cual es útil para algunos formatos del taller).
 
 <!--sec data-title="Chromebook setup (if you're using one)"
 data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_setup/instructions.md" %} 
@@ -25,7 +25,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 # Breve introducción a la línea de comandos
 
-Many of the steps below reference the "console", "terminal", "command window", or "command line" -- these all mean the same thing: a window on your computer where you can enter commands. When you get to the main tutorial, you'll learn more about the command line. For now, the main thing you need to know is how to open a command window and what it looks like: {% include "/intro_to_command_line/open_instructions.md" %}
+Muchos de los pasos citados abajo hacen referencia a la "consola", "terminal", "ventana de comandos", o "línea de comandos" -- todos éstos términos significan la misma cosa: una ventana en tu computadora donde tu puedes entrar comandos. Cuando tu estás en el tutorial principal, tu aprenderás más acerca de la línea de comandos. Por ahora, la parte principal que tu necesitas es saber cómo abrir una ventana de comandos y cómo luce: {% include "/intro_to_command_line/open_instructions.md" %}
 
 # Instalar Python
 
