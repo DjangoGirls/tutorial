@@ -654,7 +654,7 @@ En Linux, será así:
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+En la consola de Windows, ésto será como:
 
 {% filename %}command-line{% endfilename %}
 
@@ -674,9 +674,9 @@ Y en Windows Powershell, será así:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+Si tú estás atascada, pregunta por ayuda. ¡Eso es exactamente lo que hacen los entrenadores!
 
-Now use Python to execute the code in the file like this:
+Ahora usa Python para ejecutar el código en el archivo como esto:
 
 {% filename %}command-line{% endfilename %}
 
@@ -684,7 +684,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Nota: en Windows 'python3' no es reconocido como un comando. En su lugar, usa 'python' para ejecutar el archivo:
 
 {% filename %}command-line{% endfilename %}
 
