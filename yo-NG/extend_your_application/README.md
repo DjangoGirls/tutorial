@@ -50,7 +50,7 @@ Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, sin
 
 ## Create a URL to a post's detail
 
-Let's create a URL in `urls.py` for our `post_detail` *view*!
+Jẹ́ ká ṣẹ̀dá URL kan sínú `urls.py` fún *view* `post_detail` wa!
 
 We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
 
