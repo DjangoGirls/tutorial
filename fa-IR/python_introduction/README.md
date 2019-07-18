@@ -451,14 +451,14 @@ KeyError: 'age'
 
 همانطور که در خروجی مشاهده می کنید، کلید مقدار متناظر با 'favorite_numbers' حذف شده است.
 
-As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
+به همین شکل، می توانید مقدار مربوط به یک کلید موجود در دیکشنری را تغییر دهید. این را تایپ کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> participant['country'] = 'Germany'
 >>> participant
-{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Ola'}
+{'country': 'Germany', 'favorite_language': 'Python', 'name': 'Mahsa'}
 ```
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
