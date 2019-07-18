@@ -417,9 +417,9 @@ KeyError: 'age'
 چه زمانی از لیست و چه زمانی از دیکشنری باید استفاده کرد؟ نکته خوبی است. قبل از دیدن خط بعد به پاسخ فکر کنید.
 
 - یک دنباله ترتیبی از آیتم ها نیاز دارید؟ لیست را انتخاب کنید.
-- Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
+- آیا نیاز است کلیدها و مقادیر را به همدیگر ارتباط دهید، که بعدا بتوانید به صورت کارآمد مقادیر را بوسیله کلیدها جستجو کنید؟ از یک دیکشنری استفاده کنید.
 
-Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
+دیکشنری ها، مانند لیست ها *تغییر پذیر* هستند، به معنای آن که می توان آن ها را پس از ساخت، تغییر داد. می توانید پس از ساختن دیکشنری، جفت کلید-مقدار جدید به آن اضافه کنید، مانند زیر:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -427,7 +427,7 @@ Dictionaries, like lists, are *mutable*, meaning that they can be changed after 
 >>> participant['favorite_language'] = 'Python'
 ```
 
-Like lists, using the `len()` method on the dictionaries returns the number of key–value pairs in the dictionary. Go ahead and type in this command:
+استفاده از متد`len()` روی دیکشنری، مانند لیست ها، تعداد جفت های کلید-مقدار را برمی گرداند. دستور زیر را تایپ کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -436,7 +436,7 @@ Like lists, using the `len()` method on the dictionaries returns the number of k
 4
 ```
 
-I hope it makes sense up to now. :) Ready for some more fun with dictionaries? Read on for some amazing things.
+امیدواریم تا اینجا همه چیز برایتان روشن باشد. :) آماده تفریح بیشتر با دیکشنری ها هستید؟ ادامه آموزش را بخوانید تا با چیزهای شگفت انگیز روبرو شوید.
 
 You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
 
