@@ -438,7 +438,7 @@ KeyError: 'age'
 
 امیدواریم تا اینجا همه چیز برایتان روشن باشد. :) آماده تفریح بیشتر با دیکشنری ها هستید؟ ادامه آموزش را بخوانید تا با چیزهای شگفت انگیز روبرو شوید.
 
-You can use the `pop()` method to delete an item in the dictionary. Say, if you want to delete the entry corresponding to the key `'favorite_numbers'`, type in the following command:
+می توانید از متد `pop()` برای حذف یک آیتم از دیکشنری استفاده کنید. برای مثال، اگر می خواهید مدخل مربوط به کلید `'favorite_numbers'` را حذف کنید، دستور زیر را تایپ کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -446,10 +446,10 @@ You can use the `pop()` method to delete an item in the dictionary. Say, if you 
 >>> participant.pop('favorite_numbers')
 [7, 42, 92]
 >>> participant
-{'country': 'Poland', 'favorite_language': 'Python', 'name': 'Ola'}
+{'country': 'Iran', 'favorite_language': 'Python', 'name': 'Mahsa'}
 ```
 
-As you can see from the output, the key–value pair corresponding to the 'favorite_numbers' key has been deleted.
+همانطور که در خروجی مشاهده می کنید، کلید مقدار متناظر با 'favorite_numbers' حذف شده است.
 
 As well as this, you can also change a value associated with an already-created key in the dictionary. Type this:
 
