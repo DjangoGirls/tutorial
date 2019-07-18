@@ -56,20 +56,20 @@ Es muy posible que ya tengas instalado Python de serie. Para verificar que ya lo
     Python 3.6.1
     
 
-Si tienes instalada una versión diferente de Python, al menos 3.4.0 (por ejemplo 3.6.0), entonces no tienes que actualizar. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Si tienes instalada una versión diferente de Python, al menos 3.4.0 (por ejemplo 3.6.0), entonces no tienes que actualizar. Si tu no has instalado Python, o si tu quieres una versión diferente, primero verifica que distribución de Linux estás usando con el siguiente comando:
 
 {% filename %}command-line{% endfilename %}
 
-    $ grep ^NAME= /etc/os-release
+    $ grep ^NOMBRE= /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+Después, dependiendo de el resultado, sigue una de las siguientes guías de instalación bajo ésta sección.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+Escribe este comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
@@ -81,7 +81,7 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Usa éste comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
