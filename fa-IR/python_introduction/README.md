@@ -387,23 +387,23 @@ Mahsa
 با این دستور، یک متغیر به نام `participant` شامل سه جفت کلید-مقدار ساخته اید:
 
 - کلید `name` به مقدار `Mahsa` (یک شی `string`) اشاره می کند
-- `country` points to `'Poland'` (another `string`),
-- and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
+- کلید `country` به `'Iran'` (یک `string` دیگر) اشاره می کند
+- و کلید `favorite_numbers` به `[7, 42, 92]` اشاره می کند (یک `لیست` با سه عدد داخل آن).
 
-You can check the content of individual keys with this syntax:
+می توانید محتوای هر کلید را طبق دستور زیر به تنهایی چک کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
 ```python
 >>> print(participant['name'])
-Ola
+Mahsa
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+ببینید، دیکشنری مشابه یک لیست است. ولی نیازی نیست که ایندکس ها را بخاطر بیاورید - فقط کافی است نام کلید را بدانید.
 
-What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
+اگر مقدار کلیدی را که وجود ندارد از پایتون درخواست کنیم چه اتفاقی می افتد؟ می توانید حدس بزنید؟ بیایید امتحان کنیم و ببینیم!
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} خط فرمان{% endfilename %}
 
 ```python
 >>> participant['age']
@@ -412,11 +412,11 @@ Traceback (most recent call last):
 KeyError: 'age'
 ```
 
-Look, another error! This one is a **KeyError**. Python is helpful and tells you that the key `'age'` doesn't exist in this dictionary.
+ببینید، یک خطای دیگر! این یکی **KeyError** است. پایتون به شما کمک می کند و می گوید که کلید `'age'` در دیکشنری وجود ندارد.
 
-When should you use a dictionary or a list? Well, that's a good point to ponder. Think about the answer before looking at it in the next line.
+چه زمانی از لیست و چه زمانی از دیکشنری باید استفاده کرد؟ نکته خوبی است. قبل از دیدن خط بعد به پاسخ فکر کنید.
 
-- Do you just need an ordered sequence of items? Go for a list.
+- یک دنباله ترتیبی از آیتم ها نیاز دارید؟ لیست را انتخاب کنید.
 - Do you need to associate values with keys, so you can look them up efficiently (by key) later on? Use a dictionary.
 
 Dictionaries, like lists, are *mutable*, meaning that they can be changed after they are created. You can add new key–value pairs to a dictionary after it is created, like this:
