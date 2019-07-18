@@ -692,15 +692,15 @@ Nota: en Windows 'python3' no es reconocido como un comando. En su lugar, usa 'p
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+¡Correcto! Ahora corriste tu primer programa de Python que fue guardado en un archivo. ¿Se siente increíble?
 
-You can now move on to an essential tool in programming:
+Puedes ahora moverte a una herramienta esencial en programación:
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+Muchas de las cosas en código debería ser ejecutadas solo cuando las condiciones son conocidas. Eso es por qué Python lo ha llamado **sentencias if**.
 
-Replace the code in your **python_intro.py** file with this:
+Reemplaza el código en tu archivo **python_intro.py** con esto:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -708,7 +708,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+Si guardáramos y corriéramos esto, veríamos un error como éste:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
