@@ -3,7 +3,7 @@
 Dependiendo de tu versión de Windows y tu teclado, una de las opciones siguientes debería abrir una ventana de comandos (puede que necesites experimentar un poco, pero no se necesita probar todas estas sugerencias):
 
 - Ve al menú o pantalla de Inicio, y escribe "Símbolo del Sistema" en el cuadro de búsqueda.
-- Go to Start menu → Windows System → Command Prompt.
+- Ve a Menú de inicio → Windows System → Command Prompt.
 - Ve al menú de Inicio → Todos los Programas → Accessorios → Símbolo del Sistema.
 - Ve a la pantalla de Inicio, pasa el ratón sobre la esquina inferior izquierda de la pantalla, y haz click en la flecha hacia abajo (en una pantalla táctil, desliza hacia arriba desde la parte baja de la pantalla). La página de la Aplicación debería abrirse. Haz click en Símbolo del Sistema en la sección Sistema de Windows.
 - Mantén la tecla especial de Windows de tu teclado y pulsa "X". Elige "Símbolo del Sistema" del menú emergente.
