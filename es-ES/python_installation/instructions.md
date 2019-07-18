@@ -118,4 +118,4 @@ La versión mostrada puede ser diferente desde 3.6.1 -- este debería marcar la 
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+Si tú tienes alguna duda, o si ocurrió algún error y no tienes idea sobre qué hacer, ¡por favor pregunta a tú entrenador! Algunas veces las cosas no van bien y es mejor preguntar por ayuda desde alguien con más experiencia.
