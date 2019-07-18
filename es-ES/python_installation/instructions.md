@@ -88,14 +88,14 @@ Usa éste comando en tu consola:
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Si tu estás en versiones antiguas de Fedora, puedes obtener un error que el comando `dnf` no se encuentra. En ese caso, tu necesitas usar `yum` en su lugar.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+Usa éste comando en tu consola:
 
 {% filename %}command-line{% endfilename %}
 
@@ -104,7 +104,7 @@ Use this command in your console:
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+Verifica si la instalación fue exitosa abriendo una terminal o consola, y corriendo el comando `python3`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -112,9 +112,9 @@ Verify the installation was successful by opening a command prompt and running t
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+La versión mostrada puede ser diferente desde 3.6.1 -- este debería marcar la versión que tu instalaste.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
+**NOTA:** Si tu estás en Windows y tu obtienes un mensaje de error indicando que `python3` no fue encontrado, trata usando `python` (sin el `3`) y verifica si aún está una versión de Python que sea 3.4.0 o superior.
 
 * * *
 
