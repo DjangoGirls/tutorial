@@ -384,9 +384,9 @@ Mahsa
 >>> participant = {'name': 'Mahsa', 'country': 'Iran', 'favorite_numbers': [7, 42, 92]}
 ```
 
-With this command, you just created a variable named `participant` with three key–value pairs:
+با این دستور، یک متغیر به نام `participant` شامل سه جفت کلید-مقدار ساخته اید:
 
-- The key `name` points to the value `'Ola'` (a `string` object),
+- کلید `name` به مقدار `Mahsa` (یک شی `string`) اشاره می کند
 - `country` points to `'Poland'` (another `string`),
 - and `favorite_numbers` points to `[7, 42, 92]` (a `list` with three numbers in it).
 
