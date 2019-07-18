@@ -461,11 +461,11 @@ KeyError: 'age'
 {'country': 'Germany', 'favorite_language': 'Python', 'name': 'Mahsa'}
 ```
 
-As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
+همانطور که می توانید ببینید مقدار کلید `'country'` از `'Iran'` به `'Germany'` تغییر پیدا کرده است. :) هیجان انگیز نیست؟ هورا! همین الان یک مورد شگفت انگیز دیگر یاد گرفتید.
 
-### سرفصل ها
+### خلاصه
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+بسیار عالی! الان چیزهای زیادی راجع به برنامه نویسی می دانید. در همین قسمت آخر شما موارد زیر را آموختید:
 
 - **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
 - **variables** – names for objects that allow you to code more easily and to make your code more readable
