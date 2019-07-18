@@ -6,7 +6,7 @@
 
 Apostamos a que utilizas Internet todos los días. Pero, ¿sabes lo que pasa cuando escribes una dirección como http://djangogirls.org en tu navegador y presionas `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+La primera cosa que necesitas entender, es que una página web consiste de un puñado de archivos guardados en el disco duro -- como tus películas, música, o imágenes. However, there is one part that is unique for websites: they include computer code called HTML.
 
 If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Los navegadores están diseñados para entender este código, seguir sus instrucciones y presentar estos archivos de los cuales está hecho tu sitio web, exactamente de la forma que quieres.
 
