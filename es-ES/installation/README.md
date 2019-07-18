@@ -35,7 +35,7 @@ Muchos de los pasos citados abajo hacen referencia a la "consola", "terminal", "
 
 {% include "/code_editor/instructions.md" %}
 
-# Set up virtualenv and install Django
+# Configura el entorno virtual (virtualenv) e instala Django
 
 {% include "/django_installation/instructions.md" %}
 
@@ -45,7 +45,7 @@ Muchos de los pasos citados abajo hacen referencia a la "consola", "terminal", "
 
 # Crear una cuenta de GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. Be sure to remember your password (add it to your password manager, if you use one).
+Ve a [GitHub.com](https://www.github.com) y registrate para una nueva y gratuita cuenta de usuario. Asegúrate de recordar tu contraseña ( añadela a tu manejador de contraseñas, si tu usas uno).
 
 # Crear una cuenta de PythonAnywhere
 
@@ -53,7 +53,7 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 # Comienza a leer
 
-Congratulations, you are all set up and ready to go! If you still have some time before the workshop, it would be useful to start reading a few of the beginning chapters:
+Felicitaciones, ¡tú tienes todo configurado y listo para avanzar! si tú aún tienes algún tiempo antes de el taller, sería útil empezar a leer un poco de los capítulos iniciales:
 
 * [¿Cómo funciona internet?](../how_the_internet_works/README.md)
 
@@ -65,4 +65,4 @@ Congratulations, you are all set up and ready to go! If you still have some time
 
 # ¡Disfrutar el taller!
 
-When you begin the workshop, you'll be able to go straight to [Your first Django project!](../django_start_project/README.md) because you already covered the material in the earlier chapters.
+Cuando tú comiences el taller, estarás habilitada para ir directamente a [¡Tu primer proyecto en Django!](../django_start_project/README.md) porque tú ya cubriste el material en los capítulos anteriores.
