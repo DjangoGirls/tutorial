@@ -6,9 +6,9 @@
 
 Apostamos a que utilizas Internet todos los días. Pero, ¿sabes lo que pasa cuando escribes una dirección como http://djangogirls.org en tu navegador y presionas `enter`?
 
-La primera cosa que necesitas entender, es que una página web consiste de un puñado de archivos guardados en el disco duro -- como tus películas, música, o imágenes. However, there is one part that is unique for websites: they include computer code called HTML.
+La primera cosa que necesitas entender, es que una página web consiste de un puñado de archivos guardados en el disco duro -- como tus películas, música, o imágenes. Sin embargo, hay una parte que es única para los sitios web: ellos incluyen código computarizado llamado HTML.
 
-If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Los navegadores están diseñados para entender este código, seguir sus instrucciones y presentar estos archivos de los cuales está hecho tu sitio web, exactamente de la forma que quieres.
+Si tu no estás familiarizado con la programación, puede ser difícil de comprender HTML a la primera, pero tus navegadores web (como Chrome, Safari, Firefox, etc.) lo aman. Los navegadores están diseñados para entender este código, seguir sus instrucciones y presentar estos archivos de los cuales está hecho tu sitio web, exactamente de la forma que quieres.
 
 Como cualquier otro archivo, tenemos que guardar los archivos HTML en algún lugar de un disco duro. Para Internet, utilizamos equipos especiales, de gran alcance llamados *servidores*. Estos no tienen una pantalla, ratón o teclado, debido a que su propósito es almacenar datos y servirlos. Por esa razón son llamados *servidores* -- porque *sirven* los datos.
 
