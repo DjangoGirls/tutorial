@@ -209,6 +209,6 @@ Activa el virtualenv si no estaba activado de antes (en PythonAnywhere se usa el
 
 El comando `manage.py collectstatic` es un poco como el comando `manage.py migrate`. Hacemos cambios en nuestro código y luego le decimos a Django que los *aplique*, bien a la colección de ficheros estáticos o bien a la base de datos.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
+En cualquier caso, ahora estaremos listos para saltar sobre la [página "Web"](https://www.pythonanywhere.com/web_app_setup/) (desde el botón del menú en el lado superior derecho de la consola), realizar la **Recarga**, y mirar en la página https://subdomain.pythonanywhere.com para ver el resultado.
 
 ¡Y eso debería ser todo! Felicidades :)
