@@ -30,7 +30,7 @@ Empezaremos añadiendo un enlace al fichero `blog/templates/blog/post_list.html`
 {% endblock %}
 ```
 
-{% raw %}Queremos tener un link del titulo de una publicación en la lista de publicaciones al detalle de la misma. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %}Queremos tener un link del titulo de una publicación en la lista de publicaciones al detalle de la misma. Cambiemos `<h2><a href="">{{ post.title }}</a></h2>` para enlazarla a la página detalle del post:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
