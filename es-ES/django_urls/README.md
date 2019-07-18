@@ -49,7 +49,7 @@ Esta linea dice que para cada URL que empieza con `admin/` Django encontrará su
 
 También queremos mantener limpio el archivo `mysite/urls.py`, así que vamos a importar las urls de nuestra aplicación `blog` en el archivo principal `mysite/urls.py`.
 
-Vamos, añade la línea para importar `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Vamos, añade la línea para importar `blog.urls`. Tú también necesitarás cambiar la línea `desde django.urls...` porque estaremos usando la función `include` aquí, así que se necesitará añadir ese import a la línea.
 
 El archivo `mysite/urls.py` debería verse ahora así:
 
