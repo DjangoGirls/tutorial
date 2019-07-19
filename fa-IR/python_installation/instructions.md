@@ -25,9 +25,9 @@
 نکته: اگر از نسخه‌های قدیمی‌تر ویندوز استفاده می‌کنید (7، ویستا یا نسخه های قدیمی‌تر) و نصب کننده پایتون 3.6.x خطا می‌دهد می‌توانید این را امتحان کنید:
 
 1. تمام آپدیت‌های ویندوز را نصب کنید و بعد دوباره نصب کردن پایتون را امتحان کنید، یا
-2. install an [older version of Python](https://www.python.org/downloads/windows/), e.g., [3.4.6](https://www.python.org/downloads/release/python-346/).
+2. یک [نسخه قدیمی‌تر پایتون](https://www.python.org/downloads/windows/) را مانند [3.4.6](https://www.python.org/downloads/release/python-346/) نصب کنید.
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+اگر نسخه قدیمی‌تر پایتون را نصب کنید صفحه نصب با آن چیزی که در بالا دیدیم کمی متفاوت خواهد بود. مطمئن باشید که به سمت پایین اسکرول کنید تا عبارت "Add python.exe to Path" را ببینید، سپس بر روی دکمه در سمت چپ کلیک کنید و "Will be installed on local hard drive" را انتخاب کنید:
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
@@ -36,7 +36,7 @@ If you install an older version of Python, the installation screen may look a bi
 <!--sec data-title="Install Python: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-> **Note** Before you install Python on OS X, you should ensure your Mac settings allow installing packages that aren't from the App Store. Go to System Preferences (it's in the Applications folder), click "Security & Privacy," and then the "General" tab. If your "Allow apps downloaded from:" is set to "Mac App Store," change it to "Mac App Store and identified developers."
+> **نکته** قبل از نصب پایتون بر روی OS X، باید مطمئن شوید که Mac شما اجازه نصب پکیج‌های خارج از اپ استور را می‌دهد. به System Preferences بروید (در فولدر Applications است)، بر روی "Security & Privacy" کلیک کنید و سپس تب "General" را انتخاب کنید. اگر گزینه "Allow apps downloaded from:" بر روی "Mac App Store," تنظیم شده بود آن را به "Mac App Store and identified developers." تغییر دهید
 
 You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
 
