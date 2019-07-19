@@ -197,24 +197,24 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
     $ cd Desktop
     
 
-توجه داشته باشید که ممکن است دایرکتوری Desktop به زبان کاربری تعیین شده در لینوکس شما ترجمه شود. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+توجه داشته باشید که ممکن است دایرکتوری Desktop به زبان کاربری تعیین شده در لینوکس شما ترجمه شود. اگر چنین اتفاقی افتاد لازم است که شما `Desktop` را با نام ترجمه شده عوض کنید؛ مثلاً برای زبان آلمانی با `Schreibtisch` عوض کنید.
 
 <!--endsec-->
 
 <!--sec data-title="Change current directory: Windows" data-id="windows_move_to" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd Desktop
     
 
 <!--endsec-->
 
-Check if it's really changed:
+بررسی کنید که آیا واقعاً دایرکتوری جاری عوض شد:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ pwd
     /Users/olasitarska/Desktop
@@ -224,7 +224,7 @@ Check if it's really changed:
 
 <!--sec data-title="Check if changed: Windows" data-id="windows_cd2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
@@ -232,19 +232,19 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+بله درست شد!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> نکته حرفه‌ای: اگر شما تایپ کنید `cd D` و بعد کلید `tab` را بر روی کیبورد بزنید، خط فرمان ادامه فرمان شما را تایپ خواهد کرد بنابراین سریعتر می‌توانید حرکت کنید. اگر دایرکتوری هایی که با "D" شروع می‌شوند بیشتر از یکی باشند، با دوبار زدن کلید `tab` لیستی از آن‌ها را خواهید دید.
 
 * * *
 
-### Create directory
+### ساختن دایرکتوری
 
-How about creating a practice directory on your desktop? You can do it this way:
+چطور است که یک دایرکتوری آزمایشی بر روی دسکتاپ بسازیم؟ به این روش می‌توانید انجام دهید:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ mkdir practice
     
@@ -253,14 +253,14 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--sec data-title="Create directory: Windows" data-id="windows_mkdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > mkdir practice
     
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+این دستور کوچک یک دایرکتوری به نام `practice` بر روی دسکتاپ شما خواهد ساخت. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
 
 > PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
 
