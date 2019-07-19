@@ -44,13 +44,13 @@
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+به بخش لینوکس در بالا نگاه کنید، چیزی که در آنجا می‌بینید بسیار شبیه چیزی است که در وبسایت PythonAnywhere و در ادامه این دوره آموزشی خواهید دید.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+هر دستور با یک پیشوند `$` یا `>` و یک اسپیس نشان داده شده‌اند، ولی شما نباید آن‌ها را تایپ کنید کامپیوتر آن را قبل از هر دستور شما گذاشته است. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> یک نکته کوچک: ممکن است در کامپیوتر شما چیزهایی شبیه به `C:\Users\ola>` یا `Olas-MacBook-Air:~ ola$` قبل از علامت پرامت باشد که کاملاً طبیعی است.
 
 The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
 
