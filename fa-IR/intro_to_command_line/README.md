@@ -260,13 +260,13 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 <!--endsec-->
 
-این دستور کوچک یک دایرکتوری به نام `practice` بر روی دسکتاپ شما خواهد ساخت. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+این دستور کوچک یک دایرکتوری به نام `practice` بر روی دسکتاپ شما خواهد ساخت. شما می‌توانید با اجرا کردن دستور `ls` یا `dir` بررسی کنید که آیا این دایرکتوری روی Desktop هست یا نه! آن را امتحان کنید. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> نکته حرفه‌ای: اگر دوست ندارید یک دستور را بارها و بارها تایپ کنید، کلید `up arrow` یا جهت بالا و `down arrow` یا جهت پایین را بر روی کیبورد بزنید تا فرمان‌هایی که اخیراً زده اید را ببینید.
 
 * * *
 
-### Exercise!
+### تمرین!
 
 A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
 
