@@ -48,7 +48,7 @@ Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, sin
 
 ![Àṣìṣe NoReverseMatch](images/no_reverse_match2.png)
 
-## Create a URL to a post's detail
+## Ṣẹ̀dá URL kan sí àlàyé ti àròkọ kan
 
 Jẹ́ ká ṣẹ̀dá URL kan sínú `urls.py` fún *view* `post_detail` wa!
 
