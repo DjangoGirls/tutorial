@@ -76,7 +76,7 @@ Apá `post/<int:pk>/` yìí tọ́ka àpẹẹrẹ URL kan – a ó ṣàlàyé 
 
 Ìyẹn túmọ̀ sí pé tí o bá tẹ `http://127.0.0.1:8000/post/5/` sínú aṣàwákiri rẹ, Django yíò mọ̀ pé o ń wá *view* kan tí a pè ní `post_detail` àti pé yíò fi ìròyìn náà ránṣẹ́ pé `pk` dọ́gba pẹ̀lú `5` sí *view* yẹn.
 
-OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
+Ó dáa, a ti ṣàfikún àpẹẹrẹ URL tuntun kan sí `blog/urls.py`! Jẹ́ ká ṣe ìmúdójúìwọ̀n ojú-ìwé náà: http://127.0.0.1:8000/ Boom! Server náà ti dáwọ́ iṣẹ́ dúró lẹ́ẹ̀kan si. Ṣàyẹ̀wò console náà – gẹ́gẹ́ bí a ṣe retí, àṣìṣe mìíràn tún wà!
 
 ![AttributeError](images/attribute_error2.png)
 
