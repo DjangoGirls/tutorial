@@ -42,7 +42,7 @@ A ó bẹ̀rẹ̀ pẹ̀lú ṣíṣe àfikún atọ́ka kan sínú fáìlì `bl
 
 Apá `post_detail` náà túmọ̀ sí pé Django yíò máa retí URL kan nínú `blog/urls.py` pẹ̀lú name=post_detail
 
-Àti pé `pk=post.pk` ńkọ́? `pk` jẹ́ ìgékúrú fún primary key, èyí tó jẹ́ àkànṣe orúkọ fún àkọsílẹ̀ kọ̀ọ̀kan nínú àkójọpọ̀ dátà kan. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
+Àti pé `pk=post.pk` ńkọ́? `pk` jẹ́ ìgékúrú fún primary key, èyí tó jẹ́ àkànṣe orúkọ fún àkọsílẹ̀ kọ̀ọ̀kan nínú àkójọpọ̀ dátà kan. Nítorí pé a kò dárúkọ primary key kan nínú àwòṣe `Post` wa, Django máa ṣẹ̀dá ọ̀kan fún wa (ní ìpìlẹ̀, nọ́mbà kan tó n fi ẹyọkan pọ̀ síi fún àkọsílẹ kọ̀ọ̀kan, ìyẹn ni pé, 1, 2, 3) àti pé yíò ṣàfikún rẹ̀ gẹ́gẹ́ bí ààyè kan tó ń jẹ́ `pk` sí àwọn àròkọ wa kọ̀ọ̀kan. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
 Ní báyìí, nígbà tí a bá lọ sí http://127.0.0.1:8000/ a ó ní àṣìṣe kan (gẹ́gẹ́ bí a ṣe retí, nítorí pé a kò tíì ní URL kan tàbí *view* kan fún `post_detail`). Yóò rí báyìí:
 
