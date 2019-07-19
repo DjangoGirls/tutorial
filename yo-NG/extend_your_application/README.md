@@ -84,7 +84,7 @@ Apá `post/<int:pk>/` yìí tọ́ka àpẹẹrẹ URL kan – a ó ṣàlàyé 
 
 ## Ṣàfikún view àlàyé ti àròkọ kan
 
-Ní àkókò yìí, a fún *view* wa ní àfikún parameter kan, `pk`. *view* wa nílò láti mú u, àbí bẹ́ẹ̀ kọ? Nítorí náà, a ó ṣàlàyé iṣẹ́ wa gẹ́gẹ́ bí `def post_detail(request, pk):`. Ṣàkíyèsí pé a nílò láti lo orúkọ kannáà pẹ̀lú èyí tí a ti dárúkọ nínú urls (`pk`). Omitting this variable is incorrect and will result in an error!
+Ní àkókò yìí, a fún *view* wa ní àfikún parameter kan, `pk`. *view* wa nílò láti mú u, àbí bẹ́ẹ̀ kọ? Nítorí náà, a ó ṣàlàyé iṣẹ́ wa gẹ́gẹ́ bí `def post_detail(request, pk):`. Ṣàkíyèsí pé a nílò láti lo orúkọ kannáà pẹ̀lú èyí tí a ti dárúkọ nínú urls (`pk`). Fífo variable yìí kò tọ́ àti pé yóò yọrí sí àsìṣe kan!
 
 Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
 
