@@ -138,17 +138,17 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+اضافه کردن یک `/?` به اکثر فرمان‌ها باعث می‌شود که صفحه راهنما نشان داده شود. لازم است صفحه را به سمت بالا اسکرول کنید تا تمام آن را ببینید. `cd /?` را امتحان کنید.
 
 <!--endsec-->
 
-### List files and directories
+### لیست کردن فایل‌ها و دایرکتوری‌ها
 
-So what's in it? It'd be cool to find out. Let's see:
+چی توش هست؟ خوبه که بفهمیم. نگاه کنید:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ ls
     Applications
@@ -162,7 +162,7 @@ So what's in it? It'd be cool to find out. Let's see:
 
 <!--sec data-title="List files and directories: Windows" data-id="windows_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > dir
      Directory of C:\Users\olasitarska
@@ -173,17 +173,17 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> نکته: در powershell شما می‌توانید مانند لینوکس یا Mac OS X از دستور 'ls' استفاده کنید.<!--endsec-->
 
 * * *
 
-### Change current directory
+### تغییر دایرکتوری جاری
 
-Now, let's go to our Desktop directory:
+حالا به دایرکتوری Desktop کامپیوترمان برویم:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ cd Desktop
     
@@ -192,12 +192,12 @@ Now, let's go to our Desktop directory:
 
 <!--sec data-title="Change current directory: Linux" data-id="Linux_move_to" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+توجه داشته باشید که ممکن است دایرکتوری Desktop به زبان کاربری تعیین شده در لینوکس شما ترجمه شود. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
 
 <!--endsec-->
 
