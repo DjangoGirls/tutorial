@@ -268,13 +268,13 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 ### تمرین!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+یک چالش کوچک برای شما: در این دایرکتوری `practice` که اخیراٌ ساخته اید، یک دایرکتوری به نام `test` بسازید. (از دستور `cd` و `mkdir` استفاده کنید.)
 
-#### Solution:
+#### راه حل:
 
 <!--sec data-title="Exercise solution: OS X and Linux" data-id="OSX_Linux_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ cd practice
     $ mkdir test
@@ -286,7 +286,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd practice
     > mkdir test
@@ -296,19 +296,19 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+تبریک! :)
 
 * * *
 
-### Clean up
+### پاک‌سازی
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+نی‌خواهیم همه جا را شلوغ کنیم، پس بیایید همه چیزهایی که ساخته ایم را پاک کنیم.
 
-First, we need to get back to Desktop:
+اول از همه باید به Desktop برویم:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ cd ..
     
@@ -317,14 +317,14 @@ First, we need to get back to Desktop:
 
 <!--sec data-title="Clean up: Windows" data-id="windows_back" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd ..
     
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+استفاده کردن از `..` به همراه دستور `cd` باعث خواهد شد که به دایرکتوری parent بروید (parent دایرکتوری است که دایرکتوری جاری درون آن قرار دارد).
 
 Check where you are:
 
