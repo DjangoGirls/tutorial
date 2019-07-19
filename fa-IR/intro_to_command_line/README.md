@@ -16,19 +16,19 @@
 
 ## اینترفیس خط فرمان را باز کنید
 
-To start some experiments we need to open our command-line interface first.
+برای اینکه کمی تجربه کنیم باید ابتدا اینترفیس خط فرمان را باز کنید.
 
 {% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Prompt
 
-You now should see a white or black window that is waiting for your commands.
+شما صفحه‌ای سیاه یا سفید خواهید دید که منتظر دستورات شماست.
 
 <!--sec data-title="Prompt: OS X and Linux" data-id="OSX_Linux_prompt" data-collapse=true ces-->
 
-If you're on Mac or Linux, you probably see a `$`, like this:
+اگر بر روی مک یا لینوکس کار می‌کنید، ممکن است یک علامت `$` ببینید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $
     
@@ -37,9 +37,9 @@ If you're on Mac or Linux, you probably see a `$`, like this:
 
 <!--sec data-title="Prompt: Windows" data-id="windows_prompt2" data-collapse=true ces-->
 
-On Windows, you probably see a `>`, like this:
+بر روی ویندوز، احتمالاً علامت `>` را خواهید دید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     >
     
