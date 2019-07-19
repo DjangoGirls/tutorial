@@ -52,17 +52,17 @@
 
 > یک نکته کوچک: ممکن است در کامپیوتر شما چیزهایی شبیه به `C:\Users\ola>` یا `Olas-MacBook-Air:~ ola$` قبل از علامت پرامت باشد که کاملاً طبیعی است.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+به بخشی که از ابتدای خط تا علامت `$` یا `>` را شامل می‌شود *command line prompt* یا به طور خلاصه *prompt* گفته می‌شود (prompt به معنی تشویق کردن و برانگیختن است). این علامت شما را تشویق می‌کند تا جلوی آن چیزی بنویسید.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+در این دوره آموزشی وقتی که از شما می‌خواهیم که دستوری را بنویسید، معمولاً در سمت چپ آن `$` یا `>` را گذاشته‌ایم. این تکه را در نظر نگیرید و فقط دستور را که بلافاصله بعد از پرامت قرار دارد تایپ کنید.
 
-## Your first command (YAY!)
+## اولین دستور شما (وای!)
 
-Let's start by typing this command:
+بیایید با تایپ این دستور شروع کنیم:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ whoami
     
@@ -71,22 +71,22 @@ Let's start by typing this command:
 
 <!--sec data-title="Your first command: Windows" data-id="windows_whoami" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > whoami
     
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+و سپس کلید `enter` را بزنید. نتیجه این خواهد بود:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ whoami
     olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+همانطور که می‌بینید کامپیوتر نام کاربری شما را نشان می‌دهد. جالب نیست؟ :)
 
 > Try to type each command; do not copy-paste. You'll remember more this way!
 
