@@ -86,7 +86,7 @@ Apá `post/<int:pk>/` yìí tọ́ka àpẹẹrẹ URL kan – a ó ṣàlàyé 
 
 Ní àkókò yìí, a fún *view* wa ní àfikún parameter kan, `pk`. *view* wa nílò láti mú u, àbí bẹ́ẹ̀ kọ? Nítorí náà, a ó ṣàlàyé iṣẹ́ wa gẹ́gẹ́ bí `def post_detail(request, pk):`. Ṣàkíyèsí pé a nílò láti lo orúkọ kannáà pẹ̀lú èyí tí a ti dárúkọ nínú urls (`pk`). Fífo variable yìí kò tọ́ àti pé yóò yọrí sí àsìṣe kan!
 
-Now, we want to get one and only one blog post. To do this, we can use querysets, like this:
+Ní báyìí, a fẹ́ gba àròkọ blog ẹyọkan ṣoṣo. Láti ṣe èyí, a lè lo querysets, báyìí:
 
 {% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 
@@ -106,7 +106,7 @@ The good news is that you can actually create your own `Page not found` page and
 
 Ó dáa, àkókò láti ṣàfikún *view* kan sí fáìlì `views.py` wa!
 
-In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
+Nínú `blog/urls.py`, a ti ṣẹ̀dá òfin URL kan tó n jẹ́ `post_detail` tó ń tọ́ka sí view kan tí a n pè ní `views.post_detail`. Èyí túmọ̀ sí pé Django yíò máa retí iṣẹ́ view kan tí a n pè ní `post_detail` nínú `blog/views.py`.
 
 Ó yẹ kí a ṣí `blog/views.py` nínú olóòtú kóòdù náà àti ṣàfikún kóòdù tó tẹ̀le yìí nítòsí àwọn ìlà `from` yòókù náà:
 
