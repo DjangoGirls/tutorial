@@ -88,37 +88,37 @@
 
 همانطور که می‌بینید کامپیوتر نام کاربری شما را نشان می‌دهد. جالب نیست؟ :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> برای امتحان کردن هر دستور آن را کپی نکیند. با تایپ کردن بهتر یاد خواهید گرفت!
 
-## Basics
+## اصول اولیه
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+هر سیستم عامل، مجموعه دستوراتی کمی متفاوت برای خط فرمان، با دیگر سیستم عامل‌ها دارد، بنابراین مطمئن شوید که دستورالعمل‌های سیستم عامل خود را پیگیری می‌کنید. حالا این را امتحان کنیم، اشکالی ندارد؟
 
-### Current directory
+### دایرکتوری جاری
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+بسیار خوب است که بفهمیم در کدام دایرکتوری هستیم. این دستور را تایپ کنید و کلید `enter` را بزنید:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ pwd
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> نکته: 'pwd' مخفف 'print working directory' به معنی 'دایرکتوری در حال اجرا را چاپ کن' است.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_cd" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> نکته: 'cd' مخفف 'change directory' به معنی 'دایرکتوری را عوض کن'. در نرم افزار powershell در ویندوز شما می‌توانید مانند لینوکس یا مک از دستور pwd استفاده کنید.
 
 <!--endsec-->
 
