@@ -70,7 +70,7 @@ urlpatterns = [
 
 Apá `post/<int:pk>/` yìí tọ́ka àpẹẹrẹ URL kan – a ó ṣàlàyé rẹ̀ fún ọ:
 
-- `post/` means that the URL should begin with the word **post** followed by a **/**. So far so good.
+- `post/` túmọ̀ sí pé ó yẹ kí URL naa bẹ̀rẹ̀ pẹ̀lú ọ̀rọ̀ **post** náà tí **/** yíò sì tẹ̀lé e. Ìyẹn ṣì dára.
 - `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
 - `/` – then we need a **/** again before finishing the URL.
 
