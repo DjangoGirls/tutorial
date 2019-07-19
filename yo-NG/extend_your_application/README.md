@@ -52,9 +52,9 @@ Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, sin
 
 Jẹ́ ká ṣẹ̀dá URL kan sínú `urls.py` fún *view* `post_detail` wa!
 
-We want our first post's detail to be displayed at this **URL**: http://127.0.0.1:8000/post/1/
+A tún fẹ́ kí àlàyé ti àròkọ àkọ́kọ́ wa fojú hàn ní **URL** yìí: http://127.0.0.1:8000/post/1/
 
-Let's make a URL in the `blog/urls.py` file to point Django to a *view* named `post_detail`, that will show an entire blog post. Open the `blog/urls.py` file in the code editor, and add the line `path('post/<int:pk>/', views.post_detail, name='post_detail'),` so that the file looks like this:
+Jẹ́ ká ṣẹ̀dá URL kan sínú fáìlì `blog/urls.py` láti darí Django sí *view* kan tó n jẹ́ `post_detail`, tí yíò ṣàfihàn gbogbo àròkọ blog kan. Ṣí fáìlì `blog/urls.py` náà nínú olóòtú kóòdù náà, kí o sì ṣàfikún ìlà `path('post/<int:pk>/', views.post_detail, name='post_detail'),` kí fáìlì náà bàa lè rí báyìí:
 
 {% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 
