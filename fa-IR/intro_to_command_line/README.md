@@ -371,7 +371,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+انجام شد! برای اینکه مطمئن شوید پاک شده است آن را چک کنید:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -384,20 +384,20 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--sec data-title="Check deletion: Windows" data-id="windows_dir2" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > dir
     
 
 <!--endsec-->
 
-### Exit
+### خروج
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+برای الان کافی است! شما می‌توانید به راحتی خط فرمان را ببندید. بیایید به روش هکرها انجامش دهیم، باشه؟ :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ exit
     
@@ -406,22 +406,22 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--sec data-title="Exit: Windows" data-id="windows_exit" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > exit
     
 
 <!--endsec-->
 
-Cool, huh? :)
+با حال بود، نه؟ :)
 
-## سرفصل ها
+## چکیده
 
-Here is a summary of some useful commands:
+اینجا چکیده‌ای از دستورات مهم آورده شده:
 
-| Command (Windows) | Command (Mac OS / Linux) | Description                | Example                                            |
+| دستورات (Windows) | دستورات (Mac OS / Linux) | توضیحات                    | مثال                                               |
 | ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
-| exit              | exit                     | close the window           | **exit**                                           |
+| exit              | exit                     | بستن پنجره خط فرمان        | **exit**                                           |
 | cd                | cd                       | change directory           | **cd test**                                        |
 | cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
 | dir               | ls                       | list directories/files     | **dir**                                            |
