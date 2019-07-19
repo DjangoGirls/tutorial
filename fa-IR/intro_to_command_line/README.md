@@ -419,20 +419,20 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 اینجا چکیده‌ای از دستورات مهم آورده شده:
 
-| دستورات (Windows) | دستورات (Mac OS / Linux) | توضیحات                    | مثال                                               |
-| ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
-| exit              | exit                     | بستن پنجره خط فرمان        | **exit**                                           |
-| cd                | cd                       | change directory           | **cd test**                                        |
-| cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
-| dir               | ls                       | list directories/files     | **dir**                                            |
-| copy              | cp                       | copy file                  | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move              | mv                       | move file                  | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir             | mkdir                    | create a new directory     | **mkdir testdirectory**                            |
-| rmdir (or del)    | rm                       | delete a file              | **del c:\test\test.txt**                         |
-| rmdir /S          | rm -r                    | delete a directory         | **rm -r testdirectory**                            |
-| [CMD] /?          | man [CMD]                | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| دستورات (Windows) | دستورات (Mac OS / Linux) | توضیحات                     | مثال                                               |
+| ----------------- | ------------------------ | --------------------------- | -------------------------------------------------- |
+| exit              | exit                     | بستن پنجره خط فرمان         | **exit**                                           |
+| cd                | cd                       | تغییر دایرکتوری             | **cd test**                                        |
+| cd                | pwd                      | نشان دادن دایرکتوری جاری    | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
+| dir               | ls                       | لیست کردن دایرکتوری/فایل ها | **dir**                                            |
+| copy              | cp                       | کپی کردن فایل               | **copy c:\test\test.txt c:\windows\test.txt**  |
+| move              | mv                       | جا به جا کردن فایل          | **move c:\test\test.txt c:\windows\test.txt**  |
+| mkdir             | mkdir                    | ساختن یک دایرکتوری جدید     | **mkdir testdirectory**                            |
+| rmdir (or del)    | rm                       | حذف کردن یک فایل            | **del c:\test\test.txt**                         |
+| rmdir /S          | rm -r                    | حذف کردن یک دایرکتوری       | **rm -r testdirectory**                            |
+| [CMD] /?          | man [CMD]                | دیدن راهنمای یک دستور       | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+این‌ها تعداد بسیار کمی از دستوراتی هستند که می‌توانید در خط فرمان اجرا کنید، اما امروز چیزی بیشتر از این‌ها لازم ندارید.
 
 If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
