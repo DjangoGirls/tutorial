@@ -104,7 +104,7 @@ We don't want that! But luckily Django comes with something that will handle tha
 
 The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
 
-OK, time to add a *view* to our `views.py` file!
+Ó dáa, àkókò láti ṣàfikún *view* kan sí fáìlì `views.py` wa!
 
 In `blog/urls.py` we created a URL rule named `post_detail` that refers to a view called `views.post_detail`. This means that Django will be expecting a view function called `post_detail` inside `blog/views.py`.
 
