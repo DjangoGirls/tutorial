@@ -72,9 +72,9 @@ Apá `post/<int:pk>/` yìí tọ́ka àpẹẹrẹ URL kan – a ó ṣàlàyé 
 
 - `post/` túmọ̀ sí pé ó yẹ kí URL naa bẹ̀rẹ̀ pẹ̀lú ọ̀rọ̀ **post** náà tí **/** yíò sì tẹ̀lé e. Ìyẹn ṣì dára.
 - `<int:pk>` – apá yìí fẹ́ ṣòro díẹ̀. Ó túmọ̀ sí pé Django n retí iye nọ́mbà odidi kan àti pé yíò fi ránṣẹ́ sí view kan gẹ́gẹ́ bí variable kan tí a n pè ní `pk`.
-- `/` – then we need a **/** again before finishing the URL.
+- `/` – lẹ́yìn náà a nílò **/** kan lẹ́ẹ̀kan si ṣáájú píparí URL náà.
 
-That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
+Ìyẹn túmọ̀ sí pé tí o bá tẹ `http://127.0.0.1:8000/post/5/` sínú aṣàwákiri rẹ, Django yíò mọ̀ pé o ń wá *view* kan tí a pè ní `post_detail` àti pé yíò fi ìròyìn náà ránṣẹ́ pé `pk` dọ́gba pẹ̀lú `5` sí *view* yẹn.
 
 OK, we've added a new URL pattern to `blog/urls.py`! Let's refresh the page: http://127.0.0.1:8000/ Boom! The server has stopped running again. Have a look at the console – as expected, there's yet another error!
 
