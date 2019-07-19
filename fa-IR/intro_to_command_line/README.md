@@ -122,17 +122,17 @@
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+احتمالاً چیزی شبیه به این را بر روی کامپیوتر خود دیده اید. وقتی پنچره خط فرمان را باز می‌کنید معمولاً در دایرکتوری home اکانت کاربری خود هستید.
 
 * * *
 
-### Learn more about a command
+### چیزهای بیشتر در مورد یک فرمان
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+بسیاری از فرمان‌هایی که شما می‌توانید در پرامت فرمان تایپ کنید یک راهنمای داخلی دارند که می‌توانید آن را ببینید و بخوانید! مثلاٌ برای آنکه در مورد فرمان دایرکتوری جاری بیشتر بدانید:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X و لینوکس یک فرمان `man` دارند که در مورد فرمان‌ها کمک زیادی می‌کند. دستور `man pwd` را امتحان کنید و ببینید که چه می‌شود. یا دستور `man` را قبل از فرمان‌های دیگر قرار دهید تا راهنمای داخلی آن‌ها را ببینید. خروجی فرمان `man` صفحه بندی شده است. با کمک کلید اسپیس به صفحه بعد بروید و با زدن `q` از راهنما خارج شوید.
 
 <!--endsec-->
 
