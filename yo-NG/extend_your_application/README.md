@@ -44,7 +44,7 @@ Apá `post_detail` náà túmọ̀ sí pé Django yíò máa retí URL kan nín�
 
 Àti pé `pk=post.pk` ńkọ́? `pk` jẹ́ ìgékúrú fún primary key, èyí tó jẹ́ àkànṣe orúkọ fún àkọsílẹ̀ kọ̀ọ̀kan nínú àkójọpọ̀ dátà kan. Because we didn't specify a primary key in our `Post` model, Django creates one for us (by default, a number that increases by one for each record, i.e. 1, 2, 3) and adds it as a field named `pk` to each of our posts. We access the primary key by writing `post.pk`, the same way we access other fields (`title`, `author`, etc.) in our `Post` object!
 
-Now when we go to http://127.0.0.1:8000/ we will have an error (as expected, since we do not yet have a URL or a *view* for `post_detail`). It will look like this:
+Ní báyìí, nígbà tí a bá lọ sí http://127.0.0.1:8000/ a ó ní àṣìṣe kan (gẹ́gẹ́ bí a ṣe retí, nítorí pé a kò tíì ní URL kan tàbí *view* kan fún `post_detail`). Yóò rí báyìí:
 
 ![Àṣìṣe NoReverseMatch](images/no_reverse_match2.png)
 
