@@ -326,7 +326,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 
 استفاده کردن از `..` به همراه دستور `cd` باعث خواهد شد که به دایرکتوری parent بروید (parent دایرکتوری است که دایرکتوری جاری درون آن قرار دارد).
 
-Check where you are:
+بررسی کنید که کجا هستید:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -340,7 +340,7 @@ Check where you are:
 
 <!--sec data-title="Check location: Windows" data-id="windows_cd3" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd
     C:\Users\olasitarska\Desktop
@@ -348,9 +348,9 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+حالا وقت پاک کردن دایرکتوری `practice` است:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **توجه**: پاک کردن فایل‌ها با `del` یا `rmdir` یا `rm` غیر قابل بازگشت است به این معنی که *فایل‌های پاک شده برا همیشه از بین می‌روند*! بنابراین هنگام کار با این دستورها بسیار احتیاط کنید.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -363,7 +363,7 @@ Now time to delete the `practice` directory:
 
 <!--sec data-title="Delete directory: Windows Command Prompt" data-id="windows_rmdir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > rmdir /S practice
     practice, Are you sure <Y/N>? Y
