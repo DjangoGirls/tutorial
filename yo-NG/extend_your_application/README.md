@@ -71,7 +71,7 @@ urlpatterns = [
 Apá `post/<int:pk>/` yìí tọ́ka àpẹẹrẹ URL kan – a ó ṣàlàyé rẹ̀ fún ọ:
 
 - `post/` túmọ̀ sí pé ó yẹ kí URL naa bẹ̀rẹ̀ pẹ̀lú ọ̀rọ̀ **post** náà tí **/** yíò sì tẹ̀lé e. Ìyẹn ṣì dára.
-- `<int:pk>` – this part is trickier. It means that Django expects an integer value and will transfer it to a view as a variable called `pk`.
+- `<int:pk>` – apá yìí fẹ́ ṣòro díẹ̀. Ó túmọ̀ sí pé Django n retí iye nọ́mbà odidi kan àti pé yíò fi ránṣẹ́ sí view kan gẹ́gẹ́ bí variable kan tí a n pè ní `pk`.
 - `/` – then we need a **/** again before finishing the URL.
 
 That means if you enter `http://127.0.0.1:8000/post/5/` into your browser, Django will understand that you are looking for a *view* called `post_detail` and transfer the information that `pk` equals `5` to that *view*.
