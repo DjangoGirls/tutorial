@@ -132,7 +132,7 @@ Bẹ́ẹ̀ ni. Àkókò ti tó láti ṣe ìmúdójúìwọ̀n ojú-ìwé náà
 
 Ó ṣiṣẹ́! Ṣùgbọ́n kí ló máa ṣẹlẹ̀ nígbà tí o bá tẹ atọ́ka kan nínú àkọlé àròkọ blog?
 
-![TemplateDoesNotExist error](images/template_does_not_exist2.png)
+![Àṣìṣe TemplateDoesNotExist](images/template_does_not_exist2.png)
 
 Ó tì o! Àṣìṣe mìíràn! Ṣùgbọ́n a ti mọ bí a ṣe máa kojú rẹ̀, àbí bẹ́ẹ̀ kọ? A nílò láti ṣàfikún àwòṣe kan!
 
