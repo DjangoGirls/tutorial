@@ -80,9 +80,9 @@ Apá `post/<int:pk>/` yìí tọ́ka àpẹẹrẹ URL kan – a ó ṣàlàyé 
 
 ![AttributeError](images/attribute_error2.png)
 
-Do you remember what the next step is? It's adding a view!
+Ǹjẹ́ o rántí ohun tí ìgbésẹ̀ tó kàn jẹ́? Òhun ni ṣíṣe àfikún view kan!
 
-## Add a post's detail view
+## Ṣàfikún view àlàyé ti àròkọ kan
 
 This time our *view* is given an extra parameter, `pk`. Our *view* needs to catch it, right? So we will define our function as `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in urls (`pk`). Omitting this variable is incorrect and will result in an error!
 
