@@ -38,19 +38,19 @@ data-collapse=true ces-->
 
 > **نکته** قبل از نصب پایتون بر روی OS X، باید مطمئن شوید که Mac شما اجازه نصب پکیج‌های خارج از اپ استور را می‌دهد. به System Preferences بروید (در فولدر Applications است)، بر روی "Security & Privacy" کلیک کنید و سپس تب "General" را انتخاب کنید. اگر گزینه "Allow apps downloaded from:" بر روی "Mac App Store," تنظیم شده بود آن را به "Mac App Store and identified developers." تغییر دهید
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+لازم است که به وبسایت https://www.python.org/downloads/release/python-361/ بروید و اینستالر پایتون را نصب کنید:
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* فایل *Mac OS X 64-bit/32-bit installer* را دانلود کنید،
+* بر روی *python-3.6.1-macosx10.6.pkg* دابل کلیک کنید تا اینستالر اجرا شود.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+احتمال زیادی دارد که شما بر روی کامپیوترتان پایتون داشته باشید. برای چک کردن آنکه آیا پایتون دارید (یا اینکه ورژن آن چیست)، یک کنسول باز کنید و دستورات زیر را تایپ کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 --version
     Python 3.6.1
