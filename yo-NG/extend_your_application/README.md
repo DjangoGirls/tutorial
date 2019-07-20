@@ -128,7 +128,7 @@ def post_detail(request, pk):
 
 Bẹ́ẹ̀ ni. Àkókò ti tó láti ṣe ìmúdójúìwọ̀n ojú-ìwé náà: http://127.0.0.1:8000/
 
-![Post list view](images/post_list2.png)
+![View àkójọ àròkọ](images/post_list2.png)
 
 Ó ṣiṣẹ́! Ṣùgbọ́n kí ló máa ṣẹlẹ̀ nígbà tí o bá tẹ atọ́ka kan nínú àkọlé àròkọ blog?
 
@@ -166,7 +166,7 @@ Lẹ́ẹ̀kan síi, a n mú `base.html` gbòòrò síi. Nínú búlọ́ọ̀k�
 
 Ó dáa, a lè ṣe ìmúdójúìwọ̀n ojú-ìwé wa láti wo bóyá `TemplateDoesNotExist` kò sí mọ́ báyìí.
 
-![Post detail page](images/post_detail2.png)
+![Ojú-ìwé àlàyé àròkọ](images/post_detail2.png)
 
 Yay! Ó n ṣiṣẹ́!
 
@@ -194,7 +194,7 @@ Lẹ́yìn náà, nínú [PythonAnywhere Bash console](https://www.pythonanywher
 
 (Rántí láti rọ́pò `<your-pythonanywhere-domain>` pẹ̀lú subdomain PythonAnywhere rẹ, láìsí àwọn àkámọ́ onígun náà.)
 
-## Updating the static files on the server
+## Ṣíṣe ìmúdójúìwọ̀n àwọn fáìlì tó wà lójú kan lórí server náà
 
 Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
 
