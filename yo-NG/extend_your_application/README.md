@@ -98,7 +98,7 @@ Post.objects.get(pk=pk)
 
 ![Àṣìṣe DoesNotExist](images/does_not_exist2.png)
 
-A kò fẹ́ ìyẹn! Ṣùgbọ́n a dúpẹ́ pé Django wá pẹ̀lú nnkan kan tí yíò yanjú ìyẹn fún wa: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+A kò fẹ́ ìyẹn! Ṣùgbọ́n a dúpẹ́ pé Django wá pẹ̀lú nnkan kan tí yíò yanjú ìyẹn fún wa: `get_object_or_404`. Tó bá jẹ́ pé kò sí `Post` tí a fún ní `pk` náà, yóò ṣàfihàn ojú-ìwé tó dára, ojú-ìwé `Page Not Found 404` náà.
 
 ![Ojú-ìwé kò sí](images/404_2.png)
 
