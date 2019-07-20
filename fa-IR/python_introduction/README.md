@@ -476,9 +476,9 @@ KeyError: 'age'
 
 ## مقایسه اشیا
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> برای خوانندگان داخل خانه: این قسمت در ویدئو های بخش [Python Basics: Dictionaries](https://www.youtube.com/watch?v=7bzxqIKYgf4) پوشش داده شده است.
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+بخش بزرگی از برنامه نویسی شامل مقایسه اشیا است. مقایسه چه چیز هایی از همه راحت تر است؟ اعداد! بیایید نحوه کارکرد آن را ببینیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -495,9 +495,9 @@ True
 True
 ```
 
-We gave Python some numbers to compare. As you can see, not only can Python compare numbers, but it can also compare method results. Nice, huh?
+ما چند عدد را برای مقایسه به پایتون داده ایم. همانطور که می بینید، پایتون نه تنها می تواند اعداد را مقایسه کند، بلکه می تواند خروجی متد ها را هم مقایسه کند، به نظر شما عالی نیست؟
 
-Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+آیا به این فکر کرده اید که چرا دو علامت مساوی `==` کنار هم برای مقایسه اعداد گذاشته ایم؟ ما از یک علامت مساوی `=` برای انتساب مقادیر به متغیرها استفاده می کنیم. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
 Give Python two more tasks:
 
