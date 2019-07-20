@@ -1,8 +1,8 @@
-# Let’s start with Python
+# بیایید پایتون را شروع کنیم
 
-We're finally here!
+بالاخره به اینجا رسیدیم!
 
-But first, let us tell you what Python is. Python is a very popular programming language that can be used for creating websites, games, scientific software, graphics, and much, much more.
+اما در ابتدا بگذارید که به شما بگوییم پایتون چیست. پایتون یک زبان برنامه نویسی بسیار رایج است که می‌تواند برای ساخت وبسایت، بازی‌ها، نرم افزارهای علمی، گرافیک و بسیاری امور دیگر استفاده شود.
 
 Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
 
