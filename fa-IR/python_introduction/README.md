@@ -467,14 +467,14 @@ KeyError: 'age'
 
 بسیار عالی! الان چیزهای زیادی راجع به برنامه نویسی می دانید. در همین قسمت آخر شما موارد زیر را آموختید:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
-- **dictionaries** – objects stored as key–value pairs
+- **خطاها** -اگر پایتون دستوری را متوجه نشود و خطایی را نشان دهد، حالا شما می دانید چطور آن خطا را بخوانید و درک کنید
+- **متغیرها** -نام هایی برای اشیا هستند که شما را قادر می سازد راحت تر کد بزنید و کد شما را خواناتر می کند
+- **لیست ها** - لیستی از اشیا که در یک ترتیب خاص ذخیره شده اند
+- **دیکشنری ها** - اشیایی که به عنوان جفت های کلید-مقدار ذخیره شده اند
 
-Excited for the next part? :)
+برای بخش بعدی هیجان زده اید؟ :)
 
-## Compare things
+## مقایسه اشیا
 
 > For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
 
