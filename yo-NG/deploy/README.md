@@ -89,7 +89,7 @@ Ní ìparí, a máa tọ́jú àwọn ìyípadà wa. Lọ sí console rẹ kí o
 
 Lọ sí [GitHub.com](https://www.github.com) kí o sì forúkọ sílẹ̀ fún account aṣàmúlò ọ̀fẹ́ tuntun kan. (Tí o bá ti ṣe ìyẹn tẹ́lẹ̀ nínú ìmúrasílẹ̀ àpérò náà, ó dára!) Ri dájú láti rántí ọ̀rọ̀ aṣínà rẹ (ṣàfikún rẹ̀ sínú alákòóso ọ̀rọ̀ aṣínà rẹ, tí o bá lo ọ̀kan).
 
-Lẹ́yìn náà, ṣẹ̀dá repository tuntun kan, pẹ̀lú orúkọ "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+Lẹ́yìn náà, ṣẹ̀dá repository tuntun kan, pẹ̀lú orúkọ "my-first-blog". Fi àpótí adarí yíyàn "initialize with a README" náà sílẹ̀ láì yàn, fi àṣàyàn .gitignore náà sílẹ̀ ní òfìfo (a ti ṣe ìyẹn fúnra wa) àti pé fi License náà sílẹ̀ gẹ́gẹ́ bí None.
 
 ![](images/new_github_repo.png)
 
