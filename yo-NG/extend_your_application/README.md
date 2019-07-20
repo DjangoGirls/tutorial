@@ -94,11 +94,11 @@ Ní báyìí, a fẹ́ gba àròkọ blog ẹyọkan ṣoṣo. Láti ṣe èyí,
 Post.objects.get(pk=pk)
 ```
 
-But this code has a problem. If there is no `Post` with the given `primary key` (`pk`) we will have a super ugly error!
+Ṣùgbọ́n kóòdù yìí ní ìṣòro kan. Tí kò bá sí `Post` tí a fún ní `primary key` (`pk`) náà, a ó ní àṣìṣe tí kò dáa rárá kan!
 
 ![Àṣìṣe DoesNotExist](images/does_not_exist2.png)
 
-We don't want that! But luckily Django comes with something that will handle that for us: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
+A kò fẹ́ ìyẹn! Ṣùgbọ́n a dúpẹ́ pé Django wá pẹ̀lú nnkan kan tí yíò yanjú ìyẹn fún wa: `get_object_or_404`. In case there is no `Post` with the given `pk`, it will display much nicer page, the `Page Not Found 404` page.
 
 ![Ojú-ìwé kò sí](images/404_2.png)
 
