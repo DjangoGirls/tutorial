@@ -609,7 +609,7 @@ False
 
 این عمل شما را به خط فرمان بازمی گرداند.
 
-پیش از این، ما یک ویرایشگر متنی از بخش [ویرایشگر متن](../code_editor/README.md) انتخاب کردیم. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+پیش از این، ما یک ویرایشگر متنی از بخش [ویرایشگر متن](../code_editor/README.md) انتخاب کردیم. حالا باید ویرایشگر را باز کنیم و چند خط کد در یک فایل جدید بنویسیم (یا اگر از یک کروم بوک استفاده می کنید، یک فایل جدید روی cloud IDE بسازید و فایل را باز کنید):
 
 {% filename %}editor{% endfilename %}
 
@@ -617,9 +617,9 @@ False
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+به وضوح، حالا شما یک توسعه دهنده پایتون کاربلد هستید، پس کمی از کدهایی که امروز یاد گرفتید را بنویسید.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+حالا باید فایل را ذخیره کنیم و یک نام توصیفی به آن بدهیم. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
