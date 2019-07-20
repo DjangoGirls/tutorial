@@ -497,9 +497,9 @@ True
 
 ما چند عدد را برای مقایسه به پایتون داده ایم. همانطور که می بینید، پایتون نه تنها می تواند اعداد را مقایسه کند، بلکه می تواند خروجی متد ها را هم مقایسه کند، به نظر شما عالی نیست؟
 
-آیا به این فکر کرده اید که چرا دو علامت مساوی `==` کنار هم برای مقایسه اعداد گذاشته ایم؟ ما از یک علامت مساوی `=` برای انتساب مقادیر به متغیرها استفاده می کنیم. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
+آیا به این فکر کرده اید که چرا دو علامت مساوی `==` کنار هم برای چک کردن تساوی اعداد گذاشته ایم؟ ما از یک علامت مساوی `=` برای انتساب مقادیر به متغیرها استفاده می کنیم. اگر می خواهید مساوی بودن دو شی با همدیگر را چک کنید، همیشه و **همیشه** باید از دو علامت مساوی `==` استفاده کنید. همچنین می توانیم مساوی نبودن اشیا را تعیین کنیم. برای این منظور، از علامت `!=`, همانطور که در مثال بالا نشان داده شده است، استفاده می کنیم.
 
-Give Python two more tasks:
+دو تکلیف دیگر به پایتون بدهید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -510,14 +510,14 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+ما `>` و `<` را دیدیم، ولی `>=` و `<=` چه معنایی دارد؟ آنها را به این صورت بخوانید:
 
-- x `>` y means: x is greater than y
-- x `<` y means: x is less than y
-- x `<=` y means: x is less than or equal to y
-- x `>=` y means: x is greater than or equal to y
+- x `>` y یعنی‌: x بزرگتر از yاست
+- x `<` y یعنی: x کوچکتر از y است
+- x `<=` y یعنی: x کوچکتر یا مساوی y است
+- x `>=` y یعنی: x بزرگتر یا مساوی y است
 
-Awesome! Wanna do one more? Try this:
+بسیار عالی! می خواهید بیشتر با آن کار کنید؟ این را امتحان کنید:
 
 {% filename %}خط فرمان{% endfilename %}
 
