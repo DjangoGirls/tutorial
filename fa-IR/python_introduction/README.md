@@ -619,9 +619,9 @@ print('Hello, Django girls!')
 
 به وضوح، حالا شما یک توسعه دهنده پایتون کاربلد هستید، پس کمی از کدهایی که امروز یاد گرفتید را بنویسید.
 
-حالا باید فایل را ذخیره کنیم و یک نام توصیفی به آن بدهیم. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+حالا باید فایل را ذخیره کنیم و یک نام توصیفی به آن بدهیم. بیایید فایل را **python_intro.py** نامگذاری کنیم و آن را روی صفحه دسکتاپ ذخیره کنیم. می توانیم به فایل هر نامی که می خواهیم بدهیم، ولی پایان یافتن فایل با **.py** مهم است. پسوند **.py** به سیستم عامل می گوید که این یک **فایل اجرایی پایتون** است و پایتون می تواند آن را اجرا کند.
 
-> **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
+> **توجه** شما باید به یکی از جالب ترین ویژگی های ویرایشگر کد دقت کنید: رنگ ها! در کنسول پایتون، همه چیز به یک رنگ بود، حالا شما می توانید ببینید که تابع `print` رنگ متفاوتی با رشته متنی دارد. به این ویژگی "برجسته سازی دستوری " می گویند، که ویژگی بسیار مفیدی برای کد زدن است. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
 With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
 
