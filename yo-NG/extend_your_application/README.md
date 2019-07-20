@@ -196,7 +196,7 @@ Lẹ́yìn náà, nínú [PythonAnywhere Bash console](https://www.pythonanywher
 
 ## Ṣíṣe ìmúdójúìwọ̀n àwọn fáìlì tó wà lójú kan lórí server náà
 
-Servers like PythonAnywhere like to treat "static files" (like CSS files) differently from Python files, because they can optimise for them to be loaded faster. As a result, whenever we make changes to our CSS files, we need to run an extra command on the server to tell it to update them. The command is called `collectstatic`.
+Àwọn server bíi PythonAnywhere fẹ́ràn láti ṣiṣẹ́ lórí "àwọn fáìlì tó wà lójú kan" (bíi àwọn fáìlì CSS) lọ́nà tó yàtọ̀ sí àwọn fáìlì Python, nítorí pé wọ́n lè mú wọn ṣiṣẹ́ lọ́nà tó já fáfá láti jẹ́ gbígbé ní kíákíá. Nítorí èyí, nígbàkigbà tí a bá ṣe àwọn ìyípadà sí àwọn fáìlì CSS wa, a nílò láti lo àfikún àṣẹ kan lórí server náà láti sọ fún-un pé kí ó ṣe ìmúdójúìwọ̀n wọn. Àṣẹ náà ni a n pè ní `collectstatic`.
 
 Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
 
