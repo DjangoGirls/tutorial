@@ -4,12 +4,12 @@
 
 اما در ابتدا بگذارید که به شما بگوییم پایتون چیست. پایتون یک زبان برنامه نویسی بسیار رایج است که می‌تواند برای ساخت وبسایت، بازی‌ها، نرم افزارهای علمی، گرافیک و بسیاری امور دیگر استفاده شود.
 
-Python originated in the late 1980s and its main goal is to be readable by human beings (not only machines!). This is why it looks simpler than other programming languages, but don't worry – Python is also really powerful!
+پایتون به اواخر دهه 1980 باز می‌گردد و هدف اصلی آن این بود که زبانی طراحی شود که خواندن آن برای افراد هم راحت باشد (و نه اینکه صرفاً ماشین‌ها راحت باشند!). به خاطر همین است که خواندن آن نسبت به بقیه زبان‌ها ساده تر است، اما نگران نباشید، پایتون واقعاً قدرتمند است!
 
 # نصب و راه اندازی پایتون
 
-> **Note** If you're using a Chromebook, skip this chapter and make sure you follow the [Chromebook Setup](../chromebook_setup/README.md) instructions.
+> **نکته** اگر از Chromebook استفاده می‌کنید، از این بخش رد شوید و دستورالعمل‌های بخش [نصب Chromebook](../chromebook_setup/README.md) را پیگیری کنید.
 > 
-> **Note** If you already worked through the Installation steps, there's no need to do this again – you can skip straight ahead to the next chapter!
+> **نکته** اگر قبلاً مراحل نصب را طی کرده‌اید، نیازی به انجام دوباره این کار نیست - شما می‌توانید به طور مستقیم به بخش بعد بروید!
 
 {% include "/python_installation/instructions.md" %}
