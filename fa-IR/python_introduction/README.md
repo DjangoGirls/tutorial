@@ -592,14 +592,14 @@ False
 
 > برای خوانندگان داخل خانه: این قسمت در ویدئو های بخش [Python Basics: Dictionaries](https://www.youtube.com/watch?v=dOAg6QVAxyk) پوشش داده شده است.
 
-تا اینجا ما تمام کدهای پایتون خود را در مفسر خط فرمان نوشته ایم، که مارا محدود به ورود یک خط از کد در یک زمان می کرد. برنامه های نرمال در فایل ذخیره می شوند و به وسیله **مفسر** یا **کامپایلر** زبان برنامه نویسی اجرا می شوند. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+تا اینجا ما تمام کدهای پایتون خود را در مفسر خط فرمان نوشته ایم، که مارا محدود به ورود یک خط از کد در یک زمان می کرد. برنامه های نرمال در فایل ذخیره می شوند و به وسیله **مفسر** یا **کامپایلر** زبان برنامه نویسی اجرا می شوند. تا اینجا ما برنامه هایمان به صورت - هربار، یک خط - در **مفسر** پایتون اجرا کردیم. برای تمرین های بعدی به بیش از یک خط کد نیاز خواهیم داشت، پس ما نیاز داریم تا سریعا:
 
-- Exit the Python interpreter
-- Open up our code editor of choice
-- Save some code into a new python file
-- Run it!
+- از مفسر پایتون خارج شویم
+- ویرایشگر متنی دلخواه خود را نصب کنیم
+- چندخط کد در فایل جدید پایتون ذخیره کنیم
+- آن را اجرا کنیم!
 
-To exit from the Python interpreter that we've been using, type the `exit()` function
+برای خروج از مفسر پایتونی که در حال استفاده از آن هستیم، تابع `exit()` را تایپ کنید
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -607,9 +607,9 @@ To exit from the Python interpreter that we've been using, type the `exit()` fun
 >>> exit()
 ```
 
-This will put you back into the command prompt.
+این عمل شما را به خط فرمان بازمی گرداند.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+پیش از این، ما یک ویرایشگر متنی از بخش [ویرایشگر متن](../code_editor/README.md) انتخاب کردیم. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
 
 {% filename %}editor{% endfilename %}
 
