@@ -18,7 +18,7 @@
 
 نکته قابل توجه: در هنگام نصب پنجره‌ای را خواهید دید به نام "Setup". مطمئن شوید که تیک "Add Python 3.6 to PATH" یا "Add Python to your environment variables" را زده باشید و بعد دکمه "Install Now" را همانطور که در تصویر می‌بینید، بزنید (اگر از نسخه دیگری استفاده کنید ممکن است کمی متفاوت از این به نظر برسد):
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![فراموش نکنید که پایتون را به Path اضافه کنید](../python_installation/images/python-installation-options.png)
 
 وقتی که نصب کامل شد، یک پنجره خواهید دید که شما را به یک لینک برای آموزش بیشتر در مورد پایتون و نیز در مورد نسخه‌ای که نصب کرده‌اید ارجاع می‌دهد. این پنجره را کنسل کنید و یا ببندید - شما در همین دوره آموزشی بیشتر در مورد پایتون یاد خواهید گرفت!
 
@@ -29,7 +29,7 @@
 
 اگر نسخه قدیمی‌تر پایتون را نصب کنید صفحه نصب با آن چیزی که در بالا دیدیم کمی متفاوت خواهد بود. مطمئن باشید که به سمت پایین اسکرول کنید تا عبارت "Add python.exe to Path" را ببینید، سپس بر روی دکمه در سمت چپ کلیک کنید و "Will be installed on local hard drive" را انتخاب کنید:
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![اضافه کردن پایتون به Path در نسخه‌های قدیمی](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -104,18 +104,18 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-Verify the installation was successful by opening a command prompt and running the `python3` command:
+به وسیله باز کردن یک کنسول و اجرای دستور `python3` از نصب صحیح پایتون اطمینان حاصل کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 --version
     Python 3.6.1
     
 
-The version shown may be different from 3.6.1 -- it should match the version you installed.
+نصحه نمایش داده شده ممکن است با 3.6.1 متفاوت باشد اما باید آن چیزی باشد که در موقع نصب انتخاب کرده اید.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher.
+**نکته:** اگر بر روی ویندوز کار می‌کنید و پیغام خطای `python3` پیدا نشد، دریافت کردید دستور `python` را (بدون `3`) امتحان کنید که باید یکی از نسخه‌های پایتون 3.4.0 یا بالاتر باشد.
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+اگر هر تردیدی داشتید یا چیزی درست کار نمی‌کرد و نمی‌دانستید چطور باید پیش بروید از مربی خود کمک بگیرید! بعضی از مواقع کارها خوب پیش نمی‌رود و بهتر است از کسی که تجربه بیشتری دارد کمک بگیرید.
