@@ -623,12 +623,12 @@ print('Hello, Django girls!')
 
 > **توجه** شما باید به یکی از جالب ترین ویژگی های ویرایشگر کد دقت کنید: رنگ ها! در کنسول پایتون، همه چیز به یک رنگ بود، حالا شما می توانید ببینید که تابع `print` رنگ متفاوتی با رشته متنی دارد. به این ویژگی "برجسته سازی دستوری " می گویند، که ویژگی بسیار مفیدی برای کد زدن است. رنگ چیزها شما را راهنمایی می‌کند، مانند رشته متنی بسته نشده یا غلط دیکته ای در کلمات کلیدی (مانند `def` در یک تابع که در ادامه خواهیم دید). این یکی از دلایلی است که از ویرایشگر کد استفاده می‌کنیم. :)
 
-With the file saved, it's time to run it! Using the skills you've learned in the command line section, use the terminal to **change directories** to the desktop.
+وقتی فایل را ذخیره کردیم وقت آن است که آن را اجرا کنیم! ار مهارت‌هایی که در بخش خط فرمان گفتیم استفاده کنید، از ترمینال برای **تغییر دایرکتوری** به دسکتاپ استفاده کنید.
 
 <!--sec data-title="Change directory: OS X" data-id="python_OSX"
 data-collapse=true ces-->
 
-On a Mac, the command will look something like this:
+بر روی Mac، فرمان‌ها شبیه به این خواهد بود:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -640,22 +640,22 @@ On a Mac, the command will look something like this:
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+بر روی لینوکس شبیه به این است:
 
 {% filename %}خط فرمان{% endfilename %}
 
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(به یاد داشته باشید که ممکن است کلمه "Desktop" به زبان منتخب شما ترجمه شده باشد.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+در خط فرمان ویندوز، شبیه به این است:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd %HomePath%\Desktop
     
@@ -664,20 +664,20 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+بر روی پاورشل ویندوز، شبیه به این است:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     > cd $Home\Desktop
     
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+اگر گیر کردید تقاضای راهنمایی کنید. مربی‌ها برای همین کار در کنار شما هستند!
 
-Now use Python to execute the code in the file like this:
+حالا از پایتون استفاده کنید تا کدهای موجود در فایل را اجرا کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hello, Django girls!
