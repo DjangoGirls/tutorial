@@ -102,7 +102,7 @@ A kò fẹ́ ìyẹn! Ṣùgbọ́n a dúpẹ́ pé Django wá pẹ̀lú nnkan k
 
 ![Ojú-ìwé kò sí](images/404_2.png)
 
-The good news is that you can actually create your own `Page not found` page and make it as pretty as you want. But it's not super important right now, so we will skip it.
+Ìròyìn rere náà ni pé o lè ṣẹ̀dá ojú-ìwé `Page not found` tìẹ kí o sì mú u rẹwà gẹ́gẹ́ bí o ṣe fẹ́. Ṣùgbọ́n kò ṣe pàtàkì ní báyìí, nítorí náà a ó fojú fò ó.
 
 Ó dáa, àkókò láti ṣàfikún *view* kan sí fáìlì `views.py` wa!
 
