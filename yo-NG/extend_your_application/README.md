@@ -160,7 +160,7 @@ Yóò rí báyìí:
 {% endblock %}
 ```
 
-Once again we are extending `base.html`. Nínú búlọ́ọ̀kù `content` náà, a fẹ́ ṣàfihàn published_date (tó bá wà), àkọlé àti ọ̀rọ̀ ti àròkọ kan. But we should discuss some important things, right?
+Lẹ́ẹ̀kan síi, a n mú `base.html` gbòòrò síi. Nínú búlọ́ọ̀kù `content` náà, a fẹ́ ṣàfihàn published_date (tó bá wà), àkọlé àti ọ̀rọ̀ ti àròkọ kan. Ṣùgbọ́n ó yẹ kí a ṣàlàyé àwọn nnkan pàtàkì kan, àbí bẹ́ẹ̀ kọ?
 
 {% raw %}`{% if ... %} ... {% endif %}` jẹ́ àmì àwòṣe kan tí a lè lò nígbà tí a bá fẹ́ ṣàyẹ̀wò nnkan kan. (Rántí `if ... else ...` láti àkòrí **Ìfihàn sí Python**?) Nínú ìṣẹ̀lẹ̀ yìí, a fẹ́ ṣàyẹ̀wò bóyá `published_date` ti àròkọ kan kìí ṣe òfìfo.{% endraw %}
 
