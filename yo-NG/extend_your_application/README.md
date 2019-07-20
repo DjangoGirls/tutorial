@@ -207,8 +207,8 @@ Bẹ̀rẹ̀ pẹ̀lú mímú virtualenv rẹ ṣiṣẹ́ tí kò bá tíì ma 
     [...]
     
 
-Àṣẹ `manage.py collectstatic` náà fẹ́ dà bíi `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+Àṣẹ `manage.py collectstatic` náà fẹ́ dà bíi `manage.py migrate`. A ṣe àwọn ìyípadà kan sí kóòdù wa, lẹ́yìn náà a sọ fún Django láti *lo* àwọn ìyípadà yẹn, bóyá sí àkójọpọ̀ àwọn fáìlì tó wà lójú kan ti server náà, tàbí sí àkójọpọ̀ dátà náà.
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
+Bó ti wù kó rí, a ti ṣetán báyìí láti lọ sí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) náà (láti bọ́tìnnì àkójọ àṣàyàn tó wà ní òkè lápá ọ̀tún console náà) kí o sì tẹ **Reload**, lẹ́yìn náà wo ojú-ìwé https://subdomain.pythonanywhere.com náà láti rí àbájáde náà.
 
 A ó parí gbogbo rẹ̀ síbí! Kú oríire :)
