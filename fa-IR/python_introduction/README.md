@@ -683,17 +683,17 @@ data-collapse=true ces-->
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+نکته: در ویندوز 'pyhton3' یک دستور محسوب نمیشود. به جای آن از 'python' برای اجرای فایل استفاده کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+بسیار خب! شما اولین برنامه پایتون خود را که در یک فایل ذخیره شده بود اجرا کردید. فوق العاده نیستید؟
 
-You can now move on to an essential tool in programming:
+حالا شما می‌توانید به سراغ یکی از ابزارهای ضروری برنامه نویسی بروید:
 
 ## If … elif … else
 
