@@ -38,7 +38,7 @@ A ó bẹ̀rẹ̀ pẹ̀lú ṣíṣe àfikún atọ́ka kan sínú fáìlì `bl
 <h2><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h2>
 ```
 
-{% raw %} Àkókò láti ṣàlàyé `{% url 'post_detail' pk=post.pk %}` tó ṣàjèjì náà. As you might suspect, the `{% %}` notation means that we are using Django template tags. This time we will use one that will create a URL for us!{% endraw %}
+{% raw %} Àkókò láti ṣàlàyé `{% url 'post_detail' pk=post.pk %}` tó ṣàjèjì náà. Gẹ́gẹ́ bí o ti lè lérò, àkọsílẹ̀ `{% %}` náà túmọ̀ sí pé a n lo àwọn àmì àwòṣe Django. Ní àkókò yìí, a ó lo ọ̀kan tí yíò ṣẹ̀dá URL kan fún wa!{% endraw %}
 
 Apá `post_detail` náà túmọ̀ sí pé Django yíò máa retí URL kan nínú `blog/urls.py` pẹ̀lú name=post_detail
 
