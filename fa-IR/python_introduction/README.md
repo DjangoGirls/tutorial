@@ -550,16 +550,16 @@ TypeError: '>' not supported between instances of 'int' and 'str'
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+در حقیقت شما با نوع جدیدی از اشیا در پایتون آشنا شدید. به نام **Boolean** بولیَن.
 
-There are only two Boolean objects:
+فقط دو نوع شی بولین وجود دارد:
 
-- True
-- False
+- True - درست
+- False - نادرست
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+برای اینکه پایتون این نوع را بشناسد، باید همیشه به صورت 'True' آن را بنویسید (حرف اول بزرگ، و باقی حروف کوچک). **true, TRUE, و tRUE را نخواهد شناخت - فقط Trueدرست است.** ( برای False هم همینطور.)
 
-Booleans can be variables, too! See here:
+بولین ها می توانند به صورت متغیر باشند، اینجا را ببینید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -569,7 +569,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+می توانید به این صورت نیز انجامش دهید:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -579,20 +579,20 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+با اجرای دستورات زیر، با بولین ها تفریح و تمرین کنید:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+تبریک! بولین ها یکی از جالب ترین ویژگی های برنامه نویسی هستند، و شما همین الان یاد گرفتید چطور از آن ها استفاده کنید!
 
-# Save it!
+# ذخیره کنید!
 
-> For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
+> برای خوانندگان داخل خانه: این قسمت در ویدئو های بخش [Python Basics: Dictionaries](https://www.youtube.com/watch?v=dOAg6QVAxyk) پوشش داده شده است.
 
-So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
+تا اینجا ما تمام کدهای پایتون خود را در مفسر خط فرمان نوشته ایم، که مارا محدود به ورود یک خط از کد در یک زمان می کرد. برنامه های نرمال در فایل ذخیره می شوند و به وسیله **مفسر** یا **کامپایلر** زبان برنامه نویسی اجرا می شوند. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Exit the Python interpreter
 - Open up our code editor of choice
