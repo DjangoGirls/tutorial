@@ -198,7 +198,7 @@ Lẹ́yìn náà, nínú [PythonAnywhere Bash console](https://www.pythonanywher
 
 Àwọn server bíi PythonAnywhere fẹ́ràn láti ṣiṣẹ́ lórí "àwọn fáìlì tó wà lójú kan" (bíi àwọn fáìlì CSS) lọ́nà tó yàtọ̀ sí àwọn fáìlì Python, nítorí pé wọ́n lè mú wọn ṣiṣẹ́ lọ́nà tó já fáfá láti jẹ́ gbígbé ní kíákíá. Nítorí èyí, nígbàkigbà tí a bá ṣe àwọn ìyípadà sí àwọn fáìlì CSS wa, a nílò láti lo àfikún àṣẹ kan lórí server náà láti sọ fún-un pé kí ó ṣe ìmúdójúìwọ̀n wọn. Àṣẹ náà ni a n pè ní `collectstatic`.
 
-Start by activating your virtualenv if it's not still active from earlier (PythonAnywhere uses a command called `workon` to do this, it's just like the `source myenv/bin/activate` command you use on your own computer):
+Bẹ̀rẹ̀ pẹ̀lú mímú virtualenv rẹ ṣiṣẹ́ tí kò bá tíì ma ṣiṣẹ́ tẹ́lẹ̀ (PythonAnywhere máa n lo àṣẹ kan tí a n pè ní `workon` láti ṣe èyí, ó dà bí àṣẹ `source myenv/bin/activate` tí o máa n lò lórí kọ̀mpútà tìẹ):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -207,7 +207,7 @@ Start by activating your virtualenv if it's not still active from earlier (Pytho
     [...]
     
 
-The `manage.py collectstatic` command is a bit like `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
+Àṣẹ `manage.py collectstatic` náà fẹ́ dà bíi `manage.py migrate`. We make some changes to our code, and then we tell Django to *apply* those changes, either to the server's collection of static files, or to the database.
 
 In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
 
