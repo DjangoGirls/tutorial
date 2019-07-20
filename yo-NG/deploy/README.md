@@ -93,7 +93,7 @@ Lẹ́yìn náà, ṣẹ̀dá repository tuntun kan, pẹ̀lú orúkọ "my-firs
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> **Àkíyèsí** Orúkọ `my-first-blog` náà ṣe pàtàkì – o lè yan nǹkan mìíràn, ṣùgbọ́n yóò máa wáyé ní ọ̀pọ̀ ìgbà nínú àwọn ìtọ́sọ́nà tó wà nísàlẹ̀, ìwọ yíò sì ní láti máa rọ́pò rẹ̀ nígbà kọ̀ọ̀kan. It's probably easier to stick with the name `my-first-blog`.
 
 On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
