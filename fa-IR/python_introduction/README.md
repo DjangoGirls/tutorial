@@ -530,14 +530,14 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+می توانید هر تعداد عدد که می خواهید برای مقایسه به پایتون بدهید، و او به شما جواب بدهد! بسیار زیرکانه است، نه؟
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** - اگر شما از عملوند `and` استفاده کنید، هر دو مقایسه باید True باشند تا کل عبارت True ارزیابی شود
+- **or** - اگر شما از عملوند `or` استفاده می کنید، Trueبودن یکی از مقایسه ها کافی است تا کل عبارت True ارزیابی شود
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+آیا عبارت " مقایسه سیب با پرتقال" را شنیده اید؟ بیایید نسخه پایتونی آن را امتحان کنیم:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} خط فرمان {% endfilename %}
 
 ```python
 >>> 1 > 'django'
