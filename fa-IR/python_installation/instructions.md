@@ -56,22 +56,22 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+اگر شما نسخه پایتونی بالاتر از 3.4.0 دارید (مثلاً 3.6.0)، نیازی به آپدگرید نیست. اگر پایتون ندارید یا نسخه‌متفاوت از موارد بالا دارید، ابتدا به کمک دستور زیر چک کنید که چه توزیعی از لینوکس دارید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ grep ^NAME= /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+بعد از آن، بسته به نتیجه، یکی از روش‌های نصب زیر را پیگیری کنید.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+این دستور را در کنسول تایپ کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ sudo apt install python3
     
@@ -81,23 +81,23 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+این دستور را در کنسول تایپ کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+اگر بر روی نسخه‌های قدیمی Fedora کار می‌کنید ممکن است پیغام خطایی بگیرید که `dnf` پیدا نشد. در این مورد، باید به جای آن از `yum` استفاده کنید.
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+این دستور را در کنسول تایپ کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ sudo zypper install python3
     
