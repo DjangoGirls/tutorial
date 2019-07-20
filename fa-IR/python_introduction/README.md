@@ -546,7 +546,7 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+همانطور که در عبارت بالا می بینید، پایتون قادر نیست یک رشته (`str`) و یک عدد (`int`) را با هم مقایسه کند. درعوض، یک **TypeError** نشان می دهد و به ما می گوید که دو نوع نمی توانند با یکدیگر مقایسه شوند.
 
 ## Boolean
 
