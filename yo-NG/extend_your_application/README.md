@@ -30,7 +30,7 @@ A ó bẹ̀rẹ̀ pẹ̀lú ṣíṣe àfikún atọ́ka kan sínú fáìlì `bl
 {% endblock %}
 ```
 
-{% raw %}A fẹ́ ní atọ́ka kan láti àkọlé ti àròkọ kan nínú àkójọ àròkọ náà sí ojú-ìwé àlàyé ti àròkọ náà. Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %}A fẹ́ ní atọ́ka kan láti àkọlé ti àròkọ kan nínú àkójọ àròkọ náà sí ojú-ìwé àlàyé ti àròkọ náà. Jẹ́ ká ṣàyípadà `<h2><a href="">{{ post.title }}</a></h2>`kí ó bàa lè tọ́ka sí ojú-ìwé àlàyé ti àròkọ náà:{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
