@@ -1032,9 +1032,9 @@ for name in girls:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+همانطور که می بینید، هر چیزی که درون یک عبارت `for` با تورفتگی قرار دهید، برای هر المان لیست `girls` تکرار می شود.
 
-You can also use `for` on numbers using the `range` function:
+همچنین می توانید از `for` با استفاده تابع `range` روی اعداد نیز استفاده کنید:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1043,7 +1043,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+که چاپ می کند:
 
 {% filename %}خط فرمان{% endfilename %}
 
