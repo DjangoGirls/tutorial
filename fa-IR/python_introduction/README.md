@@ -952,7 +952,7 @@ hi("Sonja")
     Hi anonymous!
     
 
-عالی است.نه؟ This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. ما دقیقا توابع را برای همین نیاز داریم - شما نمی خواهید تا هر دفعه کد خود را تکرار کنید!
+عالی است.نه؟ با این روش، نیاز نیست برای هر تغییر نامی که تابع به آن سلام میکند، کار تکراری انجام دهید. ما دقیقا توابع را برای همین نیاز داریم - شما نمی خواهید تا هر دفعه کد خود را تکرار کنید!
 
 بیایید کار هوشمندانه تری انجام دهیم - بیشتر از 2 اسم داریم، و نوشتن یک شرط برای هر کدام سخت است. درست است؟ محتوای فایل خود را با فایل زیر جایگذاری کنید:
 
@@ -965,7 +965,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+حالا بیایید تا کد را صدا بزنیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
@@ -1054,9 +1054,9 @@ for i in range(1, 6):
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` تابعی است که لیستی از اعداد متوالی را می سازد (ابتدا و انتهای بازه توسط شما به عنوان پارامتر به تابع داده می شود).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+توجه کنید که کران بالای بازه -دومین پارامتر- در لیست ساخته شده توسط پایتون نمی آید (به این معناست که `range(1, 6)` از 1 تا 5 می شمارد، اما شامل 6 نمی شود). به دلیل این که "range" نیمه باز است، و منظور این است که شامل عدد ابتدای بازه می شود ولی عدد انتهایی را شامل نمی شود.
 
 ## سرفصل ها
 
