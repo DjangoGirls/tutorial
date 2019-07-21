@@ -945,14 +945,14 @@ hi("Sonja")
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+فکر میکنید اگر نام دیگری را بنویسید چه اتفاقی می افتد؟(بغیر از Ola یا Sonja). امتحان کنید و ببینید که درست فکر می کردید یا نه. باید این را چاپ کند:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+عالی است.نه؟ This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
