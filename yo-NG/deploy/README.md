@@ -95,7 +95,7 @@ Lẹ́yìn náà, ṣẹ̀dá repository tuntun kan, pẹ̀lú orúkọ "my-firs
 
 > **Àkíyèsí** Orúkọ `my-first-blog` náà ṣe pàtàkì – o lè yan nǹkan mìíràn, ṣùgbọ́n yóò máa wáyé ní ọ̀pọ̀ ìgbà nínú àwọn ìtọ́sọ́nà tó wà nísàlẹ̀, ìwọ yíò sì ní láti máa rọ́pò rẹ̀ nígbà kọ̀ọ̀kan. Ó ṣeéṣe kó rọrùn láti faramọ́ orúkọ `my-first-blog` náà.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+Lórí ojú àwòrán tó kàn náà, ìwọ yíò rí URL ìfijọ ti repo rẹ, èyí tí o máa lò nínú àwọn kan lára àwọn àṣẹ tó tẹ̀le yìí:
 
 ![](images/github_get_repo_url_screenshot.png)
 
