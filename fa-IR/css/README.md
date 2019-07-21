@@ -186,7 +186,7 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 
 و اکنون کلاس `post` را به `div` اضافه کنید که حاوی یک پست وبلاگ است.
 
-% filename %}blog/templates/blog/post_list.html{% endfilename %}}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="post">
@@ -198,7 +198,7 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 
 ما اکنون بلوک‌های معرفی کننده را به انتخاب کننده‌های selector مختلف اضافه خواهیم کرد. انتخابگرهایی که با `.` آغاز می‌شوند مربوط به کلاس ها هستند. آموزش‌ها و توضیحات بسیار خوبی درباره CSS در اینترنت وجود دارد که می‌تواند به شما در درک کد زیر کمک کند. حالا این قطعه کد را در فایل `blog/static/css/blog.css` کپی کنید:
 
-% filename %}blog/static/css/blog.css{% endfilename %}}
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 .page-header {     background-color: #C25100;     margin-top: 0;     padding: 20px 20px 20px 40px; } .page-header h1, .page-header h1 a, .page-header h1 a:visited, .page-header h1 a:active {     color: #ffffff;     font-size: 36pt;     text-decoration: none; } .content {     margin-left: 40px; } h1, h2, h3, h4 {     font-family: 'Lobster', cursive; } .date {     color: #828282; } .save {     float: right; } .post-form textarea, .post-form input {     width: 100%; } .top-menu, .top-menu:hover, .top-menu:visited {     color: #ffffff;     float: right;     font-size: 26pt;     margin-right: 20px; } .post {     margin-bottom: 70px; } .post h2 a, .post h2 a:visited {     color: #000000; }
@@ -206,7 +206,7 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 
 سپس کد HTML زیر را که نمایش پست‌ها با اسامی کلاس‌ها را نشان می‌دهد:
 
-% filename %}blog/templates/blog/post_list.html{% endfilename %}}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 {% for post in posts %}
@@ -220,7 +220,7 @@ h1 a, h2 a { color: #C25100; font-family: 'Lobster'; }
 
 در فایل `blog/templates/blog/post_list.html` با قطعه کد زیر عوض کنید:
 
-% filename %}blog/templates/blog/post_list.html{% endfilename %}}
+{% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div class="content container">
