@@ -827,23 +827,23 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+نیازی نیست برای هر خط کد کامنت بنویسید، ولی آنها برای توضیح اینکه چرا کد شما کاری را انجام می دهد یا زمانی که کار پیچیده ای را انجام می دهد، مفید است.
 
 ### چکیده
 
-In the last few exercises you learned about:
+در تمرین های اخیر شما موارد زیر را یاد گرفتید:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
-- **Boolean** – a type of object that can only have one of two values: `True` or `False`
-- **Saving files** – storing code in files so you can execute larger programs.
-- **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
-- **comments** - lines that Python won't run which let you document your code
+- **مقایسه اشیا** - در پایتون می توانید اشیا را به وسیله `>` و `>=` و `==` و `<=` و `<` و عملگرهای `and` و `or` مقایسه کنید
+- **بولین ها** - نوعی از اشیا که میتواند فقط دو مقدار معتبر بگیرد: `True` یا `False`
+- ** ذخیره فایل ها** - ذخیره کردن کدها در فایل تا بتوانید برنامه های بزرگتری را اجرا کنید.
+- **if … elif … else** - دستوراتی که شما را قادر می سازد کدها را زمانی اجرا کنید که شروط مشخصی درست باشند.
+- **کامنت ها** - خطوطی که پایتون آن ها را به عنوان کد اجرا نمیکند، و به شما اجازه می دهد تا کد خود را مستند سازی کنید
 
-Time for the last part of this chapter!
+زمان آخرین بخش از این فصل رسیده است!
 
-## Your own functions!
+## تابع خودتان!
 
-> For readers at home: this part is covered in the [Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0) video.
+> برای خوانندگان داخل خانه: این قسمت در ویدئو های بخش [Python Basics: Dictionaries](https://www.youtube.com/watch?v=5owr-6suOl0) پوشش داده شده است.
 
 Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
 
