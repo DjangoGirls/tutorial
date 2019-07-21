@@ -361,7 +361,7 @@ Mahsa
 
 می توانید لیستی از متدهای مربوز به لیست ها را در این بخش از مستندات پایتون پیدا کنید: https://docs.python.org/3/tutorial/datastructures.html
 
-## دیکشنری ها
+## دیکشنری (لغت نامه) ها
 
 > برای خوانندگان داخل خانه: این قسمت در ویدئو های بخش [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) پوشش داده شده است.
 
