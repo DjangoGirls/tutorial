@@ -954,7 +954,7 @@ hi("Sonja")
 
 عالی است.نه؟ This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. ما دقیقا توابع را برای همین نیاز داریم - شما نمی خواهید تا هر دفعه کد خود را تکرار کنید!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+بیایید کار هوشمندانه تری انجام دهیم - بیشتر از 2 اسم داریم، و نوشتن یک شرط برای هر کدام سخت است. درست است؟ محتوای فایل خود را با فایل زیر جایگذاری کنید:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -973,15 +973,15 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+تبریک! شما همین الان نحوه نوشتن توابع را یاد گرفتید! :)
 
-## Loops
+## حلقه های تکرار
 
-> For readers at home: this part is covered in the [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0) video.
+> برای خوانندگان داخل خانه: این قسمت در ویدئو های بخش [Python Basics: Dictionaries](https://www.youtube.com/watch?v=aEA6Rc86HF0) پوشش داده شده است.
 
-This is the last part already. That was quick, right? :)
+این آخرین بخش است. سریع تمام شد درست است؟ :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+برنامه نویس ها دوست ندارند کار تکراری انجام دهند. برنامه نویسی برای اتوماتیک کردن کارها است، پس ما نمی خواهیم به طور دستی به هر فرد سلام کنیم، درست است؟ این همان جایی است که حلقه های تکرار - Loop - به کار می آیند.
 
 Still remember lists? Let's do a list of girls:
 
