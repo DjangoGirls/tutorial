@@ -697,9 +697,9 @@ data-collapse=true ces-->
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+بسیاری از کدها تنها زمانی باید اجرا شوند که شروط داده شده درست باشند. به همین دلیل پایتون چیزی به نام دستور شرطی - **دستور if** دارد.
 
-Replace the code in your **python_intro.py** file with this:
+کد را خود در فایل **python_intro.py** با این جایگزین کنید:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -707,9 +707,9 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+اگر ما این را ذخیره و اجرا کنیم، خطایی مانند زیر را مشاهده می کنیم:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} خط-فرمان{% endfilename %}
 
     $ python3 python_intro.py
     File "python_intro.py", line 2
