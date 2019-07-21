@@ -717,7 +717,7 @@ if 3 > 2:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+پایتون انتظار دارد که ما مشخص کنیم اگر شرط `3 > 2` درست باشد چه دستوری باید اجرا شود (یا به صورت صحیح تر شرط `True` باشد). بیایید کاری کنیم که در صورت درست بودن شرط، پایتون در خروجی بنویسد: “It works!”. کد را در فایل **python_intro.py** به این تغییر دهید:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -726,7 +726,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+به تورفتگی خط بعدی کد به اندازه 4 اسپیس دقت کردید؟ We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Save it and give it another run:
 
