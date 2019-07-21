@@ -52,7 +52,7 @@ class PostForm(forms.ModelForm):
 <a href="{% url 'post_new' %}" class="top-menu"><span class="glyphicon glyphicon-plus"></span></a>
 ```
 
-توجه داشته باشید که ما می خواهیم با نام نمایه جدیدمان`post_new`باشد. کلاس `"glyphicon glyphicon-plus"` که توسط تم بوت‌استرپ استفاده می‌شود علامت پلاس را برای ما نمایش می‌دهد.
+توجه داشته باشید که ما می خواهیم نام نمایه جدیدمان`post_new`باشد. کلاس `"glyphicon glyphicon-plus"` که توسط تم بوت‌استرپ استفاده می‌شود علامت پلاس را برای ما نمایش می‌دهد.
 
 پس از اضافه کردن خط، فایل HTML شما باید اینگونه باشد:
 
