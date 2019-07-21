@@ -874,9 +874,9 @@ hi()
 
 توجه: اگر درست کار نکرد، نترسید! خروجی به شما کمک می کند دلیل آن را بفهمید:
 
-- If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
-- If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
-- If there's no output at all, check that the last `hi()` *isn't* indented - if it is, that line will become part of the function too, and it will never get run.
+- اگر یک خطای `NameError` دریافت کردید، احتمالا چیزی را اشتباه تایپ کرده اید، پس چک کنید که از نام یکسانی موقع ساختن تابع با `def hi():` و صدا کردن آن با `hi()` استفاده کرده اید.
+- اگر یک خطای `IndentationError` دریافت کردید، چک کنید که هر دو دستور `print` تورفتگی یکسانی دارند: پایتون می خواهد که تمام کدهای داخل تابع به درستی قرار بگیرند و هم راستا باشند.
+- اگر اصلا چیزی چاپ نشده، چک کنید که آخرین `hi()` تورفته *نباشد* - اگر تورفتگی داشته باشد،بخشی از کد تابع می شود و هرگز اجرا نمی شود.
 
 Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
 
