@@ -3,6 +3,7 @@
 * [🇩🇪 Deutsch](de/)
 * [🇬🇷 Ελληνικά (beta)](el/)
 * [🇪🇸 Español (beta)](es/)
+* [🇮🇷 فارسی (beta)](fa/)
 * [🇫🇷 Français (beta)](fr/)
 * [🇭🇺 Magyar (beta)](hu/)
 * [🇮🇹 Italiano (beta)](it/)
