@@ -426,7 +426,7 @@ OS X و لینوکس یک فرمان `man` دارند که در مورد فرم�
 | cd                | pwd                      | نشان دادن دایرکتوری جاری    | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
 | dir               | ls                       | لیست کردن دایرکتوری/فایل ها | **dir**                                            |
 | copy              | cp                       | کپی کردن فایل               | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move              | mv                       | جا به جا کردن فایل          | **move c:\test\test.txt c:\windows\test.txt**  |
+| جابجایی           | mv                       | جا به جا کردن فایل          | **move c:\test\test.txt c:\windows\test.txt**  |
 | mkdir             | mkdir                    | ساختن یک دایرکتوری جدید     | **mkdir testdirectory**                            |
 | rmdir (or del)    | rm                       | حذف کردن یک فایل            | **del c:\test\test.txt**                         |
 | rmdir /S          | rm -r                    | حذف کردن یک دایرکتوری       | **rm -r testdirectory**                            |
