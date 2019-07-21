@@ -845,9 +845,9 @@ if volume < 20 or volume > 80:
 
 > برای خوانندگان داخل خانه: این قسمت در ویدئو های بخش [Python Basics: Dictionaries](https://www.youtube.com/watch?v=5owr-6suOl0) پوشش داده شده است.
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+توابعی مانند `len()` را که میتوانید در پایتون اجرا کنید، به خاطر دارید؟ بسیار خوب - شما الان یاد می گیرید که چطور تابع خود را بنویسید!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+یک تابع دنباله ای از دستورات است که پایتون باید اجرا کند. همه توابع در پایتون با کلمه کلیدی `def` شروع می شوند، نام میگیرند و میتوانند پارامترهای ورودی داشته باشند. بیایید امتحانش کنیم. کد داخل فایل **python_intro.py** را با این جایگزین کنید:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -859,20 +859,20 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+خب، اولین تابع ما آماده است!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+شاید فکر می کنید که چرا باید نام تابع را در انتهای فایل بنویسیم. بخاطر اینکه پایتون فایل را میخواند و از بالا به پایین اجرا می کند. پس برای استفاده از تابع خود، باید پس از تعریف تابع آن را صدا بزنیم.
 
-Let's run this now and see what happens:
+بیایید این را اجرا کنیم و ببینیم چه اتفاقی می افتد:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hi there!
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+توجه: اگر درست کار نکرد، نترسید! خروجی به شما کمک می کند دلیل آن را بفهمید:
 
 - If you get a `NameError`, that probably means you typed something wrong, so you should check that you used the same name when creating the function with `def hi():` and when calling it with `hi()`.
 - If you get an `IndentationError`, check that both of the `print` lines have the same whitespace at the start of a line: python wants all the code inside the function to be neatly aligned.
