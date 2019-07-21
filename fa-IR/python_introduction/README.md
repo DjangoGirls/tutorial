@@ -782,9 +782,9 @@ else:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+دیدید چه اتفاقی افتاد؟ `elif` شما را قادر میسازد تا شرط های بیشتری اضافه کنید تا اگر شروط قبلی درست نبودند، شروط جدید ارزیابی شوند.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+میتوانید هر تعداد `elif` که خواستید پس از `if` اولیه اضافه کنید، به عنوان مثال:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -804,19 +804,19 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+پایتون تمام شرط ها را به ترتیب ارزیابی می کند و چاپ می کند:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Perfect, I can hear all the details
     
 
-## Comments
+## کامنت ها
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+کامنت ها خطوطی هستند که با `#` شروع می شوند. می توانید بعد از `#` هر توضیحاتی راجع به کد بنویسید و پایتون آن را نادیده می گیرد. کامنت ها میتوانند کد شما را برای دیگران خواناتر کنند.
 
-Let's see how that looks:
+بیایید ببینیم چطور به نظر می رسد:
 
 {% filename %}python_intro.py{% endfilename %}
 
