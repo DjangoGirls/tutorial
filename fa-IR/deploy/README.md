@@ -53,7 +53,7 @@
 > 
 > ایده خوبی است که همیشه قبل از زدن دستور `git add` یا هر وقت که مطمئن نیستید چه چیزی تغییر کرده، دستور `git status` را بزنید. این کار کمک می‌کند که از هر نوع غافلگیری مانند اضافه کردن یا commit کردن فایل اشتباه، جلوگیری شود. دستور `git status` اطلاعاتی در مورد فایل‌های ردگیری نشده untracked، اصلاح شده modified، استیج شده staged و نیز درمورد وضعیت شاخه ای که در آن هستیم اطلاعات می‌دهد. خروجی باید شبیه به موارد زیر باشد:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     $ git status
 >     On branch master
@@ -74,7 +74,7 @@
 > 
 > و در نهایت ما تغییرات را ذخیره می‌کنیم. به کنسول خود بروید و این دستورات را اجرا کنید:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     $ git add --all .
 >     $ git commit -m "My Django Girls app, first commit"
@@ -101,9 +101,9 @@
 > 
 > حالا وقت آن است که مخزن Git روی کامپیوتر شما را به مخزن موجود در Github وصل کنیم.
 > 
-> خط زیر را در کنسول خود تایپ کنید (این را `<your-github-username>` با نام کاربری و گذر واژه خود که در GitHub تعریف کرده این عوض کنید. علامت‌های کوچکتر و بزرگتر را استفاده نکنید. URL باید دقیقاً همان آدرسی باشد که کمی قبل‌تر دیده‌اید):
+> خط زیر را در کنسول خود تایپ کنید (`<your-github-username>` را با نام کاربری و گذر واژه خود که در GitHub تعریف کرده اید عوض کنید. علامت‌های کوچکتر و بزرگتر را استفاده نکنید. URL باید دقیقاً همان آدرسی باشد که کمی قبل‌تر دیده‌اید):
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     $ git remote add origin https://github.com/<your-github-username>/my-first-blog.git
 >     $ git push -u origin master
@@ -111,7 +111,7 @@
 > 
 > وقتی شما فایلی را به GitHub می‌فرستید یا push می‌کنید نام کاربری و گذرواژه از شما پرسیده می‌شود (ممکن است در همان کنسول خط فرمان یا در یک پنجره جدید از شما پرسیده شود) پس از وارد کردن اطلاعات ورود، چیزی شبیه به این خواهید دید:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان{% endfilename %}
 > 
 >     Counting objects: 6, done.
 >     Writing objects: 100% (6/6), 200 bytes | 0 bytes/s, done.
@@ -142,7 +142,7 @@
 > 
 > > **توجه** PythonAnywhere بر مبنای لینوکس است، بنابراین اگر روی ویندوز کار می‌کنید این محیط خط فرمان با آنچه در ویندوز دارید کمی متفاوت است.
 > 
-> منتشر کردن یک اپلیکیشن تحت وی بر روی PythonAnywhere شامل آوردن کدها از GitHub و تنظیم کردن PythonAnywher برای تشخیص آن و اجرا کردنش به عنوان یک برنامه تحت وب است. روش های دستی برای این کار وجود دارد اما PythonAnywhere یک ابزار کمکی دارد که همه این کارها را برای شما انجام می‌دهد. اجازه بدهید اول از همه این ابزار را نصب کنیم:
+> Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. روش های دستی برای این کار وجود دارد اما PythonAnywhere یک ابزار کمکی دارد که همه این کارها را برای شما انجام می‌دهد. اجازه بدهید اول از همه این ابزار را نصب کنیم:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
