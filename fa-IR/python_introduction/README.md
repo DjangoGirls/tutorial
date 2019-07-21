@@ -841,7 +841,7 @@ if volume < 20 or volume > 80:
 
 زمان آخرین بخش از این فصل رسیده است!
 
-## تابع خودتان!
+## تابع خودتان را بنویسید!
 
 > برای خوانندگان داخل خانه: این قسمت در ویدئو های بخش [Python Basics: Dictionaries](https://www.youtube.com/watch?v=5owr-6suOl0) پوشش داده شده است.
 
