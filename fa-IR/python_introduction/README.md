@@ -726,22 +726,22 @@ if 3 > 2:
     print('It works!')
 ```
 
-به تورفتگی خط بعدی کد به اندازه 4 اسپیس دقت کردید؟ به این تورفتگی ها نیاز داریم تا پایتون بداند در صورت درست بودن شرط کدام دستورات را اجرا کند. می توانید از یک اسپیس استفاده کنید، ولی تقریبا همه برنامه نویسان پایتون برای تمیزی و خوانایی کد از 4 اسپیس استفاده می کنند. همچنین می توانید ویرایشگر کد خود را طوری تنظیم کنید تا یک tab به عنوان 4 اسپیس محسوب شود. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+به تورفتگی خط بعدی کد به اندازه 4 اسپیس دقت کردید؟ به این تورفتگی ها نیاز داریم تا پایتون بداند در صورت درست بودن شرط کدام دستورات را اجرا کند. می توانید از یک اسپیس استفاده کنید، ولی تقریبا همه برنامه نویسان پایتون برای تمیزی و خوانایی کد از 4 اسپیس استفاده می کنند. همچنین می توانید ویرایشگر کد خود را طوری تنظیم کنید تا یک tab به عنوان 4 اسپیس محسوب شود. زمانی که انتخاب خود را تعیین کردید، آن را تغییر ندهید! اگر تورفتگی را با 4 اسپیس انجام می دهید، تمام تورفتگی های بعدی را با 4 اسپیس انجام دهید، درغیر این صورت به مشکل بر میخورید.
 
-Save it and give it another run:
+فایل را ذخیره کنید و بار دیگر اجرا کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
 ```python
 $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+توجه: یادتان باشد که در ویندوز 'python3' به عنوان یک دستور شناخته نمیشود. از الان به بعد 'python3' را با 'python' برای اجرای فایل ها جایگزین کنید.
 
-### What if a condition isn't True?
+### چه میشود اگر یک شرط True نباشد؟
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+در مثال قبلی، کد تنها زمانی اجرا می شد که شرط ها درست بودند. ولی پایتون دستورات `elif` و `else` هم دارد:
 
 {% filename %}python_intro.py{% endfilename %}
 
