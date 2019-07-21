@@ -983,7 +983,7 @@ Let's call the code now:
 
 برنامه نویس ها دوست ندارند کار تکراری انجام دهند. برنامه نویسی برای اتوماتیک کردن کارها است، پس ما نمی خواهیم به طور دستی به هر فرد سلام کنیم، درست است؟ این همان جایی است که حلقه های تکرار - Loop - به کار می آیند.
 
-Still remember lists? Let's do a list of girls:
+هنوز لیست ها را به خاطر دارید؟ بیایید یک لیست از دختران بسازیم:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -991,7 +991,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+ما میخواهیم به همه آنها با ذکر نامشان سلام کنیم. برای این کار تابع `hi` را داریم، بیایید در یک حلقه از آن استفاده کنیم:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -999,9 +999,9 @@ We want to greet all of them by their name. We have the `hi` function to do that
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+عبارت `for` کمی شبیه به عبارت `if` رفتار می کند؛ کد زیر هر دو باید به اندازه 4 اسپیس تورفتگی داشته باشد.
 
-Here is the full code that will be in the file:
+اینجا کد کاملی را که باید در فایل باشد، داریم:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1015,7 +1015,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+و وقتی آن را اجرا کنیم:
 
 {% filename %}خط فرمان{% endfilename %}
 
