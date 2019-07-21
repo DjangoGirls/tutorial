@@ -2,7 +2,7 @@
 
 [![توری](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial)
 
-> این کار تحت مجوز مجوز مجوز Creative Commons Attribution-Share Alike 4.0 مجاز است. برای مشاهده یک نسخه از این مجوز، بهhttps://creativecommons.org/licenses/by-sa/4.0/ مراجعه کنید
+> این کار تحت مجوز Creative Commons Attribution-Share Alike 4.0 مجاز است. برای مشاهده یک نسخه از این مجوز، بهhttps://creativecommons.org/licenses/by-sa/4.0/ مراجعه کنید
 
 ## خوش امدید
 
