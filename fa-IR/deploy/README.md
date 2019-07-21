@@ -142,9 +142,9 @@
 > 
 > > **توجه** PythonAnywhere بر مبنای لینوکس است، بنابراین اگر روی ویندوز کار می‌کنید این محیط خط فرمان با آنچه در ویندوز دارید کمی متفاوت است.
 > 
-> Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. روش های دستی برای این کار وجود دارد اما PythonAnywhere یک ابزار کمکی دارد که همه این کارها را برای شما انجام می‌دهد. اجازه بدهید اول از همه این ابزار را نصب کنیم:
+> منتشر کردن یک اپلیکیشن تحت وی بر روی PythonAnywhere شامل آوردن کدها از GitHub و تنظیم کردن PythonAnywhere برای تشخیص آن و اجرا کردنش به عنوان یک برنامه تحت وب است. روش های دستی برای این کار وجود دارد اما PythonAnywhere یک ابزار کمکی دارد که همه این کارها را برای شما انجام می‌دهد. اجازه بدهید اول از همه این ابزار را نصب کنیم:
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان PythonAnywhere {% endfilename %}
 > 
 >     $ pip3.6 install --user pythonanywhere
 >     
@@ -153,7 +153,7 @@
 > 
 > حالا ما برنامه کمکی را اجرا می‌کنیم تا به طور اتوماتیک برنامه ما را از GitHub بخواند. خطوط زیر را در کنسول PythonAnywhere بنویسید (فراموش نکنید که نام کاربری GitHub را به جای `<your-github-username>` بنویسید در نتیجه URL شما مانند URL اختصاصی شما در GitHub میشود):
 > 
-> {% filename %}command-line{% endfilename %}
+> {% filename %}خط فرمان PythonAnywhere {% endfilename %}
 > 
 >     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
 >     
