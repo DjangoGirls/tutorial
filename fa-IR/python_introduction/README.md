@@ -967,7 +967,7 @@ hi("Rachel")
 
 Let's call the code now:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -1017,7 +1017,7 @@ for name in girls:
 
 And when we run it:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hi Rachel!
@@ -1045,7 +1045,7 @@ for i in range(1, 6):
 
 Which would print:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     1
     2
@@ -1060,10 +1060,10 @@ Note that the second of these two numbers is not included in the list that is ou
 
 ## سرفصل ها
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+همین بود. **شما فوق‌العاده هستید!** این بخش دارای ریزه کاری هایی بود و شما باید به خودتان افتخار کنید. ما هم قطعاً به شما افتخار می‌کنیم که تا اینجا پیش آمده اید!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+برای دوره‌های آموزشی رسمی و کامل پایتون، سایت https://docs.python.org/3/tutorial/ را ببینید. دیدگاه کامل و دقیقی در مورد این زبان به شما می‌دهد. موفق باشید :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+شاید بخواهید قبل از رفتن به مرحله بعد، کارهای دیگری بکنید، کمی کش قوس بیایید، قدم بزنید و به چشم های خود استراحتی بدهید. :)
 
 ![Cupcake](images/cupcake.png)
