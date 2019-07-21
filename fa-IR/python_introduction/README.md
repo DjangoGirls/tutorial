@@ -726,7 +726,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-به تورفتگی خط بعدی کد به اندازه 4 اسپیس دقت کردید؟ We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+به تورفتگی خط بعدی کد به اندازه 4 اسپیس دقت کردید؟ به این تورفتگی ها نیاز داریم تا پایتون بداند در صورت درست بودن شرط کدام دستورات را اجرا کند. می توانید از یک اسپیس استفاده کنید، ولی تقریبا همه برنامه نویسان پایتون برای تمیزی و خوانایی کد از 4 اسپیس استفاده می کنند. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Save it and give it another run:
 
