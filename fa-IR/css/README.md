@@ -70,7 +70,7 @@ CSS یا (Cascading Style Sheets) زبان مورد استفاده برای تو
 
 در فایل ` blog/static/css/blog.css ` کد زیر را اضافه کنید:
 
-% filename %}blog/static/css/blog.css{% endfilename %}}
+{% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 h1 a, h2 a {color: #C25100; }
