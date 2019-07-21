@@ -878,7 +878,7 @@ hi()
 - اگر یک خطای `IndentationError` دریافت کردید، چک کنید که هر دو دستور `print` تورفتگی یکسانی دارند: پایتون می خواهد که تمام کدهای داخل تابع به درستی قرار بگیرند و هم راستا باشند.
 - اگر اصلا چیزی چاپ نشده، چک کنید که آخرین `hi()` تورفته *نباشد* - اگر تورفتگی داشته باشد،بخشی از کد تابع می شود و هرگز اجرا نمی شود.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+بیایید اولین تابع خود را با پارامتر ورودی بسازیم. ما مثال قبلی را تغییر می دهیم - تابعی که به فرد اجرا کننده آن سلام میکند - با نام خود فرد:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -886,7 +886,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+همانطور که می بینید، ما الان به تابع یک پارامتر به نام `name` دادیم:
 
 {% filename %}python_intro.py{% endfilename %}
 
