@@ -902,9 +902,9 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+به خاطر داشته باشید: تابع `print` با 4 اسپیس داخل دستور `if` تورفتگی دارد. بخاطر آنکه تابع زمانی اجرا می شود که شرط درست باشد. بیایید نحوه کار آن را ببینیم:
 
-{% filename %}{{ warning_icon }} command-line{% endfilename %}
+{% filename %}{{ warning_icon }} خط-فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Traceback (most recent call last):
@@ -913,7 +913,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+آخ، خطا. خوشبختانه، پایتون یک پیام خطای مفید به ما می دهد. به ما می گوید که تابع `hi()` (همانی که تعریف کردیم) یک پارامتر ورودی دارد (به نام `name`) و ما فراموش کردیم زمان صدا کردن تابع آن را وارد کنیم. بیایید آن را در انتهای فایل درست کنیم:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -921,15 +921,15 @@ Oops, an error. Luckily, Python gives us a pretty useful error message. It tells
 hi("Ola")
 ```
 
-And run it again:
+و دوباره اجرا کنیم:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hi Ola!
     
 
-And if we change the name?
+و اگر نام را تغییر دهیم چه می شود؟
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -937,9 +937,9 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+و اجرا کنیم:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hi Sonja!
