@@ -752,15 +752,15 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+وقتی آن را اجرا کنید، خروجی زیر را چاپ میکند:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+اگر 2 عدد بزرگتری از 5 بود، دستور دوم اجرا میشد. بیایید نحوه کار `elif` را ببینیم:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -774,9 +774,9 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+و اجرا کنید:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ python3 python_intro.py
     Hey Sonja!
