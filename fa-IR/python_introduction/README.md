@@ -952,7 +952,7 @@ hi("Sonja")
     Hi anonymous!
     
 
-عالی است.نه؟ This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+عالی است.نه؟ This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. ما دقیقا توابع را برای همین نیاز داریم - شما نمی خواهید تا هر دفعه کد خود را تکرار کنید!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
