@@ -955,7 +955,7 @@ Ahora, ¿Qué piensas que sucederá si escribes otro nombre allí? (No Ola o Son
 
 Esto es sorprendente, ¿Verdad? De esta manera tú no tienes que repetir la función cada vez que cambies el nombre de la persona que está supuesta a recibir. Y eso es exactamente por qué necesitamos funciones - ¡tú nunca quieres repetir tú código!
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+Hacer algo más inteligente - hay más nombres que dos, y escribir una condición para cada uno sería difícil, ¿Verdad? Reemplaza el contenido de tu archivo con lo siguiente:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -966,7 +966,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+Llamarémos al código ahora:
 
 {% filename %}command-line{% endfilename %}
 
@@ -974,17 +974,17 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+¡Felicidades! ¡Ya aprendíste a cómo escribir funciones! :)
 
 ## Bucles
 
 > Para lectores en casa: este capítulo está cubierto en el video [Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0).
 
-This is the last part already. That was quick, right? :)
+Listo ésta es la última parte. Eso fue rápido, ¿verdad? :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+Los programadores no les gusta repetir. Programar es todo acerca de automatizar cosas, así que no queremos recibir a cada persona por su nombre manualmente, ¿verdad? Allí es dónde los ciclos vienen a manejarse.
 
-Still remember lists? Let's do a list of girls:
+¿Aún recuerdas las listas? Hagamos una lista de niñas:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -992,7 +992,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+Queremos recibir a todos ellos con sus nombres. Tenemos la función `hola` para hacerlo, así que usémosla en un ciclo:
 
 {% filename %}python_intro.py{% endfilename %}
 
