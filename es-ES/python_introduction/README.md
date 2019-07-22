@@ -914,7 +914,7 @@ Recuerda: La función `print` está indentada con 4 espacios en la sentencia `if
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, un error. Por suerte, Python nos da un útil y agradable mensaje de error. Este nos dice que la función `hi()` (que definimos) tiene un argumento requerido (llamado `nombre`) y que olvidamos pasarlo cuando llamamos a la función. Let's fix it at the bottom of the file:
+Oops, un error. Por suerte, Python nos da un útil y agradable mensaje de error. Este nos dice que la función `hi()` (que definimos) tiene un argumento requerido (llamado `nombre`) y que olvidamos pasarlo cuando llamamos a la función. Configuremos esto en la parte inferior del archivo:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -922,7 +922,7 @@ Oops, un error. Por suerte, Python nos da un útil y agradable mensaje de error.
 hi("Ola")
 ```
 
-And run it again:
+Y ejecutemos otra vés:
 
 {% filename %}command-line{% endfilename %}
 
@@ -930,7 +930,7 @@ And run it again:
     Hi Ola!
     
 
-And if we change the name?
+¿Y si cambiamos el nombre?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -938,7 +938,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+Y lo ejecutamos:
 
 {% filename %}command-line{% endfilename %}
 
@@ -946,14 +946,14 @@ And run it:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Ahora, ¿Qué piensas que sucederá si escribes otro nombre allí? (No Ola o Sonja.) Intenta y ve si estás en lo correcto. Debería imprimir esto:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Esto es sorprendente, ¿Verdad? De esta manera tú no tienes que repetir la función cada vez que cambies el nombre de la persona que está supuesta a recibir. Y eso es exactamente por qué necesitamos funciones - ¡tú nunca quieres repetir tú código!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
