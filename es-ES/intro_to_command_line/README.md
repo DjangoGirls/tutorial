@@ -18,7 +18,7 @@ La ventana, que generalmente es llamada **línea de comandos** ó **interfaz de 
 
 Para empezar con algunos experimentos necesitarás abrir nuestra interfaz de línea de comandos en primer lugar.
 
-{% incluye "/intro_to_command_line/open_instructions.md" %}
+{% include "/intro_to_command_line/open_instructions.md" %}
 
 ## Símbolo del Sistema (Prompt)
 
