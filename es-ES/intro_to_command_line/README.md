@@ -131,19 +131,19 @@ Probablemente veremos algo similar en tu computador. Una vez que abres la consol
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X y Linux tienen un comando `man`, el cuál te da una ayuda en comandos. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X y Linux tienen un comando `man`, el cuál te da una ayuda en comandos. Intenta `man pwd` y ve que dice, o coloca `man` antes de otro comando para ver su ayuda. La salida de `man` nomalmentes es paginada. Usa la barra de espacio para moverte a la siguiente página, y `q` para sallir de la ayuda.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Añade un sufijo `/?` para mas comandos que se imprimirán en la página de ayuda. Tú puedes hacer scroll a la ventana de comandos para verlos todos. Intenta `cd /?`.
 
 <!--endsec-->
 
 ### Listar ficheros y directorios
 
-So what's in it? It'd be cool to find out. Let's see:
+Así que, ¿en qué estamos? Estaría bien saberlo. Veamos:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
