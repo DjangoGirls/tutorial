@@ -136,11 +136,11 @@ Kóòdù rẹ ti wà lórí GitHub ní báyìí. Lọ síbẹ̀ kí o ṣàyẹ�
 
 ## Ṣíṣe ètò ààyè wa lórí PythonAnywhere
 
-Padà sí [Pánẹ́ẹ̀lì ìdarí PythonAnywhere](https://www.pythonanywhere.com/) pàtàkì náà nípasẹ̀ títẹ orí àmì náà, kí o sì yan àṣàyàn láti bẹ̀rẹ̀ console "Bash" kan – ìyẹn ni ẹ̀yà PythonAnywhere ti ìlà ìpàṣẹ kan, gẹ́gẹ́ bíi èyí tó wà lórí kọ̀mpútà rẹ.
+Padà sí [Pánẹ́ẹ̀lì ìdarí PythonAnywhere](https://www.pythonanywhere.com/) pàtàkì náà nípasẹ̀ títẹ orí àmì náà, kí o sì yan àṣàyàn láti bẹ̀rẹ̀ console "Bash" kan – ìyẹn ni ẹ̀yà ìlà ìpàṣẹ ti PythonAnywhere kan, gẹ́gẹ́ bíi èyí tó wà lórí kọ̀mpútà rẹ.
 
 ![Abala 'New Console' náà lórí atọ́kùn ayélujára PythonAnywhere, pẹ̀lú bọ́tìnnì kan fún 'bash'](images/pythonanywhere_bash_console.png)
 
-> **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
+> **Àkíyèsí** PythonAnywhere dá lórí Linux, nítorí náà tí o bá wà lórí Windows, console náà yíò yàtọ̀ díẹ̀ sí èyí tó wà lórí kọ̀mpútà rẹ.
 
 Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
 
