@@ -718,7 +718,7 @@ Si guardáramos y corriéramos esto, veríamos un error como éste:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+Python nos espera dar nuevas instrucciones, las cuales son ejecutadas si la condición `3 > 2` torna a ser verdadera (o `True` para ese caso). Intentemos imprimir en Python "¡Funciona!". Cambia el código de tu archivo **python_intro.py** a esto:
 
 {% filename %}python_intro.py{% endfilename %}
 
