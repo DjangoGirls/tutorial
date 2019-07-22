@@ -265,7 +265,7 @@ Verifica si está cambiado actualmente:
 
 ### ¡Ejercicio!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Un pequeño reto para ti: en tu nuevo directorio creado `práctica`, crea un directorio llamado `prueba`. (Usa los comandos `cd` y `mkdir`.)
 
 #### Solución:
 
@@ -273,10 +273,10 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd practice
-    $ mkdir test
+    $ cd practica
+    $ mkdir prueba
     $ ls
-    test
+    prueba
     
 
 <!--endsec-->
@@ -285,23 +285,23 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 {% filename %}command-line{% endfilename %}
 
-    > cd practice
-    > mkdir test
+    > cd practica
+    > mkdir prueba
     > dir
-    05/08/2014 07:28 PM <DIR>      test
+    05/08/2014 07:28 PM <DIR>      prueba
     
 
 <!--endsec-->
 
-Congrats! :)
+¡Felicidades! :)
 
 * * *
 
-### Clean up
+### Limpieza
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+No queremos dejar un enredo, así que removamos todo lo que hicimos hasta este momento.
 
-First, we need to get back to Desktop:
+Primero, necesitamos regresar al Escritorio:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -321,16 +321,15 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Usando los `..` con el comando `cd` cambiaremos tu actual directorio al directorio padre( que es, el directorio que contiene tu directorio actual).
 
-Check where you are:
+Verifica dónde estás:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ pwd
-    /Users/olasitarska/Desktop
+    $ pwd /Users/olasitarska/Desktop
     
 
 <!--endsec-->
@@ -339,15 +338,14 @@ Check where you are:
 
 {% filename %}command-line{% endfilename %}
 
-    > cd
-    C:\Users\olasitarska\Desktop
+    > cd C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Es hora de eliminar el directorio `practica`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Atención**: Si eliminas los archivos usando `del`, `rmdir` o `rm` no se podrán recuperar, esto significa ¡*el borrado de los archivos será para siempre*! Sé muy cuidados@ coon este comando.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
