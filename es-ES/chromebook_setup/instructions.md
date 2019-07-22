@@ -66,7 +66,7 @@ A continuación, ejecuta:
 
 Hazte una cuenta de [GitHub](https://github.com).
 
-### Python Anywhere 
+### PythonAnywhere
 
 El tutorial de Django Girls tiene una sección que se llama "Despliegue", que es el proceso de coger el código de tu nueva aplicación web y ponerlo en un ordenador públicamente accesible (un servidor) para que todo el mundo pueda ver tu trabajo.
 
