@@ -1065,6 +1065,6 @@ Eso es todo. **¡Tú rockeas totalmente!** Esto fue un capítulo difícil, así 
 
 Para un tutorial oficial y completo de python visita https://docs.python.org/3/tutorial/. Este te dará un estudio completo de éste lenguaje. Gracias :)
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+Tu podrías querer un momento para algo - estirarte, caminar cerca, descansar tus ojos - antes de avanzar a un próximo capítulo. :)
 
-![Cupcake](images/cupcake.png)
+![Pastelillo](images/cupcake.png)
