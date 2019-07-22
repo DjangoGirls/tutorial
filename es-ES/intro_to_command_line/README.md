@@ -360,13 +360,13 @@ Es hora de eliminar el directorio `practica`:
 
 {% filename %}command-line{% endfilename %}
 
-    > rmdir /S practice
-    practice, Are you sure <Y/N>? Y
+    > rmdir /S practica
+    practica, ¿Estás segur@<Y/N>? Y
     
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+¡Hecho! Estás seguro que lo eliminaste realmente, verifica:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -388,7 +388,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 ### Salir
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+¡Eso es todo por ahora! Tú puedes ahora cerrar la línea de comandos o consola sin problemas. Hazlo como un hacker, ¿vale? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -412,25 +412,25 @@ Genial, ¿no? :)
 
 ## Resumen
 
-Here is a summary of some useful commands:
+Aquí está un resumen de algunos comandos útiles:
 
-| Comando (Windows) | Comando (Mac OS / Linux) | Descripción                   | Ejemplo                                            |
-| ----------------- | ------------------------ | ----------------------------- | -------------------------------------------------- |
-| exit              | exit                     | Cierra la ventana             | **exit**                                           |
-| cd                | cd                       | Cambia el directorio          | **cd test**                                        |
-| cd                | pwd                      | Mostrar el directorio actual  | **cd** (Windows) o **pwd** (Mac OS / Linux)        |
-| dir               | ls                       | Lista directorios/archivos    | **dir**                                            |
-| copy              | cp                       | Copia de archivos             | **copy c:\test\test.txt c:\windows\test.txt**  |
-| move              | mv                       | Mueve archivos                | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir             | mkdir                    | Crea un nuevo directorio      | **mkdir testdirectory**                            |
-| rmdir (o del)     | rm                       | Eliminar un archivo           | **del c:\test\test.txt**                         |
-| rmdir /S          | rm -r                    | Eliminar un Directorio        | **rm -r testdirectory**                            |
-| [CMD] /?          | man [CMD]                | Obtener ayuda para un comando | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Comando (Windows) | Comando (Mac OS / Linux) | Descripción                   | Ejemplo                                           |
+| ----------------- | ------------------------ | ----------------------------- | ------------------------------------------------- |
+| exit              | exit                     | Cierra la ventana             | **exit**                                          |
+| cd                | cd                       | Cambia el directorio          | **cd test**                                       |
+| cd                | pwd                      | Mostrar el directorio actual  | **cd** (Windows) o **pwd** (Mac OS / Linux)       |
+| dir               | ls                       | Lista directorios/archivos    | **dir**                                           |
+| copy              | cp                       | Copia de archivos             | **copy c:\test\test.txt c:\windows\test.txt** |
+| move              | mv                       | Mueve archivos                | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir             | mkdir                    | Crea un nuevo directorio      | **mkdir testdirectory**                           |
+| rmdir (o del)     | rm                       | Eliminar un archivo           | **del c:\test\test.txt**                        |
+| rmdir /S          | rm -r                    | Eliminar un Directorio        | **rm -r testdirectory**                           |
+| [CMD] /?          | man [CMD]                | Obtener ayuda para un comando | **cd /?** (Windows) o **man cd** (Mac OS / Linux) |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Estos son solo algunos de los comandos que tu puedes ejecutar en tu línea de comando o consola, pero no usarás ninguno más por hoy.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Si eres curios@, [ss64.com](http://ss64.com) contiene una referencia completa de comandos para todos los sistemas operativos.
 
 ## ¿Listo?
 
-Let's dive into Python!
+¡Vamos a bucear en Python!
