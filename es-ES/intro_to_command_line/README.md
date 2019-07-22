@@ -172,13 +172,13 @@ Así que, ¿en qué estamos? Estaría bien saberlo. Veamos:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Nota: En consola tu puedes usar también 'ls' como en Linux y Mac OS X. <!--endsec-->
 
 * * *
 
 ### Cambiar el directorio actual
 
-Now, let's go to our Desktop directory:
+Ahora, vamos a nuestro directorio de escritorio:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -193,10 +193,10 @@ Now, let's go to our Desktop directory:
 
 {% filename %}command-line{% endfilename %}
 
-    $ cd Desktop
+    $ cd Escritorio
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Nota que el nombre del directorio "Escritorio" puede ser traducido al lenguaje de tu cuenta de Linux. Si ese es el caso, tu necesitarás reemplazar `Escritorio` con la traducción del nombre; por ejemplo, `Schreibtisch` para el alemán.
 
 <!--endsec-->
 
@@ -204,19 +204,18 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 {% filename %}command-line{% endfilename %}
 
-    > cd Desktop
+    > cd Escritorio
     
 
 <!--endsec-->
 
-Check if it's really changed:
+Verifica si está cambiado actualmente:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
 {% filename %}command-line{% endfilename %}
 
-    $ pwd
-    /Users/olasitarska/Desktop
+    $ pwd /Users/olasitarska/Desktop
     
 
 <!--endsec-->
@@ -225,15 +224,14 @@ Check if it's really changed:
 
 {% filename %}command-line{% endfilename %}
 
-    > cd
-    C:\Users\olasitarska\Desktop
+    > cd C:\Users\olasitarska\Desktop
     
 
 <!--endsec-->
 
-Here it is!
+¡Aquí está!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO tip: si tu escribes `cd D` y luego presionas `tab` en tu teclado, la línea de comandos automáticamente llenará el resto de el nombre por el que puedes navegar. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
 
 * * *
 
