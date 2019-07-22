@@ -136,7 +136,7 @@ Kóòdù rẹ ti wà lórí GitHub ní báyìí. Lọ síbẹ̀ kí o ṣàyẹ�
 
 ## Ṣíṣe ètò ààyè wa lórí PythonAnywhere
 
-Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
+Padà sí [Pánẹ́ẹ̀lì ìdarí PythonAnywhere](https://www.pythonanywhere.com/) pàtàkì náà nípasẹ̀ títẹ orí àmì náà, kí o sì yan àṣàyàn láti bẹ̀rẹ̀ console "Bash" kan – ìyẹn ni ẹ̀yà PythonAnywhere ti ìlà ìpàṣẹ kan, gẹ́gẹ́ bíi èyí tó wà lórí kọ̀mpútà rẹ.
 
 ![Abala 'New Console' náà lórí atọ́kùn ayélujára PythonAnywhere, pẹ̀lú bọ́tìnnì kan fún 'bash'](images/pythonanywhere_bash_console.png)
 
