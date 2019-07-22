@@ -117,21 +117,21 @@ Sería bueno saber dónde estamos ahora, ¿Correcto? Veamos. Escribe éste coman
     C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Nota: 'cd' es para cambiar de directorio (change directory). Con la consola tu puedes usar pwd solo con Linux o Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Probablemente veremos algo similar en tu computador. Una vez que abres la consola o la línea de comandos, usualmente inicias en tu directorio principal.
 
 * * *
 
 ### Aprende más sobre un comando
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+¡Muchos comandos pueden escribirse en el prompt que tiene construído una ayuda que puedes leer! Por ejemplo, aprende más acerca de el comando del directorio actual:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X y Linux tienen un comando `man`, el cuál te da una ayuda en comandos. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
 
 <!--endsec-->
 
