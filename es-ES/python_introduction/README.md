@@ -785,7 +785,7 @@ y ejecuta:
 
 ¿Ves qué sucedió allí? `elif` te deja añadir condiciones adicionales que se ejecutan si las condiciones previas fallan.
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+Tú puedes añadir tantas sentencias `elif` como quieras, luego de tu sentencia inicial `if`. Por ejemplo:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -805,7 +805,7 @@ else:
     print("Me duelen las orejas! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Python corre a través de cada prueba secuencialmente e imprime:
 
 {% filename %}command-line{% endfilename %}
 
@@ -815,9 +815,9 @@ Python runs through each test in sequence and prints:
 
 ## Comentarios
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+Los comentarios son líneas que comienzan con `#`. Tú puedes escribir lo que quieras luego de el `#` y Python lo ignorará. Los comentarios pueden hacer que el código sea más fácil de entender para otras personas.
 
-Let's see how that looks:
+Veamos cómo luce:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -828,11 +828,11 @@ if volume < 20 or volume > 80:
     print("Mucho mejor!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+Tú no necesitas escribir un comentario para cada línea de código, pero ellos son útiles para explicar qué está haciendo el código, o proveer un resumen cuando se está haciendo algo complejo.
 
 ### Resumen
 
-In the last few exercises you learned about:
+En los últimos ejercicios tú aprendiste acerca de:
 
 - **Comparar cosas** - en Python puedes comparar cosas haciendo uso de `>`, `>=`, `==`, `<=`, `<` y de los operatores `and` y `or`
 - **Boolean** - un tipo de objeto que sólo puede tener uno de dos valores: `True` o `False`
@@ -840,7 +840,7 @@ In the last few exercises you learned about:
 - **if... elif... else** - sentencias que te permiten ejecutar código sólo cuando se cumplen ciertas condiciones.
 - **comentarios** - líneas que Python no ejecutará que permiten documentar el código
 
-Time for the last part of this chapter!
+¡Es tiempo para leer la última parte de éste capítulo!
 
 ## ¡Tus propias funciones!
 
