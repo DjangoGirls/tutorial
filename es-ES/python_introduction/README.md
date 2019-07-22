@@ -846,9 +846,9 @@ En los últimos ejercicios tú aprendiste acerca de:
 
 > Para lectores en casa: este capítulo está cubierto en el video [Bases de Python: Funciones](https://www.youtube.com/watch?v=5owr-6suOl0).
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+¿Recuerdas las funciones como `len()` que puedes ejecutar en Python? Bien, buenas noticias - ¡tú aprenderás cómo escribir tus propias funciones ahora!
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+Una función es una secuencia de instrucciones que Python debería ejecutar. Cada función en Python inicia con la palabra clave `def`, el nombre es dado, y puede tener algunos parámetros. Veamos. Reemplaza el código en **python_intro.py** con lo siguiente:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -860,11 +860,11 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+Okay, ¡nuestra primera función está lista!
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+Tú puedes preguntar por qué hemos escrito el nombre de la función en la parte inferior de el archivo. Esto es porque Python lee el archivo y lo ejecuta de arriba a bajo. Así en orden para usar nuestra función, tenemos que re-escribirlo en la parte inferior.
 
-Let's run this now and see what happens:
+Ejecuta ésto ahora y ve qué sucede:
 
 {% filename %}command-line{% endfilename %}
 
