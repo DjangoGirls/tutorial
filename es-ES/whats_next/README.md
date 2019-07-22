@@ -29,7 +29,7 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
     - [El curso de Python en Codeacademy](https://www.codecademy.com/learn/learn-python)
     - [Curso de Python de Google](https://developers.google.com/edu/python/)
     - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – Los primeros ejercicios son gratuitos
-    - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
+    - [Nuevos tutoriales de Coder](http://newcoder.io/tutorials/) - esta es una variedad de ejemplos prácticos de cómo puedes usar Python
     - [edX](https://www.edx.org/course?search_query=python) – puedes auditar la mayoría de los cursos gratis, pero si desea un certificado o créditos para una calificación de educación superior, entonces eso costará dinero
     - [La especialización Python en Coursera](https://www.coursera.org/specializations/python) – algunas videoconferencias pueden ser auditadas gratuitamente y puedes ganar un certificado de Coursera tomando estos cursos
     - [Python for Everybody](https://www.py4e.com/) - una versión libre y abierta de la especialización de Python en Coursera
