@@ -85,17 +85,17 @@ Y luego presiona `enter`. Esto será nuestro resultado:
     $ whoami olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Como puedes ver, el computador ha solo impreso tu nombre de usuario. Ordenado, ¿ah? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Intenta escribir cada comando; no copies y pegues. ¡De ésta manera lo recordarás!
 
 ## Fundamentos
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Cada sistema operativo tiene un poco diferente la configuración de los comandos para la consola, así que asegurate de seguir las instrucciones para tu sistema operativo. Intentemos esto, ¿Verdad?
 
 ### Directorio actual
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Sería bueno saber dónde estamos ahora, ¿Correcto? Veamos. Escribe éste comando y presiona `enter`:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
@@ -105,7 +105,7 @@ It'd be nice to know where are we now, right? Let's see. Type this command and h
     /Users/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Nota: 'pwd' es para imprimir el directorio de trabajo (print working directory).
 
 <!--endsec-->
 
