@@ -727,9 +727,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-¿Notas cómo estamos indentando la siguiente línea de código con 4 espacios? Nosotros necesitamos hacer ésto para que Python comprenda que el código se ejecuta si el resultado es verdadero. Tú puedes hacer un espacio, pero prácticamente todos los programadores en Python hacen 4 espacios para hacer el código más legible. Un simple tabulador también contará como 4 espacios tan largos como tu editor de texto esté configurado. Cuando tú haces tu elección, ¡no la cambies! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+¿Notas cómo estamos indentando la siguiente línea de código con 4 espacios? Nosotros necesitamos hacer ésto para que Python comprenda que el código se ejecuta si el resultado es verdadero. Tú puedes hacer un espacio, pero prácticamente todos los programadores en Python hacen 4 espacios para hacer el código más legible. Un simple tabulador también contará como 4 espacios tan largos como tu editor de texto esté configurado. Cuando tú haces tu elección, ¡no la cambies! Si tu ya identaste con 4 espacios, sigue haciendo futuras identaciones con 4 espacios también, de otra forma, tú puedes correr con problemas.
 
-Save it and give it another run:
+Guárdalo y ejecútalo de nuevo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -738,11 +738,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+Nota: Recuerda que en Windows, 'python3' no es reconocido como un comando. Desde ahora, reemplaza 'python3' con 'python' para ejecutar el archivo.
 
 ### ¿Qué pasa si una condición no es verdadera?
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+En previos ejemplos, el código fue ejecutado solamente cuando las condiciones eran Verdaderas. Pero Python también tiene sentencias `elif` y `else`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -753,7 +753,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+Cuando ésto se ejecuta, imprimirá:
 
 {% filename %}command-line{% endfilename %}
 
@@ -761,7 +761,7 @@ When this is run it will print out:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+Si 2 era mayor que el número 5, entonces el segundo comando sería ejecutado. Veamos cómo `elif` funciona:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -775,7 +775,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+y ejecuta:
 
 {% filename %}command-line{% endfilename %}
 
@@ -783,7 +783,7 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+¿Ves qué sucedió allí? `elif` te deja añadir condiciones adicionales que se ejecutan si las condiciones previas fallan.
 
 You can add as many `elif` statements as you like after your initial `if` statement. For example:
 
