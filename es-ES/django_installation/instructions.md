@@ -210,7 +210,7 @@ data-collapse=true ces-->
 > 
 > {% filename %}command-line{% endfilename %}
 > 
->     C:\Usuarios\Nombre\djangogirls> python -m pip install -r requerimientos.txt
+>     C:\Users\Name\djangogirls> python -m pip install -r requirements.txt
 >     
 
 <!--endsec-->
