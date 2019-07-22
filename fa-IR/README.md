@@ -26,7 +26,7 @@
 
 کمابیش شبیه این خواهد شد:
 
-![عدد 0.1](images/application.png)
+![تصویر 0.1](images/application.png)
 
 > اگر خودتان به تنهایی با این آموزش کار می‌کنید و مربی ندارید تا به شما کمک کند، در صورت بروز هر مشکلی ما یک سیستم چت برای شما داریم: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). ما از مربی‌ها و شرکت کنندگان قبلی خود خواسته ایم تا هر چند وقت یکبار اینجا باشند و به بقیه کمک کنند! از پرسیدن سوال پرسیدن در آنجا نترسید!
 
@@ -48,4 +48,4 @@
 
 https://crowdin.com/project/django-girls-tutorial
 
-اگر زبان شما در [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new)ذکر نشده باشد، لطفا <1> یک مسئله جدید را باز کنید </ 1> به زبان ما اطلاع دهید تا ما بتوانیم آن را اضافه کنیم.
+اگر زبان شما در [crowdin](https://crowdin.com/) لیست نشده است، [یک issue جدید](https://github.com/DjangoGirls/tutorial/issues/new) باز کنید و در مورد این زبان به ما اطلاع دهید تا ما بتوانیم آن را اضافه کنیم.
