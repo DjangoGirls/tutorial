@@ -18,7 +18,7 @@ La ventana, que generalmente es llamada **línea de comandos** ó **interfaz de 
 
 Para empezar con algunos experimentos necesitarás abrir nuestra interfaz de línea de comandos en primer lugar.
 
-{% include "/intro_to_command_line/open_instructions.md" %}
+{% incluye "/intro_to_command_line/open_instructions.md" %}
 
 ## Símbolo del Sistema (Prompt)
 
@@ -52,13 +52,13 @@ Cada comando vendrá precedido por un `$` o un `>` y un espacio, pero no debes e
 
 > Solo una pequeña anotación: en tu caso puede que haya algo como `C:\Users\ola>` o `Olas-MacBook-Air:~ ola$` antes del símbolo de introducción, lo cual es 100% NORMAL.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+La parte superior incluye el `$` o el `>` que es llamado en la *línea de comandos*, o mas corto *prompt*. Introduce algo allí.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+En el tutorial, cuando queramos introducir un comando, incluye el `$` o `>`, y ocasionalmente más a la izquierda. Ignora la parte izquierda solamente escribiendo el comando, el cuál inicia después de el prompt.
 
 ## Tu primer comando (¡BIEN!)
 
-Let's start by typing this command:
+Iniciemos por teclear este comando:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -78,7 +78,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Y luego presiona `enter`. Esto será nuestro resultado:
 
 {% filename %}command-line{% endfilename %}
 
