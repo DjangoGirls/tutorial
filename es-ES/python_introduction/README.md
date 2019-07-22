@@ -873,13 +873,13 @@ Ejecuta ésto ahora y ve qué sucede:
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+Nota: si ésto no funciona, ¡Tranquil@! La salida te ayudará a entender por qué:
 
 - Si te sale `NameError`, probablemente significa que escribiste algo mal, así que deberias comprobar si utilizaste el mismo nombre para crear la función con `def hi():` y al llamarla con `hi()`.
 - Si te sale un `IndentationError`, comprueba que las líneas del `print` tienen el mismo espacio en blanco al comienzo de línea: python requiere que todo el código dentro de la función esté perfectamente alineado.
 - Si no hay ninguna salida, comprueba que el último `hi()` *no esté* identado - si lo está, esa línea también sera parte de la función, y nunca se ejecutará.
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+Construyamos nuestra primera función con parámetros. Cambiarémos el ejemplo anterior - una función que dice 'hola' para la persona que lo ejecuta - con un nombre:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -887,7 +887,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+Como puedes ver, ahora le dimos a nuestra función un parámetro que llamamos `nombre`:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -903,7 +903,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+Recuerda: La función `print` está indentada con 4 espacios en la sentencia `if`. Esto es porque la función se ejecuta cuando la condición es conocida. Veamos cómo funciona ahora:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -914,7 +914,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Oops, un error. Por suerte, Python nos da un útil y agradable mensaje de error. Este nos dice que la función `hi()` (que definimos) tiene un argumento requerido (llamado `nombre`) y que olvidamos pasarlo cuando llamamos a la función. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
