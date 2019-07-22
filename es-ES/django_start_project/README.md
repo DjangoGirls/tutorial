@@ -104,7 +104,7 @@ Cuando `DEBUG` es `True` y `ALLOWED_HOST` esta vacìo, el host es validado contr
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-ALLOWED_HOSTS = ['127.0.0.1', ' . pythonanywhere.com']
+ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
 > **Nota**: si estas usando un Chromebook, añade esta linea al final del archivo settings.py: `MESSAGE_STORAGE =
