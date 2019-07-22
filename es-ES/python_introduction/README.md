@@ -727,7 +727,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+¿Notas cómo estamos indentando la siguiente línea de código con 4 espacios? Nosotros necesitamos hacer ésto para que Python comprenda que el código se ejecuta si el resultado es verdadero. Tú puedes hacer un espacio, pero prácticamente todos los programadores en Python hacen 4 espacios para hacer el código más legible. Un simple tabulador también contará como 4 espacios tan largos como tu editor de texto esté configurado. Cuando tú haces tu elección, ¡no la cambies! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Save it and give it another run:
 
