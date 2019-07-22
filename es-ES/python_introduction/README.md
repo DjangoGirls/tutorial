@@ -1057,13 +1057,13 @@ El cuál imprimirá:
 
 `range` es una función que crea una lista de números en serie (estos números son proporcionados por ti como parámetros).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Nota que el segundo de estos números no está incluido en la lista que regresa Python (es decir, `range(1, 6)` cuenta desde 1 a 5, pero no incluye el número 6). Esto es porque "range" está medio-abierto, y por eso se incluye el primer valor, pero no el último.
 
 ## Resumen
 
-That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
+Eso es todo. **¡Tú rockeas totalmente!** Esto fue un capítulo difícil, así que deberías sentirte orgullos@ de ti. ¡Estamos definitivamente encantados de que hayas llegado tan lejos!
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+Para un tutorial oficial y completo de python visita https://docs.python.org/3/tutorial/. Este te dará un estudio completo de éste lenguaje. Gracias :)
 
 You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
 
