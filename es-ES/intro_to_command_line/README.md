@@ -231,13 +231,13 @@ Verifica si está cambiado actualmente:
 
 ¡Aquí está!
 
-> PRO tip: si tu escribes `cd D` y luego presionas `tab` en tu teclado, la línea de comandos automáticamente llenará el resto de el nombre por el que puedes navegar. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> PRO tip: si tu escribes `cd D` y luego presionas `tab` en tu teclado, la línea de comandos automáticamente llenará el resto de el nombre por el que puedes navegar. Si hay mas que una carpeta iniciando con "D", presiona la tecla `tab` dos veces para obtener una lista de opciones.
 
 * * *
 
 ### Crear un directorio
 
-How about creating a practice directory on your desktop? You can do it this way:
+¿Cómo crear un práctico directorio para tu escritorio? Tú puedes hacerlo de esta manera:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -257,9 +257,9 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Éste pequeño comando creará una carpeta con el nombre `práctica` en tu computador. ¡Tú puedes verificar si está allí en tu Escritorio o ejecutando uno de los siguientes comandos `ls` o `dir`! Intentalo. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> PRO tip: Si tu no quieres escribir el mismo comando una y otra vez, intenta presionando la `flecha arriba` y `flecha abajo` en tu teclado para regresar a través de los comandos recientemente usados.
 
 * * *
 
