@@ -126,7 +126,7 @@ Nígbà tí o bá ti kóòdù rẹ sí GitHub, ìwọ yíò rí ìbéèrè fún 
 
 Kóòdù rẹ ti wà lórí GitHub ní báyìí. Lọ síbẹ̀ kí o ṣàyẹ̀wò rẹ̀! Ìwọ yíò ri pé ó wà ní ibi tó dáa – [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) náà, àti ọ̀pọ̀lọpọ̀ àwọn iṣẹ́ ńláńlá mìíràn tó jẹ́ ètò orísun gbangba máa n pèsè kóòdù wọn sórí GitHub. :)
 
-# Setting up our blog on PythonAnywhere
+# Ṣíṣe àgbékalẹ̀ blog wa sórí PythonAnywhere
 
 ## Forúkọ sílẹ̀ fún account PythonAnywhere kan
 
@@ -134,7 +134,7 @@ Kóòdù rẹ ti wà lórí GitHub ní báyìí. Lọ síbẹ̀ kí o ṣàyẹ�
 
 {% include "/deploy/signup_pythonanywhere.md" %}
 
-## Configuring our site on PythonAnywhere
+## Ṣíṣe ètò ààyè wa lórí PythonAnywhere
 
 Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
