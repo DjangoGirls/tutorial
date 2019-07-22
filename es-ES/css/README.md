@@ -208,9 +208,8 @@ Ahora añadiremos bloques de declaración a varios selectores. Los selectores qu
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-css
 .page-header {
-    background-color: #ff9400;
+    background-color: #C25100;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -230,7 +229,6 @@ h1, h2, h3, h4 {
 }
 
 .date {
-    float: right;
     color: #828282;
 }
 
@@ -253,7 +251,7 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h1 a, .post h1 a:visited {
+.post h2 a, .post h2 a:visited {
     color: #000000;
 }
 ```
