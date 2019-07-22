@@ -1000,9 +1000,9 @@ Queremos recibir a todos ellos con sus nombres. Tenemos la función `hola` para 
 for name in girls:
 ```
 
-The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
+La sentencia `for` se comporta parecido a una sentencia `if`; ambos códigos necesitan ser indentados por 4 espacios.
 
-Here is the full code that will be in the file:
+Aquí está completo el código que estará en el archivo:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1016,7 +1016,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+Y cuando lo ejecutemos:
 
 {% filename %}command-line{% endfilename %}
 
@@ -1033,7 +1033,7 @@ And when we run it:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Como puedes ver, todo lo que coloques dentro de una sentencia `for` con una indentación, será repetida para cada elemento de la lista `girls`.
 
 You can also use `for` on numbers using the `range` function:
 
