@@ -2,7 +2,7 @@
 
 > قسمت‌هایی از این بخش بر اساس دوره آموزشی Geek Girls Carrots بنا شده است (https://github.com/ggcarrots/django-carrots).
 > 
-> قسمت‌هایی از این بخش هم بر اساس دوره آموزشی [django-marcador tutorial](http://django-marcador.keimlink.de/) تحت مجوز بین المللی Creative Commons Attribution-ShareAlike 4.0 International License تهیه شده است. امتیاز دوره آموزشی django-marcador متعلق به Markus Zapke-Gründemann و همکاران است.
+> قسمت‌هایی هم بر اساس دوره آموزشی [django-marcador tutorial](http://django-marcador.keimlink.de/) تحت مجوز بین المللی Creative Commons Attribution-ShareAlike 4.0 تهیه شده است. امتیاز دوره آموزشی django-marcador متعلق به Markus Zapke-Gründemann و همکاران است.
 
 قصد داریم یک وبلاگ کوچک بسازیم!
 
@@ -45,13 +45,13 @@
 `django-admin.py` دستوری است که پوشه‌ها و فایل‌ها را برای شما می‌سازد. الان باید ساختار پوشه‌ها و فایل‌های شما شبیه به این باشد:
 
     djangogirls
-    ┤───manage.py
-    ┤───mysite
+    ├───manage.py
+    ├───mysite
     │        settings.py
     │        urls.py
     │        wsgi.py
     │        __init__.py
-    ┘───requirements.txt
+    └───requirements.txt
     
 
 > **نکته**: در ساختار پوشه‌ها، شما پوشه `venv` را هم که قبلاً ساخته ایم خواهید دید.
@@ -90,7 +90,7 @@ TIME_ZONE = 'Asia/Tehran'
 LANGUAGE_CODE = 'de-ch'
 ```
 
-علاوه بر این نیاز داریم تا آدرس فایل‌های ثابت را نیز اضافه کنیم. (بعداً به طور کامل در این دوره آموزشی به فایل‌های ثابت و CSS خواهیم پرداخت.) به *انتهای* فایل بروید و دقیقاً زیر ورودی `STATIC_URL`، یک خط جدید با عنوان `STATIC_ROOT` اضافه کنید:
+علاوه بر این نیاز داریم تا آدرس فایل‌های ثابت یا ایستا را نیز اضافه کنیم. (بعداً به طور کامل در این دوره آموزشی به فایل‌های ثابت و CSS خواهیم پرداخت.) به *انتهای* فایل بروید و دقیقاً زیر ورودی `STATIC_URL`، یک خط جدید با عنوان `STATIC_ROOT` اضافه کنید:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-وقتی در این فایل `DEBUG` برابر با `True`باشد و `ALLOWED_HOSTS` خالی باشد، مقادیر هاست `['localhost', '127.0.0.1', '[::1]']` خواهد بود. این هاست در هنگام انتشار وبسایت روی اینترنت، با هاست PyhtonAnywhere هماهنگ نخواهد بود پس تنظیمات را به این شکل تغییر می‌دهیم:
+وقتی در این فایل `DEBUG` برابر با `True`باشد و `ALLOWED_HOSTS` خالی باشد، مقادیر هاست `['localhost', '127.0.0.1', '[::1]']` خواهد بود. این هاست در هنگام انتشار وبسایت روی اینترنت، با هاست PythonAnywhere هماهنگ نخواهد بود پس تنظیمات را به این شکل تغییر می‌دهیم:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
