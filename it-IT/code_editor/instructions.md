@@ -2,35 +2,35 @@ Ci sono moltissimi editor diversi e la scelta dipende in gran parte dalle propri
 
 Qui di seguito te ne consigliamo alcuni, ma puoi chiedere al tuo coach quali editor preferisce - in modo che possa aiutarti più facilmente.
 
-## Visual Studio Code
+## Codice Studio Visual
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code è un editor di codice sorgente sviluppato da Microsoft per Windows, Linux e macOS. Include il supporto per il debug, il controllo Git incorporato, l'evidenziazione della sintassi, il completamento intelligente del codice, gli snippet e il refactoring del codice.
 
 [Scaricalo qui](https://code.visualstudio.com/download)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit è un editor open-source e gratuito, disponibile per tutti i sistemi operativi.
 
 [Scaricalo qui](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text è tra gli editor più utilizzati. Ha un periodo di prova gratuito ed è disponibile per tutti i sistemi operativi.
 
 [Scaricalo qui](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom è un altro editor molto diffuso. È gratuito, open-source e disponibile per Windows, OS X e Linux. Atom è sviluppato da [GitHub](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Scaricalo qui](https://atom.io/)
 
-## Why are we installing a code editor?
+## Perché installare un editor di codice?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Forse ti stai chiedendo per quale motivo installiamo questo editor di codice, invece di usare un'applicazione come Word o Blocco Note.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La prima ragione è che il codice deve essere **testo semplice**, e programmi come Word e Textedit non producono questo tipo di testo, ma testo formattato (con font e formattazione), codificato in formati come l'[RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
 The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
