@@ -32,6 +32,6 @@ Forse ti stai chiedendo per quale motivo installiamo questo editor di codice, in
 
 La prima ragione è che il codice deve essere **testo semplice**, e programmi come Word e Textedit non producono questo tipo di testo, ma testo formattato (con font e formattazione), codificato in formati come l'[RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+La seconda ragione è che gli editor sono specializzati nel modificare codice, e quindi mettono a disposizione utili funzionalità come l'evidenziazione della sintassi con colori legati al suo significato, o la chiusura automatica di parentesi e virgolette.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Vedremo tutto ciò più avanti. Presto, il tuo fidato editor di testo diventerà uno dei tuoi strumenti preferiti. :)
