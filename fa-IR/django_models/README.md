@@ -76,24 +76,24 @@
 خواهید دید که یک پوشه جدید به نام `blog` ساخته شده و شامل تعدادی فایل است. پوشه‌ها و فایل‌ها در پروژه ما باید شبیه به این باشد:
 
     djangogirls
-    ┤── blog
-    │   ┤── __init__.py
-    │   ┤── admin.py
-    │   ┤── apps.py
-    │   ┤── migrations
-    │   │   ┘── __init__.py
-    │   ┤── models.py
-    │   ┤── tests.py
-    │   ┤── urls.py
-    │   ┘── views.py
-    ┤── db.sqlite3
-    ┤── manage.py
-    ┤── mysite
-    │   ┤── __init__.py
-    │   ┤── settings.py
-    │   ┤── urls.py
-    │   ┘── wsgi.py
-    ┘── requirements.txt
+    ├── blog
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
+    |   ├── urls.py
+    │   └── views.py
+    ├── db.sqlite3
+    ├── manage.py
+    ├── mysite
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
+    └── requirements.txt
     
 
 بعد از ساختن این برنامه، باید به جنگو بگوییم تا از آن استفاده کند. این کار را در فایل `mysite/settings.py` انجام می‌دهیم -- این فایل را در ویرایشگر کد باز کنید. باید بخش `INSTALLED_APPS` را پیدا کنیم و یک خط شامل `'blog',` را دقیقاً قبل از علامت `]` اضافه کنیم. پس در نهایت شبیه این خواهد بود:
@@ -114,9 +114,9 @@ INSTALLED_APPS = [
 
 ### ساختن مدل برای پست وبلاگ
 
-در فایل `blog/models.py` ما تمام اشیائی را که به آن `مدل Model` می‌گوییم تعریف می‌کنیم. اینجا فضایی است که قالب پست‌های وبلاگی را تعریف می‌کنیم.
+در فایل `blog/models.py` ما تمام اشیائی را که به آن `مدل Model` می‌گوییم تعریف می‌کنیم. اینجا فضایی است که پست‌های وبلاگی را تعریف می‌کنیم.
 
-بیاید فایل `blog/models.py` را در کد ادیتور باز کنیم، تمام محتویات ان را پاک کینم و کد‌های مانند این را در ان بنویسی:
+فایل `blog/models.py` را در ویرایشگر کد باز کنید، تمام محتویات آن را پاک کیند و کد‌های زیر را در آن بنویسید:
 
 {% filename %}blog/models.py{% endfilename %}
 
