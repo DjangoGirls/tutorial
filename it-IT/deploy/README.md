@@ -49,9 +49,9 @@ E salvalo come `.gitignore` all'interno della cartella "djangogirls".
 
 > **Nota** Il punto all'inizio del nome del file è importante! Se hai difficoltá a crearlo (per esempio, Mac non piacere creare file che iniziano con un punto attraverso il Finder), usa la funzione "salva con nome" nell'editor, é a prova di proiettile. E assicurati di non aggiungere `.txt`, `.py`, o qualsiasi altra estensione al nome del file -- sarà riconosciuto da Git solo se il nome è `.gitignore`.
 > 
-> **Nota** Uno dei file che hai specificato nel tuo file `.ginignore` è `db.sqlite3`. Questo file è il tuo database locale, in cui sono archiviati i post e gli utenti. Seguiremo le pratiche standard di programmazione web, ovvero useremo due diversi database: uno per il sito con cui effettuarai i test locali, e uno per il sito online su PythonAnywhere. Come database PythonAnywhere potresti usare SQLite, ma ne userai più spesso uno che si chiama MySQL, che può gestire molti più vsitatori di SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. Dovresti pensare al database locale come un parco giochi dove si possono provare cose diverse e senza avere paura di eliminare i tuoi messaggi reali dal tuo blog.
+> **Nota** Uno dei file che hai specificato nel tuo file `.ginignore` è `db.sqlite3`. Questo file è il tuo database locale, in cui sono archiviati i post e gli utenti. Seguiremo le pratiche standard di programmazione web, ovvero useremo due diversi database: uno per il sito con cui effettuarai i test locali, e uno per il sito online su PythonAnywhere. Come database PythonAnywhere potresti usare SQLite, ma ne userai più spesso uno che si chiama MySQL, che può gestire molti più vsitatori di SQLite. In entrambi i casi, ignorando il database SQLite per la copia di GitHub, vuol dire che tutti i post che hai creato finora saranno solo disponibili localmente, ma li aggiungeremo nuovamente in produzione. Dovresti pensare al database locale come un parco giochi dove si possono provare cose diverse e senza avere paura di eliminare i tuoi messaggi reali dal tuo blog.
 
-È una buona idea usare il comando `git status` prima di `git add` oppure ogni volta che non sei sicuro di cosa sia cambiato. This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. L'output dovrebbe essere simile a quanto segue:
+È una buona idea usare il comando `git status` prima di `git add` oppure ogni volta che non sei sicuro di cosa sia cambiato. Questo aiuterà ad evitare eventuali brutte sorprese, come file sbagliati che vengono aggiunti o a cui viene fatto il commit. Il comando `git status` restituisce informazioni riguardanti qualsiasi file non tracciato/modificato/in staging, lo stato del branch e molto altro. L'output dovrebbe essere simile a quanto segue:
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,7 +99,7 @@ On the next screen, you'll be shown your repo's clone URL, which you will use in
 
 ![](images/github_get_repo_url_screenshot.png)
 
-Now we need to hook up the Git repository on your computer to the one up on GitHub.
+Ora dobbiamo collegare il repository Git sul tuo computer a quello su GitHub.
 
 Digita quanto segue sulla tua console (sostituisci `<your-github-username>` con il nome utente che hai inserito quando hai creato l'account GitHub, ma senza le parentesi angolari -- l'URL dovrebbe coincidere con L'URL clone che hai appena visto):
 
@@ -109,7 +109,7 @@ Digita quanto segue sulla tua console (sostituisci `<your-github-username>` con 
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+Quando si spinge su GitHub, ti verrà chiesto il tuo nome utente e password GitHub (o nella finestra di comando o in una finestra pop-up), e dopo aver inserito le credenziali si dovrebbe vedere qualcosa di simile a questo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -138,7 +138,7 @@ Adesso Il tuo codice è su GitHub. Guarda! Lo troverai in buona compagnia - [Dja
 
 Torna alla [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) principale cliccando sul logo e scegli l'opzione per avviare una console "Bash” - questa è la versione PythonAnywhere di una riga di comando, proprio come quella sul tuo computer.
 
-![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
+![La sezione 'Nuova Console' sull'interfaccia web PythonAnywhere, con un pulsante per 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Nota** PythonAnywhere si basa su Linux, quindi se sei su Windows, la console apparirà un po' diversa da quella del tuo computer.
 
@@ -189,32 +189,32 @@ Ora, se vuoi, puoi anche dare un'occhiata al tuo codice su PythonAnywhere utiliz
     tests.py views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+Puoi anche andare alla pagina "File" e navigare in uso del browser di file integrato di PythonAnywhere. (Dalla pagina Console, puoi raggiungere altre pagine PythonAnywhere dal pulsante menu nell'angolo in alto a destra. Una volta che sei su una delle pagine, ci sono link agli altri vicini all'alto.)
 
 ## Ora sei online!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+Il tuo sito dovrebbe ora essere in diretta su Internet pubblico! Clicca sulla pagina PythonAnywhere "Web" per ottenere un link. Puoi condividerlo con chiunque tu voglia :)
 
-> **Nota** Questo è un tutorial per principianti, e nel distribuire questo sito abbiamo preso alcune scorciatoie che non sono ideali dal punto di vista della sicurezza. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> **Nota** Questo è un tutorial per principianti, e nel distribuire questo sito abbiamo preso alcune scorciatoie che non sono ideali dal punto di vista della sicurezza. Se e quando decidi di costruire su questo progetto, o avviare un nuovo progetto, dovresti rivedere la lista di controllo [Django deployment](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) per alcuni consigli sulla sicurezza del tuo sito.
 
 ## Suggerimenti per il debug
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Se si osserva un errore durante l'esecuzione dello script `pa_autoconfigure_django.py`, ecco alcune cause comuni:
 
-- Forgetting to create your PythonAnywhere API token.
-- Making a mistake in your GitHub URL
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- Dimenticare di creare il tuo token API PythonAnywhere.
+- Errore nel tuo URL GitHub
+- Se vedi un errore dicendo * "Non è stato possibile trovare le impostazioni.py"*, probabilmente perché non è riuscito ad aggiungere tutti i file a Git e/o non li hai spinti fino a GitHub con successo. Dai un altro sguardo alla sezione Git qui sopra
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Se vedi un errore quando provi a visitare il tuo sito, il primo posto dove cercare qualche info per il debugging è nel tuo **error log**. Troverai un link nella [ scheda Web](https://www.pythonanywhere.com/web_app_setup/) di PythonAnywhere. Vedi se ci sono messaggi di errore lì; i più recenti sono alla fine.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+Ci sono alcuni [consigli generali per il debugging sulla wiki di PythonAnywhere](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
 E ricorda, il tuo coach è qui per aiutarti!
 
-# Check out your site!
+# Scopri il tuo Elenco di Vita!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+La pagina predefinita per il tuo sito dovrebbe dire "Welcome to Django", esattamente come sul tuo Pc locale. Prova ad aggiungere `/admin/` alla fine della URL, e verrai portata al sito di amministrazione. Accedi con il nome utente e la password, e vedrai che puoi aggiungere nuovi post sul server -- ricorda che i post del database di test locale non sono stati inviati al tuo blog live.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Una volta che hai creato un paio di post, puoi tornare indietro alla copia locale (non PythonAnywhere). Da qui in poi, lavori sulla tua copia locale per fare le modifiche. Si tratta di un flusso di lavoro comune nello sviluppo Web (apportare modifiche localmente, inviare quei cambiamenti su GitHub, aggiornare le tue modifiche sul server Web. Questo consente di lavorare e fare esperimenti senza rompere il tuo sito Web. Bello, vero?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
+Dà a te stessa un' *ENORME* pacca sulla schiena! Il deploy dei server è tra le parti più complicate dello sviluppo web e di solito le persone ci impiegano svariati giorni prima di farli funzionare. Ma hai pubblicato il tuo sito su Internet senza sforzo!
