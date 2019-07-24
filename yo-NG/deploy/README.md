@@ -167,9 +167,9 @@ As you watch that running, you'll be able to see what it's doing:
 - Ṣíṣe àgbékalẹ̀ àwọn fáìlì tó wà lójú kan rẹ (a ó kẹ́kọ̀ọ́ nípa àwọn wọ̀nyí tó bá yá)
 - Àti ṣíṣe ètò PythonAnywhere láti pèsè ètò ayélujára rẹ nípasẹ̀ API rẹ̀
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+Lórí PythonAnywhere, gbogbo àwọn ìgbésẹ̀ wọ̀nyí máa jẹ́ ṣíṣe fúnra wọn, ṣùgbọ́n wọ́n jẹ́ àwọn ìgbésẹ̀ kannáà tí o ní láti gbà kọjá pẹ̀lú èyíkéyìí olùpèsè server mìíràn.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere ti mú virtualenv rẹ ṣiṣẹ́ fún ẹ fúnra rẹ̀, nítorí náà gbogbo ohun tí o nílò láti ṣe ni:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -178,7 +178,7 @@ The main thing to notice right now is that your database on PythonAnywhere is ac
 
 Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
 
-Now, if you like, you can also take a look at your code on PythonAnywhere using `ls`:
+Ní báyìí, tí o bá fẹ́, o lè tún ṣàyẹ̀wò kóòdù rẹ lórí PythonAnywhere pẹ̀lú lílo `ls`:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
