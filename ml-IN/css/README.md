@@ -1,6 +1,6 @@
-# CSS – make it pretty!
+# CSS - നമ്മുക് അത് മനോഹരമാക്കാം!
 
-നമ്മുടെ ഭ്ലോഗ് ഇപ്പോഴും കാണാന്‍ വലിയ ഭംഗിയില്ല, അല്ലേ? അത് ഭംഗിയാക്കാന്‍ സമയമായി! അതിനു വേണ്ടി നമുക്കു CSS ഉപയോഗിക്കാം.
+നമ്മുടെ ബ്ലോഗ് ഇപ്പോഴും കാണാന്‍ വലിയ ഭംഗിയില്ല, അല്ലേ? അത് ഭംഗിയാക്കാന്‍ സമയമായി! അതിനു വേണ്ടി നമുക്കു CSS ഉപയോഗിക്കാം.
 
 ## എന്താണ് CSS?
 
@@ -45,7 +45,7 @@ Django already knows where to find the static files for the built-in "admin" app
     ├── blog
     │   ├── migrations
     │   ├── static
-    │   └── templates
+    │   └── templates
     └── mysite
     
 
