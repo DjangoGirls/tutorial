@@ -31,12 +31,12 @@
 - [New Coder tutorials](http://newcoder.io/tutorials/) – പൈത്തൺ എങ്ങനെ ഉപയോഗിക്കാം എന്നുള്ളതിന് ഒരു വെത്യസ്തമായ പാഠ്യഭാഗം 
 - [edX](https://www.edx.org/course?search_query=python) - ഇതിൽ മിക്ക കോഴ്സയം ഫ്രീ ആണ്. പക്ഷെ നിങ്ങൾക് സർട്ടിഫിക്കറ്റ് വേണമെന്നുണ്ടെകിൽ അതിനു പണം അടക്കേണ്ടി വരും 
 - [Coursera's Python specialization](https://www.coursera.org/specializations/python) – ചില പാഠഭാഗങ്ങൾ ഫ്രീ ആണ് ബാക്കി പൈസ കൊടുത്ത പഠിച്ചു കോഴ്സ്ഇറ സെര്ടിഫിക്കറ്റ് നേടാവുന്നതാണ് .
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [Python for Everybody](https://www.py4e.com/)- കോഴ്സ്ഇറയുടെ പൈത്തൺ ക്ലാസ്സിന്റെ ഒരു ഫ്രീ വേർഷൻ .
 
-#### Working with data
+#### ഡാറ്റയും ആയി വർക്ക് ചെയ്യാൻ 
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Codecademy's ടാറ്റ സയൻസ് കോഴ്സ് ](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) - ഇതിൽ മിക്ക കോഴ്സയം ഫ്രീ ആണ്. പക്ഷെ നിങ്ങൾക് സർട്ടിഫിക്കറ്റ് വേണമെന്നുണ്ടെകിൽ അതിനു പണം അടക്കേണ്ടി വരും 
+- [Dataquest](https://www.dataquest.io/) – ആദ്യത്തെ 30 മിഷൻ ഫ്രീ ആയിരിക്കും 
 
-We can't wait to see what you build next!
+നിങ്ങൾ എന്താണ് ഉണ്ടാക്കിയത് എന്ന് കാണാൻ ഞങ്ങൾ ജിജ്ഞാസാരാണ്
