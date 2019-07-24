@@ -12,25 +12,25 @@
 
 തീർച്ചയായും ! ഏതു ലാംഗ്വേജ് പഠിക്കാൻ ആണേലും *വളരെ അതികം * ഉറവിടങ്ങൾ ഉണ്ടാകും. ഇവിടെ വരുന്നതിനു മുമ്പും വന്നതിനു ശേഷവും നിങ്ങളുടെ താല്പര്യം എന്താണേലും ചുവടെ കുറച്ച സൗജന്യ ഉറവിടങ്ങൾ കൊടുക്കുന്നു.
 
-#### Django
+#### ജാങ്കോ (Django)
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
+- ഞങ്ങളുടെ മറ്റു ബുക്കുകൾ , [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [ജാങ്കോയുടെ ഒഫീഷ്യൽ ട്യൂട്ടോറിയൽ ](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [ജാങ്കോ വീഡിയോ പഠനം ](http://www.gettingstartedwithdjango.com/)
 
-#### HTML, CSS and JavaScript
+#### HTML, CSS and ജാവാസ്ക്രിപ്റ്റ് 
 
-- [Codecademy's web development course](https://www.codecademy.com/learn/paths/web-development)
-- [freeCodeCamp](https://www.freecodecamp.org/)
+- [കോഡെഅക്കഡമി വെബ് ഡെവലപ്മെന്റ് കോഴ്സ് .](https://www.codecademy.com/learn/paths/web-development)
+- [ഫ്രീ കോഡ് ക്യാമ്പ് ](https://www.freecodecamp.org/)
 
-#### Python
+#### പൈതൻ 
 
-- [Codecademy's Python course](https://www.codecademy.com/learn/learn-python)
-- [Google's Python course](https://developers.google.com/edu/python/)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – the initial exercises are free
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [കോഡ് അക്കാഡമി പൈത്തൺ കോഴ്സ് ](https://www.codecademy.com/learn/learn-python)
+- [ഗൂഗിൾസ് പൈത്തൺ കോഴ്സ് ](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) ആദ്യത്തെ പാട ഭാഗങ്ങൾ ഫ്രീ 
+- [New Coder tutorials](http://newcoder.io/tutorials/) – പൈത്തൺ എങ്ങനെ ഉപയോഗിക്കാം എന്നുള്ളതിന് ഒരു വെത്യസ്തമായ പാഠ്യഭാഗം 
+- [edX](https://www.edx.org/course?search_query=python) - ഇതിൽ മിക്ക കോഴ്സയം ഫ്രീ ആണ്. പക്ഷെ നിങ്ങൾക് സർട്ടിഫിക്കറ്റ് വേണമെന്നുണ്ടെകിൽ അതിനു പണം അടക്കേണ്ടി വരും 
+- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – ചില പാഠഭാഗങ്ങൾ ഫ്രീ ആണ് ബാക്കി പൈസ കൊടുത്ത പഠിച്ചു കോഴ്സ്ഇറ സെര്ടിഫിക്കറ്റ് നേടാവുന്നതാണ് .
 - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
 
 #### Working with data
