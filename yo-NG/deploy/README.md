@@ -164,8 +164,8 @@ As you watch that running, you'll be able to see what it's doing:
 - Ṣíṣẹ̀dá virtualenv kan lórí PythonAnywhere, gẹ́gẹ́ bí èyí tó wà lórí kọ̀mpútà tìẹ
 - Ṣíṣe ìmúdójúìwọ̀n fáìlì àwọn ìṣètò rẹ pẹ̀lú àwọn ìṣètò ìṣàgbékalẹ̀ kan
 - Ṣíṣe àgbékalẹ̀ àkójọpọ̀ dátà kan sórí PythonAnywhere pẹ̀lú lílo àṣẹ `manage.py migrate` náà
-- Setting up your static files (we'll learn about these later)
-- And configuring PythonAnywhere to serve your web app via its API
+- Ṣíṣe àgbékalẹ̀ àwọn fáìlì tó wà lójú kan rẹ (a ó kẹ́kọ̀ọ́ nípa àwọn wọ̀nyí tó bá yá)
+- Àti ṣíṣe ètò PythonAnywhere láti pèsè ètò ayélujára rẹ nípasẹ̀ API rẹ̀
 
 On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
 
