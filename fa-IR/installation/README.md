@@ -57,7 +57,7 @@ data-id="chromebook_setup" data-collapse=true ces--> {% include "/chromebook_set
 
 * [اینترنت چگونه کار می‌کند](../how_the_internet_works/README.md)
 
-* [معرفی خط فرمان](../intro_to_command_line/README.md)
+* [معرفی خط‌فرمان](../intro_to_command_line/README.md)
 
 * [معرفی پایتون](../python_introduction/README.md)
 
