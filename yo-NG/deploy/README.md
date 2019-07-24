@@ -213,7 +213,7 @@ And remember, your coach is here to help!
 
 # Ṣàyẹ̀wò ààyè rẹ!
 
-The default page for your site should say "It worked!", just like it does on your local computer. Try adding `/admin/` to the end of the URL, and you'll be taken to the admin site. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+Ó yẹ kí ojú-ìwé ìpìlẹ̀ fún ààyè rẹ sọ pé "Ó ṣiṣẹ́!", gẹ́gẹ́ bí ó ṣe máa n ṣe lórí kọ̀mpútà rẹ. Gbìyànjú ṣíṣe àfikún `/admin/` sí ìparí URL náà, ìwọ yíò sì lọ sí ààyè alábòójútó náà. Wọlé pẹ̀lú orúkọ aṣàmúlò àti ọ̀rọ̀ aṣínà náà, ìwọ yíò sì rí pé o lè ṣàfikún àwọn Àròkọ tuntun sórí server náà -- rántí, a kò fi àwọn àròkọ láti àkójọpọ̀ dátà orí kọ̀mpútà rẹ ránṣẹ́ sí blog rẹ tó n ṣiṣẹ́.
 
 Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
