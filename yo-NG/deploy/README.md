@@ -142,7 +142,7 @@ Padà sí [Pánẹ́ẹ̀lì ìdarí PythonAnywhere](https://www.pythonanywhere.
 
 > **Àkíyèsí** PythonAnywhere dá lórí Linux, nítorí náà tí o bá wà lórí Windows, console náà yíò yàtọ̀ díẹ̀ sí èyí tó wà lórí kọ̀mpútà rẹ.
 
-Deploying a web app on PythonAnywhere involves pulling down your code from GitHub, and then configuring PythonAnywhere to recognise it and start serving it as a web application. There are manual ways of doing it, but PythonAnywhere provides a helper tool that will do it all for you. Let's install it first:
+Ṣíṣe àgbékalẹ̀ ètò ayélujára kan sórí PythonAnywhere ní láti ṣe pẹ̀lú fífa kóòdù rẹ láti GitHub, lẹ́yìn náà ṣíṣe ètò PythonAnywhere láti dá a mọ̀ àti bẹ̀rẹ̀ pípèsè rẹ̀ gẹ́gẹ́ bí ètò ayélujára kan. Àwọn ọ̀nà tí o lè gbà ṣé fúnra rẹ wà, ṣùgbọ́n PythonAnywhere pèsè irinṣẹ́ olùrànlọ́wọ́ kan tí yíò ṣe gbogbo rẹ̀ fún ẹ. Jẹ́ ká kọ́kọ́ ṣàgbékalẹ̀ rẹ̀:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -151,7 +151,7 @@ Deploying a web app on PythonAnywhere involves pulling down your code from GitHu
 
 Ó yẹ kí ìyẹn ṣàtẹ̀jáde àwọn nnkan kan bíi `Collecting pythonanywhere`, kí o sì parí gbẹ̀yìn pẹ̀lú ìlà kan tó n sọ pé `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Tẹ èyí tó tẹ̀le yìí sínú console náà lórí PythonAnywhere (má gbàgbé láti lo orúkọ aṣàmúlò GitHub rẹ dípò `<your-github-username>`, kí URL náà bàa lè dọ́gba pẹ̀lú URL ìfijọ láti GitHub náà):
+Ní báyìí, a máa mú olùrànlọ́wọ́ náà ṣiṣẹ́ láti ṣètò ètò wa láti GitHub fúnra rẹ̀. Tẹ èyí tó tẹ̀le yìí sínú console náà lórí PythonAnywhere (má gbàgbé láti lo orúkọ aṣàmúlò GitHub rẹ dípò `<your-github-username>`, kí URL náà bàa lè dọ́gba pẹ̀lú URL ìfijọ láti GitHub náà):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -160,8 +160,8 @@ Now we run the helper to automatically configure our app from GitHub. Tẹ èyí
 
 As you watch that running, you'll be able to see what it's doing:
 
-- Downloading your code from GitHub
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
+- Gbígba kóòdù rẹ láti GitHub
+- Ṣíṣẹ̀dá virtualenv kan lórí PythonAnywhere, gẹ́gẹ́ bí èyí tó wà lórí kọ̀mpútà tìẹ
 - Updating your settings file with some deployment settings
 - Setting up a database on PythonAnywhere using the `manage.py migrate` command
 - Setting up your static files (we'll learn about these later)
