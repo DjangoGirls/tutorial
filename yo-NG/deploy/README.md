@@ -162,8 +162,8 @@ As you watch that running, you'll be able to see what it's doing:
 
 - Gbígba kóòdù rẹ láti GitHub
 - Ṣíṣẹ̀dá virtualenv kan lórí PythonAnywhere, gẹ́gẹ́ bí èyí tó wà lórí kọ̀mpútà tìẹ
-- Updating your settings file with some deployment settings
-- Setting up a database on PythonAnywhere using the `manage.py migrate` command
+- Ṣíṣe ìmúdójúìwọ̀n fáìlì àwọn ìṣètò rẹ pẹ̀lú àwọn ìṣètò ìṣàgbékalẹ̀ kan
+- Ṣíṣe àgbékalẹ̀ àkójọpọ̀ dátà kan sórí PythonAnywhere pẹ̀lú lílo àṣẹ `manage.py migrate` náà
 - Setting up your static files (we'll learn about these later)
 - And configuring PythonAnywhere to serve your web app via its API
 
