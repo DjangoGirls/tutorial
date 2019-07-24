@@ -158,7 +158,7 @@ Ní báyìí, a máa mú olùrànlọ́wọ́ náà ṣiṣẹ́ láti ṣètò 
     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
-As you watch that running, you'll be able to see what it's doing:
+Bó o ṣe ń wo ìyẹn tó n ṣiṣẹ́, ìwọ yíò lè rí ohun tó ń ṣe:
 
 - Gbígba kóòdù rẹ láti GitHub
 - Ṣíṣẹ̀dá virtualenv kan lórí PythonAnywhere, gẹ́gẹ́ bí èyí tó wà lórí kọ̀mpútà tìẹ
