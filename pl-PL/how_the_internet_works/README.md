@@ -6,9 +6,9 @@
 
 Możemy się założyć, że używasz go każdego dnia. Ale czy naprawdę wiesz, co się dzieje, gdy wpisujesz w przeglądarce adres https://djangogirls.org i wciskasz `enter`?
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. Aczkolwiek strony internetowe różnią się od nich tym, że zawierają kod komputerowy zwany HTML.
 
-If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Zostały one zaprojektowane po to, by czytać ten kod, przetwarzać go i postępować zgodnie z jego instrukcjami. Prezentują pliki, z których składa się Twoja strona - by wyglądała dokładnie tak jak Ty chcesz.
+Jeśli do tej pory nie miałaś stycznoście z programowaniem, na początku może być Ci trudno zrozumieć czym jest HTML ale Twoje przeglądarki (takie jak Chrome, Safari, Firefox itp.) go uwielbiają. Zostały one zaprojektowane po to, by czytać ten kod, przetwarzać go i postępować zgodnie z jego instrukcjami. Prezentują pliki, z których składa się Twoja strona - by wyglądała dokładnie tak jak Ty chcesz.
 
 Tak jak w przypadku każdego innego pliku, musimy umiejscowić pliki HTML na dysku twardym. Do przechowywania plików HTML używamy specjalnych, potężnych komputerów zwanych *serwerami (ang. servers)*. Serwery nie posiadają monitorów, myszy ani klawiatur, ponieważ ich głownym celem jest przechowywanie danych i serwowanie ich. Dlatego są one nazywane *serwerami* -- ponieważ służą do *serwowania* danych.
 
