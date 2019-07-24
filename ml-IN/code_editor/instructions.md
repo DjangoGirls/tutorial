@@ -4,19 +4,19 @@ Our suggestions are below, but feel free to ask your coach what their preference
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+വിൻഡോസിലും ലിനക്സിലും മാകിലും ഒരുപോലെ പ്രവർത്തിപ്പിക്കാൻ കഴിയുന്ന ഒരു സോഴ്സ് കോഡ് എഡിറ്റർ ആണ് വിഷ്വൽ സ്റ്റുഡിയോ കോഡ്. ഡീബഗ്ഗിങ്, എംബെഡ്ഡ്ഡ് ഗിറ്റ് കണ്ട്രോൾ, സിന്റാക്കസ് ഹൈലൈറ്റിംഗ്, കോഡ് കംപ്ലീഷൻ, സ്നിപ്പെട്ട്സ് പോലുള്ള ധാരാളം ഫീച്ചർ ഉള്ള ഒന്നാണ് ഈ കോഡ് എഡിറ്റർ.
 
 [ഇവിടെ നിന്നും ഡൌണ്‍ലോഡ് ചെയ്യൂ](https://code.visualstudio.com/download)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+എല്ലാ ഓപ്പറേറ്റിംഗ് സിസ്റ്റത്തിനും ലഭ്യമായ ഒരു സൗജന്യ ഓപ്പൺ സോഴ്സ് കോഡ് എഡിറ്റർ ആണ് (ഗെഡിട്) Gedit.
 
 [ഇവിടെ നിന്നും ഡൌണ്‍ലോഡ് ചെയ്യൂ](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text ഒരു വളരെ ജനസമ്മതിയും നിശ്ചിത സൌജന്യ കാലാവധിയുമുള്ള എടിറ്ററാണ്. അവ എല്ലാ ഓപറേറ്റിങ്ങ്‌ സിസ്റ്റങ്ങള്‍ക്കും ലഭ്യമാണ്. ഇന്‍സ്റ്റാള്‍ ചെയ്യാനും ഉപയോഗിക്കാനും എളുപ്പവുമാണ്.
 
 [ഇവിടെ നിന്നും ഡൌണ്‍ലോഡ് ചെയ്യൂ](https://www.sublimetext.com/3)
 
