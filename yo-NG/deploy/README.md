@@ -209,12 +209,12 @@ If you see an error when you try to visit your site, the first place to look for
 
 There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
-And remember, your coach is here to help!
+Rántí, olùkọ́ rẹ wà níbí láti ràn ọ́ lọ́wọ́!
 
 # Ṣàyẹ̀wò ààyè rẹ!
 
 Ó yẹ kí ojú-ìwé ìpìlẹ̀ fún ààyè rẹ sọ pé "Ó ṣiṣẹ́!", gẹ́gẹ́ bí ó ṣe máa n ṣe lórí kọ̀mpútà rẹ. Gbìyànjú ṣíṣe àfikún `/admin/` sí ìparí URL náà, ìwọ yíò sì lọ sí ààyè alábòójútó náà. Wọlé pẹ̀lú orúkọ aṣàmúlò àti ọ̀rọ̀ aṣínà náà, ìwọ yíò sì rí pé o lè ṣàfikún àwọn Àròkọ tuntun sórí server náà -- rántí, a kò fi àwọn àròkọ láti àkójọpọ̀ dátà orí kọ̀mpútà rẹ ránṣẹ́ sí blog rẹ tó n ṣiṣẹ́.
 
-Once you have a few posts created, you can go back to your local setup (not PythonAnywhere). From here you should work on your local setup to make changes. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
+Tí o bá ti ṣẹ̀dá àwọn àròkọ díẹ̀ kan, o lè padà sí àgbékalẹ̀-ètò kọ̀mpútà rẹ (kìí ṣe PythonAnywhere). Láti ibí, ó yẹ kí o ṣiṣẹ́ lórí àgbékalẹ̀-ètò kọ̀mpútà rẹ láti ṣe àwọn ìyípadà. This is a common workflow in web development – make changes locally, push those changes to GitHub, and pull your changes down to your live Web server. This allows you to work and experiment without breaking your live Web site. Pretty cool, huh?
 
 Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
