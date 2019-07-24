@@ -8,7 +8,7 @@
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-ابتدا متوجه شوید که کامپیوتر شما دارای ویندوز 32-bit است یا 64-bit، در ردیف "System type" در صفحه System Info می‌توانید این را متوجه شوید. برای پیدا کردن این صفحه یکی از کارهای زیر را انجام دهید:
+ابتدا چک کنید که کامپیوتر شما دارای ویندوز 32-bit است یا 64-bit، در ردیف "System type" در صفحه System Info می‌توانید این را متوجه شوید. برای پیدا کردن این صفحه یکی از کارهای زیر را انجام دهید:
 
 * دکمه Windows و دکمه Pause/Break را همزمان روی کیبورد فشار دهید
 * Control Panel را از منو ویندوز باز کنید، سپس به System & Security بروید و بعد از آن به System بروید
