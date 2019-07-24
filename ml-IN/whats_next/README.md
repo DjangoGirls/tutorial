@@ -6,11 +6,11 @@
 
 ഒരു ബ്രേക്ക് എടുത്ത് റിലീസ് ചെയ്യൂ . നിങ്ങൾ വളരെ വലിയ ഒരു കാര്യം ആണ് ചെയ്തിരിക്കുന്നെ 
 
-After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
+അതിനു ശേഷം നിങ്ങൾ Djnago girls ഇന്റെ [ ഫേസ്ബുക് ](http://facebook.com/djangogirls) ഓ [ട്വിറ്റെർ ](https://twitter.com/djangogirls) ഫോള്ളോ ചെയ്തു എന്ന് ഉറപ്പു വരുത്തുക.
 
-### Can you recommend any further resources?
+### നിങ്ങൾക് വേറേതെങ്കിലും റിസോഴ്സ് പരിചയപ്പെടുത്താൻ സാധിക്കുമോ?
 
-Yes! There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+തീർച്ചയായും ! ഏതു ലാംഗ്വേജ് പഠിക്കാൻ ആണേലും *വളരെ അതികം * ഉറവിടങ്ങൾ ഉണ്ടാകും. ഇവിടെ വരുന്നതിനു മുമ്പും വന്നതിനു ശേഷവും നിങ്ങളുടെ താല്പര്യം എന്താണേലും ചുവടെ കുറച്ച സൗജന്യ ഉറവിടങ്ങൾ കൊടുക്കുന്നു.
 
 #### Django
 
