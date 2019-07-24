@@ -124,7 +124,7 @@
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-کد شما الان روی GitHub است. بروید و آن را کنترل کنید! خواهید دید که کدهای شما در جای خوبی است، [Django](https://github.com/django/django)، [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) و بسیاری نرم‌افزارهای متن باز فوق العاده دیگر هم کدهایشان را در GitHub قرار داده‌اند. :)
+کد شما الان روی GitHub است. بروید و آن را کنترل کنید! خواهید دید که کدهای شما در جای خوبی است. پروژه [Django](https://github.com/django/django)، دوره آموزشی [Django Girls](https://github.com/DjangoGirls/tutorial) و بسیاری نرم‌افزارهای متن باز فوق العاده دیگر هم، کدهایشان را در GitHub قرار داده‌اند. :)
 
 # تنظیم کردن وبلاگ بر روی PythonAnywhere
 
