@@ -217,4 +217,4 @@ Rántí, olùkọ́ rẹ wà níbí láti ràn ọ́ lọ́wọ́!
 
 Tí o bá ti ṣẹ̀dá àwọn àròkọ díẹ̀ kan, o lè padà sí àgbékalẹ̀-ètò kọ̀mpútà rẹ (kìí ṣe PythonAnywhere). Láti ibí, ó yẹ kí o ṣiṣẹ́ lórí àgbékalẹ̀-ètò kọ̀mpútà rẹ láti ṣe àwọn ìyípadà. Èyí jẹ́ ìtẹ̀síwájú iṣẹ́ kan tó wọ́pọ̀ nínú ìgbéjáde ayélujára – ṣe àwọn ìyípadà lórí kọ̀mpútà rẹ, ti àwọn ìyípadà yẹn sí GitHub, kí o sì fa àwọn ìyípadà rẹ sí server Ayélujára rẹ tó n ṣiṣẹ́. Èyí yíò fún ọ láàyè láti ṣiṣẹ́ àti ṣe ìdánrawò láì ṣe ohun tí kò tọ́ sórí ààyè Ayélujára rẹ tó n ṣiṣẹ́. Ó dára púpọ̀, àbí bẹ́ẹ̀ kọ?
 
-Give yourself a *HUGE* pat on the back! Server deployments are one of the trickiest parts of web development and it often takes people several days before they get them working. But you've got your site live, on the real Internet!
+Kí ara rẹ *kú oríire!* Àwọn ìṣàgbékalẹ̀ server jẹ́ ọ̀kan lára àwọn apá ìgbéjáde ayélujára tó ṣòro jù, ó sábà máa ń gba àwọn èèyàn ní ọjọ́ bíi mélòó kan kí wọ́n tó mú wọn ṣiṣẹ́. But you've got your site live, on the real Internet!
