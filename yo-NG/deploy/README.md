@@ -151,7 +151,7 @@ Deploying a web app on PythonAnywhere involves pulling down your code from GitHu
 
 Ó yẹ kí ìyẹn ṣàtẹ̀jáde àwọn nnkan kan bíi `Collecting pythonanywhere`, kí o sì parí gbẹ̀yìn pẹ̀lú ìlà kan tó n sọ pé `Successfully installed (...) pythonanywhere- (...)`.
 
-Now we run the helper to automatically configure our app from GitHub. Type the following into the console on PythonAnywhere (don't forget to use your GitHub username in place of `<your-github-username>`, so that the URL matches the clone URL from GitHub):
+Now we run the helper to automatically configure our app from GitHub. Tẹ èyí tó tẹ̀le yìí sínú console náà lórí PythonAnywhere (má gbàgbé láti lo orúkọ aṣàmúlò GitHub rẹ dípò `<your-github-username>`, kí URL náà bàa lè dọ́gba pẹ̀lú URL ìfijọ láti GitHub náà):
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
