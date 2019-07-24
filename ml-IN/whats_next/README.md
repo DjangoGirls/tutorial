@@ -1,10 +1,10 @@
-# What's next?
+# അടുത്തതെന്ത്?
 
-Congratulate yourself! **You're totally awesome**. We're proud! <3
+ഞങ്ങൾ നിങ്ങളെ ഓർത്തു അഭിമാനിക്കുന്നു . നിങ്ങൾ ഒരു സംഭവം ആണ് . നിങ്ങളെ തന്നെ അഭിനന്ദിക്കു . <3 <3
 
-### What to do now?
+### ഇനി എന്ത് ചെയ്യും?
 
-Take a break and relax! You have just done something really huge.
+ഒരു ബ്രേക്ക് എടുത്ത് റിലീസ് ചെയ്യൂ . നിങ്ങൾ വളരെ വലിയ ഒരു കാര്യം ആണ് ചെയ്തിരിക്കുന്നെ 
 
 After that, make sure to follow Django Girls on [Facebook](http://facebook.com/djangogirls) or [Twitter](https://twitter.com/djangogirls) to stay up to date.
 
