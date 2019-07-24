@@ -4,8 +4,8 @@
 
 നിങ്ങളുടെ ആത്യത്തെ വരി കോട് എഴുതാന്‍ നേരമായി. നമുക്കൊരു കോട് എടിറ്റര്‍ ഡൌണ്‍ലോഡ് ചെയ്യാം!
 
-> **നോട്ട് ** നിങ്ങൾ ചാറൊമേ ബുക്ക് ആണ് ഉപയോഗിക്കുന്നതെങ്കിൽ ഈ അധ്യായം വിട്ടു [ ക്രോം ബുക്ക് സെറ്റപ്പ് ](../chromebook_setup/README.md) നിർദ്ദേശങ്ങൾ വായിക്കുക The cloud IDE you chose (PaizaCloud Cloud IDE or AWS Cloud9) includes a code editor, and when you open a file in your IDE from the File menu, you will automatically be using the editor.
+> **നോട്ട് ** നിങ്ങൾ ചാറൊമേ ബുക്ക് ആണ് ഉപയോഗിക്കുന്നതെങ്കിൽ ഈ അധ്യായം വിട്ടു [ ക്രോം ബുക്ക് സെറ്റപ്പ് ](../chromebook_setup/README.md) നിർദ്ദേശങ്ങൾ വായിക്കുക നിങ്ങൾ ഉപയോഗിക്കുന്ന ക്‌ളൗഡ്‌ IDE (PaizaCloud Cloud IDE or AWS Cloud9) യിൽ ഒരു കോഡ് എഡിറ്റർ ഉൾപെട്ടിട്ടുണ്ടാകും.നിങ്ങൾ IDE ഉപയോഗിച്ച ഒരു ഫയൽ തുറക്കുമ്പോൾ അത് നേരിട്ട് കോഡ് എഡിറ്ററിൽ ആയിരിക്കും തുറന്നു വരുന്നത്.
 > 
-> **Note** You might have done this earlier in the Installation chapter – if so, you can skip right ahead to the next chapter!
+> **നോട്ട് **ഒരുപക്ഷെ നിങ്ങൾ ഇത് ഇൻസ്റ്റാളേഷൻ ചാപ്റ്ററിൽ ചെയ്തിട്ടുണ്ടാവും. അങ്ങനെ ആണെങ്കിൽ നിങ്ങൾക് അടുത്ത ചാപ്റ്ററിലേക് പോകാവുന്നതാണ്.
 
 {% include "/code_editor/instructions.md" %}
