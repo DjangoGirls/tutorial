@@ -85,17 +85,17 @@ Premi `invio`. Questo è il nostro risultato:
     $ whoami olasitarska
     
 
-As you can see, the computer has just printed your username. Neat, huh? :)
+Come puoi vedere, il computer ha appena stampato il tuo nome utente. Bello, eh? :)
 
-> Try to type each command; do not copy-paste. You'll remember more this way!
+> Prova a digitare ogni comando, non copiare ed incollare. Ti ricorderai di più in questo modo!
 
 ## Nozioni di base
 
-Each operating system has a slightly different set of commands for the command line, so make sure to follow instructions for your operating system. Let's try this, shall we?
+Ogni sistema operativo ha un insieme di comandi leggermente diverso per la command line, per cui assicurati di seguire le istruzioni per il tuo sistema operativo. Proviamo questo, ti va?
 
 ### Cartella corrente
 
-It'd be nice to know where are we now, right? Let's see. Type this command and hit `enter`:
+Sarebbe bello sapere dove ci troviamo ora, giusto?Vediamo. Digita questo comando e premi Invio:
 
 <!--sec data-title="Current directory: OS X and Linux" data-id="OSX_Linux_pwd" data-collapse=true ces-->
 
