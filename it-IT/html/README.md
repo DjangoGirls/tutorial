@@ -2,13 +2,13 @@
 
 Ti potresti chiedere, cos'è un template?
 
-A template is a file that we can re-use to present different information in a consistent format – for example, you could use a template to help you write a letter because although each letter might contain a different message and be addressed to a different person, they will share the same format.
+Un template è un file che possiamo riutilizzare per presentare informazioni diverse in un formato consistente - per esempio, potresti utilizzare un template per aiutarti a scrivere una lettera, perché anche se ciascuna lettera potrebbe contenere un messaggio diverso ed essere a sua volta indirizzata ad una persona diversa, condivideranno lo stesso formato.
 
-A Django template's format is described in a language called HTML (that's the HTML we mentioned in the first chapter, **How the Internet works**).
+Un template Django viene descritto in un linguaggio chiamato HTML (è lo stesso HTML che abbiamo menzionato nel primo capitolo **Come funziona l'Internet**).
 
 ## Cos'è l'HTML?
 
-HTML is a code that is interpreted by your web browser – such as Chrome, Firefox or Safari – to display a web page for the user.
+HTML è un semplice codice che viene interpretato dal tuo browser - come Chrome, Firefox o Safari - per rendere un sito web visibile all'utente.
 
 HTML sta per "HyperText Markup Language". **HyperText** significa che è un tipo di testo che supporta i collegamenti ipertestuali tra le pagine. **Markup** significa che abbiamo preso un documento e l'abbiamo contrassegnato con il codice per dire a qualcosa (in questo caso, un browser) come interpretare la pagina. Il codice HTML è costruito con **tags**, ognuno inizia con `<` e finisce con `>`. Questi tag rappresentano gli **elementi** di markup.
 
@@ -23,13 +23,13 @@ I template vengono salvati in una cartella `blog/templates/blog`. Quindi prima c
         └───blog
     
 
-(You might wonder why we need two directories both called `blog` – as you will discover later, this is a useful naming convention that makes life easier when things start to get more complicated.)
+(Ti chiederai perché abbiamo bisogno di due directory chiamate entrambe `blog` - come scoprirai più tardi, si tratta semplicemente di una denominazione convenzionale che serve rendere la vita più facile.)
 
 E ora crea un file `post_list.html` nella directory `blog/templates/blog` (lascialo in bianco per adesso).
 
 Guarda che aspetto ha il tuo sito adesso: http://127.0.0.1:8000/
 
-> Se hai ancora l'errore `TemplateDoesNotExist`, prova a riavviare il tuo server. Go to the command line, stop the server by pressing Ctrl+C (Control and C keys together) and start it again by running a `python manage.py runserver` command.
+> Se hai ancora l'errore `TemplateDoesNotExist`, prova a riavviare il tuo server. Vai nella command line, arresta il server premendo Ctrl+C ( I tasti Control e C insieme) e riavvialo utilizzando il comando `python manage.py runserver`.
 
 ![Figura 11.1](images/step1.png)
 
@@ -48,13 +48,13 @@ Apri il nuovo file nell'editor di codice e aggiungi quanto segue:
 </html>
 ```
 
-So how does your website look now? Visit it to find out: http://127.0.0.1:8000/
+Quindi come appare il tuo sito ora? clicca per scoprirlo: http://127.0.0.1:8000/
 
 ![Figura 11.2](images/step3.png)
 
 Ha funzionato! Ottimo lavoro :)
 
-* The most basic tag, `<html>`, is always the beginning of any web page and `</html>` is always the end. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
+* Il comando più basico, `<html>`, è sempre l'inizio di ogni pagina web e `</html>` è sempre la fine. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
 * `<p>` è un tag per gli elementi paragrafo; `</p>` conclude ogni paragrafo
 
 ## Head and body
@@ -67,7 +67,7 @@ Ciascuna pagina HTML è a sua volta divisa in due elementi: **head** e **body**.
 
 Utilizziamo `<head>` per dire al browser come interpretare la configurazione della pagina, e `<body>` per dirgli in realtà cosa c'è nella pagina.
 
-For example, you can put a web page title element inside the `<head>`, like this:
+Per esempio, puoi mettere un elemento di titolo all'interno di `<head>`, così:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -93,13 +93,13 @@ Probabilmente hai anche notato che ogni tag di apertura è abbinato ad un *tag d
 
 È come mettere le cose in delle scatole. Hai una grossa scatola, `<html></html>`; al suo interno c'è `<body></body>`, che contiene scatole ancora più piccole: `<p></p>`.
 
-You need to follow these rules of *closing* tags, and of *nesting* elements – if you don't, the browser may not be able to interpret them properly and your page will display incorrectly.
+Devi seguire queste regole di tag *di chiusura*, e di elementi *annidati* - se non lo fai, il browser potrebbe non essere in grado di interpretarli correttamente e la tua pagina verrà visualizzata incorrettamente.
 
 ## Personalizza il tuo template
 
 Ora puoi divertirti un po' e provare a personalizzare il tuo template! Qua ci sono un po' di tag utili per quello:
 
-* `<h1>A heading</h1>` for your most important heading
+* `<h1>A heading</h1>` - per la tua intestazione più importante
 * `<h2>Un sottotitolo</h2>` per un titolo di livello inferiore
 * `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
 * `<p>A paragraph of text</p>`
