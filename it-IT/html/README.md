@@ -100,17 +100,17 @@ Devi seguire queste regole di tag *di chiusura*, e di elementi *annidati* - se n
 Ora puoi divertirti un po' e provare a personalizzare il tuo template! Qua ci sono un po' di tag utili per quello:
 
 * `<h1>A heading</h1>` - per la tua intestazione più importante
-* `<h2>Un sottotitolo</h2>` per un titolo di livello inferiore
-* `<h3>A sub-sub-heading</h3>` …and so on, up to `<h6>`
+* `<h2>A sub-heading</h2>` - per un titolo di livello inferiore
+* `<h3>A sub-sub-heading</h3>` ... e così via, fino a `<h6>`
 * `<p>A paragraph of text</p>`
 * `<em>text</em>` enfatizza il tuo testo
 * `<strong>text</strong>` enfatizza fortemente il tuo testo
-* `<br>` goes to another line (you can't put anything inside br and there's no closing tag)
+* `<br>` va in un'altra riga (puoi mettere qualsiasi cosa dentro br)
 * `<a href="https://djangogirls.org">link</a>` crea un link
 * `<ul><li>primo elemento</li><li>secondo elemento</li></ul>` fa una lista, proprio come questa qui!
 * `<div></div>` definisce una sezione della pagina
 
-Here's an example of a full template, copy and paste it into `blog/templates/blog/post_list.html`:
+Ecco un esempio di modello completo, copia e incolla in `blog/templates/blog/post_list.html`:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -141,22 +141,22 @@ Here's an example of a full template, copy and paste it into `blog/templates/blo
 
 Abbiamo creato tre sezioni `div` qui.
 
-* The first `div` element contains the title of our blog – it's a heading and a link
-* Another two `div` elements contain our blog posts with a published date, `h2` with a post title that is clickable and two `p`s (paragraph) of text, one for the date and one for our blog post.
+* Il primo elemento `div` contiene il titolo del nostro blog - è un'intestazione ed un link
+* Altri tre elementi `div` contengono i nostri post con la loro data di pubblicazione, `h2` con il titolo di un post che è cliccabile e due `p` (paragrafi) di testo, uno per la data e l'altro per i nostri post.
 
 Ci dà questo effetto:
 
 ![Figura 11.4](images/step6.png)
 
-Yaaay! But so far, our template only ever displays exactly **the same information** – whereas earlier we were talking about templates as allowing us to display **different** information in the **same format**.
+Yaaay! Ma fino adesso, il nostro template mostra esattamente **la stessa informazione** - mentre prima stavamo dicendo che i template ci permettono di mostrare **diverse** informazioni nello **stesso formato**.
 
-What we really want to do is display real posts added in our Django admin – and that's where we're going next.
+Quello che vogliamo è visualizzare i veri post aggiunti nel nel nostro Django admin - è quello che faremo adesso.
 
 ## Un'ultima cosa: il deploy!
 
 Sarebbe bello vedere tutto questo live su Internet, giusto? Facciamo un altro deploy su PythonAnywhere:
 
-### Commit, and push your code up to GitHub
+### Committa e pubblica il tuo codice su GitHub
 
 Prima di tutto, vediamo quali file sono cambiati dall'ultimo deploy (esegui questi comandi localmente, non su PythonAnywhere):
 
@@ -165,7 +165,7 @@ Prima di tutto, vediamo quali file sono cambiati dall'ultimo deploy (esegui ques
     $ git status
     
 
-Make sure you're in the `djangogirls` directory and let's tell `git` to include all the changes in this directory:
+Assicurati di essere nella directory `djangogirls` e diciamo a `git` di includere tutte le modifiche in questa directory:
 
 {% filename %}command-line{% endfilename %}
 
@@ -190,7 +190,7 @@ Ci siamo quasi, ora è il momento di dirgli di salvare questa modifica nella cro
 
 > **Nota** Assicurati di usare doppie virgolette attorno al messaggio di commit.
 
-Once we've done that, we upload (push) our changes up to GitHub:
+Quando hai finito, caricheremo (push) le nostre modifiche su Github:
 
 {% filename %}command-line{% endfilename %}
 
@@ -208,10 +208,10 @@ Once we've done that, we upload (push) our changes up to GitHub:
     [...]
     
 
-You'll need to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain name, without the angle-brackets. Your subdomain name is normally your PythonAnywhere user name, but in some cases it might be a bit different (such as if your user name contains capital letters). So if this command doesn't work, use the `ls` (list files) command to find your actual subdomain/folder name, and then `cd` to there.
+Ricordati di sostituire `<your-pythonanywhere-domain>` con il sottodominio di PythonAnywhere, senza le parentesi angolo. Il tuo nome di sottodominio è normalmente il tuo nome utente PythonAnywhere, ma in alcuni casi potrebbe essere un po' diverso (come se il tuo nome utente contiene lettere capitali). Quindi, se questo comando non funziona, usa il comando `ls` (files list) per trovare il tuo nome di sottodominio/cartella reale e poi `cd` su di esso.
 
-Now watch your code get downloaded. If you want to check that it's arrived, you can hop over to the **"Files" page** and view your code on PythonAnywhere (you can reach other PythonAnywhere pages from the menu button on the console page).
+Ora guarda il tuo codice scaricato. Se vuoi controllare che sia arrivato, puoi saltare alla pagina **"Files** e visualizzare il tuo codice su PythonAnywhere (puoi raggiungere altre pagine PythonAnywhere dal pulsante menu sulla pagina della console).
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app.
+* Infine, fai un salto alla [scheda Web](https://www.pythonanywhere.com/web_app_setup/) e premi **Reload** sulla tua web app.
 
-Your update should be live! Go ahead and refresh your website in the browser. Changes should be visible. :)
+Il tuo aggiornamento dovrebbe essere applicato! Vai avanti ed aggiorna il tuo sito nel brower. Le modifiche dovrebbero essere visibili. :)
