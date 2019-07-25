@@ -10,7 +10,7 @@ Il primo passo è quello di iniziare un nuovo progetto di Django. Fondamentalmen
 
 I nomi di alcuni file e cartelle sono molto importanti per Django. Non dovresti modificare i nomi dei file che stiamo per creare. Neanche spostarli in un altro posto è una buona idea. Django deve mantenere una determinata struttura per essere in grado di trovare le cose importanti.
 
-> Ricordati di eseguire tutto nel virtualenv. Se non vedi il prefisso `(myvenv)` nella tua console, devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **istallazione Django** nella parte **Lavorando con virtualenv**. Typing `myvenv\Scripts\activate` on Windows or `source myvenv/bin/activate` on Mac OS X or Linux will do this for you.
+> Ricordati di eseguire tutto nel virtualenv. Se non vedi il prefisso `(myvenv)` nella tua console, devi attivare il tuo virtualenv. Abbiamo spiegato come farlo nel capitolo **istallazione Django** nella parte **Lavorando con virtualenv**. Digitando `myvenv\Scripts\activate` su Windows oppure `source myvenv/bin/activate` su Mac OS / Linux farà questo per te.
 
 <!--sec data-title="Create project: OS X or Linux" data-id="django_start_project_OSX_Linux" data-collapse=true ces-->
 
@@ -23,13 +23,13 @@ Dovresti eseguire il seguente comando nella tua console MacOS X o Linux; **non d
 
 > Il punto `.` è cruciale perché dice allo script d'installare Django nell'attuale directory (quindi il punto `.` è un riferimento di abbreviazione).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin`. The `(myvenv) ~/djangogirls$` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Nota** Quando digiti i comandi sopra, ricorda che si digita soltanto la parte che inizia con django-admin oppure ``. Le parti mostrate qui come (myvenv) ~/djangogirls$ e `(myvenv) C:\Users\Name\djangogirls` sono solo esempi del prompt che starà invitando il tuo input sulla tua command line.
 
 <!--endsec-->
 
 <!--sec data-title="Create project: Windows" data-id="django_start_project_windows" data-collapse=true ces-->
 
-On Windows you should run the following command. **(Don't forget to add the period (or dot) `.` at the end)**:
+Dovresti eseguire nella tua console MacOS o Linux il seguente comando; **non dimenticarti di aggiungere il punto `.` alla fine **:
 
 {% filename %}command-line{% endfilename %}
 
@@ -38,7 +38,7 @@ On Windows you should run the following command. **(Don't forget to add the peri
 
 > Il punto `.` è cruciale perché dice allo script d'installare Django nell'attuale directory (quindi il punto `.` è un riferimento di abbreviazione).
 > 
-> **Note** When typing the command above, remember that you only type the part which starts by `django-admin.exe`. The `(myvenv) C:\Users\Name\djangogirls>` part shown here is just example of the prompt that will be inviting your input on your command line.
+> **Nota** Quando digiti i comandi sopra, ricorda che si digita soltanto la parte che inizia con django-admin oppure ``. Le parti mostrate qui come (myvenv) ~/djangogirls$ e `(myvenv) C:\Users\Name\djangogirls` sono solo esempi del prompt che starà invitando il tuo input sulla tua command line.
 
 <!--endsec-->
 
@@ -54,9 +54,9 @@ On Windows you should run the following command. **(Don't forget to add the peri
     └───requirements.txt
     
 
-> **Note**: in your directory structure, you will also see your `venv` directory that we created before.
+> **Nota**: nella struttura della directory, vedrai anche la tua cartella `venv` che abbiamo creato prima.
 
-`manage.py` is a script that helps with management of the site. With it we will be able (amongst other things) to start a web server on our computer without installing anything else.
+`manage.py` è uno script che aiuta a gestire il sito. Usandolo saremo in grado di avviare un web server sul nostro computer senza dover istallare nient'altro, tra l'altro.
 
 Il file `settings.py` contiene la configurazione del tuo sito web.
 
@@ -68,11 +68,11 @@ Ignoriamo gli altri file per ora dal momento che non li modificheremo. L'unica c
 
 Facciamo qualche cambiamento in `mysite/settings.py`. Apri il file usando il code editor che hai istallato prima.
 
-**Note**: Keep in mind that `settings.py` is a regular file, like any other. You can open it from inside the code editor, using the "file -> open" menu actions. This should get you the usual window in which you can navigate to your `settings.py` file and select it. Alternatively, you can open the file by navigating to the djangogirls folder on your desktop and right-clicking on it. Then, select your code editor from the list. Selecting the editor is important as you might have other programs installed that can open the file but will not let you edit it.
+**Nota**: Ricorda che `settings.py` è un file regolare, come qualsiasi altro. Puoi aprirlo all'interno dell'editor di codice, utilizzando le azioni di menu "file -> apri". Questo dovrebbe portarti la finestra abituale in cui puoi navigare nel file `settings.py` e selezionarlo. In alternativa, puoi aprire il file navigando nella cartella djangogirls sul tuo desktop e facendo clic destro su di esso. Quindi, seleziona l'editor di codice dall'elenco. La selezione dell'editor è importante perché potresti avere altri programmi installati che possono aprire il file ma non ti permetterà di modificarlo.
 
-Sarebbe bello avere l'ora corretta sul nostro sito Web. Go to [Wikipedia's list of time zones](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) and copy your relevant time zone (TZ) (e.g. `Europe/Berlin`).
+Sarebbe bello avere l'ora corretta sul nostro sito Web. Vai alla lista delle zone orarie [Wikipedia](https://en.wikipedia.org/wiki/List_of_tz_database_time_zones) e copia la tua zona di tempo (TZ) (ad esempio. `Europa/Berlino`).
 
-In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choose your own timezone. For example:
+In settings.py, trova la riga che contiene `TIME_ZONE` e modificala per scegliere il tuo fuso orario:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -80,9 +80,9 @@ In `settings.py`, find the line that contains `TIME_ZONE` and modify it to choos
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-A language code consist of the language, e.g. `en` for English or `de` for German, and the country code, e.g. `de` for Germany or `ch` for Switzerland. If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. So you would have "Cancel" button translated into the language you defined here. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Un codice lingua è costituito dalla lingua, ad esempio`en` per l'inglese o `de` per il tedesco e il codice del paese, ad esempio`de` per la Germania o `ch` per la Svizzera. Se l'inglese non è la tua lingua nativa, puoi aggiungere questo per cambiare i pulsanti e le notifiche predefinite da Django per essere nella tua lingua. Quindi, il pulsante "Annulla" verrebbe tradotto nella lingua che hai definito qui. [Django arriva con molte traduzioni preparate](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
 
-If you want a different language, change the language code by changing the following line:
+Se vuoi una lingua diversa, cambia il codice lingua modificando la seguente riga:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -90,7 +90,7 @@ If you want a different language, change the language code by changing the follo
 LANGUAGE_CODE = 'de-ch'
 ```
 
-We'll also need to add a path for static files. (We'll find out all about static files and CSS later in the tutorial.) Go down to the *end* of the file, and just underneath the `STATIC_URL` entry, add a new one called `STATIC_ROOT`:
+Dovremo anche aggiungere un percorso per i file statici. (Più tardi scopriremo tutti i file statici e CSS nel tutorial.) Vai alla *end* del file, e appena sotto la voce `STATIC_URL` aggiungi un nuovo nome chiamato `STATIC_ROOT`:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -99,7 +99,7 @@ STATIC_URL = '/static/'
 STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 ```
 
-When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated against `['localhost', '127.0.0.1', '[::1]']`. This won't match our hostname on PythonAnywhere once we deploy our application so we will change the following setting:
+Quando `DEBUG` è `Vero` e `ALLOWED_HOSTS` è vuoto, l'host è convalidato contro `['localhost', '127.0.0.1', '[::1]']`. Questo non abbina il nostro hostname su PythonAnywhere dopo aver distribuito la nostra applicazione in modo da modificare le seguenti impostazioni:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -107,11 +107,11 @@ When `DEBUG` is `True` and `ALLOWED_HOSTS` is empty, the host is validated again
 ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 ```
 
-> **Note**: If you're using a Chromebook, add this line at the bottom of your settings.py file: `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
+> **Nota**: se stai usando un Chromebook, aggiungi questa linea nella parte inferiore del file settings.py: `MESSAGE_STORAGE = 'django.contrib.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> Aggiunge anche `.amazonaws.com` a `ALLOWED_HOSTS` se stai usando cloud9
 
-## Set up a database
+## Imposta un database
 
 Ci sono un sacco di software di database diversi che possono immagazzinare dati per il tuo sito. Noi useremo quello di default, `sqlite3`.
 
@@ -155,7 +155,7 @@ Per creare un database per il nostro blog, eseguiamo questo nella console: `pyth
 
 E abbiamo finito! Tempo di avviare il server web e vedere se il nostro sito Web funziona!
 
-## Starting the web server
+## Avvio del server web
 
 Devi essere nella directory che contiene il file di `manage.py` (la directory `djangogirls`). Nella console, possiamo avviare il server web eseguendo `python manage.py runserver`:
 
@@ -178,14 +178,14 @@ Se sei su Windows e non funziona con `UnicodeDecodeError`, usa questo comando:
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Ora tutto quello che devi fare è controllare che il tuo sito sia in esecuzione. Apri il tuo browser (Firefox, Chrome, Safari, Internet Explorer o qualsiasi altro tu usi) e digita l'indirizzo:
 
 {% filename %}browser{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Se stai usando un Chromebook e Cloud9, clicca invece l'URL nella finestra pop-up che avrebbe dovuto apparire nell'angolo in alto a destra della finestra di comando dove il server web è in esecuzione. L'URL apparirà qualcosa come:
 
 {% filename %}browser{% endfilename %}
 
@@ -194,12 +194,12 @@ If you're using a Chromebook and Cloud9, instead click the URL in the pop-up win
 
 Congratulazioni! Hai appena creato il tuo primo sito e l'hai avviato usando un web server! Non è fantastico?
 
-![Install worked!](images/install_worked.png)
+![Installazione completata!](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Nota che una finestra di comando può eseguire solo una cosa alla volta, e la finestra di comando che hai aperto prima sta eseguendo il server web. Finché il server web è in esecuzione e in attesa di ulteriori richieste in arrivo, il terminale accetterà un nuovo testo ma non eseguirà nuovi comandi.
 
-> We reviewed how web servers work in the **How the Internet works** chapter.
+> Abbiamo esaminato come funzionano i server web nel capitolo **Come funziona il capitolo** .
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). To stop the web server, switch back to the window in which it's running and press CTRL+C - Control and C keys together (on Windows, you might have to press Ctrl+Break).
+Per digitare ulteriori comandi mentre il server web è in esecuzione, apri una nuova finestra terminale e attiva il tuo virtualenv -- per rivedere le istruzioni su come aprire una seconda finestra terminale, vedere [Introduzione alla riga di comando](../intro_to_command_line/README.md). Per fermare il server web, torna alla finestra dove è in esecuzione e premi i pulsanti CTRL+C - Control and C insieme (su Windows, è probabile che tu deva premere Ctrl+Break).
 
 Pronto/a per il prossimo passo? È ora di creare un po' di contenuti!
