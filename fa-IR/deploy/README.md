@@ -22,7 +22,7 @@
 
 > ** توجه ** قبل از شروع به کار موقعیت پوشه‌ای را که در آن هستید با دستور `pwd` (در سیستم عامل Mac OS X / Linux) یا `cd` (در ویندوز) بفهمید. شما باید در پوشه `djangogirls` باشید.
 
-{% filename %}command-line{% endfilename %}
+{% filename %}خط فرمان{% endfilename %}
 
     $ git init
     Initialized empty Git repository in ~/djangogirls/.git/
