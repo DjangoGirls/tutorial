@@ -44,21 +44,21 @@ Su Windows, probebilmente vedrete un`>` come questo:
     >
     
 
-Take a look at the Linux section just above now -- you'll see something more like that when you get to PythonAnywhere later in the tutorial.
+Dai un'occhiata alla sezione Linux appena sopra -- vedrai qualcosa di più come quando arriverai a PythonAnywhere più tardi nel tutorial.
 
 <!--endsec-->
 
-Each command will be prepended by a `$` or `>` and one space, but you should not type it. Your computer will do it for you. :)
+Ogni comando sarà prepesso da un `$` o `>` e uno spazio, ma non dovresti digitarlo. Il tuo computer lo farà per te. :)
 
-> Just a small note: in your case there may be something like `C:\Users\ola>` or `Olas-MacBook-Air:~ ola$` before the prompt sign, and this is 100% OK.
+> Solo una piccola nota: nel tuo caso ci dovrebbe essere qualcosa come `C:\Users\ola>` oppure `Olas-MacBook-Air:~ ola$` prima del segno di prompt. È corretto al 100%.
 
-The part up to and including the `$` or the `>` is called the *command line prompt*, or *prompt* for short. It prompts you to input something there.
+La parte fino al `$` o al `>` inclusi, si chiama *prompt della linea di comando* o semplicemente *prompt*. Ti richiede di inserire qualcosa.
 
-In the tutorial, when we want you to type in a command, we will include the `$` or `>`, and occasionally more to the left. Ignore the left part and only type in the command, which starts after the prompt.
+Nel tutorial quando vorremo che tu scriva un comando, includeremo `$` o `>` e occasionalmente qualcosa in più a sinistra. Puoi ignorare la parte a sinistra e inserire solo il comando dopo il prompt.
 
 ## Il tuo primo comando (YAY!)
 
-Let's start by typing this command:
+Iniziamo digitando questo comando:
 
 <!--sec data-title="Your first command: OS X and Linux" data-id="OSX_Linux_whoami" data-collapse=true ces-->
 
@@ -78,7 +78,7 @@ Let's start by typing this command:
 
 <!--endsec-->
 
-And then hit `enter`. This is our result:
+Premi `invio`. Questo è il nostro risultato:
 
 {% filename %}command-line{% endfilename %}
 
