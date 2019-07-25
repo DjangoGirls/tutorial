@@ -4,9 +4,9 @@
 
 ## Cosa sono i template tags?
 
-You see, in HTML, you can't really write Python code, because browsers don't understand it. They know only HTML. We know that HTML is rather static, while Python is much more dynamic.
+In HTML non puoi scrivere codice Python, perché i browser non lo capiscono. Essi conoscono solo l'HTML. Noi sappiamo che l'HTML è piuttosto statico, mentre Python è molto più dinamico.
 
-**Django template tags** allow us to transfer Python-like things into HTML, so you can build dynamic websites faster. Cool!
+I **Django template tags** ci permettono di trasferire le cose simili a Python in HTML, in modo che tu possa costruire siti web in modo più veloce e facile. Accidenti!
 
 ## Mostra il template con la lista di post
 
@@ -20,7 +20,7 @@ Per stampare una variabile nel template Django, usiamo doppie parentesi graffe c
 {{ posts }}
 ```
 
-Prova ad inserirlo nel tuo template `blog/templates/blog/post_list.html`. Open it up in the code editor, and replace everything from the second `<div>` to the third `</div>` with `{{ posts }}`. Salva il file e aggiorna la pagina per vedere i risultati:
+Prova ad inserirlo nel tuo template `blog/templates/blog/post_list.html`. Sostituisci tutto dal secondo `<div>` al terzo `</div>` con `{{ posts }}`. Salva il file e aggiorna la pagina per vedere i risultati:
 
 ![Figura 13.1](images/step1.png)
 
@@ -46,21 +46,21 @@ Prova ad inserirlo nel tuo template.
 
 ![Figura 13.2](images/step2.png)
 
-Funziona! But we want the posts to be displayed like the static posts we created earlier in the **Introduction to HTML** chapter. Puoi mischiare i tag HTML con quelli di template. Il nostro `body` avrà questo aspetto:
+Funziona! Ma noi vogliamo che vengano mostrate come i post statici che abbiamo creato prima nel capitolo **Introduzione ad HTML**. Puoi mischiare i tag HTML con quelli di template. Il nostro `body` avrà questo aspetto:
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
 ```html
 <div>
-    <h1><a href="/">Django Girls Blog</a></h1>
+    <h1><a href="/">Django Girls Blog</a></h1>
 </div>
 
 {% for post in posts %}
-    <div>
-        <p>published: {{ post.published_date }}</p>
-        <h2><a href="">{{ post.title }}</a></h2>
-        <p>{{ post.text|linebreaksbr }}</p>
-    </div>
+    <div>
+        <p>published: {{ post.published_date }}</p>
+        <h2><a href="">{{ post.title }}</a></h2>
+        <p>{{ post.text|linebreaksbr }}</p>
+    </div>
 {% endfor %}
 ```
 
@@ -68,13 +68,13 @@ Funziona! But we want the posts to be displayed like the static posts we created
 
 ![Figura 13.3](images/step3.png)
 
-Have you noticed that we used a slightly different notation this time (`{{ post.title }}` or `{{ post.text }}`)? Stiamo introducendo i dati in ciascuno dei campi definiti nel nostro modello `Post`. Inoltre il comando `|linebreaks` introduce un filtro che traduce gli accapo (la pressione del tasto "invio" sulla tastiera) nel loro equivalente in HTML.
+Ti sei accorto che abbiamo utilizzato una notazione leggermente diversa questa volta `{{ post.title }}` oppure `{{ post.text }}`)? Stiamo introducendo i dati in ciascuno dei campi definiti nel nostro modello `Post`. Inoltre il comando `|linebreaks` introduce un filtro che traduce gli accapo (la pressione del tasto "invio" sulla tastiera) nel loro equivalente in HTML.
 
 ## Un' ultima cosa
 
-It'd be good to see if your website will still be working on the public Internet, right? Let's try deploying to PythonAnywhere again. Here's a recap of the steps…
+Sarebbe bello vedere se il tuo sito funziona ancora su Internet, giusto? Proviamo a fare il deploy su PythonAnywhere di nuovo. Ecco un riepilogo dei passaggi...
 
-* First, push your code to GitHub
+* Prima di tutto, fai il push del tuo codice verso Github
 
 {% filename %}command-line{% endfilename %}
 
@@ -92,17 +92,17 @@ It'd be good to see if your website will still be working on the public Internet
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd <your-pythonanywhere-domain>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+(Ricordati di sostituire `<your-pythonanywhere-domain>` con il sottodominio di PythonAnywhere, senza le parentesi angolo.)
 
-* Finally, hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) and hit **Reload** on your web app. (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! If the blog posts on your PythonAnywhere site don't match the posts appearing on the blog hosted on your local server, that's OK. The databases on your local computer and Python Anywhere don't sync with the rest of your files.
+* Infine, fai un salto alla [scheda Web](https://www.pythonanywhere.com/web_app_setup/) e premi **Reload** sulla tua web app. (Per raggiungere altre pagine PythonAnywhere dalla console, usa il pulsante menu nell'angolo in alto a destra.) Il tuo aggiornamento dovrebbe essere attivo su https://subdomain.pythonanywhere.com -- scoprilo nel browser! Se i post che hai sul computer non combaciano con quelli presenti su PythonAnywhere, va tutto bene. Il database su PythonAnywhere e quello sul tuo computer sono diversi a differenza degli altri file.
 
-Congrats! Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+Congratulazioni! Andiamo avanti e proviamo ad aggiungere nuovi post nel tuo admin di Django (ricordati di aggiungere published_date!). Assicurati di essere nell'admin del tuo sito su pythonanywhere, https://subdomain.pythonanywhere.com/admin. Quindi aggiorna la pagina per vedere se i post sono comparsi.
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+Funziona come un incantesimo? Ne siamo fieri! Staccati dal computer per un po', ti sei guadagnato/a una pausa. :)
 
-![Figure 13.4](images/donut.png)
+![Figura 13.4](images/donut.png)
