@@ -199,7 +199,7 @@ Your site should now be live on the public Internet! Click through to the Python
 
 ## Debugging tips
 
-If you see an error while running the `pa_autoconfigure_django.py` script, here are a few common causes:
+Tí o bá rí àṣìṣe kan nígbà tí ìlànà ìṣe `pa_autoconfigure_django.py` n ṣiṣẹ́, lára àwọn ohun tó sábà máa ń fà á nìyí:
 
 - Forgetting to create your PythonAnywhere API token.
 - Making a mistake in your GitHub URL
