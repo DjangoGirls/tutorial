@@ -1,4 +1,4 @@
-# Django views – time to create!
+# Le viste di Django – è arrivata l'ora di creare!
 
 E' ora di liberarsi di quel bug che abbiamo creato nel capitolo precedente! :)
 
@@ -8,7 +8,7 @@ Le views vengono collocate nel file `views.py`. Noi aggiungeremo le nostre *view
 
 ## blog/views.py
 
-OK, let's open up this file in our code editor and see what's in there:
+OK, apriamo questo file e scopriamo cosa c'è dentro:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -20,9 +20,9 @@ from django.shortcuts import render
 
 Non c'è altro qui.
 
-Remember that lines starting with `#` are comments – this means that those lines won't be run by Python.
+Ricorda che le linee che iniziano con `#` sono commenti – questo significa che queste linee non saranno gestite da Python.
 
-Let's create a *view* as the comment suggests. Add the following minimal view below it:
+Creiamo una *vista* come suggerisce il commento. Aggiungi la seguente vista minima qui sotto:
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -31,9 +31,9 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-As you can see, we created a function (`def`) called `post_list` that takes `request` and will `return` the value it gets from calling another function `render` that will render (put together) our template `blog/post_list.html`.
+Come puoi vedere, abbiamo creato una funzione (`def`) chiamata `post_list` che prende `request` e restituisce `return` una funzione `render` che renderizza (mette insieme) il nostro template `blog/post_list.html`.
 
-Save the file, go to http://127.0.0.1:8000/ and see what we've got.
+Salva il file, vai su http://127.0.0.1:8000/ e guarda cosa abbiamo ottenuto.
 
 Un altro errore! Leggi cosa sta succedendo adesso:
 
@@ -41,4 +41,4 @@ Un altro errore! Leggi cosa sta succedendo adesso:
 
 Questo mostra che almeno il server è ancora attivo, ma ancora non sembra corretto, vero? Non preoccuparti, è solo una pagina di errore, nulla di cui aver paura! Come l messaggi di errore nella console, sono davvero utili. Puoi leggere il *TemplateDoesNotExist*. Correggiamo questo bug e creiamo un template nel capitolo successivo!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Impara di più sulle views di Django leggendo la documentazione ufficiale: https://docs.djangoproject.com/en/2.0/topics/http/views/
