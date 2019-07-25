@@ -4,11 +4,11 @@ Stiamo per costruire la nostra pagina web: una homepage per il tuo blog! Ma prim
 
 ## Che cos'è un URL?
 
-Una URL è semplicemente un indirizzo web. Puoi vedere una URL ogni volta che visiti un sito web - si vede nella barra degli indirizzi del tuo browser. (sì. (Yes! `127.0.0.1:8000` is a URL! And `https://djangogirls.org` is also a URL.)
+Una URL è semplicemente un indirizzo web. Puoi vedere una URL ogni volta che visiti un sito web - si vede nella barra degli indirizzi del tuo browser. (sì. (Ma certo che sì! `127.0.0.1:8000` is a URL! Anche `https://djangogirls.org` è una URL.)
 
 ![Url](images/url.png)
 
-Ogni pagina internet ha bisogno della sua URL. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+Ogni pagina internet ha bisogno della sua URL. In questo modo la tua applicazione sa cosa deve mostrare a un utente che visita una URL. In Django usiamo qualcosa chiamato `URLconf` ( configurazione dell'URL). URLconf è un insieme di modelli che Django cercherà di far corrispondere con l'URL ricevuta per trovare la view giusta.
 
 ## Come funzionano le URL in Django?
 
@@ -21,19 +21,19 @@ Apriamo il file `mysite/urls.py` nel code editor che hai scelto e vediamo com'è
 
 [...]
 """
-from django.contrib import admin
-from django.urls import path
+from django.contrib import path, include
+from django.urls import admin
 
 urlpatterns = [
     path('admin/', admin.site.urls),
 ]
 ```
 
-As you can see, Django has already put something here for us.
+Come puoi vedere, Django ha già predisposto qualcosa per noi in questo file.
 
-Lines between triple quotes (`'''` or `"""`) are called docstrings – you can write them at the top of a file, class or method to describe what it does. Verranno ignorati da Python.
+Le line tra un triplo apice (`'''` o `"""`) sono chiamate docstrings - puoi scriverle all'inizio di file, classi o metodi per descrivere cosa fanno. Verranno ignorati da Python.
 
-The admin URL, which you visited in the previous chapter, is already here:
+L'admin URL , che hai visto nel capitolo precedente è già qui:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -41,17 +41,17 @@ The admin URL, which you visited in the previous chapter, is already here:
     path('admin/', admin.site.urls),
 ```
 
-This line means that for every URL that starts with `admin/`, Django will find a corresponding *view*. In this case, we're including a lot of admin URLs so it isn't all packed into this small file – it's more readable and cleaner.
+Questo significa che per ogni URL che comincia con `admin/` Django troverà la corrispondente *view*. In questo caso stiamo includendo un sacco di admin URL così che non sia tutto imballato in questo piccolo file - è più leggibile e più pulito.
 
 ## Il tuo primo URL Django!
 
-Time to create our first URL! We want 'http://127.0.0.1:8000/' to be the home page of our blog and to display a list of posts.
+E' ora di creare la tua prima URL. Vogliamo usare http://127.0.0.1:8000/ come homepage per il nostro blog e visualizzare il nostro elenco di post.
 
-We also want to keep the `mysite/urls.py` file clean, so we will import URLs from our `blog` application to the main `mysite/urls.py` file.
+Vogliamo anche mantenere il file di `mysite/urls.py` pulito, quindi importeremo le url dalla nostra applicazione `blog` sul file principale `mysite/urls.py`.
 
-Go ahead, add a line that will import `blog.urls`. You will also need to change the `from django.urls…` line because we are using the `include` function here, so you will need to add that import to the line.
+Vai avanti, aggiungi una linea che importerà `blog.urls`. Dovrai anche cambiare la riga `da django.urls…` perché stiamo usando la funzione `include` qui, quindi dovrai aggiungere questa importazione alla riga.
 
-Your `mysite/urls.py` file should now look like this:
+Il tuo file `mysite/urls.py` ora dovrebbe avere questo aspetto:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -69,7 +69,7 @@ Ora Django reindirizzerà tutto ciò che viene da 'http://127.0.0.1:8000/' verso
 
 ## blog.urls
 
-Create a new empty file named `urls.py` in the `blog` directory, and open it in the code editor. All right! Add these first two lines:
+Crea un nuovo file vuoto chiamato `urls.py` nella cartella `blog` e aprilo nell'editor di codice. Tutto a destra! Aggiungi queste prime due righe:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -78,9 +78,9 @@ from django.urls import path
 from . import views
 ```
 
-Here we're importing Django's function `path` and all of our `views` from the `blog` application. (We don't have any yet, but we will get to that in a minute!)
+Qui abbiamo importato la funzione `url` di Django e tutte le nostre `views` dalla applicazione `blog` (Non abbiamo ancora nulla, ma ci arriveremo fra un minuto!)
 
-After that, we can add our first URL pattern:
+Dopo di che, possiamo aggiungere il nostro primo modello di URL:
 
 {% filename %}blog/urls.py{% endfilename %}
 
@@ -90,14 +90,14 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the root URL. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+Come vedi, stiamo assegnando una `view` nominata `post_list` alla URL `^$`. Questo modello URL corrisponde ad una stringa vuota e il risolutore URL Django ignorerà il nome del dominio (es., http://127.0.0.1:8000/) che prefigura il percorso url completo. Questo schema dirà a Django che `views.post_list` è il posto giusto dove andare se qualcuno entra nel tuo sito all'indirizzo 'http://127.0.0.1:8000/'.
 
-The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
+L'ultima parte `name='post_list'` è il nome dell'URL che verrà usata per identificare la view. Può avere lo stesso del nome della view, ma può anche essere qualcosa di completamente diverso. Useremo le URL rinominate successivamente nel progetto quindi è importante dare un nome a ciascuna URL nell'app. Inoltre dovremmo cercare di mantenere i nomi delle URL unici e facili da ricordare.
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+Se provi a guardare adesso http://127.0.0.1:8000/, troverai un qualche tipo di messaggio come 'pagina non disponibile'. Questo perché il server (ricordi quando hai digitato `runserver`?) non è più attivo. Per capirne il motivo dai un occhiata alla console del tuo server.
 
-![Error](images/error1.png)
+![Errore](images/error1.png)
 
-Your console is showing an error, but don't worry – it's actually pretty useful: It's telling you that there is **no attribute 'post_list'**. That's the name of the *view* that Django is trying to find and use, but we haven't created it yet. At this stage, your `/admin/` will also not work. No worries – we will get there. If you see a different error message, try restarting your web server. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together) and restart it by running a `python manage.py runserver` command.
+La tua console sta mostrando un errore, ma non preoccuparti – è davvero molto utile: ti dice che c'è **nessun attributo 'post_list'**. È il nome della *view* che Django prova a cercare e usare, ma non l'abbiamo ancora creata. In questa fase, anche il tuo `/admin/` non funzionerà. Non ti preoccupare, ci arriveremo. Se vedi un altro messaggio di errore, prova a riavviare il server web. Per farlo, nella finestra della console che sta eseguendo il server web, interromperlo premendo Ctrl+C (le chiavi Ctrl+C e il controllo insieme) e riavvialo eseguendo un comando `python manage.py runserver` .
 
-> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> Se vuoi saperne di più su Django URLconfs, dai uno sguardo alla documentazione ufficiale: https://docs.djangoproject.com/en/2.0/topics/http/urls/
