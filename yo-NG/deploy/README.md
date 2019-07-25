@@ -197,7 +197,7 @@ Your site should now be live on the public Internet! Click through to the Python
 
 > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
 
-## Debugging tips
+## Àwọn àbá wíwá ojútùú ìṣòro
 
 Tí o bá rí àṣìṣe kan nígbà tí ìlànà ìṣe `pa_autoconfigure_django.py` n ṣiṣẹ́, lára àwọn ohun tó sábà máa ń fà á nìyí:
 
@@ -205,7 +205,7 @@ Tí o bá rí àṣìṣe kan nígbà tí ìlànà ìṣe `pa_autoconfigure_djan
 - Ṣíṣe àṣìṣe kan nínú URL GitHub rẹ
 - Tí o bá rí àṣìṣe kan tó n sọ pé *"Could not find your settings.py"*, ó ṣeéṣe kó jẹ́ nítorí pé ìwọ kò gbìyànjú láti ṣàfikún gbogbo àwọn fáìlì rẹ sí Git, àti/àbí ìwọ kò ti wọ́n sí GitHub pẹ̀lú àṣeyọrí. Tún ṣàyẹ̀wò abala Git tó wà lókè náà
 
-Tí o bá rí àṣìṣe kan nígbà tí o bá gbìyànjú láti ṣàbẹ̀wò ààyè rẹ, ibi àkọ́kọ́ láti ṣàyẹ̀wò fún ìròyìn wíwá ojútùú ìṣòro ni inú **error log** rẹ. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Tí o bá rí àṣìṣe kan nígbà tí o bá gbìyànjú láti ṣàbẹ̀wò ààyè rẹ, ibi àkọ́kọ́ láti ṣàyẹ̀wò fún ìròyìn wíwá ojútùú ìṣòro ni inú **error log** rẹ. Ìwọ yíò rí atọ́ka kan sí èyí lórí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) PythonAnywhere náà. See if there are any error messages in there; the most recent ones are at the bottom.
 
 There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
