@@ -203,9 +203,9 @@ Tí o bá rí àṣìṣe kan nígbà tí ìlànà ìṣe `pa_autoconfigure_djan
 
 - Tí o bá gbàgbé láti ṣẹ̀dá token API PythonAnywhere rẹ.
 - Ṣíṣe àṣìṣe kan nínú URL GitHub rẹ
-- If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- Tí o bá rí àṣìṣe kan tó n sọ pé *"Could not find your settings.py"*, ó ṣeéṣe kó jẹ́ nítorí pé ìwọ kò gbìyànjú láti ṣàfikún gbogbo àwọn fáìlì rẹ sí Git, àti/àbí ìwọ kò ti wọ́n sí GitHub pẹ̀lú àṣeyọrí. Tún ṣàyẹ̀wò abala Git tó wà lókè náà
 
-If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
+Tí o bá rí àṣìṣe kan nígbà tí o bá gbìyànjú láti ṣàbẹ̀wò ààyè rẹ, ibi àkọ́kọ́ láti ṣàyẹ̀wò fún ìròyìn wíwá ojútùú ìṣòro ni inú **error log** rẹ. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 
 There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
 
