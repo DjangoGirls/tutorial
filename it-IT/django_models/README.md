@@ -170,7 +170,7 @@ Se c'è qualcosa di poco chiaro sui modelli, sentiti libera/o di chiedere al tuo
 
 ### Crea tabelle per i modelli nel tuo database
 
-The last step here is to add our new model to our database. First we have to make Django know that we have some changes in our model. (We have just created it!) Go to your console window and type `python manage.py makemigrations blog`. It will look like this:
+L'ultimo passo è quello di aggiungere un nuovo modello al nostro database. Prima dobbiamo far sapere a Django che ci sono alcuni cambiamenti nel nostro modello (l'abbiamo appena creato. (Vai alla finestra della tua console e digita `python manage.py makemigrations blog`. Il risultato somiglierà a questo:
 
 {% filename %}command-line{% endfilename %}
 
@@ -181,9 +181,9 @@ The last step here is to add our new model to our database. First we have to mak
       - Create model Post
     
 
-**Note:** Remember to save the files you edit. Otherwise, your computer will execute the previous version which might give you unexpected error messages.
+**Nota:** Ricorda di salvare i file che modifica. Altrimenti, il computer eseguirà la versione precedente che potrebbe fornirti messaggi di errore inattesi.
 
-Django prepared a migration file for us that we now have to apply to our database. Type `python manage.py migrate blog` and the output should be as follows:
+Django ci ha preparato un file di migrazione che dobbiamo applicare nel nostro database. Digita `python manage.py migrate blog` e l'output dovrebbe essere:
 
 {% filename %}command-line{% endfilename %}
 
@@ -194,4 +194,4 @@ Django prepared a migration file for us that we now have to apply to our databas
       Applying blog.0001_initial... OK
     
 
-Hurray! Our Post model is now in our database! It would be nice to see it, right? Jump to the next chapter to see what your Post looks like!
+Evviva! Il nostro modello Post ora è nel database! Sarebbe bello poterlo vedere, vero? Vai al prossimo capitolo per vedere com'è il tuo Post!
