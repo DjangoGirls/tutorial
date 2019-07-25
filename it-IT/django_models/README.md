@@ -8,7 +8,7 @@ Esiste un concetto nella programmazione che è quello di `programmazione orienta
 
 Quindi cos'è un oggetto? È un insieme di proprietà ed azioni. Suona strano, ma ti faremo un esempio.
 
-If we want to model a cat, we will create an object `Cat` that has some properties such as `color`, `age`, `mood` (like good, bad, or sleepy ;)), and `owner` (which could be assigned a `Person` object – or maybe, in case of a stray cat, this property could be empty).
+Se vogliamo il modello di un gatto creeremo un oggetto `Gatto` che possiede alcune proprietà come: `colore`, `età`, `umore` (come buono, cattivo, assonnato ;) ) e `padrone` (che è un oggetto `Persona` oppure, nel caso di un gatto randagio, la proprietà sarà vuota).
 
 Quindi il `Gatto` possiede anche alcune azioni: `fare_le_fusa`, `graffiare` e `alimentare` (in quest'ultimo caso, daremo al gatto del `CiboPerGatti`, che sarà un altro oggetto con le sue proprietà, come `gusto`).
 
@@ -55,7 +55,7 @@ Dal momento che sappiamo già cosa vogliamo ottenere, iniziamo a modellarlo in D
 
 Sapendo cos'è un oggetto, possiamo creare un modello Django per il nostro post.
 
-A model in Django is a special kind of object – it is saved in the `database`. Un database è un insieme di dati. È un posto in cui archivierai informazioni sui tuoi utenti, sui tuoi post, ecc. Useremo un database SQLite per archiviare i nostri dati. This is the default Django database adapter – it'll be enough for us right now.
+Un modello in Django è uno speciale tipo di oggetto - è salvato nel `database`. Un database è un insieme di dati. È un posto in cui archivierai informazioni sui tuoi utenti, sui tuoi post, ecc. Useremo un database SQLite per archiviare i nostri dati. Questo è l'adattatore Django di database predefinito -- ci basterà per adesso.
 
 Puoi pensare ad un modello nel database come ad un foglio elettronico con colonne (campi) e righe (dati).
 
@@ -63,7 +63,7 @@ Puoi pensare ad un modello nel database come ad un foglio elettronico con colonn
 
 Per mantenere tutto ordinato, creeremo un'applicazione diversa all'interno del nostro progetto. E' molto bello avere tutto organizzato fin dall'inizio. Per creare un'applicazione abbiamo bisogno di eseguire il seguente comando nella console (dalla cartella `djangogirls` dove si trova il file `manage.py`):
 
-{% filename %}Mac OS X and Linux:{% endfilename %}
+{% filename %}Mac OS X o Linux:{% endfilename %}
 
     (myvenv) ~/djangogirls$ python manage.py startapp blog
     
@@ -73,7 +73,7 @@ Per mantenere tutto ordinato, creeremo un'applicazione diversa all'interno del n
     (myvenv) C:\Users\Name\djangogirls> python manage.py startapp blog
     
 
-You will notice that a new `blog` directory is created and it contains a number of files now. The directories and files in our project should look like this:
+Noterai che si è creata una nuova cartella `blog` e che ora contiene alcuni file. Le nostre cartelle ed i nostri file nel nostro progetto si dovrebbero vedere così:
 
     djangogirls
     ├── blog
@@ -84,19 +84,17 @@ You will notice that a new `blog` directory is created and it contains a number 
     │   │   └── __init__.py
     │   ├── models.py
     │   ├── tests.py
-    |   ├── urls.py
     │   └── views.py
     ├── db.sqlite3
     ├── manage.py
-    ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
-    └── requirements.txt
+    └── mysite
+        ├── __init__.py
+        ├── settings.py
+        ├── urls.py
+        └── wsgi.py
     
 
-After creating an application, we also need to tell Django that it should use it. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog',` just above `]`. So the final product should look like this:
+Dopo aver creato un'applicazione dobbiamo dire a Django che dovrebbe utilizzarla. Lo facciamo nel file `mysite/settings.py` -- aprilo nell'editor di codice. Dobbiamo trovare `INSTALLED_APPS` ed aggiungere una riga che contenga `'blog',` appena sopra`)`. Il progetto dovrebbe assomigliare a questo:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -114,9 +112,9 @@ INSTALLED_APPS = [
 
 ### Creazione di un modello blog post
 
-In the `blog/models.py` file we define all objects called `Models` – this is a place in which we will define our blog post.
+Nel file `blog/models.py` definiamo tutti gli oggetti chiamati `Models` - Questo è il posto dove definiremo il nostro blog post.
 
-Let's open `blog/models.py` in the code editor, remove everything from it, and write code like this:
+Apriamo `blog/models.py`, cancella tutto quello che è lì e scrivi un codice come questo:
 
 {% filename %}blog/models.py{% endfilename %}
 
@@ -143,32 +141,32 @@ class Post(models.Model):
 
 > Assicurati di aver usato 2 underscore (`_`) da entrambi i lati di `str`. Questa convenzione viene utilizzata spesso in Python e a volte li chiamiamo anche "dunder" (abbreviazione di "doppio carattere di sottolineatura").
 
-It looks scary, right? But don't worry – we will explain what these lines mean!
+Sembra spaventoso, vero? ma non ti preoccupare, ti spiegheremo cosa significano queste righe!
 
-All lines starting with `from` or `import` are lines that add some bits from other files. So instead of copying and pasting the same things in every file, we can include some parts with `from ... import ...`.
+Tutte le righe che iniziano con `from` oppure con `import` sono righe che aggiungono alcuni pezzi da altri file. Quindi invece di copiare e incollare le stesse cose in ogni file, possiamo includere alcune parti con `from ... importa ...`.
 
-`class Post(models.Model):` – this line defines our model (it is an `object`).
+`class Post(models.Model):` - questa riga definisce il nostro modello (è un `oggetto`).
 
 - `class` è una parola chiave speciale che indica che stiamo definendo un oggetto.
-- `Post` is the name of our model. We can give it a different name (but we must avoid special characters and whitespace). Always start a class name with an uppercase letter.
+- `Post` è il nome del nostro modello. Possiamo dargli un nome diverso (ma dobbiamo evitare caratteri speciali e spazi). Inizia sempre il nome di una classe con un lettera maiuscola.
 - `models.Model` significa che il Post è un modello Django, quindi Django sa che dovrebbe essere salvato nel database.
 
-Now we define the properties we were talking about: `title`, `text`, `created_date`, `published_date` and `author`. To do that we need to define the type of each field (Is it text? A number? A date? A relation to another object, like a User?)
+Ora definiamo le proprietà di cui stavamo parlando: `titolo`, `testo`, `data_creazione`, `data_pubblicazione` e `autore`. Per fare ciò dobbiamo definire un tipo per ogni campo (è un testo? Un numero? Una data? Una relazione con un altro oggetto, come User?)
 
-- `models.CharField` – this is how you define text with a limited number of characters.
-- `models.TextField` – this is for long text without a limit. Sounds ideal for blog post content, right?
-- `models.DateTimeField` – this is a date and time.
-- `models.ForeignKey` – this is a link to another model.
+- `models.CharField` - così si definisce un testo con un numero limitato di lettere.
+- `models.TextField` - questo è il codice per definire un testo senza un limite. Sembra l'ideale per i contenuti di un post, vero?
+- `models.DateTimeField` - questo per la data ed l'ora.
+- `models.ForeignKey` - questo è un link a un altro modello.
 
-We will not explain every bit of code here since it would take too much time. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Non spiegheremo ogni pezzo di codice perchè ci vorrebbre troppo tempo. Puoi guardare la documentazione di Django se vuoi conoscere meglio i campi per i Model e come definire altre cose oltre a quelle appena descritte (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
 
-What about `def publish(self):`? This is exactly the `publish` method we were talking about before. `def` means that this is a function/method and `publish` is the name of the method. You can change the name of the method if you want. The naming rule is that we use lowercase and underscores instead of spaces. For example, a method that calculates average price could be called `calculate_average_price`.
+Che dire di `def publish(self):`? È esattamente il metodo `pubblicare` di cui stavamo parlando prima. `def` significa che questa è una funzione/metodo e `publish` è il nome del metodo. Puoi modificare il nome del metodo, se vuoi. La regola per la denominazione è usare lettere minuscole e caratteri di sottolineatura al posto degli spazi. Per esempio, un metodo che calcola il prezzo medio potrebbe essere chiamato `calculate_average_price`.
 
-Methods often `return` something. There is an example of that in the `__str__` method. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
+I metodi spesso `restituiscono` qualcosa. C'è un esempio nel metodo `__str__`. In questo caso, quando chiamiamo `__str__()` otterremo un testo (**stringa**) con il titolo del Post.
 
-Also notice that both `def publish(self):` and `def __str__(self):` are indented inside our class. Because Python is sensitive to whitespace, we need to indent our methods inside the class. Otherwise, the methods won't belong to the class, and you can get some unexpected behavior.
+Nota anche che entrambe `def publish(self):` e `def __str__(self):` sono indentate all'interno della classe. Poiché Python è sensibile agli spazi, dobbiamo indentare i nostri metodi dentro alla classe. Altrimenti i metodi non apparterranno alla classe e potresti ottenere qualche comportamento inaspettato.
 
-If something is still not clear about models, feel free to ask your coach! We know it is complicated, especially when you learn what objects and functions are at the same time. But hopefully it looks slightly less magic for you now!
+Se c'è qualcosa di poco chiaro sui modelli, sentiti libera/o di chiedere al tuo coach! Sappiamo che è complicato, soprattutto quando impari cosa sono gli oggetti e le funzioni allo stesso tempo. Ma speriamo che sembri un po' meno magico per te per adesso!
 
 ### Crea tabelle per i modelli nel tuo database
 
