@@ -169,14 +169,14 @@ Bó o ṣe ń wo ìyẹn tó n ṣiṣẹ́, ìwọ yíò lè rí ohun tó ń �
 
 Lórí PythonAnywhere, gbogbo àwọn ìgbésẹ̀ wọ̀nyí máa jẹ́ ṣíṣe fúnra wọn, ṣùgbọ́n wọ́n jẹ́ àwọn ìgbésẹ̀ kannáà tí o ní láti gbà kọjá pẹ̀lú èyíkéyìí olùpèsè server mìíràn.
 
-Ohun pàtàkì láti ṣàkíyèsí ní báyìí ni pé àkójọpọ̀ dátà rẹ lórí PythonAnywhere yàtọ̀ pátápátá sí àkójọpọ̀ dátà rẹ lórí kọ̀mpútà tìẹ, nítorí náà ó lè ní àwọn àròkọ àti account alábòójútó ọ̀tọ̀ọ̀tọ̀. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere ti mú virtualenv rẹ ṣiṣẹ́ fún ẹ fúnra rẹ̀, nítorí náà gbogbo ohun tí o nílò láti ṣe ni:
+Ohun pàtàkì láti ṣàkíyèsí ní báyìí ni pé àkójọpọ̀ dátà rẹ lórí PythonAnywhere yàtọ̀ pátápátá sí àkójọpọ̀ dátà rẹ lórí kọ̀mpútà tìẹ, nítorí náà ó lè ní àwọn àròkọ àti account alábòójútó ọ̀tọ̀ọ̀tọ̀. Nítorí èyí, gẹ́gẹ́ bí a ṣe ṣe lórí kọ̀mpútà tìẹ, a nílò láti bẹ̀rẹ̀ account alábòójútó náà pẹ̀lú `createsuperuser`. PythonAnywhere ti mú virtualenv rẹ ṣiṣẹ́ fún ẹ fúnra rẹ̀, nítorí náà gbogbo ohun tí o nílò láti ṣe ni:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ python manage.py createsuperuser
     
 
-Type in the details for your admin user. Best to use the same ones as you're using on your own computer to avoid any confusion, unless you want to make the password on PythonAnywhere more secure.
+Tẹ àwọn àlàyé fún aṣàmúlò alábòójútó rẹ. Ó dára jù láti lo àwọn ohun kannáà gẹ́gẹ́ bí o ṣé n lo lórí kọ̀mpútà tìẹ láti yẹra fún èyíkéyìí ìdààmú, àyàfi tí o bá fẹ́ mú ọ̀rọ̀ aṣínà lórí PythonAnywhere túbọ̀ láàbò síi.
 
 Ní báyìí, tí o bá fẹ́, o lè tún ṣàyẹ̀wò kóòdù rẹ lórí PythonAnywhere pẹ̀lú lílo `ls`:
 
