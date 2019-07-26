@@ -199,7 +199,7 @@ Ní báyìí, ṣe `pip install -r requirements.txt` láti ṣàgbékalẹ̀ Dja
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Windows platform, please check if your project pathname contains spaces, accents or special characters (for example, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Tí o bá rí àṣìṣe kan nígbà tí o n pe pip lórí ètò Windows, jọ̀wọ́ ṣàyẹ̀wò bóyá orúkọ atọ́nà iṣẹ́ rẹ ní àwọn àlàfo, àmì ohùn tàbí àkànṣe ẹyọ ọ̀rọ̀ (fún àpẹẹrẹ, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
 
 <!--endsec-->
 
@@ -218,7 +218,7 @@ data-collapse=true ces-->
 <!--sec data-title="Installing Django: Linux" data-id="django_err_linux"
 data-collapse=true ces-->
 
-> If you get an error when calling pip on Ubuntu 12.04 please run `python -m pip install -U --force-reinstall pip` to fix the pip installation in the virtualenv.
+> Tí o bá rí àṣìṣe kan nígbà tí o bá n pe pip lórí Ubuntu 12.04, jọ̀wọ́ lo `python -m pip install -U --force-reinstall pip` láti ṣàtúnṣe ìṣàgbékalẹ̀ pip ninu virtualenv náà.
 
 <!--endsec-->
 
