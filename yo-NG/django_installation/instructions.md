@@ -144,7 +144,7 @@ Rántí láti rọ́pò `myvenv` pẹ̀lú orúkọ `virtualenv` rẹ tó o yàn
 
 <!--endsec-->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **ÀKÍYÈSÍ:** Fún àwọn aṣàmúlò olóòtú tó gbajúmọ̀ náà, VS Code, èyí tó wá papọ̀ pẹ̀lú èbúté kan tó dá lórí windows powershell, tí o bá fẹ́ faramọ́ èbúté náà, o lè lo àṣẹ tó tẹ̀le yìí láti mú àyíká àìrí rẹ ṣiṣẹ́:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
