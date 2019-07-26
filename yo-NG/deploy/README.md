@@ -189,7 +189,7 @@ Ní báyìí, tí o bá fẹ́, o lè tún ṣàyẹ̀wò kóòdù rẹ lórí P
     tests.py  views.py
     
 
-You can also go to the "Files" page and navigate around using PythonAnywhere's built-in file browser. (From the Console page, you can get to other PythonAnywhere pages from the menu button in the upper right corner. Once you're on one of the pages, there are links to the other ones near the top.)
+O tún lè lọ sí ojú-ìwé "Files" náà kí o sì lọ káàkiri pẹ̀lú lílo aṣàwákiri fáìlì ti PythonAnywhere. (Láti ojú-ìwé Console náà, o lè dé àwọn ojú-ìwé PythonAnywhere mìíràn láti bọ́tìnnì àkójọ àṣàyàn náà ní igun òkè lápá ọ̀tún. Once you're on one of the pages, there are links to the other ones near the top.)
 
 ## You are now live!
 
