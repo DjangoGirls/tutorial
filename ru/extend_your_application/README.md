@@ -1,3 +1,5 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+
 # Расширяем свое приложение
 
 Мы уже выполнили часть необходимых шагов для создания веб-сайта: мы знаем как создать модель, URL, представление и шаблон. Мы также знаем, как улучшить визуальный дизайн с помощью CSS.
@@ -31,7 +33,7 @@
 
 {% raw %}Нам хотелось бы иметь ссылку с заголовка поста в списке на страницу с подробной информацией о посте. Давай изменим `<h1><a href="">{{ post.title }}</a></h1>`, чтобы получилась ссылка на пост:{% endraw %}
 
-{% filename %}blog/templates/blog/post_list.html{% endfilename %}
+{% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 ```html
 <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
 ```
@@ -56,7 +58,7 @@
 
 Давай создадим URL в файле `blog/urls.py` и укажем Django на *представление* под названием `post_detail`, которое будет отображать пост целиком. Добавь строчку `path('post/<int:pk>/', views.post_detail, name='post_detail')` в файл `blog/urls.py`. Файл должен выглядеть так:
 
-{% filename %}blog/urls.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/urls.py{% endfilename %}
 ```python
 from django.urls import path
 from . import views
@@ -87,7 +89,7 @@ urlpatterns = [
 
 Теперь мы хотим получить одну конкретную запись из блога. Для этого потребуется использовать QuerySet:
 
-{% filename %}blog/views.py{% endfilename %}
+{% filename %}{{ warning_icon }} blog/views.py{% endfilename %}
 ```python
 Post.objects.get(pk=pk)
 ```
@@ -192,9 +194,9 @@ $ git push
 
  [8]: https://www.pythonanywhere.com/consoles/
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ cd my-first-blog
+$ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
 $ git pull
 [...]
 ```

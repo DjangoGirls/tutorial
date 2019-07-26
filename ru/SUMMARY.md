@@ -2,6 +2,7 @@
 
 *   [Введение](README.md)
 *   [Установка](installation/README.md)
+*   [Установка (chromebook)](chromebook_setup/README.md)
 *   [Как работает Интернет](how_the_internet_works/README.md)
 *   [Знакомство с командной строкой](intro_to_command_line/README.md)
 *   [Установка Python](python_installation/README.md)

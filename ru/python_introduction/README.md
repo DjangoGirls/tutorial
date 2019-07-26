@@ -1,3 +1,5 @@
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this command!" ></span>' %}
+
 # Введение в Python
 
 > Часть этой главы основана на учебных пособиях Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
@@ -136,7 +138,7 @@ Type "help", "copyright", "credits" or "license" for more information.
 
 Давай попробуем кое-что новенькое. Можем ли мы получить длину числа так же, как длину твоего имени? Введи `len(304023)` и нажми `Enter`:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> len(304023)
 Traceback (most recent call last):
@@ -211,7 +213,7 @@ TypeError: object of type 'int' has no len()
 
 Но что делать, если мы использовали неправильное имя? Можешь догадаться, что произойдет? Давай попробуем!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> city = "Tokyo"
 >>> ctiy
@@ -277,7 +279,7 @@ Maria
 
 Эта команда не возвращает ничего, она просто меняет порядок номеров в списке. Давайте выведем его на экран и посмотрим, что получилось:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}}command-line{% endfilename %}
 ```python
 >>> print(lottery)
 [3, 12, 19, 30, 42, 59]
@@ -374,7 +376,7 @@ Ola
 
 Что случится, если мы спросим у Python значение несуществующего в словаре ключа? Можешь предположить? Давай попробуем и узнаем наверняка!
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> participant['age']
 Traceback (most recent call last):
@@ -501,7 +503,7 @@ True
 
 Ты когда-нибудь слышала выражение "сравнивать тёплое с мягким"? Попробуем сделать что-то подобное в Python:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```python
 >>> 1 > 'django'
 Traceback (most recent call last):
@@ -665,7 +667,7 @@ if 3 > 2:
 
 Если мы сохраним его и запустим, то получим ошибку:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```
 $ python3 python_intro.py
 File "python_intro.py", line 2
@@ -852,7 +854,7 @@ hi()
 
 Помни: функция `print` расположена внутри блока оператора `if` с отступом в четыре пробела. Это потому, что она запускается тогда, когда выполняется условие. Давай посмотрим, как это работает:
 
-{% filename %}command-line{% endfilename %}
+{% filename %}{{ warning_icon }} command-line{% endfilename %}
 ```
 $ python3 python_intro.py
 Traceback (most recent call last):
