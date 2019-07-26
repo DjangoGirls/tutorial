@@ -205,9 +205,9 @@ Tí o bá rí àṣìṣe kan nígbà tí ìlànà ìṣe `pa_autoconfigure_djan
 - Ṣíṣe àṣìṣe kan nínú URL GitHub rẹ
 - Tí o bá rí àṣìṣe kan tó n sọ pé *"Could not find your settings.py"*, ó ṣeéṣe kó jẹ́ nítorí pé ìwọ kò gbìyànjú láti ṣàfikún gbogbo àwọn fáìlì rẹ sí Git, àti/àbí ìwọ kò ti wọ́n sí GitHub pẹ̀lú àṣeyọrí. Tún ṣàyẹ̀wò abala Git tó wà lókè náà
 
-Tí o bá rí àṣìṣe kan nígbà tí o bá gbìyànjú láti ṣàbẹ̀wò ààyè rẹ, ibi àkọ́kọ́ láti ṣàyẹ̀wò fún ìròyìn wíwá ojútùú ìṣòro ni inú **error log** rẹ. Ìwọ yíò rí atọ́ka kan sí èyí lórí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) PythonAnywhere náà. See if there are any error messages in there; the most recent ones are at the bottom.
+Tí o bá rí àṣìṣe kan nígbà tí o bá gbìyànjú láti ṣàbẹ̀wò ààyè rẹ, ibi àkọ́kọ́ láti ṣàyẹ̀wò fún ìròyìn wíwá ojútùú ìṣòro ni inú **error log** rẹ. Ìwọ yíò rí atọ́ka kan sí èyí lórí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) PythonAnywhere náà. Ṣàyẹ̀wò tí àwọn ìròyìn àṣìṣe kankan bá wà níbẹ̀; àwọn ti àìpẹ́ yìí wà nísàlẹ̀.
 
-There are also some [general debugging tips on the PythonAnywhere help site](http://help.pythonanywhere.com/pages/DebuggingImportError).
+[Àwọn àbá wíwá ojútùú ìṣòro lórí ààyè ìrànlọ́wọ́ PythonAnywhere náà](http://help.pythonanywhere.com/pages/DebuggingImportError) tún wà.
 
 Rántí, olùkọ́ rẹ wà níbí láti ràn ọ́ lọ́wọ́!
 
