@@ -193,7 +193,7 @@ O tún lè lọ sí ojú-ìwé "Files" náà kí o sì lọ káàkiri pẹ̀lú 
 
 ## O tí n ṣiṣẹ́ báyìí!
 
-Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
+Ó yẹ kí ààyè rẹ ti máa ṣiṣẹ́ lórí Íńtánẹ́ẹ̀tì gbangba náà! Tẹ lọ sí ojú-ìwé "Ayélujára" PythonAnywhere náà láti gba atọ́ka kan sí i. O lè pín èyí pẹ̀lú ẹnikẹ́ni tí o bá fẹ́ :)
 
 > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
 
