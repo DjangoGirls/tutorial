@@ -199,14 +199,14 @@ Ní báyìí, ṣe `pip install -r requirements.txt` láti ṣàgbékalẹ̀ Dja
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Tí o bá rí àṣìṣe kan nígbà tí o n pe pip lórí ètò Windows, jọ̀wọ́ ṣàyẹ̀wò bóyá orúkọ atọ́nà iṣẹ́ rẹ ní àwọn àlàfo, àmì ohùn tàbí àkànṣe ẹyọ ọ̀rọ̀ (fún àpẹẹrẹ, `C:\Users\User Name\djangogirls`). If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). Create a new virtualenv in the new directory, then delete the old one and try the above command again. (Moving the virtualenv directory won't work since virtualenv uses absolute paths.)
+> Tí o bá rí àṣìṣe kan nígbà tí o n pe pip lórí ètò Windows, jọ̀wọ́ ṣàyẹ̀wò bóyá orúkọ atọ́nà iṣẹ́ rẹ ní àwọn àlàfo, àmì ohùn tàbí àkànṣe ẹyọ ọ̀rọ̀ (fún àpẹẹrẹ, `C:\Users\User Name\djangogirls`). Tó bá ní, jọ̀wọ́ ṣàgbéyẹ̀wò lílo ibòmíràn láìsí àwọn àlàfo, àmì ohùn tàbí àkànṣe ẹyọ ọ̀rọ̀ (àbá: `C:\djangogirls`). Ṣẹ̀dá virtualenv tuntun kan sínú àkójọpọ̀ fáìlì tuntun náà, lẹ́yìn náà yọ ti tẹ́lẹ̀ kúrò kí o sì gbìyànjú àṣẹ tó wà lókè náà lẹ́ẹ̀kan si. (Gbígbé àkójọpọ̀ fáìlì virtualenv náà kò ní ṣiṣẹ́ nítorí pé virtualenv má n lo àwọn atọ́nà pípé.)
 
 <!--endsec-->
 
 <!--sec data-title="Installing Django: Windows 8 and Windows 10" data-id="django_err_windows8and10"
 data-collapse=true ces-->
 
-> Your command line might freeze after when you try to install Django. If this happens, instead of the above command use:
+> Ìlà ìpàṣẹ rẹ lè dúró gbọn-in lẹ́yìn ìgbà tí o gbìyànjú láti ṣàgbékalẹ̀ Django. Tí èyí bá ṣẹlẹ̀, dípò àṣẹ tó wà lókè náà, lo:
 > 
 > {% filename %}command-line{% endfilename %}
 > 
