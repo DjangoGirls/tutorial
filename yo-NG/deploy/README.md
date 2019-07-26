@@ -169,7 +169,7 @@ Bó o ṣe ń wo ìyẹn tó n ṣiṣẹ́, ìwọ yíò lè rí ohun tó ń �
 
 Lórí PythonAnywhere, gbogbo àwọn ìgbésẹ̀ wọ̀nyí máa jẹ́ ṣíṣe fúnra wọn, ṣùgbọ́n wọ́n jẹ́ àwọn ìgbésẹ̀ kannáà tí o ní láti gbà kọjá pẹ̀lú èyíkéyìí olùpèsè server mìíràn.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere ti mú virtualenv rẹ ṣiṣẹ́ fún ẹ fúnra rẹ̀, nítorí náà gbogbo ohun tí o nílò láti ṣe ni:
+Ohun pàtàkì láti ṣàkíyèsí ní báyìí ni pé àkójọpọ̀ dátà rẹ lórí PythonAnywhere yàtọ̀ pátápátá sí àkójọpọ̀ dátà rẹ lórí kọ̀mpútà tìẹ, nítorí náà ó lè ní àwọn àròkọ àti account alábòójútó ọ̀tọ̀ọ̀tọ̀. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere ti mú virtualenv rẹ ṣiṣẹ́ fún ẹ fúnra rẹ̀, nítorí náà gbogbo ohun tí o nílò láti ṣe ni:
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
