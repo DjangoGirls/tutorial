@@ -189,9 +189,9 @@ Ní báyìí, tí o bá fẹ́, o lè tún ṣàyẹ̀wò kóòdù rẹ lórí P
     tests.py  views.py
     
 
-O tún lè lọ sí ojú-ìwé "Files" náà kí o sì lọ káàkiri pẹ̀lú lílo aṣàwákiri fáìlì ti PythonAnywhere. (Láti ojú-ìwé Console náà, o lè dé àwọn ojú-ìwé PythonAnywhere mìíràn láti bọ́tìnnì àkójọ àṣàyàn náà ní igun òkè lápá ọ̀tún. Once you're on one of the pages, there are links to the other ones near the top.)
+O tún lè lọ sí ojú-ìwé "Files" náà kí o sì lọ káàkiri pẹ̀lú lílo aṣàwákiri fáìlì ti PythonAnywhere. (Láti ojú-ìwé Console náà, o lè dé àwọn ojú-ìwé PythonAnywhere mìíràn láti bọ́tìnnì àkójọ àṣàyàn náà ní igun òkè lápá ọ̀tún. Tí o bá ti wà lórí ọ̀kan lára àwọn ojú-ìwé náà, àwọn atọ́ka sí àwọn yòókù náà yíò wà nítòsí òkè náà.)
 
-## You are now live!
+## O tí n ṣiṣẹ́ báyìí!
 
 Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 
