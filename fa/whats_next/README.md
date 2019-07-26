@@ -35,7 +35,7 @@
 
 #### کار کردن با داده‌ها
 
-- [دروه علم داده Codecademy](https://www.codecademy.com/learn/paths/data-science)
+- [دوره علم داده Codecademy](https://www.codecademy.com/learn/paths/data-science)
 - [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) - بسیاری از دوره‌ها را رایگان می‌توانید شرکت کنید ولی اگر مدرک یا تأییدیه می‌خواهید باید هزینه بپردازید
 - [Dataquest](https://www.dataquest.io/) - سی "مأموریت" اول رایگان هستند
 

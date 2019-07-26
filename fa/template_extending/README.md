@@ -55,7 +55,7 @@
 </html>
 ```
 
-سپس در فایل `base.html`, همه چیز بین `<body>` و &lt;/body&gt; را با کد زیر جایگذاری کنید:
+سپس در فایل `base.html`, همه محتویات تگ `<body>` (همه چیز بین `<body>` و `</body>`) را با کد زیر عوض کنید:
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
@@ -75,7 +75,7 @@
 </body>
 ```
 
-{% raw %} ممکن است توجه کرده باشید که این عمل هر چیزی بین `{% for post in posts %}` و `{% endfor %}` را جایگذاری کرده است با: {% endraw %}
+{% raw %} ممکن است توجه کرده باشید که این عمل هر چیزی بین `{% for post in posts %}` و `{% endfor %}` را با کد زیر عوض کرده است: {% endraw %}
 
 {% filename %}blog/templates/blog/base.html{% endfilename %}
 
