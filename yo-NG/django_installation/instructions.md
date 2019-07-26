@@ -149,7 +149,7 @@ Rántí láti rọ́pò `myvenv` pẹ̀lú orúkọ `virtualenv` rẹ tó o yàn
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> Ànfààní náà ni pé ìwọ kò ní láti pààrọ̀ láàrín àwọn fèrèsé olóòtú àti àwọn fèrèsé ìlà ìpàṣẹ
 
 Ìwọ yíò mọ̀ pé o ti bẹ̀rẹ̀ `virtualenv` nígbà tí o bá rí `(myvenv)` níwájú prompt náà nínú console rẹ.
 
