@@ -45,7 +45,7 @@ Ní báyìí, a kò fẹ́ jáde nínú console Python náà. A fẹ́ kẹ́k�
 - `5 - 1`
 - `40 / 2`
 
-To perform exponential calculation, say 2 to the power 3, we type: {% filename %}command-line{% endfilename %}
+Láti ṣe ìṣirò lọ́nà ìlọ́po, ká sọ pé 2 ní ìlọ́po 3, a máa tẹ: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
@@ -56,9 +56,9 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 
 Gẹ́gẹ́ bó o ṣe ríi, Python jẹ́ ètò-ìṣèṣirò tó wúlò púpọ̀ kan. Tí o bá n ṣe kàyéfì nipa ohun mìíràn tí o lè ṣe…
 
-## Strings
+## Àwọn Fọ́nrán
 
-How about your name? Type your first name in quotes like this:
+Orúkọ rẹ ńkọ́? Tẹ orúkọ àkọ́kọ́ rẹ nínú àwọn àmì àyọlò báyìí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -67,7 +67,7 @@ How about your name? Type your first name in quotes like this:
 'Ola'
 ```
 
-You've now created your first string! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+O ti ṣẹ̀dá fọ́nrán àkọ́kọ́ rẹ báyìí! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
 
 Strings can be strung together. Try this:
 
