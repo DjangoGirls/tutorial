@@ -194,7 +194,7 @@ As you've noticed, your program didn't return anything like it did before. So ho
 'Ola'
 ```
 
-Yippee! Your first variable! :) You can always change what it refers to:
+Yippee! Variable àkọ́kọ́ rẹ! :) O lè tún ṣàyípadà ohun tó n tọ́ka sí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -204,7 +204,7 @@ Yippee! Your first variable! :) You can always change what it refers to:
 'Sonja'
 ```
 
-You can use it in functions too:
+O tún lè lò ó nínú àwọn iṣẹ́:
 
 {% filename %}command-line{% endfilename %}
 
@@ -236,9 +236,9 @@ Traceback (most recent call last):
 NameError: name 'ctiy' is not defined
 ```
 
-An error! As you can see, Python has different types of errors and this one is called a **NameError**. Python will give you this error if you try to use a variable that hasn't been defined yet. If you encounter this error later, check your code to see if you've mistyped any names.
+Àṣìṣe kan! Gẹ́gẹ́ bó o ṣe ríi, Python ní oríṣiríṣi àwọn àṣìṣe àti pé èyí ni a n pè ní **NameError**. Python yíò fún ọ ní àṣìṣe yìí tí o bá gbìyànjú láti po variable kan tí a kò tíì ṣàlàyé. Tí o bá pàdé àṣìṣe yìí tó bá yá, ṣàyẹ̀wò kóòdù rẹ láti wo bóyá o ti ṣe àṣìṣe títẹ àwọn orúkọ kankan.
 
-Play with this for a while and see what you can do!
+Ṣeré pẹ̀lú èyí fún ìgbà díẹ̀ kí o sì rí ohun tí o lè ṣe!
 
 ## The print function
 
