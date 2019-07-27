@@ -131,11 +131,11 @@ O lè máa ronú pé nígbà mìíràn o pe àwọn iṣẹ́ pẹ̀lú `.` kan 
 
 ### Kókó pàtàkì
 
-OK, enough of strings. So far you've learned about:
+O dáa, ó tó nípa àwọn fọ́nrán. Títí di báyìí, o ti kẹ́kọ̀ọ́ nípa:
 
-- **the prompt** – typing commands (code) into the Python prompt results in answers in Python
-- **numbers and strings** – in Python numbers are used for math and strings for text objects
-- **operators** – like `+` and `*`, combine values to produce a new one
+- **prompt náà** – títẹ àwọn àṣẹ (kóòdù) sínú prompt Python náà yíò yọrí sí àwọn ìdáhùn ní Python
+- **àwọn nọ́mbà àti àwọn fọ́nrán** – nínú Python, àwọn nọ́mbà jẹ́ lílò fún ìṣirò àti pé àwọn fọ́nrán fún àwọn ohun èlò ọ̀rọ̀
+- **operators** – bíi `+` àti `*`, máa pa àwọn iye pọ̀ láti gbé iye tuntun kan jáde
 - **functions** – like `upper()` and `len()`, perform actions on objects.
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
