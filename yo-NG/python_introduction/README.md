@@ -87,9 +87,9 @@ O tún lè ṣe ìlọ́po àwọn fọ́nrán pẹ̀lú nọ́mbà kan:
 'OlaOlaOla'
 ```
 
-If you need to put an apostrophe inside your string, you have two ways to do it.
+Tí o bá nílò láti fi kọmá olókè kan sínú fọ́nrán rẹ, o ní ọ̀nà méjì láti gbà ṣe é.
 
-Using double quotes:
+Lílo àmì àyọlò méjì:
 
 {% filename %}command-line{% endfilename %}
 
@@ -98,7 +98,7 @@ Using double quotes:
 "Runnin' down the hill"
 ```
 
-or escaping the apostrophe with a backslash (``):
+tàbí yẹra fún kọmá olókè náà pẹ̀lú àmì adagun sósì kan (``):
 
 {% filename %}command-line{% endfilename %}
 
@@ -107,7 +107,7 @@ or escaping the apostrophe with a backslash (``):
 "Runnin' down the hill"
 ```
 
-Nice, huh? To see your name in uppercase letters, type:
+Ó dára, àbí bẹ́ẹ̀ kọ? Láti rí orúkọ rẹ ní àwọn lẹ́tà-ńlá, tẹ:
 
 {% filename %}command-line{% endfilename %}
 
@@ -116,7 +116,7 @@ Nice, huh? To see your name in uppercase letters, type:
 'OLA'
 ```
 
-You just used the `upper` **method** on your string! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+O ṣẹ̀ṣẹ̀ lo **ọ̀nà** `upper` lórí fọ́nrán rẹ! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
 
 If you want to know the number of letters contained in your name, there is a **function** for that too!
 
