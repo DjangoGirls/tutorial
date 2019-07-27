@@ -127,7 +127,7 @@ Tí o bá fẹ́ mọ iye lẹ́tà tó wà nínú orúkọ rẹ, **iṣẹ́** 
 3
 ```
 
-O lè máa ronú pé nígbà mìíràn o pe àwọn iṣẹ́ pẹ̀lú `.` kan ní ìparí fọ́nrán kan (bíi `"Ola".upper()`) àti pé nígbà mìíràn o kọ́kọ́ pe iṣẹ́ kan tí o sì fi fọ́nrán náà sínú àkámọ́? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+O lè máa ronú pé nígbà mìíràn o pe àwọn iṣẹ́ pẹ̀lú `.` kan ní ìparí fọ́nrán kan (bíi `"Ola".upper()`) àti pé nígbà mìíràn o kọ́kọ́ pe iṣẹ́ kan tí o sì fi fọ́nrán náà sínú àkámọ́? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. Ní irú ìṣẹ̀lẹ̀ yìí, a pe iṣẹ́ náà ní **ọ̀nà** kan. Ní àwọn ìgbà mìíràn, àwọn iṣẹ́ kìí ṣe ti ohunkóhun pàtó àti pé ó lè jẹ́ lílò lórí oríṣiríṣi ohun èlò, gẹ́gẹ́ bí `len()`. Ìdí nìyẹn tí a ṣé n gbé `"Ola"` kalẹ̀ gẹ́gẹ́ bí parameter kan sí iṣẹ́ `len` náà.
 
 ### Kókó pàtàkì
 
