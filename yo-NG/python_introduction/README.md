@@ -4,13 +4,13 @@
 
 > Apá kan lára àkòrí yìí dá lórí àwọn àlàyé ti Geek Girls Carrots (https://github.com/ggcarrots/django-carrots).
 
-Let's write some code!
+Jẹ́ ká kọ àwọn kóòdù kan!
 
 ## Python prompt
 
 > For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
 
-To start playing with Python, we need to open up a *command line* on your computer. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Láti bẹ̀rẹ̀ ṣíṣe eré pẹ̀lú Python, a nílò láti ṣí *ìlà ìpàṣẹ* kan kalẹ̀ lórí kọ̀mpútà rẹ. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
 
 Once you're ready, follow the instructions below.
 
@@ -24,7 +24,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
     >>>
     
 
-## Your first Python command!
+## Àṣẹ Python àkọ́kọ́ rẹ!
 
 After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
 
