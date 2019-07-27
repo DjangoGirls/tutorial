@@ -8,11 +8,11 @@ Jẹ́ ká kọ àwọn kóòdù kan!
 
 ## Python prompt
 
-> For readers at home: this part is covered in the [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U) video.
+> Fún àwọn òǹkàwé ní ilé: a ti ṣàlàyé apá yìí nínú fídíò [Python Basics: Integers, Strings, Lists, Variables and Errors](https://www.youtube.com/watch?v=MO63L4s-20U).
 
-Láti bẹ̀rẹ̀ ṣíṣe eré pẹ̀lú Python, a nílò láti ṣí *ìlà ìpàṣẹ* kan kalẹ̀ lórí kọ̀mpútà rẹ. You should already know how to do that – you learned it in the [Intro to Command Line](../intro_to_command_line/README.md) chapter.
+Láti bẹ̀rẹ̀ ṣíṣe eré pẹ̀lú Python, a nílò láti ṣí *ìlà ìpàṣẹ* kan kalẹ̀ lórí kọ̀mpútà rẹ. Ó yẹ kí o ti mọ bí o ṣe lè ṣe ìyẹn – o ti kọ́ ọ nínú àkòrí [Ìfihàn sí Ìlà Ìpàṣẹ](../intro_to_command_line/README.md) náà.
 
-Once you're ready, follow the instructions below.
+Tí o bá ti ṣetán, tẹ̀lé àwọn ìtọ́sọ́nà tó wà nísàlẹ̀.
 
 A fẹ́ ṣí console Python kan, nítorí náà tẹ `python` lórí Windows tàbí `python3` lórí Mac OS/Linux kí o sì tẹ `enter`.
 
