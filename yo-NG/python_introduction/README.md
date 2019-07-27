@@ -140,9 +140,9 @@ OK, enough of strings. So far you've learned about:
 
 These are the basics of every programming language you learn. Ready for something harder? We bet you are!
 
-## Errors
+## Àwọn Àṣìṣe
 
-Let's try something new. Can we get the length of a number the same way we could find out the length of our name? Type in `len(304023)` and hit `enter`:
+Jẹ́ ká gbìyànjú nnkan tuntun kan. Ṣe a lè gba gígùn nọ́mbà kan lọ́nà kannáà tí a gbà wádìí gígùn orúkọ wa? Tẹ `len(304023)` kí o sì tẹ `enter`:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-We got our first error! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Making mistakes (even intentional ones) are an important part of learning!
+A rí àṣìṣe àkọ́kọ́ wa! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Ṣíṣe àṣìṣe (kódà àwọn tí o mọ̀ọ́mọ̀ ṣe) jẹ́ apá kan tó ṣe pàtàkì nínú ìkẹ́kọ̀ọ́!
 
 It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
 
