@@ -116,9 +116,9 @@ tàbí yẹra fún kọmá olókè náà pẹ̀lú àmì adagun sósì kan (``):
 'OLA'
 ```
 
-O ṣẹ̀ṣẹ̀ lo **ọ̀nà** `upper` lórí fọ́nrán rẹ! A method (like `upper()`) is a sequence of instructions that Python has to perform on a given object (`"Ola"`) once you call it.
+O ṣẹ̀ṣẹ̀ lo **ọ̀nà** `upper` lórí fọ́nrán rẹ! Ọ̀nà kan (bíi `upper()`) jẹ́ ìtòtẹ̀léra àwọn ìtọ́sọ́nà tí Python ní láti ṣe lórí ohun èlò kan tí a fun (`"Ola"`) nígbà tí o bá pè é.
 
-If you want to know the number of letters contained in your name, there is a **function** for that too!
+Tí o bá fẹ́ mọ iye lẹ́tà tó wà nínú orúkọ rẹ, **iṣẹ́** kan wà fún ìyẹn náà!
 
 {% filename %}command-line{% endfilename %}
 
@@ -127,7 +127,7 @@ If you want to know the number of letters contained in your name, there is a **f
 3
 ```
 
-Wonder why sometimes you call functions with a `.` at the end of a string (like `"Ola".upper()`) and sometimes you first call a function and place the string in parentheses? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
+O lè máa ronú pé nígbà mìíràn o pe àwọn iṣẹ́ pẹ̀lú `.` kan ní ìparí fọ́nrán kan (bíi `"Ola".upper()`) àti pé nígbà mìíràn o kọ́kọ́ pe iṣẹ́ kan tí o sì fi fọ́nrán náà sínú àkámọ́? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. In this case, we call the function a **method**. Other times, functions don't belong to anything specific and can be used on different types of objects, just like `len()`. That's why we're giving `"Ola"` as a parameter to the `len` function.
 
 ### Summary
 
