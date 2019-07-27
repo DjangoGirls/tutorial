@@ -136,9 +136,9 @@ O dáa, ó tó nípa àwọn fọ́nrán. Títí di báyìí, o ti kẹ́kọ̀�
 - **prompt náà** – títẹ àwọn àṣẹ (kóòdù) sínú prompt Python náà yíò yọrí sí àwọn ìdáhùn ní Python
 - **àwọn nọ́mbà àti àwọn fọ́nrán** – nínú Python, àwọn nọ́mbà jẹ́ lílò fún ìṣirò àti pé àwọn fọ́nrán fún àwọn ohun èlò ọ̀rọ̀
 - **operators** – bíi `+` àti `*`, máa pa àwọn iye pọ̀ láti gbé iye tuntun kan jáde
-- **functions** – like `upper()` and `len()`, perform actions on objects.
+- **àwọn iṣẹ́** – bíi `upper()` àti `len()`, máa ṣiṣẹ́ lórí àwọn ohun èlò.
 
-These are the basics of every programming language you learn. Ready for something harder? We bet you are!
+Àwọn wọ̀nyí jẹ́ àwọn ìpìlẹ̀ gbogbo èdè kóòdù kíkọ tí o bá kọ́. Ṣé o ti ṣetán fún nnkan tó túbọ̀ ṣòro? A retí pé o ti ṣetán!
 
 ## Àwọn Àṣìṣe
 
