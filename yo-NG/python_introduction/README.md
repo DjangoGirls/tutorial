@@ -26,7 +26,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 ## Àṣẹ Python àkọ́kọ́ rẹ!
 
-After running the Python command, the prompt changed to `>>>`. For us this means that for now we may only use commands in the Python language. You don't have to type in `>>>` – Python will do that for you.
+Lẹ́yìn ṣíṣe àṣẹ Python náà, prompt náà yípadà sí `>>>`. Fún wa, èyí túmọ̀ sí pé ní báyìí a lè lo àwọn àṣẹ ni èdè Python nìkan. Ìwọ kò ní láti tẹ `>>>` – Python yíò ṣe ìyẹn fún ẹ.
 
 If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
 
@@ -52,7 +52,7 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 8
 ```
 
-Have fun with this for a little while and then get back here. :)
+Ṣeré pẹ̀lú èyí fún ìgbà díẹ̀ kí o sì padà síbí lẹ́yìn náà. :)
 
 As you can see, Python is a great calculator. If you're wondering what else you can do…
 
