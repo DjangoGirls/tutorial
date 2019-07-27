@@ -155,7 +155,7 @@ TypeError: object of type 'int' has no len()
 
 A rí àṣìṣe àkọ́kọ́ wa! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Ṣíṣe àṣìṣe (kódà àwọn tí o mọ̀ọ́mọ̀ ṣe) jẹ́ apá kan tó ṣe pàtàkì nínú ìkẹ́kọ̀ọ́!
 
-It says that objects of type "int" (integers, whole numbers) have no length. So what can we do now? Maybe we can write our number as a string? Strings have a length, right?
+Ó sọ wípé àwọn ohun èlò tó jẹ́ irú "int" (integers, àwọn nọ́mbà odidi) kò ní gígùn. Nítorí náà, kí ní a lè ṣe báyìí? Bóyá a lè kọ nọ́mbà wa gẹ́gẹ́ bí fọ́nrán kan? Àwọn fọ́nrán ní gígùn kan, àbí bẹ́ẹ̀ kọ?
 
 {% filename %}command-line{% endfilename %}
 
@@ -164,14 +164,14 @@ It says that objects of type "int" (integers, whole numbers) have no length. So 
 6
 ```
 
-It worked! We used the `str` function inside of the `len` function. `str()` converts everything to strings.
+Ó ṣiṣẹ́! A lo iṣẹ́ `str` nínú iṣẹ́ `len` náà. `str()` yíò yí gbogbo nnkan sí àwọn fọ́nrán.
 
-- The `str` function converts things into **strings**
-- The `int` function converts things into **integers**
+- Iṣẹ́ `str` náà yíò ṣàyípadà àwọn nnkan sí **fọ́nrán**
+- Iṣẹ́ `int` náà yíò ṣàyípadà àwọn nnkan sí **nọ́mbà odidi**
 
-> Important: we can convert numbers into text, but we can't necessarily convert text into numbers – what would `int('hello')` be anyway?
+> Ní pàtàkì: a lè ṣàyípadà àwọn nọ́mbà sí ọ̀rọ̀, ṣùgbọ́n a kò lè fi dandan ṣàyípadà ọ̀rọ̀ sí nọ́mbà – kíni `int('hello')` yíò jẹ́ gan-an?
 
-## Variables
+## Àwọn variable
 
 An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
