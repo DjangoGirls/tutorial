@@ -45,7 +45,7 @@ Ní báyìí, a kò fẹ́ jáde nínú console Python náà. A fẹ́ kẹ́k�
 - `5 - 1`
 - `40 / 2`
 
-Láti ṣe ìṣirò lọ́nà ìlọ́po, ká sọ pé 2 ní ìlọ́po 3, a máa tẹ: {% filename %}command-line{% endfilename %}
+Láti ṣe ìṣirò lọ́nà ìlọ́po agbára, ká sọ pé 2 ní ìlọ́po agbára 3, a máa tẹ: {% filename %}command-line{% endfilename %}
 
 ```python
 >>> 2 ** 3
@@ -69,7 +69,7 @@ Orúkọ rẹ ńkọ́? Tẹ orúkọ àkọ́kọ́ rẹ nínú àwọn àmì �
 
 O ti ṣẹ̀dá fọ́nrán àkọ́kọ́ rẹ báyìí! Ó jẹ́ ìtòtẹ̀léra àwọn ẹyọ ọ̀rọ̀ tí kọ̀mpútà kan lè ṣiṣẹ́ lórí. Fọ́nrán náà gbọ́dọ̀ bẹ̀rẹ̀ àti parí pẹ̀lú ẹyọ ọ̀rọ̀ kannáà. Èyí lè jẹ́ àwọn àmì àyọlò kan ṣoṣo (`'`) tàbí méjì (`"`) (kò sí ìyàtọ̀!) Àwọn àmì àyọlò náà n sọ fún Python pé ohunkóhun tó wà nínú wọn jẹ́ fọ́nrán kan.
 
-Strings can be strung together. Try this:
+A lè so àwọn fọ́nrán papọ̀. Gbìyànjú èyí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -78,7 +78,7 @@ Strings can be strung together. Try this:
 'Hi there Ola'
 ```
 
-You can also multiply strings with a number:
+O tún lè ṣe ìlọ́po àwọn fọ́nrán pẹ̀lú nọ́mbà kan:
 
 {% filename %}command-line{% endfilename %}
 
