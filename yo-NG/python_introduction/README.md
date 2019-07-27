@@ -127,7 +127,7 @@ Tí o bá fẹ́ mọ iye lẹ́tà tó wà nínú orúkọ rẹ, **iṣẹ́** 
 3
 ```
 
-O lè máa ronú pé nígbà mìíràn o pe àwọn iṣẹ́ pẹ̀lú `.` kan ní ìparí fọ́nrán kan (bíi `"Ola".upper()`) àti pé nígbà mìíràn o kọ́kọ́ pe iṣẹ́ kan tí o sì fi fọ́nrán náà sínú àkámọ́? Well, in some cases, functions belong to objects, like `upper()`, which can only be performed on strings. Ní irú ìṣẹ̀lẹ̀ yìí, a pe iṣẹ́ náà ní **ọ̀nà** kan. Ní àwọn ìgbà mìíràn, àwọn iṣẹ́ kìí ṣe ti ohunkóhun pàtó àti pé ó lè jẹ́ lílò lórí oríṣiríṣi ohun èlò, gẹ́gẹ́ bí `len()`. Ìdí nìyẹn tí a ṣé n gbé `"Ola"` kalẹ̀ gẹ́gẹ́ bí parameter kan sí iṣẹ́ `len` náà.
+O lè máa ronú pé nígbà mìíràn o pe àwọn iṣẹ́ pẹ̀lú `.` kan ní ìparí fọ́nrán kan (bíi `"Ola".upper()`) àti pé nígbà mìíràn o kọ́kọ́ pe iṣẹ́ kan tí o sì fi fọ́nrán náà sínú àkámọ́? Ó dáa, ní àwọn ìṣẹ̀lẹ̀ kan, àwọn iṣẹ́ jẹ́ ti àwọn ohun èlò, bíi `upper()`, èyí tó lè gba ṣíṣe lórí àwọn fọ́nrán nìkan. Ní irú ìṣẹ̀lẹ̀ yìí, a pe iṣẹ́ náà ní **ọ̀nà** kan. Ní àwọn ìgbà mìíràn, àwọn iṣẹ́ kìí ṣe ti ohunkóhun pàtó àti pé ó lè jẹ́ lílò lórí oríṣiríṣi ohun èlò, gẹ́gẹ́ bí `len()`. Ìdí nìyẹn tí a ṣé n gbé `"Ola"` kalẹ̀ gẹ́gẹ́ bí parameter kan sí iṣẹ́ `len` náà.
 
 ### Kókó pàtàkì
 
@@ -153,7 +153,7 @@ Traceback (most recent call last):
 TypeError: object of type 'int' has no len()
 ```
 
-A rí àṣìṣe àkọ́kọ́ wa! The {{ warning_icon }} icon is our way of giving you a heads up that the code you are about to run won't work as expected. Ṣíṣe àṣìṣe (kódà àwọn tí o mọ̀ọ́mọ̀ ṣe) jẹ́ apá kan tó ṣe pàtàkì nínú ìkẹ́kọ̀ọ́!
+A rí àṣìṣe àkọ́kọ́ wa! Àwòrán aṣàmì {{ warning_icon }} náà jẹ́ ọ̀nà wa láti fún ọ ní ìkìlọ̀ pé kóòdù tí o fẹ́ ṣe kò ní ṣiṣẹ́ bí o ti retí. Ṣíṣe àṣìṣe (kódà àwọn tí o mọ̀ọ́mọ̀ ṣe) jẹ́ apá kan tó ṣe pàtàkì nínú ìkẹ́kọ̀ọ́!
 
 Ó sọ wípé àwọn ohun èlò tó jẹ́ irú "int" (integers, àwọn nọ́mbà odidi) kò ní gígùn. Nítorí náà, kí ní a lè ṣe báyìí? Bóyá a lè kọ nọ́mbà wa gẹ́gẹ́ bí fọ́nrán kan? Àwọn fọ́nrán ní gígùn kan, àbí bẹ́ẹ̀ kọ?
 
@@ -175,7 +175,7 @@ A rí àṣìṣe àkọ́kọ́ wa! The {{ warning_icon }} icon is our way of g
 
 An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
-Let's say we want to create a new variable called `name`:
+Jẹ́ ká sọ pé a fẹ́ ṣẹ̀dá variable tuntun kan tí a n pè ní `name`:
 
 {% filename %}command-line{% endfilename %}
 
@@ -183,7 +183,7 @@ Let's say we want to create a new variable called `name`:
 >>> name = "Ola"
 ```
 
-We type name equals Ola.
+A tẹ orúkọ dọ́gba pẹ̀lú Ola.
 
 As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
 
