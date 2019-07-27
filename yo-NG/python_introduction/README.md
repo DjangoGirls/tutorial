@@ -67,7 +67,7 @@ Orúkọ rẹ ńkọ́? Tẹ orúkọ àkọ́kọ́ rẹ nínú àwọn àmì �
 'Ola'
 ```
 
-O ti ṣẹ̀dá fọ́nrán àkọ́kọ́ rẹ báyìí! It's a sequence of characters that can be processed by a computer. The string must always begin and end with the same character. This may be single (`'`) or double (`"`) quotes (there is no difference!) The quotes tell Python that what's inside of them is a string.
+O ti ṣẹ̀dá fọ́nrán àkọ́kọ́ rẹ báyìí! Ó jẹ́ ìtòtẹ̀léra àwọn ẹyọ ọ̀rọ̀ tí kọ̀mpútà kan lè ṣiṣẹ́ lórí. Fọ́nrán náà gbọ́dọ̀ bẹ̀rẹ̀ àti parí pẹ̀lú ẹyọ ọ̀rọ̀ kannáà. Èyí lè jẹ́ àwọn àmì àyọlò kan ṣoṣo (`'`) tàbí méjì (`"`) (kò sí ìyàtọ̀!) Àwọn àmì àyọlò náà n sọ fún Python pé ohunkóhun tó wà nínú wọn jẹ́ fọ́nrán kan.
 
 Strings can be strung together. Try this:
 
