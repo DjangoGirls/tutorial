@@ -42,11 +42,11 @@ CSS یا (Cascading Style Sheets) زبان مورد استفاده برای تو
 ما این کار را با ایجاد یک پوشه به نام `static` در داخل برنامه وبلاگ انجام می‌دهیم:
 
     djangogirls
-    ┤── blog
-    │   ┤── migrations
-    │   ┤── static
-    │   ┘── templates
-    ┘── mysite
+    ├── blog
+    │   ├── migrations
+    │   ├── static
+    │   └── templates
+    └── mysite
     
 
 جنگو به طور خودکار هر پوشه‌ای با نام "static" را در پوشه اپلیکیشن‌های شما پیدا خواهد کرد. پس از آن قادر است از محتوای آن‌ها به عنوان فایل ایستا استفاده کند.
