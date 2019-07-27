@@ -28,7 +28,7 @@ We want to open up a Python console, so type in `python` on Windows or `python3`
 
 Lẹ́yìn ṣíṣe àṣẹ Python náà, prompt náà yípadà sí `>>>`. Fún wa, èyí túmọ̀ sí pé ní báyìí a lè lo àwọn àṣẹ ni èdè Python nìkan. Ìwọ kò ní láti tẹ `>>>` – Python yíò ṣe ìyẹn fún ẹ.
 
-If you want to exit the Python console at any point, type `exit()` or use the shortcut `Ctrl + Z` for Windows and `Ctrl + D` for Mac/Linux. Then you won't see `>>>` any longer.
+Tí o bá fẹ́ jáde nínú console Python náà nígbàkigbà, tẹ `exit()` tàbí lo àbùjá `Ctrl + Z` fún Windows àti `Ctrl + D` fún Mac/Linux. Then you won't see `>>>` any longer.
 
 For now, we don't want to exit the Python console. We want to learn more about it. Let's start by typing some math, like `2 + 3` and hitting `enter`.
 
