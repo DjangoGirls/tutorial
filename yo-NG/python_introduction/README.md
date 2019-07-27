@@ -14,7 +14,7 @@ Láti bẹ̀rẹ̀ ṣíṣe eré pẹ̀lú Python, a nílò láti ṣí *ìlà 
 
 Once you're ready, follow the instructions below.
 
-We want to open up a Python console, so type in `python` on Windows or `python3` on Mac OS/Linux and hit `enter`.
+A fẹ́ ṣí console Python kan, nítorí náà tẹ `python` lórí Windows tàbí `python3` lórí Mac OS/Linux kí o sì tẹ `enter`.
 
 {% filename %}command-line{% endfilename %}
 
