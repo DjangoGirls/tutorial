@@ -39,7 +39,7 @@ Ní báyìí, a kò fẹ́ jáde nínú console Python náà. A fẹ́ kẹ́k�
 5
 ```
 
-Nice! See how the answer popped out? Python knows math! You could try other commands like:
+Ó dára! Wo bí ìdáhùn náà ṣe yọ síta? Python mọ ìṣirò! O lè gbìyànjú àwọn àṣẹ mìíràn bíi:
 
 - `4 * 5`
 - `5 - 1`
