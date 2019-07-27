@@ -54,7 +54,7 @@ To perform exponential calculation, say 2 to the power 3, we type: {% filename %
 
 Ṣeré pẹ̀lú èyí fún ìgbà díẹ̀ kí o sì padà síbí lẹ́yìn náà. :)
 
-As you can see, Python is a great calculator. If you're wondering what else you can do…
+Gẹ́gẹ́ bó o ṣe ríi, Python jẹ́ ètò-ìṣèṣirò tó wúlò púpọ̀ kan. Tí o bá n ṣe kàyéfì nipa ohun mìíràn tí o lè ṣe…
 
 ## Strings
 
