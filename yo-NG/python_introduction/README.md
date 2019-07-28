@@ -296,7 +296,7 @@ Bẹ́ẹ̀ ni! `len()` lè fún ọ ní iye àwọn ohun èlò tó wà nínú �
 >>> lottery.sort()
 ```
 
-This doesn't return anything, it just changed the order in which the numbers appear in the list. Let's print it out again and see what happened:
+Èyí kò dá ohunkóhun padà, ó kàn ṣàyípadà ètò èyí tí àwọn nọ́mbà náà fi fojú hàn nínú àkójọ náà. Jẹ́ ká ṣàtẹ̀jáde rẹ̀ lẹ́ẹ̀kan síi kí a wo ohun tó ṣẹlẹ̀:
 
 {% filename %}command-line{% endfilename %}
 
