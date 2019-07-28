@@ -240,7 +240,7 @@ NameError: name 'ctiy' is not defined
 
 Ṣeré pẹ̀lú èyí fún ìgbà díẹ̀ kí o sì rí ohun tí o lè ṣe!
 
-## The print function
+## Iṣẹ́ print náà
 
 Gbìyànjú èyí:
 
