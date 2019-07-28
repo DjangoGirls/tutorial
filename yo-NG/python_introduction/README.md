@@ -288,7 +288,7 @@ Kò burú, a ti ní àkójọ kan! Kíni a lè ṣe pẹ̀lú rẹ̀? Jẹ́ ká
 6
 ```
 
-Yes! `len()` can give you a number of objects in a list. Handy, right? Maybe we will sort it now:
+Bẹ́ẹ̀ ni! `len()` lè fún ọ ní iye àwọn ohun èlò tó wà nínú àkójọ kan. Ó wúlò, àbí bẹ́ẹ̀ kọ? Bóyá a ó ṣètò rẹ̀ ní báyìí:
 
 {% filename %}command-line{% endfilename %}
 
