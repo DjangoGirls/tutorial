@@ -242,7 +242,7 @@ NameError: name 'ctiy' is not defined
 
 ## The print function
 
-Try this:
+Gbìyànjú èyí:
 
 {% filename %}command-line{% endfilename %}
 
