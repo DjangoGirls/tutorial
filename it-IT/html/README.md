@@ -57,7 +57,7 @@ Ha funzionato! Ottimo lavoro :)
 * Il comando più basico, `<html>`, è sempre l'inizio di ogni pagina web e `</html>` è sempre la fine. Come puoi vedere, l'intero contenuto del sito va tra il tag iniziale `<html>` ed il tag conclusivo `</html>`
 * `<p>` è un tag per gli elementi paragrafo; `</p>` conclude ogni paragrafo
 
-## Head and body
+## Testa e corpo
 
 Ciascuna pagina HTML è a sua volta divisa in due elementi: **head** e **body**.
 
