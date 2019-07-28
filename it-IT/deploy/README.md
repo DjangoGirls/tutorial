@@ -95,7 +95,7 @@ Quindi, crea un nuovo repository con il il nome "my-first-blog". Lascia deselezi
 
 > **Nota** Il nome `my-first-blog` è importante -- potresti sceglierne un altro, ma il nome verrà ripetuto un sacco di volte nelle istruzioni qui sotto, e dovresti sostituirlo ogni volta. Probabilmente è più facile mantenere il nome `my-first-blog`.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+Sulla prossima schermata, ti sarà mostrato il tuo clone URL ricopiato, che userai in alcuni dei comandi che seguono:
 
 ![](images/github_get_repo_url_screenshot.png)
 
