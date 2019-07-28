@@ -224,7 +224,7 @@ Awesome, right? Now, variables can be anything – numbers too! Try this:
 24
 ```
 
-But what if we used the wrong name? Can you guess what would happen? Let's try!
+Ṣùgbọ́n tí a bá lo orúkọ tí kò tọ́ ńkọ́? Kí lo rò pé yíò ṣẹlẹ̀? Jẹ́ ká gbìyànjú!
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
