@@ -463,9 +463,9 @@ As well as this, you can also change a value associated with an already-created 
 
 As you can see, the value of the key `'country'` has been altered from `'Poland'` to `'Germany'`. :) Exciting? Hurrah! You just learned another amazing thing.
 
-### Summary
+### Kókó pàtàkì
 
-Awesome! You know a lot about programming now. In this last part you learned about:
+Ó dára! O mọ púpọ̀ nípa kóòdù kíkọ ní báyìí. Ní apá tó gbẹ̀yìn yìí, o ti kẹ́kọ̀ọ́ nípa:
 
 - **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
 - **variables** – names for objects that allow you to code more easily and to make your code more readable
