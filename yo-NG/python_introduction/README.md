@@ -258,9 +258,9 @@ Nígbà tí o bá tẹ `name`, ètò àgbékalẹ̀ Python náà yíò fèsì pa
 
 Gẹ́gẹ́ bí a óò ṣe ri tó bá yá, `print()` tún wúlò nígbà tí a bá fẹ́ ṣàtẹ̀jáde àwọn nnkan láti inú àwọn iṣẹ́, tàbí nígbà tí a bá fẹ́ ṣàtẹ̀jáde àwọn nnkan lórí ọ̀pọ̀lọpọ̀ ìlà.
 
-## Lists
+## Àwọn àkójọ
 
-Beside strings and integers, Python has all sorts of different types of objects. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Yàtọ̀ sí àwọn fọ́nrán àti àwọn nọ́mbà odidi, Python ní gbogbo onírúurú àwọn ohun èlò ọ̀tọ̀ọ̀tọ̀. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
 
 Go ahead and create a list:
 
