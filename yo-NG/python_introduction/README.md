@@ -557,9 +557,9 @@ Incidentally, you just learned about a new type of object in Python. It's called
 - True
 - False
 
-Ṣùgbọ́n fún Python láti mọ èyí, o nílò láti rí pé o kọ́ gẹ́gẹ́ bí 'True' (tí lẹ́tà àkọ́kọ́ máa jẹ́ lẹ́tà-ńlá, tí àwọn lẹ́tà yòókù máa jẹ́ lẹ́tà kékeré). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Ṣùgbọ́n fún Python láti mọ èyí, o nílò láti rí pé o kọ́ gẹ́gẹ́ bí 'True' (tí lẹ́tà àkọ́kọ́ máa jẹ́ lẹ́tà-ńlá, tí àwọn lẹ́tà yòókù máa jẹ́ lẹ́tà kékeré). **true, TRUE, àti tRUE kò ní ṣiṣẹ́ – True nìkan ló tọ́.** (Bẹ́ẹ̀ náà ló ṣe jẹ́ sí 'False' bákan náà.)
 
-Booleans can be variables, too! See here:
+Àwọn Boolean lè jẹ́ variable, pẹ̀lú! Wo ibí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -569,7 +569,7 @@ Booleans can be variables, too! See here:
 True
 ```
 
-You can also do it this way:
+O tún lè ṣe é lọ́nà yìí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -579,16 +579,16 @@ You can also do it this way:
 False
 ```
 
-Practice and have fun with Booleans by trying to run the following commands:
+Ṣe ìdánrawò kí o sì ṣeré pẹ̀lú àwọn Boolean nípasẹ̀ ìgbìyànjú láti ṣe àwọn àṣẹ tó tẹ̀le yìí:
 
 - `True and True`
 - `False and True`
 - `True or 1 == 1`
 - `1 != 2`
 
-Congrats! Booleans are one of the coolest features in programming, and you just learned how to use them!
+Kú oríire! Àwọn Boolean jẹ́ ọ̀kan lára àwọn ẹyà tó dára jù nínú kóòdù kíkọ, àti pé o ṣẹ̀ṣẹ̀ kẹ́kọ̀ọ́ bí o ṣe lè lò wọ́n!
 
-# Save it!
+# Tọ́jú rẹ̀!
 
 > For readers at home: this part is covered in the [Python Basics: Saving files and "If" statement](https://www.youtube.com/watch?v=dOAg6QVAxyk) video.
 
