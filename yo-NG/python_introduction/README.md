@@ -359,7 +359,7 @@ Láti yọ nnkan kan kúrò nínú àkójọ rẹ, ìwọ yíò nílò láti lo 
 
 Fún àfikún eré, gbìyànjú àwọn atọ́ka mìíràn: 6, 7, 1000, -1, -6 tàbí -1000. Wo bóyá o lè sọ àsọtẹ́lẹ̀ àbájáde náà ṣáájú kí o tó gbìyànjú àṣẹ náà. Ṣe àwọn àbájáde náà bọ́gbọ́n mu?
 
-You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
+O lè ṣàwárí àkọsílẹ̀ kan ti gbogbo àwọn ọ̀nà àkójọ tó wà nínú àkòrí yìí ti àkọsílẹ̀ àlàyé Python náà: https://docs.python.org/3/tutorial/datastructures.html
 
 ## Dictionaries
 
