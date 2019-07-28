@@ -307,7 +307,7 @@ Bẹ́ẹ̀ ni! `len()` lè fún ọ ní iye àwọn ohun èlò tó wà nínú �
 
 Gẹ́gẹ́ bó o ṣe ríi, a ti ṣètò àwọn nọ́mbà tó wà nínú àkójọ rẹ láti iye tó kéré jù sí iye tó tóbi jù. Kú oríire!
 
-Maybe we want to reverse that order? Let's do that!
+Bóyá a fẹ́ yí títò náà padà? Jẹ́ ká ṣe ìyẹn!
 
 {% filename %}command-line{% endfilename %}
 
