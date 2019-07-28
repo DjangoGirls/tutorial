@@ -340,7 +340,7 @@ Tí o bá fẹ ṣàfihàn nọ́mbà àkọ́kọ́ nìkan, o lè ṣe èyí n�
 
 Gẹ́gẹ́ bó o ṣe ríi, o lè ní ànfààní sí oríṣiríṣi ohun èlò nínú àkójọ rẹ nípasẹ̀ lílo orúkọ àkójọ náà àti atọ́ka ohun èlò náà nínú àwọn àkámọ́ olópòó.
 
-Láti yọ nnkan kan kúrò nínú àkójọ rẹ, ìwọ yíò nílò láti lo **àwọn atọ́ka** gẹ́gẹ́ bí a ṣe kẹ́kọ̀ọ́ lókè àti ọ̀nà `pop()` náà. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Láti yọ nnkan kan kúrò nínú àkójọ rẹ, ìwọ yíò nílò láti lo **àwọn atọ́ka** gẹ́gẹ́ bí a ṣe kẹ́kọ̀ọ́ lókè àti ọ̀nà `pop()` náà. Jẹ́ ká gbìyànjú àpẹẹrẹ kan láti ṣàrídájú ohun tí a ti kọ́ tẹ́lẹ̀; a ó yọ nọ́mbà àkọ́kọ́ tó wà nínú àkójọ wa kúrò.
 
 {% filename %}command-line{% endfilename %}
 
@@ -355,9 +355,9 @@ Láti yọ nnkan kan kúrò nínú àkójọ rẹ, ìwọ yíò nílò láti lo 
 [42, 30, 19, 12, 3, 199]
 ```
 
-That worked like a charm!
+Ìyẹn ṣiṣẹ́ dáadáa!
 
-For extra fun, try some other indexes: 6, 7, 1000, -1, -6 or -1000. See if you can predict the result before trying the command. Do the results make sense?
+Fún àfikún eré, gbìyànjú àwọn atọ́ka mìíràn: 6, 7, 1000, -1, -6 tàbí -1000. Wo bóyá o lè sọ àsọtẹ́lẹ̀ àbájáde náà ṣáájú kí o tó gbìyànjú àṣẹ náà. Ṣe àwọn àbájáde náà bọ́gbọ́n mu?
 
 You can find a list of all available list methods in this chapter of the Python documentation: https://docs.python.org/3/tutorial/datastructures.html
 
