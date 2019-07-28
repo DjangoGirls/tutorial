@@ -305,7 +305,7 @@ Bẹ́ẹ̀ ni! `len()` lè fún ọ ní iye àwọn ohun èlò tó wà nínú �
 [3, 12, 19, 30, 42, 59]
 ```
 
-As you can see, the numbers in your list are now sorted from the lowest to highest value. Congrats!
+Gẹ́gẹ́ bó o ṣe ríi, a ti ṣètò àwọn nọ́mbà tó wà nínú àkójọ rẹ láti iye tó kéré jù sí iye tó tóbi jù. Kú oríire!
 
 Maybe we want to reverse that order? Let's do that!
 
