@@ -338,9 +338,9 @@ Tí o bá fẹ ṣàfihàn nọ́mbà àkọ́kọ́ nìkan, o lè ṣe èyí n�
 42
 ```
 
-As you can see, you can access different objects in your list by using the list's name and the object's index inside of square brackets.
+Gẹ́gẹ́ bó o ṣe ríi, o lè ní ànfààní sí oríṣiríṣi ohun èlò nínú àkójọ rẹ nípasẹ̀ lílo orúkọ àkójọ náà àti atọ́ka ohun èlò náà nínú àwọn àkámọ́ olópòó.
 
-To delete something from your list you will need to use **indexes** as we learned above and the `pop()` method. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
+Láti yọ nnkan kan kúrò nínú àkójọ rẹ, ìwọ yíò nílò láti lo **àwọn atọ́ka** gẹ́gẹ́ bí a ṣe kẹ́kọ̀ọ́ lókè àti ọ̀nà `pop()` náà. Let's try an example and reinforce what we learned previously; we will be deleting the first number of our list.
 
 {% filename %}command-line{% endfilename %}
 
