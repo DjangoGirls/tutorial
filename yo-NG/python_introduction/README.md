@@ -467,9 +467,9 @@ As you can see, the value of the key `'country'` has been altered from `'Poland'
 
 Ó dára! O mọ púpọ̀ nípa kóòdù kíkọ ní báyìí. Ní apá tó gbẹ̀yìn yìí, o ti kẹ́kọ̀ọ́ nípa:
 
-- **errors** – you now know how to read and understand errors that show up if Python doesn't understand a command you've given it
-- **variables** – names for objects that allow you to code more easily and to make your code more readable
-- **lists** – lists of objects stored in a particular order
+- **àwọn àṣìṣe** – o ti mọ bí o ṣe lè ka àti lóye àwọn àṣìṣe tó máa fojú hàn tí Python kò bá mọ àṣẹ kan tí o bá fún-un
+- **àwọn variable** – àwọn orúkọ fún àwọn ohun èlò tó máa fún ọ láàyè láti kọ kóòdù pẹ̀lú ìrọ̀rùn tí yíò sì mú kóòdù rẹ rọrùn láti kà
+- **àwọn àkójọ** – àwọn àkójọ àwọn ohun èlò tí a tọ́jú pẹ̀lú ètò pàtó kan
 - **dictionaries** – objects stored as key–value pairs
 
 Excited for the next part? :)
@@ -510,12 +510,12 @@ True
 False
 ```
 
-We've seen `>` and `<`, but what do `>=` and `<=` mean? Read them like this:
+A ti rí `>` àti `<`, ṣùgbọ́n kíni `>=` àti `<=` túmọ̀ sí? Kà wọ́n báyìí:
 
-- x `>` y means: x is greater than y
-- x `<` y means: x is less than y
-- x `<=` y means: x is less than or equal to y
-- x `>=` y means: x is greater than or equal to y
+- x `>` y túmọ̀ sí: x tóbi ju y
+- x `<` y túmọ̀ sí: x kéré sí y
+- x `<=` y túmọ̀ sí: x kéré sí tàbí dọ́gba pẹ̀lú y
+- x `>=` y túmọ̀ sí: x tóbi ju tàbí dọ́gba pẹ̀lú y
 
 Awesome! Wanna do one more? Try this:
 
