@@ -104,7 +104,7 @@ Sarebbe bello sapere dove ci troviamo ora, giusto?Vediamo. Digita questo comando
     $ pwd/utenti/olasitarska
     
 
-> Note: 'pwd' stands for 'print working directory'.
+> Nota: 'pwd' sta per 'stampa directory di lavoro'.
 
 <!--endsec-->
 
