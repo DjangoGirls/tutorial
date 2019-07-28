@@ -260,7 +260,7 @@ Gẹ́gẹ́ bí a óò ṣe ri tó bá yá, `print()` tún wúlò nígbà tí a
 
 ## Àwọn àkójọ
 
-Yàtọ̀ sí àwọn fọ́nrán àti àwọn nọ́mbà odidi, Python ní gbogbo onírúurú àwọn ohun èlò ọ̀tọ̀ọ̀tọ̀. Now we're going to introduce one called **list**. Lists are exactly what you think they are: objects which are lists of other objects. :)
+Yàtọ̀ sí àwọn fọ́nrán àti àwọn nọ́mbà odidi, Python ní gbogbo onírúurú àwọn ohun èlò ọ̀tọ̀ọ̀tọ̀. Ní báyìí, a ó ṣàfihàn ọ̀kan tí a n pè ní **àkójọ**. Àwọn àkójọ jẹ́ ohun tí o lérò pé wọ́n jẹ́ gan-an: àwọn ohun èlò èyí tó jẹ́ àwọn àkójọ àwọn ohun èlò mìíràn. :)
 
 Go ahead and create a list:
 
