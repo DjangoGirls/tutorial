@@ -327,7 +327,7 @@ Tí o bá fẹ́ ṣàfikún nnkan kan sí àkójọ rẹ, o lè ṣe èyí níp
 [59, 42, 30, 19, 12, 3, 199]
 ```
 
-If you want to show only the first number, you can do this by using **indexes**. An index is the number that says where in a list an item occurs. Programmers prefer to start counting at 0, so the first object in your list is at index 0, the next one is at 1, and so on. Try this:
+Tí o bá fẹ ṣàfihàn nọ́mbà àkọ́kọ́ nìkan, o lè ṣe èyí nípasẹ̀ lílo **àwọn atọ́kà**. Atọ́ka kan jẹ́ nọ́mbà kan tó n sọ ibi ti nnkan kan wà nínú àkójọ kan. Àwọn onímọ̀ nípa kóòdù fẹ́ràn láti bẹ̀rẹ̀ kíkà láti 0, nítorí náà ohun èlò àkọ́kọ́ nínú àkójọ rẹ wà ní atọ́ka 0, èyí tó kàn wà ní 1, àti bẹ́ẹ̀ bẹ́ẹ̀ lọ. Gbìyànjú èyí:
 
 {% filename %}command-line{% endfilename %}
 
