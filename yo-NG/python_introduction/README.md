@@ -279,7 +279,7 @@ Bẹ́ẹ̀ ni, àkójọ yìí wà ní òfìfo. Kò fi bẹ́ẹ̀ wúlò, àb�
 >>> lottery = [3, 42, 12, 19, 30, 59]
 ```
 
-All right, we have a list! What can we do with it? Let's see how many lottery numbers there are in a list. Do you have any idea which function you should use for that? You know this already!
+Kò burú, a ti ní àkójọ kan! Kíni a lè ṣe pẹ̀lú rẹ̀? Jẹ́ ká wo iye nọ́mbà tẹ́tẹ́ lọ́tìrì tó wà nínú àkójọ kan. Ṣé o ní àbá kankan nípa iṣẹ́ tó yẹ kí o lò fún ìyẹn? O ti mọ èyí tẹ́lẹ̀!
 
 {% filename %}command-line{% endfilename %}
 
@@ -317,7 +317,7 @@ Maybe we want to reverse that order? Let's do that!
 [59, 42, 30, 19, 12, 3]
 ```
 
-If you want to add something to your list, you can do this by typing this command:
+Tí o bá fẹ́ ṣàfikún nnkan kan sí àkójọ rẹ, o lè ṣe èyí nípasẹ̀ títẹ àṣẹ yìí:
 
 {% filename %}command-line{% endfilename %}
 
