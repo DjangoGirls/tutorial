@@ -173,7 +173,7 @@ A rí àṣìṣe àkọ́kọ́ wa! Àwòrán aṣàmì {{ warning_icon }} ná�
 
 ## Àwọn variable
 
-An important concept in programming is variables. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Ìlànà pàtàkì kan nínú kóòdù kíkọ ni àwọn variable. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
 Jẹ́ ká sọ pé a fẹ́ ṣẹ̀dá variable tuntun kan tí a n pè ní `name`:
 
@@ -185,7 +185,7 @@ Jẹ́ ká sọ pé a fẹ́ ṣẹ̀dá variable tuntun kan tí a n pè ní `na
 
 A tẹ orúkọ dọ́gba pẹ̀lú Ola.
 
-As you've noticed, your program didn't return anything like it did before. So how do we know that the variable actually exists? Enter `name` and hit `enter`:
+Gẹ́gẹ́ bí o ti ṣàkíyèsí, ètò rẹ kò dá ohunkóhun padà bíi ó ti ṣe tẹ́lẹ̀. Nítorí náà, báwo ni a ṣe fẹ́ mọ pé variable náà wà lóòótọ́? Tẹ `name` kí o sì tẹ `enter`:
 
 {% filename %}command-line{% endfilename %}
 
