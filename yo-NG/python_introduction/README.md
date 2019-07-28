@@ -476,7 +476,7 @@ Excited for the next part? :)
 
 ## Compare things
 
-> For readers at home: this part is covered in the [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4) video.
+> Fún àwọn òǹkàwé ní ilé: a ti ṣàlàyé apá yìí nínú fídíò [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
 A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
 
@@ -535,7 +535,7 @@ You can give Python as many numbers to compare as you want, and it will give you
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
 
-Have you heard of the expression "comparing apples to oranges"? Let's try the Python equivalent:
+Ṣé o ti gbọ́ nípa gbólóhùn "ṣíṣe ìfiwéra èso ápù àti ọsàn"? Jẹ́ ká gbìyànjú irú rẹ̀ nínú Python:
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -550,7 +550,7 @@ Here you see that just like in the expression, Python is not able to compare a n
 
 ## Boolean
 
-Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
+Lọ́nà kan ṣáá, o ṣẹ̀ṣẹ̀ kẹ́kọ̀ọ́ nípa irú ohun èlò tuntun kan nínú Python. A ń pè é ní **Boolean**.
 
 Àwọn ohun èlò Boolean méjì nìkan ló wà:
 
