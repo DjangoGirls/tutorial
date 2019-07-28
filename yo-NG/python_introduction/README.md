@@ -271,7 +271,7 @@ Tẹ̀síwájú kí o ṣẹ̀dá àkójọ kan:
 []
 ```
 
-Yes, this list is empty. Not very useful, right? Let's create a list of lottery numbers. We don't want to repeat ourselves all the time, so we will put it in a variable, too:
+Bẹ́ẹ̀ ni, àkójọ yìí wà ní òfìfo. Kò fi bẹ́ẹ̀ wúlò, àbí bẹ́ẹ̀ kọ? Jẹ́ ká ṣẹ̀dá àkójọ àwọn nọ́mbà tẹ́tẹ́ lọ́tìrì kan. A kò fẹ́ pààrà ara wa ní gbogbo ìgbà, nítorí náà a ó fi sínú variable kan, pẹ̀lú:
 
 {% filename %}command-line{% endfilename %}
 
