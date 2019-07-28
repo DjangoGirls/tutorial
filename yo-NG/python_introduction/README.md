@@ -254,9 +254,9 @@ Gbìyànjú èyí:
 Maria
 ```
 
-Nígbà tí o bá tẹ `name`, ètò àgbékalẹ̀ Python náà yíò fèsì padà pẹ̀lú *àpẹẹrẹ* fọ́nrán ti variable 'name' náà, èyí tó jẹ́ àwọn lẹ́tà M-a-r-i-a, tí àwọn àmì àyọlò kan ṣoṣo yíká, ". When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Nígbà tí o bá tẹ `name`, ètò àgbékalẹ̀ Python náà yíò fèsì padà pẹ̀lú *àpẹẹrẹ* fọ́nrán ti variable 'name' náà, èyí tó jẹ́ àwọn lẹ́tà M-a-r-i-a, tí àwọn àmì àyọlò kan ṣoṣo yíká, ". Nígbà tí o sọ `print(name)`, Python yíò "ṣàtẹ̀jáde" àwọn àkóónú ti variable náà sí ojú àwòrán náà, láìsí àwọn àmì àyọlò náà, èyí tó túbọ̀ dára.
 
-As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
+Gẹ́gẹ́ bí a óò ṣe ri tó bá yá, `print()` tún wúlò nígbà tí a bá fẹ́ ṣàtẹ̀jáde àwọn nnkan láti inú àwọn iṣẹ́, tàbí nígbà tí a bá fẹ́ ṣàtẹ̀jáde àwọn nnkan lórí ọ̀pọ̀lọpọ̀ ìlà.
 
 ## Lists
 
