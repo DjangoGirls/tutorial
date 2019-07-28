@@ -474,11 +474,11 @@ As you can see, the value of the key `'country'` has been altered from `'Poland'
 
 Excited for the next part? :)
 
-## Compare things
+## Ṣe ìfiwéra àwọn nnkan
 
 > Fún àwọn òǹkàwé ní ilé: a ti ṣàlàyé apá yìí nínú fídíò [Python Basics: Comparisons](https://www.youtube.com/watch?v=7bzxqIKYgf4).
 
-A big part of programming involves comparing things. What's the easiest thing to compare? Numbers! Let's see how that works:
+Apá kan tó tóbi nínú kóòdù kíkọ ní láti ṣe pẹ̀lú ṣíṣe ìfiwéra àwọn nnkan. Kíni nnkan tó rọrùn jù láti fi wéra? Àwọn nọ́mbà! Jẹ́ ká wo bí ìyẹn ṣé n ṣiṣẹ́:
 
 {% filename %}command-line{% endfilename %}
 
@@ -530,7 +530,7 @@ False
 True
 ```
 
-You can give Python as many numbers to compare as you want, and it will give you an answer! Pretty smart, right?
+O lè fún Python ní ọ̀pọ̀lọpọ̀ nọ́mbà láti ṣe ìfiwéra bíi o ṣe fẹ́, àti pé yóò fún ọ ní ìdáhùn kan! Ó já fáfá púpọ̀, àbí bẹ́ẹ̀ kọ?
 
 - **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
 - **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
@@ -546,7 +546,7 @@ Traceback (most recent call last):
 TypeError: '>' not supported between instances of 'int' and 'str'
 ```
 
-Here you see that just like in the expression, Python is not able to compare a number (`int`) and a string (`str`). Instead, it shows a **TypeError** and tells us the two types can't be compared together.
+O ti ri níbí pé gẹ́gẹ́ bí inú gbólóhùn náà, Python kò lè ṣe ìfiwéra nọ́mbà kan (`int`) àti fọ́nrán kan (`str`). Dípò, ó ṣàfihàn **TypeError** kan àti pé ó sọ fún wa pé irú àwọn nnkan méjèèjì kò ṣeé fi wéra papọ̀.
 
 ## Boolean
 
