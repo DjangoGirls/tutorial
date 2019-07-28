@@ -173,7 +173,7 @@ A rí àṣìṣe àkọ́kọ́ wa! Àwòrán aṣàmì {{ warning_icon }} ná�
 
 ## Àwọn variable
 
-Ìlànà pàtàkì kan nínú kóòdù kíkọ ni àwọn variable. A variable is nothing more than a name for something so you can use it later. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
+Ìlànà pàtàkì kan nínú kóòdù kíkọ ni àwọn variable. Variable kan kò jẹ́ nnkan kan ju orúkọ kan fún nnkan kan kí o bàa lè lò ó nígbà mìíràn. Programmers use these variables to store data, make their code more readable and so they don't have to keep remembering what things are.
 
 Jẹ́ ká sọ pé a fẹ́ ṣẹ̀dá variable tuntun kan tí a n pè ní `name`:
 
