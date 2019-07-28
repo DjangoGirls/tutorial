@@ -213,7 +213,7 @@ O tún lè lò ó nínú àwọn iṣẹ́:
 5
 ```
 
-Awesome, right? Now, variables can be anything – numbers too! Try this:
+Ó dára, àbí bẹ́ẹ̀ kọ? Ní báyìí, àwọn variable lè jẹ́ ohunkóhun – àwọn nọ́mbà pẹ̀lú! Gbìyànjú èyí:
 
 {% filename %}command-line{% endfilename %}
 
