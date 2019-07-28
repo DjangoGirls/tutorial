@@ -499,7 +499,7 @@ We gave Python some numbers to compare. As you can see, not only can Python comp
 
 Do you wonder why we put two equal signs `==` next to each other to compare if numbers are equal? We use a single `=` for assigning values to variables. You always, **always** need to put two of them – `==` – if you want to check if things are equal to each other. We can also state that things are unequal to each other. For that, we use the symbol `!=`, as shown in the example above.
 
-Give Python two more tasks:
+Fún Python ní àwọn iṣẹ́ méjì síi:
 
 {% filename %}command-line{% endfilename %}
 
@@ -517,7 +517,7 @@ A ti rí `>` àti `<`, ṣùgbọ́n kíni `>=` àti `<=` túmọ̀ sí? Kà w�
 - x `<=` y túmọ̀ sí: x kéré sí tàbí dọ́gba pẹ̀lú y
 - x `>=` y túmọ̀ sí: x tóbi ju tàbí dọ́gba pẹ̀lú y
 
-Awesome! Wanna do one more? Try this:
+O dára! Ṣé o fẹ́ ṣe ẹyọkan síi? Gbìyànjú èyí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -552,12 +552,12 @@ Here you see that just like in the expression, Python is not able to compare a n
 
 Incidentally, you just learned about a new type of object in Python. It's called **Boolean**.
 
-There are only two Boolean objects:
+Àwọn ohun èlò Boolean méjì nìkan ló wà:
 
 - True
 - False
 
-But for Python to understand this, you need to always write it as 'True' (first letter uppercase, with the rest of the letters lowercased). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
+Ṣùgbọ́n fún Python láti mọ èyí, o nílò láti rí pé o kọ́ gẹ́gẹ́ bí 'True' (tí lẹ́tà àkọ́kọ́ máa jẹ́ lẹ́tà-ńlá, tí àwọn lẹ́tà yòókù máa jẹ́ lẹ́tà kékeré). **true, TRUE, and tRUE won't work – only True is correct.** (The same applies to 'False' as well.)
 
 Booleans can be variables, too! See here:
 
