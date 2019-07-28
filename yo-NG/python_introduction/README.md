@@ -254,7 +254,7 @@ Gbìyànjú èyí:
 Maria
 ```
 
-When you just type `name`, the Python interpreter responds with the string *representation* of the variable 'name', which is the letters M-a-r-i-a, surrounded by single quotes, ''. When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
+Nígbà tí o bá tẹ `name`, ètò àgbékalẹ̀ Python náà yíò fèsì padà pẹ̀lú *àpẹẹrẹ* fọ́nrán ti variable 'name' náà, èyí tó jẹ́ àwọn lẹ́tà M-a-r-i-a, tí àwọn àmì àyọlò kan ṣoṣo yíká, ". When you say `print(name)`, Python will "print" the contents of the variable to the screen, without the quotes, which is neater.
 
 As we'll see later, `print()` is also useful when we want to print things from inside functions, or when we want to print things on multiple lines.
 
