@@ -115,33 +115,33 @@ Sarebbe bello sapere dove ci troviamo ora, giusto?Vediamo. Digita questo comando
     > cd C:\Users\olasitarska
     
 
-> Note: 'cd' stands for 'change directory'. With powershell you can use pwd just like on Linux or Mac OS X.
+> Nota: 'cd' è per 'modifica cartella'. Con la shell può usare pwd come su Linux o Mac OS X.
 
 <!--endsec-->
 
-You'll probably see something similar on your machine. Once you open the command line you usually start at your user's home directory.
+Probabilmente vedrai qualcosa di simile sul tuo computer. Quando apri la command-line normalmente inizi sulla tua directory home.
 
 * * *
 
-### Learn more about a command
+### Guida Utente
 
-Many commands you can type at the command prompt have built-in help that you can display and read! For example, to learn more about the current directory command:
+Molti comandi che puoi digitare al comando richiesto hanno un aiuto integrato che puoi visualizzare e leggere! Per esempio, per saperne di più sul comando della directory corrente:
 
 <!--sec data-title="Command help: OS X and Linux" data-id="OSX_Linux_man" data-collapse=true ces-->
 
-OS X and Linux have a `man` command, which gives you help on commands. Try `man pwd` and see what it says, or put `man` before other commands to see their help. The output of `man` is normally paged. Use the space bar to move to the next page, and `q` to quit looking at the help.
+OS X e Linux hanno un comando `man` che ti dà aiuto sui comandi. Prova `man pwd` e vedi cosa dice, o mette `man` prima di altri comandi per vedere il loro aiuto. L'output di `man` è normalmente paginato. Usa la barra di spazio per passare alla pagina successiva, e `q` per smettere di guardare l'aiuto.
 
 <!--endsec-->
 
 <!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
 
-Adding a `/?` suffix to most commands will print the help page. You may need to scroll your command window up to see it all. Try `cd /?`.
+Aggiungere un suffisso `/?` alla maggior parte dei comandi stamparà la pagina di aiuto. Potresti dover scorrere la finestra di comando per vederlo tutto. Prova `cd /?`.
 
 <!--endsec-->
 
-### List files and directories
+### Elenco di file e cartelle
 
-So what's in it? It'd be cool to find out. Let's see:
+Cosa c'è dentro? Sarebbe bello scoprirlo. Vediamo come:
 
 <!--sec data-title="List files and directories: OS X and Linux" data-id="OSX_Linux_ls" data-collapse=true ces-->
 
@@ -170,13 +170,13 @@ So what's in it? It'd be cool to find out. Let's see:
     ...
     
 
-> Note: In powershell you can also use 'ls' like on Linux and Mac OS X. <!--endsec-->
+> Nota: Nella shell vocale puoi anche utilizzare 'ls' come su Linux e Mac OS X. <!--endsec-->
 
 * * *
 
-### Change current directory
+### Cambiare cartella corrente
 
-Now, let's go to our Desktop directory:
+Ora, andiamo nella nostra directory Desktop:
 
 <!--sec data-title="Change current directory: OS X" data-id="OSX_move_to" data-collapse=true ces-->
 
@@ -194,7 +194,7 @@ Now, let's go to our Desktop directory:
     $ cd Desktop
     
 
-Note that the directory name "Desktop" might be translated to the language of your Linux account. If that's the case, you'll need to replace `Desktop` with the translated name; for example, `Schreibtisch` for German.
+Nota che il nome della directory "Desktop" potrebbe essere tradotto nella lingua del tuo account Linux. Se così è, dovrai sostituire `Desktop` con il nome tradotto; per esempio, `Schreibtisch` per il tedesco.
 
 <!--endsec-->
 
@@ -207,7 +207,7 @@ Note that the directory name "Desktop" might be translated to the language of yo
 
 <!--endsec-->
 
-Check if it's really changed:
+Controlla ora se ti sei veramente spostato/a:
 
 <!--sec data-title="Check if changed: OS X and Linux" data-id="OSX_Linux_pwd2" data-collapse=true ces-->
 
@@ -229,15 +229,15 @@ Check if it's really changed:
 
 <!--endsec-->
 
-Here it is!
+Ecco fatto!
 
-> PRO tip: if you type `cd D` and then hit `tab` on your keyboard, the command line will automatically fill in the rest of the name so you can navigate faster. If there is more than one folder starting with "D", hit the `tab` key twice to get a list of options.
+> Suggerimento PRO:se digiti `cd D` e poi premi `tab` sulla tastiera, la command-line completerà automaticamente il resto del nome per cui puoi navigare più velocemente. Se c'è più di una cartella che comincia con "D", premi `tab` due volte per ottenere la lista con tutte le opzioni.
 
 * * *
 
-### Create directory
+### Creare una directory
 
-How about creating a practice directory on your desktop? You can do it this way:
+Che ne dici di creare una directory di pratica sul tuo desktop? Puoi farlo in questo modo:
 
 <!--sec data-title="Create directory: OS X and Linux" data-id="OSX_Linux_mkdir" data-collapse=true ces-->
 
@@ -257,15 +257,15 @@ How about creating a practice directory on your desktop? You can do it this way:
 
 <!--endsec-->
 
-This little command will create a folder with the name `practice` on your desktop. You can check if it's there by looking on your Desktop or by running a `ls` or `dir` command! Try it. :)
+Questo breve comando creerà una cartella con il nome `practice` sul tuo desktop. Puoi controllare se è lì semplicemente guardando sul tuo desktop oppure eseguendo un commando `ls` oppure `dir`! Provalo. :)
 
-> PRO tip: If you don't want to type the same commands over and over, try pressing the `up arrow` and `down arrow` on your keyboard to cycle through recently used commands.
+> Suggerimento PRO: se non vuoi digitare lo stesso comando tutte le volte, prova a premere ` freccia in su ` e `freccia in giù` sulla tua tastiera per scorrere tutti i comandi che hai usato fin ora.
 
 * * *
 
-### Exercise!
+### Esercizio!
 
-A small challenge for you: in your newly created `practice` directory, create a directory called `test`. (Use the `cd` and `mkdir` commands.)
+Piccola sfida per te: nella tua directory appena creata `practice` crea una directory chiamata `test`. usa i comandi `cd` e `mkdir`.)
 
 #### Soluzione:
 
@@ -283,7 +283,7 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--sec data-title="Exercise solution: Windows" data-id="windows_test_dir" data-collapse=true ces-->
 
-{% filename %}command-line{% endfilename %}
+{% filename %}riga di comando{% endfilename %}
 
     > cd practice
     > mkdir test
@@ -293,15 +293,15 @@ A small challenge for you: in your newly created `practice` directory, create a 
 
 <!--endsec-->
 
-Congrats! :)
+Congratulazioni!
 
 * * *
 
-### Clean up
+### Facciamo ordine
 
-We don't want to leave a mess, so let's remove everything we did until that point.
+Non vogliamo lasciare un pasticcio, per cui rimuoviamo tutto quello che abbiamo fatto fino a questo punto.
 
-First, we need to get back to Desktop:
+Per prima cosa dobbiamo tornare al Desktop:
 
 <!--sec data-title="Clean up: OS X and Linux" data-id="OSX_Linux_back" data-collapse=true ces-->
 
@@ -321,9 +321,9 @@ First, we need to get back to Desktop:
 
 <!--endsec-->
 
-Using `..` with the `cd` command will change your current directory to the parent directory (that is, the directory that contains your current directory).
+Usando `..` con il comando `cd` cambierai la tua directory attuale alla directory padre (si tratta della cartella che contiene la tua directory attuale).
 
-Check where you are:
+Controlla dove ti trovi ora:
 
 <!--sec data-title="Check location: OS X and Linux" data-id="OSX_Linux_pwd3" data-collapse=true ces-->
 
@@ -345,9 +345,9 @@ Check where you are:
 
 <!--endsec-->
 
-Now time to delete the `practice` directory:
+Adesso è l'ora di cancellare la directory `practice`:
 
-> **Attention**: Deleting files using `del`, `rmdir` or `rm` is irrecoverable, meaning *the deleted files will be gone forever*! So be very careful with this command.
+> **Attenzione**: cancellare un file usando `del`, `rmdir` o `rm` è irreversibile, *i file cancellati andranno perduti per sempre*! Per cui sii molto prudente nell'utilizzare questi comandi.
 
 <!--sec data-title="Delete directory: Windows Powershell, OS X and Linux" data-id="OSX_Linux_rm" data-collapse=true ces-->
 
@@ -368,7 +368,7 @@ Now time to delete the `practice` directory:
 
 <!--endsec-->
 
-Done! To be sure it's actually deleted, let's check it:
+Fatto! Per essere sicuri che sia stato effettivamente cancellato, controlliamo:
 
 <!--sec data-title="Check deletion: OS X and Linux" data-id="OSX_Linux_ls2" data-collapse=true ces-->
 
@@ -388,9 +388,9 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Uscire dalla command line
 
-That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
+Questo è tutto per ora! puoi tranquillamente chiudere la tua command line. facciamolo alla maniera degli hacker, va bene? :)
 
 <!--sec data-title="Exit: OS X and Linux" data-id="OSX_Linux_exit" data-collapse=true ces-->
 
@@ -410,22 +410,22 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 <!--endsec-->
 
-Cool, huh? :)
+Figo, eh? :)
 
 ## Indice
 
-Here is a summary of some useful commands:
+Questo è un riepilogo di alcuni comandi utili:
 
 | Comandi(Windows) | Comandi (Mac OS / Linux)  | Descrizione                | Esempio                                            |
 | ---------------- | ------------------------- | -------------------------- | -------------------------------------------------- |
 | esci             | uscire dalla command line | chiudi la finestra         | **uscire dalla command line**                      |
 | cd               | cd                        | cambiare directory         | **cd test**                                        |
-| cd               | pwd                       | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
+| cd               | pwd                       | Cambiare cartella corrente | **cd** (Windows) o **pwd** (Mac OS / Linux)        |
 | dir              | ls                        | elenco directory/file      | **dir**                                            |
 | copia            | cp                        | copia un file              | **copy c:\test\test.txt c:\windows\test.txt**  |
 | sposta           | mv                        | spostare un file           | **move c:\test\test.txt c:\windows\test.txt**  |
 | mkdir            | mkdir                     | creare una nuova directory | **mkdir testdirectory**                            |
-| rmdir (or del)   | rm                        | delete a file              | **del c:\test\test.txt**                         |
+| rmdir (or del)   | rm                        | Eliminare un file          | **del c:\test\test.txt**                         |
 | rmdir /S         | rm -r                     | delete a directory         | **rm -r testdirectory**                            |
 | [CMD] /?         | man [CMD]                 | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
 
