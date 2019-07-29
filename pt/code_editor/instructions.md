@@ -2,6 +2,12 @@ Existem muitos editores de código diferentes e escolher um trata-se essencialme
 
 Nossas sugestões estão logo abaixo, mas sinta-se livre para perguntar à sua monitora quais são suas preferências - será mais fácil escolher com a ajuda dela.
 
+## Visual Studio Code
+
+O Visual Studio Code é um editor de código desenvolvido pela Microsoft para Windows, Linux e macOS. Inclui suporte para depuração, controle Git incorporado, destaque de sintaxe, conclusão de código inteligente, snippets e reação de código.
+
+[Baixe-o aqui](https://code.visualstudio.com/download)
+
 ## Gedit
 
 Gedit é um editor open-source, gratuito, disponível para todos os sistemas operacionais.
@@ -16,7 +22,7 @@ O Sublime Text é um editor muito popular. Ele tem um período de avaliação gr
 
 ## Atom
 
-Atom é outro editor popular. É gratuito, de código aberto e disponível para Windows, OS X e Linux. Atom é desenvolvido por [ GitHub ](https://github.com/).
+Atom é outro editor popular. É gratuito, aberto e disponível para Windows, OS X e Linux. Atom é desenvolvido por [GitHub](https://github.com/).
 
 [Baixe-o aqui](https://atom.io/)
 
