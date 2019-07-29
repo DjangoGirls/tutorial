@@ -4,7 +4,7 @@ Nos suggestions sont listées ci-dessous, mais n'hésitez pas à demander à vos
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code est éditeur de texte développé par Microsoft pour Windows, Linux et macOS. Il inclut le support du déboggage, l'utilisation de Git intégrée, le surlignage syntaxique, l'autocompletion intelligente du code, les snippets et la refactoring du code.
 
 [Télécharger](https://code.visualstudio.com/download)
 
@@ -26,9 +26,9 @@ Atom is another popular editor. It's free, open-source and available for Windows
 
 [Download it here](https://atom.io/)
 
-## Why are we installing a code editor?
+## Pourquoi installer un éditeur de texte?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Vous devez vous demander pourquoi on installe un éditeur de texte spécial plutôt que d'utiliser Word ou Notepad plus simplement.
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
