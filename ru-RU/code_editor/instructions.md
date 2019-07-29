@@ -26,7 +26,7 @@ Atom - еще один популярный редактор. Он беспла�
 
 [Скачать его можно здесь](https://atom.io/)
 
-## Why are we installing a code editor?
+## Зачем нам нужен редактор кода?
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
