@@ -30,8 +30,8 @@ Atom is another popular editor. It's free, open-source and available for Windows
 
 Vous devez vous demander pourquoi on installe un éditeur de texte spécial plutôt que d'utiliser Word ou Notepad plus simplement.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La première raison est que le code doit être en format **texte brute**, et le problème est que les éditeurs comme Word et Textedit ne produisent pas réellement du texte brute, mais du texte enrichi (avec des polices et de la mise en forme), en utilisant des formats personnalisés comme [ RTF (Rich Text Format) ](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+La seconde raison est que les éditeurs de code sont conçus spécialement pour l'édition de code. Ils fournissent donc des fonctionnalités très utiles comme la coloration du code en fonction du sens de celui ou automatiquement ajouter un guillemet fermant à chaque que vous ouvrez un guillemet.
 
 We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
