@@ -28,15 +28,15 @@ Ma certo che sì! C'è una quantità *enorme* a dir poco, di risorse online per 
 - [Corso Python di Codecademy](https://www.codecademy.com/learn/learn-python)
 - [Corso Python di Google](https://developers.google.com/edu/python/)
 - [Libro: Impara Python The Hard Way](http://learnpythonthehardway.org/book/) – gli esercizi iniziali sono gratuiti
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
-- [edX](https://www.edx.org/course?search_query=python) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [Nuovi tutorial di Coder](http://newcoder.io/tutorials/) – Questo è una serie di esempi pratici di come utilizzare Python
+- [edX](https://www.edx.org/course?search_query=python) – puoi controllare la maggior parte dei corsi gratuiti, ma se si desidera un certificato o crediti verso una qualifica di istruzione superiore, allora questo costerà denaro
+- [specializzazione Python di questa persona](https://www.coursera.org/specializations/python) – alcune lezioni video possono essere revisionate gratuitamente e puoi ottenere un certificato di Coursera seguendo questi corsi
+- [Python per tutti](https://www.py4e.com/) - una versione libera e aperta del Coursera Python per la specializzazione di tutti i corpi
 
 #### Lavorare con i dati
 
-- [Codecademy's data science course](https://www.codecademy.com/learn/paths/data-science)
-- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – you can audit most courses for free, but if you want a certificate or credits towards a higher education qualification then that will cost money
-- [Dataquest](https://www.dataquest.io/) – the first 30 "missions" are free
+- [Corso di informatica di Codecademy](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – puoi controllare la maggior parte dei corsi gratuiti, ma se si desidera un certificato o crediti verso una qualifica di istruzione superiore, allora questo costerà denaro
+- [Dataquest](https://www.dataquest.io/) – le prime 30 "missioni" sono gratuite
 
-We can't wait to see what you build next!
+Non possiamo aspettare di vedere cosa costruirai in seguito!
