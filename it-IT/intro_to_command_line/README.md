@@ -416,23 +416,23 @@ Figo, eh? :)
 
 Questo è un riepilogo di alcuni comandi utili:
 
-| Comandi(Windows) | Comandi (Mac OS / Linux)  | Descrizione                | Esempio                                            |
-| ---------------- | ------------------------- | -------------------------- | -------------------------------------------------- |
-| esci             | uscire dalla command line | chiudi la finestra         | **uscire dalla command line**                      |
-| cd               | cd                        | cambiare directory         | **cd test**                                        |
-| cd               | pwd                       | Cambiare cartella corrente | **cd** (Windows) o **pwd** (Mac OS / Linux)        |
-| dir              | ls                        | elenco directory/file      | **dir**                                            |
-| copia            | cp                        | copia un file              | **copy c:\test\test.txt c:\windows\test.txt**  |
-| sposta           | mv                        | spostare un file           | **move c:\test\test.txt c:\windows\test.txt**  |
-| mkdir            | mkdir                     | creare una nuova directory | **mkdir testdirectory**                            |
-| rmdir (or del)   | rm                        | Eliminare un file          | **del c:\test\test.txt**                         |
-| rmdir /S         | rm -r                     | delete a directory         | **rm -r testdirectory**                            |
-| [CMD] /?         | man [CMD]                 | get help for a command     | **cd /?** (Windows) or **man cd** (Mac OS / Linux) |
+| Comandi(Windows) | Comandi (Mac OS / Linux)  | Descrizione                     | Esempio                                           |
+| ---------------- | ------------------------- | ------------------------------- | ------------------------------------------------- |
+| esci             | uscire dalla command line | chiudi la finestra              | **uscire dalla command line**                     |
+| cd               | cd                        | cambiare directory              | **cd test**                                       |
+| cd               | pwd                       | Cambiare cartella corrente      | **cd** (Windows) o **pwd** (Mac OS / Linux)       |
+| dir              | ls                        | elenco directory/file           | **dir**                                           |
+| copia            | cp                        | copia un file                   | **copy c:\test\test.txt c:\windows\test.txt** |
+| sposta           | mv                        | spostare un file                | **move c:\test\test.txt c:\windows\test.txt** |
+| mkdir            | mkdir                     | creare una nuova directory      | **mkdir testdirectory**                           |
+| rmdir (or del)   | rm                        | Eliminare un file               | **del c:\test\test.txt**                        |
+| rmdir /S         | rm -r                     | Seleziona una cartella          | **mkdir testdirectory**                           |
+| [CMD]/?          | man [CMD]                 | Ottieni un aiuto per un comando | **cd** (Windows) o **pwd** (Mac OS / Linux)       |
 
-These are just a very few of the commands you can run in your command line, but you're not going to use anything more than that today.
+Questi sono solo alcuni dei comandi che puoi eseguire sulla tua command line, ma non ne userai altri oltre a quelli spiegati oggi.
 
-If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
+Se sei curioso/a, [ss64.com](http://ss64.com) contiene una guida completa ai comandi per tutti i sistemi operativi.
 
 ## Fatto?
 
-Let's dive into Python!
+Tuffiamoci in Python!
