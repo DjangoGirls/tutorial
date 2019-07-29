@@ -4,7 +4,7 @@
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code — это редактор исходного кода, разработанный Microsoft для Windows, Linux и macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
 [Скачать его можно здесь](https://code.visualstudio.com/download)
 
@@ -16,15 +16,15 @@ Gedit is an open-source, free editor, available for all operating systems.
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text - это очень популярный текстовый редактор с бесплатным пробным периодом. Он легко устанавливается и прост в использовании, а также доступен для всех операционных систем.
 
 [Скачать его можно здесь](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom - еще один популярный редактор. Он бесплатный, с открытым исходным кодом и доступен для Windows, OS X и Linux. Atom разработан [GitHub](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Скачать его можно здесь](https://atom.io/)
 
 ## Why are we installing a code editor?
 
