@@ -34,4 +34,4 @@ La première raison est que le code doit être en format **texte brute**, et le 
 
 La seconde raison est que les éditeurs de code sont conçus spécialement pour l'édition de code. Ils fournissent donc des fonctionnalités très utiles comme la coloration du code en fonction du sens de celui ou automatiquement ajouter un guillemet fermant à chaque que vous ouvrez un guillemet.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Nous verrons tout cela en pratique plus tard. Bientôt votre bon vieux éditeur de code deviendra l'un de vos outils favoris. :)
