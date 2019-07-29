@@ -1015,7 +1015,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+И после запуска:
 
 {% filename %}command-line{% endfilename %}
 
