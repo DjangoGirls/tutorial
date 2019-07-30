@@ -363,7 +363,7 @@ O lè ṣàwárí àkọsílẹ̀ kan ti gbogbo àwọn ọ̀nà àkójọ tó w
 
 ## Dictionaries
 
-> For readers at home: this part is covered in the [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c) video.
+> Fún àwọn òǹkàwé ní ilé: a ti ṣàlàyé apá yìí nínú fídíò [Python Basics: Dictionaries](https://www.youtube.com/watch?v=ZX1CVvZLE6c).
 
 A dictionary is similar to a list, but you access values by looking up a key instead of a numeric index. A key can be any string or number. The syntax to define an empty dictionary is:
 
@@ -376,7 +376,7 @@ A dictionary is similar to a list, but you access values by looking up a key ins
 
 This shows that you just created an empty dictionary. Hurray!
 
-Now, try writing the following command (try substituting your own information, too):
+Ní báyìí, gbìyànjú kíkọ àṣẹ tó tẹ̀le yìí (gbìyànjú láti rọ́pò ìròyìn tìẹ, pẹ̀lú):
 
 {% filename %}command-line{% endfilename %}
 
@@ -834,7 +834,7 @@ You don't need to write a comment for every line of code, but they are useful fo
 
 In the last few exercises you learned about:
 
-- **comparing things** – in Python you can compare things by using `>`, `>=`, `==`, `<=`, `<` and the `and`, `or` operators
+- **ṣíṣe ìfiwéra àwọn nnkan** – nínú Python, o lè ṣe ìfiwéra àwọn nnkan nípasẹ̀ lílo `>`, `>=`, `==`, `<=`, `<` àti àwọn operator `and`, `or` náà
 - **Boolean** – a type of object that can only have one of two values: `True` or `False`
 - **Saving files** – storing code in files so you can execute larger programs.
 - **if … elif … else** – statements that allow you to execute code only when certain conditions are met.
