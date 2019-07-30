@@ -1002,7 +1002,7 @@ for name in girls:
 
 The `for` statement behaves similarly to the `if` statement; code below both of these need to be indented four spaces.
 
-Here is the full code that will be in the file:
+Kóòdù kíkún tí yíò wà nínú fáìlì náà nìyí:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1016,7 +1016,7 @@ for name in girls:
     print('Next girl')
 ```
 
-And when we run it:
+Àti nígbà tí a bá mú u ṣiṣẹ́:
 
 {% filename %}command-line{% endfilename %}
 
