@@ -665,7 +665,7 @@ Lórí Windows Command Prompt, yóò rí báyìí:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+Àti lórí Windows Powershell, yóò rí báyìí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -684,7 +684,7 @@ Now use Python to execute the code in the file like this:
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+Àkíyèsí: lórí Windows a kò dá 'python3' mọ̀ gẹ́gẹ́ bí àṣẹ kan. Dípò, lo 'python' láti ṣiṣẹ́ lórí fáìlì náà:
 
 {% filename %}command-line{% endfilename %}
 
@@ -700,7 +700,7 @@ You can now move on to an essential tool in programming:
 
 Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
 
-Replace the code in your **python_intro.py** file with this:
+Rọ́pò kóòdù tó wà nínú fáìlì **python_intro.py** rẹ pẹ̀lú èyí:
 
 {% filename %}python_intro.py{% endfilename %}
 
