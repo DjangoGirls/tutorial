@@ -597,7 +597,7 @@ So far we've been writing all our python code in the interpreter, which limits u
 - Exit the Python interpreter
 - Ṣí olóòtú kóòdù tí a yàn láàyò
 - Tọ́jú àwọn kóòdù kan sínú fáìlì python tuntun kan
-- Run it!
+- Mú u ṣiṣẹ́!
 
 To exit from the Python interpreter that we've been using, type the `exit()` function
 
@@ -608,7 +608,7 @@ To exit from the Python interpreter that we've been using, type the `exit()` fun
 $
 ```
 
-This will put you back into the command prompt.
+Èyí yíò dá ọ padà sínú command prompt náà.
 
 Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
 
