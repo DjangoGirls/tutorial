@@ -532,8 +532,8 @@ True
 
 O lè fún Python ní ọ̀pọ̀lọpọ̀ nọ́mbà láti ṣe ìfiwéra bíi o ṣe fẹ́, àti pé yóò fún ọ ní ìdáhùn kan! Ó já fáfá púpọ̀, àbí bẹ́ẹ̀ kọ?
 
-- **and** – if you use the `and` operator, both comparisons have to be True in order for the whole command to be True
-- **or** – if you use the `or` operator, only one of the comparisons has to be True in order for the whole command to be True
+- **and** – tí o bá lo operator `and` náà, àwọn àfiwé méjèèjì ní láti jẹ́ True kí gbogbo àṣẹ náà bàa lè jẹ́ True
+- **or** – tí o bá lo operator `or` náà, ẹyọkan ṣoṣo nínú àwọn àfiwé náà ní láti jẹ́ True kí gbogbo àṣẹ náà bàa lè jẹ́ True
 
 Ṣé o ti gbọ́ nípa gbólóhùn "ṣíṣe ìfiwéra èso ápù àti ọsàn"? Jẹ́ ká gbìyànjú irú rẹ̀ nínú Python:
 
