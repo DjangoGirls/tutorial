@@ -1033,9 +1033,9 @@ for name in girls:
     Next girl
     
 
-As you can see, everything you put inside a `for` statement with an indent will be repeated for every element of the list `girls`.
+Gẹ́gẹ́ bó o ṣe ríi, gbogbo nnkan tí o fi sínú gbólóhùn `for` kan pẹ̀lú ìtẹ̀wọnú kan yíò máa wáyé fún gbogbo element ti àkójọ `girls` náà.
 
-You can also use `for` on numbers using the `range` function:
+O tún lè lo `for` lórí àwọn nọ́mbà pẹ̀lú lílo iṣẹ́ `range` náà:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1044,7 +1044,7 @@ for i in range(1, 6):
     print(i)
 ```
 
-Which would print:
+Èyí tí yíò ṣàtẹ̀jáde:
 
 {% filename %}command-line{% endfilename %}
 
