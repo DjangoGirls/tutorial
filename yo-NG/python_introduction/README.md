@@ -399,7 +399,7 @@ You can check the content of individual keys with this syntax:
 Ola
 ```
 
-See, it's similar to a list. But you don't need to remember the index – just the name.
+Wo, ó rí bíi àkójọ kan. Ṣùgbọ́n ìwọ kò nílò láti rántí atọ́ka náà – orúkọ náà nìkan.
 
 What happens if we ask Python the value of a key that doesn't exist? Can you guess? Let's try it and see!
 
@@ -595,8 +595,8 @@ Kú oríire! Àwọn Boolean jẹ́ ọ̀kan lára àwọn ẹyà tó dára jù 
 So far we've been writing all our python code in the interpreter, which limits us to entering one line of code at a time. Normal programs are saved in files and executed by our programming language **interpreter** or **compiler**. So far we've been running our programs one line at a time in the Python **interpreter**. We're going to need more than one line of code for the next few tasks, so we'll quickly need to:
 
 - Exit the Python interpreter
-- Open up our code editor of choice
-- Save some code into a new python file
+- Ṣí olóòtú kóòdù tí a yàn láàyò
+- Tọ́jú àwọn kóòdù kan sínú fáìlì python tuntun kan
 - Run it!
 
 To exit from the Python interpreter that we've been using, type the `exit()` function
