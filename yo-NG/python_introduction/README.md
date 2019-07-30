@@ -618,9 +618,9 @@ Ní ìṣáájú, a ti mú olóòtú kóòdù kan láti abala [olóòtú kóòd�
 print('Hello, Django girls!')
 ```
 
-Obviously, you're a pretty seasoned Python developer now, so feel free to write some code that you've learned today.
+Dájúdájú, o jẹ́ olùgbéjáde Python tó ti nírìírí púpọ̀ kan ní báyìí, nítorí náà má tijú láti kọ àwọn kóòdù tí o ti kọ́ lónìí.
 
-Now we need to save the file and give it a descriptive name. Let's call the file **python_intro.py** and save it to your desktop. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
+Ní báyìí, a nílò láti tọ́jú fáìlì náà àti fún-un lórúkọ aṣàpèjúwe kan. Jẹ́ ká pe fáìlì náà ní **python_intro.py** àti tọ́jú rẹ̀ sí desktop rẹ. We can name the file anything we want, but the important part here is to make sure the file ends in **.py**. The **.py** extension tells our operating system that this is a **Python executable file** and Python can run it.
 
 > **Note** You should notice one of the coolest thing about code editors: colors! In the Python console, everything was the same color; now you should see that the `print` function is a different color from the string. This is called "syntax highlighting", and it's a really useful feature when coding. The color of things will give you hints, such as unclosed strings or a typo in a keyword name (like the `def` in a function, which we'll see below). This is one of the reasons we use a code editor. :)
 
