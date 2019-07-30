@@ -610,7 +610,7 @@ $
 
 Èyí yíò dá ọ padà sínú command prompt náà.
 
-Earlier, we picked out a code editor from the [code editor](../code_editor/README.md) section. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+Ní ìṣáájú, a ti mú olóòtú kóòdù kan láti abala [olóòtú kóòdù](../code_editor/README.md) náà. We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
 
 {% filename %}editor{% endfilename %}
 
