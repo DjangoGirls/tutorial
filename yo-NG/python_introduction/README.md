@@ -914,7 +914,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Oops, àṣìṣe kan. Èyí tó jẹ́ oríre fún wa, Python n fún wa ní ìròyìn àṣìṣe tó wúlò púpọ̀ kan. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -1055,11 +1055,11 @@ for i in range(1, 6):
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` jẹ́ iṣẹ́ kan tó máa ṣẹ̀dá àkójọ àwọn nọ́mbà kan tó n tẹ̀lé ara wọn níkọ̀ọ̀kan (àwọn nọ́mbà wọ̀nyí máa wà ní ìpèsè nípasẹ̀ rẹ gẹ́gẹ́ bí àwọn parameter).
 
-Note that the second of these two numbers is not included in the list that is output by Python (meaning `range(1, 6)` counts from 1 to 5, but does not include the number 6). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+Ṣàkíyèsí pé ìkejì àwọn nọ́mbà méjèèjì wọ̀nyí kò sí nínú àkójọ tí Python gbé jáde (tó túmọ̀sí pé `range(1, 6)` bẹ̀rẹ̀ kíkà láti 1 sí 5, ṣùgbọ́n kò sí nọ́mbà 6 náà lára wọn). That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
 
-## Summary
+## Kókó pàtàkì
 
 That's it. **You totally rock!** This was a tricky chapter, so you should feel proud of yourself. We're definitely proud of you for making it this far!
 
