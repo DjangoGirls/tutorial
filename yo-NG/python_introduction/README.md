@@ -914,7 +914,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, àṣìṣe kan. Èyí tó jẹ́ oríre fún wa, Python n fún wa ní ìròyìn àṣìṣe tó wúlò púpọ̀ kan. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+Oops, àṣìṣe kan. Èyí tó jẹ́ oríre fún wa, Python n fún wa ní ìròyìn àṣìṣe tó wúlò púpọ̀ kan. Ó n sọ fún wa pé iṣẹ́ `hi()` náà (èyí tí a ṣàlàyé) ní argument kan tó nílò (tí a n pè ní `name`) àti pé a ti gbàgbé láti darí rẹ̀ nígbà tí a n pe iṣẹ́ náà. Jẹ́ ká ṣàtúnṣe rẹ̀ ní ìsàlẹ̀ fáìlì náà:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -922,7 +922,7 @@ Oops, àṣìṣe kan. Èyí tó jẹ́ oríre fún wa, Python n fún wa ní ìr
 hi("Ola")
 ```
 
-And run it again:
+Kí a sì mú u ṣiṣẹ́ léèkan si:
 
 {% filename %}command-line{% endfilename %}
 
