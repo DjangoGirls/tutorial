@@ -648,13 +648,13 @@ On Linux, it will be like this:
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+(Rántí pé ọ̀rọ̀ "Desktop" náà lè ní ìtumọ̀ sí èdè abínibí rẹ.)
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Lórí Windows Command Prompt, yóò rí báyìí:
 
 {% filename %}command-line{% endfilename %}
 
