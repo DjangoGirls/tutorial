@@ -966,7 +966,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+Jẹ́ ká pe kóòdù náà ní báyìí:
 
 {% filename %}command-line{% endfilename %}
 
@@ -974,7 +974,7 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+Kú oríire! O ṣẹ̀ṣẹ̀ kẹ́kọ̀ọ́ nípa bí o ṣe lè kọ àwọn iṣẹ́! :)
 
 ## Loops
 
