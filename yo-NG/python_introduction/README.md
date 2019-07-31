@@ -930,7 +930,7 @@ Kí a sì mú u ṣiṣẹ́ léèkan si:
     Hi Ola!
     
 
-And if we change the name?
+Àti pé tí a bá ṣàyípadà orúkọ náà?
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -938,7 +938,7 @@ And if we change the name?
 hi("Sonja")
 ```
 
-And run it:
+Kí a sì mú u ṣiṣẹ́:
 
 {% filename %}command-line{% endfilename %}
 
@@ -946,14 +946,14 @@ And run it:
     Hi Sonja!
     
 
-Now, what do you think will happen if you write another name in there? (Not Ola or Sonja.) Give it a try and see if you're right. It should print out this:
+Ní báyìí, kíni o lérò pé yíò ṣẹlẹ̀ tí o bá kọ orúkọ mìíràn síbẹ̀? (Kìí ṣe Ola tàbí Sonja.) Gbìyànjú rẹ̀ wò kí o sì ri bóyá o gbà á. Ó yẹ kó ṣàtẹ̀jáde èyí:
 
 {% filename %}command-line{% endfilename %}
 
     Hi anonymous!
     
 
-This is awesome, right? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+Èyí dára, àbí bẹ́ẹ̀ kọ? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. Àti pé ìdí nìyẹn tí a fi nílò àwọn iṣẹ́ – ìwọ kò ní fẹ́ pààrà kóòdù rẹ!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
