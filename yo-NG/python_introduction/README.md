@@ -953,7 +953,7 @@ Ní báyìí, kíni o lérò pé yíò ṣẹlẹ̀ tí o bá kọ orúkọ mì�
     Hi anonymous!
     
 
-Èyí dára, àbí bẹ́ẹ̀ kọ? This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. Àti pé ìdí nìyẹn tí a fi nílò àwọn iṣẹ́ – ìwọ kò ní fẹ́ pààrà kóòdù rẹ!
+Èyí dára, àbí bẹ́ẹ̀ kọ? Lọ́nà yìí, ìwọ kò ní láti máa pààrà ara rẹ ní gbogbo ìgbà tí o bá fẹ́ ṣàyípadà orúkọ ẹni tó yẹ kí iṣẹ́ náà kí. Àti pé ìdí nìyẹn tí a fi nílò àwọn iṣẹ́ – ìwọ kò ní fẹ́ pààrà kóòdù rẹ!
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
