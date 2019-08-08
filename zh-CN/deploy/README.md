@@ -8,11 +8,11 @@
 
 其它我们将使用到的外部服务是[GitHub](https://www.github.com)，它是一个代码托管服务。 还有其它的一些服务，但当今几乎所有的程序员都有 GitHub 帐户，并且现在你也会有的！
 
-这三个地方对于你来说很重要。 您的本地计算机将是您开发和测试的地方。 当您高兴地看到更改时，您将在GitHub上放置您的程序副本。 Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+这三个地方对于你来说很重要。 您的本地计算机将是您开发和测试的地方。 当您高兴地看到更改时，您将在GitHub上放置您的程序副本。 您的网站在PythonAnywhere上部署并通过从GitHub上获取新的代码副本来更新。
 
 # Git
 
-> **Note** If you already did the Installation steps, there's no need to do this again – you can skip to the next section and start creating your Git repository.
+> **注意** 如果你已经做过安装步骤了，你可以直接跳过这个步骤开始创建你自己的Git版本库。
 
 {% include "/deploy/install_git.md" %}
 
@@ -20,7 +20,7 @@
 
 Git跟踪一组特定的在代码仓库（或简称“仓库”）中文件的更改。 我们开始用git管理自己的项目吧。 打开你的终端，进入 `djangogirls` 文件夹运行以下的命令：
 
-> **Note** Check your current working directory with a `pwd` (Mac OS X/Linux) or `cd` (Windows) command before initializing the repository. 你应该是在 `djangogirls` 文件夹下运行命令。
+> **注意** 在初始化仓库之前，请使用 `pwd`命令 (OSX/Linux) 或者 `cd` (Windows) 命令检查你当前的工作目录。 你应该是在 `djangogirls` 文件夹下运行命令。
 
 {% filename %}command-line{% endfilename %}
 
@@ -30,7 +30,7 @@ Git跟踪一组特定的在代码仓库（或简称“仓库”）中文件的�
     $ git config --global user.email you@example.com
     
 
-Initializing the git repository is something we need to do only once per project (and you won't have to re-enter the username and email ever again).
+每个项目我们只需要初始化一次Git仓库（而且你从此不需要重新输入用户名和邮箱）。
 
 Git会追踪这个目录下所有文件和文件夹的更改，但是有一些文件我们希望Git忽略它。 为此，我们可以在系统根目录下创建一个命名为 `.gitignore` 的文件。 打开编辑器，创建新文件并写入以下内容：
 
