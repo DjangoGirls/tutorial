@@ -4,7 +4,7 @@
 
 ## Visual Studio Code
 
-Visual Studio Code is a source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code是有微软开发的面向Windows、Linux和macOS的一种开源代码编辑器。 It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
 
 [在这里下载](https://code.visualstudio.com/download)
 
