@@ -89,7 +89,7 @@ h1 a, h2 a {
 
 你可以通过[w3schools的CSS选择器部分](http://www.w3schools.com/cssref/css_selectors.asp)了解更多内容。
 
-We also need to tell our HTML template that we added some CSS. Open the `blog/templates/blog/post_list.html` file in the code editor and add this line at the very beginning of it:
+然后，我们需要让HTML文件知道我们增加了一些CSS样式。打开文件`blog/templates/blog/post_list.html`并把这行代码放在HTML文件的开头。
 
 {% filename %}blog/templates/blog/post_list.html{% endfilename %}
 
@@ -128,7 +128,7 @@ We also need to tell our HTML template that we added some CSS. Open the `blog/te
         {% for post in posts %}
             <div>
                 <p>published: {{ post.published_date }}</p>
-                <h2><a href="">{{ post.title }}</a></h2>
+                <h1><a href="">{{ post.title }}</a></h1>
                 <p>{{ post.text|linebreaksbr }}</p>
             </div>
         {% endfor %}
@@ -169,8 +169,8 @@ body {
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
-h1 a, h2 a {
-    color: #C25100;
+h1 a {
+    color: #FCA205;
     font-family: 'Lobster';
 }
 ```
@@ -203,13 +203,13 @@ h1 a, h2 a {
 </div>
 ```
 
-现在，我们将把声明组代码放入不同的选择器中。 选择器以 `.` 开始，后面紧跟着类名。 网络上有很多很棒的CSS教程以及相关解释，帮助您理解下面的代码。 For now, copy and paste it into your `blog/static/css/blog.css` file:
+现在，我们将把声明组代码放入不同的选择器中。 选择器以 `.` 开始，后面紧跟着类名。 网络上有很多很棒的CSS教程以及相关解释，帮助您理解下面的代码。 至于现在，就先把以下代码复制粘贴到你的 `blog/static/css/blog.css` 文件中吧。
 
 {% filename %}blog/static/css/blog.css{% endfilename %}
 
 ```css
 .page-header {
-    background-color: #C25100;
+    background-color: #ff9400;
     margin-top: 0;
     padding: 20px 20px 20px 40px;
 }
@@ -251,7 +251,7 @@ h1, h2, h3, h4 {
     margin-bottom: 70px;
 }
 
-.post h2 a, .post h2 a:visited {
+.post h1 a, .post h1 a:visited {
     color: #000000;
 }
 ```
@@ -283,7 +283,7 @@ h1, h2, h3, h4 {
                     <div class="date">
                         <p>published: {{ post.published_date }}</p>
                     </div>
-                    <h2><a href="">{{ post.title }}</a></h2>
+                    <h1><a href="">{{ post.title }}</a></h1>
                     <p>{{ post.text|linebreaksbr }}</p>
                 </div>
             {% endfor %}
