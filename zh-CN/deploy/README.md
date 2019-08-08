@@ -2,13 +2,13 @@
 
 > **注** 这一章可以有时有点难打通。 坚持并完成它 ；部署是在网站开发过程的重要组成部分。 这一章放在本教程的中部，因此你的指导者可以帮助你在使网站上线中的一些小困难。 这意味着如果您花大量的时间，你仍然能独立完成这个教程。
 
-Until now, your website was only available on your computer. Now you will learn how to deploy it! 部署是在互联网上发布你的应用程序的一系列过程，因此人们最终可以一起去看看你的应用程序. :)
+直到现在，您的网站只能在您的计算机上访问， 现在你要会学习如何部署它！ 部署是在互联网上发布你的应用程序的一系列过程，因此人们最终可以一起去看看你的应用程序. :)
 
-正如你所学习的，一个网站必须要放到一个服务器上。 There are a lot of server providers available on the internet, we're going to use [PythonAnywhere](https://www.pythonanywhere.com/). PythonAnywhere is free for small applications that don't have too many visitors so it'll definitely be enough for you now.
+正如你所学习的，一个网站必须要放到一个服务器上。 互联网上有许多服务器供应商，我们将使用 [PythonAnywhere](https://www.pythonanywhere.com/)。 PythonAnywhere 对于一些没有太多访问者的小应用是免费的，所以它对你来说绝对是足够使用的。
 
 其它我们将使用到的外部服务是[GitHub](https://www.github.com)，它是一个代码托管服务。 还有其它的一些服务，但当今几乎所有的程序员都有 GitHub 帐户，并且现在你也会有的！
 
-These three places will be important to you. Your local computer will be the place where you do development and testing. When you're happy with the changes, you will place a copy of your program on GitHub. Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
+这三个地方对于你来说很重要。 您的本地计算机将是您开发和测试的地方。 当您高兴地看到更改时，您将在GitHub上放置您的程序副本。 Your website will be on PythonAnywhere and you will update it by getting a new copy of your code from GitHub.
 
 # Git
 
