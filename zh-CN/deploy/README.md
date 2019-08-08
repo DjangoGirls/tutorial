@@ -49,9 +49,9 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
 
 > **注意** 在文件名最前面的"."很重要。 如果你在创建文件的时候有困难(例如，Macs不能通过Finder创建开头为"."的文件), 可以在编辑器里点击"另存为", 这个没问题的。 确定不添加<0 txt</code>,`><py`,或者文件名中的任何其他扩展名，只有在名称为 `gigistnow`的情况下，该扩展才能被Git 确认。
 > 
-> **注意** 您在 `githnode`文件中指定的文件之一是 `db.sqlite3`。 此文件是你的本地数据库，用来存储所有用户和帖子。 我们将遵循标准的网络编程做法，这意味着我们将使用单独的数据库来用于本地测试网站和您的 PythonAnywhere 上的现场网站。 The PythonAnywhere database could be SQLite, like your development machine, but usually you will use one called MySQL which can deal with a lot more site visitors than SQLite. Either way, by ignoring your SQLite database for the GitHub copy, it means that all of the posts and superuser you created so far are going to only be available locally, and you'll have to create new ones on production. You should think of your local database as a good playground where you can test different things and not be afraid that you're going to delete your real posts from your blog.
+> **注意** 您在 `githnode`文件中指定的文件之一是 `db.sqlite3`。 此文件是你的本地数据库，用来存储所有用户和帖子。 我们将遵循标准的网络编程做法，这意味着我们将使用单独的数据库来用于本地测试网站和您的 PythonAnywhere 上的现场网站。 PythonAnywhere 数据库可以像您的开发机器一样使用SQLite，但通常使用一个叫MySQL的站点访问者比SQLite更多。 无论如何，无视您GitHub 复制的SQLite数据库意味着您迄今所创建的所有帖子和超级用户只能在当地使用，并且您必须在生产中创建新的版本。 你应该把本地数据库视为一个可以随意测试不同的事情而不担心你会从博客中删除您的真实帖子的地方。
 
-在执行git操作之前，最好使用 `git status` 命令查看一下当前的状态，尤其是在执行 `git add`或者在你不确定哪些文件被改动的情况下。 This will help prevent any surprises from happening, such as wrong files being added or committed. The `git status` command returns information about any untracked/modified/staged files, the branch status, and much more. The output should be similar to the following:
+在执行git操作之前，最好使用 `git status` 命令查看一下当前的状态，尤其是在执行 `git add`或者在你不确定哪些文件被改动的情况下。 这有助于阻止各种意外发生，例如错误的文件被添加或提交。 `git status` 命令会返回所有未追踪/修改/暂存的文件，还有分支状态等信息。 输出将类似于以下内容：
 
 {% filename %}command-line{% endfilename %}
 
@@ -85,17 +85,17 @@ Git会追踪这个目录下所有文件和文件夹的更改，但是有一些�
      create mode 100644 mysite/wsgi.py
     
 
-## Pushing your code to GitHub
+## 将您的代码推送至 GitHub
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+转到 [GitHub.com](https://www.github.com) 并注册一个新的免费用户帐户。 (如果您已经做完了这步，那很棒) 请确认记住了您的密码(如果您使用密码，添加到您的密码管理器)。
 
-Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
+现在，创建一个新的仓库，命名为“my-first-blog”。 保持 "initialise with a README" 选框未选中状态，.gitignore 选项为无 (我们已经手动创建了) ，让License设置为无。
 
 ![](images/new_github_repo.png)
 
-> **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
+> **注意** `my-first-blog`这个名字很重要，你可以用其它的，但是这个名字会在教程中出现多次，你需要确保每次都替换掉它。 保持用 `my-first-blog` 这个名字可能更为简单.
 
-On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
+在下一个屏幕上，您将显示你的仓库克隆URL，您将会在下面的一些命令中使用：
 
 ![](images/github_get_repo_url_screenshot.png)
 
