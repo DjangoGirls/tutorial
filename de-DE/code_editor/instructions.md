@@ -4,7 +4,7 @@ Unsere Vorschläge siehst du unten. Aber fühl dich ganz frei, deine Trainerin z
 
 ## Visual Studio Code
 
-Visual Studio Code ist ein von Microsoft entwickelter Quellcode-Editor für Windows, Linux und Mac. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Code ist ein von Microsoft entwickelter Quellcode-Editor für Windows, Linux und Mac. Es enthält Unterstützung für Debugging, eingebaute Git-Steuerung, Syntax-Highlighting, intelligente Code-Vervollständigung, Snippets und Code-Refactoring.
 
 [Du kannst ihn hier herunterladen](https://code.visualstudio.com/download)
 
