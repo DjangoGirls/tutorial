@@ -56,14 +56,14 @@ Es ist ziemlich wahrscheinlich, dass du Python schon automatisch installiert has
     Python 3.6.1
     
 
-Wenn du eine andere 'Mikroversion' von Python installiert hast, z.B. 3.6.0, dann musst du die Version nicht aktualisieren. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+Wenn du eine andere 'Mikroversion' von Python installiert hast, z.B. 3.6.0, dann musst du die Version nicht aktualisieren. Wenn du Python noch nicht installiert hast oder wenn du eine andere Python-Version willst, prüfe zuerst mit folgendem Befehl, welche Linux-Distribution du benutzt:
 
 {% filename %}command-line{% endfilename %}
 
     $ grep ^NAME= /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+Folge danach je nach Ergebnis einer der unterhalb dieses Abschnitts folgenden Installationsanweisungen.
 
 <!--endsec-->
 
@@ -81,7 +81,7 @@ Gib diesen Befehl in die Konsole ein:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+Gib diesen Befehl in die Konsole ein:
 
 {% filename %}command-line{% endfilename %}
 
