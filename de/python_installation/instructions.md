@@ -56,7 +56,14 @@ Es ist ziemlich wahrscheinlich, dass du Python schon automatisch installiert has
     Python 3.6.1
     
 
-Wenn du eine andere 'Mikroversion' von Python installiert hast, z.B. 3.6.0, dann musst du die Version nicht aktualisieren. Wenn Python bei dir nicht installiert ist, oder du eine neuere Version willst, kannst du das folgendermaßen tun:
+Wenn du eine andere 'Mikroversion' von Python installiert hast, z.B. 3.6.0, dann musst du die Version nicht aktualisieren. Wenn du Python noch nicht installiert hast oder wenn du eine andere Python-Version willst, prüfe zuerst mit folgendem Befehl, welche Linux-Distribution du benutzt:
+
+{% filename %}command-line{% endfilename %}
+
+    $ grep ^NAME= /etc/os-release
+    
+
+Folge danach je nach Ergebnis einer der unterhalb dieses Abschnitts folgenden Installationsanweisungen.
 
 <!--endsec-->
 
