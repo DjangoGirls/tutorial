@@ -144,6 +144,13 @@ Der Name `myvenv` muss mit dem von Dir gewählten Namen des `virtualenv` überei
 
 <!--endsec-->
 
+> **Hinweis:** Für Benutzerinnen des populären Editors VS Code, der einen Powershell-basiertes Terminal eingebaut hat: Wenn du beim eingebauten Terminal bleiben willst, kannst du deine virtuelle Umgebung mit folgendem Befehl aktivieren:
+> 
+>     $ . myvenv\Scripts\activate.ps1
+>     
+> 
+> Der Vorteil davon ist, dass du nicht zwischen den Editor-Fenstern und den Kommandozeilen-Fenstern wechseln musst
+
 Du erkennst, dass dein `virtualenv` gestartet ist, wenn du vor der Eingabeaufforderung eine Klammer mit dem Namen deiner Umgebung siehst, `(myvenv)`.
 
 In deiner neuen virtuellen Umgebung wird automatisch die richtige Version von `python` verwendet. Du kannst also `python` statt `python3` eingeben.

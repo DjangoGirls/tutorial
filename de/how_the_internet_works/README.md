@@ -6,9 +6,9 @@
 
 Wahrscheinlich nutzt du das Internet jeden Tag. Aber weißt du, was passiert, wenn du eine Adresse wie https://djangogirls.org im Browser eingibst und `enter` drückst?
 
-Als Erstes solltest du wissen, dass eine Webseite meist nur ein paar Dateien auf der Festplatte sind. Genau wie deine Filme, Musik oder Bilder. Das Besondere an Webseiten ist, dass sie aus speziellem Computer-Code bestehen, das sogenannte HTML.
+Als Erstes solltest du wissen, dass eine Webseite meist nur ein paar Dateien auf der Festplatte sind -- so wie deine Filme, deine Musik oder deine Bilder. Das Besondere an Webseiten ist, dass sie aus speziellem Computer-Code bestehen, das sogenannte HTML.
 
-Wenn du noch nie etwas mit Programmierung zu tun hattest, kann auch HTML zuerst abschreckend aussehen, aber dein Browser (Chrome, Safari, Firefox, etc.) liebt es. Browser sind so entworfen, dass sie diesen Code verstehen, seinen Anweisungen folgen können und diese Dateien, aus denen deine Website besteht, genau so darstellen, wie du es möchtest.
+Wenn du noch nie etwas mit Programmierung zu tun hattest, kann auch HTML zuerst abschreckend aussehen, aber Dein Browser (Chrome, Safari, Firefox, etc.) liebt es. Browser sind so entworfen, dass sie diesen Code verstehen, seinen Anweisungen folgen können und diese Dateien, aus denen deine Website besteht, genau so darstellen, wie du es möchtest.
 
 Wie jede andere Datei auch, muss die HTML-Datei irgendwo auf einer Festplatte gespeichert werden. Für das Internet verwenden wir spezielle, leistungsstarke Computer, sogenannte *Server*. An ihnen sind normalerweise weder Bildschirm, Maus oder Tastatur angeschlossen, weil der Hauptzweck der Server darin besteht, Daten zu speichern und zur Verfügung zu stellen. Darum nennt man sie *Server* - sie *bedienen* (serve) dich mit Daten.
 
