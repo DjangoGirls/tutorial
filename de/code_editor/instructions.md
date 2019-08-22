@@ -2,6 +2,12 @@ Es gibt viele verschiedene Editoren. Welcher für dich am besten ist, ist weites
 
 Unsere Vorschläge siehst du unten. Aber fühl dich ganz frei, deine Trainerin zu fragen, was ihre Vorlieben sind - wenn sie sich mit dem Editor auskennt, wird es leichter sein, Hilfe zu erhalten.
 
+## Visual Studio Code
+
+Visual Studio Code ist ein von Microsoft entwickelter Quellcode-Editor für Windows, Linux und Mac. Es enthält Unterstützung für Debugging, eingebaute Git-Steuerung, Syntax-Highlighting, intelligente Code-Vervollständigung, Snippets und Code-Refactoring.
+
+[Du kannst ihn hier herunterladen](https://code.visualstudio.com/download)
+
 ## Gedit
 
 Gedit ist ein kostenloser Open-Source-Editor. Es gibt ihn für alle Betriebssysteme.
