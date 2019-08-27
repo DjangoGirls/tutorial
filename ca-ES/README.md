@@ -48,4 +48,4 @@ En aquest moment, les traduccions es guarden a la plataforma crowdin.com a:
 
 https://crowdin.com/project/django-girls-tutorial
 
-If your language is not listed on [crowdin](https://crowdin.com/), please [open a new issue](https://github.com/DjangoGirls/tutorial/issues/new) informing us of the language so we can add it.
+Si la teva llengua no és a la llista a [crowdin](https://crowdin.com/), si us plau[obre un nou assumpte](https://github.com/DjangoGirls/tutorial/issues/new)informant-nos de la llengua que falta per a que la poguem afegir.
