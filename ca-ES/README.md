@@ -4,31 +4,31 @@
 
 > Aquest treball té una llicència Internacional Creative Commons de Reconeixement - Compartir Igual 4.0. Per a veure una còpia d'aquesta llicència, visita https://creativecommons.org/licenses/by-sa/4.0/
 
-## Benvinguts/des
+## Benvinguda
 
-Benvinguts/des al Tutorial Noies Django! Ens alegrem de veure't aquí :) En aquest tutorial, farem una ullada sota el capó de les tecnologies web, oferint-te una mostra de totes les peces que formen el treball web tal com el coneixem.
+Benvingudes al Tutorial Noies Django! Ens alegrem de veure't aquí :) En aquest tutorial, farem una ullada sota el capó de les tecnologies web, oferint-te una mostra de totes les peces que formen el treball web tal com el coneixem.
 
 Com passa amb tot allò que ens és desconegut, serà una aventura. Però no et preocupis, si has tingut el valor d'arribar fins aquí, tot anirà bé :)
 
 ## Introducció
 
-Alguna vegada has sentit que al món cada vegada hi ha més tecnologia que et resulta (de moment) estranya? Have you ever wondered how to create a website but have never had enough motivation to start? Have you ever thought that the software world is too complicated for you to even try doing something on your own?
+Alguna vegada has sentit que al món cada vegada hi ha més tecnologia que et resulta (de moment) estranya? Alguna vegada t'has preguntat com crear una pàgina web però t'ha faltat motivació per començar? Alguna vegada has pensat que el món del software és massa complicat com per ni tan sols provar-ho pel teu compte?
 
-Well, we have good news for you! Programming is not as hard as it seems and we want to show you how fun it can be.
+Bé, tenim bones notícies! Programar no és pas tan difícil com sembla i et volem ensenyar com pot ser de divertit.
 
-This tutorial will not magically turn you into a programmer. If you want to be good at it, you need months or even years of learning and practice. But we want to show you that programming or creating websites is not as complicated as it seems. We will try to explain different bits and pieces as well as we can, so you will not feel intimidated by technology.
+Aquest tutorial no et convertirà en programador com per art de màgia. Per a fer-ho bé, cal mesos o anys de pràctica. Però et volem demostrar que programar o crear llocs web no és tan dicícil com sembla. Intentarem explicar diferents parts tan bé com poguem, perquè no et sentis intimidada per la tecnologia.
 
-We hope that we'll be able to make you love technology as much as we do!
+Esperem ser capaços de transmetre't el nostre amor per la tecnologia!
 
-## What will you learn during the tutorial?
+## Què aprendràs en aquest tutorial?
 
-Once you've finished the tutorial, you will have a small working web application: your own blog. We will show you how to put it online, so others will see your work!
+Un cop hauràs acabat el tutorial, tindràs una petita web en funcionament: el teu propi blog. T'ensenyarem com posar-lo en línia, de manera que altra gent pugui veure la teva feina!
 
-It will (more or less) look like this:
+Tindrà (més o menys) aquest aspecte:
 
-![Figure 0.1](images/application.png)
+![Figura 0.1](images/application.png)
 
-> If you work with the tutorial on your own and don't have a coach who will help you in case of any problem, we have a chat system for you: [![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Si treballes amb el tutorial pel teu compte i no tens ajuda t'ajudarem en cas de problema, tenim un xat:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
 
 OK, [let's start at the beginning…](./how_the_internet_works/README.md)
 
