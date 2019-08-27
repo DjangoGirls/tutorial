@@ -10,7 +10,7 @@ Visual Studio Code — это редактор исходного кода, ра
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit является открытым, бесплатным редактором, доступным для всех операционных систем.
 
 [Скачать его можно здесь](https://wiki.gnome.org/Apps/Gedit#Download)
 
@@ -28,10 +28,10 @@ Atom - еще один популярный редактор. Он беспла�
 
 ## Зачем нам нужен редактор кода?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Ты можешь спросить — зачем устанавливать отдельную программу для редактирования кода, если можно использовать Word или Notepad?
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Во-первых, код должен должен храниться в виде **простого текста**, а проблема таких программ, как Word или Textedit в том, что они не сохраняют файлы в этом виде, а используют "обогащённый" текст (с форматированием и шрифтами), например, [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Вторая причина в том, что специализированные редакторы предоставляют множество полезных для программирования возможностей, такие как цветную подсветку кода в зависимости от его смысла и автоматически закрывающиеся кавычки.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Позже мы увидим всё это в действии. Скоро ты начнешь думать о своем редакторе кода как о проверенном любимом инструменте :)
