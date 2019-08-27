@@ -114,7 +114,7 @@ data-collapse=true ces-->
 
 نصحه نمایش داده شده ممکن است با 3.6.1 متفاوت باشد اما باید آن چیزی باشد که در موقع نصب انتخاب کرده اید.
 
-**نکته:** اگر بر روی ویندوز کار می‌کنید و پیغام خطای `python3` پیدا نشد، دریافت کردید دستور `python` را (بدون `3`) امتحان کنید که باید یکی از نسخه‌های پایتون 3.4.0 یا بالاتر باشد.
+**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
 
 * * *
 
