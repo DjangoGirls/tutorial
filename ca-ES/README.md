@@ -28,23 +28,23 @@ Tindrà (més o menys) aquest aspecte:
 
 ![Figura 0.1](images/application.png)
 
-> Si treballes amb el tutorial pel teu compte i no tens ajuda t'ajudarem en cas de problema, tenim un xat:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). We asked our coaches and previous attendees to be there from time to time and help others with the tutorial! Don't be afraid to ask your question there!
+> Si treballes amb el tutorial pel teu compte i no tens ajuda t'ajudarem en cas de problema, tenim un xat:[![Gitter](https://badges.gitter.im/DjangoGirls/tutorial.svg)](https://gitter.im/DjangoGirls/tutorial). Hem demanat als nostres instructors i antics alumnes que vinguin per aquí de tan en tant per ajudar amb el tutorial! No tinguis por de preguntar!
 
-OK, [let's start at the beginning…](./how_the_internet_works/README.md)
+D'acord, [comencem perl principi...](./how_the_internet_works/README.md)
 
-## Following the tutorial at home
+## Seguint el tutorial des de casa
 
-It is amazing to take part in a Django Girls workshop, but we are aware that it is not always possible to attend one. This is why we encourage you to try following this tutorial at home. For readers at home, we are currently preparing videos that will make it easier to follow the tutorial on your own. It is still a work in progress, but more and more things will be covered soon at the [Coding is for girls](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed) YouTube channel.
+És increïble participar a un taller de Noies Django, però som conscients que no sempre és fàcil assistir. Per això t'animem a seguir el tutorial des de casa. Per als que ens llegeixen des de casa, ara estem preparant vídeos que faran més fàcil seguir el tutorial pel vostre compte. És una feina que encara està en curs, però s'aniran cobrint cada vegada més continguts al canal de Youtube [Programar és cosa de noies](https://www.youtube.com/channel/UC0hNd2uW8jTR5K3KBzRuG2A/feed).
 
-In every chapter already covered, there is a link that points to the correct video.
+A cada capítol ja cobert, hi ha un enllaç que dirigeix al vídeo corresponent.
 
-## About and contributing
+## Sobre nosaltres i Contribució
 
-This tutorial is maintained by [DjangoGirls](https://djangogirls.org/). If you find any mistakes or want to update the tutorial please [follow the contributing guidelines](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
+Aquest tutorial és mantingut per [Noies Django](https://djangogirls.org/). Si trobes algun error o vols actualitzar el tutorial si us plau [segueix les guies de contribució](https://github.com/DjangoGirls/tutorial/blob/master/README.md).
 
-## Would you like to help us translate the tutorial into other languages?
+## T'agradaria ajudar-nos a traduir el tutorial a altres llengües?
 
-Currently, translations are being kept on crowdin.com platform at:
+En aquest moment, les traduccions es guarden a la plataforma crowdin.com a:
 
 https://crowdin.com/project/django-girls-tutorial
 
