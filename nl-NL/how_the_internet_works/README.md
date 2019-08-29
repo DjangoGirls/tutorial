@@ -8,9 +8,9 @@ Gokje: je gebruikt het Internet zeker elke dag? Maar weet je écht wat er gebeur
 
 Het eerste wat je moet weten is dat een website gewoon wat bestanden zijn die bij elkaar op een harde schijf staan -- net zoals je films, je muziek of je foto's. Er is echter één dingetje dat uniek is voor websites: ze bevatten computercode genaamd HTML.
 
-Als je niet zo bekend bent met programmeren, kan het in het begin lastig zijn om HTML te begrijpen. Je webbrowsers (zoals Chrome, Safari, Firefox, etc.) zijn er anders wel gek op. Web browsers zijn ontwerpen om deze code te begrijpen. Ze volgen de instructies die omschreven staan in de code en presenteren de bestanden waar jouw website uit bestaat, precies zoals jij het wilt.
+Als je nog niet zo bekend bent met programmeren, kan het in het begin lastig zijn om HTML te begrijpen. Je webbrowsers (zoals Chrome, Safari, Firefox, etc.) zijn er anders wel gek op. Web browsers zijn ontworpen om deze code te begrijpen. Ze volgen de instructies in die code en tonen de bestanden waar jouw website uit bestaat, precies zoals jij het wilt.
 
-Net zoals bij elk bestand, moeten we de HTML bestanden ergens op een harde schijf opslaan. Voor het Internet gebruiken we speciale, krachtige computers genaamd *servers*. Ze hebben geen scherm, muis of toetsenbord omdat hun voornaamste doel het opslaan en serveren van gegevens is. Dit is waarom ze *servers* worden genoemd - omdat ze jouw data *serveren*.
+Net zoals bij elk bestand, moeten we de HTML bestanden ergens op een harde schijf opslaan. Voor het Internet gebruiken we speciale, krachtige computers genaamd *servers*. Ze hebben geen scherm, muis of toetsenbord omdat hun voornaamste doel het opslaan en serveren (aanleveren) van gegevens is (denk aan een serveerster die in een restaurant jouw bestelde drankje komt aanleveren). Dit is waarom ze *servers* worden genoemd - omdat ze jouw data *serveren*.
 
 Ok, maar je wilt weten hoe het internet er uit ziet, nietwaar?
 
@@ -22,7 +22,7 @@ Ziet er uit als een puinhoop, toch? In feite is het een netwerk van aaneengeslot
 
 ![Figuur 1.2](images/internet_3.png)
 
-Het is fascinerend, nietwaar? Maar het is uiteraard niet mogelijk om een kabel te hebben tussen elk apparaat wat verbonden is met het internet. Dus, om een machine te bereiken (bijvoorbeeld degene waarop https://djangogirls.org staat), moeten we een verzoek versturen dat langs vele, vele verschillende machines gaat.
+Het is fascinerend, nietwaar? Maar het is uiteraard niet mogelijk om een kabel te hebben tussen elk apparaat dat verbonden is met het internet. Dus, om een machine te bereiken (bijvoorbeeld degene waarop https://djangogirls.org staat), moeten we een verzoek versturen dat langs vele, vele verschillende machines gaat.
 
 Het ziet er zo uit:
 
