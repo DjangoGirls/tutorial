@@ -6,9 +6,9 @@
 
 Gokje: je gebruikt het Internet zeker elke dag? Maar weet je écht wat er gebeurt als je een adres zoals https://djangogirls.org in je browser ingeeft en op de `enter` knop drukt?
 
-Het eerste wat je moet weten is dat een website gewoon wat bestanden zijn die op een harde schijf staan -- net zoals je films, muziek of foto's. However, there is one part that is unique for websites: they include computer code called HTML.
+Het eerste wat je moet weten is dat een website gewoon wat bestanden zijn die bij elkaar op een harde schijf staan -- net zoals je films, je muziek of je foto's. Er is echter één dingetje dat uniek is voor websites: ze bevatten computercode genaamd HTML.
 
-If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Web browsers zijn ontwerpen om deze code te begrijpen. Ze volgen de instructies die omschreven staan in de code en presenteren de bestanden waar jouw website uit bestaat, precies zoals jij het wilt.
+Als je niet zo bekend bent met programmeren, kan het in het begin lastig zijn om HTML te begrijpen. Je webbrowsers (zoals Chrome, Safari, Firefox, etc.) zijn er anders wel gek op. Web browsers zijn ontwerpen om deze code te begrijpen. Ze volgen de instructies die omschreven staan in de code en presenteren de bestanden waar jouw website uit bestaat, precies zoals jij het wilt.
 
 Net zoals bij elk bestand, moeten we de HTML bestanden ergens op een harde schijf opslaan. Voor het Internet gebruiken we speciale, krachtige computers genaamd *servers*. Ze hebben geen scherm, muis of toetsenbord omdat hun voornaamste doel het opslaan en serveren van gegevens is. Dit is waarom ze *servers* worden genoemd - omdat ze jouw data *serveren*.
 
