@@ -9,7 +9,7 @@ L'entorn de desenvolupament integrat (IDE) en núvol és una eina que t'ofereix 
 1. Ves a [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Registra't
 3. Clica a *New Server*
-4. Click Terminal button(on the left side of the window)
+4. Clica el botò Terminal (a la part esquerra de la finestra)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
 
