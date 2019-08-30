@@ -2,13 +2,13 @@ Pots [saltar fins aquesta secció](http://tutorial.djangogirls.org/en/installati
 
 ### IDE en núvol (PaizaCloud Cloud IDE, AWS Cloud9)
 
-L'entorn de desenvolupament integrat (IDE) en núvol és una eina que t'ofereix un editor de codi i accés a un ordinador funcionant a Internet, on pots instal·lar, escriure i executar el programari. Durant la resta del tutorial, aquest IDE en núvol actuarà com la teva *màquina local*. Executaràs comandes des d'una interfície de terminal, com les teves companyes de classe fan amb OS X, Ubuntu o Windows, però la teva estarà conectada a un ordinador executant-se en algun altre lloc de la xarxa. El IDE en núvol la prepararà per a tu. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+L'entorn de desenvolupament integrat (IDE) en núvol és una eina que t'ofereix un editor de codi i accés a un ordinador funcionant a Internet, on pots instal·lar, escriure i executar el programari. Durant la resta del tutorial, aquest IDE en núvol actuarà com la teva *màquina local*. Executaràs comandes des d'una interfície de terminal, com les teves companyes de classe fan amb OS X, Ubuntu o Windows, però la teva estarà conectada a un ordinador executant-se en algun altre lloc de la xarxa. El IDE en núvol la prepararà per a tu. Aquí tens les instruccions per alguns IDEs en núvol (PaizaCloud Cloud IDE, AWS Cloud9). Pots elegir-ne un i seguir les seves instruccions.
 
 #### PaizaCloud Cloud IDE
 
-1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
-2. Sign up for an account
-3. Click *New Server*
+1. Ves a [PaizaCloud Cloud IDE](https://paiza.cloud/)
+2. Registra't
+3. Clica a *New Server*
 4. Click Terminal button(on the left side of the window)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
