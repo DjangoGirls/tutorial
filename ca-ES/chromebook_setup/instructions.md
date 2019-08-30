@@ -2,7 +2,7 @@ Pots [saltar fins aquesta secció](http://tutorial.djangogirls.org/en/installati
 
 ### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
-L'IDE Cloud 9 és una eina que t'ofereix un editor de codi i accés a un ordinador funcionant a Internet, on pots instal·lar, escriure i executar el programari. Durant la resta del tutorial, Cloud 9 actuarà com la teva *màquina local*. Permet executar comandes des d'una interficíe de terminal com uan màquina OS, Ubuntu o Windows, però aquesta estarà conectada a un ordinador executatnt en algun altre lloc, que IDE al n`vol posa a la nostra disposició. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+L'entorn de desenvolupament integrat (IDE) Cloud 9 és una eina que t'ofereix un editor de codi i accés a un ordinador funcionant a Internet, on pots instal·lar, escriure i executar el programari. Durant la resta del tutorial, Cloud 9 actuarà com la teva *màquina local*. Permet executar comandes des d'una interficíe de terminal com uan màquina OS, Ubuntu o Windows, però aquesta estarà conectada a un ordinador executatnt en algun altre lloc, que IDE al n`vol posa a la nostra disposició. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
