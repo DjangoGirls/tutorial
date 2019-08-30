@@ -279,7 +279,7 @@ Maria
 
 Эта команда не возвращает ничего, она просто меняет порядок номеров в списке. Давайте выведем его на экран и посмотрим, что получилось:
 
-{% filename %}}command-line{% endfilename %}
+{% filename %}command-line{% endfilename %}
 ```python
 >>> print(lottery)
 [3, 12, 19, 30, 42, 59]
