@@ -10,7 +10,7 @@ Frameworky sú tu na to, aby si nemusela znovu vynájsť koleso. Uľahčia ti tv
 
 ## Prečo potrebuješ framework?
 
-Aby sme pochopili, čo vlastne Django je, potrebujeme sa zblízka pozrieť na serveri. Prvá vec, čo o nich musíš vedieť, je, že budú obsluhovať tvoju stránku.
+Aby sme pochopili, čo vlastne Django je, potrebujeme sa zblízka pozrieť na servre. Prvá vec, čo o nich musíš vedieť, je, že budú obsluhovať tvoju stránku.
 
 Predstav si poštovú schránku (port), na ktorej sa sledujú prichádzajúce listy (žiadosti). To vlastne robí web server. Web server si prečíta list a pošle odpoveď v podobe web stránky. Ale ak chceš niečo poslať, potrebuješ mať nejaký obsah. A Django je to, čo ti ten obsah pomôže vytvoriť.
 
