@@ -1,4 +1,4 @@
-{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="An error is expected when you run this code!" ></span>' %}
+{% set warning_icon = '<span class="glyphicon glyphicon-exclamation-sign" style="color: red;" aria-hidden="true" data-toggle="tooltip" title="Этот код ожидаемо вызовет ошибку!" ></span>' %}
 
 # Расширяем свое приложение
 
