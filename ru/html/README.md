@@ -210,9 +210,9 @@ $ git push
 
  [5]: https://www.pythonanywhere.com/consoles/
 
-{% filename %}command-line{% endfilename %}
+{% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ cd ~/my-first-blog
+$ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
 $ git pull
 [...]
 ```
