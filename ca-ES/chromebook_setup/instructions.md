@@ -1,8 +1,8 @@
 Pots [saltar fins aquesta secció](http://tutorial.djangogirls.org/en/installation/#install-python) si no fas servir un Chromebook. Si el fas servir, la teva experiència d'instal·lació serà una mica diferent. Pots ignorar la resta d'instruccions d'instal·lació.
 
-### Cloud IDE (PaizaCloud Cloud IDE, AWS Cloud9)
+### IDE en núvol (PaizaCloud Cloud IDE, AWS Cloud9)
 
-L'entorn de desenvolupament integrat (IDE) Cloud 9 és una eina que t'ofereix un editor de codi i accés a un ordinador funcionant a Internet, on pots instal·lar, escriure i executar el programari. Durant la resta del tutorial, Cloud 9 actuarà com la teva *màquina local*. Permet executar comandes des d'una interficíe de terminal com uan màquina OS, Ubuntu o Windows, però aquesta estarà conectada a un ordinador executatnt en algun altre lloc, que IDE al n`vol posa a la nostra disposició. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
+L'entorn de desenvolupament integrat (IDE) en núvol és una eina que t'ofereix un editor de codi i accés a un ordinador funcionant a Internet, on pots instal·lar, escriure i executar el programari. Durant la resta del tutorial, aquest IDE en núvol actuarà com la teva *màquina local*. Executaràs comandes des d'una interfície de terminal, com les teves companyes de classe fan amb OS X, Ubuntu o Windows, però la teva estarà conectada a un ordinador executant-se en algun altre lloc de la xarxa. El IDE en núvol la prepararà per a tu. Here is the instructions for cloud IDEs (PaizaCloud Cloud IDE, AWS Cloud9). You can choose one of the cloud IDEs, and follow the instruction of the cloud IDE.
 
 #### PaizaCloud Cloud IDE
 
