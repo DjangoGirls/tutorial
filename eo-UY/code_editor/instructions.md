@@ -28,7 +28,7 @@ Atom is another popular editor. It's free, open-source and available for Windows
 
 ## Kial instalu kodredaktilon?
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Vi eble scivolas, kial ni instalas tion speciala kodredaktila programaro anstataŭ uzi iel kiel Vordo (angle: Microsoft Word) aŭ Notepado (angle: Notepad).
 
 The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
