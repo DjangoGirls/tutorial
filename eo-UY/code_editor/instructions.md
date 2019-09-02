@@ -30,8 +30,8 @@ Atom is another popular editor. It's free, open-source and available for Windows
 
 Vi eble scivolas, kial ni instalas tion speciala kodredaktila programaro anstataŭ uzi iel kiel Vordo (angle: Microsoft Word) aŭ Notepado (angle: Notepad).
 
-La unua kialo estas, ke kodo devas esti **pura teksto**, kaj la problemo de programoj kiel Vordo kaj TekstEdito (angle: TextEdit) estas, ke ili ne vere faras puran tekston. Ili faras riĉan tekston (kun tiparo kaj formatado), uzante tajloritaj formatoj kiel [RTF (Riĉtekstformato, angle: Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+La unua kialo estas, ke kodo devas esti **pura teksto**, kaj la problemo de programoj kiel Vordo kaj TekstEdito (angle: TextEdit) estas, ke ili ne vere faras puran tekston. Ili faras riĉan tekston (kun tiparo kaj formatado), uzante tajloritajn formatojn kiel [RTF (Riĉtekstformato, angle: Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+La dua kialo estas, ke kodredaktiloj estas speciale farita por redakti kodon, do ili havas helpemajn funkciojn kiel markadigi kodon kun koloroj laŭ ĝia signifo aŭ aŭtomate fermi citilojn por vi.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Ni spertos tion poste. Baldaŭ vi iĝos pensanta pri via fidinda malnova redaktilo kiel unu el viaj plej ŝatataj iloj. :)
