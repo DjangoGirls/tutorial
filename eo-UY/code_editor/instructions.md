@@ -1,4 +1,4 @@
-Estas multaj diversaj redaktiloj kaj la elekto esence bazu sur persona prefero. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. As a beginner, however, that's probably less suitable; our recommendations are equally powerful, but a lot simpler.
+Estas multaj diversaj redaktiloj kaj la elekto esence bazu sur persona prefero. Most Python programmers use complex but extremely powerful IDEs (Integrated Development Environments), such as PyCharm. Por komencanto tamen tio verŝajne malpli taŭgas; nia rekomendoj estas same potenca, sed multe pli simpla.
 
 Nia sugestoj trovis sube, sed bonvolu demandi al via trejnisto, kio estas ria prefero – plifalicos ricevi helpon de ri.
 
@@ -26,7 +26,7 @@ Atom is another popular editor. It's free, open-source and available for Windows
 
 [Download it here](https://atom.io/)
 
-## Why are we installing a code editor?
+## Kial instalu kodredaktilon?
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
