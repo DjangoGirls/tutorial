@@ -170,7 +170,7 @@ Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
 
 Bu adımlar PythonAnywhere'de otomatikleştirilmiştir, ancak farklı sunucu sağlayıcıları ile yapılacak olan adımlarla aynıdır.
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. Bu nedenle, aynen kendi bilgisayarımızda yapmış olduğumuz gibi, `createsuperuser` ile bir admin kullacısını oluşturmamız gerekiyor. PythonAnywhere otomatik olarak virtualenv i başlatmış olduğu için, bu kullanıcıyı hemen oluşturabiliriz:
+Şu an dikkat edilmesi gereken en önemli şey PythonAnywhere'teki veritabanınızın aslında kendi bilgisayarınızdaki veritabanından tamamen ayrı olmasıdır, böylece farklı yayınlara ve yönetici hesaplarına sahip olabilir. Bu nedenle, aynen kendi bilgisayarımızda yapmış olduğumuz gibi, `createsuperuser` ile bir admin kullacısını oluşturmamız gerekiyor. PythonAnywhere otomatik olarak virtualenv i başlatmış olduğu için, bu kullanıcıyı hemen oluşturabiliriz:
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
@@ -214,7 +214,7 @@ Ve eğitmeniniz size yardıma hazır, unutmayın!
 
 # Sitenize göz atın!
 
-Siteniz için bulunan varsayılan sayfa ''İşe yaradı!'' demelidir. Tıpkı yerel bilgisayarınızda olduğu gibi. URL'nin sonuna `/admin/` yazın, 'giriş' tuşuna bastığınızda admin sitesi açılacak. Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+Siteniz için bulunan varsayılan sayfa ''İşe yaradı!'' demelidir. Tıpkı yerel bilgisayarınızda olduğu gibi. URL'nin sonuna `/admin/` yazın, 'giriş' tuşuna bastığınızda admin sitesi açılacak. Kullanıcı adı ve parola ile giriş yapın, sunucuya yeni Mesaj ekleyebileceğinizi göreceksiniz - yerel test veritabanınızdaki yayınların canlı blogunuza gönderilmediğini unutmayın.
 
 Birkaç gönderi oluşturduktan sonra, lokal kurulumunuza geri dönebilirsiniz (PythonAnywhere'e değil). Değişiklikleri lokalinizde yapacaksınız. Bu web geliştirmekte yaygın bir akışıdır - değişiklikleri yerel olarak yapar, sonra bu değişiklikleri GitHub'a gönderip canlı Web sunucusuna çekersiniz. Bu canlı web sitenizi bozmadan çalışmanızı ve yeni şeyler denemenizi sağlar. Bayağı havalı, di mi?
 
