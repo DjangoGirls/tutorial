@@ -366,7 +366,7 @@ Huwag mag-atubiling magpalit ng pamaga at tesko at i-save ang mga pagbabago!
 
 Binabati ko kayo! Ang iyong application ay unti-unti nang nakompleto!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Seguridad
 
