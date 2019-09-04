@@ -15,7 +15,7 @@
 #### جانغو
 
 - كتابنا الآخر، ["جانغو الفتيات التعليمي": ملحقات](https://tutorial-extensions.djangogirls.org/)
-- [المحتوى التعليمي الخاص بDjango](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [المحتوى التعليمي الخاص بDjango](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [ابدأ مع دروس الفيديو لDjango](http://www.gettingstartedwithdjango.com/)
 
 #### إتش تي أم ال، سي اس اس وجافا سكريبت
