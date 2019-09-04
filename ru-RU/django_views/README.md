@@ -41,4 +41,4 @@ def post_list(request):
 
 Нам показывают, что сервер снова работает, по крайней мере; но ход его работы все еще выглядит неправильно, так ведь? Не стоит беспокоиться, это всего лишь страница ошибки, бояться нечего! Так же как и сообщения об ошибках в консоли, эти сообщения тоже полезны. Вы можете прочитать, что *TemplateDoesNotExist*. Давайте исправим эту ошибку и создадим шаблон в следующей главе!
 
-> Подробнее о представлениях в Django можно узнать из официальной документации: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
