@@ -155,7 +155,7 @@ Now we run the helper to automatically configure our app from GitHub. Type the f
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
     
 
 As you watch that running, you'll be able to see what it's doing:
@@ -195,7 +195,7 @@ You can also go to the "Files" page and navigate around using PythonAnywhere's b
 
 Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 
-> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
 
 ## เคล็ดลับในการ Debugging
 
@@ -204,6 +204,7 @@ If you see an error while running the `pa_autoconfigure_django.py` script, here 
 - Forgetting to create your PythonAnywhere API token.
 - Making a mistake in your GitHub URL
 - If you see an error saying *"Could not find your settings.py"*, it's probably because you didn't manage to add all your files to Git, and/or you didn't push them up to GitHub successfully. Have another look at the Git section above
+- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
 
 ถ้าคุณเห็นข้อผิดพลาดเกิดขึ้นเมื่อคุณเข้าดูหน้าเว็บ ที่แรกที่คุณควรตรวจสอบก็คือใน **error log** You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). ลองหาดูว่ามันมีข้อความแสดงข้อผิดพลาดในนั้นมั้ย โดยข้อผิดพลาดล่าสุดจะปรากฎอยู่ด้านล่าง
 
