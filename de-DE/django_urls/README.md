@@ -100,4 +100,4 @@ Wenn du jetzt versuchst, http://127.0.0.1:8000/ aufzurufen, dann erscheint eine 
 
 Die Konsole zeigt einen Fehler, aber keine Sorge – der ist eigentlich ziemlich nützlich: Er sagt dir, dass **kein Attribut 'post_list'** vorhanden ist. Das ist der Name der *View*, die Django zu finden und zu verwenden versucht, aber wir haben sie noch gar nicht erstellt. In diesem Zustand wird dein `/admin/` auch nicht funktionieren. Keine Sorge, das regeln wir gleich. Wenn du eine andere Fehlermeldung siehst, versuche es nochmal nach einem Neustart des Webservers. Um das zu tun, stoppst du den Webserver, indem du im Kommandozeilen-Fenster, in dem er läuft, Strg+C bzw. Ctrl+C drückst (Strg-/Ctrl-Taste und C-Taste zusammen), und startest ihn danach mit dem Kommando `python manage.py runserver` neu.
 
-> Wenn du mehr über Django-URLconfs lernen willst, dann öffne die offizielle Dokumentation: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
