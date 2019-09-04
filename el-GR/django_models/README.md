@@ -96,7 +96,7 @@
     └── requirements.txt
     
 
-Μετά την δημιουργία μίας εφαρμογής, πρέπει επίσης να πούμε στο Django ότι πρέπει να τη χρησιμοποιήσει. Το κάνουμε αυτό μέσα στο αρχείο `mysite/settings.py`. Ανοίξτε το. Πρέπει να βρούμε την λίστα `INSTALLED_APPS` και να προσθέσουμε εκεί το εξής: `'blog',` πάνω από το `]`. Έτσι το τελικό προϊόν πρέπει να μοιάζει κάπως έτσι:
+Μετά την δημιουργία μίας εφαρμογής, πρέπει επίσης να πούμε στο Django ότι πρέπει να τη χρησιμοποιήσει. Το κάνουμε αυτό μέσα στο αρχείο `mysite/settings.py`. Ανοίξτε το. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Έτσι το τελικό προϊόν πρέπει να μοιάζει κάπως έτσι:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -108,7 +108,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -160,7 +160,7 @@ class Post(models.Model):
 - `models.DateTimeField`- αυτό είναι για ημερομηνία και ώρα.
 - `models.ForeignKey`- αυτό είναι ένας σύνδεσμος για ένα άλλο μοντέλο.
 
-Δεν θα εξηγήσουμε κάθε κομμάτι του κώδικα διότι θα πάρει αρκετό χρόνο. Θα πρέπει να ρίξετε μια ματιά στo documentation του Django αν θέλετε να μάθετε περισσότερα σχετικά με τα πεδία των μοντέλων και πως να ορίζετε πράγματα εκτός από αυτά που αναφέρθηκαν παραπάνω (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Δεν θα εξηγήσουμε κάθε κομμάτι του κώδικα διότι θα πάρει αρκετό χρόνο. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 Τι γίνεται με την μέθοδο `def publish(self):`; Αυτή είναι ακριβώς η μέθοδος `publish` για την οποία μιλούσαμε πριν. `def` σημαίνει ορίζουμε μια συνάρτηση/μέθοδο (ανάλογα αν είναι μέρος τηε κλάσης ή όχι) και `publish` είναι το όνομα της. Μπορείτε να αλλάξετε το όνομα της μεθόδου αν θέλετε. Ο κανόνας ονομασίας είναι ότι χρησιμοποιούμε πεζά γράμματα και κάτω παύλες αντί για κενά. Αν χρησιμοποιήσετε κενά τότε λάβετε σφάλμα. Για παράδειγμα, μια μέθοδος που υπολογίζει την μέση τιμή θα λεγόταν `calculate_average_price`.
 
