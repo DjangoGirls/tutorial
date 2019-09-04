@@ -96,7 +96,7 @@
     └── requirements.txt
     
 
-بعد إنشاء التطبيق، نحتاج أيضا أن نقول لدجانغو أنه ينبغي استخدامه. We do that in the file `mysite/settings.py` -- open it in your code editor. نحن بحاجة إلى البحث عن `INSTALLED_APPS` وإضافة خط يحتوي على `'blog',` فقط فوق `]`. المنتج النهائي ينبغي أن يبدو هكذا:
+بعد إنشاء التطبيق، نحتاج أيضا أن نقول لدجانغو أنه ينبغي استخدامه. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. المنتج النهائي ينبغي أن يبدو هكذا:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -108,7 +108,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -160,7 +160,7 @@ class Post(models.Model):
 - `models.DateTimeField` --هذا هو التاريخ والوقت.
 - `models.ForeignKey`--وهذا ارتباط إلى نموذج آخر.
 
-نحن لن شرح كل شيء من التعليمات البرمجية هنا لأنه سوف يستغرق الكثير من الوقت. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+نحن لن شرح كل شيء من التعليمات البرمجية هنا لأنه سوف يستغرق الكثير من الوقت. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 وماذا عن `def publish(self):`؟ هذا هو بالضبط الأسلوب `publish` الذي كنا نتحدث عنه. `def` يعني أن هذا أسلوب دالة و `publish` اسم الأسلوب. يمكنك تغيير اسم الأسلوب إذا أردت. حكم التسمية أن نستخدم حروف صغيرة وتسطيرات أسفل السطر بدلاً من المسافات. على سبيل المثال، يمكن استدعاء أسلوب والذي يقوم بحساب متوسط السعر `calculate_average_price`.
 
