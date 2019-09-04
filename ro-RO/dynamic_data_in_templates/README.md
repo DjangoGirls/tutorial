@@ -78,4 +78,4 @@ def post_list(request):
 
 Asta e! Este timpul să afișăm datele din QuerySet în template!
 
-Doriți să citiți mai mult despre QuerySets în Django? Aici găsiți mai multă informație: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
