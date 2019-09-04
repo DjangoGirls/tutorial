@@ -15,7 +15,7 @@
 #### Django
 
 - Еще одна наша книга, [Django Girls Учебник: расширения](https://tutorial-extensions.djangogirls.org/)
-- [Django официальный учебник](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Django официальный учебник](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Начало работы с Django видео уроки](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS и JavaScript
