@@ -361,7 +361,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
 
 <p>Selamat! Aplikasi anda makin lama makin lengkap!</p>
 
-<p>If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/</p>
+<p>If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/</p>
 
 <h2>Keamanan</h2>
 
