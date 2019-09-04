@@ -154,7 +154,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > 
 > > {% filename %}PythonAnywhere command-line{% endfilename %}
 > > 
-> >     $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+> >     $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
 > >     
 > > 
 > > As you watch that running, you'll be able to see what it's doing:
@@ -194,7 +194,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > 
 > > Your site should now be live on the public Internet! Click through to the PythonAnywhere "Web" page to get a link to it. You can share this with anyone you want :)
 > > 
-> > > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) for some tips on securing your site.
+> > > **Note** This is a beginners' tutorial, and in deploying this site we've taken a few shortcuts which aren't ideal from a security point of view. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
 > > 
 > > ## Debugging tips
 > > 
@@ -203,6 +203,7 @@ nothing added to commit but untracked files present (use "git add" to track)
 > > - Lupa membuat token API PythonAnywhere anda.
 > > - Membuat kesalahan dalam URL GitHub anda
 > > - Jika anda melihat kesalahan yang mengatakan *"Tidak dapat menemukan settings.py anda"*, mungkin karena anda tidak berhasil menambahkan semua berkas anda ke Git, dan / atau anda tidak mendorongnya ke GitHub berhasil. Lihat lagi bagian Git di atas
+> > - If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
 > > 
 > > If you see an error when you try to visit your site, the first place to look for some debugging info is in your **error log**. You'll find a link to this on the PythonAnywhere ["Web" page](https://www.pythonanywhere.com/web_app_setup/). See if there are any error messages in there; the most recent ones are at the bottom.
 > > 
