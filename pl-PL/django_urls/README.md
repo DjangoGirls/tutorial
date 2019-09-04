@@ -100,4 +100,4 @@ Jeśli teraz spróbujesz odwiedzić stronę http://127.0.0.1:8000/, zobaczysz ko
 
 Twoja konsola pokazuje błąd, ale nie martw się - w rzeczywistości jest to całkiem użyteczne: mówi Ci, że** brak atrybutu 'post_list'**. To jest nazwa widoku (*view*), którą Django próbuje znaleźć i użyć, ale jeszcze go nie utworzyłyśmy. Na tym etapie Twój `/admin/ ` również nie będzie działać. Nie martw się, zajmiemy się tym. Jeżeli pojawiła Ci się wiadomość o innym błędzie, spróbuj zrestartować swój serwer. Aby to zrobić, przejdź do wiersza polecenia w którym uruchomiony jest serwer strony, zatrzymaj serwer wciskając Ctrl+C (klawisze Control i C równocześnie), a następnie uruchom go jeszcze raz poleceniem `python manage.py runserver`.
 
-> Jeśli chciałabyś dowiedzieć się więcej na temat konfiguracji URL w Django, zajrzyj do oficjalnej dokumentacji: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
