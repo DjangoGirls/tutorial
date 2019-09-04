@@ -52,6 +52,6 @@ Assurez-vous quelques posts (mais pas tous) aient une date de publication. Cela 
 
 ![Django admin](images/edit_post3.png)
 
-Si vous voulez en savoir plus sur l'interface d'administration de Django, n'hésitez pas à consulter la documentation du framework : https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 Cela peut être un bon moment pour prendre un café (ou un thé) ou quelque chose à manger pour vous redynamiser. Vous avez créé votre premier modèle Django - vous méritez une petite pause!
