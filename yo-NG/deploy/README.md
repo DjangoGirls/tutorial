@@ -155,7 +155,7 @@ Ní báyìí, a máa mú olùrànlọ́wọ́ náà ṣiṣẹ́ láti ṣètò 
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Bó o ṣe ń wo ìyẹn tó n ṣiṣẹ́, ìwọ yíò lè rí ohun tó ń ṣe:
@@ -195,7 +195,7 @@ O tún lè lọ sí ojú-ìwé "Files" náà kí o sì lọ káàkiri pẹ̀lú 
 
 Ó yẹ kí ààyè rẹ ti máa ṣiṣẹ́ lórí Íńtánẹ́ẹ̀tì gbangba náà! Tẹ lọ sí ojú-ìwé "Ayélujára" PythonAnywhere náà láti gba atọ́ka kan sí i. O lè pín èyí pẹ̀lú ẹnikẹ́ni tí o bá fẹ́ :)
 
-> **Àkíyèsí** Èyí jẹ́ àlàyé ti ṣẹ̀ṣẹ̀bẹ̀rẹ̀ kan, àti pé nínú ṣíṣe àgbékalẹ̀ ààyè yìí a ti gba àwọn àbùjá díẹ̀ kan èyí tí kò dára nípa ti ààbò. Tí àti nígbà tí o bá pinnu láti tẹ̀síwájú lórí iṣẹ́ yìí, tàbí bẹ̀rẹ̀ iṣẹ́ tuntun kan, ó yẹ kí o ṣàtúnyẹ̀wò [Àkọsílẹ̀ ìṣàgbékalẹ̀ Django](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) náà fún àwọn àbá lórí ìdáàbòbò ààyè rẹ.
+> **Àkíyèsí** Èyí jẹ́ àlàyé ti ṣẹ̀ṣẹ̀bẹ̀rẹ̀ kan, àti pé nínú ṣíṣe àgbékalẹ̀ ààyè yìí a ti gba àwọn àbùjá díẹ̀ kan èyí tí kò dára nípa ti ààbò. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
 
 ## Àwọn àbá wíwá ojútùú ìṣòro
 
@@ -204,6 +204,7 @@ Tí o bá rí àṣìṣe kan nígbà tí ìlànà ìṣe `pa_autoconfigure_djan
 - Tí o bá gbàgbé láti ṣẹ̀dá token API PythonAnywhere rẹ.
 - Ṣíṣe àṣìṣe kan nínú URL GitHub rẹ
 - Tí o bá rí àṣìṣe kan tó n sọ pé *"Could not find your settings.py"*, ó ṣeéṣe kó jẹ́ nítorí pé ìwọ kò gbìyànjú láti ṣàfikún gbogbo àwọn fáìlì rẹ sí Git, àti/àbí ìwọ kò ti wọ́n sí GitHub pẹ̀lú àṣeyọrí. Tún ṣàyẹ̀wò abala Git tó wà lókè náà
+- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
 
 Tí o bá rí àṣìṣe kan nígbà tí o bá gbìyànjú láti ṣàbẹ̀wò ààyè rẹ, ibi àkọ́kọ́ láti ṣàyẹ̀wò fún ìròyìn wíwá ojútùú ìṣòro ni inú **error log** rẹ. Ìwọ yíò rí atọ́ka kan sí èyí lórí [ojú-ìwé "Ayélujára"](https://www.pythonanywhere.com/web_app_setup/) PythonAnywhere náà. Ṣàyẹ̀wò tí àwọn ìròyìn àṣìṣe kankan bá wà níbẹ̀; àwọn ti àìpẹ́ yìí wà nísàlẹ̀.
 
