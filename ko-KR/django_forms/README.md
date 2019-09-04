@@ -370,7 +370,7 @@ Feel free to change the title or the text and save the changes!
 
 축하합니다! 여러분의 어플리케이션이 점점 더 완벽해지고 있어요!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## 보안
 
