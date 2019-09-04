@@ -15,7 +15,7 @@ Ma certo che sì! C'è una quantità *enorme* a dir poco, di risorse online per 
 #### Django
 
 - Il nostro altro libro, [Django Girls Tutorial: Estensioni](https://tutorial-extensions.djangogirls.org/)
-- [Il tutorial ufficiale di Django's](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Il tutorial ufficiale di Django's](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Le lezioni video su come incominciare con Django](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS e JavaScript
