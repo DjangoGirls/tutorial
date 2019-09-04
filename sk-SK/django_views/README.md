@@ -41,4 +41,4 @@ Ulož súbor a prejdi na http://127.0.0.1:8000 / a pozri sa, čo sa udeje.
 
 Ukazuje, že server aspoň znovu beží, ale stále to nie je ono, že? Neboj sa, je to len chybová stránka, nič čoho sa treba báť! Podobne ako chyby v konzole, sú vlastne velkom úťitočné. Dočítaš sa, že *TemplateDoesNotExist*. Poďme opraviť túto chybu a vytvoríme šablónu v nasledujúcej kapitole!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
