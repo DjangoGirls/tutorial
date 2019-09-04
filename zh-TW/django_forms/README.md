@@ -370,7 +370,7 @@ Feel free to change the title or the text and save the changes!
 
 祝賀你！你的應用程式變得越來越完整！
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## 安全性 (Security)
 
