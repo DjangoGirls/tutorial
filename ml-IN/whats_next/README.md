@@ -15,7 +15,7 @@
 #### ജാങ്കോ (Django)
 
 - ഞങ്ങളുടെ മറ്റു ബുക്കുകൾ , [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [ജാങ്കോയുടെ ഒഫീഷ്യൽ ട്യൂട്ടോറിയൽ ](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [ജാങ്കോയുടെ ഒഫീഷ്യൽ ട്യൂട്ടോറിയൽ ](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [ജാങ്കോ വീഡിയോ പഠനം ](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS and ജാവാസ്ക്രിപ്റ്റ് 
