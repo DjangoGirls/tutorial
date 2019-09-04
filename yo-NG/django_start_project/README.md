@@ -80,7 +80,7 @@ Nínú `settings.py`, wá ìlà tó ní `TIME_ZONE` kí o ṣàtúnṣe rẹ̀ l
 TIME_ZONE = 'Africa/Lagos'
 ```
 
-Kóòdù èdè kan ma ní èdè náà, fún àpẹẹrẹ `en` fún Gẹ̀ẹ́sì tàbí `yo` fún Yorùbá, àti kóòdù orílẹ̀-èdè náà, fún àpẹẹrẹ `de` fún Jámánì tàbí `ng` fún Nàìjíríà. Tí Gẹ̀ẹ́sì kìí ba ṣe èdè abínibí rẹ, o lè ṣàfikún èyí láti ṣàyípadà àwọn bọ́tìnnì ìpìlẹ̀ àti àwọn ìpàkíyèsí láti Django kó wà ní èdè rẹ. Nítorí náà, ìwọ yíò ní bọ́tìnnì "Cancel" (Fagi lé) tí a túmọ̀ sí èdè tí o yàn níbí. [Django wá pẹ̀lú ọ̀pọ̀lọpọ̀ àwọn ìtumọ̀ ní ìpèsè](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Kóòdù èdè kan ma ní èdè náà, fún àpẹẹrẹ `en` fún Gẹ̀ẹ́sì tàbí `yo` fún Yorùbá, àti kóòdù orílẹ̀-èdè náà, fún àpẹẹrẹ `de` fún Jámánì tàbí `ng` fún Nàìjíríà. Tí Gẹ̀ẹ́sì kìí ba ṣe èdè abínibí rẹ, o lè ṣàfikún èyí láti ṣàyípadà àwọn bọ́tìnnì ìpìlẹ̀ àti àwọn ìpàkíyèsí láti Django kó wà ní èdè rẹ. Nítorí náà, ìwọ yíò ní bọ́tìnnì "Cancel" (Fagi lé) tí a túmọ̀ sí èdè tí o yàn níbí. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
 
 Tí o bá fẹ́ èdè mìíràn kan, ṣàyípadà kóòdù èdè náà nípasẹ̀ ṣíṣe ìyípadà ìlà tó tẹ̀lé yìí:
 
