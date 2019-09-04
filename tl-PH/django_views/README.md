@@ -41,4 +41,4 @@ May ibang error na naman! Basahin kung ano ang nangyari ngayon:
 
 Ito ay nagpapakita na ang server ay tumatakbo na ulit, pero hindi pa rin ito tama, di ba? Huwag mag-alala, isa lang itong error page, walang dapat na katakutan! Gaya ng mga error messages sa console, ang mga ito ay talagang nakakatulong. Mabasa mo ang *TemplateDoesNotExist*. Ayusin natin ang bug at maglikha tayo ng template sa susunod na kabanata!
 
-> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
