@@ -370,7 +370,7 @@ Sentiti libero di cambiare il titolo o il testo e salvare le modifiche!
 
 Complimenti! La tua application è sempre più completa!
 
-Se hai bisogno di ulteriori informazioni sui moduli Django, dovresti leggere la documentazione: https://docs.djangoproject.com/en/2.0/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Sicurezza
 
