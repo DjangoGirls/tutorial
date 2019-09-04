@@ -100,4 +100,4 @@ Dacă vizitați http://127.0.0.1:8000/ o să vedeți un mesaj că 'pagină web n
 
 Consola arată o eroare, dar nu faceți grijă – ea este utilă: ea vă spune că **atributul 'post_list'** nu există. Acesta este denumirea *view* pe care Django încearcă să găsească și s-o utilizeze, dar noi n-am creat-o până când. Acum `/admin/` tot nu va lucra. Nu vă faceți grijă - o s-o corectăm. Dacă vedeți o altă eroare, restartați serverul. În linie de comandă opriți serverul, apăsând pe Ctrl+C (Control și C keys împreună) și porniți-l executând comandă `python manage.py runserver`.
 
-> Dacă doriți să aflați mai multe despre consola de Django admin, puteți găsiți documentația de Django la: https://docs.djangoproject.com/en/2.0/topics/http/urls/
+> If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
