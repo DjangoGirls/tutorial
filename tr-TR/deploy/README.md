@@ -156,7 +156,7 @@ Bu komut ekrana bir takım şeyler yazar, mesela `Collecting pythonanywhere` den
 
 {% filename %}PythonAnywhere komut satırı{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Bu komut çalışırken neler olup bittiğini izleyebilirsiniz:
@@ -196,7 +196,7 @@ Admin kullanıcısının detaylarını girin. Daha önce kendi bilgisayarınızd
 
 Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "Web" tabına tıklayarak linki kopyalayıp istediğiniz herkes ile paylaşabilirsiniz :)
 
-> **Not** Bu kılavuz başlangıçlara yönelik olduğu için basit tutmak amacıyla siteyi yayına alırken güvenlik açısından ideal olmayan bir kaç seçim yaptık. Bu projeyi ilerletmeye karar verirseniz veya yeni bir proje oluşturursanız, güvenlik tavsiyeleri için [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) i inceleyin.
+> **Not** Bu kılavuz başlangıçlara yönelik olduğu için basit tutmak amacıyla siteyi yayına alırken güvenlik açısından ideal olmayan bir kaç seçim yaptık. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
 
 ## Hata ayıklama önerileri
 
@@ -205,6 +205,7 @@ Web siteniz şimdi İnternet üzerinden erişilebilir olmalı! PythonAnywhere "W
 - PythonAnywhere API tokeni oluşturmayı unutmak.
 - GitHub URL'nizde bir hata yapmak
 - *"Could not find your settings.py"* hatası genellikle tüm gerekli dosyaların Git'e eklenmemiş ve/veya GitHub'a başarılı olarak push edilmemiş olmasından kaynaklanır. Tekrar Git bölümüne bakın
+- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
 
 Websitenizi ziyaret ettiğiniz zaman bir hata ile karşılaşırsanız ilk bakacağınız yer **error log** dosyasıdır. PythonAnywhere [Web](https://www.pythonanywhere.com/web_app_setup/) sekmesinde bu dosyaya link bulabilirsiniz. Hata mesajlarını buradan kontrol edebilrisiniz; en yakın zamandaki hatalar en sonda yer alır.
 
