@@ -78,4 +78,4 @@ def post_list(request):
 
 همین! وقت آن است که به فایل template برگردیم و این کوئری ست را نمایش دهیم!
 
-آیا دوست دارید بیشتر در مورد کوئری ست در جنگو بخوانید؟ باید اینجا را نگاه کنید: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
