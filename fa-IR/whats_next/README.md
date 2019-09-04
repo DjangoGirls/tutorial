@@ -15,7 +15,7 @@
 #### جنگو
 
 - کتاب دیگر ما، [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [دوره آموزشی رسمی جنگو](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [دوره آموزشی رسمی جنگو](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [شروع کردن جنگو با درس‌های ویدئویی](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS and JavaScript
