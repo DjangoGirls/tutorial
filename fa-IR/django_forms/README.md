@@ -370,7 +370,7 @@ form = PostForm(instance=post)
 
 تبریک! برنامه شما کامل و کامل‌تر می‌شود!
 
-اگر اطلاعات بیشتری در مورد فرم‌ها در جنگو لازم دارید باید مستندات مربوط به آن را در این آدرس بخوانید: https://docs.djangoproject.com/en/2.0/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## امنیت
 
