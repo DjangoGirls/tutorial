@@ -15,7 +15,7 @@ Kyllä! There are a *lot* of resources online for learning all kinds of programm
 #### Django
 
 - Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Django's official tutorial](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Django's official tutorial](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS and JavaScript
