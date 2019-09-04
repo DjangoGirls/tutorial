@@ -96,7 +96,7 @@ Yeni bir `blog` dizininin oluşturulduğunu ve bir dizi dosya içerdiğini fark 
     └── requirements.txt
     
 
-Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasından yapacağız -- kod editörümüzde açalım. `INSTALLED_APPS`'ı bulup `]` karakterinin üzerindeki satıra `'blog',` yazmamız lazım. Sonuç aşağıdaki gibi görünmeli:
+Uygulamamızı oluşturduktan sonra, Django'ya bunu kullanmasını söylememiz lazım. Bunu `mysite/settings.py` dosyasından yapacağız -- kod editörümüzde açalım. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Sonuç aşağıdaki gibi görünmeli:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -108,7 +108,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -160,7 +160,7 @@ Biraz korkunç görünüyor, değil mi? Ama merak etmeyin - hepsinin ne anlama g
 - `models.DateTimeField` - bu da gün ve saati tanımlamada kullanılır.
 - `models.ForeignKey` - başka bir modele referans tanımlar.
 
-Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. Model alanları (model fields) hakkında daha fazla bilgi edinmek ve yukarıda açıklananların dışındaki alanları nasıl tanımlayacağınızı öğrenmek istiyorsanız Django dokümantasyonuna bir göz atabilirsiniz (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field -types).
+Burada her detayı anlatmıyoruz, çünkü çok fazla vakit alır. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 Peki ya `def publish(self):` nedir? Bu, daha önce bahsettiğimiz `publish` metodu. `def` bunun bir fonksiyon/method olduğunu söylüyor. `publish` ise methodumuzun ismi. Eğer isterseniz metodun adını değiştirebilirsiniz. Methodlara isim verirken küçük harf kullanmaya ve boşluk yerine alt çizgi kullanmaya dikkat ediyoruz. Örneğin ortalama fiyatı hesaplayan bir methoda `ortalama_fiyati_hesapla` ismi verilebilir.
 
