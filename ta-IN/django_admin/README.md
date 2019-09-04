@@ -52,6 +52,6 @@ admin.site.register (போஸ்ட்)
 
 ![டான்ஜோ நிர்வாகி](images/edit_post3.png)
 
-நீங்கள் ஜான் நிர்வாகி பற்றி மேலும் தெரிந்து கொள்ள விரும்பினால், நீங்கள் டிஜாங்கோவின் ஆவணங்களை சரிபார்க்க வேண்டும்: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 இது ஒரு காபி (அல்லது தேநீர்) அல்லது உங்களை மீண்டும் உற்சாகப்படுத்துவதற்கு சாப்பிட ஏதாவது ஒரு நல்ல தருணமாக இருக்கலாம். நீங்கள் உங்கள் முதல் ஜான்ஜோ மாடலை உருவாக்கிவிட்டீர்கள் - சிறிது இடைவெளி தேவை!
