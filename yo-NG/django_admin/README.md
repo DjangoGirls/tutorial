@@ -52,6 +52,6 @@ Rí dájú pé ó kéré jù àwọn àròkọ méjì tàbí mẹ́ta (ṣùgb�
 
 ![Alábòójútó Django](images/edit_post3.png)
 
-Tí o bá fẹ́ mọ̀ si nípa alábòójútó Django, ó yẹ kí o ṣàyẹ̀wò àkọsílẹ̀ àlàyé ti Django: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 Èyí lè jẹ́ àkókò tó dára láti nawọ́ mú ife kọfí kan (tàbí tíì) tàbí oúnjẹ láti tún fún ara rẹ lókun. O ti ṣẹ̀dá àwòṣe Django àkọ́kọ́ rẹ – o tọ́ sí ìsinmi díẹ̀ kan!
