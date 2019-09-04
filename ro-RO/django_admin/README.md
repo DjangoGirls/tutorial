@@ -52,6 +52,6 @@ Asigura-ți că cel puțin două sau trei postări (dar nu toate) au setat câmp
 
 ![Django admin](images/edit_post3.png)
 
-Dacă doriți să aflați mai multe despre consola de Django admin, puteți găsiți documentația de Django la: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 Ăsta este un moment bun să-vi luați o cafea (sau ceai) sau ceva de mâncare pentru a prinde energie. Ați creat primul tău model de Django - meritați o pauză!
