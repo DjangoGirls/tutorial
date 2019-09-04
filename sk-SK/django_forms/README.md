@@ -370,7 +370,7 @@ Môžeš si vyskúšať zmeniť názov alebo text a uložiť zmeny!
 
 Gratulujeme! Tvoja aplikácia je čím ďalej dokonalejšia!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.0/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Bezpečnosť
 
