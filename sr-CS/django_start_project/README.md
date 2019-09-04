@@ -80,7 +80,7 @@ U fajlu `settings.py` pronađite liniju koja sadrži `TIME_ZONE` i izmenite je t
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Jezički kod se sastoji od jezika, npr. `en` za engleski ili `de` za Nemački, dok je državni kod npr. `de` za Nemačku ili `ch` za Švajcarsku. Ukoliko engleski nije Vaš maternji jezik, možete da dodate ovaj deo kako biste učinili da opcije i obaveštenja u Django-u budu na Vašem jeziku. Tako biste imali "Cancel" dugme prevedeno na Vaš jezik koji ste tu definisali. [Uz Django ide i dosta gotovih prevoda](https://docs.djangoproject.com/en/2.0/ref/settings/#language-code).
+Jezički kod se sastoji od jezika, npr. `en` za engleski ili `de` za Nemački, dok je državni kod npr. `de` za Nemačku ili `ch` za Švajcarsku. Ukoliko engleski nije Vaš maternji jezik, možete da dodate ovaj deo kako biste učinili da opcije i obaveštenja u Django-u budu na Vašem jeziku. Tako biste imali "Cancel" dugme prevedeno na Vaš jezik koji ste tu definisali. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
 
 Ako želite neki drugi jezik, promenite jezički kod tako što ćete izmeniti sledeću liniju:
 
