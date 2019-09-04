@@ -96,7 +96,7 @@ Láti mú kí gbogbo nnkan wà létòlétò, a ó ṣẹ̀dá ètò ọ̀tọ̀ 
     └── requirements.txt
     
 
-Lẹ́yìn ṣíṣẹ̀dá ètò kan, a tún nílò láti sọ fún Django pé ó yẹ kó lò ó. A máa ṣe ìyẹn nínú fáìlì `mysite/settings.py` náà -- ṣí i nínú olóòtú kóòdù rẹ. A nílò láti wá `INSTALLED_APPS` kí a sì ṣàfikún ìlà kan tó ní `'blog',` lókè `]`. Nítorí náà, ó yẹ kí àbájáde náà rí báyìí:
+Lẹ́yìn ṣíṣẹ̀dá ètò kan, a tún nílò láti sọ fún Django pé ó yẹ kó lò ó. A máa ṣe ìyẹn nínú fáìlì `mysite/settings.py` náà -- ṣí i nínú olóòtú kóòdù rẹ. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Nítorí náà, ó yẹ kí àbájáde náà rí báyìí:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -108,7 +108,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -160,7 +160,7 @@ Ní báyìí, a ó ṣàlàyé àwọn ohun ìdánimọ̀ tí a tí n sọ̀rọ
 - `models.DateTimeField` – èyí jẹ́ ọjọ́ àti àkókò kan.
 - `models.ForeignKey` – èyí jẹ́ ìtọ́ka kan sí àwòṣe mìíràn.
 
-A kò ní ṣàlàyé gbogbo kóòdù níbí nítorí pé yíò gba àkókò púpọ̀. Ó yẹ kí o ṣàgbéyẹ̀wò àkọsílẹ̀ àlàyé ti Django tí o bá fẹ́ mọ̀ sí i nípa àwọn ààyè Àwòṣe àti bí o ṣe lè ṣàlàyé àwọn nnkan mìíràn yàtọ̀ sáwọn tí a ṣàpèjúwe lókè (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+A kò ní ṣàlàyé gbogbo kóòdù níbí nítorí pé yíò gba àkókò púpọ̀. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 Kíni nípa `def publish(self):`? Èyí gan-an ni ọ̀nà `publish` (tẹ̀jáde) tí a n sọ̀rọ̀ nípa tẹ́lẹ̀. `def` túmọ̀ sí pé èyí jẹ́ iṣẹ́/ọ̀nà kan àti pé `publish` jẹ́ orúkọ ọ̀nà náà. O lè ṣàyípadà orúkọ ọ̀nà náà tí o bá fẹ́. Òfin orúkọ sísọ náà ní pé a máa lo lẹ́tà kékeré àti àwọn àmì-dáàṣì-ìsàlẹ̀ dípò àwọn àlàfo. Fún àpẹẹrẹ, a lè pe ọ̀nà kan tí yíò ṣe ìṣirò ìpíndọ́gba iye (average price) ní `calculate_average_price`.
 
