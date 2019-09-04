@@ -157,7 +157,7 @@ Now we run the helper to automatically configure our app from GitHub. Type the f
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 ```
-$ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+$ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
 ```
 
 As you watch that running, you'll be able to see what it's doing:
