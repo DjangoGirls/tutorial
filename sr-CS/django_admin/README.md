@@ -52,6 +52,6 @@ Pobrinite se da najmanje dva ili tri posta (ali ne svi) imaju podešen datum obj
 
 ![Django Admin](images/edit_post3.png)
 
-Ako želite da saznate nešto više o Django adminu, pogledajte Django dokumentaciju na sledećem linku: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 Ovo je verovatno zgodan trenutak da uzmete kafu (ili čaj) ili nešto da pojedete i da se osvežite. Uspeli ste da napravite Vaš prvi Django model - zaslužujete da se malo odmorite!
