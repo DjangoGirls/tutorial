@@ -96,7 +96,7 @@ Veți observa că directoriu nou `blog` este creat și conține niște fișiere.
     └── requirements.txt
     
 
-După crearea aplicației avem nevoie ca Django o să utilizeze. Noi facem acest lucru în fișierul `mysite/settings.py` -- el trebuie să fie deschis în editorul de cod. Trebuie să găsim `INSTALLED_APPS` și să adăugăm o linie care conține `'blog',` mai sus de `]`. Rezultatul final trebuie să arate în fel următor:
+După crearea aplicației avem nevoie ca Django o să utilizeze. Noi facem acest lucru în fișierul `mysite/settings.py` -- el trebuie să fie deschis în editorul de cod. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Rezultatul final trebuie să arate în fel următor:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -108,7 +108,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -160,7 +160,7 @@ Acum noi definim proprietăți despre care noi am vorbit: `title`, `text`, `crea
 - `models.DateTimeField` – este dată și timp.
 - `models.ForeignKey` – este relație cu un alt model.
 
-Noi n-o să explicăm toate detaliile aici, pentru că va lua mult timp. Trebuie să studiați documentație de Django dacă doriți să aflați mai mult despre tipurile atributelor de model și cum să definiți lucruri defirite de cele descrise mai sus (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Noi n-o să explicăm toate detaliile aici, pentru că va lua mult timp. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 Ce despre `def publish(self):`? Acesta este metodă `publish` despre care am vorbit anterior. `def` înseamnă că acesta este o funcție/metodă și `publish` este denumirea acestei metode. Puteți să schimbați denumirea metodei, dacă doriți. Regulă de a crea denumirele corecte este că trebuie să utilizăm caractere mici și bare de jos în loc de spații. De exemplu, o metodă care calculează preț mediu ar putea fi numită `calculate_average_price`.
 
