@@ -78,4 +78,4 @@ def post_list(request):
 
 Ó parí! Àkókò láti padà sí àwòṣe (template) wa àti ṣàfihàn QuerySet yìí!
 
-Ṣé o fẹ́ ka díẹ̀ si nípa QuerySets nínú Django? Ó yẹ kí o wo ibí: https://docs.djangoproject.com/en/2.0/ref/models/querysets/
+Want to read a little bit more about QuerySets in Django? You should look here: https://docs.djangoproject.com/en/2.2/ref/models/querysets/
