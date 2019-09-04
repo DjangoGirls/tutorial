@@ -41,4 +41,4 @@ def post_list(request):
 
 Αυτή τη φορά δείχνει ότι ο server, τουλάχιστον, τρέχει αλλά κάτι δεν πάει καλά, σωστά; Μην ανησυχείτε. Είναι απλώς μια σελίδα σφάλματος! Όπως ακριβώς τα μηνύματα σφάλματος στην κονσόλα, αυτά τα σφάλματα στον browser είναι στην πραγματικότητα πολύ χρήσιμα. Διαβάζετε ότι *TemplateDoesNotExist*. Ας το φτιάξουμε δημιουργώντας ένα template στο επόμενο κεφάλαιο!
 
-> Διαβάστε περισσότερα για τα Django views στο επίσημο documentation: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
