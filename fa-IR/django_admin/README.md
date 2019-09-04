@@ -52,6 +52,6 @@ admin.site.register(Post)
 
 ![پنل مدیریت در جنگو](images/edit_post3.png)
 
-اگر می‌خواهید درباره بخش مدیریت جنگو بیشتر بدانید باید مستندات جنگو را بخوانید: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 احتمالاً الان وقت مناسبی است تا قهوه یا چای بنوشید یا چیزی برای خوردن پیدا کنید تا دوباره سرحال شوید. شما اولین مدل جنگو را ایجاد کردید و شایسته یک استراحت کوتاه هستید!
