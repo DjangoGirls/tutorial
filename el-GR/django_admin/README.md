@@ -52,6 +52,6 @@ admin.site.register(Post)
 
 ![Django admin](images/edit_post3.png)
 
-Αν θέλετε να μάθετε περισσότερα για το Django admin, θα πρέπει να επισκεφτείτε την επίσημη σελίδα του στο: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 Αυτή είναι μάλλον μια καλή στιγμή να πιείτε μια γουλιά καφέ (ή τσάι) ή κάτι να φάτε για να γεμίσετε ενέργεια. Μόλις δημιουργήσατε το πρώτο σας Django model. Αξίζετε ένα μικρό διάλλειμα!
