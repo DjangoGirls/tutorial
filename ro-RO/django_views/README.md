@@ -41,4 +41,4 @@ O altă eroare! Citiți ce s-a întâmplat acum:
 
 Acesta arată că server lucrează, dar nici acum nu arăte corect? Nu faceți grijă, acesta este doar o pagină de eroare! Ca și erorile în consola, ei sunt destul de utile. Puteți să vedeți că *TemplateDoesNotExist* (Template nu există). Hai s-o corectăm eroare această și să creăm template în capitol următor!
 
-> Dacă doriți să aflați mai multe despre consola de Django admin, puteți găsiți documentația de Django la: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
