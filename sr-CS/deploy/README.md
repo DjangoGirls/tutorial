@@ -155,7 +155,7 @@ Sada treba da pokrenemo alat koji će nam pomoći da automatski konfigurišemo n
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Dok posmatrate kako se to izvršava, moći ćete da vidite šta se dešava:
@@ -195,7 +195,7 @@ Možete takođe da odete na stranicu "Files" (fajlovi) i da je pretražujete kor
 
 Vaš sajt bi trebalo da ide sada uživo i javno na internetu! Prođite kroz PythonAnywhere "Web" stranicu da nađete link koji možete da podelite s kim god želite :)
 
-> **Napomena** Ovo je priručnik za početnike i zbog toga smo tokom dopremanja ovog sajta primenili nekoliko prečica koje nisu baš idealne, gledano sa stanovišta sigurnosti. Ako odlučite da dalje razvijate projekat, ili da započnete novi, trebalo bi da pogledate [razvojnu Django listu](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) zbog nekih korisnih saveta o sigurnosti Vašeg sajta.
+> **Napomena** Ovo je priručnik za početnike i zbog toga smo tokom dopremanja ovog sajta primenili nekoliko prečica koje nisu baš idealne, gledano sa stanovišta sigurnosti. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
 
 ## Saveti za otklanjanje grešaka
 
@@ -204,6 +204,7 @@ Ukoliko vidite grešku tokom pokretanja skripte `pa_autoconfigure_django.py`, ev
 - Možda ste zaboravili da kreirate PythonAnywhere API token.
 - Možda ste pogrešili u GitHub URL-u
 - Ukoliko vidite poruku *"Could not find your settings.py"*, verovatno niste uspeli da dodate sve Vaše fajlove na Git i/ili ih niste postavili uspešno na GitHub. Pogledajte još jednom prethodni deo koji se odnosi na Git
+- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
 
 Ako dobijate poruku o grešci kada pokušate da odete na sajt, prvo mesto na kom bi trebalo da potražite više informacija o otklanjanju greške je **evidencija o greškama** (eng. error log). Možete da pronađete link do te evidencije na PythonAnywhere ["Web" stranici](https://www.pythonanywhere.com/web_app_setup/). Pogledajte da li se tu nalaze bilo kakve poruke o greškama; one najnovije se nalaze na dnu.
 
