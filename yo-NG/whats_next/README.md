@@ -15,7 +15,7 @@ Bẹ́ẹ̀ ni! *Ọ̀pọ̀lọpọ̀* àwọn ìrànlọ́wọ́ ló wà lór�
 #### Django
 
 - Ìwé wa mìíràn, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Àkànṣe àlàyé ti Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Àkànṣe àlàyé ti Django](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Àwọn ẹ̀kọ́ fídíò - Getting Started With Django](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS àti JavaScript
