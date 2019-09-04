@@ -96,7 +96,7 @@ Vous pouvez voir qu'un nouveau dossier `blog` a été créé et qu'il contient d
     └── requirements.txt
     
 
-Après avoir créé une nouvelle application, vous devez dire à Django de l'utiliser. Nous faisons cela via le fichier `mysite/settings.py`. Ouvrez-le dans votre éditeur de code. Trouvez la section `INSTALLED_APPS` et ajoutez une ligne `'blog',` juste avant `]`. La section doit maintenant ressembler à ceci :
+Après avoir créé une nouvelle application, vous devez dire à Django de l'utiliser. Nous faisons cela via le fichier `mysite/settings.py`. Ouvrez-le dans votre éditeur de code. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. La section doit maintenant ressembler à ceci :
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -108,7 +108,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -160,7 +160,7 @@ Maintenant, nous allons pouvoir définir les propriétés dont nous parlions au 
 - `models.DateTimeField` - Définit que le champ en question est une date ou une heure.
 - `models.ForeignKey` - C'est un lien vers un autre modèle.
 
-Malheureusement, nous n'avons pas le temps de vous expliquer tous les bouts de code que nous allons manipuler dans ce tutoriel. Si vous voulez en savoir plus sur les modèles Django, n'hésitez pas à consulter la documentation officielle de Django (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Malheureusement, nous n'avons pas le temps de vous expliquer tous les bouts de code que nous allons manipuler dans ce tutoriel. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 Et sinon, c'est quoi `def publish(self):` ? Il s'agit de notre méthode `publish` dont nous parlions tout à l'heure. `def` signifie que nous créons une fonction/méthode qui porte le nom `publish`. Vous pouvez changer le nom de la méthode si vous le souhaitez. La règle de nommage est d'utiliser des minuscules et des tirets bas à la place des espaces. Par exemple, une méthode qui calcule le prix moyen d'un produit pourrait s'appeler `calcul_prix_moyen`.
 
