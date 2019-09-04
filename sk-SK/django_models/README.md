@@ -101,7 +101,7 @@ Uvidíš, že pribudne nový adresár `blog`, ktorý obsahuje množstvo súborov
     └── requirements.txt
     
 
-Po vytvorení aplikácie tiež musíš Djangu povedať, že ju má použiť. We do that in the file `mysite/settings.py` -- open it in your code editor. Musíme nájsť `INSTALLED_APPS` a pridať riadok obsahujúci `'blog'` tesne pred uzatváraciu zátvorku`]`. Takže výsledok nášho snaženia bude vyzerať takto:
+Po vytvorení aplikácie tiež musíš Djangu povedať, že ju má použiť. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Takže výsledok nášho snaženia bude vyzerať takto:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -113,7 +113,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -165,7 +165,7 @@ Teraz zadefinujeme vlastnosti, o ktorých sme hovorili: `title` (titulka), `text
 - `models.DateTimeField` - dátum a čas.
 - `models.ForeignKey` - odkaz na iný model.
 
-Nebudeme si tu vysvetľovať každý kúsok kódu, pretože by to zabralo príliš veľa času. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Nebudeme si tu vysvetľovať každý kúsok kódu, pretože by to zabralo príliš veľa času. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 A čo `def publish(self):`? To je presne tá metóda `publish`, o ktorej sme hovorili predtým. `def` znamená, že ide o funkciu/metódu a `publish` je názov metódy. Názov metódy môžeš zmeniť, ak chceš. Pravidlo pre názvy metód je, že používame malé písmená a podčiarkovníky namiesto medzier. Napríklad metóda, ktorá vypočíta priemernú cenu by sa mohla nazývať `pocitaj_priemernu_cenu`.
 
