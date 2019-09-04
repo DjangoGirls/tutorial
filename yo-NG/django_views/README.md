@@ -41,4 +41,4 @@ Tọ́jú fáìlì náà, lọ sí http://127.0.0.1:8000/ láti wo ohun tí a ti
 
 Èyí fi hàn pé server náà tí n ṣiṣẹ́ padà, ṣùgbọ́n kò tíì rí bó ti yẹ, àbí ó rí bẹ́ẹ̀ ni? Má dààmú, ó kàn jẹ́ ojú-ìwé àṣìṣe kan, kò sí ohun kan láti bẹrù! Gẹ́gẹ́ bí àwọn ìròyìn àṣìṣe tó wà nínú console náà, àwọn wọ̀nyí wúlò púpọ̀ gan-an. O lè kà pé *TemplateDoesNotExist*. Jẹ́ ká ṣàtúnṣe àṣìṣe yìí àti ṣẹ̀dá àwòṣe (template) kan nínú àkòrí tó kàn náà!
 
-> Kẹ́kọ̀ọ́ síi nípa àwọn view Django nípasẹ̀ kíka àkànṣe àkọsílẹ̀ àlàyé náà: https://docs.djangoproject.com/en/2.0/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
