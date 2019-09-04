@@ -96,7 +96,7 @@ Primetićete da je kreiran novi `blog` direktorijum i da sadrži broj fajlova. D
     └── requirements.txt
     
 
-Nakon kreiranja aplikacije, moramo na neki način da kažemo Django-u da treba da je koristi. To radimo u fajlu `mysite/settings.py` - otvorite ga u editoru. Moramo da pronađemo `INSTALLED_APPS` i da dodamo liniju koja sadrži `'blog',` odmah iznad `]`. Tako da, na kraju to treba da izgleda ovako:
+Nakon kreiranja aplikacije, moramo na neki način da kažemo Django-u da treba da je koristi. To radimo u fajlu `mysite/settings.py` - otvorite ga u editoru. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Tako da, na kraju to treba da izgleda ovako:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -108,7 +108,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -160,7 +160,7 @@ Zatim, definišemo svojstva o kojima smo pričali: `naslov`, `tekst`, `datum_kre
 - `models.DataTimeField` - ovo predstavlja datum i vreme.
 - `models.ForeignKey` - ovo je link do drugog modela.
 
-Ovde nećemo objašnjavati svaku sitnicu u kodu, jer bi za to trebalo previše vremena. Trebalo bi da pogledate Django dokumentaciju ukoliko želite da saznate više o poljima Modela i kako da definišete i ostale stvari, koje nismo prethodno naveli (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Ovde nećemo objašnjavati svaku sitnicu u kodu, jer bi za to trebalo previše vremena. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 Šta je sa `def publish(self):`? Ovo je upravo metod za `objavljivanje` o kom smo pričali ranije. `def` znači da je u pitanju funkcija/metod, a `publish` je ime metoda. Ako želite, možete da ga promenite. Jedino pravilo je da koristite mala slova i donje crte umesto razmaka. Na primer, metod koji izračunava prosečnu cenu bi se mogao nazvati `calculate_average_price`.
 
