@@ -80,7 +80,7 @@ Anda akan melihat bahwa sebuah petunjuk `blog` baru dibuat dan berisi sejumlah f
     └── requirements.txt
     
 
-Setelah membuat sebuah aplikasi, kita juga perlu memberitahukan Django bahwa aplikasi tersebut harus menggunakannya. We do that in the file `mysite/settings.py` -- open it in your code editor. Kita harus menemukan `INSTALLED_APPS` dan menambahkan baris yang berisikan `'blog',` tepat di atas `]`. Jadi produk akhir akan tampak seperti ini:
+Setelah membuat sebuah aplikasi, kita juga perlu memberitahukan Django bahwa aplikasi tersebut harus menggunakannya. We do that in the file `mysite/settings.py` -- open it in your code editor. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Jadi produk akhir akan tampak seperti ini:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -92,7 +92,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -145,7 +145,7 @@ Semua baris yang dimulai dengan `dari` atau ` impor ` adalah baris yang menambah
 <li><code> models.ForeignKey </ 0> - ini adalah link ke model lain.</li>
 </ul>
 
-<p>Kami tidak akan menjelaskan setiap kode bit di sini karena ini akan memakan terlalu banyak waktu. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).</p>
+<p>Kami tidak akan menjelaskan setiap kode bit di sini karena ini akan memakan terlalu banyak waktu. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).</p>
 
 <p>Bagaimana dengan <code>def publish(self):`? Ini merupakan metode `publish` yang kita bicarakan sebelumnya. `def` berarti bahwa ini merupakan sebuah fungsi/metode dan `publish` merupakan nama metode. Anda bisa mengganti nama metode tersebut jika anda mau. The naming rule is that we use lowercase and underscores instead of spaces. Misalnya, metode yang menghitung nilai rata-rata bisa dinamakan ` calculate_average_price`.</p> 
         Methods often `return` something. Ada contoh bahwa dalam `__str__`metode. In this scenario, when we call `__str__()` we will get a text (**string**) with a Post title.
