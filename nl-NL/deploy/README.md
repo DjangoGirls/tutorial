@@ -155,7 +155,7 @@ Nu draaien we het hulpmiddel om onze app automatisch vanaf GitHub te configurere
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
     
 
 Als je kijkt wat er gebeurt, zie je wat het doet:
@@ -195,7 +195,7 @@ Je kunt ook naar de "Files" pagina gaan en door je bestanden navigeren met behul
 
 Je site zou nu live moeten zijn op het openbare internet! Klik door naar de PythonAnywhere "Web" pagina om de link te verkrijgen. Je kunt die met iedereen delen die je wilt :)
 
-> **Opmerking** Dit is een tutorial voor beginners, en tijdens het deployen hebben we een aantal stappen genomen die vanuit een veiligheidsoogpunt niet ideaal zijn. Als en wanneer je besluit om dit project voort te zetten, of met een nieuw project begint, is het handig om de [Django deployment checklist](https://docs.djangoproject.com/en/2.0/howto/deployment/checklist/) te bekijken voor wat tips om je site beter te beveiligen.
+> **Opmerking** Dit is een tutorial voor beginners, en tijdens het deployen hebben we een aantal stappen genomen die vanuit een veiligheidsoogpunt niet ideaal zijn. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
 
 ## Debugging tips
 
@@ -204,6 +204,7 @@ Als je een error ziet terwijl je het `pa_autoconfigure_django.py` script draait,
 - Vergeten om je PythonAnywhere API token aan te maken.
 - Een foutje in je GitHub URL
 - Als je een error ziet die meldt *"Could not find your settings.py"*, komt dat waarschijnlijk omdat het niet gelukt is om al je bestanden aan Git toe te voegen, en/of het is niet gelukt om ze naar GitHub te sturen. Kijk nog eens naar het Git hoofdstuk hierboven
+- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
 
 Als je een errormelding krijgt als je je site probeert te bezoeken is de eerste plek om te kijken voor wat debugging informatie is in de **error log**. Je vindt een link naar de logs op de PythongAnywhere ["Web" pagina](https://www.pythonanywhere.com/web_app_setup/). Kijk of er daar errormeldingen zijn; de meest recente staan onderaan.
 
