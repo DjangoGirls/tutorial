@@ -15,7 +15,7 @@ Ja! Det finns en *hel* del resurser på nätet för att lära sig alla typer av 
 #### Django
 
 - Vår andra bok, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Djangos officiella handledning](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Djangos officiella handledning](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Komma igång med Django videolektioner](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS och JavaScript
