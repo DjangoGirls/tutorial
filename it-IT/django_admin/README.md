@@ -52,6 +52,6 @@ Fa in modo di avere per lo meno un paio di post (non tutti però) con data di pu
 
 ![Django admin](images/edit_post3.png)
 
-Se vuoi saperne di più sulla applicazione Django admin, il punto di riferimento è la documentazione del progetto Django: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 Arrivati a questo punto, wow, mi sembra proprio il caso di prendersi un buon caffè ri-energizzante, una frutta (o magari una camomilla). Hai appena creato il tuo primo modello Django — ti meriti una pausa!
