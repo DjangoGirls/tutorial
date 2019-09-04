@@ -15,7 +15,7 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
 #### Django
 
 - En nuestro libro [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [El tutorial oficial de Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [El tutorial oficial de Django](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Comienza a usar las lecciones en video de Django](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS y JavaScript
