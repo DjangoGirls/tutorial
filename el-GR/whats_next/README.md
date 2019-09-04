@@ -15,7 +15,7 @@
 #### Django
 
 - Το άλλο μας βιβλίο, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
-- [Ο επίσημος οδηγός του Django](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
+- [Ο επίσημος οδηγός του Django](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Ξεκινώντας με το Django με μαθήματα βίντεο](http://www.gettingstartedwithdjango.com/)
 
 #### HTML, CSS και JavaScript
