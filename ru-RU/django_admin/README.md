@@ -52,6 +52,6 @@ admin.site.register(Post)
 
 ![Django admin](images/edit_post3.png)
 
-Если вы хотите узнать больше о панели администратора в Django, то следует заглянуть в официальную документацию: https://docs.djangoproject.com/en/2.0/ref/contrib/admin/
+If you want to know more about Django admin, you should check Django's documentation: https://docs.djangoproject.com/en/2.2/ref/contrib/admin/
 
 Сейчас, вероятно, подходящий момент, чтобы порадовать себя кружечкой кофе (или чая), а также съесть чего-нибудь для пополнения энергии. Ты только что создал(а) свою первую Django модель и заслужил(а) перерыв!
