@@ -370,7 +370,7 @@ Schimbați titlu sau text și salvați schimbările!
 
 Felicitări! Aplicație devine mai complicată!
 
-Dacă doriți mai multă informație despre formulare Django, o găsiți în documentație: https://docs.djangoproject.com/en/2.0/topics/forms/
+If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Securitate
 
