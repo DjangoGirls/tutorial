@@ -96,7 +96,7 @@ Zauważysz, że nowy katalog `blog` został utworzony i zawiera kilka plików. K
     └── requirements.txt
     
 
-Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Robimy to w pliku `mysite/settings.py` - otwórz go w swoim edytorze kodu. Musimy odnaleźć nagłówek `INSTALLED_APPS` i dodać wiersz o treści `'blog',` tuż przed nawiasem zamykającym `]`. Czyli efekt końcowy powinien wyglądać tak:
+Po stworzeniu aplikacji, musimy dać znać Django, że powinien jej używać. Robimy to w pliku `mysite/settings.py` - otwórz go w swoim edytorze kodu. We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. Czyli efekt końcowy powinien wyglądać tak:
 
 {% filename %}mysite/settings.py{% endfilename %}
 
@@ -108,7 +108,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog',
+    'blog.apps.BlogConfig',
 ]
 ```
 
@@ -161,7 +161,7 @@ Teraz dodamy właściwości, o których wspomniałyśmy już wcześniej: `title`
 - `models.DateTimeField` - to jest data i godzina.
 - `models.ForeignKey` - to jest odnośnik do innego modelu.
 
-Nie będziemy tutaj wyjaśniać drobiazgowo każdego elementu kodu, gdyż zajęłoby to zbyt dużo czasu. Zajrzyj do dokumentacji Django, jeżeli chcesz dowiedzieć się więcej o polach modelu oraz jak definiować rzeczy inne niż opisane powyżej (https://docs.djangoproject.com/en/2.0/ref/models/fields/#field-types).
+Nie będziemy tutaj wyjaśniać drobiazgowo każdego elementu kodu, gdyż zajęłoby to zbyt dużo czasu. You should take a look at Django's documentation if you want to know more about Model fields and how to define things other than those described above (https://docs.djangoproject.com/en/2.2/ref/models/fields/#field-types).
 
 A co to takiego `def publish(self):`? To jest dokładnie metoda publikująca wpis (`publish`), o której wspominaliśmy wcześniej. Wyraz `def` oznacza, że mamy do czynienia z funkcją/metodą, a `publish` to nazwa metody. Możesz zmienić nazwę metody, jeśli chcesz. Zasadą jest, że używamy małych liter oraz znaków podkreślenia zamiast spacji. Na przykład metodę, która oblicza średnią cenę, można nazwać `calculate_average_price`.
 
