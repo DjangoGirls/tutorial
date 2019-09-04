@@ -41,4 +41,4 @@ As you can see, we created a function (`def`) called `post_list` that takes `req
 
 サーバーは実行されていることはわかるのですが、正しく表示されないのはなぜでしょう？ 心配しないで！ただのエラーページです！ コンソールでのエラーメッセージと同じように、これは実際にかなり便利です。 *TemplateDoesNotExist* と書いてありますね。 それでは次の章でテンプレートを作って、エラーを解決しましょう！
 
-> Djangoのビューについてもっと知りたいのなら、オフィシャルドキュメントを是非読んでみてください。 https://docs.djangoproject.com/ja/2.0/topics/http/views/
+> Learn more about Django views by reading the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/views/
