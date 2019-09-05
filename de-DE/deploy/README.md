@@ -195,7 +195,7 @@ Du kannst auch auf die "Files"-Seite gehen und mit PythonAnywheres eingebautem D
 
 Nun ist deine Site also live im öffentlichen Internet! Klick dich zur PythonAnywhere "Web"-Seite durch und hole dir den Link. Teile ihn, so oft du willst :)
 
-> **Hinweis:** Da es sich hier um ein Anfänger-Tutorial handelt, haben wir ein paar Abkürzungen genommen, um die Site zu veröffentlichen, welche sicherheitstechnisch nicht ideal sind. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **Hinweis:** Da es sich hier um ein Anfänger-Tutorial handelt, haben wir ein paar Abkürzungen genommen, um die Site zu veröffentlichen, welche sicherheitstechnisch nicht ideal sind. Falls du dich entscheidest, dieses Projekt weiterzubauen oder ein neues Projekt anzufangen, dann solltest du die [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) durchgehen, um einige Tipps zur Absicherung deiner Seite zu erhalten.
 
 ## Debugging Tipps
 
@@ -204,7 +204,7 @@ Solltest du beim Ausführen des `pa_autoconfigure_django.py` Skripts eine Fehler
 - Du hast vergessen deinen PythonAnywhere API-Token zu erstellen.
 - Du hast in deiner GitHub-URL einen Fehler gemacht.
 - Falls du die Fehlermeldung *"Could not find your settings.py"* erhältst, liegt das wahrscheinlich daran, dass du nicht alle Files zum Git hinzugefügt und/oder diese nicht erfolgreich auf GitHub veröffentlicht hast. Schau dir nochmals den Git-Abschnitt weiter oben an.
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- Falls du ein bestehendes PythonAnywhere-Benutzerkonto verwendest und eine Fehlermeldung bzgl. collectstatic erhalten hast, hast du dort vermutlich eine alte SQLite-Version (z.B. 3.8.2). Wenn das der Fall ist, erstelle ein neues Benutzerkonto und versuche dort, die Kommandos aus dem obenstehenden PythonAnywhere-Abschnitt erneut auszuführen.
 
 Falls du eine Fehlermeldung erhältst, wenn du versuchst, deine Site aufzurufen, solltest du als Erstes die Debugging-Informationen im **error log** anschauen. Den Link dazu findest du über [die PythonAnywhere-Seite "Web"](https://www.pythonanywhere.com/web_app_setup/). Schau nach, ob darin Fehlermeldungen enthalten sind; die neuesten findest du ganz unten.
 
