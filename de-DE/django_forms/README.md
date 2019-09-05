@@ -369,7 +369,7 @@ Probier doch einmal, den Titel oder den Text zu ändern und die Änderungen zu s
 
 Herzlichen Glückwunsch! Deine Anwendung nimmt immer mehr Gestalt an!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Falls du mehr Informationen über Django-Formulare benötigst, solltest du die offizielle Dokumentation lesen: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Sicherheit
 
