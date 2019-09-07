@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Èyí fẹ́rẹ̀ẹ́ rí bákannáà pẹ̀lú view `post_new` wa, àbí bẹ́ẹ̀ kọ? Ṣùgbọ́n kìí ṣe pátápátá. Lákọ̀ọ́kọ́ ná, a darí àfikún parameter `pk` kan láti urls. Lẹ́yìn náà, a gba àwòṣe `Post` tí a fẹ́ ṣàtúnṣe pẹ̀lú `get_object_or_404(Post, pk=pk)` àti pé, nígbà tí a bá ṣẹ̀dá fọ́ọ̀mù kan, a máa darí àròkọ yìí gẹ́gẹ́ bí `instance` kan, nígbà tí a bá tọ́jú fọ́ọ̀mù náà…
+Èyí fẹ́rẹ̀ẹ́ rí bákannáà pẹ̀lú view `post_new` wa, àbí bẹ́ẹ̀ kọ? Ṣùgbọ́n kìí ṣe pátápátá. For one, we pass an extra `pk` parameter from `urls`. Lẹ́yìn náà, a gba àwòṣe `Post` tí a fẹ́ ṣàtúnṣe pẹ̀lú `get_object_or_404(Post, pk=pk)` àti pé, nígbà tí a bá ṣẹ̀dá fọ́ọ̀mù kan, a máa darí àròkọ yìí gẹ́gẹ́ bí `instance` kan, nígbà tí a bá tọ́jú fọ́ọ̀mù náà…
 
 {% filename %}blog/views.py{% endfilename %}
 
