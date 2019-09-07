@@ -14,7 +14,7 @@
 * [Django 모델](django_models/README.md)
 * [Django 관리자](django_admin/README.md)
 * [배포하기!](deploy/README.md)
-* [Django urls](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django views – time to create!](django_views/README.md)
 * [HTML 시작하기](html/README.md)
 * [Django ORM(Querysets 쿼리셋)](django_orm/README.md)
