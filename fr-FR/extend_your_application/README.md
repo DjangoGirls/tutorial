@@ -2,7 +2,7 @@
 
 # Finaliser votre application
 
-Nous avons déjà franchi toutes les étapes nécessaires à la création de notre site web : nous savons maintenant comment écrire un modèle, une URL, une vue et un template. Nous avons même réussi à rendre notre site web plus joli !
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
 
 C'est le moment de pratiquer tout ce que vous avez appris !
 
@@ -84,7 +84,7 @@ Vous souvenez-vous de ce qu'il faut faire ensuite ? Il faut ajouter une vue !
 
 ## Ajouter une vue pour le contenu du post
 
-Cette fois-ci, nous allons donner un paramètre supplémentaire à notre *vue* : `pk`. Notre *vue* va avoir besoin de le récupérer, n'est ce pas ? Pour cela, nous allons définir une fonction : `def post_detail(request, pk):`. Attention : notez bien que nous utilisons le même nom que nous avons spécifié dans le fichier url (`pk`). Oublier cette variable est incorrect et va générer une erreur !
+Cette fois-ci, nous allons donner un paramètre supplémentaire à notre *vue* : `pk`. Notre *vue* va avoir besoin de le récupérer, n'est ce pas ? Pour cela, nous allons définir une fonction : `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Oublier cette variable est incorrect et va générer une erreur !
 
 Maintenant, nous aimerions obtenir qu'un seul blog post. Pour cela, nous allons utiliser des QuerySets qui ressemblent à ceux-ci:
 
