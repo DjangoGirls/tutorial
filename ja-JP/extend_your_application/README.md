@@ -30,7 +30,7 @@
 {% endblock %}
 ```
 
-{% raw %}投稿リストの投稿のタイトルから投稿の詳細ページへのリンクを作りたいです。 Let's change `<h2><a href="">{{ post.title }}</a></h2>` so that it links to the post's detail page:{% endraw %}
+{% raw %}投稿リストの投稿のタイトルから投稿の詳細ページへのリンクを作りたいです。 投稿の詳細ページにリンクするように`<h2><a href="">{{ post.title }}</a></h2>`を変更しましょう。{% endraw %}
 
 {% filename %}{{ warning_icon }} blog/templates/blog/post_list.html{% endfilename %}
 
@@ -162,7 +162,7 @@ def post_detail(request, pk):
 
 もう一度`base.html`を拡張します。 `content`ブロックでは、投稿の公開日（存在する場合）、タイトル、およびテキストを表示します。 ここで重要なポイントについて見てみます。
 
-{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else ...` from **Introduction to Python** chapter?) In this scenario we want to check if a post's `published_date` is not empty.{% endraw %}
+{% raw %}`{% if ... %} ...  {％endif％}`は、何かをチェックしたいときに使用できるテンプレートタグです。 (`if ... else...`を**Python入門**のチャプターでやったのを覚えていますか？) この場合、投稿の`公開日（published_date）`が空でないかを確認します。{% endraw %}
 
 これで、ページを更新して`TemplateDoesNotExist`がもうなくなったかどうか確認できます。
 
