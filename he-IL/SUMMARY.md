@@ -14,7 +14,7 @@
 * [מודלים של ג'אנגו](django_models/README.md)
 * [ג'אנגו אדמין](django_admin/README.md)
 * [מבצוע!](deploy/README.md)
-* [URL בג'אנגו](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django views – time to create!](django_views/README.md)
 * [מבוא לHTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
