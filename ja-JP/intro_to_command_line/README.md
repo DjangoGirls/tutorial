@@ -136,7 +136,7 @@ OS X と Linux には、ヘルプページを提供する `man` コマンドが�
 
 <!--endsec-->
 
-<!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
+<!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
 ほとんどのコマンドでは、コマンドの後ろに `/?` をつけて実行するとヘルプページが出力されます。すべての出力を見るには、コマンドウィンドウを上にスクロールする必要があるかもしれません。`cd /?` を入力してみましょう。
 
