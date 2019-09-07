@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To vyzerá skoro tak isto ako náš view `post_new`, však? Ale nie úplne. Po prvé: odovzdávame navyše parameter `pk` z URL. A ďalej: pomocou `get_object_or_404(Post, pk=pk)` získame `Post` model, ktorý chceme upravovať a následne pri vytváraní formuláru odovzdáme tento post ako parameter `instance`, aj v prípade keď ukladáme formulár…
+To vyzerá skoro tak isto ako náš view `post_new`, však? Ale nie úplne. For one, we pass an extra `pk` parameter from `urls`. A ďalej: pomocou `get_object_or_404(Post, pk=pk)` získame `Post` model, ktorý chceme upravovať a následne pri vytváraní formuláru odovzdáme tento post ako parameter `instance`, aj v prípade keď ukladáme formulár…
 
 {% filename %}blog/views.py{% endfilename %}
 
