@@ -6,7 +6,7 @@ A ti fẹ́ kọ́ ojú-ìwé ayélujára àkọ́kọ́ wa: ojú-ìwé ìbẹ̀
 
 URL kan jẹ́ àdírẹ́ẹ̀sì ayélujára kan. O lè rí URL kan ní gbogbo ìgbà tí o bá ṣèbẹ̀wò ààyè ayélujára kan – ó fojú hàn nínú pẹpẹ àdírẹ́ẹ̀sì ti aṣàwákiri rẹ. (Bẹ́ẹ̀ ni! `127.0.0.1:8000` jẹ́ URL kan! Àti pé `https://djangogirls.org` tún jẹ́ URL kan.)
 
-![Url](images/url.png)
+![URL](images/url.png)
 
 Gbogbo ojú-ìwé lórí Íńtánẹ́ẹ̀tì náà ló nílò URL tirẹ̀. Lọ́nà yìí, ètò rẹ yíò mọ ohun tó yẹ kó gbé jáde fún aṣàmúlò kan tó bá ṣí URL yẹn. Ní Django, a máa n lo nnkan kan tí a n pè ní `URLconf` (URL configuration - ìṣètò URL). URLconf jẹ́ àpapọ̀ àwọn àpẹẹrẹ kan tí Django yíò gbìyànjú láti báramu pẹ̀lú URL tí a béèrè fún náà láti wá ohun tó tọ́ láti ṣàfihàn.
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-Gẹ́gẹ́ bó o ṣe ríi, a tí n yan `view` kan tí a n pè ní `post_list` sí URL ìpìlẹ̀ náà báyìí. Àpẹẹrẹ URL yìí yíò báramu pẹ̀lú fọ́nrán (string) òfìfo kan àti pé ètò tó n yanjú (resolver) URL Django náà yíò fojú fo orúkọ domain náà (i.e., http://127.0.0.1:8000/) tó ṣáájú atọ́nà url kíkún náà. Àpẹẹrẹ yìí yíò sọ fún Django pé `views.post_list` jẹ́ ààyè tó tọ́ láti lọ tí ẹnìkan bá wọ inú ààyè ayélujára rẹ láti àdírẹ́ẹ̀sì 'http://127.0.0.1:8000/' náà.
+Gẹ́gẹ́ bó o ṣe ríi, a tí n yan `view` kan tí a n pè ní `post_list` sí URL ìpìlẹ̀ náà báyìí. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. Àpẹẹrẹ yìí yíò sọ fún Django pé `views.post_list` jẹ́ ààyè tó tọ́ láti lọ tí ẹnìkan bá wọ inú ààyè ayélujára rẹ láti àdírẹ́ẹ̀sì 'http://127.0.0.1:8000/' náà.
 
 Apá ìkẹhìn náà, `name='post_list'`, jẹ́ orúkọ URL náà tí yíò máa jẹ́ lílò láti dá view náà mọ̀. Èyí lè jẹ́ bákannáà pẹ̀lú orúkọ view náà ṣùgbọ́n ó tún lè jẹ́ nnkan kan tó yàtọ̀ pátápátá. A ó máa lo àwọn URL tí a fún lórúko tó bá yá nínú iṣé náà, nítorí náà ó ṣe pàtàkì láti fún URL kọ̀ọ̀kan tó wà nínú ètò náà lórúko. Ó yẹ ká tún gbìyànjú láti mú kí orúkọ àwọn URL náà jẹ́ àkànṣe kó sì rọrùn láti rántí.
 
