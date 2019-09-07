@@ -14,7 +14,7 @@
 * [Модели в Django](django_models/README.md)
 * [Администриране на Django](django_admin/README.md)
 * [Deploy!](deploy/README.md)
-* [URL адреси в Django](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Изглади в Django - време е да ги саздадем!](django_views/README.md)
 * [Въведение в HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
