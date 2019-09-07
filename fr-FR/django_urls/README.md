@@ -6,7 +6,7 @@ Nous sommes sur le point de créer notre première page web : une page d'accueil
 
 Une URL est une adresse web. Vous pouvez voir une URL chaque fois que vous visitez un site web. Elle est visible dans la barre d'adresse de votre navigateur. (Oui ! `127.0.0.1:8000` est aussi une URL ! Et `https://djangogirls.org` est aussi une URL.)
 
-![Url](images/url.png)
+![URL](images/url.png)
 
 Chaque page internet a besoin de sa propre URL. C'est grâce à cela que votre application sait ce qu'elle doit afficher à un utilisateur qui ouvre cette URL. Dans Django, nous utilisons un outil appelé `URLconf` (Configuration d'URL). URLconf est un ensemble de modèles que Django va essayé de faire correspondre à l'URL demandée afin de trouver la vue adaptée.
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-Comme vous pouvez le voir, nous assignons une `vue` appelée `post_list` à l'URL racine. Ce modèle d’URL correspond à une chaîne vide et le résolveur d'URL de Django ignore le nom de domaine (par exemple, http://127.0.0.1:8000/), soit la première partie de l'URL. Ce pattern va donc indiquer à Django d'afficher la vue `views.post_list` à un utilisateur de votre site web qui se rendrait à l'adresse "http://127.0.0.1:8000/".
+Comme vous pouvez le voir, nous assignons une `vue` appelée `post_list` à l'URL racine. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. Ce pattern va donc indiquer à Django d'afficher la vue `views.post_list` à un utilisateur de votre site web qui se rendrait à l'adresse "http://127.0.0.1:8000/".
 
 La dernière partie, `name='post_list'`, est le nom de l'URL qui sera utilisée afin d'identifier la vue. Ce nom peut être le même que celui de la vue ou quelque chose de complètement différent. Plus tard dans ce tutoriel, nous allons utiliser les noms que nous avons donné à nos URLs. Il est donc important de donner un nom unique à chaque URL que nous créons. Pour vous faciliter la tâche, essayez de trouver des nom d'URLs simple à retenir.
 
