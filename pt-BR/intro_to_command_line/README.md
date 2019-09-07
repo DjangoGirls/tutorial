@@ -136,7 +136,7 @@ SO X e Linux tem um comando `man`, que ajuda você nos comandos. Tente `mand pwd
 
 <!--endsec-->
 
-<!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
+<!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
 Colocando um sufixo `/?` para a maioria dos comandos, irá imprimir uma página de ajuda. Você pode precisar rolar a janela do seu comando para ver tudo. Tente `cd /?`.
 
