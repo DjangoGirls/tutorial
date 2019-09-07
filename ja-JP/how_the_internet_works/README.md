@@ -6,7 +6,7 @@
 
 私達は、毎日インターネットを使っています。でも、ブラウザのアドレス欄に https://djangogirls.org のようなアドレスを入力して `Enter` キーを押すと何が起こるか、あなたは実際に知っていますか？
 
-The first thing you need to understand is that a website consists of a bunch of files saved on a hard disk -- just like your movies, music, or pictures. However, there is one part that is unique for websites: they include computer code called HTML.
+まず最初に理解する必要があるのは、Webサイトはハードディスクに保存された沢山のファイルであるということです（ちょうどあなたの動画や音楽、画像のデータのように）。 However, there is one part that is unique for websites: they include computer code called HTML.
 
 If you're not familiar with programming, it can be hard to grasp HTML at first, but your web browsers (like Chrome, Safari, Firefox, etc.) love it. Webブラウザはこのコードがわかるようになっていて、コードの指示に従います。そして、あなたのウェブサイトのファイルをあなたが望む方法で表示するのです。
 
