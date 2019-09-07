@@ -195,7 +195,7 @@
 
 Το site σας είναι πλεόν deployed! Κλικάρετε στη σελίδα "Web" του PythonAnywhere για να αποκτήσετε το url σας. Μπορείτε να το μοιραστείτε με όποιον θέλετε :)
 
-> **Σημείωση** Αυτός είναι ένας οδηγός για αρχάριους και κατά τη διάρκεια του deploying παρακάμψαμε κάποια βήματα τα οποία είναι πολύ σημαντικά από άποψη ασφάλειας. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **Σημείωση** Αυτός είναι ένας οδηγός για αρχάριους και κατά τη διάρκεια του deploying παρακάμψαμε κάποια βήματα τα οποία είναι πολύ σημαντικά από άποψη ασφάλειας. Αν και όταν θελήσετε να εμπλουτίσετε ή να φτιάξετε ένα νέο project, καλό θα ήταν να συμβουλευτείτε το [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) για μερικές συμβουλές ασφάλειας.
 
 ## Συμβουλές debugging
 
@@ -204,7 +204,7 @@
 - Έχετε ξεχάσει να δημιουργήσετε ένα PythonAnywhere API token.
 - Έχετε κάνει λάθος στο GitHub URL
 - Αν δείτε ένα σφάλμα που λέει *«Could not find your settings.py»*, είναι πιθανώς επειδή δεν συμπεριλάβατε όλα τα αρχεία σας στο repo ή/και δεν έχετε κάνει push τις αλλαγές σας στο GitHub επιτυχώς. Δείτε ξανά την ενότητα Git παραπάνω
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- Αν προηγουμένως έχετε εγγραφεί για λογαριασμό PythonAnywhere και έχετε παρουσιάσει σφάλμα στο collectstatic, πιθανόν να έχετε μια παλαιότερη έκδοση του SQLite (π. χ. 3.8.2) στο λογαριασμό σας. Σε αυτή την περίπτωση, εγγραφείτε με νέο λογαριασμό και δοκιμάστε τις εντολές στην ενότητα PythonAnywhere παραπάνω.
 
 Αν δείτε ένα σφάλμα όταν προσπαθείτε να επισκεφθείτε την ιστοσελίδα σας, το πρώτο μέρος για debbuging είναι το αρχείο **error log**. Θα βρείτε ένα σύνδεσμο για το error log στο ["Web" page](https://www.pythonanywhere.com/web_app_setup/) του PythonAnywhere. Δείτε εάν υπάρχουν μηνύματα σφάλματος εκεί. Τα πιο πρόσφατα είναι στο κάτω μέρος.
 
