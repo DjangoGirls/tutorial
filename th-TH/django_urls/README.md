@@ -6,7 +6,7 @@
 
 A URL is a web address. คุณเห็น URL ทุกครั้งที่เข้าดูเว็บไซต์ - มันปรากฎอยู่ในช่องที่อยู่ของเบราว์เซอร์ของคุณ (ใช่แล้ว! `127.0.0.1:8000` ก็คือ URL! และ `https://djangogirls.org` ก็คือ URL เช่นกัน)
 
-![Url](images/url.png)
+![URL](images/url.png)
 
 ทุกหน้าเว็บบนอินเทอร์เน็ต ต้องมี URL เป็นของตัวเอง วิธีนี้ทำให้แอปพลิเคชั่นของคุณรู้ว่าควรจะแสดงหน้าไหนให้กับผู้ใช้ที่เปิด URL นั้น ใน Django เราใช้สิ่งที่เรียกว่า `URLconf` (URL configuration) URLconf คือชุดของรูปแบบที่ Django จะพยายามจับคู่ให้ตรงกับ URL ที่ได้รับมาเพื่อหา view ที่ถูกต้อง
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-As you can see, we're now assigning a `view` called `post_list` to the root URL. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full url path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
+As you can see, we're now assigning a `view` called `post_list` to the root URL. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. This pattern will tell Django that `views.post_list` is the right place to go if someone enters your website at the 'http://127.0.0.1:8000/' address.
 
 The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
