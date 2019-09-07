@@ -136,7 +136,7 @@ OS X i Linux posiada polecenie `man`, które wyświetla Ci pomoc dla danego pole
 
 <!--endsec-->
 
-<!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
+<!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
 Dodawanie przyrostka`/?` do większości poleceń powoduje, że zostają wyświetlone strony pomocy. Konieczne może być przewinięcie okna polecenia, aby zobaczyć wszystkie informacje. Spróbuj `cd /?`.
 
