@@ -14,7 +14,7 @@
 * [ജാങ്കോ (Django ) മോഡൽസ് ](django_models/README.md)
 * [ജാങ്കോ (Django ) അഡ്മിൻ ](django_admin/README.md)
 * [ഡിപ്ലോയ് ](deploy/README.md)
-* [ജാങ്കോ (Django ) urls ](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [ജാങ്കോ (Django ) വ്യൂസ് ](django_views/README.md)
 * [HTML ആമുഖം ](html/README.md)
 * [ജാങ്കോ ORM ( ക്യുറിസെറ്റ് )](django_orm/README.md)
