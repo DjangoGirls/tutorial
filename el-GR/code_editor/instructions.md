@@ -1,6 +1,6 @@
-Υπάρχουν πολλά code editors (επεξεργαστές κώδικα) διαθέσιμοι και για αυτό είστε ελεύθεροι να διαλέξετε αυτόν που σας αρέσει περισσότερο (ή ανάλογα την τσέπη σας αν θέλετε να αγοράσετε κάποιον). Οι περισσότεροι προγραμματιστές της Python χρησιμοποιούν περίπλοκα, αλλά εξαιρετικά ισχυρά IDEs (Integrated Development Environments - Ολοκληρωμένα Περιβάλλοντα Ανάπτυξης), όπως το PyCharm. Για αρχάριους, ωστόσο, αυτή η επιλογή είναι ίσως η λιγότερο κατάλληλη· οι συστάσεις μας είναι προγράμματα εξίσου ισχυρά, αλλά πολύ απλούστερα.
+Υπάρχουν πολλά code editors (επεξεργαστές κώδικα) διαθέσιμοι και για αυτό είστε ελεύθεροι να διαλέξετε αυτόν που σας αρέσει περισσότερο (ή ανάλογα την τσέπη σας αν θέλετε να αγοράσετε κάποιον). Οι περισσότεροι προγραμματιστές της Python χρησιμοποιούν περίπλοκα, αλλά εξαιρετικά ισχυρά IDEs (Integrated Development Environments - Ολοκληρωμένα Περιβάλλοντα Ανάπτυξης), όπως το PyCharm. Για αρχάριους, ωστόσο, αυτή η επιλογή είναι ίσως η λιγότερο κατάλληλη· για αυτό σας προτείνουμε προγράμματα εξίσου ισχυρά, αλλά πολύ απλούστερα.
 
-Οι προτάσεις μας φαίνονται παρακάτω αλλά μην διστάσετε να ρωτήσετε τον προπονητή σας ποιες είναι οι προτιμήσεις του. Θα είναι ευκολότερο να σας βοηθήσουν.
+Οι προτάσεις μας φαίνονται παρακάτω αλλά μην διστάσεις να ρωτήσεις τον "coach" (εκπαιδευτή) σου ποιες είναι οι προτιμήσεις του. Θα είναι ευκολότερο αργότερα να σε βοηθήσει σε όποιο ζήτημα μπορεί να προκύψει.
 
 ## Visual Studio Code
 
@@ -26,11 +26,11 @@
 
 [Κατεβάστε το εδώ](https://atom.io/)
 
-## Why are we installing a code editor?
+## Γιατί χρειαζόμαστε τους code editors (Προγράμματα Επεξεργασίας Κώδικα);
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+Μπορεί να αναρωτιέσαι γιατί χρειάζεται να εγκαταστήσουμε κάποιο ειδικό πρόγραμμα επεξεργασίας κώδικα λογισμικού, αντί να χρησιμοποιήσουμε κάτι σαν το Word ή το Notepad.
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+Ο πρώτος λόγος είναι ότι ο κώδικας πρέπει να είναι **απλό κείμενο** (δίχως bold, italic, πίνακες, εικόνες κλπ, όπως θα χρησιμοποιούσε κανείς σε έναν κοινό επεξεργαστή κειμένου). Το πρόβλημα με τα προγράμματα όπως το Word και το Textedit είναι ότι δεν παράγουν στην ουσία απλό κείμενο αλλά "πλούσιο" (με γραμματοσειρές, φορμάρισμα κειμένου και αυτά που αναφέραμε παραπάνω), χρησιμοποιώντας σύνθετες μορφές όπως το [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
 The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
 
