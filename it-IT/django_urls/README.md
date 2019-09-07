@@ -6,7 +6,7 @@ Stiamo per costruire la nostra pagina web: una homepage per il tuo blog! Ma prim
 
 Una URL è semplicemente un indirizzo web. Puoi vedere una URL ogni volta che visiti un sito web - si vede nella barra degli indirizzi del tuo browser. (sì. (Ma certo che sì! `127.0.0.1:8000` is a URL! Anche `https://djangogirls.org` è una URL.)
 
-![Url](images/url.png)
+![URL](images/url.png)
 
 Ogni pagina internet ha bisogno della sua URL. In questo modo la tua applicazione sa cosa deve mostrare a un utente che visita una URL. In Django usiamo qualcosa chiamato `URLconf` ( configurazione dell'URL). URLconf è un insieme di modelli che Django cercherà di far corrispondere con l'URL ricevuta per trovare la view giusta.
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-Come vedi, stiamo assegnando una `view` nominata `post_list` alla URL `^$`. Questo modello URL corrisponde ad una stringa vuota e il risolutore URL Django ignorerà il nome del dominio (es., http://127.0.0.1:8000/) che prefigura il percorso url completo. Questo schema dirà a Django che `views.post_list` è il posto giusto dove andare se qualcuno entra nel tuo sito all'indirizzo 'http://127.0.0.1:8000/'.
+Come vedi, stiamo assegnando una `view` nominata `post_list` alla URL `^$`. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. Questo schema dirà a Django che `views.post_list` è il posto giusto dove andare se qualcuno entra nel tuo sito all'indirizzo 'http://127.0.0.1:8000/'.
 
 L'ultima parte `name='post_list'` è il nome dell'URL che verrà usata per identificare la view. Può avere lo stesso del nome della view, ma può anche essere qualcosa di completamente diverso. Useremo le URL rinominate successivamente nel progetto quindi è importante dare un nome a ciascuna URL nell'app. Inoltre dovremmo cercare di mantenere i nomi delle URL unici e facili da ricordare.
 
