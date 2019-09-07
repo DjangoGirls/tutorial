@@ -2,7 +2,7 @@
 
 # Mú ètò rẹ gbòòrò síi
 
-A ti parí gbogbo àwọn ìgbésẹ̀ ọ̀tọ̀ọ̀tọ̀ tó ṣe pàtàkì fún ṣíṣẹ̀dá ààyè ayélujára wa: a mọ bí a ṣe lè kọ àwòṣe (model), url, view àti àwòṣe (template) kan. A tún mọ bí a ṣe lè mú ààyè ayélujára wa rẹwà.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
 
 Àkókò láti ṣe ìdánrawò!
 
@@ -84,7 +84,7 @@ Apá `post/<int:pk>/` yìí tọ́ka àpẹẹrẹ URL kan – a ó ṣàlàyé 
 
 ## Ṣàfikún view àlàyé ti àròkọ kan
 
-Ní àkókò yìí, a fún *view* wa ní àfikún parameter kan, `pk`. *view* wa nílò láti mú u, àbí bẹ́ẹ̀ kọ? Nítorí náà, a ó ṣàlàyé iṣẹ́ wa gẹ́gẹ́ bí `def post_detail(request, pk):`. Ṣàkíyèsí pé a nílò láti lo orúkọ kannáà pẹ̀lú èyí tí a ti dárúkọ nínú urls (`pk`). Fífo variable yìí kò tọ́ àti pé yóò yọrí sí àsìṣe kan!
+Ní àkókò yìí, a fún *view* wa ní àfikún parameter kan, `pk`. *view* wa nílò láti mú u, àbí bẹ́ẹ̀ kọ? Nítorí náà, a ó ṣàlàyé iṣẹ́ wa gẹ́gẹ́ bí `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Fífo variable yìí kò tọ́ àti pé yóò yọrí sí àsìṣe kan!
 
 Ní báyìí, a fẹ́ gba àròkọ blog ẹyọkan ṣoṣo. Láti ṣe èyí, a lè lo querysets, báyìí:
 
