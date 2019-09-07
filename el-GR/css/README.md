@@ -254,6 +254,9 @@ h1, h2, h3, h4 {
 .post h2 a, .post h2 a:visited {
     color: #000000;
 }
+ 
+Text
+Xpath: /pre[14]/code
 ```
 
 Μετά, περιβάλλετε τον κώδικα HTML που προβάλει τα posts με κλάσεις. Αντικατάστησε αυτό:
