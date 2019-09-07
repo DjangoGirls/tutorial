@@ -2,7 +2,7 @@
 
 # เพิ่มความสามารถให้เว็บคุณ
 
-เราได้เรียนรู้ขั้นตอนทั้งหมดในการสร้างเว็บไซต์แล้ว: เรารู้วิธีสร้าง โมเดล, url, view และ template รวมถึงการทำให้เว็บเราดูดีขึ้น
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
 
 ได้เวลาฝึกแล้ว!
 
@@ -84,7 +84,7 @@ Do you remember what the next step is? It's adding a view!
 
 ## เพิ่ม view รายละเอียดของโพสต์
 
-ตอนนี้ *view* ของเราจะได้พารามิเตอร์เพิ่มเข้ามาคือ `pk` Our *view* needs to catch it, right? ดังนั้นเราจะสร้างฟังก์ชั่นใหม่ โดยใช้ `def post_detail(request, pk):` สังเกตว่าเราต้องใช้ชื่อเดียวกันกับชื่อที่เรากำหนดไว้ใน url (`pk`) การละเว้นตัวแปรนี้ จะทำให้เกิดข้อผิดพลาด!
+ตอนนี้ *view* ของเราจะได้พารามิเตอร์เพิ่มเข้ามาคือ `pk` Our *view* needs to catch it, right? ดังนั้นเราจะสร้างฟังก์ชั่นใหม่ โดยใช้ `def post_detail(request, pk):` Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). การละเว้นตัวแปรนี้ จะทำให้เกิดข้อผิดพลาด!
 
 ตอนนี้ เราต้องการโพสต์เดียวเท่านั้น เราสามารถทำได้ โดยใช้ queryset แบบนี้:
 
