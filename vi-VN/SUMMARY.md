@@ -14,7 +14,7 @@
 * [Django models](django_models/README.md)
 * [Quản trị Django](django_admin/README.md)
 * [Xuất bản Website!](deploy/README.md)
-* [Django urls](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django views - Đến lúc khởi tạo rồi!](django_views/README.md)
 * [Giới thiệu về HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
