@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-To wygląda prawie tak samo, jak nasz widok `post_new`, nieprawdaż? Ale nie do końca. Po pierwsze: przekazujemy dodatkowy parametr `pk` z urls. Dalej - pobieramy model wpisu `Post` do edycji za pomocą `get_object_or_404(Post, pk=pk)`. Gdy tworzymy formularz, przekazujemy ten wpis pod zmienną `instance` zarówno w trakcie zapisywania formularza…
+To wygląda prawie tak samo, jak nasz widok `post_new`, nieprawdaż? Ale nie do końca. For one, we pass an extra `pk` parameter from `urls`. Dalej - pobieramy model wpisu `Post` do edycji za pomocą `get_object_or_404(Post, pk=pk)`. Gdy tworzymy formularz, przekazujemy ten wpis pod zmienną `instance` zarówno w trakcie zapisywania formularza…
 
 {% filename %}blog/views.py{% endfilename %}
 
