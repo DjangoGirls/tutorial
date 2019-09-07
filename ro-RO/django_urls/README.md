@@ -6,7 +6,7 @@ Acuma putem să facem prima pagină: pagină principală pentru blogul vostru! D
 
 URL este o adresa web. Vedeți URL fiecare dată când voi vizitați website - el este afișat în bara de adrese a browser-ului. (Da! `127.0.0.1:8000` este URL! Și `https://djangogirls.org` tot este URL.)
 
-![Url](images/url.png)
+![URL](images/url.png)
 
 Fiecare pagina din Internet are nevoie de URL. În așa mod, aplicație știe ce ea trebuie să afișeze utilizatorului care deschide acest URL. În Django, noi utilizăm un instrument denumit `URLconf` (configurație URL). URLconf este un set de modeluri pe care Django va încerca să compare cu URL solicitat pentru a găsi un view corect.
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-După cum vedeți, noi atribuim `view` numit `post_list` la URL principal. Acest model de URL va fi compatibil cu un șir gol și Django URL resolver va ignora denumirea domenului (i.e., http://127.0.0.1:8000/) ce este un prefix al unui path complet. Aest model va spune lui Django că `views.post_list` este un loc corect de a începe când cineva va introduce adresa site-ului vostru 'http://127.0.0.1:8000/'.
+După cum vedeți, noi atribuim `view` numit `post_list` la URL principal. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. Aest model va spune lui Django că `views.post_list` este un loc corect de a începe când cineva va introduce adresa site-ului vostru 'http://127.0.0.1:8000/'.
 
 Ultima parte, `name='post_list'`, este denumirea URL-ului care va fi utilizat pentru identificarea view-ului. Acesta poate fi la fel ca denumirea view-ului dar poate fi ceva complet diferit. O să utilizăm URL cu denumire mai târziu în proiect, de aceea este important să denumim fiecare URL în aplicație. Noi trebuie să păstrăm denumirile URL-urilor unice și ușor de a le aminti.
 
