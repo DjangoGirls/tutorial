@@ -2,7 +2,7 @@
 
 # Erweitere deine Anwendung
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+Wir haben bereits die verschiedenen Schritte für die Erstellung unserer Website abgeschlossen: Wir wissen, wie man Models, URLs, Views und Templates schreibt. Wir wissen auch, wie wir unsere Website verschönern.
 
 Zeit zu üben!
 
@@ -84,7 +84,7 @@ Erinnerst du dich, was der nächste Schritt ist? Eine View hinzufügen!
 
 ## Füge eine View hinzu
 
-Dieses Mal bekommt unsere *View* den extra Parameter `pk`. Unsere *View* muss diesen entgegennehmen, richtig? Also definieren wir unsere Funktion als `def post_detail(request, pk)`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Diese Variable wegzulassen ist falsch und führt zu einem Fehler!
+Dieses Mal bekommt unsere *View* den extra Parameter `pk`. Unsere *View* muss diesen entgegennehmen, richtig? Also definieren wir unsere Funktion als `def post_detail(request, pk)`. Beachte, dass wir genau den gleichen Variablennamen benutzen müssen, wie in `urls` festgelegt (`pk`). Diese Variable wegzulassen ist falsch und führt zu einem Fehler!
 
 Jetzt benötigen wir also genau einen bestimmten Blogpost. Diesen finden wir, indem wir ein QuerySet folgendermaßen schreiben:
 
