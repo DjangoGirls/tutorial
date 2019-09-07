@@ -136,7 +136,7 @@ OS X àti Linux ní àṣẹ `man` kan, èyí tí yíò fún ọ ní ìrànlọ�
 
 <!--endsec-->
 
-<!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
+<!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
 Ṣíṣe àfikún `/?` kan sẹ́yìn ọ̀pọ̀lọpọ̀ àwọn àṣẹ yíò ṣàtẹ̀jáde ojú-ìwé ìrànlọ́wọ́ náà. O lè nílò láti sún fèrèsé ìpàṣẹ rẹ sókè láti rí gbogbo rẹ̀. Gbìyànjú `cd /?`.
 
