@@ -14,7 +14,7 @@
 * [Django 模型 (Django models)](django_models/README.md)
 * [Django 管理員 (Django admin)](django_admin/README.md)
 * [部署！ (Deploy!)](deploy/README.md)
-* [Django urls](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django views – time to create!](django_views/README.md)
 * [HTML 簡介](html/README.md)
 * [Django ORM （查詢集）](django_orm/README.md)
