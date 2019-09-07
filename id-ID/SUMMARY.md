@@ -14,7 +14,7 @@
 * [Model Django](django_models/README.md)
 * [Admin Django](django_admin/README.md)
 * [Deploy (Publikasikan)](deploy/README.md)
-* [Urls Django](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Tampilan Django - waktu untuk membuat!](django_views/README.md)
 * [Pengantar untuk HTML](html/README.md)
 * [Django ORM (Queryset)](django_orm/README.md)
