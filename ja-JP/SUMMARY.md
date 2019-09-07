@@ -14,7 +14,7 @@
 * [Djangoモデル](django_models/README.md)
 * [ログインページを作ろう（Django admin）](django_admin/README.md)
 * [デプロイ！](deploy/README.md)
-* [Django URL](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Djangoビュー](django_views/README.md)
 * [HTML 入門](html/README.md)
 * [Django ORM（クエリセット）](django_orm/README.md)
