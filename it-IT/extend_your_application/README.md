@@ -2,7 +2,7 @@
 
 # Estendi la tua applicazione
 
-Abbiamo completato i passi necessari per la creazione del nostro sito: sappiamo come scrivere un modello, una url, una view ed un template. Sappiamo anche come far diventare carino il nostro sito.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
 
 Ora di far pratica!
 
@@ -84,7 +84,7 @@ Ti ricordi di quale è il prossimo passo? Ma certo: aggiungere una view!
 
 ## Aggiungi una view del post
 
-Questa volta alla nostra *view* viene data un altro parametro `pk`. La nostra *view* deve prenderlo, vero? Quindi definiremo la nostra funzione come `def post_detail(request, pk):`. Dobbiamo utilizzare esattamente lo stesso nome che abbiamo specificato in urls (`pk`). Omettere questa variabile è sbagliato e genererà un errore!
+Questa volta alla nostra *view* viene data un altro parametro `pk`. La nostra *view* deve prenderlo, vero? Quindi definiremo la nostra funzione come `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Omettere questa variabile è sbagliato e genererà un errore!
 
 Ora, noi vogliamo ottenere un' unico post. Per farlo possiamo utilizzare le queryset così:
 
