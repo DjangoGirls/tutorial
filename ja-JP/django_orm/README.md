@@ -202,7 +202,7 @@ ola という `ユーザ名` の `User` モデルのインスタンスを、`取
 
 ### メソッドチェーンによる複雑なクエリ
 
-ご覧のように、`Post.objects`の一部のメソッドはクエリセットを返します。 同じメソッドをクエリセットで呼び出すこともできるし、新しいクエリセットを返すこともできます。 Thus, you can combine their effect by **chaining** them together:
+ご覧のように、`Post.objects`の一部のメソッドはクエリセットを返します。 同じメソッドをクエリセットで呼び出すこともできるし、新しいクエリセットを返すこともできます。 よって、**つなげる**ことによってそれらの結果を組み合わせることができます:
 
 ```python
 >>> Post.objects.filter(published_date__lte=timezone.now()).order_by('published_date')
