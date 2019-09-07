@@ -6,7 +6,7 @@
 
 URL basitçe bir web adresidir. Her defasında bir web sitesini ziyaret ettiğinde bir URL görürsün. Tarayıcının adres çubuğunda görünmektedir. (Evet! `127.0.0.1:8000` bir URL'dir! Ve `https://djangogirls.org` da bir URL'dir)
 
-![Url](images/url.png)
+![URL](images/url.png)
 
 İnternetteki her sayfanın kendi URL'si olması gerekir. Böylelikle bir URL açıldığında uygulama ne göstermesi gerektiğini bilir. Django'da `URLconf` (URL konfigürasyonu) denilen bir şey kullanıyoruz. URLconf Django'nun doğru viewı bulmak için istenen URL ile eşleştirmeyi deneyeceği desenler dizinidir.
 
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-Gördüğünüz üzere, ana URL'e `post_list` adında bir `view` atıyoruz. Django URL resolver ful URL'in başındaki domain adını (yani, http://127.0.0.1:8000 /) göz ardı eder, böylece bu URL kalıbı (pattern) boş bir string ile eşleşecek. Bu kalıp, Django'ya eğer siteye biri 'http://127.0.0.1:8000/' adresinden gelirse gitmesi gereken yerin `views.post_list` olduğunu söylüyor.
+Gördüğünüz üzere, ana URL'e `post_list` adında bir `view` atıyoruz. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. Bu kalıp, Django'ya eğer siteye biri 'http://127.0.0.1:8000/' adresinden gelirse gitmesi gereken yerin `views.post_list` olduğunu söylüyor.
 
 Son kısım `name='post_list'`, görünümü (view) tanımlamak için kullanılan URL'in adıdır. Bu view'un adı ile aynı olabilir ama tamamen farklı bir şey de olabilir. Bundan sonra projede isimlendirilmiş URL'leri kullanıyor olacağız, bu yüzden uygulamadaki her URL'i isimlendirmek önemli. Aynı zamanda URL isimlerini eşsiz ve kolay hatırlanabilir şekilde seçmeliyiz.
 
