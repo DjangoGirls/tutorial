@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Ovo izgleda skoro identično kao naš `post_new` pregled, zar ne? Ne baš u potpunosti. Za početak, prosleđujemo dodatni `pk` parametar od URL-ova. Sledeće, imamo `Post` model koji želimo da izmenimo pomoću `get_object_or_404(Post, pk=pk)`, a zatim kada kreiramo formu, prosleđujemo post kao `instancu`, kada sačuvamo formu.
+Ovo izgleda skoro identično kao naš `post_new` pregled, zar ne? Ne baš u potpunosti. For one, we pass an extra `pk` parameter from `urls`. Sledeće, imamo `Post` model koji želimo da izmenimo pomoću `get_object_or_404(Post, pk=pk)`, a zatim kada kreiramo formu, prosleđujemo post kao `instancu`, kada sačuvamo formu.
 
 {% filename %}blog/views.py{% endfilename %}
 
