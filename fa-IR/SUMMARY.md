@@ -14,7 +14,7 @@
 * [مدل در جنگو](django_models/README.md)
 * [پنل مدیریت در جنگو](django_admin/README.md)
 * [فاز دیپلوی!](deploy/README.md)
-* [آدرس دهی در جنگو](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [ساخت view در جنگو!](django_views/README.md)
 * [آشنایی با HTML](html/README.md)
 * [ORM در جنگو](django_orm/README.md)
