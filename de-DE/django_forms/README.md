@@ -341,7 +341,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Sieht genauso aus wie unsere `post_new`-View, oder? Aber nicht ganz. Zum einen übergeben wir zusätzliche `pk` Parameter von urls. Und: Wir bekommen das `Post`-Model, welches wir bearbeiten wollen, mit `get_object_or_404(Post, pk=pk)` und wenn wir dann ein Formular erstellen, übergeben wir post als `instance`, wenn wir das Formular speichern…
+Sieht genauso aus wie unsere `post_new`-View, oder? Aber nicht ganz. For one, we pass an extra `pk` parameter from `urls`. Und: Wir bekommen das `Post`-Model, welches wir bearbeiten wollen, mit `get_object_or_404(Post, pk=pk)` und wenn wir dann ein Formular erstellen, übergeben wir post als `instance`, wenn wir das Formular speichern…
 
 {% filename %}blog/views.py{% endfilename %}
 
