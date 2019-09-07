@@ -77,26 +77,26 @@ Djangoのモデルは特別なオブジェクトで、`データベース` に�
 
     djangogirls
     ├── blog
-    │   ├── __init__.py
-    │   ├── admin.py
-    │   ├── apps.py
-    │   ├── migrations
-    │   │   └── __init__.py
-    │   ├── models.py
-    │   ├── tests.py
+    │   ├── __init__.py
+    │   ├── admin.py
+    │   ├── apps.py
+    │   ├── migrations
+    │   │   └── __init__.py
+    │   ├── models.py
+    │   ├── tests.py
     |   ├── urls.py
-    │   └── views.py
+    │   └── views.py
     ├── db.sqlite3
     ├── manage.py
     ├── mysite
-    │   ├── __init__.py
-    │   ├── settings.py
-    │   ├── urls.py
-    │   └── wsgi.py
+    │   ├── __init__.py
+    │   ├── settings.py
+    │   ├── urls.py
+    │   └── wsgi.py
     └── requirements.txt
     
 
-アプリケーションを作ったら、Djangoにそれを使うように伝えないといけません。 それは `mysite/settings.py` でします。エディタでこれを開いてください。 We need to find `INSTALLED_APPS` and add a line containing `'blog.apps.BlogConfig',` just above `]`. そうすると、最終的には以下のようになりますね。
+アプリケーションを作ったら、Djangoにそれを使うように伝えないといけません。 それは `mysite/settings.py` でします。エディタでこれを開いてください。 まず `INSTALLED_APPS` を見つけて `]` の上に `'blog.apps.BlogConfig',` という一行を追加します。 そうすると、最終的には以下のようになりますね。
 
 {% filename %}mysite/settings.py{% endfilename %}
 
