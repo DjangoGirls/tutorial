@@ -14,7 +14,7 @@
 * [ޖޭންގޯ މޮޑެލްސް](django_models/README.md)
 * [ޖޭންގޯ އެޑްމިން](django_admin/README.md)
 * [ޑިޕްލޯއި!](deploy/README.md)
-* [ޖޭންގޯ ޔޫއާރުއެލްތައް](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [ޖޭންގޯ ވިއުސް!](django_views/README.md)
 * [އެޗްޓީއެމްއެލްގެ ތައާރަފް](html/README.md)
 * [ޖޭންގޯ އޯއާރުއެމް ( ކުއެރީ ސެޓްސް)](django_orm/README.md)
