@@ -133,7 +133,7 @@ OS X e Linux hanno un comando `man` che ti dà aiuto sui comandi. Prova `man pwd
 
 <!--endsec-->
 
-<!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
+<!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
 Aggiungere un suffisso `/?` alla maggior parte dei comandi stamparà la pagina di aiuto. Potresti dover scorrere la finestra di comando per vederlo tutto. Prova `cd /?`.
 
