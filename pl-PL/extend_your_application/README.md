@@ -2,7 +2,7 @@
 
 # Rozbudowa aplikacji
 
-Przeszłyśmy już wszystkie kroki niezbędne do uruchomienia naszej strony: wiemy, jak opisać nasze modele, widoki, adresy URL i szablony. Umiemy również sprawić, aby nasza strona wyglądała ładniej.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
 
 Czas na odrobinę praktyki!
 
@@ -84,7 +84,7 @@ Pamiętasz, jaki jest następny krok? Dodanie widoku!
 
 ## Dodajmy widok dla poszczególnego wpisu
 
-Tym razem nasz *widok* otrzymuje dodatkowy parametr `pk`. Nasz *widok* musi go "złapać", zgadza się? A więc zdefiniujmy funkcję tak: `def post_detail(request, pk):`. Zwróć uwagę, że musimy użyć dokładnie tej samej nazwy jak ta, której użyłyśmy w urls (`pk`). Pominięcie tej zmiennej jest niepoprawne i spowoduje błąd!
+Tym razem nasz *widok* otrzymuje dodatkowy parametr `pk`. Nasz *widok* musi go "złapać", zgadza się? A więc zdefiniujmy funkcję tak: `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Pominięcie tej zmiennej jest niepoprawne i spowoduje błąd!
 
 Teraz chcemy wyświetlić jeden i tylko jeden wpis na blogu. Aby to zrobić, możemy użyć querysetów w następujący sposób:
 
