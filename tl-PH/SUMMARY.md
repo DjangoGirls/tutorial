@@ -14,7 +14,7 @@
 * [Mga model ng Django](django_models/README.md)
 * [Admin ng Django](django_admin/README.md)
 * [I-deploy!](deploy/README.md)
-* [Mga url ng Django](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Mga view ng Django - oras na para maglikha!](django_views/README.md)
 * [Introduksyon sa HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
