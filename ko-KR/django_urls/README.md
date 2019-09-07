@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-이제 `post_list`라는 이름의 `view`가 루트 URL에 할당되었습니다. 이러한 URL 패턴은 빈 문자열에 매칭이 되며, 장고 URL 확인자(resolver)는 전체 URL 경로에서 접두어(prefix)에 포함되는 도메인 이름(i.e. <http://127.0.0.1:8000/>)을 무시해서 받아들입니다. 따라서, 이 패턴은 장고에게 누군가 웹사이트에 'http://127.0.0.1:8000/' 주소로 들어왔을 때 `views.post_list`를 보여주라고 말할 거에요.
+이제 `post_list`라는 이름의 `view`가 루트 URL에 할당되었습니다. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. 따라서, 이 패턴은 장고에게 누군가 웹사이트에 'http://127.0.0.1:8000/' 주소로 들어왔을 때 `views.post_list`를 보여주라고 말할 거에요.
 
 The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
