@@ -2,7 +2,7 @@
 
 # Extiende tu aplicación
 
-Ya hemos completado todos los pasos necesarios para la creación de nuestro sitio web: sabemos cómo escribir un model, url, view y template. También sabemos cómo hacer que nuestro sitio web tenga buen aspecto.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
 
 ¡Hora de practicar!
 
@@ -84,7 +84,7 @@ OK, hemos añadido un nuevo patrón de URL a `blog/urls.py`! Actualizamos la pag
 
 ## Añade la vista de detalle de la publicación
 
-Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Ten en cuenta que tenemos que usar exactamente el mismo nombre que especificamos en las urls (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
+Esta vez nuestra *vista* tomará un parámetro adicional `pk`. Nuestra *vista* necesita recibirlo, ¿verdad? Así que definiremos nuestra función como `def post_detail (request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). ¡Omitir esta variable es incorrecto y resultará en un error!
 
 Ahora, queremos obtener solo un post. Para ello podemos usar querysets como este:
 
