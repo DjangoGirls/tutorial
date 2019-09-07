@@ -192,7 +192,7 @@ def post_detail(request, pk):
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+（`<your-pythonanywhere-domain>`の部分を、自分の実際のPythonAnywhereのユーザー名に山カッコをはずして置き換えることを忘れずに。）
 
 ## サーバー上の静的ファイルの更新
 
@@ -209,6 +209,6 @@ PythonAnywhereのようなサーバは、（CSSファイルのような）「静
 
 `manage.py collectstatic`コマンドは、`manage.py migrate`のようなものです。 私たちはコードをいくつか変更してから、Djangoにサーバの静的ファイルのコレクションまたはデータベースに変更を*適用*するよう指示します。
 
-In any case, we're now ready to hop on over to the ["Web" page](https://www.pythonanywhere.com/web_app_setup/) (from the menu button in the upper right of the console) and hit **Reload**, and then look at the https://subdomain.pythonanywhere.com page to see the result.
+いずれにしても、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)（コンソールの右上のメニューボタンから）を開き、**Reload**をクリックする準備ができました。そうしたらhttps://subdomain.pythonanywhere.comを見て結果を確認しましょう。
 
 うまくいってるはずです！おめでとう :)
