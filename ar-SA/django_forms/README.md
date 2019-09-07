@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-يبدو هذا بالضبط تقريبا نفس عرض `post_new`، أليس كذلك؟ ولكن ليس تماما. لواحد، يتم تمرير إعدادات `pk` إضافية من عناوين urls. بعد ذلك، نحصل على نموذج `Post` نريد تحرير `get_object_or_404(Post, pk=pk)` وبعد ذلك، عندما نقوم بإنشاء نموذج، نمرر هذه المشاركة باعتبارها `instance`، معا عند حفض النمودج…
+يبدو هذا بالضبط تقريبا نفس عرض `post_new`، أليس كذلك؟ ولكن ليس تماما. For one, we pass an extra `pk` parameter from `urls`. بعد ذلك، نحصل على نموذج `Post` نريد تحرير `get_object_or_404(Post, pk=pk)` وبعد ذلك، عندما نقوم بإنشاء نموذج، نمرر هذه المشاركة باعتبارها `instance`، معا عند حفض النمودج…
 
 {% filename %}blog/views.py{% endfilename %}
 
