@@ -14,7 +14,7 @@
 * [Django models](django_models/README.md)
 * [Django admin](django_admin/README.md)
 * [Deploy!](deploy/README.md)
-* [Django urls](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django view - ได้เวลาสร้างแล้ว!](django_views/README.md)
 * [แนะนำให้รู้จัก HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
