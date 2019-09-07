@@ -2,7 +2,7 @@
 
 # アプリケーションを拡張しよう
 
-もう、ウェブサイトを作るのに必要な全ての章は終わりました。どのようにモデル、URL、ビュー、テンプレートを書いたら良いかわかっていますし、またウェブサイトを素敵にするやり方もわかります。
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
 
 さあ練習しましょう！
 
@@ -84,7 +84,7 @@ urlpatterns = [
 
 ## 投稿の詳細ビューを追加する
 
-今回は*ビュー*に追加のパラメータ`pk`が与えられます。 私たちの*ビュー*はそれを受け取る必要がありますね？ そこで関数を`def post_detail(request, pk):`として定義します。 urlsで指定した名前（`pk`）とまったく同じ名前を使用する必要があることに注意してください。 この変数を省略するのは正しくないのでエラーになってしまいます！
+今回は*ビュー*に追加のパラメータ`pk`が与えられます。 私たちの*ビュー*はそれを受け取る必要がありますね？ そこで関数を`def post_detail(request, pk):`として定義します。 Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). この変数を省略するのは正しくないのでエラーになってしまいます！
 
 今、私たちは1つだけブログ投稿を取得したいと考えています。 これを行うには、次のようなクエリセットが使用できます。
 
