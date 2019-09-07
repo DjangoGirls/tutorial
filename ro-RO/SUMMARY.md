@@ -14,7 +14,7 @@
 * [Modele în Django](django_models/README.md)
 * [Consola de admin din Django](django_admin/README.md)
 * [Implementează!](deploy/README.md)
-* [Url-urile în Django](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django views. py - e timul să creăm!](django_views/README.md)
 * [Introducere în HTML](html/README.md)
 * [Django ORM (Seturi de interogare)](django_orm/README.md)
