@@ -7,22 +7,22 @@
 - Πηγαίνετε στο Start menu → All Programs → Accessories → Command Prompt.
 - Μεταβείτε στην οθόνη έναρξης (Start screen), τοποθετήστε το δείκτη του ποντικιού στην κάτω αριστερή γωνία της οθόνης και κάντε κλικ στο κάτω βέλος που εμφανίζεται (σε μια οθόνη αφής, μετακινείστε το δάχτυλο σας από το κάτω μέρος της οθόνης προς τα επάνω). Η σελίδα "εφαρμογές" (Apps) πρέπει να ανοίξει. Κάντε κλικ στη γραμμή εντολών στην ενότητα Σύστημα των Windows (Windows System).
 - Κρατήστε πατημένο το ειδικό πλήκτρο των Windows στο πληκτρολόγιό σας και πατήστε το πλήκτρο "X". Επιλέξτε "γραμμή εντολών" ("Command Prompt") από το αναδυόμενο μενού.
-- Κρατήστε πατημένο το πλήκτρο Windows και πατήστε το πλήκτρο "R" για να εμφανιστεί το παράθυρο "εκτέλεση" ("Run"). Type "cmd" in the box, and click the OK key.
+- Κρατήστε πατημένο το πλήκτρο Windows και πατήστε το πλήκτρο "R" για να εμφανιστεί το παράθυρο "εκτέλεση" ("Run"). Πληκτρολογήστε "cmd" στο πλαίσιο και πατήστε το κουμπί ΟΚ.
 
-![Type "cmd" in the "Run" window](../python_installation/images/windows-plus-r.png)
+![Πληκτρολογήστε "cmd" στο παράθυρο "Run"](../python_installation/images/windows-plus-r.png)
 
-Later in this tutorial, you will need to have two command windows open at the same time. However, on some versions of Windows, if you already have one command window open and you try to open a second one using the same method, it will instead point you to the command window you already have open. Try it now on your computer and see what happens! If you only get one command window, try one of the other methods in the list above. At least one of them should result in a new command window being opened.
+Αργότερα σε αυτό το tutorial, θα χρειαστεί να έχετε δύο παράθυρα εντολών ανοιχτά την ίδια στιγμή. Ωστόσο, σε ορισμένες εκδόσεις των Windows, αν έχετε ήδη ανοίξει ένα παράθυρο εντολών και προσπαθήσετε να ανοίξετε ένα δεύτερο χρησιμοποιώντας την ίδια μέθοδο, θα οδηγηθείτε στο παράθυρο εντολών που έχετε ήδη ανοίξει. Δοκιμάστε το τώρα στον υπολογιστή σας και δείτε τι συμβαίνει! Εάν σας ανοίξει μόνο ένα παράθυρο εντολών, δοκιμάστε μία από τις άλλες μεθόδους της παραπάνω λίστας. Τουλάχιστον μία από αυτές θα πρέπει να οδηγήσει σε άνοιγμα ενός νέου παραθύρου εντολών.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: OS X" data-id="OSX_prompt" data-collapse=true ces-->
 
-Go to Applications → Utilities → Terminal.
+Πηγαίνετε στο Applications → Utilities → Terminal.
 
 <!--endsec-->
 
 <!--sec data-title="Opening: Linux" data-id="linux_prompt" data-collapse=true ces-->
 
-It's probably under Applications → Accessories → Terminal, or Applications → System → Terminal, but that may depend on your system. If it's not there, you can try to Google it. :)
+Το πιο πιθανό να βρίσκεται στο Applications → Accessories → Terminal, or Applications → System → Terminal αλλά εξαρτάται και από το σύστημα. Αν δεν βρίσκεται εκεί, δοκιμάστε να ψάξετε στο Google. :)
 
 <!--endsec-->
