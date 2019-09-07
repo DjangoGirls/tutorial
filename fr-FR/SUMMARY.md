@@ -14,7 +14,7 @@
 * [Les modèles dans Django](django_models/README.md)
 * [Django admin](django_admin/README.md)
 * [Déployer!](deploy/README.md)
-* [Les urls Django](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Vues Django - C'est l'heure de créer !](django_views/README.md)
 * [Introduction au HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
