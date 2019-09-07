@@ -338,7 +338,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Ito ay halos kapareho sa ating `post_new` na view, di ba? Pero hindi talaga lubos. Una sa lahat, nagpasa tayo ng dagdag na `pk` na parameter mula sa ating mga url. Sa sunod, kukunin natin ang `Post` model na gusto nating i-edit gamit ang `get_object_or_404(Post, pk=pk)` at pagkatapos, sa paglikha ng form, ipasa natin ang post na ito isip `instance`, pareho sila sa pag-save natin sa form…
+Ito ay halos kapareho sa ating `post_new` na view, di ba? Pero hindi talaga lubos. For one, we pass an extra `pk` parameter from `urls`. Sa sunod, kukunin natin ang `Post` model na gusto nating i-edit gamit ang `get_object_or_404(Post, pk=pk)` at pagkatapos, sa paglikha ng form, ipasa natin ang post na ito isip `instance`, pareho sila sa pag-save natin sa form…
 
 {% filename %}blog/views.py{% endfilename %}
 
