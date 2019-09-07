@@ -14,7 +14,7 @@
 * [Django modeller](django_models/README.md)
 * [Django admin](django_admin/README.md)
 * [Publicera!](deploy/README.md)
-* [Django webbadresser](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django vyer - dags att skapa!](django_views/README.md)
 * [Introduktion till HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
