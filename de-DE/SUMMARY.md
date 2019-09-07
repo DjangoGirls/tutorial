@@ -14,7 +14,7 @@
 * [Django-Models](django_models/README.md)
 * [Django-Administration](django_admin/README.md)
 * [Veröffentlichen!](deploy/README.md)
-* [Django-URLs](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django-Views - leg los!](django_views/README.md)
 * [Einführung in HTML](html/README.md)
 * [Django-ORM und QuerySets](django_orm/README.md)
