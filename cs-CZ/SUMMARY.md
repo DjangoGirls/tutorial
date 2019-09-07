@@ -14,7 +14,7 @@
 * [Django modely](django_models/README.md)
 * [Django admin](django_admin/README.md)
 * [Nasazení!](deploy/README.md)
-* [Django URL](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django views – time to create!](django_views/README.md)
 * [Úvod do HTML](html/README.md)
 * [Django ORM (tvorba dotazů)](django_orm/README.md)
