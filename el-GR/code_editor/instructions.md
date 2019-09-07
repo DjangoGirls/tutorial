@@ -32,6 +32,6 @@
 
 Ο πρώτος λόγος είναι ότι ο κώδικας πρέπει να είναι **απλό κείμενο** (δίχως bold, italic, πίνακες, εικόνες κλπ, όπως θα χρησιμοποιούσε κανείς σε έναν κοινό επεξεργαστή κειμένου). Το πρόβλημα με τα προγράμματα όπως το Word και το Textedit είναι ότι δεν παράγουν στην ουσία απλό κείμενο αλλά "πλούσιο" (με γραμματοσειρές, φορμάρισμα κειμένου και αυτά που αναφέραμε παραπάνω), χρησιμοποιώντας σύνθετες μορφές όπως το [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+Δεύτερον, τα προγράμματα επεξεργασίας κώδικα είναι ειδικά σχεδιασμένα για την σύνταξη κώδικα, ούτως ώστε να μπορούν να παρέχουν χρήσιμα εργαλεία όπως η επισήμανση του κώδικα με διαφορετικό χρώμα ανάλογα την σημασία του, το αυτόματο κλείσιμο εισαγωγικών κλπ.
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+Θα τα δούμε όλα αυτά στην πράξη αργότερα. Σύντομα, θα αρχίσετε να βλέπετε τον παλιό σας, έμπιστο επεξεργαστή κώδικα ως ένα από τα αγαπημένα σας εργαλεία. :)
