@@ -14,7 +14,7 @@
 * [Django modellek](django_models/README.md)
 * [Django admin](django_admin/README.md)
 * [Deploy!](deploy/README.md)
-* [Django url-ek](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django views – time to create!](django_views/README.md)
 * [Bevezetés a HTML-be](html/README.md)
 * [Django ORM és QuerySet-ek](django_orm/README.md)
