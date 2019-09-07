@@ -2,7 +2,7 @@
 
 # Amplie sua aplicação
 
-Já concluímos todos os passos necessários para a criação do nosso site: sabemos como criar um modelo, uma url, uma view e um template. Também sabemos como deixá-lo bonitinho.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
 
 Hora de praticar!
 
@@ -84,7 +84,7 @@ Você se lembra qual é o próximo passo? Claro: adicionar uma view!
 
 ## Adicionando a view de detalhes do post
 
-Desta vez, a nossa *view* recebe um parâmetro extra: `pk`. Nossa *view* precisa pegá-lo, certo? Então vamos definir nossa função como `def post_detail (request, pk):`. Precisamos usar exatamente o mesmo nome que especificamos em urls (`pk`). Omitir essa variável é incorreto e resultará em um erro!
+Desta vez, a nossa *view* recebe um parâmetro extra: `pk`. Nossa *view* precisa pegá-lo, certo? Então vamos definir nossa função como `def post_detail (request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Omitir essa variável é incorreto e resultará em um erro!
 
 Agora, queremos receber apenas um post do blog. Para isso, podemos usar queries (buscas) como esta:
 
