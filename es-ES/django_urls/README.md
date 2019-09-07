@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-Como puedes ver, estamos asociando una vista (`view`) llamada `post_list` a la URL raíz. Este patrón de URL detectará la cadena vacía, y el URL resolver de Django no tiene en cuenta el nombre el dominio (i.e., http://127.0.0.1:8000/) que viene antes del path de la url. Este patrón le dirá a Django que `views.post_list` es el lugar correcto al que ir si alguien entra a tu sitio web con la dirección 'http://127.0.0.1:8000/'.
+Como puedes ver, estamos asociando una vista (`view`) llamada `post_list` a la URL raíz. This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. Este patrón le dirá a Django que `views.post_list` es el lugar correcto al que ir si alguien entra a tu sitio web con la dirección 'http://127.0.0.1:8000/'.
 
 La última parte `name='post_list'` es el nombre de la URL que se utilizará para identificar a la vista. Puede coincidir con el nombre de la vista pero también puede ser algo completamente distinto. Utilizaremos las URL con nombre más delante en el proyecto así que es importante darle un nombre a cada URL de la aplicación. También deberíamos intentar mantener los nombres de las URL únicos y fáciles de recordar.
 
