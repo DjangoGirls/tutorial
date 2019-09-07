@@ -135,7 +135,7 @@ OS X y Linux tienen un comando `man`, el cuál te da una ayuda en comandos. Inte
 
 <!--endsec-->
 
-<!--sec data-title="Current directory: Windows" data-id="windows_help" data-collapse=true ces-->
+<!--sec data-title="Command Help: Windows" data-id="windows_help" data-collapse=true ces-->
 
 Añade un sufijo `/?` para mas comandos que se imprimirán en la página de ayuda. Tú puedes hacer scroll a la ventana de comandos para verlos todos. Intenta `cd /?`.
 
