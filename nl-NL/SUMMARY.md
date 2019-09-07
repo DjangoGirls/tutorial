@@ -14,7 +14,7 @@
 * [Django modellen](django_models/README.md)
 * [Django beheer](django_admin/README.md)
 * [Uitrollen!](deploy/README.md)
-* [Django URL's](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django views - tijd om ze te maken!](django_views/README.md)
 * [Introductie van HTML](html/README.md)
 * [Django ORM (Zoekresultaten)](django_orm/README.md)
