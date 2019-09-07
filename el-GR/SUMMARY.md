@@ -14,7 +14,7 @@
 * [Μοντέλα (models) του Django](django_models/README.md)
 * [Διαχείριση μέσω Django admin](django_admin/README.md)
 * [Ανεβάστε!](deploy/README.md)
-* [Django urls](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django views - ώρα να δημιουργήσετε!](django_views/README.md)
 * [Εισαγωγή στην HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
