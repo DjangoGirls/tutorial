@@ -14,7 +14,7 @@
 * [نماذج دجانغو](django_models/README.md)
 * [دجانغو المشرف](django_admin/README.md)
 * [الإعداد!](deploy/README.md)
-* [روابط دجانغو](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [وجهات نظر جانغو -وقت الإنشاء!](django_views/README.md)
 * [مقدمة إلى HTML](html/README.md)
 * [ORM جانغو (Querysets)](django_orm/README.md)
