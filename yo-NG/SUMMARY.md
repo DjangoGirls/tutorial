@@ -14,7 +14,7 @@
 * [Àwọn àwòṣe Django](django_models/README.md)
 * [Alábòójútó Django](django_admin/README.md)
 * [Ṣàgbékalẹ̀!](deploy/README.md)
-* [Àwọn URL Django](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Àwọn view ti Django – àkókò láti ṣẹ̀dá!](django_views/README.md)
 * [Ìfihàn sí HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
