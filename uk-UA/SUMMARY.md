@@ -14,7 +14,7 @@
 * [Django моделі](django_models/README.md)
 * [Django адміністратор](django_admin/README.md)
 * [Розгортання!](deploy/README.md)
-* [Django urls](django_urls/README.md)
+* [Django URLs](django_urls/README.md)
 * [Django views – time to create!](django_views/README.md)
 * [Вступ до HTML](html/README.md)
 * [Django ORM (Querysets)](django_orm/README.md)
