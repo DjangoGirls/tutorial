@@ -334,7 +334,7 @@ We need to create a file `post_edit.html` in the `blog/templates/blog` directory
          mengembalikan render (permintaan, 'blog / post_edit.html', {'form': form} )
     ```
     
-    Ini tampak hampir sama persis dengan view `post_new` kita, benar ? Tetapi tidak seluruhnya sama persis. Untuk satu, kami melewatkan parameter ` pk </ 0> tambahan dari url. Selanjutnya, kita mendapatkan <code> Post </ 0> model yang ingin kita edit dengan <code> get_object_or_404 (Post, pk = pk) </ 0> dan kemudian, ketika kita membuat sebuah form, kita melewati postingan ini sebagai < 0> contoh </ 0> , saat kita menyimpan form ...</p>
+    Ini tampak hampir sama persis dengan view `post_new` kita, benar ? Tetapi tidak seluruhnya sama persis. For one, we pass an extra `pk` parameter from `urls`. Selanjutnya, kita mendapatkan ` Post </ 0> model yang ingin kita edit dengan <code> get_object_or_404 (Post, pk = pk) </ 0> dan kemudian, ketika kita membuat sebuah form, kita melewati postingan ini sebagai < 0> contoh </ 0> , saat kita menyimpan form ...</p>
 
 <p>{% filename%} blog / views.py {% endfilename%}</p>
 
