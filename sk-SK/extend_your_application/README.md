@@ -2,7 +2,7 @@
 
 # Ako rozšíriť aplikáciu
 
-Už sme dokončili všetky kroky potrebné na to, aby sme vytvorili našu webovú stránku: vieme ako napísať model, url, view a šablónu. Taktiež vieme ako skrášliť našu stránku.
+We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
 
 Čas na precvičovanie!
 
@@ -84,7 +84,7 @@ Do you remember what the next step is? It's adding a view!
 
 ## Pridaj view do detailu príspevku
 
-Tentokrát má náš *view* extra parameter, `pk`. Náš *view* ho potrebuje zachytiť, však? Takže definujeme našu funkciu ako `def post_detail(request, pk):`. Všimni si, že musíme použiť rovnaké meno, ako to, ktoré sme špecifikovali v Url (`pk`). Vynechanie tejto premennej je nesprávne a bude mať za následok chybu!
+Tentokrát má náš *view* extra parameter, `pk`. Náš *view* ho potrebuje zachytiť, však? Takže definujeme našu funkciu ako `def post_detail(request, pk):`. Note that we need to use exactly the same name as the one we specified in `urls` (`pk`). Vynechanie tejto premennej je nesprávne a bude mať za následok chybu!
 
 Teraz chceme aby sme dostali jeden a len jeden príspevok blogu. Na to môžeme použiť querysets takto:
 
