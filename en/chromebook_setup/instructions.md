@@ -17,7 +17,7 @@ You can choose one of the cloud IDEs, and follow the instruction of the cloud ID
 
 1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Sign up for an account
-3. Click _New Server_
+3. Click _New Server_ and choose the Django app
 4. Click Terminal button(on the left side of the window)
 
 Now you should see an interface with a sidebar, buttons at the left.
@@ -32,10 +32,22 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions.
 You can resize or maximize that window to make it a bit bigger.
 
 #### AWS Cloud9
+Currently Cloud 9 requires you to sign up with AWS and enter credit card
+information.
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click _Create Environment_
+1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Go to [c9.io](https://c9.io) and click _Get started with AWS Cloud9_
+3. Sign up for an AWS account (requires credit card information, but you can
+   use it for free)
+4. In the AWS Dashboard, enter _Cloud9_ in the search bar and click it
+5. In the Cloud 9 dashboard, click _Create environment_
+6. Name it _django-girls_
+7. While configuring settings, select _Create a new instance for environment
+   (EC2)_ for "Environment Type" and the _t2.micro_ "Instance type" (it should
+   say "Free-tier eligible."). The default cost-saving setting is fine and you
+   can keep the other defaults.
+8. Click _Next step_
+9. Click _Create environment_
 
 Now you should see an interface with a sidebar, a big main window with some
 text, and a small window at the bottom that looks something like this:
@@ -56,17 +68,7 @@ stuff useful computer code into for a project we're working on. We use them to
 keep the various bits of code we want for our various projects separate so
 things don't get mixed up between projects.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
-
-{% filename %}Cloud 9{% endfilename %}
-```
-sudo apt update
-sudo apt install python3.6-venv
-```
-
-If this still doesn't work, ask your coach for some help.
-
-Next, run:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 ```
