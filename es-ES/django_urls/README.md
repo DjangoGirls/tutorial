@@ -98,6 +98,6 @@ Si tratas de visitar http://127.0.0.1:8000/ ahora, encontrarás un mensaje de er
 
 ![Error](images/error1.png)
 
-La consola esta mostrando un error, pero no te preocupes - de hecho es muy ùtil: està diciendote que **no existe el atributo 'post_list'**. Ese es el nombre del *view* que Django está tratando de encontrar y usar, pero aun no lo hemos creado. En esta etapa tu `/admin/` tampoco funcionarà. No te preocupes, ya llegaremos a eso. Si ves un error diferente, intenta reiniciar el servidor web. Para ello, en la consola en la que se está ejecutando el servidor web, páralo pulsando Ctrl+C (las teclas Control y C a la vez) y reinícialo ejecutando el comando `python manage.py runserver`.
+La consola esta mostrando un error, pero no te preocupes - de hecho es muy ùtil: està diciendote que **no existe el atributo 'post_list'**. Ese es el nombre del *view* que Django está tratando de encontrar y usar, pero aun no lo hemos creado. En esta etapa tu `/admin/` tampoco funcionarà. No te preocupes, ya llegaremos a eso. Si ves un error diferente, intenta reiniciar el servidor web. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
