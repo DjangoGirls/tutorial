@@ -124,7 +124,7 @@ Cuando hagas push a GitHub, te preguntará tu usuario y password de GitHub, y de
 
 <!--TODO: maybe do ssh keys installs in install party, and point ppl who dont have it to an extension -->
 
-Tu código ya está subido a GitHub. ¡Ve y compruébalo! Encontrarás que está en buena compañía - [Django](https://github.com/django/django)[Django Girlst Tutorial](https://github.com/DjangoGirls/tutorial), y muchos otros proyectos de software libre están alojados en GitHub. :)
+Tu código ya está subido a GitHub. ¡Ve y compruébalo! Encontrarás que está en buena compañía - [Django](https://github.com/django/django), [Django Girls Tutorial](https://github.com/DjangoGirls/tutorial) y muchos otros proyectos de software libre están alojados en GitHub. :)
 
 # Configurar nuestro blog en PythonAnywhere
 
