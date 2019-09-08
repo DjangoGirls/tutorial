@@ -1,7 +1,15 @@
 # സംഗ്രഹം
 
 * [ആമുഖം](README.md)
-* [ഇൻസ്റ്റാളേഷൻ](installation/README.md)
+* [ഇൻസ്റ്റാളേഷൻ](installation/README.md) 
+  * [Command Line](installation/README.md#brief-intro-to-the-command-line)
+  * [Python](installation/README.md#install-python)
+  * [Code Editor](installation/README.md#install-a-code-editor)
+  * [Virtual Environment](installation/README.md#virtual-environment)
+  * [Django](installation/README.md#installing-django)
+  * [Git](installation/README.md#install-git)
+  * [Github](installation/README.md#create-a-github-account)
+  * [PythonAnywhere](installation/README.md#create-a-pythonanywhere-account)
 * [ഇൻസ്റ്റാളേഷൻ (Chromebook)](chromebook_setup/README.md)
 * [ഇന്റർനെറ്റ് എങ്ങനെ പ്രവർത്തിക്കുന്നു](how_the_internet_works/README.md)
 * [കമാൻഡ് ലൈനിനുള്ള ആമുഖം](intro_to_command_line/README.md)
