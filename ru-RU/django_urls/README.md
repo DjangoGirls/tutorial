@@ -98,6 +98,6 @@ urlpatterns = [
 
 ![Ошибка](images/error1.png)
 
-Ваша консоль показывает ошибку, но не волнуйтесь – это на самом деле очень полезно: вам сообщают, что **no attribute 'post_list'** ("отсутствует атрибут 'post_list'"). Это имя *view*, что Django пытается найти и использовать, но мы его еще не создали. На данном этапе ваша `/admin/` также не будет работать. Не беспокойся, мы этим займемся. Если вы видите другое сообщение об ошибке, попробуйте перезагрузить веб-сервер. Чтобы сделать это, в окне консоли, где работает веб-сервер, остановите его, нажав Ctrl+C (одновременное нажатие клавиш Control и клавиши с буквой C); и перезапустите его набрав команду `Python manage.py runserver`.
+Ваша консоль показывает ошибку, но не волнуйтесь – это на самом деле очень полезно: вам сообщают, что **no attribute 'post_list'** ("отсутствует атрибут 'post_list'"). Это имя *view*, что Django пытается найти и использовать, но мы его еще не создали. На данном этапе ваша `/admin/` также не будет работать. Не беспокойся, мы этим займемся. Если вы видите другое сообщение об ошибке, попробуйте перезагрузить веб-сервер. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
