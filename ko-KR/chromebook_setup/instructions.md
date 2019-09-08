@@ -8,7 +8,7 @@
 
 1. [PaizaCloud Cloud IDE](https://paiza.cloud/) 사이트에 접속합니다.
 2. 새 계정을 생성합니다.
-3. *New Server* 버튼을 클릭합니다.
+3. Click *New Server* and choose the Django app
 4. Terminal 버튼(왼쪽 창에 있습니다) 버튼을 클릭합니다.
 
 이제 당신은 버튼이 왼쪽에 있는 사이드바 형태의 인터페이스를 볼 수 있을 겁니다. "Terminal" 버튼을 눌러 터미널 창을 연 뒤 해당 명령어를 입력하세요:
@@ -22,34 +22,32 @@ PaizaCloud Cloud IDE 의 터미널은 당신의 명령어를 기다리고 있습
 
 #### AWS Cloud9
 
-1. [AWS Cloud9](https://aws.amazon.com/cloud9/) 사이트에 접속합니다.
-2. 새 계정을 생성합니다.
-3. *Create Environment*를 클릭 합니다
+Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
 
-이제 당신은 다음과 같이 사이드바와 글자가 있는 큰 메인 창, 그리고 하단에 작은 창이 있는 인터페이스가 보일겁니다:
+1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+5. In the Cloud 9 dashboard, click *Create environment*
+6. Name it *django-girls*
+7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+8. Click *Next step*
+9. Click *Create environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-이 하단영역은 터미널입니다. 이 터미널을 이용해 원격 Cloud 9 컴퓨터에 커맨드를 보낼 수 있습니다. 창을 더 크게 조절할 수도 있습니다.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### 가상 환경
 
-virtualenv라고도 불리는 가상환경은 우리가 진행하고 있는 프로젝트를 위해 유용한 컴퓨터 코드를 담아놓을 수 있는 개인 상자와도 같습니다. 우리는 여러 코드의 일부분이 프로젝트들 사이에서 섞이지 않을 수 있도록 다양한 프로젝트들을 분리하여 저장하는데에 사용합니다.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-터미널에서 클라우드 9 인터페이스 아래에 다음의 명령어를 입력합니다:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    sudo apt update
-    sudo apt install python3.6-venv
-    
-
-만약 이래도 작동 되지 않는다면, 코치에게 도움을 요청하세요.
-
-다음, 실행 명령어:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,16 +58,16 @@ virtualenv라고도 불리는 가상환경은 우리가 진행하고 있는 프�
     pip install django~={{ book.django_version }}
     
 
-(마지막 줄에서 물결표 다음 등호를 사용한 것을 주목하세요. `~=`)
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
-[Github](https://github.com) 계정을 만드세요.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-장고걸스 튜토리얼에는 배포라는 섹션이 있습니다. 여기서는 다른 사람이 여러분의 작업물을 볼 수 있도록, 여러분이 만든 새로운 서버라고 불리는 웹 어플리케이션에 공개적으로 접근할 수 있는 컴퓨터로 옮기는 과정을 설명합니다.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-크롬북에서 튜토리얼을 진행하고 있다면 이 부분은 약간 이상할 수 도 있습니다. 왜냐하면 우리는 이미 인터넷 상에서 작동하는 일반적인 노트북과 다른 컴퓨터를 사용하고 있기 때문입니다. 그러나 우리가 만든 Cloud 9 작업 공간을 "진행 중인" 작업 공간이라고 생각하고, Python Anywhere가 좀 더 완성된 작업물을 보여주는 공간이라고 생각하면 여전히 유용할 것입니다.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-그러므로, Python Anywhere의 새 계정을 [www.pythonanywhere.com](https://www.pythonanywhere.com) 에서 만들어 보세요.
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
