@@ -98,6 +98,6 @@ urlpatterns = [
 
 ![خطا](images/error1.png)
 
-کنسول سرور یک پیعام خطا نشان می‌دهد ولی نگران نباشید، ابزار سودمندی است: این پیغام خطا می‌گوید که **no attribute 'post_list'**. این نام همان *view* است که جنگو تلاش می‌کند آن را پیدا و اجرا کند، اما ما هنوز آن را نساخته‌ایم. در این مرحله `/admin/` شما هم کار نمی‌کند. نگران نباشید، سراغ آن هم خواهیم رفت. اگر پیغام خطای دیگری دریافت کردید یک بار وب سرور را قطع و مجدداً فعال کنید. برای این کار در کنسولی که وب سرور فعال است Ctrl+C را بزنید (همزمان کلید Ctrl و کلید C را فشار دهید) و وب سرور را با اجرای دستور `python manage.py runserver` دوباره فعال کنید.
+کنسول سرور یک پیعام خطا نشان می‌دهد ولی نگران نباشید، ابزار سودمندی است: این پیغام خطا می‌گوید که **no attribute 'post_list'**. این نام همان *view* است که جنگو تلاش می‌کند آن را پیدا و اجرا کند، اما ما هنوز آن را نساخته‌ایم. در این مرحله `/admin/` شما هم کار نمی‌کند. نگران نباشید، سراغ آن هم خواهیم رفت. اگر پیغام خطای دیگری دریافت کردید یک بار وب سرور را قطع و مجدداً فعال کنید. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
