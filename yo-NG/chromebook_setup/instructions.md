@@ -8,7 +8,7 @@ Cloud IDE jẹ́ irinṣẹ́ kan èyí tí yíò fún ẹ ní olóòtú kóòd�
 
 1. Lọ sí [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Forúkọ sílẹ̀ fún account kan
-3. Tẹ *New Server*
+3. Click *New Server* and choose the Django app
 4. Tẹ bọ́tìnnì Terminal (ní apá òsì ti fèrèsé náà)
 
 Ní báyìí ó yẹ ko rí atọ́kùn kan pẹ̀lú pẹpẹ-ẹ̀gbẹ́ kan, àwọn bọ́tìnnì ní apá òsì náà. Tẹ bọ́tìnnì "Terminal" láti ṣí fèrèsé èbúté pẹ̀lú ìṣítí bíi èyí:
@@ -22,34 +22,32 @@ Ní báyìí ó yẹ ko rí atọ́kùn kan pẹ̀lú pẹpẹ-ẹ̀gbẹ́ kan,
 
 #### AWS Cloud9
 
-1. Lọ sí [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Forúkọ sílẹ̀ fún account kan
-3. Tẹ *Create Environment*
+Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
 
-Ní báyìí ó yẹ ko rí atọ́kùn kan pẹ̀lú pẹpẹ-ẹ̀gbẹ́ kan, fèrèsé pàtàkì nlá kan pẹ̀lú àwọn ọ̀rọ̀, àti fèrèsé kékeré kan ní ìsàlẹ̀ tó rí bíi èyí:
+1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+5. In the Cloud 9 dashboard, click *Create environment*
+6. Name it *django-girls*
+7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+8. Click *Next step*
+9. Click *Create environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-Agbègbè ìsàlẹ̀ yìí ni èbúté rẹ. O lè lo èbúté náà láti fi àwọn àṣẹ ránṣẹ́ sí kọ̀mpútà Cloud 9 tó jìnnà náà. O lè ṣàtúnṣe ìwọ̀n Ferese náà láti mú kó tóbi díẹ̀ si.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### Àyíká Àìrí
 
-Àyíká àìrí kan (tí a tún pè ní virtualenv) dà bíi àpótí àdáni kan tí a lè kó kóòdù kọ̀mpútà tó wúlò sínú rẹ̀ fún iṣé kan tí a n ṣiṣẹ́ lórí. A má n lò wọ́n láti tọ́jú onírúurú àwọn ẹyọ kóòdù tí a fẹ́ fún onírúurú àwọn iṣẹ́ wa lọ́tọ̀ọ̀tọ̀ kí àwọn nnkan má lè dàpọ̀ láàrin àwọn iṣẹ́.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Nínú èbúté rẹ ní ìsàlẹ̀ atọ́kùn Cloud 9 náà, ṣe àwọn tó tẹ̀lé yìí:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    sudo apt update
-    sudo apt install python3.6-venv
-    
-
-Tí èyí kò bá tún ṣiṣẹ́, béèrè lọ́wọ́ olùkọ́ rẹ fún ìrànlọ́wọ́ díẹ̀.
-
-Lẹ́yìn náà, ṣe:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,16 +58,16 @@ Lẹ́yìn náà, ṣe:
     pip install django~={{ book.django_version }}
     
 
-(ṣe àkíyèsí pé lórí ìlà ìkẹyìn a lo àmì fàágùn tí àmì ìdọ́gba sì tẹ̀le: `~=`).
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
-Ṣẹ̀dá account [GitHub](https://github.com) kan.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Àlàyé Django Girls náà ní abala kan lórí nnkan tí a n pè ní Ìṣàgbékalẹ̀ (Deployment), eyi tó jẹ́ ìlànà mímú kóòdù tó n mú ètò ayélujára tuntun rẹ ṣiṣẹ́ àti gbígbé rẹ̀ sí kọ̀mpútà tó wà lárọ̀ọ́wọ́tó gbangba kan (tí a n pè ní server) kí àwọn èèyàn mìíràn le rí iṣẹ́ rẹ.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Apá yìí má jẹ́ àjèjì nígbà tí o bá n ṣe àlàyé náà lórí Chromebook kan níwọ̀n bí a ti n lo kọ̀mpútà kan tó ti wà lórí íńtánẹ́ẹ̀tì (tó jẹ́ òdìkejì sí, ká sọ pé, kọ̀mpútà àgbélétan kan). Àmọ́ o, ó ṣì wúlò, tí a bá ronú nípa ààyè-iṣẹ́ Cloud 9 wa gẹ́gẹ́ bíi ibi kan fún iṣé wa "ti ń lọ lọ́wọ́" àti Python Anywhere gẹ́gẹ́ bíi ibi kan láti ṣàfihàn iṣẹ́ wa bó ṣe n túbọ̀ péye.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Nítorí náà, forúkọ sílẹ̀ fún account Python Anywhere tuntun kan ní [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
