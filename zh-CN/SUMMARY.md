@@ -1,7 +1,15 @@
 # 摘要
 
 * [介绍](README.md)
-* [安装](installation/README.md)
+* [安装](installation/README.md) 
+  * [Command Line](installation/README.md#brief-intro-to-the-command-line)
+  * [Python](installation/README.md#install-python)
+  * [Code Editor](installation/README.md#install-a-code-editor)
+  * [Virtual Environment](installation/README.md#virtual-environment)
+  * [Django](installation/README.md#installing-django)
+  * [Git](installation/README.md#install-git)
+  * [Github](installation/README.md#create-a-github-account)
+  * [PythonAnywhere](installation/README.md#create-a-pythonanywhere-account)
 * [安装（chromebook）](chromebook_setup/README.md)
 * [互联网是如何工作的](how_the_internet_works/README.md)
 * [命令行介绍](intro_to_command_line/README.md)
