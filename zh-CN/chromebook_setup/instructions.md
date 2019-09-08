@@ -8,7 +8,7 @@ Cloude IDE (云集成开发环境）是为你提供代码编辑器并可以访�
 
 1. 转到 [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. 注册一个账户
-3. 点击*New Server*
+3. Click *New Server* and choose the Django app
 4. 点击“终端‘’按钮（在窗口的左侧）
 
 现在你可看见一个带有侧边栏、左边按钮的界面。 点击“Terminal”按钮打开终端窗口，如下所示：
@@ -22,34 +22,32 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
 
 #### AWS Cloud9（AWS云开发9）
 
-1. 转到 [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. 创建一个用户
-3. 点击 *Create Environment*
+Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
 
-现在你应该看见一个拥有侧边栏，一个包含文本的大主窗口，以及一个位于底部的小窗口-看起来像这样：
+1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+5. In the Cloud 9 dashboard, click *Create environment*
+6. Name it *django-girls*
+7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+8. Click *Next step*
+9. Click *Create environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
 {% filename %}bash{% endfilename %}
 
     你的用户名：~工作区 $
     
 
-底部的区域是你的终端。你可以用终端来向远程的cloude9计算机发送指示。你可以调整该窗口使之更大。
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### 虚拟环境
 
-虚拟环境（也称virtualenv）就像个私人的盒子，我们可以将正在做的项目中有用的计算机代码储存进去。 我们使用虚拟环境来区分开我们不同项目里所用的各种各样代码，以免不同项目的代码相互混淆。
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-在cloude9的终端界面的底部，进行以下操作：
-
-{% filename %}Cloud 9{% endfilename %}
-
-    sudo apt 更新
-    sudo apt 安装 python3.6-venv
-    
-
-如果仍然行不通，求助你的教练获得帮助。
-
-下一步，运行：
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,16 +58,16 @@ PaizaCloud Cloud IDE的终端是为你的指示准备的。 你可以调整窗�
     pip install django~={{ book.django_version }}
     
 
-（请注意，在最后一行，我们使用一个倾斜，后面跟着一份等号： `~=`.）
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
-创建一个[GitHub](https://github.com)账户
+Make a [GitHub](https://github.com) account.
 
 ### Python无处不在
 
-Django Girls课程包含一个称谓部署的部分。这是个令代码在你新的网页生效并使其转移到一个可公开访问的计算机的过程，以便其他人均可看到你的作品。
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-当我们在Chromebook上做课程的时候，这部分就显得有些怪异了，因为我们已经用计算机上网（而不是，例如，笔记本） 然而，它仍然有用的。因为当我们将cloud9 工作区当做一个作为我们“进行中”的工作。Python Anywhere作为一个展示我们工作的地方，因为其更加完整。
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-因此，在[www.pythonanywhere.com](https://www.pythonanywhere.com).注册一个新的 Python Anywhere账户
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
