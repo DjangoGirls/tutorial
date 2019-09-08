@@ -8,7 +8,7 @@ Cloud IDE er et verktøy som gir en kodeeditor og tilgang til en datamaskin som 
 
 1. Gå til [PaizaCloud IDE](https://paiza.cloud/)
 2. Registrer en konto
-3. Klikk *New Server*
+3. Click *New Server* and choose the Django app
 4. Klikk knappen Terminal (på venstre side av vinduet)
 
 Nå skal du se et grensesnitt med en sidebar, knapper til venstre. Klikk på knappen "Terminal" for å åpne et terminalvindu med en prompt som dette:
@@ -22,34 +22,32 @@ Terminalen på PaizaCloud Cloud IDE er klar for dine instruksjoner. Du kan endre
 
 #### AWS Cloud9
 
-1. Gå til [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Registrer en konto
-3. Klikk *Create Environment*
+Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
 
-Nå skal du se et grensesnitt med en sidebar, et stort hovedvindu med noe tekst, og et lite vindu i bunnen som ser ut omtrent som dette:
+1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+5. In the Cloud 9 dashboard, click *Create environment*
+6. Name it *django-girls*
+7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+8. Click *Next step*
+9. Click *Create environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-Det nederste området er terminalen din. Du kan bruke terminalen for å sende instruksjoner til den eksterne Cloud9-maskinen. Du kan endre størrelse på vinduet for å gjøre det større.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### Virtual Environment (virtuelt miljø)
 
-Et virtuelt miljø (også kalt virtualenv) er som en privat boks som vi kan fylle med nyttig datamaskinkode for prosjektene vi jobber med. Vi bruker dem til å holde de forskjellige kodebitene separat som vi trenger til de forskjellige prosjektene, slik at det ikke blir blandet sammen.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-I terminalen på bunnen av grensesnittet til Cloud 9 kjører du følgende:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    sudo apt update
-    sudo apt install python3.6-venv
-    
-
-Hvis det fortsatt ikke fungerer, kan du spørre din instruktør om hjelp.
-
-Neste steg er å kjøre:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,16 +58,16 @@ Neste steg er å kjøre:
     pip install django~={{ book.django_version }}
     
 
-(legg merke til at på den siste linjen bruker vi tilde etterfulgt av et likhetstegn: `~=`).
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
-Opprett en [GitHub](https://github.com)-konto.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Django Girls tutorialen inkluderer en del om noe som heter Deployment, som er en prosess der du tar koden som kjører din nye webapplikasjon og flytter den til en offentlig tilgjengelig datamaskin (kalt en server) slik at andre kan se ditt arbeid.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Denne delen er litt rar når du gjør tutorialen på en Chromebook siden vi allerede bruker en datamaskin som er på internett (i motsetning til for eksempel en laptop). Uansett, det er fortsatt nyttig, fordi vi kan tenke på vår Cloud 9 Workspace som et sted for vårt arbeid "under utvikling", og Python Anywhere som et sted for å vise fram hva vi har gjort når det blir mer ferdig.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Så, registrer deg for en ny konto på Python Anywhere på [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
