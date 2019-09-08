@@ -8,7 +8,7 @@ Cloud IDE एक ऐसा उपकरण है जो आपको कोड 
 
 1. [PaizaCloud Cloud IDE](https://paiza.cloud/) पर जाएँ
 2. खाता के लिए साइन अप करें
-3. *नया सर्वर* क्लिक करें
+3. Click *New Server* and choose the Django app
 4. टर्मिनल बटन पर क्लिक करें (विंडो के बाईं तरफ)
 
 अब आपको बाईं ओर बटन, एक साइडबार के साथ एक इंटरफ़ेस देखना चाहिए। इस तरह के प्रॉम्प्ट से टर्मिनल विंडो खोलने के लिए "Terminal" बटन पर क्लिक करें:
@@ -22,11 +22,19 @@ PaizaCloud Cloud IDE का टर्मिनल आपके निर्द�
 
 #### AWS Cloud9
 
-1. [AWS Cloud9](https://aws.amazon.com/cloud9/) पर जाएँ
-2. खाता के लिए साइन अप करें
-3. *Create Environment* क्लिक करें
+Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
 
-अब आपको साइडबार के साथ एक इंटरफेस देखना चाहिए, कुछ टेक्स्ट के साथ एक बड़ी मुख्य विंडो, और नीचे छोटी विंडो जो इस तरह दिखती है
+1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+5. In the Cloud 9 dashboard, click *Create environment*
+6. Name it *django-girls*
+7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+8. Click *Next step*
+9. Click *Create environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
 {% filename %}bash{% endfilename %}
 
@@ -37,19 +45,9 @@ This bottom area is your terminal. You can use the terminal to send instructions
 
 ### Virtual Environment
 
-virtual environment (जिसे virtualenv भी कहा जाता है) एक निजी बॉक्स की तरह है जहाँ हम किसी प्रोजेक्ट के लिए उपयोगी कंप्यूटर कोड रख सकते है, जिस पर हम काम कर रहे हो। हम विभिन्न कोडों के बिट को रखने के लिए उनका उपयोग करते हैं जिन्हें हम अपनी विभिन्न परियोजनाओं के लिए अलग उपयोग करना चाहते है, ताकि चीजें कई परियोजनाओं में मिश्रित न हो सके।
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Cloud 9 इंटरफ़ेस के नीचे अपने टर्मिनल में, निम्न रन करें:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    sudo apt update
-    sudo apt install python3.6-venv
-    
-
-यदि यह अभी भी काम नहीं करता है, तो कोच से कुछ मदद मांगे।
-
-अगला, रन करें:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -64,12 +62,12 @@ Cloud 9 इंटरफ़ेस के नीचे अपने टर्म�
 
 ### GitHub
 
-एक [GitHub](https://github.com) खाता बनाएँ.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Django Girls ट्यूटोरियल में एक सेक्शन शामिल है जिसे परिनियोजन(Deployment) कहा जाता है, जो कोड को लेने की प्रक्रिया है, जो आपके नए वेब एप्लिकेशन को सशक्त करती है और इसे सार्वजनिक रूप से सुलभ कंप्यूटर (सर्वर कहा जाता है) में ले जाती है ताकि अन्य लोग आपका काम देख सकें।
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Chromebook पर ट्यूटोरियल करते के लिए यह हिस्सा थोड़ी अजीब है क्योंकि हम एक कंप्यूटर का उपयोग कर रहे हैं जो इंटरनेट से पहले से ही जुड़ा है (या एक लैपटॉप कहे)। हालांकि, यह अभी भी उपयोगी है, क्योंकि हम अपने Cloud 9 वर्कस्पेस को "प्रगति पर" सोच सकते है और Python Anywhere को एक ऐसी जगह जहाँ अपने कार्य को दिखा सकते हैं जैसे ही यह अधिक पूर्ण हो जाता है।
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-इस प्रकार, एक नए Python Anywhere खाते के लिए [www.pythonanywhere.com](https://www.pythonanywhere.com) पर साइन अप करें।
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
