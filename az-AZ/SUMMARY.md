@@ -1,7 +1,15 @@
 # Xülasə
 
 * [Giriş](README.md)
-* [Quraşdırma](installation/README.md)
+* [Quraşdırma](installation/README.md) 
+  * [Command Line](installation/README.md#brief-intro-to-the-command-line)
+  * [Python](installation/README.md#install-python)
+  * [Code Editor](installation/README.md#install-a-code-editor)
+  * [Virtual Environment](installation/README.md#virtual-environment)
+  * [Django](installation/README.md#installing-django)
+  * [Git](installation/README.md#install-git)
+  * [Github](installation/README.md#create-a-github-account)
+  * [PythonAnywhere](installation/README.md#create-a-pythonanywhere-account)
 * [Quraşdırma (chromebook)](chromebook_setup/README.md)
 * [İnternet necə işləyir](how_the_internet_works/README.md)
 * [Əmrlər sətrinə giriş](intro_to_command_line/README.md)
