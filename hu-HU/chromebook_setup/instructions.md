@@ -8,7 +8,7 @@ Cloud IDE is a tool that gives you a code editor and access to a computer runnin
 
 1. Go to [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Sign up for an account
-3. Click *New Server*
+3. Click *New Server* and choose the Django app
 4. Click Terminal button(on the left side of the window)
 
 Now you should see an interface with a sidebar, buttons at the left. Click "Terminal" button to open terminal window with prompt like this:
@@ -22,9 +22,17 @@ The terminal on the PaizaCloud Cloud IDE is prepared for your instructions. You 
 
 #### AWS Cloud9
 
-1. Go to [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Sign up for an account
-3. Click *Create Environment*
+Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+
+1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+5. In the Cloud 9 dashboard, click *Create environment*
+6. Name it *django-girls*
+7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+8. Click *Next step*
+9. Click *Create environment*
 
 Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
@@ -39,17 +47,7 @@ This bottom area is your terminal. You can use the terminal to send instructions
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-In your terminal at the bottom of the Cloud 9 interface, run the following:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    sudo apt update
-    sudo apt install python3.6-venv
-    
-
-If this still doesn't work, ask your coach for some help.
-
-Next, run:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -64,7 +62,7 @@ Next, run:
 
 ### GitHub
 
-Készíts egy [GitHub](https://github.com) fiókot.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
