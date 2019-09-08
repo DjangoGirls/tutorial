@@ -8,7 +8,7 @@ Cloud IDE je alatka koja vam omogućava uređivanje kodova i pristup računaru u
 
 1. Idite na [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Napravite Vaš nalog
-3. Kliknite na *Novi server* (eng. New Server)
+3. Click *New Server* and choose the Django app
 4. Kliknite na dugme sa nazivom "Terminal"(sa leve strane prozora)
 
 Sada bi trebalo da vidite interfejs sa trakom sa opcijama sa leve strane. Kliknite "Terminal" dugme kako biste otvorili terminal sa komandama:
@@ -22,34 +22,32 @@ Terminal na PaizaCloud Cloud IDE je sada spreman za vaše komande. Možete da pr
 
 #### AWS Cloud9
 
-1. Idite na [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Napravite Vaš nalog
-3. Kliknite na *Kreiraj okruženje* (eng. Create Environment)
+Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
 
-Sada bi trebalo da vidite interfejs sa opcijama sa strane, veliki glavni prozor sa tekstom i mali prozor u dnu koji izgleda ovako:
+1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+5. In the Cloud 9 dashboard, click *Create environment*
+6. Name it *django-girls*
+7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+8. Click *Next step*
+9. Click *Create environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-Ovaj prostor u dnu je Vaš terminal. Možete da ga koristite kako biste poslali instrukcije Cloud 9 računaru. Možete da promenite veličinu prozora kako biste ga malo uvećali.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### Virutalno okruženje
 
-Virtualno okruženje (eng. virtual environment, virtualenv) je nešto poput privatne kutije u koju možemo da smeštamo koristan kompjuterski kod za projekat na kom radimo. Koristimo ih da bismo razdvojili razne delove koda koji se tiču različitih projekata, tako da nema opasnosti da ćemo pomešati nešto što pripada različitim projektima.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-U svom terminalu, u dnu Cloud 9 interfejsa, pokrenite sledeću komandu:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    sudo apt update
-    sudo apt install python3.6-venv
-    
-
-Ako nakon ovoga i dalje ne funkcioniše, pitajte svog instruktora za pomoć.
-
-Zatim, pokrenite:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,16 +58,16 @@ Zatim, pokrenite:
     pip install django~={{ book.django_version }}
     
 
-(Obratite pažnju da smo u poslednjoj liniji koristili tildu i znak jednakosti: `~=`).
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
-Napravi [GitHub](https://github.com) nalog.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Django Girls priručnik sadrži sekciju o nečemu što se zove Razvijanje (eng. Deployment), što predstavlja proces postavljanja koda koji pokreće Vašu novu veb aplikaciju na javno dostupan računar (server), tako da i drugi ljudi mogu da vide Vaš rad.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Ovaj deo je malo čudan ukoliko se priručnik prati radeći na Chromebook-u jer već koristimo računar koji je na Internetu (nasuprot, na primer, laptopu). Međutim, i dalje je koristan ukoliko posmatramo naš Cloud 9 radni prostor kao mesto za rad koji je "u toku" i Python Aniwhere kao mesto gde će se prikazati napredak naših stvari.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Prema tome, napravite novi Python Anywhere nalog na [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
