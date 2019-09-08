@@ -8,7 +8,7 @@ Mit dem Tool Cloud IDE erhältst du Zugang zu einem Code-Editor und einem Rechne
 
 1. Gehe zu [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Lege dir dort ein Benutzerkonto an
-3. Click *New Server* and choose the Django app
+3. Klicke auf *New Server* und wähle die Django-App
 4. Klicke auf die Schaltfläche "Terminal" (links im Browserfenster)
 
 Jetzt solltest du links eine Schnittstelle mit einer Seitenleiste und Schaltflächen sehen. Klicke auf den "Terminal"-Button und öffne das Terminal-Fenster mit einer Eingabeaufforderung wie folgt:
@@ -22,30 +22,30 @@ Das Terminal auf der PaizaCloud Cloud IDE steht für deine Anweisungen bereit. D
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+Zur Zeit verlangt Cloud 9, dass du dich mit AWS anmeldest und Kreditkarten-Informationen angibst.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+1. Installiere Cloud 9 aus dem [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Gehe zu [c9.io](https://c9.io) und klicke auf *Get started with AWS Cloud9*
+3. Erstelle ein AWS-Benutzerkonto (benötigt Angabe der Kreditkarte, kann aber kostenlos verwendet werden)
+4. Gib im AWS-Dashboard *Cloud9* in die Suchzeile ein und klicke es an
+5. Klicke im Cloud-9-Dashboard *Create environment* an
+6. Gib ihm den Namen *django-girls*
+7. Wähle beim Konfigurieren der Einstellungen *Create a new instance for environment (EC2)* als "Environment Type" und den "Instance type" *t2.micro* ("Free-tier eligible." sollte angezeigt werden). Die Voreinstellung bzgl. "cost-saving" ist in Ordnung und auch die anderen Voreinstellungen kannst du belassen.
+8. Klicke auf *Next step*
+9. Klicke auf *Create environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Jetzt solltest du eine Benutzeroberfläche mit Seitenleiste, ein grosses Fenster mit Text und am unteren Rand ein Feld sehen, das wie folgt aussieht:
 
 {% filename %}bash{% endfilename %}
 
     deinbenutzername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+Dieser untere Bereich ist dein Terminal. Dort kannst du Kommandos für den Computer eingeben, den dir Cloud 9 zur Verfügung stellt. Du kannst dieses Fenster vergrößern oder verkleinern.
 
 ### Virtuelle Umgebung
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Eine virtuelle Umgebung (auch virtualenv genannt) ist wie ein privater Behälter, in den wir nützlichen Code für ein Projekt packen können, an dem wir arbeiten. Wir benutzen sie, um Code für verschiedene Projekte getrennt aufzubewahren, damit dieser nicht vermischt wird.
 
 Run:
 
