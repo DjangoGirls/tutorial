@@ -98,6 +98,6 @@ Dacă vizitați http://127.0.0.1:8000/ o să vedeți un mesaj că 'pagină web n
 
 ![Eroare](images/error1.png)
 
-Consola arată o eroare, dar nu faceți grijă – ea este utilă: ea vă spune că **atributul 'post_list'** nu există. Acesta este denumirea *view* pe care Django încearcă să găsească și s-o utilizeze, dar noi n-am creat-o până când. Acum `/admin/` tot nu va lucra. Nu vă faceți grijă - o s-o corectăm. Dacă vedeți o altă eroare, restartați serverul. În linie de comandă opriți serverul, apăsând pe Ctrl+C (Control și C keys împreună) și porniți-l executând comandă `python manage.py runserver`.
+Consola arată o eroare, dar nu faceți grijă – ea este utilă: ea vă spune că **atributul 'post_list'** nu există. Acesta este denumirea *view* pe care Django încearcă să găsească și s-o utilizeze, dar noi n-am creat-o până când. Acum `/admin/` tot nu va lucra. Nu vă faceți grijă - o s-o corectăm. Dacă vedeți o altă eroare, restartați serverul. To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
 
 > If you want to know more about Django URLconfs, look at the official documentation: https://docs.djangoproject.com/en/2.2/topics/http/urls/
