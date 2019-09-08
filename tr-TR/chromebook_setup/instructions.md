@@ -8,7 +8,7 @@ Cloud IDE, size İnternette yazılım yükleyebileceğiniz, yazabileceğiniz ve 
 
 1. [PaizaCloud Cloud IDE](https://paiza.cloud/)'ye gidin
 2. Bir hesap oluşturun
-3. *New Server*'a tiklayalim
+3. Click *New Server* and choose the Django app
 4. Pencerenin sol tarafındaki Terminal butonuna tıklayalım
 
 Şimdi arayüzün sol tarafında bir takım buttonları görmeniz gerekiyor. "Terminal" buttonuna tıklayıp aşağıdaki komut satırını gösteren bir ekran açın:
@@ -22,34 +22,32 @@ PaizaCloud Cloud IDE'nin terminali sizin komutlarınızı girmeniz icin hazırla
 
 #### AWS Cloud9
 
-1. [AWS Cloud9](https://aws.amazon.com/cloud9/)'a gidin
-2. Bir hesap oluşturun
-3. *Create Environment* a tıklayın
+Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
 
-Şimdi bir kenar çubuğu, bazı metinlerin olduğu büyük bir ana pencere ve en altta da buna benzer küçük penceresi olan bir arayüz görmelisiniz:
+1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+3. Sign up for an AWS account (requires credit card information, but you can use it for free)
+4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
+5. In the Cloud 9 dashboard, click *Create environment*
+6. Name it *django-girls*
+7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
+8. Click *Next step*
+9. Click *Create environment*
+
+Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-Arayüzün aşağı kısmı terminaliniz. Bu terminali uzaktaki bir Cloud 9 bilgisayarina komut göndermek için kullanabilirsiniz. Bu pencerenin boyutunu değiştirip büyütebilirsiniz.
+This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
 
 ### Sanal ortam (Virtual environment)
 
-Bir sanal ortam(virtualenv diye de bilinir), üzerinde çalıştığımız proje için kullanışlı kodlarımızı yazabileceğimiz özel bir kutudur. Bunları çeşitli projelerimizi ayrı tutmak için kullanırız, böylece farklı projeler arasında işler karışmaz.
+A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Cloud 9 arayüzünün altındaki terminalinizde şunu çalıştırın:
-
-{% filename %}Cloud 9{% endfilename %}
-
-    sudo apt update
-    sudo apt install python3.6-venv
-    
-
-Eğer hala çalışmıyorsa eğitmeninizden yardım isteyin.
-
-Sonra, bunu çalıştırın:
+Run:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -60,16 +58,16 @@ Sonra, bunu çalıştırın:
     pip install django~={{ book.django_version }}
     
 
-(son satırda bir tilde ve eşitlik işareti kullandığımıza dikkat edin: `~=`).
+(note that on the last line we use a tilde followed by an equal sign: `~=`).
 
 ### GitHub
 
-Bir [Github](https://github.com) hesabı açın.
+Make a [GitHub](https://github.com) account.
 
 ### PythonAnywhere
 
-Django Girls eğitimi, yeni web uygulamanızı güçlendiren ve onu herkesin görebileceği şekilde herkes tarafından erişilebilen bir bilgisayara (sunucu olarak adlandırılır) taşıyan bir kod olan Deployment (Dağıtım) adlı bir bölümü içerir.
+The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
 
-Kılavuzu Chromebook üzerinden kullanırken bu bölüm biraz garip oluyor; zaten internet üzerindeki bir bilgisayar kullanılıyor (laptop dışında). Bununla birlikte, Cloud 9'u çalışma alanımız veya "devam etmekte" olan işlerimizin bulunduğu bir yer olarak, Python Anywhere'i de işlerimizi daha eksiksiz hale getirdiğimizde gösterebileceğimiz bir yer olarak düşündüğümüzde hala kullanışlıdır.
+This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
 
-Bu nedenle, [www.pythonanywhere.com](https://www.pythonanywhere.com) adresinden yeni bir Python Anywhere hesabı açın.
+Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
