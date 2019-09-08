@@ -19,7 +19,8 @@
         "language-picker",
         "sidebar-ad",
         "codeblock-label",
-        "sectionx-ex"
+        "sectionx-ex",
+        "collapsible-menu"
     ],
     "pluginsConfig": {
         "ga": {
