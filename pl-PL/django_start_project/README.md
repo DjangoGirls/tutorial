@@ -87,7 +87,7 @@ Jeżeli chcesz używać innego języka, zmień jego kod, modyfikując następuj�
 {% filename %}mysite/settings.py{% endfilename %}
 
 ```python
-LANGUAGE_CODE = 'de-ch'
+LANGUAGE_CODE = 'pl-pl'
 ```
 
 Musimy także dodać ścieżkę do plików statycznych. (Dowiemy się więcej o plikach statycznych i CSS w dalszej części kursu). Przejdź do samego *końca* pliku i pod linijką zawierającą `STATIC_URL` dodaj nową zmienną `STATIC_ROOT`:
