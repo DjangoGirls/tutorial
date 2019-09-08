@@ -22,7 +22,7 @@ Chcemy otworzyć konsolę Pythona. Wpisz `python`, jeśli pracujesz na Windowsie
     Python 3.6.1 (...)
     Type "help", "copyright", "credits" or "license" for more information.
     >>>
-    
+
 
 ## Twoje pierwsze polecenie w Pythonie!
 
@@ -345,13 +345,13 @@ By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczył
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(lottery)
+>>> print(wyniki)
 [59, 42, 30, 19, 12, 3, 199]
->>> print(lottery[0])
+>>> print(wyniki[0])
 59
->>> lottery.pop(0)
+>>> wyniki.pop(0)
 59
->>> print(lottery)
+>>> print(wyniki)
 [42, 30, 19, 12, 3, 199]
 ```
 
@@ -634,7 +634,7 @@ Na Macu polecenie będzie wyglądać mniej-więcej tak:
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
-    
+
 
 <!--endsec-->
 
@@ -646,7 +646,7 @@ W Linuksie będzie tak (słowo "Desktop" może zostać przetłumaczone na polski
 {% filename %}command-line{% endfilename %}
 
     $ cd ~/Desktop
-    
+
 
 (Pamiętaj, że słowo "Desktop" może zostać przetłumaczone na polski jako "Pulpit"):
 
@@ -659,7 +659,7 @@ W wierszu polecenia w systemie Windows będzie tak:
 {% filename %}command-line{% endfilename %}
 
     > cd %HomePath%\Desktop
-    
+
 
 <!--endsec-->
 
@@ -670,7 +670,7 @@ A w Windows Powershell będzie tak:
 {% filename %}command-line{% endfilename %}
 
     > cd $Home\Desktop
-    
+
 
 <!--endsec-->
 
@@ -682,7 +682,7 @@ Teraz użyj Pythona do uruchomienia kodu z pliku w następujący sposób:
 
     $ python3 python_intro.py
     Hello, Django girls!
-    
+
 
 Uwaga: w Windowsie 'python3' nie będzie rozpoznawany jako polecenie. W takim wypadku użyj 'python' by wykonać ten plik:
 
@@ -716,7 +716,7 @@ Gdybyśmy to teraz zapisały i uruchomiły, pojawiłby się błąd podobny do po
     File "python_intro.py", line 2
              ^
     SyntaxError: unexpected EOF while parsing
-    
+
 
 Python oczekuje od nas dalszych instrukcji, które mają zostać wykonane w przypadku, gdy warunek `3 > 2` okaże się prawdziwy (czyli przyjmie wartość `True`). Sprawmy, żeby Python wypisał na ekranie "To działa!". Zmień kod w pliku **python_intro.py** na poniższy:
 
@@ -759,11 +759,11 @@ Po uruchomieniu wyświetli się:
 
     $ python3 python_intro.py
     5 jest jednak większe od 2
-    
+
 
 Gdyby 2 było większą liczbą niż 5, wtedy zostałaby wykonana druga instrukcja. Zobaczmy, jak działa `elif`:
 
-{% filename %}python_intro.py{% endfilename %} 
+{% filename %}python_intro.py{% endfilename %}
 
 ```python
 name = 'Sonja'
@@ -781,7 +781,7 @@ i uruchommy go:
 
     $ python3 python_intro.py
     Hej Sonja!
-    
+
 
 Widzisz co się tutaj wydarzyło? `elif` pozwala Ci na dodanie dodatkowego warunku, jeśli poprzedni warunek nie został spełniony.
 
@@ -811,7 +811,7 @@ Python zbada każdy warunek i wyświetli:
 
     $ python3 python_intro.py
     "Perfect, I can hear all the details"
-    
+
 
 ## Komentarze
 
@@ -871,13 +871,13 @@ Uruchommy to teraz i sprawdźmy, co się stanie:
     $ python3 python_intro.py
     Hej!
     Jak się masz?
-    
+
 
 Uwaga: Jeżeli to nie zadziała, nie panikuj! Wynik działania pozwoli Ci ustalić dlaczego:
 
 - Jeżeli dostajesz `NameError`, znaczy to że prawdopodobnie niepoprawnie coś wpisałaś, więc powinnaś sprawdzić czy użyłaś tej samej nazwy tworząc funkcję w `def hi():` oraz gdy ją wykonujesz w `hi()`.
-- Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tę samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty. 
-- Jeżeli nie ma żadnego wyniku działania, sprawdź czy ostanie `hi()` *nie* jest przypadkiem wcięte - jeżeli jest, to ta linia stała się również częścią funkcji i nigdy nie zostanie wykonana. 
+- Jeżeli dostajesz `IndentationError`, sprawdź czy obydwie linie z `print` mają tę samą liczbę spacji/tabów na początku linii: Python wymaga, by kod wewnątrz funkcji był odpowiednio wcięty.
+- Jeżeli nie ma żadnego wyniku działania, sprawdź czy ostanie `hi()` *nie* jest przypadkiem wcięte - jeżeli jest, to ta linia stała się również częścią funkcji i nigdy nie zostanie wykonana.
 
 Zbudujmy naszą pierwszą funkcję z parametrami. Posłużymy się wcześniejszym przykładem - funkcją, która wita każdego, kto ją uruchomi, wraz z imieniem:
 
@@ -912,7 +912,7 @@ Pamiętaj: musiałyśmy dodać cztery dodatkowe spacje (razem osiem) przed funkc
     File "python_intro.py", line 10, in <module>
       hi()
     TypeError: hi() missing 1 required positional argument: 'imie'
-    
+
 
 Ups, błąd. Na szczęście Python zwrócił nam dość przydatny komunikat. Mówi nam, że funkcja `hi()` (ta, którą stworzyłyśmy) posiada jeden wymagany argument (zwany `imie`) i że zapomniałyśmy go przekazać przy wywoływaniu funkcji. Naprawmy to na końcu naszego pliku:
 
@@ -928,7 +928,7 @@ I wykonajmy ponownie:
 
     $ python3 python_intro.py
     Hej Ola!
-    
+
 
 A gdybyśmy zmieniły imię?
 
@@ -944,14 +944,14 @@ I wykonajmy:
 
     $ python3 python_intro.py
     Hej Sonja!
-    
+
 
 A jak myślisz - co się stanie, jak wprowadzimy tam inne imię (jeszcze inne niż Ola i Sonja)? Spróbuj i przekonaj się, czy miałaś rację. Powinno się wyświetlić coś takiego:
 
 {% filename %}command-line{% endfilename %}
 
     Hej nieznajoma!
-    
+
 
 Prawda, że fajnie? W ten sposób nie musisz powtarzać się za każdym razem, gdy zechcesz zmienić imię osoby, która ma zostać powitana. To właśnie dlatego funkcje są nam potrzebne - żeby nie powtarzać kodu!
 
@@ -972,7 +972,7 @@ Teraz wywołajmy ten kod:
 
     $ python3 python_intro.py
     Hej Rachel!
-    
+
 
 Gratulacje! Właśnie nauczyłaś się pisać funkcje! :)
 
@@ -1031,7 +1031,7 @@ A gdy go uruchomimy:
     Kolejna dziewczyna
     Hej Ty!
     Kolejna dziewczyna
-    
+
 
 Jak widzisz, cokolwiek umieścisz wewnątrz wyrażenia `for` wraz z wcięciem - zostanie powtórzone dla każdego elementu listy `dziewczyny`.
 
@@ -1053,7 +1053,7 @@ Co wypisze nam na ekranie:
     3
     4
     5
-    
+
 
 `range` jest funkcją, która tworzy listę liczb jedna po drugiej (liczby te podajesz jako parametry).
 
