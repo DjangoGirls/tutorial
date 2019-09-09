@@ -10,7 +10,7 @@ Visual Studio Code is a source code editor developed by Microsoft for Windows, L
 
 ## Gedit
 
-Gedit estas malfermitfonta, libera redaktilo, havebla por ĉiuj operaciumoj.
+Gedit estas malfermitfonta, senpaga redaktilo, havebla por ĉiuj operaciumoj.
 
 [Elŝutu ĝin ĉi tie](https://wiki.gnome.org/Apps/Gedit#Download)
 
