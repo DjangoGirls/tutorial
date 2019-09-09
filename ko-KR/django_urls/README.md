@@ -1,6 +1,6 @@
 # Django URLs
 
-We're about to build our first webpage: a homepage for your blog! But first, let's learn a little bit about Django URLs.
+첫 웹페이지를 만들어 보기로 해요: 여러분의 블로그를 위한 홈페이지요! 그 전에 먼저 장고 URL에 대해서 조금 알아봅시다.
 
 ## URL이란 무엇인가요?
 
@@ -8,7 +8,7 @@ URL은 웹 주소입니다. 웹사이트를 방문할 때마다 URL을 볼 수 �
 
 ![URL](images/url.png)
 
-인터넷에 있는 모든 페이지들은 자신만의 URL을 가지고 있어야 해요. This way your application knows what it should show to a user who opens that URL. In Django, we use something called `URLconf` (URL configuration). URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
+인터넷에 있는 모든 페이지들은 자신만의 URL을 가지고 있어야 해요. This way your application knows what it should show to a user who opens that URL. 장고 에서는 `URLconf` (URL configuration)라는걸 사용합니다. URLconf is a set of patterns that Django will try to match the requested URL to find the correct view.
 
 ## Django에서 URL은 어떻게 작동할까요?
 
