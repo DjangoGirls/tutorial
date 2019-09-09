@@ -10,7 +10,7 @@ Visual Studio Code is a source code editor developed by Microsoft for Windows, L
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit estas malfermitfonta, libera redaktilo, havebla por ĉiuj operaciumoj.
 
 [Elŝutu ĝin ĉi tie](https://wiki.gnome.org/Apps/Gedit#Download)
 
@@ -24,7 +24,7 @@ Sublime Text is a very popular editor with a free evaluation period and it's ava
 
 Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
 
-[Download it here](https://atom.io/)
+[Elŝutu ĝin ĉi tie](https://atom.io/)
 
 ## Kial instalu kodredaktilon?
 
