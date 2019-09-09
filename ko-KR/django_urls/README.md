@@ -31,9 +31,9 @@ urlpatterns = [
 
 As you can see, Django has already put something here for us.
 
-세 개의 따옴표들(`"""`, `'''`) 사이에 있는 줄들은 독스트링(docstring)이라 불려요. 파일의 최상단이나 클래스 혹은 메서드 위에 적어두면, 그것이 어떤 역할을 하는지 알려주는 역할을 합니다. 파이썬은 이 구문을 읽지 않아요.
+세 개의 따옴표들(`"""`, `'''`) 사이에 있는 줄들은 독스트링(docstring)이라 불려요. 파일의 최상단이나 클래스 혹은 메서드 위에 적어두면, 그것이 어떤 역할을 하는지 알려주는 역할을 합니다. 여기있는 내용은 실행되지 않아요.
 
-The admin URL, which you visited in the previous chapter, is already here:
+이전 장에서 봤던 관리자 URL도 여기에 이미 있어요:
 
 {% filename %}mysite/urls.py{% endfilename %}
 
@@ -94,7 +94,7 @@ urlpatterns = [
 
 The last part, `name='post_list'`, is the name of the URL that will be used to identify the view. This can be the same as the name of the view but it can also be something completely different. We will be using the named URLs later in the project, so it is important to name each URL in the app. We should also try to keep the names of URLs unique and easy to remember.
 
-If you try to visit http://127.0.0.1:8000/ now, then you'll find some sort of 'web page not available' message. This is because the server (remember typing `runserver`?) is no longer running. Take a look at your server console window to find out why.
+지금 http://127.0.0.1:8000를 접속 하려 하면 'web page not available(웹 페이지를 사용할 수 없습니다)'와 같은 메세지가 보일 겁니다. 이렇게 뜨는건 지금은 서버가(`runserver`라고 입력했던걸 기억하시나요?) 실행되고 있지 않기 때문이에요. 서버 콘솔을 보고 왜 그런지 이유를 찾아봅시다.
 
 ![Error](images/error1.png)
 
