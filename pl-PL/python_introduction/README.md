@@ -345,13 +345,13 @@ By skasować coś z twojej listy, musisz użyć **indeksów**, których nauczył
 {% filename %}command-line{% endfilename %}
 
 ```python
->>> print(lottery)
+>>> print(wyniki)
 [59, 42, 30, 19, 12, 3, 199]
->>> print(lottery[0])
+>>> print(wyniki[0])
 59
->>> lottery.pop(0)
+>>> wyniki.pop(0)
 59
->>> print(lottery)
+>>> print(wyniki)
 [42, 30, 19, 12, 3, 199]
 ```
 
