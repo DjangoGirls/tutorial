@@ -391,7 +391,7 @@ Done! To be sure it's actually deleted, let's check it:
 
 <!--endsec-->
 
-### Exit
+### Poistu
 
 That's it for now! You can safely close the command line now. Let's do it the hacker way, alright? :)
 
@@ -415,13 +415,13 @@ That's it for now! You can safely close the command line now. Let's do it the ha
 
 Cool, huh? :)
 
-## Summary
+## Yhteenveto
 
 Here is a summary of some useful commands:
 
-| Command (Windows) | Command (Mac OS / Linux) | Kuvaus                     | Example                                            |
+| Command (Windows) | Command (Mac OS / Linux) | Kuvaus                     | Esimerkki                                          |
 | ----------------- | ------------------------ | -------------------------- | -------------------------------------------------- |
-| exit              | exit                     | sulje ikkuna               | **exit**                                           |
+| poistu            | poistu                   | sulje ikkuna               | **poistu**                                         |
 | cd                | cd                       | change directory           | **cd test**                                        |
 | cd                | pwd                      | show the current directory | **cd** (Windows) or **pwd** (Mac OS / Linux)       |
 | dir               | ls                       | list directories/files     | **dir**                                            |
@@ -436,6 +436,6 @@ These are just a very few of the commands you can run in your command line, but 
 
 If you're curious, [ss64.com](http://ss64.com) contains a complete reference of commands for all operating systems.
 
-## Ready?
+## Valmis?
 
 Let's dive into Python!
