@@ -8,7 +8,7 @@
   * [Virtual Environment](installation/README.md#virtual-environment)
   * [Django](installation/README.md#installing-django)
   * [Git](installation/README.md#install-git)
-  * [Github](installation/README.md#create-a-github-account)
+  * [GitHub](installation/README.md#create-a-github-account)
   * [PythonAnywhere](installation/README.md#create-a-pythonanywhere-account)
 * [التثبيت (كروم بوك)](chromebook_setup/README.md)
 * [كيف تعمل الإنترنت](how_the_internet_works/README.md)
