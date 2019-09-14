@@ -25,11 +25,11 @@ Chromebookを使わない場合は、このセクションを飛ばして、[Pyt
 現在、Cloud 9 はAWSのアカウント作成とクレジットカード情報の登録が必須になっています。
 
 1. [Chrome ウェブストア](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)から、Cloud 9 をインストールしてください。
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
+2. [c9.io](https://c9.io)に行って、*AWS Cloud9で開発をはじめる*をクリックしてください。
+3. AWSアカウントにサインアップしてください。（クレジットカード情報の登録が必要ですが、このチュートリアルは無料で進めることができます。）
+4. AWSのダッシュボードを開き、検索ボックスで*Cloud9*と入力し選択してください。
+5. Cloud9のダッシュボードで、*環境の作成*を選択します。
+6. 名前は*django-girls*としておきましょう。
 7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
 8. Click *Next step*
 9. Click *Create environment*
