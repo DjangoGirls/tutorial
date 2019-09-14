@@ -718,7 +718,7 @@ if 3 > 2:
     SyntaxError: unexpected EOF while parsing
     
 
-条件式 `3 > 2` が true（またはその場合は `True`）の時、どのように処理をすべきかが記述されていませんね。 では、Python に “It works!” と出力してもらいましょう。 Change your code in your **python_intro.py** file to this:
+条件式 `3 > 2` が true（またはその場合は `True`）の時、どのように処理をすべきかが記述されていませんね。 では、Python に “It works!” と出力してもらいましょう。 **python_intro.py **ファイルの中身を、次のとおりに書き換えてください。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -727,7 +727,7 @@ if 3 > 2:
     print('It works!')
 ```
 
-Notice how we've indented the next line of code by 4 spaces? We need to do this so Python knows what code to run if the result is true. You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+２行目をスペース４つでインデントしていることに気が付きましたか？ 条件式が True の時、どのコードを実行するかPythonに知らせる必要があります。 You can do one space, but nearly all Python programmers do 4 to make things look neat. A single Tab will also count as 4 spaces as long as your text editor is set to do so. When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
 
 Save it and give it another run:
 
