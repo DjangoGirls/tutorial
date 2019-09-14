@@ -63,13 +63,13 @@ data-collapse=true ces-->
     $ grep ^NAME= /etc/os-release
     
 
-Afterwards, depending on the result, follow one of the following installation guides below this section.
+表示されたディストリビューション名に従って、以下のインストール方法を実行してください。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-Type this command into your console:
+下のコマンドをコンソールに入力します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -81,21 +81,21 @@ Type this command into your console:
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-Use this command in your console:
+下のコマンドをコンソールに入力します。
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-If you're on older Fedora versions you might get an error that the command `dnf` is not found. In that case, you need to use `yum` instead.
+Fedoraのバージョンが古い場合、 `dnf` コマンドが見つからないというエラーが出るかもしれません。そんなときは変わりに `yum` コマンドを使ってください。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-Use this command in your console:
+下のコマンドをコンソールに入力します。
 
 {% filename %}command-line{% endfilename %}
 
