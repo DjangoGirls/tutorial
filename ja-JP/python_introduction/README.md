@@ -1055,16 +1055,16 @@ for i in range(1, 6):
     5
     
 
-`range` is a function that creates a list of numbers following one after the other (these numbers are provided by you as parameters).
+`range` 関数は、連続する数値を要素とするリストを作ります。引数に指定した開始の数値から終了の数値までのリストです。
 
-2つ目の引数（終了の数値）は、リストに含まれないことに注意してください。`range(1, 6)`は1から5がカウントされますが、6は含まれません。 That is because "range" is half-open, and by that we mean it includes the first value, but not the last.
+2つ目の引数（終了の数値）は、リストに含まれないことに注意してください。（`range(1, 6)`は1から5がカウントされますが、6は含まれません。） 開始に指定した数値は含まれて、終了に指定した値は含まれないのです。
 
 ## まとめ
 
 以上です！**おめでとう！頑張りました！** これは簡単ではなかったと思います。自分を褒めてあげてくださいね。ここまで進めることができたのは、本当にすごいことです！
 
-For official and full python tutorial visit https://docs.python.org/3/tutorial/. This will give you a more thorough and complete study of the language. Cheers :)
+公式の完全なPythonチュートリアルは https://docs.python.org/3/tutorial/ にあります。これによって言語のより徹底的で完全な学習ができるでしょう。ばんざい！
 
-You might want to briefly do something else – stretch, walk around for a bit, rest your eyes – before going on to the next chapter. :)
+次のチャプターに進む前に、少し気晴らしに、ストレッチやお散歩をして、目や身体を休ませてあげてくださいね。
 
 ![Cupcake](images/cupcake.png)
