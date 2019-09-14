@@ -4,13 +4,13 @@
 
 ## Visual Studio Code
 
-Visual Studio Codeは、マイクロソフトがWindowsとLinuxとmacOS向けに開発したソースコードエディタです。 It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+Visual Studio Codeは、マイクロソフトがWindowsとLinuxとmacOS向けに開発したソースコードエディタです。 デバッグ、シンタックスハイライト、コード補完、スニペット、リファクタリングなど多くの機能があります。
 
 [ダウンロード](https://code.visualstudio.com/download)
 
 ## Gedit
 
-Gedit is an open-source, free editor, available for all operating systems.
+Gedit は、オープンソースの無料エディタで、全てのOSで使うことができます。
 
 [ダウンロード](https://wiki.gnome.org/Apps/Gedit#Download)
 
@@ -26,7 +26,7 @@ Atom is another popular editor. It's free, open-source and available for Windows
 
 [Download it here](https://atom.io/)
 
-## Why are we installing a code editor?
+## なんでコードエディタをインストールするの？
 
 You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
 
