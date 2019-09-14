@@ -87,7 +87,7 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
 
 ## GitHubにコードをプッシュする
 
-Go to [GitHub.com](https://www.github.com) and sign up for a new, free user account. (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+[GitHub.com](https://www.github.com)にアクセスし、Sign upを押して無料の新規アカウントを作成してください。 (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
 
 そして、新しいリポジトリに "my-first-blog"の名前で新しいリポジトリを作成します。 "READMEで初期化する"チェックボックスをオフのままにし、.gitignoreオプションを空白にして（手動で行っています）、ライセンスをNoneのままにしておきます。
 
@@ -109,7 +109,7 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
     $ git push -u origin master
     
 
-When you push to GitHub, you'll be asked for your GitHub username and password (either right there in the command-line window or in a pop-up window), and after entering credentials you should see something like this:
+GitHubにpushしたら、GitHubのユーザー名とパスワードと聞かれます（コマンドライン上かポップアップウィンドウにて）。認証情報を入力したらこのようなものが表示されます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -155,13 +155,13 @@ GitHub からアプリを自動的に構成するためのヘルパーを実行�
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ pa_autoconfigure_django.py --python=3.6 https://github.com/<your-github-username>/my-first-blog.git
+    $ pa_autoconfigure_django.py https://github.com/<your-github-username>/my-first-blog.git
     
 
 実行しているところを見れば、何をしているのかわかるでしょう。
 
 - GitHubからコードをダウンロードする
-- Creating a virtualenv on PythonAnywhere, just like the one on your own computer
+- ちょうどあなたのPC上でやったように、PythonAnywhere上にvirtualenvを作成する。
 - 一部のデプロイメント設定で設定ファイルを更新する
 - `manage.py migrate`コマンドを使ってPythonAnywhere上のデータベースをセットアップする
 - 静的ファイルの設定（これについては後で学習します）
@@ -183,10 +183,10 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
     (ola.pythonanywhere.com) $ ls
-    blog  db.sqlite3  manage.py  mysite requirements.txt static
+    blog db.sqlite3 manage.py mysite requirements.txt static
     (ola.pythonanywhere.com) $ ls blog/
-    __init__.py  __pycache__  admin.py  apps.py  migrations  models.py
-    tests.py  views.py
+    __init__.py __pycache__ admin.py apps.py migrations models.pytests.py static
+    templates views.py  
     
 
 また、「ファイル」ページに移動し、PythonAnywhereに組み込まれているファイルブラウザを使用して閲覧することもできます。 (Consoleページから他のPythonAnywhereページには右上のメニューボタンからいけます。 一度いずれかのページに移動したら、他ページへのリンクはトップのあたりにあります。)
@@ -214,7 +214,7 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 
 # あなたのサイトをチェック！
 
-サイトのデフォルトページでは、ローカルコンピュータと同じように「It worked！」と表示されます。 URLの最後に`/admin/`を追加すると、管理サイトに移動します。 Log in with the username and password, and you'll see you can add new Posts on the server -- remember, the posts from your local test database were not sent to your live blog.
+サイトのデフォルトページでは、ローカルコンピュータと同じように「It worked！」と表示されます。 URLの最後に`/admin/`を追加すると、管理サイトに移動します。 ユーザー名とパスワードを入力したら、サーバーに新規投稿を追加できることがわかります。本番環境のブログではローカルのテスト用データベースの投稿は送られていないことも忘れずに。
 
 いくつかの投稿を作成したら、ローカル環境（PythonAnywhereではなく）に戻ることができます。 ここから、変更を加えるためにはあなたのローカル環境で作業する必要があります。 これがWeb開発の一般的なワークフローです。ローカルで変更し、それらの変更をGitHubにプッシュし、それからその変更を公開しているWebサーバーにプルしてきます。 これにより、公開しているWebサイトを壊すことなく作業したり試したりできます。 とってもクールでしょ？
 
