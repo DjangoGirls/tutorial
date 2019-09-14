@@ -684,7 +684,7 @@ WindowsのPowerShellでは、次のようになります。
     Hello, Django girls!
     
 
-Note: on Windows 'python3' is not recognized as a command. Instead, use 'python' to execute the file:
+注：Windowsでは「python3」はコマンドとして認識されません。代わりに「python」とタイプしてファイルを実行します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -692,7 +692,7 @@ Note: on Windows 'python3' is not recognized as a command. Instead, use 'python'
 > python python_intro.py
 ```
 
-Alright! You just ran your first Python program that was saved to a file. Feel awesome?
+できました！これで、あなたはファイルに保存されたPythonプログラムを実行できました。すばらしいですね。
 
 You can now move on to an essential tool in programming:
 
