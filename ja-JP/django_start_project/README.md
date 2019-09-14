@@ -80,7 +80,7 @@ django-admin.py は、必要なディレクトリとファイルを作成する�
 TIME_ZONE = 'Asia/Tokyo'
 ```
 
-言語コードは、あなたの利用する言語を設定する必要があります。 英語の場合は`en`、ドイツ語の場合は`de`、国コードの場合は`de`はドイツ、`ch`はスイスです。 If English is not your native language, you can add this to change the default buttons and notifications from Django to be in your language. ですのでたとえば「Cancel」ボタンがここで定義した言語に翻訳されます。 [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+言語コードは、あなたの利用する言語を設定する必要があります。 英語の場合は`en`、ドイツ語の場合は`de`、国コードの場合は`de`はドイツ、`ch`はスイスです。 あなたの母国語が英語でない場合、これを追加すると、Djangoのデフォルトのボタンや通知が設定した言語に変更されます。 ですのでたとえば「Cancel」ボタンがここで定義した言語に翻訳されます。 [Djangoは多くの言語に対応しています。](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
 
 別の言語を使用する場合は、次の行を変更して言語コードを変更します。
 
