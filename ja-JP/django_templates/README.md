@@ -99,10 +99,10 @@ post変数がさっきと違って、`{{ post.title }}` や `{{ post.text }}` �
 
 （忘れずに `<your-pythonanywhere-domain>` を自分のPythonAnywhereのアカウント名に置き換えましょう、<> は不要です。）
 
-* 最後に[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。 (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
+* 最後に[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。 （コンソールから他のPythonAnywhereページにアクセスするには、右上のメニューボタンを使います。）更新された内容が、 https://subdomain.pythonanywhere.com に反映されているはずです。ブラウザで確認してみましょう！ PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
 
-頑張りましたね！ Now go ahead and try adding a new post in your Django admin (remember to add published_date!) Make sure you are in the Django admin for your pythonanywhere site, https://subdomain.pythonanywhere.com/admin. Then refresh your page to see if the post appears there.
+頑張りましたね！ さぁ、ここまでできたら、Django 管理画面から新しい投稿を追加してみましょう。（published_date 公開日の設定を忘れずに！）投稿を追加する時、PythonAnyweherのサイトの管理画面（https://subdomain.pythonanywhere.com/admin）であることを確認してください 。できたら、リロードして投稿したものが表示されるか見てみましょう。
 
-Works like a charm? We're proud! Step away from your computer for a bit – you have earned a break. :)
+うまく動きましたか？ここまでよく頑張りましたね！少しパソコンから離れて、休憩をとりましょう。^_^
 
 ![Figure 13.4](images/donut.png)
