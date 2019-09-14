@@ -1,12 +1,12 @@
 PythonAnywhere はクラウド上のサーバーでPythonのコードを走らせるためのサービスです。私たちはこれを私たちのサイトをホスティングして、インターネット上で動かし続けるために使います。
 
-We will be hosting the blog we're building on PythonAnywhere. Sign up for a "Beginner" account on PythonAnywhere (the free tier is fine, you don't need a credit card).
+今までの章で作ったブログをPythonAnywhere上にホスティングします。PythonAnywhereの「Beginner」アカウントを作りましょう(アカウントは無料枠で大丈夫です。クレジットカードは必要ありません)。
 
 * [https://www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
 ![The PythonAnywhere signup page showing button to create a free 'Beginner' account](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **Note** When choosing your username here, bear in mind that your blog's URL will take the form `yourusername.pythonanywhere.com`, so choose either your own nickname or a name for what your blog is all about. Also, be sure to remember your password (add it to your password manager, if you use one).
+> **注意** ユーザー名は `yourusername.pythonanywhere.com` というようにブログのURLに反映されます。なので、あなたのニックネームかブログの名前をユーザー名とするようにしてください。 Also, be sure to remember your password (add it to your password manager, if you use one).
 
 ## PythonAnywhere APIトークンの作成
 
