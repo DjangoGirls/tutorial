@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-見てのとおり、`post_list` という名前の `ビュー` をルートURLに割り当てています。 This URL pattern will match an empty string and the Django URL resolver will ignore the domain name (i.e., http://127.0.0.1:8000/) that prefixes the full URL path. このパターンは誰かがあなたのWebサイトの 'http://127.0.0.1:8000/' というアドレスにアクセスしてきたら `views.post_list` が正しい行き先だということをDjangoに伝えます。
+見てのとおり、`post_list` という名前の `ビュー` をルートURLに割り当てています。 このURLパターンは空の文字列に一致し、Django URLリゾルバーはURLのフルパスの前半にくっつくドメイン名（つまり、http://127.0.0.1:8000/ の部分）を無視します。 このパターンは誰かがあなたのWebサイトの 'http://127.0.0.1:8000/' というアドレスにアクセスしてきたら `views.post_list` が正しい行き先だということをDjangoに伝えます。
 
 最後の `name='post_list'` は、ビューを識別するために使われるURL の名前です。 これはビューと同じ名前にすることもできますが、全然別の名前にすることもできます。 プロジェクトでは名前づけされたURLを後で使うことになるので、アプリのそれぞれのURLに名前をつけておくのは重要です。また、URLの名前はユニークで覚えやすいものにしておきましょう。
 
@@ -98,6 +98,6 @@ urlpatterns = [
 
 ![エラー](images/error1.png)
 
-エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' という属性(attribute)がない**ことを知らせてくれています。 これは *ビュー* の名前で、Djangoが探して使おうとしましたが、私たちはこれをまだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 心配しなくて大丈夫です。ちゃんとできますから。 別のエラーメッセージが表示された場合は、Webサーバーを再起動してみてください。 To do that, in the console window that is running the web server, stop it by pressing Ctrl+C (the Control and C keys together). On Windows, you might have to press Ctrl+Break. Then you need to restart the web server by running a `python manage.py runserver` command.
+エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' という属性(attribute)がない**ことを知らせてくれています。 これは *ビュー* の名前で、Djangoが探して使おうとしましたが、私たちはこれをまだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 心配しなくて大丈夫です。ちゃんとできますから。 別のエラーメッセージが表示された場合は、Webサーバーを再起動してみてください。 これを行うには、Webサーバーを実行しているコンソールウィンドウで、Ctrl + C（CtrlキーとCキーを同時に押す）で停止します。 Windowsの場合、Ctrl + Breakかもしれません。 その後、`python manage.py runserver`を実行してWebサーバーを再起動します。
 
 > Django URLconfについてもっと知りたい場合は、公式のドキュメントを見て下さい。 https://docs.djangoproject.com/ja/2.2/topics/http/urls/
