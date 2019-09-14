@@ -738,11 +738,11 @@ $ python3 python_intro.py
 It works!
 ```
 
-Note: Remember that on Windows, 'python3' is not recognized as a command. From now on, replace 'python3' with 'python' to execute the file.
+注：Windowsでは「python3」はコマンドとして認識されないことを思い出してください。これから先、ファイルを実行するときは「python3」の代わりに「python」とタイプしてくださいね。
 
 ### 条件がTrueじゃないときは？
 
-In previous examples, code was executed only when the conditions were True. But Python also has `elif` and `else` statements:
+前述の例では、if文の条件式が True の時だけコードが実行されました。Pythonは、`elif` や `else` といった記述もできます。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -753,7 +753,7 @@ else:
     print('5 is not greater than 2')
 ```
 
-When this is run it will print out:
+これを実行した場合、次のように出力されます。
 
 {% filename %}command-line{% endfilename %}
 
@@ -761,7 +761,7 @@ When this is run it will print out:
     5 is indeed greater than 2
     
 
-If 2 were a greater number than 5, then the second command would be executed. Let's see how `elif` works:
+もし２が５より大きかったら、４行目のコマンドが実行されます。では、`elif` はどうなるのでしょうか？
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -775,7 +775,7 @@ else:
     print('Hey anonymous!')
 ```
 
-and executed:
+実行すると...
 
 {% filename %}command-line{% endfilename %}
 
@@ -783,9 +783,9 @@ and executed:
     Hey Sonja!
     
 
-See what happened there? `elif` lets you add extra conditions that run if the previous conditions fail.
+どうなったかわかりましたか？ `elif` を追加する事で、前に書いた条件が True でない場合に実行する条件を追加することができます。
 
-You can add as many `elif` statements as you like after your initial `if` statement. For example:
+最初の `if` の条件分岐の後に、好きなだけ `elif` を追加する事ができます。例えば...
 
 {% filename %}python_intro.py{% endfilename %}
 
