@@ -862,9 +862,9 @@ hi()
 
 よし！あなたの最初の関数を実行する準備ができましたね！
 
-ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 これは、Pythonがファイルを上から下へ実行していくからです。 So in order to use our function, we have to re-write it at the bottom.
+ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 これは、Pythonがファイルを上から下へ実行していくからです。 なので、関数を使用するには、一番下に書き直す必要があります。
 
-Let's run this now and see what happens:
+では実行して、どうなるか見てみましょう。
 
 {% filename %}command-line{% endfilename %}
 
@@ -873,13 +873,13 @@ Let's run this now and see what happens:
     How are you?
     
 
-Note: if it didn't work, don't panic! The output will help you to figure why:
+注：思ったように動かなくても慌てないで！画面の出力は動かない理由をつかむのに役立ちます。
 
 - `NameError` が出ている場合、おそらく何かミスタイプがあります。同じ名前を使っているかチェックしましょう。関数を定義するときは `def hi():` としていますか？関数を実行するときは `hi()` としていますか？
 - `IndentationError` が出ている場合、`print` 関数の2行が同じ数のスペースでインデントされているかチェックしましょう。関数の中のコードは同じ数のスベースでインデントされているとPythonは考えます。
 - 画面に何も表示されていない場合、最後の `hi()` がインデントされて *いない* かチェックしましょう - もしインデントされていたら、関数の一部になってしまっています。関数が呼び出されていません。
 
-Let's build our first function with parameters. We will change the previous example – a function that says 'hi' to the person running it – with a name:
+次に引数をつかった関数を作ってみましょう。先ほどの例を変更します。'hi' という挨拶をする関数に、挨拶をする人の名前をいれてみます。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -887,7 +887,7 @@ Let's build our first function with parameters. We will change the previous exam
 def hi(name):
 ```
 
-As you can see, we now gave our function a parameter that we called `name`:
+このように、関数に `name` という引数を与えます。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -903,7 +903,7 @@ def hi(name):
 hi()
 ```
 
-Remember: The `print` function is indented four spaces within the `if` statement. This is because the function runs when the condition is met. Let's see how it works now:
+要確認：`print` 関数は、` if `文の中で4つのスペースでインデントします。 これは、条件が満たされたときに関数が実行されるためです。 それが今どのように動くか見てみましょう。
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -914,7 +914,7 @@ Remember: The `print` function is indented four spaces within the `if` statement
     TypeError: hi() missing 1 required positional argument: 'name'
     
 
-Oops, an error. Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
+おっと、エラーがでてしまいました。 Luckily, Python gives us a pretty useful error message. It tells us that the function `hi()` (the one we defined) has one required argument (called `name`) and that we forgot to pass it when calling the function. Let's fix it at the bottom of the file:
 
 {% filename %}python_intro.py{% endfilename %}
 
