@@ -18,7 +18,7 @@ https://www.python.org/downloads/windows/ からWindows版のPythonをダウン�
 
 インストールの途中で、「Setup」というタイトルのウィンドウがでてきたら注意してください。 下にあるとおり、「Add Python 3.6 to PATH」か「Add Python to your environment variables」をチェックしてから「Install Now」をクリックしてください (バージョンが違うと表示が違うこともあります)。
 
-![Don't forget to add Python to the Path](../python_installation/images/python-installation-options.png)
+![Pythonにパスを通すのを忘れないようにしてください。](../python_installation/images/python-installation-options.png)
 
 インストールが終わったら、ダイアログボックスが出てきます。ボックス内のリンクを開くと、インストールしたPythonのバージョンを説明したページに行けます。 ダイアログは閉じてしまいましょう。Pythonの使い方はこのチュートリアルでたっぷり勉強します！
 
@@ -114,8 +114,8 @@ data-collapse=true ces-->
 
 バージョンはあなたがインストールされたものが表示されます。なのでPython 3.6.1 と表示されないかもしれません。
 
-**注意:** Windowsで `python3` を実行して、コマンドが見つからないとエラーが出た場合、代わりに `python` (`3` をコマンドに入れていません) と入れてみてください。3.4.0かそれ以上のPythonがインストールされていれば大丈夫です。 If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**注意:** Windowsで `python3` を実行して、コマンドが見つからないとエラーが出た場合、代わりに `python` (`3` をコマンドに入れていません) と入れてみてください。3.4.0かそれ以上のPythonがインストールされていれば大丈夫です。 どちらのコマンドもうまく動かない場合は、新しいコマンドプロンプトを開いて同じことを試してください。Pythonのインストール前にコマンドプロンプトがつかっていて、それが開きっぱなしだとこういうことが起きます。
 
 * * *
 
-If you have any doubts, or if something went wrong and you have no idea what to do next, please ask your coach! Sometimes things don't go smoothly and it's better to ask for help from someone with more experience.
+わからないことがあったり、うまく行かなくてどうしたらいいかわからないときは、コーチに質問してください! うまく行かないこともあります。そういうときは経験豊かな人に聞くといいですよ。
