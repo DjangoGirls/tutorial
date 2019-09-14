@@ -648,13 +648,13 @@ Linuxでは、次のようになります。
     $ cd ~/Desktop
     
 
-(Remember that the word "Desktop" might be translated to your local language.)
+（「Desktop」という単語はあなたの地域の言語に翻訳される場合があります。）
 
 <!--endsec-->
 
 <!--sec data-title="Change directory: Windows Command Prompt" data-id="python_windows" data-collapse=true ces-->
 
-On Windows Command Prompt, it will be like this:
+Windowsのコマンドプロンプトでは、次のようになります。
 
 {% filename %}command-line{% endfilename %}
 
@@ -665,7 +665,7 @@ On Windows Command Prompt, it will be like this:
 
 <!--sec data-title="Change directory: Windows Powershell" data-id="python_windowsPSH" data-collapse=true ces-->
 
-And on Windows Powershell, it will be like this:
+WindowsのPowerShellでは、次のようになります。
 
 {% filename %}command-line{% endfilename %}
 
@@ -674,7 +674,7 @@ And on Windows Powershell, it will be like this:
 
 <!--endsec-->
 
-If you get stuck, ask for help. That's exactly what the coaches are here for!
+うまくできない時は、質問してください。まさにそのためにコーチがここにいるんです！
 
 Now use Python to execute the code in the file like this:
 
