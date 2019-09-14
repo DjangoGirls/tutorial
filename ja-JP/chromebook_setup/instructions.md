@@ -1,4 +1,4 @@
-Chromebookをお持ちでない場合は、[このセクションをスキップ](http://tutorial.djangogirls.org/en/installation/#install-python) できます。 もし利用している場合は、普通のインストールの作業とは少し異なります。 インストール手順の残りの部分は無視できます。
+Chromebookを使わない場合は、このセクションを飛ばして、[Pythonのインストール](http://tutorial.djangogirls.org/en/installation/#install-python) に進んでください。 もし利用している場合は、普通のインストールの作業とは少し異なります。 インストール手順の残りの部分は無視できます。
 
 ### クラウドIDE (PaizaCloud Cloud IDE, AWS Cloud9)
 
@@ -8,7 +8,7 @@ Chromebookをお持ちでない場合は、[このセクションをスキップ
 
 1. [PaizaCloud Cloud IDE](https://paiza.cloud/)へ。
 2. アカウントにサインアップします
-3. Click *New Server* and choose the Django app
+3. *新規サーバ作成*をクリックして、Djangoを選択してください。
 4. (ウィンドウの左側にある) [ターミナル] をクリックします。
 
 さて、左側にサイドバーとボタンがついた画面が見えていると思います。 下記のようなプロンプトが表示されたターミナルウィンドウを開くために、“Terminal”ボタンをクリックしてください。
@@ -22,9 +22,9 @@ Chromebookをお持ちでない場合は、[このセクションをスキップ
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+現在、Cloud 9 はAWSのアカウント作成とクレジットカード情報の登録が必須になっています。
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+1. [Chrome ウェブストア](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)から、Cloud 9 をインストールしてください。
 2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
 3. Sign up for an AWS account (requires credit card information, but you can use it for free)
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
@@ -47,7 +47,7 @@ This bottom area is your terminal. You can use the terminal to send instructions
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Run:
+実行：
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -62,7 +62,7 @@ Run:
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+[GitHub](https://github.com)アカウントを作成してください。
 
 ### PythonAnywhere
 
