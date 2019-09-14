@@ -48,7 +48,7 @@ https://www.python.org/downloads/release/python-361/ からPythonインストー
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-あなたのMacにはすでにPythonがインストールされているかもしれません。インストールされてるかどうか、どのバージョンが入っているのか確かめるにはコンソールを開いて下のコマンドを入力してください。
+すでにPythonがインストールされているかもしれません。インストールされてるかどうか、どのバージョンが入っているのか確かめるにはコンソールを開いて下のコマンドを入力してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -56,7 +56,7 @@ data-collapse=true ces-->
     Python 3.6.5
     
 
-If you have a different version of Python installed, at least 3.4.0 (e.g. 3.6.0), then you don't have to upgrade. If you don't have Python installed, or if you want a different version, first check what Linux distribution you are using with the following command:
+表示されたバージョンが3.4.0以降(例えば 3.6.0など)のものであれば大丈夫です。アップグレードの必要はありません。 Pythonがインストールされていなかったり、違うバージョンをインストールしたい場合は、まずパソコンのLinuxディストリビューションがなにか確かめてから、下のコマンドを実行してください。
 
 {% filename %}command-line{% endfilename %}
 
