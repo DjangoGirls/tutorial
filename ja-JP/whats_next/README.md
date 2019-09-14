@@ -10,7 +10,7 @@
 
 ### さらにオススメの資料はありますか？
 
-あります！ There are a *lot* of resources online for learning all kinds of programming skills – it can be pretty daunting to work out where to go next, but we've got you covered. Whatever your interests were before you came to Django Girls, and whatever interests you've developed throughout the tutorial, here are some free resources (or resources with large free components) you can use to get to where you want to be.
+あります！ 様々なプログラミングスキルを学ぶためのリソースが、*たくさん*あります。沢山ありすぎて何を次にやろうか迷うかもしれませんので、お勧めを示しておきます。 Django Girlsのチュートリアルを始める時にあなたが何に興味を持っていたか、あるいは、チュートリアルを終えた今何に興味があるか、によって、気になるものに挑戦してください。ここにある多くは無料のリソースです（あるいは、無料で多くのことを学べるものです）。
 
 #### Dajngo
 
