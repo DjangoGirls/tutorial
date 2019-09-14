@@ -694,13 +694,13 @@ WindowsのPowerShellでは、次のようになります。
 
 できました！これで、あなたはファイルに保存されたPythonプログラムを実行できました。すばらしいですね。
 
-You can now move on to an essential tool in programming:
+では、ここからプログラミングに不可欠のツールを学んでいきましょう。
 
 ## If … elif … else
 
-Lots of things in code should be executed only when given conditions are met. That's why Python has something called **if statements**.
+ある条件が成立するときに処理を行いたいという時に用いるのが、**if 条件式** です。
 
-Replace the code in your **python_intro.py** file with this:
+**python_intro.py** ファイルのコードを次のように書き換えてください。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -708,7 +708,7 @@ Replace the code in your **python_intro.py** file with this:
 if 3 > 2:
 ```
 
-If we were to save and run this, we'd see an error like this:
+これを保存して実行すると、次のようなエラーがでます。
 
 {% filename %}{{ warning_icon }} command-line{% endfilename %}
 
@@ -718,7 +718,7 @@ If we were to save and run this, we'd see an error like this:
     SyntaxError: unexpected EOF while parsing
     
 
-Python expects us to give further instructions to it which are executed if the condition `3 > 2` turns out to be true (or `True` for that matter). Let’s try to make Python print “It works!”. Change your code in your **python_intro.py** file to this:
+条件式 `3 > 2` が true（またはその場合は `True`）の時、どのように処理をすべきかが記述されていませんね。 では、Python に “It works!” と出力してもらいましょう。 Change your code in your **python_intro.py** file to this:
 
 {% filename %}python_intro.py{% endfilename %}
 
