@@ -30,7 +30,7 @@
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – 最初のエクササイズは無料です。
 - [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
 - [edX](https://www.edx.org/course?search_query=python) – ほとんどのコースを無料で視聴できますが修了証書や単位が欲しい場合有料になります。
-- [Coursera's Python specialization](https://www.coursera.org/specializations/python) – some video lectures can be audited for free and you can earn a Coursera Certificate by taking these courses
+- [Courseraの「みんなのためのPython専門講座」](https://www.coursera.org/specializations/python)　オンライン動画の講義を無料で見ることができ、コースの修了証を取得することができます。
 - [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
 
 #### データ操作
