@@ -676,7 +676,7 @@ WindowsのPowerShellでは、次のようになります。
 
 うまくできない時は、質問してください。まさにそのためにコーチがここにいるんです！
 
-Now use Python to execute the code in the file like this:
+ではPythonを使用して、ファイル内のコードを次のように実行します。
 
 {% filename %}command-line{% endfilename %}
 
