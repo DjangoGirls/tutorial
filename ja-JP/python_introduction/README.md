@@ -727,9 +727,9 @@ if 3 > 2:
     print('It works!')
 ```
 
-２行目をスペース４つでインデントしていることに気が付きましたか？ 条件式が True の時、どのコードを実行するかPythonに知らせる必要があります。 スペース１つでもできますが、ほぼ全員のPythonプログラマーはスペース４つとしています。 テキストエディタの設定により、タブ１つもスペース４つと同じになります。 When you made your choice, don't change it! If you already indented with 4 spaces, make any future indentation with 4 spaces, too - otherwise you may run into problems.
+２行目をスペース４つでインデントしていることに気が付きましたか？ 条件式が True の時、どのコードを実行するかPythonに知らせる必要があります。 スペース１つでもできますが、ほぼ全員のPythonプログラマーはスペース４つとしています。 テキストエディタの設定により、タブ１つもスペース４つと同じになります。 タブかスペースか決めたら、変えないようにしましょう。 例えばスペース４つでインデントにしたら、この後もスペース４つでインデントするようにしましょう。インデントにスペースとタブを混ぜてしまうと問題が発生してしまうことがあります。
 
-Save it and give it another run:
+保存して、もう一度実行してみましょう。
 
 {% filename %}command-line{% endfilename %}
 
