@@ -955,7 +955,7 @@ hi("Sonja")
 
 すごいでしょ？ 挨拶をする人の名前を変えるたびに繰り返しコードを書く必要がなくなりました。 これが関数を作る理由です。何度も繰り返してコードを書く必要はありません！
 
-Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
+もっとスマートにしてみましょう。名前が 2つ以上あると、それぞれの名前に対して条件を書くは大変じゃないですか？　ファイルの内容を下記のように書き換えてください。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -980,11 +980,11 @@ hi("Rachel")
 
 > 家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。[Python Basics: For Loop](https://www.youtube.com/watch?v=aEA6Rc86HF0)
 
-This is the last part already. That was quick, right? :)
+さぁ、もう最後のパートですよ。あっという間ですね。 :)
 
-Programmers don't like to repeat themselves. Programming is all about automating things, so we don't want to greet every person by their name manually, right? That's where loops come in handy.
+先ほどお話ししたとおり、プログラマーはめんどくさがりで、同じことを繰り返すことは好きではありません。プログラミングとは物事を自動化するということです。私達はすべての人に対して自動的にそれぞれ名前をつけて挨拶をしたくないですよね？こういう時にループが便利です。
 
-Still remember lists? Let's do a list of girls:
+リストを覚えていますか？女の子の名前をリストにしてみましょう:
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -992,7 +992,7 @@ Still remember lists? Let's do a list of girls:
 girls = ['Rachel', 'Monica', 'Phoebe', 'Ola', 'You']
 ```
 
-We want to greet all of them by their name. We have the `hi` function to do that, so let's use it in a loop:
+名前を呼んで、全員にあいさつをしてみましょう。` hi `関数が使えますね。ループの中でつかいましょう。:
 
 {% filename %}python_intro.py{% endfilename %}
 
