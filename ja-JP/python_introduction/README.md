@@ -953,7 +953,7 @@ hi("Sonja")
     Hi anonymous!
     
 
-すごいでしょ？ This way you don't have to repeat yourself every time you want to change the name of the person the function is supposed to greet. And that's exactly why we need functions – you never want to repeat your code!
+すごいでしょ？ 挨拶をする人の名前を変えるたびに繰り返しコードを書く必要がなくなりました。 これが関数を作る理由です。何度も繰り返してコードを書く必要はありません！
 
 Let's do something smarter – there are more names than two, and writing a condition for each would be hard, right? Replace the content of your file with the following:
 
@@ -966,7 +966,7 @@ def hi(name):
 hi("Rachel")
 ```
 
-Let's call the code now:
+では、実行してみましょう:
 
 {% filename %}command-line{% endfilename %}
 
@@ -974,7 +974,7 @@ Let's call the code now:
     Hi Rachel!
     
 
-Congratulations! You just learned how to write functions! :)
+おめでとうございます！関数の書き方を学びましたね！:)
 
 ## ループ
 
