@@ -848,7 +848,7 @@ if volume < 20 or volume > 80:
 
 Pythonには `len()` のように関数があったのを覚えていますか？ ここでは、自分で関数を作る方法を学びます。
 
-A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
+関数は、Pythonが実行する一連の命令をひとまとめにしたものです。 Pythonでは、関数は `def` というキーワードからはじまり、引数を含むことができます。 やってみましょう。 **python_intro.py** の中身を下記のコードに置き換えてください。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -860,9 +860,9 @@ def hi():
 hi()
 ```
 
-Okay, our first function is ready!
+よし！あなたの最初の関数を実行する準備ができましたね！
 
-You may wonder why we've written the name of the function at the bottom of the file. This is because Python reads the file and executes it from top to bottom. So in order to use our function, we have to re-write it at the bottom.
+ここであなたは、最後の行になぜ関数の名前を書いたのだろう、と疑問に感じたかもしれません。 これは、Pythonがファイルを上から下へ実行していくからです。 So in order to use our function, we have to re-write it at the bottom.
 
 Let's run this now and see what happens:
 
