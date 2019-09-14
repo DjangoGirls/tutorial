@@ -22,7 +22,7 @@ https://www.python.org/downloads/windows/ からWindows版のPythonをダウン�
 
 インストールが終わったら、ダイアログボックスが出てきます。ボックス内のリンクを開くと、インストールしたPythonのバージョンを説明したページに行けます。 ダイアログは閉じてしまいましょう。Pythonの使い方はこのチュートリアルでたっぷり勉強します！
 
-メモ: あなたのWindowsがWindows7、Windows Vistaや、それ以前のバージョンの場合で、Python3.6.x のインストールがエラーがでて失敗する場合は、下のどちらかのやり方を試してください。
+注意: あなたのWindowsがWindows7、Windows Vistaや、それ以前のバージョンの場合で、Python3.6.x のインストールがエラーがでて失敗する場合は、下のどちらかのやり方を試してください。
 
 1. Windows Updateを実行してすべての更新ファイルを入れてから、Pythonを入れ直すか、
 2. [古いバージョンのPython](https://www.python.org/downloads/windows/)をインストールしてみる。例えば[3.4.6](https://www.python.org/downloads/release/python-346/)。
@@ -38,17 +38,17 @@ data-collapse=true ces-->
 
 > **注意**：OS XにPythonをインストールする前に、Macの設定でApp Store以外のパッケージをインストールできるようにする必要があります。 「システム環境設定」（「アプリケーション」フォルダ内）に移動し、「セキュリティとプライバシー」、「一般」タブの順にクリックします。 「ダウンロードしたアプリを許可する」が「Mac App Store」に設定されている場合は、「Mac App Storeと識別された開発者」に変更します。
 
-You need to go to the website https://www.python.org/downloads/release/python-361/ and download the Python installer:
+https://www.python.org/downloads/release/python-361/ からPythonインストーラーをダウンロードします。
 
-* Download the *Mac OS X 64-bit/32-bit installer* file,
-* Double click *python-3.6.1-macosx10.6.pkg* to run the installer.
+* *Mac OS X 64-bit/32-bit installer* というファイルをダウンロードします。 
+* ダウンロードできたら *python-3.6.1-macosx10.6.pkg* をダブルクリックして実行します。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-It is very likely that you already have Python installed out of the box. To check if you have it installed (and which version it is), open a console and type the following command:
+あなたのMacにはすでにPythonがインストールされているかもしれません。インストールされてるかどうか、どのバージョンが入っているのか確かめるにはコンソールを開いて下のコマンドを入力してください。
 
 {% filename %}command-line{% endfilename %}
 
