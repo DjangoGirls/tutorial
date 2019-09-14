@@ -173,7 +173,7 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
 
 Requirementsファイルは`pip install`でインストールするためのパッケージリストが記載されているファイルです:
 
-前にインストールしたコードエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります。 You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+前にインストールしたコードエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります。 コードエディタで新しいファイルを開いて`djangogirls/`フォルダ内に`requirements.txt`いう名前で保存してください。 ディレクトリはこんな感じになっているはずです:
 
     djangogirls
     └───requirements.txt
