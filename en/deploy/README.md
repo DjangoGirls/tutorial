@@ -92,13 +92,13 @@ Go to [GitHub.com](https://www.github.com) and sign up for a new, free user acco
 
 Then, create a new repository, giving it the name "my-first-blog". Leave the "initialize with a README" checkbox unchecked, leave the .gitignore option blank (we've done that manually) and leave the License as None.
 
-<img src="images/new_github_repo.png" />
+![](images/new_github_repo.png)
 
 > **Note** The name `my-first-blog` is important – you could choose something else, but it's going to occur lots of times in the instructions below, and you'd have to substitute it each time. It's probably easier to stick with the name `my-first-blog`.
 
 On the next screen, you'll be shown your repo's clone URL, which you will use in some of the commands that follow:
 
-<img src="images/github_get_repo_url_screenshot.png" />
+![](images/github_get_repo_url_screenshot.png)
 
 Now we need to hook up the Git repository on your computer to the one up on GitHub.
 
@@ -140,7 +140,7 @@ Your code is now on GitHub. Go and check it out!  You'll find it's in fine compa
 
 Go back to the main [PythonAnywhere Dashboard](https://www.pythonanywhere.com/) by clicking on the logo, and choose the option to start a "Bash" console – that's the PythonAnywhere version of a command line, just like the one on your computer.
 
-<img src="images/pythonanywhere_bash_console.png" alt="The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'" />
+![The 'New Console' section on the PythonAnywhere web interface, with a button for 'bash'](images/pythonanywhere_bash_console.png)
 
 > **Note** PythonAnywhere is based on Linux, so if you're on Windows, the console will look a little different from the one on your computer.
 
