@@ -14,7 +14,7 @@
 
 #### Dajngo
 
-- Our other book, [Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- このチュートリアルの続きである[Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
 - [Django 公式チュートリアル](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
 - [Getting Started With Django 動画レッスン](http://www.gettingstartedwithdjango.com/)
 
@@ -28,10 +28,10 @@
 - [CodecademyのPythonコース](https://www.codecademy.com/learn/learn-python)
 - [GoogleのPythonコース](https://developers.google.com/edu/python/)
 - [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – 最初のエクササイズは無料です。
-- [New Coder tutorials](http://newcoder.io/tutorials/) – this is a variety of practical examples of how you might use Python
+- [New Coder tutorials](http://newcoder.io/tutorials/) Pythonを使った様々なチュートリアルです。
 - [edX](https://www.edx.org/course?search_query=python) – ほとんどのコースを無料で視聴できますが修了証書や単位が欲しい場合有料になります。
-- [Courseraの「みんなのためのPython専門講座」](https://www.coursera.org/specializations/python)　オンライン動画の講義を無料で見ることができ、コースの修了証を取得することができます。
-- [Python for Everybody](https://www.py4e.com/) - a free and open version of the Coursera Python for Everybody specialization
+- [ – CourseraのPython講座](https://www.coursera.org/specializations/python)　オンライン動画の講義の一部を無料で見ることができ、コースを受講し終わると修了証を取得することができます。
+- [Python for Everybody](https://www.py4e.com/) – CourseraのPython講座の無料かつオープンなバージョンです。
 
 #### データ操作
 
