@@ -87,7 +87,7 @@ Git はこのディレクトリ内のすべてのファイルとフォルダの�
 
 ## GitHubにコードをプッシュする
 
-[GitHub.com](https://www.github.com)にアクセスし、Sign upを押して無料の新規アカウントを作成してください。 (If you already did that in the workshop prep, that is great!) Be sure to remember your password (add it to your password manager, if you use one).
+[GitHub.com](https://www.github.com)にアクセスし、Sign upを押して無料の新規アカウントを作成してください。 (ワークショップの前にすでに作成していたら、それは素晴らしいです!） あなたのパスワードを忘れないようにしてください（持っていたら、パスワードマネージャーに入れておいてください）
 
 そして、新しいリポジトリに "my-first-blog"の名前で新しいリポジトリを作成します。 "READMEで初期化する"チェックボックスをオフのままにし、.gitignoreオプションを空白にして（手動で行っています）、ライセンスをNoneのままにしておきます。
 
