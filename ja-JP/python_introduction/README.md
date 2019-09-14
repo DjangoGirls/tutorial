@@ -805,7 +805,7 @@ else:
     print("My ears are hurting! :(")
 ```
 
-Python runs through each test in sequence and prints:
+Pythonは上から順番に各条件をテスト、実行し、出力します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -815,9 +815,9 @@ Python runs through each test in sequence and prints:
 
 ## コメント
 
-Comments are lines beginning with `#`. You can write whatever you want after the `#` and Python will ignore it. Comments can make your code easier for other people to understand.
+コメントは `#` で始まる行です。`#` の後にはなんでも書くことができ、Pythonはそれを無視します。コメントを書いたコードは、ほかの人にとってもわかりやすくなります。
 
-Let's see how that looks:
+実際にはこのようになります。
 
 {% filename %}python_intro.py{% endfilename %}
 
@@ -828,11 +828,11 @@ if volume < 20 or volume > 80:
     print("That's better!")
 ```
 
-You don't need to write a comment for every line of code, but they are useful for explaining why your code is doing something, or providing a summary when it's doing something complex.
+コードのすべての行にコメントを書く必要はありません。コメントには、コードの中である処理をする理由や、複雑なコードの動きのまとめを書くと役に立ちます。
 
 ### まとめ
 
-In the last few exercises you learned about:
+これらの練習を通して、学んだことは...
 
 - **比較** – 比較に用いる `>`, `>=`, `==`, `<=`, `<` そして`and`, `or` といった演算子があります。
 - **ブール型** – `True` と `False` ２つの値のみを持ちます。
@@ -840,13 +840,13 @@ In the last few exercises you learned about:
 - **if … elif … else** – 条件分岐することで、特定の条件によって処理を分けて実行することができます。
 - **コメント** – あなたがコードについて記述できる行。Pythonは実行しません。
 
-Time for the last part of this chapter!
+では、いよいよこのチャプターの最後のパートです！
 
 ## 自作の関数！
 
 > 家で１人でこのパートに挑戦している方へ：このパートは、動画（英語）もあるので参考にしてください。[Python Basics: Functions](https://www.youtube.com/watch?v=5owr-6suOl0)
 
-Remember functions like `len()` that you can execute in Python? Well, good news – you will learn how to write your own functions now!
+Pythonには `len()` のように関数があったのを覚えていますか？ ここでは、自分で関数を作る方法を学びます。
 
 A function is a sequence of instructions that Python should execute. Each function in Python starts with the keyword `def`, is given a name, and can have some parameters. Let's give it a go. Replace the code in **python_intro.py** with the following:
 
