@@ -10,28 +10,28 @@ Visual Studio Codeは、マイクロソフトがWindowsとLinuxとmacOS向けに
 
 ## Gedit
 
-Gedit は、オープンソースの無料エディタで、全てのOSで使うことができます。
+Gedit は、オープンソースの無料エディタで、全てのOSで利用可能です。
 
 [ダウンロード](https://wiki.gnome.org/Apps/Gedit#Download)
 
 ## Sublime Text 3
 
-Sublime Text is a very popular editor with a free evaluation period and it's available for all operating systems.
+Sublime Text はとても人気のあるエディタで、無料の試用期間があります。全てのOSに対応しています。　
 
 [ダウンロード](https://www.sublimetext.com/3)
 
 ## Atom
 
-Atom is another popular editor. It's free, open-source and available for Windows, OS X and Linux. Atom is developed by [GitHub](https://github.com/).
+Atom は 人気のあるオープンソースかつ無料で利用ができるエディタです。Windows、OS X、Linuxで利用可能です。Atom は[GitHub](https://github.com/)が開発しています。
 
-[Download it here](https://atom.io/)
+[ダウンロード](https://atom.io/)
 
 ## なんでコードエディタをインストールするの？
 
-You might be wondering why we are installing this special code editor software, rather than using something like Word or Notepad.
+なぜWordやNotepadのようなものを使わず、特別なコードエディタをインストールする必要があるのかな、と思うかもしれません。
 
-The first reason is that code needs to be **plain text**, and the problem with programs like Word and Textedit is that they don't actually produce plain text, they produce rich text (with fonts and formatting), using custom formats like [RTF (Rich Text Format)](https://en.wikipedia.org/wiki/Rich_Text_Format).
+まずひとつ目の理由として、コードは**プレーンテキスト**という、何の装飾もない生の文字列でないといけません。問題は、WordやTexteditのようなプログラムが生成するのは、実は、プレーンテキストではないということなんです。WordやTexteditは、[RTF（リッチテキストフォーマット）](https://en.wikipedia.org/wiki/Rich_Text_Format)などのような、改造された形式を使って、フォントや書式を持ったリッチテキストを生成します。
 
-The second reason is that code editors are specialized for editing code, so they can provide helpful features like highlighting code with color according to its meaning, or automatically closing quotes for you.
+2つ目の理由は、コードエディタは、コードを編集することに特化しているので、コードを意味によって色づけして強調したり、引用符を自動的に閉じたりするような、便利な機能があります。
 
-We'll see all this in action later. Soon, you'll come to think of your trusty old code editor as one of your favorite tools. :)
+あとで、こういった機能が全てわかるようになります。すぐに、信頼できる使い慣れたコードエディタが、お気に入りのツールになると思いますよ^^
