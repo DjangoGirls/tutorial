@@ -610,7 +610,7 @@ $
 
 これで、コマンドプロンプトに戻りました。
 
-前に、[コードエディタ](../code_editor/README.md)セクションからコードエディタを選択しました。 We'll need to open the editor now and write some code into a new file (or if you're using a Chromebook, create a new file in the cloud IDE and open the file, which will be in the included code editor):
+前に、[コードエディタ](../code_editor/README.md)セクションからコードエディタを選択しました。 ここでエディタを開いて、新しいファイルにコードを書き込んでみましょう（Chromebookを使用している場合は、Cloud IDEで新しいファイルを作成し、含まれているコードエディタにあるファイルを開きます）。
 
 {% filename %}editor{% endfilename %}
 
@@ -641,7 +641,7 @@ Macでは、コマンドは次のようになります。
 <!--sec data-title="Change directory: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-On Linux, it will be like this:
+Linuxでは、次のようになります。
 
 {% filename %}command-line{% endfilename %}
 
