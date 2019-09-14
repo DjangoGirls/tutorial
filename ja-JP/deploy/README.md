@@ -167,9 +167,9 @@ GitHub からアプリを自動的に構成するためのヘルパーを実行�
 - 静的ファイルの設定（これについては後で学習します）
 - APIを通じてPythonAnywhereがあなたのWebアプリケーションを提供するように設定する
 
-On PythonAnywhere all those steps are automated, but they're the same steps you would have to go through with any other server provider.
+PythonAnywhereではこれらすべてのステップは自動化されていますが、他のサーバープロバイダーでは同じ手順を経なければなりません。
 
-The main thing to notice right now is that your database on PythonAnywhere is actually totally separate from your database on your own computer, so it can have different posts and admin accounts. As a result, just as we did on your own computer, we need to initialize the admin account with `createsuperuser`. PythonAnywhere has automatically activated your virtualenv for you, so all you need to do is run:
+今注目すべき重要な点は、PythonAnywhere上のデータベースが、自分のPC上のデータベースとはまったく別物であることです。つまり、異なる投稿と管理者アカウントを持つことができます。 その結果、自分のコンピュータで行ったように、`createsuperuser`で管理者アカウントを初期化する必要があります。 PythonAnywhereがあなたのためにあなたのvirtualenvを自動的に起動したので、あなたがする必要があるのは以下の通りです：
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
@@ -195,7 +195,7 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 
 あなたのサイトは現在、インターネット上で動作しているはずです！ PythonAnywhereの「Web」ページをクリックしてリンクを取得します。 あなたはあなたが望む誰とでもこれを共有することができます:)
 
-> **注** これは初心者向けのチュートリアルです。このサイトをデプロイする際にはセキュリティの観点からは理想的ではない、いくつかのショートカットをしました。 If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **注** これは初心者向けのチュートリアルです。このサイトをデプロイする際にはセキュリティの観点からは理想的ではない、いくつかのショートカットをしました。 もしこのプロジェクトを利用すると決めたり、新しいプロジェクトを開始する場合は、あなたのサイトを保護するいくつかのヒントのために、[Djangoデプロイメントチェックリスト](https://docs.djangoproject.com/ja/2.0/howto/deployment/checklist/)を見直してみてください。
 
 ## デバッギングのヒント
 
@@ -204,7 +204,7 @@ PythonAnywhereのコードを`ls`を使って見てみることもできます�
 - PythonAnywhere APIトークンの作成を忘れている
 - あなたのGitHubのURLを間違えている
 - *Could not find your settings.py*というエラーが表示された場合は、おそらくGitにすべてのファイルを追加できていなかったか、 GitHubにうまくプッシュできていなかった。 この場合はGitセクションをもう一度見てください
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- PythonAnywhereのアカウントに以前サインアップしていてcollectstaticでエラーが起きたとしたら、あなたのアカウントで古いバージョンのSQLite（例えば、3.8.2）を使っている可能性があります。 その場合、上記のPythonAnywhereのセクションに記載しているコマンドを実行して新しいアカウントを作成してください。
 
 サイトにアクセスしようとするとエラーが表示された場合、最初にデバッグ情報を探す場所は**エラーログ**です。 PythonAnywhereの[ Webページ](https://www.pythonanywhere.com/web_app_setup/)には、このリンクがあります。 そこにエラーメッセージがあるかどうかを確認してください。 最新のものは一番下にあります。
 
