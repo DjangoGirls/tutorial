@@ -22,12 +22,12 @@ https://www.python.org/downloads/windows/ からWindows版のPythonをダウン�
 
 インストールが終わったら、ダイアログボックスが出てきます。ボックス内のリンクを開くと、インストールしたPythonのバージョンを説明したページに行けます。 ダイアログは閉じてしまいましょう。Pythonの使い方はこのチュートリアルでたっぷり勉強します！
 
-Note: if you are using an older version of Windows (7, Vista, or any older version) and the Python 3.6.x installer fails with an error, you can try either:
+メモ: あなたのWindowsがWindows7、Windows Vistaや、それ以前のバージョンの場合で、Python3.6.x のインストールがエラーがでて失敗する場合は、下のどちらかのやり方を試してください。
 
-1. install all Windows Updates and try to install Python again; or
+1. Windows Updateを実行してすべての更新ファイルを入れてから、Pythonを入れ直すか、
 2. [古いバージョンのPython](https://www.python.org/downloads/windows/)をインストールしてみる。例えば[3.4.6](https://www.python.org/downloads/release/python-346/)。
 
-If you install an older version of Python, the installation screen may look a bit different than shown above. Make sure you scroll down to see "Add python.exe to Path", then click the button on the left and pick "Will be installed on local hard drive":
+古いバージョンのPythonをインストールした場合、インストール画面は上のものと違うことがあります。 下にスクロールして「Add python.exe to Path」のところを左クリックして「Will be installed on local hard drive（ローカルハードドライブにインストールされます）」を選択してください
 
 ![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
 
