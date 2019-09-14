@@ -196,7 +196,7 @@ Chromebook や Cloud9 を利用している場合は、ウェブサーバーの�
 
 ![インストールできました！](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. As long as the web server is running and waiting for additional incoming requests, the terminal will accept new text but will not execute new commands.
+Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. ウェブサーバーが動いている間、次のリクエストを待っています。このコマンドラインプロンプトに新しいテキストを書いても、新しいコマンドとして実行しません。
 
 > Webサーバーの仕組みについては、「インターネットの仕組み」の章を参照してください。
 
