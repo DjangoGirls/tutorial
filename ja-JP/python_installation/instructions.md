@@ -11,8 +11,8 @@ DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要�
 まず、今使っているWindowsが32-bit版か64-bit版か確認しましょう。システム情報の”システムの種類”を確認してください。これを見る方法はいくつかあるので、次のうち１つをやってみましょう：
 
 * WindowsキーとPause/Breakキーを同時に押します。
-* Open your Control Panel from the Windows menu, then navigate to System & Security, then System
-* Press the Windows button, then navigate to Settings > System > About
+* Windowsのスタートからコントロールパネルを開き、”システムとセキュリティ”、”システム”と順にクリックします。
+* Windowsロゴをクリック、設定 > システム > バージョン情報 とクリックしていきましょう。
 
 https://www.python.org/downloads/windows/ からWindows版のPythonをダウンロードできます。 "Latest Python 3 Release - Python x.x.x" というリンクをクリックします。 あなたのWindowsが**64-bit版**なら、**Windows x86-64 executable installer**をダウンロードしてください。 そうでなければ**Windows x86 executable installer**をダウンロードしてください。 インストーラーがダウンロードできたら、ダブルクリックして実行し、指示に従ってください。
 
@@ -29,7 +29,7 @@ https://www.python.org/downloads/windows/ からWindows版のPythonをダウン�
 
 古いバージョンのPythonをインストールした場合、インストール画面は上のものと違うことがあります。 下にスクロールして「Add python.exe to Path」のところを左クリックして「Will be installed on local hard drive（ローカルハードドライブにインストールされます）」を選択してください
 
-![Add Python to the Path, older versions](../python_installation/images/add_python_to_windows_path.png)
+![古いバージョンのパスを追加してください。](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
