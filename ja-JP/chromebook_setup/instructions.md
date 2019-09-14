@@ -34,20 +34,20 @@ Chromebookを使わない場合は、このセクションを飛ばして、[Pyt
 8. *Next step (次のステップ)*を選択します。
 9. *Create environment (環境の作成)*を選択します。
 
-このような画面が表示されていますね。大きなメイン画面とサイドバー、下に小さな画面があります。
+大きなメイン画面とサイドバー、そして下部にはこのような小さな画面が表示されています。
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+この下の部分が、あなたのターミナルです。Cloud9のコンピュータにリモートで指示をおくることができます。ウィンドウズのサイズを変更して少し大きくすることもできます。
 
 ### 仮想環境
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+仮想環境 (virtualenvとも呼ばれます) は、取り組んでいるプロジェクト用に、便利なコンピューターコードを詰め込んでおけるプライベートボックスのようなものです。 様々なプロジェクトの様々なコードがプロジェクト間で混ざってしまわないようにこれを使います。
 
-実行：
+実行する
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,7 +58,7 @@ A virtual environment (also called a virtualenv) is like a private box we can st
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+（最後の行はチルダに続けてイコール記号をつけることに気をつけてください: `~=`）
 
 ### GitHub
 
@@ -66,8 +66,8 @@ A virtual environment (also called a virtualenv) is like a private box we can st
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+Django Girlsチュートリアルには、デプロイと呼ばれるセクションが含まれています。これはあなたの新しいWebアプリケーションの原動力となるコードを取得して、それを公にアクセス可能なコンピューター（サーバーと呼ばれます）に移動するプロセスです。これにより、あなたのやったことを他の人が見ることができるようになります。
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Chromebookでチュートリアルを行うとき、すでにインターネットに接続されているコンピュータ（ラップトップとは対照的に）を使用しているので、この作業は少し変な感じがします。 しかし、Cloud 9のワークスペースを「開発中」の場所、PythonAnywhere をより完成したものを披露する場所として考えると役に立ちます。
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+したがって、PythonAnywhereに新規アカウントを作成してください。 [ www.pythonanywhere.com ](https://www.pythonanywhere.com)
