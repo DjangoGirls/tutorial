@@ -97,7 +97,7 @@ post変数がさっきと違って、`{{ post.title }}` や `{{ post.text }}` �
     [...]
     
 
-(Remember to substitute `<your-pythonanywhere-domain>` with your actual PythonAnywhere subdomain, without the angle-brackets.)
+（忘れずに `<your-pythonanywhere-domain>` を自分のPythonAnywhereのアカウント名に置き換えましょう、<> は不要です。）
 
 * 最後に[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を開いてアプリを**リロード**します。 (To reach other PythonAnywhere pages from the console, use the menu button in the upper right corner.) Your update should be live on https://subdomain.pythonanywhere.com -- check it out in the browser! PythonAnywhereサイトで表示されるブログの記事が、あなたのパソコンの中のローカルサーバーのものと違っていても大丈夫です。 ローカルコンピュータにあるデータベースと、PythonAnywhere上のデータベースは同期していません。
 
