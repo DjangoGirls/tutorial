@@ -200,7 +200,7 @@ Requirementsファイルは`pip install`でインストールするためのパ�
 <!--sec data-title="Installing Django: Windows" data-id="django_err_windows"
 data-collapse=true ces-->
 
-> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 If it does, please consider using another place without spaces, accents or special characters (suggestion: `C:\djangogirls`). 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境のディレクトリは、絶対パスが使われているので、移動させても動きません。）
+> Windowsでpipを呼んだときにエラーが起きた場合は、あなたのプロジェクトのパス名がスペース・アクセント・特殊文字を含んでいないか確認してみて下さい （例 `C:\Users\User Name\djangogirls`）。 もし含まれている場合は、ディレクトリを他のスペース・アクセント・特殊文字が含まれていない場所（`C:\djangogirls`など）で作成することを検討してみてください。 新しいディレクトリに新しい仮想環境を作成してから、古いディレクトリを削除して、上記のコマンドを試してください。 （仮想環境のディレクトリは、絶対パスが使われているので、移動させても動きません。）
 
 <!--endsec-->
 
