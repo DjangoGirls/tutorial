@@ -145,12 +145,12 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-> **NOTE:** For users of the popular editor VS Code, which come with an integrated terminal based off windows powershell, if you wish to stick with the integrated terminal, you may run the following command to activate your virtual environment:
+> **補足:** Windows Powershellベースの結合ターミナルがある人気なエディター「VS Code」を使っている方で、VS Codeの結合ターミナルを使いたい場合、仮想環境をアクティベートにするために下記のコマンドを実行してください:
 > 
 >     $ . myvenv\Scripts\activate.ps1
 >     
 > 
-> The advantage is that you don't have to switch between editor windows and command-line windows
+> エディターとコマンドラインのウィンドウを行き来する必要がなくなるのが利点です。
 
 `virtualenv` が起動すると、プロンプトの行頭に`(myvenv)`が現れます。
 
@@ -173,7 +173,7 @@ OK,これでDjangoのインストール前に入れておきたい依存関係�
 
 Requirementsファイルは`pip install`でインストールするためのパッケージリストが記載されているファイルです:
 
-First create a `requirements.txt` file inside of the `djangogirls/` folder, using the code editor that you installed earlier. You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
+前にインストールしたコードエディタを使用して、最初に `requirements.txt` ファイルを `djangogirls/` フォルダーの中に作ります。 You do this by opening a new file in the code editor and then saving it as `requirements.txt` in the `djangogirls/` folder. Your directory will look like this:
 
     djangogirls
     └───requirements.txt
