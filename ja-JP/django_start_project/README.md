@@ -109,7 +109,7 @@ ALLOWED_HOSTS = ['127.0.0.1', '.pythonanywhere.com']
 
 > **メモ**: Chromebook を使っている人は、次の1行を settings.py ファイルの最後に追加してください。 `MESSAGE_STORAGE = 'django.contrib.messages.storage.session.SessionStorage'`
 > 
-> Also add `.amazonaws.com` to the `ALLOWED_HOSTS` if you are using cloud9
+> cloud9を使っている人は、 `ALLOWED_HOSTS` に、`.amazonaws.com` を追加しましょう。
 
 ## データベースをセットアップする
 
@@ -196,10 +196,10 @@ Chromebook や Cloud9 を利用している場合は、ウェブサーバーの�
 
 ![インストールできました！](images/install_worked.png)
 
-Note that a command window can only run one thing at a time, and the command window you opened earlier is running the web server. ウェブサーバーが動いている間、次のリクエストを待っています。このコマンドラインプロンプトに新しいテキストを書いても、新しいコマンドとして実行しません。
+コマンド画面は、一度に一つのコマンドしか実行できません。先程開いたコマンド画面では、Webサーバーが今動いています。 ウェブサーバーが動いている間、次のリクエストを待っています。このコマンドラインプロンプトに新しいテキストを書いても、新しいコマンドとして実行しません。
 
 > Webサーバーの仕組みについては、「インターネットの仕組み」の章を参照してください。
 
-To type additional commands while the web server is running, open a new terminal window and activate your virtualenv -- to review instructions on how to open a second terminal window, see [Introduction to the command line](../intro_to_command_line/README.md). Webサーバーを停止するには、実行中のウィンドウに戻り、CTRL + C - ControlキーとCキーを同時に押します（WindowsではCtrl + Breakキーを押す必要があります）。
+Webサーバーを動かしながら、同時に新たにコマンドを追加したい場合は、新しいコマンドプロンプトのウィンドウを開いて、仮想環境をアクティベイトして実行しましょう。２つ目のウィンドウを開く方法が分からなくなったら、[コマンドラインをつかってみよう](../intro_to_command_line/README.md)の章に戻ってやり方を確認しましょう。 Webサーバーを停止するには、実行中のウィンドウに戻り、CTRL + C - ControlキーとCキーを同時に押します（WindowsではCtrl + Breakキーを押す必要があります）。
 
 次のステップに進む準備はできましたか？ 今度は実際にコンテンツを作り始めましょう！
