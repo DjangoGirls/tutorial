@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 For one, we pass an extra `pk` parameter from `urls`. 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときは以下の2つのケースのようにそのポストを`instance（インスタンス）`として渡します。フォームを保存するときは…
+`post_new` とほとんど同じに見えますか? しかし完全に同じではありません。 まず `urls` から追加の `pk` パラメータを渡します。 次に編集したい`Post` モデルを `get_object_or_404(Post, pk=pk)` で取得し、フォームを作るときは以下の2つのケースのようにそのポストを`instance（インスタンス）`として渡します。フォームを保存するときは…
 
 {% filename %}blog/views.py{% endfilename %}
 
