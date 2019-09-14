@@ -178,14 +178,14 @@ Windows上で、`UnicodeDecodeError`で失敗した場合は、代わりに次�
     (myvenv) ~/djangogirls$ python manage.py runserver 0:8000
     
 
-Now you need to check that your website is running. Open your browser (Firefox, Chrome, Safari, Internet Explorer or whatever you use) and enter this address:
+Webサイトが動いていることを確認してください。ブラウザで以下のアドレスを開いてみましょう。（Firefox, Chrome, Safari, Internet Explorerなど、好きなブラウザを使って大丈夫です）
 
 {% filename %}ブラウザ{% endfilename %}
 
     http://127.0.0.1:8000/
     
 
-If you're using a Chromebook and Cloud9, instead click the URL in the pop-up window that should have appeared in the upper right corner of the command window where the web server is running. The URL will look something like:
+Chromebook や Cloud9 を利用している場合は、ウェブサーバーのコマンド画面の右上にあるポップアップ画面のURLをクリックしましょう。 URLはこんな感じになっていると思います。
 
 {% filename %}ブラウザ{% endfilename %}
 
