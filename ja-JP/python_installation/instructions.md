@@ -8,9 +8,9 @@ DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要�
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-First check whether your computer is running a 32-bit version or a 64-bit version of Windows, on the "System type" line of the System Info page. To reach this page, try one of these methods:
+まず、今使っているWindowsが32-bit版か64-bit版か確認しましょう。システム情報の”システムの種類”を確認してください。これを見る方法はいくつかあるので、次のうち１つをやってみましょう：
 
-* WindowsキーとPause/Breakキーを同時に押します
+* WindowsキーとPause/Breakキーを同時に押します。
 * Open your Control Panel from the Windows menu, then navigate to System & Security, then System
 * Press the Windows button, then navigate to Settings > System > About
 
