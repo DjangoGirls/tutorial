@@ -8,8 +8,8 @@ Nube de IDE es una herramienta que te ofrece un editor de código y el acceso po
 
 1. Ve a [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Crea una cuenta
-3. Click *New Server* and choose the Django app
-4. Haz click en el botón Terminal (en el lado izquierdo de la ventana)
+3. Haga clic en *Nuevo Servidor* y elija la aplicación Django
+4. Haz clic en el botón Terminal (en el lado izquierdo de la ventana)
 
 Ahora deberías ver una interfaz con una barra y botones en la izquierda. Haz click en al botón "Terminal" para abrir la ventana de la terminal con un símbolo de sistema como este:
 
@@ -22,10 +22,10 @@ La terminal en el IDE en la nube PaizaCloud, está preparada para ejecutar tus i
 
 #### AWS Cloud9
 
-Currently Cloud 9 requires you to sign up with AWS and enter credit card information.
+Actualmente Cloud 9 requiere que te registres con AWS y ingreses la información de la tarjeta de crédito.
 
-1. Install Cloud 9 from the [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
-2. Go to [c9.io](https://c9.io) and click *Get started with AWS Cloud9*
+1. Instala Cloud 9 desde la [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Valla a [c9.io](https://c9.io) y haz clic en *Get started with AWS Cloud9*
 3. Sign up for an AWS account (requires credit card information, but you can use it for free)
 4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
 5. In the Cloud 9 dashboard, click *Create environment*
@@ -34,20 +34,20 @@ Currently Cloud 9 requires you to sign up with AWS and enter credit card informa
 8. Click *Next step*
 9. Click *Create environment*
 
-Now you should see an interface with a sidebar, a big main window with some text, and a small window at the bottom that looks something like this:
+Ahora deberías ver una interfaz con una barra, una gran ventana principal con algún texto y, una ventana pequeña en la parte inferior que se vería así:
 
 {% filename %}bash{% endfilename %}
 
     yourusername:~/workspace $
     
 
-This bottom area is your terminal. You can use the terminal to send instructions to the remote Cloud 9 computer. You can resize that window to make it a bit bigger.
+El área de abajo es tu terminal. Puedes usar el terminal para enviar instrucciones al ordenador remoto en Cloud 9. Puedes redimensionar o maximizar la ventana para hacerla un poco mas grande.
 
 ### Entorno Virtual
 
 A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
 
-Run:
+Ejecutar:
 
 {% filename %}Cloud 9{% endfilename %}
 
@@ -58,11 +58,11 @@ Run:
     pip install django~={{ book.django_version }}
     
 
-(note that on the last line we use a tilde followed by an equal sign: `~=`).
+(nota que en la ultima linea usamos una virgulilla (~) seguido de un signo igual `~=`).
 
 ### GitHub
 
-Make a [GitHub](https://github.com) account.
+Hazte una cuenta de [GitHub](https://github.com).
 
 ### PythonAnywhere
 
