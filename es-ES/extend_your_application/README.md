@@ -2,7 +2,7 @@
 
 # Extiende tu aplicación
 
-We've already completed all the different steps necessary for the creation of our website: we know how to write a model, URL, view and template. We also know how to make our website pretty.
+Ya hemos completado todos los diferentes pasos necesarios para la creación de nuestro sitio web: sabemos cómo escribir un modelo, URL, vista y plantilla. También sabemos cómo hacer que nuestro sitio web sea bonito.
 
 ¡Hora de practicar!
 
