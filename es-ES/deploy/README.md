@@ -195,7 +195,7 @@ También puedes ir a la página de ficheros ("Files") y navegar por los ficheros
 
 ¡Tu sitio ya debería estar online en internet! Haz click en la página "Web" de PythonAnywhere para obtener un enlace a él. Puedes compartir este enlace con quien tu quieras :)
 
-> **Nota** Este es un tutorial para principiantes, y al desplegar este sitio hemos tomado algunos atajos que tal vez no sean las mejores prácticas desde el punto de vista de la seguridad. If and when you decide to build on this project, or start a new project, you should review the [Django deployment checklist](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) for some tips on securing your site.
+> **Nota** Este es un tutorial para principiantes, y al desplegar este sitio hemos tomado algunos atajos que tal vez no sean las mejores prácticas desde el punto de vista de la seguridad. Si decide construir sobre este proyecto, o comenzar un nuevo proyecto, debe revisar la [lista de verificación de despliegue de Django](https://docs.djangoproject.com/en/2.2/howto/deployment/checklist/) para obtener algunos consejos sobre cómo proteger su sitio.
 
 ## Consejos de depuración
 
@@ -204,7 +204,7 @@ Si te sale un error al ejecutar el script `pa_autconfigure_django.py`, aquí hay
 - Te has olvidado de crear el token de API de PythonAnywhere.
 - No has puesto bien la URL de GitHub
 - Si ves un error diciendo *"Could not find your settings.py*, es probable que no añadieras todos tus archivos a Git, y/o no los subiste a GitHub correctamente. Repasa la sección de Git más arriba
-- If you previously signed up for a PythonAnywhere account and had an error with collectstatic, you probably have an older version of SQLite (eg 3.8.2) for your account. In that case, sign up for a new account and try the commands in the PythonAnywhere section above.
+- Si anteriormente se suscribió a una cuenta de PythonAnywhere y tuvo un error con collectstatic, probablemente tenga una versión anterior de SQLite (por ejemplo, 3.8.2) para su cuenta. En ese caso, regístrese para una nueva cuenta e intente los comandos en la sección PythonAnywhere anterior.
 
 Si ves un error al visitar tu sitio, el primer lugar para ver qué está pasando es el **log de errores**. Encontrará un enlace en la página ["Web"](https://www.pythonanywhere.com/web_app_setup/) de PythonAnywhere. Mira si hay algún mensaje de error allí; los más recientes están en la parte inferior.
 
