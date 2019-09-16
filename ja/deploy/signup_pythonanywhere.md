@@ -1,15 +1,19 @@
 PythonAnywhere はクラウド上のサーバーでPythonのコードを走らせるためのサービスです。私たちはこれを私たちのサイトをホスティングして、インターネット上で動かし続けるために使います。
 
-PythonAnywhere で「Beginner」アカウントにサインアップしましょう（クレジットカードのいらない無料利用枠で大丈夫です）。
+今までの章で作ったブログをPythonAnywhere上にホスティングします。PythonAnywhereの「Beginner」でサインアップしましょう(アカウントは無料枠で大丈夫です。クレジットカードは必要ありません)。
 
 * [https://www.pythonanywhere.com](https://www.pythonanywhere.com/)
 
-![PythonAnywhere サインアップページが表示する無料の「Beginner」アカウント作成ボタン](../deploy/images/pythonanywhere_beginner_account_button.png)
+![PythonAnywhereのサインアップページ。無料の「Beginner」アカウントを作るためのボタンがあります。](../deploy/images/pythonanywhere_beginner_account_button.png)
 
-> **注** ユーザー名を選ぶとき、あなたのブログのURLが`あなたのユーザー名.pythonanywhere.com`になることを覚えておいて下さい。ですから、自分のニックネームかあなたのブログが何についてのブログか分かるような名前を選んでみて下さい。
+> **注意** ユーザー名は `yourusername.pythonanywhere.com` というようにブログのURLに反映されます。なので、あなたのニックネームかブログの名前をユーザー名とするようにしてください。 パスワードは忘れないようにしてください。(パスワードマネージャーを使っているなら覚えさせておくのも良いでしょう。)
 
 ## PythonAnywhere APIトークンの作成
 
-これはあなたが一度だけ行う必要があるものです。 PythonAnywhere にサインアップしたとき、ダッシュボードページが表示されます。 右上にある「Account」ページへのリンクをクリックし、それから「API Token」タブを選択し、「Create new API token」ボタンをクリックします。
+トークンは一度だけ作ればよいです。PythonAnywhereのサインアップが終わるとダッシュボード画面に移動します。「Account」ページへのリンクはページ右上のバーの中にあります。
 
-![アカウントページのAPIトークンタブ](../deploy/images/pythonanywhere_create_api_token.png)
+![ページの右上にある「Account」へのリンク](../deploy/images/pythonanywhere_account.png)
+
+「Account」ページに移動したら、「API Token」というタブを選んで、「Create new API token」のボタンを押してください。
+
+![「Account」ページの「API Token」のタブ](../deploy/images/pythonanywhere_create_api_token.png)

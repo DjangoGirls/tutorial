@@ -31,7 +31,7 @@ def post_list(request):
     return render(request, 'blog/post_list.html', {})
 ```
 
-みてのとおり、`post_list` という関数 (`def` から始まる部分のことです) を作りました。これは `request` を引数に取り、`blog/post_list.html`テンプレートを表示する (組み立てる) `render` 関数を `return` しています。
+みてのとおり、`post_list` という関数（`def` から始まる部分のことです）を作りました。これは `request` を引数に取り、`blog/post_list.html`テンプレートを表示する （組み立てる）`render` 関数を `return` しています。
 
 ファイルを保存したら、どんな風に表示されるか、ブラウザで http://127.0.0.1:8000/ を確認してみましょう。
 
@@ -41,4 +41,4 @@ def post_list(request):
 
 サーバーは実行されていることはわかるのですが、正しく表示されないのはなぜでしょう？ 心配しないで！ただのエラーページです！ コンソールでのエラーメッセージと同じように、これは実際にかなり便利です。 *TemplateDoesNotExist* と書いてありますね。 それでは次の章でテンプレートを作って、エラーを解決しましょう！
 
-> Djangoのビューについてもっと知りたいのなら、オフィシャルドキュメントを是非読んでみてください。 https://docs.djangoproject.com/ja/2.0/topics/http/views/
+> Djangoのビューについてもっと知りたいのなら、オフィシャルドキュメントをぜひ読んでみてください。 https://docs.djangoproject.com/ja/2.2/topics/http/views/

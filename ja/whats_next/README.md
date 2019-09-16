@@ -4,22 +4,39 @@
 
 ### 今何をする？
 
-休憩してリラックスしてください。 あなたは本当に大きなことを成し遂げました。
+休憩してリラックスしてください！本当に大きなことを成し遂げました。
 
 休んだ後は、[Facebook](http://facebook.com/djangogirls)や[Twitter](https://twitter.com/djangogirls)でDjango Girlsをぜひフォローしてくださいね。最新の情報を入手できます。
 
 ### さらにオススメの資料はありますか？
 
-このチュートリアルの拡張版である、[Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)を試してみてください。
+あります！ 様々なプログラミングスキルを学ぶためのリソースが、*たくさん*あります。沢山ありすぎて何を次にやろうか迷うかもしれませんので、お勧めを示しておきます。 Django Girlsのチュートリアルを始める時にあなたが何に興味を持っていたか、あるいは、チュートリアルを終えた今何に興味があるか、によって、気になるものに挑戦してください。ここにある多くは無料のリソースです（あるいは、無料で多くのことを学べるものです）。
 
-他にオススメの資料のリストを下記に記述します。とてもいいですよ。
+#### Dajngo
 
-- [Djangoの公式チュートリアル](https://docs.djangoproject.com/ja/2.0/intro/tutorial01/)
-- [New Coder tutorials](http://newcoder.io/tutorials/)
-- [Code Academy Python course](https://www.codecademy.com/en/tracks/python)
-- [Code Academy HTML & CSS course](https://www.codecademy.com/tracks/web)
-- [Django Carrots tutorial](https://github.com/ggcarrots/django-carrots)
-- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/)
-- [Getting Started With Django video lessons](http://www.gettingstartedwithdjango.com/)
-- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App](https://hellowebapp.com/) - 著者のTracy Osborn (<tracy@limedaring.com>) に連絡して無料のeBookライセンスをリクエストすることもできます
+- このチュートリアルの続きである[Django Girls Tutorial: Extensions](https://tutorial-extensions.djangogirls.org/)
+- [Django 公式チュートリアル](https://docs.djangoproject.com/en/2.2/intro/tutorial01/)
+- [Getting Started With Django 動画レッスン](http://www.gettingstartedwithdjango.com/)
+
+#### HTML, CSS ならびに JavaScript
+
+- [Codecademy - web development コース](https://www.codecademy.com/learn/paths/web-development)
+- [freeCodeCamp](https://www.freecodecamp.org/)
+
+#### Python
+
+- [CodecademyのPythonコース](https://www.codecademy.com/learn/learn-python)
+- [GoogleのPythonコース](https://developers.google.com/edu/python/)
+- [Learn Python The Hard Way book](http://learnpythonthehardway.org/book/) – 最初のエクササイズは無料です。
+- [New Coder tutorials](http://newcoder.io/tutorials/) Pythonを使った様々なチュートリアルです。
+- [edX](https://www.edx.org/course?search_query=python) – ほとんどのコースを無料で視聴できますが修了証書や単位が欲しい場合有料になります。
+- [ – CourseraのPython講座](https://www.coursera.org/specializations/python)　オンライン動画の講義の一部を無料で見ることができ、コースを受講し終わると修了証を取得することができます。
+- [Python for Everybody](https://www.py4e.com/) – CourseraのPython講座の無料かつオープンなバージョンです。
+
+#### データ操作
+
+- [Codecademyのdata scienceコース](https://www.codecademy.com/learn/paths/data-science)
+- [edX](https://www.edx.org/course/?search_query=python&subject=Data%20Analysis%20%26%20Statistics) – ほとんどのコースを無料で視聴できますが修了証書や単位が欲しい場合有料になります。
+- [Dataquest](https://www.dataquest.io/) – はじめの30 "分" 無料です。
+
+次になにを作るか楽しみにしてますね！

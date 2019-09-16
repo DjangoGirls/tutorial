@@ -148,7 +148,7 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 ![図 11.4](images/step6.png)
 
-や～っ。 ところが今のところ、私たちのテンプレートは、常に完全に**同じ情報**だけしか表示できません。一方で、以前は、テンプレートを使えば、**異なる**情報を**同じ形式**で表示できるようになるとお伝えしていたのですが。
+いぇーい！ ところが今のところ、私たちのテンプレートは、常に完全に**同じ情報**だけしか表示できません。一方で、以前は、テンプレートを使えば、**異なる**情報を**同じ形式**で表示できるようになるとお伝えしていたのですが。
 
 本当にやりたいことは、Djangoのadminに追加された本物の記事を表示することです。そして、それが次にやるべきことなのです。
 
@@ -203,14 +203,14 @@ HTMLは、「HyperText Markup Language」の頭文字を取ったものです。
 
 {% filename %}PythonAnywhere command-line{% endfilename %}
 
-    $ cd ~/<your-pythonanywhere-username>.pythonanywhere.com
+    $ cd ~/<your-pythonanywhere-domain>.pythonanywhere.com
     $ git pull
     [...]
     
 
-(`<your-pythonanywhere-username>`の部分を、自分の実際のPythonAnywhereのユーザー名に角カッコをはずして置き換えることを忘れずに)
+`<your-pythonanywhere-domain>`を、山カッコなしの実際のPythonAnywhereサブドメイン名に置き換える必要があります。 通常、サブドメイン名はPythonAnywhereユーザー名ですが、場合によっては多少異なることがあります（ユーザー名に大文字が含まれている場合など）。 このコマンドが機能しない場合は、`ls`（ファイルのリストを見る）コマンドを使用して実際のサブドメイン/フォルダー名を見つけ、そこに`cd`します。
 
-そのうえで、自分のコードがダウンロードされたことを確認しましょう。 それをチェックしたい場合は、**「Files」ページ** を押して、自分のコードをPythonAnywhereの中で見てみましょう（コンソールページのメニューボタンから他のPythonAnywhereページにアクセスできます）。
+では、自分のコードがダウンロードされたことを確認しましょう。 それをチェックしたい場合は、**「Files」ページ** を押して、自分のコードをPythonAnywhereの中で見てみましょう（コンソールページのメニューボタンから他のPythonAnywhereページにアクセスできます）。
 
 * 最後に、[「Web」ページ](https://www.pythonanywhere.com/web_app_setup/)を押して、自分のアプリの**Reload**を押します。
 

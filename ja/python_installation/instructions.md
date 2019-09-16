@@ -2,28 +2,34 @@
 > 
 > このセクションはGeek Girls Carrots (https://github.com/ggcarrots/django-carrots) のチュートリアルをベースに作成しました。
 
-Django は、Pythonで開発されています。なにをするにせよ、まずはPythonが必要です。インストールしましょう！ Python 3.6 をインストールします。3.5以前のバージョンをインストール済みの場合は、アップグレードしてください。
+DjangoはPythonで書かれています。 Djangoを使うにはPythonが必要です。 では、インストールするところから始めましょう！ 最新のPython３をインストールしてください。それ以前のPythonがインストールされていたら、アップグレードする必要があります。 3.4より新しいバージョンであれば問題ありません。
+
+下に書いたとおりのやり方で、Pythonをインストールしてください。すでにAnacondaが入っていても以下のとおりにインストールしてください。
 
 <!--sec data-title="Install Python: Windows" data-id="python_windows" data-collapse=true ces-->
 
-Windowsをお使いのかたは、まずシステム情報を開き、システムの種類が32-bitバージョンか64-bitバージョンかを確認します（システム情報の開き方：Windowsキー + Pause/Break キー　もしくは　コントロールパネル＞システムとセキュリティ＞システムを開く）。 Python for Windowsは、https://www.python.org/downloads/windows/ からダウンロードできます。 「Latest Python 3 Release - Python x.x.x」のリンクをクリックしてください。 お使いのコンピュータが**64ビット**版のWindowsを実行している場合は、**Windows x86-64 executable installer**をダウンロードしてください。 32ビット版の場合は、**Windows x86 executable installer**をダウンロードします。 インストーラをダウンロードしたら、それを実行して（ダブルクリックして）インストーラの指示に従ってください。
+まず、今使っているWindowsが32-bit版か64-bit版か確認しましょう。システム情報の”システムの種類”を確認してください。これを見る方法はいくつかあるので、次のうち１つをやってみましょう：
 
-**インストール時に必ず「Add Python 3.6 to PATH」にチェックをいれましょう**：
+* WindowsキーとPause/Breakキーを同時に押します。
+* Windowsのスタートからコントロールパネルを開き、”システムとセキュリティ”、”システム”と順にクリックします。
+* Windowsロゴをクリック、設定 > システム > バージョン情報 とクリックしていきましょう。
 
-![Pythonのパスを通すのを忘れないようにしてください。](../python_installation/images/python-installation-options.png)
+https://www.python.org/downloads/windows/ からWindows版のPythonをダウンロードできます。 "Latest Python 3 Release - Python x.x.x" というリンクをクリックします。 あなたのWindowsが**64-bit版**なら、**Windows x86-64 executable installer**をダウンロードしてください。 そうでなければ**Windows x86 executable installer**をダウンロードしてください。 インストーラーがダウンロードできたら、ダブルクリックして実行し、指示に従ってください。
 
-次のステップでは、Windowsコマンドラインを使用します（コマンドラインについては後ほど詳しく教えます）。 現時点では、コマンドを入力する必用がある場合、スタートメニューから検索フィールドに「コマンドプロンプト」入力してください。 （Windwosのバージョンが古い場合、「スタートメニュー」をクリックして、表示されるアプリ一覧から「Windowsシステムツール」を選んで、「コマンドプロンプト」をクリックしてください。）あるいは、「Windowsキー」を押しながら「R」キーを押すと、「ファイル名を指定して実行」が現れます。 コマンドプロンプトを開くには、そこに "cmd" と入力してenterキーを押します。
+インストールの途中で、「Setup」というタイトルのウィンドウがでてきたら注意してください。 下にあるとおり、「Add Python 3.6 to PATH」か「Add Python to your environment variables」をチェックしてから「Install Now」をクリックしてください (バージョンが違うと表示が違うこともあります)。
 
-!["ファイル名を指定して実行"で、"cmd"と入力してください](../python_installation/images/windows-plus-r.png)
+![Pythonにパスを通すのを忘れないようにしてください。](../python_installation/images/python-installation-options.png)
 
-注意：古いバージョンのWindows（7、Vista、またはそれ以前のバージョン）を使用していて、Python 3.6.xインストーラがエラーで失敗した場合、次のいずれかを試みることができます：
+インストールが終わったら、ダイアログボックスが出てきます。ボックス内のリンクを開くと、インストールしたPythonのバージョンを説明したページに行けます。 ダイアログは閉じてしまいましょう。Pythonの使い方はこのチュートリアルでたっぷり勉強します！
 
-1. すべてのWindowsアップデートをインストールして、Python 3.6を再インストールしてみる。
+注意: あなたのWindowsがWindows7、Windows Vistaや、それ以前のバージョンの場合で、Python3.6.x のインストールがエラーがでて失敗する場合は、下のどちらかのやり方を試してください。
+
+1. Windows Updateを実行してすべての更新ファイルを入れてから、Pythonを入れ直すか、
 2. [古いバージョンのPython](https://www.python.org/downloads/windows/)をインストールしてみる。例えば[3.4.6](https://www.python.org/downloads/release/python-346/)。
 
-古いバージョンのPythonをインストールする場合、インストール画面は上記のものとは多少異なる場合があります。 下にスクロールして「Add python.exe to Path」のところを左クリックして「Will be installed on local hard drive（ローカルハードドライブにインストールされます）」を選択してください：
+古いバージョンのPythonをインストールした場合、インストール画面は上のものと違うことがあります。 下にスクロールして「Add python.exe to Path」のところを左クリックして「Will be installed on local hard drive（ローカルハードドライブにインストールされます）」を選択してください
 
-![古いバージョンのパスを追加してください](../python_installation/images/add_python_to_windows_path.png)
+![古いバージョンのパスを追加してください。](../python_installation/images/add_python_to_windows_path.png)
 
 <!--endsec-->
 
@@ -32,17 +38,17 @@ data-collapse=true ces-->
 
 > **注意**：OS XにPythonをインストールする前に、Macの設定でApp Store以外のパッケージをインストールできるようにする必要があります。 「システム環境設定」（「アプリケーション」フォルダ内）に移動し、「セキュリティとプライバシー」、「一般」タブの順にクリックします。 「ダウンロードしたアプリを許可する」が「Mac App Store」に設定されている場合は、「Mac App Storeと識別された開発者」に変更します。
 
-Webサイトからダウンロードしてインストールしましょう。 https://www.python.org/downloads/
+https://www.python.org/downloads/release/python-361/ からPythonインストーラーをダウンロードします。
 
-* *macOS 64-bit/32-bit installer* ファイルをダウンロードしてください。
-* *python-3.6.5-macosx10.6.pkg*をダブルクリックしてインストーラーを実行してください。
+* *Mac OS X 64-bit/32-bit installer* というファイルをダウンロードします。 
+* ダウンロードできたら *python-3.6.1-macosx10.6.pkg* をダブルクリックして実行します。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Linux" data-id="python_linux"
 data-collapse=true ces-->
 
-おそらくほとんどの場合、すぐに使えるPythonがすでにインストールされているでしょう。インストールされているか（とそれがどのバージョンか）を確認するため、コンソールを起動して次のコマンドを打ってください。
+すでにPythonがインストールされているかもしれません。インストールされてるかどうか、どのバージョンが入っているのか確かめるにはコンソールを開いて下のコマンドを入力してください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -50,17 +56,24 @@ data-collapse=true ces-->
     Python 3.6.5
     
 
-このとき、バージョンの数字の最後が違っていたとしても（例えば、3.6.0など）、アップグレードする必要はありません。 もし、Pythonがインストールされていない場合、あるいはバージョンが古い場合は、次の指示に従ってインストールしてください。
+表示されたバージョンが3.4.0以降(例えば 3.6.0など)のものであれば大丈夫です。アップグレードの必要はありません。 Pythonがインストールされていなかったり、違うバージョンをインストールしたい場合は、まずパソコンのLinuxディストリビューションがなにか確かめてから、下のコマンドを実行してください。
+
+{% filename %}command-line{% endfilename %}
+
+    $ grep ^NAME= /etc/os-release
+    
+
+表示されたディストリビューション名に従って、以下のインストール方法を実行してください。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: Debian or Ubuntu" data-id="python_debian" data-collapse=true ces-->
 
-次のコマンドをコンソールに打って下さい。
+下のコマンドをコンソールに入力します。
 
 {% filename %}command-line{% endfilename %}
 
-    $ sudo apt install python3.6
+    $ sudo apt install python3
     
 
 <!--endsec-->
@@ -68,21 +81,21 @@ data-collapse=true ces-->
 <!--sec data-title="Install Python: Fedora" data-id="python_fedora"
 data-collapse=true ces-->
 
-次のコマンドをコンソールに打って下さい。
+下のコマンドをコンソールに入力します。
 
 {% filename %}command-line{% endfilename %}
 
     $ sudo dnf install python3
     
 
-古いバージョンのFedoraの場合は、コマンド `dnf` が見つからないというエラーが表示されます。その場合は、代わりに yum を使用してください。
+Fedoraのバージョンが古い場合、 `dnf` コマンドが見つからないというエラーが出るかもしれません。そんなときは変わりに `yum` コマンドを使ってください。
 
 <!--endsec-->
 
 <!--sec data-title="Install Python: openSUSE" data-id="python_openSUSE"
 data-collapse=true ces-->
 
-次のコマンドをコンソールに打って下さい。
+下のコマンドをコンソールに入力します。
 
 {% filename %}command-line{% endfilename %}
 
@@ -91,7 +104,7 @@ data-collapse=true ces-->
 
 <!--endsec-->
 
-インストールされているか確認するために、コマンドプロンプトを開いて次のように`Python3`コマンドを入力してください。
+インストールがうまく言ってるか見るには、コンソールに `python3` と打ち込んでください。
 
 {% filename %}command-line{% endfilename %}
 
@@ -99,8 +112,10 @@ data-collapse=true ces-->
     Python 3.6.1
     
 
-**注意：** Windowsをお使いで`python3`が見つからないエラーが出る場合、 代わりに`python`と入力して、バージョンがPython3.6と出てくるか確認してください。（`3`を抜いてみましょう）
+バージョンはあなたがインストールされたものが表示されます。なのでPython 3.6.1 と表示されないかもしれません。
+
+**注意:** Windowsで `python3` を実行して、コマンドが見つからないとエラーが出た場合、代わりに `python` (`3` をコマンドに入れていません) と入れてみてください。3.4.0かそれ以上のPythonがインストールされていれば大丈夫です。 どちらのコマンドもうまく動かない場合は、新しいコマンドプロンプトを開いて同じことを試してください。Pythonのインストール前にコマンドプロンプトがつかっていて、それが開きっぱなしだとこういうことが起きます。
 
 * * *
 
-分からない時や、質問がある時は、コーチに質問してくださいね。 ときどき上手くいかないこともあります。そんな時は、経験豊富な人に聞くといいですよ。
+わからないことがあったり、うまく行かなくてどうしたらいいかわからないときは、コーチに質問してください! うまく行かないこともあります。そういうときは経験豊かな人に聞くといいですよ。

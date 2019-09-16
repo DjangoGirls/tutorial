@@ -1,11 +1,11 @@
-Gitはたくさんのプログラマが利用する「バージョン管理システム」です。 このソフトウェアは、特定のバージョンを後で呼び出すことができるように、時間の経過とともにファイルへの変更を追跡することができます。 Microsoft Wordの”トラックの変更（track changes)"のようですが、はるかに強力です。
+Gitはたくさんのプログラマが利用する「バージョン管理システム」です。 このソフトウェアは、特定のバージョンを後で呼び出すことができるように、時間の経過とともにファイルへの変更を追跡することができます。 ワードプロセッシングプログラム (例えば、Microsoft WordやLibreOffice Writerのような）の”修正記録"機能をより強力にしたようなものです。
 
 ## Gitのインストール
 
 <!--sec data-title="Installing Git: Windows" data-id="git_install_windows"
 data-collapse=true ces-->
 
-[git-scm.com](https://git-scm.com/) からGitをダウンロードすることができます。 1つのステップを除いて「次へ」を押して進んで大丈夫です。「PATH環境を調整する(Adjusting your PATH environment)」というステップでは、「WindowsコマンドプロンプトからGitとオプションのUnixツールを使用する(Use Git and optional Unix tools from the Windows Command Prompt)」（一番下の選択肢）を選択します。 それ以外はデフォルトの設定値で構いません。 改行コードの変換(Configuring the line ending conversions)については、「Checkout Windows-style, commit Unix-style line endings」の選択で大丈夫です。
+[git-scm.com](https://git-scm.com/) からGitをダウンロードすることができます。 2つのステップを除いて「次へ」を押して進んで大丈夫です。使用するエディタを質問されるステップでは、Nanoを選んでください。「PATH環境を調整する(Adjusting your PATH environment)」というステップでは、「WindowsコマンドプロンプトからGitとオプションのUnixツールを使用する(Use Git and optional Unix tools from the Windows Command Prompt)」（一番下の選択肢）を選択します。 それ以外はデフォルトの設定値で構いません。 改行コードの変換(Configuring the line ending conversions)については、「Checkout Windows-style, commit Unix-style line endings」の選択で大丈夫です。
 
 インストールが正常に終了した後、コマンドプロンプトまたはPowerShellを再起動することを忘れないでください。<!--endsec-->
 

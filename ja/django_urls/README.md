@@ -21,8 +21,8 @@ URLはWeb上のアドレスです。 サイトのURLは、ブラウザのアド�
 
 [...]
 """
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -49,15 +49,15 @@ urlpatterns = [
 
 `mysite/urls.py` ファイルは簡潔なままにしておきたいので、`mysite/urls.py` では`blog` アプリからURLをインポートするだけにしましょう。
 
-まず、`blog.urls` をインポートする行を追加しましょう。 また、ここで`include`関数を使うので、最初の行を変更し、そのインポートも追加する必要があります。
+まず、`blog.urls` をインポートする行を追加しましょう。 ここで、`include`関数を使いたいので`from django.urls…`の行を変更しそのインポートを追加する必要があります。
 
 `mysite/urls.py` ファイルはこのようになります：
 
 {% filename %}mysite/urls.py{% endfilename %}
 
 ```python
-from django.urls import path, include
 from django.contrib import admin
+from django.urls import path, include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -90,7 +90,7 @@ urlpatterns = [
 ]
 ```
 
-見てのとおり、`post_list` という名前の `ビュー` をルートURLに割り当てています。 このURLパターンは空の文字列に一致し、Djangoはビューを見つけるとき、URLのフルパスの前半にくっつくドメイン名（つまり、http://127.0.0.1:8000/ の部分）を無視します。 このパターンは誰かがあなたのWebサイトの 'http://127.0.0.1:8000/' というアドレスにアクセスしてきたら `views.post_list` が正しい行き先だということをDjangoに伝えます。
+見てのとおり、`post_list` という名前の `ビュー` をルートURLに割り当てています。 このURLパターンは空の文字列に一致し、Django URLリゾルバーはURLのフルパスの前半にくっつくドメイン名（つまり、http://127.0.0.1:8000/ の部分）を無視します。 このパターンは誰かがあなたのWebサイトの 'http://127.0.0.1:8000/' というアドレスにアクセスしてきたら `views.post_list` が正しい行き先だということをDjangoに伝えます。
 
 最後の `name='post_list'` は、ビューを識別するために使われるURL の名前です。 これはビューと同じ名前にすることもできますが、全然別の名前にすることもできます。 プロジェクトでは名前づけされたURLを後で使うことになるので、アプリのそれぞれのURLに名前をつけておくのは重要です。また、URLの名前はユニークで覚えやすいものにしておきましょう。
 
@@ -98,6 +98,6 @@ urlpatterns = [
 
 ![エラー](images/error1.png)
 
-エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' という属性(attribute)がない**ことを知らせてくれています。 これは *ビュー* の名前で、Djangoが探して使おうとしましたが、私たちはこれをまだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 心配しなくて大丈夫です。ちゃんとできますから。 別のエラーメッセージが表示された場合は、Webサーバーを再起動してみてください。 Webサーバーが動いているコンソール画面で、Ctrl+C（ControlとCのキーを同時に）を押してサーバーを止め、`python manage.py runserver`コマンドを実行して再起動します。
+エラーが表示されていますね。でも心配しないで。これはむしろ、結構便利なものなんですよ：ここでは、**'post_list' という属性(attribute)がない**ことを知らせてくれています。 これは *ビュー* の名前で、Djangoが探して使おうとしましたが、私たちはこれをまだ作っていませんでした。 現時点では、`/admin/` も動作していないと思います。 心配しなくて大丈夫です。ちゃんとできますから。 別のエラーメッセージが表示された場合は、Webサーバーを再起動してみてください。 これを行うには、Webサーバーを実行しているコンソールウィンドウで、Ctrl + C（CtrlキーとCキーを同時に押す）で停止します。 Windowsの場合、Ctrl + Breakかもしれません。 その後、`python manage.py runserver`を実行してWebサーバーを再起動します。
 
-> Django URLconfについてもっと知りたい場合は、公式のドキュメントを見て下さい： https://docs.djangoproject.com/ja/2.0/topics/http/urls/
+> Django URLconfについてもっと知りたい場合は、公式のドキュメントを見て下さい。 https://docs.djangoproject.com/ja/2.2/topics/http/urls/

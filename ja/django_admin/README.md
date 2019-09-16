@@ -35,8 +35,8 @@ admin.site.register(Post)
 
 プロンプトが表示されたら、ユーザー名 (小文字、スペースなし)、電子メール アドレス、およびパスワードを入力します。 **タイプしてる間パスワードは見えなくても大丈夫、それが正常です。**タイプして`Enter`を押して続けましょう。 そうすればこのように見えるはずです。（ユーザーネームとパスワードは今あなたがタイプしたものです。）
 
-    Username: admin
-    Email address: admin@admin.com
+    Username: ola
+    Email address: ola@example.com
     Password:
     Password (again):
     Superuser created successfully.
@@ -46,12 +46,12 @@ admin.site.register(Post)
 
 ![Django admin](images/django_admin3.png)
 
-Postsに行って少し試してみてください。5～6のブログポストを入れてみましょう。コンテンツは心配しなくて大丈夫。今はとりあえずこのチュートリアルからテキストをいくつかコピペするだけでいいです。 （ブログ機能を確認するためなので、内容は何でも大丈夫です。自分で適当な文字列を打ち込んでももちろんOKです。）
+Postsに移動し少し試してみましょう。 5つか6つほど記事を追加してみることにします。 その内容は気にしなくて大丈夫です。自身のローカルコンピュータの中でしか見ることができませんので。またこのチュートリアルでは時短のためテキストのコピペでも構いません。 :)
 
 少なくとも 2 つまたは 3 つの記事 (すべてではない) は公開日がセットされているようにしてください。後ほど役に立ちます。
 
 ![Django admin](images/edit_post3.png)
 
-Django adminについてもっと知りたいときは、Djangoのドキュメントを見るとよいでしょう。 https://docs.djangoproject.com/ja/2.0/ref/contrib/admin/
+Django adminについてもっと知りたいときは、Djangoのドキュメントを見るとよいでしょう。https://docs.djangoproject.com/ja/2.2/ref/contrib/admin/
 
 ここでそろそろコーヒー（または紅茶）か何か食べるものを摂って自分を元気づけるのにいいタイミングでしょう。最初のDjangoモデルを作ったのだから、少し休みをとっていいところです！
