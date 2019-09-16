@@ -26,13 +26,13 @@ Actualmente Cloud 9 requiere que te registres con AWS y ingreses la información
 
 1. Instala Cloud 9 desde la [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
 2. Valla a [c9.io](https://c9.io) y haz clic en *Get started with AWS Cloud9*
-3. Sign up for an AWS account (requires credit card information, but you can use it for free)
-4. In the AWS Dashboard, enter *Cloud9* in the search bar and click it
-5. In the Cloud 9 dashboard, click *Create environment*
-6. Name it *django-girls*
-7. While configuring settings, select *Create a new instance for environment (EC2)* for "Environment Type" and the *t2.micro* "Instance type" (it should say "Free-tier eligible."). The default cost-saving setting is fine and you can keep the other defaults.
-8. Click *Next step*
-9. Click *Create environment*
+3. Regístrate en una cuenta AWS (requiere información de tarjeta de crédito, pero puedes usar gratis)
+4. En el panel de control AWS, introduzca *Cloud9* en la barra de búsqueda y haga clic en él
+5. En el panel de control de la Cloud 9, haga clic en *Create environment*
+6. Nómbralo *django-girls*
+7. Mientras configura los ajustes, seleccione *Create a new instance for environment (EC2)* para "Environment Type" y seleccione el valor *t2.micro* para "Instance type" (debería decir "Free-tier eligible."). La configuración de ahorro de costes por defecto está bien y puede mantener los otros valores por defecto.
+8. Haz clic en *Next step*
+9. Haz clic en *Create environment*
 
 Ahora deberías ver una interfaz con una barra, una gran ventana principal con algún texto y, una ventana pequeña en la parte inferior que se vería así:
 
@@ -45,7 +45,7 @@ El área de abajo es tu terminal. Puedes usar el terminal para enviar instruccio
 
 ### Entorno Virtual
 
-A virtual environment (also called a virtualenv) is like a private box we can stuff useful computer code into for a project we're working on. We use them to keep the various bits of code we want for our various projects separate so things don't get mixed up between projects.
+Un entorno virtual (también llamado "virtualenv" o "vitual environment" en inglés) es un tipo de caja privada donde podemos introducir código para el proyecto en el cual estemos trabajando. Lo usamos para mantener separados los diferentes trozos de código de nuestros proyectos, de modo que no haya mezclas indeseadas entre los mismos.
 
 Ejecutar:
 
@@ -66,8 +66,8 @@ Hazte una cuenta de [GitHub](https://github.com).
 
 ### PythonAnywhere
 
-The Django Girls tutorial includes a section on what is called Deployment, which is the process of taking the code that powers your new web application and moving it to a publicly accessible computer (called a server) so other people can see your work.
+El tutorial de Django Girls incluye una sección en lo que se conoce como Despliegue, lo cual se refiere al proceso de tomar el código que da vida a tu nueva aplicación web y moverlo a un ordenador de acceso publico (llamado servidor) para que otras personas puedan ver tu trabajo.
 
-This part is a little odd when doing the tutorial on a Chromebook since we're already using a computer that is on the Internet (as opposed to, say, a laptop). However, it's still useful, as we can think of our Cloud 9 workspace as a place for our "in progress" work and Python Anywhere as a place to show off our stuff as it becomes more complete.
+Esta parte del tutorial es algo extraña usando un Chromebook, pues ya estamos usando un computador conectado a Internet (contrario a, por ejemplo, una laptop). Sin embargo, aún es útil, ya que podemos pensar que nuestro espacio de trabajo en Cloud 9 como un repositorio para nuestro trabajo "en progreso" y Python Anywhere como un lugar donde mostrar nuestro trabajo más completo.
 
-Thus, sign up for a new Python Anywhere account at [www.pythonanywhere.com](https://www.pythonanywhere.com).
+Así que, registra una cuenta en Python Anywhere [www.pythonanywhere.com](https://www.pythonanywhere.com).
