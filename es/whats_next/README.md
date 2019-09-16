@@ -12,7 +12,7 @@ Después de eso, asegúrate de seguir a Django Girls en [Facebook](http://facebo
 
 ¡Claro! En primer lugar, sigue adelante y prueba nuestro otro libro llamado [Django Girls Turorial: Extensions](https://tutorial-extensions.djangogirls.org/).
 
-Luego, puedes intentar los recursos listados a continuaciòn. ¡Todos son muy recomendados!
+Luego, puedes intentar los recursos listados a continuación. ¡Todos son muy recomendados!
 
 - [Django's official tutorial (Tutorial oficial de Django)](https://docs.djangoproject.com/en/2.0/intro/tutorial01/)
 - [New Coder turorials (Tutoriales de "New Coder")](http://newcoder.io/tutorials/)
@@ -21,5 +21,5 @@ Luego, puedes intentar los recursos listados a continuaciòn. ¡Todos son muy re
 - [Django Carrots tutorial (Tutorial de Django de "Carrots")](https://github.com/ggcarrots/django-carrots)
 - [Learn Python The Hard Way book (Libro Aprende Python a las Malas)](http://learnpythonthehardway.org/book/)
 - [Getting Started With Django video lessons (Lecciones de video Empezando con Django)](http://www.gettingstartedwithdjango.com/)
-- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book (Libro Dos Cucharadas de Django 1.11: mejores pràcticas para Django Web Framework)](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
-- [Hello Web App: Learn How to Build a Web App (Hola aplicaciòn web: Aprende como construir una aplicaciòn web)](https://hellowebapp.com/) - tambièn puedes solicitar un eBook gratis contactando con la autora Tracy Osborn en <tracy@limedaring.com>
+- [Two Scoops of Django 1.11: Best Practices for Django Web Framework book (Libro Dos Cucharadas de Django 1.11: mejores prácticas para Django Web Framework)](https://www.twoscoopspress.com/products/two-scoops-of-django-1-11)
+- [Hello Web App: Learn How to Build a Web App (Hola aplicación web: Aprende como construir una aplicación web)](https://hellowebapp.com/) - también puedes solicitar un eBook gratis contactando con la autora Tracy Osborn en <tracy@limedaring.com>
