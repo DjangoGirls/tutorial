@@ -342,7 +342,7 @@ def post_edit(request, pk):
     return render(request, 'blog/post_edit.html', {'form': form})
 ```
 
-Esto se ve casi exactamente igual a nuestra view `post_new`, ¿no? Pero no del todo. For one, we pass an extra `pk` parameter from `urls`. Segundo: obtenemos el modelo `Post` que queremos editar con `get_object_or_404(Post, pk=pk)` y después, al crear el formulario pasamos este post como una `instancia` tanto al guardar el formulario…
+Esto se ve casi exactamente igual a nuestra view `post_new`, ¿no? Pero no del todo. Por un lado, pasamos un parámetro `pk` adicional de `urls`. Segundo: obtenemos el modelo `Post` que queremos editar con `get_object_or_404(Post, pk=pk)` y después, al crear el formulario pasamos este post como una `instancia` tanto al guardar el formulario…
 
 {% filename %}blog/views.py{% endfilename %}
 
@@ -370,7 +370,7 @@ Al dar click ahí, debes ver el formulario con nuestro post del blog:
 
 ¡Felicitaciones! ¡Tu aplicación está cada vez más completa!
 
-If you need more information about Django forms, you should read the documentation: https://docs.djangoproject.com/en/2.2/topics/forms/
+Si necesita más información sobre los formularios de Django, debe leer la documentación: https://docs.djangoproject.com/en/2.2/topics/forms/
 
 ## Seguridad
 
