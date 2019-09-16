@@ -80,7 +80,7 @@ En `settings.py`, encuentra la línea que contiene `TIME_ZONE` y modifícala par
 TIME_ZONE = 'Europe/Berlin'
 ```
 
-Un código de idioma tiene dos partes: el idioma, p.ej. `en` para inglés o `de` para alemán, y el código de país, p.ej. `de` para Alemania o `ch` para Suiza. Si tu idioma nativo no es el inglés, puedes añadir lo siguiente para cambiar el idioma de los botones y notificaciones de Django. Así tendrás el botón "Cancel" traducido al idioma que pongas aquí. [Django comes with a lot of prepared translations](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
+Un código de idioma tiene dos partes: el idioma, p.ej. `en` para inglés o `de` para alemán, y el código de país, p.ej. `de` para Alemania o `ch` para Suiza. Si tu idioma nativo no es el inglés, puedes añadir lo siguiente para cambiar el idioma de los botones y notificaciones de Django. Así tendrás el botón "Cancel" traducido al idioma que pongas aquí. [Django viene con muchas traducciones preparadas](https://docs.djangoproject.com/en/2.2/ref/settings/#language-code).
 
 Si quieres un idioma diferente, cambia el código de idioma cambiando la siguiente línea:
 
