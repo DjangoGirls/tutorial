@@ -1,4 +1,4 @@
-> Para lectores en casa: este capitulo se cubre en el video [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
+> Para lectores en casa: este capitulo se cubre en el vídeo [Installing Python & Code Editor](https://www.youtube.com/watch?v=pVTaqzKZCdA).
 > 
 > Esta sección está basada en un tutorial de Geek Girls Carrots (https://github.com/ggcarrots/django-carrots)
 
@@ -114,7 +114,7 @@ Verifica si la instalación fue exitosa abriendo una terminal o consola, y corri
 
 La versión mostrada puede ser diferente desde 3.6.1 -- este debería marcar la versión que tu instalaste.
 
-**NOTE:** If you're on Windows and you get an error message that `python3` wasn't found, try using `python` (without the `3`) and check if it still might be a version of Python that is 3.4.0 or higher. If that doesn't work either, you may open a new command prompt and try again; this happens if you use a command prompt left open from before the Python installation.
+**NOTA:** Si está en Windows y recibe un mensaje de error que indica que `python3` no se encontró, intente usar `python` (sin el `3`) y compruebe si todavía podría ser una versión de Python que sea 3.4.0 o superior. Si eso tampoco funciona, puede abrir un nuevo símbolo del sistema e intentar nuevamente; Esto sucede si usa un símbolo del sistema abierto antes de la instalación de Python.
 
 * * *
 
