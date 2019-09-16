@@ -84,7 +84,7 @@ Erinnerst du dich, was der nächste Schritt ist? Eine View hinzufügen!
 
 ## Füge eine View hinzu
 
-Dieses Mal bekommt unsere *View* den extra Parameter `pk`. Unsere *View* muss diesen entgegennehmen, richtig? Also definieren wir unsere Funktion als `def post_detail(request, pk)`. Beachte, dass wir genau den gleichen Variablennamen benutzen müssen, wie in den URLs festgelegt (`pk`). Diese Variable wegzulassen ist falsch und führt zu einem Fehler!
+Dieses Mal bekommt unsere *View* den extra Parameter `pk`. Unsere *View* muss diesen entgegennehmen, richtig? Also definieren wir unsere Funktion als `def post_detail(request, pk)`. Beachte, dass wir genau den gleichen Variablennamen benutzen müssen, wie in `urls` festgelegt (`pk`). Diese Variable wegzulassen ist falsch und führt zu einem Fehler!
 
 Jetzt benötigen wir also genau einen bestimmten Blogpost. Diesen finden wir, indem wir ein QuerySet folgendermaßen schreiben:
 

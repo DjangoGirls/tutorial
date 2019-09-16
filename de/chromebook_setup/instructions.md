@@ -8,7 +8,7 @@ Mit dem Tool Cloud IDE erhältst du Zugang zu einem Code-Editor und einem Rechne
 
 1. Gehe zu [PaizaCloud Cloud IDE](https://paiza.cloud/)
 2. Lege dir dort ein Benutzerkonto an
-3. Klicke auf *New Server*
+3. Klicke auf *New Server* und wähle die Django-App
 4. Klicke auf die Schaltfläche "Terminal" (links im Browserfenster)
 
 Jetzt solltest du links eine Schnittstelle mit einer Seitenleiste und Schaltflächen sehen. Klicke auf den "Terminal"-Button und öffne das Terminal-Fenster mit einer Eingabeaufforderung wie folgt:
@@ -22,9 +22,17 @@ Das Terminal auf der PaizaCloud Cloud IDE steht für deine Anweisungen bereit. D
 
 #### AWS Cloud9
 
-1. Gehe zu [AWS Cloud9](https://aws.amazon.com/cloud9/)
-2. Lege dir dort ein Benutzerkonto an
-3. Klicke auf *Create Environment*
+Zur Zeit verlangt Cloud 9, dass du dich mit AWS anmeldest und Kreditkarten-Informationen angibst.
+
+1. Installiere Cloud 9 aus dem [Chrome web store](https://chrome.google.com/webstore/detail/cloud9/nbdmccoknlfggadpfkmcpnamfnbkmkcp)
+2. Gehe zu [c9.io](https://c9.io) und klicke auf *Get started with AWS Cloud9*
+3. Erstelle ein AWS-Benutzerkonto (benötigt Angabe der Kreditkarte, kann aber kostenlos verwendet werden)
+4. Gib im AWS-Dashboard *Cloud9* in die Suchzeile ein und klicke es an
+5. Klicke im Cloud-9-Dashboard *Create environment* an
+6. Gib ihm den Namen *django-girls*
+7. Wähle beim Konfigurieren der Einstellungen *Create a new instance for environment (EC2)* als "Environment Type" und den "Instance type" *t2.micro* ("Free-tier eligible." sollte angezeigt werden). Die Voreinstellung bzgl. "cost-saving" ist in Ordnung und auch die anderen Voreinstellungen kannst du belassen.
+8. Klicke auf *Next step*
+9. Klicke auf *Create environment*
 
 Jetzt solltest du eine Benutzeroberfläche mit Seitenleiste, ein grosses Fenster mit Text und am unteren Rand ein Feld sehen, das wie folgt aussieht:
 
@@ -39,22 +47,13 @@ Dieser untere Bereich ist dein Terminal. Dort kannst du Kommandos für den Compu
 
 Eine virtuelle Umgebung (auch virtualenv genannt) ist wie ein privater Behälter, in den wir nützlichen Code für ein Projekt packen können, an dem wir arbeiten. Wir benutzen sie, um Code für verschiedene Projekte getrennt aufzubewahren, damit dieser nicht vermischt wird.
 
-Führe im Terminal den folgenden Code aus (das Terminal befindet sich am unteren Rand des Cloud 9-Interfaces):
-
-{% filename %}Cloud 9{% endfilename %}
-
-    sudo apt update
-    sudo apt install python3.6-venv
-    
-
-Falls das nicht funktioniert, frag' deinen Coach um Hilfe.
-
-Führe dann die folgenden Befehle aus:
+Führe Folgendes aus:
 
 {% filename %}Cloud 9{% endfilename %}
 
     mkdir djangogirls
-    cd djangogirls python3.6 -mvenv myvenv
+    cd djangogirls
+    python3.6 -mvenv myvenv
     source myvenv/bin/activate
     pip install django~={{ book.django_version }}
     
